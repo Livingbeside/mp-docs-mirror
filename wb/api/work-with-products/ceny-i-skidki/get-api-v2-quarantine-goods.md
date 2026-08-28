@@ -9,7 +9,7 @@ tags:
 spec_version: items
 source: "https://dev.wildberries.ru/docs/openapi/work-with-products"
 deprecated: false
-content_sha: 345384ee910a76c6
+content_sha: ad6a9af29be45f84
 ---
 
 # Получить товары в карантине
@@ -52,15 +52,15 @@ content_sha: 345384ee910a76c6
 
 - `data` — object. Данные ответа
   - `quarantineGoods` — array[object]. Информация о товарах в карантине
-    - `currencyIsoCode4217` — string. Валюта по стандарту ISO 4217
-    - `newDiscount` — integer. Новая скидка продавца, %
-    - `newPrice` — number<float>. Новая цена продавца до скидки
     - `nmID` — integer. Артикул WB
-    - `oldDiscount` — integer. Текущая скидка продавца, %
-    - `oldPrice` — number<float>. Текущая цена продавца до скидки
-    - `priceDiff` — number<float>. Разница: `newPrice` * (1 - `newDiscount` / 100) - `oldPrice` * (1 - `oldDiscount` / 100)
     - `sizeID` — integer. Не используется
     - `techSizeName` — string. Не используется
+    - `currencyIsoCode4217` — string. Валюта по стандарту ISO 4217
+    - `newPrice` — number<float>. Новая цена продавца до скидки
+    - `oldPrice` — number<float>. Текущая цена продавца до скидки
+    - `newDiscount` — integer. Новая скидка продавца, %
+    - `oldDiscount` — integer. Текущая скидка продавца, %
+    - `priceDiff` — number<float>. Разница: `newPrice` * (1 - `newDiscount` / 100) - `oldPrice` * (1 - `oldDiscount` / 100)
 - `error` — boolean. Флаг ошибки
 - `errorText` — string. Текст ошибки
 
@@ -72,19 +72,19 @@ content_sha: 345384ee910a76c6
 
 **401** — Не авторизован
 
-- `code` — string. Внутренний код ошибки
+- `title` — string. Заголовок ошибки
 - `detail` — string. Детали ошибки
-- `origin` — string. ID внутреннего сервиса WB
+- `code` — string. Внутренний код ошибки
 - `requestId` — string. Уникальный ID запроса
+- `origin` — string. ID внутреннего сервиса WB
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
-- `title` — string. Заголовок ошибки
 
 **402** — Требуется платёж
 
-- `detail` — string. Детали ошибки. Ошибка возвращается только сервисам из [Каталога решений для бизнеса](/business-solutions)
 - `title` — string. Заголовок ошибки
+- `detail` — string. Детали ошибки. Ошибка возвращается только сервисам из [Каталога решений для бизнеса](/business-solutions)
 
 **403** — Доступ запрещён
 
@@ -100,11 +100,11 @@ content_sha: 345384ee910a76c6
 
 **429** — Слишком много запросов
 
-- `code` — string. Внутренний код ошибки
+- `title` — string. Заголовок ошибки
 - `detail` — string. Детали ошибки
-- `origin` — string. ID внутреннего сервиса WB
+- `code` — string. Внутренний код ошибки
 - `requestId` — string. Уникальный ID запроса
+- `origin` — string. ID внутреннего сервиса WB
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
-- `title` — string. Заголовок ошибки

@@ -9,7 +9,7 @@ tags:
 spec_version: ordersfbw
 source: "https://dev.wildberries.ru/docs/openapi/orders-fbw"
 deprecated: false
-content_sha: 41fcd408a8a67f78
+content_sha: 7f2fd4c5adae1d2d
 ---
 
 # Транзитные направления
@@ -33,33 +33,33 @@ content_sha: 41fcd408a8a67f78
 
 **200** — Успешно
 
+- `transitWarehouseName` — string. Транзитный склад
+- `destinationWarehouseName` — string. Склад назначения
 - `activeFrom` — string<date-time>. С какого числа доступно транзитное направление
 - `boxTariff` — array[object]. Тариф за транзит коробов. Если `null`, транзит для коробов недоступен
   - `from` — integer. Объём поставки от, литры
   - `to` — integer. Объём поставки до, литры
   - `value` — number. Тариф, ₽ за литр
-- `destinationWarehouseName` — string. Склад назначения
 - `palletTariff` — integer. Тариф за паллету, ₽
-- `transitWarehouseName` — string. Транзитный склад
 
 **401** — Не авторизован
 
-- `code` — string. Внутренний код ошибки
+- `title` — string. Заголовок ошибки
 - `detail` — string. Детали ошибки
-- `origin` — string. ID внутреннего сервиса WB
+- `code` — string. Внутренний код ошибки
 - `requestId` — string. Уникальный ID запроса
+- `origin` — string. ID внутреннего сервиса WB
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
-- `title` — string. Заголовок ошибки
 
 **429** — Слишком много запросов
 
-- `code` — string. Внутренний код ошибки
+- `title` — string. Заголовок ошибки
 - `detail` — string. Детали ошибки
-- `origin` — string. ID внутреннего сервиса WB
+- `code` — string. Внутренний код ошибки
 - `requestId` — string. Уникальный ID запроса
+- `origin` — string. ID внутреннего сервиса WB
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
-- `title` — string. Заголовок ошибки

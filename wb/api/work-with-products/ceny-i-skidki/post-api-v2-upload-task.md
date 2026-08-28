@@ -9,7 +9,7 @@ tags:
 spec_version: items
 source: "https://dev.wildberries.ru/docs/openapi/work-with-products"
 deprecated: false
-content_sha: 113f0abe01a2db26
+content_sha: aecf79e5ec6f58f5
 ---
 
 # Установить цены и скидки
@@ -40,25 +40,25 @@ content_sha: 113f0abe01a2db26
 **Тело запроса** (`application/json`):
 
 - `data` — array[object] **обязательный**. Товары, цены и скидки для них. Максимум 1 000 товаров. Цена и скидка не могут быть пустыми одновременно. Если новая цена со скидкой будет хотя бы в 3 раза меньше старой, она попадёт в [карантин](https://seller.wildberries.ru/instructions/ru/ru/material/price-quarantine) и товар будет продаваться по старой цене. Ошибка об этом будет в ответах методов состояний загрузок. Вы можете изменить цену или скидку с помощью API либо вывести товар из карантина в [личном кабинете](https://seller.wildberries.ru/discount-and-prices/quarantine)
-  - `discount` — integer. Скидка, %
   - `nmID` — integer **обязательный**. Артикул WB
   - `price` — integer. Цена. Валюту можно получить с помощью методов [Получить товары с ценами](./work-with-products#tag/Ceny-i-skidki/paths/~1api~1v2~1list~1goods~1filter/get) и [Получить товары с ценами по артикулам](./work-with-products#tag/Ceny-i-skidki/paths/~1api~1v2~1list~1goods~1filter/post), поле `currencyIsoCode4217`
+  - `discount` — integer. Скидка, %
 
 ## Ответы
 
 **200** — Успешно
 
 - `data` — object. Данные ответа
-  - `alreadyExists` — boolean. Флаг дублирования загрузки: `true` — такая загрузка уже есть
   - `id` — integer. ID загрузки
+  - `alreadyExists` — boolean. Флаг дублирования загрузки: `true` — такая загрузка уже есть
 - `error` — boolean. Флаг ошибки
 - `errorText` — string. Текст ошибки
 
 **208** — Такая загрузка уже есть
 
 - `data` — object. Данные ответа
-  - `alreadyExists` — boolean. Флаг дублирования загрузки: `true` — такая загрузка уже есть
   - `id` — integer. ID загрузки
+  - `alreadyExists` — boolean. Флаг дублирования загрузки: `true` — такая загрузка уже есть
 - `error` — boolean. Флаг ошибки
 - `errorText` — string. Текст ошибки
 
@@ -70,19 +70,19 @@ content_sha: 113f0abe01a2db26
 
 **401** — Не авторизован
 
-- `code` — string. Внутренний код ошибки
+- `title` — string. Заголовок ошибки
 - `detail` — string. Детали ошибки
-- `origin` — string. ID внутреннего сервиса WB
+- `code` — string. Внутренний код ошибки
 - `requestId` — string. Уникальный ID запроса
+- `origin` — string. ID внутреннего сервиса WB
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
-- `title` — string. Заголовок ошибки
 
 **402** — Требуется платёж
 
-- `detail` — string. Детали ошибки. Ошибка возвращается только сервисам из [Каталога решений для бизнеса](/business-solutions)
 - `title` — string. Заголовок ошибки
+- `detail` — string. Детали ошибки. Ошибка возвращается только сервисам из [Каталога решений для бизнеса](/business-solutions)
 
 **403** — Доступ запрещён
 
@@ -104,11 +104,11 @@ content_sha: 113f0abe01a2db26
 
 **429** — Слишком много запросов
 
-- `code` — string. Внутренний код ошибки
+- `title` — string. Заголовок ошибки
 - `detail` — string. Детали ошибки
-- `origin` — string. ID внутреннего сервиса WB
+- `code` — string. Внутренний код ошибки
 - `requestId` — string. Уникальный ID запроса
+- `origin` — string. ID внутреннего сервиса WB
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
-- `title` — string. Заголовок ошибки

@@ -9,7 +9,7 @@ tags:
 spec_version: items
 source: "https://dev.wildberries.ru/docs/openapi/work-with-products"
 deprecated: false
-content_sha: 2691c897013f6c22
+content_sha: 437fffe646b8e9bc
 ---
 
 # Установить рекомендации для товаров
@@ -45,55 +45,55 @@ content_sha: 2691c897013f6c22
 
 **200** — Успешно
 
+- `isError` — boolean **обязательный**. Есть ли ошибки: - `false` — ошибок нет. Запрос полностью успешен - `true` — ошибки есть
 - `errors` — array[object]. Ошибки. При `"isError":true`
   - `mainNm` — string **обязательный**. Значение параметра `nmId`
-  - `message` — string **обязательный**. Сообщение об ошибке
   - `recomNm` — string **обязательный**. Значение параметра `recomNm`
-- `isError` — boolean **обязательный**. Есть ли ошибки: - `false` — ошибок нет. Запрос полностью успешен - `true` — ошибки есть
+  - `message` — string **обязательный**. Сообщение об ошибке
 
 **208** — Уже отправлено
 
-- `detail` — string **обязательный**. Детали ответа
-- `origin` — string **обязательный**. ID внутреннего сервиса WB
 - `requestId` — string **обязательный**. ID запроса
+- `origin` — string **обязательный**. ID внутреннего сервиса WB
 - `title` — string **обязательный**. Заголовок ответа
+- `detail` — string **обязательный**. Детали ответа
 
 **400** — Неправильный запрос
 
-- `detail` — string **обязательный**. Детали ошибки
-- `origin` — string **обязательный**. ID внутреннего сервиса WB
 - `requestId` — string **обязательный**. ID запроса
+- `origin` — string **обязательный**. ID внутреннего сервиса WB
 - `title` — string **обязательный**. Заголовок ошибки
+- `detail` — string **обязательный**. Детали ошибки
 
 **401** — Не авторизован
 
-- `code` — string. Внутренний код ошибки
+- `title` — string. Заголовок ошибки
 - `detail` — string. Детали ошибки
-- `origin` — string. ID внутреннего сервиса WB
+- `code` — string. Внутренний код ошибки
 - `requestId` — string. Уникальный ID запроса
+- `origin` — string. ID внутреннего сервиса WB
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
-- `title` — string. Заголовок ошибки
 
 **403** — Доступ запрещён
 
-- `code` — string. Внутренний код ошибки
+- `title` — string. Заголовок ошибки
 - `detail` — string. Детали ошибки
-- `origin` — string. ID внутреннего сервиса WB
+- `code` — string. Внутренний код ошибки
 - `requestId` — string. ID запроса
+- `origin` — string. ID внутреннего сервиса WB
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
-- `title` — string. Заголовок ошибки
 
 **429** — Слишком много запросов
 
-- `code` — string. Внутренний код ошибки
+- `title` — string. Заголовок ошибки
 - `detail` — string. Детали ошибки
-- `origin` — string. ID внутреннего сервиса WB
+- `code` — string. Внутренний код ошибки
 - `requestId` — string. Уникальный ID запроса
+- `origin` — string. ID внутреннего сервиса WB
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
-- `title` — string. Заголовок ошибки

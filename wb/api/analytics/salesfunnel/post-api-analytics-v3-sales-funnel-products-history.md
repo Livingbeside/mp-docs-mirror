@@ -9,7 +9,7 @@ tags:
 spec_version: analytics
 source: "https://dev.wildberries.ru/docs/openapi/analytics"
 deprecated: false
-content_sha: 6ca972fb63a3858a
+content_sha: 2470461b2237ee80
 ---
 
 # Статистика карточек товаров по дням
@@ -50,75 +50,75 @@ content_sha: 6ca972fb63a3858a
 
 **Тело запроса** (`application/json`):
 
-- `aggregationLevel` — string (day, week). Тип агрегации. Если не указано, то по умолчанию используется агрегация по дням. Доступные уровни агрегации `day`, `week` По умолчанию: `day`.
-- `nmIds` — array[integer<uint64>] **обязательный**. Артикулы WB, по которым нужно составить отчёт
 - `selectedPeriod` — object **обязательный**
-  - `end` — string<date> **обязательный**. Конец периода
   - `start` — string<date> **обязательный**. Начало периода
+  - `end` — string<date> **обязательный**. Конец периода
+- `nmIds` — array[integer<uint64>] **обязательный**. Артикулы WB, по которым нужно составить отчёт
 - `skipDeletedNm` — boolean. Скрыть удалённые товары
+- `aggregationLevel` — string (day, week). Тип агрегации. Если не указано, то по умолчанию используется агрегация по дням. Доступные уровни агрегации `day`, `week` По умолчанию: `day`.
 
 ## Ответы
 
 **200** — Успешно
 
-- `currency` — string **обязательный**. Валюта отчёта
-- `history` — array[object] **обязательный**. Статистика за период
-  - `addToCartConversion` — integer<uint32> **обязательный**. Конверсия в корзину. Какой процент посетителей, открывших карточку товара, добавили товар в корзину, %
-  - `addToWishlistCount` — integer<uint32> **обязательный**. Количество добавлений товара в **Отложенные**
-  - `buyoutCount` — integer<uint32> **обязательный**. Выкупили товаров, шт.
-  - `buyoutPercent` — integer<uint32> **обязательный**. Процент выкупа
-  - `buyoutSum` — integer<uint32> **обязательный**. Выкупили на сумму
-  - `cartCount` — integer<uint32> **обязательный**. Положили в корзину, шт.
-  - `cartToOrderConversion` — integer<uint32> **обязательный**. Конверсия в заказ. Какой процент посетителей, добавивших товар в корзину, сделали заказ
-  - `date` — string<date> **обязательный**. Дата сбора статистики
-  - `openCount` — integer<uint32> **обязательный**. Количество переходов в карточку товара
-  - `orderCount` — integer<uint32> **обязательный**. Заказали товаров, шт.
-  - `orderSum` — integer<uint32> **обязательный**. Заказали на сумму
 - `product` — object **обязательный**
-  - `brandName` — string **обязательный**. Бренд
   - `nmId` — integer<int64> **обязательный**. Артикул WB
-  - `subjectId` — integer<uint64> **обязательный**. ID предмета
-  - `subjectName` — string **обязательный**. Название предмета
   - `title` — string<int64> **обязательный**. Название карточки товара
   - `vendorCode` — string **обязательный**. Артикул продавца
+  - `brandName` — string **обязательный**. Бренд
+  - `subjectId` — integer<uint64> **обязательный**. ID предмета
+  - `subjectName` — string **обязательный**. Название предмета
+- `history` — array[object] **обязательный**. Статистика за период
+  - `date` — string<date> **обязательный**. Дата сбора статистики
+  - `openCount` — integer<uint32> **обязательный**. Количество переходов в карточку товара
+  - `cartCount` — integer<uint32> **обязательный**. Положили в корзину, шт.
+  - `orderCount` — integer<uint32> **обязательный**. Заказали товаров, шт.
+  - `orderSum` — integer<uint32> **обязательный**. Заказали на сумму
+  - `buyoutCount` — integer<uint32> **обязательный**. Выкупили товаров, шт.
+  - `buyoutSum` — integer<uint32> **обязательный**. Выкупили на сумму
+  - `buyoutPercent` — integer<uint32> **обязательный**. Процент выкупа
+  - `addToCartConversion` — integer<uint32> **обязательный**. Конверсия в корзину. Какой процент посетителей, открывших карточку товара, добавили товар в корзину, %
+  - `cartToOrderConversion` — integer<uint32> **обязательный**. Конверсия в заказ. Какой процент посетителей, добавивших товар в корзину, сделали заказ
+  - `addToWishlistCount` — integer<uint32> **обязательный**. Количество добавлений товара в **Отложенные**
+- `currency` — string **обязательный**. Валюта отчёта
 
 **400** — Неправильный запрос
 
-- `detail` — string **обязательный**. Детали ошибки
-- `origin` — string **обязательный**. ID внутреннего сервиса WB
-- `requestId` — string **обязательный**. Уникальный ID запроса
 - `title` — string **обязательный**. Заголовок ошибки
+- `detail` — string **обязательный**. Детали ошибки
+- `requestId` — string **обязательный**. Уникальный ID запроса
+- `origin` — string **обязательный**. ID внутреннего сервиса WB
 
 **401** — Не авторизован
 
-- `code` — string. Внутренний код ошибки
+- `title` — string. Заголовок ошибки
 - `detail` — string. Детали ошибки
-- `origin` — string. ID внутреннего сервиса WB
+- `code` — string. Внутренний код ошибки
 - `requestId` — string. Уникальный ID запроса
+- `origin` — string. ID внутреннего сервиса WB
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
-- `title` — string. Заголовок ошибки
 
 **402** — Требуется платёж
 
-- `detail` — string. Детали ошибки. Ошибка возвращается только сервисам из [Каталога решений для бизнеса](/business-solutions)
 - `title` — string. Заголовок ошибки
+- `detail` — string. Детали ошибки. Ошибка возвращается только сервисам из [Каталога решений для бизнеса](/business-solutions)
 
 **403** — Доступ запрещён
 
-- `detail` — string **обязательный**. Детали ошибки
-- `origin` — string **обязательный**. ID внутреннего сервиса WB
-- `requestId` — string **обязательный**. Уникальный ID запроса
 - `title` — string **обязательный**. Заголовок ошибки
+- `detail` — string **обязательный**. Детали ошибки
+- `requestId` — string **обязательный**. Уникальный ID запроса
+- `origin` — string **обязательный**. ID внутреннего сервиса WB
 
 **429** — Слишком много запросов
 
-- `code` — string. Внутренний код ошибки
+- `title` — string. Заголовок ошибки
 - `detail` — string. Детали ошибки
-- `origin` — string. ID внутреннего сервиса WB
+- `code` — string. Внутренний код ошибки
 - `requestId` — string. Уникальный ID запроса
+- `origin` — string. ID внутреннего сервиса WB
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
-- `title` — string. Заголовок ошибки

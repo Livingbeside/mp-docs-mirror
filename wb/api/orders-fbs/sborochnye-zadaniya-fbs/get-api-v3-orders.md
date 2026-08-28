@@ -9,7 +9,7 @@ tags:
 spec_version: order
 source: "https://dev.wildberries.ru/docs/openapi/orders-fbs"
 deprecated: false
-content_sha: 477fa6e228ea3d15
+content_sha: ed8076e9514ce83e
 ---
 
 # Получить информацию о сборочных заданиях
@@ -52,69 +52,69 @@ content_sha: 477fa6e228ea3d15
 - `orders` — array[object]
   - `address` — object. Точный адрес покупателя для доставки, если применимо. Из-за особенностей адреса некоторые поля могут быть пустыми
     - `fullAddress` — string. Адрес доставки
-    - `latitude` — number<float64>. Широта
     - `longitude` — number<float64>. Долгота
-  - `article` — string. Артикул продавца
-  - `cargoType` — integer (1, 2, 3). Тип товара: - `1` — малогабаритный товар (МГТ) - `2` — сверхгабаритный товар (СГТ) - `3` — крупногабаритный товар (КГТ+)
-  - `chrtId` — integer. ID размера товара в системе WB
-  - `colorCode` — string. Код цвета (только для колеруемых товаров)
-  - `comment` — string. Комментарий покупателя
-  - `convertedCurrencyCode` — integer<ISO 4217>. Код валюты страны продавца
-  - `convertedPrice` — integer. Цена в валюте страны продавца с учетом всех скидок, кроме скидки по WB Кошельку, умноженная на 100. Предоставляется в информационных целях
-  - `createdAt` — string<date-time>. Дата создания сборочного задания (RFC3339). Часовой пояс — UTC
-  - `crossBorderType` — integer (0, 1). Тип сборочного задания: - `0` — внутренняя поставка - `1` — трансграничная поставка
-  - `currencyCode` — integer<ISO 4217>. Код валюты продажи
+    - `latitude` — number<float64>. Широта
+  - `scanPrice` — number<uint32>. Цена приёмки в копейках. Отображается после фактической приёмки заказа
   - `deliveryType` — string (fbs). Тип доставки: - `fbs` — доставка на склад Wildberries (FBS)
-  - `id` — integer<int64>. ID сборочного задания
-  - `isZeroOrder` — boolean. Признак заказа товара с нулевым остатком: - `false` — заказ сделан на товар с ненулевым остатком - `true` — заказ сделан на товар с нулевым остатком. Такой заказ можно отменить без штрафа за отмену
-  - `nmId` — integer. Артикул WB
-  - `officeId` — integer<int64>. ID склада WB, к которому привязан склад продавца
+  - `supplyId` — string. ID поставки. Возвращается, если заказ закреплён за поставкой
+  - `orderUid` — string. ID транзакции для группировки сборочных заданий. Сборочные задания в одной корзине покупателя будут иметь одинаковый `orderUid`
+  - `article` — string. Артикул продавца
+  - `colorCode` — string. Код цвета (только для колеруемых товаров)
+  - `rid` — string. Уникальный ID заказа. Примечание: `rid` — это `srid` в ответах методов: - [Заявки покупателей на возврат](./user-communication#tag/buyersReturns/operation/getV1Claims) - [Лента заказов](./analytics#tag/orderFeed/operation/postV1OrderFeed) - [Заказы](./reports#tag/mainReports/operation/getV1SupplierOrders) - [Продажи](./reports#tag/mainReports/operation/getV1SupplierSales) - [Отчет о возвратах и перемещении товаров](./reports#tag/returnsAndItemMovementReport) - [Детализации к отчётам реализации по ID отчётов](./financial-reports-and-accounting#tag/financialReports/operation/postV1SalesReportsDetailedReportId) - [Детализации к отчётам реализации за период](./financial-reports-and-accounting#tag/financialReports/operation/postV1SalesReportsDetailed) - [Детализации к отчётам об издержках на приём платежей по ID отчётов](./financial-reports-and-accounting#tag/financialReports/operation/postV1AcquiringDetailedReportId) - [Детализации к отчётам об издержках на приём платежей за период](./financial-reports-and-accounting#tag/financialReports/operation/postV1AcquiringDetailed)
+  - `createdAt` — string<date-time>. Дата создания сборочного задания (RFC3339). Часовой пояс — UTC
   - `offices` — array[string]. Список офисов, куда следует привезти товар
+  - `skus` — array[string]. Список баркодов
+  - `id` — integer<int64>. ID сборочного задания
+  - `warehouseId` — integer. ID склада продавца, на который поступило сборочное задание
+  - `officeId` — integer<int64>. ID склада WB, к которому привязан склад продавца
+  - `nmId` — integer. Артикул WB
+  - `chrtId` — integer. ID размера товара в системе WB
+  - `price` — integer. Цена в валюте продажи с учётом всех скидок, кроме скидки по WB Кошельку, умноженная на 100. Код валюты продажи — в поле `currencyCode`. Предоставляется в информационных целях
+  - `convertedPrice` — integer. Цена в валюте страны продавца с учетом всех скидок, кроме скидки по WB Кошельку, умноженная на 100. Предоставляется в информационных целях
+  - `currencyCode` — integer<ISO 4217>. Код валюты продажи
+  - `convertedCurrencyCode` — integer<ISO 4217>. Код валюты страны продавца
+  - `cargoType` — integer (1, 2, 3). Тип товара: - `1` — малогабаритный товар (МГТ) - `2` — сверхгабаритный товар (СГТ) - `3` — крупногабаритный товар (КГТ+)
+  - `crossBorderType` — integer (0, 1). Тип сборочного задания: - `0` — внутренняя поставка - `1` — трансграничная поставка
+  - `comment` — string. Комментарий покупателя
+  - `isZeroOrder` — boolean. Признак заказа товара с нулевым остатком: - `false` — заказ сделан на товар с ненулевым остатком - `true` — заказ сделан на товар с нулевым остатком. Такой заказ можно отменить без штрафа за отмену
   - `options` — object. Опции заказа
     - `isB2B` — boolean. Признак B2B-продажи: - `false` — не B2B-продажа - `true` — B2B-продажа
-  - `orderUid` — string. ID транзакции для группировки сборочных заданий. Сборочные задания в одной корзине покупателя будут иметь одинаковый `orderUid`
-  - `price` — integer. Цена в валюте продажи с учётом всех скидок, кроме скидки по WB Кошельку, умноженная на 100. Код валюты продажи — в поле `currencyCode`. Предоставляется в информационных целях
-  - `rid` — string. Уникальный ID заказа. Примечание: `rid` — это `srid` в ответах методов: - [Заявки покупателей на возврат](./user-communication#tag/buyersReturns/operation/getV1Claims) - [Лента заказов](./analytics#tag/orderFeed/operation/postV1OrderFeed) - [Заказы](./reports#tag/mainReports/operation/getV1SupplierOrders) - [Продажи](./reports#tag/mainReports/operation/getV1SupplierSales) - [Отчет о возвратах и перемещении товаров](./reports#tag/returnsAndItemMovementReport) - [Детализации к отчётам реализации по ID отчётов](./financial-reports-and-accounting#tag/financialReports/operation/postV1SalesReportsDetailedReportId) - [Детализации к отчётам реализации за период](./financial-reports-and-accounting#tag/financialReports/operation/postV1SalesReportsDetailed) - [Детализации к отчётам об издержках на приём платежей по ID отчётов](./financial-reports-and-accounting#tag/financialReports/operation/postV1AcquiringDetailedReportId) - [Детализации к отчётам об издержках на приём платежей за период](./financial-reports-and-accounting#tag/financialReports/operation/postV1AcquiringDetailed)
-  - `scanPrice` — number<uint32>. Цена приёмки в копейках. Отображается после фактической приёмки заказа
-  - `skus` — array[string]. Список баркодов
-  - `supplyId` — string. ID поставки. Возвращается, если заказ закреплён за поставкой
-  - `warehouseId` — integer. ID склада продавца, на который поступило сборочное задание
 
 **400** — Неправильный запрос
 
 - `code` — string. Код ошибки
-- `data` — object. Дополнительные данные ошибки
 - `message` — string. Описание ошибки
+- `data` — object. Дополнительные данные ошибки
 
 **401** — Не авторизован
 
-- `code` — string. Внутренний код ошибки
+- `title` — string. Заголовок ошибки
 - `detail` — string. Детали ошибки
-- `origin` — string. ID внутреннего сервиса WB
+- `code` — string. Внутренний код ошибки
 - `requestId` — string. Уникальный ID запроса
+- `origin` — string. ID внутреннего сервиса WB
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
-- `title` — string. Заголовок ошибки
 
 **402** — Требуется платёж
 
-- `detail` — string. Детали ошибки. Ошибка возвращается только сервисам из [Каталога решений для бизнеса](/business-solutions)
 - `title` — string. Заголовок ошибки
+- `detail` — string. Детали ошибки. Ошибка возвращается только сервисам из [Каталога решений для бизнеса](/business-solutions)
 
 **403** — Доступ запрещён
 
 - `code` — string. Код ошибки
-- `data` — object. Дополнительные данные ошибки
 - `message` — string. Описание ошибки
+- `data` — object. Дополнительные данные ошибки
 
 **429** — Слишком много запросов
 
-- `code` — string. Внутренний код ошибки
+- `title` — string. Заголовок ошибки
 - `detail` — string. Детали ошибки
-- `origin` — string. ID внутреннего сервиса WB
+- `code` — string. Внутренний код ошибки
 - `requestId` — string. Уникальный ID запроса
+- `origin` — string. ID внутреннего сервиса WB
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
-- `title` — string. Заголовок ошибки

@@ -9,7 +9,7 @@ tags:
 spec_version: items
 source: "https://dev.wildberries.ru/docs/openapi/work-with-products"
 deprecated: false
-content_sha: 79415a7cd3470226
+content_sha: 94c866a839af2edc
 ---
 
 # Получить размеры товара с ценами
@@ -49,18 +49,18 @@ content_sha: 79415a7cd3470226
 
 - `data` — object. Данные ответа
   - `listGoods` — array[object]. Размеры товара
-    - `clubDiscount` — integer. Скидка WB Клуба, %
-    - `clubDiscountedPrice` — number. Цена со скидкой, включая скидку WB Клуба
+    - `nmID` — integer. Артикул WB
+    - `sizeID` — integer. ID размера. Можно получить с помощью метода [Получение списка товаров по артикулам](./work-with-products#tag/Ceny-i-skidki/paths/~1api~1v2~1list~1goods~1filter/get), поле `sizeID`. В методах Контента это поле `chrtID`
+    - `vendorCode` — string. Артикул продавца
+    - `price` — integer. Цена
     - `currencyIsoCode4217` — string. Валюта, по стандарту ISO 4217
-    - `discount` — integer. Скидка, %
     - `discountedPrice` — number. Цена со скидкой
+    - `clubDiscountedPrice` — number. Цена со скидкой, включая скидку WB Клуба
+    - `discount` — integer. Скидка, %
+    - `clubDiscount` — integer. Скидка WB Клуба, %
+    - `techSizeName` — string. Размер товара
     - `editableSizePrice` — boolean. Можно ли устанавливать цены отдельно для разных размеров (зависит от категории товара): - `true` — можно - `false` — нельзя
     - `isBadTurnover` — boolean. Признак неликвидного товара: - `true` — неликвидный товар с [низким индексом остатка](https://seller.wildberries.ru/instructions/ru/ru/material/stocks-index?categoryId=e324ce0f-9a2a-4b8d-8fd1-72f751b09b3b&goBackOption=prevRoute#%D1%83%D1%80%D0%BE%D0%B2%D0%BD%D0%B8-%D0%B8%D0%BD%D0%B4%D0%B5%D0%BA%D1%81%D0%B0-%D0%BE%D1%81%D1%82%D0%B0%D1%82%D0%BA%D0%B0) - Поле отсутствует — ликвидный товар
-    - `nmID` — integer. Артикул WB
-    - `price` — integer. Цена
-    - `sizeID` — integer. ID размера. Можно получить с помощью метода [Получение списка товаров по артикулам](./work-with-products#tag/Ceny-i-skidki/paths/~1api~1v2~1list~1goods~1filter/get), поле `sizeID`. В методах Контента это поле `chrtID`
-    - `techSizeName` — string. Размер товара
-    - `vendorCode` — string. Артикул продавца
 - `error` — boolean. Флаг ошибки
 - `errorText` — string. Текст ошибки
 
@@ -72,19 +72,19 @@ content_sha: 79415a7cd3470226
 
 **401** — Не авторизован
 
-- `code` — string. Внутренний код ошибки
+- `title` — string. Заголовок ошибки
 - `detail` — string. Детали ошибки
-- `origin` — string. ID внутреннего сервиса WB
+- `code` — string. Внутренний код ошибки
 - `requestId` — string. Уникальный ID запроса
+- `origin` — string. ID внутреннего сервиса WB
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
-- `title` — string. Заголовок ошибки
 
 **402** — Требуется платёж
 
-- `detail` — string. Детали ошибки. Ошибка возвращается только сервисам из [Каталога решений для бизнеса](/business-solutions)
 - `title` — string. Заголовок ошибки
+- `detail` — string. Детали ошибки. Ошибка возвращается только сервисам из [Каталога решений для бизнеса](/business-solutions)
 
 **403** — Доступ запрещён
 
@@ -94,11 +94,11 @@ content_sha: 79415a7cd3470226
 
 **429** — Слишком много запросов
 
-- `code` — string. Внутренний код ошибки
+- `title` — string. Заголовок ошибки
 - `detail` — string. Детали ошибки
-- `origin` — string. ID внутреннего сервиса WB
+- `code` — string. Внутренний код ошибки
 - `requestId` — string. Уникальный ID запроса
+- `origin` — string. ID внутреннего сервиса WB
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
-- `title` — string. Заголовок ошибки

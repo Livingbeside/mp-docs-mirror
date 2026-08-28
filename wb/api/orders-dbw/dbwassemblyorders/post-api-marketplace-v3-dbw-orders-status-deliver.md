@@ -9,7 +9,7 @@ tags:
 spec_version: ordersdbw
 source: "https://dev.wildberries.ru/docs/openapi/orders-dbw"
 deprecated: false
-content_sha: dec447eabcbc7aef
+content_sha: ab0d6d6ee3d496a7
 ---
 
 # Перевести сборочные задания в доставку
@@ -54,47 +54,47 @@ content_sha: dec447eabcbc7aef
     - `code` — integer **обязательный**. Код ошибки: - `404` - `409`
     - `detail` — string **обязательный**. - `NotFound` — сборочное задание не найдено - `StatusMismatch` — операция невозможна для этого статуса сборочного задания - `ImeiIsNotFilled` — не заполнен IMEI - `MetaValidationFail` — ошибки валидации идентификаторов маркировки
     - `metaDetails` — array[object]. Детали ошибки валидации идентификаторов маркировки
-      - `decision` — string **обязательный**. Статус проверки: - `sgtin` - `sgtinInvalidFormat` — Неверный формат маркировки - `sgtinNotFound` — Маркировка не найдена в [Честном знаке](https://chestnyznak.ru) - `sgtinEmitted` — Маркировка эмитирована - `sgtinApplied` — Не пройдена процедура Ввод в оборот - `sgtinWrittenOff` — Списан - `sgtinRetired` — Выбыл - `sgtinWithdrawn` — Выбыл - `sgtinDisaggregation` — Расформирован - `sgtinDisaggregated` — Расформирован - `sgtinAppliedNotPaid` — Не оплачен - `pending` — Маркировка на проверке
       - `key` — string **обязательный**. Идентификатор маркировки
       - `value` — string. Значение идентификатора маркировки
+      - `decision` — string **обязательный**. Статус проверки: - `sgtin` - `sgtinInvalidFormat` — Неверный формат маркировки - `sgtinNotFound` — Маркировка не найдена в [Честном знаке](https://chestnyznak.ru) - `sgtinEmitted` — Маркировка эмитирована - `sgtinApplied` — Не пройдена процедура Ввод в оборот - `sgtinWrittenOff` — Списан - `sgtinRetired` — Выбыл - `sgtinWithdrawn` — Выбыл - `sgtinDisaggregation` — Расформирован - `sgtinDisaggregated` — Расформирован - `sgtinAppliedNotPaid` — Не оплачен - `pending` — Маркировка на проверке
   - `isError` — boolean **обязательный**. Есть ли ошибки
   - `orderId` — integer **обязательный**. ID сборочного задания с успешно обновлёнными данными
 
 **400** — Неправильный запрос
 
 - `code` — string. Код ошибки
-- `data` — object. Дополнительные данные ошибки
 - `message` — string. Описание ошибки
+- `data` — object. Дополнительные данные ошибки
 
 **401** — Не авторизован
 
-- `code` — string. Внутренний код ошибки
+- `title` — string. Заголовок ошибки
 - `detail` — string. Детали ошибки
-- `origin` — string. ID внутреннего сервиса WB
+- `code` — string. Внутренний код ошибки
 - `requestId` — string. Уникальный ID запроса
+- `origin` — string. ID внутреннего сервиса WB
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
-- `title` — string. Заголовок ошибки
 
 **402** — Требуется платёж
 
-- `detail` — string. Детали ошибки. Ошибка возвращается только сервисам из [Каталога решений для бизнеса](/business-solutions)
 - `title` — string. Заголовок ошибки
+- `detail` — string. Детали ошибки. Ошибка возвращается только сервисам из [Каталога решений для бизнеса](/business-solutions)
 
 **403** — Доступ запрещён
 
 - `code` — string. Код ошибки
-- `data` — object. Дополнительные данные ошибки
 - `message` — string. Описание ошибки
+- `data` — object. Дополнительные данные ошибки
 
 **429** — Слишком много запросов
 
-- `code` — string. Внутренний код ошибки
+- `title` — string. Заголовок ошибки
 - `detail` — string. Детали ошибки
-- `origin` — string. ID внутреннего сервиса WB
+- `code` — string. Внутренний код ошибки
 - `requestId` — string. Уникальный ID запроса
+- `origin` — string. ID внутреннего сервиса WB
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
-- `title` — string. Заголовок ошибки

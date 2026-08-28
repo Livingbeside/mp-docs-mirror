@@ -9,7 +9,7 @@ tags:
 spec_version: communication
 source: "https://dev.wildberries.ru/docs/openapi/user-communication"
 deprecated: false
-content_sha: 2878827abbf2e342
+content_sha: f1a19c79ce444cd7
 ---
 
 # Закрепить отзывы
@@ -37,9 +37,9 @@ content_sha: 2878827abbf2e342
 
 **Тело запроса** (`application/json`):
 
-- `feedbackId` — string **обязательный**. ID отзыва
 - `pinMethod` — string (tariff, subscription) **обязательный**. Метод закрепления: - `subscription` — подписка Джем - `tariff` — тарифная опция
 - `pinOn` — string (nm, imt) **обязательный**. Место закрепления отзыва: - `nm` — карточка товара - `imt` — группа [объединённых](/knowledge-base/articles/019d49a4-1320-71bb-9dac-8ba07e7177ce/rabota-s-tovarami#obuedinenie-i-razuedinenie-kartochek-tovarov) карточек товаров
+- `feedbackId` — string **обязательный**. ID отзыва
 
 ## Ответы
 
@@ -47,17 +47,17 @@ content_sha: 2878827abbf2e342
 
 - `data` — object **обязательный**
 - `data` — array[object]
-  - `errors` — array[object]. Детали ошибок
-    - `detail` — string. Детали ошибки
-    - `origin` — string **обязательный**. ID внутреннего сервиса WB
-    - `requestId` — string **обязательный**. ID запроса
-    - `status` — string (feedbackNotFound, itemNotFound, feedbackMismatch, itemNoImages, feedbackExcluded, imtNotDisplayed, globalLimitReached, unitLimitReached, tariffRestriction, subscriptionRestriction, alreadyPinned, bodyNotValid) **обязательный**. Статус
-    - `title` — string **обязательный**. Заголовок ошибки
   - `feedbackId` — string **обязательный**. ID отзыва
-  - `isErrors` — boolean **обязательный**. Есть ли ошибки
   - `pinId` — integer. ID операции закрепления. Если поле отсутствует — закрепить отзыв не удалось
   - `pinMethod` — string (tariff, subscription) **обязательный**. Метод закрепления: - `subscription` — подписка Джем - `tariff` — тарифная опция
   - `pinOn` — string (nm, imt) **обязательный**. Место закрепления отзыва: - `nm` — карточка товара - `imt` — группа [объединённых](/knowledge-base/articles/019d49a4-1320-71bb-9dac-8ba07e7177ce/rabota-s-tovarami#obuedinenie-i-razuedinenie-kartochek-tovarov) карточек товаров
+  - `isErrors` — boolean **обязательный**. Есть ли ошибки
+  - `errors` — array[object]. Детали ошибок
+    - `origin` — string **обязательный**. ID внутреннего сервиса WB
+    - `detail` — string. Детали ошибки
+    - `requestId` — string **обязательный**. ID запроса
+    - `status` — string (feedbackNotFound, itemNotFound, feedbackMismatch, itemNoImages, feedbackExcluded, imtNotDisplayed, globalLimitReached, unitLimitReached, tariffRestriction, subscriptionRestriction, alreadyPinned, bodyNotValid) **обязательный**. Статус
+    - `title` — string **обязательный**. Заголовок ошибки
 
 **400** — Неправильный запрос
 
@@ -69,19 +69,19 @@ content_sha: 2878827abbf2e342
 
 **401** — Не авторизован
 
-- `code` — string. Внутренний код ошибки
+- `title` — string. Заголовок ошибки
 - `detail` — string. Детали ошибки
-- `origin` — string. ID внутреннего сервиса WB
+- `code` — string. Внутренний код ошибки
 - `requestId` — string. Уникальный ID запроса
+- `origin` — string. ID внутреннего сервиса WB
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
-- `title` — string. Заголовок ошибки
 
 **402** — Требуется платёж
 
-- `detail` — string. Детали ошибки. Ошибка возвращается только сервисам из [Каталога решений для бизнеса](/business-solutions)
 - `title` — string. Заголовок ошибки
+- `detail` — string. Детали ошибки. Ошибка возвращается только сервисам из [Каталога решений для бизнеса](/business-solutions)
 
 **403** — Доступ запрещён
 
@@ -93,11 +93,11 @@ content_sha: 2878827abbf2e342
 
 **429** — Слишком много запросов
 
-- `code` — string. Внутренний код ошибки
+- `title` — string. Заголовок ошибки
 - `detail` — string. Детали ошибки
-- `origin` — string. ID внутреннего сервиса WB
+- `code` — string. Внутренний код ошибки
 - `requestId` — string. Уникальный ID запроса
+- `origin` — string. ID внутреннего сервиса WB
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
-- `title` — string. Заголовок ошибки

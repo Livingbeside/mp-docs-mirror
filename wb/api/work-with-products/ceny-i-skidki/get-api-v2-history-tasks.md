@@ -9,7 +9,7 @@ tags:
 spec_version: items
 source: "https://dev.wildberries.ru/docs/openapi/work-with-products"
 deprecated: false
-content_sha: e6acc867d6a12905
+content_sha: 242aed2b10d17131
 ---
 
 # Состояние обработанной загрузки
@@ -44,12 +44,12 @@ content_sha: e6acc867d6a12905
 **200** — Успешно
 
 - `data` — object. Данные ответа
+  - `uploadID` — integer. ID загрузки
+  - `status` — integer. Статус загрузки: * `3` — обработана, в товарах нет ошибок, цены и скидки обновились * `4` — отменена * `5` — обработана, но в товарах есть ошибки. Для товаров без ошибок цены и скидки обновились, а ошибки в остальных товарах можно получить с помощью метода [Детализация обработанной загрузки](./work-with-products#tag/Ceny-i-skidki/paths/~1api~1v2~1history~1goods~1task/get) * `6` — обработана, но во всех товарах есть ошибки. Их тоже можно получить с помощью метода [Детализация обработанной загрузки](./work-with-products#tag/Ceny-i-skidki/paths/~1api~1v2~1history~1goods~1task/get)
+  - `uploadDate` — string<date-time>. Дата и время, когда загрузка создана
   - `activationDate` — string<date-time>. Дата и время, когда загрузка отправляется в обработку
   - `overAllGoodsNumber` — integer. Всего товаров
-  - `status` — integer. Статус загрузки: * `3` — обработана, в товарах нет ошибок, цены и скидки обновились * `4` — отменена * `5` — обработана, но в товарах есть ошибки. Для товаров без ошибок цены и скидки обновились, а ошибки в остальных товарах можно получить с помощью метода [Детализация обработанной загрузки](./work-with-products#tag/Ceny-i-skidki/paths/~1api~1v2~1history~1goods~1task/get) * `6` — обработана, но во всех товарах есть ошибки. Их тоже можно получить с помощью метода [Детализация обработанной загрузки](./work-with-products#tag/Ceny-i-skidki/paths/~1api~1v2~1history~1goods~1task/get)
   - `successGoodsNumber` — integer. Товаров без ошибок
-  - `uploadDate` — string<date-time>. Дата и время, когда загрузка создана
-  - `uploadID` — integer. ID загрузки
 - `error` — boolean. Флаг ошибки
 - `errorText` — string. Текст ошибки
 
@@ -61,14 +61,14 @@ content_sha: e6acc867d6a12905
 
 **401** — Не авторизован
 
-- `code` — string. Внутренний код ошибки
+- `title` — string. Заголовок ошибки
 - `detail` — string. Детали ошибки
-- `origin` — string. ID внутреннего сервиса WB
+- `code` — string. Внутренний код ошибки
 - `requestId` — string. Уникальный ID запроса
+- `origin` — string. ID внутреннего сервиса WB
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
-- `title` — string. Заголовок ошибки
 
 **403** — Доступ запрещён
 
@@ -78,11 +78,11 @@ content_sha: e6acc867d6a12905
 
 **429** — Слишком много запросов
 
-- `code` — string. Внутренний код ошибки
+- `title` — string. Заголовок ошибки
 - `detail` — string. Детали ошибки
-- `origin` — string. ID внутреннего сервиса WB
+- `code` — string. Внутренний код ошибки
 - `requestId` — string. Уникальный ID запроса
+- `origin` — string. ID внутреннего сервиса WB
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
-- `title` — string. Заголовок ошибки

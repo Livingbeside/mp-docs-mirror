@@ -9,7 +9,7 @@ tags:
 spec_version: items
 source: "https://dev.wildberries.ru/docs/openapi/work-with-products"
 deprecated: false
-content_sha: 2b5ff8c19ddc0f2e
+content_sha: 0fe61d2d8f90b117
 ---
 
 # Обновить остатки товаров{{ /api/v3/stocks/{warehouseId} }}
@@ -43,8 +43,8 @@ content_sha: 2b5ff8c19ddc0f2e
 **Тело запроса** (`application/json`):
 
 - `stocks` — array[object] **обязательный**. Массив ID размеров товаров и их остатков
-  - `amount` — integer. Остаток
   - `chrtId` — integer. ID размера товара
+  - `amount` — integer. Остаток
 
 ## Ответы
 
@@ -53,59 +53,59 @@ content_sha: 2b5ff8c19ddc0f2e
 **400** — Неправильный запрос
 
 - `code` — string. Код ошибки
-- `data` — object. Дополнительные данные ошибки
 - `message` — string. Описание ошибки
+- `data` — object. Дополнительные данные ошибки
 
 **401** — Не авторизован
 
-- `code` — string. Внутренний код ошибки
+- `title` — string. Заголовок ошибки
 - `detail` — string. Детали ошибки
-- `origin` — string. ID внутреннего сервиса WB
+- `code` — string. Внутренний код ошибки
 - `requestId` — string. Уникальный ID запроса
+- `origin` — string. ID внутреннего сервиса WB
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
-- `title` — string. Заголовок ошибки
 
 **402** — Требуется платёж
 
-- `detail` — string. Детали ошибки. Ошибка возвращается только сервисам из [Каталога решений для бизнеса](/business-solutions)
 - `title` — string. Заголовок ошибки
+- `detail` — string. Детали ошибки. Ошибка возвращается только сервисам из [Каталога решений для бизнеса](/business-solutions)
 
 **403** — Доступ запрещён
 
 - `code` — string. Код ошибки
-- `data` — object. Дополнительные данные ошибки
 - `message` — string. Описание ошибки
+- `data` — object. Дополнительные данные ошибки
 
 **404** — Не найдено
 
 - `code` — string. Код ошибки
-- `data` — object. Дополнительные данные ошибки
 - `message` — string. Описание ошибки
+- `data` — object. Дополнительные данные ошибки
 
 **406** — Обновление остатков заблокировано
 
 - `code` — string. Код ошибки
-- `data` — object. Дополнительные данные ошибки
 - `message` — string. Описание ошибки
+- `data` — object. Дополнительные данные ошибки
 
 **409** — Ошибка обновления остатков
 
-- `code` — string. Код ошибки
 - `data` — array[object]. Дополнительная информация об ошибке
-  - `amount` — integer. Остаток
-  - `chrtId` — integer. ID размера товара
   - `sku` — string. Баркод
+  - `chrtId` — integer. ID размера товара
+  - `amount` — integer. Остаток
+- `code` — string. Код ошибки
 - `message` — string. Описание ошибки
 
 **429** — Слишком много запросов
 
-- `code` — string. Внутренний код ошибки
+- `title` — string. Заголовок ошибки
 - `detail` — string. Детали ошибки
-- `origin` — string. ID внутреннего сервиса WB
+- `code` — string. Внутренний код ошибки
 - `requestId` — string. Уникальный ID запроса
+- `origin` — string. ID внутреннего сервиса WB
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
-- `title` — string. Заголовок ошибки

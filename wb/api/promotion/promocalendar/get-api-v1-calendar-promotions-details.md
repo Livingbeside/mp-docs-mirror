@@ -9,7 +9,7 @@ tags:
 spec_version: promotion
 source: "https://dev.wildberries.ru/docs/openapi/promotion"
 deprecated: false
-content_sha: 4b3adf4b2a0e45a0
+content_sha: d0e68a93f134b7f2
 ---
 
 # Детальная информация об акциях
@@ -41,23 +41,23 @@ content_sha: 4b3adf4b2a0e45a0
 
 - `data` — object. Данные ответа
   - `promotions` — array[object]. Список акций
-    - `advantages` — array[string]. Преимущества акции
-    - `description` — string. Описание акции
-    - `endDateTime` — string. Конец акции
-    - `exceptionProductsCount` — integer<uint>. Количество товаров, исключенных из автоакции до её старта. Только при `"type": "auto"`. В момент старта акции эти товары автоматически будут без скидки
     - `id` — integer. ID акции
+    - `name` — string. Название акции
+    - `description` — string. Описание акции
+    - `advantages` — array[string]. Преимущества акции
+    - `startDateTime` — string. Начало акции
+    - `endDateTime` — string. Конец акции
     - `inPromoActionLeftovers` — integer. Количество товаров с остатками, участвующих в акции
     - `inPromoActionTotal` — integer. Общее количество товаров, участвующих в акции
-    - `name` — string. Название акции
     - `notInPromoActionLeftovers` — integer. Количество товаров с остатками, не участвующих в акции
     - `notInPromoActionTotal` — integer. Общее количество товаров, не участвующих в акции
     - `participationPercentage` — integer. Уже участвующие в акции товары, %. Рассчитывается по товарам в акции и с остатком
+    - `type` — string (regular, auto). Тип акции: - `regular` — акция - `auto` — автоакция
+    - `exceptionProductsCount` — integer<uint>. Количество товаров, исключенных из автоакции до её старта. Только при `"type": "auto"`. В момент старта акции эти товары автоматически будут без скидки
     - `ranging` — array[object]. Ранжирование (если подключено)
-      - `boost` — integer<uint>. Текущий уровень поднятия в поиске, %
       - `condition` — string. Тип [ранжирования](https://seller.wildberries.ru/help-center/article/A-385): - `productsInPromotion` — продвижение получат товары продавца, участвующие в акции - `calculateProducts` — продвижение получат любые товара продавца, предложенные к участию в акции - `allProducts` — продвижение получат все товары продавца
       - `participationRate` — integer<uint>. Количество товаров продавца для перехода на следующий уровень ранжирования, %
-    - `startDateTime` — string. Начало акции
-    - `type` — string (regular, auto). Тип акции: - `regular` — акция - `auto` — автоакция
+      - `boost` — integer<uint>. Текущий уровень поднятия в поиске, %
 
 **400** — Неправильный запрос
 
@@ -65,27 +65,27 @@ content_sha: 4b3adf4b2a0e45a0
 
 **401** — Не авторизован
 
-- `code` — string. Внутренний код ошибки
+- `title` — string. Заголовок ошибки
 - `detail` — string. Детали ошибки
-- `origin` — string. ID внутреннего сервиса WB
+- `code` — string. Внутренний код ошибки
 - `requestId` — string. Уникальный ID запроса
+- `origin` — string. ID внутреннего сервиса WB
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
-- `title` — string. Заголовок ошибки
 
 **402** — Требуется платёж
 
-- `detail` — string. Детали ошибки. Ошибка возвращается только сервисам из [Каталога решений для бизнеса](/business-solutions)
 - `title` — string. Заголовок ошибки
+- `detail` — string. Детали ошибки. Ошибка возвращается только сервисам из [Каталога решений для бизнеса](/business-solutions)
 
 **429** — Слишком много запросов
 
-- `code` — string. Внутренний код ошибки
+- `title` — string. Заголовок ошибки
 - `detail` — string. Детали ошибки
-- `origin` — string. ID внутреннего сервиса WB
+- `code` — string. Внутренний код ошибки
 - `requestId` — string. Уникальный ID запроса
+- `origin` — string. ID внутреннего сервиса WB
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
-- `title` — string. Заголовок ошибки

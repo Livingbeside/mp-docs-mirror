@@ -9,7 +9,7 @@ tags:
 spec_version: analytics
 source: "https://dev.wildberries.ru/docs/openapi/analytics"
 deprecated: false
-content_sha: b8f02bd7469448aa
+content_sha: 240329087197aaa0
 ---
 
 # Сгенерировать отчёт повторно
@@ -43,36 +43,36 @@ content_sha: b8f02bd7469448aa
 
 **400** — Неправильный запрос
 
-- `detail` — string **обязательный**. Детали ошибки
-- `origin` — string **обязательный**. ID внутреннего сервиса WB
-- `requestId` — string **обязательный**. Уникальный ID запроса
 - `title` — string **обязательный**. Заголовок ошибки
+- `detail` — string **обязательный**. Детали ошибки
+- `requestId` — string **обязательный**. Уникальный ID запроса
+- `origin` — string **обязательный**. ID внутреннего сервиса WB
 
 **401** — Не авторизован
 
-- `code` — string. Внутренний код ошибки
+- `title` — string. Заголовок ошибки
 - `detail` — string. Детали ошибки
-- `origin` — string. ID внутреннего сервиса WB
+- `code` — string. Внутренний код ошибки
 - `requestId` — string. Уникальный ID запроса
+- `origin` — string. ID внутреннего сервиса WB
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
-- `title` — string. Заголовок ошибки
 
 **403** — Доступ запрещён
 
-- `detail` — string. Детали ошибки
-- `origin` — string. ID внутреннего сервиса WB
-- `requestId` — string. Уникальный ID запроса
 - `title` — string. Заголовок ошибки
+- `detail` — string. Детали ошибки
+- `requestId` — string. Уникальный ID запроса
+- `origin` — string. ID внутреннего сервиса WB
 
 **429** — Слишком много запросов
 
-- `code` — string. Внутренний код ошибки
+- `title` — string. Заголовок ошибки
 - `detail` — string. Детали ошибки
-- `origin` — string. ID внутреннего сервиса WB
+- `code` — string. Внутренний код ошибки
 - `requestId` — string. Уникальный ID запроса
+- `origin` — string. ID внутреннего сервиса WB
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
-- `title` — string. Заголовок ошибки

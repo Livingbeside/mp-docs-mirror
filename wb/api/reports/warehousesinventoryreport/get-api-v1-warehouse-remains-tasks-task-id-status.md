@@ -9,7 +9,7 @@ tags:
 spec_version: reports
 source: "https://dev.wildberries.ru/docs/openapi/reports"
 deprecated: false
-content_sha: 633fc0ed4fae4126
+content_sha: 95bcac2ea641d057
 ---
 
 # Проверить статус{{ /api/v1/warehouse_remains/tasks/{task_id}/status }}
@@ -52,14 +52,14 @@ content_sha: 633fc0ed4fae4126
 
 **401** — Не авторизован
 
-- `code` — string. Внутренний код ошибки
+- `title` — string. Заголовок ошибки
 - `detail` — string. Детали ошибки
-- `origin` — string. ID внутреннего сервиса WB
+- `code` — string. Внутренний код ошибки
 - `requestId` — string. Уникальный ID запроса
+- `origin` — string. ID внутреннего сервиса WB
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
-- `title` — string. Заголовок ошибки
 
 **404** — Не найдено
 
@@ -70,11 +70,11 @@ content_sha: 633fc0ed4fae4126
 
 **429** — Слишком много запросов
 
-- `code` — string. Внутренний код ошибки
+- `title` — string. Заголовок ошибки
 - `detail` — string. Детали ошибки
-- `origin` — string. ID внутреннего сервиса WB
+- `code` — string. Внутренний код ошибки
 - `requestId` — string. Уникальный ID запроса
+- `origin` — string. ID внутреннего сервиса WB
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
-- `title` — string. Заголовок ошибки

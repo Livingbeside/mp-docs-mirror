@@ -9,7 +9,7 @@ tags:
 spec_version: items
 source: "https://dev.wildberries.ru/docs/openapi/work-with-products"
 deprecated: false
-content_sha: 9bf039aac5324e40
+content_sha: bb63ae65095af8e2
 ---
 
 # Состояние необработанной загрузки
@@ -44,12 +44,12 @@ content_sha: 9bf039aac5324e40
 **200** — Успешно
 
 - `data` — object. Данные ответа
+  - `uploadID` — integer. ID загрузки
+  - `status` — integer. Статус загрузки: `1` — в обработке
+  - `uploadDate` — string<date-time>. Дата и время, когда загрузка создана
   - `activationDate` — string<date-time>. Дата и время, когда загрузка отправляется в обработку
   - `overAllGoodsNumber` — integer. Всего товаров
-  - `status` — integer. Статус загрузки: `1` — в обработке
   - `successGoodsNumber` — integer. Товаров без ошибок (0, потому что загрузка в обработке)
-  - `uploadDate` — string<date-time>. Дата и время, когда загрузка создана
-  - `uploadID` — integer. ID загрузки
 - `error` — boolean. Флаг ошибки
 - `errorText` — string. Текст ошибки
 
@@ -61,14 +61,14 @@ content_sha: 9bf039aac5324e40
 
 **401** — Не авторизован
 
-- `code` — string. Внутренний код ошибки
+- `title` — string. Заголовок ошибки
 - `detail` — string. Детали ошибки
-- `origin` — string. ID внутреннего сервиса WB
+- `code` — string. Внутренний код ошибки
 - `requestId` — string. Уникальный ID запроса
+- `origin` — string. ID внутреннего сервиса WB
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
-- `title` — string. Заголовок ошибки
 
 **403** — Доступ запрещён
 
@@ -78,11 +78,11 @@ content_sha: 9bf039aac5324e40
 
 **429** — Слишком много запросов
 
-- `code` — string. Внутренний код ошибки
+- `title` — string. Заголовок ошибки
 - `detail` — string. Детали ошибки
-- `origin` — string. ID внутреннего сервиса WB
+- `code` — string. Внутренний код ошибки
 - `requestId` — string. Уникальный ID запроса
+- `origin` — string. ID внутреннего сервиса WB
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
-- `title` — string. Заголовок ошибки

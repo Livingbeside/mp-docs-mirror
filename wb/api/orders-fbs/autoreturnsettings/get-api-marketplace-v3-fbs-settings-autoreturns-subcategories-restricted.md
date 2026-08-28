@@ -9,7 +9,7 @@ tags:
 spec_version: order
 source: "https://dev.wildberries.ru/docs/openapi/orders-fbs"
 deprecated: false
-content_sha: 15efb5783bcab621
+content_sha: 1d8bb21ddfe3ae58
 ---
 
 # Получить предметы, которые не хранятся на складах WB
@@ -42,9 +42,9 @@ content_sha: 15efb5783bcab621
 
 **200** — Успешно
 
+- `next` — integer<int64> **обязательный**. Параметр пагинации. Содержит значение, которое необходимо указать в запросе для получения следующего пакета данных
 - `data` — array[object] **обязательный**. Список ID предметов, товары которых не хранятся на складах WB
   - `subjectId` — integer **обязательный**. ID предмета
-- `next` — integer<int64> **обязательный**. Параметр пагинации. Содержит значение, которое необходимо указать в запросе для получения следующего пакета данных
 
 **400** — Неправильный запрос
 
@@ -53,22 +53,22 @@ content_sha: 15efb5783bcab621
 
 **401** — Не авторизован
 
-- `code` — string. Внутренний код ошибки
+- `title` — string. Заголовок ошибки
 - `detail` — string. Детали ошибки
-- `origin` — string. ID внутреннего сервиса WB
+- `code` — string. Внутренний код ошибки
 - `requestId` — string. Уникальный ID запроса
+- `origin` — string. ID внутреннего сервиса WB
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
-- `title` — string. Заголовок ошибки
 
 **429** — Слишком много запросов
 
-- `code` — string. Внутренний код ошибки
+- `title` — string. Заголовок ошибки
 - `detail` — string. Детали ошибки
-- `origin` — string. ID внутреннего сервиса WB
+- `code` — string. Внутренний код ошибки
 - `requestId` — string. Уникальный ID запроса
+- `origin` — string. ID внутреннего сервиса WB
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
-- `title` — string. Заголовок ошибки

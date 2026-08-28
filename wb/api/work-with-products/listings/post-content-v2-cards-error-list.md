@@ -9,7 +9,7 @@ tags:
 spec_version: items
 source: "https://dev.wildberries.ru/docs/openapi/work-with-products"
 deprecated: false
-content_sha: 6c350b2871697bf8
+content_sha: c020b4decee83c3d
 ---
 
 # Список несозданных карточек товаров с ошибками
@@ -65,9 +65,9 @@ content_sha: 6c350b2871697bf8
 **Тело запроса** (`application/json`):
 
 - `cursor` — object. Пагинатор
-  - `batchUUID` — string<UUID>. ID последнего пакета в ответе на предыдущий запрос
   - `limit` — number<int>. Количество пакетов в ответе По умолчанию: `100`.
   - `updatedAt` — string<date-time>. Дата и время формирования последнего пакета в ответе на предыдущий запрос
+  - `batchUUID` — string<UUID>. ID последнего пакета в ответе на предыдущий запрос
 - `order` — object. Порядок выдачи пакетов
   - `ascending` — boolean. - `false` — сортировка по убыванию - `true` — сортировка по возрастанию По умолчанию: `True`.
 
@@ -75,54 +75,54 @@ content_sha: 6c350b2871697bf8
 
 **200** — Успешно
 
-- `additionalErrors` — object **обязательный**. Дополнительные ошибки
 - `data` — object **обязательный**. Данные ответа
-  - `cursor` — object **обязательный**. Пагинатор
-    - `batchUUID` — string<UUID> **обязательный**. ID последнего пакета в ответе
-    - `next` — boolean **обязательный**. Есть ли ещё черновики: - `false` — нет - `true` — да
-    - `updatedAt` — string<date-time> **обязательный**. Дата и время формирования последнего пакета в ответе
   - `items` — array[object] **обязательный**. Пакеты данных
     - `batchUUID` — string<UUID> **обязательный**. ID пакета
-    - `brands` — object **обязательный**. Бренды. Разбивка по `vendorCodes`
-    - `errors` — object **обязательный**. Ошибки. Разбивка по `vendorCodes`
     - `subjects` — object **обязательный**. Предметы. Разбивка по `vendorCodes`
-    - `updatedAt` — string<date-time> **обязательный**. Дата и время создания или редактирования пакета
+    - `brands` — object **обязательный**. Бренды. Разбивка по `vendorCodes`
     - `vendorCodes` — array[string] **обязательный**. Артикулы продавца
+    - `errors` — object **обязательный**. Ошибки. Разбивка по `vendorCodes`
+    - `updatedAt` — string<date-time> **обязательный**. Дата и время создания или редактирования пакета
+  - `cursor` — object **обязательный**. Пагинатор
+    - `next` — boolean **обязательный**. Есть ли ещё черновики: - `false` — нет - `true` — да
+    - `updatedAt` — string<date-time> **обязательный**. Дата и время формирования последнего пакета в ответе
+    - `batchUUID` — string<UUID> **обязательный**. ID последнего пакета в ответе
 - `error` — boolean **обязательный**. Флаг ошибки
 - `errorText` — string **обязательный**. Описание ошибки
+- `additionalErrors` — object **обязательный**. Дополнительные ошибки
 
 **400** — Неправильный запрос
 
-- `additionalErrors` — object. Дополнительные ошибки
 - `data` — object. Данные ошибки
 - `error` — boolean. Флаг ошибки
 - `errorText` — string. Текст ошибки
+- `additionalErrors` — object. Дополнительные ошибки
 
 **401** — Не авторизован
 
-- `code` — string. Внутренний код ошибки
+- `title` — string. Заголовок ошибки
 - `detail` — string. Детали ошибки
-- `origin` — string. ID внутреннего сервиса WB
+- `code` — string. Внутренний код ошибки
 - `requestId` — string. Уникальный ID запроса
+- `origin` — string. ID внутреннего сервиса WB
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
-- `title` — string. Заголовок ошибки
 
 **403** — Доступ запрещён
 
-- `additionalErrors` — string. Дополнительные ошибки
 - `data` — object. Данные ошибки
 - `error` — boolean. Флаг ошибки
 - `errorText` — string. Текст ошибки
+- `additionalErrors` — string. Дополнительные ошибки
 
 **429** — Слишком много запросов
 
-- `code` — string. Внутренний код ошибки
+- `title` — string. Заголовок ошибки
 - `detail` — string. Детали ошибки
-- `origin` — string. ID внутреннего сервиса WB
+- `code` — string. Внутренний код ошибки
 - `requestId` — string. Уникальный ID запроса
+- `origin` — string. ID внутреннего сервиса WB
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
-- `title` — string. Заголовок ошибки

@@ -9,7 +9,7 @@ tags:
 spec_version: communication
 source: "https://dev.wildberries.ru/docs/openapi/user-communication"
 deprecated: false
-content_sha: 03d97c2fe49b777b
+content_sha: fd0e00cbf4582678
 ---
 
 # Отправить сообщение
@@ -33,9 +33,9 @@ content_sha: 03d97c2fe49b777b
 
 **Тело запроса** (`multipart/form-data`):
 
-- `file` — array[string<binary>]. Файлы, формат JPEG, PDF или PNG, максимальный размер — 5 Мб каждый. Максимальный суммарный размер файлов — 30 Мб.
-- `message` — string. Текст сообщения. Максимум 1000 символов.
 - `replySign` — string **обязательный**. Подпись чата. Можно получить из [информации по чату](./user-communication#tag/buyersChat/operation/getV1SellerChats) или [данных события](./user-communication#tag/buyersChat/operation/getV1SellerEvents), если в событии есть поле `"isNewChat": true`.
+- `message` — string. Текст сообщения. Максимум 1000 символов.
+- `file` — array[string<binary>]. Файлы, формат JPEG, PDF или PNG, максимальный размер — 5 Мб каждый. Максимальный суммарный размер файлов — 30 Мб.
 
 ## Ответы
 
@@ -49,36 +49,36 @@ content_sha: 03d97c2fe49b777b
 
 **400** — Неправильный запрос
 
-- `detail` — string. Детали ошибки
-- `error` — string. Текст ошибки
-- `origin` — string. ID внутреннего сервиса WB
-- `requestId` — string. Уникальный ID запроса
 - `status` — number. HTTP статус-код
 - `title` — string. Заголовок ошибки
+- `origin` — string. ID внутреннего сервиса WB
+- `detail` — string. Детали ошибки
+- `requestId` — string. Уникальный ID запроса
+- `error` — string. Текст ошибки
 
 **401** — Не авторизован
 
-- `code` — string. Внутренний код ошибки
+- `title` — string. Заголовок ошибки
 - `detail` — string. Детали ошибки
-- `origin` — string. ID внутреннего сервиса WB
+- `code` — string. Внутренний код ошибки
 - `requestId` — string. Уникальный ID запроса
+- `origin` — string. ID внутреннего сервиса WB
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
-- `title` — string. Заголовок ошибки
 
 **402** — Требуется платёж
 
-- `detail` — string. Детали ошибки. Ошибка возвращается только сервисам из [Каталога решений для бизнеса](/business-solutions)
 - `title` — string. Заголовок ошибки
+- `detail` — string. Детали ошибки. Ошибка возвращается только сервисам из [Каталога решений для бизнеса](/business-solutions)
 
 **429** — Слишком много запросов
 
-- `code` — string. Внутренний код ошибки
+- `title` — string. Заголовок ошибки
 - `detail` — string. Детали ошибки
-- `origin` — string. ID внутреннего сервиса WB
+- `code` — string. Внутренний код ошибки
 - `requestId` — string. Уникальный ID запроса
+- `origin` — string. ID внутреннего сервиса WB
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
-- `title` — string. Заголовок ошибки

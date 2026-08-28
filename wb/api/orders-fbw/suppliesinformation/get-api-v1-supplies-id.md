@@ -9,7 +9,7 @@ tags:
 spec_version: ordersfbw
 source: "https://dev.wildberries.ru/docs/openapi/orders-fbw"
 deprecated: false
-content_sha: f0c76779d56a05f9
+content_sha: dd850efc8d22e06d
 ---
 
 # Детали поставки{{ /api/v1/supplies/{ID} }}
@@ -40,72 +40,72 @@ content_sha: f0c76779d56a05f9
 
 **200** — Успешно
 
-- `acceptanceCost` — number. Предварительная стоимость приёмки, ₽
-- `acceptedQuantity` — integer. Принято, шт
-- `actualWarehouseID` — integer. ID склада, на который поставка была привезена
-- `actualWarehouseName` — string. Название склада, на который поставка привезена
+- `phone` — string. Телефон пользователя, создавшего поставку
+- `statusID` — integer (1, 2, 3, 4, 5, 6). ID статуса поставки: - `1` — Не запланировано - `2` — Запланировано - `3` — Отгрузка разрешена - `4` — Идёт приёмка - `5` — Принято - `6` — Отгружено на воротах
+- `virtualTypeID` — integer. ID типа виртуальной поставки. Отображается только для поставок с `"boxTypeID":0`. - `0` — Перенос остатков - `1` — Обезличка - `4` — QR-поставка - `5` — Допринято - `6` — Скан-приёмка
 - `boxTypeID` — integer. ID типа поставки: - `0` — Без коробов (виртуальная поставка) - `1` и `2` — Короба - `5` — Монопаллеты - `6` — Суперсейф
 - `createDate` — string. Дата и время создания поставки
-- `deliveryCoef` — string. Коэффициент логистики
-- `depersonalizedQuantity` — integer. Количество обезличенного товара, шт
-- `factDate` — string. Дата фактической отгрузки поставки
-- `isBoxOnPallet` — boolean. Тип поставки — **Поштучная палета**: - `true` — да - `false` — нет Поле возвращается только при `"boxTypeID": 2`
-- `paidAcceptanceCoefficient` — number. Коэффициент приёмки
-- `phone` — string. Телефон пользователя, создавшего поставку
-- `quantity` — integer. Добавлено в поставку/заказ, шт
-- `readyForSaleQuantity` — integer. Поступило в продажу, шт
-- `rejectReason` — string. Причина, по которой поставка не может быть принята
-- `statusID` — integer (1, 2, 3, 4, 5, 6). ID статуса поставки: - `1` — Не запланировано - `2` — Запланировано - `3` — Отгрузка разрешена - `4` — Идёт приёмка - `5` — Принято - `6` — Отгружено на воротах
-- `storageCoef` — string. Коэффициент хранения
-- `supplierAssignName` — string. Краткое название продавца
 - `supplyDate` — string. Плановая дата отгрузки поставки
-- `transitWarehouseID` — integer. ID транзитного склада
-- `transitWarehouseName` — string. Название транзитного склада
-- `unloadingQuantity` — integer. Количество товара, находящегося на раскладке, шт
+- `factDate` — string. Дата фактической отгрузки поставки
 - `updatedDate` — string. Дата изменения поставки
-- `virtualTypeID` — integer. ID типа виртуальной поставки. Отображается только для поставок с `"boxTypeID":0`. - `0` — Перенос остатков - `1` — Обезличка - `4` — QR-поставка - `5` — Допринято - `6` — Скан-приёмка
 - `warehouseID` — integer. ID склада, на который планируется поставка
 - `warehouseName` — string. Название склада, на который планируется поставка
+- `actualWarehouseID` — integer. ID склада, на который поставка была привезена
+- `actualWarehouseName` — string. Название склада, на который поставка привезена
+- `transitWarehouseID` — integer. ID транзитного склада
+- `transitWarehouseName` — string. Название транзитного склада
+- `acceptanceCost` — number. Предварительная стоимость приёмки, ₽
+- `paidAcceptanceCoefficient` — number. Коэффициент приёмки
+- `rejectReason` — string. Причина, по которой поставка не может быть принята
+- `supplierAssignName` — string. Краткое название продавца
+- `storageCoef` — string. Коэффициент хранения
+- `deliveryCoef` — string. Коэффициент логистики
+- `quantity` — integer. Добавлено в поставку/заказ, шт
+- `readyForSaleQuantity` — integer. Поступило в продажу, шт
+- `acceptedQuantity` — integer. Принято, шт
+- `unloadingQuantity` — integer. Количество товара, находящегося на раскладке, шт
+- `depersonalizedQuantity` — integer. Количество обезличенного товара, шт
+- `isBoxOnPallet` — boolean. Тип поставки — **Поштучная палета**: - `true` — да - `false` — нет Поле возвращается только при `"boxTypeID": 2`
 
 **400** — Неправильный запрос
 
-- `detail` — string. Описание ошибки
-- `origin` — string. Сервис, вернувший ошибку
-- `requestId` — string. ID запроса
 - `status` — integer. HTTP статус-код
 - `title` — string. ID ошибки
+- `detail` — string. Описание ошибки
+- `requestId` — string. ID запроса
+- `origin` — string. Сервис, вернувший ошибку
 
 **401** — Не авторизован
 
-- `code` — string. Внутренний код ошибки
+- `title` — string. Заголовок ошибки
 - `detail` — string. Детали ошибки
-- `origin` — string. ID внутреннего сервиса WB
+- `code` — string. Внутренний код ошибки
 - `requestId` — string. Уникальный ID запроса
+- `origin` — string. ID внутреннего сервиса WB
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
-- `title` — string. Заголовок ошибки
 
 **402** — Требуется платёж
 
-- `detail` — string. Детали ошибки. Ошибка возвращается только сервисам из [Каталога решений для бизнеса](/business-solutions)
 - `title` — string. Заголовок ошибки
+- `detail` — string. Детали ошибки. Ошибка возвращается только сервисам из [Каталога решений для бизнеса](/business-solutions)
 
 **404** — Не найдено
 
-- `detail` — string. Описание ошибки
-- `origin` — string. Сервис, вернувший ошибку
-- `requestId` — string. ID запроса
 - `status` — integer. HTTP статус-код
 - `title` — string. ID ошибки
+- `detail` — string. Описание ошибки
+- `requestId` — string. ID запроса
+- `origin` — string. Сервис, вернувший ошибку
 
 **429** — Слишком много запросов
 
-- `code` — string. Внутренний код ошибки
+- `title` — string. Заголовок ошибки
 - `detail` — string. Детали ошибки
-- `origin` — string. ID внутреннего сервиса WB
+- `code` — string. Внутренний код ошибки
 - `requestId` — string. Уникальный ID запроса
+- `origin` — string. ID внутреннего сервиса WB
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
-- `title` — string. Заголовок ошибки

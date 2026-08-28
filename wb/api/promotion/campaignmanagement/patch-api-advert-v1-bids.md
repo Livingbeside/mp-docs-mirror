@@ -9,7 +9,7 @@ tags:
 spec_version: promotion
 source: "https://dev.wildberries.ru/docs/openapi/promotion"
 deprecated: false
-content_sha: eb64343b85edea4a
+content_sha: f152dd19004d2da5
 ---
 
 # Изменение ставок в кампаниях
@@ -45,8 +45,8 @@ content_sha: eb64343b85edea4a
 - `bids` — array[object] **обязательный**. Ставки в кампаниях
   - `advert_id` — integer<int64> **обязательный**. ID кампании
   - `nm_bids` — array[object] **обязательный**. Ставки
-    - `bid_kopecks` — integer<int64> **обязательный**. Ставка в разменных единицах — 0,01 от базовой валюты [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances)
     - `nm_id` — integer<int64> **обязательный**. Артикул WB
+    - `bid_kopecks` — integer<int64> **обязательный**. Ставка в разменных единицах — 0,01 от базовой валюты [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances)
     - `placement` — string (search, recommendations, combined) **обязательный**. Место размещения: - `search` — в поиске (для кампаний с ручной ставкой) - `recommendations`— в рекомендациях (для кампаний с ручной ставкой) - `combined` — в поиске и рекомендациях (для кампаний с единой ставкой)
 
 ## Ответы
@@ -56,8 +56,8 @@ content_sha: eb64343b85edea4a
 - `bids` — array[object] **обязательный**. Результат отработки запроса
   - `advert_id` — integer<int64> **обязательный**. ID кампании
   - `nm_bids` — array[object] **обязательный**. Ставки
-    - `bid_kopecks` — integer<int64> **обязательный**. Ставка в разменных единицах — 0,01 от базовой валюты [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances)
     - `nm_id` — integer<int64> **обязательный**. Артикул WB
+    - `bid_kopecks` — integer<int64> **обязательный**. Ставка в разменных единицах — 0,01 от базовой валюты [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances)
     - `placement` — string **обязательный**. Место размещения: - `search` — в поиске - `recommendations`— в рекомендациях
 - `currency` — string<ISO 4217> **обязательный**. Валюта [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances)
 
@@ -71,22 +71,22 @@ content_sha: eb64343b85edea4a
 
 **401** — Не авторизован
 
-- `code` — string. Внутренний код ошибки
+- `title` — string. Заголовок ошибки
 - `detail` — string. Детали ошибки
-- `origin` — string. ID внутреннего сервиса WB
+- `code` — string. Внутренний код ошибки
 - `requestId` — string. Уникальный ID запроса
+- `origin` — string. ID внутреннего сервиса WB
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
-- `title` — string. Заголовок ошибки
 
 **429** — Слишком много запросов
 
-- `code` — string. Внутренний код ошибки
+- `title` — string. Заголовок ошибки
 - `detail` — string. Детали ошибки
-- `origin` — string. ID внутреннего сервиса WB
+- `code` — string. Внутренний код ошибки
 - `requestId` — string. Уникальный ID запроса
+- `origin` — string. ID внутреннего сервиса WB
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
-- `title` — string. Заголовок ошибки

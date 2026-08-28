@@ -9,7 +9,7 @@ tags:
 spec_version: instorepickup
 source: "https://dev.wildberries.ru/docs/openapi/in-store-pickup"
 deprecated: false
-content_sha: 0e32ba2b59716412
+content_sha: a86f1ab315a2d32d
 ---
 
 # Закрепить номера ДТ за сборочными заданиями
@@ -50,11 +50,11 @@ content_sha: 0e32ba2b59716412
 
 - `requestId` — ? **обязательный**. Уникальный ID запроса
 - `results` — array[object] **обязательный**
+  - `orderId` — integer **обязательный**. ID сборочного задания
+  - `isError` — boolean **обязательный**. Есть ли ошибки
   - `errors` — array[object]. Детали ошибки
     - `code` — integer **обязательный**. Код ошибки: - `404` - `409` - `400`
     - `detail` — string **обязательный**. - `NotFound` — сборочное задание не найдено - `StatusMismatch` — операция невозможна для этого статуса сборочного задания - `OrderNotB2B` — операция доступна только для сборочных заданий с признаком B2B-продажи `"isB2b":true` - `InvalidOriginCountryCode` — некорректный код страны происхождения товара
-  - `isError` — boolean **обязательный**. Есть ли ошибки
-  - `orderId` — integer **обязательный**. ID сборочного задания
 
 **400** — Неправильный запрос
 
@@ -65,28 +65,28 @@ content_sha: 0e32ba2b59716412
 
 **401** — Не авторизован
 
-- `code` — string. Внутренний код ошибки
+- `title` — string. Заголовок ошибки
 - `detail` — string. Детали ошибки
-- `origin` — string. ID внутреннего сервиса WB
+- `code` — string. Внутренний код ошибки
 - `requestId` — string. Уникальный ID запроса
+- `origin` — string. ID внутреннего сервиса WB
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
-- `title` — string. Заголовок ошибки
 
 **403** — Доступ запрещён
 
 - `code` — string. Код ошибки
-- `data` — object. Дополнительные данные, обогащающие ошибку
 - `message` — string. Описание ошибки
+- `data` — object. Дополнительные данные, обогащающие ошибку
 
 **429** — Слишком много запросов
 
-- `code` — string. Внутренний код ошибки
+- `title` — string. Заголовок ошибки
 - `detail` — string. Детали ошибки
-- `origin` — string. ID внутреннего сервиса WB
+- `code` — string. Внутренний код ошибки
 - `requestId` — string. Уникальный ID запроса
+- `origin` — string. ID внутреннего сервиса WB
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
-- `title` — string. Заголовок ошибки

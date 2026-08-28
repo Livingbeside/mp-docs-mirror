@@ -9,7 +9,7 @@ tags:
 spec_version: promotion
 source: "https://dev.wildberries.ru/docs/openapi/promotion"
 deprecated: false
-content_sha: 635124f2f9eeefe3
+content_sha: 612a1d9ac82bc5e1
 ---
 
 # Добавить товар в акцию
@@ -38,9 +38,9 @@ content_sha: 635124f2f9eeefe3
 **Тело запроса** (`application/json`):
 
 - `data` — object. Данные запроса
-  - `nomenclatures` — array[integer]. Артикулы WB, которые можно добавить в акцию
   - `promotionID` — integer. ID акции
   - `uploadNow` — boolean. Установить скидку: - `true` — сейчас - `false` — в момент старта акции
+  - `nomenclatures` — array[integer]. Артикулы WB, которые можно добавить в акцию
 
 ## Ответы
 
@@ -56,19 +56,19 @@ content_sha: 635124f2f9eeefe3
 
 **401** — Не авторизован
 
-- `code` — string. Внутренний код ошибки
+- `title` — string. Заголовок ошибки
 - `detail` — string. Детали ошибки
-- `origin` — string. ID внутреннего сервиса WB
+- `code` — string. Внутренний код ошибки
 - `requestId` — string. Уникальный ID запроса
+- `origin` — string. ID внутреннего сервиса WB
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
-- `title` — string. Заголовок ошибки
 
 **402** — Требуется платёж
 
-- `detail` — string. Детали ошибки. Ошибка возвращается только сервисам из [Каталога решений для бизнеса](/business-solutions)
 - `title` — string. Заголовок ошибки
+- `detail` — string. Детали ошибки. Ошибка возвращается только сервисам из [Каталога решений для бизнеса](/business-solutions)
 
 **422** — Ошибка обработки параметров запроса
 
@@ -76,11 +76,11 @@ content_sha: 635124f2f9eeefe3
 
 **429** — Слишком много запросов
 
-- `code` — string. Внутренний код ошибки
+- `title` — string. Заголовок ошибки
 - `detail` — string. Детали ошибки
-- `origin` — string. ID внутреннего сервиса WB
+- `code` — string. Внутренний код ошибки
 - `requestId` — string. Уникальный ID запроса
+- `origin` — string. ID внутреннего сервиса WB
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
-- `title` — string. Заголовок ошибки

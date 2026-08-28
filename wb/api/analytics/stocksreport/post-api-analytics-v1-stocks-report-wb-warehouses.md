@@ -9,7 +9,7 @@ tags:
 spec_version: analytics
 source: "https://dev.wildberries.ru/docs/openapi/analytics"
 deprecated: false
-content_sha: 4224000a3dd4124d
+content_sha: aeabdaaab506dbf3
 ---
 
 # Остатки на складах WB
@@ -39,9 +39,9 @@ content_sha: 4224000a3dd4124d
 
 **Тело запроса** (`application/json`):
 
+- `nmIds` — array[integer<int64>]. Артикулы WB
 - `chrtIds` — array[integer<int64>]. ID размеров. Используется только для указанных в массиве `nmIds` артикулов
 - `limit` — integer<uint32>. Количество строк в ответе По умолчанию: `250000`.
-- `nmIds` — array[integer<int64>]. Артикулы WB
 - `offset` — integer<uint32>. Сколько элементов пропустить. Например, для значения `10` ответ начнётся с 11 элемента По умолчанию: `0`.
 
 ## Ответы
@@ -50,54 +50,54 @@ content_sha: 4224000a3dd4124d
 
 - `data` — object **обязательный**. Текущие остатки товаров на складах WB
   - `items` — array[object] **обязательный**. Остатки товаров на складах WB по размерам
-    - `chrtId` — integer<int64> **обязательный**. ID размера
-    - `inWayFromClient` — integer<uint64> **обязательный**. В пути от клиента
-    - `inWayToClient` — integer<uint64> **обязательный**. В пути к клиенту
     - `nmId` — integer<int64> **обязательный**. Артикул WB
-    - `quantity` — integer<uint64> **обязательный**. Количество товара на складе, доступное клиентам для добавления в корзину
-    - `regionName` — string **обязательный**. Регион отгрузки. [На данный момент](https://dev.wildberries.ru/release-notes?id=570) может быть только `Склад WB`
+    - `chrtId` — integer<int64> **обязательный**. ID размера
     - `warehouseId` — integer<int64> **обязательный**. ID склада. [На данный момент](https://dev.wildberries.ru/release-notes?id=570) может быть только `-999999`
     - `warehouseName` — string **обязательный**. Название склада. [На данный момент](https://dev.wildberries.ru/release-notes?id=570) может быть только `Склад WB`
+    - `regionName` — string **обязательный**. Регион отгрузки. [На данный момент](https://dev.wildberries.ru/release-notes?id=570) может быть только `Склад WB`
+    - `quantity` — integer<uint64> **обязательный**. Количество товара на складе, доступное клиентам для добавления в корзину
+    - `inWayToClient` — integer<uint64> **обязательный**. В пути к клиенту
+    - `inWayFromClient` — integer<uint64> **обязательный**. В пути от клиента
 
 **204** — Нет данных
 
 **400** — Неправильный запрос
 
-- `detail` — string **обязательный**. Детали ошибки
-- `origin` — string **обязательный**. ID внутреннего сервиса WB
-- `requestId` — string **обязательный**. Уникальный ID запроса
 - `title` — string **обязательный**. Заголовок ошибки
+- `detail` — string **обязательный**. Детали ошибки
+- `requestId` — string **обязательный**. Уникальный ID запроса
+- `origin` — string **обязательный**. ID внутреннего сервиса WB
 
 **401** — Не авторизован
 
-- `code` — string. Внутренний код ошибки
+- `title` — string. Заголовок ошибки
 - `detail` — string. Детали ошибки
-- `origin` — string. ID внутреннего сервиса WB
+- `code` — string. Внутренний код ошибки
 - `requestId` — string. Уникальный ID запроса
+- `origin` — string. ID внутреннего сервиса WB
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
-- `title` — string. Заголовок ошибки
 
 **402** — Требуется платёж
 
-- `detail` — string. Детали ошибки. Ошибка возвращается только сервисам из [Каталога решений для бизнеса](/business-solutions)
 - `title` — string. Заголовок ошибки
+- `detail` — string. Детали ошибки. Ошибка возвращается только сервисам из [Каталога решений для бизнеса](/business-solutions)
 
 **403** — Доступ запрещён
 
-- `detail` — string **обязательный**. Детали ошибки
-- `origin` — string **обязательный**. ID внутреннего сервиса WB
-- `requestId` — string **обязательный**. Уникальный ID запроса
 - `title` — string **обязательный**. Заголовок ошибки
+- `detail` — string **обязательный**. Детали ошибки
+- `requestId` — string **обязательный**. Уникальный ID запроса
+- `origin` — string **обязательный**. ID внутреннего сервиса WB
 
 **429** — Слишком много запросов
 
-- `code` — string. Внутренний код ошибки
+- `title` — string. Заголовок ошибки
 - `detail` — string. Детали ошибки
-- `origin` — string. ID внутреннего сервиса WB
+- `code` — string. Внутренний код ошибки
 - `requestId` — string. Уникальный ID запроса
+- `origin` — string. ID внутреннего сервиса WB
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
-- `title` — string. Заголовок ошибки

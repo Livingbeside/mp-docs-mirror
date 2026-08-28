@@ -9,7 +9,7 @@ tags:
 spec_version: reports
 source: "https://dev.wildberries.ru/docs/openapi/reports"
 deprecated: false
-content_sha: 5b5586f66552cbea
+content_sha: aca48174b1fc3930
 ---
 
 # Получить отчёт
@@ -50,16 +50,16 @@ content_sha: 5b5586f66552cbea
 
 - `response` — object
   - `data` — array[object]
-    - `barcode` — string. Баркод
+    - `name` — string. Страна покупателя
+    - `price` — number. Цена товара, с НДС
     - `currency_name_short` — string. Валюта
     - `excise_short` — string. Код маркировки
-    - `fiscal_doc_number` — integer. Номер фискального документа (чека полного расчёта), если есть
-    - `fiscal_drive_number` — string. Номер фискального накопителя, если есть
-    - `fiscal_dt` — string. Дата фискализации (дата в чеке), если есть, `ГГГГ-ММ-ДД`
-    - `name` — string. Страна покупателя
+    - `barcode` — string. Баркод
     - `nm_id` — integer. Артикул WB
     - `operation_type_id` — integer. Тип операции, если есть: * `1` — вывод из оборота * `2` — возврат в оборот
-    - `price` — number. Цена товара, с НДС
+    - `fiscal_doc_number` — integer. Номер фискального документа (чека полного расчёта), если есть
+    - `fiscal_dt` — string. Дата фискализации (дата в чеке), если есть, `ГГГГ-ММ-ДД`
+    - `fiscal_drive_number` — string. Номер фискального накопителя, если есть
     - `rid` — integer. `Rid`
     - `srid` — string. `Srid`
 
@@ -72,27 +72,27 @@ content_sha: 5b5586f66552cbea
 
 **401** — Не авторизован
 
-- `code` — string. Внутренний код ошибки
+- `title` — string. Заголовок ошибки
 - `detail` — string. Детали ошибки
-- `origin` — string. ID внутреннего сервиса WB
+- `code` — string. Внутренний код ошибки
 - `requestId` — string. Уникальный ID запроса
+- `origin` — string. ID внутреннего сервиса WB
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
-- `title` — string. Заголовок ошибки
 
 **402** — Требуется платёж
 
-- `detail` — string. Детали ошибки. Ошибка возвращается только сервисам из [Каталога решений для бизнеса](/business-solutions)
 - `title` — string. Заголовок ошибки
+- `detail` — string. Детали ошибки. Ошибка возвращается только сервисам из [Каталога решений для бизнеса](/business-solutions)
 
 **429** — Слишком много запросов
 
-- `code` — string. Внутренний код ошибки
+- `title` — string. Заголовок ошибки
 - `detail` — string. Детали ошибки
-- `origin` — string. ID внутреннего сервиса WB
+- `code` — string. Внутренний код ошибки
 - `requestId` — string. Уникальный ID запроса
+- `origin` — string. ID внутреннего сервиса WB
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
-- `title` — string. Заголовок ошибки

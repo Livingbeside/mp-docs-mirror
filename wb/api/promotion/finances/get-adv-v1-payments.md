@@ -9,7 +9,7 @@ tags:
 spec_version: promotion
 source: "https://dev.wildberries.ru/docs/openapi/promotion"
 deprecated: false
-content_sha: 1b6c4df2d40cb810
+content_sha: a6e3b99ced3f069a
 ---
 
 # Получение истории пополнений счёта
@@ -40,13 +40,13 @@ content_sha: 1b6c4df2d40cb810
 
 **200** — Успешно
 
-- `cardStatus` — string. Статус операции при оплате картой: - `success` — успех - `fail` — неуспех - `pending` — в ожидании ответа - `unknown` — неизвестно
-- `currency` — string<ISO 4217>. Валюта [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances)
-- `date` — string<time-date>. Дата платежа
 - `id` — integer. ID платежа
-- `statusId` — integer. Статус: - `0` — ошибка - `1` — обработано
+- `date` — string<time-date>. Дата платежа
 - `sum` — integer. Сумма платежа
 - `type` — integer. Тип источника списания: - `0` — Счёт - `1` — Баланс - `3` — Картой
+- `statusId` — integer. Статус: - `0` — ошибка - `1` — обработано
+- `cardStatus` — string. Статус операции при оплате картой: - `success` — успех - `fail` — неуспех - `pending` — в ожидании ответа - `unknown` — неизвестно
+- `currency` — string<ISO 4217>. Валюта [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances)
 
 **204** — История пополнений счета не найдена
 
@@ -54,22 +54,22 @@ content_sha: 1b6c4df2d40cb810
 
 **401** — Не авторизован
 
-- `code` — string. Внутренний код ошибки
+- `title` — string. Заголовок ошибки
 - `detail` — string. Детали ошибки
-- `origin` — string. ID внутреннего сервиса WB
+- `code` — string. Внутренний код ошибки
 - `requestId` — string. Уникальный ID запроса
+- `origin` — string. ID внутреннего сервиса WB
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
-- `title` — string. Заголовок ошибки
 
 **429** — Слишком много запросов
 
-- `code` — string. Внутренний код ошибки
+- `title` — string. Заголовок ошибки
 - `detail` — string. Детали ошибки
-- `origin` — string. ID внутреннего сервиса WB
+- `code` — string. Внутренний код ошибки
 - `requestId` — string. Уникальный ID запроса
+- `origin` — string. ID внутреннего сервиса WB
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
-- `title` — string. Заголовок ошибки

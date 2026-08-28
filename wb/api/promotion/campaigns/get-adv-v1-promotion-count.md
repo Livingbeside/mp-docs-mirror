@@ -9,7 +9,7 @@ tags:
 spec_version: promotion
 source: "https://dev.wildberries.ru/docs/openapi/promotion"
 deprecated: false
-content_sha: dbf7b83f179650d6
+content_sha: 57c15ff9563fd440
 ---
 
 # Списки кампаний
@@ -34,32 +34,32 @@ content_sha: dbf7b83f179650d6
 **200** — Успешно
 
 - `adverts` — array[object]. Данные по кампаниям
+  - `type` — integer. Тип кампании: - `8` — кампания с единой ставкой (**устаревший тип**) - `9` — кампания с единой или ручной ставкой. Тип ставки вы можете получить с помощью метода [Информация о кампаниях](./promotion#tag/campaigns/operation/getV2Adverts), поле `bid_type`
+  - `status` — integer. Статус кампании
+  - `count` — integer. Количество кампаний
   - `advert_list` — array[object]. Список кампаний
     - `advertId` — integer. ID кампании
     - `changeTime` — string<date-time>. Дата и время последнего изменения кампании
-  - `count` — integer. Количество кампаний
-  - `status` — integer. Статус кампании
-  - `type` — integer. Тип кампании: - `8` — кампания с единой ставкой (**устаревший тип**) - `9` — кампания с единой или ручной ставкой. Тип ставки вы можете получить с помощью метода [Информация о кампаниях](./promotion#tag/campaigns/operation/getV2Adverts), поле `bid_type`
 - `all` — integer. Общее количество кампаний всех статусов и типов
 
 **401** — Не авторизован
 
-- `code` — string. Внутренний код ошибки
+- `title` — string. Заголовок ошибки
 - `detail` — string. Детали ошибки
-- `origin` — string. ID внутреннего сервиса WB
+- `code` — string. Внутренний код ошибки
 - `requestId` — string. Уникальный ID запроса
+- `origin` — string. ID внутреннего сервиса WB
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
-- `title` — string. Заголовок ошибки
 
 **429** — Слишком много запросов
 
-- `code` — string. Внутренний код ошибки
+- `title` — string. Заголовок ошибки
 - `detail` — string. Детали ошибки
-- `origin` — string. ID внутреннего сервиса WB
+- `code` — string. Внутренний код ошибки
 - `requestId` — string. Уникальный ID запроса
+- `origin` — string. ID внутреннего сервиса WB
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
-- `title` — string. Заголовок ошибки

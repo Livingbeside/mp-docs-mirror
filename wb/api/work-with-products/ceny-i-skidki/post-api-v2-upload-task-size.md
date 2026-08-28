@@ -9,7 +9,7 @@ tags:
 spec_version: items
 source: "https://dev.wildberries.ru/docs/openapi/work-with-products"
 deprecated: false
-content_sha: b39c7481a6925285
+content_sha: edbec3c87c4d4442
 ---
 
 # Установить цены для размеров
@@ -43,24 +43,24 @@ content_sha: b39c7481a6925285
 
 - `data` — array[object] **обязательный**. Размеры и цены для них. Максимум 1 000 размеров. Для товаров с поразмерной установкой цен [карантин](https://seller.wildberries.ru/instructions/ru/ru/material/price-quarantine) не применяется
   - `nmID` — integer **обязательный**. Артикул WB
-  - `price` — integer **обязательный**. Цена. Валюту можно получить с помощью методов [Получить товары с ценами](./work-with-products#tag/Ceny-i-skidki/paths/~1api~1v2~1list~1goods~1filter/get) и [Получить товары с ценами по артикулам](./work-with-products#tag/Ceny-i-skidki/paths/~1api~1v2~1list~1goods~1filter/post), поле `currencyIsoCode4217`
   - `sizeID` — integer **обязательный**. ID размера. Можно получить с помощью методов [Получить товары с ценами](./work-with-products#tag/Ceny-i-skidki/paths/~1api~1v2~1list~1goods~1filter/get) и [Получить товары с ценами по артикулам](./work-with-products#tag/Ceny-i-skidki/paths/~1api~1v2~1list~1goods~1filter/post), поле `sizeID`. В методах Контента это поле `chrtID`
+  - `price` — integer **обязательный**. Цена. Валюту можно получить с помощью методов [Получить товары с ценами](./work-with-products#tag/Ceny-i-skidki/paths/~1api~1v2~1list~1goods~1filter/get) и [Получить товары с ценами по артикулам](./work-with-products#tag/Ceny-i-skidki/paths/~1api~1v2~1list~1goods~1filter/post), поле `currencyIsoCode4217`
 
 ## Ответы
 
 **200** — Успешно
 
 - `data` — object. Данные ответа
-  - `alreadyExists` — boolean. Флаг дублирования загрузки: `true` — такая загрузка уже есть
   - `id` — integer. ID загрузки
+  - `alreadyExists` — boolean. Флаг дублирования загрузки: `true` — такая загрузка уже есть
 - `error` — boolean. Флаг ошибки
 - `errorText` — string. Текст ошибки
 
 **208** — Такая загрузка уже есть
 
 - `data` — object. Данные ответа
-  - `alreadyExists` — boolean. Флаг дублирования загрузки: `true` — такая загрузка уже есть
   - `id` — integer. ID загрузки
+  - `alreadyExists` — boolean. Флаг дублирования загрузки: `true` — такая загрузка уже есть
 - `error` — boolean. Флаг ошибки
 - `errorText` — string. Текст ошибки
 
@@ -72,19 +72,19 @@ content_sha: b39c7481a6925285
 
 **401** — Не авторизован
 
-- `code` — string. Внутренний код ошибки
+- `title` — string. Заголовок ошибки
 - `detail` — string. Детали ошибки
-- `origin` — string. ID внутреннего сервиса WB
+- `code` — string. Внутренний код ошибки
 - `requestId` — string. Уникальный ID запроса
+- `origin` — string. ID внутреннего сервиса WB
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
-- `title` — string. Заголовок ошибки
 
 **402** — Требуется платёж
 
-- `detail` — string. Детали ошибки. Ошибка возвращается только сервисам из [Каталога решений для бизнеса](/business-solutions)
 - `title` — string. Заголовок ошибки
+- `detail` — string. Детали ошибки. Ошибка возвращается только сервисам из [Каталога решений для бизнеса](/business-solutions)
 
 **403** — Доступ запрещён
 
@@ -106,11 +106,11 @@ content_sha: b39c7481a6925285
 
 **429** — Слишком много запросов
 
-- `code` — string. Внутренний код ошибки
+- `title` — string. Заголовок ошибки
 - `detail` — string. Детали ошибки
-- `origin` — string. ID внутреннего сервиса WB
+- `code` — string. Внутренний код ошибки
 - `requestId` — string. Уникальный ID запроса
+- `origin` — string. ID внутреннего сервиса WB
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
-- `title` — string. Заголовок ошибки

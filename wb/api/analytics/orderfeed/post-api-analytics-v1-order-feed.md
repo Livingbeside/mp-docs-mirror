@@ -9,7 +9,7 @@ tags:
 spec_version: analytics
 source: "https://dev.wildberries.ru/docs/openapi/analytics"
 deprecated: false
-content_sha: fdf6b347c31324f0
+content_sha: 900f935d54e3e900
 ---
 
 # Получить отчёт
@@ -47,73 +47,73 @@ content_sha: fdf6b347c31324f0
 
 **Тело запроса** (`application/json`):
 
-- `brandNames` — array[string]. Список брендов для фильтрации
-- `nmIds` — array[integer<uint64>]. Список артикулов WB для фильтрации
-- `pagination` — object. Пагинация
-  - `limit` — integer<int32>. Количество заказов в ответе По умолчанию: `50`.
-  - `offset` — integer<int32>. Сколько элементов пропустить. Например, для значения `10` ответ начнётся с 11 элемента По умолчанию: `0`.
-  - `snapshotTime` — string<date-time>. Метка снимка данных, в рамках которого выполняется пагинация. Данные отчёта обновляются асинхронно. Чтобы не пропускать и не дублировать заказы, запросы одной выборки должны быть с одним и тем же `snapshotTime`. В первом запросе выборки (`"offset":0`) параметр не указывается, в каждом последующем запросе (`offset`>`0`) указывайте значение поля `snapshotTime` из ответа на первый запрос. При изменении значений периода и фильтров начинайте выборку заново с `"offset":0` и без `snapshotTime`
 - `selectedPeriod` — object **обязательный**. Запрашиваемый период. По дате текущего статуса заказа
-  - `end` — string<date-time>. Дата и время конца периода. Не ранее 31 суток от текущей даты
   - `start` — string<date-time> **обязательный**. Дата и время начала периода. Не ранее 31 суток от текущей даты и не позднее `end`
+  - `end` — string<date-time>. Дата и время конца периода. Не ранее 31 суток от текущей даты
+- `nmIds` — array[integer<uint64>]. Список артикулов WB для фильтрации
 - `subjectIds` — array[integer<uint64>]. Список ID предметов для фильтрации
+- `brandNames` — array[string]. Список брендов для фильтрации
 - `tagIds` — array[integer<uint64>]. Список ID ярлыков для фильтрации
+- `pagination` — object. Пагинация
+  - `snapshotTime` — string<date-time>. Метка снимка данных, в рамках которого выполняется пагинация. Данные отчёта обновляются асинхронно. Чтобы не пропускать и не дублировать заказы, запросы одной выборки должны быть с одним и тем же `snapshotTime`. В первом запросе выборки (`"offset":0`) параметр не указывается, в каждом последующем запросе (`offset`>`0`) указывайте значение поля `snapshotTime` из ответа на первый запрос. При изменении значений периода и фильтров начинайте выборку заново с `"offset":0` и без `snapshotTime`
+  - `offset` — integer<int32>. Сколько элементов пропустить. Например, для значения `10` ответ начнётся с 11 элемента По умолчанию: `0`.
+  - `limit` — integer<int32>. Количество заказов в ответе По умолчанию: `50`.
 
 ## Ответы
 
 **200** — Успешно
 
 - `data` — object **обязательный**. Данные ответа
+  - `snapshotTime` — string<date-time> **обязательный**. Метка снимка данных, в рамках которого выполняется пагинация
   - `currency` — string **обязательный**. Валюта отчёта
   - `orders` — array[object] **обязательный**. Заказы
-    - `cancelType` — string (app, receipt, expire, other). Тип отмены (при `"status":"cancel"`): - `app` — отказ до получения - `receipt` — отказ при получении - `expire` — истёк срок получения - `other` — техническая отмена
-    - `chrtId` — integer<int64> **обязательный**. ID размера
-    - `createdAt` — string<date-time> **обязательный**. Дата и время оформления заказа
-    - `destinationCity` — string **обязательный**. Населённый пункт доставки
-    - `destinationDistrict` — string **обязательный**. Федеральный округ доставки. Если доставка не по России, возвращается страна
-    - `isB2b` — boolean **обязательный**. Тип продажи: - `true` — B2B - `false` — B2C
-    - `isMp` — boolean **обязательный**. Тип склада: - `true` — склад продавца - `false` — склад WB
     - `nmId` — integer<int64> **обязательный**. Артикул WB
-    - `sellerPrice` — number<float64> **обязательный**. Цена продавца со скидкой продавца (без учёта скидки WB Клуба и оптовой скидки для B2B-продаж)
+    - `chrtId` — integer<int64> **обязательный**. ID размера
     - `srid` — string **обязательный**. ID заказа
-    - `status` — string (created, buyout, cancel, return, returnDefective) **обязательный**. Статус заказа: - `created` — оформлен - `buyout` — продан - `cancel` — отменён - `return` — возвращён - `returnDefective` — возвращён по причине брака
+    - `createdAt` — string<date-time> **обязательный**. Дата и время оформления заказа
     - `updatedAt` — string<date-time> **обязательный**. Дата и время текущего статуса. При `"status":"created"` возвращается значение поля `createdAt`
+    - `status` — string (created, buyout, cancel, return, returnDefective) **обязательный**. Статус заказа: - `created` — оформлен - `buyout` — продан - `cancel` — отменён - `return` — возвращён - `returnDefective` — возвращён по причине брака
+    - `cancelType` — string (app, receipt, expire, other). Тип отмены (при `"status":"cancel"`): - `app` — отказ до получения - `receipt` — отказ при получении - `expire` — истёк срок получения - `other` — техническая отмена
     - `warehouseName` — string **обязательный**. Название склада. [На данный момент](https://dev.wildberries.ru/release-notes?id=570) для складов WB может быть только `Склад WB`
     - `warehouseRegion` — string **обязательный**. Федеральный округ склада. Если склад не в России, возвращается страна. [На данный момент](https://dev.wildberries.ru/release-notes?id=570) для складов WB может быть только `""`
-  - `snapshotTime` — string<date-time> **обязательный**. Метка снимка данных, в рамках которого выполняется пагинация
+    - `isMp` — boolean **обязательный**. Тип склада: - `true` — склад продавца - `false` — склад WB
+    - `destinationCity` — string **обязательный**. Населённый пункт доставки
+    - `destinationDistrict` — string **обязательный**. Федеральный округ доставки. Если доставка не по России, возвращается страна
+    - `sellerPrice` — number<float64> **обязательный**. Цена продавца со скидкой продавца (без учёта скидки WB Клуба и оптовой скидки для B2B-продаж)
+    - `isB2b` — boolean **обязательный**. Тип продажи: - `true` — B2B - `false` — B2C
 
 **400** — Неправильный запрос
 
-- `detail` — string **обязательный**. Детали ошибки
-- `origin` — string **обязательный**. ID внутреннего сервиса WB
-- `requestId` — string **обязательный**. Уникальный ID запроса
 - `title` — string **обязательный**. Заголовок ошибки
+- `detail` — string **обязательный**. Детали ошибки
+- `requestId` — string **обязательный**. Уникальный ID запроса
+- `origin` — string **обязательный**. ID внутреннего сервиса WB
 
 **401** — Не авторизован
 
-- `code` — string. Внутренний код ошибки
+- `title` — string. Заголовок ошибки
 - `detail` — string. Детали ошибки
-- `origin` — string. ID внутреннего сервиса WB
+- `code` — string. Внутренний код ошибки
 - `requestId` — string. Уникальный ID запроса
+- `origin` — string. ID внутреннего сервиса WB
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
-- `title` — string. Заголовок ошибки
 
 **403** — Доступ запрещён
 
-- `detail` — string **обязательный**. Детали ошибки
-- `origin` — string **обязательный**. ID внутреннего сервиса WB
-- `requestId` — string **обязательный**. Уникальный ID запроса
 - `title` — string **обязательный**. Заголовок ошибки
+- `detail` — string **обязательный**. Детали ошибки
+- `requestId` — string **обязательный**. Уникальный ID запроса
+- `origin` — string **обязательный**. ID внутреннего сервиса WB
 
 **429** — Слишком много запросов
 
-- `code` — string. Внутренний код ошибки
+- `title` — string. Заголовок ошибки
 - `detail` — string. Детали ошибки
-- `origin` — string. ID внутреннего сервиса WB
+- `code` — string. Внутренний код ошибки
 - `requestId` — string. Уникальный ID запроса
+- `origin` — string. ID внутреннего сервиса WB
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
-- `title` — string. Заголовок ошибки

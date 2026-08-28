@@ -9,7 +9,7 @@ tags:
 spec_version: promotion
 source: "https://dev.wildberries.ru/docs/openapi/promotion"
 deprecated: false
-content_sha: 051f063c922b30ea
+content_sha: f713e98d8424dd01
 ---
 
 # Статистика по поисковым кластерам с детализацией по дням
@@ -35,10 +35,10 @@ content_sha: 051f063c922b30ea
 **Тело запроса** (`application/json`):
 
 - `from` — string<date> **обязательный**. Дата начала периода
+- `to` — string<date> **обязательный**. Дата окончания периода периода
 - `items` — array[object] **обязательный**
   - `advertId` — integer<int64> **обязательный**. ID кампании
   - `nmId` — integer<int64> **обязательный**. Артикул WB
-- `to` — string<date> **обязательный**. Дата окончания периода периода
 
 ## Ответы
 
@@ -46,21 +46,21 @@ content_sha: 051f063c922b30ea
 
 - `items` — array[object] **обязательный**
   - `advertId` — integer<int64> **обязательный**. ID кампании
+  - `nmId` — integer<int64> **обязательный**. Артикул WB
   - `dailyStats` — array[object]. Статистика с детализацией по дням
     - `date` — string<date> **обязательный**. Дата
     - `stat` — object
-      - `atbs` — integer. Количество добавлений товаров в корзину
-      - `avgPos` — number<float>. Средняя позиция товара на страницах поисковой выдачи
+      - `normQuery` — string. Поисковый кластер
+      - `views` — integer. Количество просмотров. Для кампаний с типом оплаты `cpc` — за клики — значение будет `null`
       - `clicks` — integer. Количество кликов
+      - `atbs` — integer. Количество добавлений товаров в корзину
+      - `orders` — integer. Количество заказов
+      - `ctr` — number<float>. CTR (click-through rate) — отношение числа кликов к количеству показов в процентах. Для кампаний с типом оплаты `cpc` — за клики — значение будет `null`
       - `cpc` — number<float>. Средняя стоимость клика в базовых единицах валюты [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances)
       - `cpm` — number<float>. Средняя стоимость за тысячу показов в базовых единицах валюты [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances). Для кампаний с типом оплаты `cpc` — за клики — значение будет `null`
-      - `ctr` — number<float>. CTR (click-through rate) — отношение числа кликов к количеству показов в процентах. Для кампаний с типом оплаты `cpc` — за клики — значение будет `null`
-      - `normQuery` — string. Поисковый кластер
-      - `orders` — integer. Количество заказов
+      - `avgPos` — number<float>. Средняя позиция товара на страницах поисковой выдачи
       - `shks` — integer. Количество заказанных товаров, шт.
       - `spend` — number<double>. Затраты на продвижение товаров в конкретном поисковом кластере кампании
-      - `views` — integer. Количество просмотров. Для кампаний с типом оплаты `cpc` — за клики — значение будет `null`
-  - `nmId` — integer<int64> **обязательный**. Артикул WB
 
 **400** — Неправильный запрос
 
@@ -72,22 +72,22 @@ content_sha: 051f063c922b30ea
 
 **401** — Не авторизован
 
-- `code` — string. Внутренний код ошибки
+- `title` — string. Заголовок ошибки
 - `detail` — string. Детали ошибки
-- `origin` — string. ID внутреннего сервиса WB
+- `code` — string. Внутренний код ошибки
 - `requestId` — string. Уникальный ID запроса
+- `origin` — string. ID внутреннего сервиса WB
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
-- `title` — string. Заголовок ошибки
 
 **429** — Слишком много запросов
 
-- `code` — string. Внутренний код ошибки
+- `title` — string. Заголовок ошибки
 - `detail` — string. Детали ошибки
-- `origin` — string. ID внутреннего сервиса WB
+- `code` — string. Внутренний код ошибки
 - `requestId` — string. Уникальный ID запроса
+- `origin` — string. ID внутреннего сервиса WB
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
-- `title` — string. Заголовок ошибки

@@ -9,7 +9,7 @@ tags:
 spec_version: items
 source: "https://dev.wildberries.ru/docs/openapi/work-with-products"
 deprecated: false
-content_sha: dee5901be6e01b18
+content_sha: 0fd2fb20a8803300
 ---
 
 # ТНВЭД-код
@@ -54,45 +54,45 @@ content_sha: dee5901be6e01b18
 
 **200** — Успешно
 
-- `additionalErrors` — string. Дополнительные ошибки
 - `data` — array[object]. Данные
-  - `isKiz` — boolean. - `true` — код маркировки [Честного знака](https://честныйзнак.рф/) требуется - `false` — код маркировки [Честного знака](https://честныйзнак.рф/) не требуется
   - `tnved` — string. ТНВЭД-код
+  - `isKiz` — boolean. - `true` — код маркировки [Честного знака](https://честныйзнак.рф/) требуется - `false` — код маркировки [Честного знака](https://честныйзнак.рф/) не требуется
 - `error` — boolean. Флаг наличия ошибки
 - `errorText` — string. Текст ошибки
+- `additionalErrors` — string. Дополнительные ошибки
 
 **400** — Неправильный запрос
 
-- `additionalErrors` — object. Дополнительные ошибки
 - `data` — object. Данные ошибки
 - `error` — boolean. Флаг ошибки
 - `errorText` — string. Текст ошибки
+- `additionalErrors` — object. Дополнительные ошибки
 
 **401** — Не авторизован
 
-- `code` — string. Внутренний код ошибки
+- `title` — string. Заголовок ошибки
 - `detail` — string. Детали ошибки
-- `origin` — string. ID внутреннего сервиса WB
+- `code` — string. Внутренний код ошибки
 - `requestId` — string. Уникальный ID запроса
+- `origin` — string. ID внутреннего сервиса WB
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
-- `title` — string. Заголовок ошибки
 
 **403** — Доступ запрещён
 
-- `additionalErrors` — string. Дополнительные ошибки
 - `data` — object. Данные ошибки
 - `error` — boolean. Флаг ошибки
 - `errorText` — string. Текст ошибки
+- `additionalErrors` — string. Дополнительные ошибки
 
 **429** — Слишком много запросов
 
-- `code` — string. Внутренний код ошибки
+- `title` — string. Заголовок ошибки
 - `detail` — string. Детали ошибки
-- `origin` — string. ID внутреннего сервиса WB
+- `code` — string. Внутренний код ошибки
 - `requestId` — string. Уникальный ID запроса
+- `origin` — string. ID внутреннего сервиса WB
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
-- `title` — string. Заголовок ошибки

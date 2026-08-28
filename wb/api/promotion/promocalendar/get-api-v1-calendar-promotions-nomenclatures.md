@@ -9,7 +9,7 @@ tags:
 spec_version: promotion
 source: "https://dev.wildberries.ru/docs/openapi/promotion"
 deprecated: false
-content_sha: b4d35b6fae3ae276
+content_sha: 06dd7f9ee1c1ae92
 ---
 
 # Список товаров для участия в акции
@@ -43,13 +43,13 @@ content_sha: b4d35b6fae3ae276
 
 - `data` — object. Данные ответа
   - `nomenclatures` — array[object]. Список товаров
-    - `currencyCode` — string. Валюта в формате ISO 4217
-    - `discount` — integer. Текущая скидка
     - `id` — integer. Артикул WB
     - `inAction` — boolean. Участвует в акции: - `true` — да - `false` — нет
-    - `planDiscount` — integer. Рекомендуемая скидка для участия в акции
-    - `planPrice` — number<float>. Плановая цена (цена во время акции)
     - `price` — number<float>. Текущая розничная цена
+    - `currencyCode` — string. Валюта в формате ISO 4217
+    - `planPrice` — number<float>. Плановая цена (цена во время акции)
+    - `discount` — integer. Текущая скидка
+    - `planDiscount` — integer. Рекомендуемая скидка для участия в акции
 
 **400** — Неправильный запрос
 
@@ -57,19 +57,19 @@ content_sha: b4d35b6fae3ae276
 
 **401** — Не авторизован
 
-- `code` — string. Внутренний код ошибки
+- `title` — string. Заголовок ошибки
 - `detail` — string. Детали ошибки
-- `origin` — string. ID внутреннего сервиса WB
+- `code` — string. Внутренний код ошибки
 - `requestId` — string. Уникальный ID запроса
+- `origin` — string. ID внутреннего сервиса WB
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
-- `title` — string. Заголовок ошибки
 
 **402** — Требуется платёж
 
-- `detail` — string. Детали ошибки. Ошибка возвращается только сервисам из [Каталога решений для бизнеса](/business-solutions)
 - `title` — string. Заголовок ошибки
+- `detail` — string. Детали ошибки. Ошибка возвращается только сервисам из [Каталога решений для бизнеса](/business-solutions)
 
 **422** — Ошибка обработки параметров запроса
 
@@ -77,11 +77,11 @@ content_sha: b4d35b6fae3ae276
 
 **429** — Слишком много запросов
 
-- `code` — string. Внутренний код ошибки
+- `title` — string. Заголовок ошибки
 - `detail` — string. Детали ошибки
-- `origin` — string. ID внутреннего сервиса WB
+- `code` — string. Внутренний код ошибки
 - `requestId` — string. Уникальный ID запроса
+- `origin` — string. ID внутреннего сервиса WB
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
-- `title` — string. Заголовок ошибки

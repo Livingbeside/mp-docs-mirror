@@ -9,7 +9,7 @@ tags:
 spec_version: reports
 source: "https://dev.wildberries.ru/docs/openapi/reports"
 deprecated: false
-content_sha: 256e48e340ea1931
+content_sha: 16739a2be12d2187
 ---
 
 # Продажи
@@ -60,34 +60,34 @@ content_sha: 256e48e340ea1931
 
 **200** — Успешно
 
-- `barcode` — string. Баркод
-- `brand` — string. Бренд
-- `category` — string. Категория
-- `countryName` — string. Страна
 - `date` — string. Дата и время продажи. Это поле соответствует параметру `dateFrom` в запросе, если параметр `flag`=1. Если часовой пояс не указан, то берётся Московское время (UTC+3).
-- `discountPercent` — integer. Скидка продавца, %
-- `finishedPrice` — number. Фактическая цена с учётом всех скидок (к взиманию с покупателя). Синхронизация данных занимает до 24 часов, в течение этого времени в поле может отображаться значение `0`
-- `forPay` — number. К перечислению продавцу. Синхронизация данных занимает до 24 часов, в течение этого времени в поле может отображаться значение `0`
-- `gNumber` — string. ID корзины покупателя. Заказы одной транзакции будут иметь одинаковый `gNumber`
-- `incomeID` — integer. Номер поставки
-- `isRealization` — boolean. Договор реализации
-- `isSupply` — boolean. Договор поставки
 - `lastChangeDate` — string. Дата и время обновления информации в сервисе. Это поле соответствует параметру `dateFrom` в запросе, если параметр `flag`=0 или не указан. Если часовой пояс не указан, то берётся Московское время (UTC+3).
-- `nmId` — integer. Артикул WB
-- `oblastOkrugName` — string. Округ
-- `paymentSaleAmount` — integer. Скидка за оплату WB Кошельком, ₽
-- `priceWithDisc` — number. Цена со скидкой продавца, в том числе со скидкой WB Клуба, от которой рассчитывается сумма к перечислению продавцу `forPay`. Синхронизация данных занимает до 24 часов, в течение этого времени в поле может отображаться значение `0`
-- `regionName` — string. Регион
-- `saleID` — string. Уникальный ID продажи/возврата - `S**********` — продажа - `R**********` — возврат (на склад WB)
-- `spp` — number. Скидка WB, %
-- `srid` — string. Уникальный ID заказа. Примечание для использующих API Маркетплейс: `srid` равен `rid` в ответах методов сборочных заданий.
-- `sticker` — string. ID стикера
-- `subject` — string. Предмет
-- `supplierArticle` — string. Артикул продавца
-- `techSize` — string. Размер товара
-- `totalPrice` — number. Цена без скидок
 - `warehouseName` — string. Склад отгрузки
 - `warehouseType` — string (Склад WB, Склад продавца). Тип склада хранения товаров
+- `countryName` — string. Страна
+- `oblastOkrugName` — string. Округ
+- `regionName` — string. Регион
+- `supplierArticle` — string. Артикул продавца
+- `nmId` — integer. Артикул WB
+- `barcode` — string. Баркод
+- `category` — string. Категория
+- `subject` — string. Предмет
+- `brand` — string. Бренд
+- `techSize` — string. Размер товара
+- `incomeID` — integer. Номер поставки
+- `isSupply` — boolean. Договор поставки
+- `isRealization` — boolean. Договор реализации
+- `totalPrice` — number. Цена без скидок
+- `discountPercent` — integer. Скидка продавца, %
+- `spp` — number. Скидка WB, %
+- `paymentSaleAmount` — integer. Скидка за оплату WB Кошельком, ₽
+- `forPay` — number. К перечислению продавцу. Синхронизация данных занимает до 24 часов, в течение этого времени в поле может отображаться значение `0`
+- `finishedPrice` — number. Фактическая цена с учётом всех скидок (к взиманию с покупателя). Синхронизация данных занимает до 24 часов, в течение этого времени в поле может отображаться значение `0`
+- `priceWithDisc` — number. Цена со скидкой продавца, в том числе со скидкой WB Клуба, от которой рассчитывается сумма к перечислению продавцу `forPay`. Синхронизация данных занимает до 24 часов, в течение этого времени в поле может отображаться значение `0`
+- `saleID` — string. Уникальный ID продажи/возврата - `S**********` — продажа - `R**********` — возврат (на склад WB)
+- `sticker` — string. ID стикера
+- `gNumber` — string. ID корзины покупателя. Заказы одной транзакции будут иметь одинаковый `gNumber`
+- `srid` — string. Уникальный ID заказа. Примечание для использующих API Маркетплейс: `srid` равен `rid` в ответах методов сборочных заданий.
 
 **400** — Неправильный запрос
 
@@ -96,27 +96,27 @@ content_sha: 256e48e340ea1931
 
 **401** — Не авторизован
 
-- `code` — string. Внутренний код ошибки
+- `title` — string. Заголовок ошибки
 - `detail` — string. Детали ошибки
-- `origin` — string. ID внутреннего сервиса WB
+- `code` — string. Внутренний код ошибки
 - `requestId` — string. Уникальный ID запроса
+- `origin` — string. ID внутреннего сервиса WB
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
-- `title` — string. Заголовок ошибки
 
 **402** — Требуется платёж
 
-- `detail` — string. Детали ошибки. Ошибка возвращается только сервисам из [Каталога решений для бизнеса](/business-solutions)
 - `title` — string. Заголовок ошибки
+- `detail` — string. Детали ошибки. Ошибка возвращается только сервисам из [Каталога решений для бизнеса](/business-solutions)
 
 **429** — Слишком много запросов
 
-- `code` — string. Внутренний код ошибки
+- `title` — string. Заголовок ошибки
 - `detail` — string. Детали ошибки
-- `origin` — string. ID внутреннего сервиса WB
+- `code` — string. Внутренний код ошибки
 - `requestId` — string. Уникальный ID запроса
+- `origin` — string. ID внутреннего сервиса WB
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
-- `title` — string. Заголовок ошибки

@@ -9,7 +9,7 @@ tags:
 spec_version: promotion
 source: "https://dev.wildberries.ru/docs/openapi/promotion"
 deprecated: false
-content_sha: 3a05747b37eec88b
+content_sha: 10d5649e489fad08
 ---
 
 # Список ставок поисковых кластеров
@@ -45,11 +45,11 @@ content_sha: 3a05747b37eec88b
 
 - `bids` — array[object] **обязательный**
   - `advert_id` — integer **обязательный**. ID кампании
+  - `nm_id` — integer **обязательный**. Артикул WB
+  - `norm_query` — string **обязательный**. Поисковый кластер
   - `bid` — integer **обязательный**. Текущая ставка в базовых единицах валюты [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances) за тысячу показов
   - `bid_kopecks` — integer **обязательный**. Текущая ставка в разменных единицах — 0,01 от базовой валюты [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances) за тысячу показов
   - `currency` — string<ISO 4217> **обязательный**. Валюта [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances)
-  - `nm_id` — integer **обязательный**. Артикул WB
-  - `norm_query` — string **обязательный**. Поисковый кластер
 
 **400** — Неправильный запрос
 
@@ -61,14 +61,14 @@ content_sha: 3a05747b37eec88b
 
 **401** — Не авторизован
 
-- `code` — string. Внутренний код ошибки
+- `title` — string. Заголовок ошибки
 - `detail` — string. Детали ошибки
-- `origin` — string. ID внутреннего сервиса WB
+- `code` — string. Внутренний код ошибки
 - `requestId` — string. Уникальный ID запроса
+- `origin` — string. ID внутреннего сервиса WB
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
-- `title` — string. Заголовок ошибки
 
 **403** — Доступ запрещён
 
@@ -80,11 +80,11 @@ content_sha: 3a05747b37eec88b
 
 **429** — Слишком много запросов
 
-- `code` — string. Внутренний код ошибки
+- `title` — string. Заголовок ошибки
 - `detail` — string. Детали ошибки
-- `origin` — string. ID внутреннего сервиса WB
+- `code` — string. Внутренний код ошибки
 - `requestId` — string. Уникальный ID запроса
+- `origin` — string. ID внутреннего сервиса WB
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
-- `title` — string. Заголовок ошибки

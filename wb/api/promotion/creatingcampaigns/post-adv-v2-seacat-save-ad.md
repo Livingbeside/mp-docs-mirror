@@ -9,7 +9,7 @@ tags:
 spec_version: promotion
 source: "https://dev.wildberries.ru/docs/openapi/promotion"
 deprecated: false
-content_sha: 47adbea2218aea69
+content_sha: 55a1d5623eaf1a0b
 ---
 
 # Создать кампанию
@@ -35,9 +35,9 @@ content_sha: 47adbea2218aea69
 
 **Тело запроса** (`application/json`):
 
-- `bid_type` — string (manual, unified). Тип ставки: - `manual` — ручная - `unified` — единая По умолчанию: `manual`.
 - `name` — string **обязательный**. Название кампании
 - `nms` — array[integer]. Карточки товаров для кампании. Доступные карточки товаров можно получить с помощью метода [Карточки товаров для кампаний](./promotion#tag/creatingCampaigns/operation/postV2SupplierNms). Максимум 50 товаров (`nm`)
+- `bid_type` — string (manual, unified). Тип ставки: - `manual` — ручная - `unified` — единая По умолчанию: `manual`.
 - `payment_type` — string (cpm, cpc). Тип оплаты: - `cpm` — за показы - `cpc` — за клик. При создании с этим типом оплаты в кампании автоматически устанавливается минимальная ставка По умолчанию: `cpm`.
 - `placement_types` — array[string (search, recommendations)]. Места размещения: - `search` — в поиске - `recommendations` — в рекомендациях Укажите только для кампании с ручной ставкой По умолчанию: `['search']`.
 
@@ -49,22 +49,22 @@ content_sha: 47adbea2218aea69
 
 **401** — Не авторизован
 
-- `code` — string. Внутренний код ошибки
+- `title` — string. Заголовок ошибки
 - `detail` — string. Детали ошибки
-- `origin` — string. ID внутреннего сервиса WB
+- `code` — string. Внутренний код ошибки
 - `requestId` — string. Уникальный ID запроса
+- `origin` — string. ID внутреннего сервиса WB
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
-- `title` — string. Заголовок ошибки
 
 **429** — Слишком много запросов
 
-- `code` — string. Внутренний код ошибки
+- `title` — string. Заголовок ошибки
 - `detail` — string. Детали ошибки
-- `origin` — string. ID внутреннего сервиса WB
+- `code` — string. Внутренний код ошибки
 - `requestId` — string. Уникальный ID запроса
+- `origin` — string. ID внутреннего сервиса WB
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
-- `title` — string. Заголовок ошибки

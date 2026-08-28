@@ -9,7 +9,7 @@ tags:
 spec_version: items
 source: "https://dev.wildberries.ru/docs/openapi/work-with-products"
 deprecated: false
-content_sha: 365ddd31a87e1adc
+content_sha: c36079d6ed65bc7d
 ---
 
 # Лимиты карточек товаров
@@ -45,38 +45,38 @@ content_sha: 365ddd31a87e1adc
 
 **200** — Успешно
 
-- `additionalErrors` — string. Дополнительные ошибки
 - `data` — object
   - `freeLimits` — integer. Количество бесплатных лимитов
   - `paidLimits` — integer. Количество оплаченных лимитов
 - `error` — boolean. Флаг ошибки
 - `errorText` — string. Описание ошибки
+- `additionalErrors` — string. Дополнительные ошибки
 
 **401** — Не авторизован
 
-- `code` — string. Внутренний код ошибки
+- `title` — string. Заголовок ошибки
 - `detail` — string. Детали ошибки
-- `origin` — string. ID внутреннего сервиса WB
+- `code` — string. Внутренний код ошибки
 - `requestId` — string. Уникальный ID запроса
+- `origin` — string. ID внутреннего сервиса WB
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
-- `title` — string. Заголовок ошибки
 
 **403** — Доступ запрещён
 
-- `additionalErrors` — string. Дополнительные ошибки
 - `data` — object. Данные ошибки
 - `error` — boolean. Флаг ошибки
 - `errorText` — string. Текст ошибки
+- `additionalErrors` — string. Дополнительные ошибки
 
 **429** — Слишком много запросов
 
-- `code` — string. Внутренний код ошибки
+- `title` — string. Заголовок ошибки
 - `detail` — string. Детали ошибки
-- `origin` — string. ID внутреннего сервиса WB
+- `code` — string. Внутренний код ошибки
 - `requestId` — string. Уникальный ID запроса
+- `origin` — string. ID внутреннего сервиса WB
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
-- `title` — string. Заголовок ошибки

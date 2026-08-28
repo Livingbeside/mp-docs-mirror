@@ -9,7 +9,7 @@ tags:
 spec_version: finances
 source: "https://dev.wildberries.ru/docs/openapi/financial-reports-and-accounting"
 deprecated: false
-content_sha: 5fe7d8d4f766b633
+content_sha: 90f2d691f15b9a58
 ---
 
 # Список документов
@@ -49,44 +49,44 @@ content_sha: 5fe7d8d4f766b633
 
 - `data` — object
   - `documents` — array[object]. Категории документов
-    - `category` — string. Название [категории документов](./financial-reports-and-accounting#tag/documents/operation/getV1DocumentsCategories) из поля ответа `title`
-    - `creationTime` — string. Дата и время создания документа
-    - `extensions` — array[string]. Форматы документа
-    - `name` — string. Название документа
     - `serviceName` — string. Уникальный ID документа
+    - `name` — string. Название документа
+    - `category` — string. Название [категории документов](./financial-reports-and-accounting#tag/documents/operation/getV1DocumentsCategories) из поля ответа `title`
+    - `extensions` — array[string]. Форматы документа
+    - `creationTime` — string. Дата и время создания документа
     - `viewed` — boolean. Выгружен ли документ в личном кабинете
 
 **400** — Неправильный запрос
 
-- `detail` — string. Детализация ошибки
-- `origin` — string. ID внутреннего сервиса WB
-- `requestId` — string. Уникальный ID запроса
-- `status` — number. HTTP статус-код
 - `title` — string. Заголовок ошибки
+- `status` — number. HTTP статус-код
+- `detail` — string. Детализация ошибки
+- `requestId` — string. Уникальный ID запроса
+- `origin` — string. ID внутреннего сервиса WB
 
 **401** — Не авторизован
 
-- `code` — string. Внутренний код ошибки
+- `title` — string. Заголовок ошибки
 - `detail` — string. Детали ошибки
-- `origin` — string. ID внутреннего сервиса WB
+- `code` — string. Внутренний код ошибки
 - `requestId` — string. Уникальный ID запроса
+- `origin` — string. ID внутреннего сервиса WB
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
-- `title` — string. Заголовок ошибки
 
 **402** — Требуется платёж
 
-- `detail` — string. Детали ошибки. Ошибка возвращается только сервисам из [Каталога решений для бизнеса](/business-solutions)
 - `title` — string. Заголовок ошибки
+- `detail` — string. Детали ошибки. Ошибка возвращается только сервисам из [Каталога решений для бизнеса](/business-solutions)
 
 **429** — Слишком много запросов
 
-- `code` — string. Внутренний код ошибки
+- `title` — string. Заголовок ошибки
 - `detail` — string. Детали ошибки
-- `origin` — string. ID внутреннего сервиса WB
+- `code` — string. Внутренний код ошибки
 - `requestId` — string. Уникальный ID запроса
+- `origin` — string. ID внутреннего сервиса WB
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
-- `title` — string. Заголовок ошибки

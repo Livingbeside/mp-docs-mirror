@@ -9,7 +9,7 @@ tags:
 spec_version: items
 source: "https://dev.wildberries.ru/docs/openapi/work-with-products"
 deprecated: false
-content_sha: 969fa61b9b8755ef
+content_sha: 8e3a07136c679bbe
 ---
 
 # Изменение ярлыка{{ /content/v2/tag/{id} }}
@@ -50,48 +50,48 @@ content_sha: 969fa61b9b8755ef
 
 **200** — Успешно
 
-- `additionalErrors` — string. Дополнительные ошибки
 - `data` — object. Данные ошибки
 - `error` — boolean. Флаг ошибки
 - `errorText` — string. Текст ошибки
+- `additionalErrors` — string. Дополнительные ошибки
 
 **400** — Неправильный запрос
 
-- `additionalErrors` — object. Дополнительные ошибки
 - `data` — object. Данные ошибки
 - `error` — boolean. Флаг ошибки
 - `errorText` — string. Текст ошибки
+- `additionalErrors` — object. Дополнительные ошибки
 
 **401** — Не авторизован
 
-- `code` — string. Внутренний код ошибки
+- `title` — string. Заголовок ошибки
 - `detail` — string. Детали ошибки
-- `origin` — string. ID внутреннего сервиса WB
+- `code` — string. Внутренний код ошибки
 - `requestId` — string. Уникальный ID запроса
+- `origin` — string. ID внутреннего сервиса WB
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
-- `title` — string. Заголовок ошибки
 
 **402** — Требуется платёж
 
-- `detail` — string. Детали ошибки. Ошибка возвращается только сервисам из [Каталога решений для бизнеса](/business-solutions)
 - `title` — string. Заголовок ошибки
+- `detail` — string. Детали ошибки. Ошибка возвращается только сервисам из [Каталога решений для бизнеса](/business-solutions)
 
 **403** — Доступ запрещён
 
-- `additionalErrors` — string. Дополнительные ошибки
 - `data` — object. Данные ошибки
 - `error` — boolean. Флаг ошибки
 - `errorText` — string. Текст ошибки
+- `additionalErrors` — string. Дополнительные ошибки
 
 **429** — Слишком много запросов
 
-- `code` — string. Внутренний код ошибки
+- `title` — string. Заголовок ошибки
 - `detail` — string. Детали ошибки
-- `origin` — string. ID внутреннего сервиса WB
+- `code` — string. Внутренний код ошибки
 - `requestId` — string. Уникальный ID запроса
+- `origin` — string. ID внутреннего сервиса WB
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
-- `title` — string. Заголовок ошибки

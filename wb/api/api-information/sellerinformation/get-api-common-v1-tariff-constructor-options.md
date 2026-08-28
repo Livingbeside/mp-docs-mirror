@@ -9,7 +9,7 @@ tags:
 spec_version: general
 source: "https://dev.wildberries.ru/docs/openapi/api-information"
 deprecated: false
-content_sha: 80813101b5c5cd11
+content_sha: 556a29d71e02ab48
 ---
 
 # Получить информацию об опциях Конструктора тарифов
@@ -45,82 +45,82 @@ content_sha: 80813101b5c5cd11
 
 - `activeOptionCount` — number<int> **обязательный**. Количество активных опций, не включённых в пакеты
 - `activePackageCount` — number<int> **обязательный**. Количество активных пакетов опций
+- `totalCommissionRate` — number<float> **обязательный**. Итоговая комиссия за подключённые опции и пакеты, % от оборота
+- `packages` — array[object] **обязательный**. Подключённые пакеты опций
+  - `id` — string<uuid>. ID пакета
+  - `slug` — string. Код пакета
+  - `name` — string. Название пакета на языке из параметра `locale`
+  - `status` — string (active, pendingActivation, pendingDeactivation). Статус пакета: - `active` — активен - `pendingActivation` — подключён, начнёт работать с 00:00 следующего дня - `pendingDeactivation` — отключён, перестанет работать с 00:00 следующего дня
+  - `activatedAt` — string<date-time>. Дата активации пакета
+  - `expiresAt` — string<date-time>. Дата окончания минимального срока действия пакета. До этого дня пакет опций нельзя отключить
+  - `commissionRate` — number<float>. Комиссия за пакет, % от оборота
+  - `periodDuration` — number<int>. Минимальный срок действия пакета в днях
+  - `options` — array[object]. Опции, которые входят в пакет
+    - `id` — string. ID опции
+    - `slug` — string. Код опции
+    - `name` — string. Название опции на языке из параметра `locale`
 - `options` — array[object] **обязательный**. Подключённые опции
-  - `activatedAt` — string<date-time>. Дата активации опции
-  - `commissionRate` — number<float>. Стоимость подключения опции, % от оборота. Возвращается, если в ответе нет объекта `promotion`
-  - `expiresAt` — string<date-time>. Дата окончания минимального срока действия опции. До этого дня опцию нельзя отключить
   - `id` — string. ID опции
+  - `slug` — string. Код опции
   - `name` — string. Название опции на языке из параметра `locale`
+  - `status` — string (active, pendingActivation, pendingDeactivation). Статус опции: - `active` — активна - `pendingActivation` — подключена, начнёт работать с 00:00 следующего дня - `pendingDeactivation` — отключена, перестанет работать с 00:00 следующего дня
+  - `activatedAt` — string<date-time>. Дата активации опции
+  - `expiresAt` — string<date-time>. Дата окончания минимального срока действия опции. До этого дня опцию нельзя отключить
+  - `commissionRate` — number<float>. Стоимость подключения опции, % от оборота. Возвращается, если в ответе нет объекта `promotion`
   - `periodDuration` — number<int>. Минимальный срок действия опции в днях
   - `promotion` — object
     - `commissionRate` — number<float>. Стоимость подключения опции по акции, % от оборота
     - `expiresAt` — string<date-time>. Дата окончания действия цены по акции
-  - `slug` — string. Код опции
-  - `status` — string (active, pendingActivation, pendingDeactivation). Статус опции: - `active` — активна - `pendingActivation` — подключена, начнёт работать с 00:00 следующего дня - `pendingDeactivation` — отключена, перестанет работать с 00:00 следующего дня
-- `packages` — array[object] **обязательный**. Подключённые пакеты опций
-  - `activatedAt` — string<date-time>. Дата активации пакета
-  - `commissionRate` — number<float>. Комиссия за пакет, % от оборота
-  - `expiresAt` — string<date-time>. Дата окончания минимального срока действия пакета. До этого дня пакет опций нельзя отключить
-  - `id` — string<uuid>. ID пакета
-  - `name` — string. Название пакета на языке из параметра `locale`
-  - `options` — array[object]. Опции, которые входят в пакет
-    - `id` — string. ID опции
-    - `name` — string. Название опции на языке из параметра `locale`
-    - `slug` — string. Код опции
-  - `periodDuration` — number<int>. Минимальный срок действия пакета в днях
-  - `slug` — string. Код пакета
-  - `status` — string (active, pendingActivation, pendingDeactivation). Статус пакета: - `active` — активен - `pendingActivation` — подключён, начнёт работать с 00:00 следующего дня - `pendingDeactivation` — отключён, перестанет работать с 00:00 следующего дня
-- `totalCommissionRate` — number<float> **обязательный**. Итоговая комиссия за подключённые опции и пакеты, % от оборота
 
 **400** — Неправильный запрос
 
-- `code` — string. Внутренний код ошибки
-- `detail` — string. Детали ошибки
-- `errors` — array[?]. Ошибки запроса с указанием параметров и деталей ошибок
-- `origin` — string. ID внутреннего сервиса WB
-- `requestId` — string. Уникальный ID запроса
-- `status` — number. HTTP статус-код
 - `title` — string. Заголовок ошибки
+- `detail` — string. Детали ошибки
+- `code` — string. Внутренний код ошибки
+- `requestId` — string. Уникальный ID запроса
+- `origin` — string. ID внутреннего сервиса WB
+- `status` — number. HTTP статус-код
+- `errors` — array[?]. Ошибки запроса с указанием параметров и деталей ошибок
 
 **401** — Не авторизован
 
-- `code` — string. Внутренний код ошибки
+- `title` — string. Заголовок ошибки
 - `detail` — string. Детали ошибки
-- `origin` — string. ID внутреннего сервиса WB
+- `code` — string. Внутренний код ошибки
 - `requestId` — string. Уникальный ID запроса
+- `origin` — string. ID внутреннего сервиса WB
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
-- `title` — string. Заголовок ошибки
 
 **403** — Доступ запрещён
 
-- `code` — string. Внутренний код ошибки
+- `title` — string. Заголовок ошибки
 - `detail` — string. Детали ошибки
-- `origin` — string. ID внутреннего сервиса WB
+- `code` — string. Внутренний код ошибки
 - `requestId` — string. ID запроса
+- `origin` — string. ID внутреннего сервиса WB
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
-- `title` — string. Заголовок ошибки
 
 **404** — Не найдено
 
-- `code` — string. Внутренний код ошибки
-- `detail` — string. Детали ошибки
-- `errors` — array[?]. Ошибки запроса с указанием параметров и деталей ошибок
-- `origin` — string. ID внутреннего сервиса WB
-- `requestId` — string. Уникальный ID запроса
-- `status` — number. HTTP статус-код
 - `title` — string. Заголовок ошибки
+- `detail` — string. Детали ошибки
+- `code` — string. Внутренний код ошибки
+- `requestId` — string. Уникальный ID запроса
+- `origin` — string. ID внутреннего сервиса WB
+- `status` — number. HTTP статус-код
+- `errors` — array[?]. Ошибки запроса с указанием параметров и деталей ошибок
 
 **429** — Слишком много запросов
 
-- `code` — string. Внутренний код ошибки
+- `title` — string. Заголовок ошибки
 - `detail` — string. Детали ошибки
-- `origin` — string. ID внутреннего сервиса WB
+- `code` — string. Внутренний код ошибки
 - `requestId` — string. Уникальный ID запроса
+- `origin` — string. ID внутреннего сервиса WB
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
-- `title` — string. Заголовок ошибки

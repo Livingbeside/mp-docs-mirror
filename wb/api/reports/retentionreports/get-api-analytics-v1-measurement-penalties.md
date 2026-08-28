@@ -9,7 +9,7 @@ tags:
 spec_version: reports
 source: "https://dev.wildberries.ru/docs/openapi/reports"
 deprecated: false
-content_sha: 862822abeeca3322
+content_sha: ae84fdb9a249f1a2
 ---
 
 # Удержания за занижение габаритов упаковки
@@ -44,65 +44,65 @@ content_sha: 862822abeeca3322
 
 - `data` — object **обязательный**. Данные ответа
   - `reports` — array[object] **обязательный**. Удержания
+    - `nmId` — integer. Артикул WB
+    - `subjectName` — string. Предмет
     - `dimId` — integer. ID замера
-    - `dtBonus` — string<date-time>. Дата штрафа
+    - `prcOver` — number. Разница в габаритах, %
+    - `volume` — number. Объём, л (фактические габариты по замеру на складе)
+    - `width` — integer. Ширина, см (фактические габариты по замеру на складе)
+    - `length` — integer. Длина, см (фактические габариты по замеру на складе)
     - `height` — integer. Высота, см (фактические габариты по замеру на складе)
+    - `volumeSup` — number. Объём, л (габариты карточки товара)
+    - `widthSup` — integer. Ширина, см (габариты карточки товара)
+    - `lengthSup` — integer. Длина, см (габариты карточки товара)
     - `heightSup` — integer. Высота, см (габариты карточки товара)
+    - `photoUrls` — array[string]. Фото замеров
+    - `dtBonus` — string<date-time>. Дата штрафа
     - `isValid` — boolean. Статус обмера: - `false` — отменён - `true` — подтверждён
     - `isValidDt` — string<date-time>. Дата и время подтверждения или отмены обмера
-    - `length` — integer. Длина, см (фактические габариты по замеру на складе)
-    - `lengthSup` — integer. Длина, см (габариты карточки товара)
-    - `nmId` — integer. Артикул WB
-    - `penaltyAmount` — number. Сумма штрафа
-    - `photoUrls` — array[string]. Фото замеров
-    - `prcOver` — number. Разница в габаритах, %
     - `reversalAmount` — number. Сумма сторно
-    - `subjectName` — string. Предмет
-    - `volume` — number. Объём, л (фактические габариты по замеру на складе)
-    - `volumeSup` — number. Объём, л (габариты карточки товара)
-    - `width` — integer. Ширина, см (фактические габариты по замеру на складе)
-    - `widthSup` — integer. Ширина, см (габариты карточки товара)
+    - `penaltyAmount` — number. Сумма штрафа
   - `total` — integer **обязательный**. Количество удержаний в отчёте. Без учёта `limit` и `offset`
 
 **400** — Неправильный запрос
 
-- `detail` — string. Детали ошибки
-- `origin` — string. ID внутреннего сервиса WB
-- `requestId` — string. Уникальный ID запроса
-- `status` — integer. HTTP статус-код
 - `title` — string. Заголовок ошибки
+- `status` — integer. HTTP статус-код
+- `detail` — string. Детали ошибки
+- `requestId` — string. Уникальный ID запроса
+- `origin` — string. ID внутреннего сервиса WB
 
 **401** — Не авторизован
 
-- `code` — string. Внутренний код ошибки
+- `title` — string. Заголовок ошибки
 - `detail` — string. Детали ошибки
-- `origin` — string. ID внутреннего сервиса WB
+- `code` — string. Внутренний код ошибки
 - `requestId` — string. Уникальный ID запроса
+- `origin` — string. ID внутреннего сервиса WB
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
-- `title` — string. Заголовок ошибки
 
 **402** — Требуется платёж
 
-- `detail` — string. Детали ошибки. Ошибка возвращается только сервисам из [Каталога решений для бизнеса](/business-solutions)
 - `title` — string. Заголовок ошибки
+- `detail` — string. Детали ошибки. Ошибка возвращается только сервисам из [Каталога решений для бизнеса](/business-solutions)
 
 **403** — Доступ запрещён
 
-- `detail` — string. Детали ошибки
-- `origin` — string. ID внутреннего сервиса WB
-- `requestId` — string. Уникальный ID запроса
-- `status` — integer. HTTP статус-код
 - `title` — string. Заголовок ошибки
+- `status` — integer. HTTP статус-код
+- `detail` — string. Детали ошибки
+- `requestId` — string. Уникальный ID запроса
+- `origin` — string. ID внутреннего сервиса WB
 
 **429** — Слишком много запросов
 
-- `code` — string. Внутренний код ошибки
+- `title` — string. Заголовок ошибки
 - `detail` — string. Детали ошибки
-- `origin` — string. ID внутреннего сервиса WB
+- `code` — string. Внутренний код ошибки
 - `requestId` — string. Уникальный ID запроса
+- `origin` — string. ID внутреннего сервиса WB
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
-- `title` — string. Заголовок ошибки

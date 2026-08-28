@@ -9,7 +9,7 @@ tags:
 spec_version: items
 source: "https://dev.wildberries.ru/docs/openapi/work-with-products"
 deprecated: false
-content_sha: 5cad5c109fe970fa
+content_sha: 642168658adfed0a
 ---
 
 # Объединение и разъединение карточек товаров
@@ -58,65 +58,65 @@ content_sha: 5cad5c109fe970fa
 
 **Тело запроса** (`application/json`):
 
-- `nmIDs` — array[integer] **обязательный**. `nmID`, которые необходимо объединить
 - `targetIMT` — integer **обязательный**. Существующий `imtID`, под которым необходимо [объединить](/knowledge-base/articles/019d49a4-1320-71bb-9dac-8ba07e7177ce/rabota-s-tovarami#obuedinenie-i-razuedinenie-kartochek-tovarov) карточки товаров
+- `nmIDs` — array[integer] **обязательный**. `nmID`, которые необходимо объединить
 - `nmIDs` — array[integer] **обязательный**. `nmID`, которые необходимо разъединить
 
 ## Ответы
 
 **200** — Успешно
 
-- `additionalErrors` — object | string. Дополнительные ошибки
-  - `string` — string
-  - `error` — string **обязательный**
 - `data` — object. Данные ответа
 - `error` — boolean. Флаг ошибки
 - `errorText` — string. Описание ошибки
+- `additionalErrors` — object | string. Дополнительные ошибки
+  - `string` — string
+  - `error` — string **обязательный**
 
 **400** — Неправильный запрос
 
-- `additionalErrors` — object | string. Дополнительные ошибки
-  - `string` — string
-  - `error` — string **обязательный**
 - `data` — object. Данные ответа
 - `error` — boolean. Флаг ошибки
 - `errorText` — string. Описание ошибки
+- `additionalErrors` — object | string. Дополнительные ошибки
+  - `string` — string
+  - `error` — string **обязательный**
 - `error` — string
 
 **401** — Не авторизован
 
-- `code` — string. Внутренний код ошибки
+- `title` — string. Заголовок ошибки
 - `detail` — string. Детали ошибки
-- `origin` — string. ID внутреннего сервиса WB
+- `code` — string. Внутренний код ошибки
 - `requestId` — string. Уникальный ID запроса
+- `origin` — string. ID внутреннего сервиса WB
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
-- `title` — string. Заголовок ошибки
 
 **402** — Требуется платёж
 
-- `detail` — string. Детали ошибки. Ошибка возвращается только сервисам из [Каталога решений для бизнеса](/business-solutions)
 - `title` — string. Заголовок ошибки
+- `detail` — string. Детали ошибки. Ошибка возвращается только сервисам из [Каталога решений для бизнеса](/business-solutions)
 
 **403** — Доступ запрещён
 
-- `additionalErrors` — object | string. Дополнительные ошибки
-  - `string` — string
-  - `error` — string **обязательный**
 - `data` — object. Данные ответа
 - `error` — boolean. Флаг ошибки
 - `errorText` — string. Описание ошибки
+- `additionalErrors` — object | string. Дополнительные ошибки
+  - `string` — string
+  - `error` — string **обязательный**
 
 **413** — Превышен лимит объёма данных в запросе
 
 **429** — Слишком много запросов
 
-- `code` — string. Внутренний код ошибки
+- `title` — string. Заголовок ошибки
 - `detail` — string. Детали ошибки
-- `origin` — string. ID внутреннего сервиса WB
+- `code` — string. Внутренний код ошибки
 - `requestId` — string. Уникальный ID запроса
+- `origin` — string. ID внутреннего сервиса WB
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
-- `title` — string. Заголовок ошибки

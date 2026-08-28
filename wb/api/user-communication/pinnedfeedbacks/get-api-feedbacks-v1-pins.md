@@ -9,7 +9,7 @@ tags:
 spec_version: communication
 source: "https://dev.wildberries.ru/docs/openapi/user-communication"
 deprecated: false
-content_sha: 34984caaa60cfe34
+content_sha: 1fb5c4c6d6334349
 ---
 
 # Список закреплённых и откреплённых отзывов
@@ -52,12 +52,12 @@ content_sha: 34984caaa60cfe34
 - `data` — object **обязательный**
 - `data` — array[object]
   - `changeStateAt` — string<date-time> **обязательный**. Дата и время закрепления или открепления
-  - `feedbackId` — string **обязательный**. ID отзыва
   - `imtId` — integer **обязательный**. ID для [объединённых](/knowledge-base/articles/019d49a4-1320-71bb-9dac-8ba07e7177ce/rabota-s-tovarami#obuedinenie-i-razuedinenie-kartochek-tovarov) карточек товаров
   - `nmId` — integer **обязательный**. Артикул WB
   - `pinId` — integer **обязательный**. ID операции закрепления отзыва
   - `pinMethod` — string (subscription, tariff) **обязательный**. Метод закрепления: - `subscription` — подписка Джем - `tariff` — тарифная опция
   - `pinOn` — string (imt, nm) **обязательный**. Место закрепления отзыва: - `nm` — карточка товара - `imt` — группа [объединённых](/knowledge-base/articles/019d49a4-1320-71bb-9dac-8ba07e7177ce/rabota-s-tovarami#obuedinenie-i-razuedinenie-kartochek-tovarov) карточек товаров
+  - `feedbackId` — string **обязательный**. ID отзыва
   - `state` — string (pinned, unpinned) **обязательный**. Закреплён ли отзыв: - `pinned` — да - `unpinned` — нет
   - `unpinnedCause` — string (sysTariffUnpinned, sysLimitReached, sysNoratingUnpinned, sysAdditionalSlot). Причина открепления отзыва: - `sysTariffUnpinned` — закончилась подписка или тарифная опция - `sysLimitReached` — закончился общий лимит по подписке - `sysNoratingUnpinned` — отзыв исключён из рейтинга. Например, удалён или забанен - `sysAdditionalSlot` — к карточке или к группе [объединённых](/knowledge-base/articles/019d49a4-1320-71bb-9dac-8ba07e7177ce/rabota-s-tovarami#obuedinenie-i-razuedinenie-kartochek-tovarov) карточек прикреплено максимальное количество отзывов
 - `next` — integer. Параметр пагинации. Укажите это значение в запросе, чтобы получить следующий пакет данных. Если поле отсутствует, вы получили все данные
@@ -72,27 +72,27 @@ content_sha: 34984caaa60cfe34
 
 **401** — Не авторизован
 
-- `code` — string. Внутренний код ошибки
+- `title` — string. Заголовок ошибки
 - `detail` — string. Детали ошибки
-- `origin` — string. ID внутреннего сервиса WB
+- `code` — string. Внутренний код ошибки
 - `requestId` — string. Уникальный ID запроса
+- `origin` — string. ID внутреннего сервиса WB
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
-- `title` — string. Заголовок ошибки
 
 **402** — Требуется платёж
 
-- `detail` — string. Детали ошибки. Ошибка возвращается только сервисам из [Каталога решений для бизнеса](/business-solutions)
 - `title` — string. Заголовок ошибки
+- `detail` — string. Детали ошибки. Ошибка возвращается только сервисам из [Каталога решений для бизнеса](/business-solutions)
 
 **429** — Слишком много запросов
 
-- `code` — string. Внутренний код ошибки
+- `title` — string. Заголовок ошибки
 - `detail` — string. Детали ошибки
-- `origin` — string. ID внутреннего сервиса WB
+- `code` — string. Внутренний код ошибки
 - `requestId` — string. Уникальный ID запроса
+- `origin` — string. ID внутреннего сервиса WB
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
-- `title` — string. Заголовок ошибки

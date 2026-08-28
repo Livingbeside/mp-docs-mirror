@@ -9,7 +9,7 @@ tags:
 spec_version: items
 source: "https://dev.wildberries.ru/docs/openapi/work-with-products"
 deprecated: false
-content_sha: eb7b0ac5fa909f15
+content_sha: 38edfa42f594e1e8
 ---
 
 # Список рекомендаций в карточках товаров
@@ -45,56 +45,56 @@ content_sha: eb7b0ac5fa909f15
 **200** — Успешно
 
 - `data` — array[object] **обязательный**. Данные о товарах и их рекомендациях
-  - `brandName` — string **обязательный**. Бренд
-  - `imtId` — integer<int64> **обязательный**. ID для [объединённых](/knowledge-base/articles/019d49a4-1320-71bb-9dac-8ba07e7177ce/rabota-s-tovarami#obuedinenie-i-razuedinenie-kartochek-tovarov) карточек товаров
   - `nmId` — integer **обязательный**. Артикул WB
-  - `pic` — string **обязательный**. URL основного изображения в карточке товара
-  - `picsCount` — integer **обязательный**. Количество изображений в карточке товара
-  - `recomCount` — integer **обязательный**. Количество рекомендуемых товаров
-  - `recomNms` — array[integer] **обязательный**. Список `nmId` рекомендуемых товаров
-  - `recomPics` — array[string] **обязательный**. Список URL основных изображений рекомендуемых товаров
-  - `subjectName` — string **обязательный**. Предмет
-  - `title` — string **обязательный**. Название товара
-  - `updatedAt` — string<date-time>. Дата и время последнего обновления рекомендаций
+  - `imtId` — integer<int64> **обязательный**. ID для [объединённых](/knowledge-base/articles/019d49a4-1320-71bb-9dac-8ba07e7177ce/rabota-s-tovarami#obuedinenie-i-razuedinenie-kartochek-tovarov) карточек товаров
   - `vendorCode` — string **обязательный**. Артикул продавца
+  - `brandName` — string **обязательный**. Бренд
+  - `updatedAt` — string<date-time>. Дата и время последнего обновления рекомендаций
+  - `picsCount` — integer **обязательный**. Количество изображений в карточке товара
+  - `title` — string **обязательный**. Название товара
+  - `subjectName` — string **обязательный**. Предмет
+  - `pic` — string **обязательный**. URL основного изображения в карточке товара
+  - `recomCount` — integer **обязательный**. Количество рекомендуемых товаров
+  - `recomPics` — array[string] **обязательный**. Список URL основных изображений рекомендуемых товаров
+  - `recomNms` — array[integer] **обязательный**. Список `nmId` рекомендуемых товаров
 - `next` — integer **обязательный**. Курсор. Последний `nmId` в ответе
 
 **400** — Неправильный запрос
 
-- `detail` — string **обязательный**. Детали ошибки
-- `origin` — string **обязательный**. ID внутреннего сервиса WB
 - `requestId` — string **обязательный**. ID запроса
+- `origin` — string **обязательный**. ID внутреннего сервиса WB
 - `title` — string **обязательный**. Заголовок ошибки
+- `detail` — string **обязательный**. Детали ошибки
 
 **401** — Не авторизован
 
-- `code` — string. Внутренний код ошибки
+- `title` — string. Заголовок ошибки
 - `detail` — string. Детали ошибки
-- `origin` — string. ID внутреннего сервиса WB
+- `code` — string. Внутренний код ошибки
 - `requestId` — string. Уникальный ID запроса
+- `origin` — string. ID внутреннего сервиса WB
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
-- `title` — string. Заголовок ошибки
 
 **403** — Доступ запрещён
 
-- `code` — string. Внутренний код ошибки
+- `title` — string. Заголовок ошибки
 - `detail` — string. Детали ошибки
-- `origin` — string. ID внутреннего сервиса WB
+- `code` — string. Внутренний код ошибки
 - `requestId` — string. ID запроса
+- `origin` — string. ID внутреннего сервиса WB
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
-- `title` — string. Заголовок ошибки
 
 **429** — Слишком много запросов
 
-- `code` — string. Внутренний код ошибки
+- `title` — string. Заголовок ошибки
 - `detail` — string. Детали ошибки
-- `origin` — string. ID внутреннего сервиса WB
+- `code` — string. Внутренний код ошибки
 - `requestId` — string. Уникальный ID запроса
+- `origin` — string. ID внутреннего сервиса WB
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
-- `title` — string. Заголовок ошибки

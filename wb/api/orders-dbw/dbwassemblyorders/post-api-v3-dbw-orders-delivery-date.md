@@ -9,7 +9,7 @@ tags:
 spec_version: ordersdbw
 source: "https://dev.wildberries.ru/docs/openapi/orders-dbw"
 deprecated: false
-content_sha: 0acb016d9d255b75
+content_sha: 7641bd6881939b99
 ---
 
 # Получить дату и время доставки
@@ -47,49 +47,49 @@ content_sha: 0acb016d9d255b75
 **200** — Успешно
 
 - `orders` — array[object]
-  - `dDate` — string. Актуальная дата доставки
-  - `dDateOld` — string. Прежняя дата доставки. Доступна первые сутки после изменения
   - `dTimeFrom` — string. Актуальное время доставки "с"
-  - `dTimeFromOld` — string. Прежнее время доставки "с". Доступно первые сутки после изменения
   - `dTimeTo` — string. Актуальное время доставки "по"
+  - `dTimeFromOld` — string. Прежнее время доставки "с". Доступно первые сутки после изменения
   - `dTimeToOld` — string. Прежнее время доставки "по". Доступно первые сутки после изменения
+  - `dDateOld` — string. Прежняя дата доставки. Доступна первые сутки после изменения
+  - `dDate` — string. Актуальная дата доставки
   - `id` — integer. ID сборочного задания
 
 **400** — Неправильный запрос
 
 - `code` — string. Код ошибки
-- `data` — object. Дополнительные данные ошибки
 - `message` — string. Описание ошибки
+- `data` — object. Дополнительные данные ошибки
 
 **401** — Не авторизован
 
-- `code` — string. Внутренний код ошибки
+- `title` — string. Заголовок ошибки
 - `detail` — string. Детали ошибки
-- `origin` — string. ID внутреннего сервиса WB
+- `code` — string. Внутренний код ошибки
 - `requestId` — string. Уникальный ID запроса
+- `origin` — string. ID внутреннего сервиса WB
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
-- `title` — string. Заголовок ошибки
 
 **402** — Требуется платёж
 
-- `detail` — string. Детали ошибки. Ошибка возвращается только сервисам из [Каталога решений для бизнеса](/business-solutions)
 - `title` — string. Заголовок ошибки
+- `detail` — string. Детали ошибки. Ошибка возвращается только сервисам из [Каталога решений для бизнеса](/business-solutions)
 
 **403** — Доступ запрещён
 
 - `code` — string. Код ошибки
-- `data` — object. Дополнительные данные ошибки
 - `message` — string. Описание ошибки
+- `data` — object. Дополнительные данные ошибки
 
 **429** — Слишком много запросов
 
-- `code` — string. Внутренний код ошибки
+- `title` — string. Заголовок ошибки
 - `detail` — string. Детали ошибки
-- `origin` — string. ID внутреннего сервиса WB
+- `code` — string. Внутренний код ошибки
 - `requestId` — string. Уникальный ID запроса
+- `origin` — string. ID внутреннего сервиса WB
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
-- `title` — string. Заголовок ошибки

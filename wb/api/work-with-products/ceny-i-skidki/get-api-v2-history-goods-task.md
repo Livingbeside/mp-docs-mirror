@@ -9,7 +9,7 @@ tags:
 spec_version: items
 source: "https://dev.wildberries.ru/docs/openapi/work-with-products"
 deprecated: false
-content_sha: 57434bc72e683254
+content_sha: d9ce7cd58e738d1f
 ---
 
 # Детализация обработанной загрузки
@@ -46,18 +46,18 @@ content_sha: 57434bc72e683254
 **200** — Успешно
 
 - `data` — object. Данные ответа
+  - `uploadID` — integer. ID загрузки
   - `historyGoods` — array[object]. Информация о товарах в загрузке
-    - `clubDiscount` — integer. Скидка WB Клуба, %
+    - `nmID` — integer. Артикул WB
+    - `vendorCode` — string. Артикул продавца
+    - `sizeID` — integer. ID размера. В методах Контента это поле `chrtID`
+    - `techSizeName` — string. Размер
+    - `price` — integer. Цена
     - `currencyIsoCode4217` — string. Валюта, по стандарту ISO 4217
     - `discount` — integer. Скидка, %
-    - `errorText` — string. Текст ошибки. Например: - `You can't change the item price. Item was added to the Sale due to high inventory` — ошибка возникает, если товар попал под распродажу по [индексу остатка](https://seller.wildberries.ru/instructions/ru/ru/material/A-1159). - `The new price is several times lower than the current price. Item has been moved to Price Quarantine` — ошибка возникает, если новая цена со скидкой хотя бы в 3 раза меньше старой. Вы можете изменить цену или скидку с помощью API либо вывести товар из карантина в [личном кабинете](https://seller.wildberries.ru/discount-and-prices/quarantine).
-    - `nmID` — integer. Артикул WB
-    - `price` — integer. Цена
-    - `sizeID` — integer. ID размера. В методах Контента это поле `chrtID`
+    - `clubDiscount` — integer. Скидка WB Клуба, %
     - `status` — integer. Статус товара: * `2` — товар без ошибок, цена и/или скидка обновилась * `3` — есть ошибки, данные не обновились
-    - `techSizeName` — string. Размер
-    - `vendorCode` — string. Артикул продавца
-  - `uploadID` — integer. ID загрузки
+    - `errorText` — string. Текст ошибки. Например: - `You can't change the item price. Item was added to the Sale due to high inventory` — ошибка возникает, если товар попал под распродажу по [индексу остатка](https://seller.wildberries.ru/instructions/ru/ru/material/A-1159). - `The new price is several times lower than the current price. Item has been moved to Price Quarantine` — ошибка возникает, если новая цена со скидкой хотя бы в 3 раза меньше старой. Вы можете изменить цену или скидку с помощью API либо вывести товар из карантина в [личном кабинете](https://seller.wildberries.ru/discount-and-prices/quarantine).
 
 **400** — Неправильный запрос
 
@@ -67,14 +67,14 @@ content_sha: 57434bc72e683254
 
 **401** — Не авторизован
 
-- `code` — string. Внутренний код ошибки
+- `title` — string. Заголовок ошибки
 - `detail` — string. Детали ошибки
-- `origin` — string. ID внутреннего сервиса WB
+- `code` — string. Внутренний код ошибки
 - `requestId` — string. Уникальный ID запроса
+- `origin` — string. ID внутреннего сервиса WB
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
-- `title` — string. Заголовок ошибки
 
 **403** — Доступ запрещён
 
@@ -84,11 +84,11 @@ content_sha: 57434bc72e683254
 
 **429** — Слишком много запросов
 
-- `code` — string. Внутренний код ошибки
+- `title` — string. Заголовок ошибки
 - `detail` — string. Детали ошибки
-- `origin` — string. ID внутреннего сервиса WB
+- `code` — string. Внутренний код ошибки
 - `requestId` — string. Уникальный ID запроса
+- `origin` — string. ID внутреннего сервиса WB
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
-- `title` — string. Заголовок ошибки

@@ -9,7 +9,7 @@ tags:
 spec_version: items
 source: "https://dev.wildberries.ru/docs/openapi/work-with-products"
 deprecated: false
-content_sha: 68adc3fb340c57a4
+content_sha: 2362ac7abeb34397
 ---
 
 # Установить скидки WB Клуба
@@ -38,24 +38,24 @@ content_sha: 68adc3fb340c57a4
 **Тело запроса** (`application/json`):
 
 - `data` — array[object] **обязательный**. Товары и скидки WB Клуба для них. Максимум 1 000 товаров.
-  - `clubDiscount` — integer **обязательный**. Скидка WB Клуба, %
   - `nmID` — integer **обязательный**. Артикул WB
+  - `clubDiscount` — integer **обязательный**. Скидка WB Клуба, %
 
 ## Ответы
 
 **200** — Успешно
 
 - `data` — object. Данные ответа
-  - `alreadyExists` — boolean. Флаг дублирования загрузки: `true` — такая загрузка уже есть
   - `id` — integer. ID загрузки
+  - `alreadyExists` — boolean. Флаг дублирования загрузки: `true` — такая загрузка уже есть
 - `error` — boolean. Флаг ошибки
 - `errorText` — string. Текст ошибки
 
 **208** — Такая загрузка уже есть
 
 - `data` — object. Данные ответа
-  - `alreadyExists` — boolean. Флаг дублирования загрузки: `true` — такая загрузка уже есть
   - `id` — integer. ID загрузки
+  - `alreadyExists` — boolean. Флаг дублирования загрузки: `true` — такая загрузка уже есть
 - `error` — boolean. Флаг ошибки
 - `errorText` — string. Текст ошибки
 
@@ -67,19 +67,19 @@ content_sha: 68adc3fb340c57a4
 
 **401** — Не авторизован
 
-- `code` — string. Внутренний код ошибки
+- `title` — string. Заголовок ошибки
 - `detail` — string. Детали ошибки
-- `origin` — string. ID внутреннего сервиса WB
+- `code` — string. Внутренний код ошибки
 - `requestId` — string. Уникальный ID запроса
+- `origin` — string. ID внутреннего сервиса WB
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
-- `title` — string. Заголовок ошибки
 
 **402** — Требуется платёж
 
-- `detail` — string. Детали ошибки. Ошибка возвращается только сервисам из [Каталога решений для бизнеса](/business-solutions)
 - `title` — string. Заголовок ошибки
+- `detail` — string. Детали ошибки. Ошибка возвращается только сервисам из [Каталога решений для бизнеса](/business-solutions)
 
 **403** — Доступ запрещён
 
@@ -101,11 +101,11 @@ content_sha: 68adc3fb340c57a4
 
 **429** — Слишком много запросов
 
-- `code` — string. Внутренний код ошибки
+- `title` — string. Заголовок ошибки
 - `detail` — string. Детали ошибки
-- `origin` — string. ID внутреннего сервиса WB
+- `code` — string. Внутренний код ошибки
 - `requestId` — string. Уникальный ID запроса
+- `origin` — string. ID внутреннего сервиса WB
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
-- `title` — string. Заголовок ошибки

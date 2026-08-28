@@ -9,7 +9,7 @@ tags:
 spec_version: dbs
 source: "https://dev.wildberries.ru/docs/openapi/orders-dbs"
 deprecated: false
-content_sha: 398368d03c9c6e01
+content_sha: 5566748e7eadc6e6
 ---
 
 # Получить информацию о платной доставке
@@ -40,47 +40,47 @@ content_sha: 398368d03c9c6e01
 
 **200** — Успешно
 
-- `convertedCurrencyCode` — integer. Код валюты страны продавца
+- `groupID` — string<UUID>. ID группы сборочных заданий
+- `deliveryCost` — integer. Стоимость платной доставки в валюте продажи, умноженная на 100
 - `convertedDeliveryCost` — integer. Стоимость платной доставки в валюте страны продавца, умноженная на 100. Предоставляется в информационных целях.
 - `currencyCode` — integer<ISO 4217>. Код валюты продажи
-- `deliveryCost` — integer. Стоимость платной доставки в валюте продажи, умноженная на 100
-- `groupID` — string<UUID>. ID группы сборочных заданий
+- `convertedCurrencyCode` — integer. Код валюты страны продавца
 
 **400** — Неправильный запрос
 
 - `code` — string. Код ошибки
-- `data` — object. Дополнительные данные ошибки
 - `message` — string. Описание ошибки
+- `data` — object. Дополнительные данные ошибки
 
 **401** — Не авторизован
 
-- `code` — string. Внутренний код ошибки
+- `title` — string. Заголовок ошибки
 - `detail` — string. Детали ошибки
-- `origin` — string. ID внутреннего сервиса WB
+- `code` — string. Внутренний код ошибки
 - `requestId` — string. Уникальный ID запроса
+- `origin` — string. ID внутреннего сервиса WB
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
-- `title` — string. Заголовок ошибки
 
 **402** — Требуется платёж
 
-- `detail` — string. Детали ошибки. Ошибка возвращается только сервисам из [Каталога решений для бизнеса](/business-solutions)
 - `title` — string. Заголовок ошибки
+- `detail` — string. Детали ошибки. Ошибка возвращается только сервисам из [Каталога решений для бизнеса](/business-solutions)
 
 **403** — Доступ запрещён
 
 - `code` — string. Код ошибки
-- `data` — object. Дополнительные данные ошибки
 - `message` — string. Описание ошибки
+- `data` — object. Дополнительные данные ошибки
 
 **429** — Слишком много запросов
 
-- `code` — string. Внутренний код ошибки
+- `title` — string. Заголовок ошибки
 - `detail` — string. Детали ошибки
-- `origin` — string. ID внутреннего сервиса WB
+- `code` — string. Внутренний код ошибки
 - `requestId` — string. Уникальный ID запроса
+- `origin` — string. ID внутреннего сервиса WB
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
-- `title` — string. Заголовок ошибки

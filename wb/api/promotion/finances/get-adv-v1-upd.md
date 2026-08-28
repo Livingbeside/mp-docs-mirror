@@ -9,7 +9,7 @@ tags:
 spec_version: promotion
 source: "https://dev.wildberries.ru/docs/openapi/promotion"
 deprecated: false
-content_sha: 964c65105f17bc46
+content_sha: c6fc5714f0109375
 ---
 
 # Получение истории затрат
@@ -40,35 +40,35 @@ content_sha: 964c65105f17bc46
 
 **200** — Успешно
 
-- `advertId` — integer. ID кампании
-- `advertStatus` — integer. Статус кампании: - `-1` — удалена, процесс удаления будет завершён в течение 10 минут - `4` — готова к запуску - `7` — завершена - `8` — отменена - `9` — активна - `11` — на паузе
-- `advertType` — integer. Тип кампании
-- `campName` — string. Название кампании
-- `paymentType` — string. Источник списания: - `Баланс` - `Бонусы` - `Счёт` - `Кэшбэк`
 - `updNum` — integer. Номер выставленного документа
-- `updSum` — integer. Выставленная сумма в базовых единицах валюты [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances)
 - `updTime` — string<time-date>. Время списания
+- `updSum` — integer. Выставленная сумма в базовых единицах валюты [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances)
+- `advertId` — integer. ID кампании
+- `campName` — string. Название кампании
+- `advertType` — integer. Тип кампании
+- `paymentType` — string. Источник списания: - `Баланс` - `Бонусы` - `Счёт` - `Кэшбэк`
+- `advertStatus` — integer. Статус кампании: - `-1` — удалена, процесс удаления будет завершён в течение 10 минут - `4` — готова к запуску - `7` — завершена - `8` — отменена - `9` — активна - `11` — на паузе
 
 **400** — Неправильный запрос
 
 **401** — Не авторизован
 
-- `code` — string. Внутренний код ошибки
+- `title` — string. Заголовок ошибки
 - `detail` — string. Детали ошибки
-- `origin` — string. ID внутреннего сервиса WB
+- `code` — string. Внутренний код ошибки
 - `requestId` — string. Уникальный ID запроса
+- `origin` — string. ID внутреннего сервиса WB
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
-- `title` — string. Заголовок ошибки
 
 **429** — Слишком много запросов
 
-- `code` — string. Внутренний код ошибки
+- `title` — string. Заголовок ошибки
 - `detail` — string. Детали ошибки
-- `origin` — string. ID внутреннего сервиса WB
+- `code` — string. Внутренний код ошибки
 - `requestId` — string. Уникальный ID запроса
+- `origin` — string. ID внутреннего сервиса WB
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
-- `title` — string. Заголовок ошибки

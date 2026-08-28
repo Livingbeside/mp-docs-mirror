@@ -9,7 +9,7 @@ tags:
 spec_version: items
 source: "https://dev.wildberries.ru/docs/openapi/work-with-products"
 deprecated: false
-content_sha: f2b8949e95c6185e
+content_sha: 538d240f9b16b16a
 ---
 
 # Получить товары с ценами по артикулам
@@ -49,23 +49,23 @@ content_sha: f2b8949e95c6185e
 
 - `data` — object **обязательный**. Данные ответа
   - `listGoods` — array[object] **обязательный**. Информация о товарах
-    - `clubDiscount` — integer. Скидка WB Клуба, %
+    - `nmID` — integer. Артикул WB
+    - `vendorCode` — string. Артикул продавца
+    - `sizes` — array[object]. Размер
+      - `sizeID` — integer<int64> **обязательный**. ID размера. В методах Контента это поле `chrtID`
+      - `price` — integer **обязательный**. Цена
+      - `discountedPrice` — number **обязательный**. Цена со скидкой
+      - `clubDiscountedPrice` — number **обязательный**. Цена со скидкой, включая скидку WB Клуба
+      - `techSizeName` — string **обязательный**. Размер товара
     - `currencyIsoCode4217` — string. Валюта, по стандарту ISO 4217
     - `discount` — integer. Скидка, %
+    - `clubDiscount` — integer. Скидка WB Клуба, %
     - `editableSizePrice` — boolean. Можно ли устанавливать цены отдельно для разных размеров (зависит от категории товара): - `true` — можно - `false` — нельзя
-    - `isBadTurnover` — boolean. Признак неликвидного товара: - `true` — неликвидный товар с [низким индексом остатка](https://seller.wildberries.ru/instructions/ru/ru/material/stocks-index?categoryId=e324ce0f-9a2a-4b8d-8fd1-72f751b09b3b&goBackOption=prevRoute#%D1%83%D1%80%D0%BE%D0%B2%D0%BD%D0%B8-%D0%B8%D0%BD%D0%B4%D0%B5%D0%BA%D1%81%D0%B0-%D0%BE%D1%81%D1%82%D0%B0%D1%82%D0%BA%D0%B0) - Поле отсутствует — ликвидный товар
-    - `nmID` — integer. Артикул WB
-    - `sizes` — array[object]. Размер
-      - `clubDiscountedPrice` — number **обязательный**. Цена со скидкой, включая скидку WB Клуба
-      - `discountedPrice` — number **обязательный**. Цена со скидкой
-      - `price` — integer **обязательный**. Цена
-      - `sizeID` — integer<int64> **обязательный**. ID размера. В методах Контента это поле `chrtID`
-      - `techSizeName` — string **обязательный**. Размер товара
-    - `vendorCode` — string. Артикул продавца
     - `wholesaleDiscountThreshold` — array[object]. Оптовые скидки разных уровней для B2B
-      - `level` — integer **обязательный**. Уровень скидки
       - `minQuantity` — integer **обязательный**. Минимальное количество единиц товара для скидки
       - `wholesaleDiscount` — integer **обязательный**. Скидка, %
+      - `level` — integer **обязательный**. Уровень скидки
+    - `isBadTurnover` — boolean. Признак неликвидного товара: - `true` — неликвидный товар с [низким индексом остатка](https://seller.wildberries.ru/instructions/ru/ru/material/stocks-index?categoryId=e324ce0f-9a2a-4b8d-8fd1-72f751b09b3b&goBackOption=prevRoute#%D1%83%D1%80%D0%BE%D0%B2%D0%BD%D0%B8-%D0%B8%D0%BD%D0%B4%D0%B5%D0%BA%D1%81%D0%B0-%D0%BE%D1%81%D1%82%D0%B0%D1%82%D0%BA%D0%B0) - Поле отсутствует — ликвидный товар
 - `error` — boolean **обязательный**. Флаг ошибки
 - `errorText` — string **обязательный**. Текст ошибки
 
@@ -77,19 +77,19 @@ content_sha: f2b8949e95c6185e
 
 **401** — Не авторизован
 
-- `code` — string. Внутренний код ошибки
+- `title` — string. Заголовок ошибки
 - `detail` — string. Детали ошибки
-- `origin` — string. ID внутреннего сервиса WB
+- `code` — string. Внутренний код ошибки
 - `requestId` — string. Уникальный ID запроса
+- `origin` — string. ID внутреннего сервиса WB
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
-- `title` — string. Заголовок ошибки
 
 **402** — Требуется платёж
 
-- `detail` — string. Детали ошибки. Ошибка возвращается только сервисам из [Каталога решений для бизнеса](/business-solutions)
 - `title` — string. Заголовок ошибки
+- `detail` — string. Детали ошибки. Ошибка возвращается только сервисам из [Каталога решений для бизнеса](/business-solutions)
 
 **403** — Доступ запрещён
 
@@ -99,11 +99,11 @@ content_sha: f2b8949e95c6185e
 
 **429** — Слишком много запросов
 
-- `code` — string. Внутренний код ошибки
+- `title` — string. Заголовок ошибки
 - `detail` — string. Детали ошибки
-- `origin` — string. ID внутреннего сервиса WB
+- `code` — string. Внутренний код ошибки
 - `requestId` — string. Уникальный ID запроса
+- `origin` — string. ID внутреннего сервиса WB
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
-- `title` — string. Заголовок ошибки

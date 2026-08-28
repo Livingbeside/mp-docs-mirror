@@ -9,7 +9,7 @@ tags:
 spec_version: communication
 source: "https://dev.wildberries.ru/docs/openapi/user-communication"
 deprecated: false
-content_sha: e56b3ef20aea17dc
+content_sha: ba49817fc38ef659
 ---
 
 # Список отзывов
@@ -51,97 +51,97 @@ content_sha: e56b3ef20aea17dc
 
 **200** — Успешно
 
-- `additionalErrors` — array[string]. Дополнительные ошибки
 - `data` — object
-  - `countArchive` — integer. Количество обработанных отзывов
   - `countUnanswered` — integer. Количество необработанных отзывов
+  - `countArchive` — integer. Количество обработанных отзывов
   - `feedbacks` — array[object]. Массив отзывов
-    - `answer` — object. Структура ответа
-      - `editable` — boolean. Можно ли отредактировать ответ: - `false` — нет - `true` — да
-      - `state` — string. Статус: - `none` — новый - `wbRu` — отображается на сайте - `reviewRequired` — ответ проходит проверку - `rejected` — ответ отклонён
-      - `text` — string. Текст ответа
-    - `bables` — array[string]. Список тегов покупателя
-    - `childFeedbackId` — string. ID дополненного отзыва (`null`, если этот отзыв дополненный)
-    - `color` — string. Цвет товара
-    - `cons` — string. Недостатки товара
-    - `createdDate` — string<date-time>. Дата и время создания отзыва
     - `id` — string. ID отзыва
-    - `isAbleReturnProductOrders` — boolean. Опция возврата товара: - `true` — доступна - `false` — недоступна
-    - `isAbleSupplierFeedbackValuation` — boolean. Доступна ли продавцу возможность оставить жалобу на отзыв (`true` — доступна, `false` — не доступна)
-    - `isAbleSupplierProductValuation` — boolean. Доступна ли продавцу возможность сообщить о проблеме с товаром: - `true` — да - `false` — нет
-    - `lastOrderCreatedAt` — string. Дата покупки
-    - `lastOrderShkId` — integer. Штрихкод единицы товара
-    - `matchingSize` — string. Соответствие заявленного размера реальному. Возможные значения: - ` ` — для безразмерных товаров - `ок` — соответствует размеру - `smaller` — маломерит - `bigger` — большемерит
-    - `orderStatus` — string. Статус заказа. Возможные значения: - `buyout` — выкуплен - `rejected` — отказались - `returned` — возврат - `notSpecified` — статус не присвоен
-    - `parentFeedbackId` — string. ID начального отзыва (`null`, если этот отзыв начальный)
+    - `text` — string. Текст отзыва
+    - `pros` — string. Достоинства товара
+    - `cons` — string. Недостатки товара
+    - `productValuation` — integer. Оценка товара
+    - `createdDate` — string<date-time>. Дата и время создания отзыва
+    - `answer` — object. Структура ответа
+      - `text` — string. Текст ответа
+      - `state` — string. Статус: - `none` — новый - `wbRu` — отображается на сайте - `reviewRequired` — ответ проходит проверку - `rejected` — ответ отклонён
+      - `editable` — boolean. Можно ли отредактировать ответ: - `false` — нет - `true` — да
+    - `state` — string. Статус отзыва: - `none` - не обработан (новый) - `wbRu` - обработан
+    - `productDetails` — object. Информация о товаре
+      - `nmId` — integer. Артикул WB
+      - `imtId` — integer. ID для [объединённых](/knowledge-base/articles/019d49a4-1320-71bb-9dac-8ba07e7177ce/rabota-s-tovarami#obuedinenie-i-razuedinenie-kartochek-tovarov) карточек товаров
+      - `productName` — string. Название товара
+      - `supplierArticle` — string. Артикул продавца
+      - `supplierName` — string. Имя продавца
+      - `brandName` — string. Бренд товара
+      - `size` — string. Размер товара (`techSize` в КТ)
     - `photoLinks` — array[object]. Массив структур фотографий
       - `fullSize` — string. Адрес фотографии полного размера
       - `miniSize` — string. Адрес фотографии маленького размера
-    - `productDetails` — object. Информация о товаре
-      - `brandName` — string. Бренд товара
-      - `imtId` — integer. ID для [объединённых](/knowledge-base/articles/019d49a4-1320-71bb-9dac-8ba07e7177ce/rabota-s-tovarami#obuedinenie-i-razuedinenie-kartochek-tovarov) карточек товаров
-      - `nmId` — integer. Артикул WB
-      - `productName` — string. Название товара
-      - `size` — string. Размер товара (`techSize` в КТ)
-      - `supplierArticle` — string. Артикул продавца
-      - `supplierName` — string. Имя продавца
-    - `productValuation` — integer. Оценка товара
-    - `pros` — string. Достоинства товара
+    - `video` — object. Структура видео
+      - `previewImage` — string. Ссылка на обложку видео
+      - `link` — string. Ссылка на файл плейлиста видео (доступно по протоколу HLS)
+      - `durationSec` — integer. Общая продолжительность видео
+    - `wasViewed` — boolean. Просмотрен ли отзыв
+    - `userName` — string. Имя автора отзыва
+    - `orderStatus` — string. Статус заказа. Возможные значения: - `buyout` — выкуплен - `rejected` — отказались - `returned` — возврат - `notSpecified` — статус не присвоен
+    - `matchingSize` — string. Соответствие заявленного размера реальному. Возможные значения: - ` ` — для безразмерных товаров - `ок` — соответствует размеру - `smaller` — маломерит - `bigger` — большемерит
+    - `isAbleSupplierFeedbackValuation` — boolean. Доступна ли продавцу возможность оставить жалобу на отзыв (`true` — доступна, `false` — не доступна)
+    - `supplierFeedbackValuation` — integer. Ключ причины жалобы на отзыв
+    - `isAbleSupplierProductValuation` — boolean. Доступна ли продавцу возможность сообщить о проблеме с товаром: - `true` — да - `false` — нет
+    - `supplierProductValuation` — integer. Ключ проблемы с товаром
+    - `isAbleReturnProductOrders` — boolean. Опция возврата товара: - `true` — доступна - `false` — недоступна
     - `returnProductOrdersDate` — string. Дата и время, когда на запрос возврата был получен ответ со статус-кодом 200.
-    - `state` — string. Статус отзыва: - `none` - не обработан (новый) - `wbRu` - обработан
+    - `bables` — array[string]. Список тегов покупателя
+    - `lastOrderShkId` — integer. Штрихкод единицы товара
+    - `lastOrderCreatedAt` — string. Дата покупки
+    - `color` — string. Цвет товара
     - `subjectId` — integer. ID предмета
     - `subjectName` — string. Название предмета
-    - `supplierFeedbackValuation` — integer. Ключ причины жалобы на отзыв
-    - `supplierProductValuation` — integer. Ключ проблемы с товаром
-    - `text` — string. Текст отзыва
-    - `userName` — string. Имя автора отзыва
-    - `video` — object. Структура видео
-      - `durationSec` — integer. Общая продолжительность видео
-      - `link` — string. Ссылка на файл плейлиста видео (доступно по протоколу HLS)
-      - `previewImage` — string. Ссылка на обложку видео
-    - `wasViewed` — boolean. Просмотрен ли отзыв
+    - `parentFeedbackId` — string. ID начального отзыва (`null`, если этот отзыв начальный)
+    - `childFeedbackId` — string. ID дополненного отзыва (`null`, если этот отзыв дополненный)
 - `error` — boolean. Есть ли ошибка
 - `errorText` — string. Описание ошибки
+- `additionalErrors` — array[string]. Дополнительные ошибки
 
 **400** — Неправильный запрос
 
-- `additionalErrors` — array[string]. Дополнительные ошибки
 - `data` — object
 - `error` — boolean. Есть ли ошибка
 - `errorText` — string. Описание ошибки
+- `additionalErrors` — array[string]. Дополнительные ошибки
 - `requestId` — string
 
 **401** — Не авторизован
 
-- `code` — string. Внутренний код ошибки
+- `title` — string. Заголовок ошибки
 - `detail` — string. Детали ошибки
-- `origin` — string. ID внутреннего сервиса WB
+- `code` — string. Внутренний код ошибки
 - `requestId` — string. Уникальный ID запроса
+- `origin` — string. ID внутреннего сервиса WB
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
-- `title` — string. Заголовок ошибки
 
 **402** — Требуется платёж
 
-- `detail` — string. Детали ошибки. Ошибка возвращается только сервисам из [Каталога решений для бизнеса](/business-solutions)
 - `title` — string. Заголовок ошибки
+- `detail` — string. Детали ошибки. Ошибка возвращается только сервисам из [Каталога решений для бизнеса](/business-solutions)
 
 **403** — Доступ запрещён
 
-- `additionalErrors` — array[string]. Дополнительные ошибки
 - `data` — object
 - `error` — boolean. Есть ли ошибка
 - `errorText` — string. Описание ошибки
+- `additionalErrors` — array[string]. Дополнительные ошибки
 - `requestId` — string
 
 **429** — Слишком много запросов
 
-- `code` — string. Внутренний код ошибки
+- `title` — string. Заголовок ошибки
 - `detail` — string. Детали ошибки
-- `origin` — string. ID внутреннего сервиса WB
+- `code` — string. Внутренний код ошибки
 - `requestId` — string. Уникальный ID запроса
+- `origin` — string. ID внутреннего сервиса WB
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
-- `title` — string. Заголовок ошибки

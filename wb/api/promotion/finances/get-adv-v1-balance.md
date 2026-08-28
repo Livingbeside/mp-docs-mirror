@@ -9,7 +9,7 @@ tags:
 spec_version: promotion
 source: "https://dev.wildberries.ru/docs/openapi/promotion"
 deprecated: false
-content_sha: 4e5c9ff8202b94f9
+content_sha: d201a8633260a9e0
 ---
 
 # Баланс
@@ -39,34 +39,34 @@ content_sha: 4e5c9ff8202b94f9
 **200** — Успешно
 
 - `balance` — integer. Счёт в базовых единицах валюты [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances)
+- `net` — integer. Баланс в базовых единицах валюты [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances)
+- `currency` — string<ISO 4217>. Валюта [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances)
 - `bonus` — integer. Бонусы в базовых единицах валюты [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances)
 - `cashbacks` — array[object]. Промо-бонусы
-  - `expiration_date` — string<ISO 8601>. Дата окончания действия промо-бонусов
-  - `percent` — integer. Процент от суммы пополнения бюджета кампании, который можно оплатить промо-бонусами за один раз
   - `sum` — integer. Промо-бонусы в базовых единицах валюты [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances)
-- `currency` — string<ISO 4217>. Валюта [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances)
-- `net` — integer. Баланс в базовых единицах валюты [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances)
+  - `percent` — integer. Процент от суммы пополнения бюджета кампании, который можно оплатить промо-бонусами за один раз
+  - `expiration_date` — string<ISO 8601>. Дата окончания действия промо-бонусов
 
 **400** — Неправильный запрос
 
 **401** — Не авторизован
 
-- `code` — string. Внутренний код ошибки
+- `title` — string. Заголовок ошибки
 - `detail` — string. Детали ошибки
-- `origin` — string. ID внутреннего сервиса WB
+- `code` — string. Внутренний код ошибки
 - `requestId` — string. Уникальный ID запроса
+- `origin` — string. ID внутреннего сервиса WB
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
-- `title` — string. Заголовок ошибки
 
 **429** — Слишком много запросов
 
-- `code` — string. Внутренний код ошибки
+- `title` — string. Заголовок ошибки
 - `detail` — string. Детали ошибки
-- `origin` — string. ID внутреннего сервиса WB
+- `code` — string. Внутренний код ошибки
 - `requestId` — string. Уникальный ID запроса
+- `origin` — string. ID внутреннего сервиса WB
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
-- `title` — string. Заголовок ошибки

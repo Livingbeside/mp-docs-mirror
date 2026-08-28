@@ -9,7 +9,7 @@ tags:
 spec_version: promotion
 source: "https://dev.wildberries.ru/docs/openapi/promotion"
 deprecated: false
-content_sha: eb65e9a9c7c05f71
+content_sha: 749f1c665f92d4fe
 ---
 
 # Установить ставки для поисковых кластеров в валюте аккаунта продавца
@@ -38,24 +38,24 @@ content_sha: eb65e9a9c7c05f71
 
 - `bids` — array[object] **обязательный**
   - `advertId` — integer **обязательный**. ID кампании
-  - `bidMinorUnits` — integer **обязательный**. Ставка в разменных единицах — 0,01 от базовой валюты [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances). Допустимый шаг ставки указан в ответе метода [GET /api/advert/v1/config](./promotion#tag/campaignManagement/operation/getV1Config)
   - `nmId` — integer **обязательный**. Артикул WB
   - `normQuery` — string **обязательный**. Поисковый кластер
+  - `bidMinorUnits` — integer **обязательный**. Ставка в разменных единицах — 0,01 от базовой валюты [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances). Допустимый шаг ставки указан в ответе метода [GET /api/advert/v1/config](./promotion#tag/campaignManagement/operation/getV1Config)
 
 ## Ответы
 
 **200** — Успешно
 
+- `success` — array[object] **обязательный**
+  - `advertId` — integer **обязательный**. ID кампании
+  - `nmId` — integer **обязательный**. Артикул WB
+  - `normQuery` — string **обязательный**. Поисковый кластер — это группа похожих поисковых запросов, по которым покупатели находят товары
+  - `currency` — string<ISO 4217> **обязательный**. Валюта [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances)
 - `failed` — array[object] **обязательный**
   - `advertId` — integer **обязательный**. ID кампании
   - `nmId` — integer **обязательный**. Артикул WB
   - `normQuery` — string **обязательный**. Поисковый кластер — это группа похожих поисковых запросов, по которым покупатели находят товары
   - `reason` — string **обязательный**. Описание причины ошибки
-- `success` — array[object] **обязательный**
-  - `advertId` — integer **обязательный**. ID кампании
-  - `currency` — string<ISO 4217> **обязательный**. Валюта [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances)
-  - `nmId` — integer **обязательный**. Артикул WB
-  - `normQuery` — string **обязательный**. Поисковый кластер — это группа похожих поисковых запросов, по которым покупатели находят товары
 
 **400** — Неправильный запрос
 
@@ -67,22 +67,22 @@ content_sha: eb65e9a9c7c05f71
 
 **401** — Не авторизован
 
-- `code` — string. Внутренний код ошибки
+- `title` — string. Заголовок ошибки
 - `detail` — string. Детали ошибки
-- `origin` — string. ID внутреннего сервиса WB
+- `code` — string. Внутренний код ошибки
 - `requestId` — string. Уникальный ID запроса
+- `origin` — string. ID внутреннего сервиса WB
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
-- `title` — string. Заголовок ошибки
 
 **429** — Слишком много запросов
 
-- `code` — string. Внутренний код ошибки
+- `title` — string. Заголовок ошибки
 - `detail` — string. Детали ошибки
-- `origin` — string. ID внутреннего сервиса WB
+- `code` — string. Внутренний код ошибки
 - `requestId` — string. Уникальный ID запроса
+- `origin` — string. ID внутреннего сервиса WB
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
-- `title` — string. Заголовок ошибки

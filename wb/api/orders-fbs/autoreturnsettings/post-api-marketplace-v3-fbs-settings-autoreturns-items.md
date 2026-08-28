@@ -9,7 +9,7 @@ tags:
 spec_version: order
 source: "https://dev.wildberries.ru/docs/openapi/orders-fbs"
 deprecated: false
-content_sha: fda5a34097d1a410
+content_sha: ed79a1538e184684
 ---
 
 # Получить настройки автовозврата товаров
@@ -42,13 +42,13 @@ content_sha: fda5a34097d1a410
 **200** — Успешно
 
 - `results` — array[object] **обязательный**
-  - `changeable` — boolean. - `true` — настройки автовозврата товара можно изменить
+  - `success` — boolean. - `true` — настройки автовозврата товара успешно получены
   - `chrtId` — integer **обязательный**. ID размера товара в системе WB
+  - `type` — string (auto, byWarehouse, byPickupPoint, byCourier). Куда будет возвращён товар: - `auto` — место возврата определяется автоматически - `byWarehouse` — на склад WB - `byPickupPoint` — на пункт выдачи заказов - `byCourier` — продавцу курьером. Всегда для товаров тех [предметов](/openapi/orders-fbs#tag/autoreturnSettings/operation/getMarketplaceV3FbsSettingsAutoreturnsSubcategoriesRestricted), которые автоматически возвращаются в ПВЗ
+  - `changeable` — boolean. - `true` — настройки автовозврата товара можно изменить
   - `error` — array[object]. Детали ошибки
     - `code` — integer **обязательный**. Код ошибки
     - `detail` — string **обязательный**. Дополнительная информация об ошибке
-  - `success` — boolean. - `true` — настройки автовозврата товара успешно получены
-  - `type` — string (auto, byWarehouse, byPickupPoint, byCourier). Куда будет возвращён товар: - `auto` — место возврата определяется автоматически - `byWarehouse` — на склад WB - `byPickupPoint` — на пункт выдачи заказов - `byCourier` — продавцу курьером. Всегда для товаров тех [предметов](/openapi/orders-fbs#tag/autoreturnSettings/operation/getMarketplaceV3FbsSettingsAutoreturnsSubcategoriesRestricted), которые автоматически возвращаются в ПВЗ
 
 **400** — Неправильный запрос
 
@@ -57,22 +57,22 @@ content_sha: fda5a34097d1a410
 
 **401** — Не авторизован
 
-- `code` — string. Внутренний код ошибки
+- `title` — string. Заголовок ошибки
 - `detail` — string. Детали ошибки
-- `origin` — string. ID внутреннего сервиса WB
+- `code` — string. Внутренний код ошибки
 - `requestId` — string. Уникальный ID запроса
+- `origin` — string. ID внутреннего сервиса WB
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
-- `title` — string. Заголовок ошибки
 
 **429** — Слишком много запросов
 
-- `code` — string. Внутренний код ошибки
+- `title` — string. Заголовок ошибки
 - `detail` — string. Детали ошибки
-- `origin` — string. ID внутреннего сервиса WB
+- `code` — string. Внутренний код ошибки
 - `requestId` — string. Уникальный ID запроса
+- `origin` — string. ID внутреннего сервиса WB
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
-- `title` — string. Заголовок ошибки

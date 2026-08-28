@@ -9,7 +9,7 @@ tags:
 spec_version: instorepickup
 source: "https://dev.wildberries.ru/docs/openapi/in-store-pickup"
 deprecated: false
-content_sha: f4c970f011006b38
+content_sha: 0bf6c562c74b09ef
 ---
 
 # Сообщить об отказе от заказов
@@ -42,11 +42,11 @@ content_sha: f4c970f011006b38
 
 - `requestId` — ? **обязательный**. Уникальный ID запроса
 - `results` — array[object] **обязательный**
+  - `orderId` — integer **обязательный**. ID сборочного задания
+  - `isError` — boolean **обязательный**. Есть ли ошибки
   - `errors` — array[object]. Детали ошибки
     - `code` — integer. Код ошибки: - `404` - `409` - `400`
     - `detail` — string. - `NotFound` — сборочное задание не найдено - `StatusMismatch` — операция невозможна для этого статуса сборочного задания - `ImeiIsNotFilled` — не заполнен IMEI - `OrderNotB2B` — операция доступна только для сборочных заданий с признаком B2B-продажи `"isB2b":true` - `InvalidOriginCountryCode` — некорректный код страны происхождения товара
-  - `isError` — boolean **обязательный**. Есть ли ошибки
-  - `orderId` — integer **обязательный**. ID сборочного задания
 
 **400** — Неправильный запрос
 
@@ -57,19 +57,19 @@ content_sha: f4c970f011006b38
 
 **401** — Не авторизован
 
-- `code` — string. Внутренний код ошибки
+- `title` — string. Заголовок ошибки
 - `detail` — string. Детали ошибки
-- `origin` — string. ID внутреннего сервиса WB
+- `code` — string. Внутренний код ошибки
 - `requestId` — string. Уникальный ID запроса
+- `origin` — string. ID внутреннего сервиса WB
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
-- `title` — string. Заголовок ошибки
 
 **402** — Требуется платёж
 
-- `detail` — string. Детали ошибки. Ошибка возвращается только сервисам из [Каталога решений для бизнеса](/business-solutions)
 - `title` — string. Заголовок ошибки
+- `detail` — string. Детали ошибки. Ошибка возвращается только сервисам из [Каталога решений для бизнеса](/business-solutions)
 
 **403** — Доступ запрещён
 
@@ -80,11 +80,11 @@ content_sha: f4c970f011006b38
 
 **429** — Слишком много запросов
 
-- `code` — string. Внутренний код ошибки
+- `title` — string. Заголовок ошибки
 - `detail` — string. Детали ошибки
-- `origin` — string. ID внутреннего сервиса WB
+- `code` — string. Внутренний код ошибки
 - `requestId` — string. Уникальный ID запроса
+- `origin` — string. ID внутреннего сервиса WB
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
-- `title` — string. Заголовок ошибки

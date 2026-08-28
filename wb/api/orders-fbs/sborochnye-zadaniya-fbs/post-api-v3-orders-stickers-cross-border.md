@@ -9,7 +9,7 @@ tags:
 spec_version: order
 source: "https://dev.wildberries.ru/docs/openapi/orders-fbs"
 deprecated: false
-content_sha: 56a8fadbaff7c04a
+content_sha: bbbbe9c3080d16a1
 ---
 
 # Получить стикеры сборочных заданий трансграничных поставок
@@ -51,49 +51,49 @@ content_sha: 56a8fadbaff7c04a
 **200** — Успешно
 
 - `stickers` — array[object]
-  - `barcode` — string. Закодированное значение стикера
-  - `file` — string<byte>. Стикер в формате PDF, кодировка base64
   - `orderId` — integer. ID сборочного задания
+  - `status` — string (awaitingTrackNumber, ready). Статус генерации стикера: - `awaitingTrackNumber` — стикер не готов. Ожидается трек-номер от перевозчика. - `ready` — стикер готов
   - `parcelId` — string. Трек-номер в стикере для отслеживания сборочного задания
+  - `file` — string<byte>. Стикер в формате PDF, кодировка base64
   - `partA` — string. Первая часть ID стикера для печати подписи
   - `partB` — string. Вторая часть ID стикера для печати подписи
-  - `status` — string (awaitingTrackNumber, ready). Статус генерации стикера: - `awaitingTrackNumber` — стикер не готов. Ожидается трек-номер от перевозчика. - `ready` — стикер готов
+  - `barcode` — string. Закодированное значение стикера
 
 **400** — Неправильный запрос
 
 - `code` — string. Код ошибки
-- `data` — object. Дополнительные данные ошибки
 - `message` — string. Описание ошибки
+- `data` — object. Дополнительные данные ошибки
 
 **401** — Не авторизован
 
-- `code` — string. Внутренний код ошибки
+- `title` — string. Заголовок ошибки
 - `detail` — string. Детали ошибки
-- `origin` — string. ID внутреннего сервиса WB
+- `code` — string. Внутренний код ошибки
 - `requestId` — string. Уникальный ID запроса
+- `origin` — string. ID внутреннего сервиса WB
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
-- `title` — string. Заголовок ошибки
 
 **402** — Требуется платёж
 
-- `detail` — string. Детали ошибки. Ошибка возвращается только сервисам из [Каталога решений для бизнеса](/business-solutions)
 - `title` — string. Заголовок ошибки
+- `detail` — string. Детали ошибки. Ошибка возвращается только сервисам из [Каталога решений для бизнеса](/business-solutions)
 
 **403** — Доступ запрещён
 
 - `code` — string. Код ошибки
-- `data` — object. Дополнительные данные ошибки
 - `message` — string. Описание ошибки
+- `data` — object. Дополнительные данные ошибки
 
 **429** — Слишком много запросов
 
-- `code` — string. Внутренний код ошибки
+- `title` — string. Заголовок ошибки
 - `detail` — string. Детали ошибки
-- `origin` — string. ID внутреннего сервиса WB
+- `code` — string. Внутренний код ошибки
 - `requestId` — string. Уникальный ID запроса
+- `origin` — string. ID внутреннего сервиса WB
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
-- `title` — string. Заголовок ошибки

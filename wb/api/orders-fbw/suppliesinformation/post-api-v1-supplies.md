@@ -9,7 +9,7 @@ tags:
 spec_version: ordersfbw
 source: "https://dev.wildberries.ru/docs/openapi/orders-fbw"
 deprecated: false
-content_sha: a35ea84fc2379529
+content_sha: 446f058706e49f1a
 ---
 
 # Список поставок
@@ -50,48 +50,48 @@ content_sha: a35ea84fc2379529
 
 **200** — Успешно
 
-- `boxTypeID` — ?. ID типа поставки: - `0` — Без коробов (виртуальная поставка) - `1` и `2` — Короба - `5` — Монопаллеты - `6` — Суперсейф
-- `createDate` — string. Дата и время создания поставки
-- `factDate` — string. Дата фактической отгрузки поставки
-- `isBoxOnPallet` — boolean. Тип поставки — **Поштучная палета**: - `true` — да - `false` — нет Поле возвращается только при `"boxTypeID": 2`
 - `phone` — string. Телефон пользователя, создавшего поставку
-- `preorderID` — integer. ID заказа (незапланированная поставка). Для всех виртуальных поставок будет `0`
-- `statusID` — integer (1, 2, 3, 4, 5, 6). ID статуса поставки: - `1` — Не запланировано - `2` — Запланировано - `3` — Отгрузка разрешена - `4` — Идёт приёмка - `5` — Принято - `6` — Отгружено на воротах
-- `supplyDate` — string. Плановая дата отгрузки поставки
 - `supplyID` — integer. ID поставки. Если `null`, это заказ, тогда используйте значение поля `preorderID`
+- `preorderID` — integer. ID заказа (незапланированная поставка). Для всех виртуальных поставок будет `0`
+- `createDate` — string. Дата и время создания поставки
+- `supplyDate` — string. Плановая дата отгрузки поставки
+- `factDate` — string. Дата фактической отгрузки поставки
 - `updatedDate` — string. Дата изменения поставки
+- `statusID` — integer (1, 2, 3, 4, 5, 6). ID статуса поставки: - `1` — Не запланировано - `2` — Запланировано - `3` — Отгрузка разрешена - `4` — Идёт приёмка - `5` — Принято - `6` — Отгружено на воротах
+- `boxTypeID` — ?. ID типа поставки: - `0` — Без коробов (виртуальная поставка) - `1` и `2` — Короба - `5` — Монопаллеты - `6` — Суперсейф
+- `isBoxOnPallet` — boolean. Тип поставки — **Поштучная палета**: - `true` — да - `false` — нет Поле возвращается только при `"boxTypeID": 2`
 
 **400** — Неправильный запрос
 
-- `detail` — string. Описание ошибки
-- `origin` — string. Сервис, вернувший ошибку
-- `requestId` — string. ID запроса
 - `status` — integer. HTTP статус-код
 - `title` — string. ID ошибки
+- `detail` — string. Описание ошибки
+- `requestId` — string. ID запроса
+- `origin` — string. Сервис, вернувший ошибку
 
 **401** — Не авторизован
 
-- `code` — string. Внутренний код ошибки
+- `title` — string. Заголовок ошибки
 - `detail` — string. Детали ошибки
-- `origin` — string. ID внутреннего сервиса WB
+- `code` — string. Внутренний код ошибки
 - `requestId` — string. Уникальный ID запроса
+- `origin` — string. ID внутреннего сервиса WB
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
-- `title` — string. Заголовок ошибки
 
 **402** — Требуется платёж
 
-- `detail` — string. Детали ошибки. Ошибка возвращается только сервисам из [Каталога решений для бизнеса](/business-solutions)
 - `title` — string. Заголовок ошибки
+- `detail` — string. Детали ошибки. Ошибка возвращается только сервисам из [Каталога решений для бизнеса](/business-solutions)
 
 **429** — Слишком много запросов
 
-- `code` — string. Внутренний код ошибки
+- `title` — string. Заголовок ошибки
 - `detail` — string. Детали ошибки
-- `origin` — string. ID внутреннего сервиса WB
+- `code` — string. Внутренний код ошибки
 - `requestId` — string. Уникальный ID запроса
+- `origin` — string. ID внутреннего сервиса WB
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
-- `title` — string. Заголовок ошибки

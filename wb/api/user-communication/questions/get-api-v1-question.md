@@ -9,7 +9,7 @@ tags:
 spec_version: communication
 source: "https://dev.wildberries.ru/docs/openapi/user-communication"
 deprecated: false
-content_sha: a2ec9f82c7c7324c
+content_sha: 388e1a3688557970
 ---
 
 # Получить вопрос по ID
@@ -39,67 +39,67 @@ content_sha: a2ec9f82c7c7324c
 
 **200** — Успешно
 
-- `additionalErrors` — array[string]. Дополнительные ошибки
 - `data` — object
-  - `answer` — object. Ответ
-    - `createDate` — string<date-time>. Дата и время создания ответа
-    - `editable` — boolean. Можно ли отредактировать ответ (`false` - нельзя, `true` - можно)
-    - `text` — string. Текст ответа
-  - `createdDate` — string<date-time>. Дата и время создания вопроса
   - `id` — string. ID вопроса
-  - `isWarned` — boolean. Признак подозрительного вопроса. Если `true`, то вопрос опубликован, но на портале продавцов вы увидите баннер **Сообщение подозрительное**
+  - `text` — string. Текст вопроса
+  - `createdDate` — string<date-time>. Дата и время создания вопроса
+  - `state` — string. Статус вопроса: - `none` - вопрос отклонён продавцом (такой вопрос не отображается на портале покупателей) - `wbRu` - ответ предоставлен, вопрос отображается на сайте покупателей - `suppliersPortalSynch` - новый вопрос
+  - `answer` — object. Ответ
+    - `text` — string. Текст ответа
+    - `editable` — boolean. Можно ли отредактировать ответ (`false` - нельзя, `true` - можно)
+    - `createDate` — string<date-time>. Дата и время создания ответа
   - `productDetails` — object. Item information
-    - `brandName` — string. Название бренда
-    - `imtId` — integer. ID для [объединённых](/knowledge-base/articles/019d49a4-1320-71bb-9dac-8ba07e7177ce/rabota-s-tovarami#obuedinenie-i-razuedinenie-kartochek-tovarov) карточек товаров
     - `nmId` — integer. Артикул WB
+    - `imtId` — integer. ID для [объединённых](/knowledge-base/articles/019d49a4-1320-71bb-9dac-8ba07e7177ce/rabota-s-tovarami#obuedinenie-i-razuedinenie-kartochek-tovarov) карточек товаров
     - `productName` — string. Название товара
     - `supplierArticle` — string. Артикул продавца
     - `supplierName` — string. Имя продавца
-  - `state` — string. Статус вопроса: - `none` - вопрос отклонён продавцом (такой вопрос не отображается на портале покупателей) - `wbRu` - ответ предоставлен, вопрос отображается на сайте покупателей - `suppliersPortalSynch` - новый вопрос
-  - `text` — string. Текст вопроса
+    - `brandName` — string. Название бренда
   - `wasViewed` — boolean. Просмотрен ли вопрос
+  - `isWarned` — boolean. Признак подозрительного вопроса. Если `true`, то вопрос опубликован, но на портале продавцов вы увидите баннер **Сообщение подозрительное**
 - `error` — boolean. Есть ли ошибка
 - `errorText` — string. Описание ошибки
+- `additionalErrors` — array[string]. Дополнительные ошибки
 
 **401** — Не авторизован
 
-- `code` — string. Внутренний код ошибки
+- `title` — string. Заголовок ошибки
 - `detail` — string. Детали ошибки
-- `origin` — string. ID внутреннего сервиса WB
+- `code` — string. Внутренний код ошибки
 - `requestId` — string. Уникальный ID запроса
+- `origin` — string. ID внутреннего сервиса WB
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
-- `title` — string. Заголовок ошибки
 
 **402** — Требуется платёж
 
-- `detail` — string. Детали ошибки. Ошибка возвращается только сервисам из [Каталога решений для бизнеса](/business-solutions)
 - `title` — string. Заголовок ошибки
+- `detail` — string. Детали ошибки. Ошибка возвращается только сервисам из [Каталога решений для бизнеса](/business-solutions)
 
 **403** — Доступ запрещён
 
-- `additionalErrors` — array[string]. Дополнительные ошибки
 - `data` — object
 - `error` — boolean. Есть ли ошибка
 - `errorText` — string. Описание ошибки
+- `additionalErrors` — array[string]. Дополнительные ошибки
 - `requestId` — string
 
 **422** — Ошибка обработки параметров запроса
 
-- `additionalErrors` — array[string]. Дополнительные ошибки
 - `data` — object
 - `error` — boolean. Есть ли ошибка
 - `errorText` — string. Описание ошибки
+- `additionalErrors` — array[string]. Дополнительные ошибки
 - `requestId` — string
 
 **429** — Слишком много запросов
 
-- `code` — string. Внутренний код ошибки
+- `title` — string. Заголовок ошибки
 - `detail` — string. Детали ошибки
-- `origin` — string. ID внутреннего сервиса WB
+- `code` — string. Внутренний код ошибки
 - `requestId` — string. Уникальный ID запроса
+- `origin` — string. ID внутреннего сервиса WB
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
-- `title` — string. Заголовок ошибки

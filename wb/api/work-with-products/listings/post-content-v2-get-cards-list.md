@@ -9,7 +9,7 @@ tags:
 spec_version: items
 source: "https://dev.wildberries.ru/docs/openapi/work-with-products"
 deprecated: false
-content_sha: 481a7ff01eea8c79
+content_sha: 87bc414b8118f621
 ---
 
 # Список карточек товаров
@@ -66,110 +66,110 @@ content_sha: 481a7ff01eea8c79
 **Тело запроса** (`application/json`):
 
 - `settings` — object. Настройки
-  - `cursor` — object. Курсор
-    - `limit` — integer. Сколько карточек товаров выдать в ответе По умолчанию: `10`.
-    - `nmID` — integer. Артикул WB, с которого надо запрашивать следующий список карточек товаров
-    - `updatedAt` — string. Дата и время изменения
-  - `filter` — object. Параметры фильтрации
-    - `allowedCategoriesOnly` — boolean. Фильтр по категории: - `true` — только разрешённые - `false` — все Не используется в песочнице
-    - `brands` — array[string]. Поиск по брендам
-    - `imtID` — integer<int64>. Поиск по [ID для объединённых карточек товаров](/knowledge-base/articles/019d49a4-1320-71bb-9dac-8ba07e7177ce/rabota-s-tovarami#obuedinenie-i-razuedinenie-kartochek-tovarov)
-    - `objectIDs` — array[integer]. Поиск по ID предметов
-    - `tagIDs` — array[integer]. Поиск по ID ярлыков
-    - `textSearch` — string. Поиск по артикулу продавца, артикулу WB, баркоду
-    - `withPhoto` — integer (-1, 0, 1, 2). Фильтр по фото: * `-1` — любые карточки товаров * `0` — только карточки без фото. С [16 июня](/release-notes?id=531) — любые карточки товаров * `1` — только карточки с фото * `2` — только карточки без фото. С [16 июня](/release-notes?id=531) По умолчанию: `0`.
   - `sort` — object. Параметр сортировки
     - `ascending` — boolean. Сортировать по полю `updatedAt`: - `false` — по убыванию - `true` — по возрастанию По умолчанию: `False`.
+  - `filter` — object. Параметры фильтрации
+    - `withPhoto` — integer (-1, 0, 1, 2). Фильтр по фото: * `-1` — любые карточки товаров * `0` — только карточки без фото. С [16 июня](/release-notes?id=531) — любые карточки товаров * `1` — только карточки с фото * `2` — только карточки без фото. С [16 июня](/release-notes?id=531) По умолчанию: `0`.
+    - `textSearch` — string. Поиск по артикулу продавца, артикулу WB, баркоду
+    - `tagIDs` — array[integer]. Поиск по ID ярлыков
+    - `allowedCategoriesOnly` — boolean. Фильтр по категории: - `true` — только разрешённые - `false` — все Не используется в песочнице
+    - `objectIDs` — array[integer]. Поиск по ID предметов
+    - `brands` — array[string]. Поиск по брендам
+    - `imtID` — integer<int64>. Поиск по [ID для объединённых карточек товаров](/knowledge-base/articles/019d49a4-1320-71bb-9dac-8ba07e7177ce/rabota-s-tovarami#obuedinenie-i-razuedinenie-kartochek-tovarov)
+  - `cursor` — object. Курсор
+    - `limit` — integer. Сколько карточек товаров выдать в ответе По умолчанию: `10`.
+    - `updatedAt` — string. Дата и время изменения
+    - `nmID` — integer. Артикул WB, с которого надо запрашивать следующий список карточек товаров
 
 ## Ответы
 
 **200** — Успешно
 
 - `cards` — array[object]. Список карточек товаров
-  - `brand` — string. Бренд
-  - `characteristics` — array[object]. Характеристики
-    - `id` — integer. ID характеристики
-    - `name` — string. Название характеристики
-    - `value` — ?. Значение характеристики. Тип значения зависит от типа характеристики
-  - `createdAt` — string. Дата и время создания
-  - `description` — string. Описание товара
-  - `dimensions` — object. Габариты и вес товара c упаковкой, см и кг
-    - `height` — integer. Высота, см
-    - `isValid` — boolean. Потенциальная некорректность габаритов товара: - `true` — не выявлена. `"isValid":true` не гарантирует, что размеры указаны корректно. В отдельных случаях (например, при создании новой категории товаров) `"isValid":true` будет возвращаться при любых значениях, кроме нулевых. - `false` — указанные габариты значительно отличаются от средних по категории (предмету). Рекомендуется перепроверить, правильно ли указаны размеры товара в упаковке в `сантиметрах`. Функциональность карточки товара, в том числе начисление логистики и хранения, при этом ограничена не будет. Логистика и хранение продолжают начисляться — по текущим габаритам. Также `"isValid":false` возвращается при отсутствии значений или нулевом значении любой стороны.
-    - `length` — integer. Длина, см
-    - `weightBrutto` — number. Вес, кг Количество знаков после запятой <=3
-    - `width` — integer. Ширина, см
-  - `imtID` — integer<int64>. ID для [объединённых](/knowledge-base/articles/019d49a4-1320-71bb-9dac-8ba07e7177ce/rabota-s-tovarami#obuedinenie-i-razuedinenie-kartochek-tovarov) карточек товаров. Един для всех артикулов WB группы объединённых карточек. У каждой карточки товара есть `imtID`, даже если она не объединена с другими карточками
-  - `kizMarked` — boolean. Есть ли подтверждение от продавца, что обязательный код маркировки [Честного знака](https://честныйзнак.рф/) нанесён на товар: - `true` — да - `false` — нет Является ли код маркировки [Честного знака](https://честныйзнак.рф/) обязательным, указано в поле `needKiz` По умолчанию: `False`.
-  - `needKiz` — boolean. Требуется ли код маркировки [Честного знака](https://честныйзнак.рф/) для этого товара: - `false` — не требуется - `true` — требуется
   - `nmID` — integer. Артикул WB
+  - `imtID` — integer<int64>. ID для [объединённых](/knowledge-base/articles/019d49a4-1320-71bb-9dac-8ba07e7177ce/rabota-s-tovarami#obuedinenie-i-razuedinenie-kartochek-tovarov) карточек товаров. Един для всех артикулов WB группы объединённых карточек. У каждой карточки товара есть `imtID`, даже если она не объединена с другими карточками
   - `nmUUID` — string<UUID>. Внутренний технический ID карточки товара
+  - `subjectID` — integer. ID предмета
+  - `subjectName` — string. Название предмета
+  - `vendorCode` — string. Артикул продавца
+  - `brand` — string. Бренд
+  - `title` — string. Наименование товара
+  - `description` — string. Описание товара
+  - `needKiz` — boolean. Требуется ли код маркировки [Честного знака](https://честныйзнак.рф/) для этого товара: - `false` — не требуется - `true` — требуется
+  - `kizMarked` — boolean. Есть ли подтверждение от продавца, что обязательный код маркировки [Честного знака](https://честныйзнак.рф/) нанесён на товар: - `true` — да - `false` — нет Является ли код маркировки [Честного знака](https://честныйзнак.рф/) обязательным, указано в поле `needKiz` По умолчанию: `False`.
   - `photos` — array[object]. Массив фото
     - `big` — string. URL фото `900x1200`
     - `c246x328` — string. URL фото `248x328`
     - `c516x688` — string. URL фото `516x688`
     - `square` — string. URL фото `600x600`
     - `tm` — string. URL фото `75x100`
-  - `sizes` — array[object]. Размеры товара
-    - `chrtID` — integer. Числовой ID размера для данного артикула WB
-    - `skus` — array[string]. Баркод товара
-    - `techSize` — string. Размер товара (А, XXL, 57 и др.)
-    - `wbSize` — string. Российский размер товара
-  - `subjectID` — integer. ID предмета
-  - `subjectName` — string. Название предмета
-  - `tags` — array[object]. Ярлыки
-    - `color` — string. Цвет ярлыка. Доступные цвета: - `D1CFD7` — серый - `FEE0E0` — красный - `ECDAFF` — фиолетовый - `E4EAFF` — синий - `DEF1DD` — зеленый - `FFECC7` — желтый
-    - `id` — integer. ID ярлыка
-    - `name` — string. Название ярлыка
-  - `title` — string. Наименование товара
-  - `updatedAt` — string. Дата и время изменения
-  - `vendorCode` — string. Артикул продавца
   - `video` — string. URL видео
   - `wholesale` — object. Оптовая продажа
     - `enabled` — boolean. Предназначена ли карточка товара для оптовой продажи
     - `quantum` — number<uint64>. Количество единиц товара в упаковке
+  - `dimensions` — object. Габариты и вес товара c упаковкой, см и кг
+    - `length` — integer. Длина, см
+    - `width` — integer. Ширина, см
+    - `height` — integer. Высота, см
+    - `weightBrutto` — number. Вес, кг Количество знаков после запятой <=3
+    - `isValid` — boolean. Потенциальная некорректность габаритов товара: - `true` — не выявлена. `"isValid":true` не гарантирует, что размеры указаны корректно. В отдельных случаях (например, при создании новой категории товаров) `"isValid":true` будет возвращаться при любых значениях, кроме нулевых. - `false` — указанные габариты значительно отличаются от средних по категории (предмету). Рекомендуется перепроверить, правильно ли указаны размеры товара в упаковке в `сантиметрах`. Функциональность карточки товара, в том числе начисление логистики и хранения, при этом ограничена не будет. Логистика и хранение продолжают начисляться — по текущим габаритам. Также `"isValid":false` возвращается при отсутствии значений или нулевом значении любой стороны.
+  - `characteristics` — array[object]. Характеристики
+    - `id` — integer. ID характеристики
+    - `name` — string. Название характеристики
+    - `value` — ?. Значение характеристики. Тип значения зависит от типа характеристики
+  - `sizes` — array[object]. Размеры товара
+    - `chrtID` — integer. Числовой ID размера для данного артикула WB
+    - `techSize` — string. Размер товара (А, XXL, 57 и др.)
+    - `wbSize` — string. Российский размер товара
+    - `skus` — array[string]. Баркод товара
+  - `tags` — array[object]. Ярлыки
+    - `id` — integer. ID ярлыка
+    - `name` — string. Название ярлыка
+    - `color` — string. Цвет ярлыка. Доступные цвета: - `D1CFD7` — серый - `FEE0E0` — красный - `ECDAFF` — фиолетовый - `E4EAFF` — синий - `DEF1DD` — зеленый - `FFECC7` — желтый
+  - `createdAt` — string. Дата и время создания
+  - `updatedAt` — string. Дата и время изменения
 - `cursor` — object. Пагинатор
+  - `updatedAt` — string. Дата и время, с которых надо запрашивать следующий список карточек товаров
   - `nmID` — integer. Артикул WB, с которого надо запрашивать следующий список карточек товаров
   - `total` — integer. Количество возвращённых карточек товаров
-  - `updatedAt` — string. Дата и время, с которых надо запрашивать следующий список карточек товаров
 
 **400** — Неправильный запрос
 
-- `additionalErrors` — object. Дополнительные ошибки
 - `data` — object. Данные ошибки
 - `error` — boolean. Флаг ошибки
 - `errorText` — string. Текст ошибки
+- `additionalErrors` — object. Дополнительные ошибки
 
 **401** — Не авторизован
 
-- `code` — string. Внутренний код ошибки
+- `title` — string. Заголовок ошибки
 - `detail` — string. Детали ошибки
-- `origin` — string. ID внутреннего сервиса WB
+- `code` — string. Внутренний код ошибки
 - `requestId` — string. Уникальный ID запроса
+- `origin` — string. ID внутреннего сервиса WB
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
-- `title` — string. Заголовок ошибки
 
 **402** — Требуется платёж
 
-- `detail` — string. Детали ошибки. Ошибка возвращается только сервисам из [Каталога решений для бизнеса](/business-solutions)
 - `title` — string. Заголовок ошибки
+- `detail` — string. Детали ошибки. Ошибка возвращается только сервисам из [Каталога решений для бизнеса](/business-solutions)
 
 **403** — Доступ запрещён
 
-- `additionalErrors` — string. Дополнительные ошибки
 - `data` — object. Данные ошибки
 - `error` — boolean. Флаг ошибки
 - `errorText` — string. Текст ошибки
+- `additionalErrors` — string. Дополнительные ошибки
 
 **429** — Слишком много запросов
 
-- `code` — string. Внутренний код ошибки
+- `title` — string. Заголовок ошибки
 - `detail` — string. Детали ошибки
-- `origin` — string. ID внутреннего сервиса WB
+- `code` — string. Внутренний код ошибки
 - `requestId` — string. Уникальный ID запроса
+- `origin` — string. ID внутреннего сервиса WB
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
-- `title` — string. Заголовок ошибки

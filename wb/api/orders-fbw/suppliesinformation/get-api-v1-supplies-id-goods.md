@@ -9,7 +9,7 @@ tags:
 spec_version: ordersfbw
 source: "https://dev.wildberries.ru/docs/openapi/orders-fbw"
 deprecated: false
-content_sha: edd8079214e36420
+content_sha: 9a88d98b2ad2b7de
 ---
 
 # Товары поставки{{ /api/v1/supplies/{ID}/goods }}
@@ -42,50 +42,50 @@ content_sha: edd8079214e36420
 
 **200** — Успешно
 
-- `acceptedQuantity` — integer. Принято, шт
 - `barcode` — string. Баркод товара
-- `color` — string. Цвет товара
-- `needKiz` — boolean. Нужен ли [код маркировки Честного знака](https://честныйзнак.рф/) для этого товара: - `false` — не нужен - `true` — нужен
+- `vendorCode` — string. Артикул продавца
 - `nmID` — integer. Артикул WB
+- `needKiz` — boolean. Нужен ли [код маркировки Честного знака](https://честныйзнак.рф/) для этого товара: - `false` — не нужен - `true` — нужен
+- `tnved` — string. Код ТНВЭД. Если `"needKiz":true`, а `"tnved":null`, нужно заполнить характеристику товара **ТН ВЭД** в [личном кабинете](https://seller.wildberries.ru/new-goods) или по [API](./work-with-products#tag/listings/paths/~1content~1v2~1cards~1update/post)
+- `techSize` — string. Размер товара, указанный продавцом
+- `color` — string. Цвет товара
+- `supplierBoxAmount` — integer. Указано в упаковке, шт
 - `quantity` — integer. Указано в поставке/заказе, шт
 - `readyForSaleQuantity` — integer. Поступило в продажу, шт
-- `supplierBoxAmount` — integer. Указано в упаковке, шт
-- `techSize` — string. Размер товара, указанный продавцом
-- `tnved` — string. Код ТНВЭД. Если `"needKiz":true`, а `"tnved":null`, нужно заполнить характеристику товара **ТН ВЭД** в [личном кабинете](https://seller.wildberries.ru/new-goods) или по [API](./work-with-products#tag/listings/paths/~1content~1v2~1cards~1update/post)
+- `acceptedQuantity` — integer. Принято, шт
 - `unloadingQuantity` — integer. Количество товара на раскладке, шт
-- `vendorCode` — string. Артикул продавца
 
 **400** — Неправильный запрос
 
-- `detail` — string. Описание ошибки
-- `origin` — string. Сервис, вернувший ошибку
-- `requestId` — string. ID запроса
 - `status` — integer. HTTP статус-код
 - `title` — string. ID ошибки
+- `detail` — string. Описание ошибки
+- `requestId` — string. ID запроса
+- `origin` — string. Сервис, вернувший ошибку
 
 **401** — Не авторизован
 
-- `code` — string. Внутренний код ошибки
+- `title` — string. Заголовок ошибки
 - `detail` — string. Детали ошибки
-- `origin` — string. ID внутреннего сервиса WB
+- `code` — string. Внутренний код ошибки
 - `requestId` — string. Уникальный ID запроса
+- `origin` — string. ID внутреннего сервиса WB
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
-- `title` — string. Заголовок ошибки
 
 **402** — Требуется платёж
 
-- `detail` — string. Детали ошибки. Ошибка возвращается только сервисам из [Каталога решений для бизнеса](/business-solutions)
 - `title` — string. Заголовок ошибки
+- `detail` — string. Детали ошибки. Ошибка возвращается только сервисам из [Каталога решений для бизнеса](/business-solutions)
 
 **429** — Слишком много запросов
 
-- `code` — string. Внутренний код ошибки
+- `title` — string. Заголовок ошибки
 - `detail` — string. Детали ошибки
-- `origin` — string. ID внутреннего сервиса WB
+- `code` — string. Внутренний код ошибки
 - `requestId` — string. Уникальный ID запроса
+- `origin` — string. ID внутреннего сервиса WB
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
-- `title` — string. Заголовок ошибки

@@ -9,7 +9,7 @@ tags:
 spec_version: items
 source: "https://dev.wildberries.ru/docs/openapi/work-with-products"
 deprecated: false
-content_sha: 01eacc566d031fac
+content_sha: 1c5ea2e8e17057cf
 ---
 
 # Бренды
@@ -49,44 +49,44 @@ content_sha: 01eacc566d031fac
 
 **400** — Неправильный запрос
 
+- `title` — string **обязательный**. Заголовок ошибки
 - `detail` — string **обязательный**. Детали ошибки
-- `errors` — array[object]
-  - `location` — string. Параметр, где произошла ошибка
-  - `message` — string. Текст ошибки
-  - `value` — ?. Значение параметра, где произошла ошибка
 - `origin` — string **обязательный**. ID внутреннего сервиса WB
 - `requestId` — string **обязательный**. Уникальный ID запроса
-- `title` — string **обязательный**. Заголовок ошибки
+- `errors` — array[object]
+  - `message` — string. Текст ошибки
+  - `location` — string. Параметр, где произошла ошибка
+  - `value` — ?. Значение параметра, где произошла ошибка
 
 **401** — Не авторизован
 
-- `code` — string. Внутренний код ошибки
+- `title` — string. Заголовок ошибки
 - `detail` — string. Детали ошибки
-- `origin` — string. ID внутреннего сервиса WB
+- `code` — string. Внутренний код ошибки
 - `requestId` — string. Уникальный ID запроса
+- `origin` — string. ID внутреннего сервиса WB
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
-- `title` — string. Заголовок ошибки
 
 **404** — Не найдено
 
+- `title` — string **обязательный**. Заголовок ошибки
 - `detail` — string **обязательный**. Детали ошибки
-- `errors` — array[object]
-  - `location` — string. Параметр, где произошла ошибка
-  - `message` — string. Текст ошибки
-  - `value` — ?. Значение параметра, где произошла ошибка
 - `origin` — string **обязательный**. ID внутреннего сервиса WB
 - `requestId` — string **обязательный**. Уникальный ID запроса
-- `title` — string **обязательный**. Заголовок ошибки
+- `errors` — array[object]
+  - `message` — string. Текст ошибки
+  - `location` — string. Параметр, где произошла ошибка
+  - `value` — ?. Значение параметра, где произошла ошибка
 
 **429** — Слишком много запросов
 
-- `code` — string. Внутренний код ошибки
+- `title` — string. Заголовок ошибки
 - `detail` — string. Детали ошибки
-- `origin` — string. ID внутреннего сервиса WB
+- `code` — string. Внутренний код ошибки
 - `requestId` — string. Уникальный ID запроса
+- `origin` — string. ID внутреннего сервиса WB
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
-- `title` — string. Заголовок ошибки

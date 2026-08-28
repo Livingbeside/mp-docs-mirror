@@ -9,7 +9,7 @@ tags:
 spec_version: general
 source: "https://dev.wildberries.ru/docs/openapi/api-information"
 deprecated: false
-content_sha: 7f21bd269c52b7cb
+content_sha: da8e2ed3c1cc2863
 ---
 
 # Получить информацию о подписке Джем
@@ -45,46 +45,46 @@ content_sha: 7f21bd269c52b7cb
 
 **200** — Успешно
 
+- `state` — string (active, inactive) **обязательный**. Статус подписки: - `active` — активна - `inactive` — истекла или отменена
 - `activationSource` — string (constructor, jam) **обязательный**. Источник подключения подписки: - `constructor` — покупка через раздел **Конструктор тарифов** - `jam` — покупка через раздел **Подписка «Джем»**
 - `level` — string (standard, advanced, premium) **обязательный**. Уровень подписки: - `standard` - `advanced` - `premium`
 - `since` — string<date-time> **обязательный**. Дата и время первой активации подписки. Не меняется при продлении или повторной активации
-- `state` — string (active, inactive) **обязательный**. Статус подписки: - `active` — активна - `inactive` — истекла или отменена
 - `till` — string<date-time> **обязательный**. Дата и время окончания подписки
 
 **401** — Не авторизован
 
-- `code` — string. Внутренний код ошибки
+- `title` — string. Заголовок ошибки
 - `detail` — string. Детали ошибки
-- `origin` — string. ID внутреннего сервиса WB
+- `code` — string. Внутренний код ошибки
 - `requestId` — string. Уникальный ID запроса
+- `origin` — string. ID внутреннего сервиса WB
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
-- `title` — string. Заголовок ошибки
 
 **402** — Требуется платёж
 
-- `detail` — string. Детали ошибки. Ошибка возвращается только сервисам из [Каталога решений для бизнеса](/business-solutions)
 - `title` — string. Заголовок ошибки
+- `detail` — string. Детали ошибки. Ошибка возвращается только сервисам из [Каталога решений для бизнеса](/business-solutions)
 
 **403** — Доступ запрещён
 
-- `code` — string. Внутренний код ошибки
+- `title` — string. Заголовок ошибки
 - `detail` — string. Детали ошибки
-- `origin` — string. ID внутреннего сервиса WB
+- `code` — string. Внутренний код ошибки
 - `requestId` — string. ID запроса
+- `origin` — string. ID внутреннего сервиса WB
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
-- `title` — string. Заголовок ошибки
 
 **429** — Слишком много запросов
 
-- `code` — string. Внутренний код ошибки
+- `title` — string. Заголовок ошибки
 - `detail` — string. Детали ошибки
-- `origin` — string. ID внутреннего сервиса WB
+- `code` — string. Внутренний код ошибки
 - `requestId` — string. Уникальный ID запроса
+- `origin` — string. ID внутреннего сервиса WB
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
-- `title` — string. Заголовок ошибки

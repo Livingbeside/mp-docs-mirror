@@ -9,7 +9,7 @@ tags:
 spec_version: items
 source: "https://dev.wildberries.ru/docs/openapi/work-with-products"
 deprecated: false
-content_sha: 8d3499cf96abbbf5
+content_sha: e6fbd896b1707827
 ---
 
 # Детализация необработанной загрузки
@@ -46,18 +46,18 @@ content_sha: 8d3499cf96abbbf5
 **200** — Успешно
 
 - `data` — object. Данные ответа
+  - `uploadID` — integer. ID загрузки
   - `bufferGoods` — array[object]. Информация о товарах в загрузке
-    - `clubDiscount` — integer. Скидка WB Клуба, %
+    - `nmID` — integer. Артикул WB
+    - `vendorCode` — string. Артикул продавца
+    - `sizeID` — integer. ID размера. В методах Контента это поле `chrtID`
+    - `techSizeName` — string. Размер
+    - `price` — integer. Цена
     - `currencyIsoCode4217` — string. Валюта, по стандарту ISO 4217
     - `discount` — integer. Скидка, %
-    - `errorText` — string. Текст ошибки
-    - `nmID` — integer. Артикул WB
-    - `price` — integer. Цена
-    - `sizeID` — integer. ID размера. В методах Контента это поле `chrtID`
+    - `clubDiscount` — integer. Скидка WB Клуба, %
     - `status` — integer. Статус товара: `1` — в обработке
-    - `techSizeName` — string. Размер
-    - `vendorCode` — string. Артикул продавца
-  - `uploadID` — integer. ID загрузки
+    - `errorText` — string. Текст ошибки
 - `error` — boolean. Флаг ошибки
 - `errorText` — string. Текст ошибки
 
@@ -69,14 +69,14 @@ content_sha: 8d3499cf96abbbf5
 
 **401** — Не авторизован
 
-- `code` — string. Внутренний код ошибки
+- `title` — string. Заголовок ошибки
 - `detail` — string. Детали ошибки
-- `origin` — string. ID внутреннего сервиса WB
+- `code` — string. Внутренний код ошибки
 - `requestId` — string. Уникальный ID запроса
+- `origin` — string. ID внутреннего сервиса WB
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
-- `title` — string. Заголовок ошибки
 
 **403** — Доступ запрещён
 
@@ -86,11 +86,11 @@ content_sha: 8d3499cf96abbbf5
 
 **429** — Слишком много запросов
 
-- `code` — string. Внутренний код ошибки
+- `title` — string. Заголовок ошибки
 - `detail` — string. Детали ошибки
-- `origin` — string. ID внутреннего сервиса WB
+- `code` — string. Внутренний код ошибки
 - `requestId` — string. Уникальный ID запроса
+- `origin` — string. ID внутреннего сервиса WB
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
-- `title` — string. Заголовок ошибки

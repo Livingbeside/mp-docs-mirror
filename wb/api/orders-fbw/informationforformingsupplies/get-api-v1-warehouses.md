@@ -9,7 +9,7 @@ tags:
 spec_version: ordersfbw
 source: "https://dev.wildberries.ru/docs/openapi/orders-fbw"
 deprecated: false
-content_sha: 960abc5e882ede56
+content_sha: 6890027d40c82ff3
 ---
 
 # Список складов
@@ -36,22 +36,22 @@ content_sha: 960abc5e882ede56
 **200** — Успешно
 
 - `ID` — integer. ID склада
+- `name` — string. Название склада
 - `address` — string. Адрес склада
+- `workTime` — string. Режим работы склада
 - `isActive` — boolean. Доступен ли в качестве склада назначения: - `true` — да - `false` — нет
 - `isTransitActive` — boolean. Доступен ли в качестве транзитного склада: - `true` — да - `false` — нет
-- `name` — string. Название склада
-- `workTime` — string. Режим работы склада
 
 **401** — Не авторизован
 
-- `code` — string. Внутренний код ошибки
+- `title` — string. Заголовок ошибки
 - `detail` — string. Детали ошибки
-- `origin` — string. ID внутреннего сервиса WB
+- `code` — string. Внутренний код ошибки
 - `requestId` — string. Уникальный ID запроса
+- `origin` — string. ID внутреннего сервиса WB
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
-- `title` — string. Заголовок ошибки
 
 **403** — Доступ запрещён
 
@@ -59,11 +59,11 @@ content_sha: 960abc5e882ede56
 
 **429** — Слишком много запросов
 
-- `code` — string. Внутренний код ошибки
+- `title` — string. Заголовок ошибки
 - `detail` — string. Детали ошибки
-- `origin` — string. ID внутреннего сервиса WB
+- `code` — string. Внутренний код ошибки
 - `requestId` — string. Уникальный ID запроса
+- `origin` — string. ID внутреннего сервиса WB
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
-- `title` — string. Заголовок ошибки

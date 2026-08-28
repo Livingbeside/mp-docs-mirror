@@ -9,7 +9,7 @@ tags:
 spec_version: instorepickup
 source: "https://dev.wildberries.ru/docs/openapi/in-store-pickup"
 deprecated: false
-content_sha: bfb90b83f8f1fb2e
+content_sha: 31a4550fd867a1f8
 ---
 
 # Сообщить, что сборочные задания готовы к выдаче
@@ -42,15 +42,15 @@ content_sha: bfb90b83f8f1fb2e
 
 - `requestId` — ? **обязательный**. Уникальный ID запроса
 - `results` — ? **обязательный**
+  - `orderId` — integer **обязательный**. ID сборочного задания
+  - `isError` — boolean **обязательный**. Есть ли ошибки
   - `errors` — array[object]. Детали ошибки
     - `code` — integer **обязательный**. Код ошибки
     - `detail` — string **обязательный**. - `NotFound` — сборочное задание не найдено - `StatusMismatch` — операция невозможна для этого статуса сборочного задания - `MetaValidationFail` — идентификаторы маркировки не прошли проверку
     - `metaDetails` — array[object]
-      - `decision` — string. Ошибки проверки идентификаторов маркировки. - `imei` - `pending` — Проверка маркировки продолжается. Дождитесь изменения статуса проверки - `required` — Маркировка обязательна и не закреплена за сборочным заданием - `imeiInvalidFormat` — Указан неверный формат маркировки - `imeiAlreadySold` — Товар с этим IMEI уже продан - `uin` - `required` — Маркировка обязательна и не закреплена за сборочным заданием - `sgtin` - `pending` — Проверка маркировки продолжается. Дождитесь изменения статуса проверки - `required` — Маркировка обязательна и не закреплена за сборочным заданием - `sgtinInvalidFormat` — Указан неверный формат маркировки - `sgtinNotFound` — Маркировка не найдена в [Честном знаке](https://chestnyznak.ru) - `sgtinEmitted` — Маркировка эмитирована - `sgtinApplied` — Не пройдена процедура Ввод в оборот - `sgtinWrittenOff` — Списан - `sgtinRetired` — Выбыл - `sgtinWithdrawn` — Выбыл - `sgtinDisaggregated` — Расформирован - `sgtinDisaggregation` — Расформирован - `sgtinAppliedNotPaid` — Не оплачен - `gtin` - `required` — Маркировка обязательна и не закреплена за сборочным заданием - `expiration` - `required` — Маркировка обязательна и не закреплена за сборочным заданием - `customsDeclaration` - `required` — Маркировка обязательна и не закреплена за сборочным заданием
       - `key` — string. Идентификатор маркировки
       - `value` — string. Значение идентификатора маркировки
-  - `isError` — boolean **обязательный**. Есть ли ошибки
-  - `orderId` — integer **обязательный**. ID сборочного задания
+      - `decision` — string. Ошибки проверки идентификаторов маркировки. - `imei` - `pending` — Проверка маркировки продолжается. Дождитесь изменения статуса проверки - `required` — Маркировка обязательна и не закреплена за сборочным заданием - `imeiInvalidFormat` — Указан неверный формат маркировки - `imeiAlreadySold` — Товар с этим IMEI уже продан - `uin` - `required` — Маркировка обязательна и не закреплена за сборочным заданием - `sgtin` - `pending` — Проверка маркировки продолжается. Дождитесь изменения статуса проверки - `required` — Маркировка обязательна и не закреплена за сборочным заданием - `sgtinInvalidFormat` — Указан неверный формат маркировки - `sgtinNotFound` — Маркировка не найдена в [Честном знаке](https://chestnyznak.ru) - `sgtinEmitted` — Маркировка эмитирована - `sgtinApplied` — Не пройдена процедура Ввод в оборот - `sgtinWrittenOff` — Списан - `sgtinRetired` — Выбыл - `sgtinWithdrawn` — Выбыл - `sgtinDisaggregated` — Расформирован - `sgtinDisaggregation` — Расформирован - `sgtinAppliedNotPaid` — Не оплачен - `gtin` - `required` — Маркировка обязательна и не закреплена за сборочным заданием - `expiration` - `required` — Маркировка обязательна и не закреплена за сборочным заданием - `customsDeclaration` - `required` — Маркировка обязательна и не закреплена за сборочным заданием
 
 **400** — Неправильный запрос
 
@@ -61,19 +61,19 @@ content_sha: bfb90b83f8f1fb2e
 
 **401** — Не авторизован
 
-- `code` — string. Внутренний код ошибки
+- `title` — string. Заголовок ошибки
 - `detail` — string. Детали ошибки
-- `origin` — string. ID внутреннего сервиса WB
+- `code` — string. Внутренний код ошибки
 - `requestId` — string. Уникальный ID запроса
+- `origin` — string. ID внутреннего сервиса WB
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
-- `title` — string. Заголовок ошибки
 
 **402** — Требуется платёж
 
-- `detail` — string. Детали ошибки. Ошибка возвращается только сервисам из [Каталога решений для бизнеса](/business-solutions)
 - `title` — string. Заголовок ошибки
+- `detail` — string. Детали ошибки. Ошибка возвращается только сервисам из [Каталога решений для бизнеса](/business-solutions)
 
 **403** — Доступ запрещён
 
@@ -84,11 +84,11 @@ content_sha: bfb90b83f8f1fb2e
 
 **429** — Слишком много запросов
 
-- `code` — string. Внутренний код ошибки
+- `title` — string. Заголовок ошибки
 - `detail` — string. Детали ошибки
-- `origin` — string. ID внутреннего сервиса WB
+- `code` — string. Внутренний код ошибки
 - `requestId` — string. Уникальный ID запроса
+- `origin` — string. ID внутреннего сервиса WB
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
-- `title` — string. Заголовок ошибки

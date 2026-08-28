@@ -9,7 +9,7 @@ tags:
 spec_version: analytics
 source: "https://dev.wildberries.ru/docs/openapi/analytics"
 deprecated: false
-content_sha: 1809bfac9e56cb11
+content_sha: 42c289445285146e
 ---
 
 # Создать отчёт
@@ -54,121 +54,121 @@ content_sha: 1809bfac9e56cb11
 **Тело запроса** (`application/json`):
 
 - `id` — string<uuid> **обязательный**. ID отчёта в UUID-формате. Генерируется продавцом самостоятельно
-- `params` — object **обязательный**. Параметры отчёта
-  - `aggregationLevel` — string (day, week, month). Как сгруппировать данные (по умолчанию по дням): * `day` — по дням * `week` — по неделям * `month` — по месяцам
-  - `brandNames` — array[string]. Список брендов для фильтрации
-  - `endDate` — string<date> **обязательный**. Конец периода
-  - `nmIDs` — array[integer<int64>]. Артикулы WB, по которым составить отчёт. Оставьте пустым, чтобы получить отчёт обо всех товарах
-  - `skipDeletedNm` — boolean. Скрыть удалённые товары
-  - `startDate` — string<date> **обязательный**. Начало периода
-  - `subjectIds` — array[integer<int32>]. Список ID предметов для фильтрации
-  - `tagIds` — array[integer<int64>]. Список ID ярлыков для фильтрации
-  - `timezone` — string. Временная зона по формату [IANA](https://nodatime.org/TimeZones) По умолчанию: `Europe/Moscow`.
 - `reportType` — string **обязательный**. Тип отчёта `DETAIL_HISTORY_REPORT` — Воронка продаж. По артикулам WB
 - `userReportName` — string. Название отчёта. Если не указано, сформируется автоматически
-- `id` — string<uuid> **обязательный**. ID отчёта в UUID-формате. Генерируется продавцом самостоятельно
 - `params` — object **обязательный**. Параметры отчёта
-  - `aggregationLevel` — string. Как сгруппировать данные (по умолчанию по дням): * `day` — по дням * `week` — по неделям * `month` — по месяцам
-  - `brandNames` — array[string]. Список брендов для фильтрации
-  - `endDate` — string<date> **обязательный**. Конец периода
-  - `skipDeletedNm` — boolean. Скрыть удалённые товары
-  - `startDate` — string<date> **обязательный**. Начало периода
+  - `nmIDs` — array[integer<int64>]. Артикулы WB, по которым составить отчёт. Оставьте пустым, чтобы получить отчёт обо всех товарах
   - `subjectIds` — array[integer<int32>]. Список ID предметов для фильтрации
+  - `brandNames` — array[string]. Список брендов для фильтрации
   - `tagIds` — array[integer<int64>]. Список ID ярлыков для фильтрации
+  - `startDate` — string<date> **обязательный**. Начало периода
+  - `endDate` — string<date> **обязательный**. Конец периода
   - `timezone` — string. Временная зона по формату [IANA](https://nodatime.org/TimeZones) По умолчанию: `Europe/Moscow`.
+  - `aggregationLevel` — string (day, week, month). Как сгруппировать данные (по умолчанию по дням): * `day` — по дням * `week` — по неделям * `month` — по месяцам
+  - `skipDeletedNm` — boolean. Скрыть удалённые товары
+- `id` — string<uuid> **обязательный**. ID отчёта в UUID-формате. Генерируется продавцом самостоятельно
 - `reportType` — string **обязательный**. Тип отчёта `GROUPED_HISTORY_REPORT` — Воронка продаж. По предметам, брендам и ярлыкам
 - `userReportName` — string. Название отчёта. Если не указано, сформируется автоматически
-- `id` — string<uuid> **обязательный**. ID отчёта в UUID-формате. Генерируется продавцом самостоятельно
 - `params` — object **обязательный**. Параметры отчёта
+  - `subjectIds` — array[integer<int32>]. Список ID предметов для фильтрации
   - `brandNames` — array[string]. Список брендов для фильтрации
+  - `tagIds` — array[integer<int64>]. Список ID ярлыков для фильтрации
+  - `startDate` — string<date> **обязательный**. Начало периода
+  - `endDate` — string<date> **обязательный**. Конец периода
+  - `timezone` — string. Временная зона по формату [IANA](https://nodatime.org/TimeZones) По умолчанию: `Europe/Moscow`.
+  - `aggregationLevel` — string. Как сгруппировать данные (по умолчанию по дням): * `day` — по дням * `week` — по неделям * `month` — по месяцам
+  - `skipDeletedNm` — boolean. Скрыть удалённые товары
+- `id` — string<uuid> **обязательный**. ID отчёта в UUID-формате. Генерируется продавцом самостоятельно
+- `reportType` — string **обязательный**. Тип отчёта `SEARCH_QUERIES_PREMIUM_REPORT_GROUP` — Отчёт по параметрам поиска. По предметам, брендам и ярлыкам
+- `userReportName` — string. Название отчёта. Если не указано, сформируется автоматически
+- `params` — object **обязательный**. Параметры отчёта
   - `currentPeriod` — object **обязательный**. Текущий период
-    - `end` — string<date> **обязательный**. Дата окончания периода. Не ранее 365 суток от сегодня
     - `start` — string<date> **обязательный**. Дата начала периода. Не позднее `end`. Не ранее 365 суток от сегодня
-  - `includeSearchTexts` — boolean. Показать данные по поисковым запросам без учёта подменного артикула По умолчанию: `True`.
-  - `includeSubstitutedSKUs` — boolean. Показать данные по прямым запросам с [подменным артикулом](https://seller.wildberries.ru/help-center/article/A-524) По умолчанию: `True`.
+    - `end` — string<date> **обязательный**. Дата окончания периода. Не ранее 365 суток от сегодня
+  - `pastPeriod` — object. Прошлый период для сравнения. Количество дней — меньше или равно `currentPeriod`
+    - `start` — string<date> **обязательный**. Дата начала периода. Не позднее `end`. Не ранее 365 суток от сегодня
+    - `end` — string<date> **обязательный**. Дата окончания периода. Не позднее даты перед датой начала `currentPeriod`. Не ранее 365 суток от сегодня
   - `nmIds` — array[integer<int64>]. Артикулы WB, по которым составить отчёт. Оставьте пустым, чтобы получить отчёт обо всех товарах
+  - `subjectIds` — array[integer<int32>] **обязательный**. Список ID предметов для фильтрации. Оставьте пустым, чтобы получить отчёт по всем предметам
+  - `brandNames` — array[string]. Список брендов для фильтрации
+  - `tagIds` — array[integer<int64>]. Список ID ярлыков для фильтрации
   - `orderBy` — object **обязательный**. Параметры сортировки
     - `field` — string (avgPosition, openCard, addToCart, openToCart, orders, cartToOrder, visibility) **обязательный**. Поле для сортировки: - `avgPosition` — по средней позиции - `addToCart` — по добавлениям в корзину - `openCard` — по открытию карточки (переход на страницу товара) - `orders` — по количеству заказов - `cartToOrder` — по конверсии в заказ из поиска - `openToCart` — по конверсии в корзину из поиска - `visibility` — по видимости товара
     - `mode` — string (asc, desc) **обязательный**. Порядок сортировки: - `asc` — по возрастанию - `desc` — по убыванию
-  - `pastPeriod` — object. Прошлый период для сравнения. Количество дней — меньше или равно `currentPeriod`
-    - `end` — string<date> **обязательный**. Дата окончания периода. Не позднее даты перед датой начала `currentPeriod`. Не ранее 365 суток от сегодня
-    - `start` — string<date> **обязательный**. Дата начала периода. Не позднее `end`. Не ранее 365 суток от сегодня
   - `positionCluster` — string (all, firstHundred, secondHundred, below) **обязательный**. Товары с какой средней позицией в поиске показывать в отчёте: - `all` — все - `firstHundred` — от 1 до 100 - `secondHundred` — от 101 до 200 - `below` — от 201 и ниже
-  - `subjectIds` — array[integer<int32>] **обязательный**. Список ID предметов для фильтрации. Оставьте пустым, чтобы получить отчёт по всем предметам
-  - `tagIds` — array[integer<int64>]. Список ID ярлыков для фильтрации
-- `reportType` — string **обязательный**. Тип отчёта `SEARCH_QUERIES_PREMIUM_REPORT_GROUP` — Отчёт по параметрам поиска. По предметам, брендам и ярлыкам
-- `userReportName` — string. Название отчёта. Если не указано, сформируется автоматически
-- `id` — string<uuid> **обязательный**. ID отчёта в UUID-формате. Генерируется продавцом самостоятельно
-- `params` — object **обязательный**. Параметры отчёта
-  - `brandName` — string. Бренд
-  - `currentPeriod` — object **обязательный**. Текущий период
-    - `end` — string<date> **обязательный**. Дата окончания периода. Не ранее 365 суток от сегодня
-    - `start` — string<date> **обязательный**. Дата начала периода. Не позднее `end`. Не ранее 365 суток от сегодня
-  - `includeSearchTexts` — boolean. Показать данные по поисковым запросам без учёта подменного артикула По умолчанию: `True`.
   - `includeSubstitutedSKUs` — boolean. Показать данные по прямым запросам с [подменным артикулом](https://seller.wildberries.ru/help-center/article/A-524) По умолчанию: `True`.
+  - `includeSearchTexts` — boolean. Показать данные по поисковым запросам без учёта подменного артикула По умолчанию: `True`.
+- `id` — string<uuid> **обязательный**. ID отчёта в UUID-формате. Генерируется продавцом самостоятельно
+- `reportType` — string **обязательный**. Тип отчёта `SEARCH_QUERIES_PREMIUM_REPORT_PRODUCT` — Отчёт по параметрам поиска. По артикулам WB
+- `userReportName` — string. Название отчёта. Если не указано, сформируется автоматически
+- `params` — object **обязательный**. Параметры отчёта
+  - `currentPeriod` — object **обязательный**. Текущий период
+    - `start` — string<date> **обязательный**. Дата начала периода. Не позднее `end`. Не ранее 365 суток от сегодня
+    - `end` — string<date> **обязательный**. Дата окончания периода. Не ранее 365 суток от сегодня
+  - `pastPeriod` — object. Прошлый период для сравнения. Количество дней — меньше или равно `currentPeriod`
+    - `start` — string<date> **обязательный**. Дата начала периода. Не позднее `end`. Не ранее 365 суток от сегодня
+    - `end` — string<date> **обязательный**. Дата окончания периода. Не позднее даты перед датой начала `currentPeriod`. Не ранее 365 суток от сегодня
+  - `subjectId` — integer<int32>. ID предмета. Используйте значение `0`, чтобы получить отчёт по всем предметам
+  - `brandName` — string. Бренд
+  - `tagId` — integer<int64>. ID ярлыка. Чтобы получить отчёт по всем ярлыкам, укажите значение 0
   - `nmIds` — array[integer<int64>]. Артикулы WB, по которым составить отчёт. Оставьте пустым, чтобы получить отчёт обо всех товарах
+  - `positionCluster` — string (all, firstHundred, secondHundred, below) **обязательный**. Товары с какой средней позицией в поиске показывать в отчёте: - `all` — все - `firstHundred` — от 1 до 100 - `secondHundred` — от 101 до 200 - `below` — от 201 и ниже
   - `orderBy` — object **обязательный**. Параметры сортировки
     - `field` — string (openCard, addToCart, orderCount, orderSum, buyoutCount, buyoutSum, cancelCount, cancelSum, avgPrice, stockMpQty, stockWbQty, shareOrderPercent…) **обязательный**. Поле для сортировки: - `openCard` — Перешли в карточку - `addToCart` — Положили в корзину - `orderCount` — Заказали товаров, шт - `orderSum` — Заказали на сумму - `buyoutCount` — Выкупили товаров, шт - `buyoutSum` — Выкупили на сумму - `cancelCount` — Отменили и вернули товаров, шт - `cancelSum` — Отменили и вернули на сумму - `avgPrice` — Средняя цена - `stockMpQty` — Остатки на складах продавца, шт - `stockWbQty` — Остатки на складах WB, шт - `shareOrderPercent` — Доля в выручке - `addToWishlist` — Добавили в **Отложенные** - `timeToReady` — Среднее время доставки - `localizationPercent` — Локальные заказы в рамках одного региона - `wbClub.orderCount` — Заказали товаров с WB Клубом, шт - `wbClub.orderSum` — Заказали с WB Клубом на сумму - `wbClub.buyoutSum` — Выкупили товаров с WB Клубом, шт - `wbClub.buyoutCount` — Процент выкупа с WB Клубом - `wbClub.cancelSum` — Отменили и вернули товаров с WB Клубом на сумму - `wbClub.avgPrice` — Средняя цена с WB Клубом - `wbClub.buyoutPercent` — Процент выкупа с WB Клубом - `wbClub.avgOrderCountPerDay` — Среднее количество заказов в день с WB Клубом, шт - `wbClub.cancelCount` — Отменили и вернули товаров с WB Клубом, шт По умолчанию: `openCard`.
     - `mode` — string (asc, desc) **обязательный**. Порядок сортировки: - `asc` — по возрастанию - `desc` — по убыванию По умолчанию: `desc`.
-  - `pastPeriod` — object. Прошлый период для сравнения. Количество дней — меньше или равно `currentPeriod`
-    - `end` — string<date> **обязательный**. Дата окончания периода. Не позднее даты перед датой начала `currentPeriod`. Не ранее 365 суток от сегодня
-    - `start` — string<date> **обязательный**. Дата начала периода. Не позднее `end`. Не ранее 365 суток от сегодня
-  - `positionCluster` — string (all, firstHundred, secondHundred, below) **обязательный**. Товары с какой средней позицией в поиске показывать в отчёте: - `all` — все - `firstHundred` — от 1 до 100 - `secondHundred` — от 101 до 200 - `below` — от 201 и ниже
-  - `subjectId` — integer<int32>. ID предмета. Используйте значение `0`, чтобы получить отчёт по всем предметам
-  - `tagId` — integer<int64>. ID ярлыка. Чтобы получить отчёт по всем ярлыкам, укажите значение 0
-- `reportType` — string **обязательный**. Тип отчёта `SEARCH_QUERIES_PREMIUM_REPORT_PRODUCT` — Отчёт по параметрам поиска. По артикулам WB
-- `userReportName` — string. Название отчёта. Если не указано, сформируется автоматически
-- `id` — string<uuid> **обязательный**. ID отчёта в UUID-формате. Генерируется продавцом самостоятельно
-- `params` — object **обязательный**. Параметры отчёта
-  - `brandNames` — array[string]. Список брендов для фильтрации
-  - `currentPeriod` — object **обязательный**. Текущий период
-    - `end` — string<date> **обязательный**. Дата окончания периода. Не ранее 365 суток от сегодня
-    - `start` — string<date> **обязательный**. Дата начала периода. Не позднее `end`. Не ранее 365 суток от сегодня
-  - `includeSearchTexts` — boolean. Показать данные по поисковым запросам без учёта подменного артикула По умолчанию: `True`.
   - `includeSubstitutedSKUs` — boolean. Показать данные по прямым запросам с [подменным артикулом](https://seller.wildberries.ru/help-center/article/A-524) По умолчанию: `True`.
-  - `limit` — integer<uint64> **обязательный**
+  - `includeSearchTexts` — boolean. Показать данные по поисковым запросам без учёта подменного артикула По умолчанию: `True`.
+- `id` — string<uuid> **обязательный**. ID отчёта в UUID-формате. Генерируется продавцом самостоятельно
+- `reportType` — string **обязательный**. Тип отчёта `SEARCH_QUERIES_PREMIUM_REPORT_TEXT` — Отчёт по текстам поисковых запросов
+- `userReportName` — string. Название отчёта. Если не указано, сформируется автоматически
+- `params` — object **обязательный**. Параметры отчёта
+  - `currentPeriod` — object **обязательный**. Текущий период
+    - `start` — string<date> **обязательный**. Дата начала периода. Не позднее `end`. Не ранее 365 суток от сегодня
+    - `end` — string<date> **обязательный**. Дата окончания периода. Не ранее 365 суток от сегодня
+  - `pastPeriod` — object. Прошлый период для сравнения. Количество дней — меньше или равно `currentPeriod`
+    - `start` — string<date> **обязательный**. Дата начала периода. Не позднее `end`. Не ранее 365 суток от сегодня
+    - `end` — string<date> **обязательный**. Дата окончания периода. Не позднее даты перед датой начала `currentPeriod`. Не ранее 365 суток от сегодня
   - `nmIds` — array[?]. Артикулы WB, по которым составить отчёт. Оставьте пустым, чтобы получить отчёт по всем товарам
+  - `subjectIds` — array[integer<int32>]. Список ID предметов для фильтрации
+  - `brandNames` — array[string]. Список брендов для фильтрации
+  - `tagIds` — array[integer<int64>]. Список ID ярлыков для фильтрации
+  - `topOrderBy` — string (openCard, addToCart, openToCart, orders, cartToOrder) **обязательный**. Фильтрация по поисковым запросам, по которым больше всего: - `openCard` — перешли в карточку - `addToCart` — добавили в корзину - `openToCart` — конверсия в корзину - `orders` — заказали товаров - `cartToOrder` — конверсия в заказ
   - `orderBy` — object **обязательный**. Параметры сортировки
     - `field` — string (avgPosition, openCard, addToCart, openToCart, orders, cartToOrder, visibility) **обязательный**. Поле для сортировки: - `avgPosition` — по средней позиции - `addToCart` — по добавлениям в корзину - `openCard` — по открытию карточки (переход на страницу товара) - `orders` — по количеству заказов - `cartToOrder` — по конверсии в заказ из поиска - `openToCart` — по конверсии в корзину из поиска - `visibility` — по видимости товара
     - `mode` — string (asc, desc) **обязательный**. Порядок сортировки: - `asc` — по возрастанию - `desc` — по убыванию
-  - `pastPeriod` — object. Прошлый период для сравнения. Количество дней — меньше или равно `currentPeriod`
-    - `end` — string<date> **обязательный**. Дата окончания периода. Не позднее даты перед датой начала `currentPeriod`. Не ранее 365 суток от сегодня
-    - `start` — string<date> **обязательный**. Дата начала периода. Не позднее `end`. Не ранее 365 суток от сегодня
-  - `subjectIds` — array[integer<int32>]. Список ID предметов для фильтрации
-  - `tagIds` — array[integer<int64>]. Список ID ярлыков для фильтрации
-  - `topOrderBy` — string (openCard, addToCart, openToCart, orders, cartToOrder) **обязательный**. Фильтрация по поисковым запросам, по которым больше всего: - `openCard` — перешли в карточку - `addToCart` — добавили в корзину - `openToCart` — конверсия в корзину - `orders` — заказали товаров - `cartToOrder` — конверсия в заказ
-- `reportType` — string **обязательный**. Тип отчёта `SEARCH_QUERIES_PREMIUM_REPORT_TEXT` — Отчёт по текстам поисковых запросов
-- `userReportName` — string. Название отчёта. Если не указано, сформируется автоматически
+  - `includeSubstitutedSKUs` — boolean. Показать данные по прямым запросам с [подменным артикулом](https://seller.wildberries.ru/help-center/article/A-524) По умолчанию: `True`.
+  - `includeSearchTexts` — boolean. Показать данные по поисковым запросам без учёта подменного артикула По умолчанию: `True`.
+  - `limit` — integer<uint64> **обязательный**
 - `id` — string<uuid> **обязательный**. ID отчёта в UUID-формате. Генерируется продавцом самостоятельно
+- `reportType` — string **обязательный**. Тип отчёта `STOCK_HISTORY_REPORT_CSV` — Отчёт по статистике остатков
+- `userReportName` — string. Название отчёта. Если не указано, сформируется автоматически
 - `params` — object **обязательный**. Параметры отчёта
-  - `availabilityFilters` — array[string (deficient, actual, balanced, nonActual, nonLiquid, invalidData)] **обязательный**. Доступность товара: - `deficient` — Дефицит - `actual` — Актуальный - `balanced` — Баланс - `nonActual` — Неактуальный - `nonLiquid` — Неликвид - `invalidData` — Не рассчитано
-  - `brandNames` — array[string]. Список брендов для фильтрации
-  - `currentPeriod` — object **обязательный**. Период
-    - `end` — string<date> **обязательный**. Дата окончания периода. Не ранее 3 месяцев от текущей даты
-    - `start` — string<date> **обязательный**. Дата начала периода. Не позднее `end`. Не ранее 3 месяцев от текущей даты
   - `nmIDs` — array[integer<int64>]. Список артикулов WB для фильтрации
+  - `subjectIDs` — array[integer<int32>]. Список ID предметов для фильтрации
+  - `brandNames` — array[string]. Список брендов для фильтрации
+  - `tagIDs` — array[integer<int64>]. Список ID ярлыков для фильтрации
+  - `currentPeriod` — object **обязательный**. Период
+    - `start` — string<date> **обязательный**. Дата начала периода. Не позднее `end`. Не ранее 3 месяцев от текущей даты
+    - `end` — string<date> **обязательный**. Дата окончания периода. Не ранее 3 месяцев от текущей даты
+  - `stockType` — string (, wb, mp) **обязательный**. Тип складов хранения товаров: - `""` — все - `wb` — склады WB - `mp` — склады продавца
+  - `skipDeletedNm` — boolean **обязательный**. Скрыть удалённые товары
+  - `availabilityFilters` — array[string (deficient, actual, balanced, nonActual, nonLiquid, invalidData)] **обязательный**. Доступность товара: - `deficient` — Дефицит - `actual` — Актуальный - `balanced` — Баланс - `nonActual` — Неактуальный - `nonLiquid` — Неликвид - `invalidData` — Не рассчитано
   - `orderBy` — object **обязательный**. Вид сортировки данных
     - `field` — string (ordersCount, ordersSum, avgOrders, buyoutCount, buyoutSum, buyoutPercent, stockCount, stockSum, saleRate, avgStockTurnover, toClientCount, fromClientCount…) **обязательный**. Сортировка по полю: - `ordersCount` — Заказы, шт. - `ordersSum` — Заказы, сумма - `avgOrders` — Среднее количество заказов в день - `buyoutCount` — Выкупы, шт. - `buyoutSum` — Выкупы, сумма - `buyoutPercent` — Процент выкупа - `stockCount` — Остатки на текущий день, шт. - `stockSum` — Стоимость остатков на текущий день - `saleRate` — Оборачиваемость текущих остатков - `avgStockTurnover` — Оборачиваемость средних остатков - `toClientCount` — В пути к клиенту, шт. - `fromClientCount` — В пути от клиента, шт. - `minPrice` — Минимальная цена продавца со скидкой продавца (без учёта скидки WB Клуба) - `maxPrice` — Максимальная цена продавца со скидкой продавца (без учёта скидки WB Клуба) - `officeMissingTime` — Время отсутствия товара на складе - `lostOrdersCount` — Упущенные заказы, шт. - `lostOrdersSum` — Упущенные заказы, сумма - `lostBuyoutsCount` — Упущенные выкупы, шт. - `lostBuyoutsSum` — Упущенные выкупы, сумма
     - `mode` — string (asc, desc) **обязательный**. Порядок сортировки: - asc — по возрастанию - desc — по убыванию
-  - `skipDeletedNm` — boolean **обязательный**. Скрыть удалённые товары
-  - `stockType` — string (, wb, mp) **обязательный**. Тип складов хранения товаров: - `""` — все - `wb` — склады WB - `mp` — склады продавца
-  - `subjectIDs` — array[integer<int32>]. Список ID предметов для фильтрации
-  - `tagIDs` — array[integer<int64>]. Список ID ярлыков для фильтрации
-- `reportType` — string **обязательный**. Тип отчёта `STOCK_HISTORY_REPORT_CSV` — Отчёт по статистике остатков
-- `userReportName` — string. Название отчёта. Если не указано, сформируется автоматически
 - `id` — string<uuid> **обязательный**. ID отчёта в UUID-формате. Генерируется продавцом самостоятельно
-- `params` — object **обязательный**. Параметры отчёта
-  - `brandNames` — array[string]. Список брендов для фильтрации
-  - `currentPeriod` — object **обязательный**. Период
-    - `end` — string<date> **обязательный**. Дата окончания периода. Не ранее 3 месяцев от текущей даты
-    - `start` — string<date> **обязательный**. Дата начала периода. Не позднее `end`. Не ранее 3 месяцев от текущей даты
-  - `nmIds` — array[integer<int64>]. Список артикулов WB для фильтрации
-  - `skipDeletedNm` — boolean **обязательный**. Скрыть удалённые товары
-  - `stockType` — string (, wb, mp) **обязательный**. Тип складов хранения товаров: - `""` — все - `wb` — склады WB - `mp` — склады продавца
-  - `subjectIds` — array[integer<int32>]. Список ID предметов для фильтрации
-  - `tagIds` — array[integer<int64>]. Список ID ярлыков для фильтрации
 - `reportType` — string **обязательный**. Тип отчёта `STOCK_HISTORY_DAILY_CSV` — Отчёт по истории остатков
 - `userReportName` — string. Название отчёта. Если не указано, сформируется автоматически
+- `params` — object **обязательный**. Параметры отчёта
+  - `nmIds` — array[integer<int64>]. Список артикулов WB для фильтрации
+  - `subjectIds` — array[integer<int32>]. Список ID предметов для фильтрации
+  - `brandNames` — array[string]. Список брендов для фильтрации
+  - `tagIds` — array[integer<int64>]. Список ID ярлыков для фильтрации
+  - `currentPeriod` — object **обязательный**. Период
+    - `start` — string<date> **обязательный**. Дата начала периода. Не позднее `end`. Не ранее 3 месяцев от текущей даты
+    - `end` — string<date> **обязательный**. Дата окончания периода. Не ранее 3 месяцев от текущей даты
+  - `stockType` — string (, wb, mp) **обязательный**. Тип складов хранения товаров: - `""` — все - `wb` — склады WB - `mp` — склады продавца
+  - `skipDeletedNm` — boolean **обязательный**. Скрыть удалённые товары
 
 ## Ответы
 
@@ -178,45 +178,45 @@ content_sha: 1809bfac9e56cb11
 
 **400** — Неправильный запрос
 
-- `detail` — string **обязательный**. Детали ошибки
-- `origin` — string **обязательный**. ID внутреннего сервиса WB
-- `requestId` — string **обязательный**. Уникальный ID запроса
 - `title` — string **обязательный**. Заголовок ошибки
+- `detail` — string **обязательный**. Детали ошибки
+- `requestId` — string **обязательный**. Уникальный ID запроса
+- `origin` — string **обязательный**. ID внутреннего сервиса WB
 
 **401** — Не авторизован
 
-- `code` — string. Внутренний код ошибки
+- `title` — string. Заголовок ошибки
 - `detail` — string. Детали ошибки
-- `origin` — string. ID внутреннего сервиса WB
+- `code` — string. Внутренний код ошибки
 - `requestId` — string. Уникальный ID запроса
+- `origin` — string. ID внутреннего сервиса WB
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
-- `title` — string. Заголовок ошибки
 
 **402** — Требуется платёж
 
-- `detail` — string. Детали ошибки. Ошибка возвращается только сервисам из [Каталога решений для бизнеса](/business-solutions)
 - `title` — string. Заголовок ошибки
+- `detail` — string. Детали ошибки. Ошибка возвращается только сервисам из [Каталога решений для бизнеса](/business-solutions)
 
 **403** — Доступ запрещён
 
-- `detail` — string. Детали ошибки
-- `origin` — string. ID внутреннего сервиса WB
-- `requestId` — string. Уникальный ID запроса
 - `title` — string. Заголовок ошибки
+- `detail` — string. Детали ошибки
+- `requestId` — string. Уникальный ID запроса
+- `origin` — string. ID внутреннего сервиса WB
 
 **429** — Слишком много запросов
 
-- `code` — string. Внутренний код ошибки
+- `title` — string. Заголовок ошибки
 - `detail` — string. Детали ошибки
-- `origin` — string. ID внутреннего сервиса WB
+- `code` — string. Внутренний код ошибки
 - `requestId` — string. Уникальный ID запроса
+- `origin` — string. ID внутреннего сервиса WB
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
-- `title` — string. Заголовок ошибки
-- `detail` — string **обязательный**. Детали ошибки
-- `origin` — string **обязательный**. ID внутреннего сервиса WB
-- `requestId` — string **обязательный**. Уникальный ID запроса
 - `title` — string **обязательный**. Заголовок ошибки
+- `detail` — string **обязательный**. Детали ошибки
+- `requestId` — string **обязательный**. Уникальный ID запроса
+- `origin` — string **обязательный**. ID внутреннего сервиса WB

@@ -9,7 +9,7 @@ tags:
 spec_version: promotion
 source: "https://dev.wildberries.ru/docs/openapi/promotion"
 deprecated: false
-content_sha: 1996a79f7b38adc8
+content_sha: 5cdf01fa3c2300a7
 ---
 
 # Пополнение бюджета кампании
@@ -41,18 +41,18 @@ content_sha: 1996a79f7b38adc8
 
 **Тело запроса** (`application/json`):
 
-- `cashback_percent` — integer. Процент от суммы пополнения, который можно пополнить промо-бонусами. Нужно указать значение поля percent из ответа метода получения [баланса](./promotion#tag/finances/operation/getV1Balance) Если вы указали `cashback_sum`, параметр `cashback_percent` становится обязательным
-- `cashback_sum` — integer. Сумма пополнения бюджета промо-бонусами. Пополнить можно только определённый процент от общей суммы, указанный в поле `percent` ответа метода получения [баланса](./promotion#tag/finances/operation/getV1Balance). Оставшаяся часть общей суммы спишется с указанного источника пополнения. Пополнить можно только определённый процент от общей суммы, указанный в поле `percent` ответа метода получения [баланса](./promotion#tag/finances/operation/getV1Balance). Оставшаяся часть общей суммы спишется с указанного источника пополнения. Списать промо-бонусы можно только для источников пополнения: - `0` — счёт - `1` — баланс
-- `return` — boolean. Флаг возврата ответа (`true` — в ответе вернется обновлённый размер бюджета кампании, `false` или не указать параметр вообще — не вернётся.)
 - `sum` — integer. Общая сумма пополнения бюджета в базовых единицах валюты [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances)
+- `cashback_sum` — integer. Сумма пополнения бюджета промо-бонусами. Пополнить можно только определённый процент от общей суммы, указанный в поле `percent` ответа метода получения [баланса](./promotion#tag/finances/operation/getV1Balance). Оставшаяся часть общей суммы спишется с указанного источника пополнения. Пополнить можно только определённый процент от общей суммы, указанный в поле `percent` ответа метода получения [баланса](./promotion#tag/finances/operation/getV1Balance). Оставшаяся часть общей суммы спишется с указанного источника пополнения. Списать промо-бонусы можно только для источников пополнения: - `0` — счёт - `1` — баланс
+- `cashback_percent` — integer. Процент от суммы пополнения, который можно пополнить промо-бонусами. Нужно указать значение поля percent из ответа метода получения [баланса](./promotion#tag/finances/operation/getV1Balance) Если вы указали `cashback_sum`, параметр `cashback_percent` становится обязательным
 - `type` — integer. Тип источника пополнения: - `0` — Счёт - `1` — Баланс - `3` — Бонусы
+- `return` — boolean. Флаг возврата ответа (`true` — в ответе вернется обновлённый размер бюджета кампании, `false` или не указать параметр вообще — не вернётся.)
 
 ## Ответы
 
 **200** — Успешно
 
-- `currency` — string<ISO 4217>. Валюта [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances)
 - `total` — integer. Размер обновлённого бюджета
+- `currency` — string<ISO 4217>. Валюта [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances)
 
 **400** — Неправильный запрос
 
@@ -60,22 +60,22 @@ content_sha: 1996a79f7b38adc8
 
 **401** — Не авторизован
 
-- `code` — string. Внутренний код ошибки
+- `title` — string. Заголовок ошибки
 - `detail` — string. Детали ошибки
-- `origin` — string. ID внутреннего сервиса WB
+- `code` — string. Внутренний код ошибки
 - `requestId` — string. Уникальный ID запроса
+- `origin` — string. ID внутреннего сервиса WB
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
-- `title` — string. Заголовок ошибки
 
 **429** — Слишком много запросов
 
-- `code` — string. Внутренний код ошибки
+- `title` — string. Заголовок ошибки
 - `detail` — string. Детали ошибки
-- `origin` — string. ID внутреннего сервиса WB
+- `code` — string. Внутренний код ошибки
 - `requestId` — string. Уникальный ID запроса
+- `origin` — string. ID внутреннего сервиса WB
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
-- `title` — string. Заголовок ошибки

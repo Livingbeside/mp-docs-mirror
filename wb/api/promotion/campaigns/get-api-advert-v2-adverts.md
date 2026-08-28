@@ -9,7 +9,7 @@ tags:
 spec_version: promotion
 source: "https://dev.wildberries.ru/docs/openapi/promotion"
 deprecated: false
-content_sha: 39bc97253d27a5d5
+content_sha: 7470d3b868b6bc6a
 ---
 
 # Информация о кампаниях
@@ -48,26 +48,26 @@ content_sha: 39bc97253d27a5d5
   - `id` — integer<int64> **обязательный**. ID кампании
   - `nm_settings` — array[object] **обязательный**. Настройки товаров
     - `bids_kopecks` — object **обязательный**. Ставка в разменных единицах — 0,01 от базовой валюты [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances)
-      - `recommendations` — integer<int64> **обязательный**. Ставка в рекомендациях
       - `search` — integer<int64> **обязательный**. Ставка в поиске
-    - `nm_id` — integer<int64> **обязательный**. Артикул WB
+      - `recommendations` — integer<int64> **обязательный**. Ставка в рекомендациях
     - `subject` — object **обязательный**. Предмет
       - `id` — integer<int64> **обязательный**. ID предмета
       - `name` — string **обязательный**. Название предмета
+    - `nm_id` — integer<int64> **обязательный**. Артикул WB
+  - `settings` — object **обязательный**. Настройки кампании
+    - `payment_type` — string **обязательный**. Тип оплаты: - `cpm` — за показы - `cpc` — за клик
+    - `name` — string **обязательный**. Название кампании
+    - `placements` — object **обязательный**. Места размещения
+      - `search` — boolean **обязательный**. Размещение в поиске: - `false` — отключено - `true` — включено
+      - `recommendations` — boolean **обязательный**. Размещение в рекомендациях: - `false` — отключено - `true` — включено
   - `restrictions` — object **обязательный**. Ограничения кампании
     - `can_change_nms` — boolean. Можно ли изменять список товаров кампании: - `true` — да - `false` — нет
-  - `settings` — object **обязательный**. Настройки кампании
-    - `name` — string **обязательный**. Название кампании
-    - `payment_type` — string **обязательный**. Тип оплаты: - `cpm` — за показы - `cpc` — за клик
-    - `placements` — object **обязательный**. Места размещения
-      - `recommendations` — boolean **обязательный**. Размещение в рекомендациях: - `false` — отключено - `true` — включено
-      - `search` — boolean **обязательный**. Размещение в поиске: - `false` — отключено - `true` — включено
   - `status` — integer (-1, 4, 7, 8, 9, 11) **обязательный**. Статус кампании: - `-1` — удалена, процесс удаления будет завершён в течение 10 минут - `4` — готова к запуску - `7` — завершена - `8` — отменена - `9` — активна - `11` — на паузе
   - `timestamps` — object **обязательный**. Временные отметки
     - `created` — string<date-time> **обязательный**. Время создания кампании
-    - `deleted` — string<date-time> **обязательный**. Время удаления кампании. Если кампания не удалена, время указывается в будущем
-    - `started` — string<date-time> **обязательный**. Время последнего запуска кампании
     - `updated` — string<date-time> **обязательный**. Время последнего изменения кампании
+    - `started` — string<date-time> **обязательный**. Время последнего запуска кампании
+    - `deleted` — string<date-time> **обязательный**. Время удаления кампании. Если кампания не удалена, время указывается в будущем
 
 **400** — Неправильный запрос
 
@@ -79,22 +79,22 @@ content_sha: 39bc97253d27a5d5
 
 **401** — Не авторизован
 
-- `code` — string. Внутренний код ошибки
+- `title` — string. Заголовок ошибки
 - `detail` — string. Детали ошибки
-- `origin` — string. ID внутреннего сервиса WB
+- `code` — string. Внутренний код ошибки
 - `requestId` — string. Уникальный ID запроса
+- `origin` — string. ID внутреннего сервиса WB
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
-- `title` — string. Заголовок ошибки
 
 **429** — Слишком много запросов
 
-- `code` — string. Внутренний код ошибки
+- `title` — string. Заголовок ошибки
 - `detail` — string. Детали ошибки
-- `origin` — string. ID внутреннего сервиса WB
+- `code` — string. Внутренний код ошибки
 - `requestId` — string. Уникальный ID запроса
+- `origin` — string. ID внутреннего сервиса WB
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
-- `title` — string. Заголовок ошибки

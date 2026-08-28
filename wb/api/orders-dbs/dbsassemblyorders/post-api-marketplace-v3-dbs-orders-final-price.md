@@ -9,7 +9,7 @@ tags:
 spec_version: dbs
 source: "https://dev.wildberries.ru/docs/openapi/orders-dbs"
 deprecated: false
-content_sha: 574fc5917f1ef6c0
+content_sha: 57bb166a4d13e8aa
 ---
 
 # Получить цены продавца и суммы к оплате
@@ -42,18 +42,18 @@ content_sha: 574fc5917f1ef6c0
 
 - `requestId` — string **обязательный**. Уникальный ID запроса
 - `results` — array[object] **обязательный**
+  - `orderId` — integer **обязательный**. ID сборочного задания
   - `data` — object. Данные сборочного задания. Если `"data":{}`, данные формируются. Повторите запрос позднее. Максимальное время формирования данных около 3 минут. Если `data` отсутствует, данных по сборочному заданию не предусмотрено. Используйте данные из ответов методов: - [Получить список новых сборочных заданий](/docs/openapi/orders-dbs#tag/dbsAssemblyOrders/operation/getV3DbsOrdersNew) - [Получить информацию о завершенных сборочных заданиях](/docs/openapi/orders-dbs#tag/dbsAssemblyOrders/operation/getV3DbsOrders)
-    - `convertedCurrencyCode` — integer<ISO 4217>. Код валюты страны продавца
-    - `convertedOriginalFinalPrice` — integer. Сумма к оплате покупателем в валюте страны продавца с учетом всех скидок и кэшбека, умноженная на 100. Предоставляется в информационных целях
-    - `convertedOriginalPrice` — integer. Цена продавца в валюте страны продавца без учёта скидок, умноженная на 100. Предоставляется в информационных целях
-    - `currencyCode` — integer<ISO 4217>. Код валюты продажи
-    - `originalFinalPrice` — integer. Сумма к оплате покупателем в валюте продажи с учетом всех скидок и кэшбека, умноженная на 100. Код валюты продажи указан в поле `currencyCode`. Предоставляется в информационных целях
     - `originalPrice` — integer. Цена продавца в валюте продажи без учёта скидок, умноженная на 100. Предоставляется в информационных целях
+    - `convertedOriginalPrice` — integer. Цена продавца в валюте страны продавца без учёта скидок, умноженная на 100. Предоставляется в информационных целях
+    - `originalFinalPrice` — integer. Сумма к оплате покупателем в валюте продажи с учетом всех скидок и кэшбека, умноженная на 100. Код валюты продажи указан в поле `currencyCode`. Предоставляется в информационных целях
+    - `convertedOriginalFinalPrice` — integer. Сумма к оплате покупателем в валюте страны продавца с учетом всех скидок и кэшбека, умноженная на 100. Предоставляется в информационных целях
+    - `currencyCode` — integer<ISO 4217>. Код валюты продажи
+    - `convertedCurrencyCode` — integer<ISO 4217>. Код валюты страны продавца
   - `errors` — array[object]. Детали ошибки
     - `code` — integer **обязательный**. Код ошибки: - `404` — `NotFound` - `400` — `StatusMismatch` - `422` — `PriceNotCalculated`
     - `detail` — string **обязательный**. - `NotFound` — сборочное задание не найдено (`404`) - `StatusMismatch` — операция невозможна для этого статуса сборочного задания (`400`) - `PriceNotCalculated` — операция невозможна для сборочных заданий, созданных ранее 23.07.2026 (`422`)
   - `isError` — boolean. Есть ли ошибки
-  - `orderId` — integer **обязательный**. ID сборочного задания
 
 **400** — Неправильный запрос
 
@@ -64,14 +64,14 @@ content_sha: 574fc5917f1ef6c0
 
 **401** — Не авторизован
 
-- `code` — string. Внутренний код ошибки
+- `title` — string. Заголовок ошибки
 - `detail` — string. Детали ошибки
-- `origin` — string. ID внутреннего сервиса WB
+- `code` — string. Внутренний код ошибки
 - `requestId` — string. Уникальный ID запроса
+- `origin` — string. ID внутреннего сервиса WB
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
-- `title` — string. Заголовок ошибки
 
 **403** — Доступ запрещён
 
@@ -82,11 +82,11 @@ content_sha: 574fc5917f1ef6c0
 
 **429** — Слишком много запросов
 
-- `code` — string. Внутренний код ошибки
+- `title` — string. Заголовок ошибки
 - `detail` — string. Детали ошибки
-- `origin` — string. ID внутреннего сервиса WB
+- `code` — string. Внутренний код ошибки
 - `requestId` — string. Уникальный ID запроса
+- `origin` — string. ID внутреннего сервиса WB
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
-- `title` — string. Заголовок ошибки

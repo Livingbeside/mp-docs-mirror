@@ -9,7 +9,7 @@ tags:
 spec_version: reports
 source: "https://dev.wildberries.ru/docs/openapi/reports"
 deprecated: false
-content_sha: c4bc405cc4349b84
+content_sha: 634569bc74cf5e6e
 ---
 
 # Заказы
@@ -57,33 +57,33 @@ content_sha: c4bc405cc4349b84
 
 **200** — Успешно
 
-- `barcode` — string. Баркод
-- `brand` — string. Бренд
-- `cancelDate` — string. Дата и время отмены заказа. Если заказ не был отменен, то "0001-01-01T00:00:00".Если часовой пояс не указан, то берётся Московское время UTC+3.
-- `category` — string. Категория
-- `countryName` — string. Страна
 - `date` — string. Дата и время заказа. Это поле соответствует параметру `dateFrom` в запросе, если параметр `flag`=1. Если часовой пояс не указан, то берётся Московское время (UTC+3).
-- `discountPercent` — integer. Скидка продавца, %
-- `finishedPrice` — number. Цена с учетом всех скидок, кроме суммы по WB Кошельку
-- `gNumber` — string. ID корзины покупателя. Заказы одной транзакции будут иметь одинаковый `gNumber`
-- `incomeID` — integer. Номер поставки
-- `isCancel` — boolean. Отмена заказа: - `true` — заказ отменен
-- `isRealization` — boolean. Договор реализации
-- `isSupply` — boolean. Договор поставки
 - `lastChangeDate` — string. Дата и время обновления информации в сервисе. Это поле соответствует параметру `dateFrom` в запросе, если параметр `flag`=0 или не указан. Если часовой пояс не указан, то берётся Московское время (UTC+3).
-- `nmId` — integer. Артикул WB
-- `oblastOkrugName` — string. Округ
-- `priceWithDisc` — number. Цена со скидкой продавца, в том числе со скидкой WB Клуба
-- `regionName` — string. Регион
-- `spp` — number. Скидка WB, %
-- `srid` — string. Уникальный ID заказа. Примечание для использующих API Маркетплейс: `srid` равен `rid` в ответах методов сборочных заданий.
-- `sticker` — string. ID стикера
-- `subject` — string. Предмет
-- `supplierArticle` — string. Артикул продавца
-- `techSize` — string. Размер товара
-- `totalPrice` — number. Цена без скидок
 - `warehouseName` — string. Склад отгрузки
 - `warehouseType` — string (Склад WB, Склад продавца). Тип склада хранения товаров
+- `countryName` — string. Страна
+- `oblastOkrugName` — string. Округ
+- `regionName` — string. Регион
+- `supplierArticle` — string. Артикул продавца
+- `nmId` — integer. Артикул WB
+- `barcode` — string. Баркод
+- `category` — string. Категория
+- `subject` — string. Предмет
+- `brand` — string. Бренд
+- `techSize` — string. Размер товара
+- `incomeID` — integer. Номер поставки
+- `isSupply` — boolean. Договор поставки
+- `isRealization` — boolean. Договор реализации
+- `totalPrice` — number. Цена без скидок
+- `discountPercent` — integer. Скидка продавца, %
+- `spp` — number. Скидка WB, %
+- `finishedPrice` — number. Цена с учетом всех скидок, кроме суммы по WB Кошельку
+- `priceWithDisc` — number. Цена со скидкой продавца, в том числе со скидкой WB Клуба
+- `isCancel` — boolean. Отмена заказа: - `true` — заказ отменен
+- `cancelDate` — string. Дата и время отмены заказа. Если заказ не был отменен, то "0001-01-01T00:00:00".Если часовой пояс не указан, то берётся Московское время UTC+3.
+- `sticker` — string. ID стикера
+- `gNumber` — string. ID корзины покупателя. Заказы одной транзакции будут иметь одинаковый `gNumber`
+- `srid` — string. Уникальный ID заказа. Примечание для использующих API Маркетплейс: `srid` равен `rid` в ответах методов сборочных заданий.
 
 **400** — Неправильный запрос
 
@@ -92,27 +92,27 @@ content_sha: c4bc405cc4349b84
 
 **401** — Не авторизован
 
-- `code` — string. Внутренний код ошибки
+- `title` — string. Заголовок ошибки
 - `detail` — string. Детали ошибки
-- `origin` — string. ID внутреннего сервиса WB
+- `code` — string. Внутренний код ошибки
 - `requestId` — string. Уникальный ID запроса
+- `origin` — string. ID внутреннего сервиса WB
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
-- `title` — string. Заголовок ошибки
 
 **402** — Требуется платёж
 
-- `detail` — string. Детали ошибки. Ошибка возвращается только сервисам из [Каталога решений для бизнеса](/business-solutions)
 - `title` — string. Заголовок ошибки
+- `detail` — string. Детали ошибки. Ошибка возвращается только сервисам из [Каталога решений для бизнеса](/business-solutions)
 
 **429** — Слишком много запросов
 
-- `code` — string. Внутренний код ошибки
+- `title` — string. Заголовок ошибки
 - `detail` — string. Детали ошибки
-- `origin` — string. ID внутреннего сервиса WB
+- `code` — string. Внутренний код ошибки
 - `requestId` — string. Уникальный ID запроса
+- `origin` — string. ID внутреннего сервиса WB
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
-- `title` — string. Заголовок ошибки

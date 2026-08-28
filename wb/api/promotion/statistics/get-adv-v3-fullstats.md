@@ -9,7 +9,7 @@ tags:
 spec_version: promotion
 source: "https://dev.wildberries.ru/docs/openapi/promotion"
 deprecated: false
-content_sha: 53ff6ea8286a509a
+content_sha: 4192ede9490dc086
 ---
 
 # Статистика кампаний
@@ -58,7 +58,6 @@ content_sha: 53ff6ea8286a509a
 - `cpc` — number<double> **обязательный**. Средняя стоимость клика в базовых единицах валюты [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances)
 - `cr` — number<double> **обязательный**. CR (conversion rate) — отношение количества заказов к общему количеству кликов
 - `ctr` — number<double> **обязательный**. CTR (click-through rate) — отношение числа кликов к количеству показов в процентах
-- `currency` — string<ISO 4217> **обязательный**. Валюта [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances)
 - `days` — array[object] **обязательный**
   - `apps` — array[object] **обязательный**. Блок информации о платформе
     - `appType` — integer (1, 32, 64) **обязательный**. Тип платформы: - `1` — сайт - `32` — Android - `64` — IOS
@@ -89,11 +88,11 @@ content_sha: 53ff6ea8286a509a
     - `views` — integer **обязательный**. Количество просмотров
   - `atbs` — integer **обязательный**. Количество добавлений товаров в корзину
   - `canceled` — integer **обязательный**. Отмены, шт.
+  - `date` — string<date-time> **обязательный**. Дата, за которую представлены данные
   - `clicks` — integer **обязательный**. Количество кликов
   - `cpc` — number **обязательный**. Средняя стоимость клика в базовых единицах валюты [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances)
   - `cr` — number **обязательный**. CR (conversion rate) — отношение количества заказов к общему количеству посещений кампании
   - `ctr` — number **обязательный**. CTR (click-through rate) — отношение числа кликов к количеству показов в процентах
-  - `date` — string<date-time> **обязательный**. Дата, за которую представлены данные
   - `orders` — integer **обязательный**. Количество заказов
   - `shks` — integer **обязательный**. Количество заказанных товаров, шт.
   - `sum` — number **обязательный**. Затраты в базовых единицах валюты [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances)
@@ -104,13 +103,14 @@ content_sha: 53ff6ea8286a509a
 - `sum` — number<double> **обязательный**. Затраты в базовых единицах валюты [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances)
 - `sum_price` — number<double> **обязательный**. Сумма заказов в базовых единицах валюты [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances)
 - `views` — integer **обязательный**. Количество просмотров
+- `currency` — string<ISO 4217> **обязательный**. Валюта [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances)
 
 **400** — Неправильный запрос
 
-- `detail` — string. Детали ошибки
 - `errors` — array[object]
   - `detail` — string. Детали ошибки
   - `field` — string. Параметр с ошибкой
+- `detail` — string. Детали ошибки
 - `origin` — string **обязательный**. ID внутреннего сервиса WB
 - `request_id` — string **обязательный**. ID запроса
 - `status` — integer **обязательный**. HTTP статус-код
@@ -119,22 +119,22 @@ content_sha: 53ff6ea8286a509a
 
 **401** — Не авторизован
 
-- `code` — string. Внутренний код ошибки
+- `title` — string. Заголовок ошибки
 - `detail` — string. Детали ошибки
-- `origin` — string. ID внутреннего сервиса WB
+- `code` — string. Внутренний код ошибки
 - `requestId` — string. Уникальный ID запроса
+- `origin` — string. ID внутреннего сервиса WB
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
-- `title` — string. Заголовок ошибки
 
 **429** — Слишком много запросов
 
-- `code` — string. Внутренний код ошибки
+- `title` — string. Заголовок ошибки
 - `detail` — string. Детали ошибки
-- `origin` — string. ID внутреннего сервиса WB
+- `code` — string. Внутренний код ошибки
 - `requestId` — string. Уникальный ID запроса
+- `origin` — string. ID внутреннего сервиса WB
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
-- `title` — string. Заголовок ошибки

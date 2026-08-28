@@ -9,7 +9,7 @@ tags:
 spec_version: promotion
 source: "https://dev.wildberries.ru/docs/openapi/promotion"
 deprecated: false
-content_sha: f4c046485fb2d480
+content_sha: ca5987cbdffa2c3a
 ---
 
 # Статистика поисковых кластеров
@@ -36,10 +36,10 @@ content_sha: f4c046485fb2d480
 **Тело запроса** (`application/json`):
 
 - `from` — string<date> **обязательный**. Дата начала периода
+- `to` — string<date> **обязательный**. Дата окончания периода
 - `items` — array[object] **обязательный**
   - `advert_id` — integer **обязательный**. ID кампании
   - `nm_id` — integer **обязательный**. Артикул WB
-- `to` — string<date> **обязательный**. Дата окончания периода
 
 ## Ответы
 
@@ -49,18 +49,18 @@ content_sha: f4c046485fb2d480
   - `advert_id` — integer **обязательный**. ID кампании
   - `nm_id` — integer **обязательный**. Артикул WB
   - `stats` — array[object]
-    - `atbs` — integer. Количество добавлений товаров в корзину
-    - `avg_pos` — number<double>. Средняя позиция товара на страницах поисковой выдачи
+    - `norm_query` — string. Поисковый кластер
+    - `views` — integer. Количество просмотров. Для кампаний с типом оплаты `cpc` — за клики — значение будет `null`
     - `clicks` — integer. Количество кликов
+    - `atbs` — integer. Количество добавлений товаров в корзину
+    - `orders` — integer. Количество заказов
+    - `ctr` — number<double>. Кликабельность — отношение числа кликов к количеству показов, %. Для кампаний с типом оплаты `cpc` — за клики — значение будет `null`
     - `cpc` — number<double>. Стоимость одного клика в базовых единицах валюты [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances)
     - `cpm` — number<double>. Средняя стоимость за тысячу показов в базовых единицах валюты [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances). Для кампаний с типом оплаты `cpc` — за клики — значение будет `null`
-    - `ctr` — number<double>. Кликабельность — отношение числа кликов к количеству показов, %. Для кампаний с типом оплаты `cpc` — за клики — значение будет `null`
-    - `currency` — string<ISO 4217>. Валюта [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances)
-    - `norm_query` — string. Поисковый кластер
-    - `orders` — integer. Количество заказов
+    - `avg_pos` — number<double>. Средняя позиция товара на страницах поисковой выдачи
     - `shks` — integer. Количество заказанных товаров, шт.
     - `spend` — number<double>. Затраты на продвижение товаров в конкретном поисковом кластере кампании
-    - `views` — integer. Количество просмотров. Для кампаний с типом оплаты `cpc` — за клики — значение будет `null`
+    - `currency` — string<ISO 4217>. Валюта [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances)
 
 **400** — Неправильный запрос
 
@@ -72,14 +72,14 @@ content_sha: f4c046485fb2d480
 
 **401** — Не авторизован
 
-- `code` — string. Внутренний код ошибки
+- `title` — string. Заголовок ошибки
 - `detail` — string. Детали ошибки
-- `origin` — string. ID внутреннего сервиса WB
+- `code` — string. Внутренний код ошибки
 - `requestId` — string. Уникальный ID запроса
+- `origin` — string. ID внутреннего сервиса WB
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
-- `title` — string. Заголовок ошибки
 
 **403** — Доступ запрещён
 
@@ -91,11 +91,11 @@ content_sha: f4c046485fb2d480
 
 **429** — Слишком много запросов
 
-- `code` — string. Внутренний код ошибки
+- `title` — string. Заголовок ошибки
 - `detail` — string. Детали ошибки
-- `origin` — string. ID внутреннего сервиса WB
+- `code` — string. Внутренний код ошибки
 - `requestId` — string. Уникальный ID запроса
+- `origin` — string. ID внутреннего сервиса WB
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
-- `title` — string. Заголовок ошибки

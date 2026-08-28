@@ -9,7 +9,7 @@ tags:
 spec_version: rates
 source: "https://dev.wildberries.ru/docs/openapi/wb-tariffs"
 deprecated: false
-content_sha: 6725068779702e99
+content_sha: 8b326948dab2bfe8
 ---
 
 # Тарифы на поставку
@@ -39,43 +39,43 @@ content_sha: 6725068779702e99
 
 **200** — Успешно
 
-- `allowUnload` — boolean. Доступность приёмки для поставок данного типа, смотри значение поля `boxTypeID`: - `true` — приёмка доступна - `false` — приёмка не доступна
-- `boxTypeID` — integer. ID типа поставки: - `2` — Короба - `5` — Монопаллеты - `6` — Суперсейф Для типа поставки **QR-поставка с коробами** поле не возвращается
-- `coefficient` — number. Коэффициент приёмки: - `-1` — приёмка недоступна, вне зависимости от значения поля `allowUnload` - `0` — бесплатная приёмка - от `1` — множитель стоимости приёмки
 - `date` — string. Дата начала действия коэффициента
-- `deliveryAdditionalLiter` — string. Стоимость логистики каждого следующего литра
-- `deliveryBaseLiter` — string. Стоимость логистики первого литра
-- `deliveryCoef` — string. Коэффициент логистики
-- `isSortingCenter` — boolean. Тип склада: - `true` — сортировочный центр (СЦ) - `false` — обычный
-- `storageAdditionalLiter` — string. Стоимость хранения каждого последующего литра: - для паллет — всегда будет `null`, т.к. стоимость хранения за единицу паллеты определяется в `StorageBaseLiter` - для коробов — стоимость хранения за каждый последующий литр
-- `storageBaseLiter` — string. Стоимость хранения: - для паллет — стоимость за одну паллету - для коробов — стоимость хранения за первый литр
-- `storageCoef` — string. Коэффициент хранения
+- `coefficient` — number. Коэффициент приёмки: - `-1` — приёмка недоступна, вне зависимости от значения поля `allowUnload` - `0` — бесплатная приёмка - от `1` — множитель стоимости приёмки
 - `warehouseID` — integer. ID склада. По нему можно получить [информацию о складе](./orders-fbw#tag/informationForFormingSupplies/operation/getV1Warehouses)
 - `warehouseName` — string. Название склада
+- `allowUnload` — boolean. Доступность приёмки для поставок данного типа, смотри значение поля `boxTypeID`: - `true` — приёмка доступна - `false` — приёмка не доступна
+- `boxTypeID` — integer. ID типа поставки: - `2` — Короба - `5` — Монопаллеты - `6` — Суперсейф Для типа поставки **QR-поставка с коробами** поле не возвращается
+- `storageCoef` — string. Коэффициент хранения
+- `deliveryCoef` — string. Коэффициент логистики
+- `deliveryBaseLiter` — string. Стоимость логистики первого литра
+- `deliveryAdditionalLiter` — string. Стоимость логистики каждого следующего литра
+- `storageBaseLiter` — string. Стоимость хранения: - для паллет — стоимость за одну паллету - для коробов — стоимость хранения за первый литр
+- `storageAdditionalLiter` — string. Стоимость хранения каждого последующего литра: - для паллет — всегда будет `null`, т.к. стоимость хранения за единицу паллеты определяется в `StorageBaseLiter` - для коробов — стоимость хранения за каждый последующий литр
+- `isSortingCenter` — boolean. Тип склада: - `true` — сортировочный центр (СЦ) - `false` — обычный
 
 **400** — Неправильный запрос
 
-- `detail` — string. Описание ошибки
-- `origin` — string. Сервис, вернувший ошибку
-- `requestId` — string. ID запроса
 - `status` — integer. HTTP статус-код
 - `title` — string. ID ошибки
+- `detail` — string. Описание ошибки
+- `requestId` — string. ID запроса
+- `origin` — string. Сервис, вернувший ошибку
 
 **401** — Не авторизован
 
-- `code` — string. Внутренний код ошибки
+- `title` — string. Заголовок ошибки
 - `detail` — string. Детали ошибки
-- `origin` — string. ID внутреннего сервиса WB
+- `code` — string. Внутренний код ошибки
 - `requestId` — string. Уникальный ID запроса
+- `origin` — string. ID внутреннего сервиса WB
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
-- `title` — string. Заголовок ошибки
 
 **402** — Требуется платёж
 
-- `detail` — string. Детали ошибки. Ошибка возвращается только сервисам из [Каталога решений для бизнеса](/business-solutions)
 - `title` — string. Заголовок ошибки
+- `detail` — string. Детали ошибки. Ошибка возвращается только сервисам из [Каталога решений для бизнеса](/business-solutions)
 
 **403** — Доступ запрещён
 
@@ -83,11 +83,11 @@ content_sha: 6725068779702e99
 
 **429** — Слишком много запросов
 
-- `code` — string. Внутренний код ошибки
+- `title` — string. Заголовок ошибки
 - `detail` — string. Детали ошибки
-- `origin` — string. ID внутреннего сервиса WB
+- `code` — string. Внутренний код ошибки
 - `requestId` — string. Уникальный ID запроса
+- `origin` — string. ID внутреннего сервиса WB
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
-- `title` — string. Заголовок ошибки

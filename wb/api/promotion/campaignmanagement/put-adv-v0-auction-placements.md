@@ -9,7 +9,7 @@ tags:
 spec_version: promotion
 source: "https://dev.wildberries.ru/docs/openapi/promotion"
 deprecated: false
-content_sha: 31554e1180d53994
+content_sha: 72d746f5a86046b3
 ---
 
 # Изменение мест размещения в кампаниях с ручной ставкой
@@ -39,8 +39,8 @@ content_sha: 31554e1180d53994
 - `placements` — array[object] **обязательный**. Места размещения в кампаниях
   - `advert_id` — integer<int64> **обязательный**. ID кампании
   - `placements` — object **обязательный**. Места размещения
-    - `recommendations` — boolean **обязательный**. Размещение в рекомендациях: - `false` — отключено - `true` — включено
     - `search` — boolean **обязательный**. Размещение в поиске: - `false` — отключено - `true` — включено
+    - `recommendations` — boolean **обязательный**. Размещение в рекомендациях: - `false` — отключено - `true` — включено
 
 ## Ответы
 
@@ -56,22 +56,22 @@ content_sha: 31554e1180d53994
 
 **401** — Не авторизован
 
-- `code` — string. Внутренний код ошибки
+- `title` — string. Заголовок ошибки
 - `detail` — string. Детали ошибки
-- `origin` — string. ID внутреннего сервиса WB
+- `code` — string. Внутренний код ошибки
 - `requestId` — string. Уникальный ID запроса
+- `origin` — string. ID внутреннего сервиса WB
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
-- `title` — string. Заголовок ошибки
 
 **429** — Слишком много запросов
 
-- `code` — string. Внутренний код ошибки
+- `title` — string. Заголовок ошибки
 - `detail` — string. Детали ошибки
-- `origin` — string. ID внутреннего сервиса WB
+- `code` — string. Внутренний код ошибки
 - `requestId` — string. Уникальный ID запроса
+- `origin` — string. ID внутреннего сервиса WB
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
-- `title` — string. Заголовок ошибки

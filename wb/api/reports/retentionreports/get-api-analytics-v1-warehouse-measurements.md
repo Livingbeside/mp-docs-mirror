@@ -9,7 +9,7 @@ tags:
 spec_version: reports
 source: "https://dev.wildberries.ru/docs/openapi/reports"
 deprecated: false
-content_sha: 8ef999926ffe7c90
+content_sha: 314c0e7dedf643bd
 ---
 
 # Замеры склада
@@ -44,56 +44,56 @@ content_sha: 8ef999926ffe7c90
 
 - `data` — object **обязательный**. Данные ответа
   - `reports` — array[object] **обязательный**. Замеры
-    - `dimId` — integer. ID замера
-    - `dt` — string<date-time>. Дата и время
-    - `height` — integer. Высота, см
-    - `length` — integer. Длина, см
     - `nmId` — integer. Артикул WB
-    - `photoUrls` — array[string]. Фото замеров
     - `subjectName` — string. Предмет
+    - `dimId` — integer. ID замера
     - `volume` — number. Объём, л
     - `width` — integer. Ширина, см
+    - `length` — integer. Длина, см
+    - `height` — integer. Высота, см
+    - `photoUrls` — array[string]. Фото замеров
+    - `dt` — string<date-time>. Дата и время
   - `total` — integer **обязательный**. Количество замеров в отчёте. Без учёта `limit` и `offset`
 
 **400** — Неправильный запрос
 
-- `detail` — string. Детали ошибки
-- `origin` — string. ID внутреннего сервиса WB
-- `requestId` — string. Уникальный ID запроса
-- `status` — integer. HTTP статус-код
 - `title` — string. Заголовок ошибки
+- `status` — integer. HTTP статус-код
+- `detail` — string. Детали ошибки
+- `requestId` — string. Уникальный ID запроса
+- `origin` — string. ID внутреннего сервиса WB
 
 **401** — Не авторизован
 
-- `code` — string. Внутренний код ошибки
+- `title` — string. Заголовок ошибки
 - `detail` — string. Детали ошибки
-- `origin` — string. ID внутреннего сервиса WB
+- `code` — string. Внутренний код ошибки
 - `requestId` — string. Уникальный ID запроса
+- `origin` — string. ID внутреннего сервиса WB
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
-- `title` — string. Заголовок ошибки
 
 **402** — Требуется платёж
 
-- `detail` — string. Детали ошибки. Ошибка возвращается только сервисам из [Каталога решений для бизнеса](/business-solutions)
 - `title` — string. Заголовок ошибки
+- `detail` — string. Детали ошибки. Ошибка возвращается только сервисам из [Каталога решений для бизнеса](/business-solutions)
 
 **403** — Доступ запрещён
 
-- `detail` — string. Детали ошибки
-- `origin` — string. ID внутреннего сервиса WB
-- `requestId` — string. Уникальный ID запроса
-- `status` — integer. HTTP статус-код
 - `title` — string. Заголовок ошибки
+- `status` — integer. HTTP статус-код
+- `detail` — string. Детали ошибки
+- `requestId` — string. Уникальный ID запроса
+- `origin` — string. ID внутреннего сервиса WB
 
 **429** — Слишком много запросов
 
-- `code` — string. Внутренний код ошибки
+- `title` — string. Заголовок ошибки
 - `detail` — string. Детали ошибки
-- `origin` — string. ID внутреннего сервиса WB
+- `code` — string. Внутренний код ошибки
 - `requestId` — string. Уникальный ID запроса
+- `origin` — string. ID внутреннего сервиса WB
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
-- `title` — string. Заголовок ошибки

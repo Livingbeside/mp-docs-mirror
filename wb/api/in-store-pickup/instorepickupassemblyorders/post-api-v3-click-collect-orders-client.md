@@ -9,7 +9,7 @@ tags:
 spec_version: instorepickup
 source: "https://dev.wildberries.ru/docs/openapi/in-store-pickup"
 deprecated: false
-content_sha: 95cc96d82f4e988b
+content_sha: 4510a67f990a0c9d
 ---
 
 # Информация о покупателе
@@ -45,46 +45,46 @@ content_sha: 95cc96d82f4e988b
 **200** — Успешно
 
 - `orders` — array[object]
+  - `phone` — string. Телефон для связи с покупателем. Чтобы связаться с покупателем наберите этот номер и введите добавочный код. Данный номер не является прямым номером покупателя
   - `firstName` — string. Имя покупателя
   - `orderID` — integer. ID сборочного задания
-  - `phone` — string. Телефон для связи с покупателем. Чтобы связаться с покупателем наберите этот номер и введите добавочный код. Данный номер не является прямым номером покупателя
   - `phoneCode` — integer. Добавочный код
 
 **400** — Неправильный запрос
 
 - `code` — string. Код ошибки
-- `data` — object. Дополнительные данные, обогащающие ошибку
 - `message` — string. Описание ошибки
+- `data` — object. Дополнительные данные, обогащающие ошибку
 
 **401** — Не авторизован
 
-- `code` — string. Внутренний код ошибки
+- `title` — string. Заголовок ошибки
 - `detail` — string. Детали ошибки
-- `origin` — string. ID внутреннего сервиса WB
+- `code` — string. Внутренний код ошибки
 - `requestId` — string. Уникальный ID запроса
+- `origin` — string. ID внутреннего сервиса WB
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
-- `title` — string. Заголовок ошибки
 
 **402** — Требуется платёж
 
-- `detail` — string. Детали ошибки. Ошибка возвращается только сервисам из [Каталога решений для бизнеса](/business-solutions)
 - `title` — string. Заголовок ошибки
+- `detail` — string. Детали ошибки. Ошибка возвращается только сервисам из [Каталога решений для бизнеса](/business-solutions)
 
 **403** — Доступ запрещён
 
 - `code` — string. Код ошибки
-- `data` — object. Дополнительные данные, обогащающие ошибку
 - `message` — string. Описание ошибки
+- `data` — object. Дополнительные данные, обогащающие ошибку
 
 **429** — Слишком много запросов
 
-- `code` — string. Внутренний код ошибки
+- `title` — string. Заголовок ошибки
 - `detail` — string. Детали ошибки
-- `origin` — string. ID внутреннего сервиса WB
+- `code` — string. Внутренний код ошибки
 - `requestId` — string. Уникальный ID запроса
+- `origin` — string. ID внутреннего сервиса WB
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
-- `title` — string. Заголовок ошибки

@@ -9,7 +9,7 @@ tags:
 spec_version: communication
 source: "https://dev.wildberries.ru/docs/openapi/user-communication"
 deprecated: false
-content_sha: 4bb426add3219a4d
+content_sha: 58db51a11ed90ec4
 ---
 
 # Получить файл из сообщения{{ /api/v1/seller/download/{id} }}
@@ -46,44 +46,44 @@ content_sha: 4bb426add3219a4d
 
 **400** — Неправильный запрос
 
-- `detail` — string. Детали ошибки
-- `error` — string. Текст ошибки
-- `origin` — string. ID внутреннего сервиса WB
-- `requestId` — string. Уникальный ID запроса
 - `status` — number. HTTP статус-код
 - `title` — string. Заголовок ошибки
+- `origin` — string. ID внутреннего сервиса WB
+- `detail` — string. Детали ошибки
+- `requestId` — string. Уникальный ID запроса
+- `error` — string. Текст ошибки
 
 **401** — Не авторизован
 
-- `code` — string. Внутренний код ошибки
+- `title` — string. Заголовок ошибки
 - `detail` — string. Детали ошибки
-- `origin` — string. ID внутреннего сервиса WB
+- `code` — string. Внутренний код ошибки
 - `requestId` — string. Уникальный ID запроса
+- `origin` — string. ID внутреннего сервиса WB
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
-- `title` — string. Заголовок ошибки
 
 **402** — Требуется платёж
 
-- `detail` — string. Детали ошибки. Ошибка возвращается только сервисам из [Каталога решений для бизнеса](/business-solutions)
 - `title` — string. Заголовок ошибки
+- `detail` — string. Детали ошибки. Ошибка возвращается только сервисам из [Каталога решений для бизнеса](/business-solutions)
 
 **429** — Слишком много запросов
 
-- `code` — string. Внутренний код ошибки
+- `title` — string. Заголовок ошибки
 - `detail` — string. Детали ошибки
-- `origin` — string. ID внутреннего сервиса WB
+- `code` — string. Внутренний код ошибки
 - `requestId` — string. Уникальный ID запроса
+- `origin` — string. ID внутреннего сервиса WB
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
-- `title` — string. Заголовок ошибки
 
 **451** — Файл не прошёл модерацию
 
-- `detail` — string. Детали ошибки
-- `origin` — string. ID внутреннего сервиса WB
-- `requestId` — string. ID запроса
 - `status` — integer. HTTP статус-код
 - `title` — string. Заголовок ошибки
+- `origin` — string. ID внутреннего сервиса WB
+- `detail` — string. Детали ошибки
+- `requestId` — string. ID запроса

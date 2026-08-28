@@ -9,7 +9,7 @@ tags:
 spec_version: promotion
 source: "https://dev.wildberries.ru/docs/openapi/promotion"
 deprecated: false
-content_sha: 35244bf68070c60b
+content_sha: 62686078bd84e4e2
 ---
 
 # Рекомендуемые ставки для карточек товаров и поисковых кластеров
@@ -65,11 +65,11 @@ content_sha: 35244bf68070c60b
 - `paymentType` — string (cpm). Тип оплаты: - `cpm` — за показы
 - `advertId` — integer<int64>. ID кампании
 - `levels` — array[object]. Рекомендуемые ставки для карточек товаров
-  - `range11To34` — object **обязательный**. Ставка для попадания в позиции 11-34
-    - `bidKopecks` — integer. Рекомендуемая ставка в разменных единицах — 0,01 от базовой валюты [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances).
   - `range1To2` — object **обязательный**. Ставка для попадания в позиции 1-2
     - `bidKopecks` — integer. Рекомендуемая ставка в разменных единицах — 0,01 от базовой валюты [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances).
   - `range3To10` — object **обязательный**. Ставка для попадания в позиции 3-10
+    - `bidKopecks` — integer. Рекомендуемая ставка в разменных единицах — 0,01 от базовой валюты [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances).
+  - `range11To34` — object **обязательный**. Ставка для попадания в позиции 11-34
     - `bidKopecks` — integer. Рекомендуемая ставка в разменных единицах — 0,01 от базовой валюты [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances).
 - `nmId` — integer<int64>. Артикул WB
 - `paymentType` — string (cpc). Тип оплаты: - `cpc` — за клики
@@ -78,22 +78,22 @@ content_sha: 35244bf68070c60b
 
 **401** — Не авторизован
 
-- `code` — string. Внутренний код ошибки
+- `title` — string. Заголовок ошибки
 - `detail` — string. Детали ошибки
-- `origin` — string. ID внутреннего сервиса WB
+- `code` — string. Внутренний код ошибки
 - `requestId` — string. Уникальный ID запроса
+- `origin` — string. ID внутреннего сервиса WB
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
-- `title` — string. Заголовок ошибки
 
 **429** — Слишком много запросов
 
-- `code` — string. Внутренний код ошибки
+- `title` — string. Заголовок ошибки
 - `detail` — string. Детали ошибки
-- `origin` — string. ID внутреннего сервиса WB
+- `code` — string. Внутренний код ошибки
 - `requestId` — string. Уникальный ID запроса
+- `origin` — string. ID внутреннего сервиса WB
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
-- `title` — string. Заголовок ошибки

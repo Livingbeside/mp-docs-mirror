@@ -9,7 +9,7 @@ tags:
 spec_version: ordersfbw
 source: "https://dev.wildberries.ru/docs/openapi/orders-fbw"
 deprecated: false
-content_sha: e81b9f29cc416a01
+content_sha: 1cf703d01d8088da
 ---
 
 # Опции приёмки
@@ -41,50 +41,50 @@ content_sha: e81b9f29cc416a01
 
 **Тело запроса** (`application/json`):
 
-- `barcode` — string. Баркод из карточки товара
 - `quantity` — integer. Суммарное количество товаров, планируемых для поставки. **Максимум 999999**
+- `barcode` — string. Баркод из карточки товара
 
 ## Ответы
 
 **200** — Успешно
 
-- `requestId` — string. ID запроса при наличии ошибок
 - `result` — array[object]
   - `barcode` — string. Баркод из карточки товара
   - `error` — object. Данные ошибки. При наличии
-    - `detail` — string. Описание ошибки
     - `title` — string. ID ошибки
+    - `detail` — string. Описание ошибки
   - `isError` — boolean. Наличие ошибки: - `true` — ошибка есть - Поля нет — ошибка отсутствует
   - `warehouses` — array[object]. Список складов. При наличии ошибки будет `null`
+    - `warehouseID` — integer. ID склада. По нему можно получить [информацию о складе](./orders-fbw#tag/informationForFormingSupplies/operation/getV1Warehouses)
     - `canBox` — boolean. Тип упаковки **Короб**: - `true` — доступен - `false` — недоступен
     - `canMonopallet` — boolean. Тип упаковки **Монопаллета**: - `true` — доступен - `false` — недоступен
     - `canSupersafe` — boolean. Тип упаковки **Суперсейф**: - `true` — доступен - `false` — недоступен
     - `isBoxOnPallet` — boolean. Тип поставки **Поштучная палета**: - `true` — доступен - `false` — недоступен
-    - `warehouseID` — integer. ID склада. По нему можно получить [информацию о складе](./orders-fbw#tag/informationForFormingSupplies/operation/getV1Warehouses)
+- `requestId` — string. ID запроса при наличии ошибок
 
 **400** — Некорректный запрос
 
-- `detail` — string. Описание ошибки
-- `origin` — string. Сервис, вернувший ошибку
-- `requestId` — string. ID запроса
 - `status` — integer. HTTP статус-код
 - `title` — string. ID ошибки
+- `detail` — string. Описание ошибки
+- `requestId` — string. ID запроса
+- `origin` — string. Сервис, вернувший ошибку
 
 **401** — Не авторизован
 
-- `code` — string. Внутренний код ошибки
+- `title` — string. Заголовок ошибки
 - `detail` — string. Детали ошибки
-- `origin` — string. ID внутреннего сервиса WB
+- `code` — string. Внутренний код ошибки
 - `requestId` — string. Уникальный ID запроса
+- `origin` — string. ID внутреннего сервиса WB
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
-- `title` — string. Заголовок ошибки
 
 **402** — Требуется платёж
 
-- `detail` — string. Детали ошибки. Ошибка возвращается только сервисам из [Каталога решений для бизнеса](/business-solutions)
 - `title` — string. Заголовок ошибки
+- `detail` — string. Детали ошибки. Ошибка возвращается только сервисам из [Каталога решений для бизнеса](/business-solutions)
 
 **403** — Доступ запрещён
 
@@ -92,11 +92,11 @@ content_sha: e81b9f29cc416a01
 
 **429** — Слишком много запросов
 
-- `code` — string. Внутренний код ошибки
+- `title` — string. Заголовок ошибки
 - `detail` — string. Детали ошибки
-- `origin` — string. ID внутреннего сервиса WB
+- `code` — string. Внутренний код ошибки
 - `requestId` — string. Уникальный ID запроса
+- `origin` — string. ID внутреннего сервиса WB
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
-- `title` — string. Заголовок ошибки
