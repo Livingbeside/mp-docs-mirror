@@ -1,0 +1,30 @@
+---
+title: Обратная связь
+marketplace: yandex-market
+source: "https://yandex.ru/dev/market/partner-api/doc/ru/feedback.md"
+fetched_at: "2026-08-28T11:51:43Z"
+content_sha: eec7d5c581916397
+---
+
+---
+metadata:
+  - name: generator
+    content: Diplodoc Platform v5.55.3
+alternate:
+  - https://yandex.ru/dev/market/partner-api/doc/en/feedback.md
+  - https://yandex.ru/dev/market/partner-api/doc/ru/feedback.md
+  - https://yandex.ru/dev/market/partner-api/doc/zh/feedback.md
+  - href: ru/feedback.md
+    type: text/markdown
+    title: Markdown version
+  - href: llms.txt
+    type: text/markdown
+    title: llms.txt
+---
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
+
+# Обратная связь
+
+Если у вас остались вопросы по API Яндекс Маркета для продавцов, вы можете задать их через форму обратной связи.
+
+<iframe frameborder="0" width="100%" src="https://forms.yandex.ru/surveys/10013648/?iframe=1"></iframe>

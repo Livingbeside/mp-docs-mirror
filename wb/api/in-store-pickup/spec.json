@@ -1,0 +1,2858 @@
+{
+  "components": {
+    "examples": {
+      "CustomsDeclarationResponse": {
+        "value": {
+          "requestId": "7849e1c4-d30e-4937-abe3-0e54e85874bd",
+          "results": [
+            {
+              "isError": false,
+              "orderId": 567891234
+            },
+            {
+              "errors": [
+                {
+                  "code": 400,
+                  "detail": "InvalidOriginCountryCode"
+                }
+              ],
+              "isError": true,
+              "orderId": 987654321
+            },
+            {
+              "errors": [
+                {
+                  "code": 422,
+                  "detail": "OrderNotB2B"
+                }
+              ],
+              "isError": true,
+              "orderId": 123456789
+            },
+            {
+              "errors": [
+                {
+                  "code": 409,
+                  "detail": "StatusMismatch"
+                }
+              ],
+              "isError": true,
+              "orderId": 543216789
+            }
+          ]
+        }
+      },
+      "GetFinalPriceSuccess": {
+        "value": {
+          "requestId": "f1787bd2d1fdc35d6f537316514y4a05",
+          "results": [
+            {
+              "data": {
+                "convertedCurrencyCode": 643,
+                "convertedOriginalFinalPrice": 27000,
+                "convertedOriginalPrice": 29000,
+                "currencyCode": 643,
+                "originalFinalPrice": 27000,
+                "originalPrice": 29000
+              },
+              "isError": false,
+              "orderId": 1234567890
+            }
+          ]
+        }
+      },
+      "IncorrectParameter": {
+        "value": {
+          "code": "IncorrectParameter",
+          "message": "Передан некорректный параметр"
+        }
+      },
+      "IncorrectRequestBody": {
+        "value": {
+          "code": "IncorrectRequestBody",
+          "message": "Некорректное тело запроса"
+        }
+      },
+      "InvalidPasscode": {
+        "description": "Введён неправильный проверочный код",
+        "value": {
+          "code": "InvalidPasscode"
+        }
+      },
+      "NewOrderClick": {
+        "value": {
+          "orders": [
+            {
+              "article": "wb1702fyjh",
+              "cargoType": 1,
+              "chrtId": 987654321,
+              "convertedCurrencyCode": 643,
+              "convertedFinalPrice": 14000,
+              "convertedPrice": 14000,
+              "createdAt": "2024-10-29T10:19:30Z",
+              "currencyCode": 643,
+              "ddate": "29.10.2024",
+              "finalPrice": 14000,
+              "id": 1234567890,
+              "isZeroOrder": false,
+              "nmId": 123456789,
+              "options": {
+                "isB2b": true
+              },
+              "orderCode": "23457822-6667",
+              "payMode": "prepaid",
+              "price": 14000,
+              "requiredMeta": [
+                "sgtin"
+              ],
+              "rid": "1234567673554519872.0.0",
+              "salePrice": 14000,
+              "skus": [
+                "2041546265353"
+              ],
+              "warehouseAddress": "Москва, район Якиманка, Софийская набережная, 4 с1",
+              "warehouseId": 1234567
+            }
+          ]
+        }
+      },
+      "OrderNotFound": {
+        "description": "Заказ не найден",
+        "value": {
+          "code": "NotFound"
+        }
+      }
+    },
+    "responses": {
+      "401": {
+        "content": {
+          "application/problem+json": {
+            "example": {
+              "code": "07e4668e--a53a3d31f8b0-[UK-oWaVDUqNrKG]; 03bce=277; 84bd353bf-75",
+              "detail": "token problem; token is malformed: could not base64 decode signature: illegal base64 data at input byte 84",
+              "origin": "s2s-api-auth-catalog",
+              "requestId": "7b80742415072fe8b6b7f7761f1d1211",
+              "status": 401,
+              "statusText": "Unauthorized",
+              "timestamp": "2024-09-30T06:52:38Z",
+              "title": "unauthorized"
+            },
+            "schema": {
+              "properties": {
+                "code": {
+                  "description": "Внутренний код ошибки",
+                  "type": "string"
+                },
+                "detail": {
+                  "description": "Детали ошибки",
+                  "type": "string"
+                },
+                "origin": {
+                  "description": "ID внутреннего сервиса WB",
+                  "type": "string"
+                },
+                "requestId": {
+                  "description": "Уникальный ID запроса",
+                  "type": "string"
+                },
+                "status": {
+                  "description": "HTTP статус-код",
+                  "type": "number"
+                },
+                "statusText": {
+                  "description": "Расшифровка HTTP статус-кода",
+                  "type": "string"
+                },
+                "timestamp": {
+                  "description": "Дата и время запроса",
+                  "format": "date-time",
+                  "type": "string"
+                },
+                "title": {
+                  "description": "Заголовок ошибки",
+                  "type": "string"
+                }
+              },
+              "type": "object"
+            }
+          }
+        },
+        "description": "<span class='response__value '>Не авторизован</span>"
+      },
+      "402": {
+        "content": {
+          "application/problem+json": {
+            "example": {
+              "detail": "wb solution for business has insufficient funds on its balance. please top up the balance in the company's personal account https://dev.wildberries.ru/company",
+              "title": "payment required"
+            },
+            "schema": {
+              "properties": {
+                "detail": {
+                  "description": "Детали ошибки. Ошибка возвращается только сервисам из [Каталога решений для бизнеса](/business-solutions)",
+                  "type": "string"
+                },
+                "title": {
+                  "description": "Заголовок ошибки",
+                  "type": "string"
+                }
+              },
+              "type": "object"
+            }
+          }
+        },
+        "description": "<span class='response__value '>Требуется платёж</span>"
+      },
+      "429": {
+        "content": {
+          "application/problem+json": {
+            "example": {
+              "code": "07e4668e-ac2242c5c8c5-[UK-4dx7JUdskGZ]",
+              "detail": "limited by c122a060-a7fb-4bb4-abb0-32fd4e18d489",
+              "origin": "s2s-api-auth-catalog",
+              "requestId": "9d3c02cc698f8b041c661a7c28bed293",
+              "status": 429,
+              "statusText": "Too Many Requests",
+              "timestamp": "2024-09-30T06:52:38Z",
+              "title": "too many requests"
+            },
+            "schema": {
+              "properties": {
+                "code": {
+                  "description": "Внутренний код ошибки",
+                  "type": "string"
+                },
+                "detail": {
+                  "description": "Детали ошибки",
+                  "type": "string"
+                },
+                "origin": {
+                  "description": "ID внутреннего сервиса WB",
+                  "type": "string"
+                },
+                "requestId": {
+                  "description": "Уникальный ID запроса",
+                  "type": "string"
+                },
+                "status": {
+                  "description": "HTTP статус-код",
+                  "type": "number"
+                },
+                "statusText": {
+                  "description": "Расшифровка HTTP статус-кода",
+                  "type": "string"
+                },
+                "timestamp": {
+                  "description": "Дата и время запроса",
+                  "format": "date-time",
+                  "type": "string"
+                },
+                "title": {
+                  "description": "Заголовок ошибки",
+                  "type": "string"
+                }
+              },
+              "type": "object"
+            }
+          }
+        },
+        "description": "<span class='response__value '>Слишком много запросов</span>"
+      },
+      "AccessDenied": {
+        "content": {
+          "application/json": {
+            "example": {
+              "code": "AccessDenied",
+              "message": "Доступ запрещён"
+            },
+            "schema": {
+              "$ref": "#/components/schemas/Error"
+            }
+          }
+        },
+        "description": "<span class='response__value '>Доступ запрещён</span>"
+      },
+      "AccessDeniedBatch": {
+        "content": {
+          "application/json": {
+            "example": {
+              "detail": {},
+              "origin": "market-public-api",
+              "requestId": "f1787bd2d1fdс35d6f537316514у4a05",
+              "title": "AccessDenied"
+            },
+            "schema": {
+              "$ref": "#/components/schemas/api.BatchError"
+            }
+          }
+        },
+        "description": "<span class='response__value '>Доступ запрещён</span>"
+      },
+      "IncorrectRequest": {
+        "content": {
+          "application/json": {
+            "example": {
+              "detail": {},
+              "origin": "market-public-api",
+              "requestId": "f1787bd2d1fdс35d6f537316514у4a05",
+              "title": "IncorrectRequest"
+            },
+            "schema": {
+              "$ref": "#/components/schemas/api.BatchError"
+            }
+          }
+        },
+        "description": "<span class='response__value '>Неправильный запрос</span>"
+      }
+    },
+    "schemas": {
+      "Error": {
+        "nullable": false,
+        "properties": {
+          "code": {
+            "description": "Код ошибки",
+            "nullable": false,
+            "type": "string"
+          },
+          "data": {
+            "description": "Дополнительные данные, обогащающие ошибку",
+            "nullable": true,
+            "type": "object"
+          },
+          "message": {
+            "description": "Описание ошибки",
+            "nullable": false,
+            "type": "string"
+          }
+        },
+        "type": "object"
+      },
+      "MetaDetailsErrors": {
+        "description": "Ошибки проверки идентификаторов маркировки",
+        "items": {
+          "properties": {
+            "decision": {
+              "description": "Ошибки проверки идентификаторов маркировки. <br>\n- `imei`\n  - `pending` — Проверка маркировки продолжается. Дождитесь изменения статуса проверки\n  - `required` — Маркировка обязательна и не закреплена за сборочным заданием\n  - `imeiInvalidFormat` — Указан неверный формат маркировки\n  - `imeiAlreadySold` — Товар с этим IMEI уже продан\n- `uin`\n  - `required` — Маркировка обязательна и не закреплена за сборочным заданием\n- `sgtin`\n  - `pending` — Проверка маркировки продолжается. Дождитесь изменения статуса проверки\n  - `required` — Маркировка обязательна и не закреплена за сборочным заданием\n  - `sgtinInvalidFormat` — Указан неверный формат маркировки\n  - `sgtinNotFound` — Маркировка не найдена в [Честном знаке](https://chestnyznak.ru)\n  - `sgtinEmitted` —  Маркировка эмитирована\n  - `sgtinApplied` — Не пройдена процедура Ввод в оборот\n  - `sgtinWrittenOff` — Списан\n  - `sgtinRetired` — Выбыл\n  - `sgtinWithdrawn` — Выбыл\n  - `sgtinDisaggregated` — Расформирован\n  - `sgtinDisaggregation` — Расформирован\n  - `sgtinAppliedNotPaid` — Не оплачен\n- `gtin`\n  - `required` — Маркировка обязательна и не закреплена за сборочным заданием\n- `expiration`\n  - `required` — Маркировка обязательна и не закреплена за сборочным заданием\n- `customsDeclaration`\n  - `required` — Маркировка обязательна и не закреплена за сборочным заданием\n",
+              "example": "uinMaySell",
+              "type": "string"
+            },
+            "key": {
+              "description": "Идентификатор маркировки",
+              "example": "uin",
+              "type": "string"
+            },
+            "value": {
+              "description": "Значение идентификатора маркировки",
+              "example": null,
+              "nullable": true,
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "type": "array"
+      },
+      "api.BatchCustomsDeclarationErrorResponse": {
+        "properties": {
+          "code": {
+            "description": "Код ошибки:\n  - `404`\n  - `409`\n  - `400`\n",
+            "example": 404,
+            "type": "integer"
+          },
+          "detail": {
+            "description": "- `NotFound` — сборочное задание не найдено\n- `StatusMismatch` — операция невозможна для этого статуса сборочного задания\n- `OrderNotB2B` — операция доступна только для сборочных заданий с признаком B2B-продажи `\"isB2b\":true`\n- `InvalidOriginCountryCode` — некорректный код страны происхождения товара\n",
+            "example": "NotFound",
+            "type": "string"
+          }
+        },
+        "required": [
+          "code",
+          "detail"
+        ],
+        "type": "object"
+      },
+      "api.BatchError": {
+        "properties": {
+          "detail": {
+            "description": "Детали ошибки",
+            "example": {},
+            "nullable": true,
+            "type": "object"
+          },
+          "origin": {
+            "description": "ID внутреннего сервиса WB",
+            "example": "market-public-api",
+            "type": "string"
+          },
+          "requestId": {
+            "description": "Уникальный ID запроса",
+            "example": "f1787bd2d1fdс35d6f537316514у4a05",
+            "type": "string"
+          },
+          "title": {
+            "description": "Заголовок ошибки",
+            "example": "IncorrectRequest",
+            "type": "string"
+          }
+        },
+        "required": [
+          "origin",
+          "requestId",
+          "title"
+        ],
+        "type": "object"
+      },
+      "api.BatchErrorFinalPriceResponse": {
+        "properties": {
+          "code": {
+            "description": "Код ошибки:\n  - `404` — `NotFound`\n  - `400` — `StatusMismatch`\n  - `422` — `PriceNotCalculated`\n",
+            "example": 404,
+            "type": "integer"
+          },
+          "detail": {
+            "description": "- `NotFound` — сборочное задание не найдено (`404`)\n- `StatusMismatch` — операция невозможна для этого статуса сборочного задания (`400`)\n- `PriceNotCalculated` — операция невозможна для сборочных заданий, созданных ранее 23.07.2026 (`422`)\n",
+            "example": "NotFound",
+            "type": "string"
+          }
+        },
+        "required": [
+          "code",
+          "detail"
+        ],
+        "type": "object"
+      },
+      "api.BatchErrorResponse": {
+        "properties": {
+          "code": {
+            "description": "Код ошибки:\n  - `404`\n  - `409`\n  - `400`\n",
+            "example": 404,
+            "type": "integer"
+          },
+          "detail": {
+            "description": "- `NotFound` — сборочное задание не найдено\n- `StatusMismatch` — операция невозможна для этого статуса сборочного задания\n- `ImeiIsNotFilled` — не заполнен IMEI\n- `OrderNotB2B` — операция доступна только для сборочных заданий с признаком B2B-продажи `\"isB2b\":true`\n- `InvalidOriginCountryCode` — некорректный код страны происхождения товара\n",
+            "example": "NotFound",
+            "type": "string"
+          }
+        },
+        "type": "object"
+      },
+      "api.CheckIdentityRequest": {
+        "example": {
+          "orderCode": "170046918-0011",
+          "passcode": "4567"
+        },
+        "properties": {
+          "orderCode": {
+            "description": "Уникальный ID заказа покупателя",
+            "type": "string"
+          },
+          "passcode": {
+            "description": "Код подтверждения",
+            "type": "string"
+          }
+        },
+        "type": "object"
+      },
+      "api.CheckedIdentity": {
+        "properties": {
+          "ok": {
+            "description": "Принадлежит ли заказ покупателю:\n  - `true` — принадлежит\n  - `false` — значение не применяется. Если заказ не принадлежит покупателю, вы получите ответ со статус-кодом `409`\n",
+            "type": "boolean"
+          }
+        },
+        "type": "object"
+      },
+      "api.CustomsDeclarationSetResponse": {
+        "example": {
+          "requestId": "03615778-eb9e-4f55-b4O4-fd3ac0fad2сc",
+          "results": [
+            {
+              "errors": [
+                {
+                  "code": 404,
+                  "detail": "NotFound"
+                }
+              ],
+              "isError": true,
+              "orderId": 123456
+            },
+            {
+              "isError": false,
+              "orderId": 234567
+            }
+          ]
+        },
+        "properties": {
+          "requestId": {
+            "description": "Уникальный ID запроса",
+            "example": "f1787bd2d1fdс35d6f537316514у4a05"
+          },
+          "results": {
+            "items": {
+              "$ref": "#/components/schemas/api.StatusSetCustomsDeclarationResponse"
+            },
+            "type": "array"
+          }
+        },
+        "required": [
+          "requestId",
+          "results"
+        ],
+        "type": "object"
+      },
+      "api.Error": {
+        "properties": {
+          "code": {
+            "type": "string"
+          },
+          "data": {
+            "type": "object"
+          },
+          "message": {
+            "type": "string"
+          }
+        },
+        "type": "object"
+      },
+      "api.GTIN": {
+        "properties": {
+          "gtin": {
+            "description": "GTIN",
+            "example": "1234567890123",
+            "maxLength": 13,
+            "minLength": 13,
+            "type": "string"
+          },
+          "orderId": {
+            "description": "ID сборочного задания",
+            "example": 123456,
+            "type": "integer"
+          }
+        },
+        "required": [
+          "gtin",
+          "orderId"
+        ],
+        "type": "object"
+      },
+      "api.IMEI": {
+        "properties": {
+          "imei": {
+            "description": "IMEI",
+            "example": "654321741987258",
+            "maxLength": 15,
+            "minLength": 15,
+            "type": "string"
+          },
+          "orderId": {
+            "description": "ID сборочного задания",
+            "example": 123456,
+            "type": "integer"
+          }
+        },
+        "required": [
+          "orderId",
+          "imei"
+        ],
+        "type": "object"
+      },
+      "api.MetaDetailsResponse": {
+        "example": {
+          "requestId": "03615778-eb9e-4f55-b4O4-fd3ac0fad2сc",
+          "results": [
+            {
+              "isError": false,
+              "orderId": 234567
+            },
+            {
+              "errors": [
+                {
+                  "code": 404,
+                  "detail": "NotFound"
+                }
+              ],
+              "isError": true,
+              "orderId": 123456
+            },
+            {
+              "errors": [
+                {
+                  "code": 409,
+                  "detail": "MetaValidationFail",
+                  "metaDetails": [
+                    {
+                      "decision": "imeiAlreadySold",
+                      "key": "imei",
+                      "value": "359876543210925"
+                    }
+                  ]
+                }
+              ],
+              "isError": true,
+              "orderId": 345678
+            }
+          ]
+        },
+        "properties": {
+          "requestId": {
+            "description": "Уникальный ID запроса",
+            "example": "f1787bd2d1fdс35d6f537316514у4a05"
+          },
+          "results": {
+            "items": {
+              "properties": {
+                "errors": {
+                  "description": "Детали ошибки",
+                  "items": {
+                    "properties": {
+                      "code": {
+                        "description": "Код ошибки",
+                        "type": "integer"
+                      },
+                      "detail": {
+                        "description": "- `NotFound` — сборочное задание не найдено\n- `StatusMismatch` — операция невозможна для этого статуса сборочного задания\n- `MetaValidationFail` — идентификаторы маркировки не прошли проверку\n",
+                        "type": "string"
+                      },
+                      "metaDetails": {
+                        "allOf": [
+                          {
+                            "$ref": "#/components/schemas/MetaDetailsErrors"
+                          },
+                          {
+                            "description": "Ошибки проверки идентификаторов маркировки"
+                          },
+                          {}
+                        ]
+                      }
+                    },
+                    "required": [
+                      "code",
+                      "detail"
+                    ],
+                    "type": "object"
+                  },
+                  "type": "array"
+                },
+                "isError": {
+                  "description": "Есть ли ошибки",
+                  "type": "boolean"
+                },
+                "orderId": {
+                  "description": "ID сборочного задания",
+                  "type": "integer"
+                }
+              },
+              "required": [
+                "orderId",
+                "isError"
+              ],
+              "type": "object"
+            }
+          }
+        },
+        "required": [
+          "requestId",
+          "results"
+        ],
+        "type": "object"
+      },
+      "api.MetaErrorResponse": {
+        "properties": {
+          "code": {
+            "description": "Код ошибки",
+            "example": 404,
+            "type": "integer"
+          },
+          "detail": {
+            "description": "- `NotFound` — сборочное задание не найдено\n- `IncorrectRequestBody` — неправильный запрос\n- `IncorrectRequest` — передан некорректный параметр\n",
+            "example": "NotFound",
+            "type": "string"
+          }
+        },
+        "required": [
+          "code",
+          "detail"
+        ],
+        "type": "object"
+      },
+      "api.MetaSetResponse": {
+        "properties": {
+          "errors": {
+            "description": "Детали ошибки",
+            "items": {
+              "$ref": "#/components/schemas/api.MetaErrorResponse"
+            },
+            "type": "array"
+          },
+          "isError": {
+            "description": "Есть ли ошибки",
+            "example": true,
+            "type": "boolean"
+          },
+          "orderId": {
+            "description": "ID сборочного задания",
+            "example": 123456,
+            "type": "integer"
+          }
+        },
+        "required": [
+          "orderId",
+          "isError"
+        ],
+        "type": "object"
+      },
+      "api.MetaSetResponses": {
+        "example": {
+          "requestId": "03615778-eb9e-4f55-b4O4-fd3ac0fad2сc",
+          "results": [
+            {
+              "errors": [
+                {
+                  "code": 404,
+                  "detail": "NotFound"
+                }
+              ],
+              "isError": true,
+              "orderId": 123456
+            },
+            {
+              "isError": false,
+              "orderId": 234567
+            }
+          ]
+        },
+        "properties": {
+          "requestId": {
+            "description": "Уникальный ID запроса",
+            "example": "f1787bd2d1fdс35d6f537316514у4a05"
+          },
+          "results": {
+            "items": {
+              "$ref": "#/components/schemas/api.MetaSetResponse"
+            },
+            "type": "array"
+          }
+        },
+        "required": [
+          "requestId",
+          "results"
+        ],
+        "type": "object"
+      },
+      "api.NewOrder": {
+        "properties": {
+          "article": {
+            "description": "Артикул продавца",
+            "type": "string"
+          },
+          "cargoType": {
+            "description": "Тип товара:\n  - `1` — малогабаритный товар (МГТ)\n  - `2` — сверхгабаритный товар (СГТ)\n  - `3` — крупногабаритный товар (КГТ+)\n",
+            "enum": [
+              1,
+              2,
+              3
+            ],
+            "nullable": false,
+            "type": "integer"
+          },
+          "chrtId": {
+            "description": "ID размера товара в системе WB",
+            "type": "integer"
+          },
+          "convertedCurrencyCode": {
+            "description": "Код валюты страны продавца",
+            "example": 643,
+            "format": "ISO 4217",
+            "type": "integer"
+          },
+          "convertedFinalPrice": {
+            "description": "Сумма к оплате покупателем в валюте страны продавца с учетом всех скидок, умноженная на 100.\n<br>\nПредоставляется в информационных целях.\n<br><br>\n Используйте значение поля `convertedFinalPrice`, только если в ответе метода [POST /api/marketplace/v3/click-collect/orders/final-price](./docs/openapi/in-store-pickup#tag/inStorePickupAssemblyOrders/operation/postV3ClickCollectOrdersFinalPrice) вернулось `\"data\": null`. Во всех остальных случаях используйте значение поля `convertedOriginalFinalPrice` из ответа того же метода\n",
+            "example": 5000,
+            "type": "integer"
+          },
+          "convertedPrice": {
+            "description": "Цена в валюте страны продавца с учетом всех скидок, кроме скидки по WB Кошельку, умноженная на 100. Код валюты продажи указан в поле `currencyCode`. Предоставляется в информационных целях",
+            "example": 5000,
+            "type": "integer"
+          },
+          "createdAt": {
+            "description": "Дата и время создания сборочного задания",
+            "format": "date-time",
+            "type": "string"
+          },
+          "currencyCode": {
+            "description": "Код валюты продажи",
+            "example": 643,
+            "format": "ISO 4217",
+            "type": "integer"
+          },
+          "ddate": {
+            "description": "Планируемая дата доставки",
+            "type": "string"
+          },
+          "finalPrice": {
+            "description": "Сумма к оплате покупателем в валюте продажи с учётом всех скидок, умноженная на 100.\n<br>\nКод валюты продажи указан в поле `currencyCode`.\n<br>\nПредоставляется в информационных целях.\n<br><br>\nИспользуйте значение поля `finalPrice`, только если в ответе метода [POST /api/marketplace/v3/click-collect/orders/final-price](./docs/openapi/in-store-pickup#tag/inStorePickupAssemblyOrders/operation/postV3ClickCollectOrdersFinalPrice) вернулось `\"data\": null`. Во всех остальных случаях используйте значение поля `originalFinalPrice` из ответа указанного метода\n",
+            "example": 5000,
+            "type": "integer"
+          },
+          "id": {
+            "description": "ID сборочного задания",
+            "type": "integer"
+          },
+          "isZeroOrder": {
+            "description": "Признак заказа товара с нулевым остатком:\n  - `false` — заказ сделан на товар с ненулевым остатком\n  - `true` — заказ сделан на товар с нулевым остатком. Такой заказ можно отменить без штрафа за отмену\n",
+            "type": "boolean"
+          },
+          "nmId": {
+            "description": "Артикул WB",
+            "type": "integer"
+          },
+          "options": {
+            "description": "Опции заказа",
+            "properties": {
+              "isB2b": {
+                "description": "Признак B2B-продажи:\n  - `false` — не B2B-продажа\n  - `true` — B2B-продажа\n",
+                "type": "boolean"
+              }
+            },
+            "type": "object"
+          },
+          "orderCode": {
+            "description": "Уникальный ID заказа покупателя\n",
+            "type": "string"
+          },
+          "payMode": {
+            "description": "Режим оплаты:\n  - `prepaid` — предоплатный\n  - `postpaid` — постоплатный\n  - `unknown` — неизвестный\n",
+            "example": "prepaid",
+            "type": "string"
+          },
+          "price": {
+            "description": "Цена в валюте продажи с учетом всех скидок, кроме скидки по WB Кошельку, умноженная на 100.\nКод валюты продажи указан в поле `currencyCode`. Предоставляется в информационных целях\n",
+            "type": "integer"
+          },
+          "requiredMeta": {
+            "description": "Список идентификаторов маркировки, доступных для сборочного задания\n",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true,
+            "type": "array"
+          },
+          "rid": {
+            "description": "Уникальный ID заказа. <br>\nПримечание: `rid` — это `srid` в ответах методов:\n  - [Заявки покупателей на возврат](./user-communication#tag/buyersReturns/operation/getV1Claims)\n  - [Лента заказов](./analytics#tag/orderFeed/operation/postV1OrderFeed)\n  - [Заказы](./reports#tag/mainReports/operation/getV1SupplierOrders)\n  - [Продажи](./reports#tag/mainReports/operation/getV1SupplierSales)\n  - [Отчет о возвратах и перемещении товаров](./reports#tag/returnsAndItemMovementReport)\n  - [Детализации к отчётам реализации по ID отчётов](./financial-reports-and-accounting#tag/financialReports/operation/postV1SalesReportsDetailedReportId)\n  - [Детализации к отчётам реализации за период](./financial-reports-and-accounting#tag/financialReports/operation/postV1SalesReportsDetailed)\n  - [Детализации к отчётам об издержках на приём платежей по ID отчётов](./financial-reports-and-accounting#tag/financialReports/operation/postV1AcquiringDetailedReportId)\n  - [Детализации к отчётам об издержках на приём платежей за период](./financial-reports-and-accounting#tag/financialReports/operation/postV1AcquiringDetailed)\n",
+            "type": "string"
+          },
+          "salePrice": {
+            "description": "Цена продавца в валюте продажи с учётом скидки продавца, без учёта скидки WB Клуба, умноженная на 100. Предоставляется в информационных целях\n",
+            "example": 504600,
+            "nullable": true,
+            "type": "integer"
+          },
+          "skus": {
+            "description": "Массив баркодов товара",
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "warehouseAddress": {
+            "description": "Адрес магазина (склада продавца), на который поступило сборочное\nзадание\n",
+            "type": "string"
+          },
+          "warehouseId": {
+            "description": "ID склада продавца, на который поступило сборочное\nзадание\n",
+            "type": "integer"
+          }
+        },
+        "type": "object"
+      },
+      "api.NewOrders": {
+        "properties": {
+          "orders": {
+            "description": "Список сборочных заданий",
+            "items": {
+              "$ref": "#/components/schemas/api.NewOrder"
+            },
+            "type": "array"
+          }
+        },
+        "type": "object"
+      },
+      "api.Order": {
+        "properties": {
+          "article": {
+            "description": "Артикул продавца",
+            "example": "wb6scpbwvp",
+            "type": "string"
+          },
+          "cargoType": {
+            "description": "Тип товара:\n  - `1` — малогабаритный товар (МГТ)\n  - `2` — сверхгабаритный товар (СГТ)\n  - `3` — крупногабаритный товар (КГТ+)\n",
+            "enum": [
+              1,
+              2,
+              3
+            ],
+            "example": 1,
+            "nullable": false,
+            "type": "integer"
+          },
+          "chrtId": {
+            "description": "ID размера товара в системе WB",
+            "example": 12345676,
+            "type": "integer"
+          },
+          "convertedCurrencyCode": {
+            "description": "Код валюты страны продавца",
+            "example": 643,
+            "format": "ISO 4217",
+            "type": "integer"
+          },
+          "convertedFinalPrice": {
+            "description": "Сумма к оплате покупателем в валюте страны продавца с учетом всех скидок, умноженная на 100.\n<br>\nПредоставляется в информационных целях.\n<br><br>\n Используйте значение поля `convertedFinalPrice`, только если в ответе метода [POST /api/marketplace/v3/click-collect/orders/final-price](./docs/openapi/in-store-pickup#tag/inStorePickupAssemblyOrders/operation/postV3ClickCollectOrdersFinalPrice) вернулось `\"data\": null`. Во всех остальных случаях используйте значение поля `convertedOriginalFinalPrice` из ответа того же метода\n",
+            "example": 5000,
+            "type": "integer"
+          },
+          "convertedPrice": {
+            "description": "Цена в валюте страны продавца с учетом всех скидок, кроме скидки по WB Кошельку, умноженная на 100. Код валюты продажи указан в поле `currencyCode`. Предоставляется в информационных целях",
+            "example": 5000,
+            "type": "integer"
+          },
+          "createdAt": {
+            "description": "Дата и время создания сборочного задания",
+            "example": "2025-03-21T09:53:31Z",
+            "format": "date-time",
+            "type": "string"
+          },
+          "currencyCode": {
+            "description": "Код валюты продажи",
+            "example": 643,
+            "format": "ISO 4217",
+            "type": "integer"
+          },
+          "finalPrice": {
+            "description": "Сумма к оплате покупателем в валюте продажи с учётом всех скидок, умноженная на 100.\n<br>\nКод валюты продажи указан в поле `currencyCode`.\n<br>\nПредоставляется в информационных целях.\n<br><br>\nИспользуйте значение поля `finalPrice`, только если в ответе метода [POST /api/marketplace/v3/click-collect/orders/final-price](./docs/openapi/in-store-pickup#tag/inStorePickupAssemblyOrders/operation/postV3ClickCollectOrdersFinalPrice) вернулось `\"data\": null`. Во всех остальных случаях используйте значение поля `originalFinalPrice` из ответа указанного метода\n",
+            "example": 5000,
+            "type": "integer"
+          },
+          "id": {
+            "description": "ID сборочного задания",
+            "example": 123456789,
+            "type": "integer"
+          },
+          "isZeroOrder": {
+            "description": "Признак заказа товара с нулевым остатком:\n  - `false` — заказ сделан на товар с ненулевым остатком\n  - `true` — заказ сделан на товар с нулевым остатком. Такой заказ можно отменить без штрафа за отмену\n",
+            "example": false,
+            "type": "boolean"
+          },
+          "nmId": {
+            "description": "Артикул WB",
+            "example": 1234567898765,
+            "type": "integer"
+          },
+          "options": {
+            "description": "Опции заказа",
+            "properties": {
+              "isB2b": {
+                "description": "Признак B2B-продажи:\n  - `false` — не B2B-продажа\n  - `true` — B2B-продажа\n",
+                "example": false,
+                "type": "boolean"
+              }
+            },
+            "type": "object"
+          },
+          "orderCode": {
+            "description": "Уникальный ID заказа покупателя\n",
+            "example": "21117866-0006",
+            "type": "string"
+          },
+          "payMode": {
+            "description": "Режим оплаты:\n  - `prepaid` — предоплатный\n  - `postpaid` — постоплатный\n  - `unknown` — неизвестный\n",
+            "example": "prepaid",
+            "type": "string"
+          },
+          "price": {
+            "description": "Цена в валюте продажи с учетом всех скидок, кроме скидки по WB Кошельку, умноженная на 100.\nКод валюты продажи указан в поле `currencyCode`. Предоставляется в информационных целях\n",
+            "example": 5000,
+            "type": "integer"
+          },
+          "rid": {
+            "description": "Уникальный ID заказа. <br>\nПримечание: `rid` — это `srid` в ответах методов:\n  - [Заявки покупателей на возврат](./user-communication#tag/buyersReturns/operation/getV1Claims)\n  - [Лента заказов](./analytics#tag/orderFeed/operation/postV1OrderFeed)\n  - [Заказы](./reports#tag/mainReports/operation/getV1SupplierOrders)\n  - [Продажи](./reports#tag/mainReports/operation/getV1SupplierSales)\n  - [Отчет о возвратах и перемещении товаров](./reports#tag/returnsAndItemMovementReport)\n  - [Детализации к отчётам реализации по ID отчётов](./financial-reports-and-accounting#tag/financialReports/operation/postV1SalesReportsDetailedReportId)\n  - [Детализации к отчётам реализации за период](./financial-reports-and-accounting#tag/financialReports/operation/postV1SalesReportsDetailed)\n  - [Детализации к отчётам об издержках на приём платежей по ID отчётов](./financial-reports-and-accounting#tag/financialReports/operation/postV1AcquiringDetailedReportId)\n  - [Детализации к отчётам об издержках на приём платежей за период](./financial-reports-and-accounting#tag/financialReports/operation/postV1AcquiringDetailed)\n",
+            "example": "5044304527347733263.0.0",
+            "type": "string"
+          },
+          "skus": {
+            "description": "Массив баркодов товара",
+            "example": [
+              "2043227963145"
+            ],
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "warehouseAddress": {
+            "description": "Адрес магазина (склада продавца), на который поступило сборочное задание",
+            "example": "Москва, район Якиманка, Софийская набережная, 4 с1",
+            "type": "string"
+          },
+          "warehouseId": {
+            "description": "ID склада продавца, на который поступило сборочное задание",
+            "example": 1162157,
+            "type": "integer"
+          }
+        },
+        "type": "object"
+      },
+      "api.OrderClientInfo": {
+        "properties": {
+          "firstName": {
+            "description": "Имя покупателя",
+            "example": "Ольга",
+            "type": "string"
+          },
+          "orderID": {
+            "description": "ID сборочного задания",
+            "example": 4564152,
+            "type": "integer"
+          },
+          "phone": {
+            "description": "Телефон для связи с покупателем. Чтобы связаться с покупателем наберите\nэтот номер и введите добавочный код. Данный номер не является прямым\nномером покупателя\n",
+            "example": "+7111111111",
+            "type": "string"
+          },
+          "phoneCode": {
+            "description": "Добавочный код",
+            "example": 3535,
+            "type": "integer"
+          }
+        },
+        "type": "object"
+      },
+      "api.OrderClientInfoResp": {
+        "properties": {
+          "orders": {
+            "items": {
+              "$ref": "#/components/schemas/api.OrderClientInfo"
+            },
+            "type": "array"
+          }
+        },
+        "type": "object"
+      },
+      "api.OrderFinalPriceResult": {
+        "properties": {
+          "data": {
+            "description": "Данные сборочного задания.\n<br><br>\nЕсли `\"data\":{}`, данные формируются. Повторите запрос позднее. Максимальное время формирования данных около 3 минут.\n<br><br>\nЕсли `data` отсутствует, данных по сборочному заданию не предусмотрено. Используйте данные из ответов методов:\n  - [Получить список новых сборочных заданий](/docs/openapi/in-store-pickup#tag/inStorePickupAssemblyOrders/operation/getV3ClickCollectOrdersNew)\n  - [Получить информацию о завершенных сборочных заданиях](/docs/openapi/in-store-pickup#tag/inStorePickupAssemblyOrders/operation/getV3ClickCollectOrders)\n",
+            "nullable": false,
+            "properties": {
+              "convertedCurrencyCode": {
+                "description": "Код валюты страны продавца",
+                "format": "ISO 4217",
+                "nullable": false,
+                "type": "integer"
+              },
+              "convertedOriginalFinalPrice": {
+                "description": "Сумма к оплате покупателем в валюте страны продавца с учетом всех скидок и кэшбека, умноженная на 100. Предоставляется в информационных целях",
+                "nullable": false,
+                "type": "integer"
+              },
+              "convertedOriginalPrice": {
+                "description": "Цена продавца в валюте страны продавца без учёта скидок, умноженная на 100. Предоставляется в информационных целях",
+                "nullable": false,
+                "type": "integer"
+              },
+              "currencyCode": {
+                "description": "Код валюты продажи",
+                "format": "ISO 4217",
+                "nullable": false,
+                "type": "integer"
+              },
+              "originalFinalPrice": {
+                "description": "Сумма к оплате покупателем в валюте продажи с учетом всех скидок и кэшбека, умноженная на 100. Код валюты продажи указан в поле `currencyCode`. Предоставляется в информационных целях",
+                "nullable": false,
+                "type": "integer"
+              },
+              "originalPrice": {
+                "description": "Цена продавца в валюте продажи без учёта скидок, умноженная на 100. Предоставляется в информационных целях",
+                "nullable": false,
+                "type": "integer"
+              }
+            },
+            "type": "object"
+          },
+          "errors": {
+            "description": "Детали ошибки",
+            "items": {
+              "$ref": "#/components/schemas/api.BatchErrorFinalPriceResponse"
+            },
+            "nullable": false,
+            "type": "array"
+          },
+          "isError": {
+            "description": "Есть ли ошибки",
+            "nullable": false,
+            "type": "boolean"
+          },
+          "orderId": {
+            "description": "ID сборочного задания",
+            "nullable": false,
+            "type": "integer"
+          }
+        },
+        "required": [
+          "orderId"
+        ],
+        "type": "object"
+      },
+      "api.OrderStatusV2": {
+        "properties": {
+          "errors": {
+            "description": "Информация об ошибке",
+            "items": {
+              "$ref": "#/components/schemas/api.OrdersErrorResponse"
+            },
+            "type": "array"
+          },
+          "orderId": {
+            "description": "ID сборочного задания",
+            "type": "integer"
+          },
+          "supplierStatus": {
+            "description": "Статус сборочного задания, установленный продавцом",
+            "type": "string"
+          },
+          "wbStatus": {
+            "description": "Статус сборочного задания в системе Wildberries",
+            "type": "string"
+          }
+        },
+        "required": [
+          "orderId"
+        ],
+        "type": "object"
+      },
+      "api.OrderStatusesV2": {
+        "example": {
+          "orders": [
+            {
+              "errors": [],
+              "orderId": 123456,
+              "supplierStatus": "confirm",
+              "wbStatus": "waiting"
+            },
+            {
+              "errors": [
+                {
+                  "code": 404,
+                  "detail": "NotFound"
+                }
+              ],
+              "orderId": 789012,
+              "supplierStatus": "",
+              "wbStatus": ""
+            }
+          ]
+        },
+        "properties": {
+          "orders": {
+            "description": "Информация о статусах",
+            "items": {
+              "$ref": "#/components/schemas/api.OrderStatusV2"
+            },
+            "type": "array"
+          }
+        },
+        "type": "object"
+      },
+      "api.Orders": {
+        "properties": {
+          "next": {
+            "description": "Параметр пагинации. Содержит значение, которое необходимо указать в\nзапросе для получения следующего пакета данных\n",
+            "example": 12345566,
+            "type": "integer"
+          },
+          "orders": {
+            "description": "Список сборочных заданий",
+            "items": {
+              "$ref": "#/components/schemas/api.Order"
+            },
+            "type": "array"
+          }
+        },
+        "type": "object"
+      },
+      "api.OrdersErrorResponse": {
+        "properties": {
+          "code": {
+            "description": "Код ошибки",
+            "example": 404,
+            "type": "integer"
+          },
+          "detail": {
+            "description": "- `NotFound` — сборочное задание не найдено\n",
+            "example": "NotFound",
+            "type": "string"
+          }
+        },
+        "required": [
+          "code",
+          "detail"
+        ],
+        "type": "object"
+      },
+      "api.OrdersFinalPriceResponse": {
+        "properties": {
+          "requestId": {
+            "description": "Уникальный ID запроса",
+            "type": "string"
+          },
+          "results": {
+            "description": "Данные ответа",
+            "items": {
+              "$ref": "#/components/schemas/api.OrderFinalPriceResult"
+            },
+            "type": "array"
+          }
+        },
+        "required": [
+          "requestId",
+          "results"
+        ],
+        "type": "object"
+      },
+      "api.OrdersGTINSetRequest": {
+        "properties": {
+          "orders": {
+            "items": {
+              "$ref": "#/components/schemas/api.GTIN"
+            },
+            "maxItems": 1000,
+            "type": "array"
+          }
+        },
+        "required": [
+          "orders"
+        ],
+        "type": "object"
+      },
+      "api.OrdersIMEISetRequest": {
+        "properties": {
+          "orders": {
+            "items": {
+              "$ref": "#/components/schemas/api.IMEI"
+            },
+            "maxItems": 1000,
+            "type": "array"
+          }
+        },
+        "required": [
+          "orders"
+        ],
+        "type": "object"
+      },
+      "api.OrdersMetaDeleteRequest": {
+        "properties": {
+          "key": {
+            "description": "Тип идентификаторов маркировки для удаления. Передаётся только одно значение",
+            "enum": [
+              "imei",
+              "uin",
+              "gtin",
+              "sgtin",
+              "customsDeclaration"
+            ],
+            "example": "imei",
+            "type": "string"
+          },
+          "ordersIds": {
+            "description": "Список ID сборочных заданий",
+            "example": [
+              123456,
+              234567
+            ],
+            "items": {
+              "type": "integer"
+            },
+            "maxItems": 1000,
+            "type": "array"
+          }
+        },
+        "required": [
+          "key",
+          "ordersIds"
+        ],
+        "type": "object"
+      },
+      "api.OrdersMetaDetailsResponse": {
+        "properties": {
+          "orders": {
+            "description": "Идентификаторы маркировки сборочных заданий и статусы их валидации",
+            "items": {
+              "properties": {
+                "errors": {
+                  "description": "Информация об ошибке",
+                  "example": [],
+                  "items": {
+                    "properties": {
+                      "code": {
+                        "description": "Код ошибки",
+                        "example": 404,
+                        "type": "integer"
+                      },
+                      "detail": {
+                        "description": "Дополнительная информация об ошибке",
+                        "example": "NotFound",
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "code",
+                      "detail"
+                    ],
+                    "type": "object"
+                  },
+                  "type": "array"
+                },
+                "isError": {
+                  "description": "Есть ли ошибки",
+                  "example": false,
+                  "type": "boolean"
+                },
+                "metaDetails": {
+                  "description": "Идентификаторы маркировки и статусы их валидации",
+                  "items": {
+                    "properties": {
+                      "decision": {
+                        "description": "Статусы проверки идентификатора маркировки. <br>\n- `imei`\n  - `filled` — Маркировка закреплена за сборочным заданием, проверка не требуется\n  - `optional` — Маркировка не закреплена за сборочным заданием и не обязательна. Проверка пройдена\n  - `deadlineExceeded` — Проверка маркировки не завершена и будет продолжена. Проверка может завершиться и успешно, и неуспешно\n  - `imeiMaySell` — Товар допущен к продаже. Проверка пройдена\n  - `imeiSoldB2B` — Товар продан покупателю B2B, допущен к продаже повторно. Проверка пройдена\n  - `pending` — Проверка маркировки продолжается. Дождитесь изменения статуса проверки\n  - `required` — Маркировка обязательна и не закреплена за сборочным заданием. Проверка не пройдена\n  - `imeiInvalidFormat` — Указан неверный формат маркировки. Проверка не пройдена\n  - `imeiAlreadySold` — Товар с этим IMEI уже продан. Проверка не пройдена\n- `uin`\n  - `filled` — Маркировка закреплена за сборочным заданием, проверка не требуется\n  - `optional` — Маркировка не закреплена за сборочным заданием и не обязательна. Проверка пройдена\n  - `required` — Маркировка обязательна и не закреплена за сборочным заданием. Проверка не пройдена                         <br>\n- `sgtin`\n  - `filled` — Маркировка закреплена за сборочным заданием, проверка не требуется\n  - `optional` — Маркировка не закреплена за сборочным заданием и не обязательна. Проверка пройдена\n  - `deadlineExceeded` — Проверка маркировки не завершена и будет продолжена. Проверка может завершиться и успешно, и неуспешно\n  - `sgtinIntroduced` — Товар допущен к продаже. Проверка пройдена\n  - `sgtinSoldB2B` — Товар продан покупателю B2B, допущен к продаже повторно. Проверка пройдена\n  - `pending` — Проверка маркировки продолжается. Дождитесь изменения статуса проверки\n  - `required` — Маркировка обязательна и не закреплена за сборочным заданием. Проверка не пройдена\n  - `sgtinInvalidFormat` — Указан неверный формат маркировки. Проверка не пройдена\n  - `sgtinNotFound` — Маркировка не найдена в [Честном знаке](https://chestnyznak.ru). Проверка не пройдена\n  - `sgtinEmitted` —  Маркировка эмитирована. Проверка не пройдена\n  - `sgtinApplied` — Не пройдена процедура Ввод в оборот. Проверка не пройдена\n  - `sgtinWrittenOff` — Списан. Проверка не пройдена\n  - `sgtinRetired` — Выбыл. Проверка не пройдена\n  - `sgtinWithdrawn` — Выбыл. Проверка не пройдена\n  - `sgtinDisaggregated` — Расформирован. Проверка не пройдена\n  - `sgtinDisaggregation` — Расформирован. Проверка не пройдена\n  - `sgtinAppliedNotPaid` — Не оплачен. Проверка не пройдена\n- `gtin`\n  - `filled` — Маркировка закреплена за сборочным заданием, проверка не требуется\n  - `optional` — Маркировка не закреплена за сборочным заданием и не обязательна. Проверка пройдена\n  - `required` — Маркировка обязательна и не закреплена за сборочным заданием. Проверка не пройдена\n- `customsDeclaration`\n  - `filled` — Маркировка закреплена за сборочным заданием, проверка не требуется\n  - `optional` — Маркировка не закреплена за сборочным заданием и не обязательна. Проверка пройдена\n  - `required` — Маркировка обязательна и не закреплена за сборочным заданием. Проверка не пройдена\n",
+                        "example": "imeiInvalidFormat",
+                        "type": "string"
+                      },
+                      "key": {
+                        "description": "Идентификатор маркировки:\n  - `imei` — [IMEI](./in-store-pickup#tag/inStorePickupLabelIdentifiers/operation/postV3ClickCollectOrdersMetaImei)\n  - `uin` — [УИН](./in-store-pickup#tag/inStorePickupLabelIdentifiers/operation/postV3ClickCollectOrdersMetaUin)\n  - `gtin` — [GTIN](./in-store-pickup#tag/inStorePickupLabelIdentifiers/operation/postV3ClickCollectOrdersMetaGtin)\n  - `sgtin` — [код маркировки](./in-store-pickup#tag/inStorePickupLabelIdentifiers/operation/postV3ClickCollectOrdersMetaSgtin)\n  - `customsDeclaration` — [номер ДТ](./in-store-pickup#tag/inStorePickupLabelIdentifiers/operation/postV3ClickCollectOrdersMetaCustomsDeclaration)\n  - `originCountryCode` — [числовой код страны происхождения товара](./in-store-pickup#tag/inStorePickupLabelIdentifiers/operation/postV3ClickCollectOrdersMetaCustomsDeclaration) из [Общероссийского классификатора стран мира](https://esnsi.gosuslugi.ru/classifiers/16269)\n",
+                        "example": "imei",
+                        "type": "string"
+                      },
+                      "value": {
+                        "description": "Значение идентификатора маркировки",
+                        "example": "359876543210025",
+                        "nullable": true,
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "decision",
+                      "key"
+                    ],
+                    "type": "object"
+                  },
+                  "type": "array"
+                },
+                "orderId": {
+                  "description": "ID сборочного задания",
+                  "example": 123456,
+                  "type": "integer"
+                }
+              },
+              "required": [
+                "isError",
+                "metaDetails",
+                "orderId"
+              ],
+              "type": "object"
+            },
+            "type": "array"
+          },
+          "requestId": {
+            "description": "Уникальный ID запроса",
+            "example": "f1787bd2d1fdс35d6f537316514у4a05",
+            "type": "string"
+          }
+        },
+        "required": [
+          "requestId",
+          "orders"
+        ],
+        "type": "object"
+      },
+      "api.OrdersRequest": {
+        "example": {
+          "orders": [
+            1234567
+          ]
+        },
+        "properties": {
+          "orders": {
+            "description": "Список ID сборочных заданий",
+            "items": {
+              "type": "integer"
+            },
+            "type": "array"
+          }
+        },
+        "type": "object"
+      },
+      "api.OrdersRequestV2": {
+        "properties": {
+          "ordersIds": {
+            "description": "Список ID сборочных заданий",
+            "example": [
+              123456,
+              234567,
+              345678
+            ],
+            "items": {
+              "type": "integer"
+            },
+            "maxItems": 1000,
+            "type": "array"
+          }
+        },
+        "required": [
+          "ordersIds"
+        ],
+        "type": "object"
+      },
+      "api.OrdersResponse": {
+        "properties": {
+          "errors": {
+            "description": "Детали ошибки",
+            "items": {
+              "$ref": "#/components/schemas/api.OrdersErrorResponse"
+            },
+            "type": "array"
+          },
+          "isError": {
+            "description": "Есть ли ошибки",
+            "example": true,
+            "type": "boolean"
+          },
+          "orderId": {
+            "description": "ID сборочного задания",
+            "example": 123456,
+            "type": "integer"
+          }
+        },
+        "required": [
+          "orderId",
+          "isError"
+        ],
+        "type": "object"
+      },
+      "api.OrdersResponses": {
+        "example": {
+          "requestId": "03615778-eb9e-4f55-b4O4-fd3ac0fad2сc",
+          "results": [
+            {
+              "errors": [
+                {
+                  "code": 404,
+                  "detail": "NotFound"
+                }
+              ],
+              "isError": true,
+              "orderId": 123456
+            },
+            {
+              "isError": false,
+              "orderId": 234567
+            }
+          ]
+        },
+        "properties": {
+          "requestId": {
+            "description": "Уникальный ID запроса",
+            "example": "f1787bd2d1fdс35d6f537316514у4a05"
+          },
+          "results": {
+            "items": {
+              "$ref": "#/components/schemas/api.OrdersResponse"
+            },
+            "type": "array"
+          }
+        },
+        "required": [
+          "requestId",
+          "results"
+        ],
+        "type": "object"
+      },
+      "api.OrdersSGTINsSetRequest": {
+        "properties": {
+          "orders": {
+            "items": {
+              "$ref": "#/components/schemas/api.SGTINs"
+            },
+            "maxItems": 1000,
+            "type": "array"
+          }
+        },
+        "required": [
+          "orders"
+        ],
+        "type": "object"
+      },
+      "api.OrdersUINSetRequest": {
+        "properties": {
+          "orders": {
+            "items": {
+              "$ref": "#/components/schemas/api.UIN"
+            },
+            "maxItems": 1000,
+            "type": "array"
+          }
+        },
+        "required": [
+          "orders"
+        ],
+        "type": "object"
+      },
+      "api.SGTINs": {
+        "properties": {
+          "orderId": {
+            "description": "ID сборочного задания",
+            "example": 123456,
+            "type": "integer"
+          },
+          "sgtins": {
+            "description": "Массив кодов маркировки. Допускается от 16 до 135 символов для кода одной маркировки",
+            "example": [
+              "123456789012345678",
+              "1234567890123456"
+            ],
+            "items": {
+              "type": "string"
+            },
+            "maxItems": 24,
+            "minItems": 1,
+            "type": "array"
+          }
+        },
+        "required": [
+          "orderId",
+          "sgtins"
+        ],
+        "type": "object"
+      },
+      "api.StatusSetCustomsDeclarationResponse": {
+        "properties": {
+          "errors": {
+            "description": "Детали ошибки",
+            "items": {
+              "$ref": "#/components/schemas/api.BatchCustomsDeclarationErrorResponse"
+            },
+            "type": "array"
+          },
+          "isError": {
+            "description": "Есть ли ошибки",
+            "example": true,
+            "type": "boolean"
+          },
+          "orderId": {
+            "description": "ID сборочного задания",
+            "example": 123456,
+            "type": "integer"
+          }
+        },
+        "required": [
+          "orderId",
+          "isError"
+        ],
+        "type": "object"
+      },
+      "api.StatusSetResponse": {
+        "properties": {
+          "errors": {
+            "description": "Детали ошибки",
+            "items": {
+              "$ref": "#/components/schemas/api.BatchErrorResponse"
+            },
+            "type": "array"
+          },
+          "isError": {
+            "description": "Есть ли ошибки",
+            "example": true,
+            "type": "boolean"
+          },
+          "orderId": {
+            "description": "ID сборочного задания",
+            "example": 123456,
+            "type": "integer"
+          }
+        },
+        "required": [
+          "orderId",
+          "isError"
+        ],
+        "type": "object"
+      },
+      "api.StatusSetResponses": {
+        "example": {
+          "requestId": "03615778-eb9e-4f55-b4O4-fd3ac0fad2сc",
+          "results": [
+            {
+              "errors": [
+                {
+                  "code": 404,
+                  "detail": "NotFound"
+                }
+              ],
+              "isError": true,
+              "orderId": 123456
+            },
+            {
+              "isError": false,
+              "orderId": 234567
+            }
+          ]
+        },
+        "properties": {
+          "requestId": {
+            "description": "Уникальный ID запроса",
+            "example": "f1787bd2d1fdс35d6f537316514у4a05"
+          },
+          "results": {
+            "items": {
+              "$ref": "#/components/schemas/api.StatusSetResponse"
+            },
+            "type": "array"
+          }
+        },
+        "required": [
+          "requestId",
+          "results"
+        ],
+        "type": "object"
+      },
+      "api.UIN": {
+        "properties": {
+          "orderId": {
+            "description": "ID сборочного задания",
+            "example": 123456,
+            "type": "integer"
+          },
+          "uin": {
+            "description": "УИН",
+            "example": "1234568909091232",
+            "maxLength": 16,
+            "minLength": 16,
+            "type": "string"
+          }
+        },
+        "required": [
+          "orderId",
+          "uin"
+        ],
+        "type": "object"
+      }
+    },
+    "securitySchemes": {
+      "HeaderApiKey": {
+        "in": "header",
+        "name": "Authorization",
+        "type": "apiKey"
+      }
+    }
+  },
+  "info": {
+    "description": "<div class=\"api-block\">\n\nУправление [сборочными заданиями](./in-store-pickup#tag/inStorePickupAssemblyOrders) и [идентификаторами маркировки](./in-store-pickup#tag/inStorePickupLabelIdentifiers) Самовывоза.<br><br>\n\nВы можете протестировать методы Самовывоза в [песочнице](/sandbox). Также в песочнице доступны [специальные методы](/docs/openapi-other/sandbox-environment#tag/Marketplejs-Samovyvoz) для эмуляции действий пользователя\n\n</div>\n",
+    "title": "Самовывоз",
+    "version": "instorepickup",
+    "x-file-name": "in-store-pickup"
+  },
+  "openapi": "3.0.1",
+  "paths": {
+    "/api/marketplace/v3/click-collect/orders/final-price": {
+      "post": {
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод возвращает:\n  - цены продавца без учёта скидок\n  - суммы к оплате покупателем с учетом всех скидок и кэшбека\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца для всех методов <strong>получения и удаления идентификаторов маркировки Самовывоз</strong>:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 150 запросов | 400 мс | 20 запросов |\n\nОдин запрос с кодами ответов <code>4XX</code> учитывается как 10 запросов.\n\n<hr>\n\nВ <a href='/sandbox'>песочнице</a> — максимум 1 запрос в секунду суммарно для всех методов <strong>Маркетплейса</strong>.\n\n</div>\n",
+        "operationId": "postV3ClickCollectOrdersFinalPrice",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/api.OrdersRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "examples": {
+                  "GetFinalPriceSuccess": {
+                    "$ref": "#/components/examples/GetFinalPriceSuccess"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/api.OrdersFinalPriceResponse"
+                }
+              }
+            },
+            "description": "<span class='response__value response__value_success'>Успешно</span>"
+          },
+          "400": {
+            "$ref": "#/components/responses/IncorrectRequest"
+          },
+          "401": {
+            "$ref": "#/components/responses/401"
+          },
+          "403": {
+            "$ref": "#/components/responses/AccessDeniedBatch"
+          },
+          "429": {
+            "$ref": "#/components/responses/429"
+          }
+        },
+        "summary": "Получить цены продавца и суммы к оплате{{ /api/marketplace/v3/click-collect/orders/final-price }}",
+        "tags": [
+          "inStorePickupAssemblyOrders"
+        ],
+        "x-category": "marketplace",
+        "x-readonly-method": true
+      },
+      "servers": [
+        {
+          "url": "https://marketplace-api.wildberries.ru"
+        }
+      ]
+    },
+    "/api/marketplace/v3/click-collect/orders/meta/customs-declaration": {
+      "post": {
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод обновляет номера ДТ — деклараций на товары — и коды стран происхождения товаров в [идентификаторах маркировки сборочных заданий](./in-store-pickup#tag/inStorePickupLabelIdentifiers/operation/postV3ClickCollectOrdersMetaDetails). У одного сборочного задания может быть только один номер ДТ. <br>\nЗакрепить номер ДТ можно, только если выполняются все условия:\n  - сборочное задание имеет признак B2B-продажи — `\"isB2b\":true` в ответе метода [получения новых сборочных заданий](./in-store-pickup#tag/inStorePickupAssemblyOrders/operation/getV3ClickCollectOrdersNew)\n  - сборочное задание находится в [статусах](./in-store-pickup#tag/inStorePickupAssemblyOrders/operation/postV3ClickCollectOrdersStatusInfo) `confirm` или `prepare`\n  - поле `customsDeclaration` есть в [идентификаторах маркировки сборочного задания](./in-store-pickup#tag/inStorePickupLabelIdentifiers/operation/postV3ClickCollectOrdersMetaDetails)\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца для всех методов <strong>закрепления идентификаторов маркировки Самовывоз</strong>:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 20 запросов | 3 сек | 500 запросов |\n\nОдин запрос с кодами ответов <code>4XX</code> учитывается как 10 запросов.\n\n<hr>\n\nВ <a href='/sandbox'>песочнице</a> — максимум 1 запрос в секунду суммарно для всех методов <strong>Маркетплейса</strong>.\n\n</div>\n",
+        "operationId": "postV3ClickCollectOrdersMetaCustomsDeclaration",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "properties": {
+                  "orders": {
+                    "items": {
+                      "properties": {
+                        "customsDeclaration": {
+                          "description": "Номер ДТ",
+                          "example": "10704010/010624/0000302",
+                          "maxLength": 29,
+                          "minLength": 17,
+                          "type": "string"
+                        },
+                        "orderId": {
+                          "description": "ID сборочного задания",
+                          "type": "integer"
+                        },
+                        "originCountryCode": {
+                          "description": "Числовой код страны происхождения товара из [Общероссийского классификатора стран мира](https://esnsi.gosuslugi.ru/classifiers/16269). Необходимо указывать только для сборочных заданий с признаком B2B-продажи \"isB2b\":true\n",
+                          "example": "643",
+                          "maxLength": 3,
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "customsDeclaration",
+                        "orderId",
+                        "originCountryCode"
+                      ],
+                      "type": "object"
+                    },
+                    "maxItems": 1000,
+                    "type": "array"
+                  }
+                },
+                "required": [
+                  "orders"
+                ],
+                "type": "object"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "examples": {
+                  "CustomsDeclarationResponse": {
+                    "$ref": "#/components/examples/CustomsDeclarationResponse"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/api.CustomsDeclarationSetResponse"
+                }
+              }
+            },
+            "description": "<span class='response__value response__value_success'>Успешно</span>"
+          },
+          "400": {
+            "$ref": "#/components/responses/IncorrectRequest"
+          },
+          "401": {
+            "$ref": "#/components/responses/401"
+          },
+          "403": {
+            "$ref": "#/components/responses/AccessDenied"
+          },
+          "429": {
+            "$ref": "#/components/responses/429"
+          }
+        },
+        "security": [
+          {
+            "HeaderApiKey": []
+          }
+        ],
+        "summary": "Закрепить номера ДТ за сборочными заданиями{{ /api/marketplace/v3/click-collect/orders/meta/customs-declaration }}",
+        "tags": [
+          "inStorePickupLabelIdentifiers"
+        ],
+        "x-category": "marketplace",
+        "x-readonly-method": false
+      },
+      "servers": [
+        {
+          "url": "https://marketplace-api.wildberries.ru"
+        }
+      ]
+    },
+    "/api/marketplace/v3/click-collect/orders/meta/delete": {
+      "post": {
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод удаляет значения указанных [идентификаторов маркировки сборочных заданий](./in-store-pickup#tag/inStorePickupLabelIdentifiers/operation/postV3ClickCollectOrdersMetaDetails).\n<br><br>\nВ одном запросе можно удалить идентификаторы маркировки только одного типа. Укажите тип идентификаторов маркировки в запросе:\n  - `imei` — [IMEI](./in-store-pickup#tag/inStorePickupLabelIdentifiers/operation/postV3ClickCollectOrdersMetaImei)\n  - `uin` — [УИН](./in-store-pickup#tag/inStorePickupLabelIdentifiers/operation/postV3ClickCollectOrdersMetaUin)\n  - `gtin` — [GTIN](./in-store-pickup#tag/inStorePickupLabelIdentifiers/operation/postV3ClickCollectOrdersMetaGtin)\n  - `sgtin` — [код маркировки](./in-store-pickup#tag/inStorePickupLabelIdentifiers/operation/postV3ClickCollectOrdersMetaSgtin)\n  - `customsDeclaration` — [номер ДТ](./in-store-pickup#tag/inStorePickupLabelIdentifiers/operation/postV3ClickCollectOrdersMetaCustomsDeclaration). При удалении номера ДТ также удаляется код страны происхождения товара — `originCountryCode`\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца для всех методов <strong>получения и удаления идентификаторов маркировки Самовывоз</strong>:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 150 запросов | 400 мс | 20 запросов |\n\nОдин запрос с кодами ответов <code>4XX</code> учитывается как 10 запросов.\n\n<hr>\n\nВ <a href='/sandbox'>песочнице</a> — максимум 1 запрос в секунду суммарно для всех методов <strong>Маркетплейса</strong>.\n\n</div>\n",
+        "operationId": "postV3ClickCollectOrdersMetaDelete",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/api.OrdersMetaDeleteRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/api.OrdersResponses"
+                }
+              }
+            },
+            "description": "<span class='response__value response__value_success'>Успешно</span>"
+          },
+          "400": {
+            "$ref": "#/components/responses/IncorrectRequest"
+          },
+          "401": {
+            "$ref": "#/components/responses/401"
+          },
+          "402": {
+            "$ref": "#/components/responses/402"
+          },
+          "403": {
+            "$ref": "#/components/responses/AccessDenied"
+          },
+          "429": {
+            "$ref": "#/components/responses/429"
+          }
+        },
+        "summary": "Удалить идентификаторы маркировки сборочных заданий{{ /api/marketplace/v3/click-collect/orders/meta/delete }}",
+        "tags": [
+          "inStorePickupLabelIdentifiers"
+        ],
+        "x-category": "marketplace",
+        "x-readonly-method": false
+      },
+      "servers": [
+        {
+          "description": "**Prod**\n",
+          "url": "https://marketplace-api.wildberries.ru"
+        },
+        {
+          "description": "**Sandbox**\n",
+          "url": "https://marketplace-api-sandbox.wildberries.ru"
+        }
+      ]
+    },
+    "/api/marketplace/v3/click-collect/orders/meta/details": {
+      "post": {
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод возвращает идентификаторы маркировки [сборочных заданий ](./in-store-pickup#tag/inStorePickupAssemblyOrders) и статусы их проверки.<br><br>\n\nПеречень идентификаторов маркировки, доступных для сборочного задания, можно получить в [списке новых сборочных заданий](./in-store-pickup#tag/inStorePickupAssemblyOrders/operation/getV3ClickCollectOrdersNew), поле `requiredMeta`. Если поле `requiredMeta` не содержит какой-либо идентификатор маркировки, значит, у сборочного задания не может быть этого идентификатора — и добавить его нельзя.<br>\nВозможные идентификаторы маркировки:\n  - `imei` — [IMEI](./in-store-pickup#tag/inStorePickupLabelIdentifiers/operation/postV3ClickCollectOrdersMetaImei)\n  - `uin` — [УИН](./in-store-pickup#tag/inStorePickupLabelIdentifiers/operation/postV3ClickCollectOrdersMetaUin)\n  - `gtin` — [GTIN](./in-store-pickup#tag/inStorePickupLabelIdentifiers/operation/postV3ClickCollectOrdersMetaGtin)\n  - `sgtin` — [код маркировки](./in-store-pickup#tag/inStorePickupLabelIdentifiers/operation/postV3ClickCollectOrdersMetaSgtin)\n  - `customsDeclaration` — [номер ДТ](./in-store-pickup#tag/inStorePickupLabelIdentifiers/operation/postV3ClickCollectOrdersMetaCustomsDeclaration)\n  - `originCountryCode` — [числовой код страны происхождения товара](./in-store-pickup#tag/inStorePickupLabelIdentifiers/operation/postV3ClickCollectOrdersMetaCustomsDeclaration) из [Общероссийского классификатора стран мира](https://esnsi.gosuslugi.ru/classifiers/16269)\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца для всех методов <strong>получения и удаления идентификаторов маркировки Самовывоз</strong>:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 150 запросов | 400 мс | 20 запросов |\n\nОдин запрос с кодами ответов <code>4XX</code> учитывается как 10 запросов\n\n</div>\n",
+        "operationId": "postV3ClickCollectOrdersMetaDetails",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/api.OrdersRequestV2"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/api.OrdersMetaDetailsResponse"
+                }
+              }
+            },
+            "description": "<span class='response__value response__value_success'>Успешно</span>"
+          },
+          "400": {
+            "$ref": "#/components/responses/IncorrectRequest"
+          },
+          "401": {
+            "$ref": "#/components/responses/401"
+          },
+          "403": {
+            "$ref": "#/components/responses/AccessDeniedBatch"
+          },
+          "429": {
+            "$ref": "#/components/responses/429"
+          }
+        },
+        "summary": "Получить идентификаторы маркировки сборочных заданий{{ /api/marketplace/v3/click-collect/orders/meta/details }}",
+        "tags": [
+          "inStorePickupLabelIdentifiers"
+        ],
+        "x-category": "marketplace",
+        "x-readonly-method": true
+      }
+    },
+    "/api/marketplace/v3/click-collect/orders/meta/gtin": {
+      "post": {
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод обновляет GTIN, уникальный ID товара в Беларуси, в [идентификаторах маркировки сборочных заданий](./in-store-pickup#tag/inStorePickupLabelIdentifiers/operation/postV3ClickCollectOrdersMetaDetails). У одного сборочного задания может быть только один GTIN. <br>\nЗакрепить GTIN можно только за сборочным заданием в [статусе](./in-store-pickup#tag/inStorePickupAssemblyOrders/operation/postV3ClickCollectOrdersStatusInfo) `confirm` и если в [идентификаторах маркировки сборочного задания](./in-store-pickup#tag/inStorePickupLabelIdentifiers/operation/postV3ClickCollectOrdersMetaDetails) есть поле `gtin`.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца для всех методов <strong>закрепления идентификаторов маркировки Самовывоз</strong>:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 20 запросов | 3 сек | 500 запросов |\n\nОдин запрос с кодами ответов <code>4XX</code> учитывается как 10 запросов.\n\n<hr>\n\nВ <a href='/sandbox'>песочнице</a> — максимум 1 запрос в секунду суммарно для всех методов <strong>Маркетплейса</strong>.\n\n</div>\n",
+        "operationId": "postV3ClickCollectOrdersMetaGtin",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/api.OrdersGTINSetRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/api.MetaSetResponses"
+                }
+              }
+            },
+            "description": "<span class='response__value response__value_success'>Успешно</span>"
+          },
+          "400": {
+            "$ref": "#/components/responses/IncorrectRequest"
+          },
+          "401": {
+            "$ref": "#/components/responses/401"
+          },
+          "402": {
+            "$ref": "#/components/responses/402"
+          },
+          "403": {
+            "$ref": "#/components/responses/AccessDenied"
+          },
+          "429": {
+            "$ref": "#/components/responses/429"
+          }
+        },
+        "summary": "Закрепить GTIN за сборочными заданиями{{ /api/marketplace/v3/click-collect/orders/meta/gtin }}",
+        "tags": [
+          "inStorePickupLabelIdentifiers"
+        ],
+        "x-category": "marketplace",
+        "x-readonly-method": false
+      },
+      "servers": [
+        {
+          "description": "**Prod**\n",
+          "url": "https://marketplace-api.wildberries.ru"
+        },
+        {
+          "description": "**Sandbox**\n",
+          "url": "https://marketplace-api-sandbox.wildberries.ru"
+        }
+      ]
+    },
+    "/api/marketplace/v3/click-collect/orders/meta/imei": {
+      "post": {
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод обновляет IMEI в [идентификаторах маркировки сборочных заданий](./in-store-pickup#tag/inStorePickupLabelIdentifiers/operation/postV3ClickCollectOrdersMetaDetails). <br>\nУ одного сборочного задания может быть только один IMEI. Если у устройства два IMEI — **IMEI** и **IMEI2** или **IMEI1** и **IMEI2** — укажите только **IMEI** или **IMEI1**. **IMEI2** указывать не нужно.<br>\nЗакрепить IMEI можно только за сборочным заданием в [статусе](./in-store-pickup#tag/inStorePickupAssemblyOrders/operation/postV3ClickCollectOrdersStatusInfo) `confirm` и если в [идентификаторах маркировки сборочного задания](./in-store-pickup#tag/inStorePickupLabelIdentifiers/operation/postV3ClickCollectOrdersMetaDetails) есть поле `imei`.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца для всех методов <strong>закрепления идентификаторов маркировки Самовывоз</strong>:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 20 запросов | 3 сек | 500 запросов |\n\nОдин запрос с кодами ответов <code>4XX</code> учитывается как 10 запросов.\n\n<hr>\n\nВ <a href='/sandbox'>песочнице</a> — максимум 1 запрос в секунду суммарно для всех методов <strong>Маркетплейса</strong>.\n\n</div>\n",
+        "operationId": "postV3ClickCollectOrdersMetaImei",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/api.OrdersIMEISetRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/api.MetaSetResponses"
+                }
+              }
+            },
+            "description": "<span class='response__value response__value_success'>Успешно</span>"
+          },
+          "400": {
+            "$ref": "#/components/responses/IncorrectRequest"
+          },
+          "401": {
+            "$ref": "#/components/responses/401"
+          },
+          "402": {
+            "$ref": "#/components/responses/402"
+          },
+          "403": {
+            "$ref": "#/components/responses/AccessDenied"
+          },
+          "429": {
+            "$ref": "#/components/responses/429"
+          }
+        },
+        "summary": "Закрепить IMEI за сборочными заданиями{{ /api/marketplace/v3/click-collect/orders/meta/imei }}",
+        "tags": [
+          "inStorePickupLabelIdentifiers"
+        ],
+        "x-category": "marketplace",
+        "x-readonly-method": false
+      },
+      "servers": [
+        {
+          "description": "**Prod**\n",
+          "url": "https://marketplace-api.wildberries.ru"
+        },
+        {
+          "description": "**Sandbox**\n",
+          "url": "https://marketplace-api-sandbox.wildberries.ru"
+        }
+      ]
+    },
+    "/api/marketplace/v3/click-collect/orders/meta/sgtin": {
+      "post": {
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод обновляет код маркировки [Честного знака](https://честныйзнак.рф/) в [идентификаторах маркировки сборочных заданий](./in-store-pickup#tag/inStorePickupLabelIdentifiers/operation/postV3ClickCollectOrdersMetaDetails).<br>\nЗакрепить код маркировки можно только за сборочным заданием в [статусе](./in-store-pickup#tag/inStorePickupAssemblyOrders/operation/postV3ClickCollectOrdersStatusInfo) `confirm` и если в [идентификаторах маркировки сборочного задания](./in-store-pickup#tag/inStorePickupLabelIdentifiers/operation/postV3ClickCollectOrdersMetaDetails) есть поле `sgtin`.\n<br><br>\nПолучить загруженные маркировки можно в [идентификаторах маркировки сборочного задания](./in-store-pickup#tag/inStorePickupLabelIdentifiers/operation/postV3ClickCollectOrdersMetaDetails).\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца для всех методов <strong>закрепления идентификаторов маркировки Самовывоз</strong>:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 20 запросов | 3 сек | 500 запросов |\n\nОдин запрос с кодами ответов <code>4XX</code> учитывается как 10 запросов.\n\n<hr>\n\nВ <a href='/sandbox'>песочнице</a> — максимум 1 запрос в секунду суммарно для всех методов <strong>Маркетплейса</strong>.\n\n</div>\n",
+        "operationId": "postV3ClickCollectOrdersMetaSgtin",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/api.OrdersSGTINsSetRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/api.MetaSetResponses"
+                }
+              }
+            },
+            "description": "<span class='response__value response__value_success'>Успешно</span>"
+          },
+          "400": {
+            "$ref": "#/components/responses/IncorrectRequest"
+          },
+          "401": {
+            "$ref": "#/components/responses/401"
+          },
+          "402": {
+            "$ref": "#/components/responses/402"
+          },
+          "403": {
+            "$ref": "#/components/responses/AccessDenied"
+          },
+          "429": {
+            "$ref": "#/components/responses/429"
+          }
+        },
+        "summary": "Закрепить коды маркировки Честного знака за сборочными заданиями{{ /api/marketplace/v3/click-collect/orders/meta/sgtin }}",
+        "tags": [
+          "inStorePickupLabelIdentifiers"
+        ],
+        "x-category": "marketplace",
+        "x-readonly-method": false
+      },
+      "servers": [
+        {
+          "description": "**Prod**\n",
+          "url": "https://marketplace-api.wildberries.ru"
+        },
+        {
+          "description": "**Sandbox**\n",
+          "url": "https://marketplace-api-sandbox.wildberries.ru"
+        }
+      ]
+    },
+    "/api/marketplace/v3/click-collect/orders/meta/uin": {
+      "post": {
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод обновляет УИН, уникальные идентификационные номера, в [идентификаторах маркировки сборочных заданий](./in-store-pickup#tag/inStorePickupLabelIdentifiers/operation/postV3ClickCollectOrdersMetaDetails). У одного сборочного задания может быть только один УИН. <br>\nЗакрепить УИН можно только за сборочным заданием в [статусе](./in-store-pickup#tag/inStorePickupAssemblyOrders/operation/postV3ClickCollectOrdersStatusInfo) `confirm` и если в [идентификаторах маркировки сборочного задания](./in-store-pickup#tag/inStorePickupLabelIdentifiers/operation/postV3ClickCollectOrdersMetaDetails) есть поле `uin`.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца для всех методов <strong>закрепления идентификаторов маркировки Самовывоз</strong>:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 20 запросов | 3 сек | 500 запросов |\n\nОдин запрос с кодами ответов <code>4XX</code> учитывается как 10 запросов.\n\n<hr>\n\nВ <a href='/sandbox'>песочнице</a> — максимум 1 запрос в секунду суммарно для всех методов <strong>Маркетплейса</strong>.\n\n</div>\n",
+        "operationId": "postV3ClickCollectOrdersMetaUin",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/api.OrdersUINSetRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/api.MetaSetResponses"
+                }
+              }
+            },
+            "description": "<span class='response__value response__value_success'>Успешно</span>"
+          },
+          "400": {
+            "$ref": "#/components/responses/IncorrectRequest"
+          },
+          "401": {
+            "$ref": "#/components/responses/401"
+          },
+          "402": {
+            "$ref": "#/components/responses/402"
+          },
+          "403": {
+            "$ref": "#/components/responses/AccessDenied"
+          },
+          "429": {
+            "$ref": "#/components/responses/429"
+          }
+        },
+        "summary": "Закрепить УИН за сборочными заданиями{{ /api/marketplace/v3/click-collect/orders/meta/uin }}",
+        "tags": [
+          "inStorePickupLabelIdentifiers"
+        ],
+        "x-category": "marketplace",
+        "x-readonly-method": false
+      },
+      "servers": [
+        {
+          "description": "**Prod**\n",
+          "url": "https://marketplace-api.wildberries.ru"
+        },
+        {
+          "description": "**Sandbox**\n",
+          "url": "https://marketplace-api-sandbox.wildberries.ru"
+        }
+      ]
+    },
+    "/api/marketplace/v3/click-collect/orders/status/cancel": {
+      "post": {
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nПереводит [сборочные задания](./in-store-pickup#tag/inStorePickupAssemblyOrders) из [статусов](./in-store-pickup#tag/inStorePickupAssemblyOrders/operation/postV3ClickCollectOrdersStatusInfo) `new`, `confirm`, `prepare` в статус `cancel` — отменено продавцом.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 сек | 1 запрос | 1 сек | 10 запросов |\n\nОдин запрос с кодами ответов <code>4XX</code> учитывается как 10 запросов.\n\n<hr>\n\nВ <a href='/sandbox'>песочнице</a> — максимум 1 запрос в секунду суммарно для всех методов <strong>Маркетплейса</strong>.\n\n</div>\n",
+        "operationId": "postV3ClickCollectOrdersStatusCancel",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/api.OrdersRequestV2"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/api.StatusSetResponses"
+                }
+              }
+            },
+            "description": "<span class='response__value response__value_success'>Успешно</span>"
+          },
+          "400": {
+            "$ref": "#/components/responses/IncorrectRequest"
+          },
+          "401": {
+            "$ref": "#/components/responses/401"
+          },
+          "402": {
+            "$ref": "#/components/responses/402"
+          },
+          "403": {
+            "$ref": "#/components/responses/AccessDeniedBatch"
+          },
+          "429": {
+            "$ref": "#/components/responses/429"
+          }
+        },
+        "summary": "Отменить сборочные задания{{ /api/marketplace/v3/click-collect/orders/status/cancel }}",
+        "tags": [
+          "inStorePickupAssemblyOrders"
+        ],
+        "x-category": "marketplace",
+        "x-readonly-method": false
+      },
+      "servers": [
+        {
+          "description": "**Prod**\n",
+          "url": "https://marketplace-api.wildberries.ru"
+        },
+        {
+          "description": "**Sandbox**\n",
+          "url": "https://marketplace-api-sandbox.wildberries.ru"
+        }
+      ]
+    },
+    "/api/marketplace/v3/click-collect/orders/status/confirm": {
+      "post": {
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод переводит [сборочные задания](./in-store-pickup#tag/inStorePickupAssemblyOrders) из [статуса](./in-store-pickup#tag/inStorePickupAssemblyOrders/operation/postV3ClickCollectOrdersStatusInfo) `new` — новый — в статус `confirm` — на сборке.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 сек | 1 запрос | 1 сек | 10 запросов |\n\nОдин запрос с кодами ответов <code>4XX</code> учитывается как 10 запросов.\n\n<hr>\n\nВ <a href='/sandbox'>песочнице</a> — максимум 1 запрос в секунду суммарно для всех методов <strong>Маркетплейса</strong>.\n\n</div>\n",
+        "operationId": "postV3ClickCollectOrdersStatusConfirm",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/api.OrdersRequestV2"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/api.StatusSetResponses"
+                }
+              }
+            },
+            "description": "<span class='response__value response__value_success'>Успешно</span>"
+          },
+          "400": {
+            "$ref": "#/components/responses/IncorrectRequest"
+          },
+          "401": {
+            "$ref": "#/components/responses/401"
+          },
+          "402": {
+            "$ref": "#/components/responses/402"
+          },
+          "403": {
+            "$ref": "#/components/responses/AccessDeniedBatch"
+          },
+          "429": {
+            "$ref": "#/components/responses/429"
+          }
+        },
+        "summary": "Перевести сборочные задания на сборку{{ /api/marketplace/v3/click-collect/orders/status/confirm }}",
+        "tags": [
+          "inStorePickupAssemblyOrders"
+        ],
+        "x-category": "marketplace",
+        "x-readonly-method": false
+      },
+      "servers": [
+        {
+          "description": "**Prod**\n",
+          "url": "https://marketplace-api.wildberries.ru"
+        },
+        {
+          "description": "**Sandbox**\n",
+          "url": "https://marketplace-api-sandbox.wildberries.ru"
+        }
+      ]
+    },
+    "/api/marketplace/v3/click-collect/orders/status/info": {
+      "post": {
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод возвращает статусы [сборочных заданий](./in-store-pickup#tag/inStorePickupAssemblyOrders) по их ID.\n<br><br>\n`supplierStatus` — статус сборочного задания. Триггер его изменения - действие самого продавца.\n\nВозможные значения `supplierStatus`:\n| Статус   | Описание            | Как перевести сборочное задание в данный статус |\n| -------  | ---------           | --------------------------------------|\n| `new`      | **Новое сборочное задание** |\n| `confirm`  | **На сборке**  | \t[Перевести сборочное задание на сборку](./in-store-pickup#tag/inStorePickupAssemblyOrders/operation/postV3ClickCollectOrdersStatusConfirm)\n| `prepare`  | **Готов к выдаче** | \t[Сообщить, что сборочное задание готово к выдаче](./in-store-pickup#tag/inStorePickupAssemblyOrders/operation/postV3ClickCollectOrdersStatusPrepare)\n| `receive`  | **Получено покупателем**   | [Сообщить, что заказ принят покупателем](./in-store-pickup#tag/inStorePickupAssemblyOrders/operation/postV3ClickCollectOrdersStatusReceive)\n| `reject`  | **Отказ покупателя при получении**    |  \t[Сообщить, что покупатель отказался от заказа](./in-store-pickup#tag/inStorePickupAssemblyOrders/operation/postV3ClickCollectOrdersStatusReject)\n| `cancel`   | **Отменено продавцом**    |  \t[Отменить сборочное задание](./in-store-pickup#tag/inStorePickupAssemblyOrders/operation/postV3ClickCollectOrdersStatusCancel)\n| `cancel_shelf_life` | **Отмена по истечении срока хранения**    |  \tПереводится автоматически по возникновению события\n\n<br><br>\n`wbStatus` — статус системы Wildberries.\n\nВозможные значения `wbStatus`:\n- `waiting` - сборочное задание в работе\n- `sold` - заказ получен покупателем\n- `canceled` - отмена сборочного задания\n- `canceled_by_client` - покупатель отменил заказ при получении\n- `declined_by_client` - покупатель отменил заказ в первый чаc\n<br> Отмена доступна покупателю в первый час с момента заказа, если заказ не переведён на сборку\n- `defect` - отмена заказа по причине брака\n- `ready_for_pickup` - заказ готов к выдаче\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 сек | 1 запрос | 1 сек | 10 запросов |\n\nОдин запрос с кодами ответов <code>4XX</code> учитывается как 10 запросов.\n\n<hr>\n\nВ <a href='/sandbox'>песочнице</a> — максимум 1 запрос в секунду суммарно для всех методов <strong>Маркетплейса</strong>.\n\n</div>\n",
+        "operationId": "postV3ClickCollectOrdersStatusInfo",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/api.OrdersRequestV2"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/api.OrderStatusesV2"
+                }
+              }
+            },
+            "description": "<span class='response__value response__value_success'>Успешно</span>"
+          },
+          "400": {
+            "$ref": "#/components/responses/IncorrectRequest"
+          },
+          "401": {
+            "$ref": "#/components/responses/401"
+          },
+          "402": {
+            "$ref": "#/components/responses/402"
+          },
+          "403": {
+            "$ref": "#/components/responses/AccessDeniedBatch"
+          },
+          "429": {
+            "$ref": "#/components/responses/429"
+          }
+        },
+        "summary": "Получить статусы сборочных заданий{{ /api/marketplace/v3/click-collect/orders/status/info }}",
+        "tags": [
+          "inStorePickupAssemblyOrders"
+        ],
+        "x-category": "marketplace",
+        "x-readonly-method": true
+      },
+      "servers": [
+        {
+          "description": "**Prod**\n",
+          "url": "https://marketplace-api.wildberries.ru"
+        },
+        {
+          "description": "**Sandbox**\n",
+          "url": "https://marketplace-api-sandbox.wildberries.ru"
+        }
+      ]
+    },
+    "/api/marketplace/v3/click-collect/orders/status/prepare": {
+      "post": {
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод переводит [сборочные задания](./in-store-pickup#tag/inStorePickupAssemblyOrders) из [статуса](./in-store-pickup#tag/inStorePickupAssemblyOrders/operation/postV3ClickCollectOrdersStatusInfo) `confirm` — на сборке — в статус `prepare` — готово к выдаче.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 сек | 1 запрос | 1 сек | 10 запросов |\n\nОдин запрос с кодами ответов <code>4XX</code> учитывается как 10 запросов.\n\n<hr>\n\nВ <a href='/sandbox'>песочнице</a> — максимум 1 запрос в секунду суммарно для всех методов <strong>Маркетплейса</strong>.\n\n</div>\n",
+        "operationId": "postV3ClickCollectOrdersStatusPrepare",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/api.OrdersRequestV2"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/api.MetaDetailsResponse"
+                }
+              }
+            },
+            "description": "<span class='response__value response__value_success'>Успешно</span>"
+          },
+          "400": {
+            "$ref": "#/components/responses/IncorrectRequest"
+          },
+          "401": {
+            "$ref": "#/components/responses/401"
+          },
+          "402": {
+            "$ref": "#/components/responses/402"
+          },
+          "403": {
+            "$ref": "#/components/responses/AccessDeniedBatch"
+          },
+          "429": {
+            "$ref": "#/components/responses/429"
+          }
+        },
+        "summary": "Сообщить, что сборочные задания готовы к выдаче{{ /api/marketplace/v3/click-collect/orders/status/prepare }}",
+        "tags": [
+          "inStorePickupAssemblyOrders"
+        ],
+        "x-category": "marketplace",
+        "x-readonly-method": false
+      },
+      "servers": [
+        {
+          "description": "**Prod**\n",
+          "url": "https://marketplace-api.wildberries.ru"
+        },
+        {
+          "description": "**Sandbox**\n",
+          "url": "https://marketplace-api-sandbox.wildberries.ru"
+        }
+      ]
+    },
+    "/api/marketplace/v3/click-collect/orders/status/receive": {
+      "post": {
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод переводит [сборочные задания](./in-store-pickup#tag/inStorePickupAssemblyOrders) из [статуса](./in-store-pickup#tag/inStorePickupAssemblyOrders/operation/postV3ClickCollectOrdersStatusInfo) `prepare` — готово к выдаче — в статус `receive` — получено покупателем.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 сек | 1 запрос | 1 сек | 10 запросов |\n\nОдин запрос с кодами ответов <code>4XX</code> учитывается как 10 запросов.\n\n<hr>\n\nВ <a href='/sandbox'>песочнице</a> — максимум 1 запрос в секунду суммарно для всех методов <strong>Маркетплейса</strong>.\n\n</div>\n",
+        "operationId": "postV3ClickCollectOrdersStatusReceive",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/api.OrdersRequestV2"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/api.StatusSetResponses"
+                }
+              }
+            },
+            "description": "<span class='response__value response__value_success'>Успешно</span>"
+          },
+          "400": {
+            "$ref": "#/components/responses/IncorrectRequest"
+          },
+          "401": {
+            "$ref": "#/components/responses/401"
+          },
+          "402": {
+            "$ref": "#/components/responses/402"
+          },
+          "403": {
+            "$ref": "#/components/responses/AccessDeniedBatch"
+          },
+          "429": {
+            "$ref": "#/components/responses/429"
+          }
+        },
+        "summary": "Сообщить, что заказы приняты покупателями{{ /api/marketplace/v3/click-collect/orders/status/receive }}",
+        "tags": [
+          "inStorePickupAssemblyOrders"
+        ],
+        "x-category": "marketplace",
+        "x-readonly-method": false
+      },
+      "servers": [
+        {
+          "description": "**Prod**\n",
+          "url": "https://marketplace-api.wildberries.ru"
+        },
+        {
+          "description": "**Sandbox**\n",
+          "url": "https://marketplace-api-sandbox.wildberries.ru"
+        }
+      ]
+    },
+    "/api/marketplace/v3/click-collect/orders/status/reject": {
+      "post": {
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод переводит [сборочные задания](./in-store-pickup#tag/inStorePickupAssemblyOrders) из [статуса](./in-store-pickup#tag/inStorePickupAssemblyOrders/operation/postV3ClickCollectOrdersStatusInfo) `prepare` — готово к выдаче — в статус `reject` — отказ при получении.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 сек | 1 запрос | 1 сек | 10 запросов |\n\nОдин запрос с кодами ответов <code>4XX</code> учитывается как 10 запросов.\n\n<hr>\n\nВ <a href='/sandbox'>песочнице</a> — максимум 1 запрос в секунду суммарно для всех методов <strong>Маркетплейса</strong>.\n\n</div>\n",
+        "operationId": "postV3ClickCollectOrdersStatusReject",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/api.OrdersRequestV2"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/api.StatusSetResponses"
+                }
+              }
+            },
+            "description": "<span class='response__value response__value_success'>Успешно</span>"
+          },
+          "400": {
+            "$ref": "#/components/responses/IncorrectRequest"
+          },
+          "401": {
+            "$ref": "#/components/responses/401"
+          },
+          "402": {
+            "$ref": "#/components/responses/402"
+          },
+          "403": {
+            "$ref": "#/components/responses/AccessDeniedBatch"
+          },
+          "429": {
+            "$ref": "#/components/responses/429"
+          }
+        },
+        "summary": "Сообщить об отказе от заказов{{ /api/marketplace/v3/click-collect/orders/status/reject }}",
+        "tags": [
+          "inStorePickupAssemblyOrders"
+        ],
+        "x-category": "marketplace",
+        "x-readonly-method": false
+      },
+      "servers": [
+        {
+          "description": "**Prod**\n",
+          "url": "https://marketplace-api.wildberries.ru"
+        },
+        {
+          "description": "**Sandbox**\n",
+          "url": "https://marketplace-api-sandbox.wildberries.ru"
+        }
+      ]
+    },
+    "/api/v3/click-collect/orders": {
+      "get": {
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод возвращает информацию о завершённых сборочных заданиях после продажи или отмены заказа.\n<br><br>\nМожно получить данные за заданный период, максимум 30 календарных дней одним запросом.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца для методов <strong>сборочных заданий Самовывоз</strong>:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 300 запросов | 200 мс | 20 запросов |\n\nОдин запрос с кодами ответов <code>4XX</code> учитывается как 10 запросов.\n\n<hr>\n\nВ <a href='/sandbox'>песочнице</a> — максимум 1 запрос в секунду суммарно для всех методов <strong>Маркетплейса</strong>.\n\n</div>\n",
+        "operationId": "getV3ClickCollectOrders",
+        "parameters": [
+          {
+            "description": "Количество элементов в ответе\n",
+            "in": "query",
+            "name": "limit",
+            "required": true,
+            "schema": {
+              "maximum": 1000,
+              "minimum": 1,
+              "type": "integer"
+            }
+          },
+          {
+            "description": "Параметр пагинации. Чтобы получить полный список данных, укажите `0` в первом запросе. Чтобы получить следующий пакет данных, используйте значение `next` из ответа\n",
+            "in": "query",
+            "name": "next",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            }
+          },
+          {
+            "description": "Дата начала периода в формате Unix timestamp",
+            "in": "query",
+            "name": "dateFrom",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            }
+          },
+          {
+            "description": "Дата конца периода в формате Unix timestamp",
+            "in": "query",
+            "name": "dateTo",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/api.Orders"
+                }
+              }
+            },
+            "description": "<span class='response__value response__value_success'>Успешно</span>"
+          },
+          "400": {
+            "content": {
+              "application/json": {
+                "examples": {
+                  "IncorrectParameter": {
+                    "$ref": "#/components/examples/IncorrectParameter"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            },
+            "description": "<span class='response__value '>Неправильный запрос</span>"
+          },
+          "401": {
+            "$ref": "#/components/responses/401"
+          },
+          "402": {
+            "$ref": "#/components/responses/402"
+          },
+          "403": {
+            "$ref": "#/components/responses/AccessDenied"
+          },
+          "429": {
+            "$ref": "#/components/responses/429"
+          }
+        },
+        "summary": "Получить информацию о завершённых сборочных заданиях{{ /api/v3/click-collect/orders }}",
+        "tags": [
+          "inStorePickupAssemblyOrders"
+        ],
+        "x-category": "marketplace",
+        "x-readonly-method": true
+      },
+      "servers": [
+        {
+          "description": "**Prod**\n",
+          "url": "https://marketplace-api.wildberries.ru"
+        },
+        {
+          "description": "**Sandbox**\n",
+          "url": "https://marketplace-api-sandbox.wildberries.ru"
+        }
+      ]
+    },
+    "/api/v3/click-collect/orders/client": {
+      "post": {
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод возвращает информацию о покупателе по ID сборочного задания.\n<br><br>\nДоступно только для сборочных заданий в статусах:\n  - `confirm` — на сборке\n  - `prepare` — готов к выдаче\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца для методов <strong>сборочных заданий Самовывоз</strong>:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 300 запросов | 200 мс | 20 запросов |\n\nОдин запрос с кодами ответов <code>4XX</code> учитывается как 10 запросов.\n\n<hr>\n\nВ <a href='/sandbox'>песочнице</a> — максимум 1 запрос в секунду суммарно для всех методов <strong>Маркетплейса</strong>.\n\n</div>\n",
+        "operationId": "postV3ClickCollectOrdersClient",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/api.OrdersRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/api.OrderClientInfoResp"
+                }
+              }
+            },
+            "description": "<span class='response__value response__value_success'>Успешно</span>"
+          },
+          "400": {
+            "content": {
+              "application/json": {
+                "examples": {
+                  "IncorrectRequestBody": {
+                    "$ref": "#/components/examples/IncorrectRequestBody"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            },
+            "description": "<span class='response__value '>Неправильный запрос</span>"
+          },
+          "401": {
+            "$ref": "#/components/responses/401"
+          },
+          "402": {
+            "$ref": "#/components/responses/402"
+          },
+          "403": {
+            "$ref": "#/components/responses/AccessDenied"
+          },
+          "429": {
+            "$ref": "#/components/responses/429"
+          }
+        },
+        "summary": "Информация о покупателе{{ /api/v3/click-collect/orders/client }}",
+        "tags": [
+          "inStorePickupAssemblyOrders"
+        ],
+        "x-category": "marketplace",
+        "x-readonly-method": true
+      },
+      "servers": [
+        {
+          "description": "**Prod**\n",
+          "url": "https://marketplace-api.wildberries.ru"
+        },
+        {
+          "description": "**Sandbox**\n",
+          "url": "https://marketplace-api-sandbox.wildberries.ru"
+        }
+      ]
+    },
+    "/api/v3/click-collect/orders/client/identity": {
+      "post": {
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод сообщает, принадлежит ли проверяемый заказ покупателю или нет по переданному коду.\n<br><br>\nДоступно, если хотя бы одно сборочное задание из заказа находится в статусе prepare - готов к выдаче.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 30 запросов | 2 сек | 20 запросов |\n\nОдин запрос с кодами ответов <code>4XX</code> учитывается как 10 запросов.\n\n<hr>\n\nВ <a href='/sandbox'>песочнице</a> — максимум 1 запрос в секунду суммарно для всех методов <strong>Маркетплейса</strong>.\n\n</div>\n",
+        "operationId": "postV3ClickCollectOrdersClientIdentity",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/api.CheckIdentityRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/api.CheckedIdentity"
+                }
+              }
+            },
+            "description": "<span class='response__value response__value_success'>Успешно</span>"
+          },
+          "400": {
+            "content": {
+              "application/json": {
+                "examples": {
+                  "IncorrectRequestBody": {
+                    "$ref": "#/components/examples/IncorrectRequestBody"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            },
+            "description": "<span class='response__value '>Неправильный запрос</span>"
+          },
+          "401": {
+            "$ref": "#/components/responses/401"
+          },
+          "402": {
+            "$ref": "#/components/responses/402"
+          },
+          "403": {
+            "$ref": "#/components/responses/AccessDenied"
+          },
+          "404": {
+            "content": {
+              "application/json": {
+                "examples": {
+                  "OrderNotFound": {
+                    "$ref": "#/components/examples/OrderNotFound"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/api.Error"
+                }
+              }
+            },
+            "description": "<span class='response__value '>Не найдено</span>"
+          },
+          "409": {
+            "content": {
+              "application/json": {
+                "examples": {
+                  "InvalidPasscode": {
+                    "$ref": "#/components/examples/InvalidPasscode"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/api.Error"
+                }
+              }
+            },
+            "description": "<span class='response__value '>Введён неверный проверочный код</span>"
+          },
+          "429": {
+            "$ref": "#/components/responses/429"
+          }
+        },
+        "summary": "Проверить, что заказ принадлежит покупателю{{ /api/v3/click-collect/orders/client/identity }}",
+        "tags": [
+          "inStorePickupAssemblyOrders"
+        ],
+        "x-category": "marketplace",
+        "x-readonly-method": true
+      },
+      "servers": [
+        {
+          "description": "**Prod**\n",
+          "url": "https://marketplace-api.wildberries.ru"
+        },
+        {
+          "description": "**Sandbox**\n",
+          "url": "https://marketplace-api-sandbox.wildberries.ru"
+        }
+      ]
+    },
+    "/api/v3/click-collect/orders/new": {
+      "get": {
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод возвращает список всех новых [сборочных заданий](./in-store-pickup#tag/inStorePickupAssemblyOrders), которые есть у продавца на момент запроса.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца для методов <strong>сборочных заданий Самовывоз</strong>:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 300 запросов | 200 мс | 20 запросов |\n\nОдин запрос с кодами ответов <code>4XX</code> учитывается как 10 запросов.\n\n<hr>\n\nВ <a href='/sandbox'>песочнице</a> — максимум 1 запрос в секунду суммарно для всех методов <strong>Маркетплейса</strong>.\n\n</div>\n",
+        "operationId": "getV3ClickCollectOrdersNew",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "examples": {
+                  "NewOrderClick": {
+                    "$ref": "#/components/examples/NewOrderClick"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/api.NewOrders"
+                }
+              }
+            },
+            "description": "<span class='response__value response__value_success'>Успешно</span>"
+          },
+          "401": {
+            "$ref": "#/components/responses/401"
+          },
+          "402": {
+            "$ref": "#/components/responses/402"
+          },
+          "403": {
+            "$ref": "#/components/responses/AccessDenied"
+          },
+          "429": {
+            "$ref": "#/components/responses/429"
+          }
+        },
+        "summary": "Получить список новых сборочных заданий{{ /api/v3/click-collect/orders/new }}",
+        "tags": [
+          "inStorePickupAssemblyOrders"
+        ],
+        "x-category": "marketplace",
+        "x-readonly-method": true
+      },
+      "servers": [
+        {
+          "description": "**Prod**\n",
+          "url": "https://marketplace-api.wildberries.ru"
+        },
+        {
+          "description": "**Sandbox**\n",
+          "url": "https://marketplace-api-sandbox.wildberries.ru"
+        }
+      ]
+    }
+  },
+  "security": [
+    {
+      "HeaderApiKey": []
+    }
+  ],
+  "servers": [
+    {
+      "url": "https://marketplace-api.wildberries.ru"
+    }
+  ],
+  "tags": [
+    {
+      "description": "<div class=\"api-description\">\n\n<div class=\"api-block\">\n\nУправление [сборочными заданиями](./in-store-pickup#tag/inStorePickupAssemblyOrders) и [идентификаторами маркировки](./in-store-pickup#tag/inStorePickupLabelIdentifiers) Самовывоза.<br><br>\n\nВы можете протестировать методы Самовывоза в [песочнице](/sandbox). Также в песочнице доступны [специальные методы](/docs/openapi-other/sandbox-environment#tag/Marketplejs-Samovyvoz) для эмуляции действий пользователя\n\n</div>\n\n\n</div>",
+      "name": "Самовывоз",
+      "x-traitTag": true
+    },
+    {
+      "description": "<div class=\"description_auth\">\n  Для доступа к методам используйте <a href=\"/openapi/api-information#tag/authorization\">токен</a> для категории <strong>Маркетплейс</strong>\n</div>\n\n\n<div class=\"description_ref\">\n  Узнать, как использовать методы в бизнес-кейсах, можно в <a href=\"/knowledge-base/articles/019d49a4-16d3-7b8c-b42a-026b566a8e29/samovyvoz\">инструкции</a> по работе с <strong>заказами Самовывоз</strong>\n</div>\n\n\nПорядок работы:\n1. [Получите новое сборочное задание](./in-store-pickup#tag/inStorePickupAssemblyOrders/operation/getV3ClickCollectOrdersNew)\n2. [Переведите его на сборку](./in-store-pickup#tag/inStorePickupAssemblyOrders/operation/postV3ClickCollectOrdersStatusConfirm)\n3. После этого для задания становится доступной [информация по покупателю](./in-store-pickup#tag/inStorePickupAssemblyOrders/operation/postV3ClickCollectOrdersClient) (имя, телефон)\n4. После сборки [сообщите, что сборочное задание готово к выдаче](./in-store-pickup#tag/inStorePickupAssemblyOrders/operation/postV3ClickCollectOrdersStatusPrepare)\n5. После того как сборочное задание получит статус `Готово к выдаче`, вы можете проверить, [принадлежит ли это сборочное задание покупателю](./in-store-pickup#tag/inStorePickupAssemblyOrders/operation/postV3ClickCollectOrdersClientIdentity).\n6. После доставки задания покупателю вам необходимо сообщить на наш сервер, что [заказ принят покупателем](./in-store-pickup#tag/inStorePickupAssemblyOrders/operation/postV3ClickCollectOrdersStatusReceive) или что [покупатель отказался от заказа](./in-store-pickup#tag/inStorePickupAssemblyOrders/operation/postV3ClickCollectOrdersStatusReject)\n",
+      "name": "inStorePickupAssemblyOrders",
+      "x-displayName": "Сборочные задания Самовывоз"
+    },
+    {
+      "description": "<div class=\"description_auth\">\n  Для доступа к методам используйте <a href=\"/openapi/api-information#tag/authorization\">токен</a> для категории <strong>Маркетплейс</strong>\n</div>\n\n\n<div class=\"description_ref\">\n  Узнать, как использовать методы в бизнес-кейсах, можно в <a href=\"/knowledge-base/articles/019d49a4-16d3-7b8c-b42a-026b566a8e29/samovyvoz\">инструкции</a> по работе с <strong>заказами Самовывоз</strong>\n</div>\n\n\nС помощью этих методов вы можете [получать](./in-store-pickup#tag/inStorePickupLabelIdentifiers/operation/postV3ClickCollectOrdersMetaDetails), [удалять](./in-store-pickup#tag/inStorePickupLabelIdentifiers/operation/postV3ClickCollectOrdersMetaDelete) и редактировать идентификаторы маркировки сборочных заданий:\n  - [Код маркировки Честного знака](./in-store-pickup#tag/inStorePickupLabelIdentifiers/operation/postV3ClickCollectOrdersMetaSgtin)\n  - [УИН](./in-store-pickup#tag/inStorePickupLabelIdentifiers/operation/postV3ClickCollectOrdersMetaUin)\n  - [IMEI](./in-store-pickup#tag/inStorePickupLabelIdentifiers/operation/postV3ClickCollectOrdersMetaImei)\n  - [GTIN](./in-store-pickup#tag/inStorePickupLabelIdentifiers/operation/postV3ClickCollectOrdersMetaGtin)\n  - [Номера ДТ и коды стран происхождения товара](./in-store-pickup#tag/inStorePickupLabelIdentifiers/operation/postV3ClickCollectOrdersMetaCustomsDeclaration)\n\nЗаполнять идентификаторы маркировки сборочных заданий в песочнице необязательно\n",
+      "name": "inStorePickupLabelIdentifiers",
+      "x-displayName": "Идентификаторы маркировки Самовывоз"
+    }
+  ]
+}

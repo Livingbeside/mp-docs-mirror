@@ -1,0 +1,1276 @@
+{
+  "components": {
+    "examples": {
+      "Fee": {
+        "description": "Комиссия",
+        "summary": "Fee",
+        "value": {
+          "report": [
+            {
+              "kgvpBooking": 14.5,
+              "kgvpMarketplace": 15.5,
+              "kgvpPickup": 14.5,
+              "kgvpSupplier": 12.5,
+              "kgvpSupplierExpress": 3,
+              "paidStorageKgvp": 15.5,
+              "parentID": 657,
+              "parentName": "Бытовая техника",
+              "subjectID": 6461,
+              "subjectName": "Оборудование зуботехническое"
+            }
+          ]
+        }
+      },
+      "FeeChina": {
+        "description": "Комиссия Китай",
+        "summary": "FeeChina",
+        "value": {
+          "report": [
+            {
+              "kgvpChina": 15.5,
+              "parentID": 657,
+              "parentName": "国内设备",
+              "subjectID": 6461,
+              "subjectName": "牙齿矫正设备"
+            }
+          ]
+        }
+      },
+      "FeeTurkey": {
+        "description": "Комиссия Турция",
+        "summary": "FeeTurkey",
+        "value": {
+          "report": [
+            {
+              "kgvpTurkey": 15.5,
+              "parentID": 657,
+              "parentName": "Home appliance",
+              "subjectID": 6461,
+              "subjectName": "Dental equipment"
+            }
+          ]
+        }
+      },
+      "FeeUAE": {
+        "description": "Комиссия ОАЭ",
+        "summary": "FeeUAE",
+        "value": {
+          "report": [
+            {
+              "kgvpUAE": 15.5,
+              "parentID": 657,
+              "parentName": "Home appliance",
+              "subjectID": 6461,
+              "subjectName": "Dental equipment"
+            }
+          ]
+        }
+      },
+      "FeeUzbekistan": {
+        "description": "Комиссия Узбекистан",
+        "summary": "FeeUzbekistan",
+        "value": {
+          "report": [
+            {
+              "kgvpMarketplaceUz": 15.5,
+              "kgvpPaidStorageUz": 15.5,
+              "kgvpSupplierUz": 15.5,
+              "parentID": 657,
+              "parentName": "Бытовая техника",
+              "subjectID": 6461,
+              "subjectName": "Оборудование зуботехническое"
+            }
+          ]
+        }
+      },
+      "Response400CoefficientsNew": {
+        "description": "Значение параметра `warehouseIDs` не указано, или некорректно",
+        "value": {
+          "detail": "Неверный формат warehouseIDs",
+          "origin": "supply-api",
+          "requestId": "a6bdc2a4d2fde51c2036fa8af2483886",
+          "status": 400,
+          "title": "bad request"
+        }
+      },
+      "ResponseCoefficients": {
+        "value": [
+          {
+            "allowUnload": false,
+            "boxTypeID": 6,
+            "coefficient": -1,
+            "date": "2024-04-11T00:00:00Z",
+            "deliveryAdditionalLiter": null,
+            "deliveryBaseLiter": null,
+            "deliveryCoef": null,
+            "isSortingCenter": true,
+            "storageAdditionalLiter": null,
+            "storageBaseLiter": null,
+            "storageCoef": null,
+            "warehouseID": 217081,
+            "warehouseName": "Сц Брянск 2"
+          }
+        ]
+      }
+    },
+    "parameters": {
+      "Date": {
+        "description": "Дата в формате ГГГГ-ММ-ДД",
+        "example": "2026-08-15",
+        "in": "query",
+        "name": "date",
+        "required": true,
+        "schema": {
+          "type": "string"
+        }
+      },
+      "Locale": {
+        "description": "Язык полей ответа `parentName` и `subjectName`:\n  - `ru` — русский\n  - `en` — английский\n  - `zh` — китайский\n",
+        "in": "query",
+        "name": "locale",
+        "schema": {
+          "example": "ru",
+          "type": "string"
+        }
+      }
+    },
+    "responses": {
+      "401": {
+        "content": {
+          "application/problem+json": {
+            "example": {
+              "code": "07e4668e--a53a3d31f8b0-[UK-oWaVDUqNrKG]; 03bce=277; 84bd353bf-75",
+              "detail": "token problem; token is malformed: could not base64 decode signature: illegal base64 data at input byte 84",
+              "origin": "s2s-api-auth-catalog",
+              "requestId": "7b80742415072fe8b6b7f7761f1d1211",
+              "status": 401,
+              "statusText": "Unauthorized",
+              "timestamp": "2024-09-30T06:52:38Z",
+              "title": "unauthorized"
+            },
+            "schema": {
+              "properties": {
+                "code": {
+                  "description": "Внутренний код ошибки",
+                  "type": "string"
+                },
+                "detail": {
+                  "description": "Детали ошибки",
+                  "type": "string"
+                },
+                "origin": {
+                  "description": "ID внутреннего сервиса WB",
+                  "type": "string"
+                },
+                "requestId": {
+                  "description": "Уникальный ID запроса",
+                  "type": "string"
+                },
+                "status": {
+                  "description": "HTTP статус-код",
+                  "type": "number"
+                },
+                "statusText": {
+                  "description": "Расшифровка HTTP статус-кода",
+                  "type": "string"
+                },
+                "timestamp": {
+                  "description": "Дата и время запроса",
+                  "format": "date-time",
+                  "type": "string"
+                },
+                "title": {
+                  "description": "Заголовок ошибки",
+                  "type": "string"
+                }
+              },
+              "type": "object"
+            }
+          }
+        },
+        "description": "<span class='response__value '>Не авторизован</span>"
+      },
+      "402": {
+        "content": {
+          "application/problem+json": {
+            "example": {
+              "detail": "wb solution for business has insufficient funds on its balance. please top up the balance in the company's personal account https://dev.wildberries.ru/company",
+              "title": "payment required"
+            },
+            "schema": {
+              "properties": {
+                "detail": {
+                  "description": "Детали ошибки. Ошибка возвращается только сервисам из [Каталога решений для бизнеса](/business-solutions)",
+                  "type": "string"
+                },
+                "title": {
+                  "description": "Заголовок ошибки",
+                  "type": "string"
+                }
+              },
+              "type": "object"
+            }
+          }
+        },
+        "description": "<span class='response__value '>Требуется платёж</span>"
+      },
+      "429": {
+        "content": {
+          "application/problem+json": {
+            "example": {
+              "code": "07e4668e-ac2242c5c8c5-[UK-4dx7JUdskGZ]",
+              "detail": "limited by c122a060-a7fb-4bb4-abb0-32fd4e18d489",
+              "origin": "s2s-api-auth-catalog",
+              "requestId": "9d3c02cc698f8b041c661a7c28bed293",
+              "status": 429,
+              "statusText": "Too Many Requests",
+              "timestamp": "2024-09-30T06:52:38Z",
+              "title": "too many requests"
+            },
+            "schema": {
+              "properties": {
+                "code": {
+                  "description": "Внутренний код ошибки",
+                  "type": "string"
+                },
+                "detail": {
+                  "description": "Детали ошибки",
+                  "type": "string"
+                },
+                "origin": {
+                  "description": "ID внутреннего сервиса WB",
+                  "type": "string"
+                },
+                "requestId": {
+                  "description": "Уникальный ID запроса",
+                  "type": "string"
+                },
+                "status": {
+                  "description": "HTTP статус-код",
+                  "type": "number"
+                },
+                "statusText": {
+                  "description": "Расшифровка HTTP статус-кода",
+                  "type": "string"
+                },
+                "timestamp": {
+                  "description": "Дата и время запроса",
+                  "format": "date-time",
+                  "type": "string"
+                },
+                "title": {
+                  "description": "Заголовок ошибки",
+                  "type": "string"
+                }
+              },
+              "type": "object"
+            }
+          }
+        },
+        "description": "<span class='response__value '>Слишком много запросов</span>"
+      }
+    },
+    "schemas": {
+      "BadRequest": {
+        "properties": {
+          "detail": {
+            "description": "Детали ошибки",
+            "type": "string"
+          },
+          "origin": {
+            "description": "ID внутреннего сервиса WB",
+            "type": "string"
+          },
+          "requestId": {
+            "description": "Уникальный ID запроса",
+            "type": "string"
+          },
+          "title": {
+            "description": "Заголовок ошибки",
+            "type": "string"
+          }
+        },
+        "type": "object"
+      },
+      "Fee": {
+        "additionalProperties": false,
+        "properties": {
+          "report": {
+            "description": "Список комиссий",
+            "items": {
+              "properties": {
+                "kgvpBooking": {
+                  "description": "Комиссия по модели **Бронирование**, %",
+                  "type": "number"
+                },
+                "kgvpMarketplace": {
+                  "description": "Комиссия по модели **Маркетплейс** (`FBS`), %",
+                  "type": "number"
+                },
+                "kgvpPickup": {
+                  "description": "Комиссия по модели **Самовывоз из магазина продавца** (`C&C`), %",
+                  "type": "number"
+                },
+                "kgvpSupplier": {
+                  "description": "Комиссия по моделям **Витрина** (`DBS`) и **Курьер WB** (`DBW`), %",
+                  "type": "number"
+                },
+                "kgvpSupplierExpress": {
+                  "description": "Комиссия по модели **Витрина экспресс** (`EDBS`), %",
+                  "type": "number"
+                },
+                "paidStorageKgvp": {
+                  "description": "Комиссия по модели **Склад WB** (`FBW`), %",
+                  "type": "number"
+                },
+                "parentID": {
+                  "description": "ID родительской категории",
+                  "type": "integer"
+                },
+                "parentName": {
+                  "description": "Название родительской категории",
+                  "type": "string"
+                },
+                "subjectID": {
+                  "description": "ID предмета",
+                  "type": "integer"
+                },
+                "subjectName": {
+                  "description": "Название предмета",
+                  "type": "string"
+                }
+              },
+              "type": "object"
+            },
+            "type": "array"
+          }
+        },
+        "type": "object"
+      },
+      "FeeChina": {
+        "properties": {
+          "report": {
+            "description": "Список комиссий",
+            "items": {
+              "properties": {
+                "kgvpChina": {
+                  "description": "Комиссия для продавцов из Китая, %",
+                  "type": "number"
+                },
+                "parentID": {
+                  "description": "ID родительской категории",
+                  "type": "integer"
+                },
+                "parentName": {
+                  "description": "Название родительской категории",
+                  "type": "string"
+                },
+                "subjectID": {
+                  "description": "ID предмета",
+                  "type": "integer"
+                },
+                "subjectName": {
+                  "description": "Название предмета",
+                  "type": "string"
+                }
+              },
+              "type": "object"
+            },
+            "type": "array"
+          }
+        },
+        "type": "object"
+      },
+      "FeeTurkey": {
+        "properties": {
+          "report": {
+            "description": "Список комиссий",
+            "items": {
+              "properties": {
+                "kgvpTurkey": {
+                  "description": "Комиссия для продавцов из Турции, %",
+                  "type": "number"
+                },
+                "parentID": {
+                  "description": "ID родительской категории",
+                  "type": "integer"
+                },
+                "parentName": {
+                  "description": "Название родительской категории",
+                  "type": "string"
+                },
+                "subjectID": {
+                  "description": "ID предмета",
+                  "type": "integer"
+                },
+                "subjectName": {
+                  "description": "Название предмета",
+                  "type": "string"
+                }
+              },
+              "type": "object"
+            },
+            "type": "array"
+          }
+        },
+        "type": "object"
+      },
+      "FeeUAE": {
+        "properties": {
+          "report": {
+            "description": "Список комиссий",
+            "items": {
+              "properties": {
+                "kgvpUAE": {
+                  "description": "Комиссия для продавцов из ОАЭ, %",
+                  "type": "number"
+                },
+                "parentID": {
+                  "description": "ID родительской категории",
+                  "type": "integer"
+                },
+                "parentName": {
+                  "description": "Название родительской категории",
+                  "type": "string"
+                },
+                "subjectID": {
+                  "description": "ID предмета",
+                  "type": "integer"
+                },
+                "subjectName": {
+                  "description": "Название предмета",
+                  "type": "string"
+                }
+              },
+              "type": "object"
+            },
+            "type": "array"
+          }
+        },
+        "type": "object"
+      },
+      "FeeUzbekistan": {
+        "properties": {
+          "report": {
+            "description": "Список комиссий",
+            "items": {
+              "properties": {
+                "kgvpMarketplaceUz": {
+                  "description": "Комиссия по модели **Маркетплейс** (`FBS`), %",
+                  "type": "number"
+                },
+                "kgvpPaidStorageUz": {
+                  "description": "Комиссия по модели **Склад WB** (`FBW`), %",
+                  "type": "number"
+                },
+                "kgvpSupplierUz": {
+                  "description": "Комиссия по модели **Витрина** (`DBS`), %",
+                  "type": "number"
+                },
+                "parentID": {
+                  "description": "ID родительской категории",
+                  "type": "integer"
+                },
+                "parentName": {
+                  "description": "Название родительской категории",
+                  "type": "string"
+                },
+                "subjectID": {
+                  "description": "ID предмета",
+                  "type": "integer"
+                },
+                "subjectName": {
+                  "description": "Название предмета",
+                  "type": "string"
+                }
+              },
+              "type": "object"
+            },
+            "type": "array"
+          }
+        },
+        "type": "object"
+      },
+      "RatesBoxResponse": {
+        "properties": {
+          "response": {
+            "$ref": "#/components/schemas/models.RatesBoxResponse"
+          }
+        },
+        "type": "object"
+      },
+      "RatesPalletResponse": {
+        "properties": {
+          "response": {
+            "$ref": "#/components/schemas/models.RatesPalletResponse"
+          }
+        },
+        "type": "object"
+      },
+      "ReturnRatesResponse": {
+        "properties": {
+          "response": {
+            "$ref": "#/components/schemas/models.ReturnRatesResponse"
+          }
+        },
+        "type": "object"
+      },
+      "models.AcceptanceCoefficient": {
+        "properties": {
+          "allowUnload": {
+            "description": "Доступность приёмки для поставок данного типа, смотри значение поля `boxTypeID`:\n\n - `true` — приёмка доступна\n - `false` — приёмка не доступна\n",
+            "type": "boolean"
+          },
+          "boxTypeID": {
+            "description": "ID типа поставки:\n  - `2` — Короба\n  - `5` — Монопаллеты\n  - `6` — Суперсейф\n<br>Для типа поставки **QR-поставка с коробами** поле не возвращается\n",
+            "type": "integer"
+          },
+          "coefficient": {
+            "description": "Коэффициент приёмки:\n  - `-1` — приёмка недоступна, вне зависимости от значения поля `allowUnload`\n  - `0` — бесплатная приёмка\n  - от `1` — множитель стоимости приёмки\n",
+            "type": "number"
+          },
+          "date": {
+            "description": "Дата начала действия коэффициента",
+            "type": "string"
+          },
+          "deliveryAdditionalLiter": {
+            "description": "Стоимость логистики каждого следующего литра",
+            "nullable": true,
+            "type": "string"
+          },
+          "deliveryBaseLiter": {
+            "description": "Стоимость логистики первого литра",
+            "nullable": true,
+            "type": "string"
+          },
+          "deliveryCoef": {
+            "description": "Коэффициент логистики",
+            "nullable": true,
+            "type": "string"
+          },
+          "isSortingCenter": {
+            "description": "Тип склада:\n\n - `true` — сортировочный центр (СЦ)\n - `false` — обычный\n",
+            "type": "boolean"
+          },
+          "storageAdditionalLiter": {
+            "description": "Стоимость хранения каждого последующего литра:\n  - для паллет — всегда будет `null`, т.к. стоимость хранения за единицу паллеты определяется в `StorageBaseLiter`\n  - для коробов — стоимость хранения за каждый последующий литр\n",
+            "nullable": true,
+            "type": "string"
+          },
+          "storageBaseLiter": {
+            "description": "Стоимость хранения:\n  - для паллет — стоимость за одну паллету\n  - для коробов — стоимость хранения за первый литр\n",
+            "nullable": true,
+            "type": "string"
+          },
+          "storageCoef": {
+            "description": "Коэффициент хранения",
+            "nullable": true,
+            "type": "string"
+          },
+          "warehouseID": {
+            "description": "ID склада. По нему можно получить [информацию о складе](./orders-fbw#tag/informationForFormingSupplies/operation/getV1Warehouses)",
+            "type": "integer"
+          },
+          "warehouseName": {
+            "description": "Название склада",
+            "type": "string"
+          }
+        },
+        "type": "object"
+      },
+      "models.ErrorModel": {
+        "properties": {
+          "detail": {
+            "description": "Описание ошибки",
+            "type": "string"
+          },
+          "origin": {
+            "description": "Сервис, вернувший ошибку",
+            "type": "string"
+          },
+          "requestId": {
+            "description": "ID запроса",
+            "type": "string"
+          },
+          "status": {
+            "description": "HTTP статус-код",
+            "type": "integer"
+          },
+          "title": {
+            "description": "ID ошибки",
+            "type": "string"
+          }
+        },
+        "type": "object"
+      },
+      "models.RatesBoxResponse": {
+        "properties": {
+          "data": {
+            "$ref": "#/components/schemas/models.WarehousesBoxRates"
+          }
+        },
+        "type": "object"
+      },
+      "models.RatesPalletResponse": {
+        "properties": {
+          "data": {
+            "$ref": "#/components/schemas/models.WarehousesPalletRates"
+          }
+        },
+        "type": "object"
+      },
+      "models.ReturnRatesResponse": {
+        "properties": {
+          "data": {
+            "$ref": "#/components/schemas/models.WarehousesReturnRates"
+          }
+        },
+        "type": "object"
+      },
+      "models.WarehouseBoxRates": {
+        "properties": {
+          "boxDeliveryBase": {
+            "description": "Логистика, первый литр, ₽",
+            "example": "48",
+            "type": "string"
+          },
+          "boxDeliveryCoefExpr": {
+            "description": "Коэффициент **Логистика**, %. На него умножается стоимость логистики. Уже учтён в тарифах",
+            "example": "160",
+            "type": "string"
+          },
+          "boxDeliveryLiter": {
+            "description": "Логистика, дополнительный литр, ₽",
+            "example": "11,2",
+            "type": "string"
+          },
+          "boxDeliveryMarketplaceBase": {
+            "description": "Логистика FBS, первый литр, ₽",
+            "example": "40",
+            "type": "string"
+          },
+          "boxDeliveryMarketplaceCoefExpr": {
+            "description": "Коэффициент **FBS**, %. На него умножается стоимость логистики FBS. Уже учтён в тарифах",
+            "example": "125",
+            "type": "string"
+          },
+          "boxDeliveryMarketplaceLiter": {
+            "description": "Логистика FBS, дополнительный литр, ₽",
+            "example": "11",
+            "type": "string"
+          },
+          "boxStorageBase": {
+            "description": "Хранение в день, первый литр, ₽",
+            "example": "0,14",
+            "type": "string"
+          },
+          "boxStorageCoefExpr": {
+            "description": "Коэффициент **Хранение**, %. На него умножается стоимость хранения в день. Уже учтён в тарифах",
+            "example": "115",
+            "type": "string"
+          },
+          "boxStorageLiter": {
+            "description": "Хранение в день, дополнительный литр, ₽",
+            "example": "0,07",
+            "type": "string"
+          },
+          "geoName": {
+            "description": "Местонахождение склада",
+            "example": "Россия",
+            "type": "string"
+          },
+          "warehouseName": {
+            "description": "Название склада",
+            "example": "Свой склад СГТ РФ",
+            "type": "string"
+          }
+        },
+        "type": "object"
+      },
+      "models.WarehousePalletRates": {
+        "properties": {
+          "palletDeliveryExpr": {
+            "description": "Коэффициент доставки, %. На него умножается стоимость доставки. Во всех тарифах этот коэффициент уже учтён",
+            "example": "170",
+            "type": "string"
+          },
+          "palletDeliveryValueBase": {
+            "description": "Доставка 1 литра, ₽",
+            "example": "51",
+            "type": "string"
+          },
+          "palletDeliveryValueLiter": {
+            "description": "Доставка каждого дополнительного литра, ₽",
+            "example": "11,9",
+            "type": "string"
+          },
+          "palletStorageExpr": {
+            "description": "Коэффициент хранения, %. На него умножается стоимость хранения. Во всех тарифах этот коэффициент уже учтён",
+            "example": "155",
+            "type": "string"
+          },
+          "palletStorageValueExpr": {
+            "description": "Хранение 1 монопаллеты, ₽",
+            "example": "35.65",
+            "type": "string"
+          },
+          "warehouseName": {
+            "description": "Название склада",
+            "example": "СЦ Брест",
+            "type": "string"
+          }
+        },
+        "type": "object"
+      },
+      "models.WarehouseReturnRates": {
+        "properties": {
+          "deliveryDumpKgtOfficeBase": {
+            "description": "**Стоимость возврата при грузовой доставке, доставка на ПВЗ (базовая цена за 1 л), ₽**\nПрименяется для крупногабаритных товаров, когда:\n  - продавец хочет вывезти товары со склада WB;\n  - на складе обнаружили бракованные товары;\n  - покупатель возвращает товар, но его нельзя вернуть в продажу.\n",
+            "example": "1 039",
+            "type": "string"
+          },
+          "deliveryDumpKgtOfficeLiter": {
+            "description": "**Стоимость возврата при грузовой доставке, доставка на ПВЗ (доп. литр), ₽**<br>\nСтоимость за каждый дополнительный литр.\n",
+            "example": "9,1",
+            "type": "string"
+          },
+          "deliveryDumpKgtReturnExpr": {
+            "description": "**Стоимость возврата при грузовой доставке, обратная логистика невостребованного возврата, ₽**<br>\nГрузовая доставка невостребованного возврата обратно на склад WB. За единицу товара.\n",
+            "example": "1 050",
+            "type": "string"
+          },
+          "deliveryDumpSrgOfficeExpr": {
+            "description": "**Стоимость возврата неопознанного складом товара за каждую единицу, доставка на ПВЗ, ₽**<br>\nПрименяется для товаров, которые не смогли принять на складе.\n",
+            "example": "170",
+            "type": "string"
+          },
+          "deliveryDumpSrgReturnExpr": {
+            "description": "**Стоимость возврата неопознанного складом товара за каждую единицу, обратная логистика невостребованного возврата, ₽** <br>Доставка невостребованного возврата обратно на склад WB.\n",
+            "example": "170",
+            "type": "string"
+          },
+          "deliveryDumpSupCourierBase": {
+            "description": "**Стоимость возврата, доставка курьером (базовая цена за 1 л), ₽**\n\nПрименяется, когда:\n  - продавец хочет вывезти товары со склада Wildberries\n  - на складе обнаружили бракованные товары\n  - покупатель возвращает товар, но его нельзя вернуть в продажу\n  - подключён автовозврат товаров, продаваемых по схеме Маркетплейс\n",
+            "example": "229",
+            "type": "string"
+          },
+          "deliveryDumpSupCourierLiter": {
+            "description": "**Стоимость возврата, доставка курьером (доп. л), ₽**\n<br>Стоимость за каждый дополнительный литр.\n",
+            "example": "9,1",
+            "type": "string"
+          },
+          "deliveryDumpSupOfficeBase": {
+            "description": "**Стоимость возврата, доставка на ПВЗ (базовая цена за 1 л), ₽**\n\nПрименяется, когда:\n  - продавец хочет вывезти товары со склада Wildberries\n  - на складе обнаружили бракованные товары\n  - покупатель возвращает товар, но его нельзя вернуть в продажу\n  - подключён автовозврат товаров, продаваемых по схеме Маркетплейс\n",
+            "example": "129",
+            "type": "string"
+          },
+          "deliveryDumpSupOfficeLiter": {
+            "description": "**Стоимость возврата, доставка на ПВЗ (доп. литр), ₽** <br>Стоимость за каждый дополнительный литр\n",
+            "example": "9,1",
+            "type": "string"
+          },
+          "deliveryDumpSupReturnExpr": {
+            "description": "**Стоимость возврата, обратная логистика невостребованного возврата, за единицу товара, ₽**<br>\nДоставка невостребованного возврата обратно на склад Wildberries.\n\nПрименяется, когда:\n  - продавец хочет вывезти товары со склада Wildberries\n  - на складе обнаружили бракованные товары\n  - покупатель возвращает товар, но его нельзя вернуть в продажу\n  - подключён автовозврат товаров, продаваемых по схеме Маркетплейс\n",
+            "example": "250",
+            "type": "string"
+          },
+          "warehouseName": {
+            "description": "Название склада",
+            "example": "Склад WB РФ",
+            "type": "string"
+          }
+        },
+        "type": "object"
+      },
+      "models.WarehousesBoxRates": {
+        "properties": {
+          "currency": {
+            "description": "Валюта тарифов",
+            "example": "RUB",
+            "type": "string"
+          },
+          "dtNextBox": {
+            "description": "Дата начала следующего тарифа",
+            "example": "2024-02-01",
+            "type": "string"
+          },
+          "dtTillMax": {
+            "description": "Дата окончания последнего установленного тарифа",
+            "example": "2024-03-31",
+            "type": "string"
+          },
+          "warehouseList": {
+            "description": "Тарифы для коробов, сгруппированные по складам",
+            "items": {
+              "$ref": "#/components/schemas/models.WarehouseBoxRates"
+            },
+            "nullable": true,
+            "type": "array"
+          }
+        },
+        "type": "object"
+      },
+      "models.WarehousesPalletRates": {
+        "properties": {
+          "currency": {
+            "description": "Валюта тарифов",
+            "example": "RUB",
+            "type": "string"
+          },
+          "dtNextPallet": {
+            "description": "Дата начала следующего тарифа",
+            "example": "2024-02-01",
+            "type": "string"
+          },
+          "dtTillMax": {
+            "description": "Дата окончания последнего установленного тарифа",
+            "example": "2024-03-31",
+            "type": "string"
+          },
+          "warehouseList": {
+            "description": "Тарифы для монопаллет, сгруппированные по складам",
+            "items": {
+              "$ref": "#/components/schemas/models.WarehousePalletRates"
+            },
+            "nullable": true,
+            "type": "array"
+          }
+        },
+        "type": "object"
+      },
+      "models.WarehousesReturnRates": {
+        "properties": {
+          "currency": {
+            "description": "Валюта тарифов",
+            "example": "RUB",
+            "type": "string"
+          },
+          "dtNextDeliveryDumpKgt": {
+            "description": "Дата начала следующего тарифа при грузовой доставке",
+            "example": "2024-02-01",
+            "type": "string"
+          },
+          "dtNextDeliveryDumpSrg": {
+            "description": "Дата начала следующего тарифа для неопознанных товаров",
+            "example": "2024-02-01",
+            "type": "string"
+          },
+          "dtNextDeliveryDumpSup": {
+            "description": "Дата начала следующего тарифа при обычной доставке",
+            "example": "2024-02-01",
+            "type": "string"
+          },
+          "warehouseList": {
+            "description": "Тарифы на возврат, сгруппированные по складам:\n  - стоимость возврата брака и возврата по инициативе продавца при грузовой доставке.\n  - стоимость возврата неопознанного складом товара.\n  - стоимость возврата брака, возврата по инициативе продавца и автовозвратов Маркетплейс (в пункт выдачи и обратно).\n\nМожно получить стоимость возврата в пункт выдачи (ПВЗ) и обратной логистики — если продавец не забрал товары из пункта выдачи за 7 дней.\n",
+            "items": {
+              "$ref": "#/components/schemas/models.WarehouseReturnRates"
+            },
+            "nullable": true,
+            "type": "array"
+          }
+        },
+        "type": "object"
+      }
+    },
+    "securitySchemes": {
+      "HeaderApiKey": {
+        "in": "header",
+        "name": "Authorization",
+        "type": "apiKey"
+      }
+    }
+  },
+  "info": {
+    "description": "<div class=\"description_important\">\n  Узнать больше о тарифах можно в <a href=\"https://seller.wildberries.ru/instructions/ru/ru/material/fees-site-section\">справочном центре</a>\n</div>\n\n<div class=\"api-block\">\n\nВ разделе описаны методы получения:\n  1. [Комиссий](./wb-tariffs#tag/fees)\n  2. [Тарифов на поставку](./wb-tariffs#tag/supplyRates)\n  3. [Тарифов на остаток](./wb-tariffs#tag/stockRates)\n  4. [Тарифов на возврат товаров продавцу](./wb-tariffs#tag/returnCostToSeller)\n\n</div>\n",
+    "title": "Тарифы",
+    "version": "rates",
+    "x-file-name": "rates"
+  },
+  "openapi": "3.0.0",
+  "paths": {
+    "/api/tariffs/v1/acceptance/coefficients": {
+      "get": {
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод [временно отключён](https://dev.wildberries.ru/release-notes?id=570)\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 мин | 6 запросов | 10 сек | 6 запросов |\n| Сервисный | 1 мин | 6 запросов | 10 сек | 6 запросов |\n| Базовый с секретом | 1 мин | 6 запросов | 10 сек | 6 запросов |\n| Базовый | 1 ч | 1 запрос | 1 ч | 1 запрос |\n</div>\n",
+        "operationId": "getV1AcceptanceCoefficients",
+        "parameters": [
+          {
+            "description": "ID складов.<br>По умолчанию возвращаются данные по всем складам",
+            "example": "507,117501",
+            "in": "query",
+            "name": "warehouseIDs",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "examples": {
+                  "ResponseCoefficients": {
+                    "$ref": "#/components/examples/ResponseCoefficients"
+                  }
+                },
+                "schema": {
+                  "items": {
+                    "$ref": "#/components/schemas/models.AcceptanceCoefficient"
+                  },
+                  "type": "array"
+                }
+              }
+            },
+            "description": "<span class='response__value response__value_success'>Успешно</span>"
+          },
+          "400": {
+            "content": {
+              "application/json": {
+                "examples": {
+                  "BadWarehouseIDsParamNew": {
+                    "$ref": "#/components/examples/Response400CoefficientsNew"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/models.ErrorModel"
+                }
+              }
+            },
+            "description": "<span class='response__value '>Неправильный запрос</span>"
+          },
+          "401": {
+            "$ref": "#/components/responses/401"
+          },
+          "402": {
+            "$ref": "#/components/responses/402"
+          },
+          "403": {
+            "description": "<span class='response__value '>Доступ запрещён</span>"
+          },
+          "404": {
+            "description": "<span class='response__value '>Не найдено</span>"
+          },
+          "429": {
+            "$ref": "#/components/responses/429"
+          }
+        },
+        "security": [
+          {
+            "HeaderApiKey": []
+          }
+        ],
+        "summary": "Тарифы на поставку{{ /api/tariffs/v1/acceptance/coefficients }}",
+        "tags": [
+          "supplyRates"
+        ],
+        "x-category": "commonapi",
+        "x-readonly-method": true
+      },
+      "servers": [
+        {
+          "url": "https://common-api.wildberries.ru"
+        }
+      ]
+    },
+    "/api/v1/tariffs/box": {
+      "get": {
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nДля остатков товаров, которые поставляются на склад в коробах, метод возвращает [тарифы](https://seller.wildberries.ru/dynamic-product-categories) на:\n  - доставку со склада или пункта приёма до покупателя\n  - доставку от покупателя до пункта приёма\n  - хранение на складе WB\n\n<div class=\"description_important\">\n  Тарифы для коробов совпадают с тарифами для <strong>Суперсейфа</strong>\n</div>\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 мин | 60 запросов | 1 сек | 5 запросов |\n| Сервисный | 1 мин | 60 запросов | 1 сек | 5 запросов |\n| Базовый с секретом | 1 мин | 60 запросов | 1 сек | 5 запросов |\n| Базовый | 1 ч | 1 запрос | 1 ч | 1 запрос |\n</div>\n",
+        "operationId": "getV1TariffsBox",
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/Date"
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/RatesBoxResponse"
+                }
+              }
+            },
+            "description": "<span class='response__value response__value_success'>Успешно</span>"
+          },
+          "400": {
+            "content": {
+              "application/problem+json": {
+                "example": {
+                  "detail": "Invalid date param",
+                  "origin": "tariffs",
+                  "requestId": "70da980b108e6f52ce7630921bd05b1a",
+                  "title": "Bad Request"
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/BadRequest"
+                }
+              }
+            },
+            "description": "<span class='response__value '>Неправильный запрос</span>"
+          },
+          "401": {
+            "$ref": "#/components/responses/401"
+          },
+          "402": {
+            "$ref": "#/components/responses/402"
+          },
+          "429": {
+            "$ref": "#/components/responses/429"
+          }
+        },
+        "summary": "Тарифы для коробов{{ /api/v1/tariffs/box }}",
+        "tags": [
+          "stockRates"
+        ],
+        "x-category": "commonapi",
+        "x-readonly-method": true
+      },
+      "servers": [
+        {
+          "url": "https://common-api.wildberries.ru"
+        }
+      ]
+    },
+    "/api/v1/tariffs/commission": {
+      "get": {
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод возвращает данные о [комиссии](https://seller.wildberries.ru/dynamic-product-categories/commission) WB по [родительским категориям товаров](./work-with-products#tag/categoriesSubcategoriesAndCharacteristics/paths/~1content~1v2~1object~1parent~1all/get) согласно модели продаж.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 мин | 1 запрос | 1 мин | 2 запроса |\n| Сервисный | 1 мин | 1 запрос | 1 мин | 2 запроса |\n| Базовый с секретом | 1 мин | 1 запрос | 1 мин | 2 запроса |\n| Базовый | 1 ч | 5 запросов | 12 мин | 1 запрос |\n</div>\n",
+        "operationId": "getV1TariffsCommission",
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/Locale"
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "examples": {
+                  "Fee": {
+                    "$ref": "#/components/examples/Fee"
+                  },
+                  "FeeChina": {
+                    "$ref": "#/components/examples/FeeChina"
+                  },
+                  "FeeTurkey": {
+                    "$ref": "#/components/examples/FeeTurkey"
+                  },
+                  "FeeUAE": {
+                    "$ref": "#/components/examples/FeeUAE"
+                  },
+                  "FeeUzbekistan": {
+                    "$ref": "#/components/examples/FeeUzbekistan"
+                  }
+                },
+                "schema": {
+                  "oneOf": [
+                    {
+                      "$ref": "#/components/schemas/Fee"
+                    },
+                    {
+                      "$ref": "#/components/schemas/FeeChina"
+                    },
+                    {
+                      "$ref": "#/components/schemas/FeeTurkey"
+                    },
+                    {
+                      "$ref": "#/components/schemas/FeeUzbekistan"
+                    },
+                    {
+                      "$ref": "#/components/schemas/FeeUAE"
+                    }
+                  ]
+                }
+              }
+            },
+            "description": "<span class='response__value response__value_success'>Успешно</span>"
+          },
+          "400": {
+            "content": {
+              "application/problem+json": {
+                "example": {
+                  "detail": "parameter \"locale\" in query has an error: value is not one of the allowed values [\"ru\",\"en\",\"zh\"]",
+                  "origin": "api-statistics",
+                  "requestId": "102d2641a931c41bed60649d6c99d80a",
+                  "title": "Bad Request"
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/BadRequest"
+                }
+              }
+            },
+            "description": "<span class='response__value '>Неправильный запрос</span>"
+          },
+          "401": {
+            "$ref": "#/components/responses/401"
+          },
+          "402": {
+            "$ref": "#/components/responses/402"
+          },
+          "429": {
+            "$ref": "#/components/responses/429"
+          }
+        },
+        "summary": "Комиссия по категориям товаров{{ /api/v1/tariffs/commission }}",
+        "tags": [
+          "fees"
+        ],
+        "x-category": "commonapi",
+        "x-readonly-method": true
+      },
+      "servers": [
+        {
+          "url": "https://common-api.wildberries.ru"
+        }
+      ]
+    },
+    "/api/v1/tariffs/pallet": {
+      "get": {
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nДля товаров, которые поставляются на склад WB на монопаллетах, метод возвращает [стоимость](https://seller.wildberries.ru/dynamic-product-categories):\n  - доставки со склада до покупателя\n  - доставки от покупателя до склада\n  - хранения на складе WB\n\n<div class=\"description_important\">\n  Тарифы для монопаллет совпадают с тарифами для <strong>Поштучных паллет</strong>\n</div>\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 мин | 60 запросов | 1 сек | 5 запросов |\n| Сервисный | 1 мин | 60 запросов | 1 сек | 5 запросов |\n| Базовый с секретом | 1 мин | 60 запросов | 1 сек | 5 запросов |\n| Базовый | 1 ч | 1 запрос | 1 ч | 1 запрос |\n</div>\n",
+        "operationId": "getV1TariffsPallet",
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/Date"
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/RatesPalletResponse"
+                }
+              }
+            },
+            "description": "<span class='response__value response__value_success'>Успешно</span>"
+          },
+          "400": {
+            "content": {
+              "application/problem+json": {
+                "example": {
+                  "detail": "parameter \"date\" in query has an error: value is required but missing",
+                  "origin": "tariffs",
+                  "requestId": "7bc5c30d95933058d0e0bddc79b9da547",
+                  "title": "Bad Request"
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/BadRequest"
+                }
+              }
+            },
+            "description": "<span class='response__value '>Неправильный запрос</span>"
+          },
+          "401": {
+            "$ref": "#/components/responses/401"
+          },
+          "402": {
+            "$ref": "#/components/responses/402"
+          },
+          "429": {
+            "$ref": "#/components/responses/429"
+          }
+        },
+        "summary": "Тарифы для монопаллет{{ /api/v1/tariffs/pallet }}",
+        "tags": [
+          "stockRates"
+        ],
+        "x-category": "commonapi",
+        "x-readonly-method": true
+      },
+      "servers": [
+        {
+          "url": "https://common-api.wildberries.ru"
+        }
+      ]
+    },
+    "/api/v1/tariffs/return": {
+      "get": {
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод возвращает [тарифы](https://seller.wildberries.ru/dynamic-product-categories/return-cost):\n  - на перевозку товаров со склада WB или из пункта приёма до продавца\n  - на обратную перевозку возвратов, которые не забрал продавец\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 мин | 60 запросов | 1 сек | 5 запросов |\n| Сервисный | 1 мин | 60 запросов | 1 сек | 5 запросов |\n| Базовый с секретом | 1 мин | 60 запросов | 1 сек | 5 запросов |\n| Базовый | 1 ч | 1 запрос | 1 ч | 1 запрос |\n</div>\n",
+        "operationId": "getV1TariffsReturn",
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/Date"
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ReturnRatesResponse"
+                }
+              }
+            },
+            "description": "<span class='response__value response__value_success'>Успешно</span>"
+          },
+          "400": {
+            "content": {
+              "application/problem+json": {
+                "example": {
+                  "detail": "parameter \"date\" in query has an error: empty value is not allowed",
+                  "origin": "tariffs",
+                  "requestId": "e8096bddcfe5e3ff75f1afd26755364c",
+                  "title": "Bad Request"
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/BadRequest"
+                }
+              }
+            },
+            "description": "<span class='response__value '>Неправильный запрос</span>"
+          },
+          "401": {
+            "$ref": "#/components/responses/401"
+          },
+          "402": {
+            "$ref": "#/components/responses/402"
+          },
+          "429": {
+            "$ref": "#/components/responses/429"
+          }
+        },
+        "summary": "Тарифы на возврат{{ /api/v1/tariffs/return }}",
+        "tags": [
+          "returnCostToSeller"
+        ],
+        "x-category": "commonapi",
+        "x-readonly-method": true
+      },
+      "servers": [
+        {
+          "url": "https://common-api.wildberries.ru"
+        }
+      ]
+    }
+  },
+  "security": [
+    {
+      "HeaderApiKey": []
+    }
+  ],
+  "tags": [
+    {
+      "description": "<div class=\"api-description\">\n\n<div class=\"description_important\">\n  Узнать больше о тарифах можно в <a href=\"https://seller.wildberries.ru/instructions/ru/ru/material/fees-site-section\">справочном центре</a>\n</div>\n\n<div class=\"api-block\">\n\nВ разделе описаны методы получения:\n  1. [Комиссий](./wb-tariffs#tag/fees)\n  2. [Тарифов на поставку](./wb-tariffs#tag/supplyRates)\n  3. [Тарифов на остаток](./wb-tariffs#tag/stockRates)\n  4. [Тарифов на возврат товаров продавцу](./wb-tariffs#tag/returnCostToSeller)\n\n</div>\n\n\n</div>",
+      "name": "Тарифы",
+      "x-traitTag": true
+    },
+    {
+      "description": "<div class=\"description_auth\">\n  Комиссии можно получить с токеном любой <a href=\"./api-information#tag/authorization/Kategorii-tokenov\">категории</a>\n</div>\n\n<div class=\"description_important\">\n  Узнать больше о комиссиях можно в <a href=\"https://seller.wildberries.ru/instructions/ru/ru/material/wildberries-reward-ratio\">справочном центре</a>\n</div>\n\nМетод получения [комиссии по категориям товаров](./wb-tariffs#tag/fees/operation/getV1TariffsCommission).\n",
+      "name": "fees",
+      "x-displayName": "Комиссии"
+    },
+    {
+      "description": "<div class=\"description_auth\">\n  Тарифы на поставку можно получить с токеном любой <a href=\"./api-information#tag/authorization/Kategorii-tokenov\">категории</a>\n</div>\n\nДанные о фиксированных коэффициентах [тарифов на поставку](./wb-tariffs#tag/supplyRates/operation/getV1AcceptanceCoefficients)\n",
+      "name": "supplyRates",
+      "x-displayName": "Тарифы на поставку"
+    },
+    {
+      "description": "<div class=\"description_auth\">\n  Тарифы на остаток можно получить с токеном любой <a href=\"./api-information#tag/authorization/Kategorii-tokenov\">категории</a>\n</div>\n\nДанные по текущим и архивным тарифам для:\n  - [коробов](./wb-tariffs#tag/stockRates/operation/getV1TariffsBox)\n  - [монопаллет](./wb-tariffs#tag/stockRates/operation/getV1TariffsPallet)\n\nМетоды возвращают коэффициенты тарифов без фиксации на поставку\n",
+      "name": "stockRates",
+      "x-displayName": "Тарифы на остаток"
+    },
+    {
+      "description": "<div class=\"description_auth\">\n  Стоимость возврата продавцу можно получить с токеном любой <a href=\"./api-information#tag/authorization/Kategorii-tokenov\">категории</a>\n</div>\n\n<div class=\"description_important\">\n  Узнать больше о возвратах продавцу можно в <a href=\"https://seller.wildberries.ru/instructions/ru/ru/material/item-returns-to-seller-from-wb-warehouse\">справочном центре</a>\n</div>\n\nМетод получения [тарифов на возврат](./wb-tariffs#tag/returnCostToSeller/operation/getV1TariffsReturn).\n",
+      "name": "returnCostToSeller",
+      "x-displayName": "Стоимость возврата продавцу"
+    }
+  ]
+}

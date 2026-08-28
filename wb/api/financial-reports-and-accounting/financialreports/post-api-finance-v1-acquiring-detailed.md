@@ -1,0 +1,99 @@
+---
+title: Детализации к отчётам об издержках на приём платежей за период{{ /api/finance/v1/acquiring/detailed }}
+api: wb-financial-reports-and-accounting
+method: POST
+path: /api/finance/v1/acquiring/detailed
+operation_id: postV1AcquiringDetailed
+tags:
+  - financialReports
+spec_version: finances
+source: "https://dev.wildberries.ru/docs/openapi/financial-reports-and-accounting"
+deprecated: false
+content_sha: 91ab35dabaf1aca4
+---
+
+# Детализации к отчётам об издержках на приём платежей за период{{ /api/finance/v1/acquiring/detailed }}
+
+`POST /api/finance/v1/acquiring/detailed`
+
+Описание метода Метод доступен по Персональному токену, Сервисному токену Метод возвращает детализации к [отчётам об издержках на приём платежей](https://seller.wildberries.ru/suppliers-mutual-settlements/reports-implementations/acquiring-reports) за указанный период. Лимит запросов на один аккаунт продавца: | Период | Лимит | Интервал | Всплеск | | --- | --- | --- | --- | | 1 мин | 1 запрос | 1 мин | 1 запрос |
+
+## Запрос
+
+**Тело запроса** (`application/json`):
+
+- `dateFrom` — string **обязательный**. Начальная дата отчёта. Можно передать дату или дату со временем. Время можно указывать с точностью до секунд или миллисекунд. Дата передаётся в формате [RFC3339](https://datatracker.ietf.org/doc/html/rfc3339), время — в часовом поясе Москва `UTC+3`. Примеры: - `2025-06-20` - `2025-06-20T23:59:59` - `2025-06-20T00:00:00.12345` - `2025-06-20T00:00:00`
+- `dateTo` — string **обязательный**. Конечная дата отчёта. Дата в формате [RFC3339](https://datatracker.ietf.org/doc/html/rfc3339). Можно передать дату или дату со временем. Время можно указывать с точностью до секунд или миллисекунд. Время передаётся в часовом поясе Москва `UTC+3`. Примеры: - `2025-06-20` - `2025-06-20T23:59:59` - `2025-06-20T00:00:00.12345` - `2025-06-20T00:00:00`
+- `limit` — integer. Количество строк в ответе По умолчанию: `100000`.
+- `rrdId` — integer. ID строки ответа. Необходим для получения отчёта частями. Начинайте загрузку отчёта с `"rrdid":0`. В последующих запросах передавайте значение `rrdId` из последней строки предыдущего ответа. Повторяйте запрос, пока не получите ответ `204` По умолчанию: `0`.
+- `fields` — array[string]. Список полей, которые вернутся в ответе. Если параметр не указан, возвращаются все поля
+
+## Ответы
+
+**200** — Успешно
+
+- `rrdId` — integer **обязательный**. ID строки
+- `reportId` — integer<int64> **обязательный**. ID отчёта
+- `acqDate` — string **обязательный**. Дата операции
+- `acquiringBank` — string **обязательный**. Наименование банка-эквайера
+- `tin` — string **обязательный**. ИНН
+- `taxRegistrationReasonCode` — string **обязательный**. КПП
+- `saleDate` — string **обязательный**. Дата продажи
+- `srid` — string **обязательный**. ID заказа. В ответах методов сборочных заданий [FBS](./orders-fbs#tag/Sborochnye-zadaniya-FBS), [DBW](./orders-dbw#tag/dbwAssemblyOrders), [DBS](./orders-dbs#tag/dbsAssemblyOrders) и [Самовывоз](./in-store-pickup#tag/inStorePickupAssemblyOrders) `srid` равен `rid`
+- `docTypeName` — string **обязательный**. Тип документа
+- `nmId` — integer **обязательный**. Артикул WB
+- `retailAmount` — string **обязательный**. Вайлдберриз реализовал Товар (Пр)
+- `acquiringFee` — string **обязательный**. Размер комиссии за эквайринг, в том числе НДС
+- `acquiringFeeVat` — string **обязательный**. Сумма НДС
+- `invoiceNumber` — string **обязательный**. Номер счёта-фактуры
+- `invoiceDate` — string **обязательный**. Дата счёта-фактуры
+- `shkId` — integer **обязательный**. Штрихкод
+- `currency` — string **обязательный**. Валюта отчёта
+
+**204** — Нет данных
+
+**400** — Неправильный запрос
+
+- `status` — integer. HTTP статус-код
+- `title` — string. Заголовок ошибки
+- `detail` — string. Детали ошибки
+- `requestId` — string. ID запроса
+- `origin` — string. ID внутреннего сервиса WB
+
+**401** — Не авторизован
+
+- `title` — string. Заголовок ошибки
+- `detail` — string. Детали ошибки
+- `code` — string. Внутренний код ошибки
+- `requestId` — string. Уникальный ID запроса
+- `origin` — string. ID внутреннего сервиса WB
+- `status` — number. HTTP статус-код
+- `statusText` — string. Расшифровка HTTP статус-кода
+- `timestamp` — string<date-time>. Дата и время запроса
+
+**402** — Требуется платёж
+
+- `title` — string. Заголовок ошибки
+- `detail` — string. Детали ошибки. Ошибка возвращается только сервисам из [Каталога решений для бизнеса](/business-solutions)
+
+**403** — Доступ запрещён
+
+- `title` — string. Заголовок ошибки
+- `detail` — string. Детали ошибки
+- `code` — string. Внутренний код ошибки
+- `requestId` — string. ID запроса
+- `origin` — string. ID внутреннего сервиса WB
+- `status` — number. HTTP статус-код
+- `statusText` — string. Расшифровка HTTP статус-кода
+- `timestamp` — string<date-time>. Дата и время запроса
+
+**429** — Слишком много запросов
+
+- `title` — string. Заголовок ошибки
+- `detail` — string. Детали ошибки
+- `code` — string. Внутренний код ошибки
+- `requestId` — string. Уникальный ID запроса
+- `origin` — string. ID внутреннего сервиса WB
+- `status` — number. HTTP статус-код
+- `statusText` — string. Расшифровка HTTP статус-кода
+- `timestamp` — string<date-time>. Дата и время запроса
