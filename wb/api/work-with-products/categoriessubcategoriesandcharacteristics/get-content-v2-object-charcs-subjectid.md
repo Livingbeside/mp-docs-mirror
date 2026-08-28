@@ -9,7 +9,7 @@ tags:
 spec_version: items
 source: "https://dev.wildberries.ru/docs/openapi/work-with-products"
 deprecated: false
-content_sha: e680cb7d9874e081
+content_sha: edbb914a0a4d4850
 ---
 
 # Характеристики предмета{{ /content/v2/object/charcs/{subjectId} }}
@@ -20,7 +20,7 @@ content_sha: e680cb7d9874e081
 
 Метод возвращает параметры характеристик предмета: названия, типы данных, единицы измерения и так далее. В запросе необходимо указать ID [предмета](./work-with-products#tag/categoriesSubcategoriesAndCharacteristics/paths/~1content~1v2~1object~1all/get).
 
- Для получения значений характеристик Цвет, Пол, Страна производства, Сезон, Ставка НДС и ТНВЭД-код используйте отдельные методы
+ Для получения значений характеристик [Цвет](./work-with-products#tag/categoriesSubcategoriesAndCharacteristics/paths/~1content~1v2~1directory~1colors/get), [Пол](./work-with-products#tag/categoriesSubcategoriesAndCharacteristics/paths/~1content~1v2~1directory~1kinds/get), [Страна производства](./work-with-products#tag/categoriesSubcategoriesAndCharacteristics/paths/~1content~1v2~1directory~1countries/get), [Сезон](./work-with-products#tag/categoriesSubcategoriesAndCharacteristics/paths/~1content~1v2~1directory~1seasons/get), [Ставка НДС](./work-with-products#tag/categoriesSubcategoriesAndCharacteristics/paths/~1content~1v2~1directory~1vat/get) и [ТНВЭД-код](./work-with-products#tag/categoriesSubcategoriesAndCharacteristics/paths/~1content~1v2~1directory~1tnved/get) используйте отдельные методы
 
 Лимит запросов на один аккаунт продавца для всех методов категории Контент:
 
@@ -30,17 +30,17 @@ content_sha: e680cb7d9874e081
 
 Исключение — методы:
 
- создания карточек товаров
+ [создания карточек товаров](./work-with-products#tag/listingItems/paths/~1content~1v2~1cards~1upload/post)
 
- создания карточек товаров с присоединением
+ [создания карточек товаров с присоединением](./work-with-products#tag/listingItems/paths/~1content~1v2~1cards~1upload~1add/post)
 
- редактирования карточек товаров
+ [редактирования карточек товаров](./work-with-products#tag/listings/paths/~1content~1v2~1cards~1update/post)
 
- восстановления карточек товаров из корзины
+ [восстановления карточек товаров из корзины](./work-with-products#tag/listings/paths/~1content~1v2~1cards~1recover/post)
 
- получения списка рекомендаций в карточках товаров
+ [получения списка рекомендаций в карточках товаров](./work-with-products#tag/recommendations/operation/postV1RecommendationsList)
 
- установки рекомендаций для товаров
+ [установки рекомендаций для товаров](./work-with-products#tag/recommendations/operation/postV1RecommendationsSet)
 
 В песочнице — максимум 1 запрос в секунду суммарно для всех методов Контента.
 

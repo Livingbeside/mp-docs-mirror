@@ -9,7 +9,7 @@ tags:
 spec_version: order
 source: "https://dev.wildberries.ru/docs/openapi/orders-fbs"
 deprecated: false
-content_sha: 3e6564f4a35c04d5
+content_sha: fda5a34097d1a410
 ---
 
 # Получить настройки автовозврата товаров
@@ -18,7 +18,7 @@ content_sha: 3e6564f4a35c04d5
 
 Описание метода
 
- Метод доступен по
+ Метод [доступен](./api-information#tag/authorization/Pravila-ispolzovaniya-tokenov-dostupa-k-API) по
  Персональному токену
 
 Метод возвращает настройки автовозврата товаров.

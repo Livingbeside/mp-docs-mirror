@@ -9,7 +9,7 @@ tags:
 spec_version: order
 source: "https://dev.wildberries.ru/docs/openapi/orders-fbs"
 deprecated: false
-content_sha: adc539b15a4136c0
+content_sha: bd2c9f5acaad7a7a
 ---
 
 # Получить статусы сборочных заданий
@@ -30,8 +30,7 @@ content_sha: adc539b15a4136c0
 | `confirm` | **На сборке** |[Добавить сборочное задание к поставке](./orders-fbs#tag/Postavki-FBS/paths/~1api~1marketplace~1v3~1supplies~1%7BsupplyId%7D~1orders/patch)
 | `complete` | **В доставке** | [Передать поставку в доставку](./orders-fbs#tag/Postavki-FBS/paths/~1api~1v3~1supplies~1%7BsupplyId%7D~1deliver/patch) |
 | `cancel` | **Отменено продавцом** | [Отменить сборочное задание](./orders-fbs#tag/Sborochnye-zadaniya-FBS/paths/~1api~1v3~1orders~1%7BorderId%7D~1cancel/patch)|
-| `cancel_carrier` | **Отменено перевозчиком** 
-Только для трансграничных поставок | Переводится перевозчиком |
+| `cancel_carrier` | **Отменено перевозчиком** <br>Только для трансграничных поставок | Переводится перевозчиком |
 
 `wbStatus` — статус системы Wildberries.
 

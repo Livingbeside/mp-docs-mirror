@@ -4,12 +4,12 @@ api: wb-analytics
 spec_version: analytics
 operations: 20
 source: "https://dev.wildberries.ru/docs/openapi/analytics"
-content_sha: 3e52defa548fde8c
+content_sha: 85fedcddc80b37fd
 ---
 
 # Аналитика и данные
 
-Узнать больше об аналитике и данных можно в справочном центре
+Узнать больше об аналитике и данных можно в [справочном центре](https://seller.wildberries.ru/instructions/ru/ru/subcategory/seller-analytics)
 
 В разделе описаны методы получения:
  1. [Воронки продаж](./analytics#tag/salesFunnel)
@@ -19,7 +19,7 @@ content_sha: 3e52defa548fde8c
  5. [Оценки товара](./analytics#tag/itemRating)
  6. [Аналитики продавца в формате CSV](./analytics#tag/sellerAnalyticsCsv)
 
-Версия спеки: `analytics` · методов: **20**
+Версия спеки: `analytics` · методов: **20** · разделов справки: **7**
 
 Источник: https://dev.wildberries.ru/docs/openapi/analytics
 

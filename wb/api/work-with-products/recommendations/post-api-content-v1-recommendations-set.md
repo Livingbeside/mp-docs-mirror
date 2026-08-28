@@ -9,7 +9,7 @@ tags:
 spec_version: items
 source: "https://dev.wildberries.ru/docs/openapi/work-with-products"
 deprecated: false
-content_sha: 317a36070611b4b8
+content_sha: 2691c897013f6c22
 ---
 
 # Установить рекомендации для товаров
@@ -18,7 +18,7 @@ content_sha: 317a36070611b4b8
 
 Описание метода
 
- Метод доступен по
+ Метод [доступен](./api-information#tag/authorization/Pravila-ispolzovaniya-tokenov-dostupa-k-API) по
  Персональному токену, 
  Сервисному токену
 

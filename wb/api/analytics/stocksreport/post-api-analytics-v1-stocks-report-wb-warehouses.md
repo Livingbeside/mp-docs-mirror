@@ -9,7 +9,7 @@ tags:
 spec_version: analytics
 source: "https://dev.wildberries.ru/docs/openapi/analytics"
 deprecated: false
-content_sha: 1e533b7685e6b1d5
+content_sha: 4224000a3dd4124d
 ---
 
 # Остатки на складах WB
@@ -18,7 +18,7 @@ content_sha: 1e533b7685e6b1d5
 
 Описание метода
 
- Метод доступен по
+ Метод [доступен](./api-information#tag/authorization/Pravila-ispolzovaniya-tokenov-dostupa-k-API) по
  Персональному токену, 
  Сервисному токену, 
  Базовому токену с секретом

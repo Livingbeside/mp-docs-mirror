@@ -9,14 +9,14 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: d51d55ca16e41216
+content_sha: 43fb7c3ab021502e
 ---
 
 # Список доступных перевозок
 
 `POST /v1/posting/carriage-available/list`
 
-20 марта 2026 года отключим метод. Переключитесь на /v2/carriage/delivery/list.
+20 марта 2026 года отключим метод. Переключитесь на [/v2/carriage/delivery/list](#operation/CarriageAPI_CarriageDeliveryListV2).
 
 Метод для получения перевозок, по которым нужно распечатать штрихкод для отгрузки и документы:
 - для продацов из России — лист отгрузки и транспортную накладную;

@@ -4,7 +4,7 @@ api: wb-api-information
 spec_version: general
 operations: 10
 source: "https://dev.wildberries.ru/docs/openapi/api-information"
-content_sha: b2f0b3b960d73072
+content_sha: 9ebd1521ddd0bfb7
 ---
 
 # Общее
@@ -23,7 +23,7 @@ content_sha: b2f0b3b960d73072
 - получить [информацию о продавце](./api-information#tag/sellerInformation/operation/getV1SellerInfo)
 - [управлять пользователями продавца](./api-information#tag/sellerUserManagement)
 
-Версия спеки: `general` · методов: **10**
+Версия спеки: `general` · методов: **10** · разделов справки: **7**
 
 Источник: https://dev.wildberries.ru/docs/openapi/api-information
 

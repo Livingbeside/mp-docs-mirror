@@ -9,14 +9,14 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: 3821aad6ce4cffd7
+content_sha: 83cf1cc5516a4f94
 ---
 
 # Список заявок на скидку
 
 `POST /v1/actions/discounts-task/list`
 
-Метод устаревает и будет отключён в будущем. Переключитесь на /v2/actions/discounts-task/list.
+Метод устаревает и будет отключён в будущем. Переключитесь на [/v2/actions/discounts-task/list](#operation/GetDiscountTaskListV2).
  
 
  Метод для получения списка товаров, которые покупатели хотят купить со скидкой.

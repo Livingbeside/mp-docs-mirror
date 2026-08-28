@@ -9,14 +9,14 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: ded7d568d131fa31
+content_sha: 3356bcf7c42a6782
 ---
 
 # Свяжите метод доставки с полигоном доставки
 
 `POST /v1/polygon/bind`
 
-Метод устаревает и будет отключён в будущем. Переключитесь на /v2/polygon/bind .
+Метод устаревает и будет отключён в будущем. Переключитесь на [/v2/polygon/bind ](#operation/PolygonBind).
 
 ## Параметры
 

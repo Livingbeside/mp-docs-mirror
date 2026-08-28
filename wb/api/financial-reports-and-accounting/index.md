@@ -4,16 +4,16 @@ api: wb-financial-reports-and-accounting
 spec_version: finances
 operations: 11
 source: "https://dev.wildberries.ru/docs/openapi/financial-reports-and-accounting"
-content_sha: 714cb5334fca843d
+content_sha: 5851a08ee801e214
 ---
 
 # Документы и бухгалтерия
 
-Узнать больше о документах и бухгалтерии можно в справочном центре
+Узнать больше о документах и бухгалтерии можно в [справочном центре](https://seller.wildberries.ru/instructions/category/ba929b64-1f89-4426-82d7-ce998ee552bd?goBackOption=prevRoute&categoryId=3c971375-9939-45e8-ab82-376019be8942)
 
 Просмотр [баланса](./financial-reports-and-accounting#tag/balance), [финансовых отчётов](./financial-reports-and-accounting#tag/financialReports) и [документов](./financial-reports-and-accounting#tag/documents) продавца.
 
-Версия спеки: `finances` · методов: **11**
+Версия спеки: `finances` · методов: **11** · разделов справки: **4**
 
 Источник: https://dev.wildberries.ru/docs/openapi/financial-reports-and-accounting
 

@@ -9,7 +9,7 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: true
-content_sha: 5f85c159179c6514
+content_sha: 9cded3b9d5349c14
 ---
 
 # Список отправлений
@@ -18,7 +18,7 @@ content_sha: 5f85c159179c6514
 
 > ⚠️ Метод помечен как **deprecated**.
 
-С 31 августа 2026 года метод будет отключён. Переключитесь на /v4/posting/fbs/list.
+С 31 августа 2026 года метод будет отключён. Переключитесь на [/v4/posting/fbs/list](#operation/PostingFbsList).
 
 Возвращает список отправлений за указанный период времени — он должен быть не больше одного года.
 

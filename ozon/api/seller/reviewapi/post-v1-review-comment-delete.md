@@ -9,7 +9,7 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: true
-content_sha: f602c5e023e00992
+content_sha: 3aefc3ea0b009306
 ---
 
 # Удалить комментарий на отзыв
@@ -18,7 +18,7 @@ content_sha: f602c5e023e00992
 
 > ⚠️ Метод помечен как **deprecated**.
 
-Метод устаревает. Переключитесь на /v2/review/comment/delete.
+Метод устаревает. Переключитесь на [/v2/review/comment/delete](#operation/ReviewCommentDeleteV2).
 
 Доступно для продавцов с подпиской [Управление отзывами](https://seller-edu.ozon.ru/libra/seller-rating/podpiska-upravlenie-otzyvami) или [Premium Pro](https://seller-edu.ozon.ru/seller-rating/about-rating/podpiska-premium-pro).
 

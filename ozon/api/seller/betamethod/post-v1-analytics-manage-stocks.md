@@ -9,14 +9,14 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: b863c916add0cc59
+content_sha: ce014d9f53a730c0
 ---
 
 # Управление остатками
 
 `POST /v1/analytics/manage/stocks`
 
-22 января 2026 года метод будет отключён. Переключитесь на /v1/analytics/stocks.
+22 января 2026 года метод будет отключён. Переключитесь на [/v1/analytics/stocks](#operation/AnalyticsAPI_AnalyticsStocks).
 
 Используйте метод, чтобы узнать, сколько товаров осталось на складах FBO.
 

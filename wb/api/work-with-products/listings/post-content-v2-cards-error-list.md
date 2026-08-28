@@ -9,7 +9,7 @@ tags:
 spec_version: items
 source: "https://dev.wildberries.ru/docs/openapi/work-with-products"
 deprecated: false
-content_sha: 502ae9ad7dc85545
+content_sha: 6c350b2871697bf8
 ---
 
 # Список несозданных карточек товаров с ошибками
@@ -44,9 +44,9 @@ content_sha: 502ae9ad7dc85545
 
 Лимит запросов на один аккаунт продавца для методов:
 
- получения лимитов карточек товаров
+ [получения лимитов карточек товаров](./work-with-products#tag/listingItems/paths/~1content~1v2~1cards~1limits/get)
 
- получения несозданных карточек товаров с ошибками
+ [получения несозданных карточек товаров с ошибками](./work-with-products#tag/listings/paths/~1content~1v2~1cards~1error~1list/post)
 
 | Период | Лимит | Интервал | Всплеск |
 | --- | --- | --- | --- |

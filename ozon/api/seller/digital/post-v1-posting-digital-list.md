@@ -9,7 +9,7 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: true
-content_sha: bc2ff88cee3d4a95
+content_sha: 3d47be8e9656ebd0
 ---
 
 # Получить список отправлений
@@ -18,7 +18,7 @@ content_sha: bc2ff88cee3d4a95
 
 > ⚠️ Метод помечен как **deprecated**.
 
-С 31 августа 2026 года метод будет отключён. Переключитесь на /v2/posting/digital/list.
+С 31 августа 2026 года метод будет отключён. Переключитесь на [/v2/posting/digital/list](#operation/PostingDigitalList).
 
 Возвращает список отправлений, по которым нужно загрузить коды цифровых товаров. Метод доступен только продавцам, работающим с цифровыми товарами. 
 

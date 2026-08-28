@@ -9,7 +9,7 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: true
-content_sha: 93e4ee2bc6aa36c9
+content_sha: 80af6c2dbdf44066
 ---
 
 # Добавить сертификаты для товаров
@@ -18,7 +18,7 @@ content_sha: 93e4ee2bc6aa36c9
 
 > ⚠️ Метод помечен как **deprecated**.
 
-31 августа 2026 года отключим метод. Переключитесь на методы /v2/product/certification/options, /v2/product/certification/params и /v2/product/certificate/create.
+31 августа 2026 года отключим метод. Переключитесь на методы [/v2/product/certification/options](#operation/ProductCertificateOptions), [/v2/product/certification/params](#operation/ProductCertificateParams) и [/v2/product/certificate/create](#operation/ProductCertificateCreate).
 
 ## Параметры
 

@@ -9,7 +9,7 @@ tags:
 spec_version: items
 source: "https://dev.wildberries.ru/docs/openapi/work-with-products"
 deprecated: false
-content_sha: fc2ffc3114285401
+content_sha: 0f425b7b08004593
 ---
 
 # Родительские категории товаров
@@ -28,17 +28,17 @@ content_sha: fc2ffc3114285401
 
 Исключение — методы:
 
- создания карточек товаров
+ [создания карточек товаров](./work-with-products#tag/listingItems/paths/~1content~1v2~1cards~1upload/post)
 
- создания карточек товаров с присоединением
+ [создания карточек товаров с присоединением](./work-with-products#tag/listingItems/paths/~1content~1v2~1cards~1upload~1add/post)
 
- редактирования карточек товаров
+ [редактирования карточек товаров](./work-with-products#tag/listings/paths/~1content~1v2~1cards~1update/post)
 
- восстановления карточек товаров из корзины
+ [восстановления карточек товаров из корзины](./work-with-products#tag/listings/paths/~1content~1v2~1cards~1recover/post)
 
- получения списка рекомендаций в карточках товаров
+ [получения списка рекомендаций в карточках товаров](./work-with-products#tag/recommendations/operation/postV1RecommendationsList)
 
- установки рекомендаций для товаров
+ [установки рекомендаций для товаров](./work-with-products#tag/recommendations/operation/postV1RecommendationsSet)
 
 В песочнице — максимум 1 запрос в секунду суммарно для всех методов Контента.
 

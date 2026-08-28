@@ -9,7 +9,7 @@ tags:
 spec_version: promotion
 source: "https://dev.wildberries.ru/docs/openapi/promotion"
 deprecated: false
-content_sha: 5c600a2e7187984f
+content_sha: eb65e9a9c7c05f71
 ---
 
 # Установить ставки для поисковых кластеров в валюте аккаунта продавца
@@ -18,7 +18,7 @@ content_sha: 5c600a2e7187984f
 
 Описание метода
 
- Метод доступен по
+ Метод [доступен](./api-information#tag/authorization/Pravila-ispolzovaniya-tokenov-dostupa-k-API) по
  Персональному токену, 
  Сервисному токену
 

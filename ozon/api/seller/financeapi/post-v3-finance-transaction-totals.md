@@ -9,14 +9,14 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: e8cc96f521da2e8e
+content_sha: 2dd6d4d8b4f6cfc1
 ---
 
 # Суммы транзакций
 
 `POST /v3/finance/transaction/totals`
 
-Метод устаревает и будет отключён 8 сентября 2026 года. Переключитесь на /v1/finance/accrual/postings, /v1/finance/accrual/types, /v1/finance/accrual/by-day.
+Метод устаревает и будет отключён 8 сентября 2026 года. Переключитесь на [/v1/finance/accrual/postings](#operation/GetFinanceAccrualPostings), [/v1/finance/accrual/types](#operation/GetFinanceAccrualTypes), [/v1/finance/accrual/by-day](#operation/GetFinanceAccrualByDay).
 
 Данные могут не соответствовать информации в личном кабинете.
 

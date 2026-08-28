@@ -9,7 +9,7 @@ tags:
 spec_version: items
 source: "https://dev.wildberries.ru/docs/openapi/work-with-products"
 deprecated: false
-content_sha: d1f65cdb7cb03391
+content_sha: 481a7ff01eea8c79
 ---
 
 # Список карточек товаров
@@ -20,7 +20,7 @@ content_sha: d1f65cdb7cb03391
 
 Метод возвращает список созданных карточек товаров.
 
- В ответе метода не будет карточек, находящихся в корзине. Получить такие карточки можно через отдельный метод
+ В ответе метода не будет карточек, находящихся в корзине. Получить такие карточки можно через [отдельный метод](./work-with-products#tag/listings/paths/~1content~1v2~1get~1cards~1trash/post)
 
 Чтобы получить **больше 100** карточек товаров, используйте пагинацию:
  1. Сделайте первый запрос: 

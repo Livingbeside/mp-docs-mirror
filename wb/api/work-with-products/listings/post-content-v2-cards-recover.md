@@ -9,7 +9,7 @@ tags:
 spec_version: items
 source: "https://dev.wildberries.ru/docs/openapi/work-with-products"
 deprecated: false
-content_sha: f149a12658ced136
+content_sha: d60b3f8666b6b856
 ---
 
 # Восстановление карточек товаров из корзины
@@ -20,7 +20,7 @@ content_sha: f149a12658ced136
 
 Метод восстанавливает [карточки товаров из корзины](./work-with-products#tag/listings/paths/~1content~1v2~1get~1cards~1trash/post).
 
- Карточка товара сохраняет тот же imtID — ID для объединённых карточек товаров — что был присвоен ей при перемещении в корзину
+ Карточка товара сохраняет тот же imtID — ID для [объединённых](/knowledge-base/articles/019d49a4-1320-71bb-9dac-8ba07e7177ce/rabota-s-tovarami#obuedinenie-i-razuedinenie-kartochek-tovarov) карточек товаров — что был присвоен ей при перемещении в корзину
 
 Лимит запросов на один аккаунт продавца:
 

@@ -9,7 +9,7 @@ tags:
 spec_version: items
 source: "https://dev.wildberries.ru/docs/openapi/work-with-products"
 deprecated: false
-content_sha: 140d3701aa1fdbc5
+content_sha: 68adc3fb340c57a4
 ---
 
 # Установить скидки WB Клуба
@@ -20,7 +20,7 @@ content_sha: 140d3701aa1fdbc5
 
 Устанавливает скидки для товаров в рамках подписки [WB Клуб](https://seller.wildberries.ru/help-center/article/A-337).
 
- Получить информацию о процессе установки цен и скидок можно с помощью методов состояния и детализации обработанной загрузки.
+ Получить информацию о процессе установки цен и скидок можно с помощью методов [состояния](./work-with-products#tag/Ceny-i-skidki/paths/~1api~1v2~1history~1tasks/get) и [детализации](./work-with-products#tag/Ceny-i-skidki/paths/~1api~1v2~1history~1goods~1task/get) обработанной загрузки.
 
 Лимит запросов на один аккаунт продавца для всех методов категории Цены и скидки:
 

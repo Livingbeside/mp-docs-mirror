@@ -9,14 +9,14 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: 172c57dbfb086326
+content_sha: 461984c0850b8276
 ---
 
 # Получить PDF с этикетками грузовых мест
 
 `GET /v1/cargoes-label/file/{file_guid}`
 
-10 апреля 2026 года отключим метод. Переключитесь на /v1/cargoes-label/get.
+10 апреля 2026 года отключим метод. Переключитесь на [/v1/cargoes-label/get](#operation/CargoesAPI_CargoesLabelGet).
 
 ## Параметры
 

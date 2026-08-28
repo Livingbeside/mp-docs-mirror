@@ -9,7 +9,7 @@ tags:
 spec_version: dbs
 source: "https://dev.wildberries.ru/docs/openapi/orders-dbs"
 deprecated: false
-content_sha: 372bd3d5b312ecf3
+content_sha: 8ab10d5b347a5a6e
 ---
 
 # Получить статусы сборочных заданий
@@ -28,8 +28,7 @@ content_sha: 372bd3d5b312ecf3
 | `new` | **Новое сборочное задание** | |
 | `confirm` | **На сборке** | [Перевести сборочное задание на сборку](./orders-dbs#tag/dbsAssemblyOrders/operation/postV3DbsOrdersStatusConfirm)
 | `deliver` | **В доставке** | [Перевести сборочное задание в доставку](./orders-dbs#tag/dbsAssemblyOrders/operation/postV3DbsOrdersStatusDeliver)
-| `receive` | **Получено покупателем** | [Сообщить, что заказ принят покупателем](./orders-dbs#tag/dbsAssemblyOrders/operation/postV3DbsOrdersStatusReceive) 
-
+| `receive` | **Получено покупателем** | [Сообщить, что заказ принят покупателем](./orders-dbs#tag/dbsAssemblyOrders/operation/postV3DbsOrdersStatusReceive) <br>
 | `reject` | **Отказ покупателя при получении** | [Сообщить, что покупатель отказался от заказа](./orders-dbs#tag/dbsAssemblyOrders/operation/postV3DbsOrdersStatusReject)
 | `cancel` | **Отменено продавцом** | [Отменить сборочное задание](./orders-dbs#tag/dbsAssemblyOrders/operation/postV3DbsOrdersStatusCancel)
 | `cancel_missed_call` | **Отмена по причине недозвона** | Статус меняется автоматически |

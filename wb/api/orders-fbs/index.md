@@ -4,7 +4,7 @@ api: wb-orders-fbs
 spec_version: order
 operations: 40
 source: "https://dev.wildberries.ru/docs/openapi/orders-fbs"
-content_sha: 9c4c504cfd92bb04
+content_sha: 73dc1913c9ca2721
 ---
 
 # Заказы FBS
@@ -17,11 +17,11 @@ content_sha: 9c4c504cfd92bb04
 
 Вы можете протестировать методы заказов FBS в [песочнице](/sandbox). Также в песочнице доступны [специальные методы](/docs/openapi-other/sandbox-environment#tag/Marketplejs-FBS) для эмуляции действий пользователя
 
- Узнать, как использовать методы в бизнес-кейсах, можно в инструкции по работе с заказами FBS
+ Узнать, как использовать методы в бизнес-кейсах, можно в [инструкции](/knowledge-base/articles/019d49a4-0771-7571-aea9-11d5b597f34c/zakazy-fbs) по работе с заказами FBS
 
- Узнать больше о заказах FBS можно в справочном центре
+ Узнать больше о заказах FBS можно в [справочном центре](https://seller.wildberries.ru/instructions/ru/ru/category/b3e60238-fd4c-49ce-8668-ff688725a12d)
 
-Версия спеки: `order` · методов: **40**
+Версия спеки: `order` · методов: **40** · разделов справки: **6**
 
 Источник: https://dev.wildberries.ru/docs/openapi/orders-fbs
 

@@ -9,7 +9,7 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: 83c5d93ff2b04a94
+content_sha: 4bfe89032fdcae29
 ---
 
 # Получить информацию о цене товара
@@ -17,7 +17,7 @@ content_sha: 83c5d93ff2b04a94
 `POST /v5/product/info/prices`
 
 Вы можете посмотреть историю обновления цен только в личном кабинете продавца.
- Подробнее об истории обновления цен в Базе знаний продавца
+ [Подробнее об истории обновления цен в Базе знаний продавца](https://seller-edu.ozon.ru/libra/ceny-i-akcii/rabota-s-cenami/price-control#как-посмотреть-историю-обновления-цен)
 
 ## Параметры
 

@@ -9,7 +9,7 @@ tags:
 spec_version: general
 source: "https://dev.wildberries.ru/docs/openapi/api-information"
 deprecated: false
-content_sha: 9ffc5f084f276be0
+content_sha: a0448f669cc30399
 ---
 
 # Создать приглашение для нового пользователя
@@ -18,7 +18,7 @@ content_sha: 9ffc5f084f276be0
 
 Описание метода
 
- Метод доступен по
+ Метод [доступен](./api-information#tag/authorization/Pravila-ispolzovaniya-tokenov-dostupa-k-API) по
  Персональному токену
 
 Метод создаёт приглашение для нового пользователя с настройкой доступов к разделам профиля продавца.

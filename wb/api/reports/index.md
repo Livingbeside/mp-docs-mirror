@@ -4,12 +4,12 @@ api: wb-reports
 spec_version: reports
 operations: 23
 source: "https://dev.wildberries.ru/docs/openapi/reports"
-content_sha: d2e1de71aed265a5
+content_sha: 34e187e300a22113
 ---
 
 # Отчёты
 
-Узнать больше об отчётах можно в справочном центре
+Узнать больше об отчётах можно в [справочном центре](https://seller.wildberries.ru/instructions/subcategory/5f2162c5-069b-416d-a4e1-48da2a76e6b0)
 
 С помощью этих методов вы можете получать [основные отчёты](./reports#tag/mainReports) и отчёты о:
  1. [Остатках на складах](./reports#tag/warehousesInventoryReport)
@@ -22,7 +22,7 @@ content_sha: d2e1de71aed265a5
  8. [Заблокированных карточках](./reports#tag/blockedItems)
  9. [Возвратах и перемещении товаров](./reports#tag/returnsAndItemMovementReport)
 
-Версия спеки: `reports` · методов: **23**
+Версия спеки: `reports` · методов: **23** · разделов справки: **11**
 
 Источник: https://dev.wildberries.ru/docs/openapi/reports
 

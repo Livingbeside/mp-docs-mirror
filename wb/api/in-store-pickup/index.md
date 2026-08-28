@@ -4,7 +4,7 @@ api: wb-in-store-pickup
 spec_version: instorepickup
 operations: 18
 source: "https://dev.wildberries.ru/docs/openapi/in-store-pickup"
-content_sha: e9f4acd45dc9baa1
+content_sha: 3fd3097bf68e359d
 ---
 
 # Самовывоз
@@ -13,7 +13,7 @@ content_sha: e9f4acd45dc9baa1
 
 Вы можете протестировать методы Самовывоза в [песочнице](/sandbox). Также в песочнице доступны [специальные методы](/docs/openapi-other/sandbox-environment#tag/Marketplejs-Samovyvoz) для эмуляции действий пользователя
 
-Версия спеки: `instorepickup` · методов: **18**
+Версия спеки: `instorepickup` · методов: **18** · разделов справки: **3**
 
 Источник: https://dev.wildberries.ru/docs/openapi/in-store-pickup
 

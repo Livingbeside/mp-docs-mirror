@@ -9,7 +9,7 @@ tags:
 spec_version: finances
 source: "https://dev.wildberries.ru/docs/openapi/financial-reports-and-accounting"
 deprecated: false
-content_sha: 29b9aa925ccc8d9c
+content_sha: f0f8e06fbed29075
 ---
 
 # Детализации к отчётам реализации за период
@@ -22,7 +22,7 @@ content_sha: 29b9aa925ccc8d9c
 
 Данные доступны с 29 января 2024 года.
 
- Вы можете выгрузить данные в Google Таблицы
+ Вы можете выгрузить данные в [Google Таблицы](/knowledge-base/articles/019d49a4-650c-7b04-9596-ba441936f9d3)
 
 Лимит запросов на один аккаунт продавца:
 

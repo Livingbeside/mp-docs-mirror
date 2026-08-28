@@ -9,7 +9,7 @@ tags:
 spec_version: analytics
 source: "https://dev.wildberries.ru/docs/openapi/analytics"
 deprecated: false
-content_sha: afb61e220079c2f7
+content_sha: 567a867daab4bab6
 ---
 
 # Получить отчёт
@@ -18,7 +18,7 @@ content_sha: afb61e220079c2f7
 
 Описание метода
 
- Метод доступен по
+ Метод [доступен](./api-information#tag/authorization/Pravila-ispolzovaniya-tokenov-dostupa-k-API) по
  Персональному токену, 
  Сервисному токену
 

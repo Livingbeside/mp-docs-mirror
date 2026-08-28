@@ -9,14 +9,14 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: b594e177a7b01381
+content_sha: 6db42f7e0d0c121a
 ---
 
 # Информация об остатках на складах продавца (FBS и rFBS)
 
 `POST /v1/product/info/stocks-by-warehouse/fbs`
 
-Метод устаревает и будет отключён 7 апреля 2026 года. Переключитесь на /v2/product/info/stocks-by-warehouse/fbs.
+Метод устаревает и будет отключён 7 апреля 2026 года. Переключитесь на [/v2/product/info/stocks-by-warehouse/fbs](#operation/ProductAPI_GetProductInfoStocksByWarehouseFbsV2).
 
 Передайте в запросе `offer_id` или `sku`. Если укажете оба, будет использован только `sku`.
 

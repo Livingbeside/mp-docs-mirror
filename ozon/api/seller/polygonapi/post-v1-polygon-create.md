@@ -9,7 +9,7 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: e7a69efc314b9bc5
+content_sha: 5efb49c542decc01
 ---
 
 # Создайте полигон доставки
@@ -20,7 +20,7 @@ content_sha: e7a69efc314b9bc5
 
 Создайте полигон, получив его координаты на https://geojson.io: отметьте на карте минимум 3 точки и соедините их линиями.
 
-Сервис geojson.io возвращает координаты в формате [[[long lat]]]. Поменяйте местами широту и долготу в запросе метода.
+Сервис [geojson.io](https://geojson.io) возвращает координаты в формате [[[long lat]]]. Поменяйте местами широту и долготу в запросе метода.
 
 ## Параметры
 

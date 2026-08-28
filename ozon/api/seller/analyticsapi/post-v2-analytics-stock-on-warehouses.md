@@ -9,14 +9,14 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: ba180cef764e636a
+content_sha: e2a940fc8b9c895b
 ---
 
 # Отчёт по остаткам и товарам
 
 `POST /v2/analytics/stock_on_warehouses`
 
-В будущем метод будет отключён. Переключитесь на /v1/analytics/stocks.
+В будущем метод будет отключён. Переключитесь на [/v1/analytics/stocks](#operation/AnalyticsAPI_AnalyticsStocks).
 
 Метод для получения отчёта по остаткам и товарам в перемещении по складам Ozon.
 

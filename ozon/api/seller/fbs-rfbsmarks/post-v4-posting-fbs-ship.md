@@ -9,14 +9,14 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: f9c2ba907cbd1f4e
+content_sha: 9d2bbdc3f71f6755
 ---
 
 # Собрать заказ (версия 4)
 
 `POST /v4/posting/fbs/ship`
 
-Ответ с кодом 200 не гарантирует успешную сборку заказа. Используйте метод /v3/posting/fbs/get, чтобы проверить, что заказ собран. Если в ответе указан result.substatus = ship_failed, повторите сборку заказа.
+Ответ с кодом 200 не гарантирует успешную сборку заказа. Используйте метод [/v3/posting/fbs/get](#operation/PostingAPI_GetFbsPostingV3), чтобы проверить, что заказ собран. Если в ответе указан result.substatus = ship_failed, повторите сборку заказа.
 
 Делит заказ на отправления и переводит его в статус `awaiting_deliver`.
 

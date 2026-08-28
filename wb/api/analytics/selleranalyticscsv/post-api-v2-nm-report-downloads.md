@@ -9,7 +9,7 @@ tags:
 spec_version: analytics
 source: "https://dev.wildberries.ru/docs/openapi/analytics"
 deprecated: false
-content_sha: 2577ed71c6122547
+content_sha: 1809bfac9e56cb11
 ---
 
 # Создать отчёт
@@ -38,7 +38,7 @@ content_sha: 2577ed71c6122547
 
 Если не удалось [получить отчёт](./analytics#tag/sellerAnalyticsCsv/operation/getV2NmReportDownloadsFileDownloadId), можно создать [повторное задание на генерацию](./analytics#tag/sellerAnalyticsCsv/operation/postV2NmReportDownloadsRetry). Также можно [получить список и проверить статусы](./analytics#tag/sellerAnalyticsCsv/operation/getV2NmReportDownloads) отчётов.
 
- Отчёты по остаткам — типы STOCK_HISTORY_REPORT_CSV и STOCK_HISTORY_DAILY_CSV — можно создать без подписки Джем
+ Отчёты по [остаткам](https://seller.wildberries.ru/content-analytics/history-remains) — типы STOCK_HISTORY_REPORT_CSV и STOCK_HISTORY_DAILY_CSV — можно создать без подписки [Джем](https://seller.wildberries.ru/monetization/jam)
 
 Лимит запросов на один аккаунт продавца:
 

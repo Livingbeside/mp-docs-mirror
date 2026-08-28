@@ -9,14 +9,14 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: ebf73c9db6ccf103
+content_sha: 01dd98332b24f663
 ---
 
 # Список сертифицируемых категорий
 
 `POST /v1/product/certification/list`
 
-14 апреля 2025 года метод будет отключён. Переключитесь на /v2/product/certification/list.
+14 апреля 2025 года метод будет отключён. Переключитесь на [/v2/product/certification/list](#operation/ProductAPI_ProductCertificationList).
 
 ## Параметры
 

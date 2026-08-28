@@ -4,12 +4,12 @@ api: wb-wb-tariffs
 spec_version: rates
 operations: 5
 source: "https://dev.wildberries.ru/docs/openapi/wb-tariffs"
-content_sha: 3e5f3fa2b889dbd7
+content_sha: c9296f77b86f30f1
 ---
 
 # Тарифы
 
-Узнать больше о тарифах можно в справочном центре
+Узнать больше о тарифах можно в [справочном центре](https://seller.wildberries.ru/instructions/ru/ru/material/fees-site-section)
 
 В разделе описаны методы получения:
  1. [Комиссий](./wb-tariffs#tag/fees)
@@ -17,7 +17,7 @@ content_sha: 3e5f3fa2b889dbd7
  3. [Тарифов на остаток](./wb-tariffs#tag/stockRates)
  4. [Тарифов на возврат товаров продавцу](./wb-tariffs#tag/returnCostToSeller)
 
-Версия спеки: `rates` · методов: **5**
+Версия спеки: `rates` · методов: **5** · разделов справки: **5**
 
 Источник: https://dev.wildberries.ru/docs/openapi/wb-tariffs
 

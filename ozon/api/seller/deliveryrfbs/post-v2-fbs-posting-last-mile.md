@@ -9,14 +9,14 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: c07ff0985d970c4e
+content_sha: 67fb10cd719f40da
 ---
 
 # Изменить статус на «Последняя миля»
 
 `POST /v2/fbs/posting/last-mile`
 
-Перед изменением статуса проверьте текущий статус отправления методом /v3/posting/fbs/get. Изменение статуса происходит асинхронно.
+Перед изменением статуса проверьте текущий статус отправления методом [/v3/posting/fbs/get](#operation/PostingAPI_GetFbsPostingV3). Изменение статуса происходит асинхронно.
 
 Перевести отправление в статус «Последняя миля», если используется сторонняя служба доставки.
 

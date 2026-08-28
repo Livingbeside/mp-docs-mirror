@@ -9,14 +9,14 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: fd9c393b6dd8de76
+content_sha: 5449a0d161e97bda
 ---
 
 # Создать задание на выгрузку этикеток
 
 `POST /v1/posting/fbs/package-label/create`
 
-В будущем метод будет отключён. Мы предупредим вас об этом за месяц. Переключитесь на /v2/posting/fbs/package-label/create.
+В будущем метод будет отключён. Мы предупредим вас об этом за месяц. Переключитесь на [/v2/posting/fbs/package-label/create](#operation/PostingAPI_CreateLabelBatchV2).
 
 Метод для создания задания на асинхронное формирование этикеток.
 

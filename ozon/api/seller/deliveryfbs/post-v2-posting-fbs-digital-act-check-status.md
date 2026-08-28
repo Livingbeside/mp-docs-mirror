@@ -9,7 +9,7 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: true
-content_sha: eaaa586db0bf1997
+content_sha: 08786c8468184177
 ---
 
 # Статус формирования накладной
@@ -18,7 +18,7 @@ content_sha: eaaa586db0bf1997
 
 > ⚠️ Метод помечен как **deprecated**.
 
-Метод устаревает и будет отключён 22 марта 2026 года. Переключитесь на /v2/posting/fbs/act/check-status.
+Метод устаревает и будет отключён 22 марта 2026 года. Переключитесь на [/v2/posting/fbs/act/check-status](#operation/PostingAPI_PostingFBSActCheckStatus).
 
 ## Параметры
 

@@ -9,7 +9,7 @@ tags:
 spec_version: items
 source: "https://dev.wildberries.ru/docs/openapi/work-with-products"
 deprecated: false
-content_sha: 8a0d1137ec337e80
+content_sha: c10f9ed6ed411cfe
 ---
 
 # Перенос карточек товаров в корзину
@@ -20,7 +20,7 @@ content_sha: 8a0d1137ec337e80
 
 Метод переносит [карточки товаров в корзину](./work-with-products#tag/listings/paths/~1content~1v2~1get~1cards~1trash/post). При этом карточки товаров не удаляются, их можно [восстановить](./work-with-products#tag/listings/paths/~1content~1v2~1cards~1recover/post).
 
- После переноса в корзину карточке товара присваивается новый imtID — ID для объединённых карточек товаров
+ После переноса в корзину карточке товара присваивается новый imtID — ID для [объединённых](/knowledge-base/articles/019d49a4-1320-71bb-9dac-8ba07e7177ce/rabota-s-tovarami#obuedinenie-i-razuedinenie-kartochek-tovarov) карточек товаров
 
 Карточки товаров удаляются автоматически, если лежат в корзине больше 30 дней, и на них нет остатков. Очистка корзины происходит каждую ночь по московскому времени.
 

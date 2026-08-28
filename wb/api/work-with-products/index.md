@@ -4,7 +4,7 @@ api: wb-work-with-products
 spec_version: items
 operations: 52
 source: "https://dev.wildberries.ru/docs/openapi/work-with-products"
-content_sha: 697f08c318bdd777
+content_sha: 4395c2dc8167179b
 ---
 
 # Работа с товарами
@@ -20,9 +20,9 @@ content_sha: 697f08c318bdd777
 
 Вы можете протестировать методы работы с товарами в [песочнице](/sandbox). Также в песочнице доступны [специальные методы](/docs/openapi-other/sandbox-environment#tag/Rabota-s-tovarami) для управления карточками товаров
 
- Узнать, как использовать методы в бизнес-кейсах, можно в инструкции по работе с товарами
+ Узнать, как использовать методы в бизнес-кейсах, можно в [инструкции](/knowledge-base/articles/019d49a4-1320-71bb-9dac-8ba07e7177ce/rabota-s-tovarami) по работе с товарами
 
-Версия спеки: `items` · методов: **52**
+Версия спеки: `items` · методов: **52** · разделов справки: **10**
 
 Источник: https://dev.wildberries.ru/docs/openapi/work-with-products
 

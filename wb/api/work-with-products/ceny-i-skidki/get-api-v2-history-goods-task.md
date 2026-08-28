@@ -9,7 +9,7 @@ tags:
 spec_version: items
 source: "https://dev.wildberries.ru/docs/openapi/work-with-products"
 deprecated: false
-content_sha: a81828a395eba9b3
+content_sha: 57434bc72e683254
 ---
 
 # Детализация обработанной загрузки
@@ -20,7 +20,7 @@ content_sha: a81828a395eba9b3
 
 Метод возвращает информацию о товарах и об ошибках в товарах в обработанной загрузке.
 
- Обработанная загрузка — это загрузка цен и скидок для товаров, цен для размеров товаров скидок WB Клуба и оптовых скидок для B2B-продаж.
+ Обработанная загрузка — это загрузка цен и скидок для [товаров](./work-with-products#tag/Ceny-i-skidki/paths/~1api~1v2~1upload~1task/post), цен для [размеров товаров](./work-with-products#tag/Ceny-i-skidki/paths/~1api~1v2~1upload~1task~1size/post) [скидок WB Клуба](./work-with-products#tag/Ceny-i-skidki/paths/~1api~1v2~1upload~1task~1club-discount/post) и [оптовых скидок для B2B-продаж](./work-with-products#tag/Ceny-i-skidki/operation/postV1UploadTaskB2bWholesale).
 
 Лимит запросов на один аккаунт продавца для всех методов категории Цены и скидки:
 

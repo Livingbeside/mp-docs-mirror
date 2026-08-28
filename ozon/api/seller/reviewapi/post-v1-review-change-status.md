@@ -9,7 +9,7 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: true
-content_sha: db7fd09d71c1252f
+content_sha: f0413a0dfc1493d2
 ---
 
 # Изменить статус отзывов
@@ -18,7 +18,7 @@ content_sha: db7fd09d71c1252f
 
 > ⚠️ Метод помечен как **deprecated**.
 
-Метод устаревает. Переключитесь на /v2/review/change-status.
+Метод устаревает. Переключитесь на [/v2/review/change-status](#operation/ReviewChangeStatusV2).
 
 Доступно для продавцов с подпиской [Управление отзывами](https://seller-edu.ozon.ru/libra/seller-rating/podpiska-upravlenie-otzyvami) или [Premium Pro](https://seller-edu.ozon.ru/seller-rating/about-rating/podpiska-premium-pro).
 

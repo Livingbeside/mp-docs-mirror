@@ -9,7 +9,7 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: true
-content_sha: 0e12d7b5e78bb3b1
+content_sha: 6e652ec0f0ac3ba1
 ---
 
 # Список необработанных отправлений
@@ -18,7 +18,7 @@ content_sha: 0e12d7b5e78bb3b1
 
 > ⚠️ Метод помечен как **deprecated**.
 
-С 31 августа 2026 года метод будет отключён. Переключитесь на /v4/posting/fbs/unfulfilled/list.
+С 31 августа 2026 года метод будет отключён. Переключитесь на [/v4/posting/fbs/unfulfilled/list](#operation/PostingFbsUnfulfilledList).
 
 Возвращает список необработанных отправлений за указанный период времени — он должен быть не больше одного года.
 

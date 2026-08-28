@@ -9,14 +9,14 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: 84864c69e3438c4b
+content_sha: ab552b7d8de08b65
 ---
 
 # Список методов доставки склада
 
 `POST /v1/delivery-method/list`
 
-Метод устаревает и будет отключён 7 апреля 2026 года. Переключитесь на /v2/delivery-method/list.
+Метод устаревает и будет отключён 7 апреля 2026 года. Переключитесь на [/v2/delivery-method/list](#operation/WarehouseAPI_DeliveryMethodListV2).
 
 ## Параметры
 

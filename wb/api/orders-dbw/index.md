@@ -4,7 +4,7 @@ api: wb-orders-dbw
 spec_version: ordersdbw
 operations: 16
 source: "https://dev.wildberries.ru/docs/openapi/orders-dbw"
-content_sha: 83ee1be30ac0824a
+content_sha: 602effd475b646e8
 ---
 
 # Заказы DBW
@@ -13,9 +13,9 @@ content_sha: 83ee1be30ac0824a
  - получать информацию о [сборочных заданиях](./orders-dbw#tag/dbwAssemblyOrders), управлять статусами и отменять сборочные задания
  - получать, добавлять, редактировать и удалять [метаданные](./orders-dbw#tag/dbwLabelIdentifiers) сборочных заданий
 
- Узнать, как использовать методы в бизнес-кейсах, можно в инструкции по работе с заказами DBW
+ Узнать, как использовать методы в бизнес-кейсах, можно в [инструкции](/knowledge-base/articles/019d49a4-036a-7721-98e8-bed5f1a4f72d/zakazy-dbw) по работе с заказами DBW
 
-Версия спеки: `ordersdbw` · методов: **16**
+Версия спеки: `ordersdbw` · методов: **16** · разделов справки: **3**
 
 Источник: https://dev.wildberries.ru/docs/openapi/orders-dbw
 

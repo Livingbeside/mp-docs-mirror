@@ -9,7 +9,7 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: true
-content_sha: 74bc9351901ab9ca
+content_sha: ffcc4bc160a619b9
 ---
 
 # Список отправлений
@@ -18,7 +18,7 @@ content_sha: 74bc9351901ab9ca
 
 > ⚠️ Метод помечен как **deprecated**.
 
-С 31 августа 2026 года метод будет отключён. Переключитесь на /v3/posting/fbo/list.
+С 31 августа 2026 года метод будет отключён. Переключитесь на [/v3/posting/fbo/list](#operation/PostingFboList).
 
 Возвращает список отправлений за указанный период времени.
 Если период больше года, вернётся ошибка `PERIOD_IS_TOO_LONG`.

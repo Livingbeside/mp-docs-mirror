@@ -9,7 +9,7 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: true
-content_sha: 415b1058c5488654
+content_sha: 20c5dfe039a1d503
 ---
 
 # Получить лист отгрузки по перевозке
@@ -18,7 +18,7 @@ content_sha: 415b1058c5488654
 
 > ⚠️ Метод помечен как **deprecated**.
 
-Метод устаревает и будет отключён 22 марта 2026 года. Переключитесь на /v2/posting/fbs/act/get-pdf.
+Метод устаревает и будет отключён 22 марта 2026 года. Переключитесь на [/v2/posting/fbs/act/get-pdf](#operation/PostingAPI_PostingFBSGetAct).
 
 Вы можете получить документы, если в ответе метода [/v2/posting/fbs/digital/act/check-status](#operation/PostingAPI_PostingFBSDigitalActCheckStatus) был один из статусов:
 - `FORMED` — перевозка сформирована успешно,

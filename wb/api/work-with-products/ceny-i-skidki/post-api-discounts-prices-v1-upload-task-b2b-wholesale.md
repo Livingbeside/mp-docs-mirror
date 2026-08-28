@@ -9,7 +9,7 @@ tags:
 spec_version: items
 source: "https://dev.wildberries.ru/docs/openapi/work-with-products"
 deprecated: false
-content_sha: e6f16743d287ad85
+content_sha: d953c515c5dd8b08
 ---
 
 # Установить оптовые скидки для B2B-продаж
@@ -18,13 +18,13 @@ content_sha: e6f16743d287ad85
 
 Описание метода
 
- Метод доступен по
+ Метод [доступен](./api-information#tag/authorization/Pravila-ispolzovaniya-tokenov-dostupa-k-API) по
  Персональному токену, 
  Сервисному токену
 
 Метод устанавливает [оптовые скидки для бизнеса](https://seller.wildberries.ru/instructions/ru/ru/material/how-to-enable-wholesale-discounts-for-business)
 
- Получить информацию о процессе установки цен и скидок можно с помощью методов состояния и детализации обработанной загрузки.
+ Получить информацию о процессе установки цен и скидок можно с помощью методов [состояния](./work-with-products#tag/Ceny-i-skidki/paths/~1api~1v2~1history~1tasks/get) и [детализации](./work-with-products#tag/Ceny-i-skidki/paths/~1api~1v2~1history~1goods~1task/get) обработанной загрузки.
 
 Лимит запросов на один аккаунт продавца для всех методов категории Цены и скидки:
 

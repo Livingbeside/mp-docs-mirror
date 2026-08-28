@@ -9,7 +9,7 @@ tags:
 spec_version: general
 source: "https://dev.wildberries.ru/docs/openapi/api-information"
 deprecated: false
-content_sha: f5cb1c5257b1adb5
+content_sha: ee72ea126285073c
 ---
 
 # Проверка подключения
@@ -29,18 +29,13 @@ content_sha: f5cb1c5257b1adb5
 
 | Категория | URL запроса |
 |---------------|-----------------------|
-| Контент | `https://content-api.wildberries.ru/ping`
-`https://content-api-sandbox.wildberries.ru/ping` |
+| Контент | `https://content-api.wildberries.ru/ping`<br>`https://content-api-sandbox.wildberries.ru/ping` |
 | Аналитика | `https://seller-analytics-api.wildberries.ru/ping` |
-| Цены и скидки | `https://discounts-prices-api.wildberries.ru/ping`
-`https://discounts-prices-api-sandbox.wildberries.ru/ping` |
+| Цены и скидки | `https://discounts-prices-api.wildberries.ru/ping`<br>`https://discounts-prices-api-sandbox.wildberries.ru/ping` |
 | Маркетплейс | `https://marketplace-api.wildberries.ru/ping` |
-| Статистика | `https://statistics-api.wildberries.ru/ping`
-`https://statistics-api-sandbox.wildberries.ru/ping` |
-| Продвижение | `https://advert-api.wildberries.ru/ping`
-`https://advert-api-sandbox.wildberries.ru/ping` |
-| Вопросы и отзывы | `https://feedbacks-api.wildberries.ru/ping`
-`https://feedbacks-api-sandbox.wildberries.ru/ping` |
+| Статистика | `https://statistics-api.wildberries.ru/ping`<br>`https://statistics-api-sandbox.wildberries.ru/ping` |
+| Продвижение | `https://advert-api.wildberries.ru/ping`<br>`https://advert-api-sandbox.wildberries.ru/ping` |
+| Вопросы и отзывы | `https://feedbacks-api.wildberries.ru/ping`<br>`https://feedbacks-api-sandbox.wildberries.ru/ping` |
 | Чат с покупателями | `https://buyer-chat-api.wildberries.ru/ping` |
 | Поставки | `https://supplies-api.wildberries.ru/ping` |
 | Возвраты покупателями | `https://returns-api.wildberries.ru/ping` |

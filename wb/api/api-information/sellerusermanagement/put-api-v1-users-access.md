@@ -9,7 +9,7 @@ tags:
 spec_version: general
 source: "https://dev.wildberries.ru/docs/openapi/api-information"
 deprecated: false
-content_sha: 722751a3b952ec19
+content_sha: 244e997ba2df9e4f
 ---
 
 # Изменить права доступа пользователей
@@ -18,7 +18,7 @@ content_sha: 722751a3b952ec19
 
 Описание метода
 
- Метод доступен по
+ Метод [доступен](./api-information#tag/authorization/Pravila-ispolzovaniya-tokenov-dostupa-k-API) по
  Персональному токену
 
 Метод меняет права доступа одному или нескольким пользователям.

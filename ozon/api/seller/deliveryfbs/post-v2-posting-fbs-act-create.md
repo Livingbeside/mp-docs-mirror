@@ -9,14 +9,14 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: a87103023639efaf
+content_sha: a6fa0fb73e572bd8
 ---
 
 # Подтвердить отгрузку и создать документы
 
 `POST /v2/posting/fbs/act/create`
 
-Метод устаревает и будет отключён 7 сентября 2026. Переключитесь на /v1/carriage/create и /v1/carriage/approve.
+Метод устаревает и будет отключён 7 сентября 2026. Переключитесь на [/v1/carriage/create](#operation/CarriageAPI_CarriageCreate) и [/v1/carriage/approve](#operation/CarriageAPI_CarriageApprove).
  
 Подтверждает отгрузку и запускает формирование транспортной накладной и штрихкода для отгрузки.
 Для продавцов из России также запускается формирование листа отгрузки, а для продавцов из СНГ — акта приёма-передачи.

@@ -9,7 +9,7 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: 0fb6f0a3683adf6d
+content_sha: 4b6ae75f0bb821cc
 ---
 
 # Изменение состава отгрузки
@@ -22,7 +22,7 @@ content_sha: 0fb6f0a3683adf6d
 
 Менять состав можно только у отгрузок со статусом `new`.
 
-Чтобы вернуться к списку заказов, удалите отгрузку с помощью метода /v1/carriage/cancel, и создайте новую.
+Чтобы вернуться к списку заказов, удалите отгрузку с помощью метода [/v1/carriage/cancel](#operation/CarriageAPI_CarriageCancel), и создайте новую.
 
 ## Параметры
 

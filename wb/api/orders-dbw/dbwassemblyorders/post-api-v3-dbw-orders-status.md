@@ -9,7 +9,7 @@ tags:
 spec_version: ordersdbw
 source: "https://dev.wildberries.ru/docs/openapi/orders-dbw"
 deprecated: false
-content_sha: 189950ee07a98029
+content_sha: 4803152cb223d927
 ---
 
 # Получить статусы сборочных заданий
@@ -32,8 +32,7 @@ content_sha: 189950ee07a98029
 | `receive` | **Получено покупателем**| Переводится курьером
 | `reject` | **Отказ покупателя при получении**| Переводится курьером
 | `cancel` | **Отменено продавцом** | [Отменить сборочное задание](./orders-dbw#tag/dbwAssemblyOrders/operation/patchV3DbwOrdersOrderIdCancel)
-| `cancel_missed_call` | **Отмена по причине недозвона**
- | Статус меняется автоматически |
+| `cancel_missed_call` | **Отмена по причине недозвона**<br> | Статус меняется автоматически |
 
 `wbStatus` — статус системы Wildberries.
 

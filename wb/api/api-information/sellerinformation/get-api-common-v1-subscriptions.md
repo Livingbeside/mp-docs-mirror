@@ -9,7 +9,7 @@ tags:
 spec_version: general
 source: "https://dev.wildberries.ru/docs/openapi/api-information"
 deprecated: false
-content_sha: 01c827612d17967f
+content_sha: 7f21bd269c52b7cb
 ---
 
 # Получить информацию о подписке Джем
@@ -18,9 +18,9 @@ content_sha: 01c827612d17967f
 
 Описание метода
 
- Информацию о подписке Джем можно получить с токеном любой категории
+ Информацию о подписке Джем можно получить с токеном любой [категории](./api-information#tag/authorization/Kategorii-tokenov)
 
- Метод доступен по
+ Метод [доступен](./api-information#tag/authorization/Pravila-ispolzovaniya-tokenov-dostupa-k-API) по
  Сервисному токену
 
 Метод возвращает информацию о подписке [Джем](https://seller.wildberries.ru/monetization/jam):

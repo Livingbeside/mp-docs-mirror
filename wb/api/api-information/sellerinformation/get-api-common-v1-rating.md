@@ -9,7 +9,7 @@ tags:
 spec_version: general
 source: "https://dev.wildberries.ru/docs/openapi/api-information"
 deprecated: false
-content_sha: 6baab0472c8bcb9f
+content_sha: 198fa2412949af35
 ---
 
 # Получить рейтинг продавца
@@ -18,9 +18,9 @@ content_sha: 6baab0472c8bcb9f
 
 Описание метода
 
- Для доступа к методу используйте токен для категории Вопросы и отзывы
+ Для доступа к методу используйте [токен](./api-information#tag/authorization/Kak-sozdat-personalnyj-bazovyj-ili-testovyj-token) для категории Вопросы и отзывы
 
- Метод доступен по
+ Метод [доступен](./api-information#tag/authorization/Pravila-ispolzovaniya-tokenov-dostupa-k-API) по
  Сервисному токену
 
 Метод возвращает пользовательский рейтинг продавца и количество отзывов.

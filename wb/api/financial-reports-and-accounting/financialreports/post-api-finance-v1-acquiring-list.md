@@ -9,7 +9,7 @@ tags:
 spec_version: finances
 source: "https://dev.wildberries.ru/docs/openapi/financial-reports-and-accounting"
 deprecated: false
-content_sha: d023544a8b4ab9a3
+content_sha: 9b82dc42f915b7ef
 ---
 
 # Список отчётов об издержках на приём платежей
@@ -18,7 +18,7 @@ content_sha: d023544a8b4ab9a3
 
 Описание метода
 
- Метод доступен по
+ Метод [доступен](./api-information#tag/authorization/Pravila-ispolzovaniya-tokenov-dostupa-k-API) по
  Персональному токену, 
  Сервисному токену
 

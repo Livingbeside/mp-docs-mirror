@@ -9,7 +9,7 @@ tags:
 spec_version: general
 source: "https://dev.wildberries.ru/docs/openapi/api-information"
 deprecated: false
-content_sha: bfed94e234b3c006
+content_sha: 80813101b5c5cd11
 ---
 
 # Получить информацию об опциях Конструктора тарифов
@@ -18,9 +18,9 @@ content_sha: bfed94e234b3c006
 
 Описание метода
 
- Информацию об опциях Конструктора тарифов можно получить с токеном любой категории
+ Информацию об опциях Конструктора тарифов можно получить с токеном любой [категории](./api-information#tag/authorization/Kategorii-tokenov)
 
- Метод доступен по
+ Метод [доступен](./api-information#tag/authorization/Pravila-ispolzovaniya-tokenov-dostupa-k-API) по
  Сервисному токену
 
 Метод возвращает информацию обо всех опциях и пакетах опций, которые продавец подключил в [Конструкторе тарифов](https://seller.wildberries.ru/tariff-constructor).

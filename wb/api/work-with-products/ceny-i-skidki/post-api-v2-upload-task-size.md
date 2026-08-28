@@ -9,7 +9,7 @@ tags:
 spec_version: items
 source: "https://dev.wildberries.ru/docs/openapi/work-with-products"
 deprecated: false
-content_sha: 8bddc219ade0ca5b
+content_sha: b39c7481a6925285
 ---
 
 # Установить цены для размеров
@@ -24,7 +24,7 @@ content_sha: 8bddc219ade0ca5b
 
 Чтобы установить цены и скидки для самих товаров, используйте [отдельный метод](./work-with-products#tag/Ceny-i-skidki/paths/~1api~1v2~1upload~1task/post).
 
- Получить информацию о процессе установки цен и скидок можно с помощью методов состояния и детализации обработанной загрузки.
+ Получить информацию о процессе установки цен и скидок можно с помощью методов [состояния](./work-with-products#tag/Ceny-i-skidki/paths/~1api~1v2~1history~1tasks/get) и [детализации](./work-with-products#tag/Ceny-i-skidki/paths/~1api~1v2~1history~1goods~1task/get) обработанной загрузки.
 
 Лимит запросов на один аккаунт продавца для всех методов категории Цены и скидки:
 

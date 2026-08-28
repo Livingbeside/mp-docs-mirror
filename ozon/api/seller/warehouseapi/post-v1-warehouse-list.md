@@ -9,14 +9,14 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: 2f88525ac322f11c
+content_sha: b3c8e0272dcc720d
 ---
 
 # Список складов
 
 `POST /v1/warehouse/list`
 
-Метод устаревает и будет отключён 7 апреля 2026 года. Переключитесь на /v2/warehouse/list.
+Метод устаревает и будет отключён 7 апреля 2026 года. Переключитесь на [/v2/warehouse/list](#operation/WarehouseListV2).
 
 Возвращает список складов FBS и rFBS. Чтобы получить список складов FBO, используйте метод [/v1/cluster/list](#operation/SupplyDraftAPI_DraftClusterList).
 

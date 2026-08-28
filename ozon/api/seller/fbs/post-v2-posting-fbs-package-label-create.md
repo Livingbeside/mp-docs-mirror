@@ -9,14 +9,14 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: 6c3a68c5d4cf23a0
+content_sha: 08fb06d1d76c0534
 ---
 
 # Создать задание на формирование этикеток
 
 `POST /v2/posting/fbs/package-label/create`
 
-Если вы работаете по схеме rFBS или rFBS Express, изучите процесс печати этикетки в Базе знаний продавца.
+Если вы работаете по схеме rFBS или rFBS Express, изучите процесс печати этикетки в [Базе знаний продавца](https://seller-edu.ozon.ru/rfbs/scheme-of-work).
 
 Метод для создания задания на асинхронное формирование этикеток для отправлений в статусе «Ожидает отгрузки» — `awaiting_deliver`.
 Метод может вернуть несколько заданий: на формирование маленькой и большой этикетки.

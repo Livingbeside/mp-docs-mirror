@@ -4,12 +4,12 @@ api: wb-promotion
 spec_version: promotion
 operations: 39
 source: "https://dev.wildberries.ru/docs/openapi/promotion"
-content_sha: ec700a4a12f58761
+content_sha: 07c9af3ae2b19d80
 ---
 
 # Маркетинг и продвижение
 
-Узнать больше о маркетинге и продвижении можно в справочном центре
+Узнать больше о маркетинге и продвижении можно в [справочном центре](https://seller.wildberries.ru/instructions/category/59d92bd3-6ea0-40f2-b762-ca8835d7d42e?goBackOption=prevRoute&categoryId=479385c6-de01-4b4d-ad4e-ed941e65582e)
 
 Методы маркетинга и продвижения позволяют:
  1. Получать информацию о кампаниях [продвижения](./promotion#tag/campaigns) и [медиакампаниях](./promotion#tag/media)
@@ -22,7 +22,7 @@ content_sha: ec700a4a12f58761
 
 Вы можете протестировать методы продвижения в [песочнице](/sandbox). Также в песочнице доступны [специальные методы](/docs/openapi-other/sandbox-environment#tag/Prodvizhenie) для управления тестовым балансом
 
-Версия спеки: `promotion` · методов: **39**
+Версия спеки: `promotion` · методов: **39** · разделов справки: **9**
 
 Источник: https://dev.wildberries.ru/docs/openapi/promotion
 

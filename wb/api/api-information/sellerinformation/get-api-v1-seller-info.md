@@ -9,7 +9,7 @@ tags:
 spec_version: general
 source: "https://dev.wildberries.ru/docs/openapi/api-information"
 deprecated: false
-content_sha: ba5dc3fb2727be96
+content_sha: dc2fed12f9de6782
 ---
 
 # Получить информацию о продавце
@@ -18,7 +18,7 @@ content_sha: ba5dc3fb2727be96
 
 Описание метода
 
- Информацию о продавце можно получить с токеном любой категории
+ Информацию о продавце можно получить с токеном любой [категории](./api-information#tag/authorization/Kategorii-tokenov)
 
 Метод позволяет получать наименование продавца и ID его профиля.
 

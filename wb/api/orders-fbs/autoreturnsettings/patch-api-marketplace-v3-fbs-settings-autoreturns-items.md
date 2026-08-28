@@ -9,7 +9,7 @@ tags:
 spec_version: order
 source: "https://dev.wildberries.ru/docs/openapi/orders-fbs"
 deprecated: false
-content_sha: 6786bdea07b51204
+content_sha: 3bc5e9778ab64aac
 ---
 
 # Обновить настройки автовозврата товаров
@@ -18,7 +18,7 @@ content_sha: 6786bdea07b51204
 
 Описание метода
 
- Метод доступен по
+ Метод [доступен](./api-information#tag/authorization/Pravila-ispolzovaniya-tokenov-dostupa-k-API) по
  Персональному токену
 
 Метод устанавливает настройки автовозврата малогабаритных товаров — `"cargoType":1`.

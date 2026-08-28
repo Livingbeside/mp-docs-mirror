@@ -9,7 +9,7 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: b1df9d965f33c26c
+content_sha: 1f9e8fc45a46eab8
 ---
 
 # Список методов доставки и отгрузок
@@ -20,7 +20,7 @@ content_sha: b1df9d965f33c26c
 
 Используйте метод, чтобы получить список созданных отгрузок для метода доставки и их статусы. 
 
- 20 марта 2026 года отключим метод. Переключитесь на /v2/carriage/delivery/list.
+ 20 марта 2026 года отключим метод. Переключитесь на [/v2/carriage/delivery/list](#operation/CarriageAPI_CarriageDeliveryListV2).
 
 ## Параметры
 

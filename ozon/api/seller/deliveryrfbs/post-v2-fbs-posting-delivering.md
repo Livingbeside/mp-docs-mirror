@@ -9,14 +9,14 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: c3d31c0ca7216294
+content_sha: 8d40c686fd4f68f8
 ---
 
 # Изменить статус на «Доставляется»
 
 `POST /v2/fbs/posting/delivering`
 
-Перед изменением статуса проверьте текущий статус отправления методом /v3/posting/fbs/get. Изменение статуса происходит асинхронно.
+Перед изменением статуса проверьте текущий статус отправления методом [/v3/posting/fbs/get](#operation/PostingAPI_GetFbsPostingV3). Изменение статуса происходит асинхронно.
 
 Перевести отправление в статус «Доставляется», если используется сторонняя служба доставки.
 

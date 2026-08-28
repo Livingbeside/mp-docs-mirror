@@ -9,14 +9,14 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: f018e500bd894ea6
+content_sha: f0be76cf5a2811c2
 ---
 
 # Список транзакций
 
 `POST /v3/finance/transaction/list`
 
-Метод устаревает и будет отключён 8 сентября 2026 года. Переключитесь на /v1/finance/accrual/postings, /v1/finance/accrual/types, /v1/finance/accrual/by-day.
+Метод устаревает и будет отключён 8 сентября 2026 года. Переключитесь на [/v1/finance/accrual/postings](#operation/GetFinanceAccrualPostings), [/v1/finance/accrual/types](#operation/GetFinanceAccrualTypes), [/v1/finance/accrual/by-day](#operation/GetFinanceAccrualByDay).
 
 Используйте метод с последовательной отправкой запросов.
 

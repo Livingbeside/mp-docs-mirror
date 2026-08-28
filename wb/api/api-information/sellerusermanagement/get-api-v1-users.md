@@ -9,7 +9,7 @@ tags:
 spec_version: general
 source: "https://dev.wildberries.ru/docs/openapi/api-information"
 deprecated: false
-content_sha: 6f9572c3987aad7b
+content_sha: 0e8067e6eb2c868b
 ---
 
 # Получить список активных или приглашённых пользователей продавца
@@ -18,7 +18,7 @@ content_sha: 6f9572c3987aad7b
 
 Описание метода
 
- Метод доступен по
+ Метод [доступен](./api-information#tag/authorization/Pravila-ispolzovaniya-tokenov-dostupa-k-API) по
  Персональному токену
 
 Метод возвращает список активных или приглашённых пользователей профиля продавца.

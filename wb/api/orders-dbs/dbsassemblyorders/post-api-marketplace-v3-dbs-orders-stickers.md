@@ -9,7 +9,7 @@ tags:
 spec_version: dbs
 source: "https://dev.wildberries.ru/docs/openapi/orders-dbs"
 deprecated: false
-content_sha: 7372b9b3449cfd76
+content_sha: f2ac7e2a8eadcdcf
 ---
 
 # Получить стикеры для сборочных заданий с доставкой в ПВЗ
@@ -18,7 +18,7 @@ content_sha: 7372b9b3449cfd76
 
 Описание метода
 
- Метод доступен по
+ Метод [доступен](./api-information#tag/authorization/Pravila-ispolzovaniya-tokenov-dostupa-k-API) по
  Персональному токену, 
  Сервисному токену, 
  Базовому токену с секретом
