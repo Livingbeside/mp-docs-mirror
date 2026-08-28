@@ -9,7 +9,7 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: 992f9c191e7ca5d2
+content_sha: 46f60239675d835d
 ---
 
 # Обновить первую милю
@@ -30,8 +30,8 @@ content_sha: 992f9c191e7ca5d2
 - `cut_in_time` — integer<int64> **обязательный**. Время на приём заказов в минутах. Например, если вы передадите `3000`, приём заказов будет завершён через 50 часов с момента передачи.
 - `drop_off_point_id` — integer<int64>. Идентификатор drop-off пункта. Если `first_mile_type = DROP_OFF`, параметр обязательный.
 - `first_mile_type` — string (PICK_UP, DROP_OFF) **обязательный**. Тип первой мили: - `PICK_UP` — отгрузка заказов курьеру; - `DROP_OFF` — отгрузка заказов в пункт приёма.
-- `timeslot_id` — integer<int64> **обязательный**. Идентификатор таймслота.
 - `return_point_id` — integer<int64>. Идентификатор пункта возврата. Получите значение параметра методом [/v1/warehouse/fbs/update/return-point/list](#operation/WarehouseFBSUpdateReturnPointList).
+- `timeslot_id` — integer<int64> **обязательный**. Идентификатор таймслота.
 - `warehouse_id` — integer<int64> **обязательный**. Идентификатор склада.
 
 ## Ответы

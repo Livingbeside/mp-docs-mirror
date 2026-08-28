@@ -1,5 +1,5 @@
 ---
-title: Получить товары в карантине{{ /api/v2/quarantine/goods }}
+title: Получить товары в карантине
 api: wb-work-with-products
 method: GET
 path: /api/v2/quarantine/goods
@@ -9,14 +9,35 @@ tags:
 spec_version: items
 source: "https://dev.wildberries.ru/docs/openapi/work-with-products"
 deprecated: false
-content_sha: 0e67b0d217953c56
+content_sha: 345384ee910a76c6
 ---
 
-# Получить товары в карантине{{ /api/v2/quarantine/goods }}
+# Получить товары в карантине
 
 `GET /api/v2/quarantine/goods`
 
-Описание метода Метод возвращает информацию о товарах в карантине. Если новая цена товара со скидкой будет минимум в 3 раза меньше старой, товар попадёт в [карантин](https://seller.wildberries.ru/instructions/ru/ru/material/price-quarantine) и будет продаваться по старой цене. Ошибка об этом будет в ответах методов [состояний загрузок](./work-with-products#tag/Ceny-i-skidki/paths/~1api~1v2~1history~1tasks/get). Вы можете изменить цену или скидку с помощью API либо вывести товар из карантина в [личном кабинете](https://seller.wildberries.ru/discount-and-prices/quarantine). Для товаров с [поразмерной установкой цен](./work-with-products#tag/Ceny-i-skidki/paths/~1api~1v2~1upload~1task~1size/post) карантин не применяется. В [песочнице](/sandbox) товары автоматически удаляются из карантина через 3 дня. Лимит запросов на один аккаунт продавца для всех методов категории Цены и скидки : | Тип | Период | Лимит | Интервал | Всплеск | | --- | --- | --- | --- | --- | | Персональный | 6 сек | 10 запросов | 600 мс | 5 запросов | | Сервисный | 6 сек | 10 запросов | 600 мс | 5 запросов | | Базовый с секретом | 6 сек | 10 запросов | 600 мс | 5 запросов | | Базовый | 1 ч | 4 запроса | 15 мин | 1 запрос | В песочнице — максимум 1 запрос в секунду суммарно для всех методов Контента .
+Описание метода
+
+Метод возвращает информацию о товарах в карантине.
+
+Если новая цена товара со скидкой будет минимум в 3 раза меньше старой, товар попадёт в [карантин](https://seller.wildberries.ru/instructions/ru/ru/material/price-quarantine) и будет продаваться по старой цене. Ошибка об этом будет в ответах методов [состояний загрузок](./work-with-products#tag/Ceny-i-skidki/paths/~1api~1v2~1history~1tasks/get).
+
+Вы можете изменить цену или скидку с помощью API либо вывести товар из карантина в [личном кабинете](https://seller.wildberries.ru/discount-and-prices/quarantine).
+
+Для товаров с [поразмерной установкой цен](./work-with-products#tag/Ceny-i-skidki/paths/~1api~1v2~1upload~1task~1size/post) карантин не применяется.
+
+В [песочнице](/sandbox) товары автоматически удаляются из карантина через 3 дня.
+
+Лимит запросов на один аккаунт продавца для всех методов категории Цены и скидки:
+
+| Тип | Период | Лимит | Интервал | Всплеск |
+| --- | --- | --- | --- | --- |
+| Персональный | 6 сек | 10 запросов | 600 мс | 5 запросов |
+| Сервисный | 6 сек | 10 запросов | 600 мс | 5 запросов |
+| Базовый с секретом | 6 сек | 10 запросов | 600 мс | 5 запросов |
+| Базовый | 1 ч | 4 запроса | 15 мин | 1 запрос |
+
+В песочнице — максимум 1 запрос в секунду суммарно для всех методов Контента.
 
 ## Параметры
 
@@ -31,15 +52,15 @@ content_sha: 0e67b0d217953c56
 
 - `data` — object. Данные ответа
   - `quarantineGoods` — array[object]. Информация о товарах в карантине
+    - `currencyIsoCode4217` — string. Валюта по стандарту ISO 4217
+    - `newDiscount` — integer. Новая скидка продавца, %
+    - `newPrice` — number<float>. Новая цена продавца до скидки
     - `nmID` — integer. Артикул WB
+    - `oldDiscount` — integer. Текущая скидка продавца, %
+    - `oldPrice` — number<float>. Текущая цена продавца до скидки
+    - `priceDiff` — number<float>. Разница: `newPrice` * (1 - `newDiscount` / 100) - `oldPrice` * (1 - `oldDiscount` / 100)
     - `sizeID` — integer. Не используется
     - `techSizeName` — string. Не используется
-    - `currencyIsoCode4217` — string. Валюта по стандарту ISO 4217
-    - `newPrice` — number<float>. Новая цена продавца до скидки
-    - `oldPrice` — number<float>. Текущая цена продавца до скидки
-    - `newDiscount` — integer. Новая скидка продавца, %
-    - `oldDiscount` — integer. Текущая скидка продавца, %
-    - `priceDiff` — number<float>. Разница: `newPrice` * (1 - `newDiscount` / 100) - `oldPrice` * (1 - `oldDiscount` / 100)
 - `error` — boolean. Флаг ошибки
 - `errorText` — string. Текст ошибки
 
@@ -51,19 +72,19 @@ content_sha: 0e67b0d217953c56
 
 **401** — Не авторизован
 
-- `title` — string. Заголовок ошибки
-- `detail` — string. Детали ошибки
 - `code` — string. Внутренний код ошибки
-- `requestId` — string. Уникальный ID запроса
+- `detail` — string. Детали ошибки
 - `origin` — string. ID внутреннего сервиса WB
+- `requestId` — string. Уникальный ID запроса
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
+- `title` — string. Заголовок ошибки
 
 **402** — Требуется платёж
 
-- `title` — string. Заголовок ошибки
 - `detail` — string. Детали ошибки. Ошибка возвращается только сервисам из [Каталога решений для бизнеса](/business-solutions)
+- `title` — string. Заголовок ошибки
 
 **403** — Доступ запрещён
 
@@ -79,11 +100,11 @@ content_sha: 0e67b0d217953c56
 
 **429** — Слишком много запросов
 
-- `title` — string. Заголовок ошибки
-- `detail` — string. Детали ошибки
 - `code` — string. Внутренний код ошибки
-- `requestId` — string. Уникальный ID запроса
+- `detail` — string. Детали ошибки
 - `origin` — string. ID внутреннего сервиса WB
+- `requestId` — string. Уникальный ID запроса
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
+- `title` — string. Заголовок ошибки

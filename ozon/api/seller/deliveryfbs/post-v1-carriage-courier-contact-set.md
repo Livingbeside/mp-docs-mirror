@@ -9,14 +9,15 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: b31ef54fc5349102
+content_sha: 7d55454e4d95a84b
 ---
 
 # Добавить или обновить контактные данные продавца для курьера
 
 `POST /v1/carriage/courier-contact/set`
 
-Используйте метод, чтобы добавить или обновить контактные данные продавца, которые передаются курьеру для перевозок с `first_mile_type = pickup` и `integration_type = ozon_outsourced`. Получите значения параметров `first_mile_type` и `integration_type` в ответе метода [/v1/carriage/get](#operation/CarriageGet).
+Используйте метод, чтобы добавить или обновить контактные данные продавца, которые передаются курьеру для перевозок с `first_mile_type = pickup` и `integration_type = ozon_outsourced`.
+Получите значения параметров `first_mile_type` и `integration_type` в ответе метода [/v1/carriage/get](#operation/CarriageGet).
 
 ## Параметры
 
@@ -30,9 +31,9 @@ content_sha: b31ef54fc5349102
 **Тело запроса** (`application/json`):
 
 - `carriage_id` — integer<int64> **обязательный**. Идентификатор перевозки.
+- `comment` — string. Комментарий для курьера.
 - `phone` — string **обязательный**. Телефон продавца.
 - `wechat_nickname` — string. WeChat продавца.
-- `comment` — string. Комментарий для курьера.
 
 ## Ответы
 

@@ -9,14 +9,18 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: 5ca39c263e333298
+content_sha: 8425068e18ea7ecc
 ---
 
 # Информация о количестве товаров
 
 `POST /v4/product/info/stocks`
 
-Возвращает информацию о ĸоличестве товаров по схемам FBO, FBS, rFBS и FBP: - сĸольĸо единиц есть в наличии, - сĸольĸо зарезервировано поĸупателями. Чтобы получить аналитику по остаткам по схеме FBO, используйте метод [/v1/analytics/stocks](#operation/AnalyticsAPI_AnalyticsStocks).
+Возвращает информацию о ĸоличестве товаров по схемам FBO, FBS, rFBS и FBP:
+ - сĸольĸо единиц есть в наличии,
+ - сĸольĸо зарезервировано поĸупателями.
+
+Чтобы получить аналитику по остаткам по схеме FBO, используйте метод [/v1/analytics/stocks](#operation/AnalyticsAPI_AnalyticsStocks).
 
 ## Параметры
 

@@ -9,7 +9,7 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: 98798fb1970223d5
+content_sha: fbd71ad428dee837
 ---
 
 # Отчёт о возвратах
@@ -30,9 +30,9 @@ content_sha: 98798fb1970223d5
 **Тело запроса** (`application/json`):
 
 - `filter` — object **обязательный**. Фильтр.
-  - `delivery_schema` — string (FBS, FBO, ALL). Фильтр по схеме работы: - `FBS` — возвраты на свой склад. - `FBO` — возвраты на склад маркетплейса. - `ALL` — все возвраты.
   - `date_from` — string<date-time> **обязательный**. Дата, с которой данные отображаются в отчёте. Доступно только за последние три месяца.
   - `date_to` — string<date-time> **обязательный**. Дата, по которую данные отображаются в отчёте. Доступно только за последние три месяца.
+  - `delivery_schema` — string (FBS, FBO, ALL). Фильтр по схеме работы: - `FBS` — возвраты на свой склад. - `FBO` — возвраты на склад маркетплейса. - `ALL` — все возвраты.
   - `status` — string (DisputeOpened, OnSellerApproval, ArrivedAtReturnPlace, OnSellerClarification, OnSellerClarificationAfterPartialCompensation, OfferedPartialCompensation, ReturnMoneyApproved, PartialCompensationReturned, CancelledDisputeNotOpen, Rejected, CrmRejected, Cancelled…) **обязательный**. Фильтр по статусу возврата: - `DisputeOpened` — открыт спор с покупателем; - `OnSellerApproval` — на согласовании у продавца; - `ArrivedAtReturnPlace` — в пункте выдачи; - `OnSellerClarification` — на уточнении у продавца; - `OnSellerClarificationAfterPartialCompensation` — на уточнении у продавца после частичной компенсации; - `OfferedPartialCompensation` — предложена частичная компенсация; - `ReturnMoneyApproved` — одобрен возврат денег; - `PartialCompensationReturned` — вернули часть денег; - `CancelledDisputeNotOpen` — возврат отклонён, спор не открыт; - `Rejected` — заявка отклонена; - `CrmRejected` — заявка отклонена Ozon; - `Cancelled` — заявка отменена; - `Approved` — заявка одобрена продавцом; - `ApprovedByOzon` — заявка одобрена Ozon; - `ReceivedBySeller` — продавец получил возврат; - `MovingToSeller` — возврат на пути к продавцу; - `ReturnCompensated` — продавец получил компенсацию; - `ReturningToSellerByCourier` — курьер везёт возврат продавцу; - `Utilizing` — на утилизации; - `Utilized` — утилизирован; - `MoneyReturned` — покупателю вернули всю сумму; - `PartialCompensationInProcess` — одобрен частичный возврат денег; - `DisputeYouOpened` — продавец открыл спор; - `CompensationRejected` — отказано в компенсации; - `DisputeOpening` — обращение в поддержку отправлено; - `CompensationOffered` — ожидает вашего решения по компенсации; - `WaitingCompensation` — ожидает компенсации; - `SendingError` — ошибка при отправке обращения в поддержку; - `CompensationRejectedBySla` — истёк срок решения; - `CompensationRejectedBySeller` — продавец отказался от компенсации; - `MovingToOzon` — едет на склад Ozon; - `ReturnedToOzon` — на складе Ozon; - `MoneyReturnedBySystem` — быстрый возврат; - `WaitingShipment` — ожидает отправки.
 - `language` — string. Язык ответа: - `RU` — русский, - `EN` — английский. По умолчанию: `DEFAULT`.
 

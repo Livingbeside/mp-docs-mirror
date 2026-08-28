@@ -9,14 +9,20 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: b78cd9785a3fa851
+content_sha: 7d37ae8ea34d9c27
 ---
 
 # Отменить отправление
 
 `POST /v2/posting/fbs/cancel`
 
-Меняет статус отправления на `cancelled`. Перед началом работы проверьте причины отмены для конкретного отправления методом [/v1/posting/fbs/cancel-reason](#operation/PostingAPI_GetPostingFbsCancelReasonV1). Условно-доставленные отправления отменить нельзя. Если значение параметра `cancel_reason_id` — 402, заполните поле `cancel_reason_message`.
+Меняет статус отправления на `cancelled`.
+
+Перед началом работы проверьте причины отмены для конкретного отправления методом [/v1/posting/fbs/cancel-reason](#operation/PostingAPI_GetPostingFbsCancelReasonV1).
+
+Условно-доставленные отправления отменить нельзя.
+
+Если значение параметра `cancel_reason_id` — 402, заполните поле `cancel_reason_message`.
 
 ## Параметры
 

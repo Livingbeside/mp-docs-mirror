@@ -9,14 +9,29 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: ceb8a3f327ffabe0
+content_sha: 2ff21947a5afd351
 ---
 
 # Получить список необработанных отправлений
 
 `POST /v4/posting/fbs/unfulfilled/list`
 
-Возвращает список необработанных отправлений за указанный период времени — он должен быть не больше одного года. Возможные статусы отправлений: - `awaiting_registration` — ожидает регистрации; - `acceptance_in_progress` — идёт приёмка; - `awaiting_approve` — ожидает подтверждения; - `awaiting_packaging` — ожидает упаковки; - `awaiting_deliver` — ожидает отгрузки; - `arbitration` — арбитраж; - `client_arbitration` — клиентский арбитраж доставки; - `delivering` — доставляется; - `driver_pickup` — у водителя; - `cancelled` — отменено; - `not_accepted` — не принято на сортировочном центре. Чтобы получать актуальную дату отгрузки, регулярно обновляйте информацию об отправлениях или подключите [пуш-уведомления](#tag/push_start).
+Возвращает список необработанных отправлений за указанный период времени — он должен быть не больше одного года.
+
+Возможные статусы отправлений:
+- `awaiting_registration` — ожидает регистрации;
+- `acceptance_in_progress` — идёт приёмка;
+- `awaiting_approve` — ожидает подтверждения;
+- `awaiting_packaging` — ожидает упаковки;
+- `awaiting_deliver` — ожидает отгрузки;
+- `arbitration` — арбитраж;
+- `client_arbitration` — клиентский арбитраж доставки;
+- `delivering` — доставляется;
+- `driver_pickup` — у водителя;
+- `cancelled` — отменено;
+- `not_accepted` — не принято на сортировочном центре.
+
+Чтобы получать актуальную дату отгрузки, регулярно обновляйте информацию об отправлениях или подключите [пуш-уведомления](#tag/push_start).
 
 ## Параметры
 
@@ -87,6 +102,12 @@ content_sha: ceb8a3f327ffabe0
     - `cancellation_initiator` — string. Инициатор отмены: - `Продавец`, - `Клиент`, - `Покупатель`, - `Ozon`, - `Система`, - `Служба доставки`.
     - `cancellation_type` — string. Тип отмены: - `seller` — отменено продавцом; - `client` или `customer` — отменено покупателем; - `ozon` — отменено Ozon; - `system` — отменено системой; - `delivery` — отменено службой доставки.
     - `cancelled_after_ship` — boolean. `true`, если отмена произошла после сборки отправления.
+  - `container` — object. Информация о грузоместе.
+    - `cargo_type` — string (BOX, PALLET). Тип грузоместа: - `BOX` — коробка; - `PALLET` — палета. По умолчанию: `BOX`.
+    - `container_date` — string. Дата создания грузоместа в часовом поясе склада.
+    - `container_id` — integer<int64>. Идентификатор грузоместа.
+    - `container_number` — integer<int32>. Порядковый номер грузоместа.
+  - `container_sort_type` — string. Тип сортировки грузоместа: - `SORT` — сортируемый; - `NON-SORT` — несортируемый.
   - `customer` — object. Информация о покупателе.
     - `address` — object. Информация об адресе доставки.
       - `address_tail` — string. Адрес в текстовом формате.
@@ -104,12 +125,6 @@ content_sha: ceb8a3f327ffabe0
     - `customer_id` — integer<int64>. Идентификатор покупателя.
     - `name` — string. Имя покупателя.
     - `phone` — string. Подменный контактный телефон покупателя.
-  - `container` — object. Информация о грузоместе.
-    - `cargo_type` — string (BOX, PALLET). Тип грузоместа: - `BOX` — коробка; - `PALLET` — палета. По умолчанию: `BOX`.
-    - `container_date` — string. Дата создания грузоместа в часовом поясе склада.
-    - `container_id` — integer<int64>. Идентификатор грузоместа.
-    - `container_number` — integer<int32>. Порядковый номер грузоместа.
-  - `container_sort_type` — string. Тип сортировки грузоместа: - `SORT` — сортируемый; - `NON-SORT` — несортируемый.
   - `delivering_date` — string<date-time>. Дата передачи отправления в доставку.
   - `delivery_method` — object. Информация о способе доставки.
     - `id` — integer<int64>. Идентификатор способа доставки.

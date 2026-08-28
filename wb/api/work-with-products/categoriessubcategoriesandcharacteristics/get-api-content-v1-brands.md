@@ -1,5 +1,5 @@
 ---
-title: Бренды{{ /api/content/v1/brands }}
+title: Бренды
 api: wb-work-with-products
 method: GET
 path: /api/content/v1/brands
@@ -9,14 +9,25 @@ tags:
 spec_version: items
 source: "https://dev.wildberries.ru/docs/openapi/work-with-products"
 deprecated: false
-content_sha: 01cae6b79410f8ef
+content_sha: 01eacc566d031fac
 ---
 
-# Бренды{{ /api/content/v1/brands }}
+# Бренды
 
 `GET /api/content/v1/brands`
 
-Описание метода Метод возвращает список брендов по ID предмета. Лимит запросов на один аккаунт продавца: | Тип | Период | Лимит | Интервал | Всплеск | | --- | --- | --- | --- | --- | | Персональный | 1 сек | 1 запрос | 1 сек | 5 запросов | | Сервисный | 1 сек | 1 запрос | 1 сек | 5 запросов | | Базовый с секретом | 1 сек | 1 запрос | 1 сек | 5 запросов | | Базовый | 1 ч | 1 запрос | 1 ч | 1 запрос |
+Описание метода
+
+Метод возвращает список брендов по ID предмета.
+
+Лимит запросов на один аккаунт продавца:
+
+| Тип | Период | Лимит | Интервал | Всплеск |
+| --- | --- | --- | --- | --- |
+| Персональный | 1 сек | 1 запрос | 1 сек | 5 запросов |
+| Сервисный | 1 сек | 1 запрос | 1 сек | 5 запросов |
+| Базовый с секретом | 1 сек | 1 запрос | 1 сек | 5 запросов |
+| Базовый | 1 ч | 1 запрос | 1 ч | 1 запрос |
 
 ## Параметры
 
@@ -38,44 +49,44 @@ content_sha: 01cae6b79410f8ef
 
 **400** — Неправильный запрос
 
-- `title` — string **обязательный**. Заголовок ошибки
 - `detail` — string **обязательный**. Детали ошибки
+- `errors` — array[object]
+  - `location` — string. Параметр, где произошла ошибка
+  - `message` — string. Текст ошибки
+  - `value` — ?. Значение параметра, где произошла ошибка
 - `origin` — string **обязательный**. ID внутреннего сервиса WB
 - `requestId` — string **обязательный**. Уникальный ID запроса
-- `errors` — array[object]
-  - `message` — string. Текст ошибки
-  - `location` — string. Параметр, где произошла ошибка
-  - `value` — ?. Значение параметра, где произошла ошибка
+- `title` — string **обязательный**. Заголовок ошибки
 
 **401** — Не авторизован
 
-- `title` — string. Заголовок ошибки
-- `detail` — string. Детали ошибки
 - `code` — string. Внутренний код ошибки
-- `requestId` — string. Уникальный ID запроса
+- `detail` — string. Детали ошибки
 - `origin` — string. ID внутреннего сервиса WB
+- `requestId` — string. Уникальный ID запроса
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
+- `title` — string. Заголовок ошибки
 
 **404** — Не найдено
 
-- `title` — string **обязательный**. Заголовок ошибки
 - `detail` — string **обязательный**. Детали ошибки
+- `errors` — array[object]
+  - `location` — string. Параметр, где произошла ошибка
+  - `message` — string. Текст ошибки
+  - `value` — ?. Значение параметра, где произошла ошибка
 - `origin` — string **обязательный**. ID внутреннего сервиса WB
 - `requestId` — string **обязательный**. Уникальный ID запроса
-- `errors` — array[object]
-  - `message` — string. Текст ошибки
-  - `location` — string. Параметр, где произошла ошибка
-  - `value` — ?. Значение параметра, где произошла ошибка
+- `title` — string **обязательный**. Заголовок ошибки
 
 **429** — Слишком много запросов
 
-- `title` — string. Заголовок ошибки
-- `detail` — string. Детали ошибки
 - `code` — string. Внутренний код ошибки
-- `requestId` — string. Уникальный ID запроса
+- `detail` — string. Детали ошибки
 - `origin` — string. ID внутреннего сервиса WB
+- `requestId` — string. Уникальный ID запроса
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
+- `title` — string. Заголовок ошибки

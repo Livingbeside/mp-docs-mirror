@@ -9,7 +9,7 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: 098414fc0b796adb
+content_sha: 3c203a66b4db8664
 ---
 
 # Список отправлений в акте
@@ -36,19 +36,19 @@ content_sha: 098414fc0b796adb
 **200** — Список отправлений
 
 - `result` — array[object]. Информация об отправлениях.
+  - `created_at` — string<date-time>. Дата и время создания записи об отправлении.
   - `id` — integer<int64>. Идентификатор акта.
   - `multi_box_qty` — integer<int32>. Количество коробок, в которые упакован товар.
   - `posting_number` — string. Номер отправления.
-  - `status` — string. Статус отправления.
-  - `seller_error` — string. Расшифровка кода ошибки.
-  - `updated_at` — string<date-time>. Дата и время обновления записи об отправлении.
-  - `created_at` — string<date-time>. Дата и время создания записи об отправлении.
   - `products` — array[object]. Список товаров в отправлении.
     - `name` — string. Название товара.
     - `offer_id` — string. Идентификатор товара в системе продавца — артикул.
     - `price` — string. Цена товара.
     - `quantity` — integer<int32>. Количество товара в отправлении.
     - `sku` — integer<int64>. Идентификатор товара в системе Ozon — SKU.
+  - `seller_error` — string. Расшифровка кода ошибки.
+  - `status` — string. Статус отправления.
+  - `updated_at` — string<date-time>. Дата и время обновления записи об отправлении.
 
 **400** — Неверный параметр
 

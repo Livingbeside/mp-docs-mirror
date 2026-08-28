@@ -1,5 +1,5 @@
 ---
-title: Установить рекомендации для товаров{{ /api/content/v1/recommendations/set }}
+title: Установить рекомендации для товаров
 api: wb-work-with-products
 method: POST
 path: /api/content/v1/recommendations/set
@@ -9,14 +9,26 @@ tags:
 spec_version: items
 source: "https://dev.wildberries.ru/docs/openapi/work-with-products"
 deprecated: false
-content_sha: 18b26676e26217f2
+content_sha: 317a36070611b4b8
 ---
 
-# Установить рекомендации для товаров{{ /api/content/v1/recommendations/set }}
+# Установить рекомендации для товаров
 
 `POST /api/content/v1/recommendations/set`
 
-Описание метода Метод доступен по Персональному токену, Сервисному токену Метод обновляет, добавляет или удаляет [рекомендации](https://seller.wildberries.ru/recommendations-v3) для товаров. Лимит запросов на один аккаунт продавца: | Период | Лимит | Интервал | Всплеск | | --- | --- | --- | --- | | 1 мин | 100 запросов | 600 мс | 5 запросов |
+Описание метода
+
+ Метод доступен по
+ Персональному токену, 
+ Сервисному токену
+
+Метод обновляет, добавляет или удаляет [рекомендации](https://seller.wildberries.ru/recommendations-v3) для товаров.
+
+Лимит запросов на один аккаунт продавца:
+
+| Период | Лимит | Интервал | Всплеск |
+| --- | --- | --- | --- |
+| 1 мин | 100 запросов | 600 мс | 5 запросов |
 
 ## Запрос
 
@@ -33,55 +45,55 @@ content_sha: 18b26676e26217f2
 
 **200** — Успешно
 
-- `isError` — boolean **обязательный**. Есть ли ошибки: - `false` — ошибок нет. Запрос полностью успешен - `true` — ошибки есть
 - `errors` — array[object]. Ошибки. При `"isError":true`
   - `mainNm` — string **обязательный**. Значение параметра `nmId`
-  - `recomNm` — string **обязательный**. Значение параметра `recomNm`
   - `message` — string **обязательный**. Сообщение об ошибке
+  - `recomNm` — string **обязательный**. Значение параметра `recomNm`
+- `isError` — boolean **обязательный**. Есть ли ошибки: - `false` — ошибок нет. Запрос полностью успешен - `true` — ошибки есть
 
 **208** — Уже отправлено
 
-- `requestId` — string **обязательный**. ID запроса
-- `origin` — string **обязательный**. ID внутреннего сервиса WB
-- `title` — string **обязательный**. Заголовок ответа
 - `detail` — string **обязательный**. Детали ответа
+- `origin` — string **обязательный**. ID внутреннего сервиса WB
+- `requestId` — string **обязательный**. ID запроса
+- `title` — string **обязательный**. Заголовок ответа
 
 **400** — Неправильный запрос
 
-- `requestId` — string **обязательный**. ID запроса
-- `origin` — string **обязательный**. ID внутреннего сервиса WB
-- `title` — string **обязательный**. Заголовок ошибки
 - `detail` — string **обязательный**. Детали ошибки
+- `origin` — string **обязательный**. ID внутреннего сервиса WB
+- `requestId` — string **обязательный**. ID запроса
+- `title` — string **обязательный**. Заголовок ошибки
 
 **401** — Не авторизован
 
-- `title` — string. Заголовок ошибки
-- `detail` — string. Детали ошибки
 - `code` — string. Внутренний код ошибки
-- `requestId` — string. Уникальный ID запроса
+- `detail` — string. Детали ошибки
 - `origin` — string. ID внутреннего сервиса WB
+- `requestId` — string. Уникальный ID запроса
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
+- `title` — string. Заголовок ошибки
 
 **403** — Доступ запрещён
 
-- `title` — string. Заголовок ошибки
-- `detail` — string. Детали ошибки
 - `code` — string. Внутренний код ошибки
-- `requestId` — string. ID запроса
+- `detail` — string. Детали ошибки
 - `origin` — string. ID внутреннего сервиса WB
+- `requestId` — string. ID запроса
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
+- `title` — string. Заголовок ошибки
 
 **429** — Слишком много запросов
 
-- `title` — string. Заголовок ошибки
-- `detail` — string. Детали ошибки
 - `code` — string. Внутренний код ошибки
-- `requestId` — string. Уникальный ID запроса
+- `detail` — string. Детали ошибки
 - `origin` — string. ID внутреннего сервиса WB
+- `requestId` — string. Уникальный ID запроса
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
+- `title` — string. Заголовок ошибки

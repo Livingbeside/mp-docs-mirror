@@ -9,14 +9,16 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: 901e4e413352246c
+content_sha: dce97b4935e5a3b1
 ---
 
 # Поиск по справочным значениям характеристики
 
 `POST /v1/description-category/attribute/values/search`
 
-Возвращает справочные значения характеристики по заданному значению `value` в запросе. Узнать, есть ли вложенный справочник, можно через метод [/v1/description-category/attribute](#operation/DescriptionCategoryAPI_GetAttributes).
+Возвращает справочные значения характеристики по заданному значению `value` в запросе.
+
+Узнать, есть ли вложенный справочник, можно через метод [/v1/description-category/attribute](#operation/DescriptionCategoryAPI_GetAttributes).
 
 ## Параметры
 

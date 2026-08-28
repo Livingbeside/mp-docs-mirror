@@ -9,14 +9,16 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: 29cd6e4abb9c9122
+content_sha: 0382149ca936da7d
 ---
 
 # Управлять скидкой от количества
 
 `POST /v1/product/stairway-discount/by-quantity/set`
 
-Устанавливает или удаляет скидку на товар в зависимости от его количества в заказе. Вы можете оставить обратную связь о работе метода в [комментариях](https://dev.ozon.ru/community/1719-Novye-metody-dlia-raboty-so-skidkoi-ot-kolichestva/) в сообществе разработчиков Ozon for dev.
+Устанавливает или удаляет скидку на товар в зависимости от его количества в заказе.
+
+Вы можете оставить обратную связь о работе метода в [комментариях](https://dev.ozon.ru/community/1719-Novye-metody-dlia-raboty-so-skidkoi-ot-kolichestva/) в сообществе разработчиков Ozon for dev.
 
 ## Параметры
 

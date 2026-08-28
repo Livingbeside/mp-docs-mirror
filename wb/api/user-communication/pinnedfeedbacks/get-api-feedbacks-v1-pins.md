@@ -1,5 +1,5 @@
 ---
-title: Список закреплённых и откреплённых отзывов{{ /api/feedbacks/v1/pins }}
+title: Список закреплённых и откреплённых отзывов
 api: wb-user-communication
 method: GET
 path: /api/feedbacks/v1/pins
@@ -9,14 +9,27 @@ tags:
 spec_version: communication
 source: "https://dev.wildberries.ru/docs/openapi/user-communication"
 deprecated: false
-content_sha: 6023bca6126da9a4
+content_sha: 34984caaa60cfe34
 ---
 
-# Список закреплённых и откреплённых отзывов{{ /api/feedbacks/v1/pins }}
+# Список закреплённых и откреплённых отзывов
 
 `GET /api/feedbacks/v1/pins`
 
-Описание метода Метод предоставляет список закреплённых и откреплённых отзывов. Откреплёнными считаются только отзывы, которые были откреплены автоматически по причинам, указанным в ответе в поле `unpinnedCause`. Лимит запросов на один аккаунт продавца для всех методов категории Вопросы и отзывы : | Тип | Период | Лимит | Интервал | Всплеск | | --- | --- | --- | --- | --- | | Персональный | 1 сек | 3 запроса | 333 мс | 6 запросов | | Сервисный | 1 сек | 3 запроса | 333 мс | 6 запросов | | Базовый с секретом | 1 сек | 3 запроса | 333 мс | 6 запросов | | Базовый | 1 ч | 5 запросов | 12 мин | 1 запрос |
+Описание метода
+
+Метод предоставляет список закреплённых и откреплённых отзывов.
+
+Откреплёнными считаются только отзывы, которые были откреплены автоматически по причинам, указанным в ответе в поле `unpinnedCause`.
+
+Лимит запросов на один аккаунт продавца для всех методов категории Вопросы и отзывы:
+
+| Тип | Период | Лимит | Интервал | Всплеск |
+| --- | --- | --- | --- | --- |
+| Персональный | 1 сек | 3 запроса | 333 мс | 6 запросов |
+| Сервисный | 1 сек | 3 запроса | 333 мс | 6 запросов |
+| Базовый с секретом | 1 сек | 3 запроса | 333 мс | 6 запросов |
+| Базовый | 1 ч | 5 запросов | 12 мин | 1 запрос |
 
 ## Параметры
 
@@ -39,12 +52,12 @@ content_sha: 6023bca6126da9a4
 - `data` — object **обязательный**
 - `data` — array[object]
   - `changeStateAt` — string<date-time> **обязательный**. Дата и время закрепления или открепления
+  - `feedbackId` — string **обязательный**. ID отзыва
   - `imtId` — integer **обязательный**. ID для [объединённых](/knowledge-base/articles/019d49a4-1320-71bb-9dac-8ba07e7177ce/rabota-s-tovarami#obuedinenie-i-razuedinenie-kartochek-tovarov) карточек товаров
   - `nmId` — integer **обязательный**. Артикул WB
   - `pinId` — integer **обязательный**. ID операции закрепления отзыва
   - `pinMethod` — string (subscription, tariff) **обязательный**. Метод закрепления: - `subscription` — подписка Джем - `tariff` — тарифная опция
   - `pinOn` — string (imt, nm) **обязательный**. Место закрепления отзыва: - `nm` — карточка товара - `imt` — группа [объединённых](/knowledge-base/articles/019d49a4-1320-71bb-9dac-8ba07e7177ce/rabota-s-tovarami#obuedinenie-i-razuedinenie-kartochek-tovarov) карточек товаров
-  - `feedbackId` — string **обязательный**. ID отзыва
   - `state` — string (pinned, unpinned) **обязательный**. Закреплён ли отзыв: - `pinned` — да - `unpinned` — нет
   - `unpinnedCause` — string (sysTariffUnpinned, sysLimitReached, sysNoratingUnpinned, sysAdditionalSlot). Причина открепления отзыва: - `sysTariffUnpinned` — закончилась подписка или тарифная опция - `sysLimitReached` — закончился общий лимит по подписке - `sysNoratingUnpinned` — отзыв исключён из рейтинга. Например, удалён или забанен - `sysAdditionalSlot` — к карточке или к группе [объединённых](/knowledge-base/articles/019d49a4-1320-71bb-9dac-8ba07e7177ce/rabota-s-tovarami#obuedinenie-i-razuedinenie-kartochek-tovarov) карточек прикреплено максимальное количество отзывов
 - `next` — integer. Параметр пагинации. Укажите это значение в запросе, чтобы получить следующий пакет данных. Если поле отсутствует, вы получили все данные
@@ -59,27 +72,27 @@ content_sha: 6023bca6126da9a4
 
 **401** — Не авторизован
 
-- `title` — string. Заголовок ошибки
-- `detail` — string. Детали ошибки
 - `code` — string. Внутренний код ошибки
-- `requestId` — string. Уникальный ID запроса
+- `detail` — string. Детали ошибки
 - `origin` — string. ID внутреннего сервиса WB
+- `requestId` — string. Уникальный ID запроса
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
+- `title` — string. Заголовок ошибки
 
 **402** — Требуется платёж
 
-- `title` — string. Заголовок ошибки
 - `detail` — string. Детали ошибки. Ошибка возвращается только сервисам из [Каталога решений для бизнеса](/business-solutions)
+- `title` — string. Заголовок ошибки
 
 **429** — Слишком много запросов
 
-- `title` — string. Заголовок ошибки
-- `detail` — string. Детали ошибки
 - `code` — string. Внутренний код ошибки
-- `requestId` — string. Уникальный ID запроса
+- `detail` — string. Детали ошибки
 - `origin` — string. ID внутреннего сервиса WB
+- `requestId` — string. Уникальный ID запроса
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
+- `title` — string. Заголовок ошибки

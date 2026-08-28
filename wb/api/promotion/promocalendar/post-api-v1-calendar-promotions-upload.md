@@ -1,5 +1,5 @@
 ---
-title: Добавить товар в акцию{{ /api/v1/calendar/promotions/upload }}
+title: Добавить товар в акцию
 api: wb-promotion
 method: POST
 path: /api/v1/calendar/promotions/upload
@@ -9,23 +9,38 @@ tags:
 spec_version: promotion
 source: "https://dev.wildberries.ru/docs/openapi/promotion"
 deprecated: false
-content_sha: 1a7e131adbce249a
+content_sha: 635124f2f9eeefe3
 ---
 
-# Добавить товар в акцию{{ /api/v1/calendar/promotions/upload }}
+# Добавить товар в акцию
 
 `POST /api/v1/calendar/promotions/upload`
 
-Описание метода Метод создаёт задание на загрузку товара в [акцию](./promotion#tag/promoCalendar/operation/getV1CalendarPromotionsDetails). Состояние загрузки можно проверить с помощью [отдельных методов](./work-with-products#tag/Ceny-i-skidki/paths/~1api~1v2~1history~1tasks/get). Данный метод неприменим для автоакций. Лимит запросов на один аккаунт продавца для всех методов категории Календарь акций : | Тип | Период | Лимит | Интервал | Всплеск | | --- | --- | --- | --- | --- | | Персональный | 6 сек | 10 запросов | 600 мс | 5 запросов | | Сервисный | 6 сек | 10 запросов | 600 мс | 5 запросов | | Базовый с секретом | 6 сек | 10 запросов | 600 мс | 5 запросов | | Базовый | 1 ч | 1 запрос | 1 ч | 1 запрос |
+Описание метода
+
+Метод создаёт задание на загрузку товара в [акцию](./promotion#tag/promoCalendar/operation/getV1CalendarPromotionsDetails).
+
+Состояние загрузки можно проверить с помощью [отдельных методов](./work-with-products#tag/Ceny-i-skidki/paths/~1api~1v2~1history~1tasks/get).
+
+ Данный метод неприменим для автоакций.
+
+Лимит запросов на один аккаунт продавца для всех методов категории Календарь акций:
+
+| Тип | Период | Лимит | Интервал | Всплеск |
+| --- | --- | --- | --- | --- |
+| Персональный | 6 сек | 10 запросов | 600 мс | 5 запросов |
+| Сервисный | 6 сек | 10 запросов | 600 мс | 5 запросов |
+| Базовый с секретом | 6 сек | 10 запросов | 600 мс | 5 запросов |
+| Базовый | 1 ч | 1 запрос | 1 ч | 1 запрос |
 
 ## Запрос
 
 **Тело запроса** (`application/json`):
 
 - `data` — object. Данные запроса
+  - `nomenclatures` — array[integer]. Артикулы WB, которые можно добавить в акцию
   - `promotionID` — integer. ID акции
   - `uploadNow` — boolean. Установить скидку: - `true` — сейчас - `false` — в момент старта акции
-  - `nomenclatures` — array[integer]. Артикулы WB, которые можно добавить в акцию
 
 ## Ответы
 
@@ -41,19 +56,19 @@ content_sha: 1a7e131adbce249a
 
 **401** — Не авторизован
 
-- `title` — string. Заголовок ошибки
-- `detail` — string. Детали ошибки
 - `code` — string. Внутренний код ошибки
-- `requestId` — string. Уникальный ID запроса
+- `detail` — string. Детали ошибки
 - `origin` — string. ID внутреннего сервиса WB
+- `requestId` — string. Уникальный ID запроса
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
+- `title` — string. Заголовок ошибки
 
 **402** — Требуется платёж
 
-- `title` — string. Заголовок ошибки
 - `detail` — string. Детали ошибки. Ошибка возвращается только сервисам из [Каталога решений для бизнеса](/business-solutions)
+- `title` — string. Заголовок ошибки
 
 **422** — Ошибка обработки параметров запроса
 
@@ -61,11 +76,11 @@ content_sha: 1a7e131adbce249a
 
 **429** — Слишком много запросов
 
-- `title` — string. Заголовок ошибки
-- `detail` — string. Детали ошибки
 - `code` — string. Внутренний код ошибки
-- `requestId` — string. Уникальный ID запроса
+- `detail` — string. Детали ошибки
 - `origin` — string. ID внутреннего сервиса WB
+- `requestId` — string. Уникальный ID запроса
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
+- `title` — string. Заголовок ошибки

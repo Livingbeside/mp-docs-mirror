@@ -4,12 +4,19 @@ api: ozon-seller
 spec_version: 2.1
 operations: 463
 source: "https://docs.ozon.ru/api/seller/"
-content_sha: 0e1a2687e05d3311
+content_sha: 251b573259ed710e
 ---
 
 # Документация Ozon Seller API
 
-По вопросам работы с Seller API обращайтесь в поддержку через личный кабинет. Обновляем корневой TLS/SSL-сертификат GlobalSign — вместо него будем использовать HARICA . Подробнее о переходе на HARICA на платформе разработчиков Ozon for dev > [Инструкции по работе с маркетплейсом](https://seller-edu.ozon.ru) > [Информационная платформа и сообщество разработчиков Ozon for dev](https://dev.ozon.ru/)
+По вопросам работы с Seller API обращайтесь в поддержку через личный кабинет.
+
+Обновляем корневой TLS/SSL-сертификат GlobalSign — вместо него будем использовать HARICA.
+Подробнее о переходе на HARICA на платформе разработчиков Ozon for dev
+
+> [Инструкции по работе с маркетплейсом](https://seller-edu.ozon.ru)
+
+> [Информационная платформа и сообщество разработчиков Ozon for dev](https://dev.ozon.ru/)
 
 Версия спеки: `2.1` · методов: **463**
 

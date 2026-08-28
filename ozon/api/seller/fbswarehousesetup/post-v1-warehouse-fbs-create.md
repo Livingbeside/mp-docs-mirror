@@ -9,7 +9,7 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: b6c52e927fd61f3d
+content_sha: d10ecc206bb976dc
 ---
 
 # Создать склад
@@ -36,8 +36,8 @@ content_sha: b6c52e927fd61f3d
   - `is_auto_assembly` — boolean. `true`, если автосборка включена.
   - `is_waybill_enabled` — boolean. `true`, если печать транспортной накладной включена.
 - `phone` — string **обязательный**. Номер телефона склада. Укажите в формате +7(XXX)XXX-XX-XX.
-- `timeslot_id` — integer<int64> **обязательный**. Идентификатор таймслота.
 - `return_point_id` — integer<int64>. Идентификатор пункта возврата. Получите значение параметра методом [/v1/warehouse/fbs/create/return-point/list](#operation/WarehouseFBSCreateReturnPointList).
+- `timeslot_id` — integer<int64> **обязательный**. Идентификатор таймслота.
 - `working_days` — array[string (MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY)]. Рабочие дни склада: - `MONDAY` — понедельник, - `TUESDAY` — вторник, - `WEDNESDAY` — среда, - `THURSDAY` — четверг, - `FRIDAY` — пятница, - `SATURDAY` — суббота, - `SUNDAY` — воскресенье.
 
 ## Ответы

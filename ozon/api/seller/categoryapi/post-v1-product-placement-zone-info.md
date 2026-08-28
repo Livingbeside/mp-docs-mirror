@@ -9,14 +9,16 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: 897709a659dec84d
+content_sha: 0c56f155bfa6b656
 ---
 
 # Получить зоны размещения товаров по SKU перед поставкой
 
 `POST /v1/product/placement-zone/info`
 
-Вы можете отправить не больше 10 запросов в секунду. [Подробнее о зонах размещения в Базе знаний продавца](https://seller-edu.ozon.ru/libra/fbo/gruzomesta-i-podgotovka-k-otgruzke/k-kakoi-zone-otnositsya-tovar)
+Вы можете отправить не больше 10 запросов в секунду.
+
+[Подробнее о зонах размещения в Базе знаний продавца](https://seller-edu.ozon.ru/libra/fbo/gruzomesta-i-podgotovka-k-otgruzke/k-kakoi-zone-otnositsya-tovar)
 
 ## Запрос
 

@@ -1,5 +1,5 @@
 ---
-title: Комиссия по категориям товаров{{ /api/v1/tariffs/commission }}
+title: Комиссия по категориям товаров
 api: wb-wb-tariffs
 method: GET
 path: /api/v1/tariffs/commission
@@ -9,14 +9,25 @@ tags:
 spec_version: rates
 source: "https://dev.wildberries.ru/docs/openapi/wb-tariffs"
 deprecated: false
-content_sha: 545ad763c62baffa
+content_sha: 8bbc038e2a760112
 ---
 
-# Комиссия по категориям товаров{{ /api/v1/tariffs/commission }}
+# Комиссия по категориям товаров
 
 `GET /api/v1/tariffs/commission`
 
-Описание метода Метод возвращает данные о [комиссии](https://seller.wildberries.ru/dynamic-product-categories/commission) WB по [родительским категориям товаров](./work-with-products#tag/categoriesSubcategoriesAndCharacteristics/paths/~1content~1v2~1object~1parent~1all/get) согласно модели продаж. Лимит запросов на один аккаунт продавца: | Тип | Период | Лимит | Интервал | Всплеск | | --- | --- | --- | --- | --- | | Персональный | 1 мин | 1 запрос | 1 мин | 2 запроса | | Сервисный | 1 мин | 1 запрос | 1 мин | 2 запроса | | Базовый с секретом | 1 мин | 1 запрос | 1 мин | 2 запроса | | Базовый | 1 ч | 5 запросов | 12 мин | 1 запрос |
+Описание метода
+
+Метод возвращает данные о [комиссии](https://seller.wildberries.ru/dynamic-product-categories/commission) WB по [родительским категориям товаров](./work-with-products#tag/categoriesSubcategoriesAndCharacteristics/paths/~1content~1v2~1object~1parent~1all/get) согласно модели продаж.
+
+Лимит запросов на один аккаунт продавца:
+
+| Тип | Период | Лимит | Интервал | Всплеск |
+| --- | --- | --- | --- | --- |
+| Персональный | 1 мин | 1 запрос | 1 мин | 2 запроса |
+| Сервисный | 1 мин | 1 запрос | 1 мин | 2 запроса |
+| Базовый с секретом | 1 мин | 1 запрос | 1 мин | 2 запроса |
+| Базовый | 1 ч | 5 запросов | 12 мин | 1 запрос |
 
 ## Параметры
 
@@ -75,27 +86,27 @@ content_sha: 545ad763c62baffa
 
 **401** — Не авторизован
 
-- `title` — string. Заголовок ошибки
-- `detail` — string. Детали ошибки
 - `code` — string. Внутренний код ошибки
-- `requestId` — string. Уникальный ID запроса
+- `detail` — string. Детали ошибки
 - `origin` — string. ID внутреннего сервиса WB
+- `requestId` — string. Уникальный ID запроса
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
+- `title` — string. Заголовок ошибки
 
 **402** — Требуется платёж
 
-- `title` — string. Заголовок ошибки
 - `detail` — string. Детали ошибки. Ошибка возвращается только сервисам из [Каталога решений для бизнеса](/business-solutions)
+- `title` — string. Заголовок ошибки
 
 **429** — Слишком много запросов
 
-- `title` — string. Заголовок ошибки
-- `detail` — string. Детали ошибки
 - `code` — string. Внутренний код ошибки
-- `requestId` — string. Уникальный ID запроса
+- `detail` — string. Детали ошибки
 - `origin` — string. ID внутреннего сервиса WB
+- `requestId` — string. Уникальный ID запроса
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
+- `title` — string. Заголовок ошибки

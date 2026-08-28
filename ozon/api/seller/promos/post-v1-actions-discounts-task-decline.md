@@ -9,7 +9,7 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: f4841853f9309112
+content_sha: eba533a7ec1fcce1
 ---
 
 # Отклонить заявку на скидку
@@ -31,11 +31,11 @@ content_sha: f4841853f9309112
 **200** — Заявки отклонены
 
 - `result` — object. Результат работы метода.
-  - `fail_details` — array[object]. Ошибки при создании заявки.
-    - `task_id` — integer<uint64>. Идентификатор заявки.
-    - `error_for_user` — string. Текст ошибки.
-  - `success_count` — integer<int32>. Количество заявок с успешной сменой статуса.
   - `fail_count` — integer<int32>. Количество заявок, у которых не удалось сменить статус.
+  - `fail_details` — array[object]. Ошибки при создании заявки.
+    - `error_for_user` — string. Текст ошибки.
+    - `task_id` — integer<uint64>. Идентификатор заявки.
+  - `success_count` — integer<int32>. Количество заявок с успешной сменой статуса.
 
 **default** — Ошибка
 

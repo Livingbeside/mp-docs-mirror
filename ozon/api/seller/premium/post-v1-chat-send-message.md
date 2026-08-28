@@ -9,14 +9,22 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: 3576fd09ba93524c
+content_sha: 4b0a8ed78958f7c9
 ---
 
 # Отправить сообщение
 
 `POST /v1/chat/send/message`
 
-Доступно для продавцов с подпиской [Premium Plus](https://seller-edu.ozon.ru/seller-rating/about-rating/subscription-premium-plus) или [Premium Pro](https://seller-edu.ozon.ru/seller-rating/about-rating/podpiska-premium-pro). Отправляет сообщение в существующий чат по его идентификатору. Получите список чатов с покупателем `chats.chat.chat_type="Buyer_Seller"` в ответе метода [/v3/chat/list](#operation/ChatAPI_ChatListV3). Для отправлений: - FBO — вы можете отправить сообщение в течение 48 часов с момента получения последнего сообщения от покупателя. - FBS или rFBS — вы можете отправить сообщение покупателю после оплаты и в течение 72 часов после доставки отправления. После этого вы можете только отвечать на сообщения в течение 48 часов с момента получения последнего сообщения от покупателя.
+Доступно для продавцов с подпиской [Premium Plus](https://seller-edu.ozon.ru/seller-rating/about-rating/subscription-premium-plus) или [Premium Pro](https://seller-edu.ozon.ru/seller-rating/about-rating/podpiska-premium-pro).
+
+Отправляет сообщение в существующий чат по его идентификатору. 
+
+Получите список чатов с покупателем `chats.chat.chat_type="Buyer_Seller"` в ответе метода [/v3/chat/list](#operation/ChatAPI_ChatListV3).
+
+Для отправлений:
+- FBO — вы можете отправить сообщение в течение 48 часов с момента получения последнего сообщения от покупателя. 
+- FBS или rFBS — вы можете отправить сообщение покупателю после оплаты и в течение 72 часов после доставки отправления. После этого вы можете только отвечать на сообщения в течение 48 часов с момента получения последнего сообщения от покупателя.
 
 ## Параметры
 

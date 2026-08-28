@@ -9,14 +9,16 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: 96a581d6809c4b25
+content_sha: d6815ed289232986
 ---
 
 # Создать акцию с механикой «Многоуровневая скидка от суммы»
 
 `POST /v1/seller-actions/create/multi-level-discount`
 
-Товары в акцию добавляются автоматически, использовать метод [/v1/seller-actions/products/add](#operation/SellerActionsProductsAdd) не нужно. Вы можете оставить обратную связь о работе метода в [комментариях](https://dev.ozon.ru/community/1872-Novye-metody-dlia-raboty-s-aktsiiami-sellera) в сообществе разработчиков Ozon for dev.
+Товары в акцию добавляются автоматически, использовать метод [/v1/seller-actions/products/add](#operation/SellerActionsProductsAdd) не нужно.
+ 
+Вы можете оставить обратную связь о работе метода в [комментариях](https://dev.ozon.ru/community/1872-Novye-metody-dlia-raboty-s-aktsiiami-sellera) в сообществе разработчиков Ozon for dev.
 
 ## Параметры
 

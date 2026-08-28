@@ -9,14 +9,21 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: dc0673962fcd02ed
+content_sha: 91ec949dc9b2a7ec
 ---
 
 # Вернуть товар из архива
 
 `POST /v1/product/unarchive`
 
-Если вы превысите лимит на восстановление, вернётся ошибка `autoarchive_restore_failed`. [Подробнее об управлении товарами в архиве в Базе знаний продавца](https://seller-edu.ozon.ru/libra/work-with-goods/zagruzka-tovarov/created-goods/upravlyat-tovarami-v-arhive) У метода есть лимит на количество операций c товарами в минуту и в сутки. Если вы превысите лимит, вернётся ошибка `429` с описанием в поле `message` и заголовками: - `Item-Retry-After` — время в минутах до обновления лимита. Для суточного лимита — время до 03:00 по московскому времени. - `Item-Rate-Limit-Remaining` — остаток операций до следующего сброса лимита. Чтобы узнать лимит, используйте [/v4/product/info/limit](#operation/ProductAPI_GetUploadQuota).
+Если вы превысите лимит на восстановление, вернётся ошибка `autoarchive_restore_failed`.
+[Подробнее об управлении товарами в архиве в Базе знаний продавца](https://seller-edu.ozon.ru/libra/work-with-goods/zagruzka-tovarov/created-goods/upravlyat-tovarami-v-arhive)
+
+У метода есть лимит на количество операций c товарами в минуту и в сутки. Если вы превысите лимит, вернётся ошибка `429` с описанием в поле `message` и заголовками:
+- `Item-Retry-After` — время в минутах до обновления лимита. Для суточного лимита — время до 03:00 по московскому времени.
+- `Item-Rate-Limit-Remaining` — остаток операций до следующего сброса лимита.
+
+Чтобы узнать лимит, используйте [/v4/product/info/limit](#operation/ProductAPI_GetUploadQuota).
 
 ## Параметры
 

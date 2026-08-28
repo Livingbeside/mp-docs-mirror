@@ -9,7 +9,7 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: 211645acc6b4b8ab
+content_sha: bd101066ac9dad51
 ---
 
 # Получить контактные данные продавца для курьера
@@ -37,10 +37,10 @@ content_sha: 211645acc6b4b8ab
 
 - `contact` — array[object]. Информация о контактах продавца.
   - `carriage_id` — integer<int64>. Идентификатор перевозки.
-  - `phone` — string. Телефон продавца.
-  - `wechat_nickname` — string. WeChat продавца.
   - `comment` — string. Комментарий для курьера.
+  - `phone` — string. Телефон продавца.
   - `updated_at` — string<date-time>. Дата и время последнего обновления записи в UTC.
+  - `wechat_nickname` — string. WeChat продавца.
 
 **400** — Неверный параметр
 

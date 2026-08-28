@@ -9,7 +9,7 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: 78c8f5ff4891758d
+content_sha: 997f64fd8d7e90d1
 ---
 
 # Получить подробную информацию о заявке на поставку
@@ -59,13 +59,13 @@ content_sha: 78c8f5ff4891758d
     - `is_required` — boolean. `true`, если для поставки нужна электронная ТТН.
     - `is_uploaded` — boolean. `true`, если электронная ТТН загружена.
   - `is_crossdock` — boolean. `true`, если поставка кросс-докинг.
+  - `macrolocal_cluster_id` — integer<int64>. Идентификатор кластера размещения.
   - `overdue_reason` — string (UNSPECIFIED, ORDER_TIMESLOT_EXPIRED, ORDER_TIMESLOT_NOT_SELECTED, NOT_READY_FOR_PICKUP, PICKUP_FAILED, UNDEFINED). Причина просрочки поставки: - `UNSPECIFIED` — не определена; - `ORDER_TIMESLOT_EXPIRED` — поставка не доставлена в указанный таймслот; - `ORDER_TIMESLOT_NOT_SELECTED` — таймслот не указан вовремя; - `NOT_READY_FOR_PICKUP` — пикап-поставка не приведена в статус `ReadyToSupply` вовремя; - `PICKUP_FAILED` — курьер не смог забрать поставку; - `UNDEFINED` — неизвестная. По умолчанию: `UNSPECIFIED`.
   - `storage_warehouse` — object. Склад хранения для поставок с типом `DIRECT`.
     - `address` — string. Адрес склада хранения.
     - `arrival_date` — string<date-time>. Дата прибытия на склад хранения.
     - `name` — string. Название склада хранения.
     - `warehouse_id` — integer<int64>. Идентификатор склада хранения.
-  - `macrolocal_cluster_id` — integer<int64>. Идентификатор кластера размещения.
   - `supply_id` — integer<int64>. Идентификатор поставки.
   - `supply_state` — string (UNSPECIFIED, DATA_FILLING, READY_TO_SUPPLY, ACCEPTED_AT_SUPPLY_WAREHOUSE, REJECTED_AT_SUPPLY_WAREHOUSE, IN_TRANSIT, ACCEPTED_AT_STORAGE_WAREHOUSE, REPORTS_CONFIRMATION_AWAITING, REPORT_REJECTED, COMPLETED, CANCELLED, OVERDUE). Статус поставки: - `UNSPECIFIED` — не указан; - `DATA_FILLING` — заполнение данных; - `READY_TO_SUPPLY` — готова к отгрузке; - `ACCEPTED_AT_SUPPLY_WAREHOUSE` — принята на точке отгрузки; - `REJECTED_AT_SUPPLY_WAREHOUSE` — отказано в приёмке; - `IN_TRANSIT` — в пути; - `ACCEPTED_AT_STORAGE_WAREHOUSE` — принята на складе хранения; - `REPORTS_CONFIRMATION_AWAITING` — согласование актов; - `REPORT_REJECTED` — спор; - `COMPLETED` — завершена; - `CANCELLED` — отменена; - `OVERDUE` — просрочена. По умолчанию: `UNSPECIFIED`.
   - `supply_tags` — object. Метки поставки.

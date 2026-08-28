@@ -1,5 +1,5 @@
 ---
-title: Удержания за занижение габаритов упаковки{{ /api/analytics/v1/measurement-penalties }}
+title: Удержания за занижение габаритов упаковки
 api: wb-reports
 method: GET
 path: /api/analytics/v1/measurement-penalties
@@ -9,14 +9,25 @@ tags:
 spec_version: reports
 source: "https://dev.wildberries.ru/docs/openapi/reports"
 deprecated: false
-content_sha: 7ba207e74b6614fb
+content_sha: 862822abeeca3322
 ---
 
-# Удержания за занижение габаритов упаковки{{ /api/analytics/v1/measurement-penalties }}
+# Удержания за занижение габаритов упаковки
 
 `GET /api/analytics/v1/measurement-penalties`
 
-Описание метода Метод возвращает отчёт об [удержаниях за занижение габаритов упаковки](https://seller.wildberries.ru/analytics-reports/dimensions-penalties) Лимит запросов на один аккаунт продавца: | Тип | Период | Лимит | Интервал | Всплеск | | --- | --- | --- | --- | --- | | Персональный | 1 мин | 1 запрос | 1 мин | 1 запрос | | Сервисный | 1 мин | 1 запрос | 1 мин | 1 запрос | | Базовый с секретом | 1 мин | 1 запрос | 1 мин | 1 запрос | | Базовый | 6 ч | 1 запрос | 6 ч | 1 запрос |
+Описание метода
+
+Метод возвращает отчёт об [удержаниях за занижение габаритов упаковки](https://seller.wildberries.ru/analytics-reports/dimensions-penalties)
+
+Лимит запросов на один аккаунт продавца:
+
+| Тип | Период | Лимит | Интервал | Всплеск |
+| --- | --- | --- | --- | --- |
+| Персональный | 1 мин | 1 запрос | 1 мин | 1 запрос |
+| Сервисный | 1 мин | 1 запрос | 1 мин | 1 запрос |
+| Базовый с секретом | 1 мин | 1 запрос | 1 мин | 1 запрос |
+| Базовый | 6 ч | 1 запрос | 6 ч | 1 запрос |
 
 ## Параметры
 
@@ -33,65 +44,65 @@ content_sha: 7ba207e74b6614fb
 
 - `data` — object **обязательный**. Данные ответа
   - `reports` — array[object] **обязательный**. Удержания
-    - `nmId` — integer. Артикул WB
-    - `subjectName` — string. Предмет
     - `dimId` — integer. ID замера
-    - `prcOver` — number. Разница в габаритах, %
-    - `volume` — number. Объём, л (фактические габариты по замеру на складе)
-    - `width` — integer. Ширина, см (фактические габариты по замеру на складе)
-    - `length` — integer. Длина, см (фактические габариты по замеру на складе)
-    - `height` — integer. Высота, см (фактические габариты по замеру на складе)
-    - `volumeSup` — number. Объём, л (габариты карточки товара)
-    - `widthSup` — integer. Ширина, см (габариты карточки товара)
-    - `lengthSup` — integer. Длина, см (габариты карточки товара)
-    - `heightSup` — integer. Высота, см (габариты карточки товара)
-    - `photoUrls` — array[string]. Фото замеров
     - `dtBonus` — string<date-time>. Дата штрафа
+    - `height` — integer. Высота, см (фактические габариты по замеру на складе)
+    - `heightSup` — integer. Высота, см (габариты карточки товара)
     - `isValid` — boolean. Статус обмера: - `false` — отменён - `true` — подтверждён
     - `isValidDt` — string<date-time>. Дата и время подтверждения или отмены обмера
-    - `reversalAmount` — number. Сумма сторно
+    - `length` — integer. Длина, см (фактические габариты по замеру на складе)
+    - `lengthSup` — integer. Длина, см (габариты карточки товара)
+    - `nmId` — integer. Артикул WB
     - `penaltyAmount` — number. Сумма штрафа
+    - `photoUrls` — array[string]. Фото замеров
+    - `prcOver` — number. Разница в габаритах, %
+    - `reversalAmount` — number. Сумма сторно
+    - `subjectName` — string. Предмет
+    - `volume` — number. Объём, л (фактические габариты по замеру на складе)
+    - `volumeSup` — number. Объём, л (габариты карточки товара)
+    - `width` — integer. Ширина, см (фактические габариты по замеру на складе)
+    - `widthSup` — integer. Ширина, см (габариты карточки товара)
   - `total` — integer **обязательный**. Количество удержаний в отчёте. Без учёта `limit` и `offset`
 
 **400** — Неправильный запрос
 
-- `title` — string. Заголовок ошибки
-- `status` — integer. HTTP статус-код
 - `detail` — string. Детали ошибки
-- `requestId` — string. Уникальный ID запроса
 - `origin` — string. ID внутреннего сервиса WB
+- `requestId` — string. Уникальный ID запроса
+- `status` — integer. HTTP статус-код
+- `title` — string. Заголовок ошибки
 
 **401** — Не авторизован
 
-- `title` — string. Заголовок ошибки
-- `detail` — string. Детали ошибки
 - `code` — string. Внутренний код ошибки
-- `requestId` — string. Уникальный ID запроса
+- `detail` — string. Детали ошибки
 - `origin` — string. ID внутреннего сервиса WB
+- `requestId` — string. Уникальный ID запроса
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
+- `title` — string. Заголовок ошибки
 
 **402** — Требуется платёж
 
-- `title` — string. Заголовок ошибки
 - `detail` — string. Детали ошибки. Ошибка возвращается только сервисам из [Каталога решений для бизнеса](/business-solutions)
+- `title` — string. Заголовок ошибки
 
 **403** — Доступ запрещён
 
-- `title` — string. Заголовок ошибки
-- `status` — integer. HTTP статус-код
 - `detail` — string. Детали ошибки
-- `requestId` — string. Уникальный ID запроса
 - `origin` — string. ID внутреннего сервиса WB
+- `requestId` — string. Уникальный ID запроса
+- `status` — integer. HTTP статус-код
+- `title` — string. Заголовок ошибки
 
 **429** — Слишком много запросов
 
-- `title` — string. Заголовок ошибки
-- `detail` — string. Детали ошибки
 - `code` — string. Внутренний код ошибки
-- `requestId` — string. Уникальный ID запроса
+- `detail` — string. Детали ошибки
 - `origin` — string. ID внутреннего сервиса WB
+- `requestId` — string. Уникальный ID запроса
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
+- `title` — string. Заголовок ошибки

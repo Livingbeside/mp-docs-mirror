@@ -9,14 +9,16 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: 6d956ab391b27f81
+content_sha: b43a71211701aecc
 ---
 
 # Обновить акцию с механикой «Беспроцентная рассрочка»
 
 `POST /v1/seller-actions/update/installment`
 
-Период рассрочки — 6 месяцев. Вы можете оставить обратную связь по этому методу в комментариях к [обсуждению](https://dev.ozon.ru/community/1872-Novye-metody-dlia-raboty-s-aktsiiami-sellera/) в сообществе разработчиков Ozon for dev.
+Период рассрочки — 6 месяцев.
+
+Вы можете оставить обратную связь по этому методу в комментариях к [обсуждению](https://dev.ozon.ru/community/1872-Novye-metody-dlia-raboty-s-aktsiiami-sellera/) в сообществе разработчиков Ozon for dev.
 
 ## Параметры
 

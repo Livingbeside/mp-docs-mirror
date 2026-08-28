@@ -9,7 +9,7 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: 1a2d0febea00399e
+content_sha: 4633614eaca8fb9a
 ---
 
 # Согласовать заявку на скидку
@@ -23,22 +23,22 @@ content_sha: 1a2d0febea00399e
 **Тело запроса** (`application/json`):
 
 - `tasks` — array[object] **обязательный**. Список заявок.
-  - `id` — integer<uint64> **обязательный**. Идентификатор заявки. Можно получить с помощью метода [/v1/actions/discounts-task/list](#operation/promos_task_list).
   - `approved_price` — number<double> **обязательный**. Согласованная цена.
-  - `seller_comment` — string. Комментарий продавца к заявке.
-  - `approved_quantity_min` — integer<uint64> **обязательный**. Одобренное минимальное количество товаров.
   - `approved_quantity_max` — integer<uint64> **обязательный**. Одобренное максимальное количество товаров.
+  - `approved_quantity_min` — integer<uint64> **обязательный**. Одобренное минимальное количество товаров.
+  - `id` — integer<uint64> **обязательный**. Идентификатор заявки. Можно получить с помощью метода [/v1/actions/discounts-task/list](#operation/promos_task_list).
+  - `seller_comment` — string. Комментарий продавца к заявке.
 
 ## Ответы
 
 **200** — Заявки согласованы
 
 - `result` — object. Результат работы метода.
-  - `fail_details` — array[object]. Ошибки при создании заявки.
-    - `task_id` — integer<uint64>. Идентификатор заявки.
-    - `error_for_user` — string. Текст ошибки.
-  - `success_count` — integer<int32>. Количество заявок с успешной сменой статуса.
   - `fail_count` — integer<int32>. Количество заявок, у которых не удалось сменить статус.
+  - `fail_details` — array[object]. Ошибки при создании заявки.
+    - `error_for_user` — string. Текст ошибки.
+    - `task_id` — integer<uint64>. Идентификатор заявки.
+  - `success_count` — integer<int32>. Количество заявок с успешной сменой статуса.
 
 **default** — Ошибка
 

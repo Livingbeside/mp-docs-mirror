@@ -9,7 +9,7 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: true
-content_sha: a3fcd4b1341a02b6
+content_sha: 415b1058c5488654
 ---
 
 # Получить лист отгрузки по перевозке
@@ -18,7 +18,12 @@ content_sha: a3fcd4b1341a02b6
 
 > ⚠️ Метод помечен как **deprecated**.
 
-Метод устаревает и будет отключён 22 марта 2026 года. Переключитесь на /v2/posting/fbs/act/get-pdf . Вы можете получить документы, если в ответе метода [/v2/posting/fbs/digital/act/check-status](#operation/PostingAPI_PostingFBSDigitalActCheckStatus) был один из статусов: - `FORMED` — перевозка сформирована успешно, - `CONFIRMED` — перевозка подтверждена Ozon, - `CONFIRMED_WITH_MISMATCH` — перевозка принята Ozon с расхождениями.
+Метод устаревает и будет отключён 22 марта 2026 года. Переключитесь на /v2/posting/fbs/act/get-pdf.
+
+Вы можете получить документы, если в ответе метода [/v2/posting/fbs/digital/act/check-status](#operation/PostingAPI_PostingFBSDigitalActCheckStatus) был один из статусов:
+- `FORMED` — перевозка сформирована успешно,
+- `CONFIRMED` — перевозка подтверждена Ozon,
+- `CONFIRMED_WITH_MISMATCH` — перевозка принята Ozon с расхождениями.
 
 ## Параметры
 
@@ -31,16 +36,16 @@ content_sha: a3fcd4b1341a02b6
 
 **Тело запроса** (`application/json`):
 
-- `id` — integer<int64> **обязательный**. Номер задания на формирование документов (также идентификатор перевозки) из метода [POST /v2/posting/fbs/act/create](#operation/PostingAPI_PostingFBSActCreate).
 - `doc_type` — None<string>. Тип электронного документа: - `act_of_acceptance` — лист отгрузки, - `act_of_mismatch` — акт о расхождениях, - `act_of_excess` — акт об излишках, - `waybill` — транспортная накладная.
+- `id` — integer<int64> **обязательный**. Номер задания на формирование документов (также идентификатор перевозки) из метода [POST /v2/posting/fbs/act/create](#operation/PostingAPI_PostingFBSActCreate).
 
 ## Ответы
 
 **200** — Файл с документом
 
+- `content_type` — string. Тип файла.
 - `file_content` — string<byte>. Содержание файла в бинарном виде.
 - `file_name` — string. Название файла.
-- `content_type` — string. Тип файла.
 
 **400** — Неверный параметр
 

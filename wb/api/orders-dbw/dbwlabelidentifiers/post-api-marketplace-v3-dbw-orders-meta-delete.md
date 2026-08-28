@@ -1,5 +1,5 @@
 ---
-title: Удалить идентификаторы маркировки сборочных заданий{{ /api/marketplace/v3/dbw/orders/meta/delete }}
+title: Удалить идентификаторы маркировки сборочных заданий
 api: wb-orders-dbw
 method: POST
 path: /api/marketplace/v3/dbw/orders/meta/delete
@@ -9,14 +9,41 @@ tags:
 spec_version: ordersdbw
 source: "https://dev.wildberries.ru/docs/openapi/orders-dbw"
 deprecated: false
-content_sha: 272533a8eecc8f03
+content_sha: 804b0d862325f0a5
 ---
 
-# Удалить идентификаторы маркировки сборочных заданий{{ /api/marketplace/v3/dbw/orders/meta/delete }}
+# Удалить идентификаторы маркировки сборочных заданий
 
 `POST /api/marketplace/v3/dbw/orders/meta/delete`
 
-Описание метода Метод удаляет значение указанных [идентификаторов маркировки сборочного задания](./orders-dbw#tag/dbwLabelIdentifiers/operation/postV3DbwOrdersMetaDetails) для переданного ключа. В одном запросе можно удалить идентификаторы маркировки только одного типа. Укажите тип идентификаторов маркировки в запросе: - `imei` — [IMEI](./orders-dbw#tag/dbwLabelIdentifiers/operation/putV3DbwOrdersOrderIdMetaImei) - `uin` — [УИН](./orders-dbw#tag/dbwLabelIdentifiers/operation/putV3DbwOrdersOrderIdMetaUin) - `gtin` — [GTIN](./orders-dbw#tag/dbwLabelIdentifiers/operation/putV3DbwOrdersOrderIdMetaImei) - `sgtin` — [код маркировки Честного знака](./orders-dbw#tag/dbwLabelIdentifiers/operation/postV3DbwOrdersMetaSgtin) Можно передать только один ключ. Лимит запросов на один аккаунт продавца для следующих методов DBW: получение и обновление списка контактов получение и удаление идентификаторов маркировки методы сборочных заданий | Период | Лимит | Интервал | Всплеск | | --- | --- | --- | --- | | 1 мин | 300 запросов | 200 мс | 20 запросов | Один запрос с кодами ответов 4XX учитывается как 10 запросов
+Описание метода
+
+Метод удаляет значение указанных [идентификаторов маркировки сборочного задания](./orders-dbw#tag/dbwLabelIdentifiers/operation/postV3DbwOrdersMetaDetails) для переданного ключа.
+
+В одном запросе можно удалить идентификаторы маркировки только одного типа. Укажите тип идентификаторов маркировки в запросе:
+ - `imei` — [IMEI](./orders-dbw#tag/dbwLabelIdentifiers/operation/putV3DbwOrdersOrderIdMetaImei)
+ - `uin` — [УИН](./orders-dbw#tag/dbwLabelIdentifiers/operation/putV3DbwOrdersOrderIdMetaUin)
+ - `gtin` — [GTIN](./orders-dbw#tag/dbwLabelIdentifiers/operation/putV3DbwOrdersOrderIdMetaImei)
+ - `sgtin` — [код маркировки Честного знака](./orders-dbw#tag/dbwLabelIdentifiers/operation/postV3DbwOrdersMetaSgtin)
+
+Можно передать только один ключ.
+
+ 
+Лимит запросов на один аккаунт продавца для следующих методов DBW:
+
+ получение и обновление списка контактов
+
+ получение и удаление идентификаторов маркировки
+
+ методы сборочных заданий
+
+ 
+
+| Период | Лимит | Интервал | Всплеск |
+| --- | --- | --- | --- |
+| 1 мин | 300 запросов | 200 мс | 20 запросов |
+
+Один запрос с кодами ответов 4XX учитывается как 10 запросов
 
 ## Запрос
 
@@ -40,38 +67,38 @@ content_sha: 272533a8eecc8f03
 **400** — Неправильный запрос
 
 - `code` — string. Код ошибки
-- `message` — string. Описание ошибки
 - `data` — object. Дополнительные данные ошибки
+- `message` — string. Описание ошибки
 
 **401** — Не авторизован
 
-- `title` — string. Заголовок ошибки
-- `detail` — string. Детали ошибки
 - `code` — string. Внутренний код ошибки
-- `requestId` — string. Уникальный ID запроса
+- `detail` — string. Детали ошибки
 - `origin` — string. ID внутреннего сервиса WB
+- `requestId` — string. Уникальный ID запроса
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
+- `title` — string. Заголовок ошибки
 
 **402** — Требуется платёж
 
-- `title` — string. Заголовок ошибки
 - `detail` — string. Детали ошибки. Ошибка возвращается только сервисам из [Каталога решений для бизнеса](/business-solutions)
+- `title` — string. Заголовок ошибки
 
 **403** — Доступ запрещён
 
 - `code` — string. Код ошибки
-- `message` — string. Описание ошибки
 - `data` — object. Дополнительные данные ошибки
+- `message` — string. Описание ошибки
 
 **429** — Слишком много запросов
 
-- `title` — string. Заголовок ошибки
-- `detail` — string. Детали ошибки
 - `code` — string. Внутренний код ошибки
-- `requestId` — string. Уникальный ID запроса
+- `detail` — string. Детали ошибки
 - `origin` — string. ID внутреннего сервиса WB
+- `requestId` — string. Уникальный ID запроса
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
+- `title` — string. Заголовок ошибки

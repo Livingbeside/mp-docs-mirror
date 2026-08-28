@@ -9,14 +9,16 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: 0753cc217a97916b
+content_sha: cc04d730063a65ef
 ---
 
 # Получить данные созданных экземпляров
 
 `POST /v6/fbs/posting/product/exemplar/create-or-get`
 
-Метод для получения информации по экземплярам товаров из отправления, переданных в методе [/v6/fbs/posting/product/exemplar/set](#operation/PostingAPI_FbsPostingProductExemplarSetV6). Используйте метод для получения `exemplar_id`.
+Метод для получения информации по экземплярам товаров из отправления, переданных в методе [/v6/fbs/posting/product/exemplar/set](#operation/PostingAPI_FbsPostingProductExemplarSetV6).
+
+Используйте метод для получения `exemplar_id`.
 
 ## Параметры
 
@@ -54,9 +56,9 @@ content_sha: 0753cc217a97916b
   - `is_mandatory_mark_needed` — boolean. Признак того, что необходимо передать маркировку «Честный ЗНАК».
   - `is_mandatory_mark_possible` — boolean. Признак того, что возможно заполнить маркировку «Честный ЗНАК».
   - `is_rnpt_needed` — boolean. Признак того, что необходимо передать номер партии товара (РНПТ).
+  - `is_weight_needed` — boolean. `true`, если товар весовой.
   - `product_id` — integer<int64>. Идентификатор товара в системе Ozon — SKU.
   - `quantity` — integer<int32>. Количество экземпляров.
-  - `is_weight_needed` — boolean. `true`, если товар весовой.
   - `weight_max` — number<float>. Максимальный вес экземпляра.
   - `weight_min` — number<float>. Минимальный вес экземпляра.
 

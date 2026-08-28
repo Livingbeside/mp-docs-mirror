@@ -9,14 +9,22 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: 0c841db71e2c450c
+content_sha: 716643ba42d94ced
 ---
 
 # Изменить артикулы товаров из системы продавца
 
 `POST /v1/product/update/offer-id`
 
-Метод для изменения `offer_id`, привязанных к товарам. Вы можете изменить несколько `offer_id`. Если `offer_id` уже используется для другого товара, вернётся ошибка `OFFER_ID_ALREADY_EXISTS`. [Подробнее о требованиях к артикулам в Базе знаний продавца](https://seller-edu.ozon.ru/libra/work-with-goods/trebovaniya-k-kartochkam-tovarov/product-information/articyl-tovara#какие-есть-требования-к-артикулу) У метода есть лимит на количество операций c товарами в минуту. Если вы превысите лимит, вернётся ошибка `429` с описанием в поле `message` и заголовками: - `Item-Retry-After` — время в минутах до обновления лимита. Для суточного лимита — время до 03:00 по московскому времени. - `Item-Rate-Limit-Remaining` — остаток операций до следующего сброса лимита. Чтобы узнать лимит, используйте [/v4/product/info/limit](#operation/ProductAPI_GetUploadQuota).
+Метод для изменения `offer_id`, привязанных к товарам. Вы можете изменить несколько `offer_id`. Если `offer_id` уже используется для другого товара, вернётся ошибка `OFFER_ID_ALREADY_EXISTS`.
+
+ [Подробнее о требованиях к артикулам в Базе знаний продавца](https://seller-edu.ozon.ru/libra/work-with-goods/trebovaniya-k-kartochkam-tovarov/product-information/articyl-tovara#какие-есть-требования-к-артикулу)
+
+У метода есть лимит на количество операций c товарами в минуту. Если вы превысите лимит, вернётся ошибка `429` с описанием в поле `message` и заголовками:
+- `Item-Retry-After` — время в минутах до обновления лимита. Для суточного лимита — время до 03:00 по московскому времени.
+- `Item-Rate-Limit-Remaining` — остаток операций до следующего сброса лимита.
+
+Чтобы узнать лимит, используйте [/v4/product/info/limit](#operation/ProductAPI_GetUploadQuota).
 
 ## Параметры
 

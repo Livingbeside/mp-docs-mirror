@@ -9,7 +9,7 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: 287dbefa25c041c6
+content_sha: 727df10290863a14
 ---
 
 # Сгенерировать этикетки для грузомест
@@ -37,9 +37,9 @@ content_sha: 287dbefa25c041c6
 
 **200** — Результат запроса
 
-- `operation_id` — string. Идентификатор операции.
 - `errors` — object. Ошибки.
   - `error_reasons` — array[string (INVALID_STATE, OPERATION_NOT_FOUND, OPERATION_FAILED, SUPPLY_NOT_BELONG_CONTRACTOR, SUPPLY_NOT_BELONG_COMPANY, SUPPLY_IS_EMPTY, CARGOES_NOT_FOUND)]. Причина ошибки: - `INVALID_STATE` — недопустимое состояние поставки. - `OPERATION_NOT_FOUND` — операция не найдена. - `OPERATION_FAILED` — операция завершилась с ошибкой. - `SUPPLY_NOT_BELONG_CONTRACTOR` — контрагент не соответствует поставке. - `SUPPLY_NOT_BELONG_COMPANY` — компания не соответствует поставке. - `SUPPLY_IS_EMPTY` — поставка без грузомест. - `CARGOES_NOT_FOUND` — грузоместа не найдены.
+- `operation_id` — string. Идентификатор операции.
 
 **default** — Ошибка
 

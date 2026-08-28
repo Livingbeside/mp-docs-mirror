@@ -9,14 +9,24 @@ tags:
 spec_version: items
 source: "https://dev.wildberries.ru/docs/openapi/work-with-products"
 deprecated: false
-content_sha: d70c3d326d8ab02d
+content_sha: 354be1251512390d
 ---
 
 # Удалить остатки товаров{{ /api/v3/stocks/{warehouseId} }}
 
 `DELETE /api/v3/stocks/{warehouseId}`
 
-Описание метода Метод удаляет запись об остатках товаров продавца из [списка остатков](./work-with-products#tag/Ostatki-na-skladah-prodavca/paths/~1api~1v3~1stocks~1%7BwarehouseId%7D/post). Действие необратимо . Удаленный остаток будет необходимо загрузить повторно для возобновления продаж. Лимит запросов на один аккаунт продавца: | Период | Лимит | Интервал | Всплеск | | --- | --- | --- | --- | | 1 мин | 10 запросов | 6 сек | 2 запроса |
+Описание метода
+
+Метод удаляет запись об остатках товаров продавца из [списка остатков](./work-with-products#tag/Ostatki-na-skladah-prodavca/paths/~1api~1v3~1stocks~1%7BwarehouseId%7D/post).
+
+ Действие необратимо. Удаленный остаток будет необходимо загрузить повторно для возобновления продаж.
+
+Лимит запросов на один аккаунт продавца:
+
+| Период | Лимит | Интервал | Всплеск |
+| --- | --- | --- | --- |
+| 1 мин | 10 запросов | 6 сек | 2 запроса |
 
 ## Параметры
 
@@ -37,50 +47,50 @@ content_sha: d70c3d326d8ab02d
 **400** — Неправильный запрос
 
 - `code` — string. Код ошибки
-- `message` — string. Описание ошибки
 - `data` — object. Дополнительные данные ошибки
+- `message` — string. Описание ошибки
 
 **401** — Не авторизован
 
-- `title` — string. Заголовок ошибки
-- `detail` — string. Детали ошибки
 - `code` — string. Внутренний код ошибки
-- `requestId` — string. Уникальный ID запроса
+- `detail` — string. Детали ошибки
 - `origin` — string. ID внутреннего сервиса WB
+- `requestId` — string. Уникальный ID запроса
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
+- `title` — string. Заголовок ошибки
 
 **402** — Требуется платёж
 
-- `title` — string. Заголовок ошибки
 - `detail` — string. Детали ошибки. Ошибка возвращается только сервисам из [Каталога решений для бизнеса](/business-solutions)
+- `title` — string. Заголовок ошибки
 
 **403** — Доступ запрещён
 
 - `code` — string. Код ошибки
-- `message` — string. Описание ошибки
 - `data` — object. Дополнительные данные ошибки
+- `message` — string. Описание ошибки
 
 **404** — Не найдено
 
 - `code` — string. Код ошибки
-- `message` — string. Описание ошибки
 - `data` — object. Дополнительные данные ошибки
+- `message` — string. Описание ошибки
 
 **409** — Ошибка удаления остатков
 
 - `code` — string. Код ошибки
-- `message` — string. Описание ошибки
 - `data` — object. Дополнительные данные ошибки
+- `message` — string. Описание ошибки
 
 **429** — Слишком много запросов
 
-- `title` — string. Заголовок ошибки
-- `detail` — string. Детали ошибки
 - `code` — string. Внутренний код ошибки
-- `requestId` — string. Уникальный ID запроса
+- `detail` — string. Детали ошибки
 - `origin` — string. ID внутреннего сервиса WB
+- `requestId` — string. Уникальный ID запроса
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
+- `title` — string. Заголовок ошибки

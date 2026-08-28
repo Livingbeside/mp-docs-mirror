@@ -1,5 +1,5 @@
 ---
-title: Список отчётов об издержках на приём платежей{{ /api/finance/v1/acquiring/list }}
+title: Список отчётов об издержках на приём платежей
 api: wb-financial-reports-and-accounting
 method: POST
 path: /api/finance/v1/acquiring/list
@@ -9,14 +9,26 @@ tags:
 spec_version: finances
 source: "https://dev.wildberries.ru/docs/openapi/financial-reports-and-accounting"
 deprecated: false
-content_sha: 9c61da33464b74cc
+content_sha: d023544a8b4ab9a3
 ---
 
-# Список отчётов об издержках на приём платежей{{ /api/finance/v1/acquiring/list }}
+# Список отчётов об издержках на приём платежей
 
 `POST /api/finance/v1/acquiring/list`
 
-Описание метода Метод доступен по Персональному токену, Сервисному токену Метод возвращает список отчётов об издержках на приём платежей по формату [таблицы отчётов](https://seller.wildberries.ru/suppliers-mutual-settlements/reports-implementations/acquiring-reports). Лимит запросов на один аккаунт продавца: | Период | Лимит | Интервал | Всплеск | | --- | --- | --- | --- | | 1 мин | 1 запрос | 1 мин | 1 запрос |
+Описание метода
+
+ Метод доступен по
+ Персональному токену, 
+ Сервисному токену
+
+Метод возвращает список отчётов об издержках на приём платежей по формату [таблицы отчётов](https://seller.wildberries.ru/suppliers-mutual-settlements/reports-implementations/acquiring-reports).
+
+Лимит запросов на один аккаунт продавца:
+
+| Период | Лимит | Интервал | Всплеск |
+| --- | --- | --- | --- |
+| 1 мин | 1 запрос | 1 мин | 1 запрос |
 
 ## Запрос
 
@@ -31,54 +43,54 @@ content_sha: 9c61da33464b74cc
 
 **200** — Успешно
 
-- `reportId` — integer<int64> **обязательный**. ID отчёта
-- `sellerFinanceName` — string **обязательный**. Наименование продавца
-- `dateFrom` — string<date> **обязательный**. Дата начала отчётного периода
-- `dateTo` — string<date> **обязательный**. Дата конца отчётного периода
-- `createDate` — string<date> **обязательный**. Дата формирования отчёта
-- `currency` — string **обязательный**. Валюта отчёта
 - `acquiringFeeSum` — string **обязательный**. Сумма издержек по эквайрингу
 - `acquiringFeeVatSum` — string **обязательный**. В том числе НДС
+- `createDate` — string<date> **обязательный**. Дата формирования отчёта
+- `currency` — string **обязательный**. Валюта отчёта
+- `dateFrom` — string<date> **обязательный**. Дата начала отчётного периода
+- `dateTo` — string<date> **обязательный**. Дата конца отчётного периода
+- `reportId` — integer<int64> **обязательный**. ID отчёта
+- `sellerFinanceName` — string **обязательный**. Наименование продавца
 
 **204** — Нет данных
 
 **400** — Неправильный запрос
 
+- `detail` — string. Детали ошибки
+- `origin` — string. ID внутреннего сервиса WB
+- `requestId` — string. ID запроса
 - `status` — integer. HTTP статус-код
 - `title` — string. Заголовок ошибки
-- `detail` — string. Детали ошибки
-- `requestId` — string. ID запроса
-- `origin` — string. ID внутреннего сервиса WB
 
 **401** — Не авторизован
 
-- `title` — string. Заголовок ошибки
-- `detail` — string. Детали ошибки
 - `code` — string. Внутренний код ошибки
-- `requestId` — string. Уникальный ID запроса
+- `detail` — string. Детали ошибки
 - `origin` — string. ID внутреннего сервиса WB
+- `requestId` — string. Уникальный ID запроса
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
+- `title` — string. Заголовок ошибки
 
 **403** — Доступ запрещён
 
-- `title` — string. Заголовок ошибки
-- `detail` — string. Детали ошибки
 - `code` — string. Внутренний код ошибки
-- `requestId` — string. ID запроса
+- `detail` — string. Детали ошибки
 - `origin` — string. ID внутреннего сервиса WB
+- `requestId` — string. ID запроса
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
+- `title` — string. Заголовок ошибки
 
 **429** — Слишком много запросов
 
-- `title` — string. Заголовок ошибки
-- `detail` — string. Детали ошибки
 - `code` — string. Внутренний код ошибки
-- `requestId` — string. Уникальный ID запроса
+- `detail` — string. Детали ошибки
 - `origin` — string. ID внутреннего сервиса WB
+- `requestId` — string. Уникальный ID запроса
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
+- `title` — string. Заголовок ошибки

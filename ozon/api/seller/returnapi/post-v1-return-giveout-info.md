@@ -9,14 +9,15 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: eb68b63eec4012f0
+content_sha: c44673330b2dd0ca
 ---
 
 # Информация о возвратной отгрузке
 
 `POST /v1/return/giveout/info`
 
-Метод для получения информации о возвратной отгрузке. В параметр `giveout_id` передаётся значение, полученное в методе [/v1/return/giveout/list](#operation/ReturnAPI_GiveoutList).
+Метод для получения информации о возвратной отгрузке. 
+В параметр `giveout_id` передаётся значение, полученное в методе [/v1/return/giveout/list](#operation/ReturnAPI_GiveoutList).
 
 ## Параметры
 

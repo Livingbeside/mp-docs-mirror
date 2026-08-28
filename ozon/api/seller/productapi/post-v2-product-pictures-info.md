@@ -9,7 +9,7 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: 5912605a830f946f
+content_sha: b42a93b8281946f4
 ---
 
 # Получить изображения товаров
@@ -34,13 +34,13 @@ content_sha: 5912605a830f946f
 **200** — Изображения товаров
 
 - `items` — array[object]. Изображения товаров.
-  - `product_id` — integer<int64>. Идентификатор товара в системе Ozon — `product_id`.
-  - `primary_photo` — array[string]. Ссылка на главное изображение.
-  - `photo` — array[string]. Ссылки на фотографии товара.
   - `color_photo` — array[string]. Ссылки на загруженные образцы цвета.
   - `errors` — array[object]. Список ошибок по изображениям товара.
     - `message` — string. Описание ошибки.
     - `url` — string. Ссылка на изображение.
+  - `photo` — array[string]. Ссылки на фотографии товара.
+  - `primary_photo` — array[string]. Ссылка на главное изображение.
+  - `product_id` — integer<int64>. Идентификатор товара в системе Ozon — `product_id`.
 
 **default** — Ошибка
 

@@ -1,5 +1,5 @@
 ---
-title: Список отчётов реализации{{ /api/finance/v1/sales-reports/list }}
+title: Список отчётов реализации
 api: wb-financial-reports-and-accounting
 method: POST
 path: /api/finance/v1/sales-reports/list
@@ -9,14 +9,28 @@ tags:
 spec_version: finances
 source: "https://dev.wildberries.ru/docs/openapi/financial-reports-and-accounting"
 deprecated: false
-content_sha: 3717df1086624c44
+content_sha: 1277595283ede33d
 ---
 
-# Список отчётов реализации{{ /api/finance/v1/sales-reports/list }}
+# Список отчётов реализации
 
 `POST /api/finance/v1/sales-reports/list`
 
-Описание метода Метод доступен по Персональному токену, Сервисному токену Метод возвращает список отчётов релизации по формату [таблицы отчётов](https://seller.wildberries.ru/suppliers-mutual-settlements). Данные доступны с 1 января 2025 года. Лимит запросов на один аккаунт продавца: | Период | Лимит | Интервал | Всплеск | | --- | --- | --- | --- | | 1 мин | 1 запрос | 1 мин | 1 запрос |
+Описание метода
+
+ Метод доступен по
+ Персональному токену, 
+ Сервисному токену
+
+Метод возвращает список отчётов релизации по формату [таблицы отчётов](https://seller.wildberries.ru/suppliers-mutual-settlements).
+
+Данные доступны с 1 января 2025 года.
+
+Лимит запросов на один аккаунт продавца:
+
+| Период | Лимит | Интервал | Всплеск |
+| --- | --- | --- | --- |
+| 1 мин | 1 запрос | 1 мин | 1 запрос |
 
 ## Запрос
 
@@ -32,67 +46,67 @@ content_sha: 3717df1086624c44
 
 **200** — Успешно
 
-- `reportId` — integer<int64> **обязательный**. ID отчёта
-- `sellerFinanceName` — string **обязательный**. Наименование продавца
-- `dateFrom` — string<date> **обязательный**. Дата начала отчётного периода
-- `dateTo` — string<date> **обязательный**. Дата конца отчётного периода
+- `additionalPaymentSum` — string **обязательный**. Корректировка Вознаграждения Вайлдберриз (ВВ)
+- `avgSalePercent` — number **обязательный**. Согласованная скидка, %
+- `bankPaymentSum` — string **обязательный**. Итого к оплате
+- `cashbackAmountSum` — string **обязательный**. Сумма, удержанная за начисленные баллы программы лояльности
+- `cashbackCommissionChangeSum` — string **обязательный**. Стоимость участия в программе лояльности
+- `cashbackDiscountSum` — string **обязательный**. Компенсация скидки по программе лояльности
 - `createDate` — string<date> **обязательный**. Дата формирования отчёта
 - `currency` — string **обязательный**. Валюта отчёта
+- `dateFrom` — string<date> **обязательный**. Дата начала отчётного периода
+- `dateTo` — string<date> **обязательный**. Дата конца отчётного периода
+- `deductionSum` — string **обязательный**. Прочие удержания и выплаты
+- `deliveryServiceSum` — string **обязательный**. Стоимость логистики
+- `forPaySum` — string **обязательный**. К перечислению за товар
+- `paidAcceptanceSum` — string **обязательный**. Стоимость операций при приёмке
+- `paidStorageSum` — string **обязательный**. Стоимость хранения
+- `paymentSchedule` — string **обязательный**. Разовое изменение срока перечисления денежных средств
+- `penaltySum` — string **обязательный**. Общая сумма штрафов
+- `reportId` — integer<int64> **обязательный**. ID отчёта
 - `reportType` — integer (1, 2, 3) **обязательный**. Тип отчёта: - `1` — основной - `2` — по выкупам - `3` — по выкупам для Грузии
 - `retailAmountSum` — string **обязательный**. Продажа
-- `forPaySum` — string **обязательный**. К перечислению за товар
-- `avgSalePercent` — number **обязательный**. Согласованная скидка, %
-- `deliveryServiceSum` — string **обязательный**. Стоимость логистики
-- `paidStorageSum` — string **обязательный**. Стоимость хранения
-- `paidAcceptanceSum` — string **обязательный**. Стоимость операций при приёмке
-- `deductionSum` — string **обязательный**. Прочие удержания и выплаты
-- `penaltySum` — string **обязательный**. Общая сумма штрафов
-- `additionalPaymentSum` — string **обязательный**. Корректировка Вознаграждения Вайлдберриз (ВВ)
-- `cashbackAmountSum` — string **обязательный**. Сумма, удержанная за начисленные баллы программы лояльности
-- `cashbackDiscountSum` — string **обязательный**. Компенсация скидки по программе лояльности
-- `cashbackCommissionChangeSum` — string **обязательный**. Стоимость участия в программе лояльности
-- `paymentSchedule` — string **обязательный**. Разовое изменение срока перечисления денежных средств
-- `bankPaymentSum` — string **обязательный**. Итого к оплате
+- `sellerFinanceName` — string **обязательный**. Наименование продавца
 
 **204** — Нет данных
 
 **400** — Неправильный запрос
 
+- `detail` — string. Детали ошибки
+- `origin` — string. ID внутреннего сервиса WB
+- `requestId` — string. ID запроса
 - `status` — integer. HTTP статус-код
 - `title` — string. Заголовок ошибки
-- `detail` — string. Детали ошибки
-- `requestId` — string. ID запроса
-- `origin` — string. ID внутреннего сервиса WB
 
 **401** — Не авторизован
 
-- `title` — string. Заголовок ошибки
-- `detail` — string. Детали ошибки
 - `code` — string. Внутренний код ошибки
-- `requestId` — string. Уникальный ID запроса
+- `detail` — string. Детали ошибки
 - `origin` — string. ID внутреннего сервиса WB
+- `requestId` — string. Уникальный ID запроса
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
+- `title` — string. Заголовок ошибки
 
 **403** — Доступ запрещён
 
-- `title` — string. Заголовок ошибки
-- `detail` — string. Детали ошибки
 - `code` — string. Внутренний код ошибки
-- `requestId` — string. ID запроса
+- `detail` — string. Детали ошибки
 - `origin` — string. ID внутреннего сервиса WB
+- `requestId` — string. ID запроса
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
+- `title` — string. Заголовок ошибки
 
 **429** — Слишком много запросов
 
-- `title` — string. Заголовок ошибки
-- `detail` — string. Детали ошибки
 - `code` — string. Внутренний код ошибки
-- `requestId` — string. Уникальный ID запроса
+- `detail` — string. Детали ошибки
 - `origin` — string. ID внутреннего сервиса WB
+- `requestId` — string. Уникальный ID запроса
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
+- `title` — string. Заголовок ошибки

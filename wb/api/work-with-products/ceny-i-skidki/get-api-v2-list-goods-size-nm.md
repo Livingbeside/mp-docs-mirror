@@ -1,5 +1,5 @@
 ---
-title: Получить размеры товара с ценами{{ /api/v2/list/goods/size/nm }}
+title: Получить размеры товара с ценами
 api: wb-work-with-products
 method: GET
 path: /api/v2/list/goods/size/nm
@@ -9,14 +9,31 @@ tags:
 spec_version: items
 source: "https://dev.wildberries.ru/docs/openapi/work-with-products"
 deprecated: false
-content_sha: b6d0f29853a6fb86
+content_sha: 79415a7cd3470226
 ---
 
-# Получить размеры товара с ценами{{ /api/v2/list/goods/size/nm }}
+# Получить размеры товара с ценами
 
 `GET /api/v2/list/goods/size/nm`
 
-Описание метода Метод возвращает информацию обо всех размерах одного товара: цены, валюту, общие скидки и скидки для [WB Клуба](./work-with-products#tag/Ceny-i-skidki/paths/~1api~1v2~1upload~1task~1club-discount/post). Работает только для товаров из категорий, где можно устанавливать цены отдельно для разных размеров. Для таких товаров `"editableSizePrice":true`. Чтобы получить информацию о самом товаре, используйте [отдельный метод](./work-with-products#tag/Ceny-i-skidki/paths/~1api~1v2~1list~1goods~1filter/get). Лимит запросов на один аккаунт продавца для всех методов категории Цены и скидки : | Тип | Период | Лимит | Интервал | Всплеск | | --- | --- | --- | --- | --- | | Персональный | 6 сек | 10 запросов | 600 мс | 5 запросов | | Сервисный | 6 сек | 10 запросов | 600 мс | 5 запросов | | Базовый с секретом | 6 сек | 10 запросов | 600 мс | 5 запросов | | Базовый | 1 ч | 4 запроса | 15 мин | 1 запрос | В песочнице — максимум 1 запрос в секунду суммарно для всех методов Контента .
+Описание метода
+
+Метод возвращает информацию обо всех размерах одного товара: цены, валюту, общие скидки и скидки для [WB Клуба](./work-with-products#tag/Ceny-i-skidki/paths/~1api~1v2~1upload~1task~1club-discount/post).
+
+Работает только для товаров из категорий, где можно устанавливать цены отдельно для разных размеров. Для таких товаров `"editableSizePrice":true`.
+
+Чтобы получить информацию о самом товаре, используйте [отдельный метод](./work-with-products#tag/Ceny-i-skidki/paths/~1api~1v2~1list~1goods~1filter/get).
+
+Лимит запросов на один аккаунт продавца для всех методов категории Цены и скидки:
+
+| Тип | Период | Лимит | Интервал | Всплеск |
+| --- | --- | --- | --- | --- |
+| Персональный | 6 сек | 10 запросов | 600 мс | 5 запросов |
+| Сервисный | 6 сек | 10 запросов | 600 мс | 5 запросов |
+| Базовый с секретом | 6 сек | 10 запросов | 600 мс | 5 запросов |
+| Базовый | 1 ч | 4 запроса | 15 мин | 1 запрос |
+
+В песочнице — максимум 1 запрос в секунду суммарно для всех методов Контента.
 
 ## Параметры
 
@@ -32,18 +49,18 @@ content_sha: b6d0f29853a6fb86
 
 - `data` — object. Данные ответа
   - `listGoods` — array[object]. Размеры товара
-    - `nmID` — integer. Артикул WB
-    - `sizeID` — integer. ID размера. Можно получить с помощью метода [Получение списка товаров по артикулам](./work-with-products#tag/Ceny-i-skidki/paths/~1api~1v2~1list~1goods~1filter/get), поле `sizeID`. В методах Контента это поле `chrtID`
-    - `vendorCode` — string. Артикул продавца
-    - `price` — integer. Цена
-    - `currencyIsoCode4217` — string. Валюта, по стандарту ISO 4217
-    - `discountedPrice` — number. Цена со скидкой
-    - `clubDiscountedPrice` — number. Цена со скидкой, включая скидку WB Клуба
-    - `discount` — integer. Скидка, %
     - `clubDiscount` — integer. Скидка WB Клуба, %
-    - `techSizeName` — string. Размер товара
+    - `clubDiscountedPrice` — number. Цена со скидкой, включая скидку WB Клуба
+    - `currencyIsoCode4217` — string. Валюта, по стандарту ISO 4217
+    - `discount` — integer. Скидка, %
+    - `discountedPrice` — number. Цена со скидкой
     - `editableSizePrice` — boolean. Можно ли устанавливать цены отдельно для разных размеров (зависит от категории товара): - `true` — можно - `false` — нельзя
     - `isBadTurnover` — boolean. Признак неликвидного товара: - `true` — неликвидный товар с [низким индексом остатка](https://seller.wildberries.ru/instructions/ru/ru/material/stocks-index?categoryId=e324ce0f-9a2a-4b8d-8fd1-72f751b09b3b&goBackOption=prevRoute#%D1%83%D1%80%D0%BE%D0%B2%D0%BD%D0%B8-%D0%B8%D0%BD%D0%B4%D0%B5%D0%BA%D1%81%D0%B0-%D0%BE%D1%81%D1%82%D0%B0%D1%82%D0%BA%D0%B0) - Поле отсутствует — ликвидный товар
+    - `nmID` — integer. Артикул WB
+    - `price` — integer. Цена
+    - `sizeID` — integer. ID размера. Можно получить с помощью метода [Получение списка товаров по артикулам](./work-with-products#tag/Ceny-i-skidki/paths/~1api~1v2~1list~1goods~1filter/get), поле `sizeID`. В методах Контента это поле `chrtID`
+    - `techSizeName` — string. Размер товара
+    - `vendorCode` — string. Артикул продавца
 - `error` — boolean. Флаг ошибки
 - `errorText` — string. Текст ошибки
 
@@ -55,19 +72,19 @@ content_sha: b6d0f29853a6fb86
 
 **401** — Не авторизован
 
-- `title` — string. Заголовок ошибки
-- `detail` — string. Детали ошибки
 - `code` — string. Внутренний код ошибки
-- `requestId` — string. Уникальный ID запроса
+- `detail` — string. Детали ошибки
 - `origin` — string. ID внутреннего сервиса WB
+- `requestId` — string. Уникальный ID запроса
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
+- `title` — string. Заголовок ошибки
 
 **402** — Требуется платёж
 
-- `title` — string. Заголовок ошибки
 - `detail` — string. Детали ошибки. Ошибка возвращается только сервисам из [Каталога решений для бизнеса](/business-solutions)
+- `title` — string. Заголовок ошибки
 
 **403** — Доступ запрещён
 
@@ -77,11 +94,11 @@ content_sha: b6d0f29853a6fb86
 
 **429** — Слишком много запросов
 
-- `title` — string. Заголовок ошибки
-- `detail` — string. Детали ошибки
 - `code` — string. Внутренний код ошибки
-- `requestId` — string. Уникальный ID запроса
+- `detail` — string. Детали ошибки
 - `origin` — string. ID внутреннего сервиса WB
+- `requestId` — string. Уникальный ID запроса
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
+- `title` — string. Заголовок ошибки

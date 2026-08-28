@@ -9,14 +9,16 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: a9258803305a4c6b
+content_sha: 8e6054236c5315b2
 ---
 
 # Поиск точек для отгрузки поставки
 
 `POST /v1/warehouse/fbo/list`
 
-Используйте метод, чтобы найти точки отгрузки для кросс-докинга и прямых поставок. Вы можете посмотреть адреса всех точек на карте и в виде таблицы в [Базе знаний](https://seller-edu.ozon.ru/fbo/warehouses/adresa-skladov-fbo).
+Используйте метод, чтобы найти точки отгрузки для кросс-докинга и прямых поставок.
+
+Вы можете посмотреть адреса всех точек на карте и в виде таблицы в [Базе знаний](https://seller-edu.ozon.ru/fbo/warehouses/adresa-skladov-fbo).
 
 ## Запрос
 

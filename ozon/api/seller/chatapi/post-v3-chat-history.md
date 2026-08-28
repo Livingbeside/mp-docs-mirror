@@ -9,14 +9,16 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: 0d7cc34e75e0334e
+content_sha: 3351c984af20bfee
 ---
 
 # История чата
 
 `POST /v3/chat/history`
 
-Возвращает историю сообщений чата. По умолчанию от самого нового сообщения к старым. Получите список чатов с покупателем `chats.chat.chat_type="Buyer_Seller"` в ответе метода [/v3/chat/list](#operation/ChatAPI_ChatListV3).
+Возвращает историю сообщений чата. По умолчанию от самого нового сообщения к старым. 
+
+ Получите список чатов с покупателем `chats.chat.chat_type="Buyer_Seller"` в ответе метода [/v3/chat/list](#operation/ChatAPI_ChatListV3).
 
 ## Параметры
 

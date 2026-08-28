@@ -1,5 +1,5 @@
 ---
-title: Получить отчёт{{ /api/v1/analytics/banned-products/blocked }}
+title: Получить отчёт
 api: wb-reports
 method: GET
 path: /api/v1/analytics/banned-products/blocked
@@ -9,14 +9,25 @@ tags:
 spec_version: reports
 source: "https://dev.wildberries.ru/docs/openapi/reports"
 deprecated: false
-content_sha: ca0b07eb6c4815fa
+content_sha: 073078056debedaa
 ---
 
-# Получить отчёт{{ /api/v1/analytics/banned-products/blocked }}
+# Получить отчёт
 
 `GET /api/v1/analytics/banned-products/blocked`
 
-Описание метода Метод возвращает список [заблокированных карточек товаров продавца](https://seller.wildberries.ru/analytics-reports/banned-products) с причинами блокировки. Лимит запросов на один аккаунт продавца: | Тип | Период | Лимит | Интервал | Всплеск | | --- | --- | --- | --- | --- | | Персональный | 10 сек | 1 запрос | 10 сек | 6 запросов | | Сервисный | 10 сек | 1 запрос | 10 сек | 6 запросов | | Базовый с секретом | 10 сек | 1 запрос | 10 сек | 6 запросов | | Базовый | 1 ч | 1 запрос | 1 ч | 1 запрос |
+Описание метода
+
+Метод возвращает список [заблокированных карточек товаров продавца](https://seller.wildberries.ru/analytics-reports/banned-products) с причинами блокировки.
+
+Лимит запросов на один аккаунт продавца:
+
+| Тип | Период | Лимит | Интервал | Всплеск |
+| --- | --- | --- | --- | --- |
+| Персональный | 10 сек | 1 запрос | 10 сек | 6 запросов |
+| Сервисный | 10 сек | 1 запрос | 10 сек | 6 запросов |
+| Базовый с секретом | 10 сек | 1 запрос | 10 сек | 6 запросов |
+| Базовый | 1 ч | 1 запрос | 1 ч | 1 запрос |
 
 ## Параметры
 
@@ -32,41 +43,41 @@ content_sha: ca0b07eb6c4815fa
 - `report` — array[object]. Отчёт
   - `brand` — string. Бренд
   - `nmId` — integer. Артикул WB
+  - `reason` — string. Причина блокировки
   - `title` — string. Наименование товара
   - `vendorCode` — string. Артикул продавца
-  - `reason` — string. Причина блокировки
 
 **400** — Неправильный запрос
 
-- `title` — string. Заголовок ошибки
-- `status` — number. HTTP статус-код
 - `detail` — string. Детали ошибки
-- `requestId` — string. Уникальный ID запроса
 - `origin` — string. ID внутреннего сервиса WB
+- `requestId` — string. Уникальный ID запроса
+- `status` — number. HTTP статус-код
+- `title` — string. Заголовок ошибки
 
 **401** — Не авторизован
 
-- `title` — string. Заголовок ошибки
-- `detail` — string. Детали ошибки
 - `code` — string. Внутренний код ошибки
-- `requestId` — string. Уникальный ID запроса
+- `detail` — string. Детали ошибки
 - `origin` — string. ID внутреннего сервиса WB
+- `requestId` — string. Уникальный ID запроса
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
+- `title` — string. Заголовок ошибки
 
 **402** — Требуется платёж
 
-- `title` — string. Заголовок ошибки
 - `detail` — string. Детали ошибки. Ошибка возвращается только сервисам из [Каталога решений для бизнеса](/business-solutions)
+- `title` — string. Заголовок ошибки
 
 **429** — Слишком много запросов
 
-- `title` — string. Заголовок ошибки
-- `detail` — string. Детали ошибки
 - `code` — string. Внутренний код ошибки
-- `requestId` — string. Уникальный ID запроса
+- `detail` — string. Детали ошибки
 - `origin` — string. ID внутреннего сервиса WB
+- `requestId` — string. Уникальный ID запроса
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
+- `title` — string. Заголовок ошибки

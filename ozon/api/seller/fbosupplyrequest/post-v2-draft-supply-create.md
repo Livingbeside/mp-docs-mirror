@@ -9,14 +9,19 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: bd110f5b69e51249
+content_sha: 2e93ddec05c0b079
 ---
 
 # Создать заявку на поставку по черновику
 
 `POST /v2/draft/supply/create`
 
-Вы можете создавать заявку на поставку по черновику: - 2 раза в минуту; - 50 раз в час; - 500 раз в день. Если превысите лимит, вернётся ошибка 429.
+Вы можете создавать заявку на поставку по черновику:
+- 2 раза в минуту;
+- 50 раз в час;
+- 500 раз в день.
+
+Если превысите лимит, вернётся ошибка 429.
 
 ## Параметры
 
@@ -33,10 +38,10 @@ content_sha: bd110f5b69e51249
 - `selected_cluster_warehouses` — array[object] **обязательный**. Информация о кластере и складах в нём. Можно передать один кластер для кросс-докинговой и прямой поставки или список всех кластеров для поставки в несколько кластеров.
   - `macrolocal_cluster_id` — integer<int64> **обязательный**. Идентификатор кластера размещения.
   - `storage_warehouse_id` — integer<int64> **обязательный**. Идентификатор склада размещения. Получите значение параметра методом [/v2/draft/create/info](#operation/DraftCreateInfo). Только для поставок с типом `DIRECT`.
+- `supply_type` — string (CROSSDOCK, DIRECT, MULTI_CLUSTER) **обязательный**. Тип поставки: - `CROSSDOCK` — кросс-докинг; - `DIRECT` — прямая; - `MULTI_CLUSTER` — для нескольких кластеров.
 - `timeslot` — object. Таймслот поставки.
   - `from_in_timezone` — string. Начало таймслота.
   - `to_in_timezone` — string. Конец таймслота.
-- `supply_type` — string (CROSSDOCK, DIRECT, MULTI_CLUSTER) **обязательный**. Тип поставки: - `CROSSDOCK` — кросс-докинг; - `DIRECT` — прямая; - `MULTI_CLUSTER` — для нескольких кластеров.
 
 ## Ответы
 

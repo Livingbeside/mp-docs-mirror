@@ -9,14 +9,16 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: 69a5ade60176ab2e
+content_sha: 5cb6a4cdb4994392
 ---
 
 # Удалить грузоместо в заявке на поставку
 
 `POST /v1/cargoes/delete`
 
-Метод для удаления грузомест в заявке на поставку. Чтобы проверить статус удаления, используйте метод [/v1/cargoes/delete/status](#operation/CargoesAPI_CargoesDeleteStatus).
+Метод для удаления грузомест в заявке на поставку.
+
+Чтобы проверить статус удаления, используйте метод [/v1/cargoes/delete/status](#operation/CargoesAPI_CargoesDeleteStatus).
 
 ## Запрос
 

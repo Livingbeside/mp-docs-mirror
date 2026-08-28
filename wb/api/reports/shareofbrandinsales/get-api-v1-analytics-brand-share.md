@@ -1,5 +1,5 @@
 ---
-title: Получить отчёт{{ /api/v1/analytics/brand-share }}
+title: Получить отчёт
 api: wb-reports
 method: GET
 path: /api/v1/analytics/brand-share
@@ -9,14 +9,27 @@ tags:
 spec_version: reports
 source: "https://dev.wildberries.ru/docs/openapi/reports"
 deprecated: false
-content_sha: 5e18417a26222ce7
+content_sha: d9d3ec775735ff81
 ---
 
-# Получить отчёт{{ /api/v1/analytics/brand-share }}
+# Получить отчёт
 
 `GET /api/v1/analytics/brand-share`
 
-Описание метода Метод возвращает отчёт о [доле бренда продавца в продажах](https://seller.wildberries.ru/analytics-reports/brand-share). Можно получить отчёт максимум за 365 дней. Данные доступны с 1 ноября 2022. Лимит запросов на один аккаунт продавца: | Тип | Период | Лимит | Интервал | Всплеск | | --- | --- | --- | --- | --- | | Персональный | 5 сек | 1 запрос | 5 сек | 20 запросов | | Сервисный | 5 сек | 1 запрос | 5 сек | 20 запросов | | Базовый с секретом | 5 сек | 1 запрос | 5 сек | 20 запросов | | Базовый | 1 ч | 1 запрос | 1 ч | 1 запрос |
+Описание метода
+
+Метод возвращает отчёт о [доле бренда продавца в продажах](https://seller.wildberries.ru/analytics-reports/brand-share). 
+
+Можно получить отчёт максимум за 365 дней. Данные доступны с 1 ноября 2022.
+
+Лимит запросов на один аккаунт продавца:
+
+| Тип | Период | Лимит | Интервал | Всплеск |
+| --- | --- | --- | --- | --- |
+| Персональный | 5 сек | 1 запрос | 5 сек | 20 запросов |
+| Сервисный | 5 сек | 1 запрос | 5 сек | 20 запросов |
+| Базовый с секретом | 5 сек | 1 запрос | 5 сек | 20 запросов |
+| Базовый | 1 ч | 1 запрос | 1 ч | 1 запрос |
 
 ## Параметры
 
@@ -46,27 +59,27 @@ content_sha: 5e18417a26222ce7
 
 **401** — Не авторизован
 
-- `title` — string. Заголовок ошибки
-- `detail` — string. Детали ошибки
 - `code` — string. Внутренний код ошибки
-- `requestId` — string. Уникальный ID запроса
+- `detail` — string. Детали ошибки
 - `origin` — string. ID внутреннего сервиса WB
+- `requestId` — string. Уникальный ID запроса
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
+- `title` — string. Заголовок ошибки
 
 **402** — Требуется платёж
 
-- `title` — string. Заголовок ошибки
 - `detail` — string. Детали ошибки. Ошибка возвращается только сервисам из [Каталога решений для бизнеса](/business-solutions)
+- `title` — string. Заголовок ошибки
 
 **429** — Слишком много запросов
 
-- `title` — string. Заголовок ошибки
-- `detail` — string. Детали ошибки
 - `code` — string. Внутренний код ошибки
-- `requestId` — string. Уникальный ID запроса
+- `detail` — string. Детали ошибки
 - `origin` — string. ID внутреннего сервиса WB
+- `requestId` — string. Уникальный ID запроса
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
+- `title` — string. Заголовок ошибки

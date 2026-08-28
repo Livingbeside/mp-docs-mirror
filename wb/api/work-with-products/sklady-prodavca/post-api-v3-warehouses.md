@@ -1,5 +1,5 @@
 ---
-title: Создать склад продавца{{ /api/v3/warehouses }}
+title: Создать склад продавца
 api: wb-work-with-products
 method: POST
 path: /api/v3/warehouses
@@ -9,14 +9,26 @@ tags:
 spec_version: items
 source: "https://dev.wildberries.ru/docs/openapi/work-with-products"
 deprecated: false
-content_sha: aaee4dad8baf3eea
+content_sha: 4de180358f6d5b19
 ---
 
-# Создать склад продавца{{ /api/v3/warehouses }}
+# Создать склад продавца
 
 `POST /api/v3/warehouses`
 
-Описание метода Метод создаёт склад продавца для работы с [остатками товаров](./work-with-products#tag/Ostatki-na-skladah-prodavca), кроме сверхгабаритных (СГТ), по модели [FBS](./orders-fbs) (Fulfillment by Seller). Лимит запросов на один аккаунт продавца для всех методов складов продавца : | Период | Лимит | Интервал | Всплеск | | --- | --- | --- | --- | | 1 мин | 300 запросов | 200 мс | 20 запросов | Один запрос с кодами ответов 4XX учитывается как 10 запросов. В песочнице — максимум 1 запрос в секунду суммарно для всех методов Контента .
+Описание метода
+
+Метод создаёт склад продавца для работы с [остатками товаров](./work-with-products#tag/Ostatki-na-skladah-prodavca), кроме сверхгабаритных (СГТ), по модели [FBS](./orders-fbs) (Fulfillment by Seller).
+
+Лимит запросов на один аккаунт продавца для всех методов складов продавца:
+
+| Период | Лимит | Интервал | Всплеск |
+| --- | --- | --- | --- |
+| 1 мин | 300 запросов | 200 мс | 20 запросов |
+
+Один запрос с кодами ответов 4XX учитывается как 10 запросов.
+
+В песочнице — максимум 1 запрос в секунду суммарно для всех методов Контента.
 
 ## Запрос
 
@@ -34,50 +46,50 @@ content_sha: aaee4dad8baf3eea
 **400** — Неправильный запрос
 
 - `code` — string. Код ошибки
-- `message` — string. Описание ошибки
 - `data` — object. Дополнительные данные ошибки
+- `message` — string. Описание ошибки
 
 **401** — Не авторизован
 
-- `title` — string. Заголовок ошибки
-- `detail` — string. Детали ошибки
 - `code` — string. Внутренний код ошибки
-- `requestId` — string. Уникальный ID запроса
+- `detail` — string. Детали ошибки
 - `origin` — string. ID внутреннего сервиса WB
+- `requestId` — string. Уникальный ID запроса
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
+- `title` — string. Заголовок ошибки
 
 **402** — Требуется платёж
 
-- `title` — string. Заголовок ошибки
 - `detail` — string. Детали ошибки. Ошибка возвращается только сервисам из [Каталога решений для бизнеса](/business-solutions)
+- `title` — string. Заголовок ошибки
 
 **403** — Доступ запрещён
 
 - `code` — string. Код ошибки
-- `message` — string. Описание ошибки
 - `data` — object. Дополнительные данные ошибки
+- `message` — string. Описание ошибки
 
 **404** — Не найдено
 
 - `code` — string. Код ошибки
-- `message` — string. Описание ошибки
 - `data` — object. Дополнительные данные ошибки
+- `message` — string. Описание ошибки
 
 **409** — Ошибка создания нового склада
 
 - `code` — string. Код ошибки
-- `message` — string. Описание ошибки
 - `data` — object. Дополнительные данные ошибки
+- `message` — string. Описание ошибки
 
 **429** — Слишком много запросов
 
-- `title` — string. Заголовок ошибки
-- `detail` — string. Детали ошибки
 - `code` — string. Внутренний код ошибки
-- `requestId` — string. Уникальный ID запроса
+- `detail` — string. Детали ошибки
 - `origin` — string. ID внутреннего сервиса WB
+- `requestId` — string. Уникальный ID запроса
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
+- `title` — string. Заголовок ошибки

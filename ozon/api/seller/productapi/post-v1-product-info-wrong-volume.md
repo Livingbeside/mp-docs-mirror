@@ -9,14 +9,16 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: d30b1bafa9465ce6
+content_sha: 00a9cae923296c63
 ---
 
 # Список товаров с некорректными ОВХ
 
 `POST /v1/product/info/wrong-volume`
 
-Возвращает список товаров с некорректными объёмно-весовыми характеристиками (ОВХ). Если вы указали размеры правильно, обратитесь в поддержку Ozon. [Подробнее об объёмно-весовых характеристиках в Базе знаний продавца](https://seller-edu.ozon.ru/libra/work-with-goods/trebovaniya-k-kartochkam-tovarov/product-information/ovh)
+Возвращает список товаров с некорректными объёмно-весовыми характеристиками (ОВХ). Если вы указали размеры правильно, обратитесь в поддержку Ozon.
+
+[Подробнее об объёмно-весовых характеристиках в Базе знаний продавца](https://seller-edu.ozon.ru/libra/work-with-goods/trebovaniya-k-kartochkam-tovarov/product-information/ovh)
 
 ## Параметры
 

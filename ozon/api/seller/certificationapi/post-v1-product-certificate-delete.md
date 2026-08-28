@@ -9,7 +9,7 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: fd8b9759de2d1803
+content_sha: 587e0d5198ca6c55
 ---
 
 # Удалить сертификат
@@ -27,8 +27,8 @@ content_sha: fd8b9759de2d1803
 **200** — Результат удаления сертификата
 
 - `result` — object. Результат удаления сертификата.
-  - `is_delete` — boolean. Удалён ли сертификат: - `true` — удалён, - `false` — не удалён.
   - `error_message` — string. Описание ошибок при удалении сертификата.
+  - `is_delete` — boolean. Удалён ли сертификат: - `true` — удалён, - `false` — не удалён.
 
 **default** — Ошибка
 

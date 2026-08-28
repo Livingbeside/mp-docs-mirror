@@ -9,14 +9,16 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: a72b09c42042d8e6
+content_sha: fe623f862c17d1cf
 ---
 
 # Получить отчёт о балансе
 
 `POST /v1/finance/balance`
 
-Соответствует разделу **Финансы → Баланс** в личном кабинете. Вы можете оставить обратную связь по этому методу в комментариях к [обсуждению](https://dev.ozon.ru/community/1732-Novyi-metod-polucheniia-dannykh-po-balansu/) в сообществе разработчиков Ozon for dev.
+Соответствует разделу **Финансы → Баланс** в личном кабинете.
+
+Вы можете оставить обратную связь по этому методу в комментариях к [обсуждению](https://dev.ozon.ru/community/1732-Novyi-metod-polucheniia-dannykh-po-balansu/) в сообществе разработчиков Ozon for dev.
 
 ## Запрос
 

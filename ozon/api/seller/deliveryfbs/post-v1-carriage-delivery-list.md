@@ -9,14 +9,18 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: 370744ece6b3bf41
+content_sha: b1df9d965f33c26c
 ---
 
 # Список методов доставки и отгрузок
 
 `POST /v1/carriage/delivery/list`
 
-Метод не возвращает информацию по методам доставки, у которых нет отправлений. Используйте метод, чтобы получить список созданных отгрузок для метода доставки и их статусы. 20 марта 2026 года отключим метод. Переключитесь на /v2/carriage/delivery/list .
+Метод не возвращает информацию по методам доставки, у которых нет отправлений.
+
+Используйте метод, чтобы получить список созданных отгрузок для метода доставки и их статусы. 
+
+ 20 марта 2026 года отключим метод. Переключитесь на /v2/carriage/delivery/list.
 
 ## Параметры
 
@@ -47,6 +51,7 @@ content_sha: 370744ece6b3bf41
     - `quantum_count` — integer<int32>. Количество квантов в перевозке.
     - `status` — string. Статус перевозки для запрашиваемых метода и даты.
   - `cut_in` — string<date-time>. Время начала сборки и часовой пояс времени склада.
+  - `cutoff_at` — string<date-time>. Дата и время, до которых нужно собрать отправление.
   - `delivery_method_id` — integer. Идентификатор метода доставки.
   - `delivery_method_name` — string. Название метода доставки.
   - `delivery_method_status` — string. Статус метода доставки.
@@ -65,9 +70,6 @@ content_sha: 370744ece6b3bf41
   - `integration_type` — string. Тип интеграции со службой доставки.
   - `is_presort` — boolean. `true`, если отгрузка с предсортировкой.
   - `is_rfbs` — boolean. `true`, если склад работает по схеме rFBS.
-  - `recommended_time_local` — string. Рекомендуемое местное время отгрузки в пункт приёма заказов.
-  - `recommended_time_utc_offset_in_minutes` — number<int32>. Смещение часового пояса рекомендуемого времени отгрузки от UTC-0 в минутах.
-  - `cutoff_at` — string<date-time>. Дата и время, до которых нужно собрать отправление.
   - `mandatory_packaged_count` — integer<int32>. Количество «обязательных» собранных отправлений.
   - `mandatory_packaged_quantum_count` — integer<int32>. Количество «обязательных» собранных квантов.
   - `mandatory_postings_count` — integer<int32>. Количество отправлений, которые нужно собрать.
@@ -75,6 +77,8 @@ content_sha: 370744ece6b3bf41
   - `optional_packaged_count` — integer<int32>. Количество собранных «необязательных» отправлений.
   - `postings_for_another_carriage_count` — integer<int32>. Количество отправлений, которые могут попасть в следующую перевозку.
   - `quantum_for_another_carriage_count` — integer<int32>. Количество квантов, которые могут попасть в следующую перевозку.
+  - `recommended_time_local` — string. Рекомендуемое местное время отгрузки в пункт приёма заказов.
+  - `recommended_time_utc_offset_in_minutes` — number<int32>. Смещение часового пояса рекомендуемого времени отгрузки от UTC-0 в минутах.
   - `timeslot_from` — string<date-time>. Начало таймслота в точке отгрузки.
   - `timeslot_to` — string<date-time>. Окончание таймслота в точке отгрузки.
   - `tpl_provider_icon_url` — string. Ссылка на иконку службы доставки.

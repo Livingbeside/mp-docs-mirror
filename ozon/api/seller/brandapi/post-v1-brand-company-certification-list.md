@@ -9,14 +9,19 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: 54a8c77f75779dff
+content_sha: 1ec69427a50fc262
 ---
 
 # Список сертифицируемых брендов
 
 `POST /v1/brand/company-certification/list`
 
-Метод для получения списка брендов, для которых требуется предоставить сертификат. Ответ содержит список брендов, товары которых есть в вашем личном кабинете. Список брендов может изменяться, если Ozon получит требование от бренда предоставлять сертификат. [Подробнее о работе с брендами в Базе знаний продавца](https://seller-edu.ozon.ru/libra/work-with-goods/trebovaniya-k-kartochkam-tovarov/characteristics/brendy)
+Метод для получения списка брендов, для которых требуется предоставить сертификат. Ответ содержит список брендов,
+товары которых есть в вашем личном кабинете.
+
+Список брендов может изменяться, если Ozon получит требование от бренда предоставлять сертификат.
+
+[Подробнее о работе с брендами в Базе знаний продавца](https://seller-edu.ozon.ru/libra/work-with-goods/trebovaniya-k-kartochkam-tovarov/characteristics/brendy)
 
 ## Параметры
 

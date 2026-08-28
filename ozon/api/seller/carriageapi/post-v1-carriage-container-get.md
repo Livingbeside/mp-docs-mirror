@@ -9,7 +9,7 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: 43949f7aebb59b9d
+content_sha: 4b3ea8b827647e7a
 ---
 
 # Получить информацию о грузоместах
@@ -40,14 +40,14 @@ content_sha: 43949f7aebb59b9d
   - `in_process_at` — string<date-time>. Дата и время начала обработки отправления.
   - `posting_number` — string. Номер отправления.
   - `products` — array[object]. Список товаров.
-    - `sku` — integer<int64>. Идентификатор товара в системе Ozon — SKU.
     - `name` — string. Название товара.
     - `offer_id` — string. Идентификатор товара в системе продавца — артикул.
-    - `quantity` — integer<int32>. Количество экземпляров.
     - `picture_url` — string. Ссылка на изображение товара.
     - `product_color` — string. Цвет товара.
     - `product_size_manufacturer` — string. Размер производителя.
     - `product_size_russian` — string. Российский размер.
+    - `quantity` — integer<int32>. Количество экземпляров.
+    - `sku` — integer<int64>. Идентификатор товара в системе Ozon — SKU.
   - `sort_type` — string. Тип сортировки грузоместа: - `sort` — сортируемый; - `non-sort` — несортируемый.
   - `weight` — number<float>. Вес отправления, кг.
 - `related_container_ids` — array[string<int64>]. Идентификаторы дочерних грузомест.

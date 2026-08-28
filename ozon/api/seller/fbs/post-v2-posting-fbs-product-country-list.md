@@ -9,7 +9,7 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: baae7cb4a56866d8
+content_sha: 62bec4283fda3b38
 ---
 
 # Список доступных стран-изготовителей
@@ -29,8 +29,8 @@ content_sha: baae7cb4a56866d8
 **200** — Список доступных стран-изготовителей
 
 - `result` — array[object]. Список стран-изготовителей и ISO коды.
-  - `name` — string. Название страны на русском языке.
   - `country_iso_code` — string. ISO код страны.
+  - `name` — string. Название страны на русском языке.
 
 **default** — Ошибка
 

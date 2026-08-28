@@ -9,14 +9,16 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: 2e0ef3e63d89e9c0
+content_sha: 0d33c5afccea0338
 ---
 
 # Получить параметры для создания сертификата качества
 
 `POST /v2/product/certification/options`
 
-Используйте информацию о параметрах в запросе метода [/v2/product/certification/params](#operation/ProductCertificateParams). Вы можете оставить обратную связь о работе метода в [комментариях](https://dev.ozon.ru/community/2278-Novye-beta-metody-dlia-dobavleniia-sertifikatov-kachestva/) в сообществе разработчиков Ozon for dev.
+Используйте информацию о параметрах в запросе метода [/v2/product/certification/params](#operation/ProductCertificateParams).
+
+Вы можете оставить обратную связь о работе метода в [комментариях](https://dev.ozon.ru/community/2278-Novye-beta-metody-dlia-dobavleniia-sertifikatov-kachestva/) в сообществе разработчиков Ozon for dev.
 
 ## Параметры
 

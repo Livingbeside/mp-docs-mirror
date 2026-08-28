@@ -9,14 +9,14 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: e428bf0dd99cfde3
+content_sha: b1439ebb4ee14efd
 ---
 
 # Интервалы поставки
 
 `POST /v1/supply-order/timeslot/get`
 
-Метод устаревает и будет отключён 19 августа 2026 года. Переключитесь на /v2/supply-order/timeslot/list .
+Метод устаревает и будет отключён 19 августа 2026 года. Переключитесь на /v2/supply-order/timeslot/list.
 
 ## Параметры
 

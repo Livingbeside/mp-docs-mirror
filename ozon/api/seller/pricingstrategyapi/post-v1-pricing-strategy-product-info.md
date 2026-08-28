@@ -9,7 +9,7 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: 9ebdcf18db407f5e
+content_sha: 74908f1a0bdfc472
 ---
 
 # Цена товара у конкурента
@@ -36,12 +36,12 @@ content_sha: 9ebdcf18db407f5e
 **200** — Цена товара у конкурента
 
 - `result` — object. Результат работы метода.
-  - `strategy_id` — string. Идентификатор стратегии.
   - `is_enabled` — boolean. `true`, если товар участвует в стратегии ценообразования.
-  - `strategy_product_price` — integer<int32>. Цена по стратегии.
   - `price_downloaded_at` — string. Дата установки цены по стратегии.
   - `strategy_competitor_id` — integer<int64>. Идентификатор конкурента.
   - `strategy_competitor_product_url` — string. Ссылка на товар конкурента.
+  - `strategy_id` — string. Идентификатор стратегии.
+  - `strategy_product_price` — integer<int32>. Цена по стратегии.
 
 **default** — Ошибка
 

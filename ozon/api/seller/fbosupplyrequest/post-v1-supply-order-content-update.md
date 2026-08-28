@@ -9,14 +9,16 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: 4c6efd13b1355c8b
+content_sha: 8b6677c2a2a45d5f
 ---
 
 # Редактирование товарного состава
 
 `POST /v1/supply-order/content/update`
 
-Метод для редактирования товарного состава в заявке на поставку. Чтобы проверить статус редактирования, используйте метод [/v1/supply-order/content/update/status](#operation/SupplyOrderAPI_SupplyOrderContentUpdateStatus).
+Метод для редактирования товарного состава в заявке на поставку.
+
+Чтобы проверить статус редактирования, используйте метод [/v1/supply-order/content/update/status](#operation/SupplyOrderAPI_SupplyOrderContentUpdateStatus).
 
 ## Запрос
 

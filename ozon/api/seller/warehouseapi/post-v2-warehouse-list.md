@@ -9,7 +9,7 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: 64df58404b5ae8b6
+content_sha: e3893ddeaa6c20a0
 ---
 
 # Список складов
@@ -29,8 +29,8 @@ content_sha: 64df58404b5ae8b6
 
 **Тело запроса** (`application/json`):
 
-- `limit` — integer **обязательный**. Количество значений в ответе.
 - `cursor` — string. Указатель для выборки следующих данных.
+- `limit` — integer **обязательный**. Количество значений в ответе.
 - `warehouse_ids` — array[string<int64>]. Идентификаторы складов.
 
 ## Ответы
@@ -38,6 +38,7 @@ content_sha: 64df58404b5ae8b6
 **200** — Список складов
 
 - `cursor` — string. Указатель для выборки следующих данных.
+- `has_next` — boolean. `true`, если в ответе вернулись не все значения.
 - `warehouses` — array[object]. Список складов.
   - `address_info` — object. Информация о расположении склада.
     - `address` — string. Адрес склада.
@@ -82,7 +83,6 @@ content_sha: 64df58404b5ae8b6
   - `warehouse_type` — string. Тип склада.
   - `with_item_list` — boolean. Признак включённой печати листа подбора.
   - `working_days` — array[string (UNSPECIFIED, MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY)]. Рабочие дни склада: - `UNSPECIFIED` — значение не определено; - `MONDAY` — понедельник; - `TUESDAY` — вторник; - `WEDNESDAY` — среда; - `THURSDAY` — четверг; - `FRIDAY` — пятница; - `SATURDAY` — суббота; - `SUNDAY` — воскресенье.
-- `has_next` — boolean. `true`, если в ответе вернулись не все значения.
 
 **default** — Ошибка
 

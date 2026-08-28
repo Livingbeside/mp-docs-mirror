@@ -9,14 +9,16 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: cf72ac46a95ce789
+content_sha: 46859a91b5f52373
 ---
 
 # Создать вызов курьера на забор отгрузки pick-up
 
 `POST /v1/warehouse/fbs/pickup/courier/create`
 
-Метод позволяет запланировать приезд курьера для отгрузки ему отправлений. [Подробнее об отгрузках курьеру на FBS в Базе знаний](https://seller-edu.ozon.ru/fbs/ozon-logistika/otgruzka-kyruery)
+Метод позволяет запланировать приезд курьера для отгрузки ему отправлений. 
+
+[Подробнее об отгрузках курьеру на FBS в Базе знаний](https://seller-edu.ozon.ru/fbs/ozon-logistika/otgruzka-kyruery)
 
 ## Параметры
 

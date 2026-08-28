@@ -9,7 +9,7 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: true
-content_sha: 91dec5171783733f
+content_sha: a6ab6714f0467f53
 ---
 
 # Количество отзывов по статусам
@@ -18,7 +18,9 @@ content_sha: 91dec5171783733f
 
 > ⚠️ Метод помечен как **deprecated**.
 
-Метод устаревает. Переключитесь на /v2/review/count . Доступно для продавцов с подпиской [Управление отзывами](https://seller-edu.ozon.ru/libra/seller-rating/podpiska-upravlenie-otzyvami) или [Premium Pro](https://seller-edu.ozon.ru/seller-rating/about-rating/podpiska-premium-pro).
+Метод устаревает. Переключитесь на /v2/review/count.
+
+Доступно для продавцов с подпиской [Управление отзывами](https://seller-edu.ozon.ru/libra/seller-rating/podpiska-upravlenie-otzyvami) или [Premium Pro](https://seller-edu.ozon.ru/seller-rating/about-rating/podpiska-premium-pro).
 
 ## Запрос
 

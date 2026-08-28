@@ -9,14 +9,17 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: bd8fa5575a03bbfd
+content_sha: 59a72fb2bbcb8fa6
 ---
 
 # Подтверждение отгрузки
 
 `POST /v1/carriage/approve`
 
-Используйте метод, чтобы подтвердить отгрузку после её создания. После подтверждения отгрузка перейдёт в статус «Сформирована». После подтверждения отгрузки вы можете получить лист отгрузки методом [/v2/posting/fbs/act/get-pdf](#operation/PostingAPI_PostingFBSGetAct) и штрихкод отгрузки методом [/v2/posting/fbs/act/get-barcode](#operation/PostingAPI_PostingFBSGetBarcode).
+Используйте метод, чтобы подтвердить отгрузку после её создания.
+После подтверждения отгрузка перейдёт в статус «Сформирована».
+
+После подтверждения отгрузки вы можете получить лист отгрузки методом [/v2/posting/fbs/act/get-pdf](#operation/PostingAPI_PostingFBSGetAct) и штрихкод отгрузки методом [/v2/posting/fbs/act/get-barcode](#operation/PostingAPI_PostingFBSGetBarcode).
 
 ## Параметры
 

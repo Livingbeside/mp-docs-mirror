@@ -9,14 +9,16 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: 044bd4f789933432
+content_sha: 9d486824d8052922
 ---
 
 # Настроить видимость товара на витрине Ozon и Ozon Селект
 
 `POST /v1/product/visibility/set`
 
-Метод доступен продавцам, которые подключены к Ozon Селект или Ozon Доставке. Вы можете оставить обратную связь о работе метода в [комментариях](https://dev.ozon.ru/community/1951-Novyi-metod-upravleniia-vidimostiu-na-vitrinakh/) в сообществе разработчиков Ozon for dev.
+Метод доступен продавцам, которые подключены к Ozon Селект или Ozon Доставке.
+
+Вы можете оставить обратную связь о работе метода в [комментариях](https://dev.ozon.ru/community/1951-Novyi-metod-upravleniia-vidimostiu-na-vitrinakh/) в сообществе разработчиков Ozon for dev.
 
 ## Запрос
 

@@ -1,5 +1,5 @@
 ---
-title: Обновить настройки автовозврата товаров{{ /api/marketplace/v3/fbs/settings/autoreturns/items }}
+title: Обновить настройки автовозврата товаров
 api: wb-orders-fbs
 method: PATCH
 path: /api/marketplace/v3/fbs/settings/autoreturns/items
@@ -9,14 +9,27 @@ tags:
 spec_version: order
 source: "https://dev.wildberries.ru/docs/openapi/orders-fbs"
 deprecated: false
-content_sha: a0a1ca11c1dbcb0c
+content_sha: 6786bdea07b51204
 ---
 
-# Обновить настройки автовозврата товаров{{ /api/marketplace/v3/fbs/settings/autoreturns/items }}
+# Обновить настройки автовозврата товаров
 
 `PATCH /api/marketplace/v3/fbs/settings/autoreturns/items`
 
-Описание метода Метод доступен по Персональному токену Метод устанавливает настройки автовозврата малогабаритных товаров — `"cargoType":1`. Лимит запросов на один аккаунт продавца для методов сборочных заданий, поставок, пропусков и настроек автовозврата FBS : | Период | Лимит | Интервал | Всплеск | | --- | --- | --- | --- | | 1 мин | 300 запросов | 200 мс | 20 запросов | Один запрос с кодами ответов 4XX учитывается как 10 запросов
+Описание метода
+
+ Метод доступен по
+ Персональному токену
+
+Метод устанавливает настройки автовозврата малогабаритных товаров — `"cargoType":1`.
+
+Лимит запросов на один аккаунт продавца для методов сборочных заданий, поставок, пропусков и настроек автовозврата FBS:
+
+| Период | Лимит | Интервал | Всплеск |
+| --- | --- | --- | --- |
+| 1 мин | 300 запросов | 200 мс | 20 запросов |
+
+Один запрос с кодами ответов 4XX учитывается как 10 запросов
 
 ## Запрос
 
@@ -43,22 +56,22 @@ content_sha: a0a1ca11c1dbcb0c
 
 **401** — Не авторизован
 
-- `title` — string. Заголовок ошибки
-- `detail` — string. Детали ошибки
 - `code` — string. Внутренний код ошибки
-- `requestId` — string. Уникальный ID запроса
+- `detail` — string. Детали ошибки
 - `origin` — string. ID внутреннего сервиса WB
+- `requestId` — string. Уникальный ID запроса
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
+- `title` — string. Заголовок ошибки
 
 **429** — Слишком много запросов
 
-- `title` — string. Заголовок ошибки
-- `detail` — string. Детали ошибки
 - `code` — string. Внутренний код ошибки
-- `requestId` — string. Уникальный ID запроса
+- `detail` — string. Детали ошибки
 - `origin` — string. ID внутреннего сервиса WB
+- `requestId` — string. Уникальный ID запроса
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
+- `title` — string. Заголовок ошибки

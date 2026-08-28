@@ -9,7 +9,7 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: 7364aa512f52c1e9
+content_sha: 96dbb4a20de08299
 ---
 
 # Получить список ролей и методов по API-ключу
@@ -31,8 +31,8 @@ content_sha: 7364aa512f52c1e9
 
 - `expires_at` — string<date-time>. Дата истечения срока действия ключа.
 - `roles` — array[object]. Информация о доступных ролях и методах.
-  - `name` — string. Название роли.
   - `methods` — array[string]. Методы, доступные для роли.
+  - `name` — string. Название роли.
 
 **default** — Ошибка
 

@@ -9,7 +9,7 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: 6d10bd2afde5e4ba
+content_sha: 599d37d35aeae45a
 ---
 
 # Получить описание характеристик товара
@@ -43,25 +43,26 @@ content_sha: 6d10bd2afde5e4ba
 
 **200** — Описание характеристик товара
 
+- `last_id` — string. Идентификатор последнего значения на странице. Чтобы получить следующие значения, укажите полученное значение в следующем запросе в параметре `last_id`.
 - `result` — array[object]. Результаты запроса.
   - `attributes` — array[object]. Список характеристик товара.
-    - `id` — integer<int64>. Идентификатор характеристики.
     - `complex_id` — integer<int64>. Идентификатор характеристики, которая поддерживает вложенные свойства. Например, у характеристики «Процессор» есть вложенные характеристики «Производитель» и «L2 Cache». У каждой из вложенных характеристик может быть несколько вариантов значений.
+    - `id` — integer<int64>. Идентификатор характеристики.
     - `values` — array[object]. Массив значений характеристик.
       - `dictionary_value_id` — integer<int64>. Идентификатор характеристики в словаре.
       - `value` — string. Значение характеристики товара.
   - `attributes_with_defaults` — array[integer<int64>]. Список идентификаторов характеристик со значением по умолчанию.
   - `barcode` — string. Штрихкод.
   - `barcodes` — array of strings. Все штрихкоды товара.
-  - `description_category_id` — integer<int64>. Идентификатор категории. Используйте его с методами [/v1/description-category/attribute](#operation/DescriptionCategoryAPI_GetAttributes) и [/v1/description-category/attribute/values](#operation/DescriptionCategoryAPI_GetAttributeValues).
   - `color_image` — string. Маркетинговый цвет.
   - `complex_attributes` — array[object]. Массив вложенных характеристик.
-    - `id` — integer<int64>. Идентификатор характеристики.
     - `complex_id` — integer<int64>. Идентификатор характеристики, которая поддерживает вложенные свойства. Например, у характеристики «Процессор» есть вложенные характеристики «Производитель» и «L2 Cache». У каждой из вложенных характеристик может быть несколько вариантов значений.
+    - `id` — integer<int64>. Идентификатор характеристики.
     - `values` — array[object]. Массив значений характеристик.
       - `dictionaryValueId` — integer<int64>. Идентификатор характеристики в словаре.
       - `value` — string. Значение характеристики товара.
   - `depth` — integer<int64>. Глубина.
+  - `description_category_id` — integer<int64>. Идентификатор категории. Используйте его с методами [/v1/description-category/attribute](#operation/DescriptionCategoryAPI_GetAttributes) и [/v1/description-category/attribute/values](#operation/DescriptionCategoryAPI_GetAttributeValues).
   - `dimension_unit` — string. Единица измерения габаритов: - `mm` — миллиметры, - `cm` — сантиметры, - `in` — дюймы.
   - `height` — integer<int64>. Высота упаковки.
   - `id` — integer<int64>. Идентификатор товара в системе Ozon — `product_id`.
@@ -70,8 +71,8 @@ content_sha: 6d10bd2afde5e4ba
     - `file_name` — string
     - `index` — integer<int64>
   - `model_info` — object. Информация о модели.
-    - `model_id` — integer<int64>. Идентификатор модели.
     - `count` — integer<int64>. Количество объединённых товаров модели.
+    - `model_id` — integer<int64>. Идентификатор модели.
   - `name` — string. Название товара.
   - `offer_id` — string. Идентификатор товара в системе продавца — артикул.
   - `pdf_list` — array[object]. Массив PDF-файлов.
@@ -83,7 +84,6 @@ content_sha: 6d10bd2afde5e4ba
   - `weight` — integer<int64>. Вес товара в упаковке.
   - `weight_unit` — string. Единица измерения веса.
   - `width` — integer<int64>. Ширина упаковки.
-- `last_id` — string. Идентификатор последнего значения на странице. Чтобы получить следующие значения, укажите полученное значение в следующем запросе в параметре `last_id`.
 - `total` — string<int64>. Количество товаров в списке.
 
 **400** — Неверный параметр

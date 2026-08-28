@@ -9,14 +9,16 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: 7aa84ee593c530b9
+content_sha: fecfeb160d95c81a
 ---
 
 # Создать акцию с механикой «Скидка»
 
 `POST /v1/seller-actions/create/discount`
 
-Недоступен для продавцов из СНГ. Вы можете оставить обратную связь о работе метода в [комментариях](https://dev.ozon.ru/community/1872-Novye-metody-dlia-raboty-s-aktsiiami-sellera) в сообществе разработчиков Ozon for dev.
+Недоступен для продавцов из СНГ.
+
+Вы можете оставить обратную связь о работе метода в [комментариях](https://dev.ozon.ru/community/1872-Novye-metody-dlia-raboty-s-aktsiiami-sellera) в сообществе разработчиков Ozon for dev.
 
 ## Параметры
 

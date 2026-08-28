@@ -9,14 +9,20 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: 54bda6109082feeb
+content_sha: bbe6ab08db664faa
 ---
 
 # Создать новый чат
 
 `POST /v1/chat/start`
 
-Доступно для продавцов с подпиской [Premium Plus](https://seller-edu.ozon.ru/seller-rating/about-rating/subscription-premium-plus) или [Premium Pro](https://seller-edu.ozon.ru/seller-rating/about-rating/podpiska-premium-pro). Создает новый чат с покупателем по отправлению. Например, чтобы уточнить адрес или модель товара. Для отправлений: - FBO — начать чат может только покупатель. - FBS и rFBS — вы можете открыть чат в течение 72 часов после оплаты или доставки отправления.
+Доступно для продавцов с подпиской [Premium Plus](https://seller-edu.ozon.ru/seller-rating/about-rating/subscription-premium-plus) или [Premium Pro](https://seller-edu.ozon.ru/seller-rating/about-rating/podpiska-premium-pro).
+
+Создает новый чат с покупателем по отправлению. Например, чтобы уточнить адрес или модель товара. 
+
+Для отправлений:
+- FBO — начать чат может только покупатель.
+- FBS и rFBS — вы можете открыть чат в течение 72 часов после оплаты или доставки отправления.
 
 ## Параметры
 

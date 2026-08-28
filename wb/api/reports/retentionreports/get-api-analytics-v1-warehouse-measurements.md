@@ -1,5 +1,5 @@
 ---
-title: Замеры склада{{ /api/analytics/v1/warehouse-measurements }}
+title: Замеры склада
 api: wb-reports
 method: GET
 path: /api/analytics/v1/warehouse-measurements
@@ -9,14 +9,25 @@ tags:
 spec_version: reports
 source: "https://dev.wildberries.ru/docs/openapi/reports"
 deprecated: false
-content_sha: cbe383699fb89b4e
+content_sha: 8ef999926ffe7c90
 ---
 
-# Замеры склада{{ /api/analytics/v1/warehouse-measurements }}
+# Замеры склада
 
 `GET /api/analytics/v1/warehouse-measurements`
 
-Описание метода Метод возвращает отчёт о [замерах склада](https://seller.wildberries.ru/analytics-reports/dimensions-penalties/warehouse-measurements) Лимит запросов на один аккаунт продавца: | Тип | Период | Лимит | Интервал | Всплеск | | --- | --- | --- | --- | --- | | Персональный | 1 мин | 1 запрос | 1 мин | 1 запрос | | Сервисный | 1 мин | 1 запрос | 1 мин | 1 запрос | | Базовый с секретом | 1 мин | 1 запрос | 1 мин | 1 запрос | | Базовый | 6 ч | 1 запрос | 6 ч | 1 запрос |
+Описание метода
+
+Метод возвращает отчёт о [замерах склада](https://seller.wildberries.ru/analytics-reports/dimensions-penalties/warehouse-measurements)
+
+Лимит запросов на один аккаунт продавца:
+
+| Тип | Период | Лимит | Интервал | Всплеск |
+| --- | --- | --- | --- | --- |
+| Персональный | 1 мин | 1 запрос | 1 мин | 1 запрос |
+| Сервисный | 1 мин | 1 запрос | 1 мин | 1 запрос |
+| Базовый с секретом | 1 мин | 1 запрос | 1 мин | 1 запрос |
+| Базовый | 6 ч | 1 запрос | 6 ч | 1 запрос |
 
 ## Параметры
 
@@ -33,56 +44,56 @@ content_sha: cbe383699fb89b4e
 
 - `data` — object **обязательный**. Данные ответа
   - `reports` — array[object] **обязательный**. Замеры
-    - `nmId` — integer. Артикул WB
-    - `subjectName` — string. Предмет
     - `dimId` — integer. ID замера
+    - `dt` — string<date-time>. Дата и время
+    - `height` — integer. Высота, см
+    - `length` — integer. Длина, см
+    - `nmId` — integer. Артикул WB
+    - `photoUrls` — array[string]. Фото замеров
+    - `subjectName` — string. Предмет
     - `volume` — number. Объём, л
     - `width` — integer. Ширина, см
-    - `length` — integer. Длина, см
-    - `height` — integer. Высота, см
-    - `photoUrls` — array[string]. Фото замеров
-    - `dt` — string<date-time>. Дата и время
   - `total` — integer **обязательный**. Количество замеров в отчёте. Без учёта `limit` и `offset`
 
 **400** — Неправильный запрос
 
-- `title` — string. Заголовок ошибки
-- `status` — integer. HTTP статус-код
 - `detail` — string. Детали ошибки
-- `requestId` — string. Уникальный ID запроса
 - `origin` — string. ID внутреннего сервиса WB
+- `requestId` — string. Уникальный ID запроса
+- `status` — integer. HTTP статус-код
+- `title` — string. Заголовок ошибки
 
 **401** — Не авторизован
 
-- `title` — string. Заголовок ошибки
-- `detail` — string. Детали ошибки
 - `code` — string. Внутренний код ошибки
-- `requestId` — string. Уникальный ID запроса
+- `detail` — string. Детали ошибки
 - `origin` — string. ID внутреннего сервиса WB
+- `requestId` — string. Уникальный ID запроса
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
+- `title` — string. Заголовок ошибки
 
 **402** — Требуется платёж
 
-- `title` — string. Заголовок ошибки
 - `detail` — string. Детали ошибки. Ошибка возвращается только сервисам из [Каталога решений для бизнеса](/business-solutions)
+- `title` — string. Заголовок ошибки
 
 **403** — Доступ запрещён
 
-- `title` — string. Заголовок ошибки
-- `status` — integer. HTTP статус-код
 - `detail` — string. Детали ошибки
-- `requestId` — string. Уникальный ID запроса
 - `origin` — string. ID внутреннего сервиса WB
+- `requestId` — string. Уникальный ID запроса
+- `status` — integer. HTTP статус-код
+- `title` — string. Заголовок ошибки
 
 **429** — Слишком много запросов
 
-- `title` — string. Заголовок ошибки
-- `detail` — string. Детали ошибки
 - `code` — string. Внутренний код ошибки
-- `requestId` — string. Уникальный ID запроса
+- `detail` — string. Детали ошибки
 - `origin` — string. ID внутреннего сервиса WB
+- `requestId` — string. Уникальный ID запроса
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
+- `title` — string. Заголовок ошибки

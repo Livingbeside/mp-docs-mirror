@@ -9,14 +9,18 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: 5ca4ee275b6ea73e
+content_sha: 71c47ee0d5b50508
 ---
 
 # Получить PDF c документами
 
 `POST /v2/posting/fbs/act/get-pdf`
 
-С помощью метода можно получить: - продацам из России — лист отгрузки и транспортную накладную; - продавцам из СНГ — акт и транспортную накладную. Получите список доступных документов для отгрузки в параметре `available_actions` метода [/v1/carriage/get](#operation/CarriageGet).
+С помощью метода можно получить:
+- продацам из России — лист отгрузки и транспортную накладную;
+- продавцам из СНГ — акт и транспортную накладную.
+
+Получите список доступных документов для отгрузки в параметре `available_actions` метода [/v1/carriage/get](#operation/CarriageGet).
 
 ## Параметры
 
@@ -35,9 +39,9 @@ content_sha: 5ca4ee275b6ea73e
 
 **200** — Документы
 
+- `content_type` — string. Тип файла.
 - `file_content` — string<byte>. Содержание файла в бинарном виде.
 - `file_name` — string. Название файла.
-- `content_type` — string. Тип файла.
 
 **400** — Неверный параметр
 

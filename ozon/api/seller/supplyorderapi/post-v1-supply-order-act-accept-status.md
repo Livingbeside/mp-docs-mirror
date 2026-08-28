@@ -9,7 +9,7 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: 35c32d5e01e83690
+content_sha: daa1a0919f7b4b26
 ---
 
 # Получить статус согласования акта
@@ -35,8 +35,8 @@ content_sha: 35c32d5e01e83690
 
 **200** — Статус согласования акта
 
-- `status` — string (SUCCESS, IN_PROGRESS, FAILED). Статус операции: - `SUCCESS` — акт согласован; - `IN_PROGRESS` — согласование в процессе; - `FAILED` — ошибка при согласовании акта. По умолчанию: `SUCCESS`.
 - `error_message` — string. Причина ошибки.
+- `status` — string (SUCCESS, IN_PROGRESS, FAILED). Статус операции: - `SUCCESS` — акт согласован; - `IN_PROGRESS` — согласование в процессе; - `FAILED` — ошибка при согласовании акта. По умолчанию: `SUCCESS`.
 
 **400** — Неверный параметр
 

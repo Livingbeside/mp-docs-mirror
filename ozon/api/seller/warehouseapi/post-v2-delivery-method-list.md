@@ -9,7 +9,7 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: e9bd199945c10d69
+content_sha: 97969492f088f7eb
 ---
 
 # Список методов доставки realFBS-склада
@@ -41,7 +41,6 @@ content_sha: e9bd199945c10d69
 **200** — Список методов склада
 
 - `cursor` — string. Указатель для выборки следующих данных.
-- `has_next` — boolean. `true`, если в ответе вернули не все методы доставки.
 - `delivery_methods` — array[object]. Методы доставки.
   - `created_at` — string<date-time>. Дата создания метода доставки.
   - `cutoff` — string. Время, до которого продавцу нужно собрать заказ.
@@ -62,6 +61,7 @@ content_sha: e9bd199945c10d69
   - `tpl_integration_type` — string. Тип интеграции со службой доставки: - `aggregator` — доставка внешней службой, Ozon регистрирует заказ; - `3pl_tracking` — доставка внешней службой, продавец регистрирует заказ; - `non_integrated` — доставка силами продавца; - `hybrid` — гибридная интеграция.
   - `updated_at` — string<date-time>. Дата и время последнего обновления метода метода доставки.
   - `warehouse_id` — integer<int64>. Идентификатор склада.
+- `has_next` — boolean. `true`, если в ответе вернули не все методы доставки.
 
 **400** — Неверный параметр
 

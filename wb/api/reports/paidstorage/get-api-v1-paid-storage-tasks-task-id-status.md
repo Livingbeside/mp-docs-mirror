@@ -9,14 +9,25 @@ tags:
 spec_version: reports
 source: "https://dev.wildberries.ru/docs/openapi/reports"
 deprecated: false
-content_sha: 7fc7072b69b1c554
+content_sha: ac79559ee198d6da
 ---
 
 # Проверить статус{{ /api/v1/paid_storage/tasks/{task_id}/status }}
 
 `GET /api/v1/paid_storage/tasks/{task_id}/status`
 
-Описание метода Метод возвращает статус [задания на генерацию](./reports#tag/paidStorage/operation/getV1PaidStorage) отчёта о [платном хранении](./reports#tag/paidStorage/operation/getV1PaidStorageTasksTaskIdDownload). Лимит запросов на один аккаунт продавца: | Тип | Период | Лимит | Интервал | Всплеск | | --- | --- | --- | --- | --- | | Персональный | 5 сек | 1 запрос | 5 сек | 5 запросов | | Сервисный | 5 сек | 1 запрос | 5 сек | 5 запросов | | Базовый с секретом | 5 сек | 1 запрос | 5 сек | 5 запросов | | Базовый | 1 ч | 2 запроса | 30 мин | 2 запроса |
+Описание метода
+
+Метод возвращает статус [задания на генерацию](./reports#tag/paidStorage/operation/getV1PaidStorage) отчёта о [платном хранении](./reports#tag/paidStorage/operation/getV1PaidStorageTasksTaskIdDownload).
+
+Лимит запросов на один аккаунт продавца:
+
+| Тип | Период | Лимит | Интервал | Всплеск |
+| --- | --- | --- | --- | --- |
+| Персональный | 5 сек | 1 запрос | 5 сек | 5 запросов |
+| Сервисный | 5 сек | 1 запрос | 5 сек | 5 запросов |
+| Базовый с секретом | 5 сек | 1 запрос | 5 сек | 5 запросов |
+| Базовый | 1 ч | 2 запроса | 30 мин | 2 запроса |
 
 ## Параметры
 
@@ -41,14 +52,14 @@ content_sha: 7fc7072b69b1c554
 
 **401** — Не авторизован
 
-- `title` — string. Заголовок ошибки
-- `detail` — string. Детали ошибки
 - `code` — string. Внутренний код ошибки
-- `requestId` — string. Уникальный ID запроса
+- `detail` — string. Детали ошибки
 - `origin` — string. ID внутреннего сервиса WB
+- `requestId` — string. Уникальный ID запроса
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
+- `title` — string. Заголовок ошибки
 
 **404** — Не найдено
 
@@ -59,11 +70,11 @@ content_sha: 7fc7072b69b1c554
 
 **429** — Слишком много запросов
 
-- `title` — string. Заголовок ошибки
-- `detail` — string. Детали ошибки
 - `code` — string. Внутренний код ошибки
-- `requestId` — string. Уникальный ID запроса
+- `detail` — string. Детали ошибки
 - `origin` — string. ID внутреннего сервиса WB
+- `requestId` — string. Уникальный ID запроса
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
+- `title` — string. Заголовок ошибки

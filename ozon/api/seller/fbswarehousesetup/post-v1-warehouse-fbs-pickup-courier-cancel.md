@@ -9,14 +9,16 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: 18fd6a89806ed138
+content_sha: 002196dd9a5440da
 ---
 
 # Отменить вызов курьера на забор отгрузки pick-up
 
 `POST /v1/warehouse/fbs/pickup/courier/cancel`
 
-Метод позволяет отменить запланированный приезд курьера. [Подробнее об отгрузках курьеру на FBS в Базе знаний](https://seller-edu.ozon.ru/fbs/ozon-logistika/otgruzka-kyruery)
+Метод позволяет отменить запланированный приезд курьера. 
+
+[Подробнее об отгрузках курьеру на FBS в Базе знаний](https://seller-edu.ozon.ru/fbs/ozon-logistika/otgruzka-kyruery)
 
 ## Параметры
 

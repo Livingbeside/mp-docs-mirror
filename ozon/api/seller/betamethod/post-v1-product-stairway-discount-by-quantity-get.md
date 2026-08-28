@@ -9,14 +9,16 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: 4faf21952e0ead06
+content_sha: 78e4c5b4844e430b
 ---
 
 # Получить информацию о скидке от количества
 
 `POST /v1/product/stairway-discount/by-quantity/get`
 
-Возвращает информацию о скидке на товар в зависимости от его количества в заказе. Вы можете оставить обратную связь о работе метода в [комментариях](https://dev.ozon.ru/community/1719-Novye-metody-dlia-raboty-so-skidkoi-ot-kolichestva/) в сообществе разработчиков Ozon for dev.
+Возвращает информацию о скидке на товар в зависимости от его количества в заказе.
+
+Вы можете оставить обратную связь о работе метода в [комментариях](https://dev.ozon.ru/community/1719-Novye-metody-dlia-raboty-so-skidkoi-ot-kolichestva/) в сообществе разработчиков Ozon for dev.
 
 ## Параметры
 

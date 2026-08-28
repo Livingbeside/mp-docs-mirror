@@ -9,7 +9,7 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: true
-content_sha: b95311bf943a0299
+content_sha: 93e4ee2bc6aa36c9
 ---
 
 # Добавить сертификаты для товаров
@@ -18,7 +18,7 @@ content_sha: b95311bf943a0299
 
 > ⚠️ Метод помечен как **deprecated**.
 
-31 августа 2026 года отключим метод. Переключитесь на методы /v2/product/certification/options , /v2/product/certification/params и /v2/product/certificate/create .
+31 августа 2026 года отключим метод. Переключитесь на методы /v2/product/certification/options, /v2/product/certification/params и /v2/product/certificate/create.
 
 ## Параметры
 
@@ -31,13 +31,13 @@ content_sha: b95311bf943a0299
 
 **Тело запроса** (`multipart/form-data`):
 
+- `accordance_type_code` — string (technical_regulations_rf, technical_regulations_cu, gost). Тип соответствия требованиям. Чтобы получить доступные типы, используйте метод [GET /v1/product/certificate/accordance-types](#operation/ProductAPI_ProductCertificateAccordanceTypes). Параметр обязательный, если `type_code = declaration`, `certificate_of_conformity` или `safety_data_sheet`.
+- `expire_date` — string<date-time>. Дата окончания действия сертификата. Может быть пустым для бессрочных сертификатов. Формат: `2021-04-30T11:31:26Z`.
 - `files` — array[file] **обязательный**. Массив сертификатов для товара. Допустимые расширения jpg, jpeg, png, pdf.
+- `issue_date` — string<date-time> **обязательный**. Дата начала действия сертификата. По умолчанию: `2021-04-30T11:31:26Z`.
 - `name` — string **обязательный**. Название сертификата. Максимум 100 символов.
 - `number` — string **обязательный**. Номер сертификата. Максимум 100 символов.
 - `type_code` — string (certificate_of_conformity, declaration, certificate_of_registration, registration_certificate, refused_letter, veterinary_cover_document, safety_data_sheet) **обязательный**. Тип сертификата. Чтобы получить доступные типы, используйте метод [GET /v1/product/certificate/types](#operation/ProductAPI_ProductCertificateTypes).
-- `accordance_type_code` — string (technical_regulations_rf, technical_regulations_cu, gost). Тип соответствия требованиям. Чтобы получить доступные типы, используйте метод [GET /v1/product/certificate/accordance-types](#operation/ProductAPI_ProductCertificateAccordanceTypes). Параметр обязательный, если `type_code = declaration`, `certificate_of_conformity` или `safety_data_sheet`.
-- `issue_date` — string<date-time> **обязательный**. Дата начала действия сертификата. По умолчанию: `2021-04-30T11:31:26Z`.
-- `expire_date` — string<date-time>. Дата окончания действия сертификата. Может быть пустым для бессрочных сертификатов. Формат: `2021-04-30T11:31:26Z`.
 
 ## Ответы
 

@@ -10,14 +10,16 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: 9553e7929df6debd
+content_sha: 678b8d6b56870814
 ---
 
 # Получить информацию о стоках на складах FBO
 
 `POST /v1/product/info/stocks-by-warehouse/fbo`
 
-Передайте в запросе `offer_ids` или `skus`. Вы можете оставить обратную связь по этому методу в комментариях к [обсуждению](https://dev.ozon.ru/community/2177-Novyi-metod-dlia-polucheniia-ostatkov-FBO/) в сообществе разработчиков Ozon for dev.
+Передайте в запросе `offer_ids` или `skus`.
+
+Вы можете оставить обратную связь по этому методу в комментариях к [обсуждению](https://dev.ozon.ru/community/2177-Novyi-metod-dlia-polucheniia-ostatkov-FBO/) в сообществе разработчиков Ozon for dev.
 
 ## Запрос
 

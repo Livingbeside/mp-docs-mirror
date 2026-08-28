@@ -9,14 +9,16 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: 085b52a7b1ee82e7
+content_sha: 80f6f7425fcc2dc1
 ---
 
 # Получить начисления за день
 
 `POST /v1/finance/accrual/by-day`
 
-Если укажете `last_id` в запросе, передайте значение `date` из предыдущего запроса, иначе вернётся ошибка `400 Bad Request`. Вы можете оставить обратную связь о работе метода в [комментариях](https://dev.ozon.ru/community/2008-Novye-beta-metody-dlia-polucheniia-nachislenii/) в сообществе разработчиков Ozon for dev.
+Если укажете `last_id` в запросе, передайте значение `date` из предыдущего запроса, иначе вернётся ошибка `400 Bad Request`.
+
+Вы можете оставить обратную связь о работе метода в [комментариях](https://dev.ozon.ru/community/2008-Novye-beta-metody-dlia-polucheniia-nachislenii/) в сообществе разработчиков Ozon for dev.
 
 ## Параметры
 
@@ -37,6 +39,7 @@ content_sha: 085b52a7b1ee82e7
 **200** — Начисления за день
 
 - `accruals` — array[object]. Список начислений по отправлению.
+  - `accrual_id` — integer<int64>. Идентификатор начисления.
   - `accrued_category` — string (UNSPECIFIED, POSTING, ITEM, NON_ITEM, CONTAINER_FEES). Тип начисления: - `UNSPECIFIED` — не определён; - `POSTING` — начисление по отправлению; - `ITEM` — начисление по товару; - `NON_ITEM` — начисление по продавцу без привязки к товару; - `CONTAINER_FEES` — начисление по контейнеру. По умолчанию: `UNSPECIFIED`.
   - `container_fees` — object. Начисления по контейнеру.
     - `fees` — array[object]. Начисления.
@@ -98,7 +101,6 @@ content_sha: 085b52a7b1ee82e7
   - `total_amount` — object. Общая сумма начислений.
     - `amount` — string. Сумма.
     - `currency` — string. Валюта.
-  - `accrual_id` — integer<int64>. Идентификатор начисления.
   - `unit_number` — string. Идентификатор заказа или услуги. Например, номер отправления или номер рекламного договора.
 - `last_id` — string. Идентификатор последнего значения на странице. Срок жизни идентификатора — 15 минут.
 

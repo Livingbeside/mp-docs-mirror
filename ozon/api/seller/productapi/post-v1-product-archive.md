@@ -9,14 +9,17 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: 316e9e344fbc131c
+content_sha: c8822644beb9c290
 ---
 
 # Перенести товар в архив
 
 `POST /v1/product/archive`
 
-Возвращает статус запроса на архивацию. Чтобы проверить фактическое состояние товара после архивации, используйте метод [/v3/product/info/list](#operation/ProductAPI_GetProductInfoList). [Подробнее об управлении товарами в архиве в Базе знаний продавца](https://seller-edu.ozon.ru/libra/work-with-goods/zagruzka-tovarov/created-goods/upravlyat-tovarami-v-arhive)
+Возвращает статус запроса на архивацию.
+
+Чтобы проверить фактическое состояние товара после архивации, используйте метод [/v3/product/info/list](#operation/ProductAPI_GetProductInfoList).
+[Подробнее об управлении товарами в архиве в Базе знаний продавца](https://seller-edu.ozon.ru/libra/work-with-goods/zagruzka-tovarov/created-goods/upravlyat-tovarami-v-arhive)
 
 ## Параметры
 

@@ -9,14 +9,19 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: ae05bdb943d4a507
+content_sha: 8c9ecb895ce367a6
 ---
 
 # Получить связанные SKU
 
 `POST /v1/product/related-sku/get`
 
-Метод для получения единого SKU по старым идентификаторам SKU FBS и SKU FBO. В ответе будут все SKU, связанные с переданными. Метод может обработать любые SKU, даже скрытые или удалённые. Передавайте до 200 SKU в одном запросе.
+Метод для получения единого SKU по старым идентификаторам SKU FBS и SKU FBO. 
+В ответе будут все SKU, связанные с переданными.
+
+Метод может обработать любые SKU, даже скрытые или удалённые.
+
+Передавайте до 200 SKU в одном запросе.
 
 ## Параметры
 
@@ -35,16 +40,16 @@ content_sha: ae05bdb943d4a507
 
 **200** — Информация об SKU
 
+- `errors` — ?. Ошибки.
+  - `code` — string. Код ошибки.
+  - `message` — string. Текст ошибки.
+  - `sku` — integer. SKU, в котором произошла ошибка.
 - `items` — ?. Информация о связанных SKU.
   - `availability` — string. Признак доступности товара по SKU: - `HIDDEN` — скрыт; - `AVAILABLE` — доступен; - `UNAVAILABLE` — недоступен, SKU удалён.
   - `deleted_at` — string<date-time>. Дата и время удаления.
   - `delivery_schema` — string. Схема доставки: - `SDS` - идентификатор единого Ozon SKU; - `FBO` - идентификатор товара, который продаётся со склада Ozon; - `FBS` - идентификатор товара, который продаётся со склада FBS; - `Crossborder` - идентификатор товара, который продаётся из-за границы.
   - `product_id` — integer<int64>. Идентификатор товара в системе Ozon — `product_id`.
   - `sku` — integer<int64>. Идентификатор товара в системе Ozon — SKU.
-- `errors` — ?. Ошибки.
-  - `code` — string. Код ошибки.
-  - `sku` — integer. SKU, в котором произошла ошибка.
-  - `message` — string. Текст ошибки.
 
 **default** — Ошибка
 

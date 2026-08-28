@@ -9,7 +9,7 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: ec57c0de751c4629
+content_sha: 0c4a2acecad85158
 ---
 
 # Создать склад с методом доставки «Вы или сторонняя служба»
@@ -32,7 +32,6 @@ content_sha: ec57c0de751c4629
 - `address_coordinates` — object **обязательный**. Координаты адреса склада.
   - `latitude` — number<double> **обязательный**. Широта.
   - `longitude` — number<double> **обязательный**. Долгота.
-- `is_auto_assembly` — boolean. `true`, если на складе доступна автосборка. По умолчанию: `False`.
 - `delivery_method` — object **обязательный**. Информация о методе доставки «Вы или сторонняя служба».
   - `courier_cutoff` — integer<int64> **обязательный**. Скорость отгрузки в доставку.
   - `cut_in` — integer (15, 30, 60, 120, 180, 240, 300, 360, 420, 480) **обязательный**. Время сборки.
@@ -45,6 +44,7 @@ content_sha: ec57c0de751c4629
     - `post_office_zipcode` — string. Индекс отделения Почты России для [«лёгкого возврата»](https://seller-edu.ozon.ru/rfbs/vozvraty/vozvraty#%C2%AB%D0%BB%D1%91%D0%B3%D0%BA%D0%B8%D0%B8-%D0%B2%D0%BE%D0%B7%D0%B2%D1%80%D0%B0%D1%82%C2%BB-%D0%BF%D0%BE%D1%87%D1%82%D0%BE%D0%B8-%D1%80%D0%BE%D1%81%D1%81%D0%B8%D0%B8).
     - `return_method` — string (COURIER, TRANSPORT_COMPANY) **обязательный**. Способы возврата: - `COURIER` — курьером, - `TRANSPORT_COMPANY` — транспортной компанией.
     - `transport_company_name` — string. Название транспортной компании, если способ возврата `TRANSPORT_COMPANY`.
+- `is_auto_assembly` — boolean. `true`, если на складе доступна автосборка. По умолчанию: `False`.
 - `min_order_value` — integer<int64>. Минимальная стоимость заказа в рублях.
 - `name` — string **обязательный**. Название склада.
 - `phone` — string **обязательный**. Номер телефона склада.

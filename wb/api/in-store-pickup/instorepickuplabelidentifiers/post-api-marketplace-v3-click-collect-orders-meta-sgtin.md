@@ -1,5 +1,5 @@
 ---
-title: Закрепить коды маркировки Честного знака за сборочными заданиями{{ /api/marketplace/v3/click-collect/orders/meta/sgtin }}
+title: Закрепить коды маркировки Честного знака за сборочными заданиями
 api: wb-in-store-pickup
 method: POST
 path: /api/marketplace/v3/click-collect/orders/meta/sgtin
@@ -9,14 +9,30 @@ tags:
 spec_version: instorepickup
 source: "https://dev.wildberries.ru/docs/openapi/in-store-pickup"
 deprecated: false
-content_sha: 6fcee73f653dd266
+content_sha: 46223e76938fea1a
 ---
 
-# Закрепить коды маркировки Честного знака за сборочными заданиями{{ /api/marketplace/v3/click-collect/orders/meta/sgtin }}
+# Закрепить коды маркировки Честного знака за сборочными заданиями
 
 `POST /api/marketplace/v3/click-collect/orders/meta/sgtin`
 
-Описание метода Метод обновляет код маркировки [Честного знака](https://честныйзнак.рф/) в [идентификаторах маркировки сборочных заданий](./in-store-pickup#tag/inStorePickupLabelIdentifiers/operation/postV3ClickCollectOrdersMetaDetails). Закрепить код маркировки можно только за сборочным заданием в [статусе](./in-store-pickup#tag/inStorePickupAssemblyOrders/operation/postV3ClickCollectOrdersStatusInfo) `confirm` и если в [идентификаторах маркировки сборочного задания](./in-store-pickup#tag/inStorePickupLabelIdentifiers/operation/postV3ClickCollectOrdersMetaDetails) есть поле `sgtin`. Получить загруженные маркировки можно в [идентификаторах маркировки сборочного задания](./in-store-pickup#tag/inStorePickupLabelIdentifiers/operation/postV3ClickCollectOrdersMetaDetails). Лимит запросов на один аккаунт продавца для всех методов закрепления идентификаторов маркировки Самовывоз : | Период | Лимит | Интервал | Всплеск | | --- | --- | --- | --- | | 1 мин | 20 запросов | 3 сек | 500 запросов | Один запрос с кодами ответов 4XX учитывается как 10 запросов. В песочнице — максимум 1 запрос в секунду суммарно для всех методов Маркетплейса .
+Описание метода
+
+Метод обновляет код маркировки [Честного знака](https://честныйзнак.рф/) в [идентификаторах маркировки сборочных заданий](./in-store-pickup#tag/inStorePickupLabelIdentifiers/operation/postV3ClickCollectOrdersMetaDetails).
+
+Закрепить код маркировки можно только за сборочным заданием в [статусе](./in-store-pickup#tag/inStorePickupAssemblyOrders/operation/postV3ClickCollectOrdersStatusInfo) `confirm` и если в [идентификаторах маркировки сборочного задания](./in-store-pickup#tag/inStorePickupLabelIdentifiers/operation/postV3ClickCollectOrdersMetaDetails) есть поле `sgtin`.
+
+Получить загруженные маркировки можно в [идентификаторах маркировки сборочного задания](./in-store-pickup#tag/inStorePickupLabelIdentifiers/operation/postV3ClickCollectOrdersMetaDetails).
+
+Лимит запросов на один аккаунт продавца для всех методов закрепления идентификаторов маркировки Самовывоз:
+
+| Период | Лимит | Интервал | Всплеск |
+| --- | --- | --- | --- |
+| 1 мин | 20 запросов | 3 сек | 500 запросов |
+
+Один запрос с кодами ответов 4XX учитывается как 10 запросов.
+
+В песочнице — максимум 1 запрос в секунду суммарно для всех методов Маркетплейса.
 
 ## Запрос
 
@@ -32,11 +48,11 @@ content_sha: 6fcee73f653dd266
 
 - `requestId` — ? **обязательный**. Уникальный ID запроса
 - `results` — array[object] **обязательный**
-  - `orderId` — integer **обязательный**. ID сборочного задания
-  - `isError` — boolean **обязательный**. Есть ли ошибки
   - `errors` — array[object]. Детали ошибки
     - `code` — integer **обязательный**. Код ошибки
     - `detail` — string **обязательный**. - `NotFound` — сборочное задание не найдено - `IncorrectRequestBody` — неправильный запрос - `IncorrectRequest` — передан некорректный параметр
+  - `isError` — boolean **обязательный**. Есть ли ошибки
+  - `orderId` — integer **обязательный**. ID сборочного задания
 
 **400** — Неправильный запрос
 
@@ -47,33 +63,33 @@ content_sha: 6fcee73f653dd266
 
 **401** — Не авторизован
 
-- `title` — string. Заголовок ошибки
-- `detail` — string. Детали ошибки
 - `code` — string. Внутренний код ошибки
-- `requestId` — string. Уникальный ID запроса
+- `detail` — string. Детали ошибки
 - `origin` — string. ID внутреннего сервиса WB
+- `requestId` — string. Уникальный ID запроса
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
+- `title` — string. Заголовок ошибки
 
 **402** — Требуется платёж
 
-- `title` — string. Заголовок ошибки
 - `detail` — string. Детали ошибки. Ошибка возвращается только сервисам из [Каталога решений для бизнеса](/business-solutions)
+- `title` — string. Заголовок ошибки
 
 **403** — Доступ запрещён
 
 - `code` — string. Код ошибки
-- `message` — string. Описание ошибки
 - `data` — object. Дополнительные данные, обогащающие ошибку
+- `message` — string. Описание ошибки
 
 **429** — Слишком много запросов
 
-- `title` — string. Заголовок ошибки
-- `detail` — string. Детали ошибки
 - `code` — string. Внутренний код ошибки
-- `requestId` — string. Уникальный ID запроса
+- `detail` — string. Детали ошибки
 - `origin` — string. ID внутреннего сервиса WB
+- `requestId` — string. Уникальный ID запроса
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
+- `title` — string. Заголовок ошибки

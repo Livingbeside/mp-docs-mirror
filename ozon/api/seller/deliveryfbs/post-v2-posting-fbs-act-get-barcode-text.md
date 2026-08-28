@@ -9,14 +9,15 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: cbd6ffd29c02b0e9
+content_sha: 65550faa17786956
 ---
 
 # Значение штрихкода для отгрузки отправления
 
 `POST /v2/posting/fbs/act/get-barcode/text`
 
-Используйте этот метод, чтобы получить штрихкод из ответа [/v2/posting/fbs/act/get-barcode](#operation/PostingAPI_PostingFBSGetBarcode) в текстовом виде.
+Используйте этот метод, чтобы получить штрихкод из ответа
+[/v2/posting/fbs/act/get-barcode](#operation/PostingAPI_PostingFBSGetBarcode) в текстовом виде.
 
 ## Параметры
 

@@ -9,14 +9,16 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: eb97f9029d5feb76
+content_sha: 1c7609efa6d06f13
 ---
 
 # Получить список комментариев на отзыв
 
 `POST /v1/review/comment/list`
 
-Доступно для продавцов с подпиской [Управление отзывами](https://seller-edu.ozon.ru/libra/seller-rating/podpiska-upravlenie-otzyvami) или [Premium Pro](https://seller-edu.ozon.ru/seller-rating/about-rating/podpiska-premium-pro). Метод возвращает информацию по комментариям на отзывы, которые прошли модерацию.
+Доступно для продавцов с подпиской [Управление отзывами](https://seller-edu.ozon.ru/libra/seller-rating/podpiska-upravlenie-otzyvami) или [Premium Pro](https://seller-edu.ozon.ru/seller-rating/about-rating/podpiska-premium-pro).
+
+Метод возвращает информацию по комментариям на отзывы, которые прошли модерацию.
 
 ## Запрос
 

@@ -9,7 +9,7 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: 1cac95a43a1aec95
+content_sha: 8a03590bd10b3f75
 ---
 
 # Информация о заявке на возврат
@@ -47,9 +47,9 @@ content_sha: 1cac95a43a1aec95
   - `order_number` — string. Номер заказа.
   - `posting_number` — string. Номер отправления.
   - `product` — object. Данные о товаре.
+    - `currency_code` — string. Валюта ваших цен. Cовпадает с валютой, которая установлена в настройках личного кабинета. Возможные значения: - `RUB` — российский рубль, - `BYN` — белорусский рубль, - `KZT` — тенге, - `EUR` — евро, - `USD` — доллар США, - `CNY` — юань.
     - `name` — string. Название товара.
     - `offer_id` — string. Идентификатор товара в системе продавца — артикул.
-    - `currency_code` — string. Валюта ваших цен. Cовпадает с валютой, которая установлена в настройках личного кабинета. Возможные значения: - `RUB` — российский рубль, - `BYN` — белорусский рубль, - `KZT` — тенге, - `EUR` — евро, - `USD` — доллар США, - `CNY` — юань.
     - `price` — integer<int32>. Цена товара.
     - `sku` — integer<int64>. Идентификатор товара в системе Ozon — SKU.
   - `rejection_comment` — string. Комментарий об отклонении заявки.

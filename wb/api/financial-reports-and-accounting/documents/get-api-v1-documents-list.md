@@ -1,5 +1,5 @@
 ---
-title: Список документов{{ /api/v1/documents/list }}
+title: Список документов
 api: wb-financial-reports-and-accounting
 method: GET
 path: /api/v1/documents/list
@@ -9,14 +9,25 @@ tags:
 spec_version: finances
 source: "https://dev.wildberries.ru/docs/openapi/financial-reports-and-accounting"
 deprecated: false
-content_sha: 605e73a4451a39a3
+content_sha: 5fe7d8d4f766b633
 ---
 
-# Список документов{{ /api/v1/documents/list }}
+# Список документов
 
 `GET /api/v1/documents/list`
 
-Описание метода Метод возвращает список документов продавца. Вы можете получить [один](./financial-reports-and-accounting#tag/documents/operation/getV1DocumentsDownload) или [несколько](./financial-reports-and-accounting#tag/documents/operation/postV1DocumentsDownloadAll) документов из полученного списка. Лимит запросов на один аккаунт продавца: | Тип | Период | Лимит | Интервал | Всплеск | | --- | --- | --- | --- | --- | | Персональный | 10 сек | 1 запрос | 10 сек | 5 запросов | | Сервисный | 10 сек | 1 запрос | 10 сек | 5 запросов | | Базовый с секретом | 10 сек | 1 запрос | 10 сек | 5 запросов | | Базовый | 24 ч | 1 запрос | 24 ч | 1 запрос |
+Описание метода
+
+Метод возвращает список документов продавца. Вы можете получить [один](./financial-reports-and-accounting#tag/documents/operation/getV1DocumentsDownload) или [несколько](./financial-reports-and-accounting#tag/documents/operation/postV1DocumentsDownloadAll) документов из полученного списка.
+
+Лимит запросов на один аккаунт продавца:
+
+| Тип | Период | Лимит | Интервал | Всплеск |
+| --- | --- | --- | --- | --- |
+| Персональный | 10 сек | 1 запрос | 10 сек | 5 запросов |
+| Сервисный | 10 сек | 1 запрос | 10 сек | 5 запросов |
+| Базовый с секретом | 10 сек | 1 запрос | 10 сек | 5 запросов |
+| Базовый | 24 ч | 1 запрос | 24 ч | 1 запрос |
 
 ## Параметры
 
@@ -38,44 +49,44 @@ content_sha: 605e73a4451a39a3
 
 - `data` — object
   - `documents` — array[object]. Категории документов
-    - `serviceName` — string. Уникальный ID документа
-    - `name` — string. Название документа
     - `category` — string. Название [категории документов](./financial-reports-and-accounting#tag/documents/operation/getV1DocumentsCategories) из поля ответа `title`
-    - `extensions` — array[string]. Форматы документа
     - `creationTime` — string. Дата и время создания документа
+    - `extensions` — array[string]. Форматы документа
+    - `name` — string. Название документа
+    - `serviceName` — string. Уникальный ID документа
     - `viewed` — boolean. Выгружен ли документ в личном кабинете
 
 **400** — Неправильный запрос
 
-- `title` — string. Заголовок ошибки
-- `status` — number. HTTP статус-код
 - `detail` — string. Детализация ошибки
-- `requestId` — string. Уникальный ID запроса
 - `origin` — string. ID внутреннего сервиса WB
+- `requestId` — string. Уникальный ID запроса
+- `status` — number. HTTP статус-код
+- `title` — string. Заголовок ошибки
 
 **401** — Не авторизован
 
-- `title` — string. Заголовок ошибки
-- `detail` — string. Детали ошибки
 - `code` — string. Внутренний код ошибки
-- `requestId` — string. Уникальный ID запроса
+- `detail` — string. Детали ошибки
 - `origin` — string. ID внутреннего сервиса WB
+- `requestId` — string. Уникальный ID запроса
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
+- `title` — string. Заголовок ошибки
 
 **402** — Требуется платёж
 
-- `title` — string. Заголовок ошибки
 - `detail` — string. Детали ошибки. Ошибка возвращается только сервисам из [Каталога решений для бизнеса](/business-solutions)
+- `title` — string. Заголовок ошибки
 
 **429** — Слишком много запросов
 
-- `title` — string. Заголовок ошибки
-- `detail` — string. Детали ошибки
 - `code` — string. Внутренний код ошибки
-- `requestId` — string. Уникальный ID запроса
+- `detail` — string. Детали ошибки
 - `origin` — string. ID внутреннего сервиса WB
+- `requestId` — string. Уникальный ID запроса
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
+- `title` — string. Заголовок ошибки

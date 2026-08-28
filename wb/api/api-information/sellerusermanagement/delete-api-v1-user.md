@@ -1,5 +1,5 @@
 ---
-title: Удалить пользователя{{ /api/v1/user }}
+title: Удалить пользователя
 api: wb-api-information
 method: DELETE
 path: /api/v1/user
@@ -9,14 +9,25 @@ tags:
 spec_version: general
 source: "https://dev.wildberries.ru/docs/openapi/api-information"
 deprecated: false
-content_sha: 4a6c89237c305de8
+content_sha: 3b98131d5e73c3cb
 ---
 
-# Удалить пользователя{{ /api/v1/user }}
+# Удалить пользователя
 
 `DELETE /api/v1/user`
 
-Описание метода Метод доступен по Персональному токену Метод удаляет пользователя из [списка сотрудников продавца](./api-information#tag/sellerUserManagement/operation/getV1Users). Этому пользователю будет закрыт доступ в профиль продавца. Лимит запросов на один аккаунт продавца: | Период | Лимит | Интервал | Всплеск | | --- | --- | --- | --- | | 1 сек | 1 запрос | 1 сек | 10 запросов |
+Описание метода
+
+ Метод доступен по
+ Персональному токену
+
+Метод удаляет пользователя из [списка сотрудников продавца](./api-information#tag/sellerUserManagement/operation/getV1Users). Этому пользователю будет закрыт доступ в профиль продавца.
+
+Лимит запросов на один аккаунт продавца:
+
+| Период | Лимит | Интервал | Всплеск |
+| --- | --- | --- | --- |
+| 1 сек | 1 запрос | 1 сек | 10 запросов |
 
 ## Параметры
 
@@ -30,41 +41,41 @@ content_sha: 4a6c89237c305de8
 
 **400** — Неправильный запрос
 
-- `title` — string **обязательный**. Заголовок ошибки
 - `detail` — string **обязательный**. Детали ошибки
-- `requestId` — string **обязательный**. ID запроса
 - `origin` — string **обязательный**. Название внутреннего сервиса
+- `requestId` — string **обязательный**. ID запроса
 - `status` — number **обязательный**. HTTP статус-код
+- `title` — string **обязательный**. Заголовок ошибки
 
 **401** — Не авторизован
 
-- `title` — string. Заголовок ошибки
-- `detail` — string. Детали ошибки
 - `code` — string. Внутренний код ошибки
-- `requestId` — string. Уникальный ID запроса
+- `detail` — string. Детали ошибки
 - `origin` — string. ID внутреннего сервиса WB
+- `requestId` — string. Уникальный ID запроса
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
+- `title` — string. Заголовок ошибки
 
 **403** — Доступ запрещён
 
-- `title` — string. Заголовок ошибки
-- `detail` — string. Детали ошибки
 - `code` — string. Внутренний код ошибки
-- `requestId` — string. ID запроса
+- `detail` — string. Детали ошибки
 - `origin` — string. ID внутреннего сервиса WB
+- `requestId` — string. ID запроса
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
+- `title` — string. Заголовок ошибки
 
 **429** — Слишком много запросов
 
-- `title` — string. Заголовок ошибки
-- `detail` — string. Детали ошибки
 - `code` — string. Внутренний код ошибки
-- `requestId` — string. Уникальный ID запроса
+- `detail` — string. Детали ошибки
 - `origin` — string. ID внутреннего сервиса WB
+- `requestId` — string. Уникальный ID запроса
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
+- `title` — string. Заголовок ошибки

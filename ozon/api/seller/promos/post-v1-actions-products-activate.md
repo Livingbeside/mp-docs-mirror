@@ -9,7 +9,7 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: 07f374dee1140880
+content_sha: aed80228203170cc
 ---
 
 # Добавить товар в акцию
@@ -24,8 +24,8 @@ content_sha: 07f374dee1140880
 
 - `action_id` — number<double> **обязательный**. Идентификатор акции. Можно получить с помощью метода [/v1/actions](#operation/Promos).
 - `products` — array[object] **обязательный**. Список товаров.
-  - `product_id` — number<double> **обязательный**. Идентификатор товара в системе Ozon — `product_id`.
   - `action_price` — number<double> **обязательный**. Цена товара по акции.
+  - `product_id` — number<double> **обязательный**. Идентификатор товара в системе Ozon — `product_id`.
   - `stock` — number<double>. Количество единиц товара в акции типа «Скидка на сток».
 
 ## Ответы

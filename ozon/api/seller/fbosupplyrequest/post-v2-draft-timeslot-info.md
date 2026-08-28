@@ -9,7 +9,7 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: 15e6ec88f942a7b5
+content_sha: 2e805f031733c1b6
 ---
 
 # Получить список доступных таймслотов
@@ -30,10 +30,10 @@ content_sha: 15e6ec88f942a7b5
 - `date_from` — string **обязательный**. Дата начала периода доступных таймслотов.
 - `date_to` — string **обязательный**. Дата окончания периода доступных таймслотов. Максимальный период — 28 дней с текущей даты.
 - `draft_id` — integer<int64> **обязательный**. Идентификатор черновика из метода [/v2/draft/create/info](#operation/DraftCreateInfo).
-- `supply_type` — string (CROSSDOCK, DIRECT, MULTI_CLUSTER) **обязательный**. Тип поставки: - `CROSSDOCK` — кросс-докинг; - `DIRECT` — прямая; - `MULTI_CLUSTER` — для нескольких кластеров.
 - `selected_cluster_warehouses` — array[object] **обязательный**. Информация о кластере и складах в нём. Можно передать один кластер для кросс-докинговой и прямой поставки или список всех кластеров для поставки в несколько кластеров.
   - `macrolocal_cluster_id` — integer<int64>. Идентификатор кластера размещения.
   - `storage_warehouse_id` — integer<int64>. Идентификатор склада хранения. Только для поставок с типом `DIRECT`.
+- `supply_type` — string (CROSSDOCK, DIRECT, MULTI_CLUSTER) **обязательный**. Тип поставки: - `CROSSDOCK` — кросс-докинг; - `DIRECT` — прямая; - `MULTI_CLUSTER` — для нескольких кластеров.
 
 ## Ответы
 

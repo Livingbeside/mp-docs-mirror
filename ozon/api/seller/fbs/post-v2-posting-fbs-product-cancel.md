@@ -9,14 +9,18 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: ce868fb889079857
+content_sha: 46d298ac07ba49f7
 ---
 
 # Отменить отправку некоторых товаров в отправлении
 
 `POST /v2/posting/fbs/product/cancel`
 
-Используйте метод, если вы не можете отправить часть продуктов из отправления. Чтобы получить идентификаторы причин отмены `cancel_reason_id` при работе по схемам FBS или rFBS, используйте метод [/v2/posting/fbs/cancel-reason/list](#operation/PostingAPI_GetPostingFbsCancelReasonList). Условно-доставленные отправления отменить нельзя.
+Используйте метод, если вы не можете отправить часть продуктов из отправления.
+
+Чтобы получить идентификаторы причин отмены `cancel_reason_id` при работе по схемам FBS или rFBS, используйте метод [/v2/posting/fbs/cancel-reason/list](#operation/PostingAPI_GetPostingFbsCancelReasonList).
+
+Условно-доставленные отправления отменить нельзя.
 
 ## Параметры
 

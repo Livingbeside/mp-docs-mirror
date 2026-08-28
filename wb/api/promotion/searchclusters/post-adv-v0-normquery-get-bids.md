@@ -1,5 +1,5 @@
 ---
-title: Список ставок поисковых кластеров{{ /adv/v0/normquery/get-bids }}
+title: Список ставок поисковых кластеров
 api: wb-promotion
 method: POST
 path: /adv/v0/normquery/get-bids
@@ -9,14 +9,27 @@ tags:
 spec_version: promotion
 source: "https://dev.wildberries.ru/docs/openapi/promotion"
 deprecated: false
-content_sha: fb60d7eedeb5ea84
+content_sha: 3a05747b37eec88b
 ---
 
-# Список ставок поисковых кластеров{{ /adv/v0/normquery/get-bids }}
+# Список ставок поисковых кластеров
 
 `POST /adv/v0/normquery/get-bids`
 
-Описание метода Метод возвращает список поисковых кластеров со ставками по: - ID кампаний - артикулам WB Лимит запросов на один аккаунт продавца: | Тип | Период | Лимит | Интервал | Всплеск | | --- | --- | --- | --- | --- | | Персональный | 1 сек | 5 запросов | 200 мс | 10 запросов | | Сервисный | 1 сек | 5 запросов | 200 мс | 10 запросов | | Базовый с секретом | 1 сек | 5 запросов | 200 мс | 10 запросов | | Базовый | 1 ч | 5 запросов | 12 мин | 1 запрос |
+Описание метода
+
+Метод возвращает список поисковых кластеров со ставками по:
+ - ID кампаний
+ - артикулам WB
+
+Лимит запросов на один аккаунт продавца:
+
+| Тип | Период | Лимит | Интервал | Всплеск |
+| --- | --- | --- | --- | --- |
+| Персональный | 1 сек | 5 запросов | 200 мс | 10 запросов |
+| Сервисный | 1 сек | 5 запросов | 200 мс | 10 запросов |
+| Базовый с секретом | 1 сек | 5 запросов | 200 мс | 10 запросов |
+| Базовый | 1 ч | 5 запросов | 12 мин | 1 запрос |
 
 ## Запрос
 
@@ -32,11 +45,11 @@ content_sha: fb60d7eedeb5ea84
 
 - `bids` — array[object] **обязательный**
   - `advert_id` — integer **обязательный**. ID кампании
-  - `nm_id` — integer **обязательный**. Артикул WB
-  - `norm_query` — string **обязательный**. Поисковый кластер
   - `bid` — integer **обязательный**. Текущая ставка в базовых единицах валюты [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances) за тысячу показов
   - `bid_kopecks` — integer **обязательный**. Текущая ставка в разменных единицах — 0,01 от базовой валюты [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances) за тысячу показов
   - `currency` — string<ISO 4217> **обязательный**. Валюта [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances)
+  - `nm_id` — integer **обязательный**. Артикул WB
+  - `norm_query` — string **обязательный**. Поисковый кластер
 
 **400** — Неправильный запрос
 
@@ -48,14 +61,14 @@ content_sha: fb60d7eedeb5ea84
 
 **401** — Не авторизован
 
-- `title` — string. Заголовок ошибки
-- `detail` — string. Детали ошибки
 - `code` — string. Внутренний код ошибки
-- `requestId` — string. Уникальный ID запроса
+- `detail` — string. Детали ошибки
 - `origin` — string. ID внутреннего сервиса WB
+- `requestId` — string. Уникальный ID запроса
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
+- `title` — string. Заголовок ошибки
 
 **403** — Доступ запрещён
 
@@ -67,11 +80,11 @@ content_sha: fb60d7eedeb5ea84
 
 **429** — Слишком много запросов
 
-- `title` — string. Заголовок ошибки
-- `detail` — string. Детали ошибки
 - `code` — string. Внутренний код ошибки
-- `requestId` — string. Уникальный ID запроса
+- `detail` — string. Детали ошибки
 - `origin` — string. ID внутреннего сервиса WB
+- `requestId` — string. Уникальный ID запроса
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
+- `title` — string. Заголовок ошибки

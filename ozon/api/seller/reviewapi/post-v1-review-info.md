@@ -9,7 +9,7 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: true
-content_sha: f8e1c7d8e3d9de82
+content_sha: a040a422cc8405b4
 ---
 
 # Получить информацию об отзыве
@@ -18,7 +18,9 @@ content_sha: f8e1c7d8e3d9de82
 
 > ⚠️ Метод помечен как **deprecated**.
 
-Метод устаревает. Переключитесь на /v2/review/info . Доступно для продавцов с подпиской [Управление отзывами](https://seller-edu.ozon.ru/libra/seller-rating/podpiska-upravlenie-otzyvami) или [Premium Pro](https://seller-edu.ozon.ru/seller-rating/about-rating/podpiska-premium-pro).
+Метод устаревает. Переключитесь на /v2/review/info.
+
+Доступно для продавцов с подпиской [Управление отзывами](https://seller-edu.ozon.ru/libra/seller-rating/podpiska-upravlenie-otzyvami) или [Premium Pro](https://seller-edu.ozon.ru/seller-rating/about-rating/podpiska-premium-pro).
 
 ## Запрос
 
