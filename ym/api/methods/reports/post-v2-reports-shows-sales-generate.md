@@ -13,14 +13,24 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: 161b43657e3f7bc6
+content_sha: 8edf0723566dec3b
 ---
 
 # Отчет «Аналитика продаж»
 
 `POST /v2/reports/shows-sales/generate`
 
-{% include notitle [access](../../_auto/method_scopes/generateShowsSalesReport.md) %} Запускает генерацию отчета «Аналитика продаж» за заданный период. [Что это за отчет](https://yandex.ru/support/marketplace/analytics/shows-sales.html) Узнать статус генерации и получить ссылку на готовый отчет можно с помощью запроса [GET v2/reports/info/{reportId}](../../reference/reports/getReportInfo.md). {% include notitle [reports](../../_auto/reports/masterstat/sales_funnel_by_created_at.md) %} {% include notitle [tariff-period](../../_includes/common/report-data-period-400-days.md) %} {% include notitle [limit](../../_auto/method_limits/generateShowsSalesReport.md) %}
+{% include notitle [access](../../_auto/method_scopes/generateShowsSalesReport.md) %}
+
+Запускает генерацию отчета «Аналитика продаж» за заданный период. [Что это за отчет](https://yandex.ru/support/marketplace/analytics/shows-sales.html)
+
+Узнать статус генерации и получить ссылку на готовый отчет можно с помощью запроса [GET v2/reports/info/{reportId}](../../reference/reports/getReportInfo.md).
+
+{% include notitle [reports](../../_auto/reports/masterstat/sales_funnel_by_created_at.md) %}
+
+{% include notitle [tariff-period](../../_includes/common/report-data-period-400-days.md) %}
+
+{% include notitle [limit](../../_auto/method_limits/generateShowsSalesReport.md) %}
 
 ## Параметры
 

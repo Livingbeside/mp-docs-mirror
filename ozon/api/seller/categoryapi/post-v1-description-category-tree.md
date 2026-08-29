@@ -9,7 +9,7 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: 79a523166ddb8f96
+content_sha: 21304d63fdefb391
 ---
 
 # Дерево категорий и типов товаров
@@ -41,39 +41,39 @@ content_sha: 79a523166ddb8f96
 **200** — Дерево категорий
 
 - `result` — array[object]. Список категорий.
+  - `description_category_id` — integer<int64>. Идентификатор категории.
   - `category_name` — string. Название категории.
   - `children` — array[object]. Дерево подкатегорий.
+    - `description_category_id` — integer<int64>. Идентификатор категории.
     - `category_name` — string. Название категории.
     - `children` — array[object]. Дерево подкатегорий.
+      - `description_category_id` — integer<int64>. Идентификатор категории.
       - `category_name` — string. Название категории.
       - `children` — array[object]. Дерево подкатегорий.
+        - `description_category_id` — integer<int64>. Идентификатор категории.
         - `category_name` — string. Название категории.
         - `children` — array[object]. Дерево подкатегорий.
+          - `description_category_id` — integer<int64>. Идентификатор категории.
           - `category_name` — string. Название категории.
           - `children` — array[object]. Дерево подкатегорий.
+            - `description_category_id` — integer<int64>. Идентификатор категории.
             - `category_name` — string. Название категории.
             - `children` — array[object]. Дерево подкатегорий.
-            - `description_category_id` — integer<int64>. Идентификатор категории.
             - `disabled` — boolean. `true`, если в категории нельзя создавать товары. `false`, если можно.
             - `type_id` — integer<int64>. Идентификатор типа товара.
             - `type_name` — string. Название типа товара.
-          - `description_category_id` — integer<int64>. Идентификатор категории.
           - `disabled` — boolean. `true`, если в категории нельзя создавать товары. `false`, если можно.
           - `type_id` — integer<int64>. Идентификатор типа товара.
           - `type_name` — string. Название типа товара.
-        - `description_category_id` — integer<int64>. Идентификатор категории.
         - `disabled` — boolean. `true`, если в категории нельзя создавать товары. `false`, если можно.
         - `type_id` — integer<int64>. Идентификатор типа товара.
         - `type_name` — string. Название типа товара.
-      - `description_category_id` — integer<int64>. Идентификатор категории.
       - `disabled` — boolean. `true`, если в категории нельзя создавать товары. `false`, если можно.
       - `type_id` — integer<int64>. Идентификатор типа товара.
       - `type_name` — string. Название типа товара.
-    - `description_category_id` — integer<int64>. Идентификатор категории.
     - `disabled` — boolean. `true`, если в категории нельзя создавать товары. `false`, если можно.
     - `type_id` — integer<int64>. Идентификатор типа товара.
     - `type_name` — string. Название типа товара.
-  - `description_category_id` — integer<int64>. Идентификатор категории.
   - `disabled` — boolean. `true`, если в категории нельзя создавать товары. `false`, если можно.
   - `type_id` — integer<int64>. Идентификатор типа товара.
   - `type_name` — string. Название типа товара.

@@ -14,14 +14,25 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: 1550ab2a29ad0a69
+content_sha: e37cfd241ced4475
 ---
 
 # Информация о товарах в каталоге
 
 `POST /v2/businesses/{businessId}/offer-mappings`
 
-{% include notitle [access](../../_auto/method_scopes/getOfferMappings.md) %} Возвращает список товаров в каталоге, их категории на Маркете и характеристики каждого товара. Можно использовать тремя способами: * задать список интересующих SKU; * задать фильтр — в этом случае результаты возвращаются постранично; * не передавать тело запроса, чтобы получить список всех товаров в каталоге. Чтобы получить категорийные характеристики товаров, воспользуйтесь методом [POST v2/businesses/{businessId}/offer-cards](../../reference/content/getOfferCardsContentStatus.md). {% include notitle [limit](../../_auto/method_limits/getOfferMappings.md) %}
+{% include notitle [access](../../_auto/method_scopes/getOfferMappings.md) %}
+
+Возвращает список товаров в каталоге, их категории на Маркете и характеристики каждого товара.
+
+Можно использовать тремя способами:
+* задать список интересующих SKU;
+* задать фильтр — в этом случае результаты возвращаются постранично;
+* не передавать тело запроса, чтобы получить список всех товаров в каталоге.
+
+Чтобы получить категорийные характеристики товаров, воспользуйтесь методом [POST v2/businesses/{businessId}/offer-cards](../../reference/content/getOfferCardsContentStatus.md).
+
+{% include notitle [limit](../../_auto/method_limits/getOfferMappings.md) %}
 
 ## Параметры
 
@@ -29,7 +40,7 @@ content_sha: 1550ab2a29ad0a69
 |---|---|---|---|---|
 | `businessId` | path | integer<int64> | да | Идентификатор кабинета. {% if audience == "partner" %} Чтобы его узнать, воспользуйтесь запросом [GET v2/campaigns](../../reference/campaigns/getCampaigns.md). ℹ️ [Что такое кабинет и магазин на Маркете](https://yandex.ru/support/marketplace/account/introduction.html) {% endif %} |
 | `pageToken` | query | string | нет | Идентификатор страницы c результатами. Если параметр не указан, возвращается первая страница. Передавайте значение выходного параметра `nextPageToken`, полученное при последнем запросе. |
-| `limit` | query | integer<int32> | нет | {{ limit-truncate-param-description }} |
+| `limit` | query | integer<int32> | нет | — |
 | `language` | query | string (RU, UZ) | нет | Язык, на котором принимаются и возвращаются значения в параметрах `name` и `description`. Значение по умолчанию: `RU`. |
 
 ## Запрос
@@ -125,7 +136,7 @@ content_sha: 1550ab2a29ad0a69
         - `sellingProgram` — string (FBY, FBS, DBS, EXPRESS, LAAS) **обязательный**. Модель работы.
         - `status` — string (FINE, REJECT) **обязательный**. Информация о том, можно ли по этой модели продавать товар.
       - `mediaFiles` — object. Информация о медиафайлах товара.
-        - `firstVideoAsCover` — boolean. {% note warning "Параметр устарел и будет отключен 12.10.2026." %} {% endnote %} Использовать первое видео в карточке как видеообложку. Передайте `true`, чтобы первое видео использовалось как видеообложка, или `false`, чтобы видеообложка не отображалась в карточке товара.
+        - `firstVideoAsCover` — boolean. {% note warning "Параметр устарел и будет отключен 12.10.2026." %}   {% endnote %} Использовать первое видео в карточке как видеообложку. Передайте `true`, чтобы первое видео использовалось как видеообложка, или `false`, чтобы видеообложка не отображалась в карточке товара.
         - `videos` — array[object]. Видеофайлы товара.
           - `url` — string. Ссылка на медиафайл.
           - `title` — string. Название медиафайла.
@@ -143,7 +154,7 @@ content_sha: 1550ab2a29ad0a69
     - `mapping` — object. Информация о карточке товара на Маркете.
       - `marketSku` — integer<int64>. Идентификатор карточки на Маркете.
       - `marketSkuName` — string. Название карточки товара. Может отсутствовать в ответе, если товар еще не привязан к карточке.
-      - `marketModelName` — string. {% note warning "Параметр устарел и будет отключен 12.10.2026." %} {% endnote %} Название модели на Маркете. Может отсутствовать в ответе, если товар еще не привязан к карточке.
+      - `marketModelName` — string. {% note warning "Параметр устарел и будет отключен 12.10.2026." %}   {% endnote %} Название модели на Маркете. Может отсутствовать в ответе, если товар еще не привязан к карточке.
       - `marketCategoryId` — integer<int64>. Идентификатор категории на Маркете, в которую попал товар. Может отсутствовать в ответе, если Маркет еще не определил категорию товара.
       - `marketCategoryName` — string. Название категории карточки на Маркете. Может отсутствовать в ответе, если Маркет еще не определил категорию товара.
     - `showcaseUrls` — array[object]. Ссылки на один и тот же товар на разных витринах Маркета.

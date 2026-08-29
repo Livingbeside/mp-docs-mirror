@@ -13,14 +13,24 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: 7bf98e52f5f22779
+content_sha: 2670efead9403ffc
 ---
 
 # Информация об установленных ставках
 
 `POST /v2/businesses/{businessId}/bids/info`
 
-{% include notitle [access](../../_auto/method_scopes/getBidsInfoForBusiness.md) %} Возвращает значения ставок для заданных товаров. {% note warning "Получить информацию по кампаниям, созданным в кабинете, не получится" %} В ответе возвращаются значения только тех ставок, которые вы установили через запрос [PUT v2/businesses/{businessId}/bids](../../reference/bids/putBidsForBusiness.md). {% endnote %} {% include notitle [limit](../../_auto/method_limits/getBidsInfoForBusiness.md) %}
+{% include notitle [access](../../_auto/method_scopes/getBidsInfoForBusiness.md) %}
+
+Возвращает значения ставок для заданных товаров.
+
+{% note warning "Получить информацию по кампаниям, созданным в кабинете, не получится" %}
+
+В ответе возвращаются значения только тех ставок, которые вы установили через запрос [PUT v2/businesses/{businessId}/bids](../../reference/bids/putBidsForBusiness.md).
+
+{% endnote %}
+
+{% include notitle [limit](../../_auto/method_limits/getBidsInfoForBusiness.md) %}
 
 ## Параметры
 
@@ -28,7 +38,7 @@ content_sha: 7bf98e52f5f22779
 |---|---|---|---|---|
 | `businessId` | path | integer<int64> | да | Идентификатор кабинета. {% if audience == "partner" %} Чтобы его узнать, воспользуйтесь запросом [GET v2/campaigns](../../reference/campaigns/getCampaigns.md). ℹ️ [Что такое кабинет и магазин на Маркете](https://yandex.ru/support/marketplace/account/introduction.html) {% endif %} |
 | `pageToken` | query | string | нет | Идентификатор страницы c результатами. Если параметр не указан, возвращается первая страница. Передавайте значение выходного параметра `nextPageToken`, полученное при последнем запросе. |
-| `limit` | query | integer<int32> | нет | {{ limit-truncate-param-description }} |
+| `limit` | query | integer<int32> | нет | — |
 
 ## Запрос
 

@@ -9,7 +9,7 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: fdc27f7fe2526e22
+content_sha: 30e8c122b221dc6e
 ---
 
 # Список заявок на возврат
@@ -28,12 +28,12 @@ content_sha: fdc27f7fe2526e22
 **Тело запроса** (`application/json`):
 
 - `filter` — object. Фильтр.
+  - `offer_id` — string. Идентификатор товара в системе продавца — артикул.
+  - `posting_number` — string. Номер отправления.
+  - `group_state` — array[string]. Фильтр по статусам заявок: - `All` — все заявки. - `New` — новые. - `Delivering` — в пути. - `Checkout` — на проверке. - `Arbitration` — спорные. - `Approved` — согласованные. - `Rejected` — отклонённые.
   - `created_at` — object. Период создания заявки.
     - `from` — string<date-time>. Дата начала периода.
     - `to` — string<date-time>. Дата окончания периода.
-  - `group_state` — array[string]. Фильтр по статусам заявок: - `All` — все заявки. - `New` — новые. - `Delivering` — в пути. - `Checkout` — на проверке. - `Arbitration` — спорные. - `Approved` — согласованные. - `Rejected` — отклонённые.
-  - `offer_id` — string. Идентификатор товара в системе продавца — артикул.
-  - `posting_number` — string. Номер отправления.
 - `last_id` — integer<int32>. Идентификатор последнего значения на странице — `return_id`. Оставьте это поле пустым при выполнении первого запроса.
 - `limit` — integer<int32> **обязательный**. Количество значений в ответе.
 
@@ -47,9 +47,9 @@ content_sha: fdc27f7fe2526e22
   - `order_number` — string. Номер заказа.
   - `posting_number` — string. Номер отправления.
   - `product` — object. Данные о товаре.
-    - `currency_code` — string. Валюта ваших цен. Cовпадает с валютой, которая установлена в настройках личного кабинета. Возможные значения: - `RUB` — российский рубль, - `BYN` — белорусский рубль, - `KZT` — тенге, - `EUR` — евро, - `USD` — доллар США, - `CNY` — юань.
     - `name` — string. Название товара.
     - `offer_id` — string. Идентификатор товара в системе продавца — артикул.
+    - `currency_code` — string. Валюта ваших цен. Cовпадает с валютой, которая установлена в настройках личного кабинета. Возможные значения: - `RUB` — российский рубль, - `BYN` — белорусский рубль, - `KZT` — тенге, - `EUR` — евро, - `USD` — доллар США, - `CNY` — юань.
     - `price` — integer<int32>. Цена товара.
     - `sku` — integer<int64>. Идентификатор товара в системе Ozon — SKU.
   - `return_id` — integer<int64>. Идентификатор заявки на возврат.

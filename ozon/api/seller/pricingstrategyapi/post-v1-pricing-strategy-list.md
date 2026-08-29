@@ -9,7 +9,7 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: 733099d4412c851a
+content_sha: c24805f323084c7c
 ---
 
 # Список стратегий
@@ -20,22 +20,22 @@ content_sha: 733099d4412c851a
 
 **Тело запроса** (`application/json`):
 
-- `limit` — integer<int64> **обязательный**. Максимальное количество стратегий на странице. Допустимые значения — от `1` до `50`.
 - `page` — integer<int64> **обязательный**. Страница списка, с которой нужно выгрузить стратегии. Минимальное значение — `1`.
+- `limit` — integer<int64> **обязательный**. Максимальное количество стратегий на странице. Допустимые значения — от `1` до `50`.
 
 ## Ответы
 
 **200** — Список стратегий
 
 - `strategies` — array[object]. Список стратегий.
-  - `competitors_count` — integer<int64>. Количество выбранных конкурентов.
-  - `enabled` — boolean. Статус стратегии: - `true` — включена, - `false` — отключена.
   - `id` — string. Идентификатор стратегии.
   - `name` — string. Название стратегии.
-  - `products_count` — integer<int64>. Количество товаров в стратегии.
   - `type` — string. Тип стратегии: - `MIN_EXT_PRICE` — системная, - `COMP_PRICE` — пользовательская.
   - `update_type` — string. Тип последнего изменения стратегии: - `strategyEnabled` — возобновлена, - `strategyDisabled` — остановлена, - `strategyChanged` — обновлена, - `strategyCreated` — создана, - `strategyItemsListChanged` — изменён набор товаров в стратегии.
   - `updated_at` — string. Дата последнего изменения.
+  - `products_count` — integer<int64>. Количество товаров в стратегии.
+  - `competitors_count` — integer<int64>. Количество выбранных конкурентов.
+  - `enabled` — boolean. Статус стратегии: - `true` — включена, - `false` — отключена.
 - `total` — integer<int32>. Общее количество стратегий.
 
 **default** — Ошибка

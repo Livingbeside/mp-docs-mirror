@@ -10,14 +10,20 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: e3f771ab7f8584e7
+content_sha: 9a8c6950d65a3622
 ---
 
 # Создание и изменение лицензий для точек продаж
 
 `POST /v2/campaigns/{campaignId}/outlets/licenses`
 
-{% include notitle [access](../../_auto/method_scopes/updateOutletLicenses.md) %} Передает информацию о новых и существующих лицензиях для точек продаж. Поддерживаются только лицензии на розничную продажу алкоголя. Чтобы размещать алкогольную продукцию на Маркете, надо также прислать гарантийное письмо (если вы еще не делали этого раньше) и правильно оформить предложения в прайс-листе. Далее информация о лицензиях проходит проверку. {% include notitle [limit](../../_auto/method_limits/updateOutletLicenses.md) %}
+{% include notitle [access](../../_auto/method_scopes/updateOutletLicenses.md) %}
+
+Передает информацию о новых и существующих лицензиях для точек продаж. Поддерживаются только лицензии на розничную продажу алкоголя.
+
+Чтобы размещать алкогольную продукцию на Маркете, надо также прислать гарантийное письмо (если вы еще не делали этого раньше) и правильно оформить предложения в прайс-листе. Далее информация о лицензиях проходит проверку.
+
+{% include notitle [limit](../../_auto/method_limits/updateOutletLicenses.md) %}
 
 ## Параметры
 

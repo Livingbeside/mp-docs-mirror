@@ -9,7 +9,7 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: 4d8aed396b5a32da
+content_sha: 51bb0623edd7fdb9
 ---
 
 # Штрихкод для получения возвратной отгрузки в формате PDF
@@ -35,9 +35,9 @@ content_sha: 4d8aed396b5a32da
 
 **200** — Штрихкод для возвратной отгрузки
 
-- `content_type` — string. Тип файла.
 - `file_content` — string. PDF-файл со штрихкодом в кодировке Base64.
 - `file_name` — string. Название файла.
+- `content_type` — string. Тип файла.
 
 **default** — Ошибка
 

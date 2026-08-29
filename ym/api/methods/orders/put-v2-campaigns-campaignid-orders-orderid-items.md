@@ -10,14 +10,56 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: 22d004bddb1dc293
+content_sha: b03275a6e04af799
 ---
 
 # Удаление товаров из заказа или уменьшение их числа
 
 `PUT /v2/campaigns/{campaignId}/orders/{orderId}/items`
 
-{% include notitle [access](../../_auto/method_scopes/updateOrderItems.md) %} {% note warning "Если вы работаете по модели FBS" %} Используйте метод [PUT v2/campaigns/{campaignId}/orders/{orderId}/boxes](../../reference/orders/setOrderBoxLayout.md). {% endnote %} Удаляет один или несколько товаров из заказа, если магазин не может поставить их все. Заказ должен находится в статусе `"status": "PROCESSING"` этапа обработки `"substatus": "STARTED"`. Изменить состав нельзя после передачи статуса `"substatus": "READY_TO_SHIP"`. {% cut "Уменьшить количество одинаковых товаров" %} Передайте обновленное значение в параметре `count`. {% endcut %} {% cut "Удалить товар из заказа" %} Передайте значение `0` в параметре `count` или не передавайте `item`. {% endcut %} Нельзя удалить или уменьшить количество товара, если он: * добавлен по акции; * составляет 99% стоимости заказа; * единственный товар в заказе. В таком случае отмените заказ — в методе [PUT v2/campaigns/{campaignId}/orders/{orderId}/status](../../reference/orders/updateOrderStatus.md) передайте статус заказа `CANCELLED` с причиной отмены `SHOP_FAILED`. ### Как вернутся деньги {#money} Если покупатель оплатил товар при оформлении, Маркет вернет ему деньги за удаленные из заказа товары в течение двух дней: * при оплате банковской картой — с момента, когда магазин переведет заказ в статус `SHIPPED`; * при оплате через :no-translate[Apple Pay] или :no-translate[Google Pay] — с момента, когда магазин удалит товар из заказа. {% endcut %} {% include notitle [limit](../../_auto/method_limits/updateOrderItems.md) %}
+{% include notitle [access](../../_auto/method_scopes/updateOrderItems.md) %}
+
+{% note warning "Если вы работаете по модели FBS" %}
+
+Используйте метод [PUT v2/campaigns/{campaignId}/orders/{orderId}/boxes](../../reference/orders/setOrderBoxLayout.md).
+
+{% endnote %}
+
+Удаляет один или несколько товаров из заказа, если магазин не может поставить их все.
+
+Заказ должен находится в статусе `"status": "PROCESSING"` этапа обработки `"substatus": "STARTED"`. Изменить состав нельзя после передачи статуса `"substatus": "READY_TO_SHIP"`.
+
+{% cut "Уменьшить количество одинаковых товаров" %}
+
+Передайте обновленное значение в параметре `count`.
+
+{% endcut %}
+
+{% cut "Удалить товар из заказа" %}
+
+Передайте значение `0` в параметре `count` или не передавайте `item`.
+
+{% endcut %}
+
+Нельзя удалить или уменьшить количество товара, если он:
+
+* добавлен по акции;
+* составляет 99% стоимости заказа;
+* единственный товар в заказе.
+
+В таком случае отмените заказ — в методе [PUT v2/campaigns/{campaignId}/orders/{orderId}/status](../../reference/orders/updateOrderStatus.md) передайте статус заказа `CANCELLED` с причиной отмены `SHOP_FAILED`.
+
+### Как вернутся деньги {#money}
+
+ Если покупатель оплатил товар при оформлении, Маркет вернет ему деньги за удаленные из заказа товары в течение двух дней:
+
+ * при оплате банковской картой — с момента, когда магазин переведет заказ в статус `SHIPPED`;
+
+ * при оплате через :no-translate[Apple Pay] или :no-translate[Google Pay] — с момента, когда магазин удалит товар из заказа.
+
+{% endcut %}
+
+{% include notitle [limit](../../_auto/method_limits/updateOrderItems.md) %}
 
 ## Параметры
 

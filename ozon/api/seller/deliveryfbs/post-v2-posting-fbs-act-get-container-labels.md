@@ -9,7 +9,7 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: accf0c317b2abdf0
+content_sha: 2e4f757392242abc
 ---
 
 # Этикетки для грузового места
@@ -35,9 +35,9 @@ content_sha: accf0c317b2abdf0
 
 **200** — Этикетки для грузового места
 
-- `content_type` — string. Тип файла.
 - `file_content` — string<byte>. Содержание файла в бинарном виде.
 - `file_name` — string. Название файла.
+- `content_type` — string. Тип файла.
 
 **400** — Неверный параметр
 

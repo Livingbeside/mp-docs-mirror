@@ -13,14 +13,26 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: dd472b0dd007af22
+content_sha: 5422e8edf882ca37
 ---
 
 # Информация о покупателе — юридическом лице
 
 `POST /v2/campaigns/{campaignId}/orders/{orderId}/business-buyer`
 
-{% include notitle [access](../../_auto/method_scopes/getOrderBusinessBuyerInfo.md) %} Возвращает информацию о покупателе по идентификатору заказа. {% note info "Как получить информацию о покупателе, который является физическим лицом" %} Воспользуйтесь запросом [GET v2/campaigns/{campaignId}/orders/{orderId}/buyer](../../reference/order-delivery/getOrderBuyerInfo.md). {% endnote %} Получить данные можно, только если заказ находится в статусе `PROCESSING`, `DELIVERY`, `PICKUP` или `DELIVERED`. {% include notitle [limit](../../_auto/method_limits/getOrderBusinessBuyerInfo.md) %}
+{% include notitle [access](../../_auto/method_scopes/getOrderBusinessBuyerInfo.md) %}
+
+Возвращает информацию о покупателе по идентификатору заказа.
+
+{% note info "Как получить информацию о покупателе, который является физическим лицом" %}
+
+Воспользуйтесь запросом [GET v2/campaigns/{campaignId}/orders/{orderId}/buyer](../../reference/order-delivery/getOrderBuyerInfo.md).
+
+{% endnote %}
+
+Получить данные можно, только если заказ находится в статусе `PROCESSING`, `DELIVERY`, `PICKUP` или `DELIVERED`.
+
+{% include notitle [limit](../../_auto/method_limits/getOrderBusinessBuyerInfo.md) %}
 
 ## Параметры
 

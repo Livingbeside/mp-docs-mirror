@@ -9,7 +9,7 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: 3ded99d21884e7a4
+content_sha: 95abca8a319e05db
 ---
 
 # Сгенерировать новый штрихкод
@@ -38,9 +38,9 @@ content_sha: 3ded99d21884e7a4
 
 **200** — Новый штрихкод
 
-- `content_type` — string. Тип файла.
 - `file_content` — string. Изображение со штрихкодом в бинарном виде.
 - `file_name` — string. Название файла.
+- `content_type` — string. Тип файла.
 
 **default** — Ошибка
 

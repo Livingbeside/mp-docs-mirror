@@ -10,14 +10,20 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: f36f224f606731e2
+content_sha: 11f8139264440a6a
 ---
 
 # Передача трек‑номера посылки
 
 `POST /v2/campaigns/{campaignId}/orders/{orderId}/delivery/track`
 
-{% include notitle [access](../../_auto/method_scopes/setOrderDeliveryTrackCode.md) %} Передает Маркету трек‑номер, по которому покупатель может отследить посылку со своим заказом через службу доставки. Если покупатели смогут узнать, на каком этапе доставки находятся их заказы, доверие покупателей к вашему магазину может возрасти. Передать трек‑номер можно, только если заказ находится в статусе `PROCESSING`, `DELIVERY` или `PICKUP`. {% include notitle [limit](../../_auto/method_limits/setOrderDeliveryTrackCode.md) %}
+{% include notitle [access](../../_auto/method_scopes/setOrderDeliveryTrackCode.md) %}
+
+Передает Маркету трек‑номер, по которому покупатель может отследить посылку со своим заказом через службу доставки. Если покупатели смогут узнать, на каком этапе доставки находятся их заказы, доверие покупателей к вашему магазину может возрасти.
+
+Передать трек‑номер можно, только если заказ находится в статусе `PROCESSING`, `DELIVERY` или `PICKUP`.
+
+{% include notitle [limit](../../_auto/method_limits/setOrderDeliveryTrackCode.md) %}
 
 ## Параметры
 

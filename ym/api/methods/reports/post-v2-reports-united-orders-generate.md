@@ -13,14 +13,24 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: 307d346c594b420d
+content_sha: cee39f67b37d1382
 ---
 
 # Отчет по заказам
 
 `POST /v2/reports/united-orders/generate`
 
-{% include notitle [access](../../_auto/method_scopes/generateUnitedOrdersReport.md) %} Запускает генерацию отчета по заказам за заданный период. [Что это за отчет](https://yandex.ru/support/marketplace/ru/accounting/transactions#get-report) Узнать статус генерации и получить ссылку на готовый отчет можно с помощью запроса [GET v2/reports/info/{reportId}](../../reference/reports/getReportInfo.md). {% include notitle [reports](../../_auto/reports/united/orders/generator/united_orders.md) %} {% include notitle [tariff-period](../../_includes/common/report-data-period-unchanged.md) %} {% include notitle [limit](../../_auto/method_limits/generateUnitedOrdersReport.md) %}
+{% include notitle [access](../../_auto/method_scopes/generateUnitedOrdersReport.md) %}
+
+Запускает генерацию отчета по заказам за заданный период. [Что это за отчет](https://yandex.ru/support/marketplace/ru/accounting/transactions#get-report)
+
+Узнать статус генерации и получить ссылку на готовый отчет можно с помощью запроса [GET v2/reports/info/{reportId}](../../reference/reports/getReportInfo.md).
+
+{% include notitle [reports](../../_auto/reports/united/orders/generator/united_orders.md) %}
+
+{% include notitle [tariff-period](../../_includes/common/report-data-period-unchanged.md) %}
+
+{% include notitle [limit](../../_auto/method_limits/generateUnitedOrdersReport.md) %}
 
 ## Параметры
 

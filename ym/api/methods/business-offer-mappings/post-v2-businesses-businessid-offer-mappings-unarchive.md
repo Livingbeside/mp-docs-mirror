@@ -13,14 +13,18 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: d300aca991859f3d
+content_sha: 8ab6c5bbae4f28e5
 ---
 
 # Удаление товаров из архива
 
 `POST /v2/businesses/{businessId}/offer-mappings/unarchive`
 
-{% include notitle [access](../../_auto/method_scopes/deleteOffersFromArchive.md) %} Восстанавливает товары из архива. {% include notitle [limit](../../_auto/method_limits/deleteOffersFromArchive.md) %}
+{% include notitle [access](../../_auto/method_scopes/deleteOffersFromArchive.md) %}
+
+Восстанавливает товары из архива.
+
+{% include notitle [limit](../../_auto/method_limits/deleteOffersFromArchive.md) %}
 
 ## Параметры
 

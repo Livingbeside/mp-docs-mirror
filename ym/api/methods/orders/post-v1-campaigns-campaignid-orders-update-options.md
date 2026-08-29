@@ -10,14 +10,18 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: 8e16de7866d7a2ca
+content_sha: 66b1f8dfd9fdb309
 ---
 
 # Получение временных интервалов для изменения заказа
 
 `POST /v1/campaigns/{campaignId}/orders/update-options`
 
-{% include notitle [access](../../_auto/method_scopes/getOrderUpdateOptions.md) %} Возвращает список доступных интервалов для изменения даты и времени курьерской доставки. {% include notitle [limit](../../_auto/method_limits/getOrderUpdateOptions.md) %}
+{% include notitle [access](../../_auto/method_scopes/getOrderUpdateOptions.md) %}
+
+Возвращает список доступных интервалов для изменения даты и времени курьерской доставки.
+
+{% include notitle [limit](../../_auto/method_limits/getOrderUpdateOptions.md) %}
 
 ## Параметры
 

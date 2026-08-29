@@ -10,14 +10,20 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: 128c02680af226d1
+content_sha: 2d8e413f7746234e
 ---
 
 # Получение доступных вариантов доставки заказов
 
 `POST /v1/campaigns/{campaignId}/delivery-options`
 
-{% include notitle [access](../../_auto/method_scopes/getDeliveryOptions.md) %} Возвращает список вариантов для доставки заказов. Выберите подходящий вариант доставки из ответа и передайте его при создании заказа. Укажите `courierDelivery` для курьерской доставки или `pickupDelivery` для доставки в пункт выдачи. Не передавайте оба параметра одновременно. {% include notitle [limit](../../_auto/method_limits/getDeliveryOptions.md) %}
+{% include notitle [access](../../_auto/method_scopes/getDeliveryOptions.md) %}
+
+Возвращает список вариантов для доставки заказов. Выберите подходящий вариант доставки из ответа и передайте его при создании заказа.
+
+Укажите `courierDelivery` для курьерской доставки или `pickupDelivery` для доставки в пункт выдачи. Не передавайте оба параметра одновременно.
+
+{% include notitle [limit](../../_auto/method_limits/getDeliveryOptions.md) %}
 
 ## Параметры
 

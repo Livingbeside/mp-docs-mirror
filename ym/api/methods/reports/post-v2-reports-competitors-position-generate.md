@@ -13,14 +13,30 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: 862d0378033ee756
+content_sha: 12c37e6bfc55b46b
 ---
 
 # Отчет «Конкурентная позиция»
 
 `POST /v2/reports/competitors-position/generate`
 
-{% include notitle [access](../../_auto/method_scopes/generateCompetitorsPositionReport.md) %} Запускает генерацию отчета «Конкурентная позиция» за заданный период. [Что это за отчет](https://yandex.ru/support2/marketplace/ru/analytics/competitors.html) Узнать статус генерации и получить ссылку на готовый отчет можно с помощью запроса [GET v2/reports/info/{reportId}](../../reference/reports/getReportInfo.md). {% note info "Значение -1 в отчете" %} Если в CSV-файле в столбце :no-translate[**POSITION**] стоит -1, в этот день не было заказов с товарами в указанной категории. {% endnote %} {% include notitle [reports](../../_auto/reports/masterstat/competitors_position.md) %} {% include notitle [tariff-period](../../_includes/common/report-data-period-400-days.md) %} {% include notitle [limit](../../_auto/method_limits/generateCompetitorsPositionReport.md) %}
+{% include notitle [access](../../_auto/method_scopes/generateCompetitorsPositionReport.md) %}
+
+Запускает генерацию отчета «Конкурентная позиция» за заданный период. [Что это за отчет](https://yandex.ru/support2/marketplace/ru/analytics/competitors.html)
+
+Узнать статус генерации и получить ссылку на готовый отчет можно с помощью запроса [GET v2/reports/info/{reportId}](../../reference/reports/getReportInfo.md).
+
+{% note info "Значение -1 в отчете" %}
+
+Если в CSV-файле в столбце :no-translate[**POSITION**] стоит -1, в этот день не было заказов с товарами в указанной категории.
+
+{% endnote %}
+
+{% include notitle [reports](../../_auto/reports/masterstat/competitors_position.md) %}
+
+{% include notitle [tariff-period](../../_includes/common/report-data-period-400-days.md) %}
+
+{% include notitle [limit](../../_auto/method_limits/generateCompetitorsPositionReport.md) %}
 
 ## Параметры
 

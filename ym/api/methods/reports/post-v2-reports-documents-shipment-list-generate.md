@@ -10,14 +10,22 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: 93eb268c17166054
+content_sha: 93b465f1c9b205b3
 ---
 
 # Получение листа сборки
 
 `POST /v2/reports/documents/shipment-list/generate`
 
-{% include notitle [access](../../_auto/method_scopes/generateShipmentListDocumentReport.md) %} Запускает генерацию **листа сборки** для отгрузки. Чтобы на в листе сборки отображался внешний идентификатор заказа, передайте его в методе [POST v2/campaigns/{campaignId}/orders/{orderId}/external-id](../../reference/orders/updateExternalOrderId.md). Узнать статус генерации и получить ссылку на готовый документ можно с помощью запроса [GET v2/reports/info/{reportId}](../../reference/reports/getReportInfo.md). {% include notitle [limit](../../_auto/method_limits/generateShipmentListDocumentReport.md) %}
+{% include notitle [access](../../_auto/method_scopes/generateShipmentListDocumentReport.md) %}
+
+Запускает генерацию **листа сборки** для отгрузки.
+
+Чтобы на в листе сборки отображался внешний идентификатор заказа, передайте его в методе [POST v2/campaigns/{campaignId}/orders/{orderId}/external-id](../../reference/orders/updateExternalOrderId.md).
+
+Узнать статус генерации и получить ссылку на готовый документ можно с помощью запроса [GET v2/reports/info/{reportId}](../../reference/reports/getReportInfo.md).
+
+{% include notitle [limit](../../_auto/method_limits/generateShipmentListDocumentReport.md) %}
 
 ## Запрос
 

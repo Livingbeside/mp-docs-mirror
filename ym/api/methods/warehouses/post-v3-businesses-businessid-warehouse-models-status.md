@@ -12,14 +12,20 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: a55b7b344f6d5c0e
+content_sha: 0724cdd04d90a76f
 ---
 
 # Включение/выключение модели работы склада
 
 `POST /v3/businesses/{businessId}/warehouse/models/status`
 
-{% include notitle [access](../../_auto/method_scopes/updateWarehouseModelStatus.md) %} Отключает или включает модель работы (FBS, DBS или Экспресс) для указанного склада. После отключения модели товары, которые работают по ней на данном складе, скрываются через 15 минут. После включения они возвращаются на витрину через 15 минут, а если модель была выключена 30 дней или дольше — через 4 часа. {% include notitle [limit](../../_auto/method_limits/updateWarehouseModelStatus.md) %}
+{% include notitle [access](../../_auto/method_scopes/updateWarehouseModelStatus.md) %}
+
+Отключает или включает модель работы (FBS, DBS или Экспресс) для указанного склада.
+
+После отключения модели товары, которые работают по ней на данном складе, скрываются через 15 минут. После включения они возвращаются на витрину через 15 минут, а если модель была выключена 30 дней или дольше — через 4 часа.
+
+{% include notitle [limit](../../_auto/method_limits/updateWarehouseModelStatus.md) %}
 
 ## Параметры
 

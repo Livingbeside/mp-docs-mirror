@@ -11,14 +11,22 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: 05253b44d1cf01db
+content_sha: d59f60450b14f0a0
 ---
 
 # Получение файла со штрихкодами
 
 `POST /v1/reports/documents/barcodes/generate`
 
-{% include notitle [access](../../_auto/method_scopes/generateBarcodesReport.md) %} Запускает генерацию PDF-файла со штрихкодами переданных товаров или товаров в указанной заявке на поставку. Файл не получится сгенерировать, если в нем будет более 1 500 штрихкодов. Узнать статус генерации и получить ссылку на готовый файл можно с помощью запроса [GET v2/reports/info/{reportId}](../../reference/reports/getReportInfo.md). {% include notitle [limit](../../_auto/method_limits/generateBarcodesReport.md) %}
+{% include notitle [access](../../_auto/method_scopes/generateBarcodesReport.md) %}
+
+Запускает генерацию PDF-файла со штрихкодами переданных товаров или товаров в указанной заявке на поставку.
+
+Файл не получится сгенерировать, если в нем будет более 1 500 штрихкодов.
+
+Узнать статус генерации и получить ссылку на готовый файл можно с помощью запроса [GET v2/reports/info/{reportId}](../../reference/reports/getReportInfo.md).
+
+{% include notitle [limit](../../_auto/method_limits/generateBarcodesReport.md) %}
 
 ## Запрос
 

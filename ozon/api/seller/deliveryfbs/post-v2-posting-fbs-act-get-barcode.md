@@ -9,7 +9,7 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: 8933af14006724fe
+content_sha: 3bdbdb363806d6c2
 ---
 
 # Штрихкод для отгрузки отправления
@@ -35,9 +35,9 @@ content_sha: 8933af14006724fe
 
 **200** — Штрихкод для отправления
 
-- `content_type` — string. Тип файла.
 - `file_content` — string. Изображение со штрихкодом в бинарном виде.
 - `file_name` — string. Название файла.
+- `content_type` — string. Тип файла.
 
 **400** — Неверный параметр
 

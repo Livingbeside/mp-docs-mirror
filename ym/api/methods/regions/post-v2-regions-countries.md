@@ -14,14 +14,20 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: c4a991f31ab9e55d
+content_sha: 8e9dfe46fb84566d
 ---
 
 # Список допустимых кодов стран
 
 `POST /v2/regions/countries`
 
-{% include notitle [access](../../_auto/method_scopes/getRegionsCodes.md) %} Возвращает список стран с их кодами в формате :no-translate[ISO 3166-1 alpha-2]. Страна производства `countryCode` понадобится при продаже товаров из-за рубежа для бизнеса. [Инструкция](../../step-by-step/business-info.md) {% include notitle [limit](../../_auto/method_limits/getRegionsCodes.md) %}
+{% include notitle [access](../../_auto/method_scopes/getRegionsCodes.md) %}
+
+Возвращает список стран с их кодами в формате :no-translate[ISO 3166-1 alpha-2].
+
+Страна производства `countryCode` понадобится при продаже товаров из-за рубежа для бизнеса. [Инструкция](../../step-by-step/business-info.md)
+
+{% include notitle [limit](../../_auto/method_limits/getRegionsCodes.md) %}
 
 ## Ответы
 

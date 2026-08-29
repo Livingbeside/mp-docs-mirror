@@ -9,7 +9,7 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: cdc9d2db74c47018
+content_sha: 84d1eaa7a272a725
 ---
 
 # Список товаров
@@ -55,10 +55,10 @@ content_sha: cdc9d2db74c47018
     - `is_discounted` — boolean. Уценённый товар.
     - `offer_id` — string. Идентификатор товара в системе продавца — артикул.
     - `product_id` — integer<int64>. Идентификатор товара в системе Ozon — `product_id`.
+    - `sku` — integer<int64>. Идентификатор товара в системе Ozon — SKU.
     - `quants` — array[object]. Список квантов.
       - `quant_code` — string. Идентификатор эконом-товара.
       - `quant_size` — integer<int64>. Размер кванта.
-    - `sku` — integer<int64>. Идентификатор товара в системе Ozon — SKU.
   - `last_id` — string. Идентификатор последнего значения на странице. Чтобы получить следующие значения, передайте полученное значение в следующем запросе в параметре `last_id`.
   - `total` — integer<int32>. Всего товаров.
 

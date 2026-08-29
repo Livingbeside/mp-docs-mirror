@@ -10,14 +10,18 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: 9119ce2a3630b160
+content_sha: 95a22d5e88d40866
 ---
 
 # Информация об одной точке продаж
 
 `GET /v2/campaigns/{campaignId}/outlets/{outletId}`
 
-{% include notitle [access](../../_auto/method_scopes/getOutlet.md) %} Возвращает информацию о точках продаж магазина. {% include notitle [limit](../../_auto/method_limits/getOutlet.md) %}
+{% include notitle [access](../../_auto/method_scopes/getOutlet.md) %}
+
+Возвращает информацию о точках продаж магазина.
+
+{% include notitle [limit](../../_auto/method_limits/getOutlet.md) %}
 
 ## Параметры
 

@@ -14,14 +14,26 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: 298fc60b23319d33
+content_sha: ade880cb3647453c
 ---
 
 # Информация о невыкупе или возврате
 
 `GET /v2/campaigns/{campaignId}/orders/{orderId}/returns/{returnId}`
 
-{% include notitle [access](../../_auto/method_scopes/getReturn.md) %} Получает информацию по одному невыкупу или возврату. {% note tip "Подключите API-уведомления" %} Маркет отправит вам запрос [POST notification](../../push-notifications/reference/sendNotification.md), когда появится новый невыкуп или возврат. [{#T}](../../push-notifications/index.md) {% endnote %} {% include notitle [limit](../../_auto/method_limits/getReturn.md) %}
+{% include notitle [access](../../_auto/method_scopes/getReturn.md) %}
+
+Получает информацию по одному невыкупу или возврату.
+
+{% note tip "Подключите API-уведомления" %}
+
+Маркет отправит вам запрос [POST notification](../../push-notifications/reference/sendNotification.md), когда появится новый невыкуп или возврат.
+
+[{#T}](../../push-notifications/index.md)
+
+{% endnote %}
+
+{% include notitle [limit](../../_auto/method_limits/getReturn.md) %}
 
 ## Параметры
 

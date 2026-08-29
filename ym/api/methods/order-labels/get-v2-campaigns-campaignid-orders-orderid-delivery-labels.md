@@ -12,14 +12,22 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: c93b7d461d0679df
+content_sha: 1339e491fd9278ec
 ---
 
 # Готовые ярлыки‑наклейки на все коробки в одном заказе
 
 `GET /v2/campaigns/{campaignId}/orders/{orderId}/delivery/labels`
 
-{% include notitle [access](../../_auto/method_scopes/generateOrderLabels.md) %} Возвращает PDF-файл с ярлыками, которые нужно наклеить на коробки перед отгрузкой. Подробно о том, зачем они нужны и как выглядят, рассказано [в Справке Маркета для продавцов](https://yandex.ru/support/marketplace/orders/fbs/packaging/marking.html). На вход нужно передать идентификатор заказа и один необязательный параметр, который управляет версткой PDF-файла. Чтобы на ярлыке отображался внешний идентификатор заказа, передайте его в методе [POST v2/campaigns/{campaignId}/orders/{orderId}/external-id](../../reference/orders/updateExternalOrderId.md). {% include notitle [limit](../../_auto/method_limits/generateOrderLabels.md) %}
+{% include notitle [access](../../_auto/method_scopes/generateOrderLabels.md) %}
+
+Возвращает PDF-файл с ярлыками, которые нужно наклеить на коробки перед отгрузкой. Подробно о том, зачем они нужны и как выглядят, рассказано [в Справке Маркета для продавцов](https://yandex.ru/support/marketplace/orders/fbs/packaging/marking.html).
+
+На вход нужно передать идентификатор заказа и один необязательный параметр, который управляет версткой PDF-файла.
+
+Чтобы на ярлыке отображался внешний идентификатор заказа, передайте его в методе [POST v2/campaigns/{campaignId}/orders/{orderId}/external-id](../../reference/orders/updateExternalOrderId.md).
+
+{% include notitle [limit](../../_auto/method_limits/generateOrderLabels.md) %}
 
 ## Параметры
 

@@ -13,14 +13,30 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: c84d35c325e06f54
+content_sha: 5c3a348625f51358
 ---
 
 # Список товаров, находящихся в карантине по цене в магазине
 
 `POST /v2/campaigns/{campaignId}/price-quarantine`
 
-{% include notitle [access](../../_auto/method_scopes/getCampaignQuarantineOffers.md) %} Возвращает список товаров, которые находятся в карантине по цене, установленной в заданном магазине. Проверьте цену каждого из товаров, который попал в карантин. Если ошибки нет и цена правильная, подтвердите ее с помощью запроса [POST v2/campaigns/{campaignId}/price-quarantine/confirm](../../reference/price-quarantine/confirmCampaignPrices.md). Если цена в самом деле ошибочная, установите верную с помощью запроса [POST v2/campaigns/{campaignId}/offer-prices/updates](../../reference/prices/updatePrices.md). {% note info "Что такое карантин?" %} Товар попадает в карантин, если его цена меняется слишком резко или слишком сильно отличается от рыночной. [Подробнее](https://yandex.ru/support/marketplace/assortment/operations/prices.html#quarantine) {% endnote %} В запросе можно использовать фильтры. Результаты возвращаются постранично. {% include notitle [limit](../../_auto/method_limits/getCampaignQuarantineOffers.md) %}
+{% include notitle [access](../../_auto/method_scopes/getCampaignQuarantineOffers.md) %}
+
+Возвращает список товаров, которые находятся в карантине по цене, установленной в заданном магазине.
+
+Проверьте цену каждого из товаров, который попал в карантин. Если ошибки нет и цена правильная, подтвердите ее с помощью запроса [POST v2/campaigns/{campaignId}/price-quarantine/confirm](../../reference/price-quarantine/confirmCampaignPrices.md). Если цена в самом деле ошибочная, установите верную с помощью запроса [POST v2/campaigns/{campaignId}/offer-prices/updates](../../reference/prices/updatePrices.md).
+
+{% note info "Что такое карантин?" %}
+
+Товар попадает в карантин, если его цена меняется слишком резко или слишком сильно отличается от рыночной. [Подробнее](https://yandex.ru/support/marketplace/assortment/operations/prices.html#quarantine)
+
+{% endnote %}
+
+В запросе можно использовать фильтры.
+
+Результаты возвращаются постранично.
+
+{% include notitle [limit](../../_auto/method_limits/getCampaignQuarantineOffers.md) %}
 
 ## Параметры
 
@@ -28,7 +44,7 @@ content_sha: c84d35c325e06f54
 |---|---|---|---|---|
 | `campaignId` | path | integer<int64> | да | Идентификатор кампании (магазина) — технический идентификатор, который представляет ваш магазин в системе Яндекс Маркета при работе через API. Он однозначно связывается с вашим магазином, но предназначен только для автоматизированного взаимодействия. Его можно узнать с помощью запроса [GET v2/campaigns](../../reference/campaigns/getCampaigns.md) или найти в кабинете продавца на Маркете. Нажмите на иконку вашего аккаунта → **Настройки** и в меню слева выберите **API и модули**: * блок **Идентификатор кампании**; * вкладка **Лог запросов** → выпадающий список в блоке **Показывать логи**. ⚠️ Не путайте его с: - идентификатором магазина, который отображается в личном кабинете продавца; - рекламными кампаниями. |
 | `pageToken` | query | string | нет | Идентификатор страницы c результатами. Если параметр не указан, возвращается первая страница. Передавайте значение выходного параметра `nextPageToken`, полученное при последнем запросе. |
-| `limit` | query | integer<int32> | нет | {{ limit-param-description }} |
+| `limit` | query | integer<int32> | нет | — |
 
 ## Запрос
 

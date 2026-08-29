@@ -10,14 +10,18 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: 3d47d79b2cb2d3bc
+content_sha: c257f3e55d003d2e
 ---
 
 # Изменение даты доставки заказа
 
 `PUT /v2/campaigns/{campaignId}/orders/{orderId}/delivery/date`
 
-{% include notitle [access](../../_auto/method_scopes/setOrderDeliveryDate.md) %} Метод изменяет дату доставки заказа в статусе `PROCESSING` или `DELIVERY`. Для заказов с другими статусами дату доставки изменить нельзя. {% include notitle [limit](../../_auto/method_limits/setOrderDeliveryDate.md) %}
+{% include notitle [access](../../_auto/method_scopes/setOrderDeliveryDate.md) %}
+
+Метод изменяет дату доставки заказа в статусе `PROCESSING` или `DELIVERY`. Для заказов с другими статусами дату доставки изменить нельзя.
+
+{% include notitle [limit](../../_auto/method_limits/setOrderDeliveryDate.md) %}
 
 ## Параметры
 

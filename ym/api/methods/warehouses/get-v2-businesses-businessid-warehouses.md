@@ -12,7 +12,7 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: true
-content_sha: 21cc43993b23c830
+content_sha: b261fe0602d44fdb
 ---
 
 # Список складов и групп складов
@@ -21,7 +21,13 @@ content_sha: 21cc43993b23c830
 
 > ⚠️ Метод помечен как **deprecated**.
 
-{% include notitle [access](../../_auto/method_scopes/getWarehouses.md) %} Возвращает список складов и, если склады объединены, список групп складов. [Что такое группы складов и зачем они нужны](https://yandex.ru/support/marketplace/assortment/operations/stocks.html#unified-stocks) Среди прочего запрос позволяет определить идентификатор, который нужно использовать при передаче остатков для группы складов. {% include notitle [limit](../../_auto/method_limits/getWarehouses.md) %}
+{% include notitle [access](../../_auto/method_scopes/getWarehouses.md) %}
+
+Возвращает список складов и, если склады объединены, список групп складов. [Что такое группы складов и зачем они нужны](https://yandex.ru/support/marketplace/assortment/operations/stocks.html#unified-stocks)
+
+Среди прочего запрос позволяет определить идентификатор, который нужно использовать при передаче остатков для группы складов.
+
+{% include notitle [limit](../../_auto/method_limits/getWarehouses.md) %}
 
 ## Параметры
 

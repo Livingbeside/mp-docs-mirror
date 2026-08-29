@@ -13,14 +13,30 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: c0b889f42953e9b9
+content_sha: 43e2b7e8e5cdf73d
 ---
 
 # Список товаров, находящихся в карантине по цене в кабинете
 
 `POST /v2/businesses/{businessId}/price-quarantine`
 
-{% include notitle [access](../../_auto/method_scopes/getBusinessQuarantineOffers.md) %} Возвращает список товаров, которые находятся в карантине по цене, установленной для всех магазинов кабинета. Проверьте цену каждого из товаров, который попал в карантин. Если ошибки нет и цена правильная, подтвердите ее с помощью запроса [POST v2/businesses/{businessId}/price-quarantine/confirm](../../reference/price-quarantine/confirmBusinessPrices.md). Если цена в самом деле ошибочная, установите верную с помощью запроса [POST v2/businesses/{businessId}/offer-prices/updates](../../reference/prices/updateBusinessPrices.md). {% note info "Что такое карантин?" %} Товар попадает в карантин, если его цена меняется слишком резко или слишком сильно отличается от рыночной. [Подробнее](https://yandex.ru/support/marketplace/assortment/operations/prices.html#quarantine) {% endnote %} В запросе можно использовать фильтры. Результаты возвращаются постранично. {% include notitle [limit](../../_auto/method_limits/getBusinessQuarantineOffers.md) %}
+{% include notitle [access](../../_auto/method_scopes/getBusinessQuarantineOffers.md) %}
+
+Возвращает список товаров, которые находятся в карантине по цене, установленной для всех магазинов кабинета.
+
+Проверьте цену каждого из товаров, который попал в карантин. Если ошибки нет и цена правильная, подтвердите ее с помощью запроса [POST v2/businesses/{businessId}/price-quarantine/confirm](../../reference/price-quarantine/confirmBusinessPrices.md). Если цена в самом деле ошибочная, установите верную с помощью запроса [POST v2/businesses/{businessId}/offer-prices/updates](../../reference/prices/updateBusinessPrices.md).
+
+{% note info "Что такое карантин?" %}
+
+Товар попадает в карантин, если его цена меняется слишком резко или слишком сильно отличается от рыночной. [Подробнее](https://yandex.ru/support/marketplace/assortment/operations/prices.html#quarantine)
+
+{% endnote %}
+
+В запросе можно использовать фильтры.
+
+Результаты возвращаются постранично.
+
+{% include notitle [limit](../../_auto/method_limits/getBusinessQuarantineOffers.md) %}
 
 ## Параметры
 
@@ -28,7 +44,7 @@ content_sha: c0b889f42953e9b9
 |---|---|---|---|---|
 | `businessId` | path | integer<int64> | да | Идентификатор кабинета. {% if audience == "partner" %} Чтобы его узнать, воспользуйтесь запросом [GET v2/campaigns](../../reference/campaigns/getCampaigns.md). ℹ️ [Что такое кабинет и магазин на Маркете](https://yandex.ru/support/marketplace/account/introduction.html) {% endif %} |
 | `pageToken` | query | string | нет | Идентификатор страницы c результатами. Если параметр не указан, возвращается первая страница. Передавайте значение выходного параметра `nextPageToken`, полученное при последнем запросе. |
-| `limit` | query | integer<int32> | нет | {{ limit-param-description }} |
+| `limit` | query | integer<int32> | нет | — |
 
 ## Запрос
 

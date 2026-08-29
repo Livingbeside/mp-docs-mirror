@@ -14,14 +14,18 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: ae402f6fbf5e063d
+content_sha: b90122f3565e2faf
 ---
 
 # Информация о регионе
 
 `GET /v2/regions/{regionId}`
 
-{% include notitle [access](../../_auto/method_scopes/searchRegionsById.md) %} Возвращает информацию о регионе. {% include notitle [limit](../../_auto/method_limits/searchRegionsById.md) %}
+{% include notitle [access](../../_auto/method_scopes/searchRegionsById.md) %}
+
+Возвращает информацию о регионе.
+
+{% include notitle [limit](../../_auto/method_limits/searchRegionsById.md) %}
 
 ## Параметры
 

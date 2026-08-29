@@ -10,14 +10,22 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: 53f5dfed14df3022
+content_sha: 25ef60800fc0edea
 ---
 
 # Ярлыки для доверительной приемки
 
 `GET /v2/campaigns/{campaignId}/first-mile/shipments/{shipmentId}/pallet/labels`
 
-{% include notitle [access](../../_auto/method_scopes/downloadShipmentPalletLabels.md) %} PDF-файл с ярлыками на каждую упаковку в отгрузке для доверительной приемки. Подробнее о таком виде приемки читайте в [Справке Маркета для продавцов](https://yandex.ru/support/marketplace/orders/fbs/process.html#acceptance). Распечатайте по несколько копий каждого ярлыка: на одну упаковку нужно наклеить минимум 2 ярлыка с разных сторон. Количество упаковок в отгрузке передается в методе [PUT v2/campaigns/{campaignId}/first-mile/shipments/{shipmentId}/pallets](../../reference/shipments/setShipmentPalletsCount.md). {% include notitle [limit](../../_auto/method_limits/downloadShipmentPalletLabels.md) %}
+{% include notitle [access](../../_auto/method_scopes/downloadShipmentPalletLabels.md) %}
+
+PDF-файл с ярлыками на каждую упаковку в отгрузке для доверительной приемки. Подробнее о таком виде приемки читайте в [Справке Маркета для продавцов](https://yandex.ru/support/marketplace/orders/fbs/process.html#acceptance).
+
+Распечатайте по несколько копий каждого ярлыка: на одну упаковку нужно наклеить минимум 2 ярлыка с разных сторон.
+
+Количество упаковок в отгрузке передается в методе [PUT v2/campaigns/{campaignId}/first-mile/shipments/{shipmentId}/pallets](../../reference/shipments/setShipmentPalletsCount.md).
+
+{% include notitle [limit](../../_auto/method_limits/downloadShipmentPalletLabels.md) %}
 
 ## Параметры
 

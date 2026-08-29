@@ -13,7 +13,7 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: true
-content_sha: b66d37fb545cd437
+content_sha: 8b73f322eddd4789
 ---
 
 # Лимит на установку кванта продажи и минимального количества товаров в заказе
@@ -22,7 +22,15 @@ content_sha: b66d37fb545cd437
 
 > ⚠️ Метод помечен как **deprecated**.
 
-{% include notitle [access](../../_auto/method_scopes/getCategoriesMaxSaleQuantum.md) %} Возвращает лимит на установку [кванта](*quantum) и минимального количества товаров в заказе, которые вы можете задать для товаров указанных категорий. Если вы передадите значение кванта или минимального количества товаров выше установленного Маркетом ограничения, товар будет скрыт с витрины. Подробнее о том, как продавать товары по несколько штук, читайте [в Справке Маркета для продавцов](https://yandex.ru/support2/marketplace/ru/assortment/fields/quantum). {% include notitle [limit](../../_auto/method_limits/getCategoriesMaxSaleQuantum.md) %}
+{% include notitle [access](../../_auto/method_scopes/getCategoriesMaxSaleQuantum.md) %}
+
+Возвращает лимит на установку [кванта](*quantum) и минимального количества товаров в заказе, которые вы можете задать для товаров указанных категорий.
+
+Если вы передадите значение кванта или минимального количества товаров выше установленного Маркетом ограничения, товар будет скрыт с витрины.
+
+Подробнее о том, как продавать товары по несколько штук, читайте [в Справке Маркета для продавцов](https://yandex.ru/support2/marketplace/ru/assortment/fields/quantum).
+
+{% include notitle [limit](../../_auto/method_limits/getCategoriesMaxSaleQuantum.md) %}
 
 ## Запрос
 

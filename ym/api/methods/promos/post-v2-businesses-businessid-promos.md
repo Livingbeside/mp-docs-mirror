@@ -13,14 +13,28 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: 8b3618858ae6ee86
+content_sha: 7f03a5b08fc84aea
 ---
 
 # Получение списка акций
 
 `POST /v2/businesses/{businessId}/promos`
 
-{% include notitle [access](../../_auto/method_scopes/getPromos.md) %} Возвращает информацию об акциях Маркета. Не возвращает данные об акциях, которые создал продавец. По умолчанию возвращаются акции, в которых продавец участвует или может принять участие. Чтобы получить текущие или завершенные акции, передайте параметр `participation`. Типы акций, которые возвращаются в ответе: * прямая скидка; * флеш-акция; * скидка по промокоду. {% include notitle [limit](../../_auto/method_limits/getPromos.md) %}
+{% include notitle [access](../../_auto/method_scopes/getPromos.md) %}
+
+Возвращает информацию об акциях Маркета. Не возвращает данные об акциях, которые создал продавец.
+
+По умолчанию возвращаются акции, в которых продавец участвует или может принять участие.
+
+Чтобы получить текущие или завершенные акции, передайте параметр `participation`.
+
+Типы акций, которые возвращаются в ответе:
+
+* прямая скидка;
+* флеш-акция;
+* скидка по промокоду.
+
+{% include notitle [limit](../../_auto/method_limits/getPromos.md) %}
 
 ## Параметры
 

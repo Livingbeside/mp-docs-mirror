@@ -13,14 +13,32 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: 4aebf9c59359267b
+content_sha: 8a69de8264b3a386
 ---
 
 # Отчет по реализации
 
 `POST /v2/reports/goods-realization/generate`
 
-{% include notitle [access](../../_auto/method_scopes/generateGoodsRealizationReport.md) %} Запускает генерацию отчета по реализации за заданный период. [Что это за отчет](https://yandex.ru/support/marketplace/ru/accounting/transactions#sales-report) Узнать статус генерации и получить ссылку на готовый отчет можно с помощью запроса [GET v2/reports/info/{reportId}](../../reference/reports/getReportInfo.md). {% list tabs %} - FBY, FBS, Экспресс {% include notitle [reports](../../_auto/reports/united/statistics/generator/united_statistics_v2.md) %} - DBS {% include notitle [reports](../../_auto/reports/united/statistics/generator/united_statistics_v2_dbs.md) %} {% endlist %} {% include notitle [limit](../../_auto/method_limits/generateGoodsRealizationReport.md) %}
+{% include notitle [access](../../_auto/method_scopes/generateGoodsRealizationReport.md) %}
+
+Запускает генерацию отчета по реализации за заданный период. [Что это за отчет](https://yandex.ru/support/marketplace/ru/accounting/transactions#sales-report)
+
+Узнать статус генерации и получить ссылку на готовый отчет можно с помощью запроса [GET v2/reports/info/{reportId}](../../reference/reports/getReportInfo.md).
+
+{% list tabs %}
+
+- FBY, FBS, Экспресс
+
+ {% include notitle [reports](../../_auto/reports/united/statistics/generator/united_statistics_v2.md) %}
+
+- DBS
+
+ {% include notitle [reports](../../_auto/reports/united/statistics/generator/united_statistics_v2_dbs.md) %}
+
+{% endlist %}
+
+{% include notitle [limit](../../_auto/method_limits/generateGoodsRealizationReport.md) %}
 
 ## Параметры
 

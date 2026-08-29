@@ -12,14 +12,18 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: ddf25d8d39e32b84
+content_sha: 381db83c70bab8d0
 ---
 
 # Заказы, которые повлияли на индекс качества
 
 `POST /v2/campaigns/{campaignId}/ratings/quality/details`
 
-{% include notitle [access](../../_auto/method_scopes/getQualityRatingDetails.md) %} Возвращает список заказов, которые повлияли на индекс качества магазина. Чтобы узнать значение индекса качества, выполните запрос [POST v2/businesses/{businessId}/ratings/quality](../../reference/ratings/getQualityRatings.md). {% include notitle [limit](../../_auto/method_limits/getQualityRatingDetails.md) %}
+{% include notitle [access](../../_auto/method_scopes/getQualityRatingDetails.md) %}
+
+Возвращает список заказов, которые повлияли на индекс качества магазина. Чтобы узнать значение индекса качества, выполните запрос [POST v2/businesses/{businessId}/ratings/quality](../../reference/ratings/getQualityRatings.md).
+
+{% include notitle [limit](../../_auto/method_limits/getQualityRatingDetails.md) %}
 
 ## Параметры
 

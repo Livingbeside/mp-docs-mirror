@@ -9,7 +9,7 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: 6db42f7e0d0c121a
+content_sha: e4bea8bae8859af5
 ---
 
 # Информация об остатках на складах продавца (FBS и rFBS)
@@ -38,11 +38,11 @@ content_sha: 6db42f7e0d0c121a
 **200** — Количество товаров на складах FBS и rFBS
 
 - `result` — ?. Результат работы метода.
+  - `sku` — integer<int64>. Идентификатор товара в системе Ozon — SKU.
   - `offer_id` — string<int64>. Идентификатор товара в системе продавца — артикул.
   - `present` — integer<int64>. Общее количество товара на складе.
   - `product_id` — integer<int64>. Идентификатор товара в системе Ozon — артикул.
   - `reserved` — integer<int64>. Количество зарезервированных товаров на складе.
-  - `sku` — integer<int64>. Идентификатор товара в системе Ozon — SKU.
   - `warehouse_id` — integer<int64>. Идентификатор склада.
   - `warehouse_name` — string. Название склада.
 

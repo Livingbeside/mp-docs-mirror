@@ -10,14 +10,18 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: 8809c69cd9cecf79
+content_sha: 13fc448ab4cc67cb
 ---
 
 # Информация о лицензиях для точек продаж
 
 `GET /v2/campaigns/{campaignId}/outlets/licenses`
 
-{% include notitle [access](../../_auto/method_scopes/getOutletLicenses.md) %} Возвращает информацию о лицензиях для точек продаж. {% include notitle [limit](../../_auto/method_limits/getOutletLicenses.md) %}
+{% include notitle [access](../../_auto/method_scopes/getOutletLicenses.md) %}
+
+Возвращает информацию о лицензиях для точек продаж.
+
+{% include notitle [limit](../../_auto/method_limits/getOutletLicenses.md) %}
 
 ## Параметры
 

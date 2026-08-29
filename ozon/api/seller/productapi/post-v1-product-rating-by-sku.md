@@ -9,7 +9,7 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: 7b09eb8abc7cf240
+content_sha: ccfa8c4949b7d777
 ---
 
 # Получить контент-рейтинг товаров по SKU
@@ -38,6 +38,8 @@ content_sha: 7b09eb8abc7cf240
 **200** — Контент-рейтинг товаров
 
 - `products` — ?. Контент-рейтинг товаров.
+  - `sku` — integer<int64>. Идентификатор товара на Ozon.
+  - `rating` — number<float>. Контент-рейтинг товара: от 0 до 100.
   - `groups` — ?. Группы характеристик, из которых складывается контент-рейтинг.
     - `conditions` — ?. Список условий, увеличивающих контент-рейтинг товара.
       - `cost` — number<float>. Количество баллов контент-рейтинга, которое даёт выполнение условия.
@@ -52,8 +54,6 @@ content_sha: 7b09eb8abc7cf240
     - `name` — string. Название группы.
     - `rating` — number<float>. Рейтинг в группе.
     - `weight` — number<float>. Процент влияния характеристик группы на контент-рейтинг.
-  - `rating` — number<float>. Контент-рейтинг товара: от 0 до 100.
-  - `sku` — integer<int64>. Идентификатор товара на Ozon.
 
 **400** — Неверный параметр
 

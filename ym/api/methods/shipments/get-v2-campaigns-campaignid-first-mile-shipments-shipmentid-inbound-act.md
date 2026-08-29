@@ -10,14 +10,20 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: 4eeefffa26a40b42
+content_sha: 167ee0d4693d0c34
 ---
 
 # Получение фактического акта приема-передачи
 
 `GET /v2/campaigns/{campaignId}/first-mile/shipments/{shipmentId}/inbound-act`
 
-{% include notitle [access](../../_auto/method_scopes/downloadShipmentInboundAct.md) %} Возвращает фактический акт приема-передачи для заданной отгрузки. Такой акт становится доступен спустя несколько часов после завершения отгрузки. Он может понадобиться, если после отгрузки обнаружатся расхождения. {% include notitle [limit](../../_auto/method_limits/downloadShipmentInboundAct.md) %}
+{% include notitle [access](../../_auto/method_scopes/downloadShipmentInboundAct.md) %}
+
+Возвращает фактический акт приема-передачи для заданной отгрузки.
+
+Такой акт становится доступен спустя несколько часов после завершения отгрузки. Он может понадобиться, если после отгрузки обнаружатся расхождения.
+
+{% include notitle [limit](../../_auto/method_limits/downloadShipmentInboundAct.md) %}
 
 ## Параметры
 

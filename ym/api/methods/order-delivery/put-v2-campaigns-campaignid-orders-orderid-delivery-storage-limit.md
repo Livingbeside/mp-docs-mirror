@@ -10,14 +10,22 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: 45523815c7073f1c
+content_sha: df0b1caa1d1035ce
 ---
 
 # Продление срока хранения заказа
 
 `PUT /v2/campaigns/{campaignId}/orders/{orderId}/delivery/storage-limit`
 
-{% include notitle [access](../../_auto/method_scopes/updateOrderStorageLimit.md) %} Продлевает срок хранения заказа в пункте выдачи продавца. Заказ должен быть в статусе `PICKUP`. Продлить срок можно только один раз, не больше чем на 30 дней. Новый срок хранения можно получить в параметре `outletStorageLimitDate` в ответе метода [POST v1/businesses/{businessId}/orders](../../reference/orders/getBusinessOrders.md). {% include notitle [limit](../../_auto/method_limits/updateOrderStorageLimit.md) %}
+{% include notitle [access](../../_auto/method_scopes/updateOrderStorageLimit.md) %}
+
+Продлевает срок хранения заказа в пункте выдачи продавца.
+
+Заказ должен быть в статусе `PICKUP`. Продлить срок можно только один раз, не больше чем на 30 дней.
+
+Новый срок хранения можно получить в параметре `outletStorageLimitDate` в ответе метода [POST v1/businesses/{businessId}/orders](../../reference/orders/getBusinessOrders.md).
+
+{% include notitle [limit](../../_auto/method_limits/updateOrderStorageLimit.md) %}
 
 ## Параметры
 

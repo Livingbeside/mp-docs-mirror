@@ -12,14 +12,39 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: cdedd721e9d34a08
+content_sha: 65548cba8f009abb
 ---
 
 # Отчет по остаткам на складах партнера
 
 `POST /v3/businesses/{businessId}/reports/stocks/generate`
 
-{% include notitle [access](../../_auto/method_scopes/generateStocksReport.md) %} Запускает генерацию отчета по остаткам на складах магазинов в кабинете. [Что это за отчет](https://yandex.ru/support/marketplace/ru/storage/logistics#remains-history) **Какая информация вернется:** * Об остатках на всех складах магазинов в кабинете (модели DBS, FBS и Экспресс). * По каждому товару — ваш SKU, название, модель работы, склад, доступное для заказа количество, резерв, цену и статус. Узнать статус генерации и получить ссылку на готовый отчет можно с помощью запроса [GET v2/reports/info/{reportId}](../../reference/reports/getReportInfo.md). {% list tabs %} - Все склады магазинов в кабинете {% include notitle [reports](../../_auto/reports/offers/stocks_business_config.md) %} {% endlist %} {% note warning "Метод подходит, только если в кабинете нет групп складов" %} Если в кабинете есть группы складов, используйте метод [POST v2/reports/stocks-on-warehouses/generate](../../reference/reports/generateStocksOnWarehousesReport.md). [Что такое группы складов и зачем они нужны](https://yandex.ru/support/marketplace/assortment/operations/stocks.html#unified-stocks). {% endnote %} {% include notitle [limit](../../_auto/method_limits/generateStocksReport.md) %}
+{% include notitle [access](../../_auto/method_scopes/generateStocksReport.md) %}
+
+Запускает генерацию отчета по остаткам на складах магазинов в кабинете. [Что это за отчет](https://yandex.ru/support/marketplace/ru/storage/logistics#remains-history)
+
+**Какая информация вернется:**
+
+* Об остатках на всех складах магазинов в кабинете (модели DBS, FBS и Экспресс).
+* По каждому товару — ваш SKU, название, модель работы, склад, доступное для заказа количество, резерв, цену и статус.
+
+Узнать статус генерации и получить ссылку на готовый отчет можно с помощью запроса [GET v2/reports/info/{reportId}](../../reference/reports/getReportInfo.md).
+
+{% list tabs %}
+
+- Все склады магазинов в кабинете
+
+ {% include notitle [reports](../../_auto/reports/offers/stocks_business_config.md) %}
+
+{% endlist %}
+
+{% note warning "Метод подходит, только если в кабинете нет групп складов" %}
+
+Если в кабинете есть группы складов, используйте метод [POST v2/reports/stocks-on-warehouses/generate](../../reference/reports/generateStocksOnWarehousesReport.md). [Что такое группы складов и зачем они нужны](https://yandex.ru/support/marketplace/assortment/operations/stocks.html#unified-stocks).
+
+{% endnote %}
+
+{% include notitle [limit](../../_auto/method_limits/generateStocksReport.md) %}
 
 ## Параметры
 

@@ -13,21 +13,39 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: c82419c1e6910e61
+content_sha: 45ec87c187824e42
 ---
 
 # Добавление нового или изменение созданного комментария
 
 `POST /v2/businesses/{businessId}/goods-feedback/comments/update`
 
-{% include notitle [access](../../_auto/method_scopes/updateGoodsFeedbackComment.md) %} Добавляет новый комментарий магазина или изменяет комментарий, который магазин оставлял ранее. Для создания комментария к отзыву передайте только идентификатор отзыва `feedbackId`. Чтобы добавить комментарий к другому комментарию, передайте: * `feedbackId` — идентификатор отзыва; * `comment.parentId` — идентификатор родительского комментария. Чтобы изменить комментарий, передайте: * `feedbackId`— идентификатор отзыва; * `comment.id` — идентификатор комментария, который нужно изменить. Если передать одновременно `comment.parentId` и `comment.id`, будет изменен существующий комментарий. {% include notitle [limit](../../_auto/method_limits/updateGoodsFeedbackComment.md) %}
+{% include notitle [access](../../_auto/method_scopes/updateGoodsFeedbackComment.md) %}
+
+Добавляет новый комментарий магазина или изменяет комментарий, который магазин оставлял ранее.
+
+Для создания комментария к отзыву передайте только идентификатор отзыва `feedbackId`.
+
+Чтобы добавить комментарий к другому комментарию, передайте:
+
+* `feedbackId` — идентификатор отзыва;
+* `comment.parentId` — идентификатор родительского комментария.
+
+Чтобы изменить комментарий, передайте:
+
+* `feedbackId`— идентификатор отзыва;
+* `comment.id` — идентификатор комментария, который нужно изменить.
+
+Если передать одновременно `comment.parentId` и `comment.id`, будет изменен существующий комментарий.
+
+{% include notitle [limit](../../_auto/method_limits/updateGoodsFeedbackComment.md) %}
 
 ## Параметры
 
 | Имя | Где | Тип | Обяз. | Описание |
 |---|---|---|---|---|
 | `businessId` | path | integer<int64> | да | Идентификатор кабинета. {% if audience == "partner" %} Чтобы его узнать, воспользуйтесь запросом [GET v2/campaigns](../../reference/campaigns/getCampaigns.md). ℹ️ [Что такое кабинет и магазин на Маркете](https://yandex.ru/support/marketplace/account/introduction.html) {% endif %} |
-| `sourceType` | query | string (SELLER, ADVERTISER) | нет | Признак типа кабинета, от имени которого вызывается метод: {% if audience == "partner" %} - `SELLER` — продавец. {% endif %} - `ADVERTISER` — рекламодатель. {% if audience == "advertiser" %} {% note info "Обязательно указывайте sourceType=ADVERTISER в каждом запросе." %} {% endnote %} {% endif %} |
+| `sourceType` | query | string (SELLER, ADVERTISER) | нет | Признак типа кабинета, от имени которого вызывается метод: {% if audience == "partner" %} - `SELLER` — продавец. {% endif %} - `ADVERTISER` — рекламодатель. {% if audience == "advertiser" %} {% note info "Обязательно указывайте sourceType=ADVERTISER в каждом запросе." %}   {% endnote %} {% endif %} |
 
 ## Запрос
 

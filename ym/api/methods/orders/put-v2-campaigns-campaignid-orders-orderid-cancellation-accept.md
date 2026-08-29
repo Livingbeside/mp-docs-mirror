@@ -10,14 +10,33 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: 09d119135ed918c9
+content_sha: bd0ea5efdc96a930
 ---
 
 # Отмена заказа покупателем
 
 `PUT /v2/campaigns/{campaignId}/orders/{orderId}/cancellation/accept`
 
-{% include notitle [access](../../_auto/method_scopes/acceptOrderCancellation.md) %} Подтверждает или отклоняет заявку покупателя на отмену заказа, который передан службе доставки. Покупатель может отменить заказ в течение его обработки или доставки. Если заказ еще обрабатывается (статус `PROCESSING`), вам не нужно подтверждать отмену заказа — он будет отменен автоматически. Если заказ уже передан службе доставки (статус `DELIVERY` или `PICKUP`) и пользователь отменил его, вы можете предупредить службу об отмене в течение 48 часов. * Служба доставки узнала об отмене до передачи заказа покупателю — подтвердите отмену с помощью запроса [PUT v2/campaigns/{campaignId}/orders/{orderId}/cancellation/accept](../../reference/orders/acceptOrderCancellation.md). * Заказ уже доставлен — отклоните отмену с помощью этого же запроса. Тогда у покупателя останется заказ, и деньги за него возвращаться не будут. **Как узнать об отмененных заказах:** * Передайте параметр `onlyWaitingForCancellationApprove` в запросе [POST v1/businesses/{businessId}/orders](../../reference/orders/getBusinessOrders.md). * В кабинете или через почту — на нее придет уведомление об отмене. * Подключите API-уведомления. Маркет отправит вам запрос [POST notification](../../push-notifications/reference/sendNotification.md), когда появится новая заявка на отмену заказа. [{#T}](../../push-notifications/index.md) Если в течение 48 часов вы не подтвердите или отклоните отмену, заказ будет отменен автоматически. {% include notitle [limit](../../_auto/method_limits/acceptOrderCancellation.md) %}
+{% include notitle [access](../../_auto/method_scopes/acceptOrderCancellation.md) %}
+
+Подтверждает или отклоняет заявку покупателя на отмену заказа, который передан службе доставки.
+
+Покупатель может отменить заказ в течение его обработки или доставки. Если заказ еще обрабатывается (статус `PROCESSING`), вам не нужно подтверждать отмену заказа — он будет отменен автоматически.
+
+Если заказ уже передан службе доставки (статус `DELIVERY` или `PICKUP`) и пользователь отменил его, вы можете предупредить службу об отмене в течение 48 часов.
+
+ * Служба доставки узнала об отмене до передачи заказа покупателю — подтвердите отмену с помощью запроса [PUT v2/campaigns/{campaignId}/orders/{orderId}/cancellation/accept](../../reference/orders/acceptOrderCancellation.md).
+ * Заказ уже доставлен — отклоните отмену с помощью этого же запроса. Тогда у покупателя останется заказ, и деньги за него возвращаться не будут.
+
+**Как узнать об отмененных заказах:**
+
+ * Передайте параметр `onlyWaitingForCancellationApprove` в запросе [POST v1/businesses/{businessId}/orders](../../reference/orders/getBusinessOrders.md).
+ * В кабинете или через почту — на нее придет уведомление об отмене.
+ * Подключите API-уведомления. Маркет отправит вам запрос [POST notification](../../push-notifications/reference/sendNotification.md), когда появится новая заявка на отмену заказа. [{#T}](../../push-notifications/index.md)
+
+Если в течение 48 часов вы не подтвердите или отклоните отмену, заказ будет отменен автоматически.
+
+{% include notitle [limit](../../_auto/method_limits/acceptOrderCancellation.md) %}
 
 ## Параметры
 

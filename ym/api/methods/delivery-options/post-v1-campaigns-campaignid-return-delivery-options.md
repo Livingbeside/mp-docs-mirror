@@ -10,14 +10,18 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: bb31ef178cf0e9ce
+content_sha: c41995c4a858c6f5
 ---
 
 # Получение подходящих для возврата пунктов выдачи
 
 `POST /v1/campaigns/{campaignId}/return-delivery-options`
 
-{% include notitle [access](../../_auto/method_scopes/getReturnDeliveryOptions.md) %} Возвращает список идентификаторов пунктов выдачи, которые могут принять возврат указанных товаров. {% include notitle [limit](../../_auto/method_limits/getReturnDeliveryOptions.md) %}
+{% include notitle [access](../../_auto/method_scopes/getReturnDeliveryOptions.md) %}
+
+Возвращает список идентификаторов пунктов выдачи, которые могут принять возврат указанных товаров.
+
+{% include notitle [limit](../../_auto/method_limits/getReturnDeliveryOptions.md) %}
 
 ## Параметры
 

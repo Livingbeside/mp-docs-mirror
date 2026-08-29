@@ -12,14 +12,32 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: d55be36fc827de93
+content_sha: 968630ee85b15121
 ---
 
 # Передача информации об остатках
 
 `POST /v3/businesses/{businessId}/offers/stocks/update`
 
-{% include notitle [access](../../_auto/method_scopes/updateStocksOnPartnerWarehouses.md) %} Передает данные об остатках товаров на витрине. Обязательно указывайте SKU **в точности** так, как он указан в каталоге. Например, _557722_ и _0557722_ — это два разных SKU. {% note info "Данные в каталоге обновляются не мгновенно" %} Это занимает до нескольких минут. {% endnote %} {% note warning "Метод подходит, только если в кабинете нет групп складов" %} Если в кабинете есть группы складов, используйте метод [PUT v2/campaigns/{campaignId}/offers/stocks](../../reference/stocks/updateStocks.md). [Что такое группы складов и зачем они нужны](https://yandex.ru/support/marketplace/assortment/operations/stocks.html#unified-stocks). {% endnote %} {% include notitle [limit](../../_auto/method_limits/updateStocksOnPartnerWarehouses.md) %}
+{% include notitle [access](../../_auto/method_scopes/updateStocksOnPartnerWarehouses.md) %}
+
+Передает данные об остатках товаров на витрине.
+
+Обязательно указывайте SKU **в точности** так, как он указан в каталоге. Например, _557722_ и _0557722_ — это два разных SKU.
+
+{% note info "Данные в каталоге обновляются не мгновенно" %}
+
+Это занимает до нескольких минут.
+
+{% endnote %}
+
+{% note warning "Метод подходит, только если в кабинете нет групп складов" %}
+
+Если в кабинете есть группы складов, используйте метод [PUT v2/campaigns/{campaignId}/offers/stocks](../../reference/stocks/updateStocks.md). [Что такое группы складов и зачем они нужны](https://yandex.ru/support/marketplace/assortment/operations/stocks.html#unified-stocks).
+
+{% endnote %}
+
+{% include notitle [limit](../../_auto/method_limits/updateStocksOnPartnerWarehouses.md) %}
 
 ## Параметры
 

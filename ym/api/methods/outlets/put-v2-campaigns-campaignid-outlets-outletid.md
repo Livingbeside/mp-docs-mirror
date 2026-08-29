@@ -10,14 +10,18 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: 8b2dd7c6d2d53144
+content_sha: 49272890e0e766d2
 ---
 
 # Изменение информации о точке продаж
 
 `PUT /v2/campaigns/{campaignId}/outlets/{outletId}`
 
-{% include notitle [access](../../_auto/method_scopes/updateOutlet.md) %} Изменяет информацию о точке продаж магазина на Маркете. {% include notitle [limit](../../_auto/method_limits/updateOutlet.md) %}
+{% include notitle [access](../../_auto/method_scopes/updateOutlet.md) %}
+
+Изменяет информацию о точке продаж магазина на Маркете.
+
+{% include notitle [limit](../../_auto/method_limits/updateOutlet.md) %}
 
 ## Параметры
 

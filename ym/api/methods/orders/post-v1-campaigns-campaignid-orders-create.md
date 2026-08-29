@@ -10,14 +10,36 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: 876ca8494c157610
+content_sha: f737f9f406fa5d72
 ---
 
 # Создание заказа
 
 `POST /v1/campaigns/{campaignId}/orders/create`
 
-{% include notitle [access](../../_auto/method_scopes/createOrder.md) %} Создает новый заказ, если на складе Маркета есть нужное количество товаров. Укажите `courierDelivery` для курьерской доставки или `pickupDelivery` для доставки в пункт выдачи. Не передавайте оба параметра одновременно. Значение параметра `draft`: * `true` — Маркет создаст заказ в статусе `RESERVED` и будет ждать подтверждения от магазина. Когда будете готовы, передайте статус `PROCESSING` с подстатусом `STARTED` в методе [PUT v2/campaigns/{campaignId}/orders/{orderId}/status](../../reference/orders/updateOrderStatus.md). Если не сделать это в течение часа после создания заказа, Маркет отменит его. * `false` — Маркет создаст заказ в статусе `PROCESSING` с подстатусом `STARTED`, подтверждение не требуется. Значение параметра `fake`: * `true` — тестовый заказ. Позволяет проверить работу магазина и его API на [тестовых заказах](../../concepts/sandbox.md). Такой заказ не будет отгружен и не влияет на остатки. * `false` — настоящий заказ. {% note warning "Перед вызовом метода" %} Получите доступные варианты доставки — [POST v2/campaigns/{campaignId}/delivery-options](../../reference/delivery-options/getDeliveryOptions.md). {% endnote %} {% include notitle [limit](../../_auto/method_limits/createOrder.md) %}
+{% include notitle [access](../../_auto/method_scopes/createOrder.md) %}
+
+Создает новый заказ, если на складе Маркета есть нужное количество товаров.
+
+Укажите `courierDelivery` для курьерской доставки или `pickupDelivery` для доставки в пункт выдачи. Не передавайте оба параметра одновременно.
+
+Значение параметра `draft`:
+
+* `true` — Маркет создаст заказ в статусе `RESERVED` и будет ждать подтверждения от магазина. Когда будете готовы, передайте статус `PROCESSING` с подстатусом `STARTED` в методе [PUT v2/campaigns/{campaignId}/orders/{orderId}/status](../../reference/orders/updateOrderStatus.md). Если не сделать это в течение часа после создания заказа, Маркет отменит его.
+* `false` — Маркет создаст заказ в статусе `PROCESSING` с подстатусом `STARTED`, подтверждение не требуется.
+
+Значение параметра `fake`:
+
+* `true` — тестовый заказ. Позволяет проверить работу магазина и его API на [тестовых заказах](../../concepts/sandbox.md). Такой заказ не будет отгружен и не влияет на остатки.
+* `false` — настоящий заказ.
+
+{% note warning "Перед вызовом метода" %}
+
+Получите доступные варианты доставки — [POST v2/campaigns/{campaignId}/delivery-options](../../reference/delivery-options/getDeliveryOptions.md).
+
+{% endnote %}
+
+{% include notitle [limit](../../_auto/method_limits/createOrder.md) %}
 
 ## Параметры
 

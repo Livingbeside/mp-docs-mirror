@@ -13,14 +13,23 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: e65060712d5f41e1
+content_sha: 88d781f14bafe71b
 ---
 
 # Создание нового чата с покупателем
 
 `POST /v2/businesses/{businessId}/chats/new`
 
-{% include notitle [access](../../_auto/method_scopes/createChat.md) %} Создает новый чат с покупателем и возвращает информацию о нем или созданном ранее. Типы чатов, которые может начать продавец: * по заказам; * по возвратам (доступны только для FBY-, FBS- и Экспресс-магазинов). {% include notitle [limit](../../_auto/method_limits/createChat.md) %}
+{% include notitle [access](../../_auto/method_scopes/createChat.md) %}
+
+Создает новый чат с покупателем и возвращает информацию о нем или созданном ранее.
+
+Типы чатов, которые может начать продавец:
+
+* по заказам;
+* по возвратам (доступны только для FBY-, FBS- и Экспресс-магазинов).
+
+{% include notitle [limit](../../_auto/method_limits/createChat.md) %}
 
 ## Параметры
 

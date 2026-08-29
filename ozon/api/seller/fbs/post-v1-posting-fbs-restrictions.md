@@ -9,7 +9,7 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: f3483a1c37f98acf
+content_sha: c7dbdf75c1c305ee
 ---
 
 # Получить ограничения пункта приёма
@@ -36,14 +36,14 @@ content_sha: f3483a1c37f98acf
 **200** — Ограничения пункта приёма
 
 - `result` — object
-  - `height` — number<double>. Ограничение по высоте в сантиметрах.
-  - `length` — number<double>. Ограничение по длине в сантиметрах.
-  - `max_posting_price` — number<double>. Ограничение по максимальной стоимости отправления в рублях.
-  - `max_posting_weight` — number<double>. Ограничение по максимальному весу в граммах.
-  - `min_posting_price` — number<double>. Ограничение по минимальной стоимости отправления в рублях.
-  - `min_posting_weight` — number<double>. Ограничение по минимальному весу в граммах.
   - `posting_number` — string. Номер отправления.
+  - `max_posting_weight` — number<double>. Ограничение по максимальному весу в граммах.
+  - `min_posting_weight` — number<double>. Ограничение по минимальному весу в граммах.
   - `width` — number<double>. Ограничение по ширине в сантиметрах.
+  - `length` — number<double>. Ограничение по длине в сантиметрах.
+  - `height` — number<double>. Ограничение по высоте в сантиметрах.
+  - `max_posting_price` — number<double>. Ограничение по максимальной стоимости отправления в рублях.
+  - `min_posting_price` — number<double>. Ограничение по минимальной стоимости отправления в рублях.
 
 **400** — Неверный параметр
 

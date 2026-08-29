@@ -13,14 +13,22 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: 2635be1a96857f91
+content_sha: 240dc818b821f904
 ---
 
 # Удаление товара из карантина по цене в кабинете
 
 `POST /v2/businesses/{businessId}/price-quarantine/confirm`
 
-{% include notitle [access](../../_auto/method_scopes/confirmBusinessPrices.md) %} Подтверждает во всех магазинах цену на товары, которые попали в карантин, и удаляет их из карантина. Товар попадает в карантин, если его цена меняется слишком резко. [Как настроить карантин](https://yandex.ru/support/marketplace/assortment/operations/prices.html#quarantine) Чтобы увидеть список товаров, которые попали в карантин, используйте запрос [POST v2/businesses/{businessId}/price-quarantine](getBusinessQuarantineOffers.md). {% include notitle [limit](../../_auto/method_limits/confirmBusinessPrices.md) %}
+{% include notitle [access](../../_auto/method_scopes/confirmBusinessPrices.md) %}
+
+Подтверждает во всех магазинах цену на товары, которые попали в карантин, и удаляет их из карантина.
+
+Товар попадает в карантин, если его цена меняется слишком резко. [Как настроить карантин](https://yandex.ru/support/marketplace/assortment/operations/prices.html#quarantine)
+
+Чтобы увидеть список товаров, которые попали в карантин, используйте запрос [POST v2/businesses/{businessId}/price-quarantine](getBusinessQuarantineOffers.md).
+
+{% include notitle [limit](../../_auto/method_limits/confirmBusinessPrices.md) %}
 
 ## Параметры
 

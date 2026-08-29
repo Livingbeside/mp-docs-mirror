@@ -13,14 +13,18 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: 8064ec818015d2d9
+content_sha: 05809cd158c07ea4
 ---
 
 # Получение заявления на возврат
 
 `GET /v2/campaigns/{campaignId}/orders/{orderId}/returns/{returnId}/application`
 
-{% include notitle [access](../../_auto/method_scopes/getReturnApplication.md) %} Загружает заявление покупателя на возврат товара. {% include notitle [limit](../../_auto/method_limits/getReturnApplication.md) %}
+{% include notitle [access](../../_auto/method_scopes/getReturnApplication.md) %}
+
+Загружает заявление покупателя на возврат товара.
+
+{% include notitle [limit](../../_auto/method_limits/getReturnApplication.md) %}
 
 ## Параметры
 

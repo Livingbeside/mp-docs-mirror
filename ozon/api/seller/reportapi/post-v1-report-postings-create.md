@@ -9,7 +9,7 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: ec45e940d3ad0907
+content_sha: 22de5b0bd8e2a4b5
 ---
 
 # Отчёт об отправлениях
@@ -38,9 +38,7 @@ content_sha: ec45e940d3ad0907
 
 - `filter` — object **обязательный**. Фильтр.
   - `cancel_reason_id` — array[integer<int64>]. Идентификатор причины отмены.
-  - `delivery_method_id` — array[integer<int64>]. Идентификатор способа доставки. Получите методом [/v1/delivery-method/list](#operation/WarehouseAPI_DeliveryMethodList).
   - `delivery_schema` — array[string] **обязательный**. Схема работы — FBO или FBS. За один запрос вы можете передать только одно значение: * `fbo` — чтобы получить отчёт по схеме FBO, * `fbs` — чтобы получить отчёт по схеме FBS.
-  - `is_express` — bool. Экспресс-доставка: - `true` — только отправления с доставкой Ozon Express; - `false` — только отправления без доставки Ozon Express. Если ничего не передать, вернутся все отправления.
   - `offer_id` — string. Идентификатор товара в системе продавца — артикул.
   - `processed_at_from` — string<date-time> **обязательный**. Время, когда заказ попал в обработку.
   - `processed_at_to` — string<date-time> **обязательный**. Время, когда заказ появился в личном кабинете.
@@ -49,6 +47,8 @@ content_sha: ec45e940d3ad0907
   - `statuses` — array[integer<int64>]. Числовой статус.
   - `title` — string. Название товара.
   - `warehouse_id` — array[integer<int64>]. Идентификатор склада.
+  - `delivery_method_id` — array[integer<int64>]. Идентификатор способа доставки. Получите методом [/v1/delivery-method/list](#operation/WarehouseAPI_DeliveryMethodList).
+  - `is_express` — bool. Экспресс-доставка: - `true` — только отправления с доставкой Ozon Express; - `false` — только отправления без доставки Ozon Express. Если ничего не передать, вернутся все отправления.
 - `language` — string. Язык ответа: - `RU` — русский, - `EN` — английский. По умолчанию: `DEFAULT`.
 - `with` — object. Дополнительные поля, которые нужно добавить в ответ.
   - `additional_data` — boolean. `true`, чтобы добавить в ответ дополнительную информацию.

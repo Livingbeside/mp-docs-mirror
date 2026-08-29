@@ -13,14 +13,26 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: fcd804b5534dc664
+content_sha: a294738f3980c471
 ---
 
 # Получение сообщения в чате
 
 `GET /v2/businesses/{businessId}/chats/message`
 
-{% include notitle [access](../../_auto/method_scopes/getChatMessage.md) %} Возвращает сообщение по его идентификатору. {% note tip "Подключите API-уведомления" %} Маркет отправит вам запрос [POST notification](../../push-notifications/reference/sendNotification.md), когда появится новый чат или сообщение. [{#T}](../../push-notifications/index.md) {% endnote %} {% include notitle [limit](../../_auto/method_limits/getChatMessage.md) %}
+{% include notitle [access](../../_auto/method_scopes/getChatMessage.md) %}
+
+Возвращает сообщение по его идентификатору.
+
+{% note tip "Подключите API-уведомления" %}
+
+Маркет отправит вам запрос [POST notification](../../push-notifications/reference/sendNotification.md), когда появится новый чат или сообщение.
+
+[{#T}](../../push-notifications/index.md)
+
+{% endnote %}
+
+{% include notitle [limit](../../_auto/method_limits/getChatMessage.md) %}
 
 ## Параметры
 

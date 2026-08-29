@@ -12,14 +12,20 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: fa401fb2e27df137
+content_sha: 17adb6b90f85c2cf
 ---
 
 # Готовый ярлык‑наклейка для коробки в заказе
 
 `GET /v2/campaigns/{campaignId}/orders/{orderId}/delivery/shipments/{shipmentId}/boxes/{boxId}/label`
 
-{% include notitle [access](../../_auto/method_scopes/generateOrderLabel.md) %} Формирует ярлык‑наклейку для коробки в заказе и возвращает ярлык в PDF‑файле. Чтобы на ярлыке отображался внешний идентификатор заказа, передайте его в методе [POST v2/campaigns/{campaignId}/orders/{orderId}/external-id](../../reference/orders/updateExternalOrderId.md). {% include notitle [limit](../../_auto/method_limits/generateOrderLabel.md) %}
+{% include notitle [access](../../_auto/method_scopes/generateOrderLabel.md) %}
+
+Формирует ярлык‑наклейку для коробки в заказе и возвращает ярлык в PDF‑файле.
+
+Чтобы на ярлыке отображался внешний идентификатор заказа, передайте его в методе [POST v2/campaigns/{campaignId}/orders/{orderId}/external-id](../../reference/orders/updateExternalOrderId.md).
+
+{% include notitle [limit](../../_auto/method_limits/generateOrderLabel.md) %}
 
 ## Параметры
 

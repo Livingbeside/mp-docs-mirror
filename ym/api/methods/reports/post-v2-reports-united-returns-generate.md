@@ -14,14 +14,26 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: 41f637d295bde65d
+content_sha: 62efdbb69c20aa19
 ---
 
 # Отчет по невыкупам и возвратам
 
 `POST /v2/reports/united-returns/generate`
 
-{% include notitle [access](../../_auto/method_scopes/generateUnitedReturnsReport.md) %} Запускает генерацию сводного отчета по невыкупам и возвратам за заданный период. [Что это за отчет](https://yandex.ru/support/marketplace/ru/orders/returns/logistic#rejected-orders) Отчет содержит информацию о невыкупах и возвратах за указанный период, а также о тех, которые готовы к выдаче. Узнать статус генерации и получить ссылку на готовый отчет можно с помощью запроса [GET v2/reports/info/{reportId}](../../reference/reports/getReportInfo.md). {% include notitle [reports](../../_auto/reports/united/returns/generator/united_returns.md) %} {% include notitle [tariff-period](../../_includes/common/report-data-period-unchanged.md) %} {% include notitle [limit](../../_auto/method_limits/generateUnitedReturnsReport.md) %}
+{% include notitle [access](../../_auto/method_scopes/generateUnitedReturnsReport.md) %}
+
+Запускает генерацию сводного отчета по невыкупам и возвратам за заданный период. [Что это за отчет](https://yandex.ru/support/marketplace/ru/orders/returns/logistic#rejected-orders)
+
+Отчет содержит информацию о невыкупах и возвратах за указанный период, а также о тех, которые готовы к выдаче.
+
+Узнать статус генерации и получить ссылку на готовый отчет можно с помощью запроса [GET v2/reports/info/{reportId}](../../reference/reports/getReportInfo.md).
+
+{% include notitle [reports](../../_auto/reports/united/returns/generator/united_returns.md) %}
+
+{% include notitle [tariff-period](../../_includes/common/report-data-period-unchanged.md) %}
+
+{% include notitle [limit](../../_auto/method_limits/generateUnitedReturnsReport.md) %}
 
 ## Параметры
 

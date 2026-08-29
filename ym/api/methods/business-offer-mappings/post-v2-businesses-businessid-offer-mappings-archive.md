@@ -13,14 +13,24 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: 77cbed3e0e35757e
+content_sha: 50e8a148c389a30d
 ---
 
 # Добавление товаров в архив
 
 `POST /v2/businesses/{businessId}/offer-mappings/archive`
 
-{% include notitle [access](../../_auto/method_scopes/addOffersToArchive.md) %} Помещает товары в архив. Товары, помещенные в архив, скрыты с витрины во всех магазинах кабинета. {% note warning "В архив нельзя отправить товар, который хранится на складе Маркета" %} Вначале такой товар нужно распродать или вывезти. {% endnote %} {% include notitle [limit](../../_auto/method_limits/addOffersToArchive.md) %}
+{% include notitle [access](../../_auto/method_scopes/addOffersToArchive.md) %}
+
+Помещает товары в архив. Товары, помещенные в архив, скрыты с витрины во всех магазинах кабинета.
+
+{% note warning "В архив нельзя отправить товар, который хранится на складе Маркета" %}
+
+Вначале такой товар нужно распродать или вывезти.
+
+{% endnote %}
+
+{% include notitle [limit](../../_auto/method_limits/addOffersToArchive.md) %}
 
 ## Параметры
 

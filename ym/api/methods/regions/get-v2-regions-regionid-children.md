@@ -14,14 +14,18 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: a37126ddc8e34a5c
+content_sha: d7df15c0297369ea
 ---
 
 # Информация о дочерних регионах
 
 `GET /v2/regions/{regionId}/children`
 
-{% include notitle [access](../../_auto/method_scopes/searchRegionChildren.md) %} Возвращает информацию о регионах, являющихся дочерними по отношению к региону, идентификатор которого указан в запросе. {% include notitle [limit](../../_auto/method_limits/searchRegionChildren.md) %}
+{% include notitle [access](../../_auto/method_scopes/searchRegionChildren.md) %}
+
+Возвращает информацию о регионах, являющихся дочерними по отношению к региону, идентификатор которого указан в запросе.
+
+{% include notitle [limit](../../_auto/method_limits/searchRegionChildren.md) %}
 
 ## Параметры
 
@@ -29,7 +33,7 @@ content_sha: a37126ddc8e34a5c
 |---|---|---|---|---|
 | `regionId` | path | integer<int64> | да | Идентификатор региона. Идентификатор региона можно получить c помощью запроса [GET v2/regions](../../reference/regions/searchRegionsByName.md). |
 | `pageToken` | query | string | нет | Идентификатор страницы c результатами. Если параметр не указан, возвращается первая страница. Передавайте значение выходного параметра `nextPageToken`, полученное при последнем запросе. |
-| `limit` | query | integer<int32> | нет | {{ limit-truncate-param-description }} {% note warning %} У данного лимита нет значения по умолчанию. {% endnote %} |
+| `limit` | query | integer<int32> | нет | {% note warning %} У данного лимита нет значения по умолчанию. {% endnote %} |
 | `page` | query | integer<int32> | нет | {% note warning "Параметр устарел и будет отключен 05.10.2026." %} Вместо `page` и `pageSize` используйте пагинацию по `pageToken` и `limit`. [Подробнее о типах пагинации и их использовании](../../concepts/pagination.md) {% endnote %} Номер страницы результатов. Используется вместе с параметром `pageSize`. |
 | `pageSize` | query | integer<int32> | нет | {% note warning "Параметр устарел и будет отключен 05.10.2026." %} Вместо `page` и `pageSize` используйте пагинацию по `pageToken` и `limit`. [Подробнее о типах пагинации и их использовании](../../concepts/pagination.md) {% endnote %} Размер страницы. Используется вместе с параметром `page`. |
 

@@ -13,14 +13,24 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: b47a240f57f898fa
+content_sha: 7ddf1817020eaa9e
 ---
 
 # Передача решения по возврату
 
 `POST /v2/campaigns/{campaignId}/orders/{orderId}/returns/{returnId}/decision/submit`
 
-{% include notitle [access](../../_auto/method_scopes/submitReturnDecision.md) %} Позволяет передать список решений по возврату. {% note info "Перед вызовом метода" %} Получите список доступных решений — [POST v1/businesses/{businessId}/returns/decisions](../../reference/returns/getReturnAvailableDecisions.md). {% endnote %} {% include notitle [limit](../../_auto/method_limits/submitReturnDecision.md) %}
+{% include notitle [access](../../_auto/method_scopes/submitReturnDecision.md) %}
+
+Позволяет передать список решений по возврату.
+
+{% note info "Перед вызовом метода" %}
+
+Получите список доступных решений — [POST v1/businesses/{businessId}/returns/decisions](../../reference/returns/getReturnAvailableDecisions.md).
+
+{% endnote %}
+
+{% include notitle [limit](../../_auto/method_limits/submitReturnDecision.md) %}
 
 ## Параметры
 

@@ -13,14 +13,18 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: 318c66b12b58a8e4
+content_sha: 488a01f72cb20f46
 ---
 
 # Получение истории сообщений в чате
 
 `POST /v2/businesses/{businessId}/chats/history`
 
-{% include notitle [access](../../_auto/method_scopes/getChatHistory.md) %} Возвращает историю сообщений в чате с покупателем. {% include notitle [limit](../../_auto/method_limits/getChatHistory.md) %}
+{% include notitle [access](../../_auto/method_scopes/getChatHistory.md) %}
+
+Возвращает историю сообщений в чате с покупателем.
+
+{% include notitle [limit](../../_auto/method_limits/getChatHistory.md) %}
 
 ## Параметры
 
@@ -29,7 +33,7 @@ content_sha: 318c66b12b58a8e4
 | `businessId` | path | integer<int64> | да | Идентификатор кабинета. {% if audience == "partner" %} Чтобы его узнать, воспользуйтесь запросом [GET v2/campaigns](../../reference/campaigns/getCampaigns.md). ℹ️ [Что такое кабинет и магазин на Маркете](https://yandex.ru/support/marketplace/account/introduction.html) {% endif %} |
 | `chatId` | query | integer<int64> | да | Идентификатор чата. |
 | `pageToken` | query | string | нет | Идентификатор страницы c результатами. Если параметр не указан, возвращается первая страница. Передавайте значение выходного параметра `nextPageToken`, полученное при последнем запросе. |
-| `limit` | query | integer<int32> | нет | {{ limit-param-description }} |
+| `limit` | query | integer<int32> | нет | — |
 
 ## Запрос
 

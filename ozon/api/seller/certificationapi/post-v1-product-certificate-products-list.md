@@ -9,7 +9,7 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: e8f6380d217a1e70
+content_sha: 65c928430ba44d91
 ---
 
 # Список товаров, привязанных к сертификату
@@ -34,11 +34,11 @@ content_sha: e8f6380d217a1e70
 **200** — Список товаров
 
 - `result` — object. Товары, привязанные к сертификату.
-  - `count` — integer<int64>. Количество найденных товаров.
   - `items` — array[object]. Список товаров.
     - `product_id` — integer<int64>. Идентификатор товара в системе Ozon — `product_id`.
     - `product_status_code` — string. Статус обработки товара при привязке к сертификату.
     - `sku` — integer<int64>. Идентификатор товара в системе Ozon — SKU.
+  - `count` — integer<int64>. Количество найденных товаров.
 
 **default** — Ошибка
 

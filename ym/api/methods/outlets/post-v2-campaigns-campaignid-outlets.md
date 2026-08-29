@@ -10,14 +10,18 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: b454c1bc93aabe01
+content_sha: b56517ad6b9ede63
 ---
 
 # Создание точки продаж
 
 `POST /v2/campaigns/{campaignId}/outlets`
 
-{% include notitle [access](../../_auto/method_scopes/createOutlet.md) %} Создает точку продаж магазина на Маркете. {% include notitle [limit](../../_auto/method_limits/createOutlet.md) %}
+{% include notitle [access](../../_auto/method_scopes/createOutlet.md) %}
+
+Создает точку продаж магазина на Маркете.
+
+{% include notitle [limit](../../_auto/method_limits/createOutlet.md) %}
 
 ## Параметры
 

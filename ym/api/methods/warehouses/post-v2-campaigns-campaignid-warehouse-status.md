@@ -12,7 +12,7 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: true
-content_sha: 55e8f0a2993d4c92
+content_sha: e6468e1e0b9c6675
 ---
 
 # Изменение статуса склада
@@ -21,7 +21,13 @@ content_sha: 55e8f0a2993d4c92
 
 > ⚠️ Метод помечен как **deprecated**.
 
-{% include notitle [access](../../_auto/method_scopes/updateWarehouseStatus.md) %} Отключает или включает склад. После отключения склада товары, которые находятся на нем, скрываются через 15 минут. После включения они возвращаются на витрину через 15 минут, а если склад был выключен 30 дней или дольше — через 4 часа. {% include notitle [limit](../../_auto/method_limits/updateWarehouseStatus.md) %}
+{% include notitle [access](../../_auto/method_scopes/updateWarehouseStatus.md) %}
+
+Отключает или включает склад.
+
+После отключения склада товары, которые находятся на нем, скрываются через 15 минут. После включения они возвращаются на витрину через 15 минут, а если склад был выключен 30 дней или дольше — через 4 часа.
+
+{% include notitle [limit](../../_auto/method_limits/updateWarehouseStatus.md) %}
 
 ## Параметры
 

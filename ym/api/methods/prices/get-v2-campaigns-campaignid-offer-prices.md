@@ -13,7 +13,7 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: true
-content_sha: c104ef0dcca81c97
+content_sha: b052823a2ef19e88
 ---
 
 # Список цен
@@ -22,7 +22,13 @@ content_sha: c104ef0dcca81c97
 
 > ⚠️ Метод помечен как **deprecated**.
 
-{% include notitle [access](../../_auto/method_scopes/getPrices.md) %} Возвращает список цен, установленных вами на товары любым способом: например, через API или в файле с каталогом. Способы установки цен описаны [в Справке Маркета для продавцов](https://yandex.ru/support/marketplace/assortment/operations/prices.html). {% include notitle [limit](../../_auto/method_limits/getPrices.md) %}
+{% include notitle [access](../../_auto/method_scopes/getPrices.md) %}
+
+Возвращает список цен, установленных вами на товары любым способом: например, через API или в файле с каталогом.
+
+Способы установки цен описаны [в Справке Маркета для продавцов](https://yandex.ru/support/marketplace/assortment/operations/prices.html).
+
+{% include notitle [limit](../../_auto/method_limits/getPrices.md) %}
 
 ## Параметры
 
@@ -30,7 +36,7 @@ content_sha: c104ef0dcca81c97
 |---|---|---|---|---|
 | `campaignId` | path | integer<int64> | да | Идентификатор кампании (магазина) — технический идентификатор, который представляет ваш магазин в системе Яндекс Маркета при работе через API. Он однозначно связывается с вашим магазином, но предназначен только для автоматизированного взаимодействия. Его можно узнать с помощью запроса [GET v2/campaigns](../../reference/campaigns/getCampaigns.md) или найти в кабинете продавца на Маркете. Нажмите на иконку вашего аккаунта → **Настройки** и в меню слева выберите **API и модули**: * блок **Идентификатор кампании**; * вкладка **Лог запросов** → выпадающий список в блоке **Показывать логи**. ⚠️ Не путайте его с: - идентификатором магазина, который отображается в личном кабинете продавца; - рекламными кампаниями. |
 | `pageToken` | query | string | нет | Идентификатор страницы c результатами. Если параметр не указан, возвращается первая страница. Передавайте значение выходного параметра `nextPageToken`, полученное при последнем запросе. |
-| `limit` | query | integer<int32> | нет | {{ limit-truncate-param-description }} |
+| `limit` | query | integer<int32> | нет | — |
 | `archived` | query | boolean | нет | Фильтр по нахождению в архиве. |
 
 ## Ответы

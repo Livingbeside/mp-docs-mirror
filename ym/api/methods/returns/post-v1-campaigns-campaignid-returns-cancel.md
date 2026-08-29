@@ -10,14 +10,32 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: f4b54f8f609692ca
+content_sha: 0878ca5908d064a5
 ---
 
 # Отмена возврата
 
 `POST /v1/campaigns/{campaignId}/returns/cancel`
 
-{% include notitle [access](../../_auto/method_scopes/cancelReturn.md) %} Отменяет возврат. Это можно сделать только до принятия в пункте выдачи (`"shipmentStatus": "CREATED"`). {% note info "Возврат отменяется не мгновенно" %} Отмена возврата применяется в течение нескольких минут и только в случае успешного завершения операции. [Как проверить статус операции](../../reference/operations/getOperations.md) {% endnote %} {% note tip "Используйте этот метод в подобных ситуациях" %} Вы создали возврат, в котором указали 3 товара. Но покупатель передумал и решил вернуть только 2. Отмените возврат и создайте новый. {% endnote %} {% include notitle [limit](../../_auto/method_limits/cancelReturn.md) %}
+{% include notitle [access](../../_auto/method_scopes/cancelReturn.md) %}
+
+Отменяет возврат.
+
+Это можно сделать только до принятия в пункте выдачи (`"shipmentStatus": "CREATED"`).
+
+{% note info "Возврат отменяется не мгновенно" %}
+
+Отмена возврата применяется в течение нескольких минут и только в случае успешного завершения операции. [Как проверить статус операции](../../reference/operations/getOperations.md)
+
+{% endnote %}
+
+{% note tip "Используйте этот метод в подобных ситуациях" %}
+
+Вы создали возврат, в котором указали 3 товара. Но покупатель передумал и решил вернуть только 2. Отмените возврат и создайте новый.
+
+{% endnote %}
+
+{% include notitle [limit](../../_auto/method_limits/cancelReturn.md) %}
 
 ## Параметры
 

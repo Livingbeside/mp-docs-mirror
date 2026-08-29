@@ -9,7 +9,7 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: d9a824a676d2553e
+content_sha: 9a87c8c32489857a
 ---
 
 # Получить список отправлений
@@ -56,24 +56,24 @@ content_sha: d9a824a676d2553e
         - `action_id` — string. Идентификатор акции.
         - `date_from` — string<date-time>. Дата начала акции.
         - `date_to` — string<date-time>. Дата окончания акции.
-        - `description` — string. Название акции.
         - `discount_percent` — number<double>. Скидка в процентах.
         - `discount_value` — number<double>. Сумма скидки.
         - `is_from_seller` — boolean. `true`, если акцию создал продавец.
+        - `description` — string. Название акции.
       - `commissions_currency_code` — string. Код валюты комиссии.
       - `old_price` — number<double>. Цена до учёта скидок. На карточке товара отображается зачёркнутой.
+      - `price` — number<double>. Цена товара с учётом акций, кроме акций за счёт Ozon.
+      - `product_id` — integer<int64>. Идентификатор товара в системе Ozon — SKU.
+      - `quantity` — integer<int64>. Количество товара.
+      - `total_discount_percent` — number<double>. Процент скидки.
       - `posting_commission` — object. Комиссия за отправление.
         - `amount` — number<double>. Сумма.
         - `payout` — number<double>. Выплата.
         - `percent` — number<double>. Процент комиссии.
-      - `price` — number<double>. Цена товара с учётом акций, кроме акций за счёт Ozon.
-      - `product_id` — integer<int64>. Идентификатор товара в системе Ozon — SKU.
-      - `quantity` — integer<int64>. Количество товара.
       - `return_commission` — object. Комиссия за возврат товара.
         - `amount` — number<double>. Сумма.
         - `payout` — number<double>. Выплата.
         - `percent` — number<double>. Процент комиссии.
-      - `total_discount_percent` — number<double>. Процент скидки.
       - `total_discount_value` — number<double>. Сумма скидки.
   - `in_process_at` — string<date-time>. Дата и время начала обработки отправления.
   - `order_date` — string<date-time>. Дата создания заказа.

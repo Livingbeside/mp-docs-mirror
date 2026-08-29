@@ -9,7 +9,7 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: abd0abe6a2f6cfc6
+content_sha: 2de61e1bc62cf40f
 ---
 
 # Создать штрихкод для товара
@@ -33,9 +33,9 @@ content_sha: abd0abe6a2f6cfc6
 **200** — Штрихкод создан
 
 - `errors` — array[object]. Ошибки при создании штрихкода.
-  - `barcode` — string. Штрихкод, при создании которого произошла ошибка.
   - `code` — string. Код ошибки.
   - `error` — string. Описание ошибки.
+  - `barcode` — string. Штрихкод, при создании которого произошла ошибка.
   - `product_id` — integer<int64>. Идентификатор товара, для которого не удалось создать штрихкод.
 
 **default** — Ошибка

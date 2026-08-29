@@ -9,7 +9,7 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: 6efb0ac6c31f3488
+content_sha: 88ce5fe829501fd2
 ---
 
 # Отчёт о реализации товаров (версия 2)
@@ -64,15 +64,15 @@ content_sha: 6efb0ac6c31f3488
     - `commission_ratio` — number<double>. Доля комиссии за продажу по категории.
     - `delivery_commission` — object. Комиссия за доставку.
       - `amount` — number<double>. Сумма.
-      - `bank_coinvestment` — number<double>. Выплаты по механикам лояльности партнёров: зелёные цены.
       - `bonus` — number<double>. Баллы за скидки.
       - `commission` — number<double>. Итоговая комиссия с учётом скидок и наценки. Для отчётов до 30 апреля 2024 года.
       - `compensation` — number<double>. Доплата за счёт Ozon. Для отчётов до 30 апреля 2024 года.
-      - `pick_up_point_coinvestment` — number<double>. Выплаты по механикам лояльности партнёров: АПВЗ.
       - `price_per_instance` — number<double>. Цена за экземпляр.
       - `quantity` — integer<int32>. Количество товара.
       - `standard_fee` — number<double>. Базовое вознаграждение Ozon.
+      - `bank_coinvestment` — number<double>. Выплаты по механикам лояльности партнёров: зелёные цены.
       - `stars` — number<double>. Выплаты по механикам лояльности партнёров: звёзды.
+      - `pick_up_point_coinvestment` — number<double>. Выплаты по механикам лояльности партнёров: АПВЗ.
       - `total` — number<double>. Итого к начислению.
     - `item` — object. Информация о товаре.
       - `barcode` — string. Штрихкод товара.
@@ -81,15 +81,15 @@ content_sha: 6efb0ac6c31f3488
       - `sku` — integer<int64>. Идентификатор товара в системе Ozon — SKU.
     - `return_commission` — object. Комиссия за возврат товара.
       - `amount` — number<double>. Сумма.
-      - `bank_coinvestment` — number<double>. Выплаты по механикам лояльности партнёров: зелёные цены.
       - `bonus` — number<double>. Баллы за скидки.
       - `commission` — number<double>. Итоговая комиссия с учётом скидок и наценки. Для отчётов до 30 апреля 2024 года.
       - `compensation` — number<double>. Доплата за счёт Ozon. Для отчётов до 30 апреля 2024 года.
-      - `pick_up_point_coinvestment` — number<double>. Выплаты по механикам лояльности партнёров: АПВЗ.
       - `price_per_instance` — number<double>. Цена за экземпляр.
       - `quantity` — integer<int32>. Количество товара.
       - `standard_fee` — number<double>. Базовое вознаграждение Ozon.
+      - `bank_coinvestment` — number<double>. Выплаты по механикам лояльности партнёров: зелёные цены.
       - `stars` — number<double>. Выплаты по механикам лояльности партнёров: звёзды.
+      - `pick_up_point_coinvestment` — number<double>. Выплаты по механикам лояльности партнёров: АПВЗ.
       - `total` — number<double>. Итого к начислению.
     - `rowNumber` — integer<int32>. Номер строки в отчёте.
     - `seller_price_per_instance` — number<double>. Цена продавца с учётом скидки.

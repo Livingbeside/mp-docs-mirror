@@ -14,21 +14,27 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: 26073574426ada09
+content_sha: e8206b1b89e7fbe6
 ---
 
 # Получение заданного отчета или документа
 
 `GET /v2/reports/info/{reportId}`
 
-{% include notitle [access](../../_auto/method_scopes/getReportInfo.md) %} Возвращает статус генерации заданного отчета или документа и, если он готов, ссылку для скачивания. Чтобы воспользоваться этим запросом, вначале нужно запустить генерацию отчета или документа. [Инструкция](../../step-by-step/reports.md) {% include notitle [limit](../../_auto/method_limits/getReportInfo.md) %}
+{% include notitle [access](../../_auto/method_scopes/getReportInfo.md) %}
+
+Возвращает статус генерации заданного отчета или документа и, если он готов, ссылку для скачивания.
+
+Чтобы воспользоваться этим запросом, вначале нужно запустить генерацию отчета или документа. [Инструкция](../../step-by-step/reports.md)
+
+{% include notitle [limit](../../_auto/method_limits/getReportInfo.md) %}
 
 ## Параметры
 
 | Имя | Где | Тип | Обяз. | Описание |
 |---|---|---|---|---|
 | `reportId` | path | string | да | Идентификатор отчета или документа, который вы получили после запуска генерации. |
-| `sourceType` | query | string (SELLER, ADVERTISER) | нет | Признак типа кабинета, от имени которого вызывается метод: {% if audience == "partner" %} - `SELLER` — продавец. {% endif %} - `ADVERTISER` — рекламодатель. {% if audience == "advertiser" %} {% note info "Обязательно указывайте sourceType=ADVERTISER в каждом запросе." %} {% endnote %} {% endif %} |
+| `sourceType` | query | string (SELLER, ADVERTISER) | нет | Признак типа кабинета, от имени которого вызывается метод: {% if audience == "partner" %} - `SELLER` — продавец. {% endif %} - `ADVERTISER` — рекламодатель. {% if audience == "advertiser" %} {% note info "Обязательно указывайте sourceType=ADVERTISER в каждом запросе." %}   {% endnote %} {% endif %} |
 
 ## Ответы
 

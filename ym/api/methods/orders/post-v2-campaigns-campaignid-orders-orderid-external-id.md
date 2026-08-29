@@ -12,14 +12,31 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: c09a711959406627
+content_sha: 0ccbe8dc695fbf51
 ---
 
 # Передача внешнего идентификатора заказа
 
 `POST /v2/campaigns/{campaignId}/orders/{orderId}/external-id`
 
-{% include notitle [access](../../_auto/method_scopes/updateExternalOrderId.md) %} Передает Маркету идентификатор заказа в системе магазина. Его нельзя передавать: * больше одного раза; * после перехода заказа в статус `PROCESSING` с подстатусом `READY_TO_SHIP`. Этот идентификатор отражается в документах отгрузки: акте приема-передачи, листе сборки и ярлыках. {% note alert "В штрихкодах могут быть только символы ASCII" %} Если во внешнем идентификаторе вы используете другие символы, на ярлыке в штрихкоде будет отображаться идентификатор заказа Маркета. {% endnote %} {% include notitle [limit](../../_auto/method_limits/updateExternalOrderId.md) %}
+{% include notitle [access](../../_auto/method_scopes/updateExternalOrderId.md) %}
+
+Передает Маркету идентификатор заказа в системе магазина.
+
+Его нельзя передавать:
+
+* больше одного раза;
+* после перехода заказа в статус `PROCESSING` с подстатусом `READY_TO_SHIP`.
+
+Этот идентификатор отражается в документах отгрузки: акте приема-передачи, листе сборки и ярлыках.
+
+{% note alert "В штрихкодах могут быть только символы ASCII" %}
+
+Если во внешнем идентификаторе вы используете другие символы, на ярлыке в штрихкоде будет отображаться идентификатор заказа Маркета.
+
+{% endnote %}
+
+{% include notitle [limit](../../_auto/method_limits/updateExternalOrderId.md) %}
 
 ## Параметры
 

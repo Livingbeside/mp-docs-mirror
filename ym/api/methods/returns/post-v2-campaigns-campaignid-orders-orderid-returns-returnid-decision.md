@@ -10,7 +10,7 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: true
-content_sha: 953d56a103136151
+content_sha: 1cd24c7160f6553c
 ---
 
 # Принятие или изменение решения по возврату
@@ -19,7 +19,11 @@ content_sha: 953d56a103136151
 
 > ⚠️ Метод помечен как **deprecated**.
 
-{% include notitle [access](../../_auto/method_scopes/setReturnDecision.md) %} Выбирает решение по возврату от покупателя. После этого для подтверждения решения нужно выполнить запрос [POST v2/campaigns/{campaignId}/orders/{orderId}/returns/{returnId}/decision/submit](../../reference/returns/submitReturnDecision.md). {% include notitle [limit](../../_auto/method_limits/setReturnDecision.md) %}
+{% include notitle [access](../../_auto/method_scopes/setReturnDecision.md) %}
+
+Выбирает решение по возврату от покупателя. После этого для подтверждения решения нужно выполнить запрос [POST v2/campaigns/{campaignId}/orders/{orderId}/returns/{returnId}/decision/submit](../../reference/returns/submitReturnDecision.md).
+
+{% include notitle [limit](../../_auto/method_limits/setReturnDecision.md) %}
 
 ## Параметры
 

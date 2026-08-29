@@ -13,14 +13,24 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: 8838b804aa8ebe31
+content_sha: 7e3220b4a94334a1
 ---
 
 # Получение фотографий товаров в возврате
 
 `GET /v2/campaigns/{campaignId}/orders/{orderId}/returns/{returnId}/decision/{itemId}/image/{imageHash}`
 
-{% include notitle [access](../../_auto/method_scopes/getReturnPhoto.md) %} Получает фотографии товаров, которые покупатель приложил к заявлению на возврат. Хеш изображения (`imageHash`) можно получить из ответов методов [GET v2/campaigns/{campaignId}/orders/{orderId}/returns/{returnId}](../../reference/returns/getReturn.md) и [GET v2/campaigns/{campaignId}/returns](../../reference/returns/getReturns.md) — в поле `images` решения по товару. Максимальный размер изображения — 50 МБ. Тип изображения можно определить по заголовку `Content-Type` в ответе. {% include notitle [limit](../../_auto/method_limits/getReturnPhoto.md) %}
+{% include notitle [access](../../_auto/method_scopes/getReturnPhoto.md) %}
+
+Получает фотографии товаров, которые покупатель приложил к заявлению на возврат.
+
+Хеш изображения (`imageHash`) можно получить из ответов методов [GET v2/campaigns/{campaignId}/orders/{orderId}/returns/{returnId}](../../reference/returns/getReturn.md) и [GET v2/campaigns/{campaignId}/returns](../../reference/returns/getReturns.md) — в поле `images` решения по товару.
+
+Максимальный размер изображения — 50 МБ.
+
+Тип изображения можно определить по заголовку `Content-Type` в ответе.
+
+{% include notitle [limit](../../_auto/method_limits/getReturnPhoto.md) %}
 
 ## Параметры
 

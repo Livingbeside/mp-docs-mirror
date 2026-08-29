@@ -9,7 +9,7 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: true
-content_sha: ffcc4bc160a619b9
+content_sha: a3eb45b66524e4be
 ---
 
 # Список отправлений
@@ -59,14 +59,14 @@ content_sha: ffcc4bc160a619b9
     - `value` — string
   - `analytics_data` — object. Данные аналитики.
     - `city` — string. Город доставки. Только для продавцов из СНГ.
-    - `client_delivery_date_begin` — string<date-time>. Дата и время начала доставки. Только для отправлений, оформленных через [Ozon Доставку](#tag/OzonLogistics).
-    - `client_delivery_date_end` — string<date-time>. Ожидаемая дата, до которой заказ будет доставлен. Только для отправлений, оформленных через [Ozon Доставку](#tag/OzonLogistics).
     - `delivery_type` — string. Способ доставки.
     - `is_legal` — boolean. Получатель юридическое лицо: - `true` — юридическое лицо, - `false` — физическое лицо.
     - `is_premium` — boolean. Наличие подписки Premium.
     - `payment_type_group_name` — string. Способ оплаты: - `картой онлайн`, - `карта Ozon Банка`, - `автосписание с карты Ozon Банка при выдаче`, - `сохранённой картой при получении`, - `Система Быстрых Платежей`, - `Ozon Рассрочка`, - `оплата на расчётный счёт`, - `SberPay`, - `предоплата на стороне внешнего продавца`.
     - `warehouse_id` — integer<int64>. Идентификатор склада.
     - `warehouse_name` — string. Название склада отправки заказа.
+    - `client_delivery_date_begin` — string<date-time>. Дата и время начала доставки. Только для отправлений, оформленных через [Ozon Доставку](#tag/OzonLogistics).
+    - `client_delivery_date_end` — string<date-time>. Ожидаемая дата, до которой заказ будет доставлен. Только для отправлений, оформленных через [Ozon Доставку](#tag/OzonLogistics).
   - `cancel_reason_id` — integer<int64>. Идентификатор причины отмены отправления.
   - `created_at` — string<date-time>. Дата и время создания отправления.
   - `financial_data` — object. Финансовые данные.
@@ -74,10 +74,10 @@ content_sha: ffcc4bc160a619b9
     - `cluster_to` — string. Код региона, куда доставляется заказ.
     - `products` — array[object]. Список товаров в заказе.
       - `actions` — array[string]. Список акций.
+      - `currency_code` — string. Валюта ваших цен. Cовпадает с валютой, которая установлена в настройках личного кабинета. Возможные значения: - `RUB` — российский рубль, - `BYN` — белорусский рубль, - `KZT` — тенге, - `EUR` — евро, - `USD` — доллар США, - `CNY` — юань.
       - `commission_amount` — number<double>. Размер комиссии за товар.
       - `commission_percent` — integer<int64>. Процент комиссии.
       - `commissions_currency_code` — string. Код валюты, в которой рассчитывались комиссии.
-      - `currency_code` — string. Валюта ваших цен. Cовпадает с валютой, которая установлена в настройках личного кабинета. Возможные значения: - `RUB` — российский рубль, - `BYN` — белорусский рубль, - `KZT` — тенге, - `EUR` — евро, - `USD` — доллар США, - `CNY` — юань.
       - `old_price` — number<double>. Цена до учёта скидок. На карточке товара отображается зачёркнутой.
       - `payout` — number<double>. Выплата продавцу.
       - `price` — number<double>. Цена товара с учётом акций, кроме акций за счёт Ozon.
@@ -94,12 +94,12 @@ content_sha: ffcc4bc160a619b9
   - `order_number` — string. Номер заказа, к которому относится отправление.
   - `posting_number` — string. Номер отправления.
   - `products` — array[object]. Список товаров в отправлении.
-    - `currency_code` — string. Валюта ваших цен. Cовпадает с валютой, которая установлена в настройках личного кабинета. Возможные значения: - `RUB` — российский рубль, - `BYN` — белорусский рубль, - `KZT` — тенге, - `EUR` — евро, - `USD` — доллар США, - `CNY` — юань.
     - `digital_codes` — ?. Коды активации для услуг и цифровых товаров.
-    - `is_marketplace_buyout` — boolean. `true`, если Ozon выкупил товар. [Подробнее о выкупе товаров в Базе знаний продавца](https://seller-edu.ozon.ru/commissions-tariffs/commissions-tariffs-ozon/prodaji-tovarov-v-eaes-i-drugie-strany#какие-товары-выкупает-ozon)
     - `name` — string. Название товара.
     - `offer_id` — string. Идентификатор товара в системе продавца — артикул.
+    - `currency_code` — string. Валюта ваших цен. Cовпадает с валютой, которая установлена в настройках личного кабинета. Возможные значения: - `RUB` — российский рубль, - `BYN` — белорусский рубль, - `KZT` — тенге, - `EUR` — евро, - `USD` — доллар США, - `CNY` — юань.
     - `price` — string. Цена товара.
+    - `is_marketplace_buyout` — boolean. `true`, если Ozon выкупил товар. [Подробнее о выкупе товаров в Базе знаний продавца](https://seller-edu.ozon.ru/commissions-tariffs/commissions-tariffs-ozon/prodaji-tovarov-v-eaes-i-drugie-strany#какие-товары-выкупает-ozon)
     - `quantity` — integer<int64>. Количество товара в отправлении.
     - `sku` — integer<int64>. Идентификатор товара в системе Ozon — SKU.
   - `status` — string. Статус отправления: - `awaiting_packaging` — ожидает упаковки, - `awaiting_deliver` — ожидает отгрузки, - `delivering` — доставляется, - `delivered` — доставлено, - `cancelled` — отменено.

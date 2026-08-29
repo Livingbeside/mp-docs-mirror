@@ -9,7 +9,7 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: 084b7aecf76553f3
+content_sha: cae604d7e7b4395d
 ---
 
 # Напечатать этикетку
@@ -41,9 +41,9 @@ content_sha: 084b7aecf76553f3
 
 **200** — Маркировка напечатана
 
-- `content_type` — string. Тип файла.
 - `file_content` — string<byte>. Содержание файла в бинарном виде.
 - `file_name` — string. Название файла.
+- `content_type` — string. Тип файла.
 
 **400** — Неверный параметр
 

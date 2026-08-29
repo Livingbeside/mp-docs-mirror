@@ -13,14 +13,37 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: 05c9e74bf477c1b5
+content_sha: e2b2cc537c321467
 ---
 
 # Отчет по платежам
 
 `POST /v2/reports/united-netting/generate`
 
-{% include notitle [access](../../_auto/method_scopes/generateUnitedNettingReport.md) %} Запускает генерацию отчета по платежам за заданный период. [Что это за отчет](https://yandex.ru/support/marketplace/ru/accounting/transactions#all-pay) Узнать статус генерации и получить ссылку на готовый отчет можно с помощью запроса [GET v2/reports/info/{reportId}](../../reference/reports/getReportInfo.md). Тип отчета зависит от того, какие поля заполнены в запросе: #| || **Тип отчета** | **Какие поля нужны** | **Комментарий** || || О платежах за период | `dateFrom` и `dateTo` | В отчет попадают все платежи, которые были выплачены и начислены в выбранный период. Пример: если перевод выполнен 31 августа и зачислен 1 сентября, он попадет в отчет за оба месяца. || || О платежном поручении | `bankOrderId` и `bankOrderDateTime` |—|| || [О баллах Маркета](*баллы_маркета) | `monthOfYear` |—|| |# Заказать отчеты нескольких типов одним запросом нельзя. {% include notitle [reports](../../_auto/reports/united/netting/generator/united_netting.md) %} {% include notitle [limit](../../_auto/method_limits/generateUnitedNettingReport.md) %}
+{% include notitle [access](../../_auto/method_scopes/generateUnitedNettingReport.md) %}
+
+Запускает генерацию отчета по платежам за заданный период. [Что это за отчет](https://yandex.ru/support/marketplace/ru/accounting/transactions#all-pay)
+
+Узнать статус генерации и получить ссылку на готовый отчет можно с помощью запроса [GET v2/reports/info/{reportId}](../../reference/reports/getReportInfo.md).
+
+Тип отчета зависит от того, какие поля заполнены в запросе:
+
+#|
+|| **Тип отчета** | **Какие поля нужны** | **Комментарий** ||
+|| О платежах за период | `dateFrom` и `dateTo` |
+ В отчет попадают все платежи, которые были выплачены и начислены в выбранный период.
+
+ Пример: если перевод выполнен 31 августа и зачислен 1 сентября, он попадет в отчет за оба месяца.
+||
+|| О платежном поручении | `bankOrderId` и `bankOrderDateTime` |—||
+|| [О баллах Маркета](*баллы_маркета) | `monthOfYear` |—||
+|#
+
+Заказать отчеты нескольких типов одним запросом нельзя.
+
+{% include notitle [reports](../../_auto/reports/united/netting/generator/united_netting.md) %}
+
+{% include notitle [limit](../../_auto/method_limits/generateUnitedNettingReport.md) %}
 
 ## Параметры
 

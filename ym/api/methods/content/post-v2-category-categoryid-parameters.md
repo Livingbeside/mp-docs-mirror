@@ -14,14 +14,22 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: 1185ad5e47f06551
+content_sha: 83a07e9c643a165c
 ---
 
 # Списки характеристик товаров по категориям
 
 `POST /v2/category/{categoryId}/parameters`
 
-{% include notitle [access](../../_auto/method_scopes/getCategoryContentParameters.md) %} Возвращает список характеристик с допустимыми значениями для заданной [листовой категории](*list-category). Поля в ответе определяют правила передачи характеристики в методах: - [POST v2/businesses/{businessId}/offer-mappings/update](../../reference/business-offer-mappings/updateOfferMappings.md) - [POST v2/businesses/{businessId}/offer-cards/update](../../reference/content/updateOfferContent.md) {% include notitle [limit](../../_auto/method_limits/getCategoryContentParameters.md) %}
+{% include notitle [access](../../_auto/method_scopes/getCategoryContentParameters.md) %}
+
+Возвращает список характеристик с допустимыми значениями для заданной [листовой категории](*list-category).
+
+Поля в ответе определяют правила передачи характеристики в методах:
+- [POST v2/businesses/{businessId}/offer-mappings/update](../../reference/business-offer-mappings/updateOfferMappings.md)
+- [POST v2/businesses/{businessId}/offer-cards/update](../../reference/content/updateOfferContent.md)
+
+{% include notitle [limit](../../_auto/method_limits/getCategoryContentParameters.md) %}
 
 ## Параметры
 

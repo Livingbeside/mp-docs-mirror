@@ -13,14 +13,18 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: ec857502f17878fb
+content_sha: 0dd363418bcb126e
 ---
 
 # Получение возможных решений по возврату
 
 `POST /v1/businesses/{businessId}/returns/decisions`
 
-{% include notitle [access](../../_auto/method_scopes/getReturnAvailableDecisions.md) %} Возвращает список доступных решений по возврату. {% include notitle [limit](../../_auto/method_limits/getReturnAvailableDecisions.md) %}
+{% include notitle [access](../../_auto/method_scopes/getReturnAvailableDecisions.md) %}
+
+Возвращает список доступных решений по возврату.
+
+{% include notitle [limit](../../_auto/method_limits/getReturnAvailableDecisions.md) %}
 
 ## Параметры
 

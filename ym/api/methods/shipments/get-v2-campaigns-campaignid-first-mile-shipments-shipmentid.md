@@ -10,14 +10,18 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: 7c788dfab5803702
+content_sha: 9c87503b3e75d1db
 ---
 
 # Получение информации об одной отгрузке
 
 `GET /v2/campaigns/{campaignId}/first-mile/shipments/{shipmentId}`
 
-{% include notitle [access](../../_auto/method_scopes/getShipment.md) %} Возвращает информацию об отгрузке по ее идентификатору. {% include notitle [limit](../../_auto/method_limits/getShipment.md) %}
+{% include notitle [access](../../_auto/method_scopes/getShipment.md) %}
+
+Возвращает информацию об отгрузке по ее идентификатору.
+
+{% include notitle [limit](../../_auto/method_limits/getShipment.md) %}
 
 ## Параметры
 

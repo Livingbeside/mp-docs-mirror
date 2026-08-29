@@ -6,8 +6,8 @@ path: /ozon-logistika/dostavka-dlya-biznesa
 source: "https://seller-edu.ozon.ru/libra/ozon-logistika/dostavka-dlya-biznesa"
 updated: "2026-07-15 13:10:18"
 doc_id: 70432
-fetched_at: "2026-08-28T12:11:14Z"
-content_sha: d6df8a5569c434d4
+fetched_at: "2026-08-29T01:56:39Z"
+content_sha: 811af047bdac38c4
 ---
 
 # Ozon Доставка для бизнеса
@@ -25,3 +25,4 @@ _Главная / Ozon Доставка_
 - [Финансы](https://seller-edu.ozon.ru/libra/ozon-logistika/dostavka-dlya-biznesa/finansy-ozon-dostavka)
 - [Документооборот](https://seller-edu.ozon.ru/libra/ozon-logistika/dostavka-dlya-biznesa/dokumentooborot-ozon-dostavka)
 - [Работа с Ozon Доставкой для бизнеса через API](https://seller-edu.ozon.ru/libra/ozon-logistika/dostavka-dlya-biznesa/rabota-s-ozon-dostavkoi-dlya-biznesa-cherez-api)
+- [Электронная транспортная накладная (ЭТрН) при работе с Ozon Доставкой для бизнеса](https://seller-edu.ozon.ru/libra/ozon-logistika/dostavka-dlya-biznesa/etrn)

@@ -10,14 +10,18 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: 3a39dcc28a9452f5
+content_sha: ce1950ca879ebafe
 ---
 
 # Удаление лицензий для точек продаж
 
 `DELETE /v2/campaigns/{campaignId}/outlets/licenses`
 
-{% include notitle [access](../../_auto/method_scopes/deleteOutletLicenses.md) %} Удаляет информацию о лицензиях для точек продаж. {% include notitle [limit](../../_auto/method_limits/deleteOutletLicenses.md) %}
+{% include notitle [access](../../_auto/method_scopes/deleteOutletLicenses.md) %}
+
+Удаляет информацию о лицензиях для точек продаж.
+
+{% include notitle [limit](../../_auto/method_limits/deleteOutletLicenses.md) %}
 
 ## Параметры
 

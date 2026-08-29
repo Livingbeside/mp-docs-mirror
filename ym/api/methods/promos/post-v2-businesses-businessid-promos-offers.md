@@ -13,14 +13,26 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: 2e2d650fe6ab0e28
+content_sha: 6759f9ab3f9f209c
 ---
 
 # Получение списка товаров, которые участвуют или могут участвовать в акции
 
 `POST /v2/businesses/{businessId}/promos/offers`
 
-{% include notitle [access](../../_auto/method_scopes/getPromoOffers.md) %} Возвращает список товаров, которые участвуют или могут участвовать в акции. {% note warning "Условия участия в акциях могут меняться" %} Например, `maxPromoPrice`. Установленные цены меняться не будут — `price` и `promoPrice`. {% endnote %} {% include notitle [limit](../../_auto/method_limits/getPromoOffers.md) %}
+{% include notitle [access](../../_auto/method_scopes/getPromoOffers.md) %}
+
+Возвращает список товаров, которые участвуют или могут участвовать в акции.
+
+{% note warning "Условия участия в акциях могут меняться" %}
+
+Например, `maxPromoPrice`.
+
+Установленные цены меняться не будут — `price` и `promoPrice`.
+
+{% endnote %}
+
+{% include notitle [limit](../../_auto/method_limits/getPromoOffers.md) %}
 
 ## Параметры
 
@@ -28,7 +40,7 @@ content_sha: 2e2d650fe6ab0e28
 |---|---|---|---|---|
 | `businessId` | path | integer<int64> | да | Идентификатор кабинета. {% if audience == "partner" %} Чтобы его узнать, воспользуйтесь запросом [GET v2/campaigns](../../reference/campaigns/getCampaigns.md). ℹ️ [Что такое кабинет и магазин на Маркете](https://yandex.ru/support/marketplace/account/introduction.html) {% endif %} |
 | `pageToken` | query | string | нет | Идентификатор страницы c результатами. Если параметр не указан, возвращается первая страница. Передавайте значение выходного параметра `nextPageToken`, полученное при последнем запросе. |
-| `limit` | query | integer<int32> | нет | {{ limit-param-description }} |
+| `limit` | query | integer<int32> | нет | — |
 
 ## Запрос
 

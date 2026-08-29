@@ -10,14 +10,18 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: 5479ed1ec33592ec
+content_sha: 8dd8ed831f7b0a6a
 ---
 
 # Информация о нескольких точках продаж
 
 `GET /v2/campaigns/{campaignId}/outlets`
 
-{% include notitle [access](../../_auto/method_scopes/getOutlets.md) %} Возвращает список точек продаж магазина. {% include notitle [limit](../../_auto/method_limits/getOutlets.md) %}
+{% include notitle [access](../../_auto/method_scopes/getOutlets.md) %}
+
+Возвращает список точек продаж магазина.
+
+{% include notitle [limit](../../_auto/method_limits/getOutlets.md) %}
 
 ## Параметры
 
@@ -25,7 +29,7 @@ content_sha: 5479ed1ec33592ec
 |---|---|---|---|---|
 | `campaignId` | path | integer<int64> | да | Идентификатор кампании (магазина) — технический идентификатор, который представляет ваш магазин в системе Яндекс Маркета при работе через API. Он однозначно связывается с вашим магазином, но предназначен только для автоматизированного взаимодействия. Его можно узнать с помощью запроса [GET v2/campaigns](../../reference/campaigns/getCampaigns.md) или найти в кабинете продавца на Маркете. Нажмите на иконку вашего аккаунта → **Настройки** и в меню слева выберите **API и модули**: * блок **Идентификатор кампании**; * вкладка **Лог запросов** → выпадающий список в блоке **Показывать логи**. ⚠️ Не путайте его с: - идентификатором магазина, который отображается в личном кабинете продавца; - рекламными кампаниями. |
 | `pageToken` | query | string | нет | Идентификатор страницы c результатами. Если параметр не указан, возвращается первая страница. Передавайте значение выходного параметра `nextPageToken`, полученное при последнем запросе. |
-| `limit` | query | integer<int32> | нет | {{ limit-param-description }} |
+| `limit` | query | integer<int32> | нет | — |
 | `region_id` | query | integer<int64> | нет | Идентификатор региона. Если задать идентификатор родительского региона любого уровня, в выходных данных будут отображены точки продаж всех дочерних регионов. Идентификатор региона можно получить c помощью метода [GET v2/regions](../../reference/regions/searchRegionsByName.md). |
 | `shop_outlet_code` | query | string | нет | Идентификатор точки продаж, присвоенный магазином. |
 | `regionId` | query | integer<int64> | нет | {% note warning "Параметр устарел и будет отключен 19.10.2026." %} Вместо него используйте `region_id`. {% endnote %} |

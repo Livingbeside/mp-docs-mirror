@@ -9,7 +9,7 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: 231d65ac58e31a76
+content_sha: 40c58596f5143774
 ---
 
 # Список неоплаченных товаров, заказанных юридическими лицами
@@ -34,13 +34,13 @@ content_sha: 231d65ac58e31a76
 
 **200** — Список неоплаченных товаров
 
-- `cursor` — string. Указатель для выборки следующих данных.
 - `products` — array[object]. Список неоплаченных товаров.
-  - `image_url` — string. Ссылка на изображение товара.
-  - `name` — string. Название товара.
-  - `offer_id` — string. Идентификатор товара в системе продавца — артикул.
   - `product_id` — integer<int64>. Идентификатор товара в системе Ozon — `product_id`.
+  - `offer_id` — string. Идентификатор товара в системе продавца — артикул.
   - `quantity` — integer<int32>. Количество экземпляров.
+  - `name` — string. Название товара.
+  - `image_url` — string. Ссылка на изображение товара.
+- `cursor` — string. Указатель для выборки следующих данных.
 
 **400** — Неверный параметр
 

@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /commissions-tariffs/commissions-tariffs-ozon/komissii-tovary-uslugi
 source: "https://seller-edu.ozon.ru/libra/commissions-tariffs/commissions-tariffs-ozon/komissii-tovary-uslugi"
-updated: "2026-08-24 16:42:05"
+updated: "2026-08-28 12:48:46"
 doc_id: 692
-fetched_at: "2026-08-28T12:11:14Z"
-content_sha: 86c4bc8b443d6e37
+fetched_at: "2026-08-29T01:56:39Z"
+content_sha: 3158640accb0644a
 ---
 
 # Вознаграждение Ozon за продажу товаров
@@ -81,9 +81,9 @@ Ozon работает по модели маркетплейса, где каж�
 
 С 28 августа 2026 г.:
 
-для товаров до 100 ₽ на FBO и FBS — 20%, FBO Fresh — 17%;
+для товаров до 100 ₽ на FBO, FBO Fresh и FBS — 17%;
 
-для товаров от 101 до 300 ₽ на FBO и FBS — 26%, FBO Fresh — 23%.
+для товаров от 101 до 300 ₽ на FBO, FBO Fresh и FBS — 23%.
 
 Категории, доступные к продаже на Ozon Селект, могут отличаться от категорий в таблице вознаграждений за продажу. [Список разрешённых к продаже категорий](https://seller-edu.ozon.ru/libra/ozon-select/nachalo-raboty-na-platforme-selekt#%D0%BA%D0%B0%D0%BA-%D0%BF%D0%BE%D0%BB%D1%83%D1%87%D0%B8%D1%82%D1%8C-%D0%B4%D0%BE%D1%81%D1%82%D1%83%D0%BF-%D0%BA-%D0%BF%D0%BB%D0%B0%D1%82%D1%84%D0%BE%D1%80%D0%BC%D0%B5-%D1%81%D0%B5%D0%BB%D0%B5%D0%BA%D1%82)
 

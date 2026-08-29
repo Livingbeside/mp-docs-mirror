@@ -13,21 +13,35 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: c8ea6ae58111c307
+content_sha: a36c98edd29638aa
 ---
 
 # Отчет по полкам
 
 `POST /v2/reports/shelf-statistics/generate`
 
-{% include notitle [access](../../_auto/method_scopes/generateShelfsStatisticsReport.md) %} Запускает генерацию сводного отчета по полкам — рекламным блокам с баннером или видео и набором товаров. {% if audience == "partner" %}Подробнее о них читайте [в Справке Маркета для продавцов](https://yandex.ru/support2/marketplace/ru/marketing/shelf).{% endif %} Узнать статус генерации и получить ссылку на готовый отчет можно с помощью запроса [GET v2/reports/info/{reportId}](../../reference/reports/getReportInfo.md). {% include notitle [reports](../../_auto/reports/incuts/shelfs_statistics.md) %} {% if audience != "advertiser" %} {% include notitle [tariff-period](../../_includes/common/report-data-period-400-days.md) %} {% endif %} {% include notitle [limit](../../_auto/method_limits/generateShelfsStatisticsReport.md) %}
+{% include notitle [access](../../_auto/method_scopes/generateShelfsStatisticsReport.md) %}
+
+Запускает генерацию сводного отчета по полкам — рекламным блокам с баннером или видео и набором товаров. {% if audience == "partner" %}Подробнее о них читайте [в Справке Маркета для продавцов](https://yandex.ru/support2/marketplace/ru/marketing/shelf).{% endif %}
+
+Узнать статус генерации и получить ссылку на готовый отчет можно с помощью запроса [GET v2/reports/info/{reportId}](../../reference/reports/getReportInfo.md).
+
+{% include notitle [reports](../../_auto/reports/incuts/shelfs_statistics.md) %}
+
+{% if audience != "advertiser" %}
+
+{% include notitle [tariff-period](../../_includes/common/report-data-period-400-days.md) %}
+
+{% endif %}
+
+{% include notitle [limit](../../_auto/method_limits/generateShelfsStatisticsReport.md) %}
 
 ## Параметры
 
 | Имя | Где | Тип | Обяз. | Описание |
 |---|---|---|---|---|
 | `format` | query | string (FILE, CSV, JSON) | нет | Формат отчета или документа. |
-| `sourceType` | query | string (SELLER, ADVERTISER) | нет | Признак типа кабинета, от имени которого вызывается метод: {% if audience == "partner" %} - `SELLER` — продавец. {% endif %} - `ADVERTISER` — рекламодатель. {% if audience == "advertiser" %} {% note info "Обязательно указывайте sourceType=ADVERTISER в каждом запросе." %} {% endnote %} {% endif %} |
+| `sourceType` | query | string (SELLER, ADVERTISER) | нет | Признак типа кабинета, от имени которого вызывается метод: {% if audience == "partner" %} - `SELLER` — продавец. {% endif %} - `ADVERTISER` — рекламодатель. {% if audience == "advertiser" %} {% note info "Обязательно указывайте sourceType=ADVERTISER в каждом запросе." %}   {% endnote %} {% endif %} |
 
 ## Запрос
 

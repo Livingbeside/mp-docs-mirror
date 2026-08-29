@@ -12,14 +12,26 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: 63f16f8877ddc8f1
+content_sha: 170dbb09f6dfddea
 ---
 
 # Список складов
 
 `POST /v3/businesses/{businessId}/warehouses`
 
-{% include notitle [access](../../_auto/method_scopes/getPartnerWarehouses.md) %} Возвращает список складов кабинета и информацию о них. Для каждого склада возвращается список моделей работы (FBS, DBS, Экспресс) и доступность API для каждой модели. {% note warning "Метод подходит, только если в кабинете нет групп складов" %} Метод возвращает только отдельные склады и не возвращает группы складов. Если в кабинете есть группы складов, используйте метод [POST v2/businesses/{businessId}/warehouses](../../reference/warehouses/getPagedWarehouses.md). [Что такое группы складов и зачем они нужны](https://yandex.ru/support/marketplace/assortment/operations/stocks.html#unified-stocks). {% endnote %} {% include notitle [limit](../../_auto/method_limits/getPartnerWarehouses.md) %}
+{% include notitle [access](../../_auto/method_scopes/getPartnerWarehouses.md) %}
+
+Возвращает список складов кабинета и информацию о них.
+
+Для каждого склада возвращается список моделей работы (FBS, DBS, Экспресс) и доступность API для каждой модели.
+
+{% note warning "Метод подходит, только если в кабинете нет групп складов" %}
+
+Метод возвращает только отдельные склады и не возвращает группы складов. Если в кабинете есть группы складов, используйте метод [POST v2/businesses/{businessId}/warehouses](../../reference/warehouses/getPagedWarehouses.md). [Что такое группы складов и зачем они нужны](https://yandex.ru/support/marketplace/assortment/operations/stocks.html#unified-stocks).
+
+{% endnote %}
+
+{% include notitle [limit](../../_auto/method_limits/getPartnerWarehouses.md) %}
 
 ## Параметры
 
@@ -27,7 +39,7 @@ content_sha: 63f16f8877ddc8f1
 |---|---|---|---|---|
 | `businessId` | path | integer<int64> | да | Идентификатор кабинета. {% if audience == "partner" %} Чтобы его узнать, воспользуйтесь запросом [GET v2/campaigns](../../reference/campaigns/getCampaigns.md). ℹ️ [Что такое кабинет и магазин на Маркете](https://yandex.ru/support/marketplace/account/introduction.html) {% endif %} |
 | `pageToken` | query | string | нет | Идентификатор страницы c результатами. Если параметр не указан, возвращается первая страница. Передавайте значение выходного параметра `nextPageToken`, полученное при последнем запросе. |
-| `limit` | query | integer<int32> | нет | {{ limit-param-description }} |
+| `limit` | query | integer<int32> | нет | — |
 
 ## Запрос
 

@@ -13,14 +13,18 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: 7f0a0c8a980ea7a8
+content_sha: 5e9cfca65d6975e6
 ---
 
 # Отчет по товарам
 
 `POST /v2/campaigns/{campaignId}/stats/skus`
 
-{% include notitle [access](../../_auto/method_scopes/getGoodsStats.md) %} Возвращает подробный отчет по товарам, которые вы разместили на Маркете. С помощью отчета вы можете узнать, например, об остатках на складе, об условиях хранения ваших товаров и т. д. {% include notitle [limit](../../_auto/method_limits/getGoodsStats.md) %}
+{% include notitle [access](../../_auto/method_scopes/getGoodsStats.md) %}
+
+Возвращает подробный отчет по товарам, которые вы разместили на Маркете. С помощью отчета вы можете узнать, например, об остатках на складе, об условиях хранения ваших товаров и т. д.
+
+{% include notitle [limit](../../_auto/method_limits/getGoodsStats.md) %}
 
 ## Параметры
 

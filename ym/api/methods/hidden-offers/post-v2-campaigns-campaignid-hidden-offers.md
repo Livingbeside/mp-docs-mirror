@@ -13,14 +13,24 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: 51d811e70b1c9384
+content_sha: 23dfd289d90c2ce9
 ---
 
 # Скрытие товаров и настройки скрытия
 
 `POST /v2/campaigns/{campaignId}/hidden-offers`
 
-{% include notitle [access](../../_auto/method_scopes/addHiddenOffers.md) %} Скрывает товары магазина на Маркете. {% note info "Данные в каталоге обновляются не мгновенно" %} Это занимает до нескольких минут. {% endnote %} {% include notitle [limit](../../_auto/method_limits/addHiddenOffers.md) %}
+{% include notitle [access](../../_auto/method_scopes/addHiddenOffers.md) %}
+
+Скрывает товары магазина на Маркете.
+
+{% note info "Данные в каталоге обновляются не мгновенно" %}
+
+Это занимает до нескольких минут.
+
+{% endnote %}
+
+{% include notitle [limit](../../_auto/method_limits/addHiddenOffers.md) %}
 
 ## Параметры
 

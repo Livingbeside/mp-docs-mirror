@@ -9,7 +9,7 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: 967dfa579b60d23a
+content_sha: 839d487f432a50bf
 ---
 
 # Реестр продаж юридическим лицам в JSON-формате
@@ -32,10 +32,10 @@ content_sha: 967dfa579b60d23a
 - `date_to` — string. Дата окончания отчётного периода в формате `YYYY-MM-DD`.
 - `invoices` — array[object]. Список счетов-фактур.
   - `buyer_info` — object. Информация о покупателе.
+    - `name` — string. Название компании.
     - `address` — string. Юридический адрес.
     - `inn` — string. ИНН.
     - `kpp` — string. КПП.
-    - `name` — string. Название компании.
   - `currency` — string. Валюта.
   - `currency_code` — integer<int32>. Код валюты.
   - `info` — object. Информация о счёте-фактуре.

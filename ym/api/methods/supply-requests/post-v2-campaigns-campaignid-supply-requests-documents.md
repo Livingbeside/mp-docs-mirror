@@ -11,14 +11,18 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: 97a810229c953fae
+content_sha: 818dc96afea6e77e
 ---
 
 # Получение документов по заявке на поставку, вывоз или утилизацию
 
 `POST /v2/campaigns/{campaignId}/supply-requests/documents`
 
-{% include notitle [access](../../_auto/method_scopes/getSupplyRequestDocuments.md) %} Возвращает документы по заявке. {% include notitle [limit](../../_auto/method_limits/getSupplyRequestDocuments.md) %}
+{% include notitle [access](../../_auto/method_scopes/getSupplyRequestDocuments.md) %}
+
+Возвращает документы по заявке.
+
+{% include notitle [limit](../../_auto/method_limits/getSupplyRequestDocuments.md) %}
 
 ## Параметры
 

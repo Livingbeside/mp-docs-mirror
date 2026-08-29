@@ -10,14 +10,58 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: c122b1eefc8c8987
+content_sha: af0453f8ce4e7f04
 ---
 
 # Передача ключей цифровых товаров
 
 `POST /v2/campaigns/{campaignId}/orders/{orderId}/deliverDigitalGoods`
 
-{% include notitle [access](../../_auto/method_scopes/provideOrderDigitalCodes.md) %} Передает ключи цифровых товаров, которые покупатель заказал и оплатил. После выполнения запроса Маркет отправит ему письмо с ключами и инструкциями по активации. Если письмо будет доставлено, Маркет переведет заказ в финальный статус `DELIVERED`. {% note tip "После передачи кода покупателю статус заказа изменится не сразу" %} Подключите API-уведомления — Маркет отправит вам запрос [POST notification](../../push-notifications/reference/sendNotification.md), когда заказ перейдет в статус `DELIVERED`. [{#T}](../../push-notifications/index.md) {% endnote %} Ключ нужно передать в течение 30 минут после перехода заказа в статус `PROCESSING`. Если в один заказ входят несколько ключей, передавайте их все в одном запросе. Каждый товар с уникальным `id` передавайте в виде отдельного элемента в массиве `items`, а ключи товара — в массиве `codes`. {% cut "Пример" %} ```json translate=no { "items": [ { "id": 1, "codes": [ "code1", "code2", "code3" ], "slip": "slip", "activate_till": "2025-02-18" }, { "id": 2, "codes": [ "code4", "code5", "code6" ], "slip": "slip", "activate_till": "2025-02-18" } ] } ``` {% endcut %} {% include notitle [limit](../../_auto/method_limits/provideOrderDigitalCodes.md) %}
+{% include notitle [access](../../_auto/method_scopes/provideOrderDigitalCodes.md) %}
+
+Передает ключи цифровых товаров, которые покупатель заказал и оплатил. После выполнения запроса Маркет отправит ему письмо с ключами и инструкциями по активации. Если письмо будет доставлено, Маркет переведет заказ в финальный статус `DELIVERED`.
+
+{% note tip "После передачи кода покупателю статус заказа изменится не сразу" %}
+
+Подключите API-уведомления — Маркет отправит вам запрос [POST notification](../../push-notifications/reference/sendNotification.md), когда заказ перейдет в статус `DELIVERED`.
+
+[{#T}](../../push-notifications/index.md)
+
+{% endnote %}
+
+Ключ нужно передать в течение 30 минут после перехода заказа в статус `PROCESSING`.
+
+Если в один заказ входят несколько ключей, передавайте их все в одном запросе.
+
+Каждый товар с уникальным `id` передавайте в виде отдельного элемента в массиве `items`, а ключи товара — в массиве `codes`.
+
+{% cut "Пример" %}
+
+```json translate=no
+{
+ "items": [
+ {
+ "id": 1,
+ "codes": [
+ "code1", "code2", "code3"
+ ],
+ "slip": "slip",
+ "activate_till": "2025-02-18"
+ },
+ {
+ "id": 2,
+ "codes": [
+ "code4", "code5", "code6"
+ ],
+ "slip": "slip",
+ "activate_till": "2025-02-18"
+ }
+ ]
+}
+```
+{% endcut %}
+
+{% include notitle [limit](../../_auto/method_limits/provideOrderDigitalCodes.md) %}
 
 ## Параметры
 

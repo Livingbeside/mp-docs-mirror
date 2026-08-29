@@ -13,14 +13,18 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: 8ad6bf67214a91e2
+content_sha: f7abe6bc344a7986
 ---
 
 # Отправка файла в чат
 
 `POST /v2/businesses/{businessId}/chats/file/send`
 
-{% include notitle [access](../../_auto/method_scopes/sendFileToChat.md) %} Отправляет файл в чат с покупателем. {% include notitle [limit](../../_auto/method_limits/sendFileToChat.md) %}
+{% include notitle [access](../../_auto/method_scopes/sendFileToChat.md) %}
+
+Отправляет файл в чат с покупателем.
+
+{% include notitle [limit](../../_auto/method_limits/sendFileToChat.md) %}
 
 ## Параметры
 

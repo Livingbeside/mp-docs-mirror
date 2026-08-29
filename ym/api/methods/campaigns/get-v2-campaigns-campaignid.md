@@ -14,14 +14,18 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: d686a4049c3e64cc
+content_sha: c63d25c85e097514
 ---
 
 # Информация о магазине
 
 `GET /v2/campaigns/{campaignId}`
 
-{% include notitle [access](../../_auto/method_scopes/getCampaign.md) %} Возвращает информацию о магазине. {% include notitle [limit](../../_auto/method_limits/getCampaign.md) %}
+{% include notitle [access](../../_auto/method_scopes/getCampaign.md) %}
+
+Возвращает информацию о магазине.
+
+{% include notitle [limit](../../_auto/method_limits/getCampaign.md) %}
 
 ## Параметры
 
@@ -36,7 +40,7 @@ content_sha: d686a4049c3e64cc
 - `campaign` — object. Информация о магазине.
   - `domain` — string. Название магазина.
   - `id` — integer<int64>. Идентификатор кампании (магазина) — технический идентификатор, который представляет ваш магазин в системе Яндекс Маркета при работе через API. Он однозначно связывается с вашим магазином, но предназначен только для автоматизированного взаимодействия. Его можно узнать с помощью запроса [GET v2/campaigns](../../reference/campaigns/getCampaigns.md) или найти в кабинете продавца на Маркете. Нажмите на иконку вашего аккаунта → **Настройки** и в меню слева выберите **API и модули**: * блок **Идентификатор кампании**; * вкладка **Лог запросов** → выпадающий список в блоке **Показывать логи**. ⚠️ Не путайте его с: - идентификатором магазина, который отображается в личном кабинете продавца; - рекламными кампаниями.
-  - `clientId` — integer<int64>. {% note warning "Параметр устарел и будет отключен 05.10.2026." %} {% endnote %} Идентификатор плательщика в Яндекс Балансе.
+  - `clientId` — integer<int64>. {% note warning "Параметр устарел и будет отключен 05.10.2026." %}   {% endnote %} Идентификатор плательщика в Яндекс Балансе.
   - `business` — object. Информация о кабинете.
     - `id` — integer<int64>. Идентификатор кабинета. {% if audience == "partner" %}Чтобы его узнать, воспользуйтесь запросом [GET v2/campaigns](../../reference/campaigns/getCampaigns.md). ℹ️ [Что такое кабинет и магазин на Маркете](https://yandex.ru/support/marketplace/account/introduction.html) {% endif %}
     - `name` — string. Название бизнеса.

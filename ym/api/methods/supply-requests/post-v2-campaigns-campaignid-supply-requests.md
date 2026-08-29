@@ -11,14 +11,18 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: d583432da66a5bf4
+content_sha: 7709f7ecb3f8872a
 ---
 
 # Получение информации о заявках на поставку, вывоз и утилизацию
 
 `POST /v2/campaigns/{campaignId}/supply-requests`
 
-{% include notitle [access](../../_auto/method_scopes/getSupplyRequests.md) %} По указанным фильтрам возвращает заявки на поставку, вывоз и утилизацию, а также информацию по ним. {% include notitle [limit](../../_auto/method_limits/getSupplyRequests.md) %}
+{% include notitle [access](../../_auto/method_scopes/getSupplyRequests.md) %}
+
+По указанным фильтрам возвращает заявки на поставку, вывоз и утилизацию, а также информацию по ним.
+
+{% include notitle [limit](../../_auto/method_limits/getSupplyRequests.md) %}
 
 ## Параметры
 
@@ -26,7 +30,7 @@ content_sha: d583432da66a5bf4
 |---|---|---|---|---|
 | `campaignId` | path | integer<int64> | да | Идентификатор кампании (магазина) — технический идентификатор, который представляет ваш магазин в системе Яндекс Маркета при работе через API. Он однозначно связывается с вашим магазином, но предназначен только для автоматизированного взаимодействия. Его можно узнать с помощью запроса [GET v2/campaigns](../../reference/campaigns/getCampaigns.md) или найти в кабинете продавца на Маркете. Нажмите на иконку вашего аккаунта → **Настройки** и в меню слева выберите **API и модули**: * блок **Идентификатор кампании**; * вкладка **Лог запросов** → выпадающий список в блоке **Показывать логи**. ⚠️ Не путайте его с: - идентификатором магазина, который отображается в личном кабинете продавца; - рекламными кампаниями. |
 | `pageToken` | query | string | нет | Идентификатор страницы c результатами. Если параметр не указан, возвращается первая страница. Передавайте значение выходного параметра `nextPageToken`, полученное при последнем запросе. |
-| `limit` | query | integer<int32> | нет | {{ limit-param-description }} |
+| `limit` | query | integer<int32> | нет | — |
 
 ## Запрос
 

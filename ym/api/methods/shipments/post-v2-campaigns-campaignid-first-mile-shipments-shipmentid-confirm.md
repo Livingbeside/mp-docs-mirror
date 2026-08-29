@@ -10,14 +10,24 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: 8fef692a780666bf
+content_sha: 751d2d4cbb5bc61e
 ---
 
 # Подтверждение отгрузки
 
 `POST /v2/campaigns/{campaignId}/first-mile/shipments/{shipmentId}/confirm`
 
-{% include notitle [access](../../_auto/method_scopes/confirmShipment.md) %} Подтверждает отгрузку товаров в сортировочный центр или пункт приема заказов. Действие доступно только после того, как отгрузка сформирована. График отгрузок настраивается отдельно для каждого склада в личном кабинете и недоступен через API. Проверить возможность подтверждения отгрузки можно с помощью метода [GET v2/campaigns/{campaignId}/shipments/{shipmentId}](../../reference/shipments/getShipment): среди доступных действий `availableActions` должно быть действие `CONFIRM`. До наступления времени подтверждения метод вернет код `400` и ошибку :no-translate["Cutoff time for shipments has not been reached yet"]. Подробнее о приеме заказов и расписании отгрузок читайте [в Справке Маркета для продавцов](https://yandex.ru/support/marketplace/ru/orders/fbs/settings/shipment#schedule). {% include notitle [limit](../../_auto/method_limits/confirmShipment.md) %}
+{% include notitle [access](../../_auto/method_scopes/confirmShipment.md) %}
+
+Подтверждает отгрузку товаров в сортировочный центр или пункт приема заказов. Действие доступно только после того, как отгрузка сформирована.
+
+График отгрузок настраивается отдельно для каждого склада в личном кабинете и недоступен через API.
+Проверить возможность подтверждения отгрузки можно с помощью метода [GET v2/campaigns/{campaignId}/shipments/{shipmentId}](../../reference/shipments/getShipment): среди доступных действий `availableActions` должно быть действие `CONFIRM`.
+До наступления времени подтверждения метод вернет код `400` и ошибку :no-translate["Cutoff time for shipments has not been reached yet"].
+
+Подробнее о приеме заказов и расписании отгрузок читайте [в Справке Маркета для продавцов](https://yandex.ru/support/marketplace/ru/orders/fbs/settings/shipment#schedule).
+
+{% include notitle [limit](../../_auto/method_limits/confirmShipment.md) %}
 
 ## Параметры
 

@@ -12,14 +12,18 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: a1d6e0e1b7b8ce99
+content_sha: 2346adc29a88fc8e
 ---
 
 # Справочник служб доставки
 
 `GET /v2/delivery/services`
 
-{% include notitle [access](../../_auto/method_scopes/getDeliveryServices.md) %} Возвращает справочник служб доставки: идентификаторы и наименования. {% include notitle [limit](../../_auto/method_limits/getDeliveryServices.md) %}
+{% include notitle [access](../../_auto/method_scopes/getDeliveryServices.md) %}
+
+Возвращает справочник служб доставки: идентификаторы и наименования.
+
+{% include notitle [limit](../../_auto/method_limits/getDeliveryServices.md) %}
 
 ## Ответы
 

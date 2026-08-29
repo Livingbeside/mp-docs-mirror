@@ -14,14 +14,18 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: aa258a9d70abc232
+content_sha: 42f40137856fc175
 ---
 
 # Дерево категорий
 
 `POST /v2/categories/tree`
 
-{% include notitle [access](../../_auto/method_scopes/getCategoriesTree.md) %} Возвращает дерево категорий Маркета. {% include notitle [limit](../../_auto/method_limits/getCategoriesTree.md) %}
+{% include notitle [access](../../_auto/method_scopes/getCategoriesTree.md) %}
+
+Возвращает дерево категорий Маркета.
+
+{% include notitle [limit](../../_auto/method_limits/getCategoriesTree.md) %}
 
 ## Запрос
 

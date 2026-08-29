@@ -13,14 +13,24 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: 7676ae5d5b4a2e9c
+content_sha: 64fc203443250948
 ---
 
 # Возобновление показа товаров
 
 `POST /v2/campaigns/{campaignId}/hidden-offers/delete`
 
-{% include notitle [access](../../_auto/method_scopes/deleteHiddenOffers.md) %} Возобновляет показ скрытых вами товаров магазина на Маркете. {% note info "Данные в каталоге обновляются не мгновенно" %} Это занимает до нескольких минут. {% endnote %} {% include notitle [limit](../../_auto/method_limits/deleteHiddenOffers.md) %}
+{% include notitle [access](../../_auto/method_scopes/deleteHiddenOffers.md) %}
+
+Возобновляет показ скрытых вами товаров магазина на Маркете.
+
+{% note info "Данные в каталоге обновляются не мгновенно" %}
+
+Это занимает до нескольких минут.
+
+{% endnote %}
+
+{% include notitle [limit](../../_auto/method_limits/deleteHiddenOffers.md) %}
 
 ## Параметры
 

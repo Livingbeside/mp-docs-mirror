@@ -9,7 +9,7 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: 2ff21947a5afd351
+content_sha: b44c2e299505e3c2
 ---
 
 # Получить список необработанных отправлений
@@ -102,12 +102,6 @@ content_sha: 2ff21947a5afd351
     - `cancellation_initiator` — string. Инициатор отмены: - `Продавец`, - `Клиент`, - `Покупатель`, - `Ozon`, - `Система`, - `Служба доставки`.
     - `cancellation_type` — string. Тип отмены: - `seller` — отменено продавцом; - `client` или `customer` — отменено покупателем; - `ozon` — отменено Ozon; - `system` — отменено системой; - `delivery` — отменено службой доставки.
     - `cancelled_after_ship` — boolean. `true`, если отмена произошла после сборки отправления.
-  - `container` — object. Информация о грузоместе.
-    - `cargo_type` — string (BOX, PALLET). Тип грузоместа: - `BOX` — коробка; - `PALLET` — палета. По умолчанию: `BOX`.
-    - `container_date` — string. Дата создания грузоместа в часовом поясе склада.
-    - `container_id` — integer<int64>. Идентификатор грузоместа.
-    - `container_number` — integer<int32>. Порядковый номер грузоместа.
-  - `container_sort_type` — string. Тип сортировки грузоместа: - `SORT` — сортируемый; - `NON-SORT` — несортируемый.
   - `customer` — object. Информация о покупателе.
     - `address` — object. Информация об адресе доставки.
       - `address_tail` — string. Адрес в текстовом формате.
@@ -125,6 +119,12 @@ content_sha: 2ff21947a5afd351
     - `customer_id` — integer<int64>. Идентификатор покупателя.
     - `name` — string. Имя покупателя.
     - `phone` — string. Подменный контактный телефон покупателя.
+  - `container` — object. Информация о грузоместе.
+    - `cargo_type` — string (BOX, PALLET). Тип грузоместа: - `BOX` — коробка; - `PALLET` — палета. По умолчанию: `BOX`.
+    - `container_date` — string. Дата создания грузоместа в часовом поясе склада.
+    - `container_id` — integer<int64>. Идентификатор грузоместа.
+    - `container_number` — integer<int32>. Порядковый номер грузоместа.
+  - `container_sort_type` — string. Тип сортировки грузоместа: - `SORT` — сортируемый; - `NON-SORT` — несортируемый.
   - `delivering_date` — string<date-time>. Дата передачи отправления в доставку.
   - `delivery_method` — object. Информация о способе доставки.
     - `id` — integer<int64>. Идентификатор способа доставки.

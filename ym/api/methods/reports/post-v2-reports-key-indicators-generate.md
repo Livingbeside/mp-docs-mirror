@@ -13,14 +13,24 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: 35d8927b0ab08da6
+content_sha: e91b58d372968cb6
 ---
 
 # Отчет по ключевым показателям
 
 `POST /v2/reports/key-indicators/generate`
 
-{% include notitle [access](../../_auto/method_scopes/generateKeyIndicatorsReport.md) %} Запускает генерацию отчета по ключевым показателям. [Что это за отчет](https://yandex.ru/support/marketplace/ru/analytics/key-metrics) Узнать статус генерации и получить ссылку на готовый отчет можно с помощью запроса [GET v2/reports/info/{reportId}](../../reference/reports/getReportInfo.md). {% include notitle [reports](../../_auto/reports/key_indicators/key_indicators.md) %} {% include notitle [tariff-period](../../_includes/common/report-data-period-400-days.md) %} {% include notitle [limit](../../_auto/method_limits/generateKeyIndicatorsReport.md) %}
+{% include notitle [access](../../_auto/method_scopes/generateKeyIndicatorsReport.md) %}
+
+Запускает генерацию отчета по ключевым показателям. [Что это за отчет](https://yandex.ru/support/marketplace/ru/analytics/key-metrics)
+
+Узнать статус генерации и получить ссылку на готовый отчет можно с помощью запроса [GET v2/reports/info/{reportId}](../../reference/reports/getReportInfo.md).
+
+{% include notitle [reports](../../_auto/reports/key_indicators/key_indicators.md) %}
+
+{% include notitle [tariff-period](../../_includes/common/report-data-period-400-days.md) %}
+
+{% include notitle [limit](../../_auto/method_limits/generateKeyIndicatorsReport.md) %}
 
 ## Параметры
 

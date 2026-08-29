@@ -13,14 +13,20 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: 6ed317d19ba6eacd
+content_sha: 3c84649ff5472314
 ---
 
 # Удаление товаров из акции
 
 `POST /v2/businesses/{businessId}/promos/offers/delete`
 
-{% include notitle [access](../../_auto/method_scopes/deletePromoOffers.md) %} Убирает товары из акции. Изменения начинают действовать в течение 4–6 часов. Узнать, применились ли они, можно с помощью параметра `processing` в ответе метода [POST v2/businesses/{businessId}/promos](../../reference/promos/getPromos.md). {% include notitle [limit](../../_auto/method_limits/deletePromoOffers.md) %}
+{% include notitle [access](../../_auto/method_scopes/deletePromoOffers.md) %}
+
+Убирает товары из акции.
+
+Изменения начинают действовать в течение 4–6 часов. Узнать, применились ли они, можно с помощью параметра `processing` в ответе метода [POST v2/businesses/{businessId}/promos](../../reference/promos/getPromos.md).
+
+{% include notitle [limit](../../_auto/method_limits/deletePromoOffers.md) %}
 
 ## Параметры
 

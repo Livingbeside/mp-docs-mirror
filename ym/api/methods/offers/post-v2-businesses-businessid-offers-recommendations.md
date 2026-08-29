@@ -13,14 +13,25 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: dd646befdd1f0ee2
+content_sha: fa0b82aee5fe3e29
 ---
 
 # Рекомендации Маркета, касающиеся цен
 
 `POST /v2/businesses/{businessId}/offers/recommendations`
 
-{% include notitle [access](../../_auto/method_scopes/getOfferRecommendations.md) %} Метод возвращает рекомендации нескольких типов. 1. Порог для привлекательной цены. 2. Оценка привлекательности цен на витрине. Рекомендации показывают, какие цены нужно установить, чтобы привлечь покупателя. В запросе можно использовать фильтры. Результаты возвращаются постранично. {% include notitle [limit](../../_auto/method_limits/getOfferRecommendations.md) %}
+{% include notitle [access](../../_auto/method_scopes/getOfferRecommendations.md) %}
+
+Метод возвращает рекомендации нескольких типов.
+
+1. Порог для привлекательной цены.
+2. Оценка привлекательности цен на витрине.
+
+Рекомендации показывают, какие цены нужно установить, чтобы привлечь покупателя.
+
+В запросе можно использовать фильтры. Результаты возвращаются постранично.
+
+{% include notitle [limit](../../_auto/method_limits/getOfferRecommendations.md) %}
 
 ## Параметры
 
@@ -28,7 +39,7 @@ content_sha: dd646befdd1f0ee2
 |---|---|---|---|---|
 | `businessId` | path | integer<int64> | да | Идентификатор кабинета. {% if audience == "partner" %} Чтобы его узнать, воспользуйтесь запросом [GET v2/campaigns](../../reference/campaigns/getCampaigns.md). ℹ️ [Что такое кабинет и магазин на Маркете](https://yandex.ru/support/marketplace/account/introduction.html) {% endif %} |
 | `pageToken` | query | string | нет | Идентификатор страницы c результатами. Если параметр не указан, возвращается первая страница. Передавайте значение выходного параметра `nextPageToken`, полученное при последнем запросе. |
-| `limit` | query | integer<int32> | нет | {{ limit-param-description }} |
+| `limit` | query | integer<int32> | нет | — |
 
 ## Запрос
 

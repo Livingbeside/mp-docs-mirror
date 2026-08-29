@@ -14,14 +14,32 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: 14a8125986d5ee23
+content_sha: 0133e508e13c23ab
 ---
 
 # Редактирование категорийных характеристик товара
 
 `POST /v2/businesses/{businessId}/offer-cards/update`
 
-{% include notitle [access](../../_auto/method_scopes/updateOfferContent.md) %} Редактирует характеристики товара, которые специфичны для категории, к которой он относится. {% note warning "Здесь только то, что относится к конкретной категории" %} Если вам нужно изменить основные параметры товара (название, описание, изображения, видео, производитель, штрихкод), воспользуйтесь запросом [POST v2/businesses/{businessId}/offer-mappings/update](../../reference/business-offer-mappings/updateOfferMappings.md). {% endnote %} Чтобы удалить характеристики, которые заданы в параметрах с типом `string`, передайте пустое значение. {% note info "Данные в каталоге обновляются не мгновенно" %} Это занимает до нескольких минут. {% endnote %} {% include notitle [limit](../../_auto/method_limits/updateOfferContent.md) %}
+{% include notitle [access](../../_auto/method_scopes/updateOfferContent.md) %}
+
+Редактирует характеристики товара, которые специфичны для категории, к которой он относится.
+
+{% note warning "Здесь только то, что относится к конкретной категории" %}
+
+Если вам нужно изменить основные параметры товара (название, описание, изображения, видео, производитель, штрихкод), воспользуйтесь запросом [POST v2/businesses/{businessId}/offer-mappings/update](../../reference/business-offer-mappings/updateOfferMappings.md).
+
+{% endnote %}
+
+Чтобы удалить характеристики, которые заданы в параметрах с типом `string`, передайте пустое значение.
+
+{% note info "Данные в каталоге обновляются не мгновенно" %}
+
+Это занимает до нескольких минут.
+
+{% endnote %}
+
+{% include notitle [limit](../../_auto/method_limits/updateOfferContent.md) %}
 
 ## Параметры
 

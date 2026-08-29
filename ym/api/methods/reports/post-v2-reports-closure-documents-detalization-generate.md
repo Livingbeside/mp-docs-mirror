@@ -14,14 +14,32 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: ba593da61e270441
+content_sha: 69d0d64ef84679db
 ---
 
 # Отчет по схождению с закрывающими документами
 
 `POST /v2/reports/closure-documents/detalization/generate`
 
-{% include notitle [access](../../_auto/method_scopes/generateClosureDocumentsDetalizationReport.md) %} Запускает генерацию отчета по схождению с закрывающими документами в зависимости от типа договора. Узнать статус генерации и получить ссылку на готовый отчет можно с помощью запроса [GET v2/reports/info/{reportId}](../../reference/reports/getReportInfo.md). {% list tabs %} - Договор на размещение {% include notitle [reports](../../_auto/reports/period_closure/period_closure_income.md) %} - Договор на продвижение {% include notitle [reports](../../_auto/reports/period_closure/period_closure_outcome.md) %} {% endlist %} {% include notitle [limit](../../_auto/method_limits/generateClosureDocumentsDetalizationReport.md) %}
+{% include notitle [access](../../_auto/method_scopes/generateClosureDocumentsDetalizationReport.md) %}
+
+Запускает генерацию отчета по схождению с закрывающими документами в зависимости от типа договора.
+
+Узнать статус генерации и получить ссылку на готовый отчет можно с помощью запроса [GET v2/reports/info/{reportId}](../../reference/reports/getReportInfo.md).
+
+{% list tabs %}
+
+- Договор на размещение
+
+ {% include notitle [reports](../../_auto/reports/period_closure/period_closure_income.md) %}
+
+- Договор на продвижение
+
+ {% include notitle [reports](../../_auto/reports/period_closure/period_closure_outcome.md) %}
+
+{% endlist %}
+
+{% include notitle [limit](../../_auto/method_limits/generateClosureDocumentsDetalizationReport.md) %}
 
 ## Параметры
 

@@ -14,14 +14,26 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: 8722a0d839e81ecb
+content_sha: e57d56b79813e692
 ---
 
 # Удаление товаров из ассортимента магазина
 
 `POST /v2/campaigns/{campaignId}/offers/delete`
 
-{% include notitle [access](../../_auto/method_scopes/deleteCampaignOffers.md) %} Удаляет заданные товары из заданного магазина. {% note warning "Запрос удаляет товары из конкретного магазина" %} На продажи в других магазинах и на наличие товара в общем каталоге он не влияет. {% endnote %} Товар не получится удалить, если он хранится на складах Маркета. {% include notitle [limit](../../_auto/method_limits/deleteCampaignOffers.md) %}
+{% include notitle [access](../../_auto/method_scopes/deleteCampaignOffers.md) %}
+
+Удаляет заданные товары из заданного магазина.
+
+{% note warning "Запрос удаляет товары из конкретного магазина" %}
+
+На продажи в других магазинах и на наличие товара в общем каталоге он не влияет.
+
+{% endnote %}
+
+Товар не получится удалить, если он хранится на складах Маркета.
+
+{% include notitle [limit](../../_auto/method_limits/deleteCampaignOffers.md) %}
 
 ## Параметры
 

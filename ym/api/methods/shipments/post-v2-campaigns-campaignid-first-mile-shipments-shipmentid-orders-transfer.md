@@ -10,14 +10,30 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: f426f14389c6f109
+content_sha: 193244e21f2f2ec6
 ---
 
 # Перенос заказов в следующую отгрузку
 
 `POST /v2/campaigns/{campaignId}/first-mile/shipments/{shipmentId}/orders/transfer`
 
-{% include notitle [access](../../_auto/method_scopes/transferOrdersFromShipment.md) %} Переносит указанные заказы из указанной отгрузки в следующую отгрузку. [Что такое отгрузка?](https://yandex.ru/support/marketplace/orders/fbs/process.html#ship) Используйте этот запрос, если не успеваете собрать и упаковать заказы вовремя. {% note warning "Такие переносы снижают индекс качества магазина" %} Этот запрос предназначен для исключительных случаев. Если вы будете переносить заказы слишком часто, магазин столкнется с ограничениями. [Что за ограничения?](https://yandex.ru/support/marketplace/quality/score/fbs.html) {% endnote %} Переносить заказы можно, если до формирования отгрузки осталось больше получаса. Перенос происходит не мгновенно, а занимает несколько минут. {% include notitle [limit](../../_auto/method_limits/transferOrdersFromShipment.md) %}
+{% include notitle [access](../../_auto/method_scopes/transferOrdersFromShipment.md) %}
+
+Переносит указанные заказы из указанной отгрузки в следующую отгрузку. [Что такое отгрузка?](https://yandex.ru/support/marketplace/orders/fbs/process.html#ship)
+
+Используйте этот запрос, если не успеваете собрать и упаковать заказы вовремя.
+
+{% note warning "Такие переносы снижают индекс качества магазина" %}
+
+Этот запрос предназначен для исключительных случаев. Если вы будете переносить заказы слишком часто, магазин столкнется с ограничениями. [Что за ограничения?](https://yandex.ru/support/marketplace/quality/score/fbs.html)
+
+{% endnote %}
+
+Переносить заказы можно, если до формирования отгрузки осталось больше получаса.
+
+Перенос происходит не мгновенно, а занимает несколько минут.
+
+{% include notitle [limit](../../_auto/method_limits/transferOrdersFromShipment.md) %}
 
 ## Параметры
 

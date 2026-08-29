@@ -13,14 +13,24 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: 968f0824b292bda1
+content_sha: 688f5250617bbdad
 ---
 
 # Отчет по отзывам о товарах
 
 `POST /v2/reports/goods-feedback/generate`
 
-{% include notitle [access](../../_auto/method_scopes/generateGoodsFeedbackReport.md) %} Запускает генерацию отчета по отзывам о товарах. [Что это за отчет](https://yandex.ru/support/marketplace/ru/marketing/plus-reviews#stat) Узнать статус генерации и получить ссылку на готовый отчет можно с помощью запроса [GET v2/reports/info/{reportId}](../../reference/reports/getReportInfo.md). {% include notitle [reports](../../_auto/reports/paid_opinion_models/paid_opinion_models.md) %} {% include notitle [tariff-period](../../_includes/common/simultaneously-generated-reports-amount.md) %} {% include notitle [limit](../../_auto/method_limits/generateGoodsFeedbackReport.md) %}
+{% include notitle [access](../../_auto/method_scopes/generateGoodsFeedbackReport.md) %}
+
+Запускает генерацию отчета по отзывам о товарах. [Что это за отчет](https://yandex.ru/support/marketplace/ru/marketing/plus-reviews#stat)
+
+Узнать статус генерации и получить ссылку на готовый отчет можно с помощью запроса [GET v2/reports/info/{reportId}](../../reference/reports/getReportInfo.md).
+
+{% include notitle [reports](../../_auto/reports/paid_opinion_models/paid_opinion_models.md) %}
+
+{% include notitle [tariff-period](../../_includes/common/simultaneously-generated-reports-amount.md) %}
+
+{% include notitle [limit](../../_auto/method_limits/generateGoodsFeedbackReport.md) %}
 
 ## Параметры
 

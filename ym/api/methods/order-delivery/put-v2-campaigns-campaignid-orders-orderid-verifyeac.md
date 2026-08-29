@@ -10,14 +10,32 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: b7606c22514c9b95
+content_sha: dc935cb999288df5
 ---
 
 # Передача кода подтверждения
 
 `PUT /v2/campaigns/{campaignId}/orders/{orderId}/verifyEac`
 
-{% include notitle [access](../../_auto/method_scopes/verifyOrderEac.md) %} Отправляет Маркету код подтверждения для его проверки. **Если у магазина настроена работа с кодами подтверждения:** В параметре `delivery`, вложенном в `order`, возвращается параметр `eacType` с типом `Enum` (тип кода подтверждения для передачи заказа) в методах: * [POST v1/businesses/{businessId}/orders](../../reference/orders/getBusinessOrders.md); * [PUT v2/campaigns/{campaignId}/orders/{orderId}/status](../../reference/orders/updateOrderStatus.md). Возможные значения: * `MERCHANT_TO_COURIER` (временно не возвращается) — продавец передает код курьеру для получения невыкупа; * `COURIER_TO_MERCHANT` — курьер передает код продавцу для получения заказа. Параметр `eacType` возвращается при статусах заказа `COURIER_FOUND`, `COURIER_ARRIVED_TO_SENDER` и `DELIVERY_SERVICE_UNDELIVERED`. Если заказ в других статусах, параметр может отсутствовать. {% include notitle [limit](../../_auto/method_limits/verifyOrderEac.md) %}
+{% include notitle [access](../../_auto/method_scopes/verifyOrderEac.md) %}
+
+Отправляет Маркету код подтверждения для его проверки.
+
+**Если у магазина настроена работа с кодами подтверждения:**
+
+ В параметре `delivery`, вложенном в `order`, возвращается параметр `eacType` с типом `Enum` (тип кода подтверждения для передачи заказа) в методах:
+
+ * [POST v1/businesses/{businessId}/orders](../../reference/orders/getBusinessOrders.md);
+ * [PUT v2/campaigns/{campaignId}/orders/{orderId}/status](../../reference/orders/updateOrderStatus.md).
+
+ Возможные значения:
+
+ * `MERCHANT_TO_COURIER` (временно не возвращается) — продавец передает код курьеру для получения невыкупа;
+ * `COURIER_TO_MERCHANT` — курьер передает код продавцу для получения заказа.
+
+ Параметр `eacType` возвращается при статусах заказа `COURIER_FOUND`, `COURIER_ARRIVED_TO_SENDER` и `DELIVERY_SERVICE_UNDELIVERED`. Если заказ в других статусах, параметр может отсутствовать.
+
+{% include notitle [limit](../../_auto/method_limits/verifyOrderEac.md) %}
 
 ## Параметры
 

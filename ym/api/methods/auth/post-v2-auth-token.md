@@ -14,14 +14,24 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: af2871d3ed1a3393
+content_sha: 65cdf158f3d985d0
 ---
 
 # Получение информации о токене авторизации
 
 `POST /v2/auth/token`
 
-{% include notitle [access](../../_auto/method_scopes/getAuthTokenInfo.md) %} {% note info "Метод доступен только для Api-Key-токена." %} {% endnote %} Возвращает информацию о переданном токене авторизации. {% include notitle [limit](../../_auto/method_limits/getAuthTokenInfo.md) %}
+{% include notitle [access](../../_auto/method_scopes/getAuthTokenInfo.md) %}
+
+{% note info "Метод доступен только для Api-Key-токена." %}
+
+ 
+
+{% endnote %}
+
+Возвращает информацию о переданном токене авторизации.
+
+{% include notitle [limit](../../_auto/method_limits/getAuthTokenInfo.md) %}
 
 ## Ответы
 

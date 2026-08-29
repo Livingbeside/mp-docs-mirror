@@ -9,7 +9,7 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: 71c47ee0d5b50508
+content_sha: 9bc1abf6aa723568
 ---
 
 # Получить PDF c документами
@@ -39,9 +39,9 @@ content_sha: 71c47ee0d5b50508
 
 **200** — Документы
 
-- `content_type` — string. Тип файла.
 - `file_content` — string<byte>. Содержание файла в бинарном виде.
 - `file_name` — string. Название файла.
+- `content_type` — string. Тип файла.
 
 **400** — Неверный параметр
 

@@ -14,14 +14,31 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: 5c4160fff16912d1
+content_sha: 2df101ad2e48b55d
 ---
 
 # Отчет по стоимости услуг
 
 `POST /v2/reports/united-marketplace-services/generate`
 
-{% include notitle [access](../../_auto/method_scopes/generateUnitedMarketplaceServicesReport.md) %} Запускает генерацию отчета по стоимости услуг за заданный период. [Что это за отчет](https://yandex.ru/support/marketplace/ru/accounting/transactions#reports) Тип отчета зависит от того, какие поля заполнены в запросе: |**Тип отчета** |**Какие поля нужны** | |-----------------------------|---------------------------------| |По дате начисления услуги |`dateFrom` и `dateTo` | |По дате формирования акта |`year` и `month` | Заказать отчеты обоих типов одним запросом нельзя. Узнать статус генерации и получить ссылку на готовый отчет можно с помощью запроса [GET v2/reports/info/{reportId}](../../reference/reports/getReportInfo.md). {% include notitle [reports](../../_auto/reports/united/services/generator/united_marketplace_services.md) %} {% include notitle [limit](../../_auto/method_limits/generateUnitedMarketplaceServicesReport.md) %}
+{% include notitle [access](../../_auto/method_scopes/generateUnitedMarketplaceServicesReport.md) %}
+
+Запускает генерацию отчета по стоимости услуг за заданный период. [Что это за отчет](https://yandex.ru/support/marketplace/ru/accounting/transactions#reports)
+
+Тип отчета зависит от того, какие поля заполнены в запросе:
+
+|**Тип отчета** |**Какие поля нужны** |
+|-----------------------------|---------------------------------|
+|По дате начисления услуги |`dateFrom` и `dateTo` |
+|По дате формирования акта |`year` и `month` |
+
+Заказать отчеты обоих типов одним запросом нельзя.
+
+Узнать статус генерации и получить ссылку на готовый отчет можно с помощью запроса [GET v2/reports/info/{reportId}](../../reference/reports/getReportInfo.md).
+
+{% include notitle [reports](../../_auto/reports/united/services/generator/united_marketplace_services.md) %}
+
+{% include notitle [limit](../../_auto/method_limits/generateUnitedMarketplaceServicesReport.md) %}
 
 ## Параметры
 

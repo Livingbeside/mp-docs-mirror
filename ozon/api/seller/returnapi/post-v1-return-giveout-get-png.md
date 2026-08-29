@@ -9,7 +9,7 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: db104e94b9e5a504
+content_sha: 21038e4b5472ca29
 ---
 
 # Штрихкод для получения возвратной отгрузки в формате PNG
@@ -35,9 +35,9 @@ content_sha: db104e94b9e5a504
 
 **200** — Штрихкод для возвратной отгрузки
 
-- `content_type` — string. Тип файла.
 - `file_content` — string. PNG-файл со штрихкодом в кодировке Base64.
 - `file_name` — string. Название файла.
+- `content_type` — string. Тип файла.
 
 **default** — Ошибка
 

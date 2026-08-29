@@ -14,14 +14,20 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: 313c0845b4685965
+content_sha: 9aaae70b9669ad76
 ---
 
 # Генерация штрихкодов
 
 `POST /v1/businesses/{businessId}/offer-mappings/barcodes/generate`
 
-{% include notitle [access](../../_auto/method_scopes/generateOfferBarcodes.md) %} Генерирует штрихкоды и присваивает их указанным товарам. Если у товара на упаковке уже есть штрихкод производителя, передайте его в параметре `barcodes` в методе [POST v2/businesses/{businessId}/offer-mappings/update](../../reference/business-offer-mappings/updateOfferMappings.md). Генерировать новый не нужно. {% include notitle [limit](../../_auto/method_limits/generateOfferBarcodes.md) %}
+{% include notitle [access](../../_auto/method_scopes/generateOfferBarcodes.md) %}
+
+Генерирует штрихкоды и присваивает их указанным товарам.
+
+Если у товара на упаковке уже есть штрихкод производителя, передайте его в параметре `barcodes` в методе [POST v2/businesses/{businessId}/offer-mappings/update](../../reference/business-offer-mappings/updateOfferMappings.md). Генерировать новый не нужно.
+
+{% include notitle [limit](../../_auto/method_limits/generateOfferBarcodes.md) %}
 
 ## Параметры
 

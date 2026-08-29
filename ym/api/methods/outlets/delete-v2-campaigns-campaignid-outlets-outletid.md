@@ -10,14 +10,18 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: dcbeb05f4833c331
+content_sha: 794551a1c8e7fe00
 ---
 
 # Удаление точки продаж
 
 `DELETE /v2/campaigns/{campaignId}/outlets/{outletId}`
 
-{% include notitle [access](../../_auto/method_scopes/deleteOutlet.md) %} Удаляет точку продаж магазина на Маркете. {% include notitle [limit](../../_auto/method_limits/deleteOutlet.md) %}
+{% include notitle [access](../../_auto/method_scopes/deleteOutlet.md) %}
+
+Удаляет точку продаж магазина на Маркете.
+
+{% include notitle [limit](../../_auto/method_limits/deleteOutlet.md) %}
 
 ## Параметры
 

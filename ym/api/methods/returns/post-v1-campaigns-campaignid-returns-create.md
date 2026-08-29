@@ -10,14 +10,26 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: 2d5c1bc8424e7d47
+content_sha: b802ad82f9bc2996
 ---
 
 # Создание возврата
 
 `POST /v1/campaigns/{campaignId}/returns/create`
 
-{% include notitle [access](../../_auto/method_scopes/createReturn.md) %} Создает новый возврат. Это можно сделать только для заказа в статусе `DELIVERED`. {% note warning "Перед вызовом метода" %} Проверьте, подходят ли пункты выдачи для возврата указанных товаров, — [POST v1/campaigns/{campaignId}/return-delivery-options](../../reference/delivery-options/getReturnDeliveryOptions.md). {% endnote %} {% include notitle [limit](../../_auto/method_limits/createReturn.md) %}
+{% include notitle [access](../../_auto/method_scopes/createReturn.md) %}
+
+Создает новый возврат.
+
+Это можно сделать только для заказа в статусе `DELIVERED`.
+
+{% note warning "Перед вызовом метода" %}
+
+Проверьте, подходят ли пункты выдачи для возврата указанных товаров, — [POST v1/campaigns/{campaignId}/return-delivery-options](../../reference/delivery-options/getReturnDeliveryOptions.md).
+
+{% endnote %}
+
+{% include notitle [limit](../../_auto/method_limits/createReturn.md) %}
 
 ## Параметры
 

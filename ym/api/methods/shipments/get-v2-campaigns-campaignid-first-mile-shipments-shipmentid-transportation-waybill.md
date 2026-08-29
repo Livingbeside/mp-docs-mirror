@@ -10,14 +10,20 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: a2d185a773d5bbef
+content_sha: b1eb401c099e6d52
 ---
 
 # Получение транспортной накладной
 
 `GET /v2/campaigns/{campaignId}/first-mile/shipments/{shipmentId}/transportation-waybill`
 
-{% include notitle [access](../../_auto/method_scopes/downloadShipmentTransportationWaybill.md) %} Возвращает транспортную накладную для заданной отгрузки, если Маркет забирает товары с вашего склада. Подробнее о таком способе отгрузки читайте [в Справке Маркета для продавцов](https://yandex.ru/support/marketplace/ru/orders/fbs/settings/shipment#at-your-warehouse). Накладная не возвращается, если вы привозите товары в ПВЗ или сортировочный центр. {% include notitle [limit](../../_auto/method_limits/downloadShipmentTransportationWaybill.md) %}
+{% include notitle [access](../../_auto/method_scopes/downloadShipmentTransportationWaybill.md) %}
+
+Возвращает транспортную накладную для заданной отгрузки, если Маркет забирает товары с вашего склада. Подробнее о таком способе отгрузки читайте [в Справке Маркета для продавцов](https://yandex.ru/support/marketplace/ru/orders/fbs/settings/shipment#at-your-warehouse).
+
+Накладная не возвращается, если вы привозите товары в ПВЗ или сортировочный центр.
+
+{% include notitle [limit](../../_auto/method_limits/downloadShipmentTransportationWaybill.md) %}
 
 ## Параметры
 

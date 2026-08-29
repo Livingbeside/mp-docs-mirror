@@ -9,7 +9,7 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: 520de64bb613f7f3
+content_sha: b565985bc6ad7cbf
 ---
 
 # Привязать штрихкод к товару
@@ -37,9 +37,9 @@ content_sha: 520de64bb613f7f3
 **200** — Штрихкод привязан
 
 - `errors` — array[object]. Список ошибок.
-  - `barcode` — string. Штрихкод, который не удалось привязать.
   - `code` — string. Код ошибки.
   - `error` — string. Описание ошибки.
+  - `barcode` — string. Штрихкод, который не удалось привязать.
   - `sku` — integer<int64>. Идентификатор товара, к которому не удалось привязать штрихкод.
 
 **default** — Ошибка

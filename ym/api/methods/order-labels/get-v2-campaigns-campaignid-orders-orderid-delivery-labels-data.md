@@ -12,14 +12,18 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: d1b976501749cc12
+content_sha: fa32715a87331c7b
 ---
 
 # Данные для самостоятельного изготовления ярлыков
 
 `GET /v2/campaigns/{campaignId}/orders/{orderId}/delivery/labels/data`
 
-{% include notitle [access](../../_auto/method_scopes/getOrderLabelsData.md) %} Возвращает информацию на ярлыках, которые клеятся на коробки в заказе. {% include notitle [limit](../../_auto/method_limits/getOrderLabelsData.md) %}
+{% include notitle [access](../../_auto/method_scopes/getOrderLabelsData.md) %}
+
+Возвращает информацию на ярлыках, которые клеятся на коробки в заказе.
+
+{% include notitle [limit](../../_auto/method_limits/getOrderLabelsData.md) %}
 
 ## Параметры
 
@@ -36,7 +40,7 @@ content_sha: d1b976501749cc12
 - `result` — object. Данные для печати ярлыка.
   - `orderId` — integer<int64> **обязательный**. Идентификатор заказа.
   - `placesNumber` — integer<int32> **обязательный**. Количество коробок в заказе.
-  - `url` — string **обязательный**. {% note warning "Параметр устарел и будет отключен 19.10.2026." %} {% endnote %} URL файла с ярлыками‑наклейками на все коробки в заказе. Соответствует URL, по которому выполняется запрос [GET v2/campaigns/{campaignId}/orders/{orderId}/delivery/labels](../../reference/order-labels/generateOrderLabels.md).
+  - `url` — string **обязательный**. {% note warning "Параметр устарел и будет отключен 19.10.2026." %}   {% endnote %} URL файла с ярлыками‑наклейками на все коробки в заказе. Соответствует URL, по которому выполняется запрос [GET v2/campaigns/{campaignId}/orders/{orderId}/delivery/labels](../../reference/order-labels/generateOrderLabels.md).
   - `parcelBoxLabels` — array[object] **обязательный**. Информация на ярлыке.
     - `url` — string **обязательный**. Соответствует URL, по которому выполняется запрос [GET v2/campaigns/{campaignId}/orders/{orderId}/delivery/shipments/{shipmentId}/boxes/{boxId}/label](../../reference/order-labels/generateOrderLabel.md).
     - `supplierName` — string **обязательный**. Юридическое название магазина.
@@ -47,7 +51,7 @@ content_sha: d1b976501749cc12
     - `boxId` — integer<int64> **обязательный**. Идентификатор коробки.
     - `fulfilmentId` — string **обязательный**. Идентификатор коробки в информационной системе магазина. Возвращается в формате: `номер заказа на Маркете-номер коробки`. Например, `7206821‑1`, `7206821‑2` и т. д.
     - `place` — string **обязательный**. Номер коробки в заказе. Возвращается в формате: `номер места/общее количество мест`.
-    - `weight` — string **обязательный**. {% note warning "Параметр устарел и будет отключен 19.10.2026." %} {% endnote %} Общая масса всех товаров в заказе. Возвращается в формате `weight кг`.
+    - `weight` — string **обязательный**. {% note warning "Параметр устарел и будет отключен 19.10.2026." %}   {% endnote %} Общая масса всех товаров в заказе. Возвращается в формате `weight кг`.
     - `deliveryServiceId` — string **обязательный**. Идентификатор службы доставки. Информацию о службе доставки можно получить с помощью запроса [GET delivery/services](../../reference/delivery-services/getDeliveryServices.md).
     - `deliveryAddress` — string. Адрес получателя.
     - `shipmentDate` — string. Дата отгрузки в формате `dd.MM.yyyy`.

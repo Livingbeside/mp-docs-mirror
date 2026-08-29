@@ -14,7 +14,7 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: true
-content_sha: 2349e367148d7c66
+content_sha: b164d9d4d0347c3c
 ---
 
 # Информация об одном заказе в магазине
@@ -23,7 +23,21 @@ content_sha: 2349e367148d7c66
 
 > ⚠️ Метод помечен как **deprecated**.
 
-{% include notitle [access](../../_auto/method_scopes/getOrder.md) %} Возвращает информацию о заказе в магазине. {% note tip "Вы также можете настроить API-уведомления" %} Маркет отправит вам [запрос](../../push-notifications/reference/sendNotification.md), когда появится новый заказ или изменится его статус. А полную информацию можно получить с помощью метода [POST v1/businesses/{businessId}/orders](../../reference/orders/getBusinessOrders.md). [{#T}](../../push-notifications/index.md) {% endnote %} Получить более подробную информацию о покупателе и его номере телефона можно с помощью запроса [GET v2/campaigns/{campaignId}/orders/{orderId}/buyer](../../reference/order-delivery/getOrderBuyerInfo.md). {% include notitle [limit](../../_auto/method_limits/getOrder.md) %}
+{% include notitle [access](../../_auto/method_scopes/getOrder.md) %}
+
+Возвращает информацию о заказе в магазине.
+
+{% note tip "Вы также можете настроить API-уведомления" %}
+
+Маркет отправит вам [запрос](../../push-notifications/reference/sendNotification.md), когда появится новый заказ или изменится его статус. А полную информацию можно получить с помощью метода [POST v1/businesses/{businessId}/orders](../../reference/orders/getBusinessOrders.md).
+
+[{#T}](../../push-notifications/index.md)
+
+{% endnote %}
+
+Получить более подробную информацию о покупателе и его номере телефона можно с помощью запроса [GET v2/campaigns/{campaignId}/orders/{orderId}/buyer](../../reference/order-delivery/getOrderBuyerInfo.md).
+
+{% include notitle [limit](../../_auto/method_limits/getOrder.md) %}
 
 ## Параметры
 
@@ -47,9 +61,9 @@ content_sha: 2349e367148d7c66
   - `itemsTotal` — number **обязательный**. Платеж покупателя.
   - `deliveryTotal` — number **обязательный**. Стоимость доставки.
   - `buyerItemsTotal` — number. {% note warning "Параметр устарел и будет отключен 05.10.2026." %} Вместо него используйте `itemsTotal`. {% endnote %} Стоимость всех товаров в заказе в валюте покупателя после применения скидок и без учета стоимости доставки.
-  - `buyerTotal` — number. {% note warning "Параметр устарел и будет отключен 05.10.2026." %} {% endnote %} Стоимость всех товаров в заказе в валюте покупателя после применения скидок и с учетом стоимости доставки.
+  - `buyerTotal` — number. {% note warning "Параметр устарел и будет отключен 05.10.2026." %}   {% endnote %} Стоимость всех товаров в заказе в валюте покупателя после применения скидок и с учетом стоимости доставки.
   - `buyerItemsTotalBeforeDiscount` — number **обязательный**. Стоимость всех товаров в заказе в валюте покупателя без учета стоимости доставки и до применения скидок по: * акциям; * купонам; * промокодам.
-  - `buyerTotalBeforeDiscount` — number. {% note warning "Параметр устарел и будет отключен 05.10.2026." %} {% endnote %} Стоимость всех товаров в заказе в валюте покупателя до применения скидок и с учетом стоимости доставки (`buyerItemsTotalBeforeDiscount` + стоимость доставки).
+  - `buyerTotalBeforeDiscount` — number. {% note warning "Параметр устарел и будет отключен 05.10.2026." %}   {% endnote %} Стоимость всех товаров в заказе в валюте покупателя до применения скидок и с учетом стоимости доставки (`buyerItemsTotalBeforeDiscount` + стоимость доставки).
   - `paymentType` — string (PREPAID, POSTPAID, UNKNOWN) **обязательный**. Тип оплаты заказа: * `PREPAID` — оплата при оформлении заказа. * `POSTPAID` — оплата при получении заказа. * `UNKNOWN` — неизвестный тип. Если параметр отсутствует, заказ будет оплачен при получении.
   - `paymentMethod` — string (CASH_ON_DELIVERY, CARD_ON_DELIVERY, BOUND_CARD_ON_DELIVERY, BNPL_BANK_ON_DELIVERY, BNPL_ON_DELIVERY, YANDEX, APPLE_PAY, EXTERNAL_CERTIFICATE, CREDIT, GOOGLE_PAY, TINKOFF_CREDIT, SBP…) **обязательный**. Способ оплаты заказа: * Значения, если выбрана оплата при оформлении заказа (`"paymentType": "PREPAID"`): * `YANDEX` — банковской картой. * `APPLE_PAY` — Apple Pay (не используется). * `GOOGLE_PAY` — Google Pay (не используется). * `CREDIT` — в кредит. * `TINKOFF_CREDIT` — в кредит в Тинькофф Банке. * `TINKOFF_INSTALLMENTS` — рассрочка в Тинькофф Банке. * `EXTERNAL_CERTIFICATE` — подарочным сертификатом (например, из приложения «Сбербанк Онлайн»). * `SBP` — через систему быстрых платежей. * `B2B_ACCOUNT_PREPAYMENT` — заказ оплачивает организация. * `MICROCREDIT` - Сплит на основе МКК (Микрокредитной компании). * `BNPL_TBC` - BNPL через внешний банк TBC. * `DIGITAL_RUBLE` - Цифровой рубль. * Значения, если выбрана оплата при получении заказа (`"paymentType": "POSTPAID"`): * `CARD_ON_DELIVERY` — банковской картой. * `BOUND_CARD_ON_DELIVERY` — привязанной картой при получении. * `BNPL_BANK_ON_DELIVERY` — супер Сплитом. * `BNPL_ON_DELIVERY` — Сплитом. * `BNPL_TBYB` - Оплата после доставки на основе Сплита. * `CASH_ON_DELIVERY` — наличными. * `B2B_ACCOUNT_POSTPAYMENT` — заказ оплачивает организация после доставки. * `UNKNOWN` — неизвестный тип. Значение по умолчанию: `CASH_ON_DELIVERY`.
   - `fake` — boolean **обязательный**. Тип заказа: * `false` — настоящий заказ покупателя. * `true` — [тестовый заказ](../../concepts/sandbox.md) Маркета.
@@ -60,7 +74,7 @@ content_sha: 2349e367148d7c66
     - `price` — number **обязательный**. Цена товара в валюте заказа без учета вознаграждения продавцу за скидки по промокодам, купонам и акциям (параметр `subsidies`). Включает НДС.
     - `buyerPrice` — number **обязательный**. Цена товара в валюте покупателя. В цене уже учтены скидки по: * акциям; * купонам; * промокодам.
     - `buyerPriceBeforeDiscount` — number **обязательный**. Стоимость товара в валюте покупателя до применения скидок по: * акциям; * купонам; * промокодам. Это зачеркнутая цена, которая отображается покупателю на карточке товара до применения скидок.
-    - `priceBeforeDiscount` — number. {% note warning "Параметр устарел и будет отключен 05.10.2026." %} {% endnote %} Стоимость товара в валюте магазина до применения скидок.
+    - `priceBeforeDiscount` — number. {% note warning "Параметр устарел и будет отключен 05.10.2026." %}   {% endnote %} Стоимость товара в валюте магазина до применения скидок.
     - `count` — integer **обязательный**. Количество единиц товара.
     - `vat` — string (NO_VAT, VAT_0, VAT_10, VAT_10_110, VAT_20, VAT_20_120, VAT_18, VAT_18_118, VAT_12, VAT_05, VAT_07, VAT_22…). НДС на товар.
     - `shopSku` — string. {% note warning "Параметр устарел и будет отключен 05.10.2026." %} Вместо него используйте `offerId`. {% endnote %} Ваш SKU — идентификатор товара в вашей системе.
@@ -92,7 +106,7 @@ content_sha: 2349e367148d7c66
     - `type` — string (YANDEX_CASHBACK, SUBSIDY, DELIVERY) **обязательный**. Тип субсидии: * `YANDEX_CASHBACK` — скидка по подписке Яндекс Плюс. * `SUBSIDY` — скидка Маркета (по акциям, промокодам, купонам и т. д.) * `DELIVERY` — скидка за доставку (DBS).
     - `amount` — number **обязательный**. Сумма субсидии.
   - `delivery` — object **обязательный**. Информация о доставке.
-    - `id` — string. {% note warning "Параметр устарел и будет отключен 05.10.2026." %} {% endnote %} Идентификатор доставки, присвоенный магазином. Указывается, только если магазин передал данный идентификатор в ответе на запрос методом `POST cart`.
+    - `id` — string. {% note warning "Параметр устарел и будет отключен 05.10.2026." %}   {% endnote %} Идентификатор доставки, присвоенный магазином. Указывается, только если магазин передал данный идентификатор в ответе на запрос методом `POST cart`.
     - `type` — string (DELIVERY, PICKUP, POST, DIGITAL, UNKNOWN) **обязательный**. Способ доставки заказа.
     - `serviceName` — string **обязательный**. Название службы доставки.
     - `price` — number. {% note warning "Параметр устарел и будет отключен 05.10.2026." %} Стоимость доставки смотрите в параметре `deliveryTotal`. {% endnote %} Стоимость доставки в валюте заказа.
@@ -145,7 +159,7 @@ content_sha: 2349e367148d7c66
       - `trackCode` — string. Трек‑номер посылки.
       - `deliveryServiceId` — integer<int64> **обязательный**. Идентификатор службы доставки. Информацию о службе доставки можно получить с помощью запроса [GET delivery/services](../../reference/delivery-services/getDeliveryServices.md).
     - `shipments` — array[object]. Информация о посылках.
-      - `id` — integer<int64>. {% note warning "Параметр устарел и будет отключен 05.10.2026." %} {% endnote %} Идентификатор посылки, присвоенный Маркетом.
+      - `id` — integer<int64>. {% note warning "Параметр устарел и будет отключен 05.10.2026." %}   {% endnote %} Идентификатор посылки, присвоенный Маркетом.
       - `shipmentDate` — string<date-dd-MM-yyyy>. День, в который нужно отгрузить заказ службе доставки. Формат даты: `ДД-ММ-ГГГГ`. Если заказ сделан организацией, параметр не возвращается до согласования даты доставки. {% cut "Иногда Маркет может перенести дату отгрузки" %} У таких заказов обновится параметр `updatedAt`. Чтобы найти их, в запросе [POST v1/businesses/{businessId}/orders](../../reference/orders/getBusinessOrders.md) укажите параметры `updateDateFrom` и `updateDateTo`. {% endcut %}
       - `shipmentTime` — string. **Только для модели Экспресс** Время, к которому магазин должен упаковать заказ и перевести его в статус `READY_TO_SHIP`. После смены статуса за заказом приедет курьер. Поле может появиться не сразу. Запрашивайте информацию о заказе в течении 5–10 минут, пока оно не вернется. Формат времени: 24-часовой, `ЧЧ:ММ`. Если заказ сделан организацией, параметр не возвращается до согласования даты доставки.
       - `tracks` — array[object]. **Только для модели DBS** Информация для отслеживания посылки.

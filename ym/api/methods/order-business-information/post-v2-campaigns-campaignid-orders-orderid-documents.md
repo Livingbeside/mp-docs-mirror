@@ -13,14 +13,20 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: bc2d538c193177b3
+content_sha: c78c2d031c935ad6
 ---
 
 # Информация о документах
 
 `POST /v2/campaigns/{campaignId}/orders/{orderId}/documents`
 
-{% include notitle [access](../../_auto/method_scopes/getOrderBusinessDocumentsInfo.md) %} Возвращает информацию о документах по идентификатору заказа. Получить данные можно после того, как заказ перейдет в статус `DELIVERED`. {% include notitle [limit](../../_auto/method_limits/getOrderBusinessDocumentsInfo.md) %}
+{% include notitle [access](../../_auto/method_scopes/getOrderBusinessDocumentsInfo.md) %}
+
+Возвращает информацию о документах по идентификатору заказа.
+
+Получить данные можно после того, как заказ перейдет в статус `DELIVERED`.
+
+{% include notitle [limit](../../_auto/method_limits/getOrderBusinessDocumentsInfo.md) %}
 
 ## Параметры
 

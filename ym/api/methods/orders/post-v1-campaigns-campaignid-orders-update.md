@@ -10,14 +10,31 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: 1c0301a46d428bc5
+content_sha: 7b6adcbd170037b2
 ---
 
 # Изменение заказа
 
 `POST /v1/campaigns/{campaignId}/orders/update`
 
-{% include notitle [access](../../_auto/method_scopes/updateOrder.md) %} Изменяет в заказе: * данные получателя; * интервал дат курьерской доставки. Передавайте только ту информацию, которую хотите изменить. При необходимости вы можете отредактировать и данные получателя, и интервал доставки одновременно. Заказ можно изменить в любом статусе до вручения покупателю или отмены (`DELIVERED` или `CANCELLED`). {% note info "Данные заказа обновляются не мгновенно" %} Изменения применяются в течение нескольких минут и только в случае успешного завершения операции. [Как проверить статус операции](../../reference/operations/getOperations.md) {% endnote %} {% include notitle [limit](../../_auto/method_limits/updateOrder.md) %}
+{% include notitle [access](../../_auto/method_scopes/updateOrder.md) %}
+
+Изменяет в заказе:
+
+* данные получателя;
+* интервал дат курьерской доставки.
+
+Передавайте только ту информацию, которую хотите изменить. При необходимости вы можете отредактировать и данные получателя, и интервал доставки одновременно.
+
+Заказ можно изменить в любом статусе до вручения покупателю или отмены (`DELIVERED` или `CANCELLED`).
+
+{% note info "Данные заказа обновляются не мгновенно" %}
+
+Изменения применяются в течение нескольких минут и только в случае успешного завершения операции. [Как проверить статус операции](../../reference/operations/getOperations.md)
+
+{% endnote %}
+
+{% include notitle [limit](../../_auto/method_limits/updateOrder.md) %}
 
 ## Параметры
 

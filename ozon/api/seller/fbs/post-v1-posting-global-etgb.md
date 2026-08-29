@@ -9,7 +9,7 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: b1cbc373bdb6a138
+content_sha: 6d27fef3b6776019
 ---
 
 # Таможенные декларации ETGB
@@ -38,11 +38,11 @@ content_sha: b1cbc373bdb6a138
 **200** — Информация о декларациях
 
 - `result` — array[object]. Результат запроса.
-  - `etgb` — object. Информация о декларации.
-    - `date` — string. Дата создания.
-    - `number` — string. Номер.
-    - `url` — string. Ссылка на файл. Если поле пустое и вам нужен файл, обратитесь в поддержку Ozon.
   - `posting_number` — string. Номер отправления.
+  - `etgb` — object. Информация о декларации.
+    - `number` — string. Номер.
+    - `date` — string. Дата создания.
+    - `url` — string. Ссылка на файл. Если поле пустое и вам нужен файл, обратитесь в поддержку Ozon.
 
 **400** — Неверный параметр
 

@@ -13,14 +13,26 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: 20e226280f46b5a2
+content_sha: d45e559b200e3f4c
 ---
 
 # Получение доступных чатов
 
 `POST /v2/businesses/{businessId}/chats`
 
-{% include notitle [access](../../_auto/method_scopes/getChats.md) %} Возвращает чаты с покупателями. {% note tip "Подключите API-уведомления" %} Маркет отправит вам запрос [POST notification](../../push-notifications/reference/sendNotification.md), когда появится новый чат или сообщение. [{#T}](../../push-notifications/index.md) {% endnote %} {% include notitle [limit](../../_auto/method_limits/getChats.md) %}
+{% include notitle [access](../../_auto/method_scopes/getChats.md) %}
+
+Возвращает чаты с покупателями.
+
+{% note tip "Подключите API-уведомления" %}
+
+Маркет отправит вам запрос [POST notification](../../push-notifications/reference/sendNotification.md), когда появится новый чат или сообщение.
+
+[{#T}](../../push-notifications/index.md)
+
+{% endnote %}
+
+{% include notitle [limit](../../_auto/method_limits/getChats.md) %}
 
 ## Параметры
 
@@ -28,7 +40,7 @@ content_sha: 20e226280f46b5a2
 |---|---|---|---|---|
 | `businessId` | path | integer<int64> | да | Идентификатор кабинета. {% if audience == "partner" %} Чтобы его узнать, воспользуйтесь запросом [GET v2/campaigns](../../reference/campaigns/getCampaigns.md). ℹ️ [Что такое кабинет и магазин на Маркете](https://yandex.ru/support/marketplace/account/introduction.html) {% endif %} |
 | `pageToken` | query | string | нет | Идентификатор страницы c результатами. Если параметр не указан, возвращается первая страница. Передавайте значение выходного параметра `nextPageToken`, полученное при последнем запросе. |
-| `limit` | query | integer<int32> | нет | {{ limit-param-description }} |
+| `limit` | query | integer<int32> | нет | — |
 
 ## Запрос
 

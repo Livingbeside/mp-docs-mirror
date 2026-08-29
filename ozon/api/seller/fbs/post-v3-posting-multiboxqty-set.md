@@ -9,7 +9,7 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: bb098ed075257cf9
+content_sha: c4b38958cf82f5d0
 ---
 
 # Указать количество коробок для многокоробочных отправлений
@@ -31,8 +31,8 @@ content_sha: bb098ed075257cf9
 
 **Тело запроса** (`application/json`):
 
-- `multi_box_qty` — integer<int64> **обязательный**. Количество коробок, в которые упакован товар.
 - `posting_number` — string **обязательный**. Идентификатор многокоробочного отправления.
+- `multi_box_qty` — integer<int64> **обязательный**. Количество коробок, в которые упакован товар.
 
 ## Ответы
 

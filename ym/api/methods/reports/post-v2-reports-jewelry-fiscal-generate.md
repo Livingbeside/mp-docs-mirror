@@ -13,14 +13,24 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: 392d5a571bc7415d
+content_sha: 2c0775de4898b077
 ---
 
 # Отчет по заказам с ювелирными изделиями
 
 `POST /v2/reports/jewelry-fiscal/generate`
 
-{% include notitle [access](../../_auto/method_scopes/generateJewelryFiscalReport.md) %} Запускает генерацию отчета по заказам с ювелирными изделиями. Узнать статус генерации и получить ссылку на готовый отчет можно с помощью запроса [GET v2/reports/info/{reportId}](../../reference/reports/getReportInfo.md). {% include notitle [reports](../../_auto/reports/identifiers/jewelry/orders_jewelry_fiscal.md) %} {% include notitle [tariff-period](../../_includes/common/report-data-period-unchanged.md) %} {% include notitle [limit](../../_auto/method_limits/generateJewelryFiscalReport.md) %}
+{% include notitle [access](../../_auto/method_scopes/generateJewelryFiscalReport.md) %}
+
+Запускает генерацию отчета по заказам с ювелирными изделиями.
+
+Узнать статус генерации и получить ссылку на готовый отчет можно с помощью запроса [GET v2/reports/info/{reportId}](../../reference/reports/getReportInfo.md).
+
+{% include notitle [reports](../../_auto/reports/identifiers/jewelry/orders_jewelry_fiscal.md) %}
+
+{% include notitle [tariff-period](../../_includes/common/report-data-period-unchanged.md) %}
+
+{% include notitle [limit](../../_auto/method_limits/generateJewelryFiscalReport.md) %}
 
 ## Параметры
 

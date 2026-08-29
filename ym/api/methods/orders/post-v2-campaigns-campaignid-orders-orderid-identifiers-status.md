@@ -12,14 +12,27 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: a70719f4e4aa8279
+content_sha: 5f7ecee4e6058c9b
 ---
 
 # Статусы проверки кодов маркировки
 
 `POST /v2/campaigns/{campaignId}/orders/{orderId}/identifiers/status`
 
-{% include notitle [access](../../_auto/method_scopes/getOrderIdentifiersStatus.md) %} Возвращает статусы проверки кодов маркировки в заказе. Заказ, в котором есть ювелирные изделия или товары с обязательной маркировкой в системе [«Честный ЗНАК»](https://честныйзнак.рф/), можно перевести в статус `READY_TO_SHIP`, только когда: 1. В методе [PUT v2/campaigns/{campaignId}/orders/{orderId}/boxes](../../reference/orders/setOrderBoxLayout.md) вы передадите Маркету: * [УИНы](:no-translate[*uin]) по каждому ювелирному изделию в заказе; * коды маркировки в системе :no-translate[«Честный ЗНАК»] по всем товарам в заказе, для которых она обязательна. 2. Все коды маркировки успешно пройдут проверку. {% include notitle [limit](../../_auto/method_limits/getOrderIdentifiersStatus.md) %}
+{% include notitle [access](../../_auto/method_scopes/getOrderIdentifiersStatus.md) %}
+
+Возвращает статусы проверки кодов маркировки в заказе.
+
+Заказ, в котором есть ювелирные изделия или товары с обязательной маркировкой в системе [«Честный ЗНАК»](https://честныйзнак.рф/), можно перевести в статус `READY_TO_SHIP`, только когда:
+
+1. В методе [PUT v2/campaigns/{campaignId}/orders/{orderId}/boxes](../../reference/orders/setOrderBoxLayout.md) вы передадите Маркету:
+
+ * [УИНы](:no-translate[*uin]) по каждому ювелирному изделию в заказе;
+
+ * коды маркировки в системе :no-translate[«Честный ЗНАК»] по всем товарам в заказе, для которых она обязательна.
+2. Все коды маркировки успешно пройдут проверку.
+
+{% include notitle [limit](../../_auto/method_limits/getOrderIdentifiersStatus.md) %}
 
 ## Параметры
 

@@ -13,21 +13,35 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: e578aaf502e197b7
+content_sha: 5c47ecc4a9de59ef
 ---
 
 # Отчет по охватному продвижению
 
 `POST /v2/reports/banners-statistics/generate`
 
-{% include notitle [access](../../_auto/method_scopes/generateBannersStatisticsReport.md) %} Запускает генерацию сводного отчета по охватному продвижению. {% if audience == "partner" %}Что это за отчет: [для баннеров](https://yandex.ru/support/marketplace/ru/marketing/advertising-tools/banner#statistics), [для пуш-уведомлений](https://yandex.ru/support/marketplace/ru/marketing/advertising-tools/push-notifications#statistics).{% endif %} Узнать статус генерации и получить ссылку на готовый отчет можно с помощью запроса [GET v2/reports/info/{reportId}](../../reference/reports/getReportInfo.md). {% include notitle [reports](../../_auto/reports/incuts/banners_statistics.md) %} {% if audience != "advertiser" %} {% include notitle [tariff-period](../../_includes/common/report-data-period-400-days.md) %} {% endif %} {% include notitle [limit](../../_auto/method_limits/generateBannersStatisticsReport.md) %}
+{% include notitle [access](../../_auto/method_scopes/generateBannersStatisticsReport.md) %}
+
+Запускает генерацию сводного отчета по охватному продвижению. {% if audience == "partner" %}Что это за отчет: [для баннеров](https://yandex.ru/support/marketplace/ru/marketing/advertising-tools/banner#statistics), [для пуш-уведомлений](https://yandex.ru/support/marketplace/ru/marketing/advertising-tools/push-notifications#statistics).{% endif %}
+
+Узнать статус генерации и получить ссылку на готовый отчет можно с помощью запроса [GET v2/reports/info/{reportId}](../../reference/reports/getReportInfo.md).
+
+{% include notitle [reports](../../_auto/reports/incuts/banners_statistics.md) %}
+
+{% if audience != "advertiser" %}
+
+{% include notitle [tariff-period](../../_includes/common/report-data-period-400-days.md) %}
+
+{% endif %}
+
+{% include notitle [limit](../../_auto/method_limits/generateBannersStatisticsReport.md) %}
 
 ## Параметры
 
 | Имя | Где | Тип | Обяз. | Описание |
 |---|---|---|---|---|
 | `format` | query | string (FILE, CSV, JSON) | нет | Формат отчета или документа. |
-| `sourceType` | query | string (SELLER, ADVERTISER) | нет | Признак типа кабинета, от имени которого вызывается метод: {% if audience == "partner" %} - `SELLER` — продавец. {% endif %} - `ADVERTISER` — рекламодатель. {% if audience == "advertiser" %} {% note info "Обязательно указывайте sourceType=ADVERTISER в каждом запросе." %} {% endnote %} {% endif %} |
+| `sourceType` | query | string (SELLER, ADVERTISER) | нет | Признак типа кабинета, от имени которого вызывается метод: {% if audience == "partner" %} - `SELLER` — продавец. {% endif %} - `ADVERTISER` — рекламодатель. {% if audience == "advertiser" %} {% note info "Обязательно указывайте sourceType=ADVERTISER в каждом запросе." %}   {% endnote %} {% endif %} |
 
 ## Запрос
 

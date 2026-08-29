@@ -14,14 +14,28 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: b16be2f39a85b04e
+content_sha: 797319506be6adde
 ---
 
 # Список невыкупов и возвратов
 
 `GET /v2/campaigns/{campaignId}/returns`
 
-{% include notitle [access](../../_auto/method_scopes/getReturns.md) %} Получает список невыкупов и возвратов. Чтобы получить информацию по одному невыкупу или возврату, выполните запрос [GET v2/campaigns/{campaignId}/orders/{orderId}/returns/{returnId}](../../reference/returns/getReturn.md). {% note tip "Подключите API-уведомления" %} Маркет отправит вам запрос [POST notification](../../push-notifications/reference/sendNotification.md), когда появится новый невыкуп или возврат. [{#T}](../../push-notifications/index.md) {% endnote %} {% include notitle [limit](../../_auto/method_limits/getReturns.md) %}
+{% include notitle [access](../../_auto/method_scopes/getReturns.md) %}
+
+Получает список невыкупов и возвратов.
+
+Чтобы получить информацию по одному невыкупу или возврату, выполните запрос [GET v2/campaigns/{campaignId}/orders/{orderId}/returns/{returnId}](../../reference/returns/getReturn.md).
+
+{% note tip "Подключите API-уведомления" %}
+
+Маркет отправит вам запрос [POST notification](../../push-notifications/reference/sendNotification.md), когда появится новый невыкуп или возврат.
+
+[{#T}](../../push-notifications/index.md)
+
+{% endnote %}
+
+{% include notitle [limit](../../_auto/method_limits/getReturns.md) %}
 
 ## Параметры
 
@@ -29,7 +43,7 @@ content_sha: b16be2f39a85b04e
 |---|---|---|---|---|
 | `campaignId` | path | integer<int64> | да | Идентификатор кампании (магазина) — технический идентификатор, который представляет ваш магазин в системе Яндекс Маркета при работе через API. Он однозначно связывается с вашим магазином, но предназначен только для автоматизированного взаимодействия. Его можно узнать с помощью запроса [GET v2/campaigns](../../reference/campaigns/getCampaigns.md) или найти в кабинете продавца на Маркете. Нажмите на иконку вашего аккаунта → **Настройки** и в меню слева выберите **API и модули**: * блок **Идентификатор кампании**; * вкладка **Лог запросов** → выпадающий список в блоке **Показывать логи**. ⚠️ Не путайте его с: - идентификатором магазина, который отображается в личном кабинете продавца; - рекламными кампаниями. |
 | `pageToken` | query | string | нет | Идентификатор страницы c результатами. Если параметр не указан, возвращается первая страница. Передавайте значение выходного параметра `nextPageToken`, полученное при последнем запросе. |
-| `limit` | query | integer<int32> | нет | {{ limit-truncate-param-description }} |
+| `limit` | query | integer<int32> | нет | — |
 | `orderIds` | query | array[integer<int64>] | нет | Идентификаторы заказов — для фильтрации результатов. Несколько идентификаторов перечисляются через запятую без пробела. |
 | `statuses` | query | array[string (STARTED_BY_USER, REFUND_IN_PROGRESS, REFUNDED, FAILED, WAITING_FOR_DECISION, DECISION_MADE, REFUNDED_WITH_BONUSES, REFUNDED_BY_SHOP, CANCELLED, REJECTED, COMPLETE_WITHOUT_REFUND, PREMODERATION_DISPUTE…)] | нет | Фильтр по статусам возврата денег за возвраты. Несколько статусов перечисляются через запятую. |
 | `shipmentStatuses` | query | array[string (CREATED, RECEIVED, IN_TRANSIT, READY_FOR_PICKUP, PICKED, LOST, EXPIRED, CANCELLED, FULFILMENT_RECEIVED, PREPARED_FOR_UTILIZATION, NOT_IN_DEMAND, UTILIZED…)] | нет | Фильтр по логистическим статусам невыкупов и возвратов. Несколько статусов перечисляются через запятую. |

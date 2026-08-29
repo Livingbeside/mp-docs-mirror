@@ -12,14 +12,24 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: 0fb42f45d6341118
+content_sha: 2f1a738e6de4ab6c
 ---
 
 # Список складов
 
 `POST /v2/businesses/{businessId}/warehouses`
 
-{% include notitle [access](../../_auto/method_scopes/getPagedWarehouses.md) %} Возвращает список складов и информацию о них. {% note warning "Когда использовать этот метод" %} Метод актуален для кабинетов с группами складов. Если в кабинете нет групп складов, используйте метод [POST v3/businesses/{businessId}/warehouses](../../reference/warehouses/getPartnerWarehouses.md). [Что такое группы складов и зачем они нужны](https://yandex.ru/support/marketplace/assortment/operations/stocks.html#unified-stocks). {% endnote %} {% include notitle [limit](../../_auto/method_limits/getPagedWarehouses.md) %}
+{% include notitle [access](../../_auto/method_scopes/getPagedWarehouses.md) %}
+
+Возвращает список складов и информацию о них.
+
+{% note warning "Когда использовать этот метод" %}
+
+Метод актуален для кабинетов с группами складов. Если в кабинете нет групп складов, используйте метод [POST v3/businesses/{businessId}/warehouses](../../reference/warehouses/getPartnerWarehouses.md). [Что такое группы складов и зачем они нужны](https://yandex.ru/support/marketplace/assortment/operations/stocks.html#unified-stocks).
+
+{% endnote %}
+
+{% include notitle [limit](../../_auto/method_limits/getPagedWarehouses.md) %}
 
 ## Параметры
 
@@ -27,7 +37,7 @@ content_sha: 0fb42f45d6341118
 |---|---|---|---|---|
 | `businessId` | path | integer<int64> | да | Идентификатор кабинета. {% if audience == "partner" %} Чтобы его узнать, воспользуйтесь запросом [GET v2/campaigns](../../reference/campaigns/getCampaigns.md). ℹ️ [Что такое кабинет и магазин на Маркете](https://yandex.ru/support/marketplace/account/introduction.html) {% endif %} |
 | `pageToken` | query | string | нет | Идентификатор страницы c результатами. Если параметр не указан, возвращается первая страница. Передавайте значение выходного параметра `nextPageToken`, полученное при последнем запросе. |
-| `limit` | query | integer<int32> | нет | {{ limit-param-description }} |
+| `limit` | query | integer<int32> | нет | — |
 
 ## Запрос
 

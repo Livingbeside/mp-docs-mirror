@@ -12,14 +12,34 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: 4824e8fd0266a160
+content_sha: cccb2e270e4adbf3
 ---
 
 # Передача информации об остатках
 
 `PUT /v2/campaigns/{campaignId}/offers/stocks`
 
-{% include notitle [access](../../_auto/method_scopes/updateStocks.md) %} Передает данные об остатках товаров на витрине. {% note warning "Когда использовать этот метод" %} Метод актуален только для кабинетов с группами складов. Если в кабинете нет групп складов, используйте метод [POST v3/businesses/{businessId}/offers/stocks/update](../../reference/stocks/updateStocksOnPartnerWarehouses.md). [Что такое группы складов и зачем они нужны](https://yandex.ru/support/marketplace/assortment/operations/stocks.html#unified-stocks). {% endnote %} Для группы складов передавайте остатки только для **одного любого склада**. Информация для остальных складов в этой группе обновится автоматически. Обязательно указывайте SKU **в точности** так, как он указан в каталоге. Например, _557722_ и _0557722_ — это два разных SKU. {% note info "Данные в каталоге обновляются не мгновенно" %} Это занимает до нескольких минут. {% endnote %} {% include notitle [limit](../../_auto/method_limits/updateStocks.md) %}
+{% include notitle [access](../../_auto/method_scopes/updateStocks.md) %}
+
+Передает данные об остатках товаров на витрине.
+
+{% note warning "Когда использовать этот метод" %}
+
+Метод актуален только для кабинетов с группами складов. Если в кабинете нет групп складов, используйте метод [POST v3/businesses/{businessId}/offers/stocks/update](../../reference/stocks/updateStocksOnPartnerWarehouses.md). [Что такое группы складов и зачем они нужны](https://yandex.ru/support/marketplace/assortment/operations/stocks.html#unified-stocks).
+
+{% endnote %}
+
+Для группы складов передавайте остатки только для **одного любого склада**. Информация для остальных складов в этой группе обновится автоматически.
+
+Обязательно указывайте SKU **в точности** так, как он указан в каталоге. Например, _557722_ и _0557722_ — это два разных SKU.
+
+{% note info "Данные в каталоге обновляются не мгновенно" %}
+
+Это занимает до нескольких минут.
+
+{% endnote %}
+
+{% include notitle [limit](../../_auto/method_limits/updateStocks.md) %}
 
 ## Параметры
 

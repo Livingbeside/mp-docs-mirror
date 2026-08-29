@@ -9,7 +9,7 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: true
-content_sha: 3d47be8e9656ebd0
+content_sha: 74b0804e4fd20924
 ---
 
 # Получить список отправлений
@@ -64,15 +64,15 @@ content_sha: 3d47be8e9656ebd0
     - `cluster_to` — string. Код региона, куда доставляется заказ.
     - `products` — array[object]. Список товаров в заказе.
       - `actions` — array[string]. Список акций.
+      - `currency_code` — string. Валюта ваших цен. Cовпадает с валютой, которая установлена в настройках личного кабинета. Возможные значения: - `RUB` — российский рубль, - `BYN` — белорусский рубль, - `KZT` — тенге, - `EUR` — евро, - `USD` — доллар США, - `CNY` — юань.
+      - `customer_currency_code` — string. Код валюты покупателя.
       - `commission_amount` — number<double>. Размер комиссии за товар.
       - `commission_percent` — integer<int64>. Процент комиссии.
       - `commissions_currency_code` — string. Код валюты, в которой рассчитывались комиссии.
-      - `currency_code` — string. Валюта ваших цен. Cовпадает с валютой, которая установлена в настройках личного кабинета. Возможные значения: - `RUB` — российский рубль, - `BYN` — белорусский рубль, - `KZT` — тенге, - `EUR` — евро, - `USD` — доллар США, - `CNY` — юань.
-      - `customer_currency_code` — string. Код валюты покупателя.
-      - `customer_price` — number<double>. Цена товара для покупателя с учётом скидок продавца и Ozon.
       - `old_price` — number<double>. Цена до учёта скидок. На карточке товара отображается зачёркнутой.
       - `payout` — number<double>. Выплата продавцу.
       - `price` — number<double>. Цена товара с учётом акций, кроме акций за счёт Ozon.
+      - `customer_price` — number<double>. Цена товара для покупателя с учётом скидок продавца и Ozon.
       - `product_id` — integer<int64>. Идентификатор товара в системе Ozon — SKU.
       - `quantity` — integer<int64>. Количество товара в отправлении.
       - `total_discount_percent` — number<double>. Процент скидки.

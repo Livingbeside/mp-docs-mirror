@@ -14,14 +14,26 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: 4b4d067151411d8e
+content_sha: e023412c6d179b5a
 ---
 
 # Получение информации о заполненности карточек магазина
 
 `POST /v2/businesses/{businessId}/offer-cards`
 
-{% include notitle [access](../../_auto/method_scopes/getOfferCardsContentStatus.md) %} Возвращает сведения о состоянии контента для заданных товаров: * создана ли карточка товара и в каком она статусе; * рейтинг карточки — на сколько процентов она заполнена; * переданные характеристики товаров; * есть ли ошибки или предупреждения, связанные с контентом; * рекомендации по заполнению карточки. Чтобы получить другие характеристики товаров, воспользуйтесь методом [POST v2/businesses/{businessId}/offer-mappings](../../reference/business-offer-mappings/getOfferMappings.md). {% include notitle [limit](../../_auto/method_limits/getOfferCardsContentStatus.md) %}
+{% include notitle [access](../../_auto/method_scopes/getOfferCardsContentStatus.md) %}
+
+Возвращает сведения о состоянии контента для заданных товаров:
+
+* создана ли карточка товара и в каком она статусе;
+* рейтинг карточки — на сколько процентов она заполнена;
+* переданные характеристики товаров;
+* есть ли ошибки или предупреждения, связанные с контентом;
+* рекомендации по заполнению карточки.
+
+Чтобы получить другие характеристики товаров, воспользуйтесь методом [POST v2/businesses/{businessId}/offer-mappings](../../reference/business-offer-mappings/getOfferMappings.md).
+
+{% include notitle [limit](../../_auto/method_limits/getOfferCardsContentStatus.md) %}
 
 ## Параметры
 
@@ -29,7 +41,7 @@ content_sha: 4b4d067151411d8e
 |---|---|---|---|---|
 | `businessId` | path | integer<int64> | да | Идентификатор кабинета. {% if audience == "partner" %} Чтобы его узнать, воспользуйтесь запросом [GET v2/campaigns](../../reference/campaigns/getCampaigns.md). ℹ️ [Что такое кабинет и магазин на Маркете](https://yandex.ru/support/marketplace/account/introduction.html) {% endif %} |
 | `pageToken` | query | string | нет | Идентификатор страницы c результатами. Если параметр не указан, возвращается первая страница. Передавайте значение выходного параметра `nextPageToken`, полученное при последнем запросе. |
-| `limit` | query | integer<int32> | нет | {{ limit-param-description }} |
+| `limit` | query | integer<int32> | нет | — |
 
 ## Запрос
 
@@ -51,7 +63,7 @@ content_sha: 4b4d067151411d8e
     - `mapping` — object. Основная информация о карточке товара.
       - `marketSku` — integer<int64>. Идентификатор карточки на Маркете.
       - `marketSkuName` — string. Название карточки товара. Может отсутствовать в ответе, если товар еще не привязан к карточке.
-      - `marketModelName` — string. {% note warning "Параметр устарел и будет отключен 12.10.2026." %} {% endnote %} Название модели на Маркете. Может отсутствовать в ответе, если товар еще не привязан к карточке.
+      - `marketModelName` — string. {% note warning "Параметр устарел и будет отключен 12.10.2026." %}   {% endnote %} Название модели на Маркете. Может отсутствовать в ответе, если товар еще не привязан к карточке.
       - `marketCategoryId` — integer<int64>. Идентификатор категории на Маркете, в которую попал товар. Может отсутствовать в ответе, если Маркет еще не определил категорию товара.
       - `marketCategoryName` — string. Название категории карточки на Маркете. Может отсутствовать в ответе, если Маркет еще не определил категорию товара.
     - `parameterValues` — array[object]. Список характеристик с их значениями.

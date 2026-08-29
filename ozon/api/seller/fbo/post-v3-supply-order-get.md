@@ -9,7 +9,7 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: 271e79ab6346dc7c
+content_sha: f91baa4c726e6708
 ---
 
 # Информация о заявке на поставку
@@ -49,9 +49,9 @@ content_sha: 271e79ab6346dc7c
   - `state` — string (UNSPECIFIED, DATA_FILLING, READY_TO_SUPPLY, ACCEPTED_AT_SUPPLY_WAREHOUSE, IN_TRANSIT, ACCEPTANCE_AT_STORAGE_WAREHOUSE, REPORTS_CONFIRMATION_AWAITING, REPORT_REJECTED, COMPLETED, REJECTED_AT_SUPPLY_WAREHOUSE, CANCELLED, OVERDUE). Статус заявки на поставку: - `UNSPECIFIED` — не определён; - `DATA_FILLING` — заполнение данных; - `READY_TO_SUPPLY` — готова к отгрузке; - `ACCEPTED_AT_SUPPLY_WAREHOUSE` — принята на точке отгрузки; - `IN_TRANSIT` — в пути; - `ACCEPTANCE_AT_STORAGE_WAREHOUSE` — приёмка на складе; - `REPORTS_CONFIRMATION_AWAITING` — согласование актов; - `REPORT_REJECTED` — спор; - `COMPLETED` — завершена; - `REJECTED_AT_SUPPLY_WAREHOUSE` — отказано в приёмке; - `CANCELLED` — отменена; - `OVERDUE` — просрочена. По умолчанию: `UNSPECIFIED`.
   - `state_updated_date` — string<date-time>. Дата обновления статуса заявки на поставку.
   - `supplies` — array[object]. Информация о поставках.
-    - `bundle_id` — string. Идентификатор состава поставки.
     - `is_crossdock` — boolean. `true`, если поставка кросс-докинг.
     - `macrolocal_cluster_id` — integer<int64>. Идентификатор кластера размещения.
+    - `bundle_id` — string. Идентификатор состава поставки.
     - `state` — string (UNSPECIFIED, DATA_FILLING, READY_TO_SUPPLY, ACCEPTED_AT_SUPPLY_WAREHOUSE, IN_TRANSIT, ACCEPTANCE_AT_STORAGE_WAREHOUSE, REPORTS_CONFIRMATION_AWAITING, REPORT_REJECTED, COMPLETED, REJECTED_AT_SUPPLY_WAREHOUSE, CANCELLED, OVERDUE). Статус поставки: - `UNSPECIFIED` — не определён; - `DATA_FILLING` — заполнение данных; - `READY_TO_SUPPLY` — готова к отгрузке; - `ACCEPTED_AT_SUPPLY_WAREHOUSE` — принята на точке отгрузки; - `IN_TRANSIT` — в пути; - `ACCEPTANCE_AT_STORAGE_WAREHOUSE` — приёмка на складе; - `REPORTS_CONFIRMATION_AWAITING` — согласование актов; - `REPORT_REJECTED` — спор; - `COMPLETED` — завершена; - `REJECTED_AT_SUPPLY_WAREHOUSE` — отказано в приёмке; - `CANCELLED` — отменена; - `OVERDUE` — просрочена. По умолчанию: `UNSPECIFIED`.
     - `storage_warehouse` — object. Склад хранения для поставок с типом `DIRECT`.
       - `address` — string. Адрес склада хранения.

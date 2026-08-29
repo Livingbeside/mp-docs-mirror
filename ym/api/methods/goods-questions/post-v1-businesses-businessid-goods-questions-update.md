@@ -13,14 +13,18 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: b15b3cf2b0c3d951
+content_sha: 8da42dc7706cb2f0
 ---
 
 # Создание, изменение и удаление ответа или комментария
 
 `POST /v1/businesses/{businessId}/goods-questions/update`
 
-{% include notitle [access](../../_auto/method_scopes/updateGoodsQuestionTextEntity.md) %} Создание, изменение и удаление ответа или комментария. {% include notitle [limit](../../_auto/method_limits/updateGoodsQuestionTextEntity.md) %}
+{% include notitle [access](../../_auto/method_scopes/updateGoodsQuestionTextEntity.md) %}
+
+Создание, изменение и удаление ответа или комментария.
+
+{% include notitle [limit](../../_auto/method_limits/updateGoodsQuestionTextEntity.md) %}
 
 ## Параметры
 

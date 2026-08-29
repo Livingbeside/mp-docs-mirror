@@ -10,14 +10,18 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: f85d67cdc67a4ad7
+content_sha: 7ac2b6ff2d780cb8
 ---
 
 # Получение статусов операций
 
 `POST /v1/businesses/{businessId}/operations`
 
-{% include notitle [access](../../_auto/method_scopes/getOperations.md) %} Возвращает статусы запущенных операций по их идентификаторам. {% include notitle [limit](../../_auto/method_limits/getOperations.md) %}
+{% include notitle [access](../../_auto/method_scopes/getOperations.md) %}
+
+Возвращает статусы запущенных операций по их идентификаторам.
+
+{% include notitle [limit](../../_auto/method_limits/getOperations.md) %}
 
 ## Параметры
 

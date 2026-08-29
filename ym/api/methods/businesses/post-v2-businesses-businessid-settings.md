@@ -14,14 +14,18 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: 56d54ca36c616e85
+content_sha: ef64ed1588dd6762
 ---
 
 # Настройки кабинета
 
 `POST /v2/businesses/{businessId}/settings`
 
-{% include notitle [access](../../_auto/method_scopes/getBusinessSettings.md) %} Возвращает информацию о настройках кабинета, идентификатор которого указан в запросе. {% include notitle [limit](../../_auto/method_limits/getBusinessSettings.md) %}
+{% include notitle [access](../../_auto/method_scopes/getBusinessSettings.md) %}
+
+Возвращает информацию о настройках кабинета, идентификатор которого указан в запросе.
+
+{% include notitle [limit](../../_auto/method_limits/getBusinessSettings.md) %}
 
 ## Параметры
 

@@ -13,21 +13,37 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: 1cbc91c88e7bde46
+content_sha: 497bed4856b16d78
 ---
 
 # Отчет по бусту продаж
 
 `POST /v2/reports/boost-consolidated/generate`
 
-{% include notitle [access](../../_auto/method_scopes/generateBoostConsolidatedReport.md) %} Запускает генерацию сводного отчета по бусту продаж за заданный период. {% if audience == "partner" %}[Что такое буст продаж](https://yandex.ru/support/marketplace/ru/marketing/campaigns){% endif %} Отчет содержит информацию по всем кампаниям, созданным и через API, и в кабинете. Узнать статус генерации и получить ссылку на готовый отчет можно с помощью запроса [GET v2/reports/info/{reportId}](../../reference/reports/getReportInfo.md). {% include notitle [reports]({{ report-columns-boost-consolidated }}) %} {% if audience != "advertiser" %} {% include notitle [tariff-period](../../_includes/common/report-data-period-400-days.md) %} {% endif %} {% include notitle [limit](../../_auto/method_limits/generateBoostConsolidatedReport.md) %}
+{% include notitle [access](../../_auto/method_scopes/generateBoostConsolidatedReport.md) %}
+
+Запускает генерацию сводного отчета по бусту продаж за заданный период. {% if audience == "partner" %}[Что такое буст продаж](https://yandex.ru/support/marketplace/ru/marketing/campaigns){% endif %}
+
+Отчет содержит информацию по всем кампаниям, созданным и через API, и в кабинете.
+
+Узнать статус генерации и получить ссылку на готовый отчет можно с помощью запроса [GET v2/reports/info/{reportId}](../../reference/reports/getReportInfo.md).
+
+{% include notitle [reports]() %}
+
+{% if audience != "advertiser" %}
+
+{% include notitle [tariff-period](../../_includes/common/report-data-period-400-days.md) %}
+
+{% endif %}
+
+{% include notitle [limit](../../_auto/method_limits/generateBoostConsolidatedReport.md) %}
 
 ## Параметры
 
 | Имя | Где | Тип | Обяз. | Описание |
 |---|---|---|---|---|
 | `format` | query | string (FILE, CSV, JSON) | нет | Формат отчета или документа. |
-| `sourceType` | query | string (SELLER, ADVERTISER) | нет | Признак типа кабинета, от имени которого вызывается метод: {% if audience == "partner" %} - `SELLER` — продавец. {% endif %} - `ADVERTISER` — рекламодатель. {% if audience == "advertiser" %} {% note info "Обязательно указывайте sourceType=ADVERTISER в каждом запросе." %} {% endnote %} {% endif %} |
+| `sourceType` | query | string (SELLER, ADVERTISER) | нет | Признак типа кабинета, от имени которого вызывается метод: {% if audience == "partner" %} - `SELLER` — продавец. {% endif %} - `ADVERTISER` — рекламодатель. {% if audience == "advertiser" %} {% note info "Обязательно указывайте sourceType=ADVERTISER в каждом запросе." %}   {% endnote %} {% endif %} |
 
 ## Запрос
 

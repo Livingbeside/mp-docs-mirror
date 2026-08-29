@@ -10,14 +10,18 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: cb9ec30f8f75c78b
+content_sha: ed3b58b0ab82995d
 ---
 
 # Получение акта расхождений
 
 `GET /v2/campaigns/{campaignId}/first-mile/shipments/{shipmentId}/discrepancy-act`
 
-{% include notitle [access](../../_auto/method_scopes/downloadShipmentDiscrepancyAct.md) %} Возвращает акт расхождений для заданной отгрузки. {% include notitle [limit](../../_auto/method_limits/downloadShipmentDiscrepancyAct.md) %}
+{% include notitle [access](../../_auto/method_scopes/downloadShipmentDiscrepancyAct.md) %}
+
+Возвращает акт расхождений для заданной отгрузки.
+
+{% include notitle [limit](../../_auto/method_limits/downloadShipmentDiscrepancyAct.md) %}
 
 ## Параметры
 

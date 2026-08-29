@@ -13,14 +13,39 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: 3198224b30d8be80
+content_sha: 99fe0c62813f49f7
 ---
 
 # Отчет «Цены»
 
 `POST /v2/reports/goods-prices/generate`
 
-{% include notitle [access](../../_auto/method_scopes/generateGoodsPricesReport.md) %} Запускает генерацию отчета «Цены». **Какая информация вернется:** * если передать `businessId` — по единым ценам кабинета; * если [включены магазинные цены](*onlyDefaultPrice-false) и указать `campaignId` — по ценам в соответствующем магазине. Узнать статус генерации и получить ссылку на готовый отчет можно с помощью запроса [GET v2/reports/info/{reportId}](../../reference/reports/getReportInfo.md). {% list tabs %} - Цены во всех магазинах кабинета {% include notitle [reports](../../_auto/reports/prices/mass_assortment_business_price_v2.md) %} - Магазинные цены {% include notitle [reports](../../_auto/reports/prices/mass_assortment_price_v2.md) %} {% endlist %} {% include notitle [tariff-period](../../_includes/common/simultaneously-generated-reports-amount.md) %} {% include notitle [limit](../../_auto/method_limits/generateGoodsPricesReport.md) %}
+{% include notitle [access](../../_auto/method_scopes/generateGoodsPricesReport.md) %}
+
+Запускает генерацию отчета «Цены».
+
+**Какая информация вернется:**
+
+* если передать `businessId` — по единым ценам кабинета;
+* если [включены магазинные цены](*onlyDefaultPrice-false) и указать `campaignId` — по ценам в соответствующем магазине.
+
+Узнать статус генерации и получить ссылку на готовый отчет можно с помощью запроса [GET v2/reports/info/{reportId}](../../reference/reports/getReportInfo.md).
+
+{% list tabs %}
+
+- Цены во всех магазинах кабинета
+
+ {% include notitle [reports](../../_auto/reports/prices/mass_assortment_business_price_v2.md) %}
+
+- Магазинные цены
+
+ {% include notitle [reports](../../_auto/reports/prices/mass_assortment_price_v2.md) %}
+
+{% endlist %}
+
+{% include notitle [tariff-period](../../_includes/common/simultaneously-generated-reports-amount.md) %}
+
+{% include notitle [limit](../../_auto/method_limits/generateGoodsPricesReport.md) %}
 
 ## Параметры
 

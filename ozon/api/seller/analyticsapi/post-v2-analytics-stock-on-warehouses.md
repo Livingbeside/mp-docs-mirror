@@ -9,7 +9,7 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: e2a940fc8b9c895b
+content_sha: 4ab2c81fa3a80a3c
 ---
 
 # Отчёт по остаткам и товарам
@@ -43,12 +43,12 @@ content_sha: e2a940fc8b9c895b
 
 - `result` — object. Результат запроса.
   - `rows` — array[object]. Информация о товарах и остатках.
-    - `free_to_sell_amount` — integer<int64>. Количество товара, доступное к продаже на Ozon.
+    - `sku` — integer<int64>. Идентификатор товара в системе Ozon — SKU.
     - `item_code` — string. Идентификатор товара в системе продавца — артикул.
     - `item_name` — string. Название товара в системе Ozon.
+    - `free_to_sell_amount` — integer<int64>. Количество товара, доступное к продаже на Ozon.
     - `promised_amount` — integer<int64>. Количество товара, указанное в подтверждённых будущих поставках.
     - `reserved_amount` — integer<int64>. Количество товара, зарезервированное для покупки, возврата и перевозки между складами.
-    - `sku` — integer<int64>. Идентификатор товара в системе Ozon — SKU.
     - `warehouse_name` — string. Название склада, где находится товар.
 
 **400** — Неверный параметр

@@ -14,14 +14,44 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: fb47e03c83c00102
+content_sha: ce0c251304a86467
 ---
 
 # Закрывающие документы
 
 `POST /v2/reports/closure-documents/generate`
 
-{% include notitle [access](../../_auto/method_scopes/generateClosureDocumentsReport.md) %} Возвращает ZIP-архив с закрывающими документами в формате PDF за указанный месяц. {% cut "Состав документов в зависимости от типа договора" %} * **Договор на размещение** * [акт об оказанных услугах](*acts-main-act) * [счет-фактура](*acts-main-invoice) * [сводный отчет по данным статистики](*acts-main-report) * [отчет об исполнении поручения и о зачете взаимных требований](*acts-main-agent) (отчет агента) * **Договор на продвижение** (в России не заключается после 30 сентября 2024 года) * [акт об оказании услуг](*acts-discounts-act) * [счет-фактура](*acts-discounts-invoice), если этого требует схема налогообложения * **Договор на маркетинг** * [акт об оказанных услугах](*acts-marketing-act) * [счет-фактура](*acts-main-invoice) * [счет-фактура на аванс](*acts-marketing-invoice) * [выписка по лицевому счету](*acts-marketing-account) * [детализация к акту](*acts-marketing-details) {% endcut %} Узнать статус генерации и получить ссылку на архив можно с помощью запроса [GET v2/reports/info/{reportId}](../../reference/reports/getReportInfo.md). {% include notitle [limit](../../_auto/method_limits/generateClosureDocumentsReport.md) %}
+{% include notitle [access](../../_auto/method_scopes/generateClosureDocumentsReport.md) %}
+
+Возвращает ZIP-архив с закрывающими документами в формате PDF за указанный месяц.
+
+{% cut "Состав документов в зависимости от типа договора" %}
+
+* **Договор на размещение**
+
+ * [акт об оказанных услугах](*acts-main-act)
+ * [счет-фактура](*acts-main-invoice)
+ * [сводный отчет по данным статистики](*acts-main-report)
+ * [отчет об исполнении поручения и о зачете взаимных требований](*acts-main-agent) (отчет агента)
+
+* **Договор на продвижение** (в России не заключается после 30 сентября 2024 года)
+
+ * [акт об оказании услуг](*acts-discounts-act)
+ * [счет-фактура](*acts-discounts-invoice), если этого требует схема налогообложения
+
+* **Договор на маркетинг**
+
+ * [акт об оказанных услугах](*acts-marketing-act)
+ * [счет-фактура](*acts-main-invoice)
+ * [счет-фактура на аванс](*acts-marketing-invoice)
+ * [выписка по лицевому счету](*acts-marketing-account)
+ * [детализация к акту](*acts-marketing-details)
+
+{% endcut %}
+
+Узнать статус генерации и получить ссылку на архив можно с помощью запроса [GET v2/reports/info/{reportId}](../../reference/reports/getReportInfo.md).
+
+{% include notitle [limit](../../_auto/method_limits/generateClosureDocumentsReport.md) %}
 
 ## Запрос
 

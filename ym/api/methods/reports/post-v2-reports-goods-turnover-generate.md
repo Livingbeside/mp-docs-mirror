@@ -10,14 +10,24 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: 97e23328b4993eb8
+content_sha: e5d6ea312714793a
 ---
 
 # Отчет по оборачиваемости
 
 `POST /v2/reports/goods-turnover/generate`
 
-{% include notitle [access](../../_auto/method_scopes/generateGoodsTurnoverReport.md) %} Запускает генерацию отчета по оборачиваемости за заданную дату. [Что это за отчет](https://yandex.ru/support/marketplace/ru/storage/logistics#turnover) Узнать статус генерации и получить ссылку на готовый отчет можно с помощью запроса [GET v2/reports/info/{reportId}](../../reference/reports/getReportInfo.md). {% include notitle [reports](../../_auto/reports/turnover/turnover.md) %} {% include notitle [tariff-period](../../_includes/common/report-data-period-unchanged.md) %} {% include notitle [limit](../../_auto/method_limits/generateGoodsTurnoverReport.md) %}
+{% include notitle [access](../../_auto/method_scopes/generateGoodsTurnoverReport.md) %}
+
+Запускает генерацию отчета по оборачиваемости за заданную дату. [Что это за отчет](https://yandex.ru/support/marketplace/ru/storage/logistics#turnover)
+
+Узнать статус генерации и получить ссылку на готовый отчет можно с помощью запроса [GET v2/reports/info/{reportId}](../../reference/reports/getReportInfo.md).
+
+{% include notitle [reports](../../_auto/reports/turnover/turnover.md) %}
+
+{% include notitle [tariff-period](../../_includes/common/report-data-period-unchanged.md) %}
+
+{% include notitle [limit](../../_auto/method_limits/generateGoodsTurnoverReport.md) %}
 
 ## Параметры
 

@@ -9,7 +9,7 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: 5dd77e30d23ca1d6
+content_sha: 0177741ac9332129
 ---
 
 # Получить список складов Ozon
@@ -36,19 +36,19 @@ content_sha: 5dd77e30d23ca1d6
 **200** — Список складов Ozon
 
 - `warehouses` — array[object]. Список складов.
+  - `warehouse_id` — integer<int64>. Идентификатор склада.
+  - `name` — string. Название склада.
+  - `short_name` — string. Короткое название склада.
   - `address` — string. Адрес склада.
-  - `country_iso_numeric` — integer<int32>. Код страны в формате ISO 3166-1 numeric.
+  - `timezone` — string. Часовой пояс склада.
   - `is_active` — boolean. `true`, если склад активный.
+  - `warehouse_type` — string (UNSPECIFIED, FULL_FILLMENT, FULL_FILLMENT_RETURNS, FULL_FILLMENT_DEFECT, EXPRESS_DARK_STORE, CROSS_DOCK, SORTING_CENTER, PHARMACY, DISTRIBUTION_CENTER, ORDERS_RECEIVING_POINT, OUTSOURCE_FF, B2B…). Тип склада: - `UNSPECIFIED` — не указан; - `FULL_FILLMENT` — фулфилмент; - `FULL_FILLMENT_RETURNS` — склад возвратов; - `FULL_FILLMENT_DEFECT` — склад брака; - `EXPRESS_DARK_STORE` — фреш; - `CROSS_DOCK` — кросс-док; - `SORTING_CENTER` — сортировочный центр; - `PHARMACY` — склад аптеки; - `DISTRIBUTION_CENTER` — распределительный центр; - `ORDERS_RECEIVING_POINT` — пункты приёма заказов; - `OUTSOURCE_FF` — аутсорс-склады; - `B2B` — B2B-склад; - `EXTERNAL_FF` — склады партнёров. По умолчанию: `UNSPECIFIED`.
+  - `country_iso_numeric` — integer<int32>. Код страны в формате ISO 3166-1 numeric.
   - `is_cross_dock` — boolean. `true`, если тип склада — кросс-док.
   - `is_distribution_center` — boolean. `true`, если тип склада — распределительный центр.
   - `is_edo` — boolean. `true`, если склад работает с электронным документооборотом.
   - `is_express` — boolean. `true`, если тип склада — фреш.
   - `is_for_supply` — boolean. `true`, если склад доступен для создания поставки.
-  - `name` — string. Название склада.
-  - `short_name` — string. Короткое название склада.
-  - `timezone` — string. Часовой пояс склада.
-  - `warehouse_id` — integer<int64>. Идентификатор склада.
-  - `warehouse_type` — string (UNSPECIFIED, FULL_FILLMENT, FULL_FILLMENT_RETURNS, FULL_FILLMENT_DEFECT, EXPRESS_DARK_STORE, CROSS_DOCK, SORTING_CENTER, PHARMACY, DISTRIBUTION_CENTER, ORDERS_RECEIVING_POINT, OUTSOURCE_FF, B2B…). Тип склада: - `UNSPECIFIED` — не указан; - `FULL_FILLMENT` — фулфилмент; - `FULL_FILLMENT_RETURNS` — склад возвратов; - `FULL_FILLMENT_DEFECT` — склад брака; - `EXPRESS_DARK_STORE` — фреш; - `CROSS_DOCK` — кросс-док; - `SORTING_CENTER` — сортировочный центр; - `PHARMACY` — склад аптеки; - `DISTRIBUTION_CENTER` — распределительный центр; - `ORDERS_RECEIVING_POINT` — пункты приёма заказов; - `OUTSOURCE_FF` — аутсорс-склады; - `B2B` — B2B-склад; - `EXTERNAL_FF` — склады партнёров. По умолчанию: `UNSPECIFIED`.
 
 **default** — Ошибка
 

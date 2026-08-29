@@ -12,14 +12,22 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: 696d9a5ffa3faa28
+content_sha: 045536f139d76e0c
 ---
 
 # Готовые ярлыки‑наклейки на все коробки в нескольких заказах
 
 `POST /v2/reports/documents/labels/generate`
 
-{% include notitle [access](../../_auto/method_scopes/generateMassOrderLabelsReport.md) %} Запускает генерацию PDF-файла с ярлыками для переданных заказов. Подробно о том, зачем они нужны и как выглядят, рассказано [в Справке Маркета для продавцов](https://yandex.ru/support/marketplace/orders/fbs/packaging/marking.html). Чтобы на ярлыке отображался внешний идентификатор заказа, передайте его в методе [POST v2/campaigns/{campaignId}/orders/{orderId}/external-id](../../reference/orders/updateExternalOrderId.md). Узнать статус генерации и получить ссылку на готовый файл можно с помощью запроса [GET v2/reports/info/{reportId}](../../reference/reports/getReportInfo.md). {% include notitle [limit](../../_auto/method_limits/generateMassOrderLabelsReport.md) %}
+{% include notitle [access](../../_auto/method_scopes/generateMassOrderLabelsReport.md) %}
+
+Запускает генерацию PDF-файла с ярлыками для переданных заказов. Подробно о том, зачем они нужны и как выглядят, рассказано [в Справке Маркета для продавцов](https://yandex.ru/support/marketplace/orders/fbs/packaging/marking.html).
+
+Чтобы на ярлыке отображался внешний идентификатор заказа, передайте его в методе [POST v2/campaigns/{campaignId}/orders/{orderId}/external-id](../../reference/orders/updateExternalOrderId.md).
+
+Узнать статус генерации и получить ссылку на готовый файл можно с помощью запроса [GET v2/reports/info/{reportId}](../../reference/reports/getReportInfo.md).
+
+{% include notitle [limit](../../_auto/method_limits/generateMassOrderLabelsReport.md) %}
 
 ## Параметры
 

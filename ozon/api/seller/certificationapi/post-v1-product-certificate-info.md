@@ -9,7 +9,7 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: 7641e45c0d73c421
+content_sha: 43df038057b290de
 ---
 
 # Информация о сертификате
@@ -34,17 +34,17 @@ content_sha: 7641e45c0d73c421
 **200** — Информация о сертификате
 
 - `result` — object. Информация о сертификате.
-  - `accordance_type_code` — string. Тип соответствия требованиям.
   - `certificate_id` — integer<int32>. Идентификатор.
-  - `certificate_name` — string. Название.
   - `certificate_number` — string. Номер.
-  - `expire_date` — string<date-time>. Дата окончания действия.
-  - `issue_date` — string<date-time>. Дата создания.
-  - `products_count` — integer<int32>. Количество товаров, привязанных к сертификату.
-  - `rejection_reason_code` — string. Причина отклонения сертификата.
-  - `status_code` — string. Статус.
+  - `certificate_name` — string. Название.
   - `type_code` — string. Тип.
+  - `status_code` — string. Статус.
+  - `accordance_type_code` — string. Тип соответствия требованиям.
+  - `rejection_reason_code` — string. Причина отклонения сертификата.
   - `verification_comment` — string. Комментарий модератора.
+  - `issue_date` — string<date-time>. Дата создания.
+  - `expire_date` — string<date-time>. Дата окончания действия.
+  - `products_count` — integer<int32>. Количество товаров, привязанных к сертификату.
 
 **default** — Ошибка
 

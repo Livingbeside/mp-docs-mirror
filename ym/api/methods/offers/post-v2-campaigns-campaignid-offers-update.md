@@ -14,14 +14,18 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: 3831b0a527976b21
+content_sha: c0d658eaf4bac3c7
 ---
 
 # Изменение условий продажи товаров в магазине
 
 `POST /v2/campaigns/{campaignId}/offers/update`
 
-{% include notitle [access](../../_auto/method_scopes/updateCampaignOffers.md) %} Изменяет параметры размещения товаров в конкретном магазине: доступность товара и применяемый НДС. {% include notitle [limit](../../_auto/method_limits/updateCampaignOffers.md) %}
+{% include notitle [access](../../_auto/method_scopes/updateCampaignOffers.md) %}
+
+Изменяет параметры размещения товаров в конкретном магазине: доступность товара и применяемый НДС.
+
+{% include notitle [limit](../../_auto/method_limits/updateCampaignOffers.md) %}
 
 ## Параметры
 

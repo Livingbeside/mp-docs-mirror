@@ -11,14 +11,18 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: 759ed6b4526e4a53
+content_sha: 8f896e45e6387ad7
 ---
 
 # Идентификаторы фулфилмент-складов Маркета
 
 `GET /v2/warehouses`
 
-{% include notitle [access](../../_auto/method_scopes/getFulfillmentWarehouses.md) %} Возвращает список фулфилмент-складов Маркета с их идентификаторами. {% include notitle [limit](../../_auto/method_limits/getFulfillmentWarehouses.md) %}
+{% include notitle [access](../../_auto/method_scopes/getFulfillmentWarehouses.md) %}
+
+Возвращает список фулфилмент-складов Маркета с их идентификаторами.
+
+{% include notitle [limit](../../_auto/method_limits/getFulfillmentWarehouses.md) %}
 
 ## Параметры
 

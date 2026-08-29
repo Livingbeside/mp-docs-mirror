@@ -14,14 +14,22 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: 64678519eacc2a24
+content_sha: ee42fd96aef3e1d2
 ---
 
 # Отчет по счету маркетинга
 
 `POST /v1/businesses/{businessId}/reports/marketing-detalization/generate`
 
-{% include notitle [access](../../_auto/method_scopes/generateMarketingDetalizationReport.md) %} Запускает генерацию отчета по счету маркетинга. Узнать статус генерации и получить ссылку на готовый отчет можно с помощью запроса [GET v2/reports/info/{reportId}](../../reference/reports/getReportInfo.md). {% include notitle [reports](../../_auto/reports/advertiser_billing_operations/advertiser_billing_operations.md) %} {% include notitle [limit](../../_auto/method_limits/generateMarketingDetalizationReport.md) %}
+{% include notitle [access](../../_auto/method_scopes/generateMarketingDetalizationReport.md) %}
+
+Запускает генерацию отчета по счету маркетинга.
+
+Узнать статус генерации и получить ссылку на готовый отчет можно с помощью запроса [GET v2/reports/info/{reportId}](../../reference/reports/getReportInfo.md).
+
+{% include notitle [reports](../../_auto/reports/advertiser_billing_operations/advertiser_billing_operations.md) %}
+
+{% include notitle [limit](../../_auto/method_limits/generateMarketingDetalizationReport.md) %}
 
 ## Параметры
 
@@ -29,7 +37,7 @@ content_sha: 64678519eacc2a24
 |---|---|---|---|---|
 | `businessId` | path | integer<int64> | да | Идентификатор кабинета. {% if audience == "partner" %} Чтобы его узнать, воспользуйтесь запросом [GET v2/campaigns](../../reference/campaigns/getCampaigns.md). ℹ️ [Что такое кабинет и магазин на Маркете](https://yandex.ru/support/marketplace/account/introduction.html) {% endif %} |
 | `format` | query | string (FILE, CSV, JSON) | нет | Формат отчета или документа. |
-| `sourceType` | query | string (SELLER, ADVERTISER) | нет | Признак типа кабинета, от имени которого вызывается метод: {% if audience == "partner" %} - `SELLER` — продавец. {% endif %} - `ADVERTISER` — рекламодатель. {% if audience == "advertiser" %} {% note info "Обязательно указывайте sourceType=ADVERTISER в каждом запросе." %} {% endnote %} {% endif %} |
+| `sourceType` | query | string (SELLER, ADVERTISER) | нет | Признак типа кабинета, от имени которого вызывается метод: {% if audience == "partner" %} - `SELLER` — продавец. {% endif %} - `ADVERTISER` — рекламодатель. {% if audience == "advertiser" %} {% note info "Обязательно указывайте sourceType=ADVERTISER в каждом запросе." %}   {% endnote %} {% endif %} |
 
 ## Запрос
 

@@ -11,14 +11,24 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: 287bc2eff15756a8
+content_sha: 20bc2ef57848956e
 ---
 
 # Отчет по движению товаров
 
 `POST /v2/reports/goods-movement/generate`
 
-{% include notitle [access](../../_auto/method_scopes/generateGoodsMovementReport.md) %} Запускает генерацию отчета по движению товаров. [Что это за отчет](https://yandex.ru/support/marketplace/analytics/reports-fby-fbs.html#flow) Узнать статус генерации и получить ссылку на готовый отчет можно с помощью запроса [GET v2/reports/info/{reportId}](../../reference/reports/getReportInfo.md). {% include notitle [reports](../../_auto/reports/sku/movement/movement_config.md) %} {% include notitle [tariff-period](../../_includes/common/report-data-period-unchanged.md) %} {% include notitle [limit](../../_auto/method_limits/generateGoodsMovementReport.md) %}
+{% include notitle [access](../../_auto/method_scopes/generateGoodsMovementReport.md) %}
+
+Запускает генерацию отчета по движению товаров. [Что это за отчет](https://yandex.ru/support/marketplace/analytics/reports-fby-fbs.html#flow)
+
+Узнать статус генерации и получить ссылку на готовый отчет можно с помощью запроса [GET v2/reports/info/{reportId}](../../reference/reports/getReportInfo.md).
+
+{% include notitle [reports](../../_auto/reports/sku/movement/movement_config.md) %}
+
+{% include notitle [tariff-period](../../_includes/common/report-data-period-unchanged.md) %}
+
+{% include notitle [limit](../../_auto/method_limits/generateGoodsMovementReport.md) %}
 
 ## Параметры
 

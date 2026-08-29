@@ -9,7 +9,7 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: 7d55454e4d95a84b
+content_sha: a150fa18357e7aaf
 ---
 
 # Добавить или обновить контактные данные продавца для курьера
@@ -31,9 +31,9 @@ content_sha: 7d55454e4d95a84b
 **Тело запроса** (`application/json`):
 
 - `carriage_id` — integer<int64> **обязательный**. Идентификатор перевозки.
-- `comment` — string. Комментарий для курьера.
 - `phone` — string **обязательный**. Телефон продавца.
 - `wechat_nickname` — string. WeChat продавца.
+- `comment` — string. Комментарий для курьера.
 
 ## Ответы
 

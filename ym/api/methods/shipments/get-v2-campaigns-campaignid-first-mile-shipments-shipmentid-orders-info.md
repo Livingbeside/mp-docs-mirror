@@ -10,14 +10,18 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: 54a8e3dd9df016f0
+content_sha: 063e5da6c8b5d6df
 ---
 
 # Получение информации о возможности печати ярлыков
 
 `GET /v2/campaigns/{campaignId}/first-mile/shipments/{shipmentId}/orders/info`
 
-{% include notitle [access](../../_auto/method_scopes/getShipmentOrdersInfo.md) %} Возвращает информацию о возможности печати ярлыков-наклеек для заказов в отгрузке. {% include notitle [limit](../../_auto/method_limits/getShipmentOrdersInfo.md) %}
+{% include notitle [access](../../_auto/method_scopes/getShipmentOrdersInfo.md) %}
+
+Возвращает информацию о возможности печати ярлыков-наклеек для заказов в отгрузке.
+
+{% include notitle [limit](../../_auto/method_limits/getShipmentOrdersInfo.md) %}
 
 ## Параметры
 

@@ -9,7 +9,7 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: 7045a15cc5cc8e7d
+content_sha: 7cac704dc25ca7e3
 ---
 
 # Список вопросов
@@ -41,8 +41,6 @@ content_sha: 7045a15cc5cc8e7d
 
 **200** — Список вопросов
 
-- `has_next` — boolean. `true`, если в ответе вернулись не все вопросы.
-- `last_id` — string. Идентификатор последнего значения на странице. Чтобы получить следующие значения, передайте полученное значение в следующем запросе в параметре `last_id`.
 - `questions` — ?. Вопросы.
   - `answers_count` — integer<int64>. Количество ответов на вопрос.
   - `author_name` — string. Имя автора вопроса.
@@ -53,6 +51,8 @@ content_sha: 7045a15cc5cc8e7d
   - `sku` — integer<int64>. Идентификатор товара в системе Ozon — SKU.
   - `status` — enum. Статусы вопроса: - `NEW` — новый, - `ALL` — все вопросы, - `VIEWED` — просмотренный, - `PROCESSED` — обработанный, - `UNPROCESSED` — необработанный.
   - `text` — string. Текст вопроса.
+- `last_id` — string. Идентификатор последнего значения на странице. Чтобы получить следующие значения, передайте полученное значение в следующем запросе в параметре `last_id`.
+- `has_next` — boolean. `true`, если в ответе вернулись не все вопросы.
 
 **default** — Ошибка
 

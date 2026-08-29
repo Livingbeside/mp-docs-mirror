@@ -10,14 +10,28 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: 26ae09f3dc895654
+content_sha: 767548a7b937bc75
 ---
 
 # Передача количества упаковок для доверительной приемки
 
 `PUT /v2/campaigns/{campaignId}/first-mile/shipments/{shipmentId}/pallets`
 
-{% include notitle [access](../../_auto/method_scopes/setShipmentPalletsCount.md) %} Передает Маркету количество упаковок в отгрузке для доверительной приемки. Подробнее о таком виде приемки читайте в [Справке Маркета для продавцов](https://yandex.ru/support/marketplace/orders/fbs/process.html#acceptance). {% note info "Как передавать упаковки" %} Передавайте количество упаковок, которые вы везете в отгрузке, а не сумму грузомест по заказам. **Пример:** в отгрузке 2 заказа, в каждом по 5 грузомест. Если вы везете их в 2 палетах — передайте в запросе `2`, а не `10`. {% endnote %} Получить PDF-файл с ярлыками для упаковок можно с помощью метода [GET v2/campaigns/{campaignId}/first-mile/shipments/{shipmentId}/pallet/labels](../../reference/shipments/downloadShipmentPalletLabels.md). {% include notitle [limit](../../_auto/method_limits/setShipmentPalletsCount.md) %}
+{% include notitle [access](../../_auto/method_scopes/setShipmentPalletsCount.md) %}
+
+Передает Маркету количество упаковок в отгрузке для доверительной приемки. Подробнее о таком виде приемки читайте в [Справке Маркета для продавцов](https://yandex.ru/support/marketplace/orders/fbs/process.html#acceptance).
+
+{% note info "Как передавать упаковки" %}
+
+Передавайте количество упаковок, которые вы везете в отгрузке, а не сумму грузомест по заказам.
+
+**Пример:** в отгрузке 2 заказа, в каждом по 5 грузомест. Если вы везете их в 2 палетах — передайте в запросе `2`, а не `10`.
+
+{% endnote %}
+
+Получить PDF-файл с ярлыками для упаковок можно с помощью метода [GET v2/campaigns/{campaignId}/first-mile/shipments/{shipmentId}/pallet/labels](../../reference/shipments/downloadShipmentPalletLabels.md).
+
+{% include notitle [limit](../../_auto/method_limits/setShipmentPalletsCount.md) %}
 
 ## Параметры
 

@@ -14,14 +14,26 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: 3df5b027f0e1818f
+content_sha: 52342e7a181cae75
 ---
 
 # Установка цен на товары для всех магазинов
 
 `POST /v2/businesses/{businessId}/offer-prices/updates`
 
-{% include notitle [access](../../_auto/method_scopes/updateBusinessPrices.md) %} Устанавливает цены, которые действуют во всех магазинах. Чтобы получить рекомендации Маркета, касающиеся цен, выполните запрос [POST v2/businesses/{businessId}/offers/recommendations](../../reference/offers/getOfferRecommendations.md). При необходимости передавайте НДС с помощью параметра `vat` в запросе [POST v2/campaigns/{campaignId}/offers/update](../../reference/offers/updateCampaignOffers.md). {% note info "Данные в каталоге обновляются не мгновенно" %} Это занимает до нескольких минут. {% endnote %} {% include notitle [limit](../../_auto/method_limits/updateBusinessPrices.md) %}
+{% include notitle [access](../../_auto/method_scopes/updateBusinessPrices.md) %}
+
+Устанавливает цены, которые действуют во всех магазинах. Чтобы получить рекомендации Маркета, касающиеся цен, выполните запрос [POST v2/businesses/{businessId}/offers/recommendations](../../reference/offers/getOfferRecommendations.md).
+
+При необходимости передавайте НДС с помощью параметра `vat` в запросе [POST v2/campaigns/{campaignId}/offers/update](../../reference/offers/updateCampaignOffers.md).
+
+{% note info "Данные в каталоге обновляются не мгновенно" %}
+
+Это занимает до нескольких минут.
+
+{% endnote %}
+
+{% include notitle [limit](../../_auto/method_limits/updateBusinessPrices.md) %}
 
 ## Параметры
 

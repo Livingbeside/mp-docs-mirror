@@ -13,14 +13,20 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: 1767c20b4ed43bf0
+content_sha: 6d2d9f374d6a9855
 ---
 
 # Индекс качества магазинов
 
 `POST /v2/businesses/{businessId}/ratings/quality`
 
-{% include notitle [access](../../_auto/method_scopes/getQualityRatings.md) %} Возвращает значение индекса качества магазинов и его составляющие. Подробнее об индексе качества читайте [в Справке Маркета для продавцов](https://yandex.ru/support2/marketplace/ru/quality/score/). {% include notitle [limit](../../_auto/method_limits/getQualityRatings.md) %}
+{% include notitle [access](../../_auto/method_scopes/getQualityRatings.md) %}
+
+Возвращает значение индекса качества магазинов и его составляющие.
+
+Подробнее об индексе качества читайте [в Справке Маркета для продавцов](https://yandex.ru/support2/marketplace/ru/quality/score/).
+
+{% include notitle [limit](../../_auto/method_limits/getQualityRatings.md) %}
 
 ## Параметры
 

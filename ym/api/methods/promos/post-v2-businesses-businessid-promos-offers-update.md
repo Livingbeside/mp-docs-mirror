@@ -13,14 +13,20 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: 741367b41839e8ca
+content_sha: dbbd2ffe63f50a9d
 ---
 
 # Добавление товаров в акцию или изменение их цен
 
 `POST /v2/businesses/{businessId}/promos/offers/update`
 
-{% include notitle [access](../../_auto/method_scopes/updatePromoOffers.md) %} Добавляет товары в акцию или изменяет цены на товары, которые участвуют в акции. Изменения начинают действовать в течение 4–6 часов. Узнать, применились ли они, можно с помощью параметра `processing` в ответе метода [POST v2/businesses/{businessId}/promos](../../reference/promos/getPromos.md). {% include notitle [limit](../../_auto/method_limits/updatePromoOffers.md) %}
+{% include notitle [access](../../_auto/method_scopes/updatePromoOffers.md) %}
+
+Добавляет товары в акцию или изменяет цены на товары, которые участвуют в акции.
+
+Изменения начинают действовать в течение 4–6 часов. Узнать, применились ли они, можно с помощью параметра `processing` в ответе метода [POST v2/businesses/{businessId}/promos](../../reference/promos/getPromos.md).
+
+{% include notitle [limit](../../_auto/method_limits/updatePromoOffers.md) %}
 
 ## Параметры
 

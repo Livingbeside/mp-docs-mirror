@@ -13,14 +13,30 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: 9a23d621e017c974
+content_sha: 2472fad48e712347
 ---
 
 # Получение отзывов о товарах продавца
 
 `POST /v2/businesses/{businessId}/goods-feedback`
 
-{% include notitle [access](../../_auto/method_scopes/getGoodsFeedbacks.md) %} Возвращает отзывы о товарах продавца по указанным фильтрам. **Исключение:** отзывы, которые удалили покупатели или Маркет. {% note tip "Вы также можете настроить API-уведомления" %} Маркет отправит вам [запрос](../../push-notifications/reference/sendNotification.md), когда появится новый отзыв. А полную информацию о нем можно получить с помощью этого метода. [{#T}](../../push-notifications/index.md) {% endnote %} Результаты возвращаются постранично. Отзывы расположены в порядке публикации, поэтому вы можете передавать определенный идентификатор страницы в `pageToken`, если вы получали его ранее. {% include notitle [limit](../../_auto/method_limits/getGoodsFeedbacks.md) %}
+{% include notitle [access](../../_auto/method_scopes/getGoodsFeedbacks.md) %}
+
+Возвращает отзывы о товарах продавца по указанным фильтрам. **Исключение:** отзывы, которые удалили покупатели или Маркет.
+
+{% note tip "Вы также можете настроить API-уведомления" %}
+
+Маркет отправит вам [запрос](../../push-notifications/reference/sendNotification.md), когда появится новый отзыв. А полную информацию о нем можно получить с помощью этого метода.
+
+[{#T}](../../push-notifications/index.md)
+
+{% endnote %}
+
+Результаты возвращаются постранично.
+
+Отзывы расположены в порядке публикации, поэтому вы можете передавать определенный идентификатор страницы в `pageToken`, если вы получали его ранее.
+
+{% include notitle [limit](../../_auto/method_limits/getGoodsFeedbacks.md) %}
 
 ## Параметры
 
@@ -28,7 +44,7 @@ content_sha: 9a23d621e017c974
 |---|---|---|---|---|
 | `businessId` | path | integer<int64> | да | Идентификатор кабинета. {% if audience == "partner" %} Чтобы его узнать, воспользуйтесь запросом [GET v2/campaigns](../../reference/campaigns/getCampaigns.md). ℹ️ [Что такое кабинет и магазин на Маркете](https://yandex.ru/support/marketplace/account/introduction.html) {% endif %} |
 | `pageToken` | query | string | нет | Идентификатор страницы c результатами. Если параметр не указан, возвращается первая страница. Передавайте значение выходного параметра `nextPageToken`, полученное при последнем запросе. |
-| `limit` | query | integer<int32> | нет | {{ limit-param-description }} |
+| `limit` | query | integer<int32> | нет | — |
 
 ## Запрос
 

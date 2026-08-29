@@ -13,14 +13,39 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: c6f34b05f9a802f3
+content_sha: d7ff14ca37892b00
 ---
 
 # Получение комментариев к отзыву
 
 `POST /v2/businesses/{businessId}/goods-feedback/comments`
 
-{% include notitle [access](../../_auto/method_scopes/getGoodsFeedbackComments.md) %} Возвращает комментарии к отзыву, кроме: * тех, которые удалили пользователи или Маркет; * комментариев к удаленным отзывам. Идентификатор родительского комментария `parentId` возвращается только для ответов на другие комментарии, но не для ответов на отзывы. {% if audience == "partner" %} {% note tip "Вы также можете настроить API-уведомления" %} Маркет отправит вам [запрос](../../push-notifications/reference/sendNotification.md), когда появится новый комментарий. А полную информацию о нем можно получить с помощью этого метода. [{#T}](../../push-notifications/index.md) {% endnote %} {% endif %} Результаты возвращаются постранично. Комментарии расположены в порядке публикации, поэтому вы можете передавать определенный идентификатор страницы в `pageToken`, если вы получали его ранее. {% include notitle [limit](../../_auto/method_limits/getGoodsFeedbackComments.md) %}
+{% include notitle [access](../../_auto/method_scopes/getGoodsFeedbackComments.md) %}
+
+Возвращает комментарии к отзыву, кроме:
+
+ * тех, которые удалили пользователи или Маркет;
+ * комментариев к удаленным отзывам.
+
+Идентификатор родительского комментария `parentId` возвращается только для ответов на другие комментарии, но не для ответов на отзывы.
+
+{% if audience == "partner" %}
+
+{% note tip "Вы также можете настроить API-уведомления" %}
+
+Маркет отправит вам [запрос](../../push-notifications/reference/sendNotification.md), когда появится новый комментарий. А полную информацию о нем можно получить с помощью этого метода.
+
+[{#T}](../../push-notifications/index.md)
+
+{% endnote %}
+
+{% endif %}
+
+Результаты возвращаются постранично.
+
+Комментарии расположены в порядке публикации, поэтому вы можете передавать определенный идентификатор страницы в `pageToken`, если вы получали его ранее.
+
+{% include notitle [limit](../../_auto/method_limits/getGoodsFeedbackComments.md) %}
 
 ## Параметры
 
@@ -28,8 +53,8 @@ content_sha: c6f34b05f9a802f3
 |---|---|---|---|---|
 | `businessId` | path | integer<int64> | да | Идентификатор кабинета. {% if audience == "partner" %} Чтобы его узнать, воспользуйтесь запросом [GET v2/campaigns](../../reference/campaigns/getCampaigns.md). ℹ️ [Что такое кабинет и магазин на Маркете](https://yandex.ru/support/marketplace/account/introduction.html) {% endif %} |
 | `pageToken` | query | string | нет | Идентификатор страницы c результатами. Если параметр не указан, возвращается первая страница. Передавайте значение выходного параметра `nextPageToken`, полученное при последнем запросе. |
-| `limit` | query | integer<int32> | нет | {{ limit-param-description }} |
-| `sourceType` | query | string (SELLER, ADVERTISER) | нет | Признак типа кабинета, от имени которого вызывается метод: {% if audience == "partner" %} - `SELLER` — продавец. {% endif %} - `ADVERTISER` — рекламодатель. {% if audience == "advertiser" %} {% note info "Обязательно указывайте sourceType=ADVERTISER в каждом запросе." %} {% endnote %} {% endif %} |
+| `limit` | query | integer<int32> | нет | — |
+| `sourceType` | query | string (SELLER, ADVERTISER) | нет | Признак типа кабинета, от имени которого вызывается метод: {% if audience == "partner" %} - `SELLER` — продавец. {% endif %} - `ADVERTISER` — рекламодатель. {% if audience == "advertiser" %} {% note info "Обязательно указывайте sourceType=ADVERTISER в каждом запросе." %}   {% endnote %} {% endif %} |
 
 ## Запрос
 

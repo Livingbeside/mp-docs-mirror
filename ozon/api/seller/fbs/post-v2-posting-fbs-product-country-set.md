@@ -9,7 +9,7 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: 33f62680fcff6c21
+content_sha: 6c099769e0e9fb8b
 ---
 
 # Добавить информацию о стране-изготовителе товара
@@ -22,16 +22,16 @@ content_sha: 33f62680fcff6c21
 
 **Тело запроса** (`application/json`):
 
-- `country_iso_code` — string **обязательный**. Двухбуквенный код добавляемой страны по стандарту ISO_3166-1. Список доступных стран-изготовителей и их ISO коды можно получить с помощью метода [/v2/posting/fbs/product/country/list](#operation/PostingAPI_ListCountryProductFbsPostingV2).
 - `posting_number` — string **обязательный**. Номер отправления.
 - `product_id` — integer<int64> **обязательный**. Идентификатор товара в системе Ozon — `product_id`.
+- `country_iso_code` — string **обязательный**. Двухбуквенный код добавляемой страны по стандарту ISO_3166-1. Список доступных стран-изготовителей и их ISO коды можно получить с помощью метода [/v2/posting/fbs/product/country/list](#operation/PostingAPI_ListCountryProductFbsPostingV2).
 
 ## Ответы
 
 **200** — Страна-изготовитель добавлена
 
-- `is_gtd_needed` — boolean. Признак того, что необходимо передать номер грузовой таможенной декларации (ГТД) для продукта и отправления.
 - `product_id` — integer<int64>. Идентификатор товара в системе Ozon — `product_id`.
+- `is_gtd_needed` — boolean. Признак того, что необходимо передать номер грузовой таможенной декларации (ГТД) для продукта и отправления.
 
 **default** — Ошибка
 

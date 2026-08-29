@@ -14,14 +14,18 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: 221ee56e00292c01
+content_sha: 4056205d034a4061
 ---
 
 # Удаление товаров из каталога
 
 `POST /v2/businesses/{businessId}/offer-mappings/delete`
 
-{% include notitle [access](../../_auto/method_scopes/deleteOffers.md) %} Удаляет товары из каталога. {% include notitle [limit](../../_auto/method_limits/deleteOffers.md) %}
+{% include notitle [access](../../_auto/method_scopes/deleteOffers.md) %}
+
+Удаляет товары из каталога.
+
+{% include notitle [limit](../../_auto/method_limits/deleteOffers.md) %}
 
 ## Параметры
 

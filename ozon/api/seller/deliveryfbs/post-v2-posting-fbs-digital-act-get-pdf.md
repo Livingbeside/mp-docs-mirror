@@ -9,7 +9,7 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: true
-content_sha: 20c5dfe039a1d503
+content_sha: d0bb2f6b225fac5d
 ---
 
 # Получить лист отгрузки по перевозке
@@ -36,16 +36,16 @@ content_sha: 20c5dfe039a1d503
 
 **Тело запроса** (`application/json`):
 
-- `doc_type` — None<string>. Тип электронного документа: - `act_of_acceptance` — лист отгрузки, - `act_of_mismatch` — акт о расхождениях, - `act_of_excess` — акт об излишках, - `waybill` — транспортная накладная.
 - `id` — integer<int64> **обязательный**. Номер задания на формирование документов (также идентификатор перевозки) из метода [POST /v2/posting/fbs/act/create](#operation/PostingAPI_PostingFBSActCreate).
+- `doc_type` — None<string>. Тип электронного документа: - `act_of_acceptance` — лист отгрузки, - `act_of_mismatch` — акт о расхождениях, - `act_of_excess` — акт об излишках, - `waybill` — транспортная накладная.
 
 ## Ответы
 
 **200** — Файл с документом
 
-- `content_type` — string. Тип файла.
 - `file_content` — string<byte>. Содержание файла в бинарном виде.
 - `file_name` — string. Название файла.
+- `content_type` — string. Тип файла.
 
 **400** — Неверный параметр
 

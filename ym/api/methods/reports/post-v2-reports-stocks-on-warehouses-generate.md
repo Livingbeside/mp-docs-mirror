@@ -14,14 +14,55 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: a3312e54de2b5b54
+content_sha: 87dba72471b4233b
 ---
 
 # Отчет по остаткам на складах
 
 `POST /v2/reports/stocks-on-warehouses/generate`
 
-{% include notitle [access](../../_auto/method_scopes/generateStocksOnWarehousesReport.md) %} Запускает генерацию отчета по остаткам на складах. [Что это за отчет](https://yandex.ru/support/marketplace/ru/storage/logistics#remains-history) {% note warning "Когда использовать этот метод" %} Метод актуален: * для моделей FBY и LaaS; * для моделей FBS, DBS и Экспресс, если в кабинете есть группы складов. Если в кабинете нет групп складов и вы работаете с моделями FBS, DBS или Экспресс, используйте метод [POST v3/businesses/{businessId}/reports/stocks/generate](../../reference/reports/generateStocksReport.md). [Что такое группы складов и зачем они нужны](https://yandex.ru/support/marketplace/assortment/operations/stocks.html#unified-stocks). {% endnote %} **Какая информация вернется:** * Для моделей FBY и LaaS, если указать `campaignId`, — об остатках на складах Маркета. * Для остальных моделей, если указать `campaignId`, — об остатках на соответствующем складе магазина. * Для остальных моделей, если указать `businessId`, — об остатках на всех складах магазинов в кабинете, кроме FBY и LaaS. Используйте фильтр `campaignIds`, чтобы указать определенные магазины. ⚠️ Не передавайте одновременно `campaignId` и `businessId`. Узнать статус генерации и получить ссылку на готовый отчет можно с помощью запроса [GET v2/reports/info/{reportId}](../../reference/reports/getReportInfo.md). {% list tabs %} - Склад Маркета {% include notitle [reports](../../_auto/reports/stocks/stocks_on_warehouses.md) %} - Склад магазина {% include notitle [reports](../../_auto/reports/offers/mass/mass_shared_stocks_business_csv_config.md) %} - Все склады магазинов в кабинете, кроме FBY и LaaS {% include notitle [reports](../../_auto/reports/offers/stocks_business_config.md) %} {% endlist %} {% include notitle [limit](../../_auto/method_limits/generateStocksOnWarehousesReport.md) %}
+{% include notitle [access](../../_auto/method_scopes/generateStocksOnWarehousesReport.md) %}
+
+Запускает генерацию отчета по остаткам на складах. [Что это за отчет](https://yandex.ru/support/marketplace/ru/storage/logistics#remains-history)
+
+{% note warning "Когда использовать этот метод" %}
+
+Метод актуален:
+
+* для моделей FBY и LaaS;
+* для моделей FBS, DBS и Экспресс, если в кабинете есть группы складов.
+
+Если в кабинете нет групп складов и вы работаете с моделями FBS, DBS или Экспресс, используйте метод [POST v3/businesses/{businessId}/reports/stocks/generate](../../reference/reports/generateStocksReport.md). [Что такое группы складов и зачем они нужны](https://yandex.ru/support/marketplace/assortment/operations/stocks.html#unified-stocks).
+
+{% endnote %}
+
+**Какая информация вернется:**
+
+* Для моделей FBY и LaaS, если указать `campaignId`, — об остатках на складах Маркета.
+* Для остальных моделей, если указать `campaignId`, — об остатках на соответствующем складе магазина.
+* Для остальных моделей, если указать `businessId`, — об остатках на всех складах магазинов в кабинете, кроме FBY и LaaS. Используйте фильтр `campaignIds`, чтобы указать определенные магазины.
+
+⚠️ Не передавайте одновременно `campaignId` и `businessId`.
+
+Узнать статус генерации и получить ссылку на готовый отчет можно с помощью запроса [GET v2/reports/info/{reportId}](../../reference/reports/getReportInfo.md).
+
+{% list tabs %}
+
+- Склад Маркета
+
+ {% include notitle [reports](../../_auto/reports/stocks/stocks_on_warehouses.md) %}
+
+- Склад магазина
+
+ {% include notitle [reports](../../_auto/reports/offers/mass/mass_shared_stocks_business_csv_config.md) %}
+
+- Все склады магазинов в кабинете, кроме FBY и LaaS
+
+ {% include notitle [reports](../../_auto/reports/offers/stocks_business_config.md) %}
+
+{% endlist %}
+
+{% include notitle [limit](../../_auto/method_limits/generateStocksOnWarehousesReport.md) %}
 
 ## Параметры
 

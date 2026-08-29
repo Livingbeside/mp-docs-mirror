@@ -9,7 +9,7 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: c13ef0052885979c
+content_sha: a5f590320f72f421
 ---
 
 # Удаление отгрузки
@@ -33,8 +33,8 @@ content_sha: c13ef0052885979c
 
 **200** — Информация об отправлении
 
-- `carriage_status` — string. Статус отгрузки.
 - `error` — string. Описание ошибки.
+- `carriage_status` — string. Статус отгрузки.
 
 **400** — Неверный параметр
 

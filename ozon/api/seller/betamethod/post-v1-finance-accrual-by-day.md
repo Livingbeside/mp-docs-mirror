@@ -9,7 +9,7 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: 80f6f7425fcc2dc1
+content_sha: 258da3a5d75e455b
 ---
 
 # Получить начисления за день
@@ -39,7 +39,6 @@ content_sha: 80f6f7425fcc2dc1
 **200** — Начисления за день
 
 - `accruals` — array[object]. Список начислений по отправлению.
-  - `accrual_id` — integer<int64>. Идентификатор начисления.
   - `accrued_category` — string (UNSPECIFIED, POSTING, ITEM, NON_ITEM, CONTAINER_FEES). Тип начисления: - `UNSPECIFIED` — не определён; - `POSTING` — начисление по отправлению; - `ITEM` — начисление по товару; - `NON_ITEM` — начисление по продавцу без привязки к товару; - `CONTAINER_FEES` — начисление по контейнеру. По умолчанию: `UNSPECIFIED`.
   - `container_fees` — object. Начисления по контейнеру.
     - `fees` — array[object]. Начисления.
@@ -101,6 +100,7 @@ content_sha: 80f6f7425fcc2dc1
   - `total_amount` — object. Общая сумма начислений.
     - `amount` — string. Сумма.
     - `currency` — string. Валюта.
+  - `accrual_id` — integer<int64>. Идентификатор начисления.
   - `unit_number` — string. Идентификатор заказа или услуги. Например, номер отправления или номер рекламного договора.
 - `last_id` — string. Идентификатор последнего значения на странице. Срок жизни идентификатора — 15 минут.
 

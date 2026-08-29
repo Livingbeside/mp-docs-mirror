@@ -9,7 +9,7 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: 43fb7c3ab021502e
+content_sha: 745bc4e0313a1934
 ---
 
 # Список доступных перевозок
@@ -52,8 +52,8 @@ content_sha: 43fb7c3ab021502e
     - `status` — string. Тип ошибки: - `warning` — предупреждение; - `critical` — критическая ошибка.
   - `first_mile_type` — string. Тип первой мили.
   - `has_entrusted_acceptance` — boolean. Признак доверительной приёмки. `true`, если доверительная приёмка включена на складе.
-  - `mandatory_packaged_count` — integer<int32>. Количество собранных отправлений.
   - `mandatory_postings_count` — integer<int32>. Количество отправлений, которые нужно собрать.
+  - `mandatory_packaged_count` — integer<int32>. Количество собранных отправлений.
   - `recommended_time_local` — string. Рекомендуемое местное время отгрузки на пункт приёма заказов.
   - `recommended_time_utc_offset_in_minutes` — number<int32>. Смещение часового пояса рекомендуемого времени отгрузки от UTC-0 в минутах.
   - `tpl_provider_icon_url` — string. Ссылка на иконку службы доставки.

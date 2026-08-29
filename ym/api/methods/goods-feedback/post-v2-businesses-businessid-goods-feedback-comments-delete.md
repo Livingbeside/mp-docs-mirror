@@ -13,21 +13,25 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: a80af85f71921f70
+content_sha: 30fa2c62be98a144
 ---
 
 # Удаление комментария к отзыву
 
 `POST /v2/businesses/{businessId}/goods-feedback/comments/delete`
 
-{% include notitle [access](../../_auto/method_scopes/deleteGoodsFeedbackComment.md) %} Удаляет комментарий магазина. {% include notitle [limit](../../_auto/method_limits/deleteGoodsFeedbackComment.md) %}
+{% include notitle [access](../../_auto/method_scopes/deleteGoodsFeedbackComment.md) %}
+
+Удаляет комментарий магазина.
+
+{% include notitle [limit](../../_auto/method_limits/deleteGoodsFeedbackComment.md) %}
 
 ## Параметры
 
 | Имя | Где | Тип | Обяз. | Описание |
 |---|---|---|---|---|
 | `businessId` | path | integer<int64> | да | Идентификатор кабинета. {% if audience == "partner" %} Чтобы его узнать, воспользуйтесь запросом [GET v2/campaigns](../../reference/campaigns/getCampaigns.md). ℹ️ [Что такое кабинет и магазин на Маркете](https://yandex.ru/support/marketplace/account/introduction.html) {% endif %} |
-| `sourceType` | query | string (SELLER, ADVERTISER) | нет | Признак типа кабинета, от имени которого вызывается метод: {% if audience == "partner" %} - `SELLER` — продавец. {% endif %} - `ADVERTISER` — рекламодатель. {% if audience == "advertiser" %} {% note info "Обязательно указывайте sourceType=ADVERTISER в каждом запросе." %} {% endnote %} {% endif %} |
+| `sourceType` | query | string (SELLER, ADVERTISER) | нет | Признак типа кабинета, от имени которого вызывается метод: {% if audience == "partner" %} - `SELLER` — продавец. {% endif %} - `ADVERTISER` — рекламодатель. {% if audience == "advertiser" %} {% note info "Обязательно указывайте sourceType=ADVERTISER в каждом запросе." %}   {% endnote %} {% endif %} |
 
 ## Запрос
 
