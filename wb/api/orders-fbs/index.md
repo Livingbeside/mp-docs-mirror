@@ -2,9 +2,9 @@
 title: Заказы FBS — все методы
 api: wb-orders-fbs
 spec_version: order
-operations: 40
+operations: 43
 source: "https://dev.wildberries.ru/docs/openapi/orders-fbs"
-content_sha: 73dc1913c9ca2721
+content_sha: f6f93f01acf8a345
 ---
 
 # Заказы FBS
@@ -21,7 +21,7 @@ content_sha: 73dc1913c9ca2721
 
  Узнать больше о заказах FBS можно в [справочном центре](https://seller.wildberries.ru/instructions/ru/ru/category/b3e60238-fd4c-49ce-8668-ff688725a12d)
 
-Версия спеки: `order` · методов: **40** · разделов справки: **6**
+Версия спеки: `order` · методов: **43** · разделов справки: **6**
 
 Источник: https://dev.wildberries.ru/docs/openapi/orders-fbs
 
@@ -34,6 +34,7 @@ content_sha: 73dc1913c9ca2721
 | `GET` | `/api/marketplace/v3/fbs/orders/archive` | Сборочные задания FBS | [Получить список архивных сборочных заданий](sborochnye-zadaniya-fbs/get-api-marketplace-v3-fbs-orders-archive.md) |
 | `GET` | `/api/marketplace/v3/fbs/settings/autoreturns/subcategories/restricted` | autoreturnSettings | [Получить предметы, которые не хранятся на складах WB](autoreturnsettings/get-api-marketplace-v3-fbs-settings-autoreturns-subcategories-restricted.md) |
 | `GET` | `/api/marketplace/v3/fbs/settings/autoreturns` | autoreturnSettings | [Получить настройки автовозврата продавца](autoreturnsettings/get-api-marketplace-v3-fbs-settings-autoreturns.md) |
+| `GET` | `/api/marketplace/v3/fbs/shipping-points` | Поставки FBS | [Получить список пунктов отгрузки поставок](postavki-fbs/get-api-marketplace-v3-fbs-shipping-points.md) |
 | `GET` | `/api/marketplace/v3/supplies/{supplyId}/order-ids` | Поставки FBS | [Получить ID сборочных заданий поставки{{ /api/marketplace/v3/supplies/{supplyId}/order-ids }}](postavki-fbs/get-api-marketplace-v3-supplies-supplyid-order-ids.md) |
 | `GET` | `/api/v3/orders/new` | Сборочные задания FBS | [Получить список новых сборочных заданий](sborochnye-zadaniya-fbs/get-api-v3-orders-new.md) |
 | `GET` | `/api/v3/orders` | Сборочные задания FBS | [Получить информацию о сборочных заданиях](sborochnye-zadaniya-fbs/get-api-v3-orders.md) |
@@ -46,6 +47,8 @@ content_sha: 73dc1913c9ca2721
 | `GET` | `/api/v3/supplies` | Поставки FBS | [Получить список поставок](postavki-fbs/get-api-v3-supplies.md) |
 | `PATCH` | `/api/marketplace/v3/fbs/settings/autoreturns/items` | autoreturnSettings | [Обновить настройки автовозврата товаров](autoreturnsettings/patch-api-marketplace-v3-fbs-settings-autoreturns-items.md) |
 | `PATCH` | `/api/marketplace/v3/fbs/settings/autoreturns` | autoreturnSettings | [Обновить настройки автовозврата продавца](autoreturnsettings/patch-api-marketplace-v3-fbs-settings-autoreturns.md) |
+| `PATCH` | `/api/marketplace/v3/fbs/supplies/shipping-method` | Поставки FBS | [Установить параметры отгрузки поставок](postavki-fbs/patch-api-marketplace-v3-fbs-supplies-shipping-method.md) |
+| `PATCH` | `/api/marketplace/v3/fbs/supplies/waybill` | Поставки FBS | [Установить ID ЭТрН поставок](postavki-fbs/patch-api-marketplace-v3-fbs-supplies-waybill.md) |
 | `PATCH` | `/api/marketplace/v3/supplies/{supplyId}/orders` | Поставки FBS | [Добавить сборочные задания к поставке{{ /api/marketplace/v3/supplies/{supplyId}/orders }}](postavki-fbs/patch-api-marketplace-v3-supplies-supplyid-orders.md) |
 | `PATCH` | `/api/v3/orders/{orderId}/cancel` | Сборочные задания FBS | [Отменить сборочное задание{{ /api/v3/orders/{orderId}/cancel }}](sborochnye-zadaniya-fbs/patch-api-v3-orders-orderid-cancel.md) |
 | `PATCH` | `/api/v3/supplies/{supplyId}/deliver` | Поставки FBS | [Передать поставку в доставку{{ /api/v3/supplies/{supplyId}/deliver }}](postavki-fbs/patch-api-v3-supplies-supplyid-deliver.md) |

@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /work-with-byuers/skryt-otzyv
 source: "https://seller-edu.ozon.ru/libra/work-with-byuers/skryt-otzyv"
-updated: "2026-08-07 07:04:14"
+updated: "2026-08-31 10:35:58"
 doc_id: 47605
-fetched_at: "2026-08-28T12:11:14Z"
-content_sha: 64e341b3bb654228
+fetched_at: "2026-09-01T01:56:12Z"
+content_sha: cdfec8bafa8c22e0
 ---
 
 # Скрыть отзыв
@@ -33,3 +33,7 @@ _Главная / Работа с покупателями_
 1. Перейдите в раздел **[Товары → Отзывы покупателей](https://seller.ozon.ru/app/reviews)** и откройте отзыв, который хотите скрыть.
 2. Нажмите **Скрыть.**
 3. Выберите причину и кликните **Скрыть отзыв **— уберем отзыв из карточки и личного кабинета.
+
+# Видео «Подписка: управление отзывами»
+
+#

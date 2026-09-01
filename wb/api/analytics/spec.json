@@ -5685,8 +5685,7 @@
           },
           {
             "description": "Параметры запроса об остатках по складам"
-          },
-          {}
+          }
         ]
       },
       "TableShippingOfficeResponse": {
@@ -5714,8 +5713,7 @@
           },
           {
             "description": "Параметры запроса об остатках по размерам товара"
-          },
-          {}
+          }
         ]
       },
       "TableSizeResponse": {
@@ -6399,9 +6397,6 @@
           },
           "401": {
             "$ref": "#/components/responses/401"
-          },
-          "402": {
-            "$ref": "#/components/responses/402"
           },
           "403": {
             "content": {

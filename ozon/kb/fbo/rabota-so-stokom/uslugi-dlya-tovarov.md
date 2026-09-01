@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /fbo/rabota-so-stokom/uslugi-dlya-tovarov
 source: "https://seller-edu.ozon.ru/libra/fbo/rabota-so-stokom/uslugi-dlya-tovarov"
-updated: "2026-07-14 14:32:20"
+updated: "2026-08-31 08:50:40"
 doc_id: 53281
-fetched_at: "2026-08-28T12:11:15Z"
-content_sha: 5d988767716c5beb
+fetched_at: "2026-09-01T01:56:12Z"
+content_sha: 44e5b90258484782
 ---
 
 # Услуги для товаров
@@ -28,6 +28,8 @@ _Главная / Продажа со склада Ozon (FBO) / Работа с�
 
 Услуга доступна только для [сортируемых ](https://seller-edu.ozon.ru/libra/fbo/process-details/gruzomesta-v-postavke#%D0%B7%D0%BE%D0%BD%D1%8B-%D1%80%D0%B0%D0%B7%D0%BC%D0%B5%D1%89%D0%B5%D0%BD%D0%B8%D1%8F)товаров на складах:
 
+Воронеж РФЦ;
+
 Гривно РФЦ;
 
 Домодедово РФЦ;
@@ -41,6 +43,8 @@ _Главная / Продажа со склада Ozon (FBO) / Работа с�
 Пушкино-1 РФЦ;
 
 Пушкино-2 РФЦ;
+
+Ростов-на-Дону РФЦ;
 
 Софьино РФЦ;
 

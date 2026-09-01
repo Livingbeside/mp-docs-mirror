@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /ceny-i-akcii/akcii-skidki-i-kupony/akcii-ozon/prices-compaigns-autoapplication
 source: "https://seller-edu.ozon.ru/libra/ceny-i-akcii/akcii-skidki-i-kupony/akcii-ozon/prices-compaigns-autoapplication"
-updated: "2026-08-21 15:36:09"
+updated: "2026-08-31 10:47:17"
 doc_id: 24729
-fetched_at: "2026-08-28T12:11:15Z"
-content_sha: e597f179394d84b8
+fetched_at: "2026-09-01T01:56:13Z"
+content_sha: 74eaf2ecb2496689
 ---
 
 # Автоприменение акций
@@ -21,6 +21,8 @@ _Главная / Цены и акции / Акции, скидки и пром�
 При подключённом автоприменении пересчитываем акционные цены на товары каждый день. Если после пересчёта акционная цена окажется выше минимальной цены — товар будет добавлен в акцию или останется в ней, если уже участвовал в акции ранее.
 
 Если у товара активирована настройка автодобавления, можем автоматически добавлять ваши товары в акции от Ozon даже при отключённом автоприменении акций. [Подробнее об автодобавлении товаров в акции](/ceny-i-akcii/akcii-skidki-i-kupony/akcii-ozon/autodobalenie-tovarov-v-akcii)
+
+# Видео «Как установить минимальную цену для акций»
 
 # Настроить автоприменение акций
 

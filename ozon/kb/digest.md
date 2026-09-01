@@ -6,8 +6,8 @@ path: /digest
 source: "https://seller-edu.ozon.ru/libra/digest"
 updated: "2026-01-16 15:26:37"
 doc_id: 34908
-fetched_at: "2026-08-28T12:11:14Z"
-content_sha: fdb25a7125ba3cb9
+fetched_at: "2026-09-01T01:56:12Z"
+content_sha: ba6492d10a325013
 ---
 
 # Дайджест изменений
@@ -63,3 +63,4 @@ _Главная_
 - [Что нового в Базе знаний: 3-7 августа](https://seller-edu.ozon.ru/libra/digest/chto-novogo-3-7-avgusta)
 - [Что нового в Базе знаний: 10-14 августа](https://seller-edu.ozon.ru/libra/digest/chto-novogo-10-14-avg)
 - [Что нового в Базе знаний: 17-21 августа](https://seller-edu.ozon.ru/libra/digest/chto-novogo-17-21-avg)
+- [Что нового в Базе знаний: 24-28 августа](https://seller-edu.ozon.ru/libra/digest/chto-novogo-v-baze-znanii-24-28-avgusta)

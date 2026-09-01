@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /work-with-byuers/obzor-otzyvov-o-tovare
 source: "https://seller-edu.ozon.ru/libra/work-with-byuers/obzor-otzyvov-o-tovare"
-updated: "2026-04-01 07:47:04"
+updated: "2026-08-31 10:36:34"
 doc_id: 22943
-fetched_at: "2026-08-28T12:11:14Z"
-content_sha: a31b622ec587d7dc
+fetched_at: "2026-09-01T01:56:12Z"
+content_sha: fd213a5b33fea478
 ---
 
 # Обзор отзывов о товаре
@@ -87,3 +87,7 @@ _Главная / Работа с покупателями_
 В отзывах нет конкретики — например, покупатели пишут «Подошло», «Все нормально». Из таких отзывов нельзя понять особенности товара.
 
 Отзывы были опубликованы до периода, за который смотрите обзор.
+
+# Видео «Подписка: управление отзывами»
+
+#

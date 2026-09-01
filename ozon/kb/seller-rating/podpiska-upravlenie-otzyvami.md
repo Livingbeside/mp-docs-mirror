@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /seller-rating/podpiska-upravlenie-otzyvami
 source: "https://seller-edu.ozon.ru/libra/seller-rating/podpiska-upravlenie-otzyvami"
-updated: "2026-07-07 08:39:20"
+updated: "2026-08-31 10:33:54"
 doc_id: 67083
-fetched_at: "2026-08-28T12:11:14Z"
-content_sha: 58c3b640822e23db
+fetched_at: "2026-09-01T01:56:12Z"
+content_sha: bf9677b270b2f85a
 ---
 
 # Подписка «Управление отзывами»
@@ -107,5 +107,7 @@ _Главная / Подписки_
 После окончания периода подписки — отключим подписку, придётся подключать её заново.
 
 [Как пополнить баланс](https://seller-edu.ozon.ru/libra/finances-documents/calculations-documents/zadolzhennost#%D0%BA%D0%B0%D0%BA-%D0%BF%D0%BE%D0%B3%D0%B0%D1%81%D0%B8%D1%82%D1%8C-%D0%B7%D0%B0%D0%B4%D0%BE%D0%BB%D0%B6%D0%B5%D0%BD%D0%BD%D0%BE%D1%81%D1%82%D1%8C:~:text=%D0%9F%D0%BE%D0%BF%D0%BE%D0%BB%D0%BD%D0%B8%D1%82%D1%8C%20%D0%B1%D0%B0%D0%BB%D0%B0%D0%BD%D1%81%20%D0%B8%D0%B7%20%D0%BB%D0%B8%D1%87%D0%BD%D0%BE%D0%B3%D0%BE%20%D0%BA%D0%B0%D0%B1%D0%B8%D0%BD%D0%B5%D1%82%D0%B0)
+
+# Видео «Подписка: управление отзывами»
 
 # Что ещё полезно знать

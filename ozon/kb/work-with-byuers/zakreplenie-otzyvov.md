@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /work-with-byuers/zakreplenie-otzyvov
 source: "https://seller-edu.ozon.ru/libra/work-with-byuers/zakreplenie-otzyvov"
-updated: "2026-06-10 13:57:16"
+updated: "2026-08-31 10:35:16"
 doc_id: 67350
-fetched_at: "2026-08-28T12:11:14Z"
-content_sha: 685c89fa1a26c628
+fetched_at: "2026-09-01T01:56:12Z"
+content_sha: 449a8e3c92fde6e3
 ---
 
 # Закрепление отзыва по подписке
@@ -19,6 +19,8 @@ _Главная / Работа с покупателями_
 Информация в этой статье актуальна с 1 апреля 2026 года. Подробнее о том, как работала услуга до 31 марта 2026 года, рассказываем в [статье](/work-with-byuers/pinned-reviews).
 
 Закреплять отзывы можно только с подпиской [Premium Pro](https://seller-edu.ozon.ru/libra/seller-rating/podpiska-premium-pro) или [«Управление отзывами»](https://seller-edu.ozon.ru/seller-rating/podpiska-upravlenie-otzyvami). Отзывы, которые были закреплены до 31 марта 2026 года без подписки, открепим автоматически.
+
+# Видео «Подписка: управление отзывами»
 
 # Что такое закрепление отзыва
 

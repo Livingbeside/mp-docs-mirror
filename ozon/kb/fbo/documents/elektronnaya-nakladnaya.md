@@ -1,16 +1,16 @@
 ---
-title: Электронная транспортная накладная (ЭТрН)
+title: Электронная транспортная накладная (ЭТрН) для FBO
 marketplace: ozon
 kind: article
 path: /fbo/documents/elektronnaya-nakladnaya
 source: "https://seller-edu.ozon.ru/libra/fbo/documents/elektronnaya-nakladnaya"
-updated: "2026-08-28 11:01:02"
+updated: "2026-08-31 10:51:09"
 doc_id: 83396
-fetched_at: "2026-08-28T12:11:15Z"
-content_sha: 334bc25f33a7c485
+fetched_at: "2026-09-01T01:56:12Z"
+content_sha: bb877ea74b3a7a17
 ---
 
-# Электронная транспортная накладная (ЭТрН)
+# Электронная транспортная накладная (ЭТрН) для FBO
 
 _Главная / Продажа со склада Ozon (FBO) / Документы при поставках_
 

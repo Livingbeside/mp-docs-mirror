@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /fbo/warehouses/adresa-skladov-fbo
 source: "https://seller-edu.ozon.ru/libra/fbo/warehouses/adresa-skladov-fbo"
-updated: "2026-08-28 08:28:42"
+updated: "2026-08-31 13:37:52"
 doc_id: 13009
-fetched_at: "2026-08-28T12:11:15Z"
-content_sha: bcc3575415d93a0b
+fetched_at: "2026-09-01T01:56:12Z"
+content_sha: df197368de2a827c
 ---
 
 # Адреса и реквизиты складов и пунктов приёма Ozon
@@ -475,7 +475,7 @@ _Главная / Продажа со склада Ozon (FBO) / Склады, а
 
 **Р/С:** 40702810600014252743 в банке АО «Юникредит Банк», БИК 044525545, к/с 30101810300000000545
 
-**Телефон:** +7 981 450-05-83
+**Телефон:** +7 911 930-70-74
 
 ## Краснодар-2 РФЦ
 

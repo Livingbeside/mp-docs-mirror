@@ -4,8 +4,8 @@ api: wildberries
 kind: changelog
 source: "https://dev.wildberries.ru/release-notes"
 window: последние записи, страница отдаёт не всю историю
-fetched_at: "2026-08-31T01:52:04Z"
-content_sha: 6c4b65a6482425ee
+fetched_at: "2026-09-01T02:00:33Z"
+content_sha: 36b265cf36cda3e2
 ---
 
 # Журнал изменений WB API
@@ -16,7 +16,7 @@ content_sha: 6c4b65a6482425ee
 
 2026
 
-Авг
+Сен
 
 Пн
 
@@ -66,6 +66,27 @@ content_sha: 6c4b65a6482425ee
 
 Август
 2026
+
+Новое
+
+## 31.08.2026
+
+Критичное изменение
+
+Заказы FBS
+
+Поставки FBS
+
+Новые методы Поставок FBS
+
+С **1 сентября** с помощью WB API продавцы из РФ смогут указывать параметры отгрузки поставок в РФ. Для этого добавили методы:
+
+- Получить список мест отгрузки поставок — [GET /api/marketplace/v3/fbs/shipping-points](/docs/openapi/orders-fbs#tag/Postavki-FBS/operation/getV3FbsShippingPoints)
+- Установить параметры отгрузки поставок — [PATCH /api/marketplace/v3/fbs/supplies/shipping-method](/docs/openapi/orders-fbs#tag/Postavki-FBS/operation/patchV3FbsSuppliesShippingMethod)
+
+Для доставки транспортной компанией можно будет указывать ID ЭТрН — электронной транспортной накладной. Чтобы добавить ID ЭТрН в поставку, нужно будет использовать метод [PATCH /api/v3/public/supplies/waybill](/docs/openapi/orders-fbs#tag/Postavki-FBS/operation/patchV3FbsSuppliesWaybill). Пока метод находится в доработке, о его доступности сообщим дополнительно.
+
+С **1 октября** добавление параметров отгрузки и ID ЭТрН станет обязательным. Без этого нельзя будет перевести поставку в доставку — вы получите ошибку `409` в методе [PATCH /api/v3/supplies/ {supplyId} /deliver](/docs/openapi/orders-fbs#tag/Postavki-FBS/paths/~1api~1v3~1supplies~1%7BsupplyId%7D~1deliver/patch).
 
 Новое
 
@@ -256,6 +277,24 @@ DBS
 
 ## 30.07.2026
 
+Заказы FBS
+
+Настройки автовозврата
+
+Настройки автовозврата для заказов FBS
+
+Добавили методы для работы с [автовозвратами FBS](/docs/openapi/orders-fbs#tag/autoreturnSettings) для малогабаритных товаров — `"cargoType":1` — по предложениям пользователей в [Сообществе WB API](/forum/topics/2079/publichnye-idei-i-predlozheniia-wb-api). Теперь с помощью WB API вы можете:
+
+- Получить настройки автовозврата продавца — [GET /api/marketplace/v3/fbs/settings/autoreturns](/docs/openapi/orders-fbs#tag/autoreturnSettings/operation/getMarketplaceV3FbsSettingsAutoreturns)
+- Обновить настройки автовозврата продавца — [PATCH /api/marketplace/v3/fbs/settings/autoreturns](/docs/openapi/orders-fbs#tag/autoreturnSettings/operation/patchMarketplaceV3FbsSettingsAutoreturns)
+- Получить настройки автовозврата товаров — [POST /api/marketplace/v3/fbs/settings/autoreturns/items](/docs/openapi/orders-fbs#tag/autoreturnSettings/operation/postMarketplaceV3FbsSettingsAutoreturnsItems)
+- Обновить настройки автовозврата товаров — [PATCH /api/marketplace/v3/fbs/settings/autoreturns/items](/docs/openapi/orders-fbs#tag/autoreturnSettings/operation/patchMarketplaceV3FbsSettingsAutoreturnsItems)
+- Получить предметы, которые не хранятся на складах WB — [GET /api/marketplace/v3/fbs/settings/autoreturns/subcategories/restricted](/docs/openapi/orders-fbs#tag/autoreturnSettings/operation/getMarketplaceV3FbsSettingsAutoreturnsSubcategoriesRestricted)
+
+Новое
+
+## 30.07.2026
+
 Критичное изменение
 
 Работа с товарами
@@ -271,24 +310,6 @@ DBS
 - Получить список складов WB — [GET /api/v3/offices](/docs/openapi/work-with-products#tag/Sklady-prodavca/paths/~1api~1v3~1offices/get) — в ответе теперь не будут возвращаться СГТ-склады WB
 - Создать склад продавца — [POST /api/v3/warehouses](/docs/openapi/work-with-products#tag/Sklady-prodavca/paths/~1api~1v3~1warehouses/post) — при создании СГТ-склада вы получите ошибку `404`
 - Обновить склад продавца — [PUT /api/v3/warehouses/ {warehouseId}](/docs/openapi/work-with-products#tag/Sklady-prodavca/paths/~1api~1v3~1warehouses~1%7BwarehouseId%7D/put) — при изменении данных СГТ-склада вы получите ошибку `404`
-
-Новое
-
-## 30.07.2026
-
-Заказы FBS
-
-Настройки автовозврата
-
-Настройки автовозврата для заказов FBS
-
-Добавили методы для работы с [автовозвратами FBS](/docs/openapi/orders-fbs#tag/autoreturnSettings) для малогабаритных товаров — `"cargoType":1` — по предложениям пользователей в [Сообществе WB API](/forum/topics/2079/publichnye-idei-i-predlozheniia-wb-api). Теперь с помощью WB API вы можете:
-
-- Получить настройки автовозврата продавца — [GET /api/marketplace/v3/fbs/settings/autoreturns](/docs/openapi/orders-fbs#tag/autoreturnSettings/operation/getMarketplaceV3FbsSettingsAutoreturns)
-- Обновить настройки автовозврата продавца — [PATCH /api/marketplace/v3/fbs/settings/autoreturns](/docs/openapi/orders-fbs#tag/autoreturnSettings/operation/patchMarketplaceV3FbsSettingsAutoreturns)
-- Получить настройки автовозврата товаров — [POST /api/marketplace/v3/fbs/settings/autoreturns/items](/docs/openapi/orders-fbs#tag/autoreturnSettings/operation/postMarketplaceV3FbsSettingsAutoreturnsItems)
-- Обновить настройки автовозврата товаров — [PATCH /api/marketplace/v3/fbs/settings/autoreturns/items](/docs/openapi/orders-fbs#tag/autoreturnSettings/operation/patchMarketplaceV3FbsSettingsAutoreturnsItems)
-- Получить предметы, которые не хранятся на складах WB — [GET /api/marketplace/v3/fbs/settings/autoreturns/subcategories/restricted](/docs/openapi/orders-fbs#tag/autoreturnSettings/operation/getMarketplaceV3FbsSettingsAutoreturnsSubcategoriesRestricted)
 
 Новое
 
@@ -538,17 +559,5 @@ DBS
 Теперь с помощью WB API вы можете получить информацию обо всех опциях и пакетах опций, которые продавец подключил в [Конструкторе тарифов](https://seller.wildberries.ru/tariff-constructor). Для этого используйте новый метод [GET /api/common/v1/tariff-constructor/options](/docs/openapi/api-information#tag/sellerInformation/operation/getV1TariffConstructorOptions).
 
 Метод доступен через **Сервисный токен** любой [категории](/docs/openapi/api-information#tag/authorization/Kategorii-tokenov).
-
-Новое
-
-## 24.06.2026
-
-Работа с товарами
-
-Остатки на складах продавца
-
-Изменения в методе обновления остатков
-
-В ответ метода [PUT /api/v3/stocks/{warehouseId}](/docs/openapi/work-with-products/#tag/Ostatki-na-skladah-prodavca/paths/~1api~1v3~1stocks~1%7BwarehouseId%7D/put) добавили ошибку `406` `WarehouseStocksUpdateBlock` — `The warehouse is processing`. Метод возвращает ошибку во время технических работ на складе, обновить остатки до окончания работ невозможно.
 
 Мы используем [cookies](/privacy) для сбора статистики и улучшения сервиса

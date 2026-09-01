@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /analytics-and-metrics/metrics/complaint
 source: "https://seller-edu.ozon.ru/libra/analytics-and-metrics/metrics/complaint"
-updated: "2026-07-07 12:37:20"
+updated: "2026-08-31 06:49:54"
 doc_id: 1002
-fetched_at: "2026-08-28T12:11:15Z"
-content_sha: 41477cdadcd16bb6
+fetched_at: "2026-09-01T01:56:13Z"
+content_sha: 6cbf1c643b83eefc
 ---
 
 # Жалобы покупателей
@@ -15,6 +15,8 @@ content_sha: 41477cdadcd16bb6
 _Главная / Аналитика / Качество работы_
 
 Что такое жалобы, на что они влияют и как их избежать
+
+С 22 августа по 21 сентября 2026 года не начисляем штрафы за жалобы покупателей по схемам FBO, FBS и realFBS.
 
 # Откуда приходят жалобы
 

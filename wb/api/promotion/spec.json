@@ -1624,8 +1624,7 @@
               },
               {
                 "description": "Статистика по бустеру"
-              },
-              {}
+              }
             ]
           },
           "canceled": {
@@ -1663,8 +1662,7 @@
               },
               {
                 "description": "Статистика с разбивкой по дням"
-              },
-              {}
+              }
             ]
           },
           "orders": {
@@ -5694,11 +5692,7 @@
                   }
                 },
                 "schema": {
-                  "oneOf": [
-                    {
-                      "$ref": "#/components/schemas/ResponseWithReturn"
-                    }
-                  ]
+                  "$ref": "#/components/schemas/ResponseWithReturn"
                 }
               }
             },

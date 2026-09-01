@@ -9,7 +9,7 @@ tags:
 spec_version: order
 source: "https://dev.wildberries.ru/docs/openapi/orders-fbs"
 deprecated: false
-content_sha: 99b7acaa6cc3b4ba
+content_sha: d2acadf7f7d69ee5
 ---
 
 # Передать поставку в доставку{{ /api/v3/supplies/{supplyId}/deliver }}
@@ -28,6 +28,8 @@ content_sha: 99b7acaa6cc3b4ba
  - маркировка всех сборочных заданий прошла проверку
 
 Если поставка содержит сборочные задания с обязательным УИН, убедитесь, что вы заранее создали и загрузили спецификацию с договором на доставку. [ГИИС ДМДК](https://minfin.gov.ru/ru/perfomance/jewels/dmdk) требуется около 30 минут для обработки изменений в статусах УИН.
+
+Обязательно [указывайте параметры отгрузки](./orders-fbs#tag/Postavki-FBS/operation/patchV3FbsSuppliesShippingMethod) для поставок от продавцов РФ на пункты отгрузки в РФ. Если способ доставки, дата или пункт отгрузки не указаны, возвращается ошибка `409`.
 
 Лимит запросов на один аккаунт продавца для методов сборочных заданий, поставок, пропусков и настроек автовозврата FBS:
 

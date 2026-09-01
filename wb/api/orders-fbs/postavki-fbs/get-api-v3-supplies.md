@@ -9,7 +9,7 @@ tags:
 spec_version: order
 source: "https://dev.wildberries.ru/docs/openapi/orders-fbs"
 deprecated: false
-content_sha: 53bb07b50d114be6
+content_sha: 50c70d028b1ca4c8
 ---
 
 # Получить список поставок
@@ -53,8 +53,12 @@ content_sha: 53bb07b50d114be6
   - `name` — string. Наименование поставки
   - `cargoType` — integer (0, 1, 2, 3). Тип товара: - `1` — малогабаритный товар (МГТ) - `2` — сверхгабаритный товар (СГТ) - `3` — крупногабаритный товар (КГТ+)
   - `crossBorderType` — integer (0, 1). Тип поставки: - `0` — внутренняя поставка - `1` — трансграничная поставка - `null` — значение отсутствует
-  - `destinationOfficeId` — integer<int64>. ID склада назначения поставки. Если `null`, склад назначения не указан
+  - `destinationOfficeId` — integer<int64>. ID склада хранения сборочных заданий в поставке. Если `null`, склад не указан
   - `recommendedWhId` — integer<int64>. ID рекомендуемого склада для приёмки поставки для Москвы и МО. Рекомендуется ближайший к покупателям склад, который определяется автоматически при передаче поставки в доставку с учётом параметров всех сборочных заданий в поставке. Если `0`, рекомендуемый склад не определён
+  - `shippingDt` — string. Планируемая дата отгрузки поставки, формат `YYYY-MM-DD`
+  - `shippingPointId` — integer. ID пункта отгрузки. Можно получить в методе получения [пунктов отгрузки поставок](./orders-fbs#tag/Postavki-FBS/operation/getV3FbsShippingPoints)
+  - `shippingType` — string (selfShipping, transportCompany). Способ доставки до пункта отгрузки: - `selfShipping` — доставка силами продавца - `transportCompany` — доставка через транспортную компанию. Для этого способа обязательно укажите ID ЭТрН — электронной транспортной накладной — в поле `waybillUuid`
+  - `waybillUuid` — string. ID ЭТрН — электронной транспортной накладной. Обязателен при `"shippingType":"transportCompany"`
 
 **400** — Неправильный запрос
 

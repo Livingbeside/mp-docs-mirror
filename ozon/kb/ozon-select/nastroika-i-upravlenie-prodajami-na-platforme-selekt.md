@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /ozon-select/nastroika-i-upravlenie-prodajami-na-platforme-selekt
 source: "https://seller-edu.ozon.ru/libra/ozon-select/nastroika-i-upravlenie-prodajami-na-platforme-selekt"
-updated: "2026-08-25 10:03:00"
+updated: "2026-08-31 10:45:47"
 doc_id: 67009
-fetched_at: "2026-08-28T12:11:14Z"
-content_sha: 9ac97809b69e5985
+fetched_at: "2026-09-01T01:56:12Z"
+content_sha: 6516a2c5e4971476
 ---
 
 # Настройка и управление продажами на платформе Селект
@@ -192,3 +192,5 @@ Ozon Fresh;
 [Услуги для товаров ](https://seller-edu.ozon.ru/fbo/rabota-so-stokom/uslugi-dlya-tovarov)— как управлять дополнительными услугами.
 
 [Начало работы на платформе Селект](/libra/ozon-select/nachalo-raboty-na-platforme-selekt) — как получить доступ к платформе и какие документы загрузить.
+
+[Видео «Ozon Селект».](https://seller-edu.ozon.ru/videos/4504)

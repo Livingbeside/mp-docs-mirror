@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /work-with-goods/zagruzka-tovarov/creating-goods/oshibki-pri-rabote-s-kartochkami
 source: "https://seller-edu.ozon.ru/libra/work-with-goods/zagruzka-tovarov/creating-goods/oshibki-pri-rabote-s-kartochkami"
-updated: "2026-08-18 08:19:34"
+updated: "2026-08-31 10:44:26"
 doc_id: 743
-fetched_at: "2026-08-28T12:11:15Z"
-content_sha: e60654f969a7d930
+fetched_at: "2026-09-01T01:56:13Z"
+content_sha: 82b6b42ad3ba66b2
 ---
 
 # Ошибки при работе с карточками товаров
@@ -153,6 +153,10 @@ _Главная / Работа с товарами / Создание и ред�
 2. Пришлите подтверждение, например, скриншоты, доказывающие, что на карточке не было запрещённой информации.
 
 ## Видео
+
+«Модерация товаров на Ozon: ТОП-10 ошибок и как их избежать»
+
+Модерация запрещённого контента»
 
 # Какие ещё ошибки чаще всего встречаются
 

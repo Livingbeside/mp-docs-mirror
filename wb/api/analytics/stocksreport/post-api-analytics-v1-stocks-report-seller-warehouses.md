@@ -9,7 +9,7 @@ tags:
 spec_version: analytics
 source: "https://dev.wildberries.ru/docs/openapi/analytics"
 deprecated: false
-content_sha: 4a092d31b1966550
+content_sha: 9fa014a76559ac36
 ---
 
 # Остатки на складах продавца
@@ -75,11 +75,6 @@ content_sha: 4a092d31b1966550
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
-
-**402** — Требуется платёж
-
-- `title` — string. Заголовок ошибки
-- `detail` — string. Детали ошибки. Ошибка возвращается только сервисам из [Каталога решений для бизнеса](/business-solutions)
 
 **403** — Доступ запрещён
 

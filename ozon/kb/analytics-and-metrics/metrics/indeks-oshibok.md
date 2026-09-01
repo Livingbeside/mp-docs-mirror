@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /analytics-and-metrics/metrics/indeks-oshibok
 source: "https://seller-edu.ozon.ru/libra/analytics-and-metrics/metrics/indeks-oshibok"
-updated: "2026-08-11 12:28:22"
+updated: "2026-08-31 06:49:22"
 doc_id: 17020
-fetched_at: "2026-08-28T12:11:15Z"
-content_sha: 7a5c7c2a435504a0
+fetched_at: "2026-09-01T01:56:13Z"
+content_sha: 3e23cef8bc601e0b
 ---
 
 # Индекс ошибок FBS и realFBS
@@ -15,6 +15,8 @@ content_sha: 7a5c7c2a435504a0
 _Главная / Аналитика / Качество работы_
 
 На что влияет индекс ошибок, как он рассчитывается и где его посмотреть
+
+С 22 августа по 21 сентября 2026 года не учитываем индекс и не начисляем штрафы на FBS и realFBS.
 
 # Что такое индекс ошибок
 

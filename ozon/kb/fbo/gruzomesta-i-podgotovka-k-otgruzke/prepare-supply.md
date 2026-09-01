@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /fbo/gruzomesta-i-podgotovka-k-otgruzke/prepare-supply
 source: "https://seller-edu.ozon.ru/libra/fbo/gruzomesta-i-podgotovka-k-otgruzke/prepare-supply"
-updated: "2026-07-21 14:39:25"
+updated: "2026-08-31 11:19:22"
 doc_id: 70383
-fetched_at: "2026-08-28T12:11:15Z"
-content_sha: cb463661dbb3cae5
+fetched_at: "2026-09-01T01:56:12Z"
+content_sha: e64def9f6a4d7eb2
 ---
 
 # Подготовка поставки для отгрузки
@@ -16,7 +16,7 @@ _Главная / Продажа со склада Ozon (FBO) / Грузомес
 
 Как упаковать товары и подготовить поставку, чтобы её приняли на складе Ozon
 
-# Видео «Как подготовить поставку на склад Ozon без УПД»
+# 
 
 # Как собрать поставку
 

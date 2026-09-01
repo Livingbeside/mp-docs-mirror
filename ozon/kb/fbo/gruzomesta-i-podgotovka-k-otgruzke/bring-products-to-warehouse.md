@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /fbo/gruzomesta-i-podgotovka-k-otgruzke/bring-products-to-warehouse
 source: "https://seller-edu.ozon.ru/libra/fbo/gruzomesta-i-podgotovka-k-otgruzke/bring-products-to-warehouse"
-updated: "2026-08-27 10:42:18"
+updated: "2026-08-31 11:18:09"
 doc_id: 70385
-fetched_at: "2026-08-28T12:11:15Z"
-content_sha: 1464b66315f1f15a
+fetched_at: "2026-09-01T01:56:12Z"
+content_sha: 4e8f9eb32d1faedf
 ---
 
 # Отправка товаров на точку отгрузки
@@ -15,8 +15,6 @@ content_sha: 1464b66315f1f15a
 _Главная / Продажа со склада Ozon (FBO) / Грузоместа и подготовка к отгрузке_
 
 Как передать товары на точке отгрузки и почему поставку могут не принять
-
-# Видео «Как подготовить поставку на склад Ozon c УПД и без УПД»
 
 # Куда привозить поставки
 
