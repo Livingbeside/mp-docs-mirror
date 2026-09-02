@@ -5,12 +5,18 @@ tag: News
 group: Обновления
 kind: changelog
 source: "https://docs.ozon.ru/api/seller/"
-content_sha: b832e5d04279a19f
+content_sha: 7e1f7d84ef73ae5a
 ---
 
 # Обновления
 
 Следите за обновлениями документации на платформе для разработчиков [Ozon for dev](https://dev.ozon.ru/).
+
+## 1 сентября 2026
+
+| Метод | Изменение |
+|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------|
+| [/v1/description-category/dependent-attributes](#operation/DescriptionCategoryDependentAttributes)<br>[/v1/description-category/dependent-attributes/values](#operation/DescriptionCategoryDependentAttributesValues) | Добавили бета-методы для работы с зависимыми характеристиками. |
 
 ## 27 августа 2026
 

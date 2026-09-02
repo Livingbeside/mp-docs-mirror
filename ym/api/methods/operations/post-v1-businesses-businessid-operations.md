@@ -10,7 +10,7 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: 7ac2b6ff2d780cb8
+content_sha: 82a63a632c9a2882
 ---
 
 # Получение статусов операций
@@ -33,7 +33,7 @@ content_sha: 7ac2b6ff2d780cb8
 
 **Тело запроса** (`application/json`):
 
-- `operationType` — string (ORDER_RECIPIENT_UPDATE, ORDER_DELIVERY_INTERVAL_UPDATE, ORDER_STATUS_UPDATE, RETURN_CANCELLATION) **обязательный**. Тип операции: * `ORDER_RECIPIENT_UPDATE` — изменение данных получателя. * `ORDER_DELIVERY_INTERVAL_UPDATE` — изменение интервала дат доставки. * `ORDER_STATUS_UPDATE` — обновление статуса заказа для его отмены. * `RETURN_CANCELLATION` — отмена возврата.
+- `operationType` — string (ORDER_RECIPIENT_UPDATE, ORDER_DELIVERY_INTERVAL_UPDATE, ORDER_STORAGE_LIMIT_DATE_UPDATE, ORDER_STATUS_UPDATE, RETURN_CANCELLATION) **обязательный**. Тип операции: * `ORDER_RECIPIENT_UPDATE` — изменение данных получателя. * `ORDER_DELIVERY_INTERVAL_UPDATE` — изменение интервала дат доставки. * `ORDER_STORAGE_LIMIT_DATE_UPDATE` — продление срока хранения заказа. * `ORDER_STATUS_UPDATE` — обновление статуса заказа для его отмены. * `RETURN_CANCELLATION` — отмена возврата.
 - `operationIds` — array[string] **обязательный**. Список идентификаторов операций.
 
 ## Ответы
@@ -44,7 +44,7 @@ content_sha: 7ac2b6ff2d780cb8
 - `result` — object. Информация об операциях.
   - `operations` — array[object] **обязательный**. Список операций.
     - `id` — string **обязательный**. Идентификатор операции.
-    - `type` — string (ORDER_RECIPIENT_UPDATE, ORDER_DELIVERY_INTERVAL_UPDATE, ORDER_STATUS_UPDATE, RETURN_CANCELLATION) **обязательный**. Тип операции: * `ORDER_RECIPIENT_UPDATE` — изменение данных получателя. * `ORDER_DELIVERY_INTERVAL_UPDATE` — изменение интервала дат доставки. * `ORDER_STATUS_UPDATE` — обновление статуса заказа для его отмены. * `RETURN_CANCELLATION` — отмена возврата.
+    - `type` — string (ORDER_RECIPIENT_UPDATE, ORDER_DELIVERY_INTERVAL_UPDATE, ORDER_STORAGE_LIMIT_DATE_UPDATE, ORDER_STATUS_UPDATE, RETURN_CANCELLATION) **обязательный**. Тип операции: * `ORDER_RECIPIENT_UPDATE` — изменение данных получателя. * `ORDER_DELIVERY_INTERVAL_UPDATE` — изменение интервала дат доставки. * `ORDER_STORAGE_LIMIT_DATE_UPDATE` — продление срока хранения заказа. * `ORDER_STATUS_UPDATE` — обновление статуса заказа для его отмены. * `RETURN_CANCELLATION` — отмена возврата.
     - `status` — string (IN_PROGRESS, DONE, FAILED) **обязательный**. Статус выполнения операции: * `IN_PROGRESS` — выполняется. * `DONE` — успешно завершена. * `FAILED` — завершена с ошибкой.
 
 **400** — Запрос содержит неправильные данные. [Подробнее об ошибке](../../concepts/error-codes.md#400)

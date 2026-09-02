@@ -4,8 +4,8 @@ api: wildberries
 kind: changelog
 source: "https://dev.wildberries.ru/release-notes"
 window: последние записи, страница отдаёт не всю историю
-fetched_at: "2026-09-01T02:00:33Z"
-content_sha: 36b265cf36cda3e2
+fetched_at: "2026-09-02T01:53:23Z"
+content_sha: 2ffa7f7ab9dce91c
 ---
 
 # Журнал изменений WB API
@@ -84,7 +84,7 @@ content_sha: 36b265cf36cda3e2
 - Получить список мест отгрузки поставок — [GET /api/marketplace/v3/fbs/shipping-points](/docs/openapi/orders-fbs#tag/Postavki-FBS/operation/getV3FbsShippingPoints)
 - Установить параметры отгрузки поставок — [PATCH /api/marketplace/v3/fbs/supplies/shipping-method](/docs/openapi/orders-fbs#tag/Postavki-FBS/operation/patchV3FbsSuppliesShippingMethod)
 
-Для доставки транспортной компанией можно будет указывать ID ЭТрН — электронной транспортной накладной. Чтобы добавить ID ЭТрН в поставку, нужно будет использовать метод [PATCH /api/v3/public/supplies/waybill](/docs/openapi/orders-fbs#tag/Postavki-FBS/operation/patchV3FbsSuppliesWaybill). Пока метод находится в доработке, о его доступности сообщим дополнительно.
+Для доставки транспортной компанией можно будет указывать ID ЭТрН — электронной транспортной накладной. Чтобы добавить ID ЭТрН в поставку, нужно будет использовать метод [PATCH /api/marketplace/v3/fbs/supplies/waybill](/docs/openapi/orders-fbs#tag/Postavki-FBS/operation/patchV3FbsSuppliesWaybill). Пока метод находится в доработке, о его доступности сообщим дополнительно.
 
 С **1 октября** добавление параметров отгрузки и ID ЭТрН станет обязательным. Без этого нельзя будет перевести поставку в доставку — вы получите ошибку `409` в методе [PATCH /api/v3/supplies/ {supplyId} /deliver](/docs/openapi/orders-fbs#tag/Postavki-FBS/paths/~1api~1v3~1supplies~1%7BsupplyId%7D~1deliver/patch).
 

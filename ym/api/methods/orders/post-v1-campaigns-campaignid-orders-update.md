@@ -10,7 +10,7 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: 7b6adcbd170037b2
+content_sha: 50ed383c10d744e6
 ---
 
 # Изменение заказа
@@ -22,9 +22,10 @@ content_sha: 7b6adcbd170037b2
 Изменяет в заказе:
 
 * данные получателя;
-* интервал дат курьерской доставки.
+* интервал дат курьерской доставки;
+* срок хранения заказа в пункте выдачи.
 
-Передавайте только ту информацию, которую хотите изменить. При необходимости вы можете отредактировать и данные получателя, и интервал доставки одновременно.
+Передавайте только ту информацию, которую хотите изменить. При необходимости вы можете передать несколько изменений одновременно.
 
 Заказ можно изменить в любом статусе до вручения покупателю или отмены (`DELIVERED` или `CANCELLED`).
 
@@ -60,6 +61,7 @@ content_sha: 7b6adcbd170037b2
     - `lastName` — string **обязательный**. Фамилия.
     - `middleName` — string. Отчество.
     - `phone` — string **обязательный**. Номер телефона. Формат: `+ `.
+  - `extendStoragePeriod` — boolean. Продлить срок хранения заказа в пункте выдачи.
 
 ## Ответы
 
@@ -69,7 +71,7 @@ content_sha: 7b6adcbd170037b2
 - `result` — object. Информация об операции по изменению заказа.
   - `operations` — array[object] **обязательный**. Информация о запущенных операциях по изменению заказа.
     - `id` — string **обязательный**. Идентификатор операции.
-    - `type` — string (ORDER_RECIPIENT_UPDATE, ORDER_DELIVERY_INTERVAL_UPDATE, ORDER_STATUS_UPDATE, RETURN_CANCELLATION) **обязательный**. Тип операции: * `ORDER_RECIPIENT_UPDATE` — изменение данных получателя. * `ORDER_DELIVERY_INTERVAL_UPDATE` — изменение интервала дат доставки. * `ORDER_STATUS_UPDATE` — обновление статуса заказа для его отмены. * `RETURN_CANCELLATION` — отмена возврата.
+    - `type` — string (ORDER_RECIPIENT_UPDATE, ORDER_DELIVERY_INTERVAL_UPDATE, ORDER_STORAGE_LIMIT_DATE_UPDATE, ORDER_STATUS_UPDATE, RETURN_CANCELLATION) **обязательный**. Тип операции: * `ORDER_RECIPIENT_UPDATE` — изменение данных получателя. * `ORDER_DELIVERY_INTERVAL_UPDATE` — изменение интервала дат доставки. * `ORDER_STORAGE_LIMIT_DATE_UPDATE` — продление срока хранения заказа. * `ORDER_STATUS_UPDATE` — обновление статуса заказа для его отмены. * `RETURN_CANCELLATION` — отмена возврата.
 
 **400** — Запрос содержит неправильные данные. [Подробнее об ошибках при работе с заказами](../../concepts/error-codes#orders)
 

@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /how-to-sell-effectively/advertising-of-goods/oplata-za-zakaz/chto-takoe-oplata-za-zakaz
 source: "https://seller-edu.ozon.ru/libra/how-to-sell-effectively/advertising-of-goods/oplata-za-zakaz/chto-takoe-oplata-za-zakaz"
-updated: "2026-08-21 12:44:13"
+updated: "2026-09-01 12:07:16"
 doc_id: 25622
-fetched_at: "2026-08-28T12:11:15Z"
-content_sha: 33916a5e77c5a128
+fetched_at: "2026-09-02T01:50:38Z"
+content_sha: 80b4c7ba4c4e3e19
 ---
 
 # Что такое «Оплата за заказ»
@@ -86,7 +86,7 @@ _Главная / Продвижение / Продвижение товаров
 
 Пока доступно не всем продавцам.
 
-Формат продвижения, который позволит отображать в поисковой выдаче и рекомендациях товары, которые вы продаёте с самовывозом из офлайн-точки, — наравне со всеми остальными на Ozon. Вы платите фиксированную ставку за каждый клик и каждый заказ товара, который сделал покупатель.
+Формат продвижения, который позволит отображать в поисковой выдаче и рекомендациях товары, которые вы продаёте с самовывозом из офлайн-точки, — наравне со всеми остальными на Ozon. Вы платите ставку за каждый клик и каждый заказ товара, который сделал покупатель.
 
 [Подробнее об этом формате продвижения](/libra/how-to-sell-effectively/advertising-of-goods/oplata-za-zakaz/tovary-s-samovyvozom)
 

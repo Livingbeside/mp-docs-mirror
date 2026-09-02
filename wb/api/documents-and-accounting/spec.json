@@ -1,0 +1,2503 @@
+{
+  "components": {
+    "parameters": {
+      "LocaleCat": {
+        "description": "Язык поля `title`:\n  - `ru` — русский\n  - `en` — английский\n  - `zh` — китайский\n",
+        "in": "query",
+        "name": "locale",
+        "schema": {
+          "default": "en",
+          "example": "ru",
+          "type": "string"
+        }
+      },
+      "LocaleList": {
+        "description": "Язык поля `category`:\n  - `ru` — русский\n  - `en` — английский\n  - `zh` — китайский\n",
+        "in": "query",
+        "name": "locale",
+        "schema": {
+          "default": "en",
+          "example": "ru",
+          "type": "string"
+        }
+      }
+    },
+    "responses": {
+      "401": {
+        "content": {
+          "application/problem+json": {
+            "example": {
+              "code": "07e4668e--a53a3d31f8b0-[UK-oWaVDUqNrKG]; 03bce=277; 84bd353bf-75",
+              "detail": "token problem; token is malformed: could not base64 decode signature: illegal base64 data at input byte 84",
+              "origin": "s2s-api-auth-catalog",
+              "requestId": "7b80742415072fe8b6b7f7761f1d1211",
+              "status": 401,
+              "statusText": "Unauthorized",
+              "timestamp": "2024-09-30T06:52:38Z",
+              "title": "unauthorized"
+            },
+            "schema": {
+              "properties": {
+                "code": {
+                  "description": "Внутренний код ошибки",
+                  "type": "string"
+                },
+                "detail": {
+                  "description": "Детали ошибки",
+                  "type": "string"
+                },
+                "origin": {
+                  "description": "ID внутреннего сервиса WB",
+                  "type": "string"
+                },
+                "requestId": {
+                  "description": "Уникальный ID запроса",
+                  "type": "string"
+                },
+                "status": {
+                  "description": "HTTP статус-код",
+                  "type": "number"
+                },
+                "statusText": {
+                  "description": "Расшифровка HTTP статус-кода",
+                  "type": "string"
+                },
+                "timestamp": {
+                  "description": "Дата и время запроса",
+                  "format": "date-time",
+                  "type": "string"
+                },
+                "title": {
+                  "description": "Заголовок ошибки",
+                  "type": "string"
+                }
+              },
+              "type": "object"
+            }
+          }
+        },
+        "description": "<span class='response__value '>Не авторизован</span>"
+      },
+      "402": {
+        "content": {
+          "application/problem+json": {
+            "example": {
+              "detail": "wb solution for business has insufficient funds on its balance. please top up the balance in the company's personal account https://dev.wildberries.ru/company",
+              "title": "payment required"
+            },
+            "schema": {
+              "properties": {
+                "detail": {
+                  "description": "Детали ошибки. Ошибка возвращается только сервисам из [Каталога решений для бизнеса](/business-solutions)",
+                  "type": "string"
+                },
+                "title": {
+                  "description": "Заголовок ошибки",
+                  "type": "string"
+                }
+              },
+              "type": "object"
+            }
+          }
+        },
+        "description": "<span class='response__value '>Требуется платёж</span>"
+      },
+      "403": {
+        "content": {
+          "application/problem+json": {
+            "example": {
+              "code": "base token is not allowed for this path",
+              "detail": "base token is not allowed",
+              "origin": "s2s-finance",
+              "requestId": "722199b2e15bbca48cc1d488a7989976",
+              "status": 403,
+              "statusText": "Forbidden",
+              "timestamp": "2026-05-25T02:47:09Z",
+              "title": "forbidden"
+            },
+            "schema": {
+              "properties": {
+                "code": {
+                  "description": "Внутренний код ошибки",
+                  "type": "string"
+                },
+                "detail": {
+                  "description": "Детали ошибки",
+                  "type": "string"
+                },
+                "origin": {
+                  "description": "ID внутреннего сервиса WB",
+                  "type": "string"
+                },
+                "requestId": {
+                  "description": "ID запроса",
+                  "type": "string"
+                },
+                "status": {
+                  "description": "HTTP статус-код",
+                  "type": "number"
+                },
+                "statusText": {
+                  "description": "Расшифровка HTTP статус-кода",
+                  "type": "string"
+                },
+                "timestamp": {
+                  "description": "Дата и время запроса",
+                  "format": "date-time",
+                  "type": "string"
+                },
+                "title": {
+                  "description": "Заголовок ошибки",
+                  "type": "string"
+                }
+              },
+              "type": "object"
+            }
+          }
+        },
+        "description": "<span class='response__value '>Доступ запрещён</span>"
+      },
+      "429": {
+        "content": {
+          "application/problem+json": {
+            "example": {
+              "code": "07e4668e-ac2242c5c8c5-[UK-4dx7JUdskGZ]",
+              "detail": "limited by c122a060-a7fb-4bb4-abb0-32fd4e18d489",
+              "origin": "s2s-api-auth-catalog",
+              "requestId": "9d3c02cc698f8b041c661a7c28bed293",
+              "status": 429,
+              "statusText": "Too Many Requests",
+              "timestamp": "2024-09-30T06:52:38Z",
+              "title": "too many requests"
+            },
+            "schema": {
+              "properties": {
+                "code": {
+                  "description": "Внутренний код ошибки",
+                  "type": "string"
+                },
+                "detail": {
+                  "description": "Детали ошибки",
+                  "type": "string"
+                },
+                "origin": {
+                  "description": "ID внутреннего сервиса WB",
+                  "type": "string"
+                },
+                "requestId": {
+                  "description": "Уникальный ID запроса",
+                  "type": "string"
+                },
+                "status": {
+                  "description": "HTTP статус-код",
+                  "type": "number"
+                },
+                "statusText": {
+                  "description": "Расшифровка HTTP статус-кода",
+                  "type": "string"
+                },
+                "timestamp": {
+                  "description": "Дата и время запроса",
+                  "format": "date-time",
+                  "type": "string"
+                },
+                "title": {
+                  "description": "Заголовок ошибки",
+                  "type": "string"
+                }
+              },
+              "type": "object"
+            }
+          }
+        },
+        "description": "<span class='response__value '>Слишком много запросов</span>"
+      },
+      "Responses400Download": {
+        "content": {
+          "application/json": {
+            "example": {
+              "detail": "serviceName and extension are required",
+              "origin": "docs-public-api",
+              "requestId": "7c500a19-f531-4639-b0a4-53d6d296c349",
+              "status": 400,
+              "title": "Bad Request"
+            },
+            "schema": {
+              "properties": {
+                "detail": {
+                  "description": "Детализация ошибки",
+                  "type": "string"
+                },
+                "origin": {
+                  "description": "ID внутреннего сервиса WB",
+                  "type": "string"
+                },
+                "requestId": {
+                  "description": "Уникальный ID запроса",
+                  "type": "string"
+                },
+                "status": {
+                  "description": "HTTP статус-код",
+                  "type": "number"
+                },
+                "title": {
+                  "description": "Заголовок ошибки",
+                  "type": "string"
+                }
+              },
+              "type": "object"
+            }
+          }
+        },
+        "description": "<span class='response__value '>Неправильный запрос</span>"
+      },
+      "Responses400DownloadAll": {
+        "content": {
+          "application/json": {
+            "examples": {
+              "badRequestBodyElement": {
+                "description": "Некорректное тело запроса",
+                "value": {
+                  "detail": "request body must contain at least one element with serviceName and extension",
+                  "origin": "docs-public-api",
+                  "requestId": "6c364410-625c-4493-a434-8cbe79dfbf18",
+                  "status": 400,
+                  "title": "Bad Request"
+                }
+              },
+              "badRequestBodyElementCount": {
+                "description": "Превышено количество запрашиваемых документов",
+                "value": {
+                  "detail": "documents count must be less than or equal to 50",
+                  "origin": "docs-public-api",
+                  "requestId": "0cf25b67-865e-4126-b971-1ff2e17fe84a",
+                  "status": 400,
+                  "title": "Bad Request"
+                }
+              }
+            },
+            "schema": {
+              "properties": {
+                "detail": {
+                  "description": "Детализация ошибки",
+                  "type": "string"
+                },
+                "origin": {
+                  "description": "ID внутреннего сервиса WB",
+                  "type": "string"
+                },
+                "requestId": {
+                  "description": "Уникальный ID запроса",
+                  "type": "string"
+                },
+                "status": {
+                  "description": "HTTP статус-код",
+                  "type": "number"
+                },
+                "title": {
+                  "description": "Заголовок ошибки",
+                  "type": "string"
+                }
+              },
+              "type": "object"
+            }
+          }
+        },
+        "description": "<span class='response__value '>Неправильный запрос</span>"
+      },
+      "Responses400List": {
+        "content": {
+          "application/json": {
+            "examples": {
+              "BadLimit": {
+                "description": "Превышено допустимое значение параметра limit",
+                "value": {
+                  "detail": "limit must be less than or equal to 50",
+                  "origin": "docs-public-api",
+                  "requestId": "46ce9c17-4b74-46ed-abb1-e40d2b0d52ce",
+                  "status": 400,
+                  "title": "Bad Request"
+                }
+              },
+              "BadSort&Orders": {
+                "description": "Параметры sort и order нельзя указывать по отдельности",
+                "value": {
+                  "detail": "sort and order must be both set or both not set",
+                  "origin": "docs-public-api",
+                  "requestId": "41fc3b08-051d-4871-9991-6502977912ad",
+                  "status": 400,
+                  "title": "Bad Request"
+                }
+              }
+            },
+            "schema": {
+              "properties": {
+                "detail": {
+                  "description": "Детализация ошибки",
+                  "type": "string"
+                },
+                "origin": {
+                  "description": "ID внутреннего сервиса WB",
+                  "type": "string"
+                },
+                "requestId": {
+                  "description": "Уникальный ID запроса",
+                  "type": "string"
+                },
+                "status": {
+                  "description": "HTTP статус-код",
+                  "type": "number"
+                },
+                "title": {
+                  "description": "Заголовок ошибки",
+                  "type": "string"
+                }
+              },
+              "type": "object"
+            }
+          }
+        },
+        "description": "<span class='response__value '>Неправильный запрос</span>"
+      },
+      "response400FinancialReports": {
+        "content": {
+          "application/problem+json": {
+            "schema": {
+              "properties": {
+                "detail": {
+                  "description": "Детали ошибки",
+                  "example": "GetReportDetailByPeriodNB decode error: missing dateTo params",
+                  "type": "string"
+                },
+                "origin": {
+                  "description": "ID внутреннего сервиса WB",
+                  "example": "open-api-finreports",
+                  "type": "string"
+                },
+                "requestId": {
+                  "description": "ID запроса",
+                  "example": "b065c204-c5f7-431b-b12c-d4c2cc6347ec",
+                  "type": "string"
+                },
+                "status": {
+                  "description": "HTTP статус-код",
+                  "example": 400,
+                  "type": "integer"
+                },
+                "title": {
+                  "description": "Заголовок ошибки",
+                  "example": "GetReportDetailByPeriodNB decode error",
+                  "type": "string"
+                }
+              },
+              "type": "object"
+            }
+          }
+        },
+        "description": "<span class='response__value '>Неправильный запрос</span>"
+      }
+    },
+    "schemas": {
+      "AcquiringReportListReq": {
+        "description": "Параметры запроса",
+        "properties": {
+          "dateFrom": {
+            "description": "Начальная дата отчёта.<br>Можно передать дату или дату со временем. Время можно указывать с точностью до секунд или миллисекунд.<br>Дата передаётся в формате [RFC3339](https://datatracker.ietf.org/doc/html/rfc3339), время — в часовом поясе Москва `UTC+3`.<br>Примеры:\n  - `2025-06-20`\n  - `2025-06-20T23:59:59`\n  - `2025-06-20T00:00:00.12345`\n  - `2025-06-20T00:00:00`\n",
+            "example": "2026-03-17",
+            "type": "string"
+          },
+          "dateTo": {
+            "description": "Конечная дата отчёта.<br>Дата в формате [RFC3339](https://datatracker.ietf.org/doc/html/rfc3339). Можно передать дату или дату со временем. Время можно указывать с точностью до секунд или миллисекунд.<br>Время передаётся в часовом поясе Москва `UTC+3`.<br>Примеры:\n  - `2025-06-20`\n  - `2025-06-20T23:59:59`\n  - `2025-06-20T00:00:00.12345`\n  - `2025-06-20T00:00:00`\n",
+            "example": "2026-03-20",
+            "type": "string"
+          },
+          "limit": {
+            "default": 1000,
+            "description": "Количество отчётов в ответе",
+            "example": 211,
+            "maximum": 1000,
+            "type": "integer"
+          },
+          "offset": {
+            "default": 0,
+            "description": "Сколько элементов пропустить. Например, для значения `10` ответ начнётся с 11 элемента",
+            "example": 345,
+            "type": "integer"
+          }
+        },
+        "required": [
+          "dateFrom",
+          "dateTo"
+        ],
+        "type": "object"
+      },
+      "AcquiringReportListRes": {
+        "description": "Список отчётов об издержках на приём платежей",
+        "properties": {
+          "acquiringFeeSum": {
+            "description": "Сумма издержек по эквайрингу",
+            "example": "258",
+            "type": "string"
+          },
+          "acquiringFeeVatSum": {
+            "description": "В том числе НДС",
+            "example": "83.79",
+            "type": "string"
+          },
+          "createDate": {
+            "description": "Дата формирования отчёта",
+            "example": "2026-03-31",
+            "format": "date",
+            "type": "string"
+          },
+          "currency": {
+            "description": "Валюта отчёта",
+            "example": "RUB",
+            "type": "string"
+          },
+          "dateFrom": {
+            "description": "Дата начала отчётного периода",
+            "example": "2026-03-16",
+            "format": "date",
+            "type": "string"
+          },
+          "dateTo": {
+            "description": "Дата конца отчётного периода",
+            "example": "2026-03-22",
+            "format": "date",
+            "type": "string"
+          },
+          "reportId": {
+            "description": "ID отчёта",
+            "example": 307401554,
+            "format": "int64",
+            "type": "integer"
+          },
+          "sellerFinanceName": {
+            "description": "Наименование продавца",
+            "example": "ИП Кружинин В. Р.",
+            "type": "string"
+          }
+        },
+        "required": [
+          "reportId",
+          "sellerFinanceName",
+          "dateFrom",
+          "dateTo",
+          "createDate",
+          "currency",
+          "acquiringFeeSum",
+          "acquiringFeeVatSum"
+        ],
+        "type": "object"
+      },
+      "AcquiringReportsDetailedReq": {
+        "description": "Параметры запроса",
+        "properties": {
+          "dateFrom": {
+            "description": "Начальная дата отчёта.<br>Можно передать дату или дату со временем. Время можно указывать с точностью до секунд или миллисекунд.<br>Дата передаётся в формате [RFC3339](https://datatracker.ietf.org/doc/html/rfc3339), время — в часовом поясе Москва `UTC+3`.<br>Примеры:\n  - `2025-06-20`\n  - `2025-06-20T23:59:59`\n  - `2025-06-20T00:00:00.12345`\n  - `2025-06-20T00:00:00`\n",
+            "example": "2026-03-17",
+            "type": "string"
+          },
+          "dateTo": {
+            "description": "Конечная дата отчёта.<br>Дата в формате [RFC3339](https://datatracker.ietf.org/doc/html/rfc3339). Можно передать дату или дату со временем. Время можно указывать с точностью до секунд или миллисекунд.<br>Время передаётся в часовом поясе Москва `UTC+3`.<br>Примеры:\n  - `2025-06-20`\n  - `2025-06-20T23:59:59`\n  - `2025-06-20T00:00:00.12345`\n  - `2025-06-20T00:00:00`\n",
+            "example": "2026-03-20",
+            "type": "string"
+          },
+          "fields": {
+            "description": "Список полей, которые вернутся в ответе. Если параметр не указан, возвращаются все поля",
+            "example": [
+              "rrdId",
+              "nmId",
+              "docTypeName",
+              "retailAmount",
+              "acquiringFee",
+              "srid"
+            ],
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "limit": {
+            "default": 100000,
+            "description": "Количество строк в ответе",
+            "example": 21100,
+            "maximum": 100000,
+            "type": "integer"
+          },
+          "rrdId": {
+            "default": 0,
+            "description": "ID строки ответа. Необходим для получения отчёта частями.<br>Начинайте загрузку отчёта с `\"rrdid\":0`. В последующих запросах передавайте значение `rrdId` из последней строки предыдущего ответа.<br>Повторяйте запрос, пока не получите ответ `204`\n",
+            "type": "integer"
+          }
+        },
+        "required": [
+          "dateFrom",
+          "dateTo"
+        ],
+        "type": "object"
+      },
+      "AcquiringReportsDetailedRes": {
+        "description": "Детализации к отчётам об издержках на приём платежей",
+        "properties": {
+          "acqDate": {
+            "description": "Дата операции",
+            "example": "2026-03-21",
+            "type": "string"
+          },
+          "acquiringBank": {
+            "description": "Наименование банка-эквайера",
+            "example": "Тинькофф",
+            "type": "string"
+          },
+          "acquiringFee": {
+            "description": "Размер комиссии за эквайринг, в том числе НДС",
+            "example": "14.89",
+            "type": "string"
+          },
+          "acquiringFeeVat": {
+            "description": "Сумма НДС",
+            "example": "4.06",
+            "type": "string"
+          },
+          "currency": {
+            "description": "Валюта отчёта",
+            "example": "RUB",
+            "type": "string"
+          },
+          "docTypeName": {
+            "description": "Тип документа",
+            "example": "Продажа",
+            "type": "string"
+          },
+          "invoiceDate": {
+            "description": "Дата счёта-фактуры",
+            "example": "2026-03-20",
+            "type": "string"
+          },
+          "invoiceNumber": {
+            "description": "Номер счёта-фактуры",
+            "example": "С/Ф 123",
+            "type": "string"
+          },
+          "nmId": {
+            "description": "Артикул WB",
+            "example": 1234567,
+            "type": "integer"
+          },
+          "reportId": {
+            "description": "ID отчёта",
+            "example": 1234567,
+            "format": "int64",
+            "type": "integer"
+          },
+          "retailAmount": {
+            "description": "Вайлдберриз реализовал Товар (Пр)",
+            "example": "367",
+            "type": "string"
+          },
+          "rrdId": {
+            "description": "ID строки",
+            "example": 1232610467,
+            "type": "integer"
+          },
+          "saleDate": {
+            "description": "Дата продажи",
+            "example": "2026-03-21",
+            "type": "string"
+          },
+          "shkId": {
+            "description": "Штрихкод",
+            "example": 1239159661,
+            "type": "integer"
+          },
+          "srid": {
+            "description": "ID заказа.<br>В ответах методов сборочных заданий [FBS](./orders-fbs#tag/Sborochnye-zadaniya-FBS), [DBW](./orders-dbw#tag/dbwAssemblyOrders), [DBS](./orders-dbs#tag/dbsAssemblyOrders) и [Самовывоз](./in-store-pickup#tag/inStorePickupAssemblyOrders) `srid` равен `rid`\n",
+            "example": "D0.r3f80c3eec6f845c6840128b4c19986f9.0.0",
+            "type": "string"
+          },
+          "taxRegistrationReasonCode": {
+            "description": "КПП",
+            "example": "7701123301",
+            "type": "string"
+          },
+          "tin": {
+            "description": "ИНН",
+            "example": "010101010101",
+            "type": "string"
+          }
+        },
+        "required": [
+          "reportId",
+          "currency",
+          "rrdId",
+          "nmId",
+          "docTypeName",
+          "retailAmount",
+          "saleDate",
+          "acqDate",
+          "shkId",
+          "acquiringFee",
+          "acquiringFeeVat",
+          "acquiringBank",
+          "tin",
+          "taxRegistrationReasonCode",
+          "invoiceNumber",
+          "invoiceDate",
+          "srid"
+        ],
+        "type": "object"
+      },
+      "FinancialReportsDetailedReportIdReq": {
+        "description": "Параметры запроса",
+        "properties": {
+          "fields": {
+            "description": "Список полей, которые вернутся в ответе. Если параметр не указан, возвращаются все поля",
+            "example": [
+              "rrdId",
+              "nmId",
+              "docTypeName",
+              "retailAmount",
+              "acquiringFee",
+              "srid"
+            ],
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "limit": {
+            "default": 100000,
+            "description": "Количество строк в ответе",
+            "example": 21100,
+            "maximum": 100000,
+            "type": "integer"
+          },
+          "rrdId": {
+            "default": 0,
+            "description": "ID строки ответа. Необходим для получения отчёта частями.<br>Начинайте загрузку отчёта с `\"rrdid\":0`. В последующих запросах передавайте значение `rrdId` из последней строки предыдущего ответа.<br>Повторяйте запрос, пока не получите ответ `204`\n",
+            "type": "integer"
+          }
+        },
+        "type": "object"
+      },
+      "GetCategories": {
+        "properties": {
+          "data": {
+            "properties": {
+              "categories": {
+                "description": "Категории документов",
+                "items": {
+                  "properties": {
+                    "name": {
+                      "description": "ID категории документа из параметра [запроса](./financial-reports-and-accounting#tag/documents/operation/getV1DocumentsList) `category`",
+                      "example": "redeem-notification",
+                      "type": "string"
+                    },
+                    "title": {
+                      "description": "Название категории документа из поля [ответа](./financial-reports-and-accounting#tag/documents/~1api~1v1~1documents~1list/get) `category`",
+                      "example": "Уведомление о выкупе",
+                      "type": "string"
+                    }
+                  },
+                  "type": "object"
+                },
+                "type": "array"
+              }
+            },
+            "type": "object"
+          }
+        }
+      },
+      "GetDoc": {
+        "properties": {
+          "data": {
+            "properties": {
+              "document": {
+                "description": "Документ в кодировке base64",
+                "example": "UEsDBBQACAgIAAAAAAAAAAAAAAAAAAAAAABHAAAA0KPQstC10LTQvtC80LvQtdC90LjQtSDQviDQstGL0LrRg9C/0LUg4oSWNDQ4NDE5NDEg0L7RgiAyNS4wOS4yMDIzLnhsc3jsnQk0lP3f/0dEUiRkNwmVECI7o0WS7EklxprdkH2bKVkqISRkGSlkaxRlN2TPnmzJvu/Gzmz/Uz33fY/L8/Q8zrn/x/07565zcjrn9f1cn/V6f69v53zTVCWnYATtA+0DAX/Rg0AgM5ip5l2Yg5OwKeyu+Wl3O1vbcA3YV5FDVfPej2vXKptOK1V9LjycmPDG72uW4vcG9xdsOI1V2wj86sk6+4nHJeZ92NFgC/He3gmDlccFXSyumXYUGSKK4hLLsqu5aBTspu5lqlcGB/JNlQVn1Eumj6o8ZEWPRotEVGkH9/kf457totEKj2N2P4dSZWAIaC0ajy5J+VL5fen1YOhcGMxvvUw+XOKFOHL...LSL/tC77s0GzTi2iBuHorbMpcOaw0Hmsc/gpk7ty3/cdDYRmhkRUPAIC37P94CA8oiP/fIvpPK8n9l43YARWRgH/tI6E3ntD/nfOfPyj9jxxDwn+b8/8dZqBDQPjPNSAACJgBAAD21P9s/y8AAP//UEsHCFHrudyQEwAASxQAAFBLAQIUABQACAgIAAAAAACH4v2BaSgAAGNjAABHAAAAAAAAAAAAAAAAAAAAAADQo9Cy0LXQtNC+0LzQu9C10L3QuNC1INC+INCy0YvQutGD0L/QtSDihJY0NDg0MTk0MSDQvtGCIDI1LjA5LjIwMjMueGxzeFBLAQIUABQACAgIAAAAAADTmLxwRQcAAGAPAABLAAAAAAAAAAAAAAAAAN4oAADQo9Cy0LXQtNC+0LzQu9C10L3QuNC1INC+INCy0YvQutGD0L/QtSDihJY0NDg0MTk0MSDQvtGCIDI1LjA5LjIwMjMueGxzeC5zaWdQSwECFAAUAAgACAAAAAAAUeu53JATAABLFAAACAAAAAAAAAAAAAAAAACcMAAAbWNoZC56aXBQSwUGAAAAAAMAAwAkAQAAYkQAAAAA",
+                "type": "string"
+              },
+              "extension": {
+                "description": "Формат документа",
+                "example": "zip",
+                "type": "string"
+              },
+              "fileName": {
+                "description": "Название документа",
+                "example": "Notice of redemption 44841941.zip",
+                "type": "string"
+              }
+            },
+            "type": "object"
+          }
+        }
+      },
+      "GetDocs": {
+        "properties": {
+          "data": {
+            "properties": {
+              "document": {
+                "description": "Документ в кодировке base64",
+                "example": "UEsDBBQACAgIAAAAAAAAAAAAAAAAAAAAAABHAAAA0KPQstC10LTQvtC80LvQtdC90LjQtSDQviDQstGL0LrRg9C/0LUg4oSWNDQ4NDE5NDEg0L7RgiAyNS4wOS4yMDIzLnhsc3jsnQk0lP3f/0dEUiRkNwmVECI7o0WS7EklxprdkH2bKVkqISRkGSlkaxRlN2TPnmzJvu/Gzmz/Uz33fY/L8/Q8zrn/x/07565zcjrn9f1cn/V6f69v53zTVCWnYATtA+0DAX/Rg0AgM5ip5l2Yg5OwKeyu+Wl3O1vbcA3YV5FDVfPej2vXKptOK1V9LjycmPDG72uW4vcG9xdsOI1V2wj86sk6+4nHJeZ92NFgC/He3gmDlccFXSyumXYUGSKK4hLLsqu5aBTspu5lqlcGB/JNlQVn1Eumj6o8ZEWPRotEVGkH9/kf457totEKj2N2P4dSZWAIaC0ajy5J+VL5fen1YOhcGMxvvUw+XOKFOHL...LSL/tC77s0GzTi2iBuHorbMpcOaw0Hmsc/gpk7ty3/cdDYRmhkRUPAIC37P94CA8oiP/fIvpPK8n9l43YARWRgH/tI6E3ntD/nfOfPyj9jxxDwn+b8/8dZqBDQPjPNSAACJgBAAD21P9s/y8AAP//UEsHCFHrudyQEwAASxQAAFBLAQIUABQACAgIAAAAAACH4v2BaSgAAGNjAABHAAAAAAAAAAAAAAAAAAAAAADQo9Cy0LXQtNC+0LzQu9C10L3QuNC1INC+INCy0YvQutGD0L/QtSDihJY0NDg0MTk0MSDQvtGCIDI1LjA5LjIwMjMueGxzeFBLAQIUABQACAgIAAAAAADTmLxwRQcAAGAPAABLAAAAAAAAAAAAAAAAAN4oAADQo9Cy0LXQtNC+0LzQu9C10L3QuNC1INC+INCy0YvQutGD0L/QtSDihJY0NDg0MTk0MSDQvtGCIDI1LjA5LjIwMjMueGxzeC5zaWdQSwECFAAUAAgACAAAAAAAUeu53JATAABLFAAACAAAAAAAAAAAAAAAAACcMAAAbWNoZC56aXBQSwUGAAAAAAMAAwAkAQAAYkQAAAAA",
+                "type": "string"
+              },
+              "extension": {
+                "description": "Формат документа",
+                "example": "zip",
+                "type": "string"
+              },
+              "fileName": {
+                "description": "Название документа",
+                "example": "documents.zip",
+                "type": "string"
+              }
+            },
+            "type": "object"
+          }
+        }
+      },
+      "GetList": {
+        "properties": {
+          "data": {
+            "properties": {
+              "documents": {
+                "description": "Категории документов",
+                "items": {
+                  "properties": {
+                    "category": {
+                      "description": "Название [категории документов](./financial-reports-and-accounting#tag/documents/operation/getV1DocumentsCategories) из поля ответа `title`",
+                      "example": "Уведомление о выкупе",
+                      "type": "string"
+                    },
+                    "creationTime": {
+                      "description": "Дата и время создания документа",
+                      "example": "2023-10-03T00:18:06.879Z",
+                      "type": "string"
+                    },
+                    "extensions": {
+                      "description": "Форматы документа",
+                      "items": {
+                        "example": "zip",
+                        "type": "string"
+                      },
+                      "type": "array"
+                    },
+                    "name": {
+                      "description": "Название документа",
+                      "example": "redeem-notification",
+                      "type": "string"
+                    },
+                    "serviceName": {
+                      "description": "Уникальный ID документа",
+                      "example": "redeem-notification-44841941",
+                      "type": "string"
+                    },
+                    "viewed": {
+                      "description": "Выгружен ли документ в личном кабинете",
+                      "example": false,
+                      "type": "boolean"
+                    }
+                  },
+                  "type": "object"
+                },
+                "type": "array"
+              }
+            },
+            "type": "object"
+          }
+        }
+      },
+      "SalesReportListReq": {
+        "description": "Параметры запроса",
+        "properties": {
+          "dateFrom": {
+            "description": "Начальная дата отчёта.<br>Можно передать дату или дату со временем. Время можно указывать с точностью до секунд или миллисекунд.<br>Дата передаётся в формате [RFC3339](https://datatracker.ietf.org/doc/html/rfc3339), время — в часовом поясе Москва `UTC+3`.<br>Примеры:\n  - `2025-06-20`\n  - `2025-06-20T23:59:59`\n  - `2025-06-20T00:00:00.12345`\n  - `2025-06-20T00:00:00`\n",
+            "example": "2026-03-17",
+            "type": "string"
+          },
+          "dateTo": {
+            "description": "Конечная дата отчёта.<br>Дата в формате [RFC3339](https://datatracker.ietf.org/doc/html/rfc3339). Можно передать дату или дату со временем. Время можно указывать с точностью до секунд или миллисекунд.<br>Время передаётся в часовом поясе Москва `UTC+3`.<br>Примеры:\n  - `2025-06-20`\n  - `2025-06-20T23:59:59`\n  - `2025-06-20T00:00:00.12345`\n  - `2025-06-20T00:00:00`\n",
+            "example": "2026-03-20",
+            "type": "string"
+          },
+          "limit": {
+            "default": 1000,
+            "description": "Количество отчётов в ответе",
+            "example": 211,
+            "maximum": 1000,
+            "type": "integer"
+          },
+          "offset": {
+            "default": 0,
+            "description": "Сколько элементов пропустить. Например, для значения `10` ответ начнётся с 11 элемента",
+            "example": 345,
+            "type": "integer"
+          },
+          "period": {
+            "default": "weekly",
+            "description": "Периодичность отчётов:\n  - `weekly` — еженедельные\n  - `daily` — ежедневные\n",
+            "enum": [
+              "daily",
+              "weekly"
+            ],
+            "example": "daily",
+            "type": "string"
+          }
+        },
+        "required": [
+          "dateFrom",
+          "dateTo"
+        ],
+        "type": "object"
+      },
+      "SalesReportListRes": {
+        "description": "Список отчётов реализации",
+        "properties": {
+          "additionalPaymentSum": {
+            "description": "Корректировка Вознаграждения Вайлдберриз (ВВ)",
+            "example": "9509.71",
+            "type": "string"
+          },
+          "avgSalePercent": {
+            "description": "Согласованная скидка, %",
+            "example": 0,
+            "type": "number"
+          },
+          "bankPaymentSum": {
+            "description": "Итого к оплате",
+            "example": "5172.94",
+            "type": "string"
+          },
+          "cashbackAmountSum": {
+            "description": "Сумма, удержанная за начисленные баллы программы лояльности",
+            "example": "2",
+            "type": "string"
+          },
+          "cashbackCommissionChangeSum": {
+            "description": "Стоимость участия в программе лояльности",
+            "example": "0.2",
+            "type": "string"
+          },
+          "cashbackDiscountSum": {
+            "description": "Компенсация скидки по программе лояльности",
+            "example": "19",
+            "type": "string"
+          },
+          "createDate": {
+            "description": "Дата формирования отчёта",
+            "example": "2026-03-23",
+            "format": "date",
+            "type": "string"
+          },
+          "currency": {
+            "description": "Валюта отчёта",
+            "example": "RUB",
+            "type": "string"
+          },
+          "dateFrom": {
+            "description": "Дата начала отчётного периода",
+            "example": "2026-03-16",
+            "format": "date",
+            "type": "string"
+          },
+          "dateTo": {
+            "description": "Дата конца отчётного периода",
+            "example": "2026-03-22",
+            "format": "date",
+            "type": "string"
+          },
+          "deductionSum": {
+            "description": "Прочие удержания и выплаты",
+            "example": "150",
+            "type": "string"
+          },
+          "deliveryServiceSum": {
+            "description": "Стоимость логистики",
+            "example": "2558.47",
+            "type": "string"
+          },
+          "forPaySum": {
+            "description": "К перечислению за товар",
+            "example": "183.79",
+            "type": "string"
+          },
+          "paidAcceptanceSum": {
+            "description": "Стоимость операций при приёмке",
+            "example": "243.81",
+            "type": "string"
+          },
+          "paidStorageSum": {
+            "description": "Стоимость хранения",
+            "example": "626.84",
+            "type": "string"
+          },
+          "paymentSchedule": {
+            "description": "Разовое изменение срока перечисления денежных средств",
+            "example": "-1",
+            "type": "string"
+          },
+          "penaltySum": {
+            "description": "Общая сумма штрафов",
+            "example": "1457.61",
+            "type": "string"
+          },
+          "reportId": {
+            "description": "ID отчёта",
+            "example": 307401554,
+            "format": "int64",
+            "type": "integer"
+          },
+          "reportType": {
+            "description": "Тип отчёта:\n  - `1` — основной\n  - `2` — по выкупам\n  - `3` — по выкупам для Грузии\n",
+            "enum": [
+              1,
+              2,
+              3
+            ],
+            "example": 1,
+            "type": "integer"
+          },
+          "retailAmountSum": {
+            "description": "Продажа",
+            "example": "258",
+            "type": "string"
+          },
+          "sellerFinanceName": {
+            "description": "Наименование продавца",
+            "example": "ИП Кружинин В. Р.",
+            "type": "string"
+          }
+        },
+        "required": [
+          "reportId",
+          "sellerFinanceName",
+          "dateFrom",
+          "dateTo",
+          "createDate",
+          "currency",
+          "reportType",
+          "retailAmountSum",
+          "forPaySum",
+          "avgSalePercent",
+          "deliveryServiceSum",
+          "paidStorageSum",
+          "paidAcceptanceSum",
+          "deductionSum",
+          "penaltySum",
+          "additionalPaymentSum",
+          "cashbackAmountSum",
+          "cashbackDiscountSum",
+          "cashbackCommissionChangeSum",
+          "paymentSchedule",
+          "bankPaymentSum"
+        ],
+        "type": "object"
+      },
+      "SalesReportsDetailedReq": {
+        "description": "Параметры запроса",
+        "properties": {
+          "dateFrom": {
+            "description": "Начальная дата отчёта.<br>Можно передать дату или дату со временем. Время можно указывать с точностью до секунд или миллисекунд.<br>Дата передаётся в формате [RFC3339](https://datatracker.ietf.org/doc/html/rfc3339), время — в часовом поясе Москва `UTC+3`.<br>Примеры:\n  - `2025-06-20`\n  - `2025-06-20T23:59:59`\n  - `2025-06-20T00:00:00.12345`\n  - `2025-06-20T00:00:00`\n",
+            "example": "2026-03-17",
+            "type": "string"
+          },
+          "dateTo": {
+            "description": "Конечная дата отчёта.<br>Дата в формате [RFC3339](https://datatracker.ietf.org/doc/html/rfc3339). Можно передать дату или дату со временем. Время можно указывать с точностью до секунд или миллисекунд.<br>Время передаётся в часовом поясе Москва `UTC+3`.<br>Примеры:\n  - `2025-06-20`\n  - `2025-06-20T23:59:59`\n  - `2025-06-20T00:00:00.12345`\n  - `2025-06-20T00:00:00`\n",
+            "example": "2026-03-20",
+            "type": "string"
+          },
+          "fields": {
+            "description": "Список полей, которые вернутся в ответе. Если параметр не указан, возвращаются все поля",
+            "example": [
+              "rrdId",
+              "nmId",
+              "docTypeName",
+              "retailAmount",
+              "acquiringFee",
+              "srid"
+            ],
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "limit": {
+            "default": 100000,
+            "description": "Количество строк в ответе",
+            "example": 21100,
+            "maximum": 100000,
+            "type": "integer"
+          },
+          "period": {
+            "default": "weekly",
+            "description": "Периодичность отчётов:\n  - `weekly` — еженедельные\n  - `daily` — ежедневные\n",
+            "enum": [
+              "daily",
+              "weekly"
+            ],
+            "example": "daily",
+            "type": "string"
+          },
+          "rrdId": {
+            "default": 0,
+            "description": "ID строки ответа. Необходим для получения отчёта частями.<br>Начинайте загрузку отчёта с `\"rrdid\":0`. В последующих запросах передавайте значение `rrdId` из последней строки предыдущего ответа.<br>Повторяйте запрос, пока не получите ответ `204`\n",
+            "type": "integer"
+          }
+        },
+        "required": [
+          "dateFrom",
+          "dateTo"
+        ],
+        "type": "object"
+      },
+      "SalesReportsDetailedRes": {
+        "description": "Детализации к отчётам реализации",
+        "properties": {
+          "acquiringBank": {
+            "description": "Наименование банка-эквайера",
+            "example": "Тинькофф",
+            "type": "string"
+          },
+          "acquiringFee": {
+            "description": "Компенсация платёжных услуг/Комиссия за интеграцию платёжных сервисов",
+            "example": "14.89",
+            "type": "string"
+          },
+          "acquiringPercent": {
+            "description": "Размер компенсации платёжных услуг/Комиссии за интеграцию платёжных сервисов, %",
+            "example": 4.06,
+            "type": "number"
+          },
+          "additionalPayment": {
+            "description": "Корректировка Вознаграждения Вайлдберриз (ВВ)",
+            "example": "0",
+            "type": "string"
+          },
+          "agencyVat": {
+            "description": "Удержание Агентского НДС, %.<br>Только для продавцов из Кыргызстана",
+            "example": 0,
+            "type": "number"
+          },
+          "articleSubstitution": {
+            "description": "ID подменного артикула",
+            "example": "",
+            "type": "string"
+          },
+          "b2bCustomerTin": {
+            "description": "ИНН B2B-покупателя",
+            "example": "010101010101",
+            "type": "string"
+          },
+          "bonusTypeName": {
+            "description": "Виды логистики, штрафов и корректировок ВВ",
+            "example": "Штраф МП. Невыполненный заказ (отмена клиентом после недовоза)",
+            "type": "string"
+          },
+          "brandName": {
+            "description": "Бренд",
+            "example": "BlahBlah",
+            "type": "string"
+          },
+          "cashbackAmount": {
+            "description": "Сумма, удержанная за начисленные баллы программы лояльности",
+            "example": "2",
+            "type": "string"
+          },
+          "cashbackCommissionChange": {
+            "description": "Стоимость участия в программе лояльности",
+            "example": "0.2",
+            "type": "string"
+          },
+          "cashbackDiscount": {
+            "description": "Компенсация скидки по программе лояльности",
+            "example": "19",
+            "type": "string"
+          },
+          "commissionPercent": {
+            "description": "Размер кВВ, %",
+            "example": 24,
+            "type": "number"
+          },
+          "country": {
+            "description": "Страна продажи",
+            "example": "Россия",
+            "type": "string"
+          },
+          "createDate": {
+            "description": "Дата формирования отчёта",
+            "example": "2026-03-23",
+            "format": "date",
+            "type": "string"
+          },
+          "currency": {
+            "description": "Валюта отчёта",
+            "example": "RUB",
+            "type": "string"
+          },
+          "dateFrom": {
+            "description": "Дата начала отчётного периода",
+            "example": "2026-03-16",
+            "format": "date",
+            "type": "string"
+          },
+          "dateTo": {
+            "description": "Дата конца отчётного периода",
+            "example": "2026-03-22",
+            "format": "date",
+            "type": "string"
+          },
+          "declarationNumber": {
+            "description": "Номер таможенной декларации",
+            "example": "",
+            "type": "string"
+          },
+          "deduction": {
+            "description": "Удержания",
+            "example": "6354",
+            "type": "string"
+          },
+          "deliveryAmount": {
+            "description": "Количество доставок",
+            "example": 0,
+            "type": "integer"
+          },
+          "deliveryMethod": {
+            "description": "Способ продажи и тип товара",
+            "example": "FBS, (МГТ)",
+            "type": "string"
+          },
+          "deliveryService": {
+            "description": "Услуги по доставке товара покупателю",
+            "example": "0",
+            "type": "string"
+          },
+          "dlvPrc": {
+            "description": "Фиксированный коэффициент склада по поставке",
+            "example": 1.8,
+            "type": "number"
+          },
+          "docTypeName": {
+            "description": "Тип документа",
+            "example": "Продажа",
+            "type": "string"
+          },
+          "fixTariffDateFrom": {
+            "description": "Дата начала действия фиксации",
+            "example": "2026-03-18",
+            "format": "date",
+            "type": "string"
+          },
+          "fixTariffDateTo": {
+            "description": "Дата конца действия фиксации",
+            "example": "2026-03-19",
+            "format": "date",
+            "type": "string"
+          },
+          "forPay": {
+            "description": "К перечислению продавцу за реализованный товар",
+            "example": "376.99",
+            "type": "string"
+          },
+          "giBoxTypeName": {
+            "description": "Тип коробов",
+            "example": "Монопаллета",
+            "type": "string"
+          },
+          "giId": {
+            "description": "ID поставки",
+            "example": 123456,
+            "type": "integer"
+          },
+          "installmentCofinancingAmount": {
+            "description": "Скидка по программе софинансирования",
+            "example": "0",
+            "type": "string"
+          },
+          "isB2b": {
+            "description": "Признак B2B-продажи",
+            "example": false,
+            "type": "boolean"
+          },
+          "isKgvpV2": {
+            "description": "Размер снижения кВВ из-за акции, %",
+            "type": "number"
+          },
+          "kiz": {
+            "description": "Код маркировки [Честного знака](https://честныйзнак.рф/)",
+            "example": "0102900000376311210G2CIS?ehge)S\u001d91002A\u001d92F9Qof4FDo/31Icm14kmtuVYQzLypxm3HWkC1vQ/+pVVjm1dNAth1laFMoAGn7yEMWlTjxIe7lQnJqZ7TRZhlHQ==",
+            "type": "string"
+          },
+          "kvw": {
+            "description": "Итоговый кВВ без НДС, %",
+            "example": 1.81,
+            "type": "number"
+          },
+          "kvwBase": {
+            "description": "Размер кВВ без НДС, % базовый",
+            "example": 24.15,
+            "type": "number"
+          },
+          "loyaltyDiscount": {
+            "description": "Размер скидки лояльности от продавца, %",
+            "example": 0,
+            "type": "number"
+          },
+          "loyaltyId": {
+            "description": "ID скидки лояльности от продавца",
+            "example": 0,
+            "type": "integer"
+          },
+          "nmId": {
+            "description": "Артикул WB",
+            "example": 1234567,
+            "type": "integer"
+          },
+          "officeName": {
+            "description": "Склад",
+            "example": "Склад WB",
+            "type": "string"
+          },
+          "orderDt": {
+            "description": "Дата и время заказа",
+            "example": "2026-03-14T00:00:00Z",
+            "format": "date-time",
+            "type": "string"
+          },
+          "orderId": {
+            "description": "ID сборочного задания",
+            "example": 2816993144,
+            "type": "integer"
+          },
+          "orderUid": {
+            "description": "ID корзины заказа — транзакции.<br>Заказы в одной корзине покупателя будут иметь одинаковый `orderUid`\n",
+            "example": "id375f16c4bec295d9995393af803ff7b",
+            "type": "string"
+          },
+          "paidAcceptance": {
+            "description": "Операции на приёмке",
+            "example": "865",
+            "type": "string"
+          },
+          "paidStorage": {
+            "description": "Хранение",
+            "example": "12647.29",
+            "type": "string"
+          },
+          "paidWithSocialCertificate": {
+            "description": "Оплата социальным сертификатом",
+            "example": false,
+            "type": "boolean"
+          },
+          "paymentProcessing": {
+            "description": "Тип платежа: компенсация платёжных услуг/Комиссия за интеграцию платёжных сервисов",
+            "example": "Комиссия за организацию платежа с НДС",
+            "type": "string"
+          },
+          "paymentSchedule": {
+            "description": "Разовое изменение срока перечисления денежных средств",
+            "example": "-1",
+            "type": "string"
+          },
+          "penalty": {
+            "description": "Общая сумма штрафов",
+            "example": "231.35",
+            "type": "string"
+          },
+          "ppvzOfficeId": {
+            "description": "ID офиса доставки",
+            "example": 105383,
+            "type": "integer"
+          },
+          "ppvzOfficeName": {
+            "description": "Наименование офиса доставки",
+            "example": "Москва Москва Очаковское шоссе 6к2",
+            "type": "string"
+          },
+          "ppvzReward": {
+            "description": "Возмещение за выдачу и возврат товаров на ПВЗ",
+            "example": "0",
+            "type": "string"
+          },
+          "ppvzSalesCommission": {
+            "description": "Вознаграждение с продаж до вычета услуг поверенного, без НДС",
+            "example": "23.74",
+            "type": "string"
+          },
+          "ppvzSupplierInn": {
+            "description": "ИНН партнёра",
+            "example": "010101010101",
+            "type": "string"
+          },
+          "ppvzSupplierName": {
+            "description": "Партнёр",
+            "example": "ИП Жасмин",
+            "type": "string"
+          },
+          "productDiscountForReport": {
+            "description": "Итоговая согласованная скидка, %",
+            "example": 0,
+            "type": "number"
+          },
+          "quantity": {
+            "description": "Количество",
+            "example": 1,
+            "type": "integer"
+          },
+          "rebillLogisticCost": {
+            "description": "Возмещение издержек по перевозке/по складским операциям с товаром",
+            "example": "1.349",
+            "type": "string"
+          },
+          "rebillLogisticOrg": {
+            "description": "Организатор перевозки",
+            "example": "ИП Иванов Иван Иванович(123456789012)",
+            "type": "string"
+          },
+          "reportId": {
+            "description": "ID отчёта",
+            "example": 1234567,
+            "format": "int64",
+            "type": "integer"
+          },
+          "reportType": {
+            "description": "Тип отчёта:\n  - `1` — основной\n  - `2` — по выкупам\n  - `3` — по выкупам для Грузии\n",
+            "enum": [
+              1,
+              2,
+              3
+            ],
+            "example": 1,
+            "type": "integer"
+          },
+          "retailAmount": {
+            "description": "Вайлдберриз реализовал Товар (Пр)",
+            "example": "367",
+            "type": "string"
+          },
+          "retailPrice": {
+            "description": "Цена розничная",
+            "example": "1249",
+            "type": "string"
+          },
+          "retailPriceWithDisc": {
+            "description": "Цена розничная с учётом согласованной скидки",
+            "example": "399.68",
+            "type": "string"
+          },
+          "returnAmount": {
+            "description": "Количество возврата",
+            "example": 0,
+            "type": "integer"
+          },
+          "rrDate": {
+            "description": "Дата операции",
+            "example": "2025-10-20",
+            "format": "date",
+            "type": "string"
+          },
+          "rrdId": {
+            "description": "ID строки",
+            "example": 1232610467,
+            "type": "integer"
+          },
+          "saleDt": {
+            "description": "Дата и время продажи",
+            "example": "2026-03-21T00:00:00Z",
+            "format": "date-time",
+            "type": "string"
+          },
+          "salePercent": {
+            "description": "Согласованный продуктовый дисконт, %",
+            "example": 0,
+            "type": "integer"
+          },
+          "salePriceAffiliatedDiscountPrc": {
+            "description": "Скидка по подменному артикулу, %",
+            "example": 0,
+            "type": "number"
+          },
+          "salePricePromocodeDiscountPrc": {
+            "description": "Скидка за промокод, %",
+            "example": 0,
+            "type": "number"
+          },
+          "salePriceWholesaleDiscountPrc": {
+            "description": "Оптовая скидка для бизнеса, %",
+            "example": 0,
+            "type": "number"
+          },
+          "sellerOperName": {
+            "description": "Обоснование для оплаты",
+            "example": "Продажа",
+            "type": "string"
+          },
+          "sellerPromo": {
+            "description": "Промокод, %",
+            "example": "0",
+            "type": "string"
+          },
+          "sellerPromoDiscount": {
+            "description": "Размер дополнительной скидки по собственной акции продавца, %",
+            "example": 3,
+            "type": "number"
+          },
+          "sellerPromoId": {
+            "description": "ID собственной акции продавца с дополнительной скидкой",
+            "example": 14350,
+            "type": "integer"
+          },
+          "shkId": {
+            "description": "Штрихкод",
+            "example": 1239159661,
+            "type": "integer"
+          },
+          "sku": {
+            "description": "Баркод",
+            "example": "1231312352310",
+            "type": "string"
+          },
+          "spp": {
+            "description": "Платформенные скидки, %",
+            "example": 25.31,
+            "type": "number"
+          },
+          "srid": {
+            "description": "ID заказа.<br>В ответах методов сборочных заданий [FBS](./orders-fbs#tag/Sborochnye-zadaniya-FBS), [DBW](./orders-dbw#tag/dbwAssemblyOrders), [DBS](./orders-dbs#tag/dbsAssemblyOrders) и [Самовывоз](./in-store-pickup#tag/inStorePickupAssemblyOrders) `srid` равен `rid`\n",
+            "example": "0f1c3999172603062979867564654dac5b702849",
+            "type": "string"
+          },
+          "srvDbs": {
+            "description": "Признак услуги платной доставки",
+            "example": true,
+            "type": "boolean"
+          },
+          "stickerId": {
+            "description": "Стикер МП",
+            "example": "1964038895",
+            "type": "string"
+          },
+          "subjectName": {
+            "description": "Предмет",
+            "example": "Мини-печи",
+            "type": "string"
+          },
+          "supRatingUp": {
+            "description": "Размер снижения кВВ из-за рейтинга, %",
+            "type": "number"
+          },
+          "techSize": {
+            "description": "Размер",
+            "example": "0",
+            "type": "string"
+          },
+          "title": {
+            "description": "Название товара",
+            "example": "ДС тарелка",
+            "type": "string"
+          },
+          "trbxId": {
+            "description": "ID короба для обработки товара",
+            "example": "WB-TRBX-1234567",
+            "type": "string"
+          },
+          "uuidPromocode": {
+            "description": "ID промокода",
+            "example": "",
+            "type": "string"
+          },
+          "vendorCode": {
+            "description": "Артикул продавца",
+            "example": "MAB123",
+            "type": "string"
+          },
+          "vw": {
+            "description": "Вознаграждение Вайлдберриз (ВВ), без НДС",
+            "example": "22.25",
+            "type": "string"
+          },
+          "vwNds": {
+            "description": "НДС с вознаграждения Вайлдберриз",
+            "example": "4.45",
+            "type": "string"
+          },
+          "warehouseLogisticsCoeff": {
+            "description": "Коэффициент логистики",
+            "example": 0,
+            "type": "number"
+          },
+          "wibesDiscountPercent": {
+            "description": "Скидка Wibes, %",
+            "example": 1,
+            "type": "number"
+          }
+        },
+        "required": [
+          "reportId",
+          "dateFrom",
+          "dateTo",
+          "createDate",
+          "currency",
+          "reportType",
+          "rrdId",
+          "giId",
+          "dlvPrc",
+          "fixTariffDateFrom",
+          "fixTariffDateTo",
+          "subjectName",
+          "nmId",
+          "brandName",
+          "vendorCode",
+          "title",
+          "techSize",
+          "sku",
+          "docTypeName",
+          "quantity",
+          "retailPrice",
+          "retailAmount",
+          "salePercent",
+          "commissionPercent",
+          "officeName",
+          "sellerOperName",
+          "orderDt",
+          "saleDt",
+          "rrDate",
+          "shkId",
+          "retailPriceWithDisc",
+          "deliveryAmount",
+          "returnAmount",
+          "deliveryService",
+          "giBoxTypeName",
+          "productDiscountForReport",
+          "sellerPromo",
+          "spp",
+          "kvwBase",
+          "kvw",
+          "supRatingUp",
+          "isKgvpV2",
+          "ppvzSalesCommission",
+          "forPay",
+          "ppvzReward",
+          "acquiringFee",
+          "acquiringPercent",
+          "paymentProcessing",
+          "acquiringBank",
+          "vw",
+          "vwNds",
+          "ppvzOfficeName",
+          "ppvzOfficeId",
+          "ppvzSupplierName",
+          "ppvzSupplierInn",
+          "declarationNumber",
+          "stickerId",
+          "country",
+          "srvDbs",
+          "penalty",
+          "additionalPayment",
+          "rebillLogisticCost",
+          "paidStorage",
+          "deduction",
+          "paidAcceptance",
+          "orderId",
+          "isB2b",
+          "trbxId",
+          "installmentCofinancingAmount",
+          "wibesDiscountPercent",
+          "cashbackAmount",
+          "cashbackDiscount",
+          "cashbackCommissionChange",
+          "paymentSchedule",
+          "deliveryMethod",
+          "sellerPromoId",
+          "sellerPromoDiscount",
+          "loyaltyId",
+          "loyaltyDiscount",
+          "uuidPromocode",
+          "salePricePromocodeDiscountPrc",
+          "articleSubstitution",
+          "salePriceAffiliatedDiscountPrc",
+          "salePriceWholesaleDiscountPrc",
+          "b2bCustomerTin",
+          "paidWithSocialCertificate",
+          "warehouseLogisticsCoeff",
+          "orderUid",
+          "srid"
+        ],
+        "type": "object"
+      },
+      "requestDownload": {
+        "properties": {
+          "params": {
+            "items": {
+              "properties": {
+                "extension": {
+                  "description": "Формат документа",
+                  "type": "string"
+                },
+                "serviceName": {
+                  "description": "Уникальный ID документа",
+                  "type": "string"
+                }
+              },
+              "type": "object"
+            },
+            "maxItems": 50,
+            "minItems": 1,
+            "type": "array"
+          }
+        },
+        "type": "object"
+      }
+    },
+    "securitySchemes": {
+      "HeaderApiKey": {
+        "in": "header",
+        "name": "Authorization",
+        "type": "apiKey"
+      }
+    }
+  },
+  "info": {
+    "description": "<div class=\"description_important\">\n  Узнать больше о документах и бухгалтерии можно в <a href=\"https://seller.wildberries.ru/instructions/category/ba929b64-1f89-4426-82d7-ce998ee552bd?goBackOption=prevRoute&categoryId=3c971375-9939-45e8-ab82-376019be8942\">справочном центре</a>\n</div>\n\n<div class=\"api-block\">\n\nПросмотр [баланса](./financial-reports-and-accounting#tag/balance), [финансовых отчётов](./financial-reports-and-accounting#tag/financialReports) и [документов](./financial-reports-and-accounting#tag/documents) продавца.\n\n</div>\n",
+    "title": "Документы и бухгалтерия",
+    "version": "finances",
+    "x-file-name": "finances"
+  },
+  "openapi": "3.0.1",
+  "paths": {
+    "/api/finance/v1/acquiring/detailed": {
+      "post": {
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\n\n<div class=\"description_token\">\n    Метод <a href=\"./api-information#tag/authorization/Pravila-ispolzovaniya-tokenov-dostupa-k-API\">доступен</a> по\n        <strong>Персональному</strong> токену, \n        <strong>Сервисному</strong> токену\n</div>\n\nМетод возвращает детализации к [отчётам об издержках на приём платежей](https://seller.wildberries.ru/suppliers-mutual-settlements/reports-implementations/acquiring-reports) за указанный период.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 1 запрос | 1 мин | 1 запрос |\n</div>\n",
+        "operationId": "postV1AcquiringDetailed",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AcquiringReportsDetailedReq"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "items": {
+                    "$ref": "#/components/schemas/AcquiringReportsDetailedRes"
+                  },
+                  "type": "array"
+                }
+              }
+            },
+            "description": "<span class='response__value response__value_success'>Успешно</span>"
+          },
+          "204": {
+            "description": "<span class='response__value response__value_success'>Нет данных</span>"
+          },
+          "400": {
+            "$ref": "#/components/responses/response400FinancialReports"
+          },
+          "401": {
+            "$ref": "#/components/responses/401"
+          },
+          "402": {
+            "$ref": "#/components/responses/402"
+          },
+          "403": {
+            "$ref": "#/components/responses/403"
+          },
+          "429": {
+            "$ref": "#/components/responses/429"
+          }
+        },
+        "security": [
+          {
+            "HeaderApiKey": []
+          }
+        ],
+        "summary": "Детализации к отчётам об издержках на приём платежей за период{{ /api/finance/v1/acquiring/detailed }}",
+        "tags": [
+          "financialReports"
+        ],
+        "x-category": "finance",
+        "x-readonly-method": true,
+        "x-token-types": [
+          "personal",
+          "service"
+        ]
+      },
+      "servers": [
+        {
+          "url": "https://finance-api.wildberries.ru"
+        }
+      ]
+    },
+    "/api/finance/v1/acquiring/detailed/{reportId}": {
+      "post": {
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\n\n<div class=\"description_token\">\n    Метод <a href=\"./api-information#tag/authorization/Pravila-ispolzovaniya-tokenov-dostupa-k-API\">доступен</a> по\n        <strong>Персональному</strong> токену, \n        <strong>Сервисному</strong> токену\n</div>\n\nМетод возвращает детализации к [отчётам об издержках на приём платежей](https://seller.wildberries.ru/suppliers-mutual-settlements/reports-implementations/acquiring-reports) по ID отчётов.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 1 запрос | 1 мин | 1 запрос |\n</div>\n",
+        "operationId": "postV1AcquiringDetailedReportId",
+        "parameters": [
+          {
+            "description": "ID отчёта",
+            "in": "path",
+            "name": "reportId",
+            "required": true,
+            "schema": {
+              "format": "int64",
+              "type": "integer"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/FinancialReportsDetailedReportIdReq"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "items": {
+                    "$ref": "#/components/schemas/AcquiringReportsDetailedRes"
+                  },
+                  "type": "array"
+                }
+              }
+            },
+            "description": "<span class='response__value response__value_success'>Успешно</span>"
+          },
+          "204": {
+            "description": "<span class='response__value response__value_success'>Нет данных</span>"
+          },
+          "400": {
+            "$ref": "#/components/responses/response400FinancialReports"
+          },
+          "401": {
+            "$ref": "#/components/responses/401"
+          },
+          "402": {
+            "$ref": "#/components/responses/402"
+          },
+          "403": {
+            "$ref": "#/components/responses/403"
+          },
+          "429": {
+            "$ref": "#/components/responses/429"
+          }
+        },
+        "security": [
+          {
+            "HeaderApiKey": []
+          }
+        ],
+        "summary": "Детализации к отчётам об издержках на приём платежей по ID отчётов{{ /api/finance/v1/acquiring/detailed/{reportId} }}",
+        "tags": [
+          "financialReports"
+        ],
+        "x-category": "finance",
+        "x-readonly-method": true,
+        "x-token-types": [
+          "personal",
+          "service"
+        ]
+      },
+      "servers": [
+        {
+          "url": "https://finance-api.wildberries.ru"
+        }
+      ]
+    },
+    "/api/finance/v1/acquiring/list": {
+      "post": {
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\n\n<div class=\"description_token\">\n    Метод <a href=\"./api-information#tag/authorization/Pravila-ispolzovaniya-tokenov-dostupa-k-API\">доступен</a> по\n        <strong>Персональному</strong> токену, \n        <strong>Сервисному</strong> токену\n</div>\n\nМетод возвращает список отчётов об издержках на приём платежей по формату [таблицы отчётов](https://seller.wildberries.ru/suppliers-mutual-settlements/reports-implementations/acquiring-reports).\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 1 запрос | 1 мин | 1 запрос |\n</div>\n",
+        "operationId": "postV1AcquiringList",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AcquiringReportListReq"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "items": {
+                    "$ref": "#/components/schemas/AcquiringReportListRes"
+                  },
+                  "type": "array"
+                }
+              }
+            },
+            "description": "<span class='response__value response__value_success'>Успешно</span>"
+          },
+          "204": {
+            "description": "<span class='response__value response__value_success'>Нет данных</span>"
+          },
+          "400": {
+            "$ref": "#/components/responses/response400FinancialReports"
+          },
+          "401": {
+            "$ref": "#/components/responses/401"
+          },
+          "403": {
+            "$ref": "#/components/responses/403"
+          },
+          "429": {
+            "$ref": "#/components/responses/429"
+          }
+        },
+        "security": [
+          {
+            "HeaderApiKey": []
+          }
+        ],
+        "summary": "Список отчётов об издержках на приём платежей{{ /api/finance/v1/acquiring/list }}",
+        "tags": [
+          "financialReports"
+        ],
+        "x-category": "finance",
+        "x-readonly-method": true,
+        "x-token-types": [
+          "personal",
+          "service"
+        ]
+      },
+      "servers": [
+        {
+          "url": "https://finance-api.wildberries.ru"
+        }
+      ]
+    },
+    "/api/finance/v1/sales-reports/detailed": {
+      "post": {
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод возвращает детализации к [отчётам реализации](https://seller.wildberries.ru/suppliers-mutual-settlements) за указанный период.\n<br><br>\nДанные доступны с 29 января 2024 года.\n\n<div class=\"description_important\">\n  Вы можете выгрузить данные в <a href=\"/knowledge-base/articles/019d49a4-650c-7b04-9596-ba441936f9d3\">Google Таблицы</a>\n</div>\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 мин | 1 запрос | 1 мин | 1 запрос |\n| Сервисный | 1 мин | 1 запрос | 1 мин | 1 запрос |\n| Базовый с секретом | 1 мин | 1 запрос | 1 мин | 1 запрос |\n| Базовый | 24 ч | 2 запроса | 12 ч | 1 запрос |\n</div>\n",
+        "operationId": "postV1SalesReportsDetailed",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SalesReportsDetailedReq"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "items": {
+                    "$ref": "#/components/schemas/SalesReportsDetailedRes"
+                  },
+                  "type": "array"
+                }
+              }
+            },
+            "description": "<span class='response__value response__value_success'>Успешно</span>"
+          },
+          "204": {
+            "description": "<span class='response__value response__value_success'>Нет данных</span>"
+          },
+          "400": {
+            "$ref": "#/components/responses/response400FinancialReports"
+          },
+          "401": {
+            "$ref": "#/components/responses/401"
+          },
+          "402": {
+            "$ref": "#/components/responses/402"
+          },
+          "429": {
+            "$ref": "#/components/responses/429"
+          }
+        },
+        "security": [
+          {
+            "HeaderApiKey": []
+          }
+        ],
+        "summary": "Детализации к отчётам реализации за период{{ /api/finance/v1/sales-reports/detailed }}",
+        "tags": [
+          "financialReports"
+        ],
+        "x-category": "finance",
+        "x-readonly-method": true
+      },
+      "servers": [
+        {
+          "url": "https://finance-api.wildberries.ru"
+        }
+      ]
+    },
+    "/api/finance/v1/sales-reports/detailed/{reportId}": {
+      "post": {
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\n\n<div class=\"description_token\">\n    Метод <a href=\"./api-information#tag/authorization/Pravila-ispolzovaniya-tokenov-dostupa-k-API\">доступен</a> по\n        <strong>Персональному</strong> токену, \n        <strong>Сервисному</strong> токену\n</div>\n\nМетод возвращает детализации к [отчётам реализации](https://seller.wildberries.ru/suppliers-mutual-settlements) по ID отчётов.\n<br><br>\nДанные доступны с 1 января 2025 года.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 1 запрос | 1 мин | 1 запрос |\n</div>\n",
+        "operationId": "postV1SalesReportsDetailedReportId",
+        "parameters": [
+          {
+            "description": "ID отчёта.<br>Для ежедневных отчётов вместо стандартной десериализации рекомендуем использовать нестандартные библиотеки с поддержкой [BigInt](https://www.npmjs.com/package/json-bigint)",
+            "in": "path",
+            "name": "reportId",
+            "required": true,
+            "schema": {
+              "format": "int64",
+              "type": "integer"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/FinancialReportsDetailedReportIdReq"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "items": {
+                    "$ref": "#/components/schemas/SalesReportsDetailedRes"
+                  },
+                  "type": "array"
+                }
+              }
+            },
+            "description": "<span class='response__value response__value_success'>Успешно</span>"
+          },
+          "204": {
+            "description": "<span class='response__value response__value_success'>Нет данных</span>"
+          },
+          "400": {
+            "$ref": "#/components/responses/response400FinancialReports"
+          },
+          "401": {
+            "$ref": "#/components/responses/401"
+          },
+          "402": {
+            "$ref": "#/components/responses/402"
+          },
+          "403": {
+            "$ref": "#/components/responses/403"
+          },
+          "429": {
+            "$ref": "#/components/responses/429"
+          }
+        },
+        "security": [
+          {
+            "HeaderApiKey": []
+          }
+        ],
+        "summary": "Детализации к отчётам реализации по ID отчётов{{ /api/finance/v1/sales-reports/detailed/{reportId} }}",
+        "tags": [
+          "financialReports"
+        ],
+        "x-category": "finance",
+        "x-readonly-method": true,
+        "x-token-types": [
+          "personal",
+          "service"
+        ]
+      },
+      "servers": [
+        {
+          "url": "https://finance-api.wildberries.ru"
+        }
+      ]
+    },
+    "/api/finance/v1/sales-reports/list": {
+      "post": {
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\n\n<div class=\"description_token\">\n    Метод <a href=\"./api-information#tag/authorization/Pravila-ispolzovaniya-tokenov-dostupa-k-API\">доступен</a> по\n        <strong>Персональному</strong> токену, \n        <strong>Сервисному</strong> токену\n</div>\n\nМетод возвращает список отчётов релизации по формату [таблицы отчётов](https://seller.wildberries.ru/suppliers-mutual-settlements).\n<br><br>\nДанные доступны с 1 января 2025 года.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 1 запрос | 1 мин | 1 запрос |\n</div>\n",
+        "operationId": "postV1SalesReportsList",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SalesReportListReq"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "items": {
+                    "$ref": "#/components/schemas/SalesReportListRes"
+                  },
+                  "type": "array"
+                }
+              }
+            },
+            "description": "<span class='response__value response__value_success'>Успешно</span>"
+          },
+          "204": {
+            "description": "<span class='response__value response__value_success'>Нет данных</span>"
+          },
+          "400": {
+            "$ref": "#/components/responses/response400FinancialReports"
+          },
+          "401": {
+            "$ref": "#/components/responses/401"
+          },
+          "403": {
+            "$ref": "#/components/responses/403"
+          },
+          "429": {
+            "$ref": "#/components/responses/429"
+          }
+        },
+        "security": [
+          {
+            "HeaderApiKey": []
+          }
+        ],
+        "summary": "Список отчётов реализации{{ /api/finance/v1/sales-reports/list }}",
+        "tags": [
+          "financialReports"
+        ],
+        "x-category": "finance",
+        "x-readonly-method": true,
+        "x-token-types": [
+          "personal",
+          "service"
+        ]
+      },
+      "servers": [
+        {
+          "url": "https://finance-api.wildberries.ru"
+        }
+      ]
+    },
+    "/api/v1/account/balance": {
+      "get": {
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод возвращает данные виджета баланса на [главной странице](https://seller.wildberries.ru) портала продавцов.\n<br><br>\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 мин | 1 запрос | 1 мин | 1 запрос |\n| Сервисный | 1 мин | 1 запрос | 1 мин | 1 запрос |\n| Базовый с секретом | 1 мин | 1 запрос | 1 мин | 1 запрос |\n| Базовый | 24 ч | 1 запрос | 24 ч | 1 запрос |\n</div>\n",
+        "operationId": "getV1AccountBalance",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "currency": {
+                      "description": "Валюта",
+                      "example": "RUB",
+                      "type": "string"
+                    },
+                    "current": {
+                      "description": "Текущий баланс продавца",
+                      "example": 10196.21,
+                      "type": "number"
+                    },
+                    "for_withdraw": {
+                      "description": "Сумма, доступная к выводу",
+                      "example": 6395.8,
+                      "type": "number"
+                    }
+                  },
+                  "type": "object"
+                }
+              }
+            },
+            "description": "<span class='response__value response__value_success'>Успешно</span>"
+          },
+          "401": {
+            "$ref": "#/components/responses/401"
+          },
+          "402": {
+            "$ref": "#/components/responses/402"
+          },
+          "429": {
+            "$ref": "#/components/responses/429"
+          }
+        },
+        "security": [
+          {
+            "HeaderApiKey": []
+          }
+        ],
+        "summary": "Получить баланс продавца{{ /api/v1/account/balance }}",
+        "tags": [
+          "balance"
+        ],
+        "x-category": "finance",
+        "x-readonly-method": true
+      },
+      "servers": [
+        {
+          "url": "https://finance-api.wildberries.ru"
+        }
+      ]
+    },
+    "/api/v1/documents/categories": {
+      "get": {
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод возвращает категории документов для получения [списка документов продавца](./financial-reports-and-accounting#tag/documents/operation/getV1DocumentsList).\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 10 сек | 1 запрос | 10 сек | 5 запросов |\n| Сервисный | 10 сек | 1 запрос | 10 сек | 5 запросов |\n| Базовый с секретом | 10 сек | 1 запрос | 10 сек | 5 запросов |\n| Базовый | 24 ч | 1 запрос | 24 ч | 1 запрос |\n</div>\n",
+        "operationId": "getV1DocumentsCategories",
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/LocaleCat"
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetCategories"
+                }
+              }
+            },
+            "description": "<span class='response__value response__value_success'>Успешно</span>"
+          },
+          "401": {
+            "$ref": "#/components/responses/401"
+          },
+          "402": {
+            "$ref": "#/components/responses/402"
+          },
+          "429": {
+            "$ref": "#/components/responses/429"
+          }
+        },
+        "security": [
+          {
+            "HeaderApiKey": []
+          }
+        ],
+        "summary": "Категории документов{{ /api/v1/documents/categories }}",
+        "tags": [
+          "documents"
+        ],
+        "x-category": "documents",
+        "x-readonly-method": true
+      },
+      "servers": [
+        {
+          "url": "https://documents-api.wildberries.ru"
+        }
+      ]
+    },
+    "/api/v1/documents/download": {
+      "get": {
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод загружает один документ из [списка документов продавца](./financial-reports-and-accounting#tag/documents/operation/getV1DocumentsList).\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 10 сек | 1 запрос | 10 сек | 5 запросов |\n| Сервисный | 10 сек | 1 запрос | 10 сек | 5 запросов |\n| Базовый с секретом | 10 сек | 1 запрос | 10 сек | 5 запросов |\n| Базовый | 24 ч | 1 запрос | 24 ч | 1 запрос |\n</div>\n",
+        "operationId": "getV1DocumentsDownload",
+        "parameters": [
+          {
+            "description": "Уникальный ID документа",
+            "in": "query",
+            "name": "serviceName",
+            "required": true,
+            "schema": {
+              "example": "redeem-notification-44841941",
+              "type": "string"
+            }
+          },
+          {
+            "description": "Формат документа",
+            "in": "query",
+            "name": "extension",
+            "required": true,
+            "schema": {
+              "example": "zip",
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetDoc"
+                }
+              }
+            },
+            "description": "<span class='response__value response__value_success'>Успешно</span>"
+          },
+          "400": {
+            "$ref": "#/components/responses/Responses400Download"
+          },
+          "401": {
+            "$ref": "#/components/responses/401"
+          },
+          "402": {
+            "$ref": "#/components/responses/402"
+          },
+          "429": {
+            "$ref": "#/components/responses/429"
+          }
+        },
+        "security": [
+          {
+            "HeaderApiKey": []
+          }
+        ],
+        "summary": "Получить документ{{ /api/v1/documents/download }}",
+        "tags": [
+          "documents"
+        ],
+        "x-category": "documents",
+        "x-readonly-method": true
+      },
+      "servers": [
+        {
+          "url": "https://documents-api.wildberries.ru"
+        }
+      ]
+    },
+    "/api/v1/documents/download/all": {
+      "post": {
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод загружает несколько документов из [списка документов продавца](./financial-reports-and-accounting#tag/documents/operation/getV1DocumentsList).\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 5 мин | 1 запрос | 5 мин | 5 запросов |\n| Сервисный | 5 мин | 1 запрос | 5 мин | 5 запросов |\n| Базовый с секретом | 5 мин | 1 запрос | 5 мин | 5 запросов |\n| Базовый | 24 ч | 1 запрос | 24 ч | 1 запрос |\n</div>\n",
+        "operationId": "postV1DocumentsDownloadAll",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "example": {
+                "params": [
+                  {
+                    "extension": "zip",
+                    "serviceName": "redeem-notification-44841941"
+                  },
+                  {
+                    "extension": "xlsx",
+                    "serviceName": "act-income-mp-392460936"
+                  }
+                ]
+              },
+              "schema": {
+                "$ref": "#/components/schemas/requestDownload"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetDocs"
+                }
+              }
+            },
+            "description": "<span class='response__value response__value_success'>Успешно</span>"
+          },
+          "400": {
+            "$ref": "#/components/responses/Responses400DownloadAll"
+          },
+          "401": {
+            "$ref": "#/components/responses/401"
+          },
+          "402": {
+            "$ref": "#/components/responses/402"
+          },
+          "429": {
+            "$ref": "#/components/responses/429"
+          }
+        },
+        "security": [
+          {
+            "HeaderApiKey": []
+          }
+        ],
+        "summary": "Получить документы{{ /api/v1/documents/download/all }}",
+        "tags": [
+          "documents"
+        ],
+        "x-category": "documents",
+        "x-readonly-method": true
+      },
+      "servers": [
+        {
+          "url": "https://documents-api.wildberries.ru"
+        }
+      ]
+    },
+    "/api/v1/documents/list": {
+      "get": {
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод возвращает список документов продавца. Вы можете получить [один](./financial-reports-and-accounting#tag/documents/operation/getV1DocumentsDownload) или [несколько](./financial-reports-and-accounting#tag/documents/operation/postV1DocumentsDownloadAll) документов из полученного списка.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 10 сек | 1 запрос | 10 сек | 5 запросов |\n| Сервисный | 10 сек | 1 запрос | 10 сек | 5 запросов |\n| Базовый с секретом | 10 сек | 1 запрос | 10 сек | 5 запросов |\n| Базовый | 24 ч | 1 запрос | 24 ч | 1 запрос |\n</div>\n",
+        "operationId": "getV1DocumentsList",
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/LocaleList"
+          },
+          {
+            "description": "Начало периода. Только вместе с `endTime`",
+            "in": "query",
+            "name": "beginTime",
+            "schema": {
+              "example": "2024-07-09",
+              "format": "date",
+              "type": "string"
+            }
+          },
+          {
+            "description": "Конец периода. Только вместе с `beginTime`",
+            "in": "query",
+            "name": "endTime",
+            "schema": {
+              "example": "2024-07-15",
+              "format": "date",
+              "type": "string"
+            }
+          },
+          {
+            "description": "Сортировка:\n  - `date` — по дате создания документа\n  - `category` — по категории (только при `locale=ru`)\n\nТолько вместе с `order`\n",
+            "in": "query",
+            "name": "sort",
+            "schema": {
+              "default": "date",
+              "enum": [
+                "date",
+                "category"
+              ],
+              "example": "category",
+              "type": "string"
+            }
+          },
+          {
+            "description": "Сортировка:\n  - `desc` — по убыванию\n  - `asc` — по возрастанию\n\nТолько вместе с `sort`\n",
+            "in": "query",
+            "name": "order",
+            "schema": {
+              "default": "desc",
+              "enum": [
+                "desc",
+                "asc"
+              ],
+              "example": "asc",
+              "type": "string"
+            }
+          },
+          {
+            "description": "ID [категории документов](./financial-reports-and-accounting#tag/documents/operation/getV1DocumentsCategories) из поля `name`",
+            "in": "query",
+            "name": "category",
+            "schema": {
+              "example": "redeem-notification",
+              "type": "string"
+            }
+          },
+          {
+            "description": "Уникальный ID документа",
+            "in": "query",
+            "name": "serviceName",
+            "schema": {
+              "example": "redeem-notification-44841941",
+              "type": "string"
+            }
+          },
+          {
+            "description": "Максимальное количество строк ответа",
+            "in": "query",
+            "name": "limit",
+            "schema": {
+              "default": 50,
+              "example": 10,
+              "maximum": 50,
+              "type": "integer"
+            }
+          },
+          {
+            "description": "После какой строки выдавать данные",
+            "in": "query",
+            "name": "offset",
+            "schema": {
+              "default": 0,
+              "example": 90,
+              "type": "integer"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetList"
+                }
+              }
+            },
+            "description": "<span class='response__value response__value_success'>Успешно</span>"
+          },
+          "400": {
+            "$ref": "#/components/responses/Responses400List"
+          },
+          "401": {
+            "$ref": "#/components/responses/401"
+          },
+          "402": {
+            "$ref": "#/components/responses/402"
+          },
+          "429": {
+            "$ref": "#/components/responses/429"
+          }
+        },
+        "security": [
+          {
+            "HeaderApiKey": []
+          }
+        ],
+        "summary": "Список документов{{ /api/v1/documents/list }}",
+        "tags": [
+          "documents"
+        ],
+        "x-category": "documents",
+        "x-readonly-method": true
+      },
+      "servers": [
+        {
+          "url": "https://documents-api.wildberries.ru"
+        }
+      ]
+    }
+  },
+  "security": [
+    {
+      "HeaderApiKey": []
+    }
+  ],
+  "tags": [
+    {
+      "description": "<div class=\"api-description\">\n\n<div class=\"description_important\">\n  Узнать больше о документах и бухгалтерии можно в <a href=\"https://seller.wildberries.ru/instructions/category/ba929b64-1f89-4426-82d7-ce998ee552bd?goBackOption=prevRoute&categoryId=3c971375-9939-45e8-ab82-376019be8942\">справочном центре</a>\n</div>\n\n<div class=\"api-block\">\n\nПросмотр [баланса](./financial-reports-and-accounting#tag/balance), [финансовых отчётов](./financial-reports-and-accounting#tag/financialReports) и [документов](./financial-reports-and-accounting#tag/documents) продавца.\n\n</div>\n\n\n</div>",
+      "name": "Документы и бухгалтерия",
+      "x-traitTag": true
+    },
+    {
+      "description": "<div class=\"description_auth\">\n  Для доступа к методам используйте <a href=\"./api-information#tag/authorization/Kak-sozdat-personalnyj-bazovyj-ili-testovyj-token\">токен</a> для категории <strong>Финансы</strong>\n</div>\n\n<div class=\"description_important\">\n  Узнать больше о балансе продавца можно в <a href=\"https://seller.wildberries.ru/help-center/article/A-225\">справочном центре</a>\n</div>\n\nЧтобы получить [текущий баланс](https://seller.wildberries.ru), воспользуйтесь [методом загрузки](./financial-reports-and-accounting#tag/balance/operation/getV1AccountBalance).\n",
+      "name": "balance",
+      "x-displayName": "Баланс"
+    },
+    {
+      "description": "<div class=\"description_auth\">\n  Для доступа к методам используйте <a href=\"./api-information#tag/authorization/Kak-sozdat-personalnyj-bazovyj-ili-testovyj-token\">токен</a> для категории <strong>Финансы</strong>\n</div>\n\n<div class=\"description_important\">\n  Узнать больше о финансовых отчётах можно в <a href=\"https://seller.wildberries.ru/instructions/ru/ru/subcategory/financial-reports\">справочном центре</a>\n</div>\n\nМетоды получения:\n  1. [Списка](./financial-reports-and-accounting#tag/financialReports/operation/postV1SalesReportsList) отчётов реализации и детализаций к отчётам по [ID](./financial-reports-and-accounting#tag/financialReports/operation/postV1SalesReportsDetailedReportId) и за [период](./financial-reports-and-accounting#tag/financialReports/operation/postV1SalesReportsDetailed)\n  2. [Списка](./financial-reports-and-accounting#tag/financialReports/operation/postV1AcquiringList) отчётов об издержках на приём платежей и детализаций к отчётам по [ID](./financial-reports-and-accounting#tag/financialReports/operation/postV1AcquiringDetailedReportId) и за [период](./financial-reports-and-accounting#tag/financialReports/operation/postV1AcquiringDetailed). Доступно только для продавцов из России\n\n<div class=\"description_important\">\n  Вы можете выгрузить данные в <a href=\"/knowledge-base/articles/019d49a4-650c-7b04-9596-ba441936f9d3\">Google Таблицы</a>\n</div>\n",
+      "name": "financialReports",
+      "x-displayName": "Финансовые отчёты"
+    },
+    {
+      "description": "<div class=\"description_auth\">\n  Для доступа к методам используйте <a href=\"./api-information#tag/authorization/Kak-sozdat-personalnyj-bazovyj-ili-testovyj-token\">токен</a> для категории <strong>Документы</strong>\n</div>\n\nС помощью этих методов вы можете получить [документы продавца](https://seller.wildberries.ru/supplementary-agreements) различных категорий: акты, бухгалтерские отчёты, оферты, письма, списки товаров, УКД, УПД, уведомления и так далее.\n<br><br>\nДля работы с документами получите списки:\n1. [Категорий документов](./financial-reports-and-accounting#tag/documents/operation/getV1DocumentsCategories)\n2. [Документов продавца](./financial-reports-and-accounting#tag/documents/operation/getV1DocumentsList), доступных для загрузки\n\nВы можете загрузить [один](./financial-reports-and-accounting#tag/documents/operation/getV1DocumentsDownload) или [несколько](./financial-reports-and-accounting#tag/documents/operation/postV1DocumentsDownloadAll) документов из полученного списка.\n",
+      "name": "documents",
+      "x-displayName": "Документы"
+    }
+  ]
+}

@@ -13,7 +13,7 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: ee3ad6009958f5f6
+content_sha: 3ca0886a81a71304
 ---
 
 # Изменение статусов нескольких заказов
@@ -79,7 +79,7 @@ content_sha: ee3ad6009958f5f6
     - `errorDetails` — string. Ошибка при изменении статуса заказа. Содержит описание ошибки и идентификатор заказа. Возвращается, если параметр `updateStatus` принимает значение `ERROR`.
     - `operation` — object. **Только для модели LaaS** Информация о запущенной операции по обновлению статуса.
       - `id` — string **обязательный**. Идентификатор операции.
-      - `type` — string (ORDER_RECIPIENT_UPDATE, ORDER_DELIVERY_INTERVAL_UPDATE, ORDER_STATUS_UPDATE, RETURN_CANCELLATION) **обязательный**. Тип операции: * `ORDER_RECIPIENT_UPDATE` — изменение данных получателя. * `ORDER_DELIVERY_INTERVAL_UPDATE` — изменение интервала дат доставки. * `ORDER_STATUS_UPDATE` — обновление статуса заказа для его отмены. * `RETURN_CANCELLATION` — отмена возврата.
+      - `type` — string (ORDER_RECIPIENT_UPDATE, ORDER_DELIVERY_INTERVAL_UPDATE, ORDER_STORAGE_LIMIT_DATE_UPDATE, ORDER_STATUS_UPDATE, RETURN_CANCELLATION) **обязательный**. Тип операции: * `ORDER_RECIPIENT_UPDATE` — изменение данных получателя. * `ORDER_DELIVERY_INTERVAL_UPDATE` — изменение интервала дат доставки. * `ORDER_STORAGE_LIMIT_DATE_UPDATE` — продление срока хранения заказа. * `ORDER_STATUS_UPDATE` — обновление статуса заказа для его отмены. * `RETURN_CANCELLATION` — отмена возврата.
 
 **400** — Запрос содержит неправильные данные. [Подробнее об ошибке](../../concepts/error-codes.md#400)
 

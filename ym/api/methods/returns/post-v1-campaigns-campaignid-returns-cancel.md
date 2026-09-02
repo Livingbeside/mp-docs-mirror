@@ -10,7 +10,7 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: 0878ca5908d064a5
+content_sha: e3f931004b6235c7
 ---
 
 # Отмена возврата
@@ -57,7 +57,7 @@ content_sha: 0878ca5908d064a5
 - `result` — object. Информация об операции по отмене возврата.
   - `operation` — object **обязательный**. Запущенная операция отмены возврата.
     - `id` — string **обязательный**. Идентификатор операции.
-    - `type` — string (ORDER_RECIPIENT_UPDATE, ORDER_DELIVERY_INTERVAL_UPDATE, ORDER_STATUS_UPDATE, RETURN_CANCELLATION) **обязательный**. Тип операции: * `ORDER_RECIPIENT_UPDATE` — изменение данных получателя. * `ORDER_DELIVERY_INTERVAL_UPDATE` — изменение интервала дат доставки. * `ORDER_STATUS_UPDATE` — обновление статуса заказа для его отмены. * `RETURN_CANCELLATION` — отмена возврата.
+    - `type` — string (ORDER_RECIPIENT_UPDATE, ORDER_DELIVERY_INTERVAL_UPDATE, ORDER_STORAGE_LIMIT_DATE_UPDATE, ORDER_STATUS_UPDATE, RETURN_CANCELLATION) **обязательный**. Тип операции: * `ORDER_RECIPIENT_UPDATE` — изменение данных получателя. * `ORDER_DELIVERY_INTERVAL_UPDATE` — изменение интервала дат доставки. * `ORDER_STORAGE_LIMIT_DATE_UPDATE` — продление срока хранения заказа. * `ORDER_STATUS_UPDATE` — обновление статуса заказа для его отмены. * `RETURN_CANCELLATION` — отмена возврата.
 
 **400** — Запрос содержит неправильные данные. [Подробнее об ошибке](../../concepts/error-codes.md#400)
 

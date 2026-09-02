@@ -1,16 +1,16 @@
 ---
-title: Доставка КГТ по realFBS партнёрами Ozon
+title: Доставка КГТ на realFBS Standard партнёрами Ozon
 marketplace: ozon
 kind: article
 path: /kgt/rfbs/dostavka-partnerami-kgt
 source: "https://seller-edu.ozon.ru/libra/kgt/rfbs/dostavka-partnerami-kgt"
-updated: "2026-08-10 13:30:26"
+updated: "2026-09-01 15:20:12"
 doc_id: 873
-fetched_at: "2026-08-28T12:11:15Z"
-content_sha: fae74bc8c6e32b5d
+fetched_at: "2026-09-02T01:50:38Z"
+content_sha: ce5c38e99e2d21e2
 ---
 
-# Доставка КГТ по realFBS партнёрами Ozon
+# Доставка КГТ на realFBS Standard партнёрами Ozon
 
 _Главная / Продажа крупногабаритного товара / realFBS_
 

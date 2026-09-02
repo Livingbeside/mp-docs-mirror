@@ -2,9 +2,9 @@
 title: Документация Ozon Seller API — все методы
 api: ozon-seller
 spec_version: 2.1
-operations: 463
+operations: 465
 source: "https://docs.ozon.ru/api/seller/"
-content_sha: d896d12fa0e03684
+content_sha: c6533b5470d820e3
 ---
 
 # Документация Ozon Seller API
@@ -18,7 +18,7 @@ content_sha: d896d12fa0e03684
 
 > [Информационная платформа и сообщество разработчиков Ozon for dev](https://dev.ozon.ru/)
 
-Версия спеки: `2.1` · методов: **463** · разделов справки: **26**
+Версия спеки: `2.1` · методов: **465** · разделов справки: **26**
 
 Источник: https://docs.ozon.ru/api/seller/
 
@@ -114,6 +114,8 @@ content_sha: d896d12fa0e03684
 | `POST` | `/v1/description-category/attribute/values/search` | CategoryAPI | [Поиск по справочным значениям характеристики](categoryapi/post-v1-description-category-attribute-values-search.md) |
 | `POST` | `/v1/description-category/attribute/values` | CategoryAPI | [Справочник значений характеристики](categoryapi/post-v1-description-category-attribute-values.md) |
 | `POST` | `/v1/description-category/attribute` | CategoryAPI | [Список характеристик категории](categoryapi/post-v1-description-category-attribute.md) |
+| `POST` | `/v1/description-category/dependent-attributes/values` | BetaMethod | [Получить возможные значения дочерней характеристики](betamethod/post-v1-description-category-dependent-attributes-values.md) |
+| `POST` | `/v1/description-category/dependent-attributes` | BetaMethod | [Получить зависимые характеристики](betamethod/post-v1-description-category-dependent-attributes.md) |
 | `POST` | `/v1/description-category/tree` | CategoryAPI | [Дерево категорий и типов товаров](categoryapi/post-v1-description-category-tree.md) |
 | `POST` | `/v1/draft/crossdock/create` | FboSupplyRequest | [Создать черновик заявки на поставку кросс-докингом](fbosupplyrequest/post-v1-draft-crossdock-create.md) |
 | `POST` | `/v1/draft/direct/create` | FboSupplyRequest | [Создать черновик заявки на прямую поставку](fbosupplyrequest/post-v1-draft-direct-create.md) |

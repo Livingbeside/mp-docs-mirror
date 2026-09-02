@@ -1,0 +1,78 @@
+---
+title: Список ярлыков
+api: wb-item-management
+method: GET
+path: /content/v2/tags
+operation_id: get-content-v2-tags
+tags:
+  - labels
+spec_version: items
+source: "https://dev.wildberries.ru/docs/openapi/item-management"
+deprecated: false
+content_sha: 3c6e36857c9f1ace
+---
+
+# Список ярлыков
+
+`GET /content/v2/tags`
+
+Описание метода
+
+Метод возвращает список и характеристики всех ярлыков продавца для группировки и фильтрации товаров.
+
+Лимит запросов на один аккаунт продавца для всех методов Ярлыков:
+
+| Тип | Период | Лимит | Интервал | Всплеск |
+| --- | --- | --- | --- | --- |
+| Персональный | 1 мин | 100 запросов | 600 мс | 5 запросов |
+| Сервисный | 1 мин | 100 запросов | 600 мс | 5 запросов |
+| Базовый с секретом | 1 мин | 100 запросов | 600 мс | 5 запросов |
+| Базовый | 1 ч | 2 запроса | 30 мин | 1 запрос |
+
+В песочнице — максимум 1 запрос в секунду суммарно для всех методов Контента.
+
+## Ответы
+
+**200** — Успешно
+
+- `data` — object
+  - `id` — integer. Числовой ID ярлыка
+  - `color` — string. Цвет ярлыка
+  - `name` — string. Имя ярлыка
+- `error` — boolean. Флаг ошибки
+- `errorText` — string. Описание ошибки
+- `additionalErrors` — string. Дополнительные ошибки
+
+**401** — Не авторизован
+
+- `title` — string. Заголовок ошибки
+- `detail` — string. Детали ошибки
+- `code` — string. Внутренний код ошибки
+- `requestId` — string. Уникальный ID запроса
+- `origin` — string. ID внутреннего сервиса WB
+- `status` — number. HTTP статус-код
+- `statusText` — string. Расшифровка HTTP статус-кода
+- `timestamp` — string<date-time>. Дата и время запроса
+
+**402** — Требуется платёж
+
+- `title` — string. Заголовок ошибки
+- `detail` — string. Детали ошибки. Ошибка возвращается только сервисам из [Каталога решений для бизнеса](/business-solutions)
+
+**403** — Доступ запрещён
+
+- `data` — object. Данные ошибки
+- `error` — boolean. Флаг ошибки
+- `errorText` — string. Текст ошибки
+- `additionalErrors` — string. Дополнительные ошибки
+
+**429** — Слишком много запросов
+
+- `title` — string. Заголовок ошибки
+- `detail` — string. Детали ошибки
+- `code` — string. Внутренний код ошибки
+- `requestId` — string. Уникальный ID запроса
+- `origin` — string. ID внутреннего сервиса WB
+- `status` — number. HTTP статус-код
+- `statusText` — string. Расшифровка HTTP статус-кода
+- `timestamp` — string<date-time>. Дата и время запроса

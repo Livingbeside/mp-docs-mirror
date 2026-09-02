@@ -13,7 +13,7 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: ec09fd085f2f21e3
+content_sha: 2aa128e5a5a950aa
 ---
 
 # Изменение статуса одного заказа
@@ -204,7 +204,7 @@ content_sha: ec09fd085f2f21e3
   - `expiryDate` — string<date-dd-MM-yyyy-HH-mm-ss>. Дата, после которой заказ будет отменен, если не сменит статус. Формат даты: `ДД-ММ-ГГГГ`.
 - `operation` — object. **Только для модели LaaS** Информация о запущенной операции по обновлению статуса.
   - `id` — string **обязательный**. Идентификатор операции.
-  - `type` — string (ORDER_RECIPIENT_UPDATE, ORDER_DELIVERY_INTERVAL_UPDATE, ORDER_STATUS_UPDATE, RETURN_CANCELLATION) **обязательный**. Тип операции: * `ORDER_RECIPIENT_UPDATE` — изменение данных получателя. * `ORDER_DELIVERY_INTERVAL_UPDATE` — изменение интервала дат доставки. * `ORDER_STATUS_UPDATE` — обновление статуса заказа для его отмены. * `RETURN_CANCELLATION` — отмена возврата.
+  - `type` — string (ORDER_RECIPIENT_UPDATE, ORDER_DELIVERY_INTERVAL_UPDATE, ORDER_STORAGE_LIMIT_DATE_UPDATE, ORDER_STATUS_UPDATE, RETURN_CANCELLATION) **обязательный**. Тип операции: * `ORDER_RECIPIENT_UPDATE` — изменение данных получателя. * `ORDER_DELIVERY_INTERVAL_UPDATE` — изменение интервала дат доставки. * `ORDER_STORAGE_LIMIT_DATE_UPDATE` — продление срока хранения заказа. * `ORDER_STATUS_UPDATE` — обновление статуса заказа для его отмены. * `RETURN_CANCELLATION` — отмена возврата.
 
 **400** — Запрос содержит неправильные данные. [Подробнее об ошибке](../../concepts/error-codes.md#400)
 

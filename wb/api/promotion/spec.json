@@ -734,6 +734,61 @@
         },
         "description": "<span class='response__value '>Требуется платёж</span>"
       },
+      "403": {
+        "content": {
+          "application/problem+json": {
+            "example": {
+              "code": "base token is not allowed for this path",
+              "detail": "base token is not allowed",
+              "origin": "s2s-finance",
+              "requestId": "722199b2e15bbca48cc1d488a7989976",
+              "status": 403,
+              "statusText": "Forbidden",
+              "timestamp": "2026-05-25T02:47:09Z",
+              "title": "forbidden"
+            },
+            "schema": {
+              "properties": {
+                "code": {
+                  "description": "Внутренний код ошибки",
+                  "type": "string"
+                },
+                "detail": {
+                  "description": "Детали ошибки",
+                  "type": "string"
+                },
+                "origin": {
+                  "description": "ID внутреннего сервиса WB",
+                  "type": "string"
+                },
+                "requestId": {
+                  "description": "ID запроса",
+                  "type": "string"
+                },
+                "status": {
+                  "description": "HTTP статус-код",
+                  "type": "number"
+                },
+                "statusText": {
+                  "description": "Расшифровка HTTP статус-кода",
+                  "type": "string"
+                },
+                "timestamp": {
+                  "description": "Дата и время запроса",
+                  "format": "date-time",
+                  "type": "string"
+                },
+                "title": {
+                  "description": "Заголовок ошибки",
+                  "type": "string"
+                }
+              },
+              "type": "object"
+            }
+          }
+        },
+        "description": "<span class='response__value '>Доступ запрещён</span>"
+      },
       "429": {
         "content": {
           "application/problem+json": {
@@ -7848,6 +7903,9 @@
           "401": {
             "$ref": "#/components/responses/401"
           },
+          "403": {
+            "$ref": "#/components/responses/403"
+          },
           "429": {
             "$ref": "#/components/responses/429"
           }
@@ -7913,6 +7971,9 @@
           },
           "401": {
             "$ref": "#/components/responses/401"
+          },
+          "403": {
+            "$ref": "#/components/responses/403"
           },
           "429": {
             "$ref": "#/components/responses/429"

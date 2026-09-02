@@ -6323,11 +6323,6 @@
                 "schema": {
                   "$ref": "#/components/schemas/ErrorObject403"
                 }
-              },
-              "application/problem+json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Response403General"
-                }
               }
             },
             "description": "<span class='response__value '>Доступ запрещён</span>"
