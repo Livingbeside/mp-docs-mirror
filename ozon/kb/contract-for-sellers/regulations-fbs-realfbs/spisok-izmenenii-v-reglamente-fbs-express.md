@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /contract-for-sellers/regulations-fbs-realfbs/spisok-izmenenii-v-reglamente-fbs-express
 source: "https://seller-edu.ozon.ru/libra/contract-for-sellers/regulations-fbs-realfbs/spisok-izmenenii-v-reglamente-fbs-express"
-updated: "2026-07-27 18:11:01"
+updated: "2026-09-02 08:37:51"
 doc_id: 681
-fetched_at: "2026-08-28T12:11:14Z"
-content_sha: 06e04accef37b6dd
+fetched_at: "2026-09-03T02:13:24Z"
+content_sha: f054d432b2f75adf
 ---
 
 # Архив изменений в регламенте продавца, который продаёт со своего склада по схеме экспресс-доставки cамостоятельно и через Партнёров Ozon
@@ -38,5 +38,5 @@ _Главная / Договоры для Продавцов на платфор
 | 23.03.2023 (опубликовано 23.03.2023) | Уточнили, что вы сами устанавливаете время на сборку от 15 минут до 3 часов в Личном кабинете (п. 1.2). | [Регламент продавца, который продаёт со своего склада по схеме экспресс-доставки cамостоятельно и через Партнёров Ozon_23032023.pdf ](https://cdn.ozone.ru/s3/ozon-disk-api/Seller-edu/files/contract-for-sellers/reglament-express-partnery-ozon/reglament-express-partnery-ozon-23032023_1679580787.pdf) |
 | 12.12.2022 (опубликовано 09.12.2022) | Закрепили, что нельзя продавать небезопасные товары через партнёров Ozon (п. 10). | [Регламент продавца, который продаёт со своего склада по схеме экспресс-доставки cамостоятельно и через Партнёров Ozon_12122022.pdf ](https://cdn.ozone.ru/s3/ozon-disk-api/Seller-edu/files/contract-for-sellers/reglament-express-partnery-ozon/reglament-express-partnery-ozon-12122022_1670584695.pdf) |
 | 04.10.2022 (опубликовано 20.09.2022) | Уточнили, как будем компенсировать убытки по возвратам продавцам (п. 8). | [Регламент продавца, который продаёт со своего склада по схеме экспресс-доставки cамостоятельно и через Партнёров Ozon_04102022.pdf ](https://cdn.ozone.ru/s3/ozon-disk-api/Seller-edu/files/contract-for-sellers/reglament-express-partnery-ozon/reglament-express-partnery-ozon-04102022_1663673227.pdf) |
-| 18.07.2022 (опубликовано 04.07.2022) | Добавили: п.8 «Порядок возмещения убытков при доставке с помощью Партнёров Ozon»: перечислили  материалы, без которых не сможем рассмотреть претензию;  рассказали об информации, которую можем дополнительно запросить, чтобы разобраться в произошедшем.п.9 «Условия для компенсации за экспертизу». Закрепили условия и максимальную сумму возмещения. | [Регламент продавца, который продаёт со своего склада по схеме экспресс-доставки cамостоятельно и через Партнёров Ozon_18072022.pdf ](https://cdn.ozone.ru/s3/ozon-disk-api/Seller-edu/contract-for-sellers/reglament-prodaji-so-svoego-sklada-fbs-express/04-07-2022_1665412965.pdf) |
-| 28.10.2021 (опубликовано 28.10.2021) | Регламент создан и выложен на портал. | [Регламент партнера, который продает со своего склада по схеме Express_28102021.pdf ](https://cdn.ozone.ru/s3/ozon-disk-api/Seller-edu/contract-for-sellers/reglament-prodaji-so-svoego-sklada-fbs-express/28-10-2021_1665412966.pdf) |
+| 18.07.2022 (опубликовано 04.07.2022) | Добавили: п.8 «Порядок возмещения убытков при доставке с помощью Партнёров Ozon»: перечислили  материалы, без которых не сможем рассмотреть претензию;  рассказали об информации, которую можем дополнительно запросить, чтобы разобраться в произошедшем.п.9 «Условия для компенсации за экспертизу». Закрепили условия и максимальную сумму возмещения. | [Регламент продавца, который продаёт со своего склада по схеме экспресс-доставки cамостоятельно и через Партнёров Ozon_18072022.pdf ](https://cdn.ozone.ru/s3/ozon-disk-api/Seller-edu/files/contract-for-sellers/reglament-express-partnery-ozon/reglament-express-partnery-ozon-04-07-2022_1788338019.pdf) |
+| 28.10.2021 (опубликовано 28.10.2021) | Регламент создан и выложен на портал. | [Регламент партнера, который продает со своего склада по схеме Express_28102021.pdf ](https://cdn.ozone.ru/s3/ozon-disk-api/Seller-edu/files/contract-for-sellers/reglament-express-partnery-ozon/reglament-express-partnery-ozon-28-10-2021_1788338019.pdf) |

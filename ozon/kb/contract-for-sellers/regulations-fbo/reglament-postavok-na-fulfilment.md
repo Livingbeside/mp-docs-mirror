@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /contract-for-sellers/regulations-fbo/reglament-postavok-na-fulfilment
 source: "https://seller-edu.ozon.ru/libra/contract-for-sellers/regulations-fbo/reglament-postavok-na-fulfilment"
-updated: "2026-08-04 15:04:05"
+updated: "2026-09-02 11:33:35"
 doc_id: 672
-fetched_at: "2026-08-28T12:11:14Z"
-content_sha: 27ccdb7013ae9e53
+fetched_at: "2026-09-03T02:13:24Z"
+content_sha: 5c1f7032db104b4a
 ---
 
 # Регламент партнёра по поставкам товаров на фулфилмент-центры Ozon
@@ -795,7 +795,7 @@ Ozon отправляет Продавцу отчёт о компенсация�
 
 фото товара со всех сторон, чтобы были видны этикетки;
 
-rрупные фото этикеток — на коробке и на самом товаре;
+крупные фото этикеток — на коробке и на самом товаре;
 
 видео сборки товара;
 

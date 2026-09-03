@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /how-to-sell-effectively/bonusi
 source: "https://seller-edu.ozon.ru/libra/how-to-sell-effectively/bonusi"
-updated: "2026-07-02 11:15:36"
+updated: "2026-09-02 14:33:37"
 doc_id: 880
-fetched_at: "2026-08-28T12:11:14Z"
-content_sha: 9a84a63213ea714c
+fetched_at: "2026-09-03T02:13:24Z"
+content_sha: af41d83d77e3bd59
 ---
 
 # Бонусы на продвижение
@@ -15,10 +15,6 @@ content_sha: 9a84a63213ea714c
 _Главная / Продвижение_
 
 За что можно получить бонусы на продвижение и как их потратить
-
-Даём до 15 000 бонусов на продвижение новым продавцам, зарегистрированным на Ozon с 1 по 31 октября 2025 года, за пополнение баланса со счёта Ozon Банка.
-
-[Подробнее об акции](/fintech/settlement-service/ozon-rko#акция-«троиная-выгода-с-ozon-банком»)
 
 # Что такое бонусы
 

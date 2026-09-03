@@ -5,12 +5,20 @@ tag: News
 group: Обновления
 kind: changelog
 source: "https://docs.ozon.ru/api/seller/"
-content_sha: 7e1f7d84ef73ae5a
+content_sha: 89b01a4aebc7d27e
 ---
 
 # Обновления
 
 Следите за обновлениями документации на платформе для разработчиков [Ozon for dev](https://dev.ozon.ru/).
+
+## 2 сентября 2026
+
+| Метод | Изменение |
+|-----------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [/v1/product/certificate/products/list](#operation/CertificateProductsList) | 28 сентября 2026 года отключим параметры `page` и `page_size` в запросе метода. Используйте параметры `last_id` и `limit`.<br>Обновили описание параметра `last_id` в запросе метода. |
+| [/v1/notification/list](#operation/NotificationList) | Добавили параметры `availability_statuses`, `limit`, `offset` и `sort_dir` в запрос метода.<br>Добавили параметры `availability_status_thresholds`, `total_count`, `urls.availability_status`, `urls.availability_status_date`, `urls.disable_reason`, `urls.problematic_type` и `urls.reason_details` в ответ метода. |
+| — | В разделе [**Авторизация через API-ключ → Как получить API-ключ**](#section/Kak-poluchit-API-klyuch) обновили срок действия API-ключа. |
 
 ## 1 сентября 2026
 

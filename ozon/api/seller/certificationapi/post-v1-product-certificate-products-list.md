@@ -9,12 +9,14 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: 65c928430ba44d91
+content_sha: 0fb5dd200f98c532
 ---
 
 # Список товаров, привязанных к сертификату
 
 `POST /v1/product/certificate/products/list`
+
+28 сентября 2026 года отключим параметры page и page_size в запросе метода. Используйте параметры last_id и limit.
 
 ## Параметры
 

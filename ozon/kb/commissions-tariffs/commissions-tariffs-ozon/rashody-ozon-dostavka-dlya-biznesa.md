@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /commissions-tariffs/commissions-tariffs-ozon/rashody-ozon-dostavka-dlya-biznesa
 source: "https://seller-edu.ozon.ru/libra/commissions-tariffs/commissions-tariffs-ozon/rashody-ozon-dostavka-dlya-biznesa"
-updated: "2026-07-29 14:06:03"
+updated: "2026-09-02 17:21:58"
 doc_id: 75030
-fetched_at: "2026-08-28T12:11:14Z"
-content_sha: c68c1c35b9352c1e
+fetched_at: "2026-09-03T02:13:24Z"
+content_sha: fa1cada9b5e6f785
 ---
 
 # Ozon Доставка для бизнеса: расходы на доставку, невыкупы, отмены и другие услуги
@@ -224,13 +224,33 @@ Ozon — начислим плату за услугу «Доставка до �
 
 ## Обратная логистика
 
+С 10 сентября 2026 г.
+
+С 16 июня 2026 г. по 16 сентября 2026 г. действуют специальные тарифы на услугу.
+
+[Скачать таблицу с тарифами](https://cdn.ozone.ru/s3/ozon-disk-api/Seller-edu/files/commissions-tariffs/Ozon-logistica/tariffs-logistika-ozon-dostavka-16-06-26_1781508677.xlsx)
+
+Обратная логистика включает в себя:
+
+приёмку на объекте Ozon возвращаемого отправления или товара от Клиента, в том числе невыкупа и отмены;
+
+для сервиса Ozon Доставка для бизнеса и Ozon Доставка для Продавцов при продаже со склада продавца отправка продавцу.
+
+Доставка отправления в Кластер возврата или к продавцу в случае отмены или невыкупа Клиентом.
+
+Тариф на обратную логистику равен тарифу на [логистику](https://seller-edu.ozon.ru/libra/commissions-tariffs/commissions-tariffs-ozon/rashody-na-dostavku-cherez-ozon-logistiku#%D0%BB%D0%BE%D0%B3%D0%B8%D1%81%D1%82%D0%B8%D0%BA%D0%B0).
+
+За другие применимые услуги берём плату. Закрепили их стоимость в разделе [«Комиссии и тарифы»](https://seller-edu.ozon.ru/commissions-tariffs/legal-information/full-actual-commissions).
+
+До 9 сентября 2026 г.
+
 С 16 июня 2026 г. по 16 сентября 2026 г. действуют специальные тарифы на услугу.
 
 [Скачать таблицу с тарифами](https://cdn.ozone.ru/s3/ozon-disk-api/Seller-edu/files/commissions-tariffs/Ozon-logistica/tariffs-logistika-ozon-dostavka-16-06-26_1781508677.xlsx)
 
 Доставка отправления в Кластер возврата или к продавцу в случае отмены или невыкупа Клиентом.
 
-Тариф на обратную логистику равен тарифу на [логистику](https://seller-edu.ozon.ru/libra/commissions-tariffs/commissions-tariffs-ozon/rashody-na-dostavku-cherez-ozon-logistiku#%D0%BB%D0%BE%D0%B3%D0%B8%D1%81%D1%82%D0%B8%D0%BA%D0%B0).
+Тариф на обратную логистику равен тарифу на [логистику](https://seller-edu.ozon.ru/commissions-tariffs/commissions-tariffs-ozon/rashody-na-dostavku-cherez-ozon-logistiku#%D0%BB%D0%BE%D0%B3%D0%B8%D1%81%D1%82%D0%B8%D0%BA%D0%B0).
 
 За другие применимые услуги берём плату. Закрепили их стоимость в разделе [«Комиссии и тарифы»](https://seller-edu.ozon.ru/commissions-tariffs/legal-information/full-actual-commissions).
 

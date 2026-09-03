@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /charity/zagruzka/kak-dobavit-nko-v-razdel-blagotvoritelnost-na-ozon
 source: "https://seller-edu.ozon.ru/libra/charity/zagruzka/kak-dobavit-nko-v-razdel-blagotvoritelnost-na-ozon"
-updated: "2026-08-21 13:27:56"
+updated: "2026-09-02 15:42:36"
 doc_id: 28177
-fetched_at: "2026-08-28T12:11:15Z"
-content_sha: 66e6faa6f920d4c5
+fetched_at: "2026-09-03T02:13:25Z"
+content_sha: 14276ffc6fdb5e9e
 ---
 
 # Как добавить НКО в раздел «Благотворительность» на Ozon
@@ -111,3 +111,14 @@ Ozon не берёт комиссию, не управляет собранны�
 Ozon и продавцом. [Подробнее](https://seller-edu.ozon.ru/contract-for-sellers/contract-goods/contract-for-sell-goods-on-ozon#%D1%80%D0%B0%D0%B7%D0%B4%D0%B5%D0%BB-%C2%AB%D0%B1%D0%BB%D0%B0%D0%B3%D0%BE%D1%82%D0%B2%D0%BE%D1%80%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%BE%D1%81%D1%82%D1%8C%C2%BB)
 
 Ozon и НКО. [Подробнее](https://seller-edu.ozon.ru/contract-for-sellers/contract-certificates/contract-for-sellers-of-certificates-for-services#%D1%80%D0%B0%D0%B7%D0%B4%D0%B5%D0%BB-%C2%AB%D1%81%D0%BE%D0%B3%D0%BB%D0%B0%D1%88%D0%B5%D0%BD%D0%B8%D0%B5-%D0%BE%D0%B1-%D0%B8%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%86%D0%B8%D0%BE%D0%BD%D0%BD%D0%BE-%D1%82%D0%B5%D1%85%D0%BD%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%BE%D0%BC-%D0%BF%D0%B0%D1%80%D1%82%D0%BD%D0%B5%D1%80%D1%81%D1%82%D0%B2%D0%B5%C2%BB)
+
+# Как вести учёт и отчётность по пожертвованиям
+
+**Внутренний учёт** — публикуйте отчёты по правилам вашей организации. Будьте готовы предоставить «Отчёт о целевом использовании денежных средств», если его запросит продавец.
+
+**Детализация поступлений** — выделяйте пожертвования от продавцов Ozon отдельной строкой: так проще вести учёт и сразу видно, откуда пришли деньги.
+
+**Индивидуальные и общие сборы**:
+деньги, полученные от регулярных или разовых пожертвований в фонд, направляйте на уставную деятельность и содержание организации;
+
+поступления от индивидуальных сборов на конкретные проекты учитывайте как расходы на их реализацию.

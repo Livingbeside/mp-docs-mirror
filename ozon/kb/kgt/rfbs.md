@@ -6,8 +6,8 @@ path: /kgt/rfbs
 source: "https://seller-edu.ozon.ru/libra/kgt/rfbs"
 updated: "2022-10-27 09:48:56.293183"
 doc_id: 871
-fetched_at: "2026-09-02T01:50:37Z"
-content_sha: 96d162a0dd8a3ecc
+fetched_at: "2026-09-03T02:13:24Z"
+content_sha: e874ffa9d47d95f5
 ---
 
 # realFBS
@@ -23,4 +23,3 @@ _Главная / Продажа крупногабаритного товара
 - [Работа с возвратами КГТ по realFBS](https://seller-edu.ozon.ru/libra/kgt/rfbs/vozvraty-kgt-rfbs)
 - [Частичные компенсации при работе с возвратами КГТ по realFBS](https://seller-edu.ozon.ru/libra/kgt/rfbs/chastichnye-kompensacii)
 - [Погрузочно-разгрузочные работы (ПРР) на realFBS](https://seller-edu.ozon.ru/libra/kgt/rfbs/prr-kgt-rfbs)
-- [Перевозка автомобилей на realFBS](https://seller-edu.ozon.ru/libra/kgt/rfbs/perevozka-avto-rfbs)

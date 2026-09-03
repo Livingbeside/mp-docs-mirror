@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /fbo/warehouses/table-klastery
 source: "https://seller-edu.ozon.ru/libra/fbo/warehouses/table-klastery"
-updated: "2026-08-20 12:53:44"
+updated: "2026-09-02 13:33:25"
 doc_id: 690
-fetched_at: "2026-08-28T12:11:15Z"
-content_sha: 3867f3199a219710
+fetched_at: "2026-09-03T02:13:25Z"
+content_sha: b530405e27cda4bf
 ---
 
 # Кластеры доставки
@@ -74,6 +74,8 @@ _Главная / Продажа со склада Ozon (FBO) / Склады, а
 
 Купавна РФЦ Негабарит
 
+Никольское РФЦ Негабарит
+
 Ногинск РФЦ
 
 Ногинск РФЦ Негабарит
@@ -117,6 +119,8 @@ _Главная / Продажа со склада Ozon (FBO) / Склады, а
 СПБ Волхонка 2 РФЦ Паллетный
 
 СПБ Порошкино РФЦ
+
+СПБ Шоссейная РФЦ Негабарит
 
 Казань
 
