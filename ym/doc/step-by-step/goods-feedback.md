@@ -2,14 +2,14 @@
 title: Отзывы о товарах
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/goods-feedback.md"
-fetched_at: "2026-08-28T11:51:35Z"
-content_sha: 30ec1428c0af865b
+fetched_at: "2026-09-04T01:57:54Z"
+content_sha: 95d5844de29054ad
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.55.3
+    content: Diplodoc Platform v5.57.3
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/step-by-step/goods-feedback.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/goods-feedback.md

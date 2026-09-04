@@ -2,14 +2,14 @@
 title: В магазине
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/offers/deleteCampaignOffers.md"
-fetched_at: "2026-08-28T11:51:56Z"
-content_sha: 9ab017a67e29a12f
+fetched_at: "2026-09-04T01:58:15Z"
+content_sha: 39976eb65f5cb0dd
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.55.3
+    content: Diplodoc Platform v5.57.3
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/offers/deleteCampaignOffers.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/offers/deleteCampaignOffers.md

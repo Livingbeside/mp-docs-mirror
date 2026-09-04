@@ -2,14 +2,14 @@
 title: Общение с покупателями
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/_auto/scopes_summary/pages/communication.md"
-fetched_at: "2026-08-28T11:51:16Z"
-content_sha: 983c42828220b592
+fetched_at: "2026-09-04T01:57:37Z"
+content_sha: 9b267679f27ab19e
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.55.3
+    content: Diplodoc Platform v5.57.3
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/_auto/scopes_summary/pages/communication.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/_auto/scopes_summary/pages/communication.md

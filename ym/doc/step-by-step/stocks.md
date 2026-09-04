@@ -2,14 +2,14 @@
 title: Передача остатков
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/stocks.md"
-fetched_at: "2026-08-28T11:51:29Z"
-content_sha: 9f82f6c09457c539
+fetched_at: "2026-09-04T01:57:48Z"
+content_sha: 23ce7ffc97f9a602
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.55.3
+    content: Diplodoc Platform v5.57.3
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/step-by-step/stocks.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/stocks.md

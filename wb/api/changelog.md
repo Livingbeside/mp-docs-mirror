@@ -4,8 +4,8 @@ api: wildberries
 kind: changelog
 source: "https://dev.wildberries.ru/release-notes"
 window: последние записи, страница отдаёт не всю историю
-fetched_at: "2026-09-02T01:53:23Z"
-content_sha: 2ffa7f7ab9dce91c
+fetched_at: "2026-09-04T01:57:31Z"
+content_sha: dd3371a9c5db1be6
 ---
 
 # Журнал изменений WB API
@@ -63,6 +63,35 @@ content_sha: 2ffa7f7ab9dce91c
 Изменения
 
 Устарело
+
+Сентябрь
+2026
+
+Новое
+
+## 03.09.2026
+
+Заказы FBS
+
+Поставки FBS
+
+Новые методы Поставок FBS
+
+Добавили методы для работы с данными [СПОТ](https://www.nalog.gov.ru/rn77/related_activities/spot/) — системы ввоза товаров автомобильным транспортом из стран ЕАЭС. Заполнять данные СПОТ обязательно для всех поставок из ЕАЭС в РФ.
+
+С помощью новых методов вы можете:
+
+- Получать список стран ОКСМ — [GET /api/marketplace/v3/fbs/dictionaries/countries/oksm](/docs/openapi/orders-fbs#tag/Postavki-FBS/operation/getV3FbsDictionariesCountriesOksm)
+- Добавлять данные СПОТ в поставку — [PUT /api/marketplace/v3/fbs/supplies/{supplyId}/spot](/docs/openapi/orders-fbs#tag/Postavki-FBS/operation/putV3FbsSuppliesSupplyIdSpot)
+- Получать данные СПОТ для списка поставок — [POST /api/marketplace/v3/fbs/supplies/spot/list](/docs/openapi/orders-fbs#tag/Postavki-FBS/operation/postV3FbsSuppliesSpotList)
+- Получать сформированные QR-коды СПОТ — [GET /api/marketplace/v3/fbs/supplies/{supplyId}/stickers/spot](/docs/openapi/orders-fbs#tag/Postavki-FBS/operation/getV3FbsSuppliesSupplyIdStickersSpot)
+
+Также добавили поле `spotAvailable` — доступен ли СПОТ для данной поставки — в методы:
+
+- Получить список поставок — [GET /api/v3/supplies](/docs/openapi/orders-fbs#tag/Postavki-FBS/paths/~1api~1v3~1supplies/get)
+- Получить информацию о поставке — [GET /api/v3/supplies/{supplyId}](/docs/openapi/orders-fbs#tag/Postavki-FBS/paths/~1api~1v3~1supplies~1%7BsupplyId%7D/get)
+
+Сейчас методы доступны только для продавцов из Кыргызстана. В дальнейшем методы будут доступны продавцам из любой страны ЕАЭС кроме РФ, следите за обновлениями.
 
 Август
 2026
@@ -545,19 +574,5 @@ DBS
 С **21 июля** получить сборочные задания, созданные более 3 месяцев назад, вы сможете только методом [GET /api/marketplace/v3/fbs/orders/archive](/docs/openapi/orders-fbs/#tag/Sborochnye-zadaniya-FBS/paths/~1api~1marketplace~1v3~1fbs~1orders~1archive/get).
 
 Метод [GET /api/v3/orders](/docs/openapi/orders-fbs/#tag/Sborochnye-zadaniya-FBS/paths/~1api~1v3~1orders/get) будет возвращать информацию только о сборочных заданиях, созданных менее 3 месяцев назад.
-
-Новое
-
-## 24.06.2026
-
-Общее
-
-Информация о продавце
-
-Новый метод в разделе Информация о продавце
-
-Теперь с помощью WB API вы можете получить информацию обо всех опциях и пакетах опций, которые продавец подключил в [Конструкторе тарифов](https://seller.wildberries.ru/tariff-constructor). Для этого используйте новый метод [GET /api/common/v1/tariff-constructor/options](/docs/openapi/api-information#tag/sellerInformation/operation/getV1TariffConstructorOptions).
-
-Метод доступен через **Сервисный токен** любой [категории](/docs/openapi/api-information#tag/authorization/Kategorii-tokenov).
 
 Мы используем [cookies](/privacy) для сбора статистики и улучшения сервиса

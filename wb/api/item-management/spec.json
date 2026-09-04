@@ -3659,6 +3659,9 @@
             "type": "string"
           }
         },
+        "required": [
+          "error"
+        ],
         "type": "object"
       },
       "responseItemList": {
@@ -3668,9 +3671,9 @@
             "oneOf": [
               {
                 "additionalProperties": false,
-                "nullable": true,
                 "properties": {
                   "string": {
+                    "nullable": true,
                     "type": "string"
                   }
                 },
@@ -8731,6 +8734,7 @@
                               "properties": {
                                 "chrtID": {
                                   "description": "Числовой ID размера для данного артикула WB",
+                                  "format": "int64",
                                   "type": "integer"
                                 },
                                 "skus": {

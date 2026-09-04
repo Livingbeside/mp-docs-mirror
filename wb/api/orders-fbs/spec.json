@@ -1,23 +1,6 @@
 {
   "components": {
     "examples": {
-      "APIError400V2": {
-        "value": {
-          "code": "BadRequest",
-          "detail": "Incorrect parameter",
-          "errors": [
-            {
-              "location": "query.next",
-              "message": "expected integer",
-              "value": "1w"
-            }
-          ],
-          "origin": "marketplace-public-api",
-          "requestId": "a0b5907c-2978-4db6-9a59-00666e8b8d54",
-          "status": 400,
-          "title": "IncorrectParameter"
-        }
-      },
       "APIError403V2": {
         "value": {
           "code": "AccessDenied",
@@ -35,10 +18,33 @@
           "title": "AccessDenied"
         }
       },
-      "AutoreturnError400": {
+      "ApiError400V3": {
+        "value": {
+          "detail": "Not Found",
+          "title": "NotFound"
+        }
+      },
+      "ApiError404V3": {
         "value": {
           "detail": "Incorrect required body",
           "title": "IncorrectRequestBody"
+        }
+      },
+      "ArhiveOrderError400": {
+        "value": {
+          "code": "BadRequest",
+          "detail": "Incorrect parameter",
+          "errors": [
+            {
+              "location": "query.next",
+              "message": "expected integer",
+              "value": "1w"
+            }
+          ],
+          "origin": "marketplace-public-api",
+          "requestId": "a0b5907c-2978-4db6-9a59-00666e8b8d54",
+          "status": 400,
+          "title": "IncorrectParameter"
         }
       },
       "AutoreturnError400Parameter": {
@@ -118,6 +124,12 @@
           "message": "Fix them to dispatch items"
         }
       },
+      "SpotApiError409V3": {
+        "value": {
+          "detail": "SPOT actions aren't available for this shipment",
+          "title": "SpotActionNotAllowed"
+        }
+      },
       "StatusChangeNotAllowed": {
         "value": {
           "code": "StatusChangeNotAllowed",
@@ -158,6 +170,49 @@
         "value": {
           "code": "SupplyShippingRequired",
           "message": "Specify shipping point, type and date to close the supply"
+        }
+      },
+      "SupplySpotDataResponse": {
+        "value": {
+          "supplies": [
+            {
+              "id": "WB-GI-0000001",
+              "spot": {
+                "carrierCountryCode": "112",
+                "carrierName": "ООО СПОТ",
+                "carrierTaxNumber": "7588179007",
+                "status": "completed",
+                "trailerRegistrationNumber": "АА000100",
+                "vehicleRegistrationNumber": "А123АА100"
+              }
+            },
+            {
+              "id": "WB-GI-0000002",
+              "spot": {
+                "carrierCountryCode": "112",
+                "carrierName": "ООО СПОТ",
+                "carrierTaxNumber": "7588179007",
+                "errorCode": "doppFailed",
+                "status": "failed",
+                "trailerRegistrationNumber": "АА000100",
+                "vehicleRegistrationNumber": "А123АА100"
+              }
+            },
+            {
+              "error": {
+                "detail": "Not Found",
+                "title": "NotFound"
+              },
+              "id": "WB-GI-0000003"
+            },
+            {
+              "error": {
+                "detail": "Spot Action Not Allowed",
+                "title": "SpotActionNotAllowed"
+              },
+              "id": "WB-GI-0000004"
+            }
+          ]
         }
       },
       "UpdatedSuppliesShippingMethod": {
@@ -723,7 +778,7 @@
         },
         "type": "object"
       },
-      "AutoreturnError400": {
+      "ApiErrorV3": {
         "properties": {
           "detail": {
             "description": "Детали ошибки",
@@ -737,6 +792,90 @@
         "required": [
           "title",
           "detail"
+        ],
+        "type": "object"
+      },
+      "ArhiveOrderError400": {
+        "properties": {
+          "code": {
+            "description": "Код ошибки",
+            "type": "string"
+          },
+          "detail": {
+            "description": "Детали ошибки",
+            "type": "string"
+          },
+          "errors": {
+            "description": "Информация об ошибке",
+            "items": {
+              "properties": {
+                "location": {
+                  "description": "Параметр, где произошла ошибка",
+                  "type": "string"
+                },
+                "message": {
+                  "description": "Текст ошибки",
+                  "type": "string"
+                },
+                "value": {
+                  "description": "Значение параметра, где произошла ошибка"
+                }
+              },
+              "type": "object"
+            },
+            "type": "array"
+          },
+          "origin": {
+            "description": "ID внутреннего сервиса WB",
+            "type": "string"
+          },
+          "requestId": {
+            "description": "Уникальный ID запроса",
+            "type": "string"
+          },
+          "status": {
+            "description": "HTTP статус-код ответа",
+            "type": "integer"
+          },
+          "title": {
+            "description": "Заголовок ошибки",
+            "type": "string"
+          }
+        },
+        "required": [
+          "title",
+          "detail"
+        ],
+        "type": "object"
+      },
+      "CountriesOKSMList": {
+        "properties": {
+          "countries": {
+            "description": "Список стран ОКСМ",
+            "items": {
+              "properties": {
+                "code": {
+                  "description": "Код страны",
+                  "example": "036",
+                  "type": "string"
+                },
+                "name": {
+                  "description": "Название страны",
+                  "example": "Австралия",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "code",
+                "name"
+              ],
+              "type": "object"
+            },
+            "type": "array"
+          }
+        },
+        "required": [
+          "countries"
         ],
         "type": "object"
       },
@@ -1621,6 +1760,11 @@
             "nullable": true,
             "type": "string"
           },
+          "spotAvailable": {
+            "description": "Доступен ли СПОТ для этой поставки:\n  - `true` — да. Используйте метод [получения данных СПОТ](./orders-fbs#tag/Postavki-FBS/operation/postV3FbsSuppliesSpotList)\n  - `false` — нет\n",
+            "example": true,
+            "type": "boolean"
+          },
           "waybillUuid": {
             "description": "ID ЭТрН — электронной транспортной накладной. Обязателен при `\"shippingType\":\"transportCompany\"`",
             "example": "550e8400-e29b-41d4-a716-384579387429",
@@ -1628,6 +1772,121 @@
             "type": "string"
           }
         },
+        "required": [
+          "spotAvailable"
+        ],
+        "type": "object"
+      },
+      "SupplySpotData": {
+        "properties": {
+          "carrierCountryCode": {
+            "description": "Код страны перевозчика по [ОКСМ](./orders-fbs#tag/Postavki-FBS/operation/getV3FbsDictionariesCountriesOksm)",
+            "type": "string"
+          },
+          "carrierName": {
+            "description": "Наименование перевозчика",
+            "maxLength": 1000,
+            "minLength": 1,
+            "type": "string"
+          },
+          "carrierTaxNumber": {
+            "description": "ИНН перевозчика",
+            "type": "string"
+          },
+          "errorCode": {
+            "description": "Код ошибки от сервиса формирования ДОПП — документа о предстоящей поставке. Возвращается при `\"status\": \"failed\"`. Чтобы исправить ошибку, проверьте данные СПОТ и [добавьте их в поставку](./orders-fbs#tag/Postavki-FBS/operation/getV3FbsSuppliesSupplyIdSpot) ещё раз\n",
+            "enum": [
+              "doppFailed"
+            ],
+            "type": "string"
+          },
+          "status": {
+            "description": "Статус СПОТ:\n  - `pending` — ожидается результат формирования ДОПП — документа о предстоящей поставке\n  - `completed` — ДОПП успешно сформирован. Можно [получить QR-код](./orders-fbs#tag/Postavki-FBS/operation/getV3FbsSuppliesSupplyIdStickersSpot)\n  - `failed` — ошибка формирования ДОПП. Подробнее в поле `errorCode`\n",
+            "enum": [
+              "pending",
+              "completed",
+              "failed"
+            ],
+            "type": "string"
+          },
+          "trailerRegistrationNumber": {
+            "description": "Регистрационный номер прицепа",
+            "type": "string"
+          },
+          "vehicleRegistrationNumber": {
+            "description": "Регистрационный номер транспортного средства",
+            "type": "string"
+          }
+        },
+        "required": [
+          "status",
+          "carrierTaxNumber",
+          "carrierName",
+          "carrierCountryCode",
+          "vehicleRegistrationNumber"
+        ],
+        "type": "object"
+      },
+      "SupplySpotDataResponse": {
+        "properties": {
+          "supplies": {
+            "items": {
+              "properties": {
+                "error": {
+                  "allOf": [
+                    {
+                      "$ref": "#/components/schemas/ApiErrorV3"
+                    },
+                    {
+                      "example": {
+                        "value": {
+                          "detail": "Incorrect required body",
+                          "title": "IncorrectRequestBody"
+                        }
+                      }
+                    }
+                  ]
+                },
+                "id": {
+                  "description": "ID поставки",
+                  "type": "string"
+                },
+                "spot": {
+                  "allOf": [
+                    {
+                      "description": "Данные СПОТ"
+                    },
+                    {
+                      "$ref": "#/components/schemas/SupplySpotData"
+                    }
+                  ]
+                }
+              },
+              "required": [
+                "id"
+              ],
+              "type": "object"
+            },
+            "type": "array"
+          }
+        },
+        "required": [
+          "supplies"
+        ],
+        "type": "object"
+      },
+      "SupplySpotQRCode": {
+        "properties": {
+          "qrCode": {
+            "description": "QR-код поставки в кодировке base64",
+            "example": "U3dhZ2dlciByb2Nrcw==",
+            "format": "base64",
+            "type": "string"
+          }
+        },
+        "required": [
+          "qrCode"
+        ],
         "type": "object"
       },
       "SupplyTrbx": {
@@ -1794,59 +2053,6 @@
             "type": "string"
           }
         },
-        "type": "object"
-      },
-      "v3.APIErrorV2": {
-        "properties": {
-          "code": {
-            "description": "Код ошибки",
-            "type": "string"
-          },
-          "detail": {
-            "description": "Детали ошибки",
-            "type": "string"
-          },
-          "errors": {
-            "description": "Информация об ошибке",
-            "items": {
-              "properties": {
-                "location": {
-                  "description": "Параметр, где произошла ошибка",
-                  "type": "string"
-                },
-                "message": {
-                  "description": "Текст ошибки",
-                  "type": "string"
-                },
-                "value": {
-                  "description": "Значение параметра, где произошла ошибка"
-                }
-              },
-              "type": "object"
-            },
-            "type": "array"
-          },
-          "origin": {
-            "description": "ID внутреннего сервиса WB",
-            "type": "string"
-          },
-          "requestId": {
-            "description": "Уникальный ID запроса",
-            "type": "string"
-          },
-          "status": {
-            "description": "HTTP статус-код ответа",
-            "type": "integer"
-          },
-          "title": {
-            "description": "Заголовок ошибки",
-            "type": "string"
-          }
-        },
-        "required": [
-          "title",
-          "detail"
-        ],
         "type": "object"
       },
       "v3.ArchiveOrder": {
@@ -2171,6 +2377,41 @@
   },
   "openapi": "3.0.1",
   "paths": {
+    "/api/marketplace/v3/fbs/dictionaries/countries/oksm": {
+      "get": {
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод возвращает список стран ОКСМ — Общероссийского классификатора стран мира — с полными названиями и кодами.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца для методов <strong>сборочных заданий, поставок, пропусков и настроек автовозврата FBS</strong>:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 300 запросов | 200 мс | 20 запросов |\n\nОдин запрос с кодами ответов <code>4XX</code> учитывается как 10 запросов\n\n</div>\n",
+        "operationId": "getV3FbsDictionariesCountriesOksm",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CountriesOKSMList"
+                }
+              }
+            },
+            "description": "<span class='response__value response__value_success'>Успешно</span>"
+          },
+          "401": {
+            "$ref": "#/components/responses/401"
+          },
+          "429": {
+            "$ref": "#/components/responses/429"
+          }
+        },
+        "summary": "Получить список стран ОКСМ{{ /api/marketplace/v3/fbs/dictionaries/countries/oksm }}",
+        "tags": [
+          "Поставки FBS"
+        ],
+        "x-category": "marketplace",
+        "x-readonly-method": true
+      },
+      "servers": [
+        {
+          "url": "https://marketplace-api.wildberries.ru"
+        }
+      ]
+    },
     "/api/marketplace/v3/fbs/orders/archive": {
       "get": {
         "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод возвращает сборочные задания, созданные более 3 месяцев назад.<br>\nЧасть сборочных заданий попадает в архив позже, чем через 3 месяца после создания, так как поставка переходит в архив только после того, как все заказы в ней будут завершены.\nНапример, так происходит, если продавец не доставил один из заказов в поставке и заказ был отменён автоматически через несколько дней.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца для методов <strong>сборочных заданий, поставок, пропусков и настроек автовозврата FBS</strong>:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 300 запросов | 200 мс | 20 запросов |\n\nОдин запрос с кодами ответов <code>4XX</code> учитывается как 10 запросов\n\n</div>\n",
@@ -2238,11 +2479,11 @@
               "application/problem+json": {
                 "examples": {
                   "BadRequest": {
-                    "$ref": "#/components/examples/APIError400V2"
+                    "$ref": "#/components/examples/ArhiveOrderError400"
                   }
                 },
                 "schema": {
-                  "$ref": "#/components/schemas/v3.APIErrorV2"
+                  "$ref": "#/components/schemas/ArhiveOrderError400"
                 }
               }
             },
@@ -2263,7 +2504,7 @@
                   }
                 },
                 "schema": {
-                  "$ref": "#/components/schemas/v3.APIErrorV2"
+                  "$ref": "#/components/schemas/ArhiveOrderError400"
                 }
               }
             },
@@ -2378,11 +2619,11 @@
               "application/problem+json": {
                 "examples": {
                   "BadRequest": {
-                    "$ref": "#/components/examples/AutoreturnError400"
+                    "$ref": "#/components/examples/ApiError400V3"
                   }
                 },
                 "schema": {
-                  "$ref": "#/components/schemas/AutoreturnError400"
+                  "$ref": "#/components/schemas/ApiErrorV3"
                 }
               }
             },
@@ -2537,14 +2778,14 @@
               "application/problem+json": {
                 "examples": {
                   "BadRequest": {
-                    "$ref": "#/components/examples/AutoreturnError400"
+                    "$ref": "#/components/examples/ApiError400V3"
                   },
                   "SupplierSettingMustBeManual": {
                     "$ref": "#/components/examples/SupplierSettingMustBeManual"
                   }
                 },
                 "schema": {
-                  "$ref": "#/components/schemas/AutoreturnError400"
+                  "$ref": "#/components/schemas/ApiErrorV3"
                 }
               }
             },
@@ -2699,11 +2940,11 @@
               "application/problem+json": {
                 "examples": {
                   "BadRequest": {
-                    "$ref": "#/components/examples/AutoreturnError400"
+                    "$ref": "#/components/examples/ApiError400V3"
                   }
                 },
                 "schema": {
-                  "$ref": "#/components/schemas/AutoreturnError400"
+                  "$ref": "#/components/schemas/ApiErrorV3"
                 }
               }
             },
@@ -2833,7 +3074,7 @@
                   }
                 },
                 "schema": {
-                  "$ref": "#/components/schemas/AutoreturnError400"
+                  "$ref": "#/components/schemas/ApiErrorV3"
                 }
               }
             },
@@ -2873,7 +3114,7 @@
     },
     "/api/marketplace/v3/fbs/shipping-points": {
       "get": {
-        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод возвращает доступные пункты отгрузки поставок с фильтрами:\n  - по населённым пунктам России\n  - по типам товаров, которые принимает пункт отгрузки\n\nИспользуйте данные из этого метода, чтобы устанавливать [параметры отгрузки поставок](./orders-fbs#tag/Postavki-FBS/operation/patchV3FbsSuppliesShippingMethod).\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца для методов <strong>сборочных заданий, поставок, пропусков и настроек автовозврата FBS</strong>:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 300 запросов | 200 мс | 20 запросов |\n\nОдин запрос с кодами ответов <code>4XX</code> учитывается как 10 запросов.\n\n<hr>\n\nВ <a href='/sandbox'>песочнице</a> — максимум 1 запрос в секунду суммарно для всех методов <strong>Маркетплейса</strong>.\n\n</div>\n",
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод возвращает доступные пункты отгрузки поставок с фильтрами:\n  - по населённым пунктам России\n  - по типам товаров, которые принимает пункт отгрузки\n\nИспользуйте данные из этого метода, чтобы устанавливать [параметры отгрузки поставок](./orders-fbs#tag/Postavki-FBS/operation/patchV3FbsSuppliesShippingMethod).\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца для методов <strong>сборочных заданий, поставок, пропусков и настроек автовозврата FBS</strong>:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 300 запросов | 200 мс | 20 запросов |\n\nОдин запрос с кодами ответов <code>4XX</code> учитывается как 10 запросов\n\n</div>\n",
         "operationId": "getV3FbsShippingPoints",
         "parameters": [
           {
@@ -2955,7 +3196,7 @@
     },
     "/api/marketplace/v3/fbs/supplies/shipping-method": {
       "patch": {
-        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод устанавливает способ доставки, дату и пункт отгрузки у поставок.<br><br>\n\nДля доставки транспортной компанией `\"shippingType\":\"transportCompany\"` укажите ID ЭТрН — электронной транспортной накладной — с помощью метода установки [ID ЭТрН поставки](./orders-fbs#tag/Postavki-FBS/operation/patchV3FbsSuppliesWaybill).<br><br>\n\n<div class=\"description_important\">\n  Добавленный к поставке ID ЭТрН сбрасывается, если поменять способ доставки <code>\"shippingType\":\"transportCompany\"</code> на <code>selfShipping</code>. Если вы хотите изменить способ доставки обратно на <code>transportCompany</code>, <a href='./orders-fbs#tag/Postavki-FBS/operation/patchV3FbsSuppliesWaybill'>добавьте ID ЭТрН</a> заново.\n</div>\n\nВы можете обновлять параметры отгрузки до сканирования поставки и её коробов в пункте отгрузки. Когда поставка будет отсканирована, метод начнёт возвращать ошибку `409`.<br><br>\n\nВ запросе можно указать максимум 100 поставок. Результат обработки возвращается для каждой поставки отдельно.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца для методов <strong>сборочных заданий, поставок, пропусков и настроек автовозврата FBS</strong>:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 300 запросов | 200 мс | 20 запросов |\n\nОдин запрос с кодами ответов <code>4XX</code> учитывается как 10 запросов.\n\n<hr>\n\nВ <a href='/sandbox'>песочнице</a> — максимум 1 запрос в секунду суммарно для всех методов <strong>Маркетплейса</strong>.\n\n</div>\n",
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод устанавливает способ доставки, дату и пункт отгрузки у поставок.<br><br>\n\nДля доставки транспортной компанией `\"shippingType\":\"transportCompany\"` укажите ID ЭТрН — электронной транспортной накладной — с помощью метода установки [ID ЭТрН поставки](./orders-fbs#tag/Postavki-FBS/operation/patchV3FbsSuppliesWaybill).<br><br>\n\n<div class=\"description_important\">\n  Добавленный к поставке ID ЭТрН сбрасывается, если поменять способ доставки <code>\"shippingType\":\"transportCompany\"</code> на <code>selfShipping</code>. Если вы хотите изменить способ доставки обратно на <code>transportCompany</code>, <a href='./orders-fbs#tag/Postavki-FBS/operation/patchV3FbsSuppliesWaybill'>добавьте ID ЭТрН</a> заново.\n</div>\n\nВы можете обновлять параметры отгрузки до сканирования поставки и её коробов в пункте отгрузки. Когда поставка будет отсканирована, метод начнёт возвращать ошибку `409`.<br><br>\n\nВ запросе можно указать максимум 100 поставок. Результат обработки возвращается для каждой поставки отдельно.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца для методов <strong>сборочных заданий, поставок, пропусков и настроек автовозврата FBS</strong>:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 300 запросов | 200 мс | 20 запросов |\n\nОдин запрос с кодами ответов <code>4XX</code> учитывается как 10 запросов\n\n</div>\n",
         "operationId": "patchV3FbsSuppliesShippingMethod",
         "requestBody": {
           "content": {
@@ -3048,9 +3289,89 @@
         }
       ]
     },
+    "/api/marketplace/v3/fbs/supplies/spot/list": {
+      "post": {
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод возвращает данные СПОТ для списка поставок.<br><br>\n\nВы можете получить данные СПОТ, только если выполняются все условия:\n  - поставка находится на этапе доставки\n  - продавец зарегистрирован в любой стране ЕАЭС кроме РФ\n  - склад назначения находится в РФ\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца для методов <strong>сборочных заданий, поставок, пропусков и настроек автовозврата FBS</strong>:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 300 запросов | 200 мс | 20 запросов |\n\nОдин запрос с кодами ответов <code>4XX</code> учитывается как 10 запросов\n\n</div>\n",
+        "operationId": "postV3FbsSuppliesSpotList",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "properties": {
+                  "supplyIds": {
+                    "description": "Список ID поставок",
+                    "items": {
+                      "example": "WB-GI-123456789",
+                      "type": "string"
+                    },
+                    "maxLength": 100,
+                    "minLength": 1,
+                    "type": "array"
+                  }
+                },
+                "required": [
+                  "supplyIds"
+                ],
+                "type": "object"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "examples": {
+                  "SupplySpotDataResponse": {
+                    "$ref": "#/components/examples/SupplySpotDataResponse"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/SupplySpotDataResponse"
+                }
+              }
+            },
+            "description": "<span class='response__value response__value_success'>Успешно</span>"
+          },
+          "400": {
+            "content": {
+              "application/problem+json": {
+                "examples": {
+                  "BadRequest": {
+                    "$ref": "#/components/examples/ApiError400V3"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/ApiErrorV3"
+                }
+              }
+            },
+            "description": "<span class='response__value '>Неправильный запрос</span>"
+          },
+          "401": {
+            "$ref": "#/components/responses/401"
+          },
+          "429": {
+            "$ref": "#/components/responses/429"
+          }
+        },
+        "summary": "Получить данные СПОТ для списка поставок{{ /api/marketplace/v3/fbs/supplies/spot/list }}",
+        "tags": [
+          "Поставки FBS"
+        ],
+        "x-category": "marketplace",
+        "x-readonly-method": true
+      },
+      "servers": [
+        {
+          "url": "https://marketplace-api.wildberries.ru"
+        }
+      ]
+    },
     "/api/marketplace/v3/fbs/supplies/waybill": {
       "patch": {
-        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод устанавливает ID ЭТрН — электронной транспортной накладной. Чтобы использовать метод, укажите [место отгрузки поставки](./orders-fbs#tag/Postavki-FBS/operation/patchV3FbsSuppliesShippingMethod) со способом доставки `\"shippingType\":\"transportCompany\"`.<br><br>\n\nВы можете обновлять ID ЭТрН до сканирования поставки и её коробов в пункте отгрузки.<br><br>\n\nВ запросе можно указать максимум 100 поставок. Результат обработки возвращается для каждой поставки отдельно.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца для методов <strong>сборочных заданий, поставок, пропусков и настроек автовозврата FBS</strong>:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 300 запросов | 200 мс | 20 запросов |\n\nОдин запрос с кодами ответов <code>4XX</code> учитывается как 10 запросов.\n\n<hr>\n\nВ <a href='/sandbox'>песочнице</a> — максимум 1 запрос в секунду суммарно для всех методов <strong>Маркетплейса</strong>.\n\n</div>\n",
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод устанавливает ID ЭТрН — электронной транспортной накладной. Чтобы использовать метод, укажите [место отгрузки поставки](./orders-fbs#tag/Postavki-FBS/operation/patchV3FbsSuppliesShippingMethod) со способом доставки `\"shippingType\":\"transportCompany\"`.<br><br>\n\nВы можете обновлять ID ЭТрН до сканирования поставки и её коробов в пункте отгрузки.<br><br>\n\nВ запросе можно указать максимум 100 поставок. Результат обработки возвращается для каждой поставки отдельно.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца для методов <strong>сборочных заданий, поставок, пропусков и настроек автовозврата FBS</strong>:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 300 запросов | 200 мс | 20 запросов |\n\nОдин запрос с кодами ответов <code>4XX</code> учитывается как 10 запросов\n\n</div>\n",
         "operationId": "patchV3FbsSuppliesWaybill",
         "requestBody": {
           "content": {
@@ -3121,6 +3442,221 @@
         ],
         "x-category": "marketplace",
         "x-readonly-method": false
+      },
+      "servers": [
+        {
+          "url": "https://marketplace-api.wildberries.ru"
+        }
+      ]
+    },
+    "/api/marketplace/v3/fbs/supplies/{supplyId}/spot": {
+      "put": {
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод добавляет данные СПОТ в поставку.<br><br>\n\nСПОТ можно добавить только в [поставку](./orders-fbs#tag/Postavki-FBS/paths/~1api~1v3~1supplies~1%7BsupplyId%7D/get) с признаком `\"spotAvailable\":true`.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца для методов <strong>сборочных заданий, поставок, пропусков и настроек автовозврата FBS</strong>:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 300 запросов | 200 мс | 20 запросов |\n\nОдин запрос с кодами ответов <code>4XX</code> учитывается как 10 запросов\n\n</div>\n",
+        "operationId": "putV3FbsSuppliesSupplyIdSpot",
+        "parameters": [
+          {
+            "description": "ID поставки",
+            "example": "WB-GI-123456789",
+            "in": "path",
+            "name": "supplyId",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "properties": {
+                  "carrierCountryCode": {
+                    "description": "Код страны перевозчика по [ОКСМ](./orders-fbs#tag/Postavki-FBS/operation/getV3FbsDictionariesCountriesOksm)",
+                    "example": "112",
+                    "maxLength": 3,
+                    "minLength": 3,
+                    "type": "string"
+                  },
+                  "carrierName": {
+                    "description": "Наименование перевозчика",
+                    "example": "ООО СПОТ",
+                    "maxLength": 1000,
+                    "minLength": 1,
+                    "type": "string"
+                  },
+                  "carrierTaxNumber": {
+                    "description": "ИНН перевозчика",
+                    "example": "7588179007",
+                    "maxLength": 50,
+                    "minLength": 1,
+                    "type": "string"
+                  },
+                  "trailerRegistrationNumber": {
+                    "description": "Регистрационный номер прицепа",
+                    "example": "АА000100",
+                    "maxLength": 30,
+                    "minLength": 1,
+                    "type": "string"
+                  },
+                  "vehicleRegistrationNumber": {
+                    "description": "Регистрационный номер транспортного средства",
+                    "example": "А123АА100",
+                    "maxLength": 30,
+                    "minLength": 1,
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "carrierTaxNumber",
+                  "carrierName",
+                  "carrierCountryCode",
+                  "vehicleRegistrationNumber"
+                ],
+                "type": "object"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "204": {
+            "description": "<span class='response__value response__value_success'>Добавлено</span>"
+          },
+          "400": {
+            "content": {
+              "application/problem+json": {
+                "examples": {
+                  "BadRequest": {
+                    "$ref": "#/components/examples/ApiError400V3"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/ApiErrorV3"
+                }
+              }
+            },
+            "description": "<span class='response__value '>Неправильный запрос</span>"
+          },
+          "401": {
+            "$ref": "#/components/responses/401"
+          },
+          "404": {
+            "content": {
+              "application/problem+json": {
+                "examples": {
+                  "BadRequest": {
+                    "$ref": "#/components/examples/ApiError404V3"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/ApiErrorV3"
+                }
+              }
+            },
+            "description": "<span class='response__value '>Не найдено</span>"
+          },
+          "409": {
+            "content": {
+              "application/problem+json": {
+                "examples": {
+                  "BadRequest": {
+                    "$ref": "#/components/examples/SpotApiError409V3"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/ApiErrorV3"
+                }
+              }
+            },
+            "description": "<span class='response__value '>Ошибка добавления данных СПОТ</span>"
+          },
+          "429": {
+            "$ref": "#/components/responses/429"
+          }
+        },
+        "summary": "Добавить данные СПОТ в поставку{{ /api/marketplace/v3/fbs/supplies/{supplyId}/spot }}",
+        "tags": [
+          "Поставки FBS"
+        ],
+        "x-category": "marketplace",
+        "x-readonly-method": false
+      },
+      "servers": [
+        {
+          "url": "https://marketplace-api.wildberries.ru"
+        }
+      ]
+    },
+    "/api/marketplace/v3/fbs/supplies/{supplyId}/stickers/spot": {
+      "get": {
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод возвращает сформированный QR-код СПОТ для поставки в формате PNG, кодировка base64.\n\nВы можете получить QR-код, когда в методе [получения данных СПОТ](./orders-fbs#tag/Postavki-FBS/operation/postV3FbsSuppliesSpotList) будет признак `\"status\":\"completed\"`.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца для методов <strong>сборочных заданий, поставок, пропусков и настроек автовозврата FBS</strong>:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 300 запросов | 200 мс | 20 запросов |\n\nОдин запрос с кодами ответов <code>4XX</code> учитывается как 10 запросов\n\n</div>\n",
+        "operationId": "getV3FbsSuppliesSupplyIdStickersSpot",
+        "parameters": [
+          {
+            "description": "ID поставки",
+            "example": "WB-GI-123456789",
+            "in": "path",
+            "name": "supplyId",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SupplySpotQRCode"
+                }
+              }
+            },
+            "description": "<span class='response__value response__value_success'>Успешно</span>"
+          },
+          "400": {
+            "content": {
+              "application/problem+json": {
+                "examples": {
+                  "BadRequest": {
+                    "$ref": "#/components/examples/ApiError400V3"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/ApiErrorV3"
+                }
+              }
+            },
+            "description": "<span class='response__value '>Неправильный запрос</span>"
+          },
+          "401": {
+            "$ref": "#/components/responses/401"
+          },
+          "404": {
+            "content": {
+              "application/problem+json": {
+                "examples": {
+                  "BadRequest": {
+                    "$ref": "#/components/examples/ApiError404V3"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/ApiErrorV3"
+                }
+              }
+            },
+            "description": "<span class='response__value '>Не найдено</span>"
+          },
+          "429": {
+            "$ref": "#/components/responses/429"
+          }
+        },
+        "summary": "Получить QR-код СПОТ{{ /api/marketplace/v3/fbs/supplies/{supplyId}/stickers/spot }}",
+        "tags": [
+          "Поставки FBS"
+        ],
+        "x-category": "marketplace",
+        "x-readonly-method": true
       },
       "servers": [
         {
@@ -6283,7 +6819,7 @@
         "x-readonly-method": true
       },
       "post": {
-        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод добавляет требуемое количество [грузомест](./orders-fbs#tag/Postavki-FBS/paths/~1api~1v3~1supplies~1%7BsupplyId%7D~1trbx/get) в [поставку](./orders-fbs#tag/Postavki-FBS/paths/~1api~1v3~1supplies~1%7BsupplyId%7D/get).\n<br>\n<br>\nГрузоместа необходимо добавлять только в поставки, отгружаемые на ПВЗ.\n<br>\nГрузоместа можно добавить только в открытую поставку. Вы можете добавить столько же грузомест, сколько всего товаров в поставке, плюс ещё один.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца для методов <strong>сборочных заданий, поставок, пропусков и настроек автовозврата FBS</strong>:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 300 запросов | 200 мс | 20 запросов |\n\nОдин запрос с кодами ответов <code>4XX</code> учитывается как 10 запросов.\n\n<hr>\n\nВ <a href='/sandbox'>песочнице</a> — максимум 1 запрос в секунду суммарно для всех методов <strong>Маркетплейса</strong>.\n\n</div>\n",
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод добавляет требуемое количество [грузомест](./orders-fbs#tag/Postavki-FBS/paths/~1api~1v3~1supplies~1%7BsupplyId%7D~1trbx/get) в [поставку](./orders-fbs#tag/Postavki-FBS/paths/~1api~1v3~1supplies~1%7BsupplyId%7D/get).\n<br>\n<br>\nГрузоместа необходимо добавлять только в поставки, отгружаемые на ПВЗ.\n<br>\nГрузоместа можно добавить только в открытую поставку. В одном грузоместе может быть несколько заказов. Например, если в поставке 10 заказов, распределите их по коробам: система позволит создать не больше 5 грузомест. Для 20 заказов — не больше 10 грузомест, для 100 — не больше 50.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца для методов <strong>сборочных заданий, поставок, пропусков и настроек автовозврата FBS</strong>:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 300 запросов | 200 мс | 20 запросов |\n\nОдин запрос с кодами ответов <code>4XX</code> учитывается как 10 запросов.\n\n<hr>\n\nВ <a href='/sandbox'>песочнице</a> — максимум 1 запрос в секунду суммарно для всех методов <strong>Маркетплейса</strong>.\n\n</div>\n",
         "parameters": [
           {
             "$ref": "#/components/parameters/Supply"
@@ -6528,7 +7064,7 @@
       "x-displayName": "Идентификаторы маркировки FBS"
     },
     {
-      "description": "<div class=\"description_auth\">\n  Для доступа к методам используйте <a href=\"./api-information#tag/authorization/Kak-sozdat-personalnyj-bazovyj-ili-testovyj-token\">токен</a> для категории <strong>Маркетплейс</strong>\n</div>\n\n<div class=\"description_important\">\n  Узнать больше о поставках FBS можно в <a href=\"https://seller.wildberries.ru/instructions/material/A-11?goBackOption=prevRoute&categoryId=6d85301c-719b-4145-9275-2ac8b793f345\">справочном центре</a>\n</div>\n\nДля работы с поставками:\n\n  <div class=\"description_important\">\n  Пункты 3-5 обязательны к выполнению при доставке поставки на пункт выдачи заказов (ПВЗ).\n  </div>\n\n  1. [Создайте новую поставку](./orders-fbs#tag/Postavki-FBS/paths/~1api~1v3~1supplies/post). В ответ вернется ID созданной поставки в формате `WB-GI-1234567`.\n  2. [Установите параметры отгрузки поставки](./orders-fbs#tag/Postavki-FBS/operation/patchV3FbsSuppliesShippingMethod). Для этого получите [список пунктов отгрузки поставок](./work-with-products#tag/Sklady-prodavca/operation/getV3FbsShippingPoints). Доступно только для продавцов из РФ.<br>\n  Для доставки транспортной компанией обязательно укажите ID ЭТрН — электронной транспортной накладной.\n  2. В текущую новую поставку [добавьте сборочные задания](./orders-fbs#tag/Postavki-FBS/paths/~1api~1marketplace~1v3~1supplies~1%7BsupplyId%7D~1orders/patch), которые вы повезёте на склад или ПВЗ. После того, как сборочные задания будут добавлены к поставке, они будут переведены в статус `confirm` — на сборке.\n  3. [Добавьте грузоместа в поставку](./orders-fbs#tag/Postavki-FBS/paths/~1api~1v3~1supplies~1%7BsupplyId%7D~1trbx/post).\n  4. [Проверьте список грузомест](./orders-fbs#tag/Postavki-FBS/paths/~1api~1v3~1supplies~1%7BsupplyId%7D~1trbx/get).\n  5. [Получите стикеры грузомест](./orders-fbs#tag/Postavki-FBS/paths/~1api~1v3~1supplies~1%7BsupplyId%7D~1trbx~1stickers/post). Распечатайте и наклейте стикеры на грузоместа.\n  6. После того как поставка будет укомплектована нужными сборочными заданиями, необходимо [передать её в доставку](./orders-fbs#tag/Postavki-FBS/paths/~1api~1v3~1supplies~1%7BsupplyId%7D~1deliver/patch). Если поставка не была передана в доставку, то при сканировании её QR-кода или приёмке первого товара на ПВЗ поставка автоматически закроется. При передаче сборочных заданий в доставку они будут автоматически собраны и переведены в статус `complete` — в доставке.\n  7. Если поставка была отсканирована в пункте приёмки, но при этом в ней всё ещё есть неотсканированные товары, спустя определённое время необходимо доставить их повторно. Проверьте все [сборочные задания, требующие повторной отгрузки на данный момент](./orders-fbs#tag/Sborochnye-zadaniya-FBS/paths/~1api~1v3~1supplies~1orders~1reshipment/get). Данные сборочные задания можно перевести в [другую активную поставку](./orders-fbs#tag/Postavki-FBS/paths/~1api~1marketplace~1v3~1supplies~1%7BsupplyId%7D~1orders/patch). Сборочное задание также будет переведено в статус `confirm` — на сборке.\n\n  Также вы можете:\n  - [удалить грузоместа из поставки](./orders-fbs#tag/Postavki-FBS/paths/~1api~1v3~1supplies~1%7BsupplyId%7D~1trbx/delete), но только пока поставка находится на сборке\n  - получить [ID всех сборочных заданий, добавленных к поставке](./orders-fbs#tag/Postavki-FBS/paths/~1api~1marketplace~1v3~1supplies~1%7BsupplyId%7D~1order-ids/get)\n  - получить информацию [обо всех поставках продавца](./orders-fbs#tag/Postavki-FBS/paths/~1api~1v3~1supplies/get) или [о конкретной поставке](./orders-fbs#tag/Postavki-FBS/paths/~1api~1v3~1supplies~1%7BsupplyId%7D/get)\n  - [удалить поставку](./orders-fbs#tag/Postavki-FBS/paths/~1api~1v3~1supplies~1%7BsupplyId%7D/delete) при условии, что она активна и за ней не закреплены сборочные задания\n  - [перемещать сборочные задания между активными поставками](./orders-fbs#tag/Postavki-FBS/paths/~1api~1marketplace~1v3~1supplies~1%7BsupplyId%7D~1orders/patch). Нельзя перемещать сборочное задание из уже закрытой поставки, только если оно не требует повторной отгрузки\n  - получить [QR-код поставки](./orders-fbs#tag/Postavki-FBS/paths/~1api~1v3~1supplies~1%7BsupplyId%7D~1barcode/get) в форматах SVG, ZPL или PNG. Доступно только после передачи поставки в доставку\n",
+      "description": "<div class=\"description_auth\">\n  Для доступа к методам используйте <a href=\"./api-information#tag/authorization/Kak-sozdat-personalnyj-bazovyj-ili-testovyj-token\">токен</a> для категории <strong>Маркетплейс</strong>\n</div>\n\n<div class=\"description_important\">\n  Узнать больше о поставках FBS можно в <a href=\"https://seller.wildberries.ru/instructions/material/A-11?goBackOption=prevRoute&categoryId=6d85301c-719b-4145-9275-2ac8b793f345\">справочном центре</a>\n</div>\n\nДля работы с поставками:\n\n  <div class=\"description_important\">\n  Пункты 3-5 обязательны к выполнению при доставке поставки на пункт выдачи заказов (ПВЗ).\n  </div>\n\n  1. [Создайте новую поставку](./orders-fbs#tag/Postavki-FBS/paths/~1api~1v3~1supplies/post). В ответ вернется ID созданной поставки в формате `WB-GI-1234567`.\n  1. [Установите параметры отгрузки поставки](./orders-fbs#tag/Postavki-FBS/operation/patchV3FbsSuppliesShippingMethod). Для этого получите [список пунктов отгрузки поставок](./work-with-products#tag/Sklady-prodavca/operation/getV3FbsShippingPoints). Доступно только для продавцов из РФ.<br>\n  Для доставки транспортной компанией обязательно укажите ID ЭТрН — электронной транспортной накладной.\n  1. В текущую новую поставку [добавьте сборочные задания](./orders-fbs#tag/Postavki-FBS/paths/~1api~1marketplace~1v3~1supplies~1%7BsupplyId%7D~1orders/patch), которые вы повезёте на склад или ПВЗ. После того, как сборочные задания будут добавлены к поставке, они будут переведены в статус `confirm` — на сборке.\n  1. [Добавьте грузоместа в поставку](./orders-fbs#tag/Postavki-FBS/paths/~1api~1v3~1supplies~1%7BsupplyId%7D~1trbx/post).\n  1. [Проверьте список грузомест](./orders-fbs#tag/Postavki-FBS/paths/~1api~1v3~1supplies~1%7BsupplyId%7D~1trbx/get).\n  1. [Получите стикеры грузомест](./orders-fbs#tag/Postavki-FBS/paths/~1api~1v3~1supplies~1%7BsupplyId%7D~1trbx~1stickers/post). Распечатайте и наклейте стикеры на грузоместа.\n  1. После того как поставка будет укомплектована нужными сборочными заданиями, необходимо [передать её в доставку](./orders-fbs#tag/Postavki-FBS/paths/~1api~1v3~1supplies~1%7BsupplyId%7D~1deliver/patch). Если поставка не была передана в доставку, то при сканировании её QR-кода или приёмке первого товара на ПВЗ поставка автоматически закроется. При передаче сборочных заданий в доставку они будут автоматически собраны и переведены в статус `complete` — в доставке.\n  1. Для поставок из стран ЕАЭС добавьте данные [СПОТ](https://www.nalog.gov.ru/rn77/related_activities/spot). Получите [список стран ОКСМ](./orders-fbs#tag/Postavki-FBS/operation/getV3FbsDictionariesCountriesOksm) для [добавления данных СПОТ в поставку](./orders-fbs#tag/Postavki-FBS/operation/putV3FbsSuppliesSupplyIdSpot). Вы можете получать [данные СПОТ для списка поставок](./orders-fbs#tag/Postavki-FBS/operation/postV3FbsSuppliesSpotList) и [QR-коды СПОТ](./orders-fbs#tag/Postavki-FBS/operation/getV3FbsSuppliesSupplyIdStickersSpot). Сейчас методы доступны только для продавцов из Кыргызстана. В дальнейшем методы будут доступны продавцам из любой страны ЕАЭС кроме РФ, следите за обновлениями.\n  1. Если поставка была отсканирована в пункте приёмки, но при этом в ней всё ещё есть неотсканированные товары, спустя определённое время необходимо доставить их повторно. Проверьте все [сборочные задания, требующие повторной отгрузки на данный момент](./orders-fbs#tag/Sborochnye-zadaniya-FBS/paths/~1api~1v3~1supplies~1orders~1reshipment/get). Данные сборочные задания можно перевести в [другую активную поставку](./orders-fbs#tag/Postavki-FBS/paths/~1api~1marketplace~1v3~1supplies~1%7BsupplyId%7D~1orders/patch). Сборочное задание также будет переведено в статус `confirm` — на сборке.\n\nТакже вы можете:\n  - [удалить грузоместа из поставки](./orders-fbs#tag/Postavki-FBS/paths/~1api~1v3~1supplies~1%7BsupplyId%7D~1trbx/delete), но только пока поставка находится на сборке\n  - получить [ID всех сборочных заданий, добавленных к поставке](./orders-fbs#tag/Postavki-FBS/paths/~1api~1marketplace~1v3~1supplies~1%7BsupplyId%7D~1order-ids/get)\n  - получить информацию [обо всех поставках продавца](./orders-fbs#tag/Postavki-FBS/paths/~1api~1v3~1supplies/get) или [о конкретной поставке](./orders-fbs#tag/Postavki-FBS/paths/~1api~1v3~1supplies~1%7BsupplyId%7D/get)\n  - [удалить поставку](./orders-fbs#tag/Postavki-FBS/paths/~1api~1v3~1supplies~1%7BsupplyId%7D/delete) при условии, что она активна и за ней не закреплены сборочные задания\n  - [перемещать сборочные задания между активными поставками](./orders-fbs#tag/Postavki-FBS/paths/~1api~1marketplace~1v3~1supplies~1%7BsupplyId%7D~1orders/patch). Нельзя перемещать сборочное задание из уже закрытой поставки, только если оно не требует повторной отгрузки\n  - получить [QR-код поставки](./orders-fbs#tag/Postavki-FBS/paths/~1api~1v3~1supplies~1%7BsupplyId%7D~1barcode/get) в форматах SVG, ZPL или PNG. Доступно только после передачи поставки в доставку\n",
       "name": "Поставки FBS"
     },
     {

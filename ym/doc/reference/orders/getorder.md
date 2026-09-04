@@ -2,14 +2,14 @@
 title: Один заказ в магазине
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/orders/getOrder.md"
-fetched_at: "2026-08-28T11:53:21Z"
-content_sha: 80be5cc206119495
+fetched_at: "2026-09-04T01:59:34Z"
+content_sha: 3419ba1d33e50aa7
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.55.3
+    content: Diplodoc Platform v5.57.3
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/orders/getOrder.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/orders/getOrder.md

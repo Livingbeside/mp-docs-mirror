@@ -2,14 +2,14 @@
 title: Вызов методов
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/concepts/method-call.md"
-fetched_at: "2026-08-28T11:51:17Z"
-content_sha: d99b110eb8eee010
+fetched_at: "2026-09-04T01:57:39Z"
+content_sha: f41424cb02cf6aaf
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.55.3
+    content: Diplodoc Platform v5.57.3
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/concepts/method-call.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/concepts/method-call.md

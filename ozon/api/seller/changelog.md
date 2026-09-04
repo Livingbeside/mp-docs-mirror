@@ -5,12 +5,22 @@ tag: News
 group: Обновления
 kind: changelog
 source: "https://docs.ozon.ru/api/seller/"
-content_sha: 89b01a4aebc7d27e
+content_sha: eadd3f57da0aaa1c
 ---
 
 # Обновления
 
 Следите за обновлениями документации на платформе для разработчиков [Ozon for dev](https://dev.ozon.ru/).
+
+## 3 сентября 2026
+
+| Метод | Изменение |
+|-------|-----------|
+| [/v2/product/pictures/import](#operation/ProductImportPicturesV2) | Добавили новую версию метода для загрузки или обновления изображений товара. |
+| [/v1/product/pictures/import](#operation/ProductAPI_ProductImportPictures) | Метод устаревает и будет отключён 1 октября 2026 года. Переключитесь на [/v2/product/pictures/import](#operation/ProductImportPicturesV2). |
+| [/v1/analytics/decommissioned-goods](#operation/AnalyticsDecommissionedGoods) | Добавили бета-метод для получения отчёта о списанных товарах. |
+| [/v2/product/certification/params](#operation/ProductCertificateParams)<br>[/v2/product/certificate/create](#operation/ProductCertificateCreate) | Обновили описание параметра `params.files.name` в запросе методов. |
+| — | В разделе [**Частые ошибки**](#tag/Errors) добавили описание ошибки `file extension is not available` для метода [/v2/product/certificate/create](#operation/ProductCertificateCreate). |
 
 ## 2 сентября 2026
 

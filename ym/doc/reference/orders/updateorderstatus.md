@@ -2,14 +2,14 @@
 title: Изменение статуса одного заказа
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/orders/updateOrderStatus.md"
-fetched_at: "2026-08-28T11:52:12Z"
-content_sha: 9cf02ed4101944be
+fetched_at: "2026-09-04T01:58:31Z"
+content_sha: ee357b68a9948a5f
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.55.3
+    content: Diplodoc Platform v5.57.3
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/orders/updateOrderStatus.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/orders/updateOrderStatus.md
@@ -4795,6 +4795,8 @@ alternate:
   
   * `ORDER_DELIVERY_INTERVAL_UPDATE` — изменение интервала дат доставки.
   
+  * `ORDER_STORAGE_LIMIT_DATE_UPDATE` — продление срока хранения заказа.
+  
   * `ORDER_STATUS_UPDATE` — обновление статуса заказа для его отмены.
   
   * `RETURN_CANCELLATION` — отмена возврата.
@@ -4802,7 +4804,7 @@ alternate:
   
   **Type**: string
   
-  _Enum:_{.json-schema-reset .json-schema-value} `ORDER_RECIPIENT_UPDATE`, `ORDER_DELIVERY_INTERVAL_UPDATE`, `ORDER_STATUS_UPDATE`, `RETURN_CANCELLATION`
+  _Enum:_{.json-schema-reset .json-schema-value} `ORDER_RECIPIENT_UPDATE`, `ORDER_DELIVERY_INTERVAL_UPDATE`, `ORDER_STORAGE_LIMIT_DATE_UPDATE`, `ORDER_STATUS_UPDATE`, `RETURN_CANCELLATION`
   
   </div>
   
@@ -4841,12 +4843,14 @@ alternate:
   
   * `ORDER_DELIVERY_INTERVAL_UPDATE` — изменение интервала дат доставки.
   
+  * `ORDER_STORAGE_LIMIT_DATE_UPDATE` — продление срока хранения заказа.
+  
   * `ORDER_STATUS_UPDATE` — обновление статуса заказа для его отмены.
   
   * `RETURN_CANCELLATION` — отмена возврата.
   
   
-  _Enum:_{.json-schema-reset .json-schema-value} `ORDER_RECIPIENT_UPDATE`, `ORDER_DELIVERY_INTERVAL_UPDATE`, `ORDER_STATUS_UPDATE`, `RETURN_CANCELLATION`
+  _Enum:_{.json-schema-reset .json-schema-value} `ORDER_RECIPIENT_UPDATE`, `ORDER_DELIVERY_INTERVAL_UPDATE`, `ORDER_STORAGE_LIMIT_DATE_UPDATE`, `ORDER_STATUS_UPDATE`, `RETURN_CANCELLATION`
   {.table-cell}
   ||
   |#{.json-schema-properties}

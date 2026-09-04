@@ -5,7 +5,7 @@ tag: Process
 group: Общее описание
 kind: guide
 source: "https://docs.ozon.ru/api/seller/"
-content_sha: 74ddb338ddc33ad3
+content_sha: b09a99711c43d910
 ---
 
 # Порядок работы с методами
@@ -63,7 +63,7 @@ Ozon, товар не будет создан или обновлён.
 
 Чтобы добавить изображения товара или заменить существующие, используйте:
 
-1. [/v1/product/pictures/import](#operation/ProductAPI_ProductImportPictures) — загрузите или обновите изображения
+1. [/v2/product/pictures/import](#operation/ProductImportPicturesV2) — загрузите или обновите изображения
  товара. Передайте прямые ссылки на изображения, загруженные в облачное хранилище.
 2. [/v2/product/pictures/info](#operation/ProductAPI_ProductInfoPicturesV2) — проверьте статус загрузки.
 

@@ -9,7 +9,7 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: 63534bc2077f8516
+content_sha: 8601751214a56ec9
 ---
 
 # Получить обязательные параметры для создания сертификата качества
@@ -43,7 +43,7 @@ content_sha: 63534bc2077f8516
     - `infinite` — boolean. `true`, если сертификат бессрочный. Не передавайте параметр, если указали `date`.
   - `files` — array[object]. Файлы сертификата.
     - `file_content` — string **обязательный**. Файл в кодировке Base64.
-    - `name` — string **обязательный**. Название файла.
+    - `name` — string **обязательный**. Название файла с расширением `.jpg`, `.jpeg`, `.png` или `.pdf`.
   - `issue_date` — string<date-time>. Дата выдачи сертификата.
   - `link_to_registry` — string. Ссылка на государственный реестр.
   - `name` — string. Название сертификата.

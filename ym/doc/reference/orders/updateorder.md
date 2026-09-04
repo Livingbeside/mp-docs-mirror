@@ -2,14 +2,14 @@
 title: Изменение заказа
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/orders/updateOrder.md"
-fetched_at: "2026-08-28T11:52:22Z"
-content_sha: f10bac4e0af67412
+fetched_at: "2026-09-04T01:58:43Z"
+content_sha: 618684130e050536
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.55.3
+    content: Diplodoc Platform v5.57.3
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/orders/updateOrder.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/orders/updateOrder.md
@@ -50,9 +50,10 @@ alternate:
   Изменяет в заказе:
   
   * данные получателя;
-  * интервал дат курьерской доставки.
+  * интервал дат курьерской доставки;
+  * срок хранения заказа в пункте выдачи.
   
-  Передавайте только ту информацию, которую хотите изменить. При необходимости вы можете отредактировать и данные получателя, и интервал доставки одновременно.
+  Передавайте только ту информацию, которую хотите изменить. При необходимости вы можете передать несколько изменений одновременно.
   
   Заказ можно изменить в любом статусе до вручения покупателю или отмены (`DELIVERED` или `CANCELLED`).
   
@@ -139,7 +140,8 @@ alternate:
         "lastName": "example",
         "middleName": "example",
         "phone": "example"
-      }
+      },
+      "extendStoragePeriod": true
     }
   }
   ```
@@ -176,7 +178,8 @@ alternate:
       "lastName": "example",
       "middleName": "example",
       "phone": "example"
-    }
+    },
+    "extendStoragePeriod": true
   }
   ```
   
@@ -524,6 +527,15 @@ alternate:
   {% endcut %}
   {.table-cell}
   ||
+  ||
+  
+  _extendStoragePeriod_{.json-schema-reset .json-schema-property}
+  {.table-cell}|
+  **Type**: boolean
+  
+  Продлить срок хранения заказа в пункте выдачи.
+  {.table-cell}
+  ||
   |#{.json-schema-properties}
   
   {% cut "**Example**" %}{.json-schema-example}
@@ -546,7 +558,8 @@ alternate:
       "lastName": "example",
       "middleName": "example",
       "phone": "example"
-    }
+    },
+    "extendStoragePeriod": true
   }
   ```
   
@@ -740,6 +753,8 @@ alternate:
   
   * `ORDER_DELIVERY_INTERVAL_UPDATE` — изменение интервала дат доставки.
   
+  * `ORDER_STORAGE_LIMIT_DATE_UPDATE` — продление срока хранения заказа.
+  
   * `ORDER_STATUS_UPDATE` — обновление статуса заказа для его отмены.
   
   * `RETURN_CANCELLATION` — отмена возврата.
@@ -747,7 +762,7 @@ alternate:
   
   **Type**: string
   
-  _Enum:_{.json-schema-reset .json-schema-value} `ORDER_RECIPIENT_UPDATE`, `ORDER_DELIVERY_INTERVAL_UPDATE`, `ORDER_STATUS_UPDATE`, `RETURN_CANCELLATION`
+  _Enum:_{.json-schema-reset .json-schema-value} `ORDER_RECIPIENT_UPDATE`, `ORDER_DELIVERY_INTERVAL_UPDATE`, `ORDER_STORAGE_LIMIT_DATE_UPDATE`, `ORDER_STATUS_UPDATE`, `RETURN_CANCELLATION`
   
   </div>
   
@@ -786,12 +801,14 @@ alternate:
   
   * `ORDER_DELIVERY_INTERVAL_UPDATE` — изменение интервала дат доставки.
   
+  * `ORDER_STORAGE_LIMIT_DATE_UPDATE` — продление срока хранения заказа.
+  
   * `ORDER_STATUS_UPDATE` — обновление статуса заказа для его отмены.
   
   * `RETURN_CANCELLATION` — отмена возврата.
   
   
-  _Enum:_{.json-schema-reset .json-schema-value} `ORDER_RECIPIENT_UPDATE`, `ORDER_DELIVERY_INTERVAL_UPDATE`, `ORDER_STATUS_UPDATE`, `RETURN_CANCELLATION`
+  _Enum:_{.json-schema-reset .json-schema-value} `ORDER_RECIPIENT_UPDATE`, `ORDER_DELIVERY_INTERVAL_UPDATE`, `ORDER_STORAGE_LIMIT_DATE_UPDATE`, `ORDER_STATUS_UPDATE`, `RETURN_CANCELLATION`
   {.table-cell}
   ||
   |#{.json-schema-properties}
@@ -1313,7 +1330,8 @@ alternate:
           "lastName": "example",
           "middleName": "example",
           "phone": "example"
-        }
+        },
+        "extendStoragePeriod": true
       }
     }
   schema:
@@ -1340,8 +1358,11 @@ alternate:
           customer:
             description: Данные получателя заказа.
             $ref: '#/$defs/CustomerDTO'
+          extendStoragePeriod:
+            description: Продлить срок хранения заказа в пункте выдачи.
+            type: boolean
     $defs:
-      /home/sandbox/.ya/build/build_root/guyl/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/orders/schemas.yaml#/DeliveryIntervalsUpdateOptionDTO:
+      /home/sandbox/.ya/build/build_root/dy0i/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/orders/schemas.yaml#/DeliveryIntervalsUpdateOptionDTO:
         type: object
         description: Интервалы дат и времени.
         required:
@@ -1390,7 +1411,7 @@ alternate:
   
                   Формат: `ЧЧ:ММ`.
                 pattern: ^([0-1][0-9]|2[0-3]):[0-5][0-9]$
-      /home/sandbox/.ya/build/build_root/guyl/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/common/schemas.yaml#/CustomerDTO:
+      /home/sandbox/.ya/build/build_root/dy0i/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/common/schemas.yaml#/CustomerDTO:
         type: object
         description: Данные получателя заказа или отправителя возврата.
         required:

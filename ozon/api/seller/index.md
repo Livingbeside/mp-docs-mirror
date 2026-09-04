@@ -2,9 +2,9 @@
 title: Документация Ozon Seller API — все методы
 api: ozon-seller
 spec_version: 2.1
-operations: 465
+operations: 467
 source: "https://docs.ozon.ru/api/seller/"
-content_sha: c6533b5470d820e3
+content_sha: 0955e3582908de55
 ---
 
 # Документация Ozon Seller API
@@ -18,7 +18,7 @@ content_sha: c6533b5470d820e3
 
 > [Информационная платформа и сообщество разработчиков Ozon for dev](https://dev.ozon.ru/)
 
-Версия спеки: `2.1` · методов: **465** · разделов справки: **26**
+Версия спеки: `2.1` · методов: **467** · разделов справки: **26**
 
 Источник: https://docs.ozon.ru/api/seller/
 
@@ -42,6 +42,7 @@ content_sha: c6533b5470d820e3
 | `POST` | `/v1/actions/products/deactivate` | Promos | [Удалить товары из акции](promos/post-v1-actions-products-deactivate.md) |
 | `POST` | `/v1/actions/products` | Promos | [Список участвующих в акции товаров](promos/post-v1-actions-products.md) |
 | `POST` | `/v1/analytics/data` | Premium | [Данные аналитики](premium/post-v1-analytics-data.md) |
+| `POST` | `/v1/analytics/decommissioned-goods` | BetaMethod | [Получить отчёт о списанных товарах](betamethod/post-v1-analytics-decommissioned-goods.md) |
 | `POST` | `/v1/analytics/manage/stocks` | BetaMethod | [Управление остатками](betamethod/post-v1-analytics-manage-stocks.md) |
 | `POST` | `/v1/analytics/product-queries/details` | Premium | [Получить детализацию запросов по товару](premium/post-v1-analytics-product-queries-details.md) |
 | `POST` | `/v1/analytics/product-queries` | Premium | [Получить информацию о запросах моих товаров](premium/post-v1-analytics-product-queries.md) |
@@ -450,6 +451,7 @@ content_sha: c6533b5470d820e3
 | `POST` | `/v2/product/certification/options` | BetaMethod | [Получить параметры для создания сертификата качества](betamethod/post-v2-product-certification-options.md) |
 | `POST` | `/v2/product/certification/params` | BetaMethod | [Получить обязательные параметры для создания сертификата качества](betamethod/post-v2-product-certification-params.md) |
 | `POST` | `/v2/product/info/stocks-by-warehouse/fbs` | Prices&StocksAPI | [Получить информацию об остатках на складах продавца](prices-stocksapi/post-v2-product-info-stocks-by-warehouse-fbs.md) |
+| `POST` | `/v2/product/pictures/import` | ProductAPI | [Загрузить или обновить изображения товара](productapi/post-v2-product-pictures-import.md) |
 | `POST` | `/v2/product/pictures/info` | ProductAPI | [Получить изображения товаров](productapi/post-v2-product-pictures-info.md) |
 | `POST` | `/v2/products/delete` | ProductAPI | [Удалить товар без SKU из архива](productapi/post-v2-products-delete.md) |
 | `POST` | `/v2/products/stocks` | Prices&StocksAPI | [Обновить количество товаров на складах](prices-stocksapi/post-v2-products-stocks.md) |

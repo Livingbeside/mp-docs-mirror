@@ -2,14 +2,14 @@
 title: Список кодов стран
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/regions/getRegionsCodes.md"
-fetched_at: "2026-08-28T11:53:18Z"
-content_sha: 839fedc971749a36
+fetched_at: "2026-09-04T01:59:32Z"
+content_sha: 924a094decc9cddc
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.55.3
+    content: Diplodoc Platform v5.57.3
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/regions/getRegionsCodes.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/regions/getRegionsCodes.md

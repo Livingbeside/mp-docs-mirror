@@ -2,14 +2,14 @@
 title: Получение статусов операций
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/operations/getOperations.md"
-fetched_at: "2026-08-28T11:52:23Z"
-content_sha: 652772e802e28abd
+fetched_at: "2026-09-04T01:58:44Z"
+content_sha: db44f30fa32746dc
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.55.3
+    content: Diplodoc Platform v5.57.3
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/operations/getOperations.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/operations/getOperations.md
@@ -167,12 +167,14 @@ alternate:
   
   * `ORDER_DELIVERY_INTERVAL_UPDATE` — изменение интервала дат доставки.
   
+  * `ORDER_STORAGE_LIMIT_DATE_UPDATE` — продление срока хранения заказа.
+  
   * `ORDER_STATUS_UPDATE` — обновление статуса заказа для его отмены.
   
   * `RETURN_CANCELLATION` — отмена возврата.
   
   
-  _Enum:_{.json-schema-reset .json-schema-value} `ORDER_RECIPIENT_UPDATE`, `ORDER_DELIVERY_INTERVAL_UPDATE`, `ORDER_STATUS_UPDATE`, `RETURN_CANCELLATION`
+  _Enum:_{.json-schema-reset .json-schema-value} `ORDER_RECIPIENT_UPDATE`, `ORDER_DELIVERY_INTERVAL_UPDATE`, `ORDER_STORAGE_LIMIT_DATE_UPDATE`, `ORDER_STATUS_UPDATE`, `RETURN_CANCELLATION`
   {.table-cell}
   ||
   |#{.json-schema-properties}
@@ -189,6 +191,8 @@ alternate:
   
   * `ORDER_DELIVERY_INTERVAL_UPDATE` — изменение интервала дат доставки.
   
+  * `ORDER_STORAGE_LIMIT_DATE_UPDATE` — продление срока хранения заказа.
+  
   * `ORDER_STATUS_UPDATE` — обновление статуса заказа для его отмены.
   
   * `RETURN_CANCELLATION` — отмена возврата.
@@ -196,7 +200,7 @@ alternate:
   
   **Type**: string
   
-  _Enum:_{.json-schema-reset .json-schema-value} `ORDER_RECIPIENT_UPDATE`, `ORDER_DELIVERY_INTERVAL_UPDATE`, `ORDER_STATUS_UPDATE`, `RETURN_CANCELLATION`
+  _Enum:_{.json-schema-reset .json-schema-value} `ORDER_RECIPIENT_UPDATE`, `ORDER_DELIVERY_INTERVAL_UPDATE`, `ORDER_STORAGE_LIMIT_DATE_UPDATE`, `ORDER_STATUS_UPDATE`, `RETURN_CANCELLATION`
   
   </div>
   
@@ -444,12 +448,14 @@ alternate:
   
   * `ORDER_DELIVERY_INTERVAL_UPDATE` — изменение интервала дат доставки.
   
+  * `ORDER_STORAGE_LIMIT_DATE_UPDATE` — продление срока хранения заказа.
+  
   * `ORDER_STATUS_UPDATE` — обновление статуса заказа для его отмены.
   
   * `RETURN_CANCELLATION` — отмена возврата.
   
   
-  _Enum:_{.json-schema-reset .json-schema-value} `ORDER_RECIPIENT_UPDATE`, `ORDER_DELIVERY_INTERVAL_UPDATE`, `ORDER_STATUS_UPDATE`, `RETURN_CANCELLATION`
+  _Enum:_{.json-schema-reset .json-schema-value} `ORDER_RECIPIENT_UPDATE`, `ORDER_DELIVERY_INTERVAL_UPDATE`, `ORDER_STORAGE_LIMIT_DATE_UPDATE`, `ORDER_STATUS_UPDATE`, `RETURN_CANCELLATION`
   {.table-cell}
   ||
   |#{.json-schema-properties}
@@ -973,6 +979,8 @@ alternate:
   
           * `ORDER_DELIVERY_INTERVAL_UPDATE` — изменение интервала дат доставки.
   
+          * `ORDER_STORAGE_LIMIT_DATE_UPDATE` — продление срока хранения заказа.
+  
           * `ORDER_STATUS_UPDATE` — обновление статуса заказа для его отмены.
   
           * `RETURN_CANCELLATION` — отмена возврата.
@@ -980,6 +988,7 @@ alternate:
         enum:
           - ORDER_RECIPIENT_UPDATE
           - ORDER_DELIVERY_INTERVAL_UPDATE
+          - ORDER_STORAGE_LIMIT_DATE_UPDATE
           - ORDER_STATUS_UPDATE
           - RETURN_CANCELLATION
       operationIds:

@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /rfbs/osobennosti-prodaj-avtomobilei-na-realfbs
 source: "https://seller-edu.ozon.ru/libra/rfbs/osobennosti-prodaj-avtomobilei-na-realfbs"
-updated: "2026-09-02 16:10:45"
+updated: "2026-09-03 09:23:45"
 doc_id: 67165
-fetched_at: "2026-09-03T02:13:24Z"
-content_sha: c708821ddd771863
+fetched_at: "2026-09-04T01:54:41Z"
+content_sha: d13759603e585c7d
 ---
 
 # Особенности продаж автомобилей на realFBS
@@ -34,7 +34,11 @@ _Главная / Продажа со своего склада (realFBS)_
 
 Продавать авто на Ozon можно на схеме [realFBS Standard](https://seller-edu.ozon.ru/libra/rfbs/scheme-of-work/rfbs-standard). Настроить доставку можно:
 
-до адреса покупателя — на методе [«Своя или другая служба»](https://seller-edu.ozon.ru/libra/rfbs/logistics-settings/nastrojka-metodov-standart#%C2%AB%D1%81%D0%B2%D0%BE%D1%8F-%D0%B8%D0%BB%D0%B8-%D0%B4%D1%80%D1%83%D0%B3%D0%B0%D1%8F-%D1%81%D0%BB%D1%83%D0%B6%D0%B1%D0%B0%C2%BB). Тарифы и зоны доставки вы настраиваете самостоятельно в личном кабинете. [Как добавить метод](https://seller-edu.ozon.ru/libra/rfbs/logistics-settings/nastrojka-metodov-standart#%C2%AB%D1%81%D0%B2%D0%BE%D1%8F-%D0%B8%D0%BB%D0%B8-%D0%B4%D1%80%D1%83%D0%B3%D0%B0%D1%8F-%D1%81%D0%BB%D1%83%D0%B6%D0%B1%D0%B0%C2%BB)
+до адреса покупателя на методах:
+[«Своя или другая служба»](https://seller-edu.ozon.ru/libra/rfbs/logistics-settings/nastrojka-metodov-standart#%C2%AB%D1%81%D0%B2%D0%BE%D1%8F-%D0%B8%D0%BB%D0%B8-%D0%B4%D1%80%D1%83%D0%B3%D0%B0%D1%8F-%D1%81%D0%BB%D1%83%D0%B6%D0%B1%D0%B0%C2%BB). [Как добавить метод](https://seller-edu.ozon.ru/libra/rfbs/logistics-settings/nastrojka-metodov-standart#%C2%AB%D1%81%D0%B2%D0%BE%D1%8F-%D0%B8%D0%BB%D0%B8-%D0%B4%D1%80%D1%83%D0%B3%D0%B0%D1%8F-%D1%81%D0%BB%D1%83%D0%B6%D0%B1%D0%B0%C2%BB)
+
+[«Интегрированные службы»](https://seller-edu.ozon.ru/libra/rfbs/logistics-settings/nastrojka-metodov-standart#%D0%BA%D0%B0%D0%BA-%D0%BD%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B8%D1%82%D1%8C-%D0%BC%D0%B5%D1%82%D0%BE%D0%B4-%D0%B4%D0%BE%D1%81%D1%82%D0%B0%D0%B2%D0%BA%D0%B8-%C2%AB%D0%B8%D0%BD%D1%82%D0%B5%D0%B3%D1%80%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%BD%D1%8B%D0%B5-%D1%81%D0%BB%D1%83%D0%B6%D0%B1%D1%8B%C2%BB). [Подробнее о перевозке автомобилей](https://seller-edu.ozon.ru/rfbs/perevozka-avto-rfbs)
+Тарифы и зоны доставки вы настраиваете самостоятельно в личном кабинете.
 
 [самовывозом из дилерского центра](#samovyvoz).
 

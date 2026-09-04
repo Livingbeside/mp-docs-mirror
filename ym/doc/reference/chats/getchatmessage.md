@@ -2,14 +2,14 @@
 title: Получение сообщения
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/chats/getChatMessage.md"
-fetched_at: "2026-08-28T11:53:12Z"
-content_sha: 3483dba9d9ae8c91
+fetched_at: "2026-09-04T01:59:27Z"
+content_sha: c84626529a3da233
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.55.3
+    content: Diplodoc Platform v5.57.3
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/chats/getChatMessage.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/chats/getChatMessage.md

@@ -8,13 +8,17 @@ tags:
   - ProductAPI
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
-deprecated: false
-content_sha: 5ad4fb9c6a52155b
+deprecated: true
+content_sha: c0fe9eed2a3b20b6
 ---
 
 # Загрузить или обновить изображения товара
 
 `POST /v1/product/pictures/import`
+
+> ⚠️ Метод помечен как **deprecated**.
+
+С 1 октября 2026 года метод будет отключён. Переключитесь на [/v2/product/pictures/import](#operation/ProductImportPicturesV2).
 
 Метод для загрузки или обновления изображений товара.
 

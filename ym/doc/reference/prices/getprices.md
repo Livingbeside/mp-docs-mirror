@@ -2,14 +2,14 @@
 title: Список цен
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/prices/getPrices.md"
-fetched_at: "2026-08-28T11:53:24Z"
-content_sha: 87d9c5a6399e168d
+fetched_at: "2026-09-04T01:59:36Z"
+content_sha: d2b1032175699821
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.55.3
+    content: Diplodoc Platform v5.57.3
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/prices/getPrices.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/prices/getPrices.md

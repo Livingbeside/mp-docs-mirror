@@ -2,14 +2,14 @@
 title: Как работать с уведомлениями
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/push-notifications/index.md"
-fetched_at: "2026-08-28T11:53:27Z"
-content_sha: 74c1917411cbf02d
+fetched_at: "2026-09-04T01:59:38Z"
+content_sha: 19f8b4641d00948e
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.55.3
+    content: Diplodoc Platform v5.57.3
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/push-notifications/index.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/push-notifications/index.md

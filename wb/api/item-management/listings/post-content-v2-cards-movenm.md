@@ -9,7 +9,7 @@ tags:
 spec_version: items
 source: "https://dev.wildberries.ru/docs/openapi/item-management"
 deprecated: false
-content_sha: 642168658adfed0a
+content_sha: c6db6ba0073e583d
 ---
 
 # Объединение и разъединение карточек товаров
@@ -81,7 +81,7 @@ content_sha: 642168658adfed0a
 - `additionalErrors` — object | string. Дополнительные ошибки
   - `string` — string
   - `error` — string **обязательный**
-- `error` — string
+- `error` — string **обязательный**
 
 **401** — Не авторизован
 

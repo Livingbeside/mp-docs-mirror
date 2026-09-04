@@ -2,14 +2,14 @@
 title: Настройки кабинета
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/businesses/getBusinessSettings.md"
-fetched_at: "2026-08-28T11:51:47Z"
-content_sha: fa936056b5fde9b1
+fetched_at: "2026-09-04T01:58:08Z"
+content_sha: 5d1b862195630922
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.55.3
+    content: Diplodoc Platform v5.57.3
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/businesses/getBusinessSettings.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/businesses/getBusinessSettings.md
