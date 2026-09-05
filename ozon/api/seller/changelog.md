@@ -5,12 +5,18 @@ tag: News
 group: Обновления
 kind: changelog
 source: "https://docs.ozon.ru/api/seller/"
-content_sha: eadd3f57da0aaa1c
+content_sha: d9f876aca4aa5f08
 ---
 
 # Обновления
 
 Следите за обновлениями документации на платформе для разработчиков [Ozon for dev](https://dev.ozon.ru/).
+
+## 4 сентября 2026
+
+| Метод | Изменение |
+|------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------|
+| [/v1/seller-actions/products/add](#operation/SellerActionsProductsAdd) | Добавили параметр `products.action_price` в запрос метода. <br> Обновили описание параметра `products.discount_percent` в запросе метода. |
 
 ## 3 сентября 2026
 

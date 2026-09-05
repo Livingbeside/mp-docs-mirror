@@ -4,8 +4,8 @@ api: wildberries
 kind: changelog
 source: "https://dev.wildberries.ru/release-notes"
 window: последние записи, страница отдаёт не всю историю
-fetched_at: "2026-09-04T01:57:31Z"
-content_sha: dd3371a9c5db1be6
+fetched_at: "2026-09-05T02:17:06Z"
+content_sha: 01565555fd6d6b50
 ---
 
 # Журнал изменений WB API
@@ -66,6 +66,22 @@ content_sha: dd3371a9c5db1be6
 
 Сентябрь
 2026
+
+Изменения
+
+## 04.09.2026
+
+Критичное изменение
+
+Заказы FBS
+
+Поставки FBS
+
+Изменения в Поставках FBS
+
+Обновили описание метода [POST /api/v3/supplies/{supplyId}/trbx](./docs/openapi/orders-fbs#tag/Postavki-FBS/paths/~1api~1v3~1supplies~1%7BsupplyId%7D~1trbx/post) — Добавить грузоместа к поставке в соответствии с [инструкцией](https://seller.wildberries.ru/instructions/ru/ru/material/step-three-b-fbs-shipment-delivery-to-pick-up-point?goBackOption=prevRoute&categoryId=48c727fd-ad27-45f5-a0fb-3e62e9b853e8) на портале продавца:
+
+В одном грузоместе может быть несколько заказов. Например, если в поставке 10 заказов, распределите их по коробам: система позволит создать не больше 5 грузомест. Для 20 заказов — не больше 10 грузомест, для 100 — не больше 50.
 
 Новое
 
@@ -560,19 +576,5 @@ DBS
 - Изменить права доступа пользователей [PUT /api/v1/users/access](/docs/openapi/api-information#tag/sellerUserManagement/operation/putV1UsersAccess)
 
 Обновлённый список разделов можно получить в ответе метода [GET /api/v1/users](/docs/openapi/api-information#tag/sellerUserManagement/operation/getV1Users).
-
-Изменения
-
-## 25.06.2026
-
-Заказы FBS
-
-Сборочные задания FBS
-
-Изменения в Заказах FBS
-
-С **21 июля** получить сборочные задания, созданные более 3 месяцев назад, вы сможете только методом [GET /api/marketplace/v3/fbs/orders/archive](/docs/openapi/orders-fbs/#tag/Sborochnye-zadaniya-FBS/paths/~1api~1marketplace~1v3~1fbs~1orders~1archive/get).
-
-Метод [GET /api/v3/orders](/docs/openapi/orders-fbs/#tag/Sborochnye-zadaniya-FBS/paths/~1api~1v3~1orders/get) будет возвращать информацию только о сборочных заданиях, созданных менее 3 месяцев назад.
 
 Мы используем [cookies](/privacy) для сбора статистики и улучшения сервиса

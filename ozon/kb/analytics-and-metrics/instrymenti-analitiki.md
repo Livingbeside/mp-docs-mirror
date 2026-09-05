@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /analytics-and-metrics/instrymenti-analitiki
 source: "https://seller-edu.ozon.ru/libra/analytics-and-metrics/instrymenti-analitiki"
-updated: "2026-07-21 13:43:22"
+updated: "2026-09-04 12:56:07"
 doc_id: 952
-fetched_at: "2026-08-28T12:11:14Z"
-content_sha: e15109f97a931639
+fetched_at: "2026-09-05T02:12:29Z"
+content_sha: 1c0b79c2f9b7f846
 ---
 
 # Инструменты аналитики
@@ -38,18 +38,20 @@ _Главная / Аналитика_
 
 **[Воронка продаж](https://seller-edu.ozon.ru/libra/analytics-and-metrics/graphs/prodaji/voronka_prodazh)**. В этом инструменте собрали общую информацию о ваших продажах и метриках, которые на них влияют.
 
-**[Продажи моих товаров](/analytics-and-metrics/graphs/prodaji/grafiki)**. Здесь можно узнать основные показатели эффективности работы на Ozon — сколько товаров было заказано, насколько часто они добавляются в корзину, сколько заказов было возвращено и многое другое. Ещё на этой странице можно:
-проверить [доступность товаров](https://seller-edu.ozon.ru/libra/analytics-and-metrics/graphs/prodaji/dostupnost-tovarov) — узнать, хватает ли на складах остатков и сколько товаров нужно поставить;
-
-отследить [продажи по кластерам](https://seller-edu.ozon.ru/libra/analytics-and-metrics/graphs/prodaji/cluster-analytics) и проанализировать расходы на магистраль — на основании этих данных вы можете принять решение о поставках товаров в разные кластеры и снизить затраты;
-
-сделать [собственное исследование цен](https://seller-edu.ozon.ru/libra/analytics-and-metrics/graphs/prodaji/research) — чтобы проверить, по какой стоимости ваши товары будут чаще заказывать.
+**[Продажи моих товаров](/analytics-and-metrics/graphs/prodaji/grafiki)**. Здесь можно узнать основные показатели эффективности работы на Ozon — сколько товаров было заказано, насколько часто они добавляются в корзину, сколько заказов было возвращено и многое другое.
 
 **[Акции](https://seller-edu.ozon.ru/analytics-and-metrics/graphs/promo)**. Благодаря этому инструменту можно выяснить, насколько успешно проходят акции и как они сказываются на количестве заказов, кликах на товары и заработке продавца.
 
+**[Планирование поставок](https://seller-edu.ozon.ru/analytics-and-metrics/graphs/planirovanie-postavok)****.** В этом разделе можно управлять поставками так, чтобы покрывать спрос и не терять оборот. На этой странице можно:
+проверить [доступность товаров](https://seller-edu.ozon.ru/analytics-and-metrics/graphs/planirovanie-postavok/dostupnost-tovarov) — узнать, хватает ли на складах остатков и сколько товаров нужно поставить;
+
+отследить [продажи по кластерам](https://seller-edu.ozon.ru/analytics-and-metrics/graphs/planirovanie-postavok/cluster-analytics) и проанализировать расходы на магистраль — на основании этих данных вы можете принять решение о поставках товаров в разные кластеры и снизить затраты;
+
+определить [востребованность](https://seller-edu.ozon.ru/analytics-and-metrics/graphs/planirovanie-postavok/rasprodano) — проверить, на какие товары из вашего ассортимента подписывались покупатели за последние 30 дней.
+
 **[Выкупы](https://seller-edu.ozon.ru/libra/analytics-and-metrics/graphs/prodaji/vykupleno-tovarov)****.** Здесь можно найти сводку по выкупленным товарам, частые причины отмен и возвратов и динамику этих показателей по каждому товару.
 
-**[Локальность продаж](https://seller-edu.ozon.ru/libra/analytics-and-metrics/graphs/lokalnost-prodaj)****.** Рассказываем, как рассчитывается локальность и как работать с отчётом по локальности.
+**[Локальность продаж](https://seller-edu.ozon.ru/analytics-and-metrics/graphs/planirovanie-postavok/lokalnost-prodaj)****.** Рассказываем, как рассчитывается локальность и как работать с отчётом по локальности.
 
 **[Видимость в поиске](https://seller-edu.ozon.ru/libra/analytics-and-metrics/graphs/vidimost-v-poiske/analitika-po-zaprosu)**. Этот инструмент поможет проверить, сколько покупателей ищут и видят ваши товары в поиске, сколько из них переходят в карточку товара и делают заказ в сравнении с конкурентами. Ещё на этой странице можно:
 в разделе [Где товар в поиске](https://seller-edu.ozon.ru/libra/analytics-and-metrics/graphs/vidimost-v-poiske/validator) проверить, есть ли ваши товары в результатах поиска на Ozon — по разным запросам, на разных устройствах и в разных городах;

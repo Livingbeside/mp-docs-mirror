@@ -9,7 +9,7 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: b71cdb65fe89b2ac
+content_sha: 0aad985a7b3c241d
 ---
 
 # Добавить товары в акцию
@@ -31,9 +31,6 @@ content_sha: b71cdb65fe89b2ac
 
 - `action_id` — integer<uint64> **обязательный**. Идентификатор акции. Получите значение параметра методом [/v1/seller-actions/list](#operation/SellerActionsList).
 - `products` — array[object] **обязательный**. Информация о товарах.
-  - `currency` — string (RUB, BYN, KZT, EUR, USD, CNY). Валюта: - `RUB` — российский рубль, - `BYN` — белорусский рубль, - `KZT` — тенге, - `EUR` — евро, - `USD` — доллар США, - `CNY` — юань. По умолчанию: `RUB`.
-  - `discount_percent` — number<float>. Размер скидки в процентах. Передайте параметр, если механика акции «Скидка».
-  - `sku` — integer<uint64> **обязательный**. Идентификатор товара в системе Ozon — SKU.
 
 ## Ответы
 
