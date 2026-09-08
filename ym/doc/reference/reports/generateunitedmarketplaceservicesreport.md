@@ -2,8 +2,8 @@
 title: Отчет по стоимости услуг
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/reports/generateUnitedMarketplaceServicesReport.md"
-fetched_at: "2026-09-04T01:59:13Z"
-content_sha: 263b4b0c4b862b9f
+fetched_at: "2026-09-08T13:02:20Z"
+content_sha: 14fd352e6ac35de3
 ---
 
 ---
@@ -1236,6 +1236,40 @@ alternate:
   || TARIFF | tariff | Информация об услуге/Тариф | number ||
   || TRANSACTION_TYPE | transactionType | Информация об услуге/Тип транзакции | string ||
   || STORAGE_PERIOD | storagePeriod | Информация об услуге/Количество дней хранения по тарифу | integer ||
+  || SERVICE_DATE | serviceDate | Информация об услуге/Дата оказания услуги | string ||
+  || ACT_DATE | actDate | Информация об услуге/Дата формирования акта | string ||
+  || PAID_STORAGE | paidStorage | Информация об услуге/Стоимость платного хранения | number ||
+  |#
+
+  {% endcut %}
+
+  {% cut "Лист **Платное хранение с 01.09.26** (файл **paid_storage_after_01-09-26**)" %}
+
+  #|
+  || **Название колонки в CSV** | **Название колонки в JSON** | **Название колонки в XLSX** | **Тип значения** ||
+  || BUSINESS_ID | businessId | Информация о бизнесе/ID бизнес-аккаунта | integer ||
+  || PLACEMENT_MODEL | placementModel | Информация о бизнесе/Модели работы | string ||
+  || PARTNER_ID | partnerId | Информация о бизнесе/ID магазинов | integer ||
+  || PARTNER_NAME | partnerName | Информация о бизнесе/Названия магазинов | string ||
+  || INN | inn | Информация о бизнесе/ИНН | string ||
+  || PLACEMENT_CONTRACT | placementContract | Информация о бизнесе/Номера договоров на размещение | string ||
+  || PROMOTION_CONTRACT | promotionContract | Информация о бизнесе/Номера договоров на продвижение | string ||
+  || CATEGORY | category | Информация об услуге/Категория | string ||
+  || SHOP_SKU | shopSku | Информация об услуге/Ваш SKU | string ||
+  || OFFER_NAME | offerName | Информация об услуге/Название товара | string ||
+  || ENTITY_ID | entityId | Информация об услуге/ID сущности | string ||
+  || ENTITY_TYPE | entityType | Информация об услуге/Тип сущности | string ||
+  || CLUSTER | cluster | Информация об услуге/Кластер | string ||
+  || FIRST_SEEN_AT | firstSeenAt | Информация об услуге/Дата появления на складе | string ||
+  || FREE_DAYS | freeDays | Информация об услуге/Количество дней бесплатного хранения | integer ||
+  || LENGTH_PRODUCT_M | lengthProductM | Информация об услуге/Длина единицы товара, м | string ||
+  || WIDTH_PRODUCT_M | widthProductM | Информация об услуге/Ширина единицы товара, м | string ||
+  || HEIGHT_PRODUCT_M | heightProductM | Информация об услуге/Высота единицы товара, м | string ||
+  || COUNT_PRODUCT_UNIT | countProductUnit | Информация об услуге/Количество единиц товара, шт. | string ||
+  || VOLUME_LITER | volumeLiter | Информация об услуге/Объём всех единиц товара, литры | number ||
+  || IS_KGT | isKgt | Информация об услуге/КГТ | string ||
+  || TARIFF | tariff | Информация об услуге/Тариф за литр | number ||
+  || TRANSACTION_TYPE | transactionType | Информация об услуге/Тип транзакции | string ||
   || SERVICE_DATE | serviceDate | Информация об услуге/Дата оказания услуги | string ||
   || ACT_DATE | actDate | Информация об услуге/Дата формирования акта | string ||
   || PAID_STORAGE | paidStorage | Информация об услуге/Стоимость платного хранения | number ||
@@ -2891,14 +2925,14 @@ alternate:
       required: false
       schema:
         $ref: >-
-          /home/sandbox/.ya/build/build_root/dy0i/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/reports/schemas.yaml#/ReportFormatType
+          /home/sandbox/.ya/build/build_root/54qq/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/reports/schemas.yaml#/ReportFormatType
     - description: Язык отчета или документа.
       name: language
       in: query
       required: false
       schema:
         $ref: >-
-          /home/sandbox/.ya/build/build_root/dy0i/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/reports/schemas.yaml#/ReportLanguageType
+          /home/sandbox/.ya/build/build_root/54qq/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/reports/schemas.yaml#/ReportLanguageType
   headers: []
   body: |-
     {
@@ -3033,12 +3067,12 @@ alternate:
           format: int64
           minimum: 1
     $defs:
-      /home/sandbox/.ya/build/build_root/dy0i/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/common/schemas.yaml#/Year:
+      /home/sandbox/.ya/build/build_root/54qq/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/common/schemas.yaml#/Year:
         description: Год.
         type: integer
         format: int32
         example: 2025
-      /home/sandbox/.ya/build/build_root/dy0i/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/common/schemas.yaml#/Month:
+      /home/sandbox/.ya/build/build_root/54qq/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/common/schemas.yaml#/Month:
         description: Номер месяца.
         type: integer
         format: int32

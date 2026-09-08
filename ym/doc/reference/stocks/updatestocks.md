@@ -2,8 +2,8 @@
 title: Передача остатков для кабинетов с группами складов
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/stocks/updateStocks.md"
-fetched_at: "2026-09-04T01:58:20Z"
-content_sha: 02dc1411cf70eee7
+fetched_at: "2026-09-08T13:01:18Z"
+content_sha: 60d502e8c109ed84
 ---
 
 ---
@@ -209,6 +209,22 @@ alternate:
   _Max length:_{.json-schema-reset .json-schema-assertion} `255`
   
   _Pattern:_{.json-schema-reset .json-schema-assertion} `^(?=.*\S.*)[^\x00-\x08\x0A-\x1f\x7f]{1,255}$`
+  
+  _Example:_{.json-schema-reset .json-schema-example} `example`
+  
+  </div>
+  
+  <div class="openapi-entity">
+  
+  ### InternalOfferId {#entity-InternalOfferId}
+  
+  Внутренний идентификатор товара в системах Маркета. Нужен для создания товаров Лавки с отличными offerId и article.
+  
+  **Type**: string
+  
+  _Min length:_{.json-schema-reset .json-schema-assertion} `1`
+  
+  _Max length:_{.json-schema-reset .json-schema-assertion} `255`
   
   _Example:_{.json-schema-reset .json-schema-example} `example`
   
@@ -987,6 +1003,9 @@ alternate:
               x-transform: trim
               minLength: 1
               maxLength: 255
+            internalOfferId:
+              x-hidden: true
+              $ref: '#/$defs/InternalOfferId'
             items:
               description: |
                 Информация об остатках товара.
@@ -1022,6 +1041,14 @@ alternate:
                       UTC. Например, `2017-11-21T00:42:42+03:00`.
                     type: string
                     format: date-time
+    $defs:
+      /home/sandbox/.ya/build/build_root/54qq/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/common/schemas.yaml#/InternalOfferId:
+        description: >-
+          Внутренний идентификатор товара в системах Маркета. Нужен для создания
+          товаров Лавки с отличными offerId и article.
+        type: string
+        minLength: 1
+        maxLength: 255
   bodyType: application/json
   method: put
   security:
