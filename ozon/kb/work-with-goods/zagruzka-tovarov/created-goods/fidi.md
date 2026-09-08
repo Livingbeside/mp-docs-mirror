@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /work-with-goods/zagruzka-tovarov/created-goods/fidi
 source: "https://seller-edu.ozon.ru/libra/work-with-goods/zagruzka-tovarov/created-goods/fidi"
-updated: "2026-05-25 08:59:41"
+updated: "2026-09-07 13:05:37"
 doc_id: 728
-fetched_at: "2026-08-28T12:11:15Z"
-content_sha: ffb2495478feae2b
+fetched_at: "2026-09-08T01:39:32Z"
+content_sha: 3e0e1a5ee74ecdc0
 ---
 
 # Обновить данные о товаре через фид
@@ -83,9 +83,9 @@ YML (Yandex Market Language) — это формат файлов на осно�
 | Название поля | Описание |
 | --- | --- |
 | offer id | Артикул товара на Ozon (обязательно) |
-| price | Цена со скидкой в рублях (обязательно для обновления цен) |
-| oldprice | Цена без скидки в рублях (опционально) |
-| min_price | Минимальная цена в рублях (опционально) |
+| price | Предельная цена в рублях — выше этого значения цена на товар не поднимется (обязательно для обновления цен) |
+| oldprice | Зачёркнутая цена в рублях (опционально) |
+| min_price | Ограничение для акций и стратегий в рублях (опционально) |
 | outlet instock | Остаток на складе (обязательно для обновления остатков) |
 | warehouse_name | Название вашего склада в личном кабинете (опционально, если у вас только 1 склад) |
 

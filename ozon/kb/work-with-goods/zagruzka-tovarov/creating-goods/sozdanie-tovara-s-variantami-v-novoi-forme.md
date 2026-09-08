@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /work-with-goods/zagruzka-tovarov/creating-goods/sozdanie-tovara-s-variantami-v-novoi-forme
 source: "https://seller-edu.ozon.ru/libra/work-with-goods/zagruzka-tovarov/creating-goods/sozdanie-tovara-s-variantami-v-novoi-forme"
-updated: "2026-01-27 10:18:13"
+updated: "2026-09-07 12:36:00"
 doc_id: 14377
-fetched_at: "2026-08-28T12:11:15Z"
-content_sha: 6bcc5b40b5647e47
+fetched_at: "2026-09-08T01:39:32Z"
+content_sha: 3bfeea8e858963cd
 ---
 
 # Создание товара с вариантами в новой форме
@@ -42,7 +42,7 @@ _Главная / Работа с товарами / Создание и ред�
   артикул;
   
   размер — чтобы для товаров из категорий **Одежда** и **Обувь** сразу создать несколько размеров варианта, нажмите  и заполните.
-6. Задайте цену и выберите ставку НДС. Чтобы рядом с ценой отображалась зачёркнутая и процент скидки, укажите значение в поле **Цена до скидки** — покажем её в карточке, когда добавите товар в [акцию от Ozon](https://seller-edu.ozon.ru/ceny-i-akcii/akcii-skidki-i-kupony/akcii-ozon) или в [свою собственную](https://seller-edu.ozon.ru/ceny-i-akcii/akcii-skidki-i-kupony/my-promo) с механикой **Скидка**.
+6. Задайте цену и выберите ставку НДС. Чтобы рядом с ценой отображалась зачёркнутая и процент скидки, укажите значение в поле **Зачёркнутая цена** — покажем её в карточке, когда добавите товар в [акцию от Ozon](https://seller-edu.ozon.ru/ceny-i-akcii/akcii-skidki-i-kupony/akcii-ozon) или в [свою собственную](https://seller-edu.ozon.ru/ceny-i-akcii/akcii-skidki-i-kupony/my-promo) с механикой **Скидка**.
 7. Укажите [габариты и вес](/work-with-goods/trebovaniya-k-kartochkam-tovarov/product-information/ovh).
 8. Нажмите **Показать больше характеристик**, чтобы заполнить остальные поля. Чем больше параметров вы укажете, тем привлекательнее будет товар для покупателей и тем легче его будет найти.
 9. Добавьте фото. Нажмите **Добавить другой контент**, чтобы добавить видеообложку, видео, rich-контент или таблицу размеров.

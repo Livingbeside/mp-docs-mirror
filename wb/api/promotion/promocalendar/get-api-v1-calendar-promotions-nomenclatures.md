@@ -9,7 +9,7 @@ tags:
 spec_version: promotion
 source: "https://dev.wildberries.ru/docs/openapi/promotion"
 deprecated: false
-content_sha: 06dd7f9ee1c1ae92
+content_sha: 34476818e9773177
 ---
 
 # Список товаров для участия в акции
@@ -70,6 +70,17 @@ content_sha: 06dd7f9ee1c1ae92
 
 - `title` — string. Заголовок ошибки
 - `detail` — string. Детали ошибки. Ошибка возвращается только сервисам из [Каталога решений для бизнеса](/business-solutions)
+
+**403** — Доступ запрещён
+
+- `title` — string. Заголовок ошибки
+- `detail` — string. Детали ошибки
+- `code` — string. Внутренний код ошибки
+- `requestId` — string. ID запроса
+- `origin` — string. ID внутреннего сервиса WB
+- `status` — number. HTTP статус-код
+- `statusText` — string. Расшифровка HTTP статус-кода
+- `timestamp` — string<date-time>. Дата и время запроса
 
 **422** — Ошибка обработки параметров запроса
 

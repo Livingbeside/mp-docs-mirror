@@ -9,7 +9,7 @@ tags:
 spec_version: items
 source: "https://dev.wildberries.ru/docs/openapi/item-management"
 deprecated: false
-content_sha: fe0dae47c2be8695
+content_sha: cfcf98777a05d483
 ---
 
 # Создание карточек товаров с присоединением
@@ -98,6 +98,17 @@ content_sha: fe0dae47c2be8695
 
 - `title` — string. Заголовок ошибки
 - `detail` — string. Детали ошибки. Ошибка возвращается только сервисам из [Каталога решений для бизнеса](/business-solutions)
+
+**403** — Доступ запрещён
+
+- `title` — string. Заголовок ошибки
+- `detail` — string. Детали ошибки
+- `code` — string. Внутренний код ошибки
+- `requestId` — string. ID запроса
+- `origin` — string. ID внутреннего сервиса WB
+- `status` — number. HTTP статус-код
+- `statusText` — string. Расшифровка HTTP статус-кода
+- `timestamp` — string<date-time>. Дата и время запроса
 
 **413** — Превышен лимит объёма данных в запросе
 

@@ -9,7 +9,7 @@ tags:
 spec_version: ordersfbw
 source: "https://dev.wildberries.ru/docs/openapi/orders-fbw"
 deprecated: false
-content_sha: 6890027d40c82ff3
+content_sha: 7ad8f3ccbed98a96
 ---
 
 # Список складов
@@ -54,6 +54,15 @@ content_sha: 6890027d40c82ff3
 - `timestamp` — string<date-time>. Дата и время запроса
 
 **403** — Доступ запрещён
+
+- `title` — string. Заголовок ошибки
+- `detail` — string. Детали ошибки
+- `code` — string. Внутренний код ошибки
+- `requestId` — string. ID запроса
+- `origin` — string. ID внутреннего сервиса WB
+- `status` — number. HTTP статус-код
+- `statusText` — string. Расшифровка HTTP статус-кода
+- `timestamp` — string<date-time>. Дата и время запроса
 
 **404** — Не найдено
 

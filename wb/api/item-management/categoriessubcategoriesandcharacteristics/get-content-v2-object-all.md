@@ -9,7 +9,7 @@ tags:
 spec_version: items
 source: "https://dev.wildberries.ru/docs/openapi/item-management"
 deprecated: false
-content_sha: 2ee41196e6685ff5
+content_sha: 9863ee0e256892d4
 ---
 
 # Список предметов
@@ -71,6 +71,17 @@ content_sha: 2ee41196e6685ff5
 - `detail` — string. Детали ошибки
 - `code` — string. Внутренний код ошибки
 - `requestId` — string. Уникальный ID запроса
+- `origin` — string. ID внутреннего сервиса WB
+- `status` — number. HTTP статус-код
+- `statusText` — string. Расшифровка HTTP статус-кода
+- `timestamp` — string<date-time>. Дата и время запроса
+
+**403** — Доступ запрещён
+
+- `title` — string. Заголовок ошибки
+- `detail` — string. Детали ошибки
+- `code` — string. Внутренний код ошибки
+- `requestId` — string. ID запроса
 - `origin` — string. ID внутреннего сервиса WB
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода

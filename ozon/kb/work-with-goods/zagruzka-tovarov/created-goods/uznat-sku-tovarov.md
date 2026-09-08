@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /work-with-goods/zagruzka-tovarov/created-goods/uznat-sku-tovarov
 source: "https://seller-edu.ozon.ru/libra/work-with-goods/zagruzka-tovarov/created-goods/uznat-sku-tovarov"
-updated: "2026-02-18 09:52:55"
+updated: "2026-09-07 13:07:08"
 doc_id: 31730
-fetched_at: "2026-08-28T12:11:15Z"
-content_sha: dbc7a8877bea8b90
+fetched_at: "2026-09-08T01:39:32Z"
+content_sha: 393e59ff01509a1c
 ---
 
 # Узнать SKU товаров
@@ -20,7 +20,7 @@ SKU — уникальный идентификатор товара в сист
 
 ## В списке товаров
 
-Перейдите **[Товары → Список товаров](https://seller.ozon.ru/app/products%D1%8D)** и найдите нужную позицию. SKU указаны в столбце **Артикул**.
+Перейдите **[Товары → Список товаров](https://seller.ozon.ru/app/products%D1%8D)** и найдите позицию. SKU указаны в столбце **Артикул**.
 
 В некоторых случаях не показываем SKU в списке товаров — например, для услуг.
 

@@ -9,7 +9,7 @@ tags:
 spec_version: order
 source: "https://dev.wildberries.ru/docs/openapi/orders-fbs"
 deprecated: false
-content_sha: 42d2cdccd2340c32
+content_sha: 45b38cd63b1b766a
 ---
 
 # Получить список архивных сборочных заданий
@@ -121,6 +121,14 @@ content_sha: 42d2cdccd2340c32
 - `requestId` — string. Уникальный ID запроса
 - `status` — integer. HTTP статус-код ответа
 - `title` — string **обязательный**. Заголовок ошибки
+- `title` — string. Заголовок ошибки
+- `detail` — string. Детали ошибки
+- `code` — string. Внутренний код ошибки
+- `requestId` — string. ID запроса
+- `origin` — string. ID внутреннего сервиса WB
+- `status` — number. HTTP статус-код
+- `statusText` — string. Расшифровка HTTP статус-кода
+- `timestamp` — string<date-time>. Дата и время запроса
 
 **429** — Слишком много запросов
 

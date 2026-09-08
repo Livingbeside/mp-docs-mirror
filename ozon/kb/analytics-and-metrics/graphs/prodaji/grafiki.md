@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /analytics-and-metrics/graphs/prodaji/grafiki
 source: "https://seller-edu.ozon.ru/libra/analytics-and-metrics/graphs/prodaji/grafiki"
-updated: "2026-07-31 14:59:19"
+updated: "2026-09-07 12:40:02"
 doc_id: 31975
-fetched_at: "2026-08-28T12:11:15Z"
-content_sha: 6783d4633be5de16
+fetched_at: "2026-09-08T01:39:32Z"
+content_sha: 2b1390f3cf81530d
 ---
 
 # Продажи моих товаров
@@ -239,7 +239,7 @@ ABC-анализ по сумме и количеству:
 
 Заказано на сумму.
 
-доля в общей сумме заказов.
+Доля в общей сумме заказов.
 
 Показы всего.
 
@@ -247,7 +247,7 @@ ABC-анализ по сумме и количеству:
 
 Средняя цена.
 
-Скидка от вашей цены.
+Скидка от медианной цены.
 
 Индекс цен.
 

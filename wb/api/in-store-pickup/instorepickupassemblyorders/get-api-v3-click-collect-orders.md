@@ -9,7 +9,7 @@ tags:
 spec_version: instorepickup
 source: "https://dev.wildberries.ru/docs/openapi/in-store-pickup"
 deprecated: false
-content_sha: 42b60cfc8ea53859
+content_sha: e635064f64391df7
 ---
 
 # Получить информацию о завершённых сборочных заданиях
@@ -66,6 +66,7 @@ content_sha: 42b60cfc8ea53859
   - `skus` — array[string]. Массив баркодов товара
   - `warehouseAddress` — string. Адрес магазина (склада продавца), на который поступило сборочное задание
   - `warehouseId` — integer. ID склада продавца, на который поступило сборочное задание
+  - `tireService` — boolean. Указал ли покупатель, что ему требуется услуга шиномонтажа: - `false` — нет, услуга шиномонтажа не требуется - `true` — да, услуга шиномонтажа требуется
   - `options` — object. Опции заказа
     - `isB2b` — boolean. Признак B2B-продажи: - `false` — не B2B-продажа - `true` — B2B-продажа
 

@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /how-to-sell-effectively/advertising-of-goods/vneshnee-prodvizhenie
 source: "https://seller-edu.ozon.ru/libra/how-to-sell-effectively/advertising-of-goods/vneshnee-prodvizhenie"
-updated: "2026-09-03 14:47:40"
+updated: "2026-09-07 13:25:22"
 doc_id: 23579
-fetched_at: "2026-09-04T01:54:42Z"
-content_sha: 067f65b216617a5d
+fetched_at: "2026-09-08T01:39:31Z"
+content_sha: a6a7c5b5f353c2d3
 ---
 
 # «Внешнее продвижение»
@@ -32,7 +32,7 @@ _Главная / Продвижение / Продвижение товаров
 
 # Из чего состоит плата за «Внешнее продвижение»
 
-Вы платите установленный процент за заказ товара через публикацию блогера, независимо от количества её просмотров. Списываем ставку от [вашей цены](/ceny-i-akcii/rabota-s-cenami/price-control#какие-бывают-цены), которую вы установили в карточке.
+Вы платите установленный процент за заказ товара через публикацию блогера, независимо от количества её просмотров. Списываем ставку от [предельной цены](/ceny-i-akcii/rabota-s-cenami/price-control#какие-бывают-цены) товара.
 
 Если добавляете образцы товара в задание — затраты на них оплачиваете вы. [Подробнее об образцах товара](https://seller-edu.ozon.ru/libra/how-to-sell-effectively/advertising-of-goods/vneshnee-prodvizhenie#%D0%B4%D0%BB%D1%8F-%D1%87%D0%B5%D0%B3%D0%BE-%D0%BD%D1%83%D0%B6%D0%BD%D1%8B-%D0%BE%D0%B1%D1%80%D0%B0%D0%B7%D1%86%D1%8B-%D1%82%D0%BE%D0%B2%D0%B0%D1%80%D0%B0)
 

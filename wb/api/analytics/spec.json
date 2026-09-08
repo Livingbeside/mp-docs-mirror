@@ -1,6 +1,14 @@
 {
   "components": {
     "examples": {
+      "AuthorizationErrorResponse": {
+        "value": {
+          "detail": "Authorization error",
+          "origin": "analytics-open-api",
+          "requestId": "51b7828b-e298-4dfa-b7cd-45ab179921d3",
+          "title": "Authorization error"
+        }
+      },
       "InventoryHistoryReportRes": {
         "description": "",
         "value": "VendorCode,Name,NmID,SubjectName,BrandName,SizeName,ChrtID,OfficeName,13.12.2025,14.12.2025,15.12.2025\n41058/прозрачный,Чехол для телефона прозрачный111,5870243,Чехлы для телефонов,Arizona.kz,-,20964883,Склад WB,1,1,1\n41058/прозрачный,Чехол для телефона прозрачный111,5870243,Чехлы для телефонов,Arizona.kz,-,20964883,Маркетплейс,1000,997,923\nwb59toaotq,Брюки,12862180,Болеро,,O,39533928,Маркетплейс,6,8,4\n451263124,Брюки 123,12862181,Брюки,DUB,A,39533929,Маркетплейс,11,10,11\nwb33q6504x,ПАЗЛ,13088345,Пазлы,CoolPuzzles,-,40030565,Маркетплейс,2,28,54\n4854554654/0,Альбом,13480414,Альбомы для коллекционирования,Эконом,-,40873579,Маркетплейс,25,20,19\n14053651Черный,Дубленка 333334,14652473,Дубленки,SARTORI DODICI,48,43253666,Маркетплейс,30,30,30\nHGF56X,Чай,14986284,Чай,Lipton,-,43804848,Склад WB,154,254,223\n123401,Кроссовки,14917832,Кофе молотый,,-,43807552,Склад WB,0,0,0\n123401,Кроссовки,14917832,Кофе молотый,,-,43807553,Склад WB,4,0,23\n"
@@ -8,6 +16,31 @@
       "InventoryMetricsReportRes": {
         "description": "",
         "value": "VendorCode,Name,NmID,SubjectName,BrandName,SizeName,ChrtID,RegionName,OfficeName,Availability,OrdersCount,OrdersSum,BuyoutCount,BuyoutSum,BuyoutPercent,AvgOrders,StockCount,StockSum,SaleRate,AvgStockTurnover,ToClientCount,FromClientCount,Price,OfficeMissingTime,LostOrdersCount,LostOrdersSum,LostBuyoutsCount,LostBuyoutsSum,AvgOrdersByMonth_11.2013,AvgOrdersByMonth_12.2013,AvgOrdersByMonth_01.2014,AvgOrdersByMonth_02.2014,AvgOrdersByMonth_03.2014,AvgOrdersByMonth_04.2014,AvgOrdersByMonth_05.2014,AvgOrdersByMonth_06.2014,AvgOrdersByMonth_07.2014,Currency\n037456337500,Robust High-Performance Robot,1031126854494603033,Термокомплекты,Amazon Web Services,67-69,987654321,Склад WB,Склад WB,nonLiquid,521124,521124000,123,123000,10,0.57,20,20000,-3,5,111,222,14008,-3,0.71,0.77,0.93,0.68,74067.12,29935.79,8895.27,37019.65,37934.89,62412.64,29857.97,0.00,72465.85,RUB\n089201683406,Luxe Blender Nexus,8904325039176595105,Термокомплекты,iRecycle,54-56,987654071,Склад WB,Склад WB,nonLiquid,1231,1231000,456,456000,20,0.71,30,30000,2,-3,333,444,85162,-2,0.90,0.96,0.31,0.93,,,,,,2628.77,0.00,70534.86,0.00,RUB\n059509746730,Pure Quartz Speaker,6780550382946145952,Термокомплекты,Next Step Living,60-62,984574321,Маркетплейс,Маркетплейс,balanced,3214,3214000,789,789000,30,0.30,40,40000,1,11,555,666,66484,-3,0.03,0.08,0.71,0.48,,,47297.22,55308.71,6463.43,48664.95,0.00,0.00,74502.72,RUB\n058266400986,Modular Stainless Monitor,3475827302459171321,Термокомплекты,TagniFi,65-67,926554321,Маркетплейс,Маркетплейс,nonActual,312,312000,123,123000,40,0.71,50,50000,13,-2,666,888,53254,-3,0.96,0.01,0.97,0.92,,67227.50,4608.98,90300.06,15890.52,0.00,0.00,41891.11,0.00,RUB\n070198970053,Microwave Quick Eco-Friendly,4734922922328623947,Термокомплекты,Boston Consulting Group,46-48,983234321,Склад WB,Склад WB,nonLiquid,343,343000,456,456000,50,0.92,60,60000,17,-2,777,101010,43823,-1,0.84,0.14,0.26,0.75,30463.57,8073.43,26678.35,0.00,339.99,56237.24,2172.75,74665.30,14296.76,RUB\n"
+      },
+      "Response403TokenCategory": {
+        "description": "Неверная категория токена",
+        "value": {
+          "detail": "scope is not allowed for this resource",
+          "origin": "ag-marketplace",
+          "requestId": "2dbf6fc9-bad8-4ef9-a058-c938a8553ba5",
+          "status": 403,
+          "statusText": "Forbidden",
+          "timestamp": "2026-09-03T13:55:15Z",
+          "title": "Forbidden"
+        }
+      },
+      "Response403TokenType": {
+        "description": "Неверный тип токена",
+        "value": {
+          "code": "base token is not allowed for this path",
+          "detail": "base token is not allowed",
+          "origin": "s2s-finance",
+          "requestId": "722199b2e15bbca48cc1d488a7989976",
+          "status": 403,
+          "statusText": "Forbidden",
+          "timestamp": "2026-05-25T02:47:09Z",
+          "title": "forbidden"
+        }
       },
       "SalesFunnelGroupRes": {
         "description": "",
@@ -164,26 +197,6 @@
           }
         },
         "description": "<span class='response__value '>Слишком много запросов</span>"
-      },
-      "AuthorizationErrorResponse": {
-        "content": {
-          "application/json": {
-            "examples": {
-              "errorExample": {
-                "value": {
-                  "detail": "Authorization error",
-                  "origin": "analytics-open-api",
-                  "requestId": "51b7828b-e298-4dfa-b7cd-45ab179921d3",
-                  "title": "Authorization error"
-                }
-              }
-            },
-            "schema": {
-              "$ref": "#/components/schemas/ErrorObject"
-            }
-          }
-        },
-        "description": "<span class='response__value '>Доступ запрещён</span>"
       },
       "BadRequestErrorResponse": {
         "content": {
@@ -3204,47 +3217,39 @@
         ],
         "type": "object"
       },
-      "Response403General": {
+      "Response4XX": {
         "properties": {
           "code": {
             "description": "Внутренний код ошибки",
-            "example": "base token is not allowed for this path",
             "type": "string"
           },
           "detail": {
             "description": "Детали ошибки",
-            "example": "base token is not allowed",
             "type": "string"
           },
           "origin": {
             "description": "ID внутреннего сервиса WB",
-            "example": "s2s-finance",
             "type": "string"
           },
           "requestId": {
             "description": "ID запроса",
-            "example": "722199b2e15bbca48cc1d488a7989976",
             "type": "string"
           },
           "status": {
             "description": "HTTP статус-код",
-            "example": 403,
             "type": "number"
           },
           "statusText": {
             "description": "Расшифровка HTTP статус-кода",
-            "example": "Forbidden",
             "type": "string"
           },
           "timestamp": {
             "description": "Дата и время запроса",
-            "example": "2026-05-25T02:47:09Z",
             "format": "date-time",
             "type": "string"
           },
           "title": {
             "description": "Заголовок ошибки",
-            "example": "forbidden",
             "type": "string"
           }
         },
@@ -6323,6 +6328,16 @@
                 "schema": {
                   "$ref": "#/components/schemas/ErrorObject403"
                 }
+              },
+              "application/problem+json": {
+                "examples": {
+                  "Response403TokenCategory": {
+                    "$ref": "#/components/examples/Response403TokenCategory"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/Response4XX"
+                }
               }
             },
             "description": "<span class='response__value '>Доступ запрещён</span>"
@@ -6401,8 +6416,16 @@
                 }
               },
               "application/problem+json": {
+                "examples": {
+                  "Response403TokenCategory": {
+                    "$ref": "#/components/examples/Response403TokenCategory"
+                  },
+                  "Response403TokenType": {
+                    "$ref": "#/components/examples/Response403TokenType"
+                  }
+                },
                 "schema": {
-                  "$ref": "#/components/schemas/Response403General"
+                  "$ref": "#/components/schemas/Response4XX"
                 }
               }
             },
@@ -6489,8 +6512,16 @@
                 }
               },
               "application/problem+json": {
+                "examples": {
+                  "Response403TokenCategory": {
+                    "$ref": "#/components/examples/Response403TokenCategory"
+                  },
+                  "Response403TokenType": {
+                    "$ref": "#/components/examples/Response403TokenType"
+                  }
+                },
                 "schema": {
-                  "$ref": "#/components/schemas/Response403General"
+                  "$ref": "#/components/schemas/Response4XX"
                 }
               }
             },
@@ -6572,8 +6603,16 @@
                 }
               },
               "application/problem+json": {
+                "examples": {
+                  "Response403TokenCategory": {
+                    "$ref": "#/components/examples/Response403TokenCategory"
+                  },
+                  "Response403TokenType": {
+                    "$ref": "#/components/examples/Response403TokenType"
+                  }
+                },
                 "schema": {
-                  "$ref": "#/components/schemas/Response403General"
+                  "$ref": "#/components/schemas/Response4XX"
                 }
               }
             },
@@ -6642,7 +6681,29 @@
             "$ref": "#/components/responses/402"
           },
           "403": {
-            "$ref": "#/components/responses/AuthorizationErrorResponse"
+            "content": {
+              "application/json": {
+                "examples": {
+                  "AccessDenied": {
+                    "$ref": "#/components/examples/AuthorizationErrorResponse"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorObject"
+                }
+              },
+              "application/problem+json": {
+                "examples": {
+                  "Response403TokenCategory": {
+                    "$ref": "#/components/examples/Response403TokenCategory"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/Response4XX"
+                }
+              }
+            },
+            "description": "<span class='response__value '>Доступ запрещён</span>"
           },
           "429": {
             "$ref": "#/components/responses/429"
@@ -6712,7 +6773,29 @@
             "$ref": "#/components/responses/402"
           },
           "403": {
-            "$ref": "#/components/responses/AuthorizationErrorResponse"
+            "content": {
+              "application/json": {
+                "examples": {
+                  "AccessDenied": {
+                    "$ref": "#/components/examples/AuthorizationErrorResponse"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorObject"
+                }
+              },
+              "application/problem+json": {
+                "examples": {
+                  "Response403TokenCategory": {
+                    "$ref": "#/components/examples/Response403TokenCategory"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/Response4XX"
+                }
+              }
+            },
+            "description": "<span class='response__value '>Доступ запрещён</span>"
           },
           "429": {
             "$ref": "#/components/responses/429"
@@ -6766,7 +6849,29 @@
             "$ref": "#/components/responses/402"
           },
           "403": {
-            "$ref": "#/components/responses/AuthorizationErrorResponse"
+            "content": {
+              "application/json": {
+                "examples": {
+                  "AccessDenied": {
+                    "$ref": "#/components/examples/AuthorizationErrorResponse"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorObject"
+                }
+              },
+              "application/problem+json": {
+                "examples": {
+                  "Response403TokenCategory": {
+                    "$ref": "#/components/examples/Response403TokenCategory"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/Response4XX"
+                }
+              }
+            },
+            "description": "<span class='response__value '>Доступ запрещён</span>"
           },
           "429": {
             "$ref": "#/components/responses/429"
@@ -6865,35 +6970,22 @@
             "content": {
               "application/json": {
                 "examples": {
-                  "errorExample": {
-                    "value": {
-                      "detail": "Authorization error",
-                      "origin": "analytics-open-api",
-                      "requestId": "51b7828b-e298-4dfa-b7cd-45ab179921d3",
-                      "title": "Authorization error"
-                    }
+                  "AccessDenied": {
+                    "$ref": "#/components/examples/AuthorizationErrorResponse"
                   }
                 },
                 "schema": {
-                  "properties": {
-                    "detail": {
-                      "description": "Детали ошибки",
-                      "type": "string"
-                    },
-                    "origin": {
-                      "description": "ID внутреннего сервиса WB",
-                      "type": "string"
-                    },
-                    "requestId": {
-                      "description": "Уникальный ID запроса",
-                      "type": "string"
-                    },
-                    "title": {
-                      "description": "Заголовок ошибки",
-                      "type": "string"
-                    }
-                  },
-                  "type": "object"
+                  "$ref": "#/components/schemas/ErrorObject"
+                }
+              },
+              "application/problem+json": {
+                "examples": {
+                  "Response403TokenCategory": {
+                    "$ref": "#/components/examples/Response403TokenCategory"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/Response4XX"
                 }
               }
             },
@@ -7268,35 +7360,22 @@
             "content": {
               "application/json": {
                 "examples": {
-                  "errorExample": {
-                    "value": {
-                      "detail": "Authorization error",
-                      "origin": "analytics-open-api",
-                      "requestId": "51b7828b-e298-4dfa-b7cd-45ab179921d3",
-                      "title": "Authorization error"
-                    }
+                  "AccessDenied": {
+                    "$ref": "#/components/examples/AuthorizationErrorResponse"
                   }
                 },
                 "schema": {
-                  "properties": {
-                    "detail": {
-                      "description": "Детали ошибки",
-                      "type": "string"
-                    },
-                    "origin": {
-                      "description": "ID внутреннего сервиса WB",
-                      "type": "string"
-                    },
-                    "requestId": {
-                      "description": "Уникальный ID запроса",
-                      "type": "string"
-                    },
-                    "title": {
-                      "description": "Заголовок ошибки",
-                      "type": "string"
-                    }
-                  },
-                  "type": "object"
+                  "$ref": "#/components/schemas/ErrorObject"
+                }
+              },
+              "application/problem+json": {
+                "examples": {
+                  "Response403TokenCategory": {
+                    "$ref": "#/components/examples/Response403TokenCategory"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/Response4XX"
                 }
               }
             },
@@ -7444,35 +7523,22 @@
             "content": {
               "application/json": {
                 "examples": {
-                  "errorExample": {
-                    "value": {
-                      "detail": "Authorization error",
-                      "origin": "analytics-open-api",
-                      "requestId": "51b7828b-e298-4dfa-b7cd-45ab179921d3",
-                      "title": "Authorization error"
-                    }
+                  "AccessDenied": {
+                    "$ref": "#/components/examples/AuthorizationErrorResponse"
                   }
                 },
                 "schema": {
-                  "properties": {
-                    "detail": {
-                      "description": "Детали ошибки",
-                      "type": "string"
-                    },
-                    "origin": {
-                      "description": "ID внутреннего сервиса WB",
-                      "type": "string"
-                    },
-                    "requestId": {
-                      "description": "Уникальный ID запроса",
-                      "type": "string"
-                    },
-                    "title": {
-                      "description": "Заголовок ошибки",
-                      "type": "string"
-                    }
-                  },
-                  "type": "object"
+                  "$ref": "#/components/schemas/ErrorObject"
+                }
+              },
+              "application/problem+json": {
+                "examples": {
+                  "Response403TokenCategory": {
+                    "$ref": "#/components/examples/Response403TokenCategory"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/Response4XX"
                 }
               }
             },
@@ -7576,35 +7642,22 @@
             "content": {
               "application/json": {
                 "examples": {
-                  "errorExample": {
-                    "value": {
-                      "detail": "Authorization error",
-                      "origin": "analytics-open-api",
-                      "requestId": "51b7828b-e298-4dfa-b7cd-45ab179921d3",
-                      "title": "Authorization error"
-                    }
+                  "AccessDenied": {
+                    "$ref": "#/components/examples/AuthorizationErrorResponse"
                   }
                 },
                 "schema": {
-                  "properties": {
-                    "detail": {
-                      "description": "Детали ошибки",
-                      "type": "string"
-                    },
-                    "origin": {
-                      "description": "ID внутреннего сервиса WB",
-                      "type": "string"
-                    },
-                    "requestId": {
-                      "description": "Уникальный ID запроса",
-                      "type": "string"
-                    },
-                    "title": {
-                      "description": "Заголовок ошибки",
-                      "type": "string"
-                    }
-                  },
-                  "type": "object"
+                  "$ref": "#/components/schemas/ErrorObject"
+                }
+              },
+              "application/problem+json": {
+                "examples": {
+                  "Response403TokenCategory": {
+                    "$ref": "#/components/examples/Response403TokenCategory"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/Response4XX"
                 }
               }
             },
@@ -7694,6 +7747,16 @@
                 "schema": {
                   "$ref": "#/components/schemas/ErrorObject403"
                 }
+              },
+              "application/problem+json": {
+                "examples": {
+                  "Response403TokenCategory": {
+                    "$ref": "#/components/examples/Response403TokenCategory"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/Response4XX"
+                }
               }
             },
             "description": "<span class='response__value '>Доступ запрещён</span>"
@@ -7776,6 +7839,16 @@
               "application/json": {
                 "schema": {
                   "$ref": "#/components/schemas/ErrorObject403"
+                }
+              },
+              "application/problem+json": {
+                "examples": {
+                  "Response403TokenCategory": {
+                    "$ref": "#/components/examples/Response403TokenCategory"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/Response4XX"
                 }
               }
             },
@@ -7860,6 +7933,16 @@
                 "schema": {
                   "$ref": "#/components/schemas/ErrorObject403"
                 }
+              },
+              "application/problem+json": {
+                "examples": {
+                  "Response403TokenCategory": {
+                    "$ref": "#/components/examples/Response403TokenCategory"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/Response4XX"
+                }
               }
             },
             "description": "<span class='response__value '>Доступ запрещён</span>"
@@ -7942,6 +8025,16 @@
               "application/json": {
                 "schema": {
                   "$ref": "#/components/schemas/ErrorObject403"
+                }
+              },
+              "application/problem+json": {
+                "examples": {
+                  "Response403TokenCategory": {
+                    "$ref": "#/components/examples/Response403TokenCategory"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/Response4XX"
                 }
               }
             },
@@ -8026,6 +8119,16 @@
                 "schema": {
                   "$ref": "#/components/schemas/ErrorObject403"
                 }
+              },
+              "application/problem+json": {
+                "examples": {
+                  "Response403TokenCategory": {
+                    "$ref": "#/components/examples/Response403TokenCategory"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/Response4XX"
+                }
               }
             },
             "description": "<span class='response__value '>Доступ запрещён</span>"
@@ -8102,6 +8205,16 @@
                 "schema": {
                   "$ref": "#/components/schemas/ErrorObject403"
                 }
+              },
+              "application/problem+json": {
+                "examples": {
+                  "Response403TokenCategory": {
+                    "$ref": "#/components/examples/Response403TokenCategory"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/Response4XX"
+                }
               }
             },
             "description": "<span class='response__value '>Доступ запрещён</span>"
@@ -8177,6 +8290,16 @@
               "application/json": {
                 "schema": {
                   "$ref": "#/components/schemas/ErrorObject403"
+                }
+              },
+              "application/problem+json": {
+                "examples": {
+                  "Response403TokenCategory": {
+                    "$ref": "#/components/examples/Response403TokenCategory"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/Response4XX"
                 }
               }
             },
@@ -8255,6 +8378,16 @@
                 "schema": {
                   "$ref": "#/components/schemas/ErrorObject403"
                 }
+              },
+              "application/problem+json": {
+                "examples": {
+                  "Response403TokenCategory": {
+                    "$ref": "#/components/examples/Response403TokenCategory"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/Response4XX"
+                }
               }
             },
             "description": "<span class='response__value '>Доступ запрещён</span>"
@@ -8330,6 +8463,16 @@
               "application/json": {
                 "schema": {
                   "$ref": "#/components/schemas/ErrorObject403"
+                }
+              },
+              "application/problem+json": {
+                "examples": {
+                  "Response403TokenCategory": {
+                    "$ref": "#/components/examples/Response403TokenCategory"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/Response4XX"
                 }
               }
             },

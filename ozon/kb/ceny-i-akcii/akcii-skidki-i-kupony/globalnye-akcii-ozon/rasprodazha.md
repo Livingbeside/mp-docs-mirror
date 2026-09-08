@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /ceny-i-akcii/akcii-skidki-i-kupony/globalnye-akcii-ozon/rasprodazha
 source: "https://seller-edu.ozon.ru/libra/ceny-i-akcii/akcii-skidki-i-kupony/globalnye-akcii-ozon/rasprodazha"
-updated: "2026-08-21 15:39:24"
+updated: "2026-09-07 13:46:11"
 doc_id: 12376
-fetched_at: "2026-08-28T12:11:15Z"
-content_sha: 6afb8b5dbec1e083
+fetched_at: "2026-09-08T01:39:32Z"
+content_sha: 61d7bf2280a23736
 ---
 
 # Распродажи Ozon
@@ -60,7 +60,7 @@ Ozon регулярно проводит масштабные распродаж
 | --- | --- | --- | --- |
 | Переход ко всем товарам-участникам акций с главной страницы сайта и приложения | ✓ | ✓ | ✓ |
 | Яркий бейдж об участии в распродаже и акционная цена | ✓ | ✓ | ✓ |
-| Зачёркнутую [цену до скидки](https://seller-edu.ozon.ru/ceny-i-akcii/rabota-s-cenami/price-control#%D0%BA%D0%B0%D0%BA%D0%B8%D0%B5-%D0%B1%D1%8B%D0%B2%D0%B0%D1%8E%D1%82-%D1%86%D0%B5%D0%BD%D1%8B) в карточке товара и процент экономии | ✓ | ✓ | ✓ |
+| [Зачёркнутую цену](https://seller-edu.ozon.ru/ceny-i-akcii/rabota-s-cenami/price-control#какие-бывают-цены) в карточке товара и процент экономии | ✓ | ✓ | ✓ |
 | Акционный фильтр в поиске | ✓ | ✓ | ✓ |
 | Счётчик остатков в карточке товара* | ✓ | ✓ | ✓ |
 | Поднятие в поисковой выдаче (бустинг) | 55% | 55% | От 15 до 55%. Чем выше скидка на товар, тем больше бустинга получаете |

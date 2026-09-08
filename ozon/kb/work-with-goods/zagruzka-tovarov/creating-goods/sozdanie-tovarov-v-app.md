@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /work-with-goods/zagruzka-tovarov/creating-goods/sozdanie-tovarov-v-app
 source: "https://seller-edu.ozon.ru/libra/work-with-goods/zagruzka-tovarov/creating-goods/sozdanie-tovarov-v-app"
-updated: "2026-04-06 08:54:55"
+updated: "2026-09-07 13:03:41"
 doc_id: 53363
-fetched_at: "2026-08-28T12:11:15Z"
-content_sha: f6a5e8be2e34b0f5
+fetched_at: "2026-09-08T01:39:32Z"
+content_sha: 5edd80f4d3d24c57
 ---
 
 # Создание и редактирование товаров в приложении Ozon Seller
@@ -27,9 +27,9 @@ _Главная / Работа с товарами / Создание и ред�
   
   [артикул](https://seller-edu.ozon.ru/work-with-goods/trebovaniya-k-kartochkam-tovarov/articyl-tovara) — номер товара в вашей базе, он должен быть уникальным для вашего ассортимента;
   
-  цену;
+  предельную цену — выше этого значения цена на товар не поднимется;
   
-  цену до скидки, по которой товар продавался раньше — она должна быть меньше текущей, покупатели увидят зачеркнутую цену;
+  зачёркнутую цену — её будут видеть покупатели зачёркнутой, если товар будет добавлен в [акцию от Ozon](https://seller-edu.ozon.ru/ceny-i-akcii/akcii-skidki-i-kupony/akcii-ozon/promo) или в [собственную](https://seller-edu.ozon.ru/ceny-i-akcii/akcii-skidki-i-kupony/akcii-prodavca/my-promo) с механикой **Скидка**. Зачёркнутая цена должна быть выше предельной цены.;
   
   ставку НДС на товар — на большинство товаров действует ставка в 22%, но [некоторые позиции](https://nalog-nalog.ru/nds/stavka_nds/perechen-tovarov-oblagaemyh-nds-po-stavke-10/) облагаются НДС в 10%: например, мясо, детская продукция и т. д.;
   

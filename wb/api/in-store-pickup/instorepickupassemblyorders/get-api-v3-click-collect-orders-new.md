@@ -9,7 +9,7 @@ tags:
 spec_version: instorepickup
 source: "https://dev.wildberries.ru/docs/openapi/in-store-pickup"
 deprecated: false
-content_sha: 5928b00088f15534
+content_sha: 63b1655c82e5fad5
 ---
 
 # Получить список новых сборочных заданий
@@ -57,6 +57,7 @@ content_sha: 5928b00088f15534
   - `convertedCurrencyCode` — integer<ISO 4217>. Код валюты страны продавца
   - `cargoType` — integer (1, 2, 3). Тип товара: - `1` — малогабаритный товар (МГТ) - `2` — сверхгабаритный товар (СГТ) - `3` — крупногабаритный товар (КГТ+)
   - `isZeroOrder` — boolean. Признак заказа товара с нулевым остатком: - `false` — заказ сделан на товар с ненулевым остатком - `true` — заказ сделан на товар с нулевым остатком. Такой заказ можно отменить без штрафа за отмену
+  - `tireService` — boolean. Указал ли покупатель, что ему требуется услуга шиномонтажа: - `false` — нет, услуга шиномонтажа не требуется - `true` — да, услуга шиномонтажа требуется
   - `options` — object. Опции заказа
     - `isB2b` — boolean. Признак B2B-продажи: - `false` — не B2B-продажа - `true` — B2B-продажа
 

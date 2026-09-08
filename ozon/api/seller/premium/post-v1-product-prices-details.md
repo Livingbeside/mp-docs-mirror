@@ -9,7 +9,7 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: bb953288a6864c33
+content_sha: 126e3461347f7028
 ---
 
 # Получить подробную информацию о ценах товаров
@@ -58,6 +58,13 @@ content_sha: bb953288a6864c33
       - `price_index` — number<double>. Индекс цены.
       - `url` — string. Ссылка на ваш товар.
   - `sku` — integer<int64>. Идентификатор товара в системе Ozon — SKU.
+  - `weight_index` — array[object]. Средневзвешенный индекс цен. Если `weight_index = null`, индекс получить не удалось.
+    - `self_wb_index` — number<double>. Индекс цены на Wildberries.
+    - `self_wb_min_competitor_price` — array[object]. Минимальная цена.
+      - `amount` — string. Сумма.
+      - `currency` — string. Валюта.
+    - `self_wb_url` — string. Ссылка на товар по средней цене на Wildberries.
+    - `weight_percent` — number<double>. Коэффициент влияния цены товара на общий индекс товаров.
 
 **400** — Неверный параметр
 

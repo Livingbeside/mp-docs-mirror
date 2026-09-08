@@ -9,7 +9,7 @@ tags:
 spec_version: instorepickup
 source: "https://dev.wildberries.ru/docs/openapi/in-store-pickup"
 deprecated: false
-content_sha: 6bbab25f9161ff62
+content_sha: 6322a18784cfae01
 ---
 
 # Получить цены продавца и суммы к оплате
@@ -45,7 +45,7 @@ content_sha: 6bbab25f9161ff62
 - `requestId` — string **обязательный**. Уникальный ID запроса
 - `results` — array[object] **обязательный**. Данные ответа
   - `orderId` — integer **обязательный**. ID сборочного задания
-  - `data` — object. Данные сборочного задания. Если `"data":{}`, данные формируются. Повторите запрос позднее. Максимальное время формирования данных около 3 минут. Если `data` отсутствует, данных по сборочному заданию не предусмотрено. Используйте данные из ответов методов: - [Получить список новых сборочных заданий](/docs/openapi/in-store-pickup#tag/inStorePickupAssemblyOrders/operation/getV3ClickCollectOrdersNew) - [Получить информацию о завершенных сборочных заданиях](/docs/openapi/in-store-pickup#tag/inStorePickupAssemblyOrders/operation/getV3ClickCollectOrders)
+  - `data` — object. Данные сборочного задания. Если `"data":{}`, данные формируются. Повторите запрос позднее. Максимальное время формирования данных около 1 минуты. Если `data` отсутствует, данных по сборочному заданию не предусмотрено. Используйте данные из ответов методов: - [Получить список новых сборочных заданий](/docs/openapi/in-store-pickup#tag/inStorePickupAssemblyOrders/operation/getV3ClickCollectOrdersNew) - [Получить информацию о завершенных сборочных заданиях](/docs/openapi/in-store-pickup#tag/inStorePickupAssemblyOrders/operation/getV3ClickCollectOrders)
     - `originalPrice` — integer. Цена продавца в валюте продажи без учёта скидок, умноженная на 100. Предоставляется в информационных целях
     - `convertedOriginalPrice` — integer. Цена продавца в валюте страны продавца без учёта скидок, умноженная на 100. Предоставляется в информационных целях
     - `originalFinalPrice` — integer. Сумма к оплате покупателем в валюте продажи с учетом всех скидок и кэшбека, умноженная на 100. Код валюты продажи указан в поле `currencyCode`. Предоставляется в информационных целях

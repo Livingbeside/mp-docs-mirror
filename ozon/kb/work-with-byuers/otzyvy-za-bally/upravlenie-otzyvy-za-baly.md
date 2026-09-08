@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /work-with-byuers/otzyvy-za-bally/upravlenie-otzyvy-za-baly
 source: "https://seller-edu.ozon.ru/libra/work-with-byuers/otzyvy-za-bally/upravlenie-otzyvy-za-baly"
-updated: "2026-06-15 10:52:07"
+updated: "2026-09-07 10:25:54"
 doc_id: 19744
-fetched_at: "2026-08-28T12:11:15Z"
-content_sha: fb5b95d2bb9f6c83
+fetched_at: "2026-09-08T01:39:32Z"
+content_sha: a2f1bc23f148a6eb
 ---
 
 # Редактирование и отключение ускоренного сбора отзывов
@@ -76,9 +76,7 @@ _Главная / Работа с покупателями / Инструмен�
 
 # Как отключить ускоренный сбор отзывов
 
-Отключить кампанию типа [«Ускоренный сбор отзывов для ваших товаров»](https://seller-edu.ozon.ru/libra/work-with-byuers/otzyvy-za-bally/chto-takoe-otzyvy-za-baly#%D0%BA%D0%B0%D0%BC%D0%BF%D0%B0%D0%BD%D0%B8%D1%8F-%D0%B4%D0%BB%D1%8F-%D0%BD%D0%BE%D0%B2%D1%8B%D1%85-%D1%82%D0%BE%D0%B2%D0%B0%D1%80%D0%BE%D0%B2) не получится, но вы можете отказаться от добавления новых товаров в кампанию. [Как это сделать](https://seller-edu.ozon.ru/libra/work-with-byuers/otzyvy-za-bally/zapusk-otzyvy-za-baly#%D0%BA%D0%B0%D0%BA%D0%B8%D0%B5-%D1%82%D0%BE%D0%B2%D0%B0%D1%80%D1%8B-%D0%BF%D0%BE%D0%B4%D0%BA%D0%BB%D1%8E%D1%87%D0%B0%D0%B5%D0%BC-%D0%B0%D0%B2%D1%82%D0%BE%D0%BC%D0%B0%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8)
-
-Отключить ускоренный сбор отзывов не получится в приложении — это можно сделать только в личном кабинете на сайте.
+Можем приостановить кампании по сбору отзывов и закрыть доступ к сборам в мобильном приложении, если ваш баланс стал отрицательным. Пополните баланс, чтобы продолжить сбор. [Как пополнить баланс](https://seller-edu.ozon.ru/libra/finances-documents/calculations-documents/work-with-finance#%D0%B1%D0%B0%D0%BB%D0%B0%D0%BD%D1%81-%D0%BD%D0%B0-%D1%81%D0%B5%D0%B3%D0%BE%D0%B4%D0%BD%D1%8F)
 
 1. Перейдите на страницу **[Товары → Ускоренный сбор отзывов](https://seller.ozon.ru/app/reviews/promotions)**.
 2. Отключите кампанию любым из способов:
@@ -89,6 +87,8 @@ _Главная / Работа с покупателями / Инструмен�
 Как только сделаете это, остановим алгоритмы привлечения новых клиентов. Списания по неактивной кампании могут продолжаться еще некоторое время — за отзывы на товары, которые успели купить до отключения кампании.
 
 В кампании типа [«Ускоренный сбор отзывов для ваших товаров»](/work-with-byuers/otzyvy-za-bally/chto-takoe-otzyvy-za-baly#ускоренныи-сбор-отзывов-для-ваших-товаров) можно только отказаться от добавления новых товаров в кампанию. [Как это сделать](https://seller-edu.ozon.ru/libra/work-with-byuers/otzyvy-za-bally/zapusk-otzyvy-za-baly#%D0%BA%D0%B0%D0%BA%D0%B8%D0%B5-%D1%82%D0%BE%D0%B2%D0%B0%D1%80%D1%8B-%D0%BF%D0%BE%D0%B4%D0%BA%D0%BB%D1%8E%D1%87%D0%B0%D0%B5%D0%BC-%D0%B0%D0%B2%D1%82%D0%BE%D0%BC%D0%B0%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8)
+
+Отключить ускоренный сбор отзывов не получится в приложении — это можно сделать только в личном кабинете на сайте.
 
 # Вебинар «Ускоренный сбор отзывов»
 

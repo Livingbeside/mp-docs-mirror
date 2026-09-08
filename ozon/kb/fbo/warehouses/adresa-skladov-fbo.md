@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /fbo/warehouses/adresa-skladov-fbo
 source: "https://seller-edu.ozon.ru/libra/fbo/warehouses/adresa-skladov-fbo"
-updated: "2026-09-04 14:19:27"
+updated: "2026-09-07 09:33:00"
 doc_id: 13009
-fetched_at: "2026-09-05T02:12:30Z"
-content_sha: b3d18fc6a31c37ad
+fetched_at: "2026-09-08T01:39:31Z"
+content_sha: d2f39e42d1c14c3d
 ---
 
 # Адреса и реквизиты складов и пунктов приёма Ozon
@@ -145,7 +145,7 @@ _Главная / Продажа со склада Ozon (FBO) / Склады, а
 
 Открыт для записи на поставки с 11 августа 2026 года. Приём поставок — с 17 августа. Отгрузка заказов — с 1 сентября.
 
-**Название в системе:** ВЕШКИ_РФЦ
+**Название в системе:** ВЕШКИ_РФЦ_НОНСОРТ
 
 **График работы:**
 

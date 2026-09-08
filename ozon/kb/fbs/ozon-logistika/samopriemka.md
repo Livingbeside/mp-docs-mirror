@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /fbs/ozon-logistika/samopriemka
 source: "https://seller-edu.ozon.ru/libra/fbs/ozon-logistika/samopriemka"
-updated: "2026-08-27 11:47:31"
+updated: "2026-09-07 13:22:13"
 doc_id: 1780
-fetched_at: "2026-08-28T12:11:15Z"
-content_sha: 88cef452d7833a6f
+fetched_at: "2026-09-08T01:39:31Z"
+content_sha: e966d8c44c955c19
 ---
 
 # Самоприёмка отправлений
@@ -47,8 +47,6 @@ _Главная / Продажа со своего склада (FBS) / Отгр
 [Чермянская (СЦ)](/fbs/punkty-priema/moskva#чермянская-мск-чермянская-фбс)
 
 [Волхонское (СЦ)](/fbs/punkty-priema/st-peterburg#волхонское-сц)
-
-[Горское (СЦ)](/fbs/punkty-priema/st-peterburg#горское-сц)
 
 [Порошкино (СЦ)](https://seller-edu.ozon.ru/fbs/punkty-priema/st-peterburg#порошкино-сц)
 

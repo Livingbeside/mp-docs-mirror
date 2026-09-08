@@ -5,12 +5,18 @@ tag: News
 group: Обновления
 kind: changelog
 source: "https://docs.ozon.ru/api/seller/"
-content_sha: d9f876aca4aa5f08
+content_sha: 95253b6104077e2a
 ---
 
 # Обновления
 
 Следите за обновлениями документации на платформе для разработчиков [Ozon for dev](https://dev.ozon.ru/).
+
+## 7 сентября 2026
+
+| Метод | Изменение |
+|---------------------------------------------------------------|---------------------------------------------------------|
+| [/v1/product/prices/details](#operation/ProductPricesDetails) | Добавили параметр `prices.weight_index` в ответ метода. |
 
 ## 4 сентября 2026
 

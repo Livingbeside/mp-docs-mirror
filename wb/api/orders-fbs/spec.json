@@ -18,6 +18,12 @@
           "title": "AccessDenied"
         }
       },
+      "AccessDenied": {
+        "value": {
+          "code": "AccessDenied",
+          "message": ""
+        }
+      },
       "ApiError400V3": {
         "value": {
           "detail": "Not Found",
@@ -122,6 +128,31 @@
             ]
           },
           "message": "Fix them to dispatch items"
+        }
+      },
+      "Response403TokenCategory": {
+        "description": "Неверная категория токена",
+        "value": {
+          "detail": "scope is not allowed for this resource",
+          "origin": "ag-marketplace",
+          "requestId": "2dbf6fc9-bad8-4ef9-a058-c938a8553ba5",
+          "status": 403,
+          "statusText": "Forbidden",
+          "timestamp": "2026-09-03T13:55:15Z",
+          "title": "Forbidden"
+        }
+      },
+      "Response403TokenType": {
+        "description": "Неверный тип токена",
+        "value": {
+          "code": "base token is not allowed for this path",
+          "detail": "base token is not allowed",
+          "origin": "s2s-finance",
+          "requestId": "722199b2e15bbca48cc1d488a7989976",
+          "status": 403,
+          "statusText": "Forbidden",
+          "timestamp": "2026-05-25T02:47:09Z",
+          "title": "forbidden"
         }
       },
       "SpotApiError409V3": {
@@ -529,15 +560,19 @@
       "403": {
         "content": {
           "application/problem+json": {
-            "example": {
-              "code": "base token is not allowed for this path",
-              "detail": "base token is not allowed",
-              "origin": "s2s-finance",
-              "requestId": "722199b2e15bbca48cc1d488a7989976",
-              "status": 403,
-              "statusText": "Forbidden",
-              "timestamp": "2026-05-25T02:47:09Z",
-              "title": "forbidden"
+            "examples": {
+              "Response403TokenCategory": {
+                "description": "Неверная категория токена",
+                "value": {
+                  "detail": "scope is not allowed for this resource",
+                  "origin": "ag-marketplace",
+                  "requestId": "2dbf6fc9-bad8-4ef9-a058-c938a8553ba5",
+                  "status": 403,
+                  "statusText": "Forbidden",
+                  "timestamp": "2026-09-03T13:55:15Z",
+                  "title": "Forbidden"
+                }
+              }
             },
             "schema": {
               "properties": {
@@ -690,20 +725,6 @@
           }
         },
         "description": "<span class='response__value '>Слишком много запросов</span>"
-      },
-      "AccessDenied": {
-        "content": {
-          "application/json": {
-            "example": {
-              "code": "AccessDenied",
-              "message": "Доступ запрещён"
-            },
-            "schema": {
-              "$ref": "#/components/schemas/Error"
-            }
-          }
-        },
-        "description": "<span class='response__value '>Доступ запрещён</span>"
       },
       "NotFound": {
         "content": {
@@ -1558,6 +1579,44 @@
         ],
         "type": "object"
       },
+      "Response4XX": {
+        "properties": {
+          "code": {
+            "description": "Внутренний код ошибки",
+            "type": "string"
+          },
+          "detail": {
+            "description": "Детали ошибки",
+            "type": "string"
+          },
+          "origin": {
+            "description": "ID внутреннего сервиса WB",
+            "type": "string"
+          },
+          "requestId": {
+            "description": "ID запроса",
+            "type": "string"
+          },
+          "status": {
+            "description": "HTTP статус-код",
+            "type": "number"
+          },
+          "statusText": {
+            "description": "Расшифровка HTTP статус-кода",
+            "type": "string"
+          },
+          "timestamp": {
+            "description": "Дата и время запроса",
+            "format": "date-time",
+            "type": "string"
+          },
+          "title": {
+            "description": "Заголовок ошибки",
+            "type": "string"
+          }
+        },
+        "type": "object"
+      },
       "ShippingPoint": {
         "description": "Данные пункта отгрузки",
         "properties": {
@@ -2395,6 +2454,9 @@
           "401": {
             "$ref": "#/components/responses/401"
           },
+          "403": {
+            "$ref": "#/components/responses/403"
+          },
           "429": {
             "$ref": "#/components/responses/429"
           }
@@ -2501,10 +2563,20 @@
                 "examples": {
                   "AccessDenied": {
                     "$ref": "#/components/examples/APIError403V2"
+                  },
+                  "Response403TokenCategory": {
+                    "$ref": "#/components/examples/Response403TokenCategory"
                   }
                 },
                 "schema": {
-                  "$ref": "#/components/schemas/ArhiveOrderError400"
+                  "oneOf": [
+                    {
+                      "$ref": "#/components/schemas/ArhiveOrderError400"
+                    },
+                    {
+                      "$ref": "#/components/schemas/Response4XX"
+                    }
+                  ]
                 }
               }
             },
@@ -2562,7 +2634,22 @@
             "$ref": "#/components/responses/401"
           },
           "403": {
-            "$ref": "#/components/responses/403"
+            "content": {
+              "application/problem+json": {
+                "examples": {
+                  "Response403TokenCategory": {
+                    "$ref": "#/components/examples/Response403TokenCategory"
+                  },
+                  "Response403TokenType": {
+                    "$ref": "#/components/examples/Response403TokenType"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/Response4XX"
+                }
+              }
+            },
+            "description": "<span class='response__value '>Доступ запрещён</span>"
           },
           "429": {
             "$ref": "#/components/responses/429"
@@ -2633,7 +2720,22 @@
             "$ref": "#/components/responses/401"
           },
           "403": {
-            "$ref": "#/components/responses/403"
+            "content": {
+              "application/problem+json": {
+                "examples": {
+                  "Response403TokenCategory": {
+                    "$ref": "#/components/examples/Response403TokenCategory"
+                  },
+                  "Response403TokenType": {
+                    "$ref": "#/components/examples/Response403TokenType"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/Response4XX"
+                }
+              }
+            },
+            "description": "<span class='response__value '>Доступ запрещён</span>"
           },
           "429": {
             "$ref": "#/components/responses/429"
@@ -2795,7 +2897,22 @@
             "$ref": "#/components/responses/401"
           },
           "403": {
-            "$ref": "#/components/responses/403"
+            "content": {
+              "application/problem+json": {
+                "examples": {
+                  "Response403TokenCategory": {
+                    "$ref": "#/components/examples/Response403TokenCategory"
+                  },
+                  "Response403TokenType": {
+                    "$ref": "#/components/examples/Response403TokenType"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/Response4XX"
+                }
+              }
+            },
+            "description": "<span class='response__value '>Доступ запрещён</span>"
           },
           "429": {
             "$ref": "#/components/responses/429"
@@ -2954,7 +3071,22 @@
             "$ref": "#/components/responses/401"
           },
           "403": {
-            "$ref": "#/components/responses/403"
+            "content": {
+              "application/problem+json": {
+                "examples": {
+                  "Response403TokenCategory": {
+                    "$ref": "#/components/examples/Response403TokenCategory"
+                  },
+                  "Response403TokenType": {
+                    "$ref": "#/components/examples/Response403TokenType"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/Response4XX"
+                }
+              }
+            },
+            "description": "<span class='response__value '>Доступ запрещён</span>"
           },
           "429": {
             "$ref": "#/components/responses/429"
@@ -3084,7 +3216,22 @@
             "$ref": "#/components/responses/401"
           },
           "403": {
-            "$ref": "#/components/responses/403"
+            "content": {
+              "application/problem+json": {
+                "examples": {
+                  "Response403TokenCategory": {
+                    "$ref": "#/components/examples/Response403TokenCategory"
+                  },
+                  "Response403TokenType": {
+                    "$ref": "#/components/examples/Response403TokenType"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/Response4XX"
+                }
+              }
+            },
+            "description": "<span class='response__value '>Доступ запрещён</span>"
           },
           "429": {
             "$ref": "#/components/responses/429"
@@ -3172,6 +3319,9 @@
           "401": {
             "$ref": "#/components/responses/401-2"
           },
+          "403": {
+            "$ref": "#/components/responses/403"
+          },
           "429": {
             "$ref": "#/components/responses/429-2"
           }
@@ -3250,7 +3400,29 @@
             "$ref": "#/components/responses/401"
           },
           "403": {
-            "$ref": "#/components/responses/AccessDenied"
+            "content": {
+              "application/json": {
+                "examples": {
+                  "AccessDenied": {
+                    "$ref": "#/components/examples/AccessDenied"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              },
+              "application/problem+json": {
+                "examples": {
+                  "Response403TokenCategory": {
+                    "$ref": "#/components/examples/Response403TokenCategory"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/Response4XX"
+                }
+              }
+            },
+            "description": "<span class='response__value '>Доступ запрещён</span>"
           },
           "409": {
             "content": {
@@ -3352,6 +3524,9 @@
           "401": {
             "$ref": "#/components/responses/401"
           },
+          "403": {
+            "$ref": "#/components/responses/403"
+          },
           "429": {
             "$ref": "#/components/responses/429"
           }
@@ -3425,7 +3600,29 @@
             "$ref": "#/components/responses/401"
           },
           "403": {
-            "$ref": "#/components/responses/AccessDenied"
+            "content": {
+              "application/json": {
+                "examples": {
+                  "AccessDenied": {
+                    "$ref": "#/components/examples/AccessDenied"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              },
+              "application/problem+json": {
+                "examples": {
+                  "Response403TokenCategory": {
+                    "$ref": "#/components/examples/Response403TokenCategory"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/Response4XX"
+                }
+              }
+            },
+            "description": "<span class='response__value '>Доступ запрещён</span>"
           },
           "429": {
             "$ref": "#/components/responses/429"
@@ -3540,6 +3737,9 @@
           "401": {
             "$ref": "#/components/responses/401"
           },
+          "403": {
+            "$ref": "#/components/responses/403"
+          },
           "404": {
             "content": {
               "application/problem+json": {
@@ -3632,6 +3832,9 @@
           "401": {
             "$ref": "#/components/responses/401"
           },
+          "403": {
+            "$ref": "#/components/responses/403"
+          },
           "404": {
             "content": {
               "application/problem+json": {
@@ -3719,6 +3922,16 @@
                 },
                 "schema": {
                   "$ref": "#/components/schemas/v3.APIError"
+                }
+              },
+              "application/problem+json": {
+                "examples": {
+                  "Response403TokenCategory": {
+                    "$ref": "#/components/examples/Response403TokenCategory"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/Response4XX"
                 }
               }
             },
@@ -3828,7 +4041,29 @@
             "$ref": "#/components/responses/402"
           },
           "403": {
-            "$ref": "#/components/responses/AccessDenied"
+            "content": {
+              "application/json": {
+                "examples": {
+                  "AccessDenied": {
+                    "$ref": "#/components/examples/AccessDenied"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              },
+              "application/problem+json": {
+                "examples": {
+                  "Response403TokenCategory": {
+                    "$ref": "#/components/examples/Response403TokenCategory"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/Response4XX"
+                }
+              }
+            },
+            "description": "<span class='response__value '>Доступ запрещён</span>"
           },
           "404": {
             "$ref": "#/components/responses/NotFound"
@@ -3925,7 +4160,29 @@
             "$ref": "#/components/responses/402"
           },
           "403": {
-            "$ref": "#/components/responses/AccessDenied"
+            "content": {
+              "application/json": {
+                "examples": {
+                  "AccessDenied": {
+                    "$ref": "#/components/examples/AccessDenied"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              },
+              "application/problem+json": {
+                "examples": {
+                  "Response403TokenCategory": {
+                    "$ref": "#/components/examples/Response403TokenCategory"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/Response4XX"
+                }
+              }
+            },
+            "description": "<span class='response__value '>Доступ запрещён</span>"
           },
           "404": {
             "$ref": "#/components/responses/NotFound"
@@ -4013,7 +4270,29 @@
             "$ref": "#/components/responses/402"
           },
           "403": {
-            "$ref": "#/components/responses/AccessDenied"
+            "content": {
+              "application/json": {
+                "examples": {
+                  "AccessDenied": {
+                    "$ref": "#/components/examples/AccessDenied"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              },
+              "application/problem+json": {
+                "examples": {
+                  "Response403TokenCategory": {
+                    "$ref": "#/components/examples/Response403TokenCategory"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/Response4XX"
+                }
+              }
+            },
+            "description": "<span class='response__value '>Доступ запрещён</span>"
           },
           "404": {
             "$ref": "#/components/responses/NotFound"
@@ -4133,7 +4412,29 @@
             "$ref": "#/components/responses/402"
           },
           "403": {
-            "$ref": "#/components/responses/AccessDenied"
+            "content": {
+              "application/json": {
+                "examples": {
+                  "AccessDenied": {
+                    "$ref": "#/components/examples/AccessDenied"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              },
+              "application/problem+json": {
+                "examples": {
+                  "Response403TokenCategory": {
+                    "$ref": "#/components/examples/Response403TokenCategory"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/Response4XX"
+                }
+              }
+            },
+            "description": "<span class='response__value '>Доступ запрещён</span>"
           },
           "429": {
             "$ref": "#/components/responses/429"
@@ -4208,7 +4509,29 @@
             "$ref": "#/components/responses/402"
           },
           "403": {
-            "$ref": "#/components/responses/AccessDenied"
+            "content": {
+              "application/json": {
+                "examples": {
+                  "AccessDenied": {
+                    "$ref": "#/components/examples/AccessDenied"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              },
+              "application/problem+json": {
+                "examples": {
+                  "Response403TokenCategory": {
+                    "$ref": "#/components/examples/Response403TokenCategory"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/Response4XX"
+                }
+              }
+            },
+            "description": "<span class='response__value '>Доступ запрещён</span>"
           },
           "404": {
             "$ref": "#/components/responses/NotFound"
@@ -4272,7 +4595,29 @@
             "$ref": "#/components/responses/402"
           },
           "403": {
-            "$ref": "#/components/responses/AccessDenied"
+            "content": {
+              "application/json": {
+                "examples": {
+                  "AccessDenied": {
+                    "$ref": "#/components/examples/AccessDenied"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              },
+              "application/problem+json": {
+                "examples": {
+                  "Response403TokenCategory": {
+                    "$ref": "#/components/examples/Response403TokenCategory"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/Response4XX"
+                }
+              }
+            },
+            "description": "<span class='response__value '>Доступ запрещён</span>"
           },
           "429": {
             "$ref": "#/components/responses/429"
@@ -4422,7 +4767,29 @@
             "$ref": "#/components/responses/402"
           },
           "403": {
-            "$ref": "#/components/responses/AccessDenied"
+            "content": {
+              "application/json": {
+                "examples": {
+                  "AccessDenied": {
+                    "$ref": "#/components/examples/AccessDenied"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              },
+              "application/problem+json": {
+                "examples": {
+                  "Response403TokenCategory": {
+                    "$ref": "#/components/examples/Response403TokenCategory"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/Response4XX"
+                }
+              }
+            },
+            "description": "<span class='response__value '>Доступ запрещён</span>"
           },
           "429": {
             "$ref": "#/components/responses/429"
@@ -4540,7 +4907,29 @@
             "$ref": "#/components/responses/402"
           },
           "403": {
-            "$ref": "#/components/responses/AccessDenied"
+            "content": {
+              "application/json": {
+                "examples": {
+                  "AccessDenied": {
+                    "$ref": "#/components/examples/AccessDenied"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              },
+              "application/problem+json": {
+                "examples": {
+                  "Response403TokenCategory": {
+                    "$ref": "#/components/examples/Response403TokenCategory"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/Response4XX"
+                }
+              }
+            },
+            "description": "<span class='response__value '>Доступ запрещён</span>"
           },
           "404": {
             "$ref": "#/components/responses/NotFound"
@@ -4721,7 +5110,29 @@
             "$ref": "#/components/responses/402"
           },
           "403": {
-            "$ref": "#/components/responses/AccessDenied"
+            "content": {
+              "application/json": {
+                "examples": {
+                  "AccessDenied": {
+                    "$ref": "#/components/examples/AccessDenied"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              },
+              "application/problem+json": {
+                "examples": {
+                  "Response403TokenCategory": {
+                    "$ref": "#/components/examples/Response403TokenCategory"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/Response4XX"
+                }
+              }
+            },
+            "description": "<span class='response__value '>Доступ запрещён</span>"
           },
           "409": {
             "content": {
@@ -4905,7 +5316,29 @@
             "$ref": "#/components/responses/402"
           },
           "403": {
-            "$ref": "#/components/responses/AccessDenied"
+            "content": {
+              "application/json": {
+                "examples": {
+                  "AccessDenied": {
+                    "$ref": "#/components/examples/AccessDenied"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              },
+              "application/problem+json": {
+                "examples": {
+                  "Response403TokenCategory": {
+                    "$ref": "#/components/examples/Response403TokenCategory"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/Response4XX"
+                }
+              }
+            },
+            "description": "<span class='response__value '>Доступ запрещён</span>"
           },
           "429": {
             "$ref": "#/components/responses/429"
@@ -4963,7 +5396,29 @@
             "$ref": "#/components/responses/402"
           },
           "403": {
-            "$ref": "#/components/responses/AccessDenied"
+            "content": {
+              "application/json": {
+                "examples": {
+                  "AccessDenied": {
+                    "$ref": "#/components/examples/AccessDenied"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              },
+              "application/problem+json": {
+                "examples": {
+                  "Response403TokenCategory": {
+                    "$ref": "#/components/examples/Response403TokenCategory"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/Response4XX"
+                }
+              }
+            },
+            "description": "<span class='response__value '>Доступ запрещён</span>"
           },
           "404": {
             "$ref": "#/components/responses/NotFound"
@@ -5066,7 +5521,29 @@
             "$ref": "#/components/responses/402"
           },
           "403": {
-            "$ref": "#/components/responses/AccessDenied"
+            "content": {
+              "application/json": {
+                "examples": {
+                  "AccessDenied": {
+                    "$ref": "#/components/examples/AccessDenied"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              },
+              "application/problem+json": {
+                "examples": {
+                  "Response403TokenCategory": {
+                    "$ref": "#/components/examples/Response403TokenCategory"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/Response4XX"
+                }
+              }
+            },
+            "description": "<span class='response__value '>Доступ запрещён</span>"
           },
           "409": {
             "content": {
@@ -5174,7 +5651,29 @@
             "$ref": "#/components/responses/402"
           },
           "403": {
-            "$ref": "#/components/responses/AccessDenied"
+            "content": {
+              "application/json": {
+                "examples": {
+                  "AccessDenied": {
+                    "$ref": "#/components/examples/AccessDenied"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              },
+              "application/problem+json": {
+                "examples": {
+                  "Response403TokenCategory": {
+                    "$ref": "#/components/examples/Response403TokenCategory"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/Response4XX"
+                }
+              }
+            },
+            "description": "<span class='response__value '>Доступ запрещён</span>"
           },
           "404": {
             "$ref": "#/components/responses/NotFound"
@@ -5286,7 +5785,29 @@
             "$ref": "#/components/responses/402"
           },
           "403": {
-            "$ref": "#/components/responses/AccessDenied"
+            "content": {
+              "application/json": {
+                "examples": {
+                  "AccessDenied": {
+                    "$ref": "#/components/examples/AccessDenied"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              },
+              "application/problem+json": {
+                "examples": {
+                  "Response403TokenCategory": {
+                    "$ref": "#/components/examples/Response403TokenCategory"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/Response4XX"
+                }
+              }
+            },
+            "description": "<span class='response__value '>Доступ запрещён</span>"
           },
           "409": {
             "content": {
@@ -5395,7 +5916,29 @@
             "$ref": "#/components/responses/402"
           },
           "403": {
-            "$ref": "#/components/responses/AccessDenied"
+            "content": {
+              "application/json": {
+                "examples": {
+                  "AccessDenied": {
+                    "$ref": "#/components/examples/AccessDenied"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              },
+              "application/problem+json": {
+                "examples": {
+                  "Response403TokenCategory": {
+                    "$ref": "#/components/examples/Response403TokenCategory"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/Response4XX"
+                }
+              }
+            },
+            "description": "<span class='response__value '>Доступ запрещён</span>"
           },
           "409": {
             "content": {
@@ -5510,7 +6053,29 @@
             "$ref": "#/components/responses/402"
           },
           "403": {
-            "$ref": "#/components/responses/AccessDenied"
+            "content": {
+              "application/json": {
+                "examples": {
+                  "AccessDenied": {
+                    "$ref": "#/components/examples/AccessDenied"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              },
+              "application/problem+json": {
+                "examples": {
+                  "Response403TokenCategory": {
+                    "$ref": "#/components/examples/Response403TokenCategory"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/Response4XX"
+                }
+              }
+            },
+            "description": "<span class='response__value '>Доступ запрещён</span>"
           },
           "404": {
             "$ref": "#/components/responses/NotFound"
@@ -5622,7 +6187,29 @@
             "$ref": "#/components/responses/402"
           },
           "403": {
-            "$ref": "#/components/responses/AccessDenied"
+            "content": {
+              "application/json": {
+                "examples": {
+                  "AccessDenied": {
+                    "$ref": "#/components/examples/AccessDenied"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              },
+              "application/problem+json": {
+                "examples": {
+                  "Response403TokenCategory": {
+                    "$ref": "#/components/examples/Response403TokenCategory"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/Response4XX"
+                }
+              }
+            },
+            "description": "<span class='response__value '>Доступ запрещён</span>"
           },
           "409": {
             "content": {
@@ -5695,7 +6282,29 @@
             "$ref": "#/components/responses/402"
           },
           "403": {
-            "$ref": "#/components/responses/AccessDenied"
+            "content": {
+              "application/json": {
+                "examples": {
+                  "AccessDenied": {
+                    "$ref": "#/components/examples/AccessDenied"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              },
+              "application/problem+json": {
+                "examples": {
+                  "Response403TokenCategory": {
+                    "$ref": "#/components/examples/Response403TokenCategory"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/Response4XX"
+                }
+              }
+            },
+            "description": "<span class='response__value '>Доступ запрещён</span>"
           },
           "429": {
             "$ref": "#/components/responses/429"
@@ -5814,7 +6423,29 @@
             "$ref": "#/components/responses/402"
           },
           "403": {
-            "$ref": "#/components/responses/AccessDenied"
+            "content": {
+              "application/json": {
+                "examples": {
+                  "AccessDenied": {
+                    "$ref": "#/components/examples/AccessDenied"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              },
+              "application/problem+json": {
+                "examples": {
+                  "Response403TokenCategory": {
+                    "$ref": "#/components/examples/Response403TokenCategory"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/Response4XX"
+                }
+              }
+            },
+            "description": "<span class='response__value '>Доступ запрещён</span>"
           },
           "404": {
             "$ref": "#/components/responses/NotFound"
@@ -5872,7 +6503,29 @@
             "$ref": "#/components/responses/402"
           },
           "403": {
-            "$ref": "#/components/responses/AccessDenied"
+            "content": {
+              "application/json": {
+                "examples": {
+                  "AccessDenied": {
+                    "$ref": "#/components/examples/AccessDenied"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              },
+              "application/problem+json": {
+                "examples": {
+                  "Response403TokenCategory": {
+                    "$ref": "#/components/examples/Response403TokenCategory"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/Response4XX"
+                }
+              }
+            },
+            "description": "<span class='response__value '>Доступ запрещён</span>"
           },
           "429": {
             "$ref": "#/components/responses/429"
@@ -5920,7 +6573,29 @@
             "$ref": "#/components/responses/402"
           },
           "403": {
-            "$ref": "#/components/responses/AccessDenied"
+            "content": {
+              "application/json": {
+                "examples": {
+                  "AccessDenied": {
+                    "$ref": "#/components/examples/AccessDenied"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              },
+              "application/problem+json": {
+                "examples": {
+                  "Response403TokenCategory": {
+                    "$ref": "#/components/examples/Response403TokenCategory"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/Response4XX"
+                }
+              }
+            },
+            "description": "<span class='response__value '>Доступ запрещён</span>"
           },
           "404": {
             "$ref": "#/components/responses/NotFound"
@@ -6035,7 +6710,29 @@
             "$ref": "#/components/responses/402"
           },
           "403": {
-            "$ref": "#/components/responses/AccessDenied"
+            "content": {
+              "application/json": {
+                "examples": {
+                  "AccessDenied": {
+                    "$ref": "#/components/examples/AccessDenied"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              },
+              "application/problem+json": {
+                "examples": {
+                  "Response403TokenCategory": {
+                    "$ref": "#/components/examples/Response403TokenCategory"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/Response4XX"
+                }
+              }
+            },
+            "description": "<span class='response__value '>Доступ запрещён</span>"
           },
           "404": {
             "$ref": "#/components/responses/NotFound"
@@ -6125,7 +6822,29 @@
             "$ref": "#/components/responses/402"
           },
           "403": {
-            "$ref": "#/components/responses/AccessDenied"
+            "content": {
+              "application/json": {
+                "examples": {
+                  "AccessDenied": {
+                    "$ref": "#/components/examples/AccessDenied"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              },
+              "application/problem+json": {
+                "examples": {
+                  "Response403TokenCategory": {
+                    "$ref": "#/components/examples/Response403TokenCategory"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/Response4XX"
+                }
+              }
+            },
+            "description": "<span class='response__value '>Доступ запрещён</span>"
           },
           "429": {
             "$ref": "#/components/responses/429"
@@ -6205,7 +6924,29 @@
             "$ref": "#/components/responses/402"
           },
           "403": {
-            "$ref": "#/components/responses/AccessDenied"
+            "content": {
+              "application/json": {
+                "examples": {
+                  "AccessDenied": {
+                    "$ref": "#/components/examples/AccessDenied"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              },
+              "application/problem+json": {
+                "examples": {
+                  "Response403TokenCategory": {
+                    "$ref": "#/components/examples/Response403TokenCategory"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/Response4XX"
+                }
+              }
+            },
+            "description": "<span class='response__value '>Доступ запрещён</span>"
           },
           "429": {
             "$ref": "#/components/responses/429"
@@ -6295,7 +7036,29 @@
             "$ref": "#/components/responses/402"
           },
           "403": {
-            "$ref": "#/components/responses/AccessDenied"
+            "content": {
+              "application/json": {
+                "examples": {
+                  "AccessDenied": {
+                    "$ref": "#/components/examples/AccessDenied"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              },
+              "application/problem+json": {
+                "examples": {
+                  "Response403TokenCategory": {
+                    "$ref": "#/components/examples/Response403TokenCategory"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/Response4XX"
+                }
+              }
+            },
+            "description": "<span class='response__value '>Доступ запрещён</span>"
           },
           "429": {
             "$ref": "#/components/responses/429"
@@ -6358,7 +7121,29 @@
             "$ref": "#/components/responses/402"
           },
           "403": {
-            "$ref": "#/components/responses/AccessDenied"
+            "content": {
+              "application/json": {
+                "examples": {
+                  "AccessDenied": {
+                    "$ref": "#/components/examples/AccessDenied"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              },
+              "application/problem+json": {
+                "examples": {
+                  "Response403TokenCategory": {
+                    "$ref": "#/components/examples/Response403TokenCategory"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/Response4XX"
+                }
+              }
+            },
+            "description": "<span class='response__value '>Доступ запрещён</span>"
           },
           "404": {
             "$ref": "#/components/responses/NotFound"
@@ -6434,7 +7219,29 @@
             "$ref": "#/components/responses/402"
           },
           "403": {
-            "$ref": "#/components/responses/AccessDenied"
+            "content": {
+              "application/json": {
+                "examples": {
+                  "AccessDenied": {
+                    "$ref": "#/components/examples/AccessDenied"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              },
+              "application/problem+json": {
+                "examples": {
+                  "Response403TokenCategory": {
+                    "$ref": "#/components/examples/Response403TokenCategory"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/Response4XX"
+                }
+              }
+            },
+            "description": "<span class='response__value '>Доступ запрещён</span>"
           },
           "404": {
             "$ref": "#/components/responses/NotFound"
@@ -6538,7 +7345,29 @@
             "$ref": "#/components/responses/402"
           },
           "403": {
-            "$ref": "#/components/responses/AccessDenied"
+            "content": {
+              "application/json": {
+                "examples": {
+                  "AccessDenied": {
+                    "$ref": "#/components/examples/AccessDenied"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              },
+              "application/problem+json": {
+                "examples": {
+                  "Response403TokenCategory": {
+                    "$ref": "#/components/examples/Response403TokenCategory"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/Response4XX"
+                }
+              }
+            },
+            "description": "<span class='response__value '>Доступ запрещён</span>"
           },
           "404": {
             "$ref": "#/components/responses/NotFound"
@@ -6619,7 +7448,29 @@
             "$ref": "#/components/responses/402"
           },
           "403": {
-            "$ref": "#/components/responses/AccessDenied"
+            "content": {
+              "application/json": {
+                "examples": {
+                  "AccessDenied": {
+                    "$ref": "#/components/examples/AccessDenied"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              },
+              "application/problem+json": {
+                "examples": {
+                  "Response403TokenCategory": {
+                    "$ref": "#/components/examples/Response403TokenCategory"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/Response4XX"
+                }
+              }
+            },
+            "description": "<span class='response__value '>Доступ запрещён</span>"
           },
           "404": {
             "$ref": "#/components/responses/NotFound"
@@ -6728,7 +7579,29 @@
             "$ref": "#/components/responses/402"
           },
           "403": {
-            "$ref": "#/components/responses/AccessDenied"
+            "content": {
+              "application/json": {
+                "examples": {
+                  "AccessDenied": {
+                    "$ref": "#/components/examples/AccessDenied"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              },
+              "application/problem+json": {
+                "examples": {
+                  "Response403TokenCategory": {
+                    "$ref": "#/components/examples/Response403TokenCategory"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/Response4XX"
+                }
+              }
+            },
+            "description": "<span class='response__value '>Доступ запрещён</span>"
           },
           "404": {
             "$ref": "#/components/responses/NotFound"
@@ -6797,7 +7670,29 @@
             "$ref": "#/components/responses/402"
           },
           "403": {
-            "$ref": "#/components/responses/AccessDenied"
+            "content": {
+              "application/json": {
+                "examples": {
+                  "AccessDenied": {
+                    "$ref": "#/components/examples/AccessDenied"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              },
+              "application/problem+json": {
+                "examples": {
+                  "Response403TokenCategory": {
+                    "$ref": "#/components/examples/Response403TokenCategory"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/Response4XX"
+                }
+              }
+            },
+            "description": "<span class='response__value '>Доступ запрещён</span>"
           },
           "404": {
             "$ref": "#/components/responses/NotFound"
@@ -6890,7 +7785,29 @@
             "$ref": "#/components/responses/402"
           },
           "403": {
-            "$ref": "#/components/responses/AccessDenied"
+            "content": {
+              "application/json": {
+                "examples": {
+                  "AccessDenied": {
+                    "$ref": "#/components/examples/AccessDenied"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              },
+              "application/problem+json": {
+                "examples": {
+                  "Response403TokenCategory": {
+                    "$ref": "#/components/examples/Response403TokenCategory"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/Response4XX"
+                }
+              }
+            },
+            "description": "<span class='response__value '>Доступ запрещён</span>"
           },
           "404": {
             "$ref": "#/components/responses/NotFound"
@@ -7010,7 +7927,29 @@
             "$ref": "#/components/responses/402"
           },
           "403": {
-            "$ref": "#/components/responses/AccessDenied"
+            "content": {
+              "application/json": {
+                "examples": {
+                  "AccessDenied": {
+                    "$ref": "#/components/examples/AccessDenied"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              },
+              "application/problem+json": {
+                "examples": {
+                  "Response403TokenCategory": {
+                    "$ref": "#/components/examples/Response403TokenCategory"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/Response4XX"
+                }
+              }
+            },
+            "description": "<span class='response__value '>Доступ запрещён</span>"
           },
           "404": {
             "$ref": "#/components/responses/NotFound"
@@ -7064,7 +8003,7 @@
       "x-displayName": "Идентификаторы маркировки FBS"
     },
     {
-      "description": "<div class=\"description_auth\">\n  Для доступа к методам используйте <a href=\"./api-information#tag/authorization/Kak-sozdat-personalnyj-bazovyj-ili-testovyj-token\">токен</a> для категории <strong>Маркетплейс</strong>\n</div>\n\n<div class=\"description_important\">\n  Узнать больше о поставках FBS можно в <a href=\"https://seller.wildberries.ru/instructions/material/A-11?goBackOption=prevRoute&categoryId=6d85301c-719b-4145-9275-2ac8b793f345\">справочном центре</a>\n</div>\n\nДля работы с поставками:\n\n  <div class=\"description_important\">\n  Пункты 3-5 обязательны к выполнению при доставке поставки на пункт выдачи заказов (ПВЗ).\n  </div>\n\n  1. [Создайте новую поставку](./orders-fbs#tag/Postavki-FBS/paths/~1api~1v3~1supplies/post). В ответ вернется ID созданной поставки в формате `WB-GI-1234567`.\n  1. [Установите параметры отгрузки поставки](./orders-fbs#tag/Postavki-FBS/operation/patchV3FbsSuppliesShippingMethod). Для этого получите [список пунктов отгрузки поставок](./work-with-products#tag/Sklady-prodavca/operation/getV3FbsShippingPoints). Доступно только для продавцов из РФ.<br>\n  Для доставки транспортной компанией обязательно укажите ID ЭТрН — электронной транспортной накладной.\n  1. В текущую новую поставку [добавьте сборочные задания](./orders-fbs#tag/Postavki-FBS/paths/~1api~1marketplace~1v3~1supplies~1%7BsupplyId%7D~1orders/patch), которые вы повезёте на склад или ПВЗ. После того, как сборочные задания будут добавлены к поставке, они будут переведены в статус `confirm` — на сборке.\n  1. [Добавьте грузоместа в поставку](./orders-fbs#tag/Postavki-FBS/paths/~1api~1v3~1supplies~1%7BsupplyId%7D~1trbx/post).\n  1. [Проверьте список грузомест](./orders-fbs#tag/Postavki-FBS/paths/~1api~1v3~1supplies~1%7BsupplyId%7D~1trbx/get).\n  1. [Получите стикеры грузомест](./orders-fbs#tag/Postavki-FBS/paths/~1api~1v3~1supplies~1%7BsupplyId%7D~1trbx~1stickers/post). Распечатайте и наклейте стикеры на грузоместа.\n  1. После того как поставка будет укомплектована нужными сборочными заданиями, необходимо [передать её в доставку](./orders-fbs#tag/Postavki-FBS/paths/~1api~1v3~1supplies~1%7BsupplyId%7D~1deliver/patch). Если поставка не была передана в доставку, то при сканировании её QR-кода или приёмке первого товара на ПВЗ поставка автоматически закроется. При передаче сборочных заданий в доставку они будут автоматически собраны и переведены в статус `complete` — в доставке.\n  1. Для поставок из стран ЕАЭС добавьте данные [СПОТ](https://www.nalog.gov.ru/rn77/related_activities/spot). Получите [список стран ОКСМ](./orders-fbs#tag/Postavki-FBS/operation/getV3FbsDictionariesCountriesOksm) для [добавления данных СПОТ в поставку](./orders-fbs#tag/Postavki-FBS/operation/putV3FbsSuppliesSupplyIdSpot). Вы можете получать [данные СПОТ для списка поставок](./orders-fbs#tag/Postavki-FBS/operation/postV3FbsSuppliesSpotList) и [QR-коды СПОТ](./orders-fbs#tag/Postavki-FBS/operation/getV3FbsSuppliesSupplyIdStickersSpot). Сейчас методы доступны только для продавцов из Кыргызстана. В дальнейшем методы будут доступны продавцам из любой страны ЕАЭС кроме РФ, следите за обновлениями.\n  1. Если поставка была отсканирована в пункте приёмки, но при этом в ней всё ещё есть неотсканированные товары, спустя определённое время необходимо доставить их повторно. Проверьте все [сборочные задания, требующие повторной отгрузки на данный момент](./orders-fbs#tag/Sborochnye-zadaniya-FBS/paths/~1api~1v3~1supplies~1orders~1reshipment/get). Данные сборочные задания можно перевести в [другую активную поставку](./orders-fbs#tag/Postavki-FBS/paths/~1api~1marketplace~1v3~1supplies~1%7BsupplyId%7D~1orders/patch). Сборочное задание также будет переведено в статус `confirm` — на сборке.\n\nТакже вы можете:\n  - [удалить грузоместа из поставки](./orders-fbs#tag/Postavki-FBS/paths/~1api~1v3~1supplies~1%7BsupplyId%7D~1trbx/delete), но только пока поставка находится на сборке\n  - получить [ID всех сборочных заданий, добавленных к поставке](./orders-fbs#tag/Postavki-FBS/paths/~1api~1marketplace~1v3~1supplies~1%7BsupplyId%7D~1order-ids/get)\n  - получить информацию [обо всех поставках продавца](./orders-fbs#tag/Postavki-FBS/paths/~1api~1v3~1supplies/get) или [о конкретной поставке](./orders-fbs#tag/Postavki-FBS/paths/~1api~1v3~1supplies~1%7BsupplyId%7D/get)\n  - [удалить поставку](./orders-fbs#tag/Postavki-FBS/paths/~1api~1v3~1supplies~1%7BsupplyId%7D/delete) при условии, что она активна и за ней не закреплены сборочные задания\n  - [перемещать сборочные задания между активными поставками](./orders-fbs#tag/Postavki-FBS/paths/~1api~1marketplace~1v3~1supplies~1%7BsupplyId%7D~1orders/patch). Нельзя перемещать сборочное задание из уже закрытой поставки, только если оно не требует повторной отгрузки\n  - получить [QR-код поставки](./orders-fbs#tag/Postavki-FBS/paths/~1api~1v3~1supplies~1%7BsupplyId%7D~1barcode/get) в форматах SVG, ZPL или PNG. Доступно только после передачи поставки в доставку\n",
+      "description": "<div class=\"description_auth\">\n  Для доступа к методам используйте <a href=\"./api-information#tag/authorization/Kak-sozdat-personalnyj-bazovyj-ili-testovyj-token\">токен</a> для категории <strong>Маркетплейс</strong>\n</div>\n\n<div class=\"description_important\">\n  Узнать больше о поставках FBS можно в <a href=\"https://seller.wildberries.ru/instructions/material/A-11?goBackOption=prevRoute&categoryId=6d85301c-719b-4145-9275-2ac8b793f345\">справочном центре</a>\n</div>\n\nДля работы с поставками:\n\n  <div class=\"description_important\">\n  Пункты 3-5 обязательны к выполнению при доставке поставки на пункт выдачи заказов (ПВЗ).\n  </div>\n\n  1. [Создайте новую поставку](./orders-fbs#tag/Postavki-FBS/paths/~1api~1v3~1supplies/post). В ответ вернется ID созданной поставки в формате `WB-GI-1234567`.\n  1. [Установите параметры отгрузки поставки](./orders-fbs#tag/Postavki-FBS/operation/patchV3FbsSuppliesShippingMethod). Для этого получите [список пунктов отгрузки поставок](./work-with-products#tag/Postavki-FBS/operation/getV3FbsShippingPoints). Доступно только для продавцов из РФ.<br>\n  Для доставки транспортной компанией обязательно укажите ID ЭТрН — электронной транспортной накладной.\n  1. В текущую новую поставку [добавьте сборочные задания](./orders-fbs#tag/Postavki-FBS/paths/~1api~1marketplace~1v3~1supplies~1%7BsupplyId%7D~1orders/patch), которые вы повезёте на склад или ПВЗ. После того, как сборочные задания будут добавлены к поставке, они будут переведены в статус `confirm` — на сборке.\n  1. [Добавьте грузоместа в поставку](./orders-fbs#tag/Postavki-FBS/paths/~1api~1v3~1supplies~1%7BsupplyId%7D~1trbx/post).\n  1. [Проверьте список грузомест](./orders-fbs#tag/Postavki-FBS/paths/~1api~1v3~1supplies~1%7BsupplyId%7D~1trbx/get).\n  1. [Получите стикеры грузомест](./orders-fbs#tag/Postavki-FBS/paths/~1api~1v3~1supplies~1%7BsupplyId%7D~1trbx~1stickers/post). Распечатайте и наклейте стикеры на грузоместа.\n  1. После того как поставка будет укомплектована нужными сборочными заданиями, необходимо [передать её в доставку](./orders-fbs#tag/Postavki-FBS/paths/~1api~1v3~1supplies~1%7BsupplyId%7D~1deliver/patch). Если поставка не была передана в доставку, то при сканировании её QR-кода или приёмке первого товара на ПВЗ поставка автоматически закроется. При передаче сборочных заданий в доставку они будут автоматически собраны и переведены в статус `complete` — в доставке.\n  1. Для поставок из стран ЕАЭС добавьте данные [СПОТ](https://www.nalog.gov.ru/rn77/related_activities/spot). Получите [список стран ОКСМ](./orders-fbs#tag/Postavki-FBS/operation/getV3FbsDictionariesCountriesOksm) для [добавления данных СПОТ в поставку](./orders-fbs#tag/Postavki-FBS/operation/putV3FbsSuppliesSupplyIdSpot). Вы можете получать [данные СПОТ для списка поставок](./orders-fbs#tag/Postavki-FBS/operation/postV3FbsSuppliesSpotList) и [QR-коды СПОТ](./orders-fbs#tag/Postavki-FBS/operation/getV3FbsSuppliesSupplyIdStickersSpot). Сейчас методы доступны только для продавцов из Кыргызстана. В дальнейшем методы будут доступны продавцам из любой страны ЕАЭС кроме РФ, следите за обновлениями.\n  1. Если поставка была отсканирована в пункте приёмки, но при этом в ней всё ещё есть неотсканированные товары, спустя определённое время необходимо доставить их повторно. Проверьте все [сборочные задания, требующие повторной отгрузки на данный момент](./orders-fbs#tag/Sborochnye-zadaniya-FBS/paths/~1api~1v3~1supplies~1orders~1reshipment/get). Данные сборочные задания можно перевести в [другую активную поставку](./orders-fbs#tag/Postavki-FBS/paths/~1api~1marketplace~1v3~1supplies~1%7BsupplyId%7D~1orders/patch). Сборочное задание также будет переведено в статус `confirm` — на сборке.\n\nТакже вы можете:\n  - [удалить грузоместа из поставки](./orders-fbs#tag/Postavki-FBS/paths/~1api~1v3~1supplies~1%7BsupplyId%7D~1trbx/delete), но только пока поставка находится на сборке\n  - получить [ID всех сборочных заданий, добавленных к поставке](./orders-fbs#tag/Postavki-FBS/paths/~1api~1marketplace~1v3~1supplies~1%7BsupplyId%7D~1order-ids/get)\n  - получить информацию [обо всех поставках продавца](./orders-fbs#tag/Postavki-FBS/paths/~1api~1v3~1supplies/get) или [о конкретной поставке](./orders-fbs#tag/Postavki-FBS/paths/~1api~1v3~1supplies~1%7BsupplyId%7D/get)\n  - [удалить поставку](./orders-fbs#tag/Postavki-FBS/paths/~1api~1v3~1supplies~1%7BsupplyId%7D/delete) при условии, что она активна и за ней не закреплены сборочные задания\n  - [перемещать сборочные задания между активными поставками](./orders-fbs#tag/Postavki-FBS/paths/~1api~1marketplace~1v3~1supplies~1%7BsupplyId%7D~1orders/patch). Нельзя перемещать сборочное задание из уже закрытой поставки, только если оно не требует повторной отгрузки\n  - получить [QR-код поставки](./orders-fbs#tag/Postavki-FBS/paths/~1api~1v3~1supplies~1%7BsupplyId%7D~1barcode/get) в форматах SVG, ZPL или PNG. Доступно только после передачи поставки в доставку\n",
       "name": "Поставки FBS"
     },
     {

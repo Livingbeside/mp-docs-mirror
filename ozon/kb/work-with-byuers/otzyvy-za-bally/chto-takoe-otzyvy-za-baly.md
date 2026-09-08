@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /work-with-byuers/otzyvy-za-bally/chto-takoe-otzyvy-za-baly
 source: "https://seller-edu.ozon.ru/libra/work-with-byuers/otzyvy-za-bally/chto-takoe-otzyvy-za-baly"
-updated: "2026-08-04 15:01:11"
+updated: "2026-09-07 10:21:52"
 doc_id: 19742
-fetched_at: "2026-08-28T12:11:15Z"
-content_sha: e9c04ddda563f569
+fetched_at: "2026-09-08T01:39:32Z"
+content_sha: 71b9df14b51fdba4
 ---
 
 # Что такое ускоренный сбор отзывов
@@ -32,6 +32,8 @@ _Главная / Работа с покупателями / Инструмен�
 Участие в ускоренном сбор отзывов платное. [Как рассчитываем стоимость услуги](/commissions-tariffs/legal-information/full-actual-commissions#2-21-вознаграждение-за-услугу-«ускоренныи-сбор-отзывов»)
 
 Спишем плату после того, как благодаря работе наших алгоритмов товар получит отзыв любого типа: оценка, текстовый, с фото или видео. В некоторых случаях можем списать плату не сразу, а через 16 дней после публикации отзыва — если решим проверить, что покупатель не вернул товар.
+
+Можем приостановить кампании по сбору отзывов и закрыть доступ к сборам в мобильном приложении, если ваш баланс стал отрицательным. Пополните баланс, чтобы продолжить сбор. [Как пополнить баланс](https://seller-edu.ozon.ru/libra/finances-documents/calculations-documents/work-with-finance#%D0%B1%D0%B0%D0%BB%D0%B0%D0%BD%D1%81-%D0%BD%D0%B0-%D1%81%D0%B5%D0%B3%D0%BE%D0%B4%D0%BD%D1%8F)
 
 # Какие типы кампаний есть в ускоренном сборе отзывов
 

@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /charity/zagruzka/kak-dobavit-nko-v-razdel-blagotvoritelnost-na-ozon
 source: "https://seller-edu.ozon.ru/libra/charity/zagruzka/kak-dobavit-nko-v-razdel-blagotvoritelnost-na-ozon"
-updated: "2026-09-02 15:42:36"
+updated: "2026-09-07 06:53:19"
 doc_id: 28177
-fetched_at: "2026-09-03T02:13:25Z"
-content_sha: 14276ffc6fdb5e9e
+fetched_at: "2026-09-08T01:39:32Z"
+content_sha: b51c971786b0643e
 ---
 
 # Как добавить НКО в раздел «Благотворительность» на Ozon
@@ -58,7 +58,7 @@ Ozon не берёт комиссию, не управляет собранны�
 Описание того, что именно будет сделано в рамках события — до 150 символов.
 
 Изображение для события. Требования:
-формат — PNG;
+формат — png или jpg;
 
 ориентация — горизонтальная;
 

@@ -1,6 +1,15 @@
 {
   "components": {
     "examples": {
+      "AccessDenied": {
+        "value": {
+          "detail": "norm_query API not available",
+          "origin": "camp-api-public-cache",
+          "request_id": "60aaf2bc6164e84a9399fae9565b568a",
+          "status": 403,
+          "title": "request forbidden"
+        }
+      },
       "AdvertNotFound": {
         "description": "Кампания не найдена",
         "value": {
@@ -427,6 +436,31 @@
           }
         ]
       },
+      "Response403TokenCategory": {
+        "description": "Неверная категория токена",
+        "value": {
+          "detail": "scope is not allowed for this resource",
+          "origin": "ag-marketplace",
+          "requestId": "2dbf6fc9-bad8-4ef9-a058-c938a8553ba5",
+          "status": 403,
+          "statusText": "Forbidden",
+          "timestamp": "2026-09-03T13:55:15Z",
+          "title": "Forbidden"
+        }
+      },
+      "Response403TokenType": {
+        "description": "Неверный тип токена",
+        "value": {
+          "code": "base token is not allowed for this path",
+          "detail": "base token is not allowed",
+          "origin": "s2s-finance",
+          "requestId": "722199b2e15bbca48cc1d488a7989976",
+          "status": 403,
+          "statusText": "Forbidden",
+          "timestamp": "2026-05-25T02:47:09Z",
+          "title": "forbidden"
+        }
+      },
       "ResponseInvalidCampaignID": {
         "description": "Некорректный ID кампании",
         "value": {
@@ -737,15 +771,19 @@
       "403": {
         "content": {
           "application/problem+json": {
-            "example": {
-              "code": "base token is not allowed for this path",
-              "detail": "base token is not allowed",
-              "origin": "s2s-finance",
-              "requestId": "722199b2e15bbca48cc1d488a7989976",
-              "status": 403,
-              "statusText": "Forbidden",
-              "timestamp": "2026-05-25T02:47:09Z",
-              "title": "forbidden"
+            "examples": {
+              "Response403TokenCategory": {
+                "description": "Неверная категория токена",
+                "value": {
+                  "detail": "scope is not allowed for this resource",
+                  "origin": "ag-marketplace",
+                  "requestId": "2dbf6fc9-bad8-4ef9-a058-c938a8553ba5",
+                  "status": 403,
+                  "statusText": "Forbidden",
+                  "timestamp": "2026-09-03T13:55:15Z",
+                  "title": "Forbidden"
+                }
+              }
             },
             "schema": {
               "properties": {
@@ -843,23 +881,6 @@
           }
         },
         "description": "<span class='response__value '>Слишком много запросов</span>"
-      },
-      "AccessDenied": {
-        "content": {
-          "application/json": {
-            "example": {
-              "detail": "norm_query API not available",
-              "origin": "camp-api-public-cache",
-              "request_id": "60aaf2bc6164e84a9399fae9565b568a",
-              "status": 403,
-              "title": "request forbidden"
-            },
-            "schema": {
-              "$ref": "#/components/schemas/StandardizedBatchError"
-            }
-          }
-        },
-        "description": "<span class='response__value '>Доступ запрещён</span>"
       },
       "ErrParameterValuesIncorrect": {
         "content": {
@@ -1976,6 +1997,44 @@
           "id",
           "interval"
         ],
+        "type": "object"
+      },
+      "Response4XX": {
+        "properties": {
+          "code": {
+            "description": "Внутренний код ошибки",
+            "type": "string"
+          },
+          "detail": {
+            "description": "Детали ошибки",
+            "type": "string"
+          },
+          "origin": {
+            "description": "ID внутреннего сервиса WB",
+            "type": "string"
+          },
+          "requestId": {
+            "description": "ID запроса",
+            "type": "string"
+          },
+          "status": {
+            "description": "HTTP статус-код",
+            "type": "number"
+          },
+          "statusText": {
+            "description": "Расшифровка HTTP статус-кода",
+            "type": "string"
+          },
+          "timestamp": {
+            "description": "Дата и время запроса",
+            "format": "date-time",
+            "type": "string"
+          },
+          "title": {
+            "description": "Заголовок ошибки",
+            "type": "string"
+          }
+        },
         "type": "object"
       },
       "ResponseAdvError1": {
@@ -3605,6 +3664,9 @@
           "401": {
             "$ref": "#/components/responses/401"
           },
+          "403": {
+            "$ref": "#/components/responses/403"
+          },
           "429": {
             "$ref": "#/components/responses/429"
           }
@@ -3731,6 +3793,9 @@
           "401": {
             "$ref": "#/components/responses/401"
           },
+          "403": {
+            "$ref": "#/components/responses/403"
+          },
           "429": {
             "$ref": "#/components/responses/429"
           }
@@ -3790,6 +3855,9 @@
           "401": {
             "$ref": "#/components/responses/401"
           },
+          "403": {
+            "$ref": "#/components/responses/403"
+          },
           "429": {
             "$ref": "#/components/responses/429"
           }
@@ -3819,7 +3887,7 @@
     },
     "/adv/v0/normquery/bids": {
       "delete": {
-        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод удаляет ставки с поисковых кластеров.<br>\nМожно использовать только для кампаний с:\n  - ручной ставкой\n  - моделью оплаты `cpm` — за показы\n\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 сек | 5 запросов | 200 мс | 10 запросов |\n| Сервисный | 1 сек | 5 запросов | 200 мс | 10 запросов |\n| Базовый с секретом | 1 сек | 5 запросов | 200 мс | 10 запросов |\n| Базовый | 1 ч | 5 запросов | 12 мин | 1 запрос |\n</div>\n",
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод удаляет ставки с поисковых кластеров.<br>\nМожно использовать только для кампаний с:\n  - ручной ставкой\n  - моделью оплаты `cpm` — за показы\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 сек | 5 запросов | 200 мс | 10 запросов |\n| Сервисный | 1 сек | 5 запросов | 200 мс | 10 запросов |\n| Базовый с секретом | 1 сек | 5 запросов | 200 мс | 10 запросов |\n| Базовый | 1 ч | 5 запросов | 12 мин | 1 запрос |\n</div>\n",
         "operationId": "deleteV0NormqueryBids",
         "requestBody": {
           "content": {
@@ -3865,7 +3933,29 @@
             "$ref": "#/components/responses/401"
           },
           "403": {
-            "$ref": "#/components/responses/AccessDenied"
+            "content": {
+              "application/json": {
+                "examples": {
+                  "AccessDenied": {
+                    "$ref": "#/components/examples/AccessDenied"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/StandardizedBatchError"
+                }
+              },
+              "application/problem+json": {
+                "examples": {
+                  "Response403TokenCategory": {
+                    "$ref": "#/components/examples/Response403TokenCategory"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/Response4XX"
+                }
+              }
+            },
+            "description": "<span class='response__value '>Доступ запрещён</span>"
           },
           "429": {
             "$ref": "#/components/responses/429"
@@ -3884,7 +3974,7 @@
         "x-readonly-method": false
       },
       "post": {
-        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод устанавливает ставки в рублях на поисковые кластеры.<br>\nМожно использовать только для кампаний с:\n  - ручной ставкой\n  - моделью оплаты `cpm` — за показы\n\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 сек | 2 запроса | 500 мс | 4 запроса |\n| Сервисный | 1 сек | 2 запроса | 500 мс | 4 запроса |\n| Базовый с секретом | 1 сек | 2 запроса | 500 мс | 4 запроса |\n| Базовый | 1 ч | 5 запросов | 12 мин | 1 запрос |\n</div>\n",
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод устанавливает ставки в рублях на поисковые кластеры.<br>\nМожно использовать только для кампаний с:\n  - ручной ставкой\n  - моделью оплаты `cpm` — за показы\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 сек | 2 запроса | 500 мс | 4 запроса |\n| Сервисный | 1 сек | 2 запроса | 500 мс | 4 запроса |\n| Базовый с секретом | 1 сек | 2 запроса | 500 мс | 4 запроса |\n| Базовый | 1 ч | 5 запросов | 12 мин | 1 запрос |\n</div>\n",
         "operationId": "postV0NormqueryBids",
         "requestBody": {
           "content": {
@@ -3931,7 +4021,29 @@
             "$ref": "#/components/responses/401"
           },
           "403": {
-            "$ref": "#/components/responses/AccessDenied"
+            "content": {
+              "application/json": {
+                "examples": {
+                  "AccessDenied": {
+                    "$ref": "#/components/examples/AccessDenied"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/StandardizedBatchError"
+                }
+              },
+              "application/problem+json": {
+                "examples": {
+                  "Response403TokenCategory": {
+                    "$ref": "#/components/examples/Response403TokenCategory"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/Response4XX"
+                }
+              }
+            },
+            "description": "<span class='response__value '>Доступ запрещён</span>"
           },
           "429": {
             "$ref": "#/components/responses/429"
@@ -4032,7 +4144,29 @@
             "$ref": "#/components/responses/401"
           },
           "403": {
-            "$ref": "#/components/responses/AccessDenied"
+            "content": {
+              "application/json": {
+                "examples": {
+                  "AccessDenied": {
+                    "$ref": "#/components/examples/AccessDenied"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/StandardizedBatchError"
+                }
+              },
+              "application/problem+json": {
+                "examples": {
+                  "Response403TokenCategory": {
+                    "$ref": "#/components/examples/Response403TokenCategory"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/Response4XX"
+                }
+              }
+            },
+            "description": "<span class='response__value '>Доступ запрещён</span>"
           },
           "429": {
             "$ref": "#/components/responses/429"
@@ -4053,7 +4187,7 @@
     },
     "/adv/v0/normquery/get-minus": {
       "post": {
-        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод возвращает список минус-фраз по:\n  - ID кампаний\n  - артикулам WB\n\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 сек | 5 запросов | 200 мс | 10 запросов |\n| Сервисный | 1 сек | 5 запросов | 200 мс | 10 запросов |\n| Базовый с секретом | 1 сек | 5 запросов | 200 мс | 10 запросов |\n| Базовый | 1 ч | 5 запросов | 12 мин | 1 запрос |\n</div>\n",
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод возвращает список минус-фраз по:\n  - ID кампаний\n  - артикулам WB\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 сек | 5 запросов | 200 мс | 10 запросов |\n| Сервисный | 1 сек | 5 запросов | 200 мс | 10 запросов |\n| Базовый с секретом | 1 сек | 5 запросов | 200 мс | 10 запросов |\n| Базовый | 1 ч | 5 запросов | 12 мин | 1 запрос |\n</div>\n",
         "operationId": "postV0NormqueryGetMinus",
         "requestBody": {
           "content": {
@@ -4116,7 +4250,29 @@
             "$ref": "#/components/responses/401"
           },
           "403": {
-            "$ref": "#/components/responses/AccessDenied"
+            "content": {
+              "application/json": {
+                "examples": {
+                  "AccessDenied": {
+                    "$ref": "#/components/examples/AccessDenied"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/StandardizedBatchError"
+                }
+              },
+              "application/problem+json": {
+                "examples": {
+                  "Response403TokenCategory": {
+                    "$ref": "#/components/examples/Response403TokenCategory"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/Response4XX"
+                }
+              }
+            },
+            "description": "<span class='response__value '>Доступ запрещён</span>"
           },
           "429": {
             "$ref": "#/components/responses/429"
@@ -4214,6 +4370,9 @@
           "401": {
             "$ref": "#/components/responses/401"
           },
+          "403": {
+            "$ref": "#/components/responses/403"
+          },
           "429": {
             "$ref": "#/components/responses/429"
           }
@@ -4277,7 +4436,29 @@
             "$ref": "#/components/responses/401"
           },
           "403": {
-            "$ref": "#/components/responses/AccessDenied"
+            "content": {
+              "application/json": {
+                "examples": {
+                  "AccessDenied": {
+                    "$ref": "#/components/examples/AccessDenied"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/StandardizedBatchError"
+                }
+              },
+              "application/problem+json": {
+                "examples": {
+                  "Response403TokenCategory": {
+                    "$ref": "#/components/examples/Response403TokenCategory"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/Response4XX"
+                }
+              }
+            },
+            "description": "<span class='response__value '>Доступ запрещён</span>"
           },
           "429": {
             "$ref": "#/components/responses/429"
@@ -4613,7 +4794,29 @@
             "$ref": "#/components/responses/401"
           },
           "403": {
-            "$ref": "#/components/responses/AccessDenied"
+            "content": {
+              "application/json": {
+                "examples": {
+                  "AccessDenied": {
+                    "$ref": "#/components/examples/AccessDenied"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/StandardizedBatchError"
+                }
+              },
+              "application/problem+json": {
+                "examples": {
+                  "Response403TokenCategory": {
+                    "$ref": "#/components/examples/Response403TokenCategory"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/Response4XX"
+                }
+              }
+            },
+            "description": "<span class='response__value '>Доступ запрещён</span>"
           },
           "429": {
             "$ref": "#/components/responses/429"
@@ -4672,6 +4875,9 @@
           },
           "401": {
             "$ref": "#/components/responses/401"
+          },
+          "403": {
+            "$ref": "#/components/responses/403"
           },
           "422": {
             "content": {
@@ -4774,6 +4980,9 @@
           "401": {
             "$ref": "#/components/responses/401"
           },
+          "403": {
+            "$ref": "#/components/responses/403"
+          },
           "422": {
             "content": {
               "text/plain": {
@@ -4863,6 +5072,9 @@
           "401": {
             "$ref": "#/components/responses/401"
           },
+          "403": {
+            "$ref": "#/components/responses/403"
+          },
           "422": {
             "content": {
               "text/plain": {
@@ -4945,6 +5157,9 @@
           },
           "401": {
             "$ref": "#/components/responses/401"
+          },
+          "403": {
+            "$ref": "#/components/responses/403"
           },
           "422": {
             "content": {
@@ -5299,6 +5514,9 @@
           "401": {
             "$ref": "#/components/responses/401"
           },
+          "403": {
+            "$ref": "#/components/responses/403"
+          },
           "429": {
             "$ref": "#/components/responses/429"
           }
@@ -5452,6 +5670,9 @@
           "401": {
             "$ref": "#/components/responses/401"
           },
+          "403": {
+            "$ref": "#/components/responses/403"
+          },
           "429": {
             "$ref": "#/components/responses/429"
           }
@@ -5561,6 +5782,9 @@
           "401": {
             "$ref": "#/components/responses/401"
           },
+          "403": {
+            "$ref": "#/components/responses/403"
+          },
           "429": {
             "$ref": "#/components/responses/429"
           }
@@ -5657,6 +5881,9 @@
           },
           "401": {
             "$ref": "#/components/responses/401"
+          },
+          "403": {
+            "$ref": "#/components/responses/403"
           },
           "429": {
             "$ref": "#/components/responses/429"
@@ -5779,6 +6006,9 @@
           "401": {
             "$ref": "#/components/responses/401"
           },
+          "403": {
+            "$ref": "#/components/responses/403"
+          },
           "429": {
             "$ref": "#/components/responses/429"
           }
@@ -5855,6 +6085,9 @@
           },
           "401": {
             "$ref": "#/components/responses/401"
+          },
+          "403": {
+            "$ref": "#/components/responses/403"
           },
           "429": {
             "$ref": "#/components/responses/429"
@@ -5991,6 +6224,9 @@
           "401": {
             "$ref": "#/components/responses/401"
           },
+          "403": {
+            "$ref": "#/components/responses/403"
+          },
           "429": {
             "$ref": "#/components/responses/429"
           }
@@ -6121,6 +6357,9 @@
           "401": {
             "$ref": "#/components/responses/401"
           },
+          "403": {
+            "$ref": "#/components/responses/403"
+          },
           "429": {
             "$ref": "#/components/responses/429"
           }
@@ -6235,6 +6474,9 @@
           },
           "401": {
             "$ref": "#/components/responses/401"
+          },
+          "403": {
+            "$ref": "#/components/responses/403"
           },
           "429": {
             "$ref": "#/components/responses/429"
@@ -6368,6 +6610,9 @@
           "401": {
             "$ref": "#/components/responses/401"
           },
+          "403": {
+            "$ref": "#/components/responses/403"
+          },
           "429": {
             "$ref": "#/components/responses/429"
           }
@@ -6452,6 +6697,9 @@
           },
           "401": {
             "$ref": "#/components/responses/401"
+          },
+          "403": {
+            "$ref": "#/components/responses/403"
           },
           "404": {
             "description": "<span class='response__value '>Не найдено</span>"
@@ -6601,6 +6849,9 @@
           "401": {
             "$ref": "#/components/responses/401"
           },
+          "403": {
+            "$ref": "#/components/responses/403"
+          },
           "429": {
             "$ref": "#/components/responses/429"
           }
@@ -6729,6 +6980,9 @@
           "401": {
             "$ref": "#/components/responses/401"
           },
+          "403": {
+            "$ref": "#/components/responses/403"
+          },
           "429": {
             "$ref": "#/components/responses/429"
           }
@@ -6825,6 +7079,9 @@
           },
           "401": {
             "$ref": "#/components/responses/401"
+          },
+          "403": {
+            "$ref": "#/components/responses/403"
           },
           "429": {
             "$ref": "#/components/responses/429"
@@ -7346,6 +7603,9 @@
           "401": {
             "$ref": "#/components/responses/401"
           },
+          "403": {
+            "$ref": "#/components/responses/403"
+          },
           "429": {
             "$ref": "#/components/responses/429"
           }
@@ -7445,6 +7705,9 @@
           },
           "401": {
             "$ref": "#/components/responses/401"
+          },
+          "403": {
+            "$ref": "#/components/responses/403"
           },
           "429": {
             "$ref": "#/components/responses/429"
@@ -7651,6 +7914,9 @@
           },
           "401": {
             "$ref": "#/components/responses/401"
+          },
+          "403": {
+            "$ref": "#/components/responses/403"
           },
           "429": {
             "$ref": "#/components/responses/429"
@@ -7861,6 +8127,9 @@
           "401": {
             "$ref": "#/components/responses/401"
           },
+          "403": {
+            "$ref": "#/components/responses/403"
+          },
           "429": {
             "$ref": "#/components/responses/429"
           }
@@ -7904,7 +8173,22 @@
             "$ref": "#/components/responses/401"
           },
           "403": {
-            "$ref": "#/components/responses/403"
+            "content": {
+              "application/problem+json": {
+                "examples": {
+                  "Response403TokenCategory": {
+                    "$ref": "#/components/examples/Response403TokenCategory"
+                  },
+                  "Response403TokenType": {
+                    "$ref": "#/components/examples/Response403TokenType"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/Response4XX"
+                }
+              }
+            },
+            "description": "<span class='response__value '>Доступ запрещён</span>"
           },
           "429": {
             "$ref": "#/components/responses/429"
@@ -7973,7 +8257,22 @@
             "$ref": "#/components/responses/401"
           },
           "403": {
-            "$ref": "#/components/responses/403"
+            "content": {
+              "application/problem+json": {
+                "examples": {
+                  "Response403TokenCategory": {
+                    "$ref": "#/components/examples/Response403TokenCategory"
+                  },
+                  "Response403TokenType": {
+                    "$ref": "#/components/examples/Response403TokenType"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/Response4XX"
+                }
+              }
+            },
+            "description": "<span class='response__value '>Доступ запрещён</span>"
           },
           "429": {
             "$ref": "#/components/responses/429"
@@ -8150,6 +8449,9 @@
           "401": {
             "$ref": "#/components/responses/401"
           },
+          "403": {
+            "$ref": "#/components/responses/403"
+          },
           "429": {
             "$ref": "#/components/responses/429"
           }
@@ -8206,6 +8508,9 @@
           "402": {
             "$ref": "#/components/responses/402"
           },
+          "403": {
+            "$ref": "#/components/responses/403"
+          },
           "429": {
             "$ref": "#/components/responses/429"
           }
@@ -8249,6 +8554,9 @@
           },
           "402": {
             "$ref": "#/components/responses/402"
+          },
+          "403": {
+            "$ref": "#/components/responses/403"
           },
           "429": {
             "$ref": "#/components/responses/429"
@@ -8303,6 +8611,9 @@
           "402": {
             "$ref": "#/components/responses/402"
           },
+          "403": {
+            "$ref": "#/components/responses/403"
+          },
           "422": {
             "$ref": "#/components/responses/ErrParameterValuesIncorrect"
           },
@@ -8347,6 +8658,9 @@
           },
           "402": {
             "$ref": "#/components/responses/402"
+          },
+          "403": {
+            "$ref": "#/components/responses/403"
           },
           "422": {
             "$ref": "#/components/responses/UnprocessableEntity"

@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /analytics-and-metrics/graphs/planirovanie-postavok/cluster-analytics
 source: "https://seller-edu.ozon.ru/libra/analytics-and-metrics/graphs/planirovanie-postavok/cluster-analytics"
-updated: "2026-09-04 12:38:15"
+updated: "2026-09-07 12:36:20"
 doc_id: 941
-fetched_at: "2026-09-05T02:12:30Z"
-content_sha: c159f29d8e4deefa
+fetched_at: "2026-09-08T01:39:32Z"
+content_sha: bfc56273753786df
 ---
 
 # Продажи по кластерам
@@ -77,7 +77,7 @@ _Главная / Аналитика / Аналитика продавца / П�
 
 **Заказано товаров** — общее количество заказанных товаров, включая отмены и возвраты.
 
-**Заказано на сумму** — общая стоимость заказанных товаров, включая отмены и возвраты.
+**Заказано на сумму** — общая стоимость заказанных товаров, включая отмены и возвраты. Для расчёта берём цену реализации.
 
 **Доставлено (за выбранный период)** — учитываем в данных за день доставки.
 

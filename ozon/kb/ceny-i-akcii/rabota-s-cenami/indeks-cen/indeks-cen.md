@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /ceny-i-akcii/rabota-s-cenami/indeks-cen/indeks-cen
 source: "https://seller-edu.ozon.ru/libra/ceny-i-akcii/rabota-s-cenami/indeks-cen/indeks-cen"
-updated: "2026-04-16 15:09:42"
+updated: "2026-09-07 15:04:46"
 doc_id: 29252
-fetched_at: "2026-08-28T12:11:15Z"
-content_sha: c8631bd6c0396589
+fetched_at: "2026-09-08T01:39:32Z"
+content_sha: bc6bfda6686b0cda
 ---
 
 # Индекс цен
@@ -16,7 +16,7 @@ _Главная / Цены и акции / Работа с ценами / Инд
 
 Что такое индекс цен, как он рассчитывается и на что влияет
 
-Индекс цен показывает, насколько выгодна ваша цена для покупателей по сравнению с конкурентами. Этот показатель — не требование, а рекомендация, которая поможет вовремя скорректировать цены и поддерживать их на уровне рынка. Индекс цен рассчитываем для каждого вашего товара.
+Индекс цен показывает, насколько цена на сайте привлекательна для покупателей по сравнению с конкурентами. Этот показатель — не требование, а рекомендация, которая поможет вовремя скорректировать цены и поддерживать их на уровне рынка. Индекс цен рассчитываем для каждого вашего товара.
 
 В расчёте индекса учитываем товары:
 
@@ -28,9 +28,9 @@ _Главная / Цены и акции / Работа с ценами / Инд
 
 В зависимости от ваших цен, присваиваем каждому товару свой индекс:
 
-Супер-выгодный — означает, что цена вашего товара более чем на 5% ниже конкурентов, считаем её самой привлекательной для покупателей. Дадим бейдж **Цена что надо** и дополнительно будем продвигать в поиске на 10%, для пользователей Premium — 12,5 %, а для Premium Plus — на 15%.
+Супер-выгодный — означает, что цена вашего товара более чем на 5% ниже конкурентов, считаем её самой привлекательной для покупателей. Дадим бейдж **Цена что надо** и дополнительно будем продвигать в поиске на 10%, для пользователей Premium — 12,5 %, для Premium Plus — на 15%, для Premium Pro — 20%.
 
-Выгодный — цена вашего товара на Ozon конкурентоспособна и привлекательна для покупателей. Чтобы привлечь ещё больше внимания к таким товару, дадим ему бейдж **Цена что надо** и будем дополнительно продвигать их в поиске на 7,5%, для пользователей Premium — 10%, а для Premium Plus — на 12,5%.
+Выгодный — цена вашего товара на Ozon конкурентоспособна и привлекательна для покупателей. Чтобы привлечь ещё больше внимания к таким товару, дадим ему бейдж **Цена что надо** и будем дополнительно продвигать их в поиске на 7,5%, для пользователей Premium — 10%, для Premium Plus — на 12,5%, для Premium Pro — 17,5%.
 
 Умеренный — цена вашего товара в среднем выше, чем на других площадках и у конкурентов. Дополнительно продвигаем такие товары в поиске на 5%.
 
@@ -74,7 +74,7 @@ _Главная / Цены и акции / Работа с ценами / Инд
 
 Также итоговый индекс цен можно посмотреть:
 
-в разделе **[Товары → Список товаров](https://seller.ozon.ru/app/products)** в столбце **Ваша цена**;
+в разделе **[Товары → Список товаров](https://seller.ozon.ru/app/products)** в столбце **Цена на сайте**;
 
 при обновлении цен [через Excel-шаблон](https://seller.ozon.ru/app/prices/bulk-update-price) в столбце **Индекс цен;**
 
@@ -108,35 +108,35 @@ _Главная / Цены и акции / Работа с ценами / Инд
 
 Список площадок, для которых не учитываем рейтинг
 
-| Метро | [https://online.metro-cc.ru/](https://online.metro-cc.ru/)[ ](https://online.metro-cc.ru/) |
+| Метро | [https://online.metro-cc.ru/ ](https://online.metro-cc.ru/) |
 | --- | --- |
-| Перекресток впрок | [https://www.vprok.ru/](https://www.vprok.ru/)[ ](https://www.vprok.ru/) |
+| Перекресток впрок | [https://www.vprok.ru/ ](https://www.vprok.ru/) |
 | Лента онлайн | [https://online.lenta.com/](https://online.lenta.com/) |
 | Лента | [https://lenta.com/](https://lenta.com/) |
-| Перекресток | [https://www.perekrestok.ru/](https://www.perekrestok.ru/)[  ](https://www.perekrestok.ru/) |
-| Пятерочка | [https://5ka.ru/](https://5ka.ru/)[ ](https://5ka.ru/) |
-| Купер Самокат | [https://kuper.ru/samokat](https://kuper.ru/samokat)[ ](https://kuper.ru/samokat) |
-| Купер Магнит экспресс | [https://kuper.ru/magnit_express](https://kuper.ru/magnit_express)[ ](https://kuper.ru/magnit_express) |
-| Купер Ашан супермаркет | [https://kuper.ru/auchansm](https://kuper.ru/auchansm)[ ](https://kuper.ru/auchansm) |
-| Купер Магнит косметик | [https://kuper.ru/magnitkosmetikbd](https://kuper.ru/magnitkosmetikbd)[ ](https://kuper.ru/magnitkosmetikbd) |
-| Купер Магнит | [https://kuper.ru/magnit](https://kuper.ru/magnit)[ ](https://kuper.ru/magnit) |
-| Купер Гипер лента | [https://kuper.ru/lentagp](https://kuper.ru/lentagp)[ ](https://kuper.ru/lentagp) |
-| Купер Пятерочка | [https://kuper.ru/5ka](https://kuper.ru/5ka)[ ](https://kuper.ru/5ka) |
+| Перекресток | [https://www.perekrestok.ru/  ](https://www.perekrestok.ru/) |
+| Пятерочка | [https://5ka.ru/ ](https://5ka.ru/) |
+| Купер Самокат | [https://kuper.ru/samokat ](https://kuper.ru/samokat) |
+| Купер Магнит экспресс | [https://kuper.ru/magnit_express ](https://kuper.ru/magnit_express) |
+| Купер Ашан супермаркет | [https://kuper.ru/auchansm ](https://kuper.ru/auchansm) |
+| Купер Магнит косметик | [https://kuper.ru/magnitkosmetikbd ](https://kuper.ru/magnitkosmetikbd) |
+| Купер Магнит | [https://kuper.ru/magnit ](https://kuper.ru/magnit) |
+| Купер Гипер лента | [https://kuper.ru/lentagp ](https://kuper.ru/lentagp) |
+| Купер Пятерочка | [https://kuper.ru/5ka ](https://kuper.ru/5ka) |
 | Купер Перекресток | [https://kuper.ru/perekrestok](https://kuper.ru/perekrestok) |
-| Купер Метро | [https://kuper.ru/metro](https://kuper.ru/metro)[ ](https://kuper.ru/metro) |
-| Купер Ашан | [https://kuper.ru/auchan](https://kuper.ru/auchan)[ ](https://kuper.ru/auchan) |
-| Купер Дикси | [https://kuper.ru/dixy](https://kuper.ru/dixy)[ ](https://kuper.ru/dixy) |
-| Купер Глобус гипермаркет | [https://kuper.ru/globusgiper](https://kuper.ru/globusgiper)[ ](https://kuper.ru/globusgiper) |
-| Купер Селгрос | [https://kuper.ru/selgros](https://kuper.ru/selgros)[ ](https://kuper.ru/selgros) |
-| Купер Окей | [https://kuper.ru/okey](https://kuper.ru/okey)[ ](https://kuper.ru/okey) |
-| Купер Перекресток впрок | [https://kuper.ru/perekrestokvprok](https://kuper.ru/perekrestokvprok)[ ](https://kuper.ru/perekrestokvprok) |
-| Купер Агрокомплекс выселковский | [https://kuper.ru/agrokompleks](https://kuper.ru/agrokompleks)[ ](https://kuper.ru/agrokompleks) |
-| Азбука Вкуса | [https://av.ru/](https://av.ru/)[ ](https://av.ru/) |
+| Купер Метро | [https://kuper.ru/metro ](https://kuper.ru/metro) |
+| Купер Ашан | [https://kuper.ru/auchan ](https://kuper.ru/auchan) |
+| Купер Дикси | [https://kuper.ru/dixy ](https://kuper.ru/dixy) |
+| Купер Глобус гипермаркет | [https://kuper.ru/globusgiper ](https://kuper.ru/globusgiper) |
+| Купер Селгрос | [https://kuper.ru/selgros ](https://kuper.ru/selgros) |
+| Купер Окей | [https://kuper.ru/okey ](https://kuper.ru/okey) |
+| Купер Перекресток впрок | [https://kuper.ru/perekrestokvprok ](https://kuper.ru/perekrestokvprok) |
+| Купер Агрокомплекс выселковский | [https://kuper.ru/agrokompleks ](https://kuper.ru/agrokompleks) |
+| Азбука Вкуса | [https://av.ru/ ](https://av.ru/) |
 | Глобус онлайн | [https://online.globus.ru/](https://online.globus.ru/) |
 | Глобус | [https://www.globus.ru/](https://www.globus.ru/) |
-| Магнит | [https://magnit.ru/](https://magnit.ru/)[ ](https://magnit.ru/) |
-| Доставка Магнит | [https://dostavka.magnit.ru/](https://dostavka.magnit.ru/)[ ](https://dostavka.magnit.ru/) |
-| Яндекс Лавка | [https://lavka.yandex.ru/](https://lavka.yandex.ru/)[ ](https://lavka.yandex.ru/) |
+| Магнит | [https://magnit.ru/ ](https://magnit.ru/) |
+| Доставка Магнит | [https://dostavka.magnit.ru/ ](https://dostavka.magnit.ru/) |
+| Яндекс Лавка | [https://lavka.yandex.ru/ ](https://lavka.yandex.ru/) |
 | Самокат | [https://samokat.ru/](https://samokat.ru/) |
 | ВкусВилл | [https://vkusvill.ru/](https://vkusvill.ru/) |
 | Аптека.ру | [https://apteka.ru/](https://apteka.ru/) |
@@ -167,7 +167,7 @@ _Главная / Цены и акции / Работа с ценами / Инд
 
 если цена на Ozon ниже, чем конкурирующая, индекс считается по формуле:
 
-если ваша цена на Ozon выше, индекс считается по формуле:
+если цена сайте на Ozon выше, индекс считается по формуле:
 
 если ваша цена и конкурирующая одинаковые, индекс равен 1.
 

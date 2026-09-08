@@ -1,6 +1,20 @@
 {
   "components": {
     "examples": {
+      "AccessDenied": {
+        "value": {
+          "code": "AccessDenied",
+          "message": ""
+        }
+      },
+      "AccessDeniedBatch": {
+        "value": {
+          "detail": {},
+          "origin": "dbs-public-api",
+          "requestId": "f1787bd2d1fdс35d6f537316514у4a05",
+          "title": "AccessDenied"
+        }
+      },
       "FailedToUpdateMeta": {
         "value": {
           "code": "FailedToUpdateMeta",
@@ -45,11 +59,44 @@
           "message": ""
         }
       },
+      "IncorrectRequestBatch": {
+        "value": {
+          "detail": {},
+          "origin": "dbs-public-api",
+          "requestId": "f1787bd2d1fdс35d6f537316514у4a05",
+          "title": "IncorrectRequest"
+        }
+      },
       "IncorrectRequestBody": {
         "description": "Некорректное тело запроса",
         "value": {
           "code": "IncorrectRequestBody",
           "message": "Некорректное тело запроса"
+        }
+      },
+      "Response403TokenCategory": {
+        "description": "Неверная категория токена",
+        "value": {
+          "detail": "scope is not allowed for this resource",
+          "origin": "ag-marketplace",
+          "requestId": "2dbf6fc9-bad8-4ef9-a058-c938a8553ba5",
+          "status": 403,
+          "statusText": "Forbidden",
+          "timestamp": "2026-09-03T13:55:15Z",
+          "title": "Forbidden"
+        }
+      },
+      "Response403TokenType": {
+        "description": "Неверный тип токена",
+        "value": {
+          "code": "base token is not allowed for this path",
+          "detail": "base token is not allowed",
+          "origin": "s2s-finance",
+          "requestId": "722199b2e15bbca48cc1d488a7989976",
+          "status": 403,
+          "statusText": "Forbidden",
+          "timestamp": "2026-05-25T02:47:09Z",
+          "title": "forbidden"
         }
       },
       "StatusMismatch": {
@@ -216,36 +263,6 @@
           }
         },
         "description": "<span class='response__value '>Слишком много запросов</span>"
-      },
-      "AccessDenied": {
-        "content": {
-          "application/json": {
-            "example": {
-              "code": "AccessDenied",
-              "message": ""
-            },
-            "schema": {
-              "$ref": "#/components/schemas/Error"
-            }
-          }
-        },
-        "description": "<span class='response__value '>Доступ запрещён</span>"
-      },
-      "AccessDeniedBatch": {
-        "content": {
-          "application/json": {
-            "example": {
-              "detail": {},
-              "origin": "dbs-public-api",
-              "requestId": "f1787bd2d1fdс35d6f537316514у4a05",
-              "title": "AccessDenied"
-            },
-            "schema": {
-              "$ref": "#/components/schemas/api.BatchError"
-            }
-          }
-        },
-        "description": "<span class='response__value '>Доступ запрещён</span>"
       },
       "IncorrectRequest": {
         "content": {
@@ -852,47 +869,39 @@
         },
         "type": "object"
       },
-      "Response403General": {
+      "Response4XX": {
         "properties": {
           "code": {
             "description": "Внутренний код ошибки",
-            "example": "base token is not allowed for this path",
             "type": "string"
           },
           "detail": {
             "description": "Детали ошибки",
-            "example": "base token is not allowed",
             "type": "string"
           },
           "origin": {
             "description": "ID внутреннего сервиса WB",
-            "example": "s2s-finance",
             "type": "string"
           },
           "requestId": {
             "description": "ID запроса",
-            "example": "722199b2e15bbca48cc1d488a7989976",
             "type": "string"
           },
           "status": {
             "description": "HTTP статус-код",
-            "example": 403,
             "type": "number"
           },
           "statusText": {
             "description": "Расшифровка HTTP статус-кода",
-            "example": "Forbidden",
             "type": "string"
           },
           "timestamp": {
             "description": "Дата и время запроса",
-            "example": "2026-05-25T02:47:09Z",
             "format": "date-time",
             "type": "string"
           },
           "title": {
             "description": "Заголовок ошибки",
-            "example": "forbidden",
             "type": "string"
           }
         },
@@ -1180,7 +1189,7 @@
       "api.OrderFinalPriceResult": {
         "properties": {
           "data": {
-            "description": "Данные сборочного задания.\n<br><br>\nЕсли `\"data\":{}`, данные формируются. Повторите запрос позднее. Максимальное время формирования данных около 3 минут.\n<br><br>\nЕсли `data` отсутствует, данных по сборочному заданию не предусмотрено. Используйте данные из ответов методов:\n  - [Получить список новых сборочных заданий](/docs/openapi/orders-dbs#tag/dbsAssemblyOrders/operation/getV3DbsOrdersNew)\n  - [Получить информацию о завершенных сборочных заданиях](/docs/openapi/orders-dbs#tag/dbsAssemblyOrders/operation/getV3DbsOrders)\n",
+            "description": "Данные сборочного задания.\n<br><br>\nЕсли `\"data\":{}`, данные формируются. Повторите запрос позднее. Максимальное время формирования данных около 1 минуты.\n<br><br>\nЕсли `data` отсутствует, данных по сборочному заданию не предусмотрено. Используйте данные из ответов методов:\n  - [Получить список новых сборочных заданий](/docs/openapi/orders-dbs#tag/dbsAssemblyOrders/operation/getV3DbsOrdersNew)\n  - [Получить информацию о завершенных сборочных заданиях](/docs/openapi/orders-dbs#tag/dbsAssemblyOrders/operation/getV3DbsOrders)\n",
             "nullable": false,
             "properties": {
               "convertedCurrencyCode": {
@@ -1824,14 +1833,23 @@
           "403": {
             "content": {
               "application/json": {
-                "example": {
-                  "detail": {},
-                  "origin": "dbs-public-api",
-                  "requestId": "f1787bd2d1fdс35d6f537316514у4a05",
-                  "title": "AccessDenied"
+                "examples": {
+                  "AccessDeniedBatch": {
+                    "$ref": "#/components/examples/AccessDeniedBatch"
+                  }
                 },
                 "schema": {
                   "$ref": "#/components/schemas/api.BatchError"
+                }
+              },
+              "application/problem+json": {
+                "examples": {
+                  "Response403TokenCategory": {
+                    "$ref": "#/components/examples/Response403TokenCategory"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/Response4XX"
                 }
               }
             },
@@ -1895,7 +1913,30 @@
             "$ref": "#/components/responses/401"
           },
           "403": {
-            "$ref": "#/components/responses/AccessDeniedBatch"
+            "content": {
+              "application/json": {
+                "example": {
+                  "detail": {},
+                  "origin": "dbs-public-api",
+                  "requestId": "f1787bd2d1fdс35d6f537316514у4a05",
+                  "title": "AccessDenied"
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/api.BatchError"
+                }
+              },
+              "application/problem+json": {
+                "examples": {
+                  "Response403TokenCategory": {
+                    "$ref": "#/components/examples/Response403TokenCategory"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/Response4XX"
+                }
+              }
+            },
+            "description": "<span class='response__value '>Доступ запрещён</span>"
           },
           "429": {
             "$ref": "#/components/responses/429"
@@ -2000,7 +2041,29 @@
             "$ref": "#/components/responses/402"
           },
           "403": {
-            "$ref": "#/components/responses/AccessDenied"
+            "content": {
+              "application/json": {
+                "examples": {
+                  "AccessDenied": {
+                    "$ref": "#/components/examples/AccessDenied"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              },
+              "application/problem+json": {
+                "examples": {
+                  "Response403TokenCategory": {
+                    "$ref": "#/components/examples/Response403TokenCategory"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/Response4XX"
+                }
+              }
+            },
+            "description": "<span class='response__value '>Доступ запрещён</span>"
           },
           "404": {
             "$ref": "#/components/responses/NotFound"
@@ -2075,11 +2138,10 @@
           "400": {
             "content": {
               "application/json": {
-                "example": {
-                  "detail": {},
-                  "origin": "dbs-public-api",
-                  "requestId": "f1787bd2d1fdс35d6f537316514у4a05",
-                  "title": "IncorrectRequest"
+                "examples": {
+                  "IncorrectRequestBatch": {
+                    "$ref": "#/components/examples/IncorrectRequestBatch"
+                  }
                 },
                 "schema": {
                   "$ref": "#/components/schemas/api.BatchError"
@@ -2097,14 +2159,23 @@
           "403": {
             "content": {
               "application/json": {
-                "example": {
-                  "detail": {},
-                  "origin": "dbs-public-api",
-                  "requestId": "f1787bd2d1fdс35d6f537316514у4a05",
-                  "title": "AccessDenied"
+                "examples": {
+                  "AccessDeniedBatch": {
+                    "$ref": "#/components/examples/AccessDeniedBatch"
+                  }
                 },
                 "schema": {
                   "$ref": "#/components/schemas/api.BatchError"
+                }
+              },
+              "application/problem+json": {
+                "examples": {
+                  "Response403TokenCategory": {
+                    "$ref": "#/components/examples/Response403TokenCategory"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/Response4XX"
                 }
               }
             },
@@ -2175,11 +2246,10 @@
           "400": {
             "content": {
               "application/json": {
-                "example": {
-                  "detail": {},
-                  "origin": "dbs-public-api",
-                  "requestId": "f1787bd2d1fdс35d6f537316514у4a05",
-                  "title": "IncorrectRequest"
+                "examples": {
+                  "IncorrectRequestBatch": {
+                    "$ref": "#/components/examples/IncorrectRequestBatch"
+                  }
                 },
                 "schema": {
                   "$ref": "#/components/schemas/api.BatchError"
@@ -2197,14 +2267,23 @@
           "403": {
             "content": {
               "application/json": {
-                "example": {
-                  "detail": {},
-                  "origin": "dbs-public-api",
-                  "requestId": "f1787bd2d1fdс35d6f537316514у4a05",
-                  "title": "AccessDenied"
+                "examples": {
+                  "AccessDeniedBatch": {
+                    "$ref": "#/components/examples/AccessDeniedBatch"
+                  }
                 },
                 "schema": {
                   "$ref": "#/components/schemas/api.BatchError"
+                }
+              },
+              "application/problem+json": {
+                "examples": {
+                  "Response403TokenCategory": {
+                    "$ref": "#/components/examples/Response403TokenCategory"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/Response4XX"
                 }
               }
             },
@@ -2260,11 +2339,10 @@
           "400": {
             "content": {
               "application/json": {
-                "example": {
-                  "detail": {},
-                  "origin": "dbs-public-api",
-                  "requestId": "f1787bd2d1fdс35d6f537316514у4a05",
-                  "title": "IncorrectRequest"
+                "examples": {
+                  "IncorrectRequestBatch": {
+                    "$ref": "#/components/examples/IncorrectRequestBatch"
+                  }
                 },
                 "schema": {
                   "$ref": "#/components/schemas/api.BatchError"
@@ -2282,14 +2360,23 @@
           "403": {
             "content": {
               "application/json": {
-                "example": {
-                  "detail": {},
-                  "origin": "dbs-public-api",
-                  "requestId": "f1787bd2d1fdс35d6f537316514у4a05",
-                  "title": "AccessDenied"
+                "examples": {
+                  "AccessDeniedBatch": {
+                    "$ref": "#/components/examples/AccessDeniedBatch"
+                  }
                 },
                 "schema": {
                   "$ref": "#/components/schemas/api.BatchError"
+                }
+              },
+              "application/problem+json": {
+                "examples": {
+                  "Response403TokenCategory": {
+                    "$ref": "#/components/examples/Response403TokenCategory"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/Response4XX"
                 }
               }
             },
@@ -2360,11 +2447,10 @@
           "400": {
             "content": {
               "application/json": {
-                "example": {
-                  "detail": {},
-                  "origin": "dbs-public-api",
-                  "requestId": "f1787bd2d1fdс35d6f537316514у4a05",
-                  "title": "IncorrectRequest"
+                "examples": {
+                  "IncorrectRequestBatch": {
+                    "$ref": "#/components/examples/IncorrectRequestBatch"
+                  }
                 },
                 "schema": {
                   "$ref": "#/components/schemas/api.BatchError"
@@ -2382,14 +2468,23 @@
           "403": {
             "content": {
               "application/json": {
-                "example": {
-                  "detail": {},
-                  "origin": "dbs-public-api",
-                  "requestId": "f1787bd2d1fdс35d6f537316514у4a05",
-                  "title": "IncorrectRequest"
+                "examples": {
+                  "IncorrectRequestBatch": {
+                    "$ref": "#/components/examples/IncorrectRequestBatch"
+                  }
                 },
                 "schema": {
                   "$ref": "#/components/schemas/api.BatchError"
+                }
+              },
+              "application/problem+json": {
+                "examples": {
+                  "Response403TokenCategory": {
+                    "$ref": "#/components/examples/Response403TokenCategory"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/Response4XX"
                 }
               }
             },
@@ -2460,11 +2555,10 @@
           "400": {
             "content": {
               "application/json": {
-                "example": {
-                  "detail": {},
-                  "origin": "dbs-public-api",
-                  "requestId": "f1787bd2d1fdс35d6f537316514у4a05",
-                  "title": "IncorrectRequest"
+                "examples": {
+                  "IncorrectRequestBatch": {
+                    "$ref": "#/components/examples/IncorrectRequestBatch"
+                  }
                 },
                 "schema": {
                   "$ref": "#/components/schemas/api.BatchError"
@@ -2482,14 +2576,23 @@
           "403": {
             "content": {
               "application/json": {
-                "example": {
-                  "detail": {},
-                  "origin": "dbs-public-api",
-                  "requestId": "f1787bd2d1fdс35d6f537316514у4a05",
-                  "title": "AccessDenied"
+                "examples": {
+                  "AccessDeniedBatch": {
+                    "$ref": "#/components/examples/AccessDeniedBatch"
+                  }
                 },
                 "schema": {
                   "$ref": "#/components/schemas/api.BatchError"
+                }
+              },
+              "application/problem+json": {
+                "examples": {
+                  "Response403TokenCategory": {
+                    "$ref": "#/components/examples/Response403TokenCategory"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/Response4XX"
                 }
               }
             },
@@ -2550,11 +2653,10 @@
           "400": {
             "content": {
               "application/json": {
-                "example": {
-                  "detail": {},
-                  "origin": "dbs-public-api",
-                  "requestId": "f1787bd2d1fdс35d6f537316514у4a05",
-                  "title": "IncorrectRequest"
+                "examples": {
+                  "IncorrectRequestBatch": {
+                    "$ref": "#/components/examples/IncorrectRequestBatch"
+                  }
                 },
                 "schema": {
                   "$ref": "#/components/schemas/api.BatchError"
@@ -2572,14 +2674,23 @@
           "403": {
             "content": {
               "application/json": {
-                "example": {
-                  "detail": {},
-                  "origin": "dbs-public-api",
-                  "requestId": "f1787bd2d1fdс35d6f537316514у4a05",
-                  "title": "AccessDenied"
+                "examples": {
+                  "AccessDeniedBatch": {
+                    "$ref": "#/components/examples/AccessDeniedBatch"
+                  }
                 },
                 "schema": {
                   "$ref": "#/components/schemas/api.BatchError"
+                }
+              },
+              "application/problem+json": {
+                "examples": {
+                  "Response403TokenCategory": {
+                    "$ref": "#/components/examples/Response403TokenCategory"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/Response4XX"
                 }
               }
             },
@@ -2650,11 +2761,10 @@
           "400": {
             "content": {
               "application/json": {
-                "example": {
-                  "detail": {},
-                  "origin": "dbs-public-api",
-                  "requestId": "f1787bd2d1fdс35d6f537316514у4a05",
-                  "title": "IncorrectRequest"
+                "examples": {
+                  "IncorrectRequestBatch": {
+                    "$ref": "#/components/examples/IncorrectRequestBatch"
+                  }
                 },
                 "schema": {
                   "$ref": "#/components/schemas/api.BatchError"
@@ -2672,14 +2782,23 @@
           "403": {
             "content": {
               "application/json": {
-                "example": {
-                  "detail": {},
-                  "origin": "dbs-public-api",
-                  "requestId": "f1787bd2d1fdс35d6f537316514у4a05",
-                  "title": "AccessDenied"
+                "examples": {
+                  "AccessDeniedBatch": {
+                    "$ref": "#/components/examples/AccessDeniedBatch"
+                  }
                 },
                 "schema": {
                   "$ref": "#/components/schemas/api.BatchError"
+                }
+              },
+              "application/problem+json": {
+                "examples": {
+                  "Response403TokenCategory": {
+                    "$ref": "#/components/examples/Response403TokenCategory"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/Response4XX"
                 }
               }
             },
@@ -2740,11 +2859,10 @@
           "400": {
             "content": {
               "application/json": {
-                "example": {
-                  "detail": {},
-                  "origin": "dbs-public-api",
-                  "requestId": "f1787bd2d1fdс35d6f537316514у4a05",
-                  "title": "IncorrectRequest"
+                "examples": {
+                  "IncorrectRequestBatch": {
+                    "$ref": "#/components/examples/IncorrectRequestBatch"
+                  }
                 },
                 "schema": {
                   "$ref": "#/components/schemas/api.BatchError"
@@ -2762,14 +2880,23 @@
           "403": {
             "content": {
               "application/json": {
-                "example": {
-                  "detail": {},
-                  "origin": "dbs-public-api",
-                  "requestId": "f1787bd2d1fdс35d6f537316514у4a05",
-                  "title": "AccessDenied"
+                "examples": {
+                  "AccessDeniedBatch": {
+                    "$ref": "#/components/examples/AccessDeniedBatch"
+                  }
                 },
                 "schema": {
                   "$ref": "#/components/schemas/api.BatchError"
+                }
+              },
+              "application/problem+json": {
+                "examples": {
+                  "Response403TokenCategory": {
+                    "$ref": "#/components/examples/Response403TokenCategory"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/Response4XX"
                 }
               }
             },
@@ -2830,11 +2957,10 @@
           "400": {
             "content": {
               "application/json": {
-                "example": {
-                  "detail": {},
-                  "origin": "dbs-public-api",
-                  "requestId": "f1787bd2d1fdс35d6f537316514у4a05",
-                  "title": "IncorrectRequest"
+                "examples": {
+                  "IncorrectRequestBatch": {
+                    "$ref": "#/components/examples/IncorrectRequestBatch"
+                  }
                 },
                 "schema": {
                   "$ref": "#/components/schemas/api.BatchError"
@@ -2852,14 +2978,23 @@
           "403": {
             "content": {
               "application/json": {
-                "example": {
-                  "detail": {},
-                  "origin": "dbs-public-api",
-                  "requestId": "f1787bd2d1fdс35d6f537316514у4a05",
-                  "title": "AccessDenied"
+                "examples": {
+                  "AccessDeniedBatch": {
+                    "$ref": "#/components/examples/AccessDeniedBatch"
+                  }
                 },
                 "schema": {
                   "$ref": "#/components/schemas/api.BatchError"
+                }
+              },
+              "application/problem+json": {
+                "examples": {
+                  "Response403TokenCategory": {
+                    "$ref": "#/components/examples/Response403TokenCategory"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/Response4XX"
                 }
               }
             },
@@ -2920,11 +3055,10 @@
           "400": {
             "content": {
               "application/json": {
-                "example": {
-                  "detail": {},
-                  "origin": "dbs-public-api",
-                  "requestId": "f1787bd2d1fdс35d6f537316514у4a05",
-                  "title": "IncorrectRequest"
+                "examples": {
+                  "IncorrectRequestBatch": {
+                    "$ref": "#/components/examples/IncorrectRequestBatch"
+                  }
                 },
                 "schema": {
                   "$ref": "#/components/schemas/api.BatchError"
@@ -2942,14 +3076,23 @@
           "403": {
             "content": {
               "application/json": {
-                "example": {
-                  "detail": {},
-                  "origin": "dbs-public-api",
-                  "requestId": "f1787bd2d1fdс35d6f537316514у4a05",
-                  "title": "AccessDenied"
+                "examples": {
+                  "AccessDeniedBatch": {
+                    "$ref": "#/components/examples/AccessDeniedBatch"
+                  }
                 },
                 "schema": {
                   "$ref": "#/components/schemas/api.BatchError"
+                }
+              },
+              "application/problem+json": {
+                "examples": {
+                  "Response403TokenCategory": {
+                    "$ref": "#/components/examples/Response403TokenCategory"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/Response4XX"
                 }
               }
             },
@@ -3082,11 +3225,10 @@
           "400": {
             "content": {
               "application/json": {
-                "example": {
-                  "detail": {},
-                  "origin": "dbs-public-api",
-                  "requestId": "f1787bd2d1fdс35d6f537316514у4a05",
-                  "title": "IncorrectRequest"
+                "examples": {
+                  "IncorrectRequestBatch": {
+                    "$ref": "#/components/examples/IncorrectRequestBatch"
+                  }
                 },
                 "schema": {
                   "$ref": "#/components/schemas/api.BatchError"
@@ -3104,14 +3246,23 @@
           "403": {
             "content": {
               "application/json": {
-                "example": {
-                  "detail": {},
-                  "origin": "dbs-public-api",
-                  "requestId": "f1787bd2d1fdс35d6f537316514у4a05",
-                  "title": "AccessDenied"
+                "examples": {
+                  "AccessDeniedBatch": {
+                    "$ref": "#/components/examples/AccessDeniedBatch"
+                  }
                 },
                 "schema": {
                   "$ref": "#/components/schemas/api.BatchError"
+                }
+              },
+              "application/problem+json": {
+                "examples": {
+                  "Response403TokenCategory": {
+                    "$ref": "#/components/examples/Response403TokenCategory"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/Response4XX"
                 }
               }
             },
@@ -3171,11 +3322,10 @@
           "400": {
             "content": {
               "application/json": {
-                "example": {
-                  "detail": {},
-                  "origin": "dbs-public-api",
-                  "requestId": "f1787bd2d1fdс35d6f537316514у4a05",
-                  "title": "IncorrectRequest"
+                "examples": {
+                  "IncorrectRequestBatch": {
+                    "$ref": "#/components/examples/IncorrectRequestBatch"
+                  }
                 },
                 "schema": {
                   "$ref": "#/components/schemas/api.BatchError"
@@ -3193,14 +3343,23 @@
           "403": {
             "content": {
               "application/json": {
-                "example": {
-                  "detail": {},
-                  "origin": "dbs-public-api",
-                  "requestId": "f1787bd2d1fdс35d6f537316514у4a05",
-                  "title": "AccessDenied"
+                "examples": {
+                  "AccessDeniedBatch": {
+                    "$ref": "#/components/examples/AccessDeniedBatch"
+                  }
                 },
                 "schema": {
                   "$ref": "#/components/schemas/api.BatchError"
+                }
+              },
+              "application/problem+json": {
+                "examples": {
+                  "Response403TokenCategory": {
+                    "$ref": "#/components/examples/Response403TokenCategory"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/Response4XX"
                 }
               }
             },
@@ -3397,8 +3556,16 @@
                 }
               },
               "application/problem+json": {
+                "examples": {
+                  "Response403TokenCategory": {
+                    "$ref": "#/components/examples/Response403TokenCategory"
+                  },
+                  "Response403TokenType": {
+                    "$ref": "#/components/examples/Response403TokenType"
+                  }
+                },
                 "schema": {
-                  "$ref": "#/components/schemas/Response403General"
+                  "$ref": "#/components/schemas/Response4XX"
                 }
               }
             },
@@ -3478,7 +3645,29 @@
             "$ref": "#/components/responses/402"
           },
           "403": {
-            "$ref": "#/components/responses/AccessDenied"
+            "content": {
+              "application/json": {
+                "examples": {
+                  "AccessDenied": {
+                    "$ref": "#/components/examples/AccessDenied"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              },
+              "application/problem+json": {
+                "examples": {
+                  "Response403TokenCategory": {
+                    "$ref": "#/components/examples/Response403TokenCategory"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/Response4XX"
+                }
+              }
+            },
+            "description": "<span class='response__value '>Доступ запрещён</span>"
           },
           "429": {
             "$ref": "#/components/responses/429"
@@ -3578,7 +3767,29 @@
             "$ref": "#/components/responses/402"
           },
           "403": {
-            "$ref": "#/components/responses/AccessDenied"
+            "content": {
+              "application/json": {
+                "examples": {
+                  "AccessDenied": {
+                    "$ref": "#/components/examples/AccessDenied"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              },
+              "application/problem+json": {
+                "examples": {
+                  "Response403TokenCategory": {
+                    "$ref": "#/components/examples/Response403TokenCategory"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/Response4XX"
+                }
+              }
+            },
+            "description": "<span class='response__value '>Доступ запрещён</span>"
           },
           "429": {
             "$ref": "#/components/responses/429"
@@ -3660,7 +3871,29 @@
             "$ref": "#/components/responses/402"
           },
           "403": {
-            "$ref": "#/components/responses/AccessDenied"
+            "content": {
+              "application/json": {
+                "examples": {
+                  "AccessDenied": {
+                    "$ref": "#/components/examples/AccessDenied"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              },
+              "application/problem+json": {
+                "examples": {
+                  "Response403TokenCategory": {
+                    "$ref": "#/components/examples/Response403TokenCategory"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/Response4XX"
+                }
+              }
+            },
+            "description": "<span class='response__value '>Доступ запрещён</span>"
           },
           "404": {
             "$ref": "#/components/responses/NotFound"
@@ -3742,7 +3975,29 @@
             "$ref": "#/components/responses/402"
           },
           "403": {
-            "$ref": "#/components/responses/AccessDenied"
+            "content": {
+              "application/json": {
+                "examples": {
+                  "AccessDenied": {
+                    "$ref": "#/components/examples/AccessDenied"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              },
+              "application/problem+json": {
+                "examples": {
+                  "Response403TokenCategory": {
+                    "$ref": "#/components/examples/Response403TokenCategory"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/Response4XX"
+                }
+              }
+            },
+            "description": "<span class='response__value '>Доступ запрещён</span>"
           },
           "429": {
             "$ref": "#/components/responses/429"
@@ -3804,7 +4059,29 @@
             "$ref": "#/components/responses/402"
           },
           "403": {
-            "$ref": "#/components/responses/AccessDenied"
+            "content": {
+              "application/json": {
+                "examples": {
+                  "AccessDenied": {
+                    "$ref": "#/components/examples/AccessDenied"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              },
+              "application/problem+json": {
+                "examples": {
+                  "Response403TokenCategory": {
+                    "$ref": "#/components/examples/Response403TokenCategory"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/Response4XX"
+                }
+              }
+            },
+            "description": "<span class='response__value '>Доступ запрещён</span>"
           },
           "429": {
             "$ref": "#/components/responses/429"

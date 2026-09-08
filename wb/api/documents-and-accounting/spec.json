@@ -1,5 +1,32 @@
 {
   "components": {
+    "examples": {
+      "Response403TokenCategory": {
+        "description": "Неверная категория токена",
+        "value": {
+          "detail": "scope is not allowed for this resource",
+          "origin": "ag-marketplace",
+          "requestId": "2dbf6fc9-bad8-4ef9-a058-c938a8553ba5",
+          "status": 403,
+          "statusText": "Forbidden",
+          "timestamp": "2026-09-03T13:55:15Z",
+          "title": "Forbidden"
+        }
+      },
+      "Response403TokenType": {
+        "description": "Неверный тип токена",
+        "value": {
+          "code": "base token is not allowed for this path",
+          "detail": "base token is not allowed",
+          "origin": "s2s-finance",
+          "requestId": "722199b2e15bbca48cc1d488a7989976",
+          "status": 403,
+          "statusText": "Forbidden",
+          "timestamp": "2026-05-25T02:47:09Z",
+          "title": "forbidden"
+        }
+      }
+    },
     "parameters": {
       "LocaleCat": {
         "description": "Язык поля `title`:\n  - `ru` — русский\n  - `en` — английский\n  - `zh` — китайский\n",
@@ -105,15 +132,19 @@
       "403": {
         "content": {
           "application/problem+json": {
-            "example": {
-              "code": "base token is not allowed for this path",
-              "detail": "base token is not allowed",
-              "origin": "s2s-finance",
-              "requestId": "722199b2e15bbca48cc1d488a7989976",
-              "status": 403,
-              "statusText": "Forbidden",
-              "timestamp": "2026-05-25T02:47:09Z",
-              "title": "forbidden"
+            "examples": {
+              "Response403TokenCategory": {
+                "description": "Неверная категория токена",
+                "value": {
+                  "detail": "scope is not allowed for this resource",
+                  "origin": "ag-marketplace",
+                  "requestId": "2dbf6fc9-bad8-4ef9-a058-c938a8553ba5",
+                  "status": 403,
+                  "statusText": "Forbidden",
+                  "timestamp": "2026-09-03T13:55:15Z",
+                  "title": "Forbidden"
+                }
+              }
             },
             "schema": {
               "properties": {
@@ -808,6 +839,44 @@
             "type": "object"
           }
         }
+      },
+      "Response4XX": {
+        "properties": {
+          "code": {
+            "description": "Внутренний код ошибки",
+            "type": "string"
+          },
+          "detail": {
+            "description": "Детали ошибки",
+            "type": "string"
+          },
+          "origin": {
+            "description": "ID внутреннего сервиса WB",
+            "type": "string"
+          },
+          "requestId": {
+            "description": "ID запроса",
+            "type": "string"
+          },
+          "status": {
+            "description": "HTTP статус-код",
+            "type": "number"
+          },
+          "statusText": {
+            "description": "Расшифровка HTTP статус-кода",
+            "type": "string"
+          },
+          "timestamp": {
+            "description": "Дата и время запроса",
+            "format": "date-time",
+            "type": "string"
+          },
+          "title": {
+            "description": "Заголовок ошибки",
+            "type": "string"
+          }
+        },
+        "type": "object"
       },
       "SalesReportListReq": {
         "description": "Параметры запроса",
@@ -1707,7 +1776,22 @@
             "$ref": "#/components/responses/402"
           },
           "403": {
-            "$ref": "#/components/responses/403"
+            "content": {
+              "application/problem+json": {
+                "examples": {
+                  "Response403TokenCategory": {
+                    "$ref": "#/components/examples/Response403TokenCategory"
+                  },
+                  "Response403TokenType": {
+                    "$ref": "#/components/examples/Response403TokenType"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/Response4XX"
+                }
+              }
+            },
+            "description": "<span class='response__value '>Доступ запрещён</span>"
           },
           "429": {
             "$ref": "#/components/responses/429"
@@ -1788,7 +1872,22 @@
             "$ref": "#/components/responses/402"
           },
           "403": {
-            "$ref": "#/components/responses/403"
+            "content": {
+              "application/problem+json": {
+                "examples": {
+                  "Response403TokenCategory": {
+                    "$ref": "#/components/examples/Response403TokenCategory"
+                  },
+                  "Response403TokenType": {
+                    "$ref": "#/components/examples/Response403TokenType"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/Response4XX"
+                }
+              }
+            },
+            "description": "<span class='response__value '>Доступ запрещён</span>"
           },
           "429": {
             "$ref": "#/components/responses/429"
@@ -1854,7 +1953,22 @@
             "$ref": "#/components/responses/401"
           },
           "403": {
-            "$ref": "#/components/responses/403"
+            "content": {
+              "application/problem+json": {
+                "examples": {
+                  "Response403TokenCategory": {
+                    "$ref": "#/components/examples/Response403TokenCategory"
+                  },
+                  "Response403TokenType": {
+                    "$ref": "#/components/examples/Response403TokenType"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/Response4XX"
+                }
+              }
+            },
+            "description": "<span class='response__value '>Доступ запрещён</span>"
           },
           "429": {
             "$ref": "#/components/responses/429"
@@ -1921,6 +2035,9 @@
           },
           "402": {
             "$ref": "#/components/responses/402"
+          },
+          "403": {
+            "$ref": "#/components/responses/403"
           },
           "429": {
             "$ref": "#/components/responses/429"
@@ -1997,7 +2114,22 @@
             "$ref": "#/components/responses/402"
           },
           "403": {
-            "$ref": "#/components/responses/403"
+            "content": {
+              "application/problem+json": {
+                "examples": {
+                  "Response403TokenCategory": {
+                    "$ref": "#/components/examples/Response403TokenCategory"
+                  },
+                  "Response403TokenType": {
+                    "$ref": "#/components/examples/Response403TokenType"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/Response4XX"
+                }
+              }
+            },
+            "description": "<span class='response__value '>Доступ запрещён</span>"
           },
           "429": {
             "$ref": "#/components/responses/429"
@@ -2063,7 +2195,22 @@
             "$ref": "#/components/responses/401"
           },
           "403": {
-            "$ref": "#/components/responses/403"
+            "content": {
+              "application/problem+json": {
+                "examples": {
+                  "Response403TokenCategory": {
+                    "$ref": "#/components/examples/Response403TokenCategory"
+                  },
+                  "Response403TokenType": {
+                    "$ref": "#/components/examples/Response403TokenType"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/Response4XX"
+                }
+              }
+            },
+            "description": "<span class='response__value '>Доступ запрещён</span>"
           },
           "429": {
             "$ref": "#/components/responses/429"
@@ -2129,6 +2276,9 @@
           "402": {
             "$ref": "#/components/responses/402"
           },
+          "403": {
+            "$ref": "#/components/responses/403"
+          },
           "429": {
             "$ref": "#/components/responses/429"
           }
@@ -2176,6 +2326,9 @@
           },
           "402": {
             "$ref": "#/components/responses/402"
+          },
+          "403": {
+            "$ref": "#/components/responses/403"
           },
           "429": {
             "$ref": "#/components/responses/429"
@@ -2245,6 +2398,9 @@
           "402": {
             "$ref": "#/components/responses/402"
           },
+          "403": {
+            "$ref": "#/components/responses/403"
+          },
           "429": {
             "$ref": "#/components/responses/429"
           }
@@ -2311,6 +2467,9 @@
           },
           "402": {
             "$ref": "#/components/responses/402"
+          },
+          "403": {
+            "$ref": "#/components/responses/403"
           },
           "429": {
             "$ref": "#/components/responses/429"
@@ -2449,6 +2608,9 @@
           },
           "402": {
             "$ref": "#/components/responses/402"
+          },
+          "403": {
+            "$ref": "#/components/responses/403"
           },
           "429": {
             "$ref": "#/components/responses/429"

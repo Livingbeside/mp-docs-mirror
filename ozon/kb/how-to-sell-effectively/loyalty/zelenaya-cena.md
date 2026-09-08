@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /how-to-sell-effectively/loyalty/zelenaya-cena
 source: "https://seller-edu.ozon.ru/libra/how-to-sell-effectively/loyalty/zelenaya-cena"
-updated: "2026-05-04 13:01:11"
+updated: "2026-09-07 13:03:55"
 doc_id: 15697
-fetched_at: "2026-08-28T12:11:15Z"
-content_sha: ba42d34d6af3b00f
+fetched_at: "2026-09-08T01:39:31Z"
+content_sha: 6a029018c93e142c
 ---
 
 # Программа лояльности «Зелёная цена»
@@ -52,7 +52,7 @@ _Главная / Продвижение / Работа с лояльность�
 
 # Как посмотреть стоимость товара с «Зелёной ценой»
 
-Перейдите в раздел **[Цены и акции](https://seller.ozon.ru/app/prices/control)**[ → ](https://seller.ozon.ru/app/prices/control)**[Цены на товары](https://seller.ozon.ru/app/prices/control)**. В столбце **Цена для покупателя** указана обычная цена, а под ней — стоимость товара с «Зелёной ценой». Именно эти цены покупатели увидят в карточке товара.
+Перейдите в раздел **[Цены и акции](https://seller.ozon.ru/app/prices/control)**[ → ](https://seller.ozon.ru/app/prices/control)**[Цены на товары](https://seller.ozon.ru/app/prices/control)**. В столбце **Цена на сайте** указана обычная цена, а под ней — стоимость товара с «Зелёной ценой». Именно эти цены покупатели увидят в карточке товара.
 
 # Где посмотреть выплаты за скидки по программе лояльности
 

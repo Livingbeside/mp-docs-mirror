@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /fbs/ozon-logistika/doveritel-naya-priemka-gruzovogo-mesta
 source: "https://seller-edu.ozon.ru/libra/fbs/ozon-logistika/doveritel-naya-priemka-gruzovogo-mesta"
-updated: "2026-08-21 13:28:59"
+updated: "2026-09-07 13:22:30"
 doc_id: 811
-fetched_at: "2026-08-28T12:11:15Z"
-content_sha: 586cb914a9317c24
+fetched_at: "2026-09-08T01:39:31Z"
+content_sha: f5607ef437f8e04b
 ---
 
 # Доверительная приёмка грузового места
@@ -51,8 +51,6 @@ _Главная / Продажа со своего склада (FBS) / Отгр
 [Чермянская (СЦ)](https://seller-edu.ozon.ru/fbs/punkty-priema/moskva#чермянская-мск-чермянская-фбс)
 
 [Волхонское (СЦ)](/fbs/punkty-priema/st-peterburg#%D0%B2%D0%BE%D0%BB%D1%85%D0%BE%D0%BD%D1%81%D0%BA%D0%BE%D0%B5-%D1%81%D1%86)
-
-[Горское (СЦ)](/fbs/punkty-priema/st-peterburg#%D0%B3%D0%BE%D1%80%D1%81%D0%BA%D0%BE%D0%B5-%D1%81%D1%86)
 
 [Порошкино (СЦ)](https://seller-edu.ozon.ru/fbs/punkty-priema/st-peterburg#порошкино-сц)
 

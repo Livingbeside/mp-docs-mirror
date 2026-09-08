@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /fbs/ozon-logistika/otgruzka-kyruery
 source: "https://seller-edu.ozon.ru/libra/fbs/ozon-logistika/otgruzka-kyruery"
-updated: "2026-08-28 15:03:51"
+updated: "2026-09-07 15:57:48"
 doc_id: 810
-fetched_at: "2026-08-29T01:56:39Z"
-content_sha: 43d6307fee749749
+fetched_at: "2026-09-08T01:39:31Z"
+content_sha: 0521afa6de86ee44
 ---
 
 # Отгрузка курьеру на FBS
@@ -24,7 +24,7 @@ _Главная / Продажа со своего склада (FBS) / Отгр
 
 забирать возвраты из точек выдачи.
 
-Курьер заберёт товары прямо с вашего склада и на него же привезёт возвраты. [Подробнее о возвратах](/fbs/orders-cancellations-returns/vozvraty#%D0%BA%D0%B0%D0%BA-%D0%BF%D0%BE%D0%BB%D1%83%D1%87%D0%B8%D1%82%D1%8C-%D0%B2%D0%BE%D0%B7%D0%B2%D1%80%D0%B0%D1%82%D1%8B-%D0%BE%D1%82-%D0%BF%D0%BE%D0%BA%D1%83%D0%BF%D0%B0%D1%82%D0%B5%D0%BB%D0%B5%D0%B8)
+Курьер заберёт товары прямо с вашего склада и на него же привезёт возвраты. Если не примете курьера 2 раза, спишем возврат, а вам нужно будет оплатить[ утилизацию](https://seller-edu.ozon.ru/commissions-tariffs/legal-information/full-actual-commissions#2-8-%D1%83%D1%82%D0%B8%D0%BB%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F-%D1%82%D0%BE%D0%B2%D0%B0%D1%80%D0%BE%D0%B2). [Подробнее о возвратах](/fbs/orders-cancellations-returns/vozvraty#%D0%BA%D0%B0%D0%BA-%D0%BF%D0%BE%D0%BB%D1%83%D1%87%D0%B8%D1%82%D1%8C-%D0%B2%D0%BE%D0%B7%D0%B2%D1%80%D0%B0%D1%82%D1%8B-%D0%BE%D1%82-%D0%BF%D0%BE%D0%BA%D1%83%D0%BF%D0%B0%D1%82%D0%B5%D0%BB%D0%B5%D0%B8)
 
 Отгрузка курьеру пока доступна не во всех городах. Подробные правила закрепили в [регламенте](/contract-for-sellers/regulations-fbs-realfbs/reglament-prodaji-so-svoego-sklada#7-%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D0%BB%D0%B0-%D0%BF%D0%B5%D1%80%D0%B5%D0%B4%D0%B0%D1%87%D0%B8-%D0%BE%D1%82%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B8-%D0%BF%D0%BE-%D1%81%D1%85%D0%B5%D0%BC%D0%B5-pick-up-(%D0%B7%D0%B0%D0%B1%D0%BE%D1%80-%D0%B7%D0%B0%D0%BA%D0%B0%D0%B7%D0%BE%D0%B2-%D0%BA%D1%83%D1%80%D1%8C%D0%B5%D1%80%D0%BE%D0%BC-ozon)).
 

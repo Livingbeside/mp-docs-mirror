@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /work-with-goods/zagruzka-tovarov/perenos-kartochek-tovarov/magazin-kartochek
 source: "https://seller-edu.ozon.ru/libra/work-with-goods/zagruzka-tovarov/perenos-kartochek-tovarov/magazin-kartochek"
-updated: "2026-08-21 13:02:53"
+updated: "2026-09-07 09:58:44"
 doc_id: 28026
-fetched_at: "2026-08-28T12:11:15Z"
-content_sha: abd8341682a07322
+fetched_at: "2026-09-08T01:39:32Z"
+content_sha: 40d637bb9438b099
 ---
 
 # Магазин карточек
@@ -108,8 +108,6 @@ _Главная / Работа с товарами / Создание и ред�
 
 Чтобы посмотреть все ваши карточки в магазине, отредактировать их цену или снять с продажи, перейдите на вкладку **Карточки**.
 
-Для продолжения процесса продажи карточки: просмотр заявок, обсуждение в чате и другое — перейдите в [личный кабинет на сайте](https://seller.ozon.ru/app/items/store?activeTab=requests).
-
 ## Шаг 2. Обсудите с покупателем детали в чате
 
 [В чате](/work-with-goods/zagruzka-tovarov/perenos-kartochek-tovarov/magazin-kartochek#как-общаться-в-чате) вы сможете:
@@ -166,8 +164,6 @@ _Главная / Работа с товарами / Создание и ред�
   
   Сумму за услугу переноса — внесите на баланс личного кабинета.
 5. Нажмите **Создать заявку **—** **отправится к продавцу на подтверждение.
-
-Для продолжения процесса покупки карточки: просмотр статуса заявок, обсуждение в чате и другое — перейдите[ в личный кабинет на сайте](https://seller.ozon.ru/app/items/store?activeTab=requests).
 
 ## Шаг 2. Обсудите с продавцом детали в чате
 

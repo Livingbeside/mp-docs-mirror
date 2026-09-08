@@ -9,7 +9,7 @@ tags:
 spec_version: analytics
 source: "https://dev.wildberries.ru/docs/openapi/analytics"
 deprecated: false
-content_sha: d43bde1de8a08e1c
+content_sha: 159949848fc50020
 ---
 
 # Получить список отчётов
@@ -68,10 +68,10 @@ content_sha: d43bde1de8a08e1c
 
 **403** — Доступ запрещён
 
-- `title` — string. Заголовок ошибки
-- `detail` — string. Детали ошибки
-- `requestId` — string. Уникальный ID запроса
-- `origin` — string. ID внутреннего сервиса WB
+- `title` — string **обязательный**. Заголовок ошибки
+- `detail` — string **обязательный**. Детали ошибки
+- `requestId` — string **обязательный**. Уникальный ID запроса
+- `origin` — string **обязательный**. ID внутреннего сервиса WB
 
 **429** — Слишком много запросов
 
