@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /seller-rating/podpiska-premium-pro
 source: "https://seller-edu.ozon.ru/libra/seller-rating/podpiska-premium-pro"
-updated: "2026-09-07 13:03:36"
+updated: "2026-09-08 08:04:03"
 doc_id: 30502
-fetched_at: "2026-09-08T01:39:31Z"
-content_sha: 7ba551507314ee69
+fetched_at: "2026-09-09T01:49:09Z"
+content_sha: c7bc40a86cb09910
 ---
 
 # Подписка Premium Pro
@@ -46,8 +46,9 @@ Premium Pro — это подписка для продавцов, которы�
 | Скидка 50% на плату за подписку [«Управление отзывами»](https://seller-edu.ozon.ru/seller-rating/podpiska-upravlenie-otzyvami) | − | ✔ |
 | Скидка 10% на плату за [рассылки бонусов продавца](https://seller-edu.ozon.ru/how-to-sell-effectively/loyalty/mailing-bonusy-prodavca) (в том числе и на умную рассылку). | Без ограничений | Без ограничений |
 | 50 000 [сообщений](https://seller-edu.ozon.ru/work-with-byuers/crm/sozdanie-rassylki-i-bannera-v-crm) на постоянных и новых покупателей — 1 сообщение 1 покупателю в месяц | ✔ | ✔ |
-| 5 000 [сообщений](https://seller-edu.ozon.ru/work-with-byuers/crm/sozdanie-rassylki-i-bannera-v-crm) на потенциальных покупателей — 1 сообщение 1 покупателю в месяц | − | ✔ |
-| Автоматические рассылки без бонусов продавца с бюджетом 5 000 ₽ в месяц | − | ✔ |
+| 5 000 [сообщений](https://seller-edu.ozon.ru/work-with-byuers/crm/sozdanie-rassylki-i-bannera-v-crm) на потенциальных покупателей — 1 сообщение 1 покупателю в месяц. | − | ✔ |
+| Автоматические рассылки без бонусов продавца с бюджетом 5 000 ₽ в месяц. | − | ✔ |
+| [Упоминания в социальных медиа](https://seller-edu.ozon.ru/libra/analytics-and-metrics/graphs/upominaniya-v-socmedia). | − | ✔ |
 | Доступ к программному обеспечению «Расширенная Аналитика»: [Продажи моих товаров](https://seller-edu.ozon.ru/analytics-and-metrics/graphs/charts);[Акции](https://seller-edu.ozon.ru/analytics-and-metrics/graphs/promo?tag=%D0%90%D0%BD%D0%B0%D0%BB%D0%B8%D1%82%D0%B8%D0%BA%D0%B0);[Тренды](https://seller-edu.ozon.ru/analytics-and-metrics/analytics-for-premium/trends?tag=%D0%90%D0%BD%D0%B0%D0%BB%D0%B8%D1%82%D0%B8%D0%BA%D0%B0&page=2);[Конкуренты](https://seller-edu.ozon.ru/analytics-and-metrics/analytics-for-premium/competitive-position);[Воронка продаж](https://seller-edu.ozon.ru/analytics-and-metrics/graphs/prodaji/voronka_prodazh);[Категории](https://seller-edu.ozon.ru/analytics-and-metrics/analytics-for-premium/category-comparison);[Товары на Ozon](https://seller-edu.ozon.ru/analytics-and-metrics/what-to-sell/ozon-bestsellers-copy);[Распродано](https://seller-edu.ozon.ru/analytics-and-metrics/what-to-sell/rasprodano). | В расширенной конфигурации, для всех сотрудников | В максимальной конфигурации, для всех сотрудников |
 | Статистика о ваших покупателях и интересных им категориях — в отчёте «[Портрет покупателя](https://seller-edu.ozon.ru/analytics-and-metrics/analytics-for-premium/portret-pokupatelia)». Используйте их, чтобы расширять ассортимент и делать акции эффективнее. | Без ограничений | Без ограничений |
 | Генерация ответа на отзыв с [помощью нейросети](https://seller-edu.ozon.ru/work-with-byuers/buyers-reviews#%D1%81%D0%BE%D0%B7%D0%B4%D0%B0%D1%82%D1%8C-%D0%BE%D1%82%D0%B2%D0%B5%D1%82-%D0%BD%D0%B0-%D0%BE%D1%82%D0%B7%D1%8B%D0%B2-%D1%81-%D0%BF%D0%BE%D0%BC%D0%BE%D1%89%D1%8C%D1%8E-%D0%BD%D0%B5%D0%B8%D1%80%D0%BE%D1%81%D0%B5%D1%82%D0%B8) | − | Без ограничений |

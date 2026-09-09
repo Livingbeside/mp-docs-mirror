@@ -4,8 +4,8 @@ api: wildberries
 kind: changelog
 source: "https://dev.wildberries.ru/release-notes"
 window: последние записи, страница отдаёт не всю историю
-fetched_at: "2026-09-07T02:13:04Z"
-content_sha: be3a5706d1ebce8e
+fetched_at: "2026-09-09T01:53:46Z"
+content_sha: 67ff509de0ace137
 ---
 
 # Журнал изменений WB API
@@ -66,6 +66,50 @@ content_sha: be3a5706d1ebce8e
 
 Сентябрь
 2026
+
+Изменения
+
+## 08.09.2026
+
+Критичное изменение
+
+Работа с товарами
+
+Создание карточек товаров
+
+Карточки товаров
+
+Документы в методах Работы с товарами
+
+Теперь с помощью WB API вы можете указать документы в карточке товара:
+
+- Сертификат соответствия
+- Декларация о соответствии
+- Свидетельство о государственной регистрации (СГР)
+- Регистрационное удостоверение (РУ) на медицинские изделия
+- Регистрационное удостоверение республики Беларусь
+- Данные о регистрации пестицида
+- Данные о регистрации агрохимиката
+- Регистрационное удостоверение (РУ) на лекарственные препараты
+
+Чтобы указать документы в карточке товара, используйте объект `documents` в запросах методов:
+
+- Создание карточек товаров — [POST /content/v2/cards/upload](/docs/openapi/item-management#tag/listingItems/paths/~1content~1v2~1cards~1upload/post)
+- Создание карточек товаров с присоединением — [POST /content/v2/cards/upload/add](/docs/openapi/item-management#tag/listingItems/paths/~1content~1v2~1cards~1upload~1add/post)
+- Редактирование карточек товаров — [POST /content/v2/cards/update](/docs/openapi/item-management#tag/listings/paths/~1content~1v2~1cards~1update/post)
+
+Чтобы получить информацию о документах, указанных в карточке товара, используйте объект `documents` в ответах метода Список карточек товаров — [POST /content/v2/get/cards/list](/docs/openapi/item-management#tag/listings/paths/~1content~1v2~1get~1cards~1list/post).
+
+Передавать документы в массиве `characteristics` теперь можно только:
+
+- если вы ещё ни разу не указывали в запросах объект `documents`
+- если вы не указывали документы в личном кабинете в [обновлённом блоке Документы](https://seller.wildberries.ru/news-v2/news-details?id=13738) в карточке товара
+
+Рекомендуем передавать документы только с помощью объекта `documents`, поскольку, если вы передаёте документы в массиве `characteristics`, эти документы могут быть обработаны некорректно для любых карточек.
+
+Документы, которые уже были в карточках товаров, будут автоматически продублированы в объекте `documents` в ответах метода [POST /content/v2/get/cards/list](/docs/openapi/item-management#tag/listings/paths/~1content~1v2~1get~1cards~1list/post).
+
+Напоминаем, что карточки товаров перезаписываются при обновлении. Поэтому передавайте в запросах метода [POST /content/v2/cards/update](/docs/openapi/item-management#tag/listings/paths/~1content~1v2~1cards~1update/post) в том числе те документы, которые вы не собираетесь обновлять.
 
 Изменения
 
@@ -380,7 +424,7 @@ DBS
 
 Отчёты
 
-Скрытые товары
+Заблокированные карточки
 
 Новая версия Оценки товара и отключение метода Скрытые из каталога
 
@@ -554,27 +598,5 @@ DBS
 - Получить стикеры для сборочных заданий с доставкой в ПВЗ [POST /api/marketplace/v3/dbs/orders/stickers](/docs/openapi/orders-dbs#tag/dbsAssemblyOrders/operation/postV3DbsOrdersStickers)
 
 Теперь эти методы доступны для [зарегистрированных и авторизованных сервисов](/knowledge-base/articles/019dce8b-4233-701b-9318-961cde8b24cd/registratsiia-servisa-na-platforme-wb-api) по базовому токену с секретом.
-
-Изменения
-
-## 25.06.2026
-
-Общее
-
-Управление пользователями продавца
-
-Изменения в методах Управления пользователями продавца
-
-Расширили список разделов личного кабинета, к которым можно настроить доступ сотрудникам:
-
-- `brandzone` — [Бренд-зона. Публикация изменений](https://cmp.wildberries.ru/bz/)
-- `brandzoneSubscribe` — [Управление подпиской бренд-зоны](https://cmp.wildberries.ru/bz/)
-
-Указывайте новые разделы в запросах методов:
-
-- Создать приглашение для нового пользователя [POST /api/v1/invite](/docs/openapi/api-information#tag/sellerUserManagement/operation/postV1Invite)
-- Изменить права доступа пользователей [PUT /api/v1/users/access](/docs/openapi/api-information#tag/sellerUserManagement/operation/putV1UsersAccess)
-
-Обновлённый список разделов можно получить в ответе метода [GET /api/v1/users](/docs/openapi/api-information#tag/sellerUserManagement/operation/getV1Users).
 
 Мы используем [cookies](/privacy) для сбора статистики и улучшения сервиса

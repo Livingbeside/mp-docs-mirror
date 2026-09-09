@@ -761,6 +761,21 @@
                   "weightBrutto": 6,
                   "width": 40
                 },
+                "documents": {
+                  "excludeDocuments": false,
+                  "items": [
+                    {
+                      "applicant": "Тест",
+                      "endDate": "2026-01-14T03:00:00+03:00",
+                      "isEndless": false,
+                      "number": "РОСС RU.АЯ46.В12345",
+                      "productNumber": "УД-2024-001234",
+                      "startDate": "2023-01-15T03:00:00+03:00",
+                      "tradeName": "Тест Продукт",
+                      "type": 1
+                    }
+                  ]
+                },
                 "kizMarked": true,
                 "sizes": [
                   {
@@ -807,6 +822,21 @@
                   "length": 14,
                   "weightBrutto": 0.94,
                   "width": 5
+                },
+                "documents": {
+                  "excludeDocuments": false,
+                  "items": [
+                    {
+                      "applicant": "Тест2",
+                      "endDate": "2026-01-14T03:00:00+03:00",
+                      "isEndless": false,
+                      "number": "РОСС RU.АЯ46.В12346",
+                      "productNumber": "УД-2025-001234",
+                      "startDate": "2023-01-15T03:00:00+03:00",
+                      "tradeName": "Тест Продукт2",
+                      "type": 1
+                    }
+                  ]
                 },
                 "sizes": [
                   {
@@ -858,6 +888,21 @@
                   "weightBrutto": 6.24,
                   "width": 40
                 },
+                "documents": {
+                  "excludeDocuments": false,
+                  "items": [
+                    {
+                      "applicant": "Тест",
+                      "endDate": "2026-01-14T03:00:00+03:00",
+                      "isEndless": false,
+                      "number": "РОСС RU.АЯ46.В12345",
+                      "productNumber": "УД-2024-001234",
+                      "startDate": "2023-01-15T03:00:00+03:00",
+                      "tradeName": "Тест Продукт",
+                      "type": 1
+                    }
+                  ]
+                },
                 "kizMarked": true,
                 "sizes": [
                   {
@@ -899,6 +944,21 @@
                   "length": 55,
                   "weightBrutto": 6.241,
                   "width": 40
+                },
+                "documents": {
+                  "excludeDocuments": false,
+                  "items": [
+                    {
+                      "applicant": "Тест2",
+                      "endDate": "2026-01-14T03:00:00+03:00",
+                      "isEndless": false,
+                      "number": "РОСС RU.АЯ46.В123",
+                      "productNumber": "УД-2025-001234",
+                      "startDate": "2023-01-15T03:00:00+03:00",
+                      "tradeName": "Тест Продукт2",
+                      "type": 1
+                    }
+                  ]
                 },
                 "sizes": [
                   {
@@ -946,6 +1006,21 @@
                   "length": 12,
                   "weightBrutto": 1.242,
                   "width": 7
+                },
+                "documents": {
+                  "excludeDocuments": false,
+                  "items": [
+                    {
+                      "applicant": "Тест",
+                      "endDate": "2026-01-14T03:00:00+03:00",
+                      "isEndless": false,
+                      "number": "РОСС RU.АЯ46.В12345",
+                      "productNumber": "УД-2024-001234",
+                      "startDate": "2023-01-15T03:00:00+03:00",
+                      "tradeName": "Тест Продукт",
+                      "type": 1
+                    }
+                  ]
                 },
                 "kizMarked": true,
                 "sizes": [
@@ -3296,6 +3371,45 @@
         ],
         "type": "object"
       },
+      "documentsRequest": {
+        "properties": {
+          "applicant": {
+            "description": "Представитель изготовителя медицинского изделия",
+            "type": "string"
+          },
+          "endDate": {
+            "description": "Дата и время окончания срока действия документа",
+            "format": "date-time",
+            "type": "string"
+          },
+          "isEndless": {
+            "description": "Бессрочный ли документ:\n  - `true` — да, документ бессрочный\n  - `false` — нет, у документа есть срок действия\n",
+            "type": "boolean"
+          },
+          "number": {
+            "description": "Номер документа",
+            "type": "string"
+          },
+          "productNumber": {
+            "description": "Дополнительный номер документа",
+            "type": "string"
+          },
+          "startDate": {
+            "description": "Дата и время начала срока действия документа",
+            "format": "date-time",
+            "type": "string"
+          },
+          "tradeName": {
+            "description": "Торговое наименование",
+            "type": "string"
+          },
+          "type": {
+            "description": "Тип документа:\n  - `1` — Сертификат соответствия\n  - `2` — Декларация о соответствии\n  - `3` — Свидетельство о государственной регистрации (СГР)\n  - `4` — Регистрационное удостоверение (РУ) на медицинские изделия\n  - `5` — Регистрационное удостоверение Республики Беларусь\n  - `7` — Данные о регистрации пестицида\n  - `8` — Данные о регистрации агрохимиката\n  - `9` — Регистрационное удостоверение (РУ) на лекарственные препараты\n",
+            "type": "integer"
+          }
+        },
+        "type": "object"
+      },
       "mediaErrors": {
         "example": {
           "additionalErrors": null,
@@ -3430,6 +3544,16 @@
           "updatedAt"
         ],
         "type": "object"
+      },
+      "reasonDocument": {
+        "description": "Ошибка при проверке, возвращается для `status: 2`. <br>\nВозможные значения:\n  - `document_missing` — Документ не загружен\n  - `document_not_found` — Документ не найден в реестре\n  - `document_inactive` — У документа нет юридической силы\n  - `document_expired` — Истёк срок действия документа\n  - `applicant_mismatch` — Данные заявителя в документе и карточке различаются\n  - `trade_name_mismatch` — Торговое наименование в карточке отличается от документа\n  - `unknown` — Проверка не пройдена\n  - `document_type_mismatch` — Номер документа не соответствует указанному типу документа\n  - `document_dates_mismatch` — Неверная дата регистрации или окончания действия документа\n",
+        "nullable": true,
+        "type": "string"
+      },
+      "reasonListing": {
+        "description": "Ошибка при проверке, возвращается для `status: 2`. <br>\nВозможные значения:\n  - `tnved_missing` — Не указан код ТН ВЭД\n  - `supplier_inn_missing` — Не указан ИНН\n  - `supplier_not_registered` — Поставщик не найден в реестре\n  - `supplier_inactive` — Ошибка в статусе поставщика, проверьте его в реестре\n  - `product_group_not_registered` — Добавлена неверная товарная группа в системе маркировки\n  - `kiz_required` — Этот товар нельзя продавать в России без кода маркировки Честного Знака\n  - `kiz_certificate_missing` — Нет подтверждения, что на товар нанесена необходимая маркировка\n",
+        "nullable": true,
+        "type": "string"
       },
       "requestMoveNmsImtConn": {
         "properties": {
@@ -7344,6 +7468,37 @@
                       },
                       "type": "object"
                     },
+                    "documents": {
+                      "description": "Документы",
+                      "properties": {
+                        "excludeDocuments": {
+                          "default": false,
+                          "description": "Исключить ли документы из проверки:\n  - `true` — да, не проверять документы при проверке карточки товара. При `true` все значения, переданные в `documents`, будут заменены на пустые значения\n  - `false` — нет, проверять документы при проверке карточки товара\n",
+                          "type": "boolean"
+                        },
+                        "items": {
+                          "description": "Список документов",
+                          "items": {
+                            "allOf": [
+                              {
+                                "properties": {
+                                  "id": {
+                                    "description": "ID документа",
+                                    "type": "string"
+                                  }
+                                },
+                                "type": "object"
+                              },
+                              {
+                                "$ref": "#/components/schemas/documentsRequest"
+                              }
+                            ]
+                          },
+                          "type": "array"
+                        }
+                      },
+                      "type": "object"
+                    },
                     "kizMarked": {
                       "default": false,
                       "description": "Подтверждение, что на товар нанесён обязательный код маркировки [Честного знака](https://честныйзнак.рф/):\n  - `true` — продавец подтверждает, что на товар нанесён обязательный код маркировки.\n  - `false` — продавец подтверждает, что на товар нанесён обязательный код маркировки. Передайте в запросе `true`, чтобы подтвердить наличие на товаре обязательного кода маркировки. Карточка товара не пройдёт модерацию, если нет подтверждения продавца о том, что обязательный код маркировки нанесён на товар.\n\nЧтобы проверить, является ли код маркировки [Честного знака](https://честныйзнак.рф/) обязательным, используйте метод [Список карточек товаров](./work-with-products#tag/listings/paths/~1content~1v2~1get~1cards~1list/post), поле ответа `needKiz`\n",
@@ -7622,6 +7777,24 @@
                             },
                             "type": "object"
                           },
+                          "documents": {
+                            "description": "Документы",
+                            "properties": {
+                              "excludeDocuments": {
+                                "default": false,
+                                "description": "Исключить ли документы из проверки:\n  - `true` — да, не проверять документы при проверке карточки товара. При `true` все значения, переданные в `documents`, будут заменены на пустые значения\n  - `false` — нет, проверять документы при проверке карточки товара\n",
+                                "type": "boolean"
+                              },
+                              "items": {
+                                "description": "Список документов",
+                                "items": {
+                                  "$ref": "#/components/schemas/documentsRequest"
+                                },
+                                "type": "array"
+                              }
+                            },
+                            "type": "object"
+                          },
                           "kizMarked": {
                             "default": false,
                             "description": "Подтверждение, что на товар нанесён обязательный код маркировки [Честного знака](https://честныйзнак.рф/):\n  - `true` — продавец подтверждает, что на товар нанесён обязательный код маркировки.\n  - `false` — продавец не подтверждает, что на товар нанесён обязательный код маркировки. Передайте в запросе `true`, чтобы подтвердить наличие на товаре обязательного кода маркировки. Карточка товара не пройдёт модерацию, если нет подтверждения продавца о том, что обязательный код маркировки нанесён на товар.\n\nЧтобы проверить, является ли код маркировки [Честного знака](https://честныйзнак.рф/) обязательным, используйте метод [Список карточек товаров](./work-with-products#tag/listings/paths/~1content~1v2~1get~1cards~1list/post), поле ответа `needKiz`\n",
@@ -7862,6 +8035,21 @@
                       "weightBrutto": 0.893,
                       "width": 6
                     },
+                    "documents": {
+                      "excludeDocuments": false,
+                      "items": [
+                        {
+                          "applicant": "ООО Ромашка",
+                          "endDate": "2026-01-14T03:00:00+03:00",
+                          "isEndless": false,
+                          "number": "РОСС RU.АЯ46.В12346",
+                          "productNumber": "УД-2024-001235",
+                          "startDate": "2023-01-15T03:00:00+03:00",
+                          "tradeName": "Тест Продукт2",
+                          "type": 1
+                        }
+                      ]
+                    },
                     "kizMarked": true,
                     "sizes": [
                       {
@@ -7903,6 +8091,21 @@
                       "length": 8,
                       "weightBrutto": 1.04,
                       "width": 8
+                    },
+                    "documents": {
+                      "excludeDocuments": false,
+                      "items": [
+                        {
+                          "applicant": "ООО Ромашка",
+                          "endDate": "2026-01-14T03:00:00+03:00",
+                          "isEndless": false,
+                          "number": "РОСС RU.АЯ46.В12345",
+                          "productNumber": "УД-2024-001234",
+                          "startDate": "2023-01-15T03:00:00+03:00",
+                          "tradeName": "Тест Продукт",
+                          "type": 1
+                        }
+                      ]
                     },
                     "sizes": [
                       {
@@ -7971,6 +8174,24 @@
                             "width": {
                               "description": "Ширина, см",
                               "type": "integer"
+                            }
+                          },
+                          "type": "object"
+                        },
+                        "documents": {
+                          "description": "Документы",
+                          "properties": {
+                            "excludeDocuments": {
+                              "default": false,
+                              "description": "Исключить ли документы из проверки:\n  - `true` — да, не проверять документы при проверке карточки товара. При `true` все значения, переданные в `documents`, будут заменены на пустые значения\n  - `false` — нет, проверять документы при проверке карточки товара\n",
+                              "type": "boolean"
+                            },
+                            "items": {
+                              "description": "Список документов",
+                              "items": {
+                                "$ref": "#/components/schemas/documentsRequest"
+                              },
+                              "type": "array"
                             }
                           },
                           "type": "object"
@@ -9083,6 +9304,36 @@
                         "weightBrutto": 6.24,
                         "width": 40
                       },
+                      "documents": {
+                        "excludeDocuments": false,
+                        "items": [
+                          {
+                            "applicant": "Applicant Name",
+                            "createdAt": "2026-05-28T18:09:25.394692+03:00",
+                            "endDate": "2026-01-14T03:00:00+03:00",
+                            "id": "019f3c09-8c1f-7063-aee4-c45969fb2dc5",
+                            "number": "123456",
+                            "productNumber": "123456",
+                            "quantity": 100,
+                            "startDate": "2023-01-15T03:00:00+03:00",
+                            "tradeName": "Trade Name",
+                            "type": 1,
+                            "verdict": {
+                              "additionalData": null,
+                              "createdAt": "2026-05-28T18:10:43.375306+03:00",
+                              "reason": null,
+                              "status": 1,
+                              "verified": true
+                            }
+                          }
+                        ],
+                        "overallVerdict": {
+                          "createdAt": "2026-05-28T18:19:19.99444+03:00",
+                          "isFullyChecked": true,
+                          "reason": null,
+                          "status": 1
+                        }
+                      },
                       "imtID": 123654789,
                       "kizMarked": true,
                       "needKiz": false,
@@ -9191,6 +9442,129 @@
                               "width": {
                                 "description": "Ширина, см",
                                 "type": "integer"
+                              }
+                            },
+                            "type": "object"
+                          },
+                          "documents": {
+                            "description": "Документы",
+                            "properties": {
+                              "excludeDocuments": {
+                                "description": "Исключены ли документы из проверки карточки товара:\n  - `true` — да, документы не проверяются при проверке карточки\n  - `false` — нет, документы проверяются при проверке карточки\n",
+                                "type": "boolean"
+                              },
+                              "items": {
+                                "description": "Список документов",
+                                "items": {
+                                  "properties": {
+                                    "applicant": {
+                                      "description": "Представитель изготовителя медицинского изделия",
+                                      "type": "string"
+                                    },
+                                    "createdAt": {
+                                      "description": "Дата добавления документа",
+                                      "format": "date-time",
+                                      "type": "string"
+                                    },
+                                    "endDate": {
+                                      "description": "Дата и время окончания срока действия документа",
+                                      "format": "date-time",
+                                      "type": "string"
+                                    },
+                                    "id": {
+                                      "description": "ID документа",
+                                      "type": "string"
+                                    },
+                                    "isEndless": {
+                                      "description": "Бессрочный ли документ:\n  - `true` — да, документ бессрочный\n  - `false` — нет, у документа есть срок действия\n",
+                                      "type": "boolean"
+                                    },
+                                    "number": {
+                                      "description": "Номер документа",
+                                      "type": "string"
+                                    },
+                                    "productNumber": {
+                                      "description": "Дополнительный номер документа",
+                                      "type": "string"
+                                    },
+                                    "quantity": {
+                                      "description": "Количество товаров по электронному сертификату",
+                                      "type": "integer"
+                                    },
+                                    "startDate": {
+                                      "description": "Дата и время начала срока действия документа",
+                                      "format": "date-time",
+                                      "type": "string"
+                                    },
+                                    "tradeName": {
+                                      "description": "Торговое наименование",
+                                      "type": "string"
+                                    },
+                                    "type": {
+                                      "description": "Тип документа:\n  - `1` — Сертификат соответствия\n  - `2` — Декларация о соответствии\n  - `3` — Свидетельство о государственной регистрации (СГР)\n  - `4` — Регистрационное удостоверение (РУ) на медицинские изделия\n  - `5` — Регистрационное удостоверение Республики Беларусь\n  - `7` — Данные о регистрации пестицида\n  - `8` — Данные о регистрации агрохимиката\n  - `9` — Регистрационное удостоверение (РУ) на лекарственные препараты\n",
+                                      "type": "integer"
+                                    },
+                                    "verdict": {
+                                      "description": "Результат проверки документа. Возвращается, когда проверка завершена",
+                                      "properties": {
+                                        "additionalData": {
+                                          "description": "Дополнительная информация",
+                                          "nullable": true,
+                                          "type": "object"
+                                        },
+                                        "createdAt": {
+                                          "description": "Дата проверки документа",
+                                          "format": "date-time",
+                                          "type": "string"
+                                        },
+                                        "reason": {
+                                          "allOf": [
+                                            {
+                                              "$ref": "#/components/schemas/reasonDocument"
+                                            }
+                                          ]
+                                        },
+                                        "status": {
+                                          "description": "Результат проверки документа:\n  - `1` — проверка пройдена\n  - `2` — проверка не пройдена\n",
+                                          "type": "integer"
+                                        },
+                                        "verified": {
+                                          "description": "- `true` — документ проверен\n- `false` — документ не проверен\n",
+                                          "type": "boolean"
+                                        }
+                                      },
+                                      "type": "object"
+                                    }
+                                  },
+                                  "type": "object"
+                                },
+                                "type": "array"
+                              },
+                              "overallVerdict": {
+                                "description": "Результат проверки карточки товара. Возвращается, когда проверка завершена",
+                                "properties": {
+                                  "createdAt": {
+                                    "description": "Дата и время проверки карточки товара",
+                                    "format": "date-time",
+                                    "type": "string"
+                                  },
+                                  "isFullyChecked": {
+                                    "description": "- `true` — карточка товара проверена\n- `false` — карточка товара не проверена\n",
+                                    "type": "boolean"
+                                  },
+                                  "reason": {
+                                    "allOf": [
+                                      {
+                                        "$ref": "#/components/schemas/reasonListing"
+                                      }
+                                    ]
+                                  },
+                                  "status": {
+                                    "description": "Результат проверки карточки товара:\n  - `1` — проверка пройдена\n  - `2` — проверка не пройдена\n",
+                                    "type": "integer"
+                                  }
+                                },
+                                "type": "object"
                               }
                             },
                             "type": "object"

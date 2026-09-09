@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /fbs/ozon-logistika/doveritel-naya-priemka-gruzovogo-mesta
 source: "https://seller-edu.ozon.ru/libra/fbs/ozon-logistika/doveritel-naya-priemka-gruzovogo-mesta"
-updated: "2026-09-07 13:22:30"
+updated: "2026-09-08 11:56:13"
 doc_id: 811
-fetched_at: "2026-09-08T01:39:31Z"
-content_sha: f5607ef437f8e04b
+fetched_at: "2026-09-09T01:49:09Z"
+content_sha: e911dbdba856c581
 ---
 
 # Доверительная приёмка грузового места
@@ -39,6 +39,8 @@ _Главная / Продажа со своего склада (FBS) / Отгр
 [Замоскворечье (СЦ)](/fbs/punkty-priema/moskva#%D0%B7%D0%B0%D0%BC%D0%BE%D1%81%D0%BA%D0%B2%D0%BE%D1%80%D0%B5%D1%87%D1%8C%D0%B5-%D0%BC%D0%BE-%D0%B7%D0%B0%D0%BC%D0%BE%D1%81%D0%BA%D0%B2%D0%BE%D1%80%D0%B5%D1%87%D1%8C%D0%B5-%D1%84%D0%B1%D1%81)
 
 [Кавказский (СЦ)](https://seller-edu.ozon.ru/fbs/punkty-priema/moskva#кавказскии-мск-кавказскии-2-хаб)
+
+[Ленинградский (СЦ)](https://seller-edu.ozon.ru/fbs/punkty-priema/moskva#ленинградскии-мо-ленинградскии-2-хаб)
 
 [Молжаниново (СЦ)](https://seller-edu.ozon.ru/fbs/punkty-priema/moskva#молжаниново-мск-молжаниново-3-хаб)
 

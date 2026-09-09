@@ -9,7 +9,7 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: 0d33c5afccea0338
+content_sha: c32460248907d54b
 ---
 
 # Получить параметры для создания сертификата качества
@@ -32,7 +32,7 @@ content_sha: 0d33c5afccea0338
 **200** — Параметры для создания сертификата
 
 - `option` — array[object]. Параметры для создания сертификата.
-  - `name` — string. Название параметра сертификата: - `NAME` — название; - `CERTIFICATE_TYPE` — тип; - `NUMBER` — номер; - `FILES` — файл с сертификатом в кодировке Base64; - `CERTIFICATE_COUNTRY` — страна выдачи; - `ACCORDANCE_TYPE` — тип соответствия требованиям; - `SKUS` — список идентификаторов товара в системе Ozon, SKU; - `ISSUE_DATE` — дата выпуска; - `EXPIRED_DATE` — дата истечения; - `LINK_TO_REGISTRY` — ссылка на государственный реестр; - `PRODUCT_TYPE` — тип товаров; - `INFINITE` — бессрочность.
+  - `name` — string. Название параметра сертификата: - `NAME` — название; - `CERTIFICATE_TYPE` — тип; - `NUMBER` — номер; - `FILES` — файл с сертификатом в кодировке Base64; - `CERTIFICATE_COUNTRY` — страна выдачи; - `ACCORDANCE_TYPE` — стандарт сертификации; - `SKUS` — список идентификаторов товара в системе Ozon, SKU; - `ISSUE_DATE` — дата выпуска; - `EXPIRED_DATE` — дата истечения; - `LINK_TO_REGISTRY` — ссылка на государственный реестр; - `PRODUCT_TYPE` — тип товаров; - `INFINITE` — бессрочность.
   - `required` — boolean. `true`, если параметр обязательный.
 
 **400** — Неверный параметр

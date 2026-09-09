@@ -5,7 +5,7 @@ tag: Process
 group: Общее описание
 kind: guide
 source: "https://docs.ozon.ru/api/seller/"
-content_sha: b09a99711c43d910
+content_sha: 4dec4662f3e877a4
 ---
 
 # Порядок работы с методами
@@ -565,13 +565,6 @@ Ozon, товар не будет создан или обновлён.
 используйте [/v2/posting/fbs/product/cancel](#operation/PostingAPI_CancelFbsPostingProduct).
 
 Если отправление отменит покупатель, статус изменится на `cancelled`.
-
-### Работа с эконом-товарами
-
-1. Создайте эконом-товары в [личном кабинете](https://seller.ozon.ru/app/econom/products).
-2. Получите идентификаторы квантов с созданными товарами: [/v1/product/quant/list](#operation/QuantProductList).
-
-[Подробнее об эконом-товарах в Справке](https://seller-edu.ozon.ru/tarif-ekonom)
 
 ## Схема FBS с электронными ТТН
 

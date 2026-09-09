@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /fbo/process-details/informaciya-ob-avtomobile-i-voditele
 source: "https://seller-edu.ozon.ru/libra/fbo/process-details/informaciya-ob-avtomobile-i-voditele"
-updated: "2026-04-09 11:15:37"
+updated: "2026-09-08 07:37:07"
 doc_id: 778
-fetched_at: "2026-08-28T12:11:15Z"
-content_sha: daa7a31b38c5a7e0
+fetched_at: "2026-09-09T01:49:09Z"
+content_sha: f191f0eeb2ac1d8d
 ---
 
 # Информация об автомобиле и водителе
@@ -39,4 +39,8 @@ _Главная / Продажа со склада Ozon (FBO) / Заявки н�
 
 Будьте на связи с транспортной компанией. Если она поменяла водителя или автомобиль, оперативно укажите новые данные в заявке на поставку.
 
-Если транспортная компания не привезла поставку вовремя, на точке отгрузки могут отказать в приёмке. Поэтому советуем при заключении договора обговаривать [условия поставки на склады Ozon](https://seller-edu.ozon.ru/contract-for-sellers/regulations-fbo/reglament-postavok-na-fulfilment), а в случае нарушений — требуйте выплатить неустойку.
+Если транспортная компания не привезла поставку вовремя, на точке отгрузки могут отказать в приёмке. Поэтому советуем при заключении договора обговаривать [условия поставки на склады Ozon](https://seller-edu.ozon.ru/contract-for-sellers/regulations-fbo/reglament-postavok-na-fulfilment), а в случае нарушений — требуйте выплатить неустойку
+
+# Можно ли привезти несколько поставок в одном автомобиле
+
+Вы можете привезти несколько поставок в одном автомобиле, но они должны быть чётко разделены между собой.

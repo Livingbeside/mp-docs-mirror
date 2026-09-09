@@ -5,12 +5,24 @@ tag: News
 group: Обновления
 kind: changelog
 source: "https://docs.ozon.ru/api/seller/"
-content_sha: 95253b6104077e2a
+content_sha: ff4fd71648c2e127
 ---
 
 # Обновления
 
 Следите за обновлениями документации на платформе для разработчиков [Ozon for dev](https://dev.ozon.ru/).
+
+## 8 сентября 2026
+
+| Метод | Изменение |
+|--------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------|
+| [/v2/review/list](#operation/ReviewListV2) | Обновили пример запроса и ответа метода. |
+| [/v1/analytics/stocks](#operation/AnalyticsAPI_AnalyticsStocks) | Обновили описание метода. |
+| [/v2/product/certification/options](#operation/ProductCertificateOptions) | Обновили описание параметра `option.name` в ответе метода. |
+| [/v2/product/certification/params](#operation/ProductCertificateParams)<br>[/v2/product/certificate/create](#operation/ProductCertificateCreate) | Обновили описание параметра `params.accordance_type` в запросе методов.<br>Обновили описание параметра `params.name` в ответе методов. |
+| /v1/product/quant/list<br>/v1/product/quant/info | Тариф «Эконом» отключён, удалили методы из документации. |
+| [/v1/product/pictures/import](#operation/ProductAPI_ProductImportPictures) | Обновили описание параметра `images` в запросе метода.<br>Обновили описание метода. |
+| [/v3/product/import](#operation/ProductAPI_ImportProductsV3)<br>[/v2/product/pictures/import](#operation/ProductImportPicturesV2) | Обновили описание параметра `items.images` в запросе методов.<br>Обновили описание методов. |
 
 ## 7 сентября 2026
 
@@ -659,7 +671,7 @@ content_sha: 95253b6104077e2a
 | [/v1/report/postings/create](#operation/ReportAPI_CreateCompanyPostingsReport) | Пометили обязательными параметры `filter.processed_at_from` и `filter.processed_at_to` в запросе метода. |
 | [/v1/report/marked-products-sales/create](#operation/CreateCompanyMarkedProductsSalesReport) | Пометили обязательными параметры `date.from` и `date.to` в запросе метода. |
 | [/v1/finance/document-b2b-sales](#operation/ReportAPI_CreateDocumentB2BSalesReport)<br>[/v1/finance/document-b2b-sales/json](#operation/ReportAPI_CreateDocumentB2BSalesJSONReport)<br>[/v1/finance/mutual-settlement](#operation/ReportAPI_CreateMutualSettlementReport) | Пометили обязательным параметр `date` в запросе методов. |
-| [/v1/product/info/wrong-volume](#operation/ProductAPI_ProductInfoWrongVolume)<br>[/v1/product/quant/list](#operation/QuantProductList)<br>[/v1/warehouse/fbs/pickup/history/list](#operation/WarehouseFbsPickUpHistoryList) | Пометили обязательным параметр `limit` в запросе методов. |
+| [/v1/product/info/wrong-volume](#operation/ProductAPI_ProductInfoWrongVolume)<br>/v1/product/quant/list<br>[/v1/warehouse/fbs/pickup/history/list](#operation/WarehouseFbsPickUpHistoryList) | Пометили обязательным параметр `limit` в запросе методов. |
 | [/v1/product/stairway-discount/by-quantity/set](#operation/ProductAPI_SetProductStairwayDiscountByQuantity) | Пометили обязательными параметры `stairways`, `stairways.enabled`, `stairways.sku`, `stairways.stairway`, `stairways.stairway.steps`, `stairways.stairway.steps.discount`, `stairways.stairway.steps.quantity` и `stairways.stairway.steps.step` в запросе метода. |
 | [/v1/product/stairway-discount/by-quantity/get](#operation/ProductAPI_GetProductStairwayDiscountByQuantity)<br>[/v1/product/placement-zone/info](#operation/ProductAPI_GetProductPlacementZoneInfo)<br>[/v1/product/prices/details](#operation/ProductPricesDetails) | Пометили обязательным параметр `skus` в запросе методов. |
 | [/v2/draft/supply/create](#operation/DraftSupplyCreate) | Пометили обязательными параметры `timeslot`, `timeslot.from_in_timezone` и `timeslot.to_in_timezone` в запросе метода. |
@@ -1409,7 +1421,7 @@ content_sha: 95253b6104077e2a
 | [/v1/cargoes/rules/get](#operation/CargoesAPI_CargoesRulesGet) <br> [/v1/cargoes/delete](#operation/CargoesAPI_CargoesDelete) <br> [/v1/cargoes/delete/status](#operation/CargoesAPI_CargoesDeleteStatus) <br> [/v1/supply-order/content/update](#operation/SupplyOrderAPI_SupplyOrderContentUpdate) <br> [/v1/supply-order/content/update/status](#operation/SupplyOrderAPI_SupplyOrderContentUpdateStatus) <br> [/v1/returns/rfbs/action/set](#operation/ReturnsAPI_ReturnsRfbsActionSet) | Перенесли методы из бета-раздела в основной. |
 | — | В разделе [**Порядок работы с методами → Управляйте заявками на возврат rFBS-заказов**](#section/Upravlyajte-zayavkami-na-vozvrat-rFBS-zakazov) обновили описание работы с методами. |
 | /v1/draft/create/info | Обновили описание параметра `operation_id` в запросе метода.<br>Удалили параметры `clusters.warehouses.warehouse_id`, `clusters.warehouses.address` и `clusters.warehouses.name` из ответа метода. |
-| [/v1/question/answer/list](#operation/QuestionAnswer_List)<br>[/v1/brand/company-certification/list](#operation/BrandAPI_BrandCompanyCertificationList)<br>[/v3/posting/fbs/list](#operation/PostingAPI_GetFbsPostingListV3)<br>[/v1/report/list](#operation/ReportAPI_ReportList)<br>[/v1/supply-order/bundle](#operation/SupplyOrderBundle)<br>[/v1/delivery-method/list](#operation/WarehouseAPI_DeliveryMethodList)<br>[/v1/description-category/attribute/values/search](#operation/DescriptionCategoryAPI_SearchAttributeValues)<br>[/v4/product/info/stocks](#operation/ProductAPI_GetProductInfoStocks)<br>[/v1/actions/discounts-task/list](#operation/promos_task_list)<br>[/v2/product/certification/list](#operation/ProductAPI_ProductCertificationList)<br>[/v1/product/certificate/list](#operation/CertificateList)<br>[/v1/product/certificate/products/list](#operation/CertificateProductsList)<br>[/v1/pass/list](#operation/PassList)<br>[/v2/returns/rfbs/list](#operation/RFBSReturnsAPI_ReturnsRfbsListV2)<br>[/v1/returns/company/fbs/info](#operation/returnsCompanyFBSInfo)<br>[/v1/return/giveout/list](#operation/ReturnAPI_GiveoutList)<br>[/v1/analytics/product-queries](#operation/AnalyticsAPI_AnalyticsProductQueries)<br>[/v1/analytics/product-queries/details](#operation/AnalyticsAPI_AnalyticsProductQueriesDetails)<br>[/v1/product/info/wrong-volume](#operation/ProductAPI_ProductInfoWrongVolume)<br>[/v1/product/quant/list](#operation/QuantProductList)<br>/v1/quant/list<br>[/v1/review/comment/list](#operation/ReviewAPI_CommentList)<br>[/v1/review/list](#operation/ReviewAPI_ReviewList)<br>[/v1/question/list](#operation/Question_List)<br>/v2/supply-order/list | Обновили примеры запросов. |
+| [/v1/question/answer/list](#operation/QuestionAnswer_List)<br>[/v1/brand/company-certification/list](#operation/BrandAPI_BrandCompanyCertificationList)<br>[/v3/posting/fbs/list](#operation/PostingAPI_GetFbsPostingListV3)<br>[/v1/report/list](#operation/ReportAPI_ReportList)<br>[/v1/supply-order/bundle](#operation/SupplyOrderBundle)<br>[/v1/delivery-method/list](#operation/WarehouseAPI_DeliveryMethodList)<br>[/v1/description-category/attribute/values/search](#operation/DescriptionCategoryAPI_SearchAttributeValues)<br>[/v4/product/info/stocks](#operation/ProductAPI_GetProductInfoStocks)<br>[/v1/actions/discounts-task/list](#operation/promos_task_list)<br>[/v2/product/certification/list](#operation/ProductAPI_ProductCertificationList)<br>[/v1/product/certificate/list](#operation/CertificateList)<br>[/v1/product/certificate/products/list](#operation/CertificateProductsList)<br>[/v1/pass/list](#operation/PassList)<br>[/v2/returns/rfbs/list](#operation/RFBSReturnsAPI_ReturnsRfbsListV2)<br>[/v1/returns/company/fbs/info](#operation/returnsCompanyFBSInfo)<br>[/v1/return/giveout/list](#operation/ReturnAPI_GiveoutList)<br>[/v1/analytics/product-queries](#operation/AnalyticsAPI_AnalyticsProductQueries)<br>[/v1/analytics/product-queries/details](#operation/AnalyticsAPI_AnalyticsProductQueriesDetails)<br>[/v1/product/info/wrong-volume](#operation/ProductAPI_ProductInfoWrongVolume)<br>/v1/product/quant/list<br>/v1/quant/list<br>[/v1/review/comment/list](#operation/ReviewAPI_CommentList)<br>[/v1/review/list](#operation/ReviewAPI_ReviewList)<br>[/v1/question/list](#operation/Question_List)<br>/v2/supply-order/list | Обновили примеры запросов. |
 
 ## 19 июня 2025
 

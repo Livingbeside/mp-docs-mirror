@@ -2,9 +2,9 @@
 title: Документация Ozon Seller API — все методы
 api: ozon-seller
 spec_version: 2.1
-operations: 467
+operations: 465
 source: "https://docs.ozon.ru/api/seller/"
-content_sha: 0955e3582908de55
+content_sha: d4fd5328d6941b48
 ---
 
 # Документация Ozon Seller API
@@ -18,7 +18,7 @@ content_sha: 0955e3582908de55
 
 > [Информационная платформа и сообщество разработчиков Ozon for dev](https://dev.ozon.ru/)
 
-Версия спеки: `2.1` · методов: **467** · разделов справки: **26**
+Версия спеки: `2.1` · методов: **465** · разделов справки: **26**
 
 Источник: https://docs.ozon.ru/api/seller/
 
@@ -262,8 +262,6 @@ content_sha: 0955e3582908de55
 | `POST` | `/v1/product/pictures/import` | ProductAPI | [Загрузить или обновить изображения товара](productapi/post-v1-product-pictures-import.md) |
 | `POST` | `/v1/product/placement-zone/info` | CategoryAPI | [Получить зоны размещения товаров по SKU перед поставкой](categoryapi/post-v1-product-placement-zone-info.md) |
 | `POST` | `/v1/product/prices/details` | Premium | [Получить подробную информацию о ценах товаров](premium/post-v1-product-prices-details.md) |
-| `POST` | `/v1/product/quant/info` | Quants | [Информация об эконом-товаре](quants/post-v1-product-quant-info.md) |
-| `POST` | `/v1/product/quant/list` | Quants | [Список эконом-товаров](quants/post-v1-product-quant-list.md) |
 | `POST` | `/v1/product/rating-by-sku` | ProductAPI | [Получить контент-рейтинг товаров по SKU](productapi/post-v1-product-rating-by-sku.md) |
 | `POST` | `/v1/product/related-sku/get` | ProductAPI | [Получить связанные SKU](productapi/post-v1-product-related-sku-get.md) |
 | `POST` | `/v1/product/stairway-discount/by-quantity/get` | BetaMethod | [Получить информацию о скидке от количества](betamethod/post-v1-product-stairway-discount-by-quantity-get.md) |

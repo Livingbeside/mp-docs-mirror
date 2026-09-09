@@ -9,7 +9,7 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: 8601751214a56ec9
+content_sha: edd4c43464ff4157
 ---
 
 # Получить обязательные параметры для создания сертификата качества
@@ -32,7 +32,7 @@ content_sha: 8601751214a56ec9
 **Тело запроса** (`application/json`):
 
 - `params` — object. Параметры для создания сертификата.
-  - `accordance_type` — string (UNKNOWN, EAEU, NATIONAL, TECHNICAL_REGULATIONS_RF, TECHNICAL_REGULATIONS_CU, GOST, CHEMICAL_PRODUCTS, SAFETY_DATA_SHEET, REJECTION_LETTER). Тип соответствия требованиям из метода [/v2/product/certificate/accordance-types/list](#operation/CertificateAccordanceTypes): - `UNKNOWN` — неизвестный; - `EAEU` — стандарт сертификации ЕАЭС; - `NATIONAL` — национальный стандарт сертификации; - `TECHNICAL_REGULATIONS_RF` — технический регламент Российской Федерации; - `TECHNICAL_REGULATIONS_CU` — технический регламент Таможенного союза; - `GOST` — ГОСТ; - `CHEMICAL_PRODUCTS` — паспорт безопасности химической продукции; - `SAFETY_DATA_SHEET` — паспорт безопасности; - `REJECTION_LETTER` — отказное письмо.
+  - `accordance_type` — string (UNKNOWN, EAEU, NATIONAL, TECHNICAL_REGULATIONS_RF, TECHNICAL_REGULATIONS_CU, GOST, CHEMICAL_PRODUCTS, SAFETY_DATA_SHEET, REJECTION_LETTER). Стандарт сертификации: - `UNKNOWN` — неизвестный; - `EAEU` — стандарт сертификации ЕАЭС; - `NATIONAL` — национальный стандарт сертификации; - `TECHNICAL_REGULATIONS_RF` — технический регламент Российской Федерации; - `TECHNICAL_REGULATIONS_CU` — технический регламент Таможенного союза; - `GOST` — ГОСТ; - `CHEMICAL_PRODUCTS` — паспорт безопасности химической продукции; - `SAFETY_DATA_SHEET` — паспорт безопасности; - `REJECTION_LETTER` — отказное письмо.
   - `certificate_country` — string. Код страны, где выдали сертификат.
   - `certificate_type` — string (UNKNOWN, CERTIFICATE_OF_CONFORMITY, DECLARATION, CERTIFICATE_OF_REGISTRATION, REGISTRATION_CERTIFICATE, REFUSED_LETTER, VETERINARY_COVER_DOCUMENT, SAFETY_DATA_SHEET). Тип сертификата: - `UNKNOWN` — неизвестный; - `CERTIFICATE_OF_CONFORMITY` — сертификат соответствия; - `DECLARATION` — декларация о соответствии; - `CERTIFICATE_OF_REGISTRATION` — свидетельство о государственной регистрации; - `REGISTRATION_CERTIFICATE` — регистрационное удостоверение; - `REFUSED_LETTER` — отказное письмо; - `VETERINARY_COVER_DOCUMENT` — ветеринарный сопроводительный документ; - `SAFETY_DATA_SHEET` — паспорт безопасности.
   - `expired_date` — object. Информация о дате истечения сертификата.
@@ -56,7 +56,7 @@ content_sha: 8601751214a56ec9
 **200** — Обязательные параметры для создания сертификата
 
 - `params` — array[object]. Параметры для создания сертификата.
-  - `name` — string. Название параметра сертификата: - `NAME` — название; - `CERTIFICATE_TYPE` — тип; - `NUMBER` — номер; - `FILES` — файл с сертификатом в кодировке Base64; - `CERTIFICATE_COUNTRY` — страна выдачи; - `ACCORDANCE_TYPE` — тип соответствия требованиям; - `SKUS` — список идентификаторов товара в системе Ozon, SKU; - `ISSUE_DATE` — дата выпуска; - `EXPIRED_DATE` — дата истечения; - `LINK_TO_REGISTRY` — ссылка на государственный реестр; - `PRODUCT_TYPE` — тип товаров; - `INFINITE` — бессрочность.
+  - `name` — string. Название параметра сертификата: - `NAME` — название; - `CERTIFICATE_TYPE` — тип; - `NUMBER` — номер; - `FILES` — файл с сертификатом в кодировке Base64; - `CERTIFICATE_COUNTRY` — страна выдачи; - `ACCORDANCE_TYPE` — стандарт сертификации; - `SKUS` — список идентификаторов товара в системе Ozon, SKU; - `ISSUE_DATE` — дата выпуска; - `EXPIRED_DATE` — дата истечения; - `LINK_TO_REGISTRY` — ссылка на государственный реестр; - `PRODUCT_TYPE` — тип товаров; - `INFINITE` — бессрочность.
   - `required` — boolean. `true`, если параметр обязательный.
 
 **400** — Неверный параметр

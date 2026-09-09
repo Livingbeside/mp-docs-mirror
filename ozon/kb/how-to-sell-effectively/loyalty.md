@@ -4,10 +4,10 @@ marketplace: ozon
 kind: section
 path: /how-to-sell-effectively/loyalty
 source: "https://seller-edu.ozon.ru/libra/how-to-sell-effectively/loyalty"
-updated: "2023-12-21 09:42:19.721332"
+updated: "2026-09-08 09:30:45"
 doc_id: 896
-fetched_at: "2026-08-28T12:11:14Z"
-content_sha: 118f00d9351dd795
+fetched_at: "2026-09-09T01:49:09Z"
+content_sha: 014d02aa280448b8
 ---
 
 # Работа с лояльностью покупателей
@@ -21,4 +21,3 @@ _Главная / Продвижение_
 - [Программа лояльности «Звёздные товары»](https://seller-edu.ozon.ru/libra/how-to-sell-effectively/loyalty/star-goods)
 - [Программа лояльности «Скидки от ПВЗ»](https://seller-edu.ozon.ru/libra/how-to-sell-effectively/loyalty/skidki-pvz)
 - [Программа лояльности «Зелёная цена»](https://seller-edu.ozon.ru/libra/how-to-sell-effectively/loyalty/zelenaya-cena)
-- [Вопросы и ответы о программах лояльности для покупателей](https://seller-edu.ozon.ru/libra/how-to-sell-effectively/loyalty/voprosy-i-otvety)

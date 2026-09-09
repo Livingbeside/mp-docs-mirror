@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /fbs/ozon-logistika/samopriemka
 source: "https://seller-edu.ozon.ru/libra/fbs/ozon-logistika/samopriemka"
-updated: "2026-09-07 13:22:13"
+updated: "2026-09-08 11:56:52"
 doc_id: 1780
-fetched_at: "2026-09-08T01:39:31Z"
-content_sha: e966d8c44c955c19
+fetched_at: "2026-09-09T01:49:09Z"
+content_sha: f297189546b9b6f1
 ---
 
 # Самоприёмка отправлений
@@ -35,6 +35,8 @@ _Главная / Продажа со своего склада (FBS) / Отгр
 [Замоскворечье (СЦ)](/fbs/punkty-priema/moskva#замоскворечье-мо-замоскворечье-фбс)
 
 [Кавказский (СЦ)](/fbs/punkty-priema/moskva#кавказскии-мск-кавказскии-2-хаб)
+
+[Ленинградский (СЦ)](https://seller-edu.ozon.ru/fbs/punkty-priema/moskva#ленинградскии-мо-ленинградскии-2-хаб)
 
 [Молжаниново (СЦ)](https://seller-edu.ozon.ru/fbs/punkty-priema/moskva#молжаниново-мск-молжаниново-3-хаб)
 

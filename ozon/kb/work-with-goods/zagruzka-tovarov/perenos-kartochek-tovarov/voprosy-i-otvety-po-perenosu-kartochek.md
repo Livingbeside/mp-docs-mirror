@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /work-with-goods/zagruzka-tovarov/perenos-kartochek-tovarov/voprosy-i-otvety-po-perenosu-kartochek
 source: "https://seller-edu.ozon.ru/libra/work-with-goods/zagruzka-tovarov/perenos-kartochek-tovarov/voprosy-i-otvety-po-perenosu-kartochek"
-updated: "2026-05-18 14:52:57"
+updated: "2026-09-08 16:40:40"
 doc_id: 71602
-fetched_at: "2026-08-28T12:11:15Z"
-content_sha: 23c5f0a6f73569d4
+fetched_at: "2026-09-09T01:49:10Z"
+content_sha: 95f85f9cc345eabe
 ---
 
 # Вопросы и ответы по переносу карточек
@@ -94,3 +94,10 @@ _Главная / Работа с товарами / Создание и ред�
 3. Заранее [отмените активные заявки на поставки](https://seller-edu.ozon.ru/libra/fbo/process-details/otmenit-zayavku-na-postavku#%D0%BA%D0%B0%D0%BA-%D0%BE%D1%82%D0%BC%D0%B5%D0%BD%D0%B8%D1%82%D1%8C-%D1%81%D0%BE%D0%B7%D0%B4%D0%B0%D0%BD%D0%BD%D1%83%D1%8E-%D0%B7%D0%B0%D1%8F%D0%B2%D0%BA%D1%83) на склады Ozon.
 4. [Запустите проверку](https://seller-edu.ozon.ru/libra/work-with-goods/zagruzka-tovarov/perenos-kartochek-tovarov/perenos-kartochek#%D1%88%D0%B0%D0%B3-3-%D0%B2%D1%8B%D0%B1%D0%B5%D1%80%D0%B8%D1%82%D0%B5-%D0%BA%D0%B0%D1%80%D1%82%D0%BE%D1%87%D0%BA%D0%B8-%D0%BF%D1%80%D0%BE%D0%B2%D0%B5%D1%80%D1%8C%D1%82%D0%B5-%D0%B8%D1%85-%D0%B8-%D0%B7%D0%B0%D0%BF%D1%83%D1%81%D1%82%D0%B8%D1%82%D0%B5-%D0%BF%D0%B5%D1%80%D0%B5%D0%BD%D0%BE%D1%81) прямо перед переносом, чтобы исправить возможные ошибки и перенести карточки за один раз.
 5. В течение 72 часов отслеживайте [статус заявки](https://seller-edu.ozon.ru/libra/work-with-goods/zagruzka-tovarov/perenos-kartochek-tovarov/perenos-kartochek#%D0%BA%D0%B0%D0%BA%D0%B8%D0%B5-%D1%81%D1%82%D0%B0%D1%82%D1%83%D1%81%D1%8B-%D0%B1%D1%8B%D0%B2%D0%B0%D1%8E%D1%82-%D1%83-%D0%B7%D0%B0%D1%8F%D0%B2%D0%BA%D0%B8) и сразу исправляйте ошибки, если они обнаружатся.
+
+# Как перенести карточку, если у товара есть остатки на складах Ozon Fresh?
+
+1. [Проверьте остатки на складах](https://seller-edu.ozon.ru/libra/fbo/rabota-so-stokom/upravlenie-ostatkami-i-likvidnost-tovarov#%D0%B3%D0%B4%D0%B5-%D0%BF%D0%BE%D1%81%D0%BC%D0%BE%D1%82%D1%80%D0%B5%D1%82%D1%8C-%D0%BE%D1%81%D1%82%D0%B0%D1%82%D0%BA%D0%B8-%D1%82%D0%BE%D0%B2%D0%B0%D1%80%D0%BE%D0%B2) с префиксом **GRC** в названии, например: **FRESH_GRC_КДР_АДЫГЕЯ_ПЕРВОМАЙСКАЯ**. На этапе проверки карточек перед переносом система их не определяет.
+2. Если такие остатки есть, [вывезите](https://seller-edu.ozon.ru/fbo/vozvraty-utilizaciya-izlishki/vyvoz-tovarov-so-sklada-ozon/zabrat-so-stoka) их до переноса. При этом карточку перенесём в другой кабинет, но остатки будут в исходном кабинете.
+
+На остальных складах Ozon Fresh карточки перенесём вместе с остатками.

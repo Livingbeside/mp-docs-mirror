@@ -4,10 +4,10 @@ marketplace: ozon
 kind: section
 path: /ceny-i-akcii/akcii-skidki-i-kupony/akcii-prodavca
 source: "https://seller-edu.ozon.ru/libra/ceny-i-akcii/akcii-skidki-i-kupony/akcii-prodavca"
-updated: "2025-09-26 09:39:03"
+updated: "2026-09-08 09:56:24"
 doc_id: 35799
-fetched_at: "2026-08-28T12:11:14Z"
-content_sha: c5cbacce22b9c890
+fetched_at: "2026-09-09T01:49:09Z"
+content_sha: f0894e1c076ed16e
 ---
 
 # Акции продавца
@@ -20,4 +20,3 @@ _Главная / Цены и акции / Акции, скидки и пром�
 - [Промокоды](https://seller-edu.ozon.ru/libra/ceny-i-akcii/akcii-skidki-i-kupony/akcii-prodavca/coupons)
 - [Ozon Рассрочка](https://seller-edu.ozon.ru/libra/ceny-i-akcii/akcii-skidki-i-kupony/akcii-prodavca/besprotsentnaya-rassrochka)
 - [Многоуровневая скидка от суммы](https://seller-edu.ozon.ru/libra/ceny-i-akcii/akcii-skidki-i-kupony/akcii-prodavca/mnogourovnevaya-skidka)
-- [Вопросы и ответы по собственным акциям продавца](https://seller-edu.ozon.ru/libra/ceny-i-akcii/akcii-skidki-i-kupony/akcii-prodavca/voprosy-otvety-akcii-prodavca)

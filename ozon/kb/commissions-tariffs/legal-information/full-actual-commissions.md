@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /commissions-tariffs/legal-information/full-actual-commissions
 source: "https://seller-edu.ozon.ru/libra/commissions-tariffs/legal-information/full-actual-commissions"
-updated: "2026-09-07 15:30:40"
+updated: "2026-09-08 11:37:03"
 doc_id: 700
-fetched_at: "2026-09-08T01:39:31Z"
-content_sha: 46061c8d4ed8cfb0
+fetched_at: "2026-09-09T01:49:09Z"
+content_sha: 9c3a9f3ac101ddd1
 ---
 
 # Полный список комиссий и тарифов
@@ -761,7 +761,7 @@ Ozon компенсирует Продавцу расходы в размере 
 
 ## 2.6. Сервис «Ozon Доставка»
 
-Условия действуют с 16 июня 2026 г.
+Условия действуют с 8 сентября 2026 г.
 
 Ozon Доставка — это сервис, где вы можете заказать услуги доставки для товаров, которые продаёте на другой площадке.
 

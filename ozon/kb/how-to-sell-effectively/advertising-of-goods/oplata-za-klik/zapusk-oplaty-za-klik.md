@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /how-to-sell-effectively/advertising-of-goods/oplata-za-klik/zapusk-oplaty-za-klik
 source: "https://seller-edu.ozon.ru/libra/how-to-sell-effectively/advertising-of-goods/oplata-za-klik/zapusk-oplaty-za-klik"
-updated: "2026-09-07 11:05:05"
+updated: "2026-09-08 08:37:38"
 doc_id: 34453
-fetched_at: "2026-09-08T01:39:32Z"
-content_sha: 6392c869ac83fd7e
+fetched_at: "2026-09-09T01:49:10Z"
+content_sha: f88322c74dc27ae3
 ---
 
 # Как запустить кампанию в «Оплате за клик»
@@ -33,12 +33,13 @@ _Главная / Продвижение / Продвижение товаров
   
   добавить списком — включите **Режим списка** и внесите сразу несколько артикулов или ID. Список можно скопировать из отчёта по товарам из раздела **[Товары → Список товаров](https://seller.ozon.ru/app/products)**.
   После этого нажмите **Добавить товары**.
-4. Выберите, какой тип бюджета установить в кампании:
+4. Чтобы для каждого выбранного товара создалась отдельная кампания, включите **Отдельная кампания на каждый товар**. [Подробнее об этой настройке](#как-устроена-настроика-«отдельная-кампания-на-каждыи-товар»)
+5. Выберите, какой тип бюджета установить в кампании:
   Недельный. Установите сумму, которую планируете потратить на продвижение из расчёта минимум 2 000 ₽ на товар.  Сумма будет равномерно расходоваться в течение 7 дней. Если выбрали стратегию «Вывод в топ», советуем установить бюджет из расчёта 10 000 ₽ на товар, так кампания будет более эффективной. [Как рассчитать недельный бюджет](https://seller-edu.ozon.ru/how-to-sell-effectively/advertising-of-goods/oplata-za-klik/nedelnyi-budzhet-v-oplate-za-klik#%D0%BA%D0%B0%D0%BA-%D1%80%D0%B0%D1%81%D1%81%D1%87%D0%B8%D1%82%D0%B0%D1%82%D1%8C-%D0%BD%D0%B5%D0%B4%D0%B5%D0%BB%D1%8C%D0%BD%D1%8B%D0%B8-%D0%B1%D1%8E%D0%B4%D0%B6%D0%B5%D1%82)
   
   Неограниченный — только для стратегий «Целевой расход» и «Средняя стоимость клика». Расход будет зависеть от целевого ДРР и ставок в кампании: установите значения на следующем шаге. 
   [Подробнее о бюджете](https://seller-edu.ozon.ru/libra/how-to-sell-effectively/advertising-of-goods/oplata-za-klik/nedelnyi-budzhet-v-oplate-za-klik)
-5. Выберите стратегию управления ставками:
+6. Выберите стратегию управления ставками:
   [«Целевой расход»](https://seller-edu.ozon.ru/libra/how-to-sell-effectively/advertising-of-goods/oplata-za-klik/upravlenie-stavkami#целевои-расход)**[.](https://seller-edu.ozon.ru/libra/how-to-sell-effectively/advertising-of-goods/oplata-za-klik/upravlenie-stavkami#целевои-расход)** Укажите, какой ДРР в кампании придерживаться системе. После запуска кампании сможете [изменить значение](https://seller-edu.ozon.ru/libra/how-to-sell-effectively/advertising-of-goods/oplata-za-klik/izmenit-kampaniu-v-oplate-za-klik#%D0%BA%D0%B0%D0%BA-%D0%B8%D0%B7%D0%BC%D0%B5%D0%BD%D0%B8%D1%82%D1%8C-%D1%86%D0%B5%D0%BB%D1%8C-%D0%BF%D0%BE-%D0%B4%D1%80%D1%80-%D0%B2-%D0%BA%D0%B0%D0%BC%D0%BF%D0%B0%D0%BD%D0%B8%D0%B8) для каждого товара отдельно и установить цель по ДРР как у конкурентов.
   
   [«Вывод в топ».](https://seller-edu.ozon.ru/libra/how-to-sell-effectively/advertising-of-goods/oplata-za-klik/upravlenie-stavkami#вывод-в-топ) Выберите диапазон позиций, на которых продвигать ваши товары. После запуска кампании сможете установить диапазон для каждого товара отдельно.
@@ -46,9 +47,9 @@ _Главная / Продвижение / Продвижение товаров
   [«Автостратегия».](https://seller-edu.ozon.ru/libra/how-to-sell-effectively/advertising-of-goods/oplata-za-klik/upravlenie-stavkami#автостратегия)
   
   [«Средняя стоимость клика».](https://seller-edu.ozon.ru/libra/how-to-sell-effectively/advertising-of-goods/oplata-za-klik/upravlenie-stavkami#средняя-стоимость-клика) По умолчанию установим конкурентные ставки. После запуска кампании сможете установить ставки, которые в среднем готовы платить за каждый клик по карточкам.
-6. Укажите, где продвигать товары: в поиске или в поиске и рекомендациях. Изменить места размещения после запуска кампании не получится.
-7. Чтобы получать [дополнительные преимущества](https://seller-edu.ozon.ru/how-to-sell-effectively/advertising-of-goods/oplata-za-zakaz/chto-takoe-oplata-za-zakaz#%D0%BA%D0%B0%D0%BA%D0%B8%D0%B5-%D0%BE%D1%81%D0%BE%D0%B1%D0%B5%D0%BD%D0%BD%D0%BE%D1%81%D1%82%D0%B8-%D0%B5%D1%81%D1%82%D1%8C-%D1%83-%D0%BE%D0%BF%D0%BB%D0%B0%D1%82%D1%8B-%D0%B7%D0%B0-%D0%B7%D0%B0%D0%BA%D0%B0%D0%B7) в продвижении — продвигайте товары из кампании дополнительно в оплате за заказ. Для этого поставьте галочку в блоке **Оплата за заказ**. В любой момент сможете [отключить](https://seller-edu.ozon.ru/how-to-sell-effectively/advertising-of-goods/oplata-za-zakaz/otkluchit-oplatu-za-zakaz#%D1%87%D0%B5%D1%80%D0%B5%D0%B7-%D0%BA%D0%B0%D0%BC%D0%BF%D0%B0%D0%BD%D0%B8%D1%8E-%D0%B2-%D0%B8%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D0%B5-%C2%AB%D1%82%D1%80%D0%B0%D1%84%D0%B0%D1%80%D0%B5%D1%82%D1%8B-%D0%B8%D0%BB%D0%B8-%C2%AB%D0%B2%D1%8B%D0%B2%D0%BE%D0%B4-%D0%B2-%D1%82%D0%BE%D0%BF%C2%BB) или [включить](https://seller-edu.ozon.ru/how-to-sell-effectively/advertising-of-goods/oplata-za-zakaz/zapustit-oplatu-za-zakaz#%D1%87%D0%B5%D1%80%D0%B5%D0%B7-%D0%BA%D0%B0%D0%BC%D0%BF%D0%B0%D0%BD%D0%B8%D1%8E-%D0%B2-%D0%B8%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D0%B5-%C2%AB%D1%82%D1%80%D0%B0%D1%84%D0%B0%D1%80%D0%B5%D1%82%D1%8B%C2%BB-%D0%B8%D0%BB%D0%B8-%C2%AB%D0%B2%D1%8B%D0%B2%D0%BE%D0%B4-%D0%B2-%D1%82%D0%BE%D0%BF%C2%BB) продвижение товаров в оплате за заказ.
-8. Нажмите **Запустить**. Ваши товары начнут участвовать в аукционе по конкурентным ставкам. [Как изменить ставки](/how-to-sell-effectively/advertising-of-goods/oplata-za-klik/izmenit-kampaniu-v-oplate-za-klik#как-изменить-ставку)
+7. Укажите, где продвигать товары: в поиске или в поиске и рекомендациях. Изменить места размещения после запуска кампании не получится.
+8. Чтобы получать [дополнительные преимущества](https://seller-edu.ozon.ru/how-to-sell-effectively/advertising-of-goods/oplata-za-zakaz/chto-takoe-oplata-za-zakaz#%D0%BA%D0%B0%D0%BA%D0%B8%D0%B5-%D0%BE%D1%81%D0%BE%D0%B1%D0%B5%D0%BD%D0%BD%D0%BE%D1%81%D1%82%D0%B8-%D0%B5%D1%81%D1%82%D1%8C-%D1%83-%D0%BE%D0%BF%D0%BB%D0%B0%D1%82%D1%8B-%D0%B7%D0%B0-%D0%B7%D0%B0%D0%BA%D0%B0%D0%B7) в продвижении — продвигайте товары из кампании дополнительно в оплате за заказ. Для этого поставьте галочку в блоке **Оплата за заказ**. В любой момент сможете [отключить](https://seller-edu.ozon.ru/how-to-sell-effectively/advertising-of-goods/oplata-za-zakaz/otkluchit-oplatu-za-zakaz#%D1%87%D0%B5%D1%80%D0%B5%D0%B7-%D0%BA%D0%B0%D0%BC%D0%BF%D0%B0%D0%BD%D0%B8%D1%8E-%D0%B2-%D0%B8%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D0%B5-%C2%AB%D1%82%D1%80%D0%B0%D1%84%D0%B0%D1%80%D0%B5%D1%82%D1%8B-%D0%B8%D0%BB%D0%B8-%C2%AB%D0%B2%D1%8B%D0%B2%D0%BE%D0%B4-%D0%B2-%D1%82%D0%BE%D0%BF%C2%BB) или [включить](https://seller-edu.ozon.ru/how-to-sell-effectively/advertising-of-goods/oplata-za-zakaz/zapustit-oplatu-za-zakaz#%D1%87%D0%B5%D1%80%D0%B5%D0%B7-%D0%BA%D0%B0%D0%BC%D0%BF%D0%B0%D0%BD%D0%B8%D1%8E-%D0%B2-%D0%B8%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D0%B5-%C2%AB%D1%82%D1%80%D0%B0%D1%84%D0%B0%D1%80%D0%B5%D1%82%D1%8B%C2%BB-%D0%B8%D0%BB%D0%B8-%C2%AB%D0%B2%D1%8B%D0%B2%D0%BE%D0%B4-%D0%B2-%D1%82%D0%BE%D0%BF%C2%BB) продвижение товаров в оплате за заказ.
+9. Нажмите **Запустить**. Ваши товары начнут участвовать в аукционе по конкурентным ставкам. [Как изменить ставки](/how-to-sell-effectively/advertising-of-goods/oplata-za-klik/izmenit-kampaniu-v-oplate-za-klik#как-изменить-ставку)
 
 В любой момент сможете отключить кампанию. [Как это сделать](/how-to-sell-effectively/advertising-of-goods/oplata-za-klik/izmenit-kampaniu-v-oplate-za-klik#как-отключить-кампанию)
 
@@ -123,12 +124,13 @@ _Главная / Продвижение / Продвижение товаров
   цене;
   
   наличию в других кампаниях.
-5. Выберите, какой тип бюджета установить в кампании:
+5. Чтобы для каждого выбранного товара создалась отдельная кампания, включите **Кампания на каждый товар**. [Подробнее об этой настройке](#как-устроена-настроика-«отдельная-кампания-на-каждыи-товар»)
+6. Выберите, какой тип бюджета установить в кампании:
   Недельный. Установите сумму, которую планируете потратить на продвижение из расчёта минимум 2 000 ₽ на товар.  Сумма будет равномерно расходоваться в течение 7 дней. Если выбрали стратегию «Вывод в топ», советуем установить бюджет из расчёта 10 000 ₽ на товар, так кампания будет более эффективной. [Как рассчитать недельный бюджет](https://seller-edu.ozon.ru/how-to-sell-effectively/advertising-of-goods/oplata-za-klik/nedelnyi-budzhet-v-oplate-za-klik#%D0%BA%D0%B0%D0%BA-%D1%80%D0%B0%D1%81%D1%81%D1%87%D0%B8%D1%82%D0%B0%D1%82%D1%8C-%D0%BD%D0%B5%D0%B4%D0%B5%D0%BB%D1%8C%D0%BD%D1%8B%D0%B8-%D0%B1%D1%8E%D0%B4%D0%B6%D0%B5%D1%82)
   
   Неограниченный — только для стратегий «Целевой расход» и «Средняя стоимость клика». Расход будет зависеть от целевого ДРР и ставок в кампании: установите значения на следующем шаге. 
   [Подробнее о бюджете](https://seller-edu.ozon.ru/libra/how-to-sell-effectively/advertising-of-goods/oplata-za-klik/nedelnyi-budzhet-v-oplate-za-klik)
-6. Выберите стратегию управления ставками:
+7. Выберите стратегию управления ставками:
   [«Целевой расход»](https://seller-edu.ozon.ru/how-to-sell-effectively/advertising-of-goods/oplata-za-klik/upravlenie-stavkami#%D1%86%D0%B5%D0%BB%D0%B5%D0%B2%D0%BE%D0%B8-%D1%80%D0%B0%D1%81%D1%85%D0%BE%D0%B4)**[.](https://seller-edu.ozon.ru/how-to-sell-effectively/advertising-of-goods/oplata-za-klik/upravlenie-stavkami#%D1%86%D0%B5%D0%BB%D0%B5%D0%B2%D0%BE%D0%B8-%D1%80%D0%B0%D1%81%D1%85%D0%BE%D0%B4)** Укажите, какой ДРР в кампании придерживаться системе. После запуска кампании сможете [изменить значение](https://seller-edu.ozon.ru/libra/how-to-sell-effectively/advertising-of-goods/oplata-za-klik/izmenit-kampaniu-v-oplate-za-klik#%D0%BA%D0%B0%D0%BA-%D0%B8%D0%B7%D0%BC%D0%B5%D0%BD%D0%B8%D1%82%D1%8C-%D1%86%D0%B5%D0%BB%D1%8C-%D0%BF%D0%BE-%D0%B4%D1%80%D1%80-%D0%B2-%D0%BA%D0%B0%D0%BC%D0%BF%D0%B0%D0%BD%D0%B8%D0%B8) для каждого товара отдельно и установить цель по ДРР как у конкурентов.
   
   [«Вывод в топ».](https://seller-edu.ozon.ru/how-to-sell-effectively/advertising-of-goods/oplata-za-klik/upravlenie-stavkami#%D0%B2%D1%8B%D0%B2%D0%BE%D0%B4-%D0%B2-%D1%82%D0%BE%D0%BF) Выберите диапазон позиций, на которых продвигать ваши товары. После запуска кампании сможете установить диапазон для каждого товара отдельно.
@@ -136,9 +138,15 @@ _Главная / Продвижение / Продвижение товаров
   [«Автостратегия».](https://seller-edu.ozon.ru/how-to-sell-effectively/advertising-of-goods/oplata-za-klik/upravlenie-stavkami#%D0%B0%D0%B2%D1%82%D0%BE%D1%81%D1%82%D1%80%D0%B0%D1%82%D0%B5%D0%B3%D0%B8%D1%8F)
   
   [«Средняя стоимость клика».](https://seller-edu.ozon.ru/how-to-sell-effectively/advertising-of-goods/oplata-za-klik/upravlenie-stavkami#%D1%81%D1%80%D0%B5%D0%B4%D0%BD%D1%8F%D1%8F-%D1%81%D1%82%D0%BE%D0%B8%D0%BC%D0%BE%D1%81%D1%82%D1%8C-%D0%BA%D0%BB%D0%B8%D0%BA%D0%B0) По умолчанию установим конкурентные ставки. После запуска кампании сможете установить ставки, которые в среднем готовы платить за каждый клик по карточкам.
-7. Укажите, где продвигать товары: в поиске или в поиске и рекомендациях. Изменить места размещения после запуска кампании не получится.
-8. Чтобы получать [дополнительные преимущества](https://seller-edu.ozon.ru/how-to-sell-effectively/advertising-of-goods/oplata-za-zakaz/chto-takoe-oplata-za-zakaz#%D0%BA%D0%B0%D0%BA%D0%B8%D0%B5-%D0%BE%D1%81%D0%BE%D0%B1%D0%B5%D0%BD%D0%BD%D0%BE%D1%81%D1%82%D0%B8-%D0%B5%D1%81%D1%82%D1%8C-%D1%83-%D0%BE%D0%BF%D0%BB%D0%B0%D1%82%D1%8B-%D0%B7%D0%B0-%D0%B7%D0%B0%D0%BA%D0%B0%D0%B7) в продвижении — продвигайте товары из кампании дополнительно в оплате за заказ. Для этого поставьте галочку в блоке **Оплата за заказ**. В любой момент сможете [отключить](https://seller-edu.ozon.ru/how-to-sell-effectively/advertising-of-goods/oplata-za-zakaz/otkluchit-oplatu-za-zakaz#%D1%87%D0%B5%D1%80%D0%B5%D0%B7-%D0%BA%D0%B0%D0%BC%D0%BF%D0%B0%D0%BD%D0%B8%D1%8E-%D0%B2-%D0%B8%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D0%B5-%C2%AB%D1%82%D1%80%D0%B0%D1%84%D0%B0%D1%80%D0%B5%D1%82%D1%8B-%D0%B8%D0%BB%D0%B8-%C2%AB%D0%B2%D1%8B%D0%B2%D0%BE%D0%B4-%D0%B2-%D1%82%D0%BE%D0%BF%C2%BB) или [включить](https://seller-edu.ozon.ru/how-to-sell-effectively/advertising-of-goods/oplata-za-zakaz/zapustit-oplatu-za-zakaz#%D1%87%D0%B5%D1%80%D0%B5%D0%B7-%D0%BA%D0%B0%D0%BC%D0%BF%D0%B0%D0%BD%D0%B8%D1%8E-%D0%B2-%D0%B8%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D0%B5-%C2%AB%D1%82%D1%80%D0%B0%D1%84%D0%B0%D1%80%D0%B5%D1%82%D1%8B%C2%BB-%D0%B8%D0%BB%D0%B8-%C2%AB%D0%B2%D1%8B%D0%B2%D0%BE%D0%B4-%D0%B2-%D1%82%D0%BE%D0%BF%C2%BB) продвижение товаров в оплате за заказ.
-9. Нажмите **Запустить кампанию**.
+8. Укажите, где продвигать товары: в поиске или в поиске и рекомендациях. Изменить места размещения после запуска кампании не получится.
+9. Чтобы получать [дополнительные преимущества](https://seller-edu.ozon.ru/how-to-sell-effectively/advertising-of-goods/oplata-za-zakaz/chto-takoe-oplata-za-zakaz#%D0%BA%D0%B0%D0%BA%D0%B8%D0%B5-%D0%BE%D1%81%D0%BE%D0%B1%D0%B5%D0%BD%D0%BD%D0%BE%D1%81%D1%82%D0%B8-%D0%B5%D1%81%D1%82%D1%8C-%D1%83-%D0%BE%D0%BF%D0%BB%D0%B0%D1%82%D1%8B-%D0%B7%D0%B0-%D0%B7%D0%B0%D0%BA%D0%B0%D0%B7) в продвижении — продвигайте товары из кампании дополнительно в оплате за заказ. Для этого поставьте галочку в блоке **Оплата за заказ**. В любой момент сможете [отключить](https://seller-edu.ozon.ru/how-to-sell-effectively/advertising-of-goods/oplata-za-zakaz/otkluchit-oplatu-za-zakaz#%D1%87%D0%B5%D1%80%D0%B5%D0%B7-%D0%BA%D0%B0%D0%BC%D0%BF%D0%B0%D0%BD%D0%B8%D1%8E-%D0%B2-%D0%B8%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D0%B5-%C2%AB%D1%82%D1%80%D0%B0%D1%84%D0%B0%D1%80%D0%B5%D1%82%D1%8B-%D0%B8%D0%BB%D0%B8-%C2%AB%D0%B2%D1%8B%D0%B2%D0%BE%D0%B4-%D0%B2-%D1%82%D0%BE%D0%BF%C2%BB) или [включить](https://seller-edu.ozon.ru/how-to-sell-effectively/advertising-of-goods/oplata-za-zakaz/zapustit-oplatu-za-zakaz#%D1%87%D0%B5%D1%80%D0%B5%D0%B7-%D0%BA%D0%B0%D0%BC%D0%BF%D0%B0%D0%BD%D0%B8%D1%8E-%D0%B2-%D0%B8%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D0%B5-%C2%AB%D1%82%D1%80%D0%B0%D1%84%D0%B0%D1%80%D0%B5%D1%82%D1%8B%C2%BB-%D0%B8%D0%BB%D0%B8-%C2%AB%D0%B2%D1%8B%D0%B2%D0%BE%D0%B4-%D0%B2-%D1%82%D0%BE%D0%BF%C2%BB) продвижение товаров в оплате за заказ.
+10. Нажмите **Запустить кампанию**.
+
+# Как устроена настройка «Отдельная кампания на каждый товар»
+
+При включённой настройке создаём для каждого выбранного товара отдельную кампанию. Товаров может быть не больше 50.
+
+После запуска сможете отследить процесс создания кампаний и в любой момент остановить его. Кампании, которые уже успела создать система, останутся. Чтобы посмотреть, для каких товаров не создалась кампания, нажмите **Скопировать**.
 
 # Как устроено автоматическое создание кампаний
 
