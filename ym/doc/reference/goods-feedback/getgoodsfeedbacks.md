@@ -2,8 +2,8 @@
 title: Отзывы на товары продавца
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/goods-feedback/getGoodsFeedbacks.md"
-fetched_at: "2026-09-08T13:02:25Z"
-content_sha: 2a343388a34a1242
+fetched_at: "2026-09-10T01:57:11Z"
+content_sha: eb487b90cabbd202
 ---
 
 ---
@@ -1862,7 +1862,7 @@ alternate:
         description: Фильтр отзывов за баллы Плюса.
         type: boolean
     $defs:
-      /home/sandbox/.ya/build/build_root/54qq/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/goods-feedback/schemas.yaml#/FeedbackReactionStatusType:
+      /home/sandbox/.ya/build/build_root/oxq2/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/goods-feedback/schemas.yaml#/FeedbackReactionStatusType:
         description: |
           Статус реакции на отзыв:
   

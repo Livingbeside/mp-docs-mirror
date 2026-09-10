@@ -2,8 +2,8 @@
 title: Список товаров в акции
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/promos/getPromoOffers.md"
-fetched_at: "2026-09-08T13:01:25Z"
-content_sha: 7130cc85ed29dbff
+fetched_at: "2026-09-10T01:56:14Z"
+content_sha: 95a2638fba13a445
 ---
 
 ---
@@ -1600,7 +1600,7 @@ alternate:
             - NOT_MANUALLY_ADDED
             - MINIMUM_FOR_PROMOS
     $defs:
-      /home/sandbox/.ya/build/build_root/54qq/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/promos/api/getPromoOffers.yaml#/PromoOfferParticipationStatusFilterType:
+      /home/sandbox/.ya/build/build_root/oxq2/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/promos/api/getPromoOffers.yaml#/PromoOfferParticipationStatusFilterType:
         description: >
           Фильтр для товаров, которые добавлены в акцию вручную:
   

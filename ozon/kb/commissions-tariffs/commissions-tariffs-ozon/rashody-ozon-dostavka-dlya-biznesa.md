@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /commissions-tariffs/commissions-tariffs-ozon/rashody-ozon-dostavka-dlya-biznesa
 source: "https://seller-edu.ozon.ru/libra/commissions-tariffs/commissions-tariffs-ozon/rashody-ozon-dostavka-dlya-biznesa"
-updated: "2026-09-07 15:25:48"
+updated: "2026-09-09 14:22:06"
 doc_id: 75030
-fetched_at: "2026-09-08T01:39:31Z"
-content_sha: 5e7c54ed2a17719f
+fetched_at: "2026-09-10T01:52:28Z"
+content_sha: 7cecdb8d199f7a28
 ---
 
 # Ozon Доставка для бизнеса: расходы на доставку, невыкупы, отмены и другие услуги
@@ -123,13 +123,25 @@ Ozon Доставка для бизнеса — это сервис, где в�
 
 ## Логистика
 
-С 16 июня по 16 сентября 2026 г. действуют специальные тарифы на услугу.
+С 16 июня по 31 декабря 2026 года действуют специальные тарифы на услугу.
 
 [Скачать таблицу с тарифами](https://cdn.ozone.ru/s3/ozon-disk-api/Seller-edu/files/commissions-tariffs/Ozon-logistica/tariffs-logistika-ozon-dostavka-16-06-26_1781508677.xlsx)
 
+С 24 сентября 2026 г.
+
 Тариф на логистику** **зависит от объёма отправления и конкретного направления доставки. Кластеры определяем по точке приёма отправления.
 
-[Посмотреть адреса и кластеры пунктов приёма](https://seller-edu.ozon.ru/libra/fbs/punkty-priema)
+[Посмотреть адреса и кластеры пунктов приёма](https://seller-edu.ozon.ru/fbs/punkty-priema)
+
+Если определить кластер отправки или назначения по техническим причинам не удалось, начислим плату по универсальному тарифу в зависимости от объёма отправления.
+
+[Скачать таблицу с тарифами](https://cdn.ozone.ru/s3/ozon-disk-api/Seller-edu/files/commissions-tariffs/Ozon-logistica/tariffs-logistika-ozon-dostavka-24092026_1788947510.xlsx)
+
+До 23 сентября 2026 г.
+
+Тариф на логистику** **зависит от объёма отправления и конкретного направления доставки. Кластеры определяем по точке приёма отправления.
+
+[Посмотреть адреса и кластеры пунктов приёма](https://seller-edu.ozon.ru/fbs/punkty-priema)
 
 Если определить кластер отправки или назначения по техническим причинам не удалось, начислим плату по универсальному тарифу в зависимости от объёма отправления.
 

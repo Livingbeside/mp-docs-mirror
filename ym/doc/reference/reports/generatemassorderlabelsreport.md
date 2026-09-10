@@ -2,8 +2,8 @@
 title: Готовые ярлыки для нескольких заказов
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/reports/generateMassOrderLabelsReport.md"
-fetched_at: "2026-09-08T13:01:49Z"
-content_sha: 0b1beeb22eceb36d
+fetched_at: "2026-09-10T01:56:39Z"
+content_sha: 0000603ceccd3a62
 ---
 
 ---
@@ -934,7 +934,7 @@ alternate:
       required: false
       schema:
         $ref: >-
-          /home/sandbox/.ya/build/build_root/54qq/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/order-labels/schemas.yaml#/PageFormatType
+          /home/sandbox/.ya/build/build_root/oxq2/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/order-labels/schemas.yaml#/PageFormatType
   headers: []
   body: |-
     {
@@ -971,7 +971,7 @@ alternate:
         description: Тип сортировки ярлыков в файле.
         $ref: '#/$defs/LabelsSortingType'
     $defs:
-      /home/sandbox/.ya/build/build_root/54qq/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/reports/api/generateMassOrderLabelsReport.yaml#/LabelsSortingType:
+      /home/sandbox/.ya/build/build_root/oxq2/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/reports/api/generateMassOrderLabelsReport.yaml#/LabelsSortingType:
         description: >
           Тип сортировки ярлыков:
   

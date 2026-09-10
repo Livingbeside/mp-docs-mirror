@@ -2,8 +2,8 @@
 title: Включение/выключение модели работы склада
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/warehouses/updateWarehouseModelStatus.md"
-fetched_at: "2026-09-08T13:02:40Z"
-content_sha: aadbc09a23c02307
+fetched_at: "2026-09-10T01:57:24Z"
+content_sha: 97090d5c5302d7ba
 ---
 
 ---
@@ -902,7 +902,7 @@ alternate:
           * `false` — отключена.
         type: boolean
     $defs:
-      /home/sandbox/.ya/build/build_root/54qq/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/common/schemas.yaml#/WarehouseProgramType:
+      /home/sandbox/.ya/build/build_root/oxq2/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/common/schemas.yaml#/WarehouseProgramType:
         description: |
           Модель работы:
   

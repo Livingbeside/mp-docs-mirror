@@ -2,8 +2,8 @@
 title: Отчет по отзывам о товарах
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/reports/generateGoodsFeedbackReport.md"
-fetched_at: "2026-09-08T13:02:12Z"
-content_sha: 42d1230ceb979f52
+fetched_at: "2026-09-10T01:56:58Z"
+content_sha: 7eab3a82f595d2fd
 ---
 
 ---
@@ -827,7 +827,7 @@ alternate:
       required: false
       schema:
         $ref: >-
-          /home/sandbox/.ya/build/build_root/54qq/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/reports/schemas.yaml#/ReportFormatType
+          /home/sandbox/.ya/build/build_root/oxq2/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/reports/schemas.yaml#/ReportFormatType
   headers: []
   body: |-
     {

@@ -14,7 +14,7 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: e37cfd241ced4475
+content_sha: cbcb1ac6eb515a6b
 ---
 
 # Информация о товарах в каталоге
@@ -100,7 +100,7 @@ content_sha: e37cfd241ced4475
       - `commodityCodes` — array[object]. Товарные коды.
         - `code` — string **обязательный**. Товарный код.
         - `type` — string (CUSTOMS_COMMODITY_CODE, IKPU_CODE, OKPD2_CODE) **обязательный**. Тип товарного кода.
-      - `certificates` — array[string]. Номера документов на товар: сертификата, декларации соответствия и т. п. Передавать можно только номера документов, сканы которого загружены в кабинете продавца по [инструкции](https://yandex.ru/support/marketplace/assortment/restrictions/certificates.html).
+      - `certificates` — array[string]. Номера документов на товар: сертификата, декларации соответствия и т. п. Документы можно создать с помощью [POST v1/businesses/{businessId}/offers/documents/create](../../reference/documents/createDocuments.md).
       - `boxCount` — integer<int32>. Количество грузовых мест. Параметр используется, если товар представляет собой несколько коробок, упаковок и так далее. Например, кондиционер занимает два места — внешний и внутренний блоки в двух коробках. Для товаров, занимающих одно место, не передавайте этот параметр.
       - `condition` — object. Состояние уцененного товара. Используется только для товаров, продаваемых с уценкой. [Правила продажи уцененных товаров](https://yandex.ru/support/marketplace/assortment/restrictions/used-goods.html)
         - `type` — string (PREOWNED, SHOWCASESAMPLE, REFURBISHED, REDUCTION, RENOVATED, NOT_SPECIFIED). Тип уценки.

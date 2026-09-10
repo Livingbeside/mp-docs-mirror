@@ -2,8 +2,8 @@
 title: Получение временных интервалов для изменения заказа
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/orders/getOrderUpdateOptions.md"
-fetched_at: "2026-09-08T13:01:40Z"
-content_sha: 76721e12c1b40c2f
+fetched_at: "2026-09-10T01:56:28Z"
+content_sha: 5b2abf60f05227c0
 ---
 
 ---
@@ -1073,7 +1073,7 @@ alternate:
         x-hidden: true
         $ref: '#/$defs/OrderUpdateOptionType'
     $defs:
-      /home/sandbox/.ya/build/build_root/54qq/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/orders/api/getOrderUpdateOptions.yaml#/OrderUpdateOptionType:
+      /home/sandbox/.ya/build/build_root/oxq2/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/orders/api/getOrderUpdateOptions.yaml#/OrderUpdateOptionType:
         description: |
           Тип изменения заказа:
   

@@ -98,7 +98,7 @@
         "value": {
           "code": "base token is not allowed for this path",
           "detail": "base token is not allowed",
-          "origin": "s2s-finance",
+          "origin": "ag-marketplace",
           "requestId": "722199b2e15bbca48cc1d488a7989976",
           "status": 403,
           "statusText": "Forbidden",
@@ -114,7 +114,7 @@
             "example": {
               "code": "07e4668e--a53a3d31f8b0-[UK-oWaVDUqNrKG]; 03bce=277; 84bd353bf-75",
               "detail": "token problem; token is malformed: could not base64 decode signature: illegal base64 data at input byte 84",
-              "origin": "s2s-api-auth-catalog",
+              "origin": "ag-marketplace",
               "requestId": "7b80742415072fe8b6b7f7761f1d1211",
               "status": 401,
               "statusText": "Unauthorized",
@@ -252,7 +252,7 @@
             "example": {
               "code": "07e4668e-ac2242c5c8c5-[UK-4dx7JUdskGZ]",
               "detail": "limited by c122a060-a7fb-4bb4-abb0-32fd4e18d489",
-              "origin": "s2s-api-auth-catalog",
+              "origin": "ag-marketplace",
               "requestId": "9d3c02cc698f8b041c661a7c28bed293",
               "status": 429,
               "statusText": "Too Many Requests",

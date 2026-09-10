@@ -9,7 +9,7 @@ tags:
 spec_version: items
 source: "https://dev.wildberries.ru/docs/openapi/item-management"
 deprecated: false
-content_sha: 43b07f277cce07d9
+content_sha: ee97cc5143f825e0
 ---
 
 # Список карточек товаров
@@ -121,7 +121,6 @@ content_sha: 43b07f277cce07d9
       - `productNumber` — string. Дополнительный номер документа
       - `tradeName` — string. Торговое наименование
       - `applicant` — string. Представитель изготовителя медицинского изделия
-      - `quantity` — integer. Количество товаров по электронному сертификату
       - `startDate` — string<date-time>. Дата и время начала срока действия документа
       - `endDate` — string<date-time>. Дата и время окончания срока действия документа
       - `isEndless` — boolean. Бессрочный ли документ: - `true` — да, документ бессрочный - `false` — нет, у документа есть срок действия

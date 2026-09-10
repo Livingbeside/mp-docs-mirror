@@ -2,9 +2,9 @@
 title: API Яндекс Маркета для продавцов — все методы
 api: yandex-market
 spec_version: LATEST
-operations: 165
+operations: 169
 source: "https://yandex.ru/dev/market/partner-api/"
-content_sha: bde8c1c7145ad7c0
+content_sha: c29ef4715a8a33a7
 ---
 
 # API Яндекс Маркета для продавцов
@@ -21,7 +21,7 @@ API Яндекс Маркета помогает продавцам автома
 
 * получение отчетов.
 
-Версия спеки: `LATEST` · методов: **165** · разделов справки: **0**
+Версия спеки: `LATEST` · методов: **169** · разделов справки: **0**
 
 Источник: https://yandex.ru/dev/market/partner-api/
 
@@ -70,6 +70,10 @@ API Яндекс Маркета помогает продавцам автома
 | `POST` | `/v1/businesses/{businessId}/goods-questions` | goods-questions | [Получение вопросов о товарах продавца](goods-questions/post-v1-businesses-businessid-goods-questions.md) |
 | `POST` | `/v1/businesses/{businessId}/logistics-points` | logistic-points | [Получение точек ПВЗ Маркета](logistic-points/post-v1-businesses-businessid-logistics-points.md) |
 | `POST` | `/v1/businesses/{businessId}/offer-mappings/barcodes/generate` | business-offer-mappings | [Генерация штрихкодов](business-offer-mappings/post-v1-businesses-businessid-offer-mappings-barcodes-generate.md) |
+| `POST` | `/v1/businesses/{businessId}/offers/documents/create` | documents | [Создание документов](documents/post-v1-businesses-businessid-offers-documents-create.md) |
+| `POST` | `/v1/businesses/{businessId}/offers/documents/delete` | documents | [Удаление документов](documents/post-v1-businesses-businessid-offers-documents-delete.md) |
+| `POST` | `/v1/businesses/{businessId}/offers/documents/update` | documents | [Обновление документов](documents/post-v1-businesses-businessid-offers-documents-update.md) |
+| `POST` | `/v1/businesses/{businessId}/offers/documents` | documents | [Получение документов](documents/post-v1-businesses-businessid-offers-documents.md) |
 | `POST` | `/v1/businesses/{businessId}/operations` | operations | [Получение статусов операций](operations/post-v1-businesses-businessid-operations.md) |
 | `POST` | `/v1/businesses/{businessId}/orders` | orders | [Информация о заказах в кабинете](orders/post-v1-businesses-businessid-orders.md) |
 | `POST` | `/v1/businesses/{businessId}/reports/marketing-detalization/generate` | reports | [Отчет по счету маркетинга](reports/post-v1-businesses-businessid-reports-marketing-detalization-generate.md) |

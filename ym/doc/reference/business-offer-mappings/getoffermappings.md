@@ -2,8 +2,8 @@
 title: В кабинете
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/business-offer-mappings/getOfferMappings.md"
-fetched_at: "2026-09-08T13:01:11Z"
-content_sha: 081a25bfc0c50af6
+fetched_at: "2026-09-10T01:56:00Z"
+content_sha: 8e8af322dcde0c3e
 ---
 
 ---
@@ -1720,7 +1720,7 @@ alternate:
   
   Номера документов на товар: сертификата, декларации соответствия и т. п.
   
-  Передавать можно только номера документов, сканы которого загружены в кабинете продавца по [инструкции](https://yandex.ru/support/marketplace/assortment/restrictions/certificates.html).
+  Документы можно создать с помощью [POST v1/businesses/{businessId}/offers/documents/create](https://yandex.ru/dev/market/partner-api/doc/ru/reference/documents/createDocuments.md).
   
   
   _Min items:_{.json-schema-reset .json-schema-assertion} `1`
@@ -4927,7 +4927,7 @@ alternate:
       required: false
       schema:
         $ref: >-
-          /home/sandbox/.ya/build/build_root/54qq/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/business-offer-mappings/schemas.yaml#/CatalogLanguageType
+          /home/sandbox/.ya/build/build_root/oxq2/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/business-offer-mappings/schemas.yaml#/CatalogLanguageType
   headers: []
   body: |-
     {

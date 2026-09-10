@@ -2,8 +2,8 @@
 title: Отчет «Конкурентная позиция»
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/reports/generateCompetitorsPositionReport.md"
-fetched_at: "2026-09-08T13:02:07Z"
-content_sha: c2238ab884abaeaa
+fetched_at: "2026-09-10T01:56:54Z"
+content_sha: a1678c3596448a62
 ---
 
 ---
@@ -901,7 +901,7 @@ alternate:
       required: false
       schema:
         $ref: >-
-          /home/sandbox/.ya/build/build_root/54qq/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/reports/schemas.yaml#/ReportFormatType
+          /home/sandbox/.ya/build/build_root/oxq2/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/reports/schemas.yaml#/ReportFormatType
   headers: []
   body: |-
     {

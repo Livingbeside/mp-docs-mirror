@@ -2,8 +2,8 @@
 title: Готовые ярлыки для одного заказа
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/order-labels/generateOrderLabels.md"
-fetched_at: "2026-09-08T13:01:48Z"
-content_sha: d26812f6c6079d3e
+fetched_at: "2026-09-10T01:56:38Z"
+content_sha: 38417c6eb0381c8b
 ---
 
 ---
@@ -804,7 +804,7 @@ alternate:
       required: false
       schema:
         $ref: >-
-          /home/sandbox/.ya/build/build_root/54qq/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/order-labels/schemas.yaml#/PageFormatType
+          /home/sandbox/.ya/build/build_root/oxq2/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/order-labels/schemas.yaml#/PageFormatType
   headers: []
   body: null
   schema: {}

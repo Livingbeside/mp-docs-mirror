@@ -2,8 +2,8 @@
 title: Отчет по заказам с ювелирными изделиями
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/reports/generateJewelryFiscalReport.md"
-fetched_at: "2026-09-08T13:02:16Z"
-content_sha: 0685c7f85f46a65b
+fetched_at: "2026-09-10T01:57:00Z"
+content_sha: e81ba4f4eb2ffe62
 ---
 
 ---
@@ -901,7 +901,7 @@ alternate:
       required: false
       schema:
         $ref: >-
-          /home/sandbox/.ya/build/build_root/54qq/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/reports/schemas.yaml#/ReportFormatType
+          /home/sandbox/.ya/build/build_root/oxq2/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/reports/schemas.yaml#/ReportFormatType
   headers: []
   body: |-
     {

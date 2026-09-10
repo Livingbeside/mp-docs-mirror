@@ -2,8 +2,8 @@
 title: Создание
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/outlets/createOutlet.md"
-fetched_at: "2026-09-08T13:01:55Z"
-content_sha: 2da97e2893948c61
+fetched_at: "2026-09-10T01:56:44Z"
+content_sha: 7ef5e54a9a02b14d
 ---
 
 ---
@@ -2098,7 +2098,7 @@ alternate:
             type: integer
             format: int64
     $defs:
-      /home/sandbox/.ya/build/build_root/54qq/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/common/schemas.yaml#/DayOfWeekType:
+      /home/sandbox/.ya/build/build_root/oxq2/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/common/schemas.yaml#/DayOfWeekType:
         description: |
           День недели:
   

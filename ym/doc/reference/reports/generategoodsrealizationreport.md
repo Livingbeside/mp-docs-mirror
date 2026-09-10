@@ -2,8 +2,8 @@
 title: Отчет по реализации
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/reports/generateGoodsRealizationReport.md"
-fetched_at: "2026-09-08T13:02:18Z"
-content_sha: 60d34ad298e1976a
+fetched_at: "2026-09-10T01:57:01Z"
+content_sha: 682bb9140c7e6c6b
 ---
 
 ---
@@ -2253,7 +2253,7 @@ alternate:
       required: false
       schema:
         $ref: >-
-          /home/sandbox/.ya/build/build_root/54qq/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/reports/schemas.yaml#/ReportFormatType
+          /home/sandbox/.ya/build/build_root/oxq2/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/reports/schemas.yaml#/ReportFormatType
   headers: []
   body: |-
     {

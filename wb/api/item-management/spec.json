@@ -557,7 +557,7 @@
         "value": {
           "code": "base token is not allowed for this path",
           "detail": "base token is not allowed",
-          "origin": "s2s-finance",
+          "origin": "ag-marketplace",
           "requestId": "722199b2e15bbca48cc1d488a7989976",
           "status": 403,
           "statusText": "Forbidden",
@@ -674,6 +674,64 @@
           "error": true,
           "errorText": "Unexpected result"
         }
+      },
+      "UpdateListings": {
+        "value": [
+          {
+            "brand": "",
+            "characteristics": [
+              {
+                "id": 14177450,
+                "value": [
+                  "хлопок 50% акрил 50%"
+                ]
+              },
+              {
+                "id": 50,
+                "value": [
+                  "свободный крой"
+                ]
+              }
+            ],
+            "description": "12345",
+            "dimensions": {
+              "height": 15,
+              "length": 35,
+              "weightBrutto": 3,
+              "width": 40
+            },
+            "documents": {
+              "excludeDocuments": false,
+              "items": [
+                {
+                  "applicant": "Applicant Name",
+                  "endDate": "2026-01-14T03:00:00+03:00",
+                  "id": "019f3c09-8c1f-7063-aee4-c45969fb2dc5",
+                  "isEndless": false,
+                  "number": "123456",
+                  "productNumber": "123456",
+                  "startDate": "2023-01-15T03:00:00+03:00",
+                  "tradeName": "Trade Name",
+                  "type": 1
+                }
+              ]
+            },
+            "kizMarked": true,
+            "nmID": 11111111,
+            "sizes": [
+              {
+                "chrtID": 12345678,
+                "skus": [
+                  "123487653460134"
+                ],
+                "techSize": "ONE SIZE",
+                "wbSize": "78-90"
+              }
+            ],
+            "title": "Свитер женский оверсайз с горлом",
+            "vendorCode": "wbiz72wmro"
+          }
+        ]
       },
       "UploadDataLimit": {
         "description": "Превышен лимит загружаемых данных",
@@ -1416,7 +1474,7 @@
             "example": {
               "code": "07e4668e--a53a3d31f8b0-[UK-oWaVDUqNrKG]; 03bce=277; 84bd353bf-75",
               "detail": "token problem; token is malformed: could not base64 decode signature: illegal base64 data at input byte 84",
-              "origin": "s2s-api-auth-catalog",
+              "origin": "ag-marketplace",
               "requestId": "7b80742415072fe8b6b7f7761f1d1211",
               "status": 401,
               "statusText": "Unauthorized",
@@ -1554,7 +1612,7 @@
             "example": {
               "code": "07e4668e-ac2242c5c8c5-[UK-4dx7JUdskGZ]",
               "detail": "limited by c122a060-a7fb-4bb4-abb0-32fd4e18d489",
-              "origin": "s2s-api-auth-catalog",
+              "origin": "ag-marketplace",
               "requestId": "9d3c02cc698f8b041c661a7c28bed293",
               "status": 429,
               "statusText": "Too Many Requests",
@@ -7373,47 +7431,12 @@
         "requestBody": {
           "content": {
             "application/json": {
+              "examples": {
+                "UpdateListings": {
+                  "$ref": "#/components/examples/UpdateListings"
+                }
+              },
               "schema": {
-                "example": [
-                  {
-                    "brand": "",
-                    "characteristics": [
-                      {
-                        "id": 14177450,
-                        "value": [
-                          "хлопок 50% акрил 50%"
-                        ]
-                      },
-                      {
-                        "id": 50,
-                        "value": [
-                          "свободный крой"
-                        ]
-                      }
-                    ],
-                    "description": "12345",
-                    "dimensions": {
-                      "height": 15,
-                      "length": 35,
-                      "weightBrutto": 3,
-                      "width": 40
-                    },
-                    "kizMarked": true,
-                    "nmID": 11111111,
-                    "sizes": [
-                      {
-                        "chrtID": 12345678,
-                        "skus": [
-                          "123487653460134"
-                        ],
-                        "techSize": "ONE SIZE",
-                        "wbSize": "78-90"
-                      }
-                    ],
-                    "title": "Свитер женский оверсайз с горлом",
-                    "vendorCode": "wbiz72wmro"
-                  }
-                ],
                 "items": {
                   "maximum": 3000,
                   "minimum": 1,
@@ -7629,7 +7652,7 @@
                 "example": {
                   "code": "71d3de1b-001e-488f-bbf5-55c31254fbeb",
                   "detail": "https://openapi.wildberries.ru/content/api/ru/",
-                  "origin": "s2s-api-auth-content",
+                  "origin": "ag-content",
                   "requestId": "MN8usr6RfrzWHZfucSvNgb",
                   "status": 413,
                   "statusText": "Request Entity Too Large",
@@ -7935,7 +7958,7 @@
                 "example": {
                   "code": "71d3de1b-001e-488f-bbf5-55c31254fbeb",
                   "detail": "https://openapi.wildberries.ru/content/api/ru/",
-                  "origin": "s2s-api-auth-content",
+                  "origin": "ag-content",
                   "requestId": "MN8usr6RfrzWHZfucSvNgb",
                   "status": 413,
                   "statusText": "Request Entity Too Large",
@@ -8335,7 +8358,7 @@
                 "example": {
                   "code": "71d3de1b-001e-488f-bbf5-55c31254fbeb",
                   "detail": "https://openapi.wildberries.ru/content/api/ru/",
-                  "origin": "s2s-api-auth-content",
+                  "origin": "ag-content",
                   "requestId": "MN8usr6RfrzWHZfucSvNgb",
                   "status": 413,
                   "statusText": "Request Entity Too Large",
@@ -9314,7 +9337,6 @@
                             "id": "019f3c09-8c1f-7063-aee4-c45969fb2dc5",
                             "number": "123456",
                             "productNumber": "123456",
-                            "quantity": 100,
                             "startDate": "2023-01-15T03:00:00+03:00",
                             "tradeName": "Trade Name",
                             "type": 1,
@@ -9486,10 +9508,6 @@
                                     "productNumber": {
                                       "description": "Дополнительный номер документа",
                                       "type": "string"
-                                    },
-                                    "quantity": {
-                                      "description": "Количество товаров по электронному сертификату",
-                                      "type": "integer"
                                     },
                                     "startDate": {
                                       "description": "Дата и время начала срока действия документа",
