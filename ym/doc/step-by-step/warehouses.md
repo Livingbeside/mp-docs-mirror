@@ -2,8 +2,8 @@
 title: Склады
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/warehouses.md"
-fetched_at: "2026-09-04T01:57:56Z"
-content_sha: 0c38110864ab4076
+fetched_at: "2026-09-11T01:57:29Z"
+content_sha: a5f2c511b90de148
 ---
 
 ---
@@ -14,10 +14,10 @@ alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/step-by-step/warehouses.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/warehouses.md
   - https://yandex.ru/dev/market/partner-api/doc/zh/step-by-step/warehouses.md
-  - href: ru/step-by-step/warehouses.md
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/warehouses.md
     type: text/markdown
     title: Markdown version
-  - href: ../llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
     type: text/markdown
     title: llms.txt
 ---

@@ -2,8 +2,8 @@
 title: Удаление
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/outlets/deleteOutlet.md"
-fetched_at: "2026-09-04T01:58:56Z"
-content_sha: 31c4637062419b09
+fetched_at: "2026-09-11T01:58:30Z"
+content_sha: f7460805141b9a8b
 ---
 
 ---
@@ -14,10 +14,10 @@ alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/outlets/deleteOutlet.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/outlets/deleteOutlet.md
   - https://yandex.ru/dev/market/partner-api/doc/zh/reference/outlets/deleteOutlet.md
-  - href: ru/reference/outlets/deleteOutlet.md
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/outlets/deleteOutlet.md
     type: text/markdown
     title: Markdown version
-  - href: ../../llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
     type: text/markdown
     title: llms.txt
 ---

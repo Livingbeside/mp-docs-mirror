@@ -2,8 +2,8 @@
 title: Управление товарами и карточками
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/_auto/scopes_summary/pages/offers-and-cards-management.md"
-fetched_at: "2026-09-04T01:57:35Z"
-content_sha: bc5fa2d3a584db8a
+fetched_at: "2026-09-11T01:57:08Z"
+content_sha: 495a3a16caa18dc8
 ---
 
 ---
@@ -14,10 +14,10 @@ alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/_auto/scopes_summary/pages/offers-and-cards-management.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/_auto/scopes_summary/pages/offers-and-cards-management.md
   - https://yandex.ru/dev/market/partner-api/doc/zh/_auto/scopes_summary/pages/offers-and-cards-management.md
-  - href: ru/_auto/scopes_summary/pages/offers-and-cards-management.md
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/_auto/scopes_summary/pages/offers-and-cards-management.md
     type: text/markdown
     title: Markdown version
-  - href: ../../../llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
     type: text/markdown
     title: llms.txt
 ---
@@ -60,6 +60,26 @@ alternate:
 [POST v2/businesses/{businessId}/offer-cards/update](https://yandex.ru/dev/market/partner-api/doc/ru/reference/content/updateOfferContent.md)
 |
 Редактирование категорийных характеристик товара
+||
+||
+[POST v1/businesses/{businessId}/offers/documents/create](https://yandex.ru/dev/market/partner-api/doc/ru/reference/documents/createDocuments.md)
+|
+Создание документов
+||
+||
+[POST v1/businesses/{businessId}/offers/documents/update](https://yandex.ru/dev/market/partner-api/doc/ru/reference/documents/updateDocuments.md)
+|
+Обновление документов
+||
+||
+[POST v1/businesses/{businessId}/offers/documents/delete](https://yandex.ru/dev/market/partner-api/doc/ru/reference/documents/deleteDocuments.md)
+|
+Удаление документов
+||
+||
+[POST v1/businesses/{businessId}/offers/documents](https://yandex.ru/dev/market/partner-api/doc/ru/reference/documents/getDocuments.md)
+|
+Получение документов
 ||
 ||
 [POST v2/businesses/{businessId}/offer-mappings](https://yandex.ru/dev/market/partner-api/doc/ru/reference/business-offer-mappings/getOfferMappings.md)

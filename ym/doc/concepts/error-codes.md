@@ -2,8 +2,8 @@
 title: Типы ошибок и что с ними делать
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/concepts/error-codes.md"
-fetched_at: "2026-09-04T01:57:41Z"
-content_sha: 53a9f42de4efc0eb
+fetched_at: "2026-09-11T01:57:14Z"
+content_sha: 0e5c007087a1c098
 ---
 
 ---
@@ -14,10 +14,10 @@ alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/concepts/error-codes.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/concepts/error-codes.md
   - https://yandex.ru/dev/market/partner-api/doc/zh/concepts/error-codes.md
-  - href: ru/concepts/error-codes.md
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/concepts/error-codes.md
     type: text/markdown
     title: Markdown version
-  - href: ../llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
     type: text/markdown
     title: llms.txt
 ---

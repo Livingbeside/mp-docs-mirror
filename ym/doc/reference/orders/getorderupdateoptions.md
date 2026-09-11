@@ -2,8 +2,8 @@
 title: Получение временных интервалов для изменения заказа
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/orders/getOrderUpdateOptions.md"
-fetched_at: "2026-09-10T01:56:28Z"
-content_sha: 5b2abf60f05227c0
+fetched_at: "2026-09-11T01:58:16Z"
+content_sha: 4ccdf48ab7d01982
 ---
 
 ---
@@ -14,10 +14,10 @@ alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/orders/getOrderUpdateOptions.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/orders/getOrderUpdateOptions.md
   - https://yandex.ru/dev/market/partner-api/doc/zh/reference/orders/getOrderUpdateOptions.md
-  - href: ru/reference/orders/getOrderUpdateOptions.md
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/orders/getOrderUpdateOptions.md
     type: text/markdown
     title: Markdown version
-  - href: ../../llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
     type: text/markdown
     title: llms.txt
 ---
@@ -1073,7 +1073,7 @@ alternate:
         x-hidden: true
         $ref: '#/$defs/OrderUpdateOptionType'
     $defs:
-      /home/sandbox/.ya/build/build_root/oxq2/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/orders/api/getOrderUpdateOptions.yaml#/OrderUpdateOptionType:
+      /home/sandbox/.ya/build/build_root/givs/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/orders/api/getOrderUpdateOptions.yaml#/OrderUpdateOptionType:
         description: |
           Тип изменения заказа:
   

@@ -2,8 +2,8 @@
 title: Настройка магазинов
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/_auto/scopes_summary/pages/settings-management.md"
-fetched_at: "2026-09-04T01:57:38Z"
-content_sha: b29cfcd22b95744c
+fetched_at: "2026-09-11T01:57:11Z"
+content_sha: 3bc0a7f43b407b75
 ---
 
 ---
@@ -14,10 +14,10 @@ alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/_auto/scopes_summary/pages/settings-management.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/_auto/scopes_summary/pages/settings-management.md
   - https://yandex.ru/dev/market/partner-api/doc/zh/_auto/scopes_summary/pages/settings-management.md
-  - href: ru/_auto/scopes_summary/pages/settings-management.md
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/_auto/scopes_summary/pages/settings-management.md
     type: text/markdown
     title: Markdown version
-  - href: ../../../llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
     type: text/markdown
     title: llms.txt
 ---

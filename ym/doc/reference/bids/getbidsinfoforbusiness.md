@@ -2,8 +2,8 @@
 title: Установленные ставки
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/bids/getBidsInfoForBusiness.md"
-fetched_at: "2026-09-04T01:59:23Z"
-content_sha: 70950e183df8198d
+fetched_at: "2026-09-11T01:58:58Z"
+content_sha: 065c8a719fc1e1cb
 ---
 
 ---
@@ -14,10 +14,10 @@ alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/bids/getBidsInfoForBusiness.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/bids/getBidsInfoForBusiness.md
   - https://yandex.ru/dev/market/partner-api/doc/zh/reference/bids/getBidsInfoForBusiness.md
-  - href: ru/reference/bids/getBidsInfoForBusiness.md
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/bids/getBidsInfoForBusiness.md
     type: text/markdown
     title: Markdown version
-  - href: ../../llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
     type: text/markdown
     title: llms.txt
 ---

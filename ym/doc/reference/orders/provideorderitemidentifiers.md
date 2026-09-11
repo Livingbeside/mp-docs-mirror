@@ -2,8 +2,8 @@
 title: Передача кодов маркировки
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/orders/provideOrderItemIdentifiers.md"
-fetched_at: "2026-09-04T01:58:32Z"
-content_sha: ecb8a57b8549fdf7
+fetched_at: "2026-09-11T01:58:06Z"
+content_sha: 36a54bb377cd00cc
 ---
 
 ---
@@ -14,10 +14,10 @@ alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/orders/provideOrderItemIdentifiers.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/orders/provideOrderItemIdentifiers.md
   - https://yandex.ru/dev/market/partner-api/doc/zh/reference/orders/provideOrderItemIdentifiers.md
-  - href: ru/reference/orders/provideOrderItemIdentifiers.md
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/orders/provideOrderItemIdentifiers.md
     type: text/markdown
     title: Markdown version
-  - href: ../../llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
     type: text/markdown
     title: llms.txt
 ---

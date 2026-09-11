@@ -2,8 +2,8 @@
 title: Статусы FBY-, FBS- и Экспресс-возвратов
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/fby-fbs-express-return-status-model.md"
-fetched_at: "2026-09-04T01:57:53Z"
-content_sha: cc7a916fb287f63e
+fetched_at: "2026-09-11T01:57:26Z"
+content_sha: 950a6fd46022c2c8
 ---
 
 ---
@@ -14,10 +14,10 @@ alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/step-by-step/fby-fbs-express-return-status-model.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/fby-fbs-express-return-status-model.md
   - https://yandex.ru/dev/market/partner-api/doc/zh/step-by-step/fby-fbs-express-return-status-model.md
-  - href: ru/step-by-step/fby-fbs-express-return-status-model.md
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/fby-fbs-express-return-status-model.md
     type: text/markdown
     title: Markdown version
-  - href: ../llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
     type: text/markdown
     title: llms.txt
 ---

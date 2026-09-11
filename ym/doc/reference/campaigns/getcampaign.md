@@ -2,8 +2,8 @@
 title: Информация о магазине
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/campaigns/getCampaign.md"
-fetched_at: "2026-09-04T01:58:08Z"
-content_sha: 3413173373f1ef55
+fetched_at: "2026-09-11T01:57:37Z"
+content_sha: d252e16f49f8fbce
 ---
 
 ---
@@ -14,10 +14,10 @@ alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/campaigns/getCampaign.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/campaigns/getCampaign.md
   - https://yandex.ru/dev/market/partner-api/doc/zh/reference/campaigns/getCampaign.md
-  - href: ru/reference/campaigns/getCampaign.md
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/campaigns/getCampaign.md
     type: text/markdown
     title: Markdown version
-  - href: ../../llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
     type: text/markdown
     title: llms.txt
 ---

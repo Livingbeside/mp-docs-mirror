@@ -2,8 +2,8 @@
 title: Транспортная накладная
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/shipments/downloadShipmentTransportationWaybill.md"
-fetched_at: "2026-09-04T01:58:49Z"
-content_sha: 4ce6ee6a766d75f7
+fetched_at: "2026-09-11T01:58:21Z"
+content_sha: 68b4cea0c9962c6b
 ---
 
 ---
@@ -14,10 +14,10 @@ alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/shipments/downloadShipmentTransportationWaybill.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/shipments/downloadShipmentTransportationWaybill.md
   - https://yandex.ru/dev/market/partner-api/doc/zh/reference/shipments/downloadShipmentTransportationWaybill.md
-  - href: ru/reference/shipments/downloadShipmentTransportationWaybill.md
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/shipments/downloadShipmentTransportationWaybill.md
     type: text/markdown
     title: Markdown version
-  - href: ../../llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
     type: text/markdown
     title: llms.txt
 ---

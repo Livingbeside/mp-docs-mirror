@@ -2,8 +2,8 @@
 title: Получение списка чатов
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/chats/getChats.md"
-fetched_at: "2026-09-04T01:59:26Z"
-content_sha: 5ab3e81a604bf0ce
+fetched_at: "2026-09-11T01:59:01Z"
+content_sha: 44fb6d82c4097b26
 ---
 
 ---
@@ -14,10 +14,10 @@ alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/chats/getChats.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/chats/getChats.md
   - https://yandex.ru/dev/market/partner-api/doc/zh/reference/chats/getChats.md
-  - href: ru/reference/chats/getChats.md
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/chats/getChats.md
     type: text/markdown
     title: Markdown version
-  - href: ../../llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
     type: text/markdown
     title: llms.txt
 ---

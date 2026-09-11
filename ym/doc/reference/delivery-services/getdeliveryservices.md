@@ -2,8 +2,8 @@
 title: Справочник служб доставки
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/delivery-services/getDeliveryServices.md"
-fetched_at: "2026-09-04T01:59:31Z"
-content_sha: d5bbc6c1d252b1f5
+fetched_at: "2026-09-11T01:59:08Z"
+content_sha: 928b4bccc8e4e2a2
 ---
 
 ---
@@ -14,10 +14,10 @@ alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/delivery-services/getDeliveryServices.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/delivery-services/getDeliveryServices.md
   - https://yandex.ru/dev/market/partner-api/doc/zh/reference/delivery-services/getDeliveryServices.md
-  - href: ru/reference/delivery-services/getDeliveryServices.md
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/delivery-services/getDeliveryServices.md
     type: text/markdown
     title: Markdown version
-  - href: ../../llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
     type: text/markdown
     title: llms.txt
 ---

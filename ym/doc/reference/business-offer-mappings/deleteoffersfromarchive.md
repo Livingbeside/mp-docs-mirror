@@ -2,8 +2,8 @@
 title: Удаление из архива
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/business-offer-mappings/deleteOffersFromArchive.md"
-fetched_at: "2026-09-04T01:58:18Z"
-content_sha: efd5a855667e058b
+fetched_at: "2026-09-11T01:57:51Z"
+content_sha: d9f5c2d602dab151
 ---
 
 ---
@@ -14,10 +14,10 @@ alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/business-offer-mappings/deleteOffersFromArchive.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/business-offer-mappings/deleteOffersFromArchive.md
   - https://yandex.ru/dev/market/partner-api/doc/zh/reference/business-offer-mappings/deleteOffersFromArchive.md
-  - href: ru/reference/business-offer-mappings/deleteOffersFromArchive.md
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/business-offer-mappings/deleteOffersFromArchive.md
     type: text/markdown
     title: Markdown version
-  - href: ../../llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
     type: text/markdown
     title: llms.txt
 ---

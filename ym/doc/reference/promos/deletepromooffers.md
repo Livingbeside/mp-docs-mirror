@@ -2,8 +2,8 @@
 title: Удаление товаров из акции
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/promos/deletePromoOffers.md"
-fetched_at: "2026-09-04T01:58:28Z"
-content_sha: 7e65155b9a10dd33
+fetched_at: "2026-09-11T01:58:03Z"
+content_sha: 4dc86ebdd7f6cb93
 ---
 
 ---
@@ -14,10 +14,10 @@ alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/promos/deletePromoOffers.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/promos/deletePromoOffers.md
   - https://yandex.ru/dev/market/partner-api/doc/zh/reference/promos/deletePromoOffers.md
-  - href: ru/reference/promos/deletePromoOffers.md
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/promos/deletePromoOffers.md
     type: text/markdown
     title: Markdown version
-  - href: ../../llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
     type: text/markdown
     title: llms.txt
 ---

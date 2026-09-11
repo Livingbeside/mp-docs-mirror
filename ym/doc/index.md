@@ -2,8 +2,8 @@
 title: index.md
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/index.md"
-fetched_at: "2026-09-04T01:57:31Z"
-content_sha: 96968900e45f7342
+fetched_at: "2026-09-11T01:57:05Z"
+content_sha: 0b007fa54e6119d5
 ---
 
 ---
@@ -14,10 +14,10 @@ alternate:
   - en/
   - ru/
   - zh/
-  - href: ru/index.md
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/index.md
     type: text/markdown
     title: Markdown version
-  - href: llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
     type: text/markdown
     title: llms.txt
 ---

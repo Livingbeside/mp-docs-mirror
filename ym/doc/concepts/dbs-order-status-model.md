@@ -2,8 +2,8 @@
 title: Статусы заказов
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/concepts/dbs-order-status-model.md"
-fetched_at: "2026-09-04T01:57:51Z"
-content_sha: f0853b2713cc3e11
+fetched_at: "2026-09-11T01:57:23Z"
+content_sha: a0070c8f0527f81e
 ---
 
 ---
@@ -14,10 +14,10 @@ alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/concepts/dbs-order-status-model.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/concepts/dbs-order-status-model.md
   - https://yandex.ru/dev/market/partner-api/doc/zh/concepts/dbs-order-status-model.md
-  - href: ru/concepts/dbs-order-status-model.md
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/concepts/dbs-order-status-model.md
     type: text/markdown
     title: Markdown version
-  - href: ../llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
     type: text/markdown
     title: llms.txt
 ---

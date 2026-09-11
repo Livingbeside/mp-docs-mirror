@@ -2,8 +2,8 @@
 title: DBS
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/overview/dbs.md"
-fetched_at: "2026-09-04T01:58:00Z"
-content_sha: c2ea158ba17d4dd6
+fetched_at: "2026-09-11T01:57:32Z"
+content_sha: b41613446df3b0e5
 ---
 
 ---
@@ -14,10 +14,10 @@ alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/overview/dbs.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/overview/dbs.md
   - https://yandex.ru/dev/market/partner-api/doc/zh/overview/dbs.md
-  - href: ru/overview/dbs.md
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/overview/dbs.md
     type: text/markdown
     title: Markdown version
-  - href: ../llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
     type: text/markdown
     title: llms.txt
 ---

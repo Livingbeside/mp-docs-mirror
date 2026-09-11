@@ -2,8 +2,8 @@
 title: Просмотр финансовой информации и отчётности
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/_auto/scopes_summary/pages/finance-and-accounting.md"
-fetched_at: "2026-09-04T01:57:37Z"
-content_sha: ed5d4123b4d95fcf
+fetched_at: "2026-09-11T01:57:11Z"
+content_sha: e2ce353215448588
 ---
 
 ---
@@ -14,10 +14,10 @@ alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/_auto/scopes_summary/pages/finance-and-accounting.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/_auto/scopes_summary/pages/finance-and-accounting.md
   - https://yandex.ru/dev/market/partner-api/doc/zh/_auto/scopes_summary/pages/finance-and-accounting.md
-  - href: ru/_auto/scopes_summary/pages/finance-and-accounting.md
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/_auto/scopes_summary/pages/finance-and-accounting.md
     type: text/markdown
     title: Markdown version
-  - href: ../../../llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
     type: text/markdown
     title: llms.txt
 ---

@@ -2,8 +2,8 @@
 title: В магазине
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/offers/getCampaignOffers.md"
-fetched_at: "2026-09-04T01:58:14Z"
-content_sha: 96066ec3b907591d
+fetched_at: "2026-09-11T01:57:47Z"
+content_sha: b9722449bf4625f4
 ---
 
 ---
@@ -14,10 +14,10 @@ alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/offers/getCampaignOffers.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/offers/getCampaignOffers.md
   - https://yandex.ru/dev/market/partner-api/doc/zh/reference/offers/getCampaignOffers.md
-  - href: ru/reference/offers/getCampaignOffers.md
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/offers/getCampaignOffers.md
     type: text/markdown
     title: Markdown version
-  - href: ../../llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
     type: text/markdown
     title: llms.txt
 ---

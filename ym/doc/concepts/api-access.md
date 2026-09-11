@@ -2,8 +2,8 @@
 title: Управление доступом к API
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/concepts/api-access.md"
-fetched_at: "2026-09-04T01:57:43Z"
-content_sha: 1ee7083688eb46bf
+fetched_at: "2026-09-11T01:57:17Z"
+content_sha: 3cff4e2a79219d1c
 ---
 
 ---
@@ -14,10 +14,10 @@ alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/concepts/api-access.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/concepts/api-access.md
   - https://yandex.ru/dev/market/partner-api/doc/zh/concepts/api-access.md
-  - href: ru/concepts/api-access.md
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/concepts/api-access.md
     type: text/markdown
     title: Markdown version
-  - href: ../llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
     type: text/markdown
     title: llms.txt
 ---

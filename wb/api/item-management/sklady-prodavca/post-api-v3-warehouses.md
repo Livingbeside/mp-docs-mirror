@@ -9,7 +9,7 @@ tags:
 spec_version: items
 source: "https://dev.wildberries.ru/docs/openapi/item-management"
 deprecated: false
-content_sha: 51f745bf31ff64ac
+content_sha: 4b8e2c1965467cca
 ---
 
 # Создать склад продавца
@@ -28,7 +28,7 @@ content_sha: 51f745bf31ff64ac
 
 Один запрос с кодами ответов 4XX учитывается как 10 запросов.
 
-В песочнице — максимум 1 запрос в секунду суммарно для всех методов Контента.
+В песочнице — максимум 1 запрос в секунду суммарно для всех методов Маркетплейса.
 
 ## Запрос
 

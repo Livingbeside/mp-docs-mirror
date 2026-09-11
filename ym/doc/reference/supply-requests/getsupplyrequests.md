@@ -2,8 +2,8 @@
 title: Информация о заявках
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/supply-requests/getSupplyRequests.md"
-fetched_at: "2026-09-04T01:58:52Z"
-content_sha: f2374a17b105025c
+fetched_at: "2026-09-11T01:58:26Z"
+content_sha: b770b4417e1bb1aa
 ---
 
 ---
@@ -14,10 +14,10 @@ alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/supply-requests/getSupplyRequests.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/supply-requests/getSupplyRequests.md
   - https://yandex.ru/dev/market/partner-api/doc/zh/reference/supply-requests/getSupplyRequests.md
-  - href: ru/reference/supply-requests/getSupplyRequests.md
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/supply-requests/getSupplyRequests.md
     type: text/markdown
     title: Markdown version
-  - href: ../../llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
     type: text/markdown
     title: llms.txt
 ---
@@ -549,7 +549,8 @@ alternate:
             null
           ],
           "targetLocation": {},
-          "transitLocation": null
+          "transitLocation": null,
+          "etrnIdentifier": {}
         }
       ],
       "paging": {
@@ -634,7 +635,11 @@ alternate:
             },
             "type": "FULFILLMENT"
           },
-          "transitLocation": null
+          "transitLocation": null,
+          "etrnIdentifier": {
+            "identifier": "YLOG_ID",
+            "value": "SCM_123456"
+          }
         }
       ],
       "paging": {
@@ -692,7 +697,11 @@ alternate:
               "address": {},
               "type": "FULFILLMENT"
             },
-            "transitLocation": null
+            "transitLocation": null,
+            "etrnIdentifier": {
+              "identifier": "YLOG_ID",
+              "value": "SCM_123456"
+            }
           }
         ],
         "paging": {
@@ -1300,6 +1309,63 @@ alternate:
   
   <div class="openapi-entity">
   
+  ### EtrnIdentifierDTO {#entity-EtrnIdentifierDTO}
+  
+  Идентификатор поставки для создания электронной транспортной накладной.
+  
+  #|
+  || **Name** | **Description** ||
+  ||
+  
+  _identifier_{.json-schema-reset .json-schema-property .json-schema-required}
+  {.table-cell}|
+  **Type**: string
+  
+  Наименование идентификатора.
+  
+  _Min length:_{.json-schema-reset .json-schema-assertion} `7`
+  
+  _Max length:_{.json-schema-reset .json-schema-assertion} `7`
+  
+  _Pattern:_{.json-schema-reset .json-schema-assertion} `^YLOG_ID$`
+  
+  _Example:_{.json-schema-reset .json-schema-example} `YLOG_ID`
+  {.table-cell}
+  ||
+  ||
+  
+  _value_{.json-schema-reset .json-schema-property .json-schema-required}
+  {.table-cell}|
+  **Type**: string
+  
+  Значение идентификатора.
+  
+  _Min length:_{.json-schema-reset .json-schema-assertion} `5`
+  
+  _Max length:_{.json-schema-reset .json-schema-assertion} `23`
+  
+  _Pattern:_{.json-schema-reset .json-schema-assertion} `^SCM_[0-9]{1,19}$`
+  
+  _Example:_{.json-schema-reset .json-schema-example} `SCM_123456`
+  {.table-cell}
+  ||
+  |#{.json-schema-properties}
+  
+  {% cut "**Example**" %}{.json-schema-example}
+  
+  ```json translate=no
+  {
+    "identifier": "YLOG_ID",
+    "value": "SCM_123456"
+  }
+  ```
+  
+  {% endcut %}
+  
+  </div>
+  
+  <div class="openapi-entity">
+  
   ### SupplyRequestDTO {#entity-SupplyRequestDTO}
   
   Информация о заявке на поставку, вывоз или утилизацию.
@@ -1525,6 +1591,28 @@ alternate:
   ||
   ||
   
+  _etrnIdentifier_{.json-schema-reset .json-schema-property}
+  {.table-cell}|
+  **Type**: [EtrnIdentifierDTO](#entity-EtrnIdentifierDTO)
+  
+  Идентификатор для [создания ЭТрН](https://yandex.ru/support/marketplace/ru/storage/shipment/etrn).
+  
+  Идентификатор поставки для создания электронной транспортной накладной.
+  
+  {% cut "**Example**" %}{.json-schema-example}
+  
+  ```json translate=no
+  {
+    "identifier": "YLOG_ID",
+    "value": "SCM_123456"
+  }
+  ```
+  
+  {% endcut %}
+  {.table-cell}
+  ||
+  ||
+  
   _parentLink_{.json-schema-reset .json-schema-property}
   {.table-cell}|
   **Type**: [SupplyRequestReferenceDTO](#entity-SupplyRequestReferenceDTO) &#124; null
@@ -1627,7 +1715,11 @@ alternate:
       },
       "type": "FULFILLMENT"
     },
-    "transitLocation": null
+    "transitLocation": null,
+    "etrnIdentifier": {
+      "identifier": "YLOG_ID",
+      "value": "SCM_123456"
+    }
   }
   ```
   
@@ -1735,7 +1827,11 @@ alternate:
         },
         "type": "FULFILLMENT"
       },
-      "transitLocation": null
+      "transitLocation": null,
+      "etrnIdentifier": {
+        "identifier": "YLOG_ID",
+        "value": "SCM_123456"
+      }
     }
   ]
   ```
@@ -1811,7 +1907,11 @@ alternate:
           },
           "type": "FULFILLMENT"
         },
-        "transitLocation": null
+        "transitLocation": null,
+        "etrnIdentifier": {
+          "identifier": "YLOG_ID",
+          "value": "SCM_123456"
+        }
       }
     ],
     "paging": {

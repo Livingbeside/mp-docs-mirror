@@ -2,8 +2,8 @@
 title: В кабинете
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/prices/updateBusinessPrices.md"
-fetched_at: "2026-09-10T01:56:08Z"
-content_sha: febf31d31c8e80bf
+fetched_at: "2026-09-11T01:57:54Z"
+content_sha: a069b648cd94f720
 ---
 
 ---
@@ -14,10 +14,10 @@ alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/prices/updateBusinessPrices.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/prices/updateBusinessPrices.md
   - https://yandex.ru/dev/market/partner-api/doc/zh/reference/prices/updateBusinessPrices.md
-  - href: ru/reference/prices/updateBusinessPrices.md
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/prices/updateBusinessPrices.md
     type: text/markdown
     title: Markdown version
-  - href: ../../llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
     type: text/markdown
     title: llms.txt
 ---
@@ -1268,7 +1268,7 @@ alternate:
                       maximum: 100000000
                       exclusiveMinimum: true
     $defs:
-      /home/sandbox/.ya/build/build_root/oxq2/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/common/schemas.yaml#/CurrencyType:
+      /home/sandbox/.ya/build/build_root/givs/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/common/schemas.yaml#/CurrencyType:
         type: string
         description: |
           Коды валют:

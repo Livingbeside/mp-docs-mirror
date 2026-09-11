@@ -2,8 +2,8 @@
 title: Получение доступных вариантов доставки
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/delivery-options/getDeliveryOptions.md"
-fetched_at: "2026-09-04T01:58:42Z"
-content_sha: 884e17792fb5c861
+fetched_at: "2026-09-11T01:58:15Z"
+content_sha: 9c0ad6eaf8ab80c4
 ---
 
 ---
@@ -14,10 +14,10 @@ alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/delivery-options/getDeliveryOptions.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/delivery-options/getDeliveryOptions.md
   - https://yandex.ru/dev/market/partner-api/doc/zh/reference/delivery-options/getDeliveryOptions.md
-  - href: ru/reference/delivery-options/getDeliveryOptions.md
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/delivery-options/getDeliveryOptions.md
     type: text/markdown
     title: Markdown version
-  - href: ../../llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
     type: text/markdown
     title: llms.txt
 ---

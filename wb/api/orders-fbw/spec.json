@@ -1,6 +1,16 @@
 {
   "components": {
     "examples": {
+      "BadDraftIdFormat": {
+        "description": "Значение параметра `draftId` некорректно",
+        "value": {
+          "detail": "Неверный формат draftId",
+          "origin": "supply-api",
+          "requestId": "f02ddbea3875b553cab3ed899b7abd33",
+          "status": 400,
+          "title": "bad request"
+        }
+      },
       "BadFromOrTill": {
         "description": "Указанная дата некорректна",
         "value": {
@@ -51,6 +61,26 @@
           "title": "bad request"
         }
       },
+      "BadRequestDraftItems0": {
+        "description": "Не указано значение параметра\n",
+        "value": {
+          "detail": "Укажите значение параметра 'skus'",
+          "origin": "supply-api",
+          "requestId": "a6bdc2a4d2fde51c2036fa8af2483886",
+          "status": 400,
+          "title": "bad request"
+        }
+      },
+      "BadRequestDraftItems1": {
+        "description": "Не указан параметр\n",
+        "value": {
+          "detail": "Укажите параметр 'skus'",
+          "origin": "supply-api",
+          "requestId": "a6bdc2a4d2fde51c2036fa8af2483886",
+          "status": 400,
+          "title": "bad request"
+        }
+      },
       "BadStatusIDs": {
         "description": "Значение параметра `statusIDs` некорректно",
         "value": {
@@ -97,6 +127,30 @@
           "detail": "Неверный формат isPreorderID",
           "origin": "supply-api",
           "requestId": "a6bdc2a4d2fde51c2036fa8af2483886",
+          "status": 400,
+          "title": "bad request"
+        }
+      },
+      "InvalidSku": {
+        "description": "Переданы некорректные баркоды.\nНи один баркод не добавлен в черновик\n",
+        "value": {
+          "results": [
+            {
+              "error": {
+                "detail": "Создайте карточку товара с этим баркодом",
+                "title": "Invalid sku"
+              },
+              "sku": "1234567"
+            }
+          ]
+        }
+      },
+      "ItemsArrayLimitExceeded": {
+        "description": "Превышен максимальный размер массива `items`",
+        "value": {
+          "detail": "Превышен максимальный размер массива items. Максимум 1000",
+          "origin": "supply-api",
+          "requestId": "test-request-id-1",
           "status": 400,
           "title": "bad request"
         }
@@ -210,6 +264,18 @@
             "transitWarehouseName": "СЦ Гомель 2"
           }
         ]
+      },
+      "SuccessResponse": {
+        "description": "Все баркоды успешно добавлены в черновик",
+        "value": {
+          "results": []
+        }
+      },
+      "SuccessResponse1": {
+        "description": "Успешно",
+        "value": {
+          "results": []
+        }
       },
       "SupplyNotFound": {
         "value": {
@@ -417,6 +483,37 @@
       }
     },
     "schemas": {
+      "errors.DraftError": {
+        "properties": {
+          "detail": {
+            "description": "Детали ошибки",
+            "type": "string"
+          },
+          "origin": {
+            "description": "ID внутреннего сервиса WB",
+            "type": "string"
+          },
+          "requestId": {
+            "description": "Уникальный ID запроса",
+            "type": "string"
+          },
+          "status": {
+            "description": "HTTP статус-код",
+            "type": "integer"
+          },
+          "title": {
+            "description": "Заголовок ошибки",
+            "type": "string"
+          }
+        },
+        "required": [
+          "status",
+          "title",
+          "requestId",
+          "origin"
+        ],
+        "type": "object"
+      },
       "models.Box": {
         "example": {
           "barcodes": [
@@ -472,6 +569,213 @@
         },
         "required": [
           "type"
+        ],
+        "type": "object"
+      },
+      "models.DraftAddItemsErrorResponse": {
+        "properties": {
+          "results": {
+            "description": "Список невалидных баркодов с ошибками",
+            "items": {
+              "$ref": "#/components/schemas/models.DraftAddItemsResultItem"
+            },
+            "type": "array"
+          }
+        },
+        "required": [
+          "results"
+        ],
+        "type": "object"
+      },
+      "models.DraftAddItemsResultError": {
+        "properties": {
+          "detail": {
+            "description": "Детали ошибки",
+            "example": "Создайте карточку товара с этим баркодом",
+            "type": "string"
+          },
+          "title": {
+            "description": "Заголовок ошибки",
+            "example": "Invalid sku",
+            "type": "string"
+          }
+        },
+        "required": [
+          "detail",
+          "title"
+        ],
+        "type": "object"
+      },
+      "models.DraftAddItemsResultItem": {
+        "properties": {
+          "error": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/models.DraftAddItemsResultError"
+              }
+            ],
+            "description": "Детали ошибки"
+          },
+          "sku": {
+            "description": "Баркод",
+            "type": "string"
+          }
+        },
+        "required": [
+          "error",
+          "sku"
+        ],
+        "type": "object"
+      },
+      "models.DraftAdditemsRequest": {
+        "properties": {
+          "items": {
+            "description": "Список товаров",
+            "items": {
+              "$ref": "#/components/schemas/models.Item"
+            },
+            "maxItems": 1000,
+            "type": "array"
+          }
+        },
+        "required": [
+          "items"
+        ],
+        "type": "object"
+      },
+      "models.DraftCreateResponse": {
+        "properties": {
+          "draftId": {
+            "description": "ID черновика",
+            "example": "cd20d135-f13f-47a0-903c-3bd268b92047",
+            "type": "string"
+          }
+        },
+        "required": [
+          "draftId"
+        ],
+        "type": "object"
+      },
+      "models.DraftDeleteItemsErrorResponse": {
+        "properties": {
+          "results": {
+            "type": "array"
+          }
+        },
+        "required": [
+          "results"
+        ],
+        "type": "object"
+      },
+      "models.DraftDeleteitemsRequest": {
+        "properties": {
+          "skus": {
+            "description": "Список баркодов",
+            "items": {
+              "type": "string"
+            },
+            "minItems": 1,
+            "type": "array"
+          }
+        },
+        "required": [
+          "skus"
+        ],
+        "type": "object"
+      },
+      "models.DraftItem": {
+        "properties": {
+          "createdAt": {
+            "description": "Дата и время создания черновика",
+            "format": "ISO 8601",
+            "type": "string"
+          },
+          "draftId": {
+            "description": "ID черновика",
+            "type": "string"
+          },
+          "itemQuantity": {
+            "description": "Количество единиц товара",
+            "type": "integer"
+          },
+          "phone": {
+            "description": "Телефон пользователя, создавшего черновик",
+            "type": "string"
+          },
+          "skuQuantity": {
+            "description": "Количество баркодов",
+            "type": "integer"
+          },
+          "updatedAt": {
+            "description": "Дата и время последнего обновления черновика",
+            "format": "ISO 8601",
+            "type": "string"
+          }
+        },
+        "required": [
+          "draftId",
+          "phone",
+          "createdAt",
+          "updatedAt",
+          "skuQuantity",
+          "itemQuantity"
+        ],
+        "type": "object"
+      },
+      "models.DraftItemItem": {
+        "properties": {
+          "brandName": {
+            "description": "Бренд",
+            "type": "string"
+          },
+          "color": {
+            "description": "Цвет товара",
+            "type": "string"
+          },
+          "imgSrc": {
+            "description": "Ссылка на изображение товара",
+            "type": "string"
+          },
+          "nmId": {
+            "description": "Артикул WB",
+            "type": "integer"
+          },
+          "quantity": {
+            "description": "Количество единиц товара",
+            "type": "integer"
+          },
+          "sku": {
+            "description": "Баркод",
+            "type": "string"
+          },
+          "subjectName": {
+            "description": "Предмет",
+            "type": "string"
+          },
+          "techSize": {
+            "description": "Размер товара",
+            "type": "string"
+          },
+          "title": {
+            "description": "Название товара",
+            "type": "string"
+          },
+          "vendorCode": {
+            "description": "Артикул продавца",
+            "type": "string"
+          }
+        },
+        "required": [
+          "sku",
+          "color",
+          "quantity",
+          "brandName",
+          "imgSrc",
+          "nmId",
+          "subjectName",
+          "techSize",
+          "title",
+          "vendorCode"
         ],
         "type": "object"
       },
@@ -620,6 +924,70 @@
           "Virtual",
           "UnloadedOnGate"
         ]
+      },
+      "models.Item": {
+        "properties": {
+          "quantity": {
+            "description": "Количество единиц товара\n",
+            "maximum": 999999,
+            "minimum": 1,
+            "type": "integer"
+          },
+          "sku": {
+            "description": "Баркод из карточки товара",
+            "type": "string"
+          }
+        },
+        "required": [
+          "quantity",
+          "sku"
+        ],
+        "type": "object"
+      },
+      "models.ListDraftItemsResponse": {
+        "properties": {
+          "itemQuantity": {
+            "description": "Количество единиц товара",
+            "type": "integer"
+          },
+          "items": {
+            "description": "Список товаров",
+            "items": {
+              "$ref": "#/components/schemas/models.DraftItemItem"
+            },
+            "type": "array"
+          },
+          "skuQuantity": {
+            "description": "Количество баркодов",
+            "type": "integer"
+          }
+        },
+        "required": [
+          "skuQuantity",
+          "itemQuantity",
+          "items"
+        ],
+        "type": "object"
+      },
+      "models.ListDraftsResponse": {
+        "properties": {
+          "drafts": {
+            "description": "Список черновиков",
+            "items": {
+              "$ref": "#/components/schemas/models.DraftItem"
+            },
+            "type": "array"
+          },
+          "total": {
+            "description": "Общее количество черновиков",
+            "type": "integer"
+          }
+        },
+        "required": [
+          "total",
+          "drafts"
+        ],
+        "type": "object"
       },
       "models.OptionsResultModel": {
         "properties": {
@@ -1025,6 +1393,540 @@
   },
   "openapi": "3.0.1",
   "paths": {
+    "/api/supplies/v1/drafts": {
+      "get": {
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\n\n<div class=\"description_token\">\n    Метод <a href=\"./api-information#tag/authorization/Pravila-ispolzovaniya-tokenov-dostupa-k-API\">доступен</a> по\n        <strong>Персональному</strong> токену, \n        <strong>Сервисному</strong> токену\n</div>\n\nМетод возвращает список черновиков поставок.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 30 запросов | 2 сек | 10 запросов |\n</div>\n",
+        "operationId": "getV1Drafts",
+        "parameters": [
+          {
+            "description": "Количество черновиков в ответе",
+            "in": "query",
+            "name": "limit",
+            "schema": {
+              "default": 1000,
+              "maximum": 1000,
+              "minimum": 0,
+              "type": "integer"
+            }
+          },
+          {
+            "description": "Сколько элементов пропустить. Например, для значения 10 ответ начнется с 11 элемента",
+            "in": "query",
+            "name": "offset",
+            "schema": {
+              "default": 0,
+              "minimum": 0,
+              "type": "integer"
+            }
+          },
+          {
+            "description": "Сортировка:\n  - `createdDt` — по дате создания черновика\n  - `updatedDt` — по дате обновления черновика\n",
+            "in": "query",
+            "name": "sort",
+            "schema": {
+              "default": "createDt",
+              "enum": [
+                "createDt",
+                "updateDt"
+              ],
+              "type": "string"
+            }
+          },
+          {
+            "description": "Порядок выдачи:\n  - `desc` — по убыванию\n  - `asc` — по возрастанию\n",
+            "in": "query",
+            "name": "order",
+            "schema": {
+              "default": "desc",
+              "enum": [
+                "asc",
+                "desc"
+              ],
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "example": {
+                  "drafts": [
+                    {
+                      "createdAt": "2025-06-17T08:11:57.767Z",
+                      "draftId": "b5aed067-69d4-47b8-a5d0-591c615288f9",
+                      "itemQuantity": 1,
+                      "phone": "+7 123 *** 23 23",
+                      "skuQuantity": 5,
+                      "updatedAt": "2025-06-17T08:11:57.767Z"
+                    }
+                  ],
+                  "total": 1
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/models.ListDraftsResponse"
+                }
+              }
+            },
+            "description": "<span class='response__value response__value_success'>Успешно</span>"
+          },
+          "400": {
+            "content": {
+              "application/json": {
+                "examples": {
+                  "BadLimitFormat": {
+                    "$ref": "#/components/examples/BadLimitFormat"
+                  },
+                  "BadOffsetFormat": {
+                    "$ref": "#/components/examples/BadOffsetFormat"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/errors.DraftError"
+                }
+              }
+            },
+            "description": "<span class='response__value '>Неправильный запрос</span>"
+          },
+          "401": {
+            "$ref": "#/components/responses/401"
+          },
+          "429": {
+            "$ref": "#/components/responses/429"
+          }
+        },
+        "summary": "Список черновиков{{ /api/supplies/v1/drafts }}",
+        "tags": [
+          "supplyDrafts"
+        ],
+        "x-category": "supplies",
+        "x-readonly-method": true,
+        "x-token-types": [
+          "personal",
+          "service"
+        ]
+      },
+      "post": {
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\n\n<div class=\"description_token\">\n    Метод <a href=\"./api-information#tag/authorization/Pravila-ispolzovaniya-tokenov-dostupa-k-API\">доступен</a> по\n        <strong>Персональному</strong> токену, \n        <strong>Сервисному</strong> токену\n</div>\n\nМетод создаёт пустой черновик поставки.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 30 запросов | 2 сек | 10 запросов |\n</div>\n",
+        "operationId": "postV1Drafts",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/models.DraftCreateResponse"
+                }
+              }
+            },
+            "description": "<span class='response__value response__value_success'>Успешно</span>"
+          },
+          "401": {
+            "$ref": "#/components/responses/401"
+          },
+          "429": {
+            "$ref": "#/components/responses/429"
+          }
+        },
+        "summary": "Создать черновик{{ /api/supplies/v1/drafts }}",
+        "tags": [
+          "supplyDrafts"
+        ],
+        "x-category": "supplies",
+        "x-readonly-method": false,
+        "x-token-types": [
+          "personal",
+          "service"
+        ]
+      },
+      "servers": [
+        {
+          "url": "https://supplies-api.wildberries.ru"
+        }
+      ]
+    },
+    "/api/supplies/v1/drafts/{draftId}": {
+      "delete": {
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\n\n<div class=\"description_token\">\n    Метод <a href=\"./api-information#tag/authorization/Pravila-ispolzovaniya-tokenov-dostupa-k-API\">доступен</a> по\n        <strong>Персональному</strong> токену, \n        <strong>Сервисному</strong> токену\n</div>\n\nМетод удаляет черновик поставки по его ID.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 30 запросов | 2 сек | 10 запросов |\n</div>\n",
+        "operationId": "deleteV1DraftsDraftId",
+        "parameters": [
+          {
+            "description": "ID черновика",
+            "in": "path",
+            "name": "draftId",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "<span class='response__value response__value_success'>Успешно</span>"
+          },
+          "400": {
+            "content": {
+              "application/json": {
+                "example": {
+                  "detail": "Неверный формат draftId",
+                  "origin": "supply-api",
+                  "requestId": "a6bdc2a4d2fde51c2036fa8af2483886",
+                  "status": 400,
+                  "title": "bad request"
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/errors.DraftError"
+                }
+              }
+            },
+            "description": "<span class='response__value '>Неправильный запрос</span>"
+          },
+          "401": {
+            "$ref": "#/components/responses/401"
+          },
+          "404": {
+            "content": {
+              "application/json": {
+                "example": {
+                  "detail": "Черновик не найден",
+                  "origin": "supply-api",
+                  "requestId": "a6bdc2a4d2fde51c2036fa8af2483886",
+                  "status": 404,
+                  "title": "not found"
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/errors.DraftError"
+                }
+              }
+            },
+            "description": "<span class='response__value '>Не найдено</span>"
+          },
+          "429": {
+            "$ref": "#/components/responses/429"
+          }
+        },
+        "summary": "Удалить черновик{{ /api/supplies/v1/drafts/{draftId} }}",
+        "tags": [
+          "supplyDrafts"
+        ],
+        "x-category": "supplies",
+        "x-readonly-method": false,
+        "x-token-types": [
+          "personal",
+          "service"
+        ]
+      },
+      "servers": [
+        {
+          "url": "https://supplies-api.wildberries.ru"
+        }
+      ]
+    },
+    "/api/supplies/v1/drafts/{draftId}/items": {
+      "delete": {
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\n\n<div class=\"description_token\">\n    Метод <a href=\"./api-information#tag/authorization/Pravila-ispolzovaniya-tokenov-dostupa-k-API\">доступен</a> по\n        <strong>Персональному</strong> токену, \n        <strong>Сервисному</strong> токену\n</div>\n\nМетод удаляет товары из черновика поставки по списку баркодов.\n\n  <div class=\"description_important\">\n  Баркоды не валидируются. Если в запросе вы передали некорректные баркоды, вы не получите ошибку. При этом корректные баркоды будут удалены из черновика.\n  </div>\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 30 запросов | 2 сек | 10 запросов |\n</div>\n",
+        "operationId": "deleteV1DraftsDraftIdItems",
+        "parameters": [
+          {
+            "description": "ID черновика",
+            "in": "path",
+            "name": "draftId",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "example": {
+                "skus": [
+                  "123456789"
+                ]
+              },
+              "schema": {
+                "$ref": "#/components/schemas/models.DraftDeleteitemsRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "examples": {
+                  "SuccessResponse": {
+                    "$ref": "#/components/examples/SuccessResponse1"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/models.DraftDeleteItemsErrorResponse"
+                }
+              }
+            },
+            "description": "<span class='response__value response__value_success'>Успешно\n</span>"
+          },
+          "400": {
+            "content": {
+              "application/json": {
+                "examples": {
+                  "EmptyParameter": {
+                    "$ref": "#/components/examples/BadRequestDraftItems0"
+                  },
+                  "WrongParameter": {
+                    "$ref": "#/components/examples/BadRequestDraftItems1"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/errors.DraftError"
+                }
+              }
+            },
+            "description": "<span class='response__value '>Неправильный запрос</span>"
+          },
+          "401": {
+            "$ref": "#/components/responses/401"
+          },
+          "404": {
+            "content": {
+              "application/json": {
+                "example": {
+                  "detail": "Черновик не найден",
+                  "origin": "supply-api",
+                  "requestId": "a6bdc2a4d2fde51c2036fa8af2483886",
+                  "status": 404,
+                  "title": "not found"
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/errors.DraftError"
+                }
+              }
+            },
+            "description": "<span class='response__value '>Не найдено</span>"
+          },
+          "429": {
+            "$ref": "#/components/responses/429"
+          }
+        },
+        "summary": "Удалить товары из черновика{{ /api/supplies/v1/drafts/{draftId}/items }}",
+        "tags": [
+          "supplyDrafts"
+        ],
+        "x-category": "supplies",
+        "x-readonly-method": false,
+        "x-token-types": [
+          "personal",
+          "service"
+        ]
+      },
+      "get": {
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\n\n<div class=\"description_token\">\n    Метод <a href=\"./api-information#tag/authorization/Pravila-ispolzovaniya-tokenov-dostupa-k-API\">доступен</a> по\n        <strong>Персональному</strong> токену, \n        <strong>Сервисному</strong> токену\n</div>\n\nМетод возвращает список товаров черновика.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 30 запросов | 2 сек | 10 запросов |\n</div>\n",
+        "operationId": "getV1DraftsDraftIdItems",
+        "parameters": [
+          {
+            "description": "ID черновика",
+            "in": "path",
+            "name": "draftId",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "example": {
+                  "itemQuantity": 1,
+                  "items": [
+                    {
+                      "brandName": "Brand",
+                      "color": "красный бархат",
+                      "imgSrc": "https://basket-13.wbbasket.ru/vol123/part3456/123456789/images/tm/1.webp",
+                      "nmId": 123456789,
+                      "quantity": 1000,
+                      "sku": "2039395667350",
+                      "subjectName": "Комбинезоны для животных",
+                      "techSize": "48",
+                      "title": "комбенизон для собак",
+                      "vendorCode": "1111"
+                    }
+                  ],
+                  "skuQuantity": 1
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/models.ListDraftItemsResponse"
+                }
+              }
+            },
+            "description": "<span class='response__value response__value_success'>Успешно</span>"
+          },
+          "400": {
+            "content": {
+              "application/json": {
+                "examples": {
+                  "BadDraftIdFormat": {
+                    "$ref": "#/components/examples/BadDraftIdFormat"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/errors.DraftError"
+                }
+              }
+            },
+            "description": "<span class='response__value '>Неправильный запрос</span>"
+          },
+          "401": {
+            "$ref": "#/components/responses/401"
+          },
+          "404": {
+            "content": {
+              "application/json": {
+                "example": {
+                  "detail": "Черновик не найден",
+                  "origin": "supply-api",
+                  "requestId": "a6bdc2a4d2fde51c2036fa8af2483886",
+                  "status": 404,
+                  "title": "not found"
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/errors.DraftError"
+                }
+              }
+            },
+            "description": "<span class='response__value '>Не найдено</span>"
+          },
+          "429": {
+            "$ref": "#/components/responses/429"
+          }
+        },
+        "summary": "Список товаров в черновике{{ /api/supplies/v1/drafts/{draftId}/items }}",
+        "tags": [
+          "supplyDrafts"
+        ],
+        "x-category": "supplies",
+        "x-readonly-method": true,
+        "x-token-types": [
+          "personal",
+          "service"
+        ]
+      },
+      "post": {
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\n\n<div class=\"description_token\">\n    Метод <a href=\"./api-information#tag/authorization/Pravila-ispolzovaniya-tokenov-dostupa-k-API\">доступен</a> по\n        <strong>Персональному</strong> токену, \n        <strong>Сервисному</strong> токену\n</div>\n\nМетод добавляет товары в черновик поставки.\n\n<div class=\"description_important\">\n\n Метод работает по принципу атомарности:\n  - если все баркоды прошли валидацию успешно, то все товары добавятся в черновик. В ответе вернётся <code>{\"results\":[]}</code>\n  - если хотя бы один баркод не прошел валидацию, ни один товар в черновик не добавится. В ответе вернётся список невалидных баркодов\n\n</div>\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 30 запросов | 2 сек | 10 запросов |\n</div>\n",
+        "operationId": "postV1DraftsDraftIdItems",
+        "parameters": [
+          {
+            "description": "ID черновика",
+            "in": "path",
+            "name": "draftId",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "example": {
+                "items": [
+                  {
+                    "quantity": 1,
+                    "sku": "1234567"
+                  },
+                  {
+                    "quantity": 1,
+                    "sku": "2000000512907"
+                  }
+                ]
+              },
+              "schema": {
+                "$ref": "#/components/schemas/models.DraftAdditemsRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "examples": {
+                  "SuccessResponse": {
+                    "$ref": "#/components/examples/SuccessResponse"
+                  },
+                  "invalidSku": {
+                    "$ref": "#/components/examples/InvalidSku"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/models.DraftAddItemsErrorResponse"
+                }
+              }
+            },
+            "description": "<span class='response__value response__value_success'>Успешно\n</span>"
+          },
+          "400": {
+            "content": {
+              "application/json": {
+                "examples": {
+                  "BadDraftIdFormat": {
+                    "$ref": "#/components/examples/BadDraftIdFormat"
+                  },
+                  "ItemsArrayLimitExceeded": {
+                    "$ref": "#/components/examples/ItemsArrayLimitExceeded"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/errors.DraftError"
+                }
+              }
+            },
+            "description": "<span class='response__value '>Неправильный запрос</span>"
+          },
+          "401": {
+            "$ref": "#/components/responses/401"
+          },
+          "404": {
+            "content": {
+              "application/json": {
+                "example": {
+                  "detail": "Черновик не найден",
+                  "origin": "supply-api",
+                  "requestId": "a6bdc2a4d2fde51c2036fa8af2483886",
+                  "status": 404,
+                  "title": "not found"
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/errors.DraftError"
+                }
+              }
+            },
+            "description": "<span class='response__value '>Не найдено</span>"
+          },
+          "429": {
+            "$ref": "#/components/responses/429"
+          }
+        },
+        "summary": "Добавить товары в черновик{{ /api/supplies/v1/drafts/{draftId}/items }}",
+        "tags": [
+          "supplyDrafts"
+        ],
+        "x-category": "supplies",
+        "x-readonly-method": false,
+        "x-token-types": [
+          "personal",
+          "service"
+        ]
+      },
+      "servers": [
+        {
+          "url": "https://supplies-api.wildberries.ru"
+        }
+      ]
+    },
     "/api/v1/acceptance/options": {
       "post": {
         "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод [временно отключён](https://dev.wildberries.ru/release-notes?id=570)\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 мин | 6 запросов | 10 сек | 6 запросов |\n| Сервисный | 1 мин | 6 запросов | 10 сек | 6 запросов |\n| Базовый с секретом | 1 мин | 6 запросов | 10 сек | 6 запросов |\n| Базовый | 1 ч | 2 запроса | 30 мин | 1 запрос |\n\n<hr>\n\nВ <a href='/sandbox'>песочнице</a> — максимум 1 запрос в секунду суммарно для всех методов.\n\n</div>\n",
@@ -1692,6 +2594,11 @@
       "description": "<div class=\"description_auth\">\n  Для доступа к методам используйте <a href=\"./api-information#tag/authorization/Kak-sozdat-personalnyj-bazovyj-ili-testovyj-token\">токен</a> для категории <strong>Поставки</strong>\n</div>\n\nПолучение информации о поставках товаров для хранения на складах WB:\n  1. [Список поставок](./orders-fbw#tag/suppliesInformation/operation/postV1Supplies)\n  2. [Детали поставки](./orders-fbw#tag/suppliesInformation/operation/getV1SuppliesId)\n  3. [Товары поставки](./orders-fbw#tag/suppliesInformation/operation/getV1SuppliesIdGoods)\n  4. [Упаковка поставки](./orders-fbw#tag/suppliesInformation/operation/getV1SuppliesIdPackage)\n",
       "name": "suppliesInformation",
       "x-displayName": "Информация о поставках"
+    },
+    {
+      "description": "<div class=\"description_auth\">\n  Для доступа к методам используйте <a href=\"./api-information#tag/authorization/Kak-sozdat-personalnyj-bazovyj-ili-testovyj-token\">токен</a> для категории <strong>Поставки</strong>\n</div>\n\nМетоды работы с черновиками поставок:\n  1. [Создать черновик](./orders-fbw#tag/supplyDrafts/operation/postV1Drafts)\n  2. [Добавить товары в черновик](./orders-fbw#tag/supplyDrafts/operation/postV1DraftsDraftIdItems)\n  3. [Список черновиков](./orders-fbw#tag/supplyDrafts/operation/getV1Drafts)\n  4. [Список товаров в черновике](./orders-fbw#tag/supplyDrafts/operation/getV1DraftsDraftIdItems)\n  5. [Удалить товары из черновика](./orders-fbw#tag/supplyDrafts/operation/deleteV1DraftsDraftIdItems)\n  6. [Удалить черновик](./orders-fbw#tag/supplyDrafts/operation/deleteV1DraftsDraftId)\n",
+      "name": "supplyDrafts",
+      "x-displayName": "Черновики поставок"
     }
   ]
 }

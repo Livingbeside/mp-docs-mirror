@@ -2,8 +2,8 @@
 title: Устаревшие методы и параметры
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/changelog/deprecated.md"
-fetched_at: "2026-09-04T01:58:03Z"
-content_sha: 903d9cb4d0e826bc
+fetched_at: "2026-09-11T01:57:35Z"
+content_sha: 2068343d0dc7342a
 ---
 
 ---
@@ -14,10 +14,10 @@ alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/changelog/deprecated.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/changelog/deprecated.md
   - https://yandex.ru/dev/market/partner-api/doc/zh/changelog/deprecated.md
-  - href: ru/changelog/deprecated.md
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/changelog/deprecated.md
     type: text/markdown
     title: Markdown version
-  - href: ../llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
     type: text/markdown
     title: llms.txt
 ---

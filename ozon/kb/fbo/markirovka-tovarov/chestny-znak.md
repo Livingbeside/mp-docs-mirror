@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /fbo/markirovka-tovarov/chestny-znak
 source: "https://seller-edu.ozon.ru/libra/fbo/markirovka-tovarov/chestny-znak"
-updated: "2026-07-18 18:35:39"
+updated: "2026-09-10 12:46:12"
 doc_id: 768
-fetched_at: "2026-08-28T12:11:15Z"
-content_sha: 1a7756daf2665485
+fetched_at: "2026-09-11T01:52:47Z"
+content_sha: 8132210554677081
 ---
 
 # Продажа товаров с маркировкой в «Честном знаке»
@@ -36,9 +36,9 @@ _Главная / Продажа со склада Ozon (FBO) / Маркиров
 2. **Обязательно загружать до поставки, если в заявке есть товары с маркировкой «Честный знак»: **будем запрашивать УПД для всех товаров в заявке, если в ней есть товары с маркировкой и для них действует поэкземплярный учёт.
 3. **Загружать после поставки — необязательно**: загрузите УПД после приёмки по желанию или чтобы передать нам коды маркировки.
 
-Будем сканировать КИЗ при поставке, если в карточке товара выбран признак **Нужен код маркировки**. [Как указать признак](https://seller-edu.ozon.ru/work-with-goods/trebovaniya-k-kartochkam-tovarov/product-information/obyazatelnaya-markirovka-tovarov#как-проверить-маркировку-товаров-в-личном-кабинете)
+Если в карточке товара выбран [признак ](https://seller-edu.ozon.ru/work-with-goods/trebovaniya-k-kartochkam-tovarov/product-information/obyazatelnaya-markirovka-tovarov#%D0%BA%D0%B0%D0%BA-%D0%BF%D1%80%D0%BE%D0%B2%D0%B5%D1%80%D0%B8%D1%82%D1%8C-%D0%BC%D0%B0%D1%80%D0%BA%D0%B8%D1%80%D0%BE%D0%B2%D0%BA%D1%83-%D1%82%D0%BE%D0%B2%D0%B0%D1%80%D0%BE%D0%B2-%D0%B2-%D0%BB%D0%B8%D1%87%D0%BD%D0%BE%D0%BC-%D0%BA%D0%B0%D0%B1%D0%B8%D0%BD%D0%B5%D1%82%D0%B5)**[Нужен код маркировки](https://seller-edu.ozon.ru/work-with-goods/trebovaniya-k-kartochkam-tovarov/product-information/obyazatelnaya-markirovka-tovarov#%D0%BA%D0%B0%D0%BA-%D0%BF%D1%80%D0%BE%D0%B2%D0%B5%D1%80%D0%B8%D1%82%D1%8C-%D0%BC%D0%B0%D1%80%D0%BA%D0%B8%D1%80%D0%BE%D0%B2%D0%BA%D1%83-%D1%82%D0%BE%D0%B2%D0%B0%D1%80%D0%BE%D0%B2-%D0%B2-%D0%BB%D0%B8%D1%87%D0%BD%D0%BE%D0%BC-%D0%BA%D0%B0%D0%B1%D0%B8%D0%BD%D0%B5%D1%82%D0%B5)**, отсканируем КИЗ при поставке и проверим его [в «Честном знаке»](https://xn--80ajghhoc2aj1c8b.xn--p1ai/business/projects/retail/checkout/marking_dates/) по правилам разрешительного режима перед продажей.
 
-[ Подробнее о схемах загрузки УПД](/fbo/documents/hand-in-UPD-2#схема-загрузки-упд)
+[Подробнее о схемах загрузки УПД](/fbo/documents/hand-in-UPD-2#схема-загрузки-упд)
 
 # Как поставить на склад товары с маркировкой в «Честном знаке»
 
@@ -196,7 +196,7 @@ _Главная / Продажа со склада Ozon (FBO) / Маркиров
 
 [со стока](/vozvraty-i-vyvozy/vyvozy-so-stoka-i-postavki/zabrat-so-stoka) — для продукции, принятой на склад. В том числе для товаров, у которых код маркировки не в обороте и вы не можете изменить статус.
 
-При вывозе со стока не сможем вернуть товары с конкретными кодами маркировки: подготовим к вывозу всю продукцию, которая не попала в продажу.
+Со стока можно вывезти только немаркированные товары. Подготовим к выдаче всю продукцию без кодов маркировки, которая не попала в продажу.
 
 # Где посмотреть отчёт по продажам маркированных товаров
 

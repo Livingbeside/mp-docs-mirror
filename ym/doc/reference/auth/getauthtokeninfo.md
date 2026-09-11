@@ -2,8 +2,8 @@
 title: Информация о токене авторизации
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/auth/getAuthTokenInfo.md"
-fetched_at: "2026-09-04T01:59:30Z"
-content_sha: a8619936ac84c04e
+fetched_at: "2026-09-11T01:59:07Z"
+content_sha: e702d3aeb190d65c
 ---
 
 ---
@@ -14,10 +14,10 @@ alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/auth/getAuthTokenInfo.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/auth/getAuthTokenInfo.md
   - https://yandex.ru/dev/market/partner-api/doc/zh/reference/auth/getAuthTokenInfo.md
-  - href: ru/reference/auth/getAuthTokenInfo.md
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/auth/getAuthTokenInfo.md
     type: text/markdown
     title: Markdown version
-  - href: ../../llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
     type: text/markdown
     title: llms.txt
 ---

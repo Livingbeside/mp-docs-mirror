@@ -2,8 +2,8 @@
 title: Отчет по заказам с ювелирными изделиями
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/reports/generateJewelryFiscalReport.md"
-fetched_at: "2026-09-10T01:57:00Z"
-content_sha: e81ba4f4eb2ffe62
+fetched_at: "2026-09-11T01:58:45Z"
+content_sha: 426673c7005d2351
 ---
 
 ---
@@ -14,10 +14,10 @@ alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/reports/generateJewelryFiscalReport.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/reports/generateJewelryFiscalReport.md
   - https://yandex.ru/dev/market/partner-api/doc/zh/reference/reports/generateJewelryFiscalReport.md
-  - href: ru/reference/reports/generateJewelryFiscalReport.md
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/reports/generateJewelryFiscalReport.md
     type: text/markdown
     title: Markdown version
-  - href: ../../llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
     type: text/markdown
     title: llms.txt
 ---
@@ -901,7 +901,7 @@ alternate:
       required: false
       schema:
         $ref: >-
-          /home/sandbox/.ya/build/build_root/oxq2/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/reports/schemas.yaml#/ReportFormatType
+          /home/sandbox/.ya/build/build_root/givs/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/reports/schemas.yaml#/ReportFormatType
   headers: []
   body: |-
     {

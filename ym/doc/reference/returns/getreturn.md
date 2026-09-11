@@ -2,8 +2,8 @@
 title: Информация о невыкупе или возврате
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/returns/getReturn.md"
-fetched_at: "2026-09-04T01:58:58Z"
-content_sha: 8291614ac3b27a48
+fetched_at: "2026-09-11T01:58:33Z"
+content_sha: 0e0794a5e464defc
 ---
 
 ---
@@ -14,10 +14,10 @@ alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/returns/getReturn.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/returns/getReturn.md
   - https://yandex.ru/dev/market/partner-api/doc/zh/reference/returns/getReturn.md
-  - href: ru/reference/returns/getReturn.md
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/returns/getReturn.md
     type: text/markdown
     title: Markdown version
-  - href: ../../llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
     type: text/markdown
     title: llms.txt
 ---

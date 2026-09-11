@@ -11,7 +11,7 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: 7709f7ecb3f8872a
+content_sha: ccc65e418f9e05bd
 ---
 
 # Получение информации о заявках на поставку, вывоз и утилизацию
@@ -104,6 +104,9 @@ content_sha: 7709f7ecb3f8872a
           - `latitude` — number **обязательный**. Широта.
           - `longitude` — number **обязательный**. Долгота.
       - `type` — string (FULFILLMENT, XDOC, PICKUP_POINT) **обязательный**. Тип склада или ПВЗ: * `FULFILLMENT` — склад хранения. * `XDOC` — транзитный склад. * `PICKUP_POINT` — ПВЗ.
+    - `etrnIdentifier` — object. Идентификатор для [создания ЭТрН](https://yandex.ru/support/marketplace/ru/storage/shipment/etrn).
+      - `identifier` — string **обязательный**. Наименование идентификатора.
+      - `value` — string **обязательный**. Значение идентификатора.
   - `paging` — object. Информация о страницах с результатами.
     - `nextPageToken` — string. Идентификатор следующей страницы результатов.
 

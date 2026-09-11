@@ -2,8 +2,8 @@
 title: Вопросы и ответы о товарах
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/goods-questions.md"
-fetched_at: "2026-09-04T01:57:55Z"
-content_sha: c23a2a68abd9c69d
+fetched_at: "2026-09-11T01:57:28Z"
+content_sha: a1a2285755439701
 ---
 
 ---
@@ -14,10 +14,10 @@ alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/step-by-step/goods-questions.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/goods-questions.md
   - https://yandex.ru/dev/market/partner-api/doc/zh/step-by-step/goods-questions.md
-  - href: ru/step-by-step/goods-questions.md
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/goods-questions.md
     type: text/markdown
     title: Markdown version
-  - href: ../llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
     type: text/markdown
     title: llms.txt
 ---

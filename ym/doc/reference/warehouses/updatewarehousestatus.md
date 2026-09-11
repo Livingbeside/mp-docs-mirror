@@ -2,8 +2,8 @@
 title: Изменение статуса склада
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/warehouses/updateWarehouseStatus.md"
-fetched_at: "2026-09-04T01:59:38Z"
-content_sha: 5b30f3325d5ad980
+fetched_at: "2026-09-11T01:59:15Z"
+content_sha: d6dc48167d3dc426
 ---
 
 ---
@@ -14,10 +14,10 @@ alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/warehouses/updateWarehouseStatus.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/warehouses/updateWarehouseStatus.md
   - https://yandex.ru/dev/market/partner-api/doc/zh/reference/warehouses/updateWarehouseStatus.md
-  - href: ru/reference/warehouses/updateWarehouseStatus.md
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/warehouses/updateWarehouseStatus.md
     type: text/markdown
     title: Markdown version
-  - href: ../../llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
     type: text/markdown
     title: llms.txt
 ---

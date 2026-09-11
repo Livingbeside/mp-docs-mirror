@@ -2,8 +2,8 @@
 title: Получение одного чата
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/chats/getChat.md"
-fetched_at: "2026-09-04T01:59:26Z"
-content_sha: a9c68b85f4dd4f7d
+fetched_at: "2026-09-11T01:59:00Z"
+content_sha: dbd9d9c0b43a071e
 ---
 
 ---
@@ -14,10 +14,10 @@ alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/chats/getChat.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/chats/getChat.md
   - https://yandex.ru/dev/market/partner-api/doc/zh/reference/chats/getChat.md
-  - href: ru/reference/chats/getChat.md
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/chats/getChat.md
     type: text/markdown
     title: Markdown version
-  - href: ../../llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
     type: text/markdown
     title: llms.txt
 ---

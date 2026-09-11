@@ -2,8 +2,8 @@
 title: Как работать с уведомлениями
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/push-notifications/index.md"
-fetched_at: "2026-09-04T01:59:38Z"
-content_sha: 19f8b4641d00948e
+fetched_at: "2026-09-11T01:59:16Z"
+content_sha: 94c2e06ddd0bf636
 ---
 
 ---
@@ -14,10 +14,10 @@ alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/push-notifications/index.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/push-notifications/index.md
   - https://yandex.ru/dev/market/partner-api/doc/zh/push-notifications/index.md
-  - href: ru/push-notifications/index.md
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/push-notifications/index.md
     type: text/markdown
     title: Markdown version
-  - href: ../llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
     type: text/markdown
     title: llms.txt
 ---

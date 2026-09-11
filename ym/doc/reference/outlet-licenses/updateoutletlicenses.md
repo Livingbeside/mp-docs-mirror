@@ -2,8 +2,8 @@
 title: Создание и изменение
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/outlet-licenses/updateOutletLicenses.md"
-fetched_at: "2026-09-04T01:58:56Z"
-content_sha: d9b639cbdf26b706
+fetched_at: "2026-09-11T01:58:31Z"
+content_sha: 5201dff0f380ba47
 ---
 
 ---
@@ -14,10 +14,10 @@ alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/outlet-licenses/updateOutletLicenses.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/outlet-licenses/updateOutletLicenses.md
   - https://yandex.ru/dev/market/partner-api/doc/zh/reference/outlet-licenses/updateOutletLicenses.md
-  - href: ru/reference/outlet-licenses/updateOutletLicenses.md
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/outlet-licenses/updateOutletLicenses.md
     type: text/markdown
     title: Markdown version
-  - href: ../../llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
     type: text/markdown
     title: llms.txt
 ---

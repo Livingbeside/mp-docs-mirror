@@ -9,7 +9,7 @@ tags:
 spec_version: items
 source: "https://dev.wildberries.ru/docs/openapi/item-management"
 deprecated: false
-content_sha: 70ba57fc7d1c0542
+content_sha: 88db6b114fb031fc
 ---
 
 # Получить остатки товаров{{ /api/v3/stocks/{warehouseId} }}
@@ -28,7 +28,7 @@ content_sha: 70ba57fc7d1c0542
 
 Один запрос с кодами ответов 4XX учитывается как 10 запросов
 
-В песочнице — максимум 1 запрос в секунду суммарно для всех методов Контента.
+В песочнице — максимум 1 запрос в секунду суммарно для всех методов Маркетплейса.
 
 ## Параметры
 

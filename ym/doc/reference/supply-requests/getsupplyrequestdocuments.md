@@ -2,8 +2,8 @@
 title: Документы по заявке
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/supply-requests/getSupplyRequestDocuments.md"
-fetched_at: "2026-09-04T01:58:53Z"
-content_sha: 0e7be711a97a10c0
+fetched_at: "2026-09-11T01:58:27Z"
+content_sha: fd793daa9bbe5b84
 ---
 
 ---
@@ -14,10 +14,10 @@ alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/supply-requests/getSupplyRequestDocuments.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/supply-requests/getSupplyRequestDocuments.md
   - https://yandex.ru/dev/market/partner-api/doc/zh/reference/supply-requests/getSupplyRequestDocuments.md
-  - href: ru/reference/supply-requests/getSupplyRequestDocuments.md
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/supply-requests/getSupplyRequestDocuments.md
     type: text/markdown
     title: Markdown version
-  - href: ../../llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
     type: text/markdown
     title: llms.txt
 ---

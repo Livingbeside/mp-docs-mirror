@@ -2,8 +2,8 @@
 title: FBS
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/overview/fbs.md"
-fetched_at: "2026-09-04T01:57:58Z"
-content_sha: 66ad9bb28d262e24
+fetched_at: "2026-09-11T01:57:31Z"
+content_sha: 664c3e02946af155
 ---
 
 ---
@@ -14,10 +14,10 @@ alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/overview/fbs.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/overview/fbs.md
   - https://yandex.ru/dev/market/partner-api/doc/zh/overview/fbs.md
-  - href: ru/overview/fbs.md
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/overview/fbs.md
     type: text/markdown
     title: Markdown version
-  - href: ../llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
     type: text/markdown
     title: llms.txt
 ---

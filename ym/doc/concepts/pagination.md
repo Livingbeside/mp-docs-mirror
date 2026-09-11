@@ -2,8 +2,8 @@
 title: Пагинация в запросах
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/concepts/pagination.md"
-fetched_at: "2026-09-04T01:57:42Z"
-content_sha: b68d62f8fdd41370
+fetched_at: "2026-09-11T01:57:15Z"
+content_sha: a9ed543d5898e3f0
 ---
 
 ---
@@ -14,10 +14,10 @@ alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/concepts/pagination.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/concepts/pagination.md
   - https://yandex.ru/dev/market/partner-api/doc/zh/concepts/pagination.md
-  - href: ru/concepts/pagination.md
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/concepts/pagination.md
     type: text/markdown
     title: Markdown version
-  - href: ../llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
     type: text/markdown
     title: llms.txt
 ---

@@ -2,8 +2,8 @@
 title: Отзывы на товары продавца
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/goods-feedback/getGoodsFeedbacks.md"
-fetched_at: "2026-09-10T01:57:11Z"
-content_sha: eb487b90cabbd202
+fetched_at: "2026-09-11T01:58:52Z"
+content_sha: 7f2dffa8303e24cc
 ---
 
 ---
@@ -14,10 +14,10 @@ alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/goods-feedback/getGoodsFeedbacks.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/goods-feedback/getGoodsFeedbacks.md
   - https://yandex.ru/dev/market/partner-api/doc/zh/reference/goods-feedback/getGoodsFeedbacks.md
-  - href: ru/reference/goods-feedback/getGoodsFeedbacks.md
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/goods-feedback/getGoodsFeedbacks.md
     type: text/markdown
     title: Markdown version
-  - href: ../../llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
     type: text/markdown
     title: llms.txt
 ---
@@ -1862,7 +1862,7 @@ alternate:
         description: Фильтр отзывов за баллы Плюса.
         type: boolean
     $defs:
-      /home/sandbox/.ya/build/build_root/oxq2/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/goods-feedback/schemas.yaml#/FeedbackReactionStatusType:
+      /home/sandbox/.ya/build/build_root/givs/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/goods-feedback/schemas.yaml#/FeedbackReactionStatusType:
         description: |
           Статус реакции на отзыв:
   

@@ -2,8 +2,8 @@
 title: Просмотр информации о продвижении товаров
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/_auto/scopes_summary/pages/promotion_read-only.md"
-fetched_at: "2026-09-04T01:57:36Z"
-content_sha: 3863e516a2777029
+fetched_at: "2026-09-11T01:57:10Z"
+content_sha: 5babd9cc0b910c8c
 ---
 
 ---
@@ -14,10 +14,10 @@ alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/_auto/scopes_summary/pages/promotion_read-only.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/_auto/scopes_summary/pages/promotion_read-only.md
   - https://yandex.ru/dev/market/partner-api/doc/zh/_auto/scopes_summary/pages/promotion_read-only.md
-  - href: ru/_auto/scopes_summary/pages/promotion_read-only.md
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/_auto/scopes_summary/pages/promotion_read-only.md
     type: text/markdown
     title: Markdown version
-  - href: ../../../llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
     type: text/markdown
     title: llms.txt
 ---

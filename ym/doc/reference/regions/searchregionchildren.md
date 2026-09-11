@@ -2,8 +2,8 @@
 title: Информация о дочерних регионах
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/regions/searchRegionChildren.md"
-fetched_at: "2026-09-04T01:59:33Z"
-content_sha: 021390603efb353b
+fetched_at: "2026-09-11T01:59:10Z"
+content_sha: 87d8d5f715cdcd13
 ---
 
 ---
@@ -14,10 +14,10 @@ alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/regions/searchRegionChildren.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/regions/searchRegionChildren.md
   - https://yandex.ru/dev/market/partner-api/doc/zh/reference/regions/searchRegionChildren.md
-  - href: ru/reference/regions/searchRegionChildren.md
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/regions/searchRegionChildren.md
     type: text/markdown
     title: Markdown version
-  - href: ../../llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
     type: text/markdown
     title: llms.txt
 ---

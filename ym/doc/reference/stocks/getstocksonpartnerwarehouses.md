@@ -2,8 +2,8 @@
 title: Информация об остатках на складах партнера
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/stocks/getStocksOnPartnerWarehouses.md"
-fetched_at: "2026-09-04T01:58:19Z"
-content_sha: 3438c723d04d03dd
+fetched_at: "2026-09-11T01:57:52Z"
+content_sha: 189be40974a7bf9f
 ---
 
 ---
@@ -14,10 +14,10 @@ alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/stocks/getStocksOnPartnerWarehouses.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/stocks/getStocksOnPartnerWarehouses.md
   - https://yandex.ru/dev/market/partner-api/doc/zh/reference/stocks/getStocksOnPartnerWarehouses.md
-  - href: ru/reference/stocks/getStocksOnPartnerWarehouses.md
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/stocks/getStocksOnPartnerWarehouses.md
     type: text/markdown
     title: Markdown version
-  - href: ../../llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
     type: text/markdown
     title: llms.txt
 ---

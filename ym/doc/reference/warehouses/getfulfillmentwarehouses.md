@@ -2,8 +2,8 @@
 title: Идентификаторы складов Маркета (FBY и LaaS)
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/warehouses/getFulfillmentWarehouses.md"
-fetched_at: "2026-09-10T01:57:24Z"
-content_sha: 44c185e220ce5c3d
+fetched_at: "2026-09-11T01:59:07Z"
+content_sha: f7c52edf3be46bf3
 ---
 
 ---
@@ -14,10 +14,10 @@ alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/warehouses/getFulfillmentWarehouses.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/warehouses/getFulfillmentWarehouses.md
   - https://yandex.ru/dev/market/partner-api/doc/zh/reference/warehouses/getFulfillmentWarehouses.md
-  - href: ru/reference/warehouses/getFulfillmentWarehouses.md
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/warehouses/getFulfillmentWarehouses.md
     type: text/markdown
     title: Markdown version
-  - href: ../../llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
     type: text/markdown
     title: llms.txt
 ---
@@ -1113,7 +1113,7 @@ alternate:
       required: false
       schema:
         $ref: >-
-          /home/sandbox/.ya/build/build_root/oxq2/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/common/schemas.yaml#/CampaignId
+          /home/sandbox/.ya/build/build_root/givs/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/common/schemas.yaml#/CampaignId
   headers: []
   body: null
   schema: {}

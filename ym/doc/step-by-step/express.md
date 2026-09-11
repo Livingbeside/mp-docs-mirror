@@ -2,8 +2,8 @@
 title: Экспресс-заказы
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/express.md"
-fetched_at: "2026-09-04T01:57:51Z"
-content_sha: 92e0a6653f5c62b4
+fetched_at: "2026-09-11T01:57:23Z"
+content_sha: 62b5f91b528f9740
 ---
 
 ---
@@ -14,10 +14,10 @@ alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/step-by-step/express.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/express.md
   - https://yandex.ru/dev/market/partner-api/doc/zh/step-by-step/express.md
-  - href: ru/step-by-step/express.md
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/express.md
     type: text/markdown
     title: Markdown version
-  - href: ../llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
     type: text/markdown
     title: llms.txt
 ---

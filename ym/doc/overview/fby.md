@@ -2,8 +2,8 @@
 title: FBY
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/overview/fby.md"
-fetched_at: "2026-09-04T01:57:58Z"
-content_sha: 98139df248ad1ab6
+fetched_at: "2026-09-11T01:57:31Z"
+content_sha: 57606944b29c2071
 ---
 
 ---
@@ -14,10 +14,10 @@ alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/overview/fby.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/overview/fby.md
   - https://yandex.ru/dev/market/partner-api/doc/zh/overview/fby.md
-  - href: ru/overview/fby.md
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/overview/fby.md
     type: text/markdown
     title: Markdown version
-  - href: ../llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
     type: text/markdown
     title: llms.txt
 ---

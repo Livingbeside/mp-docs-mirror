@@ -2,8 +2,8 @@
 title: Обзор методов
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/overview/index.md"
-fetched_at: "2026-09-04T01:57:57Z"
-content_sha: 83dbecdad2de7298
+fetched_at: "2026-09-11T01:57:30Z"
+content_sha: 838366d34e71775b
 ---
 
 ---
@@ -14,10 +14,10 @@ alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/overview/index.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/overview/index.md
   - https://yandex.ru/dev/market/partner-api/doc/zh/overview/index.md
-  - href: ru/overview/index.md
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/overview/index.md
     type: text/markdown
     title: Markdown version
-  - href: ../llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
     type: text/markdown
     title: llms.txt
 ---

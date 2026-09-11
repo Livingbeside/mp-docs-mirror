@@ -2,8 +2,8 @@
 title: Настройка интеграции с нуля на JavaScript
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/quick-start-js.md"
-fetched_at: "2026-09-04T01:57:46Z"
-content_sha: 9a09985918e9e450
+fetched_at: "2026-09-11T01:57:19Z"
+content_sha: ad75f53d837e4809
 ---
 
 ---
@@ -14,10 +14,10 @@ alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/step-by-step/quick-start-js.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/quick-start-js.md
   - https://yandex.ru/dev/market/partner-api/doc/zh/step-by-step/quick-start-js.md
-  - href: ru/step-by-step/quick-start-js.md
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/quick-start-js.md
     type: text/markdown
     title: Markdown version
-  - href: ../llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
     type: text/markdown
     title: llms.txt
 ---

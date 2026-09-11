@@ -2,8 +2,8 @@
 title: Общие методы
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/overview/business.md"
-fetched_at: "2026-09-04T01:57:57Z"
-content_sha: 214d3dd870be0867
+fetched_at: "2026-09-11T01:57:30Z"
+content_sha: e6f7ba375287741e
 ---
 
 ---
@@ -14,10 +14,10 @@ alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/overview/business.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/overview/business.md
   - https://yandex.ru/dev/market/partner-api/doc/zh/overview/business.md
-  - href: ru/overview/business.md
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/overview/business.md
     type: text/markdown
     title: Markdown version
-  - href: ../llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
     type: text/markdown
     title: llms.txt
 ---
@@ -83,6 +83,30 @@ alternate:
 {style="max-width: 400px"}
 |
 Редактирование категорийных характеристик товара
+||
+||
+[POST v1/​businesses/​{businessId}/​offers/​documents/​create](https://yandex.ru/dev/market/partner-api/doc/ru/reference/documents/createDocuments.md)
+{style="max-width: 400px"}
+|
+Создание документов
+||
+||
+[POST v1/​businesses/​{businessId}/​offers/​documents/​update](https://yandex.ru/dev/market/partner-api/doc/ru/reference/documents/updateDocuments.md)
+{style="max-width: 400px"}
+|
+Обновление документов
+||
+||
+[POST v1/​businesses/​{businessId}/​offers/​documents/​delete](https://yandex.ru/dev/market/partner-api/doc/ru/reference/documents/deleteDocuments.md)
+{style="max-width: 400px"}
+|
+Удаление документов
+||
+||
+[POST v1/​businesses/​{businessId}/​offers/​documents](https://yandex.ru/dev/market/partner-api/doc/ru/reference/documents/getDocuments.md)
+{style="max-width: 400px"}
+|
+Получение документов
 ||
 ||
 [POST v2/​businesses/​{businessId}/​offer-mappings](https://yandex.ru/dev/market/partner-api/doc/ru/reference/business-offer-mappings/getOfferMappings.md)

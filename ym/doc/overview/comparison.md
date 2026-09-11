@@ -2,8 +2,8 @@
 title: Сравнение методов по моделям
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/overview/comparison.md"
-fetched_at: "2026-09-04T01:58:01Z"
-content_sha: 0fe4d200c667b6de
+fetched_at: "2026-09-11T01:57:33Z"
+content_sha: 12e9f960511f91f3
 ---
 
 ---
@@ -14,10 +14,10 @@ alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/overview/comparison.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/overview/comparison.md
   - https://yandex.ru/dev/market/partner-api/doc/zh/overview/comparison.md
-  - href: ru/overview/comparison.md
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/overview/comparison.md
     type: text/markdown
     title: Markdown version
-  - href: ../llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
     type: text/markdown
     title: llms.txt
 ---

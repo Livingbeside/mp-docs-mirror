@@ -2,8 +2,8 @@
 title: Передача ключей цифровых товаров
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/orders/provideOrderDigitalCodes.md"
-fetched_at: "2026-09-04T01:58:37Z"
-content_sha: eb578167e677bd3d
+fetched_at: "2026-09-11T01:58:13Z"
+content_sha: 53d8f21b4a397bd4
 ---
 
 ---
@@ -14,10 +14,10 @@ alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/orders/provideOrderDigitalCodes.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/orders/provideOrderDigitalCodes.md
   - https://yandex.ru/dev/market/partner-api/doc/zh/reference/orders/provideOrderDigitalCodes.md
-  - href: ru/reference/orders/provideOrderDigitalCodes.md
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/orders/provideOrderDigitalCodes.md
     type: text/markdown
     title: Markdown version
-  - href: ../../llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
     type: text/markdown
     title: llms.txt
 ---

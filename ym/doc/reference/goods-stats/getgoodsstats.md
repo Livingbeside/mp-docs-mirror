@@ -2,8 +2,8 @@
 title: Отчет по товарам
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/goods-stats/getGoodsStats.md"
-fetched_at: "2026-09-04T01:59:08Z"
-content_sha: 5383cc4643fb3154
+fetched_at: "2026-09-11T01:58:41Z"
+content_sha: 334946347de8c273
 ---
 
 ---
@@ -14,10 +14,10 @@ alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/goods-stats/getGoodsStats.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/goods-stats/getGoodsStats.md
   - https://yandex.ru/dev/market/partner-api/doc/zh/reference/goods-stats/getGoodsStats.md
-  - href: ru/reference/goods-stats/getGoodsStats.md
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/goods-stats/getGoodsStats.md
     type: text/markdown
     title: Markdown version
-  - href: ../../llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
     type: text/markdown
     title: llms.txt
 ---

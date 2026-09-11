@@ -2,8 +2,8 @@
 title: Информация о нескольких отгрузках
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/shipments/searchShipments.md"
-fetched_at: "2026-09-10T01:56:29Z"
-content_sha: 8d101a9eb72f4702
+fetched_at: "2026-09-11T01:58:18Z"
+content_sha: 0da1b71398fa211f
 ---
 
 ---
@@ -14,10 +14,10 @@ alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/shipments/searchShipments.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/shipments/searchShipments.md
   - https://yandex.ru/dev/market/partner-api/doc/zh/reference/shipments/searchShipments.md
-  - href: ru/reference/shipments/searchShipments.md
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/shipments/searchShipments.md
     type: text/markdown
     title: Markdown version
-  - href: ../../llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
     type: text/markdown
     title: llms.txt
 ---
@@ -1862,7 +1862,7 @@ alternate:
         type: boolean
         default: true
     $defs:
-      /home/sandbox/.ya/build/build_root/oxq2/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/shipments/schemas.yaml#/ShipmentStatusType:
+      /home/sandbox/.ya/build/build_root/givs/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/shipments/schemas.yaml#/ShipmentStatusType:
         description: |
           Статус отгрузки:
   

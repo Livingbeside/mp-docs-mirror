@@ -9,7 +9,7 @@ tags:
 spec_version: items
 source: "https://dev.wildberries.ru/docs/openapi/item-management"
 deprecated: false
-content_sha: 6d3104683fa2680e
+content_sha: 0988e1e2f175a074
 ---
 
 # Список карточек товаров в корзине
@@ -104,9 +104,9 @@ content_sha: 6d3104683fa2680e
     - `square` — string. URL фото `600x600`
     - `tm` — string. URL фото `75x100`
   - `video` — string. URL видео
-  - `wholesale` — object. Оптовая продажа
-    - `enabled` — boolean. Предназначена ли карточка товара для оптовой продажи
-    - `quantum` — number<uint64>. Количество единиц товара в упаковке
+  - `wholesale` — object. B2B-продажа
+    - `enabled` — boolean. Предназначен ли товар для продажи только B2B-покупателям: - `true` — товар предназначен для продажи только B2B-покупателям - `false` — товар предназначен для продажи B2B и B2C-покупателям
+    - `quantum` — number<uint64>. Минимальное количество единиц товара в одной корзине B2B-покупателя. Только при `"enable":true`
   - `sizes` — array[object]. Массив размеров
     - `chrtID` — integer. ID размера
     - `techSize` — string. Размер товара

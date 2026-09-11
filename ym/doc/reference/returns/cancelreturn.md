@@ -2,8 +2,8 @@
 title: Отмена возврата
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/returns/cancelReturn.md"
-fetched_at: "2026-09-04T01:59:03Z"
-content_sha: c7361305cd1d950c
+fetched_at: "2026-09-11T01:58:36Z"
+content_sha: 5bc737bee0228597
 ---
 
 ---
@@ -14,10 +14,10 @@ alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/returns/cancelReturn.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/returns/cancelReturn.md
   - https://yandex.ru/dev/market/partner-api/doc/zh/reference/returns/cancelReturn.md
-  - href: ru/reference/returns/cancelReturn.md
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/returns/cancelReturn.md
     type: text/markdown
     title: Markdown version
-  - href: ../../llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
     type: text/markdown
     title: llms.txt
 ---

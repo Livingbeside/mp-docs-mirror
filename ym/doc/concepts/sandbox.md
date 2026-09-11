@@ -2,8 +2,8 @@
 title: Тестовые заказы
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/concepts/sandbox.md"
-fetched_at: "2026-09-04T01:57:43Z"
-content_sha: 12fd22638142fe2b
+fetched_at: "2026-09-11T01:57:16Z"
+content_sha: 38fc0b1f659c3769
 ---
 
 ---
@@ -14,10 +14,10 @@ alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/concepts/sandbox.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/concepts/sandbox.md
   - https://yandex.ru/dev/market/partner-api/doc/zh/concepts/sandbox.md
-  - href: ru/concepts/sandbox.md
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/concepts/sandbox.md
     type: text/markdown
     title: Markdown version
-  - href: ../llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
     type: text/markdown
     title: llms.txt
 ---

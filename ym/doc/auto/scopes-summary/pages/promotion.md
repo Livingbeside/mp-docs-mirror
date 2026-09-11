@@ -2,8 +2,8 @@
 title: Продвижение товаров
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/_auto/scopes_summary/pages/promotion.md"
-fetched_at: "2026-09-04T01:57:35Z"
-content_sha: 19dd99c041570116
+fetched_at: "2026-09-11T01:57:09Z"
+content_sha: b597431ee79d7b9c
 ---
 
 ---
@@ -14,10 +14,10 @@ alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/_auto/scopes_summary/pages/promotion.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/_auto/scopes_summary/pages/promotion.md
   - https://yandex.ru/dev/market/partner-api/doc/zh/_auto/scopes_summary/pages/promotion.md
-  - href: ru/_auto/scopes_summary/pages/promotion.md
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/_auto/scopes_summary/pages/promotion.md
     type: text/markdown
     title: Markdown version
-  - href: ../../../llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
     type: text/markdown
     title: llms.txt
 ---

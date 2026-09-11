@@ -2,8 +2,8 @@
 title: Индекс качества магазинов
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/ratings/getQualityRatings.md"
-fetched_at: "2026-09-04T01:59:24Z"
-content_sha: 6e8ca3e9caaf5d06
+fetched_at: "2026-09-11T01:58:59Z"
+content_sha: 92da513cbf63ad17
 ---
 
 ---
@@ -14,10 +14,10 @@ alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/ratings/getQualityRatings.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/ratings/getQualityRatings.md
   - https://yandex.ru/dev/market/partner-api/doc/zh/reference/ratings/getQualityRatings.md
-  - href: ru/reference/ratings/getQualityRatings.md
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/ratings/getQualityRatings.md
     type: text/markdown
     title: Markdown version
-  - href: ../../llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
     type: text/markdown
     title: llms.txt
 ---

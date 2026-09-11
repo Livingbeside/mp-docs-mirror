@@ -2,8 +2,8 @@
 title: Создание документов
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/documents/createDocuments.md"
-fetched_at: "2026-09-10T01:55:58Z"
-content_sha: 58cbf1d077ff206e
+fetched_at: "2026-09-11T01:57:44Z"
+content_sha: 5f104091efc7ac99
 ---
 
 ---
@@ -13,10 +13,11 @@ metadata:
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/documents/createDocuments.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/documents/createDocuments.md
-  - href: ru/reference/documents/createDocuments.md
+  - https://yandex.ru/dev/market/partner-api/doc/zh/reference/documents/createDocuments.md
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/documents/createDocuments.md
     type: text/markdown
     title: Markdown version
-  - href: ../../llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
     type: text/markdown
     title: llms.txt
 ---

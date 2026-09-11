@@ -2,8 +2,8 @@
 title: Перенос заказов в следующую отгрузку
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/shipments/transferOrdersFromShipment.md"
-fetched_at: "2026-09-04T01:58:46Z"
-content_sha: 1cc2923ca6da91d0
+fetched_at: "2026-09-11T01:58:19Z"
+content_sha: 68c746905fb2db07
 ---
 
 ---
@@ -14,10 +14,10 @@ alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/shipments/transferOrdersFromShipment.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/shipments/transferOrdersFromShipment.md
   - https://yandex.ru/dev/market/partner-api/doc/zh/reference/shipments/transferOrdersFromShipment.md
-  - href: ru/reference/shipments/transferOrdersFromShipment.md
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/shipments/transferOrdersFromShipment.md
     type: text/markdown
     title: Markdown version
-  - href: ../../llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
     type: text/markdown
     title: llms.txt
 ---

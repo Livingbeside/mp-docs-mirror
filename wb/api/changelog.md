@@ -4,8 +4,8 @@ api: wildberries
 kind: changelog
 source: "https://dev.wildberries.ru/release-notes"
 window: последние записи, страница отдаёт не всю историю
-fetched_at: "2026-09-09T01:53:46Z"
-content_sha: 67ff509de0ace137
+fetched_at: "2026-09-11T01:57:03Z"
+content_sha: 20db88f12e27c908
 ---
 
 # Журнал изменений WB API
@@ -66,6 +66,64 @@ content_sha: 67ff509de0ace137
 
 Сентябрь
 2026
+
+Изменения
+
+## 10.09.2026
+
+Работа с товарами
+
+Создание карточек товаров
+
+Карточки товаров
+
+Корректировка описания объекта B2B-продажи в методах карточек товаров
+
+Исправили описание объекта `wholesale` в запросах и ответах методов:
+
+- Создание карточек товаров — [POST /content/v2/cards/upload](/docs/openapi/item-management#tag/listingItems/paths/~1content~1v2~1cards~1upload/post)
+- Создание карточек товаров с присоединением — [POST /content/v2/cards/upload/add](/docs/openapi/item-management#tag/listingItems/paths/~1content~1v2~1cards~1upload~1add/post)
+- Список карточек товаров — [POST /content/v2/get/cards/list](/docs/openapi/item-management#tag/listings/paths/~1content~1v2~1get~1cards~1list/post)
+- Список карточек товаров в корзине — [POST /content/v2/get/cards/trash](/docs/openapi/item-management#tag/listings/paths/~1content~1v2~1get~1cards~1trash/post)
+
+В предыдущей версии описания объекта `wholesale` было некорректно указано, что при `"enabled":true` товар предназначен для оптовой продажи.
+ В исправленной версии описания объекта `wholesale` указано, что при `"enabled":true` товар предназначен для любой [B2B-продажи](https://seller.wildberries.ru/instructions/ru/ru/material/wholesale-of-goods), не только оптовой.
+
+Новое
+
+## 10.09.2026
+
+Поставки FBW
+
+Черновики
+
+Черновики поставок FBW
+
+Добавили методы для работы с [черновиками поставок](./docs/openapi/orders-fbw#tag/suppliesDrafts) FBW. Теперь с помощью WB API вы можете:
+
+- Создать черновик — [POST /api/supplies/v1/drafts](./docs/openapi/orders-fbw#tag/supplyDrafts/operation/postV1Drafts)
+- Добавить товары в черновик — [POST /api/supplies/v1/drafts/{draftId}/items](./docs/openapi/orders-fbw#tag/supplyDrafts/operation/postV1DraftsDraftIdItems)
+- Получить список черновиков — [GET /api/supplies/v1/drafts](./docs/openapi/orders-fbw#tag/supplyDrafts/operation/getV1Drafts)
+- Получить список товаров в черновике — [GET /api/supplies/v1/drafts/{draftId}/items](./docs/openapi/orders-fbw#tag/supplyDrafts/operation/getV1DraftsDraftIdItems)
+- Удалить товары из черновика — [DELETE /api/supplies/v1/drafts/{draftId}/items](./docs/openapi/orders-fbw#tag/supplyDrafts/operation/deleteV1DraftsDraftIdItems)
+- Удалить черновик — [DELETE /api/supplies/v1/drafts/{draftId}](./docs/openapi/orders-fbw#tag/supplyDrafts/operation/deleteV1DraftsDraftId)
+
+Методы доступны по **Персональному** и **Сервисному** токену категории **Поставки**.
+
+Изменения
+
+## 10.09.2026
+
+Отчёты
+
+Отчёты об удержаниях
+
+Изменения в Отчётах об удержании
+
+Добавили новые поля в отчёт об удержаниях за занижение габаритов упаковки [GET /api/analytics/v1/measurement-penalties](/docs/openapi/reports#tag/retentionReports/operation/getV1MeasurementPenalties):
+
+- `dateStart` — дата начала действия коэффициента
+- `dateEnd` — дата окончания действия коэффициента
 
 Изменения
 
@@ -523,80 +581,5 @@ API Продвижения уже работает в валюте аккаун�
 Добавили метод [GET /api/advert/v1/config](/docs/openapi/promotion/#tag/campaignManagement/operation/getV1Config). С его помощью вы можете получить валюту вашего аккаунта и допустимые шаги ставок.
 
 Чтобы установить ставки для поисковых кластеров в валюте вашего аккаунта используйте новый метод [POST /api/advert/v1/normquery/bids](/docs/openapi/promotion/#tag/searchClusters/operation/postV1NormqueryBids)
-
-Новое
-
-## 02.07.2026
-
-Критичное изменение
-
-DBS
-
-Сборочные задания DBS
-
-Идентификаторы маркировки DBS
-
-Самовывоз
-
-Сборочные задания Самовывоз
-
-Идентификаторы маркировки Самовывоз
-
-Изменения в заказах DBS и Самовывоз
-
-С **8 июля** при закреплении за сборочными заданиями номеров деклараций на товары (ДТ) будет обязательно указывать код страны происхождения товара по [Общероссийскому классификатору стран мира](https://esnsi.gosuslugi.ru/classifiers/16269) для B2B-заказов DBS и Самовывоз. Без корректного кода страны закрепить за сборочным заданием номер ДТ станет невозможно.
-
-Мы обновили документацию уже сейчас, чтобы вы заранее внесли изменения в свои интеграции. Обновление методов WB API состоится не ранее 8 июля, мы сообщим об этом дополнительно.
-
-**Чтобы добавить код страны, используйте методы**:
-
-- DBS — [POST /api/marketplace/v3/dbs/orders/meta/customs-declaration](/docs/openapi/orders-dbs/#tag/dbsLabelIdentifiers/operation/postV3DbsOrdersMetaCustomsDeclaration), укажите числовой код страны происхождения товара в параметре `originCountryCode`. Доступно для сборочных заданий в статусах `confirm` или `deliver`. Сборочные задания без корректного кода страны вернутся в ответе `200` с ошибкой `InvalidOriginCountryCode` в массиве `errors`.
-- Самовывоз — [POST /api/marketplace/v3/click-collect/orders/meta/customs-declaration](/docs/openapi/in-store-pickup#tag/inStorePickupLabelIdentifiers/operation/postV3ClickCollectOrdersMetaCustomsDeclaration), укажите числовой код страны происхождения товара в параметре `originCountryCode`. Доступно для сборочных заданий в статусах`confirm` или `prepare`. Сборочные задания без корректного кода страны вернутся в ответе `200` с ошибкой `InvalidOriginCountryCode` в массиве `errors`.
-
-**Чтобы проверить код страны, используйте методы**:
-
-- DBS — [POST /api/marketplace/v3/dbs/orders/meta/details](/docs/openapi/orders-dbs/#tag/dbsLabelIdentifiers/operation/postV3DbsOrdersMetaDetails). Метод доступен для сборочных заданий в статусах `confirm` или `deliver`.
-- Самовывоз — [POST /api/marketplace/v3/click-collect/orders/meta/details](/docs/openapi/in-store-pickup/#tag/inStorePickupLabelIdentifiers/operation/postV3ClickCollectOrdersMetaDetails). Метод доступен для сборочных заданий в статусах `confirm` или `prepare`.
-
-**Чтобы удалить код страны, используйте методы**:
-
-- DBS — [POST /api/marketplace/v3/dbs/orders/meta/delete](/docs/openapi/orders-dbs/#tag/dbsLabelIdentifiers/operation/postV3DbsOrdersMetaDelete)
-- Самовывоз — [POST /api/marketplace/v3/click-collect/orders/meta/delete](/docs/openapi/in-store-pickup/#tag/inStorePickupLabelIdentifiers/operation/postV3ClickCollectOrdersMetaDelete)
-
-Июнь
-2026
-
-Новое
-
-## 30.06.2026
-
-Документы и бухгалтерия
-
-Финансовые отчёты
-
-Новoе поле в детализациях к отчётам реализации
-
-Добавили поле `b2bCustomerTin` с информацией об [ИНН B2B-покупателя](https://seller.wildberries.ru/news-v2/news-details?id=12515) в детализации к отчётам реализации — [POST /api/finance/v1/sales-reports/detailed/{reportId}](/docs/openapi/financial-reports-and-accounting#tag/financialReports/operation/postV1SalesReportsDetailedReportId) и [POST api/finance/v1/sales-reports/detailed](/docs/openapi/financial-reports-and-accounting#tag/financialReports/operation/postV1SalesReportsDetailed).
-
-Изменения
-
-## 25.06.2026
-
-DBS
-
-Сборочные задания DBS
-
-Аналитика и данные
-
-История остатков
-
-Обновление доступов к методам
-
-Обновили доступы к методам:
-
-- Отчёт об остатках на складах WB [POST /api/analytics/v1/stocks-report/wb-warehouses](/docs/openapi/analytics#tag/stocksReport/operation/postV1StocksReportWbWarehouses)
-- Получить стикеры для сборочных заданий с доставкой в ПВЗ [POST /api/marketplace/v3/dbs/orders/stickers](/docs/openapi/orders-dbs#tag/dbsAssemblyOrders/operation/postV3DbsOrdersStickers)
-
-Теперь эти методы доступны для [зарегистрированных и авторизованных сервисов](/knowledge-base/articles/019dce8b-4233-701b-9318-961cde8b24cd/registratsiia-servisa-na-platforme-wb-api) по базовому токену с секретом.
 
 Мы используем [cookies](/privacy) для сбора статистики и улучшения сервиса

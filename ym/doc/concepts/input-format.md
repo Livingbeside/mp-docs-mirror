@@ -2,8 +2,8 @@
 title: Формат входных данных
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/concepts/input-format.md"
-fetched_at: "2026-09-04T01:57:40Z"
-content_sha: a4b4249978d06f56
+fetched_at: "2026-09-11T01:57:13Z"
+content_sha: cd194660f816ebed
 ---
 
 ---
@@ -14,10 +14,10 @@ alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/concepts/input-format.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/concepts/input-format.md
   - https://yandex.ru/dev/market/partner-api/doc/zh/concepts/input-format.md
-  - href: ru/concepts/input-format.md
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/concepts/input-format.md
     type: text/markdown
     title: Markdown version
-  - href: ../llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
     type: text/markdown
     title: llms.txt
 ---

@@ -2,8 +2,8 @@
 title: Лимит на установку кванта и минимального количества товаров
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/categories/getCategoriesMaxSaleQuantum.md"
-fetched_at: "2026-09-04T01:59:36Z"
-content_sha: f6031f570530387b
+fetched_at: "2026-09-11T01:59:13Z"
+content_sha: 14c888afcee2a784
 ---
 
 ---
@@ -14,10 +14,10 @@ alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/categories/getCategoriesMaxSaleQuantum.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/categories/getCategoriesMaxSaleQuantum.md
   - https://yandex.ru/dev/market/partner-api/doc/zh/reference/categories/getCategoriesMaxSaleQuantum.md
-  - href: ru/reference/categories/getCategoriesMaxSaleQuantum.md
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/categories/getCategoriesMaxSaleQuantum.md
     type: text/markdown
     title: Markdown version
-  - href: ../../llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
     type: text/markdown
     title: llms.txt
 ---

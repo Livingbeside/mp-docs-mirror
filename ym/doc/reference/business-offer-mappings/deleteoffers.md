@@ -2,8 +2,8 @@
 title: В кабинете
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/business-offer-mappings/deleteOffers.md"
-fetched_at: "2026-09-04T01:58:15Z"
-content_sha: 071fc9b20140a2ce
+fetched_at: "2026-09-11T01:57:47Z"
+content_sha: ce2df0dd0868e275
 ---
 
 ---
@@ -14,10 +14,10 @@ alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/business-offer-mappings/deleteOffers.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/business-offer-mappings/deleteOffers.md
   - https://yandex.ru/dev/market/partner-api/doc/zh/reference/business-offer-mappings/deleteOffers.md
-  - href: ru/reference/business-offer-mappings/deleteOffers.md
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/business-offer-mappings/deleteOffers.md
     type: text/markdown
     title: Markdown version
-  - href: ../../llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
     type: text/markdown
     title: llms.txt
 ---

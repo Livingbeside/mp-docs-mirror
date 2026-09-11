@@ -2,8 +2,8 @@
 title: Один заказ в магазине
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/orders/getOrder.md"
-fetched_at: "2026-09-04T01:59:34Z"
-content_sha: 3419ba1d33e50aa7
+fetched_at: "2026-09-11T01:59:11Z"
+content_sha: 05abe747f239f7e7
 ---
 
 ---
@@ -14,10 +14,10 @@ alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/orders/getOrder.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/orders/getOrder.md
   - https://yandex.ru/dev/market/partner-api/doc/zh/reference/orders/getOrder.md
-  - href: ru/reference/orders/getOrder.md
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/orders/getOrder.md
     type: text/markdown
     title: Markdown version
-  - href: ../../llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
     type: text/markdown
     title: llms.txt
 ---

@@ -2,8 +2,8 @@
 title: Отчет по оборачиваемости (FBY)
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/reports/generateGoodsTurnoverReport.md"
-fetched_at: "2026-09-10T01:56:59Z"
-content_sha: 52b8e0bade76cdc4
+fetched_at: "2026-09-11T01:58:44Z"
+content_sha: e8dc899a36aa0f38
 ---
 
 ---
@@ -14,10 +14,10 @@ alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/reports/generateGoodsTurnoverReport.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/reports/generateGoodsTurnoverReport.md
   - https://yandex.ru/dev/market/partner-api/doc/zh/reference/reports/generateGoodsTurnoverReport.md
-  - href: ru/reference/reports/generateGoodsTurnoverReport.md
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/reports/generateGoodsTurnoverReport.md
     type: text/markdown
     title: Markdown version
-  - href: ../../llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
     type: text/markdown
     title: llms.txt
 ---
@@ -887,7 +887,7 @@ alternate:
       required: false
       schema:
         $ref: >-
-          /home/sandbox/.ya/build/build_root/oxq2/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/reports/schemas.yaml#/ReportFormatType
+          /home/sandbox/.ya/build/build_root/givs/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/reports/schemas.yaml#/ReportFormatType
   headers: []
   body: |-
     {

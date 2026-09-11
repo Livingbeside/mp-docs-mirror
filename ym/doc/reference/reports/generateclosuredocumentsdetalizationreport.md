@@ -2,8 +2,8 @@
 title: Отчет по схождению с закрывающими документами
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/reports/generateClosureDocumentsDetalizationReport.md"
-fetched_at: "2026-09-10T01:57:03Z"
-content_sha: 8d5833f5c25e27e1
+fetched_at: "2026-09-11T01:58:48Z"
+content_sha: 18063db43c673019
 ---
 
 ---
@@ -14,10 +14,10 @@ alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/reports/generateClosureDocumentsDetalizationReport.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/reports/generateClosureDocumentsDetalizationReport.md
   - https://yandex.ru/dev/market/partner-api/doc/zh/reference/reports/generateClosureDocumentsDetalizationReport.md
-  - href: ru/reference/reports/generateClosureDocumentsDetalizationReport.md
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/reports/generateClosureDocumentsDetalizationReport.md
     type: text/markdown
     title: Markdown version
-  - href: ../../llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
     type: text/markdown
     title: llms.txt
 ---
@@ -1888,7 +1888,7 @@ alternate:
       required: false
       schema:
         $ref: >-
-          /home/sandbox/.ya/build/build_root/oxq2/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/reports/schemas.yaml#/ReportFormatType
+          /home/sandbox/.ya/build/build_root/givs/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/reports/schemas.yaml#/ReportFormatType
   headers: []
   body: |-
     {
@@ -1922,7 +1922,7 @@ alternate:
           закрывающими документами.
         $ref: '#/$defs/ClosureDocumentsContractType'
     $defs:
-      /home/sandbox/.ya/build/build_root/oxq2/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/reports/schemas.yaml#/ClosureDocumentsMonthOfYearDTO:
+      /home/sandbox/.ya/build/build_root/givs/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/reports/schemas.yaml#/ClosureDocumentsMonthOfYearDTO:
         description: |
           Месяц и год.
         type: object
@@ -1942,7 +1942,7 @@ alternate:
             minimum: 1
             maximum: 12
             example: 12
-      /home/sandbox/.ya/build/build_root/oxq2/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/reports/schemas.yaml#/ClosureDocumentsContractType:
+      /home/sandbox/.ya/build/build_root/givs/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/reports/schemas.yaml#/ClosureDocumentsContractType:
         description: |
           Тип договора:
   

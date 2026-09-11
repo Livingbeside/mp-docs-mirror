@@ -2,8 +2,8 @@
 title: Доступы к методам по Api-Key
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/concepts/access.md"
-fetched_at: "2026-09-04T01:57:33Z"
-content_sha: 709c21b46e2b8801
+fetched_at: "2026-09-11T01:57:06Z"
+content_sha: c014c4dcd1b26416
 ---
 
 ---
@@ -14,10 +14,10 @@ alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/concepts/access.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/concepts/access.md
   - https://yandex.ru/dev/market/partner-api/doc/zh/concepts/access.md
-  - href: ru/concepts/access.md
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/concepts/access.md
     type: text/markdown
     title: Markdown version
-  - href: ../llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
     type: text/markdown
     title: llms.txt
 ---

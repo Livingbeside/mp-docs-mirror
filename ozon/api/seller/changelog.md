@@ -5,12 +5,18 @@ tag: News
 group: Обновления
 kind: changelog
 source: "https://docs.ozon.ru/api/seller/"
-content_sha: ff4fd71648c2e127
+content_sha: 1e48f9aa7e7267f7
 ---
 
 # Обновления
 
 Следите за обновлениями документации на платформе для разработчиков [Ozon for dev](https://dev.ozon.ru/).
+
+## 10 сентября 2026
+
+| Метод | Изменение |
+|--------------------------------------------------------------|------------------------------------------------------------------|
+| [/v3/product/import](#operation/ProductAPI_ImportProductsV3) | Отметили устаревшим параметр `items.geo_names` в запросе метода. |
 
 ## 8 сентября 2026
 

@@ -2,8 +2,8 @@
 title: Заявление покупателя
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/returns/getReturnApplication.md"
-fetched_at: "2026-09-04T01:58:59Z"
-content_sha: 1ed17242e38084e8
+fetched_at: "2026-09-11T01:58:33Z"
+content_sha: 349dc32c3cb6bc01
 ---
 
 ---
@@ -14,10 +14,10 @@ alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/returns/getReturnApplication.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/returns/getReturnApplication.md
   - https://yandex.ru/dev/market/partner-api/doc/zh/reference/returns/getReturnApplication.md
-  - href: ru/reference/returns/getReturnApplication.md
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/returns/getReturnApplication.md
     type: text/markdown
     title: Markdown version
-  - href: ../../llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
     type: text/markdown
     title: llms.txt
 ---

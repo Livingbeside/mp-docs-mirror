@@ -2,8 +2,8 @@
 title: Api-Key
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/concepts/api-key.md"
-fetched_at: "2026-09-04T01:57:32Z"
-content_sha: f55d1a3ffdfc48f4
+fetched_at: "2026-09-11T01:57:05Z"
+content_sha: db56b8250ef27e5b
 ---
 
 ---
@@ -14,10 +14,10 @@ alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/concepts/api-key.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/concepts/api-key.md
   - https://yandex.ru/dev/market/partner-api/doc/zh/concepts/api-key.md
-  - href: ru/concepts/api-key.md
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/concepts/api-key.md
     type: text/markdown
     title: Markdown version
-  - href: ../llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
     type: text/markdown
     title: llms.txt
 ---

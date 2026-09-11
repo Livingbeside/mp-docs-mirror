@@ -2,8 +2,8 @@
 title: Список магазинов
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/campaigns/getCampaigns.md"
-fetched_at: "2026-09-04T01:58:04Z"
-content_sha: df6bd05fb261626f
+fetched_at: "2026-09-11T01:57:37Z"
+content_sha: 383b7e8675605a0a
 ---
 
 ---
@@ -14,10 +14,10 @@ alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/campaigns/getCampaigns.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/campaigns/getCampaigns.md
   - https://yandex.ru/dev/market/partner-api/doc/zh/reference/campaigns/getCampaigns.md
-  - href: ru/reference/campaigns/getCampaigns.md
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/campaigns/getCampaigns.md
     type: text/markdown
     title: Markdown version
-  - href: ../../llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
     type: text/markdown
     title: llms.txt
 ---

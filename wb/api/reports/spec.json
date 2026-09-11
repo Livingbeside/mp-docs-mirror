@@ -1094,6 +1094,18 @@
                 "description": "Удержания",
                 "items": {
                   "properties": {
+                    "dateEnd": {
+                      "description": "Дата и время окончания действия коэффициента",
+                      "example": "2025-05-29T13:35:57Z",
+                      "format": "date-time",
+                      "type": "string"
+                    },
+                    "dateStart": {
+                      "description": "Дата и время начала действия коэффициента",
+                      "example": "2025-05-09T13:35:57Z",
+                      "format": "date-time",
+                      "type": "string"
+                    },
                     "dimId": {
                       "description": "ID замера",
                       "example": 123456789,
@@ -1194,6 +1206,21 @@
                       "type": "integer"
                     }
                   },
+                  "required": [
+                    "nmId",
+                    "subjectName",
+                    "dimId",
+                    "prcOver",
+                    "volume",
+                    "width",
+                    "length",
+                    "height",
+                    "volumeSup",
+                    "widthSup",
+                    "lengthSup",
+                    "heightSup",
+                    "photoUrls"
+                  ],
                   "type": "object"
                 },
                 "type": "array"

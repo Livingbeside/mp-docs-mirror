@@ -2,8 +2,8 @@
 title: Индекс качества
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/ratings.md"
-fetched_at: "2026-09-04T01:57:55Z"
-content_sha: 2247663dfd8dd4ae
+fetched_at: "2026-09-11T01:57:28Z"
+content_sha: 2701d4c8df3e817b
 ---
 
 ---
@@ -14,10 +14,10 @@ alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/step-by-step/ratings.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/ratings.md
   - https://yandex.ru/dev/market/partner-api/doc/zh/step-by-step/ratings.md
-  - href: ru/step-by-step/ratings.md
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/ratings.md
     type: text/markdown
     title: Markdown version
-  - href: ../llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
     type: text/markdown
     title: llms.txt
 ---

@@ -2,8 +2,8 @@
 title: Чаты с покупателями
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/chats.md"
-fetched_at: "2026-09-04T01:57:56Z"
-content_sha: 21ae3d9c2f69467b
+fetched_at: "2026-09-11T01:57:29Z"
+content_sha: a998ea733b834abb
 ---
 
 ---
@@ -14,10 +14,10 @@ alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/step-by-step/chats.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/chats.md
   - https://yandex.ru/dev/market/partner-api/doc/zh/step-by-step/chats.md
-  - href: ru/step-by-step/chats.md
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/chats.md
     type: text/markdown
     title: Markdown version
-  - href: ../llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
     type: text/markdown
     title: llms.txt
 ---

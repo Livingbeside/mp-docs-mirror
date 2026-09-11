@@ -2,8 +2,8 @@
 title: Подтверждение отгрузки
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/shipments/confirmShipment.md"
-fetched_at: "2026-09-04T01:58:45Z"
-content_sha: 389ed54276831e3c
+fetched_at: "2026-09-11T01:58:18Z"
+content_sha: 11c3d8b04d45e164
 ---
 
 ---
@@ -14,10 +14,10 @@ alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/shipments/confirmShipment.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/shipments/confirmShipment.md
   - https://yandex.ru/dev/market/partner-api/doc/zh/reference/shipments/confirmShipment.md
-  - href: ru/reference/shipments/confirmShipment.md
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/shipments/confirmShipment.md
     type: text/markdown
     title: Markdown version
-  - href: ../../llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
     type: text/markdown
     title: llms.txt
 ---

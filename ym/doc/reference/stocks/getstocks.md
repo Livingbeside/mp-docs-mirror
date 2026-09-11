@@ -2,8 +2,8 @@
 title: Просмотр остатков и оборачиваемости
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/stocks/getStocks.md"
-fetched_at: "2026-09-04T01:58:18Z"
-content_sha: ea9782c39197f1a4
+fetched_at: "2026-09-11T01:57:51Z"
+content_sha: 76b579041ad57d79
 ---
 
 ---
@@ -14,10 +14,10 @@ alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/stocks/getStocks.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/stocks/getStocks.md
   - https://yandex.ru/dev/market/partner-api/doc/zh/reference/stocks/getStocks.md
-  - href: ru/reference/stocks/getStocks.md
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/stocks/getStocks.md
     type: text/markdown
     title: Markdown version
-  - href: ../../llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
     type: text/markdown
     title: llms.txt
 ---

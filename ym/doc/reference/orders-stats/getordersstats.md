@@ -2,8 +2,8 @@
 title: Детальная информация по заказам
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/orders-stats/getOrdersStats.md"
-fetched_at: "2026-09-04T01:59:06Z"
-content_sha: 27da668ca15ad913
+fetched_at: "2026-09-11T01:58:39Z"
+content_sha: 262c174e82247f55
 ---
 
 ---
@@ -14,10 +14,10 @@ alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/orders-stats/getOrdersStats.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/orders-stats/getOrdersStats.md
   - https://yandex.ru/dev/market/partner-api/doc/zh/reference/orders-stats/getOrdersStats.md
-  - href: ru/reference/orders-stats/getOrdersStats.md
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/orders-stats/getOrdersStats.md
     type: text/markdown
     title: Markdown version
-  - href: ../../llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
     type: text/markdown
     title: llms.txt
 ---

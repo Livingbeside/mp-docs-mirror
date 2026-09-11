@@ -2,8 +2,8 @@
 title: Закрывающие документы
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/reports/generateClosureDocumentsReport.md"
-fetched_at: "2026-09-10T01:57:03Z"
-content_sha: 97abbef74b171b19
+fetched_at: "2026-09-11T01:58:47Z"
+content_sha: 6cdc92e0e641737b
 ---
 
 ---
@@ -14,10 +14,10 @@ alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/reports/generateClosureDocumentsReport.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/reports/generateClosureDocumentsReport.md
   - https://yandex.ru/dev/market/partner-api/doc/zh/reference/reports/generateClosureDocumentsReport.md
-  - href: ru/reference/reports/generateClosureDocumentsReport.md
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/reports/generateClosureDocumentsReport.md
     type: text/markdown
     title: Markdown version
-  - href: ../../llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
     type: text/markdown
     title: llms.txt
 ---
@@ -962,7 +962,7 @@ alternate:
             - OUTCOME
             - MARKETING
     $defs:
-      /home/sandbox/.ya/build/build_root/oxq2/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/reports/schemas.yaml#/ClosureDocumentsMonthOfYearDTO:
+      /home/sandbox/.ya/build/build_root/givs/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/reports/schemas.yaml#/ClosureDocumentsMonthOfYearDTO:
         description: |
           Месяц и год.
         type: object

@@ -2,8 +2,8 @@
 title: Передача остатков для кабинетов с группами складов
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/stocks/updateStocks.md"
-fetched_at: "2026-09-10T01:56:06Z"
-content_sha: 60b745fa1f6f440a
+fetched_at: "2026-09-11T01:57:52Z"
+content_sha: 77840e33cc596c3c
 ---
 
 ---
@@ -14,10 +14,10 @@ alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/stocks/updateStocks.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/stocks/updateStocks.md
   - https://yandex.ru/dev/market/partner-api/doc/zh/reference/stocks/updateStocks.md
-  - href: ru/reference/stocks/updateStocks.md
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/stocks/updateStocks.md
     type: text/markdown
     title: Markdown version
-  - href: ../../llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
     type: text/markdown
     title: llms.txt
 ---
@@ -1042,7 +1042,7 @@ alternate:
                     type: string
                     format: date-time
     $defs:
-      /home/sandbox/.ya/build/build_root/oxq2/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/common/schemas.yaml#/InternalOfferId:
+      /home/sandbox/.ya/build/build_root/givs/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/common/schemas.yaml#/InternalOfferId:
         description: >-
           Внутренний идентификатор товара в системах Маркета. Нужен для создания
           товаров Лавки с отличными offerId и article.

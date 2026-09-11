@@ -2,8 +2,8 @@
 title: Отчеты и документы
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/reports.md"
-fetched_at: "2026-09-04T01:57:54Z"
-content_sha: 3a495fba3097c906
+fetched_at: "2026-09-11T01:57:27Z"
+content_sha: 9d625f77b5a900e0
 ---
 
 ---
@@ -14,10 +14,10 @@ alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/step-by-step/reports.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/reports.md
   - https://yandex.ru/dev/market/partner-api/doc/zh/step-by-step/reports.md
-  - href: ru/step-by-step/reports.md
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/reports.md
     type: text/markdown
     title: Markdown version
-  - href: ../llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
     type: text/markdown
     title: llms.txt
 ---

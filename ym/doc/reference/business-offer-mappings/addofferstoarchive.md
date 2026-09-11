@@ -2,8 +2,8 @@
 title: Добавление товаров
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/business-offer-mappings/addOffersToArchive.md"
-fetched_at: "2026-09-04T01:58:17Z"
-content_sha: 781fb180fd35f1b2
+fetched_at: "2026-09-11T01:57:50Z"
+content_sha: 10c503e6a0164a56
 ---
 
 ---
@@ -14,10 +14,10 @@ alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/business-offer-mappings/addOffersToArchive.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/business-offer-mappings/addOffersToArchive.md
   - https://yandex.ru/dev/market/partner-api/doc/zh/reference/business-offer-mappings/addOffersToArchive.md
-  - href: ru/reference/business-offer-mappings/addOffersToArchive.md
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/business-offer-mappings/addOffersToArchive.md
     type: text/markdown
     title: Markdown version
-  - href: ../../llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
     type: text/markdown
     title: llms.txt
 ---

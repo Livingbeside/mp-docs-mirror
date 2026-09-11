@@ -2,8 +2,8 @@
 title: Получение подходящих для возврата ПВЗ
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/delivery-options/getReturnDeliveryOptions.md"
-fetched_at: "2026-09-04T01:59:03Z"
-content_sha: 0399d99c834eabe2
+fetched_at: "2026-09-11T01:58:36Z"
+content_sha: 0036d914b045bfe4
 ---
 
 ---
@@ -14,10 +14,10 @@ alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/delivery-options/getReturnDeliveryOptions.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/delivery-options/getReturnDeliveryOptions.md
   - https://yandex.ru/dev/market/partner-api/doc/zh/reference/delivery-options/getReturnDeliveryOptions.md
-  - href: ru/reference/delivery-options/getReturnDeliveryOptions.md
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/delivery-options/getReturnDeliveryOptions.md
     type: text/markdown
     title: Markdown version
-  - href: ../../llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
     type: text/markdown
     title: llms.txt
 ---

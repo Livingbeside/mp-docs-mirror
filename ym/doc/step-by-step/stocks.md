@@ -2,8 +2,8 @@
 title: Передача остатков
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/stocks.md"
-fetched_at: "2026-09-04T01:57:48Z"
-content_sha: 23ce7ffc97f9a602
+fetched_at: "2026-09-11T01:57:21Z"
+content_sha: b71db2b10f1fbc0d
 ---
 
 ---
@@ -14,10 +14,10 @@ alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/step-by-step/stocks.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/stocks.md
   - https://yandex.ru/dev/market/partner-api/doc/zh/step-by-step/stocks.md
-  - href: ru/step-by-step/stocks.md
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/stocks.md
     type: text/markdown
     title: Markdown version
-  - href: ../llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
     type: text/markdown
     title: llms.txt
 ---

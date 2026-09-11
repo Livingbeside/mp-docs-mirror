@@ -2,8 +2,8 @@
 title: FBS-заказы
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/fbs.md"
-fetched_at: "2026-09-04T01:57:50Z"
-content_sha: b8a77d38f7d34074
+fetched_at: "2026-09-11T01:57:23Z"
+content_sha: 13608e19a06cdee4
 ---
 
 ---
@@ -14,10 +14,10 @@ alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/step-by-step/fbs.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/fbs.md
   - https://yandex.ru/dev/market/partner-api/doc/zh/step-by-step/fbs.md
-  - href: ru/step-by-step/fbs.md
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/fbs.md
     type: text/markdown
     title: Markdown version
-  - href: ../llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
     type: text/markdown
     title: llms.txt
 ---

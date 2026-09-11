@@ -2,8 +2,8 @@
 title: Пошаговые инструкции
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/index.md"
-fetched_at: "2026-09-04T01:57:45Z"
-content_sha: 2f3fdd77acc9c407
+fetched_at: "2026-09-11T01:57:19Z"
+content_sha: 378304ca390df03d
 ---
 
 ---
@@ -14,10 +14,10 @@ alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/step-by-step/index.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/index.md
   - https://yandex.ru/dev/market/partner-api/doc/zh/step-by-step/index.md
-  - href: ru/step-by-step/index.md
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/index.md
     type: text/markdown
     title: Markdown version
-  - href: ../llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
     type: text/markdown
     title: llms.txt
 ---

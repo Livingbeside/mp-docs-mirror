@@ -2,8 +2,8 @@
 title: Генерация штрихкодов
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/business-offer-mappings/generateOfferBarcodes.md"
-fetched_at: "2026-09-04T01:58:11Z"
-content_sha: b4337c5238e9e7a7
+fetched_at: "2026-09-11T01:57:41Z"
+content_sha: 7d94859cdfdf039a
 ---
 
 ---
@@ -14,10 +14,10 @@ alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/business-offer-mappings/generateOfferBarcodes.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/business-offer-mappings/generateOfferBarcodes.md
   - https://yandex.ru/dev/market/partner-api/doc/zh/reference/business-offer-mappings/generateOfferBarcodes.md
-  - href: ru/reference/business-offer-mappings/generateOfferBarcodes.md
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/business-offer-mappings/generateOfferBarcodes.md
     type: text/markdown
     title: Markdown version
-  - href: ../../llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
     type: text/markdown
     title: llms.txt
 ---

@@ -9,7 +9,7 @@ tags:
 spec_version: items
 source: "https://dev.wildberries.ru/docs/openapi/item-management"
 deprecated: false
-content_sha: 77ba676659f344bc
+content_sha: 8528ed7f9caba4ee
 ---
 
 # Удалить склад продавца{{ /api/v3/warehouses/{warehouseId} }}
@@ -28,7 +28,7 @@ content_sha: 77ba676659f344bc
 
 Один запрос с кодами ответов 4XX учитывается как 10 запросов.
 
-В песочнице — максимум 1 запрос в секунду суммарно для всех методов Контента.
+В песочнице — максимум 1 запрос в секунду суммарно для всех методов Маркетплейса.
 
 ## Параметры
 

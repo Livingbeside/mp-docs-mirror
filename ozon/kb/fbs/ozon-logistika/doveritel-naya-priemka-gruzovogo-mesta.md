@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /fbs/ozon-logistika/doveritel-naya-priemka-gruzovogo-mesta
 source: "https://seller-edu.ozon.ru/libra/fbs/ozon-logistika/doveritel-naya-priemka-gruzovogo-mesta"
-updated: "2026-09-08 11:56:13"
+updated: "2026-09-10 12:25:57"
 doc_id: 811
-fetched_at: "2026-09-09T01:49:09Z"
-content_sha: e911dbdba856c581
+fetched_at: "2026-09-11T01:52:47Z"
+content_sha: 569165ca9d5f9645
 ---
 
 # Доверительная приёмка грузового места
@@ -28,6 +28,8 @@ _Главная / Продажа со своего склада (FBS) / Отгр
 
 # Какие пункты работают с доверительной приёмкой
 
+[Вешки (СЦ)](https://seller-edu.ozon.ru/fbs/punkty-priema/moskva#вешки-мо-вешки-фбс)
+
 [Внуково (СЦ)](https://seller-edu.ozon.ru/fbs/punkty-priema/moskva#внуково-мо-внуково-2-хаб)
 
 [Волгоградский (СЦ)](/fbs/punkty-priema/moskva#волгоградскии-мск-волгоградскии-3-хаб)
@@ -39,6 +41,8 @@ _Главная / Продажа со своего склада (FBS) / Отгр
 [Замоскворечье (СЦ)](/fbs/punkty-priema/moskva#%D0%B7%D0%B0%D0%BC%D0%BE%D1%81%D0%BA%D0%B2%D0%BE%D1%80%D0%B5%D1%87%D1%8C%D0%B5-%D0%BC%D0%BE-%D0%B7%D0%B0%D0%BC%D0%BE%D1%81%D0%BA%D0%B2%D0%BE%D1%80%D0%B5%D1%87%D1%8C%D0%B5-%D1%84%D0%B1%D1%81)
 
 [Кавказский (СЦ)](https://seller-edu.ozon.ru/fbs/punkty-priema/moskva#кавказскии-мск-кавказскии-2-хаб)
+
+[Купавна (СЦ)](https://seller-edu.ozon.ru/fbs/punkty-priema/moskva#купавна-мо-купавна-до)
 
 [Ленинградский (СЦ)](https://seller-edu.ozon.ru/fbs/punkty-priema/moskva#ленинградскии-мо-ленинградскии-2-хаб)
 

@@ -2,8 +2,8 @@
 title: Лист сборки
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/reports/generateShipmentListDocumentReport.md"
-fetched_at: "2026-09-04T01:58:48Z"
-content_sha: d18ab9490c979f54
+fetched_at: "2026-09-11T01:58:21Z"
+content_sha: f527af9fadb0f98d
 ---
 
 ---
@@ -14,10 +14,10 @@ alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/reports/generateShipmentListDocumentReport.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/reports/generateShipmentListDocumentReport.md
   - https://yandex.ru/dev/market/partner-api/doc/zh/reference/reports/generateShipmentListDocumentReport.md
-  - href: ru/reference/reports/generateShipmentListDocumentReport.md
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/reports/generateShipmentListDocumentReport.md
     type: text/markdown
     title: Markdown version
-  - href: ../../llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
     type: text/markdown
     title: llms.txt
 ---

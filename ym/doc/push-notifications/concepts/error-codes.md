@@ -2,8 +2,8 @@
 title: Сообщения об ошибках
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/push-notifications/concepts/error-codes.md"
-fetched_at: "2026-09-04T01:59:40Z"
-content_sha: ff56f2c871a69d38
+fetched_at: "2026-09-11T01:59:17Z"
+content_sha: be0d528927778a38
 ---
 
 ---
@@ -14,10 +14,10 @@ alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/push-notifications/concepts/error-codes.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/push-notifications/concepts/error-codes.md
   - https://yandex.ru/dev/market/partner-api/doc/zh/push-notifications/concepts/error-codes.md
-  - href: ru/push-notifications/concepts/error-codes.md
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/push-notifications/concepts/error-codes.md
     type: text/markdown
     title: Markdown version
-  - href: ../../llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
     type: text/markdown
     title: llms.txt
 ---

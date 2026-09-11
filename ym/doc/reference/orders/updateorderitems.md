@@ -2,8 +2,8 @@
 title: Удаление товаров из заказа
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/orders/updateOrderItems.md"
-fetched_at: "2026-09-04T01:58:34Z"
-content_sha: 17b3780ea90692cb
+fetched_at: "2026-09-11T01:58:08Z"
+content_sha: 62cebe2b07382053
 ---
 
 ---
@@ -14,10 +14,10 @@ alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/orders/updateOrderItems.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/orders/updateOrderItems.md
   - https://yandex.ru/dev/market/partner-api/doc/zh/reference/orders/updateOrderItems.md
-  - href: ru/reference/orders/updateOrderItems.md
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/orders/updateOrderItems.md
     type: text/markdown
     title: Markdown version
-  - href: ../../llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
     type: text/markdown
     title: llms.txt
 ---

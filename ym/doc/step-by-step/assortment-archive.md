@@ -2,8 +2,8 @@
 title: Архив товаров
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/assortment-archive.md"
-fetched_at: "2026-09-04T01:57:48Z"
-content_sha: 548d756893c57fd4
+fetched_at: "2026-09-11T01:57:21Z"
+content_sha: f36ce4cff57f3bcf
 ---
 
 ---
@@ -14,10 +14,10 @@ alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/step-by-step/assortment-archive.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/assortment-archive.md
   - https://yandex.ru/dev/market/partner-api/doc/zh/step-by-step/assortment-archive.md
-  - href: ru/step-by-step/assortment-archive.md
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/assortment-archive.md
     type: text/markdown
     title: Markdown version
-  - href: ../llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
     type: text/markdown
     title: llms.txt
 ---

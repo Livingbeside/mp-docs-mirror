@@ -2,8 +2,8 @@
 title: Просмотр скрытых товаров
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/hidden-offers/getHiddenOffers.md"
-fetched_at: "2026-09-10T01:56:03Z"
-content_sha: ab620bb5c457d497
+fetched_at: "2026-09-11T01:57:48Z"
+content_sha: 5e91b0dbf1ab1daa
 ---
 
 ---
@@ -14,10 +14,10 @@ alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/hidden-offers/getHiddenOffers.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/hidden-offers/getHiddenOffers.md
   - https://yandex.ru/dev/market/partner-api/doc/zh/reference/hidden-offers/getHiddenOffers.md
-  - href: ru/reference/hidden-offers/getHiddenOffers.md
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/hidden-offers/getHiddenOffers.md
     type: text/markdown
     title: Markdown version
-  - href: ../../llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
     type: text/markdown
     title: llms.txt
 ---
@@ -977,7 +977,7 @@ alternate:
         uniqueItems: true
         items:
           $ref: >-
-            /home/sandbox/.ya/build/build_root/oxq2/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/common/schemas.yaml#/ShopSku
+            /home/sandbox/.ya/build/build_root/givs/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/common/schemas.yaml#/ShopSku
     - name: pageToken
       description: >
         Идентификатор страницы c результатами.

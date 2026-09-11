@@ -2,8 +2,8 @@
 title: Ярлыки для доверительной приемки (FBS)
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/shipments/downloadShipmentPalletLabels.md"
-fetched_at: "2026-09-10T01:56:40Z"
-content_sha: 30ce91b8c74202d6
+fetched_at: "2026-09-11T01:58:25Z"
+content_sha: 2a62b888cdca3110
 ---
 
 ---
@@ -14,10 +14,10 @@ alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/shipments/downloadShipmentPalletLabels.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/shipments/downloadShipmentPalletLabels.md
   - https://yandex.ru/dev/market/partner-api/doc/zh/reference/shipments/downloadShipmentPalletLabels.md
-  - href: ru/reference/shipments/downloadShipmentPalletLabels.md
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/shipments/downloadShipmentPalletLabels.md
     type: text/markdown
     title: Markdown version
-  - href: ../../llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
     type: text/markdown
     title: llms.txt
 ---
@@ -728,7 +728,7 @@ alternate:
       required: false
       schema:
         $ref: >-
-          /home/sandbox/.ya/build/build_root/oxq2/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/shipments/schemas.yaml#/ShipmentPalletLabelPageFormatType
+          /home/sandbox/.ya/build/build_root/givs/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/shipments/schemas.yaml#/ShipmentPalletLabelPageFormatType
       description: |
         Формат страниц PDF-файла с ярлыками:
   

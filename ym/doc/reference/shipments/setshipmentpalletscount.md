@@ -2,8 +2,8 @@
 title: Передача количества упаковок для доверительной приемки
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/shipments/setShipmentPalletsCount.md"
-fetched_at: "2026-09-04T01:58:47Z"
-content_sha: 7eab6118c97cada8
+fetched_at: "2026-09-11T01:58:20Z"
+content_sha: 7791616838334b32
 ---
 
 ---
@@ -14,10 +14,10 @@ alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/shipments/setShipmentPalletsCount.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/shipments/setShipmentPalletsCount.md
   - https://yandex.ru/dev/market/partner-api/doc/zh/reference/shipments/setShipmentPalletsCount.md
-  - href: ru/reference/shipments/setShipmentPalletsCount.md
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/shipments/setShipmentPalletsCount.md
     type: text/markdown
     title: Markdown version
-  - href: ../../llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
     type: text/markdown
     title: llms.txt
 ---

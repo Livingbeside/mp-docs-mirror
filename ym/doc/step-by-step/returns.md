@@ -2,8 +2,8 @@
 title: Невыкупы и возвраты
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/returns.md"
-fetched_at: "2026-09-04T01:57:53Z"
-content_sha: bedf91b09c70f127
+fetched_at: "2026-09-11T01:57:25Z"
+content_sha: fbf1983f1ca9e182
 ---
 
 ---
@@ -14,10 +14,10 @@ alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/step-by-step/returns.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/returns.md
   - https://yandex.ru/dev/market/partner-api/doc/zh/step-by-step/returns.md
-  - href: ru/step-by-step/returns.md
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/returns.md
     type: text/markdown
     title: Markdown version
-  - href: ../llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
     type: text/markdown
     title: llms.txt
 ---

@@ -2,8 +2,8 @@
 title: OAuth 2.0 (устаревший)
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/concepts/oauth-2.0.md"
-fetched_at: "2026-09-04T01:57:39Z"
-content_sha: 29f36d09441d1b1e
+fetched_at: "2026-09-11T01:57:12Z"
+content_sha: 9e9193e8d4a5e0a5
 ---
 
 ---
@@ -14,10 +14,10 @@ alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/concepts/oauth-2.0.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/concepts/oauth-2.0.md
   - https://yandex.ru/dev/market/partner-api/doc/zh/concepts/oauth-2.0.md
-  - href: ru/concepts/oauth-2.0.md
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/concepts/oauth-2.0.md
     type: text/markdown
     title: Markdown version
-  - href: ../llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
     type: text/markdown
     title: llms.txt
 ---

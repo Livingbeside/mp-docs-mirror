@@ -2,8 +2,8 @@
 title: Подготовка заказа
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/orders/setOrderBoxLayout.md"
-fetched_at: "2026-09-10T01:56:17Z"
-content_sha: 024d23e372188f82
+fetched_at: "2026-09-11T01:58:04Z"
+content_sha: 5db0a3fcbe376ee4
 ---
 
 ---
@@ -14,10 +14,10 @@ alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/orders/setOrderBoxLayout.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/orders/setOrderBoxLayout.md
   - https://yandex.ru/dev/market/partner-api/doc/zh/reference/orders/setOrderBoxLayout.md
-  - href: ru/reference/orders/setOrderBoxLayout.md
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/orders/setOrderBoxLayout.md
     type: text/markdown
     title: Markdown version
-  - href: ../../llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
     type: text/markdown
     title: llms.txt
 ---
@@ -1830,7 +1830,7 @@ alternate:
         type: boolean
         default: false
     $defs:
-      /home/sandbox/.ya/build/build_root/oxq2/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/orders/api/setOrderBoxLayout.yaml#/OrderBoxLayoutPartialCountDTO:
+      /home/sandbox/.ya/build/build_root/givs/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/orders/api/setOrderBoxLayout.yaml#/OrderBoxLayoutPartialCountDTO:
         description: Информация о части товара в коробке.
         type: object
         required:

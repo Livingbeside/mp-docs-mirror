@@ -2,8 +2,8 @@
 title: Буст продаж
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/boost.md"
-fetched_at: "2026-09-04T01:57:55Z"
-content_sha: 59c188c3883226f3
+fetched_at: "2026-09-11T01:57:28Z"
+content_sha: 0190b3350263efd7
 ---
 
 ---
@@ -14,10 +14,10 @@ alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/step-by-step/boost.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/boost.md
   - https://yandex.ru/dev/market/partner-api/doc/zh/step-by-step/boost.md
-  - href: ru/step-by-step/boost.md
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/boost.md
     type: text/markdown
     title: Markdown version
-  - href: ../llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
     type: text/markdown
     title: llms.txt
 ---

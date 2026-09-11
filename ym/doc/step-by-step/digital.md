@@ -2,8 +2,8 @@
 title: Цифровые заказы
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/digital.md"
-fetched_at: "2026-09-04T01:57:51Z"
-content_sha: e22e975dfdb3b181
+fetched_at: "2026-09-11T01:57:24Z"
+content_sha: 312a1a1b82bc4072
 ---
 
 ---
@@ -14,10 +14,10 @@ alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/step-by-step/digital.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/digital.md
   - https://yandex.ru/dev/market/partner-api/doc/zh/step-by-step/digital.md
-  - href: ru/step-by-step/digital.md
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/digital.md
     type: text/markdown
     title: Markdown version
-  - href: ../llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
     type: text/markdown
     title: llms.txt
 ---

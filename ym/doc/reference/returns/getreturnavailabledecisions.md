@@ -2,8 +2,8 @@
 title: Получение возможных решений по возврату
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/returns/getReturnAvailableDecisions.md"
-fetched_at: "2026-09-04T01:59:00Z"
-content_sha: c0df82a4ef4a97b0
+fetched_at: "2026-09-11T01:58:34Z"
+content_sha: 98df4aaf25735f1c
 ---
 
 ---
@@ -14,10 +14,10 @@ alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/returns/getReturnAvailableDecisions.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/returns/getReturnAvailableDecisions.md
   - https://yandex.ru/dev/market/partner-api/doc/zh/reference/returns/getReturnAvailableDecisions.md
-  - href: ru/reference/returns/getReturnAvailableDecisions.md
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/returns/getReturnAvailableDecisions.md
     type: text/markdown
     title: Markdown version
-  - href: ../../llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
     type: text/markdown
     title: llms.txt
 ---

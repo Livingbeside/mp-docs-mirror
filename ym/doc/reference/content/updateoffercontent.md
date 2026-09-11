@@ -2,8 +2,8 @@
 title: Редактирование категорийных характеристик товара
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/content/updateOfferContent.md"
-fetched_at: "2026-09-04T01:58:13Z"
-content_sha: 190b6d4bfa447361
+fetched_at: "2026-09-11T01:57:43Z"
+content_sha: 78beb5ab96a90082
 ---
 
 ---
@@ -14,10 +14,10 @@ alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/content/updateOfferContent.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/content/updateOfferContent.md
   - https://yandex.ru/dev/market/partner-api/doc/zh/reference/content/updateOfferContent.md
-  - href: ru/reference/content/updateOfferContent.md
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/content/updateOfferContent.md
     type: text/markdown
     title: Markdown version
-  - href: ../../llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
     type: text/markdown
     title: llms.txt
 ---

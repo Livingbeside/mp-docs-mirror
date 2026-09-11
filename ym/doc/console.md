@@ -2,8 +2,8 @@
 title: Как пользоваться консолью
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/console.md"
-fetched_at: "2026-09-04T01:57:43Z"
-content_sha: d602fb5c28a7e713
+fetched_at: "2026-09-11T01:57:16Z"
+content_sha: 890031b81e96b50e
 ---
 
 ---
@@ -14,10 +14,10 @@ alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/console.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/console.md
   - https://yandex.ru/dev/market/partner-api/doc/zh/console.md
-  - href: ru/console.md
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/console.md
     type: text/markdown
     title: Markdown version
-  - href: llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
     type: text/markdown
     title: llms.txt
 ---

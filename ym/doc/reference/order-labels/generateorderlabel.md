@@ -2,8 +2,8 @@
 title: Готовый ярлык для коробки
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/order-labels/generateOrderLabel.md"
-fetched_at: "2026-09-10T01:56:37Z"
-content_sha: 9a80a892c19f0ecb
+fetched_at: "2026-09-11T01:58:23Z"
+content_sha: 580799deaafc0f82
 ---
 
 ---
@@ -14,10 +14,10 @@ alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/order-labels/generateOrderLabel.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/order-labels/generateOrderLabel.md
   - https://yandex.ru/dev/market/partner-api/doc/zh/reference/order-labels/generateOrderLabel.md
-  - href: ru/reference/order-labels/generateOrderLabel.md
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/order-labels/generateOrderLabel.md
     type: text/markdown
     title: Markdown version
-  - href: ../../llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
     type: text/markdown
     title: llms.txt
 ---
@@ -851,7 +851,7 @@ alternate:
       required: false
       schema:
         $ref: >-
-          /home/sandbox/.ya/build/build_root/oxq2/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/order-labels/schemas.yaml#/PageFormatType
+          /home/sandbox/.ya/build/build_root/givs/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/order-labels/schemas.yaml#/PageFormatType
   headers: []
   body: null
   schema: {}

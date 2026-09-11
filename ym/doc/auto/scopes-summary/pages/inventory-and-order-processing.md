@@ -2,8 +2,8 @@
 title: Обработка заказов и учёт товаров
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/_auto/scopes_summary/pages/inventory-and-order-processing.md"
-fetched_at: "2026-09-04T01:57:33Z"
-content_sha: 7ce0ed888cf24aa4
+fetched_at: "2026-09-11T01:57:06Z"
+content_sha: 708d9bf45c7b263c
 ---
 
 ---
@@ -14,10 +14,10 @@ alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/_auto/scopes_summary/pages/inventory-and-order-processing.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/_auto/scopes_summary/pages/inventory-and-order-processing.md
   - https://yandex.ru/dev/market/partner-api/doc/zh/_auto/scopes_summary/pages/inventory-and-order-processing.md
-  - href: ru/_auto/scopes_summary/pages/inventory-and-order-processing.md
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/_auto/scopes_summary/pages/inventory-and-order-processing.md
     type: text/markdown
     title: Markdown version
-  - href: ../../../llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
     type: text/markdown
     title: llms.txt
 ---

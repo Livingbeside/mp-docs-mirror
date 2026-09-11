@@ -2,8 +2,8 @@
 title: Передача внешнего идентификатора заказа
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/orders/updateExternalOrderId.md"
-fetched_at: "2026-09-04T01:58:31Z"
-content_sha: 1e46c9ec77b3cf69
+fetched_at: "2026-09-11T01:58:04Z"
+content_sha: f7ebaaf258596a5e
 ---
 
 ---
@@ -14,10 +14,10 @@ alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/orders/updateExternalOrderId.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/orders/updateExternalOrderId.md
   - https://yandex.ru/dev/market/partner-api/doc/zh/reference/orders/updateExternalOrderId.md
-  - href: ru/reference/orders/updateExternalOrderId.md
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/orders/updateExternalOrderId.md
     type: text/markdown
     title: Markdown version
-  - href: ../../llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
     type: text/markdown
     title: llms.txt
 ---

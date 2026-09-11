@@ -2,8 +2,8 @@
 title: Передача количества грузомест
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/orders/setOrderShipmentBoxes.md"
-fetched_at: "2026-09-04T01:59:35Z"
-content_sha: f3a217f9fbcde5e5
+fetched_at: "2026-09-11T01:59:12Z"
+content_sha: 0a35864b1d0cface
 ---
 
 ---
@@ -14,10 +14,10 @@ alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/orders/setOrderShipmentBoxes.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/orders/setOrderShipmentBoxes.md
   - https://yandex.ru/dev/market/partner-api/doc/zh/reference/orders/setOrderShipmentBoxes.md
-  - href: ru/reference/orders/setOrderShipmentBoxes.md
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/orders/setOrderShipmentBoxes.md
     type: text/markdown
     title: Markdown version
-  - href: ../../llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
     type: text/markdown
     title: llms.txt
 ---

@@ -2,8 +2,8 @@
 title: Подпись интеграций
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/concepts/integration-signing.md"
-fetched_at: "2026-09-04T01:57:44Z"
-content_sha: 80945eda8b5956d2
+fetched_at: "2026-09-11T01:57:17Z"
+content_sha: a0921ae27980c6dc
 ---
 
 ---
@@ -14,10 +14,10 @@ alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/concepts/integration-signing.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/concepts/integration-signing.md
   - https://yandex.ru/dev/market/partner-api/doc/zh/concepts/integration-signing.md
-  - href: ru/concepts/integration-signing.md
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/concepts/integration-signing.md
     type: text/markdown
     title: Markdown version
-  - href: ../llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
     type: text/markdown
     title: llms.txt
 ---

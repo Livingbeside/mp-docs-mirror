@@ -9,7 +9,7 @@ tags:
 spec_version: items
 source: "https://dev.wildberries.ru/docs/openapi/item-management"
 deprecated: false
-content_sha: df22a024fe26eacf
+content_sha: dc51cf06e56133d4
 ---
 
 # Получить список складов продавца
@@ -28,7 +28,7 @@ content_sha: df22a024fe26eacf
 
 Один запрос с кодами ответов 4XX учитывается как 10 запросов.
 
-В песочнице — максимум 1 запрос в секунду суммарно для всех методов Контента.
+В песочнице — максимум 1 запрос в секунду суммарно для всех методов Маркетплейса.
 
 ## Ответы
 

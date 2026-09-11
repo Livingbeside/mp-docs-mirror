@@ -2,8 +2,8 @@
 title: Просмотр товаров и карточек
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/_auto/scopes_summary/pages/offers-and-cards-management_read-only.md"
-fetched_at: "2026-09-04T01:57:35Z"
-content_sha: 937b8b6aa6baec3e
+fetched_at: "2026-09-11T01:57:09Z"
+content_sha: 6881f5f758ec16c3
 ---
 
 ---
@@ -14,10 +14,10 @@ alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/_auto/scopes_summary/pages/offers-and-cards-management_read-only.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/_auto/scopes_summary/pages/offers-and-cards-management_read-only.md
   - https://yandex.ru/dev/market/partner-api/doc/zh/_auto/scopes_summary/pages/offers-and-cards-management_read-only.md
-  - href: ru/_auto/scopes_summary/pages/offers-and-cards-management_read-only.md
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/_auto/scopes_summary/pages/offers-and-cards-management_read-only.md
     type: text/markdown
     title: Markdown version
-  - href: ../../../llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
     type: text/markdown
     title: llms.txt
 ---
@@ -40,6 +40,11 @@ alternate:
 [POST v2/businesses/{businessId}/offer-cards](https://yandex.ru/dev/market/partner-api/doc/ru/reference/content/getOfferCardsContentStatus.md)
 |
 Получение информации о заполненности карточек магазина
+||
+||
+[POST v1/businesses/{businessId}/offers/documents](https://yandex.ru/dev/market/partner-api/doc/ru/reference/documents/getDocuments.md)
+|
+Получение документов
 ||
 ||
 [POST v2/businesses/{businessId}/offer-mappings](https://yandex.ru/dev/market/partner-api/doc/ru/reference/business-offer-mappings/getOfferMappings.md)

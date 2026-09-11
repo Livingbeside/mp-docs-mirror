@@ -2,8 +2,8 @@
 title: Настройки кабинета
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/businesses/getBusinessSettings.md"
-fetched_at: "2026-09-04T01:58:08Z"
-content_sha: 5d1b862195630922
+fetched_at: "2026-09-11T01:57:38Z"
+content_sha: 8c4afdfdbebcd5b6
 ---
 
 ---
@@ -14,10 +14,10 @@ alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/businesses/getBusinessSettings.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/businesses/getBusinessSettings.md
   - https://yandex.ru/dev/market/partner-api/doc/zh/reference/businesses/getBusinessSettings.md
-  - href: ru/reference/businesses/getBusinessSettings.md
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/businesses/getBusinessSettings.md
     type: text/markdown
     title: Markdown version
-  - href: ../../llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
     type: text/markdown
     title: llms.txt
 ---

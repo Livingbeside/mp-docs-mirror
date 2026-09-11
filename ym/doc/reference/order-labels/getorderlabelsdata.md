@@ -2,8 +2,8 @@
 title: Данные для изготовления ярлыков
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/order-labels/getOrderLabelsData.md"
-fetched_at: "2026-09-04T01:58:51Z"
-content_sha: 0bc8da1d066035ff
+fetched_at: "2026-09-11T01:58:24Z"
+content_sha: 12f7f85e49bdc13d
 ---
 
 ---
@@ -14,10 +14,10 @@ alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/order-labels/getOrderLabelsData.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/order-labels/getOrderLabelsData.md
   - https://yandex.ru/dev/market/partner-api/doc/zh/reference/order-labels/getOrderLabelsData.md
-  - href: ru/reference/order-labels/getOrderLabelsData.md
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/order-labels/getOrderLabelsData.md
     type: text/markdown
     title: Markdown version
-  - href: ../../llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
     type: text/markdown
     title: llms.txt
 ---

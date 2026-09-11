@@ -2,8 +2,8 @@
 title: Рекомендованные ставки
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/bids/getBidsRecommendations.md"
-fetched_at: "2026-09-04T01:59:24Z"
-content_sha: ce3b31f134a07918
+fetched_at: "2026-09-11T01:58:59Z"
+content_sha: 8973b3a42d80f665
 ---
 
 ---
@@ -14,10 +14,10 @@ alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/bids/getBidsRecommendations.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/bids/getBidsRecommendations.md
   - https://yandex.ru/dev/market/partner-api/doc/zh/reference/bids/getBidsRecommendations.md
-  - href: ru/reference/bids/getBidsRecommendations.md
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/bids/getBidsRecommendations.md
     type: text/markdown
     title: Markdown version
-  - href: ../../llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
     type: text/markdown
     title: llms.txt
 ---

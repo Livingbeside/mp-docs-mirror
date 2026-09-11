@@ -2,8 +2,8 @@
 title: Формат данных
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/push-notifications/concepts/data-format.md"
-fetched_at: "2026-09-04T01:59:39Z"
-content_sha: 3ae475bb11b9fe67
+fetched_at: "2026-09-11T01:59:17Z"
+content_sha: e9d6dc0ca71c6281
 ---
 
 ---
@@ -14,10 +14,10 @@ alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/push-notifications/concepts/data-format.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/push-notifications/concepts/data-format.md
   - https://yandex.ru/dev/market/partner-api/doc/zh/push-notifications/concepts/data-format.md
-  - href: ru/push-notifications/concepts/data-format.md
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/push-notifications/concepts/data-format.md
     type: text/markdown
     title: Markdown version
-  - href: ../../llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
     type: text/markdown
     title: llms.txt
 ---

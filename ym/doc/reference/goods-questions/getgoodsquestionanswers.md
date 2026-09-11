@@ -2,8 +2,8 @@
 title: Ответы на вопрос
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/goods-questions/getGoodsQuestionAnswers.md"
-fetched_at: "2026-09-04T01:59:22Z"
-content_sha: 42849a0e15f3b1a5
+fetched_at: "2026-09-11T01:58:56Z"
+content_sha: ffd010c0f0e99a1d
 ---
 
 ---
@@ -14,10 +14,10 @@ alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/goods-questions/getGoodsQuestionAnswers.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/goods-questions/getGoodsQuestionAnswers.md
   - https://yandex.ru/dev/market/partner-api/doc/zh/reference/goods-questions/getGoodsQuestionAnswers.md
-  - href: ru/reference/goods-questions/getGoodsQuestionAnswers.md
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/goods-questions/getGoodsQuestionAnswers.md
     type: text/markdown
     title: Markdown version
-  - href: ../../llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
     type: text/markdown
     title: llms.txt
 ---

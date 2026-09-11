@@ -2,8 +2,8 @@
 title: Формат ответов
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/concepts/result-format.md"
-fetched_at: "2026-09-04T01:57:41Z"
-content_sha: 76310b3d79398654
+fetched_at: "2026-09-11T01:57:14Z"
+content_sha: d3e8be011358dd0b
 ---
 
 ---
@@ -14,10 +14,10 @@ alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/concepts/result-format.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/concepts/result-format.md
   - https://yandex.ru/dev/market/partner-api/doc/zh/concepts/result-format.md
-  - href: ru/concepts/result-format.md
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/concepts/result-format.md
     type: text/markdown
     title: Markdown version
-  - href: ../llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
     type: text/markdown
     title: llms.txt
 ---

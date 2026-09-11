@@ -2,8 +2,8 @@
 title: Управление ценами
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/_auto/scopes_summary/pages/pricing.md"
-fetched_at: "2026-09-04T01:57:34Z"
-content_sha: 9e6c0f435f82c61b
+fetched_at: "2026-09-11T01:57:08Z"
+content_sha: b9558b6cebae90bf
 ---
 
 ---
@@ -14,10 +14,10 @@ alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/_auto/scopes_summary/pages/pricing.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/_auto/scopes_summary/pages/pricing.md
   - https://yandex.ru/dev/market/partner-api/doc/zh/_auto/scopes_summary/pages/pricing.md
-  - href: ru/_auto/scopes_summary/pages/pricing.md
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/_auto/scopes_summary/pages/pricing.md
     type: text/markdown
     title: Markdown version
-  - href: ../../../llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
     type: text/markdown
     title: llms.txt
 ---

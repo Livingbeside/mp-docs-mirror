@@ -2,8 +2,8 @@
 title: Экспресс
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/overview/express.md"
-fetched_at: "2026-09-04T01:57:59Z"
-content_sha: bec044351d8e7ddb
+fetched_at: "2026-09-11T01:57:32Z"
+content_sha: c57298ae523333a2
 ---
 
 ---
@@ -14,10 +14,10 @@ alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/overview/express.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/overview/express.md
   - https://yandex.ru/dev/market/partner-api/doc/zh/overview/express.md
-  - href: ru/overview/express.md
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/overview/express.md
     type: text/markdown
     title: Markdown version
-  - href: ../llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
     type: text/markdown
     title: llms.txt
 ---

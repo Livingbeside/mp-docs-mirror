@@ -2,8 +2,8 @@
 title: Список складов для кабинетов с группами складов
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/warehouses/getPagedWarehouses.md"
-fetched_at: "2026-09-04T01:59:29Z"
-content_sha: 81555184e0154f25
+fetched_at: "2026-09-11T01:59:04Z"
+content_sha: 912626e1ee5c77ff
 ---
 
 ---
@@ -14,10 +14,10 @@ alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/warehouses/getPagedWarehouses.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/warehouses/getPagedWarehouses.md
   - https://yandex.ru/dev/market/partner-api/doc/zh/reference/warehouses/getPagedWarehouses.md
-  - href: ru/reference/warehouses/getPagedWarehouses.md
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/warehouses/getPagedWarehouses.md
     type: text/markdown
     title: Markdown version
-  - href: ../../llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
     type: text/markdown
     title: llms.txt
 ---

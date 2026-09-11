@@ -2,8 +2,8 @@
 title: Информация о регионе
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/regions/searchRegionsById.md"
-fetched_at: "2026-09-04T01:59:33Z"
-content_sha: 621b374de868f987
+fetched_at: "2026-09-11T01:59:10Z"
+content_sha: 25eeaf5ddd216521
 ---
 
 ---
@@ -14,10 +14,10 @@ alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/regions/searchRegionsById.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/regions/searchRegionsById.md
   - https://yandex.ru/dev/market/partner-api/doc/zh/reference/regions/searchRegionsById.md
-  - href: ru/reference/regions/searchRegionsById.md
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/regions/searchRegionsById.md
     type: text/markdown
     title: Markdown version
-  - href: ../../llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
     type: text/markdown
     title: llms.txt
 ---

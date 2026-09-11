@@ -2,8 +2,8 @@
 title: Отмена заказа покупателем
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/orders/acceptOrderCancellation.md"
-fetched_at: "2026-09-10T01:56:24Z"
-content_sha: 3003462880ffab37
+fetched_at: "2026-09-11T01:58:11Z"
+content_sha: 1f3311d6fb6f55f5
 ---
 
 ---
@@ -14,10 +14,10 @@ alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/orders/acceptOrderCancellation.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/orders/acceptOrderCancellation.md
   - https://yandex.ru/dev/market/partner-api/doc/zh/reference/orders/acceptOrderCancellation.md
-  - href: ru/reference/orders/acceptOrderCancellation.md
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/orders/acceptOrderCancellation.md
     type: text/markdown
     title: Markdown version
-  - href: ../../llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
     type: text/markdown
     title: llms.txt
 ---
@@ -815,7 +815,7 @@ alternate:
           Обязательный параметр, если вы передаете `accepted="false"`.
         $ref: '#/$defs/OrderCancellationReasonType'
     $defs:
-      /home/sandbox/.ya/build/build_root/oxq2/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/orders/api/acceptOrderCancellation.yaml#/OrderCancellationReasonType:
+      /home/sandbox/.ya/build/build_root/givs/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/orders/api/acceptOrderCancellation.yaml#/OrderCancellationReasonType:
         description: |
           Варианты причин, по которым заказ не может быть отменен.
   

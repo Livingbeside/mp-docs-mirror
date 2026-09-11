@@ -2,8 +2,8 @@
 title: Список товаров в акции
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/promos/getPromoOffers.md"
-fetched_at: "2026-09-10T01:56:14Z"
-content_sha: 95a2638fba13a445
+fetched_at: "2026-09-11T01:58:00Z"
+content_sha: 4e6ae2cca1c35d72
 ---
 
 ---
@@ -14,10 +14,10 @@ alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/promos/getPromoOffers.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/promos/getPromoOffers.md
   - https://yandex.ru/dev/market/partner-api/doc/zh/reference/promos/getPromoOffers.md
-  - href: ru/reference/promos/getPromoOffers.md
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/promos/getPromoOffers.md
     type: text/markdown
     title: Markdown version
-  - href: ../../llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
     type: text/markdown
     title: llms.txt
 ---
@@ -1600,7 +1600,7 @@ alternate:
             - NOT_MANUALLY_ADDED
             - MINIMUM_FOR_PROMOS
     $defs:
-      /home/sandbox/.ya/build/build_root/oxq2/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/promos/api/getPromoOffers.yaml#/PromoOfferParticipationStatusFilterType:
+      /home/sandbox/.ya/build/build_root/givs/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/promos/api/getPromoOffers.yaml#/PromoOfferParticipationStatusFilterType:
         description: >
           Фильтр для товаров, которые добавлены в акцию вручную:
   

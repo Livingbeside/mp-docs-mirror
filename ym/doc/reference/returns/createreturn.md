@@ -2,8 +2,8 @@
 title: Создание возврата
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/returns/createReturn.md"
-fetched_at: "2026-09-04T01:59:02Z"
-content_sha: 6194a992e06a749e
+fetched_at: "2026-09-11T01:58:35Z"
+content_sha: dfd69c9c7f920ca0
 ---
 
 ---
@@ -14,10 +14,10 @@ alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/returns/createReturn.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/returns/createReturn.md
   - https://yandex.ru/dev/market/partner-api/doc/zh/reference/returns/createReturn.md
-  - href: ru/reference/returns/createReturn.md
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/returns/createReturn.md
     type: text/markdown
     title: Markdown version
-  - href: ../../llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
     type: text/markdown
     title: llms.txt
 ---

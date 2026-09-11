@@ -2,8 +2,8 @@
 title: Отчет «Цены»
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/reports/generateGoodsPricesReport.md"
-fetched_at: "2026-09-10T01:56:58Z"
-content_sha: b5abf5e3c35d22ae
+fetched_at: "2026-09-11T01:58:43Z"
+content_sha: ed15ed140c82039e
 ---
 
 ---
@@ -14,10 +14,10 @@ alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/reports/generateGoodsPricesReport.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/reports/generateGoodsPricesReport.md
   - https://yandex.ru/dev/market/partner-api/doc/zh/reference/reports/generateGoodsPricesReport.md
-  - href: ru/reference/reports/generateGoodsPricesReport.md
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/reports/generateGoodsPricesReport.md
     type: text/markdown
     title: Markdown version
-  - href: ../../llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
     type: text/markdown
     title: llms.txt
 ---
@@ -969,7 +969,7 @@ alternate:
       required: false
       schema:
         $ref: >-
-          /home/sandbox/.ya/build/build_root/oxq2/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/reports/schemas.yaml#/ReportFormatType
+          /home/sandbox/.ya/build/build_root/givs/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/reports/schemas.yaml#/ReportFormatType
   headers: []
   body: |-
     {

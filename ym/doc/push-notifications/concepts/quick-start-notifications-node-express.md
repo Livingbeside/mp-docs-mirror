@@ -2,8 +2,8 @@
 title: Интеграция на Node.js Express
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/push-notifications/concepts/quick-start-notifications-node-express.md"
-fetched_at: "2026-09-04T01:59:39Z"
-content_sha: cfe7f2fd232a8a73
+fetched_at: "2026-09-11T01:59:16Z"
+content_sha: f07ac4343f80a64b
 ---
 
 ---
@@ -14,10 +14,10 @@ alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/push-notifications/concepts/quick-start-notifications-node-express.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/push-notifications/concepts/quick-start-notifications-node-express.md
   - https://yandex.ru/dev/market/partner-api/doc/zh/push-notifications/concepts/quick-start-notifications-node-express.md
-  - href: ru/push-notifications/concepts/quick-start-notifications-node-express.md
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/push-notifications/concepts/quick-start-notifications-node-express.md
     type: text/markdown
     title: Markdown version
-  - href: ../../llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
     type: text/markdown
     title: llms.txt
 ---

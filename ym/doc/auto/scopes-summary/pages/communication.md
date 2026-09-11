@@ -2,8 +2,8 @@
 title: Общение с покупателями
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/_auto/scopes_summary/pages/communication.md"
-fetched_at: "2026-09-04T01:57:37Z"
-content_sha: 9b267679f27ab19e
+fetched_at: "2026-09-11T01:57:11Z"
+content_sha: 73f9c1ab9d0fefb4
 ---
 
 ---
@@ -14,10 +14,10 @@ alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/_auto/scopes_summary/pages/communication.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/_auto/scopes_summary/pages/communication.md
   - https://yandex.ru/dev/market/partner-api/doc/zh/_auto/scopes_summary/pages/communication.md
-  - href: ru/_auto/scopes_summary/pages/communication.md
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/_auto/scopes_summary/pages/communication.md
     type: text/markdown
     title: Markdown version
-  - href: ../../../llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
     type: text/markdown
     title: llms.txt
 ---

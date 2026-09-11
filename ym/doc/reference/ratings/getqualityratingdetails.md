@@ -2,8 +2,8 @@
 title: Заказы, которые повлияли на индекс качества
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/ratings/getQualityRatingDetails.md"
-fetched_at: "2026-09-04T01:59:25Z"
-content_sha: 1d07db34f3506249
+fetched_at: "2026-09-11T01:59:00Z"
+content_sha: 12f8ed952aa97dcd
 ---
 
 ---
@@ -14,10 +14,10 @@ alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/ratings/getQualityRatingDetails.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/ratings/getQualityRatingDetails.md
   - https://yandex.ru/dev/market/partner-api/doc/zh/reference/ratings/getQualityRatingDetails.md
-  - href: ru/reference/ratings/getQualityRatingDetails.md
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/ratings/getQualityRatingDetails.md
     type: text/markdown
     title: Markdown version
-  - href: ../../llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
     type: text/markdown
     title: llms.txt
 ---

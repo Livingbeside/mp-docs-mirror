@@ -2,8 +2,8 @@
 title: Продавцам Market Yandex Go
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/market-yandex-go-sellers.md"
-fetched_at: "2026-09-04T01:57:45Z"
-content_sha: 521f5c1b728f989d
+fetched_at: "2026-09-11T01:57:18Z"
+content_sha: c6dd3c6042be6ef3
 ---
 
 ---
@@ -14,10 +14,10 @@ alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/market-yandex-go-sellers.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/market-yandex-go-sellers.md
   - https://yandex.ru/dev/market/partner-api/doc/zh/market-yandex-go-sellers.md
-  - href: ru/market-yandex-go-sellers.md
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/market-yandex-go-sellers.md
     type: text/markdown
     title: Markdown version
-  - href: llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
     type: text/markdown
     title: llms.txt
 ---

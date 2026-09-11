@@ -2,8 +2,8 @@
 title: Передача кода подтверждения
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/order-delivery/verifyOrderEac.md"
-fetched_at: "2026-09-04T01:58:33Z"
-content_sha: da27bb77de6ca7ce
+fetched_at: "2026-09-11T01:58:08Z"
+content_sha: e2ae472e00f03b79
 ---
 
 ---
@@ -14,10 +14,10 @@ alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/order-delivery/verifyOrderEac.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/order-delivery/verifyOrderEac.md
   - https://yandex.ru/dev/market/partner-api/doc/zh/reference/order-delivery/verifyOrderEac.md
-  - href: ru/reference/order-delivery/verifyOrderEac.md
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/order-delivery/verifyOrderEac.md
     type: text/markdown
     title: Markdown version
-  - href: ../../llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
     type: text/markdown
     title: llms.txt
 ---

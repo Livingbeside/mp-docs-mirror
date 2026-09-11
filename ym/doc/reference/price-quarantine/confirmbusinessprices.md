@@ -2,8 +2,8 @@
 title: Удаление из карантина по цене в кабинете
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/price-quarantine/confirmBusinessPrices.md"
-fetched_at: "2026-09-04T01:58:25Z"
-content_sha: b40e5daf40be30ed
+fetched_at: "2026-09-11T01:57:59Z"
+content_sha: 03adf6748531da29
 ---
 
 ---
@@ -14,10 +14,10 @@ alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/price-quarantine/confirmBusinessPrices.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/price-quarantine/confirmBusinessPrices.md
   - https://yandex.ru/dev/market/partner-api/doc/zh/reference/price-quarantine/confirmBusinessPrices.md
-  - href: ru/reference/price-quarantine/confirmBusinessPrices.md
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/price-quarantine/confirmBusinessPrices.md
     type: text/markdown
     title: Markdown version
-  - href: ../../llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
     type: text/markdown
     title: llms.txt
 ---

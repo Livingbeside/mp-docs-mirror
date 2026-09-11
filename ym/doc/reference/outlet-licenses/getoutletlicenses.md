@@ -2,8 +2,8 @@
 title: Информация о лицензиях
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/outlet-licenses/getOutletLicenses.md"
-fetched_at: "2026-09-04T01:58:56Z"
-content_sha: 0763a3134b618857
+fetched_at: "2026-09-11T01:58:31Z"
+content_sha: 56b70210b450911c
 ---
 
 ---
@@ -14,10 +14,10 @@ alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/outlet-licenses/getOutletLicenses.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/outlet-licenses/getOutletLicenses.md
   - https://yandex.ru/dev/market/partner-api/doc/zh/reference/outlet-licenses/getOutletLicenses.md
-  - href: ru/reference/outlet-licenses/getOutletLicenses.md
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/outlet-licenses/getOutletLicenses.md
     type: text/markdown
     title: Markdown version
-  - href: ../../llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
     type: text/markdown
     title: llms.txt
 ---

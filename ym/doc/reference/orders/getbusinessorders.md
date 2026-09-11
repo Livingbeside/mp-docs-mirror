@@ -2,8 +2,8 @@
 title: Информация о заказах
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/orders/getBusinessOrders.md"
-fetched_at: "2026-09-10T01:56:16Z"
-content_sha: 658ac04b6bbeaf29
+fetched_at: "2026-09-11T01:58:03Z"
+content_sha: 7c592d8760ee86dc
 ---
 
 ---
@@ -14,10 +14,10 @@ alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/orders/getBusinessOrders.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/orders/getBusinessOrders.md
   - https://yandex.ru/dev/market/partner-api/doc/zh/reference/orders/getBusinessOrders.md
-  - href: ru/reference/orders/getBusinessOrders.md
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/orders/getBusinessOrders.md
     type: text/markdown
     title: Markdown version
-  - href: ../../llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
     type: text/markdown
     title: llms.txt
 ---
@@ -6191,7 +6191,7 @@ alternate:
             - OTHER
         minItems: 1
     $defs:
-      /home/sandbox/.ya/build/build_root/oxq2/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/orders/api/getBusinessOrders.yaml#/OrderDatesFilterDTO:
+      /home/sandbox/.ya/build/build_root/givs/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/orders/api/getBusinessOrders.yaml#/OrderDatesFilterDTO:
         type: object
         description: Фильтр по датам заказов.
         properties:

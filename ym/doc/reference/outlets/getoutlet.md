@@ -2,8 +2,8 @@
 title: Одна точка продаж
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/outlets/getOutlet.md"
-fetched_at: "2026-09-04T01:58:54Z"
-content_sha: 818c10e82761b037
+fetched_at: "2026-09-11T01:58:28Z"
+content_sha: ff5b4643f574f032
 ---
 
 ---
@@ -14,10 +14,10 @@ alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/outlets/getOutlet.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/outlets/getOutlet.md
   - https://yandex.ru/dev/market/partner-api/doc/zh/reference/outlets/getOutlet.md
-  - href: ru/reference/outlets/getOutlet.md
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/outlets/getOutlet.md
     type: text/markdown
     title: Markdown version
-  - href: ../../llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
     type: text/markdown
     title: llms.txt
 ---

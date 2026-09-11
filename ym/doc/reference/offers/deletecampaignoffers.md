@@ -2,8 +2,8 @@
 title: В магазине
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/offers/deleteCampaignOffers.md"
-fetched_at: "2026-09-04T01:58:15Z"
-content_sha: 39976eb65f5cb0dd
+fetched_at: "2026-09-11T01:57:48Z"
+content_sha: 3020d33d00fbd908
 ---
 
 ---
@@ -14,10 +14,10 @@ alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/offers/deleteCampaignOffers.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/offers/deleteCampaignOffers.md
   - https://yandex.ru/dev/market/partner-api/doc/zh/reference/offers/deleteCampaignOffers.md
-  - href: ru/reference/offers/deleteCampaignOffers.md
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/offers/deleteCampaignOffers.md
     type: text/markdown
     title: Markdown version
-  - href: ../../llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
     type: text/markdown
     title: llms.txt
 ---

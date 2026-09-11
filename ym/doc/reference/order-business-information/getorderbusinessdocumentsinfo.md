@@ -2,8 +2,8 @@
 title: Информация о документах
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/order-business-information/getOrderBusinessDocumentsInfo.md"
-fetched_at: "2026-09-04T01:58:38Z"
-content_sha: 1497fc190daaad7c
+fetched_at: "2026-09-11T01:58:14Z"
+content_sha: 6759175b37bb8e6f
 ---
 
 ---
@@ -14,10 +14,10 @@ alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/order-business-information/getOrderBusinessDocumentsInfo.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/order-business-information/getOrderBusinessDocumentsInfo.md
   - https://yandex.ru/dev/market/partner-api/doc/zh/reference/order-business-information/getOrderBusinessDocumentsInfo.md
-  - href: ru/reference/order-business-information/getOrderBusinessDocumentsInfo.md
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/order-business-information/getOrderBusinessDocumentsInfo.md
     type: text/markdown
     title: Markdown version
-  - href: ../../llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
     type: text/markdown
     title: llms.txt
 ---

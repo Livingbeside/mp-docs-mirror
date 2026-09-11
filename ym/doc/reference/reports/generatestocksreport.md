@@ -2,8 +2,8 @@
 title: Отчет по остаткам на складах партнера
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/reports/generateStocksReport.md"
-fetched_at: "2026-09-10T01:56:57Z"
-content_sha: c95ce40c2f1adcc8
+fetched_at: "2026-09-11T01:58:42Z"
+content_sha: c6ef2a543800f27b
 ---
 
 ---
@@ -14,10 +14,10 @@ alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/reports/generateStocksReport.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/reports/generateStocksReport.md
   - https://yandex.ru/dev/market/partner-api/doc/zh/reference/reports/generateStocksReport.md
-  - href: ru/reference/reports/generateStocksReport.md
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/reports/generateStocksReport.md
     type: text/markdown
     title: Markdown version
-  - href: ../../llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
     type: text/markdown
     title: llms.txt
 ---
@@ -949,7 +949,7 @@ alternate:
       required: false
       schema:
         $ref: >-
-          /home/sandbox/.ya/build/build_root/oxq2/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/reports/schemas.yaml#/ReportFormatType
+          /home/sandbox/.ya/build/build_root/givs/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/reports/schemas.yaml#/ReportFormatType
   headers: []
   body: |-
     {

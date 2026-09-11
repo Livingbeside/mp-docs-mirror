@@ -2,8 +2,8 @@
 title: Массовое изменение статусов заказов
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/orders/updateOrderStatuses.md"
-fetched_at: "2026-09-04T01:58:32Z"
-content_sha: 5882e29599c87d63
+fetched_at: "2026-09-11T01:58:06Z"
+content_sha: b01e07c465f3a857
 ---
 
 ---
@@ -14,10 +14,10 @@ alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/orders/updateOrderStatuses.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/orders/updateOrderStatuses.md
   - https://yandex.ru/dev/market/partner-api/doc/zh/reference/orders/updateOrderStatuses.md
-  - href: ru/reference/orders/updateOrderStatuses.md
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/orders/updateOrderStatuses.md
     type: text/markdown
     title: Markdown version
-  - href: ../../llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
     type: text/markdown
     title: llms.txt
 ---

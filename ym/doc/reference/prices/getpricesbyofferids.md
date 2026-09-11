@@ -2,8 +2,8 @@
 title: В магазине
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/prices/getPricesByOfferIds.md"
-fetched_at: "2026-09-04T01:58:23Z"
-content_sha: 99bc46c32d919eb5
+fetched_at: "2026-09-11T01:57:56Z"
+content_sha: 009fa13ac4d922ff
 ---
 
 ---
@@ -14,10 +14,10 @@ alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/prices/getPricesByOfferIds.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/prices/getPricesByOfferIds.md
   - https://yandex.ru/dev/market/partner-api/doc/zh/reference/prices/getPricesByOfferIds.md
-  - href: ru/reference/prices/getPricesByOfferIds.md
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/prices/getPricesByOfferIds.md
     type: text/markdown
     title: Markdown version
-  - href: ../../llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
     type: text/markdown
     title: llms.txt
 ---

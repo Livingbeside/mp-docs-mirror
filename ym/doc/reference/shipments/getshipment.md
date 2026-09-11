@@ -2,8 +2,8 @@
 title: Информация об одной отгрузке
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/shipments/getShipment.md"
-fetched_at: "2026-09-04T01:58:44Z"
-content_sha: 03958027e960e8c7
+fetched_at: "2026-09-11T01:58:17Z"
+content_sha: 1620bb253db6af56
 ---
 
 ---
@@ -14,10 +14,10 @@ alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/shipments/getShipment.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/shipments/getShipment.md
   - https://yandex.ru/dev/market/partner-api/doc/zh/reference/shipments/getShipment.md
-  - href: ru/reference/shipments/getShipment.md
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/shipments/getShipment.md
     type: text/markdown
     title: Markdown version
-  - href: ../../llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
     type: text/markdown
     title: llms.txt
 ---

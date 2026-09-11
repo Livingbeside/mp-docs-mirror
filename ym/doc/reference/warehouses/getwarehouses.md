@@ -2,8 +2,8 @@
 title: Список складов
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/warehouses/getWarehouses.md"
-fetched_at: "2026-09-04T01:59:38Z"
-content_sha: d34a5e37d921e40e
+fetched_at: "2026-09-11T01:59:15Z"
+content_sha: b82869dc65fcf73a
 ---
 
 ---
@@ -14,10 +14,10 @@ alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/warehouses/getWarehouses.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/warehouses/getWarehouses.md
   - https://yandex.ru/dev/market/partner-api/doc/zh/reference/warehouses/getWarehouses.md
-  - href: ru/reference/warehouses/getWarehouses.md
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/warehouses/getWarehouses.md
     type: text/markdown
     title: Markdown version
-  - href: ../../llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
     type: text/markdown
     title: llms.txt
 ---

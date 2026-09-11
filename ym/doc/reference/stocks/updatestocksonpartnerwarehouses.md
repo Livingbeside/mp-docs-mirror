@@ -2,8 +2,8 @@
 title: Передача информации об остатках
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/stocks/updateStocksOnPartnerWarehouses.md"
-fetched_at: "2026-09-04T01:58:20Z"
-content_sha: ad53b9f9e08ce6d2
+fetched_at: "2026-09-11T01:57:53Z"
+content_sha: 6819486904aa7c64
 ---
 
 ---
@@ -14,10 +14,10 @@ alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/stocks/updateStocksOnPartnerWarehouses.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/stocks/updateStocksOnPartnerWarehouses.md
   - https://yandex.ru/dev/market/partner-api/doc/zh/reference/stocks/updateStocksOnPartnerWarehouses.md
-  - href: ru/reference/stocks/updateStocksOnPartnerWarehouses.md
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/stocks/updateStocksOnPartnerWarehouses.md
     type: text/markdown
     title: Markdown version
-  - href: ../../llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
     type: text/markdown
     title: llms.txt
 ---

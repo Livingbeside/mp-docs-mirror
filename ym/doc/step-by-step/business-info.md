@@ -2,8 +2,8 @@
 title: Заказы от бизнеса
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/business-info.md"
-fetched_at: "2026-09-04T01:57:52Z"
-content_sha: aceeb1ff5031e725
+fetched_at: "2026-09-11T01:57:24Z"
+content_sha: 046b305dbca1d914
 ---
 
 ---
@@ -14,10 +14,10 @@ alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/step-by-step/business-info.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/business-info.md
   - https://yandex.ru/dev/market/partner-api/doc/zh/step-by-step/business-info.md
-  - href: ru/step-by-step/business-info.md
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/business-info.md
     type: text/markdown
     title: Markdown version
-  - href: ../llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
     type: text/markdown
     title: llms.txt
 ---

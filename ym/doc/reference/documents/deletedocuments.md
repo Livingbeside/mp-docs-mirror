@@ -2,8 +2,8 @@
 title: Удаление документов
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/documents/deleteDocuments.md"
-fetched_at: "2026-09-10T01:55:59Z"
-content_sha: 59ab2137e31ba489
+fetched_at: "2026-09-11T01:57:45Z"
+content_sha: c491e60bc0ac7332
 ---
 
 ---
@@ -13,10 +13,11 @@ metadata:
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/documents/deleteDocuments.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/documents/deleteDocuments.md
-  - href: ru/reference/documents/deleteDocuments.md
+  - https://yandex.ru/dev/market/partner-api/doc/zh/reference/documents/deleteDocuments.md
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/documents/deleteDocuments.md
     type: text/markdown
     title: Markdown version
-  - href: ../../llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
     type: text/markdown
     title: llms.txt
 ---

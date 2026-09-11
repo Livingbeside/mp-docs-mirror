@@ -2,8 +2,8 @@
 title: Просмотр информации о заказах
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/_auto/scopes_summary/pages/inventory-and-order-processing_read-only.md"
-fetched_at: "2026-09-04T01:57:33Z"
-content_sha: df8abdef4d4a7d06
+fetched_at: "2026-09-11T01:57:07Z"
+content_sha: 32ce80001372d615
 ---
 
 ---
@@ -14,10 +14,10 @@ alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/_auto/scopes_summary/pages/inventory-and-order-processing_read-only.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/_auto/scopes_summary/pages/inventory-and-order-processing_read-only.md
   - https://yandex.ru/dev/market/partner-api/doc/zh/_auto/scopes_summary/pages/inventory-and-order-processing_read-only.md
-  - href: ru/_auto/scopes_summary/pages/inventory-and-order-processing_read-only.md
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/_auto/scopes_summary/pages/inventory-and-order-processing_read-only.md
     type: text/markdown
     title: Markdown version
-  - href: ../../../llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
     type: text/markdown
     title: llms.txt
 ---

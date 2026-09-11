@@ -2,8 +2,8 @@
 title: Изменение
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/outlets/updateOutlet.md"
-fetched_at: "2026-09-10T01:56:44Z"
-content_sha: c258fc0344217b89
+fetched_at: "2026-09-11T01:58:30Z"
+content_sha: 513c4c8f0c0e431f
 ---
 
 ---
@@ -14,10 +14,10 @@ alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/outlets/updateOutlet.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/outlets/updateOutlet.md
   - https://yandex.ru/dev/market/partner-api/doc/zh/reference/outlets/updateOutlet.md
-  - href: ru/reference/outlets/updateOutlet.md
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/outlets/updateOutlet.md
     type: text/markdown
     title: Markdown version
-  - href: ../../llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
     type: text/markdown
     title: llms.txt
 ---
@@ -2041,7 +2041,7 @@ alternate:
             type: integer
             format: int64
     $defs:
-      /home/sandbox/.ya/build/build_root/oxq2/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/common/schemas.yaml#/DayOfWeekType:
+      /home/sandbox/.ya/build/build_root/givs/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/common/schemas.yaml#/DayOfWeekType:
         description: |
           День недели:
   

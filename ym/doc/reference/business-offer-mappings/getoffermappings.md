@@ -2,8 +2,8 @@
 title: В кабинете
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/business-offer-mappings/getOfferMappings.md"
-fetched_at: "2026-09-10T01:56:00Z"
-content_sha: 8e8af322dcde0c3e
+fetched_at: "2026-09-11T01:57:46Z"
+content_sha: 9877ee42160f2995
 ---
 
 ---
@@ -14,10 +14,10 @@ alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/business-offer-mappings/getOfferMappings.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/business-offer-mappings/getOfferMappings.md
   - https://yandex.ru/dev/market/partner-api/doc/zh/reference/business-offer-mappings/getOfferMappings.md
-  - href: ru/reference/business-offer-mappings/getOfferMappings.md
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/business-offer-mappings/getOfferMappings.md
     type: text/markdown
     title: Markdown version
-  - href: ../../llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
     type: text/markdown
     title: llms.txt
 ---
@@ -4927,7 +4927,7 @@ alternate:
       required: false
       schema:
         $ref: >-
-          /home/sandbox/.ya/build/build_root/oxq2/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/business-offer-mappings/schemas.yaml#/CatalogLanguageType
+          /home/sandbox/.ya/build/build_root/givs/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/business-offer-mappings/schemas.yaml#/CatalogLanguageType
   headers: []
   body: |-
     {

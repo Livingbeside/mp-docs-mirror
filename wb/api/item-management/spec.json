@@ -5678,7 +5678,7 @@
     },
     "/api/v3/offices": {
       "get": {
-        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод возвращает список складов WB для привязки к складу продавца при его [создании](./work-with-products#tag/Sklady-prodavca/paths/~1api~1v3~1warehouses/post) или [редактировании](./work-with-products#tag/Sklady-prodavca/paths/~1api~1v3~1warehouses~1%7BwarehouseId%7D/put).\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца для всех методов <strong>складов продавца</strong>:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 300 запросов | 200 мс | 20 запросов |\n\nОдин запрос с кодами ответов <code>4XX</code> учитывается как 10 запросов.\n\n<hr>\n\nВ <a href='/sandbox'>песочнице</a> — максимум 1 запрос в секунду суммарно для всех методов <strong>Контента</strong>.\n\n</div>\n",
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод возвращает список складов WB для привязки к складу продавца при его [создании](./work-with-products#tag/Sklady-prodavca/paths/~1api~1v3~1warehouses/post) или [редактировании](./work-with-products#tag/Sklady-prodavca/paths/~1api~1v3~1warehouses~1%7BwarehouseId%7D/put).\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца для всех методов <strong>складов продавца</strong>:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 300 запросов | 200 мс | 20 запросов |\n\nОдин запрос с кодами ответов <code>4XX</code> учитывается как 10 запросов.\n\n<hr>\n\nВ <a href='/sandbox'>песочнице</a> — максимум 1 запрос в секунду суммарно для всех методов <strong>Маркетплейса</strong>.\n\n</div>\n",
         "responses": {
           "200": {
             "content": {
@@ -5752,7 +5752,7 @@
     },
     "/api/v3/stocks/{warehouseId}": {
       "delete": {
-        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод удаляет запись об остатках товаров продавца из [списка остатков](./work-with-products#tag/Ostatki-na-skladah-prodavca/paths/~1api~1v3~1stocks~1%7BwarehouseId%7D/post).\n\n<div class=\"description_important\">\n  <strong>Действие необратимо</strong>. Удаленный остаток будет необходимо загрузить повторно для возобновления продаж.\n</div>\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 10 запросов | 6 сек | 2 запроса |\n</div>\n",
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод удаляет запись об остатках товаров продавца из [списка остатков](./work-with-products#tag/Ostatki-na-skladah-prodavca/paths/~1api~1v3~1stocks~1%7BwarehouseId%7D/post).\n\n<div class=\"description_important\">\n  <strong>Действие необратимо</strong>. Удаленный остаток будет необходимо загрузить повторно для возобновления продаж.\n</div>\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 10 запросов | 6 сек | 2 запроса |\n\nОдин запрос с кодами ответов <code>4XX</code> учитывается как 10 запросов.\n\n<hr>\n\nВ <a href='/sandbox'>песочнице</a> — максимум 1 запрос в секунду суммарно для всех методов <strong>Маркетплейса</strong>.\n\n</div>\n",
         "parameters": [
           {
             "$ref": "#/components/parameters/Warehouse"
@@ -5894,7 +5894,7 @@
         "x-readonly-method": false
       },
       "post": {
-        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод возвращает данные об остатках товаров на [складах продавца](./work-with-products#tag/Sklady-prodavca).\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца для всех методов <strong>остатков на складах продавца</strong> кроме метода <a href='./work-with-products#tag/Ostatki-na-skladah-prodavca/paths/~1api~1v3~1stocks~1%7BwarehouseId%7D/delete'>удаления остатков</a>:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 300 запросов | 200 мс | 20 запросов |\n\nОдин запрос с кодами ответов <code>4XX</code> учитывается как 10 запросов\n\n<hr>\n\nВ <a href='/sandbox'>песочнице</a> — максимум 1 запрос в секунду суммарно для всех методов <strong>Контента</strong>.\n\n</div>\n",
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод возвращает данные об остатках товаров на [складах продавца](./work-with-products#tag/Sklady-prodavca).\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца для всех методов <strong>остатков на складах продавца</strong> кроме метода <a href='./work-with-products#tag/Ostatki-na-skladah-prodavca/paths/~1api~1v3~1stocks~1%7BwarehouseId%7D/delete'>удаления остатков</a>:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 300 запросов | 200 мс | 20 запросов |\n\nОдин запрос с кодами ответов <code>4XX</code> учитывается как 10 запросов\n\n<hr>\n\nВ <a href='/sandbox'>песочнице</a> — максимум 1 запрос в секунду суммарно для всех методов <strong>Маркетплейса</strong>.\n\n</div>\n",
         "parameters": [
           {
             "$ref": "#/components/parameters/Warehouse"
@@ -6033,7 +6033,7 @@
         "x-readonly-method": true
       },
       "put": {
-        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод обновляет количество остатков товаров продавца [в списке](./work-with-products#tag/Ostatki-na-skladah-prodavca/paths/~1api~1v3~1stocks~1%7BwarehouseId%7D/post).\n\n<div class=\"description_important\">\n  Названия параметров запроса не валидируются. При отправке некорректных названий вы получите успешный ответ (<code>204</code>), но остатки не обновятся.\n</div>\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца для всех методов <strong>остатков на складах продавца</strong> кроме метода <a href='./work-with-products#tag/Ostatki-na-skladah-prodavca/paths/~1api~1v3~1stocks~1%7BwarehouseId%7D/delete'>удаления остатков</a>:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 300 запросов | 200 мс | 20 запросов |\n\nОдин запрос с кодами ответов <code>4XX</code> учитывается как 10 запросов\n\n<hr>\n\nВ <a href='/sandbox'>песочнице</a> — максимум 1 запрос в секунду суммарно для всех методов <strong>Контента</strong>.\n\n</div>\n",
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод обновляет количество остатков товаров продавца [в списке](./work-with-products#tag/Ostatki-na-skladah-prodavca/paths/~1api~1v3~1stocks~1%7BwarehouseId%7D/post).\n\n<div class=\"description_important\">\n  Названия параметров запроса не валидируются. При отправке некорректных названий вы получите успешный ответ (<code>204</code>), но остатки не обновятся.\n</div>\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца для всех методов <strong>остатков на складах продавца</strong> кроме метода <a href='./work-with-products#tag/Ostatki-na-skladah-prodavca/paths/~1api~1v3~1stocks~1%7BwarehouseId%7D/delete'>удаления остатков</a>:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 300 запросов | 200 мс | 20 запросов |\n\nОдин запрос с кодами ответов <code>4XX</code> учитывается как 10 запросов\n\n<hr>\n\nВ <a href='/sandbox'>песочнице</a> — максимум 1 запрос в секунду суммарно для всех методов <strong>Маркетплейса</strong>.\n\n</div>\n",
         "parameters": [
           {
             "$ref": "#/components/parameters/Warehouse"
@@ -6223,7 +6223,7 @@
     },
     "/api/v3/warehouses": {
       "get": {
-        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод возвращает список всех складов продавца. Может использоваться для работы с [остатками товаров](./work-with-products#tag/Ostatki-na-skladah-prodavca).\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца для всех методов <strong>складов продавца</strong>:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 300 запросов | 200 мс | 20 запросов |\n\nОдин запрос с кодами ответов <code>4XX</code> учитывается как 10 запросов.\n\n<hr>\n\nВ <a href='/sandbox'>песочнице</a> — максимум 1 запрос в секунду суммарно для всех методов <strong>Контента</strong>.\n\n</div>\n",
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод возвращает список всех складов продавца. Может использоваться для работы с [остатками товаров](./work-with-products#tag/Ostatki-na-skladah-prodavca).\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца для всех методов <strong>складов продавца</strong>:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 300 запросов | 200 мс | 20 запросов |\n\nОдин запрос с кодами ответов <code>4XX</code> учитывается как 10 запросов.\n\n<hr>\n\nВ <a href='/sandbox'>песочнице</a> — максимум 1 запрос в секунду суммарно для всех методов <strong>Маркетплейса</strong>.\n\n</div>\n",
         "responses": {
           "200": {
             "content": {
@@ -6285,7 +6285,7 @@
         "x-readonly-method": true
       },
       "post": {
-        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод создаёт склад продавца для работы с [остатками товаров](./work-with-products#tag/Ostatki-na-skladah-prodavca), кроме сверхгабаритных (СГТ), по модели [FBS](./orders-fbs) (Fulfillment by Seller).\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца для всех методов <strong>складов продавца</strong>:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 300 запросов | 200 мс | 20 запросов |\n\nОдин запрос с кодами ответов <code>4XX</code> учитывается как 10 запросов.\n\n<hr>\n\nВ <a href='/sandbox'>песочнице</a> — максимум 1 запрос в секунду суммарно для всех методов <strong>Контента</strong>.\n\n</div>\n",
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод создаёт склад продавца для работы с [остатками товаров](./work-with-products#tag/Ostatki-na-skladah-prodavca), кроме сверхгабаритных (СГТ), по модели [FBS](./orders-fbs) (Fulfillment by Seller).\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца для всех методов <strong>складов продавца</strong>:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 300 запросов | 200 мс | 20 запросов |\n\nОдин запрос с кодами ответов <code>4XX</code> учитывается как 10 запросов.\n\n<hr>\n\nВ <a href='/sandbox'>песочнице</a> — максимум 1 запрос в секунду суммарно для всех методов <strong>Маркетплейса</strong>.\n\n</div>\n",
         "requestBody": {
           "content": {
             "application/json": {
@@ -6427,7 +6427,7 @@
     },
     "/api/v3/warehouses/{warehouseId}": {
       "delete": {
-        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод удаляет [склад продавца](./work-with-products#tag/Sklady-prodavca/paths/~1api~1v3~1warehouses/get).\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца для всех методов <strong>складов продавца</strong>:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 300 запросов | 200 мс | 20 запросов |\n\nОдин запрос с кодами ответов <code>4XX</code> учитывается как 10 запросов.\n\n<hr>\n\nВ <a href='/sandbox'>песочнице</a> — максимум 1 запрос в секунду суммарно для всех методов <strong>Контента</strong>.\n\n</div>\n",
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод удаляет [склад продавца](./work-with-products#tag/Sklady-prodavca/paths/~1api~1v3~1warehouses/get).\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца для всех методов <strong>складов продавца</strong>:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 300 запросов | 200 мс | 20 запросов |\n\nОдин запрос с кодами ответов <code>4XX</code> учитывается как 10 запросов.\n\n<hr>\n\nВ <a href='/sandbox'>песочнице</a> — максимум 1 запрос в секунду суммарно для всех методов <strong>Маркетплейса</strong>.\n\n</div>\n",
         "parameters": [
           {
             "$ref": "#/components/parameters/Warehouse"
@@ -6488,7 +6488,7 @@
         "x-readonly-method": false
       },
       "put": {
-        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод обновляет данные [склада продавца](./work-with-products#tag/Sklady-prodavca/paths/~1api~1v3~1warehouses/get), кроме складов для сверхгабаритных товаров (СГТ, `\"cargoType\":2`).\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца для всех методов <strong>складов продавца</strong>:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 300 запросов | 200 мс | 20 запросов |\n\nОдин запрос с кодами ответов <code>4XX</code> учитывается как 10 запросов.\n\n<hr>\n\nВ <a href='/sandbox'>песочнице</a> — максимум 1 запрос в секунду суммарно для всех методов <strong>Контента</strong>.\n\n</div>\n",
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод обновляет данные [склада продавца](./work-with-products#tag/Sklady-prodavca/paths/~1api~1v3~1warehouses/get), кроме складов для сверхгабаритных товаров (СГТ, `\"cargoType\":2`).\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца для всех методов <strong>складов продавца</strong>:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 300 запросов | 200 мс | 20 запросов |\n\nОдин запрос с кодами ответов <code>4XX</code> учитывается как 10 запросов.\n\n<hr>\n\nВ <a href='/sandbox'>песочнице</a> — максимум 1 запрос в секунду суммарно для всех методов <strong>Маркетплейса</strong>.\n\n</div>\n",
         "parameters": [
           {
             "$ref": "#/components/parameters/Warehouse"
@@ -7862,14 +7862,15 @@
                             "type": "string"
                           },
                           "wholesale": {
-                            "description": "Оптовая продажа",
+                            "description": "B2B-продажа",
                             "properties": {
                               "enabled": {
-                                "description": "Предназначена ли карточка товара для оптовой продажи",
+                                "default": false,
+                                "description": "Предназначен ли товар для продажи только B2B-покупателям:\n  - `true` — товар предназначен для продажи только B2B-покупателям\n  - `false` — товар предназначен для продажи B2B и B2C-покупателям\n",
                                 "type": "boolean"
                               },
                               "quantum": {
-                                "description": "Количество единиц товара в упаковке",
+                                "description": "Минимальное количество единиц товара в одной корзине B2B-покупателя. Только при `\"enable\":true`",
                                 "format": "uint64",
                                 "type": "number"
                               }
@@ -8263,14 +8264,15 @@
                           "type": "string"
                         },
                         "wholesale": {
-                          "description": "Оптовая продажа",
+                          "description": "B2B-продажа",
                           "properties": {
                             "enabled": {
-                              "description": "Предназначена ли карточка товара для оптовой продажи",
+                              "default": false,
+                              "description": "Предназначен ли товар для продажи только B2B-покупателям:\n  - `true` — товар предназначен для продажи только B2B-покупателям\n  - `false` — товар предназначен для продажи B2B и B2C-покупателям\n",
                               "type": "boolean"
                             },
                             "quantum": {
-                              "description": "Количество единиц товара в упаковке",
+                              "description": "Минимальное количество единиц товара в одной корзине B2B-покупателя. Только при `\"enable\":true`",
                               "format": "uint64",
                               "type": "number"
                             }
@@ -9716,14 +9718,14 @@
                             "type": "string"
                           },
                           "wholesale": {
-                            "description": "Оптовая продажа",
+                            "description": "B2B-продажа",
                             "properties": {
                               "enabled": {
-                                "description": "Предназначена ли карточка товара для оптовой продажи",
+                                "description": "Предназначен ли товар для продажи только B2B-покупателям:\n  - `true` — товар предназначен для продажи только B2B-покупателям\n  - `false` — товар предназначен для продажи B2B и B2C-покупателям\n",
                                 "type": "boolean"
                               },
                               "quantum": {
-                                "description": "Количество единиц товара в упаковке",
+                                "description": "Минимальное количество единиц товара в одной корзине B2B-покупателя. Только при `\"enable\":true`",
                                 "format": "uint64",
                                 "type": "number"
                               }
@@ -10116,14 +10118,14 @@
                             "type": "string"
                           },
                           "wholesale": {
-                            "description": "Оптовая продажа",
+                            "description": "B2B-продажа",
                             "properties": {
                               "enabled": {
-                                "description": "Предназначена ли карточка товара для оптовой продажи",
+                                "description": "Предназначен ли товар для продажи только B2B-покупателям:\n  - `true` — товар предназначен для продажи только B2B-покупателям\n  - `false` — товар предназначен для продажи B2B и B2C-покупателям\n",
                                 "type": "boolean"
                               },
                               "quantum": {
-                                "description": "Количество единиц товара в упаковке",
+                                "description": "Минимальное количество единиц товара в одной корзине B2B-покупателя. Только при `\"enable\":true`",
                                 "format": "uint64",
                                 "type": "number"
                               }

@@ -2,8 +2,8 @@
 title: Лучшие практики
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/concepts/best-practices.md"
-fetched_at: "2026-09-04T01:57:45Z"
-content_sha: 95ef309c3275143e
+fetched_at: "2026-09-11T01:57:18Z"
+content_sha: e550bf11a7ef15e2
 ---
 
 ---
@@ -14,10 +14,10 @@ alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/concepts/best-practices.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/concepts/best-practices.md
   - https://yandex.ru/dev/market/partner-api/doc/zh/concepts/best-practices.md
-  - href: ru/concepts/best-practices.md
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/concepts/best-practices.md
     type: text/markdown
     title: Markdown version
-  - href: ../llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
     type: text/markdown
     title: llms.txt
 ---

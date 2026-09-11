@@ -2,8 +2,8 @@
 title: Изменение категорийных характеристик
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/content-change.md"
-fetched_at: "2026-09-04T01:57:47Z"
-content_sha: 503c6089f635ad94
+fetched_at: "2026-09-11T01:57:20Z"
+content_sha: c9541069e408ea29
 ---
 
 ---
@@ -14,10 +14,10 @@ alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/step-by-step/content-change.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/content-change.md
   - https://yandex.ru/dev/market/partner-api/doc/zh/step-by-step/content-change.md
-  - href: ru/step-by-step/content-change.md
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/content-change.md
     type: text/markdown
     title: Markdown version
-  - href: ../llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
     type: text/markdown
     title: llms.txt
 ---

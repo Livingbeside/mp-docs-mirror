@@ -2,8 +2,8 @@
 title: Настройки магазина
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/campaigns/getCampaignSettings.md"
-fetched_at: "2026-09-04T01:58:09Z"
-content_sha: 6eb7778bc554dbbc
+fetched_at: "2026-09-11T01:57:38Z"
+content_sha: 47a4bed1b0d9d4ad
 ---
 
 ---
@@ -14,10 +14,10 @@ alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/campaigns/getCampaignSettings.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/campaigns/getCampaignSettings.md
   - https://yandex.ru/dev/market/partner-api/doc/zh/reference/campaigns/getCampaignSettings.md
-  - href: ru/reference/campaigns/getCampaignSettings.md
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/campaigns/getCampaignSettings.md
     type: text/markdown
     title: Markdown version
-  - href: ../../llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
     type: text/markdown
     title: llms.txt
 ---

@@ -2,8 +2,8 @@
 title: Несколько точек продаж
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/outlets/getOutlets.md"
-fetched_at: "2026-09-04T01:58:54Z"
-content_sha: 753a7217b68c25af
+fetched_at: "2026-09-11T01:58:28Z"
+content_sha: 1c126ddfa209a212
 ---
 
 ---
@@ -14,10 +14,10 @@ alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/outlets/getOutlets.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/outlets/getOutlets.md
   - https://yandex.ru/dev/market/partner-api/doc/zh/reference/outlets/getOutlets.md
-  - href: ru/reference/outlets/getOutlets.md
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/outlets/getOutlets.md
     type: text/markdown
     title: Markdown version
-  - href: ../../llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
     type: text/markdown
     title: llms.txt
 ---

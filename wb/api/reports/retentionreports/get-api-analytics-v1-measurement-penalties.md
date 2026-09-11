@@ -9,7 +9,7 @@ tags:
 spec_version: reports
 source: "https://dev.wildberries.ru/docs/openapi/reports"
 deprecated: false
-content_sha: ae84fdb9a249f1a2
+content_sha: 529e60813bf50cce
 ---
 
 # Удержания за занижение габаритов упаковки
@@ -44,24 +44,26 @@ content_sha: ae84fdb9a249f1a2
 
 - `data` — object **обязательный**. Данные ответа
   - `reports` — array[object] **обязательный**. Удержания
-    - `nmId` — integer. Артикул WB
-    - `subjectName` — string. Предмет
-    - `dimId` — integer. ID замера
-    - `prcOver` — number. Разница в габаритах, %
-    - `volume` — number. Объём, л (фактические габариты по замеру на складе)
-    - `width` — integer. Ширина, см (фактические габариты по замеру на складе)
-    - `length` — integer. Длина, см (фактические габариты по замеру на складе)
-    - `height` — integer. Высота, см (фактические габариты по замеру на складе)
-    - `volumeSup` — number. Объём, л (габариты карточки товара)
-    - `widthSup` — integer. Ширина, см (габариты карточки товара)
-    - `lengthSup` — integer. Длина, см (габариты карточки товара)
-    - `heightSup` — integer. Высота, см (габариты карточки товара)
-    - `photoUrls` — array[string]. Фото замеров
+    - `nmId` — integer **обязательный**. Артикул WB
+    - `subjectName` — string **обязательный**. Предмет
+    - `dimId` — integer **обязательный**. ID замера
+    - `prcOver` — number **обязательный**. Разница в габаритах, %
+    - `volume` — number **обязательный**. Объём, л (фактические габариты по замеру на складе)
+    - `width` — integer **обязательный**. Ширина, см (фактические габариты по замеру на складе)
+    - `length` — integer **обязательный**. Длина, см (фактические габариты по замеру на складе)
+    - `height` — integer **обязательный**. Высота, см (фактические габариты по замеру на складе)
+    - `volumeSup` — number **обязательный**. Объём, л (габариты карточки товара)
+    - `widthSup` — integer **обязательный**. Ширина, см (габариты карточки товара)
+    - `lengthSup` — integer **обязательный**. Длина, см (габариты карточки товара)
+    - `heightSup` — integer **обязательный**. Высота, см (габариты карточки товара)
+    - `photoUrls` — array[string] **обязательный**. Фото замеров
     - `dtBonus` — string<date-time>. Дата штрафа
     - `isValid` — boolean. Статус обмера: - `false` — отменён - `true` — подтверждён
     - `isValidDt` — string<date-time>. Дата и время подтверждения или отмены обмера
     - `reversalAmount` — number. Сумма сторно
     - `penaltyAmount` — number. Сумма штрафа
+    - `dateStart` — string<date-time>. Дата и время начала действия коэффициента
+    - `dateEnd` — string<date-time>. Дата и время окончания действия коэффициента
   - `total` — integer **обязательный**. Количество удержаний в отчёте. Без учёта `limit` и `offset`
 
 **400** — Неправильный запрос

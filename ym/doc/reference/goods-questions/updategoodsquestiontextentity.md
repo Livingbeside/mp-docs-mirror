@@ -2,8 +2,8 @@
 title: Создание, изменение и удаление ответа или комментария
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/goods-questions/updateGoodsQuestionTextEntity.md"
-fetched_at: "2026-09-10T01:57:16Z"
-content_sha: 514a3798be8ec633
+fetched_at: "2026-09-11T01:58:57Z"
+content_sha: d6bd12cd4f995058
 ---
 
 ---
@@ -14,10 +14,10 @@ alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/goods-questions/updateGoodsQuestionTextEntity.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/goods-questions/updateGoodsQuestionTextEntity.md
   - https://yandex.ru/dev/market/partner-api/doc/zh/reference/goods-questions/updateGoodsQuestionTextEntity.md
-  - href: ru/reference/goods-questions/updateGoodsQuestionTextEntity.md
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/goods-questions/updateGoodsQuestionTextEntity.md
     type: text/markdown
     title: Markdown version
-  - href: ../../llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
     type: text/markdown
     title: llms.txt
 ---
@@ -1075,7 +1075,7 @@ alternate:
           - CREATE
           - DELETE
     $defs:
-      /home/sandbox/.ya/build/build_root/oxq2/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/goods-questions/api/updateGoodsQuestionTextEntity.yaml#/QuestionsTextEntityType:
+      /home/sandbox/.ya/build/build_root/givs/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/goods-questions/api/updateGoodsQuestionTextEntity.yaml#/QuestionsTextEntityType:
         description: |
           Тип сущности:
   
@@ -1087,7 +1087,7 @@ alternate:
           - QUESTION
           - ANSWER
           - COMMENT
-      /home/sandbox/.ya/build/build_root/oxq2/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/goods-questions/api/updateGoodsQuestionTextEntity.yaml#/TypedQuestionsTextEntityIdDTO:
+      /home/sandbox/.ya/build/build_root/givs/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/goods-questions/api/updateGoodsQuestionTextEntity.yaml#/TypedQuestionsTextEntityIdDTO:
         type: object
         description: |
           Идентификатор вопроса, ответа или комментария.
@@ -1103,7 +1103,7 @@ alternate:
           type:
             description: Тип сущности (вопрос, ответ или комментарий).
             $ref: '#/$defs/QuestionsTextEntityType'
-      /home/sandbox/.ya/build/build_root/oxq2/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/goods-questions/schemas.yaml#/QuestionsTextContent:
+      /home/sandbox/.ya/build/build_root/givs/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/goods-questions/schemas.yaml#/QuestionsTextContent:
         description: |
           Текстовое содержимое.
         type: string

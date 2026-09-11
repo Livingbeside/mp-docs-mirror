@@ -2,8 +2,8 @@
 title: Обратная связь
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/feedback.md"
-fetched_at: "2026-09-04T01:58:01Z"
-content_sha: 7969ec105ca91465
+fetched_at: "2026-09-11T01:57:34Z"
+content_sha: c77c27a6c4ad09d3
 ---
 
 ---
@@ -14,10 +14,10 @@ alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/feedback.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/feedback.md
   - https://yandex.ru/dev/market/partner-api/doc/zh/feedback.md
-  - href: ru/feedback.md
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/feedback.md
     type: text/markdown
     title: Markdown version
-  - href: llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
     type: text/markdown
     title: llms.txt
 ---

@@ -2,8 +2,8 @@
 title: История сообщений
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/chats/getChatHistory.md"
-fetched_at: "2026-09-04T01:59:25Z"
-content_sha: d6a4003d8fb964d3
+fetched_at: "2026-09-11T01:59:00Z"
+content_sha: ffba5bf3e05fd32d
 ---
 
 ---
@@ -14,10 +14,10 @@ alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/chats/getChatHistory.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/chats/getChatHistory.md
   - https://yandex.ru/dev/market/partner-api/doc/zh/reference/chats/getChatHistory.md
-  - href: ru/reference/chats/getChatHistory.md
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/chats/getChatHistory.md
     type: text/markdown
     title: Markdown version
-  - href: ../../llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
     type: text/markdown
     title: llms.txt
 ---

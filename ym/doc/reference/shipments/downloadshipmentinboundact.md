@@ -2,8 +2,8 @@
 title: Фактический акт приема-передачи
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/shipments/downloadShipmentInboundAct.md"
-fetched_at: "2026-09-04T01:58:49Z"
-content_sha: f72b45b5d699188a
+fetched_at: "2026-09-11T01:58:22Z"
+content_sha: 3766d40c9c1afc21
 ---
 
 ---
@@ -14,10 +14,10 @@ alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/shipments/downloadShipmentInboundAct.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/shipments/downloadShipmentInboundAct.md
   - https://yandex.ru/dev/market/partner-api/doc/zh/reference/shipments/downloadShipmentInboundAct.md
-  - href: ru/reference/shipments/downloadShipmentInboundAct.md
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/shipments/downloadShipmentInboundAct.md
     type: text/markdown
     title: Markdown version
-  - href: ../../llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
     type: text/markdown
     title: llms.txt
 ---

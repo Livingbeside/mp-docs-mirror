@@ -2,8 +2,8 @@
 title: Все обновления
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/changelog/all.md"
-fetched_at: "2026-09-04T01:58:04Z"
-content_sha: 465da7be51afe7fe
+fetched_at: "2026-09-11T01:57:36Z"
+content_sha: 4ff51f24e823117e
 ---
 
 ---
@@ -14,10 +14,10 @@ alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/changelog/all.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/changelog/all.md
   - https://yandex.ru/dev/market/partner-api/doc/zh/changelog/all.md
-  - href: ru/changelog/all.md
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/changelog/all.md
     type: text/markdown
     title: Markdown version
-  - href: ../llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
     type: text/markdown
     title: llms.txt
 ---
@@ -32,6 +32,37 @@ alternate:
 {% endnote %}
 
 <!-- source: ru/_auto/changelog/all.md -->
+<!-- source: ru/_auto/changelog/all/2026-09-10.md -->
+### 10 сентября {#10-09-26}
+
+#|
+|| **Методы или страницы документации**
+ | **Описание изменений**
+ ||
+||
+[POST v2/campaigns/{campaignId}/supply-requests](https://yandex.ru/dev/market/partner-api/doc/ru/reference/supply-requests/getSupplyRequests.md)
+|
+Добавили в ответ необязательный объект `etrnIdentifier` для создания электронной транспортной накладной.
+||
+|#
+<!-- endsource: ru/_auto/changelog/all/2026-09-10.md -->
+
+<!-- source: ru/_auto/changelog/all/2026-09-09.md -->
+### 9 сентября {#09-09-26}
+
+#|
+|| **Методы или страницы документации**
+ | **Описание изменений**
+ ||
+||
+[POST v1/businesses/{businessId}/offers/documents/create](https://yandex.ru/dev/market/partner-api/doc/ru/reference/documents/createDocuments.md)<br>[POST v1/businesses/{businessId}/offers/documents/update](https://yandex.ru/dev/market/partner-api/doc/ru/reference/documents/updateDocuments.md)<br>[POST v1/businesses/{businessId}/offers/documents/delete](https://yandex.ru/dev/market/partner-api/doc/ru/reference/documents/deleteDocuments.md)<br>[POST v1/businesses/{businessId}/offers/documents](https://yandex.ru/dev/market/partner-api/doc/ru/reference/documents/getDocuments.md)
+
+|
+Добавили методы для создания, обновления, удаления и получения документов на товары. Создавать, обновлять и удалять документы можно пакетами до 100 документов. Для получения доступны фильтры и постраничная загрузка.
+||
+|#
+<!-- endsource: ru/_auto/changelog/all/2026-09-09.md -->
+
 <!-- source: ru/_auto/changelog/all/2026-08-26.md -->
 ### 26 августа {#26-08-26}
 

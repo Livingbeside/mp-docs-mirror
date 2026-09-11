@@ -2,8 +2,8 @@
 title: Просмотр цен
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/_auto/scopes_summary/pages/pricing_read-only.md"
-fetched_at: "2026-09-04T01:57:34Z"
-content_sha: fb3f845050a25b3e
+fetched_at: "2026-09-11T01:57:08Z"
+content_sha: 1467561d50cf5794
 ---
 
 ---
@@ -14,10 +14,10 @@ alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/_auto/scopes_summary/pages/pricing_read-only.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/_auto/scopes_summary/pages/pricing_read-only.md
   - https://yandex.ru/dev/market/partner-api/doc/zh/_auto/scopes_summary/pages/pricing_read-only.md
-  - href: ru/_auto/scopes_summary/pages/pricing_read-only.md
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/_auto/scopes_summary/pages/pricing_read-only.md
     type: text/markdown
     title: Markdown version
-  - href: ../../../llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
     type: text/markdown
     title: llms.txt
 ---

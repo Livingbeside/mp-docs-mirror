@@ -2,8 +2,8 @@
 title: Главные обновления
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/changelog/main.md"
-fetched_at: "2026-09-04T01:58:02Z"
-content_sha: 3bd8fcb4d4c6e554
+fetched_at: "2026-09-11T01:57:35Z"
+content_sha: eee2458843f8f953
 ---
 
 ---
@@ -14,10 +14,10 @@ alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/changelog/main.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/changelog/main.md
   - https://yandex.ru/dev/market/partner-api/doc/zh/changelog/main.md
-  - href: ru/changelog/main.md
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/changelog/main.md
     type: text/markdown
     title: Markdown version
-  - href: ../llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
     type: text/markdown
     title: llms.txt
 ---
@@ -32,6 +32,22 @@ alternate:
 {% endnote %}
 
 <!-- source: ru/_auto/changelog/main.md -->
+<!-- source: ru/_auto/changelog/main/2026-09-09.md -->
+### 9 сентября {#09-09-26}
+
+#|
+|| **Методы или страницы документации**
+ | **Описание изменений**
+ ||
+||
+[POST v1/businesses/{businessId}/offers/documents/create](https://yandex.ru/dev/market/partner-api/doc/ru/reference/documents/createDocuments.md)<br>[POST v1/businesses/{businessId}/offers/documents/update](https://yandex.ru/dev/market/partner-api/doc/ru/reference/documents/updateDocuments.md)<br>[POST v1/businesses/{businessId}/offers/documents/delete](https://yandex.ru/dev/market/partner-api/doc/ru/reference/documents/deleteDocuments.md)<br>[POST v1/businesses/{businessId}/offers/documents](https://yandex.ru/dev/market/partner-api/doc/ru/reference/documents/getDocuments.md)
+
+|
+Добавили методы для создания, обновления, удаления и получения документов на товары. Создавать, обновлять и удалять документы можно пакетами до 100 документов. Для получения доступны фильтры и постраничная загрузка.
+||
+|#
+<!-- endsource: ru/_auto/changelog/main/2026-09-09.md -->
+
 <!-- source: ru/_auto/changelog/main/2026-07-29.md -->
 ### 29 июля {#29-07-26}
 

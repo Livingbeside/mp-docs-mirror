@@ -2,8 +2,8 @@
 title: Добавление товаров в акцию/изменение их цен
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/promos/updatePromoOffers.md"
-fetched_at: "2026-09-04T01:58:27Z"
-content_sha: 463aa5035fe08bc7
+fetched_at: "2026-09-11T01:58:02Z"
+content_sha: 19f426ba9b398249
 ---
 
 ---
@@ -14,10 +14,10 @@ alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/promos/updatePromoOffers.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/promos/updatePromoOffers.md
   - https://yandex.ru/dev/market/partner-api/doc/zh/reference/promos/updatePromoOffers.md
-  - href: ru/reference/promos/updatePromoOffers.md
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/promos/updatePromoOffers.md
     type: text/markdown
     title: Markdown version
-  - href: ../../llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
     type: text/markdown
     title: llms.txt
 ---

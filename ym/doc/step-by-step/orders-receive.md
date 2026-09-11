@@ -2,8 +2,8 @@
 title: Получение заказов
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/orders-receive.md"
-fetched_at: "2026-09-04T01:57:50Z"
-content_sha: 1f68d168309238ff
+fetched_at: "2026-09-11T01:57:22Z"
+content_sha: ee7260b13b6da9bc
 ---
 
 ---
@@ -14,10 +14,10 @@ alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/step-by-step/orders-receive.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/orders-receive.md
   - https://yandex.ru/dev/market/partner-api/doc/zh/step-by-step/orders-receive.md
-  - href: ru/step-by-step/orders-receive.md
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/orders-receive.md
     type: text/markdown
     title: Markdown version
-  - href: ../llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
     type: text/markdown
     title: llms.txt
 ---

@@ -2,8 +2,8 @@
 title: Передача трек‑номера посылки
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/order-delivery/setOrderDeliveryTrackCode.md"
-fetched_at: "2026-09-04T01:58:35Z"
-content_sha: 39897e0312e30632
+fetched_at: "2026-09-11T01:58:09Z"
+content_sha: 3b7885762621cbb0
 ---
 
 ---
@@ -14,10 +14,10 @@ alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/order-delivery/setOrderDeliveryTrackCode.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/order-delivery/setOrderDeliveryTrackCode.md
   - https://yandex.ru/dev/market/partner-api/doc/zh/reference/order-delivery/setOrderDeliveryTrackCode.md
-  - href: ru/reference/order-delivery/setOrderDeliveryTrackCode.md
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/order-delivery/setOrderDeliveryTrackCode.md
     type: text/markdown
     title: Markdown version
-  - href: ../../llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
     type: text/markdown
     title: llms.txt
 ---

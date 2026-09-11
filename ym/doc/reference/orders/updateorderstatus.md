@@ -2,8 +2,8 @@
 title: Изменение статуса одного заказа
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/orders/updateOrderStatus.md"
-fetched_at: "2026-09-04T01:58:31Z"
-content_sha: ee357b68a9948a5f
+fetched_at: "2026-09-11T01:58:05Z"
+content_sha: 33c4761368a9e452
 ---
 
 ---
@@ -14,10 +14,10 @@ alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/orders/updateOrderStatus.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/orders/updateOrderStatus.md
   - https://yandex.ru/dev/market/partner-api/doc/zh/reference/orders/updateOrderStatus.md
-  - href: ru/reference/orders/updateOrderStatus.md
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/orders/updateOrderStatus.md
     type: text/markdown
     title: Markdown version
-  - href: ../../llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
     type: text/markdown
     title: llms.txt
 ---

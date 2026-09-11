@@ -2,8 +2,8 @@
 title: Список акций
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/promos/getPromos.md"
-fetched_at: "2026-09-10T01:56:13Z"
-content_sha: f512679fd7e05849
+fetched_at: "2026-09-11T01:58:00Z"
+content_sha: 4b65b80740632437
 ---
 
 ---
@@ -14,10 +14,10 @@ alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/promos/getPromos.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/promos/getPromos.md
   - https://yandex.ru/dev/market/partner-api/doc/zh/reference/promos/getPromos.md
-  - href: ru/reference/promos/getPromos.md
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/promos/getPromos.md
     type: text/markdown
     title: Markdown version
-  - href: ../../llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
     type: text/markdown
     title: llms.txt
 ---
@@ -1663,7 +1663,7 @@ alternate:
           По умолчанию возвращаются все типы акций.
         $ref: '#/$defs/MechanicsType'
     $defs:
-      /home/sandbox/.ya/build/build_root/oxq2/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/promos/schemas.yaml#/MechanicsType:
+      /home/sandbox/.ya/build/build_root/givs/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/promos/schemas.yaml#/MechanicsType:
         description: |
           Тип акции:
   

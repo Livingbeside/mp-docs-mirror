@@ -2,8 +2,8 @@
 title: Спецификация OpenAPI
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/concepts/openapi.md"
-fetched_at: "2026-09-04T01:57:44Z"
-content_sha: d5295dba32de49ea
+fetched_at: "2026-09-11T01:57:18Z"
+content_sha: aa3b245fa0150025
 ---
 
 ---
@@ -14,10 +14,10 @@ alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/concepts/openapi.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/concepts/openapi.md
   - https://yandex.ru/dev/market/partner-api/doc/zh/concepts/openapi.md
-  - href: ru/concepts/openapi.md
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/concepts/openapi.md
     type: text/markdown
     title: Markdown version
-  - href: ../llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
     type: text/markdown
     title: llms.txt
 ---

@@ -2,8 +2,8 @@
 title: Отзывы о товарах
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/goods-feedback.md"
-fetched_at: "2026-09-04T01:57:54Z"
-content_sha: 95d5844de29054ad
+fetched_at: "2026-09-11T01:57:27Z"
+content_sha: b8e842d51b204dce
 ---
 
 ---
@@ -14,10 +14,10 @@ alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/step-by-step/goods-feedback.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/goods-feedback.md
   - https://yandex.ru/dev/market/partner-api/doc/zh/step-by-step/goods-feedback.md
-  - href: ru/step-by-step/goods-feedback.md
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/goods-feedback.md
     type: text/markdown
     title: Markdown version
-  - href: ../llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
     type: text/markdown
     title: llms.txt
 ---

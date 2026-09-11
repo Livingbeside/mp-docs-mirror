@@ -2,8 +2,8 @@
 title: LaaS
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/overview/laas.md"
-fetched_at: "2026-09-04T01:58:00Z"
-content_sha: 9c9e6819881048b9
+fetched_at: "2026-09-11T01:57:33Z"
+content_sha: 2bd7f13a9f3527eb
 ---
 
 ---
@@ -14,10 +14,10 @@ alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/overview/laas.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/overview/laas.md
   - https://yandex.ru/dev/market/partner-api/doc/zh/overview/laas.md
-  - href: ru/overview/laas.md
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/overview/laas.md
     type: text/markdown
     title: Markdown version
-  - href: ../llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
     type: text/markdown
     title: llms.txt
 ---

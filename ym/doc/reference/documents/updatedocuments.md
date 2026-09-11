@@ -2,8 +2,8 @@
 title: Обновление документов
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/documents/updateDocuments.md"
-fetched_at: "2026-09-10T01:55:58Z"
-content_sha: 066f48e89f371d43
+fetched_at: "2026-09-11T01:57:45Z"
+content_sha: 7784f8c4883e0d3e
 ---
 
 ---
@@ -13,10 +13,11 @@ metadata:
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/documents/updateDocuments.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/documents/updateDocuments.md
-  - href: ru/reference/documents/updateDocuments.md
+  - https://yandex.ru/dev/market/partner-api/doc/zh/reference/documents/updateDocuments.md
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/documents/updateDocuments.md
     type: text/markdown
     title: Markdown version
-  - href: ../../llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
     type: text/markdown
     title: llms.txt
 ---

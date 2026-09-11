@@ -2,8 +2,8 @@
 title: Рекомендации Маркета
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/offers/getOfferRecommendations.md"
-fetched_at: "2026-09-10T01:56:10Z"
-content_sha: b3deea82b9041513
+fetched_at: "2026-09-11T01:57:57Z"
+content_sha: 418566b59db69343
 ---
 
 ---
@@ -14,10 +14,10 @@ alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/offers/getOfferRecommendations.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/offers/getOfferRecommendations.md
   - https://yandex.ru/dev/market/partner-api/doc/zh/reference/offers/getOfferRecommendations.md
-  - href: ru/reference/offers/getOfferRecommendations.md
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/offers/getOfferRecommendations.md
     type: text/markdown
     title: Markdown version
-  - href: ../../llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
     type: text/markdown
     title: llms.txt
 ---
@@ -1566,7 +1566,7 @@ alternate:
           непривлекательными ценами.
         $ref: '#/$defs/PriceCompetitivenessType'
     $defs:
-      /home/sandbox/.ya/build/build_root/oxq2/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/offers/api/getOfferRecommendations.yaml#/PriceCompetitivenessType:
+      /home/sandbox/.ya/build/build_root/givs/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/offers/api/getOfferRecommendations.yaml#/PriceCompetitivenessType:
         description: |
           Привлекательность цены:
   

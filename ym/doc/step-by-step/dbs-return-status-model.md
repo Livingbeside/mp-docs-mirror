@@ -2,8 +2,8 @@
 title: Статусы DBS-возвратов
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/dbs-return-status-model.md"
-fetched_at: "2026-09-04T01:57:53Z"
-content_sha: 447aac90a2aa0056
+fetched_at: "2026-09-11T01:57:26Z"
+content_sha: dbd4a2cbd2149a45
 ---
 
 ---
@@ -14,10 +14,10 @@ alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/step-by-step/dbs-return-status-model.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/dbs-return-status-model.md
   - https://yandex.ru/dev/market/partner-api/doc/zh/step-by-step/dbs-return-status-model.md
-  - href: ru/step-by-step/dbs-return-status-model.md
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/dbs-return-status-model.md
     type: text/markdown
     title: Markdown version
-  - href: ../llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
     type: text/markdown
     title: llms.txt
 ---

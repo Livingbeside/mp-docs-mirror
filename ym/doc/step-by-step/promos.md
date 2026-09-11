@@ -2,8 +2,8 @@
 title: Управление акциями
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/promos.md"
-fetched_at: "2026-09-04T01:57:49Z"
-content_sha: 58df744c1ce7a836
+fetched_at: "2026-09-11T01:57:22Z"
+content_sha: a66f65f380d461d4
 ---
 
 ---
@@ -14,10 +14,10 @@ alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/step-by-step/promos.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/promos.md
   - https://yandex.ru/dev/market/partner-api/doc/zh/step-by-step/promos.md
-  - href: ru/step-by-step/promos.md
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/promos.md
     type: text/markdown
     title: Markdown version
-  - href: ../llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
     type: text/markdown
     title: llms.txt
 ---

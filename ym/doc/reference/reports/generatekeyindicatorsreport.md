@@ -2,8 +2,8 @@
 title: Отчет по ключевым показателям
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/reports/generateKeyIndicatorsReport.md"
-fetched_at: "2026-09-10T01:56:53Z"
-content_sha: e439215525e11271
+fetched_at: "2026-09-11T01:58:38Z"
+content_sha: e5e94f3c07cd1e38
 ---
 
 ---
@@ -14,10 +14,10 @@ alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/reports/generateKeyIndicatorsReport.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/reports/generateKeyIndicatorsReport.md
   - https://yandex.ru/dev/market/partner-api/doc/zh/reference/reports/generateKeyIndicatorsReport.md
-  - href: ru/reference/reports/generateKeyIndicatorsReport.md
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/reports/generateKeyIndicatorsReport.md
     type: text/markdown
     title: Markdown version
-  - href: ../../llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
     type: text/markdown
     title: llms.txt
 ---
@@ -1302,7 +1302,7 @@ alternate:
       required: false
       schema:
         $ref: >-
-          /home/sandbox/.ya/build/build_root/oxq2/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/reports/schemas.yaml#/ReportFormatType
+          /home/sandbox/.ya/build/build_root/givs/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/reports/schemas.yaml#/ReportFormatType
   headers: []
   body: |-
     {
@@ -1335,7 +1335,7 @@ alternate:
         description: За какой период нужна детализация.
         $ref: '#/$defs/KeyIndicatorsReportDetalizationLevelType'
     $defs:
-      /home/sandbox/.ya/build/build_root/oxq2/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/reports/api/generateKeyIndicatorsReport.yaml#/KeyIndicatorsReportDetalizationLevelType:
+      /home/sandbox/.ya/build/build_root/givs/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/reports/api/generateKeyIndicatorsReport.yaml#/KeyIndicatorsReportDetalizationLevelType:
         description: |
           За какой период нужна детализация:
   

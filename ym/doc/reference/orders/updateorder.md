@@ -2,8 +2,8 @@
 title: Изменение заказа
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/orders/updateOrder.md"
-fetched_at: "2026-09-10T01:56:27Z"
-content_sha: 3bafc9e9b0e24408
+fetched_at: "2026-09-11T01:58:16Z"
+content_sha: 0af39c24c12ee77f
 ---
 
 ---
@@ -14,10 +14,10 @@ alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/orders/updateOrder.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/orders/updateOrder.md
   - https://yandex.ru/dev/market/partner-api/doc/zh/reference/orders/updateOrder.md
-  - href: ru/reference/orders/updateOrder.md
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/orders/updateOrder.md
     type: text/markdown
     title: Markdown version
-  - href: ../../llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
     type: text/markdown
     title: llms.txt
 ---
@@ -1362,7 +1362,7 @@ alternate:
             description: Продлить срок хранения заказа в пункте выдачи.
             type: boolean
     $defs:
-      /home/sandbox/.ya/build/build_root/oxq2/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/orders/schemas.yaml#/DeliveryIntervalsUpdateOptionDTO:
+      /home/sandbox/.ya/build/build_root/givs/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/orders/schemas.yaml#/DeliveryIntervalsUpdateOptionDTO:
         type: object
         description: Интервалы дат и времени.
         required:
@@ -1411,7 +1411,7 @@ alternate:
   
                   Формат: `ЧЧ:ММ`.
                 pattern: ^([0-1][0-9]|2[0-3]):[0-5][0-9]$
-      /home/sandbox/.ya/build/build_root/oxq2/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/common/schemas.yaml#/CustomerDTO:
+      /home/sandbox/.ya/build/build_root/givs/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/common/schemas.yaml#/CustomerDTO:
         type: object
         description: Данные получателя заказа или отправителя возврата.
         required:

@@ -2,8 +2,8 @@
 title: Информация о покупателе
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/order-business-information/getOrderBusinessBuyerInfo.md"
-fetched_at: "2026-09-04T01:58:38Z"
-content_sha: f3a6f558655f7090
+fetched_at: "2026-09-11T01:58:13Z"
+content_sha: c78eec1e625be6bb
 ---
 
 ---
@@ -14,10 +14,10 @@ alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/order-business-information/getOrderBusinessBuyerInfo.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/order-business-information/getOrderBusinessBuyerInfo.md
   - https://yandex.ru/dev/market/partner-api/doc/zh/reference/order-business-information/getOrderBusinessBuyerInfo.md
-  - href: ru/reference/order-business-information/getOrderBusinessBuyerInfo.md
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/order-business-information/getOrderBusinessBuyerInfo.md
     type: text/markdown
     title: Markdown version
-  - href: ../../llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
     type: text/markdown
     title: llms.txt
 ---

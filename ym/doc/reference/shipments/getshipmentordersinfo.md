@@ -2,8 +2,8 @@
 title: Информация о возможности печати ярлыков (FBS)
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/shipments/getShipmentOrdersInfo.md"
-fetched_at: "2026-09-04T01:58:51Z"
-content_sha: e12efcdaf9e41836
+fetched_at: "2026-09-11T01:58:25Z"
+content_sha: eeb49cb969cc02c6
 ---
 
 ---
@@ -14,10 +14,10 @@ alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/shipments/getShipmentOrdersInfo.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/shipments/getShipmentOrdersInfo.md
   - https://yandex.ru/dev/market/partner-api/doc/zh/reference/shipments/getShipmentOrdersInfo.md
-  - href: ru/reference/shipments/getShipmentOrdersInfo.md
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/shipments/getShipmentOrdersInfo.md
     type: text/markdown
     title: Markdown version
-  - href: ../../llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
     type: text/markdown
     title: llms.txt
 ---

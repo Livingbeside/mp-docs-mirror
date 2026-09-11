@@ -2,8 +2,8 @@
 title: Получение документов
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/documents/getDocuments.md"
-fetched_at: "2026-09-10T01:55:59Z"
-content_sha: d0aef33fc533493b
+fetched_at: "2026-09-11T01:57:46Z"
+content_sha: b6465183757a5af6
 ---
 
 ---
@@ -13,10 +13,11 @@ metadata:
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/documents/getDocuments.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/documents/getDocuments.md
-  - href: ru/reference/documents/getDocuments.md
+  - https://yandex.ru/dev/market/partner-api/doc/zh/reference/documents/getDocuments.md
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/documents/getDocuments.md
     type: text/markdown
     title: Markdown version
-  - href: ../../llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
     type: text/markdown
     title: llms.txt
 ---

@@ -2,8 +2,8 @@
 title: Вызов методов
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/concepts/method-call.md"
-fetched_at: "2026-09-04T01:57:39Z"
-content_sha: f41424cb02cf6aaf
+fetched_at: "2026-09-11T01:57:13Z"
+content_sha: 5d0f39af2c8a8852
 ---
 
 ---
@@ -14,10 +14,10 @@ alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/concepts/method-call.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/concepts/method-call.md
   - https://yandex.ru/dev/market/partner-api/doc/zh/concepts/method-call.md
-  - href: ru/concepts/method-call.md
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/concepts/method-call.md
     type: text/markdown
     title: Markdown version
-  - href: ../llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
     type: text/markdown
     title: llms.txt
 ---
