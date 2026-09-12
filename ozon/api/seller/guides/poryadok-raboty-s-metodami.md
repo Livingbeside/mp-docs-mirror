@@ -5,7 +5,7 @@ tag: Process
 group: Общее описание
 kind: guide
 source: "https://docs.ozon.ru/api/seller/"
-content_sha: 4dec4662f3e877a4
+content_sha: c3d6a7a9314f0f0d
 ---
 
 # Порядок работы с методами
@@ -1303,7 +1303,7 @@ summary {
 8. [/v1/fbp/draft/direct/registrate](#operation/FbpDraftDirectRegistrate) — переведите черновик заявки на поставку в активную заявку.
 9. [/v1/fbp/order/direct/timeslot/list](#operation/FbpAPI_FbpAvailableTimeslotList) — получите актуальные таймслоты склада для поставки.
 10. [/v1/fbp/order/direct/timeslot/edit](#operation/FbpAPI_FbpEditTimeslot) — измените актуальный таймслот поставки.
-11. [/v1/fbp/order/direct/seller-dlv/edit](#operation/FbpDraftDirectSellerDlvEdit) или [/v1/fbp/order/direct/tpl-dlv/edit](#operation/bpAPI_FbpDraftDirectTplDlvEdit) — передайте актуальную информацию о доставке, если доставляете самостоятельно или через перевозчика.
+11. [/v1/fbp/order/direct/seller-dlv/edit](#operation/FbpAPI_FbpOrderDirectSellerDlvEdit) или [/v1/fbp/order/direct/tpl-dlv/edit](#operation/FbpOrderDirectTplDlvEdit) — передайте актуальную информацию о доставке, если доставляете самостоятельно или через транспортную компанию.
 12. [/v1/fbp/order/list](#operation/FbpAPI_FbpOrderList) — получите список поставок.
 13. [/v1/fbp/order/get](#operation/FbpAPI_FbpOrderGet) — получите информацию о конкретной поставке. Если в заявке на поставку есть ошибка, используйте [/v1/fbp/order/direct/cancel](#operation/FbpAPI_FbpOrderDirectCancel), чтобы отменить поставку.
 14. [/v1/fbp/label/create](#operation/FbpAPI_FbpCreateLabel) — создайте задание на генерацию этикеток.

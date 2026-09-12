@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /rfbs/orders-cancellations/upravlenie-zakazami
 source: "https://seller-edu.ozon.ru/libra/rfbs/orders-cancellations/upravlenie-zakazami"
-updated: "2026-08-25 15:01:24"
+updated: "2026-09-11 14:07:46"
 doc_id: 847
-fetched_at: "2026-08-28T12:11:15Z"
-content_sha: f9922f9b957defd3
+fetched_at: "2026-09-12T01:58:38Z"
+content_sha: a0066063f3e1b54b
 ---
 
 # Подготовка, отгрузка и доставка заказов на realFBS Standard
@@ -194,7 +194,11 @@ _Главная / Продажа со своего склада (realFBS) / За
 
 [«СДЭК»](https://www.cdek.ru/storage/source/%D0%94%D0%BE%D0%BA%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B/%D0%B7%D0%B0%D0%BA%D0%BB%D1%8E%D1%87%D0%B8%D1%82%D1%8C%20%D0%B4%D0%BE%D0%B3%D0%BE%D0%B2%D0%BE%D1%80/%D0%AE%D1%80%D0%B8%D0%B4%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B5%20%D0%B4%D0%BE%D0%BA%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B/22.06.01/%D0%9F%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5%20%E2%84%96%203%20%D0%BA%20%D0%A0%D0%92%D0%9E%D0%9A%D0%A3%20%D0%BE%D1%82%2006.06.2022%20%D0%B3..pdf);
 
-[«Почта России»](https://www.pochta.ru/support/post-rules/content-package-rules).
+[«Почта России»](https://www.pochta.ru/support/post-rules/content-package-rules);
+
+[Яндекс Доставка](https://yandex.ru/support/delivery-profile/ru/other-day/packing-rules);
+
+[5post](https://fivepost.ru/become-partner/#s0).
 
 Упаковка зависит от способа доставки:
 

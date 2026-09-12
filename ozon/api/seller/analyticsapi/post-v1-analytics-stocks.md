@@ -9,7 +9,7 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: 13ed734b79a41c25
+content_sha: b9c808295f7e6adf
 ---
 
 # Получить аналитику по остаткам
@@ -56,17 +56,23 @@ content_sha: 13ed734b79a41c25
   - `expiring_stock_count` — integer<int32>. Количество единиц товара с истекающим сроком годности.
   - `idc` — number<double>. Количество дней, на которое хватит остатка товара с учётом среднесуточных продаж за 28 дней по всем кластерам.
   - `idc_cluster` — number<double>. Количество дней, на которое хватит остатка товара с учётом среднесуточных продаж за 28 дней в кластере.
+  - `inbound_replenishment` — integer<int32>. Количество товаров в перемещении.
   - `item_tags` — array[string (UNSPECIFIED, ITEM_ATTRIBUTE_NONE, ECONOM, NOVEL, DISCOUNT, FBS_RETURN, SUPER, MARKABLE)]. Теги товара: - `UNSPECIFIED` — не определено; - `ITEM_ATTRIBUTE_NONE` — без тега; - `ECONOM` — эконом-товар; - `NOVEL` — новинка; - `DISCOUNT` — уценённый товар; - `FBS_RETURN` — товар из возврата FBS; - `SUPER` — Super-товар; - `MARKABLE` — товар, подлежащий маркировке.
   - `macrolocal_cluster_id` — integer<int64>. Идентификатор макролокального кластера. Получите информацию о кластере методом [/v1/cluster/list](#operation/SupplyDraftAPI_DraftClusterList) или [/v2/cluster/list](#operation/DraftClusterList).
   - `name` — string. Название товара.
   - `offer_id` — string. Идентификатор товара в системе продавца — артикул.
   - `other_stock_count` — integer<int32>. Количество единиц товара, проходящих проверку.
+  - `outbound_pending_delivery` — integer<int32>. Количество товаров, которые доставляются покупателям.
+  - `outbound_returns_picking` — integer<int32>. Количество товаров, которые готовятся к вывозу.
+  - `outbound_returns_ready_to_ship` — integer<int32>. Количество товаров, которые готовы к вывозу.
+  - `outbound_returns_return_to_seller` — integer<int32>. Количество товаров, которые возвращаются продавцу.
   - `placement_zone` — array[string (UNSPECIFIED, CLOSED_ZONE, DANGEROUS_GOOD, PRODUCTS, SORT, NON_SORT, OVERSIZE, JEWELRY, UNRESOLVED)]. Зона размещения товара: - `UNSPECIFIED` — не указана; - `CLOSED_ZONE` — закрытая; - `DANGEROUS_GOOD` — опасные товары; - `PRODUCTS` — продукты; - `SORT` — сортируемый товар; - `NON_SORT` — несортируемый товар; - `OVERSIZE` — крупногабаритный товар; - `JEWELRY` — ювелирные изделия; - `UNRESOLVED` — ещё не определена.
   - `requested_stock_count` — integer<int32>. Количество единиц товара в заявках на поставку.
   - `return_from_customer_stock_count` — integer<int32>. Количество единиц товара в процессе возврата от покупателей.
   - `return_to_seller_stock_count` — integer<int32>. Количество единиц товара, готовящихся к вывозу по вашей заявке.
   - `sku` — integer<int64>. Идентификатор товара в системе Ozon — SKU.
   - `stock_defect_stock_count` — integer<int32>. Количество брака, доступное к вывозу со стока.
+  - `stock_not_being_sold` — integer<int32>. Количество товаров, которые сняты с продажи.
   - `transit_defect_stock_count` — integer<int32>. Количество брака, доступное к вывозу с поставки.
   - `transit_stock_count` — integer<int32>. Количество единиц товара в поставках в пути.
   - `turnover_grade` — string (UNSPECIFIED, TURNOVER_GRADE_NONE, DEFICIT, POPULAR, ACTUAL, SURPLUS, NO_SALES, WAS_NO_SALES, RESTRICTED_NO_SALES, COLLECTING_DATA, WAITING_FOR_SUPPLY, WAS_DEFICIT…). Статус ликвидности товара по всем кластерам: - `UNSPECIFIED` — значение не определено. - `TURNOVER_GRADE_NONE` — нет статуса ликвидности. - `DEFICIT` — дефицитный. Остатков товара хватит до 28 дней. - `POPULAR` — очень популярный. Остатков товара хватит на 28–56 дней. - `ACTUAL` — популярный. Остатков товара хватит на 56–120 дней. - `SURPLUS` — избыточный. Товар продаётся медленно, остатков хватит более чем на 120 дней. - `NO_SALES` — без продаж. У товара нет продаж последние 28 дней. - `WAS_NO_SALES` — был без продаж. У товара не было продаж и остатков последние 28 дней. - `RESTRICTED_NO_SALES` — без продаж, ограничен. У товара не было продаж более 120 дней. Такой товар [нельзя добавить в поставку](https://seller-edu.ozon.ru/fbo/rabota-so-stokom/nehodovye-tovary). - `COLLECTING_DATA` — сбор данных. Для расчёта ликвидности нового товара собираем данные в течение 60 дней после поставки. - `WAITING_FOR_SUPPLY` — ожидаем поставки. На складе нет остатков, доступных к продаже. Сделайте поставку для начала сбора данных. - `WAS_DEFICIT` — был дефицитным. Товар был дефицитным последние 56 дней. Сейчас у него нет остатков. - `WAS_POPULAR` — был очень популярным. Товар был очень популярным последние 56 дней. Сейчас у него нет остатков. - `WAS_ACTUAL` — был популярным. Товар был популярным последние 56 дней. Сейчас у него нет остатков. - `WAS_SURPLUS` — был избыточным. Товар был избыточным последние 56 дней. Сейчас у него нет остатков.

@@ -5,12 +5,20 @@ tag: News
 group: Обновления
 kind: changelog
 source: "https://docs.ozon.ru/api/seller/"
-content_sha: 1e48f9aa7e7267f7
+content_sha: e60efcf05daa93b9
 ---
 
 # Обновления
 
 Следите за обновлениями документации на платформе для разработчиков [Ozon for dev](https://dev.ozon.ru/).
+
+## 11 сентября 2026
+
+| Метод | Изменение |
+| ------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [/v1/product/import/prices](#operation/ProductAPI_ImportProductsPrices) | Отметили устаревшими параметры `prices.auto_action_enabled` и `prices.manage_elastic_boosting_through_price` в запросе метода. |
+| [/v1/fbp/order/direct/tpl-dlv/edit](#operation/FbpOrderDirectTplDlvEdit) | Добавили бета-метод для обновления информации о доставке сторонней транспортной компанией. |
+| [/v1/analytics/stocks](#operation/AnalyticsAPI_AnalyticsStocks) | Добавили параметры `items.inbound_replenishment`, `items.outbound_pending_delivery`, `items.outbound_returns_picking`, `items.outbound_returns_ready_to_ship`, `items.outbound_returns_return_to_seller` и `items.stock_not_being_sold` в ответ метода. |
 
 ## 10 сентября 2026
 

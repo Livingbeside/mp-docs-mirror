@@ -2,9 +2,9 @@
 title: Документация Ozon Seller API — все методы
 api: ozon-seller
 spec_version: 2.1
-operations: 465
+operations: 466
 source: "https://docs.ozon.ru/api/seller/"
-content_sha: d4fd5328d6941b48
+content_sha: f43d223fbf22ebbf
 ---
 
 # Документация Ozon Seller API
@@ -18,7 +18,7 @@ content_sha: d4fd5328d6941b48
 
 > [Информационная платформа и сообщество разработчиков Ozon for dev](https://dev.ozon.ru/)
 
-Версия спеки: `2.1` · методов: **465** · разделов справки: **26**
+Версия спеки: `2.1` · методов: **466** · разделов справки: **26**
 
 Источник: https://docs.ozon.ru/api/seller/
 
@@ -158,6 +158,7 @@ content_sha: d4fd5328d6941b48
 | `POST` | `/v1/fbp/order/direct/seller-dlv/edit` | OrderDirectFBP | [Обновить информацию о доставке силами продавца](orderdirectfbp/post-v1-fbp-order-direct-seller-dlv-edit.md) |
 | `POST` | `/v1/fbp/order/direct/timeslot/edit` | OrderDirectFBP | [Отредактировать таймслот в заявке на поставку](orderdirectfbp/post-v1-fbp-order-direct-timeslot-edit.md) |
 | `POST` | `/v1/fbp/order/direct/timeslot/list` | OrderDirectFBP | [Получить список таймслотов для поставки](orderdirectfbp/post-v1-fbp-order-direct-timeslot-list.md) |
+| `POST` | `/v1/fbp/order/direct/tpl-dlv/edit` | OrderDirectFBP | [Обновить информацию о доставке сторонней транспортной компанией](orderdirectfbp/post-v1-fbp-order-direct-tpl-dlv-edit.md) |
 | `POST` | `/v1/fbp/order/drop-off/cancel` | OrderDropOffFBP | [Отменить поставку drop-off](orderdropofffbp/post-v1-fbp-order-drop-off-cancel.md) |
 | `POST` | `/v1/fbp/order/drop-off/dlv/edit` | OrderDropOffFBP | [Отредактировать информацию о поставке на drop-off пункт](orderdropofffbp/post-v1-fbp-order-drop-off-dlv-edit.md) |
 | `POST` | `/v1/fbp/order/drop-off/timetable` | OrderDropOffFBP | [Получить график работы drop-off пункта](orderdropofffbp/post-v1-fbp-order-drop-off-timetable.md) |

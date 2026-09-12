@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /how-to-sell-effectively/advertising-of-goods/oplata-za-klik/chto-takoe-oplata-za-klik
 source: "https://seller-edu.ozon.ru/libra/how-to-sell-effectively/advertising-of-goods/oplata-za-klik/chto-takoe-oplata-za-klik"
-updated: "2026-08-21 12:25:35"
+updated: "2026-09-11 16:09:28"
 doc_id: 34450
-fetched_at: "2026-08-28T12:11:15Z"
-content_sha: be98b6c03cf21488
+fetched_at: "2026-09-12T01:58:38Z"
+content_sha: 8769fe2f4394ef2d
 ---
 
 # Что такое «Оплата за клик»
@@ -39,6 +39,8 @@ _Главная / Продвижение / Продвижение товаров
 добавления в корзину или избранное;
 
 пролистывания фото.
+
+Также учтём клик, если пользователь после перехода в карточку продвигаемого товара поделится ссылкой, а получатель перейдёт по ней.
 
 [Подробнее в регламенте продвижения](https://seller-edu.ozon.ru/contract-for-sellers/regulations-promotion/reglament-uslug-po-prodvizheniu)
 

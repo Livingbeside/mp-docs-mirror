@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /analytics-and-metrics/graphs/planirovanie-postavok/lokalnost-prodaj/rabota-s-otchtom-po-lokalnosti
 source: "https://seller-edu.ozon.ru/libra/analytics-and-metrics/graphs/planirovanie-postavok/lokalnost-prodaj/rabota-s-otchtom-po-lokalnosti"
-updated: "2026-09-04 12:48:25"
+updated: "2026-09-11 12:35:28"
 doc_id: 61767
-fetched_at: "2026-09-05T02:12:30Z"
-content_sha: 65aba93643f3e75a
+fetched_at: "2026-09-12T01:58:38Z"
+content_sha: 36aa76c844f91d24
 ---
 
 # Работа с отчётом по локальности продаж
@@ -104,7 +104,7 @@ _Главная / Аналитика / Аналитика продавца / П�
 
 # Где отслеживать переплату за логистику
 
-Продолжим показывать наценку за нелокальную продажу для товаров из заявок на поставку, которые созданы до 9 июля 2026 г.
+Отменили наценку за нелокальную продажу с 9 июля 2026 г. Для товаров из поставок, которые созданы до 8 июля, наценка применялась до 24 августа включительно.
 
 В блоке **Переплата за логистику **покажем сумму, которую вы могли сэкономить, если бы все товары доставили локально. Эта сумма складывается из:
 

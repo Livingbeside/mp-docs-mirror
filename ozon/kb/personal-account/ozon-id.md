@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /personal-account/ozon-id
 source: "https://seller-edu.ozon.ru/libra/personal-account/ozon-id"
-updated: "2026-04-14 13:29:06"
+updated: "2026-09-11 13:41:27"
 doc_id: 1037
-fetched_at: "2026-08-28T12:11:14Z"
-content_sha: 6b0090e26051fbb5
+fetched_at: "2026-09-12T01:58:37Z"
+content_sha: f269168d99ef134e
 ---
 
 # Что такое Ozon ID
@@ -35,6 +35,8 @@ Ozon ID — авторизация на сервисах Ozon без парол�
 На экране авторизации: укажите номер телефона, привязанный к вашему Ozon ID. Отправим на него проверочный код или позвоним — отвечать на звонок не нужно, просто введите последние 6 цифр номера.
 
 Для входа можно использовать аккаунт на «Госуслугах» или VK ID.
+
+Также вы можете войти по QR-коду на компьютере, если ранее вошли в свой аккаунт в приложении Ozon для покупателей. [Подробнее](https://docs.ozon.ru/common/my-settings/my-account/?country=RU#%D0%B2%D1%85%D0%BE%D0%B4-%D0%BF%D0%BE-qr-%D0%BA%D0%BE%D0%B4%D1%83)
 
 # Как привязать к Ozon ID другой номер телефона
 
