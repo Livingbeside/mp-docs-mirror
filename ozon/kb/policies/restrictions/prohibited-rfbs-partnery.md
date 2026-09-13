@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /policies/restrictions/prohibited-rfbs-partnery
 source: "https://seller-edu.ozon.ru/libra/policies/restrictions/prohibited-rfbs-partnery"
-updated: "2026-06-16 13:11:28"
+updated: "2026-09-11 14:08:30"
 doc_id: 649
-fetched_at: "2026-08-28T12:11:14Z"
-content_sha: 164ac608b826fdf7
+fetched_at: "2026-09-13T02:12:36Z"
+content_sha: a08b750a5791bdb0
 ---
 
 # Запрещено доставлять по схеме realFBS
@@ -61,7 +61,11 @@ _Главная / Правила работы и контроль качеств
 
 [для «СДЭК»](https://www.cdek.ru/ru/help);
 
-[для «Почты России»](https://www.pochta.ru/support/post-rules/content-package-rules).
+[для «Почты России»](https://www.pochta.ru/support/post-rules/content-package-rules);
+
+[для Яндекс Доставки](https://yandex.ru/support/delivery-profile/ru/other-day/prohibited-for-delivery);
+
+[для 5post](https://fivepost.ru/become-partner/#s0).
 
 ## Партнёры Ozon
 

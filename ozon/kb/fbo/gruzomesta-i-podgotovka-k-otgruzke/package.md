@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /fbo/gruzomesta-i-podgotovka-k-otgruzke/package
 source: "https://seller-edu.ozon.ru/libra/fbo/gruzomesta-i-podgotovka-k-otgruzke/package"
-updated: "2026-09-07 14:55:56"
+updated: "2026-09-11 07:18:14"
 doc_id: 70422
-fetched_at: "2026-09-08T01:39:31Z"
-content_sha: 90becb66778794ed
+fetched_at: "2026-09-13T02:12:36Z"
+content_sha: cf73e2bd04daef8e
 ---
 
 # Упаковка товаров на FBO
@@ -20,11 +20,11 @@ _Главная / Продажа со склада Ozon (FBO) / Грузомес
 
 # Как правильно упаковать товары
 
-Эти правила относятся только к упаковке товаров. О том, какие правила действуют для грузовых мест и как их выбрать — рассказали в [инструкции](/seller-edu/fbo/gruzomesta-i-podgotovka-k-otgruzke/prepare-supply).
+Эти правила относятся только к упаковке товаров. О том, какие правила действуют для грузовых мест и как их выбрать — рассказали в [инструкции](/fbo/gruzomesta-i-podgotovka-k-otgruzke/prepare-supply).
 
 Упаковать товары нужно так, чтобы при транспортировке и размещении на складе они не повредились. Упаковка должна быть целой и сухой.
 
-Как только упакуете товары, приступите к подготовке поставки для отгрузки: поместите товары в грузоместа и наклейте этикетки. [Подробнее о том, как подготовить поставку для отгрузки](/seller-edu/fbo/gruzomesta-i-podgotovka-k-otgruzke/prepare-supply)
+Как только упакуете товары, приступите к подготовке поставки для отгрузки: поместите товары в грузоместа и наклейте этикетки. [Подробнее о том, как подготовить поставку для отгрузки](/fbo/gruzomesta-i-podgotovka-k-otgruzke/prepare-supply)
 
 Собрали на отдельной витрине коробки, курьерские пакеты, пузырчатую плёнку и другие расходники, которые точно соответствуют правилам Ozon.
 
@@ -183,7 +183,7 @@ _Главная / Продажа со склада Ozon (FBO) / Грузомес
 
 Дополнительно упаковываем продукцию, если в заказе больше одного товара при доставке курьером, через постаматы или в другой стране.
 
-[Примеры дополнительной упаковки](/seller-edu/contract-for-sellers/regulations-fbo/reglament-postavok-na-fulfilment#%D0%BF%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5-%E2%84%963-%D0%BF%D1%80%D0%B8%D0%BC%D0%B5%D1%80%D1%8B-%D0%B4%D0%BE%D0%BF%D0%BE%D0%BB%D0%BD%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%BE%D0%B8-%D1%83%D0%BF%D0%B0%D0%BA%D0%BE%D0%B2%D0%BA%D0%B8)
+[Примеры дополнительной упаковки](/contract-for-sellers/regulations-fbo/reglament-postavok-na-fulfilment#приложение-№3-примеры-дополнительнои-упаковки)
 
 # Что будет, если неправильно упаковать товар
 
@@ -193,9 +193,9 @@ _Главная / Продажа со склада Ozon (FBO) / Грузомес
 
 пролиться или просыпаться на товары рядом.
 
-В этих случаях списываем товар без компенсации, а продавцу нужно оплатить [утилизацию](/seller-edu/fbo/vozvraty-utilizaciya-izlishki/utilizacia). [Подробнее о списанных товарах](/seller-edu/fbo/vozvraty-utilizaciya-izlishki/spisannye-tovary)
+В этих случаях списываем товар без компенсации, а продавцу нужно оплатить [утилизацию](/fbo/vozvraty-utilizaciya-izlishki/utilizacia). [Подробнее о списанных товарах](/fbo/vozvraty-utilizaciya-izlishki/spisannye-tovary)
 
-Чтобы товары реже повреждались и повреждали соседние товары, следите за [индексом надёжности упаковки](/seller-edu/fbo/vozvraty-utilizaciya-izlishki/nadezhnost-upakovki).
+Чтобы товары реже повреждались и повреждали соседние товары, следите за [индексом надёжности упаковки](/fbo/vozvraty-utilizaciya-izlishki/nadezhnost-upakovki).
 
 # Какую дополнительную упаковку использовать
 
