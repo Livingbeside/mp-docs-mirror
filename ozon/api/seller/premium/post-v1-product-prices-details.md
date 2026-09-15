@@ -9,7 +9,7 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: 126e3461347f7028
+content_sha: 7292c6195bb29ef3
 ---
 
 # Получить подробную информацию о ценах товаров
@@ -36,15 +36,15 @@ content_sha: 126e3461347f7028
 **200** — Информация о ценах товаров
 
 - `prices` — array[object]. Цены товаров.
-  - `customer_price` — object. Цена товара на сайте.
+  - `customer_price` — object. Цена, которую видит покупатель.
     - `amount` — string. Сумма.
     - `currency` — string. Валюта.
   - `discount_percent` — number<float>. Процент скидки за счёт Ozon.
   - `offer_id` — string. Идентификатор товара в системе продавца — артикул.
-  - `price` — object. Цена товара с учётом акции или продвижения.
+  - `price` — object. Предельная цена товара без акций. Выше этого значения цену для покупателя не поднимем.
     - `amount` — string. Сумма.
     - `currency` — string. Валюта.
-  - `price_indexes` — array[object]. Индекс цен.
+  - `price_indexes` — array[object]. Индекс цен товара.
     - `external_index_data` — object. Цена товара конкурента.
       - `min_price` — object. Минимальная цена товара конкурента.
         - `amount` — string. Сумма.

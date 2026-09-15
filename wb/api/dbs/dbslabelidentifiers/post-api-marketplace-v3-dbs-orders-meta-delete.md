@@ -9,7 +9,7 @@ tags:
 spec_version: dbs
 source: "https://dev.wildberries.ru/docs/openapi/dbs"
 deprecated: false
-content_sha: 35661a4632e77db7
+content_sha: bb1d553831047587
 ---
 
 # Удалить идентификаторы маркировки сборочных заданий
@@ -18,14 +18,14 @@ content_sha: 35661a4632e77db7
 
 Описание метода
 
-Метод удаляет значение указанных [идентификаторов маркировки сборочных заданий](./orders-dbs#tag/dbsLabelIdentifiers/operation/postV3DbsOrdersMetaDetails).
+Метод удаляет значение указанных [идентификаторов маркировки сборочных заданий](./dbs#tag/dbsLabelIdentifiers/operation/postV3DbsOrdersMetaDetails).
 
 В одном запросе можно удалить идентификаторы маркировки только одного типа. Укажите тип идентификаторов маркировки в запросе:
- - `imei` — [IMEI](./orders-dbs#tag/dbsLabelIdentifiers/operation/postV3DbsOrdersMetaImei)
- - `uin` — [УИН](./orders-dbs#tag/dbsLabelIdentifiers/operation/postV3DbsOrdersMetaUin)
- - `gtin` — [GTIN](./orders-dbs#tag/dbsLabelIdentifiers/operation/postV3DbsOrdersMetaGtin)
- - `sgtin` — [код маркировки Честного знака](./orders-dbs#tag/dbsLabelIdentifiers/operation/postV3DbsOrdersMetaSgtin)
- - `customsDeclaration` — [номер ДТ](./orders-dbs#tag/dbsLabelIdentifiers/operation/postV3DbsOrdersMetaCustomsDeclaration). При удалении номера ДТ также удаляется код страны происхождения товара — `originCountryCode`
+ - `imei` — [IMEI](./dbs#tag/dbsLabelIdentifiers/operation/postV3DbsOrdersMetaImei)
+ - `uin` — [УИН](./dbs#tag/dbsLabelIdentifiers/operation/postV3DbsOrdersMetaUin)
+ - `gtin` — [GTIN](./dbs#tag/dbsLabelIdentifiers/operation/postV3DbsOrdersMetaGtin)
+ - `sgtin` — [код маркировки Честного знака](./dbs#tag/dbsLabelIdentifiers/operation/postV3DbsOrdersMetaSgtin)
+ - `customsDeclaration` — [номер ДТ](./dbs#tag/dbsLabelIdentifiers/operation/postV3DbsOrdersMetaCustomsDeclaration). При удалении номера ДТ также удаляется код страны происхождения товара — `originCountryCode`
 
 Лимит запросов на один аккаунт продавца для всех методов получения и удаления идентификаторов маркировки DBS:
 

@@ -9,7 +9,7 @@ tags:
 spec_version: communication
 source: "https://dev.wildberries.ru/docs/openapi/customer-communication"
 deprecated: false
-content_sha: 5e1aed56d38f9888
+content_sha: 5057b5f57807d7e0
 ---
 
 # События чатов
@@ -18,7 +18,7 @@ content_sha: 5e1aed56d38f9888
 
 Описание метода
 
-Метод возвращает список событий всех [чатов с покупателями](./user-communication#tag/buyersChat/operation/getV1SellerChats).
+Метод возвращает список событий всех [чатов с покупателями](./customer-communication#tag/buyersChat/operation/getV1SellerChats).
 
 Чтобы получить все события:
  1. Сделайте первый запрос без параметра `next`.
@@ -59,24 +59,24 @@ content_sha: 5e1aed56d38f9888
           - `nmID` — integer. Артикул WB
           - `price` — integer. Фактическая цена с учетом всех скидок. Взимается с покупателя
           - `priceCurrency` — string. Валюта
-          - `rid` — string. Уникальный ID заказа. Примечание: `rid` — это `srid` в ответах методов: - [Заявки покупателей на возврат](./user-communication#tag/buyersReturns/operation/getV1Claims) - [Лента заказов](./analytics#tag/orderFeed/operation/postV1OrderFeed) - [Заказы](./reports#tag/mainReports/operation/getV1SupplierOrders) - [Продажи](./reports#tag/mainReports/operation/getV1SupplierSales) - [Отчёт о возвратах и перемещении товаров](./reports#tag/returnsAndItemMovementReport) - [Детализации к отчётам реализации по ID отчётов](./financial-reports-and-accounting#tag/financialReports/operation/postV1SalesReportsDetailedReportId) - [Детализации к отчётам реализации за период](./financial-reports-and-accounting#tag/financialReports/operation/postV1SalesReportsDetailed) - [Детализации к отчётам об издержках на приём платежей по ID отчётов](./financial-reports-and-accounting#tag/financialReports/operation/postV1AcquiringDetailedReportId) - [Детализации к отчётам об издержках на приём платежей за период](./financial-reports-and-accounting#tag/financialReports/operation/postV1AcquiringDetailed)
-          - `size` — string. Размер товара, соответствует `wbSize` в [карточке товара](./work-with-products#tag/listings/paths/~1content~1v2~1get~1cards~1list/post)
+          - `rid` — string. Уникальный ID заказа. Примечание: `rid` — это `srid` в ответах методов: - [Заявки покупателей на возврат](./customer-communication#tag/buyersReturns/operation/getV1Claims) - [Лента заказов](./analytics#tag/orderFeed/operation/postV1OrderFeed) - [Заказы](./reports#tag/mainReports/operation/getV1SupplierOrders) - [Продажи](./reports#tag/mainReports/operation/getV1SupplierSales) - [Отчёт о возвратах и перемещении товаров](./reports#tag/returnsAndItemMovementReport) - [Детализации к отчётам реализации по ID отчётов](./documents-and-accounting#tag/financialReports/operation/postV1SalesReportsDetailedReportId) - [Детализации к отчётам реализации за период](./documents-and-accounting#tag/financialReports/operation/postV1SalesReportsDetailed) - [Детализации к отчётам об издержках на приём платежей по ID отчётов](./documents-and-accounting#tag/financialReports/operation/postV1AcquiringDetailedReportId) - [Детализации к отчётам об издержках на приём платежей за период](./documents-and-accounting#tag/financialReports/operation/postV1AcquiringDetailed)
+          - `size` — string. Размер товара, соответствует `wbSize` в [карточке товара](./item-management#tag/listings/operation/postV2GetCardsList)
         - `files` — array[object]. Файлы
           - `contentType` — string. Тип файла
           - `date` — string. Дата загрузки файла
-          - `downloadID` — string. ID файла. [Получить файл](./user-communication#tag/buyersChat/operation/getV1SellerDownloadId)
+          - `downloadID` — string. ID файла. [Получить файл](./customer-communication#tag/buyersChat/operation/getV1SellerDownloadId)
           - `name` — string. Название файла
           - `url` — string. URL для получения файла
           - `size` — integer. Размер файла в байтах
         - `images` — array[object]. Изображения
           - `date` — string. Дата загрузки изображения
-          - `downloadID` — string. ID файла. [Получить файл](./user-communication#tag/buyersChat/operation/getV1SellerDownloadId)
+          - `downloadID` — string. ID файла. [Получить файл](./customer-communication#tag/buyersChat/operation/getV1SellerDownloadId)
           - `url` — string. URL для получения изображения
       - `text` — string. Текст сообщения
     - `source` — string. Источник отправки сообщения: - `seller-portal` — портал продавцов - `seller-public-api` — API Чата с покупателями - `rusite` — портал покупателей - `global` — портал `global.wildberries.ru` - `ios` — мобильная операционная система от **Apple** - `android` — операционная система **Android** от **Google**
     - `addTimestamp` — integer. Время появления события на сервере. Формат Unix timestamp
     - `addTime` — string. Время появления события на сервере в UTC
-    - `replySign` — string. Подпись чата. Доступна только при `"isNewChat": true`. Требуется при [отправке сообщения](./user-communication#tag/buyersChat/operation/postV1SellerMessage)
+    - `replySign` — string. Подпись чата. Доступна только при `"isNewChat": true`. Требуется при [отправке сообщения](./customer-communication#tag/buyersChat/operation/postV1SellerMessage)
     - `sender` — string (client, seller, wb). Отправитель: - `client` — покупатель - `seller` — продавец - `wb` — Wildberries
     - `clientName` — string. Имя покупателя
 - `errors` — array[string]. Ошибки, если есть

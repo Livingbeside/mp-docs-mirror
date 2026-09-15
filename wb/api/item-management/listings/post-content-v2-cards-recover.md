@@ -3,13 +3,13 @@ title: Восстановление карточек товаров из кор�
 api: wb-item-management
 method: POST
 path: /content/v2/cards/recover
-operation_id: post-content-v2-cards-recover
+operation_id: postV2CardsRecover
 tags:
   - listings
 spec_version: items
 source: "https://dev.wildberries.ru/docs/openapi/item-management"
 deprecated: false
-content_sha: e8ef3ddaf398156e
+content_sha: a469324e81a1862f
 ---
 
 # Восстановление карточек товаров из корзины
@@ -18,7 +18,7 @@ content_sha: e8ef3ddaf398156e
 
 Описание метода
 
-Метод восстанавливает [карточки товаров из корзины](./work-with-products#tag/listings/paths/~1content~1v2~1get~1cards~1trash/post).
+Метод восстанавливает [карточки товаров из корзины](./item-management#tag/listings/operation/postV2GetCardsTrash).
 
  Карточка товара сохраняет тот же imtID — ID для [объединённых](/knowledge-base/articles/019d49a4-1320-71bb-9dac-8ba07e7177ce/rabota-s-tovarami#obuedinenie-i-razuedinenie-kartochek-tovarov) карточек товаров — что был присвоен ей при перемещении в корзину
 

@@ -2,8 +2,8 @@
 title: Изменение условий продажи
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/offers/updateCampaignOffers.md"
-fetched_at: "2026-09-11T01:57:41Z"
-content_sha: ab41f4a795468db6
+fetched_at: "2026-09-15T02:21:30Z"
+content_sha: 4eab3de66294a741
 ---
 
 ---
@@ -1099,7 +1099,7 @@ alternate:
                   type: integer
                   format: int32
     $defs:
-      /home/sandbox/.ya/build/build_root/givs/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/offers/schemas.yaml#/QuantumDTO:
+      /home/sandbox/.ya/build/build_root/4tup/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/offers/schemas.yaml#/QuantumDTO:
         deprecated: true
         x-deprecation-config:
           shutdown-date: '2026-10-19'

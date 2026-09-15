@@ -9,7 +9,7 @@ tags:
 spec_version: communication
 source: "https://dev.wildberries.ru/docs/openapi/customer-communication"
 deprecated: false
-content_sha: b2379ab5b02b3c51
+content_sha: 955ee6fe10a54937
 ---
 
 # Получить файл из сообщения{{ /api/v1/seller/download/{id} }}
@@ -33,7 +33,7 @@ content_sha: b2379ab5b02b3c51
 
 | Имя | Где | Тип | Обяз. | Описание |
 |---|---|---|---|---|
-| `id` | path | string | да | ID файла, см. значение поля `downloadID` в методе [События чатов](./user-communication#tag/buyersChat/operation/getV1SellerEvents) |
+| `id` | path | string | да | ID файла, см. значение поля `downloadID` в методе [События чатов](./customer-communication#tag/buyersChat/operation/getV1SellerEvents) |
 
 ## Ответы
 

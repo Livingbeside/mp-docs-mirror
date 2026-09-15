@@ -9,7 +9,7 @@ tags:
 spec_version: dbs
 source: "https://dev.wildberries.ru/docs/openapi/dbs"
 deprecated: false
-content_sha: a7f07fd5f7eda1d1
+content_sha: d83cfd8d14ede4a5
 ---
 
 # Получить список новых сборочных заданий
@@ -18,7 +18,7 @@ content_sha: a7f07fd5f7eda1d1
 
 Описание метода
 
-Метод возвращает список всех новых [сборочных заданий](./orders-dbs#tag/dbsAssemblyOrders), которые есть у продавца на момент запроса.
+Метод возвращает список всех новых [сборочных заданий](./dbs#tag/dbsAssemblyOrders), которые есть у продавца на момент запроса.
 
 Лимит запросов на один аккаунт продавца для методов сборочных заданий DBS:
 
@@ -36,7 +36,7 @@ content_sha: a7f07fd5f7eda1d1
 
 - `orders` — array[object]. Список новых сборочных заданий
   - `salePrice` — integer. Цена в валюте продажи с учетом скидки продавца, без учета скидки WB Клуба, умноженная на 100. Предоставляется в информационных целях
-  - `requiredMeta` — array[string]. Список идентификаторов маркировки, доступных для сборочного задания. [Указывать IMEI](./orders-dbs#tag/dbsLabelIdentifiers/operation/postV3DbsOrdersMetaImei) обязательно для [предмета](./work-with-products#tag/categoriesSubcategoriesAndCharacteristics/paths/~1content~1v2~1object~1all/get) `Смартфоны`, `"subjectId":515`
+  - `requiredMeta` — array[string]. Список идентификаторов маркировки, доступных для сборочного задания. [Указывать IMEI](./dbs#tag/dbsLabelIdentifiers/operation/postV3DbsOrdersMetaImei) обязательно для [предмета](./item-management#tag/categoriesSubcategoriesAndCharacteristics/operation/getV2ObjectAll) `Смартфоны`, `"subjectId":515`
   - `comment` — string. Комментарий покупателя
   - `options` — object. Опции заказа
     - `isB2b` — boolean. Признак B2B-продажи: - `false` — не B2B-продажа - `true` — B2B-продажа
@@ -48,7 +48,7 @@ content_sha: a7f07fd5f7eda1d1
   - `groupId` — string<UUID>. ID группы сборочных заданий. Объединяет сборочные задания, поступившие на один склад (`warehouseId`) в рамках одной транзакции покупателя (`orderUid`)
   - `article` — string. Артикул продавца
   - `colorCode` — string. Код цвета (только для колеруемых товаров)
-  - `rid` — ?. Уникальный ID заказа. Примечание: `rid` — это `srid` в ответах методов: - [Заявки покупателей на возврат](./user-communication#tag/buyersReturns/operation/getV1Claims) - [Лента заказов](./analytics#tag/orderFeed/operation/postV1OrderFeed) - [Заказы](./reports#tag/mainReports/operation/getV1SupplierOrders) - [Продажи](./reports#tag/mainReports/operation/getV1SupplierSales) - [Отчёт о возвратах и перемещении товаров](./reports#tag/returnsAndItemMovementReport) - [Детализации к отчётам реализации по ID отчётов](./financial-reports-and-accounting#tag/financialReports/operation/postV1SalesReportsDetailedReportId) - [Детализации к отчётам реализации за период](./financial-reports-and-accounting#tag/financialReports/operation/postV1SalesReportsDetailed) - [Детализации к отчётам об издержках на приём платежей по ID отчётов](./financial-reports-and-accounting#tag/financialReports/operation/postV1AcquiringDetailedReportId) - [Детализации к отчётам об издержках на приём платежей за период](./financial-reports-and-accounting#tag/financialReports/operation/postV1AcquiringDetailed)
+  - `rid` — ?. Уникальный ID заказа. Примечание: `rid` — это `srid` в ответах методов: - [Заявки покупателей на возврат](./customer-communication#tag/buyersReturns/operation/getV1Claims) - [Лента заказов](./analytics#tag/orderFeed/operation/postV1OrderFeed) - [Заказы](./reports#tag/mainReports/operation/getV1SupplierOrders) - [Продажи](./reports#tag/mainReports/operation/getV1SupplierSales) - [Отчёт о возвратах и перемещении товаров](./reports#tag/returnsAndItemMovementReport) - [Детализации к отчётам реализации по ID отчётов](./documents-and-accounting#tag/financialReports/operation/postV1SalesReportsDetailedReportId) - [Детализации к отчётам реализации за период](./documents-and-accounting#tag/financialReports/operation/postV1SalesReportsDetailed) - [Детализации к отчётам об издержках на приём платежей по ID отчётов](./documents-and-accounting#tag/financialReports/operation/postV1AcquiringDetailedReportId) - [Детализации к отчётам об издержках на приём платежей за период](./documents-and-accounting#tag/financialReports/operation/postV1AcquiringDetailed)
   - `createdAt` — string<date-time>. Дата создания сборочного задания
   - `deliveryType` — string (dbs, edbs, dbsPickupPoint). Тип доставки: - `dbs` — доставка силами продавца - `dbsPickupPoint` — доставка силами продавца в ПВЗ - `edbs` — экспресс-доставка силами продавца
   - `skus` — array[string]. Массив баркодов товара
@@ -57,8 +57,8 @@ content_sha: a7f07fd5f7eda1d1
   - `nmId` — integer. Артикул WB
   - `chrtId` — integer. ID размера товара в системе WB
   - `price` — integer. Цена в валюте продажи с учетом всех скидок, кроме скидки по WB Кошельку, умноженная на 100. Код валюты продажи указан в поле `currencyCode`. Предоставляется в информационных целях
-  - `finalPrice` — integer. Сумма к оплате покупателем в валюте продажи с учётом всех скидок, умноженная на 100. Код валюты продажи указан в поле `currencyCode`. Предоставляется в информационных целях. Используйте значение поля `finalPrice`, только если в ответе метода [POST /api/marketplace/v3/dbs/orders/final-price](./docs/openapi/orders-dbs#tag/dbsAssemblyOrders/operation/postV3DbsOrdersFinalPrice) вернулось `"data": null`. Во всех остальных случаях используйте значение поля `originalFinalPrice` из ответа того же метода
-  - `convertedFinalPrice` — integer. Сумма к оплате покупателем в валюте страны продавца с учетом всех скидок, умноженная на 100. Предоставляется в информационных целях. Используйте значение поля `convertedFinalPrice`, только если в ответе метода [POST /api/marketplace/v3/dbs/orders/final-price](./docs/openapi/orders-dbs#tag/dbsAssemblyOrders/operation/postV3DbsOrdersFinalPrice) вернулось `"data": null`. Во всех остальных случаях используйте значение поля `convertedOriginalFinalPrice` из ответа того же метода
+  - `finalPrice` — integer. Сумма к оплате покупателем в валюте продажи с учётом всех скидок, умноженная на 100. Код валюты продажи указан в поле `currencyCode`. Предоставляется в информационных целях. Используйте значение поля `finalPrice`, только если в ответе метода [POST /api/marketplace/v3/dbs/orders/final-price](./docs/openapi/dbs#tag/dbsAssemblyOrders/operation/postV3DbsOrdersFinalPrice) вернулось `"data": null`. Во всех остальных случаях используйте значение поля `originalFinalPrice` из ответа того же метода
+  - `convertedFinalPrice` — integer. Сумма к оплате покупателем в валюте страны продавца с учетом всех скидок, умноженная на 100. Предоставляется в информационных целях. Используйте значение поля `convertedFinalPrice`, только если в ответе метода [POST /api/marketplace/v3/dbs/orders/final-price](./docs/openapi/dbs#tag/dbsAssemblyOrders/operation/postV3DbsOrdersFinalPrice) вернулось `"data": null`. Во всех остальных случаях используйте значение поля `convertedOriginalFinalPrice` из ответа того же метода
   - `convertedPrice` — integer. Цена в валюте страны продавца с учетом всех скидок, кроме скидки по WB Кошельку, умноженная на 100. Предоставляется в информационных целях
   - `currencyCode` — integer<ISO 4217>. Код валюты продажи
   - `convertedCurrencyCode` — integer<ISO 4217>. Код валюты страны продавца

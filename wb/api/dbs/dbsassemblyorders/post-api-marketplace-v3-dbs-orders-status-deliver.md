@@ -9,7 +9,7 @@ tags:
 spec_version: dbs
 source: "https://dev.wildberries.ru/docs/openapi/dbs"
 deprecated: false
-content_sha: 140b8dcdb6b4b55f
+content_sha: 13029a03e01b70fa
 ---
 
 # Перевести сборочные задания в доставку
@@ -18,7 +18,7 @@ content_sha: 140b8dcdb6b4b55f
 
 Описание метода
 
-Метод переводит [сборочные задания](./orders-dbs#tag/dbsAssemblyOrders) из [статуса](./orders-dbs#tag/dbsAssemblyOrders/operation/postV3DbsOrdersStatusInfo) `confirm` в статус `deliver` — в доставке.
+Метод переводит [сборочные задания](./dbs#tag/dbsAssemblyOrders) из [статуса](./dbs#tag/dbsAssemblyOrders/operation/postV3DbsOrdersStatusInfo) `confirm` в статус `deliver` — в доставке.
 
 Лимит запросов на один аккаунт продавца:
 

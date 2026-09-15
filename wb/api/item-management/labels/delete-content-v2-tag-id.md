@@ -3,13 +3,13 @@ title: Удаление ярлыка{{ /content/v2/tag/{id} }}
 api: wb-item-management
 method: DELETE
 path: /content/v2/tag/{id}
-operation_id: delete-content-v2-tag-id
+operation_id: deleteV2TagId
 tags:
   - labels
 spec_version: items
 source: "https://dev.wildberries.ru/docs/openapi/item-management"
 deprecated: false
-content_sha: 07aa072f2ec0f94f
+content_sha: a2368742f29fa2cd
 ---
 
 # Удаление ярлыка{{ /content/v2/tag/{id} }}
@@ -18,7 +18,7 @@ content_sha: 07aa072f2ec0f94f
 
 Описание метода
 
-Метод удаляет ярлык из [списка ярлыков](./work-with-products#tag/labels/paths/~1content~1v2~1tags/get) продавца.
+Метод удаляет ярлык из [списка ярлыков](./item-management#tag/labels/operation/getV2Tags) продавца.
 
 Лимит запросов на один аккаунт продавца для всех методов Ярлыков:
 

@@ -2,8 +2,8 @@
 title: Дерево категорий
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/categories/getCategoriesTree.md"
-fetched_at: "2026-09-11T01:57:39Z"
-content_sha: ea4b3ce5cbdf0f06
+fetched_at: "2026-09-15T02:21:28Z"
+content_sha: 0e9606660a20e9cd
 ---
 
 ---
@@ -867,7 +867,7 @@ alternate:
         description: Язык категорий.
         $ref: '#/$defs/LanguageType'
     $defs:
-      /home/sandbox/.ya/build/build_root/givs/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/common/schemas.yaml#/LanguageType:
+      /home/sandbox/.ya/build/build_root/4tup/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/common/schemas.yaml#/LanguageType:
         description: |
           Язык:
   

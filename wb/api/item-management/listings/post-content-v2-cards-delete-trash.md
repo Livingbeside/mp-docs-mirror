@@ -3,13 +3,13 @@ title: Перенос карточек товаров в корзину
 api: wb-item-management
 method: POST
 path: /content/v2/cards/delete/trash
-operation_id: post-content-v2-cards-delete-trash
+operation_id: postV2CardsDeleteTrash
 tags:
   - listings
 spec_version: items
 source: "https://dev.wildberries.ru/docs/openapi/item-management"
 deprecated: false
-content_sha: 17145db409b0235c
+content_sha: 3cdd3ad54caefb72
 ---
 
 # Перенос карточек товаров в корзину
@@ -18,7 +18,7 @@ content_sha: 17145db409b0235c
 
 Описание метода
 
-Метод переносит [карточки товаров в корзину](./work-with-products#tag/listings/paths/~1content~1v2~1get~1cards~1trash/post). При этом карточки товаров не удаляются, их можно [восстановить](./work-with-products#tag/listings/paths/~1content~1v2~1cards~1recover/post).
+Метод переносит [карточки товаров в корзину](./item-management#tag/listings/operation/postV2GetCardsTrash). При этом карточки товаров не удаляются, их можно [восстановить](./item-management#tag/listings/operation/postV2CardsRecover).
 
  После переноса в корзину карточке товара присваивается новый imtID — ID для [объединённых](/knowledge-base/articles/019d49a4-1320-71bb-9dac-8ba07e7177ce/rabota-s-tovarami#obuedinenie-i-razuedinenie-kartochek-tovarov) карточек товаров
 

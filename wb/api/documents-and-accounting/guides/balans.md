@@ -5,7 +5,7 @@ tag: balance
 group: ""
 kind: guide
 source: "https://dev.wildberries.ru/docs/openapi/documents-and-accounting"
-content_sha: 9bb82ce686a0d4a6
+content_sha: b312f2567657bf22
 ---
 
 # Баланс
@@ -14,4 +14,4 @@ content_sha: 9bb82ce686a0d4a6
 
  Узнать больше о балансе продавца можно в [справочном центре](https://seller.wildberries.ru/help-center/article/A-225)
 
-Чтобы получить [текущий баланс](https://seller.wildberries.ru), воспользуйтесь [методом загрузки](./financial-reports-and-accounting#tag/balance/operation/getV1AccountBalance).
+Чтобы получить [текущий баланс](https://seller.wildberries.ru), воспользуйтесь [методом загрузки](./documents-and-accounting#tag/balance/operation/getV1AccountBalance).

@@ -3,13 +3,13 @@ title: Список карточек товаров
 api: wb-item-management
 method: POST
 path: /content/v2/get/cards/list
-operation_id: post-content-v2-get-cards-list
+operation_id: postV2GetCardsList
 tags:
   - listings
 spec_version: items
 source: "https://dev.wildberries.ru/docs/openapi/item-management"
 deprecated: false
-content_sha: 8a818b97c7471392
+content_sha: d27396c61c7967af
 ---
 
 # Список карточек товаров
@@ -20,7 +20,7 @@ content_sha: 8a818b97c7471392
 
 Метод возвращает список созданных карточек товаров.
 
- В ответе метода не будет карточек, находящихся в корзине. Получить такие карточки можно через [отдельный метод](./work-with-products#tag/listings/paths/~1content~1v2~1get~1cards~1trash/post)
+ В ответе метода не будет карточек, находящихся в корзине. Получить такие карточки можно через [отдельный метод](./item-management#tag/listings/operation/postV2GetCardsTrash)
 
 Чтобы получить **больше 100** карточек товаров, используйте пагинацию:
  1. Сделайте первый запрос: 
@@ -127,14 +127,14 @@ content_sha: 8a818b97c7471392
       - `verdict` — object. Результат проверки документа. Возвращается, когда проверка завершена
         - `verified` — boolean. - `true` — документ проверен - `false` — документ не проверен
         - `status` — integer. Результат проверки документа: - `1` — проверка пройдена - `2` — проверка не пройдена
-        - `reason` — string
+        - `reason` — string. Ошибка при проверке, возвращается для `status: 2`. Возможные значения: - `document_missing` — Документ не загружен - `document_not_found` — Документ не найден в реестре - `document_inactive` — У документа нет юридической силы - `document_expired` — Истёк срок действия документа - `applicant_mismatch` — Данные заявителя в документе и карточке различаются - `trade_name_mismatch` — Торговое наименование в карточке отличается от документа - `unknown` — Проверка не пройдена - `document_type_mismatch` — Номер документа не соответствует указанному типу документа - `document_dates_mismatch` — Неверная дата регистрации или окончания действия документа
         - `additionalData` — object. Дополнительная информация
         - `createdAt` — string<date-time>. Дата проверки документа
       - `createdAt` — string<date-time>. Дата добавления документа
     - `overallVerdict` — object. Результат проверки карточки товара. Возвращается, когда проверка завершена
       - `isFullyChecked` — boolean. - `true` — карточка товара проверена - `false` — карточка товара не проверена
       - `status` — integer. Результат проверки карточки товара: - `1` — проверка пройдена - `2` — проверка не пройдена
-      - `reason` — string
+      - `reason` — string. Ошибка при проверке, возвращается для `status: 2`. Возможные значения: - `tnved_missing` — Не указан код ТН ВЭД - `supplier_inn_missing` — Не указан ИНН - `supplier_not_registered` — Поставщик не найден в реестре - `supplier_inactive` — Ошибка в статусе поставщика, проверьте его в реестре - `product_group_not_registered` — Добавлена неверная товарная группа в системе маркировки - `kiz_required` — Этот товар нельзя продавать в России без кода маркировки Честного Знака - `kiz_certificate_missing` — Нет подтверждения, что на товар нанесена необходимая маркировка
       - `createdAt` — string<date-time>. Дата и время проверки карточки товара
     - `excludeDocuments` — boolean. Исключены ли документы из проверки карточки товара: - `true` — да, документы не проверяются при проверке карточки - `false` — нет, документы проверяются при проверке карточки
   - `characteristics` — array[object]. Характеристики

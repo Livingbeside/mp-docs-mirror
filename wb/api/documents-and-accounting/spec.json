@@ -644,7 +644,7 @@
             "type": "integer"
           },
           "srid": {
-            "description": "ID заказа.<br>В ответах методов сборочных заданий [FBS](./orders-fbs#tag/Sborochnye-zadaniya-FBS), [DBW](./orders-dbw#tag/dbwAssemblyOrders), [DBS](./orders-dbs#tag/dbsAssemblyOrders) и [Самовывоз](./in-store-pickup#tag/inStorePickupAssemblyOrders) `srid` равен `rid`\n",
+            "description": "ID заказа.<br>В ответах методов сборочных заданий [FBS](./orders-fbs#tag/Sborochnye-zadaniya-FBS), [DBW](./orders-dbw#tag/dbwAssemblyOrders), [DBS](./dbs#tag/dbsAssemblyOrders) и [Самовывоз](./in-store-pickup#tag/inStorePickupAssemblyOrders) `srid` равен `rid`\n",
             "example": "D0.r3f80c3eec6f845c6840128b4c19986f9.0.0",
             "type": "string"
           },
@@ -722,12 +722,12 @@
                 "items": {
                   "properties": {
                     "name": {
-                      "description": "ID категории документа из параметра [запроса](./financial-reports-and-accounting#tag/documents/operation/getV1DocumentsList) `category`",
+                      "description": "ID категории документа из параметра [запроса](./documents-and-accounting#tag/documents/operation/getV1DocumentsList) `category`",
                       "example": "redeem-notification",
                       "type": "string"
                     },
                     "title": {
-                      "description": "Название категории документа из поля [ответа](./financial-reports-and-accounting#tag/documents/~1api~1v1~1documents~1list/get) `category`",
+                      "description": "Название категории документа из поля [ответа](./documents-and-accounting#tag/documents/~1api~1v1~1documents~1list/get) `category`",
                       "example": "Уведомление о выкупе",
                       "type": "string"
                     }
@@ -798,7 +798,7 @@
                 "items": {
                   "properties": {
                     "category": {
-                      "description": "Название [категории документов](./financial-reports-and-accounting#tag/documents/operation/getV1DocumentsCategories) из поля ответа `title`",
+                      "description": "Название [категории документов](./documents-and-accounting#tag/documents/operation/getV1DocumentsCategories) из поля ответа `title`",
                       "example": "Уведомление о выкупе",
                       "type": "string"
                     },
@@ -1533,7 +1533,7 @@
             "type": "number"
           },
           "srid": {
-            "description": "ID заказа.<br>В ответах методов сборочных заданий [FBS](./orders-fbs#tag/Sborochnye-zadaniya-FBS), [DBW](./orders-dbw#tag/dbwAssemblyOrders), [DBS](./orders-dbs#tag/dbsAssemblyOrders) и [Самовывоз](./in-store-pickup#tag/inStorePickupAssemblyOrders) `srid` равен `rid`\n",
+            "description": "ID заказа.<br>В ответах методов сборочных заданий [FBS](./orders-fbs#tag/Sborochnye-zadaniya-FBS), [DBW](./orders-dbw#tag/dbwAssemblyOrders), [DBS](./dbs#tag/dbsAssemblyOrders) и [Самовывоз](./in-store-pickup#tag/inStorePickupAssemblyOrders) `srid` равен `rid`\n",
             "example": "0f1c3999172603062979867564654dac5b702849",
             "type": "string"
           },
@@ -1728,7 +1728,7 @@
     }
   },
   "info": {
-    "description": "<div class=\"description_important\">\n  Узнать больше о документах и бухгалтерии можно в <a href=\"https://seller.wildberries.ru/instructions/category/ba929b64-1f89-4426-82d7-ce998ee552bd?goBackOption=prevRoute&categoryId=3c971375-9939-45e8-ab82-376019be8942\">справочном центре</a>\n</div>\n\n<div class=\"api-block\">\n\nПросмотр [баланса](./financial-reports-and-accounting#tag/balance), [финансовых отчётов](./financial-reports-and-accounting#tag/financialReports) и [документов](./financial-reports-and-accounting#tag/documents) продавца.\n\n</div>\n",
+    "description": "<div class=\"description_important\">\n  Узнать больше о документах и бухгалтерии можно в <a href=\"https://seller.wildberries.ru/instructions/category/ba929b64-1f89-4426-82d7-ce998ee552bd?goBackOption=prevRoute&categoryId=3c971375-9939-45e8-ab82-376019be8942\">справочном центре</a>\n</div>\n\n<div class=\"api-block\">\n\nПросмотр [баланса](./documents-and-accounting#tag/balance), [финансовых отчётов](./documents-and-accounting#tag/financialReports) и [документов](./documents-and-accounting#tag/documents) продавца.\n\n</div>\n",
     "title": "Документы и бухгалтерия",
     "version": "finances",
     "x-file-name": "finances"
@@ -2303,7 +2303,7 @@
     },
     "/api/v1/documents/categories": {
       "get": {
-        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод возвращает категории документов для получения [списка документов продавца](./financial-reports-and-accounting#tag/documents/operation/getV1DocumentsList).\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 10 сек | 1 запрос | 10 сек | 5 запросов |\n| Сервисный | 10 сек | 1 запрос | 10 сек | 5 запросов |\n| Базовый с секретом | 10 сек | 1 запрос | 10 сек | 5 запросов |\n| Базовый | 24 ч | 1 запрос | 24 ч | 1 запрос |\n</div>\n",
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод возвращает категории документов для получения [списка документов продавца](./documents-and-accounting#tag/documents/operation/getV1DocumentsList).\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 10 сек | 1 запрос | 10 сек | 5 запросов |\n| Сервисный | 10 сек | 1 запрос | 10 сек | 5 запросов |\n| Базовый с секретом | 10 сек | 1 запрос | 10 сек | 5 запросов |\n| Базовый | 24 ч | 1 запрос | 24 ч | 1 запрос |\n</div>\n",
         "operationId": "getV1DocumentsCategories",
         "parameters": [
           {
@@ -2354,7 +2354,7 @@
     },
     "/api/v1/documents/download": {
       "get": {
-        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод загружает один документ из [списка документов продавца](./financial-reports-and-accounting#tag/documents/operation/getV1DocumentsList).\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 10 сек | 1 запрос | 10 сек | 5 запросов |\n| Сервисный | 10 сек | 1 запрос | 10 сек | 5 запросов |\n| Базовый с секретом | 10 сек | 1 запрос | 10 сек | 5 запросов |\n| Базовый | 24 ч | 1 запрос | 24 ч | 1 запрос |\n</div>\n",
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод загружает один документ из [списка документов продавца](./documents-and-accounting#tag/documents/operation/getV1DocumentsList).\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 10 сек | 1 запрос | 10 сек | 5 запросов |\n| Сервисный | 10 сек | 1 запрос | 10 сек | 5 запросов |\n| Базовый с секретом | 10 сек | 1 запрос | 10 сек | 5 запросов |\n| Базовый | 24 ч | 1 запрос | 24 ч | 1 запрос |\n</div>\n",
         "operationId": "getV1DocumentsDownload",
         "parameters": [
           {
@@ -2425,7 +2425,7 @@
     },
     "/api/v1/documents/download/all": {
       "post": {
-        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод загружает несколько документов из [списка документов продавца](./financial-reports-and-accounting#tag/documents/operation/getV1DocumentsList).\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 5 мин | 1 запрос | 5 мин | 5 запросов |\n| Сервисный | 5 мин | 1 запрос | 5 мин | 5 запросов |\n| Базовый с секретом | 5 мин | 1 запрос | 5 мин | 5 запросов |\n| Базовый | 24 ч | 1 запрос | 24 ч | 1 запрос |\n</div>\n",
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод загружает несколько документов из [списка документов продавца](./documents-and-accounting#tag/documents/operation/getV1DocumentsList).\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 5 мин | 1 запрос | 5 мин | 5 запросов |\n| Сервисный | 5 мин | 1 запрос | 5 мин | 5 запросов |\n| Базовый с секретом | 5 мин | 1 запрос | 5 мин | 5 запросов |\n| Базовый | 24 ч | 1 запрос | 24 ч | 1 запрос |\n</div>\n",
         "operationId": "postV1DocumentsDownloadAll",
         "requestBody": {
           "content": {
@@ -2495,7 +2495,7 @@
     },
     "/api/v1/documents/list": {
       "get": {
-        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод возвращает список документов продавца. Вы можете получить [один](./financial-reports-and-accounting#tag/documents/operation/getV1DocumentsDownload) или [несколько](./financial-reports-and-accounting#tag/documents/operation/postV1DocumentsDownloadAll) документов из полученного списка.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 10 сек | 1 запрос | 10 сек | 5 запросов |\n| Сервисный | 10 сек | 1 запрос | 10 сек | 5 запросов |\n| Базовый с секретом | 10 сек | 1 запрос | 10 сек | 5 запросов |\n| Базовый | 24 ч | 1 запрос | 24 ч | 1 запрос |\n</div>\n",
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод возвращает список документов продавца. Вы можете получить [один](./documents-and-accounting#tag/documents/operation/getV1DocumentsDownload) или [несколько](./documents-and-accounting#tag/documents/operation/postV1DocumentsDownloadAll) документов из полученного списка.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 10 сек | 1 запрос | 10 сек | 5 запросов |\n| Сервисный | 10 сек | 1 запрос | 10 сек | 5 запросов |\n| Базовый с секретом | 10 сек | 1 запрос | 10 сек | 5 запросов |\n| Базовый | 24 ч | 1 запрос | 24 ч | 1 запрос |\n</div>\n",
         "operationId": "getV1DocumentsList",
         "parameters": [
           {
@@ -2550,7 +2550,7 @@
             }
           },
           {
-            "description": "ID [категории документов](./financial-reports-and-accounting#tag/documents/operation/getV1DocumentsCategories) из поля `name`",
+            "description": "ID [категории документов](./documents-and-accounting#tag/documents/operation/getV1DocumentsCategories) из поля `name`",
             "in": "query",
             "name": "category",
             "schema": {
@@ -2642,22 +2642,22 @@
   ],
   "tags": [
     {
-      "description": "<div class=\"api-description\">\n\n<div class=\"description_important\">\n  Узнать больше о документах и бухгалтерии можно в <a href=\"https://seller.wildberries.ru/instructions/category/ba929b64-1f89-4426-82d7-ce998ee552bd?goBackOption=prevRoute&categoryId=3c971375-9939-45e8-ab82-376019be8942\">справочном центре</a>\n</div>\n\n<div class=\"api-block\">\n\nПросмотр [баланса](./financial-reports-and-accounting#tag/balance), [финансовых отчётов](./financial-reports-and-accounting#tag/financialReports) и [документов](./financial-reports-and-accounting#tag/documents) продавца.\n\n</div>\n\n\n</div>",
+      "description": "<div class=\"api-description\">\n\n<div class=\"description_important\">\n  Узнать больше о документах и бухгалтерии можно в <a href=\"https://seller.wildberries.ru/instructions/category/ba929b64-1f89-4426-82d7-ce998ee552bd?goBackOption=prevRoute&categoryId=3c971375-9939-45e8-ab82-376019be8942\">справочном центре</a>\n</div>\n\n<div class=\"api-block\">\n\nПросмотр [баланса](./documents-and-accounting#tag/balance), [финансовых отчётов](./documents-and-accounting#tag/financialReports) и [документов](./documents-and-accounting#tag/documents) продавца.\n\n</div>\n\n\n</div>",
       "name": "Документы и бухгалтерия",
       "x-traitTag": true
     },
     {
-      "description": "<div class=\"description_auth\">\n  Для доступа к методам используйте <a href=\"./api-information#tag/authorization/Kak-sozdat-personalnyj-bazovyj-ili-testovyj-token\">токен</a> для категории <strong>Финансы</strong>\n</div>\n\n<div class=\"description_important\">\n  Узнать больше о балансе продавца можно в <a href=\"https://seller.wildberries.ru/help-center/article/A-225\">справочном центре</a>\n</div>\n\nЧтобы получить [текущий баланс](https://seller.wildberries.ru), воспользуйтесь [методом загрузки](./financial-reports-and-accounting#tag/balance/operation/getV1AccountBalance).\n",
+      "description": "<div class=\"description_auth\">\n  Для доступа к методам используйте <a href=\"./api-information#tag/authorization/Kak-sozdat-personalnyj-bazovyj-ili-testovyj-token\">токен</a> для категории <strong>Финансы</strong>\n</div>\n\n<div class=\"description_important\">\n  Узнать больше о балансе продавца можно в <a href=\"https://seller.wildberries.ru/help-center/article/A-225\">справочном центре</a>\n</div>\n\nЧтобы получить [текущий баланс](https://seller.wildberries.ru), воспользуйтесь [методом загрузки](./documents-and-accounting#tag/balance/operation/getV1AccountBalance).\n",
       "name": "balance",
       "x-displayName": "Баланс"
     },
     {
-      "description": "<div class=\"description_auth\">\n  Для доступа к методам используйте <a href=\"./api-information#tag/authorization/Kak-sozdat-personalnyj-bazovyj-ili-testovyj-token\">токен</a> для категории <strong>Финансы</strong>\n</div>\n\n<div class=\"description_important\">\n  Узнать больше о финансовых отчётах можно в <a href=\"https://seller.wildberries.ru/instructions/ru/ru/subcategory/financial-reports\">справочном центре</a>\n</div>\n\nМетоды получения:\n  1. [Списка](./financial-reports-and-accounting#tag/financialReports/operation/postV1SalesReportsList) отчётов реализации и детализаций к отчётам по [ID](./financial-reports-and-accounting#tag/financialReports/operation/postV1SalesReportsDetailedReportId) и за [период](./financial-reports-and-accounting#tag/financialReports/operation/postV1SalesReportsDetailed)\n  2. [Списка](./financial-reports-and-accounting#tag/financialReports/operation/postV1AcquiringList) отчётов об издержках на приём платежей и детализаций к отчётам по [ID](./financial-reports-and-accounting#tag/financialReports/operation/postV1AcquiringDetailedReportId) и за [период](./financial-reports-and-accounting#tag/financialReports/operation/postV1AcquiringDetailed). Доступно только для продавцов из России\n\n<div class=\"description_important\">\n  Вы можете выгрузить данные в <a href=\"/knowledge-base/articles/019d49a4-650c-7b04-9596-ba441936f9d3\">Google Таблицы</a>\n</div>\n",
+      "description": "<div class=\"description_auth\">\n  Для доступа к методам используйте <a href=\"./api-information#tag/authorization/Kak-sozdat-personalnyj-bazovyj-ili-testovyj-token\">токен</a> для категории <strong>Финансы</strong>\n</div>\n\n<div class=\"description_important\">\n  Узнать больше о финансовых отчётах можно в <a href=\"https://seller.wildberries.ru/instructions/ru/ru/subcategory/financial-reports\">справочном центре</a>\n</div>\n\nМетоды получения:\n  1. [Списка](./documents-and-accounting#tag/financialReports/operation/postV1SalesReportsList) отчётов реализации и детализаций к отчётам по [ID](./documents-and-accounting#tag/financialReports/operation/postV1SalesReportsDetailedReportId) и за [период](./documents-and-accounting#tag/financialReports/operation/postV1SalesReportsDetailed)\n  2. [Списка](./documents-and-accounting#tag/financialReports/operation/postV1AcquiringList) отчётов об издержках на приём платежей и детализаций к отчётам по [ID](./documents-and-accounting#tag/financialReports/operation/postV1AcquiringDetailedReportId) и за [период](./documents-and-accounting#tag/financialReports/operation/postV1AcquiringDetailed). Доступно только для продавцов из России\n\n<div class=\"description_important\">\n  Вы можете выгрузить данные в <a href=\"/knowledge-base/articles/019d49a4-650c-7b04-9596-ba441936f9d3\">Google Таблицы</a>\n</div>\n",
       "name": "financialReports",
       "x-displayName": "Финансовые отчёты"
     },
     {
-      "description": "<div class=\"description_auth\">\n  Для доступа к методам используйте <a href=\"./api-information#tag/authorization/Kak-sozdat-personalnyj-bazovyj-ili-testovyj-token\">токен</a> для категории <strong>Документы</strong>\n</div>\n\nС помощью этих методов вы можете получить [документы продавца](https://seller.wildberries.ru/supplementary-agreements) различных категорий: акты, бухгалтерские отчёты, оферты, письма, списки товаров, УКД, УПД, уведомления и так далее.\n<br><br>\nДля работы с документами получите списки:\n1. [Категорий документов](./financial-reports-and-accounting#tag/documents/operation/getV1DocumentsCategories)\n2. [Документов продавца](./financial-reports-and-accounting#tag/documents/operation/getV1DocumentsList), доступных для загрузки\n\nВы можете загрузить [один](./financial-reports-and-accounting#tag/documents/operation/getV1DocumentsDownload) или [несколько](./financial-reports-and-accounting#tag/documents/operation/postV1DocumentsDownloadAll) документов из полученного списка.\n",
+      "description": "<div class=\"description_auth\">\n  Для доступа к методам используйте <a href=\"./api-information#tag/authorization/Kak-sozdat-personalnyj-bazovyj-ili-testovyj-token\">токен</a> для категории <strong>Документы</strong>\n</div>\n\nС помощью этих методов вы можете получить [документы продавца](https://seller.wildberries.ru/supplementary-agreements) различных категорий: акты, бухгалтерские отчёты, оферты, письма, списки товаров, УКД, УПД, уведомления и так далее.\n<br><br>\nДля работы с документами получите списки:\n1. [Категорий документов](./documents-and-accounting#tag/documents/operation/getV1DocumentsCategories)\n2. [Документов продавца](./documents-and-accounting#tag/documents/operation/getV1DocumentsList), доступных для загрузки\n\nВы можете загрузить [один](./documents-and-accounting#tag/documents/operation/getV1DocumentsDownload) или [несколько](./documents-and-accounting#tag/documents/operation/postV1DocumentsDownloadAll) документов из полученного списка.\n",
       "name": "documents",
       "x-displayName": "Документы"
     }

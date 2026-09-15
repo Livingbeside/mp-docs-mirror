@@ -9,7 +9,7 @@ tags:
 spec_version: communication
 source: "https://dev.wildberries.ru/docs/openapi/customer-communication"
 deprecated: false
-content_sha: 610dec62c4a095b6
+content_sha: 584bbe7c38da021f
 ---
 
 # Ответить на отзыв
@@ -18,7 +18,7 @@ content_sha: 610dec62c4a095b6
 
 Описание метода
 
-Метод позволяет ответить на [отзыв](./user-communication#tag/feedbacks/operation/getV1Feedbacks) покупателя.
+Метод позволяет ответить на [отзыв](./customer-communication#tag/feedbacks/operation/getV1Feedbacks) покупателя.
 
  ID отзыва не валидируется. Если в запросе вы передали некорректный ID, вы не получите ошибку.
 

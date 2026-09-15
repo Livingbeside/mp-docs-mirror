@@ -9,7 +9,7 @@ tags:
 spec_version: dbs
 source: "https://dev.wildberries.ru/docs/openapi/dbs"
 deprecated: false
-content_sha: 4a8ebcb0e93c74fb
+content_sha: 523e7c3fcbab7da0
 ---
 
 # Сообщить об отказе от заказов
@@ -18,7 +18,7 @@ content_sha: 4a8ebcb0e93c74fb
 
 Описание метода
 
-Метод переводит [сборочные задания](./orders-dbs#tag/dbsAssemblyOrders) из [статуса](./orders-dbs#tag/dbsAssemblyOrders/operation/postV3DbsOrdersStatusInfo) `deliver` в статус `reject` — отказ покупателя при получении.
+Метод переводит [сборочные задания](./dbs#tag/dbsAssemblyOrders) из [статуса](./dbs#tag/dbsAssemblyOrders/operation/postV3DbsOrdersStatusInfo) `deliver` в статус `reject` — отказ покупателя при получении.
 
 Лимит запросов на один аккаунт продавца:
 

@@ -3,13 +3,13 @@ title: Список несозданных карточек товаров с о
 api: wb-item-management
 method: POST
 path: /content/v2/cards/error/list
-operation_id: post-content-v2-cards-error-list
+operation_id: postV2CardsErrorList
 tags:
   - listings
 spec_version: items
 source: "https://dev.wildberries.ru/docs/openapi/item-management"
 deprecated: false
-content_sha: c020b4decee83c3d
+content_sha: bd64fd4324aa538d
 ---
 
 # Список несозданных карточек товаров с ошибками
@@ -21,8 +21,8 @@ content_sha: c020b4decee83c3d
 Метод возвращает список карточек товаров ([черновиков](https://seller.wildberries.ru/new-goods/error-cards)), при создании или редактировании которых произошли ошибки, с описанием этих ошибок.
 
 Данные в ответе возвращаются пакетами `batch`. Один пакет содержит:
- - все ошибки по одному массиву `variants` одного запроса при [создании](./work-with-products#tag/listingItems/paths/~1content~1v2~1cards~1upload/post) карточек товаров
- - все ошибки одного запроса при [создании с присоединением](./work-with-products#tag/listingItems/paths/~1content~1v2~1cards~1upload~1add/post) или [редактировании](./work-with-products#tag/listings/paths/~1content~1v2~1cards~1update/post) карточек товаров
+ - все ошибки по одному массиву `variants` одного запроса при [создании](./item-management#tag/listingItems/operation/postV2CardsUpload) карточек товаров
+ - все ошибки одного запроса при [создании с присоединением](./item-management#tag/listingItems/operation/postV2CardsUploadAdd) или [редактировании](./item-management#tag/listings/operation/postV2CardsUpdate) карточек товаров
 
 Чтобы получить более 100 пакетов, используйте пагинацию:
  1. Сделайте первый запрос: 
@@ -44,9 +44,9 @@ content_sha: c020b4decee83c3d
 
 Лимит запросов на один аккаунт продавца для методов:
 
- [получения лимитов карточек товаров](./work-with-products#tag/listingItems/paths/~1content~1v2~1cards~1limits/get)
+ [получения лимитов карточек товаров](./item-management#tag/listingItems/operation/getV2CardsLimits)
 
- [получения несозданных карточек товаров с ошибками](./work-with-products#tag/listings/paths/~1content~1v2~1cards~1error~1list/post)
+ [получения несозданных карточек товаров с ошибками](./item-management#tag/listings/operation/postV2CardsErrorList)
 
 | Период | Лимит | Интервал | Всплеск |
 | --- | --- | --- | --- |

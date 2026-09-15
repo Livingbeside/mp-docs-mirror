@@ -5,7 +5,7 @@ tag: authorization
 group: ""
 kind: guide
 source: "https://dev.wildberries.ru/docs/openapi/api-information"
-content_sha: 44734e624e55281a
+content_sha: 51fc54d4ce4881a6
 ---
 
 # Авторизация
@@ -88,18 +88,18 @@ content_sha: 44734e624e55281a
 
 | Категория | Методы |
 |---------------|-----------------------|
-| Контент | [Категории, предметы и характеристики](./work-with-products#tag/categoriesSubcategoriesAndCharacteristics)<br>[Создание карточек товаров](./work-with-products#tag/listingItems)<br>[Карточки товаров](./work-with-products#tag/listings)<br>[Медиафайлы](./work-with-products#tag/mediaFiles)<br>[Ярлыки](./work-with-products#tag/labels)<br>[Рекомендации](./work-with-products#tag/recommendations) |
+| Контент | [Категории, предметы и характеристики](./item-management#tag/categoriesSubcategoriesAndCharacteristics)<br>[Создание карточек товаров](./item-management#tag/listingItems)<br>[Карточки товаров](./item-management#tag/listings)<br>[Медиафайлы](./item-management#tag/mediaFiles)<br>[Ярлыки](./item-management#tag/labels)<br>[Рекомендации](./item-management#tag/recommendations) |
 | Аналитика | [Аналитика и данные](./analytics)<br>[Отчёт об остатках на складах](./reports#tag/warehousesInventoryReport)<br>[Отчёт о товарах с обязательной маркировкой](./reports#tag/reportOnItemsWithMandatoryLabeling)<br>[Отчёты об удержаниях](./reports#tag/retentionReports)<br>[Операции при приёмке](./reports#tag/acceptanceExpenses)<br>[Платное хранение](./reports#tag/paidStorage)<br>[Продажи по регионам](./reports#tag/salesByRegions)<br>[Доля бренда в продажах](./reports#tag/shareOfBrandInSales)<br>[Заблокированные карточки](./reports#tag/blockedItems)<br>[Отчёт о возвратах и перемещении товаров](./reports#tag/returnsAndItemMovementReport) |
-| Цены и скидки | [Цены и скидки](./work-with-products#tag/Ceny-i-skidki)<br>[Календарь акций](./promotion#tag/promoCalendar) |
-| Маркетплейс | [Склады продавца](./work-with-products#tag/Sklady-prodavca)<br>[Остатки на складах продавца](./work-with-products#tag/Ostatki-na-skladah-prodavca)<br>[Заказы FBS](./orders-fbs)<br>[Заказы DBW](./orders-dbw)<br>[Заказы DBS](./orders-dbs)<br>[Заказы Самовывоз](./in-store-pickup) |
+| Цены и скидки | [Цены и скидки](./item-management#tag/pricesAndDiscounts)<br>[Календарь акций](./promotion#tag/promoCalendar) |
+| Маркетплейс | [Склады продавца](./item-management#tag/sellerWarehouses)<br>[Остатки на складах продавца](./item-management#tag/sellerWarehousesInventory)<br>[Заказы FBS](./orders-fbs)<br>[Заказы DBW](./orders-dbw)<br>[Заказы DBS](./orders-dbs)<br>[Заказы Самовывоз](./in-store-pickup) |
 | Статистика | [Основные отчёты](./reports#tag/mainReports) |
 | Продвижение | [Кампании](./promotion#tag/campaigns)<br>[Создание кампаний](./promotion#tag/creatingCampaigns)<br>[Управление кампаниями](./promotion#tag/campaignManagement)<br>[Поисковые кластеры](./promotion#tag/searchClusters)<br>[Финансы](./promotion#tag/finances)<br>[Медиа](./promotion#tag/media)<br>[Статистика](./promotion#tag/statistics) |
-| Вопросы и отзывы | [Вопросы](./user-communication#tag/questions)<br>[Отзывы](./user-communication#tag/feedbacks)<br>[Закреплённые отзывы](././user-communication#tag/pinnedFeedbacks) |
-| Чат с покупателями | [Чат с покупателями](./user-communication#tag/buyersChat) |
+| Вопросы и отзывы | [Вопросы](./customer-communication#tag/questions)<br>[Отзывы](./customer-communication#tag/feedbacks)<br>[Закреплённые отзывы](././customer-communication#tag/pinnedFeedbacks) |
+| Чат с покупателями | [Чат с покупателями](./customer-communication#tag/buyersChat) |
 | Поставки | [Поставки FBW](./orders-fbw#tag/Postavki-FBW) |
-| Возвраты | [Возвраты покупателями](./user-communication#tag/buyersReturns) |
-| Документы | [Документы](./financial-reports-and-accounting#tag/documents) |
-| Финансы | [Баланс](./financial-reports-and-accounting#tag/balance)<br>[Финансовые отчёты](./financial-reports-and-accounting#tag/financialReports) |
+| Возвраты | [Возвраты покупателями](./customer-communication#tag/buyersReturns) |
+| Документы | [Документы](./documents-and-accounting#tag/documents) |
+| Финансы | [Баланс](./documents-and-accounting#tag/balance)<br>[Финансовые отчёты](./documents-and-accounting#tag/financialReports) |
 | Пользователи | [Управление пользователями продавца](./api-information#tag/sellerUserManagement) |
 
 # Как устроен токен

@@ -2,8 +2,8 @@
 title: Получение файла со штрихкодами (FBY и LaaS)
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/reports/generateBarcodesReport.md"
-fetched_at: "2026-09-11T01:57:42Z"
-content_sha: 2c8656a723795783
+fetched_at: "2026-09-15T02:21:31Z"
+content_sha: bf81a29bb4b8994d
 ---
 
 ---
@@ -1066,7 +1066,7 @@ alternate:
           `supplyRequestId`, но не оба сразу.
         $ref: '#/$defs/SupplyRequestId'
     $defs:
-      /home/sandbox/.ya/build/build_root/givs/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/supply-requests/schemas.yaml#/SupplyRequestId:
+      /home/sandbox/.ya/build/build_root/4tup/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/supply-requests/schemas.yaml#/SupplyRequestId:
         type: integer
         format: int64
         minimum: 1

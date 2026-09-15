@@ -2,8 +2,8 @@
 title: Подготовка заказа
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/orders/setOrderBoxLayout.md"
-fetched_at: "2026-09-11T01:58:04Z"
-content_sha: 5db0a3fcbe376ee4
+fetched_at: "2026-09-15T02:21:51Z"
+content_sha: ac6e5106075e051e
 ---
 
 ---
@@ -1830,7 +1830,7 @@ alternate:
         type: boolean
         default: false
     $defs:
-      /home/sandbox/.ya/build/build_root/givs/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/orders/api/setOrderBoxLayout.yaml#/OrderBoxLayoutPartialCountDTO:
+      /home/sandbox/.ya/build/build_root/4tup/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/orders/api/setOrderBoxLayout.yaml#/OrderBoxLayoutPartialCountDTO:
         description: Информация о части товара в коробке.
         type: object
         required:

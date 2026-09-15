@@ -2,8 +2,8 @@
 title: Передача остатков для кабинетов с группами складов
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/stocks/updateStocks.md"
-fetched_at: "2026-09-11T01:57:52Z"
-content_sha: 77840e33cc596c3c
+fetched_at: "2026-09-15T02:21:41Z"
+content_sha: 9646e1942de8141d
 ---
 
 ---
@@ -1042,7 +1042,7 @@ alternate:
                     type: string
                     format: date-time
     $defs:
-      /home/sandbox/.ya/build/build_root/givs/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/common/schemas.yaml#/InternalOfferId:
+      /home/sandbox/.ya/build/build_root/4tup/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/common/schemas.yaml#/InternalOfferId:
         description: >-
           Внутренний идентификатор товара в системах Маркета. Нужен для создания
           товаров Лавки с отличными offerId и article.

@@ -3,13 +3,13 @@ title: Изменение ярлыка{{ /content/v2/tag/{id} }}
 api: wb-item-management
 method: PATCH
 path: /content/v2/tag/{id}
-operation_id: patch-content-v2-tag-id
+operation_id: patchV2TagId
 tags:
   - labels
 spec_version: items
 source: "https://dev.wildberries.ru/docs/openapi/item-management"
 deprecated: false
-content_sha: 8e3a07136c679bbe
+content_sha: ea906b8a6b36bd6e
 ---
 
 # Изменение ярлыка{{ /content/v2/tag/{id} }}
@@ -20,7 +20,7 @@ content_sha: 8e3a07136c679bbe
 
 Метод заменяет данные ярлыка: имя и цвет.
 
-Новые данные можно получить в общем [списке](./work-with-products#tag/labels/paths/~1content~1v2~1tags/get).
+Новые данные можно получить в общем [списке](./item-management#tag/labels/operation/getV2Tags).
 
 Лимит запросов на один аккаунт продавца для всех методов Ярлыков:
 

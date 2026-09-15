@@ -9,7 +9,7 @@ tags:
 spec_version: communication
 source: "https://dev.wildberries.ru/docs/openapi/customer-communication"
 deprecated: false
-content_sha: 2f9b879f17bec0dd
+content_sha: df49e62287115539
 ---
 
 # Работа с вопросами
@@ -19,7 +19,7 @@ content_sha: 2f9b879f17bec0dd
 Описание метода
 
 В зависимости от тела запроса, метод позволяет:
- - отметить [вопрос](./user-communication#tag/questions/operation/getV1Questions) как просмотренный
+ - отметить [вопрос](./customer-communication#tag/questions/operation/getV1Questions) как просмотренный
  - отклонить вопрос
  - ответить на вопрос или отредактировать ответ
 

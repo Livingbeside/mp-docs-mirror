@@ -9,7 +9,7 @@ tags:
 spec_version: dbs
 source: "https://dev.wildberries.ru/docs/openapi/dbs"
 deprecated: false
-content_sha: 283eb079387c8484
+content_sha: ba23990601fcfe4b
 ---
 
 # Получить цены продавца и суммы к оплате
@@ -43,7 +43,7 @@ content_sha: 283eb079387c8484
 - `requestId` — string **обязательный**. Уникальный ID запроса
 - `results` — array[object] **обязательный**
   - `orderId` — integer **обязательный**. ID сборочного задания
-  - `data` — object. Данные сборочного задания. Если `"data":{}`, данные формируются. Повторите запрос позднее. Максимальное время формирования данных около 1 минуты. Если `data` отсутствует, данных по сборочному заданию не предусмотрено. Используйте данные из ответов методов: - [Получить список новых сборочных заданий](/docs/openapi/orders-dbs#tag/dbsAssemblyOrders/operation/getV3DbsOrdersNew) - [Получить информацию о завершенных сборочных заданиях](/docs/openapi/orders-dbs#tag/dbsAssemblyOrders/operation/getV3DbsOrders)
+  - `data` — object. Данные сборочного задания. Если `"data":{}`, данные формируются. Повторите запрос позднее. Максимальное время формирования данных около 1 минуты. Если `data` отсутствует, данных по сборочному заданию не предусмотрено. Используйте данные из ответов методов: - [Получить список новых сборочных заданий](/docs/openapi/dbs#tag/dbsAssemblyOrders/operation/getV3DbsOrdersNew) - [Получить информацию о завершенных сборочных заданиях](/docs/openapi/dbs#tag/dbsAssemblyOrders/operation/getV3DbsOrders)
     - `originalPrice` — integer. Цена продавца в валюте продажи без учёта скидок, умноженная на 100. Предоставляется в информационных целях
     - `convertedOriginalPrice` — integer. Цена продавца в валюте страны продавца без учёта скидок, умноженная на 100. Предоставляется в информационных целях
     - `originalFinalPrice` — integer. Сумма к оплате покупателем в валюте продажи с учетом всех скидок и кэшбека, умноженная на 100. Код валюты продажи указан в поле `currencyCode`. Предоставляется в информационных целях

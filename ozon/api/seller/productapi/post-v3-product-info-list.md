@@ -9,7 +9,7 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: 833998e31743c35e
+content_sha: ab459e9d0f0959e9
 ---
 
 # Получить информацию о товарах по идентификаторам
@@ -86,14 +86,14 @@ content_sha: 833998e31743c35e
   - `is_kgt` — boolean. `true`, если товар крупногабаритный. Только для схемы FBS.
   - `is_prepayment_allowed` — boolean. `true`, если возможна предоплата.
   - `is_super` — boolean. Признак супер-товара. [Подробнее о супер-товарах в Базе знаний продавца](https://seller-edu.ozon.ru/fbo/rabota-so-stokom/super-tovary)
-  - `min_price` — string. Минимальная цена товара после применения акций.
+  - `min_price` — string. Нижний порог предельной цены товара. Действует при автоприменении акций, автодобавлении товара в акции и в стратегиях ценообразования. Покупатели не видят это значение.
   - `model_info` — object. Информация о модели товара.
     - `count` — integer<int64>. Количество товаров в ответе.
     - `model_id` — integer<int64>. Идентификатор модели товара.
   - `name` — string. Название.
   - `offer_id` — string. Идентификатор товара в системе продавца — артикул.
-  - `old_price` — string. Цена до учёта скидок. На карточке товара отображается зачёркнутой.
-  - `price` — string. Цена товара с учётом скидок — это значение показывается на карточке товара.
+  - `old_price` — string. Цена, которую покупатели видят зачёркнутой.
+  - `price` — string. Предельная цена товара без акций. Выше этого значения цену для покупателя не поднимем.
   - `price_indexes` — object. Ценовые индексы товара.
     - `color_index` — string (COLOR_INDEX_UNSPECIFIED, COLOR_INDEX_WITHOUT_INDEX, COLOR_INDEX_SUPER, COLOR_INDEX_GREEN, COLOR_INDEX_YELLOW, COLOR_INDEX_RED). Виды индекса цен: - `COLOR_INDEX_UNSPECIFIED` — не определён, - `COLOR_INDEX_WITHOUT_INDEX` — отсутствует, - `COLOR_INDEX_SUPER` — супервыгодный, - `COLOR_INDEX_GREEN` — выгодный, - `COLOR_INDEX_YELLOW` — умеренный, - `COLOR_INDEX_RED` — невыгодный. [Подробнее об индексе цен в Базе знаний продавца](https://seller-edu.ozon.ru/ceny-i-akcii/rabota-s-cenami/price-index) По умолчанию: `COLOR_INDEX_UNSPECIFIED`.
     - `external_index_data` — object. Цена товара у конкурентов на других площадках.

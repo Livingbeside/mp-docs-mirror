@@ -9,7 +9,7 @@ tags:
 spec_version: communication
 source: "https://dev.wildberries.ru/docs/openapi/customer-communication"
 deprecated: false
-content_sha: caba8ddc7f311feb
+content_sha: 8c848fc33aa61909
 ---
 
 # Список чатов
@@ -18,7 +18,7 @@ content_sha: caba8ddc7f311feb
 
 Описание метода
 
-Метод возвращает список всех чатов продавца. По этим данным можно получить [события чатов](./user-communication#tag/buyersChat/operation/getV1SellerEvents) или [отправить сообщение покупателю](./user-communication#tag/buyersChat/operation/postV1SellerMessage).
+Метод возвращает список всех чатов продавца. По этим данным можно получить [события чатов](./customer-communication#tag/buyersChat/operation/getV1SellerEvents) или [отправить сообщение покупателю](./customer-communication#tag/buyersChat/operation/postV1SellerMessage).
 
 Лимит запросов на один аккаунт продавца:
 
@@ -35,14 +35,14 @@ content_sha: caba8ddc7f311feb
 
 - `result` — array[object]
   - `chatID` — string. ID чата
-  - `replySign` — string. Подпись чата. Требуется при [отправке сообщения](./user-communication#tag/buyersChat/operation/postV1SellerMessage)
+  - `replySign` — string. Подпись чата. Требуется при [отправке сообщения](./customer-communication#tag/buyersChat/operation/postV1SellerMessage)
   - `clientName` — string. Имя покупателя
   - `goodCard` — object. Информация о заказе
     - `nmID` — integer. Артикул WB
     - `price` — integer. Фактическая цена с учетом всех скидок. Взимается с покупателя
     - `priceCurrency` — string. Валюта
-    - `rid` — string. Уникальный ID заказа. Примечание: `rid` — это `srid` в ответах методов: - [Заявки покупателей на возврат](./user-communication#tag/buyersReturns/operation/getV1Claims) - [Лента заказов](./analytics#tag/orderFeed/operation/postV1OrderFeed) - [Заказы](./reports#tag/mainReports/operation/getV1SupplierOrders) - [Продажи](./reports#tag/mainReports/operation/getV1SupplierSales) - [Отчёт о возвратах и перемещении товаров](./reports#tag/returnsAndItemMovementReport) - [Детализации к отчётам реализации по ID отчётов](./financial-reports-and-accounting#tag/financialReports/operation/postV1SalesReportsDetailedReportId) - [Детализации к отчётам реализации за период](./financial-reports-and-accounting#tag/financialReports/operation/postV1SalesReportsDetailed) - [Детализации к отчётам об издержках на приём платежей по ID отчётов](./financial-reports-and-accounting#tag/financialReports/operation/postV1AcquiringDetailedReportId) - [Детализации к отчётам об издержках на приём платежей за период](./financial-reports-and-accounting#tag/financialReports/operation/postV1AcquiringDetailed)
-    - `size` — string. Размер товара, соответствует `wbSize` в [карточке товара](./work-with-products#tag/listings/paths/~1content~1v2~1get~1cards~1list/post)
+    - `rid` — string. Уникальный ID заказа. Примечание: `rid` — это `srid` в ответах методов: - [Заявки покупателей на возврат](./customer-communication#tag/buyersReturns/operation/getV1Claims) - [Лента заказов](./analytics#tag/orderFeed/operation/postV1OrderFeed) - [Заказы](./reports#tag/mainReports/operation/getV1SupplierOrders) - [Продажи](./reports#tag/mainReports/operation/getV1SupplierSales) - [Отчёт о возвратах и перемещении товаров](./reports#tag/returnsAndItemMovementReport) - [Детализации к отчётам реализации по ID отчётов](./documents-and-accounting#tag/financialReports/operation/postV1SalesReportsDetailedReportId) - [Детализации к отчётам реализации за период](./documents-and-accounting#tag/financialReports/operation/postV1SalesReportsDetailed) - [Детализации к отчётам об издержках на приём платежей по ID отчётов](./documents-and-accounting#tag/financialReports/operation/postV1AcquiringDetailedReportId) - [Детализации к отчётам об издержках на приём платежей за период](./documents-and-accounting#tag/financialReports/operation/postV1AcquiringDetailed)
+    - `size` — string. Размер товара, соответствует `wbSize` в [карточке товара](./item-management#tag/listings/operation/postV2GetCardsList)
   - `lastMessage` — object. Последнее сообщение в чате
     - `text` — string. Текст сообщения
     - `addTimestamp` — integer. Время сообщения

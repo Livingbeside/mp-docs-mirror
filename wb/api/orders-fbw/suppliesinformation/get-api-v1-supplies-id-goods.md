@@ -9,7 +9,7 @@ tags:
 spec_version: ordersfbw
 source: "https://dev.wildberries.ru/docs/openapi/orders-fbw"
 deprecated: false
-content_sha: 9349eca661d41726
+content_sha: 154e4233effea255
 ---
 
 # Товары поставки{{ /api/v1/supplies/{ID}/goods }}
@@ -46,7 +46,7 @@ content_sha: 9349eca661d41726
 - `vendorCode` — string. Артикул продавца
 - `nmID` — integer. Артикул WB
 - `needKiz` — boolean. Нужен ли [код маркировки Честного знака](https://честныйзнак.рф/) для этого товара: - `false` — не нужен - `true` — нужен
-- `tnved` — string. Код ТНВЭД. Если `"needKiz":true`, а `"tnved":null`, нужно заполнить характеристику товара **ТН ВЭД** в [личном кабинете](https://seller.wildberries.ru/new-goods) или по [API](./work-with-products#tag/listings/paths/~1content~1v2~1cards~1update/post)
+- `tnved` — string. Код ТНВЭД. Если `"needKiz":true`, а `"tnved":null`, нужно заполнить характеристику товара **ТН ВЭД** в [личном кабинете](https://seller.wildberries.ru/new-goods) или по [API](./item-management#tag/listings/operation/postV2CardsUpdate)
 - `techSize` — string. Размер товара, указанный продавцом
 - `color` — string. Цвет товара
 - `supplierBoxAmount` — integer. Указано в упаковке, шт

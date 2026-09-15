@@ -9,7 +9,7 @@ tags:
 spec_version: communication
 source: "https://dev.wildberries.ru/docs/openapi/customer-communication"
 deprecated: false
-content_sha: 485d0a836086f36c
+content_sha: 834c068e8e78f67d
 ---
 
 # Возврат товара по ID отзыва
@@ -18,7 +18,7 @@ content_sha: 485d0a836086f36c
 
 Описание метода
 
-Метод запрашивает возврат товара, по которому оставлен [отзыв](./user-communication#tag/feedbacks/operation/getV1Feedbacks).
+Метод запрашивает возврат товара, по которому оставлен [отзыв](./customer-communication#tag/feedbacks/operation/getV1Feedbacks).
 
 Возврат доступен для отзывов с полем `"isAbleReturnProductOrders": true`.
 

@@ -9,7 +9,7 @@ tags:
 spec_version: communication
 source: "https://dev.wildberries.ru/docs/openapi/customer-communication"
 deprecated: false
-content_sha: 099a53ad4ddd10e4
+content_sha: b6329fc871794c29
 ---
 
 # Отредактировать ответ на отзыв
@@ -18,7 +18,7 @@ content_sha: 099a53ad4ddd10e4
 
 Описание метода
 
-Метод позволяет отредактировать уже отправленный [ответ на отзыв](./user-communication#tag/feedbacks/operation/postV1FeedbacksAnswer) покупателя.
+Метод позволяет отредактировать уже отправленный [ответ на отзыв](./customer-communication#tag/feedbacks/operation/postV1FeedbacksAnswer) покупателя.
 
 Отредактировать ответ можно только один раз в течение 60 дней c момента отправки.
 

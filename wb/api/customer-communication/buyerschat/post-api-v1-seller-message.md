@@ -9,7 +9,7 @@ tags:
 spec_version: communication
 source: "https://dev.wildberries.ru/docs/openapi/customer-communication"
 deprecated: false
-content_sha: eb7bdc6bc97cb9f7
+content_sha: e1d673de8d94809a
 ---
 
 # Отправить сообщение
@@ -18,7 +18,7 @@ content_sha: eb7bdc6bc97cb9f7
 
 Описание метода
 
-Метод отправляет сообщения в [чат с покупателем](./user-communication#tag/buyersChat/operation/getV1SellerChats).
+Метод отправляет сообщения в [чат с покупателем](./customer-communication#tag/buyersChat/operation/getV1SellerChats).
 
 Лимит запросов на один аккаунт продавца:
 
@@ -33,7 +33,7 @@ content_sha: eb7bdc6bc97cb9f7
 
 **Тело запроса** (`multipart/form-data`):
 
-- `replySign` — string **обязательный**. Подпись чата. Можно получить из [информации по чату](./user-communication#tag/buyersChat/operation/getV1SellerChats) или [данных события](./user-communication#tag/buyersChat/operation/getV1SellerEvents), если в событии есть поле `"isNewChat": true`.
+- `replySign` — string **обязательный**. Подпись чата. Можно получить из [информации по чату](./customer-communication#tag/buyersChat/operation/getV1SellerChats) или [данных события](./customer-communication#tag/buyersChat/operation/getV1SellerEvents), если в событии есть поле `"isNewChat": true`.
 - `message` — string. Текст сообщения. Максимум 1000 символов.
 - `file` — array[string<binary>]. Файлы, формат JPEG, PDF или PNG, максимальный размер — 5 Мб каждый. Максимальный суммарный размер файлов — 30 Мб.
 

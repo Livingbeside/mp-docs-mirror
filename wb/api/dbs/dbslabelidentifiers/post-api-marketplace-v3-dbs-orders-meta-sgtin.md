@@ -9,7 +9,7 @@ tags:
 spec_version: dbs
 source: "https://dev.wildberries.ru/docs/openapi/dbs"
 deprecated: false
-content_sha: 587dc96a2175c9a1
+content_sha: 10380d1d48702edb
 ---
 
 # Закрепить коды маркировки Честного знака за сборочными заданиями
@@ -18,11 +18,11 @@ content_sha: 587dc96a2175c9a1
 
 Описание метода
 
-Метод обновляет код маркировки [Честного знака](https://честныйзнак.рф/) в [идентификаторах маркировки сборочных заданий](./orders-dbs#tag/dbsLabelIdentifiers/operation/postV3DbsOrdersMetaDetails).
+Метод обновляет код маркировки [Честного знака](https://честныйзнак.рф/) в [идентификаторах маркировки сборочных заданий](./dbs#tag/dbsLabelIdentifiers/operation/postV3DbsOrdersMetaDetails).
 
-Закрепить код маркировки можно только за сборочным заданием в [статусе](./orders-dbs#tag/dbsAssemblyOrders/operation/postV3DbsOrdersStatusInfo) `confirm` и если в [идентификаторах маркировки сборочного задания](./orders-dbs#tag/dbsLabelIdentifiers/operation/postV3DbsOrdersMetaDetails) есть поле `sgtin`.
+Закрепить код маркировки можно только за сборочным заданием в [статусе](./dbs#tag/dbsAssemblyOrders/operation/postV3DbsOrdersStatusInfo) `confirm` и если в [идентификаторах маркировки сборочного задания](./dbs#tag/dbsLabelIdentifiers/operation/postV3DbsOrdersMetaDetails) есть поле `sgtin`.
 
-Получить загруженные маркировки можно в [идентификаторах маркировки сборочного задания](./orders-dbs#tag/dbsLabelIdentifiers/operation/postV3DbsOrdersMetaDetails).
+Получить загруженные маркировки можно в [идентификаторах маркировки сборочного задания](./dbs#tag/dbsLabelIdentifiers/operation/postV3DbsOrdersMetaDetails).
 
 Лимит запросов на один аккаунт продавца для всех методов закрепления идентификаторов маркировки DBS:
 

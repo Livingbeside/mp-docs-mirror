@@ -2,8 +2,8 @@
 title: Отчет по платежам
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/reports/generateUnitedNettingReport.md"
-fetched_at: "2026-09-11T01:58:46Z"
-content_sha: 94bfffe16554d22e
+fetched_at: "2026-09-15T02:22:36Z"
+content_sha: c120d012ebf4cf82
 ---
 
 ---
@@ -1448,14 +1448,14 @@ alternate:
       required: false
       schema:
         $ref: >-
-          /home/sandbox/.ya/build/build_root/givs/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/reports/schemas.yaml#/ReportFormatType
+          /home/sandbox/.ya/build/build_root/4tup/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/reports/schemas.yaml#/ReportFormatType
     - description: Язык отчета или документа.
       name: language
       in: query
       required: false
       schema:
         $ref: >-
-          /home/sandbox/.ya/build/build_root/givs/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/reports/schemas.yaml#/ReportLanguageType
+          /home/sandbox/.ya/build/build_root/4tup/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/reports/schemas.yaml#/ReportLanguageType
   headers: []
   body: |-
     {

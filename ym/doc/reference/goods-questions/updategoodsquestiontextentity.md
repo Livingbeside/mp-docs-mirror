@@ -2,8 +2,8 @@
 title: Создание, изменение и удаление ответа или комментария
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/goods-questions/updateGoodsQuestionTextEntity.md"
-fetched_at: "2026-09-11T01:58:57Z"
-content_sha: d6bd12cd4f995058
+fetched_at: "2026-09-15T02:22:46Z"
+content_sha: 015b243558f0b487
 ---
 
 ---
@@ -1075,7 +1075,7 @@ alternate:
           - CREATE
           - DELETE
     $defs:
-      /home/sandbox/.ya/build/build_root/givs/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/goods-questions/api/updateGoodsQuestionTextEntity.yaml#/QuestionsTextEntityType:
+      /home/sandbox/.ya/build/build_root/4tup/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/goods-questions/api/updateGoodsQuestionTextEntity.yaml#/QuestionsTextEntityType:
         description: |
           Тип сущности:
   
@@ -1087,7 +1087,7 @@ alternate:
           - QUESTION
           - ANSWER
           - COMMENT
-      /home/sandbox/.ya/build/build_root/givs/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/goods-questions/api/updateGoodsQuestionTextEntity.yaml#/TypedQuestionsTextEntityIdDTO:
+      /home/sandbox/.ya/build/build_root/4tup/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/goods-questions/api/updateGoodsQuestionTextEntity.yaml#/TypedQuestionsTextEntityIdDTO:
         type: object
         description: |
           Идентификатор вопроса, ответа или комментария.
@@ -1103,7 +1103,7 @@ alternate:
           type:
             description: Тип сущности (вопрос, ответ или комментарий).
             $ref: '#/$defs/QuestionsTextEntityType'
-      /home/sandbox/.ya/build/build_root/givs/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/goods-questions/schemas.yaml#/QuestionsTextContent:
+      /home/sandbox/.ya/build/build_root/4tup/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/goods-questions/schemas.yaml#/QuestionsTextContent:
         description: |
           Текстовое содержимое.
         type: string

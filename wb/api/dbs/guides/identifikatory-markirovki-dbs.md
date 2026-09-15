@@ -5,7 +5,7 @@ tag: dbsLabelIdentifiers
 group: ""
 kind: guide
 source: "https://dev.wildberries.ru/docs/openapi/dbs"
-content_sha: bfef86a6beb7aa01
+content_sha: f3e33dfad7a197f2
 ---
 
 # Идентификаторы маркировки DBS
@@ -16,11 +16,11 @@ content_sha: bfef86a6beb7aa01
 
  Узнать больше об идентификаторах маркировки можно в [справочном центре](https://seller.wildberries.ru/instructions/material/A-305?goBackOption=prevRoute&categoryId=6d85301c-719b-4145-9275-2ac8b793f345)
 
-С помощью этих методов вы можете [получать](./orders-dbs#tag/dbsLabelIdentifiers/operation/postV3DbsOrdersMetaDetails), [удалять](./orders-dbs#tag/dbsLabelIdentifiers/operation/postV3DbsOrdersMetaDelete) и редактировать идентификаторы маркировки [сборочных заданий](./orders-dbs#tag/dbsAssemblyOrders):
- - [Код маркировки Честного знака](./orders-dbs#tag/dbsLabelIdentifiers/operation/postV3DbsOrdersMetaSgtin)
- - [УИН](./orders-dbs#tag/dbsLabelIdentifiers/operation/postV3DbsOrdersMetaUin)
- - [IMEI](./orders-dbs#tag/dbsLabelIdentifiers/operation/postV3DbsOrdersMetaImei)
- - [GTIN](./orders-dbs#tag/dbsLabelIdentifiers/operation/postV3DbsOrdersMetaGtin)
- - [Номера ДТ и коды стран происхождения товара](./orders-dbs#tag/dbsLabelIdentifiers/operation/postV3DbsOrdersMetaCustomsDeclaration)
+С помощью этих методов вы можете [получать](./dbs#tag/dbsLabelIdentifiers/operation/postV3DbsOrdersMetaDetails), [удалять](./dbs#tag/dbsLabelIdentifiers/operation/postV3DbsOrdersMetaDelete) и редактировать идентификаторы маркировки [сборочных заданий](./dbs#tag/dbsAssemblyOrders):
+ - [Код маркировки Честного знака](./dbs#tag/dbsLabelIdentifiers/operation/postV3DbsOrdersMetaSgtin)
+ - [УИН](./dbs#tag/dbsLabelIdentifiers/operation/postV3DbsOrdersMetaUin)
+ - [IMEI](./dbs#tag/dbsLabelIdentifiers/operation/postV3DbsOrdersMetaImei)
+ - [GTIN](./dbs#tag/dbsLabelIdentifiers/operation/postV3DbsOrdersMetaGtin)
+ - [Номера ДТ и коды стран происхождения товара](./dbs#tag/dbsLabelIdentifiers/operation/postV3DbsOrdersMetaCustomsDeclaration)
 
 Заполнять идентификаторы маркировки сборочных заданий в песочнице необязательно

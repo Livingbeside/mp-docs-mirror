@@ -5,7 +5,7 @@ tag: returnCostToSeller
 group: ""
 kind: guide
 source: "https://dev.wildberries.ru/docs/openapi/rates"
-content_sha: ca9c63dee192a478
+content_sha: 5280943e0f55d129
 ---
 
 # Стоимость возврата продавцу
@@ -14,4 +14,4 @@ content_sha: ca9c63dee192a478
 
  Узнать больше о возвратах продавцу можно в [справочном центре](https://seller.wildberries.ru/instructions/ru/ru/material/item-returns-to-seller-from-wb-warehouse)
 
-Метод получения [тарифов на возврат](./wb-tariffs#tag/returnCostToSeller/operation/getV1TariffsReturn).
+Метод получения [тарифов на возврат](./rates#tag/returnCostToSeller/operation/getV1TariffsReturn).

@@ -2,8 +2,8 @@
 title: Отчет по остаткам на складах партнера
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/reports/generateStocksReport.md"
-fetched_at: "2026-09-11T01:58:42Z"
-content_sha: c6ef2a543800f27b
+fetched_at: "2026-09-15T02:22:32Z"
+content_sha: 247ef09c15465f38
 ---
 
 ---
@@ -949,7 +949,7 @@ alternate:
       required: false
       schema:
         $ref: >-
-          /home/sandbox/.ya/build/build_root/givs/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/reports/schemas.yaml#/ReportFormatType
+          /home/sandbox/.ya/build/build_root/4tup/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/reports/schemas.yaml#/ReportFormatType
   headers: []
   body: |-
     {

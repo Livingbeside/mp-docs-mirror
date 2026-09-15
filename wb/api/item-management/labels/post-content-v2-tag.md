@@ -3,13 +3,13 @@ title: Создание ярлыка
 api: wb-item-management
 method: POST
 path: /content/v2/tag
-operation_id: post-content-v2-tag
+operation_id: postV2Tag
 tags:
   - labels
 spec_version: items
 source: "https://dev.wildberries.ru/docs/openapi/item-management"
 deprecated: false
-content_sha: 6ba3d1aad1455992
+content_sha: af2eef4edce49208
 ---
 
 # Создание ярлыка
@@ -20,7 +20,7 @@ content_sha: 6ba3d1aad1455992
 
 Метод добавляет один ярлык продавца. Можно создать максимум 15 ярлыков для одного продавца. Максимальная длина ярлыка — 15 символов.
 
-Созданный ярлык можно получить в общем [списке](./work-with-products#tag/labels/paths/~1content~1v2~1tags/get).
+Созданный ярлык можно получить в общем [списке](./item-management#tag/labels/operation/getV2Tags).
 
 Лимит запросов на один аккаунт продавца для всех методов Ярлыков:
 

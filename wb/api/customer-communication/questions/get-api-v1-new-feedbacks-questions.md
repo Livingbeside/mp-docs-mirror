@@ -9,7 +9,7 @@ tags:
 spec_version: communication
 source: "https://dev.wildberries.ru/docs/openapi/customer-communication"
 deprecated: false
-content_sha: 05b14adc5987e789
+content_sha: 000ed870da80b990
 ---
 
 # Непросмотренные отзывы и вопросы
@@ -18,7 +18,7 @@ content_sha: 05b14adc5987e789
 
 Описание метода
 
-Метод проверяет наличие непросмотренных [вопросов](./user-communication#tag/questions/operation/getV1Questions) и [отзывов](./user-communication#tag/feedbacks/operation/getV1Feedbacks) от покупателей. Если у продавца есть непросмотренные вопросы или отзывы, возвращает `true`.
+Метод проверяет наличие непросмотренных [вопросов](./customer-communication#tag/questions/operation/getV1Questions) и [отзывов](./customer-communication#tag/feedbacks/operation/getV1Feedbacks) от покупателей. Если у продавца есть непросмотренные вопросы или отзывы, возвращает `true`.
 
 Лимит запросов на один аккаунт продавца для всех методов категории Вопросы и отзывы:
 

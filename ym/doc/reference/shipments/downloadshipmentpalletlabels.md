@@ -2,8 +2,8 @@
 title: Ярлыки для доверительной приемки (FBS)
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/shipments/downloadShipmentPalletLabels.md"
-fetched_at: "2026-09-11T01:58:25Z"
-content_sha: 2a62b888cdca3110
+fetched_at: "2026-09-15T02:22:12Z"
+content_sha: 266aa2cb255b66bc
 ---
 
 ---
@@ -728,7 +728,7 @@ alternate:
       required: false
       schema:
         $ref: >-
-          /home/sandbox/.ya/build/build_root/givs/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/shipments/schemas.yaml#/ShipmentPalletLabelPageFormatType
+          /home/sandbox/.ya/build/build_root/4tup/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/shipments/schemas.yaml#/ShipmentPalletLabelPageFormatType
       description: |
         Формат страниц PDF-файла с ярлыками:
   

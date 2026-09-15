@@ -4,19 +4,19 @@ api: wb-item-management
 spec_version: items
 operations: 52
 source: "https://dev.wildberries.ru/docs/openapi/item-management"
-content_sha: 44c4799577995b5a
+content_sha: e9d694d38c49fcd3
 ---
 
 # Работа с товарами
 
 С помощью методов этого раздела вы можете:
- - [создавать](./work-with-products#tag/listingItems) и [редактировать](./work-with-products#tag/listings) карточки товаров
- - получать [категории, предметы, характеристики и бренды товаров](./work-with-products#tag/categoriesSubcategoriesAndCharacteristics)
- - загружать [медиафайлы](./work-with-products#tag/mediaFiles) в карточки товаров
- - настраивать [ярлыки](./work-with-products#tag/labels) для поиска товаров
- - работать с [рекомендациями](./work-with-products#tag/recommendations) для товаров
- - устанавливать [цены и скидки](./work-with-products#tag/Ceny-i-skidki)
- - управлять [остатками товаров](./work-with-products#tag/Ostatki-na-skladah-prodavca) и [складами](./work-with-products#tag/Sklady-prodavca), если вы работаете по модели продаж со склада продавца
+ - [создавать](./item-management#tag/listingItems) и [редактировать](./item-management#tag/listings) карточки товаров
+ - получать [категории, предметы, характеристики и бренды товаров](./item-management#tag/categoriesSubcategoriesAndCharacteristics)
+ - загружать [медиафайлы](./item-management#tag/mediaFiles) в карточки товаров
+ - настраивать [ярлыки](./item-management#tag/labels) для поиска товаров
+ - работать с [рекомендациями](./item-management#tag/recommendations) для товаров
+ - устанавливать [цены и скидки](./item-management#tag/pricesAndDiscounts)
+ - управлять [остатками товаров](./item-management#tag/sellerWarehousesInventory) и [складами](./item-management#tag/sellerWarehouses), если вы работаете по модели продаж со склада продавца
 
 Вы можете протестировать методы работы с товарами в [песочнице](/sandbox). Также в песочнице доступны [специальные методы](/docs/openapi-other/sandbox-environment#tag/Rabota-s-tovarami) для управления карточками товаров
 
@@ -28,20 +28,20 @@ content_sha: 44c4799577995b5a
 
 | Метод | Путь | Раздел | Описание |
 |---|---|---|---|
-| `DELETE` | `/api/v3/stocks/{warehouseId}` | Остатки на складах продавца | [Удалить остатки товаров{{ /api/v3/stocks/{warehouseId} }}](ostatki-na-skladah-prodavca/delete-api-v3-stocks-warehouseid.md) |
-| `DELETE` | `/api/v3/warehouses/{warehouseId}` | Склады продавца | [Удалить склад продавца{{ /api/v3/warehouses/{warehouseId} }}](sklady-prodavca/delete-api-v3-warehouses-warehouseid.md) |
+| `DELETE` | `/api/v3/stocks/{warehouseId}` | sellerWarehousesInventory | [Удалить остатки товаров{{ /api/v3/stocks/{warehouseId} }}](sellerwarehousesinventory/delete-api-v3-stocks-warehouseid.md) |
+| `DELETE` | `/api/v3/warehouses/{warehouseId}` | sellerWarehouses | [Удалить склад продавца{{ /api/v3/warehouses/{warehouseId} }}](sellerwarehouses/delete-api-v3-warehouses-warehouseid.md) |
 | `DELETE` | `/content/v2/tag/{id}` | labels | [Удаление ярлыка{{ /content/v2/tag/{id} }}](labels/delete-content-v2-tag-id.md) |
 | `GET` | `/api/content/v1/brands` | categoriesSubcategoriesAndCharacteristics | [Бренды](categoriessubcategoriesandcharacteristics/get-api-content-v1-brands.md) |
-| `GET` | `/api/v2/buffer/goods/task` | Цены и скидки | [Детализация необработанной загрузки](ceny-i-skidki/get-api-v2-buffer-goods-task.md) |
-| `GET` | `/api/v2/buffer/tasks` | Цены и скидки | [Состояние необработанной загрузки](ceny-i-skidki/get-api-v2-buffer-tasks.md) |
-| `GET` | `/api/v2/history/goods/task` | Цены и скидки | [Детализация обработанной загрузки](ceny-i-skidki/get-api-v2-history-goods-task.md) |
-| `GET` | `/api/v2/history/tasks` | Цены и скидки | [Состояние обработанной загрузки](ceny-i-skidki/get-api-v2-history-tasks.md) |
-| `GET` | `/api/v2/list/goods/filter` | Цены и скидки | [Получить товары с ценами](ceny-i-skidki/get-api-v2-list-goods-filter.md) |
-| `GET` | `/api/v2/list/goods/size/nm` | Цены и скидки | [Получить размеры товара с ценами](ceny-i-skidki/get-api-v2-list-goods-size-nm.md) |
-| `GET` | `/api/v2/quarantine/goods` | Цены и скидки | [Получить товары в карантине](ceny-i-skidki/get-api-v2-quarantine-goods.md) |
-| `GET` | `/api/v3/dbw/warehouses/{warehouseId}/contacts` | Склады продавца | [Список контактов{{ /api/v3/dbw/warehouses/{warehouseId}/contacts }}](sklady-prodavca/get-api-v3-dbw-warehouses-warehouseid-contacts.md) |
-| `GET` | `/api/v3/offices` | Склады продавца | [Получить список складов WB](sklady-prodavca/get-api-v3-offices.md) |
-| `GET` | `/api/v3/warehouses` | Склады продавца | [Получить список складов продавца](sklady-prodavca/get-api-v3-warehouses.md) |
+| `GET` | `/api/v2/buffer/goods/task` | pricesAndDiscounts | [Детализация необработанной загрузки](pricesanddiscounts/get-api-v2-buffer-goods-task.md) |
+| `GET` | `/api/v2/buffer/tasks` | pricesAndDiscounts | [Состояние необработанной загрузки](pricesanddiscounts/get-api-v2-buffer-tasks.md) |
+| `GET` | `/api/v2/history/goods/task` | pricesAndDiscounts | [Детализация обработанной загрузки](pricesanddiscounts/get-api-v2-history-goods-task.md) |
+| `GET` | `/api/v2/history/tasks` | pricesAndDiscounts | [Состояние обработанной загрузки](pricesanddiscounts/get-api-v2-history-tasks.md) |
+| `GET` | `/api/v2/list/goods/filter` | pricesAndDiscounts | [Получить товары с ценами](pricesanddiscounts/get-api-v2-list-goods-filter.md) |
+| `GET` | `/api/v2/list/goods/size/nm` | pricesAndDiscounts | [Получить размеры товара с ценами](pricesanddiscounts/get-api-v2-list-goods-size-nm.md) |
+| `GET` | `/api/v2/quarantine/goods` | pricesAndDiscounts | [Получить товары в карантине](pricesanddiscounts/get-api-v2-quarantine-goods.md) |
+| `GET` | `/api/v3/dbw/warehouses/{warehouseId}/contacts` | sellerWarehouses | [Список контактов{{ /api/v3/dbw/warehouses/{warehouseId}/contacts }}](sellerwarehouses/get-api-v3-dbw-warehouses-warehouseid-contacts.md) |
+| `GET` | `/api/v3/offices` | sellerWarehouses | [Получить список складов WB](sellerwarehouses/get-api-v3-offices.md) |
+| `GET` | `/api/v3/warehouses` | sellerWarehouses | [Получить список складов продавца](sellerwarehouses/get-api-v3-warehouses.md) |
 | `GET` | `/content/v2/cards/limits` | listingItems | [Лимиты карточек товаров](listingitems/get-content-v2-cards-limits.md) |
 | `GET` | `/content/v2/directory/colors` | categoriesSubcategoriesAndCharacteristics | [Цвет](categoriessubcategoriesandcharacteristics/get-content-v2-directory-colors.md) |
 | `GET` | `/content/v2/directory/countries` | categoriesSubcategoriesAndCharacteristics | [Страна производства](categoriessubcategoriesandcharacteristics/get-content-v2-directory-countries.md) |
@@ -56,13 +56,13 @@ content_sha: 44c4799577995b5a
 | `PATCH` | `/content/v2/tag/{id}` | labels | [Изменение ярлыка{{ /content/v2/tag/{id} }}](labels/patch-content-v2-tag-id.md) |
 | `POST` | `/api/content/v1/recommendations/list` | recommendations | [Список рекомендаций в карточках товаров](recommendations/post-api-content-v1-recommendations-list.md) |
 | `POST` | `/api/content/v1/recommendations/set` | recommendations | [Установить рекомендации для товаров](recommendations/post-api-content-v1-recommendations-set.md) |
-| `POST` | `/api/discounts-prices/v1/upload/task/b2b/wholesale` | Цены и скидки | [Установить оптовые скидки для B2B-продаж](ceny-i-skidki/post-api-discounts-prices-v1-upload-task-b2b-wholesale.md) |
-| `POST` | `/api/v2/list/goods/filter` | Цены и скидки | [Получить товары с ценами по артикулам](ceny-i-skidki/post-api-v2-list-goods-filter.md) |
-| `POST` | `/api/v2/upload/task/club-discount` | Цены и скидки | [Установить скидки WB Клуба](ceny-i-skidki/post-api-v2-upload-task-club-discount.md) |
-| `POST` | `/api/v2/upload/task/size` | Цены и скидки | [Установить цены для размеров](ceny-i-skidki/post-api-v2-upload-task-size.md) |
-| `POST` | `/api/v2/upload/task` | Цены и скидки | [Установить цены и скидки](ceny-i-skidki/post-api-v2-upload-task.md) |
-| `POST` | `/api/v3/stocks/{warehouseId}` | Остатки на складах продавца | [Получить остатки товаров{{ /api/v3/stocks/{warehouseId} }}](ostatki-na-skladah-prodavca/post-api-v3-stocks-warehouseid.md) |
-| `POST` | `/api/v3/warehouses` | Склады продавца | [Создать склад продавца](sklady-prodavca/post-api-v3-warehouses.md) |
+| `POST` | `/api/discounts-prices/v1/upload/task/b2b/wholesale` | pricesAndDiscounts | [Установить оптовые скидки для B2B-продаж](pricesanddiscounts/post-api-discounts-prices-v1-upload-task-b2b-wholesale.md) |
+| `POST` | `/api/v2/list/goods/filter` | pricesAndDiscounts | [Получить товары с ценами по артикулам](pricesanddiscounts/post-api-v2-list-goods-filter.md) |
+| `POST` | `/api/v2/upload/task/club-discount` | pricesAndDiscounts | [Установить скидки WB Клуба](pricesanddiscounts/post-api-v2-upload-task-club-discount.md) |
+| `POST` | `/api/v2/upload/task/size` | pricesAndDiscounts | [Установить цены для размеров](pricesanddiscounts/post-api-v2-upload-task-size.md) |
+| `POST` | `/api/v2/upload/task` | pricesAndDiscounts | [Установить цены и скидки](pricesanddiscounts/post-api-v2-upload-task.md) |
+| `POST` | `/api/v3/stocks/{warehouseId}` | sellerWarehousesInventory | [Получить остатки товаров{{ /api/v3/stocks/{warehouseId} }}](sellerwarehousesinventory/post-api-v3-stocks-warehouseid.md) |
+| `POST` | `/api/v3/warehouses` | sellerWarehouses | [Создать склад продавца](sellerwarehouses/post-api-v3-warehouses.md) |
 | `POST` | `/content/v2/barcodes` | listingItems | [Генерация баркодов](listingitems/post-content-v2-barcodes.md) |
 | `POST` | `/content/v2/cards/delete/trash` | listings | [Перенос карточек товаров в корзину](listings/post-content-v2-cards-delete-trash.md) |
 | `POST` | `/content/v2/cards/error/list` | listings | [Список несозданных карточек товаров с ошибками](listings/post-content-v2-cards-error-list.md) |
@@ -77,6 +77,6 @@ content_sha: 44c4799577995b5a
 | `POST` | `/content/v2/tag` | labels | [Создание ярлыка](labels/post-content-v2-tag.md) |
 | `POST` | `/content/v3/media/file` | mediaFiles | [Загрузить медиафайл](mediafiles/post-content-v3-media-file.md) |
 | `POST` | `/content/v3/media/save` | mediaFiles | [Загрузить медиафайлы по ссылкам](mediafiles/post-content-v3-media-save.md) |
-| `PUT` | `/api/v3/dbw/warehouses/{warehouseId}/contacts` | Склады продавца | [Обновить список контактов{{ /api/v3/dbw/warehouses/{warehouseId}/contacts }}](sklady-prodavca/put-api-v3-dbw-warehouses-warehouseid-contacts.md) |
-| `PUT` | `/api/v3/stocks/{warehouseId}` | Остатки на складах продавца | [Обновить остатки товаров{{ /api/v3/stocks/{warehouseId} }}](ostatki-na-skladah-prodavca/put-api-v3-stocks-warehouseid.md) |
-| `PUT` | `/api/v3/warehouses/{warehouseId}` | Склады продавца | [Обновить склад продавца{{ /api/v3/warehouses/{warehouseId} }}](sklady-prodavca/put-api-v3-warehouses-warehouseid.md) |
+| `PUT` | `/api/v3/dbw/warehouses/{warehouseId}/contacts` | sellerWarehouses | [Обновить список контактов{{ /api/v3/dbw/warehouses/{warehouseId}/contacts }}](sellerwarehouses/put-api-v3-dbw-warehouses-warehouseid-contacts.md) |
+| `PUT` | `/api/v3/stocks/{warehouseId}` | sellerWarehousesInventory | [Обновить остатки товаров{{ /api/v3/stocks/{warehouseId} }}](sellerwarehousesinventory/put-api-v3-stocks-warehouseid.md) |
+| `PUT` | `/api/v3/warehouses/{warehouseId}` | sellerWarehouses | [Обновить склад продавца{{ /api/v3/warehouses/{warehouseId} }}](sellerwarehouses/put-api-v3-warehouses-warehouseid.md) |

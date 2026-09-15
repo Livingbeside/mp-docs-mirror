@@ -9,7 +9,7 @@ tags:
 spec_version: dbs
 source: "https://dev.wildberries.ru/docs/openapi/dbs"
 deprecated: false
-content_sha: aa5fcaf2eeae2805
+content_sha: fed32d767d8ce722
 ---
 
 # Закрепить номера ДТ за сборочными заданиями
@@ -18,12 +18,12 @@ content_sha: aa5fcaf2eeae2805
 
 Описание метода
 
-Метод обновляет номера ДТ — деклараций на товары — и коды стран происхождения товаров в [идентификаторах маркировки сборочных заданий](./orders-dbs#tag/dbsLabelIdentifiers/operation/postV3DbsOrdersMetaDetails). У одного сборочного задания может быть только один номер ДТ. 
+Метод обновляет номера ДТ — деклараций на товары — и коды стран происхождения товаров в [идентификаторах маркировки сборочных заданий](./dbs#tag/dbsLabelIdentifiers/operation/postV3DbsOrdersMetaDetails). У одного сборочного задания может быть только один номер ДТ. 
 
 Закрепить номер ДТ можно, только если выполняются все условия:
- - сборочное задание имеет признак B2B-продажи — `"isB2b":true` в ответе метода [получения новых сборочных заданий](./orders-dbs#tag/dbsAssemblyOrders/operation/getV3DbsOrdersNew)
- - сборочное задание находится в [статусах](./orders-dbs#tag/dbsAssemblyOrders/operation/postV3DbsOrdersStatusInfo) `confirm` или `deliver`
- - поле `customsDeclaration` есть в [идентификаторах маркировки сборочных заданий](./orders-dbs#tag/dbsLabelIdentifiers/operation/postV3DbsOrdersMetaDetails)
+ - сборочное задание имеет признак B2B-продажи — `"isB2b":true` в ответе метода [получения новых сборочных заданий](./dbs#tag/dbsAssemblyOrders/operation/getV3DbsOrdersNew)
+ - сборочное задание находится в [статусах](./dbs#tag/dbsAssemblyOrders/operation/postV3DbsOrdersStatusInfo) `confirm` или `deliver`
+ - поле `customsDeclaration` есть в [идентификаторах маркировки сборочных заданий](./dbs#tag/dbsLabelIdentifiers/operation/postV3DbsOrdersMetaDetails)
 
 Лимит запросов на один аккаунт продавца для всех методов закрепления идентификаторов маркировки DBS:
 

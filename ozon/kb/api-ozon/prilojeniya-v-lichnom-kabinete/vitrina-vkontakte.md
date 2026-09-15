@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /api-ozon/prilojeniya-v-lichnom-kabinete/vitrina-vkontakte
 source: "https://seller-edu.ozon.ru/libra/api-ozon/prilojeniya-v-lichnom-kabinete/vitrina-vkontakte"
-updated: "2026-05-13 07:33:44"
+updated: "2026-09-14 09:01:27"
 doc_id: 14626
-fetched_at: "2026-08-28T12:11:15Z"
-content_sha: 23d6d1224a68e91c
+fetched_at: "2026-09-15T02:18:00Z"
+content_sha: 8a5b08d7e1e01921
 ---
 
 # Подключение витрины ВКонтакте
@@ -142,5 +142,9 @@ _Главная / API Ozon и интеграции / Приложения в л�
 Когда витрина станет доступна для схема realFBS?
 
 Пока планов по запуску витрины ВКонтакте для схемы realFBS нет.
+
+Нужно ли ставить пометку «Реклама» на посты с товарами на витрине ВКонтакте?
+
+Нет, на посты с вашими товарами для размещения в вашем сообществе ВКонтакте пометку «Реклама» ставить не нужно.
 
 # Видео «Как перенести карточки товаров из Ozon в ВК»

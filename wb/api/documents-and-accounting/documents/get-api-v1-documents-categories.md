@@ -9,7 +9,7 @@ tags:
 spec_version: finances
 source: "https://dev.wildberries.ru/docs/openapi/documents-and-accounting"
 deprecated: false
-content_sha: c582833fa861895e
+content_sha: 5d20d7df934d4343
 ---
 
 # Категории документов
@@ -18,7 +18,7 @@ content_sha: c582833fa861895e
 
 Описание метода
 
-Метод возвращает категории документов для получения [списка документов продавца](./financial-reports-and-accounting#tag/documents/operation/getV1DocumentsList).
+Метод возвращает категории документов для получения [списка документов продавца](./documents-and-accounting#tag/documents/operation/getV1DocumentsList).
 
 Лимит запросов на один аккаунт продавца:
 
@@ -41,8 +41,8 @@ content_sha: c582833fa861895e
 
 - `data` — object
   - `categories` — array[object]. Категории документов
-    - `name` — string. ID категории документа из параметра [запроса](./financial-reports-and-accounting#tag/documents/operation/getV1DocumentsList) `category`
-    - `title` — string. Название категории документа из поля [ответа](./financial-reports-and-accounting#tag/documents/~1api~1v1~1documents~1list/get) `category`
+    - `name` — string. ID категории документа из параметра [запроса](./documents-and-accounting#tag/documents/operation/getV1DocumentsList) `category`
+    - `title` — string. Название категории документа из поля [ответа](./documents-and-accounting#tag/documents/~1api~1v1~1documents~1list/get) `category`
 
 **401** — Не авторизован
 

@@ -4,8 +4,8 @@ api: wildberries
 kind: changelog
 source: "https://dev.wildberries.ru/release-notes"
 window: последние записи, страница отдаёт не всю историю
-fetched_at: "2026-09-14T02:23:18Z"
-content_sha: 36a1e46217306be3
+fetched_at: "2026-09-15T02:20:50Z"
+content_sha: 4a776a07b650d0a6
 ---
 
 # Журнал изменений WB API
@@ -81,10 +81,10 @@ content_sha: 36a1e46217306be3
 
 Исправили описание объекта `wholesale` в запросах и ответах методов:
 
-- Создание карточек товаров — [POST /content/v2/cards/upload](/docs/openapi/item-management#tag/listingItems/paths/~1content~1v2~1cards~1upload/post)
-- Создание карточек товаров с присоединением — [POST /content/v2/cards/upload/add](/docs/openapi/item-management#tag/listingItems/paths/~1content~1v2~1cards~1upload~1add/post)
-- Список карточек товаров — [POST /content/v2/get/cards/list](/docs/openapi/item-management#tag/listings/paths/~1content~1v2~1get~1cards~1list/post)
-- Список карточек товаров в корзине — [POST /content/v2/get/cards/trash](/docs/openapi/item-management#tag/listings/paths/~1content~1v2~1get~1cards~1trash/post)
+- Создание карточек товаров — [POST /content/v2/cards/upload](/docs/openapi/item-management#tag/listingItems/operation/postV2CardsUpload)
+- Создание карточек товаров с присоединением — [POST /content/v2/cards/upload/add](/docs/openapi/item-management#tag/listingItems/operation/postV2CardsUploadAdd)
+- Список карточек товаров — [POST /content/v2/get/cards/list](/docs/openapi/item-management#tag/listings/operation/postV2GetCardsList)
+- Список карточек товаров в корзине — [POST /content/v2/get/cards/trash](/docs/openapi/item-management#tag/listings/operation/postV2GetCardsTrash)
 
 В предыдущей версии описания объекта `wholesale` было некорректно указано, что при `"enabled":true` товар предназначен для оптовой продажи.
  В исправленной версии описания объекта `wholesale` указано, что при `"enabled":true` товар предназначен для любой [B2B-продажи](https://seller.wildberries.ru/instructions/ru/ru/material/wholesale-of-goods), не только оптовой.
@@ -99,7 +99,7 @@ content_sha: 36a1e46217306be3
 
 Черновики поставок FBW
 
-Добавили методы для работы с [черновиками поставок](./docs/openapi/orders-fbw#tag/suppliesDrafts) FBW. Теперь с помощью WB API вы можете:
+Добавили методы для работы с [черновиками поставок](./docs/openapi/orders-fbw#tag/supplyDrafts) FBW. Теперь с помощью WB API вы можете:
 
 - Создать черновик — [POST /api/supplies/v1/drafts](./docs/openapi/orders-fbw#tag/supplyDrafts/operation/postV1Drafts)
 - Добавить товары в черновик — [POST /api/supplies/v1/drafts/{draftId}/items](./docs/openapi/orders-fbw#tag/supplyDrafts/operation/postV1DraftsDraftIdItems)
@@ -152,11 +152,11 @@ content_sha: 36a1e46217306be3
 
 Чтобы указать документы в карточке товара, используйте объект `documents` в запросах методов:
 
-- Создание карточек товаров — [POST /content/v2/cards/upload](/docs/openapi/item-management#tag/listingItems/paths/~1content~1v2~1cards~1upload/post)
-- Создание карточек товаров с присоединением — [POST /content/v2/cards/upload/add](/docs/openapi/item-management#tag/listingItems/paths/~1content~1v2~1cards~1upload~1add/post)
-- Редактирование карточек товаров — [POST /content/v2/cards/update](/docs/openapi/item-management#tag/listings/paths/~1content~1v2~1cards~1update/post)
+- Создание карточек товаров — [POST /content/v2/cards/upload](/docs/openapi/item-management#tag/listingItems/operation/postV2CardsUpload)
+- Создание карточек товаров с присоединением — [POST /content/v2/cards/upload/add](/docs/openapi/item-management#tag/listingItems/operation/postV2CardsUploadAdd)
+- Редактирование карточек товаров — [POST /content/v2/cards/update](/docs/openapi/item-management#tag/listings/operation/postV2CardsUpdate)
 
-Чтобы получить информацию о документах, указанных в карточке товара, используйте объект `documents` в ответах метода Список карточек товаров — [POST /content/v2/get/cards/list](/docs/openapi/item-management#tag/listings/paths/~1content~1v2~1get~1cards~1list/post).
+Чтобы получить информацию о документах, указанных в карточке товара, используйте объект `documents` в ответах метода Список карточек товаров — [POST /content/v2/get/cards/list](/docs/openapi/item-management#tag/listings/operation/postV2GetCardsList).
 
 Передавать документы в массиве `characteristics` теперь можно только:
 
@@ -165,9 +165,9 @@ content_sha: 36a1e46217306be3
 
 Рекомендуем передавать документы только с помощью объекта `documents`, поскольку, если вы передаёте документы в массиве `characteristics`, эти документы могут быть обработаны некорректно для любых карточек.
 
-Документы, которые уже были в карточках товаров, будут автоматически продублированы в объекте `documents` в ответах метода [POST /content/v2/get/cards/list](/docs/openapi/item-management#tag/listings/paths/~1content~1v2~1get~1cards~1list/post).
+Документы, которые уже были в карточках товаров, будут автоматически продублированы в объекте `documents` в ответах метода [POST /content/v2/get/cards/list](/docs/openapi/item-management#tag/listings/operation/postV2GetCardsList).
 
-Напоминаем, что карточки товаров перезаписываются при обновлении. Поэтому передавайте в запросах метода [POST /content/v2/cards/update](/docs/openapi/item-management#tag/listings/paths/~1content~1v2~1cards~1update/post) в том числе те документы, которые вы не собираетесь обновлять.
+Напоминаем, что карточки товаров перезаписываются при обновлении. Поэтому передавайте в запросах метода [POST /content/v2/cards/update](/docs/openapi/item-management#tag/listings/operation/postV2CardsUpdate) в том числе те документы, которые вы не собираетесь обновлять.
 
 Изменения
 
@@ -247,7 +247,7 @@ content_sha: 36a1e46217306be3
 
 Добавили отчёт по остаткам на складах продавца — [POST /api/analytics/v1/stocks-report/seller-warehouses](/docs/openapi/analytics#tag/stocksReport/operation/postAnalyticsV1StocksReportSellerWarehouses).
 
-Используйте новый отчёт вместо метода [POST /api/v3/stocks/{warehouseId}](/docs/openapi/work-with-products#tag/Ostatki-na-skladah-prodavca/paths/~1api~1v3~1stocks~1%7BwarehouseId%7D/post), чтобы получить остатки без указания ID складов продавца и ID размеров в запросе.
+Используйте новый отчёт вместо метода [POST /api/v3/stocks/{warehouseId}](/docs/openapi/work-with-products#tag/sellerWarehousesInventory/operation/postV3StocksWarehouseId), чтобы получить остатки без указания ID складов продавца и ID размеров в запросе.
 
 Данные в отчёте обновляются 1 раз в 30 минут.
 
@@ -454,9 +454,9 @@ DBS
 
 Что изменится в методах:
 
-- Получить список складов WB — [GET /api/v3/offices](/docs/openapi/work-with-products#tag/Sklady-prodavca/paths/~1api~1v3~1offices/get) — в ответе теперь не будут возвращаться СГТ-склады WB
-- Создать склад продавца — [POST /api/v3/warehouses](/docs/openapi/work-with-products#tag/Sklady-prodavca/paths/~1api~1v3~1warehouses/post) — при создании СГТ-склада вы получите ошибку `404`
-- Обновить склад продавца — [PUT /api/v3/warehouses/ {warehouseId}](/docs/openapi/work-with-products#tag/Sklady-prodavca/paths/~1api~1v3~1warehouses~1%7BwarehouseId%7D/put) — при изменении данных СГТ-склада вы получите ошибку `404`
+- Получить список складов WB — [GET /api/v3/offices](/docs/openapi/work-with-products#tag/sellerWarehouses/operation/getV3Offices) — в ответе теперь не будут возвращаться СГТ-склады WB
+- Создать склад продавца — [POST /api/v3/warehouses](/docs/openapi/work-with-products#tag/sellerWarehouses/operation/postV3Warehouses) — при создании СГТ-склада вы получите ошибку `404`
+- Обновить склад продавца — [PUT /api/v3/warehouses/ {warehouseId}](/docs/openapi/work-with-products#tag/sellerWarehouses/operation/putV3WarehousesWarehouseId) — при изменении данных СГТ-склада вы получите ошибку `404`
 
 Новое
 

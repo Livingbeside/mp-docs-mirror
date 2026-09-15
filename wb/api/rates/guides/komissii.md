@@ -5,7 +5,7 @@ tag: fees
 group: ""
 kind: guide
 source: "https://dev.wildberries.ru/docs/openapi/rates"
-content_sha: a5a2c8f42543332a
+content_sha: 0172c61f00959533
 ---
 
 # Комиссии
@@ -14,4 +14,4 @@ content_sha: a5a2c8f42543332a
 
  Узнать больше о комиссиях можно в [справочном центре](https://seller.wildberries.ru/instructions/ru/ru/material/wildberries-reward-ratio)
 
-Метод получения [комиссии по категориям товаров](./wb-tariffs#tag/fees/operation/getV1TariffsCommission).
+Метод получения [комиссии по категориям товаров](./rates#tag/fees/operation/getV1TariffsCommission).

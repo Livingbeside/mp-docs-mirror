@@ -9,7 +9,7 @@ tags:
 spec_version: dbs
 source: "https://dev.wildberries.ru/docs/openapi/dbs"
 deprecated: false
-content_sha: 359ae4162593d7b1
+content_sha: 687cf7708c7ec85b
 ---
 
 # Получить стикеры для сборочных заданий с доставкой в ПВЗ
@@ -23,7 +23,7 @@ content_sha: 359ae4162593d7b1
  Сервисному токену, 
  Базовому токену с секретом
 
-Метод возвращает стикеры для сборочных заданий с доставкой в ПВЗ в [статусах](./orders-dbs#tag/dbsAssemblyOrders/operation/postV3DbsOrdersStatusInfo):
+Метод возвращает стикеры для сборочных заданий с доставкой в ПВЗ в [статусах](./dbs#tag/dbsAssemblyOrders/operation/postV3DbsOrdersStatusInfo):
  - `confirm` — на сборке
  - `deliver` — в доставке
 

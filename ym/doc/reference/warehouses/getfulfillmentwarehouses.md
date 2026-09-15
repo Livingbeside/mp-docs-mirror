@@ -2,8 +2,8 @@
 title: Идентификаторы складов Маркета (FBY и LaaS)
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/warehouses/getFulfillmentWarehouses.md"
-fetched_at: "2026-09-11T01:59:07Z"
-content_sha: f7c52edf3be46bf3
+fetched_at: "2026-09-15T02:22:54Z"
+content_sha: 46826db627ff138f
 ---
 
 ---
@@ -1113,7 +1113,7 @@ alternate:
       required: false
       schema:
         $ref: >-
-          /home/sandbox/.ya/build/build_root/givs/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/common/schemas.yaml#/CampaignId
+          /home/sandbox/.ya/build/build_root/4tup/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/common/schemas.yaml#/CampaignId
   headers: []
   body: null
   schema: {}

@@ -3,13 +3,13 @@ title: Пол
 api: wb-item-management
 method: GET
 path: /content/v2/directory/kinds
-operation_id: get-content-v2-directory-kinds
+operation_id: getV2DirectoryKinds
 tags:
   - categoriesSubcategoriesAndCharacteristics
 spec_version: items
 source: "https://dev.wildberries.ru/docs/openapi/item-management"
 deprecated: false
-content_sha: 990960a97a03071c
+content_sha: d1a88c98820b2e87
 ---
 
 # Пол
@@ -18,7 +18,7 @@ content_sha: 990960a97a03071c
 
 Описание метода
 
-Метод возвращает возможные значения [характеристики](./work-with-products#tag/categoriesSubcategoriesAndCharacteristics/paths/~1content~1v2~1object~1charcs~1%7BsubjectId%7D/get) предмета `Пол`.
+Метод возвращает возможные значения [характеристики](./item-management#tag/categoriesSubcategoriesAndCharacteristics/operation/getV2ObjectCharcsSubjectId) предмета `Пол`.
 
 Лимит запросов на один аккаунт продавца для методов Характеристик:
 

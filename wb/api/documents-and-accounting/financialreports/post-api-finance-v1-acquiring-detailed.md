@@ -9,7 +9,7 @@ tags:
 spec_version: finances
 source: "https://dev.wildberries.ru/docs/openapi/documents-and-accounting"
 deprecated: false
-content_sha: 0fbf1f6a15fccc19
+content_sha: c40bf821230eb3fd
 ---
 
 # Детализации к отчётам об издержках на приём платежей за период
@@ -51,7 +51,7 @@ content_sha: 0fbf1f6a15fccc19
 - `tin` — string **обязательный**. ИНН
 - `taxRegistrationReasonCode` — string **обязательный**. КПП
 - `saleDate` — string **обязательный**. Дата продажи
-- `srid` — string **обязательный**. ID заказа. В ответах методов сборочных заданий [FBS](./orders-fbs#tag/Sborochnye-zadaniya-FBS), [DBW](./orders-dbw#tag/dbwAssemblyOrders), [DBS](./orders-dbs#tag/dbsAssemblyOrders) и [Самовывоз](./in-store-pickup#tag/inStorePickupAssemblyOrders) `srid` равен `rid`
+- `srid` — string **обязательный**. ID заказа. В ответах методов сборочных заданий [FBS](./orders-fbs#tag/Sborochnye-zadaniya-FBS), [DBW](./orders-dbw#tag/dbwAssemblyOrders), [DBS](./dbs#tag/dbsAssemblyOrders) и [Самовывоз](./in-store-pickup#tag/inStorePickupAssemblyOrders) `srid` равен `rid`
 - `docTypeName` — string **обязательный**. Тип документа
 - `nmId` — integer **обязательный**. Артикул WB
 - `retailAmount` — string **обязательный**. Вайлдберриз реализовал Товар (Пр)

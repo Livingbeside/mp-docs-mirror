@@ -9,7 +9,7 @@ tags:
 spec_version: analytics
 source: "https://dev.wildberries.ru/docs/openapi/analytics"
 deprecated: false
-content_sha: 98f6c424a8739fad
+content_sha: af9f383ef0462ced
 ---
 
 # Статистика групп карточек товаров по дням
@@ -35,7 +35,7 @@ content_sha: 98f6c424a8739fad
 
 Выкупы, отмены и возвраты отображаются в отчёте за тот день, когда товар был заказан. Например, если заказ был сделан 1 января, а покупатель вернул товар 10 января, данные об этом возврате появятся в отчёте за 1 января.
 
-Окончательные итоги продаж вы можете отслеживать с помощью [детализаций к отчётам реализации](./financial-reports-and-accounting#tag/financialReports).
+Окончательные итоги продаж вы можете отслеживать с помощью [детализаций к отчётам реализации](./documents-and-accounting#tag/financialReports).
 
 Параметры `brandNames`, `subjectIds`, `tagIds` могут быть пустыми `[]`, тогда группировка происходит по всем карточкам продавца.
 

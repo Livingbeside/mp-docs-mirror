@@ -9,7 +9,7 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: aec73e57fddf87b9
+content_sha: dcc183694f15e549
 ---
 
 # Получить информацию об отправлении по идентификатору
@@ -57,7 +57,7 @@ content_sha: aec73e57fddf87b9
       - `commissions_price` — object. Комиссия за товар.
         - `amount` — string. Сумма.
         - `currency` — string. Валюта.
-      - `customer_price` — object. Цена товара на сайте.
+      - `customer_price` — object. Цена, которую видит покупатель.
         - `amount` — string. Сумма.
         - `currency` — string. Валюта.
       - `old_price` — number<double>. Цена до учёта скидок. На карточке товара отображается зачёркнутой.

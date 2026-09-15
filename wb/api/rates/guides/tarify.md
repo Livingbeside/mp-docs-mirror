@@ -5,7 +5,7 @@ tag: Тарифы
 group: ""
 kind: guide
 source: "https://dev.wildberries.ru/docs/openapi/rates"
-content_sha: 724561a765a0d5b0
+content_sha: 95b9f1867003de72
 ---
 
 # Тарифы
@@ -13,7 +13,7 @@ content_sha: 724561a765a0d5b0
 Узнать больше о тарифах можно в [справочном центре](https://seller.wildberries.ru/instructions/ru/ru/material/fees-site-section)
 
 В разделе описаны методы получения:
- 1. [Комиссий](./wb-tariffs#tag/fees)
- 2. [Тарифов на поставку](./wb-tariffs#tag/supplyRates)
- 3. [Тарифов на остаток](./wb-tariffs#tag/stockRates)
- 4. [Тарифов на возврат товаров продавцу](./wb-tariffs#tag/returnCostToSeller)
+ 1. [Комиссий](./rates#tag/fees)
+ 2. [Тарифов на поставку](./rates#tag/supplyRates)
+ 3. [Тарифов на остаток](./rates#tag/stockRates)
+ 4. [Тарифов на возврат товаров продавцу](./rates#tag/returnCostToSeller)

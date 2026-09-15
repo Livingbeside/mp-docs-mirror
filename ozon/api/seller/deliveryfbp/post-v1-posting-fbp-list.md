@@ -9,7 +9,7 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: 9a87c8c32489857a
+content_sha: 47defd0fb8ed60a2
 ---
 
 # Получить список отправлений
@@ -81,7 +81,7 @@ content_sha: 9a87c8c32489857a
   - `order_number` — string. Номер заказа, к которому относится отправление.
   - `posting_number` — string. Номер отправления.
   - `products` — array[object]. Список товаров в отправлении.
-    - `customer_price` — object. Цена товара на сайте.
+    - `customer_price` — object. Цена, которую видит покупатель.
       - `amount` — string. Сумма.
       - `currency` — string. Валюта.
     - `name` — string. Название товара в заказе.

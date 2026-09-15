@@ -9,7 +9,7 @@ tags:
 spec_version: analytics
 source: "https://dev.wildberries.ru/docs/openapi/analytics"
 deprecated: false
-content_sha: 6b78b6741b0164c0
+content_sha: e57a7f96c9718dae
 ---
 
 # Статистика карточек товаров за период
@@ -31,7 +31,7 @@ content_sha: 6b78b6741b0164c0
 
 Выкупы, отмены и возвраты отображаются в отчёте за тот день, когда товар был заказан. Например, если заказ был сделан 1 января, а покупатель вернул товар 10 января, данные об этом возврате появятся в отчёте за 1 января.
 
-Окончательные итоги продаж вы можете отслеживать с помощью [детализаций к отчётам реализации](./financial-reports-and-accounting#tag/financialReports).
+Окончательные итоги продаж вы можете отслеживать с помощью [детализаций к отчётам реализации](./documents-and-accounting#tag/financialReports).
 
 Параметры `brandNames`,`subjectIds`, `tagIds`, `nmIds` могут быть пустыми `[]`, тогда в ответе возвращаются все карточки продавца.
 

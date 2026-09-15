@@ -2,8 +2,8 @@
 title: Все обновления
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/changelog/all.md"
-fetched_at: "2026-09-11T01:57:36Z"
-content_sha: 4ff51f24e823117e
+fetched_at: "2026-09-15T02:21:26Z"
+content_sha: 8f950c87bc426da9
 ---
 
 ---
@@ -43,6 +43,11 @@ alternate:
 [POST v2/campaigns/{campaignId}/supply-requests](https://yandex.ru/dev/market/partner-api/doc/ru/reference/supply-requests/getSupplyRequests.md)
 |
 Добавили в ответ необязательный объект `etrnIdentifier` для создания электронной транспортной накладной.
+||
+||
+[POST v2/businesses/{businessId}/offer-mappings](https://yandex.ru/dev/market/partner-api/doc/ru/reference/business-offer-mappings/getOfferMappings.md)<br>[POST v2/businesses/{businessId}/offer-mappings/update](https://yandex.ru/dev/market/partner-api/doc/ru/reference/business-offer-mappings/updateOfferMappings.md)
+|
+Добавили опциональный товарный код `OKPD2_CODE` в параметре `commodityCodes` — код по Общероссийскому классификатору продукции по видам экономической деятельности (ОКПД 2).
 ||
 |#
 <!-- endsource: ru/_auto/changelog/all/2026-09-10.md -->

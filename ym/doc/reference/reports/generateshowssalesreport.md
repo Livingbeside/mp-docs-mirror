@@ -2,8 +2,8 @@
 title: Отчет «Аналитика продаж»
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/reports/generateShowsSalesReport.md"
-fetched_at: "2026-09-11T01:58:37Z"
-content_sha: 315c0c37a2291143
+fetched_at: "2026-09-15T02:22:27Z"
+content_sha: 3c8c29b316fcf232
 ---
 
 ---
@@ -1117,7 +1117,7 @@ alternate:
       required: false
       schema:
         $ref: >-
-          /home/sandbox/.ya/build/build_root/givs/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/reports/schemas.yaml#/ReportFormatType
+          /home/sandbox/.ya/build/build_root/4tup/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/reports/schemas.yaml#/ReportFormatType
   headers: []
   body: |-
     {
@@ -1170,7 +1170,7 @@ alternate:
         description: Группировка данных отчета.
         $ref: '#/$defs/ShowsSalesGroupingType'
     $defs:
-      /home/sandbox/.ya/build/build_root/givs/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/reports/api/generateShowsSalesReport.yaml#/ShowsSalesGroupingType:
+      /home/sandbox/.ya/build/build_root/4tup/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/reports/api/generateShowsSalesReport.yaml#/ShowsSalesGroupingType:
         type: string
         description: |
           Группировка данных отчета.

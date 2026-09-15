@@ -5,7 +5,7 @@ tag: dbwAssemblyOrders
 group: ""
 kind: guide
 source: "https://dev.wildberries.ru/docs/openapi/orders-dbw"
-content_sha: 92067542346eca98
+content_sha: 4afb89c56b62006d
 ---
 
 # Сборочные задания DBW
@@ -17,7 +17,7 @@ content_sha: 92067542346eca98
 2. [Переведите его на сборку](./orders-dbw#tag/dbwAssemblyOrders/operation/patchV3DbwOrdersOrderIdConfirm).
 3. После перевода на сборку для заказа становится доступной [информация о курьере](./orders-dbw#tag/dbwAssemblyOrders/operation/postV3DbwOrdersCourier) (телефон, номер автомобиля).
 
-Чтобы курьер мог связаться с вами [привяжите](./work-with-products#tag/Sklady-prodavca/paths/~1api~1v3~1dbw~1warehouses~1%7BwarehouseId%7D~1contacts/put) свои контакты к складу. Вы так же можете [получить](./work-with-products#tag/Sklady-prodavca/paths/~1api~1v3~1dbw~1warehouses~1%7BwarehouseId%7D~1contacts/get) текущий список своих контактов.
+Чтобы курьер мог связаться с вами [привяжите](./item-management#tag/sellerWarehouses/operation/putV3DbwWarehousesWarehouseIdContacts) свои контакты к складу. Вы так же можете [получить](./item-management#tag/sellerWarehouses/operation/getV3DbwWarehousesWarehouseIdContacts) текущий список своих контактов.
 4. [Получите](./orders-dbw#tag/dbwAssemblyOrders/operation/postV3DbwOrdersStickers), распечатайте и прикрепите стикеры.
 5. [Переведите сборочное задание в доставку](./orders-dbw#tag/dbwAssemblyOrders/operation/postV3DbwOrdersStatusDeliver).
 6. Дождитесь курьера.

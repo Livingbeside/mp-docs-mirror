@@ -3,13 +3,13 @@ title: Список карточек товаров в корзине
 api: wb-item-management
 method: POST
 path: /content/v2/get/cards/trash
-operation_id: post-content-v2-get-cards-trash
+operation_id: postV2GetCardsTrash
 tags:
   - listings
 spec_version: items
 source: "https://dev.wildberries.ru/docs/openapi/item-management"
 deprecated: false
-content_sha: 0988e1e2f175a074
+content_sha: 8477efa987fb2616
 ---
 
 # Список карточек товаров в корзине
@@ -53,17 +53,17 @@ content_sha: 0988e1e2f175a074
 
 Исключение — методы:
 
- [создания карточек товаров](./work-with-products#tag/listingItems/paths/~1content~1v2~1cards~1upload/post)
+ [создания карточек товаров](./item-management#tag/listingItems/operation/postV2CardsUpload)
 
- [создания карточек товаров с присоединением](./work-with-products#tag/listingItems/paths/~1content~1v2~1cards~1upload~1add/post)
+ [создания карточек товаров с присоединением](./item-management#tag/listingItems/operation/postV2CardsUploadAdd)
 
- [редактирования карточек товаров](./work-with-products#tag/listings/paths/~1content~1v2~1cards~1update/post)
+ [редактирования карточек товаров](./item-management#tag/listings/operation/postV2CardsUpdate)
 
- [восстановления карточек товаров из корзины](./work-with-products#tag/listings/paths/~1content~1v2~1cards~1recover/post)
+ [восстановления карточек товаров из корзины](./item-management#tag/listings/operation/postV2CardsRecover)
 
- [получения списка рекомендаций в карточках товаров](./work-with-products#tag/recommendations/operation/postV1RecommendationsList)
+ [получения списка рекомендаций в карточках товаров](./item-management#tag/recommendations/operation/postV1RecommendationsList)
 
- [установки рекомендаций для товаров](./work-with-products#tag/recommendations/operation/postV1RecommendationsSet)
+ [установки рекомендаций для товаров](./item-management#tag/recommendations/operation/postV1RecommendationsSet)
 
 В песочнице — максимум 1 запрос в секунду суммарно для всех методов Контента.
 
@@ -94,7 +94,7 @@ content_sha: 0988e1e2f175a074
 - `cards` — array[object]. Массив карточек товаров
   - `nmID` — integer. Артикул WB
   - `vendorCode` — string. Артикул продавца
-  - `kizMarked` — boolean. Есть ли подтверждение от продавца, что обязательный код маркировки [Честного знака](https://честныйзнак.рф/) нанесён на товар: - `true` — да - `false` — нет Чтобы проверить, является ли код маркировки [Честного знака](https://честныйзнак.рф/) обязательным, используйте метод [Список карточек товаров](./work-with-products#tag/listings/paths/~1content~1v2~1get~1cards~1list/post), поле ответа `needKiz` По умолчанию: `False`.
+  - `kizMarked` — boolean. Есть ли подтверждение от продавца, что обязательный код маркировки [Честного знака](https://честныйзнак.рф/) нанесён на товар: - `true` — да - `false` — нет Чтобы проверить, является ли код маркировки [Честного знака](https://честныйзнак.рф/) обязательным, используйте метод [Список карточек товаров](./item-management#tag/listings/operation/postV2GetCardsList), поле ответа `needKiz` По умолчанию: `False`.
   - `subjectID` — integer. ID предмета
   - `subjectName` — string. Название предмета
   - `photos` — array[object]. Массив фото

@@ -9,7 +9,7 @@ tags:
 spec_version: communication
 source: "https://dev.wildberries.ru/docs/openapi/customer-communication"
 deprecated: false
-content_sha: f1a19c79ce444cd7
+content_sha: 6ed162ffbadc9cae
 ---
 
 # Закрепить отзывы
@@ -20,7 +20,7 @@ content_sha: f1a19c79ce444cd7
 
 Метод позволяет закрепить отзывы в карточке товара или в группе [объединённых](/knowledge-base/articles/019d49a4-1320-71bb-9dac-8ba07e7177ce/rabota-s-tovarami#obuedinenie-i-razuedinenie-kartochek-tovarov) карточек. 
 
-Чтобы получить ID отзывов, используйте метод [Список закреплённых и откреплённых отзывов](./user-communication#tag/pinnedFeedbacks/operation/getFeedbacksV1Pins).
+Чтобы получить ID отзывов, используйте метод [Список закреплённых и откреплённых отзывов](./customer-communication#tag/pinnedFeedbacks/operation/getFeedbacksV1Pins).
 
 Метод доступен по [подписке Джем](https://seller.wildberries.ru/monetization/jam) или c [тарифной опцией](https://seller.wildberries.ru/tariff-constructor) **Закрепление отзыва**.
 

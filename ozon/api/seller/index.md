@@ -2,9 +2,9 @@
 title: Документация Ozon Seller API — все методы
 api: ozon-seller
 spec_version: 2.1
-operations: 466
+operations: 467
 source: "https://docs.ozon.ru/api/seller/"
-content_sha: f43d223fbf22ebbf
+content_sha: 9cec4a41a2916835
 ---
 
 # Документация Ozon Seller API
@@ -18,7 +18,7 @@ content_sha: f43d223fbf22ebbf
 
 > [Информационная платформа и сообщество разработчиков Ozon for dev](https://dev.ozon.ru/)
 
-Версия спеки: `2.1` · методов: **466** · разделов справки: **26**
+Версия спеки: `2.1` · методов: **467** · разделов справки: **26**
 
 Источник: https://docs.ozon.ru/api/seller/
 
@@ -41,6 +41,7 @@ content_sha: f43d223fbf22ebbf
 | `POST` | `/v1/actions/products/activate` | Promos | [Добавить товар в акцию](promos/post-v1-actions-products-activate.md) |
 | `POST` | `/v1/actions/products/deactivate` | Promos | [Удалить товары из акции](promos/post-v1-actions-products-deactivate.md) |
 | `POST` | `/v1/actions/products` | Promos | [Список участвующих в акции товаров](promos/post-v1-actions-products.md) |
+| `POST` | `/v1/analytics/category/comparison` | BetaMethod | [Получить информацию о сравнении категорий](betamethod/post-v1-analytics-category-comparison.md) |
 | `POST` | `/v1/analytics/data` | Premium | [Данные аналитики](premium/post-v1-analytics-data.md) |
 | `POST` | `/v1/analytics/decommissioned-goods` | BetaMethod | [Получить отчёт о списанных товарах](betamethod/post-v1-analytics-decommissioned-goods.md) |
 | `POST` | `/v1/analytics/manage/stocks` | BetaMethod | [Управление остатками](betamethod/post-v1-analytics-manage-stocks.md) |

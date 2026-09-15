@@ -881,7 +881,7 @@
     }
   },
   "info": {
-    "description": "<div class=\"description_important\">\n  Узнать больше о тарифах можно в <a href=\"https://seller.wildberries.ru/instructions/ru/ru/material/fees-site-section\">справочном центре</a>\n</div>\n\n<div class=\"api-block\">\n\nВ разделе описаны методы получения:\n  1. [Комиссий](./wb-tariffs#tag/fees)\n  2. [Тарифов на поставку](./wb-tariffs#tag/supplyRates)\n  3. [Тарифов на остаток](./wb-tariffs#tag/stockRates)\n  4. [Тарифов на возврат товаров продавцу](./wb-tariffs#tag/returnCostToSeller)\n\n</div>\n",
+    "description": "<div class=\"description_important\">\n  Узнать больше о тарифах можно в <a href=\"https://seller.wildberries.ru/instructions/ru/ru/material/fees-site-section\">справочном центре</a>\n</div>\n\n<div class=\"api-block\">\n\nВ разделе описаны методы получения:\n  1. [Комиссий](./rates#tag/fees)\n  2. [Тарифов на поставку](./rates#tag/supplyRates)\n  3. [Тарифов на остаток](./rates#tag/stockRates)\n  4. [Тарифов на возврат товаров продавцу](./rates#tag/returnCostToSeller)\n\n</div>\n",
     "title": "Тарифы",
     "version": "rates",
     "x-file-name": "rates"
@@ -1032,7 +1032,7 @@
     },
     "/api/v1/tariffs/commission": {
       "get": {
-        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод возвращает данные о [комиссии](https://seller.wildberries.ru/dynamic-product-categories/commission) WB по [родительским категориям товаров](./work-with-products#tag/categoriesSubcategoriesAndCharacteristics/paths/~1content~1v2~1object~1parent~1all/get) согласно модели продаж.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 мин | 1 запрос | 1 мин | 2 запроса |\n| Сервисный | 1 мин | 1 запрос | 1 мин | 2 запроса |\n| Базовый с секретом | 1 мин | 1 запрос | 1 мин | 2 запроса |\n| Базовый | 1 ч | 5 запросов | 12 мин | 1 запрос |\n</div>\n",
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод возвращает данные о [комиссии](https://seller.wildberries.ru/dynamic-product-categories/commission) WB по [родительским категориям товаров](./item-management#tag/categoriesSubcategoriesAndCharacteristics/operation/getV2ObjectParentAll) согласно модели продаж.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 мин | 1 запрос | 1 мин | 2 запроса |\n| Сервисный | 1 мин | 1 запрос | 1 мин | 2 запроса |\n| Базовый с секретом | 1 мин | 1 запрос | 1 мин | 2 запроса |\n| Базовый | 1 ч | 5 запросов | 12 мин | 1 запрос |\n</div>\n",
         "operationId": "getV1TariffsCommission",
         "parameters": [
           {
@@ -1248,27 +1248,27 @@
   ],
   "tags": [
     {
-      "description": "<div class=\"api-description\">\n\n<div class=\"description_important\">\n  Узнать больше о тарифах можно в <a href=\"https://seller.wildberries.ru/instructions/ru/ru/material/fees-site-section\">справочном центре</a>\n</div>\n\n<div class=\"api-block\">\n\nВ разделе описаны методы получения:\n  1. [Комиссий](./wb-tariffs#tag/fees)\n  2. [Тарифов на поставку](./wb-tariffs#tag/supplyRates)\n  3. [Тарифов на остаток](./wb-tariffs#tag/stockRates)\n  4. [Тарифов на возврат товаров продавцу](./wb-tariffs#tag/returnCostToSeller)\n\n</div>\n\n\n</div>",
+      "description": "<div class=\"api-description\">\n\n<div class=\"description_important\">\n  Узнать больше о тарифах можно в <a href=\"https://seller.wildberries.ru/instructions/ru/ru/material/fees-site-section\">справочном центре</a>\n</div>\n\n<div class=\"api-block\">\n\nВ разделе описаны методы получения:\n  1. [Комиссий](./rates#tag/fees)\n  2. [Тарифов на поставку](./rates#tag/supplyRates)\n  3. [Тарифов на остаток](./rates#tag/stockRates)\n  4. [Тарифов на возврат товаров продавцу](./rates#tag/returnCostToSeller)\n\n</div>\n\n\n</div>",
       "name": "Тарифы",
       "x-traitTag": true
     },
     {
-      "description": "<div class=\"description_auth\">\n  Комиссии можно получить с токеном любой <a href=\"./api-information#tag/authorization/Kategorii-tokenov\">категории</a>\n</div>\n\n<div class=\"description_important\">\n  Узнать больше о комиссиях можно в <a href=\"https://seller.wildberries.ru/instructions/ru/ru/material/wildberries-reward-ratio\">справочном центре</a>\n</div>\n\nМетод получения [комиссии по категориям товаров](./wb-tariffs#tag/fees/operation/getV1TariffsCommission).\n",
+      "description": "<div class=\"description_auth\">\n  Комиссии можно получить с токеном любой <a href=\"./api-information#tag/authorization/Kategorii-tokenov\">категории</a>\n</div>\n\n<div class=\"description_important\">\n  Узнать больше о комиссиях можно в <a href=\"https://seller.wildberries.ru/instructions/ru/ru/material/wildberries-reward-ratio\">справочном центре</a>\n</div>\n\nМетод получения [комиссии по категориям товаров](./rates#tag/fees/operation/getV1TariffsCommission).\n",
       "name": "fees",
       "x-displayName": "Комиссии"
     },
     {
-      "description": "<div class=\"description_auth\">\n  Тарифы на поставку можно получить с токеном любой <a href=\"./api-information#tag/authorization/Kategorii-tokenov\">категории</a>\n</div>\n\nДанные о фиксированных коэффициентах [тарифов на поставку](./wb-tariffs#tag/supplyRates/operation/getV1AcceptanceCoefficients)\n",
+      "description": "<div class=\"description_auth\">\n  Тарифы на поставку можно получить с токеном любой <a href=\"./api-information#tag/authorization/Kategorii-tokenov\">категории</a>\n</div>\n\nДанные о фиксированных коэффициентах [тарифов на поставку](./rates#tag/supplyRates/operation/getV1AcceptanceCoefficients)\n",
       "name": "supplyRates",
       "x-displayName": "Тарифы на поставку"
     },
     {
-      "description": "<div class=\"description_auth\">\n  Тарифы на остаток можно получить с токеном любой <a href=\"./api-information#tag/authorization/Kategorii-tokenov\">категории</a>\n</div>\n\nДанные по текущим и архивным тарифам для:\n  - [коробов](./wb-tariffs#tag/stockRates/operation/getV1TariffsBox)\n  - [монопаллет](./wb-tariffs#tag/stockRates/operation/getV1TariffsPallet)\n\nМетоды возвращают коэффициенты тарифов без фиксации на поставку\n",
+      "description": "<div class=\"description_auth\">\n  Тарифы на остаток можно получить с токеном любой <a href=\"./api-information#tag/authorization/Kategorii-tokenov\">категории</a>\n</div>\n\nДанные по текущим и архивным тарифам для:\n  - [коробов](./rates#tag/stockRates/operation/getV1TariffsBox)\n  - [монопаллет](./rates#tag/stockRates/operation/getV1TariffsPallet)\n\nМетоды возвращают коэффициенты тарифов без фиксации на поставку\n",
       "name": "stockRates",
       "x-displayName": "Тарифы на остаток"
     },
     {
-      "description": "<div class=\"description_auth\">\n  Стоимость возврата продавцу можно получить с токеном любой <a href=\"./api-information#tag/authorization/Kategorii-tokenov\">категории</a>\n</div>\n\n<div class=\"description_important\">\n  Узнать больше о возвратах продавцу можно в <a href=\"https://seller.wildberries.ru/instructions/ru/ru/material/item-returns-to-seller-from-wb-warehouse\">справочном центре</a>\n</div>\n\nМетод получения [тарифов на возврат](./wb-tariffs#tag/returnCostToSeller/operation/getV1TariffsReturn).\n",
+      "description": "<div class=\"description_auth\">\n  Стоимость возврата продавцу можно получить с токеном любой <a href=\"./api-information#tag/authorization/Kategorii-tokenov\">категории</a>\n</div>\n\n<div class=\"description_important\">\n  Узнать больше о возвратах продавцу можно в <a href=\"https://seller.wildberries.ru/instructions/ru/ru/material/item-returns-to-seller-from-wb-warehouse\">справочном центре</a>\n</div>\n\nМетод получения [тарифов на возврат](./rates#tag/returnCostToSeller/operation/getV1TariffsReturn).\n",
       "name": "returnCostToSeller",
       "x-displayName": "Стоимость возврата продавцу"
     }

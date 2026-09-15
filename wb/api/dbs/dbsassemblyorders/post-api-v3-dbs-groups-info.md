@@ -9,7 +9,7 @@ tags:
 spec_version: dbs
 source: "https://dev.wildberries.ru/docs/openapi/dbs"
 deprecated: false
-content_sha: 5566748e7eadc6e6
+content_sha: 9614975aa56397db
 ---
 
 # Получить информацию о платной доставке
@@ -34,7 +34,7 @@ content_sha: 5566748e7eadc6e6
 
 **Тело запроса** (`application/json`):
 
-- `groups` — array[string]. Список значений `groupId`. Можно получить из [новых](./orders-dbs#tag/dbsAssemblyOrders/operation/getV3DbsOrdersNew) и [завершенных](./orders-dbs#tag/dbsAssemblyOrders/operation/getV3DbsOrders) сборочных заданий
+- `groups` — array[string]. Список значений `groupId`. Можно получить из [новых](./dbs#tag/dbsAssemblyOrders/operation/getV3DbsOrdersNew) и [завершенных](./dbs#tag/dbsAssemblyOrders/operation/getV3DbsOrders) сборочных заданий
 
 ## Ответы
 

@@ -3,13 +3,13 @@ title: Цвет
 api: wb-item-management
 method: GET
 path: /content/v2/directory/colors
-operation_id: get-content-v2-directory-colors
+operation_id: getV2DirectoryColors
 tags:
   - categoriesSubcategoriesAndCharacteristics
 spec_version: items
 source: "https://dev.wildberries.ru/docs/openapi/item-management"
 deprecated: false
-content_sha: 825bbf0ed0a24f4b
+content_sha: 94fc91a968e83a8d
 ---
 
 # Цвет
@@ -18,7 +18,7 @@ content_sha: 825bbf0ed0a24f4b
 
 Описание метода
 
-Метод возвращает возможные значения [характеристики](./work-with-products#tag/categoriesSubcategoriesAndCharacteristics/paths/~1content~1v2~1object~1charcs~1%7BsubjectId%7D/get) предмета `Цвет`.
+Метод возвращает возможные значения [характеристики](./item-management#tag/categoriesSubcategoriesAndCharacteristics/operation/getV2ObjectCharcsSubjectId) предмета `Цвет`.
 
 Лимит запросов на один аккаунт продавца для методов Характеристик:
 

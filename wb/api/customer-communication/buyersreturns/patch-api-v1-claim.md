@@ -9,7 +9,7 @@ tags:
 spec_version: communication
 source: "https://dev.wildberries.ru/docs/openapi/customer-communication"
 deprecated: false
-content_sha: d5a583146aa297d3
+content_sha: 6139b0310fc58bdb
 ---
 
 # Ответ на заявку покупателя
@@ -18,7 +18,7 @@ content_sha: d5a583146aa297d3
 
 Описание метода
 
-Метод отправляет ответ на [заявку](./user-communication#tag/buyersReturns/operation/getV1Claims) покупателя на возврат товаров.
+Метод отправляет ответ на [заявку](./customer-communication#tag/buyersReturns/operation/getV1Claims) покупателя на возврат товаров.
 
 Лимит запросов на один аккаунт продавца:
 
@@ -34,7 +34,7 @@ content_sha: d5a583146aa297d3
 **Тело запроса** (`application/json`):
 
 - `id` — string<UUID> **обязательный**. ID заявки
-- `action` — string **обязательный**. Действие с заявкой. Используйте одно из значений массива `actions` — ответа [метода получения заявок](./user-communication#tag/buyersReturns/operation/getV1Claims)
+- `action` — string **обязательный**. Действие с заявкой. Используйте одно из значений массива `actions` — ответа [метода получения заявок](./customer-communication#tag/buyersReturns/operation/getV1Claims)
 - `comment` — string. Комментарий. Применимо только при `"action":"rejectcustom"` или `"action":"approvecc1"`. При `"action":"rejectcustom"` параметр обязателен
 
 ## Ответы

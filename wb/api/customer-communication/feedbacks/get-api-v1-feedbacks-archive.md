@@ -9,7 +9,7 @@ tags:
 spec_version: communication
 source: "https://dev.wildberries.ru/docs/openapi/customer-communication"
 deprecated: false
-content_sha: 01dda527ea008ea7
+content_sha: 8c6b01c2f56fad38
 ---
 
 # Список архивных отзывов
@@ -18,7 +18,7 @@ content_sha: 01dda527ea008ea7
 
 Описание метода
 
-Метод возвращает список архивных [отзывов](./user-communication#tag/feedbacks/operation/getV1Feedbacks).
+Метод возвращает список архивных [отзывов](./customer-communication#tag/feedbacks/operation/getV1Feedbacks).
 
 Отзыв становится архивным, если:
  - на отзыв получен ответ

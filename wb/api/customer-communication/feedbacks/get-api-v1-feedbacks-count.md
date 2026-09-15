@@ -9,7 +9,7 @@ tags:
 spec_version: communication
 source: "https://dev.wildberries.ru/docs/openapi/customer-communication"
 deprecated: false
-content_sha: aec6c59cc1aaff13
+content_sha: 0837355d39a3270c
 ---
 
 # Количество отзывов
@@ -18,7 +18,7 @@ content_sha: aec6c59cc1aaff13
 
 Описание метода
 
-Метод возвращает количество обработанных или необработанных [отзывов](./user-communication#tag/feedbacks/operation/getV1Feedbacks) за заданный период.
+Метод возвращает количество обработанных или необработанных [отзывов](./customer-communication#tag/feedbacks/operation/getV1Feedbacks) за заданный период.
 Отзыв считается обработанным, если выполняется одно из условий:
  - на отзыв получен ответ
  - отзыв содержит только оценку (без текста и фото)

@@ -1,11 +1,11 @@
 ---
 title: Склады продавца
 api: wb-item-management
-tag: Склады продавца
+tag: sellerWarehouses
 group: ""
 kind: guide
 source: "https://dev.wildberries.ru/docs/openapi/item-management"
-content_sha: 1d31faf7f16f051d
+content_sha: 2973bd8c71bd2518
 ---
 
 # Склады продавца
@@ -16,12 +16,12 @@ content_sha: 1d31faf7f16f051d
 
  Узнать больше о складах продавца можно в [справочном центре](https://seller.wildberries.ru/instructions/material/A-6?categoryId=2a88d2ed-45c4-4205-a540-7d0e87f0193d)
 
-На складах продавца доступно управление [остатками товаров](./work-with-products#tag/Ostatki-na-skladah-prodavca).
+На складах продавца доступно управление [остатками товаров](./item-management#tag/sellerWarehousesInventory).
 
 Чтобы работать со складами продавца, вы можете:
- 1. Получать [список складов WB](./work-with-products#tag/Sklady-prodavca/paths/~1api~1v3~1offices/get), чтобы связывать склады WB и склады продавца при [создании](./work-with-products#tag/Sklady-prodavca/paths/~1api~1v3~1warehouses/post) и [редактировании](./work-with-products#tag/Sklady-prodavca/paths/~1api~1v3~1warehouses~1%7BwarehouseId%7D/put) склада.
- 2. Получать [список складов продавца](./work-with-products#tag/Sklady-prodavca/paths/~1api~1v3~1warehouses/get).
- 3. [Получать](./work-with-products#tag/Sklady-prodavca/paths/~1api~1v3~1dbw~1warehouses~1%7BwarehouseId%7D~1contacts/get) и [обновлять](./work-with-products#tag/Sklady-prodavca/paths/~1api~1v3~1dbw~1warehouses~1%7BwarehouseId%7D~1contacts/put) список контактов складов модели DBW.
- 4. [Создавать](./work-with-products#tag/Sklady-prodavca/paths/~1api~1v3~1warehouses/post) склады модели FBS.
- 5. [Обновлять](./work-with-products#tag/Sklady-prodavca/paths/~1api~1v3~1warehouses~1%7BwarehouseId%7D/put) склады продавца.
- 6. [Удалять](./work-with-products#tag/Sklady-prodavca/paths/~1api~1v3~1warehouses~1%7BwarehouseId%7D/delete) склады продавца.
+ 1. Получать [список складов WB](./item-management#tag/sellerWarehouses/operation/getV3Offices), чтобы связывать склады WB и склады продавца при [создании](./item-management#tag/sellerWarehouses/operation/postV3Warehouses) и [редактировании](./item-management#tag/sellerWarehouses/operation/putV3WarehousesWarehouseId) склада.
+ 2. Получать [список складов продавца](./item-management#tag/sellerWarehouses/operation/getV3Warehouses).
+ 3. [Получать](./item-management#tag/sellerWarehouses/operation/getV3DbwWarehousesWarehouseIdContacts) и [обновлять](./item-management#tag/sellerWarehouses/operation/putV3DbwWarehousesWarehouseIdContacts) список контактов складов модели DBW.
+ 4. [Создавать](./item-management#tag/sellerWarehouses/operation/postV3Warehouses) склады модели FBS.
+ 5. [Обновлять](./item-management#tag/sellerWarehouses/operation/putV3WarehousesWarehouseId) склады продавца.
+ 6. [Удалять](./item-management#tag/sellerWarehouses/operation/deleteV3WarehousesWarehouseId) склады продавца.

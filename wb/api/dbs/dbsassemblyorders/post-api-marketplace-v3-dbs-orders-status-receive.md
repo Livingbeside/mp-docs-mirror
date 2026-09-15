@@ -9,7 +9,7 @@ tags:
 spec_version: dbs
 source: "https://dev.wildberries.ru/docs/openapi/dbs"
 deprecated: false
-content_sha: c54ef9bc93d63e86
+content_sha: 7f34e1fc18c6535e
 ---
 
 # Сообщить о получении заказов
@@ -18,7 +18,7 @@ content_sha: c54ef9bc93d63e86
 
 Описание метода
 
-Метод переводит [сборочные задания](./orders-dbs#tag/dbsAssemblyOrders) из [статуса](./orders-dbs#tag/dbsAssemblyOrders/operation/postV3DbsOrdersStatusInfo) `deliver` в статус `receive` — получено покупателем.
+Метод переводит [сборочные задания](./dbs#tag/dbsAssemblyOrders) из [статуса](./dbs#tag/dbsAssemblyOrders/operation/postV3DbsOrdersStatusInfo) `deliver` в статус `receive` — получено покупателем.
 
 Лимит запросов на один аккаунт продавца:
 
@@ -46,7 +46,7 @@ content_sha: c54ef9bc93d63e86
 - `results` — array[object]
   - `errors` — array[object]. Детали ошибки
     - `code` — integer. Код ошибки
-    - `detail` — string. - `NotFound` — сборочное задание не найдено - `StatusMismatch` — операция невозможна для этого статуса сборочного задания - `SGTINIsNotFilled` — обязательный [код маркировки](./orders-dbs#tag/dbsLabelIdentifiers/operation/postV3DbsOrdersMetaSgtin) не указан
+    - `detail` — string. - `NotFound` — сборочное задание не найдено - `StatusMismatch` — операция невозможна для этого статуса сборочного задания - `SGTINIsNotFilled` — обязательный [код маркировки](./dbs#tag/dbsLabelIdentifiers/operation/postV3DbsOrdersMetaSgtin) не указан
   - `isError` — boolean. Есть ли ошибки
   - `orderId` — integer. ID сборочного задания с успешно обновлёнными данными
 

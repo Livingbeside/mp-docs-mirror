@@ -3,13 +3,13 @@ title: Ставка НДС
 api: wb-item-management
 method: GET
 path: /content/v2/directory/vat
-operation_id: get-content-v2-directory-vat
+operation_id: getV2DirectoryVat
 tags:
   - categoriesSubcategoriesAndCharacteristics
 spec_version: items
 source: "https://dev.wildberries.ru/docs/openapi/item-management"
 deprecated: false
-content_sha: 51012b605daea2ae
+content_sha: 479fa4a5ca7b4afd
 ---
 
 # Ставка НДС
@@ -18,7 +18,7 @@ content_sha: 51012b605daea2ae
 
 Описание метода
 
-Метод возвращает возможные значения [характеристики](./work-with-products#tag/categoriesSubcategoriesAndCharacteristics/paths/~1content~1v2~1object~1charcs~1%7BsubjectId%7D/get) предмета `Ставка НДС`.
+Метод возвращает возможные значения [характеристики](./item-management#tag/categoriesSubcategoriesAndCharacteristics/operation/getV2ObjectCharcsSubjectId) предмета `Ставка НДС`.
 
 Лимит запросов на один аккаунт продавца для методов Характеристик:
 

@@ -9,7 +9,7 @@ tags:
 spec_version: finances
 source: "https://dev.wildberries.ru/docs/openapi/documents-and-accounting"
 deprecated: false
-content_sha: df6610a177484780
+content_sha: b3dd7b8180285765
 ---
 
 # Список документов
@@ -18,7 +18,7 @@ content_sha: df6610a177484780
 
 Описание метода
 
-Метод возвращает список документов продавца. Вы можете получить [один](./financial-reports-and-accounting#tag/documents/operation/getV1DocumentsDownload) или [несколько](./financial-reports-and-accounting#tag/documents/operation/postV1DocumentsDownloadAll) документов из полученного списка.
+Метод возвращает список документов продавца. Вы можете получить [один](./documents-and-accounting#tag/documents/operation/getV1DocumentsDownload) или [несколько](./documents-and-accounting#tag/documents/operation/postV1DocumentsDownloadAll) документов из полученного списка.
 
 Лимит запросов на один аккаунт продавца:
 
@@ -38,7 +38,7 @@ content_sha: df6610a177484780
 | `endTime` | query | string<date> | нет | Конец периода. Только вместе с `beginTime` |
 | `sort` | query | string (date, category) | нет | Сортировка: - `date` — по дате создания документа - `category` — по категории (только при `locale=ru`) Только вместе с `order` |
 | `order` | query | string (desc, asc) | нет | Сортировка: - `desc` — по убыванию - `asc` — по возрастанию Только вместе с `sort` |
-| `category` | query | string | нет | ID [категории документов](./financial-reports-and-accounting#tag/documents/operation/getV1DocumentsCategories) из поля `name` |
+| `category` | query | string | нет | ID [категории документов](./documents-and-accounting#tag/documents/operation/getV1DocumentsCategories) из поля `name` |
 | `serviceName` | query | string | нет | Уникальный ID документа |
 | `limit` | query | integer | нет | Максимальное количество строк ответа |
 | `offset` | query | integer | нет | После какой строки выдавать данные |
@@ -51,7 +51,7 @@ content_sha: df6610a177484780
   - `documents` — array[object]. Категории документов
     - `serviceName` — string. Уникальный ID документа
     - `name` — string. Название документа
-    - `category` — string. Название [категории документов](./financial-reports-and-accounting#tag/documents/operation/getV1DocumentsCategories) из поля ответа `title`
+    - `category` — string. Название [категории документов](./documents-and-accounting#tag/documents/operation/getV1DocumentsCategories) из поля ответа `title`
     - `extensions` — array[string]. Форматы документа
     - `creationTime` — string. Дата и время создания документа
     - `viewed` — boolean. Выгружен ли документ в личном кабинете

@@ -3,13 +3,13 @@ title: Управление ярлыками в карточке товара
 api: wb-item-management
 method: POST
 path: /content/v2/tag/nomenclature/link
-operation_id: post-content-v2-tag-nomenclature-link
+operation_id: postV2TagNomenclatureLink
 tags:
   - labels
 spec_version: items
 source: "https://dev.wildberries.ru/docs/openapi/item-management"
 deprecated: false
-content_sha: f40f7e47fbbcab57
+content_sha: 53b8f937ac526b0f
 ---
 
 # Управление ярлыками в карточке товара
@@ -20,7 +20,7 @@ content_sha: f40f7e47fbbcab57
 
 Метод добавляет или снимает ярлык с карточки товара. К карточке можно добавить максимум 15 ярлыков.
 
-При удалении ярлыка из карточки товара он не удаляется из [списка ярлыков](./work-with-products#tag/labels/paths/~1content~1v2~1tags/get) продавца.
+При удалении ярлыка из карточки товара он не удаляется из [списка ярлыков](./item-management#tag/labels/operation/getV2Tags) продавца.
 
 Лимит запросов на один аккаунт продавца для всех методов Ярлыков:
 

@@ -9,7 +9,7 @@ tags:
 spec_version: promotion
 source: "https://dev.wildberries.ru/docs/openapi/promotion"
 deprecated: false
-content_sha: 77097d7bcbb8cf4d
+content_sha: 61b4707450abdb30
 ---
 
 # Добавить товар в акцию
@@ -20,7 +20,7 @@ content_sha: 77097d7bcbb8cf4d
 
 Метод создаёт задание на загрузку товара в [акцию](./promotion#tag/promoCalendar/operation/getV1CalendarPromotionsDetails).
 
-Состояние загрузки можно проверить с помощью [отдельных методов](./work-with-products#tag/Ceny-i-skidki/paths/~1api~1v2~1history~1tasks/get).
+Состояние загрузки можно проверить с помощью [отдельных методов](./item-management#tag/pricesAndDiscounts/operation/getV2HistoryTasks).
 
  Данный метод неприменим для автоакций.
 

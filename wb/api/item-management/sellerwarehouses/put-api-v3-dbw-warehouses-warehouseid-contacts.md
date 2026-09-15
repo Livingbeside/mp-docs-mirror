@@ -1,0 +1,100 @@
+---
+title: Обновить список контактов{{ /api/v3/dbw/warehouses/{warehouseId}/contacts }}
+api: wb-item-management
+method: PUT
+path: /api/v3/dbw/warehouses/{warehouseId}/contacts
+operation_id: putV3DbwWarehousesWarehouseIdContacts
+tags:
+  - sellerWarehouses
+spec_version: items
+source: "https://dev.wildberries.ru/docs/openapi/item-management"
+deprecated: false
+content_sha: 9b4aa658d89568d8
+---
+
+# Обновить список контактов{{ /api/v3/dbw/warehouses/{warehouseId}/contacts }}
+
+`PUT /api/v3/dbw/warehouses/{warehouseId}/contacts`
+
+Описание метода
+
+Метод обновляет список контактов [склада продавца](./item-management#tag/sellerWarehouses/operation/getV3Warehouses).
+
+ Список контактов перезаписывается при обновлении. Поэтому в запросе нужно передать все параметры списка контактов, в том числе те, которые вы не собираетесь обновлять.
+
+Только для складов с типом доставки `3` — курьером WB (DBW).
+
+К складу можно добавить максимум 5 контактов. Чтобы удалить контакты, отправьте пустой массив `contacts`.
+
+Лимит запросов на один аккаунт продавца для следующих методов DBW:
+
+ получение и обновление списка контактов
+
+ получение и удаление идентификаторов маркировки
+
+ методы сборочных заданий
+
+ 
+
+| Период | Лимит | Интервал | Всплеск |
+| --- | --- | --- | --- |
+| 1 мин | 300 запросов | 200 мс | 20 запросов |
+
+Один запрос с кодами ответов 4XX учитывается как 10 запросов
+
+## Параметры
+
+| Имя | Где | Тип | Обяз. | Описание |
+|---|---|---|---|---|
+| `warehouseId` | path | integer<int64> | да | ID склада продавца |
+
+## Запрос
+
+**Тело запроса** (`application/json`):
+
+- `contacts` — array[object]
+  - `comment` — string. Комментарий
+  - `phone` — string. Номер телефона. Поддерживаются коды стран: - `+7` — Россия, Казахстан - `+374` — Армения - `+375` — Беларусь - `+996` — Кыргызстан
+
+## Ответы
+
+**204** — Обновлено
+
+**400** — Неправильный запрос
+
+- `code` — string. Код ошибки
+- `message` — string. Описание ошибки
+- `data` — object. Дополнительные данные ошибки
+
+**401** — Не авторизован
+
+- `title` — string. Заголовок ошибки
+- `detail` — string. Детали ошибки
+- `code` — string. Внутренний код ошибки
+- `requestId` — string. Уникальный ID запроса
+- `origin` — string. ID внутреннего сервиса WB
+- `status` — number. HTTP статус-код
+- `statusText` — string. Расшифровка HTTP статус-кода
+- `timestamp` — string<date-time>. Дата и время запроса
+
+**402** — Требуется платёж
+
+- `title` — string. Заголовок ошибки
+- `detail` — string. Детали ошибки. Ошибка возвращается только сервисам из [Каталога решений для бизнеса](/business-solutions)
+
+**403** — Доступ запрещён
+
+- `code` — string. Код ошибки
+- `message` — string. Описание ошибки
+- `data` — object. Дополнительные данные ошибки
+
+**429** — Слишком много запросов
+
+- `title` — string. Заголовок ошибки
+- `detail` — string. Детали ошибки
+- `code` — string. Внутренний код ошибки
+- `requestId` — string. Уникальный ID запроса
+- `origin` — string. ID внутреннего сервиса WB
+- `status` — number. HTTP статус-код
+- `statusText` — string. Расшифровка HTTP статус-кода
+- `timestamp` — string<date-time>. Дата и время запроса

@@ -9,7 +9,7 @@ tags:
 spec_version: analytics
 source: "https://dev.wildberries.ru/docs/openapi/analytics"
 deprecated: false
-content_sha: 3c724de5e046b589
+content_sha: ff9ead3379baf61c
 ---
 
 # Данные по размерам
@@ -28,7 +28,7 @@ content_sha: 3c724de5e046b589
 
 Товар не имеет размера, если у него единственный размер с `"techSize":"0"`. В ответах метода получения данных по [товарам](./analytics#tag/stocksReport/operation/postV2StocksReportProductsProducts) у таких товаров `"hasSizes":false`.
 
-Данные по складам продавца приходят в агрегированном виде — по всем сразу, без детализации по конкретным складам — эти записи будут с `"regionName":"Маркетплейс"` и `"officeName":""`.
+Данные по складам продавца приходят в агрегированном виде — по всем сразу, без детализации по конкретным складам — эти записи будут с `"regionName":"Свой склад"` и `"officeName":""`.
 
 Данные отчёта обновляются 1 раз в час.
 

@@ -9,7 +9,7 @@ tags:
 spec_version: dbs
 source: "https://dev.wildberries.ru/docs/openapi/dbs"
 deprecated: false
-content_sha: c6570ab4c0ee647f
+content_sha: 3ffc97840784ea58
 ---
 
 # Закрепить УИН за сборочными заданиями
@@ -18,10 +18,10 @@ content_sha: c6570ab4c0ee647f
 
 Описание метода
 
-Метод обновляет УИН, уникальные идентификационные номера, в [идентификаторах маркировки сборочных заданий](./orders-dbs#tag/dbsLabelIdentifiers/operation/postV3DbsOrdersMetaDetails).
+Метод обновляет УИН, уникальные идентификационные номера, в [идентификаторах маркировки сборочных заданий](./dbs#tag/dbsLabelIdentifiers/operation/postV3DbsOrdersMetaDetails).
 У одного сборочного задания может быть только один УИН.
 
-Закрепить УИН можно только за сборочным заданием в [статусе](./orders-dbs#tag/dbsAssemblyOrders/operation/postV3DbsOrdersStatusInfo) `confirm` и если в [идентификаторах маркировки сборочного задания](./orders-dbs#tag/dbsLabelIdentifiers/operation/postV3DbsOrdersMetaDetails) есть поле `uin`.
+Закрепить УИН можно только за сборочным заданием в [статусе](./dbs#tag/dbsAssemblyOrders/operation/postV3DbsOrdersStatusInfo) `confirm` и если в [идентификаторах маркировки сборочного задания](./dbs#tag/dbsLabelIdentifiers/operation/postV3DbsOrdersMetaDetails) есть поле `uin`.
 
 Лимит запросов на один аккаунт продавца для всех методов закрепления идентификаторов маркировки DBS:
 

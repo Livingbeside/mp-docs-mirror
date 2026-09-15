@@ -9,7 +9,7 @@ tags:
 spec_version: dbs
 source: "https://dev.wildberries.ru/docs/openapi/dbs"
 deprecated: false
-content_sha: 8277f42aa065e0bf
+content_sha: ac0a7abeda8ee8bc
 ---
 
 # Получить статусы сборочных заданий
@@ -18,7 +18,7 @@ content_sha: 8277f42aa065e0bf
 
 Описание метода
 
-Метод возвращает статусы [сборочных заданий](./orders-dbs#tag/dbsAssemblyOrders) по их ID.
+Метод возвращает статусы [сборочных заданий](./dbs#tag/dbsAssemblyOrders) по их ID.
 
 `supplierStatus` — статус сборочного задания. Триггер его изменения — действие самого продавца.
 
@@ -26,11 +26,11 @@ content_sha: 8277f42aa065e0bf
 | Статус | Описание | Как перевести сборочное задание в данный статус |
 | ------- | --------- | --------------------------------------|
 | `new` | **Новое сборочное задание** | |
-| `confirm` | **На сборке** | [Перевести сборочное задание на сборку](./orders-dbs#tag/dbsAssemblyOrders/operation/postV3DbsOrdersStatusConfirm)
-| `deliver` | **В доставке** | [Перевести сборочное задание в доставку](./orders-dbs#tag/dbsAssemblyOrders/operation/postV3DbsOrdersStatusDeliver)
-| `receive` | **Получено покупателем** | [Сообщить, что заказ принят покупателем](./orders-dbs#tag/dbsAssemblyOrders/operation/postV3DbsOrdersStatusReceive) <br>
-| `reject` | **Отказ покупателя при получении** | [Сообщить, что покупатель отказался от заказа](./orders-dbs#tag/dbsAssemblyOrders/operation/postV3DbsOrdersStatusReject)
-| `cancel` | **Отменено продавцом** | [Отменить сборочное задание](./orders-dbs#tag/dbsAssemblyOrders/operation/postV3DbsOrdersStatusCancel)
+| `confirm` | **На сборке** | [Перевести сборочное задание на сборку](./dbs#tag/dbsAssemblyOrders/operation/postV3DbsOrdersStatusConfirm)
+| `deliver` | **В доставке** | [Перевести сборочное задание в доставку](./dbs#tag/dbsAssemblyOrders/operation/postV3DbsOrdersStatusDeliver)
+| `receive` | **Получено покупателем** | [Сообщить, что заказ принят покупателем](./dbs#tag/dbsAssemblyOrders/operation/postV3DbsOrdersStatusReceive) <br>
+| `reject` | **Отказ покупателя при получении** | [Сообщить, что покупатель отказался от заказа](./dbs#tag/dbsAssemblyOrders/operation/postV3DbsOrdersStatusReject)
+| `cancel` | **Отменено продавцом** | [Отменить сборочное задание](./dbs#tag/dbsAssemblyOrders/operation/postV3DbsOrdersStatusCancel)
 | `cancel_missed_call` | **Отмена по причине недозвона** | Статус меняется автоматически |
 
 `wbStatus` — статус системы Wildberries.

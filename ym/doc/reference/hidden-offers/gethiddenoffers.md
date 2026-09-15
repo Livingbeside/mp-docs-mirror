@@ -2,8 +2,8 @@
 title: Просмотр скрытых товаров
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/hidden-offers/getHiddenOffers.md"
-fetched_at: "2026-09-11T01:57:48Z"
-content_sha: 5e91b0dbf1ab1daa
+fetched_at: "2026-09-15T02:21:37Z"
+content_sha: 31c56f13f2d7ab25
 ---
 
 ---
@@ -977,7 +977,7 @@ alternate:
         uniqueItems: true
         items:
           $ref: >-
-            /home/sandbox/.ya/build/build_root/givs/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/common/schemas.yaml#/ShopSku
+            /home/sandbox/.ya/build/build_root/4tup/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/common/schemas.yaml#/ShopSku
     - name: pageToken
       description: >
         Идентификатор страницы c результатами.

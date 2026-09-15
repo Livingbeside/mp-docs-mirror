@@ -2,8 +2,8 @@
 title: Информация о заказах
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/orders/getBusinessOrders.md"
-fetched_at: "2026-09-11T01:58:03Z"
-content_sha: 7c592d8760ee86dc
+fetched_at: "2026-09-15T02:21:51Z"
+content_sha: a696e886e77b5769
 ---
 
 ---
@@ -6191,7 +6191,7 @@ alternate:
             - OTHER
         minItems: 1
     $defs:
-      /home/sandbox/.ya/build/build_root/givs/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/orders/api/getBusinessOrders.yaml#/OrderDatesFilterDTO:
+      /home/sandbox/.ya/build/build_root/4tup/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/orders/api/getBusinessOrders.yaml#/OrderDatesFilterDTO:
         type: object
         description: Фильтр по датам заказов.
         properties:

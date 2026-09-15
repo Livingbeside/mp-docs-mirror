@@ -5,7 +5,7 @@ tag: listings
 group: ""
 kind: guide
 source: "https://dev.wildberries.ru/docs/openapi/item-management"
-content_sha: d52f973c599cf4d1
+content_sha: f338668e5e0f761a
 ---
 
 # Карточки товаров
@@ -16,9 +16,9 @@ content_sha: d52f973c599cf4d1
 
  Узнать больше о карточках товаров можно в [справочном центре](https://seller.wildberries.ru/instructions/material/A-165?categoryId=3a795fe1-d5cb-4120-be1a-387eed6494e5)
 
-После [создания карточек товаров](./work-with-products#tag/listingItems) вы можете:
- 1. Получать [списки с подробной информацией](./work-with-products#tag/listings/paths/~1content~1v2~1get~1cards~1list/post) об уже созданных карточках. Если вы не увидели карточку товара в списке после её создания, [произошла ошибка](./work-with-products#tag/listings/paths/~1content~1v2~1cards~1error~1list/post).
- 2. [Объединять и разъединять созданные карточки](./work-with-products#tag/listings/paths/~1content~1v2~1cards~1moveNm/post).
- 3. [Редактировать данные карточки товара](./work-with-products#tag/listings/paths/~1content~1v2~1cards~1update/post).
- 4. Работать с корзиной: можно [переносить карточки товаров](./work-with-products#tag/listings/paths/~1content~1v2~1cards~1delete~1trash/post) в корзину и [восстанавливать их](./work-with-products#tag/listings/paths/~1content~1v2~1cards~1recover/post).
- 5. Получать [списки карточек товаров в корзине](./work-with-products#tag/listings/paths/~1content~1v2~1get~1cards~1trash/post).
+После [создания карточек товаров](./item-management#tag/listingItems) вы можете:
+ 1. Получать [списки с подробной информацией](./item-management#tag/listings/operation/postV2GetCardsList) об уже созданных карточках. Если вы не увидели карточку товара в списке после её создания, [произошла ошибка](./item-management#tag/listings/operation/postV2CardsErrorList).
+ 2. [Объединять и разъединять созданные карточки](./item-management#tag/listings/operation/postV2CardsMoveNm).
+ 3. [Редактировать данные карточки товара](./item-management#tag/listings/operation/postV2CardsUpdate).
+ 4. Работать с корзиной: можно [переносить карточки товаров](./item-management#tag/listings/operation/postV2CardsDeleteTrash) в корзину и [восстанавливать их](./item-management#tag/listings/operation/postV2CardsRecover).
+ 5. Получать [списки карточек товаров в корзине](./item-management#tag/listings/operation/postV2GetCardsTrash).

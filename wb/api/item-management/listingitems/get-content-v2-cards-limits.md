@@ -3,13 +3,13 @@ title: Лимиты карточек товаров
 api: wb-item-management
 method: GET
 path: /content/v2/cards/limits
-operation_id: get-content-v2-cards-limits
+operation_id: getV2CardsLimits
 tags:
   - listingItems
 spec_version: items
 source: "https://dev.wildberries.ru/docs/openapi/item-management"
 deprecated: false
-content_sha: c36079d6ed65bc7d
+content_sha: 4df3222f1f37bfcc
 ---
 
 # Лимиты карточек товаров
@@ -18,19 +18,19 @@ content_sha: c36079d6ed65bc7d
 
 Описание метода
 
-Возвращает бесплатные и платные лимиты продавца на [создание карточек товаров](./work-with-products#tag/listingItems/paths/~1content~1v2~1cards~1upload/post).
+Возвращает бесплатные и платные лимиты продавца на [создание карточек товаров](./item-management#tag/listingItems/operation/postV2CardsUpload).
 
 Формула для получения количества карточек, которые можно создать:
 
 > (`freeLimits` + `paidLimits`) - количество созданных карточек
 
-Созданными считаются карточки, которые можно получить через методы [список карточек товаров](./work-with-products#tag/listings/paths/~1content~1v2~1get~1cards~1list/post) и [список карточек товаров в корзине](./work-with-products#tag/listings/paths/~1content~1v2~1get~1cards~1trash/post).
+Созданными считаются карточки, которые можно получить через методы [список карточек товаров](./item-management#tag/listings/operation/postV2GetCardsList) и [список карточек товаров в корзине](./item-management#tag/listings/operation/postV2GetCardsTrash).
 
 Лимит запросов на один аккаунт продавца для методов:
 
- [получения лимитов карточек товаров](./work-with-products#tag/listingItems/paths/~1content~1v2~1cards~1limits/get)
+ [получения лимитов карточек товаров](./item-management#tag/listingItems/operation/getV2CardsLimits)
 
- [получения несозданных карточек товаров с ошибками](./work-with-products#tag/listings/paths/~1content~1v2~1cards~1error~1list/post)
+ [получения несозданных карточек товаров с ошибками](./item-management#tag/listings/operation/postV2CardsErrorList)
 
 | Тип | Период | Лимит | Интервал | Всплеск |
 | --- | --- | --- | --- | --- |

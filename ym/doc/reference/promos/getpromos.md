@@ -2,8 +2,8 @@
 title: Список акций
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/promos/getPromos.md"
-fetched_at: "2026-09-11T01:58:00Z"
-content_sha: 4b65b80740632437
+fetched_at: "2026-09-15T02:21:48Z"
+content_sha: f4b8337b586eea25
 ---
 
 ---
@@ -1663,7 +1663,7 @@ alternate:
           По умолчанию возвращаются все типы акций.
         $ref: '#/$defs/MechanicsType'
     $defs:
-      /home/sandbox/.ya/build/build_root/givs/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/promos/schemas.yaml#/MechanicsType:
+      /home/sandbox/.ya/build/build_root/4tup/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/promos/schemas.yaml#/MechanicsType:
         description: |
           Тип акции:
   

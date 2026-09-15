@@ -5,12 +5,23 @@ tag: News
 group: Обновления
 kind: changelog
 source: "https://docs.ozon.ru/api/seller/"
-content_sha: e60efcf05daa93b9
+content_sha: ad7a127dfdef707a
 ---
 
 # Обновления
 
 Следите за обновлениями документации на платформе для разработчиков [Ozon for dev](https://dev.ozon.ru/).
+
+## 14 сентября 2026
+
+| Метод | Изменение |
+|----------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [/v3/product/import](#operation/ProductAPI_ImportProductsV3)<br>[/v1/product/import-by-sku](#operation/ProductAPI_ImportProductsBySKU) | Обновили описание параметров `items.old_price` и `items.price` в запросе методов. |
+| [/v3/product/info/list](#operation/ProductAPI_GetProductInfoList) | Обновили описание параметров `items.min_price`, `items.old_price` и `items.price` в ответе метода. |
+| [/v1/product/import/prices](#operation/ProductAPI_ImportProductsPrices) | Обновили описание параметров `prices.min_price`, `prices.min_price_for_auto_actions_enabled`, `prices.old_price`, `prices.price` и `prices.price_strategy_enabled` в запросе метода. |
+| [/v5/product/info/prices](#operation/ProductAPI_GetProductInfoPrices) | Обновили описание параметров `items.price.marketing_seller_price`, `items.price.min_price`, `items.price.old_price` и `items.price.price` в ответе метода. |
+| [/v1/product/prices/details](#operation/ProductPricesDetails) | Обновили описание параметров `prices.customer_price`, `prices.price` и `prices.price_indexes` в ответе метода. |
+| [/v1/analytics/category/comparison](#operation/AnalyticsCategoryComparison) | Добавили бета-метод для получения информации о сравнении категорий. |
 
 ## 11 сентября 2026
 

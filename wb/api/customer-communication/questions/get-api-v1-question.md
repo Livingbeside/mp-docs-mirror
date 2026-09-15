@@ -9,7 +9,7 @@ tags:
 spec_version: communication
 source: "https://dev.wildberries.ru/docs/openapi/customer-communication"
 deprecated: false
-content_sha: 388e1a3688557970
+content_sha: 19346e5e03154b8c
 ---
 
 # Получить вопрос по ID
@@ -18,7 +18,7 @@ content_sha: 388e1a3688557970
 
 Описание метода
 
-Метод возвращает данные [вопроса](./user-communication#tag/questions/operation/getV1Questions) по его ID. Далее вы можете [работать с этим вопросом](./user-communication#tag/questions/operation/patchV1Questions).
+Метод возвращает данные [вопроса](./customer-communication#tag/questions/operation/getV1Questions) по его ID. Далее вы можете [работать с этим вопросом](./customer-communication#tag/questions/operation/patchV1Questions).
 
 Лимит запросов на один аккаунт продавца для всех методов категории Вопросы и отзывы:
 

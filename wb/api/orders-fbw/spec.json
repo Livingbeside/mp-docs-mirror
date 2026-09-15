@@ -889,7 +889,7 @@
             "type": "string"
           },
           "tnved": {
-            "description": "Код ТНВЭД.\n<br>\nЕсли `\"needKiz\":true`, а `\"tnved\":null`, нужно заполнить характеристику товара **ТН ВЭД** в [личном кабинете](https://seller.wildberries.ru/new-goods) или по [API](./work-with-products#tag/listings/paths/~1content~1v2~1cards~1update/post)\n",
+            "description": "Код ТНВЭД.\n<br>\nЕсли `\"needKiz\":true`, а `\"tnved\":null`, нужно заполнить характеристику товара **ТН ВЭД** в [личном кабинете](https://seller.wildberries.ru/new-goods) или по [API](./item-management#tag/listings/operation/postV2CardsUpdate)\n",
             "nullable": true,
             "type": "string"
           },

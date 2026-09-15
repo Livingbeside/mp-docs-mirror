@@ -9,7 +9,7 @@ tags:
 spec_version: finances
 source: "https://dev.wildberries.ru/docs/openapi/documents-and-accounting"
 deprecated: false
-content_sha: 8fd26c204cbc6101
+content_sha: d428df09a0d20d91
 ---
 
 # Получить документ
@@ -18,7 +18,7 @@ content_sha: 8fd26c204cbc6101
 
 Описание метода
 
-Метод загружает один документ из [списка документов продавца](./financial-reports-and-accounting#tag/documents/operation/getV1DocumentsList).
+Метод загружает один документ из [списка документов продавца](./documents-and-accounting#tag/documents/operation/getV1DocumentsList).
 
 Лимит запросов на один аккаунт продавца:
 

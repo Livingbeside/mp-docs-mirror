@@ -9,7 +9,7 @@ tags:
 spec_version: rates
 source: "https://dev.wildberries.ru/docs/openapi/rates"
 deprecated: false
-content_sha: d1f337c8c3612fe3
+content_sha: 4a822fd1d5c01d91
 ---
 
 # Комиссия по категориям товаров
@@ -18,7 +18,7 @@ content_sha: d1f337c8c3612fe3
 
 Описание метода
 
-Метод возвращает данные о [комиссии](https://seller.wildberries.ru/dynamic-product-categories/commission) WB по [родительским категориям товаров](./work-with-products#tag/categoriesSubcategoriesAndCharacteristics/paths/~1content~1v2~1object~1parent~1all/get) согласно модели продаж.
+Метод возвращает данные о [комиссии](https://seller.wildberries.ru/dynamic-product-categories/commission) WB по [родительским категориям товаров](./item-management#tag/categoriesSubcategoriesAndCharacteristics/operation/getV2ObjectParentAll) согласно модели продаж.
 
 Лимит запросов на один аккаунт продавца:
 

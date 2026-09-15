@@ -3,13 +3,13 @@ title: Генерация баркодов
 api: wb-item-management
 method: POST
 path: /content/v2/barcodes
-operation_id: post-content-v2-barcodes
+operation_id: postV2Barcodes
 tags:
   - listingItems
 spec_version: items
 source: "https://dev.wildberries.ru/docs/openapi/item-management"
 deprecated: false
-content_sha: e0e5e7ccba271221
+content_sha: 756719fd0497d0b6
 ---
 
 # Генерация баркодов
@@ -18,7 +18,7 @@ content_sha: e0e5e7ccba271221
 
 Описание метода
 
-Метод генерирует массив уникальных баркодов для создания размера в [карточке товара](./work-with-products#tag/listingItems/paths/~1content~1v2~1cards~1upload/post). Можно использовать, если у вас нет собственных баркодов.
+Метод генерирует массив уникальных баркодов для создания размера в [карточке товара](./item-management#tag/listingItems/operation/postV2CardsUpload). Можно использовать, если у вас нет собственных баркодов.
 
 Лимит запросов на один аккаунт продавца для всех методов категории Контент:
 
@@ -28,17 +28,17 @@ content_sha: e0e5e7ccba271221
 
 Исключение — методы:
 
- [создания карточек товаров](./work-with-products#tag/listingItems/paths/~1content~1v2~1cards~1upload/post)
+ [создания карточек товаров](./item-management#tag/listingItems/operation/postV2CardsUpload)
 
- [создания карточек товаров с присоединением](./work-with-products#tag/listingItems/paths/~1content~1v2~1cards~1upload~1add/post)
+ [создания карточек товаров с присоединением](./item-management#tag/listingItems/operation/postV2CardsUploadAdd)
 
- [редактирования карточек товаров](./work-with-products#tag/listings/paths/~1content~1v2~1cards~1update/post)
+ [редактирования карточек товаров](./item-management#tag/listings/operation/postV2CardsUpdate)
 
- [восстановления карточек товаров из корзины](./work-with-products#tag/listings/paths/~1content~1v2~1cards~1recover/post)
+ [восстановления карточек товаров из корзины](./item-management#tag/listings/operation/postV2CardsRecover)
 
- [получения списка рекомендаций в карточках товаров](./work-with-products#tag/recommendations/operation/postV1RecommendationsList)
+ [получения списка рекомендаций в карточках товаров](./item-management#tag/recommendations/operation/postV1RecommendationsList)
 
- [установки рекомендаций для товаров](./work-with-products#tag/recommendations/operation/postV1RecommendationsSet)
+ [установки рекомендаций для товаров](./item-management#tag/recommendations/operation/postV1RecommendationsSet)
 
 В песочнице — максимум 1 запрос в секунду суммарно для всех методов Контента.
 

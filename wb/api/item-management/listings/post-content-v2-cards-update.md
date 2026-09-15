@@ -3,13 +3,13 @@ title: Редактирование карточек товаров
 api: wb-item-management
 method: POST
 path: /content/v2/cards/update
-operation_id: post-content-v2-cards-update
+operation_id: postV2CardsUpdate
 tags:
   - listings
 spec_version: items
 source: "https://dev.wildberries.ru/docs/openapi/item-management"
 deprecated: false
-content_sha: 00d89068e47fb20c
+content_sha: 168b8beb05ef3609
 ---
 
 # Редактирование карточек товаров
@@ -20,7 +20,7 @@ content_sha: 00d89068e47fb20c
 
 Метод обновляет данные карточек товаров. Также используйте его, чтобы добавлять новые размеры.
 
- Карточка товара перезаписывается при обновлении. Поэтому в запросе нужно передать в том числе те параметры карточки, которые вы не собираетесь обновлять. Их значения можно получить в [списке карточек товаров](./work-with-products#tag/listings/paths/~1content~1v2~1get~1cards~1list/post) и [списке карточек товаров в корзине](./work-with-products#tag/listings/paths/~1content~1v2~1get~1cards~1trash/post).
+ Карточка товара перезаписывается при обновлении. Поэтому в запросе нужно передать в том числе те параметры карточки, которые вы не собираетесь обновлять. Их значения можно получить в [списке карточек товаров](./item-management#tag/listings/operation/postV2GetCardsList) и [списке карточек товаров в корзине](./item-management#tag/listings/operation/postV2GetCardsTrash).
 
 С помощью этого метода нельзя обновлять или удалять:
  - баркоды размеров товара. Можно только добавить дополнительные баркоды
@@ -28,14 +28,14 @@ content_sha: 00d89068e47fb20c
  - цены товаров. Цену можно задать, только если вы добавляете новые размеры
 
 При добавлении нового размера укажите его цену через параметр `price`. Если в запросе не указан `price`, цена размера будет `0` — в этом случае изменить её можно будет с помощью методов:
- - [Установить цены и скидки](./work-with-products#tag/Ceny-i-skidki/paths/~1api~1v2~1upload~1task/post), если у [товара](./work-with-products#tag/Ceny-i-skidki/paths/~1api~1v2~1list~1goods~1filter/get) `"editablePriceSize":false`
- - [Установить цены для размеров](./work-with-products#tag/Ceny-i-skidki/paths/~1api~1v2~1upload~1task~1size/post), если у [товара](./work-with-products#tag/Ceny-i-skidki/paths/~1api~1v2~1list~1goods~1filter/get) `"editablePriceSize":true`
+ - [Установить цены и скидки](./item-management#tag/pricesAndDiscounts/operation/postV2UploadTask), если у [товара](./item-management#tag/pricesAndDiscounts/operation/getV2ListGoodsFilter) `"editablePriceSize":false`
+ - [Установить цены для размеров](./item-management#tag/pricesAndDiscounts/operation/postV2UploadTaskSize), если у [товара](./item-management#tag/pricesAndDiscounts/operation/getV2ListGoodsFilter) `"editablePriceSize":true`
 
 Габариты товаров можно указать только в `сантиметрах`, вес товара с упаковкой — в `килограммах`.
 
 Одним запросом можно отредактировать максимум 3000 карточек товаров (`nmID`). Максимальный размер запроса 10 Мб.
 
-Если ответ `Успешно` (`200`), но какие-то карточки не обновились, проверьте [список несозданных карточек товаров](./work-with-products#tag/listings/paths/~1content~1v2~1cards~1error~1list/post).
+Если ответ `Успешно` (`200`), но какие-то карточки не обновились, проверьте [список несозданных карточек товаров](./item-management#tag/listings/operation/postV2CardsErrorList).
 
 Синхронизация данных с сервисами может занимать до 30 минут. В течение этого времени невозможно добавить остатки на склады и настроить цены. 
 
@@ -51,7 +51,7 @@ content_sha: 00d89068e47fb20c
 
 - `nmID` — integer **обязательный**. Артикул WB
 - `vendorCode` — string **обязательный**. Артикул продавца
-- `kizMarked` — boolean. Подтверждение, что на товар нанесён обязательный код маркировки [Честного знака](https://честныйзнак.рф/): - `true` — продавец подтверждает, что на товар нанесён обязательный код маркировки. - `false` — продавец подтверждает, что на товар нанесён обязательный код маркировки. Передайте в запросе `true`, чтобы подтвердить наличие на товаре обязательного кода маркировки. Карточка товара не пройдёт модерацию, если нет подтверждения продавца о том, что обязательный код маркировки нанесён на товар. Чтобы проверить, является ли код маркировки [Честного знака](https://честныйзнак.рф/) обязательным, используйте метод [Список карточек товаров](./work-with-products#tag/listings/paths/~1content~1v2~1get~1cards~1list/post), поле ответа `needKiz` По умолчанию: `False`.
+- `kizMarked` — boolean. Подтверждение, что на товар нанесён обязательный код маркировки [Честного знака](https://честныйзнак.рф/): - `true` — продавец подтверждает, что на товар нанесён обязательный код маркировки. - `false` — продавец подтверждает, что на товар нанесён обязательный код маркировки. Передайте в запросе `true`, чтобы подтвердить наличие на товаре обязательного кода маркировки. Карточка товара не пройдёт модерацию, если нет подтверждения продавца о том, что обязательный код маркировки нанесён на товар. Чтобы проверить, является ли код маркировки [Честного знака](https://честныйзнак.рф/) обязательным, используйте метод [Список карточек товаров](./item-management#tag/listings/operation/postV2GetCardsList), поле ответа `needKiz` По умолчанию: `False`.
 - `brand` — string. Бренд
 - `title` — string. Наименование товара
 - `description` — string. Описание товара. Максимальное количество символов зависит от категории товара Стандарт — 2000, минимум — 1000, максимум — 5000 Подробно о **правилах заполнения карточки товара** в [Справочном центре](https://seller.wildberries.ru/instructions/ru/ru/material/how-to-create-card) на портале продавцов
@@ -72,9 +72,9 @@ content_sha: 00d89068e47fb20c
     - `endDate` — string<date-time>. Дата и время окончания срока действия документа
     - `isEndless` — boolean. Бессрочный ли документ: - `true` — да, документ бессрочный - `false` — нет, у документа есть срок действия
   - `excludeDocuments` — boolean. Исключить ли документы из проверки: - `true` — да, не проверять документы при проверке карточки товара. При `true` все значения, переданные в `documents`, будут заменены на пустые значения - `false` — нет, проверять документы при проверке карточки товара По умолчанию: `False`.
-- `characteristics` — array[object]. Характеристики товара. Можно получить методом [Характеристики предмета](./work-with-products#tag/categoriesSubcategoriesAndCharacteristics/paths/~1content~1v2~1object~1charcs~1%7BsubjectId%7D/get)
+- `characteristics` — array[object]. Характеристики товара. Можно получить методом [Характеристики предмета](./item-management#tag/categoriesSubcategoriesAndCharacteristics/operation/getV2ObjectCharcsSubjectId)
   - `id` — integer **обязательный**. ID характеристики
-  - `value` — ? **обязательный**. Значения характеристики. Тип данных — массив строк или число — зависит от типа характеристики, см. описание поля `charcType` в методе [Характеристики предмета](./work-with-products#tag/categoriesSubcategoriesAndCharacteristics/paths/~1content~1v2~1object~1charcs~1%7BsubjectId%7D/get). Допустимое количество значений отображено в поле `maxCount` того же метода
+  - `value` — ? **обязательный**. Значения характеристики. Тип данных — массив строк или число — зависит от типа характеристики, см. описание поля `charcType` в методе [Характеристики предмета](./item-management#tag/categoriesSubcategoriesAndCharacteristics/operation/getV2ObjectCharcsSubjectId). Допустимое количество значений отображено в поле `maxCount` того же метода
 - `sizes` — array[object] **обязательный**. Массив размеров Для безразмерного товара всё равно нужно передавать данный массив без параметров (wbSize и techSize), но с баркодом
   - `chrtID` — integer. ID размера для данного артикула WB Обязателен к заполнению для существующих размеров Для добавляемых размеров не указывается
   - `techSize` — string. Размер товара (например, XL, S, 45)

@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /how-to-sell-effectively/advertising-of-goods/oplata-za-klik/rezultaty-v-oplate-za-klik
 source: "https://seller-edu.ozon.ru/libra/how-to-sell-effectively/advertising-of-goods/oplata-za-klik/rezultaty-v-oplate-za-klik"
-updated: "2026-09-11 16:11:40"
+updated: "2026-09-14 13:59:45"
 doc_id: 34457
-fetched_at: "2026-09-12T01:58:38Z"
-content_sha: 32bd318634021dbf
+fetched_at: "2026-09-15T02:18:00Z"
+content_sha: 5ab1c5e1d5fb0aea
 ---
 
 # Как посмотреть результаты по кампании в «Оплате за клик»
@@ -164,5 +164,9 @@ _Главная / Продвижение / Продвижение товаров
   период, за который хотите посмотреть расходы;
   
   тип продвижения — **Оплата за клик**.
+
+Будут ли возвращены деньги за продвижение при возврате товара в инструменте «Оплата за клик»?
+
+Нет, плата за продвижение не возвращается при возврате товара или отмене.
 
 # Что ещё полезно знать

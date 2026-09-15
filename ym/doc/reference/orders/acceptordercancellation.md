@@ -2,8 +2,8 @@
 title: Отмена заказа покупателем
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/orders/acceptOrderCancellation.md"
-fetched_at: "2026-09-11T01:58:11Z"
-content_sha: 1f3311d6fb6f55f5
+fetched_at: "2026-09-15T02:21:58Z"
+content_sha: 5bb2271e54728ead
 ---
 
 ---
@@ -815,7 +815,7 @@ alternate:
           Обязательный параметр, если вы передаете `accepted="false"`.
         $ref: '#/$defs/OrderCancellationReasonType'
     $defs:
-      /home/sandbox/.ya/build/build_root/givs/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/orders/api/acceptOrderCancellation.yaml#/OrderCancellationReasonType:
+      /home/sandbox/.ya/build/build_root/4tup/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/orders/api/acceptOrderCancellation.yaml#/OrderCancellationReasonType:
         description: |
           Варианты причин, по которым заказ не может быть отменен.
   

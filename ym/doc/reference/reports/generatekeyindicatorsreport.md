@@ -2,8 +2,8 @@
 title: Отчет по ключевым показателям
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/reports/generateKeyIndicatorsReport.md"
-fetched_at: "2026-09-11T01:58:38Z"
-content_sha: e5e94f3c07cd1e38
+fetched_at: "2026-09-15T02:22:28Z"
+content_sha: 1cf54355ea3922ce
 ---
 
 ---
@@ -1302,7 +1302,7 @@ alternate:
       required: false
       schema:
         $ref: >-
-          /home/sandbox/.ya/build/build_root/givs/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/reports/schemas.yaml#/ReportFormatType
+          /home/sandbox/.ya/build/build_root/4tup/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/reports/schemas.yaml#/ReportFormatType
   headers: []
   body: |-
     {
@@ -1335,7 +1335,7 @@ alternate:
         description: За какой период нужна детализация.
         $ref: '#/$defs/KeyIndicatorsReportDetalizationLevelType'
     $defs:
-      /home/sandbox/.ya/build/build_root/givs/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/reports/api/generateKeyIndicatorsReport.yaml#/KeyIndicatorsReportDetalizationLevelType:
+      /home/sandbox/.ya/build/build_root/4tup/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/reports/api/generateKeyIndicatorsReport.yaml#/KeyIndicatorsReportDetalizationLevelType:
         description: |
           За какой период нужна детализация:
   

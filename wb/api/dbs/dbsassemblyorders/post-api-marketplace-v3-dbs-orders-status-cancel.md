@@ -9,7 +9,7 @@ tags:
 spec_version: dbs
 source: "https://dev.wildberries.ru/docs/openapi/dbs"
 deprecated: false
-content_sha: 12e93769ef376f7f
+content_sha: 8c71e60ce89d5063
 ---
 
 # Отменить сборочные задания
@@ -18,7 +18,7 @@ content_sha: 12e93769ef376f7f
 
 Описание метода
 
-Метод переводит [сборочные задания](./orders-dbs#tag/dbsAssemblyOrders) из [статусов](./orders-dbs#tag/dbsAssemblyOrders/operation/postV3DbsOrdersStatusInfo) `new` и `confirm` в статус `cancel` — отменено продавцом.
+Метод переводит [сборочные задания](./dbs#tag/dbsAssemblyOrders) из [статусов](./dbs#tag/dbsAssemblyOrders/operation/postV3DbsOrdersStatusInfo) `new` и `confirm` в статус `cancel` — отменено продавцом.
 Отменить сборочные задания в статусе `deliver` невозможно.
 
 Лимит запросов на один аккаунт продавца:
