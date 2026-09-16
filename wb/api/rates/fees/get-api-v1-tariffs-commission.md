@@ -9,7 +9,7 @@ tags:
 spec_version: rates
 source: "https://dev.wildberries.ru/docs/openapi/rates"
 deprecated: false
-content_sha: 4a822fd1d5c01d91
+content_sha: cd081d1426e23b52
 ---
 
 # Комиссия по категориям товаров
@@ -43,7 +43,7 @@ content_sha: 4a822fd1d5c01d91
   - `kgvpBooking` — number. Комиссия по модели **Бронирование**, %
   - `kgvpMarketplace` — number. Комиссия по модели **Маркетплейс** (`FBS`), %
   - `kgvpPickup` — number. Комиссия по модели **Самовывоз из магазина продавца** (`C&C`), %
-  - `kgvpSupplier` — number. Комиссия по моделям **Витрина** (`DBS`) и **Курьер WB** (`DBW`), %
+  - `kgvpSupplier` — number. Комиссия по моделям **Витрина** (`DBS`) и **Деливери WB** (`DBW`), %
   - `kgvpSupplierExpress` — number. Комиссия по модели **Витрина экспресс** (`EDBS`), %
   - `paidStorageKgvp` — number. Комиссия по модели **Склад WB** (`FBW`), %
   - `parentID` — integer. ID родительской категории

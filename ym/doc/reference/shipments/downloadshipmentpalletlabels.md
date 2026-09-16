@@ -2,14 +2,14 @@
 title: Ярлыки для доверительной приемки (FBS)
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/shipments/downloadShipmentPalletLabels.md"
-fetched_at: "2026-09-15T02:22:12Z"
-content_sha: 266aa2cb255b66bc
+fetched_at: "2026-09-16T02:27:43Z"
+content_sha: 1c82f8a9363ea3b7
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.57.3
+    content: Diplodoc Platform v5.57.4
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/shipments/downloadShipmentPalletLabels.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/shipments/downloadShipmentPalletLabels.md
@@ -18,8 +18,7 @@ alternate:
     type: text/markdown
     title: Markdown version
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
-    type: text/markdown
-    title: llms.txt
+    rel: describedby
 ---
 > **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
 
@@ -728,7 +727,7 @@ alternate:
       required: false
       schema:
         $ref: >-
-          /home/sandbox/.ya/build/build_root/4tup/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/shipments/schemas.yaml#/ShipmentPalletLabelPageFormatType
+          /home/sandbox/.ya/build/build_root/m7cc/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/shipments/schemas.yaml#/ShipmentPalletLabelPageFormatType
       description: |
         Формат страниц PDF-файла с ярлыками:
   

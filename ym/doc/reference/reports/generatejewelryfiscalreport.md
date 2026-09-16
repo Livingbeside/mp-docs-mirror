@@ -2,14 +2,14 @@
 title: Отчет по заказам с ювелирными изделиями
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/reports/generateJewelryFiscalReport.md"
-fetched_at: "2026-09-15T02:22:35Z"
-content_sha: 3ddd67f82aa8cb84
+fetched_at: "2026-09-16T02:28:00Z"
+content_sha: 884ca61240e38375
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.57.3
+    content: Diplodoc Platform v5.57.4
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/reports/generateJewelryFiscalReport.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/reports/generateJewelryFiscalReport.md
@@ -18,8 +18,7 @@ alternate:
     type: text/markdown
     title: Markdown version
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
-    type: text/markdown
-    title: llms.txt
+    rel: describedby
 ---
 > **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
 
@@ -901,7 +900,7 @@ alternate:
       required: false
       schema:
         $ref: >-
-          /home/sandbox/.ya/build/build_root/4tup/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/reports/schemas.yaml#/ReportFormatType
+          /home/sandbox/.ya/build/build_root/m7cc/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/reports/schemas.yaml#/ReportFormatType
   headers: []
   body: |-
     {

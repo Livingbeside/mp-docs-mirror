@@ -2,14 +2,14 @@
 title: Список акций
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/promos/getPromos.md"
-fetched_at: "2026-09-15T02:21:48Z"
-content_sha: f4b8337b586eea25
+fetched_at: "2026-09-16T02:27:24Z"
+content_sha: 3172b5d779d3d380
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.57.3
+    content: Diplodoc Platform v5.57.4
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/promos/getPromos.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/promos/getPromos.md
@@ -18,8 +18,7 @@ alternate:
     type: text/markdown
     title: Markdown version
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
-    type: text/markdown
-    title: llms.txt
+    rel: describedby
 ---
 > **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
 
@@ -1663,7 +1662,7 @@ alternate:
           По умолчанию возвращаются все типы акций.
         $ref: '#/$defs/MechanicsType'
     $defs:
-      /home/sandbox/.ya/build/build_root/4tup/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/promos/schemas.yaml#/MechanicsType:
+      /home/sandbox/.ya/build/build_root/m7cc/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/promos/schemas.yaml#/MechanicsType:
         description: |
           Тип акции:
   

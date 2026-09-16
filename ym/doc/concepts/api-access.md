@@ -2,14 +2,14 @@
 title: Управление доступом к API
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/concepts/api-access.md"
-fetched_at: "2026-09-11T01:57:17Z"
-content_sha: 3cff4e2a79219d1c
+fetched_at: "2026-09-16T02:26:47Z"
+content_sha: b63dc08fe5fc9a35
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.57.3
+    content: Diplodoc Platform v5.57.4
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/concepts/api-access.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/concepts/api-access.md
@@ -18,8 +18,7 @@ alternate:
     type: text/markdown
     title: Markdown version
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
-    type: text/markdown
-    title: llms.txt
+    rel: describedby
 ---
 > **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
 

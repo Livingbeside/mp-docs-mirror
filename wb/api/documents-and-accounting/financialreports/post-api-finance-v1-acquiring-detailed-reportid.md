@@ -9,7 +9,7 @@ tags:
 spec_version: finances
 source: "https://dev.wildberries.ru/docs/openapi/documents-and-accounting"
 deprecated: false
-content_sha: a725938b9034acec
+content_sha: 8e957b1760c97671
 ---
 
 # Детализации к отчётам об издержках на приём платежей по ID отчётов{{ /api/finance/v1/acquiring/detailed/{reportId} }}
@@ -56,9 +56,9 @@ content_sha: a725938b9034acec
 - `taxRegistrationReasonCode` — string **обязательный**. КПП
 - `saleDate` — string **обязательный**. Дата продажи
 - `srid` — string **обязательный**. ID заказа. В ответах методов сборочных заданий [FBS](./orders-fbs#tag/Sborochnye-zadaniya-FBS), [DBW](./orders-dbw#tag/dbwAssemblyOrders), [DBS](./dbs#tag/dbsAssemblyOrders) и [Самовывоз](./in-store-pickup#tag/inStorePickupAssemblyOrders) `srid` равен `rid`
-- `docTypeName` — string **обязательный**. Тип документа
+- `documentType` — string **обязательный**. Тип документа
 - `nmId` — integer **обязательный**. Артикул WB
-- `retailAmount` — string **обязательный**. Вайлдберриз реализовал Товар (Пр)
+- `retailAmount` — string **обязательный**. Wildberries реализовал Товар (Пр)
 - `acquiringFee` — string **обязательный**. Размер комиссии за эквайринг, в том числе НДС
 - `acquiringFeeVat` — string **обязательный**. Сумма НДС
 - `invoiceNumber` — string **обязательный**. Номер счёта-фактуры
@@ -70,11 +70,11 @@ content_sha: a725938b9034acec
 
 **400** — Неправильный запрос
 
-- `status` — integer. HTTP статус-код
-- `title` — string. Заголовок ошибки
-- `detail` — string. Детали ошибки
-- `requestId` — string. ID запроса
-- `origin` — string. ID внутреннего сервиса WB
+- `status` — integer **обязательный**. HTTP статус-код
+- `title` — string **обязательный**. Заголовок ошибки
+- `detail` — string **обязательный**. Детали ошибки
+- `requestId` — string **обязательный**. ID запроса
+- `origin` — string **обязательный**. ID внутреннего сервиса WB
 
 **401** — Не авторизован
 
@@ -102,6 +102,14 @@ content_sha: a725938b9034acec
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
+
+**404** — Не найдено
+
+- `status` — integer **обязательный**. HTTP статус-код
+- `title` — string **обязательный**. Заголовок ошибки
+- `detail` — string **обязательный**. Детали ошибки
+- `requestId` — string **обязательный**. ID запроса
+- `origin` — string **обязательный**. ID внутреннего сервиса WB
 
 **429** — Слишком много запросов
 

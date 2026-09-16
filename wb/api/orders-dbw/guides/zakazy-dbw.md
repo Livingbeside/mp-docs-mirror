@@ -5,12 +5,12 @@ tag: Заказы DBW
 group: ""
 kind: guide
 source: "https://dev.wildberries.ru/docs/openapi/orders-dbw"
-content_sha: e77ab26994a581b9
+content_sha: 30d4546530e394df
 ---
 
 # Заказы DBW
 
-С помощью методов Заказы DBW (Доставка курьером WB) вы можете:
+С помощью методов Заказы DBW (Деливери WB) вы можете:
  - получать информацию о [сборочных заданиях](./orders-dbw#tag/dbwAssemblyOrders), управлять статусами и отменять сборочные задания
  - получать, добавлять, редактировать и удалять [метаданные](./orders-dbw#tag/dbwLabelIdentifiers) сборочных заданий
 

@@ -9,7 +9,7 @@ tags:
 spec_version: finances
 source: "https://dev.wildberries.ru/docs/openapi/documents-and-accounting"
 deprecated: false
-content_sha: 84321dce2ff4f944
+content_sha: d91e8e3daf548a98
 ---
 
 # Список отчётов об издержках на приём платежей
@@ -56,11 +56,11 @@ content_sha: 84321dce2ff4f944
 
 **400** — Неправильный запрос
 
-- `status` — integer. HTTP статус-код
-- `title` — string. Заголовок ошибки
-- `detail` — string. Детали ошибки
-- `requestId` — string. ID запроса
-- `origin` — string. ID внутреннего сервиса WB
+- `status` — integer **обязательный**. HTTP статус-код
+- `title` — string **обязательный**. Заголовок ошибки
+- `detail` — string **обязательный**. Детали ошибки
+- `requestId` — string **обязательный**. ID запроса
+- `origin` — string **обязательный**. ID внутреннего сервиса WB
 
 **401** — Не авторизован
 

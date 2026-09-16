@@ -2,9 +2,9 @@
 title: Маркетинг и продвижение — все методы
 api: wb-promotion
 spec_version: promotion
-operations: 39
+operations: 40
 source: "https://dev.wildberries.ru/docs/openapi/promotion"
-content_sha: 07c9af3ae2b19d80
+content_sha: fda797d101520a20
 ---
 
 # Маркетинг и продвижение
@@ -22,7 +22,7 @@ content_sha: 07c9af3ae2b19d80
 
 Вы можете протестировать методы продвижения в [песочнице](/sandbox). Также в песочнице доступны [специальные методы](/docs/openapi-other/sandbox-environment#tag/Prodvizhenie) для управления тестовым балансом
 
-Версия спеки: `promotion` · методов: **39** · разделов справки: **9**
+Версия спеки: `promotion` · методов: **40** · разделов справки: **9**
 
 Источник: https://dev.wildberries.ru/docs/openapi/promotion
 
@@ -65,5 +65,6 @@ content_sha: 07c9af3ae2b19d80
 | `POST` | `/adv/v2/supplier/nms` | creatingCampaigns | [Карточки товаров для кампаний](creatingcampaigns/post-adv-v2-supplier-nms.md) |
 | `POST` | `/api/advert/v1/bids/min` | creatingCampaigns | [Минимальные ставки для карточек товаров](creatingcampaigns/post-api-advert-v1-bids-min.md) |
 | `POST` | `/api/advert/v1/normquery/bids` | searchClusters | [Установить ставки для поисковых кластеров в валюте аккаунта продавца](searchclusters/post-api-advert-v1-normquery-bids.md) |
+| `POST` | `/api/advert/v2/budget` | finances | [Остатки бюджетов кампаний](finances/post-api-advert-v2-budget.md) |
 | `POST` | `/api/v1/calendar/promotions/upload` | promoCalendar | [Добавить товар в акцию](promocalendar/post-api-v1-calendar-promotions-upload.md) |
 | `PUT` | `/adv/v0/auction/placements` | campaignManagement | [Изменение мест размещения в кампаниях с ручной ставкой](campaignmanagement/put-adv-v0-auction-placements.md) |

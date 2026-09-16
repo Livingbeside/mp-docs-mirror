@@ -390,14 +390,58 @@
         },
         "description": "<span class='response__value '>Неправильный запрос</span>"
       },
-      "response400FinancialReports": {
+      "response400AcquiringReports": {
         "content": {
           "application/problem+json": {
             "schema": {
               "properties": {
                 "detail": {
                   "description": "Детали ошибки",
-                  "example": "GetReportDetailByPeriodNB decode error: missing dateTo params",
+                  "example": "GetAcquiringGeneralReport decode error: Key: 'AcquiringGeneralReportRequestV2.DateTo' Error:Field validation for 'DateTo' failed on the 'required' tag",
+                  "type": "string"
+                },
+                "origin": {
+                  "description": "ID внутреннего сервиса WB",
+                  "example": "open-api-finreports",
+                  "type": "string"
+                },
+                "requestId": {
+                  "description": "ID запроса",
+                  "example": "4950c661-9056-4baa-a0ed-c7e498c4a557",
+                  "type": "string"
+                },
+                "status": {
+                  "description": "HTTP статус-код",
+                  "example": 400,
+                  "type": "integer"
+                },
+                "title": {
+                  "description": "Заголовок ошибки",
+                  "example": "GetAcquiringGeneralReport decode error",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "status",
+                "title",
+                "detail",
+                "requestId",
+                "origin"
+              ],
+              "type": "object"
+            }
+          }
+        },
+        "description": "<span class='response__value '>Неправильный запрос</span>"
+      },
+      "response400SalesReports": {
+        "content": {
+          "application/problem+json": {
+            "schema": {
+              "properties": {
+                "detail": {
+                  "description": "Детали ошибки",
+                  "example": "GetReportDetailByPeriodNBAndNNB decode error: Key: 'FinancialDetailedByPeriodRequestV4.DateTo' Error:Field validation for 'DateTo' failed on the 'required' tag",
                   "type": "string"
                 },
                 "origin": {
@@ -417,15 +461,110 @@
                 },
                 "title": {
                   "description": "Заголовок ошибки",
-                  "example": "GetReportDetailByPeriodNB decode error",
+                  "example": "GetReportDetailByPeriodNBAndNNB decode error",
                   "type": "string"
                 }
               },
+              "required": [
+                "status",
+                "title",
+                "detail",
+                "requestId",
+                "origin"
+              ],
               "type": "object"
             }
           }
         },
         "description": "<span class='response__value '>Неправильный запрос</span>"
+      },
+      "response404AcquiringReports": {
+        "content": {
+          "application/problem+json": {
+            "schema": {
+              "properties": {
+                "detail": {
+                  "description": "Детали ошибки",
+                  "example": "GetAcquiringReportByReportID usecase error: generate meta key: get report data: report id not found",
+                  "type": "string"
+                },
+                "origin": {
+                  "description": "ID внутреннего сервиса WB",
+                  "example": "open-api-finreports",
+                  "type": "string"
+                },
+                "requestId": {
+                  "description": "ID запроса",
+                  "example": "b8c4a3db-2860-4df6-99dc-10602ddbc003",
+                  "type": "string"
+                },
+                "status": {
+                  "description": "HTTP статус-код",
+                  "example": 404,
+                  "type": "integer"
+                },
+                "title": {
+                  "description": "Заголовок ошибки",
+                  "example": "GetAcquiringReportByReportID usecase error",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "status",
+                "title",
+                "detail",
+                "requestId",
+                "origin"
+              ],
+              "type": "object"
+            }
+          }
+        },
+        "description": "<span class='response__value '>Не найдено</span>"
+      },
+      "response404SalesReports": {
+        "content": {
+          "application/problem+json": {
+            "schema": {
+              "properties": {
+                "detail": {
+                  "description": "Детали ошибки",
+                  "example": "GetDetailsByReportID error: generate meta key: get report data: report id not found",
+                  "type": "string"
+                },
+                "origin": {
+                  "description": "ID внутреннего сервиса WB",
+                  "example": "open-api-finreports",
+                  "type": "string"
+                },
+                "requestId": {
+                  "description": "ID запроса",
+                  "example": "4565feab-860b-493c-ad8d-6eda4d1902db",
+                  "type": "string"
+                },
+                "status": {
+                  "description": "HTTP статус-код",
+                  "example": 404,
+                  "type": "integer"
+                },
+                "title": {
+                  "description": "Заголовок ошибки",
+                  "example": "GetDetailsByReportID error",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "status",
+                "title",
+                "detail",
+                "requestId",
+                "origin"
+              ],
+              "type": "object"
+            }
+          }
+        },
+        "description": "<span class='response__value '>Не найдено</span>"
       }
     },
     "schemas": {
@@ -540,7 +679,7 @@
             "example": [
               "rrdId",
               "nmId",
-              "docTypeName",
+              "documentType",
               "retailAmount",
               "acquiringFee",
               "srid"
@@ -579,7 +718,7 @@
           },
           "acquiringBank": {
             "description": "Наименование банка-эквайера",
-            "example": "Тинькофф",
+            "example": "Вайлдберриз Банк",
             "type": "string"
           },
           "acquiringFee": {
@@ -597,7 +736,7 @@
             "example": "RUB",
             "type": "string"
           },
-          "docTypeName": {
+          "documentType": {
             "description": "Тип документа",
             "example": "Продажа",
             "type": "string"
@@ -624,7 +763,7 @@
             "type": "integer"
           },
           "retailAmount": {
-            "description": "Вайлдберриз реализовал Товар (Пр)",
+            "description": "Wildberries реализовал Товар (Пр)",
             "example": "367",
             "type": "string"
           },
@@ -664,7 +803,7 @@
           "currency",
           "rrdId",
           "nmId",
-          "docTypeName",
+          "documentType",
           "retailAmount",
           "saleDate",
           "acqDate",
@@ -688,7 +827,7 @@
             "example": [
               "rrdId",
               "nmId",
-              "docTypeName",
+              "currency",
               "retailAmount",
               "acquiringFee",
               "srid"
@@ -925,7 +1064,7 @@
         "description": "Список отчётов реализации",
         "properties": {
           "additionalPaymentSum": {
-            "description": "Корректировка Вознаграждения Вайлдберриз (ВВ)",
+            "description": "Корректировка Вознаграждения Wildberries (ВВ)",
             "example": "9509.71",
             "type": "string"
           },
@@ -940,7 +1079,7 @@
             "type": "string"
           },
           "cashbackAmountSum": {
-            "description": "Сумма, удержанная за начисленные баллы программы лояльности",
+            "description": "Сумма баллов, удержанных по программе лояльности",
             "example": "2",
             "type": "string"
           },
@@ -978,12 +1117,12 @@
             "type": "string"
           },
           "deductionSum": {
-            "description": "Прочие удержания и выплаты",
+            "description": "Прочие удержания/выплаты",
             "example": "150",
             "type": "string"
           },
           "deliveryServiceSum": {
-            "description": "Стоимость логистики",
+            "description": "Стоимость доставки",
             "example": "2558.47",
             "type": "string"
           },
@@ -1019,11 +1158,10 @@
             "type": "integer"
           },
           "reportType": {
-            "description": "Тип отчёта:\n  - `1` — основной\n  - `2` — по выкупам\n  - `3` — по выкупам для Грузии\n",
+            "description": "Тип отчёта:\n  - `1` — основной\n  - `2` — по выкупам\n",
             "enum": [
               1,
-              2,
-              3
+              2
             ],
             "example": 1,
             "type": "integer"
@@ -1126,21 +1264,21 @@
         "properties": {
           "acquiringBank": {
             "description": "Наименование банка-эквайера",
-            "example": "Тинькофф",
+            "example": "Вайлдберриз Банк",
             "type": "string"
           },
           "acquiringFee": {
-            "description": "Компенсация платёжных услуг/Комиссия за интеграцию платёжных сервисов",
+            "description": "Компенсация платёжных услуг/комиссия за интеграцию платёжных сервисов",
             "example": "14.89",
             "type": "string"
           },
           "acquiringPercent": {
-            "description": "Размер компенсации платёжных услуг/Комиссии за интеграцию платёжных сервисов, %",
+            "description": "Размер компенсации платёжных услуг/комиссии за интеграцию платёжных сервисов",
             "example": 4.06,
             "type": "number"
           },
           "additionalPayment": {
-            "description": "Корректировка Вознаграждения Вайлдберриз (ВВ)",
+            "description": "Корректировка Вознаграждения Wildberries (ВВ)",
             "example": "0",
             "type": "string"
           },
@@ -1160,7 +1298,7 @@
             "type": "string"
           },
           "bonusTypeName": {
-            "description": "Виды логистики, штрафов и корректировок ВВ",
+            "description": "Виды доставок, штрафов и корректировок ВВ",
             "example": "Штраф МП. Невыполненный заказ (отмена клиентом после недовоза)",
             "type": "string"
           },
@@ -1170,7 +1308,7 @@
             "type": "string"
           },
           "cashbackAmount": {
-            "description": "Сумма, удержанная за начисленные баллы программы лояльности",
+            "description": "Сумма баллов, удержанных по программе лояльности",
             "example": "2",
             "type": "string"
           },
@@ -1294,7 +1432,7 @@
             "type": "number"
           },
           "kiz": {
-            "description": "Код маркировки [Честного знака](https://честныйзнак.рф/)",
+            "description": "Код маркировки [Честного знака](https://честныйзнак.рф)",
             "example": "0102900000376311210G2CIS?ehge)S\u001d91002A\u001d92F9Qof4FDo/31Icm14kmtuVYQzLypxm3HWkC1vQ/+pVVjm1dNAth1laFMoAGn7yEMWlTjxIe7lQnJqZ7TRZhlHQ==",
             "type": "string"
           },
@@ -1360,7 +1498,7 @@
             "type": "boolean"
           },
           "paymentProcessing": {
-            "description": "Тип платежа: компенсация платёжных услуг/Комиссия за интеграцию платёжных сервисов",
+            "description": "Тип платежа: компенсация платёжных услуг/комиссия за интеграцию платёжных сервисов",
             "example": "Комиссия за организацию платежа с НДС",
             "type": "string"
           },
@@ -1415,7 +1553,7 @@
             "type": "integer"
           },
           "rebillLogisticCost": {
-            "description": "Возмещение издержек по перевозке/по складским операциям с товаром",
+            "description": "Возмещение издержек по перемещению и операционной обработке товара",
             "example": "1.349",
             "type": "string"
           },
@@ -1431,17 +1569,16 @@
             "type": "integer"
           },
           "reportType": {
-            "description": "Тип отчёта:\n  - `1` — основной\n  - `2` — по выкупам\n  - `3` — по выкупам для Грузии\n",
+            "description": "Тип отчёта:\n  - `1` — основной\n  - `2` — по выкупам\n",
             "enum": [
               1,
-              2,
-              3
+              2
             ],
             "example": 1,
             "type": "integer"
           },
           "retailAmount": {
-            "description": "Вайлдберриз реализовал Товар (Пр)",
+            "description": "Wildberries реализовал Товар (Пр)",
             "example": "367",
             "type": "string"
           },
@@ -1504,8 +1641,8 @@
           },
           "sellerPromo": {
             "description": "Промокод, %",
-            "example": "0",
-            "type": "string"
+            "example": 0,
+            "type": "number"
           },
           "sellerPromoDiscount": {
             "description": "Размер дополнительной скидки по собственной акции продавца, %",
@@ -1582,17 +1719,17 @@
             "type": "string"
           },
           "vw": {
-            "description": "Вознаграждение Вайлдберриз (ВВ), без НДС",
+            "description": "Вознаграждение Wildberries (ВВ), без НДС",
             "example": "22.25",
             "type": "string"
           },
           "vwNds": {
-            "description": "НДС с вознаграждения Вайлдберриз",
+            "description": "НДС с вознаграждения Wildberries",
             "example": "4.45",
             "type": "string"
           },
           "warehouseLogisticsCoeff": {
-            "description": "Коэффициент логистики",
+            "description": "Коэффициент доставки",
             "example": 0,
             "type": "number"
           },
@@ -1767,7 +1904,7 @@
             "description": "<span class='response__value response__value_success'>Нет данных</span>"
           },
           "400": {
-            "$ref": "#/components/responses/response400FinancialReports"
+            "$ref": "#/components/responses/response400AcquiringReports"
           },
           "401": {
             "$ref": "#/components/responses/401"
@@ -1863,7 +2000,7 @@
             "description": "<span class='response__value response__value_success'>Нет данных</span>"
           },
           "400": {
-            "$ref": "#/components/responses/response400FinancialReports"
+            "$ref": "#/components/responses/response400AcquiringReports"
           },
           "401": {
             "$ref": "#/components/responses/401"
@@ -1888,6 +2025,9 @@
               }
             },
             "description": "<span class='response__value '>Доступ запрещён</span>"
+          },
+          "404": {
+            "$ref": "#/components/responses/response404AcquiringReports"
           },
           "429": {
             "$ref": "#/components/responses/429"
@@ -1947,7 +2087,7 @@
             "description": "<span class='response__value response__value_success'>Нет данных</span>"
           },
           "400": {
-            "$ref": "#/components/responses/response400FinancialReports"
+            "$ref": "#/components/responses/response400AcquiringReports"
           },
           "401": {
             "$ref": "#/components/responses/401"
@@ -2028,7 +2168,7 @@
             "description": "<span class='response__value response__value_success'>Нет данных</span>"
           },
           "400": {
-            "$ref": "#/components/responses/response400FinancialReports"
+            "$ref": "#/components/responses/response400SalesReports"
           },
           "401": {
             "$ref": "#/components/responses/401"
@@ -2063,7 +2203,7 @@
     },
     "/api/finance/v1/sales-reports/detailed/{reportId}": {
       "post": {
-        "description": "<div class='description-title'><span>Описание метода</span></div>\n\n\n<div class=\"description_token\">\n    Метод <a href=\"./api-information#tag/authorization/Pravila-ispolzovaniya-tokenov-dostupa-k-API\">доступен</a> по\n        <strong>Персональному</strong> токену, \n        <strong>Сервисному</strong> токену\n</div>\n\nМетод возвращает детализации к [отчётам реализации](https://seller.wildberries.ru/suppliers-mutual-settlements) по ID отчётов.\n<br><br>\nДанные доступны с 1 января 2025 года.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 1 запрос | 1 мин | 1 запрос |\n</div>\n",
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\n\n<div class=\"description_token\">\n    Метод <a href=\"./api-information#tag/authorization/Pravila-ispolzovaniya-tokenov-dostupa-k-API\">доступен</a> по\n        <strong>Персональному</strong> токену, \n        <strong>Сервисному</strong> токену\n</div>\n\nМетод возвращает детализации к [отчётам реализации](https://seller.wildberries.ru/suppliers-mutual-settlements) по ID отчётов.\n<br><br>\nДанные доступны с 29 января 2024 года.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 1 запрос | 1 мин | 1 запрос |\n</div>\n",
         "operationId": "postV1SalesReportsDetailedReportId",
         "parameters": [
           {
@@ -2105,7 +2245,7 @@
             "description": "<span class='response__value response__value_success'>Нет данных</span>"
           },
           "400": {
-            "$ref": "#/components/responses/response400FinancialReports"
+            "$ref": "#/components/responses/response400SalesReports"
           },
           "401": {
             "$ref": "#/components/responses/401"
@@ -2130,6 +2270,9 @@
               }
             },
             "description": "<span class='response__value '>Доступ запрещён</span>"
+          },
+          "404": {
+            "$ref": "#/components/responses/response404SalesReports"
           },
           "429": {
             "$ref": "#/components/responses/429"
@@ -2159,7 +2302,7 @@
     },
     "/api/finance/v1/sales-reports/list": {
       "post": {
-        "description": "<div class='description-title'><span>Описание метода</span></div>\n\n\n<div class=\"description_token\">\n    Метод <a href=\"./api-information#tag/authorization/Pravila-ispolzovaniya-tokenov-dostupa-k-API\">доступен</a> по\n        <strong>Персональному</strong> токену, \n        <strong>Сервисному</strong> токену\n</div>\n\nМетод возвращает список отчётов релизации по формату [таблицы отчётов](https://seller.wildberries.ru/suppliers-mutual-settlements).\n<br><br>\nДанные доступны с 1 января 2025 года.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 1 запрос | 1 мин | 1 запрос |\n</div>\n",
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\n\n<div class=\"description_token\">\n    Метод <a href=\"./api-information#tag/authorization/Pravila-ispolzovaniya-tokenov-dostupa-k-API\">доступен</a> по\n        <strong>Персональному</strong> токену, \n        <strong>Сервисному</strong> токену\n</div>\n\nМетод возвращает список отчётов релизации по формату [таблицы отчётов](https://seller.wildberries.ru/suppliers-mutual-settlements).\n<br><br>\nДанные доступны с 29 января 2024 года.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 1 запрос | 1 мин | 1 запрос |\n</div>\n",
         "operationId": "postV1SalesReportsList",
         "requestBody": {
           "content": {
@@ -2189,7 +2332,7 @@
             "description": "<span class='response__value response__value_success'>Нет данных</span>"
           },
           "400": {
-            "$ref": "#/components/responses/response400FinancialReports"
+            "$ref": "#/components/responses/response400SalesReports"
           },
           "401": {
             "$ref": "#/components/responses/401"

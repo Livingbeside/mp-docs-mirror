@@ -1282,7 +1282,7 @@
     }
   },
   "info": {
-    "description": "<div class=\"api-block\">\n\nС помощью методов Заказы DBW (Доставка курьером WB) вы можете:\n  - получать информацию о [сборочных заданиях](./orders-dbw#tag/dbwAssemblyOrders), управлять статусами и отменять сборочные задания\n  - получать, добавлять, редактировать и удалять [метаданные](./orders-dbw#tag/dbwLabelIdentifiers) сборочных заданий\n\n</div>\n\n\n<div class=\"description_ref\">\n  Узнать, как использовать методы в бизнес-кейсах, можно в <a href=\"/knowledge-base/articles/019d49a4-036a-7721-98e8-bed5f1a4f72d/zakazy-dbw\">инструкции</a> по работе с <strong>заказами DBW</strong>\n</div>\n\n",
+    "description": "<div class=\"api-block\">\n\nС помощью методов Заказы DBW (Деливери WB) вы можете:\n  - получать информацию о [сборочных заданиях](./orders-dbw#tag/dbwAssemblyOrders), управлять статусами и отменять сборочные задания\n  - получать, добавлять, редактировать и удалять [метаданные](./orders-dbw#tag/dbwLabelIdentifiers) сборочных заданий\n\n</div>\n\n\n<div class=\"description_ref\">\n  Узнать, как использовать методы в бизнес-кейсах, можно в <a href=\"/knowledge-base/articles/019d49a4-036a-7721-98e8-bed5f1a4f72d/zakazy-dbw\">инструкции</a> по работе с <strong>заказами DBW</strong>\n</div>\n\n",
     "title": "Заказы DBW",
     "version": "ordersdbw",
     "x-file-name": "orders-dbw"
@@ -3159,7 +3159,7 @@
   ],
   "tags": [
     {
-      "description": "<div class=\"api-description\">\n\n<div class=\"api-block\">\n\nС помощью методов Заказы DBW (Доставка курьером WB) вы можете:\n  - получать информацию о [сборочных заданиях](./orders-dbw#tag/dbwAssemblyOrders), управлять статусами и отменять сборочные задания\n  - получать, добавлять, редактировать и удалять [метаданные](./orders-dbw#tag/dbwLabelIdentifiers) сборочных заданий\n\n</div>\n\n\n<div class=\"description_ref\">\n  Узнать, как использовать методы в бизнес-кейсах, можно в <a href=\"/knowledge-base/articles/019d49a4-036a-7721-98e8-bed5f1a4f72d/zakazy-dbw\">инструкции</a> по работе с <strong>заказами DBW</strong>\n</div>\n\n\n\n</div>",
+      "description": "<div class=\"api-description\">\n\n<div class=\"api-block\">\n\nС помощью методов Заказы DBW (Деливери WB) вы можете:\n  - получать информацию о [сборочных заданиях](./orders-dbw#tag/dbwAssemblyOrders), управлять статусами и отменять сборочные задания\n  - получать, добавлять, редактировать и удалять [метаданные](./orders-dbw#tag/dbwLabelIdentifiers) сборочных заданий\n\n</div>\n\n\n<div class=\"description_ref\">\n  Узнать, как использовать методы в бизнес-кейсах, можно в <a href=\"/knowledge-base/articles/019d49a4-036a-7721-98e8-bed5f1a4f72d/zakazy-dbw\">инструкции</a> по работе с <strong>заказами DBW</strong>\n</div>\n\n\n\n</div>",
       "name": "Заказы DBW",
       "x-traitTag": true
     },

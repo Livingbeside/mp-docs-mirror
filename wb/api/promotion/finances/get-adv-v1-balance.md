@@ -9,7 +9,7 @@ tags:
 spec_version: promotion
 source: "https://dev.wildberries.ru/docs/openapi/promotion"
 deprecated: false
-content_sha: 41c585a809239bf9
+content_sha: c7252efcfa5da415
 ---
 
 # Баланс
@@ -23,7 +23,7 @@ content_sha: 41c585a809239bf9
  - балансе — максимальной сумме для оплаты кампании по взаиморасчету: удержании средств из будущих продаж. Баланс пополнить нельзя, он рассчитывается автоматически на основе отчётов по продвижению.
  - бонусных начислениях WB.
 
-Информацию о бюджете кампаний можно получить в [отдельном методе](./promotion#tag/finances/operation/getV1Budget).
+Чтобы получить информацию о бюджетах кампаний, используйте метод [Бюджеты кампаний](./promotion#tag/finances/operation/postV2Budget).
 
 Лимит запросов на один аккаунт продавца:
 

@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /work-with-goods/zagruzka-tovarov/creating-goods/oshibki-pri-rabote-s-kartochkami
 source: "https://seller-edu.ozon.ru/libra/work-with-goods/zagruzka-tovarov/creating-goods/oshibki-pri-rabote-s-kartochkami"
-updated: "2026-08-31 10:44:26"
+updated: "2026-09-14 13:06:36"
 doc_id: 743
-fetched_at: "2026-09-01T01:56:13Z"
-content_sha: 82b6b42ad3ba66b2
+fetched_at: "2026-09-16T02:21:47Z"
+content_sha: f9129bf0f2bfd887
 ---
 
 # Ошибки при работе с карточками товаров
@@ -87,15 +87,19 @@ _Главная / Работа с товарами / Создание и ред�
 
 Пока что доступно в категориях:
 
-одежда;
+Одежда;
 
-бельё;
+Белье
 
-бытовое освещение;
+Бытовое освещение;
 
-игрушки;
+Игрушки;
 
-смартфоны, телефоны, планшеты.
+Моющие и чистящие средства;
+
+Смартфоны, телефона, планшеты;
+
+Косметика для ухода.
 
 Список категорий будем расширять постепенно.
 

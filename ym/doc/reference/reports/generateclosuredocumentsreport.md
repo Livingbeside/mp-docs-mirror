@@ -2,14 +2,14 @@
 title: Закрывающие документы
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/reports/generateClosureDocumentsReport.md"
-fetched_at: "2026-09-15T02:22:37Z"
-content_sha: 2ceed91e712af5a7
+fetched_at: "2026-09-16T02:28:03Z"
+content_sha: df4fad13a123b627
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.57.3
+    content: Diplodoc Platform v5.57.4
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/reports/generateClosureDocumentsReport.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/reports/generateClosureDocumentsReport.md
@@ -18,8 +18,7 @@ alternate:
     type: text/markdown
     title: Markdown version
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
-    type: text/markdown
-    title: llms.txt
+    rel: describedby
 ---
 > **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
 
@@ -52,8 +51,9 @@ alternate:
   
   * **Договор на размещение**
   
-    * [акт об оказанных услугах](*acts-main-act)
-    * [счет-фактура](*acts-main-invoice)
+    * [универсальный передаточный документ (УПД-1)](*acts-main-utd) — за октябрь 2026 года и последующие месяцы, вместо акта об оказанных услугах и счета-фактуры
+    * [акт об оказанных услугах](*acts-main-act) — за месяцы до октября 2026 года
+    * [счет-фактура](*acts-main-invoice) — за месяцы до октября 2026 года
     * [сводный отчет по данным статистики](*acts-main-report)
     * [отчет об исполнении поручения и о зачете взаимных требований](*acts-main-agent) (отчет агента)
   
@@ -64,8 +64,9 @@ alternate:
   
   * **Договор на маркетинг**
   
-    * [акт об оказанных услугах](*acts-marketing-act)
-    * [счет-фактура](*acts-main-invoice)
+    * [универсальный передаточный документ (УПД-1)](*acts-main-utd) — за август 2026 года и последующие месяцы, вместо акта об оказанных услугах и счета-фактуры
+    * [акт об оказанных услугах](*acts-marketing-act) — за месяцы до августа 2026 года
+    * [счет-фактура](*acts-main-invoice) — за месяцы до августа 2026 года
     * [счет-фактура на аванс](*acts-marketing-invoice)
     * [выписка по лицевому счету](*acts-marketing-account)
     * [детализация к акту](*acts-marketing-details)
@@ -962,7 +963,7 @@ alternate:
             - OUTCOME
             - MARKETING
     $defs:
-      /home/sandbox/.ya/build/build_root/4tup/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/reports/schemas.yaml#/ClosureDocumentsMonthOfYearDTO:
+      /home/sandbox/.ya/build/build_root/m7cc/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/reports/schemas.yaml#/ClosureDocumentsMonthOfYearDTO:
         description: |
           Месяц и год.
         type: object

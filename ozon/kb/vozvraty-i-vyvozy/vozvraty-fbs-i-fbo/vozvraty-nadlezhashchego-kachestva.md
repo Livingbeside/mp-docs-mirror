@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /vozvraty-i-vyvozy/vozvraty-fbs-i-fbo/vozvraty-nadlezhashchego-kachestva
 source: "https://seller-edu.ozon.ru/libra/vozvraty-i-vyvozy/vozvraty-fbs-i-fbo/vozvraty-nadlezhashchego-kachestva"
-updated: "2026-09-14 10:21:39"
+updated: "2026-09-15 09:44:00"
 doc_id: 36412
-fetched_at: "2026-09-15T02:17:59Z"
-content_sha: 1aad53d1160b1d66
+fetched_at: "2026-09-16T02:21:47Z"
+content_sha: c900d0d6e2796c54
 ---
 
 # Отправка качественных возвратов на объекты Ozon
@@ -40,7 +40,7 @@ _Главная / Клиентские возвраты и вывозы това
 
 вернули или отменили в пути, и у покупателя нет по ним жалоб на качество;
 
-не относятся ко всем видам КГТ, кроме лёгких длинномеров. [Подробнее о том, что считаем КГТ](https://seller-edu.ozon.ru/kgt/fbo/postavka-kgt-fbo#%D0%BA%D0%B0%D0%BA%D0%B8%D0%B5-%D1%82%D0%BE%D0%B2%D0%B0%D1%80%D1%8B-%D1%81%D1%87%D0%B8%D1%82%D0%B0%D1%8E%D1%82%D1%81%D1%8F-%D0%BA%D1%80%D1%83%D0%BF%D0%BD%D0%BE%D0%B3%D0%B0%D0%B1%D0%B0%D1%80%D0%B8%D1%82%D0%BD%D1%8B%D0%BC%D0%B8)
+не относятся к КГТ, кроме товаров с габаритами до 2000 × 300 × 300 и весом до 5 кг. [Подробнее о том, что считаем КГТ](https://seller-edu.ozon.ru/kgt/fbo/postavka-kgt-fbo#%D0%BA%D0%B0%D0%BA%D0%B8%D0%B5-%D1%82%D0%BE%D0%B2%D0%B0%D1%80%D1%8B-%D1%81%D1%87%D0%B8%D1%82%D0%B0%D1%8E%D1%82%D1%81%D1%8F-%D0%BA%D1%80%D1%83%D0%BF%D0%BD%D0%BE%D0%B3%D0%B0%D0%B1%D0%B0%D1%80%D0%B8%D1%82%D0%BD%D1%8B%D0%BC%D0%B8)
 
 [не запрещены](https://seller-edu.ozon.ru/policies/restrictions/only-fbs#%D0%B7%D0%B0%D0%BF%D1%80%D0%B5%D1%89%D0%B5%D0%BD%D0%BE-%D0%BD%D0%B0-fbo) для продажи по схеме FBO;
 

@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /commissions-tariffs/legal-information/full-actual-commissions
 source: "https://seller-edu.ozon.ru/libra/commissions-tariffs/legal-information/full-actual-commissions"
-updated: "2026-09-14 15:43:24"
+updated: "2026-09-15 08:32:27"
 doc_id: 700
-fetched_at: "2026-09-15T02:17:59Z"
-content_sha: 965d567028707c84
+fetched_at: "2026-09-16T02:21:46Z"
+content_sha: a5fadd71b86e07b1
 ---
 
 # Полный список комиссий и тарифов
@@ -325,7 +325,7 @@ _Главная / Комиссии и тарифы / Юридическая ин
 
 100% на поставки в кластер Красноярск — с 1 октября 2026 г. по 15 января 2027 г.;
 
-100% на поставки из России в кластеры Алматы, Астана — с 24 июля по 30 сентября 2026 г.;
+100% на поставки в кластеры Алматы, Астана — с 24 июля по 30 сентября 2026 г.;
 
 50% на поставки из России в кластеры Алматы, Астана;
 

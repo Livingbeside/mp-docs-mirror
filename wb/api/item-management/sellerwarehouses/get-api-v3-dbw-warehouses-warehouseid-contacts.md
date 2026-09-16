@@ -9,7 +9,7 @@ tags:
 spec_version: items
 source: "https://dev.wildberries.ru/docs/openapi/item-management"
 deprecated: false
-content_sha: cc9e3f156807f158
+content_sha: ad3c210c9853e6f4
 ---
 
 # Список контактов{{ /api/v3/dbw/warehouses/{warehouseId}/contacts }}
@@ -20,7 +20,7 @@ content_sha: cc9e3f156807f158
 
 Метод возвращает список контактов, привязанных к [складу продавца](./item-management#tag/sellerWarehouses/operation/getV3Warehouses).
 
-Только для складов с типом доставки `3` — доставка курьером WB ([DBW](./orders-dbw)).
+Только для складов с типом доставки `3` — Деливери WB ([DBW](./orders-dbw)).
 
 Лимит запросов на один аккаунт продавца для следующих методов DBW:
 

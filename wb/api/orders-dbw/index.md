@@ -4,12 +4,12 @@ api: wb-orders-dbw
 spec_version: ordersdbw
 operations: 16
 source: "https://dev.wildberries.ru/docs/openapi/orders-dbw"
-content_sha: 602effd475b646e8
+content_sha: 5e5592d4aebd748e
 ---
 
 # Заказы DBW
 
-С помощью методов Заказы DBW (Доставка курьером WB) вы можете:
+С помощью методов Заказы DBW (Деливери WB) вы можете:
  - получать информацию о [сборочных заданиях](./orders-dbw#tag/dbwAssemblyOrders), управлять статусами и отменять сборочные задания
  - получать, добавлять, редактировать и удалять [метаданные](./orders-dbw#tag/dbwLabelIdentifiers) сборочных заданий
 

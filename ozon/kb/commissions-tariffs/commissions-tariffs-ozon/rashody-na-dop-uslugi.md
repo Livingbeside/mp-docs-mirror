@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /commissions-tariffs/commissions-tariffs-ozon/rashody-na-dop-uslugi
 source: "https://seller-edu.ozon.ru/libra/commissions-tariffs/commissions-tariffs-ozon/rashody-na-dop-uslugi"
-updated: "2026-09-14 15:43:31"
+updated: "2026-09-15 08:33:40"
 doc_id: 694
-fetched_at: "2026-09-15T02:17:59Z"
-content_sha: 38daecf12e108631
+fetched_at: "2026-09-16T02:21:46Z"
+content_sha: fcdfe2affe9768a4
 ---
 
 # Расходы на другие услуги и штрафы
@@ -767,7 +767,7 @@ _Главная / Комиссии и тарифы / Комиссии и тар�
 
 100% на поставки в кластер Красноярск — с 1 октября 2026 г. по 15 января 2027 г.
 
-100% на поставки из России в кластеры Алматы, Астана — с 24 июля по 30 сентября 2026 г.
+100% на поставки в кластеры Алматы, Астана — с 24 июля по 30 сентября 2026 г.
 
 50% на поставки из России в кластеры Алматы, Астана — с 1 октября 2026 г.
 

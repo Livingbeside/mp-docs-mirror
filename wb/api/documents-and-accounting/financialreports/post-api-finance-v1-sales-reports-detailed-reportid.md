@@ -9,7 +9,7 @@ tags:
 spec_version: finances
 source: "https://dev.wildberries.ru/docs/openapi/documents-and-accounting"
 deprecated: false
-content_sha: d6d862c3db66502c
+content_sha: ff25f56aa343f27e
 ---
 
 # Детализации к отчётам реализации по ID отчётов{{ /api/finance/v1/sales-reports/detailed/{reportId} }}
@@ -24,7 +24,7 @@ content_sha: d6d862c3db66502c
 
 Метод возвращает детализации к [отчётам реализации](https://seller.wildberries.ru/suppliers-mutual-settlements) по ID отчётов.
 
-Данные доступны с 1 января 2025 года.
+Данные доступны с 29 января 2024 года.
 
 Лимит запросов на один аккаунт продавца:
 
@@ -55,7 +55,7 @@ content_sha: d6d862c3db66502c
 - `dateTo` — string<date> **обязательный**. Дата конца отчётного периода
 - `createDate` — string<date> **обязательный**. Дата формирования отчёта
 - `currency` — string **обязательный**. Валюта отчёта
-- `reportType` — integer (1, 2, 3) **обязательный**. Тип отчёта: - `1` — основной - `2` — по выкупам - `3` — по выкупам для Грузии
+- `reportType` — integer (1, 2) **обязательный**. Тип отчёта: - `1` — основной - `2` — по выкупам
 - `rrdId` — integer **обязательный**. ID строки
 - `giId` — integer **обязательный**. ID поставки
 - `dlvPrc` — number **обязательный**. Фиксированный коэффициент склада по поставке
@@ -71,7 +71,7 @@ content_sha: d6d862c3db66502c
 - `docTypeName` — string **обязательный**. Тип документа
 - `quantity` — integer **обязательный**. Количество
 - `retailPrice` — string **обязательный**. Цена розничная
-- `retailAmount` — string **обязательный**. Вайлдберриз реализовал Товар (Пр)
+- `retailAmount` — string **обязательный**. Wildberries реализовал Товар (Пр)
 - `salePercent` — integer **обязательный**. Согласованный продуктовый дисконт, %
 - `commissionPercent` — number **обязательный**. Размер кВВ, %
 - `officeName` — string **обязательный**. Склад
@@ -86,7 +86,7 @@ content_sha: d6d862c3db66502c
 - `deliveryService` — string **обязательный**. Услуги по доставке товара покупателю
 - `giBoxTypeName` — string **обязательный**. Тип коробов
 - `productDiscountForReport` — number **обязательный**. Итоговая согласованная скидка, %
-- `sellerPromo` — string **обязательный**. Промокод, %
+- `sellerPromo` — number **обязательный**. Промокод, %
 - `spp` — number **обязательный**. Платформенные скидки, %
 - `kvwBase` — number **обязательный**. Размер кВВ без НДС, % базовый
 - `kvw` — number **обязательный**. Итоговый кВВ без НДС, %
@@ -95,35 +95,35 @@ content_sha: d6d862c3db66502c
 - `ppvzSalesCommission` — string **обязательный**. Вознаграждение с продаж до вычета услуг поверенного, без НДС
 - `forPay` — string **обязательный**. К перечислению продавцу за реализованный товар
 - `ppvzReward` — string **обязательный**. Возмещение за выдачу и возврат товаров на ПВЗ
-- `acquiringFee` — string **обязательный**. Компенсация платёжных услуг/Комиссия за интеграцию платёжных сервисов
-- `acquiringPercent` — number **обязательный**. Размер компенсации платёжных услуг/Комиссии за интеграцию платёжных сервисов, %
-- `paymentProcessing` — string **обязательный**. Тип платежа: компенсация платёжных услуг/Комиссия за интеграцию платёжных сервисов
+- `acquiringFee` — string **обязательный**. Компенсация платёжных услуг/комиссия за интеграцию платёжных сервисов
+- `acquiringPercent` — number **обязательный**. Размер компенсации платёжных услуг/комиссии за интеграцию платёжных сервисов
+- `paymentProcessing` — string **обязательный**. Тип платежа: компенсация платёжных услуг/комиссия за интеграцию платёжных сервисов
 - `acquiringBank` — string **обязательный**. Наименование банка-эквайера
-- `vw` — string **обязательный**. Вознаграждение Вайлдберриз (ВВ), без НДС
-- `vwNds` — string **обязательный**. НДС с вознаграждения Вайлдберриз
+- `vw` — string **обязательный**. Вознаграждение Wildberries (ВВ), без НДС
+- `vwNds` — string **обязательный**. НДС с вознаграждения Wildberries
 - `ppvzOfficeName` — string **обязательный**. Наименование офиса доставки
 - `ppvzOfficeId` — integer **обязательный**. ID офиса доставки
 - `ppvzSupplierName` — string **обязательный**. Партнёр
 - `ppvzSupplierInn` — string **обязательный**. ИНН партнёра
 - `declarationNumber` — string **обязательный**. Номер таможенной декларации
-- `bonusTypeName` — string. Виды логистики, штрафов и корректировок ВВ
+- `bonusTypeName` — string. Виды доставок, штрафов и корректировок ВВ
 - `stickerId` — string **обязательный**. Стикер МП
 - `country` — string **обязательный**. Страна продажи
 - `srvDbs` — boolean **обязательный**. Признак услуги платной доставки
 - `penalty` — string **обязательный**. Общая сумма штрафов
-- `additionalPayment` — string **обязательный**. Корректировка Вознаграждения Вайлдберриз (ВВ)
-- `rebillLogisticCost` — string **обязательный**. Возмещение издержек по перевозке/по складским операциям с товаром
+- `additionalPayment` — string **обязательный**. Корректировка Вознаграждения Wildberries (ВВ)
+- `rebillLogisticCost` — string **обязательный**. Возмещение издержек по перемещению и операционной обработке товара
 - `rebillLogisticOrg` — string. Организатор перевозки
 - `paidStorage` — string **обязательный**. Хранение
 - `deduction` — string **обязательный**. Удержания
 - `paidAcceptance` — string **обязательный**. Операции на приёмке
 - `orderId` — integer **обязательный**. ID сборочного задания
-- `kiz` — string. Код маркировки [Честного знака](https://честныйзнак.рф/)
+- `kiz` — string. Код маркировки [Честного знака](https://честныйзнак.рф)
 - `isB2b` — boolean **обязательный**. Признак B2B-продажи
 - `trbxId` — string **обязательный**. ID короба для обработки товара
 - `installmentCofinancingAmount` — string **обязательный**. Скидка по программе софинансирования
 - `wibesDiscountPercent` — number **обязательный**. Скидка Wibes, %
-- `cashbackAmount` — string **обязательный**. Сумма, удержанная за начисленные баллы программы лояльности
+- `cashbackAmount` — string **обязательный**. Сумма баллов, удержанных по программе лояльности
 - `cashbackDiscount` — string **обязательный**. Компенсация скидки по программе лояльности
 - `cashbackCommissionChange` — string **обязательный**. Стоимость участия в программе лояльности
 - `paymentSchedule` — string **обязательный**. Разовое изменение срока перечисления денежных средств
@@ -140,7 +140,7 @@ content_sha: d6d862c3db66502c
 - `salePriceWholesaleDiscountPrc` — number **обязательный**. Оптовая скидка для бизнеса, %
 - `b2bCustomerTin` — string **обязательный**. ИНН B2B-покупателя
 - `paidWithSocialCertificate` — boolean **обязательный**. Оплата социальным сертификатом
-- `warehouseLogisticsCoeff` — number **обязательный**. Коэффициент логистики
+- `warehouseLogisticsCoeff` — number **обязательный**. Коэффициент доставки
 - `orderUid` — string **обязательный**. ID корзины заказа — транзакции. Заказы в одной корзине покупателя будут иметь одинаковый `orderUid`
 - `srid` — string **обязательный**. ID заказа. В ответах методов сборочных заданий [FBS](./orders-fbs#tag/Sborochnye-zadaniya-FBS), [DBW](./orders-dbw#tag/dbwAssemblyOrders), [DBS](./dbs#tag/dbsAssemblyOrders) и [Самовывоз](./in-store-pickup#tag/inStorePickupAssemblyOrders) `srid` равен `rid`
 
@@ -148,11 +148,11 @@ content_sha: d6d862c3db66502c
 
 **400** — Неправильный запрос
 
-- `status` — integer. HTTP статус-код
-- `title` — string. Заголовок ошибки
-- `detail` — string. Детали ошибки
-- `requestId` — string. ID запроса
-- `origin` — string. ID внутреннего сервиса WB
+- `status` — integer **обязательный**. HTTP статус-код
+- `title` — string **обязательный**. Заголовок ошибки
+- `detail` — string **обязательный**. Детали ошибки
+- `requestId` — string **обязательный**. ID запроса
+- `origin` — string **обязательный**. ID внутреннего сервиса WB
 
 **401** — Не авторизован
 
@@ -180,6 +180,14 @@ content_sha: d6d862c3db66502c
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
+
+**404** — Не найдено
+
+- `status` — integer **обязательный**. HTTP статус-код
+- `title` — string **обязательный**. Заголовок ошибки
+- `detail` — string **обязательный**. Детали ошибки
+- `requestId` — string **обязательный**. ID запроса
+- `origin` — string **обязательный**. ID внутреннего сервиса WB
 
 **429** — Слишком много запросов
 

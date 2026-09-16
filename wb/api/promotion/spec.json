@@ -529,6 +529,17 @@
           ],
           "paymentType": "cpm"
         }
+      },
+      "V2BudgetResponse": {
+        "value": {
+          "adverts": [
+            {
+              "advertId": 123456789,
+              "currency": "RUB",
+              "total": 6000
+            }
+          ]
+        }
       }
     },
     "parameters": {
@@ -2606,7 +2617,7 @@
         },
         "type": "object"
       },
-      "V0BidsRecommendationsCpcResponse": {
+      "V0BidsRecommendationsCpcResponse2": {
         "properties": {
           "advertId": {
             "description": "ID кампании",
@@ -2635,7 +2646,7 @@
         },
         "type": "object"
       },
-      "V0BidsRecommendationsCpmResponse": {
+      "V0BidsRecommendationsCpmResponse1": {
         "properties": {
           "advertId": {
             "description": "ID кампании",
@@ -3159,6 +3170,32 @@
         ],
         "type": "object"
       },
+      "V1BudgetAdvert": {
+        "properties": {
+          "advertId": {
+            "description": "ID кампании",
+            "example": 1234567,
+            "type": "integer"
+          },
+          "currency": {
+            "description": "Валюта [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances)",
+            "example": "RUB",
+            "format": "ISO 4217",
+            "type": "string"
+          },
+          "total": {
+            "description": "Бюджет кампании в базовых единицах валюты [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances)",
+            "example": 3000,
+            "type": "integer"
+          }
+        },
+        "required": [
+          "advertId",
+          "currency",
+          "total"
+        ],
+        "type": "object"
+      },
       "V1GetNormQueryStatsRequest": {
         "properties": {
           "from": {
@@ -3405,6 +3442,43 @@
           "nmId",
           "normQuery",
           "currency"
+        ],
+        "type": "object"
+      },
+      "V2BudgetRequest": {
+        "properties": {
+          "advertIds": {
+            "description": "Список ID кампаний",
+            "example": [
+              1234567,
+              63453471
+            ],
+            "items": {
+              "type": "integer"
+            },
+            "maxItems": 50,
+            "minItems": 1,
+            "type": "array"
+          }
+        },
+        "required": [
+          "advertIds"
+        ],
+        "type": "object"
+      },
+      "V2BudgetResponse": {
+        "properties": {
+          "adverts": {
+            "description": "Данные по кампаниям",
+            "items": {
+              "$ref": "#/components/schemas/V1BudgetAdvert"
+            },
+            "nullable": true,
+            "type": "array"
+          }
+        },
+        "required": [
+          "adverts"
         ],
         "type": "object"
       },
@@ -5697,7 +5771,7 @@
     },
     "/adv/v1/balance": {
       "get": {
-        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод возвращает информацию о:\n  - счёте кабинета Продвижения WB. Его пополняет продавец.\n  - балансе — максимальной сумме для оплаты кампании по взаиморасчету: удержании средств из будущих продаж. Баланс пополнить нельзя, он рассчитывается автоматически на основе отчётов по продвижению.\n  - бонусных начислениях WB.\n\nИнформацию о бюджете кампаний можно получить в [отдельном методе](./promotion#tag/finances/operation/getV1Budget).\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 сек | 1 запрос | 1 сек | 5 запросов |\n| Сервисный | 1 сек | 1 запрос | 1 сек | 5 запросов |\n| Базовый с секретом | 1 сек | 1 запрос | 1 сек | 5 запросов |\n| Базовый | 1 ч | 2 запроса | 30 мин | 1 запрос |\n</div>\n",
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод возвращает информацию о:\n  - счёте кабинета Продвижения WB. Его пополняет продавец.\n  - балансе — максимальной сумме для оплаты кампании по взаиморасчету: удержании средств из будущих продаж. Баланс пополнить нельзя, он рассчитывается автоматически на основе отчётов по продвижению.\n  - бонусных начислениях WB.\n\nЧтобы получить информацию о бюджетах кампаний, используйте метод [Бюджеты кампаний](./promotion#tag/finances/operation/postV2Budget).\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 сек | 1 запрос | 1 сек | 5 запросов |\n| Сервисный | 1 сек | 1 запрос | 1 сек | 5 запросов |\n| Базовый с секретом | 1 сек | 1 запрос | 1 сек | 5 запросов |\n| Базовый | 1 ч | 2 запроса | 30 мин | 1 запрос |\n</div>\n",
         "operationId": "getV1Balance",
         "responses": {
           "200": {
@@ -5814,7 +5888,8 @@
     },
     "/adv/v1/budget": {
       "get": {
-        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод возвращает информацию о бюджете [кампании](./promotion#tag/campaigns/operation/getV2Adverts) — максимальной сумме затрат на кампанию. Бюджет кампании можно [пополнить](./promotion#tag/finances/operation/postV1BudgetDeposit).\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 сек | 4 запроса | 250 мс | 4 запроса |\n| Сервисный | 1 сек | 4 запроса | 250 мс | 4 запроса |\n| Базовый с секретом | 1 сек | 4 запроса | 250 мс | 4 запроса |\n| Базовый | 1 ч | 4 запроса | 15 мин | 1 запрос |\n</div>\n",
+        "deprecated": true,
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод будет отключен [16 ноября](https://dev.wildberries.ru/release-notes?id=582).\n\n\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 сек | 4 запроса | 250 мс | 4 запроса |\n| Сервисный | 1 сек | 4 запроса | 250 мс | 4 запроса |\n| Базовый с секретом | 1 сек | 4 запроса | 250 мс | 4 запроса |\n| Базовый | 1 ч | 4 запроса | 15 мин | 1 запрос |\n</div>\n",
         "operationId": "getV1Budget",
         "parameters": [
           {
@@ -5914,7 +5989,7 @@
     },
     "/adv/v1/budget/deposit": {
       "post": {
-        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод пополняет [бюджет](./promotion#tag/finances/operation/getV1Budget) кампании. <br>\nЧтобы запустить кампанию после пополнения бюджета, используйте метод [Запуск кампании](./promotion#tag/campaignManagement/operation/getV0Start).\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 сек | 1 запрос | 1 сек | 5 запросов |\n| Сервисный | 1 сек | 1 запрос | 1 сек | 5 запросов |\n| Базовый с секретом | 1 сек | 1 запрос | 1 сек | 5 запросов |\n| Базовый | 1 ч | 5 запросов | 12 мин | 1 запрос |\n</div>\n",
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод пополняет [бюджет](./promotion#tag/finances/operation/postV2Budget) кампании. <br>\nЧтобы запустить кампанию после пополнения бюджета, используйте метод [Запуск кампании](./promotion#tag/campaignManagement/operation/getV0Start).\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 сек | 1 запрос | 1 сек | 5 запросов |\n| Сервисный | 1 сек | 1 запрос | 1 сек | 5 запросов |\n| Базовый с секретом | 1 сек | 1 запрос | 1 сек | 5 запросов |\n| Базовый | 1 ч | 5 запросов | 12 мин | 1 запрос |\n</div>\n",
         "operationId": "postV1BudgetDeposit",
         "parameters": [
           {
@@ -7671,10 +7746,10 @@
                 "schema": {
                   "oneOf": [
                     {
-                      "$ref": "#/components/schemas/V0BidsRecommendationsCpmResponse"
+                      "$ref": "#/components/schemas/V0BidsRecommendationsCpmResponse1"
                     },
                     {
-                      "$ref": "#/components/schemas/V0BidsRecommendationsCpcResponse"
+                      "$ref": "#/components/schemas/V0BidsRecommendationsCpcResponse2"
                     }
                   ]
                 }
@@ -8474,6 +8549,80 @@
         }
       ]
     },
+    "/api/advert/v2/budget": {
+      "post": {
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод возвращает информацию об остатках бюджетов [кампаний](./promotion#tag/campaigns/operation/getV2Adverts).\nДля кампаний в [статусах](./promotion#tag/campaigns/operation/getV1PromotionCount):\n  - `4` — готова к запуску\n  - `9` — активна\n  - `11` — на паузе\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 мин | 20 запросов | 3 сек | 4 запроса |\n| Сервисный | 1 мин | 20 запросов | 3 сек | 4 запроса |\n| Базовый с секретом | 1 мин | 20 запросов | 3 сек | 4 запроса |\n| Базовый | 1 ч | 4 запроса | 15 мин | 1 запрос |\n</div>\n",
+        "operationId": "postV2Budget",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/V2BudgetRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "examples": {
+                  "V1BudgetResponse": {
+                    "$ref": "#/components/examples/V2BudgetResponse"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/V2BudgetResponse"
+                }
+              }
+            },
+            "description": "<span class='response__value response__value_success'>Успешно</span>"
+          },
+          "400": {
+            "content": {
+              "text/plain": {
+                "examples": {
+                  "CampaignNotBelongSeller": {
+                    "$ref": "#/components/examples/CampaignNotBelongSeller"
+                  }
+                },
+                "schema": {
+                  "type": "string"
+                }
+              }
+            },
+            "description": "<span class='response__value '>Неправильный запрос</span>"
+          },
+          "401": {
+            "$ref": "#/components/responses/401"
+          },
+          "403": {
+            "$ref": "#/components/responses/403"
+          },
+          "429": {
+            "$ref": "#/components/responses/429"
+          }
+        },
+        "security": [
+          {
+            "HeaderApiKey": []
+          }
+        ],
+        "summary": "Остатки бюджетов кампаний{{ /api/advert/v2/budget }}",
+        "tags": [
+          "finances"
+        ],
+        "x-category": "advert",
+        "x-readonly-method": true
+      },
+      "servers": [
+        {
+          "description": "**Prod**\n",
+          "url": "https://advert-api.wildberries.ru"
+        }
+      ]
+    },
     "/api/v1/calendar/promotions": {
       "get": {
         "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод возвращает список [акций](./promotion#tag/promoCalendar/operation/getV1CalendarPromotionsDetails) в WB с датами и временем проведения.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца для всех методов категории <strong>Календарь акций</strong>:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 6 сек | 10 запросов | 600 мс | 5 запросов |\n| Сервисный | 6 сек | 10 запросов | 600 мс | 5 запросов |\n| Базовый с секретом | 6 сек | 10 запросов | 600 мс | 5 запросов |\n| Базовый | 1 ч | 1 запрос | 1 ч | 1 запрос |\n</div>\n",
@@ -8720,7 +8869,7 @@
       "x-displayName": "Поисковые кластеры"
     },
     {
-      "description": "<div class=\"description_auth\">\n  Для доступа к методам используйте <a href=\"./api-information#tag/authorization/Kak-sozdat-personalnyj-bazovyj-ili-testovyj-token\">токен</a> для категории <strong>Продвижение</strong>\n</div>\n\nВы можете посмотреть ваш [баланс](./promotion#tag/finances/operation/getV1Balance) и [бюджет ваших рекламных кампаний](./promotion#tag/finances/operation/getV1Budget). Бюджет рекламных кампаний можно [пополнить](./promotion#tag/finances/operation/postV1BudgetDeposit).\n\nТакже вы можете узнать историю ваших [затрат](./promotion#tag/finances/operation/getV1Upd) и [пополнений счёта](./promotion#tag/finances/operation/getV1Payments).\n",
+      "description": "<div class=\"description_auth\">\n  Для доступа к методам используйте <a href=\"./api-information#tag/authorization/Kak-sozdat-personalnyj-bazovyj-ili-testovyj-token\">токен</a> для категории <strong>Продвижение</strong>\n</div>\n\nС помощью методов этого раздела вы можете:\n  - получить информацию о [балансе и счёте](./promotion#tag/finances/operation/getV1Balance)\n  - получить информацию об [остатках бюджетов кампаний](./promotion#tag/finances/operation/postV2Budget)\n  - получить историю ваших [затрат](./promotion#tag/finances/operation/getV1Upd)\n  - получить историю [пополнений счёта](./promotion#tag/finances/operation/getV1Payments)\n  - [пополнить бюджет](./promotion#tag/finances/operation/postV1BudgetDeposit)\n",
       "name": "finances",
       "x-displayName": "Финансы"
     },

@@ -9,7 +9,7 @@ tags:
 spec_version: finances
 source: "https://dev.wildberries.ru/docs/openapi/documents-and-accounting"
 deprecated: false
-content_sha: e78115d0b6fb455a
+content_sha: b7c8c6eaa1a19695
 ---
 
 # Список отчётов реализации
@@ -24,7 +24,7 @@ content_sha: e78115d0b6fb455a
 
 Метод возвращает список отчётов релизации по формату [таблицы отчётов](https://seller.wildberries.ru/suppliers-mutual-settlements).
 
-Данные доступны с 1 января 2025 года.
+Данные доступны с 29 января 2024 года.
 
 Лимит запросов на один аккаунт продавца:
 
@@ -52,17 +52,17 @@ content_sha: e78115d0b6fb455a
 - `dateTo` — string<date> **обязательный**. Дата конца отчётного периода
 - `createDate` — string<date> **обязательный**. Дата формирования отчёта
 - `currency` — string **обязательный**. Валюта отчёта
-- `reportType` — integer (1, 2, 3) **обязательный**. Тип отчёта: - `1` — основной - `2` — по выкупам - `3` — по выкупам для Грузии
+- `reportType` — integer (1, 2) **обязательный**. Тип отчёта: - `1` — основной - `2` — по выкупам
 - `retailAmountSum` — string **обязательный**. Продажа
 - `forPaySum` — string **обязательный**. К перечислению за товар
 - `avgSalePercent` — number **обязательный**. Согласованная скидка, %
-- `deliveryServiceSum` — string **обязательный**. Стоимость логистики
+- `deliveryServiceSum` — string **обязательный**. Стоимость доставки
 - `paidStorageSum` — string **обязательный**. Стоимость хранения
 - `paidAcceptanceSum` — string **обязательный**. Стоимость операций при приёмке
-- `deductionSum` — string **обязательный**. Прочие удержания и выплаты
+- `deductionSum` — string **обязательный**. Прочие удержания/выплаты
 - `penaltySum` — string **обязательный**. Общая сумма штрафов
-- `additionalPaymentSum` — string **обязательный**. Корректировка Вознаграждения Вайлдберриз (ВВ)
-- `cashbackAmountSum` — string **обязательный**. Сумма, удержанная за начисленные баллы программы лояльности
+- `additionalPaymentSum` — string **обязательный**. Корректировка Вознаграждения Wildberries (ВВ)
+- `cashbackAmountSum` — string **обязательный**. Сумма баллов, удержанных по программе лояльности
 - `cashbackDiscountSum` — string **обязательный**. Компенсация скидки по программе лояльности
 - `cashbackCommissionChangeSum` — string **обязательный**. Стоимость участия в программе лояльности
 - `paymentSchedule` — string **обязательный**. Разовое изменение срока перечисления денежных средств
@@ -72,11 +72,11 @@ content_sha: e78115d0b6fb455a
 
 **400** — Неправильный запрос
 
-- `status` — integer. HTTP статус-код
-- `title` — string. Заголовок ошибки
-- `detail` — string. Детали ошибки
-- `requestId` — string. ID запроса
-- `origin` — string. ID внутреннего сервиса WB
+- `status` — integer **обязательный**. HTTP статус-код
+- `title` — string **обязательный**. Заголовок ошибки
+- `detail` — string **обязательный**. Детали ошибки
+- `requestId` — string **обязательный**. ID запроса
+- `origin` — string **обязательный**. ID внутреннего сервиса WB
 
 **401** — Не авторизован
 

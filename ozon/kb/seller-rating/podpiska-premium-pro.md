@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /seller-rating/podpiska-premium-pro
 source: "https://seller-edu.ozon.ru/libra/seller-rating/podpiska-premium-pro"
-updated: "2026-09-08 08:04:03"
+updated: "2026-09-15 16:05:01"
 doc_id: 30502
-fetched_at: "2026-09-09T01:49:09Z"
-content_sha: c7bc40a86cb09910
+fetched_at: "2026-09-16T02:21:46Z"
+content_sha: fbf8c2f124335365
 ---
 
 # Подписка Premium Pro
@@ -58,6 +58,7 @@ Premium Pro — это подписка для продавцов, которы�
 | Управление порядком товаров в [подборках](https://seller-edu.ozon.ru/libra/work-with-goods/oformlenie-magazina/podborki-tovarov). | − | ✔ |
 | Создание и редактирование групп товаров в объединениях [«Похожие»](https://seller-edu.ozon.ru/libra/work-with-goods/zagruzka-tovarov/obedinenie-tovarov/pohojie-tovary) и [«Комплекты»](https://seller-edu.ozon.ru/libra/work-with-goods/zagruzka-tovarov/obedinenie-tovarov/komplekty). | − | ✔ |
 | [Объединение товаров в списки для анализа](https://seller-edu.ozon.ru/libra/analytics-and-metrics/what-to-sell/ozon-bestsellers#%D1%81%D0%BF%D0%B8%D1%81%D0%BA%D0%B8-%D1%82%D0%BE%D0%B2%D0%B0%D1%80%D0%BE%D0%B2). | − | ✔ |
+| Дублирование карточек товаров — разрешено только в разных личных кабинетах с одним ИНН, если на каждом из них есть активная подписка. Можно использовать только для тестирования акций и распределения стоков. Внутри одного кабинета дубли запрещены. | − | ✔ |
 | Интеграция с Seller API: общайтесь [в чатах с покупателями](https://docs.ozon.ru/api/seller/#tag/ChatAPI);получайте [расширенную аналитику](https://docs.ozon.ru/api/seller/#operation/AnalyticsAPI_AnalyticsGetData) и [отчёт о реализации товаров за день](https://docs.ozon.ru/api/seller/#operation/FinanceAPI_GetRealizationByDayReportV1). [Подробнее о Seller API](https://seller-edu.ozon.ru/api-ozon/how-to-api) | ✔ | ✔ |
 | Интеграция с Seller API — изучайте [подробную информацию о ценах на товары](https://docs.ozon.ru/api/seller/#operation/ProductPricesDetails). | − | ✔ |
 | Интеграция с Seller API — [автоматизация работы с отзывами](https://seller-edu.ozon.ru/libra/work-with-byuers/buyers-reviews#работать-с-отзывами-через-api). | − | ✔ |

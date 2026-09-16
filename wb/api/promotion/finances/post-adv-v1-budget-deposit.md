@@ -9,7 +9,7 @@ tags:
 spec_version: promotion
 source: "https://dev.wildberries.ru/docs/openapi/promotion"
 deprecated: false
-content_sha: 22a76814d977d545
+content_sha: a7eef3551031825e
 ---
 
 # Пополнение бюджета кампании
@@ -18,7 +18,7 @@ content_sha: 22a76814d977d545
 
 Описание метода
 
-Метод пополняет [бюджет](./promotion#tag/finances/operation/getV1Budget) кампании. 
+Метод пополняет [бюджет](./promotion#tag/finances/operation/postV2Budget) кампании. 
 
 Чтобы запустить кампанию после пополнения бюджета, используйте метод [Запуск кампании](./promotion#tag/campaignManagement/operation/getV0Start).
 
