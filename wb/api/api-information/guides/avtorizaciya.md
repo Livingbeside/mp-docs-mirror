@@ -5,7 +5,7 @@ tag: authorization
 group: ""
 kind: guide
 source: "https://dev.wildberries.ru/docs/openapi/api-information"
-content_sha: 51fc54d4ce4881a6
+content_sha: 49f7000975db98af
 ---
 
 # Авторизация
@@ -63,7 +63,7 @@ content_sha: 51fc54d4ce4881a6
 
 # Как создать персональный, базовый или тестовый токен
 
- Подробнее о создании Сервисного токена можно узнать в [инструкции в справочном центре](https://seller.wildberries.ru/instructions/ru/ru/material/how-to-create-update-or-delete-a-wb-api-token?categoryId=api-integration&goBackOption=prevRoute#%D0%BA%D0%B0%D0%BA-%D1%81%D0%BE%D0%B7%D0%B4%D0%B0%D1%82%D1%8C-%D1%81%D0%B5%D1%80%D0%B2%D0%B8%D1%81%D0%BD%D1%8B%D0%B9-%D1%82%D0%BE%D0%BA%D0%B5%D0%BD)
+ Подробнее о создании Сервисного токена можно узнать в [инструкции в справочном центре](https://seller.wildberries.ru/instructions/ru/ru/material/how-to-create-update-or-delete-a-wb-api-token#%D0%BA%D0%B0%D0%BA-%D1%81%D0%BE%D0%B7%D0%B4%D0%B0%D1%82%D1%8C-%D1%81%D0%B5%D1%80%D0%B2%D0%B8%D1%81%D0%BD%D1%8B%D0%B9-%D1%82%D0%BE%D0%BA%D0%B5%D0%BD)
 
 1. В личном кабинете перейдите в раздел [Интеграции по API](https://seller.wildberries.ru/api-integrations).
 2. Нажмите **+ Создать токен**. Откроется окно создания токена с двумя вкладками. Для всех типов токенов, кроме сервисного, выберите вкладку **Для интеграции вручную**.

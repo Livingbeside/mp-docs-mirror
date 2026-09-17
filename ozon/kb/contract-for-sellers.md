@@ -6,8 +6,8 @@ path: /contract-for-sellers
 source: "https://seller-edu.ozon.ru/libra/contract-for-sellers"
 updated: "2026-03-30 08:36:01"
 doc_id: 655
-fetched_at: "2026-08-28T12:01:50Z"
-content_sha: c261fdc7a4fd1e0c
+fetched_at: "2026-09-17T02:05:02Z"
+content_sha: 482ce8329142e935
 ---
 
 # Договоры для Продавцов на платформе Ozon
@@ -27,3 +27,4 @@ _Главная_
 - [Кабинет бренда](https://seller-edu.ozon.ru/libra/contract-for-sellers/account-brand)
 - [Договор для продавцов цифровых товаров](https://seller-edu.ozon.ru/libra/contract-for-sellers/contract-digital-goods)
 - [Договор Ozon Доставка](https://seller-edu.ozon.ru/libra/contract-for-sellers/delivery-contract)
+- [Договор Озон Технологии](https://seller-edu.ozon.ru/libra/contract-for-sellers/tech-contract)

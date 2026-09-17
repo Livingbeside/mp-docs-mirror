@@ -9,7 +9,7 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: 7f58499945158c37
+content_sha: a45fc94ecbf77e7a
 ---
 
 # Данные аналитики
@@ -19,8 +19,9 @@ content_sha: 7f58499945158c37
 Уĸажите период и метриĸи, ĸоторые нужно посчитать. В ответе будет аналитиĸа, сгруппированная по параметру `dimensions`.
 
 Для продавцов без подписки [Premium Plus](https://seller-edu.ozon.ru/seller-rating/about-rating/subscription-premium-plus):
-- доступны данные за последние 3 месяца,
-- есть ограничения по способам группировки данных и метрикам.
+- доступны данные за последние 3 месяца;
+- есть ограничения по способам группировки данных и метрикам;
+- есть лимит на 50 запросов в сутки.
 
 Для продавцов с подпиской [Premium Plus](https://seller-edu.ozon.ru/seller-rating/about-rating/subscription-premium-plus) или [Premium Pro](https://seller-edu.ozon.ru/seller-rating/about-rating/podpiska-premium-pro) ограничений нет.
 

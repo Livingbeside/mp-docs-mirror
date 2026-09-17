@@ -1,20 +1,20 @@
 ---
-title: Кредит на развитие бизнеса
+title: Кредит на рост оборотов
 marketplace: ozon
 kind: section
 path: /fintech/ozon-invest/ozon-invest/kredit-na-razvitie-biznesa
 source: "https://seller-edu.ozon.ru/libra/fintech/ozon-invest/ozon-invest/kredit-na-razvitie-biznesa"
-updated: "2026-04-09 10:10:19"
+updated: "2026-09-16 13:29:14"
 doc_id: 69588
-fetched_at: "2026-08-28T12:11:15Z"
-content_sha: 284e46be5fc0eafe
+fetched_at: "2026-09-17T02:05:04Z"
+content_sha: 50fef8d9c30f650c
 ---
 
-# Кредит на развитие бизнеса
+# Кредит на рост оборотов
 
 _Главная / Финансовые услуги / Кредиты, займы и факторинг / Кредит для бизнеса_
 
 ## Вложенные разделы
-- [Что такое кредит на развитие бизнеса](https://seller-edu.ozon.ru/libra/fintech/ozon-invest/ozon-invest/kredit-na-razvitie-biznesa/chto-takoe-kredit-na-razvitie-biznesa)
-- [Как отправить заявку на кредит на развитие бизнеса](https://seller-edu.ozon.ru/libra/fintech/ozon-invest/ozon-invest/kredit-na-razvitie-biznesa/kak-otpravit-zayavku-na-kredit-na-razvitie-biznesa)
-- [Как выплачивать кредит на развитие бизнеса](https://seller-edu.ozon.ru/libra/fintech/ozon-invest/ozon-invest/kredit-na-razvitie-biznesa/kak-vyplachivat-kredit-na-razvitie-biznesa)
+- [Что такое кредит на рост оборотов](https://seller-edu.ozon.ru/libra/fintech/ozon-invest/ozon-invest/kredit-na-razvitie-biznesa/chto-takoe-kredit-na-razvitie-biznesa)
+- [Как отправить заявку на кредит на рост оборотов](https://seller-edu.ozon.ru/libra/fintech/ozon-invest/ozon-invest/kredit-na-razvitie-biznesa/kak-otpravit-zayavku-na-kredit-na-razvitie-biznesa)
+- [Как выплачивать кредит на рост оборотов](https://seller-edu.ozon.ru/libra/fintech/ozon-invest/ozon-invest/kredit-na-razvitie-biznesa/kak-vyplachivat-kredit-na-razvitie-biznesa)

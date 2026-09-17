@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /ozon-logistika/dostavka-dlya-biznesa/rabota-s-ozon-dostavkoi-dlya-biznesa-cherez-api
 source: "https://seller-edu.ozon.ru/libra/ozon-logistika/dostavka-dlya-biznesa/rabota-s-ozon-dostavkoi-dlya-biznesa-cherez-api"
-updated: "2026-08-20 07:51:45"
+updated: "2026-09-16 11:50:52"
 doc_id: 80899
-fetched_at: "2026-08-28T12:11:15Z"
-content_sha: f8532347b7801177
+fetched_at: "2026-09-17T02:05:04Z"
+content_sha: 2bffe657b7907383
 ---
 
 # Работа с Ozon Доставкой для бизнеса через API
@@ -66,6 +66,10 @@ Ozon Delivery API даёт возможность встроить Ozon Дос�
 5. Получите в личном кабинете Client ID и Client Secret — используйте их для настройки авторизации вашего приложения при обращении к API.
   Client Secret нужно хранить в защищённом месте и не передавать посторонним.
 6. После создания приложения передайте данные и техническую документацию вашему разработчику для настройки интеграции. [Подробнее об авторизации](https://docs.ozon.ru/api/ozon-delivery/#tag/GetStarted)
+
+## Интеграция через наших партнёров
+
+Подключение Ozon Доставки для бизнеса возможно через **ApiShip**. Для подключения следуйте [инструкции](https://docs.apiship.ru/docs/delivery-services/list-delivery-services/ozondel/).
 
 # Как работать с API
 

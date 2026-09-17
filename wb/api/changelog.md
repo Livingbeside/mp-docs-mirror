@@ -4,8 +4,8 @@ api: wildberries
 kind: changelog
 source: "https://dev.wildberries.ru/release-notes"
 window: последние записи, страница отдаёт не всю историю
-fetched_at: "2026-09-15T02:20:50Z"
-content_sha: 4a776a07b650d0a6
+fetched_at: "2026-09-17T02:08:15Z"
+content_sha: 771575a0a62ded40
 ---
 
 # Журнал изменений WB API
@@ -67,6 +67,22 @@ content_sha: 4a776a07b650d0a6
 Сентябрь
 2026
 
+Новое
+
+## 16.09.2026
+
+Критичное изменение
+
+Маркетинг и продвижение
+
+Финансы
+
+Изменения в API Продвижения
+
+Добавили новую версию метода получения бюджета кампаний — [POST /api/advert/v2/budget](https://dev.wildberries.ru/docs/openapi/promotion/#tag/finances/operation/postV2Budget). Теперь с помощью WB API вы можете получить остатки бюджетов по нескольким кампаниям одним запросом.
+
+Текущий метод [GET /adv/v1/budget](https://dev.wildberries.ru/docs/openapi/promotion/#tag/finances/operation/getV1Budget) будет отключён **16 ноября**.
+
 Изменения
 
 ## 10.09.2026
@@ -95,7 +111,7 @@ content_sha: 4a776a07b650d0a6
 
 Поставки FBW
 
-Черновики
+Черновики поставок
 
 Черновики поставок FBW
 
@@ -536,50 +552,5 @@ DBS
 
 - **POST /api/v1/test/make/feedbacks**
 - **POST /api/v1/test/make/questions**
-
-Новое
-
-## 07.07.2026
-
-Критичное изменение
-
-Маркетинг и продвижение
-
-Кампании
-
-Управление кампаниями
-
-Финансы
-
-Параметры кампаний
-
-Статистика
-
-Поисковые кластеры
-
-Изменения в сервисе Продвижения
-
-API Продвижения уже работает в валюте аккаунта продавца.
-
-Добавили информацию о валюте [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances) — поле `currency`— в ответы методов:
-
-- [GET /api/advert/v2/adverts](/docs/openapi/promotion/#tag/campaigns/operation/getV2Adverts)
-- [POST /api/advert/v1/bids/min](/docs/openapi/promotion/#tag/creatingCampaigns/operation/postV1BidsMin)
-- [PATCH /api/advert/v1/bids](/docs/openapi/promotion/#tag/campaignManagement/operation/patchV1Bids)
-- [GET /adv/v1/balance](/docs/openapi/promotion/#tag/finances/operation/getV1Balance)
-- [GET /adv/v1/budget](/docs/openapi/promotion/#tag/finances/operation/getV1Budget)
-- [POST /adv/v1/budget/deposit](/docs/openapi/promotion/#tag/finances/operation/postV1BudgetDeposit)
-- [GET /adv/v1/payments](/docs/openapi/promotion/#tag/finances/operation/getV1Payments)
-- [POST /adv/v0/normquery/stats](/docs/openapi/promotion/#tag/statistics/operation/postV0NormqueryStats)
-- [GET /adv/v3/fullstats](/docs/openapi/promotion/#tag/statistics/operation/getV3Fullstats)
-
-В ответ метода получения списка ставок поисковых кластеров [POST /adv/v0/normquery/get-bids](/docs/openapi/promotion/#tag/searchClusters/operation/postV0NormqueryBids) добавили поля:
-
-- `id_kopecks` — текущая ставка в разменных денежных единицах — 0,01 от базовой единицы валюты [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances) за тысячу показов.
-- `currency` — валюта [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances).
-
-Добавили метод [GET /api/advert/v1/config](/docs/openapi/promotion/#tag/campaignManagement/operation/getV1Config). С его помощью вы можете получить валюту вашего аккаунта и допустимые шаги ставок.
-
-Чтобы установить ставки для поисковых кластеров в валюте вашего аккаунта используйте новый метод [POST /api/advert/v1/normquery/bids](/docs/openapi/promotion/#tag/searchClusters/operation/postV1NormqueryBids)
 
 Мы используем [cookies](/privacy) для сбора статистики и улучшения сервиса

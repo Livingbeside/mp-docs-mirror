@@ -5,12 +5,19 @@ tag: News
 group: Обновления
 kind: changelog
 source: "https://docs.ozon.ru/api/seller/"
-content_sha: ad7a127dfdef707a
+content_sha: 4ac4bf2ecb9d7aff
 ---
 
 # Обновления
 
 Следите за обновлениями документации на платформе для разработчиков [Ozon for dev](https://dev.ozon.ru/).
+
+## 16 сентября 2026
+
+| Метод | Изменение |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------ |
+| [/v1/analytics/local-sale/total](#operation/AnalyticsLocalSaleTotal)<br>[/v1/analytics/local-sale/clusters-items/info](#operation/AnalyticsLocalSaleClustersItemsInfo)<br>[/v1/analytics/local-sale/items-clusters/info](#operation/AnalyticsLocalSaleItemsClustersInfo) | Добавили бета-методы для работы с локальностью продаж. |
+| [/v1/analytics/data](#operation/AnalyticsAPI_AnalyticsGetData) | Обновили описание метода. |
 
 ## 14 сентября 2026
 

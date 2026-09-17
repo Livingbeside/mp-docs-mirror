@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /commissions-tariffs/commissions-tariffs-ozon/vykup-tovarov-marketpleisom
 source: "https://seller-edu.ozon.ru/libra/commissions-tariffs/commissions-tariffs-ozon/vykup-tovarov-marketpleisom"
-updated: "2026-09-10 15:01:01"
+updated: "2026-09-16 07:07:36"
 doc_id: 35545
-fetched_at: "2026-09-11T01:52:46Z"
-content_sha: 93a368933f644187
+fetched_at: "2026-09-17T02:05:03Z"
+content_sha: 3aca2745026b15be
 ---
 
 # Выкуп товаров маркетплейсом
@@ -253,7 +253,7 @@ _Главная / Комиссии и тарифы / Комиссии и тар�
   
   не успешно — документ сменит статус на **Отклонён**, а мы вернём вам УПД обратно для корректировки и отправим уведомление об этом на почту и в личный кабинет.
 
-[Какие ошибки могут возникать в УПД-1 и УКД-1 при выкупе маркетплейсом](/libra/prodaji-i-postavki-v-drugie-strany/oshibki-pri-vykupah-marketpleisom)
+[Какие ошибки могут возникать в УПД-1 и УКД-1 при выкупе маркетплейсом](https://seller-edu.ozon.ru/prodaji-i-postavki-v-drugie-strany/oshibki-pri-vykupah-marketpleisom)
 
 ## Как исправить ставку НДС в УПД-1
 

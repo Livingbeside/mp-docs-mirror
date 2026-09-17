@@ -1,24 +1,24 @@
 ---
-title: Как отправить заявку на кредит на развитие бизнеса
+title: Как отправить заявку на кредит на рост оборотов
 marketplace: ozon
 kind: article
 path: /fintech/ozon-invest/ozon-invest/kredit-na-razvitie-biznesa/kak-otpravit-zayavku-na-kredit-na-razvitie-biznesa
 source: "https://seller-edu.ozon.ru/libra/fintech/ozon-invest/ozon-invest/kredit-na-razvitie-biznesa/kak-otpravit-zayavku-na-kredit-na-razvitie-biznesa"
-updated: "2026-08-13 15:09:30"
+updated: "2026-09-16 13:42:02"
 doc_id: 69592
-fetched_at: "2026-08-28T12:11:15Z"
-content_sha: f046bb84e244c204
+fetched_at: "2026-09-17T02:05:04Z"
+content_sha: d4b3bf5329d2b5be
 ---
 
-# Как отправить заявку на кредит на развитие бизнеса
+# Как отправить заявку на кредит на рост оборотов
 
-_Главная / Финансовые услуги / Кредиты, займы и факторинг / Кредит для бизнеса / Кредит на развитие бизнеса_
+_Главная / Финансовые услуги / Кредиты, займы и факторинг / Кредит для бизнеса / Кредит на рост оборотов_
 
 Как заполнить заявку на кредит на развитие бизнеса, что нужно для оформления и как подписываем документы
 
-С 30 июля 2026 года подать заявку на кредит через личный кабинет финансирования не получится. Как заполнять заявку — читайте в [статье](https://help-bank.ozon.ru/business/credit/credit/create).
+Подать заявку на кредит через личный кабинет финансирования не получится. Как заполнять заявку — читайте в [статье](https://help-bank.ozon.ru/business/credit/credit/create).
 
-Рассказываем, что нужно учесть при подаче заявки на кредитование. [Подробнее о кредите на развитие бизнеса](https://seller-edu.ozon.ru/libra/fintech/ozon-invest/ozon-invest/kredit-na-razvitie-biznesa/chto-takoe-kredit-na-razvitie-biznesa)
+Рассказываем, что нужно учесть при подаче заявки на кредитование. [Подробнее о кредите на рост оборотов](https://seller-edu.ozon.ru/libra/fintech/ozon-invest/ozon-invest/kredit-na-razvitie-biznesa/chto-takoe-kredit-na-razvitie-biznesa)
 
 # Какие документы нужны для оформления кредита
 
@@ -59,7 +59,7 @@ _Главная / Финансовые услуги / Кредиты, займы
 
 # Что ещё полезно знать
 
-[Как выплачивать кредит на развитие бизнеса](/libra/fintech/ozon-invest/ozon-invest/kredit-na-razvitie-biznesa/kak-vyplachivat-kredit-na-razvitie-biznesa)
+[Как выплачивать кредит на рост оборотов](/libra/fintech/ozon-invest/ozon-invest/kredit-na-razvitie-biznesa/kak-vyplachivat-kredit-na-razvitie-biznesa)
 
 [Как оформить кредитные каникулы](https://seller-edu.ozon.ru/fintech/ozon-invest/ozon-invest/kreditnye-kanikuly)
 

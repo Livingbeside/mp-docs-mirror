@@ -5,7 +5,7 @@ tag: Поставки FBS
 group: ""
 kind: guide
 source: "https://dev.wildberries.ru/docs/openapi/orders-fbs"
-content_sha: 10a001da1311fc90
+content_sha: 9509865e3aae0e24
 ---
 
 # Поставки FBS
@@ -21,7 +21,7 @@ content_sha: 10a001da1311fc90
  
 
  1. [Создайте новую поставку](./orders-fbs#tag/Postavki-FBS/paths/~1api~1v3~1supplies/post). В ответ вернется ID созданной поставки в формате `WB-GI-1234567`.
- 1. [Установите параметры отгрузки поставки](./orders-fbs#tag/Postavki-FBS/operation/patchV3FbsSuppliesShippingMethod). Для этого получите [список пунктов отгрузки поставок](./item-management#tag/Postavki-FBS/operation/getV3FbsShippingPoints). Доступно только для продавцов из РФ.
+ 1. [Установите параметры отгрузки поставки](./orders-fbs#tag/Postavki-FBS/operation/patchV3FbsSuppliesShippingMethod). Для этого получите [список пунктов отгрузки поставок](./orders-fbs#tag/Postavki-FBS/operation/getV3FbsShippingPoints). Доступно только для продавцов из РФ.
 
  Для доставки транспортной компанией обязательно укажите ID ЭТрН — электронной транспортной накладной.
  1. В текущую новую поставку [добавьте сборочные задания](./orders-fbs#tag/Postavki-FBS/paths/~1api~1marketplace~1v3~1supplies~1%7BsupplyId%7D~1orders/patch), которые вы повезёте на склад или ПВЗ. После того, как сборочные задания будут добавлены к поставке, они будут переведены в статус `confirm` — на сборке.

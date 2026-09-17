@@ -9,7 +9,7 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: b44c2e299505e3c2
+content_sha: df18c107b349abe4
 ---
 
 # Получить список необработанных отправлений
@@ -159,7 +159,7 @@ content_sha: b44c2e299505e3c2
       - `total_discount_percent` — number<double>. Процент скидки.
       - `total_discount_value` — number<double>. Сумма скидки.
   - `in_process_at` — string<date-time>. Дата и время начала обработки отправления.
-  - `integration_type_flow` — string. Процесс обработки отправления: - `ozon` — доставка силами Ozon; - `aggregator` — доставка внешней службой, Ozon регистрирует заказ; - `non_integrated` — доставка силами продавца; - `3pl_tracking` — доставка внешней службой, продавец регистрирует заказ; - `hybrid` — гибридная интеграция; - `hybrid_aggregator` — гибридная интеграция с доставкой внешней службой, Ozon регистрирует заказ; - `hybrid_non_integrated` — гибридная интеграция с доставкой силами продавца; - `hybrid_3pl_tracking` — гибридная интеграция с доставкой внешней службой, продавец регистрирует заказ; - `click_and_collect` — бронирование в магазине партнёра; - `FBP` — доставка с партнёрских складов Ozon.
+  - `integration_type_flow` — string. Процесс обработки отправления: - `ozon` — доставка силами Ozon; - `aggregator` — доставка внешней службой, Ozon регистрирует заказ; - `non_integrated` — доставка силами продавца; - `3pl_tracking` — доставка внешней службой, продавец регистрирует заказ; - `hybrid` — гибридная интеграция; - `hybrid_aggregator` — гибридная интеграция с доставкой внешней службой, Ozon регистрирует заказ; - `hybrid_non_integrated` — гибридная интеграция с доставкой силами продавца; - `hybrid_3pl_tracking` — гибридная интеграция с доставкой внешней службой, продавец регистрирует заказ; - `click_and_collect` — бронирование в магазине партнёра.
   - `is_click_and_collect` — boolean. `true`, если отправление доставляется методом «Самовывоз из магазина».
   - `is_express` — boolean. `true`, если использовалась быстрая доставка Ozon Express.
   - `is_multibox` — boolean. Признак, что в отправлении есть многокоробочный товар и нужно передать количество коробок для него: - `true` — до сборки передайте количество коробок через метод [/v3/posting/multiboxqty/set](#operation/PostingAPI_PostingMultiBoxQtySetV3). - `false` — отправление собрано с указанием количества коробок в параметре `multi_box_qty` или в отправлении нет многокоробочного товара.

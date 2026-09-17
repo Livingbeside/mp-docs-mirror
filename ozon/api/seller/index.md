@@ -2,9 +2,9 @@
 title: Документация Ozon Seller API — все методы
 api: ozon-seller
 spec_version: 2.1
-operations: 467
+operations: 470
 source: "https://docs.ozon.ru/api/seller/"
-content_sha: 9cec4a41a2916835
+content_sha: 22e69d722eb0c1dc
 ---
 
 # Документация Ozon Seller API
@@ -18,7 +18,7 @@ content_sha: 9cec4a41a2916835
 
 > [Информационная платформа и сообщество разработчиков Ozon for dev](https://dev.ozon.ru/)
 
-Версия спеки: `2.1` · методов: **467** · разделов справки: **26**
+Версия спеки: `2.1` · методов: **470** · разделов справки: **26**
 
 Источник: https://docs.ozon.ru/api/seller/
 
@@ -44,6 +44,9 @@ content_sha: 9cec4a41a2916835
 | `POST` | `/v1/analytics/category/comparison` | BetaMethod | [Получить информацию о сравнении категорий](betamethod/post-v1-analytics-category-comparison.md) |
 | `POST` | `/v1/analytics/data` | Premium | [Данные аналитики](premium/post-v1-analytics-data.md) |
 | `POST` | `/v1/analytics/decommissioned-goods` | BetaMethod | [Получить отчёт о списанных товарах](betamethod/post-v1-analytics-decommissioned-goods.md) |
+| `POST` | `/v1/analytics/local-sale/clusters-items/info` | BetaMethod | [Получить информацию о локальности продаж по кластерам](betamethod/post-v1-analytics-local-sale-clusters-items-info.md) |
+| `POST` | `/v1/analytics/local-sale/items-clusters/info` | BetaMethod | [Получить информацию о локальности продаж товара по кластерам](betamethod/post-v1-analytics-local-sale-items-clusters-info.md) |
+| `POST` | `/v1/analytics/local-sale/total` | BetaMethod | [Получить общую информацию о локальности продаж](betamethod/post-v1-analytics-local-sale-total.md) |
 | `POST` | `/v1/analytics/manage/stocks` | BetaMethod | [Управление остатками](betamethod/post-v1-analytics-manage-stocks.md) |
 | `POST` | `/v1/analytics/product-queries/details` | Premium | [Получить детализацию запросов по товару](premium/post-v1-analytics-product-queries-details.md) |
 | `POST` | `/v1/analytics/product-queries` | Premium | [Получить информацию о запросах моих товаров](premium/post-v1-analytics-product-queries.md) |
