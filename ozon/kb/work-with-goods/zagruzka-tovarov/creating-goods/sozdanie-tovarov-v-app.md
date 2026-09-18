@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /work-with-goods/zagruzka-tovarov/creating-goods/sozdanie-tovarov-v-app
 source: "https://seller-edu.ozon.ru/libra/work-with-goods/zagruzka-tovarov/creating-goods/sozdanie-tovarov-v-app"
-updated: "2026-09-07 13:03:41"
+updated: "2026-09-16 11:28:03"
 doc_id: 53363
-fetched_at: "2026-09-08T01:39:32Z"
-content_sha: 5edd80f4d3d24c57
+fetched_at: "2026-09-18T02:20:35Z"
+content_sha: 970f481a099c7baa
 ---
 
 # Создание и редактирование товаров в приложении Ozon Seller
@@ -38,7 +38,7 @@ _Главная / Работа с товарами / Создание и ред�
 7. Укажите характеристики товара — список зависит от категории. [Подробнее о характеристиках](https://seller-edu.ozon.ru/work-with-goods/zagruzka-tovarov/creating-goods/sozdanie-tovarov-v-lk#%D1%88%D0%B0%D0%B3-2-%D1%83%D0%BA%D0%B0%D0%B6%D0%B8%D1%82%D0%B5-%D0%BE%D0%B1%D1%89%D0%B8%D0%B5-%D1%85%D0%B0%D1%80%D0%B0%D0%BA%D1%82%D0%B5%D1%80%D0%B8%D1%81%D1%82%D0%B8%D0%BA%D0%B8)
 8. Нажмите **Далее**.
 9. Добавьте:
-  Фото — от 1 до 30 изображений: 1 главное (отметим значком ) и 29 дополнительных. Можно обработать фото в [редакторе](https://seller-edu.ozon.ru/work-with-goods/zagruzka-tovarov/zagruzka-media/redaktor-foto-ai#%D0%BA%D0%B0%D0%BA-%D0%BE%D1%82%D1%80%D0%B5%D0%B4%D0%B0%D0%BA%D1%82%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D1%82%D1%8C-%D1%84%D0%BE%D1%82%D0%BE): дорисовать края, сгенерировать фон, удалить фон или улучшить качество.
+  Фото — от 1 до 50 изображений: 1 главное (отметим значком ) и 49 дополнительных. Можно обработать фото в [редакторе](https://seller-edu.ozon.ru/work-with-goods/zagruzka-tovarov/zagruzka-media/redaktor-foto-ai#%D0%BA%D0%B0%D0%BA-%D0%BE%D1%82%D1%80%D0%B5%D0%B4%D0%B0%D0%BA%D1%82%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D1%82%D1%8C-%D1%84%D0%BE%D1%82%D0%BE): дорисовать края, сгенерировать фон, удалить фон или улучшить качество.
   
   Образец цвета — миниатюра с оттенком товара, крупным фрагментом или мазком краски.
   

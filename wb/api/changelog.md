@@ -4,8 +4,8 @@ api: wildberries
 kind: changelog
 source: "https://dev.wildberries.ru/release-notes"
 window: последние записи, страница отдаёт не всю историю
-fetched_at: "2026-09-17T02:08:15Z"
-content_sha: 771575a0a62ded40
+fetched_at: "2026-09-18T02:23:26Z"
+content_sha: a2a2aa785409cee7
 ---
 
 # Журнал изменений WB API
@@ -67,6 +67,27 @@ content_sha: 771575a0a62ded40
 Сентябрь
 2026
 
+Изменения
+
+## 17.09.2026
+
+Аналитика и данные
+
+История остатков
+
+Изменение времени обновления данных в Истории остатков
+
+С **17 сентября** данные по остаткам будут обновляться 1 раз в 2 часа в следующих отчётах:
+
+- [Данные по группам](/docs/openapi/analytics#tag/stocksReport/operation/postV2StocksReportProductsGroups)
+- [Данные по товарам](/docs/openapi/analytics#tag/stocksReport/operation/postV2StocksReportProductsProducts)
+- [Данные по размерам](/docs/openapi/analytics#tag/stocksReport/operation/postV2StocksReportProductsSizes)
+- [Данные по складам](/docs/openapi/analytics#tag/stocksReport/operation/postV2StocksReportOffices)
+- `STOCK_HISTORY_REPORT_CSV` — отчёт по статистике остатков в методе [POST /api/v2/nm-report/downloads](/docs/openapi/analytics#tag/sellerAnalyticsCsv/operation/postV2NmReportDownloads)
+- `STOCK_HISTORY_DAILY_CSV` — отчёт по истории остатков в методе [POST /api/v2/nm-report/downloads](/docs/openapi/analytics#tag/sellerAnalyticsCsv/operation/postV2NmReportDownloads)
+
+Чтобы получить текущие данные по остаткам без задержки обновления, используйте методы [POST /api/analytics/v1/stocks-report/wb-warehouses](/docs/openapi/analytics#tag/stocksReport/operation/postAnalyticsV1StocksReportSellerWarehouses) и [POST /api/analytics/v1/stocks-report/seller-warehouses](/docs/openapi/analytics#tag/stocksReport/operation/postAnalyticsV1StocksReportSellerWarehouses).
+
 Новое
 
 ## 16.09.2026
@@ -82,6 +103,27 @@ content_sha: 771575a0a62ded40
 Добавили новую версию метода получения бюджета кампаний — [POST /api/advert/v2/budget](https://dev.wildberries.ru/docs/openapi/promotion/#tag/finances/operation/postV2Budget). Теперь с помощью WB API вы можете получить остатки бюджетов по нескольким кампаниям одним запросом.
 
 Текущий метод [GET /adv/v1/budget](https://dev.wildberries.ru/docs/openapi/promotion/#tag/finances/operation/getV1Budget) будет отключён **16 ноября**.
+
+Новое
+
+## 10.09.2026
+
+Поставки FBW
+
+Черновики поставок
+
+Черновики поставок FBW
+
+Добавили методы для работы с [черновиками поставок](./docs/openapi/orders-fbw#tag/supplyDrafts) FBW. Теперь с помощью WB API вы можете:
+
+- Создать черновик — [POST /api/supplies/v1/drafts](./docs/openapi/orders-fbw#tag/supplyDrafts/operation/postV1Drafts)
+- Добавить товары в черновик — [POST /api/supplies/v1/drafts/{draftId}/items](./docs/openapi/orders-fbw#tag/supplyDrafts/operation/postV1DraftsDraftIdItems)
+- Получить список черновиков — [GET /api/supplies/v1/drafts](./docs/openapi/orders-fbw#tag/supplyDrafts/operation/getV1Drafts)
+- Получить список товаров в черновике — [GET /api/supplies/v1/drafts/{draftId}/items](./docs/openapi/orders-fbw#tag/supplyDrafts/operation/getV1DraftsDraftIdItems)
+- Удалить товары из черновика — [DELETE /api/supplies/v1/drafts/{draftId}/items](./docs/openapi/orders-fbw#tag/supplyDrafts/operation/deleteV1DraftsDraftIdItems)
+- Удалить черновик — [DELETE /api/supplies/v1/drafts/{draftId}](./docs/openapi/orders-fbw#tag/supplyDrafts/operation/deleteV1DraftsDraftId)
+
+Методы доступны по **Персональному** и **Сервисному** токену категории **Поставки**.
 
 Изменения
 
@@ -104,27 +146,6 @@ content_sha: 771575a0a62ded40
 
 В предыдущей версии описания объекта `wholesale` было некорректно указано, что при `"enabled":true` товар предназначен для оптовой продажи.
  В исправленной версии описания объекта `wholesale` указано, что при `"enabled":true` товар предназначен для любой [B2B-продажи](https://seller.wildberries.ru/instructions/ru/ru/material/wholesale-of-goods), не только оптовой.
-
-Новое
-
-## 10.09.2026
-
-Поставки FBW
-
-Черновики поставок
-
-Черновики поставок FBW
-
-Добавили методы для работы с [черновиками поставок](./docs/openapi/orders-fbw#tag/supplyDrafts) FBW. Теперь с помощью WB API вы можете:
-
-- Создать черновик — [POST /api/supplies/v1/drafts](./docs/openapi/orders-fbw#tag/supplyDrafts/operation/postV1Drafts)
-- Добавить товары в черновик — [POST /api/supplies/v1/drafts/{draftId}/items](./docs/openapi/orders-fbw#tag/supplyDrafts/operation/postV1DraftsDraftIdItems)
-- Получить список черновиков — [GET /api/supplies/v1/drafts](./docs/openapi/orders-fbw#tag/supplyDrafts/operation/getV1Drafts)
-- Получить список товаров в черновике — [GET /api/supplies/v1/drafts/{draftId}/items](./docs/openapi/orders-fbw#tag/supplyDrafts/operation/getV1DraftsDraftIdItems)
-- Удалить товары из черновика — [DELETE /api/supplies/v1/drafts/{draftId}/items](./docs/openapi/orders-fbw#tag/supplyDrafts/operation/deleteV1DraftsDraftIdItems)
-- Удалить черновик — [DELETE /api/supplies/v1/drafts/{draftId}](./docs/openapi/orders-fbw#tag/supplyDrafts/operation/deleteV1DraftsDraftId)
-
-Методы доступны по **Персональному** и **Сервисному** токену категории **Поставки**.
 
 Изменения
 
@@ -526,31 +547,5 @@ DBS
 Изменения в сервисе Продвижения
 
 В ответ метода [GET /api/advert/v2/adverts](/docs/openapi/promotion/#tag/campaigns/operation/getV2Adverts) добавили признак возможности изменения списка товаров в кампании поле — `can_change_nms` в объекте `restrictions`.
-
-Новое
-
-## 09.07.2026
-
-Критичное изменение
-
-Общение с покупателями
-
-Вопросы
-
-Отзывы
-
-Новые методы в Песочнице Вопросов и отзывов
-
-Расширили песочницу вопросов и отзывов. Теперь вы можете:
-
-- создавать несколько тестовых отзывов одним запросом — [POST /api/v1/test/make/feedbacks/batch](/docs/openapi-other/sandbox-environment#tag/Voprosy-i-otzyvy/operation/postV1TestMakeFeedbacksBatch)
-- удалять тестовые отзывы — [POST /api/v1/test/delete/feedbacks](/docs/openapi-other/sandbox-environment#tag/Voprosy-i-otzyvy/operation/postV1TestDeleteFeedbacks)
-- создавать несколько тестовых вопросов одним запросом — [POST /api/v1/test/make/questions/batch](/docs/openapi-other/sandbox-environment#tag/Voprosy-i-otzyvy/operation/postV1TestMakeQuestionsBatch)
-- удалять тестовые вопросы — [POST /api/v1/test/delete/questions](/docs/openapi-other/sandbox-environment#tag/Voprosy-i-otzyvy/operation/postV1TestDeleteQuestions)
-
-**27 июля** отключим неактуальные методы:
-
-- **POST /api/v1/test/make/feedbacks**
-- **POST /api/v1/test/make/questions**
 
 Мы используем [cookies](/privacy) для сбора статистики и улучшения сервиса

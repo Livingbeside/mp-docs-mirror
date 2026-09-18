@@ -5,12 +5,21 @@ tag: News
 group: Обновления
 kind: changelog
 source: "https://docs.ozon.ru/api/seller/"
-content_sha: 4ac4bf2ecb9d7aff
+content_sha: 22052975b1d9858d
 ---
 
 # Обновления
 
 Следите за обновлениями документации на платформе для разработчиков [Ozon for dev](https://dev.ozon.ru/).
+
+## 17 сентября 2026
+
+| Метод | Изменение |
+|----------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [/v2/draft/create/info](#operation/DraftCreateInfo) | В ответе метода:обновили описание параметра `errors.error_message`;
+добавили параметры `errors.items_validation.limit` и `errors.items_validation.supply_id`.
+ |
+| [/v1/supply-order/content/update/status](#operation/SupplyOrderAPI_SupplyOrderContentUpdateStatus) | Добавили параметр `error_details` в ответ метода. |
 
 ## 16 сентября 2026
 

@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /work-with-byuers/otzyvy-za-bally/chto-takoe-otzyvy-za-baly
 source: "https://seller-edu.ozon.ru/libra/work-with-byuers/otzyvy-za-bally/chto-takoe-otzyvy-za-baly"
-updated: "2026-09-07 10:21:52"
+updated: "2026-09-17 10:45:28"
 doc_id: 19742
-fetched_at: "2026-09-08T01:39:32Z"
-content_sha: 71b9df14b51fdba4
+fetched_at: "2026-09-18T02:20:35Z"
+content_sha: bdcf258a6ea35179
 ---
 
 # Что такое ускоренный сбор отзывов
@@ -19,11 +19,7 @@ _Главная / Работа с покупателями / Инструмен�
 | **Что такое ускоренный ** **сбор отзывов** | [Запуск ускоренного ](/work-with-byuers/otzyvy-za-bally/zapusk-otzyvy-za-baly) [сбора отзывов](/work-with-byuers/otzyvy-za-bally/zapusk-otzyvy-za-baly) | [Редактирование ](/work-with-byuers/otzyvy-za-bally/upravlenie-otzyvy-za-baly) [и отключение ускоренного сбора отзывов ](/work-with-byuers/otzyvy-za-bally/upravlenie-otzyvy-za-baly) | [Анализ эффективности ](/work-with-byuers/otzyvy-za-bally/rezultaty-otzyvy-za-baly) [ускоренного сбора отзывов](/work-with-byuers/otzyvy-za-bally/rezultaty-otzyvy-za-baly) |
 | --- | --- | --- | --- |
 
-Ускоренный сбор отзывов — это инструмент, с которым можно быстро собрать отзывы на товары.
-
-С 1 июня 2026 года в ускоренном сборе отзывов устанавливаем фиксированную ставку для всех кампаний и любых типов отзывов, в том числе оценок. [Как рассчитываем стоимость услуги](https://seller-edu.ozon.ru/libra/commissions-tariffs/legal-information/full-actual-commissions#2-21-%D0%B2%D0%BE%D0%B7%D0%BD%D0%B0%D0%B3%D1%80%D0%B0%D0%B6%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B7%D0%B0-%D1%83%D1%81%D0%BB%D1%83%D0%B3%D1%83-%C2%AB%D1%83%D1%81%D0%BA%D0%BE%D1%80%D0%B5%D0%BD%D0%BD%D1%8B%D0%B8-%D1%81%D0%B1%D0%BE%D1%80-%D0%BE%D1%82%D0%B7%D1%8B%D0%B2%D0%BE%D0%B2%C2%BB)
-
-Если покупатель получил предложение оставить отзыв по старым ставкам, спишем за такой отзыв прежнее значение с учётом комиссии.
+Ускоренный сбор отзывов — это инструмент, с которым можно быстро собрать отзывы на товары. Покупатели чаще выбирают и доверяют товарам с большим количеством отзывов. Также инструмент помогает сместить акцент с отдельных негативных отзывов, если такие есть, в пользу общего объёма отзывов в карточке.
 
 # Как работает ускоренный сбор отзывов
 

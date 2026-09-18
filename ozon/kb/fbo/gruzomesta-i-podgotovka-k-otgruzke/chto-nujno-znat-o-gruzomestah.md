@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /fbo/gruzomesta-i-podgotovka-k-otgruzke/chto-nujno-znat-o-gruzomestah
 source: "https://seller-edu.ozon.ru/libra/fbo/gruzomesta-i-podgotovka-k-otgruzke/chto-nujno-znat-o-gruzomestah"
-updated: "2026-09-11 13:00:19"
+updated: "2026-09-17 12:27:27"
 doc_id: 69767
-fetched_at: "2026-09-12T01:58:38Z"
-content_sha: 4ca9a924f91536d2
+fetched_at: "2026-09-18T02:20:34Z"
+content_sha: de247b2326aefd2b
 ---
 
 # Что нужно знать о грузоместах
@@ -58,9 +58,9 @@ _Главная / Продажа со склада Ozon (FBO) / Грузомес
 
 В зависимости от сортировки товаров определим тип грузоместа:
 
-моногрузоместо — в нём находятся товары с одинаковым SKU в любом количестве;
+моно-грузоместо — в нём находятся товары с одинаковым SKU в любом количестве;
 
-миксгрузоместо — в нём больше одного SKU.
+микс-грузоместо — в нём больше одного SKU.
 
 Моно-коробки можно отгружать на палетах.
 

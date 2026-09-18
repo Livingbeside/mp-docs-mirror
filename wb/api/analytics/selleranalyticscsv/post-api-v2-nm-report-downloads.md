@@ -9,7 +9,7 @@ tags:
 spec_version: analytics
 source: "https://dev.wildberries.ru/docs/openapi/analytics"
 deprecated: false
-content_sha: 2bdb9c1adeaf0b1f
+content_sha: b241a0e69bfcbe04
 ---
 
 # Создать отчёт
@@ -140,7 +140,7 @@ content_sha: 2bdb9c1adeaf0b1f
   - `includeSearchTexts` — boolean. Показать данные по поисковым запросам без учёта подменного артикула По умолчанию: `True`.
   - `limit` — integer<uint64> **обязательный**
 - `id` — string<uuid> **обязательный**. ID отчёта в UUID-формате. Генерируется продавцом самостоятельно
-- `reportType` — string **обязательный**. Тип отчёта `STOCK_HISTORY_REPORT_CSV` — Отчёт по статистике остатков
+- `reportType` — string **обязательный**. Тип отчёта `STOCK_HISTORY_REPORT_CSV` — Отчёт по статистике остатков. Данные отчёта обновляются 1 раз в 2 часа
 - `userReportName` — string. Название отчёта. Если не указано, сформируется автоматически
 - `params` — object **обязательный**. Параметры отчёта
   - `nmIDs` — array[integer<int64>]. Список артикулов WB для фильтрации
@@ -157,7 +157,7 @@ content_sha: 2bdb9c1adeaf0b1f
     - `field` — string (ordersCount, ordersSum, avgOrders, buyoutCount, buyoutSum, buyoutPercent, stockCount, stockSum, saleRate, avgStockTurnover, toClientCount, fromClientCount…) **обязательный**. Сортировка по полю: - `ordersCount` — Заказы, шт. - `ordersSum` — Заказы, сумма - `avgOrders` — Среднее количество заказов в день - `buyoutCount` — Выкупы, шт. - `buyoutSum` — Выкупы, сумма - `buyoutPercent` — Процент выкупа - `stockCount` — Остатки на текущий день, шт. - `stockSum` — Стоимость остатков на текущий день - `saleRate` — Оборачиваемость текущих остатков - `avgStockTurnover` — Оборачиваемость средних остатков - `toClientCount` — В пути к клиенту, шт. - `fromClientCount` — В пути от клиента, шт. - `minPrice` — Минимальная цена продавца со скидкой продавца (без учёта скидки WB Клуба) - `maxPrice` — Максимальная цена продавца со скидкой продавца (без учёта скидки WB Клуба) - `officeMissingTime` — Время отсутствия товара на складе - `lostOrdersCount` — Упущенные заказы, шт. - `lostOrdersSum` — Упущенные заказы, сумма - `lostBuyoutsCount` — Упущенные выкупы, шт. - `lostBuyoutsSum` — Упущенные выкупы, сумма
     - `mode` — string (asc, desc) **обязательный**. Порядок сортировки: - asc — по возрастанию - desc — по убыванию
 - `id` — string<uuid> **обязательный**. ID отчёта в UUID-формате. Генерируется продавцом самостоятельно
-- `reportType` — string **обязательный**. Тип отчёта `STOCK_HISTORY_DAILY_CSV` — Отчёт по истории остатков
+- `reportType` — string **обязательный**. Тип отчёта `STOCK_HISTORY_DAILY_CSV` — Отчёт по истории остатков. Данные отчёта обновляются 1 раз в 2 часа
 - `userReportName` — string. Название отчёта. Если не указано, сформируется автоматически
 - `params` — object **обязательный**. Параметры отчёта
   - `nmIds` — array[integer<int64>]. Список артикулов WB для фильтрации

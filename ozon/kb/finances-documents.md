@@ -6,8 +6,8 @@ path: /finances-documents
 source: "https://seller-edu.ozon.ru/libra/finances-documents"
 updated: "2024-01-30 10:14:15.676843"
 doc_id: 955
-fetched_at: "2026-08-28T12:01:50Z"
-content_sha: 899e581eb602a263
+fetched_at: "2026-09-18T02:20:34Z"
+content_sha: 3f4f554d4a7a3e86
 ---
 
 # Финансы, налоги и документооборот
@@ -24,3 +24,4 @@ _Главная_
 - [Продажа юридическим лицам (B2B)](https://seller-edu.ozon.ru/libra/finances-documents/sales-to-legal-entities)
 - [Дополнительная информация](https://seller-edu.ozon.ru/libra/finances-documents/additional-information)
 - [Страхование](https://seller-edu.ozon.ru/libra/finances-documents/strahovanie)
+- [Реквизиты банков-партнеров](https://seller-edu.ozon.ru/libra/finances-documents/rekvizity-bankov-partnerov)

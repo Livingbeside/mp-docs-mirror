@@ -9,7 +9,7 @@ tags:
 spec_version: analytics
 source: "https://dev.wildberries.ru/docs/openapi/analytics"
 deprecated: false
-content_sha: 2aa2ae97fec239f2
+content_sha: 0b6d12e3dd97d3d6
 ---
 
 # Данные по товарам
@@ -22,7 +22,7 @@ content_sha: 2aa2ae97fec239f2
 
 Можно получить данные как по отдельным товарам, так и в рамках всего отчёта — если в запросе отсутствуют фильтры: `nmIDs`, `subjectID`, `brandName`, `tagID`.
 
-Данные отчёта обновляются 1 раз в час.
+Данные отчёта обновляются 1 раз в 2 часа.
 
 Лимит запросов на один аккаунт продавца:
 

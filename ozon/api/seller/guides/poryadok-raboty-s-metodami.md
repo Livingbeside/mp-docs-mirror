@@ -5,7 +5,7 @@ tag: Process
 group: Общее описание
 kind: guide
 source: "https://docs.ozon.ru/api/seller/"
-content_sha: c3d6a7a9314f0f0d
+content_sha: 95c00f608a84a5b3
 ---
 
 # Порядок работы с методами
@@ -232,8 +232,6 @@ Ozon, товар не будет создан или обновлён.
 
 [Подробнее о стратегиях в Базе знаний для продавцов из России](https://seller-edu.ozon.ru/work-with-goods/rabota-s-tsenami/rival-strategies)
 
-[Подробнее о стратегиях в Справке для продавцов Ozon Global](https://global-help.ozon.com/prices/pricing-strategies/)
-
 Чтобы настроить стратегии ценообразования:
 
 1. Получите список конкурентов: [/v1/pricing-strategy/competitors/list](#operation/pricing_competitors).
@@ -349,23 +347,23 @@ Ozon, товар не будет создан или обновлён.
 
 Обработайте заказы в зависимости от схемы работы:
 
-- [cхема FBO](#section/Upravlyajte-zakazami-FBO-FBS-i-rFBS/Shema-FBO);
-- [стандартная схема FBS](#section/Upravlyajte-zakazami-FBO-FBS-i-rFBS/Shema-FBS-Standart);
-- [схема FBS PickUp с подключённой доверительной приёмкой](#section/Upravlyajte-zakazami-FBO-FBS-i-rFBS/Shema-FBS-PickUp-s-doveritelnoj-priyomkoj);
-- [Ozon Доставка](#section/Upravlyajte-zakazami-FBO-FBS-rFBS-i-FBP/Ozon-Dostavka);
-- [стандартная схема rFBS](#section/Upravlyajte-zakazami-FBO-FBS-i-rFBS/Shema-rFBS-Standart);
-- [схема rFBS Express с доставкой в пункт выдачи](#section/Upravlyajte-zakazami-FBO-FBS-i-rFBS/Shema-rFBS-Express-s-dostavkoj-v-punkt-vydachi);
-- [схема rFBS с доставкой через интегрированную службу](#section/Upravlyajte-zakazami-FBO-FBS-i-rFBS/Shema-rFBS-s-integrirovannoj-sluzhboj-dostavki);
-- [схема rFBS Агрегатор](#section/Upravlyajte-zakazami-FBO-FBS-i-rFBS/Shema-rFBS-Agregator).
+- [cхема FBO](#section/Upravlyajte-zakazami-FBO-FBS-rFBS-i-FBP/Shema-FBO)
+- [стандартная схема FBS](#section/Upravlyajte-zakazami-FBO-FBS-rFBS-i-FBP/Shema-FBS-Standart)
+- [схема FBS PickUp с подключённой доверительной приёмкой](#section/Upravlyajte-zakazami-FBO-FBS-rFBS-i-FBP/Shema-FBS-PickUp-s-doveritelnoj-priyomkoj)
+- [Ozon Доставка](#section/Upravlyajte-zakazami-FBO-FBS-rFBS-i-FBP/Ozon-Dostavka)
+- [стандартная схема rFBS](#section/Upravlyajte-zakazami-FBO-FBS-rFBS-i-FBP/Shema-rFBS-Standart)
+- [схема rFBS Express с доставкой в пункт выдачи](#section/Upravlyajte-zakazami-FBO-FBS-rFBS-i-FBP/Shema-rFBS-Express-s-dostavkoj-v-punkt-vydachi)
+- [схема rFBS с доставкой через интегрированную службу](#section/Upravlyajte-zakazami-FBO-FBS-rFBS-i-FBP/Shema-rFBS-s-integrirovannoj-sluzhboj-dostavki)
+- [схема rFBS Агрегатор](#section/Upravlyajte-zakazami-FBO-FBS-rFBS-i-FBP/Shema-rFBS-Agregator)
 
 Если вы продаёте товары из-за рубежа, обрабатывайте заказы по одной из схем:
 
-- [rFBS Crossborder](#section/Upravlyajte-zakazami-FBO-FBS-i-rFBS/Shema-rFBS-Crossborder);
-- [rFBS Crossborder с интегрированной службой доставки](#section/Upravlyajte-zakazami-FBO-FBS-i-rFBS/Shema-rFBS-Crossborder-s-integrirovannoj-sluzhboj-dostavki);
-- [rFBS Агрегатор](#section/Upravlyajte-zakazami-FBO-FBS-i-rFBS/Shema-rFBS-Agregator);
-- [схема FBP](#section/Upravlyajte-zakazami-FBO-FBS-i-rFBS/Shema-FBP).
+- [rFBS Crossborder](#section/Upravlyajte-zakazami-FBO-FBS-rFBS-i-FBP/Shema-rFBS-Crossborder)
+- [rFBS Crossborder с интегрированной службой доставки](#section/Upravlyajte-zakazami-FBO-FBS-rFBS-i-FBP/Shema-rFBS-Crossborder-s-integrirovannoj-sluzhboj-dostavki)
+- [rFBS Агрегатор](#section/Upravlyajte-zakazami-FBO-FBS-rFBS-i-FBP/Shema-rFBS-Agregator)
+- [схема FBP](#section/Upravlyajte-zakazami-FBO-FBS-rFBS-i-FBP/Shema-FBP)
 
-[Подробнее о заказах с весовыми товарами при работе по схеме rFBS](#section/Upravlyajte-zakazami-FBO-FBS-i-rFBS/Kak-rabotat-s-zakazami-s-vesovymi-tovarami-(rFBS))
+[Подробнее о заказах с весовыми товарами при работе по схеме rFBS](#section/Upravlyajte-zakazami-FBO-FBS-rFBS-i-FBP/Kak-rabotat-s-zakazami-s-vesovymi-tovarami-(rFBS))
 
 ## Схема FBO
 

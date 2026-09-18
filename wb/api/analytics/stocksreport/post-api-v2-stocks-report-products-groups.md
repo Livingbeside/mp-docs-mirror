@@ -9,7 +9,7 @@ tags:
 spec_version: analytics
 source: "https://dev.wildberries.ru/docs/openapi/analytics"
 deprecated: false
-content_sha: 1712385f6990ecdb
+content_sha: 6a35e62d06fcfc3c
 ---
 
 # Данные по группам
@@ -22,7 +22,7 @@ content_sha: 1712385f6990ecdb
 
 Группа товаров описывается кортежем `subjectID, brandName, tagID`.
 
-Данные отчёта обновляются 1 раз в час.
+Данные отчёта обновляются 1 раз в 2 часа.
 
 Лимит запросов на один аккаунт продавца:
 
