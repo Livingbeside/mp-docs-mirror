@@ -24,7 +24,7 @@
       "BadID": {
         "description": "Длина значения параметра ID превышена",
         "value": {
-          "detail": "id выходит за рамки int64",
+          "detail": "id выходит за рамки int32",
           "origin": "supply-api",
           "requestId": "0e35ac7fdbb94695db4004cb4c4ca12b",
           "status": 400,
@@ -54,7 +54,7 @@
       "BadPathParamFormat": {
         "description": "Значение параметра `ID` не указано или некорректно",
         "value": {
-          "detail": "неверный формат id (должен быть int64)",
+          "detail": "неверный формат id (должен быть int32)",
           "origin": "supply-api",
           "requestId": "aee7d3a5378ef3c7ec0e7a5bc94abfcf",
           "status": 400,
@@ -144,6 +144,42 @@
             }
           ]
         }
+      },
+      "ItemDiscrepancyResponse": {
+        "value": [
+          {
+            "items": [
+              {
+                "actualAmount": 2,
+                "actualSku": "1234567890",
+                "declaredAmount": 1,
+                "declaredSku": "1234567890",
+                "discrepancyQuantity": 2,
+                "discrepancyType": "surplus",
+                "skuScans": [
+                  {
+                    "actualSku": "1234567890",
+                    "declaredSku": "1234567890",
+                    "discrepancyLabel": "surplus",
+                    "scanId": 1,
+                    "scanTime": "2025-01-18T21:11:54+03:00"
+                  },
+                  {
+                    "actualSku": "1234567890",
+                    "declaredSku": "1234567890",
+                    "discrepancyLabel": "surplus",
+                    "scanId": 2,
+                    "scanTime": "2025-01-18T21:11:54+03:00"
+                  }
+                ]
+              }
+            ],
+            "packageCode": "WB_2282893992",
+            "videoStartsAt": "2026-07-11T10:02:42Z",
+            "videoUnavailable": false,
+            "videoUrl": ""
+          }
+        ]
       },
       "ItemsArrayLimitExceeded": {
         "description": "Превышен максимальный размер массива `items`",
@@ -236,6 +272,18 @@
           "title": "bad request"
         }
       },
+      "Response403TokenCategory": {
+        "description": "Неверная категория токена",
+        "value": {
+          "detail": "scope is not allowed for this resource",
+          "origin": "ag-marketplace",
+          "requestId": "2dbf6fc9-bad8-4ef9-a058-c938a8553ba5",
+          "status": 403,
+          "statusText": "Forbidden",
+          "timestamp": "2026-09-03T13:55:15Z",
+          "title": "Forbidden"
+        }
+      },
       "ResponseTariffs": {
         "value": [
           {
@@ -275,6 +323,16 @@
         "description": "Успешно",
         "value": {
           "results": []
+        }
+      },
+      "SupplyAcceptedMoreThanYearAgo": {
+        "summary": "Поставка принята больше года назад",
+        "value": {
+          "detail": "поставка принята больше года назад",
+          "origin": "supply-api",
+          "requestId": "36c00cfacde02214ca39c0c7486746f1",
+          "status": 403,
+          "title": "forbidden"
         }
       },
       "SupplyNotFound": {
@@ -483,6 +541,44 @@
       }
     },
     "schemas": {
+      "Response4XX": {
+        "properties": {
+          "code": {
+            "description": "Внутренний код ошибки",
+            "type": "string"
+          },
+          "detail": {
+            "description": "Детали ошибки",
+            "type": "string"
+          },
+          "origin": {
+            "description": "ID внутреннего сервиса WB",
+            "type": "string"
+          },
+          "requestId": {
+            "description": "ID запроса",
+            "type": "string"
+          },
+          "status": {
+            "description": "HTTP статус-код",
+            "type": "number"
+          },
+          "statusText": {
+            "description": "Расшифровка HTTP статус-кода",
+            "type": "string"
+          },
+          "timestamp": {
+            "description": "Дата и время запроса",
+            "format": "date-time",
+            "type": "string"
+          },
+          "title": {
+            "description": "Заголовок ошибки",
+            "type": "string"
+          }
+        },
+        "type": "object"
+      },
       "errors.DraftError": {
         "properties": {
           "detail": {
@@ -569,6 +665,63 @@
         },
         "required": [
           "type"
+        ],
+        "type": "object"
+      },
+      "models.DiscrepancyResponseItem": {
+        "properties": {
+          "actualAmount": {
+            "description": "Фактическое количество товара",
+            "nullable": false,
+            "type": "integer"
+          },
+          "actualSku": {
+            "description": "Фактический баркод",
+            "nullable": false,
+            "type": "string"
+          },
+          "declaredAmount": {
+            "description": "Количество товара, заявленное при формировании поставки",
+            "nullable": false,
+            "type": "integer"
+          },
+          "declaredSku": {
+            "description": "Баркод, заявленный при формировании поставки",
+            "nullable": false,
+            "type": "string"
+          },
+          "discrepancyQuantity": {
+            "description": "Разница между заявленным и фактическим количеством товара",
+            "nullable": false,
+            "type": "integer"
+          },
+          "discrepancyType": {
+            "description": "Тип расхождения в целом по коробу:\n - `surplus` — товара в коробе больше заявленного\n - `shortage` — товара в коробе меньше заявленного\n - `re-sorting` — баркод принятого товара не соответствует заявленному при формировании поставки\n",
+            "enum": [
+              "surplus",
+              "shortage",
+              "re-sorting"
+            ],
+            "nullable": false,
+            "type": "string"
+          },
+          "skuScans": {
+            "description": "Результаты сканирования товаров",
+            "items": {
+              "$ref": "#/components/schemas/models.ItemScans"
+            },
+            "nullable": true,
+            "type": "array"
+          }
+        },
+        "required": [
+          "actualAmount",
+          "actualSku",
+          "declaredAmount",
+          "discrepancyQuantity",
+          "discrepancyType",
+          "declaredSku",
+          "skuScans"
         ],
         "type": "object"
       },
@@ -944,6 +1097,85 @@
         ],
         "type": "object"
       },
+      "models.ItemDiscrepancyResponse": {
+        "properties": {
+          "items": {
+            "description": "Товары поставки",
+            "items": {
+              "$ref": "#/components/schemas/models.DiscrepancyResponseItem"
+            },
+            "type": "array"
+          },
+          "packageCode": {
+            "description": "ID упаковки",
+            "type": "string"
+          },
+          "videoStartsAt": {
+            "description": "Дата и время видеофиксации расхождений в процессе приемки",
+            "format": "date-time",
+            "type": "string"
+          },
+          "videoUnavailable": {
+            "description": "Доступность видео:\n   - `false` — видео доступно\n   - `true` — видео недоступно\n",
+            "type": "boolean"
+          },
+          "videoUrl": {
+            "description": "Видео фиксации расхождений в процессе приёмки",
+            "type": "string"
+          }
+        },
+        "required": [
+          "packageCode",
+          "videoUrl",
+          "videoStartsAt",
+          "videoUnavailable",
+          "items"
+        ],
+        "type": "object"
+      },
+      "models.ItemScans": {
+        "properties": {
+          "actualSku": {
+            "description": "Фактический баркод",
+            "nullable": false,
+            "type": "string"
+          },
+          "declaredSku": {
+            "description": "Баркод, заявленный при формировании поставки",
+            "nullable": false,
+            "type": "string"
+          },
+          "discrepancyLabel": {
+            "description": "Тип расхождения товара:\n - `surplus` — товара больше, чем заявлено\n - `shortage` — товара меньше, чем заявлено\n - `re-sorting` — баркод принятого товара не соответствует заявленному при формировании поставки\n",
+            "enum": [
+              "surplus",
+              "shortage",
+              "re-sorting"
+            ],
+            "nullable": false,
+            "type": "string"
+          },
+          "scanId": {
+            "description": "ID сканирования",
+            "nullable": false,
+            "type": "integer"
+          },
+          "scanTime": {
+            "description": "Дата и время сканирования",
+            "format": "date-time",
+            "nullable": false,
+            "type": "string"
+          }
+        },
+        "required": [
+          "scanId",
+          "declaredSku",
+          "scanTime",
+          "discrepancyLabel",
+          "actualSku"
+        ],
+        "type": "object"
+      },
       "models.ListDraftItemsResponse": {
         "properties": {
           "itemQuantity": {
@@ -1133,6 +1365,38 @@
         },
         "type": "object"
       },
+      "models.SupplyAcceptedMoreThanYearAgo": {
+        "properties": {
+          "detail": {
+            "description": "Подробное описание ошибки",
+            "type": "string"
+          },
+          "origin": {
+            "description": "Сервис, в котором произошла ошибка",
+            "type": "string"
+          },
+          "requestId": {
+            "description": "ID запроса",
+            "type": "string"
+          },
+          "status": {
+            "description": "HTTP-статус код",
+            "type": "integer"
+          },
+          "title": {
+            "description": "Краткое описание ошибки",
+            "type": "string"
+          }
+        },
+        "required": [
+          "status",
+          "title",
+          "detail",
+          "requestId",
+          "origin"
+        ],
+        "type": "object"
+      },
       "models.SupplyDetails": {
         "example": {
           "acceptanceCost": 5000,
@@ -1143,6 +1407,7 @@
           "createDate": "2025-07-15T17:17:45+03:00",
           "deliveryCoef": "200",
           "depersonalizedQuantity": 0,
+          "discrepancies": 0,
           "factDate": "2025-07-18T11:37:32+03:00",
           "isBoxOnPallet": true,
           "paidAcceptanceCoefficient": 10,
@@ -1197,6 +1462,10 @@
           "depersonalizedQuantity": {
             "description": "Количество обезличенного товара, шт",
             "nullable": true,
+            "type": "integer"
+          },
+          "discrepancies": {
+            "description": "Расхождения между заявленным и фактическим количеством товара в поставке.\n<br>\nТолько при `\"statusID\":5`\n",
             "type": "integer"
           },
           "factDate": {
@@ -1393,6 +1662,125 @@
   },
   "openapi": "3.0.1",
   "paths": {
+    "/api/supplies/v1/discrepancies/{supplyId}": {
+      "get": {
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\n<div class=\"description_token\">\n    Метод <a href=\"./api-information#tag/authorization/Pravila-ispolzovaniya-tokenov-dostupa-k-API\">доступен</a> по\n        <strong>Персональному</strong> токену\n</div>\n\nМетод возвращает информацию о выявленных расхождениях между заявленным и фактическим количеством товара в поставке.\n<br>\nДля поставок принятых не позднее года назад.\n<br><br>\n**Типы расхождений:**\n<br><br>\nРасхождение в большую сторону:<br><br>\n1. Избыток товара с заявленным баркодом:\n  - `\"discrepancyType\": \"surplus\"`\n  - `\"discrepancyLabel\": \"surplus\"`\n2. Избыток товара с несоответствующим заявленному баркодом:\n  - `\"discrepancyType\": \"surplus\"`\n  - `\"discrepancyLabel\": \"re-sorting\"`\n\nРасхождение в меньшую сторону:<br><br>\n1. Не хватает товара:\n  - `\"discrepancyType\": \"shortage\"`\n  - `\"discrepancyLabel\": \"shortage\"`\n2. Некоторые баркоды не соответствуют заявленным:\n  - `\"discrepancyType\": \"shortage\"`\n  - `\"discrepancyLabel\": \"re-sorting\"`\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 1 запрос | 1 мин | 1 запрос |\n</div>\n",
+        "operationId": "getV1SuppliesSupplyIdDiscrepanciesQuantity",
+        "parameters": [
+          {
+            "description": "ID поставки",
+            "in": "path",
+            "name": "supplyId",
+            "required": true,
+            "schema": {
+              "format": "integer",
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "examples": {
+                  "ItemDiscrepancyResponse": {
+                    "$ref": "#/components/examples/ItemDiscrepancyResponse"
+                  }
+                },
+                "schema": {
+                  "items": {
+                    "$ref": "#/components/schemas/models.ItemDiscrepancyResponse"
+                  },
+                  "type": "array"
+                }
+              }
+            },
+            "description": "<span class='response__value response__value_success'>Успешно</span>"
+          },
+          "400": {
+            "content": {
+              "application/json": {
+                "examples": {
+                  "BadID": {
+                    "$ref": "#/components/examples/BadID"
+                  },
+                  "BadPathParamFormat": {
+                    "$ref": "#/components/examples/BadPathParamFormat"
+                  },
+                  "BadSupplyIDPackage": {
+                    "$ref": "#/components/examples/BadSupplyIDPackage"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/models.ErrorModel"
+                }
+              }
+            },
+            "description": "<span class='response__value '>Неправильный запрос</span>"
+          },
+          "401": {
+            "$ref": "#/components/responses/401"
+          },
+          "403": {
+            "content": {
+              "application/json": {
+                "examples": {
+                  "SupplyAcceptedMoreThanYearAgo": {
+                    "$ref": "#/components/examples/SupplyAcceptedMoreThanYearAgo"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/models.SupplyAcceptedMoreThanYearAgo"
+                }
+              },
+              "application/problem+json": {
+                "examples": {
+                  "Response403TokenCategory": {
+                    "$ref": "#/components/examples/Response403TokenCategory"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/Response4XX"
+                }
+              }
+            },
+            "description": "<span class='response__value '>Доступ запрещён</span>"
+          },
+          "404": {
+            "content": {
+              "application/json": {
+                "examples": {
+                  "SupplyNotFound": {
+                    "$ref": "#/components/examples/SupplyNotFound"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/models.ErrorModel"
+                }
+              }
+            },
+            "description": "<span class='response__value '>Не найдено</span>"
+          },
+          "429": {
+            "$ref": "#/components/responses/429"
+          }
+        },
+        "summary": "Расхождения в поставке{{ /api/supplies/v1/discrepancies/{supplyId} }}",
+        "tags": [
+          "suppliesInformation"
+        ],
+        "x-category": "supplies",
+        "x-readonly-method": true,
+        "x-token-types": [
+          "personal"
+        ]
+      },
+      "servers": [
+        {
+          "url": "https://supplies-api.wildberries.ru"
+        }
+      ]
+    },
     "/api/supplies/v1/drafts": {
       "get": {
         "description": "<div class='description-title'><span>Описание метода</span></div>\n\n\n<div class=\"description_token\">\n    Метод <a href=\"./api-information#tag/authorization/Pravila-ispolzovaniya-tokenov-dostupa-k-API\">доступен</a> по\n        <strong>Персональному</strong> токену, \n        <strong>Сервисному</strong> токену\n</div>\n\nМетод возвращает список черновиков поставок.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 30 запросов | 2 сек | 10 запросов |\n</div>\n",
@@ -1491,6 +1879,9 @@
           "401": {
             "$ref": "#/components/responses/401"
           },
+          "403": {
+            "$ref": "#/components/responses/403"
+          },
           "429": {
             "$ref": "#/components/responses/429"
           }
@@ -1522,6 +1913,9 @@
           },
           "401": {
             "$ref": "#/components/responses/401"
+          },
+          "403": {
+            "$ref": "#/components/responses/403"
           },
           "429": {
             "$ref": "#/components/responses/429"
@@ -1555,6 +1949,7 @@
             "name": "draftId",
             "required": true,
             "schema": {
+              "format": "UUID",
               "type": "string"
             }
           }
@@ -1582,6 +1977,9 @@
           },
           "401": {
             "$ref": "#/components/responses/401"
+          },
+          "403": {
+            "$ref": "#/components/responses/403"
           },
           "404": {
             "content": {
@@ -1688,6 +2086,9 @@
           "401": {
             "$ref": "#/components/responses/401"
           },
+          "403": {
+            "$ref": "#/components/responses/403"
+          },
           "404": {
             "content": {
               "application/json": {
@@ -1780,6 +2181,9 @@
           },
           "401": {
             "$ref": "#/components/responses/401"
+          },
+          "403": {
+            "$ref": "#/components/responses/403"
           },
           "404": {
             "content": {
@@ -1888,6 +2292,9 @@
           },
           "401": {
             "$ref": "#/components/responses/401"
+          },
+          "403": {
+            "$ref": "#/components/responses/403"
           },
           "404": {
             "content": {

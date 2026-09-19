@@ -9,7 +9,7 @@ tags:
 spec_version: finances
 source: "https://dev.wildberries.ru/docs/openapi/documents-and-accounting"
 deprecated: false
-content_sha: 5d20d7df934d4343
+content_sha: 05b16d9ee2e30aba
 ---
 
 # Категории документов
@@ -42,7 +42,7 @@ content_sha: 5d20d7df934d4343
 - `data` — object
   - `categories` — array[object]. Категории документов
     - `name` — string. ID категории документа из параметра [запроса](./documents-and-accounting#tag/documents/operation/getV1DocumentsList) `category`
-    - `title` — string. Название категории документа из поля [ответа](./documents-and-accounting#tag/documents/~1api~1v1~1documents~1list/get) `category`
+    - `title` — string. Название категории документа из поля [ответа](./documents-and-accounting#tag/documents/operation/getV1DocumentsList) `category`
 
 **401** — Не авторизован
 

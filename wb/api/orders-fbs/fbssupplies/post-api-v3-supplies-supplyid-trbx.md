@@ -1,0 +1,98 @@
+---
+title: Добавить грузоместа к поставке{{ /api/v3/supplies/{supplyId}/trbx }}
+api: wb-orders-fbs
+method: POST
+path: /api/v3/supplies/{supplyId}/trbx
+operation_id: postV3SuppliesSupplyIdTrbx
+tags:
+  - fbsSupplies
+spec_version: order
+source: "https://dev.wildberries.ru/docs/openapi/orders-fbs"
+deprecated: false
+content_sha: a6b95427e78e7442
+---
+
+# Добавить грузоместа к поставке{{ /api/v3/supplies/{supplyId}/trbx }}
+
+`POST /api/v3/supplies/{supplyId}/trbx`
+
+Описание метода
+
+Метод добавляет требуемое количество [грузомест](./orders-fbs#tag/fbsSupplies/operation/getV3SuppliesSupplyIdTrbx) в [поставку](./orders-fbs#tag/fbsSupplies/operation/getV3SuppliesSupplyId).
+
+Грузоместа необходимо добавлять только в поставки, отгружаемые на ПВЗ.
+
+Грузоместа можно добавить только в открытую поставку. В одном грузоместе может быть несколько заказов. Например, если в поставке 10 заказов, распределите их по коробам: система позволит создать не больше 5 грузомест. Для 20 заказов — не больше 10 грузомест, для 100 — не больше 50.
+
+Лимит запросов на один аккаунт продавца для методов сборочных заданий, поставок, пропусков и настроек автовозврата FBS:
+
+| Период | Лимит | Интервал | Всплеск |
+| --- | --- | --- | --- |
+| 1 мин | 300 запросов | 200 мс | 20 запросов |
+
+Один запрос с кодами ответов 4XX учитывается как 10 запросов.
+
+В песочнице — максимум 1 запрос в секунду суммарно для всех методов Маркетплейса.
+
+## Параметры
+
+| Имя | Где | Тип | Обяз. | Описание |
+|---|---|---|---|---|
+| `supplyId` | path | string | да | ID поставки |
+
+## Запрос
+
+**Тело запроса** (`application/json`):
+
+- `amount` — integer **обязательный**. Количество грузомест, которые необходимо добавить к поставке
+
+## Ответы
+
+**201** — Создано
+
+- `trbxIds` — array[string]. Список ID грузомест, которые были созданы
+
+**400** — Неправильный запрос
+
+- `code` — string. Код ошибки
+- `message` — string. Описание ошибки
+- `data` — object. Дополнительные данные ошибки
+
+**401** — Не авторизован
+
+- `title` — string. Заголовок ошибки
+- `detail` — string. Детали ошибки
+- `code` — string. Внутренний код ошибки
+- `requestId` — string. Уникальный ID запроса
+- `origin` — string. ID внутреннего сервиса WB
+- `status` — number. HTTP статус-код
+- `statusText` — string. Расшифровка HTTP статус-кода
+- `timestamp` — string<date-time>. Дата и время запроса
+
+**402** — Требуется платёж
+
+- `title` — string. Заголовок ошибки
+- `detail` — string. Детали ошибки. Ошибка возвращается только сервисам из [Каталога решений для бизнеса](/business-solutions)
+
+**403** — Доступ запрещён
+
+- `code` — string. Код ошибки
+- `message` — string. Описание ошибки
+- `data` — object. Дополнительные данные ошибки
+
+**404** — Не найдено
+
+- `code` — string. Код ошибки
+- `message` — string. Описание ошибки
+- `data` — object. Дополнительные данные ошибки
+
+**429** — Слишком много запросов
+
+- `title` — string. Заголовок ошибки
+- `detail` — string. Детали ошибки
+- `code` — string. Внутренний код ошибки
+- `requestId` — string. Уникальный ID запроса
+- `origin` — string. ID внутреннего сервиса WB
+- `status` — number. HTTP статус-код
+- `statusText` — string. Расшифровка HTTP статус-кода
+- `timestamp` — string<date-time>. Дата и время запроса

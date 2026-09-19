@@ -5,7 +5,7 @@ tag: Маркетинг и продвижение
 group: ""
 kind: guide
 source: "https://dev.wildberries.ru/docs/openapi/promotion"
-content_sha: c6310c3335d6e731
+content_sha: 780af6e780ccb7de
 ---
 
 # Маркетинг и продвижение
@@ -21,4 +21,4 @@ content_sha: c6310c3335d6e731
 
 Данные синхронизируются с базой раз в 3 минуты. Статусы кампаний меняются раз в минуту. Ставки кампаний меняются раз в 30 секунд.
 
-Вы можете протестировать методы продвижения в [песочнице](/sandbox). Также в песочнице доступны [специальные методы](/docs/openapi-other/sandbox-environment#tag/Prodvizhenie) для управления тестовым балансом
+Вы можете протестировать методы продвижения в [песочнице](/sandbox). Также в песочнице доступны [специальные методы](/docs/openapi-other/sandbox-environment#tag/promotion) для управления тестовым балансом

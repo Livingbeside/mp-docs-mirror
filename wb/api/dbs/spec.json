@@ -514,6 +514,7 @@
           "chrtId": {
             "description": "ID размера товара в системе WB",
             "example": 987654321,
+            "format": "uint64",
             "nullable": false,
             "type": "integer"
           },
@@ -698,6 +699,7 @@
           "chrtId": {
             "description": "ID размера товара в системе WB",
             "example": 987654321,
+            "format": "uint64",
             "nullable": false,
             "type": "integer"
           },
@@ -1782,7 +1784,7 @@
     }
   },
   "info": {
-    "description": "<div class=\"description_important\">\n  Узнать больше о модели DBS можно в <a href=\"https://seller.wildberries.ru/instructions/category/6572e024-7428-4db1-86a8-a4c7dbebbfcf?goBackOption=prevRoute&categoryId=5a8e1202-0865-45b7-acae-5d0afc7add56\">справочном центре</a>\n</div>\n\n<div class=\"api-block\">\n\nУправление [сборочными заданиями](./dbs#tag/dbsAssemblyOrders) и [идентификаторами маркировки](./dbs#tag/dbsLabelIdentifiers) DBS (Delivery by Seller).<br><br>\n\nВы можете протестировать методы DBS в [песочнице](/sandbox). Также в песочнице доступны [специальные методы](/docs/openapi-other/sandbox-environment#tag/Marketplejs-DBS) для эмуляции действий пользователя\n\n</div>\n",
+    "description": "<div class=\"description_important\">\n  Узнать больше о модели DBS можно в <a href=\"https://seller.wildberries.ru/instructions/category/6572e024-7428-4db1-86a8-a4c7dbebbfcf?goBackOption=prevRoute&categoryId=5a8e1202-0865-45b7-acae-5d0afc7add56\">справочном центре</a>\n</div>\n\n<div class=\"api-block\">\n\nУправление [сборочными заданиями](./dbs#tag/dbsAssemblyOrders) и [идентификаторами маркировки](./dbs#tag/dbsLabelIdentifiers) DBS (Delivery by Seller).<br><br>\n\nВы можете протестировать методы DBS в [песочнице](/sandbox). Также в песочнице доступны [специальные методы](/docs/openapi-other/sandbox-environment#tag/marketplaceDbs) для эмуляции действий пользователя\n\n</div>\n",
     "title": "DBS",
     "version": "dbs",
     "x-file-name": "dbs"
@@ -4118,7 +4120,7 @@
   ],
   "tags": [
     {
-      "description": "<div class=\"api-description\">\n\n<div class=\"description_important\">\n  Узнать больше о модели DBS можно в <a href=\"https://seller.wildberries.ru/instructions/category/6572e024-7428-4db1-86a8-a4c7dbebbfcf?goBackOption=prevRoute&categoryId=5a8e1202-0865-45b7-acae-5d0afc7add56\">справочном центре</a>\n</div>\n\n<div class=\"api-block\">\n\nУправление [сборочными заданиями](./dbs#tag/dbsAssemblyOrders) и [идентификаторами маркировки](./dbs#tag/dbsLabelIdentifiers) DBS (Delivery by Seller).<br><br>\n\nВы можете протестировать методы DBS в [песочнице](/sandbox). Также в песочнице доступны [специальные методы](/docs/openapi-other/sandbox-environment#tag/Marketplejs-DBS) для эмуляции действий пользователя\n\n</div>\n\n\n</div>",
+      "description": "<div class=\"api-description\">\n\n<div class=\"description_important\">\n  Узнать больше о модели DBS можно в <a href=\"https://seller.wildberries.ru/instructions/category/6572e024-7428-4db1-86a8-a4c7dbebbfcf?goBackOption=prevRoute&categoryId=5a8e1202-0865-45b7-acae-5d0afc7add56\">справочном центре</a>\n</div>\n\n<div class=\"api-block\">\n\nУправление [сборочными заданиями](./dbs#tag/dbsAssemblyOrders) и [идентификаторами маркировки](./dbs#tag/dbsLabelIdentifiers) DBS (Delivery by Seller).<br><br>\n\nВы можете протестировать методы DBS в [песочнице](/sandbox). Также в песочнице доступны [специальные методы](/docs/openapi-other/sandbox-environment#tag/marketplaceDbs) для эмуляции действий пользователя\n\n</div>\n\n\n</div>",
       "name": "DBS",
       "x-traitTag": true
     },

@@ -9,7 +9,7 @@ tags:
 spec_version: ordersdbw
 source: "https://dev.wildberries.ru/docs/openapi/orders-dbw"
 deprecated: false
-content_sha: aef86f9146527ce2
+content_sha: bd7469375462af03
 ---
 
 # Получить список новых сборочных заданий
@@ -60,7 +60,7 @@ content_sha: aef86f9146527ce2
   - `id` — integer<int64>. ID сборочного задания
   - `warehouseId` — integer. ID склада продавца, на который поступило сборочное задание
   - `nmId` — integer. Артикул WB
-  - `chrtId` — integer. ID размера товара в системе WB
+  - `chrtId` — integer<uint64>. ID размера товара в системе WB
   - `price` — integer. Цена в валюте продажи с учетом всех скидок, кроме скидки по WB Кошельку, умноженная на 100. Код валюты продажи указан в поле `currencyCode`. Предоставляется в информационных целях
   - `convertedPrice` — integer. Цена в валюте страны продавца с учетом всех скидок, кроме скидки по WB Кошельку, умноженная на 100. Предоставляется в информационных целях
   - `currencyCode` — integer<ISO 4217>. Код валюты продажи

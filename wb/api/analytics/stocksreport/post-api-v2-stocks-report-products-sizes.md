@@ -9,7 +9,7 @@ tags:
 spec_version: analytics
 source: "https://dev.wildberries.ru/docs/openapi/analytics"
 deprecated: false
-content_sha: 9c8623cbbab0cda8
+content_sha: b1b1a8120f3f30ff
 ---
 
 # Данные по размерам
@@ -94,7 +94,7 @@ content_sha: 9c8623cbbab0cda8
       - `lostBuyoutsSum` — number<float64> **обязательный**. Упущенные выкупы, сумма. Особые случаи: 1. Значение меньше `0` и не равно `-2` — значение не рассчитано 2. Значение `-2` — нулевое значение
   - `sizes` — array[object]. Множество данных по размерам товара
     - `name` — string **обязательный**. Название размера
-    - `chrtID` — integer<int64> **обязательный**. ID размера
+    - `chrtID` — integer<uint64> **обязательный**. ID размера
     - `offices` — array[object]. Склады
       - `regionName` — string **обязательный**. Регион отгрузки. [На данный момент](https://dev.wildberries.ru/release-notes?id=570) для складов WB может быть только `Склад WB`
       - `officeID` — integer<int64> **обязательный**. ID склада. [На данный момент](https://dev.wildberries.ru/release-notes?id=570) для складов WB может быть только `-999999`

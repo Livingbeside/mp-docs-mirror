@@ -4,7 +4,7 @@ api: wb-promotion
 spec_version: promotion
 operations: 40
 source: "https://dev.wildberries.ru/docs/openapi/promotion"
-content_sha: fda797d101520a20
+content_sha: d49464577dc87215
 ---
 
 # Маркетинг и продвижение
@@ -20,7 +20,7 @@ content_sha: fda797d101520a20
 
 Данные синхронизируются с базой раз в 3 минуты. Статусы кампаний меняются раз в минуту. Ставки кампаний меняются раз в 30 секунд.
 
-Вы можете протестировать методы продвижения в [песочнице](/sandbox). Также в песочнице доступны [специальные методы](/docs/openapi-other/sandbox-environment#tag/Prodvizhenie) для управления тестовым балансом
+Вы можете протестировать методы продвижения в [песочнице](/sandbox). Также в песочнице доступны [специальные методы](/docs/openapi-other/sandbox-environment#tag/promotion) для управления тестовым балансом
 
 Версия спеки: `promotion` · методов: **40** · разделов справки: **9**
 

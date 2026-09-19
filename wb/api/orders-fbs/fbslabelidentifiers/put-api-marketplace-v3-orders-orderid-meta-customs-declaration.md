@@ -3,13 +3,13 @@ title: Закрепить номер ДТ за сборочным задание
 api: wb-orders-fbs
 method: PUT
 path: /api/marketplace/v3/orders/{orderId}/meta/customs-declaration
-operation_id: put-api-marketplace-v3-orders-orderid-meta-customs-declaration
+operation_id: putV3OrdersOrderIdMetaCustomsDeclaration
 tags:
   - fbsLabelIdentifiers
 spec_version: order
 source: "https://dev.wildberries.ru/docs/openapi/orders-fbs"
 deprecated: false
-content_sha: 796edab80215724c
+content_sha: 26629a0602ec288b
 ---
 
 # Закрепить номер ДТ за сборочным заданием{{ /api/marketplace/v3/orders/{orderId}/meta/customs-declaration }}
@@ -18,9 +18,9 @@ content_sha: 796edab80215724c
 
 Описание метода
 
-Метод обновляет номер ДТ — декларации на товары — в [идентификаторах маркировки сборочного задания](./orders-fbs#tag/fbsLabelIdentifiers/paths/~1api~1marketplace~1v3~1orders~1meta/post). У одного сборочного задания может быть только один номер ДТ. 
+Метод обновляет номер ДТ — декларации на товары — в [идентификаторах маркировки сборочного задания](./orders-fbs#tag/fbsLabelIdentifiers/operation/postV3OrdersMeta). У одного сборочного задания может быть только один номер ДТ. 
 
-Закрепить номер ДТ можно только за сборочным заданием в [статусе](./orders-fbs#tag/Sborochnye-zadaniya-FBS/paths/~1api~1v3~1orders~1status/post) `confirm` и если в [идентификаторах маркировки сборочного задания](./orders-fbs#tag/fbsLabelIdentifiers/paths/~1api~1marketplace~1v3~1orders~1meta/post) есть поле `customsDeclaration`.
+Закрепить номер ДТ можно только за сборочным заданием в [статусе](./orders-fbs#tag/fbsAssemblyOrders/operation/postV3OrdersStatus) `confirm` и если в [идентификаторах маркировки сборочного задания](./orders-fbs#tag/fbsLabelIdentifiers/operation/postV3OrdersMeta) есть поле `customsDeclaration`.
 
 Продавцам из Армении необходимо обязательно указывать номер декларации на товары (ДТ), произведённые вне ЕАЭС, если заказ из Армении доставляется в РФ.
 

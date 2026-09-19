@@ -9,7 +9,7 @@ tags:
 spec_version: analytics
 source: "https://dev.wildberries.ru/docs/openapi/analytics"
 deprecated: false
-content_sha: aeabdaaab506dbf3
+content_sha: 7a466244c9694865
 ---
 
 # Остатки на складах WB
@@ -40,7 +40,7 @@ content_sha: aeabdaaab506dbf3
 **Тело запроса** (`application/json`):
 
 - `nmIds` — array[integer<int64>]. Артикулы WB
-- `chrtIds` — array[integer<int64>]. ID размеров. Используется только для указанных в массиве `nmIds` артикулов
+- `chrtIds` — array[integer<uint64>]. ID размеров. Используется только для указанных в массиве `nmIds` артикулов
 - `limit` — integer<uint32>. Количество строк в ответе По умолчанию: `250000`.
 - `offset` — integer<uint32>. Сколько элементов пропустить. Например, для значения `10` ответ начнётся с 11 элемента По умолчанию: `0`.
 
@@ -51,7 +51,7 @@ content_sha: aeabdaaab506dbf3
 - `data` — object **обязательный**. Текущие остатки товаров на складах WB
   - `items` — array[object] **обязательный**. Остатки товаров на складах WB по размерам
     - `nmId` — integer<int64> **обязательный**. Артикул WB
-    - `chrtId` — integer<int64> **обязательный**. ID размера
+    - `chrtId` — integer<uint64> **обязательный**. ID размера
     - `warehouseId` — integer<int64> **обязательный**. ID склада. [На данный момент](https://dev.wildberries.ru/release-notes?id=570) может быть только `-999999`
     - `warehouseName` — string **обязательный**. Название склада. [На данный момент](https://dev.wildberries.ru/release-notes?id=570) может быть только `Склад WB`
     - `regionName` — string **обязательный**. Регион отгрузки. [На данный момент](https://dev.wildberries.ru/release-notes?id=570) может быть только `Склад WB`

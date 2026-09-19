@@ -2,9 +2,9 @@
 title: Поставки FBW — все методы
 api: wb-orders-fbw
 spec_version: ordersfbw
-operations: 13
+operations: 14
 source: "https://dev.wildberries.ru/docs/openapi/orders-fbw"
-content_sha: 80d62481e7921ef1
+content_sha: 7063313b3397ab48
 ---
 
 # Поставки FBW
@@ -17,7 +17,7 @@ content_sha: 80d62481e7921ef1
 
 Вы можете создавать карточки товара в песочнице [Контента](./api-information#tag/authorization/Kategorii-tokenov), а потом использовать баркоды товаров в песочнице Поставок
 
-Версия спеки: `ordersfbw` · методов: **13** · разделов справки: **4**
+Версия спеки: `ordersfbw` · методов: **14** · разделов справки: **4**
 
 Источник: https://dev.wildberries.ru/docs/openapi/orders-fbw
 
@@ -25,6 +25,7 @@ content_sha: 80d62481e7921ef1
 |---|---|---|---|
 | `DELETE` | `/api/supplies/v1/drafts/{draftId}/items` | supplyDrafts | [Удалить товары из черновика{{ /api/supplies/v1/drafts/{draftId}/items }}](supplydrafts/delete-api-supplies-v1-drafts-draftid-items.md) |
 | `DELETE` | `/api/supplies/v1/drafts/{draftId}` | supplyDrafts | [Удалить черновик{{ /api/supplies/v1/drafts/{draftId} }}](supplydrafts/delete-api-supplies-v1-drafts-draftid.md) |
+| `GET` | `/api/supplies/v1/discrepancies/{supplyId}` | suppliesInformation | [Расхождения в поставке{{ /api/supplies/v1/discrepancies/{supplyId} }}](suppliesinformation/get-api-supplies-v1-discrepancies-supplyid.md) |
 | `GET` | `/api/supplies/v1/drafts/{draftId}/items` | supplyDrafts | [Список товаров в черновике{{ /api/supplies/v1/drafts/{draftId}/items }}](supplydrafts/get-api-supplies-v1-drafts-draftid-items.md) |
 | `GET` | `/api/supplies/v1/drafts` | supplyDrafts | [Список черновиков](supplydrafts/get-api-supplies-v1-drafts.md) |
 | `GET` | `/api/v1/supplies/{ID}/goods` | suppliesInformation | [Товары поставки{{ /api/v1/supplies/{ID}/goods }}](suppliesinformation/get-api-v1-supplies-id-goods.md) |

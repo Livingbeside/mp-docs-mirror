@@ -9,7 +9,7 @@ tags:
 spec_version: instorepickup
 source: "https://dev.wildberries.ru/docs/openapi/in-store-pickup"
 deprecated: false
-content_sha: 0a87353b9cb6bc10
+content_sha: 4f403916820b3395
 ---
 
 # Получить список новых сборочных заданий
@@ -48,7 +48,7 @@ content_sha: 0a87353b9cb6bc10
   - `id` — integer. ID сборочного задания
   - `warehouseId` — integer. ID склада продавца, на который поступило сборочное задание
   - `nmId` — integer. Артикул WB
-  - `chrtId` — integer. ID размера товара в системе WB
+  - `chrtId` — integer<uint64>. ID размера товара в системе WB
   - `price` — integer. Цена в валюте продажи с учетом всех скидок, кроме скидки по WB Кошельку, умноженная на 100. Код валюты продажи указан в поле `currencyCode`. Предоставляется в информационных целях
   - `finalPrice` — integer. Сумма к оплате покупателем в валюте продажи с учётом всех скидок, умноженная на 100. Код валюты продажи указан в поле `currencyCode`. Предоставляется в информационных целях. Используйте значение поля `finalPrice`, только если в ответе метода [POST /api/marketplace/v3/click-collect/orders/final-price](./docs/openapi/in-store-pickup#tag/inStorePickupAssemblyOrders/operation/postV3ClickCollectOrdersFinalPrice) вернулось `"data": null`. Во всех остальных случаях используйте значение поля `originalFinalPrice` из ответа указанного метода
   - `convertedPrice` — integer. Цена в валюте страны продавца с учетом всех скидок, кроме скидки по WB Кошельку, умноженная на 100. Код валюты продажи указан в поле `currencyCode`. Предоставляется в информационных целях

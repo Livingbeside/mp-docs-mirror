@@ -767,7 +767,7 @@
                       "items": {
                         "properties": {
                           "decision": {
-                            "description": "[Статус проверки](/knowledge-base/articles/019e9273-118b-7b69-a25a-ea1d756f05d9/rabota-s-markirovkoi-po-modeli-fbs):\n- `imei`\n  - `pending` — Проверка маркировки продолжается. Дождитесь изменения статуса проверки\n  - `required` — Маркировка обязательна и не закреплена за сборочным заданием\n  - `imeiInvalidFormat` — Неверный формат маркировки\n  - `imeiAlreadySold` — Товар с этим IMEI уже продан\n- `uin`\n  - `required` — Маркировка обязательна и не закреплена за сборочным заданием\n  - `pending` — Проверка маркировки продолжается. Дождитесь изменения статуса проверки\n  - `uinInvalidFormat` — Неверный формат маркировки\n  - `uinBadStatus` — Некорректный статус партии\n  - `uinBadProcess` — Некорректная стадия обработки\n  - `uinBadStatusAndBadProcess` — Некорректный статус партии. Некорректная стадия обработки\n  - `uinNotFound` — Не найден в [ГИИС](https://minfin.gov.ru/ru/perfomance/jewels/dmdk).\n    При получении этой ошибки убедитесь, что УИН:\n      - указан в загруженной спецификации с договором на доставку. Если спецификация загружена более 30 минут назад, [удалите УИН](./orders-fbs#tag/fbsLabelIdentifiers/paths/~1api~1v3~1orders~1%7BorderId%7D~1meta/delete) из сборочного задания и [добавьте его](./orders-fbs#tag/fbsLabelIdentifiers/paths/~1api~1v3~1orders~1%7BorderId%7D~1meta~1uin/put) заново\n      - зарегистрирован в ГИИС ДМДК\n      - указан корректно и считывается с бирки без ошибок\n      - находится в обороте\n- `sgtin`\n  - `required` — Маркировка обязательна и не закреплена за сборочным заданием\n  - `pending` — Проверка маркировки продолжается. Дождитесь изменения статуса проверки\n  - `sgtinInvalidFormat` — Неверный формат маркировки\n  - `sgtinNoGS` — Маркировка не содержит GS-разделитель `\\u001d`\n  - `sgtinHasInvalidSymbols` — Маркировка содержит некорректные символы или пробелы\n  - `sgtinHasNonLatinSymbols` — Маркировка содержит символы, не относящиеся к специальным или латинице\n  - `sgtinInvalidPattern` — Структура маркировки некорректна\n  - `sgtinNotFound` — Маркировка не найдена в [Честном знаке](https://chestnyznak.ru)\n  - `sgtinEmitted` —  Маркировка эмитирована\n  - `sgtinApplied` — Не пройдена процедура Ввод в оборот\n  - `sgtinWrittenOff` — Списан\n  - `sgtinRetired` — Выбыл\n  - `sgtinWithdrawn` — Выбыл\n  - `sgtinDisaggregation` — Расформирован\n  - `sgtinDisaggregated` — Расформирован\n  - `sgtinAppliedNotPaid` — Не оплачен\n- `gtin`\n  - `required` — Маркировка обязательна и не закреплена за сборочным заданием\n- `expiration`\n  - `required` — Маркировка обязательна и не закреплена за сборочным заданием\n- `customsDeclaration`\n  - `required` — Маркировка обязательна и не закреплена за сборочным заданием\n",
+                            "description": "[Статус проверки](/knowledge-base/articles/019e9273-118b-7b69-a25a-ea1d756f05d9/rabota-s-markirovkoi-po-modeli-fbs):\n- `imei`\n  - `pending` — Проверка маркировки продолжается. Дождитесь изменения статуса проверки\n  - `required` — Маркировка обязательна и не закреплена за сборочным заданием\n  - `imeiInvalidFormat` — Неверный формат маркировки\n  - `imeiAlreadySold` — Товар с этим IMEI уже продан\n- `uin`\n  - `required` — Маркировка обязательна и не закреплена за сборочным заданием\n  - `pending` — Проверка маркировки продолжается. Дождитесь изменения статуса проверки\n  - `uinInvalidFormat` — Неверный формат маркировки\n  - `uinBadStatus` — Некорректный статус партии\n  - `uinBadProcess` — Некорректная стадия обработки\n  - `uinBadStatusAndBadProcess` — Некорректный статус партии. Некорректная стадия обработки\n  - `uinNotFound` — Не найден в [ГИИС](https://minfin.gov.ru/ru/perfomance/jewels/dmdk).\n    При получении этой ошибки убедитесь, что УИН:\n      - указан в загруженной спецификации с договором на доставку. Если спецификация загружена более 30 минут назад, [удалите УИН](./orders-fbs#tag/fbsLabelIdentifiers/operation/deleteV3OrdersOrderIdMeta) из сборочного задания и [добавьте его](./orders-fbs#tag/fbsLabelIdentifiers/operation/putV3OrdersOrderIdMetaUin) заново\n      - зарегистрирован в ГИИС ДМДК\n      - указан корректно и считывается с бирки без ошибок\n      - находится в обороте\n- `sgtin`\n  - `required` — Маркировка обязательна и не закреплена за сборочным заданием\n  - `pending` — Проверка маркировки продолжается. Дождитесь изменения статуса проверки\n  - `sgtinInvalidFormat` — Неверный формат маркировки\n  - `sgtinNoGS` — Маркировка не содержит GS-разделитель `\\u001d`\n  - `sgtinHasInvalidSymbols` — Маркировка содержит некорректные символы или пробелы\n  - `sgtinHasNonLatinSymbols` — Маркировка содержит символы, не относящиеся к специальным или латинице\n  - `sgtinInvalidPattern` — Структура маркировки некорректна\n  - `sgtinNotFound` — Маркировка не найдена в [Честном знаке](https://chestnyznak.ru)\n  - `sgtinEmitted` —  Маркировка эмитирована\n  - `sgtinApplied` — Не пройдена процедура Ввод в оборот\n  - `sgtinWrittenOff` — Списан\n  - `sgtinRetired` — Выбыл\n  - `sgtinWithdrawn` — Выбыл\n  - `sgtinDisaggregation` — Расформирован\n  - `sgtinDisaggregated` — Расформирован\n  - `sgtinAppliedNotPaid` — Не оплачен\n- `gtin`\n  - `required` — Маркировка обязательна и не закреплена за сборочным заданием\n- `expiration`\n  - `required` — Маркировка обязательна и не закреплена за сборочным заданием\n- `customsDeclaration`\n  - `required` — Маркировка обязательна и не закреплена за сборочным заданием\n",
                             "type": "string"
                           },
                           "key": {
@@ -1052,6 +1052,7 @@
           "chrtId": {
             "description": "ID размера товара в системе WB",
             "example": 987654321,
+            "format": "uint64",
             "nullable": false,
             "type": "integer"
           },
@@ -1252,6 +1253,7 @@
           "chrtId": {
             "description": "ID размера товара в системе WB",
             "example": 987654321,
+            "format": "uint64",
             "nullable": false,
             "type": "integer"
           },
@@ -1804,7 +1806,7 @@
             "type": "string"
           },
           "shippingPointId": {
-            "description": "ID пункта отгрузки. Можно получить в методе получения [пунктов отгрузки поставок](./orders-fbs#tag/Postavki-FBS/operation/getV3FbsShippingPoints)",
+            "description": "ID пункта отгрузки. Можно получить в методе получения [пунктов отгрузки поставок](./orders-fbs#tag/fbsSupplies/operation/getV3FbsShippingPoints)",
             "example": 100,
             "nullable": true,
             "type": "integer"
@@ -1820,7 +1822,7 @@
             "type": "string"
           },
           "spotAvailable": {
-            "description": "Доступен ли СПОТ для этой поставки:\n  - `true` — да. Используйте метод [получения данных СПОТ](./orders-fbs#tag/Postavki-FBS/operation/postV3FbsSuppliesSpotList)\n  - `false` — нет\n",
+            "description": "Доступен ли СПОТ для этой поставки:\n  - `true` — да. Используйте метод [получения данных СПОТ](./orders-fbs#tag/fbsSupplies/operation/postV3FbsSuppliesSpotList)\n  - `false` — нет\n",
             "example": true,
             "type": "boolean"
           },
@@ -1839,7 +1841,7 @@
       "SupplySpotData": {
         "properties": {
           "carrierCountryCode": {
-            "description": "Код страны перевозчика по [ОКСМ](./orders-fbs#tag/Postavki-FBS/operation/getV3FbsDictionariesCountriesOksm)",
+            "description": "Код страны перевозчика по [ОКСМ](./orders-fbs#tag/fbsSupplies/operation/getV3FbsDictionariesCountriesOksm)",
             "type": "string"
           },
           "carrierName": {
@@ -1853,14 +1855,14 @@
             "type": "string"
           },
           "errorCode": {
-            "description": "Код ошибки от сервиса формирования ДОПП — документа о предстоящей поставке. Возвращается при `\"status\": \"failed\"`. Чтобы исправить ошибку, проверьте данные СПОТ и [добавьте их в поставку](./orders-fbs#tag/Postavki-FBS/operation/getV3FbsSuppliesSupplyIdSpot) ещё раз\n",
+            "description": "Код ошибки от сервиса формирования ДОПП — документа о предстоящей поставке. Возвращается при `\"status\": \"failed\"`. Чтобы исправить ошибку, проверьте данные СПОТ и [добавьте их в поставку](./orders-fbs#tag/fbsSupplies/operation/getV3FbsSuppliesSupplyIdSpot) ещё раз\n",
             "enum": [
               "doppFailed"
             ],
             "type": "string"
           },
           "status": {
-            "description": "Статус СПОТ:\n  - `pending` — ожидается результат формирования ДОПП — документа о предстоящей поставке\n  - `completed` — ДОПП успешно сформирован. Можно [получить QR-код](./orders-fbs#tag/Postavki-FBS/operation/getV3FbsSuppliesSupplyIdStickersSpot)\n  - `failed` — ошибка формирования ДОПП. Подробнее в поле `errorCode`\n",
+            "description": "Статус СПОТ:\n  - `pending` — ожидается результат формирования ДОПП — документа о предстоящей поставке\n  - `completed` — ДОПП успешно сформирован. Можно [получить QR-код](./orders-fbs#tag/fbsSupplies/operation/getV3FbsSuppliesSupplyIdStickersSpot)\n  - `failed` — ошибка формирования ДОПП. Подробнее в поле `errorCode`\n",
             "enum": [
               "pending",
               "completed",
@@ -2030,12 +2032,12 @@
             "type": "string"
           },
           "shippingPointId": {
-            "description": "ID пункта отгрузки. Можно получить с помощью [отдельного метода](./orders-fbs#tag/Postavki-FBS/operation/getV3FbsShippingPoints)",
+            "description": "ID пункта отгрузки. Можно получить с помощью [отдельного метода](./orders-fbs#tag/fbsSupplies/operation/getV3FbsShippingPoints)",
             "example": 100,
             "type": "integer"
           },
           "shippingType": {
-            "description": "Способ доставки до пункта отгрузки:\n  - `selfShipping` — доставка силами продавца\n  - `transportCompany` — доставка через транспортную компанию. Для этого способа обязательно [укажите ID ЭТрН](./orders-fbs#tag/Postavki-FBS/operation/patchV3FbsSuppliesWaybill) — электронной транспортной накладной — в поле `waybillUuid`\n",
+            "description": "Способ доставки до пункта отгрузки:\n  - `selfShipping` — доставка силами продавца\n  - `transportCompany` — доставка через транспортную компанию. Для этого способа обязательно [укажите ID ЭТрН](./orders-fbs#tag/fbsSupplies/operation/patchV3FbsSuppliesWaybill) — электронной транспортной накладной — в поле `waybillUuid`\n",
             "enum": [
               "selfShipping",
               "transportCompany"
@@ -2134,7 +2136,7 @@
             "type": "string"
           },
           "crossBorder": {
-            "description": "Информация о заказе по модели кроссбордер",
+            "description": "Информация о трансграничной поставке",
             "nullable": true,
             "properties": {
               "parcel": {
@@ -2229,6 +2231,7 @@
               "chrtId": {
                 "description": "ID размера товара в системе WB",
                 "example": 12345678,
+                "format": "uint64",
                 "type": "integer"
               },
               "nmId": {
@@ -2429,7 +2432,7 @@
     }
   },
   "info": {
-    "description": "<div class=\"api-block\">\n\nС помощью методов раздела Заказы FBS (Fulfillment by Seller) вы можете:\n  - получать информацию о [сборочных заданиях](./orders-fbs#tag/Sborochnye-zadaniya-FBS) и их статусах, отменять сборочные задания, получать стикеры\n  - добавлять, редактировать и удалять [идентификаторы маркировки](./orders-fbs#tag/fbsLabelIdentifiers) сборочных заданий\n  - управлять [поставками](./orders-fbs#tag/Postavki-FBS)\n  - создавать, редактировать и удалять [пропуска](./orders-fbs#tag/Propuska-FBS) на склады WB\n\nВы можете протестировать методы заказов FBS в [песочнице](/sandbox). Также в песочнице доступны [специальные методы](/docs/openapi-other/sandbox-environment#tag/Marketplejs-FBS) для эмуляции действий пользователя\n\n</div>\n\n\n<div class=\"description_ref\">\n  Узнать, как использовать методы в бизнес-кейсах, можно в <a href=\"/knowledge-base/articles/019d49a4-0771-7571-aea9-11d5b597f34c/zakazy-fbs\">инструкции</a> по работе с <strong>заказами FBS</strong>\n</div>\n\n\n<div class=\"description_important\">\n  Узнать больше о заказах FBS можно в <a href=\"https://seller.wildberries.ru/instructions/ru/ru/category/b3e60238-fd4c-49ce-8668-ff688725a12d\">справочном центре</a>\n</div>\n",
+    "description": "<div class=\"api-block\">\n\nС помощью методов раздела Заказы FBS (Fulfillment by Seller) вы можете:\n  - получать информацию о [сборочных заданиях](./orders-fbs#tag/fbsAssemblyOrders) и их статусах, отменять сборочные задания, получать стикеры\n  - добавлять, редактировать и удалять [идентификаторы маркировки](./orders-fbs#tag/fbsLabelIdentifiers) сборочных заданий\n  - управлять [поставками](./orders-fbs#tag/fbsSupplies)\n  - создавать, редактировать и удалять [пропуска](./orders-fbs#tag/fbsPasses) на склады WB\n\nВы можете протестировать методы заказов FBS в [песочнице](/sandbox). Также в песочнице доступны [специальные методы](/docs/openapi-other/sandbox-environment#tag/marketplaceFbs) для эмуляции действий пользователя\n\n</div>\n\n\n<div class=\"description_ref\">\n  Узнать, как использовать методы в бизнес-кейсах, можно в <a href=\"/knowledge-base/articles/019d49a4-0771-7571-aea9-11d5b597f34c/zakazy-fbs\">инструкции</a> по работе с <strong>заказами FBS</strong>\n</div>\n\n\n<div class=\"description_important\">\n  Узнать больше о заказах FBS можно в <a href=\"https://seller.wildberries.ru/instructions/ru/ru/category/b3e60238-fd4c-49ce-8668-ff688725a12d\">справочном центре</a>\n</div>\n",
     "title": "Заказы FBS",
     "version": "order",
     "x-file-name": "orders-fbs"
@@ -2463,7 +2466,7 @@
         },
         "summary": "Получить список стран ОКСМ{{ /api/marketplace/v3/fbs/dictionaries/countries/oksm }}",
         "tags": [
-          "Поставки FBS"
+          "fbsSupplies"
         ],
         "x-category": "marketplace",
         "x-readonly-method": true
@@ -2477,6 +2480,7 @@
     "/api/marketplace/v3/fbs/orders/archive": {
       "get": {
         "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод возвращает сборочные задания, созданные более 3 месяцев назад.<br>\nЧасть сборочных заданий попадает в архив позже, чем через 3 месяца после создания, так как поставка переходит в архив только после того, как все заказы в ней будут завершены.\nНапример, так происходит, если продавец не доставил один из заказов в поставке и заказ был отменён автоматически через несколько дней.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца для методов <strong>сборочных заданий, поставок, пропусков и настроек автовозврата FBS</strong>:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 300 запросов | 200 мс | 20 запросов |\n\nОдин запрос с кодами ответов <code>4XX</code> учитывается как 10 запросов\n\n</div>\n",
+        "operationId": "getV3FbsOrdersArchive",
         "parameters": [
           {
             "description": "Год создания заказа",
@@ -2588,7 +2592,7 @@
         },
         "summary": "Получить список архивных сборочных заданий{{ /api/marketplace/v3/fbs/orders/archive }}",
         "tags": [
-          "Сборочные задания FBS"
+          "fbsAssemblyOrders"
         ],
         "x-category": "marketplace",
         "x-readonly-method": true
@@ -2779,6 +2783,7 @@
                       222222
                     ],
                     "items": {
+                      "format": "uint64",
                       "type": "integer"
                     },
                     "maxItems": 1000,
@@ -2831,6 +2836,7 @@
                         "properties": {
                           "chrtId": {
                             "description": "ID размера товара в системе WB",
+                            "format": "uint64",
                             "type": "integer"
                           },
                           "error": {
@@ -2948,7 +2954,7 @@
                       222222
                     ],
                     "items": {
-                      "format": "int64",
+                      "format": "uint64",
                       "type": "integer"
                     },
                     "maxItems": 1000,
@@ -2998,6 +3004,7 @@
                           },
                           "chrtId": {
                             "description": "ID размера товара в системе WB",
+                            "format": "uint64",
                             "type": "integer"
                           },
                           "error": {
@@ -3261,7 +3268,7 @@
     },
     "/api/marketplace/v3/fbs/shipping-points": {
       "get": {
-        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод возвращает доступные пункты отгрузки поставок с фильтрами:\n  - по населённым пунктам России\n  - по типам товаров, которые принимает пункт отгрузки\n\nИспользуйте данные из этого метода, чтобы устанавливать [параметры отгрузки поставок](./orders-fbs#tag/Postavki-FBS/operation/patchV3FbsSuppliesShippingMethod).\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца для методов <strong>сборочных заданий, поставок, пропусков и настроек автовозврата FBS</strong>:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 300 запросов | 200 мс | 20 запросов |\n\nОдин запрос с кодами ответов <code>4XX</code> учитывается как 10 запросов\n\n</div>\n",
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод возвращает доступные пункты отгрузки поставок с фильтрами:\n  - по населённым пунктам России\n  - по типам товаров, которые принимает пункт отгрузки\n\nИспользуйте данные из этого метода, чтобы устанавливать [параметры отгрузки поставок](./orders-fbs#tag/fbsSupplies/operation/patchV3FbsSuppliesShippingMethod).\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца для методов <strong>сборочных заданий, поставок, пропусков и настроек автовозврата FBS</strong>:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 300 запросов | 200 мс | 20 запросов |\n\nОдин запрос с кодами ответов <code>4XX</code> учитывается как 10 запросов\n\n</div>\n",
         "operationId": "getV3FbsShippingPoints",
         "parameters": [
           {
@@ -3333,7 +3340,7 @@
         ],
         "summary": "Получить список пунктов отгрузки поставок{{ /api/marketplace/v3/fbs/shipping-points }}",
         "tags": [
-          "Поставки FBS"
+          "fbsSupplies"
         ],
         "x-category": "marketplace",
         "x-readonly-method": true
@@ -3346,7 +3353,7 @@
     },
     "/api/marketplace/v3/fbs/supplies/shipping-method": {
       "patch": {
-        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод устанавливает способ доставки, дату и пункт отгрузки у поставок.<br><br>\n\nДля доставки транспортной компанией `\"shippingType\":\"transportCompany\"` укажите ID ЭТрН — электронной транспортной накладной — с помощью метода установки [ID ЭТрН поставки](./orders-fbs#tag/Postavki-FBS/operation/patchV3FbsSuppliesWaybill).<br><br>\n\n<div class=\"description_important\">\n  Добавленный к поставке ID ЭТрН сбрасывается, если поменять способ доставки <code>\"shippingType\":\"transportCompany\"</code> на <code>selfShipping</code>. Если вы хотите изменить способ доставки обратно на <code>transportCompany</code>, <a href='./orders-fbs#tag/Postavki-FBS/operation/patchV3FbsSuppliesWaybill'>добавьте ID ЭТрН</a> заново.\n</div>\n\nВы можете обновлять параметры отгрузки до сканирования поставки и её коробов в пункте отгрузки. Когда поставка будет отсканирована, метод начнёт возвращать ошибку `409`.<br><br>\n\nВ запросе можно указать максимум 100 поставок. Результат обработки возвращается для каждой поставки отдельно.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца для методов <strong>сборочных заданий, поставок, пропусков и настроек автовозврата FBS</strong>:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 300 запросов | 200 мс | 20 запросов |\n\nОдин запрос с кодами ответов <code>4XX</code> учитывается как 10 запросов\n\n</div>\n",
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод устанавливает способ доставки, дату и пункт отгрузки у поставок.<br><br>\n\nДля доставки транспортной компанией `\"shippingType\":\"transportCompany\"` укажите ID ЭТрН — электронной транспортной накладной — с помощью метода установки [ID ЭТрН поставки](./orders-fbs#tag/fbsSupplies/operation/patchV3FbsSuppliesWaybill).<br><br>\n\n<div class=\"description_important\">\n  Добавленный к поставке ID ЭТрН сбрасывается, если поменять способ доставки <code>\"shippingType\":\"transportCompany\"</code> на <code>selfShipping</code>. Если вы хотите изменить способ доставки обратно на <code>transportCompany</code>, <a href='./orders-fbs#tag/fbsSupplies/operation/patchV3FbsSuppliesWaybill'>добавьте ID ЭТрН</a> заново.\n</div>\n\nВы можете обновлять параметры отгрузки до сканирования поставки и её коробов в пункте отгрузки. Когда поставка будет отсканирована, метод начнёт возвращать ошибку `409`.<br><br>\n\nВ запросе можно указать максимум 100 поставок. Результат обработки возвращается для каждой поставки отдельно.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца для методов <strong>сборочных заданий, поставок, пропусков и настроек автовозврата FBS</strong>:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 300 запросов | 200 мс | 20 запросов |\n\nОдин запрос с кодами ответов <code>4XX</code> учитывается как 10 запросов\n\n</div>\n",
         "operationId": "patchV3FbsSuppliesShippingMethod",
         "requestBody": {
           "content": {
@@ -3450,7 +3457,7 @@
         ],
         "summary": "Установить параметры отгрузки поставок{{ /api/marketplace/v3/fbs/supplies/shipping-method }}",
         "tags": [
-          "Поставки FBS"
+          "fbsSupplies"
         ],
         "x-category": "marketplace",
         "x-readonly-method": false
@@ -3533,7 +3540,7 @@
         },
         "summary": "Получить данные СПОТ для списка поставок{{ /api/marketplace/v3/fbs/supplies/spot/list }}",
         "tags": [
-          "Поставки FBS"
+          "fbsSupplies"
         ],
         "x-category": "marketplace",
         "x-readonly-method": true
@@ -3546,7 +3553,7 @@
     },
     "/api/marketplace/v3/fbs/supplies/waybill": {
       "patch": {
-        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод устанавливает ID ЭТрН — электронной транспортной накладной. Чтобы использовать метод, укажите [место отгрузки поставки](./orders-fbs#tag/Postavki-FBS/operation/patchV3FbsSuppliesShippingMethod) со способом доставки `\"shippingType\":\"transportCompany\"`.<br><br>\n\nВы можете обновлять ID ЭТрН до сканирования поставки и её коробов в пункте отгрузки.<br><br>\n\nВ запросе можно указать максимум 100 поставок. Результат обработки возвращается для каждой поставки отдельно.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца для методов <strong>сборочных заданий, поставок, пропусков и настроек автовозврата FBS</strong>:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 300 запросов | 200 мс | 20 запросов |\n\nОдин запрос с кодами ответов <code>4XX</code> учитывается как 10 запросов\n\n</div>\n",
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод устанавливает ID ЭТрН — электронной транспортной накладной. Чтобы использовать метод, укажите [место отгрузки поставки](./orders-fbs#tag/fbsSupplies/operation/patchV3FbsSuppliesShippingMethod) со способом доставки `\"shippingType\":\"transportCompany\"`.<br><br>\n\nВы можете обновлять ID ЭТрН до сканирования поставки и её коробов в пункте отгрузки.<br><br>\n\nВ запросе можно указать максимум 100 поставок. Результат обработки возвращается для каждой поставки отдельно.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца для методов <strong>сборочных заданий, поставок, пропусков и настроек автовозврата FBS</strong>:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 300 запросов | 200 мс | 20 запросов |\n\nОдин запрос с кодами ответов <code>4XX</code> учитывается как 10 запросов\n\n</div>\n",
         "operationId": "patchV3FbsSuppliesWaybill",
         "requestBody": {
           "content": {
@@ -3635,7 +3642,7 @@
         ],
         "summary": "Установить ID ЭТрН поставок{{ /api/marketplace/v3/fbs/supplies/waybill }}",
         "tags": [
-          "Поставки FBS"
+          "fbsSupplies"
         ],
         "x-category": "marketplace",
         "x-readonly-method": false
@@ -3648,7 +3655,7 @@
     },
     "/api/marketplace/v3/fbs/supplies/{supplyId}/spot": {
       "put": {
-        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод добавляет данные СПОТ в поставку.<br><br>\n\nСПОТ можно добавить только в [поставку](./orders-fbs#tag/Postavki-FBS/paths/~1api~1v3~1supplies~1%7BsupplyId%7D/get) с признаком `\"spotAvailable\":true`.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца для методов <strong>сборочных заданий, поставок, пропусков и настроек автовозврата FBS</strong>:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 300 запросов | 200 мс | 20 запросов |\n\nОдин запрос с кодами ответов <code>4XX</code> учитывается как 10 запросов\n\n</div>\n",
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод добавляет данные СПОТ в поставку.<br><br>\n\nСПОТ можно добавить только в [поставку](./orders-fbs#tag/fbsSupplies/operation/getV3SuppliesSupplyId) с признаком `\"spotAvailable\":true`.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца для методов <strong>сборочных заданий, поставок, пропусков и настроек автовозврата FBS</strong>:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 300 запросов | 200 мс | 20 запросов |\n\nОдин запрос с кодами ответов <code>4XX</code> учитывается как 10 запросов\n\n</div>\n",
         "operationId": "putV3FbsSuppliesSupplyIdSpot",
         "parameters": [
           {
@@ -3668,7 +3675,7 @@
               "schema": {
                 "properties": {
                   "carrierCountryCode": {
-                    "description": "Код страны перевозчика по [ОКСМ](./orders-fbs#tag/Postavki-FBS/operation/getV3FbsDictionariesCountriesOksm)",
+                    "description": "Код страны перевозчика по [ОКСМ](./orders-fbs#tag/fbsSupplies/operation/getV3FbsDictionariesCountriesOksm)",
                     "example": "112",
                     "maxLength": 3,
                     "minLength": 3,
@@ -3776,7 +3783,7 @@
         },
         "summary": "Добавить данные СПОТ в поставку{{ /api/marketplace/v3/fbs/supplies/{supplyId}/spot }}",
         "tags": [
-          "Поставки FBS"
+          "fbsSupplies"
         ],
         "x-category": "marketplace",
         "x-readonly-method": false
@@ -3789,7 +3796,7 @@
     },
     "/api/marketplace/v3/fbs/supplies/{supplyId}/stickers/spot": {
       "get": {
-        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод возвращает сформированный QR-код СПОТ для поставки в формате PNG, кодировка base64.\n\nВы можете получить QR-код, когда в методе [получения данных СПОТ](./orders-fbs#tag/Postavki-FBS/operation/postV3FbsSuppliesSpotList) будет признак `\"status\":\"completed\"`.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца для методов <strong>сборочных заданий, поставок, пропусков и настроек автовозврата FBS</strong>:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 300 запросов | 200 мс | 20 запросов |\n\nОдин запрос с кодами ответов <code>4XX</code> учитывается как 10 запросов\n\n</div>\n",
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод возвращает сформированный QR-код СПОТ для поставки в формате PNG, кодировка base64.\n\nВы можете получить QR-код, когда в методе [получения данных СПОТ](./orders-fbs#tag/fbsSupplies/operation/postV3FbsSuppliesSpotList) будет признак `\"status\":\"completed\"`.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца для методов <strong>сборочных заданий, поставок, пропусков и настроек автовозврата FBS</strong>:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 300 запросов | 200 мс | 20 запросов |\n\nОдин запрос с кодами ответов <code>4XX</code> учитывается как 10 запросов\n\n</div>\n",
         "operationId": "getV3FbsSuppliesSupplyIdStickersSpot",
         "parameters": [
           {
@@ -3856,7 +3863,7 @@
         },
         "summary": "Получить QR-код СПОТ{{ /api/marketplace/v3/fbs/supplies/{supplyId}/stickers/spot }}",
         "tags": [
-          "Поставки FBS"
+          "fbsSupplies"
         ],
         "x-category": "marketplace",
         "x-readonly-method": true
@@ -3869,7 +3876,8 @@
     },
     "/api/marketplace/v3/orders/meta": {
       "post": {
-        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод возвращает идентификаторы маркировки [сборочных заданий](./orders-fbs#tag/Sborochnye-zadaniya-FBS/paths/~1api~1v3~1orders/get) и статусы их проверки.\n<br><br>\nПеречень идентификаторов маркировки, доступных для сборочного задания, можно получить в [списке новых сборочных заданий](./orders-fbs#tag/Sborochnye-zadaniya-FBS/paths/~1api~1v3~1orders~1new/get), поля `requiredMeta` и `optionalMeta`. Если поля `requiredMeta` и `optionalMeta` не содержат какой-либо идентификатор маркировки, значит, у сборочного задания не может быть этого идентификатора — и добавить его нельзя.<br>\nВозможные идентификаторы маркировки:\n  - `imei` — [IMEI](./orders-fbs#tag/fbsLabelIdentifiers/paths/~1api~1v3~1orders~1%7BorderId%7D~1meta~1imei/put)\n  - `uin` — [УИН](./orders-fbs#tag/fbsLabelIdentifiers/paths/~1api~1v3~1orders~1%7BorderId%7D~1meta~1uin/put)\n  - `gtin` — [GTIN](./orders-fbs#tag/fbsLabelIdentifiers/paths/~1api~1v3~1orders~1%7BorderId%7D~1meta~1gtin/put)\n  - `sgtin` — [код маркировки Честного знака](./orders-fbs#tag/fbsLabelIdentifiers/paths/~1api~1v3~1orders~1%7BorderId%7D~1meta~1sgtin/put)\n  - `expiration` — [срок годности товара](./orders-fbs#tag/fbsLabelIdentifiers/paths/~1api~1v3~1orders~1%7BorderId%7D~1meta~1expiration/put)\n  - `customsDeclaration` — [номер ДТ](./orders-fbs#tag/fbsLabelIdentifiers/paths/~1api~1marketplace~1v3~1orders~1%7BorderId%7D~1meta~1customs-declaration/put)\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца для всех методов <strong>получения и удаления идентификаторов маркировки FBS</strong>:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 300 запросов | 200 мс | 20 запросов |\n\nОдин запрос с кодами ответов <code>4XX</code> учитывается как 10 запросов.\n\n<hr>\n\nВ <a href='/sandbox'>песочнице</a> — максимум 1 запрос в секунду суммарно для всех методов <strong>Маркетплейса</strong>.\n\n</div>\n",
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод возвращает идентификаторы маркировки [сборочных заданий](./orders-fbs#tag/fbsAssemblyOrders/operation/getV3Orders) и статусы их проверки.\n<br><br>\nПеречень идентификаторов маркировки, доступных для сборочного задания, можно получить в [списке новых сборочных заданий](./orders-fbs#tag/fbsAssemblyOrders/operation/getV3OrdersNew), поля `requiredMeta` и `optionalMeta`. Если поля `requiredMeta` и `optionalMeta` не содержат какой-либо идентификатор маркировки, значит, у сборочного задания не может быть этого идентификатора — и добавить его нельзя.<br>\nВозможные идентификаторы маркировки:\n  - `imei` — [IMEI](./orders-fbs#tag/fbsLabelIdentifiers/operation/putV3OrdersOrderIdMetaImei)\n  - `uin` — [УИН](./orders-fbs#tag/fbsLabelIdentifiers/operation/putV3OrdersOrderIdMetaUin)\n  - `gtin` — [GTIN](./orders-fbs#tag/fbsLabelIdentifiers/operation/putV3OrdersOrderIdMetaGtin)\n  - `sgtin` — [код маркировки Честного знака](./orders-fbs#tag/fbsLabelIdentifiers/operation/putV3OrdersOrderIdMetaSgtin)\n  - `expiration` — [срок годности товара](./orders-fbs#tag/fbsLabelIdentifiers/operation/putV3OrdersOrderIdMetaExpiration)\n  - `customsDeclaration` — [номер ДТ](./orders-fbs#tag/fbsLabelIdentifiers/operation/putV3OrdersOrderIdMetaCustomsDeclaration)\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца для всех методов <strong>получения и удаления идентификаторов маркировки FBS</strong>:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 300 запросов | 200 мс | 20 запросов |\n\nОдин запрос с кодами ответов <code>4XX</code> учитывается как 10 запросов.\n\n<hr>\n\nВ <a href='/sandbox'>песочнице</a> — максимум 1 запрос в секунду суммарно для всех методов <strong>Маркетплейса</strong>.\n\n</div>\n",
+        "operationId": "postV3OrdersMeta",
         "requestBody": {
           "content": {
             "application/json": {
@@ -3981,7 +3989,8 @@
     },
     "/api/marketplace/v3/orders/{orderId}/meta/customs-declaration": {
       "put": {
-        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод обновляет номер ДТ — декларации на товары — в [идентификаторах маркировки сборочного задания](./orders-fbs#tag/fbsLabelIdentifiers/paths/~1api~1marketplace~1v3~1orders~1meta/post). У одного сборочного задания может быть только один номер ДТ. <br>\nЗакрепить номер ДТ можно только за сборочным заданием в [статусе](./orders-fbs#tag/Sborochnye-zadaniya-FBS/paths/~1api~1v3~1orders~1status/post) `confirm` и если в [идентификаторах маркировки сборочного задания](./orders-fbs#tag/fbsLabelIdentifiers/paths/~1api~1marketplace~1v3~1orders~1meta/post) есть поле `customsDeclaration`.\n\n<div class=\"description_important\">\nПродавцам из Армении необходимо обязательно указывать номер декларации на товары (ДТ), произведённые вне ЕАЭС, если заказ из Армении доставляется в РФ.\n</div>\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца для всех методов <strong>закрепления идентификаторов маркировки FBS</strong>:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 1000 запросов | 60 мс | 20 запросов |\n\nОдин запрос с кодами ответов <code>4XX</code> учитывается как 10 запросов.\n\n<hr>\n\nВ <a href='/sandbox'>песочнице</a> — максимум 1 запрос в секунду суммарно для всех методов <strong>Маркетплейса</strong>.\n\n</div>\n",
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод обновляет номер ДТ — декларации на товары — в [идентификаторах маркировки сборочного задания](./orders-fbs#tag/fbsLabelIdentifiers/operation/postV3OrdersMeta). У одного сборочного задания может быть только один номер ДТ. <br>\nЗакрепить номер ДТ можно только за сборочным заданием в [статусе](./orders-fbs#tag/fbsAssemblyOrders/operation/postV3OrdersStatus) `confirm` и если в [идентификаторах маркировки сборочного задания](./orders-fbs#tag/fbsLabelIdentifiers/operation/postV3OrdersMeta) есть поле `customsDeclaration`.\n\n<div class=\"description_important\">\nПродавцам из Армении необходимо обязательно указывать номер декларации на товары (ДТ), произведённые вне ЕАЭС, если заказ из Армении доставляется в РФ.\n</div>\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца для всех методов <strong>закрепления идентификаторов маркировки FBS</strong>:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 1000 запросов | 60 мс | 20 запросов |\n\nОдин запрос с кодами ответов <code>4XX</code> учитывается как 10 запросов.\n\n<hr>\n\nВ <a href='/sandbox'>песочнице</a> — максимум 1 запрос в секунду суммарно для всех методов <strong>Маркетплейса</strong>.\n\n</div>\n",
+        "operationId": "putV3OrdersOrderIdMetaCustomsDeclaration",
         "parameters": [
           {
             "$ref": "#/components/parameters/Order"
@@ -4116,6 +4125,7 @@
     "/api/marketplace/v3/supplies/{supplyId}/order-ids": {
       "get": {
         "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод возвращает список ID сборочных заданий, закреплённых за поставкой.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца для методов <strong>сборочных заданий, поставок, пропусков и настроек автовозврата FBS</strong>:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 300 запросов | 200 мс | 20 запросов |\n\nОдин запрос с кодами ответов <code>4XX</code> учитывается как 10 запросов.\n\n<hr>\n\nВ <a href='/sandbox'>песочнице</a> — максимум 1 запрос в секунду суммарно для всех методов <strong>Маркетплейса</strong>.\n\n</div>\n",
+        "operationId": "getV3SuppliesSupplyIdOrderIds",
         "parameters": [
           {
             "description": "ID поставки",
@@ -4193,7 +4203,7 @@
         },
         "summary": "Получить ID сборочных заданий поставки{{ /api/marketplace/v3/supplies/{supplyId}/order-ids }}",
         "tags": [
-          "Поставки FBS"
+          "fbsSupplies"
         ],
         "x-category": "marketplace",
         "x-readonly-method": true
@@ -4211,7 +4221,8 @@
     },
     "/api/marketplace/v3/supplies/{supplyId}/orders": {
       "patch": {
-        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод добавляет до 100 [сборочных заданий](./orders-fbs#tag/Sborochnye-zadaniya-FBS/paths/~1api~1v3~1orders/get) к поставке и переводит их в [статус](./orders-fbs#tag/Sborochnye-zadaniya-FBS/paths/~1api~1v3~1orders~1status/post) `confirm` — на сборке.\n\nМожет перемещать сборочные задания:\n  - между активными поставками\n  - из закрытой поставки в активную, если сборочные задания требуют [повторной отгрузки](./orders-fbs#tag/Sborochnye-zadaniya-FBS/paths/~1api~1v3~1supplies~1orders~1reshipment/get)\n\n<div class=\"description_important\">\n  В пустую поставку можно добавить сборочные задания любого габаритного типа. Поставка приобретает габаритный тип первого добавленного сборочного задания <a href =\"./orders-fbs#tag/Postavki-FBS/paths/~1api~1v3~1supplies~1%7BsupplyId%7D/get\">из поля</a> <code>cargoType</code>.\n  <br>\n  После этого в поставку можно добавить сборочные задания только того же габаритного типа, что и у поставки.\n </div>\n\n<div class=\"description_important\">\nВ поставку нельзя добавить сборочные задания, поступившие на разные склады.\n</div>\n<div class=\"description_important\">\nВ пустую поставку можно добавить сборочные задания трансграничных или внутренних поставок.\nПосле этого поставка приобретает тип первого добавленного сборочного задания из поля <code>crossBorderType</code>.\nДалее в неё можно добавить только сборочные задания такого же типа.\n</div>\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца для методов <strong>сборочных заданий, поставок, пропусков и настроек автовозврата FBS</strong>:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 300 запросов | 200 мс | 20 запросов |\n\nОдин запрос с кодами ответов <code>4XX</code> учитывается как 10 запросов.\n\n<hr>\n\nВ <a href='/sandbox'>песочнице</a> — максимум 1 запрос в секунду суммарно для всех методов <strong>Маркетплейса</strong>.\n\n</div>\n",
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод добавляет до 100 [сборочных заданий](./orders-fbs#tag/fbsAssemblyOrders/operation/getV3Orders) к поставке и переводит их в [статус](./orders-fbs#tag/fbsAssemblyOrders/operation/postV3OrdersStatus) `confirm` — на сборке.\n\nМожет перемещать сборочные задания:\n  - между активными поставками\n  - из закрытой поставки в активную, если сборочные задания требуют [повторной отгрузки](./orders-fbs#tag/fbsAssemblyOrders/operation/getV3SuppliesOrdersReshipment)\n\n<div class=\"description_important\">\n  В пустую поставку можно добавить сборочные задания любого габаритного типа. Поставка приобретает габаритный тип первого добавленного сборочного задания <a href =\"./orders-fbs#tag/fbsSupplies/operation/getV3SuppliesSupplyId\">из поля</a> <code>cargoType</code>.\n  <br>\n  После этого в поставку можно добавить сборочные задания только того же габаритного типа, что и у поставки.\n </div>\n\n<div class=\"description_important\">\nВ поставку нельзя добавить сборочные задания, поступившие на разные склады.\n</div>\n<div class=\"description_important\">\nВ пустую поставку можно добавить сборочные задания трансграничных или внутренних поставок.\nПосле этого поставка приобретает тип первого добавленного сборочного задания из поля <code>crossBorderType</code>.\nДалее в неё можно добавить только сборочные задания такого же типа.\n</div>\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца для методов <strong>сборочных заданий, поставок, пропусков и настроек автовозврата FBS</strong>:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 300 запросов | 200 мс | 20 запросов |\n\nОдин запрос с кодами ответов <code>4XX</code> учитывается как 10 запросов.\n\n<hr>\n\nВ <a href='/sandbox'>песочнице</a> — максимум 1 запрос в секунду суммарно для всех методов <strong>Маркетплейса</strong>.\n\n</div>\n",
+        "operationId": "patchV3SuppliesSupplyIdOrders",
         "parameters": [
           {
             "$ref": "#/components/parameters/Supply"
@@ -4323,7 +4334,7 @@
         ],
         "summary": "Добавить сборочные задания к поставке{{ /api/marketplace/v3/supplies/{supplyId}/orders }}",
         "tags": [
-          "Поставки FBS"
+          "fbsSupplies"
         ],
         "x-category": "marketplace",
         "x-readonly-method": false
@@ -4341,7 +4352,8 @@
     },
     "/api/v3/orders": {
       "get": {
-        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод возвращает информацию о сборочных заданиях, созданных не более 3 месяцев назад, без их актуального [статуса](./orders-fbs#tag/Sborochnye-zadaniya-FBS/paths/~1api~1v3~1orders~1status/post).\n\nЧтобы получить данные за период, укажите в запросе даты начала и окончания периода. Максимум 30 календарных дней одним запросом.\nВ ответе метода будут сборочные задания, созданные в указанный период.<br><br>\nЧтобы получить сборочные задания, созданные более 3 месяцев назад, используйте метод получения [списка архивных заказов](./orders-fbs#tag/Sborochnye-zadaniya-FBS/paths/~1api~1marketplace~1v3~1fbs~1orders~1archive/get).\n\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца для методов <strong>сборочных заданий, поставок, пропусков и настроек автовозврата FBS</strong>:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 300 запросов | 200 мс | 20 запросов |\n\nОдин запрос с кодами ответов <code>4XX</code> учитывается как 10 запросов.\n\n<hr>\n\nВ <a href='/sandbox'>песочнице</a> — максимум 1 запрос в секунду суммарно для всех методов <strong>Маркетплейса</strong>.\n\n</div>\n",
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод возвращает информацию о сборочных заданиях, созданных не более 3 месяцев назад, без их актуального [статуса](./orders-fbs#tag/fbsAssemblyOrders/operation/postV3OrdersStatus).\n\nЧтобы получить данные за период, укажите в запросе даты начала и окончания периода. Максимум 30 календарных дней одним запросом.\nВ ответе метода будут сборочные задания, созданные в указанный период.<br><br>\nЧтобы получить сборочные задания, созданные более 3 месяцев назад, используйте метод получения [списка архивных заказов](./orders-fbs#tag/fbsAssemblyOrders/operation/getV3FbsOrdersArchive).\n\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца для методов <strong>сборочных заданий, поставок, пропусков и настроек автовозврата FBS</strong>:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 300 запросов | 200 мс | 20 запросов |\n\nОдин запрос с кодами ответов <code>4XX</code> учитывается как 10 запросов.\n\n<hr>\n\nВ <a href='/sandbox'>песочнице</a> — максимум 1 запрос в секунду суммарно для всех методов <strong>Маркетплейса</strong>.\n\n</div>\n",
+        "operationId": "getV3Orders",
         "parameters": [
           {
             "$ref": "#/components/parameters/Limit"
@@ -4447,7 +4459,7 @@
         ],
         "summary": "Получить информацию о сборочных заданиях{{ /api/v3/orders }}",
         "tags": [
-          "Сборочные задания FBS"
+          "fbsAssemblyOrders"
         ],
         "x-category": "marketplace",
         "x-readonly-method": true
@@ -4466,6 +4478,7 @@
     "/api/v3/orders/client": {
       "post": {
         "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод позволяет получать информацию о покупателе по ID сборочного задания.\n\nТолько для трансграничных поставок из **Турции**.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца для методов <strong>сборочных заданий, поставок, пропусков и настроек автовозврата FBS</strong>:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 300 запросов | 200 мс | 20 запросов |\n\nОдин запрос с кодами ответов <code>4XX</code> учитывается как 10 запросов.\n\n<hr>\n\nВ <a href='/sandbox'>песочнице</a> — максимум 1 запрос в секунду суммарно для всех методов <strong>Маркетплейса</strong>.\n\n</div>\n",
+        "operationId": "postV3OrdersClient",
         "requestBody": {
           "content": {
             "application/json": {
@@ -4547,7 +4560,7 @@
         ],
         "summary": "Заказы с информацией по клиенту{{ /api/v3/orders/client }}",
         "tags": [
-          "Сборочные задания FBS"
+          "fbsAssemblyOrders"
         ],
         "x-category": "marketplace",
         "x-readonly-method": true
@@ -4565,7 +4578,8 @@
     },
     "/api/v3/orders/new": {
       "get": {
-        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод возвращает список всех новых [сборочных заданий](./orders-fbs#tag/Sborochnye-zadaniya-FBS/paths/~1api~1v3~1orders/get), которые есть у продавца на момент запроса.\n\n<div class=\"description_important\">\nНаличие в сборочных заданиях идентификаторов маркировки, указанных в полях <code>requiredMeta</code> и <code>optionalMeta</code>, влияет только на возможность перевести поставку в доставку. Если ваш товар подлежит обязательной <a href =\"https://seller.wildberries.ru/instructions/ru/ru/material/items-labeling-in-fbs\">маркировке</a> средствами\nидентификации, необходимо указывать идентификаторы маркировки независимо от того, в каком поле они были получены (п. 4.6 <a href =\"https://seller.wildberries.ru/confirm-offer-condition/product/view\">Оферты</a>).\n<br>\nРекомендуем добавлять в сборочные задания все идентификаторы маркировки, полученные в полях <code>requiredMeta</code> и <code>optionalMeta</code>\n</div>\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца для методов <strong>сборочных заданий, поставок, пропусков и настроек автовозврата FBS</strong>:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 300 запросов | 200 мс | 20 запросов |\n\nОдин запрос с кодами ответов <code>4XX</code> учитывается как 10 запросов.\n\n<hr>\n\nВ <a href='/sandbox'>песочнице</a> — максимум 1 запрос в секунду суммарно для всех методов <strong>Маркетплейса</strong>.\n\n</div>\n",
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод возвращает список всех новых [сборочных заданий](./orders-fbs#tag/fbsAssemblyOrders/operation/getV3Orders), которые есть у продавца на момент запроса.\n\n<div class=\"description_important\">\nНаличие в сборочных заданиях идентификаторов маркировки, указанных в полях <code>requiredMeta</code> и <code>optionalMeta</code>, влияет только на возможность перевести поставку в доставку. Если ваш товар подлежит обязательной <a href =\"https://seller.wildberries.ru/instructions/ru/ru/material/items-labeling-in-fbs\">маркировке</a> средствами\nидентификации, необходимо указывать идентификаторы маркировки независимо от того, в каком поле они были получены (п. 4.6 <a href =\"https://seller.wildberries.ru/confirm-offer-condition/product/view\">Оферты</a>).\n<br>\nРекомендуем добавлять в сборочные задания все идентификаторы маркировки, полученные в полях <code>requiredMeta</code> и <code>optionalMeta</code>\n</div>\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца для методов <strong>сборочных заданий, поставок, пропусков и настроек автовозврата FBS</strong>:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 300 запросов | 200 мс | 20 запросов |\n\nОдин запрос с кодами ответов <code>4XX</code> учитывается как 10 запросов.\n\n<hr>\n\nВ <a href='/sandbox'>песочнице</a> — максимум 1 запрос в секунду суммарно для всех методов <strong>Маркетплейса</strong>.\n\n</div>\n",
+        "operationId": "getV3OrdersNew",
         "responses": {
           "200": {
             "content": {
@@ -4630,7 +4644,7 @@
         ],
         "summary": "Получить список новых сборочных заданий{{ /api/v3/orders/new }}",
         "tags": [
-          "Сборочные задания FBS"
+          "fbsAssemblyOrders"
         ],
         "x-category": "marketplace",
         "x-readonly-method": true
@@ -4648,7 +4662,8 @@
     },
     "/api/v3/orders/status": {
       "post": {
-        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод возвращает статусы [сборочных заданий](./orders-fbs#tag/Sborochnye-zadaniya-FBS/paths/~1api~1v3~1orders/get) по их ID.\n<br><br>\n`supplierStatus` — статус сборочного задания. Триггер его изменения — действие самого продавца.\n\nВозможные значения `supplierStatus`:\n\n| Статус   | Описание            | Как перевести сборочное задание в данный статус |\n|-------|----------------------|--------------------------------------|\n| `new`      | **Новое сборочное задание** |  |\n| `confirm`  | **На сборке** |[Добавить сборочное задание к поставке](./orders-fbs#tag/Postavki-FBS/paths/~1api~1marketplace~1v3~1supplies~1%7BsupplyId%7D~1orders/patch)\n| `complete` | **В доставке** | [Передать поставку в доставку](./orders-fbs#tag/Postavki-FBS/paths/~1api~1v3~1supplies~1%7BsupplyId%7D~1deliver/patch) |\n| `cancel`   | **Отменено продавцом**   | [Отменить сборочное задание](./orders-fbs#tag/Sborochnye-zadaniya-FBS/paths/~1api~1v3~1orders~1%7BorderId%7D~1cancel/patch)|\n| `cancel_carrier`   | **Отменено перевозчиком** <br>Только для трансграничных поставок   | Переводится перевозчиком |\n\n<br><br>\n`wbStatus` — статус системы Wildberries.\n\nВозможные значения `wbStatus`:\n- `waiting` — сборочное задание в работе\n- `sorted` — сборочное задание отсортировано\n- `sold` — заказ получен покупателем\n- `canceled` — отмена сборочного задания\n- `canceled_by_client` — покупатель отменил заказ при получении\n- `declined_by_client` — покупатель отменил заказ. Отмена доступна покупателю в первый час с момента заказа, если заказ не переведён на сборку\n- `defect` — отмена заказа по причине брака\n- `ready_for_pickup` — заказ прибыл на пункт выдачи заказов (ПВЗ)\n- `accepted_by_carrier` — продавец передал заказ в службу доставки в своей стране\n- `sent_to_carrier` — заказ отправлен на склад службы доставки в стране продавца\n- `canceled_by_carrier` — заказ отменён перевозчиком. Только для трансграничных поставок\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца для методов <strong>сборочных заданий, поставок, пропусков и настроек автовозврата FBS</strong>:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 300 запросов | 200 мс | 20 запросов |\n\nОдин запрос с кодами ответов <code>4XX</code> учитывается как 10 запросов.\n\n<hr>\n\nВ <a href='/sandbox'>песочнице</a> — максимум 1 запрос в секунду суммарно для всех методов <strong>Маркетплейса</strong>.\n\n</div>\n",
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод возвращает статусы [сборочных заданий](./orders-fbs#tag/fbsAssemblyOrders/operation/getV3Orders) по их ID.\n<br><br>\n`supplierStatus` — статус сборочного задания. Триггер его изменения — действие самого продавца.\n\nВозможные значения `supplierStatus`:\n\n| Статус   | Описание            | Как перевести сборочное задание в данный статус |\n|-------|----------------------|--------------------------------------|\n| `new`      | **Новое сборочное задание** |  |\n| `confirm`  | **На сборке** |[Добавить сборочное задание к поставке](./orders-fbs#tag/fbsSupplies/operation/patchV3SuppliesSupplyIdOrders)\n| `complete` | **В доставке** | [Передать поставку в доставку](./orders-fbs#tag/fbsSupplies/operation/patchV3SuppliesSupplyIdDeliver) |\n| `cancel`   | **Отменено продавцом**   | [Отменить сборочное задание](./orders-fbs#tag/fbsAssemblyOrders/operation/patchV3OrdersOrderIdCancel)|\n| `cancel_carrier`   | **Отменено перевозчиком** <br>Только для трансграничных поставок   | Переводится перевозчиком |\n\n<br><br>\n`wbStatus` — статус системы Wildberries.\n\nВозможные значения `wbStatus`:\n- `waiting` — сборочное задание в работе\n- `sorted` — сборочное задание отсортировано\n- `sold` — заказ получен покупателем\n- `canceled` — отмена сборочного задания\n- `canceled_by_client` — покупатель отменил заказ при получении\n- `declined_by_client` — покупатель отменил заказ. Отмена доступна покупателю в первый час с момента заказа, если заказ не переведён на сборку\n- `defect` — отмена заказа по причине брака\n- `ready_for_pickup` — заказ прибыл на пункт выдачи заказов (ПВЗ)\n- `accepted_by_carrier` — продавец передал заказ в службу доставки в своей стране\n- `sent_to_carrier` — заказ отправлен на склад службы доставки в стране продавца\n- `canceled_by_carrier` — заказ отменён перевозчиком. Только для трансграничных поставок\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца для методов <strong>сборочных заданий, поставок, пропусков и настроек автовозврата FBS</strong>:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 300 запросов | 200 мс | 20 запросов |\n\nОдин запрос с кодами ответов <code>4XX</code> учитывается как 10 запросов.\n\n<hr>\n\nВ <a href='/sandbox'>песочнице</a> — максимум 1 запрос в секунду суммарно для всех методов <strong>Маркетплейса</strong>.\n\n</div>\n",
+        "operationId": "postV3OrdersStatus",
         "requestBody": {
           "content": {
             "application/json": {
@@ -4691,7 +4706,7 @@
                             "type": "integer"
                           },
                           "isCancellable": {
-                            "description": "Доступна ли [отмена](./orders-fbs#tag/Sborochnye-zadaniya-FBS/paths/~1api~1v3~1orders~1%7BorderId%7D~1cancel/patch) сборочного задания:\n- `false` — недоступна\n- `true` — доступна\n",
+                            "description": "Доступна ли [отмена](./orders-fbs#tag/fbsAssemblyOrders/operation/patchV3OrdersOrderIdCancel) сборочного задания:\n- `false` — недоступна\n- `true` — доступна\n",
                             "example": false,
                             "nullable": false,
                             "type": "boolean"
@@ -4802,7 +4817,7 @@
         ],
         "summary": "Получить статусы сборочных заданий{{ /api/v3/orders/status }}",
         "tags": [
-          "Сборочные задания FBS"
+          "fbsAssemblyOrders"
         ],
         "x-category": "marketplace",
         "x-readonly-method": true
@@ -4820,7 +4835,8 @@
     },
     "/api/v3/orders/status/history": {
       "post": {
-        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод возвращает историю [статусов](./orders-fbs#tag/Sborochnye-zadaniya-FBS/paths/~1api~1v3~1orders~1status/post) для [сборочных заданий](./orders-fbs#tag/Sborochnye-zadaniya-FBS/paths/~1api~1v3~1orders/get) трансграничных поставок.\n\nВ песочнице этот метод всегда возвращает ответ <code>200</code>.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца для методов <strong>сборочных заданий, поставок, пропусков и настроек автовозврата FBS</strong>:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 300 запросов | 200 мс | 20 запросов |\n\nОдин запрос с кодами ответов <code>4XX</code> учитывается как 10 запросов.\n\n<hr>\n\nВ <a href='/sandbox'>песочнице</a> — максимум 1 запрос в секунду суммарно для всех методов <strong>Маркетплейса</strong>.\n\n</div>\n",
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод возвращает историю [статусов](./orders-fbs#tag/fbsAssemblyOrders/operation/postV3OrdersStatus) для [сборочных заданий](./orders-fbs#tag/fbsAssemblyOrders/operation/getV3Orders) трансграничных поставок.\n\nВ песочнице этот метод всегда возвращает ответ <code>200</code>.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца для методов <strong>сборочных заданий, поставок, пропусков и настроек автовозврата FBS</strong>:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 300 запросов | 200 мс | 20 запросов |\n\nОдин запрос с кодами ответов <code>4XX</code> учитывается как 10 запросов.\n\n<hr>\n\nВ <a href='/sandbox'>песочнице</a> — максимум 1 запрос в секунду суммарно для всех методов <strong>Маркетплейса</strong>.\n\n</div>\n",
+        "operationId": "postV3OrdersStatusHistory",
         "requestBody": {
           "content": {
             "application/json": {
@@ -4945,7 +4961,7 @@
         ],
         "summary": "История статусов для сборочных заданий трансграничных поставок{{ /api/v3/orders/status/history }}",
         "tags": [
-          "Сборочные задания FBS"
+          "fbsAssemblyOrders"
         ],
         "x-category": "marketplace",
         "x-readonly-method": true
@@ -4963,7 +4979,8 @@
     },
     "/api/v3/orders/stickers": {
       "post": {
-        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод возвращает список стикеров для [сборочных заданий](./orders-fbs#tag/Sborochnye-zadaniya-FBS) в [статусах](./orders-fbs#tag/Sborochnye-zadaniya-FBS/paths/~1api~1v3~1orders~1status/post) `confirm` — на сборке и `complete` — в доставке. <br><br>\nЕсли за сборочным заданием не закреплён обязательный [номер декларации на товары (ДТ)](./orders-fbs#tag/fbsLabelIdentifiers/paths/~1api~1marketplace~1v3~1orders~1%7BorderId%7D~1meta~1customs-declaration/put), получить стикеры для этого сборочного задания невозможно.<br><br>\nЗа один запрос можно получить максимум 100 стикеров. <br>\nМожно получить стикер в форматах:\n  - SVG\n  - ZPLV (вертикальный)\n  - ZPLH (горизонтальный)\n  - PNG\n\nДоступны размеры:\n  - 580x400 px при `width=58&height=40` в запросе\n  - 400x300 px при `width=40&height=30` в запросе\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца для методов <strong>сборочных заданий, поставок, пропусков и настроек автовозврата FBS</strong>:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 300 запросов | 200 мс | 20 запросов |\n\nОдин запрос с кодами ответов <code>4XX</code> учитывается как 10 запросов.\n\n<hr>\n\nВ <a href='/sandbox'>песочнице</a> — максимум 1 запрос в секунду суммарно для всех методов <strong>Маркетплейса</strong>.\n\n</div>\n",
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод возвращает список стикеров для [сборочных заданий](./orders-fbs#tag/fbsAssemblyOrders) в [статусах](./orders-fbs#tag/fbsAssemblyOrders/operation/postV3OrdersStatus) `confirm` — на сборке и `complete` — в доставке. <br><br>\nЕсли за сборочным заданием не закреплён обязательный [номер декларации на товары (ДТ)](./orders-fbs#tag/fbsLabelIdentifiers/operation/putV3OrdersOrderIdMetaCustomsDeclaration), получить стикеры для этого сборочного задания невозможно.<br><br>\nЗа один запрос можно получить максимум 100 стикеров. <br>\nМожно получить стикер в форматах:\n  - SVG\n  - ZPLV (вертикальный)\n  - ZPLH (горизонтальный)\n  - PNG\n\nДоступны размеры:\n  - 580x400 px при `width=58&height=40` в запросе\n  - 400x300 px при `width=40&height=30` в запросе\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца для методов <strong>сборочных заданий, поставок, пропусков и настроек автовозврата FBS</strong>:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 300 запросов | 200 мс | 20 запросов |\n\nОдин запрос с кодами ответов <code>4XX</code> учитывается как 10 запросов.\n\n<hr>\n\nВ <a href='/sandbox'>песочнице</a> — максимум 1 запрос в секунду суммарно для всех методов <strong>Маркетплейса</strong>.\n\n</div>\n",
+        "operationId": "postV3OrdersStickers",
         "parameters": [
           {
             "description": "Тип стикера",
@@ -5160,7 +5177,7 @@
         ],
         "summary": "Получить стикеры сборочных заданий{{ /api/v3/orders/stickers }}",
         "tags": [
-          "Сборочные задания FBS"
+          "fbsAssemblyOrders"
         ],
         "x-category": "marketplace",
         "x-readonly-method": true
@@ -5178,7 +5195,8 @@
     },
     "/api/v3/orders/stickers/cross-border": {
       "post": {
-        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод возвращает список стикеров [сборочных заданий](./orders-fbs#tag/Sborochnye-zadaniya-FBS/paths/~1api~1v3~1orders/get) трансграничных поставок в формате PDF.<br><br>\n\nДля каждого сборочного задания в ответе указывается статус генерации стикера:\n  - `awaitingTrackNumber` — стикер не готов. Ожидается трек-номер от перевозчика.\n  - `ready` — стикер готов\n\n<div class=\"description_important\">\n  Стикер может генерироваться с задержкой. Повторяйте запрос, пока не получите статус <code>ready</code>.\n</div>\n\nОграничения:\n  - За один запрос можно получить максимум 100 стикеров.\n  - Можно получить стикеры только для сборочных заданий, находящихся на сборке или в доставке — [статусы](./orders-fbs#tag/Sborochnye-zadaniya-FBS/paths/~1api~1v3~1orders~1status/post) `confirm`, `complete`.\n\nВ песочнице этот метод всегда возвращает ответ <code>200</code>.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца для методов <strong>сборочных заданий, поставок, пропусков и настроек автовозврата FBS</strong>:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 300 запросов | 200 мс | 20 запросов |\n\nОдин запрос с кодами ответов <code>4XX</code> учитывается как 10 запросов\n\n</div>\n",
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод возвращает список стикеров [сборочных заданий](./orders-fbs#tag/fbsAssemblyOrders/operation/getV3Orders) трансграничных поставок в формате PDF.<br><br>\n\nДля каждого сборочного задания в ответе указывается статус генерации стикера:\n  - `awaitingTrackNumber` — стикер не готов. Ожидается трек-номер от перевозчика.\n  - `ready` — стикер готов\n\n<div class=\"description_important\">\n  Стикер может генерироваться с задержкой. Повторяйте запрос, пока не получите статус <code>ready</code>.\n</div>\n\nОграничения:\n  - За один запрос можно получить максимум 100 стикеров.\n  - Можно получить стикеры только для сборочных заданий, находящихся на сборке или в доставке — [статусы](./orders-fbs#tag/fbsAssemblyOrders/operation/postV3OrdersStatus) `confirm`, `complete`.\n\nВ песочнице этот метод всегда возвращает ответ <code>200</code>.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца для методов <strong>сборочных заданий, поставок, пропусков и настроек автовозврата FBS</strong>:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 300 запросов | 200 мс | 20 запросов |\n\nОдин запрос с кодами ответов <code>4XX</code> учитывается как 10 запросов\n\n</div>\n",
+        "operationId": "postV3OrdersStickersCrossBorder",
         "requestBody": {
           "content": {
             "application/json": {
@@ -5351,7 +5369,7 @@
         ],
         "summary": "Получить стикеры сборочных заданий трансграничных поставок{{ /api/v3/orders/stickers/cross-border }}",
         "tags": [
-          "Сборочные задания FBS"
+          "fbsAssemblyOrders"
         ],
         "x-category": "marketplace",
         "x-readonly-method": true
@@ -5364,7 +5382,8 @@
     },
     "/api/v3/orders/{orderId}/cancel": {
       "patch": {
-        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод отменяет [сборочное задание](./orders-fbs#tag/Sborochnye-zadaniya-FBS/paths/~1api~1v3~1orders/get) и переводит в [статус](./orders-fbs#tag/Sborochnye-zadaniya-FBS/paths/~1api~1v3~1orders~1status/post) `cancel` — отменено продавцом.\n\n<div class=\"description_important\">\nСборочное задание можно отменить до его передачи Wildberries.\nЧтобы проверить, можно ли отменить сборочное задание, используйте метод <a href =\"/docs/openapi/orders-fbs#tag/Sborochnye-zadaniya-FBS/paths/~1api~1v3~1orders~1status/post\">POST /api/v3/orders/status</a>, поле <code>isCancellable</code>.\n</div>\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 100 запросов | 600 мс | 20 запросов |\n\nОдин запрос с кодами ответов <code>4XX</code> учитывается как 10 запросов.\n\n<hr>\n\nВ <a href='/sandbox'>песочнице</a> — максимум 1 запрос в секунду суммарно для всех методов <strong>Маркетплейса</strong>.\n\n</div>\n",
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод отменяет [сборочное задание](./orders-fbs#tag/fbsAssemblyOrders/operation/getV3Orders) и переводит в [статус](./orders-fbs#tag/fbsAssemblyOrders/operation/postV3OrdersStatus) `cancel` — отменено продавцом.\n\n<div class=\"description_important\">\nСборочное задание можно отменить до его передачи Wildberries.\nЧтобы проверить, можно ли отменить сборочное задание, используйте метод <a href =\"/docs/openapi/orders-fbs#tag/fbsAssemblyOrders/operation/postV3OrdersStatus\">POST /api/v3/orders/status</a>, поле <code>isCancellable</code>.\n</div>\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 100 запросов | 600 мс | 20 запросов |\n\nОдин запрос с кодами ответов <code>4XX</code> учитывается как 10 запросов.\n\n<hr>\n\nВ <a href='/sandbox'>песочнице</a> — максимум 1 запрос в секунду суммарно для всех методов <strong>Маркетплейса</strong>.\n\n</div>\n",
+        "operationId": "patchV3OrdersOrderIdCancel",
         "parameters": [
           {
             "$ref": "#/components/parameters/Order"
@@ -5452,7 +5471,7 @@
         ],
         "summary": "Отменить сборочное задание{{ /api/v3/orders/{orderId}/cancel }}",
         "tags": [
-          "Сборочные задания FBS"
+          "fbsAssemblyOrders"
         ],
         "x-category": "marketplace",
         "x-readonly-method": false
@@ -5470,7 +5489,8 @@
     },
     "/api/v3/orders/{orderId}/meta": {
       "delete": {
-        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод удаляет значение [идентификаторов маркировки сборочного задания](./orders-fbs#tag/fbsLabelIdentifiers/paths/~1api~1marketplace~1v3~1orders~1meta/post) для переданного ключа.\n<br><br>\nВозможные идентификаторы маркировки:\n  - `imei` — [IMEI](./orders-fbs#tag/fbsLabelIdentifiers/paths/~1api~1v3~1orders~1%7BorderId%7D~1meta~1imei/put)\n  - `uin` — [УИН](./orders-fbs#tag/fbsLabelIdentifiers/paths/~1api~1v3~1orders~1%7BorderId%7D~1meta~1uin/put)\n  - `gtin` — [GTIN](./orders-fbs#tag/fbsLabelIdentifiers/paths/~1api~1v3~1orders~1%7BorderId%7D~1meta~1gtin/put)\n  - `sgtin` — [код маркировки Честного знака](./orders-fbs#tag/fbsLabelIdentifiers/paths/~1api~1v3~1orders~1%7BorderId%7D~1meta~1sgtin/put)\n  - `customsDeclaration` — [номер ДТ](./orders-fbs#tag/fbsLabelIdentifiers/paths/~1api~1marketplace~1v3~1orders~1%7BorderId%7D~1meta~1customs-declaration/put)\n\nМожно передать только один ключ.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца для всех методов <strong>получения и удаления идентификаторов маркировки FBS</strong>:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 300 запросов | 200 мс | 20 запросов |\n\nОдин запрос с кодами ответов <code>4XX</code> учитывается как 10 запросов.\n\n<hr>\n\nВ <a href='/sandbox'>песочнице</a> — максимум 1 запрос в секунду суммарно для всех методов <strong>Маркетплейса</strong>.\n\n</div>\n",
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод удаляет значение [идентификаторов маркировки сборочного задания](./orders-fbs#tag/fbsLabelIdentifiers/operation/postV3OrdersMeta) для переданного ключа.\n<br><br>\nВозможные идентификаторы маркировки:\n  - `imei` — [IMEI](./orders-fbs#tag/fbsLabelIdentifiers/operation/putV3OrdersOrderIdMetaImei)\n  - `uin` — [УИН](./orders-fbs#tag/fbsLabelIdentifiers/operation/putV3OrdersOrderIdMetaUin)\n  - `gtin` — [GTIN](./orders-fbs#tag/fbsLabelIdentifiers/operation/putV3OrdersOrderIdMetaGtin)\n  - `sgtin` — [код маркировки Честного знака](./orders-fbs#tag/fbsLabelIdentifiers/operation/putV3OrdersOrderIdMetaSgtin)\n  - `customsDeclaration` — [номер ДТ](./orders-fbs#tag/fbsLabelIdentifiers/operation/putV3OrdersOrderIdMetaCustomsDeclaration)\n\nМожно передать только один ключ.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца для всех методов <strong>получения и удаления идентификаторов маркировки FBS</strong>:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 300 запросов | 200 мс | 20 запросов |\n\nОдин запрос с кодами ответов <code>4XX</code> учитывается как 10 запросов.\n\n<hr>\n\nВ <a href='/sandbox'>песочнице</a> — максимум 1 запрос в секунду суммарно для всех методов <strong>Маркетплейса</strong>.\n\n</div>\n",
+        "operationId": "deleteV3OrdersOrderIdMeta",
         "parameters": [
           {
             "$ref": "#/components/parameters/Order"
@@ -5589,7 +5609,8 @@
     },
     "/api/v3/orders/{orderId}/meta/expiration": {
       "put": {
-        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод закрепляет за [сборочным заданием](./orders-fbs#tag/Sborochnye-zadaniya-FBS/paths/~1api~1v3~1orders/get) срок годности товара. Товар годен до указанной даты. <br>\nЗакрепить срок годности можно только за сборочным заданием в [статусе](./orders-fbs#tag/Sborochnye-zadaniya-FBS/paths/~1api~1v3~1orders~1status/post) `confirm` и если в [идентификаторах маркировки сборочного задания](./orders-fbs#tag/fbsLabelIdentifiers/paths/~1api~1marketplace~1v3~1orders~1meta/post) есть поле `expiration`.\n<br><br>\nПолучить загруженные данные можно в [идентификаторах маркировки сборочного задания](./orders-fbs#tag/fbsLabelIdentifiers/paths/~1api~1marketplace~1v3~1orders~1meta/post).<br>\nЧтобы изменить срок годности, отправьте запрос с новой датой. Удалить срок годности сборочного задания невозможно.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца для всех методов <strong>закрепления идентификаторов маркировки FBS</strong>:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 1000 запросов | 60 мс | 20 запросов |\n\nОдин запрос с кодами ответов <code>4XX</code> учитывается как 10 запросов.\n\n<hr>\n\nВ <a href='/sandbox'>песочнице</a> — максимум 1 запрос в секунду суммарно для всех методов <strong>Маркетплейса</strong>.\n\n</div>\n",
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод закрепляет за [сборочным заданием](./orders-fbs#tag/fbsAssemblyOrders/operation/getV3Orders) срок годности товара. Товар годен до указанной даты. <br>\nЗакрепить срок годности можно только за сборочным заданием в [статусе](./orders-fbs#tag/fbsAssemblyOrders/operation/postV3OrdersStatus) `confirm` и если в [идентификаторах маркировки сборочного задания](./orders-fbs#tag/fbsLabelIdentifiers/operation/postV3OrdersMeta) есть поле `expiration`.\n<br><br>\nПолучить загруженные данные можно в [идентификаторах маркировки сборочного задания](./orders-fbs#tag/fbsLabelIdentifiers/operation/postV3OrdersMeta).<br>\nЧтобы изменить срок годности, отправьте запрос с новой датой. Удалить срок годности сборочного задания невозможно.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца для всех методов <strong>закрепления идентификаторов маркировки FBS</strong>:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 1000 запросов | 60 мс | 20 запросов |\n\nОдин запрос с кодами ответов <code>4XX</code> учитывается как 10 запросов.\n\n<hr>\n\nВ <a href='/sandbox'>песочнице</a> — максимум 1 запрос в секунду суммарно для всех методов <strong>Маркетплейса</strong>.\n\n</div>\n",
+        "operationId": "putV3OrdersOrderIdMetaExpiration",
         "parameters": [
           {
             "$ref": "#/components/parameters/Order"
@@ -5725,7 +5746,8 @@
     },
     "/api/v3/orders/{orderId}/meta/gtin": {
       "put": {
-        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод обновляет GTIN, уникальный ID товара в Беларуси, в [идентификаторах маркировки сборочного задания](./orders-fbs#tag/fbsLabelIdentifiers/paths/~1api~1marketplace~1v3~1orders~1meta/post).\nУ одного сборочного задания может быть только один GTIN.<br>\n Закрепить GTIN можно только за сборочным заданием в [статусе](./orders-fbs#tag/Sborochnye-zadaniya-FBS/paths/~1api~1v3~1orders~1status/post) `confirm` и если в [идентификаторах маркировки сборочного задания](./orders-fbs#tag/fbsLabelIdentifiers/paths/~1api~1marketplace~1v3~1orders~1meta/post) есть поле `gtin`.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца для всех методов <strong>закрепления идентификаторов маркировки FBS</strong>:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 1000 запросов | 60 мс | 20 запросов |\n\nОдин запрос с кодами ответов <code>4XX</code> учитывается как 10 запросов.\n\n<hr>\n\nВ <a href='/sandbox'>песочнице</a> — максимум 1 запрос в секунду суммарно для всех методов <strong>Маркетплейса</strong>.\n\n</div>\n",
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод обновляет GTIN, уникальный ID товара в Беларуси, в [идентификаторах маркировки сборочного задания](./orders-fbs#tag/fbsLabelIdentifiers/operation/postV3OrdersMeta).\nУ одного сборочного задания может быть только один GTIN.<br>\n Закрепить GTIN можно только за сборочным заданием в [статусе](./orders-fbs#tag/fbsAssemblyOrders/operation/postV3OrdersStatus) `confirm` и если в [идентификаторах маркировки сборочного задания](./orders-fbs#tag/fbsLabelIdentifiers/operation/postV3OrdersMeta) есть поле `gtin`.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца для всех методов <strong>закрепления идентификаторов маркировки FBS</strong>:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 1000 запросов | 60 мс | 20 запросов |\n\nОдин запрос с кодами ответов <code>4XX</code> учитывается как 10 запросов.\n\n<hr>\n\nВ <a href='/sandbox'>песочнице</a> — максимум 1 запрос в секунду суммарно для всех методов <strong>Маркетплейса</strong>.\n\n</div>\n",
+        "operationId": "putV3OrdersOrderIdMetaGtin",
         "parameters": [
           {
             "$ref": "#/components/parameters/Order"
@@ -5856,7 +5878,8 @@
     },
     "/api/v3/orders/{orderId}/meta/imei": {
       "put": {
-        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод обновляет IMEI в [идентификаторах маркировки сборочного задания](./orders-fbs#tag/fbsLabelIdentifiers/paths/~1api~1marketplace~1v3~1orders~1meta/post).<br>\nУ одного сборочного задания может быть только один IMEI. Если у устройства два IMEI — **IMEI** и **IMEI2** или **IMEI1** и **IMEI2** — укажите только **IMEI** или **IMEI1**. **IMEI2** указывать не нужно.<br>\nЗакрепить IMEI можно только за сборочным заданием в [статусе](./orders-fbs#tag/Sborochnye-zadaniya-FBS/paths/~1api~1v3~1orders~1status/post) `confirm` и если в [идентификаторах маркировки сборочного задания](./orders-fbs#tag/fbsLabelIdentifiers/paths/~1api~1marketplace~1v3~1orders~1meta/post) есть поле `imei`.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца для всех методов <strong>закрепления идентификаторов маркировки FBS</strong>:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 1000 запросов | 60 мс | 20 запросов |\n\nОдин запрос с кодами ответов <code>4XX</code> учитывается как 10 запросов.\n\n<hr>\n\nВ <a href='/sandbox'>песочнице</a> — максимум 1 запрос в секунду суммарно для всех методов <strong>Маркетплейса</strong>.\n\n</div>\n",
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод обновляет IMEI в [идентификаторах маркировки сборочного задания](./orders-fbs#tag/fbsLabelIdentifiers/operation/postV3OrdersMeta).<br>\nУ одного сборочного задания может быть только один IMEI. Если у устройства два IMEI — **IMEI** и **IMEI2** или **IMEI1** и **IMEI2** — укажите только **IMEI** или **IMEI1**. **IMEI2** указывать не нужно.<br>\nЗакрепить IMEI можно только за сборочным заданием в [статусе](./orders-fbs#tag/fbsAssemblyOrders/operation/postV3OrdersStatus) `confirm` и если в [идентификаторах маркировки сборочного задания](./orders-fbs#tag/fbsLabelIdentifiers/operation/postV3OrdersMeta) есть поле `imei`.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца для всех методов <strong>закрепления идентификаторов маркировки FBS</strong>:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 1000 запросов | 60 мс | 20 запросов |\n\nОдин запрос с кодами ответов <code>4XX</code> учитывается как 10 запросов.\n\n<hr>\n\nВ <a href='/sandbox'>песочнице</a> — максимум 1 запрос в секунду суммарно для всех методов <strong>Маркетплейса</strong>.\n\n</div>\n",
+        "operationId": "putV3OrdersOrderIdMetaImei",
         "parameters": [
           {
             "$ref": "#/components/parameters/Order"
@@ -5987,7 +6010,8 @@
     },
     "/api/v3/orders/{orderId}/meta/sgtin": {
       "put": {
-        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод обновляет код маркировки [Честного знака](https://честныйзнак.рф/) в идентификаторах маркировки [сборочного задания](./orders-fbs#tag/Sborochnye-zadaniya-FBS/paths/~1api~1v3~1orders/get).\n<br>\nЗакрепить код маркировки Честного знака можно только за сборочным заданием в [статусе](./orders-fbs#tag/Sborochnye-zadaniya-FBS/paths/~1api~1v3~1orders~1status/post) `confirm` и если в [идентификаторах маркировки сборочного задания](./orders-fbs#tag/fbsLabelIdentifiers/paths/~1api~1marketplace~1v3~1orders~1meta/post) есть поле `sgtin`.\n<br><br>\nПолучить загруженные маркировки можно в [идентификаторах маркировки сборочного задания](./orders-fbs#tag/fbsLabelIdentifiers/paths/~1api~1marketplace~1v3~1orders~1meta/post).\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца для всех методов <strong>закрепления идентификаторов маркировки FBS</strong>:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 1000 запросов | 60 мс | 20 запросов |\n\nОдин запрос с кодами ответов <code>4XX</code> учитывается как 10 запросов.\n\n<hr>\n\nВ <a href='/sandbox'>песочнице</a> — максимум 1 запрос в секунду суммарно для всех методов <strong>Маркетплейса</strong>.\n\n</div>\n",
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод обновляет код маркировки [Честного знака](https://честныйзнак.рф/) в идентификаторах маркировки [сборочного задания](./orders-fbs#tag/fbsAssemblyOrders/operation/getV3Orders).\n<br>\nЗакрепить код маркировки Честного знака можно только за сборочным заданием в [статусе](./orders-fbs#tag/fbsAssemblyOrders/operation/postV3OrdersStatus) `confirm` и если в [идентификаторах маркировки сборочного задания](./orders-fbs#tag/fbsLabelIdentifiers/operation/postV3OrdersMeta) есть поле `sgtin`.\n<br><br>\nПолучить загруженные маркировки можно в [идентификаторах маркировки сборочного задания](./orders-fbs#tag/fbsLabelIdentifiers/operation/postV3OrdersMeta).\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца для всех методов <strong>закрепления идентификаторов маркировки FBS</strong>:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 1000 запросов | 60 мс | 20 запросов |\n\nОдин запрос с кодами ответов <code>4XX</code> учитывается как 10 запросов.\n\n<hr>\n\nВ <a href='/sandbox'>песочнице</a> — максимум 1 запрос в секунду суммарно для всех методов <strong>Маркетплейса</strong>.\n\n</div>\n",
+        "operationId": "putV3OrdersOrderIdMetaSgtin",
         "parameters": [
           {
             "$ref": "#/components/parameters/Order"
@@ -6127,7 +6151,8 @@
     },
     "/api/v3/orders/{orderId}/meta/uin": {
       "put": {
-        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод обновляет УИН, уникальный идентификационный номер, в [идентификаторах маркировки сборочного задания](./orders-fbs#tag/fbsLabelIdentifiers/paths/~1api~1marketplace~1v3~1orders~1meta/post).\nУ одного сборочного задания может быть только один УИН.<br>\nЗакрепить УИН можно только за сборочным заданием в [статусе](./orders-fbs#tag/Sborochnye-zadaniya-FBS/paths/~1api~1v3~1orders~1status/post) `confirm` и если в [идентификаторах маркировки сборочного задания](./orders-fbs#tag/fbsLabelIdentifiers/paths/~1api~1marketplace~1v3~1orders~1meta/post) есть поле `uin`.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца для всех методов <strong>закрепления идентификаторов маркировки FBS</strong>:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 1000 запросов | 60 мс | 20 запросов |\n\nОдин запрос с кодами ответов <code>4XX</code> учитывается как 10 запросов.\n\n<hr>\n\nВ <a href='/sandbox'>песочнице</a> — максимум 1 запрос в секунду суммарно для всех методов <strong>Маркетплейса</strong>.\n\n</div>\n",
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод обновляет УИН, уникальный идентификационный номер, в [идентификаторах маркировки сборочного задания](./orders-fbs#tag/fbsLabelIdentifiers/operation/postV3OrdersMeta).\nУ одного сборочного задания может быть только один УИН.<br>\nЗакрепить УИН можно только за сборочным заданием в [статусе](./orders-fbs#tag/fbsAssemblyOrders/operation/postV3OrdersStatus) `confirm` и если в [идентификаторах маркировки сборочного задания](./orders-fbs#tag/fbsLabelIdentifiers/operation/postV3OrdersMeta) есть поле `uin`.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца для всех методов <strong>закрепления идентификаторов маркировки FBS</strong>:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 1000 запросов | 60 мс | 20 запросов |\n\nОдин запрос с кодами ответов <code>4XX</code> учитывается как 10 запросов.\n\n<hr>\n\nВ <a href='/sandbox'>песочнице</a> — максимум 1 запрос в секунду суммарно для всех методов <strong>Маркетплейса</strong>.\n\n</div>\n",
+        "operationId": "putV3OrdersOrderIdMetaUin",
         "parameters": [
           {
             "$ref": "#/components/parameters/Order"
@@ -6258,7 +6283,8 @@
     },
     "/api/v3/passes": {
       "get": {
-        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод возвращает список всех [созданных](./orders-fbs#tag/Propuska-FBS/paths/~1api~1v3~1passes/post) пропусков продавца.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца для методов <strong>сборочных заданий, поставок, пропусков и настроек автовозврата FBS</strong>:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 300 запросов | 200 мс | 20 запросов |\n\nОдин запрос с кодами ответов <code>4XX</code> учитывается как 10 запросов.\n\n<hr>\n\nВ <a href='/sandbox'>песочнице</a> — максимум 1 запрос в секунду суммарно для всех методов <strong>Маркетплейса</strong>.\n\n</div>\n",
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод возвращает список всех [созданных](./orders-fbs#tag/fbsPasses/operation/postV3Passes) пропусков продавца.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца для методов <strong>сборочных заданий, поставок, пропусков и настроек автовозврата FBS</strong>:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 300 запросов | 200 мс | 20 запросов |\n\nОдин запрос с кодами ответов <code>4XX</code> учитывается как 10 запросов.\n\n<hr>\n\nВ <a href='/sandbox'>песочнице</a> — максимум 1 запрос в секунду суммарно для всех методов <strong>Маркетплейса</strong>.\n\n</div>\n",
+        "operationId": "getV3Passes",
         "responses": {
           "200": {
             "content": {
@@ -6317,13 +6343,14 @@
         ],
         "summary": "Получить список пропусков{{ /api/v3/passes }}",
         "tags": [
-          "Пропуска FBS"
+          "fbsPasses"
         ],
         "x-category": "marketplace",
         "x-readonly-method": true
       },
       "post": {
-        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод создаёт [пропуск продавца](./orders-fbs#tag/Propuska-FBS/paths/~1api~1v3~1passes/get) с привязкой к складу WB.\n\nПропуск действует 48 часов со времени создания.\n\n<div class=\"description_limit\">\n  Максимум 1 запрос в 10 <a href='./api-information#tag/introduction/Limity-zaprosov'>минут</a> на один аккаунт продавца.\n\n  Один запрос с кодами ответов <code>4XX</code> учитывается как 10 запросов.\n\n  <hr>\n\n  В <a href='/sandbox'>песочнице</a> — максимум 1 запрос в секунду суммарно для всех методов <strong>Маркетплейса</strong>.\n\n</div>\n",
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод создаёт [пропуск продавца](./orders-fbs#tag/fbsPasses/operation/getV3Passes) с привязкой к складу WB.\n\nПропуск действует 48 часов со времени создания.\n\n<div class=\"description_limit\">\n  Максимум 1 запрос в 10 <a href='./api-information#tag/introduction/Limity-zaprosov'>минут</a> на один аккаунт продавца.\n\n  Один запрос с кодами ответов <code>4XX</code> учитывается как 10 запросов.\n\n  <hr>\n\n  В <a href='/sandbox'>песочнице</a> — максимум 1 запрос в секунду суммарно для всех методов <strong>Маркетплейса</strong>.\n\n</div>\n",
+        "operationId": "postV3Passes",
         "requestBody": {
           "content": {
             "application/json": {
@@ -6461,7 +6488,7 @@
         ],
         "summary": "Создать пропуск{{ /api/v3/passes }}",
         "tags": [
-          "Пропуска FBS"
+          "fbsPasses"
         ],
         "x-category": "marketplace",
         "x-readonly-method": false
@@ -6479,7 +6506,8 @@
     },
     "/api/v3/passes/offices": {
       "get": {
-        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод возвращает список складов для привязки к [пропуску продавца](./orders-fbs#tag/Propuska-FBS/paths/~1api~1v3~1passes/get).\n\n<div class=\"description_important\">\n  Данные, которые возвращает метод, могут меняться. Рекомендуем периодически синхронизировать список\n</div>\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца для методов <strong>сборочных заданий, поставок, пропусков и настроек автовозврата FBS</strong>:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 300 запросов | 200 мс | 20 запросов |\n\nОдин запрос с кодами ответов <code>4XX</code> учитывается как 10 запросов.\n\n<hr>\n\nВ <a href='/sandbox'>песочнице</a> — максимум 1 запрос в секунду суммарно для всех методов <strong>Маркетплейса</strong>.\n\n</div>\n",
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод возвращает список складов для привязки к [пропуску продавца](./orders-fbs#tag/fbsPasses/operation/getV3Passes).\n\n<div class=\"description_important\">\n  Данные, которые возвращает метод, могут меняться. Рекомендуем периодически синхронизировать список\n</div>\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца для методов <strong>сборочных заданий, поставок, пропусков и настроек автовозврата FBS</strong>:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 300 запросов | 200 мс | 20 запросов |\n\nОдин запрос с кодами ответов <code>4XX</code> учитывается как 10 запросов.\n\n<hr>\n\nВ <a href='/sandbox'>песочнице</a> — максимум 1 запрос в секунду суммарно для всех методов <strong>Маркетплейса</strong>.\n\n</div>\n",
+        "operationId": "getV3PassesOffices",
         "responses": {
           "200": {
             "content": {
@@ -6538,7 +6566,7 @@
         ],
         "summary": "Получить список складов, для которых требуется пропуск{{ /api/v3/passes/offices }}",
         "tags": [
-          "Пропуска FBS"
+          "fbsPasses"
         ],
         "x-category": "marketplace",
         "x-readonly-method": true
@@ -6556,7 +6584,8 @@
     },
     "/api/v3/passes/{passId}": {
       "delete": {
-        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод удаляет пропуск продавца [из списка](./orders-fbs#tag/Propuska-FBS/paths/~1api~1v3~1passes/get).\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца для методов <strong>сборочных заданий, поставок, пропусков и настроек автовозврата FBS</strong>:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 300 запросов | 200 мс | 20 запросов |\n\nОдин запрос с кодами ответов <code>4XX</code> учитывается как 10 запросов.\n\n<hr>\n\nВ <a href='/sandbox'>песочнице</a> — максимум 1 запрос в секунду суммарно для всех методов <strong>Маркетплейса</strong>.\n\n</div>\n",
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод удаляет пропуск продавца [из списка](./orders-fbs#tag/fbsPasses/operation/getV3Passes).\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца для методов <strong>сборочных заданий, поставок, пропусков и настроек автовозврата FBS</strong>:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 300 запросов | 200 мс | 20 запросов |\n\nОдин запрос с кодами ответов <code>4XX</code> учитывается как 10 запросов.\n\n<hr>\n\nВ <a href='/sandbox'>песочнице</a> — максимум 1 запрос в секунду суммарно для всех методов <strong>Маркетплейса</strong>.\n\n</div>\n",
+        "operationId": "deleteV3PassesPassId",
         "parameters": [
           {
             "$ref": "#/components/parameters/Pass"
@@ -6611,13 +6640,14 @@
         ],
         "summary": "Удалить пропуск{{ /api/v3/passes/{passId} }}",
         "tags": [
-          "Пропуска FBS"
+          "fbsPasses"
         ],
         "x-category": "marketplace",
         "x-readonly-method": false
       },
       "put": {
-        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод обновляет данные [пропуска продавца](./orders-fbs#tag/Propuska-FBS/paths/~1api~1v3~1passes/get). В том числе, можно обновить данные привязанного склада WB.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца для методов <strong>сборочных заданий, поставок, пропусков и настроек автовозврата FBS</strong>:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 300 запросов | 200 мс | 20 запросов |\n\nОдин запрос с кодами ответов <code>4XX</code> учитывается как 10 запросов.\n\n<hr>\n\nВ <a href='/sandbox'>песочнице</a> — максимум 1 запрос в секунду суммарно для всех методов <strong>Маркетплейса</strong>.\n\n</div>\n",
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод обновляет данные [пропуска продавца](./orders-fbs#tag/fbsPasses/operation/getV3Passes). В том числе, можно обновить данные привязанного склада WB.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца для методов <strong>сборочных заданий, поставок, пропусков и настроек автовозврата FBS</strong>:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 300 запросов | 200 мс | 20 запросов |\n\nОдин запрос с кодами ответов <code>4XX</code> учитывается как 10 запросов.\n\n<hr>\n\nВ <a href='/sandbox'>песочнице</a> — максимум 1 запрос в секунду суммарно для всех методов <strong>Маркетплейса</strong>.\n\n</div>\n",
+        "operationId": "putV3PassesPassId",
         "parameters": [
           {
             "$ref": "#/components/parameters/Pass"
@@ -6748,7 +6778,7 @@
         ],
         "summary": "Обновить пропуск{{ /api/v3/passes/{passId} }}",
         "tags": [
-          "Пропуска FBS"
+          "fbsPasses"
         ],
         "x-category": "marketplace",
         "x-readonly-method": false
@@ -6766,7 +6796,8 @@
     },
     "/api/v3/supplies": {
       "get": {
-        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод возвращает список [поставок](./orders-fbs#tag/Postavki-FBS/paths/~1api~1v3~1supplies~1%7BsupplyId%7D/get).\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца для методов <strong>сборочных заданий, поставок, пропусков и настроек автовозврата FBS</strong>:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 300 запросов | 200 мс | 20 запросов |\n\nОдин запрос с кодами ответов <code>4XX</code> учитывается как 10 запросов.\n\n<hr>\n\nВ <a href='/sandbox'>песочнице</a> — максимум 1 запрос в секунду суммарно для всех методов <strong>Маркетплейса</strong>.\n\n</div>\n",
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод возвращает список [поставок](./orders-fbs#tag/fbsSupplies/operation/getV3SuppliesSupplyId).\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца для методов <strong>сборочных заданий, поставок, пропусков и настроек автовозврата FBS</strong>:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 300 запросов | 200 мс | 20 запросов |\n\nОдин запрос с кодами ответов <code>4XX</code> учитывается как 10 запросов.\n\n<hr>\n\nВ <a href='/sandbox'>песочнице</a> — максимум 1 запрос в секунду суммарно для всех методов <strong>Маркетплейса</strong>.\n\n</div>\n",
+        "operationId": "getV3Supplies",
         "parameters": [
           {
             "$ref": "#/components/parameters/Limit"
@@ -6857,13 +6888,14 @@
         ],
         "summary": "Получить список поставок{{ /api/v3/supplies }}",
         "tags": [
-          "Поставки FBS"
+          "fbsSupplies"
         ],
         "x-category": "marketplace",
         "x-readonly-method": true
       },
       "post": {
-        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод создаёт новую [поставку](./orders-fbs#tag/Postavki-FBS/paths/~1api~1v3~1supplies~1%7BsupplyId%7D/get).\n\nОграничения:\n- Только для [сборочных заданий](./orders-fbs#tag/Sborochnye-zadaniya-FBS/paths/~1api~1v3~1orders/get) по модели FBS.\n- При добавлении в поставку все передаваемые сборочные задания в [статусе](./orders-fbs#tag/Sborochnye-zadaniya-FBS/paths/~1api~1v3~1orders~1status/post) `new` будут автоматически переведены в статус `confirm` — на сборке.\n- Если вы переведёте сборочное задание в статус `cancel` — отмена продавцом, прикрепленное сборочное задание автоматически удалится из поставки.\n- Поставку можно собрать только из сборочных заданий (заказов) одного габаритного типа `cargoType`. Новая поставка не обладает габаритным признаком, она приобретает габаритный признак первого заказа, добавленного в поставку.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца для методов <strong>сборочных заданий, поставок, пропусков и настроек автовозврата FBS</strong>:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 300 запросов | 200 мс | 20 запросов |\n\nОдин запрос с кодами ответов <code>4XX</code> учитывается как 10 запросов.\n\n<hr>\n\nВ <a href='/sandbox'>песочнице</a> — максимум 1 запрос в секунду суммарно для всех методов <strong>Маркетплейса</strong>.\n\n</div>\n",
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод создаёт новую [поставку](./orders-fbs#tag/fbsSupplies/operation/getV3SuppliesSupplyId).\n\nОграничения:\n- Только для [сборочных заданий](./orders-fbs#tag/fbsAssemblyOrders/operation/getV3Orders) по модели FBS.\n- При добавлении в поставку все передаваемые сборочные задания в [статусе](./orders-fbs#tag/fbsAssemblyOrders/operation/postV3OrdersStatus) `new` будут автоматически переведены в статус `confirm` — на сборке.\n- Если вы переведёте сборочное задание в статус `cancel` — отмена продавцом, прикрепленное сборочное задание автоматически удалится из поставки.\n- Поставку можно собрать только из сборочных заданий (заказов) одного габаритного типа `cargoType`. Новая поставка не обладает габаритным признаком, она приобретает габаритный признак первого заказа, добавленного в поставку.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца для методов <strong>сборочных заданий, поставок, пропусков и настроек автовозврата FBS</strong>:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 300 запросов | 200 мс | 20 запросов |\n\nОдин запрос с кодами ответов <code>4XX</code> учитывается как 10 запросов.\n\n<hr>\n\nВ <a href='/sandbox'>песочнице</a> — максимум 1 запрос в секунду суммарно для всех методов <strong>Маркетплейса</strong>.\n\n</div>\n",
+        "operationId": "postV3Supplies",
         "requestBody": {
           "content": {
             "application/json": {
@@ -6959,7 +6991,7 @@
         ],
         "summary": "Создать новую поставку{{ /api/v3/supplies }}",
         "tags": [
-          "Поставки FBS"
+          "fbsSupplies"
         ],
         "x-category": "marketplace",
         "x-readonly-method": false
@@ -6977,7 +7009,8 @@
     },
     "/api/v3/supplies/orders/reshipment": {
       "get": {
-        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод возвращает все [сборочные задания](./orders-fbs#tag/Sborochnye-zadaniya-FBS/paths/~1api~1v3~1orders/get), требующие повторной отгрузки.\n<br><br>\nПовторная отгрузка требуется, если поставка была отсканирована в пункте приёмки, но при этом в ней всё ещё есть неотсканированные товары. Спустя определённое время необходимо доставить эти товары заново. Данные сборочные задания можно перевести в [другую активную поставку](./orders-fbs#tag/Postavki-FBS/paths/~1api~1marketplace~1v3~1supplies~1%7BsupplyId%7D~1orders/patch).\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца для методов <strong>сборочных заданий, поставок, пропусков и настроек автовозврата FBS</strong>:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 300 запросов | 200 мс | 20 запросов |\n\nОдин запрос с кодами ответов <code>4XX</code> учитывается как 10 запросов.\n\n<hr>\n\nВ <a href='/sandbox'>песочнице</a> — максимум 1 запрос в секунду суммарно для всех методов <strong>Маркетплейса</strong>.\n\n</div>\n",
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод возвращает все [сборочные задания](./orders-fbs#tag/fbsAssemblyOrders/operation/getV3Orders), требующие повторной отгрузки.\n<br><br>\nПовторная отгрузка требуется, если поставка была отсканирована в пункте приёмки, но при этом в ней всё ещё есть неотсканированные товары. Спустя определённое время необходимо доставить эти товары заново. Данные сборочные задания можно перевести в [другую активную поставку](./orders-fbs#tag/fbsSupplies/operation/patchV3SuppliesSupplyIdOrders).\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца для методов <strong>сборочных заданий, поставок, пропусков и настроек автовозврата FBS</strong>:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 300 запросов | 200 мс | 20 запросов |\n\nОдин запрос с кодами ответов <code>4XX</code> учитывается как 10 запросов.\n\n<hr>\n\nВ <a href='/sandbox'>песочнице</a> — максимум 1 запрос в секунду суммарно для всех методов <strong>Маркетплейса</strong>.\n\n</div>\n",
+        "operationId": "getV3SuppliesOrdersReshipment",
         "responses": {
           "200": {
             "content": {
@@ -7071,7 +7104,7 @@
         ],
         "summary": "Получить все сборочные задания для повторной отгрузки{{ /api/v3/supplies/orders/reshipment }}",
         "tags": [
-          "Сборочные задания FBS"
+          "fbsAssemblyOrders"
         ],
         "x-category": "marketplace",
         "x-readonly-method": true
@@ -7089,7 +7122,8 @@
     },
     "/api/v3/supplies/{supplyId}": {
       "delete": {
-        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод удаляет [поставку](./orders-fbs#tag/Postavki-FBS/paths/~1api~1v3~1supplies~1%7BsupplyId%7D/get), если она активна и за ней не закреплено ни одно [сборочное задание](./orders-fbs#tag/Sborochnye-zadaniya-FBS/paths/~1api~1v3~1orders/get).\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца для методов <strong>сборочных заданий, поставок, пропусков и настроек автовозврата FBS</strong>:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 300 запросов | 200 мс | 20 запросов |\n\nОдин запрос с кодами ответов <code>4XX</code> учитывается как 10 запросов.\n\n<hr>\n\nВ <a href='/sandbox'>песочнице</a> — максимум 1 запрос в секунду суммарно для всех методов <strong>Маркетплейса</strong>.\n\n</div>\n",
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод удаляет [поставку](./orders-fbs#tag/fbsSupplies/operation/getV3SuppliesSupplyId), если она активна и за ней не закреплено ни одно [сборочное задание](./orders-fbs#tag/fbsAssemblyOrders/operation/getV3Orders).\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца для методов <strong>сборочных заданий, поставок, пропусков и настроек автовозврата FBS</strong>:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 300 запросов | 200 мс | 20 запросов |\n\nОдин запрос с кодами ответов <code>4XX</code> учитывается как 10 запросов.\n\n<hr>\n\nВ <a href='/sandbox'>песочнице</a> — максимум 1 запрос в секунду суммарно для всех методов <strong>Маркетплейса</strong>.\n\n</div>\n",
+        "operationId": "deleteV3SuppliesSupplyId",
         "parameters": [
           {
             "$ref": "#/components/parameters/Supply"
@@ -7174,13 +7208,14 @@
         ],
         "summary": "Удалить поставку{{ /api/v3/supplies/{supplyId} }}",
         "tags": [
-          "Поставки FBS"
+          "fbsSupplies"
         ],
         "x-category": "marketplace",
         "x-readonly-method": false
       },
       "get": {
         "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод возвращает подробную информацию о поставке.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца для методов <strong>сборочных заданий, поставок, пропусков и настроек автовозврата FBS</strong>:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 300 запросов | 200 мс | 20 запросов |\n\nОдин запрос с кодами ответов <code>4XX</code> учитывается как 10 запросов.\n\n<hr>\n\nВ <a href='/sandbox'>песочнице</a> — максимум 1 запрос в секунду суммарно для всех методов <strong>Маркетплейса</strong>.\n\n</div>\n",
+        "operationId": "getV3SuppliesSupplyId",
         "parameters": [
           {
             "$ref": "#/components/parameters/Supply"
@@ -7257,7 +7292,7 @@
         ],
         "summary": "Получить информацию о поставке{{ /api/v3/supplies/{supplyId} }}",
         "tags": [
-          "Поставки FBS"
+          "fbsSupplies"
         ],
         "x-category": "marketplace",
         "x-readonly-method": true
@@ -7275,7 +7310,8 @@
     },
     "/api/v3/supplies/{supplyId}/barcode": {
       "get": {
-        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод возвращает QR-код [поставки](./orders-fbs#tag/Postavki-FBS/paths/~1api~1v3~1supplies~1%7BsupplyId%7D/get) в форматах:\n  - SVG\n  - ZPLV (вертикальный)\n  - ZPLH (горизонтальный)\n  - PNG\n\nQR-код поставки можно получить, только если поставка [передана в доставку](./orders-fbs#tag/Postavki-FBS/paths/~1api~1v3~1supplies~1%7BsupplyId%7D~1deliver/patch).\n<br><br>\nРазмер — 580x400 px.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца для методов <strong>сборочных заданий, поставок, пропусков и настроек автовозврата FBS</strong>:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 300 запросов | 200 мс | 20 запросов |\n\nОдин запрос с кодами ответов <code>4XX</code> учитывается как 10 запросов.\n\n<hr>\n\nВ <a href='/sandbox'>песочнице</a> — максимум 1 запрос в секунду суммарно для всех методов <strong>Маркетплейса</strong>.\n\n</div>\n",
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод возвращает QR-код [поставки](./orders-fbs#tag/fbsSupplies/operation/getV3SuppliesSupplyId) в форматах:\n  - SVG\n  - ZPLV (вертикальный)\n  - ZPLH (горизонтальный)\n  - PNG\n\nQR-код поставки можно получить, только если поставка [передана в доставку](./orders-fbs#tag/fbsSupplies/operation/patchV3SuppliesSupplyIdDeliver).\n<br><br>\nРазмер — 580x400 px.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца для методов <strong>сборочных заданий, поставок, пропусков и настроек автовозврата FBS</strong>:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 300 запросов | 200 мс | 20 запросов |\n\nОдин запрос с кодами ответов <code>4XX</code> учитывается как 10 запросов.\n\n<hr>\n\nВ <a href='/sandbox'>песочнице</a> — максимум 1 запрос в секунду суммарно для всех методов <strong>Маркетплейса</strong>.\n\n</div>\n",
+        "operationId": "getV3SuppliesSupplyIdBarcode",
         "parameters": [
           {
             "$ref": "#/components/parameters/Supply"
@@ -7398,7 +7434,7 @@
         ],
         "summary": "Получить QR-код поставки{{ /api/v3/supplies/{supplyId}/barcode }}",
         "tags": [
-          "Поставки FBS"
+          "fbsSupplies"
         ],
         "x-category": "marketplace",
         "x-readonly-method": true
@@ -7416,7 +7452,8 @@
     },
     "/api/v3/supplies/{supplyId}/deliver": {
       "patch": {
-        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод закрывает [поставку](./orders-fbs#tag/Postavki-FBS/paths/~1api~1v3~1supplies~1%7BsupplyId%7D/get) и переводит все [сборочные задания](./orders-fbs#tag/Sborochnye-zadaniya-FBS/paths/~1api~1v3~1orders/get) в ней в [статус](./orders-fbs#tag/Sborochnye-zadaniya-FBS/paths/~1api~1v3~1orders~1status/post) `complete` — в доставке. После закрытия поставки добавить новые сборочные задания к ней нельзя.\n<br><br>\nЕсли поставка не была передана в доставку, то при приёмке первого товара поставка автоматически закроется.\n<br><br>\nПередать поставку в доставку можно, только если в ней:\n  - есть хотя бы одно сборочное задание\n  - для всех сборочных заданий указана обязательная маркировка\n  - маркировка всех сборочных заданий прошла проверку\n\nЕсли поставка содержит сборочные задания с обязательным УИН, убедитесь, что вы заранее создали и загрузили спецификацию с договором на доставку. [ГИИС ДМДК](https://minfin.gov.ru/ru/perfomance/jewels/dmdk) требуется около 30 минут для обработки изменений в статусах УИН.\n\nОбязательно [указывайте параметры отгрузки](./orders-fbs#tag/Postavki-FBS/operation/patchV3FbsSuppliesShippingMethod) для поставок от продавцов РФ на пункты отгрузки в РФ. Если способ доставки, дата или пункт отгрузки не указаны, возвращается ошибка `409`.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца для методов <strong>сборочных заданий, поставок, пропусков и настроек автовозврата FBS</strong>:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 300 запросов | 200 мс | 20 запросов |\n\nОдин запрос с кодами ответов <code>4XX</code> учитывается как 10 запросов.\n\n<hr>\n\nВ <a href='/sandbox'>песочнице</a> — максимум 1 запрос в секунду суммарно для всех методов <strong>Маркетплейса</strong>.\n\n</div>\n",
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод закрывает [поставку](./orders-fbs#tag/fbsSupplies/operation/getV3SuppliesSupplyId) и переводит все [сборочные задания](./orders-fbs#tag/fbsAssemblyOrders/operation/getV3Orders) в ней в [статус](./orders-fbs#tag/fbsAssemblyOrders/operation/postV3OrdersStatus) `complete` — в доставке. После закрытия поставки добавить новые сборочные задания к ней нельзя.\n<br><br>\nЕсли поставка не была передана в доставку, то при приёмке первого товара поставка автоматически закроется.\n<br><br>\nПередать поставку в доставку можно, только если в ней:\n  - есть хотя бы одно сборочное задание\n  - для всех сборочных заданий указана обязательная маркировка\n  - маркировка всех сборочных заданий прошла проверку\n\nЕсли поставка содержит сборочные задания с обязательным УИН, убедитесь, что вы заранее создали и загрузили спецификацию с договором на доставку. [ГИИС ДМДК](https://minfin.gov.ru/ru/perfomance/jewels/dmdk) требуется около 30 минут для обработки изменений в статусах УИН.\n\nОбязательно [указывайте параметры отгрузки](./orders-fbs#tag/fbsSupplies/operation/patchV3FbsSuppliesShippingMethod) для поставок от продавцов РФ на пункты отгрузки в РФ. Если способ доставки, дата или пункт отгрузки не указаны, возвращается ошибка `409`.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца для методов <strong>сборочных заданий, поставок, пропусков и настроек автовозврата FBS</strong>:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 300 запросов | 200 мс | 20 запросов |\n\nОдин запрос с кодами ответов <code>4XX</code> учитывается как 10 запросов.\n\n<hr>\n\nВ <a href='/sandbox'>песочнице</a> — максимум 1 запрос в секунду суммарно для всех методов <strong>Маркетплейса</strong>.\n\n</div>\n",
+        "operationId": "patchV3SuppliesSupplyIdDeliver",
         "parameters": [
           {
             "$ref": "#/components/parameters/Supply"
@@ -7507,7 +7544,7 @@
         ],
         "summary": "Передать поставку в доставку{{ /api/v3/supplies/{supplyId}/deliver }}",
         "tags": [
-          "Поставки FBS"
+          "fbsSupplies"
         ],
         "x-category": "marketplace",
         "x-readonly-method": false
@@ -7526,6 +7563,7 @@
     "/api/v3/supplies/{supplyId}/trbx": {
       "delete": {
         "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод удаляет грузоместа из поставки.\n<br><br>\nМожно удалить только пока поставка на сборке.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца для методов <strong>сборочных заданий, поставок, пропусков и настроек автовозврата FBS</strong>:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 300 запросов | 200 мс | 20 запросов |\n\nОдин запрос с кодами ответов <code>4XX</code> учитывается как 10 запросов.\n\n<hr>\n\nВ <a href='/sandbox'>песочнице</a> — максимум 1 запрос в секунду суммарно для всех методов <strong>Маркетплейса</strong>.\n\n</div>\n",
+        "operationId": "deleteV3SuppliesSupplyIdTrbx",
         "parameters": [
           {
             "$ref": "#/components/parameters/Supply"
@@ -7617,13 +7655,14 @@
         ],
         "summary": "Удалить грузоместа из поставки{{ /api/v3/supplies/{supplyId}/trbx }}",
         "tags": [
-          "Поставки FBS"
+          "fbsSupplies"
         ],
         "x-category": "marketplace",
         "x-readonly-method": false
       },
       "get": {
         "description": "<div class='description-title'><span>Описание метода</span></div>\n\nВозвращает список грузомест поставки.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца для методов <strong>сборочных заданий, поставок, пропусков и настроек автовозврата FBS</strong>:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 300 запросов | 200 мс | 20 запросов |\n\nОдин запрос с кодами ответов <code>4XX</code> учитывается как 10 запросов.\n\n<hr>\n\nВ <a href='/sandbox'>песочнице</a> — максимум 1 запрос в секунду суммарно для всех методов <strong>Маркетплейса</strong>.\n\n</div>\n",
+        "operationId": "getV3SuppliesSupplyIdTrbx",
         "parameters": [
           {
             "$ref": "#/components/parameters/Supply"
@@ -7708,13 +7747,14 @@
         ],
         "summary": "Получить список грузомест поставки{{ /api/v3/supplies/{supplyId}/trbx }}",
         "tags": [
-          "Поставки FBS"
+          "fbsSupplies"
         ],
         "x-category": "marketplace",
         "x-readonly-method": true
       },
       "post": {
-        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод добавляет требуемое количество [грузомест](./orders-fbs#tag/Postavki-FBS/paths/~1api~1v3~1supplies~1%7BsupplyId%7D~1trbx/get) в [поставку](./orders-fbs#tag/Postavki-FBS/paths/~1api~1v3~1supplies~1%7BsupplyId%7D/get).\n<br>\n<br>\nГрузоместа необходимо добавлять только в поставки, отгружаемые на ПВЗ.\n<br>\nГрузоместа можно добавить только в открытую поставку. В одном грузоместе может быть несколько заказов. Например, если в поставке 10 заказов, распределите их по коробам: система позволит создать не больше 5 грузомест. Для 20 заказов — не больше 10 грузомест, для 100 — не больше 50.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца для методов <strong>сборочных заданий, поставок, пропусков и настроек автовозврата FBS</strong>:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 300 запросов | 200 мс | 20 запросов |\n\nОдин запрос с кодами ответов <code>4XX</code> учитывается как 10 запросов.\n\n<hr>\n\nВ <a href='/sandbox'>песочнице</a> — максимум 1 запрос в секунду суммарно для всех методов <strong>Маркетплейса</strong>.\n\n</div>\n",
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод добавляет требуемое количество [грузомест](./orders-fbs#tag/fbsSupplies/operation/getV3SuppliesSupplyIdTrbx) в [поставку](./orders-fbs#tag/fbsSupplies/operation/getV3SuppliesSupplyId).\n<br>\n<br>\nГрузоместа необходимо добавлять только в поставки, отгружаемые на ПВЗ.\n<br>\nГрузоместа можно добавить только в открытую поставку. В одном грузоместе может быть несколько заказов. Например, если в поставке 10 заказов, распределите их по коробам: система позволит создать не больше 5 грузомест. Для 20 заказов — не больше 10 грузомест, для 100 — не больше 50.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца для методов <strong>сборочных заданий, поставок, пропусков и настроек автовозврата FBS</strong>:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 300 запросов | 200 мс | 20 запросов |\n\nОдин запрос с кодами ответов <code>4XX</code> учитывается как 10 запросов.\n\n<hr>\n\nВ <a href='/sandbox'>песочнице</a> — максимум 1 запрос в секунду суммарно для всех методов <strong>Маркетплейса</strong>.\n\n</div>\n",
+        "operationId": "postV3SuppliesSupplyIdTrbx",
         "parameters": [
           {
             "$ref": "#/components/parameters/Supply"
@@ -7823,7 +7863,7 @@
         ],
         "summary": "Добавить грузоместа к поставке{{ /api/v3/supplies/{supplyId}/trbx }}",
         "tags": [
-          "Поставки FBS"
+          "fbsSupplies"
         ],
         "x-category": "marketplace",
         "x-readonly-method": false
@@ -7842,6 +7882,7 @@
     "/api/v3/supplies/{supplyId}/trbx/stickers": {
       "post": {
         "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод возвращает QR-стикеры в форматах:\n  - SVG\n  - ZPLV (вертикальный)\n  - ZPLH (горизонтальный)\n  - PNG\n<br><br>\nРазмер стикеров — 580x400 px.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца для методов <strong>сборочных заданий, поставок, пропусков и настроек автовозврата FBS</strong>:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 300 запросов | 200 мс | 20 запросов |\n\nОдин запрос с кодами ответов <code>4XX</code> учитывается как 10 запросов.\n\n<hr>\n\nВ <a href='/sandbox'>песочнице</a> — максимум 1 запрос в секунду суммарно для всех методов <strong>Маркетплейса</strong>.\n\n</div>\n",
+        "operationId": "postV3SuppliesSupplyIdTrbxStickers",
         "parameters": [
           {
             "$ref": "#/components/parameters/Supply"
@@ -7965,7 +8006,7 @@
         ],
         "summary": "Получить стикеры грузомест поставки{{ /api/v3/supplies/{supplyId}/trbx/stickers }}",
         "tags": [
-          "Поставки FBS"
+          "fbsSupplies"
         ],
         "x-category": "marketplace",
         "x-readonly-method": true
@@ -7989,26 +8030,29 @@
   ],
   "tags": [
     {
-      "description": "<div class=\"api-description\">\n\n<div class=\"api-block\">\n\nС помощью методов раздела Заказы FBS (Fulfillment by Seller) вы можете:\n  - получать информацию о [сборочных заданиях](./orders-fbs#tag/Sborochnye-zadaniya-FBS) и их статусах, отменять сборочные задания, получать стикеры\n  - добавлять, редактировать и удалять [идентификаторы маркировки](./orders-fbs#tag/fbsLabelIdentifiers) сборочных заданий\n  - управлять [поставками](./orders-fbs#tag/Postavki-FBS)\n  - создавать, редактировать и удалять [пропуска](./orders-fbs#tag/Propuska-FBS) на склады WB\n\nВы можете протестировать методы заказов FBS в [песочнице](/sandbox). Также в песочнице доступны [специальные методы](/docs/openapi-other/sandbox-environment#tag/Marketplejs-FBS) для эмуляции действий пользователя\n\n</div>\n\n\n<div class=\"description_ref\">\n  Узнать, как использовать методы в бизнес-кейсах, можно в <a href=\"/knowledge-base/articles/019d49a4-0771-7571-aea9-11d5b597f34c/zakazy-fbs\">инструкции</a> по работе с <strong>заказами FBS</strong>\n</div>\n\n\n<div class=\"description_important\">\n  Узнать больше о заказах FBS можно в <a href=\"https://seller.wildberries.ru/instructions/ru/ru/category/b3e60238-fd4c-49ce-8668-ff688725a12d\">справочном центре</a>\n</div>\n\n\n</div>",
+      "description": "<div class=\"api-description\">\n\n<div class=\"api-block\">\n\nС помощью методов раздела Заказы FBS (Fulfillment by Seller) вы можете:\n  - получать информацию о [сборочных заданиях](./orders-fbs#tag/fbsAssemblyOrders) и их статусах, отменять сборочные задания, получать стикеры\n  - добавлять, редактировать и удалять [идентификаторы маркировки](./orders-fbs#tag/fbsLabelIdentifiers) сборочных заданий\n  - управлять [поставками](./orders-fbs#tag/fbsSupplies)\n  - создавать, редактировать и удалять [пропуска](./orders-fbs#tag/fbsPasses) на склады WB\n\nВы можете протестировать методы заказов FBS в [песочнице](/sandbox). Также в песочнице доступны [специальные методы](/docs/openapi-other/sandbox-environment#tag/marketplaceFbs) для эмуляции действий пользователя\n\n</div>\n\n\n<div class=\"description_ref\">\n  Узнать, как использовать методы в бизнес-кейсах, можно в <a href=\"/knowledge-base/articles/019d49a4-0771-7571-aea9-11d5b597f34c/zakazy-fbs\">инструкции</a> по работе с <strong>заказами FBS</strong>\n</div>\n\n\n<div class=\"description_important\">\n  Узнать больше о заказах FBS можно в <a href=\"https://seller.wildberries.ru/instructions/ru/ru/category/b3e60238-fd4c-49ce-8668-ff688725a12d\">справочном центре</a>\n</div>\n\n\n</div>",
       "name": "Заказы FBS",
       "x-traitTag": true
     },
     {
-      "description": "<div class=\"description_auth\">\n  Для доступа к методам используйте <a href=\"./api-information#tag/authorization/Kak-sozdat-personalnyj-bazovyj-ili-testovyj-token\">токен</a> для категории <strong>Маркетплейс</strong>\n</div>\n\n<div class=\"description_important\">\n  Узнать больше о сборочных заданиях можно в <a href=\"https://seller.wildberries.ru/instructions/subcategory/6d85301c-719b-4145-9275-2ac8b793f345?goBackOption=prevRoute&categoryId=6d85301c-719b-4145-9275-2ac8b793f345\">справочном центре</a>\n</div>\n\nКогда покупатель заказывает товар, у продавца появляется **сборочное задание**. Сборочное задание всегда содержит 1 единицу товара. Если покупатель закажет 10 единиц одного товара одной корзиной, у продавца появятся 10 сборочных заданий. Их можно сгруппировать по одинаковому `orderUid`.\n\nДля работы со сборочными заданиями FBS:\n1. [Получите новые сборочные задания](./orders-fbs#tag/Sborochnye-zadaniya-FBS/paths/~1api~1v3~1orders~1new/get).\n2. [Создайте поставку и добавьте в неё сборочные задания](./orders-fbs#tag/Postavki-FBS).\n3. [Получите стикеры](./orders-fbs#tag/Sborochnye-zadaniya-FBS/paths/~1api~1v3~1orders~1stickers/post) сборочных заданий, распечатайте их и промаркируйте сборочные задания.\n4. Если нужно, добавьте к сборочным заданиям [код маркировки Честного знака](./orders-fbs#tag/fbsLabelIdentifiers/paths/~1api~1v3~1orders~1%7BorderId%7D~1meta~1sgtin/put), [УИН](./orders-fbs#tag/fbsLabelIdentifiers/paths/~1api~1v3~1orders~1%7BorderId%7D~1meta~1uin/put), [IMEI](./orders-fbs#tag/fbsLabelIdentifiers/paths/~1api~1v3~1orders~1%7BorderId%7D~1meta~1imei/put), [GTIN](./orders-fbs#tag/fbsLabelIdentifiers/paths/~1api~1v3~1orders~1%7BorderId%7D~1meta~1gtin/put), [срок годности товара](./orders-fbs#tag/fbsLabelIdentifiers/paths/~1api~1v3~1orders~1%7BorderId%7D~1meta~1expiration/put) или [номер ДТ](./orders-fbs#tag/fbsLabelIdentifiers/paths/~1api~1marketplace~1v3~1orders~1%7BorderId%7D~1meta~1customs-declaration/put).\n5. Если поставка доставляется в пункт выдачи заказов (ПВЗ), переходите к пункту 3 [инструкции](./orders-fbs#tag/Postavki-FBS). Если на склад WB, к пункту 6.\n6. [Уточните](./orders-fbs#tag/Propuska-FBS/paths/~1api~1v3~1passes~1offices/get), требуется ли пропуск на склад, на который поедет поставка. Если нужен, [создайте](./orders-fbs#tag/Propuska-FBS/paths/~1api~1v3~1passes/post) пропуск.\n",
-      "name": "Сборочные задания FBS"
+      "description": "<div class=\"description_auth\">\n  Для доступа к методам используйте <a href=\"./api-information#tag/authorization/Kak-sozdat-personalnyj-bazovyj-ili-testovyj-token\">токен</a> для категории <strong>Маркетплейс</strong>\n</div>\n\n<div class=\"description_important\">\n  Узнать больше о сборочных заданиях можно в <a href=\"https://seller.wildberries.ru/instructions/subcategory/6d85301c-719b-4145-9275-2ac8b793f345?goBackOption=prevRoute&categoryId=6d85301c-719b-4145-9275-2ac8b793f345\">справочном центре</a>\n</div>\n\nКогда покупатель заказывает товар, у продавца появляется **сборочное задание**. Сборочное задание всегда содержит 1 единицу товара. Если покупатель закажет 10 единиц одного товара одной корзиной, у продавца появятся 10 сборочных заданий. Их можно сгруппировать по одинаковому `orderUid`.\n\nДля работы со сборочными заданиями FBS:\n1. [Получите новые сборочные задания](./orders-fbs#tag/fbsAssemblyOrders/operation/getV3OrdersNew).\n2. [Создайте поставку и добавьте в неё сборочные задания](./orders-fbs#tag/fbsSupplies).\n3. [Получите стикеры](./orders-fbs#tag/fbsAssemblyOrders/operation/postV3OrdersStickers) сборочных заданий, распечатайте их и промаркируйте сборочные задания.\n4. Если нужно, добавьте к сборочным заданиям [код маркировки Честного знака](./orders-fbs#tag/fbsLabelIdentifiers/operation/putV3OrdersOrderIdMetaSgtin), [УИН](./orders-fbs#tag/fbsLabelIdentifiers/operation/putV3OrdersOrderIdMetaUin), [IMEI](./orders-fbs#tag/fbsLabelIdentifiers/operation/putV3OrdersOrderIdMetaImei), [GTIN](./orders-fbs#tag/fbsLabelIdentifiers/operation/putV3OrdersOrderIdMetaGtin), [срок годности товара](./orders-fbs#tag/fbsLabelIdentifiers/operation/putV3OrdersOrderIdMetaExpiration) или [номер ДТ](./orders-fbs#tag/fbsLabelIdentifiers/operation/putV3OrdersOrderIdMetaCustomsDeclaration).\n5. Если поставка доставляется в пункт выдачи заказов (ПВЗ), переходите к пункту 3 [инструкции](./orders-fbs#tag/fbsSupplies). Если на склад WB, к пункту 6.\n6. [Уточните](./orders-fbs#tag/fbsPasses/operation/getV3PassesOffices), требуется ли пропуск на склад, на который поедет поставка. Если нужен, [создайте](./orders-fbs#tag/fbsPasses/operation/postV3Passes) пропуск.\n",
+      "name": "fbsAssemblyOrders",
+      "x-displayName": "Сборочные задания FBS"
     },
     {
-      "description": "<div class=\"description_auth\">\n  Для доступа к методам используйте <a href=\"./api-information#tag/authorization/Kak-sozdat-personalnyj-bazovyj-ili-testovyj-token\">токен</a> для категории <strong>Маркетплейс</strong>\n</div>\n\n<div class=\"description_important\">\n  Узнать больше об идентификаторах маркировки можно в <a href=\"https://seller.wildberries.ru/instructions/material/A-305?goBackOption=prevRoute&categoryId=6d85301c-719b-4145-9275-2ac8b793f345\">справочном центре</a>, а так же в <a href=\"/knowledge-base/articles/019e9273-118b-7b69-a25a-ea1d756f05d9/rabota-s-markirovkoi-po-modeli-fbs\">инструкции по работе с маркировкой</a>.\n</div>\n\nС помощью этих методов вы можете [получить](./orders-fbs#tag/fbsLabelIdentifiers/paths/~1api~1marketplace~1v3~1orders~1meta/post), [удалить](./orders-fbs#tag/fbsLabelIdentifiers/paths/~1api~1v3~1orders~1%7BorderId%7D~1meta/delete) и отредактировать идентификаторы маркировки [сборочных заданий](./orders-fbs#tag/Sborochnye-zadaniya-FBS):\n  - [Код маркировки Честного знака](./orders-fbs#tag/fbsLabelIdentifiers/paths/~1api~1v3~1orders~1%7BorderId%7D~1meta~1sgtin/put)\n  - [УИН](./orders-fbs#tag/fbsLabelIdentifiers/paths/~1api~1v3~1orders~1%7BorderId%7D~1meta~1uin/put)\n  - [IMEI](./orders-fbs#tag/fbsLabelIdentifiers/paths/~1api~1v3~1orders~1%7BorderId%7D~1meta~1imei/put)\n  - [GTIN](./orders-fbs#tag/fbsLabelIdentifiers/paths/~1api~1v3~1orders~1%7BorderId%7D~1meta~1gtin/put)\n  - [Срок годности товара](./orders-fbs#tag/fbsLabelIdentifiers/paths/~1api~1v3~1orders~1%7BorderId%7D~1meta~1expiration/put)\n  - [Номер ДТ](./orders-fbs#tag/fbsLabelIdentifiers/paths/~1api~1marketplace~1v3~1orders~1%7BorderId%7D~1meta~1customs-declaration/put)\n\nЗаполнять идентификаторы маркировки сборочных заданий в песочнице необязательно\n",
+      "description": "<div class=\"description_auth\">\n  Для доступа к методам используйте <a href=\"./api-information#tag/authorization/Kak-sozdat-personalnyj-bazovyj-ili-testovyj-token\">токен</a> для категории <strong>Маркетплейс</strong>\n</div>\n\n<div class=\"description_important\">\n  Узнать больше об идентификаторах маркировки можно в <a href=\"https://seller.wildberries.ru/instructions/material/A-305?goBackOption=prevRoute&categoryId=6d85301c-719b-4145-9275-2ac8b793f345\">справочном центре</a>, а так же в <a href=\"/knowledge-base/articles/019e9273-118b-7b69-a25a-ea1d756f05d9/rabota-s-markirovkoi-po-modeli-fbs\">инструкции по работе с маркировкой</a>.\n</div>\n\nС помощью этих методов вы можете [получить](./orders-fbs#tag/fbsLabelIdentifiers/operation/postV3OrdersMeta), [удалить](./orders-fbs#tag/fbsLabelIdentifiers/operation/deleteV3OrdersOrderIdMeta) и отредактировать идентификаторы маркировки [сборочных заданий](./orders-fbs#tag/fbsAssemblyOrders):\n  - [Код маркировки Честного знака](./orders-fbs#tag/fbsLabelIdentifiers/operation/putV3OrdersOrderIdMetaSgtin)\n  - [УИН](./orders-fbs#tag/fbsLabelIdentifiers/operation/putV3OrdersOrderIdMetaUin)\n  - [IMEI](./orders-fbs#tag/fbsLabelIdentifiers/operation/putV3OrdersOrderIdMetaImei)\n  - [GTIN](./orders-fbs#tag/fbsLabelIdentifiers/operation/putV3OrdersOrderIdMetaGtin)\n  - [Срок годности товара](./orders-fbs#tag/fbsLabelIdentifiers/operation/putV3OrdersOrderIdMetaExpiration)\n  - [Номер ДТ](./orders-fbs#tag/fbsLabelIdentifiers/operation/putV3OrdersOrderIdMetaCustomsDeclaration)\n\nЗаполнять идентификаторы маркировки сборочных заданий в песочнице необязательно\n",
       "name": "fbsLabelIdentifiers",
       "x-displayName": "Идентификаторы маркировки FBS"
     },
     {
-      "description": "<div class=\"description_auth\">\n  Для доступа к методам используйте <a href=\"./api-information#tag/authorization/Kak-sozdat-personalnyj-bazovyj-ili-testovyj-token\">токен</a> для категории <strong>Маркетплейс</strong>\n</div>\n\n<div class=\"description_important\">\n  Узнать больше о поставках FBS можно в <a href=\"https://seller.wildberries.ru/instructions/material/A-11?goBackOption=prevRoute&categoryId=6d85301c-719b-4145-9275-2ac8b793f345\">справочном центре</a>\n</div>\n\nДля работы с поставками:\n\n  <div class=\"description_important\">\n  Пункты 3-5 обязательны к выполнению при доставке поставки на пункт выдачи заказов (ПВЗ).\n  </div>\n\n  1. [Создайте новую поставку](./orders-fbs#tag/Postavki-FBS/paths/~1api~1v3~1supplies/post). В ответ вернется ID созданной поставки в формате `WB-GI-1234567`.\n  1. [Установите параметры отгрузки поставки](./orders-fbs#tag/Postavki-FBS/operation/patchV3FbsSuppliesShippingMethod). Для этого получите [список пунктов отгрузки поставок](./orders-fbs#tag/Postavki-FBS/operation/getV3FbsShippingPoints). Доступно только для продавцов из РФ.<br>\n  Для доставки транспортной компанией обязательно укажите ID ЭТрН — электронной транспортной накладной.\n  1. В текущую новую поставку [добавьте сборочные задания](./orders-fbs#tag/Postavki-FBS/paths/~1api~1marketplace~1v3~1supplies~1%7BsupplyId%7D~1orders/patch), которые вы повезёте на склад или ПВЗ. После того, как сборочные задания будут добавлены к поставке, они будут переведены в статус `confirm` — на сборке.\n  1. [Добавьте грузоместа в поставку](./orders-fbs#tag/Postavki-FBS/paths/~1api~1v3~1supplies~1%7BsupplyId%7D~1trbx/post).\n  1. [Проверьте список грузомест](./orders-fbs#tag/Postavki-FBS/paths/~1api~1v3~1supplies~1%7BsupplyId%7D~1trbx/get).\n  1. [Получите стикеры грузомест](./orders-fbs#tag/Postavki-FBS/paths/~1api~1v3~1supplies~1%7BsupplyId%7D~1trbx~1stickers/post). Распечатайте и наклейте стикеры на грузоместа.\n  1. После того как поставка будет укомплектована нужными сборочными заданиями, необходимо [передать её в доставку](./orders-fbs#tag/Postavki-FBS/paths/~1api~1v3~1supplies~1%7BsupplyId%7D~1deliver/patch). Если поставка не была передана в доставку, то при сканировании её QR-кода или приёмке первого товара на ПВЗ поставка автоматически закроется. При передаче сборочных заданий в доставку они будут автоматически собраны и переведены в статус `complete` — в доставке.\n  1. Для поставок из стран ЕАЭС добавьте данные [СПОТ](https://www.nalog.gov.ru/rn77/related_activities/spot). Получите [список стран ОКСМ](./orders-fbs#tag/Postavki-FBS/operation/getV3FbsDictionariesCountriesOksm) для [добавления данных СПОТ в поставку](./orders-fbs#tag/Postavki-FBS/operation/putV3FbsSuppliesSupplyIdSpot). Вы можете получать [данные СПОТ для списка поставок](./orders-fbs#tag/Postavki-FBS/operation/postV3FbsSuppliesSpotList) и [QR-коды СПОТ](./orders-fbs#tag/Postavki-FBS/operation/getV3FbsSuppliesSupplyIdStickersSpot). Сейчас методы доступны только для продавцов из Кыргызстана. В дальнейшем методы будут доступны продавцам из любой страны ЕАЭС кроме РФ, следите за обновлениями.\n  1. Если поставка была отсканирована в пункте приёмки, но при этом в ней всё ещё есть неотсканированные товары, спустя определённое время необходимо доставить их повторно. Проверьте все [сборочные задания, требующие повторной отгрузки на данный момент](./orders-fbs#tag/Sborochnye-zadaniya-FBS/paths/~1api~1v3~1supplies~1orders~1reshipment/get). Данные сборочные задания можно перевести в [другую активную поставку](./orders-fbs#tag/Postavki-FBS/paths/~1api~1marketplace~1v3~1supplies~1%7BsupplyId%7D~1orders/patch). Сборочное задание также будет переведено в статус `confirm` — на сборке.\n\nТакже вы можете:\n  - [удалить грузоместа из поставки](./orders-fbs#tag/Postavki-FBS/paths/~1api~1v3~1supplies~1%7BsupplyId%7D~1trbx/delete), но только пока поставка находится на сборке\n  - получить [ID всех сборочных заданий, добавленных к поставке](./orders-fbs#tag/Postavki-FBS/paths/~1api~1marketplace~1v3~1supplies~1%7BsupplyId%7D~1order-ids/get)\n  - получить информацию [обо всех поставках продавца](./orders-fbs#tag/Postavki-FBS/paths/~1api~1v3~1supplies/get) или [о конкретной поставке](./orders-fbs#tag/Postavki-FBS/paths/~1api~1v3~1supplies~1%7BsupplyId%7D/get)\n  - [удалить поставку](./orders-fbs#tag/Postavki-FBS/paths/~1api~1v3~1supplies~1%7BsupplyId%7D/delete) при условии, что она активна и за ней не закреплены сборочные задания\n  - [перемещать сборочные задания между активными поставками](./orders-fbs#tag/Postavki-FBS/paths/~1api~1marketplace~1v3~1supplies~1%7BsupplyId%7D~1orders/patch). Нельзя перемещать сборочное задание из уже закрытой поставки, только если оно не требует повторной отгрузки\n  - получить [QR-код поставки](./orders-fbs#tag/Postavki-FBS/paths/~1api~1v3~1supplies~1%7BsupplyId%7D~1barcode/get) в форматах SVG, ZPL или PNG. Доступно только после передачи поставки в доставку\n",
-      "name": "Поставки FBS"
+      "description": "<div class=\"description_auth\">\n  Для доступа к методам используйте <a href=\"./api-information#tag/authorization/Kak-sozdat-personalnyj-bazovyj-ili-testovyj-token\">токен</a> для категории <strong>Маркетплейс</strong>\n</div>\n\n<div class=\"description_important\">\n  Узнать больше о поставках FBS можно в <a href=\"https://seller.wildberries.ru/instructions/material/A-11?goBackOption=prevRoute&categoryId=6d85301c-719b-4145-9275-2ac8b793f345\">справочном центре</a>\n</div>\n\nДля работы с поставками:\n\n  <div class=\"description_important\">\n  Пункты 3-5 обязательны к выполнению при доставке поставки на пункт выдачи заказов (ПВЗ).\n  </div>\n\n  1. [Создайте новую поставку](./orders-fbs#tag/fbsSupplies/operation/postV3Supplies). В ответ вернется ID созданной поставки в формате `WB-GI-1234567`.\n  1. [Установите параметры отгрузки поставки](./orders-fbs#tag/fbsSupplies/operation/patchV3FbsSuppliesShippingMethod). Для этого получите [список пунктов отгрузки поставок](./orders-fbs#tag/fbsSupplies/operation/getV3FbsShippingPoints). Доступно только для продавцов из РФ.<br>\n  Для доставки транспортной компанией обязательно укажите ID ЭТрН — электронной транспортной накладной.\n  1. В текущую новую поставку [добавьте сборочные задания](./orders-fbs#tag/fbsSupplies/operation/patchV3SuppliesSupplyIdOrders), которые вы повезёте на склад или ПВЗ. После того, как сборочные задания будут добавлены к поставке, они будут переведены в статус `confirm` — на сборке.\n  1. [Добавьте грузоместа в поставку](./orders-fbs#tag/fbsSupplies/operation/postV3SuppliesSupplyIdTrbx).\n  1. [Проверьте список грузомест](./orders-fbs#tag/fbsSupplies/operation/getV3SuppliesSupplyIdTrbx).\n  1. [Получите стикеры грузомест](./orders-fbs#tag/fbsSupplies/operation/postV3SuppliesSupplyIdTrbxStickers). Распечатайте и наклейте стикеры на грузоместа.\n  1. После того как поставка будет укомплектована нужными сборочными заданиями, необходимо [передать её в доставку](./orders-fbs#tag/fbsSupplies/operation/patchV3SuppliesSupplyIdDeliver). Если поставка не была передана в доставку, то при сканировании её QR-кода или приёмке первого товара на ПВЗ поставка автоматически закроется. При передаче сборочных заданий в доставку они будут автоматически собраны и переведены в статус `complete` — в доставке.\n  1. Для поставок из стран ЕАЭС добавьте данные [СПОТ](https://www.nalog.gov.ru/rn77/related_activities/spot). Получите [список стран ОКСМ](./orders-fbs#tag/fbsSupplies/operation/getV3FbsDictionariesCountriesOksm) для [добавления данных СПОТ в поставку](./orders-fbs#tag/fbsSupplies/operation/putV3FbsSuppliesSupplyIdSpot). Вы можете получать [данные СПОТ для списка поставок](./orders-fbs#tag/fbsSupplies/operation/postV3FbsSuppliesSpotList) и [QR-коды СПОТ](./orders-fbs#tag/fbsSupplies/operation/getV3FbsSuppliesSupplyIdStickersSpot). Сейчас методы доступны только для продавцов из Кыргызстана. В дальнейшем методы будут доступны продавцам из любой страны ЕАЭС кроме РФ, следите за обновлениями.\n  1. Если поставка была отсканирована в пункте приёмки, но при этом в ней всё ещё есть неотсканированные товары, спустя определённое время необходимо доставить их повторно. Проверьте все [сборочные задания, требующие повторной отгрузки на данный момент](./orders-fbs#tag/fbsAssemblyOrders/operation/getV3SuppliesOrdersReshipment). Данные сборочные задания можно перевести в [другую активную поставку](./orders-fbs#tag/fbsSupplies/operation/patchV3SuppliesSupplyIdOrders). Сборочное задание также будет переведено в статус `confirm` — на сборке.\n\nТакже вы можете:\n  - [удалить грузоместа из поставки](./orders-fbs#tag/fbsSupplies/operation/deleteV3SuppliesSupplyIdTrbx), но только пока поставка находится на сборке\n  - получить [ID всех сборочных заданий, добавленных к поставке](./orders-fbs#tag/fbsSupplies/operation/getV3SuppliesSupplyIdOrderIds)\n  - получить информацию [обо всех поставках продавца](./orders-fbs#tag/fbsSupplies/operation/getV3Supplies) или [о конкретной поставке](./orders-fbs#tag/fbsSupplies/operation/getV3SuppliesSupplyId)\n  - [удалить поставку](./orders-fbs#tag/fbsSupplies/operation/deleteV3SuppliesSupplyId) при условии, что она активна и за ней не закреплены сборочные задания\n  - [перемещать сборочные задания между активными поставками](./orders-fbs#tag/fbsSupplies/operation/patchV3SuppliesSupplyIdOrders). Нельзя перемещать сборочное задание из уже закрытой поставки, только если оно не требует повторной отгрузки\n  - получить [QR-код поставки](./orders-fbs#tag/fbsSupplies/operation/getV3SuppliesSupplyIdBarcode) в форматах SVG, ZPL или PNG. Доступно только после передачи поставки в доставку\n",
+      "name": "fbsSupplies",
+      "x-displayName": "Поставки FBS"
     },
     {
-      "description": "<div class=\"description_auth\">\n  Для доступа к методам используйте <a href=\"./api-information#tag/authorization/Kak-sozdat-personalnyj-bazovyj-ili-testovyj-token\">токен</a> для категории <strong>Маркетплейс</strong>\n</div>\n\nС помощью методов этого раздела вы можете:\n  - получить [список складов WB, для которых требуется пропуск](./orders-fbs#tag/Propuska-FBS/paths/~1api~1v3~1passes~1offices/get)\n  - получить [список пропусков](./orders-fbs#tag/Propuska-FBS/paths/~1api~1v3~1passes/get)\n  - [создать новые пропуска](./orders-fbs#tag/Propuska-FBS/paths/~1api~1v3~1passes/post)\n  - [обновить пропуска](./orders-fbs#tag/Propuska-FBS/paths/~1api~1v3~1passes~1%7BpassId%7D/put)\n  - [удалить пропуска](./orders-fbs#tag/Propuska-FBS/paths/~1api~1v3~1passes~1%7BpassId%7D/delete)\n",
-      "name": "Пропуска FBS"
+      "description": "<div class=\"description_auth\">\n  Для доступа к методам используйте <a href=\"./api-information#tag/authorization/Kak-sozdat-personalnyj-bazovyj-ili-testovyj-token\">токен</a> для категории <strong>Маркетплейс</strong>\n</div>\n\nС помощью методов этого раздела вы можете:\n  - получить [список складов WB, для которых требуется пропуск](./orders-fbs#tag/fbsPasses/operation/getV3PassesOffices)\n  - получить [список пропусков](./orders-fbs#tag/fbsPasses/operation/getV3Passes)\n  - [создать новые пропуска](./orders-fbs#tag/fbsPasses/operation/postV3Passes)\n  - [обновить пропуска](./orders-fbs#tag/fbsPasses/operation/putV3PassesPassId)\n  - [удалить пропуска](./orders-fbs#tag/fbsPasses/operation/deleteV3PassesPassId)\n",
+      "name": "fbsPasses",
+      "x-displayName": "Пропуска FBS"
     },
     {
       "description": "<div class=\"description_auth\">\n  Для доступа к методам используйте <a href=\"./api-information#tag/authorization/Kak-sozdat-personalnyj-bazovyj-ili-testovyj-token\">токен</a> для категории <strong>Маркетплейс</strong>\n</div>\n\nС помощью методов этого раздела вы можете управлять [настройками автовозврата](https://seller.wildberries.ru/marketplace-settings) малогабаритных товаров:\n  - [получить](./orders-fbs#tag/autoreturnSettings/operation/getMarketplaceV3FbsSettingsAutoreturns) и [обновить](/openapi/orders-fbs#tag/autoreturnSettings/operation/patchMarketplaceV3FbsSettingsAutoreturns) настройки автовозврата продавца\n  - [получить](./orders-fbs#tag/autoreturnSettings/operation/postMarketplaceV3FbsSettingsAutoreturnsItems) и [обновить](/openapi/orders-fbs#tag/autoreturnSettings/operation/patchMarketplaceV3FbsSettingsAutoreturnsItems) настройки автовозврата товара\n  - получить [список предметов, которые не хранятся на складах WB](/openapi/orders-fbs#tag/autoreturnSettings/operation/getMarketplaceV3FbsSettingsAutoreturnsSubcategoriesRestricted)\n",

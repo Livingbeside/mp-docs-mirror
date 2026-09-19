@@ -3,13 +3,13 @@ title: Закрепить IMEI за сборочным заданием{{ /api/v
 api: wb-orders-fbs
 method: PUT
 path: /api/v3/orders/{orderId}/meta/imei
-operation_id: put-api-v3-orders-orderid-meta-imei
+operation_id: putV3OrdersOrderIdMetaImei
 tags:
   - fbsLabelIdentifiers
 spec_version: order
 source: "https://dev.wildberries.ru/docs/openapi/orders-fbs"
 deprecated: false
-content_sha: b6ca9fd3a0f6b9cf
+content_sha: 52b2737084d61fd5
 ---
 
 # Закрепить IMEI за сборочным заданием{{ /api/v3/orders/{orderId}/meta/imei }}
@@ -18,11 +18,11 @@ content_sha: b6ca9fd3a0f6b9cf
 
 Описание метода
 
-Метод обновляет IMEI в [идентификаторах маркировки сборочного задания](./orders-fbs#tag/fbsLabelIdentifiers/paths/~1api~1marketplace~1v3~1orders~1meta/post).
+Метод обновляет IMEI в [идентификаторах маркировки сборочного задания](./orders-fbs#tag/fbsLabelIdentifiers/operation/postV3OrdersMeta).
 
 У одного сборочного задания может быть только один IMEI. Если у устройства два IMEI — **IMEI** и **IMEI2** или **IMEI1** и **IMEI2** — укажите только **IMEI** или **IMEI1**. **IMEI2** указывать не нужно.
 
-Закрепить IMEI можно только за сборочным заданием в [статусе](./orders-fbs#tag/Sborochnye-zadaniya-FBS/paths/~1api~1v3~1orders~1status/post) `confirm` и если в [идентификаторах маркировки сборочного задания](./orders-fbs#tag/fbsLabelIdentifiers/paths/~1api~1marketplace~1v3~1orders~1meta/post) есть поле `imei`.
+Закрепить IMEI можно только за сборочным заданием в [статусе](./orders-fbs#tag/fbsAssemblyOrders/operation/postV3OrdersStatus) `confirm` и если в [идентификаторах маркировки сборочного задания](./orders-fbs#tag/fbsLabelIdentifiers/operation/postV3OrdersMeta) есть поле `imei`.
 
 Лимит запросов на один аккаунт продавца для всех методов закрепления идентификаторов маркировки FBS:
 

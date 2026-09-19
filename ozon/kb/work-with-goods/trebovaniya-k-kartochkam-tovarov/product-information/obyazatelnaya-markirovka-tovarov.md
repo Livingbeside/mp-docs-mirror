@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /work-with-goods/trebovaniya-k-kartochkam-tovarov/product-information/obyazatelnaya-markirovka-tovarov
 source: "https://seller-edu.ozon.ru/libra/work-with-goods/trebovaniya-k-kartochkam-tovarov/product-information/obyazatelnaya-markirovka-tovarov"
-updated: "2026-08-31 10:18:37"
+updated: "2026-09-18 06:43:34"
 doc_id: 716
-fetched_at: "2026-09-01T01:56:13Z"
-content_sha: b2487d6b57c70b1d
+fetched_at: "2026-09-19T01:59:04Z"
+content_sha: f04bf124cc75067e
 ---
 
 # Обязательная маркировка товаров
@@ -147,8 +147,6 @@ _Главная / Работа с товарами / Требования к к�
 **Номер партии (РНПТ)** — проверим по коду ТН ВЭД, попадает ли ваш товар под прослеживаемость. [Подробнее](https://seller-edu.ozon.ru/work-with-goods/trebovaniya-k-kartochkam-tovarov/product-information/tn-ved#%D0%BA%D0%B0%D0%BA%D0%B8%D0%B5-%D1%82%D0%BE%D0%B2%D0%B0%D1%80%D1%8B-%D0%BF%D0%BE%D0%B4%D0%BB%D0%B5%D0%B6%D0%B0%D1%82-%D0%BF%D1%80%D0%BE%D1%81%D0%BB%D0%B5%D0%B6%D0%B8%D0%B2%D0%B0%D0%B5%D0%BC%D0%BE%D1%81%D1%82%D0%B8-%D1%82%D0%BE%D0%B2%D0%B0%D1%80%D0%BE%D0%B2-%D1%80%D0%BD%D0%BF%D1%82)
 
 # Как передать коды маркировки на FBS и realFBS
-
-Временно нельзя добавить код маркировки к товарам с признаком «Нужен код маркировки». Исключение — безрецептурные лекарства и товары в заказах от юрлиц.
 
 Чтобы защитить покупателей от подделок, мы должны [печатать маркировку на чеке](http://publication.pravo.gov.ru/Document/View/0001202107090051). При сборке отправления с маркированными товарами система предложит указать код и проверит введённый код в системе «Честный знак». Если код будет недействительным или с ошибками, завершить сборку не получится.
 

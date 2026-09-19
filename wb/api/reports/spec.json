@@ -1517,6 +1517,7 @@
             },
             "chrtId": {
               "description": "ID размера для этого артикула WB",
+              "format": "uint64",
               "type": "integer"
             },
             "date": {

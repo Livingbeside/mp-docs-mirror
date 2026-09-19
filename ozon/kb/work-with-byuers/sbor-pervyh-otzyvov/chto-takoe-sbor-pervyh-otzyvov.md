@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /work-with-byuers/sbor-pervyh-otzyvov/chto-takoe-sbor-pervyh-otzyvov
 source: "https://seller-edu.ozon.ru/libra/work-with-byuers/sbor-pervyh-otzyvov/chto-takoe-sbor-pervyh-otzyvov"
-updated: "2026-08-17 12:37:39"
+updated: "2026-09-17 10:50:31"
 doc_id: 75467
-fetched_at: "2026-08-28T12:11:15Z"
-content_sha: 751b8d678ee10731
+fetched_at: "2026-09-19T01:59:04Z"
+content_sha: 4c77f4e8db119f72
 ---
 
 # Что такое сбор первых отзывов
@@ -19,7 +19,7 @@ _Главная / Работа с покупателями / Инструмен�
 | **Что такое сбор** **первых отзывов** | [Запуск сбора](https://seller-edu.ozon.ru/work-with-byuers/sbor-pervyh-otzyvov/zapusk-sbora-pervyh-otzyvov) [первых отзывов](https://seller-edu.ozon.ru/work-with-byuers/sbor-pervyh-otzyvov/zapusk-sbora-pervyh-otzyvov) | [Управление сбором](https://seller-edu.ozon.ru/work-with-byuers/sbor-pervyh-otzyvov/upravlenie-sborom-pervyh-otzyvov) [первых отзывов](https://seller-edu.ozon.ru/work-with-byuers/sbor-pervyh-otzyvov/upravlenie-sborom-pervyh-otzyvov) | [Анализ эффективности](https://seller-edu.ozon.ru/work-with-byuers/sbor-pervyh-otzyvov/analiz-effektivnosti-sbora-pervyh-otzyvov) [сбора первых отзывов](https://seller-edu.ozon.ru/work-with-byuers/sbor-pervyh-otzyvov/analiz-effektivnosti-sbora-pervyh-otzyvov) |
 | --- | --- | --- | --- |
 
-Сбор первых отзывов — это инструмент, с которым можно получить первые заказы и видеообзоры с оценкой 5 звёзд от топ-авторов. Видеообзоры помогут привлечь ещё больше покупателей и увеличить продажи.
+Сбор первых отзывов — это инструмент, с которым можно получить первые заказы и видеообзоры с оценкой 5 звёзд от топ-авторов. Видеообзоры помогут привлечь ещё больше покупателей, увеличить продажи и сместить акцент с отдельных негативных отзывов, если такие есть.
 
 Добавить товары в инструмент «Сбор первых отзывов» можно будет с 15 июля 2026 года. Для некоторых продавцов добавим товары автоматически — если вы попадёте в список таких продавцов, сообщим вам об этом дополнительно в дату запуска.
 

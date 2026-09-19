@@ -9,7 +9,7 @@ tags:
 spec_version: items
 source: "https://dev.wildberries.ru/docs/openapi/item-management"
 deprecated: false
-content_sha: 168b8beb05ef3609
+content_sha: 9414b5d5a987722e
 ---
 
 # Редактирование карточек товаров
@@ -76,7 +76,7 @@ content_sha: 168b8beb05ef3609
   - `id` — integer **обязательный**. ID характеристики
   - `value` — ? **обязательный**. Значения характеристики. Тип данных — массив строк или число — зависит от типа характеристики, см. описание поля `charcType` в методе [Характеристики предмета](./item-management#tag/categoriesSubcategoriesAndCharacteristics/operation/getV2ObjectCharcsSubjectId). Допустимое количество значений отображено в поле `maxCount` того же метода
 - `sizes` — array[object] **обязательный**. Массив размеров Для безразмерного товара всё равно нужно передавать данный массив без параметров (wbSize и techSize), но с баркодом
-  - `chrtID` — integer. ID размера для данного артикула WB Обязателен к заполнению для существующих размеров Для добавляемых размеров не указывается
+  - `chrtID` — integer<uint64>. ID размера для данного артикула WB Обязателен к заполнению для существующих размеров Для добавляемых размеров не указывается
   - `techSize` — string. Размер товара (например, XL, S, 45)
   - `wbSize` — string. Российский размер товара
   - `price` — integer. Цена товара, ₽ Указывается при добавлении размера

@@ -14,7 +14,7 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: ef64ed1588dd6762
+content_sha: daaa4f3ecbc5930f
 ---
 
 # Настройки кабинета
@@ -43,6 +43,7 @@ content_sha: ef64ed1588dd6762
     - `id` — integer<int64>. Идентификатор кабинета. {% if audience == "partner" %}Чтобы его узнать, воспользуйтесь запросом [GET v2/campaigns](../../reference/campaigns/getCampaigns.md). ℹ️ [Что такое кабинет и магазин на Маркете](https://yandex.ru/support/marketplace/account/introduction.html) {% endif %}
     - `name` — string. Название бизнеса.
   - `settings` — object. Настройки на уровне кабинета.
+    - `warehouseModel` — string (CAMPAIGN, WAREHOUSE). * `CAMPAIGN` - интерфейс складов на уровне магазинов. * `WAREHOUSE` - интерфейс единых складов на уровне кабинета.
     - `onlyDefaultPrice` — boolean. Управление ценами на товары: * `false` — можно установить цену, которая действует: * во всех магазинах кабинета — [POST v2/businesses/{businessId}/offer-prices/updates](../../reference/prices/updateBusinessPrices.md); * в конкретном магазине — [POST v2/campaigns/{campaignId}/offer-prices/updates](../../reference/prices/updatePrices.md). * `true` — можно установить только цену, которая действует во всех магазинах кабинета, — [POST v2/businesses/{businessId}/offer-prices/updates](../../reference/prices/updateBusinessPrices.md).
     - `currency` — string (RUR, USD, EUR, UAH, AUD, GBP, BYR, BYN, DKK, ISK, KZT, CAD…). Валюта [в кабинете продавца на Маркете](https://partner.market.yandex.ru/).
   - `subscriptionLevel` — string (NONE, LIGHT, MEDIUM). Уровень подписки кабинета. Подробнее о подписке для продавцов читайте [в Справке Маркета для продавцов](https://yandex.ru/support/marketplace/ru/marketing/subscription).

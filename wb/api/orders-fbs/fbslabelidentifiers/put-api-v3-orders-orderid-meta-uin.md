@@ -3,13 +3,13 @@ title: Закрепить УИН за сборочным заданием{{ /api
 api: wb-orders-fbs
 method: PUT
 path: /api/v3/orders/{orderId}/meta/uin
-operation_id: put-api-v3-orders-orderid-meta-uin
+operation_id: putV3OrdersOrderIdMetaUin
 tags:
   - fbsLabelIdentifiers
 spec_version: order
 source: "https://dev.wildberries.ru/docs/openapi/orders-fbs"
 deprecated: false
-content_sha: 806326c9ddc40261
+content_sha: 198c5e1df96f4be0
 ---
 
 # Закрепить УИН за сборочным заданием{{ /api/v3/orders/{orderId}/meta/uin }}
@@ -18,10 +18,10 @@ content_sha: 806326c9ddc40261
 
 Описание метода
 
-Метод обновляет УИН, уникальный идентификационный номер, в [идентификаторах маркировки сборочного задания](./orders-fbs#tag/fbsLabelIdentifiers/paths/~1api~1marketplace~1v3~1orders~1meta/post).
+Метод обновляет УИН, уникальный идентификационный номер, в [идентификаторах маркировки сборочного задания](./orders-fbs#tag/fbsLabelIdentifiers/operation/postV3OrdersMeta).
 У одного сборочного задания может быть только один УИН.
 
-Закрепить УИН можно только за сборочным заданием в [статусе](./orders-fbs#tag/Sborochnye-zadaniya-FBS/paths/~1api~1v3~1orders~1status/post) `confirm` и если в [идентификаторах маркировки сборочного задания](./orders-fbs#tag/fbsLabelIdentifiers/paths/~1api~1marketplace~1v3~1orders~1meta/post) есть поле `uin`.
+Закрепить УИН можно только за сборочным заданием в [статусе](./orders-fbs#tag/fbsAssemblyOrders/operation/postV3OrdersStatus) `confirm` и если в [идентификаторах маркировки сборочного задания](./orders-fbs#tag/fbsLabelIdentifiers/operation/postV3OrdersMeta) есть поле `uin`.
 
 Лимит запросов на один аккаунт продавца для всех методов закрепления идентификаторов маркировки FBS:
 

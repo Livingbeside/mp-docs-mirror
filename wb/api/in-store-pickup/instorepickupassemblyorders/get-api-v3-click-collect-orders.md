@@ -9,7 +9,7 @@ tags:
 spec_version: instorepickup
 source: "https://dev.wildberries.ru/docs/openapi/in-store-pickup"
 deprecated: false
-content_sha: 054025604dae2f03
+content_sha: 466898e3988b9bff
 ---
 
 # Получить информацию о завершённых сборочных заданиях
@@ -49,7 +49,7 @@ content_sha: 054025604dae2f03
 - `orders` — array[object]. Список сборочных заданий
   - `article` — string. Артикул продавца
   - `cargoType` — integer (1, 2, 3). Тип товара: - `1` — малогабаритный товар (МГТ) - `2` — сверхгабаритный товар (СГТ) - `3` — крупногабаритный товар (КГТ+)
-  - `chrtId` — integer. ID размера товара в системе WB
+  - `chrtId` — integer<uint64>. ID размера товара в системе WB
   - `createdAt` — string<date-time>. Дата и время создания сборочного задания
   - `price` — integer. Цена в валюте продажи с учетом всех скидок, кроме скидки по WB Кошельку, умноженная на 100. Код валюты продажи указан в поле `currencyCode`. Предоставляется в информационных целях
   - `finalPrice` — integer. Сумма к оплате покупателем в валюте продажи с учётом всех скидок, умноженная на 100. Код валюты продажи указан в поле `currencyCode`. Предоставляется в информационных целях. Используйте значение поля `finalPrice`, только если в ответе метода [POST /api/marketplace/v3/click-collect/orders/final-price](./docs/openapi/in-store-pickup#tag/inStorePickupAssemblyOrders/operation/postV3ClickCollectOrdersFinalPrice) вернулось `"data": null`. Во всех остальных случаях используйте значение поля `originalFinalPrice` из ответа указанного метода

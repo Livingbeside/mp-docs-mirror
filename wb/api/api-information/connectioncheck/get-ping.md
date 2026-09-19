@@ -9,7 +9,7 @@ tags:
 spec_version: general
 source: "https://dev.wildberries.ru/docs/openapi/api-information"
 deprecated: false
-content_sha: 5f4cf5fc36a41c4e
+content_sha: 8cdfb832b7b91195
 ---
 
 # Проверка подключения
@@ -48,7 +48,7 @@ content_sha: 5f4cf5fc36a41c4e
 
 | Период | Лимит | Интервал | Всплеск |
 | --- | --- | --- | --- |
-| 990 сек | 99 запросов | 10 сек | 99 запросов |
+| 30 сек | 3 запроса | 10 сек | 99 запросов |
 
 Лимит действует отдельно для каждого варианта метода в зависимости от домена
 

@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /fbs/ozon-logistika/otgruzka-kyruery
 source: "https://seller-edu.ozon.ru/libra/fbs/ozon-logistika/otgruzka-kyruery"
-updated: "2026-09-07 15:57:48"
+updated: "2026-09-17 11:38:33"
 doc_id: 810
-fetched_at: "2026-09-08T01:39:31Z"
-content_sha: 0521afa6de86ee44
+fetched_at: "2026-09-19T01:59:03Z"
+content_sha: 1de73aa029e30e2f
 ---
 
 # Отгрузка курьеру на FBS
@@ -185,22 +185,24 @@ _Главная / Продажа со своего склада (FBS) / Отгр
 
 Авторизованные транспортные компании и их генеральные доверенности на осуществление забора груза:
 
-[ИП Ванян Тигран Вазгенович](https://cdn.ozone.ru/s3/ozon-disk-api/Seller-edu/files/fbs/ozon-logistika/doverennost/2025/910-ip-vanyan-t-v_1761739624.pdf)
+[ИП Ванян Тигран Вазгенович](https://cdn.ozone.ru/s3/ozon-disk-api/Seller-edu/files/fbs/ozon-logistika/doverennost/506-ю_ИП_Ванян_Тигран_Вазгенович_1789555893.pdf)
 
-[ООО «Логист Сервис»](https://cdn.ozone.ru/s3/ozon-disk-api/Seller-edu/files/fbs/ozon-logistika/doverennost/2025/909-logist-service_1761739624.pdf)
+[ИП Олейников Сергей Сергеевич](https://cdn.ozone.ru/s3/ozon-disk-api/Seller-edu/files/fbs/ozon-logistika/doverennost/512-ю_ИП_Олейников_Сергей_Сергеевич_1789555910.pdf)
 
-[ООО «Мультиплейс»](https://cdn.ozone.ru/s3/ozon-disk-api/Seller-edu/files/fbs/ozon-logistika/doverennost/2025/663-multiplace_1761739626.pdf)
+[ООО «Даната»](https://cdn.ozone.ru/s3/ozon-disk-api/Seller-edu/files/fbs/ozon-logistika/doverennost/484-ю_ООО_Даната_1789555885.pdf)
 
-[ООО «ОБОЗ Диджитал»](https://cdn.ozone.ru/s3/ozon-disk-api/Seller-edu/files/fbs/ozon-logistika/doverennost/2025/911-oboz_1761739623.pdf)
+[ООО «Глобал Транс Карго»](https://cdn.ozone.ru/s3/ozon-disk-api/Seller-edu/files/fbs/ozon-logistika/doverennost/513-ю_ООО_ГЛОБАЛ_ТРАНС_КАРГО_1789555913.pdf)
 
-[ООО «Олимпия»](https://cdn.ozone.ru/s3/ozon-disk-api/Seller-edu/files/fbs/ozon-logistika/doverennost/2025/667-olimpia_1761739625.pdf)
+[ООО «Мультиплейс»](https://cdn.ozone.ru/s3/ozon-disk-api/Seller-edu/files/fbs/ozon-logistika/doverennost/509-ю_ООО_МУЛЬТИПЛЕЙС_1789555900.pdf)
 
-[ООО «Рефзаказ»](https://cdn.ozone.ru/s3/ozon-disk-api/Seller-edu/files/fbs/ozon-logistika/doverennost/2025/908-rz_1761739624.pdf)
+[ООО «Логос-ЛТД»](https://cdn.ozone.ru/s3/ozon-disk-api/Seller-edu/files/fbs/ozon-logistika/doverennost/505-ю_Логос_ЛТД_1789555889.pdf)
 
-[ООО «Сатурн»](https://cdn.ozone.ru/s3/ozon-disk-api/Seller-edu/files/fbs/ozon-logistika/doverennost/2025/907-saturn_1761739625.pdf)
+[ООО «Олимпия»](https://cdn.ozone.ru/s3/ozon-disk-api/Seller-edu/files/fbs/ozon-logistika/doverennost/515-ю_ОЛИМПИЯ_ООО_1789555916.pdf)
 
-[ООО «СДС»](https://cdn.ozone.ru/s3/ozon-disk-api/Seller-edu/files/fbs/ozon-logistika/doverennost/2025/664-sds_1761739626.pdf)
+[ООО «Пионер»](https://cdn.ozone.ru/s3/ozon-disk-api/Seller-edu/files/fbs/ozon-logistika/doverennost/511-ю_ООО_ПИОНЕР_1789555907.pdf)
 
-[ООО «ТГЛ»](https://cdn.ozone.ru/s3/ozon-disk-api/Seller-edu/files/fbs/ozon-logistika/doverennost/2025/912-tgl_1761739623.pdf)
+[ООО «СДС»](https://cdn.ozone.ru/s3/ozon-disk-api/Seller-edu/files/fbs/ozon-logistika/doverennost/510-ю_ООО_СДС_1789555904.pdf)
+
+[ООО «ТрансГарантЛогистик»](https://cdn.ozone.ru/s3/ozon-disk-api/Seller-edu/files/fbs/ozon-logistika/doverennost/507-ю_ТрансГарантЛогистик_1789555896.pdf)
 
 Если за заказами приехал курьер Ozon, то доверенность он заполнять не будет, но государственный номер его машины должен быть в списке:

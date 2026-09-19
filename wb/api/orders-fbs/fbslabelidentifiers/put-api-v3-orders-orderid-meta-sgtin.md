@@ -3,13 +3,13 @@ title: Закрепить код маркировки Честного знак�
 api: wb-orders-fbs
 method: PUT
 path: /api/v3/orders/{orderId}/meta/sgtin
-operation_id: put-api-v3-orders-orderid-meta-sgtin
+operation_id: putV3OrdersOrderIdMetaSgtin
 tags:
   - fbsLabelIdentifiers
 spec_version: order
 source: "https://dev.wildberries.ru/docs/openapi/orders-fbs"
 deprecated: false
-content_sha: f4f829b04f641c55
+content_sha: 30a1139043dec11b
 ---
 
 # Закрепить код маркировки Честного знака за сборочным заданием{{ /api/v3/orders/{orderId}/meta/sgtin }}
@@ -18,11 +18,11 @@ content_sha: f4f829b04f641c55
 
 Описание метода
 
-Метод обновляет код маркировки [Честного знака](https://честныйзнак.рф/) в идентификаторах маркировки [сборочного задания](./orders-fbs#tag/Sborochnye-zadaniya-FBS/paths/~1api~1v3~1orders/get).
+Метод обновляет код маркировки [Честного знака](https://честныйзнак.рф/) в идентификаторах маркировки [сборочного задания](./orders-fbs#tag/fbsAssemblyOrders/operation/getV3Orders).
 
-Закрепить код маркировки Честного знака можно только за сборочным заданием в [статусе](./orders-fbs#tag/Sborochnye-zadaniya-FBS/paths/~1api~1v3~1orders~1status/post) `confirm` и если в [идентификаторах маркировки сборочного задания](./orders-fbs#tag/fbsLabelIdentifiers/paths/~1api~1marketplace~1v3~1orders~1meta/post) есть поле `sgtin`.
+Закрепить код маркировки Честного знака можно только за сборочным заданием в [статусе](./orders-fbs#tag/fbsAssemblyOrders/operation/postV3OrdersStatus) `confirm` и если в [идентификаторах маркировки сборочного задания](./orders-fbs#tag/fbsLabelIdentifiers/operation/postV3OrdersMeta) есть поле `sgtin`.
 
-Получить загруженные маркировки можно в [идентификаторах маркировки сборочного задания](./orders-fbs#tag/fbsLabelIdentifiers/paths/~1api~1marketplace~1v3~1orders~1meta/post).
+Получить загруженные маркировки можно в [идентификаторах маркировки сборочного задания](./orders-fbs#tag/fbsLabelIdentifiers/operation/postV3OrdersMeta).
 
 Лимит запросов на один аккаунт продавца для всех методов закрепления идентификаторов маркировки FBS:
 

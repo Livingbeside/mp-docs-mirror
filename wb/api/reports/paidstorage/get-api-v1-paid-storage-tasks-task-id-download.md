@@ -9,7 +9,7 @@ tags:
 spec_version: reports
 source: "https://dev.wildberries.ru/docs/openapi/reports"
 deprecated: false
-content_sha: 364a9c985844a41d
+content_sha: a3e9ca28b48978ac
 ---
 
 # Получить отчёт{{ /api/v1/paid_storage/tasks/{task_id}/download }}
@@ -45,7 +45,7 @@ content_sha: 364a9c985844a41d
 - `warehouse` — string. Название склада. [На данный момент](https://dev.wildberries.ru/release-notes?id=570) может быть только `Склад WB РФ`
 - `warehouseCoef` — number. Коэффициент хранения
 - `giId` — integer. ID поставки
-- `chrtId` — integer. ID размера для этого артикула WB
+- `chrtId` — integer<uint64>. ID размера для этого артикула WB
 - `size` — string. Размер (`techSize` в карточке товара)
 - `barcode` — string. Баркод
 - `subject` — string. Предмет

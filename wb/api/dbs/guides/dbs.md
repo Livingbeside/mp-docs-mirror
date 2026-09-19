@@ -5,7 +5,7 @@ tag: DBS
 group: ""
 kind: guide
 source: "https://dev.wildberries.ru/docs/openapi/dbs"
-content_sha: d145a720c7448b94
+content_sha: 7b5fbc661038b4c4
 ---
 
 # DBS
@@ -14,4 +14,4 @@ content_sha: d145a720c7448b94
 
 Управление [сборочными заданиями](./dbs#tag/dbsAssemblyOrders) и [идентификаторами маркировки](./dbs#tag/dbsLabelIdentifiers) DBS (Delivery by Seller).
 
-Вы можете протестировать методы DBS в [песочнице](/sandbox). Также в песочнице доступны [специальные методы](/docs/openapi-other/sandbox-environment#tag/Marketplejs-DBS) для эмуляции действий пользователя
+Вы можете протестировать методы DBS в [песочнице](/sandbox). Также в песочнице доступны [специальные методы](/docs/openapi-other/sandbox-environment#tag/marketplaceDbs) для эмуляции действий пользователя

@@ -9,7 +9,7 @@ tags:
 spec_version: order
 source: "https://dev.wildberries.ru/docs/openapi/orders-fbs"
 deprecated: false
-content_sha: 96a47f2da423a3e1
+content_sha: 4068f925838cf04c
 ---
 
 # Получить настройки автовозврата товаров
@@ -35,7 +35,7 @@ content_sha: 96a47f2da423a3e1
 
 **Тело запроса** (`application/json`):
 
-- `chrtIds` — array[integer<int64>] **обязательный**. Список ID размеров товаров в системе WB
+- `chrtIds` — array[integer<uint64>] **обязательный**. Список ID размеров товаров в системе WB
 
 ## Ответы
 
@@ -43,7 +43,7 @@ content_sha: 96a47f2da423a3e1
 
 - `results` — array[object] **обязательный**
   - `success` — boolean. - `true` — настройки автовозврата товара успешно получены
-  - `chrtId` — integer **обязательный**. ID размера товара в системе WB
+  - `chrtId` — integer<uint64> **обязательный**. ID размера товара в системе WB
   - `type` — string (auto, byWarehouse, byPickupPoint, byCourier). Куда будет возвращён товар: - `auto` — место возврата определяется автоматически - `byWarehouse` — на склад WB - `byPickupPoint` — на пункт выдачи заказов - `byCourier` — продавцу курьером. Всегда для товаров тех [предметов](/openapi/orders-fbs#tag/autoreturnSettings/operation/getMarketplaceV3FbsSettingsAutoreturnsSubcategoriesRestricted), которые автоматически возвращаются в ПВЗ
   - `changeable` — boolean. - `true` — настройки автовозврата товара можно изменить
   - `error` — array[object]. Детали ошибки

@@ -9,7 +9,7 @@ tags:
 spec_version: finances
 source: "https://dev.wildberries.ru/docs/openapi/documents-and-accounting"
 deprecated: false
-content_sha: 643f1cf9bbaf367b
+content_sha: 960d5dfa698df64e
 ---
 
 # Детализации к отчётам реализации за период
@@ -140,7 +140,7 @@ content_sha: 643f1cf9bbaf367b
 - `paidWithSocialCertificate` — boolean **обязательный**. Оплата социальным сертификатом
 - `warehouseLogisticsCoeff` — number **обязательный**. Коэффициент доставки
 - `orderUid` — string **обязательный**. ID корзины заказа — транзакции. Заказы в одной корзине покупателя будут иметь одинаковый `orderUid`
-- `srid` — string **обязательный**. ID заказа. В ответах методов сборочных заданий [FBS](./orders-fbs#tag/Sborochnye-zadaniya-FBS), [DBW](./orders-dbw#tag/dbwAssemblyOrders), [DBS](./dbs#tag/dbsAssemblyOrders) и [Самовывоз](./in-store-pickup#tag/inStorePickupAssemblyOrders) `srid` равен `rid`
+- `srid` — string **обязательный**. ID заказа. В ответах методов сборочных заданий [FBS](./orders-fbs#tag/fbsAssemblyOrders), [DBW](./orders-dbw#tag/dbwAssemblyOrders), [DBS](./dbs#tag/dbsAssemblyOrders) и [Самовывоз](./in-store-pickup#tag/inStorePickupAssemblyOrders) `srid` равен `rid`
 
 **204** — Нет данных
 

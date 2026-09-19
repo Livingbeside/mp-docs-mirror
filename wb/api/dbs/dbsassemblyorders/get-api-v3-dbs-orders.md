@@ -9,7 +9,7 @@ tags:
 spec_version: dbs
 source: "https://dev.wildberries.ru/docs/openapi/dbs"
 deprecated: false
-content_sha: ebc27a600b75d846
+content_sha: 111baea3b4104058
 ---
 
 # Получить информацию о завершенных сборочных заданиях
@@ -64,7 +64,7 @@ content_sha: ebc27a600b75d846
   - `id` — integer<int64>. ID сборочного задания
   - `warehouseId` — integer. ID склада продавца, на который поступило сборочное задание
   - `nmId` — integer. Артикул WB
-  - `chrtId` — integer. ID размера товара в системе WB
+  - `chrtId` — integer<uint64>. ID размера товара в системе WB
   - `scanPrice` — integer. Цена приёмки заказов в ПВЗ, в копейках. Отображается только для заказов в ПВЗ
   - `price` — integer. Цена в валюте продажи с учетом всех скидок, кроме скидки по WB Кошельку, умноженная на 100. Код валюты продажи указан в поле `currencyCode`. Предоставляется в информационных целях
   - `convertedPrice` — integer. Цена в валюте страны продавца с учетом всех скидок, кроме скидки по WB Кошельку, умноженная на 100. Предоставляется в информационных целях

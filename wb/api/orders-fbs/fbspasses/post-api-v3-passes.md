@@ -1,0 +1,92 @@
+---
+title: Создать пропуск
+api: wb-orders-fbs
+method: POST
+path: /api/v3/passes
+operation_id: postV3Passes
+tags:
+  - fbsPasses
+spec_version: order
+source: "https://dev.wildberries.ru/docs/openapi/orders-fbs"
+deprecated: false
+content_sha: 4030600a5c219b99
+---
+
+# Создать пропуск
+
+`POST /api/v3/passes`
+
+Описание метода
+
+Метод создаёт [пропуск продавца](./orders-fbs#tag/fbsPasses/operation/getV3Passes) с привязкой к складу WB.
+
+Пропуск действует 48 часов со времени создания.
+
+ Максимум 1 запрос в 10 минут на один аккаунт продавца.
+
+ Один запрос с кодами ответов 4XX учитывается как 10 запросов.
+
+ 
+
+ В песочнице — максимум 1 запрос в секунду суммарно для всех методов Маркетплейса.
+
+## Запрос
+
+**Тело запроса** (`application/json`):
+
+- `firstName` — string **обязательный**. Имя водителя
+- `lastName` — string **обязательный**. Фамилия водителя
+- `carModel` — string **обязательный**. Марка машины
+- `carNumber` — string **обязательный**. Номер машины
+- `officeId` — integer<int64> **обязательный**. ID склада
+
+## Ответы
+
+**201** — Создано
+
+- `id` — integer. ID пропуска продавца
+
+**400** — Неправильный запрос
+
+- `code` — string. Код ошибки
+- `message` — string. Описание ошибки
+- `data` — object. Дополнительные данные ошибки
+
+**401** — Не авторизован
+
+- `title` — string. Заголовок ошибки
+- `detail` — string. Детали ошибки
+- `code` — string. Внутренний код ошибки
+- `requestId` — string. Уникальный ID запроса
+- `origin` — string. ID внутреннего сервиса WB
+- `status` — number. HTTP статус-код
+- `statusText` — string. Расшифровка HTTP статус-кода
+- `timestamp` — string<date-time>. Дата и время запроса
+
+**402** — Требуется платёж
+
+- `title` — string. Заголовок ошибки
+- `detail` — string. Детали ошибки. Ошибка возвращается только сервисам из [Каталога решений для бизнеса](/business-solutions)
+
+**403** — Доступ запрещён
+
+- `code` — string. Код ошибки
+- `message` — string. Описание ошибки
+- `data` — object. Дополнительные данные ошибки
+
+**404** — Не найдено
+
+- `code` — string. Код ошибки
+- `message` — string. Описание ошибки
+- `data` — object. Дополнительные данные ошибки
+
+**429** — Слишком много запросов
+
+- `title` — string. Заголовок ошибки
+- `detail` — string. Детали ошибки
+- `code` — string. Внутренний код ошибки
+- `requestId` — string. Уникальный ID запроса
+- `origin` — string. ID внутреннего сервиса WB
+- `status` — number. HTTP статус-код
+- `statusText` — string. Расшифровка HTTP статус-кода
+- `timestamp` — string<date-time>. Дата и время запроса

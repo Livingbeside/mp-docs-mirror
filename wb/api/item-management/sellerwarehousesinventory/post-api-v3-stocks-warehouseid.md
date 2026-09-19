@@ -9,7 +9,7 @@ tags:
 spec_version: items
 source: "https://dev.wildberries.ru/docs/openapi/item-management"
 deprecated: false
-content_sha: d187e95fbacd683d
+content_sha: 412ba20f18ba0447
 ---
 
 # Получить остатки товаров{{ /api/v3/stocks/{warehouseId} }}
@@ -40,14 +40,14 @@ content_sha: d187e95fbacd683d
 
 **Тело запроса** (`application/json`):
 
-- `chrtIds` — array[integer] **обязательный**. Массив ID размеров товаров
+- `chrtIds` — array[integer<uint64>] **обязательный**. Массив ID размеров товаров
 
 ## Ответы
 
 **200** — Успешно
 
 - `stocks` — array[object]
-  - `chrtId` — integer. ID размера товара
+  - `chrtId` — integer<uint64>. ID размера товара
   - `amount` — integer. Остаток
 
 **400** — Неправильный запрос

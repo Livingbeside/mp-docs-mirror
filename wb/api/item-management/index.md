@@ -4,7 +4,7 @@ api: wb-item-management
 spec_version: items
 operations: 52
 source: "https://dev.wildberries.ru/docs/openapi/item-management"
-content_sha: e9d694d38c49fcd3
+content_sha: c8216faf01e6849b
 ---
 
 # Работа с товарами
@@ -18,7 +18,7 @@ content_sha: e9d694d38c49fcd3
  - устанавливать [цены и скидки](./item-management#tag/pricesAndDiscounts)
  - управлять [остатками товаров](./item-management#tag/sellerWarehousesInventory) и [складами](./item-management#tag/sellerWarehouses), если вы работаете по модели продаж со склада продавца
 
-Вы можете протестировать методы работы с товарами в [песочнице](/sandbox). Также в песочнице доступны [специальные методы](/docs/openapi-other/sandbox-environment#tag/Rabota-s-tovarami) для управления карточками товаров
+Вы можете протестировать методы работы с товарами в [песочнице](/sandbox). Также в песочнице доступны [специальные методы](/docs/openapi-other/sandbox-environment#tag/itemManagement) для управления карточками товаров
 
  Узнать, как использовать методы в бизнес-кейсах, можно в [инструкции](/knowledge-base/articles/019d49a4-1320-71bb-9dac-8ba07e7177ce/rabota-s-tovarami) по работе с товарами
 

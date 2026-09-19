@@ -9,7 +9,7 @@ tags:
 spec_version: analytics
 source: "https://dev.wildberries.ru/docs/openapi/analytics"
 deprecated: false
-content_sha: 9fa014a76559ac36
+content_sha: eb3121d53cc76443
 ---
 
 # Остатки на складах продавца
@@ -39,7 +39,7 @@ content_sha: 9fa014a76559ac36
 **Тело запроса** (`application/json`):
 
 - `nmIds` — array[integer<int64>]. Артикулы WB
-- `chrtIds` — array[integer<int64>]. ID размеров. Используется только для указанных в массиве `nmIds` артикулов
+- `chrtIds` — array[integer<uint64>]. ID размеров. Используется только для указанных в массиве `nmIds` артикулов
 - `limit` — integer<uint32>. Количество строк в ответе По умолчанию: `250000`.
 - `offset` — integer<uint32>. Сколько элементов пропустить. Например, для значения `10` ответ начнётся с 11 элемента По умолчанию: `0`.
 
@@ -50,7 +50,7 @@ content_sha: 9fa014a76559ac36
 - `data` — object **обязательный**. Текущие остатки товаров на складах продавца
   - `items` — array[object] **обязательный**. Остатки товаров на складах продавца по размерам
     - `nmId` — integer<int64> **обязательный**. Артикул WB
-    - `chrtId` — integer<int64> **обязательный**. ID размера
+    - `chrtId` — integer<uint64> **обязательный**. ID размера
     - `warehouseId` — integer<int64> **обязательный**. ID склада
     - `warehouseName` — string **обязательный**. Название склада
     - `regionName` — string **обязательный**. Регион отгрузки

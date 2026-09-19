@@ -9,7 +9,7 @@ tags:
 spec_version: analytics
 source: "https://dev.wildberries.ru/docs/openapi/analytics"
 deprecated: false
-content_sha: 900f935d54e3e900
+content_sha: b84974d5cd94650f
 ---
 
 # Получить отчёт
@@ -68,7 +68,7 @@ content_sha: 900f935d54e3e900
   - `currency` — string **обязательный**. Валюта отчёта
   - `orders` — array[object] **обязательный**. Заказы
     - `nmId` — integer<int64> **обязательный**. Артикул WB
-    - `chrtId` — integer<int64> **обязательный**. ID размера
+    - `chrtId` — integer<uint64> **обязательный**. ID размера
     - `srid` — string **обязательный**. ID заказа
     - `createdAt` — string<date-time> **обязательный**. Дата и время оформления заказа
     - `updatedAt` — string<date-time> **обязательный**. Дата и время текущего статуса. При `"status":"created"` возвращается значение поля `createdAt`

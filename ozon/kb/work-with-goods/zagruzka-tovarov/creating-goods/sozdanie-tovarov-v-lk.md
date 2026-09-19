@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /work-with-goods/zagruzka-tovarov/creating-goods/sozdanie-tovarov-v-lk
 source: "https://seller-edu.ozon.ru/libra/work-with-goods/zagruzka-tovarov/creating-goods/sozdanie-tovarov-v-lk"
-updated: "2026-09-07 12:46:37"
+updated: "2026-09-16 11:27:30"
 doc_id: 9342
-fetched_at: "2026-09-08T01:39:32Z"
-content_sha: 98ce64ef1c448fd0
+fetched_at: "2026-09-19T01:59:04Z"
+content_sha: f0370d1c5bb8bc69
 ---
 
 # Создание и редактирование товаров в личном кабинете
@@ -79,7 +79,7 @@ _Главная / Работа с товарами / Создание и ред�
 
 Чтобы выделить товар среди конкурентов, загрузите другие виды медиа:
 
-[До 30 фото](/work-with-goods/zagruzka-tovarov/zagruzka-media/foto) — 1 главное фото и 29 дополнительных.
+[До 50 фото](/work-with-goods/zagruzka-tovarov/zagruzka-media/foto) — 1 главное фото и 49 дополнительных.
 
 [Видеообложку](/work-with-goods/zagruzka-tovarov/zagruzka-media/videooblozhka) — короткое видео вместо главного фото в карточке. Можете [загрузить свой ролик](/work-with-goods/zagruzka-tovarov/zagruzka-media/videooblozhka#%D0%BA%D0%B0%D0%BA-%D0%B7%D0%B0%D0%B3%D1%80%D1%83%D0%B7%D0%B8%D1%82%D1%8C-%D0%B2%D0%B8%D0%B4%D0%B5%D0%BE%D0%BE%D0%B1%D0%BB%D0%BE%D0%B6%D0%BA%D1%83-%D0%B2-%D0%BA%D0%B0%D1%80%D1%82%D0%BE%D1%87%D0%BA%D1%83-%D1%82%D0%BE%D0%B2%D0%B0%D1%80%D0%B0) или [сгенерировать его из фото](/work-with-goods/zagruzka-tovarov/zagruzka-media/videooblozhka#%D0%BA%D0%B0%D0%BA-%D1%81%D0%BE%D0%B7%D0%B4%D0%B0%D1%82%D1%8C-%D0%B2%D0%B8%D0%B4%D0%B5%D0%BE%D0%BE%D0%B1%D0%BB%D0%BE%D0%B6%D0%BA%D1%83-%D0%B8%D0%B7-%D1%84%D0%BE%D1%82%D0%BE).
 

@@ -3200,6 +3200,7 @@
                   },
                   "chrtId": {
                     "description": "ID размера товара",
+                    "format": "uint64",
                     "type": "integer"
                   },
                   "sku": {
@@ -3994,7 +3995,7 @@
     }
   },
   "info": {
-    "description": "<div class=\"api-block\">\n\nС помощью методов этого раздела вы можете:\n  - [создавать](./item-management#tag/listingItems) и [редактировать](./item-management#tag/listings) карточки товаров\n  - получать [категории, предметы, характеристики и бренды товаров](./item-management#tag/categoriesSubcategoriesAndCharacteristics)\n  - загружать [медиафайлы](./item-management#tag/mediaFiles) в карточки товаров\n  - настраивать [ярлыки](./item-management#tag/labels) для поиска товаров\n  - работать с [рекомендациями](./item-management#tag/recommendations) для товаров\n  - устанавливать [цены и скидки](./item-management#tag/pricesAndDiscounts)\n  - управлять [остатками товаров](./item-management#tag/sellerWarehousesInventory) и [складами](./item-management#tag/sellerWarehouses), если вы работаете по модели продаж со склада продавца\n\nВы можете протестировать методы работы с товарами в [песочнице](/sandbox). Также в песочнице доступны [специальные методы](/docs/openapi-other/sandbox-environment#tag/Rabota-s-tovarami) для управления карточками товаров\n\n</div>\n\n\n<div class=\"description_ref\">\n  Узнать, как использовать методы в бизнес-кейсах, можно в <a href=\"/knowledge-base/articles/019d49a4-1320-71bb-9dac-8ba07e7177ce/rabota-s-tovarami\">инструкции</a> по <strong>работе с товарами</strong>\n</div>\n\n",
+    "description": "<div class=\"api-block\">\n\nС помощью методов этого раздела вы можете:\n  - [создавать](./item-management#tag/listingItems) и [редактировать](./item-management#tag/listings) карточки товаров\n  - получать [категории, предметы, характеристики и бренды товаров](./item-management#tag/categoriesSubcategoriesAndCharacteristics)\n  - загружать [медиафайлы](./item-management#tag/mediaFiles) в карточки товаров\n  - настраивать [ярлыки](./item-management#tag/labels) для поиска товаров\n  - работать с [рекомендациями](./item-management#tag/recommendations) для товаров\n  - устанавливать [цены и скидки](./item-management#tag/pricesAndDiscounts)\n  - управлять [остатками товаров](./item-management#tag/sellerWarehousesInventory) и [складами](./item-management#tag/sellerWarehouses), если вы работаете по модели продаж со склада продавца\n\nВы можете протестировать методы работы с товарами в [песочнице](/sandbox). Также в песочнице доступны [специальные методы](/docs/openapi-other/sandbox-environment#tag/itemManagement) для управления карточками товаров\n\n</div>\n\n\n<div class=\"description_ref\">\n  Узнать, как использовать методы в бизнес-кейсах, можно в <a href=\"/knowledge-base/articles/019d49a4-1320-71bb-9dac-8ba07e7177ce/rabota-s-tovarami\">инструкции</a> по <strong>работе с товарами</strong>\n</div>\n\n",
     "title": "Работа с товарами",
     "version": "items",
     "x-file-name": "items"
@@ -5773,6 +5774,7 @@
                     "description": "Массив ID размеров товаров",
                     "items": {
                       "example": 123456789,
+                      "format": "uint64",
                       "nullable": false,
                       "type": "integer"
                     },
@@ -5917,6 +5919,7 @@
                     "description": "Массив ID размеров товаров",
                     "items": {
                       "example": 12345678,
+                      "format": "uint64",
                       "type": "integer"
                     },
                     "maxItems": 1000,
@@ -5950,6 +5953,7 @@
                           "chrtId": {
                             "description": "ID размера товара",
                             "example": 12345678,
+                            "format": "uint64",
                             "type": "integer"
                           }
                         },
@@ -6065,6 +6069,7 @@
                         "chrtId": {
                           "description": "ID размера товара",
                           "example": 12345678,
+                          "format": "uint64",
                           "type": "integer"
                         }
                       },
@@ -7556,6 +7561,7 @@
                         "properties": {
                           "chrtID": {
                             "description": "ID размера для данного артикула WB<br>\nОбязателен к заполнению для существующих размеров<br>\nДля добавляемых размеров не указывается\n",
+                            "format": "uint64",
                             "type": "integer"
                           },
                           "price": {
@@ -9668,7 +9674,7 @@
                               "properties": {
                                 "chrtID": {
                                   "description": "Числовой ID размера для данного артикула WB",
-                                  "format": "int64",
+                                  "format": "uint64",
                                   "type": "integer"
                                 },
                                 "skus": {
@@ -10095,6 +10101,7 @@
                               "properties": {
                                 "chrtID": {
                                   "description": "ID размера",
+                                  "format": "uint64",
                                   "type": "integer"
                                 },
                                 "skus": {
@@ -11580,7 +11587,7 @@
   ],
   "tags": [
     {
-      "description": "<div class=\"api-description\">\n\n<div class=\"api-block\">\n\nС помощью методов этого раздела вы можете:\n  - [создавать](./item-management#tag/listingItems) и [редактировать](./item-management#tag/listings) карточки товаров\n  - получать [категории, предметы, характеристики и бренды товаров](./item-management#tag/categoriesSubcategoriesAndCharacteristics)\n  - загружать [медиафайлы](./item-management#tag/mediaFiles) в карточки товаров\n  - настраивать [ярлыки](./item-management#tag/labels) для поиска товаров\n  - работать с [рекомендациями](./item-management#tag/recommendations) для товаров\n  - устанавливать [цены и скидки](./item-management#tag/pricesAndDiscounts)\n  - управлять [остатками товаров](./item-management#tag/sellerWarehousesInventory) и [складами](./item-management#tag/sellerWarehouses), если вы работаете по модели продаж со склада продавца\n\nВы можете протестировать методы работы с товарами в [песочнице](/sandbox). Также в песочнице доступны [специальные методы](/docs/openapi-other/sandbox-environment#tag/Rabota-s-tovarami) для управления карточками товаров\n\n</div>\n\n\n<div class=\"description_ref\">\n  Узнать, как использовать методы в бизнес-кейсах, можно в <a href=\"/knowledge-base/articles/019d49a4-1320-71bb-9dac-8ba07e7177ce/rabota-s-tovarami\">инструкции</a> по <strong>работе с товарами</strong>\n</div>\n\n\n\n</div>",
+      "description": "<div class=\"api-description\">\n\n<div class=\"api-block\">\n\nС помощью методов этого раздела вы можете:\n  - [создавать](./item-management#tag/listingItems) и [редактировать](./item-management#tag/listings) карточки товаров\n  - получать [категории, предметы, характеристики и бренды товаров](./item-management#tag/categoriesSubcategoriesAndCharacteristics)\n  - загружать [медиафайлы](./item-management#tag/mediaFiles) в карточки товаров\n  - настраивать [ярлыки](./item-management#tag/labels) для поиска товаров\n  - работать с [рекомендациями](./item-management#tag/recommendations) для товаров\n  - устанавливать [цены и скидки](./item-management#tag/pricesAndDiscounts)\n  - управлять [остатками товаров](./item-management#tag/sellerWarehousesInventory) и [складами](./item-management#tag/sellerWarehouses), если вы работаете по модели продаж со склада продавца\n\nВы можете протестировать методы работы с товарами в [песочнице](/sandbox). Также в песочнице доступны [специальные методы](/docs/openapi-other/sandbox-environment#tag/itemManagement) для управления карточками товаров\n\n</div>\n\n\n<div class=\"description_ref\">\n  Узнать, как использовать методы в бизнес-кейсах, можно в <a href=\"/knowledge-base/articles/019d49a4-1320-71bb-9dac-8ba07e7177ce/rabota-s-tovarami\">инструкции</a> по <strong>работе с товарами</strong>\n</div>\n\n\n\n</div>",
       "name": "Работа с товарами",
       "x-traitTag": true
     },

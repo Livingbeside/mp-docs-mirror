@@ -4,8 +4,8 @@ api: wildberries
 kind: changelog
 source: "https://dev.wildberries.ru/release-notes"
 window: последние записи, страница отдаёт не всю историю
-fetched_at: "2026-09-18T02:23:26Z"
-content_sha: a2a2aa785409cee7
+fetched_at: "2026-09-19T02:02:00Z"
+content_sha: 0b9a31442b5b8846
 ---
 
 # Журнал изменений WB API
@@ -218,7 +218,7 @@ content_sha: a2a2aa785409cee7
 
 Изменения в Поставках FBS
 
-Обновили описание метода [POST /api/v3/supplies/{supplyId}/trbx](./docs/openapi/orders-fbs#tag/Postavki-FBS/paths/~1api~1v3~1supplies~1%7BsupplyId%7D~1trbx/post) — Добавить грузоместа к поставке в соответствии с [инструкцией](https://seller.wildberries.ru/instructions/ru/ru/material/step-three-b-fbs-shipment-delivery-to-pick-up-point?goBackOption=prevRoute&categoryId=48c727fd-ad27-45f5-a0fb-3e62e9b853e8) на портале продавца:
+Обновили описание метода [POST /api/v3/supplies/{supplyId}/trbx](./docs/openapi/orders-fbs#tag/fbsSupplies/operation/postV3SuppliesSupplyIdTrbx) — Добавить грузоместа к поставке в соответствии с [инструкцией](https://seller.wildberries.ru/instructions/ru/ru/material/step-three-b-fbs-shipment-delivery-to-pick-up-point?goBackOption=prevRoute&categoryId=48c727fd-ad27-45f5-a0fb-3e62e9b853e8) на портале продавца:
 
 В одном грузоместе может быть несколько заказов. Например, если в поставке 10 заказов, распределите их по коробам: система позволит создать не больше 5 грузомест. Для 20 заказов — не больше 10 грузомест, для 100 — не больше 50.
 
@@ -236,15 +236,15 @@ content_sha: a2a2aa785409cee7
 
 С помощью новых методов вы можете:
 
-- Получать список стран ОКСМ — [GET /api/marketplace/v3/fbs/dictionaries/countries/oksm](/docs/openapi/orders-fbs#tag/Postavki-FBS/operation/getV3FbsDictionariesCountriesOksm)
-- Добавлять данные СПОТ в поставку — [PUT /api/marketplace/v3/fbs/supplies/{supplyId}/spot](/docs/openapi/orders-fbs#tag/Postavki-FBS/operation/putV3FbsSuppliesSupplyIdSpot)
-- Получать данные СПОТ для списка поставок — [POST /api/marketplace/v3/fbs/supplies/spot/list](/docs/openapi/orders-fbs#tag/Postavki-FBS/operation/postV3FbsSuppliesSpotList)
-- Получать сформированные QR-коды СПОТ — [GET /api/marketplace/v3/fbs/supplies/{supplyId}/stickers/spot](/docs/openapi/orders-fbs#tag/Postavki-FBS/operation/getV3FbsSuppliesSupplyIdStickersSpot)
+- Получать список стран ОКСМ — [GET /api/marketplace/v3/fbs/dictionaries/countries/oksm](/docs/openapi/orders-fbs#tag/fbsSupplies/operation/getV3FbsDictionariesCountriesOksm)
+- Добавлять данные СПОТ в поставку — [PUT /api/marketplace/v3/fbs/supplies/{supplyId}/spot](/docs/openapi/orders-fbs#tag/fbsSupplies/operation/putV3FbsSuppliesSupplyIdSpot)
+- Получать данные СПОТ для списка поставок — [POST /api/marketplace/v3/fbs/supplies/spot/list](/docs/openapi/orders-fbs#tag/fbsSupplies/operation/postV3FbsSuppliesSpotList)
+- Получать сформированные QR-коды СПОТ — [GET /api/marketplace/v3/fbs/supplies/{supplyId}/stickers/spot](/docs/openapi/orders-fbs#tag/fbsSupplies/operation/getV3FbsSuppliesSupplyIdStickersSpot)
 
 Также добавили поле `spotAvailable` — доступен ли СПОТ для данной поставки — в методы:
 
-- Получить список поставок — [GET /api/v3/supplies](/docs/openapi/orders-fbs#tag/Postavki-FBS/paths/~1api~1v3~1supplies/get)
-- Получить информацию о поставке — [GET /api/v3/supplies/{supplyId}](/docs/openapi/orders-fbs#tag/Postavki-FBS/paths/~1api~1v3~1supplies~1%7BsupplyId%7D/get)
+- Получить список поставок — [GET /api/v3/supplies](/docs/openapi/orders-fbs#tag/fbsSupplies/operation/getV3Supplies)
+- Получить информацию о поставке — [GET /api/v3/supplies/{supplyId}](/docs/openapi/orders-fbs#tag/fbsSupplies/operation/getV3SuppliesSupplyId)
 
 Сейчас методы доступны только для продавцов из Кыргызстана. В дальнейшем методы будут доступны продавцам из любой страны ЕАЭС кроме РФ, следите за обновлениями.
 
@@ -265,12 +265,12 @@ content_sha: a2a2aa785409cee7
 
 С **1 сентября** с помощью WB API продавцы из РФ смогут указывать параметры отгрузки поставок в РФ. Для этого добавили методы:
 
-- Получить список мест отгрузки поставок — [GET /api/marketplace/v3/fbs/shipping-points](/docs/openapi/orders-fbs#tag/Postavki-FBS/operation/getV3FbsShippingPoints)
-- Установить параметры отгрузки поставок — [PATCH /api/marketplace/v3/fbs/supplies/shipping-method](/docs/openapi/orders-fbs#tag/Postavki-FBS/operation/patchV3FbsSuppliesShippingMethod)
+- Получить список мест отгрузки поставок — [GET /api/marketplace/v3/fbs/shipping-points](/docs/openapi/orders-fbs#tag/fbsSupplies/operation/getV3FbsShippingPoints)
+- Установить параметры отгрузки поставок — [PATCH /api/marketplace/v3/fbs/supplies/shipping-method](/docs/openapi/orders-fbs#tag/fbsSupplies/operation/patchV3FbsSuppliesShippingMethod)
 
-Для доставки транспортной компанией можно будет указывать ID ЭТрН — электронной транспортной накладной. Чтобы добавить ID ЭТрН в поставку, нужно будет использовать метод [PATCH /api/marketplace/v3/fbs/supplies/waybill](/docs/openapi/orders-fbs#tag/Postavki-FBS/operation/patchV3FbsSuppliesWaybill). Пока метод находится в доработке, о его доступности сообщим дополнительно.
+Для доставки транспортной компанией можно будет указывать ID ЭТрН — электронной транспортной накладной. Чтобы добавить ID ЭТрН в поставку, нужно будет использовать метод [PATCH /api/marketplace/v3/fbs/supplies/waybill](/docs/openapi/orders-fbs#tag/fbsSupplies/operation/patchV3FbsSuppliesWaybill). Пока метод находится в доработке, о его доступности сообщим дополнительно.
 
-С **1 октября** добавление параметров отгрузки и ID ЭТрН станет обязательным. Без этого нельзя будет перевести поставку в доставку — вы получите ошибку `409` в методе [PATCH /api/v3/supplies/ {supplyId} /deliver](/docs/openapi/orders-fbs#tag/Postavki-FBS/paths/~1api~1v3~1supplies~1%7BsupplyId%7D~1deliver/patch).
+С **1 октября** добавление параметров отгрузки и ID ЭТрН станет обязательным. Без этого нельзя будет перевести поставку в доставку — вы получите ошибку `409` в методе [PATCH /api/v3/supplies/ {supplyId} /deliver](/docs/openapi/orders-fbs#tag/fbsSupplies/operation/patchV3SuppliesSupplyIdDeliver).
 
 Новое
 
@@ -405,19 +405,19 @@ DBS
 
 Изменения в Заказах FBS
 
-С **18 августа** добавить номер декларации на товары (ДТ) можно будет только к сборочным заданиям в [статусе](https://dev.wildberries.ru/docs/openapi/orders-fbs/#tag/Sborochnye-zadaniya-FBS/paths/~1api~1v3~1orders~1status/post) `confirm`.
+С **18 августа** добавить номер декларации на товары (ДТ) можно будет только к сборочным заданиям в [статусе](https://dev.wildberries.ru/docs/openapi/orders-fbs/#tag/fbsAssemblyOrders/operation/postV3OrdersStatus) `confirm`.
 
 Также с **18 августа** продавцам из Армении будет обязательно указывать номер ДТ для товаров, произведённых вне ЕАЭС, если заказ из Армении доставляется в РФ.
 
-Чтобы проверить, обязательно ли закреплять номер ДТ за сборочным заданием, используйте метод [GET /api/v3/orders/new](/docs/openapi/orders-fbs#tag/Sborochnye-zadaniya-FBS/paths/~1api~1v3~1orders~1new/get). Обязательные идентификаторы маркировки указаны в поле `requiredMeta`.
+Чтобы проверить, обязательно ли закреплять номер ДТ за сборочным заданием, используйте метод [GET /api/v3/orders/new](/docs/openapi/orders-fbs#tag/fbsAssemblyOrders/operation/getV3OrdersNew). Обязательные идентификаторы маркировки указаны в поле `requiredMeta`.
 
-Чтобы добавить номер ДТ к сборочному заданию, передайте его в запросе метода [PUT /api/marketplace/v3/orders/{orderId}/meta/customs-declaration](/docs/openapi/orders-fbs#tag/fbsLabelIdentifiers/paths/~1api~1marketplace~1v3~1orders~1%7BorderId%7D~1meta~1customs-declaration/put) в параметре `customsDeclaration`.
+Чтобы добавить номер ДТ к сборочному заданию, передайте его в запросе метода [PUT /api/marketplace/v3/orders/{orderId}/meta/customs-declaration](/docs/openapi/orders-fbs#tag/fbsLabelIdentifiers/operation/putV3OrdersOrderIdMetaCustomsDeclaration) в параметре `customsDeclaration`.
 
-Без обязательного номера ДТ невозможно получить стикеры сборочных заданий методом [POST /api/v3/orders/stickers](/docs/openapi/orders-fbs#tag/Sborochnye-zadaniya-FBS/paths/~1api~1v3~1orders~1stickers/post) — если хотя бы для одного сборочного не будет указан обязательный номер ДТ, вы получите ошибку `409` `CustomsDeclarationIsRequired`.
+Без обязательного номера ДТ невозможно получить стикеры сборочных заданий методом [POST /api/v3/orders/stickers](/docs/openapi/orders-fbs#tag/fbsAssemblyOrders/operation/postV3OrdersStickers) — если хотя бы для одного сборочного не будет указан обязательный номер ДТ, вы получите ошибку `409` `CustomsDeclarationIsRequired`.
 
-Также, если к сборочному заданию не добавлен обязательный номер ДТ, поставку с этим сборочным заданием невозможно перевести в доставку. В ответе метода [PATCH /api/v3/supplies/{supplyId}/deliver](/docs/openapi/orders-fbs#tag/Postavki-FBS/paths/~1api~1v3~1supplies~1%7BsupplyId%7D~1deliver/patch) вы получите ошибку `409` `MetaValidationFail`, при этом в поле `decision` для `customsDeclaration` вернётся значение `required`.
+Также, если к сборочному заданию не добавлен обязательный номер ДТ, поставку с этим сборочным заданием невозможно перевести в доставку. В ответе метода [PATCH /api/v3/supplies/{supplyId}/deliver](/docs/openapi/orders-fbs#tag/fbsSupplies/operation/patchV3SuppliesSupplyIdDeliver) вы получите ошибку `409` `MetaValidationFail`, при этом в поле `decision` для `customsDeclaration` вернётся значение `required`.
 
-Чтобы проверить, добавлен ли обязательный номер ДТ к сборочному заданию, до перевода поставки в доставку, используйте метод [POST /api/marketplace/v3/orders/meta](/docs/openapi/orders-fbs/#tag/fbsLabelIdentifiers/paths/~1api~1marketplace~1v3~1orders~1meta/post). Перевести поставку в доставку можно со статусами `filled` или `optional` в поле `decision` для `customsDeclaration`.
+Чтобы проверить, добавлен ли обязательный номер ДТ к сборочному заданию, до перевода поставки в доставку, используйте метод [POST /api/marketplace/v3/orders/meta](/docs/openapi/orders-fbs/#tag/fbsLabelIdentifiers/operation/postV3OrdersMeta). Перевести поставку в доставку можно со статусами `filled` или `optional` в поле `decision` для `customsDeclaration`.
 
 Новое
 

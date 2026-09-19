@@ -3,13 +3,13 @@ title: Удалить идентификаторы маркировки сбор
 api: wb-orders-fbs
 method: DELETE
 path: /api/v3/orders/{orderId}/meta
-operation_id: delete-api-v3-orders-orderid-meta
+operation_id: deleteV3OrdersOrderIdMeta
 tags:
   - fbsLabelIdentifiers
 spec_version: order
 source: "https://dev.wildberries.ru/docs/openapi/orders-fbs"
 deprecated: false
-content_sha: 2796baa959cd4bf3
+content_sha: 4684c84351968c67
 ---
 
 # Удалить идентификаторы маркировки сборочного задания{{ /api/v3/orders/{orderId}/meta }}
@@ -18,14 +18,14 @@ content_sha: 2796baa959cd4bf3
 
 Описание метода
 
-Метод удаляет значение [идентификаторов маркировки сборочного задания](./orders-fbs#tag/fbsLabelIdentifiers/paths/~1api~1marketplace~1v3~1orders~1meta/post) для переданного ключа.
+Метод удаляет значение [идентификаторов маркировки сборочного задания](./orders-fbs#tag/fbsLabelIdentifiers/operation/postV3OrdersMeta) для переданного ключа.
 
 Возможные идентификаторы маркировки:
- - `imei` — [IMEI](./orders-fbs#tag/fbsLabelIdentifiers/paths/~1api~1v3~1orders~1%7BorderId%7D~1meta~1imei/put)
- - `uin` — [УИН](./orders-fbs#tag/fbsLabelIdentifiers/paths/~1api~1v3~1orders~1%7BorderId%7D~1meta~1uin/put)
- - `gtin` — [GTIN](./orders-fbs#tag/fbsLabelIdentifiers/paths/~1api~1v3~1orders~1%7BorderId%7D~1meta~1gtin/put)
- - `sgtin` — [код маркировки Честного знака](./orders-fbs#tag/fbsLabelIdentifiers/paths/~1api~1v3~1orders~1%7BorderId%7D~1meta~1sgtin/put)
- - `customsDeclaration` — [номер ДТ](./orders-fbs#tag/fbsLabelIdentifiers/paths/~1api~1marketplace~1v3~1orders~1%7BorderId%7D~1meta~1customs-declaration/put)
+ - `imei` — [IMEI](./orders-fbs#tag/fbsLabelIdentifiers/operation/putV3OrdersOrderIdMetaImei)
+ - `uin` — [УИН](./orders-fbs#tag/fbsLabelIdentifiers/operation/putV3OrdersOrderIdMetaUin)
+ - `gtin` — [GTIN](./orders-fbs#tag/fbsLabelIdentifiers/operation/putV3OrdersOrderIdMetaGtin)
+ - `sgtin` — [код маркировки Честного знака](./orders-fbs#tag/fbsLabelIdentifiers/operation/putV3OrdersOrderIdMetaSgtin)
+ - `customsDeclaration` — [номер ДТ](./orders-fbs#tag/fbsLabelIdentifiers/operation/putV3OrdersOrderIdMetaCustomsDeclaration)
 
 Можно передать только один ключ.
 

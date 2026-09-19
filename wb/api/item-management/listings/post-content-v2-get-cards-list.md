@@ -9,7 +9,7 @@ tags:
 spec_version: items
 source: "https://dev.wildberries.ru/docs/openapi/item-management"
 deprecated: false
-content_sha: d27396c61c7967af
+content_sha: c29d3a8d4605dccd
 ---
 
 # Список карточек товаров
@@ -142,7 +142,7 @@ content_sha: d27396c61c7967af
     - `name` — string. Название характеристики
     - `value` — ?. Значение характеристики. Тип значения зависит от типа характеристики
   - `sizes` — array[object]. Размеры товара
-    - `chrtID` — integer<int64>. Числовой ID размера для данного артикула WB
+    - `chrtID` — integer<uint64>. Числовой ID размера для данного артикула WB
     - `techSize` — string. Размер товара (А, XXL, 57 и др.)
     - `wbSize` — string. Российский размер товара
     - `skus` — array[string]. Баркод товара

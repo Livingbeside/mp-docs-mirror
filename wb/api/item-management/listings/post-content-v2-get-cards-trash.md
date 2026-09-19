@@ -9,7 +9,7 @@ tags:
 spec_version: items
 source: "https://dev.wildberries.ru/docs/openapi/item-management"
 deprecated: false
-content_sha: 8477efa987fb2616
+content_sha: d2135342e1905448
 ---
 
 # Список карточек товаров в корзине
@@ -108,7 +108,7 @@ content_sha: 8477efa987fb2616
     - `enabled` — boolean. Предназначен ли товар для продажи только B2B-покупателям: - `true` — товар предназначен для продажи только B2B-покупателям - `false` — товар предназначен для продажи B2B и B2C-покупателям
     - `quantum` — number<uint64>. Минимальное количество единиц товара в одной корзине B2B-покупателя. Только при `"enable":true`
   - `sizes` — array[object]. Массив размеров
-    - `chrtID` — integer. ID размера
+    - `chrtID` — integer<uint64>. ID размера
     - `techSize` — string. Размер товара
     - `wbSize` — string. Российский размер товара
     - `skus` — array[string]. Массив баркодов

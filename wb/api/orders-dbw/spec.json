@@ -535,6 +535,7 @@
           "chrtId": {
             "description": "ID размера товара в системе WB",
             "example": 987654321,
+            "format": "uint64",
             "nullable": false,
             "type": "integer"
           },
@@ -724,6 +725,7 @@
           "chrtId": {
             "description": "ID размера товара в системе WB",
             "example": 987654321,
+            "format": "uint64",
             "nullable": false,
             "type": "integer"
           },

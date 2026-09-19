@@ -13,7 +13,7 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: c65ee88b902c7c34
+content_sha: 6d7c41a73bf35971
 ---
 
 # Детальная информация по заказам
@@ -127,7 +127,7 @@ content_sha: c65ee88b902c7c34
         - `id` — string. Номер платежного поручения.
         - `date` — string<date>. Дата платежного поручения. Формат даты: `ГГГГ‑ММ‑ДД`.
     - `commissions` — array[object] **обязательный**. Информация о стоимости услуг.
-      - `type` — string (FEE, FULFILLMENT, LOYALTY_PARTICIPATION_FEE, AUCTION_PROMOTION, INSTALLMENT, DELIVERY_TO_CUSTOMER, EXPRESS_DELIVERY_TO_CUSTOMER, AGENCY, PAYMENT_TRANSFER, RETURNED_ORDERS_STORAGE, SORTING, INTAKE_SORTING…). Услуга.
+      - `type` — string (FEE, FULFILLMENT, LOYALTY_PARTICIPATION_FEE, AUCTION_PROMOTION, INSTALLMENT, DELIVERY_TO_CUSTOMER, EXPRESS_DELIVERY_TO_CUSTOMER, AGENCY, AGENCY_COMMISSION_3PL, PAYMENT_TRANSFER, RETURNED_ORDERS_STORAGE, SORTING…). Услуга.
       - `actual` — number. Сумма, которая была выставлена в момент создания заказа и которую нужно оплатить. Точность — два знака после запятой.
     - `subsidies` — array[object]. Начисление баллов, которые используются для уменьшения стоимости размещения, и их списание в случае невыкупа или возврата.
       - `operationType` — string (ACCRUAL, DEDUCTION) **обязательный**. Тип операции c баллами, которые используются для уменьшения стоимости размещения.

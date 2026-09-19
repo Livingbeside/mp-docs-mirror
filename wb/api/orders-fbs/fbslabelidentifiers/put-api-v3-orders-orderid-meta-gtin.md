@@ -3,13 +3,13 @@ title: Закрепить GTIN за сборочным заданием{{ /api/v
 api: wb-orders-fbs
 method: PUT
 path: /api/v3/orders/{orderId}/meta/gtin
-operation_id: put-api-v3-orders-orderid-meta-gtin
+operation_id: putV3OrdersOrderIdMetaGtin
 tags:
   - fbsLabelIdentifiers
 spec_version: order
 source: "https://dev.wildberries.ru/docs/openapi/orders-fbs"
 deprecated: false
-content_sha: 3cafdda4b9dc4efe
+content_sha: dcce5ae1eb50cd5c
 ---
 
 # Закрепить GTIN за сборочным заданием{{ /api/v3/orders/{orderId}/meta/gtin }}
@@ -18,10 +18,10 @@ content_sha: 3cafdda4b9dc4efe
 
 Описание метода
 
-Метод обновляет GTIN, уникальный ID товара в Беларуси, в [идентификаторах маркировки сборочного задания](./orders-fbs#tag/fbsLabelIdentifiers/paths/~1api~1marketplace~1v3~1orders~1meta/post).
+Метод обновляет GTIN, уникальный ID товара в Беларуси, в [идентификаторах маркировки сборочного задания](./orders-fbs#tag/fbsLabelIdentifiers/operation/postV3OrdersMeta).
 У одного сборочного задания может быть только один GTIN.
 
- Закрепить GTIN можно только за сборочным заданием в [статусе](./orders-fbs#tag/Sborochnye-zadaniya-FBS/paths/~1api~1v3~1orders~1status/post) `confirm` и если в [идентификаторах маркировки сборочного задания](./orders-fbs#tag/fbsLabelIdentifiers/paths/~1api~1marketplace~1v3~1orders~1meta/post) есть поле `gtin`.
+ Закрепить GTIN можно только за сборочным заданием в [статусе](./orders-fbs#tag/fbsAssemblyOrders/operation/postV3OrdersStatus) `confirm` и если в [идентификаторах маркировки сборочного задания](./orders-fbs#tag/fbsLabelIdentifiers/operation/postV3OrdersMeta) есть поле `gtin`.
 
 Лимит запросов на один аккаунт продавца для всех методов закрепления идентификаторов маркировки FBS:
 

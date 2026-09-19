@@ -9,7 +9,7 @@ tags:
 spec_version: items
 source: "https://dev.wildberries.ru/docs/openapi/item-management"
 deprecated: false
-content_sha: e8ccff5dff86be58
+content_sha: 40014bff62b83879
 ---
 
 # Обновить остатки товаров{{ /api/v3/stocks/{warehouseId} }}
@@ -43,7 +43,7 @@ content_sha: e8ccff5dff86be58
 **Тело запроса** (`application/json`):
 
 - `stocks` — array[object] **обязательный**. Массив ID размеров товаров и их остатков
-  - `chrtId` — integer. ID размера товара
+  - `chrtId` — integer<uint64>. ID размера товара
   - `amount` — integer. Остаток
 
 ## Ответы
@@ -94,7 +94,7 @@ content_sha: e8ccff5dff86be58
 
 - `data` — array[object]. Дополнительная информация об ошибке
   - `sku` — string. Баркод
-  - `chrtId` — integer. ID размера товара
+  - `chrtId` — integer<uint64>. ID размера товара
   - `amount` — integer. Остаток
 - `code` — string. Код ошибки
 - `message` — string. Описание ошибки

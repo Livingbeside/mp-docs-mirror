@@ -14,7 +14,7 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: 7e7c9992c0d60afe
+content_sha: 2422788fd1d05f22
 ---
 
 # Закрывающие документы
@@ -46,7 +46,6 @@ content_sha: 7e7c9992c0d60afe
  * [акт об оказанных услугах](*acts-marketing-act) (в России формируется за месяцы до августа 2026 года)
  * [счет-фактура](*acts-main-invoice) (в России формируется за месяцы до августа 2026 года)
  * [счет-фактура на аванс](*acts-marketing-invoice)
- * [выписка по лицевому счету](*acts-marketing-account)
  * [детализация к акту](*acts-marketing-details)
 
 {% endcut %}

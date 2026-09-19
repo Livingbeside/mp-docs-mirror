@@ -9,7 +9,7 @@ tags:
 spec_version: order
 source: "https://dev.wildberries.ru/docs/openapi/orders-fbs"
 deprecated: false
-content_sha: 1049991ddd196a72
+content_sha: 3db29a07125c5813
 ---
 
 # Обновить настройки автовозврата товаров
@@ -35,7 +35,7 @@ content_sha: 1049991ddd196a72
 
 **Тело запроса** (`application/json`):
 
-- `chrtIds` — array[integer] **обязательный**. Список ID размеров товаров в системе WB
+- `chrtIds` — array[integer<uint64>] **обязательный**. Список ID размеров товаров в системе WB
 - `type` — string (byWarehouse, byPickupPoint) **обязательный**. Тип автовозврата малогабаритных товаров: - `byWarehouse` — все товары отправляются на склад WB - `byPickupPoint` — все товары отправляются на пункт выдачи заказов
 
 ## Ответы
@@ -43,7 +43,7 @@ content_sha: 1049991ddd196a72
 **200** — Успешно
 
 - `results` — array[object] **обязательный**
-  - `chrtId` — integer **обязательный**. ID размера товара в системе WB
+  - `chrtId` — integer<uint64> **обязательный**. ID размера товара в системе WB
   - `error` — ?. Детали ошибки
     - `code` — integer **обязательный**. Код ошибки
     - `detail` — string **обязательный**. Дополнительная информация об ошибке: - `Not Found` — ID размера товара не найден или указан ID размера немалогабаритного товара

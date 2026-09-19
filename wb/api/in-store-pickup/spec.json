@@ -791,6 +791,7 @@
           },
           "chrtId": {
             "description": "ID размера товара в системе WB",
+            "format": "uint64",
             "type": "integer"
           },
           "convertedCurrencyCode": {
@@ -938,6 +939,7 @@
           "chrtId": {
             "description": "ID размера товара в системе WB",
             "example": 12345676,
+            "format": "uint64",
             "type": "integer"
           },
           "convertedCurrencyCode": {
@@ -1698,7 +1700,7 @@
     }
   },
   "info": {
-    "description": "<div class=\"api-block\">\n\nУправление [сборочными заданиями](./in-store-pickup#tag/inStorePickupAssemblyOrders) и [идентификаторами маркировки](./in-store-pickup#tag/inStorePickupLabelIdentifiers) Самовывоза.<br><br>\n\nВы можете протестировать методы Самовывоза в [песочнице](/sandbox). Также в песочнице доступны [специальные методы](/docs/openapi-other/sandbox-environment#tag/Marketplejs-Samovyvoz) для эмуляции действий пользователя\n\n</div>\n",
+    "description": "<div class=\"api-block\">\n\nУправление [сборочными заданиями](./in-store-pickup#tag/inStorePickupAssemblyOrders) и [идентификаторами маркировки](./in-store-pickup#tag/inStorePickupLabelIdentifiers) Самовывоза.<br><br>\n\nВы можете протестировать методы Самовывоза в [песочнице](/sandbox). Также в песочнице доступны [специальные методы](/docs/openapi-other/sandbox-environment#tag/marketplaceInStorePickup) для эмуляции действий пользователя\n\n</div>\n",
     "title": "Самовывоз",
     "version": "instorepickup",
     "x-file-name": "in-store-pickup"
@@ -3280,7 +3282,7 @@
   ],
   "tags": [
     {
-      "description": "<div class=\"api-description\">\n\n<div class=\"api-block\">\n\nУправление [сборочными заданиями](./in-store-pickup#tag/inStorePickupAssemblyOrders) и [идентификаторами маркировки](./in-store-pickup#tag/inStorePickupLabelIdentifiers) Самовывоза.<br><br>\n\nВы можете протестировать методы Самовывоза в [песочнице](/sandbox). Также в песочнице доступны [специальные методы](/docs/openapi-other/sandbox-environment#tag/Marketplejs-Samovyvoz) для эмуляции действий пользователя\n\n</div>\n\n\n</div>",
+      "description": "<div class=\"api-description\">\n\n<div class=\"api-block\">\n\nУправление [сборочными заданиями](./in-store-pickup#tag/inStorePickupAssemblyOrders) и [идентификаторами маркировки](./in-store-pickup#tag/inStorePickupLabelIdentifiers) Самовывоза.<br><br>\n\nВы можете протестировать методы Самовывоза в [песочнице](/sandbox). Также в песочнице доступны [специальные методы](/docs/openapi-other/sandbox-environment#tag/marketplaceInStorePickup) для эмуляции действий пользователя\n\n</div>\n\n\n</div>",
       "name": "Самовывоз",
       "x-traitTag": true
     },
