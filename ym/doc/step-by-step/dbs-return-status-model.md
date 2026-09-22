@@ -2,14 +2,14 @@
 title: Статусы DBS-возвратов
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/dbs-return-status-model.md"
-fetched_at: "2026-09-16T02:26:56Z"
-content_sha: 52cc84fda61fa402
+fetched_at: "2026-09-22T02:26:30Z"
+content_sha: 5a2f436da97af445
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.57.4
+    content: Diplodoc Platform v5.61.0
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/step-by-step/dbs-return-status-model.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/dbs-return-status-model.md

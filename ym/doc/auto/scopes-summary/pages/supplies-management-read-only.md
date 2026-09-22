@@ -2,14 +2,14 @@
 title: Получение информации по FBY-заявкам
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/_auto/scopes_summary/pages/supplies-management_read-only.md"
-fetched_at: "2026-09-16T02:26:42Z"
-content_sha: 3d0e8b0374224fa1
+fetched_at: "2026-09-22T02:26:15Z"
+content_sha: 86a604a4fefbe5bf
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.57.4
+    content: Diplodoc Platform v5.61.0
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/_auto/scopes_summary/pages/supplies-management_read-only.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/_auto/scopes_summary/pages/supplies-management_read-only.md

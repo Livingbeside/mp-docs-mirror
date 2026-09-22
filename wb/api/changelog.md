@@ -4,8 +4,8 @@ api: wildberries
 kind: changelog
 source: "https://dev.wildberries.ru/release-notes"
 window: последние записи, страница отдаёт не всю историю
-fetched_at: "2026-09-21T02:07:38Z"
-content_sha: c6050f98fab2e38d
+fetched_at: "2026-09-22T02:26:07Z"
+content_sha: 20dc3c14ea2fbec1
 ---
 
 # Журнал изменений WB API
@@ -86,7 +86,7 @@ content_sha: c6050f98fab2e38d
 - `STOCK_HISTORY_REPORT_CSV` — отчёт по статистике остатков в методе [POST /api/v2/nm-report/downloads](/docs/openapi/analytics#tag/sellerAnalyticsCsv/operation/postV2NmReportDownloads)
 - `STOCK_HISTORY_DAILY_CSV` — отчёт по истории остатков в методе [POST /api/v2/nm-report/downloads](/docs/openapi/analytics#tag/sellerAnalyticsCsv/operation/postV2NmReportDownloads)
 
-Чтобы получить текущие данные по остаткам без задержки обновления, используйте методы [POST /api/analytics/v1/stocks-report/wb-warehouses](/docs/openapi/analytics#tag/stocksReport/operation/postAnalyticsV1StocksReportSellerWarehouses) и [POST /api/analytics/v1/stocks-report/seller-warehouses](/docs/openapi/analytics#tag/stocksReport/operation/postAnalyticsV1StocksReportSellerWarehouses).
+Чтобы получить текущие данные по остаткам без задержки обновления, используйте методы [POST /api/analytics/v1/stocks-report/wb-warehouses](/docs/openapi/analytics/#tag/stocksReport/operation/postV1StocksReportWbWarehouses) и [POST /api/analytics/v1/stocks-report/seller-warehouses](/docs/openapi/analytics#tag/stocksReport/operation/postAnalyticsV1StocksReportSellerWarehouses).
 
 Новое
 

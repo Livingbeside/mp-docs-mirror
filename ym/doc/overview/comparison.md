@@ -2,14 +2,14 @@
 title: Сравнение методов по моделям
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/overview/comparison.md"
-fetched_at: "2026-09-16T02:27:02Z"
-content_sha: ee10bce9a742c4a9
+fetched_at: "2026-09-22T02:26:37Z"
+content_sha: 35347d8e4f09dc64
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.57.4
+    content: Diplodoc Platform v5.61.0
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/overview/comparison.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/overview/comparison.md

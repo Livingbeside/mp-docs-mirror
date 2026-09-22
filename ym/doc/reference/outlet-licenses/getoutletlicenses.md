@@ -2,14 +2,14 @@
 title: Информация о лицензиях
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/outlet-licenses/getOutletLicenses.md"
-fetched_at: "2026-09-16T02:27:48Z"
-content_sha: 431476adf9c9cdfb
+fetched_at: "2026-09-22T02:27:25Z"
+content_sha: 26e4294f12396dfa
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.57.4
+    content: Diplodoc Platform v5.61.0
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/outlet-licenses/getOutletLicenses.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/outlet-licenses/getOutletLicenses.md

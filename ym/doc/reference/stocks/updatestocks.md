@@ -2,14 +2,14 @@
 title: Передача остатков для кабинетов с группами складов
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/stocks/updateStocks.md"
-fetched_at: "2026-09-16T02:27:18Z"
-content_sha: e9b73714d14e91fb
+fetched_at: "2026-09-22T02:26:54Z"
+content_sha: c06ba45cec474e5a
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.57.4
+    content: Diplodoc Platform v5.61.0
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/stocks/updateStocks.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/stocks/updateStocks.md
@@ -1041,7 +1041,7 @@ alternate:
                     type: string
                     format: date-time
     $defs:
-      /home/sandbox/.ya/build/build_root/m7cc/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/common/schemas.yaml#/InternalOfferId:
+      /home/sandbox/.ya/build/build_root/jc95/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/common/schemas.yaml#/InternalOfferId:
         description: >-
           Внутренний идентификатор товара в системах Маркета. Нужен для создания
           товаров Лавки с отличными offerId и article.

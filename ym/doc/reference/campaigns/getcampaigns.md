@@ -2,14 +2,14 @@
 title: Список магазинов
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/campaigns/getCampaigns.md"
-fetched_at: "2026-09-16T02:27:05Z"
-content_sha: 69d7c07fd7248e9b
+fetched_at: "2026-09-22T02:26:39Z"
+content_sha: eb0354d5cd2d40df
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.57.4
+    content: Diplodoc Platform v5.61.0
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/campaigns/getCampaigns.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/campaigns/getCampaigns.md

@@ -2,14 +2,14 @@
 title: Буст продаж
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/boost.md"
-fetched_at: "2026-09-16T02:26:57Z"
-content_sha: b9884e8cb25174a4
+fetched_at: "2026-09-22T02:26:32Z"
+content_sha: c394d4333d096ef1
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.57.4
+    content: Diplodoc Platform v5.61.0
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/step-by-step/boost.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/boost.md

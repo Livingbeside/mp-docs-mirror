@@ -2,14 +2,14 @@
 title: Создание, изменение и удаление ответа или комментария
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/goods-questions/updateGoodsQuestionTextEntity.md"
-fetched_at: "2026-09-16T02:28:13Z"
-content_sha: a3e45761528279f0
+fetched_at: "2026-09-22T02:27:49Z"
+content_sha: aaf921a5a4224c0a
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.57.4
+    content: Diplodoc Platform v5.61.0
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/goods-questions/updateGoodsQuestionTextEntity.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/goods-questions/updateGoodsQuestionTextEntity.md
@@ -1074,7 +1074,7 @@ alternate:
           - CREATE
           - DELETE
     $defs:
-      /home/sandbox/.ya/build/build_root/m7cc/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/goods-questions/api/updateGoodsQuestionTextEntity.yaml#/QuestionsTextEntityType:
+      /home/sandbox/.ya/build/build_root/jc95/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/goods-questions/api/updateGoodsQuestionTextEntity.yaml#/QuestionsTextEntityType:
         description: |
           Тип сущности:
   
@@ -1086,7 +1086,7 @@ alternate:
           - QUESTION
           - ANSWER
           - COMMENT
-      /home/sandbox/.ya/build/build_root/m7cc/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/goods-questions/api/updateGoodsQuestionTextEntity.yaml#/TypedQuestionsTextEntityIdDTO:
+      /home/sandbox/.ya/build/build_root/jc95/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/goods-questions/api/updateGoodsQuestionTextEntity.yaml#/TypedQuestionsTextEntityIdDTO:
         type: object
         description: |
           Идентификатор вопроса, ответа или комментария.
@@ -1102,7 +1102,7 @@ alternate:
           type:
             description: Тип сущности (вопрос, ответ или комментарий).
             $ref: '#/$defs/QuestionsTextEntityType'
-      /home/sandbox/.ya/build/build_root/m7cc/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/goods-questions/schemas.yaml#/QuestionsTextContent:
+      /home/sandbox/.ya/build/build_root/jc95/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/goods-questions/schemas.yaml#/QuestionsTextContent:
         description: |
           Текстовое содержимое.
         type: string

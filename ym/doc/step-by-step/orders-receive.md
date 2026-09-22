@@ -2,14 +2,14 @@
 title: Получение заказов
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/orders-receive.md"
-fetched_at: "2026-09-16T02:26:52Z"
-content_sha: c233928379511df7
+fetched_at: "2026-09-22T02:26:26Z"
+content_sha: a89928eef82285db
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.57.4
+    content: Diplodoc Platform v5.61.0
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/step-by-step/orders-receive.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/orders-receive.md

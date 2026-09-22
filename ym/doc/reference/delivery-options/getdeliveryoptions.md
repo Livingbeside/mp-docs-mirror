@@ -2,14 +2,14 @@
 title: Получение доступных вариантов доставки
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/delivery-options/getDeliveryOptions.md"
-fetched_at: "2026-09-16T02:27:34Z"
-content_sha: d60c638c6b06bc98
+fetched_at: "2026-09-22T02:27:11Z"
+content_sha: 6fd787d16e83d591
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.57.4
+    content: Diplodoc Platform v5.61.0
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/delivery-options/getDeliveryOptions.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/delivery-options/getDeliveryOptions.md

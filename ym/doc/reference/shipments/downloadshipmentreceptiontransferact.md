@@ -2,14 +2,14 @@
 title: Подтверждение отгрузки и получение акта для нее
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/shipments/downloadShipmentReceptionTransferAct.md"
-fetched_at: "2026-09-16T02:27:38Z"
-content_sha: 92fd7b171847f61f
+fetched_at: "2026-09-22T02:27:14Z"
+content_sha: ed643e38fd81af27
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.57.4
+    content: Diplodoc Platform v5.61.0
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/shipments/downloadShipmentReceptionTransferAct.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/shipments/downloadShipmentReceptionTransferAct.md

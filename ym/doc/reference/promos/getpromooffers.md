@@ -2,14 +2,14 @@
 title: Список товаров в акции
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/promos/getPromoOffers.md"
-fetched_at: "2026-09-16T02:27:24Z"
-content_sha: ed4c12ba6040d657
+fetched_at: "2026-09-22T02:27:01Z"
+content_sha: ff5aa6dc79e11a4b
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.57.4
+    content: Diplodoc Platform v5.61.0
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/promos/getPromoOffers.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/promos/getPromoOffers.md
@@ -54,7 +54,7 @@ alternate:
   
   {% note warning "Условия участия в акциях могут меняться" %}
   
-  Например, `maxPromoPrice`.
+  Например, `maxPromoPrice` и `bestPriceLevels`.
   
   Установленные цены меняться не будут — `price` и `promoPrice`.
   
@@ -356,7 +356,8 @@ alternate:
             "discountParams": {
               "price": 0,
               "promoPrice": 0,
-              "maxPromoPrice": 0
+              "maxPromoPrice": 0,
+              "bestPriceLevels": {}
             }
           },
           "autoParticipatingDetails": {
@@ -530,12 +531,127 @@ alternate:
   
   <div class="openapi-entity">
   
+  ### PromoOfferBestPriceLevelsDTO {#entity-PromoOfferBestPriceLevelsDTO}
+  
+  Максимальные цены для участия в акции «Бестселлеры Маркета» по уровням:
+  
+  * **Лайт-бестселлер** — `lightBestLevel`
+  * **Бестселлер** — `bestLevel`
+  * **Супербестселлер** — `superBestLevel`
+  * **Топ-бестселлер** — `topBestLevel`
+  
+  Чтобы товар участвовал на определенном уровне, цена по акции должна быть не выше порога этого уровня.
+  
+  Параметр возвращается только для акций «Бестселлеры Маркета». Подробнее об этой акции читайте [в Справке Маркета для продавцов](https://yandex.ru/support2/marketplace/ru/marketing/promos/market/bestsellers).
+  
+  
+  #|
+  || **Name** | **Description** ||
+  ||
+  
+  _bestLevel_{.json-schema-reset .json-schema-property .json-schema-required}
+  {.table-cell}|
+  **Type**: integer
+  
+  Максимальная цена для участия на уровне **Бестселлер**.
+  
+  Указывается в рублях.
+  
+  {.table-cell}
+  ||
+  ||
+  
+  _lightBestLevel_{.json-schema-reset .json-schema-property .json-schema-required}
+  {.table-cell}|
+  **Type**: integer
+  
+  Максимальная цена для участия на уровне **Лайт-бестселлер**.
+  
+  Указывается в рублях.
+  
+  {.table-cell}
+  ||
+  ||
+  
+  _superBestLevel_{.json-schema-reset .json-schema-property .json-schema-required}
+  {.table-cell}|
+  **Type**: integer
+  
+  Максимальная цена для участия на уровне **Супербестселлер**.
+  
+  Указывается в рублях.
+  
+  {.table-cell}
+  ||
+  ||
+  
+  _topBestLevel_{.json-schema-reset .json-schema-property .json-schema-required}
+  {.table-cell}|
+  **Type**: integer
+  
+  Максимальная цена для участия на уровне **Топ-бестселлер**.
+  
+  Указывается в рублях.
+  
+  {.table-cell}
+  ||
+  |#{.json-schema-properties}
+  
+  {% cut "**Example**" %}{.json-schema-example}
+  
+  ```json translate=no
+  {
+    "lightBestLevel": 0,
+    "bestLevel": 0,
+    "superBestLevel": 0,
+    "topBestLevel": 0
+  }
+  ```
+  
+  {% endcut %}
+  
+  </div>
+  
+  <div class="openapi-entity">
+  
   ### PromoOfferDiscountParamsDTO {#entity-PromoOfferDiscountParamsDTO}
   
   Параметры товара в акции с типом `DIRECT_DISCOUNT` или `BLUE_FLASH`.
   
   #|
   || **Name** | **Description** ||
+  ||
+  
+  _bestPriceLevels_{.json-schema-reset .json-schema-property}
+  {.table-cell}|
+  **Type**: [PromoOfferBestPriceLevelsDTO](#entity-PromoOfferBestPriceLevelsDTO)
+  
+  Максимальные цены для участия в акции «Бестселлеры Маркета» по уровням:
+  
+  * **Лайт-бестселлер** — `lightBestLevel`
+  * **Бестселлер** — `bestLevel`
+  * **Супербестселлер** — `superBestLevel`
+  * **Топ-бестселлер** — `topBestLevel`
+  
+  Чтобы товар участвовал на определенном уровне, цена по акции должна быть не выше порога этого уровня.
+  
+  Параметр возвращается только для акций «Бестселлеры Маркета». Подробнее об этой акции читайте [в Справке Маркета для продавцов](https://yandex.ru/support2/marketplace/ru/marketing/promos/market/bestsellers).
+  
+  
+  {% cut "**Example**" %}{.json-schema-example}
+  
+  ```json translate=no
+  {
+    "lightBestLevel": 0,
+    "bestLevel": 0,
+    "superBestLevel": 0,
+    "topBestLevel": 0
+  }
+  ```
+  
+  {% endcut %}
+  {.table-cell}
+  ||
   ||
   
   _maxPromoPrice_{.json-schema-reset .json-schema-property}
@@ -546,6 +662,8 @@ alternate:
   Если значение не заполнено, ограничение отсутствует.
   
   Указывается в рублях.
+  
+  Для акции «Бестселлеры Маркета» пороги по уровням возвращаются в параметре `bestPriceLevels`.
   
   {.table-cell}
   ||
@@ -585,7 +703,13 @@ alternate:
   {
     "price": 0,
     "promoPrice": 0,
-    "maxPromoPrice": 0
+    "maxPromoPrice": 0,
+    "bestPriceLevels": {
+      "lightBestLevel": 0,
+      "bestLevel": 0,
+      "superBestLevel": 0,
+      "topBestLevel": 0
+    }
   }
   ```
   
@@ -618,7 +742,13 @@ alternate:
   {
     "price": 0,
     "promoPrice": 0,
-    "maxPromoPrice": 0
+    "maxPromoPrice": 0,
+    "bestPriceLevels": {
+      "lightBestLevel": 0,
+      "bestLevel": 0,
+      "superBestLevel": 0,
+      "topBestLevel": 0
+    }
   }
   ```
   
@@ -634,7 +764,13 @@ alternate:
     "discountParams": {
       "price": 0,
       "promoPrice": 0,
-      "maxPromoPrice": 0
+      "maxPromoPrice": 0,
+      "bestPriceLevels": {
+        "lightBestLevel": 0,
+        "bestLevel": 0,
+        "superBestLevel": 0,
+        "topBestLevel": 0
+      }
     }
   }
   ```
@@ -780,7 +916,13 @@ alternate:
     "discountParams": {
       "price": 0,
       "promoPrice": 0,
-      "maxPromoPrice": 0
+      "maxPromoPrice": 0,
+      "bestPriceLevels": {
+        "lightBestLevel": 0,
+        "bestLevel": 0,
+        "superBestLevel": 0,
+        "topBestLevel": 0
+      }
     }
   }
   ```
@@ -854,7 +996,13 @@ alternate:
       "discountParams": {
         "price": 0,
         "promoPrice": 0,
-        "maxPromoPrice": 0
+        "maxPromoPrice": 0,
+        "bestPriceLevels": {
+          "lightBestLevel": 0,
+          "bestLevel": 0,
+          "superBestLevel": 0,
+          "topBestLevel": 0
+        }
       }
     },
     "autoParticipatingDetails": {
@@ -930,7 +1078,13 @@ alternate:
         "discountParams": {
           "price": 0,
           "promoPrice": 0,
-          "maxPromoPrice": 0
+          "maxPromoPrice": 0,
+          "bestPriceLevels": {
+            "lightBestLevel": 0,
+            "bestLevel": 0,
+            "superBestLevel": 0,
+            "topBestLevel": 0
+          }
         }
       },
       "autoParticipatingDetails": {
@@ -979,7 +1133,8 @@ alternate:
           "discountParams": {
             "price": 0,
             "promoPrice": 0,
-            "maxPromoPrice": 0
+            "maxPromoPrice": 0,
+            "bestPriceLevels": {}
           }
         },
         "autoParticipatingDetails": {
@@ -1599,7 +1754,7 @@ alternate:
             - NOT_MANUALLY_ADDED
             - MINIMUM_FOR_PROMOS
     $defs:
-      /home/sandbox/.ya/build/build_root/m7cc/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/promos/api/getPromoOffers.yaml#/PromoOfferParticipationStatusFilterType:
+      /home/sandbox/.ya/build/build_root/jc95/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/promos/api/getPromoOffers.yaml#/PromoOfferParticipationStatusFilterType:
         description: >
           Фильтр для товаров, которые добавлены в акцию вручную:
   

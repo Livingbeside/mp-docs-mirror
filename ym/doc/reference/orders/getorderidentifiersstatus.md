@@ -2,14 +2,14 @@
 title: Статусы проверки кодов маркировки
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/orders/getOrderIdentifiersStatus.md"
-fetched_at: "2026-09-16T02:27:29Z"
-content_sha: 51614cb62fa05e0c
+fetched_at: "2026-09-22T02:27:05Z"
+content_sha: b38c72955cb15560
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.57.4
+    content: Diplodoc Platform v5.61.0
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/orders/getOrderIdentifiersStatus.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/orders/getOrderIdentifiersStatus.md

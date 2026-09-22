@@ -2,14 +2,14 @@
 title: Обратная связь
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/feedback.md"
-fetched_at: "2026-09-16T02:27:02Z"
-content_sha: 7313a4fe383a1b8b
+fetched_at: "2026-09-22T02:26:37Z"
+content_sha: 7279008935c146ac
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.57.4
+    content: Diplodoc Platform v5.61.0
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/feedback.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/feedback.md

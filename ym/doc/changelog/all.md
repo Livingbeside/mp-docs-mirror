@@ -2,14 +2,14 @@
 title: Все обновления
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/changelog/all.md"
-fetched_at: "2026-09-16T02:27:04Z"
-content_sha: 9a3282bb802f5a9f
+fetched_at: "2026-09-22T02:26:39Z"
+content_sha: 8619a45a4ff938a7
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.57.4
+    content: Diplodoc Platform v5.61.0
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/changelog/all.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/changelog/all.md
@@ -31,6 +31,51 @@ alternate:
 {% endnote %}
 
 <!-- source: ru/_auto/changelog/all.md -->
+<!-- source: ru/_auto/changelog/all/2026-09-17.md -->
+### 17 сентября {#17-09-26}
+
+#|
+|| **Методы или страницы документации**
+ | **Описание изменений**
+ ||
+||
+[POST v2/businesses/{businessId}/settings](https://yandex.ru/dev/market/partner-api/doc/ru/reference/businesses/getBusinessSettings.md)
+|
+В ответ метода получения настроек кабинета добавили поле `warehouseModel`: `CAMPAIGN` - интерфейс складов на уровне магазинов, `WAREHOUSE` - интерфейс единых складов на уровне кабинета.
+||
+|#
+<!-- endsource: ru/_auto/changelog/all/2026-09-17.md -->
+
+<!-- source: ru/_auto/changelog/all/2026-09-16.md -->
+### 16 сентября {#16-09-26}
+
+#|
+|| **Методы или страницы документации**
+ | **Описание изменений**
+ ||
+||
+[POST v2/campaigns/{campaignId}/stats/orders](https://yandex.ru/dev/market/partner-api/doc/ru/reference/orders-stats/getOrdersStats.md)
+|
+В информации о стоимости услуг добавили значение `AGENCY_COMMISSION_3PL` — услуги перевозки и ТЭО.
+||
+|#
+<!-- endsource: ru/_auto/changelog/all/2026-09-16.md -->
+
+<!-- source: ru/_auto/changelog/all/2026-09-14.md -->
+### 14 сентября {#14-09-26}
+
+#|
+|| **Методы или страницы документации**
+ | **Описание изменений**
+ ||
+||
+[POST v2/businesses/{businessId}/promos/offers](https://yandex.ru/dev/market/partner-api/doc/ru/reference/promos/getPromoOffers.md)
+|
+Добавили в ответ необязательный объект `bestPriceLevels` с максимальными ценами для участия в акции «Бестселлеры Маркета» по уровням: `lightBestLevel` (Лайт-бестселлер), `bestLevel` (Бестселлер), `superBestLevel` (Супербестселлер) и `topBestLevel` (Топ-бестселлер). Чтобы товар получил уровень, цена по акции должна быть не выше порога этого уровня. Параметр возвращается только для этой акции.
+||
+|#
+<!-- endsource: ru/_auto/changelog/all/2026-09-14.md -->
+
 <!-- source: ru/_auto/changelog/all/2026-09-10.md -->
 ### 10 сентября {#10-09-26}
 

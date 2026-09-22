@@ -2,14 +2,14 @@
 title: Обновление документов
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/documents/updateDocuments.md"
-fetched_at: "2026-09-16T02:27:12Z"
-content_sha: b149c31cceabf341
+fetched_at: "2026-09-22T02:26:46Z"
+content_sha: 45dca24fbb8ef6b5
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.57.4
+    content: Diplodoc Platform v5.61.0
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/documents/updateDocuments.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/documents/updateDocuments.md

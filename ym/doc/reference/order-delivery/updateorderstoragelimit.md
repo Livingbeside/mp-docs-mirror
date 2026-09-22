@@ -2,14 +2,14 @@
 title: Продление срока хранения заказа
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/order-delivery/updateOrderStorageLimit.md"
-fetched_at: "2026-09-16T02:27:31Z"
-content_sha: 2c95fead65ecc26f
+fetched_at: "2026-09-22T02:27:07Z"
+content_sha: b04af76af359f1bd
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.57.4
+    content: Diplodoc Platform v5.61.0
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/order-delivery/updateOrderStorageLimit.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/order-delivery/updateOrderStorageLimit.md

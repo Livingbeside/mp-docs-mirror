@@ -2,14 +2,14 @@
 title: Просмотр финансовой информации и отчётности
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/_auto/scopes_summary/pages/finance-and-accounting.md"
-fetched_at: "2026-09-16T02:26:41Z"
-content_sha: 75f6ceb3af9bb453
+fetched_at: "2026-09-22T02:26:14Z"
+content_sha: d5d55f8c0687a05f
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.57.4
+    content: Diplodoc Platform v5.61.0
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/_auto/scopes_summary/pages/finance-and-accounting.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/_auto/scopes_summary/pages/finance-and-accounting.md

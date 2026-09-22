@@ -2,14 +2,14 @@
 title: Создание нового чата
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/chats/createChat.md"
-fetched_at: "2026-09-16T02:28:17Z"
-content_sha: 24c5dcc15b883003
+fetched_at: "2026-09-22T02:27:54Z"
+content_sha: 360dba518354c99e
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.57.4
+    content: Diplodoc Platform v5.61.0
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/chats/createChat.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/chats/createChat.md

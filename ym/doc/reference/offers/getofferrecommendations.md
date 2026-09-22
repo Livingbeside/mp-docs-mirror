@@ -2,14 +2,14 @@
 title: Рекомендации Маркета
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/offers/getOfferRecommendations.md"
-fetched_at: "2026-09-16T02:27:22Z"
-content_sha: e158630406e69548
+fetched_at: "2026-09-22T02:26:57Z"
+content_sha: 9670b1272eae5250
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.57.4
+    content: Diplodoc Platform v5.61.0
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/offers/getOfferRecommendations.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/offers/getOfferRecommendations.md
@@ -1565,7 +1565,7 @@ alternate:
           непривлекательными ценами.
         $ref: '#/$defs/PriceCompetitivenessType'
     $defs:
-      /home/sandbox/.ya/build/build_root/m7cc/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/offers/api/getOfferRecommendations.yaml#/PriceCompetitivenessType:
+      /home/sandbox/.ya/build/build_root/jc95/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/offers/api/getOfferRecommendations.yaml#/PriceCompetitivenessType:
         description: |
           Привлекательность цены:
   

@@ -2,14 +2,14 @@
 title: Информация о покупателе
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/order-delivery/getOrderBuyerInfo.md"
-fetched_at: "2026-09-16T02:27:31Z"
-content_sha: 21eccdc550f49dbc
+fetched_at: "2026-09-22T02:27:08Z"
+content_sha: 6dca6325e5e71b15
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.57.4
+    content: Diplodoc Platform v5.61.0
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/order-delivery/getOrderBuyerInfo.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/order-delivery/getOrderBuyerInfo.md

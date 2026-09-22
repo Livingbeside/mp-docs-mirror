@@ -2,14 +2,14 @@
 title: Список складов
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/warehouses/getPartnerWarehouses.md"
-fetched_at: "2026-09-16T02:28:20Z"
-content_sha: aece374d0087829d
+fetched_at: "2026-09-22T02:27:56Z"
+content_sha: 73fd9c5501998471
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.57.4
+    content: Diplodoc Platform v5.61.0
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/warehouses/getPartnerWarehouses.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/warehouses/getPartnerWarehouses.md

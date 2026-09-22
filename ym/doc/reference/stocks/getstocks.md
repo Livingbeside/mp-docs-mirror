@@ -2,14 +2,14 @@
 title: Просмотр остатков и оборачиваемости
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/stocks/getStocks.md"
-fetched_at: "2026-09-16T02:27:17Z"
-content_sha: 204219279c05dc86
+fetched_at: "2026-09-22T02:26:52Z"
+content_sha: 66f3edd46378f08b
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.57.4
+    content: Diplodoc Platform v5.61.0
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/stocks/getStocks.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/stocks/getStocks.md
@@ -74,7 +74,7 @@ alternate:
   |-|
   <!-- endsource: ru/_auto/method_limits/getStocks.md -->
   
-  [//]: ../../api/stocks/<> (turnover: Среднее количество дней, за которое товар продается. Подробно об оборачиваемости рассказано в Справке Маркета для продавцов https://yandex.ru/support/marketplace/analytics/turnover.html.)
+  [//]: <> (turnover: Среднее количество дней, за которое товар продается. Подробно об оборачиваемости рассказано в Справке Маркета для продавцов https://yandex.ru/support/marketplace/analytics/turnover.html.)
   
   
   ## Request

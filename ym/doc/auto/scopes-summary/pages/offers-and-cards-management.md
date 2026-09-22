@@ -2,14 +2,14 @@
 title: Управление товарами и карточками
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/_auto/scopes_summary/pages/offers-and-cards-management.md"
-fetched_at: "2026-09-16T02:26:40Z"
-content_sha: 329af86f8d02454d
+fetched_at: "2026-09-22T02:26:12Z"
+content_sha: 27e91713be696de7
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.57.4
+    content: Diplodoc Platform v5.61.0
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/_auto/scopes_summary/pages/offers-and-cards-management.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/_auto/scopes_summary/pages/offers-and-cards-management.md

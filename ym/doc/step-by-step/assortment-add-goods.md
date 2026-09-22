@@ -2,14 +2,14 @@
 title: Добавление, редактирование и удаление товаров
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/assortment-add-goods.md"
-fetched_at: "2026-09-16T02:26:49Z"
-content_sha: 88b135906e328940
+fetched_at: "2026-09-22T02:26:22Z"
+content_sha: 9728e23657cb0d1a
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.57.4
+    content: Diplodoc Platform v5.61.0
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/step-by-step/assortment-add-goods.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/assortment-add-goods.md

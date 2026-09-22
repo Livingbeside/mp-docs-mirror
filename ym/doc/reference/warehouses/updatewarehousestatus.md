@@ -2,14 +2,14 @@
 title: Изменение статуса склада
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/warehouses/updateWarehouseStatus.md"
-fetched_at: "2026-09-16T02:28:28Z"
-content_sha: 70434c3f9e9805c8
+fetched_at: "2026-09-22T02:28:04Z"
+content_sha: b8adccddefc5ea77
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.57.4
+    content: Diplodoc Platform v5.61.0
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/warehouses/updateWarehouseStatus.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/warehouses/updateWarehouseStatus.md

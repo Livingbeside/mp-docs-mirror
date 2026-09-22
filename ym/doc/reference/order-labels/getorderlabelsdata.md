@@ -2,14 +2,14 @@
 title: Данные для изготовления ярлыков
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/order-labels/getOrderLabelsData.md"
-fetched_at: "2026-09-16T02:27:42Z"
-content_sha: 2baba0055283d122
+fetched_at: "2026-09-22T02:27:20Z"
+content_sha: 46610ff33610e125
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.57.4
+    content: Diplodoc Platform v5.61.0
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/order-labels/getOrderLabelsData.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/order-labels/getOrderLabelsData.md

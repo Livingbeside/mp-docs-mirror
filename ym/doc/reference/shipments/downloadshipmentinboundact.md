@@ -2,14 +2,14 @@
 title: Фактический акт приема-передачи
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/shipments/downloadShipmentInboundAct.md"
-fetched_at: "2026-09-16T02:27:40Z"
-content_sha: 69190b85bf922c98
+fetched_at: "2026-09-22T02:27:17Z"
+content_sha: 9aed85093b942546
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.57.4
+    content: Diplodoc Platform v5.61.0
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/shipments/downloadShipmentInboundAct.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/shipments/downloadShipmentInboundAct.md

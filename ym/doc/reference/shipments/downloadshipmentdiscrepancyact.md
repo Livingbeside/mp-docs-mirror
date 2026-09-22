@@ -2,14 +2,14 @@
 title: Акт расхождений
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/shipments/downloadShipmentDiscrepancyAct.md"
-fetched_at: "2026-09-16T02:27:39Z"
-content_sha: fbf2abed4e5d159e
+fetched_at: "2026-09-22T02:27:16Z"
+content_sha: 4de22e5b1a9f54c1
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.57.4
+    content: Diplodoc Platform v5.61.0
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/shipments/downloadShipmentDiscrepancyAct.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/shipments/downloadShipmentDiscrepancyAct.md

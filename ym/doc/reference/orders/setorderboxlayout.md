@@ -2,14 +2,14 @@
 title: Подготовка заказа
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/orders/setOrderBoxLayout.md"
-fetched_at: "2026-09-16T02:27:27Z"
-content_sha: 8576216dee575ccd
+fetched_at: "2026-09-22T02:27:03Z"
+content_sha: 7623d9678fba846e
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.57.4
+    content: Diplodoc Platform v5.61.0
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/orders/setOrderBoxLayout.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/orders/setOrderBoxLayout.md
@@ -1829,7 +1829,7 @@ alternate:
         type: boolean
         default: false
     $defs:
-      /home/sandbox/.ya/build/build_root/m7cc/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/orders/api/setOrderBoxLayout.yaml#/OrderBoxLayoutPartialCountDTO:
+      /home/sandbox/.ya/build/build_root/jc95/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/orders/api/setOrderBoxLayout.yaml#/OrderBoxLayoutPartialCountDTO:
         description: Информация о части товара в коробке.
         type: object
         required:

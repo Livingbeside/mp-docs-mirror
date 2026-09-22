@@ -2,14 +2,14 @@
 title: Включение/выключение модели работы склада
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/warehouses/updateWarehouseModelStatus.md"
-fetched_at: "2026-09-16T02:28:20Z"
-content_sha: 6a56c824f8258d16
+fetched_at: "2026-09-22T02:27:56Z"
+content_sha: 6dd62247d7eba9d1
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.57.4
+    content: Diplodoc Platform v5.61.0
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/warehouses/updateWarehouseModelStatus.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/warehouses/updateWarehouseModelStatus.md
@@ -901,7 +901,7 @@ alternate:
           * `false` — отключена.
         type: boolean
     $defs:
-      /home/sandbox/.ya/build/build_root/m7cc/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/common/schemas.yaml#/WarehouseProgramType:
+      /home/sandbox/.ya/build/build_root/jc95/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/common/schemas.yaml#/WarehouseProgramType:
         description: |
           Модель работы:
   

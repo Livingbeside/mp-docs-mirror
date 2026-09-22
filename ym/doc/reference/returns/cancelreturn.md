@@ -2,14 +2,14 @@
 title: Отмена возврата
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/returns/cancelReturn.md"
-fetched_at: "2026-09-16T02:27:53Z"
-content_sha: 4c4df43a71939570
+fetched_at: "2026-09-22T02:27:31Z"
+content_sha: ae5cd7876cf21d54
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.57.4
+    content: Diplodoc Platform v5.61.0
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/returns/cancelReturn.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/returns/cancelReturn.md

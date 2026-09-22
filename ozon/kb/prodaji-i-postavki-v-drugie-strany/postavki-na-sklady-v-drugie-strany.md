@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /prodaji-i-postavki-v-drugie-strany/postavki-na-sklady-v-drugie-strany
 source: "https://seller-edu.ozon.ru/libra/prodaji-i-postavki-v-drugie-strany/postavki-na-sklady-v-drugie-strany"
-updated: "2026-04-02 14:13:29"
+updated: "2026-09-21 10:33:49"
 doc_id: 12070
-fetched_at: "2026-08-28T12:11:14Z"
-content_sha: 521c4f53fe0fb48e
+fetched_at: "2026-09-22T02:23:09Z"
+content_sha: d275d80fdfca2ae3
 ---
 
 # Поставки на склады в другие страны
@@ -16,7 +16,7 @@ _Главная / Продажи и поставки за рубеж_
 
 Как поставить товары на склады в ЕАЭС: стоимость и ограничения
 
-Если ваши товары хранятся на складах в РФ, Казахстане или Беларуси и продаются в странах ЕАЭС, они реализуются по одному из сценариев:
+Если ваши товары находятся на складах в РФ, Казахстане или Беларуси и продаются в странах ЕАЭС, они реализуются по одному из сценариев:
 
 [стандартный процесс продаж](/fbo/warehouses/products-in-different-regions) — при котором вам необходимо самостоятельно подавать статистические формы учёта. [Как это сделать](/finances-documents/additional-information/statisticheskaya-forma-ucheta)
 
@@ -25,8 +25,6 @@ _Главная / Продажи и поставки за рубеж_
 Проверить, куда отправились ваши товары и как именно их продали, можно в отчёте по заказам в разделе **[Аналитика → Отчеты → Заказы](https://seller.ozon.ru/app/analytics/fulfillment-reports/all-products)**.
 
 # Как поставить товары
-
-Документы для поставок любым способом должны быть печатными, а в качестве грузополучателя указан юридический адрес склада.
 
 На данный момент привезти товары самостоятельно или с помощью сторонней службы доставки можно на склады в Казахстане и Беларуси:
 
@@ -47,7 +45,7 @@ _Главная / Продажи и поставки за рубеж_
 
 сопроводительная накладная на товары (СНТ). Заверять в налоговом органе не нужно для всех товаров. СНТ может выпустить только казахстанское юрлицо.
 
-Без сопроводительных документов вывезти товары из России на склад хранения в Казахстан не получится.
+Без сопроводительных документов вывезти товары из России на склад размещения в Казахстан не получится.
 
 Беларусь
 
@@ -67,13 +65,13 @@ _Главная / Продажи и поставки за рубеж_
 
 Сдать поставку можно на любую точку приёма в России. Дополнительные документы на складе не понадобятся — всё как при поставках по РФ. Стоимость закрепили в разделе [«Комиссии и тарифы»](/commissions-tariffs/legal-information/full-actual-commissions#2-2-8-%D1%83%D1%81%D0%BB%D1%83%D0%B3%D0%B8-%D0%BF%D0%BE-%D1%82%D1%80%D0%B0%D0%BD%D1%81%D0%BF%D0%BE%D1%80%D1%82%D0%B8%D1%80%D0%BE%D0%B2%D0%BA%D0%B5-%D1%82%D0%BE%D0%B2%D0%B0%D1%80%D0%B0-%D1%81-%D1%82%D1%80%D0%B0%D0%BD%D0%B7%D0%B8%D1%82%D0%BD%D0%BE%D0%B3%D0%BE-%D1%81%D0%BA%D0%BB%D0%B0%D0%B4%D0%B0-%D0%B8%D0%BB%D0%B8-%D1%81%D0%BE%D1%80%D1%82%D0%B8%D1%80%D0%BE%D0%B2%D0%BE%D1%87%D0%BD%D0%BE%D0%B3%D0%BE-%D1%86%D0%B5%D0%BD%D1%82%D1%80%D0%B0-%D0%BD%D0%B0-%D0%BA%D0%BE%D0%BD%D0%B5%D1%87%D0%BD%D1%8B%D0%B8-%D1%81%D0%BA%D0%BB%D0%B0%D0%B4-%D0%B8%D0%BB%D0%B8-%D1%80%D0%B0%D1%81%D0%BF%D1%80%D0%B5%D0%B4%D0%B5%D0%BB%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D1%8B%D0%B8-%D1%86%D0%B5%D0%BD%D1%82%D1%80-%D0%B8-%D1%83%D1%81%D0%BB%D1%83%D0%B3%D0%B8-%D0%BF%D0%BE-%D1%82%D1%80%D0%B0%D0%BD%D1%81%D0%BF%D0%BE%D1%80%D1%82%D0%B8%D1%80%D0%BE%D0%B2%D0%BA%D0%B5-%D1%82%D0%BE%D0%B2%D0%B0%D1%80%D0%B0-%D1%81-%D1%80%D0%B0%D1%81%D0%BF%D1%80%D0%B5%D0%B4%D0%B5%D0%BB%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%BE%D0%B3%D0%BE-%D1%86%D0%B5%D0%BD%D1%82%D1%80%D0%B0-%D0%BD%D0%B0-%D0%BA%D0%BE%D0%BD%D0%B5%D1%87%D0%BD%D1%8B%D0%B8-%D1%81%D0%BA%D0%BB%D0%B0%D0%B4).
 
-С 18 февраля 2025 года даём скидку 50% на услугу кросс-докинга из России в Казахстан, если передаёте поставку на СЦ.
-
 [Подробнее о стоимости и сроках доставки кросс-докингом](/fbo/crossdoking/delivery-time)
 
 ### Точка приёма в ЕАЭС
 
 Беларусь
+
+Документы для поставок любым способом должны быть печатными, а в качестве грузополучателя указан юридический адрес склада.
 
 | **Точка приёма** | **Юр. адрес точки** |
 | --- | --- |
@@ -88,30 +86,33 @@ _Главная / Продажи и поставки за рубеж_
 
 Казахстан
 
-| **Точка приёма** | **Юр. адрес точки** |
-| --- | --- |
-| [АЛМАТЫ_2_РФЦ_КРОССДОКИНГ](/fbo/warehouses/adresa-skladov-fbo#%D0%B0%D0%BB%D0%BC%D0%B0%D1%82%D1%8B-2-%D1%80%D1%84%D1%86) | ТОО «ОЗОН Маркетплейс Казахстан», БИН / ИИН 211040009534, 050040, Республика Казахстан, город Алматы, Бостандыкский район, Проспект Аль-Фараби, дом 77/7, 6 этаж |
-| [АСТАНА_РФЦ_КРОССДОКИНГ](https://docs.ozon.kz/global/fulfillment/fbo/warehouses/fbo-warehouses-addresses-rk/?country=KZ#%D1%81%D1%86-%D0%B0%D1%81%D1%82%D0%B0%D0%BD%D0%B0) |  |
-| Любой партнёрский ПВЗ | [Посмотреть список пунктов приёма](https://docs.ozon.kz/global/fulfillment/fbo/warehouses/fbo-warehouses-addresses-rk/?country=KZ#%d0%b0%d0%b3%d0%b5%d0%bd%d1%82%d1%81%d0%ba%d0%b8%d0%b5-%d0%bf%d1%83%d0%bd%d0%ba%d1%82%d1%8b-%d0%b2%d1%8b%d0%b4%d0%b0%d1%87%d0%b8-%d0%b7%d0%b0%d0%ba%d0%b0%d0%b7%d0%be%d0%b2) [Посмотреть на карте](/fbo/warehouses/adresa-skladov-fbo#%D0%BA%D0%B0%D1%80%D1%82%D0%B0-%D0%BF%D1%83%D0%BD%D0%BA%D1%82%D0%BE%D0%B2-%D1%81%D0%BA%D0%BB%D0%B0%D0%B4%D0%BE%D0%B2-%D0%B8-%D1%81%D0%BE%D1%80%D1%82%D0%B8%D1%80%D0%BE%D0%B2%D0%BE%D1%87%D0%BD%D1%8B%D1%85-%D1%86%D0%B5%D0%BD%D1%82%D1%80%D0%BE%D0%B2) |
+Точки приёмки:
 
-Для отгрузки на склад или в ПВЗ подготовьте:
+[АКТОБЕ_ХАБ_3PL](https://cishelp.ozon.kz/fulfillment/fbo/warehouses/fbo-warehouses-addresses-rk#%D1%81%D1%86-%D0%B0%D0%BA%D1%82%D0%BE%D0%B1%D0%B5)
 
-международную транспортную накладную (CMR). [Скачать бланк CMR (DOC)](https://cdn.ozone.ru/s3/ozon-disk-api/Seller-edu/files/fbo/documents/blank-cmr_1707734141.doc)
+[АЛМАТЫ_2_ХАБ_КРОССДОКИНГ](https://seller-edu.ozon.ru/libra/fbo/warehouses/adresa-skladov-fbo#%D0%B0%D0%BB%D0%BC%D0%B0%D1%82%D1%8B-2-%D1%85%D0%B0%D0%B1)
 
-товарно-транспортную накладную (ТТН). [Скачать шаблон ТТН в Excel](https://cdn.ozone.ru/s3/ozon-disk-api/Seller-edu/files/fbo/documents/shablon-ttn_1707734188.xlsx)
+[АСТАНА_РФЦ_КРОССДОКИНГ](https://docs.ozon.kz/global/fulfillment/fbo/warehouses/fbo-warehouses-addresses-rk/?country=KZ#%D1%81%D1%86-%D0%B0%D1%81%D1%82%D0%B0%D0%BD%D0%B0)
+
+[АТЫРАУ_ХАБ_3PL ](https://cishelp.ozon.kz/fulfillment/fbo/warehouses/fbo-warehouses-addresses-rk#%D1%81%D1%86-%D0%B0%D1%82%D1%8B%D1%80%D0%B0%D1%83)
+
+[УСТЬ_КАМЕНОГОРСК_ХАБ_3PL](https://cishelp.ozon.kz/fulfillment/fbo/warehouses/fbo-warehouses-addresses-rk#%D1%81%D1%86-%D1%83%D1%81%D1%82%D1%8C-%D0%BA%D0%B0%D0%BC%D0%B5%D0%BD%D0%BE%D0%B3%D0%BE%D1%80%D1%81%D0%BA)
+
+[ШЫМКЕНТ_ХАБ_3PL](https://cishelp.ozon.kz/fulfillment/fbo/warehouses/fbo-warehouses-addresses-rk#%D1%81%D1%86-%D1%88%D1%8B%D0%BC%D0%BA%D0%B5%D0%BD%D1%82)
+
+Любой партнёрский ПВЗ. [Посмотреть список пунктов приёма](https://docs.ozon.kz/global/fulfillment/fbo/warehouses/fbo-warehouses-addresses-rk/?country=KZ#%d0%b0%d0%b3%d0%b5%d0%bd%d1%82%d1%81%d0%ba%d0%b8%d0%b5-%d0%bf%d1%83%d0%bd%d0%ba%d1%82%d1%8b-%d0%b2%d1%8b%d0%b4%d0%b0%d1%87%d0%b8-%d0%b7%d0%b0%d0%ba%d0%b0%d0%b7%d0%be%d0%b2)
+
+Для отгрузки на склад или в ПВЗ дополнительные документы не требуются.
 
 Кыргызстан
 
-| **Склад** | **Юр. адрес склада** |
-| --- | --- |
-| [БИШКЕК_ХАБ_ЧУЙСКАЯ](https://docs.ozon.ru/global/fulfillment/fbo/warehouses/fbo-warehouses-addresses-kgs/?country=KG#%D0%B1%D0%B8%D1%88%D0%BA%D0%B5%D0%BA) | ОсОО «АДР Бишкек», ИНН 2111202310158, Кыргызская Республика, г. Бишкек, пр. Ч. Айтматова, д. 16, кв. 68 |
-| Любой партнёрский ПВЗ | [Посмотреть список пунктов приёма](https://docs.ozon.ru/global/fulfillment/fbo/warehouses/fbo-warehouses-addresses-kgs/?country=KG#%d0%b0%d0%b3%d0%b5%d0%bd%d1%82%d1%81%d0%ba%d0%b8%d0%b5-%d0%bf%d1%83%d0%bd%d0%ba%d1%82%d1%8b-%d0%b2%d1%8b%d0%b4%d0%b0%d1%87%d0%b8-%d0%b8-%d0%bf%d1%83%d0%bd%d0%ba%d1%82%d1%8b-%d0%bf%d1%80%d0%b8%d1%91%d0%bc%d0%b0-%d0%b7%d0%b0%d0%ba%d0%b0%d0%b7%d0%be%d0%b2) [Посмотреть на карте](/fbo/warehouses/adresa-skladov-fbo#%D0%BA%D0%B0%D1%80%D1%82%D0%B0-%D0%BF%D1%83%D0%BD%D0%BA%D1%82%D0%BE%D0%B2-%D1%81%D0%BA%D0%BB%D0%B0%D0%B4%D0%BE%D0%B2-%D0%B8-%D1%81%D0%BE%D1%80%D1%82%D0%B8%D1%80%D0%BE%D0%B2%D0%BE%D1%87%D0%BD%D1%8B%D1%85-%D1%86%D0%B5%D0%BD%D1%82%D1%80%D0%BE%D0%B2) |
+Точки приёмки:
 
-Для отгрузки на склад или в ПВЗ подготовьте:
+[БИШКЕК_ХАБ_ЧУЙСКАЯ](https://docs.ozon.ru/global/fulfillment/fbo/warehouses/fbo-warehouses-addresses-kgs/?country=KG#%D0%B1%D0%B8%D1%88%D0%BA%D0%B5%D0%BA)
 
-международную транспортную накладную (CMR). [Скачать бланк CMR (DOC)](https://cdn.ozone.ru/s3/ozon-disk-api/Seller-edu/files/fbo/documents/blank-cmr_1707734141.doc)
+Любой партнёрский ПВЗ. [Посмотреть список пунктов приёма](https://docs.ozon.ru/global/fulfillment/fbo/warehouses/fbo-warehouses-addresses-kgs/?country=KG#%d0%b0%d0%b3%d0%b5%d0%bd%d1%82%d1%81%d0%ba%d0%b8%d0%b5-%d0%bf%d1%83%d0%bd%d0%ba%d1%82%d1%8b-%d0%b2%d1%8b%d0%b4%d0%b0%d1%87%d0%b8-%d0%b8-%d0%bf%d1%83%d0%bd%d0%ba%d1%82%d1%8b-%d0%bf%d1%80%d0%b8%d1%91%d0%bc%d0%b0-%d0%b7%d0%b0%d0%ba%d0%b0%d0%b7%d0%be%d0%b2)
 
-товарно-транспортную накладную (ТТН). [Скачать шаблон ТТН в Excel](https://cdn.ozone.ru/s3/ozon-disk-api/Seller-edu/files/fbo/documents/shablon-ttn_1707734188.xlsx)
+Для отгрузки на склад или в ПВЗ дополнительные документы не требуются.
 
 # Сколько стоит размещение на складе
 
@@ -119,17 +120,13 @@ _Главная / Продажи и поставки за рубеж_
 
 # Какие товары нельзя поставить на склады в другие страны
 
-Ограничения действуют по коду ТН ВЭД в карточке товара. Входящие в список запрещённых к поставкам в конкретную страну:
+Ограничения действуют по коду ТН ВЭД, категории и типу товара. Входящие в список запрещённых к поставкам в конкретную страну:
 
-С  6 апреля 2026 г.
+С 21 сентября 2026 г.
 
-С  1 января 2026 г.
+С 6 апреля по 20 сентября 2026 г.
 
-С 1 сентября 2025 г. по 1 января 2026 г.
-
-С 22 по 31 августа 2025 г.
-
-До 21 августа 2025 г.
+До 5 апреля 2026 г.
 
 # Как вывезти товары
 

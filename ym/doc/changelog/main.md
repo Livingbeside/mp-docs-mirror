@@ -2,14 +2,14 @@
 title: Главные обновления
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/changelog/main.md"
-fetched_at: "2026-09-16T02:27:03Z"
-content_sha: 34ab687e698e01cd
+fetched_at: "2026-09-22T02:26:38Z"
+content_sha: 711b2be52402f754
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.57.4
+    content: Diplodoc Platform v5.61.0
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/changelog/main.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/changelog/main.md

@@ -2,14 +2,14 @@
 title: Доступы к методам по Api-Key
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/concepts/access.md"
-fetched_at: "2026-09-16T02:26:38Z"
-content_sha: b5252d32079b86c9
+fetched_at: "2026-09-22T02:26:10Z"
+content_sha: 899be7b610ba44c6
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.57.4
+    content: Diplodoc Platform v5.61.0
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/concepts/access.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/concepts/access.md

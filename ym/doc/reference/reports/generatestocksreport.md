@@ -2,14 +2,14 @@
 title: Отчет по остаткам на складах партнера
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/reports/generateStocksReport.md"
-fetched_at: "2026-09-16T02:27:58Z"
-content_sha: bff4573b9050452d
+fetched_at: "2026-09-22T02:27:37Z"
+content_sha: 16929251209d07b7
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.57.4
+    content: Diplodoc Platform v5.61.0
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/reports/generateStocksReport.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/reports/generateStocksReport.md
@@ -948,7 +948,7 @@ alternate:
       required: false
       schema:
         $ref: >-
-          /home/sandbox/.ya/build/build_root/m7cc/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/reports/schemas.yaml#/ReportFormatType
+          /home/sandbox/.ya/build/build_root/jc95/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/reports/schemas.yaml#/ReportFormatType
   headers: []
   body: |-
     {

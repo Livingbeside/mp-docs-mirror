@@ -2,14 +2,14 @@
 title: Лимит на установку кванта и минимального количества товаров
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/categories/getCategoriesMaxSaleQuantum.md"
-fetched_at: "2026-09-16T02:28:26Z"
-content_sha: 46effe6706f45172
+fetched_at: "2026-09-22T02:28:02Z"
+content_sha: 9db8485fd0e2d7d4
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.57.4
+    content: Diplodoc Platform v5.61.0
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/categories/getCategoriesMaxSaleQuantum.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/categories/getCategoriesMaxSaleQuantum.md

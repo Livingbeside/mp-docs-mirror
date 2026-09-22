@@ -2,14 +2,14 @@
 title: Редактирование категорийных характеристик товара
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/content/updateOfferContent.md"
-fetched_at: "2026-09-16T02:27:11Z"
-content_sha: fd5cc2c58a6a8c26
+fetched_at: "2026-09-22T02:26:45Z"
+content_sha: 3ed55bf0d07782c0
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.57.4
+    content: Diplodoc Platform v5.61.0
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/content/updateOfferContent.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/content/updateOfferContent.md

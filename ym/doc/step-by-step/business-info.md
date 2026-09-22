@@ -2,14 +2,14 @@
 title: Заказы от бизнеса
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/business-info.md"
-fetched_at: "2026-09-16T02:26:54Z"
-content_sha: b2d2ed06b6efce98
+fetched_at: "2026-09-22T02:26:28Z"
+content_sha: 102e09fc3097dc93
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.57.4
+    content: Diplodoc Platform v5.61.0
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/step-by-step/business-info.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/business-info.md

@@ -2,14 +2,14 @@
 title: Отправка сообщения
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/chats/sendMessageToChat.md"
-fetched_at: "2026-09-16T02:28:18Z"
-content_sha: 8c5763cdcf5df92e
+fetched_at: "2026-09-22T02:27:54Z"
+content_sha: c1c2fc9831303249
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.57.4
+    content: Diplodoc Platform v5.61.0
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/chats/sendMessageToChat.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/chats/sendMessageToChat.md

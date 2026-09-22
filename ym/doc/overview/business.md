@@ -2,14 +2,14 @@
 title: Общие методы
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/overview/business.md"
-fetched_at: "2026-09-16T02:26:59Z"
-content_sha: f20bb28139fe2aa2
+fetched_at: "2026-09-22T02:26:34Z"
+content_sha: 3ee449078dc69773
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.57.4
+    content: Diplodoc Platform v5.61.0
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/overview/business.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/overview/business.md

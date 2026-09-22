@@ -2,14 +2,14 @@
 title: Ограничения на запросы
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/concepts/limits.md"
-fetched_at: "2026-09-16T02:26:45Z"
-content_sha: a1be797b27fdc1ac
+fetched_at: "2026-09-22T02:26:17Z"
+content_sha: 48e79ecf16724756
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.57.4
+    content: Diplodoc Platform v5.61.0
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/concepts/limits.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/concepts/limits.md

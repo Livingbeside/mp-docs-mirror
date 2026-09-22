@@ -2,14 +2,14 @@
 title: Детальная информация по заказам
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/orders-stats/getOrdersStats.md"
-fetched_at: "2026-09-16T02:27:56Z"
-content_sha: bc4272f4e4575305
+fetched_at: "2026-09-22T02:27:34Z"
+content_sha: b36751724543c63c
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.57.4
+    content: Diplodoc Platform v5.61.0
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/orders-stats/getOrdersStats.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/orders-stats/getOrdersStats.md
@@ -1471,6 +1471,7 @@ alternate:
   * `DELIVERY_TO_CUSTOMER` — доставка покупателю (FBY, FBS). Для DBS и Экспресс — если заказ возвращается через логистику Маркета.
   * `EXPRESS_DELIVERY_TO_CUSTOMER` — экспресс-доставка покупателю (Экспресс).
   * `AGENCY` — прием платежа покупателя.
+  * `AGENCY_COMMISSION_3PL` — услуги перевозки и ТЭО.
   * `PAYMENT_TRANSFER` — перевод платежа покупателя.
   * `RETURNED_ORDERS_STORAGE` — хранение невыкупов и возвратов (FBS). Для DBS и Экспресс — если заказ возвращается через логистику Маркета.
   * `SORTING` — обработка заказа (FBS).
@@ -1484,7 +1485,7 @@ alternate:
   
   **Type**: string
   
-  _Enum:_{.json-schema-reset .json-schema-value} `FEE`, `FULFILLMENT`, `LOYALTY_PARTICIPATION_FEE`, `AUCTION_PROMOTION`, `INSTALLMENT`, `DELIVERY_TO_CUSTOMER`, `EXPRESS_DELIVERY_TO_CUSTOMER`, `AGENCY`, `PAYMENT_TRANSFER`, `RETURNED_ORDERS_STORAGE`, `SORTING`, `INTAKE_SORTING`, `RETURN_PROCESSING`, `ILLIQUID_GOODS_SALE`, `CROSSREGIONAL_DELIVERY`, `FULFILLMENT_WITHDRAW`, `ITEM_BOOKING`
+  _Enum:_{.json-schema-reset .json-schema-value} `FEE`, `FULFILLMENT`, `LOYALTY_PARTICIPATION_FEE`, `AUCTION_PROMOTION`, `INSTALLMENT`, `DELIVERY_TO_CUSTOMER`, `EXPRESS_DELIVERY_TO_CUSTOMER`, `AGENCY`, `AGENCY_COMMISSION_3PL`, `PAYMENT_TRANSFER`, `RETURNED_ORDERS_STORAGE`, `SORTING`, `INTAKE_SORTING`, `RETURN_PROCESSING`, `ILLIQUID_GOODS_SALE`, `CROSSREGIONAL_DELIVERY`, `FULFILLMENT_WITHDRAW`, `ITEM_BOOKING`
   
   </div>
   
@@ -1525,6 +1526,7 @@ alternate:
   * `DELIVERY_TO_CUSTOMER` — доставка покупателю (FBY, FBS). Для DBS и Экспресс — если заказ возвращается через логистику Маркета.
   * `EXPRESS_DELIVERY_TO_CUSTOMER` — экспресс-доставка покупателю (Экспресс).
   * `AGENCY` — прием платежа покупателя.
+  * `AGENCY_COMMISSION_3PL` — услуги перевозки и ТЭО.
   * `PAYMENT_TRANSFER` — перевод платежа покупателя.
   * `RETURNED_ORDERS_STORAGE` — хранение невыкупов и возвратов (FBS). Для DBS и Экспресс — если заказ возвращается через логистику Маркета.
   * `SORTING` — обработка заказа (FBS).
@@ -1536,7 +1538,7 @@ alternate:
   * `ITEM_BOOKING` - бронирование товара (только для продавцов Market Yandex Go).
   
   
-  _Enum:_{.json-schema-reset .json-schema-value} `FEE`, `FULFILLMENT`, `LOYALTY_PARTICIPATION_FEE`, `AUCTION_PROMOTION`, `INSTALLMENT`, `DELIVERY_TO_CUSTOMER`, `EXPRESS_DELIVERY_TO_CUSTOMER`, `AGENCY`, `PAYMENT_TRANSFER`, `RETURNED_ORDERS_STORAGE`, `SORTING`, `INTAKE_SORTING`, `RETURN_PROCESSING`, `ILLIQUID_GOODS_SALE`, `CROSSREGIONAL_DELIVERY`, `FULFILLMENT_WITHDRAW`, `ITEM_BOOKING`
+  _Enum:_{.json-schema-reset .json-schema-value} `FEE`, `FULFILLMENT`, `LOYALTY_PARTICIPATION_FEE`, `AUCTION_PROMOTION`, `INSTALLMENT`, `DELIVERY_TO_CUSTOMER`, `EXPRESS_DELIVERY_TO_CUSTOMER`, `AGENCY`, `AGENCY_COMMISSION_3PL`, `PAYMENT_TRANSFER`, `RETURNED_ORDERS_STORAGE`, `SORTING`, `INTAKE_SORTING`, `RETURN_PROCESSING`, `ILLIQUID_GOODS_SALE`, `CROSSREGIONAL_DELIVERY`, `FULFILLMENT_WITHDRAW`, `ITEM_BOOKING`
   {.table-cell}
   ||
   |#{.json-schema-properties}

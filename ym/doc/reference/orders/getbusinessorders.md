@@ -2,14 +2,14 @@
 title: Информация о заказах
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/orders/getBusinessOrders.md"
-fetched_at: "2026-09-16T02:27:26Z"
-content_sha: 6db38db37e1800ac
+fetched_at: "2026-09-22T02:27:02Z"
+content_sha: 4148797d4bd01dd9
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.57.4
+    content: Diplodoc Platform v5.61.0
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/orders/getBusinessOrders.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/orders/getBusinessOrders.md
@@ -4431,6 +4431,325 @@ alternate:
   
   <div class="openapi-entity">
   
+  ### ItemId {#entity-ItemId}
+  
+  Идентификатор товара в заказе.
+  
+  Позволяет идентифицировать товар в рамках заказа.
+  
+  
+  **Type**: integer
+  
+  _Min value:_{.json-schema-reset .json-schema-assertion} `1`
+  
+  </div>
+  
+  <div class="openapi-entity">
+  
+  ### BusinessOrderLineServiceArticle {#entity-BusinessOrderLineServiceArticle}
+  
+  Артикул услуги в системе продавца.
+  
+  Уникальный идентификатор, который продавец задаёт при создании услуги. Используется для всех изменений услуги в рамках заказа.
+  
+  
+  **Type**: string
+  
+  _Example:_{.json-schema-reset .json-schema-example} `example`
+  
+  </div>
+  
+  <div class="openapi-entity">
+  
+  ### BusinessOrderLineServiceStatusType {#entity-BusinessOrderLineServiceStatusType}
+  
+  Статус единицы услуги в заказе.
+  
+  * `CREATED` — создана.
+  
+  * `PROVIDED` — оказана.
+  
+  * `CANCELLED` — отменена.
+  
+  
+  **Type**: string
+  
+  _Enum:_{.json-schema-reset .json-schema-value} `CREATED`, `PROVIDED`, `CANCELLED`
+  
+  </div>
+  
+  <div class="openapi-entity">
+  
+  ### BusinessOrderLineServiceStatusDTO {#entity-BusinessOrderLineServiceStatusDTO}
+  
+  Количество единиц услуги с определенным статусом.
+  
+  #|
+  || **Name** | **Description** ||
+  ||
+  
+  _count_{.json-schema-reset .json-schema-property .json-schema-required}
+  {.table-cell}|
+  **Type**: integer
+  
+  Количество единиц услуги.
+  {.table-cell}
+  ||
+  ||
+  
+  _status_{.json-schema-reset .json-schema-property .json-schema-required}
+  {.table-cell}|
+  **Type**: [BusinessOrderLineServiceStatusType](#entity-BusinessOrderLineServiceStatusType)
+  
+  Статус единицы услуги в заказе.
+  
+  * `CREATED` — создана.
+  
+  * `PROVIDED` — оказана.
+  
+  * `CANCELLED` — отменена.
+  
+  
+  _Enum:_{.json-schema-reset .json-schema-value} `CREATED`, `PROVIDED`, `CANCELLED`
+  {.table-cell}
+  ||
+  |#{.json-schema-properties}
+  
+  {% cut "**Example**" %}{.json-schema-example}
+  
+  ```json translate=no
+  {
+    "status": "CREATED",
+    "count": 0
+  }
+  ```
+  
+  {% endcut %}
+  
+  </div>
+  
+  <div class="openapi-entity">
+  
+  ### BusinessOrderLineServiceCancelReasonType {#entity-BusinessOrderLineServiceCancelReasonType}
+  
+  Причина отмены услуги.
+  
+  * `USER_REQUESTED` — покупатель отказался от услуги.
+  
+  * `SHOP_UNABLE_TO_RENDER` — продавец или его исполнитель не может оказать услугу.
+  
+  * `USER_UNREACHABLE` — не удалось связаться с покупателем по правилам DBS.
+  
+  * `UNKNOWN` — неизвестная причина.
+  
+  
+  **Type**: string
+  
+  _Enum:_{.json-schema-reset .json-schema-value} `USER_REQUESTED`, `SHOP_UNABLE_TO_RENDER`, `USER_UNREACHABLE`, `UNKNOWN`
+  
+  </div>
+  
+  <div class="openapi-entity">
+  
+  ### BusinessOrderLineServiceDTO {#entity-BusinessOrderLineServiceDTO}
+  
+  Услуга в составе заказа.
+  
+  #|
+  || **Name** | **Description** ||
+  ||
+  
+  _count_{.json-schema-reset .json-schema-property .json-schema-required}
+  {.table-cell}|
+  **Type**: integer
+  
+  Количество единиц услуги на момент заказа.
+  
+  _Min value:_{.json-schema-reset .json-schema-assertion} `0`
+  {.table-cell}
+  ||
+  ||
+  
+  _currency_{.json-schema-reset .json-schema-property .json-schema-required}
+  {.table-cell}|
+  **Type**: [CurrencyType](#entity-CurrencyType)
+  
+  Коды валют:
+  
+  * `RUR` — российский рубль.
+  * `UAH` — украинская гривна.
+  * `BYR` — белорусский рубль.
+  * `KZT` — казахстанский тенге.
+  * `UZS` — узбекский сум.
+  
+  
+  _Enum:_{.json-schema-reset .json-schema-value} `RUR`, `USD`, `EUR`, `UAH`, `AUD`, `GBP`, `BYR`, `BYN`, `DKK`, `ISK`, `KZT`, `CAD`, `CNY`, `NOK`, `XDR`, `SGD`, `TRY`, `SEK`, `CHF`, `JPY`, `AZN`, `ALL`, `DZD`, `AOA`, `ARS`, `AMD`, `AFN`, `BHD`, `BGN`, `BOB`, `BWP`, `BND`, `BRL`, `BIF`, `HUF`, `VEF`, `KPW`, `VND`, `GMD`, `GHS`, `GNF`, `HKD`, `GEL`, `AED`, `EGP`, `ZMK`, `ILS`, `INR`, `IDR`, `JOD`, `IQD`, `IRR`, `YER`, `QAR`, `KES`, `KGS`, `COP`, `CDF`, `CRC`, `KWD`, `CUP`, `LAK`, `LVL`, `SLL`, `LBP`, `LYD`, `SZL`, `LTL`, `MUR`, `MRO`, `MKD`, `MWK`, `MGA`, `MYR`, `MAD`, `MXN`, `MZN`, `MDL`, `MNT`, `NPR`, `NGN`, `NIO`, `NZD`, `OMR`, `PKR`, `PYG`, `PEN`, `PLN`, `KHR`, `SAR`, `RON`, `SCR`, `SYP`, `SKK`, `SOS`, `SDG`, `SRD`, `TJS`, `THB`, `TWD`, `BDT`, `TZS`, `TND`, `TMM`, `UGX`, `UZS`, `UYU`, `PHP`, `DJF`, `XAF`, `XOF`, `HRK`, `CZK`, `CLP`, `LKR`, `EEK`, `ETB`, `RSD`, `ZAR`, `KRW`, `NAD`, `TL`, `UE`
+  {.table-cell}
+  ||
+  ||
+  
+  _itemId_{.json-schema-reset .json-schema-property .json-schema-required}
+  {.table-cell}|
+  **Type**: [ItemId](#entity-ItemId)
+  
+  Идентификатор товара в заказе.
+  
+  Позволяет идентифицировать товар в рамках заказа.
+  
+  
+  _Min value:_{.json-schema-reset .json-schema-assertion} `1`
+  
+  _Example:_{.json-schema-reset .json-schema-example} `1`
+  {.table-cell}
+  ||
+  ||
+  
+  _serviceArticle_{.json-schema-reset .json-schema-property .json-schema-required}
+  {.table-cell}|
+  **Type**: [BusinessOrderLineServiceArticle](#entity-BusinessOrderLineServiceArticle)
+  
+  Артикул услуги в системе продавца.
+  
+  Уникальный идентификатор, который продавец задаёт при создании услуги. Используется для всех изменений услуги в рамках заказа.
+  
+  
+  _Example:_{.json-schema-reset .json-schema-example} `example`
+  {.table-cell}
+  ||
+  ||
+  
+  _shopSku_{.json-schema-reset .json-schema-property .json-schema-required}
+  {.table-cell}|
+  **Type**: [ShopSku](#entity-ShopSku)
+  
+  SKU товара услуги в системе продавца.
+  
+  Ваш SKU — идентификатор товара в вашей системе.
+  
+  Правила использования SKU:
+  
+  * У каждого товара SKU должен быть свой.
+  
+  * Уже заданный SKU нельзя освободить и использовать заново для другого товара. Каждый товар должен получать новый идентификатор, до того никогда не использовавшийся в вашем каталоге.
+  
+  SKU товара можно изменить в кабинете продавца на Маркете. О том, как это сделать, читайте [в Справке Маркета для продавцов](https://yandex.ru/support2/marketplace/ru/assortment/operations/edit-sku).
+  
+  {% note warning %}
+  
+  Пробельные символы в начале и конце значения автоматически удаляются. Например, `"  SKU123  "` и `"SKU123"` будут обработаны как одинаковые значения.
+  
+  {% endnote %}
+  
+  [Что такое SKU и как его назначать](https://yandex.ru/support/marketplace/assortment/add/index.html#fields)
+  
+  
+  _Min length:_{.json-schema-reset .json-schema-assertion} `1`
+  
+  _Max length:_{.json-schema-reset .json-schema-assertion} `255`
+  
+  _Pattern:_{.json-schema-reset .json-schema-assertion} `^(?=.*\S.*)[^\x00-\x08\x0A-\x1f\x7f]{1,255}$`
+  
+  _Example:_{.json-schema-reset .json-schema-example} `example`
+  {.table-cell}
+  ||
+  ||
+  
+  _statuses_{.json-schema-reset .json-schema-property .json-schema-required}
+  {.table-cell}|
+  **Type**: [BusinessOrderLineServiceStatusDTO](#entity-BusinessOrderLineServiceStatusDTO)[]
+  
+  Статусы единиц услуги.
+  
+  _Min items:_{.json-schema-reset .json-schema-assertion} `1`
+  
+  {% cut "**Example**" %}{.json-schema-example}
+  
+  ```json translate=no
+  [
+    {
+      "status": "CREATED",
+      "count": 0
+    }
+  ]
+  ```
+  
+  {% endcut %}
+  {.table-cell}
+  ||
+  ||
+  
+  _unitPrice_{.json-schema-reset .json-schema-property .json-schema-required}
+  {.table-cell}|
+  **Type**: number
+  
+  Цена услуги за единицу на момент заказа.
+  {.table-cell}
+  ||
+  ||
+  
+  _updatedAt_{.json-schema-reset .json-schema-property .json-schema-required}
+  {.table-cell}|
+  **Type**: string&lt;date-time&gt;
+  
+  Дата и время последнего обновления услуги.
+  
+  Формат даты: ISO 8601 со смещением относительно UTC.
+  
+  
+  _Example:_{.json-schema-reset .json-schema-example} `2026-08-05T10:15:30+03:00`
+  {.table-cell}
+  ||
+  ||
+  
+  _cancelReason_{.json-schema-reset .json-schema-property}
+  {.table-cell}|
+  **Type**: [BusinessOrderLineServiceCancelReasonType](#entity-BusinessOrderLineServiceCancelReasonType)
+  
+  Причина отмены услуги.
+  
+  Причина отмены услуги.
+  
+  * `USER_REQUESTED` — покупатель отказался от услуги.
+  
+  * `SHOP_UNABLE_TO_RENDER` — продавец или его исполнитель не может оказать услугу.
+  
+  * `USER_UNREACHABLE` — не удалось связаться с покупателем по правилам DBS.
+  
+  * `UNKNOWN` — неизвестная причина.
+  
+  
+  _Enum:_{.json-schema-reset .json-schema-value} `USER_REQUESTED`, `SHOP_UNABLE_TO_RENDER`, `USER_UNREACHABLE`, `UNKNOWN`
+  {.table-cell}
+  ||
+  |#{.json-schema-properties}
+  
+  {% cut "**Example**" %}{.json-schema-example}
+  
+  ```json translate=no
+  {
+    "itemId": 1,
+    "serviceArticle": "example",
+    "shopSku": "example",
+    "count": 0,
+    "unitPrice": 0.5,
+    "currency": "RUR",
+    "statuses": [
+      {
+        "status": "CREATED",
+        "count": 0
+      }
+    ],
+    "cancelReason": "USER_REQUESTED",
+    "updatedAt": "2026-08-05T10:15:30+03:00"
+  }
+  ```
+  
+  {% endcut %}
+  
+  </div>
+  
+  <div class="openapi-entity">
+  
   ### OrderBuyerType {#entity-OrderBuyerType}
   
   Тип покупателя:
@@ -6190,7 +6509,7 @@ alternate:
             - OTHER
         minItems: 1
     $defs:
-      /home/sandbox/.ya/build/build_root/m7cc/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/orders/api/getBusinessOrders.yaml#/OrderDatesFilterDTO:
+      /home/sandbox/.ya/build/build_root/jc95/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/orders/api/getBusinessOrders.yaml#/OrderDatesFilterDTO:
         type: object
         description: Фильтр по датам заказов.
         properties:

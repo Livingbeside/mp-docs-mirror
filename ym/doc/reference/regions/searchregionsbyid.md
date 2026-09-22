@@ -2,14 +2,14 @@
 title: Информация о регионе
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/regions/searchRegionsById.md"
-fetched_at: "2026-09-16T02:28:24Z"
-content_sha: ec898a9e13466457
+fetched_at: "2026-09-22T02:27:59Z"
+content_sha: a1ed5907dd3cda96
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.57.4
+    content: Diplodoc Platform v5.61.0
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/regions/searchRegionsById.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/regions/searchRegionsById.md

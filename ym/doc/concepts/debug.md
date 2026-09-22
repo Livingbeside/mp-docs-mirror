@@ -2,14 +2,14 @@
 title: Логи запросов
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/concepts/debug.md"
-fetched_at: "2026-09-16T02:26:46Z"
-content_sha: 14884d88aaee102d
+fetched_at: "2026-09-22T02:26:18Z"
+content_sha: 60c8de2903b4193a
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.57.4
+    content: Diplodoc Platform v5.61.0
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/concepts/debug.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/concepts/debug.md

@@ -2,14 +2,14 @@
 title: Тестовые заказы
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/concepts/sandbox.md"
-fetched_at: "2026-09-16T02:26:46Z"
-content_sha: d3deeb0dc6bc0103
+fetched_at: "2026-09-22T02:26:19Z"
+content_sha: ab635a7beb57eef5
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.57.4
+    content: Diplodoc Platform v5.61.0
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/concepts/sandbox.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/concepts/sandbox.md

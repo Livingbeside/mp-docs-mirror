@@ -2,14 +2,14 @@
 title: Рекомендованные ставки
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/bids/getBidsRecommendations.md"
-fetched_at: "2026-09-16T02:28:14Z"
-content_sha: f61c475dbbfbe0a7
+fetched_at: "2026-09-22T02:27:50Z"
+content_sha: a365e13b44bfed9a
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.57.4
+    content: Diplodoc Platform v5.61.0
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/bids/getBidsRecommendations.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/bids/getBidsRecommendations.md

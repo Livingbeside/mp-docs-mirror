@@ -2,14 +2,14 @@
 title: Пошаговые инструкции
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/index.md"
-fetched_at: "2026-09-16T02:26:49Z"
-content_sha: f25706c75c294bb8
+fetched_at: "2026-09-22T02:26:22Z"
+content_sha: 126a25fffb9c4384
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.57.4
+    content: Diplodoc Platform v5.61.0
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/step-by-step/index.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/index.md

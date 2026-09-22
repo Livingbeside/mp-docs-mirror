@@ -2,14 +2,14 @@
 title: Перенос заказов в следующую отгрузку
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/shipments/transferOrdersFromShipment.md"
-fetched_at: "2026-09-16T02:27:38Z"
-content_sha: 43a5a762713f6f7f
+fetched_at: "2026-09-22T02:27:14Z"
+content_sha: 59eb5bd2ac9a7c69
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.57.4
+    content: Diplodoc Platform v5.61.0
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/shipments/transferOrdersFromShipment.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/shipments/transferOrdersFromShipment.md

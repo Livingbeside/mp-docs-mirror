@@ -2,14 +2,14 @@
 title: Настройки кабинета
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/businesses/getBusinessSettings.md"
-fetched_at: "2026-09-16T02:27:06Z"
-content_sha: 44c53e33dd76d7d4
+fetched_at: "2026-09-22T02:26:40Z"
+content_sha: 0bc1d7bd3dc2a587
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.57.4
+    content: Diplodoc Platform v5.61.0
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/businesses/getBusinessSettings.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/businesses/getBusinessSettings.md
@@ -130,6 +130,7 @@ alternate:
         "name": "example"
       },
       "settings": {
+        "warehouseModel": "CAMPAIGN",
         "onlyDefaultPrice": true,
         "currency": "RUR"
       },
@@ -181,6 +182,7 @@ alternate:
         "name": "example"
       },
       "settings": {
+        "warehouseModel": "CAMPAIGN",
         "onlyDefaultPrice": true,
         "currency": "RUR"
       },
@@ -208,6 +210,7 @@ alternate:
           "name": "example"
         },
         "settings": {
+          "warehouseModel": "CAMPAIGN",
           "onlyDefaultPrice": true,
           "currency": "RUR"
         },
@@ -345,6 +348,20 @@ alternate:
   
   <div class="openapi-entity">
   
+  ### BusinessWarehouseModelType {#entity-BusinessWarehouseModelType}
+  
+  * `CAMPAIGN` - интерфейс складов на уровне магазинов.
+  * `WAREHOUSE` - интерфейс единых складов на уровне кабинета.
+  
+  
+  **Type**: string
+  
+  _Enum:_{.json-schema-reset .json-schema-value} `CAMPAIGN`, `WAREHOUSE`
+  
+  </div>
+  
+  <div class="openapi-entity">
+  
   ### CurrencyType {#entity-CurrencyType}
   
   Коды валют:
@@ -405,12 +422,26 @@ alternate:
   
   {.table-cell}
   ||
+  ||
+  
+  _warehouseModel_{.json-schema-reset .json-schema-property}
+  {.table-cell}|
+  **Type**: [BusinessWarehouseModelType](#entity-BusinessWarehouseModelType)
+  
+  * `CAMPAIGN` - интерфейс складов на уровне магазинов.
+  * `WAREHOUSE` - интерфейс единых складов на уровне кабинета.
+  
+  
+  _Enum:_{.json-schema-reset .json-schema-value} `CAMPAIGN`, `WAREHOUSE`
+  {.table-cell}
+  ||
   |#{.json-schema-properties}
   
   {% cut "**Example**" %}{.json-schema-example}
   
   ```json translate=no
   {
+    "warehouseModel": "CAMPAIGN",
     "onlyDefaultPrice": true,
     "currency": "RUR"
   }
@@ -498,6 +529,7 @@ alternate:
   
   ```json translate=no
   {
+    "warehouseModel": "CAMPAIGN",
     "onlyDefaultPrice": true,
     "currency": "RUR"
   }
@@ -558,6 +590,7 @@ alternate:
       "name": "example"
     },
     "settings": {
+      "warehouseModel": "CAMPAIGN",
       "onlyDefaultPrice": true,
       "currency": "RUR"
     },

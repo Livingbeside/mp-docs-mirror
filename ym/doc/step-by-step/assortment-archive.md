@@ -2,14 +2,14 @@
 title: Архив товаров
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/assortment-archive.md"
-fetched_at: "2026-09-16T02:26:51Z"
-content_sha: b7e60a242fffbd25
+fetched_at: "2026-09-22T02:26:25Z"
+content_sha: 7e3cdfd5b5de4701
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.57.4
+    content: Diplodoc Platform v5.61.0
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/step-by-step/assortment-archive.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/assortment-archive.md

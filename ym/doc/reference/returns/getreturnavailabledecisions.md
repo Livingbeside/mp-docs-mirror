@@ -2,14 +2,14 @@
 title: Получение возможных решений по возврату
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/returns/getReturnAvailableDecisions.md"
-fetched_at: "2026-09-16T02:27:51Z"
-content_sha: 0cdc623f9bbeca47
+fetched_at: "2026-09-22T02:27:29Z"
+content_sha: ecc05122cf376efc
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.57.4
+    content: Diplodoc Platform v5.61.0
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/returns/getReturnAvailableDecisions.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/returns/getReturnAvailableDecisions.md

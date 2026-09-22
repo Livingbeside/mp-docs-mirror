@@ -2,14 +2,14 @@
 title: Несколько точек продаж
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/outlets/getOutlets.md"
-fetched_at: "2026-09-16T02:27:46Z"
-content_sha: 4fe4e5bcc18b3762
+fetched_at: "2026-09-22T02:27:23Z"
+content_sha: 33fcd507d500d601
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.57.4
+    content: Diplodoc Platform v5.61.0
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/outlets/getOutlets.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/outlets/getOutlets.md

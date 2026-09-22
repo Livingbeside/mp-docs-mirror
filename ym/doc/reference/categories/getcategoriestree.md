@@ -2,14 +2,14 @@
 title: Дерево категорий
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/categories/getCategoriesTree.md"
-fetched_at: "2026-09-16T02:27:07Z"
-content_sha: 1e754f6a8d172e58
+fetched_at: "2026-09-22T02:26:41Z"
+content_sha: b79977ec0267f88a
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.57.4
+    content: Diplodoc Platform v5.61.0
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/categories/getCategoriesTree.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/categories/getCategoriesTree.md
@@ -866,7 +866,7 @@ alternate:
         description: Язык категорий.
         $ref: '#/$defs/LanguageType'
     $defs:
-      /home/sandbox/.ya/build/build_root/m7cc/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/common/schemas.yaml#/LanguageType:
+      /home/sandbox/.ya/build/build_root/jc95/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/common/schemas.yaml#/LanguageType:
         description: |
           Язык:
   

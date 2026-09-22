@@ -2,14 +2,14 @@
 title: Изменение заказа
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/orders/updateOrder.md"
-fetched_at: "2026-09-16T02:27:34Z"
-content_sha: bcbcf3bd677ec31e
+fetched_at: "2026-09-22T02:27:11Z"
+content_sha: d3f928a5d650f5a0
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.57.4
+    content: Diplodoc Platform v5.61.0
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/orders/updateOrder.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/orders/updateOrder.md
@@ -1361,7 +1361,7 @@ alternate:
             description: Продлить срок хранения заказа в пункте выдачи.
             type: boolean
     $defs:
-      /home/sandbox/.ya/build/build_root/m7cc/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/orders/schemas.yaml#/DeliveryIntervalsUpdateOptionDTO:
+      /home/sandbox/.ya/build/build_root/jc95/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/orders/schemas.yaml#/DeliveryIntervalsUpdateOptionDTO:
         type: object
         description: Интервалы дат и времени.
         required:
@@ -1410,7 +1410,7 @@ alternate:
   
                   Формат: `ЧЧ:ММ`.
                 pattern: ^([0-1][0-9]|2[0-3]):[0-5][0-9]$
-      /home/sandbox/.ya/build/build_root/m7cc/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/common/schemas.yaml#/CustomerDTO:
+      /home/sandbox/.ya/build/build_root/jc95/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/common/schemas.yaml#/CustomerDTO:
         type: object
         description: Данные получателя заказа или отправителя возврата.
         required:

@@ -2,14 +2,14 @@
 title: Получение уведомлений
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/push-notifications/reference/sendNotification.md"
-fetched_at: "2026-09-16T02:28:30Z"
-content_sha: 5471c9e34511f9a6
+fetched_at: "2026-09-22T02:28:06Z"
+content_sha: d63f7b664a849699
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.57.4
+    content: Diplodoc Platform v5.61.0
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/push-notifications/reference/sendNotification.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/push-notifications/reference/sendNotification.md
@@ -117,6 +117,7 @@ _notificationType_{.json-schema-reset .json-schema-property .json-schema-require
 * `ORDER_CANCELLATION_REQUEST` — создана заявка на отмену заказа (для DBS-магазинов).
 * `ORDER_RETURN_STATUS_UPDATED` — статус невыкупа или возврата изменен.
 * `ORDER_UPDATED` — заказ изменен.
+* `ORDER_LINE_SERVICE_STATUS_UPDATED` — изменен статус услуги в заказе.
 * `GOODS_FEEDBACK_CREATED` — создан новый отзыв о товаре.
 * `GOODS_FEEDBACK_COMMENT_CREATED` — создан новый комментарий к отзыву о товаре.
 * `CHAT_CREATED` — создан новый чат с покупателем.
@@ -128,12 +129,12 @@ _notificationType_{.json-schema-reset .json-schema-property .json-schema-require
 * `QUESTION_COMMENT_CREATED` — создан новый комментарий к ответу на вопрос.
 
 
-_Enum:_{.json-schema-reset .json-schema-value} `PING`, `ORDER_CREATED`, `ORDER_CANCELLED`, `ORDER_STATUS_UPDATED`, `ORDER_RETURN_CREATED`, `ORDER_CANCELLATION_REQUEST`, `ORDER_RETURN_STATUS_UPDATED`, `ORDER_UPDATED`, `GOODS_FEEDBACK_CREATED`, `GOODS_FEEDBACK_COMMENT_CREATED`, `CHAT_CREATED`, `CHAT_MESSAGE_SENT`, `CHAT_ARBITRAGE_STARTED`, `CHAT_ARBITRAGE_FINISHED`, `QUESTION_CREATED`, `QUESTION_ANSWER_CREATED`, `QUESTION_COMMENT_CREATED`
+_Enum:_{.json-schema-reset .json-schema-value} `PING`, `ORDER_CREATED`, `ORDER_CANCELLED`, `ORDER_STATUS_UPDATED`, `ORDER_RETURN_CREATED`, `ORDER_CANCELLATION_REQUEST`, `ORDER_RETURN_STATUS_UPDATED`, `ORDER_UPDATED`, `ORDER_LINE_SERVICE_STATUS_UPDATED`, `GOODS_FEEDBACK_CREATED`, `GOODS_FEEDBACK_COMMENT_CREATED`, `CHAT_CREATED`, `CHAT_MESSAGE_SENT`, `CHAT_ARBITRAGE_STARTED`, `CHAT_ARBITRAGE_FINISHED`, `QUESTION_CREATED`, `QUESTION_ANSWER_CREATED`, `QUESTION_COMMENT_CREATED`
 {.table-cell}
 ||
 |#{.json-schema-properties}
 
-{% cut "**One of 17 types**" %}{.json-schema-combinators data-marker=or}
+{% cut "**One of 18 types**" %}{.json-schema-combinators data-marker=or}
 
 - **Type**: [PingNotificationDTO](#entity-PingNotificationDTO)
 
@@ -182,7 +183,13 @@ _Enum:_{.json-schema-reset .json-schema-value} `PING`, `ORDER_CREATED`, `ORDER_C
         "count": 0
       }
     ],
-    "createdAt": "2025-01-01T00:00:00Z"
+    "createdAt": "2025-01-01T00:00:00Z",
+    "orderLineServices": [
+      {
+        "itemId": 1,
+        "serviceArticle": "example"
+      }
+    ]
   }
   ```
 
@@ -612,6 +619,35 @@ _Enum:_{.json-schema-reset .json-schema-value} `PING`, `ORDER_CREATED`, `ORDER_C
 
   {% endcut %}
 
+- **Type**: [OrderLineServiceStatusUpdatedNotificationDTO](#entity-OrderLineServiceStatusUpdatedNotificationDTO)
+
+  Уведомление об изменении статуса услуги в заказе.
+
+  `notificationType` = `ORDER_LINE_SERVICE_STATUS_UPDATED`
+
+
+  {% cut "**Example**" %}{.json-schema-example}
+
+  ```json translate=no
+  {
+    "notificationType": "PING",
+    "orderId": 0,
+    "campaignId": 1,
+    "itemId": 1,
+    "serviceArticle": "example",
+    "statuses": [
+      {
+        "status": "CREATED",
+        "count": 0
+      }
+    ],
+    "updatedAt": "2025-01-01T00:00:00Z",
+    "cancelReason": "USER_REQUESTED"
+  }
+  ```
+
+  {% endcut %}
+
 {% endcut %}
 
 </div>
@@ -630,6 +666,7 @@ _Enum:_{.json-schema-reset .json-schema-value} `PING`, `ORDER_CREATED`, `ORDER_C
 * `ORDER_CANCELLATION_REQUEST` — создана заявка на отмену заказа (для DBS-магазинов).
 * `ORDER_RETURN_STATUS_UPDATED` — статус невыкупа или возврата изменен.
 * `ORDER_UPDATED` — заказ изменен.
+* `ORDER_LINE_SERVICE_STATUS_UPDATED` — изменен статус услуги в заказе.
 * `GOODS_FEEDBACK_CREATED` — создан новый отзыв о товаре.
 * `GOODS_FEEDBACK_COMMENT_CREATED` — создан новый комментарий к отзыву о товаре.
 * `CHAT_CREATED` — создан новый чат с покупателем.
@@ -643,7 +680,7 @@ _Enum:_{.json-schema-reset .json-schema-value} `PING`, `ORDER_CREATED`, `ORDER_C
 
 **Type**: string
 
-_Enum:_{.json-schema-reset .json-schema-value} `PING`, `ORDER_CREATED`, `ORDER_CANCELLED`, `ORDER_STATUS_UPDATED`, `ORDER_RETURN_CREATED`, `ORDER_CANCELLATION_REQUEST`, `ORDER_RETURN_STATUS_UPDATED`, `ORDER_UPDATED`, `GOODS_FEEDBACK_CREATED`, `GOODS_FEEDBACK_COMMENT_CREATED`, `CHAT_CREATED`, `CHAT_MESSAGE_SENT`, `CHAT_ARBITRAGE_STARTED`, `CHAT_ARBITRAGE_FINISHED`, `QUESTION_CREATED`, `QUESTION_ANSWER_CREATED`, `QUESTION_COMMENT_CREATED`
+_Enum:_{.json-schema-reset .json-schema-value} `PING`, `ORDER_CREATED`, `ORDER_CANCELLED`, `ORDER_STATUS_UPDATED`, `ORDER_RETURN_CREATED`, `ORDER_CANCELLATION_REQUEST`, `ORDER_RETURN_STATUS_UPDATED`, `ORDER_UPDATED`, `ORDER_LINE_SERVICE_STATUS_UPDATED`, `GOODS_FEEDBACK_CREATED`, `GOODS_FEEDBACK_COMMENT_CREATED`, `CHAT_CREATED`, `CHAT_MESSAGE_SENT`, `CHAT_ARBITRAGE_STARTED`, `CHAT_ARBITRAGE_FINISHED`, `QUESTION_CREATED`, `QUESTION_ANSWER_CREATED`, `QUESTION_COMMENT_CREATED`
 
 </div>
 
@@ -674,6 +711,7 @@ _notificationType_{.json-schema-reset .json-schema-property}
 * `ORDER_CANCELLATION_REQUEST` — создана заявка на отмену заказа (для DBS-магазинов).
 * `ORDER_RETURN_STATUS_UPDATED` — статус невыкупа или возврата изменен.
 * `ORDER_UPDATED` — заказ изменен.
+* `ORDER_LINE_SERVICE_STATUS_UPDATED` — изменен статус услуги в заказе.
 * `GOODS_FEEDBACK_CREATED` — создан новый отзыв о товаре.
 * `GOODS_FEEDBACK_COMMENT_CREATED` — создан новый комментарий к отзыву о товаре.
 * `CHAT_CREATED` — создан новый чат с покупателем.
@@ -685,7 +723,7 @@ _notificationType_{.json-schema-reset .json-schema-property}
 * `QUESTION_COMMENT_CREATED` — создан новый комментарий к ответу на вопрос.
 
 
-_Enum:_{.json-schema-reset .json-schema-value} `PING`, `ORDER_CREATED`, `ORDER_CANCELLED`, `ORDER_STATUS_UPDATED`, `ORDER_RETURN_CREATED`, `ORDER_CANCELLATION_REQUEST`, `ORDER_RETURN_STATUS_UPDATED`, `ORDER_UPDATED`, `GOODS_FEEDBACK_CREATED`, `GOODS_FEEDBACK_COMMENT_CREATED`, `CHAT_CREATED`, `CHAT_MESSAGE_SENT`, `CHAT_ARBITRAGE_STARTED`, `CHAT_ARBITRAGE_FINISHED`, `QUESTION_CREATED`, `QUESTION_ANSWER_CREATED`, `QUESTION_COMMENT_CREATED`
+_Enum:_{.json-schema-reset .json-schema-value} `PING`, `ORDER_CREATED`, `ORDER_CANCELLED`, `ORDER_STATUS_UPDATED`, `ORDER_RETURN_CREATED`, `ORDER_CANCELLATION_REQUEST`, `ORDER_RETURN_STATUS_UPDATED`, `ORDER_UPDATED`, `ORDER_LINE_SERVICE_STATUS_UPDATED`, `GOODS_FEEDBACK_CREATED`, `GOODS_FEEDBACK_COMMENT_CREATED`, `CHAT_CREATED`, `CHAT_MESSAGE_SENT`, `CHAT_ARBITRAGE_STARTED`, `CHAT_ARBITRAGE_FINISHED`, `QUESTION_CREATED`, `QUESTION_ANSWER_CREATED`, `QUESTION_COMMENT_CREATED`
 {.table-cell}
 ||
 ||
@@ -842,6 +880,89 @@ _Example:_{.json-schema-reset .json-schema-example} `example`
 
 <div class="openapi-entity">
 
+### ItemId {#entity-ItemId}
+
+Идентификатор товара в заказе.
+
+Позволяет идентифицировать товар в рамках заказа.
+
+
+**Type**: integer
+
+_Min value:_{.json-schema-reset .json-schema-assertion} `1`
+
+</div>
+
+<div class="openapi-entity">
+
+### BusinessOrderLineServiceArticle {#entity-BusinessOrderLineServiceArticle}
+
+Артикул услуги в системе продавца.
+
+Уникальный идентификатор, который продавец задаёт при создании услуги. Используется для всех изменений услуги в рамках заказа.
+
+
+**Type**: string
+
+_Example:_{.json-schema-reset .json-schema-example} `example`
+
+</div>
+
+<div class="openapi-entity">
+
+### NotificationOrderLineServiceDTO {#entity-NotificationOrderLineServiceDTO}
+
+Информация об услуге в заказе.
+
+#|
+|| **Name** | **Description** ||
+||
+
+_itemId_{.json-schema-reset .json-schema-property .json-schema-required}
+{.table-cell}|
+**Type**: [ItemId](#entity-ItemId)
+
+Идентификатор товара в заказе.
+
+Позволяет идентифицировать товар в рамках заказа.
+
+
+_Min value:_{.json-schema-reset .json-schema-assertion} `1`
+
+_Example:_{.json-schema-reset .json-schema-example} `1`
+{.table-cell}
+||
+||
+
+_serviceArticle_{.json-schema-reset .json-schema-property .json-schema-required}
+{.table-cell}|
+**Type**: [BusinessOrderLineServiceArticle](#entity-BusinessOrderLineServiceArticle)
+
+Артикул услуги в системе продавца.
+
+Уникальный идентификатор, который продавец задаёт при создании услуги. Используется для всех изменений услуги в рамках заказа.
+
+
+_Example:_{.json-schema-reset .json-schema-example} `example`
+{.table-cell}
+||
+|#{.json-schema-properties}
+
+{% cut "**Example**" %}{.json-schema-example}
+
+```json translate=no
+{
+  "itemId": 1,
+  "serviceArticle": "example"
+}
+```
+
+{% endcut %}
+
+</div>
+
+<div class="openapi-entity">
+
 ### OrderCreatedNotificationDTO {#entity-OrderCreatedNotificationDTO}
 
 Уведомление о создании нового заказа.
@@ -935,6 +1056,7 @@ _notificationType_{.json-schema-reset .json-schema-property .json-schema-require
 * `ORDER_CANCELLATION_REQUEST` — создана заявка на отмену заказа (для DBS-магазинов).
 * `ORDER_RETURN_STATUS_UPDATED` — статус невыкупа или возврата изменен.
 * `ORDER_UPDATED` — заказ изменен.
+* `ORDER_LINE_SERVICE_STATUS_UPDATED` — изменен статус услуги в заказе.
 * `GOODS_FEEDBACK_CREATED` — создан новый отзыв о товаре.
 * `GOODS_FEEDBACK_COMMENT_CREATED` — создан новый комментарий к отзыву о товаре.
 * `CHAT_CREATED` — создан новый чат с покупателем.
@@ -946,7 +1068,7 @@ _notificationType_{.json-schema-reset .json-schema-property .json-schema-require
 * `QUESTION_COMMENT_CREATED` — создан новый комментарий к ответу на вопрос.
 
 
-_Enum:_{.json-schema-reset .json-schema-value} `PING`, `ORDER_CREATED`, `ORDER_CANCELLED`, `ORDER_STATUS_UPDATED`, `ORDER_RETURN_CREATED`, `ORDER_CANCELLATION_REQUEST`, `ORDER_RETURN_STATUS_UPDATED`, `ORDER_UPDATED`, `GOODS_FEEDBACK_CREATED`, `GOODS_FEEDBACK_COMMENT_CREATED`, `CHAT_CREATED`, `CHAT_MESSAGE_SENT`, `CHAT_ARBITRAGE_STARTED`, `CHAT_ARBITRAGE_FINISHED`, `QUESTION_CREATED`, `QUESTION_ANSWER_CREATED`, `QUESTION_COMMENT_CREATED`
+_Enum:_{.json-schema-reset .json-schema-value} `PING`, `ORDER_CREATED`, `ORDER_CANCELLED`, `ORDER_STATUS_UPDATED`, `ORDER_RETURN_CREATED`, `ORDER_CANCELLATION_REQUEST`, `ORDER_RETURN_STATUS_UPDATED`, `ORDER_UPDATED`, `ORDER_LINE_SERVICE_STATUS_UPDATED`, `GOODS_FEEDBACK_CREATED`, `GOODS_FEEDBACK_COMMENT_CREATED`, `CHAT_CREATED`, `CHAT_MESSAGE_SENT`, `CHAT_ARBITRAGE_STARTED`, `CHAT_ARBITRAGE_FINISHED`, `QUESTION_CREATED`, `QUESTION_ANSWER_CREATED`, `QUESTION_COMMENT_CREATED`
 {.table-cell}
 ||
 ||
@@ -956,6 +1078,28 @@ _orderId_{.json-schema-reset .json-schema-property .json-schema-required}
 **Type**: integer
 
 Идентификатор заказа.
+{.table-cell}
+||
+||
+
+_orderLineServices_{.json-schema-reset .json-schema-property .json-schema-required}
+{.table-cell}|
+**Type**: [NotificationOrderLineServiceDTO](#entity-NotificationOrderLineServiceDTO)[]
+
+Список услуг в заказе.
+
+{% cut "**Example**" %}{.json-schema-example}
+
+```json translate=no
+[
+  {
+    "itemId": 1,
+    "serviceArticle": "example"
+  }
+]
+```
+
+{% endcut %}
 {.table-cell}
 ||
 |#{.json-schema-properties}
@@ -973,7 +1117,13 @@ _orderId_{.json-schema-reset .json-schema-property .json-schema-required}
       "count": 0
     }
   ],
-  "createdAt": "2025-01-01T00:00:00Z"
+  "createdAt": "2025-01-01T00:00:00Z",
+  "orderLineServices": [
+    {
+      "itemId": 1,
+      "serviceArticle": "example"
+    }
+  ]
 }
 ```
 
@@ -1139,6 +1289,7 @@ _notificationType_{.json-schema-reset .json-schema-property .json-schema-require
 * `ORDER_CANCELLATION_REQUEST` — создана заявка на отмену заказа (для DBS-магазинов).
 * `ORDER_RETURN_STATUS_UPDATED` — статус невыкупа или возврата изменен.
 * `ORDER_UPDATED` — заказ изменен.
+* `ORDER_LINE_SERVICE_STATUS_UPDATED` — изменен статус услуги в заказе.
 * `GOODS_FEEDBACK_CREATED` — создан новый отзыв о товаре.
 * `GOODS_FEEDBACK_COMMENT_CREATED` — создан новый комментарий к отзыву о товаре.
 * `CHAT_CREATED` — создан новый чат с покупателем.
@@ -1150,7 +1301,7 @@ _notificationType_{.json-schema-reset .json-schema-property .json-schema-require
 * `QUESTION_COMMENT_CREATED` — создан новый комментарий к ответу на вопрос.
 
 
-_Enum:_{.json-schema-reset .json-schema-value} `PING`, `ORDER_CREATED`, `ORDER_CANCELLED`, `ORDER_STATUS_UPDATED`, `ORDER_RETURN_CREATED`, `ORDER_CANCELLATION_REQUEST`, `ORDER_RETURN_STATUS_UPDATED`, `ORDER_UPDATED`, `GOODS_FEEDBACK_CREATED`, `GOODS_FEEDBACK_COMMENT_CREATED`, `CHAT_CREATED`, `CHAT_MESSAGE_SENT`, `CHAT_ARBITRAGE_STARTED`, `CHAT_ARBITRAGE_FINISHED`, `QUESTION_CREATED`, `QUESTION_ANSWER_CREATED`, `QUESTION_COMMENT_CREATED`
+_Enum:_{.json-schema-reset .json-schema-value} `PING`, `ORDER_CREATED`, `ORDER_CANCELLED`, `ORDER_STATUS_UPDATED`, `ORDER_RETURN_CREATED`, `ORDER_CANCELLATION_REQUEST`, `ORDER_RETURN_STATUS_UPDATED`, `ORDER_UPDATED`, `ORDER_LINE_SERVICE_STATUS_UPDATED`, `GOODS_FEEDBACK_CREATED`, `GOODS_FEEDBACK_COMMENT_CREATED`, `CHAT_CREATED`, `CHAT_MESSAGE_SENT`, `CHAT_ARBITRAGE_STARTED`, `CHAT_ARBITRAGE_FINISHED`, `QUESTION_CREATED`, `QUESTION_ANSWER_CREATED`, `QUESTION_COMMENT_CREATED`
 {.table-cell}
 ||
 ||
@@ -1381,6 +1532,7 @@ _notificationType_{.json-schema-reset .json-schema-property .json-schema-require
 * `ORDER_CANCELLATION_REQUEST` — создана заявка на отмену заказа (для DBS-магазинов).
 * `ORDER_RETURN_STATUS_UPDATED` — статус невыкупа или возврата изменен.
 * `ORDER_UPDATED` — заказ изменен.
+* `ORDER_LINE_SERVICE_STATUS_UPDATED` — изменен статус услуги в заказе.
 * `GOODS_FEEDBACK_CREATED` — создан новый отзыв о товаре.
 * `GOODS_FEEDBACK_COMMENT_CREATED` — создан новый комментарий к отзыву о товаре.
 * `CHAT_CREATED` — создан новый чат с покупателем.
@@ -1392,7 +1544,7 @@ _notificationType_{.json-schema-reset .json-schema-property .json-schema-require
 * `QUESTION_COMMENT_CREATED` — создан новый комментарий к ответу на вопрос.
 
 
-_Enum:_{.json-schema-reset .json-schema-value} `PING`, `ORDER_CREATED`, `ORDER_CANCELLED`, `ORDER_STATUS_UPDATED`, `ORDER_RETURN_CREATED`, `ORDER_CANCELLATION_REQUEST`, `ORDER_RETURN_STATUS_UPDATED`, `ORDER_UPDATED`, `GOODS_FEEDBACK_CREATED`, `GOODS_FEEDBACK_COMMENT_CREATED`, `CHAT_CREATED`, `CHAT_MESSAGE_SENT`, `CHAT_ARBITRAGE_STARTED`, `CHAT_ARBITRAGE_FINISHED`, `QUESTION_CREATED`, `QUESTION_ANSWER_CREATED`, `QUESTION_COMMENT_CREATED`
+_Enum:_{.json-schema-reset .json-schema-value} `PING`, `ORDER_CREATED`, `ORDER_CANCELLED`, `ORDER_STATUS_UPDATED`, `ORDER_RETURN_CREATED`, `ORDER_CANCELLATION_REQUEST`, `ORDER_RETURN_STATUS_UPDATED`, `ORDER_UPDATED`, `ORDER_LINE_SERVICE_STATUS_UPDATED`, `GOODS_FEEDBACK_CREATED`, `GOODS_FEEDBACK_COMMENT_CREATED`, `CHAT_CREATED`, `CHAT_MESSAGE_SENT`, `CHAT_ARBITRAGE_STARTED`, `CHAT_ARBITRAGE_FINISHED`, `QUESTION_CREATED`, `QUESTION_ANSWER_CREATED`, `QUESTION_COMMENT_CREATED`
 {.table-cell}
 ||
 ||
@@ -1485,6 +1637,7 @@ _notificationType_{.json-schema-reset .json-schema-property .json-schema-require
 * `ORDER_CANCELLATION_REQUEST` — создана заявка на отмену заказа (для DBS-магазинов).
 * `ORDER_RETURN_STATUS_UPDATED` — статус невыкупа или возврата изменен.
 * `ORDER_UPDATED` — заказ изменен.
+* `ORDER_LINE_SERVICE_STATUS_UPDATED` — изменен статус услуги в заказе.
 * `GOODS_FEEDBACK_CREATED` — создан новый отзыв о товаре.
 * `GOODS_FEEDBACK_COMMENT_CREATED` — создан новый комментарий к отзыву о товаре.
 * `CHAT_CREATED` — создан новый чат с покупателем.
@@ -1496,7 +1649,7 @@ _notificationType_{.json-schema-reset .json-schema-property .json-schema-require
 * `QUESTION_COMMENT_CREATED` — создан новый комментарий к ответу на вопрос.
 
 
-_Enum:_{.json-schema-reset .json-schema-value} `PING`, `ORDER_CREATED`, `ORDER_CANCELLED`, `ORDER_STATUS_UPDATED`, `ORDER_RETURN_CREATED`, `ORDER_CANCELLATION_REQUEST`, `ORDER_RETURN_STATUS_UPDATED`, `ORDER_UPDATED`, `GOODS_FEEDBACK_CREATED`, `GOODS_FEEDBACK_COMMENT_CREATED`, `CHAT_CREATED`, `CHAT_MESSAGE_SENT`, `CHAT_ARBITRAGE_STARTED`, `CHAT_ARBITRAGE_FINISHED`, `QUESTION_CREATED`, `QUESTION_ANSWER_CREATED`, `QUESTION_COMMENT_CREATED`
+_Enum:_{.json-schema-reset .json-schema-value} `PING`, `ORDER_CREATED`, `ORDER_CANCELLED`, `ORDER_STATUS_UPDATED`, `ORDER_RETURN_CREATED`, `ORDER_CANCELLATION_REQUEST`, `ORDER_RETURN_STATUS_UPDATED`, `ORDER_UPDATED`, `ORDER_LINE_SERVICE_STATUS_UPDATED`, `GOODS_FEEDBACK_CREATED`, `GOODS_FEEDBACK_COMMENT_CREATED`, `CHAT_CREATED`, `CHAT_MESSAGE_SENT`, `CHAT_ARBITRAGE_STARTED`, `CHAT_ARBITRAGE_FINISHED`, `QUESTION_CREATED`, `QUESTION_ANSWER_CREATED`, `QUESTION_COMMENT_CREATED`
 {.table-cell}
 ||
 ||
@@ -1716,6 +1869,7 @@ _notificationType_{.json-schema-reset .json-schema-property .json-schema-require
 * `ORDER_CANCELLATION_REQUEST` — создана заявка на отмену заказа (для DBS-магазинов).
 * `ORDER_RETURN_STATUS_UPDATED` — статус невыкупа или возврата изменен.
 * `ORDER_UPDATED` — заказ изменен.
+* `ORDER_LINE_SERVICE_STATUS_UPDATED` — изменен статус услуги в заказе.
 * `GOODS_FEEDBACK_CREATED` — создан новый отзыв о товаре.
 * `GOODS_FEEDBACK_COMMENT_CREATED` — создан новый комментарий к отзыву о товаре.
 * `CHAT_CREATED` — создан новый чат с покупателем.
@@ -1727,7 +1881,7 @@ _notificationType_{.json-schema-reset .json-schema-property .json-schema-require
 * `QUESTION_COMMENT_CREATED` — создан новый комментарий к ответу на вопрос.
 
 
-_Enum:_{.json-schema-reset .json-schema-value} `PING`, `ORDER_CREATED`, `ORDER_CANCELLED`, `ORDER_STATUS_UPDATED`, `ORDER_RETURN_CREATED`, `ORDER_CANCELLATION_REQUEST`, `ORDER_RETURN_STATUS_UPDATED`, `ORDER_UPDATED`, `GOODS_FEEDBACK_CREATED`, `GOODS_FEEDBACK_COMMENT_CREATED`, `CHAT_CREATED`, `CHAT_MESSAGE_SENT`, `CHAT_ARBITRAGE_STARTED`, `CHAT_ARBITRAGE_FINISHED`, `QUESTION_CREATED`, `QUESTION_ANSWER_CREATED`, `QUESTION_COMMENT_CREATED`
+_Enum:_{.json-schema-reset .json-schema-value} `PING`, `ORDER_CREATED`, `ORDER_CANCELLED`, `ORDER_STATUS_UPDATED`, `ORDER_RETURN_CREATED`, `ORDER_CANCELLATION_REQUEST`, `ORDER_RETURN_STATUS_UPDATED`, `ORDER_UPDATED`, `ORDER_LINE_SERVICE_STATUS_UPDATED`, `GOODS_FEEDBACK_CREATED`, `GOODS_FEEDBACK_COMMENT_CREATED`, `CHAT_CREATED`, `CHAT_MESSAGE_SENT`, `CHAT_ARBITRAGE_STARTED`, `CHAT_ARBITRAGE_FINISHED`, `QUESTION_CREATED`, `QUESTION_ANSWER_CREATED`, `QUESTION_COMMENT_CREATED`
 {.table-cell}
 ||
 ||
@@ -2051,6 +2205,7 @@ _notificationType_{.json-schema-reset .json-schema-property .json-schema-require
 * `ORDER_CANCELLATION_REQUEST` — создана заявка на отмену заказа (для DBS-магазинов).
 * `ORDER_RETURN_STATUS_UPDATED` — статус невыкупа или возврата изменен.
 * `ORDER_UPDATED` — заказ изменен.
+* `ORDER_LINE_SERVICE_STATUS_UPDATED` — изменен статус услуги в заказе.
 * `GOODS_FEEDBACK_CREATED` — создан новый отзыв о товаре.
 * `GOODS_FEEDBACK_COMMENT_CREATED` — создан новый комментарий к отзыву о товаре.
 * `CHAT_CREATED` — создан новый чат с покупателем.
@@ -2062,7 +2217,7 @@ _notificationType_{.json-schema-reset .json-schema-property .json-schema-require
 * `QUESTION_COMMENT_CREATED` — создан новый комментарий к ответу на вопрос.
 
 
-_Enum:_{.json-schema-reset .json-schema-value} `PING`, `ORDER_CREATED`, `ORDER_CANCELLED`, `ORDER_STATUS_UPDATED`, `ORDER_RETURN_CREATED`, `ORDER_CANCELLATION_REQUEST`, `ORDER_RETURN_STATUS_UPDATED`, `ORDER_UPDATED`, `GOODS_FEEDBACK_CREATED`, `GOODS_FEEDBACK_COMMENT_CREATED`, `CHAT_CREATED`, `CHAT_MESSAGE_SENT`, `CHAT_ARBITRAGE_STARTED`, `CHAT_ARBITRAGE_FINISHED`, `QUESTION_CREATED`, `QUESTION_ANSWER_CREATED`, `QUESTION_COMMENT_CREATED`
+_Enum:_{.json-schema-reset .json-schema-value} `PING`, `ORDER_CREATED`, `ORDER_CANCELLED`, `ORDER_STATUS_UPDATED`, `ORDER_RETURN_CREATED`, `ORDER_CANCELLATION_REQUEST`, `ORDER_RETURN_STATUS_UPDATED`, `ORDER_UPDATED`, `ORDER_LINE_SERVICE_STATUS_UPDATED`, `GOODS_FEEDBACK_CREATED`, `GOODS_FEEDBACK_COMMENT_CREATED`, `CHAT_CREATED`, `CHAT_MESSAGE_SENT`, `CHAT_ARBITRAGE_STARTED`, `CHAT_ARBITRAGE_FINISHED`, `QUESTION_CREATED`, `QUESTION_ANSWER_CREATED`, `QUESTION_COMMENT_CREATED`
 {.table-cell}
 ||
 ||
@@ -2221,6 +2376,7 @@ _notificationType_{.json-schema-reset .json-schema-property .json-schema-require
 * `ORDER_CANCELLATION_REQUEST` — создана заявка на отмену заказа (для DBS-магазинов).
 * `ORDER_RETURN_STATUS_UPDATED` — статус невыкупа или возврата изменен.
 * `ORDER_UPDATED` — заказ изменен.
+* `ORDER_LINE_SERVICE_STATUS_UPDATED` — изменен статус услуги в заказе.
 * `GOODS_FEEDBACK_CREATED` — создан новый отзыв о товаре.
 * `GOODS_FEEDBACK_COMMENT_CREATED` — создан новый комментарий к отзыву о товаре.
 * `CHAT_CREATED` — создан новый чат с покупателем.
@@ -2232,7 +2388,7 @@ _notificationType_{.json-schema-reset .json-schema-property .json-schema-require
 * `QUESTION_COMMENT_CREATED` — создан новый комментарий к ответу на вопрос.
 
 
-_Enum:_{.json-schema-reset .json-schema-value} `PING`, `ORDER_CREATED`, `ORDER_CANCELLED`, `ORDER_STATUS_UPDATED`, `ORDER_RETURN_CREATED`, `ORDER_CANCELLATION_REQUEST`, `ORDER_RETURN_STATUS_UPDATED`, `ORDER_UPDATED`, `GOODS_FEEDBACK_CREATED`, `GOODS_FEEDBACK_COMMENT_CREATED`, `CHAT_CREATED`, `CHAT_MESSAGE_SENT`, `CHAT_ARBITRAGE_STARTED`, `CHAT_ARBITRAGE_FINISHED`, `QUESTION_CREATED`, `QUESTION_ANSWER_CREATED`, `QUESTION_COMMENT_CREATED`
+_Enum:_{.json-schema-reset .json-schema-value} `PING`, `ORDER_CREATED`, `ORDER_CANCELLED`, `ORDER_STATUS_UPDATED`, `ORDER_RETURN_CREATED`, `ORDER_CANCELLATION_REQUEST`, `ORDER_RETURN_STATUS_UPDATED`, `ORDER_UPDATED`, `ORDER_LINE_SERVICE_STATUS_UPDATED`, `GOODS_FEEDBACK_CREATED`, `GOODS_FEEDBACK_COMMENT_CREATED`, `CHAT_CREATED`, `CHAT_MESSAGE_SENT`, `CHAT_ARBITRAGE_STARTED`, `CHAT_ARBITRAGE_FINISHED`, `QUESTION_CREATED`, `QUESTION_ANSWER_CREATED`, `QUESTION_COMMENT_CREATED`
 {.table-cell}
 ||
 ||
@@ -2401,6 +2557,7 @@ _notificationType_{.json-schema-reset .json-schema-property .json-schema-require
 * `ORDER_CANCELLATION_REQUEST` — создана заявка на отмену заказа (для DBS-магазинов).
 * `ORDER_RETURN_STATUS_UPDATED` — статус невыкупа или возврата изменен.
 * `ORDER_UPDATED` — заказ изменен.
+* `ORDER_LINE_SERVICE_STATUS_UPDATED` — изменен статус услуги в заказе.
 * `GOODS_FEEDBACK_CREATED` — создан новый отзыв о товаре.
 * `GOODS_FEEDBACK_COMMENT_CREATED` — создан новый комментарий к отзыву о товаре.
 * `CHAT_CREATED` — создан новый чат с покупателем.
@@ -2412,7 +2569,7 @@ _notificationType_{.json-schema-reset .json-schema-property .json-schema-require
 * `QUESTION_COMMENT_CREATED` — создан новый комментарий к ответу на вопрос.
 
 
-_Enum:_{.json-schema-reset .json-schema-value} `PING`, `ORDER_CREATED`, `ORDER_CANCELLED`, `ORDER_STATUS_UPDATED`, `ORDER_RETURN_CREATED`, `ORDER_CANCELLATION_REQUEST`, `ORDER_RETURN_STATUS_UPDATED`, `ORDER_UPDATED`, `GOODS_FEEDBACK_CREATED`, `GOODS_FEEDBACK_COMMENT_CREATED`, `CHAT_CREATED`, `CHAT_MESSAGE_SENT`, `CHAT_ARBITRAGE_STARTED`, `CHAT_ARBITRAGE_FINISHED`, `QUESTION_CREATED`, `QUESTION_ANSWER_CREATED`, `QUESTION_COMMENT_CREATED`
+_Enum:_{.json-schema-reset .json-schema-value} `PING`, `ORDER_CREATED`, `ORDER_CANCELLED`, `ORDER_STATUS_UPDATED`, `ORDER_RETURN_CREATED`, `ORDER_CANCELLATION_REQUEST`, `ORDER_RETURN_STATUS_UPDATED`, `ORDER_UPDATED`, `ORDER_LINE_SERVICE_STATUS_UPDATED`, `GOODS_FEEDBACK_CREATED`, `GOODS_FEEDBACK_COMMENT_CREATED`, `CHAT_CREATED`, `CHAT_MESSAGE_SENT`, `CHAT_ARBITRAGE_STARTED`, `CHAT_ARBITRAGE_FINISHED`, `QUESTION_CREATED`, `QUESTION_ANSWER_CREATED`, `QUESTION_COMMENT_CREATED`
 {.table-cell}
 ||
 ||
@@ -2537,6 +2694,7 @@ _notificationType_{.json-schema-reset .json-schema-property .json-schema-require
 * `ORDER_CANCELLATION_REQUEST` — создана заявка на отмену заказа (для DBS-магазинов).
 * `ORDER_RETURN_STATUS_UPDATED` — статус невыкупа или возврата изменен.
 * `ORDER_UPDATED` — заказ изменен.
+* `ORDER_LINE_SERVICE_STATUS_UPDATED` — изменен статус услуги в заказе.
 * `GOODS_FEEDBACK_CREATED` — создан новый отзыв о товаре.
 * `GOODS_FEEDBACK_COMMENT_CREATED` — создан новый комментарий к отзыву о товаре.
 * `CHAT_CREATED` — создан новый чат с покупателем.
@@ -2548,7 +2706,7 @@ _notificationType_{.json-schema-reset .json-schema-property .json-schema-require
 * `QUESTION_COMMENT_CREATED` — создан новый комментарий к ответу на вопрос.
 
 
-_Enum:_{.json-schema-reset .json-schema-value} `PING`, `ORDER_CREATED`, `ORDER_CANCELLED`, `ORDER_STATUS_UPDATED`, `ORDER_RETURN_CREATED`, `ORDER_CANCELLATION_REQUEST`, `ORDER_RETURN_STATUS_UPDATED`, `ORDER_UPDATED`, `GOODS_FEEDBACK_CREATED`, `GOODS_FEEDBACK_COMMENT_CREATED`, `CHAT_CREATED`, `CHAT_MESSAGE_SENT`, `CHAT_ARBITRAGE_STARTED`, `CHAT_ARBITRAGE_FINISHED`, `QUESTION_CREATED`, `QUESTION_ANSWER_CREATED`, `QUESTION_COMMENT_CREATED`
+_Enum:_{.json-schema-reset .json-schema-value} `PING`, `ORDER_CREATED`, `ORDER_CANCELLED`, `ORDER_STATUS_UPDATED`, `ORDER_RETURN_CREATED`, `ORDER_CANCELLATION_REQUEST`, `ORDER_RETURN_STATUS_UPDATED`, `ORDER_UPDATED`, `ORDER_LINE_SERVICE_STATUS_UPDATED`, `GOODS_FEEDBACK_CREATED`, `GOODS_FEEDBACK_COMMENT_CREATED`, `CHAT_CREATED`, `CHAT_MESSAGE_SENT`, `CHAT_ARBITRAGE_STARTED`, `CHAT_ARBITRAGE_FINISHED`, `QUESTION_CREATED`, `QUESTION_ANSWER_CREATED`, `QUESTION_COMMENT_CREATED`
 {.table-cell}
 ||
 |#{.json-schema-properties}
@@ -2646,6 +2804,7 @@ _notificationType_{.json-schema-reset .json-schema-property .json-schema-require
 * `ORDER_CANCELLATION_REQUEST` — создана заявка на отмену заказа (для DBS-магазинов).
 * `ORDER_RETURN_STATUS_UPDATED` — статус невыкупа или возврата изменен.
 * `ORDER_UPDATED` — заказ изменен.
+* `ORDER_LINE_SERVICE_STATUS_UPDATED` — изменен статус услуги в заказе.
 * `GOODS_FEEDBACK_CREATED` — создан новый отзыв о товаре.
 * `GOODS_FEEDBACK_COMMENT_CREATED` — создан новый комментарий к отзыву о товаре.
 * `CHAT_CREATED` — создан новый чат с покупателем.
@@ -2657,7 +2816,7 @@ _notificationType_{.json-schema-reset .json-schema-property .json-schema-require
 * `QUESTION_COMMENT_CREATED` — создан новый комментарий к ответу на вопрос.
 
 
-_Enum:_{.json-schema-reset .json-schema-value} `PING`, `ORDER_CREATED`, `ORDER_CANCELLED`, `ORDER_STATUS_UPDATED`, `ORDER_RETURN_CREATED`, `ORDER_CANCELLATION_REQUEST`, `ORDER_RETURN_STATUS_UPDATED`, `ORDER_UPDATED`, `GOODS_FEEDBACK_CREATED`, `GOODS_FEEDBACK_COMMENT_CREATED`, `CHAT_CREATED`, `CHAT_MESSAGE_SENT`, `CHAT_ARBITRAGE_STARTED`, `CHAT_ARBITRAGE_FINISHED`, `QUESTION_CREATED`, `QUESTION_ANSWER_CREATED`, `QUESTION_COMMENT_CREATED`
+_Enum:_{.json-schema-reset .json-schema-value} `PING`, `ORDER_CREATED`, `ORDER_CANCELLED`, `ORDER_STATUS_UPDATED`, `ORDER_RETURN_CREATED`, `ORDER_CANCELLATION_REQUEST`, `ORDER_RETURN_STATUS_UPDATED`, `ORDER_UPDATED`, `ORDER_LINE_SERVICE_STATUS_UPDATED`, `GOODS_FEEDBACK_CREATED`, `GOODS_FEEDBACK_COMMENT_CREATED`, `CHAT_CREATED`, `CHAT_MESSAGE_SENT`, `CHAT_ARBITRAGE_STARTED`, `CHAT_ARBITRAGE_FINISHED`, `QUESTION_CREATED`, `QUESTION_ANSWER_CREATED`, `QUESTION_COMMENT_CREATED`
 {.table-cell}
 ||
 |#{.json-schema-properties}
@@ -2755,6 +2914,7 @@ _notificationType_{.json-schema-reset .json-schema-property .json-schema-require
 * `ORDER_CANCELLATION_REQUEST` — создана заявка на отмену заказа (для DBS-магазинов).
 * `ORDER_RETURN_STATUS_UPDATED` — статус невыкупа или возврата изменен.
 * `ORDER_UPDATED` — заказ изменен.
+* `ORDER_LINE_SERVICE_STATUS_UPDATED` — изменен статус услуги в заказе.
 * `GOODS_FEEDBACK_CREATED` — создан новый отзыв о товаре.
 * `GOODS_FEEDBACK_COMMENT_CREATED` — создан новый комментарий к отзыву о товаре.
 * `CHAT_CREATED` — создан новый чат с покупателем.
@@ -2766,7 +2926,7 @@ _notificationType_{.json-schema-reset .json-schema-property .json-schema-require
 * `QUESTION_COMMENT_CREATED` — создан новый комментарий к ответу на вопрос.
 
 
-_Enum:_{.json-schema-reset .json-schema-value} `PING`, `ORDER_CREATED`, `ORDER_CANCELLED`, `ORDER_STATUS_UPDATED`, `ORDER_RETURN_CREATED`, `ORDER_CANCELLATION_REQUEST`, `ORDER_RETURN_STATUS_UPDATED`, `ORDER_UPDATED`, `GOODS_FEEDBACK_CREATED`, `GOODS_FEEDBACK_COMMENT_CREATED`, `CHAT_CREATED`, `CHAT_MESSAGE_SENT`, `CHAT_ARBITRAGE_STARTED`, `CHAT_ARBITRAGE_FINISHED`, `QUESTION_CREATED`, `QUESTION_ANSWER_CREATED`, `QUESTION_COMMENT_CREATED`
+_Enum:_{.json-schema-reset .json-schema-value} `PING`, `ORDER_CREATED`, `ORDER_CANCELLED`, `ORDER_STATUS_UPDATED`, `ORDER_RETURN_CREATED`, `ORDER_CANCELLATION_REQUEST`, `ORDER_RETURN_STATUS_UPDATED`, `ORDER_UPDATED`, `ORDER_LINE_SERVICE_STATUS_UPDATED`, `GOODS_FEEDBACK_CREATED`, `GOODS_FEEDBACK_COMMENT_CREATED`, `CHAT_CREATED`, `CHAT_MESSAGE_SENT`, `CHAT_ARBITRAGE_STARTED`, `CHAT_ARBITRAGE_FINISHED`, `QUESTION_CREATED`, `QUESTION_ANSWER_CREATED`, `QUESTION_COMMENT_CREATED`
 {.table-cell}
 ||
 ||
@@ -2855,6 +3015,7 @@ _notificationType_{.json-schema-reset .json-schema-property .json-schema-require
 * `ORDER_CANCELLATION_REQUEST` — создана заявка на отмену заказа (для DBS-магазинов).
 * `ORDER_RETURN_STATUS_UPDATED` — статус невыкупа или возврата изменен.
 * `ORDER_UPDATED` — заказ изменен.
+* `ORDER_LINE_SERVICE_STATUS_UPDATED` — изменен статус услуги в заказе.
 * `GOODS_FEEDBACK_CREATED` — создан новый отзыв о товаре.
 * `GOODS_FEEDBACK_COMMENT_CREATED` — создан новый комментарий к отзыву о товаре.
 * `CHAT_CREATED` — создан новый чат с покупателем.
@@ -2866,7 +3027,7 @@ _notificationType_{.json-schema-reset .json-schema-property .json-schema-require
 * `QUESTION_COMMENT_CREATED` — создан новый комментарий к ответу на вопрос.
 
 
-_Enum:_{.json-schema-reset .json-schema-value} `PING`, `ORDER_CREATED`, `ORDER_CANCELLED`, `ORDER_STATUS_UPDATED`, `ORDER_RETURN_CREATED`, `ORDER_CANCELLATION_REQUEST`, `ORDER_RETURN_STATUS_UPDATED`, `ORDER_UPDATED`, `GOODS_FEEDBACK_CREATED`, `GOODS_FEEDBACK_COMMENT_CREATED`, `CHAT_CREATED`, `CHAT_MESSAGE_SENT`, `CHAT_ARBITRAGE_STARTED`, `CHAT_ARBITRAGE_FINISHED`, `QUESTION_CREATED`, `QUESTION_ANSWER_CREATED`, `QUESTION_COMMENT_CREATED`
+_Enum:_{.json-schema-reset .json-schema-value} `PING`, `ORDER_CREATED`, `ORDER_CANCELLED`, `ORDER_STATUS_UPDATED`, `ORDER_RETURN_CREATED`, `ORDER_CANCELLATION_REQUEST`, `ORDER_RETURN_STATUS_UPDATED`, `ORDER_UPDATED`, `ORDER_LINE_SERVICE_STATUS_UPDATED`, `GOODS_FEEDBACK_CREATED`, `GOODS_FEEDBACK_COMMENT_CREATED`, `CHAT_CREATED`, `CHAT_MESSAGE_SENT`, `CHAT_ARBITRAGE_STARTED`, `CHAT_ARBITRAGE_FINISHED`, `QUESTION_CREATED`, `QUESTION_ANSWER_CREATED`, `QUESTION_COMMENT_CREATED`
 {.table-cell}
 ||
 ||
@@ -2968,6 +3129,7 @@ _notificationType_{.json-schema-reset .json-schema-property .json-schema-require
 * `ORDER_CANCELLATION_REQUEST` — создана заявка на отмену заказа (для DBS-магазинов).
 * `ORDER_RETURN_STATUS_UPDATED` — статус невыкупа или возврата изменен.
 * `ORDER_UPDATED` — заказ изменен.
+* `ORDER_LINE_SERVICE_STATUS_UPDATED` — изменен статус услуги в заказе.
 * `GOODS_FEEDBACK_CREATED` — создан новый отзыв о товаре.
 * `GOODS_FEEDBACK_COMMENT_CREATED` — создан новый комментарий к отзыву о товаре.
 * `CHAT_CREATED` — создан новый чат с покупателем.
@@ -2979,7 +3141,7 @@ _notificationType_{.json-schema-reset .json-schema-property .json-schema-require
 * `QUESTION_COMMENT_CREATED` — создан новый комментарий к ответу на вопрос.
 
 
-_Enum:_{.json-schema-reset .json-schema-value} `PING`, `ORDER_CREATED`, `ORDER_CANCELLED`, `ORDER_STATUS_UPDATED`, `ORDER_RETURN_CREATED`, `ORDER_CANCELLATION_REQUEST`, `ORDER_RETURN_STATUS_UPDATED`, `ORDER_UPDATED`, `GOODS_FEEDBACK_CREATED`, `GOODS_FEEDBACK_COMMENT_CREATED`, `CHAT_CREATED`, `CHAT_MESSAGE_SENT`, `CHAT_ARBITRAGE_STARTED`, `CHAT_ARBITRAGE_FINISHED`, `QUESTION_CREATED`, `QUESTION_ANSWER_CREATED`, `QUESTION_COMMENT_CREATED`
+_Enum:_{.json-schema-reset .json-schema-value} `PING`, `ORDER_CREATED`, `ORDER_CANCELLED`, `ORDER_STATUS_UPDATED`, `ORDER_RETURN_CREATED`, `ORDER_CANCELLATION_REQUEST`, `ORDER_RETURN_STATUS_UPDATED`, `ORDER_UPDATED`, `ORDER_LINE_SERVICE_STATUS_UPDATED`, `GOODS_FEEDBACK_CREATED`, `GOODS_FEEDBACK_COMMENT_CREATED`, `CHAT_CREATED`, `CHAT_MESSAGE_SENT`, `CHAT_ARBITRAGE_STARTED`, `CHAT_ARBITRAGE_FINISHED`, `QUESTION_CREATED`, `QUESTION_ANSWER_CREATED`, `QUESTION_COMMENT_CREATED`
 {.table-cell}
 ||
 |#{.json-schema-properties}
@@ -3062,6 +3224,7 @@ _notificationType_{.json-schema-reset .json-schema-property .json-schema-require
 * `ORDER_CANCELLATION_REQUEST` — создана заявка на отмену заказа (для DBS-магазинов).
 * `ORDER_RETURN_STATUS_UPDATED` — статус невыкупа или возврата изменен.
 * `ORDER_UPDATED` — заказ изменен.
+* `ORDER_LINE_SERVICE_STATUS_UPDATED` — изменен статус услуги в заказе.
 * `GOODS_FEEDBACK_CREATED` — создан новый отзыв о товаре.
 * `GOODS_FEEDBACK_COMMENT_CREATED` — создан новый комментарий к отзыву о товаре.
 * `CHAT_CREATED` — создан новый чат с покупателем.
@@ -3073,7 +3236,7 @@ _notificationType_{.json-schema-reset .json-schema-property .json-schema-require
 * `QUESTION_COMMENT_CREATED` — создан новый комментарий к ответу на вопрос.
 
 
-_Enum:_{.json-schema-reset .json-schema-value} `PING`, `ORDER_CREATED`, `ORDER_CANCELLED`, `ORDER_STATUS_UPDATED`, `ORDER_RETURN_CREATED`, `ORDER_CANCELLATION_REQUEST`, `ORDER_RETURN_STATUS_UPDATED`, `ORDER_UPDATED`, `GOODS_FEEDBACK_CREATED`, `GOODS_FEEDBACK_COMMENT_CREATED`, `CHAT_CREATED`, `CHAT_MESSAGE_SENT`, `CHAT_ARBITRAGE_STARTED`, `CHAT_ARBITRAGE_FINISHED`, `QUESTION_CREATED`, `QUESTION_ANSWER_CREATED`, `QUESTION_COMMENT_CREATED`
+_Enum:_{.json-schema-reset .json-schema-value} `PING`, `ORDER_CREATED`, `ORDER_CANCELLED`, `ORDER_STATUS_UPDATED`, `ORDER_RETURN_CREATED`, `ORDER_CANCELLATION_REQUEST`, `ORDER_RETURN_STATUS_UPDATED`, `ORDER_UPDATED`, `ORDER_LINE_SERVICE_STATUS_UPDATED`, `GOODS_FEEDBACK_CREATED`, `GOODS_FEEDBACK_COMMENT_CREATED`, `CHAT_CREATED`, `CHAT_MESSAGE_SENT`, `CHAT_ARBITRAGE_STARTED`, `CHAT_ARBITRAGE_FINISHED`, `QUESTION_CREATED`, `QUESTION_ANSWER_CREATED`, `QUESTION_COMMENT_CREATED`
 {.table-cell}
 ||
 ||
@@ -3174,6 +3337,7 @@ _notificationType_{.json-schema-reset .json-schema-property .json-schema-require
 * `ORDER_CANCELLATION_REQUEST` — создана заявка на отмену заказа (для DBS-магазинов).
 * `ORDER_RETURN_STATUS_UPDATED` — статус невыкупа или возврата изменен.
 * `ORDER_UPDATED` — заказ изменен.
+* `ORDER_LINE_SERVICE_STATUS_UPDATED` — изменен статус услуги в заказе.
 * `GOODS_FEEDBACK_CREATED` — создан новый отзыв о товаре.
 * `GOODS_FEEDBACK_COMMENT_CREATED` — создан новый комментарий к отзыву о товаре.
 * `CHAT_CREATED` — создан новый чат с покупателем.
@@ -3185,7 +3349,7 @@ _notificationType_{.json-schema-reset .json-schema-property .json-schema-require
 * `QUESTION_COMMENT_CREATED` — создан новый комментарий к ответу на вопрос.
 
 
-_Enum:_{.json-schema-reset .json-schema-value} `PING`, `ORDER_CREATED`, `ORDER_CANCELLED`, `ORDER_STATUS_UPDATED`, `ORDER_RETURN_CREATED`, `ORDER_CANCELLATION_REQUEST`, `ORDER_RETURN_STATUS_UPDATED`, `ORDER_UPDATED`, `GOODS_FEEDBACK_CREATED`, `GOODS_FEEDBACK_COMMENT_CREATED`, `CHAT_CREATED`, `CHAT_MESSAGE_SENT`, `CHAT_ARBITRAGE_STARTED`, `CHAT_ARBITRAGE_FINISHED`, `QUESTION_CREATED`, `QUESTION_ANSWER_CREATED`, `QUESTION_COMMENT_CREATED`
+_Enum:_{.json-schema-reset .json-schema-value} `PING`, `ORDER_CREATED`, `ORDER_CANCELLED`, `ORDER_STATUS_UPDATED`, `ORDER_RETURN_CREATED`, `ORDER_CANCELLATION_REQUEST`, `ORDER_RETURN_STATUS_UPDATED`, `ORDER_UPDATED`, `ORDER_LINE_SERVICE_STATUS_UPDATED`, `GOODS_FEEDBACK_CREATED`, `GOODS_FEEDBACK_COMMENT_CREATED`, `CHAT_CREATED`, `CHAT_MESSAGE_SENT`, `CHAT_ARBITRAGE_STARTED`, `CHAT_ARBITRAGE_FINISHED`, `QUESTION_CREATED`, `QUESTION_ANSWER_CREATED`, `QUESTION_COMMENT_CREATED`
 {.table-cell}
 ||
 |#{.json-schema-properties}
@@ -3286,6 +3450,7 @@ _notificationType_{.json-schema-reset .json-schema-property .json-schema-require
 * `ORDER_CANCELLATION_REQUEST` — создана заявка на отмену заказа (для DBS-магазинов).
 * `ORDER_RETURN_STATUS_UPDATED` — статус невыкупа или возврата изменен.
 * `ORDER_UPDATED` — заказ изменен.
+* `ORDER_LINE_SERVICE_STATUS_UPDATED` — изменен статус услуги в заказе.
 * `GOODS_FEEDBACK_CREATED` — создан новый отзыв о товаре.
 * `GOODS_FEEDBACK_COMMENT_CREATED` — создан новый комментарий к отзыву о товаре.
 * `CHAT_CREATED` — создан новый чат с покупателем.
@@ -3297,7 +3462,7 @@ _notificationType_{.json-schema-reset .json-schema-property .json-schema-require
 * `QUESTION_COMMENT_CREATED` — создан новый комментарий к ответу на вопрос.
 
 
-_Enum:_{.json-schema-reset .json-schema-value} `PING`, `ORDER_CREATED`, `ORDER_CANCELLED`, `ORDER_STATUS_UPDATED`, `ORDER_RETURN_CREATED`, `ORDER_CANCELLATION_REQUEST`, `ORDER_RETURN_STATUS_UPDATED`, `ORDER_UPDATED`, `GOODS_FEEDBACK_CREATED`, `GOODS_FEEDBACK_COMMENT_CREATED`, `CHAT_CREATED`, `CHAT_MESSAGE_SENT`, `CHAT_ARBITRAGE_STARTED`, `CHAT_ARBITRAGE_FINISHED`, `QUESTION_CREATED`, `QUESTION_ANSWER_CREATED`, `QUESTION_COMMENT_CREATED`
+_Enum:_{.json-schema-reset .json-schema-value} `PING`, `ORDER_CREATED`, `ORDER_CANCELLED`, `ORDER_STATUS_UPDATED`, `ORDER_RETURN_CREATED`, `ORDER_CANCELLATION_REQUEST`, `ORDER_RETURN_STATUS_UPDATED`, `ORDER_UPDATED`, `ORDER_LINE_SERVICE_STATUS_UPDATED`, `GOODS_FEEDBACK_CREATED`, `GOODS_FEEDBACK_COMMENT_CREATED`, `CHAT_CREATED`, `CHAT_MESSAGE_SENT`, `CHAT_ARBITRAGE_STARTED`, `CHAT_ARBITRAGE_FINISHED`, `QUESTION_CREATED`, `QUESTION_ANSWER_CREATED`, `QUESTION_COMMENT_CREATED`
 {.table-cell}
 ||
 |#{.json-schema-properties}
@@ -3311,6 +3476,274 @@ _Enum:_{.json-schema-reset .json-schema-value} `PING`, `ORDER_CREATED`, `ORDER_C
   "commentId": 0,
   "businessId": 1,
   "createdAt": "2025-01-01T00:00:00Z"
+}
+```
+
+{% endcut %}
+
+</div>
+
+<div class="openapi-entity">
+
+### OrderLineServiceStatusType {#entity-OrderLineServiceStatusType}
+
+Статус оказания услуги:
+
+* `CREATED` — услуга создана, но ещё не оказана.
+* `PROVIDED` — услуга оказана.
+* `CANCELLED` — услуга отменена.
+
+
+**Type**: string
+
+_Enum:_{.json-schema-reset .json-schema-value} `CREATED`, `PROVIDED`, `CANCELLED`
+
+</div>
+
+<div class="openapi-entity">
+
+### NotificationOrderLineServiceStatusDTO {#entity-NotificationOrderLineServiceStatusDTO}
+
+Количество единиц услуги в указанном статусе.
+
+#|
+|| **Name** | **Description** ||
+||
+
+_count_{.json-schema-reset .json-schema-property .json-schema-required}
+{.table-cell}|
+**Type**: integer
+
+Количество единиц услуги в статусе.
+{.table-cell}
+||
+||
+
+_status_{.json-schema-reset .json-schema-property .json-schema-required}
+{.table-cell}|
+**Type**: [OrderLineServiceStatusType](#entity-OrderLineServiceStatusType)
+
+Статус оказания услуги:
+
+* `CREATED` — услуга создана, но ещё не оказана.
+* `PROVIDED` — услуга оказана.
+* `CANCELLED` — услуга отменена.
+
+
+_Enum:_{.json-schema-reset .json-schema-value} `CREATED`, `PROVIDED`, `CANCELLED`
+{.table-cell}
+||
+|#{.json-schema-properties}
+
+{% cut "**Example**" %}{.json-schema-example}
+
+```json translate=no
+{
+  "status": "CREATED",
+  "count": 0
+}
+```
+
+{% endcut %}
+
+</div>
+
+<div class="openapi-entity">
+
+### OrderLineServiceCancelReasonType {#entity-OrderLineServiceCancelReasonType}
+
+Причина отмены услуги:
+
+* `USER_REQUESTED` — покупатель попросил отменить услугу.
+* `SHOP_UNABLE_TO_RENDER` — магазин не может оказать услугу.
+* `USER_UNREACHABLE` — не удалось связаться с покупателем.
+* `UNKNOWN` — неизвестная причина.
+
+
+**Type**: string
+
+_Enum:_{.json-schema-reset .json-schema-value} `USER_REQUESTED`, `SHOP_UNABLE_TO_RENDER`, `USER_UNREACHABLE`, `UNKNOWN`
+
+</div>
+
+<div class="openapi-entity">
+
+### OrderLineServiceStatusUpdatedNotificationDTO {#entity-OrderLineServiceStatusUpdatedNotificationDTO}
+
+Уведомление об изменении статуса услуги в заказе.
+
+`notificationType` = `ORDER_LINE_SERVICE_STATUS_UPDATED`
+
+
+#|
+|| **Name** | **Description** ||
+||
+
+_campaignId_{.json-schema-reset .json-schema-property .json-schema-required}
+{.table-cell}|
+**Type**: [CampaignId](#entity-CampaignId)
+
+Идентификатор кампании (магазина) — технический идентификатор, который представляет ваш магазин в системе Яндекс Маркета при работе через API. Он однозначно связывается с вашим магазином, но предназначен только для автоматизированного взаимодействия.
+
+Его можно узнать с помощью запроса [GET v2/campaigns](https://yandex.ru/dev/market/partner-api/doc/ru/reference/campaigns/getCampaigns.md) или найти в кабинете продавца на Маркете. Нажмите на иконку вашего аккаунта → **Настройки** и в меню слева выберите **API и модули**:
+
+* блок **Идентификатор кампании**;
+* вкладка **Лог запросов** → выпадающий список в блоке **Показывать логи**.
+
+⚠️ Не путайте его с:
+- идентификатором магазина, который отображается в личном кабинете продавца;
+- рекламными кампаниями.
+
+
+_Min value:_{.json-schema-reset .json-schema-assertion} `1`
+
+_Example:_{.json-schema-reset .json-schema-example} `1`
+{.table-cell}
+||
+||
+
+_itemId_{.json-schema-reset .json-schema-property .json-schema-required}
+{.table-cell}|
+**Type**: [ItemId](#entity-ItemId)
+
+Идентификатор товара в заказе.
+
+Позволяет идентифицировать товар в рамках заказа.
+
+
+_Min value:_{.json-schema-reset .json-schema-assertion} `1`
+
+_Example:_{.json-schema-reset .json-schema-example} `1`
+{.table-cell}
+||
+||
+
+_notificationType_{.json-schema-reset .json-schema-property .json-schema-required}
+{.table-cell}|
+**Type**: [NotificationType](#entity-NotificationType)
+
+Тип уведомления:
+
+* `PING` — проверочное уведомление.
+* `ORDER_CREATED` — создан новый заказ.
+* `ORDER_CANCELLED` — заказ отменен.
+* `ORDER_STATUS_UPDATED` — статус заказа изменен.
+* `ORDER_RETURN_CREATED` — создан новый невыкуп или возврат.
+* `ORDER_CANCELLATION_REQUEST` — создана заявка на отмену заказа (для DBS-магазинов).
+* `ORDER_RETURN_STATUS_UPDATED` — статус невыкупа или возврата изменен.
+* `ORDER_UPDATED` — заказ изменен.
+* `ORDER_LINE_SERVICE_STATUS_UPDATED` — изменен статус услуги в заказе.
+* `GOODS_FEEDBACK_CREATED` — создан новый отзыв о товаре.
+* `GOODS_FEEDBACK_COMMENT_CREATED` — создан новый комментарий к отзыву о товаре.
+* `CHAT_CREATED` — создан новый чат с покупателем.
+* `CHAT_MESSAGE_SENT` — добавлено новое сообщение в чате.
+* `CHAT_ARBITRAGE_STARTED` — по обращению покупателя начался спор.
+* `CHAT_ARBITRAGE_FINISHED` — спор завершен.
+* `QUESTION_CREATED` — создан новый вопрос.
+* `QUESTION_ANSWER_CREATED` — создан новый ответ на вопрос.
+* `QUESTION_COMMENT_CREATED` — создан новый комментарий к ответу на вопрос.
+
+
+_Enum:_{.json-schema-reset .json-schema-value} `PING`, `ORDER_CREATED`, `ORDER_CANCELLED`, `ORDER_STATUS_UPDATED`, `ORDER_RETURN_CREATED`, `ORDER_CANCELLATION_REQUEST`, `ORDER_RETURN_STATUS_UPDATED`, `ORDER_UPDATED`, `ORDER_LINE_SERVICE_STATUS_UPDATED`, `GOODS_FEEDBACK_CREATED`, `GOODS_FEEDBACK_COMMENT_CREATED`, `CHAT_CREATED`, `CHAT_MESSAGE_SENT`, `CHAT_ARBITRAGE_STARTED`, `CHAT_ARBITRAGE_FINISHED`, `QUESTION_CREATED`, `QUESTION_ANSWER_CREATED`, `QUESTION_COMMENT_CREATED`
+{.table-cell}
+||
+||
+
+_orderId_{.json-schema-reset .json-schema-property .json-schema-required}
+{.table-cell}|
+**Type**: integer
+
+Идентификатор заказа.
+{.table-cell}
+||
+||
+
+_serviceArticle_{.json-schema-reset .json-schema-property .json-schema-required}
+{.table-cell}|
+**Type**: [BusinessOrderLineServiceArticle](#entity-BusinessOrderLineServiceArticle)
+
+Артикул услуги в системе продавца.
+
+Уникальный идентификатор, который продавец задаёт при создании услуги. Используется для всех изменений услуги в рамках заказа.
+
+
+_Example:_{.json-schema-reset .json-schema-example} `example`
+{.table-cell}
+||
+||
+
+_statuses_{.json-schema-reset .json-schema-property .json-schema-required}
+{.table-cell}|
+**Type**: [NotificationOrderLineServiceStatusDTO](#entity-NotificationOrderLineServiceStatusDTO)[]
+
+Разбивка единиц услуги по статусам после изменения.
+
+_Min items:_{.json-schema-reset .json-schema-assertion} `1`
+
+{% cut "**Example**" %}{.json-schema-example}
+
+```json translate=no
+[
+  {
+    "status": "CREATED",
+    "count": 0
+  }
+]
+```
+
+{% endcut %}
+{.table-cell}
+||
+||
+
+_updatedAt_{.json-schema-reset .json-schema-property .json-schema-required}
+{.table-cell}|
+**Type**: string&lt;date-time&gt;
+
+Дата и время последнего изменения статуса услуги.
+
+Формат даты: ISO 8601 со смещением относительно UTC. Например, `2017-11-21T00:00:00.213Z`.
+
+
+_Example:_{.json-schema-reset .json-schema-example} `2025-01-01T00:00:00Z`
+{.table-cell}
+||
+||
+
+_cancelReason_{.json-schema-reset .json-schema-property}
+{.table-cell}|
+**Type**: [OrderLineServiceCancelReasonType](#entity-OrderLineServiceCancelReasonType)
+
+Причина отмены услуги:
+
+* `USER_REQUESTED` — покупатель попросил отменить услугу.
+* `SHOP_UNABLE_TO_RENDER` — магазин не может оказать услугу.
+* `USER_UNREACHABLE` — не удалось связаться с покупателем.
+* `UNKNOWN` — неизвестная причина.
+
+
+_Enum:_{.json-schema-reset .json-schema-value} `USER_REQUESTED`, `SHOP_UNABLE_TO_RENDER`, `USER_UNREACHABLE`, `UNKNOWN`
+{.table-cell}
+||
+|#{.json-schema-properties}
+
+{% cut "**Example**" %}{.json-schema-example}
+
+```json translate=no
+{
+  "notificationType": "PING",
+  "orderId": 0,
+  "campaignId": 1,
+  "itemId": 1,
+  "serviceArticle": "example",
+  "statuses": [
+    {
+      "status": "CREATED",
+      "count": 0
+    }
+  ],
+  "updatedAt": "2025-01-01T00:00:00Z",
+  "cancelReason": "USER_REQUESTED"
 }
 ```
 

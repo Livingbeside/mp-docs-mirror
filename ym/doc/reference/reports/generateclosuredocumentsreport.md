@@ -2,14 +2,14 @@
 title: Закрывающие документы
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/reports/generateClosureDocumentsReport.md"
-fetched_at: "2026-09-16T02:28:03Z"
-content_sha: df4fad13a123b627
+fetched_at: "2026-09-22T02:27:41Z"
+content_sha: 6511f5ee60d7e84a
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.57.4
+    content: Diplodoc Platform v5.61.0
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/reports/generateClosureDocumentsReport.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/reports/generateClosureDocumentsReport.md
@@ -51,9 +51,9 @@ alternate:
   
   * **Договор на размещение**
   
-    * [универсальный передаточный документ (УПД-1)](*acts-main-utd) — за октябрь 2026 года и последующие месяцы, вместо акта об оказанных услугах и счета-фактуры
-    * [акт об оказанных услугах](*acts-main-act) — за месяцы до октября 2026 года
-    * [счет-фактура](*acts-main-invoice) — за месяцы до октября 2026 года
+    * [универсальный передаточный документ (УПД-1)](*acts-main-utd) (в России формируется за октябрь 2026 года и последующие месяцы, вместо акта об оказанных услугах и счета-фактуры)
+    * [акт об оказанных услугах](*acts-main-act) (в России формируется за месяцы до октября 2026 года)
+    * [счет-фактура](*acts-main-invoice) (в России формируется за месяцы до октября 2026 года)
     * [сводный отчет по данным статистики](*acts-main-report)
     * [отчет об исполнении поручения и о зачете взаимных требований](*acts-main-agent) (отчет агента)
   
@@ -64,11 +64,10 @@ alternate:
   
   * **Договор на маркетинг**
   
-    * [универсальный передаточный документ (УПД-1)](*acts-main-utd) — за август 2026 года и последующие месяцы, вместо акта об оказанных услугах и счета-фактуры
-    * [акт об оказанных услугах](*acts-marketing-act) — за месяцы до августа 2026 года
-    * [счет-фактура](*acts-main-invoice) — за месяцы до августа 2026 года
+    * [универсальный передаточный документ (УПД-1)](*acts-main-utd) (в России формируется за август 2026 года и последующие месяцы, вместо акта об оказанных услугах и счета-фактуры)
+    * [акт об оказанных услугах](*acts-marketing-act) (в России формируется за месяцы до августа 2026 года)
+    * [счет-фактура](*acts-main-invoice) (в России формируется за месяцы до августа 2026 года)
     * [счет-фактура на аванс](*acts-marketing-invoice)
-    * [выписка по лицевому счету](*acts-marketing-account)
     * [детализация к акту](*acts-marketing-details)
   
   {% endcut %}
@@ -963,7 +962,7 @@ alternate:
             - OUTCOME
             - MARKETING
     $defs:
-      /home/sandbox/.ya/build/build_root/m7cc/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/reports/schemas.yaml#/ClosureDocumentsMonthOfYearDTO:
+      /home/sandbox/.ya/build/build_root/jc95/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/reports/schemas.yaml#/ClosureDocumentsMonthOfYearDTO:
         description: |
           Месяц и год.
         type: object
@@ -1008,6 +1007,9 @@ alternate:
 </div>
 <!-- endsource: ru/api/reports/generateClosureDocumentsReport.md -->
 
+[*acts-main-utd]:
+Универсальный передаточный документ со статусом «1» одновременно подтверждает оказание услуг и содержит все обязательные реквизиты счета-фактуры. По нему можно принять НДС к вычету. УПД заменяет отдельные акт и счет-фактуру.
+
 [*acts-main-act]:
 В нем перечислены все услуги, которые Маркет оказал продавцу за прошедший месяц.<br><br>Подробнее об акте читайте в [Справке Маркета для продавцов](https://yandex.ru/support/marketplace/ru/accounting/acts/main/act).
 
@@ -1031,9 +1033,6 @@ alternate:
 
 [*acts-marketing-invoice]:
 Показывает сумму на балансе на начало месяца, которую продавец еще не потратили. Документ пригодится для бухгалтера.
-
-[*acts-marketing-account]:
-Показывает баланс продавца — расходы и остаток на конец месяца.
 
 [*acts-marketing-details]:
 Показывает услуги, оказанные по всем брендам продавца или рекламодателя. Детализация пригодится для учета.

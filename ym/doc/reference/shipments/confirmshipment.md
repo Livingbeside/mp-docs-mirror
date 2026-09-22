@@ -2,14 +2,14 @@
 title: Подтверждение отгрузки
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/shipments/confirmShipment.md"
-fetched_at: "2026-09-16T02:27:37Z"
-content_sha: 3785404ed8a2c50b
+fetched_at: "2026-09-22T02:27:14Z"
+content_sha: 793fc532e78920bb
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.57.4
+    content: Diplodoc Platform v5.61.0
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/shipments/confirmShipment.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/shipments/confirmShipment.md

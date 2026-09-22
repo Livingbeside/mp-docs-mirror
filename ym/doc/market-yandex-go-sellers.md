@@ -2,14 +2,14 @@
 title: Продавцам Market Yandex Go
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/market-yandex-go-sellers.md"
-fetched_at: "2026-09-16T02:26:48Z"
-content_sha: 560f7dcd3eb85565
+fetched_at: "2026-09-22T02:26:21Z"
+content_sha: d70ef8430bf83df9
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.57.4
+    content: Diplodoc Platform v5.61.0
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/market-yandex-go-sellers.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/market-yandex-go-sellers.md

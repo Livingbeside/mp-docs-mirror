@@ -2,14 +2,14 @@
 title: Статусы заказов
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/concepts/dbs-order-status-model.md"
-fetched_at: "2026-09-16T02:26:54Z"
-content_sha: d52acdf6b95cd372
+fetched_at: "2026-09-22T02:26:28Z"
+content_sha: 2c8db64cbf9e6cbf
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.57.4
+    content: Diplodoc Platform v5.61.0
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/concepts/dbs-order-status-model.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/concepts/dbs-order-status-model.md

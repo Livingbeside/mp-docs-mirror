@@ -2,14 +2,14 @@
 title: Статусы FBY-, FBS- и Экспресс-возвратов
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/fby-fbs-express-return-status-model.md"
-fetched_at: "2026-09-16T02:26:55Z"
-content_sha: a4bce2e5e498a9f7
+fetched_at: "2026-09-22T02:26:30Z"
+content_sha: 9c52c18b2f64be13
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.57.4
+    content: Diplodoc Platform v5.61.0
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/step-by-step/fby-fbs-express-return-status-model.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/fby-fbs-express-return-status-model.md

@@ -2,14 +2,14 @@
 title: Получение списка чатов
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/chats/getChats.md"
-fetched_at: "2026-09-16T02:28:17Z"
-content_sha: b90ba7a55e68dce1
+fetched_at: "2026-09-22T02:27:52Z"
+content_sha: 8a9c8c3ab1d8b787
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.57.4
+    content: Diplodoc Platform v5.61.0
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/chats/getChats.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/chats/getChats.md

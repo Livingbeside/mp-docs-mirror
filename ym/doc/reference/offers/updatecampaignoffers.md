@@ -2,14 +2,14 @@
 title: Изменение условий продажи
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/offers/updateCampaignOffers.md"
-fetched_at: "2026-09-16T02:27:08Z"
-content_sha: ed47453f43b9c156
+fetched_at: "2026-09-22T02:26:43Z"
+content_sha: 3c45f4e719466d5e
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.57.4
+    content: Diplodoc Platform v5.61.0
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/offers/updateCampaignOffers.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/offers/updateCampaignOffers.md
@@ -1098,7 +1098,7 @@ alternate:
                   type: integer
                   format: int32
     $defs:
-      /home/sandbox/.ya/build/build_root/m7cc/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/offers/schemas.yaml#/QuantumDTO:
+      /home/sandbox/.ya/build/build_root/jc95/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/offers/schemas.yaml#/QuantumDTO:
         deprecated: true
         x-deprecation-config:
           shutdown-date: '2026-10-19'

@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /fbs/ozon-logistika/samopriemka
 source: "https://seller-edu.ozon.ru/libra/fbs/ozon-logistika/samopriemka"
-updated: "2026-09-08 11:56:52"
+updated: "2026-09-21 09:44:42"
 doc_id: 1780
-fetched_at: "2026-09-09T01:49:09Z"
-content_sha: f297189546b9b6f1
+fetched_at: "2026-09-22T02:23:09Z"
+content_sha: ebe6542ed2f0e5b8
 ---
 
 # Самоприёмка отправлений
@@ -118,8 +118,6 @@ _Главная / Продажа со своего склада (FBS) / Отгр
 
 [Магнитогорск — Моховая (СЦ)](/fbs/punkty-priema/regiony#%D0%BC%D0%B0%D0%B3%D0%BD%D0%B8%D1%82%D0%BE%D0%B3%D0%BE%D1%80%D1%81%D0%BA-%D0%BC%D0%BE%D1%85%D0%BE%D0%B2%D0%B0%D1%8F-%D1%81%D1%86)
 
-[Махачкала — Заводская (СЦ)](https://seller-edu.ozon.ru/libra/fbs/punkty-priema/regiony#махачкала -заводская-сц)
-
 [Миасс — Октября (СЦ)](/fbs/punkty-priema/regiony#%D0%BC%D0%B8%D0%B0%D1%81%D1%81-%D0%BE%D0%BA%D1%82%D1%8F%D0%B1%D1%80%D1%8F-%D1%81%D1%86)
 
 [Мурманск — Объездная (СЦ)](https://seller-edu.ozon.ru/fbs/punkty-priema/regiony#мурманск-объездная-сц)
@@ -156,9 +154,13 @@ _Главная / Продажа со своего склада (FBS) / Отгр
 
 [Псков — Солнечная (СЦ)](/fbs/punkty-priema/regiony#псков-солнечная-сц)
 
+[Пятигорск — Пальмиро (СЦ)](https://seller-edu.ozon.ru/fbs/punkty-priema/regiony#пятигорск-пальмиро-сц)
+
 [Пятигорск — Этока (СЦ)](https://seller-edu.ozon.ru/libra/fbs/punkty-priema/regiony#пятигорск-этока-сц)
 
 [Ростов-на-Дону — Ленина 5 (СЦ)](https://seller-edu.ozon.ru/fbs/punkty-priema/regiony#ростов-на-дону-ленина-5-сц)
+
+[Ростов-на-Дону — Логопарк (СЦ)](https://seller-edu.ozon.ru/fbs/punkty-priema/regiony#%D1%80%D0%BE%D1%81%D1%82%D0%BE%D0%B2-%D0%BD%D0%B0-%D0%B4%D0%BE%D0%BD%D1%83-%D0%BB%D0%BE%D0%B3%D0%BE%D0%BF%D0%B0%D1%80%D0%BA-%D1%81%D1%86)
 
 [Рязань — Восточная (СЦ)](/fbs/punkty-priema/regiony#рязань-восточная-сц)
 
@@ -167,8 +169,6 @@ _Главная / Продажа со своего склада (FBS) / Отгр
 [Самара — Южная (СЦ)](/fbs/punkty-priema/regiony#самара-южная-сц)
 
 [Саранск — Восточное шоссе (СЦ)](https://seller-edu.ozon.ru/fbs/punkty-priema/regiony#саранск-восточное-шоссе-сц)
-
-[Саратов — Елшанский (СЦ)](/fbs/punkty-priema/regiony#саратов-елшанскии-сц)
 
 [Смоленск — Индустриальная (СЦ)](https://seller-edu.ozon.ru/fbs/punkty-priema/regiony#смоленск-индустриальная-сц)
 

@@ -2,14 +2,14 @@
 title: Отчет по движению товаров (FBY)
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/reports/generateGoodsMovementReport.md"
-fetched_at: "2026-09-16T02:28:00Z"
-content_sha: 94c9eba8eedfa43c
+fetched_at: "2026-09-22T02:27:39Z"
+content_sha: 42b0ea2e0f633375
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.57.4
+    content: Diplodoc Platform v5.61.0
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/reports/generateGoodsMovementReport.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/reports/generateGoodsMovementReport.md
@@ -985,7 +985,7 @@ alternate:
       required: false
       schema:
         $ref: >-
-          /home/sandbox/.ya/build/build_root/m7cc/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/reports/schemas.yaml#/ReportFormatType
+          /home/sandbox/.ya/build/build_root/jc95/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/reports/schemas.yaml#/ReportFormatType
   headers: []
   body: |-
     {

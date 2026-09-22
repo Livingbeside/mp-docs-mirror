@@ -2,14 +2,14 @@
 title: Передача количества грузомест
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/orders/setOrderShipmentBoxes.md"
-fetched_at: "2026-09-16T02:28:26Z"
-content_sha: 6a30607dc3bf57d7
+fetched_at: "2026-09-22T02:28:02Z"
+content_sha: 404d28857266efad
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.57.4
+    content: Diplodoc Platform v5.61.0
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/orders/setOrderShipmentBoxes.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/orders/setOrderShipmentBoxes.md

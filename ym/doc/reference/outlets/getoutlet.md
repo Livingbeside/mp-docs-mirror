@@ -2,14 +2,14 @@
 title: Одна точка продаж
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/outlets/getOutlet.md"
-fetched_at: "2026-09-16T02:27:45Z"
-content_sha: 4d6ce493938d7652
+fetched_at: "2026-09-22T02:27:23Z"
+content_sha: ce4f71aa098ae128
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.57.4
+    content: Diplodoc Platform v5.61.0
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/outlets/getOutlet.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/outlets/getOutlet.md
