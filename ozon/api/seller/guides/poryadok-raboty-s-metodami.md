@@ -5,7 +5,7 @@ tag: Process
 group: Общее описание
 kind: guide
 source: "https://docs.ozon.ru/api/seller/"
-content_sha: 95c00f608a84a5b3
+content_sha: 5210dc069d0edb25
 ---
 
 # Порядок работы с методами
@@ -511,7 +511,7 @@ Ozon, товар не будет создан или обновлён.
  сборки: [/v4/posting/fbs/ship/package](#operation/PostingAPI_ShipFbsPostingPackage).
 
 6. Для каждого отправления распечатайте наклейку для идентификации в системе
- Ozon: [/v2/posting/fbs/package-label](#operation/PostingAPI_PostingFBSPackageLabel).
+ Ozon: [/v3/posting/fbs/package-label/create](#operation/PostingFbsPackageLabelCreate) и [/v2/posting/fbs/package-label/get](#operation/PostingFbsPackageLabelGet).
 
 7. Подтвердите отгрузку и запустите формирование транспортной накладной методом [/v2/posting/fbs/act/create](#operation/PostingAPI_PostingFBSActCreate) или создайте отгрузку с помощью метода [/v1/carriage/create](#operation/CarriageAPI_CarriageCreate) и подтвердите её методом [/v1/carriage/approve](#operation/CarriageAPI_CarriageApprove). 
  В ответе методов [/v2/posting/fbs/act/create](#operation/PostingAPI_PostingFBSActCreate) и [/v1/carriage/create](#operation/CarriageAPI_CarriageCreate) вы получите идентификатор созданной перевозки.
@@ -670,7 +670,7 @@ Ozon, товар не будет создан или обновлён.
 8. Получите PDF-документы: [/v2/posting/fbs/act/get-pdf](#operation/PostingAPI_PostingFBSGetAct) и [/v1/carriage/act-discrepancy/pdf](#operation/CarriageActDiscrepancyPDF).
 
 9. Для каждого отправления распечатайте наклейку для идентификации в системе
- Ozon: [/v2/posting/fbs/package-label](#operation/PostingAPI_PostingFBSPackageLabel).
+ Ozon: [/v3/posting/fbs/package-label/create](#operation/PostingFbsPackageLabelCreate) и [/v2/posting/fbs/package-label/get](#operation/PostingFbsPackageLabelGet).
 
 10. После того как вы упаковали все отправления по требованиям из
  раздела [Доверительная приёмка грузового места](https://seller-edu.ozon.ru/docs/fbs/ozon-logistika/doveritel-naya-priemka-gruzovogo-mesta.html#какие-требования-к-грузовому-месту)
@@ -920,7 +920,7 @@ Ozon, товар не будет создан или обновлён.
 
  Вы можете использовать метод для частичной сборки: [/v4/posting/fbs/ship/package](#operation/PostingAPI_ShipFbsPostingPackage).
 
-5. Распечатайте этикетку для идентификации в системе Ozon: [/v2/posting/fbs/package-label](#operation/PostingAPI_PostingFBSPackageLabel). 
+5. Распечатайте этикетку для идентификации в системе Ozon: [/v3/posting/fbs/package-label/create](#operation/PostingFbsPackageLabelCreate) и [/v2/posting/fbs/package-label/get](#operation/PostingFbsPackageLabelGet). 
 
 6. Передайте отправление курьеру.
 
@@ -1071,7 +1071,7 @@ Ozon, товар не будет создан или обновлён.
  этого отправлению будет присвоен трек-номер.
 
  Для каждого отправления распечатайте этикетку для идентификации в системе
- Ozon: [/v2/posting/fbs/package-label](#operation/PostingAPI_PostingFBSPackageLabel).
+ Ozon: [/v3/posting/fbs/package-label/create](#operation/PostingFbsPackageLabelCreate) и [/v2/posting/fbs/package-label/get](#operation/PostingFbsPackageLabelGet).
 
  Передайте отправление в службу доставки. Все статусы от «Доставляется» до «Доставлено» будет передавать служба доставки.
 

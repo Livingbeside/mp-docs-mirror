@@ -2,25 +2,21 @@
 title: Добавить или обновить товары в автодобавлении в акцию
 api: ozon-seller
 method: POST
-path: /v1/actions/auto-add/products/update
-operation_id: ActionsAutoAddProductsUpdate
+path: /v2/actions/auto-add/products/update
+operation_id: ActionsAutoAddProductsUpdateV2
 tags:
-  - PromosBeta
+  - Promos
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
-deprecated: true
-content_sha: 4ebb2dc1ca129800
+deprecated: false
+content_sha: f142ffcdd21ce579
 ---
 
 # Добавить или обновить товары в автодобавлении в акцию
 
-`POST /v1/actions/auto-add/products/update`
+`POST /v2/actions/auto-add/products/update`
 
-> ⚠️ Метод помечен как **deprecated**.
-
-13 октября 2026 года отключим метод. Переключитесь на [/v2/actions/auto-add/products/update](#operation/ActionsAutoAddProductsUpdateV2).
-
-Вы можете оставить обратную связь о работе метода в [комментариях](https://dev.ozon.ru/community/2009-Novye-metody-dlia-upravleniia-avtodobavleniem-tovarov-v-aktsii/) в сообществе разработчиков Ozon for dev.
+До 13 октября 2026 года метод работает аналогично [/v1/actions/auto-add/products/update](#operation/ActionsAutoAddProductsUpdate), изменить цену на карточке товара с помощью метода не получится.
 
 ## Параметры
 
@@ -33,13 +29,14 @@ content_sha: 4ebb2dc1ca129800
 
 **Тело запроса** (`application/json`):
 
-- `action_id` — integer<uint64>. Идентификатор акции.
-- `auto_add_date` — string<date-time>. Дата и время автодобавления товаров в акцию из параметра `result.auto_add_dates` в ответе метода [/v1/actions](#operation/Promos).
-- `to_update` — array[object]. Список товаров, которые нужно добавить или обновить в автодобавлении.
-  - `action_price` — number<double>. Цена товара по акции.
-  - `currency` — string. Валюта цены.
-  - `product_id` — integer<uint64>. Идентификатор товара, который нужно добавить или обновить.
-  - `quantity` — integer<uint64>. Количество товаров в акции.
+- `action_id` — integer<uint64> **обязательный**. Идентификатор акции.
+- `auto_add_date` — string<date-time> **обязательный**. Дата и время автодобавления товаров в акцию из параметра `result.auto_add_dates` в ответе метода [/v1/actions](#operation/Promos).
+- `products` — array[object] **обязательный**. Список товаров, которые нужно добавить или обновить в автодобавлении.
+  - `action_price` — object. Предельная цена товара. Изменим предельную цену в карточке товара в дату `auto_add_date`, даже если предельная цена была установлена ранее. Если значение меньше или равно лимиту акции «Эластичный бустинг» или «Максимальный бустинг» — добавим товар в акцию, если больше — удалим товар из акции.
+    - `amount` — string. Сумма.
+    - `currency` — string. Валюта.
+  - `id` — integer<uint64>. Идентификатор товара.
+  - `stock` — integer<uint64>. Количество единиц товара в акции для акции «Промокоды». Не указывайте для акций «Эластичный бустинг» и «Максимальный бустинг».
 
 ## Ответы
 
@@ -48,17 +45,20 @@ content_sha: 4ebb2dc1ca129800
 - `below_min_price` — array[object]. Список товаров с ценой ниже минимальной.
   - `key` — integer<uint64>. Идентификатор товара в системе Ozon — `product_id`.
   - `value` — number<double>. Цена товара.
+- `deactivated_ids` — array[string<uint64>]. Идентификаторы товаров, которые удалены из акции.
 - `extremely_low_price` — array[object]. Список товаров со скидкой больше 70%.
   - `key` — integer<uint64>. Идентификатор товара в системе Ozon — `product_id`.
   - `value` — number<double>. Цена товара.
 - `failed_price` — array[object]. Список товаров, которые не прошли валидацию по цене.
   - `key` — integer<uint64>. Идентификатор товара в системе Ozon — `product_id`.
-  - `value` — number<double>. Значение проблемной цены: - Если цена товара больше `max_discount_price` — значение параметра `max_discount_price`; - Если скидка на товар больше 95% — цена со скидкой 95%.
+  - `value` — number<double>. Значение проблемной цены: - максимальная цена товара для автодобавления в акцию, если цена товара её превышает; - цена со скидкой 95%, если скидка на товар больше 95%.
+- `product_ids` — array[string<uint64>]. Идентификаторы товаров, которые получилось добавить или обновить.
 - `rejected` — array[object]. Идентификаторы товаров, которые не получилось добавить или обновить.
-  - `code` — string (NOT_FOUND, NO_CHANGES, STOCK_REQUIRED, INVALID_ACTION_PRICE, MAX_ACTION_PRICE, REJECTED_LOW_PRICE, INVALID_CURRENCY). Код ошибки: - `NOT_FOUND` — товар не найден; - `NO_CHANGES` — нет изменений; - `STOCK_REQUIRED` — остатков товара не хватит для акции; - `INVALID_ACTION_PRICE` — некорректная цена по акции; - `MAX_ACTION_PRICE` — цена по акции выше максимальной; - `REJECTED_LOW_PRICE` — цена по акции ниже минимальной; - `INVALID_CURRENCY` — некорректная валюта.
   - `product_id` — integer<uint64>. Идентификатор товара в системе Ozon — `product_id`.
   - `reason` — string. Причина, по которой не получилось добавить или обновить товар.
-- `updated_ids` — array[string<uint64>]. Идентификаторы товаров, которые получилось добавить или обновить.
+- `warnings` — array[object]. Список предупреждений по товарам.
+  - `product_id` — integer<uint64>. Идентификатор товара в системе Ozon — `product_id`.
+  - `reason` — string. Предупреждение.
 
 **400** — Неверный параметр
 

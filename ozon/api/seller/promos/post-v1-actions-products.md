@@ -8,13 +8,17 @@ tags:
   - Promos
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
-deprecated: false
-content_sha: f918f41034d6b1a3
+deprecated: true
+content_sha: 84f80cc1bd653c78
 ---
 
 # Список участвующих в акции товаров
 
 `POST /v1/actions/products`
+
+> ⚠️ Метод помечен как **deprecated**.
+
+13 октября 2026 года отключим метод. Переключитесь на [/v2/actions/products](#operation/ActionsProducts).
 
 Метод для получения списка товаров, участвующих в акции, по её идентификатору.
 

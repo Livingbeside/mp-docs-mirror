@@ -9,12 +9,14 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: cae604d7e7b4395d
+content_sha: 906037f4ead3480c
 ---
 
 # Напечатать этикетку
 
 `POST /v2/posting/fbs/package-label`
+
+С 2 ноября 2026 года метод будет отключён. Переключитесь на [/v3/posting/fbs/package-label/create](#operation/PostingFbsPackageLabelCreate) и [/v2/posting/fbs/package-label/get](#operation/PostingFbsPackageLabelGet).
 
 Если вы работаете по схеме rFBS или rFBS Express, изучите процесс печати этикетки в [Базе знаний продавца](https://seller-edu.ozon.ru/rfbs/scheme-of-work).
 

@@ -1,24 +1,29 @@
 ---
-title: Получить файл с этикетками
+title: Создать задание на формирование этикеток
 api: ozon-seller
 method: POST
-path: /v1/posting/fbs/package-label/get
-operation_id: PostingAPI_GetLabelBatch
+path: /v3/posting/fbs/package-label/create
+operation_id: PostingFbsPackageLabelCreate
 tags:
-  - FBS
+  - BetaMethod
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: 776fcd8f9bc4fdc9
+content_sha: 489f6a6b2d3d5ece
 ---
 
-# Получить файл с этикетками
+# Создать задание на формирование этикеток
 
-`POST /v1/posting/fbs/package-label/get`
+`POST /v3/posting/fbs/package-label/create`
 
-С 2 ноября 2026 года метод будет отключён. Переключитесь на [/v2/posting/fbs/package-label/get](#operation/PostingFbsPackageLabelGet).
+Если вы работаете по схеме rFBS или rFBS Express, изучите процесс печати этикетки в [Базе знаний продавца](https://seller-edu.ozon.ru/rfbs/scheme-of-work).
 
-Метод для получения этикеток после вызова [/v1/posting/fbs/package-label/create](#operation/PostingAPI_CreateLabelBatch).
+Создаёт задания на асинхронное формирование этикеток для отправлений в статусе «Ожидает отгрузки» — `awaiting_deliver`.
+Рекомендуем запрашивать этикетки через 45–60 секунд после сборки заказа.
+
+Чтобы получить созданные этикетки, используйте [/v2/posting/fbs/package-label/get](#operation/PostingFbsPackageLabelGet).
+
+Вы можете оставить обратную связь о работе метода в [комментариях](https://dev.ozon.ru/community/2346-Novye-beta-metody-dlia-raboty-s-etiketkami-FBS/) в сообществе разработчиков Ozon for dev.
 
 ## Параметры
 
@@ -31,21 +36,15 @@ content_sha: 776fcd8f9bc4fdc9
 
 **Тело запроса** (`application/json`):
 
-- `task_id` — integer<int64> **обязательный**. Номер задания на формирование этикеток из ответа метода [/v1/posting/fbs/package-label/create](#operation/PostingAPI_CreateLabelBatch).
+- `posting_numbers` — array[string] **обязательный**. Номера отправлений, для которых нужны этикетки.
 
 ## Ответы
 
-**200** — Статус формирования этикеток или файл с ними
+**200** — Задания на формирование этикеток
 
-- `result` — object. Результат работы метода.
-  - `error` — string. Код ошибки.
-  - `file_url` — string. Ссылка на файл с этикетками.
-  - `printed_postings_count` — integer<int32>. Количество напечатанных этикеток.
-  - `status` — string. Статус формирования этикеток: - `pending` — задание в очереди. - `in_progress` — формируются. - `completed` — файл с этикетками готов. - `error` — ошибка при создании файла.
-  - `unprinted_postings` — array[object]. Информация об ошибках, из-за которых не получилось напечатать этикетки.
-    - `msg` — string. Причина ошибки.
-    - `posting_number` — string. Номер отправления.
-  - `unprinted_postings_count` — integer<int32>. Количество этикеток, которые не получилось напечатать.
+- `tasks` — array[object]. Список заданий.
+  - `task_id` — integer<int64>. Идентификатор задания. Получите файл с этикетками методом [/v2/posting/fbs/package-label/get](#operation/PostingFbsPackageLabelGet).
+  - `task_type` — string. Тип задания: - `big_label` — для обычной этикетки; - `small_label` — для маленькой этикетки.
 
 **400** — Неверный параметр
 

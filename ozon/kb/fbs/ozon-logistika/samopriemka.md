@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /fbs/ozon-logistika/samopriemka
 source: "https://seller-edu.ozon.ru/libra/fbs/ozon-logistika/samopriemka"
-updated: "2026-09-21 09:44:42"
+updated: "2026-09-22 10:53:21"
 doc_id: 1780
-fetched_at: "2026-09-22T02:23:09Z"
-content_sha: ebe6542ed2f0e5b8
+fetched_at: "2026-09-23T02:19:55Z"
+content_sha: 956ad0c5d49d143b
 ---
 
 # Самоприёмка отправлений
@@ -25,6 +25,8 @@ _Главная / Продажа со своего склада (FBS) / Отгр
 # Где работает самоприёмка
 
 Самоприёмка доступна продавцам, отгружающим до 100 отправлений.
+
+[Вешки (СЦ)](https://seller-edu.ozon.ru/fbs/punkty-priema/moskva#вешки-мо-вешки-фбс)
 
 [Волгоградский (СЦ)](https://seller-edu.ozon.ru/fbs/punkty-priema/moskva#%D0%B2%D0%BE%D0%BB%D0%B3%D0%BE%D0%B3%D1%80%D0%B0%D0%B4%D1%81%D0%BA%D0%B8%D0%B8-%D0%BC%D1%81%D0%BA-%D0%B2%D0%BE%D0%BB%D0%B3%D0%BE%D0%B3%D1%80%D0%B0%D0%B4%D1%81%D0%BA%D0%B8%D0%B8-3-%D1%85%D0%B0%D0%B1)
 

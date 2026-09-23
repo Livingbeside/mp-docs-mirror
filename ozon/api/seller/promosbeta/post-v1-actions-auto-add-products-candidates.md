@@ -8,13 +8,17 @@ tags:
   - PromosBeta
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
-deprecated: false
-content_sha: a4cb0fe13b13f75e
+deprecated: true
+content_sha: 1c3726f3bc94b2eb
 ---
 
 # Получить список доступных товаров для автодобавления в акцию
 
 `POST /v1/actions/auto-add/products/candidates`
+
+> ⚠️ Метод помечен как **deprecated**.
+
+13 октября 2026 года отключим метод. Переключитесь на [/v2/actions/auto-add/products/candidates](#operation/ActionsAutoAddProductsCandidatesV2).
 
 Вы можете оставить обратную связь о работе метода в [комментариях](https://dev.ozon.ru/community/2009-Novye-metody-dlia-upravleniia-avtodobavleniem-tovarov-v-aktsii/) в сообществе разработчиков Ozon for dev.
 
@@ -52,7 +56,7 @@ content_sha: a4cb0fe13b13f75e
   - `product_id` — integer<uint64>. Идентификатор товара в системе Ozon — `product_id`.
   - `quantity_to_auto_add` — integer<uint64>. Количество товара в акции.
   - `sku` — integer<uint64>. Идентификатор товара в системе Ozon — SKU.
-- `total` — integer<uint64>. Общее количество товаров.
+- `total` — integer<uint64>. Количество товаров.
 
 **400** — Неверный параметр
 

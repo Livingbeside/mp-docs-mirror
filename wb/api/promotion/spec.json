@@ -10,6 +10,16 @@
           "title": "request forbidden"
         }
       },
+      "AdvertIdsCountInvalid": {
+        "summary": "Некорректное количество ID кампаний",
+        "value": {
+          "detail": "advertIds must contain from 1 to 100 items",
+          "origin": "camp-api-public-cache",
+          "request_id": "f9cad0e8449a8f45caa9db75ef7018e6",
+          "status": 400,
+          "title": "bad request"
+        }
+      },
       "AdvertNotFound": {
         "description": "Кампания не найдена",
         "value": {
@@ -21,6 +31,16 @@
       },
       "CompanyNameChangeErr": {
         "value": "Ошибка изменения названия кампании"
+      },
+      "DailyLimitTooLow": {
+        "summary": "Сумма дневного лимита меньше минимально допустимой",
+        "value": {
+          "detail": "dailyLimit must be at least 100000",
+          "origin": "camp-api-public-cache",
+          "request_id": "c9ba33416d616c4efb60407251ca8cdc",
+          "status": 400,
+          "title": "bad request"
+        }
       },
       "IncorrectId": {
         "description": "Некорректный ID кампании",
@@ -2678,6 +2698,66 @@
         },
         "type": "object"
       },
+      "V0DailyLimitAdvert": {
+        "properties": {
+          "advertId": {
+            "description": "ID кампании",
+            "example": 12346,
+            "format": "int64",
+            "type": "integer"
+          },
+          "carryOverEnabled": {
+            "description": "Перенос остатка дневного лимита на следующий день.\nЕсли за 24 часа лимит потратится не полностью, добавим остаток суммы к лимиту следующего дня. Расходы на продвижение не увеличатся.\n  - `true` — перенос остатка включен\n  - `false` — перенос остатка отключен\n",
+            "example": true,
+            "type": "boolean"
+          },
+          "currency": {
+            "description": "Код валюты",
+            "example": "RUB",
+            "format": "ISO 4217",
+            "type": "string"
+          },
+          "dailyLimit": {
+            "description": "Размер дневного лимита в разменных единицах — 0,01 от базовой валюты [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances)",
+            "example": 100000,
+            "format": "int64",
+            "type": "integer"
+          },
+          "enabled": {
+            "description": "- `true` — дневной лимит включен\n- `false` — дневной лимит отключен\n",
+            "example": true,
+            "type": "boolean"
+          },
+          "requiredLimit": {
+            "description": "Рекомендуемый минимальный размер дневного лимита при текущих ставках кампании. Указывается в разменных единицах — 0,01 от базовой валюты [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances).\n",
+            "example": 3001,
+            "format": "int64",
+            "type": "integer"
+          },
+          "spentToday": {
+            "description": "Потрачено сегодня в разменных единицах — 0,01 от базовой валюты [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances)",
+            "example": 35000,
+            "format": "int64",
+            "type": "integer"
+          },
+          "valid": {
+            "description": "Хватает ли текущего размера лимита на установку ставок кампании:\n  - `true` — да\n  - `false` — нет, рекомендуем повысить лимит, иначе бюджет кампании может расходоваться неравномерно\n",
+            "example": true,
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "advertId",
+          "enabled",
+          "dailyLimit",
+          "spentToday",
+          "currency",
+          "carryOverEnabled",
+          "valid",
+          "requiredLimit"
+        ],
+        "type": "object"
+      },
       "V0DeleteNormQueryBidsRequest": {
         "properties": {
           "bids": {
@@ -2712,6 +2792,20 @@
           "advert_id",
           "nm_id",
           "norm_query"
+        ],
+        "type": "object"
+      },
+      "V0GetDailyLimitsResponse": {
+        "properties": {
+          "adverts": {
+            "items": {
+              "$ref": "#/components/schemas/V0DailyLimitAdvert"
+            },
+            "type": "array"
+          }
+        },
+        "required": [
+          "adverts"
         ],
         "type": "object"
       },
@@ -3099,6 +3193,88 @@
         },
         "required": [
           "stats"
+        ],
+        "type": "object"
+      },
+      "V0PutDailyLimitsAdvertResult": {
+        "properties": {
+          "advertId": {
+            "description": "ID кампании",
+            "example": 1234,
+            "format": "int64",
+            "type": "integer"
+          },
+          "belowMinLimit": {
+            "description": "Установленный размер дневного лимита ниже рекомендуемого минимума относительно текущих ставок `requiredLimit`:\n  - `true` — да\n  - `false` — нет\n",
+            "example": false,
+            "type": "boolean"
+          },
+          "requiredLimit": {
+            "description": "Рекомендуемый минимальный размер дневного лимита при текущих ставках кампании. Указывается в разменных единицах — 0,01 от базовой валюты [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances).\nС меньшим лимитом бюджет может расходоваться неравномерно и в кампании возникнут ошибки\n",
+            "example": 3001,
+            "format": "int64",
+            "type": "integer"
+          }
+        },
+        "required": [
+          "advertId",
+          "belowMinLimit",
+          "requiredLimit"
+        ],
+        "type": "object"
+      },
+      "V0PutDailyLimitsRequest": {
+        "properties": {
+          "advertIds": {
+            "description": "ID кампаний",
+            "example": [
+              987654321,
+              123456789
+            ],
+            "items": {
+              "format": "int64",
+              "minimum": 1,
+              "type": "integer"
+            },
+            "maxItems": 100,
+            "minItems": 1,
+            "type": "array"
+          },
+          "carryOverEnabled": {
+            "description": "Переносить неиспользованный остаток лимита на следующий день:\n  - `true` — да\n  - `false` — нет\n\nПараметр обязателен при `\"enabled\": true`\n",
+            "example": true,
+            "type": "boolean"
+          },
+          "dailyLimit": {
+            "description": "Сумма дневного лимита. Параметр обязателен при `\"enabled\": true`.\nМинимально допустимая сумма указана в поле `minDailyLimit` метода [GET /api/advert/v1/config]().\n",
+            "example": 1000,
+            "format": "int64",
+            "minimum": 1000,
+            "type": "integer"
+          },
+          "enabled": {
+            "description": "Включить лимит:\n  - `true` — да\n  - `false` — нет\n",
+            "example": true,
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "advertIds",
+          "enabled"
+        ],
+        "type": "object"
+      },
+      "V0PutDailyLimitsResponse": {
+        "properties": {
+          "adverts": {
+            "items": {
+              "$ref": "#/components/schemas/V0PutDailyLimitsAdvertResult"
+            },
+            "type": "array"
+          }
+        },
+        "required": [
+          "adverts"
         ],
         "type": "object"
       },
@@ -7797,6 +7973,167 @@
       },
       "servers": [
         {
+          "url": "https://advert-api.wildberries.ru"
+        }
+      ]
+    },
+    "/api/advert/v0/daily-limits": {
+      "get": {
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\n\n<div class=\"description_token\">\n    Метод <a href=\"./api-information#tag/authorization/Pravila-ispolzovaniya-tokenov-dostupa-k-API\">доступен</a> по\n        <strong>Персональному</strong> токену, \n        <strong>Сервисному</strong> токену\n</div>\n\nМетод возвращает текущие настройки [дневных лимитов кампаний CPC](https://cmp.wildberries.ru/campaigns/help/knowledge-base/options#%D0%94%D0%BD%D0%B5%D0%B2%D0%BD%D0%BE%D0%B9%D0%BB%D0%B8%D0%BC%D0%B8%D1%82%D0%B2%D0%BA%D0%B0%D0%BC%D0%BF%D0%B0%D0%BD%D0%B8%D1%8F%D1%85%D1%81%D0%BE%D0%BF%D0%BB%D0%B0%D1%82%D0%BE%D0%B9%D0%B7%D0%B0%D0%BA%D0%BB%D0%B8%D0%BA%D0%B8%D0%A1%D0%A0%D0%A1) — максимальных сумм, которые кампании могут потратить на продвижение в течение суток.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 мин | 5 запросов | 12 сек | 5 запросов |\n| Сервисный | 1 мин | 5 запросов | 12 сек | 5 запросов |\n</div>\n",
+        "operationId": "getV0DailyLimits",
+        "parameters": [
+          {
+            "description": "ID кампаний, максимум 100. Укажите значения через запятую",
+            "in": "query",
+            "name": "advertIds",
+            "required": true,
+            "schema": {
+              "example": "12346567,987654321",
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/V0GetDailyLimitsResponse"
+                }
+              }
+            },
+            "description": "<span class='response__value response__value_success'>Успешно</span>"
+          },
+          "400": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/response400"
+                }
+              }
+            },
+            "description": "<span class='response__value '>Неправильный запрос</span>"
+          },
+          "401": {
+            "$ref": "#/components/responses/401"
+          },
+          "403": {
+            "$ref": "#/components/responses/403"
+          },
+          "429": {
+            "$ref": "#/components/responses/429"
+          }
+        },
+        "security": [
+          {
+            "HeaderApiKey": []
+          }
+        ],
+        "summary": "Получить настройки дневных лимитов кампаний{{ /api/advert/v0/daily-limits }}",
+        "tags": [
+          "campaignManagement"
+        ],
+        "x-category": "advert",
+        "x-readonly-method": true,
+        "x-token-types": [
+          "personal",
+          "service"
+        ]
+      },
+      "put": {
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\n\n<div class=\"description_token\">\n    Метод <a href=\"./api-information#tag/authorization/Pravila-ispolzovaniya-tokenov-dostupa-k-API\">доступен</a> по\n        <strong>Персональному</strong> токену, \n        <strong>Сервисному</strong> токену\n</div>\n\nМетод включает, выключает и обновляет дневной лимит кампаний.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 мин | 5 запросов | 12 сек | 5 запросов |\n| Сервисный | 1 мин | 5 запросов | 12 сек | 5 запросов |\n</div>\n",
+        "operationId": "putV0DailyLimits",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "example": {
+                "advertIds": [
+                  1234,
+                  5603
+                ],
+                "carryOverEnabled": true,
+                "dailyLimit": 1000,
+                "enabled": true
+              },
+              "schema": {
+                "$ref": "#/components/schemas/V0PutDailyLimitsRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "example": {
+                  "adverts": [
+                    {
+                      "advertId": 1234,
+                      "belowMinLimit": false,
+                      "requiredLimit": 0
+                    },
+                    {
+                      "advertId": 5603,
+                      "belowMinLimit": true,
+                      "requiredLimit": 3001
+                    }
+                  ]
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/V0PutDailyLimitsResponse"
+                }
+              }
+            },
+            "description": "<span class='response__value response__value_success'>Успешно</span>"
+          },
+          "400": {
+            "content": {
+              "application/json": {
+                "examples": {
+                  "AdvertIdsCountInvalid": {
+                    "$ref": "#/components/examples/AdvertIdsCountInvalid"
+                  },
+                  "DailyLimitTooLow": {
+                    "$ref": "#/components/examples/DailyLimitTooLow"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/response400"
+                }
+              }
+            },
+            "description": "<span class='response__value '>Неправильный запрос</span>"
+          },
+          "401": {
+            "$ref": "#/components/responses/401"
+          },
+          "403": {
+            "$ref": "#/components/responses/403"
+          },
+          "429": {
+            "$ref": "#/components/responses/429"
+          }
+        },
+        "security": [
+          {
+            "HeaderApiKey": []
+          }
+        ],
+        "summary": "Настройка дневных лимитов кампаний{{ /api/advert/v0/daily-limits }}",
+        "tags": [
+          "campaignManagement"
+        ],
+        "x-category": "advert",
+        "x-readonly-method": false,
+        "x-token-types": [
+          "personal",
+          "service"
+        ]
+      },
+      "servers": [
+        {
+          "description": "**Prod**\n",
           "url": "https://advert-api.wildberries.ru"
         }
       ]

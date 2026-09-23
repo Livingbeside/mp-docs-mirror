@@ -8,13 +8,17 @@ tags:
   - Promos
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
-deprecated: false
-content_sha: 07f374dee1140880
+deprecated: true
+content_sha: b293107e7f546959
 ---
 
 # Добавить товар в акцию
 
 `POST /v1/actions/products/activate`
+
+> ⚠️ Метод помечен как **deprecated**.
+
+13 октября 2026 года отключим метод. Переключитесь на [/v1/actions/products/update](#operation/ActionsProductsUpdate).
 
 Метод для добавления товаров в доступную акцию.
 

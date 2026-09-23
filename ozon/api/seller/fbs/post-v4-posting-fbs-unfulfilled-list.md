@@ -9,7 +9,7 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: df18c107b349abe4
+content_sha: 35a1a3dec85d2963
 ---
 
 # Получить список необработанных отправлений
@@ -201,6 +201,7 @@ content_sha: df18c107b349abe4
     - `products_requiring_mandatory_mark` — array[string<int64>]. Список идентификаторов товаров (SKU), для которых нужно передать маркировку «Честный знак». До сборки отправления передайте для всех перечисленных товаров маркировку «Честный знак» методом [/v6/fbs/posting/product/exemplar/set](#operation/PostingAPI_FbsPostingProductExemplarSetV6).
     - `products_requiring_rnpt` — array[string<int64>]. Список идентификаторов товаров (SKU), для которых нужно передать регистрационный номер партии товара (РНПТ). До сборки отправления передайте для всех перечисленных товаров РНПТ методом [/v6/fbs/posting/product/exemplar/set](#operation/PostingAPI_FbsPostingProductExemplarSetV6).
     - `products_requiring_weight` — array[string<int64>]. Список товаров, для которых нужно передать вес.
+  - `scanit` — string. Штрихкод ScanIt товара.
   - `shipment_date` — string<date-time>. Дата и время, до которой нужно собрать отправление. Показываем рекомендованное время отгрузки. По истечении этого времени начнёт применяться новый тариф, информацию о нём получите в поле `tariffication`.
   - `shipment_date_without_delay` — string<date-time>. Дата и время отгрузки без просрочки.
   - `sorting_center` — object. Информация о сортировочном центре, в который нужно привезти отправление. Для `integration_type_flow = hybrid_3pl_tracking`. Если значение `null`, информацию получить не удалось.

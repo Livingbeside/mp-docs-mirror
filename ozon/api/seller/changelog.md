@@ -5,12 +5,35 @@ tag: News
 group: Обновления
 kind: changelog
 source: "https://docs.ozon.ru/api/seller/"
-content_sha: 22052975b1d9858d
+content_sha: 4652175565a73fdb
 ---
 
 # Обновления
 
 Следите за обновлениями документации на платформе для разработчиков [Ozon for dev](https://dev.ozon.ru/).
+
+## 22 сентября 2026
+
+| Метод | Изменение |
+|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [/v1/actions/products/update](#operation/ActionsProductsUpdate)<br>[/v2/actions/products/deactivate](#operation/ActionsProductsDeactivate)<br>[/v2/actions/products](#operation/ActionsProducts)<br>[/v2/actions/candidates](#operation/ActionsCandidates)<br>[/v2/actions/auto-add/products/candidates](#operation/ActionsAutoAddProductsCandidatesV2)<br>[/v2/actions/auto-add/products/update](#operation/ActionsAutoAddProductsUpdateV2)<br>[/v2/actions/auto-add/products/list](#operation/ActionsAutoAddProductsListV2)<br>[/v2/actions/auto-add/products/delete](#operation/ActionsAutoAddProductsDeleteV2) | Добавили новые версии методов для работы с акциями Ozon. |
+| [/v1/actions/candidates](#operation/PromosCandidates) | Метод устаревает и будет отключён 13 октября 2026 года. Переключитесь на [/v2/actions/candidates](#operation/ActionsCandidates). |
+| [/v1/actions/products](#operation/PromosProducts) | Метод устаревает и будет отключён 13 октября 2026 года. Переключитесь на [/v2/actions/products](#operation/ActionsProducts). |
+| [/v1/actions/products/activate](#operation/PromosProductsActivate) | Метод устаревает и будет отключён 13 октября 2026 года. Переключитесь на [/v1/actions/products/update](#operation/ActionsProductsUpdate). |
+| [/v1/actions/products/deactivate](#operation/PromosProductsDeactivate) | Метод устаревает и будет отключён 13 октября 2026 года. Переключитесь на [/v2/actions/products/deactivate](#operation/ActionsProductsDeactivate). |
+| [/v1/actions/auto-add/products/list](#operation/ActionsAutoAddProductsList) | Метод устаревает и будет отключён 13 октября 2026 года. Переключитесь на [/v2/actions/auto-add/products/list](#operation/ActionsAutoAddProductsListV2). |
+| [/v1/actions/auto-add/products/candidates](#operation/ActionsAutoAddProductsCandidates) | Метод устаревает и будет отключён 13 октября 2026 года. Переключитесь на [/v2/actions/auto-add/products/candidates](#operation/ActionsAutoAddProductsCandidatesV2). |
+| [/v1/actions/auto-add/products/delete](#operation/ActionsAutoAddProductsDelete) | Метод устаревает и будет отключён 13 октября 2026 года. Переключитесь на [/v2/actions/auto-add/products/delete](#operation/ActionsAutoAddProductsDeleteV2). |
+| [/v1/actions/auto-add/products/update](#operation/ActionsAutoAddProductsUpdate) | Метод устаревает и будет отключён 13 октября 2026 года. Переключитесь на [/v2/actions/auto-add/products/update](#operation/ActionsAutoAddProductsUpdateV2). |
+| [/v4/posting/fbs/unfulfilled/list](#operation/PostingFbsUnfulfilledList)<br>[/v4/posting/fbs/list](#operation/PostingFbsList) | Добавили параметр `postings.scanit` в ответ методов. |
+| [/v3/posting/fbs/get](#operation/PostingAPI_GetFbsPostingV3) | Добавили параметр `result.scanit` в ответ метода. |
+| [/v2/posting/fbs/get-by-barcode](#operation/PostingAPI_GetFbsPostingByBarcode) | Обновили описание параметра `barcode` в запросе метода. |
+| [/v2/posting/fbs/package-label](#operation/PostingAPI_PostingFBSPackageLabel) | Метод устаревает и будет отключён 2 ноября 2026 года. Переключитесь на [/v3/posting/fbs/package-label/create](#operation/PostingFbsPackageLabelCreate) и [/v2/posting/fbs/package-label/get](#operation/PostingFbsPackageLabelGet). |
+| [/v3/posting/fbs/package-label/create](#operation/PostingFbsPackageLabelCreate) | Добавили новую версию метода для создания задания на формирование этикеток. |
+| [/v2/posting/fbs/package-label/create](#operation/PostingAPI_CreateLabelBatchV2)<br>[/v1/posting/fbs/package-label/create](#operation/PostingAPI_CreateLabelBatch) | Методы устаревают и будут отключены 2 ноября 2026 года. Переключитесь на [/v3/posting/fbs/package-label/create](#operation/PostingFbsPackageLabelCreate). |
+| [/v2/posting/fbs/package-label/get](#operation/PostingFbsPackageLabelGet) | Добавили новую версию метода для получения файла с этикетками. |
+| [/v1/posting/fbs/package-label/get](#operation/PostingAPI_GetLabelBatch) | Метод устаревает и будет отключён 2 ноября 2026 года. Переключитесь на [/v2/posting/fbs/package-label/get](#operation/PostingFbsPackageLabelGet). |
+| — | В разделе [**Порядок работы с методами**](#tag/Process) обновили методы для работы с этикетками. |
 
 ## 17 сентября 2026
 

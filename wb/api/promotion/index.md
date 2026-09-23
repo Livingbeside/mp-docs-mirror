@@ -2,9 +2,9 @@
 title: Маркетинг и продвижение — все методы
 api: wb-promotion
 spec_version: promotion
-operations: 40
+operations: 42
 source: "https://dev.wildberries.ru/docs/openapi/promotion"
-content_sha: d49464577dc87215
+content_sha: b1eed32afce5e624
 ---
 
 # Маркетинг и продвижение
@@ -22,7 +22,7 @@ content_sha: d49464577dc87215
 
 Вы можете протестировать методы продвижения в [песочнице](/sandbox). Также в песочнице доступны [специальные методы](/docs/openapi-other/sandbox-environment#tag/promotion) для управления тестовым балансом
 
-Версия спеки: `promotion` · методов: **40** · разделов справки: **9**
+Версия спеки: `promotion` · методов: **42** · разделов справки: **9**
 
 Источник: https://dev.wildberries.ru/docs/openapi/promotion
 
@@ -44,6 +44,7 @@ content_sha: d49464577dc87215
 | `GET` | `/adv/v1/upd` | finances | [Получение истории затрат](finances/get-adv-v1-upd.md) |
 | `GET` | `/adv/v3/fullstats` | statistics | [Статистика кампаний](statistics/get-adv-v3-fullstats.md) |
 | `GET` | `/api/advert/v0/bids/recommendations` | campaignManagement | [Рекомендуемые ставки для карточек товаров и поисковых кластеров](campaignmanagement/get-api-advert-v0-bids-recommendations.md) |
+| `GET` | `/api/advert/v0/daily-limits` | campaignManagement | [Получить настройки дневных лимитов кампаний](campaignmanagement/get-api-advert-v0-daily-limits.md) |
 | `GET` | `/api/advert/v1/config` | campaignManagement | [Конфигурационные значения продвижения](campaignmanagement/get-api-advert-v1-config.md) |
 | `GET` | `/api/advert/v2/adverts` | campaigns | [Информация о кампаниях](campaigns/get-api-advert-v2-adverts.md) |
 | `GET` | `/api/v1/calendar/promotions/details` | promoCalendar | [Детальная информация об акциях](promocalendar/get-api-v1-calendar-promotions-details.md) |
@@ -68,3 +69,4 @@ content_sha: d49464577dc87215
 | `POST` | `/api/advert/v2/budget` | finances | [Остатки бюджетов кампаний](finances/post-api-advert-v2-budget.md) |
 | `POST` | `/api/v1/calendar/promotions/upload` | promoCalendar | [Добавить товар в акцию](promocalendar/post-api-v1-calendar-promotions-upload.md) |
 | `PUT` | `/adv/v0/auction/placements` | campaignManagement | [Изменение мест размещения в кампаниях с ручной ставкой](campaignmanagement/put-adv-v0-auction-placements.md) |
+| `PUT` | `/api/advert/v0/daily-limits` | campaignManagement | [Настройка дневных лимитов кампаний](campaignmanagement/put-api-advert-v0-daily-limits.md) |

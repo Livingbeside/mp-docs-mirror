@@ -8,13 +8,17 @@ tags:
   - PromosBeta
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
-deprecated: false
-content_sha: 61bf4c30da24236c
+deprecated: true
+content_sha: 07953c286fe4ffef
 ---
 
 # Удалить товары из автодобавления в акцию
 
 `POST /v1/actions/auto-add/products/delete`
+
+> ⚠️ Метод помечен как **deprecated**.
+
+13 октября 2026 года отключим метод. Переключитесь на [/v2/actions/auto-add/products/delete](#operation/ActionsAutoAddProductsDeleteV2).
 
 Вы можете оставить обратную связь о работе метода в [комментариях](https://dev.ozon.ru/community/2009-Novye-metody-dlia-upravleniia-avtodobavleniem-tovarov-v-aktsii/) в сообществе разработчиков Ozon for dev.
 

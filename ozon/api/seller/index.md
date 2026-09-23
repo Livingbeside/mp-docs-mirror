@@ -2,9 +2,9 @@
 title: Документация Ozon Seller API — все методы
 api: ozon-seller
 spec_version: 2.1
-operations: 470
+operations: 480
 source: "https://docs.ozon.ru/api/seller/"
-content_sha: 22e69d722eb0c1dc
+content_sha: 4b3c4add0e4111ba
 ---
 
 # Документация Ozon Seller API
@@ -18,7 +18,7 @@ content_sha: 22e69d722eb0c1dc
 
 > [Информационная платформа и сообщество разработчиков Ozon for dev](https://dev.ozon.ru/)
 
-Версия спеки: `2.1` · методов: **470** · разделов справки: **26**
+Версия спеки: `2.1` · методов: **480** · разделов справки: **26**
 
 Источник: https://docs.ozon.ru/api/seller/
 
@@ -40,6 +40,7 @@ content_sha: 22e69d722eb0c1dc
 | `POST` | `/v1/actions/discounts-task/list` | Promos | [Список заявок на скидку](promos/post-v1-actions-discounts-task-list.md) |
 | `POST` | `/v1/actions/products/activate` | Promos | [Добавить товар в акцию](promos/post-v1-actions-products-activate.md) |
 | `POST` | `/v1/actions/products/deactivate` | Promos | [Удалить товары из акции](promos/post-v1-actions-products-deactivate.md) |
+| `POST` | `/v1/actions/products/update` | Promos | [Добавить или обновить товар в акции](promos/post-v1-actions-products-update.md) |
 | `POST` | `/v1/actions/products` | Promos | [Список участвующих в акции товаров](promos/post-v1-actions-products.md) |
 | `POST` | `/v1/analytics/category/comparison` | BetaMethod | [Получить информацию о сравнении категорий](betamethod/post-v1-analytics-category-comparison.md) |
 | `POST` | `/v1/analytics/data` | Premium | [Данные аналитики](premium/post-v1-analytics-data.md) |
@@ -399,7 +400,14 @@ content_sha: 22e69d722eb0c1dc
 | `POST` | `/v1/warehouse/rfbs/unpause` | rFBSWarehouseSetup | [Снять rFBS-склад с паузы](rfbswarehousesetup/post-v1-warehouse-rfbs-unpause.md) |
 | `POST` | `/v1/warehouse/unarchive` | WarehouseAPI | [Перенести склад из архива](warehouseapi/post-v1-warehouse-unarchive.md) |
 | `POST` | `/v1/warehouse/warehouses-with-invalid-products` | WarehouseAPI | [Получить список складов с ограниченными для доставки товарами](warehouseapi/post-v1-warehouse-warehouses-with-invalid-products.md) |
+| `POST` | `/v2/actions/auto-add/products/candidates` | Promos | [Получить список доступных товаров для автодобавления в акцию](promos/post-v2-actions-auto-add-products-candidates.md) |
+| `POST` | `/v2/actions/auto-add/products/delete` | Promos | [Удалить товары из автодобавления в акцию](promos/post-v2-actions-auto-add-products-delete.md) |
+| `POST` | `/v2/actions/auto-add/products/list` | Promos | [Получить список товаров из автодобавления в акцию](promos/post-v2-actions-auto-add-products-list.md) |
+| `POST` | `/v2/actions/auto-add/products/update` | Promos | [Добавить или обновить товары в автодобавлении в акцию](promos/post-v2-actions-auto-add-products-update.md) |
+| `POST` | `/v2/actions/candidates` | Promos | [Получить список товаров, которые могут участвовать в акции](promos/post-v2-actions-candidates.md) |
 | `POST` | `/v2/actions/discounts-task/list` | BetaMethod | [Получить список заявок на скидку](betamethod/post-v2-actions-discounts-task-list.md) |
+| `POST` | `/v2/actions/products/deactivate` | Promos | [Удалить товары из акции «Промокоды»](promos/post-v2-actions-products-deactivate.md) |
+| `POST` | `/v2/actions/products` | Promos | [Получить список товаров, которые участвуют в акции](promos/post-v2-actions-products.md) |
 | `POST` | `/v2/analytics/stock_on_warehouses` | AnalyticsAPI | [Отчёт по остаткам и товарам](analyticsapi/post-v2-analytics-stock-on-warehouses.md) |
 | `POST` | `/v2/cargoes/create/info` | FboSupplyRequest | [Получить информацию по установке грузомест](fbosupplyrequest/post-v2-cargoes-create-info.md) |
 | `POST` | `/v2/cargoes/delete/status` | FBOTransport | [Получить информацию о статусе удаления грузомест и транспортных грузомест](fbotransport/post-v2-cargoes-delete-status.md) |
@@ -445,6 +453,7 @@ content_sha: 22e69d722eb0c1dc
 | `POST` | `/v2/posting/fbs/digital/act/get-pdf` | DeliveryFBS | [Получить лист отгрузки по перевозке](deliveryfbs/post-v2-posting-fbs-digital-act-get-pdf.md) |
 | `POST` | `/v2/posting/fbs/get-by-barcode` | FBS | [Получить информацию об отправлении по штрихкоду](fbs/post-v2-posting-fbs-get-by-barcode.md) |
 | `POST` | `/v2/posting/fbs/package-label/create` | FBS | [Создать задание на формирование этикеток](fbs/post-v2-posting-fbs-package-label-create.md) |
+| `POST` | `/v2/posting/fbs/package-label/get` | BetaMethod | [Получить файл с этикетками](betamethod/post-v2-posting-fbs-package-label-get.md) |
 | `POST` | `/v2/posting/fbs/package-label` | FBS | [Напечатать этикетку](fbs/post-v2-posting-fbs-package-label.md) |
 | `POST` | `/v2/posting/fbs/product/cancel` | FBS | [Отменить отправку некоторых товаров в отправлении](fbs/post-v2-posting-fbs-product-cancel.md) |
 | `POST` | `/v2/posting/fbs/product/country/list` | FBS | [Список доступных стран-изготовителей](fbs/post-v2-posting-fbs-product-country-list.md) |
@@ -475,6 +484,7 @@ content_sha: 22e69d722eb0c1dc
 | `POST` | `/v3/posting/fbo/list` | FBO | [Получить список отправлений](fbo/post-v3-posting-fbo-list.md) |
 | `POST` | `/v3/posting/fbs/get` | FBS | [Получить информацию об отправлении по идентификатору](fbs/post-v3-posting-fbs-get.md) |
 | `POST` | `/v3/posting/fbs/list` | FBS | [Список отправлений](fbs/post-v3-posting-fbs-list.md) |
+| `POST` | `/v3/posting/fbs/package-label/create` | BetaMethod | [Создать задание на формирование этикеток](betamethod/post-v3-posting-fbs-package-label-create.md) |
 | `POST` | `/v3/posting/fbs/unfulfilled/list` | FBS | [Список необработанных отправлений](fbs/post-v3-posting-fbs-unfulfilled-list.md) |
 | `POST` | `/v3/posting/multiboxqty/set` | FBS | [Указать количество коробок для многокоробочных отправлений](fbs/post-v3-posting-multiboxqty-set.md) |
 | `POST` | `/v3/product/import` | ProductAPI | [Создать или обновить товар](productapi/post-v3-product-import.md) |

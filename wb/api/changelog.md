@@ -4,8 +4,8 @@ api: wildberries
 kind: changelog
 source: "https://dev.wildberries.ru/release-notes"
 window: последние записи, страница отдаёт не всю историю
-fetched_at: "2026-09-22T02:26:07Z"
-content_sha: 20dc3c14ea2fbec1
+fetched_at: "2026-09-23T02:22:50Z"
+content_sha: 08e2546a526d7fff
 ---
 
 # Журнал изменений WB API
@@ -66,6 +66,20 @@ content_sha: 20dc3c14ea2fbec1
 
 Сентябрь
 2026
+
+Новое
+
+## 22.09.2026
+
+Поставки FBW
+
+Информация о поставках
+
+Расхождения в поставках FBW
+
+Добавили метод [GET /api/supplies/v1/discrepancies/{supplyId}](./docs/openapi/orders-fbw#tag/suppliesInformation/operation/getV1SuppliesSupplyIdDiscrepanciesQuantity). С его помощь вы можете получить расхождения между заявленным и фактическим количеством товара, выявленные при приёмке поставки.
+
+В ответ метода получения деталей поставки — [GET /api/v1/supplies/{ID}](/docs/openapi/orders-fbw#tag/suppliesInformation/operation/getV1SuppliesId) добавили поле `discrepancies` — расхождения между заявленным и фактическим количеством товара в поставке.
 
 Изменения
 
@@ -535,17 +549,5 @@ DBS
 Метод доступен по **Персональному** или **Сервисному** [токену](/docs/openapi/api-information#tag/authorization/Pravila-ispolzovaniya-tokenov-dostupa-k-API) для категории **Аналитика**.
 
 Текущие методы **POST /api/analytics/v1/item-rating** и **GET /api/v1/analytics/banned-products/shadowed** будут отключены **30 июля**.
-
-Новое
-
-## 14.07.2026
-
-Маркетинг и продвижение
-
-Кампании
-
-Изменения в сервисе Продвижения
-
-В ответ метода [GET /api/advert/v2/adverts](/docs/openapi/promotion/#tag/campaigns/operation/getV2Adverts) добавили признак возможности изменения списка товаров в кампании поле — `can_change_nms` в объекте `restrictions`.
 
 Мы используем [cookies](/privacy) для сбора статистики и улучшения сервиса

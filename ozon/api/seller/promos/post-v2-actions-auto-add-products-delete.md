@@ -1,24 +1,22 @@
 ---
-title: Получить файл с этикетками
+title: Удалить товары из автодобавления в акцию
 api: ozon-seller
 method: POST
-path: /v1/posting/fbs/package-label/get
-operation_id: PostingAPI_GetLabelBatch
+path: /v2/actions/auto-add/products/delete
+operation_id: ActionsAutoAddProductsDeleteV2
 tags:
-  - FBS
+  - Promos
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: 776fcd8f9bc4fdc9
+content_sha: c5867d036bae4568
 ---
 
-# Получить файл с этикетками
+# Удалить товары из автодобавления в акцию
 
-`POST /v1/posting/fbs/package-label/get`
+`POST /v2/actions/auto-add/products/delete`
 
-С 2 ноября 2026 года метод будет отключён. Переключитесь на [/v2/posting/fbs/package-label/get](#operation/PostingFbsPackageLabelGet).
-
-Метод для получения этикеток после вызова [/v1/posting/fbs/package-label/create](#operation/PostingAPI_CreateLabelBatch).
+До 13 октября 2026 года метод работает аналогично [/v1/actions/auto-add/products/delete](#operation/ActionsAutoAddProductsDelete).
 
 ## Параметры
 
@@ -31,21 +29,15 @@ content_sha: 776fcd8f9bc4fdc9
 
 **Тело запроса** (`application/json`):
 
-- `task_id` — integer<int64> **обязательный**. Номер задания на формирование этикеток из ответа метода [/v1/posting/fbs/package-label/create](#operation/PostingAPI_CreateLabelBatch).
+- `action_id` — integer<uint64> **обязательный**. Идентификатор акции.
+- `auto_add_date` — string<date-time> **обязательный**. Дата и время автодобавления товаров в акцию из параметра `result.auto_add_dates` в ответе метода [/v1/actions](#operation/Promos).
+- `product_ids` — array[string<uint64>] **обязательный**. Идентификаторы товаров в системе Ozon — `product_id`.
 
 ## Ответы
 
-**200** — Статус формирования этикеток или файл с ними
+**200** — Товары удалены из автодобавления
 
-- `result` — object. Результат работы метода.
-  - `error` — string. Код ошибки.
-  - `file_url` — string. Ссылка на файл с этикетками.
-  - `printed_postings_count` — integer<int32>. Количество напечатанных этикеток.
-  - `status` — string. Статус формирования этикеток: - `pending` — задание в очереди. - `in_progress` — формируются. - `completed` — файл с этикетками готов. - `error` — ошибка при создании файла.
-  - `unprinted_postings` — array[object]. Информация об ошибках, из-за которых не получилось напечатать этикетки.
-    - `msg` — string. Причина ошибки.
-    - `posting_number` — string. Номер отправления.
-  - `unprinted_postings_count` — integer<int32>. Количество этикеток, которые не получилось напечатать.
+- `product_ids` — array[string<uint64>]. Идентификаторы товаров, которые удалены из автодобавления.
 
 **400** — Неверный параметр
 

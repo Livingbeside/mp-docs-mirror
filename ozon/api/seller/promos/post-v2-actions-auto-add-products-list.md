@@ -2,25 +2,21 @@
 title: Получить список товаров из автодобавления в акцию
 api: ozon-seller
 method: POST
-path: /v1/actions/auto-add/products/list
-operation_id: ActionsAutoAddProductsList
+path: /v2/actions/auto-add/products/list
+operation_id: ActionsAutoAddProductsListV2
 tags:
-  - PromosBeta
+  - Promos
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
-deprecated: true
-content_sha: 0c87287dabbdedb0
+deprecated: false
+content_sha: e08bdd88dddeed05
 ---
 
 # Получить список товаров из автодобавления в акцию
 
-`POST /v1/actions/auto-add/products/list`
+`POST /v2/actions/auto-add/products/list`
 
-> ⚠️ Метод помечен как **deprecated**.
-
-13 октября 2026 года отключим метод. Переключитесь на [/v2/actions/auto-add/products/list](#operation/ActionsAutoAddProductsListV2).
-
-Вы можете оставить обратную связь о работе метода в [комментариях](https://dev.ozon.ru/community/2009-Novye-metody-dlia-upravleniia-avtodobavleniem-tovarov-v-aktsii/) в сообществе разработчиков Ozon for dev.
+До 13 октября 2026 года метод работает аналогично [/v1/actions/auto-add/products/list](#operation/ActionsAutoAddProductsList).
 
 ## Параметры
 
@@ -43,19 +39,39 @@ content_sha: 0c87287dabbdedb0
 **200** — Список товаров с автодобавлением
 
 - `products` — array[object]. Список товаров с автодобавлением.
-  - `action_price_to_auto_add` — number<double>. Цена товара по акции.
-  - `add_mode` — string. Тип добавления товара в акцию: - `AUTO` — автоматически; - `MANUAL` — вручную продавцом.
+  - `action_price_to_auto_add` — object. Цена товара по акции.
+    - `amount` — string. Сумма.
+    - `currency` — string. Валюта.
+  - `add_mode` — boolean. `true`, если продавец добавил товар вручную.
+  - `base_price` — object. Цена товара до скидки.
+    - `amount` — string. Сумма.
+    - `currency` — string. Валюта.
   - `currency` — string. Валюта цен.
-  - `marketplace_seller_price` — number<double>. Цена товара с учётом акций, кроме акций за счёт Ozon.
-  - `max_discount_price` — number<double>. Максимальная цена товара для автодобавления в акцию.
+  - `has_expired_min_seller_price` — boolean. `true`, если истёк срок действия ограничения для акции.
+  - `marketplace_seller_price` — object. Цена товара с учётом акций, кроме акций за счёт Ozon.
+    - `amount` — string. Сумма.
+    - `currency` — string. Валюта.
+  - `max_discount_price` — object. Максимальная цена товара для автодобавления в акцию.
+    - `amount` — string. Сумма.
+    - `currency` — string. Валюта.
   - `min_action_quantity` — integer<uint64>. Минимальное число единиц товара в акции типа «Скидка на сток».
-  - `min_seller_price` — number<double>. Минимальная цена товара после применения акций.
+  - `min_seller_price` — object. Минимальная цена товара после применения акций.
+    - `amount` — string. Сумма.
+    - `currency` — string. Валюта.
   - `name` — string. Название товара.
   - `offer_id` — string. Идентификатор товара в системе продавца — артикул.
-  - `price` — number<double>. Цена товара без скидки.
+  - `price` — object. Цена товара без скидки.
+    - `amount` — string. Сумма.
+    - `currency` — string. Валюта.
   - `product_id` — integer<uint64>. Идентификатор товара в системе Ozon — `product_id`.
   - `quantity_to_auto_add` — integer<uint64>. Количество товара в акции.
   - `sku` — integer<uint64>. Идентификатор товара в системе Ozon — SKU.
+  - `website_prices` — object. Цены товара на сайте.
+    - `price` — object. Минимальная средняя цена по схемам доставки на сайте.
+      - `amount` — string. Сумма.
+      - `currency` — string. Валюта.
+    - `prices_by_schema` — object. Цены товара по схемам доставки.
+  - `will_be_quarantined` — boolean. `true`, если товар попадает в карантин после автодобавления.
 - `total` — integer<uint64>. Количество товаров.
 
 **400** — Неверный параметр

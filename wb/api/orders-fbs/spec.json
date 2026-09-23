@@ -77,6 +77,13 @@
           "message": "Failed to update the label identifiers of the assembly order. Make sure the assembly order meets all the necessary requirements."
         }
       },
+      "FulfillmentSupplyBoxesRequired": {
+        "description": "Не добавлено обязательное грузоместо",
+        "value": {
+          "code": "FulfillmentSupplyBoxesRequired",
+          "message": "Unable to change status to \"in delivery\". Fulfillment shipments require at least one cargo space"
+        }
+      },
       "IncorrectParameter": {
         "value": {
           "code": "IncorrectParameter",
@@ -7516,6 +7523,9 @@
             "content": {
               "application/json": {
                 "examples": {
+                  "FulfillmentSupplyBoxesRequired": {
+                    "$ref": "#/components/examples/FulfillmentSupplyBoxesRequired"
+                  },
                   "MetaValidationFail": {
                     "$ref": "#/components/examples/MetaValidationFail"
                   },

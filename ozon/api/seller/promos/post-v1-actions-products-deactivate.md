@@ -8,13 +8,17 @@ tags:
   - Promos
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
-deprecated: false
-content_sha: e7f596fd33488fd0
+deprecated: true
+content_sha: ab4574363fcea4b6
 ---
 
 # Удалить товары из акции
 
 `POST /v1/actions/products/deactivate`
+
+> ⚠️ Метод помечен как **deprecated**.
+
+13 октября 2026 года отключим метод. Переключитесь на [/v2/actions/products/deactivate](#operation/ActionsProductsDeactivate).
 
 Метод для удаления товаров из акции.
 
