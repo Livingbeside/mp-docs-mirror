@@ -9,7 +9,7 @@ tags:
 spec_version: ordersfbw
 source: "https://dev.wildberries.ru/docs/openapi/orders-fbw"
 deprecated: false
-content_sha: 35997d1b871aaf9e
+content_sha: 3e02878789db1564
 ---
 
 # Расхождения в поставке{{ /api/supplies/v1/discrepancies/{supplyId} }}
@@ -19,7 +19,8 @@ content_sha: 35997d1b871aaf9e
 Описание метода
 
  Метод [доступен](./api-information#tag/authorization/Pravila-ispolzovaniya-tokenov-dostupa-k-API) по
- Персональному токену
+ Персональному токену, 
+ Сервисному токену
 
 Метод возвращает информацию о выявленных расхождениях между заявленным и фактическим количеством товара в поставке.
 

@@ -2,14 +2,14 @@
 title: Списки характеристик товаров по категориям
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/content/getCategoryContentParameters.md"
-fetched_at: "2026-09-22T02:26:42Z"
-content_sha: dd0979431765d16b
+fetched_at: "2026-09-24T02:13:35Z"
+content_sha: 9db09fe191195645
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.61.0
+    content: Diplodoc Platform v5.61.1
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/content/getCategoryContentParameters.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/content/getCategoryContentParameters.md

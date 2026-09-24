@@ -2,14 +2,14 @@
 title: Информация о заказах
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/orders/getBusinessOrders.md"
-fetched_at: "2026-09-22T02:27:02Z"
-content_sha: 4148797d4bd01dd9
+fetched_at: "2026-09-24T02:13:54Z"
+content_sha: 8ef173e228efb687
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.61.0
+    content: Diplodoc Platform v5.61.1
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/orders/getBusinessOrders.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/orders/getBusinessOrders.md
@@ -6509,7 +6509,7 @@ alternate:
             - OTHER
         minItems: 1
     $defs:
-      /home/sandbox/.ya/build/build_root/jc95/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/orders/api/getBusinessOrders.yaml#/OrderDatesFilterDTO:
+      /home/sandbox/.ya/build/build_root/pyur/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/orders/api/getBusinessOrders.yaml#/OrderDatesFilterDTO:
         type: object
         description: Фильтр по датам заказов.
         properties:

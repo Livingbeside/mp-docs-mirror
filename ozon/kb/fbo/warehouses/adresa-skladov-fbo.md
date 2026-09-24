@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /fbo/warehouses/adresa-skladov-fbo
 source: "https://seller-edu.ozon.ru/libra/fbo/warehouses/adresa-skladov-fbo"
-updated: "2026-09-15 09:05:23"
+updated: "2026-09-23 13:15:09"
 doc_id: 13009
-fetched_at: "2026-09-16T02:21:47Z"
-content_sha: 72b141b43ca39ae1
+fetched_at: "2026-09-24T02:07:40Z"
+content_sha: 1c3fcaaa904abd5f
 ---
 
 # Адреса и реквизиты складов и пунктов приёма Ozon
@@ -1433,9 +1433,9 @@ _Главная / Продажа со склада Ozon (FBO) / Склады, а
 
 **Email: **[disp-horug@ozon.ru](mailto:disp-horug@ozon.ru)
 
-**Название в системе:** Хоругвино_РФЦ_НЕГАБАРИТ
+Склад закрыт для записи и приёма кросс-докинг поставок с 14 сентября 2026 года.
 
-**Название в системе** **(только для сдачи кросс-докинга):** ХОРУГВИНО_Кроссдокинг
+**Название в системе:** Хоругвино_РФЦ_НЕГАБАРИТ
 
 **График работы:**
 

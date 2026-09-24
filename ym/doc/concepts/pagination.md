@@ -2,14 +2,14 @@
 title: Пагинация в запросах
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/concepts/pagination.md"
-fetched_at: "2026-09-22T02:26:18Z"
-content_sha: 92c2a3db9c2bc50e
+fetched_at: "2026-09-24T02:13:11Z"
+content_sha: c848ee0fa6cff336
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.61.0
+    content: Diplodoc Platform v5.61.1
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/concepts/pagination.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/concepts/pagination.md

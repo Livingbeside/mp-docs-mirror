@@ -2,14 +2,14 @@
 title: Интеграция на Node.js Express
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/push-notifications/concepts/quick-start-notifications-node-express.md"
-fetched_at: "2026-09-22T02:28:05Z"
-content_sha: b855721a33da27b8
+fetched_at: "2026-09-24T02:15:02Z"
+content_sha: e28eedfcd5efce7c
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.61.0
+    content: Diplodoc Platform v5.61.1
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/push-notifications/concepts/quick-start-notifications-node-express.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/push-notifications/concepts/quick-start-notifications-node-express.md

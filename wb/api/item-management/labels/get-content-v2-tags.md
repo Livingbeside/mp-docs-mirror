@@ -3,13 +3,13 @@ title: Список ярлыков
 api: wb-item-management
 method: GET
 path: /content/v2/tags
-operation_id: get-content-v2-tags
+operation_id: getV2Tags
 tags:
   - labels
 spec_version: items
 source: "https://dev.wildberries.ru/docs/openapi/item-management"
 deprecated: false
-content_sha: 3c6e36857c9f1ace
+content_sha: 02c7e7ce6b2fa7c1
 ---
 
 # Список ярлыков
@@ -63,7 +63,7 @@ content_sha: 3c6e36857c9f1ace
 
 - `data` — object. Данные ошибки
 - `error` — boolean. Флаг ошибки
-- `errorText` — string. Текст ошибки
+- `errorText` — string. Описание ошибки
 - `additionalErrors` — string. Дополнительные ошибки
 
 **429** — Слишком много запросов

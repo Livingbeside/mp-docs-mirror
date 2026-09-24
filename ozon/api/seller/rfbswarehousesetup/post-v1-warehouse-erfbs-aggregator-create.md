@@ -9,7 +9,7 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: b14e1c103a83e02a
+content_sha: ba81a7f4ba3748b4
 ---
 
 # Создать склад с методом доставки «Партнёры Ozon»
@@ -50,6 +50,7 @@ content_sha: b14e1c103a83e02a
     - `contact_days` — integer<int64>. Количество дней, за которое вы свяжетесь с покупателем. Параметр обязательный, если `return_method = COURIER`.
     - `post_office_zipcode` — string. Индекс отделения Почты России для [«лёгкого возврата»](https://seller-edu.ozon.ru/rfbs/vozvraty/vozvraty#%C2%AB%D0%BB%D1%91%D0%B3%D0%BA%D0%B8%D0%B8-%D0%B2%D0%BE%D0%B7%D0%B2%D1%80%D0%B0%D1%82%C2%BB-%D0%BF%D0%BE%D1%87%D1%82%D0%BE%D0%B8-%D1%80%D0%BE%D1%81%D1%81%D0%B8%D0%B8).
     - `return_method` — string (UNSPECIFIED, COURIER, TRANSPORT_COMPANY) **обязательный**. Способы возврата: - `UNSPECIFIED` — не определён, - `COURIER` — курьером, - `TRANSPORT_COMPANY` — транспортной компанией. По умолчанию: `UNSPECIFIED`.
+    - `return_point_id` — integer<int64>. Идентификатор пункта возврата. Получите значение параметра методом [/v1/warehouse/rfbs/return-point/list](#operation/WarehouseRfbsReturnPointList).
     - `transport_company_name` — string. Название транспортной компании. Параметр обязательный, если `return_method = TRANSPORT_COMPANY`.
 - `min_order_value` — integer<int64>. Минимальная стоимость заказа.
 - `name` — string **обязательный**. Название склада.

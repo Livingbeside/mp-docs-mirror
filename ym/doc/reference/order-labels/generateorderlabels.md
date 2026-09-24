@@ -2,14 +2,14 @@
 title: Готовые ярлыки для одного заказа
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/order-labels/generateOrderLabels.md"
-fetched_at: "2026-09-22T02:27:19Z"
-content_sha: cfdcc37aa917074b
+fetched_at: "2026-09-24T02:14:11Z"
+content_sha: 6e774afd7f158a9a
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.61.0
+    content: Diplodoc Platform v5.61.1
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/order-labels/generateOrderLabels.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/order-labels/generateOrderLabels.md
@@ -803,7 +803,7 @@ alternate:
       required: false
       schema:
         $ref: >-
-          /home/sandbox/.ya/build/build_root/jc95/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/order-labels/schemas.yaml#/PageFormatType
+          /home/sandbox/.ya/build/build_root/pyur/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/order-labels/schemas.yaml#/PageFormatType
   headers: []
   body: null
   schema: {}

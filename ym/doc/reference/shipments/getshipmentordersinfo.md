@@ -2,14 +2,14 @@
 title: Информация о возможности печати ярлыков (FBS)
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/shipments/getShipmentOrdersInfo.md"
-fetched_at: "2026-09-22T02:27:20Z"
-content_sha: dc639e7fcbb0f305
+fetched_at: "2026-09-24T02:14:13Z"
+content_sha: 7947544d909b7e56
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.61.0
+    content: Diplodoc Platform v5.61.1
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/shipments/getShipmentOrdersInfo.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/shipments/getShipmentOrdersInfo.md

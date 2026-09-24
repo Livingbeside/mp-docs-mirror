@@ -9,7 +9,7 @@ tags:
 spec_version: items
 source: "https://dev.wildberries.ru/docs/openapi/item-management"
 deprecated: false
-content_sha: bbaa938b16fe0c0d
+content_sha: 3e35ea723ba8de06
 ---
 
 # Получить товары с ценами по артикулам
@@ -66,13 +66,13 @@ content_sha: bbaa938b16fe0c0d
       - `wholesaleDiscount` — integer **обязательный**. Скидка, %
       - `level` — integer **обязательный**. Уровень скидки
 - `error` — boolean **обязательный**. Флаг ошибки
-- `errorText` — string **обязательный**. Текст ошибки
+- `errorText` — string **обязательный**. Описание ошибки
 
 **400** — Неправильный запрос
 
 - `data` — object. Данные ошибки
 - `error` — boolean. Флаг ошибки
-- `errorText` — string. Текст ошибки
+- `errorText` — string. Описание ошибки
 
 **401** — Не авторизован
 
@@ -94,7 +94,7 @@ content_sha: bbaa938b16fe0c0d
 
 - `data` — object. Данные ошибки
 - `error` — boolean. Флаг ошибки
-- `errorText` — string. Текст ошибки
+- `errorText` — string. Описание ошибки
 
 **429** — Слишком много запросов
 

@@ -2,14 +2,14 @@
 title: Детальная информация по заказам
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/orders-stats/getOrdersStats.md"
-fetched_at: "2026-09-22T02:27:34Z"
-content_sha: b36751724543c63c
+fetched_at: "2026-09-24T02:14:26Z"
+content_sha: a1dcd9ed1273c876
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.61.0
+    content: Diplodoc Platform v5.61.1
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/orders-stats/getOrdersStats.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/orders-stats/getOrdersStats.md

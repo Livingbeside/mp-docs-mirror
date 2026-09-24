@@ -2,14 +2,14 @@
 title: Просмотр остатков и оборачиваемости
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/stocks/getStocks.md"
-fetched_at: "2026-09-22T02:26:52Z"
-content_sha: 66f3edd46378f08b
+fetched_at: "2026-09-24T02:13:45Z"
+content_sha: 53daf4198722ce58
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.61.0
+    content: Diplodoc Platform v5.61.1
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/stocks/getStocks.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/stocks/getStocks.md

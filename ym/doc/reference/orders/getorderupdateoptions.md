@@ -2,14 +2,14 @@
 title: Получение временных интервалов для изменения заказа
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/orders/getOrderUpdateOptions.md"
-fetched_at: "2026-09-22T02:27:12Z"
-content_sha: 9cde4485bd81bcc6
+fetched_at: "2026-09-24T02:14:05Z"
+content_sha: 0b61bb39aaba7fe3
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.61.0
+    content: Diplodoc Platform v5.61.1
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/orders/getOrderUpdateOptions.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/orders/getOrderUpdateOptions.md
@@ -1072,7 +1072,7 @@ alternate:
         x-hidden: true
         $ref: '#/$defs/OrderUpdateOptionType'
     $defs:
-      /home/sandbox/.ya/build/build_root/jc95/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/orders/api/getOrderUpdateOptions.yaml#/OrderUpdateOptionType:
+      /home/sandbox/.ya/build/build_root/pyur/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/orders/api/getOrderUpdateOptions.yaml#/OrderUpdateOptionType:
         description: |
           Тип изменения заказа:
   

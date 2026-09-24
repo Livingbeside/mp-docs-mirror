@@ -9,7 +9,7 @@ tags:
 spec_version: items
 source: "https://dev.wildberries.ru/docs/openapi/item-management"
 deprecated: false
-content_sha: a469324e81a1862f
+content_sha: 8ef3acc2a56a3403
 ---
 
 # Восстановление карточек товаров из корзины
@@ -50,7 +50,7 @@ content_sha: a469324e81a1862f
 
 - `data` — object. Данные ошибки
 - `error` — boolean. Флаг ошибки
-- `errorText` — string. Текст ошибки
+- `errorText` — string. Описание ошибки
 - `additionalErrors` — object. Дополнительные ошибки
 
 **401** — Не авторизован
@@ -73,7 +73,7 @@ content_sha: a469324e81a1862f
 
 - `data` — object. Данные ошибки
 - `error` — boolean. Флаг ошибки
-- `errorText` — string. Текст ошибки
+- `errorText` — string. Описание ошибки
 - `additionalErrors` — string. Дополнительные ошибки
 
 **429** — Слишком много запросов

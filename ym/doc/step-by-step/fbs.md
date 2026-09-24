@@ -2,14 +2,14 @@
 title: FBS-заказы
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/fbs.md"
-fetched_at: "2026-09-22T02:26:27Z"
-content_sha: 975bb1fcd5bc3d46
+fetched_at: "2026-09-24T02:13:19Z"
+content_sha: a895c9bc832bba97
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.61.0
+    content: Diplodoc Platform v5.61.1
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/step-by-step/fbs.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/fbs.md

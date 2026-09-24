@@ -9,7 +9,7 @@ tags:
 spec_version: items
 source: "https://dev.wildberries.ru/docs/openapi/item-management"
 deprecated: false
-content_sha: 5ea014c1af4cb9f6
+content_sha: d158362e7f73307e
 ---
 
 # ТНВЭД-код
@@ -58,14 +58,14 @@ content_sha: 5ea014c1af4cb9f6
   - `tnved` — string. ТНВЭД-код
   - `isKiz` — boolean. - `true` — код маркировки [Честного знака](https://честныйзнак.рф/) требуется - `false` — код маркировки [Честного знака](https://честныйзнак.рф/) не требуется
 - `error` — boolean. Флаг наличия ошибки
-- `errorText` — string. Текст ошибки
+- `errorText` — string. Описание ошибки
 - `additionalErrors` — string. Дополнительные ошибки
 
 **400** — Неправильный запрос
 
 - `data` — object. Данные ошибки
 - `error` — boolean. Флаг ошибки
-- `errorText` — string. Текст ошибки
+- `errorText` — string. Описание ошибки
 - `additionalErrors` — object. Дополнительные ошибки
 
 **401** — Не авторизован
@@ -83,7 +83,7 @@ content_sha: 5ea014c1af4cb9f6
 
 - `data` — object. Данные ошибки
 - `error` — boolean. Флаг ошибки
-- `errorText` — string. Текст ошибки
+- `errorText` — string. Описание ошибки
 - `additionalErrors` — string. Дополнительные ошибки
 
 **429** — Слишком много запросов

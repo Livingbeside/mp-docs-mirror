@@ -2729,7 +2729,7 @@
             "type": "boolean"
           },
           "requiredLimit": {
-            "description": "Рекомендуемый минимальный размер дневного лимита при текущих ставках кампании. Указывается в разменных единицах — 0,01 от базовой валюты [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances).\n",
+            "description": "Рекомендуемый минимальный размер дневного лимита при текущих ставках кампании. Указывается в разменных единицах — 0,01 от базовой валюты [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances)\n",
             "example": 3001,
             "format": "int64",
             "type": "integer"
@@ -3246,7 +3246,7 @@
             "type": "boolean"
           },
           "dailyLimit": {
-            "description": "Сумма дневного лимита. Параметр обязателен при `\"enabled\": true`.\nМинимально допустимая сумма указана в поле `minDailyLimit` метода [GET /api/advert/v1/config]().\n",
+            "description": "Сумма дневного лимита. Параметр обязателен при `\"enabled\": true`.\nМинимально допустимая сумма указана в поле `minDailyLimit` метода [GET /api/advert/v1/config]()\n",
             "example": 1000,
             "format": "int64",
             "minimum": 1000,
@@ -3679,6 +3679,11 @@
             "description": "Код валюты [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances)",
             "type": "integer"
           },
+          "minDailyLimit": {
+            "description": "Минимально допустимый размер дневного лимита, вне зависимости от ставок кампании. Указывается в разменных единицах — 0,01 от базовой валюты [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances)\n",
+            "format": "int64",
+            "type": "integer"
+          },
           "minTopUp": {
             "description": "Минимальная сумма пополнения бюджета кампании в разменных единицах — 0,01 от базовой валюты [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances).\n Например, минимальная сумма пополнения бюджета при `\"minTopUp\": 10000` и `\"currency\": \"UZS\"` — 100 узбекских сум\n",
             "format": "int64",
@@ -3690,7 +3695,8 @@
           "currencyCode",
           "cpmStep",
           "cpcStep",
-          "minTopUp"
+          "minTopUp",
+          "minDailyLimit"
         ],
         "type": "object"
       },
@@ -8572,6 +8578,7 @@
                   "cpmStep": 100000,
                   "currency": "UZS",
                   "currencyCode": 860,
+                  "minDailyLimit": 100000,
                   "minTopUp": 10000
                 },
                 "schema": {

@@ -2,14 +2,14 @@
 title: Передача информации об остатках
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/stocks/updateStocksOnPartnerWarehouses.md"
-fetched_at: "2026-09-22T02:26:54Z"
-content_sha: feb099a711b88928
+fetched_at: "2026-09-24T02:13:46Z"
+content_sha: ac5a6b9cebb1c466
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.61.0
+    content: Diplodoc Platform v5.61.1
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/stocks/updateStocksOnPartnerWarehouses.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/stocks/updateStocksOnPartnerWarehouses.md

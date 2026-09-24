@@ -2,14 +2,14 @@
 title: Создание заказа
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/orders/createOrder.md"
-fetched_at: "2026-09-22T02:27:10Z"
-content_sha: 59812fb3ab2fa5d0
+fetched_at: "2026-09-24T02:14:03Z"
+content_sha: 0944e1783502bee3
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.61.0
+    content: Diplodoc Platform v5.61.1
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/orders/createOrder.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/orders/createOrder.md
@@ -2611,7 +2611,7 @@ alternate:
                   type: boolean
                   description: Признак обязательности услуги.
     $defs:
-      /home/sandbox/.ya/build/build_root/jc95/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/common/schemas.yaml#/CurrencyType:
+      /home/sandbox/.ya/build/build_root/pyur/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/common/schemas.yaml#/CurrencyType:
         type: string
         description: |
           Коды валют:
@@ -2745,7 +2745,7 @@ alternate:
           - NAD
           - TL
           - UE
-      /home/sandbox/.ya/build/build_root/jc95/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/orders/schemas.yaml#/OrderVatType:
+      /home/sandbox/.ya/build/build_root/pyur/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/orders/schemas.yaml#/OrderVatType:
         description: >
           НДС на товар или доставку:
   
@@ -2807,7 +2807,7 @@ alternate:
           - VAT_07
           - VAT_22
           - UNKNOWN_VALUE
-      /home/sandbox/.ya/build/build_root/jc95/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/common/schemas.yaml#/TimeIntervalDTO:
+      /home/sandbox/.ya/build/build_root/pyur/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/common/schemas.yaml#/TimeIntervalDTO:
         type: object
         description: Интервал времени доставки.
         required:

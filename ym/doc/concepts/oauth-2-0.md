@@ -2,14 +2,14 @@
 title: OAuth 2.0 (устаревший)
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/concepts/oauth-2.0.md"
-fetched_at: "2026-09-22T02:26:15Z"
-content_sha: fb1a56b39871653e
+fetched_at: "2026-09-24T02:13:07Z"
+content_sha: f724e1672dc00674
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.61.0
+    content: Diplodoc Platform v5.61.1
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/concepts/oauth-2.0.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/concepts/oauth-2.0.md

@@ -9,7 +9,7 @@ tags:
 spec_version: items
 source: "https://dev.wildberries.ru/docs/openapi/item-management"
 deprecated: false
-content_sha: 756719fd0497d0b6
+content_sha: c486bbbc19621195
 ---
 
 # Генерация баркодов
@@ -77,7 +77,7 @@ content_sha: 756719fd0497d0b6
 
 - `data` — object. Данные ошибки
 - `error` — boolean. Флаг ошибки
-- `errorText` — string. Текст ошибки
+- `errorText` — string. Описание ошибки
 - `additionalErrors` — string. Дополнительные ошибки
 
 **429** — Слишком много запросов

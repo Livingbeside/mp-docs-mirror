@@ -2,14 +2,14 @@
 title: Склады
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/warehouses.md"
-fetched_at: "2026-09-22T02:26:33Z"
-content_sha: 873dc9c1b76fd5da
+fetched_at: "2026-09-24T02:13:26Z"
+content_sha: b4e74edcd455b8f5
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.61.0
+    content: Diplodoc Platform v5.61.1
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/step-by-step/warehouses.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/warehouses.md

@@ -2,14 +2,14 @@
 title: Передача кодов маркировки
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/orders/provideOrderItemIdentifiers.md"
-fetched_at: "2026-09-22T02:27:05Z"
-content_sha: 168bd8904cc9756c
+fetched_at: "2026-09-24T02:13:57Z"
+content_sha: 1afaf57ea973a3a8
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.61.0
+    content: Diplodoc Platform v5.61.1
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/orders/provideOrderItemIdentifiers.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/orders/provideOrderItemIdentifiers.md

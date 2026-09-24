@@ -2,14 +2,14 @@
 title: Обработка заказов и учёт товаров
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/_auto/scopes_summary/pages/inventory-and-order-processing.md"
-fetched_at: "2026-09-22T02:26:11Z"
-content_sha: 140b116bd4b25fd4
+fetched_at: "2026-09-24T02:13:02Z"
+content_sha: acac65ab5d73f840
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.61.0
+    content: Diplodoc Platform v5.61.1
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/_auto/scopes_summary/pages/inventory-and-order-processing.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/_auto/scopes_summary/pages/inventory-and-order-processing.md

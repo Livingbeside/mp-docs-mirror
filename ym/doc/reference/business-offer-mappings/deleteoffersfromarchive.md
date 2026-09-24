@@ -2,14 +2,14 @@
 title: Удаление из архива
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/business-offer-mappings/deleteOffersFromArchive.md"
-fetched_at: "2026-09-22T02:26:52Z"
-content_sha: 1466e279afa344b5
+fetched_at: "2026-09-24T02:13:44Z"
+content_sha: 6eaa8a02ec4817a1
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.61.0
+    content: Diplodoc Platform v5.61.1
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/business-offer-mappings/deleteOffersFromArchive.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/business-offer-mappings/deleteOffersFromArchive.md

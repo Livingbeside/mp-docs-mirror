@@ -2,14 +2,14 @@
 title: Удаление из карантина по цене в кабинете
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/price-quarantine/confirmBusinessPrices.md"
-fetched_at: "2026-09-22T02:26:59Z"
-content_sha: df2b53530b95c4cc
+fetched_at: "2026-09-24T02:13:51Z"
+content_sha: ccd02ccb57572447
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.61.0
+    content: Diplodoc Platform v5.61.1
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/price-quarantine/confirmBusinessPrices.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/price-quarantine/confirmBusinessPrices.md

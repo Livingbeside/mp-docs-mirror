@@ -9,7 +9,7 @@ tags:
 spec_version: items
 source: "https://dev.wildberries.ru/docs/openapi/item-management"
 deprecated: false
-content_sha: b047f71a0aeeb21e
+content_sha: 3e4b4ca4bbbac8b4
 ---
 
 # Родительские категории товаров
@@ -64,7 +64,7 @@ content_sha: b047f71a0aeeb21e
 
 - `data` — object. Данные ошибки
 - `error` — boolean. Флаг ошибки
-- `errorText` — string. Текст ошибки
+- `errorText` — string. Описание ошибки
 - `additionalErrors` — object. Дополнительные ошибки
 
 **401** — Не авторизован
@@ -82,7 +82,7 @@ content_sha: b047f71a0aeeb21e
 
 - `data` — object. Данные ошибки
 - `error` — boolean. Флаг ошибки
-- `errorText` — string. Текст ошибки
+- `errorText` — string. Описание ошибки
 - `additionalErrors` — string. Дополнительные ошибки
 
 **429** — Слишком много запросов

@@ -9,7 +9,7 @@ tags:
 spec_version: items
 source: "https://dev.wildberries.ru/docs/openapi/item-management"
 deprecated: false
-content_sha: bd64fd4324aa538d
+content_sha: f6eab5e90aa4a805
 ---
 
 # Список несозданных карточек товаров с ошибками
@@ -95,7 +95,7 @@ content_sha: bd64fd4324aa538d
 
 - `data` — object. Данные ошибки
 - `error` — boolean. Флаг ошибки
-- `errorText` — string. Текст ошибки
+- `errorText` — string. Описание ошибки
 - `additionalErrors` — object. Дополнительные ошибки
 
 **401** — Не авторизован
@@ -113,7 +113,7 @@ content_sha: bd64fd4324aa538d
 
 - `data` — object. Данные ошибки
 - `error` — boolean. Флаг ошибки
-- `errorText` — string. Текст ошибки
+- `errorText` — string. Описание ошибки
 - `additionalErrors` — string. Дополнительные ошибки
 
 **429** — Слишком много запросов

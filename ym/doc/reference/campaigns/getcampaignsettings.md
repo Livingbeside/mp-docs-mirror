@@ -2,14 +2,14 @@
 title: Настройки магазина
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/campaigns/getCampaignSettings.md"
-fetched_at: "2026-09-22T02:26:41Z"
-content_sha: b76b56e4636480b4
+fetched_at: "2026-09-24T02:13:34Z"
+content_sha: bfea1e3873ccd500
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.61.0
+    content: Diplodoc Platform v5.61.1
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/campaigns/getCampaignSettings.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/campaigns/getCampaignSettings.md

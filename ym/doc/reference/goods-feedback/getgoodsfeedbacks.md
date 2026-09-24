@@ -2,14 +2,14 @@
 title: Отзывы на товары продавца
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/goods-feedback/getGoodsFeedbacks.md"
-fetched_at: "2026-09-22T02:27:45Z"
-content_sha: aff629498fc97f3b
+fetched_at: "2026-09-24T02:14:37Z"
+content_sha: a99292b7628a921b
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.61.0
+    content: Diplodoc Platform v5.61.1
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/goods-feedback/getGoodsFeedbacks.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/goods-feedback/getGoodsFeedbacks.md
@@ -1861,7 +1861,7 @@ alternate:
         description: Фильтр отзывов за баллы Плюса.
         type: boolean
     $defs:
-      /home/sandbox/.ya/build/build_root/jc95/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/goods-feedback/schemas.yaml#/FeedbackReactionStatusType:
+      /home/sandbox/.ya/build/build_root/pyur/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/goods-feedback/schemas.yaml#/FeedbackReactionStatusType:
         description: |
           Статус реакции на отзыв:
   

@@ -2,9 +2,9 @@
 title: Документация Ozon Seller API — все методы
 api: ozon-seller
 spec_version: 2.1
-operations: 480
+operations: 481
 source: "https://docs.ozon.ru/api/seller/"
-content_sha: 4b3c4add0e4111ba
+content_sha: 17040d5ae9039115
 ---
 
 # Документация Ozon Seller API
@@ -18,7 +18,7 @@ content_sha: 4b3c4add0e4111ba
 
 > [Информационная платформа и сообщество разработчиков Ozon for dev](https://dev.ozon.ru/)
 
-Версия спеки: `2.1` · методов: **480** · разделов справки: **26**
+Версия спеки: `2.1` · методов: **481** · разделов справки: **26**
 
 Источник: https://docs.ozon.ru/api/seller/
 
@@ -397,6 +397,7 @@ content_sha: 4b3c4add0e4111ba
 | `POST` | `/v1/warehouse/operation/status` | WarehouseAPI | [Получить статус операции](warehouseapi/post-v1-warehouse-operation-status.md) |
 | `POST` | `/v1/warehouse/ozon/list` | FBOWarehouse | [Получить список складов Ozon](fbowarehouse/post-v1-warehouse-ozon-list.md) |
 | `POST` | `/v1/warehouse/rfbs/pause` | rFBSWarehouseSetup | [Поставить rFBS-склад на паузу](rfbswarehousesetup/post-v1-warehouse-rfbs-pause.md) |
+| `POST` | `/v1/warehouse/rfbs/return-point/list` | BetaMethod | [Получить список пунктов возврата для склада rFBS](betamethod/post-v1-warehouse-rfbs-return-point-list.md) |
 | `POST` | `/v1/warehouse/rfbs/unpause` | rFBSWarehouseSetup | [Снять rFBS-склад с паузы](rfbswarehousesetup/post-v1-warehouse-rfbs-unpause.md) |
 | `POST` | `/v1/warehouse/unarchive` | WarehouseAPI | [Перенести склад из архива](warehouseapi/post-v1-warehouse-unarchive.md) |
 | `POST` | `/v1/warehouse/warehouses-with-invalid-products` | WarehouseAPI | [Получить список складов с ограниченными для доставки товарами](warehouseapi/post-v1-warehouse-warehouses-with-invalid-products.md) |

@@ -9,7 +9,7 @@ tags:
 spec_version: items
 source: "https://dev.wildberries.ru/docs/openapi/item-management"
 deprecated: false
-content_sha: 2d5c1bb6c54d90d0
+content_sha: 24cf1eb812f71a6a
 ---
 
 # Список предметов
@@ -62,7 +62,7 @@ content_sha: 2d5c1bb6c54d90d0
   - `subjectName` — string. Название предмета
   - `parentName` — string. Название родительской категории
 - `error` — boolean. Флаг наличия ошибки
-- `errorText` — string. Текст ошибки
+- `errorText` — string. Описание ошибки
 - `additionalErrors` — string. Дополнительные ошибки
 
 **401** — Не авторизован

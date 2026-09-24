@@ -2,14 +2,14 @@
 title: Список складов для кабинетов с группами складов
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/warehouses/getPagedWarehouses.md"
-fetched_at: "2026-09-22T02:27:55Z"
-content_sha: 6428d48fcc60cc28
+fetched_at: "2026-09-24T02:14:54Z"
+content_sha: f2615cb76fadaaad
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.61.0
+    content: Diplodoc Platform v5.61.1
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/warehouses/getPagedWarehouses.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/warehouses/getPagedWarehouses.md

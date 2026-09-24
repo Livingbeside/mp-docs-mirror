@@ -2,14 +2,14 @@
 title: Создание и изменение
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/outlet-licenses/updateOutletLicenses.md"
-fetched_at: "2026-09-22T02:27:26Z"
-content_sha: b544602874458847
+fetched_at: "2026-09-24T02:14:18Z"
+content_sha: f3ece3771b5a9032
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.61.0
+    content: Diplodoc Platform v5.61.1
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/outlet-licenses/updateOutletLicenses.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/outlet-licenses/updateOutletLicenses.md

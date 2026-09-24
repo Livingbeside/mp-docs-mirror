@@ -2,14 +2,14 @@
 title: Формат входных данных
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/concepts/input-format.md"
-fetched_at: "2026-09-22T02:26:16Z"
-content_sha: 4b8a9f9c19c9ae40
+fetched_at: "2026-09-24T02:13:09Z"
+content_sha: 0620222b12ea7986
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.61.0
+    content: Diplodoc Platform v5.61.1
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/concepts/input-format.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/concepts/input-format.md

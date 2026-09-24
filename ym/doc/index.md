@@ -2,14 +2,14 @@
 title: index.md
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/index.md"
-fetched_at: "2026-09-22T02:26:09Z"
-content_sha: d627df547e67ebf7
+fetched_at: "2026-09-24T02:13:00Z"
+content_sha: b0ec52caeb089539
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.61.0
+    content: Diplodoc Platform v5.61.1
 alternate:
   - en/
   - ru/

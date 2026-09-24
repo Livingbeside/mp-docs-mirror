@@ -2,14 +2,14 @@
 title: Получение документов
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/documents/getDocuments.md"
-fetched_at: "2026-09-22T02:26:47Z"
-content_sha: fe0f49f50f2f7e03
+fetched_at: "2026-09-24T02:13:40Z"
+content_sha: eb751d27fb77059a
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.61.0
+    content: Diplodoc Platform v5.61.1
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/documents/getDocuments.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/documents/getDocuments.md

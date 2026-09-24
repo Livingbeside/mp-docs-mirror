@@ -9,7 +9,7 @@ tags:
 spec_version: items
 source: "https://dev.wildberries.ru/docs/openapi/item-management"
 deprecated: false
-content_sha: d1a88c98820b2e87
+content_sha: f760da1ce9ab69b7
 ---
 
 # Пол
@@ -50,7 +50,7 @@ content_sha: d1a88c98820b2e87
 
 - `data` — object. Данные ошибки
 - `error` — boolean. Флаг ошибки
-- `errorText` — string. Текст ошибки
+- `errorText` — string. Описание ошибки
 - `additionalErrors` — object. Дополнительные ошибки
 
 **401** — Не авторизован
@@ -68,7 +68,7 @@ content_sha: d1a88c98820b2e87
 
 - `data` — object. Данные ошибки
 - `error` — boolean. Флаг ошибки
-- `errorText` — string. Текст ошибки
+- `errorText` — string. Описание ошибки
 - `additionalErrors` — string. Дополнительные ошибки
 
 **429** — Слишком много запросов

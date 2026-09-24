@@ -2,14 +2,14 @@
 title: Настройка интеграции с нуля на JavaScript
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/quick-start-js.md"
-fetched_at: "2026-09-22T02:26:22Z"
-content_sha: 9ed3d2ca37cbc1f7
+fetched_at: "2026-09-24T02:13:15Z"
+content_sha: 01fad945350e0fb5
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.61.0
+    content: Diplodoc Platform v5.61.1
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/step-by-step/quick-start-js.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/quick-start-js.md

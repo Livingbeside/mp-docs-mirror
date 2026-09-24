@@ -2,14 +2,14 @@
 title: Настройка магазинов
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/_auto/scopes_summary/pages/settings-management.md"
-fetched_at: "2026-09-22T02:26:14Z"
-content_sha: cc530e470738b0d7
+fetched_at: "2026-09-24T02:13:07Z"
+content_sha: 635d357acde1f1f3
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.61.0
+    content: Diplodoc Platform v5.61.1
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/_auto/scopes_summary/pages/settings-management.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/_auto/scopes_summary/pages/settings-management.md

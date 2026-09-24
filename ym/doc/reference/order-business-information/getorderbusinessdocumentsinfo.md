@@ -2,14 +2,14 @@
 title: Информация о документах
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/order-business-information/getOrderBusinessDocumentsInfo.md"
-fetched_at: "2026-09-22T02:27:10Z"
-content_sha: 4517f840285ef987
+fetched_at: "2026-09-24T02:14:02Z"
+content_sha: 954398a4cf81aad8
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.61.0
+    content: Diplodoc Platform v5.61.1
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/order-business-information/getOrderBusinessDocumentsInfo.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/order-business-information/getOrderBusinessDocumentsInfo.md

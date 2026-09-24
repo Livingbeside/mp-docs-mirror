@@ -2,14 +2,14 @@
 title: Просмотр цен
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/_auto/scopes_summary/pages/pricing_read-only.md"
-fetched_at: "2026-09-22T02:26:12Z"
-content_sha: 098818b2e01ae975
+fetched_at: "2026-09-24T02:13:03Z"
+content_sha: 0e5124b797e8591d
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.61.0
+    content: Diplodoc Platform v5.61.1
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/_auto/scopes_summary/pages/pricing_read-only.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/_auto/scopes_summary/pages/pricing_read-only.md

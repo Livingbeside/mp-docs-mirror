@@ -2,14 +2,14 @@
 title: Удаление
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/outlets/deleteOutlet.md"
-fetched_at: "2026-09-22T02:27:25Z"
-content_sha: 692f573e94fddaab
+fetched_at: "2026-09-24T02:14:17Z"
+content_sha: 0af31aec2edf4a24
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.61.0
+    content: Diplodoc Platform v5.61.1
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/outlets/deleteOutlet.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/outlets/deleteOutlet.md

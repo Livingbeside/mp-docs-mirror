@@ -2,14 +2,14 @@
 title: Передача ключей цифровых товаров
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/orders/provideOrderDigitalCodes.md"
-fetched_at: "2026-09-22T02:27:09Z"
-content_sha: 7c2189a414f48cf3
+fetched_at: "2026-09-24T02:14:01Z"
+content_sha: b9bca472f71f7e5c
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.61.0
+    content: Diplodoc Platform v5.61.1
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/orders/provideOrderDigitalCodes.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/orders/provideOrderDigitalCodes.md

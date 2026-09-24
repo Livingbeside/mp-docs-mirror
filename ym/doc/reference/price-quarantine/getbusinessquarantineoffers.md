@@ -2,14 +2,14 @@
 title: Просмотр карантина по цене в кабинете
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/price-quarantine/getBusinessQuarantineOffers.md"
-fetched_at: "2026-09-22T02:26:58Z"
-content_sha: 45a2c9b9677c1069
+fetched_at: "2026-09-24T02:13:50Z"
+content_sha: 64976f5b4e560385
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.61.0
+    content: Diplodoc Platform v5.61.1
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/price-quarantine/getBusinessQuarantineOffers.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/price-quarantine/getBusinessQuarantineOffers.md

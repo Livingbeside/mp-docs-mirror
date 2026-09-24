@@ -2,14 +2,14 @@
 title: Передача трек‑номера посылки
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/order-delivery/setOrderDeliveryTrackCode.md"
-fetched_at: "2026-09-22T02:27:06Z"
-content_sha: 1dc67e7000656876
+fetched_at: "2026-09-24T02:13:59Z"
+content_sha: a1a0b3cc19fb4ca3
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.61.0
+    content: Diplodoc Platform v5.61.1
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/order-delivery/setOrderDeliveryTrackCode.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/order-delivery/setOrderDeliveryTrackCode.md

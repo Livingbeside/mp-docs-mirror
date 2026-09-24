@@ -2,14 +2,14 @@
 title: Добавление товаров
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/business-offer-mappings/addOffersToArchive.md"
-fetched_at: "2026-09-22T02:26:51Z"
-content_sha: a919d44e70428a8d
+fetched_at: "2026-09-24T02:13:44Z"
+content_sha: 26dbdaa12eff1817
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.61.0
+    content: Diplodoc Platform v5.61.1
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/business-offer-mappings/addOffersToArchive.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/business-offer-mappings/addOffersToArchive.md

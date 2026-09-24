@@ -9,7 +9,7 @@ tags:
 spec_version: items
 source: "https://dev.wildberries.ru/docs/openapi/item-management"
 deprecated: false
-content_sha: 8da05e79ba2e86bf
+content_sha: 54b77a8b9b4a5224
 ---
 
 # Получить размеры товара с ценами
@@ -61,13 +61,13 @@ content_sha: 8da05e79ba2e86bf
     - `techSizeName` — string. Размер товара
     - `editableSizePrice` — boolean. Можно ли устанавливать цены отдельно для разных размеров (зависит от категории товара): - `true` — можно - `false` — нельзя
 - `error` — boolean. Флаг ошибки
-- `errorText` — string. Текст ошибки
+- `errorText` — string. Описание ошибки
 
 **400** — Неправильный запрос
 
 - `data` — object. Данные ошибки
 - `error` — boolean. Флаг ошибки
-- `errorText` — string. Текст ошибки
+- `errorText` — string. Описание ошибки
 
 **401** — Не авторизован
 
@@ -89,7 +89,7 @@ content_sha: 8da05e79ba2e86bf
 
 - `data` — object. Данные ошибки
 - `error` — boolean. Флаг ошибки
-- `errorText` — string. Текст ошибки
+- `errorText` — string. Описание ошибки
 
 **429** — Слишком много запросов
 

@@ -9,7 +9,7 @@ tags:
 spec_version: items
 source: "https://dev.wildberries.ru/docs/openapi/item-management"
 deprecated: false
-content_sha: 4df3222f1f37bfcc
+content_sha: b490d7d3eab3d4f8
 ---
 
 # Лимиты карточек товаров
@@ -67,7 +67,7 @@ content_sha: 4df3222f1f37bfcc
 
 - `data` — object. Данные ошибки
 - `error` — boolean. Флаг ошибки
-- `errorText` — string. Текст ошибки
+- `errorText` — string. Описание ошибки
 - `additionalErrors` — string. Дополнительные ошибки
 
 **429** — Слишком много запросов

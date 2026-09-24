@@ -9,7 +9,7 @@ tags:
 spec_version: items
 source: "https://dev.wildberries.ru/docs/openapi/item-management"
 deprecated: false
-content_sha: 55a30dd41fd62da3
+content_sha: 6a73710079c50590
 ---
 
 # Установить цены и скидки
@@ -52,7 +52,7 @@ content_sha: 55a30dd41fd62da3
   - `id` — integer. ID загрузки
   - `alreadyExists` — boolean. Флаг дублирования загрузки: `true` — такая загрузка уже есть
 - `error` — boolean. Флаг ошибки
-- `errorText` — string. Текст ошибки
+- `errorText` — string. Описание ошибки
 
 **208** — Такая загрузка уже есть
 
@@ -60,13 +60,13 @@ content_sha: 55a30dd41fd62da3
   - `id` — integer. ID загрузки
   - `alreadyExists` — boolean. Флаг дублирования загрузки: `true` — такая загрузка уже есть
 - `error` — boolean. Флаг ошибки
-- `errorText` — string. Текст ошибки
+- `errorText` — string. Описание ошибки
 
 **400** — Неправильный запрос
 
 - `data` — object. Данные ошибки
 - `error` — boolean. Флаг ошибки
-- `errorText` — string. Текст ошибки
+- `errorText` — string. Описание ошибки
 
 **401** — Не авторизован
 
@@ -88,19 +88,19 @@ content_sha: 55a30dd41fd62da3
 
 - `data` — object. Данные ошибки
 - `error` — boolean. Флаг ошибки
-- `errorText` — string. Текст ошибки
+- `errorText` — string. Описание ошибки
 
 **409** — Ошибка при конвертации валюты
 
 - `data` — object. Данные ошибки
 - `error` — boolean. Флаг ошибки
-- `errorText` — string. Текст ошибки
+- `errorText` — string. Описание ошибки
 
 **422** — Неожидаемый результат
 
 - `data` — object. Данные ошибки
 - `error` — boolean. Флаг ошибки
-- `errorText` — string. Текст ошибки
+- `errorText` — string. Описание ошибки
 
 **429** — Слишком много запросов
 

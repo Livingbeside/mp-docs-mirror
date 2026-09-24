@@ -2,14 +2,14 @@
 title: Чаты с покупателями
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/chats.md"
-fetched_at: "2026-09-22T02:26:33Z"
-content_sha: cf3d3afcbfce69f7
+fetched_at: "2026-09-24T02:13:25Z"
+content_sha: 0abeb51db948cf4e
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.61.0
+    content: Diplodoc Platform v5.61.1
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/step-by-step/chats.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/chats.md

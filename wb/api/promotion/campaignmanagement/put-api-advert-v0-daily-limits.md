@@ -9,7 +9,7 @@ tags:
 spec_version: promotion
 source: "https://dev.wildberries.ru/docs/openapi/promotion"
 deprecated: false
-content_sha: 6bd67949875550ba
+content_sha: 7b83096f7acfec4f
 ---
 
 # Настройка дневных лимитов кампаний
@@ -37,7 +37,7 @@ content_sha: 6bd67949875550ba
 
 - `advertIds` — array[integer<int64>] **обязательный**. ID кампаний
 - `enabled` — boolean **обязательный**. Включить лимит: - `true` — да - `false` — нет
-- `dailyLimit` — integer<int64>. Сумма дневного лимита. Параметр обязателен при `"enabled": true`. Минимально допустимая сумма указана в поле `minDailyLimit` метода [GET /api/advert/v1/config]().
+- `dailyLimit` — integer<int64>. Сумма дневного лимита. Параметр обязателен при `"enabled": true`. Минимально допустимая сумма указана в поле `minDailyLimit` метода [GET /api/advert/v1/config]()
 - `carryOverEnabled` — boolean. Переносить неиспользованный остаток лимита на следующий день: - `true` — да - `false` — нет Параметр обязателен при `"enabled": true`
 
 ## Ответы

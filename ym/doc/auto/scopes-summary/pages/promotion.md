@@ -2,14 +2,14 @@
 title: Продвижение товаров
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/_auto/scopes_summary/pages/promotion.md"
-fetched_at: "2026-09-22T02:26:13Z"
-content_sha: c20362d3723deee2
+fetched_at: "2026-09-24T02:13:05Z"
+content_sha: fee101d7adf0a436
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.61.0
+    content: Diplodoc Platform v5.61.1
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/_auto/scopes_summary/pages/promotion.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/_auto/scopes_summary/pages/promotion.md

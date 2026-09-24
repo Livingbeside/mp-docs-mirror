@@ -9,7 +9,7 @@ tags:
 spec_version: items
 source: "https://dev.wildberries.ru/docs/openapi/item-management"
 deprecated: false
-content_sha: db5e60bdced56d94
+content_sha: 8bc1a238120a2d22
 ---
 
 # Загрузить медиафайлы по ссылкам
@@ -74,7 +74,7 @@ content_sha: db5e60bdced56d94
 - `additionalErrors` — object. Дополнительные ошибки
 - `data` — object. Данные ошибки
 - `error` — boolean. Флаг ошибки
-- `errorText` — string. Текст ошибки
+- `errorText` — string. Описание ошибки
 
 **401** — Не авторизован
 
@@ -97,21 +97,21 @@ content_sha: db5e60bdced56d94
 - `additionalErrors` — object. Дополнительные ошибки
 - `data` — object. Данные ошибки
 - `error` — boolean. Флаг ошибки
-- `errorText` — string. Текст ошибки
+- `errorText` — string. Описание ошибки
 
 **409** — Ошибка сохранения части ссылок
 
 - `additionalErrors` — object. Дополнительные ошибки
 - `data` — object. Данные ошибки
 - `error` — boolean. Флаг ошибки
-- `errorText` — string. Текст ошибки
+- `errorText` — string. Описание ошибки
 
 **422** — Отсутствует параметр nmId
 
 - `additionalErrors` — object. Дополнительные ошибки
 - `data` — object. Данные ошибки
 - `error` — boolean. Флаг ошибки
-- `errorText` — string. Текст ошибки
+- `errorText` — string. Описание ошибки
 
 **429** — Слишком много запросов
 

@@ -2,14 +2,14 @@
 title: Передача количества упаковок для доверительной приемки
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/shipments/setShipmentPalletsCount.md"
-fetched_at: "2026-09-22T02:27:15Z"
-content_sha: 72e4108e2928c5d6
+fetched_at: "2026-09-24T02:14:08Z"
+content_sha: 5944fa7f605dd85f
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.61.0
+    content: Diplodoc Platform v5.61.1
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/shipments/setShipmentPalletsCount.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/shipments/setShipmentPalletsCount.md

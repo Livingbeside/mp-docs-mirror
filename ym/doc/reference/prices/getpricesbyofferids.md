@@ -2,14 +2,14 @@
 title: В магазине
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/prices/getPricesByOfferIds.md"
-fetched_at: "2026-09-22T02:26:57Z"
-content_sha: 5fa4a3c3860389db
+fetched_at: "2026-09-24T02:13:48Z"
+content_sha: 5c0bc44aa2772256
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.61.0
+    content: Diplodoc Platform v5.61.1
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/prices/getPricesByOfferIds.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/prices/getPricesByOfferIds.md

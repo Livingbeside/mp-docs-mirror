@@ -2,14 +2,14 @@
 title: Управление акциями
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/promos.md"
-fetched_at: "2026-09-22T02:26:26Z"
-content_sha: 7752deebd7765ef5
+fetched_at: "2026-09-24T02:13:18Z"
+content_sha: 6ca816cecece8e10
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.61.0
+    content: Diplodoc Platform v5.61.1
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/step-by-step/promos.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/promos.md

@@ -2,14 +2,14 @@
 title: Фотографии товара в возврате
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/returns/getReturnPhoto.md"
-fetched_at: "2026-09-22T02:27:28Z"
-content_sha: 1e1b17b0997d17c7
+fetched_at: "2026-09-24T02:14:21Z"
+content_sha: 0c0c18ab63e93a19
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.61.0
+    content: Diplodoc Platform v5.61.1
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/returns/getReturnPhoto.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/returns/getReturnPhoto.md

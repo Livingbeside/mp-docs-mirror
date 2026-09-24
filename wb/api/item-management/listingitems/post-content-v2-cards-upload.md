@@ -9,7 +9,7 @@ tags:
 spec_version: items
 source: "https://dev.wildberries.ru/docs/openapi/item-management"
 deprecated: false
-content_sha: 5d28ef9fb7fa118a
+content_sha: 08f3f3762ffc5056
 ---
 
 # Создание карточек товаров
@@ -92,7 +92,7 @@ content_sha: 5d28ef9fb7fa118a
 
 - `data` — object. Данные ошибки
 - `error` — boolean. Флаг ошибки
-- `errorText` — string. Текст ошибки
+- `errorText` — string. Описание ошибки
 - `additionalErrors` — object. Дополнительные ошибки
 
 **401** — Не авторизован

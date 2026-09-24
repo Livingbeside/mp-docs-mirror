@@ -2,14 +2,14 @@
 title: Получение уведомлений
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/push-notifications/reference/sendNotification.md"
-fetched_at: "2026-09-22T02:28:06Z"
-content_sha: d63f7b664a849699
+fetched_at: "2026-09-24T02:15:04Z"
+content_sha: 9e05797342ebcc4e
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.61.0
+    content: Diplodoc Platform v5.61.1
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/push-notifications/reference/sendNotification.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/push-notifications/reference/sendNotification.md

@@ -2,14 +2,14 @@
 title: Индекс качества магазинов
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/ratings/getQualityRatings.md"
-fetched_at: "2026-09-22T02:27:50Z"
-content_sha: d9375fd010645b71
+fetched_at: "2026-09-24T02:14:43Z"
+content_sha: 8ffe386f8262737c
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.61.0
+    content: Diplodoc Platform v5.61.1
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/ratings/getQualityRatings.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/ratings/getQualityRatings.md

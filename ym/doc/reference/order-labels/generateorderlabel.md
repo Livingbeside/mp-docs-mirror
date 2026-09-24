@@ -2,14 +2,14 @@
 title: Готовый ярлык для коробки
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/order-labels/generateOrderLabel.md"
-fetched_at: "2026-09-22T02:27:18Z"
-content_sha: 99e8788a377f24a7
+fetched_at: "2026-09-24T02:14:11Z"
+content_sha: fc500b16729c7c3d
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.61.0
+    content: Diplodoc Platform v5.61.1
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/order-labels/generateOrderLabel.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/order-labels/generateOrderLabel.md
@@ -850,7 +850,7 @@ alternate:
       required: false
       schema:
         $ref: >-
-          /home/sandbox/.ya/build/build_root/jc95/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/order-labels/schemas.yaml#/PageFormatType
+          /home/sandbox/.ya/build/build_root/pyur/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/order-labels/schemas.yaml#/PageFormatType
   headers: []
   body: null
   schema: {}

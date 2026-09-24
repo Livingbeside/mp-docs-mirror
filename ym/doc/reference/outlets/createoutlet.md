@@ -2,14 +2,14 @@
 title: Создание
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/outlets/createOutlet.md"
-fetched_at: "2026-09-22T02:27:24Z"
-content_sha: 0176aa17b61d1b9d
+fetched_at: "2026-09-24T02:14:16Z"
+content_sha: 4ae660b2a8ae81be
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.61.0
+    content: Diplodoc Platform v5.61.1
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/outlets/createOutlet.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/outlets/createOutlet.md
@@ -2097,7 +2097,7 @@ alternate:
             type: integer
             format: int64
     $defs:
-      /home/sandbox/.ya/build/build_root/jc95/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/common/schemas.yaml#/DayOfWeekType:
+      /home/sandbox/.ya/build/build_root/pyur/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/common/schemas.yaml#/DayOfWeekType:
         description: |
           День недели:
   

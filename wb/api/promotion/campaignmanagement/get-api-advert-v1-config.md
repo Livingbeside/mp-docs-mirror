@@ -9,7 +9,7 @@ tags:
 spec_version: promotion
 source: "https://dev.wildberries.ru/docs/openapi/promotion"
 deprecated: false
-content_sha: 86bdce10fd40cf1e
+content_sha: a1e70b7143891682
 ---
 
 # Конфигурационные значения продвижения
@@ -39,6 +39,7 @@ content_sha: 86bdce10fd40cf1e
 - `cpmStep` — integer<int64> **обязательный**. Шаг ставки в разменных единицах — 0,01 от базовой валюты [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances) для CPM-кампаний
 - `cpcStep` — integer<int64> **обязательный**. Шаг ставки в разменных единицах — 0,01 от базовой валюты [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances) для кампаний CPC
 - `minTopUp` — integer<int64> **обязательный**. Минимальная сумма пополнения бюджета кампании в разменных единицах — 0,01 от базовой валюты [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances). Например, минимальная сумма пополнения бюджета при `"minTopUp": 10000` и `"currency": "UZS"` — 100 узбекских сум
+- `minDailyLimit` — integer<int64> **обязательный**. Минимально допустимый размер дневного лимита, вне зависимости от ставок кампании. Указывается в разменных единицах — 0,01 от базовой валюты [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances)
 
 **401** — Не авторизован
 

@@ -2,14 +2,14 @@
 title: Отчеты и документы
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/reports.md"
-fetched_at: "2026-09-22T02:26:30Z"
-content_sha: 9ceea6a128372ae4
+fetched_at: "2026-09-24T02:13:23Z"
+content_sha: d47a850e13c33756
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.61.0
+    content: Diplodoc Platform v5.61.1
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/step-by-step/reports.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/reports.md

@@ -2,14 +2,14 @@
 title: В кабинете
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/prices/updateBusinessPrices.md"
-fetched_at: "2026-09-22T02:26:55Z"
-content_sha: 5a5866b16a081444
+fetched_at: "2026-09-24T02:13:47Z"
+content_sha: cf787026fbc81f7a
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.61.0
+    content: Diplodoc Platform v5.61.1
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/prices/updateBusinessPrices.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/prices/updateBusinessPrices.md
@@ -1267,7 +1267,7 @@ alternate:
                       maximum: 100000000
                       exclusiveMinimum: true
     $defs:
-      /home/sandbox/.ya/build/build_root/jc95/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/common/schemas.yaml#/CurrencyType:
+      /home/sandbox/.ya/build/build_root/pyur/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/common/schemas.yaml#/CurrencyType:
         type: string
         description: |
           Коды валют:

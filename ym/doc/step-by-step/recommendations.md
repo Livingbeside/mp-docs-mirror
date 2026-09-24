@@ -2,14 +2,14 @@
 title: Рекомендации по карточкам
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/recommendations.md"
-fetched_at: "2026-09-22T02:26:24Z"
-content_sha: e3e75e6b277b0d31
+fetched_at: "2026-09-24T02:13:16Z"
+content_sha: 4197bfb0bac64f05
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.61.0
+    content: Diplodoc Platform v5.61.1
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/step-by-step/recommendations.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/recommendations.md

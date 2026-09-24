@@ -4,8 +4,8 @@ api: wildberries
 kind: changelog
 source: "https://dev.wildberries.ru/release-notes"
 window: последние записи, страница отдаёт не всю историю
-fetched_at: "2026-09-23T02:22:50Z"
-content_sha: 08e2546a526d7fff
+fetched_at: "2026-09-24T02:12:59Z"
+content_sha: 1a3f3c066251c9e6
 ---
 
 # Журнал изменений WB API
@@ -69,6 +69,25 @@ content_sha: 08e2546a526d7fff
 
 Новое
 
+## 23.09.2026
+
+Маркетинг и продвижение
+
+Управление кампаниями
+
+Дневные лимиты кампаний в API Продвижения
+
+Добавили методы для работы с дневными лимитами кампаний CPC. Теперь с помощью WB API вы можете:
+
+- Получить настройки дневных лимитов кампаний — [GET /api/advert/v0/daily-limits](/docs/openapi/promotion/#tag/campaignManagement/operation/getV0DailyLimits)
+- Управлять дневными лимитами — [PUT /api/advert/v0/daily-limits](/docs/openapi/promotion/#tag/campaignManagement/operation/putV0DailyLimits)
+
+Методы доступны по **Персональному** и **Сервисному** токену категории **Продвижение**.
+
+В ответ метода [GET /api/advert/v1/config](/docs/openapi/promotion/#tag/campaignManagement/operation/getV1Config) добавили поле `minDailyLimit` — минимально допустимый размер дневного лимита, вне зависимости от ставок кампании.
+
+Новое
+
 ## 22.09.2026
 
 Поставки FBW
@@ -118,27 +137,6 @@ content_sha: 08e2546a526d7fff
 
 Текущий метод [GET /adv/v1/budget](https://dev.wildberries.ru/docs/openapi/promotion/#tag/finances/operation/getV1Budget) будет отключён **16 ноября**.
 
-Новое
-
-## 10.09.2026
-
-Поставки FBW
-
-Черновики поставок
-
-Черновики поставок FBW
-
-Добавили методы для работы с [черновиками поставок](./docs/openapi/orders-fbw#tag/supplyDrafts) FBW. Теперь с помощью WB API вы можете:
-
-- Создать черновик — [POST /api/supplies/v1/drafts](./docs/openapi/orders-fbw#tag/supplyDrafts/operation/postV1Drafts)
-- Добавить товары в черновик — [POST /api/supplies/v1/drafts/{draftId}/items](./docs/openapi/orders-fbw#tag/supplyDrafts/operation/postV1DraftsDraftIdItems)
-- Получить список черновиков — [GET /api/supplies/v1/drafts](./docs/openapi/orders-fbw#tag/supplyDrafts/operation/getV1Drafts)
-- Получить список товаров в черновике — [GET /api/supplies/v1/drafts/{draftId}/items](./docs/openapi/orders-fbw#tag/supplyDrafts/operation/getV1DraftsDraftIdItems)
-- Удалить товары из черновика — [DELETE /api/supplies/v1/drafts/{draftId}/items](./docs/openapi/orders-fbw#tag/supplyDrafts/operation/deleteV1DraftsDraftIdItems)
-- Удалить черновик — [DELETE /api/supplies/v1/drafts/{draftId}](./docs/openapi/orders-fbw#tag/supplyDrafts/operation/deleteV1DraftsDraftId)
-
-Методы доступны по **Персональному** и **Сервисному** токену категории **Поставки**.
-
 Изменения
 
 ## 10.09.2026
@@ -175,6 +173,27 @@ content_sha: 08e2546a526d7fff
 
 - `dateStart` — дата начала действия коэффициента
 - `dateEnd` — дата окончания действия коэффициента
+
+Новое
+
+## 10.09.2026
+
+Поставки FBW
+
+Черновики поставок
+
+Черновики поставок FBW
+
+Добавили методы для работы с [черновиками поставок](./docs/openapi/orders-fbw#tag/supplyDrafts) FBW. Теперь с помощью WB API вы можете:
+
+- Создать черновик — [POST /api/supplies/v1/drafts](./docs/openapi/orders-fbw#tag/supplyDrafts/operation/postV1Drafts)
+- Добавить товары в черновик — [POST /api/supplies/v1/drafts/{draftId}/items](./docs/openapi/orders-fbw#tag/supplyDrafts/operation/postV1DraftsDraftIdItems)
+- Получить список черновиков — [GET /api/supplies/v1/drafts](./docs/openapi/orders-fbw#tag/supplyDrafts/operation/getV1Drafts)
+- Получить список товаров в черновике — [GET /api/supplies/v1/drafts/{draftId}/items](./docs/openapi/orders-fbw#tag/supplyDrafts/operation/getV1DraftsDraftIdItems)
+- Удалить товары из черновика — [DELETE /api/supplies/v1/drafts/{draftId}/items](./docs/openapi/orders-fbw#tag/supplyDrafts/operation/deleteV1DraftsDraftIdItems)
+- Удалить черновик — [DELETE /api/supplies/v1/drafts/{draftId}](./docs/openapi/orders-fbw#tag/supplyDrafts/operation/deleteV1DraftsDraftId)
+
+Методы доступны по **Персональному** и **Сервисному** токену категории **Поставки**.
 
 Изменения
 
@@ -520,34 +539,5 @@ DBS
 Изменения в сервисе Продвижения
 
 В ответ метода [GET /api/advert/v1/config](/docs/openapi/promotion/#tag/campaignManagement/operation/getV1Config) добавили информацию о минимальной сумме пополнения бюджета кампании — поле `minTopUp`.
-
-Изменения
-
-## 16.07.2026
-
-Критичное изменение
-
-Аналитика и данные
-
-Оценка товара
-
-Отчёты
-
-Заблокированные карточки
-
-Новая версия Оценки товара и отключение метода Скрытые из каталога
-
-Добавили новую версию метода получения отчёта **Оценка товара** — [POST /api/analytics/v2/item-rating](/docs/openapi/analytics#tag/itemRating/operation/postV2ItemRating). C её помощью вы можете получать данные отдельно по скрытым из каталога товарам.
-
-В новом методе:
-
-- добавили параметр `onlyShadowedNms`:   укажите `true`, чтобы получить в отчёте только скрытые из каталога товары укажите `false`, чтобы получить в отчёте все товары, если не указаны другие параметры
-- добавили поле `isShadowed` — является ли товар скрытым из каталога
-- изменили наименование массива ответа `cards` на `items`
-- изменили наименование параметра `isNotIncludeNMsWithoutSales` на `isNotIncludeNmsWithoutSales`
-
-Метод доступен по **Персональному** или **Сервисному** [токену](/docs/openapi/api-information#tag/authorization/Pravila-ispolzovaniya-tokenov-dostupa-k-API) для категории **Аналитика**.
-
-Текущие методы **POST /api/analytics/v1/item-rating** и **GET /api/v1/analytics/banned-products/shadowed** будут отключены **30 июля**.
 
 Мы используем [cookies](/privacy) для сбора статистики и улучшения сервиса

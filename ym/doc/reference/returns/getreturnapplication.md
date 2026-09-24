@@ -2,14 +2,14 @@
 title: Заявление покупателя
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/returns/getReturnApplication.md"
-fetched_at: "2026-09-22T02:27:28Z"
-content_sha: e10ca2e3da2e985c
+fetched_at: "2026-09-24T02:14:20Z"
+content_sha: a2d6e78293874108
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.61.0
+    content: Diplodoc Platform v5.61.1
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/returns/getReturnApplication.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/returns/getReturnApplication.md

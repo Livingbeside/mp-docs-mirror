@@ -9,7 +9,7 @@ tags:
 spec_version: items
 source: "https://dev.wildberries.ru/docs/openapi/item-management"
 deprecated: false
-content_sha: 73fa1694d7a5f169
+content_sha: 5cf84ef022cc0393
 ---
 
 # Характеристики предмета{{ /content/v2/object/charcs/{subjectId} }}
@@ -69,14 +69,14 @@ content_sha: 73fa1694d7a5f169
   - `isVariable` — boolean. Признак [меняющейся характеристики](/knowledge-base/articles/019d49a4-1320-71bb-9dac-8ba07e7177ce/rabota-s-tovarami#obuedinenie-i-razuedinenie-kartochek-tovarov). Значение размечает характеристики, по которым варианты отличаются друг от друга: - `true` — варианты товара отличаются по этой характеристике - `false` — варианты товара не отличаются по этой характеристике
   - `existNamedField` — boolean. Как передать характеристику в запросах на [cоздание](./item-management#tag/listingItems/operation/postV2CardsUpload), [создание с присоединением](./item-management#tag/listingItems/operation/postV2CardsUploadAdd) и [редактирование](./item-management#tag/listings/operation/postV2CardsUpdate) карточек товара: - `true` — в соответствующем параметре запроса - `false` — внутри массива `characteristics`
 - `error` — boolean. Флаг наличия ошибки
-- `errorText` — string. Текст ошибки
+- `errorText` — string. Описание ошибки
 - `additionalErrors` — string. Дополнительные ошибки
 
 **400** — Неправильный запрос
 
 - `data` — object. Данные ошибки
 - `error` — boolean. Флаг ошибки
-- `errorText` — string. Текст ошибки
+- `errorText` — string. Описание ошибки
 - `additionalErrors` — object. Дополнительные ошибки
 
 **401** — Не авторизован
@@ -94,7 +94,7 @@ content_sha: 73fa1694d7a5f169
 
 - `data` — object. Данные ошибки
 - `error` — boolean. Флаг ошибки
-- `errorText` — string. Текст ошибки
+- `errorText` — string. Описание ошибки
 - `additionalErrors` — string. Дополнительные ошибки
 
 **429** — Слишком много запросов

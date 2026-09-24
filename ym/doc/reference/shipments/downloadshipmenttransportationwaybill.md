@@ -2,14 +2,14 @@
 title: Транспортная накладная
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/shipments/downloadShipmentTransportationWaybill.md"
-fetched_at: "2026-09-22T02:27:17Z"
-content_sha: 26f5cf7d39191c08
+fetched_at: "2026-09-24T02:14:10Z"
+content_sha: 7ad2058b2c6fba52
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.61.0
+    content: Diplodoc Platform v5.61.1
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/shipments/downloadShipmentTransportationWaybill.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/shipments/downloadShipmentTransportationWaybill.md

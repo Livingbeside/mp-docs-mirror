@@ -5,17 +5,26 @@ tag: News
 group: Обновления
 kind: changelog
 source: "https://docs.ozon.ru/api/seller/"
-content_sha: 4652175565a73fdb
+content_sha: ee79d3b19ac7385c
 ---
 
 # Обновления
 
 Следите за обновлениями документации на платформе для разработчиков [Ozon for dev](https://dev.ozon.ru/).
 
+## 23 сентября 2026
+
+| Метод | Изменение |
+|-------|-----------|
+| [/v1/warehouse/rfbs/return-point/list](#operation/WarehouseRfbsReturnPointList) | Добавили бета-метод для получения списка пунктов возврата складов rFBS и rFBS Express. |
+| [/v1/warehouse/erfbs/aggregator/create](#operation/WarehouseERFBSAggregatorCreate) | Добавили параметр `delivery_method.return_settings.return_point_id` в запрос метода. |
+| [/v1/warehouse/erfbs/aggregator/delivery-method/update](#operation/WarehouseERFBSAggregatorDeliveryMethodUpdate) | Добавили параметр `return_settings.return_point_id` в запрос метода. |
+| [/v1/delivery-method/return/settings/get](#operation/GetDeliveryMethodReturnSettingsV1) | Добавили параметр `settings.return_point` в ответ метода. |
+
 ## 22 сентября 2026
 
 | Метод | Изменение |
-|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | [/v1/actions/products/update](#operation/ActionsProductsUpdate)<br>[/v2/actions/products/deactivate](#operation/ActionsProductsDeactivate)<br>[/v2/actions/products](#operation/ActionsProducts)<br>[/v2/actions/candidates](#operation/ActionsCandidates)<br>[/v2/actions/auto-add/products/candidates](#operation/ActionsAutoAddProductsCandidatesV2)<br>[/v2/actions/auto-add/products/update](#operation/ActionsAutoAddProductsUpdateV2)<br>[/v2/actions/auto-add/products/list](#operation/ActionsAutoAddProductsListV2)<br>[/v2/actions/auto-add/products/delete](#operation/ActionsAutoAddProductsDeleteV2) | Добавили новые версии методов для работы с акциями Ozon. |
 | [/v1/actions/candidates](#operation/PromosCandidates) | Метод устаревает и будет отключён 13 октября 2026 года. Переключитесь на [/v2/actions/candidates](#operation/ActionsCandidates). |
 | [/v1/actions/products](#operation/PromosProducts) | Метод устаревает и будет отключён 13 октября 2026 года. Переключитесь на [/v2/actions/products](#operation/ActionsProducts). |

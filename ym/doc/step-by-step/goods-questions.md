@@ -2,14 +2,14 @@
 title: Вопросы и ответы о товарах
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/goods-questions.md"
-fetched_at: "2026-09-22T02:26:31Z"
-content_sha: 97bf9b76f19bfc66
+fetched_at: "2026-09-24T02:13:24Z"
+content_sha: 064d256df4781dbf
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.61.0
+    content: Diplodoc Platform v5.61.1
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/step-by-step/goods-questions.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/goods-questions.md

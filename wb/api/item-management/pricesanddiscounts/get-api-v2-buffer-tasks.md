@@ -9,7 +9,7 @@ tags:
 spec_version: items
 source: "https://dev.wildberries.ru/docs/openapi/item-management"
 deprecated: false
-content_sha: bb63ae65095af8e2
+content_sha: 761ebae5e56c7f27
 ---
 
 # Состояние необработанной загрузки
@@ -51,13 +51,13 @@ content_sha: bb63ae65095af8e2
   - `overAllGoodsNumber` — integer. Всего товаров
   - `successGoodsNumber` — integer. Товаров без ошибок (0, потому что загрузка в обработке)
 - `error` — boolean. Флаг ошибки
-- `errorText` — string. Текст ошибки
+- `errorText` — string. Описание ошибки
 
 **400** — Неправильный запрос
 
 - `data` — object. Данные ошибки
 - `error` — boolean. Флаг ошибки
-- `errorText` — string. Текст ошибки
+- `errorText` — string. Описание ошибки
 
 **401** — Не авторизован
 
@@ -74,7 +74,7 @@ content_sha: bb63ae65095af8e2
 
 - `data` — object. Данные ошибки
 - `error` — boolean. Флаг ошибки
-- `errorText` — string. Текст ошибки
+- `errorText` — string. Описание ошибки
 
 **429** — Слишком много запросов
 

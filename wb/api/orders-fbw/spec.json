@@ -1664,7 +1664,7 @@
   "paths": {
     "/api/supplies/v1/discrepancies/{supplyId}": {
       "get": {
-        "description": "<div class='description-title'><span>Описание метода</span></div>\n\n<div class=\"description_token\">\n    Метод <a href=\"./api-information#tag/authorization/Pravila-ispolzovaniya-tokenov-dostupa-k-API\">доступен</a> по\n        <strong>Персональному</strong> токену\n</div>\n\nМетод возвращает информацию о выявленных расхождениях между заявленным и фактическим количеством товара в поставке.\n<br>\nДля поставок принятых не позднее года назад.\n<br><br>\n**Типы расхождений:**\n<br><br>\nРасхождение в большую сторону:<br><br>\n1. Избыток товара с заявленным баркодом:\n  - `\"discrepancyType\": \"surplus\"`\n  - `\"discrepancyLabel\": \"surplus\"`\n2. Избыток товара с несоответствующим заявленному баркодом:\n  - `\"discrepancyType\": \"surplus\"`\n  - `\"discrepancyLabel\": \"re-sorting\"`\n\nРасхождение в меньшую сторону:<br><br>\n1. Не хватает товара:\n  - `\"discrepancyType\": \"shortage\"`\n  - `\"discrepancyLabel\": \"shortage\"`\n2. Некоторые баркоды не соответствуют заявленным:\n  - `\"discrepancyType\": \"shortage\"`\n  - `\"discrepancyLabel\": \"re-sorting\"`\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 1 запрос | 1 мин | 1 запрос |\n</div>\n",
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\n\n<div class=\"description_token\">\n    Метод <a href=\"./api-information#tag/authorization/Pravila-ispolzovaniya-tokenov-dostupa-k-API\">доступен</a> по\n        <strong>Персональному</strong> токену, \n        <strong>Сервисному</strong> токену\n</div>\n\nМетод возвращает информацию о выявленных расхождениях между заявленным и фактическим количеством товара в поставке.\n<br>\nДля поставок принятых не позднее года назад.\n<br><br>\n**Типы расхождений:**\n<br><br>\nРасхождение в большую сторону:<br><br>\n1. Избыток товара с заявленным баркодом:\n  - `\"discrepancyType\": \"surplus\"`\n  - `\"discrepancyLabel\": \"surplus\"`\n2. Избыток товара с несоответствующим заявленному баркодом:\n  - `\"discrepancyType\": \"surplus\"`\n  - `\"discrepancyLabel\": \"re-sorting\"`\n\nРасхождение в меньшую сторону:<br><br>\n1. Не хватает товара:\n  - `\"discrepancyType\": \"shortage\"`\n  - `\"discrepancyLabel\": \"shortage\"`\n2. Некоторые баркоды не соответствуют заявленным:\n  - `\"discrepancyType\": \"shortage\"`\n  - `\"discrepancyLabel\": \"re-sorting\"`\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 1 запрос | 1 мин | 1 запрос |\n</div>\n",
         "operationId": "getV1SuppliesSupplyIdDiscrepanciesQuantity",
         "parameters": [
           {
@@ -1772,7 +1772,8 @@
         "x-category": "supplies",
         "x-readonly-method": true,
         "x-token-types": [
-          "personal"
+          "personal",
+          "service"
         ]
       },
       "servers": [

@@ -9,7 +9,7 @@ tags:
 spec_version: items
 source: "https://dev.wildberries.ru/docs/openapi/item-management"
 deprecated: false
-content_sha: e6fbd896b1707827
+content_sha: 0a4689b0ad0e431c
 ---
 
 # Детализация необработанной загрузки
@@ -57,15 +57,15 @@ content_sha: e6fbd896b1707827
     - `discount` — integer. Скидка, %
     - `clubDiscount` — integer. Скидка WB Клуба, %
     - `status` — integer. Статус товара: `1` — в обработке
-    - `errorText` — string. Текст ошибки
+    - `errorText` — string. Описание ошибки
 - `error` — boolean. Флаг ошибки
-- `errorText` — string. Текст ошибки
+- `errorText` — string. Описание ошибки
 
 **400** — Неправильный запрос
 
 - `data` — object. Данные ошибки
 - `error` — boolean. Флаг ошибки
-- `errorText` — string. Текст ошибки
+- `errorText` — string. Описание ошибки
 
 **401** — Не авторизован
 
@@ -82,7 +82,7 @@ content_sha: e6fbd896b1707827
 
 - `data` — object. Данные ошибки
 - `error` — boolean. Флаг ошибки
-- `errorText` — string. Текст ошибки
+- `errorText` — string. Описание ошибки
 
 **429** — Слишком много запросов
 

@@ -2,14 +2,14 @@
 title: Отчет по товарам
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/goods-stats/getGoodsStats.md"
-fetched_at: "2026-09-22T02:27:35Z"
-content_sha: a6edc94eacacba04
+fetched_at: "2026-09-24T02:14:27Z"
+content_sha: 0ffa0b0798a03aa9
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.61.0
+    content: Diplodoc Platform v5.61.1
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/goods-stats/getGoodsStats.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/goods-stats/getGoodsStats.md

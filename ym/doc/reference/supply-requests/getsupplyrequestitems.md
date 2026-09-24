@@ -2,14 +2,14 @@
 title: Товары в заявке
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/supply-requests/getSupplyRequestItems.md"
-fetched_at: "2026-09-22T02:27:22Z"
-content_sha: 63dd80376aab8708
+fetched_at: "2026-09-24T02:14:14Z"
+content_sha: 35238e2368d91b56
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.61.0
+    content: Diplodoc Platform v5.61.1
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/supply-requests/getSupplyRequestItems.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/supply-requests/getSupplyRequestItems.md

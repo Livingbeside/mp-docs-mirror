@@ -2,14 +2,14 @@
 title: Список товаров в акции
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/promos/getPromoOffers.md"
-fetched_at: "2026-09-22T02:27:01Z"
-content_sha: ff5aa6dc79e11a4b
+fetched_at: "2026-09-24T02:13:52Z"
+content_sha: 4303e6641479462e
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.61.0
+    content: Diplodoc Platform v5.61.1
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/promos/getPromoOffers.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/promos/getPromoOffers.md
@@ -1754,7 +1754,7 @@ alternate:
             - NOT_MANUALLY_ADDED
             - MINIMUM_FOR_PROMOS
     $defs:
-      /home/sandbox/.ya/build/build_root/jc95/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/promos/api/getPromoOffers.yaml#/PromoOfferParticipationStatusFilterType:
+      /home/sandbox/.ya/build/build_root/pyur/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/promos/api/getPromoOffers.yaml#/PromoOfferParticipationStatusFilterType:
         description: >
           Фильтр для товаров, которые добавлены в акцию вручную:
   

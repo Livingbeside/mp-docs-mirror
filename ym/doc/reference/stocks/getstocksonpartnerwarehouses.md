@@ -2,14 +2,14 @@
 title: Информация об остатках на складах партнера
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/stocks/getStocksOnPartnerWarehouses.md"
-fetched_at: "2026-09-22T02:26:53Z"
-content_sha: 000cb2d5380a2e1d
+fetched_at: "2026-09-24T02:13:45Z"
+content_sha: 94d8cc14f71e8f83
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.61.0
+    content: Diplodoc Platform v5.61.1
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/stocks/getStocksOnPartnerWarehouses.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/stocks/getStocksOnPartnerWarehouses.md

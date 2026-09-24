@@ -2,14 +2,14 @@
 title: Авторизация
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/concepts/authorization.md"
-fetched_at: "2026-09-22T02:26:09Z"
-content_sha: 6735c86e7535e046
+fetched_at: "2026-09-24T02:13:00Z"
+content_sha: bb28c627531d9c77
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.61.0
+    content: Diplodoc Platform v5.61.1
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/concepts/authorization.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/concepts/authorization.md

@@ -2,14 +2,14 @@
 title: Идентификаторы складов Маркета (FBY и LaaS)
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/warehouses/getFulfillmentWarehouses.md"
-fetched_at: "2026-09-22T02:27:57Z"
-content_sha: 301be1a2470d9da1
+fetched_at: "2026-09-24T02:14:55Z"
+content_sha: 1595a90b422d2606
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.61.0
+    content: Diplodoc Platform v5.61.1
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/warehouses/getFulfillmentWarehouses.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/warehouses/getFulfillmentWarehouses.md
@@ -1112,7 +1112,7 @@ alternate:
       required: false
       schema:
         $ref: >-
-          /home/sandbox/.ya/build/build_root/jc95/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/common/schemas.yaml#/CampaignId
+          /home/sandbox/.ya/build/build_root/pyur/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/common/schemas.yaml#/CampaignId
   headers: []
   body: null
   schema: {}

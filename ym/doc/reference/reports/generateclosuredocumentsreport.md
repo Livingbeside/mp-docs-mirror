@@ -2,14 +2,14 @@
 title: Закрывающие документы
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/reports/generateClosureDocumentsReport.md"
-fetched_at: "2026-09-22T02:27:41Z"
-content_sha: 6511f5ee60d7e84a
+fetched_at: "2026-09-24T02:14:33Z"
+content_sha: 19ca25ab816e2e91
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.61.0
+    content: Diplodoc Platform v5.61.1
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/reports/generateClosureDocumentsReport.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/reports/generateClosureDocumentsReport.md
@@ -962,7 +962,7 @@ alternate:
             - OUTCOME
             - MARKETING
     $defs:
-      /home/sandbox/.ya/build/build_root/jc95/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/reports/schemas.yaml#/ClosureDocumentsMonthOfYearDTO:
+      /home/sandbox/.ya/build/build_root/pyur/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/reports/schemas.yaml#/ClosureDocumentsMonthOfYearDTO:
         description: |
           Месяц и год.
         type: object

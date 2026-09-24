@@ -2,14 +2,14 @@
 title: Отчет «Аналитика продаж»
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/reports/generateShowsSalesReport.md"
-fetched_at: "2026-09-22T02:27:31Z"
-content_sha: 4dd8c70d411d9a68
+fetched_at: "2026-09-24T02:14:24Z"
+content_sha: 330a4a8fe95a33dd
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.61.0
+    content: Diplodoc Platform v5.61.1
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/reports/generateShowsSalesReport.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/reports/generateShowsSalesReport.md
@@ -1116,7 +1116,7 @@ alternate:
       required: false
       schema:
         $ref: >-
-          /home/sandbox/.ya/build/build_root/jc95/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/reports/schemas.yaml#/ReportFormatType
+          /home/sandbox/.ya/build/build_root/pyur/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/reports/schemas.yaml#/ReportFormatType
   headers: []
   body: |-
     {
@@ -1169,7 +1169,7 @@ alternate:
         description: Группировка данных отчета.
         $ref: '#/$defs/ShowsSalesGroupingType'
     $defs:
-      /home/sandbox/.ya/build/build_root/jc95/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/reports/api/generateShowsSalesReport.yaml#/ShowsSalesGroupingType:
+      /home/sandbox/.ya/build/build_root/pyur/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/reports/api/generateShowsSalesReport.yaml#/ShowsSalesGroupingType:
         type: string
         description: |
           Группировка данных отчета.

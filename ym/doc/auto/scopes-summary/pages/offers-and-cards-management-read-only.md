@@ -2,14 +2,14 @@
 title: Просмотр товаров и карточек
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/_auto/scopes_summary/pages/offers-and-cards-management_read-only.md"
-fetched_at: "2026-09-22T02:26:13Z"
-content_sha: 148e6e6dea72aa29
+fetched_at: "2026-09-24T02:13:05Z"
+content_sha: 5bf6b0d2c1c9cce6
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.61.0
+    content: Diplodoc Platform v5.61.1
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/_auto/scopes_summary/pages/offers-and-cards-management_read-only.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/_auto/scopes_summary/pages/offers-and-cards-management_read-only.md

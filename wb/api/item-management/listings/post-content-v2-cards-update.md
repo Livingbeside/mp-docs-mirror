@@ -9,7 +9,7 @@ tags:
 spec_version: items
 source: "https://dev.wildberries.ru/docs/openapi/item-management"
 deprecated: false
-content_sha: 9414b5d5a987722e
+content_sha: 64ecc9608293a86e
 ---
 
 # Редактирование карточек товаров
@@ -97,7 +97,7 @@ content_sha: 9414b5d5a987722e
 
 - `data` — object. Данные ошибки
 - `error` — boolean. Флаг ошибки
-- `errorText` — string. Текст ошибки
+- `errorText` — string. Описание ошибки
 - `additionalErrors` — object. Дополнительные ошибки
 
 **401** — Не авторизован
@@ -120,7 +120,7 @@ content_sha: 9414b5d5a987722e
 
 - `data` — object. Данные ошибки
 - `error` — boolean. Флаг ошибки
-- `errorText` — string. Текст ошибки
+- `errorText` — string. Описание ошибки
 - `additionalErrors` — string. Дополнительные ошибки
 
 **413** — Превышен лимит объёма данных в запросе

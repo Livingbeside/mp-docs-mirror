@@ -2,14 +2,14 @@
 title: Генерация штрихкодов
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/business-offer-mappings/generateOfferBarcodes.md"
-fetched_at: "2026-09-22T02:26:43Z"
-content_sha: 20da241372abe1da
+fetched_at: "2026-09-24T02:13:36Z"
+content_sha: 12d51093d4f8d570
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.61.0
+    content: Diplodoc Platform v5.61.1
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/business-offer-mappings/generateOfferBarcodes.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/business-offer-mappings/generateOfferBarcodes.md

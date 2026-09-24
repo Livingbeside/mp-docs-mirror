@@ -9,7 +9,7 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: 380a4b8a74c75a86
+content_sha: d56b4ba2451a17c6
 ---
 
 # Обновить метод доставки «Партнёры Ozon»
@@ -46,6 +46,7 @@ content_sha: 380a4b8a74c75a86
   - `contact_days` — integer<int64>. Количество дней, за которое вы свяжетесь с покупателем. Параметр обязательный, если `return_method = COURIER`.
   - `post_office_zipcode` — string. Индекс отделения Почты России.
   - `return_method` — string (COURIER, TRANSPORT_COMPANY). Способ возврата: - `COURIER` — курьером; - `TRANSPORT_COMPANY` — транспортной компанией.
+  - `return_point_id` — integer<int64>. Идентификатор пункта возврата. Получите значение параметра методом [/v1/warehouse/rfbs/return-point/list](#operation/WarehouseRfbsReturnPointList).
   - `transport_company_name` — string **обязательный**. Название транспортной компании. Параметр обязательный, если `return_method = TRANSPORT_COMPANY`.
 - `warehouse_id` — integer<int64> **обязательный**. Идентификатор склада.
 

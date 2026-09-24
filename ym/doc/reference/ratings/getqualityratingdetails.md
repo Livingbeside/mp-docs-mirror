@@ -2,14 +2,14 @@
 title: Заказы, которые повлияли на индекс качества
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/ratings/getQualityRatingDetails.md"
-fetched_at: "2026-09-22T02:27:51Z"
-content_sha: 4c96a021ab0bacbd
+fetched_at: "2026-09-24T02:14:49Z"
+content_sha: 8f82dd49cda16763
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.61.0
+    content: Diplodoc Platform v5.61.1
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/ratings/getQualityRatingDetails.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/ratings/getQualityRatingDetails.md

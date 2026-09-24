@@ -2,14 +2,14 @@
 title: Просмотр скрытых товаров
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/hidden-offers/getHiddenOffers.md"
-fetched_at: "2026-09-22T02:26:49Z"
-content_sha: 60d34a9a7d66c413
+fetched_at: "2026-09-24T02:13:43Z"
+content_sha: 111618cecdbe0d11
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.61.0
+    content: Diplodoc Platform v5.61.1
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/hidden-offers/getHiddenOffers.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/hidden-offers/getHiddenOffers.md
@@ -976,7 +976,7 @@ alternate:
         uniqueItems: true
         items:
           $ref: >-
-            /home/sandbox/.ya/build/build_root/jc95/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/common/schemas.yaml#/ShopSku
+            /home/sandbox/.ya/build/build_root/pyur/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/common/schemas.yaml#/ShopSku
     - name: pageToken
       description: >
         Идентификатор страницы c результатами.

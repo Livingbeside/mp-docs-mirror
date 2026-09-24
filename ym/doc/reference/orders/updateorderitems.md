@@ -2,14 +2,14 @@
 title: Удаление товаров из заказа
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/orders/updateOrderItems.md"
-fetched_at: "2026-09-22T02:27:06Z"
-content_sha: c425272d627a3186
+fetched_at: "2026-09-24T02:13:59Z"
+content_sha: 0da312b80a3241c5
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.61.0
+    content: Diplodoc Platform v5.61.1
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/orders/updateOrderItems.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/orders/updateOrderItems.md

@@ -2,14 +2,14 @@
 title: Экспресс
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/overview/express.md"
-fetched_at: "2026-09-22T02:26:35Z"
-content_sha: 579c86c2e93de0dc
+fetched_at: "2026-09-24T02:13:28Z"
+content_sha: b6953ca7fdbb987a
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.61.0
+    content: Diplodoc Platform v5.61.1
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/overview/express.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/overview/express.md

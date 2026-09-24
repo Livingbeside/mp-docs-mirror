@@ -2,14 +2,14 @@
 title: Заявки на поставку, вывоз и утилизацию (FBY, LaaS)
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/supplies.md"
-fetched_at: "2026-09-22T02:26:29Z"
-content_sha: 65bef1a28b80b9ec
+fetched_at: "2026-09-24T02:13:21Z"
+content_sha: 760858b4a3af8a74
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.61.0
+    content: Diplodoc Platform v5.61.1
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/step-by-step/supplies.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/supplies.md
