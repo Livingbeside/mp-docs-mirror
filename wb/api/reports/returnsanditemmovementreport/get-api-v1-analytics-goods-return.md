@@ -8,28 +8,19 @@ tags:
   - returnsAndItemMovementReport
 spec_version: reports
 source: "https://dev.wildberries.ru/docs/openapi/reports"
-deprecated: false
-content_sha: 34c59e1392168766
+deprecated: true
+content_sha: 374da9498ce2c124
 ---
 
 # Получить отчёт
 
 `GET /api/v1/analytics/goods-return`
 
+> ⚠️ Метод помечен как **deprecated**.
+
 Описание метода
 
-Метод возвращает отчёт о [возвратах товаров продавцу](https://seller.wildberries.ru/analytics-reports/goods-return). 
-
-Можно получить отчёт максимум за 31 день.
-
-Лимит запросов на один аккаунт продавца:
-
-| Тип | Период | Лимит | Интервал | Всплеск |
-| --- | --- | --- | --- | --- |
-| Персональный | 1 мин | 1 запрос | 1 мин | 10 запросов |
-| Сервисный | 1 мин | 1 запрос | 1 мин | 10 запросов |
-| Базовый с секретом | 1 мин | 1 запрос | 1 мин | 10 запросов |
-| Базовый | 1 ч | 2 запроса | 30 мин | 1 запрос |
+Метод будет отключен [26 октября](/release-notes?id=577).
 
 ## Параметры
 

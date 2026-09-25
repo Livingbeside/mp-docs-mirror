@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /fbs/ozon-logistika/doveritel-naya-priemka-gruzovogo-mesta
 source: "https://seller-edu.ozon.ru/libra/fbs/ozon-logistika/doveritel-naya-priemka-gruzovogo-mesta"
-updated: "2026-09-21 09:44:17"
+updated: "2026-09-24 12:44:40"
 doc_id: 811
-fetched_at: "2026-09-22T02:23:09Z"
-content_sha: bcb384bc1fb61e36
+fetched_at: "2026-09-25T02:13:05Z"
+content_sha: 5a119c1ee7ec0efb
 ---
 
 # Доверительная приёмка грузового места
@@ -164,13 +164,11 @@ _Главная / Продажа со своего склада (FBS) / Отгр
 
 [Пятигорск — Пальмиро (СЦ)](https://seller-edu.ozon.ru/fbs/punkty-priema/regiony#%D0%BF%D1%8F%D1%82%D0%B8%D0%B3%D0%BE%D1%80%D1%81%D0%BA-%D0%BF%D0%B0%D0%BB%D1%8C%D0%BC%D0%B8%D1%80%D0%BE-%D1%81%D1%86)
 
-[Пятигорск — Этока (СЦ)](https://seller-edu.ozon.ru/libra/fbs/punkty-priema/regiony#пятигорск-этока-сц)
-
-[Ростов-на-Дону — Ленина 5 (СЦ)](/fbs/punkty-priema/regiony.html#%D1%80%D0%BE%D1%81%D1%82%D0%BE%D0%B2-%D0%BD%D0%B0-%D0%B4%D0%BE%D0%BD%D1%83-%D0%BB%D0%B5%D0%BD%D0%B8%D0%BD%D0%B0-5-%D1%81%D1%86)
-
 [Ростов-на-Дону — Логопарк (СЦ)](https://seller-edu.ozon.ru/fbs/punkty-priema/regiony#ростов-на-дону-логопарк-сц)
 
 [Рязань — Восточная (СЦ)](/fbs/punkty-priema/regiony#рязань-восточная-сц)
+
+[Саратов — Промышленная (СЦ)](https://seller-edu.ozon.ru/fbs/punkty-priema/regiony#саратов-промышленная-сц)
 
 [Самара — Московское шоссе (СЦ)](https://seller-edu.ozon.ru/fbs/punkty-priema/regiony#самара-московское-шоссе-сц)
 

@@ -2,8 +2,8 @@
 title: Отчет по схождению с закрывающими документами
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/reports/generateClosureDocumentsDetalizationReport.md"
-fetched_at: "2026-09-24T02:14:34Z"
-content_sha: edfa4ec3fd9c96fc
+fetched_at: "2026-09-25T02:17:56Z"
+content_sha: fd92a3ccddae68cd
 ---
 
 ---
@@ -314,6 +314,54 @@ alternate:
     {% endcut %}
 
     {% cut "Лист **Удержано штрафов** (файл **period_closure_income_fines**)" %}
+
+    #|
+    || **Название колонки в CSV** | **Название колонки в JSON** | **Название колонки в XLSX** | **Тип значения** ||
+    || BUSINESS_ID | businessId | Информация о бизнесе/ID бизнес-аккаунта | integer ||
+    || MODEL | model | Информация о бизнесе/Модели работы | string ||
+    || PARTNER_ID | partnerId | Информация о бизнесе/ID магазинов | integer ||
+    || SHOP_NAME | shopName | Информация о бизнесе/Названия магазинов | string ||
+    || INN | inn | Информация о бизнесе/ИНН | string ||
+    || PLACEMENT_CONTRACT | placementContract | Информация о бизнесе/Номера договоров на размещение | string ||
+    || PROMOTION_CONTRACT | promotionContract | Информация о бизнесе/Номера договоров на продвижение | string ||
+    || TRANSACTION_DATE | transactionDate | Информация о платежах/Дата транзакции | string ||
+    || TRANSACTION_ID | transactionId | Информация о платежах/ID транзакции | string ||
+    || ORDER_ID | orderId | Информация о платежах/Номер заказа или акта об оказанных услугах | integer ||
+    || SHOP_ORDER_ID | shopOrderId | Информация о платежах/Ваш номер заказа | string ||
+    ||
+    ORDER_CREATION_DATE
+    |
+    orderCreationDate
+    |
+    Информация о платежах/Дата оформления заказа или акта об оказанных услугах
+    |
+    string
+    ||
+    || CLAIM_NUMBER | claimNumber | Информация о платежах/Номер и дата претензии | string ||
+    || ORDER_TYPE | orderType | Информация о платежах/Тип заказа | string ||
+    || OFFER_ID | offerId | Информация о платежах/Ваш SKU | string ||
+    || OFFER_NAME | offerName | Информация о платежах/Название товара | string ||
+    || COUNT | count | Информация о платежах/Количество, шт. | integer ||
+    || TRANSACTION_SUM | transactionSum | Информация о платежах/Сумма транзакции | number ||
+    || TRANSACTION_TYPE | transactionType | Информация о платежах/Тип транзакции | string ||
+    || TRANSACTION_SOURCE | transactionSource | Информация о платежах/Источник транзакции | string ||
+    || PAYMENT_STATUS | paymentStatus | Информация о платежах/Статус | string ||
+    || BANK_ORDER_DATE | bankOrderDate | Информация о платежах/Дата платёжного поручения | string ||
+    || BANK_ORDER_ID | bankOrderId | Информация о платежах/Номер платёжного поручения | integer ||
+    ||
+    BANK_ORDER_SUM
+    |
+    bankOrderSum
+    |
+    Информация о платежах/Сумма платёжного поручения или удерживаемая за услуги сумма
+    |
+    number
+    ||
+    |#
+
+    {% endcut %}
+
+    {% cut "Лист **Возмещение расходов Маркету** (файл **period_closure_income_crossborder_delivery_compensation**)" %}
 
     #|
     || **Название колонки в CSV** | **Название колонки в JSON** | **Название колонки в XLSX** | **Тип значения** ||
@@ -1887,7 +1935,7 @@ alternate:
       required: false
       schema:
         $ref: >-
-          /home/sandbox/.ya/build/build_root/pyur/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/reports/schemas.yaml#/ReportFormatType
+          /home/sandbox/.ya/build/build_root/fti6/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/reports/schemas.yaml#/ReportFormatType
   headers: []
   body: |-
     {
@@ -1921,7 +1969,7 @@ alternate:
           закрывающими документами.
         $ref: '#/$defs/ClosureDocumentsContractType'
     $defs:
-      /home/sandbox/.ya/build/build_root/pyur/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/reports/schemas.yaml#/ClosureDocumentsMonthOfYearDTO:
+      /home/sandbox/.ya/build/build_root/fti6/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/reports/schemas.yaml#/ClosureDocumentsMonthOfYearDTO:
         description: |
           Месяц и год.
         type: object
@@ -1941,7 +1989,7 @@ alternate:
             minimum: 1
             maximum: 12
             example: 12
-      /home/sandbox/.ya/build/build_root/pyur/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/reports/schemas.yaml#/ClosureDocumentsContractType:
+      /home/sandbox/.ya/build/build_root/fti6/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/reports/schemas.yaml#/ClosureDocumentsContractType:
         description: |
           Тип договора:
   

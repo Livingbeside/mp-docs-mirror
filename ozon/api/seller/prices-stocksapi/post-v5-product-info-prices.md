@@ -9,12 +9,14 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: 70e3776d2d949428
+content_sha: 4c94cb8cd467f347
 ---
 
 # Получить информацию о цене товара
 
 `POST /v5/product/info/prices`
+
+23 ноября 2026 года отключим параметр total в ответе метода. Переключитесь на total_items.
 
 Вы можете посмотреть историю обновления цен только в личном кабинете продавца.
  [Подробнее об истории обновления цен в Базе знаний продавца](https://seller-edu.ozon.ru/libra/ceny-i-akcii/rabota-s-cenami/price-control#как-посмотреть-историю-обновления-цен)
@@ -97,6 +99,7 @@ content_sha: 70e3776d2d949428
   - `product_id` — integer<int64>. Идентификатор товара в системе Ozon — `product_id`.
   - `volume_weight` — number<double>. Объёмный вес товара.
 - `total` — integer<int32>. Количество товаров в списке.
+- `total_items` — integer<int64>. Количество товаров в списке.
 
 **400** — Неверный параметр
 

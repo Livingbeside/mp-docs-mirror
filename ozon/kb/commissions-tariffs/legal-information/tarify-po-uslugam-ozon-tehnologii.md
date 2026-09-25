@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /commissions-tariffs/legal-information/tarify-po-uslugam-ozon-tehnologii
 source: "https://seller-edu.ozon.ru/libra/commissions-tariffs/legal-information/tarify-po-uslugam-ozon-tehnologii"
-updated: "2026-09-16 15:14:14"
+updated: "2026-09-24 09:36:48"
 doc_id: 86075
-fetched_at: "2026-09-17T02:05:03Z"
-content_sha: 849046fe483b3e88
+fetched_at: "2026-09-25T02:13:05Z"
+content_sha: c968ba9c5236a3c6
 ---
 
 # Тарифы по услугам Озон Технологии
@@ -16,7 +16,7 @@ _Главная / Комиссии и тарифы / Юридическая ин
 
 Эта редакция действует с 1 октября 2026 года.
 
-Мы заранее публикуем изменения в тарифах: если правила на этой странице ещё не вступили в силу, смотрите предыдущую версию.
+Мы заранее публикуем изменения в тарифах: если правила на этой странице ещё не вступили в силу, смотрите [предыдущую версию](https://seller-edu.ozon.ru/commissions-tariffs/legal-information/arhiv-tarifov-po-uslugas-ozon-tehnologii).
 
 Для расчётов используем тарифы, которые действовали на момент оформления заказов.
 

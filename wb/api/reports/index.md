@@ -2,9 +2,9 @@
 title: Отчёты — все методы
 api: wb-reports
 spec_version: reports
-operations: 23
+operations: 24
 source: "https://dev.wildberries.ru/docs/openapi/reports"
-content_sha: 34e187e300a22113
+content_sha: 0730c9da102a7fce
 ---
 
 # Отчёты
@@ -22,13 +22,14 @@ content_sha: 34e187e300a22113
  8. [Заблокированных карточках](./reports#tag/blockedItems)
  9. [Возвратах и перемещении товаров](./reports#tag/returnsAndItemMovementReport)
 
-Версия спеки: `reports` · методов: **23** · разделов справки: **11**
+Версия спеки: `reports` · методов: **24** · разделов справки: **11**
 
 Источник: https://dev.wildberries.ru/docs/openapi/reports
 
 | Метод | Путь | Раздел | Описание |
 |---|---|---|---|
 | `GET` | `/api/analytics/v1/deductions` | retentionReports | [Подмены и неверные вложения](retentionreports/get-api-analytics-v1-deductions.md) |
+| `GET` | `/api/analytics/v1/item-returns` | returnsAndItemMovementReport | [Получить отчёт](returnsanditemmovementreport/get-api-analytics-v1-item-returns.md) |
 | `GET` | `/api/analytics/v1/measurement-penalties` | retentionReports | [Удержания за занижение габаритов упаковки](retentionreports/get-api-analytics-v1-measurement-penalties.md) |
 | `GET` | `/api/analytics/v1/warehouse-measurements` | retentionReports | [Замеры склада](retentionreports/get-api-analytics-v1-warehouse-measurements.md) |
 | `GET` | `/api/v1/acceptance_report/tasks/{task_id}/download` | acceptanceExpenses | [Получить отчёт{{ /api/v1/acceptance_report/tasks/{task_id}/download }}](acceptanceexpenses/get-api-v1-acceptance-report-tasks-task-id-download.md) |

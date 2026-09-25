@@ -2,8 +2,8 @@
 title: Отчет по движению товаров (FBY)
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/reports/generateGoodsMovementReport.md"
-fetched_at: "2026-09-24T02:14:31Z"
-content_sha: dca93ff503f90fd5
+fetched_at: "2026-09-25T02:17:50Z"
+content_sha: ccc7795b07d206af
 ---
 
 ---
@@ -985,7 +985,7 @@ alternate:
       required: false
       schema:
         $ref: >-
-          /home/sandbox/.ya/build/build_root/pyur/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/reports/schemas.yaml#/ReportFormatType
+          /home/sandbox/.ya/build/build_root/fti6/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/reports/schemas.yaml#/ReportFormatType
   headers: []
   body: |-
     {

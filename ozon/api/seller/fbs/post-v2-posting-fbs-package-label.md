@@ -9,12 +9,16 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: 906037f4ead3480c
+content_sha: 843cf2600f84be1c
 ---
 
 # Напечатать этикетку
 
 `POST /v2/posting/fbs/package-label`
+
+C 5 октября 2026 года метод будет возвращать новые этикетки для отправлений FBS.
+
+[Подробнее о новых этикетках в Базе знаний продавца](https://seller-edu.ozon.ru/libra/fbs/logistics-settings/metody#тестовыи-формат-этикетки)
 
 С 2 ноября 2026 года метод будет отключён. Переключитесь на [/v3/posting/fbs/package-label/create](#operation/PostingFbsPackageLabelCreate) и [/v2/posting/fbs/package-label/get](#operation/PostingFbsPackageLabelGet).
 

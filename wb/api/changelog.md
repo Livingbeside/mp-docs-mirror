@@ -4,8 +4,8 @@ api: wildberries
 kind: changelog
 source: "https://dev.wildberries.ru/release-notes"
 window: последние записи, страница отдаёт не всю историю
-fetched_at: "2026-09-24T02:12:59Z"
-content_sha: 1a3f3c066251c9e6
+fetched_at: "2026-09-25T02:16:01Z"
+content_sha: e77a578682b84e41
 ---
 
 # Журнал изменений WB API
@@ -66,6 +66,29 @@ content_sha: 1a3f3c066251c9e6
 
 Сентябрь
 2026
+
+Новое
+
+## 24.09.2026
+
+Критичное изменение
+
+Отчёты
+
+Отчёт о возвратах и перемещении товаров
+
+Новая версия отчёта по возвратам и перемещению товаров
+
+Добавили новую версию метода получения отчёта **Возврат и перемещение товаров** — [GET /api/analytics/v1/goods-return](/docs/openapi/reports#tag/returnsAndItemMovementReport/operation/getAnalyticsV1GoodsReturn). C её помощью вы можете получать данные как по активным, так и по архивным возвратам за любой период времени.
+
+В новом методе:
+
+- добавили параметр `status`:   укажите `active`, чтобы получить в отчёте только активные возвраты укажите `archive`, чтобы получить в отчёте только архивные возвраты
+- добавили пагинацию — параметры `limit` и `offset`
+
+Метод доступен по [токену](/docs/openapi/api-information#tag/authorization) любого типа для категории **Аналитика**.
+
+Текущий метод [GET /api/v1/analytics/goods-return](/docs/openapi/reports/#tag/returnsAndItemMovementReport/operation/getV1AnalyticsGoodsReturn) будет отключен **26 октября**.
 
 Новое
 
@@ -141,6 +164,21 @@ content_sha: 1a3f3c066251c9e6
 
 ## 10.09.2026
 
+Отчёты
+
+Отчёты об удержаниях
+
+Изменения в Отчётах об удержании
+
+Добавили новые поля в отчёт об удержаниях за занижение габаритов упаковки [GET /api/analytics/v1/measurement-penalties](/docs/openapi/reports#tag/retentionReports/operation/getV1MeasurementPenalties):
+
+- `dateStart` — дата начала действия коэффициента
+- `dateEnd` — дата окончания действия коэффициента
+
+Изменения
+
+## 10.09.2026
+
 Работа с товарами
 
 Создание карточек товаров
@@ -158,21 +196,6 @@ content_sha: 1a3f3c066251c9e6
 
 В предыдущей версии описания объекта `wholesale` было некорректно указано, что при `"enabled":true` товар предназначен для оптовой продажи.
  В исправленной версии описания объекта `wholesale` указано, что при `"enabled":true` товар предназначен для любой [B2B-продажи](https://seller.wildberries.ru/instructions/ru/ru/material/wholesale-of-goods), не только оптовой.
-
-Изменения
-
-## 10.09.2026
-
-Отчёты
-
-Отчёты об удержаниях
-
-Изменения в Отчётах об удержании
-
-Добавили новые поля в отчёт об удержаниях за занижение габаритов упаковки [GET /api/analytics/v1/measurement-penalties](/docs/openapi/reports#tag/retentionReports/operation/getV1MeasurementPenalties):
-
-- `dateStart` — дата начала действия коэффициента
-- `dateEnd` — дата окончания действия коэффициента
 
 Новое
 
@@ -527,17 +550,5 @@ DBS
 - Получить список складов WB — [GET /api/v3/offices](/docs/openapi/work-with-products#tag/sellerWarehouses/operation/getV3Offices) — в ответе теперь не будут возвращаться СГТ-склады WB
 - Создать склад продавца — [POST /api/v3/warehouses](/docs/openapi/work-with-products#tag/sellerWarehouses/operation/postV3Warehouses) — при создании СГТ-склада вы получите ошибку `404`
 - Обновить склад продавца — [PUT /api/v3/warehouses/ {warehouseId}](/docs/openapi/work-with-products#tag/sellerWarehouses/operation/putV3WarehousesWarehouseId) — при изменении данных СГТ-склада вы получите ошибку `404`
-
-Новое
-
-## 20.07.2026
-
-Маркетинг и продвижение
-
-Управление кампаниями
-
-Изменения в сервисе Продвижения
-
-В ответ метода [GET /api/advert/v1/config](/docs/openapi/promotion/#tag/campaignManagement/operation/getV1Config) добавили информацию о минимальной сумме пополнения бюджета кампании — поле `minTopUp`.
 
 Мы используем [cookies](/privacy) для сбора статистики и улучшения сервиса

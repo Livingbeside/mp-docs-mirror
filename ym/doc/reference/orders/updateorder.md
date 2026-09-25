@@ -2,8 +2,8 @@
 title: Изменение заказа
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/orders/updateOrder.md"
-fetched_at: "2026-09-24T02:14:04Z"
-content_sha: 9ecd2d4a37ce32f5
+fetched_at: "2026-09-25T02:17:18Z"
+content_sha: 97a1fdb4a5538b9d
 ---
 
 ---
@@ -1361,7 +1361,7 @@ alternate:
             description: Продлить срок хранения заказа в пункте выдачи.
             type: boolean
     $defs:
-      /home/sandbox/.ya/build/build_root/pyur/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/orders/schemas.yaml#/DeliveryIntervalsUpdateOptionDTO:
+      /home/sandbox/.ya/build/build_root/fti6/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/orders/schemas.yaml#/DeliveryIntervalsUpdateOptionDTO:
         type: object
         description: Интервалы дат и времени.
         required:
@@ -1410,7 +1410,7 @@ alternate:
   
                   Формат: `ЧЧ:ММ`.
                 pattern: ^([0-1][0-9]|2[0-3]):[0-5][0-9]$
-      /home/sandbox/.ya/build/build_root/pyur/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/common/schemas.yaml#/CustomerDTO:
+      /home/sandbox/.ya/build/build_root/fti6/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/common/schemas.yaml#/CustomerDTO:
         type: object
         description: Данные получателя заказа или отправителя возврата.
         required:

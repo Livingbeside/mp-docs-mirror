@@ -2,8 +2,8 @@
 title: Отчет «Цены»
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/reports/generateGoodsPricesReport.md"
-fetched_at: "2026-09-24T02:14:29Z"
-content_sha: 5796c7da086a7163
+fetched_at: "2026-09-25T02:17:49Z"
+content_sha: 7a0892a3fadfa473
 ---
 
 ---
@@ -968,7 +968,7 @@ alternate:
       required: false
       schema:
         $ref: >-
-          /home/sandbox/.ya/build/build_root/pyur/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/reports/schemas.yaml#/ReportFormatType
+          /home/sandbox/.ya/build/build_root/fti6/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/reports/schemas.yaml#/ReportFormatType
   headers: []
   body: |-
     {

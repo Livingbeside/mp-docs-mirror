@@ -4,7 +4,7 @@ api: ozon-seller
 spec_version: 2.1
 operations: 481
 source: "https://docs.ozon.ru/api/seller/"
-content_sha: 17040d5ae9039115
+content_sha: a4ec069ba75d34fb
 ---
 
 # Документация Ozon Seller API
@@ -454,7 +454,7 @@ content_sha: 17040d5ae9039115
 | `POST` | `/v2/posting/fbs/digital/act/get-pdf` | DeliveryFBS | [Получить лист отгрузки по перевозке](deliveryfbs/post-v2-posting-fbs-digital-act-get-pdf.md) |
 | `POST` | `/v2/posting/fbs/get-by-barcode` | FBS | [Получить информацию об отправлении по штрихкоду](fbs/post-v2-posting-fbs-get-by-barcode.md) |
 | `POST` | `/v2/posting/fbs/package-label/create` | FBS | [Создать задание на формирование этикеток](fbs/post-v2-posting-fbs-package-label-create.md) |
-| `POST` | `/v2/posting/fbs/package-label/get` | BetaMethod | [Получить файл с этикетками](betamethod/post-v2-posting-fbs-package-label-get.md) |
+| `POST` | `/v2/posting/fbs/package-label/get` | FBS | [Получить файл с этикетками](fbs/post-v2-posting-fbs-package-label-get.md) |
 | `POST` | `/v2/posting/fbs/package-label` | FBS | [Напечатать этикетку](fbs/post-v2-posting-fbs-package-label.md) |
 | `POST` | `/v2/posting/fbs/product/cancel` | FBS | [Отменить отправку некоторых товаров в отправлении](fbs/post-v2-posting-fbs-product-cancel.md) |
 | `POST` | `/v2/posting/fbs/product/country/list` | FBS | [Список доступных стран-изготовителей](fbs/post-v2-posting-fbs-product-country-list.md) |
@@ -485,7 +485,7 @@ content_sha: 17040d5ae9039115
 | `POST` | `/v3/posting/fbo/list` | FBO | [Получить список отправлений](fbo/post-v3-posting-fbo-list.md) |
 | `POST` | `/v3/posting/fbs/get` | FBS | [Получить информацию об отправлении по идентификатору](fbs/post-v3-posting-fbs-get.md) |
 | `POST` | `/v3/posting/fbs/list` | FBS | [Список отправлений](fbs/post-v3-posting-fbs-list.md) |
-| `POST` | `/v3/posting/fbs/package-label/create` | BetaMethod | [Создать задание на формирование этикеток](betamethod/post-v3-posting-fbs-package-label-create.md) |
+| `POST` | `/v3/posting/fbs/package-label/create` | FBS | [Создать задание на формирование этикеток](fbs/post-v3-posting-fbs-package-label-create.md) |
 | `POST` | `/v3/posting/fbs/unfulfilled/list` | FBS | [Список необработанных отправлений](fbs/post-v3-posting-fbs-unfulfilled-list.md) |
 | `POST` | `/v3/posting/multiboxqty/set` | FBS | [Указать количество коробок для многокоробочных отправлений](fbs/post-v3-posting-multiboxqty-set.md) |
 | `POST` | `/v3/product/import` | ProductAPI | [Создать или обновить товар](productapi/post-v3-product-import.md) |

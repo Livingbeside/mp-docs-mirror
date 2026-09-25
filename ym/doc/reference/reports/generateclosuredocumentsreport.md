@@ -2,8 +2,8 @@
 title: Закрывающие документы
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/reports/generateClosureDocumentsReport.md"
-fetched_at: "2026-09-24T02:14:33Z"
-content_sha: 19ca25ab816e2e91
+fetched_at: "2026-09-25T02:17:56Z"
+content_sha: c320c9900029c67d
 ---
 
 ---
@@ -962,7 +962,7 @@ alternate:
             - OUTCOME
             - MARKETING
     $defs:
-      /home/sandbox/.ya/build/build_root/pyur/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/reports/schemas.yaml#/ClosureDocumentsMonthOfYearDTO:
+      /home/sandbox/.ya/build/build_root/fti6/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/reports/schemas.yaml#/ClosureDocumentsMonthOfYearDTO:
         description: |
           Месяц и год.
         type: object

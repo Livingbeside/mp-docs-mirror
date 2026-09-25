@@ -9,12 +9,15 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: 84d1eaa7a272a725
+content_sha: 1aa7a72cc0b14c9c
 ---
 
 # Список товаров
 
 `POST /v3/product/list`
+
+23 ноября 2026 года отключим параметр result.total в ответе метода. Переключитесь на result.total_items.
+ 
 
 Метод для получения списка всех товаров.
 
@@ -61,6 +64,7 @@ content_sha: 84d1eaa7a272a725
       - `quant_size` — integer<int64>. Размер кванта.
   - `last_id` — string. Идентификатор последнего значения на странице. Чтобы получить следующие значения, передайте полученное значение в следующем запросе в параметре `last_id`.
   - `total` — integer<int32>. Всего товаров.
+  - `total_items` — integer<int64>. Всего товаров.
 
 **400** — Неверный параметр
 

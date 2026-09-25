@@ -2,8 +2,8 @@
 title: Отчет по географии продаж
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/reports/generateSalesGeographyReport.md"
-fetched_at: "2026-09-24T02:14:24Z"
-content_sha: 3f3614567b8556c7
+fetched_at: "2026-09-25T02:17:43Z"
+content_sha: 454fb21a413be1b8
 ---
 
 ---
@@ -1007,7 +1007,7 @@ alternate:
       required: false
       schema:
         $ref: >-
-          /home/sandbox/.ya/build/build_root/pyur/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/reports/schemas.yaml#/ReportFormatType
+          /home/sandbox/.ya/build/build_root/fti6/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/reports/schemas.yaml#/ReportFormatType
   headers: []
   body: |-
     {

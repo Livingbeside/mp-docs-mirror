@@ -5,12 +5,25 @@ tag: News
 group: Обновления
 kind: changelog
 source: "https://docs.ozon.ru/api/seller/"
-content_sha: ee79d3b19ac7385c
+content_sha: cefcb6db01c5b04e
 ---
 
 # Обновления
 
 Следите за обновлениями документации на платформе для разработчиков [Ozon for dev](https://dev.ozon.ru/).
+
+## 24 сентября 2026
+
+| Метод | Изменение |
+|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [/v3/product/list](#operation/ProductAPI_GetProductList) | В ответе метода:Отметили устаревшим параметр `result.total` — отключим его 23 ноября 2026 года. Переключитесь на `result.total_items`.
+Добавили параметр `result.total_items`.
+ |
+| [/v4/product/info/stocks](#operation/ProductAPI_GetProductInfoStocks)<br>[/v5/product/info/prices](#operation/ProductAPI_GetProductInfoPrices) | В ответе методов:Отметили устаревшим параметр `total` — отключим его 23 ноября 2026 года. Переключитесь на `total_items`.
+Добавили параметр `total_items`.
+ |
+| [/v3/posting/fbs/package-label/create](#operation/PostingFbsPackageLabelCreate)<br>[/v2/posting/fbs/package-label/get](#operation/PostingFbsPackageLabelGet) | Перенесли методы из бета-раздела в основной. |
+| [/v2/posting/fbs/package-label](#operation/PostingAPI_PostingFBSPackageLabel)<br>[/v2/posting/fbs/package-label/create](#operation/PostingAPI_CreateLabelBatchV2)<br>[/v1/posting/fbs/package-label/create](#operation/PostingAPI_CreateLabelBatch)<br>[/v1/posting/fbs/package-label/get](#operation/PostingAPI_GetLabelBatch) | С 5 октября 2026 года методы будут возвращать новые этикетки для отправлений FBS. |
 
 ## 23 сентября 2026
 

@@ -2,8 +2,8 @@
 title: Отчет по оборачиваемости (FBY)
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/reports/generateGoodsTurnoverReport.md"
-fetched_at: "2026-09-24T02:14:30Z"
-content_sha: 707b596fe53c86ec
+fetched_at: "2026-09-25T02:17:50Z"
+content_sha: fd3dd2fcb81e68cb
 ---
 
 ---
@@ -886,7 +886,7 @@ alternate:
       required: false
       schema:
         $ref: >-
-          /home/sandbox/.ya/build/build_root/pyur/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/reports/schemas.yaml#/ReportFormatType
+          /home/sandbox/.ya/build/build_root/fti6/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/reports/schemas.yaml#/ReportFormatType
   headers: []
   body: |-
     {

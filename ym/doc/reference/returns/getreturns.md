@@ -2,8 +2,8 @@
 title: Список невыкупов и возвратов
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/returns/getReturns.md"
-fetched_at: "2026-09-24T02:14:19Z"
-content_sha: 0b61b5fb693c2dfd
+fetched_at: "2026-09-25T02:17:38Z"
+content_sha: bccc14b47c5dce1d
 ---
 
 ---
@@ -2981,7 +2981,7 @@ alternate:
         uniqueItems: true
         items:
           $ref: >-
-            /home/sandbox/.ya/build/build_root/pyur/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/common/schemas.yaml#/RefundStatusType
+            /home/sandbox/.ya/build/build_root/fti6/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/common/schemas.yaml#/RefundStatusType
     - description: |
         Фильтр по логистическим статусам невыкупов и возвратов.
   
@@ -2997,7 +2997,7 @@ alternate:
         uniqueItems: true
         items:
           $ref: >-
-            /home/sandbox/.ya/build/build_root/pyur/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/common/schemas.yaml#/ReturnShipmentStatusType
+            /home/sandbox/.ya/build/build_root/fti6/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/common/schemas.yaml#/ReturnShipmentStatusType
     - description: |
         Тип заказа для фильтрации:
   
@@ -3011,7 +3011,7 @@ alternate:
       required: false
       schema:
         $ref: >-
-          /home/sandbox/.ya/build/build_root/pyur/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/common/schemas.yaml#/ReturnType
+          /home/sandbox/.ya/build/build_root/fti6/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/common/schemas.yaml#/ReturnType
     - description: |
         Начальная дата для фильтрации невыкупов или возвратов по дате обновления.
   

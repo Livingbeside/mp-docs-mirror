@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /finances-documents/strahovanie
 source: "https://seller-edu.ozon.ru/libra/finances-documents/strahovanie"
-updated: "2026-09-23 08:08:01"
+updated: "2026-09-24 12:33:52"
 doc_id: 47492
-fetched_at: "2026-09-24T02:07:39Z"
-content_sha: 9e36da52a0e9f84e
+fetched_at: "2026-09-25T02:13:04Z"
+content_sha: d6a8d76148eb030e
 ---
 
 # Страхование
@@ -23,8 +23,6 @@ _Главная / Финансы, налоги и документооборот
 С 5 октября по 31 декабря 2026 года будем ежемесячно начислять стимулирующую выплату за обеспечение товаров на платформе — для [Fashion-товаров из списка](https://cdn.ozone.ru/s3/ozon-disk-api/Seller-edu/files/commissions-tariffs/commissions/kategorii_fashion_kompensacii_1789045854.xlsx). Сумму выплаты рассчитываем так же, как [плату за страхование](https://seller-edu.ozon.ru/libra/finances-documents/strahovanie#%D1%81%D0%BA%D0%BE%D0%BB%D1%8C%D0%BA%D0%BE-%D1%81%D1%82%D0%BE%D0%B8%D1%82-%D1%81%D1%82%D1%80%D0%B0%D1%85%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5): она равна стоимости страхования по полису СПАО «Ингосстрах». Участвуют товары на схемах FBO, FBS, а также realFBS с доставкой в ПВЗ Ozon. Чтобы получить выплату:
 
 ваши Fashion-товары должны быть в периметре Ozon — на остатках или в пути;
-
-после 28 сентября установить объявленную стоимость Fashion-товаров в разделе **[Цены и акции → Цены на товары](https://seller.ozon.ru/app/prices/control)**** **— минимум на 5% ниже, чем сумма возмещения, которая получается [по обычной формуле](https://seller-edu.ozon.ru/libra/commissions-tariffs/legal-information/full-actual-commissions#4-%D0%BF%D0%BE%D1%80%D1%8F%D0%B4%D0%BE%D0%BA-%D0%BE%D0%BF%D1%80%D0%B5%D0%B4%D0%B5%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F-%D0%BA%D0%BE%D1%8D%D1%84%D1%84%D0%B8%D1%86%D0%B8%D0%B5%D0%BD%D1%82%D0%B0-%D0%B2%D0%BE%D0%B7%D0%BC%D0%B5%D1%89%D0%B5%D0%BD%D0%B8%D1%8F);
 
 нужно иметь страховой полис СПАО «Ингосстрах» от массовых повреждений и атак БПЛА — выплачиваем деньги только за те дни, когда полис был активен.
 

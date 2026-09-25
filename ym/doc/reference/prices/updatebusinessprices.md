@@ -2,8 +2,8 @@
 title: В кабинете
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/prices/updateBusinessPrices.md"
-fetched_at: "2026-09-24T02:13:47Z"
-content_sha: cf787026fbc81f7a
+fetched_at: "2026-09-25T02:17:00Z"
+content_sha: b141f11b841a0a35
 ---
 
 ---
@@ -1267,7 +1267,7 @@ alternate:
                       maximum: 100000000
                       exclusiveMinimum: true
     $defs:
-      /home/sandbox/.ya/build/build_root/pyur/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/common/schemas.yaml#/CurrencyType:
+      /home/sandbox/.ya/build/build_root/fti6/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/common/schemas.yaml#/CurrencyType:
         type: string
         description: |
           Коды валют:

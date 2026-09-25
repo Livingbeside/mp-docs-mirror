@@ -5,7 +5,7 @@ tag: fbsSupplies
 group: ""
 kind: guide
 source: "https://dev.wildberries.ru/docs/openapi/orders-fbs"
-content_sha: 5fb3a9c736c673de
+content_sha: 14f15f17b51b309d
 ---
 
 # Поставки FBS
@@ -21,10 +21,10 @@ content_sha: 5fb3a9c736c673de
  
 
  1. [Создайте новую поставку](./orders-fbs#tag/fbsSupplies/operation/postV3Supplies). В ответ вернется ID созданной поставки в формате `WB-GI-1234567`.
+ 1. В текущую новую поставку [добавьте сборочные задания](./orders-fbs#tag/fbsSupplies/operation/patchV3SuppliesSupplyIdOrders), которые вы повезёте на склад или ПВЗ. После того, как сборочные задания будут добавлены к поставке, они будут переведены в статус `confirm` — на сборке.
  1. [Установите параметры отгрузки поставки](./orders-fbs#tag/fbsSupplies/operation/patchV3FbsSuppliesShippingMethod). Для этого получите [список пунктов отгрузки поставок](./orders-fbs#tag/fbsSupplies/operation/getV3FbsShippingPoints). Доступно только для продавцов из РФ.
 
- Для доставки транспортной компанией обязательно укажите ID ЭТрН — электронной транспортной накладной.
- 1. В текущую новую поставку [добавьте сборочные задания](./orders-fbs#tag/fbsSupplies/operation/patchV3SuppliesSupplyIdOrders), которые вы повезёте на склад или ПВЗ. После того, как сборочные задания будут добавлены к поставке, они будут переведены в статус `confirm` — на сборке.
+ При доставке транспортной компанией обязательно [укажите ID ЭТрН](./orders-fbs#tag/Postavki-FBS/operation/patchV3FbsSuppliesWaybill) — электронной транспортной накладной.
  1. [Добавьте грузоместа в поставку](./orders-fbs#tag/fbsSupplies/operation/postV3SuppliesSupplyIdTrbx).
  1. [Проверьте список грузомест](./orders-fbs#tag/fbsSupplies/operation/getV3SuppliesSupplyIdTrbx).
  1. [Получите стикеры грузомест](./orders-fbs#tag/fbsSupplies/operation/postV3SuppliesSupplyIdTrbxStickers). Распечатайте и наклейте стикеры на грузоместа.

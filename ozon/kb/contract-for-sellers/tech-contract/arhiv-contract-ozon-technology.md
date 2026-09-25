@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /contract-for-sellers/tech-contract/arhiv-contract-ozon-technology
 source: "https://seller-edu.ozon.ru/libra/contract-for-sellers/tech-contract/arhiv-contract-ozon-technology"
-updated: "2026-09-18 09:30:40"
+updated: "2026-09-24 09:34:06"
 doc_id: 86501
-fetched_at: "2026-09-19T01:59:03Z"
-content_sha: 3d064dbad603ef44
+fetched_at: "2026-09-25T02:13:05Z"
+content_sha: aea4466505ce7b3f
 ---
 
 # Архив изменений в договоре возмездного оказания услуг Озон Технологий
@@ -18,4 +18,5 @@ _Главная / Договоры для Продавцов на платфор
 
 | **Дата вступления в силу** | **Список изменений** | **Файл для скачивания** |
 | --- | --- | --- |
+| 01.10.2026 г. (опубликовано 24.09.2026 г.) | Добавили англоязычную версию договора возмездного оказания услуг Озон Технологий. |  |
 | 01.10.2026 г. ([опубликовано](https://seller.ozon.ru/media/news/premium-podpiski-chto-izmenitsya-s-1-oktyabrya/) 16.09.2026 г.) | Добавили договор возмездного оказания услуг Озон Технологий. |  |

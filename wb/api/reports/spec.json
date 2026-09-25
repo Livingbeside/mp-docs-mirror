@@ -228,6 +228,34 @@
           "title": "Bad Request"
         }
       },
+      "ReportExample": {
+        "description": "Успешно",
+        "value": {
+          "count": 87,
+          "report": [
+            {
+              "brand": "",
+              "completedDt": null,
+              "dstOfficeAddress": "г. Клин (Московская область), улица Ленина, д. 8",
+              "dstOfficeId": 33,
+              "expiredDt": null,
+              "kiz": null,
+              "nmId": 987654321,
+              "orderDt": "2026-08-24",
+              "orderId": 6789054321,
+              "readyToReturnDt": null,
+              "returnStatus": "В пути в пвз",
+              "returnType": "Возврат товара, который приехал по МП, продавцу",
+              "shkId": 987612345,
+              "sku": "1234567890",
+              "srid": "mp.1b4fc35bfe3f4b799cf01f8e11ffd2cb.r",
+              "stickerId": "918273645",
+              "subjectName": "Вода питьевая",
+              "techSize": "0"
+            }
+          ]
+        }
+      },
       "Response403TokenCategory": {
         "description": "Неверная категория токена",
         "value": {
@@ -992,7 +1020,7 @@
       }
     },
     "schemas": {
-      "4xxResponse": {
+      "4XXResponse": {
         "properties": {
           "detail": {
             "description": "Детали ошибки",
@@ -1083,6 +1111,148 @@
             "type": "string"
           }
         },
+        "type": "object"
+      },
+      "GoodsReturn200Response": {
+        "properties": {
+          "count": {
+            "description": "Общее количество возвратов за запрашиваемый период",
+            "type": "integer"
+          },
+          "report": {
+            "description": "Отчёт",
+            "items": {
+              "properties": {
+                "brand": {
+                  "description": "Бренд",
+                  "example": "dub",
+                  "type": "string"
+                },
+                "completedDt": {
+                  "description": "Дата и время выдачи возврата продавцу",
+                  "example": "2025-03-31T11:33:53",
+                  "nullable": true,
+                  "type": "string"
+                },
+                "dstOfficeAddress": {
+                  "description": "Адрес ПВЗ для выдачи возврата продавцу",
+                  "example": "Жуковский Улица Маяковского 19",
+                  "type": "string"
+                },
+                "dstOfficeId": {
+                  "description": "ID ПВЗ для выдачи возврата продавцу",
+                  "example": 310105,
+                  "type": "integer"
+                },
+                "expiredDt": {
+                  "description": "Дата и время истечения срока хранения возврата",
+                  "example": "2025-03-31T11:33:53",
+                  "nullable": true,
+                  "type": "string"
+                },
+                "kiz": {
+                  "description": "Код маркировки [Честного знака](https://честныйзнак.рф/)",
+                  "example": "0102900000376311210G2CIS?ehge)S\u001d91002A\u001d92F9Qof4FDo/31Icm14kmtuVYQzLypxm3HWkC1vQ/+pVVjm1dNAth1laFMoAGn7yEMWlTjxIe7lQnJqZ7TRZhlHQ==",
+                  "nullable": true,
+                  "type": "string"
+                },
+                "nmId": {
+                  "description": "Артикул WB",
+                  "example": 12862181,
+                  "type": "integer"
+                },
+                "orderDt": {
+                  "description": "Дата заказа на возврат",
+                  "example": "2024-08-26",
+                  "format": "date",
+                  "type": "string"
+                },
+                "orderId": {
+                  "description": "ID сборочного задания",
+                  "example": 2034240826,
+                  "type": "integer"
+                },
+                "readyToReturnDt": {
+                  "description": "Дата и время готовности возврата к выдаче",
+                  "example": "2025-01-31T08:33:50",
+                  "nullable": true,
+                  "type": "string"
+                },
+                "returnReason": {
+                  "description": "Причина возврата.<br> Поле возвращается только при `\"returnType\":\"Возврат неопознанного товара\"`",
+                  "example": "Цвет",
+                  "type": "string"
+                },
+                "returnStatus": {
+                  "description": "Статус возврата",
+                  "example": "В пути в пвз",
+                  "type": "string"
+                },
+                "returnType": {
+                  "description": "Тип возврата",
+                  "example": "Возврат заблокированного товара",
+                  "type": "string"
+                },
+                "shkId": {
+                  "description": "Штрихкод",
+                  "example": 23411783472,
+                  "type": "integer"
+                },
+                "sku": {
+                  "description": "Баркод",
+                  "example": "1680063403480",
+                  "type": "string"
+                },
+                "srid": {
+                  "description": "ID заказа на возврат",
+                  "example": "mp.123130940efa4d67af77f901594c7d2c.r",
+                  "type": "string"
+                },
+                "stickerId": {
+                  "description": "Стикер заказа на возврат",
+                  "example": "33811984302",
+                  "type": "string"
+                },
+                "subjectName": {
+                  "description": "Предмет",
+                  "example": "Багажные бирки",
+                  "type": "string"
+                },
+                "techSize": {
+                  "description": "Размер",
+                  "example": "0",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "sku",
+                "brand",
+                "completedDt",
+                "dstOfficeAddress",
+                "dstOfficeId",
+                "expiredDt",
+                "kiz",
+                "nmId",
+                "orderDt",
+                "orderId",
+                "readyToReturnDt",
+                "returnType",
+                "shkId",
+                "srid",
+                "returnStatus",
+                "stickerId",
+                "subjectName",
+                "techSize"
+              ],
+              "type": "object"
+            },
+            "type": "array"
+          }
+        },
+        "required": [
+          "count",
+          "report"
+        ],
         "type": "object"
       },
       "MeasurementPenalties": {
@@ -2064,6 +2234,146 @@
         }
       ]
     },
+    "/api/analytics/v1/item-returns": {
+      "get": {
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод возвращает отчёт о [возвратах товаров продавцу](https://seller.wildberries.ru/return-transfer-reports).\n",
+        "operationId": "getAnalyticsV1GoodsReturn",
+        "parameters": [
+          {
+            "description": "Дата начала отчётного периода",
+            "in": "query",
+            "name": "dateFrom",
+            "required": true,
+            "schema": {
+              "example": "2024-08-13",
+              "format": "date",
+              "type": "string"
+            }
+          },
+          {
+            "description": "Дата окончания отчётного периода",
+            "in": "query",
+            "name": "dateTo",
+            "required": true,
+            "schema": {
+              "example": "2024-08-27",
+              "format": "date",
+              "type": "string"
+            }
+          },
+          {
+            "description": "Статус возврата:\n  - `archive` — архивный\n  - `active` — активный\n",
+            "in": "query",
+            "name": "status",
+            "required": true,
+            "schema": {
+              "enum": [
+                "active",
+                "archive"
+              ],
+              "example": "active",
+              "type": "string"
+            }
+          },
+          {
+            "description": "Количество возвратов в ответе",
+            "in": "query",
+            "name": "limit",
+            "required": true,
+            "schema": {
+              "example": 10,
+              "format": "date",
+              "maximum": 1000,
+              "minimum": 0,
+              "type": "integer"
+            }
+          },
+          {
+            "description": "Сколько элементов пропустить. Например, для значения 10 ответ начнется с 11 элемента",
+            "in": "query",
+            "name": "offset",
+            "required": true,
+            "schema": {
+              "example": 3,
+              "format": "date",
+              "type": "integer"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "examples": {
+                  "ReportExample": {
+                    "$ref": "#/components/examples/ReportExample"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/GoodsReturn200Response"
+                }
+              }
+            },
+            "description": "<span class='response__value response__value_success'>Успешно</span>"
+          },
+          "204": {
+            "description": "<span class='response__value response__value_success'>Нет данных</span>"
+          },
+          "400": {
+            "content": {
+              "application/problem+json": {
+                "examples": {
+                  "DateRangeExceeded": {
+                    "$ref": "#/components/examples/DateRangeExceeded"
+                  },
+                  "DateRanges": {
+                    "$ref": "#/components/examples/DateRanges"
+                  },
+                  "IncorrectDateTimeFrom": {
+                    "$ref": "#/components/examples/IncorrectDateTimeFrom"
+                  },
+                  "IncorrectDateTimeTo": {
+                    "$ref": "#/components/examples/IncorrectDateTimeTo"
+                  },
+                  "MissingDateTimeFrom": {
+                    "$ref": "#/components/examples/MissingDateTimeFrom"
+                  },
+                  "MissingDateTimeTo": {
+                    "$ref": "#/components/examples/MissingDateTimeTo"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/4XXResponse"
+                }
+              }
+            },
+            "description": "<span class='response__value '>Неправильный запрос</span>"
+          },
+          "401": {
+            "$ref": "#/components/responses/401"
+          },
+          "429": {
+            "$ref": "#/components/responses/429"
+          }
+        },
+        "security": [
+          {
+            "HeaderApiKey": []
+          }
+        ],
+        "summary": "Получить отчёт{{ /api/analytics/v1/item-returns }}",
+        "tags": [
+          "returnsAndItemMovementReport"
+        ],
+        "x-category": "contentanalytics",
+        "x-readonly-method": true
+      },
+      "servers": [
+        {
+          "url": "https://seller-analytics-api.wildberries.ru"
+        }
+      ]
+    },
     "/api/analytics/v1/measurement-penalties": {
       "get": {
         "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод возвращает отчёт об [удержаниях за занижение габаритов упаковки](https://seller.wildberries.ru/analytics-reports/dimensions-penalties)\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 мин | 1 запрос | 1 мин | 1 запрос |\n| Сервисный | 1 мин | 1 запрос | 1 мин | 1 запрос |\n| Базовый с секретом | 1 мин | 1 запрос | 1 мин | 1 запрос |\n| Базовый | 6 ч | 1 запрос | 6 ч | 1 запрос |\n</div>\n",
@@ -2360,7 +2670,7 @@
                   }
                 },
                 "schema": {
-                  "$ref": "#/components/schemas/4xxResponse"
+                  "$ref": "#/components/schemas/4XXResponse"
                 }
               }
             },
@@ -2479,7 +2789,7 @@
                   "title": "Bad Request"
                 },
                 "schema": {
-                  "$ref": "#/components/schemas/4xxResponse"
+                  "$ref": "#/components/schemas/4XXResponse"
                 }
               }
             },
@@ -2504,7 +2814,7 @@
                   "title": "Not Found"
                 },
                 "schema": {
-                  "$ref": "#/components/schemas/4xxResponse"
+                  "$ref": "#/components/schemas/4XXResponse"
                 }
               }
             },
@@ -2574,7 +2884,7 @@
                   "title": "Bad Request"
                 },
                 "schema": {
-                  "$ref": "#/components/schemas/4xxResponse"
+                  "$ref": "#/components/schemas/4XXResponse"
                 }
               }
             },
@@ -2596,7 +2906,7 @@
                   "title": "Not Found"
                 },
                 "schema": {
-                  "$ref": "#/components/schemas/4xxResponse"
+                  "$ref": "#/components/schemas/4XXResponse"
                 }
               }
             },
@@ -2646,7 +2956,7 @@
                   }
                 },
                 "schema": {
-                  "$ref": "#/components/schemas/4xxResponse"
+                  "$ref": "#/components/schemas/4XXResponse"
                 }
               }
             },
@@ -2906,7 +3216,7 @@
                   }
                 },
                 "schema": {
-                  "$ref": "#/components/schemas/4xxResponse"
+                  "$ref": "#/components/schemas/4XXResponse"
                 }
               }
             },
@@ -3051,7 +3361,7 @@
                   }
                 },
                 "schema": {
-                  "$ref": "#/components/schemas/4xxResponse"
+                  "$ref": "#/components/schemas/4XXResponse"
                 }
               }
             },
@@ -3131,7 +3441,7 @@
                   "title": "Bad Request"
                 },
                 "schema": {
-                  "$ref": "#/components/schemas/4xxResponse"
+                  "$ref": "#/components/schemas/4XXResponse"
                 }
               }
             },
@@ -3203,7 +3513,7 @@
                   }
                 },
                 "schema": {
-                  "$ref": "#/components/schemas/4xxResponse"
+                  "$ref": "#/components/schemas/4XXResponse"
                 }
               }
             },
@@ -3242,7 +3552,8 @@
     },
     "/api/v1/analytics/goods-return": {
       "get": {
-        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод возвращает отчёт о [возвратах товаров продавцу](https://seller.wildberries.ru/analytics-reports/goods-return). <br><br>\n\nМожно получить отчёт максимум за 31 день.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 мин | 1 запрос | 1 мин | 10 запросов |\n| Сервисный | 1 мин | 1 запрос | 1 мин | 10 запросов |\n| Базовый с секретом | 1 мин | 1 запрос | 1 мин | 10 запросов |\n| Базовый | 1 ч | 2 запроса | 30 мин | 1 запрос |\n</div>\n",
+        "deprecated": true,
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод будет отключен [26 октября](/release-notes?id=577).\n",
         "operationId": "getV1AnalyticsGoodsReturn",
         "parameters": [
           {
@@ -3417,7 +3728,7 @@
                   }
                 },
                 "schema": {
-                  "$ref": "#/components/schemas/4xxResponse"
+                  "$ref": "#/components/schemas/4XXResponse"
                 }
               }
             },
@@ -3494,7 +3805,7 @@
                   }
                 },
                 "schema": {
-                  "$ref": "#/components/schemas/4xxResponse"
+                  "$ref": "#/components/schemas/4XXResponse"
                 }
               }
             },
@@ -3597,7 +3908,7 @@
                   }
                 },
                 "schema": {
-                  "$ref": "#/components/schemas/4xxResponse"
+                  "$ref": "#/components/schemas/4XXResponse"
                 }
               }
             },
@@ -3701,7 +4012,7 @@
                   "title": "Bad Request"
                 },
                 "schema": {
-                  "$ref": "#/components/schemas/4xxResponse"
+                  "$ref": "#/components/schemas/4XXResponse"
                 }
               }
             },
@@ -3726,7 +4037,7 @@
                   "title": "Not Found"
                 },
                 "schema": {
-                  "$ref": "#/components/schemas/4xxResponse"
+                  "$ref": "#/components/schemas/4XXResponse"
                 }
               }
             },
@@ -3796,7 +4107,7 @@
                   "title": "Bad Request"
                 },
                 "schema": {
-                  "$ref": "#/components/schemas/4xxResponse"
+                  "$ref": "#/components/schemas/4XXResponse"
                 }
               }
             },
@@ -3818,7 +4129,7 @@
                   "title": "Not Found"
                 },
                 "schema": {
-                  "$ref": "#/components/schemas/4xxResponse"
+                  "$ref": "#/components/schemas/4XXResponse"
                 }
               }
             },
@@ -4217,7 +4528,7 @@
                   "title": "Bad Request"
                 },
                 "schema": {
-                  "$ref": "#/components/schemas/4xxResponse"
+                  "$ref": "#/components/schemas/4XXResponse"
                 }
               }
             },
@@ -4390,7 +4701,7 @@
                   "title": "Bad Request"
                 },
                 "schema": {
-                  "$ref": "#/components/schemas/4xxResponse"
+                  "$ref": "#/components/schemas/4XXResponse"
                 }
               }
             },
@@ -4415,7 +4726,7 @@
                   "title": "Not Found"
                 },
                 "schema": {
-                  "$ref": "#/components/schemas/4xxResponse"
+                  "$ref": "#/components/schemas/4XXResponse"
                 }
               }
             },
@@ -4485,7 +4796,7 @@
                   "title": "Bad Request"
                 },
                 "schema": {
-                  "$ref": "#/components/schemas/4xxResponse"
+                  "$ref": "#/components/schemas/4XXResponse"
                 }
               }
             },
@@ -4507,7 +4818,7 @@
                   "title": "Not Found"
                 },
                 "schema": {
-                  "$ref": "#/components/schemas/4xxResponse"
+                  "$ref": "#/components/schemas/4XXResponse"
                 }
               }
             },
@@ -4593,7 +4904,7 @@
       "x-displayName": "Заблокированные карточки"
     },
     {
-      "description": "<div class=\"description_auth\">\n  Для доступа к методам используйте <a href=\"./api-information#tag/authorization/Kak-sozdat-personalnyj-bazovyj-ili-testovyj-token\">токен</a> для категории <strong>Аналитика</strong>\n</div>\n\n<div class=\"description_important\">\n  Узнать больше об отчётах о возвратах и перемещении товаров можно в <a href=\"https://seller.wildberries.ru/instructions/material/A-248?categoryId=5f2162c5-069b-416d-a4e1-48da2a76e6b0\">справочном центре</a>\n</div>\n\nЧтобы получить отчёт о [возвратах товаров](https://seller.wildberries.ru/analytics-reports/goods-return/active), воспользуйтесь [методом загрузки](./reports#tag/returnsAndItemMovementReport/operation/getV1AnalyticsGoodsReturn).\n",
+      "description": "<div class=\"description_auth\">\n  Для доступа к методам используйте <a href=\"./api-information#tag/authorization/Kak-sozdat-personalnyj-bazovyj-ili-testovyj-token\">токен</a> для категории <strong>Аналитика</strong>\n</div>\n\n<div class=\"description_important\">\n  Узнать больше об отчётах о возвратах и перемещении товаров можно в <a href=\"https://seller.wildberries.ru/instructions/material/A-248?categoryId=5f2162c5-069b-416d-a4e1-48da2a76e6b0\">справочном центре</a>\n</div>\n\nЧтобы получить отчёт о [возвратах товаров](https://seller.wildberries.ru/return-transfer-reports/active), воспользуйтесь [методом загрузки](./reports#tag/returnsAndItemMovementReport/operation/getV1AnalyticsGoodsReturn).\n",
       "name": "returnsAndItemMovementReport",
       "x-displayName": "Отчёт о возвратах и перемещении товаров"
     }

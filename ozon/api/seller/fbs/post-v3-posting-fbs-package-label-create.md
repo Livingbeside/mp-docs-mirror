@@ -2,34 +2,26 @@
 title: Создать задание на формирование этикеток
 api: ozon-seller
 method: POST
-path: /v2/posting/fbs/package-label/create
-operation_id: PostingAPI_CreateLabelBatchV2
+path: /v3/posting/fbs/package-label/create
+operation_id: PostingFbsPackageLabelCreate
 tags:
   - FBS
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: 52ffe2565f2fd2a5
+content_sha: dc0c13e5d11377ff
 ---
 
 # Создать задание на формирование этикеток
 
-`POST /v2/posting/fbs/package-label/create`
-
-C 5 октября 2026 года метод будет возвращать новые этикетки для отправлений FBS.
-
-[Подробнее о новых этикетках в Базе знаний продавца](https://seller-edu.ozon.ru/libra/fbs/logistics-settings/metody#тестовыи-формат-этикетки)
-
-С 2 ноября 2026 года метод будет отключён. Переключитесь на [/v3/posting/fbs/package-label/create](#operation/PostingFbsPackageLabelCreate).
+`POST /v3/posting/fbs/package-label/create`
 
 Если вы работаете по схеме rFBS или rFBS Express, изучите процесс печати этикетки в [Базе знаний продавца](https://seller-edu.ozon.ru/rfbs/scheme-of-work).
 
-Метод для создания задания на асинхронное формирование этикеток для отправлений в статусе «Ожидает отгрузки» — `awaiting_deliver`.
-Метод может вернуть несколько заданий: на формирование маленькой и большой этикетки.
-
+Создаёт задания на асинхронное формирование этикеток для отправлений в статусе «Ожидает отгрузки» — `awaiting_deliver`.
 Рекомендуем запрашивать этикетки через 45–60 секунд после сборки заказа.
 
-Чтобы получить созданные этикетки, используйте [/v1/posting/fbs/package-label/get](#operation/PostingAPI_GetLabelBatch).
+Чтобы получить созданные этикетки, используйте [/v2/posting/fbs/package-label/get](#operation/PostingFbsPackageLabelGet).
 
 ## Параметры
 
@@ -42,16 +34,15 @@ C 5 октября 2026 года метод будет возвращать но
 
 **Тело запроса** (`application/json`):
 
-- `posting_number` — ? **обязательный**. Номера отправлений, для которых нужны этикетки.
+- `posting_numbers` — array[string] **обязательный**. Номера отправлений, для которых нужны этикетки.
 
 ## Ответы
 
 **200** — Задания на формирование этикеток
 
-- `result` — object. Результат работы метода.
-  - `tasks` — array[object]. Список заданий.
-    - `task_id` — integer<int64>. Идентификатор задания на формирование этикеток. В зависимости от типа этикетки передайте значение в метод [/v1/posting/fbs/package-label/get](#operation/PostingAPI_GetLabelBatch).
-    - `task_type` — string. Тип задания на формирование этикеток: - `big_label` — для обычной этикетки, - `small_label` — для маленькой этикетки.
+- `tasks` — array[object]. Список заданий.
+  - `task_id` — integer<int64>. Идентификатор задания. Получите файл с этикетками методом [/v2/posting/fbs/package-label/get](#operation/PostingFbsPackageLabelGet).
+  - `task_type` — string. Тип задания: - `big_label` — для обычной этикетки; - `small_label` — для маленькой этикетки.
 
 **400** — Неверный параметр
 

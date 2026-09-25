@@ -2,8 +2,8 @@
 title: Отчет по платежам
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/reports/generateUnitedNettingReport.md"
-fetched_at: "2026-09-24T02:14:32Z"
-content_sha: a7850e08f5d8af7d
+fetched_at: "2026-09-25T02:17:55Z"
+content_sha: 80263ee581c19766
 ---
 
 ---
@@ -93,8 +93,26 @@ alternate:
   || CLAIM_NUMBER | claimNumber | Информация о платежах/Номер и дата претензии | string ||
   || ORDER_TYPE | orderType | Информация о платежах/Тип заказа | string ||
   || SHOP_SKU | shopSku | Информация о платежах/Ваш SKU | string ||
-  || ACT_ID | actId | Информация о платежах/Номер акта об оказанных услугах | integer ||
+  || ACT_ID | actId | Информация о платежах/Номер акта об оказанных услугах | string ||
   || ACT_DATE | actDate | Информация о платежах/Дата акта об оказанных услугах | string ||
+  ||
+  ACT_ID
+  |
+  actId
+  |
+  Информация о платежах/${mbi.reports.united.netting:column.services.act.or.upd.number}
+  |
+  string
+  ||
+  ||
+  ACT_DATE
+  |
+  actDate
+  |
+  Информация о платежах/${mbi.reports.united.netting:column.services.act.or.upd.date}
+  |
+  string
+  ||
   ||
   OFFER_OR_SERVICE_NAME
   |
@@ -1447,14 +1465,14 @@ alternate:
       required: false
       schema:
         $ref: >-
-          /home/sandbox/.ya/build/build_root/pyur/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/reports/schemas.yaml#/ReportFormatType
+          /home/sandbox/.ya/build/build_root/fti6/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/reports/schemas.yaml#/ReportFormatType
     - description: Язык отчета или документа.
       name: language
       in: query
       required: false
       schema:
         $ref: >-
-          /home/sandbox/.ya/build/build_root/pyur/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/reports/schemas.yaml#/ReportLanguageType
+          /home/sandbox/.ya/build/build_root/fti6/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/reports/schemas.yaml#/ReportLanguageType
   headers: []
   body: |-
     {

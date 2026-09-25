@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /fbs/ozon-logistika/logistics-docs
 source: "https://seller-edu.ozon.ru/libra/fbs/ozon-logistika/logistics-docs"
-updated: "2026-06-04 09:17:54"
+updated: "2026-09-24 13:10:34"
 doc_id: 814
-fetched_at: "2026-08-28T12:11:15Z"
-content_sha: 162dec8961941b79
+fetched_at: "2026-09-25T02:13:05Z"
+content_sha: 3cad0d90342c0ab5
 ---
 
 # Оформление транспортной накладной на FBS
@@ -42,6 +42,7 @@ _Главная / Продажа со своего склада (FBS) / Отгр
 
 1. При [добавлении](https://seller-edu.ozon.ru/fbs/logistics-settings/metody#%D0%BA%D0%B0%D0%BA-%D0%B4%D0%BE%D0%B1%D0%B0%D0%B2%D0%B8%D1%82%D1%8C-%D0%BC%D0%B5%D1%82%D0%BE%D0%B4-%D0%B4%D0%BE%D1%81%D1%82%D0%B0%D0%B2%D0%BA%D0%B8) или [редактировании метода доставки](https://seller-edu.ozon.ru/fbs/logistics-settings/metody#%D0%BA%D0%B0%D0%BA-%D0%B8%D0%B7%D0%BC%D0%B5%D0%BD%D0%B8%D1%82%D1%8C-%D0%BC%D0%B5%D1%82%D0%BE%D0%B4-%D0%B4%D0%BE%D1%81%D1%82%D0%B0%D0%B2%D0%BA%D0%B8) перейдите на шаг **Дополнительные настройки**.
 2. Включите опцию **Печатать транспортную накладную**.
+3. Нажмите **Далее**, чтобы сохраните изменения.
 
 # Где скачать транспортную накладную
 
