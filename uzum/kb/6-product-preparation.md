@@ -4,8 +4,8 @@ marketplace: uzum
 kind: article
 path: /6.product-preparation/
 source: "https://seller.uzum.uz/manual/6.product-preparation/"
-fetched_at: "2026-09-25T06:48:52Z"
-content_sha: 7c1e8053d14cd38a
+fetched_at: "2026-09-25T06:57:35Z"
+content_sha: c6521a201145e1d8
 ---
 
 # 6. Подготовка и отправка товаров на склад
@@ -311,7 +311,7 @@ content_sha: 7c1e8053d14cd38a
 
 - Все поставки проходят под видеонаблюдением
 - В случае расхождения по количеству товаров оформляется акт расхождения. Вы можете скачать его из личного кабинета после завершения приемки
-- Если вы не согласны с актом, отправьте претензию в течение 30 дней на почту:[partners@uzum.uz](https://seller.uzum.uz/manual/6.product-preparation/partners@uzum.uz)
+- Если вы не согласны с актом, отправьте претензию в течение 30 дней на почту:[partners@uzum.com](https://seller.uzum.uz/manual/6.product-preparation/partners@uzum.com)
 
 Расхождения фиксируются в случае, если фактически поставленные товары не соответствуют данным в накладной. Это может негативно влиять на размещение товара и создавать дополнительную нагрузку на склад.
 
