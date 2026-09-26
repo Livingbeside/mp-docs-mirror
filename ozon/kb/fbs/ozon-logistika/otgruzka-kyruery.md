@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /fbs/ozon-logistika/otgruzka-kyruery
 source: "https://seller-edu.ozon.ru/libra/fbs/ozon-logistika/otgruzka-kyruery"
-updated: "2026-09-24 13:12:56"
+updated: "2026-09-25 09:31:23"
 doc_id: 810
-fetched_at: "2026-09-25T02:13:05Z"
-content_sha: b475e1fa3e05514b
+fetched_at: "2026-09-26T02:01:06Z"
+content_sha: 05862ca0a181be59
 ---
 
 # Отгрузка курьеру на FBS
@@ -174,6 +174,14 @@ _Главная / Продажа со своего склада (FBS) / Отгр
 Итоговую стоимость рассчитаем по объёму отправлений — покажем её после приёмки в СЦ в разделе [«Финансы» → «Экономика магазина»](https://seller.ozon.ru/app/finances/accruals?tab=ACCRUALS_DETAILS).
 
 В разделе **[FBS → Управление логистикой](https://seller.ozon.ru/app/warehouse)** доступны актуальные тарифы партнёров на доставку без учёта параметров отправления. Все условия доставки закрепили в [договоре](https://seller-edu.ozon.ru/contract-for-sellers/contract-goods/contract-for-sell-goods-on-ozon) и в разделе [«Комиссии и тарифы»](https://seller-edu.ozon.ru/commissions-tariffs/commissions-tariffs-ozon/rashody-na-dop-uslugi#%D0%B2%D1%8B%D0%B5%D0%B7%D0%B4-%D1%82%D1%80%D0%B0%D0%BD%D1%81%D0%BF%D0%BE%D1%80%D1%82%D0%BD%D0%BE%D0%B3%D0%BE-%D1%81%D1%80%D0%B5%D0%B4%D1%81%D1%82%D0%B2%D0%B0-%D0%BF%D0%BE-%D0%B0%D0%B4%D1%80%D0%B5%D1%81%D1%83-%D0%BF%D1%80%D0%BE%D0%B4%D0%B0%D0%B2%D1%86%D0%B0-%D0%B4%D0%BB%D1%8F-%D0%B7%D0%B0%D0%B1%D0%BE%D1%80%D0%B0-%D0%BE%D1%82%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B8-(pick-up)).
+
+# Как оценить отгрузку курьеру
+
+Вы можете оценить работу курьера — например, его пунктуальность и вежливость. Эта информация поможет нам улучшить сервис и скорректировать проблемы. Шкала оценки — от 1 до 5. По желанию можно оставить комментарий о курьере.
+
+Оценить курьера можно в течение 7 дней после отгрузки товаров. Для этого перейдите в раздел **[FBS → Заказы с моих складов](https://seller.ozon.ru/app/postings/fbs)** и нажмите на бейдж **Оцените отгрузку**.
+
+Оценки никак не влияют на ваши текущие и будущие отгрузки. Мы собираем их в обобщённом и обезличенном виде, чтобы анализировать работу перевозчиков.
 
 # Кто может приезжать за отправлениями
 

@@ -2,8 +2,8 @@
 title: Добавление/изменение комментария
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/goods-feedback/updateGoodsFeedbackComment.md"
-fetched_at: "2026-09-25T02:18:01Z"
-content_sha: f81f49bc86a1f064
+fetched_at: "2026-09-26T02:07:58Z"
+content_sha: 27f4b47db9ac577a
 ---
 
 ---
@@ -1198,7 +1198,7 @@ alternate:
       description: "Признак типа кабинета, от имени которого вызывается метод:\n{% if audience == \"partner\" %}\n\n- `SELLER` — продавец.\n\n{% endif %}\n\n- `ADVERTISER` — рекламодатель.\n\n{% if audience == \"advertiser\" %}\n\n{% note info \"Обязательно указывайте sourceType=ADVERTISER в каждом запросе.\" %}\n\n\_\n\n{% endnote %}\n\n{% endif %}\n"
       schema:
         $ref: >-
-          /home/sandbox/.ya/build/build_root/fti6/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/common/schemas.yaml#/SourceType
+          /home/sandbox/.ya/build/build_root/m8ef/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/common/schemas.yaml#/SourceType
         default: SELLER
   headers: []
   body: |-
@@ -1226,12 +1226,12 @@ alternate:
         description: Параметры комментария.
         $ref: '#/$defs/UpdateGoodsFeedbackCommentDTO'
     $defs:
-      /home/sandbox/.ya/build/build_root/fti6/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/common/schemas.yaml#/GoodsFeedbackCommentId:
+      /home/sandbox/.ya/build/build_root/m8ef/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/common/schemas.yaml#/GoodsFeedbackCommentId:
         description: |
           Идентификатор комментария к отзыву.
         type: integer
         format: int64
-      /home/sandbox/.ya/build/build_root/fti6/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/goods-feedback/api/updateGoodsFeedbackComment.yaml#/UpdateGoodsFeedbackCommentDTO:
+      /home/sandbox/.ya/build/build_root/m8ef/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/goods-feedback/api/updateGoodsFeedbackComment.yaml#/UpdateGoodsFeedbackCommentDTO:
         description: Комментарий к отзыву или другому комментарию.
         type: object
         required:

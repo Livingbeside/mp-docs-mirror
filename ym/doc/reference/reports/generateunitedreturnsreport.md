@@ -2,8 +2,8 @@
 title: Отчет по невыкупам и возвратам
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/reports/generateUnitedReturnsReport.md"
-fetched_at: "2026-09-25T02:17:47Z"
-content_sha: a56491d543514d16
+fetched_at: "2026-09-26T02:07:46Z"
+content_sha: e3c3b70c4e80c074
 ---
 
 ---
@@ -1193,7 +1193,7 @@ alternate:
       required: false
       schema:
         $ref: >-
-          /home/sandbox/.ya/build/build_root/fti6/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/reports/schemas.yaml#/ReportFormatType
+          /home/sandbox/.ya/build/build_root/m8ef/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/reports/schemas.yaml#/ReportFormatType
   headers: []
   body: |-
     {
@@ -1333,7 +1333,7 @@ alternate:
             - RECEIVED_FOR_EXPROPRIATION
             - UNKNOWN
     $defs:
-      /home/sandbox/.ya/build/build_root/fti6/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/common/schemas.yaml#/ReturnType:
+      /home/sandbox/.ya/build/build_root/m8ef/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/common/schemas.yaml#/ReturnType:
         description: |
           Тип фильтрации:
   

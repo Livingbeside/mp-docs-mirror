@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /commissions-tariffs/legal-information/full-actual-commissions
 source: "https://seller-edu.ozon.ru/libra/commissions-tariffs/legal-information/full-actual-commissions"
-updated: "2026-09-24 12:33:15"
+updated: "2026-09-25 10:24:06"
 doc_id: 700
-fetched_at: "2026-09-25T02:13:05Z"
-content_sha: 2bff3c2eb802ec05
+fetched_at: "2026-09-26T02:01:06Z"
+content_sha: 85fcc81c81111134
 ---
 
 # Полный список комиссий и тарифов
@@ -1673,7 +1673,7 @@ Ozon может автоматически подключить продавца
 
 # 4. Порядок определения коэффициента возмещения
 
-Условия действуют с 5 октября 2026 года.
+Условия действуют с 28 сентября 2026 года.
 
 Возмещение производится в полном или частичном размере согласно Регламентам. Размер определяем по меньшему из двух значений:
 

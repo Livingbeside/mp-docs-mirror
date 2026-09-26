@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /work-with-goods/zagruzka-tovarov/perenos-kartochek-tovarov/perenos-kartochek-tovarov
 source: "https://seller-edu.ozon.ru/libra/work-with-goods/zagruzka-tovarov/perenos-kartochek-tovarov/perenos-kartochek-tovarov"
-updated: "2026-09-23 08:15:55"
+updated: "2026-09-25 09:28:53"
 doc_id: 1768
-fetched_at: "2026-09-24T02:07:41Z"
-content_sha: 2ec51668685d16e7
+fetched_at: "2026-09-26T02:01:07Z"
+content_sha: 224fd779e3bc4756
 ---
 
 # Перенос карточек товаров
@@ -70,7 +70,7 @@ _Главная / Работа с товарами / Создание и ред�
 
 товар требует маркировки в «Меркурий», «Честный знак» или «ГИИС ДМДК» (ювелирные изделия);
 
-у товара есть остатки на складах КГТ или Ozon Fresh;
+у товара есть остатки на складах КГТ;
 
 товар из категорий **Аптека → Лекарственные средства**;
 

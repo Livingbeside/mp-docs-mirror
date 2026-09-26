@@ -2,8 +2,8 @@
 title: Отчет по платежам
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/reports/generateUnitedNettingReport.md"
-fetched_at: "2026-09-25T02:17:55Z"
-content_sha: 80263ee581c19766
+fetched_at: "2026-09-26T02:07:51Z"
+content_sha: 2e74cc63b10bfd50
 ---
 
 ---
@@ -95,24 +95,8 @@ alternate:
   || SHOP_SKU | shopSku | Информация о платежах/Ваш SKU | string ||
   || ACT_ID | actId | Информация о платежах/Номер акта об оказанных услугах | string ||
   || ACT_DATE | actDate | Информация о платежах/Дата акта об оказанных услугах | string ||
-  ||
-  ACT_ID
-  |
-  actId
-  |
-  Информация о платежах/${mbi.reports.united.netting:column.services.act.or.upd.number}
-  |
-  string
-  ||
-  ||
-  ACT_DATE
-  |
-  actDate
-  |
-  Информация о платежах/${mbi.reports.united.netting:column.services.act.or.upd.date}
-  |
-  string
-  ||
+  || ACT_ID | actId | Информация о платежах/Номер акта или УПД | string ||
+  || ACT_DATE | actDate | Информация о платежах/Дата акта или УПД | string ||
   ||
   OFFER_OR_SERVICE_NAME
   |
@@ -1465,14 +1449,14 @@ alternate:
       required: false
       schema:
         $ref: >-
-          /home/sandbox/.ya/build/build_root/fti6/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/reports/schemas.yaml#/ReportFormatType
+          /home/sandbox/.ya/build/build_root/m8ef/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/reports/schemas.yaml#/ReportFormatType
     - description: Язык отчета или документа.
       name: language
       in: query
       required: false
       schema:
         $ref: >-
-          /home/sandbox/.ya/build/build_root/fti6/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/reports/schemas.yaml#/ReportLanguageType
+          /home/sandbox/.ya/build/build_root/m8ef/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/reports/schemas.yaml#/ReportLanguageType
   headers: []
   body: |-
     {

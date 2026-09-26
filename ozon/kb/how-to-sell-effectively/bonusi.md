@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /how-to-sell-effectively/bonusi
 source: "https://seller-edu.ozon.ru/libra/how-to-sell-effectively/bonusi"
-updated: "2026-09-02 14:33:37"
+updated: "2026-09-25 09:33:45"
 doc_id: 880
-fetched_at: "2026-09-03T02:13:24Z"
-content_sha: af41d83d77e3bd59
+fetched_at: "2026-09-26T02:01:06Z"
+content_sha: dc8fe38ffc7a4b9b
 ---
 
 # Бонусы на продвижение
@@ -17,6 +17,8 @@ _Главная / Продвижение_
 За что можно получить бонусы на продвижение и как их потратить
 
 # Что такое бонусы
+
+Оцените отгрузку или выдачу возвратов, которые пройдут с 28 по 30 сентября — начислим до 100 бонусов на продвижение. [Подробнее](https://seller-edu.ozon.ru/fbs/ozon-logistika/otgruzka-otpravlenii-na-fbs#как-получить-бонусы-на-продвижение-за-оценку-отгрузки)
 
 Бонусы можно использовать для получения скидки на услуги продвижения на Ozon. 1 бонус = 1 ₽.
 

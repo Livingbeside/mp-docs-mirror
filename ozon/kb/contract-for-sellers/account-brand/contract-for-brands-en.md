@@ -4,17 +4,17 @@ marketplace: ozon
 kind: article
 path: /contract-for-sellers/account-brand/contract-for-brands-en
 source: "https://seller-edu.ozon.ru/libra/contract-for-sellers/account-brand/contract-for-brands-en"
-updated: "2026-02-12 16:37:50"
+updated: "2026-09-25 15:45:08"
 doc_id: 660
-fetched_at: "2026-08-28T12:11:14Z"
-content_sha: 9bbd99eb5bd48e63
+fetched_at: "2026-09-26T02:01:06Z"
+content_sha: bacf3511319b8a54
 ---
 
 # Trademark Holder Agreement
 
 _Главная / Договоры для Продавцов на платформе Ozon / Кабинет бренда_
 
-This revision is effective as of  February 19, 2026. We publish amendments in advance: if the rules on this page are not already in effect, see the [previous version](https://seller-edu.ozon.ru/contract-for-sellers/account-brand/spisok-izmenenii-contract-for-brands).
+This revision is effective as of  October 1, 2026. We publish amendments in advance: if the rules on this page are not already in effect, see the [previous version](https://seller-edu.ozon.ru/contract-for-sellers/account-brand/spisok-izmenenii-contract-for-brands).
 
 By accepting the Trademark Holder Agreement (hereinafter referred to as the Agreement), the Right Holder confirms that they have read its text and fully understand its terms and conditions. If the Right Holder disagrees with the terms and conditions, they are obliged to refuse to enter into the Agreement.
 
@@ -58,11 +58,15 @@ The Right Holder may challenge repudiation of the Agreement by Ozon by providing
 
 # 2. Subject Matter
 
+The Agreement regulates the relationship between the Right Holder and Ozon in connection with:
+
 (a) paid activation of the Premium Brand Subscription (including, but not limited to, if the Premium Brand Subscription is part of the Premium Plus or Premium Pro service) – a set of services rendered to the Right Holder in the Brand PA during the access period;
 
 (b) provision by Ozon of additional services to the Right Holder.
 
 The Agreement also governs the terms and conditions for accessing and using specific functionalities of the Brand PA.
+
+The Right Holder may order the Premium Brand, Premium Plus, or Premium Pro Subscription in the Personal Account only as a package bundled with services for the provision of remote access to the «Extended Analytics», which are rendered by Ozon’s partner — [Ozon Technologies LLC](https://seller-edu.ozon.ru/contract-for-sellers/tech-contract/contract-ozon-technology) ((Primary State Registration No. (OGRN) 1197746313940). For this purpose, Ozon shall transfer to Ozon Technologies LLC the data provided by the Right Holder to Ozon under the Agreement, including within the Personal Account, as well as data contained in the Personal Account, including information on the sales of the Right Holder's goods conducted via the Platform, details of sales volumes and dynamics, the number of orders, the quantity and value of the sold goods, sales prices, discounts, returns and cancellations, product categories and characteristics, sales performance metrics, as well as any other information related to the sale of goods.
 
 2.2. To activate the Subscription, the Right Holder has to enter into an Agreement, register and log in the Brand PA as well as undergo the procedure for verifying documents confirming their right to the Trademark protection.
 
@@ -206,15 +210,21 @@ Due to technical reasons, the Subscription may be temporarily displayed in the r
 
 6.12. For the Right Holder – Seller, the Subscription is a part of the Premium Plus or Premium Pro service. Subscription management, payment and sending documents are carried out in accordance with the [Contract for Ozon Platform Sellers](https://seller-edu.ozon.ru/contract-for-sellers/contract-goods/contract-for-sell-goods-on-ozon) (is not part of the Agreement except in cases specified in it).
 
+**6.13. Payment for Services to Ozon Technologies LLC (Ozon Tech)**
+**6.13.1. Right Holder’s Authorization for Funds Transfer to Ozon Tech in case of overdue indebtedness**
+If the Right Holder incurs any overdue indebtedness to Ozon Tech, the Right Holder hereby authorizes Ozon to transfer the funds available on the Right Holder's balance to Ozon Tech to satisfy such overdue indebtedness.
+
+If overdue indebtedness arises under multiple agreements with other Creditors, Ozon shall transfer the funds for the goods sold under the Agreement primarily to the Creditor who was the first to send a notice of performance of the authorization specified in this clause. The claims of Creditors in the second and subsequent priorities shall be satisfied in the order of receipt of the respective notices.
+
+This authorization is irrevocable and shall remain in effect until the complete termination of the Right Holder’s obligations under the agreements with the Creditor.
+
 # 7. Premium Brand Subscription Services
 
 After activation of the Subscription, the Right Holder receives the right to:
 
 (a) respond to reviews and questions from Clients;
 
-(b) use additional tools to analyze sales of the goods offered for sale on the Platform under the Right Holder's Trademark;
-
-(c) use other services available in the Brand PA.
+(b) use other services available in the Brand PA.
 
 # 8. Responses to Reviews and Questions from Clients
 
@@ -361,7 +371,7 @@ Damages and/or pecuniary losses under the Agreement are accrued and paid, includ
 
 13.7. Confidential information under the Agreement may be transferred by the Parties to each other both with and without a confidentiality stamp. The Parties may refer to the confidentiality of the information transferred in letters, statements of acceptance and transfer of documents, by e-mail, orally, or otherwise.
 
-13.8. The insights, all text information and graphic images contained in the Brand PA are the intellectual property of Ozon.
+13.8. Аll text information and graphic images contained in the Brand PA are the intellectual property of Ozon.
 
 # 14. Communication
 
@@ -389,7 +399,7 @@ The Right Holder shall regularly check the Brand PA and email for such Notices. 
 
 15.2. By registering on the Platform as a Right Holder, Foreign Seller agrees to be bound by the terms of this Agreement. The provisions of Clauses 1.1 and 1.2 of the Agreement shall not be applicable to Foreign Sellers.
 
-15.3. The terms and conditions of the Agreement shall apply provided that the Subscription (as the part of Premium Plus service), additional services, or features are available in the Brand PA.
+15.3. The terms and conditions of the Agreement shall apply provided that the Subscription (as the part of Premium Plus, Premium Pro services), additional services, or features are available in the Brand PA.
 
 15.4. Services for promoting products under the Right Holder's Trademark are provided by Ozon to Foreign Sellers within the framework of the provisions of the [Contract for the placement of goods from abroad on Ozon Platform (cross-border)](https://docs.ozon.ru/global/en/contracts-for-sellers/dogovor/?country=CN) (is not part of the Agreement except in cases specified in it), governing the Brand promotion service.
 
@@ -398,7 +408,7 @@ The Right Holder shall regularly check the Brand PA and email for such Notices. 
 | **Section** | **Applicable link** |
 | --- | --- |
 | 4. Inspection of the Right Holder's Documents | [List of documents](https://docs.ozon.ru/global/en/brand-account/brand-account-registration/?country=CN#document-list) |
-| 6. Premium Brand Subscription | [The Subscription access period](https://docs.ozon.ru/global/en/brand-account/premium-brand/?country=CN) [Contract for Ozon Platform Sellers](https://docs.ozon.ru/global/en/contracts-for-sellers/dogovor/?country=CN) (Contract for the placement of goods from abroad on Ozon Platform (cross-border)) |
+| 6. Premium Brand Subscription | [The Subscription access period](https://docs.ozon.ru/global/en/brand-account/premium-brand/?country=CN) [Contract for Ozon Platform Sellers](https://docs.ozon.ru/global/en/contracts-for-sellers/dogovor/?country=CN) (Contract for the placement of goods from abroad on Ozon Platform (cross-border)) [Ozon Tech services agreement](https://seller-edu.ozon.ru/contract-for-sellers/tech-contract/contract-ozon-technology) |
 | 9. Product Promotion | [Requirements for Advertising Materials](https://docs.ozon.ru/global/en/promotion/media-advertising/requirements-to-advertising-materials/?country=CN) |
 
 # 16. Definitions
@@ -433,7 +443,7 @@ The Right Holder shall regularly check the Brand PA and email for such Notices. 
 
 16.12. **IPRs **mean Intellectual Property Rights.
 
-16.13. **Website** shall mean [[www.ozon.ru](http://www.ozon.ru/)](http://www.ozon.ru) and Ozon mobile application, both owned and administered by Ozon.
+16.13. **Website** shall mean [www.ozon.ru](http://www.ozon.ru/) and Ozon mobile application, both owned and administered by Ozon.
 
 16.14. **Disputed Product** shall mean a product offered by the Seller for sale on the Platform, in respect of which there are doubts as to the Seller's right to offer such product for sale.
 

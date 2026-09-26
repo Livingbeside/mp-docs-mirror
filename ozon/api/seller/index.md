@@ -4,7 +4,7 @@ api: ozon-seller
 spec_version: 2.1
 operations: 481
 source: "https://docs.ozon.ru/api/seller/"
-content_sha: a4ec069ba75d34fb
+content_sha: c83784c471922b04
 ---
 
 # Документация Ozon Seller API
@@ -18,7 +18,7 @@ content_sha: a4ec069ba75d34fb
 
 > [Информационная платформа и сообщество разработчиков Ozon for dev](https://dev.ozon.ru/)
 
-Версия спеки: `2.1` · методов: **481** · разделов справки: **26**
+Версия спеки: `2.1` · методов: **481** · разделов справки: **27**
 
 Источник: https://docs.ozon.ru/api/seller/
 

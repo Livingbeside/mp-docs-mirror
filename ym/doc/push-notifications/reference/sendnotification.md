@@ -2,8 +2,8 @@
 title: Получение уведомлений
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/push-notifications/reference/sendNotification.md"
-fetched_at: "2026-09-24T02:15:04Z"
-content_sha: 9e05797342ebcc4e
+fetched_at: "2026-09-26T02:08:22Z"
+content_sha: 8b0043bdc81b7dae
 ---
 
 ---
@@ -1082,11 +1082,13 @@ _orderId_{.json-schema-reset .json-schema-property .json-schema-required}
 ||
 ||
 
-_orderLineServices_{.json-schema-reset .json-schema-property .json-schema-required}
+_orderLineServices_{.json-schema-reset .json-schema-property}
 {.table-cell}|
-**Type**: [NotificationOrderLineServiceDTO](#entity-NotificationOrderLineServiceDTO)[]
+**Type**: [NotificationOrderLineServiceDTO](#entity-NotificationOrderLineServiceDTO)[] &#124; null
 
 Список услуг в заказе.
+
+_Min items:_{.json-schema-reset .json-schema-assertion} `1`
 
 {% cut "**Example**" %}{.json-schema-example}
 

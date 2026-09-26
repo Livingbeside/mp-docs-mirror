@@ -5,12 +5,19 @@ tag: News
 group: Обновления
 kind: changelog
 source: "https://docs.ozon.ru/api/seller/"
-content_sha: cefcb6db01c5b04e
+content_sha: 56e86de858498eef
 ---
 
 # Обновления
 
 Следите за обновлениями документации на платформе для разработчиков [Ozon for dev](https://dev.ozon.ru/).
+
+## 25 сентября 2026
+
+| Метод | Изменение |
+|-------|-----------|
+| [/v3/product/list](#operation/ProductAPI_GetProductList)<br>[/v4/product/info/attributes](#operation/ProductAPI_GetProductAttributesV4) | Добавили значение `SHOWCASE_SELECT_ACTIVE` параметра `filter.visibility` в запросе методов. |
+| — | Добавили раздел [**Лимиты**](#tag/Limits). |
 
 ## 24 сентября 2026
 
@@ -1735,7 +1742,7 @@ content_sha: cefcb6db01c5b04e
 ## 20 марта 2025
 
 | Метод | Изменение |
-|--------------------------------------------------------------|---------------------------------------------------|
+| ----------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- |
 | [/v1/rating/summary](#operation/RatingAPI_RatingSummaryV1) | Добавили параметр `premium_plus` в ответ метода. |
 | [/v1/analytics/product-queries/details](#operation/AnalyticsAPI_AnalyticsProductQueriesDetails) | Обновили описание параметров `limit_by_sku`, `page` и `page_size` в запросе метода. |
 
