@@ -4,8 +4,8 @@ api: wildberries
 kind: changelog
 source: "https://dev.wildberries.ru/release-notes"
 window: последние записи, страница отдаёт не всю историю
-fetched_at: "2026-09-25T02:16:01Z"
-content_sha: e77a578682b84e41
+fetched_at: "2026-09-28T02:16:50Z"
+content_sha: 23f0cec5660f5e4b
 ---
 
 # Журнал изменений WB API
@@ -20,35 +20,35 @@ content_sha: e77a578682b84e41
 
 Пн
 
-21
+28
 
 Вт
 
-22
+29
 
 Ср
 
-23
+30
 
 Чт
 
-24
+1
 
 Пт
 
-25
+2
 
 Сб
 
-26
+3
 
 Вс
 
-27
+4
 
 Пн
 
-28
+5
 
 Поиск
 
