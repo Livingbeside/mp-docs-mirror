@@ -4,8 +4,8 @@ api: wildberries
 kind: changelog
 source: "https://dev.wildberries.ru/release-notes"
 window: последние записи, страница отдаёт не всю историю
-fetched_at: "2026-09-28T02:16:50Z"
-content_sha: 23f0cec5660f5e4b
+fetched_at: "2026-09-29T02:09:13Z"
+content_sha: 635175d040870b42
 ---
 
 # Журнал изменений WB API
@@ -66,6 +66,44 @@ content_sha: 23f0cec5660f5e4b
 
 Сентябрь
 2026
+
+Новое
+
+## 28.09.2026
+
+Документы и бухгалтерия
+
+Финансовые отчёты
+
+Новые поля в детализациях к отчётам реализации
+
+Добавили [новые поля](https://seller.wildberries.ru/news-v2/news-details?id=14226) в детализации к отчётам реализации [POST /api/finance/v1/sales-reports/detailed/{reportId}](/docs/openapi/financial-reports-and-accounting#tag/financialReports/operation/postV1SalesReportsDetailedReportId) и [POST api/finance/v1/sales-reports/detailed](/docs/openapi/financial-reports-and-accounting#tag/financialReports/operation/postV1SalesReportsDetailed):
+
+- `buyerTaxRegistrationReasonCode` — КПП B2B-покупателя
+- `utdUcdNumber` — номер УПД или УКД
+- `utdUcdDate` — дата УПД или УКД
+
+Изменения
+
+## 28.09.2026
+
+Аналитика и данные
+
+Воронка продаж
+
+Аналитика продавца CSV
+
+Изменение времени обновления данных в Воронке продаж и Аналитике продавца CSV
+
+С **24 сентября** данные обновляются 1 раз в 2 часа в следующих отчётах:
+
+- [Статистика карточек товаров за период](/docs/openapi/analytics/#tag/salesFunnel/operation/postV3SalesFunnelProducts)
+- [Статистика карточек товаров по дням](/docs/openapi/analytics/#tag/salesFunnel/operation/postV3SalesFunnelProductsHistory)
+- [Статистика групп карточек товаров по дням](/docs/openapi/analytics/#tag/salesFunnel/operation/postV3SalesFunnelGroupedHistory)
+- DETAIL_HISTORY_REPORT — отчёт воронки продаж по артикулам WB в методе [POST /api/v2/nm-report/downloads](/docs/openapi/analytics#tag/sellerAnalyticsCsv/operation/postV2NmReportDownloads)
+- GROUPED_HISTORY_REPORT — отчёт воронки продаж по предметам, брендам и ярлыкам в методе [POST /api/v2/nm-report/downloads](/docs/openapi/analytics#tag/sellerAnalyticsCsv/operation/postV2NmReportDownloads)
+
+Чтобы получить текущие данные без задержки обновления, используйте метод [POST /api/analytics/v1/order-feed](/docs/openapi/analytics/#tag/orderFeed/operation/postV1OrderFeed).
 
 Новое
 
@@ -175,6 +213,27 @@ content_sha: 23f0cec5660f5e4b
 - `dateStart` — дата начала действия коэффициента
 - `dateEnd` — дата окончания действия коэффициента
 
+Новое
+
+## 10.09.2026
+
+Поставки FBW
+
+Черновики поставок
+
+Черновики поставок FBW
+
+Добавили методы для работы с [черновиками поставок](./docs/openapi/orders-fbw#tag/supplyDrafts) FBW. Теперь с помощью WB API вы можете:
+
+- Создать черновик — [POST /api/supplies/v1/drafts](./docs/openapi/orders-fbw#tag/supplyDrafts/operation/postV1Drafts)
+- Добавить товары в черновик — [POST /api/supplies/v1/drafts/{draftId}/items](./docs/openapi/orders-fbw#tag/supplyDrafts/operation/postV1DraftsDraftIdItems)
+- Получить список черновиков — [GET /api/supplies/v1/drafts](./docs/openapi/orders-fbw#tag/supplyDrafts/operation/getV1Drafts)
+- Получить список товаров в черновике — [GET /api/supplies/v1/drafts/{draftId}/items](./docs/openapi/orders-fbw#tag/supplyDrafts/operation/getV1DraftsDraftIdItems)
+- Удалить товары из черновика — [DELETE /api/supplies/v1/drafts/{draftId}/items](./docs/openapi/orders-fbw#tag/supplyDrafts/operation/deleteV1DraftsDraftIdItems)
+- Удалить черновик — [DELETE /api/supplies/v1/drafts/{draftId}](./docs/openapi/orders-fbw#tag/supplyDrafts/operation/deleteV1DraftsDraftId)
+
+Методы доступны по **Персональному** и **Сервисному** токену категории **Поставки**.
+
 Изменения
 
 ## 10.09.2026
@@ -196,27 +255,6 @@ content_sha: 23f0cec5660f5e4b
 
 В предыдущей версии описания объекта `wholesale` было некорректно указано, что при `"enabled":true` товар предназначен для оптовой продажи.
  В исправленной версии описания объекта `wholesale` указано, что при `"enabled":true` товар предназначен для любой [B2B-продажи](https://seller.wildberries.ru/instructions/ru/ru/material/wholesale-of-goods), не только оптовой.
-
-Новое
-
-## 10.09.2026
-
-Поставки FBW
-
-Черновики поставок
-
-Черновики поставок FBW
-
-Добавили методы для работы с [черновиками поставок](./docs/openapi/orders-fbw#tag/supplyDrafts) FBW. Теперь с помощью WB API вы можете:
-
-- Создать черновик — [POST /api/supplies/v1/drafts](./docs/openapi/orders-fbw#tag/supplyDrafts/operation/postV1Drafts)
-- Добавить товары в черновик — [POST /api/supplies/v1/drafts/{draftId}/items](./docs/openapi/orders-fbw#tag/supplyDrafts/operation/postV1DraftsDraftIdItems)
-- Получить список черновиков — [GET /api/supplies/v1/drafts](./docs/openapi/orders-fbw#tag/supplyDrafts/operation/getV1Drafts)
-- Получить список товаров в черновике — [GET /api/supplies/v1/drafts/{draftId}/items](./docs/openapi/orders-fbw#tag/supplyDrafts/operation/getV1DraftsDraftIdItems)
-- Удалить товары из черновика — [DELETE /api/supplies/v1/drafts/{draftId}/items](./docs/openapi/orders-fbw#tag/supplyDrafts/operation/deleteV1DraftsDraftIdItems)
-- Удалить черновик — [DELETE /api/supplies/v1/drafts/{draftId}](./docs/openapi/orders-fbw#tag/supplyDrafts/operation/deleteV1DraftsDraftId)
-
-Методы доступны по **Персональному** и **Сервисному** токену категории **Поставки**.
 
 Изменения
 
@@ -509,46 +547,5 @@ DBS
 - используется офсетно-курсорная пагинация и товарные фильтры: артикулы WB, бренды, предметы, теги
 
 Метод доступен по [токену](/docs/openapi/api-information#tag/authorization) любого типа для категории **Аналитика**.
-
-Июль
-2026
-
-Новое
-
-## 30.07.2026
-
-Заказы FBS
-
-Настройки автовозврата
-
-Настройки автовозврата для заказов FBS
-
-Добавили методы для работы с [автовозвратами FBS](/docs/openapi/orders-fbs#tag/autoreturnSettings) для малогабаритных товаров — `"cargoType":1` — по предложениям пользователей в [Сообществе WB API](/forum/topics/2079/publichnye-idei-i-predlozheniia-wb-api). Теперь с помощью WB API вы можете:
-
-- Получить настройки автовозврата продавца — [GET /api/marketplace/v3/fbs/settings/autoreturns](/docs/openapi/orders-fbs#tag/autoreturnSettings/operation/getMarketplaceV3FbsSettingsAutoreturns)
-- Обновить настройки автовозврата продавца — [PATCH /api/marketplace/v3/fbs/settings/autoreturns](/docs/openapi/orders-fbs#tag/autoreturnSettings/operation/patchMarketplaceV3FbsSettingsAutoreturns)
-- Получить настройки автовозврата товаров — [POST /api/marketplace/v3/fbs/settings/autoreturns/items](/docs/openapi/orders-fbs#tag/autoreturnSettings/operation/postMarketplaceV3FbsSettingsAutoreturnsItems)
-- Обновить настройки автовозврата товаров — [PATCH /api/marketplace/v3/fbs/settings/autoreturns/items](/docs/openapi/orders-fbs#tag/autoreturnSettings/operation/patchMarketplaceV3FbsSettingsAutoreturnsItems)
-- Получить предметы, которые не хранятся на складах WB — [GET /api/marketplace/v3/fbs/settings/autoreturns/subcategories/restricted](/docs/openapi/orders-fbs#tag/autoreturnSettings/operation/getMarketplaceV3FbsSettingsAutoreturnsSubcategoriesRestricted)
-
-Новое
-
-## 30.07.2026
-
-Критичное изменение
-
-Работа с товарами
-
-Склады продавца
-
-Изменение в методах работы со складами продавца
-
-С **5 августа** с помощью API нельзя будет создавать и редактировать склады продавца для **сверхгабаритных** товаров (СГТ). Данная возможность будет только в [личном кабинете](https://seller.wildberries.ru/marketplace-pass/warehouses).
-
-Что изменится в методах:
-
-- Получить список складов WB — [GET /api/v3/offices](/docs/openapi/work-with-products#tag/sellerWarehouses/operation/getV3Offices) — в ответе теперь не будут возвращаться СГТ-склады WB
-- Создать склад продавца — [POST /api/v3/warehouses](/docs/openapi/work-with-products#tag/sellerWarehouses/operation/postV3Warehouses) — при создании СГТ-склада вы получите ошибку `404`
-- Обновить склад продавца — [PUT /api/v3/warehouses/ {warehouseId}](/docs/openapi/work-with-products#tag/sellerWarehouses/operation/putV3WarehousesWarehouseId) — при изменении данных СГТ-склада вы получите ошибку `404`
 
 Мы используем [cookies](/privacy) для сбора статистики и улучшения сервиса

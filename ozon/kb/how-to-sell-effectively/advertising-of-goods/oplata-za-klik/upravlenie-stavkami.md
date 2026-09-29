@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /how-to-sell-effectively/advertising-of-goods/oplata-za-klik/upravlenie-stavkami
 source: "https://seller-edu.ozon.ru/libra/how-to-sell-effectively/advertising-of-goods/oplata-za-klik/upravlenie-stavkami"
-updated: "2026-09-11 16:10:33"
+updated: "2026-09-28 15:07:17"
 doc_id: 45449
-fetched_at: "2026-09-12T01:58:38Z"
-content_sha: 5f2096c511e325cd
+fetched_at: "2026-09-29T02:06:18Z"
+content_sha: 279c3964f21e4e32
 ---
 
 # Cтратегии управления ставками в «Оплате за клик»
@@ -83,5 +83,7 @@ _Главная / Продвижение / Продвижение товаров
 **Для каких товаров**: для любых.
 
 **Кому подойдёт**: продавцам, которые хотят получить максимум заказов в рамках установленной доли рекламных расходов в кампании.
+
+# Видео
 
 # Что ещё полезно знать

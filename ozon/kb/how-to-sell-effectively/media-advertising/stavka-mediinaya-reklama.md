@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /how-to-sell-effectively/media-advertising/stavka-mediinaya-reklama
 source: "https://seller-edu.ozon.ru/libra/how-to-sell-effectively/media-advertising/stavka-mediinaya-reklama"
-updated: "2026-08-21 13:20:15"
+updated: "2026-09-28 11:05:01"
 doc_id: 27862
-fetched_at: "2026-08-28T12:11:15Z"
-content_sha: 204e41b1b3b5a507
+fetched_at: "2026-09-29T02:06:17Z"
+content_sha: 52c211ec5c6e31ab
 ---
 
 # Что такое ставка в «Медийной рекламе»
@@ -57,7 +57,7 @@ _Главная / Продвижение / «Медийная реклама»_
 | Оффервол | 350 ₽ за 1 000 показов |  |
 | Заказ выполнен | 350 ₽ за 1 000 показов |  |
 | Видеобаннер | Главная. Вы заплатите, только если покупатели увидят видеобаннер дольше 2 секунд | 330 ₽** **за 1 000 видимых показов |
-| Нативный баненр | Главная и поиск | 250 ₽ за 1 000 показов |
+| Нативный баннер | Главная и поиск | 250 ₽ за 1 000 показов |
 
 # Как посмотреть достаточность ставки
 

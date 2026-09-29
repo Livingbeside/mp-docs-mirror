@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /fbo/rabota-so-stokom/upravlenie-ostatkami-i-likvidnost-tovarov
 source: "https://seller-edu.ozon.ru/libra/fbo/rabota-so-stokom/upravlenie-ostatkami-i-likvidnost-tovarov"
-updated: "2026-09-17 12:58:03"
+updated: "2026-09-28 12:10:31"
 doc_id: 21142
-fetched_at: "2026-09-18T02:20:34Z"
-content_sha: cb58c43352eb940d
+fetched_at: "2026-09-29T02:06:17Z"
+content_sha: 5c7622b7f8c58abe
 ---
 
 # Управление остатками и ликвидность товаров
@@ -136,7 +136,7 @@ _Главная / Продажа со склада Ozon (FBO) / Работа с�
 
 Добавить товары в заявку на перемещение между складами.[ Подробнее о перемещении товаров](https://seller-edu.ozon.ru/fbo/rabota-so-stokom/peremeshchenie-tovara-mejdu-skladami-ozon)
 
-Снять с продажи немаркированные остатки товаров. [Подробнее о снятии с продажи](https://seller-edu.ozon.ru/fbo/rabota-so-stokom/upravlenie-ostatkami-i-likvidnost-tovarov-test#%D0%B2%D1%8B%D0%B2%D0%BE%D0%B7-%D0%BD%D0%B5%D0%BC%D0%B0%D1%80%D0%BA%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%BD%D1%8B%D1%85-%D0%BE%D1%81%D1%82%D0%B0%D1%82%D0%BA%D0%BE%D0%B2)
+Снять с продажи немаркированные остатки товаров. [Подробнее о снятии с продажи](#вывезти-немаркированные-товары)
 
 Для этого перейдите на вкладку** По товарам**, отметьте нужные товары из списка и нажмите **Выбрать действие.**
 

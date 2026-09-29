@@ -1307,6 +1307,11 @@
             "example": "BlahBlah",
             "type": "string"
           },
+          "buyerTaxRegistrationReasonCode": {
+            "description": "КПП B2B-покупателя",
+            "example": "7701123301",
+            "type": "string"
+          },
           "cashbackAmount": {
             "description": "Сумма баллов, удержанных по программе лояльности",
             "example": "2",
@@ -1708,6 +1713,17 @@
             "example": "WB-TRBX-1234567",
             "type": "string"
           },
+          "utdUcdDate": {
+            "description": "Дата УПД или УКД",
+            "example": "2006-01-02",
+            "format": "date",
+            "type": "string"
+          },
+          "utdUcdNumber": {
+            "description": "Номер УПД или УКД",
+            "example": "12356856523",
+            "type": "string"
+          },
           "uuidPromocode": {
             "description": "ID промокода",
             "example": "",
@@ -1827,6 +1843,9 @@
           "b2bCustomerTin",
           "paidWithSocialCertificate",
           "warehouseLogisticsCoeff",
+          "buyerTaxRegistrationReasonCode",
+          "utdUcdNumber",
+          "utdUcdDate",
           "orderUid",
           "srid"
         ],

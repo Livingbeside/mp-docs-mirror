@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /prodaji-i-postavki-v-drugie-strany/postavki-na-sklady-v-drugie-strany
 source: "https://seller-edu.ozon.ru/libra/prodaji-i-postavki-v-drugie-strany/postavki-na-sklady-v-drugie-strany"
-updated: "2026-09-21 10:33:49"
+updated: "2026-09-28 09:05:40"
 doc_id: 12070
-fetched_at: "2026-09-22T02:23:09Z"
-content_sha: d275d80fdfca2ae3
+fetched_at: "2026-09-29T02:06:16Z"
+content_sha: 1a0e114d57f1bba5
 ---
 
 # Поставки на склады в другие страны
@@ -54,6 +54,7 @@ _Главная / Продажи и поставки за рубеж_
 | **Склад** | **Юр. адрес склада** |
 | --- | --- |
 | [Минск МПСЦ](/fbo/warehouses/adresa-skladov-fbo#%D0%BC%D0%B8%D0%BD%D1%81%D0%BA-%D0%BC%D0%BF%D1%81%D1%86) | 193602362 ООО «ОЗОН Маркет Бел» Республика Беларусь, 223053, Минская область, Минский район, Боровлянский сельсовет, с/с Боровлянский, д. 58/10, пом. 24 (район деревни Королев Стан) |
+| [Орша РФЦ](https://seller-edu.ozon.ru/fbo/warehouses/adresa-skladov-fbo#орша-рфц) | 193602362 ООО «ОЗОН Маркет Бел» Республика Беларусь, Витебская область, Болбасово, Заводская улица, 15 |
 
 Для пересечения границы понадобятся следующие документы:
 

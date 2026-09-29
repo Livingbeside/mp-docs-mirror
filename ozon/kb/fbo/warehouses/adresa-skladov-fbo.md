@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /fbo/warehouses/adresa-skladov-fbo
 source: "https://seller-edu.ozon.ru/libra/fbo/warehouses/adresa-skladov-fbo"
-updated: "2026-09-25 15:36:17"
+updated: "2026-09-28 09:03:55"
 doc_id: 13009
-fetched_at: "2026-09-26T02:01:06Z"
-content_sha: d09ded6df0b38adf
+fetched_at: "2026-09-29T02:06:17Z"
+content_sha: bd24ad461288a03c
 ---
 
 # Адреса и реквизиты складов и пунктов приёма Ozon
@@ -835,7 +835,10 @@ _Главная / Продажа со склада Ozon (FBO) / Склады, а
 
 **График работы:**
 
-для приёма поставок — первые 2 недели по запросу от объекта настроены только в день, а далее — круглосуточно
+для приёма поставок:
+с 5 по 19 октября — ежедневно с 9:00 до 21:00
+
+далее — круглосуточно
 
 для вывоза возвратов с приёмки — ежедневно с 9:00 до 18:00
 

@@ -9,7 +9,7 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: ab459e9d0f0959e9
+content_sha: f272a302cac033e7
 ---
 
 # Получить информацию о товарах по идентификаторам
@@ -60,6 +60,9 @@ content_sha: ab459e9d0f0959e9
     - `value` — number<double>. Сумма комиссии.
   - `created_at` — string<date-time>. Дата и время создания товара.
   - `currency_code` — string. Валюта.
+  - `declared_price` — object. Объявленная стоимость товара. [Подробнее об объявленной стоимости товара в Базе знаний продавца](https://seller-edu.ozon.ru/libra/ceny-i-akcii/rabota-s-cenami/price-control#объявленная-стоимость)
+    - `amount` — string. Сумма.
+    - `currency` — string. Валюта.
   - `description_category_id` — integer<int64>. Идентификатор категории. Используйте его с методами [/v1/description-category/attribute](#operation/DescriptionCategoryAPI_GetAttributes) и [/v1/description-category/attribute/values](#operation/DescriptionCategoryAPI_GetAttributeValues).
   - `discounted_fbo_stocks` — integer<int32>. Остатки уценённого товара на складе Ozon.
   - `errors` — array[object]. Информация об ошибках при создании или валидации товара.

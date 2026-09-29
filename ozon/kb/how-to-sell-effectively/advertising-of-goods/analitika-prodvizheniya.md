@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /how-to-sell-effectively/advertising-of-goods/analitika-prodvizheniya
 source: "https://seller-edu.ozon.ru/libra/how-to-sell-effectively/advertising-of-goods/analitika-prodvizheniya"
-updated: "2026-09-14 11:01:10"
+updated: "2026-09-28 15:04:34"
 doc_id: 14111
-fetched_at: "2026-09-16T02:21:46Z"
-content_sha: 1b617a50d03ebe38
+fetched_at: "2026-09-29T02:06:17Z"
+content_sha: ec93f5943858f7cf
 ---
 
 # «Аналитика продвижения»
@@ -162,5 +162,7 @@ _Главная / Продвижение / Продвижение товаров
 Statistics — показатели только по продвигаемым товарам.
 
 Union — показатели по товарам из объединённой карточки.
+
+# Видео
 
 # Что ещё полезно знать

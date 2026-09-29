@@ -6,8 +6,8 @@ path: /fbo/gruzomesta-i-podgotovka-k-otgruzke
 source: "https://seller-edu.ozon.ru/libra/fbo/gruzomesta-i-podgotovka-k-otgruzke"
 updated: "2026-05-07 10:46:30"
 doc_id: 69766
-fetched_at: "2026-08-28T12:11:14Z"
-content_sha: 561a1e361524b3cd
+fetched_at: "2026-09-29T02:06:16Z"
+content_sha: 614742d7d5760761
 ---
 
 # Грузоместа и подготовка к отгрузке
@@ -24,4 +24,3 @@ _Главная / Продажа со склада Ozon (FBO)_
 - [Отправка товаров на точку отгрузки](https://seller-edu.ozon.ru/libra/fbo/gruzomesta-i-podgotovka-k-otgruzke/bring-products-to-warehouse)
 - [Проверка результатов приёмки](https://seller-edu.ozon.ru/libra/fbo/gruzomesta-i-podgotovka-k-otgruzke/check-supply-status)
 - [Видеофиксация на складе продавца](https://seller-edu.ozon.ru/libra/fbo/gruzomesta-i-podgotovka-k-otgruzke/videofiksatsiya-na-sklade)
-- [Вопросы и ответы о грузоместах и сроках годности](https://seller-edu.ozon.ru/libra/fbo/gruzomesta-i-podgotovka-k-otgruzke/voprosy-i-otvety-o-gruzomestah-i-srokah-godnosti)

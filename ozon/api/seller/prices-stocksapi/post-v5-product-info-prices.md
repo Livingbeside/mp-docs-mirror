@@ -9,7 +9,7 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: 4c94cb8cd467f347
+content_sha: 9adc168824431b40
 ---
 
 # Получить информацию о цене товара
@@ -75,6 +75,9 @@ content_sha: 4c94cb8cd467f347
     - `auto_action_enabled` — boolean. `true`, если автоприменение акций у товара включено.
     - `auto_add_to_ozon_actions_list_enabled` — boolean. `true`, если автодобавление товара в акции включено.
     - `currency_code` — string. Валюта ваших цен. Совпадает с валютой, которая установлена в настройках личного кабинета. Возможные значения: - `RUB` — российский рубль, - `BYN` — белорусский рубль, - `KZT` — тенге, - `EUR` — евро, - `USD` — доллар США, - `CNY` — юань.
+    - `declared_price` — object. Объявленная стоимость товара. [Подробнее об объявленной стоимости товара в Базе знаний продавца](https://seller-edu.ozon.ru/libra/ceny-i-akcii/rabota-s-cenami/price-control#объявленная-стоимость)
+      - `amount` — string. Сумма.
+      - `currency` — string. Валюта.
     - `marketing_seller_price` — number<double>. Предельная цена товара с учётом акций продавца, не учитывает дополнительную скидку от Ozon. Выше этого значения цену для покупателя не поднимем.
     - `min_price` — number<double>. Нижний порог предельной цены товара. Действует при автоприменении акций, автодобавлении товара в акции и в стратегиях ценообразования. Покупатели не видят это значение.
     - `net_price` — number<double>. Себестоимость товара.

@@ -5,12 +5,20 @@ tag: News
 group: Обновления
 kind: changelog
 source: "https://docs.ozon.ru/api/seller/"
-content_sha: 56e86de858498eef
+content_sha: 696424231c825d64
 ---
 
 # Обновления
 
 Следите за обновлениями документации на платформе для разработчиков [Ozon for dev](https://dev.ozon.ru/).
+
+## 28 сентября 2026
+
+| Метод | Изменение |
+|-------------------------------------------------------------------------|----------------------------------------------------------------|
+| [/v5/product/info/prices](#operation/ProductAPI_GetProductInfoPrices) | Добавили параметр `items.price.declared_price` в ответ метода. |
+| [/v3/product/info/list](#operation/ProductAPI_GetProductInfoList) | Добавили параметр `items.declared_price` в ответ метода. |
+| [/v1/product/import/prices](#operation/ProductAPI_ImportProductsPrices) | Добавили параметр `prices.declared_price` в запрос метода. |
 
 ## 25 сентября 2026
 

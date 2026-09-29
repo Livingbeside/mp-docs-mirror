@@ -9,7 +9,7 @@ tags:
 spec_version: analytics
 source: "https://dev.wildberries.ru/docs/openapi/analytics"
 deprecated: false
-content_sha: b241a0e69bfcbe04
+content_sha: 42fca1a48643f400
 ---
 
 # Создать отчёт
@@ -54,7 +54,7 @@ content_sha: b241a0e69bfcbe04
 **Тело запроса** (`application/json`):
 
 - `id` — string<uuid> **обязательный**. ID отчёта в UUID-формате. Генерируется продавцом самостоятельно
-- `reportType` — string **обязательный**. Тип отчёта `DETAIL_HISTORY_REPORT` — Воронка продаж. По артикулам WB
+- `reportType` — string **обязательный**. Тип отчёта `DETAIL_HISTORY_REPORT` — Воронка продаж. По артикулам WB. Данные отчёта обновляются 1 раз в 2 часа.
 - `userReportName` — string. Название отчёта. Если не указано, сформируется автоматически
 - `params` — object **обязательный**. Параметры отчёта
   - `nmIDs` — array[integer<int64>]. Артикулы WB, по которым составить отчёт. Оставьте пустым, чтобы получить отчёт обо всех товарах
@@ -67,7 +67,7 @@ content_sha: b241a0e69bfcbe04
   - `aggregationLevel` — string (day, week, month). Как сгруппировать данные (по умолчанию по дням): * `day` — по дням * `week` — по неделям * `month` — по месяцам
   - `skipDeletedNm` — boolean. Скрыть удалённые товары
 - `id` — string<uuid> **обязательный**. ID отчёта в UUID-формате. Генерируется продавцом самостоятельно
-- `reportType` — string **обязательный**. Тип отчёта `GROUPED_HISTORY_REPORT` — Воронка продаж. По предметам, брендам и ярлыкам
+- `reportType` — string **обязательный**. Тип отчёта `GROUPED_HISTORY_REPORT` — Воронка продаж. По предметам, брендам и ярлыкам. Данные отчёта обновляются 1 раз в 2 часа.
 - `userReportName` — string. Название отчёта. Если не указано, сформируется автоматически
 - `params` — object **обязательный**. Параметры отчёта
   - `subjectIds` — array[integer<int32>]. Список ID предметов для фильтрации

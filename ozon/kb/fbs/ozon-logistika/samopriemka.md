@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /fbs/ozon-logistika/samopriemka
 source: "https://seller-edu.ozon.ru/libra/fbs/ozon-logistika/samopriemka"
-updated: "2026-09-24 12:45:11"
+updated: "2026-09-28 11:47:08"
 doc_id: 1780
-fetched_at: "2026-09-25T02:13:05Z"
-content_sha: 0054752640f21645
+fetched_at: "2026-09-29T02:06:17Z"
+content_sha: c09a016b3f0bbf54
 ---
 
 # Самоприёмка отправлений
@@ -71,6 +71,8 @@ _Главная / Продажа со своего склада (FBS) / Отгр
 [Великий Новгород — Нехинская (СЦ)](/fbs/punkty-priema/regiony#%D0%B2%D0%B5%D0%BB%D0%B8%D0%BA%D0%B8%D0%B8-%D0%BD%D0%BE%D0%B2%D0%B3%D0%BE%D1%80%D0%BE%D0%B4-%D0%BD%D0%B5%D1%85%D0%B8%D0%BD%D1%81%D0%BA%D0%B0%D1%8F-%D1%81%D1%86)
 
 [Владивосток — Надежинское (СЦ)](https://seller-edu.ozon.ru/fbs/punkty-priema/regiony#владивосток-надежинское-сц)
+
+[Владикавказ — Промышленная (СЦ)](https://seller-edu.ozon.ru/libra/fbs/punkty-priema/regiony#%D0%B2%D0%BB%D0%B0%D0%B4%D0%B8%D0%BA%D0%B0%D0%B2%D0%BA%D0%B0%D0%B7-%D0%BF%D1%80%D0%BE%D0%BC%D1%8B%D1%88%D0%BB%D0%B5%D0%BD%D0%BD%D0%B0%D1%8F-%D1%81%D1%86)
 
 [Владимир — Мещёрская (СЦ)](https://seller-edu.ozon.ru/fbs/punkty-priema/regiony#владимир-мещёрская-сц-1)
 

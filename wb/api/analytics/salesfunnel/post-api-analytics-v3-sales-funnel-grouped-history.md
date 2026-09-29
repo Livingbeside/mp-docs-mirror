@@ -9,7 +9,7 @@ tags:
 spec_version: analytics
 source: "https://dev.wildberries.ru/docs/openapi/analytics"
 deprecated: false
-content_sha: af9f383ef0462ced
+content_sha: b9e7b7a672f4c91f
 ---
 
 # Статистика групп карточек товаров по дням
@@ -24,7 +24,7 @@ content_sha: af9f383ef0462ced
 
 Можно получить данные максимум за последнюю неделю.
 
-Данные отчёта обновляются 1 раз в час.
+Данные отчёта обновляются 1 раз в 2 часа.
 
 В течение часа после события появляется большая часть данных:
  - о заказах
