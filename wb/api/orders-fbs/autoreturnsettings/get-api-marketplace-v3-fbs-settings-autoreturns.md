@@ -3,13 +3,13 @@ title: Получить настройки автовозврата продав
 api: wb-orders-fbs
 method: GET
 path: /api/marketplace/v3/fbs/settings/autoreturns
-operation_id: getMarketplaceV3FbsSettingsAutoreturns
+operation_id: getV3FbsSettingsAutoreturns
 tags:
   - autoreturnSettings
 spec_version: order
 source: "https://dev.wildberries.ru/docs/openapi/orders-fbs"
 deprecated: false
-content_sha: 7ff0d7cc4f50ba66
+content_sha: b31e9a839b41e404
 ---
 
 # Получить настройки автовозврата продавца
@@ -19,7 +19,9 @@ content_sha: 7ff0d7cc4f50ba66
 Описание метода
 
  Метод [доступен](./api-information#tag/authorization/Pravila-ispolzovaniya-tokenov-dostupa-k-API) по
- Персональному токену
+ Персональному токену, 
+ Сервисному токену, 
+ Базовому токену с секретом
 
 Метод возвращает информацию о настройках автовозврата, установленных продавцом.
 
@@ -35,7 +37,7 @@ content_sha: 7ff0d7cc4f50ba66
 
 **200** — Успешно
 
-- `type` — string (allToWarehouse, allToPickupPoint, manual) **обязательный**. Тип автовозврата: - `allToWarehouse` — все товары отправляются на склад WB, кроме товаров тех [предметов](/openapi/orders-fbs#tag/autoreturnSettings/operation/getMarketplaceV3FbsSettingsAutoreturnsSubcategoriesRestricted), которые автоматически возвращаются в ПВЗ - `allToPickupPoint` — все товары отправляются на пункт выдачи заказов - `manual` — используются ручные настройки
+- `type` — string (allToWarehouse, allToPickupPoint, manual) **обязательный**. Тип автовозврата: - `allToWarehouse` — все товары отправляются на склад WB, кроме товаров тех [предметов](/openapi/orders-fbs#tag/autoreturnSettings/operation/getV3FbsSettingsAutoreturnsSubcategoriesRestricted), которые автоматически возвращаются в ПВЗ - `allToPickupPoint` — все товары отправляются на пункт выдачи заказов - `manual` — используются ручные настройки
 
 **401** — Не авторизован
 

@@ -4,8 +4,8 @@ api: wildberries
 kind: changelog
 source: "https://dev.wildberries.ru/release-notes"
 window: последние записи, страница отдаёт не всю историю
-fetched_at: "2026-09-29T02:09:13Z"
-content_sha: 635175d040870b42
+fetched_at: "2026-09-30T02:21:43Z"
+content_sha: 24c4777c475dd2c4
 ---
 
 # Журнал изменений WB API
@@ -117,7 +117,7 @@ content_sha: 635175d040870b42
 
 Новая версия отчёта по возвратам и перемещению товаров
 
-Добавили новую версию метода получения отчёта **Возврат и перемещение товаров** — [GET /api/analytics/v1/goods-return](/docs/openapi/reports#tag/returnsAndItemMovementReport/operation/getAnalyticsV1GoodsReturn). C её помощью вы можете получать данные как по активным, так и по архивным возвратам за любой период времени.
+Добавили новую версию метода получения отчёта **Возврат и перемещение товаров** — [GET /api/analytics/v1/goods-return](/docs/openapi/reports#tag/returnsAndItemMovementReport/operation/getV1GoodsReturn). C её помощью вы можете получать данные как по активным, так и по архивным возвратам за любой период времени.
 
 В новом методе:
 
@@ -126,7 +126,7 @@ content_sha: 635175d040870b42
 
 Метод доступен по [токену](/docs/openapi/api-information#tag/authorization) любого типа для категории **Аналитика**.
 
-Текущий метод [GET /api/v1/analytics/goods-return](/docs/openapi/reports/#tag/returnsAndItemMovementReport/operation/getV1AnalyticsGoodsReturn) будет отключен **26 октября**.
+Текущий метод [GET /api/v1/analytics/goods-return](/docs/openapi/reports/#tag/returnsAndItemMovementReport/operation/getV1GoodsReturn) будет отключен **26 октября**.
 
 Новое
 
@@ -376,7 +376,7 @@ content_sha: 635175d040870b42
 
 Новый отчёт по остаткам на складах продавца
 
-Добавили отчёт по остаткам на складах продавца — [POST /api/analytics/v1/stocks-report/seller-warehouses](/docs/openapi/analytics#tag/stocksReport/operation/postAnalyticsV1StocksReportSellerWarehouses).
+Добавили отчёт по остаткам на складах продавца — [POST /api/analytics/v1/stocks-report/seller-warehouses](/docs/openapi/analytics#tag/stocksReport/operation/postV1StocksReportSellerWarehouses).
 
 Используйте новый отчёт вместо метода [POST /api/v3/stocks/{warehouseId}](/docs/openapi/work-with-products#tag/sellerWarehousesInventory/operation/postV3StocksWarehouseId), чтобы получить остатки без указания ID складов продавца и ID размеров в запросе.
 
@@ -548,4 +548,4 @@ DBS
 
 Метод доступен по [токену](/docs/openapi/api-information#tag/authorization) любого типа для категории **Аналитика**.
 
-Мы используем [cookies](/privacy) для сбора статистики и улучшения сервиса
+Мы используем [cookies](https://legal.wildberries.ru/privacypolicy/country/ru/lang/ru/#anchor-7), чтобы анализировать, как вы пользуетесь сайтом, и улучшать его

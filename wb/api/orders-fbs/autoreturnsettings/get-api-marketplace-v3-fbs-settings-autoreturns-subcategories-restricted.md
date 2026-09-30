@@ -3,13 +3,13 @@ title: Получить предметы, которые не хранятся �
 api: wb-orders-fbs
 method: GET
 path: /api/marketplace/v3/fbs/settings/autoreturns/subcategories/restricted
-operation_id: getMarketplaceV3FbsSettingsAutoreturnsSubcategoriesRestricted
+operation_id: getV3FbsSettingsAutoreturnsSubcategoriesRestricted
 tags:
   - autoreturnSettings
 spec_version: order
 source: "https://dev.wildberries.ru/docs/openapi/orders-fbs"
 deprecated: false
-content_sha: 866ecdaadffc7974
+content_sha: 3c23eee642599e6a
 ---
 
 # Получить предметы, которые не хранятся на складах WB
@@ -19,7 +19,9 @@ content_sha: 866ecdaadffc7974
 Описание метода
 
  Метод [доступен](./api-information#tag/authorization/Pravila-ispolzovaniya-tokenov-dostupa-k-API) по
- Персональному токену
+ Персональному токену, 
+ Сервисному токену, 
+ Базовому токену с секретом
 
 Метод возвращает список ID предметов, товары которых не могут храниться на складах WB и будут возвращены в ПВЗ автоматически.
 

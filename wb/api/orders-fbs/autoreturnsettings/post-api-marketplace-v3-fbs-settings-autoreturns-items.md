@@ -3,13 +3,13 @@ title: Получить настройки автовозврата товаро
 api: wb-orders-fbs
 method: POST
 path: /api/marketplace/v3/fbs/settings/autoreturns/items
-operation_id: postMarketplaceV3FbsSettingsAutoreturnsItems
+operation_id: postV3FbsSettingsAutoreturnsItems
 tags:
   - autoreturnSettings
 spec_version: order
 source: "https://dev.wildberries.ru/docs/openapi/orders-fbs"
 deprecated: false
-content_sha: 4068f925838cf04c
+content_sha: b4f97ae3f648a55a
 ---
 
 # Получить настройки автовозврата товаров
@@ -19,7 +19,9 @@ content_sha: 4068f925838cf04c
 Описание метода
 
  Метод [доступен](./api-information#tag/authorization/Pravila-ispolzovaniya-tokenov-dostupa-k-API) по
- Персональному токену
+ Персональному токену, 
+ Сервисному токену, 
+ Базовому токену с секретом
 
 Метод возвращает настройки автовозврата товаров.
 
@@ -44,7 +46,7 @@ content_sha: 4068f925838cf04c
 - `results` — array[object] **обязательный**
   - `success` — boolean. - `true` — настройки автовозврата товара успешно получены
   - `chrtId` — integer<uint64> **обязательный**. ID размера товара в системе WB
-  - `type` — string (auto, byWarehouse, byPickupPoint, byCourier). Куда будет возвращён товар: - `auto` — место возврата определяется автоматически - `byWarehouse` — на склад WB - `byPickupPoint` — на пункт выдачи заказов - `byCourier` — продавцу курьером. Всегда для товаров тех [предметов](/openapi/orders-fbs#tag/autoreturnSettings/operation/getMarketplaceV3FbsSettingsAutoreturnsSubcategoriesRestricted), которые автоматически возвращаются в ПВЗ
+  - `type` — string (auto, byWarehouse, byPickupPoint, byCourier). Куда будет возвращён товар: - `auto` — место возврата определяется автоматически - `byWarehouse` — на склад WB - `byPickupPoint` — на пункт выдачи заказов - `byCourier` — продавцу курьером. Всегда для товаров тех [предметов](/openapi/orders-fbs#tag/autoreturnSettings/operation/getV3FbsSettingsAutoreturnsSubcategoriesRestricted), которые автоматически возвращаются в ПВЗ
   - `changeable` — boolean. - `true` — настройки автовозврата товара можно изменить
   - `error` — array[object]. Детали ошибки
     - `code` — integer **обязательный**. Код ошибки

@@ -3,13 +3,13 @@ title: Обновить настройки автовозврата товаро
 api: wb-orders-fbs
 method: PATCH
 path: /api/marketplace/v3/fbs/settings/autoreturns/items
-operation_id: patchMarketplaceV3FbsSettingsAutoreturnsItems
+operation_id: patchV3FbsSettingsAutoreturnsItems
 tags:
   - autoreturnSettings
 spec_version: order
 source: "https://dev.wildberries.ru/docs/openapi/orders-fbs"
 deprecated: false
-content_sha: 3db29a07125c5813
+content_sha: 0b7531125a19952d
 ---
 
 # Обновить настройки автовозврата товаров
@@ -19,7 +19,9 @@ content_sha: 3db29a07125c5813
 Описание метода
 
  Метод [доступен](./api-information#tag/authorization/Pravila-ispolzovaniya-tokenov-dostupa-k-API) по
- Персональному токену
+ Персональному токену, 
+ Сервисному токену, 
+ Базовому токену с секретом
 
 Метод устанавливает настройки автовозврата малогабаритных товаров — `"cargoType":1`.
 

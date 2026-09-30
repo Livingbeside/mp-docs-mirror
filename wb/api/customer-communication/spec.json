@@ -1729,8 +1729,8 @@
   "paths": {
     "/api/feedbacks/v1/pins": {
       "delete": {
-        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод позволяет открепить отзывы в карточке товара или в группе [объединённых](/knowledge-base/articles/019d49a4-1320-71bb-9dac-8ba07e7177ce/rabota-s-tovarami#obuedinenie-i-razuedinenie-kartochek-tovarov) карточек.<br>\nЧтобы получить `pinId` — ID операций закрепления, используйте метод [Список закреплённых и откреплённых отзывов](./customer-communication#tag/pinnedFeedbacks/operation/getFeedbacksV1Pins).<br>\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца для всех методов категории <strong>Вопросы и отзывы</strong>:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 сек | 3 запроса | 333 мс | 6 запросов |\n| Сервисный | 1 сек | 3 запроса | 333 мс | 6 запросов |\n| Базовый с секретом | 1 сек | 3 запроса | 333 мс | 6 запросов |\n| Базовый | 1 ч | 5 запросов | 12 мин | 1 запрос |\n</div>\n",
-        "operationId": "deleteFeedbacksV1Pins",
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод позволяет открепить отзывы в карточке товара или в группе [объединённых](/knowledge-base/articles/019d49a4-1320-71bb-9dac-8ba07e7177ce/rabota-s-tovarami#obuedinenie-i-razuedinenie-kartochek-tovarov) карточек.<br>\nЧтобы получить `pinId` — ID операций закрепления, используйте метод [Список закреплённых и откреплённых отзывов](./customer-communication#tag/pinnedFeedbacks/operation/getV1Pins).<br>\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца для всех методов категории <strong>Вопросы и отзывы</strong>:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 сек | 3 запроса | 333 мс | 6 запросов |\n| Сервисный | 1 сек | 3 запроса | 333 мс | 6 запросов |\n| Базовый с секретом | 1 сек | 3 запроса | 333 мс | 6 запросов |\n| Базовый | 1 ч | 5 запросов | 12 мин | 1 запрос |\n</div>\n",
+        "operationId": "deleteV1Pins",
         "requestBody": {
           "content": {
             "application/json": {
@@ -1827,7 +1827,7 @@
       },
       "get": {
         "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод предоставляет список закреплённых и откреплённых отзывов.\n<br>\nОткреплёнными считаются только отзывы, которые были откреплены автоматически по причинам, указанным в ответе в поле `unpinnedCause`.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца для всех методов категории <strong>Вопросы и отзывы</strong>:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 сек | 3 запроса | 333 мс | 6 запросов |\n| Сервисный | 1 сек | 3 запроса | 333 мс | 6 запросов |\n| Базовый с секретом | 1 сек | 3 запроса | 333 мс | 6 запросов |\n| Базовый | 1 ч | 5 запросов | 12 мин | 1 запрос |\n</div>\n",
-        "operationId": "getFeedbacksV1Pins",
+        "operationId": "getV1Pins",
         "parameters": [
           {
             "description": "Закреплён ли отзыв:\n  - `pinned` — да\n  - `unpinned` — нет\n",
@@ -1997,8 +1997,8 @@
         "x-readonly-method": true
       },
       "post": {
-        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод позволяет закрепить отзывы в карточке товара или в группе [объединённых](/knowledge-base/articles/019d49a4-1320-71bb-9dac-8ba07e7177ce/rabota-s-tovarami#obuedinenie-i-razuedinenie-kartochek-tovarov) карточек. <br>\nЧтобы получить ID отзывов, используйте метод [Список закреплённых и откреплённых отзывов](./customer-communication#tag/pinnedFeedbacks/operation/getFeedbacksV1Pins).<br>\n<br>\nМетод доступен по [подписке Джем](https://seller.wildberries.ru/monetization/jam) или c [тарифной опцией](https://seller.wildberries.ru/tariff-constructor) **Закрепление отзыва**.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца для всех методов категории <strong>Вопросы и отзывы</strong>:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 сек | 3 запроса | 333 мс | 6 запросов |\n| Сервисный | 1 сек | 3 запроса | 333 мс | 6 запросов |\n| Базовый с секретом | 1 сек | 3 запроса | 333 мс | 6 запросов |\n| Базовый | 1 ч | 5 запросов | 12 мин | 1 запрос |\n</div>\n",
-        "operationId": "postFeedbacksV1Pins",
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод позволяет закрепить отзывы в карточке товара или в группе [объединённых](/knowledge-base/articles/019d49a4-1320-71bb-9dac-8ba07e7177ce/rabota-s-tovarami#obuedinenie-i-razuedinenie-kartochek-tovarov) карточек. <br>\nЧтобы получить ID отзывов, используйте метод [Список закреплённых и откреплённых отзывов](./customer-communication#tag/pinnedFeedbacks/operation/getV1Pins).<br>\n<br>\nМетод доступен по [подписке Джем](https://seller.wildberries.ru/monetization/jam) или c [тарифной опцией](https://seller.wildberries.ru/tariff-constructor) **Закрепление отзыва**.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца для всех методов категории <strong>Вопросы и отзывы</strong>:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 сек | 3 запроса | 333 мс | 6 запросов |\n| Сервисный | 1 сек | 3 запроса | 333 мс | 6 запросов |\n| Базовый с секретом | 1 сек | 3 запроса | 333 мс | 6 запросов |\n| Базовый | 1 ч | 5 запросов | 12 мин | 1 запрос |\n</div>\n",
+        "operationId": "postV1Pins",
         "requestBody": {
           "content": {
             "application/json": {
@@ -2118,7 +2118,7 @@
     "/api/feedbacks/v1/pins/count": {
       "get": {
         "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод возвращает количество закреплённых и откреплённых отзывов за заданный период.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца для всех методов категории <strong>Вопросы и отзывы</strong>:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 сек | 3 запроса | 333 мс | 6 запросов |\n| Сервисный | 1 сек | 3 запроса | 333 мс | 6 запросов |\n| Базовый с секретом | 1 сек | 3 запроса | 333 мс | 6 запросов |\n| Базовый | 1 ч | 5 запросов | 12 мин | 1 запрос |\n</div>\n",
-        "operationId": "getFeedbacksV1PinsCount",
+        "operationId": "getV1PinsCount",
         "parameters": [
           {
             "description": "Закреплён ли отзыв:\n  - `pinned` — да\n  - `unpinned` — нет\n",
@@ -2269,7 +2269,7 @@
     "/api/feedbacks/v1/pins/limits": {
       "get": {
         "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод возвращает лимиты закреплённых отзывов по тарифу и подписке.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца для всех методов категории <strong>Вопросы и отзывы</strong>:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 сек | 3 запроса | 333 мс | 6 запросов |\n| Сервисный | 1 сек | 3 запроса | 333 мс | 6 запросов |\n| Базовый с секретом | 1 сек | 3 запроса | 333 мс | 6 запросов |\n| Базовый | 1 ч | 5 запросов | 12 мин | 1 запрос |\n</div>\n",
-        "operationId": "getFeedbacksV1PinsLimits",
+        "operationId": "getV1PinsLimits",
         "responses": {
           "200": {
             "content": {
@@ -5584,7 +5584,7 @@
       "x-displayName": "Отзывы"
     },
     {
-      "description": "<div class=\"description_auth\">\n  Для доступа к методам используйте <a href=\"./api-information#tag/authorization\">токен</a> для категории <strong>Вопросы и отзывы</strong>\n</div>\n\n<div class=\"description_important\">\n  Узнать больше о закреплённых отзывах можно в <a href=\"https://seller.wildberries.ru/instructions/ru/ru/material/pinned-reviews?categoryId=3c971375-9939-45e8-ab82-376019be8942&goBackOption=prevRoute\">справочном центре</a>\n</div>\n\nС помощью этих методов вы можете:\n  1. [Получить список закреплённых и откреплённых отзывов](./customer-communication#tag/pinnedFeedbacks/operation/getFeedbacksV1Pins)\n  2. [Закрепить отзывы](./customer-communication#tag/pinnedFeedbacks/operation/postFeedbacksV1Pins). Метод доступен по [подписке Джем](https://seller.wildberries.ru/monetization/jam) или c [тарифной опцией](https://seller.wildberries.ru/tariff-constructor) **Закрепление отзыва**\n  3. [Открепить отзывы](./customer-communication#tag/pinnedFeedbacks/operation/deleteFeedbacksV1Pins)\n  4. [Получить количество закреплённых и откреплённых отзывов](./customer-communication#tag/pinnedFeedbacks/operation/getFeedbacksV1PinsCount)\n  5. [Получить лимиты закреплённых отзывов по подписке и тарифной опции](./customer-communication#tag/pinnedFeedbacks/operation/getFeedbacksV1PinsLimits)\n",
+      "description": "<div class=\"description_auth\">\n  Для доступа к методам используйте <a href=\"./api-information#tag/authorization\">токен</a> для категории <strong>Вопросы и отзывы</strong>\n</div>\n\n<div class=\"description_important\">\n  Узнать больше о закреплённых отзывах можно в <a href=\"https://seller.wildberries.ru/instructions/ru/ru/material/pinned-reviews?categoryId=3c971375-9939-45e8-ab82-376019be8942&goBackOption=prevRoute\">справочном центре</a>\n</div>\n\nС помощью этих методов вы можете:\n  1. [Получить список закреплённых и откреплённых отзывов](./customer-communication#tag/pinnedFeedbacks/operation/getV1Pins)\n  2. [Закрепить отзывы](./customer-communication#tag/pinnedFeedbacks/operation/postV1Pins). Метод доступен по [подписке Джем](https://seller.wildberries.ru/monetization/jam) или c [тарифной опцией](https://seller.wildberries.ru/tariff-constructor) **Закрепление отзыва**\n  3. [Открепить отзывы](./customer-communication#tag/pinnedFeedbacks/operation/deleteV1Pins)\n  4. [Получить количество закреплённых и откреплённых отзывов](./customer-communication#tag/pinnedFeedbacks/operation/getV1PinsCount)\n  5. [Получить лимиты закреплённых отзывов по подписке и тарифной опции](./customer-communication#tag/pinnedFeedbacks/operation/getV1PinsLimits)\n",
       "name": "pinnedFeedbacks",
       "x-displayName": "Закреплённые отзывы"
     },

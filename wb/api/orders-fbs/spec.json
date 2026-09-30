@@ -2647,8 +2647,8 @@
     },
     "/api/marketplace/v3/fbs/settings/autoreturns": {
       "get": {
-        "description": "<div class='description-title'><span>Описание метода</span></div>\n\n<div class=\"description_token\">\n    Метод <a href=\"./api-information#tag/authorization/Pravila-ispolzovaniya-tokenov-dostupa-k-API\">доступен</a> по\n        <strong>Персональному</strong> токену\n</div>\n\nМетод возвращает информацию о настройках автовозврата, установленных продавцом.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца для методов <strong>сборочных заданий, поставок, пропусков и настроек автовозврата FBS</strong>:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 300 запросов | 200 мс | 20 запросов |\n\nОдин запрос с кодами ответов <code>4XX</code> учитывается как 10 запросов\n\n</div>\n",
-        "operationId": "getMarketplaceV3FbsSettingsAutoreturns",
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\n\n<div class=\"description_token\">\n    Метод <a href=\"./api-information#tag/authorization/Pravila-ispolzovaniya-tokenov-dostupa-k-API\">доступен</a> по\n        <strong>Персональному</strong> токену, \n        <strong>Сервисному</strong> токену, \n        <strong>Базовому</strong> токену <strong>с секретом</strong>\n</div>\n\nМетод возвращает информацию о настройках автовозврата, установленных продавцом.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца для методов <strong>сборочных заданий, поставок, пропусков и настроек автовозврата FBS</strong>:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 300 запросов | 200 мс | 20 запросов |\n\nОдин запрос с кодами ответов <code>4XX</code> учитывается как 10 запросов\n\n</div>\n",
+        "operationId": "getV3FbsSettingsAutoreturns",
         "responses": {
           "200": {
             "content": {
@@ -2656,7 +2656,7 @@
                 "schema": {
                   "properties": {
                     "type": {
-                      "description": "Тип автовозврата:\n  - `allToWarehouse` — все товары отправляются на склад WB, кроме товаров тех [предметов](/openapi/orders-fbs#tag/autoreturnSettings/operation/getMarketplaceV3FbsSettingsAutoreturnsSubcategoriesRestricted), которые автоматически возвращаются в ПВЗ\n  - `allToPickupPoint` — все товары отправляются на пункт выдачи заказов\n  - `manual` — используются ручные настройки\n",
+                      "description": "Тип автовозврата:\n  - `allToWarehouse` — все товары отправляются на склад WB, кроме товаров тех [предметов](/openapi/orders-fbs#tag/autoreturnSettings/operation/getV3FbsSettingsAutoreturnsSubcategoriesRestricted), которые автоматически возвращаются в ПВЗ\n  - `allToPickupPoint` — все товары отправляются на пункт выдачи заказов\n  - `manual` — используются ручные настройки\n",
                       "enum": [
                         "allToWarehouse",
                         "allToPickupPoint",
@@ -2713,19 +2713,21 @@
         "x-category": "marketplace",
         "x-readonly-method": true,
         "x-token-types": [
-          "personal"
+          "personal",
+          "service",
+          "base-with-secret"
         ]
       },
       "patch": {
-        "description": "<div class='description-title'><span>Описание метода</span></div>\n\n<div class=\"description_token\">\n    Метод <a href=\"./api-information#tag/authorization/Pravila-ispolzovaniya-tokenov-dostupa-k-API\">доступен</a> по\n        <strong>Персональному</strong> токену\n</div>\n\nМетод устанавливает настройки автовозврата продавца для малогабаритных товаров — `\"cargoType\":1`.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца для методов <strong>сборочных заданий, поставок, пропусков и настроек автовозврата FBS</strong>:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 300 запросов | 200 мс | 20 запросов |\n\nОдин запрос с кодами ответов <code>4XX</code> учитывается как 10 запросов\n\n</div>\n",
-        "operationId": "patchMarketplaceV3FbsSettingsAutoreturns",
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\n\n<div class=\"description_token\">\n    Метод <a href=\"./api-information#tag/authorization/Pravila-ispolzovaniya-tokenov-dostupa-k-API\">доступен</a> по\n        <strong>Персональному</strong> токену, \n        <strong>Сервисному</strong> токену, \n        <strong>Базовому</strong> токену <strong>с секретом</strong>\n</div>\n\nМетод устанавливает настройки автовозврата продавца для малогабаритных товаров — `\"cargoType\":1`.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца для методов <strong>сборочных заданий, поставок, пропусков и настроек автовозврата FBS</strong>:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 300 запросов | 200 мс | 20 запросов |\n\nОдин запрос с кодами ответов <code>4XX</code> учитывается как 10 запросов\n\n</div>\n",
+        "operationId": "patchV3FbsSettingsAutoreturns",
         "requestBody": {
           "content": {
             "application/json": {
               "schema": {
                 "properties": {
                   "type": {
-                    "description": "Тип автовозврата малогабаритных товаров:\n  - `allToWarehouse` — отправлять все товары на склад WB, кроме товаров тех [предметов](/openapi/orders-fbs#tag/autoreturnSettings/operation/getMarketplaceV3FbsSettingsAutoreturnsSubcategoriesRestricted), которые автоматически возвращаются в ПВЗ\n  - `allToPickupPoint` — отправлять все товары на пункт выдачи заказов\n  - `manual` — использовать ручные настройки\n",
+                    "description": "Тип автовозврата малогабаритных товаров:\n  - `allToWarehouse` — отправлять все товары на склад WB, кроме товаров тех [предметов](/openapi/orders-fbs#tag/autoreturnSettings/operation/getV3FbsSettingsAutoreturnsSubcategoriesRestricted), которые автоматически возвращаются в ПВЗ\n  - `allToPickupPoint` — отправлять все товары на пункт выдачи заказов\n  - `manual` — использовать ручные настройки\n",
                     "enum": [
                       "allToWarehouse",
                       "allToPickupPoint",
@@ -2799,7 +2801,9 @@
         "x-category": "marketplace",
         "x-readonly-method": false,
         "x-token-types": [
-          "personal"
+          "personal",
+          "service",
+          "base-with-secret"
         ]
       },
       "servers": [
@@ -2811,8 +2815,8 @@
     },
     "/api/marketplace/v3/fbs/settings/autoreturns/items": {
       "patch": {
-        "description": "<div class='description-title'><span>Описание метода</span></div>\n\n<div class=\"description_token\">\n    Метод <a href=\"./api-information#tag/authorization/Pravila-ispolzovaniya-tokenov-dostupa-k-API\">доступен</a> по\n        <strong>Персональному</strong> токену\n</div>\n\nМетод устанавливает настройки автовозврата малогабаритных товаров — `\"cargoType\":1`.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца для методов <strong>сборочных заданий, поставок, пропусков и настроек автовозврата FBS</strong>:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 300 запросов | 200 мс | 20 запросов |\n\nОдин запрос с кодами ответов <code>4XX</code> учитывается как 10 запросов\n\n</div>\n",
-        "operationId": "patchMarketplaceV3FbsSettingsAutoreturnsItems",
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\n\n<div class=\"description_token\">\n    Метод <a href=\"./api-information#tag/authorization/Pravila-ispolzovaniya-tokenov-dostupa-k-API\">доступен</a> по\n        <strong>Персональному</strong> токену, \n        <strong>Сервисному</strong> токену, \n        <strong>Базовому</strong> токену <strong>с секретом</strong>\n</div>\n\nМетод устанавливает настройки автовозврата малогабаритных товаров — `\"cargoType\":1`.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца для методов <strong>сборочных заданий, поставок, пропусков и настроек автовозврата FBS</strong>:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 300 запросов | 200 мс | 20 запросов |\n\nОдин запрос с кодами ответов <code>4XX</code> учитывается как 10 запросов\n\n</div>\n",
+        "operationId": "patchV3FbsSettingsAutoreturnsItems",
         "requestBody": {
           "content": {
             "application/json": {
@@ -2978,12 +2982,14 @@
         "x-category": "marketplace",
         "x-readonly-method": false,
         "x-token-types": [
-          "personal"
+          "personal",
+          "service",
+          "base-with-secret"
         ]
       },
       "post": {
-        "description": "<div class='description-title'><span>Описание метода</span></div>\n\n<div class=\"description_token\">\n    Метод <a href=\"./api-information#tag/authorization/Pravila-ispolzovaniya-tokenov-dostupa-k-API\">доступен</a> по\n        <strong>Персональному</strong> токену\n</div>\n\nМетод возвращает настройки автовозврата товаров.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца для методов <strong>сборочных заданий, поставок, пропусков и настроек автовозврата FBS</strong>:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 300 запросов | 200 мс | 20 запросов |\n\nОдин запрос с кодами ответов <code>4XX</code> учитывается как 10 запросов\n\n</div>\n",
-        "operationId": "postMarketplaceV3FbsSettingsAutoreturnsItems",
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\n\n<div class=\"description_token\">\n    Метод <a href=\"./api-information#tag/authorization/Pravila-ispolzovaniya-tokenov-dostupa-k-API\">доступен</a> по\n        <strong>Персональному</strong> токену, \n        <strong>Сервисному</strong> токену, \n        <strong>Базовому</strong> токену <strong>с секретом</strong>\n</div>\n\nМетод возвращает настройки автовозврата товаров.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца для методов <strong>сборочных заданий, поставок, пропусков и настроек автовозврата FBS</strong>:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 300 запросов | 200 мс | 20 запросов |\n\nОдин запрос с кодами ответов <code>4XX</code> учитывается как 10 запросов\n\n</div>\n",
+        "operationId": "postV3FbsSettingsAutoreturnsItems",
         "requestBody": {
           "content": {
             "application/json": {
@@ -3075,7 +3081,7 @@
                             "type": "boolean"
                           },
                           "type": {
-                            "description": "Куда будет возвращён товар:\n  - `auto` — место возврата определяется автоматически\n  - `byWarehouse` — на склад WB\n  - `byPickupPoint` — на пункт выдачи заказов\n  - `byCourier` — продавцу курьером. Всегда для товаров тех [предметов](/openapi/orders-fbs#tag/autoreturnSettings/operation/getMarketplaceV3FbsSettingsAutoreturnsSubcategoriesRestricted), которые автоматически возвращаются в ПВЗ\n",
+                            "description": "Куда будет возвращён товар:\n  - `auto` — место возврата определяется автоматически\n  - `byWarehouse` — на склад WB\n  - `byPickupPoint` — на пункт выдачи заказов\n  - `byCourier` — продавцу курьером. Всегда для товаров тех [предметов](/openapi/orders-fbs#tag/autoreturnSettings/operation/getV3FbsSettingsAutoreturnsSubcategoriesRestricted), которые автоматически возвращаются в ПВЗ\n",
                             "enum": [
                               "auto",
                               "byWarehouse",
@@ -3153,7 +3159,9 @@
         "x-category": "marketplace",
         "x-readonly-method": true,
         "x-token-types": [
-          "personal"
+          "personal",
+          "service",
+          "base-with-secret"
         ]
       },
       "servers": [
@@ -3165,8 +3173,8 @@
     },
     "/api/marketplace/v3/fbs/settings/autoreturns/subcategories/restricted": {
       "get": {
-        "description": "<div class='description-title'><span>Описание метода</span></div>\n\n<div class=\"description_token\">\n    Метод <a href=\"./api-information#tag/authorization/Pravila-ispolzovaniya-tokenov-dostupa-k-API\">доступен</a> по\n        <strong>Персональному</strong> токену\n</div>\n\nМетод возвращает список ID предметов, товары которых не могут храниться на складах WB и будут возвращены в ПВЗ автоматически.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца для методов <strong>сборочных заданий, поставок, пропусков и настроек автовозврата FBS</strong>:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 300 запросов | 200 мс | 20 запросов |\n\nОдин запрос с кодами ответов <code>4XX</code> учитывается как 10 запросов\n\n</div>\n",
-        "operationId": "getMarketplaceV3FbsSettingsAutoreturnsSubcategoriesRestricted",
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\n\n<div class=\"description_token\">\n    Метод <a href=\"./api-information#tag/authorization/Pravila-ispolzovaniya-tokenov-dostupa-k-API\">доступен</a> по\n        <strong>Персональному</strong> токену, \n        <strong>Сервисному</strong> токену, \n        <strong>Базовому</strong> токену <strong>с секретом</strong>\n</div>\n\nМетод возвращает список ID предметов, товары которых не могут храниться на складах WB и будут возвращены в ПВЗ автоматически.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца для методов <strong>сборочных заданий, поставок, пропусков и настроек автовозврата FBS</strong>:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 300 запросов | 200 мс | 20 запросов |\n\nОдин запрос с кодами ответов <code>4XX</code> учитывается как 10 запросов\n\n</div>\n",
+        "operationId": "getV3FbsSettingsAutoreturnsSubcategoriesRestricted",
         "parameters": [
           {
             "description": "Параметр пагинации. Устанавливает значение, с которого надо получить следующий пакет данных. Для получения полного списка данных должен быть равен `0` в первом запросе. Для следующих запросов необходимо брать значения из одноимённого поля в ответе.",
@@ -3298,7 +3306,9 @@
         "x-category": "marketplace",
         "x-readonly-method": true,
         "x-token-types": [
-          "personal"
+          "personal",
+          "service",
+          "base-with-secret"
         ]
       },
       "servers": [
@@ -8107,7 +8117,7 @@
       "x-displayName": "Пропуска FBS"
     },
     {
-      "description": "<div class=\"description_auth\">\n  Для доступа к методам используйте <a href=\"./api-information#tag/authorization/Kak-sozdat-personalnyj-bazovyj-ili-testovyj-token\">токен</a> для категории <strong>Маркетплейс</strong>\n</div>\n\nС помощью методов этого раздела вы можете управлять [настройками автовозврата](https://seller.wildberries.ru/marketplace-settings) малогабаритных товаров:\n  - [получить](./orders-fbs#tag/autoreturnSettings/operation/getMarketplaceV3FbsSettingsAutoreturns) и [обновить](/openapi/orders-fbs#tag/autoreturnSettings/operation/patchMarketplaceV3FbsSettingsAutoreturns) настройки автовозврата продавца\n  - [получить](./orders-fbs#tag/autoreturnSettings/operation/postMarketplaceV3FbsSettingsAutoreturnsItems) и [обновить](/openapi/orders-fbs#tag/autoreturnSettings/operation/patchMarketplaceV3FbsSettingsAutoreturnsItems) настройки автовозврата товара\n  - получить [список предметов, которые не хранятся на складах WB](/openapi/orders-fbs#tag/autoreturnSettings/operation/getMarketplaceV3FbsSettingsAutoreturnsSubcategoriesRestricted)\n",
+      "description": "<div class=\"description_auth\">\n  Для доступа к методам используйте <a href=\"./api-information#tag/authorization/Kak-sozdat-personalnyj-bazovyj-ili-testovyj-token\">токен</a> для категории <strong>Маркетплейс</strong>\n</div>\n\nС помощью методов этого раздела вы можете управлять [настройками автовозврата](https://seller.wildberries.ru/marketplace-settings) малогабаритных товаров:\n  - [получить](./orders-fbs#tag/autoreturnSettings/operation/getV3FbsSettingsAutoreturns) и [обновить](/openapi/orders-fbs#tag/autoreturnSettings/operation/patchV3FbsSettingsAutoreturns) настройки автовозврата продавца\n  - [получить](./orders-fbs#tag/autoreturnSettings/operation/postV3FbsSettingsAutoreturnsItems) и [обновить](/openapi/orders-fbs#tag/autoreturnSettings/operation/patchV3FbsSettingsAutoreturnsItems) настройки автовозврата товара\n  - получить [список предметов, которые не хранятся на складах WB](/openapi/orders-fbs#tag/autoreturnSettings/operation/getV3FbsSettingsAutoreturnsSubcategoriesRestricted)\n",
       "name": "autoreturnSettings",
       "x-displayName": "Настройки автовозврата"
     }

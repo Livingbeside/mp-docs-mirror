@@ -5,7 +5,7 @@ tag: pinnedFeedbacks
 group: ""
 kind: guide
 source: "https://dev.wildberries.ru/docs/openapi/customer-communication"
-content_sha: 616703dd4e4c65dc
+content_sha: 3124743e42e1a512
 ---
 
 # Закреплённые отзывы
@@ -15,8 +15,8 @@ content_sha: 616703dd4e4c65dc
  Узнать больше о закреплённых отзывах можно в [справочном центре](https://seller.wildberries.ru/instructions/ru/ru/material/pinned-reviews?categoryId=3c971375-9939-45e8-ab82-376019be8942&goBackOption=prevRoute)
 
 С помощью этих методов вы можете:
- 1. [Получить список закреплённых и откреплённых отзывов](./customer-communication#tag/pinnedFeedbacks/operation/getFeedbacksV1Pins)
- 2. [Закрепить отзывы](./customer-communication#tag/pinnedFeedbacks/operation/postFeedbacksV1Pins). Метод доступен по [подписке Джем](https://seller.wildberries.ru/monetization/jam) или c [тарифной опцией](https://seller.wildberries.ru/tariff-constructor) **Закрепление отзыва**
- 3. [Открепить отзывы](./customer-communication#tag/pinnedFeedbacks/operation/deleteFeedbacksV1Pins)
- 4. [Получить количество закреплённых и откреплённых отзывов](./customer-communication#tag/pinnedFeedbacks/operation/getFeedbacksV1PinsCount)
- 5. [Получить лимиты закреплённых отзывов по подписке и тарифной опции](./customer-communication#tag/pinnedFeedbacks/operation/getFeedbacksV1PinsLimits)
+ 1. [Получить список закреплённых и откреплённых отзывов](./customer-communication#tag/pinnedFeedbacks/operation/getV1Pins)
+ 2. [Закрепить отзывы](./customer-communication#tag/pinnedFeedbacks/operation/postV1Pins). Метод доступен по [подписке Джем](https://seller.wildberries.ru/monetization/jam) или c [тарифной опцией](https://seller.wildberries.ru/tariff-constructor) **Закрепление отзыва**
+ 3. [Открепить отзывы](./customer-communication#tag/pinnedFeedbacks/operation/deleteV1Pins)
+ 4. [Получить количество закреплённых и откреплённых отзывов](./customer-communication#tag/pinnedFeedbacks/operation/getV1PinsCount)
+ 5. [Получить лимиты закреплённых отзывов по подписке и тарифной опции](./customer-communication#tag/pinnedFeedbacks/operation/getV1PinsLimits)

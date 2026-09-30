@@ -2237,7 +2237,7 @@
     "/api/analytics/v1/item-returns": {
       "get": {
         "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод возвращает отчёт о [возвратах товаров продавцу](https://seller.wildberries.ru/return-transfer-reports).\n",
-        "operationId": "getAnalyticsV1GoodsReturn",
+        "operationId": "getV1GoodsReturn",
         "parameters": [
           {
             "description": "Дата начала отчётного периода",

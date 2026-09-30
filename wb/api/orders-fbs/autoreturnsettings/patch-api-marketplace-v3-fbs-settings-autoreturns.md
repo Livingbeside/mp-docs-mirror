@@ -3,13 +3,13 @@ title: Обновить настройки автовозврата продав
 api: wb-orders-fbs
 method: PATCH
 path: /api/marketplace/v3/fbs/settings/autoreturns
-operation_id: patchMarketplaceV3FbsSettingsAutoreturns
+operation_id: patchV3FbsSettingsAutoreturns
 tags:
   - autoreturnSettings
 spec_version: order
 source: "https://dev.wildberries.ru/docs/openapi/orders-fbs"
 deprecated: false
-content_sha: ba8f835fba954b02
+content_sha: c01d25c9cf061be8
 ---
 
 # Обновить настройки автовозврата продавца
@@ -19,7 +19,9 @@ content_sha: ba8f835fba954b02
 Описание метода
 
  Метод [доступен](./api-information#tag/authorization/Pravila-ispolzovaniya-tokenov-dostupa-k-API) по
- Персональному токену
+ Персональному токену, 
+ Сервисному токену, 
+ Базовому токену с секретом
 
 Метод устанавливает настройки автовозврата продавца для малогабаритных товаров — `"cargoType":1`.
 
@@ -35,7 +37,7 @@ content_sha: ba8f835fba954b02
 
 **Тело запроса** (`application/json`):
 
-- `type` — string (allToWarehouse, allToPickupPoint, manual) **обязательный**. Тип автовозврата малогабаритных товаров: - `allToWarehouse` — отправлять все товары на склад WB, кроме товаров тех [предметов](/openapi/orders-fbs#tag/autoreturnSettings/operation/getMarketplaceV3FbsSettingsAutoreturnsSubcategoriesRestricted), которые автоматически возвращаются в ПВЗ - `allToPickupPoint` — отправлять все товары на пункт выдачи заказов - `manual` — использовать ручные настройки
+- `type` — string (allToWarehouse, allToPickupPoint, manual) **обязательный**. Тип автовозврата малогабаритных товаров: - `allToWarehouse` — отправлять все товары на склад WB, кроме товаров тех [предметов](/openapi/orders-fbs#tag/autoreturnSettings/operation/getV3FbsSettingsAutoreturnsSubcategoriesRestricted), которые автоматически возвращаются в ПВЗ - `allToPickupPoint` — отправлять все товары на пункт выдачи заказов - `manual` — использовать ручные настройки
 
 ## Ответы
 

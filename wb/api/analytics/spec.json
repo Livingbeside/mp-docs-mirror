@@ -6362,7 +6362,7 @@
     "/api/analytics/v1/stocks-report/seller-warehouses": {
       "post": {
         "description": "<div class='description-title'><span>Описание метода</span></div>\n\n\n<div class=\"description_token\">\n    Метод <a href=\"./api-information#tag/authorization/Pravila-ispolzovaniya-tokenov-dostupa-k-API\">доступен</a> по\n        <strong>Персональному</strong> токену, \n        <strong>Сервисному</strong> токену\n</div>\n\nМетод возвращает текущие остатки товаров на складах продавца.\n<br><br>\nДанные обновляются 1 раз в 30 минут.\n<br><br>\n1 строка ответа — данные об 1 размере товара на 1 складе продавца.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 3 запроса | 20 сек | 1 запрос |\n</div>\n",
-        "operationId": "postAnalyticsV1StocksReportSellerWarehouses",
+        "operationId": "postV1StocksReportSellerWarehouses",
         "requestBody": {
           "content": {
             "application/json": {

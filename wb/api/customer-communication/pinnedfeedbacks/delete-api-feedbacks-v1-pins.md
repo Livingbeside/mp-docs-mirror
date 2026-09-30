@@ -3,13 +3,13 @@ title: Открепить отзывы
 api: wb-customer-communication
 method: DELETE
 path: /api/feedbacks/v1/pins
-operation_id: deleteFeedbacksV1Pins
+operation_id: deleteV1Pins
 tags:
   - pinnedFeedbacks
 spec_version: communication
 source: "https://dev.wildberries.ru/docs/openapi/customer-communication"
 deprecated: false
-content_sha: 5cfba5b46aa4aac4
+content_sha: 310e1a0bff9d05c4
 ---
 
 # Открепить отзывы
@@ -20,7 +20,7 @@ content_sha: 5cfba5b46aa4aac4
 
 Метод позволяет открепить отзывы в карточке товара или в группе [объединённых](/knowledge-base/articles/019d49a4-1320-71bb-9dac-8ba07e7177ce/rabota-s-tovarami#obuedinenie-i-razuedinenie-kartochek-tovarov) карточек.
 
-Чтобы получить `pinId` — ID операций закрепления, используйте метод [Список закреплённых и откреплённых отзывов](./customer-communication#tag/pinnedFeedbacks/operation/getFeedbacksV1Pins).
+Чтобы получить `pinId` — ID операций закрепления, используйте метод [Список закреплённых и откреплённых отзывов](./customer-communication#tag/pinnedFeedbacks/operation/getV1Pins).
 
 Лимит запросов на один аккаунт продавца для всех методов категории Вопросы и отзывы:
 

@@ -3,13 +3,13 @@ title: Закрепить отзывы
 api: wb-customer-communication
 method: POST
 path: /api/feedbacks/v1/pins
-operation_id: postFeedbacksV1Pins
+operation_id: postV1Pins
 tags:
   - pinnedFeedbacks
 spec_version: communication
 source: "https://dev.wildberries.ru/docs/openapi/customer-communication"
 deprecated: false
-content_sha: 6ed162ffbadc9cae
+content_sha: b3fe112dbaf78852
 ---
 
 # Закрепить отзывы
@@ -20,7 +20,7 @@ content_sha: 6ed162ffbadc9cae
 
 Метод позволяет закрепить отзывы в карточке товара или в группе [объединённых](/knowledge-base/articles/019d49a4-1320-71bb-9dac-8ba07e7177ce/rabota-s-tovarami#obuedinenie-i-razuedinenie-kartochek-tovarov) карточек. 
 
-Чтобы получить ID отзывов, используйте метод [Список закреплённых и откреплённых отзывов](./customer-communication#tag/pinnedFeedbacks/operation/getFeedbacksV1Pins).
+Чтобы получить ID отзывов, используйте метод [Список закреплённых и откреплённых отзывов](./customer-communication#tag/pinnedFeedbacks/operation/getV1Pins).
 
 Метод доступен по [подписке Джем](https://seller.wildberries.ru/monetization/jam) или c [тарифной опцией](https://seller.wildberries.ru/tariff-constructor) **Закрепление отзыва**.
 
