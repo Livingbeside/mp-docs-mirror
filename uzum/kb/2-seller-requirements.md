@@ -4,8 +4,8 @@ marketplace: uzum
 kind: article
 path: /2.seller-requirements/
 source: "https://seller.uzum.uz/manual/2.seller-requirements/"
-fetched_at: "2026-09-25T06:57:35Z"
-content_sha: cb40ba34a2ade269
+fetched_at: "2026-09-30T07:25:25Z"
+content_sha: 59596f9c97b6b12d
 ---
 
 # 2. Требования к товарам и поставщикам
@@ -184,7 +184,7 @@ content_sha: cb40ba34a2ade269
 
 В открывшемся окне редактирования товара прокрутите страницу вниз до поля **«Сертификаты»**. Это поле обязательно для заполнения.
 
-> ![пример](https://seller.uzum.uz/manual/assets/img/2.4.2ru.2249017f.jpg)
+> ![пример](https://seller.uzum.uz/manual/2.4/2.4.2ru.jpg)
 
 1. Загрузка фото сертификата
 
@@ -197,7 +197,7 @@ content_sha: cb40ba34a2ade269
 - Номер сертификата.
 - Дата окончания действия сертификата.
 
-> ![пример](https://seller.uzum.uz/manual/assets/img/2.4.1ru.9f71e2eb.jpg)
+> ![пример](https://seller.uzum.uz/manual/2.4/2.4.1ru.jpg)
 
 ### Особенности указания номера сертификата
 

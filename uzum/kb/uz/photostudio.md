@@ -4,8 +4,8 @@ marketplace: uzum
 kind: article
 path: /uz/photostudio/
 source: "https://seller.uzum.uz/manual/uz/photostudio/"
-fetched_at: "2026-09-25T06:48:52Z"
-content_sha: 58ee1203d0a75acd
+fetched_at: "2026-09-30T07:25:25Z"
+content_sha: 84851edeb93d1f3f
 ---
 
 **Инструкция по заполнению Бриф-заявки для ЦПТ**
@@ -13,11 +13,11 @@ content_sha: 58ee1203d0a75acd
 # Содержание.
 
 [Создание брифа.](https://seller.uzum.uz/manual/photostudio/#_1-создание-брифа)
- [Заполнение общих данных.](https://seller.uzum.uz/manual/photostudio/#_2-запоnнение-общих-данных)
- [Заполнение информации о товаре.](https://seller.uzum.uz/manual/photostudio/#_3-запоnнение-информации-о-товаре)
- [Отправка брифа.](https://seller.uzum.uz/manual/photostudio/#_4-отправка-брифа)
+[Заполнение общих данных.](https://seller.uzum.uz/manual/photostudio/#_2-запоnнение-общих-данных)
+[Заполнение информации о товаре.](https://seller.uzum.uz/manual/photostudio/#_3-запоnнение-информации-о-товаре)
+[Отправка брифа.](https://seller.uzum.uz/manual/photostudio/#_4-отправка-брифа)
 
-Для того, чтобы сформировать заявку на ЦПТ, вам необходимо заполнить шаблон [брифа](https://docs.google.com/spreadsheets/d/1c_UF4FP4-4qHEZ_TpQYROGRA6ueWoDEITk1hvAtdYzo/edit#gid=1155901184
+Для того, чтобы сформировать заявку на ЦПТ, вам необходимо заполнить шаблон [брифа]([https://docs.google.com/spreadsheets/d/1c_UF4FP4-4qHEZ_TpQYROGRA6ueWoDEITk1hvAtdYzo/edit#gid=1155901184](https://docs.google.com/spreadsheets/d/1c_UF4FP4-4qHEZ_TpQYROGRA6ueWoDEITk1hvAtdYzo/edit#gid=1155901184)
 
 ?usp=sharing). Точно заполненный бриф поможет нам верно понять ваши задачи и рассчитать предварительную стоимость услуг, поэтому ознакомьтесь с этой инструкцией.
  Счет на оплату с конечной стоимостью услуг ЦПТ выставляется после проведения работ.
@@ -34,7 +34,7 @@ content_sha: 58ee1203d0a75acd
 
 ### 1. Создание брифа.
 
-Для того, чтобы иметь возможность заполнять бриф, вам нужно сделать копию [файла](https://docs.google.com/spreadsheets/d/1c_UF4FP4-4qHEZ_TpQYROGRA6ueWoDEITk1hvAtdYzo/edit#gid=1155901184
+Для того, чтобы иметь возможность заполнять бриф, вам нужно сделать копию [файла]([https://docs.google.com/spreadsheets/d/1c_UF4FP4-4qHEZ_TpQYROGRA6ueWoDEITk1hvAtdYzo/edit#gid=1155901184](https://docs.google.com/spreadsheets/d/1c_UF4FP4-4qHEZ_TpQYROGRA6ueWoDEITk1hvAtdYzo/edit#gid=1155901184)
 
 ?usp=sharing). Для этого нажмите на *“Файл”* → *“Создать копию”*. ![Как сделать копию брифа под себя](https://user-images.githubusercontent.com/93249146/150316337-d16bd03a-99a6-461c-ad1f-3d49b2a12587.gif)
 

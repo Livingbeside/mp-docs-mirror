@@ -4,8 +4,8 @@ marketplace: uzum
 kind: article
 path: /3.tariffs/
 source: "https://seller.uzum.uz/manual/3.tariffs/"
-fetched_at: "2026-09-25T06:48:52Z"
-content_sha: bfa92fdefe2a2be6
+fetched_at: "2026-09-30T07:25:25Z"
+content_sha: 7a843362e2ab4ebb
 ---
 
 # 3. Тарифы и вывод выручки
@@ -198,9 +198,9 @@ Uzum вправе по своему усмотрению изменять кри
 
 Это один и тот же сбор, просто представленный в двух разных форматах.
 
-> ![пример](https://seller.uzum.uz/manual/assets/img/3.2.3RU.0245b22a.png)
+> ![пример](https://seller.uzum.uz/manual/3.2/3.2.3RU.png)
 
-> ![пример](https://seller.uzum.uz/manual/assets/img/3.2.4RU.fca9618f.png)
+> ![пример](https://seller.uzum.uz/manual/3.2/3.2.4RU.png)
 
 ** Подробную информацию об уровнях категорий вы можете найти по ссылке: [Комиссионное вознаграждение](https://docs.google.com/spreadsheets/d/1J9EQEJqZcF3eRS4nLLAjR0M8jcb0QabZGFpfIP_mpRU/edit?gid=360068501#gid=360068501)
 
@@ -254,31 +254,31 @@ Uzum вправе по своему усмотрению изменять кри
 
 - зайти в раздел **«отчеты»** в Личном кабинете и нажать «Формирование отчёта»
 
-> ![пример](https://seller.uzum.uz/manual/assets/img/01-RU-отчет.f61974db.png)
+> ![пример](https://seller.uzum.uz/manual/Отчет/01-RU-отчет.png)
 
 - в графе "Тип отчета" выбрать «отчёт комиссионера»
 
-> ![пример](https://seller.uzum.uz/manual/assets/img/02-RU-отчет.35d8e3cd.png)
+> ![пример](https://seller.uzum.uz/manual/Отчет/02-RU-отчет.png)
 
 - в случае, если у вас больше, чем один магазин - выбрать тот, по которому нужен отчет.
 
-> ![пример](https://seller.uzum.uz/manual/assets/img/03-RU-отчет.9ceef7d8.png)
+> ![пример](https://seller.uzum.uz/manual/Отчет/03-RU-отчет.png)
 
 - Определить формат отчёта (PDF\Excel\оба варианта)
 
-> ![пример](https://seller.uzum.uz/manual/assets/img/04-RU-отчет.677239c4.png)
+> ![пример](https://seller.uzum.uz/manual/Отчет/04-RU-отчет.png)
 
 - В фильтре "Период отчета" выбрать нужный.
 
-> ![пример](https://seller.uzum.uz/manual/assets/img/05-RU-отчет.ede7fd9c.png)
+> ![пример](https://seller.uzum.uz/manual/Отчет/05-RU-отчет.png)
 
 - Нажать кнопку «Сформировать»
 
-> ![пример](https://seller.uzum.uz/manual/assets/img/06-RU-отчет.da14f842.png)
+> ![пример](https://seller.uzum.uz/manual/Отчет/06-RU-отчет.png)
 
 - Готовый отчет появляется в разделе «Отчёты» в списке отчетов.
 
-> ![пример](https://seller.uzum.uz/manual/assets/img/07-RU-отчет.86ae20b8.png)
+> ![пример](https://seller.uzum.uz/manual/Отчет/07-RU-отчет.png)
 
 ### Выгрузка о продажах из личного кабинета
 
