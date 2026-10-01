@@ -4,8 +4,8 @@ api: wildberries
 kind: changelog
 source: "https://dev.wildberries.ru/release-notes"
 window: последние записи, страница отдаёт не всю историю
-fetched_at: "2026-09-30T02:21:43Z"
-content_sha: 24c4777c475dd2c4
+fetched_at: "2026-10-01T01:59:59Z"
+content_sha: 0ae750d073f5c633
 ---
 
 # Журнал изменений WB API
@@ -16,7 +16,7 @@ content_sha: 24c4777c475dd2c4
 
 2026
 
-Сен
+Окт
 
 Пн
 
@@ -32,23 +32,23 @@ content_sha: 24c4777c475dd2c4
 
 Чт
 
-1
+31
 
 Пт
 
-2
+1
 
 Сб
 
-3
+2
 
 Вс
 
-4
+3
 
 Пн
 
-5
+4
 
 Поиск
 
@@ -66,6 +66,22 @@ content_sha: 24c4777c475dd2c4
 
 Сентябрь
 2026
+
+Новое
+
+## 30.09.2026
+
+Работа с товарами
+
+Категории, предметы и характеристики
+
+Новые методы для работы с товарами
+
+Добавили методы для работы с карточками товаров. Теперь с помощью WB API вы можете получить:
+
+- Список кодов ТН ВЭД — [GET /api/content/v2/directory/tnved/all](/docs/openapi/item-management#tag/categoriesSubcategoriesAndCharacteristics/operation/getV2DirectoryTnvedAll)
+- Код ОКПД2 предмета — [GET /api/content/v2/directory/okpd](/docs/openapi/item-management#tag/categoriesSubcategoriesAndCharacteristics/operation/getV2DirectoryOkpd)
+- Список кодов ОКПД2 — [GET /api/content/v2/directory/okpd/all](/docs/openapi/item-management#tag/categoriesSubcategoriesAndCharacteristics/operation/getV2DirectoryOkpdAll)
 
 Новое
 
@@ -180,7 +196,7 @@ content_sha: 24c4777c475dd2c4
 - `STOCK_HISTORY_REPORT_CSV` — отчёт по статистике остатков в методе [POST /api/v2/nm-report/downloads](/docs/openapi/analytics#tag/sellerAnalyticsCsv/operation/postV2NmReportDownloads)
 - `STOCK_HISTORY_DAILY_CSV` — отчёт по истории остатков в методе [POST /api/v2/nm-report/downloads](/docs/openapi/analytics#tag/sellerAnalyticsCsv/operation/postV2NmReportDownloads)
 
-Чтобы получить текущие данные по остаткам без задержки обновления, используйте методы [POST /api/analytics/v1/stocks-report/wb-warehouses](/docs/openapi/analytics/#tag/stocksReport/operation/postV1StocksReportWbWarehouses) и [POST /api/analytics/v1/stocks-report/seller-warehouses](/docs/openapi/analytics#tag/stocksReport/operation/postAnalyticsV1StocksReportSellerWarehouses).
+Чтобы получить текущие данные по остаткам без задержки обновления, используйте методы [POST /api/analytics/v1/stocks-report/wb-warehouses](/docs/openapi/analytics/#tag/stocksReport/operation/postV1StocksReportWbWarehouses) и [POST /api/analytics/v1/stocks-report/seller-warehouses](/docs/openapi/analytics#tag/stocksReport/operation/postV1StocksReportSellerWarehouses).
 
 Новое
 
@@ -213,27 +229,6 @@ content_sha: 24c4777c475dd2c4
 - `dateStart` — дата начала действия коэффициента
 - `dateEnd` — дата окончания действия коэффициента
 
-Новое
-
-## 10.09.2026
-
-Поставки FBW
-
-Черновики поставок
-
-Черновики поставок FBW
-
-Добавили методы для работы с [черновиками поставок](./docs/openapi/orders-fbw#tag/supplyDrafts) FBW. Теперь с помощью WB API вы можете:
-
-- Создать черновик — [POST /api/supplies/v1/drafts](./docs/openapi/orders-fbw#tag/supplyDrafts/operation/postV1Drafts)
-- Добавить товары в черновик — [POST /api/supplies/v1/drafts/{draftId}/items](./docs/openapi/orders-fbw#tag/supplyDrafts/operation/postV1DraftsDraftIdItems)
-- Получить список черновиков — [GET /api/supplies/v1/drafts](./docs/openapi/orders-fbw#tag/supplyDrafts/operation/getV1Drafts)
-- Получить список товаров в черновике — [GET /api/supplies/v1/drafts/{draftId}/items](./docs/openapi/orders-fbw#tag/supplyDrafts/operation/getV1DraftsDraftIdItems)
-- Удалить товары из черновика — [DELETE /api/supplies/v1/drafts/{draftId}/items](./docs/openapi/orders-fbw#tag/supplyDrafts/operation/deleteV1DraftsDraftIdItems)
-- Удалить черновик — [DELETE /api/supplies/v1/drafts/{draftId}](./docs/openapi/orders-fbw#tag/supplyDrafts/operation/deleteV1DraftsDraftId)
-
-Методы доступны по **Персональному** и **Сервисному** токену категории **Поставки**.
-
 Изменения
 
 ## 10.09.2026
@@ -255,6 +250,27 @@ content_sha: 24c4777c475dd2c4
 
 В предыдущей версии описания объекта `wholesale` было некорректно указано, что при `"enabled":true` товар предназначен для оптовой продажи.
  В исправленной версии описания объекта `wholesale` указано, что при `"enabled":true` товар предназначен для любой [B2B-продажи](https://seller.wildberries.ru/instructions/ru/ru/material/wholesale-of-goods), не только оптовой.
+
+Новое
+
+## 10.09.2026
+
+Поставки FBW
+
+Черновики поставок
+
+Черновики поставок FBW
+
+Добавили методы для работы с [черновиками поставок](./docs/openapi/orders-fbw#tag/supplyDrafts) FBW. Теперь с помощью WB API вы можете:
+
+- Создать черновик — [POST /api/supplies/v1/drafts](./docs/openapi/orders-fbw#tag/supplyDrafts/operation/postV1Drafts)
+- Добавить товары в черновик — [POST /api/supplies/v1/drafts/{draftId}/items](./docs/openapi/orders-fbw#tag/supplyDrafts/operation/postV1DraftsDraftIdItems)
+- Получить список черновиков — [GET /api/supplies/v1/drafts](./docs/openapi/orders-fbw#tag/supplyDrafts/operation/getV1Drafts)
+- Получить список товаров в черновике — [GET /api/supplies/v1/drafts/{draftId}/items](./docs/openapi/orders-fbw#tag/supplyDrafts/operation/getV1DraftsDraftIdItems)
+- Удалить товары из черновика — [DELETE /api/supplies/v1/drafts/{draftId}/items](./docs/openapi/orders-fbw#tag/supplyDrafts/operation/deleteV1DraftsDraftIdItems)
+- Удалить черновик — [DELETE /api/supplies/v1/drafts/{draftId}](./docs/openapi/orders-fbw#tag/supplyDrafts/operation/deleteV1DraftsDraftId)
+
+Методы доступны по **Персональному** и **Сервисному** токену категории **Поставки**.
 
 Изменения
 
@@ -512,40 +528,5 @@ DBS
 Также, если к сборочному заданию не добавлен обязательный номер ДТ, поставку с этим сборочным заданием невозможно перевести в доставку. В ответе метода [PATCH /api/v3/supplies/{supplyId}/deliver](/docs/openapi/orders-fbs#tag/fbsSupplies/operation/patchV3SuppliesSupplyIdDeliver) вы получите ошибку `409` `MetaValidationFail`, при этом в поле `decision` для `customsDeclaration` вернётся значение `required`.
 
 Чтобы проверить, добавлен ли обязательный номер ДТ к сборочному заданию, до перевода поставки в доставку, используйте метод [POST /api/marketplace/v3/orders/meta](/docs/openapi/orders-fbs/#tag/fbsLabelIdentifiers/operation/postV3OrdersMeta). Перевести поставку в доставку можно со статусами `filled` или `optional` в поле `decision` для `customsDeclaration`.
-
-Новое
-
-## 06.08.2026
-
-Аналитика и данные
-
-Лента заказов
-
-Отчёты
-
-Основные отчёты
-
-Лента заказов в WB API
-
-Получить отчёт [Лента заказов](https://seller.wildberries.ru/content-analytics/order-feed) теперь можно с помощью WB API — методом [POST /api/analytics/v1/order-feed](/docs/openapi/analytics#tag/orderFeed). Используйте его в качестве замены методов:
-
-- [GET /api/v1/supplier/orders](/docs/openapi/reports#tag/mainReports/operation/getV1SupplierOrders) — **Заказы**
-- [GET /api/v1/supplier/sales](/docs/openapi/reports#tag/mainReports/operation/getV1SupplierSales) — **Продажи**
-
-Делитесь с нами обратной связью в [Сообществе WB API](/forum/topics/2497). На основе ваших комментариев мы сможем сделать переход на новый метод максимально комфортным.
-
-Методы **Заказы** и **Продажи** продолжают работать, но, как мы [сообщали](/forum/topics/1721) ранее, в будущем они будут отключены. О дате отключения сообщим заранее.
-
-Преимущества **Ленты заказов** в сравнении с методами **Заказы** и **Продажи**:
-
-- данные обновляются в режиме реального времени
-- нет разделения на заказы и выкупы, данные отдаются в рамках одного метода
-- есть статусы заказов и причины отмен
-- отчёт содержит заказы с отложенной оплатой
-- для каждого заказа определён тип продажи: B2B или B2C
-- изменяться могут только статусы
-- используется офсетно-курсорная пагинация и товарные фильтры: артикулы WB, бренды, предметы, теги
-
-Метод доступен по [токену](/docs/openapi/api-information#tag/authorization) любого типа для категории **Аналитика**.
 
 Мы используем [cookies](https://legal.wildberries.ru/privacypolicy/country/ru/lang/ru/#anchor-7), чтобы анализировать, как вы пользуетесь сайтом, и улучшать его

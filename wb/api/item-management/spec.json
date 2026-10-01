@@ -4265,6 +4265,455 @@
         }
       ]
     },
+    "/api/content/v2/directory/okpd": {
+      "get": {
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод возвращает список кодов ОКПД2 по ID [предмета](./work-with-products#tag/categoriesSubcategoriesAndCharacteristics/paths/~1content~1v2~1object~1all/get) и фрагменту кода ОКПД2.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца для всех методов категории <strong>Контент</strong>:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 100 запросов | 600 мс | 5 запросов |\n\nИсключение — методы:\n\n<ul>\n    <li><a href=\"./item-management#tag/listingItems/operation/postV2CardsUpload\">создания карточек товаров</a></li>\n    <li><a href=\"./item-management#tag/listingItems/operation/postV2CardsUploadAdd\">создания карточек товаров с присоединением</a></li>\n    <li><a href=\"./item-management#tag/listings/operation/postV2CardsUpdate\">редактирования карточек товаров</a></li>\n    <li><a href=\"./item-management#tag/listings/operation/postV2CardsRecover\">восстановления карточек товаров из корзины</a></li>\n    <li><a href=\"./item-management#tag/recommendations/operation/postV1RecommendationsList\">получения списка рекомендаций в карточках товаров</a></li>\n    <li><a href=\"./item-management#tag/recommendations/operation/postV1RecommendationsSet\">установки рекомендаций для товаров</a></li>\n</ul>\n\n</div>\n",
+        "operationId": "getV2DirectoryOkpd",
+        "parameters": [
+          {
+            "description": "ID предмета",
+            "in": "query",
+            "name": "subjectId",
+            "required": true,
+            "schema": {
+              "example": 105,
+              "type": "integer"
+            }
+          },
+          {
+            "description": "Поиск по фрагменту кода ОКПД2. Работает только в паре с `subjectId`. Укажите первые цифры кода через точку, чтобы найти код по этому фрагменту",
+            "in": "query",
+            "name": "search",
+            "schema": {
+              "example": "61.06",
+              "type": "string"
+            }
+          },
+          {
+            "description": "Язык полей ответа:\n  - `ru` — русский\n",
+            "in": "query",
+            "name": "locale",
+            "schema": {
+              "default": "ru",
+              "enum": [
+                "ru"
+              ],
+              "example": "ru",
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "additionalErrors": {
+                      "description": "Дополнительные ошибки",
+                      "example": null,
+                      "nullable": true,
+                      "type": "string"
+                    },
+                    "data": {
+                      "description": "Данные",
+                      "items": {
+                        "properties": {
+                          "description": {
+                            "description": "Текстовое описание товаров, которые входят в группу",
+                            "example": "Бумага для офисной техники прочая",
+                            "type": "string"
+                          },
+                          "okpd2": {
+                            "description": "Код ОКПД2",
+                            "example": "61.06.90.300",
+                            "type": "string"
+                          }
+                        },
+                        "required": [
+                          "okpd2",
+                          "description"
+                        ],
+                        "type": "object"
+                      },
+                      "type": "array"
+                    },
+                    "error": {
+                      "description": "Флаг наличия ошибки",
+                      "example": false,
+                      "type": "boolean"
+                    },
+                    "errorText": {
+                      "description": "Текст ошибки",
+                      "example": "",
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "data",
+                    "error",
+                    "errorText",
+                    "additionalErrors"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "<span class='response__value response__value_success'>Успешно</span>"
+          },
+          "400": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/responseBodyContentError400"
+                }
+              }
+            },
+            "description": "<span class='response__value '>Неправильный запрос</span>"
+          },
+          "401": {
+            "$ref": "#/components/responses/401"
+          },
+          "403": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/responseBodyContentError403"
+                }
+              },
+              "application/problem+json": {
+                "examples": {
+                  "Response403TokenCategory": {
+                    "$ref": "#/components/examples/Response403TokenCategory"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/Response4XX"
+                }
+              }
+            },
+            "description": "<span class='response__value '>Доступ запрещён</span>"
+          },
+          "429": {
+            "$ref": "#/components/responses/429"
+          }
+        },
+        "security": [
+          {
+            "HeaderApiKey": []
+          }
+        ],
+        "summary": "Код ОКПД2 предмета{{ /api/content/v2/directory/okpd }}",
+        "tags": [
+          "categoriesSubcategoriesAndCharacteristics"
+        ],
+        "x-category": "content",
+        "x-readonly-method": true
+      },
+      "servers": [
+        {
+          "description": "**Prod**\n",
+          "url": "https://content-api.wildberries.ru"
+        }
+      ]
+    },
+    "/api/content/v2/directory/okpd/all": {
+      "get": {
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод возвращает справочный список всех кодов ОКПД2. Чтобы найти код по его фрагменту, укажите первые цифры кода через точку в параметре `search`.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца для всех методов категории <strong>Контент</strong>:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 100 запросов | 600 мс | 5 запросов |\n\nИсключение — методы:\n\n<ul>\n    <li><a href=\"./item-management#tag/listingItems/operation/postV2CardsUpload\">создания карточек товаров</a></li>\n    <li><a href=\"./item-management#tag/listingItems/operation/postV2CardsUploadAdd\">создания карточек товаров с присоединением</a></li>\n    <li><a href=\"./item-management#tag/listings/operation/postV2CardsUpdate\">редактирования карточек товаров</a></li>\n    <li><a href=\"./item-management#tag/listings/operation/postV2CardsRecover\">восстановления карточек товаров из корзины</a></li>\n    <li><a href=\"./item-management#tag/recommendations/operation/postV1RecommendationsList\">получения списка рекомендаций в карточках товаров</a></li>\n    <li><a href=\"./item-management#tag/recommendations/operation/postV1RecommendationsSet\">установки рекомендаций для товаров</a></li>\n</ul>\n\n</div>\n",
+        "operationId": "getV2DirectoryOkpdAll",
+        "parameters": [
+          {
+            "description": "Поиск по фрагменту кода ОКПД2. Укажите первые цифры кода через точку, чтобы найти код по этому фрагменту",
+            "in": "query",
+            "name": "search",
+            "schema": {
+              "example": 61.06,
+              "type": "number"
+            }
+          },
+          {
+            "description": "Язык полей ответа:\n  - `ru` — русский\n",
+            "in": "query",
+            "name": "locale",
+            "schema": {
+              "default": "ru",
+              "enum": [
+                "ru"
+              ],
+              "example": "ru",
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "additionalErrors": {
+                      "description": "Дополнительные ошибки",
+                      "example": null,
+                      "nullable": true,
+                      "type": "string"
+                    },
+                    "data": {
+                      "description": "Данные",
+                      "items": {
+                        "properties": {
+                          "description": {
+                            "description": "Текстовое описание товаров, которые входят в группу",
+                            "example": "Бумага для офисной техники прочая",
+                            "type": "string"
+                          },
+                          "okpd2": {
+                            "description": "Код ОКПД2",
+                            "example": "61.06.90.300",
+                            "type": "string"
+                          }
+                        },
+                        "required": [
+                          "okpd2",
+                          "description"
+                        ],
+                        "type": "object"
+                      },
+                      "type": "array"
+                    },
+                    "error": {
+                      "description": "Флаг наличия ошибки",
+                      "example": false,
+                      "type": "boolean"
+                    },
+                    "errorText": {
+                      "description": "Текст ошибки",
+                      "example": "",
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "data",
+                    "error",
+                    "errorText",
+                    "additionalErrors"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "<span class='response__value response__value_success'>Успешно</span>"
+          },
+          "400": {
+            "content": {
+              "application/json": {
+                "example": {
+                  "additionalErrors": {},
+                  "data": null,
+                  "error": true,
+                  "errorText": "Bad request"
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/responseBodyContentError400"
+                }
+              }
+            },
+            "description": "<span class='response__value '>Неправильный запрос</span>"
+          },
+          "401": {
+            "$ref": "#/components/responses/401"
+          },
+          "403": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/responseBodyContentError403"
+                }
+              },
+              "application/problem+json": {
+                "examples": {
+                  "Response403TokenCategory": {
+                    "$ref": "#/components/examples/Response403TokenCategory"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/Response4XX"
+                }
+              }
+            },
+            "description": "<span class='response__value '>Доступ запрещён</span>"
+          },
+          "429": {
+            "$ref": "#/components/responses/429"
+          }
+        },
+        "security": [
+          {
+            "HeaderApiKey": []
+          }
+        ],
+        "summary": "Список кодов ОКПД2{{ /api/content/v2/directory/okpd/all }}",
+        "tags": [
+          "categoriesSubcategoriesAndCharacteristics"
+        ],
+        "x-category": "content",
+        "x-readonly-method": true
+      },
+      "servers": [
+        {
+          "description": "**Prod**\n",
+          "url": "https://content-api.wildberries.ru"
+        }
+      ]
+    },
+    "/api/content/v2/directory/tnved/all": {
+      "get": {
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод возвращает справочный список всех кодов ТН ВЭД. Чтобы найти код по его фрагменту, укажите первые цифры кода в параметре `search`.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца для всех методов категории <strong>Контент</strong>:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 100 запросов | 600 мс | 5 запросов |\n\nИсключение — методы:\n\n<ul>\n    <li><a href=\"./item-management#tag/listingItems/operation/postV2CardsUpload\">создания карточек товаров</a></li>\n    <li><a href=\"./item-management#tag/listingItems/operation/postV2CardsUploadAdd\">создания карточек товаров с присоединением</a></li>\n    <li><a href=\"./item-management#tag/listings/operation/postV2CardsUpdate\">редактирования карточек товаров</a></li>\n    <li><a href=\"./item-management#tag/listings/operation/postV2CardsRecover\">восстановления карточек товаров из корзины</a></li>\n    <li><a href=\"./item-management#tag/recommendations/operation/postV1RecommendationsList\">получения списка рекомендаций в карточках товаров</a></li>\n    <li><a href=\"./item-management#tag/recommendations/operation/postV1RecommendationsSet\">установки рекомендаций для товаров</a></li>\n</ul>\n\n<hr>\n\nВ <a href='/sandbox'>песочнице</a> — максимум 1 запрос в секунду суммарно для всех методов <strong>Контента</strong>.\n\n</div>\n",
+        "operationId": "getV2DirectoryTnvedAll",
+        "parameters": [
+          {
+            "description": "Поиск по первым цифрам кода ТН ВЭД. Укажите не более 10 символов",
+            "in": "query",
+            "name": "search",
+            "schema": {
+              "example": 6106,
+              "type": "integer"
+            }
+          },
+          {
+            "description": "Язык полей ответа:\n  - `ru` — русский\n  - `en` — английский\n",
+            "in": "query",
+            "name": "locale",
+            "schema": {
+              "default": "ru",
+              "enum": [
+                "ru",
+                "en"
+              ],
+              "example": "ru",
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "additionalErrors": {
+                      "description": "Дополнительные ошибки",
+                      "example": null,
+                      "nullable": true,
+                      "type": "string"
+                    },
+                    "data": {
+                      "description": "Данные",
+                      "items": {
+                        "properties": {
+                          "description": {
+                            "description": "Текстовое описание товаров, которые входят в группу",
+                            "example": "Бумага для офисной техники прочая",
+                            "type": "string"
+                          },
+                          "tnved": {
+                            "description": "Код ТН ВЭД",
+                            "example": "6106903001",
+                            "type": "string"
+                          }
+                        },
+                        "required": [
+                          "tnved",
+                          "description"
+                        ],
+                        "type": "object"
+                      },
+                      "type": "array"
+                    },
+                    "error": {
+                      "description": "Флаг наличия ошибки",
+                      "example": false,
+                      "type": "boolean"
+                    },
+                    "errorText": {
+                      "description": "Текст ошибки",
+                      "example": "",
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "data",
+                    "error",
+                    "errorText",
+                    "additionalErrors"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "<span class='response__value response__value_success'>Успешно</span>"
+          },
+          "400": {
+            "content": {
+              "application/json": {
+                "example": {
+                  "additionalErrors": {},
+                  "data": null,
+                  "error": true,
+                  "errorText": "Bad request"
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/responseBodyContentError400"
+                }
+              }
+            },
+            "description": "<span class='response__value '>Неправильный запрос</span>"
+          },
+          "401": {
+            "$ref": "#/components/responses/401"
+          },
+          "403": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/responseBodyContentError403"
+                }
+              },
+              "application/problem+json": {
+                "examples": {
+                  "Response403TokenCategory": {
+                    "$ref": "#/components/examples/Response403TokenCategory"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/Response4XX"
+                }
+              }
+            },
+            "description": "<span class='response__value '>Доступ запрещён</span>"
+          },
+          "429": {
+            "$ref": "#/components/responses/429"
+          }
+        },
+        "security": [
+          {
+            "HeaderApiKey": []
+          }
+        ],
+        "summary": "Список кодов ТН ВЭД{{ /api/content/v2/directory/tnved/all }}",
+        "tags": [
+          "categoriesSubcategoriesAndCharacteristics"
+        ],
+        "x-category": "content",
+        "x-readonly-method": true
+      },
+      "servers": [
+        {
+          "description": "**Prod**\n",
+          "url": "https://content-api.wildberries.ru"
+        }
+      ]
+    },
     "/api/discounts-prices/v1/upload/task/b2b/wholesale": {
       "post": {
         "description": "<div class='description-title'><span>Описание метода</span></div>\n\n\n<div class=\"description_token\">\n    Метод <a href=\"./api-information#tag/authorization/Pravila-ispolzovaniya-tokenov-dostupa-k-API\">доступен</a> по\n        <strong>Персональному</strong> токену, \n        <strong>Сервисному</strong> токену\n</div>\n\nМетод устанавливает [оптовые скидки для бизнеса](https://seller.wildberries.ru/instructions/ru/ru/material/how-to-enable-wholesale-discounts-for-business)\n\n<div class=\"description_important\">\n  Получить информацию о процессе установки цен и скидок можно с помощью методов <a href=\"./item-management#tag/pricesAndDiscounts/operation/getV2HistoryTasks\">состояния</a> и <a href=\"./item-management#tag/pricesAndDiscounts/operation/getV2HistoryGoodsTask\">детализации</a> обработанной загрузки.\n</div>\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца для всех методов категории <strong>Цены и скидки</strong>:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 6 сек | 10 запросов | 600 мс | 5 запросов |\n| Сервисный | 6 сек | 10 запросов | 600 мс | 5 запросов |\n\n</div>\n",
@@ -8929,7 +9378,7 @@
     },
     "/content/v2/directory/tnved": {
       "get": {
-        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод возвращает список ТНВЭД-кодов по ID [предмета](./item-management#tag/categoriesSubcategoriesAndCharacteristics/operation/getV2ObjectAll) и фрагменту ТНВЭД-кода.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца для всех методов категории <strong>Контент</strong>:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 100 запросов | 600 мс | 5 запросов |\n\nИсключение — методы:\n\n<ul>\n    <li><a href=\"./item-management#tag/listingItems/operation/postV2CardsUpload\">создания карточек товаров</a></li>\n    <li><a href=\"./item-management#tag/listingItems/operation/postV2CardsUploadAdd\">создания карточек товаров с присоединением</a></li>\n    <li><a href=\"./item-management#tag/listings/operation/postV2CardsUpdate\">редактирования карточек товаров</a></li>\n    <li><a href=\"./item-management#tag/listings/operation/postV2CardsRecover\">восстановления карточек товаров из корзины</a></li>\n    <li><a href=\"./item-management#tag/recommendations/operation/postV1RecommendationsList\">получения списка рекомендаций в карточках товаров</a></li>\n    <li><a href=\"./item-management#tag/recommendations/operation/postV1RecommendationsSet\">установки рекомендаций для товаров</a></li>\n</ul>\n\n<hr>\n\nВ <a href='/sandbox'>песочнице</a> — максимум 1 запрос в секунду суммарно для всех методов <strong>Контента</strong>.\n\n</div>\n",
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод возвращает список кодов ТН ВЭД по ID [предмета](./item-management#tag/categoriesSubcategoriesAndCharacteristics/operation/getV2ObjectAll) и фрагменту кода ТН ВЭД.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца для всех методов категории <strong>Контент</strong>:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 100 запросов | 600 мс | 5 запросов |\n\nИсключение — методы:\n\n<ul>\n    <li><a href=\"./item-management#tag/listingItems/operation/postV2CardsUpload\">создания карточек товаров</a></li>\n    <li><a href=\"./item-management#tag/listingItems/operation/postV2CardsUploadAdd\">создания карточек товаров с присоединением</a></li>\n    <li><a href=\"./item-management#tag/listings/operation/postV2CardsUpdate\">редактирования карточек товаров</a></li>\n    <li><a href=\"./item-management#tag/listings/operation/postV2CardsRecover\">восстановления карточек товаров из корзины</a></li>\n    <li><a href=\"./item-management#tag/recommendations/operation/postV1RecommendationsList\">получения списка рекомендаций в карточках товаров</a></li>\n    <li><a href=\"./item-management#tag/recommendations/operation/postV1RecommendationsSet\">установки рекомендаций для товаров</a></li>\n</ul>\n\n<hr>\n\nВ <a href='/sandbox'>песочнице</a> — максимум 1 запрос в секунду суммарно для всех методов <strong>Контента</strong>.\n\n</div>\n",
         "operationId": "getV2DirectoryTnved",
         "parameters": [
           {
@@ -8943,7 +9392,7 @@
             }
           },
           {
-            "description": "Поиск по ТНВЭД-коду. Работает только в паре с `subjectID`",
+            "description": "Поиск по коду ТН ВЭД. Работает только в паре с `subjectID`",
             "in": "query",
             "name": "search",
             "schema": {
@@ -8992,7 +9441,7 @@
                             "type": "boolean"
                           },
                           "tnved": {
-                            "description": "ТНВЭД-код",
+                            "description": "Код ТН ВЭД",
                             "type": "string"
                           }
                         },
@@ -9058,7 +9507,7 @@
             "HeaderApiKey": []
           }
         ],
-        "summary": "ТНВЭД-код{{ /content/v2/directory/tnved }}",
+        "summary": "Код ТН ВЭД предмета{{ /content/v2/directory/tnved }}",
         "tags": [
           "categoriesSubcategoriesAndCharacteristics"
         ],

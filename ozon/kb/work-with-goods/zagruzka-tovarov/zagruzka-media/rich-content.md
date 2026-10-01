@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /work-with-goods/zagruzka-tovarov/zagruzka-media/rich-content
 source: "https://seller-edu.ozon.ru/libra/work-with-goods/zagruzka-tovarov/zagruzka-media/rich-content"
-updated: "2026-09-15 10:55:36"
+updated: "2026-09-30 14:58:16"
 doc_id: 10240
-fetched_at: "2026-09-16T02:21:47Z"
-content_sha: aa1dd0a63f216b91
+fetched_at: "2026-10-01T01:57:11Z"
+content_sha: 95445b157b47880a
 ---
 
 # Rich-контент
@@ -39,6 +39,8 @@ Rich-контент отображается в карточке вместо о
 Если у вас уже есть готовый JSON код, просто [добавьте его в карточку](#как-добавить-json-код-в-карточку).
 
 [Документация к rich-контенту](https://rich-content.ozon.ru/docs)
+
+В rich-контенте запрещено размещать логотипы, текст или любые элементы, связанные с «Честным Знаком». Добавляем официальную отметку в карточку автоматически, если товар прошёл проверку. [Подробнее](https://seller-edu.ozon.ru/libra/work-with-goods/trebovaniya-k-kartochkam-tovarov/product-information/obyazatelnaya-markirovka-tovarov#%D0%BA%D0%B0%D0%BA-%D0%BF%D0%BE%D0%BB%D1%83%D1%87%D0%B8%D1%82%D1%8C-%D0%BE%D1%82%D0%BC%D0%B5%D1%82%D0%BA%D1%83-%D0%BE-%D1%80%D0%B5%D0%B3%D0%B8%D1%81%D1%82%D1%80%D0%B0%D1%86%D0%B8%D0%B8-%D0%B2-%C2%AB%D1%87%D0%B5%D1%81%D1%82%D0%BD%D0%BE%D0%BC-%D0%B7%D0%BD%D0%B0%D0%BA%D0%B5%C2%BB)
 
 # Как создать rich-контент в визуальном редакторе
 

@@ -1,24 +1,24 @@
 ---
-title: Код ТН ВЭД предмета
+title: Код ОКПД2 предмета
 api: wb-item-management
 method: GET
-path: /content/v2/directory/tnved
-operation_id: getV2DirectoryTnved
+path: /api/content/v2/directory/okpd
+operation_id: getV2DirectoryOkpd
 tags:
   - categoriesSubcategoriesAndCharacteristics
 spec_version: items
 source: "https://dev.wildberries.ru/docs/openapi/item-management"
 deprecated: false
-content_sha: d1c4ed7f9e832898
+content_sha: 18f4c2ffc328d026
 ---
 
-# Код ТН ВЭД предмета
+# Код ОКПД2 предмета
 
-`GET /content/v2/directory/tnved`
+`GET /api/content/v2/directory/okpd`
 
 Описание метода
 
-Метод возвращает список кодов ТН ВЭД по ID [предмета](./item-management#tag/categoriesSubcategoriesAndCharacteristics/operation/getV2ObjectAll) и фрагменту кода ТН ВЭД.
+Метод возвращает список кодов ОКПД2 по ID [предмета](./work-with-products#tag/categoriesSubcategoriesAndCharacteristics/paths/~1content~1v2~1object~1all/get) и фрагменту кода ОКПД2.
 
 Лимит запросов на один аккаунт продавца для всех методов категории Контент:
 
@@ -40,26 +40,24 @@ content_sha: d1c4ed7f9e832898
 
  [установки рекомендаций для товаров](./item-management#tag/recommendations/operation/postV1RecommendationsSet)
 
-В песочнице — максимум 1 запрос в секунду суммарно для всех методов Контента.
-
 ## Параметры
 
 | Имя | Где | Тип | Обяз. | Описание |
 |---|---|---|---|---|
-| `subjectID` | query | integer | да | ID предмета |
-| `search` | query | integer | нет | Поиск по коду ТН ВЭД. Работает только в паре с `subjectID` |
-| `locale` | query | string | нет | Язык полей ответа: - `ru` — русский - `en` — английский - `zh` — китайский Не используется в песочнице. Данные песочницы возвращаются только на русском языке |
+| `subjectId` | query | integer | да | ID предмета |
+| `search` | query | string | нет | Поиск по фрагменту кода ОКПД2. Работает только в паре с `subjectId`. Укажите первые цифры кода через точку, чтобы найти код по этому фрагменту |
+| `locale` | query | string (ru) | нет | Язык полей ответа: - `ru` — русский |
 
 ## Ответы
 
 **200** — Успешно
 
-- `data` — array[object]. Данные
-  - `tnved` — string. Код ТН ВЭД
-  - `isKiz` — boolean. - `true` — код маркировки [Честного знака](https://честныйзнак.рф/) требуется - `false` — код маркировки [Честного знака](https://честныйзнак.рф/) не требуется
-- `error` — boolean. Флаг наличия ошибки
-- `errorText` — string. Описание ошибки
-- `additionalErrors` — string. Дополнительные ошибки
+- `data` — array[object] **обязательный**. Данные
+  - `okpd2` — string **обязательный**. Код ОКПД2
+  - `description` — string **обязательный**. Текстовое описание товаров, которые входят в группу
+- `error` — boolean **обязательный**. Флаг наличия ошибки
+- `errorText` — string **обязательный**. Текст ошибки
+- `additionalErrors` — string **обязательный**. Дополнительные ошибки
 
 **400** — Неправильный запрос
 

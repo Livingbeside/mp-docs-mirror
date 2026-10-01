@@ -2,9 +2,9 @@
 title: Работа с товарами — все методы
 api: wb-item-management
 spec_version: items
-operations: 52
+operations: 55
 source: "https://dev.wildberries.ru/docs/openapi/item-management"
-content_sha: c8216faf01e6849b
+content_sha: e196dff068f59127
 ---
 
 # Работа с товарами
@@ -22,7 +22,7 @@ content_sha: c8216faf01e6849b
 
  Узнать, как использовать методы в бизнес-кейсах, можно в [инструкции](/knowledge-base/articles/019d49a4-1320-71bb-9dac-8ba07e7177ce/rabota-s-tovarami) по работе с товарами
 
-Версия спеки: `items` · методов: **52** · разделов справки: **10**
+Версия спеки: `items` · методов: **55** · разделов справки: **10**
 
 Источник: https://dev.wildberries.ru/docs/openapi/item-management
 
@@ -32,6 +32,9 @@ content_sha: c8216faf01e6849b
 | `DELETE` | `/api/v3/warehouses/{warehouseId}` | sellerWarehouses | [Удалить склад продавца{{ /api/v3/warehouses/{warehouseId} }}](sellerwarehouses/delete-api-v3-warehouses-warehouseid.md) |
 | `DELETE` | `/content/v2/tag/{id}` | labels | [Удаление ярлыка{{ /content/v2/tag/{id} }}](labels/delete-content-v2-tag-id.md) |
 | `GET` | `/api/content/v1/brands` | categoriesSubcategoriesAndCharacteristics | [Бренды](categoriessubcategoriesandcharacteristics/get-api-content-v1-brands.md) |
+| `GET` | `/api/content/v2/directory/okpd/all` | categoriesSubcategoriesAndCharacteristics | [Список кодов ОКПД2](categoriessubcategoriesandcharacteristics/get-api-content-v2-directory-okpd-all.md) |
+| `GET` | `/api/content/v2/directory/okpd` | categoriesSubcategoriesAndCharacteristics | [Код ОКПД2 предмета](categoriessubcategoriesandcharacteristics/get-api-content-v2-directory-okpd.md) |
+| `GET` | `/api/content/v2/directory/tnved/all` | categoriesSubcategoriesAndCharacteristics | [Список кодов ТН ВЭД](categoriessubcategoriesandcharacteristics/get-api-content-v2-directory-tnved-all.md) |
 | `GET` | `/api/v2/buffer/goods/task` | pricesAndDiscounts | [Детализация необработанной загрузки](pricesanddiscounts/get-api-v2-buffer-goods-task.md) |
 | `GET` | `/api/v2/buffer/tasks` | pricesAndDiscounts | [Состояние необработанной загрузки](pricesanddiscounts/get-api-v2-buffer-tasks.md) |
 | `GET` | `/api/v2/history/goods/task` | pricesAndDiscounts | [Детализация обработанной загрузки](pricesanddiscounts/get-api-v2-history-goods-task.md) |
@@ -47,7 +50,7 @@ content_sha: c8216faf01e6849b
 | `GET` | `/content/v2/directory/countries` | categoriesSubcategoriesAndCharacteristics | [Страна производства](categoriessubcategoriesandcharacteristics/get-content-v2-directory-countries.md) |
 | `GET` | `/content/v2/directory/kinds` | categoriesSubcategoriesAndCharacteristics | [Пол](categoriessubcategoriesandcharacteristics/get-content-v2-directory-kinds.md) |
 | `GET` | `/content/v2/directory/seasons` | categoriesSubcategoriesAndCharacteristics | [Сезон](categoriessubcategoriesandcharacteristics/get-content-v2-directory-seasons.md) |
-| `GET` | `/content/v2/directory/tnved` | categoriesSubcategoriesAndCharacteristics | [ТНВЭД-код](categoriessubcategoriesandcharacteristics/get-content-v2-directory-tnved.md) |
+| `GET` | `/content/v2/directory/tnved` | categoriesSubcategoriesAndCharacteristics | [Код ТН ВЭД предмета](categoriessubcategoriesandcharacteristics/get-content-v2-directory-tnved.md) |
 | `GET` | `/content/v2/directory/vat` | categoriesSubcategoriesAndCharacteristics | [Ставка НДС](categoriessubcategoriesandcharacteristics/get-content-v2-directory-vat.md) |
 | `GET` | `/content/v2/object/all` | categoriesSubcategoriesAndCharacteristics | [Список предметов](categoriessubcategoriesandcharacteristics/get-content-v2-object-all.md) |
 | `GET` | `/content/v2/object/charcs/{subjectId}` | categoriesSubcategoriesAndCharacteristics | [Характеристики предмета{{ /content/v2/object/charcs/{subjectId} }}](categoriessubcategoriesandcharacteristics/get-content-v2-object-charcs-subjectid.md) |

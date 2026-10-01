@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /analytics-and-metrics/fulfillment-reports/prodaji-so-sklada-ozon
 source: "https://seller-edu.ozon.ru/libra/analytics-and-metrics/fulfillment-reports/prodaji-so-sklada-ozon"
-updated: "2026-07-21 07:44:47"
+updated: "2026-09-30 06:46:40"
 doc_id: 938
-fetched_at: "2026-08-28T12:11:15Z"
-content_sha: 32b4c6b9fa831e90
+fetched_at: "2026-10-01T01:57:11Z"
+content_sha: 8664d49b27eef08d
 ---
 
 # Отчёты по продажам со склада Ozon
@@ -66,7 +66,9 @@ _Главная / Аналитика / Отчёты_
 
 [Какие товары показываем в отчёте](/fbo/rabota-so-stokom/upravlenie-ostatkami-i-likvidnost-tovarov#%D0%BA%D0%B0%D0%BA%D0%B8%D0%B5-%D1%82%D0%BE%D0%B2%D0%B0%D1%80%D1%8B-%D0%BF%D0%BE%D0%BA%D0%B0%D0%B7%D1%8B%D0%B2%D0%B0%D0%B5%D0%BC-%D0%B2-%D0%BE%D1%82%D1%87%D1%91%D1%82%D0%B5)
 
-[Отчёт в личном кабинете](https://seller.ozon.ru/app/supply/stocks-management/reports) можно сформировать с 1 января 2022 года до даты на двое суток меньшей текущего числа. Максимальный период для выгрузки — 1 год. Отчёт будет пустым, если вы не продаёте товары по схеме FBO. Из отчёта можно узнать, сколько ваших товаров находится на складах Ozon, а также посмотреть движение остатков за выбранный период.
+## Оборотная ведомость по товарам
+
+[Отчёт в личном кабинете](https://seller.ozon.ru/app/analytics/fulfillment-reports/stocks-and-movement-products) можно сформировать с 1 января 2022 года до даты на двое суток меньшей текущего числа. Максимальный период для выгрузки — 1 год. Отчёт будет пустым, если вы не продаёте товары по схеме FBO. Из отчёта можно узнать, сколько ваших товаров находится на складах Ozon, а также посмотреть движение остатков за выбранный период.
 
 Пояснения к полям отчёта:
 

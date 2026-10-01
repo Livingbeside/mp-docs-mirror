@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /commissions-tariffs/legal-information/full-actual-commissions
 source: "https://seller-edu.ozon.ru/libra/commissions-tariffs/legal-information/full-actual-commissions"
-updated: "2026-09-28 15:33:48"
+updated: "2026-09-30 16:07:51"
 doc_id: 700
-fetched_at: "2026-09-29T02:06:17Z"
-content_sha: 6a86d6a0215bbfcf
+fetched_at: "2026-10-01T01:57:10Z"
+content_sha: af3f44d5ece2fa9d
 ---
 
 # Полный список комиссий и тарифов
@@ -144,7 +144,7 @@ _Главная / Комиссии и тарифы / Юридическая ин
 
 Для поставок, принятых с 22 сентября по 31 декабря 2026 года включительно, действуют специальные сроки размещения без платы.
 
-[Скачать таблицу со сроками и условиями по категориям](https://cdn.ozone.ru/s3/ozon-disk-api/Seller-edu/files/commissions-tariffs/commissions/%D0%A1%D1%80%D0%BE%D0%BA%D0%B8_%D0%B8_%D1%83%D1%81%D0%BB%D0%BE%D0%B2%D0%B8%D1%8F_%D1%80%D0%B0%D0%B7%D0%BC%D0%B5%D1%89%D0%B5%D0%BD%D0%B8%D1%8F_%D1%81_22.09.26_1789985034.xlsx)
+**[Скачать таблицу со сроками и условиями по категориям](https://cdn.ozone.ru/s3/ozon-disk-api/Seller-edu/files/commissions-tariffs/commissions/%D0%A1%D1%80%D0%BE%D0%BA%D0%B8_%D0%B8_%D1%83%D1%81%D0%BB%D0%BE%D0%B2%D0%B8%D1%8F_%D1%80%D0%B0%D0%B7%D0%BC%D0%B5%D1%89%D0%B5%D0%BD%D0%B8%D1%8F_%D1%81_01_10_26_1790683602.xlsx)**
 
 Если товар не продан во время транзита, с 22-го дня после даты приёмки начнётся первый день размещения товара на складе.
 
