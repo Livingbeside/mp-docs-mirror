@@ -2,14 +2,14 @@
 title: LaaS
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/overview/laas.md"
-fetched_at: "2026-09-24T02:13:29Z"
-content_sha: eae502888feb56a7
+fetched_at: "2026-10-02T02:05:23Z"
+content_sha: 7d3f1b6e17533855
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.61.1
+    content: Diplodoc Platform v5.62.0
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/overview/laas.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/overview/laas.md

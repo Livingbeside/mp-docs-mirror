@@ -2,14 +2,14 @@
 title: Создание возврата
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/returns/createReturn.md"
-fetched_at: "2026-09-24T02:14:22Z"
-content_sha: 07a59906dc658dab
+fetched_at: "2026-10-02T02:06:18Z"
+content_sha: 3014df158aeb4c66
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.61.1
+    content: Diplodoc Platform v5.62.0
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/returns/createReturn.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/returns/createReturn.md

@@ -2,14 +2,14 @@
 title: Индекс качества
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/ratings.md"
-fetched_at: "2026-09-24T02:13:25Z"
-content_sha: 0a1c1f3e4a90e3f2
+fetched_at: "2026-10-02T02:05:19Z"
+content_sha: 8d351c4774652b68
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.61.1
+    content: Diplodoc Platform v5.62.0
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/step-by-step/ratings.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/ratings.md

@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /seller-rating/subscription-premium-plus
 source: "https://seller-edu.ozon.ru/libra/seller-rating/subscription-premium-plus"
-updated: "2026-08-04 11:24:13"
+updated: "2026-10-01 14:36:02"
 doc_id: 1954
-fetched_at: "2026-08-28T12:11:14Z"
-content_sha: 3ef5e0e89ed340b4
+fetched_at: "2026-10-02T02:01:53Z"
+content_sha: c64f3455a58033b9
 ---
 
 # Подписка Premium Plus
@@ -20,7 +20,7 @@ _Главная / Подписки_
 
 Premium Plus — это подписка для продавцов, которые торгуют товарами и зарегистрированы на территории РФ как самозанятые, ИП или юридические лица.
 
-В подписке — преимущества Premium, доступ к программному обеспечению «Расширенная Аналитика» и новые функции, доступные только в рамках Premium Plus. [Чем Premium Plus отличается от Premium](/seller-rating/about-rating/subscription-premium-plus#%D0%BA%D0%B0%D0%BA%D0%B8%D0%B5-%D0%BF%D1%80%D0%B5%D0%B8%D0%BC%D1%83%D1%89%D0%B5%D1%81%D1%82%D0%B2%D0%B0-%D0%B4%D0%B0%D1%91%D1%82-%D0%BF%D0%BE%D0%B4%D0%BF%D0%B8%D1%81%D0%BA%D0%B0-premium-plus)
+В подписке — преимущества Premium и новые функции, доступные в рамках Premium Plus. [Чем Premium Plus отличается от Premium](/seller-rating/about-rating/subscription-premium-plus#%D0%BA%D0%B0%D0%BA%D0%B8%D0%B5-%D0%BF%D1%80%D0%B5%D0%B8%D0%BC%D1%83%D1%89%D0%B5%D1%81%D1%82%D0%B2%D0%B0-%D0%B4%D0%B0%D1%91%D1%82-%D0%BF%D0%BE%D0%B4%D0%BF%D0%B8%D1%81%D0%BA%D0%B0-premium-plus)
 
 # Какие преимущества даёт подписка Premium Plus
 
@@ -30,9 +30,7 @@ Premium Plus — это подписка для продавцов, которы
 | Поднятие в поиске товаров с **супер-выгодным индексом цен** — 10% без подписки. | 12,5% | 15% |
 | Поднятие в поиске товаров с **выгодным индексом цен** — 7,5% без подписки. | 10% | 12,5% |
 | Подсветка товара в результатах поиска и каталоге новым бейджем «Premium-продавец». | − | ✔ |
-| Данные об оборотах ближайших конкурентов и лидера в вашей категории — в расширенном отчёте [«Конкуренты»](https://seller-edu.ozon.ru/analytics-and-metrics/analytics-for-premium/competitive-position). | Сравнение до 2 конкурентов | Сравнение до 8 конкурентов |
-| Доступ к программному обеспечению «Расширенная Аналитика»: [Продажи моих товаров](https://seller-edu.ozon.ru/analytics-and-metrics/graphs/charts);[Акции](/analytics-and-metrics/graphs/promo?tag=%D0%90%D0%BD%D0%B0%D0%BB%D0%B8%D1%82%D0%B8%D0%BA%D0%B0);[Тренды](/analytics-and-metrics/analytics-for-premium/trends?tag=%D0%90%D0%BD%D0%B0%D0%BB%D0%B8%D1%82%D0%B8%D0%BA%D0%B0&page=2);[Конкуренты](https://seller-edu.ozon.ru/analytics-and-metrics/analytics-for-premium/competitive-position);[Распродано](/analytics-and-metrics/what-to-sell/rasprodano). | В базовой конфигурации, для 2 сотрудников с ролью «[Аналитик](https://seller-edu.ozon.ru/libra/personal-account/user-management#%D0%BA%D0%B0%D0%BA%D0%B8%D0%B5-%D0%B1%D1%8B%D0%B2%D0%B0%D1%8E%D1%82-%D1%80%D0%BE%D0%BB%D0%B8-%D0%B2-%D0%BB%D0%B8%D1%87%D0%BD%D0%BE%D0%BC-%D0%BA%D0%B0%D0%B1%D0%B8%D0%BD%D0%B5%D1%82%D0%B5)» | В расширенной конфигурации, для всех сотрудников |
-| Статистика о ваших покупателях и интересных им категориях — в отчёте «[Портрет покупателя](https://seller-edu.ozon.ru/analytics-and-metrics/analytics-for-premium/portret-pokupatelia)». Используйте их, чтобы расширять ассортимент и делать акции эффективнее. | Для 2 сотрудников с ролью «[Аналитик](https://seller-edu.ozon.ru/libra/personal-account/user-management#%D0%BA%D0%B0%D0%BA%D0%B8%D0%B5-%D0%B1%D1%8B%D0%B2%D0%B0%D1%8E%D1%82-%D1%80%D0%BE%D0%BB%D0%B8-%D0%B2-%D0%BB%D0%B8%D1%87%D0%BD%D0%BE%D0%BC-%D0%BA%D0%B0%D0%B1%D0%B8%D0%BD%D0%B5%D1%82%D0%B5)» | Без ограничений |
+| Статистика о ваших покупателях и интересных им категориях — в отчёте «[Портрет покупателя](https://seller-edu.ozon.ru/analytics-and-metrics/analytics-for-premium/portret-pokupatelia)». Используйте их, чтобы расширять ассортимент и делать акции эффективнее. | ✔ | ✔ |
 | Скидка 10% на плату за [рассылки бонусов продавца](/how-to-sell-effectively/loyalty/mailing-bonusy-prodavca) (в том числе и на умную рассылку). | 5 рассылок | Без ограничений |
 | Заметный бейдж на карточке товара, на странице магазина и в чатах. |  |  |
 | Оформление витрины магазина, | 1 баннер S и 1 полка | Все блоки |
@@ -40,30 +38,46 @@ Premium Plus — это подписка для продавцов, которы
 | 50 000 [сообщений](https://seller-edu.ozon.ru/work-with-byuers/crm/sozdanie-rassylki-i-bannera-v-crm) на постоянных и новых покупателей — 1 сообщение 1 покупателю в месяц. | − | ✔ |
 | Отсутствие блока с рекомендациями на вашей витрине — покупатели не увидят товары других продавцов. | − | ✔ |
 | Фильтр «Товары Premium-продавцов» в поиске и каталоге для покупателей. | ✔ | ✔ |
+| Юнит-экономика в мобильном приложении. | По магазину | По магазину и схемам продаж |
 | Приоритетная поддержка в чатах. | ✔ | ✔ |
 | Обучение на образовательной платформе — получите доступ к эксклюзивным курсам и новым материалам, которые мы будем выпускать. | ✔ | ✔ |
 | Интеграция с Seller API: общайтесь [в чатах с покупателями](https://docs.ozon.ru/api/seller/#tag/ChatAPI);получайте [расширенную аналитику](https://docs.ozon.ru/api/seller/#operation/AnalyticsAPI_AnalyticsGetData) и [отчёт о реализации товаров за день](https://docs.ozon.ru/api/seller/#operation/FinanceAPI_GetRealizationByDayReportV1). [Подробнее о Seller API](https://seller-edu.ozon.ru/api-ozon/how-to-api) | − | ✔ |
 | Инструменты кабинета бренда по подписке Premium Brand. Для этого нужно подать заявку на представительство и загрузить подтверждающие документы. Если пройдёте проверку, получите доступ к функционалу личного кабинета. | *−* | ✔ |
+| **Аналитика в подписках от ООО «Озон Технологии»** |  |  |
+| Данные об оборотах ближайших конкурентов и лидера в вашей категории — в расширенном отчёте [«Конкуренты»](https://seller-edu.ozon.ru/analytics-and-metrics/analytics-for-premium/competitive-position). | Сравнение до 2 конкурентов. | Сравнение до 8 конкурентов. |
+| Доступ к программному обеспечению «Расширенная Аналитика»: [Продажи моих товаров](https://seller-edu.ozon.ru/analytics-and-metrics/graphs/charts);[Акции](https://seller-edu.ozon.ru/analytics-and-metrics/graphs/promo?tag=%D0%90%D0%BD%D0%B0%D0%BB%D0%B8%D1%82%D0%B8%D0%BA%D0%B0);[Тренды](https://seller-edu.ozon.ru/analytics-and-metrics/analytics-for-premium/trends?tag=%D0%90%D0%BD%D0%B0%D0%BB%D0%B8%D1%82%D0%B8%D0%BA%D0%B0&page=2);[Конкуренты](https://seller-edu.ozon.ru/analytics-and-metrics/analytics-for-premium/competitive-position);[Распродано](https://seller-edu.ozon.ru/analytics-and-metrics/what-to-sell/rasprodano). | В базовой конфигурации, для 2 сотрудников с ролью «[Аналитик](https://seller-edu.ozon.ru/libra/personal-account/user-management#%D0%BA%D0%B0%D0%BA%D0%B8%D0%B5-%D0%B1%D1%8B%D0%B2%D0%B0%D1%8E%D1%82-%D1%80%D0%BE%D0%BB%D0%B8-%D0%B2-%D0%BB%D0%B8%D1%87%D0%BD%D0%BE%D0%BC-%D0%BA%D0%B0%D0%B1%D0%B8%D0%BD%D0%B5%D1%82%D0%B5)». | В расширенной конфигурации, для всех сотрудников. |
 
-# Сколько стоит подписка
+# Сколько стоит подписка Premium Plus
 
-[Плату за подписку Premium Plus](/commissions-tariffs/legal-information/full-actual-commissions#2-8-2-%D0%BF%D0%BE%D0%B4%D0%BF%D0%B8%D1%81%D0%BA%D0%B0-premium-plus) списываем одним платежом сразу при подключении, а затем — в начале каждого нового месяца подписки.
+При подключении спишем [плату](https://seller-edu.ozon.ru/commissions-tariffs/legal-information/full-actual-commissions#2-8-2-%D0%BF%D0%BE%D0%B4%D0%BF%D0%B8%D1%81%D0%BA%D0%B0-premium-plus) двумя платежами за месяц подписки, а затем — в начале каждого нового месяца подписки.
 
-Если у вас не получается подключить подписку, проверьте, что на вашем балансе достаточно средств. Пополнить баланс можно в разделе **[Финансы → Баланс на сегодня](https://seller.ozon.ru/app/finances/report/current)**. [Как пополнить баланс](/finances-documents/calculations-documents/zadolzhennost#%D0%BA%D0%B0%D0%BA-%D0%BF%D0%BE%D0%B3%D0%B0%D1%81%D0%B8%D1%82%D1%8C-%D0%B7%D0%B0%D0%B4%D0%BE%D0%BB%D0%B6%D0%B5%D0%BD%D0%BD%D0%BE%D1%81%D1%82%D1%8C:~:text=%D0%9F%D0%BE%D0%BF%D0%BE%D0%BB%D0%BD%D0%B8%D1%82%D1%8C%20%D0%B1%D0%B0%D0%BB%D0%B0%D0%BD%D1%81%20%D0%B8%D0%B7%20%D0%BB%D0%B8%D1%87%D0%BD%D0%BE%D0%B3%D0%BE%20%D0%BA%D0%B0%D0%B1%D0%B8%D0%BD%D0%B5%D1%82%D0%B0)
+Для подключения подписки должно быть достаточно средств на балансе. Баланс можно проверить и пополнить в разделе **[Финансы → Баланс на сегодня](https://seller.ozon.ru/app/finances/report/current)**. [Как пополнить баланс](https://seller-edu.ozon.ru/finances-documents/calculations-documents/zadolzhennost#%D0%BA%D0%B0%D0%BA-%D0%BF%D0%BE%D0%B3%D0%B0%D1%81%D0%B8%D1%82%D1%8C-%D0%B7%D0%B0%D0%B4%D0%BE%D0%BB%D0%B6%D0%B5%D0%BD%D0%BD%D0%BE%D1%81%D1%82%D1%8C:~:text=%D0%9F%D0%BE%D0%BF%D0%BE%D0%BB%D0%BD%D0%B8%D1%82%D1%8C%20%D0%B1%D0%B0%D0%BB%D0%B0%D0%BD%D1%81%20%D0%B8%D0%B7%20%D0%BB%D0%B8%D1%87%D0%BD%D0%BE%D0%B3%D0%BE%20%D0%BA%D0%B0%D0%B1%D0%B8%D0%BD%D0%B5%D1%82%D0%B0)
 
 **Пример**
 
 Если вы подключили подписку 5 августа, в этот же день спишем оплату за первый месяц, а 5 сентября — за следующий.
 
-# Где посмотреть списания
+# Где посмотреть списания за подписку Premium Plus
 
-В личном кабинете в разделе **[Финансы](https://seller.ozon.ru/app/finances/)** откройте [детализацию](https://seller-edu.ozon.ru/libra/finances-documents/calculations-documents/work-with-finance#%D0%B4%D0%B5%D1%82%D0%B0%D0%BB%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F-%D0%BD%D0%B0%D1%87%D0%B8%D1%81%D0%BB%D0%B5%D0%BD%D0%B8%D0%B8). В фильтре выберите тип начисления: **Продвижение и реклама → Подписка Premium Plus**. Чтобы посмотреть списания за конкретные месяцы, измените период в фильтре. Также списания будут в актах оказанных услуг по итогам месяца
+В личном кабинете в разделе **[Финансы](https://seller.ozon.ru/app/finances/)** откройте [детализацию](https://seller-edu.ozon.ru/libra/finances-documents/calculations-documents/work-with-finance#%D0%B4%D0%B5%D1%82%D0%B0%D0%BB%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F-%D0%BD%D0%B0%D1%87%D0%B8%D1%81%D0%BB%D0%B5%D0%BD%D0%B8%D0%B8). В фильтре выберите тип начисления:
 
-# Кто может подключить подписку
+**Продвижение и реклама → Подписка Premium Plus**;
 
-Подключить подписку могут продавцы, которые успешно пройдут нашу проверку. В целях безопасности критериев не раскрываем — это гарантирует, что мошенники не получат доступ к преимуществам подписки.
+**Продвижение и реклама → Подписка Аналитика Premium Plus**.
 
-# Как подключить подписку
+Чтобы посмотреть списания за конкретные месяцы, измените период в фильтре. Также списания будут в актах оказанных услуг по итогам месяца
+
+# Кто может подключить подписку Premium Plus
+
+Подключить подписку могут продавцы, которые:
+
+Успешно пройдут нашу проверку. В целях безопасности критериев не раскрываем — это гарантирует, что мошенники не получат доступ к преимуществам подписки.
+
+Приняли договор с ООО «Озон Технологии». Посмотреть условия договора и принять их можно при подключении подписки.
+
+Имеют достаточно денег на балансе.
+
+# Как подключить подписку Premium Plus
 
 Если вы прошли проверку, у вас появится баннер-приглашение в разделе в разделе **[Premium](https://seller.ozon.ru/app/subscriptions/premium)**. Он будет отображаться на странице, пока подходите по всем условиям. Чтобы подключить подписку, откройте , выберите **Premium **и нажмите **Подключить** в блоке **Premium Plus**.
 
@@ -103,7 +117,7 @@ Premium Plus — это подписка для продавцов, которы
 
 # Как отменить подписку или перейти на Premium или Premium Lite
 
-Вы можете отменить подписку в любой момент — при этом все преимущества сохранятся до конца оплаченного месяца. Для этого в самом низу страницы **[Настройки → Договоры](https://seller.ozon.ru/app/settings/contracts)** в блоке **Premium-подписка для продавца** нажмите **Отключить подписку**.
+Вы можете отменить подписку в любой момент — при этом все преимущества сохранятся до конца оплаченного месяца. Для этого в разделе **[Настройки → Договоры](https://seller.ozon.ru/app/settings/contracts)** в блоке **Premium для продавцов** нажмите **Отключить подписку**.
 
 Там же сможете перейти на подписку Premium или Premium Lite — для этого нажмите **Отключить подписку**, найдите блок **Перейти на Premium **либо **Перейти на Premium Lite** и нажмите **Подключить**.
 
@@ -113,14 +127,17 @@ Premium Plus — это подписка для продавцов, которы
 
 Так работает и переход на Premium — начнём списывать плату за него только тогда, когда закончится оплаченный месяц, а до тех пор вам будет доступен Premium Plus.
 
-# Почему можем отключить подписку
+# Почему можем отключить подписку Premium Plus
 
 Отключим подписку, если:
 
 Вы перестали соответствовать условиям.
 
-На балансе не хватает средств для продления подписки. Будем проверять баланс в течение 14 дней и автоматически возобновим подписку, как только появится достаточная сумма для оплаты. Если не пополните баланс за этот срок, отключим подписку. Отменить автоматическое возобновление подписки можно в разделе **[Настройки → Договоры](https://seller.ozon.ru/app/settings/contracts)**.
-Пополнить баланс можно в разделе **[Финансы → Баланс на сегодня](https://seller.ozon.ru/app/finances/report/current)**. [Как пополнить баланс](/finances-documents/calculations-documents/zadolzhennost#%D0%BA%D0%B0%D0%BA-%D0%BF%D0%BE%D0%B3%D0%B0%D1%81%D0%B8%D1%82%D1%8C-%D0%B7%D0%B0%D0%B4%D0%BE%D0%BB%D0%B6%D0%B5%D0%BD%D0%BD%D0%BE%D1%81%D1%82%D1%8C:~:text=%D0%9F%D0%BE%D0%BF%D0%BE%D0%BB%D0%BD%D0%B8%D1%82%D1%8C%20%D0%B1%D0%B0%D0%BB%D0%B0%D0%BD%D1%81%20%D0%B8%D0%B7%20%D0%BB%D0%B8%D1%87%D0%BD%D0%BE%D0%B3%D0%BE%20%D0%BA%D0%B0%D0%B1%D0%B8%D0%BD%D0%B5%D1%82%D0%B0)
+Вы расторгли договор с ООО «Интернет Решения» или ООО «Озон Технологии».
+
+Если недостаточно средств на балансе. Баланс можно проверить и пополнить в разделе **[Финансы → Баланс на сегодня](https://seller.ozon.ru/app/finances/report/current)**. [Как пополнить баланс](https://seller-edu.ozon.ru/finances-documents/calculations-documents/zadolzhennost#%D0%BA%D0%B0%D0%BA-%D0%BF%D0%BE%D0%B3%D0%B0%D1%81%D0%B8%D1%82%D1%8C-%D0%B7%D0%B0%D0%B4%D0%BE%D0%BB%D0%B6%D0%B5%D0%BD%D0%BD%D0%BE%D1%81%D1%82%D1%8C:~:text=%D0%9F%D0%BE%D0%BF%D0%BE%D0%BB%D0%BD%D0%B8%D1%82%D1%8C%20%D0%B1%D0%B0%D0%BB%D0%B0%D0%BD%D1%81%20%D0%B8%D0%B7%20%D0%BB%D0%B8%D1%87%D0%BD%D0%BE%D0%B3%D0%BE%20%D0%BA%D0%B0%D0%B1%D0%B8%D0%BD%D0%B5%D1%82%D0%B0)
+
+Будем проверять баланс в течение 14 дней и автоматически возобновим подписку, как только появится достаточная сумма для оплаты. Если не пополните баланс за этот срок, отключим подписку. Отменить автоматическое возобновление подписки можно в разделе **[Настройки → Договоры](https://seller.ozon.ru/app/settings/contracts)**.
 
 # Что ещё может быть полезно
 

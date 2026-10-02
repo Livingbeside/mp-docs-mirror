@@ -298,58 +298,6 @@
           ]
         }
       },
-      "UpdatedSuppliesWaybill": {
-        "value": {
-          "results": [
-            {
-              "success": true,
-              "supplyId": "WB-GI-100"
-            },
-            {
-              "error": {
-                "code": 400,
-                "detail": "IncorrectRequestBody"
-              },
-              "supplyId": "ax12"
-            },
-            {
-              "error": {
-                "code": 404,
-                "detail": "NotFound"
-              },
-              "supplyId": "WB-GI-99999999"
-            },
-            {
-              "error": {
-                "code": 409,
-                "detail": "SupplyShippingRequired"
-              },
-              "supplyId": "WB-GI-300"
-            },
-            {
-              "error": {
-                "code": 409,
-                "detail": "UnsuitableShippingType"
-              },
-              "supplyId": "WB-GI-400"
-            },
-            {
-              "error": {
-                "code": 409,
-                "detail": "WaybillUUIDIsProcessing"
-              },
-              "supplyId": "WB-GI-500"
-            },
-            {
-              "error": {
-                "code": 409,
-                "detail": "SupplyAlreadyScanned"
-              },
-              "supplyId": "WB-GI-600"
-            }
-          ]
-        }
-      },
       "WarehouseNameInvalid": {
         "value": {
           "code": "WarehouseNameInvalid",
@@ -1790,7 +1738,7 @@
             "type": "integer"
           },
           "shippingType": {
-            "description": "Способ доставки до пункта отгрузки:\n  - `selfShipping` — доставка силами продавца\n  - `transportCompany` — доставка через транспортную компанию. Для этого способа обязательно укажите ID ЭТрН — электронной транспортной накладной — в поле `waybillUuid`\n",
+            "description": "Способ доставки до пункта отгрузки:\n  - `selfShipping` — доставка силами продавца\n  - `transportCompany` — доставка через транспортную компанию\n",
             "enum": [
               "selfShipping",
               "transportCompany"
@@ -1805,7 +1753,7 @@
             "type": "boolean"
           },
           "waybillUuid": {
-            "description": "ID ЭТрН — электронной транспортной накладной. Обязателен при `\"shippingType\":\"transportCompany\"`",
+            "description": "ID ЭТрН — электронной транспортной накладной",
             "example": "550e8400-e29b-41d4-a716-384579387429",
             "nullable": true,
             "type": "string"
@@ -1986,36 +1934,6 @@
         ],
         "type": "object"
       },
-      "UpdateSuppliesWaybill": {
-        "properties": {
-          "data": {
-            "items": {
-              "$ref": "#/components/schemas/UpdateSupplyWaybill"
-            },
-            "maxItems": 100,
-            "minItems": 1,
-            "type": "array"
-          }
-        },
-        "required": [
-          "data"
-        ],
-        "type": "object"
-      },
-      "UpdateSuppliesWaybillResponse": {
-        "properties": {
-          "results": {
-            "items": {
-              "$ref": "#/components/schemas/UpdatedSuppliesWaybill"
-            },
-            "type": "array"
-          }
-        },
-        "required": [
-          "results"
-        ],
-        "type": "object"
-      },
       "UpdateSupplyShippingMethod": {
         "properties": {
           "shippingDt": {
@@ -2029,7 +1947,7 @@
             "type": "integer"
           },
           "shippingType": {
-            "description": "Способ доставки до пункта отгрузки:\n  - `selfShipping` — доставка силами продавца\n  - `transportCompany` — доставка через транспортную компанию. Для этого способа обязательно [укажите ID ЭТрН](./orders-fbs#tag/fbsSupplies/operation/patchV3FbsSuppliesWaybill) — электронной транспортной накладной — в поле `waybillUuid`\n",
+            "description": "Способ доставки до пункта отгрузки:\n  - `selfShipping` — доставка силами продавца\n  - `transportCompany` — доставка через транспортную компанию\n",
             "enum": [
               "selfShipping",
               "transportCompany"
@@ -2051,66 +1969,11 @@
         ],
         "type": "object"
       },
-      "UpdateSupplyWaybill": {
-        "properties": {
-          "supplyId": {
-            "description": "ID поставки",
-            "example": "WB-GI-100",
-            "type": "string"
-          },
-          "waybillUuid": {
-            "description": "ID ЭТрН",
-            "example": "550e8400-e29b-41d4-a716-445676543567",
-            "format": "uuid",
-            "type": "string"
-          }
-        },
-        "required": [
-          "supplyId",
-          "waybillUuid"
-        ],
-        "type": "object"
-      },
       "UpdatedSuppliesShippingMethod": {
         "description": "Результат обработки запроса для одной поставки",
         "properties": {
           "error": {
             "description": "Ошибка обработки запроса для поставки. Возможные варианты ошибок:\n  - `400 IncorrectRequestBody`:\n    - некорректный ID поставки\n    - место отгрузки не найдено\n    - склад назначения находится не в РФ\n    - неизвестный `shippingType`\n    - дата не соответствует формату `YYYY-MM-DD`\n  - `400 FulfillmentRequired` — в месте отгрузки недоступна услуга **Фулфилмент в СЦ**\n  - `404 NotFound` — поставка не найдена\n  - `409 SupplyAlreadyScanned` — поставка или её короба уже отсканированы в пункте отгрузки\n  - `409 InvalidShippingDt` — некорректная дата отгрузки поставки\n",
-            "properties": {
-              "code": {
-                "description": "Код ошибки",
-                "type": "integer"
-              },
-              "detail": {
-                "description": "Дополнительная информация об ошибке\n",
-                "type": "string"
-              }
-            },
-            "required": [
-              "code",
-              "detail"
-            ],
-            "type": "object"
-          },
-          "success": {
-            "description": "Успешна ли обработка запроса для данной поставки. Может быть только `true`",
-            "type": "boolean"
-          },
-          "supplyId": {
-            "description": "ID поставки",
-            "type": "string"
-          }
-        },
-        "required": [
-          "supplyId"
-        ],
-        "type": "object"
-      },
-      "UpdatedSuppliesWaybill": {
-        "description": "Результат обработки запроса для одной поставки",
-        "properties": {
-          "error": {
-            "description": "Ошибка обработки запроса для поставки. Возможные варианты ошибок:\n  - `400 IncorrectRequestBody`:\n    - некорректный ID поставки\n    - склад назначения находится не в РФ\n  - `404 NotFound` — поставка не найдена\n  - `409 SupplyAlreadyScanned` — поставка или её короба уже отсканированы в пункте отгрузки\n  - `409 SupplyShippingRequired` — не указан пункт отгрузки поставки\n  - `409 UnsuitableShippingType` — не указан способ доставки либо способ доставки не `transportCompany`\n  - `409 WaybillUUIDIsProcessing` — ЭТрН находится в обработке\n",
             "properties": {
               "code": {
                 "description": "Код ошибки",
@@ -3320,7 +3183,7 @@
     },
     "/api/marketplace/v3/fbs/shipping-points": {
       "get": {
-        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод возвращает доступные пункты отгрузки поставок с фильтрами:\n  - по населённым пунктам России\n  - по типам товаров, которые принимает пункт отгрузки\n\nИспользуйте данные из этого метода, чтобы устанавливать [параметры отгрузки поставок](./orders-fbs#tag/fbsSupplies/operation/patchV3FbsSuppliesShippingMethod).\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца для методов <strong>сборочных заданий, поставок, пропусков и настроек автовозврата FBS</strong>:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 300 запросов | 200 мс | 20 запросов |\n\nОдин запрос с кодами ответов <code>4XX</code> учитывается как 10 запросов\n\n</div>\n",
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод возвращает доступные пункты отгрузки поставок с фильтрами:\n  - по населённым пунктам России\n  - по типам товаров, которые принимает пункт отгрузки\n\nИспользуйте данные из этого метода, чтобы устанавливать [параметры отгрузки поставок](./orders-fbs#tag/fbsSupplies/operation/patchV3FbsSuppliesShippingMethod).<br><br>\n\nДоступно только для продавцов из РФ.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца для методов <strong>сборочных заданий, поставок, пропусков и настроек автовозврата FBS</strong>:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 300 запросов | 200 мс | 20 запросов |\n\nОдин запрос с кодами ответов <code>4XX</code> учитывается как 10 запросов\n\n</div>\n",
         "operationId": "getV3FbsShippingPoints",
         "parameters": [
           {
@@ -3405,7 +3268,7 @@
     },
     "/api/marketplace/v3/fbs/supplies/shipping-method": {
       "patch": {
-        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод устанавливает способ доставки, дату и пункт отгрузки у поставок.<br><br>\n\nДля доставки транспортной компанией `\"shippingType\":\"transportCompany\"` укажите ID ЭТрН — электронной транспортной накладной — с помощью метода установки [ID ЭТрН поставки](./orders-fbs#tag/fbsSupplies/operation/patchV3FbsSuppliesWaybill).<br><br>\n\n<div class=\"description_important\">\n  Добавленный к поставке ID ЭТрН сбрасывается, если поменять способ доставки <code>\"shippingType\":\"transportCompany\"</code> на <code>selfShipping</code>. Если вы хотите изменить способ доставки обратно на <code>transportCompany</code>, <a href='./orders-fbs#tag/fbsSupplies/operation/patchV3FbsSuppliesWaybill'>добавьте ID ЭТрН</a> заново.\n</div>\n\nПараметры отгрузки нужно указать до передачи поставки в доставку. Вы можете обновлять параметры отгрузки до сканирования поставки и её коробов в пункте отгрузки. Когда поставка будет отсканирована, метод начнёт возвращать ошибку `409`.<br><br>\n\nВ запросе можно указать максимум 100 поставок. Результат обработки возвращается для каждой поставки отдельно.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца для методов <strong>сборочных заданий, поставок, пропусков и настроек автовозврата FBS</strong>:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 300 запросов | 200 мс | 20 запросов |\n\nОдин запрос с кодами ответов <code>4XX</code> учитывается как 10 запросов\n\n</div>\n",
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод устанавливает способ доставки, дату и пункт отгрузки у поставок.<br><br>\n\n\n\nПараметры отгрузки нужно указать до передачи поставки в доставку. Вы можете обновлять параметры отгрузки до сканирования поставки и её коробов в пункте отгрузки. Когда поставка будет отсканирована, метод начнёт возвращать ошибку `409`.<br><br>\n\nВ запросе можно указать максимум 100 поставок. Результат обработки возвращается для каждой поставки отдельно.<br><br>\n\nДоступно только для продавцов из РФ.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца для методов <strong>сборочных заданий, поставок, пропусков и настроек автовозврата FBS</strong>:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 300 запросов | 200 мс | 20 запросов |\n\nОдин запрос с кодами ответов <code>4XX</code> учитывается как 10 запросов\n\n</div>\n",
         "operationId": "patchV3FbsSuppliesShippingMethod",
         "requestBody": {
           "content": {
@@ -3604,101 +3467,6 @@
       ]
     },
     "/api/marketplace/v3/fbs/supplies/waybill": {
-      "patch": {
-        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод устанавливает ID ЭТрН — электронной транспортной накладной. Чтобы использовать метод, укажите [место отгрузки поставки](./orders-fbs#tag/fbsSupplies/operation/patchV3FbsSuppliesShippingMethod) со способом доставки `\"shippingType\":\"transportCompany\"`.<br><br>\n\nID ЭТрН нужно указать до передачи поставки в доставку. Вы можете обновлять ID ЭТрН до сканирования поставки и её коробов в пункте отгрузки. Когда поставка будет отсканирована, метод начнёт возвращать ошибку `409`.<br><br>\n\n\n\nВ запросе можно указать максимум 100 поставок. Результат обработки возвращается для каждой поставки отдельно.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца для методов <strong>сборочных заданий, поставок, пропусков и настроек автовозврата FBS</strong>:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 300 запросов | 200 мс | 20 запросов |\n\nОдин запрос с кодами ответов <code>4XX</code> учитывается как 10 запросов\n\n</div>\n",
-        "operationId": "patchV3FbsSuppliesWaybill",
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "allOf": [
-                  {
-                    "$ref": "#/components/schemas/UpdateSuppliesWaybill"
-                  },
-                  {
-                    "description": "Данные ЭТрН"
-                  }
-                ]
-              }
-            }
-          },
-          "required": true
-        },
-        "responses": {
-          "200": {
-            "content": {
-              "application/json": {
-                "examples": {
-                  "UpdatedSuppliesWaybill": {
-                    "$ref": "#/components/examples/UpdatedSuppliesWaybill"
-                  }
-                },
-                "schema": {
-                  "$ref": "#/components/schemas/UpdateSuppliesWaybillResponse"
-                }
-              }
-            },
-            "description": "<span class='response__value response__value_success'>Успешно</span>"
-          },
-          "400": {
-            "content": {
-              "application/json": {
-                "examples": {
-                  "IncorrectParameter": {
-                    "$ref": "#/components/examples/IncorrectParameter"
-                  }
-                },
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            },
-            "description": "<span class='response__value '>Неправильный запрос</span>"
-          },
-          "401": {
-            "$ref": "#/components/responses/401"
-          },
-          "403": {
-            "content": {
-              "application/json": {
-                "examples": {
-                  "AccessDenied": {
-                    "$ref": "#/components/examples/AccessDenied"
-                  }
-                },
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              },
-              "application/problem+json": {
-                "examples": {
-                  "Response403TokenCategory": {
-                    "$ref": "#/components/examples/Response403TokenCategory"
-                  }
-                },
-                "schema": {
-                  "$ref": "#/components/schemas/Response4XX"
-                }
-              }
-            },
-            "description": "<span class='response__value '>Доступ запрещён</span>"
-          },
-          "429": {
-            "$ref": "#/components/responses/429"
-          }
-        },
-        "security": [
-          {
-            "HeaderApiKey": []
-          }
-        ],
-        "summary": "Установить ID ЭТрН поставок{{ /api/marketplace/v3/fbs/supplies/waybill }}",
-        "tags": [
-          "fbsSupplies"
-        ],
-        "x-category": "marketplace",
-        "x-readonly-method": false
-      },
       "servers": [
         {
           "url": "https://marketplace-api.wildberries.ru"
@@ -8107,7 +7875,7 @@
       "x-displayName": "Идентификаторы маркировки FBS"
     },
     {
-      "description": "<div class=\"description_auth\">\n  Для доступа к методам используйте <a href=\"./api-information#tag/authorization/Kak-sozdat-personalnyj-bazovyj-ili-testovyj-token\">токен</a> для категории <strong>Маркетплейс</strong>\n</div>\n\n<div class=\"description_important\">\n  Узнать больше о поставках FBS можно в <a href=\"https://seller.wildberries.ru/instructions/material/A-11?goBackOption=prevRoute&categoryId=6d85301c-719b-4145-9275-2ac8b793f345\">справочном центре</a>\n</div>\n\nДля работы с поставками:\n\n  <div class=\"description_important\">\n  Пункты 3-5 обязательны к выполнению при доставке поставки на пункт выдачи заказов (ПВЗ).\n  </div>\n\n  1. [Создайте новую поставку](./orders-fbs#tag/fbsSupplies/operation/postV3Supplies). В ответ вернется ID созданной поставки в формате `WB-GI-1234567`.\n  1. В текущую новую поставку [добавьте сборочные задания](./orders-fbs#tag/fbsSupplies/operation/patchV3SuppliesSupplyIdOrders), которые вы повезёте на склад или ПВЗ. После того, как сборочные задания будут добавлены к поставке, они будут переведены в статус `confirm` — на сборке.\n  1. [Установите параметры отгрузки поставки](./orders-fbs#tag/fbsSupplies/operation/patchV3FbsSuppliesShippingMethod). Для этого получите [список пунктов отгрузки поставок](./orders-fbs#tag/fbsSupplies/operation/getV3FbsShippingPoints). Доступно только для продавцов из РФ.<br>\n  При доставке транспортной компанией обязательно [укажите ID ЭТрН](./orders-fbs#tag/Postavki-FBS/operation/patchV3FbsSuppliesWaybill) — электронной транспортной накладной.\n  1. [Добавьте грузоместа в поставку](./orders-fbs#tag/fbsSupplies/operation/postV3SuppliesSupplyIdTrbx).\n  1. [Проверьте список грузомест](./orders-fbs#tag/fbsSupplies/operation/getV3SuppliesSupplyIdTrbx).\n  1. [Получите стикеры грузомест](./orders-fbs#tag/fbsSupplies/operation/postV3SuppliesSupplyIdTrbxStickers). Распечатайте и наклейте стикеры на грузоместа.\n  1. После того как поставка будет укомплектована нужными сборочными заданиями, необходимо [передать её в доставку](./orders-fbs#tag/fbsSupplies/operation/patchV3SuppliesSupplyIdDeliver). Если поставка не была передана в доставку, то при сканировании её QR-кода или приёмке первого товара на ПВЗ поставка автоматически закроется. При передаче сборочных заданий в доставку они будут автоматически собраны и переведены в статус `complete` — в доставке.\n  1. Для поставок из стран ЕАЭС добавьте данные [СПОТ](https://www.nalog.gov.ru/rn77/related_activities/spot). Получите [список стран ОКСМ](./orders-fbs#tag/fbsSupplies/operation/getV3FbsDictionariesCountriesOksm) для [добавления данных СПОТ в поставку](./orders-fbs#tag/fbsSupplies/operation/putV3FbsSuppliesSupplyIdSpot). Вы можете получать [данные СПОТ для списка поставок](./orders-fbs#tag/fbsSupplies/operation/postV3FbsSuppliesSpotList) и [QR-коды СПОТ](./orders-fbs#tag/fbsSupplies/operation/getV3FbsSuppliesSupplyIdStickersSpot). Сейчас методы доступны только для продавцов из Кыргызстана. В дальнейшем методы будут доступны продавцам из любой страны ЕАЭС кроме РФ, следите за обновлениями.\n  1. Если поставка была отсканирована в пункте приёмки, но при этом в ней всё ещё есть неотсканированные товары, спустя определённое время необходимо доставить их повторно. Проверьте все [сборочные задания, требующие повторной отгрузки на данный момент](./orders-fbs#tag/fbsAssemblyOrders/operation/getV3SuppliesOrdersReshipment). Данные сборочные задания можно перевести в [другую активную поставку](./orders-fbs#tag/fbsSupplies/operation/patchV3SuppliesSupplyIdOrders). Сборочное задание также будет переведено в статус `confirm` — на сборке.\n\nТакже вы можете:\n  - [удалить грузоместа из поставки](./orders-fbs#tag/fbsSupplies/operation/deleteV3SuppliesSupplyIdTrbx), но только пока поставка находится на сборке\n  - получить [ID всех сборочных заданий, добавленных к поставке](./orders-fbs#tag/fbsSupplies/operation/getV3SuppliesSupplyIdOrderIds)\n  - получить информацию [обо всех поставках продавца](./orders-fbs#tag/fbsSupplies/operation/getV3Supplies) или [о конкретной поставке](./orders-fbs#tag/fbsSupplies/operation/getV3SuppliesSupplyId)\n  - [удалить поставку](./orders-fbs#tag/fbsSupplies/operation/deleteV3SuppliesSupplyId) при условии, что она активна и за ней не закреплены сборочные задания\n  - [перемещать сборочные задания между активными поставками](./orders-fbs#tag/fbsSupplies/operation/patchV3SuppliesSupplyIdOrders). Нельзя перемещать сборочное задание из уже закрытой поставки, только если оно не требует повторной отгрузки\n  - получить [QR-код поставки](./orders-fbs#tag/fbsSupplies/operation/getV3SuppliesSupplyIdBarcode) в форматах SVG, ZPL или PNG. Доступно только после передачи поставки в доставку\n",
+      "description": "<div class=\"description_auth\">\n  Для доступа к методам используйте <a href=\"./api-information#tag/authorization/Kak-sozdat-personalnyj-bazovyj-ili-testovyj-token\">токен</a> для категории <strong>Маркетплейс</strong>\n</div>\n\n<div class=\"description_important\">\n  Узнать больше о поставках FBS можно в <a href=\"https://seller.wildberries.ru/instructions/material/A-11?goBackOption=prevRoute&categoryId=6d85301c-719b-4145-9275-2ac8b793f345\">справочном центре</a>\n</div>\n\nДля работы с поставками:\n\n  <div class=\"description_important\">\n  Пункты 3-5 обязательны к выполнению при доставке поставки на пункт выдачи заказов (ПВЗ).\n  </div>\n\n  1. [Создайте новую поставку](./orders-fbs#tag/fbsSupplies/operation/postV3Supplies). В ответ вернется ID созданной поставки в формате `WB-GI-1234567`.\n  1. В текущую новую поставку [добавьте сборочные задания](./orders-fbs#tag/fbsSupplies/operation/patchV3SuppliesSupplyIdOrders), которые вы повезёте на склад или ПВЗ. После того, как сборочные задания будут добавлены к поставке, они будут переведены в статус `confirm` — на сборке.\n  1. [Установите параметры отгрузки поставки](./orders-fbs#tag/fbsSupplies/operation/patchV3FbsSuppliesShippingMethod). Для этого получите [список пунктов отгрузки поставок](./orders-fbs#tag/fbsSupplies/operation/getV3FbsShippingPoints). Доступно только для продавцов из РФ.<br>\n  \n  1. [Добавьте грузоместа в поставку](./orders-fbs#tag/fbsSupplies/operation/postV3SuppliesSupplyIdTrbx).\n  1. [Проверьте список грузомест](./orders-fbs#tag/fbsSupplies/operation/getV3SuppliesSupplyIdTrbx).\n  1. [Получите стикеры грузомест](./orders-fbs#tag/fbsSupplies/operation/postV3SuppliesSupplyIdTrbxStickers). Распечатайте и наклейте стикеры на грузоместа.\n  1. После того как поставка будет укомплектована нужными сборочными заданиями, необходимо [передать её в доставку](./orders-fbs#tag/fbsSupplies/operation/patchV3SuppliesSupplyIdDeliver). Если поставка не была передана в доставку, то при сканировании её QR-кода или приёмке первого товара на ПВЗ поставка автоматически закроется. При передаче сборочных заданий в доставку они будут автоматически собраны и переведены в статус `complete` — в доставке.\n  1. Для поставок из стран ЕАЭС добавьте данные [СПОТ](https://www.nalog.gov.ru/rn77/related_activities/spot). Получите [список стран ОКСМ](./orders-fbs#tag/fbsSupplies/operation/getV3FbsDictionariesCountriesOksm) для [добавления данных СПОТ в поставку](./orders-fbs#tag/fbsSupplies/operation/putV3FbsSuppliesSupplyIdSpot). Вы можете получать [данные СПОТ для списка поставок](./orders-fbs#tag/fbsSupplies/operation/postV3FbsSuppliesSpotList) и [QR-коды СПОТ](./orders-fbs#tag/fbsSupplies/operation/getV3FbsSuppliesSupplyIdStickersSpot). Сейчас методы доступны только для продавцов из Кыргызстана. В дальнейшем методы будут доступны продавцам из любой страны ЕАЭС кроме РФ, следите за обновлениями.\n  1. Если поставка была отсканирована в пункте приёмки, но при этом в ней всё ещё есть неотсканированные товары, спустя определённое время необходимо доставить их повторно. Проверьте все [сборочные задания, требующие повторной отгрузки на данный момент](./orders-fbs#tag/fbsAssemblyOrders/operation/getV3SuppliesOrdersReshipment). Данные сборочные задания можно перевести в [другую активную поставку](./orders-fbs#tag/fbsSupplies/operation/patchV3SuppliesSupplyIdOrders). Сборочное задание также будет переведено в статус `confirm` — на сборке.\n\nТакже вы можете:\n  - [удалить грузоместа из поставки](./orders-fbs#tag/fbsSupplies/operation/deleteV3SuppliesSupplyIdTrbx), но только пока поставка находится на сборке\n  - получить [ID всех сборочных заданий, добавленных к поставке](./orders-fbs#tag/fbsSupplies/operation/getV3SuppliesSupplyIdOrderIds)\n  - получить информацию [обо всех поставках продавца](./orders-fbs#tag/fbsSupplies/operation/getV3Supplies) или [о конкретной поставке](./orders-fbs#tag/fbsSupplies/operation/getV3SuppliesSupplyId)\n  - [удалить поставку](./orders-fbs#tag/fbsSupplies/operation/deleteV3SuppliesSupplyId) при условии, что она активна и за ней не закреплены сборочные задания\n  - [перемещать сборочные задания между активными поставками](./orders-fbs#tag/fbsSupplies/operation/patchV3SuppliesSupplyIdOrders). Нельзя перемещать сборочное задание из уже закрытой поставки, только если оно не требует повторной отгрузки\n  - получить [QR-код поставки](./orders-fbs#tag/fbsSupplies/operation/getV3SuppliesSupplyIdBarcode) в форматах SVG, ZPL или PNG. Доступно только после передачи поставки в доставку\n",
       "name": "fbsSupplies",
       "x-displayName": "Поставки FBS"
     },

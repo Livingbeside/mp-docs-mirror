@@ -2,14 +2,14 @@
 title: Лист сборки
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/reports/generateShipmentListDocumentReport.md"
-fetched_at: "2026-09-24T02:14:09Z"
-content_sha: 37138d643e48efed
+fetched_at: "2026-10-02T02:06:04Z"
+content_sha: 9154da6d1a8fba1f
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.61.1
+    content: Diplodoc Platform v5.62.0
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/reports/generateShipmentListDocumentReport.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/reports/generateShipmentListDocumentReport.md

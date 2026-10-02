@@ -2,9 +2,9 @@
 title: Заказы FBS — все методы
 api: wb-orders-fbs
 spec_version: order
-operations: 47
+operations: 46
 source: "https://dev.wildberries.ru/docs/openapi/orders-fbs"
-content_sha: 08e114f6c3f209fe
+content_sha: 82202768e56c4e52
 ---
 
 # Заказы FBS
@@ -21,7 +21,7 @@ content_sha: 08e114f6c3f209fe
 
  Узнать больше о заказах FBS можно в [справочном центре](https://seller.wildberries.ru/instructions/ru/ru/category/b3e60238-fd4c-49ce-8668-ff688725a12d)
 
-Версия спеки: `order` · методов: **47** · разделов справки: **6**
+Версия спеки: `order` · методов: **46** · разделов справки: **6**
 
 Источник: https://dev.wildberries.ru/docs/openapi/orders-fbs
 
@@ -50,7 +50,6 @@ content_sha: 08e114f6c3f209fe
 | `PATCH` | `/api/marketplace/v3/fbs/settings/autoreturns/items` | autoreturnSettings | [Обновить настройки автовозврата товаров](autoreturnsettings/patch-api-marketplace-v3-fbs-settings-autoreturns-items.md) |
 | `PATCH` | `/api/marketplace/v3/fbs/settings/autoreturns` | autoreturnSettings | [Обновить настройки автовозврата продавца](autoreturnsettings/patch-api-marketplace-v3-fbs-settings-autoreturns.md) |
 | `PATCH` | `/api/marketplace/v3/fbs/supplies/shipping-method` | fbsSupplies | [Установить параметры отгрузки поставок](fbssupplies/patch-api-marketplace-v3-fbs-supplies-shipping-method.md) |
-| `PATCH` | `/api/marketplace/v3/fbs/supplies/waybill` | fbsSupplies | [Установить ID ЭТрН поставок](fbssupplies/patch-api-marketplace-v3-fbs-supplies-waybill.md) |
 | `PATCH` | `/api/marketplace/v3/supplies/{supplyId}/orders` | fbsSupplies | [Добавить сборочные задания к поставке{{ /api/marketplace/v3/supplies/{supplyId}/orders }}](fbssupplies/patch-api-marketplace-v3-supplies-supplyid-orders.md) |
 | `PATCH` | `/api/v3/orders/{orderId}/cancel` | fbsAssemblyOrders | [Отменить сборочное задание{{ /api/v3/orders/{orderId}/cancel }}](fbsassemblyorders/patch-api-v3-orders-orderid-cancel.md) |
 | `PATCH` | `/api/v3/supplies/{supplyId}/deliver` | fbsSupplies | [Передать поставку в доставку{{ /api/v3/supplies/{supplyId}/deliver }}](fbssupplies/patch-api-v3-supplies-supplyid-deliver.md) |

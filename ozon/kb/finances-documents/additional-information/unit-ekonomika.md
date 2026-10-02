@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /finances-documents/additional-information/unit-ekonomika
 source: "https://seller-edu.ozon.ru/libra/finances-documents/additional-information/unit-ekonomika"
-updated: "2026-09-10 11:04:54"
+updated: "2026-10-01 14:54:19"
 doc_id: 31830
-fetched_at: "2026-09-11T01:52:47Z"
-content_sha: 14b69f834474f867
+fetched_at: "2026-10-02T02:01:54Z"
+content_sha: 6d6b7f0081a6a85b
 ---
 
 # Юнит-экономика
@@ -61,7 +61,7 @@ _Главная / Финансы, налоги и документооборот
 
 В приложении открыть раздел Юнит-экономика можно:
 
-Через раздел **Главная **— откройте **Финансы**. В блоке **Юнит-экономика** покажем самые прибыльные и убыточные товары за неделю. Детализация доступна с любой из подписок [Premium](https://seller-edu.ozon.ru/libra/seller-rating) — чтобы посмотреть её, нажмите **Все товары**.
+Через раздел **Главная **— откройте **Финансы**. В блоке **Юнит-экономика** покажем самые прибыльные и убыточные товары за неделю. Детализация доступна с подписками **[Premium](https://seller-edu.ozon.ru/libra/seller-rating/premium-program)**, **[Premium Plus](https://seller-edu.ozon.ru/libra/seller-rating/subscription-premium-plus)** и **[Premium Pro](https://seller-edu.ozon.ru/libra/seller-rating/podpiska-premium-pro)** — чтобы посмотреть её, нажмите **Все товары**.
 
 Через **Меню** — выберите раздел **Юнит-экономика** в блоке **Финансы**. Раздел доступен с любой из подписок [Premium](https://seller-edu.ozon.ru/libra/seller-rating).
 

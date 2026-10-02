@@ -2,14 +2,14 @@
 title: Все обновления
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/changelog/all.md"
-fetched_at: "2026-09-24T02:13:32Z"
-content_sha: 15d89ca21ab23221
+fetched_at: "2026-10-02T02:05:26Z"
+content_sha: e477b50f38d03ef7
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.61.1
+    content: Diplodoc Platform v5.62.0
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/changelog/all.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/changelog/all.md
@@ -31,6 +31,21 @@ alternate:
 {% endnote %}
 
 <!-- source: ru/_auto/changelog/all.md -->
+<!-- source: ru/_auto/changelog/all/2026-09-29.md -->
+### 29 сентября {#29-09-26}
+
+#|
+|| **Методы или страницы документации**
+ | **Описание изменений**
+ ||
+||
+[POST v2/reports/closure-documents/generate](https://yandex.ru/dev/market/partner-api/doc/ru/reference/reports/generateClosureDocumentsReport.md)
+|
+Актуализировали состав закрывающих документов: универсальный передаточный документ (УПД-1) заменяет акт об оказанных услугах и счет-фактуру по договору на маркетинг за август 2026 года и последующие месяцы, а по договору на размещение — за октябрь 2026 года и последующие месяцы. За более ранние периоды доступны акт и счет-фактура.
+||
+|#
+<!-- endsource: ru/_auto/changelog/all/2026-09-29.md -->
+
 <!-- source: ru/_auto/changelog/all/2026-09-17.md -->
 ### 17 сентября {#17-09-26}
 

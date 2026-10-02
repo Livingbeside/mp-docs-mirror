@@ -2,14 +2,14 @@
 title: Получение статусов операций
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/operations/getOperations.md"
-fetched_at: "2026-09-24T02:14:05Z"
-content_sha: ecd69c7462b8bbd4
+fetched_at: "2026-10-02T02:06:00Z"
+content_sha: 841032268a425a17
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.61.1
+    content: Diplodoc Platform v5.62.0
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/operations/getOperations.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/operations/getOperations.md

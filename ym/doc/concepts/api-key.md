@@ -2,14 +2,14 @@
 title: Api-Key
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/concepts/api-key.md"
-fetched_at: "2026-09-24T02:13:01Z"
-content_sha: b962158262dc813e
+fetched_at: "2026-10-02T02:04:49Z"
+content_sha: 829d4a91a4d44ffa
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.61.1
+    content: Diplodoc Platform v5.62.0
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/concepts/api-key.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/concepts/api-key.md

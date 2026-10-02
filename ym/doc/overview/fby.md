@@ -2,14 +2,14 @@
 title: FBY
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/overview/fby.md"
-fetched_at: "2026-09-24T02:13:27Z"
-content_sha: 70dfe61c46227f17
+fetched_at: "2026-10-02T02:05:21Z"
+content_sha: 2f3c7331ed94db06
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.61.1
+    content: Diplodoc Platform v5.62.0
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/overview/fby.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/overview/fby.md

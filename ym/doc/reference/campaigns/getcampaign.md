@@ -2,14 +2,14 @@
 title: Информация о магазине
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/campaigns/getCampaign.md"
-fetched_at: "2026-09-24T02:13:33Z"
-content_sha: 810175e35b064b3a
+fetched_at: "2026-10-02T02:05:27Z"
+content_sha: 4b82498677ae6180
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.61.1
+    content: Diplodoc Platform v5.62.0
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/campaigns/getCampaign.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/campaigns/getCampaign.md

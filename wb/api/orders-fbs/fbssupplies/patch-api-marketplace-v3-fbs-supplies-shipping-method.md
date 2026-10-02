@@ -9,7 +9,7 @@ tags:
 spec_version: order
 source: "https://dev.wildberries.ru/docs/openapi/orders-fbs"
 deprecated: false
-content_sha: ee44cc77c777aa23
+content_sha: 08163a85e6707a50
 ---
 
 # Установить параметры отгрузки поставок
@@ -20,13 +20,11 @@ content_sha: ee44cc77c777aa23
 
 Метод устанавливает способ доставки, дату и пункт отгрузки у поставок.
 
-Для доставки транспортной компанией `"shippingType":"transportCompany"` укажите ID ЭТрН — электронной транспортной накладной — с помощью метода установки [ID ЭТрН поставки](./orders-fbs#tag/fbsSupplies/operation/patchV3FbsSuppliesWaybill).
-
- Добавленный к поставке ID ЭТрН сбрасывается, если поменять способ доставки "shippingType":"transportCompany" на selfShipping. Если вы хотите изменить способ доставки обратно на transportCompany, добавьте ID ЭТрН заново.
-
 Параметры отгрузки нужно указать до передачи поставки в доставку. Вы можете обновлять параметры отгрузки до сканирования поставки и её коробов в пункте отгрузки. Когда поставка будет отсканирована, метод начнёт возвращать ошибку `409`.
 
 В запросе можно указать максимум 100 поставок. Результат обработки возвращается для каждой поставки отдельно.
+
+Доступно только для продавцов из РФ.
 
 Лимит запросов на один аккаунт продавца для методов сборочных заданий, поставок, пропусков и настроек автовозврата FBS:
 
@@ -43,7 +41,7 @@ content_sha: ee44cc77c777aa23
 - `data` — array[object] **обязательный**
   - `shippingDt` — string **обязательный**. Планируемая дата отгрузки поставки, формат `YYYY-MM-DD`
   - `shippingPointId` — integer **обязательный**. ID пункта отгрузки. Можно получить с помощью [отдельного метода](./orders-fbs#tag/fbsSupplies/operation/getV3FbsShippingPoints)
-  - `shippingType` — string (selfShipping, transportCompany) **обязательный**. Способ доставки до пункта отгрузки: - `selfShipping` — доставка силами продавца - `transportCompany` — доставка через транспортную компанию. Для этого способа обязательно [укажите ID ЭТрН](./orders-fbs#tag/fbsSupplies/operation/patchV3FbsSuppliesWaybill) — электронной транспортной накладной — в поле `waybillUuid`
+  - `shippingType` — string (selfShipping, transportCompany) **обязательный**. Способ доставки до пункта отгрузки: - `selfShipping` — доставка силами продавца - `transportCompany` — доставка через транспортную компанию
   - `supplyId` — string **обязательный**. ID поставки
 
 ## Ответы

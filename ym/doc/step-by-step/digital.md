@@ -2,14 +2,14 @@
 title: Цифровые заказы
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/digital.md"
-fetched_at: "2026-09-24T02:13:20Z"
-content_sha: f517d4c6cc57280c
+fetched_at: "2026-10-02T02:05:14Z"
+content_sha: e9cb6c715d9b80de
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.61.1
+    content: Diplodoc Platform v5.62.0
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/step-by-step/digital.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/digital.md

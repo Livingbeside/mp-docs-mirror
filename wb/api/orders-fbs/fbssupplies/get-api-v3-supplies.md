@@ -9,7 +9,7 @@ tags:
 spec_version: order
 source: "https://dev.wildberries.ru/docs/openapi/orders-fbs"
 deprecated: false
-content_sha: 4bb1dcb8ee18fa47
+content_sha: 0bdc01de9aa4d40f
 ---
 
 # Получить список поставок
@@ -57,8 +57,8 @@ content_sha: 4bb1dcb8ee18fa47
   - `recommendedWhId` — integer<int64>. ID рекомендуемого склада для приёмки поставки для Москвы и МО. Рекомендуется ближайший к покупателям склад, который определяется автоматически при передаче поставки в доставку с учётом параметров всех сборочных заданий в поставке. Если `0`, рекомендуемый склад не определён
   - `shippingDt` — string. Планируемая дата отгрузки поставки, формат `YYYY-MM-DD`
   - `shippingPointId` — integer. ID пункта отгрузки. Можно получить в методе получения [пунктов отгрузки поставок](./orders-fbs#tag/fbsSupplies/operation/getV3FbsShippingPoints)
-  - `shippingType` — string (selfShipping, transportCompany). Способ доставки до пункта отгрузки: - `selfShipping` — доставка силами продавца - `transportCompany` — доставка через транспортную компанию. Для этого способа обязательно укажите ID ЭТрН — электронной транспортной накладной — в поле `waybillUuid`
-  - `waybillUuid` — string. ID ЭТрН — электронной транспортной накладной. Обязателен при `"shippingType":"transportCompany"`
+  - `shippingType` — string (selfShipping, transportCompany). Способ доставки до пункта отгрузки: - `selfShipping` — доставка силами продавца - `transportCompany` — доставка через транспортную компанию
+  - `waybillUuid` — string. ID ЭТрН — электронной транспортной накладной
   - `spotAvailable` — boolean **обязательный**. Доступен ли СПОТ для этой поставки: - `true` — да. Используйте метод [получения данных СПОТ](./orders-fbs#tag/fbsSupplies/operation/postV3FbsSuppliesSpotList) - `false` — нет
 
 **400** — Неправильный запрос

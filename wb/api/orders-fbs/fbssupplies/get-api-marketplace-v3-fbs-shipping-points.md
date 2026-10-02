@@ -9,7 +9,7 @@ tags:
 spec_version: order
 source: "https://dev.wildberries.ru/docs/openapi/orders-fbs"
 deprecated: false
-content_sha: da39da6bf66ae44d
+content_sha: a01cfda46ee4b9a6
 ---
 
 # Получить список пунктов отгрузки поставок
@@ -23,6 +23,8 @@ content_sha: da39da6bf66ae44d
  - по типам товаров, которые принимает пункт отгрузки
 
 Используйте данные из этого метода, чтобы устанавливать [параметры отгрузки поставок](./orders-fbs#tag/fbsSupplies/operation/patchV3FbsSuppliesShippingMethod).
+
+Доступно только для продавцов из РФ.
 
 Лимит запросов на один аккаунт продавца для методов сборочных заданий, поставок, пропусков и настроек автовозврата FBS:
 

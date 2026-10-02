@@ -4,8 +4,8 @@ api: wildberries
 kind: changelog
 source: "https://dev.wildberries.ru/release-notes"
 window: последние записи, страница отдаёт не всю историю
-fetched_at: "2026-10-01T01:59:59Z"
-content_sha: 0ae750d073f5c633
+fetched_at: "2026-10-02T02:04:47Z"
+content_sha: bcf5e0a7658d687c
 ---
 
 # Журнал изменений WB API
@@ -64,6 +64,29 @@ content_sha: 0ae750d073f5c633
 
 Устарело
 
+Октябрь
+2026
+
+Новое
+
+## 01.10.2026
+
+Критичное изменение
+
+Аналитика и данные
+
+Поисковые запросы по вашим товарам
+
+Изменения в Аналитике продавца CSV
+
+С **12 октября** в отчёте по текстам поисковых запросов по вашим товарам —`SEARCH_QUERIES_PREMIUM_REPORT_TEXT` — метода [GET /api/v2/nm-report/downloads/file/{downloadId}](/docs/openapi/analytics/#tag/sellerAnalyticsCsv/operation/getV2NmReportDownloadsFileDownloadId) отключим поля:
+
+- `OpenCardPercentile` — процент, на который показатель количества открытий карточки товара выше, чем у карточек других продавцов по поисковому запросу
+- `AddToCartPercentile` — процент, на который показатель добавлений в корзину выше, чем у карточек других продавцов по поисковому запросу
+- `OpenToCartPercentile` — процент, на который показатель конверсии в корзину выше, чем у карточек других продавцов по поисковому запросу
+- `OrdersPercentile` — процент, на который показатель заказов выше, чем у карточек других продавцов по поисковому запросу
+- `CartToOrderPercentile` — процент, на который показатель конверсии в заказ выше, чем у карточек других продавцов по поисковому запросу
+
 Сентябрь
 2026
 
@@ -82,22 +105,6 @@ content_sha: 0ae750d073f5c633
 - Список кодов ТН ВЭД — [GET /api/content/v2/directory/tnved/all](/docs/openapi/item-management#tag/categoriesSubcategoriesAndCharacteristics/operation/getV2DirectoryTnvedAll)
 - Код ОКПД2 предмета — [GET /api/content/v2/directory/okpd](/docs/openapi/item-management#tag/categoriesSubcategoriesAndCharacteristics/operation/getV2DirectoryOkpd)
 - Список кодов ОКПД2 — [GET /api/content/v2/directory/okpd/all](/docs/openapi/item-management#tag/categoriesSubcategoriesAndCharacteristics/operation/getV2DirectoryOkpdAll)
-
-Новое
-
-## 28.09.2026
-
-Документы и бухгалтерия
-
-Финансовые отчёты
-
-Новые поля в детализациях к отчётам реализации
-
-Добавили [новые поля](https://seller.wildberries.ru/news-v2/news-details?id=14226) в детализации к отчётам реализации [POST /api/finance/v1/sales-reports/detailed/{reportId}](/docs/openapi/financial-reports-and-accounting#tag/financialReports/operation/postV1SalesReportsDetailedReportId) и [POST api/finance/v1/sales-reports/detailed](/docs/openapi/financial-reports-and-accounting#tag/financialReports/operation/postV1SalesReportsDetailed):
-
-- `buyerTaxRegistrationReasonCode` — КПП B2B-покупателя
-- `utdUcdNumber` — номер УПД или УКД
-- `utdUcdDate` — дата УПД или УКД
 
 Изменения
 
@@ -120,6 +127,22 @@ content_sha: 0ae750d073f5c633
 - GROUPED_HISTORY_REPORT — отчёт воронки продаж по предметам, брендам и ярлыкам в методе [POST /api/v2/nm-report/downloads](/docs/openapi/analytics#tag/sellerAnalyticsCsv/operation/postV2NmReportDownloads)
 
 Чтобы получить текущие данные без задержки обновления, используйте метод [POST /api/analytics/v1/order-feed](/docs/openapi/analytics/#tag/orderFeed/operation/postV1OrderFeed).
+
+Новое
+
+## 28.09.2026
+
+Документы и бухгалтерия
+
+Финансовые отчёты
+
+Новые поля в детализациях к отчётам реализации
+
+Добавили [новые поля](https://seller.wildberries.ru/news-v2/news-details?id=14226) в детализации к отчётам реализации [POST /api/finance/v1/sales-reports/detailed/{reportId}](/docs/openapi/financial-reports-and-accounting#tag/financialReports/operation/postV1SalesReportsDetailedReportId) и [POST api/finance/v1/sales-reports/detailed](/docs/openapi/financial-reports-and-accounting#tag/financialReports/operation/postV1SalesReportsDetailed):
+
+- `buyerTaxRegistrationReasonCode` — КПП B2B-покупателя
+- `utdUcdNumber` — номер УПД или УКД
+- `utdUcdDate` — дата УПД или УКД
 
 Новое
 
@@ -502,31 +525,5 @@ DBS
 - `convertedOriginalFinalPrice` — сумма к оплате покупателем в валюте страны продавца с учетом всех скидок и кэшбека, умноженная на 100.
 
 Значения полей `finalPrice` и `convertedFinalPrice` из ответов методов получения сборочных заданий используйте только в случае, когда в ответе новых методов для переданных сборочных заданий возвращается `"data": null.`
-
-Изменения
-
-## 11.08.2026
-
-Критичное изменение
-
-Заказы FBS
-
-Идентификаторы маркировки FBS
-
-Изменения в Заказах FBS
-
-С **18 августа** добавить номер декларации на товары (ДТ) можно будет только к сборочным заданиям в [статусе](https://dev.wildberries.ru/docs/openapi/orders-fbs/#tag/fbsAssemblyOrders/operation/postV3OrdersStatus) `confirm`.
-
-Также с **18 августа** продавцам из Армении будет обязательно указывать номер ДТ для товаров, произведённых вне ЕАЭС, если заказ из Армении доставляется в РФ.
-
-Чтобы проверить, обязательно ли закреплять номер ДТ за сборочным заданием, используйте метод [GET /api/v3/orders/new](/docs/openapi/orders-fbs#tag/fbsAssemblyOrders/operation/getV3OrdersNew). Обязательные идентификаторы маркировки указаны в поле `requiredMeta`.
-
-Чтобы добавить номер ДТ к сборочному заданию, передайте его в запросе метода [PUT /api/marketplace/v3/orders/{orderId}/meta/customs-declaration](/docs/openapi/orders-fbs#tag/fbsLabelIdentifiers/operation/putV3OrdersOrderIdMetaCustomsDeclaration) в параметре `customsDeclaration`.
-
-Без обязательного номера ДТ невозможно получить стикеры сборочных заданий методом [POST /api/v3/orders/stickers](/docs/openapi/orders-fbs#tag/fbsAssemblyOrders/operation/postV3OrdersStickers) — если хотя бы для одного сборочного не будет указан обязательный номер ДТ, вы получите ошибку `409` `CustomsDeclarationIsRequired`.
-
-Также, если к сборочному заданию не добавлен обязательный номер ДТ, поставку с этим сборочным заданием невозможно перевести в доставку. В ответе метода [PATCH /api/v3/supplies/{supplyId}/deliver](/docs/openapi/orders-fbs#tag/fbsSupplies/operation/patchV3SuppliesSupplyIdDeliver) вы получите ошибку `409` `MetaValidationFail`, при этом в поле `decision` для `customsDeclaration` вернётся значение `required`.
-
-Чтобы проверить, добавлен ли обязательный номер ДТ к сборочному заданию, до перевода поставки в доставку, используйте метод [POST /api/marketplace/v3/orders/meta](/docs/openapi/orders-fbs/#tag/fbsLabelIdentifiers/operation/postV3OrdersMeta). Перевести поставку в доставку можно со статусами `filled` или `optional` в поле `decision` для `customsDeclaration`.
 
 Мы используем [cookies](https://legal.wildberries.ru/privacypolicy/country/ru/lang/ru/#anchor-7), чтобы анализировать, как вы пользуетесь сайтом, и улучшать его
