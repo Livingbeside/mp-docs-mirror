@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /contract-for-sellers/tech-contract/contract-ozon-technology
 source: "https://seller-edu.ozon.ru/libra/contract-for-sellers/tech-contract/contract-ozon-technology"
-updated: "2026-09-24 09:35:53"
+updated: "2026-10-02 15:11:47"
 doc_id: 80024
-fetched_at: "2026-09-25T02:13:05Z"
-content_sha: f993a08b049fd711
+fetched_at: "2026-10-03T02:16:52Z"
+content_sha: 1937edd192d6b4f4
 ---
 
 # Договор возмездного оказания услуг Озон Технологий
@@ -16,7 +16,7 @@ _Главная / Договоры для Продавцов на платфор
 
 Русский
 
-Эта редакция действует с 1 октября 2026 года. Мы заранее публикуем изменения в договоре. Если правила на этой странице ещё не вступили в силу, смотрите [предыдущую версию](https://seller-edu.ozon.ru/contract-for-sellers/tech-contract/arhiv-contract-ozon-technology).
+Эта редакция действует с 3 октября 2026 года. Мы заранее публикуем изменения в договоре. Если правила на этой странице ещё не вступили в силу, смотрите [предыдущую версию](https://seller-edu.ozon.ru/contract-for-sellers/tech-contract/arhiv-contract-ozon-technology).
 
 Настоящий Договор возмездного оказания услуг (далее — «Договор») заключается между ООО «Озон Технологии» (далее — «Исполнитель») и Заказчиком на изложенных ниже условиях.
 
@@ -610,7 +610,7 @@ _Главная / Договоры для Продавцов на платфор
 
 English
 
-This revision is effective as of October 1, 2026. We publish amendments in advance: if the rules on this page are not already in effect, see the [previous version](https://seller-edu.ozon.ru/contract-for-sellers/tech-contract/arhiv-contract-ozon-technology).
+This revision is effective as of October 3, 2026. We publish amendments in advance: if the rules on this page are not already in effect, see the [previous version](https://seller-edu.ozon.ru/contract-for-sellers/tech-contract/arhiv-contract-ozon-technology).
 
 This Agreement for the provision of services for a fee (hereinafter referred to as the «Agreement») is concluded between Ozon Technologies LLC (hereinafter referred to as the «Contractor») and the Customer on the terms and conditions set out below.
 

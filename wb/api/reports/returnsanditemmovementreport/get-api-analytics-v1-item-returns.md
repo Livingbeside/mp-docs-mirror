@@ -3,13 +3,13 @@ title: Получить отчёт
 api: wb-reports
 method: GET
 path: /api/analytics/v1/item-returns
-operation_id: getAnalyticsV1GoodsReturn
+operation_id: getV1GoodsReturn
 tags:
   - returnsAndItemMovementReport
 spec_version: reports
 source: "https://dev.wildberries.ru/docs/openapi/reports"
 deprecated: false
-content_sha: d76696162222c90f
+content_sha: 877b700bf4b4e37a
 ---
 
 # Получить отчёт
@@ -26,9 +26,9 @@ content_sha: d76696162222c90f
 |---|---|---|---|---|
 | `dateFrom` | query | string<date> | да | Дата начала отчётного периода |
 | `dateTo` | query | string<date> | да | Дата окончания отчётного периода |
-| `status` | query | string (active, archive) | да | Статус возврата: - `archive` — архивный - `active` — активный |
-| `limit` | query | integer<date> | да | Количество возвратов в ответе |
-| `offset` | query | integer<date> | да | Сколько элементов пропустить. Например, для значения 10 ответ начнется с 11 элемента |
+| `status` | query | string (active, archive) | нет | Статус возврата: - `archive` — архивный - `active` — активный |
+| `limit` | query | integer<date> | нет | Количество возвратов в ответе |
+| `offset` | query | integer<date> | нет | Сколько элементов пропустить. Например, для значения 10 ответ начнется с 11 элемента |
 
 ## Ответы
 

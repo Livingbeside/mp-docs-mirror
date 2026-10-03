@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /ozon-logistika/dostavka-dlya-biznesa/ozon-dostavka-dlya-biznesa-osobennosti
 source: "https://seller-edu.ozon.ru/libra/ozon-logistika/dostavka-dlya-biznesa/ozon-dostavka-dlya-biznesa-osobennosti"
-updated: "2026-09-09 14:18:16"
+updated: "2026-10-02 13:35:30"
 doc_id: 72831
-fetched_at: "2026-09-10T01:52:28Z"
-content_sha: 1ac1c2dc4ce94154
+fetched_at: "2026-10-03T02:16:53Z"
+content_sha: a25c16fd9cd56853
 ---
 
 # Ozon Доставка для бизнеса: особенности работы
@@ -43,8 +43,6 @@ _Главная / Ozon Доставка / Ozon Доставка для бизн�
 использовать инфраструктуру Ozon: всю сеть ПВЗ и курьерскую доставку;
 
 получать отменённые заказы через инфраструктуру Ozon.
-
-С 1 по 30 сентября 2026 года отгрузите первое отправление в «Ozon Доставке для бизнеса» и получите 500 ₽ на баланс. [Подробнее об акции](https://seller-edu.ozon.ru/ozon-logistika/dostavka-dlya-biznesa/promo)
 
 # Кто может подключить сервис
 

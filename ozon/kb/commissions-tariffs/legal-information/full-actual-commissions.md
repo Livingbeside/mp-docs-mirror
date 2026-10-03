@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /commissions-tariffs/legal-information/full-actual-commissions
 source: "https://seller-edu.ozon.ru/libra/commissions-tariffs/legal-information/full-actual-commissions"
-updated: "2026-10-01 18:50:36"
+updated: "2026-10-02 08:17:53"
 doc_id: 700
-fetched_at: "2026-10-02T02:01:53Z"
-content_sha: 833ffc1841bcbe71
+fetched_at: "2026-10-03T02:16:52Z"
+content_sha: 6040a4518e9fe89b
 ---
 
 # Полный список комиссий и тарифов
@@ -364,7 +364,7 @@ _Главная / Комиссии и тарифы / Юридическая ин
 
 *Отгрузка курьеру пока доступна только некоторым продавцам в Москве и Московской области. При отгрузке курьеру дополнительно начислим плату за[ организацию выезда курьера](/commissions-tariffs/legal-information/full-actual-commissions#2-8-организация-выезда-курьера).
 
-[Скачать список маршрутов со сроками доставки](https://cdn.ozone.ru/s3/ozon-disk-api/Seller-edu/files/commissions-tariffs/commissions/%D0%9A%D1%80%D0%BE%D1%81%D1%81-%D0%B4%D0%BE%D0%BA%D0%B8%D0%BD%D0%B3_%D0%BC%D0%B0%D1%80%D1%88%D1%80%D1%83%D1%82%D1%8B_%D0%B8_%D0%B0%D0%B4%D1%80%D0%B5%D1%81%D0%B0_30102026_1789389299.xlsx)
+[Скачать список маршрутов со сроками доставки](https://cdn.ozone.ru/s3/ozon-disk-api/Seller-edu/files/commissions-tariffs/commissions/Кросс_докинг_маршруты_и_адреса_30102026_1789389299_1_1790858567.xlsx)
 
 Как рассчитываем объём грузоместа:
 

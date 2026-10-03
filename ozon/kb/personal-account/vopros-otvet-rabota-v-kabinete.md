@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /personal-account/vopros-otvet-rabota-v-kabinete
 source: "https://seller-edu.ozon.ru/libra/personal-account/vopros-otvet-rabota-v-kabinete"
-updated: "2026-08-31 09:10:21"
+updated: "2026-10-02 16:40:22.643135"
 doc_id: 1042
-fetched_at: "2026-09-01T01:56:12Z"
-content_sha: 2bb63651072c9c29
+fetched_at: "2026-10-03T02:16:52Z"
+content_sha: 491a3f1c934200b8
 ---
 
 # Вопросы и ответы о настройке личного кабинета
@@ -148,6 +148,10 @@ Ozon не предоставляет подписанный договор, но
 ## Как расторгнуть договор?
 
 Чтобы закрыть магазин на Ozon и прекратить продажи, расторгните договор.
+
+Чтобы мы расторгли с вами договор, нужен веский повод. Например, если вы нарушили платёжные обязательства или правила общения с покупателями. Подробнее о возможных причинах расторжения — в [п. 4 раздела «Заключение, изменение, расторжение Договора»](https://seller-edu.ozon.ru/contract-for-sellers/general-terms/general-terms-of-partnership#4-%D1%80%D0%B0%D1%81%D1%82%D0%BE%D1%80%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B4%D0%BE%D0%B3%D0%BE%D0%B2%D0%BE%D1%80%D0%B0).
+
+Вы также можете отказаться от исполнения договора по любой причине: если не согласны с его изменениями, если планируете[ прекратить работу на площадке ](/personal-account/kak-rastorgaetsya-dogovor-s-ozon#как-расторгнуть-договор-при-ликвидации-бизнеса)или вы[ вступили в права наследования после смерти продавца](/personal-account/kak-rastorgaetsya-dogovor-s-ozon#как-расторгнуть-договор-при-смерти-продавца).
 
 [Подробнее о расторжении договора](https://seller-edu.ozon.ru/personal-account/kak-rastorgaetsya-dogovor-s-ozon)
 

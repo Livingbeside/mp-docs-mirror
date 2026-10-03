@@ -2265,7 +2265,6 @@
             "description": "Статус возврата:\n  - `archive` — архивный\n  - `active` — активный\n",
             "in": "query",
             "name": "status",
-            "required": true,
             "schema": {
               "enum": [
                 "active",
@@ -2279,7 +2278,6 @@
             "description": "Количество возвратов в ответе",
             "in": "query",
             "name": "limit",
-            "required": true,
             "schema": {
               "example": 10,
               "format": "date",
@@ -2292,7 +2290,6 @@
             "description": "Сколько элементов пропустить. Например, для значения 10 ответ начнется с 11 элемента",
             "in": "query",
             "name": "offset",
-            "required": true,
             "schema": {
               "example": 3,
               "format": "date",

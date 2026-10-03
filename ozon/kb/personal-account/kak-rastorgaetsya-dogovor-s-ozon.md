@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /personal-account/kak-rastorgaetsya-dogovor-s-ozon
 source: "https://seller-edu.ozon.ru/libra/personal-account/kak-rastorgaetsya-dogovor-s-ozon"
-updated: "2026-07-23 12:24:56"
+updated: "2026-10-02 16:37:12"
 doc_id: 78541
-fetched_at: "2026-08-28T12:11:14Z"
-content_sha: 77143fe0c03e811f
+fetched_at: "2026-10-03T02:16:52Z"
+content_sha: 21d612f4a8f73196
 ---
 
 # Как расторгается договор с Ozon
@@ -21,6 +21,8 @@ _Главная / Настройки личного кабинета_
 Вы также можете отказаться от исполнения договора по любой причине: если не согласны с его изменениями, если планируете[ прекратить работу на площадке ](/personal-account/kak-rastorgaetsya-dogovor-s-ozon#как-расторгнуть-договор-при-ликвидации-бизнеса)или вы[ вступили в права наследования после смерти продавца](/personal-account/kak-rastorgaetsya-dogovor-s-ozon#как-расторгнуть-договор-при-смерти-продавца).
 
 # Как расторгнуть договор по своей инициативе
+
+Расторгнутый договор не получится восстановить и подписать заново. Можно только заключить новый.
 
 ## Шаг 1. Вывезите товары или обнулите остатки
 

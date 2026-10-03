@@ -9,7 +9,7 @@ tags:
 spec_version: items
 source: "https://dev.wildberries.ru/docs/openapi/item-management"
 deprecated: false
-content_sha: 3ccc18f725b9eea8
+content_sha: 8d3230d2178a8a49
 ---
 
 # Список карточек товаров
@@ -104,6 +104,7 @@ content_sha: 3ccc18f725b9eea8
   - `vendorCode` — string. Артикул продавца
   - `brand` — string. Бренд
   - `title` — string. Наименование товара
+  - `gtin` — string. Дополнительный GTIN. Поле вернётся только при заполненном дополнительном GTIN. Только для продавцов из РФ
   - `description` — string. Описание товара
   - `needKiz` — boolean. Требуется ли код маркировки [Честного знака](https://честныйзнак.рф/) для этого товара: - `false` — не требуется - `true` — требуется
   - `kizMarked` — boolean. Есть ли подтверждение от продавца, что обязательный код маркировки [Честного знака](https://честныйзнак.рф/) нанесён на товар: - `true` — да - `false` — нет Является ли код маркировки [Честного знака](https://честныйзнак.рф/) обязательным, указано в поле `needKiz` По умолчанию: `False`.

@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /commissions-tariffs/commissions-tariffs-ozon/rashody-na-dop-uslugi
 source: "https://seller-edu.ozon.ru/libra/commissions-tariffs/commissions-tariffs-ozon/rashody-na-dop-uslugi"
-updated: "2026-10-01 19:33:27"
+updated: "2026-10-02 08:19:54"
 doc_id: 694
-fetched_at: "2026-10-02T02:01:53Z"
-content_sha: cfac302c62308f69
+fetched_at: "2026-10-03T02:16:52Z"
+content_sha: 588295a734c93678
 ---
 
 # Расходы на другие услуги и штрафы
@@ -1067,7 +1067,7 @@ _Главная / Комиссии и тарифы / Комиссии и тар�
 
 *Отгрузка курьеру пока доступна только некоторым продавцам в Москве и Московской области. При отгрузке курьеру дополнительно начислим плату за[ организацию выезда курьера](/commissions-tariffs/commissions-tariffs-ozon/rashody-na-dop-uslugi#отгрузка-курьеру).
 
-[Скачать список маршрутов со сроками доставки](https://cdn.ozone.ru/s3/ozon-disk-api/Seller-edu/files/commissions-tariffs/commissions/%D0%9A%D1%80%D0%BE%D1%81%D1%81-%D0%B4%D0%BE%D0%BA%D0%B8%D0%BD%D0%B3_%D0%BC%D0%B0%D1%80%D1%88%D1%80%D1%83%D1%82%D1%8B_%D0%B8_%D0%B0%D0%B4%D1%80%D0%B5%D1%81%D0%B0_30102026_1789389299.xlsx)
+[Скачать список маршрутов со сроками доставки](https://cdn.ozone.ru/s3/ozon-disk-api/Seller-edu/files/commissions-tariffs/commissions/Кросс_докинг_маршруты_и_адреса_30102026_1789389299_1_1790858567.xlsx)
 
 Как рассчитываем объём грузоместа:
 
@@ -1130,8 +1130,8 @@ _Главная / Комиссии и тарифы / Комиссии и тар�
 
 | **Точка приёма поставки** | **Склад получатель** | **Файл с тарифами и сроками** |
 | --- | --- | --- |
-| Склады и сортировочные центры | [Склады Ozon](https://seller-edu.ozon.ru/fbo/warehouses/adresa-skladov-fbo) | [Скачать тарифы в Excel с 16.09.2026](https://cdn.ozone.ru/s3/ozon-disk-api/Seller-edu/files/commissions-tariffs/cross-dock/tariffs-cross-dock-sc-16.09.26_1788260781.xlsx) |
-| Пункты выдачи и приёма заказов (ПВЗ и ППЗ) | [Скачать тарифы в Excel с 16.09.2026](https://cdn.ozone.ru/s3/ozon-disk-api/Seller-edu/files/commissions-tariffs/cross-dock/tariffs-cross-dock-pvz-ppz_%D1%81_16.09.26_1788260775.xlsx) |  |
+| Склады и сортировочные центры | [Склады Ozon](https://seller-edu.ozon.ru/fbo/warehouses/adresa-skladov-fbo) | [Скачать тарифы в Excel с 16.09.2026](https://cdn.ozone.ru/s3/ozon-disk-api/Seller-edu/files/commissions-tariffs/commissions/tariffs-cross-dock-sc-16.09.26_1788260781_1790863083.xlsx) |
+| Пункты выдачи и приёма заказов (ПВЗ и ППЗ) | [Скачать тарифы в Excel с 16.09.2026](https://cdn.ozone.ru/s3/ozon-disk-api/Seller-edu/files/commissions-tariffs/commissions/tariffs-cross-dock-pvz-ppz_с_16.09.26_1788260775_1790863078.xlsx) |  |
 | Отгрузка курьеру | [Скачать тарифы в Excel с 16.09.2026](https://cdn.ozone.ru/s3/ozon-disk-api/Seller-edu/files/commissions-tariffs/cross-dock/tariffs-cross-dock-PickUp_%D1%81_16.09.26_1788260781.xlsx) |  |
 
 Если точка отгрузки или финальный склад по техническим причинам не относится ни к одной из тарифных зон, начислим плату по универсальному тарифу 1,5 ₽ за литр для коробок и палет.
