@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /fbs/punkty-priema/moskva
 source: "https://seller-edu.ozon.ru/libra/fbs/punkty-priema/moskva"
-updated: "2026-09-24 08:30:58"
+updated: "2026-10-02 08:54:33"
 doc_id: 824
-fetched_at: "2026-09-25T02:13:05Z"
-content_sha: 1b0344f8aaf4b4f6
+fetched_at: "2026-10-04T01:58:25Z"
+content_sha: 5a85fd47019f26f9
 ---
 
 # Пункты приёма и вывоза в Москве
@@ -1240,9 +1240,9 @@ _Главная / Продажа со своего склада (FBS) / Адре
 
 максимальная скорость — 5 км/ч;
 
-отгрузка на воротах №76–78;
+отгрузка на воротах №96–99;
 
-вход для продавцов рядом с 76 воротами.
+вход для продавцов между воротами 97–98.
 
 **Схема проезда:**
 
