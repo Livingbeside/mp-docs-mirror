@@ -2,14 +2,14 @@
 title: Информация о заказах
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/orders/getBusinessOrders.md"
-fetched_at: "2026-10-02T02:05:48Z"
-content_sha: b317e94ef244da67
+fetched_at: "2026-10-06T02:00:46Z"
+content_sha: 24ce4b688b2b959c
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.62.0
+    content: Diplodoc Platform v5.63.0
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/orders/getBusinessOrders.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/orders/getBusinessOrders.md
@@ -4654,30 +4654,6 @@ alternate:
   ||
   ||
   
-  _statuses_{.json-schema-reset .json-schema-property .json-schema-required}
-  {.table-cell}|
-  **Type**: [BusinessOrderLineServiceStatusDTO](#entity-BusinessOrderLineServiceStatusDTO)[]
-  
-  Статусы единиц услуги.
-  
-  _Min items:_{.json-schema-reset .json-schema-assertion} `1`
-  
-  {% cut "**Example**" %}{.json-schema-example}
-  
-  ```json translate=no
-  [
-    {
-      "status": "CREATED",
-      "count": 0
-    }
-  ]
-  ```
-  
-  {% endcut %}
-  {.table-cell}
-  ||
-  ||
-  
   _unitPrice_{.json-schema-reset .json-schema-property .json-schema-required}
   {.table-cell}|
   **Type**: number
@@ -4719,6 +4695,33 @@ alternate:
   
   
   _Enum:_{.json-schema-reset .json-schema-value} `USER_REQUESTED`, `SHOP_UNABLE_TO_RENDER`, `USER_UNREACHABLE`, `UNKNOWN`
+  {.table-cell}
+  ||
+  ||
+  
+  _statuses_{.json-schema-reset .json-schema-property}
+  {.table-cell}|
+  **Type**: [BusinessOrderLineServiceStatusDTO](#entity-BusinessOrderLineServiceStatusDTO)[] &#124; null
+  
+  Статусы единиц услуги.
+  
+  Если данных о статусах единиц услуги нет, поле отсутствует.
+  
+  
+  _Min items:_{.json-schema-reset .json-schema-assertion} `1`
+  
+  {% cut "**Example**" %}{.json-schema-example}
+  
+  ```json translate=no
+  [
+    {
+      "status": "CREATED",
+      "count": 0
+    }
+  ]
+  ```
+  
+  {% endcut %}
   {.table-cell}
   ||
   |#{.json-schema-properties}
@@ -6510,7 +6513,7 @@ alternate:
             - OTHER
         minItems: 1
     $defs:
-      /home/sandbox/.ya/build/build_root/9ot9/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/orders/api/getBusinessOrders.yaml#/OrderDatesFilterDTO:
+      /home/sandbox/.ya/build/build_root/84gm/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/orders/api/getBusinessOrders.yaml#/OrderDatesFilterDTO:
         type: object
         description: Фильтр по датам заказов.
         properties:

@@ -2,14 +2,14 @@
 title: Невыкупы и возвраты
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/returns.md"
-fetched_at: "2026-10-02T02:05:16Z"
-content_sha: d19d27d1ab4c4982
+fetched_at: "2026-10-06T02:00:13Z"
+content_sha: 9e2787b64f915194
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.62.0
+    content: Diplodoc Platform v5.63.0
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/step-by-step/returns.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/returns.md

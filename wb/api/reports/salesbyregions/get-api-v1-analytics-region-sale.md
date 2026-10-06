@@ -8,19 +8,19 @@ tags:
   - salesByRegions
 spec_version: reports
 source: "https://dev.wildberries.ru/docs/openapi/reports"
-deprecated: false
-content_sha: 4cb3e2afef705121
+deprecated: true
+content_sha: 7f7386c53ff904f7
 ---
 
 # Получить отчёт
 
 `GET /api/v1/analytics/region-sale`
 
+> ⚠️ Метод помечен как **deprecated**.
+
 Описание метода
 
-Метод возвращает отчёт с [данными продаж, сгруппированных по регионам стран](https://seller.wildberries.ru/analytics-reports/region-sale).
-
-Можно получить отчёт максимум за 31 день.
+Метод будет отключен [3 ноября](https://dev.wildberries.ru/release-notes?id=590).
 
 Лимит запросов на один аккаунт продавца:
 

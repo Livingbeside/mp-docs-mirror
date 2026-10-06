@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /how-to-sell-effectively/advertising-of-goods/vneshnee-prodvizhenie
 source: "https://seller-edu.ozon.ru/libra/how-to-sell-effectively/advertising-of-goods/vneshnee-prodvizhenie"
-updated: "2026-09-07 13:25:22"
+updated: "2026-10-05 10:32:26"
 doc_id: 23579
-fetched_at: "2026-09-08T01:39:31Z"
-content_sha: a6a7c5b5f353c2d3
+fetched_at: "2026-10-06T01:57:02Z"
+content_sha: c2a6d241e713d27d
 ---
 
 # «Внешнее продвижение»
@@ -15,6 +15,18 @@ content_sha: a6a7c5b5f353c2d3
 _Главная / Продвижение / Продвижение товаров_
 
 Как продвигать товары через блогеров в социальной сети ВКонтакте
+
+C 1 октября по 31 декабря 2026 года дарим [бонусы на продвижение](https://seller-edu.ozon.ru/libra/how-to-sell-effectively/bonusi). Создавайте новые задания блогерам с 1 октября, а мы вернём часть ваших трат за каждый месяц акции — октябрь, ноябрь и декабрь — общими бонусами на продвижение. Чем больше расходы, тем больше бонусов:
+
+за траты от 15 000 до 49 999 ₽ в месяц начислим 10 000 бонусов;
+
+от 50 000 до 94 999 ₽ — 20 000 бонусов;
+
+от 95 000 до 194 999 ₽ — 30 000 бонусов, и так далее.
+
+Бонусы можно потратить на продвижение в инструментах «Оплата за клик» и «Медийная реклама».
+
+[Подробнее об условиях](https://ir.ozone.ru/s3/adv/external-promo-bonuses.pdf)
 
 # Как работает «Внешнее продвижение»
 

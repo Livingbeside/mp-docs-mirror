@@ -2,14 +2,14 @@
 title: Управление ценами
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/_auto/scopes_summary/pages/pricing.md"
-fetched_at: "2026-10-02T02:04:50Z"
-content_sha: 2d0b569c79be2521
+fetched_at: "2026-10-06T01:59:55Z"
+content_sha: 7924b79abea527ec
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.62.0
+    content: Diplodoc Platform v5.63.0
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/_auto/scopes_summary/pages/pricing.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/_auto/scopes_summary/pages/pricing.md

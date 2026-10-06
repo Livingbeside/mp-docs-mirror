@@ -2,14 +2,14 @@
 title: Просмотр информации о заказах
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/_auto/scopes_summary/pages/inventory-and-order-processing_read-only.md"
-fetched_at: "2026-10-02T02:04:50Z"
-content_sha: bc2644c73654dd4e
+fetched_at: "2026-10-06T01:59:54Z"
+content_sha: 6aef80e86f2435da
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.62.0
+    content: Diplodoc Platform v5.63.0
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/_auto/scopes_summary/pages/inventory-and-order-processing_read-only.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/_auto/scopes_summary/pages/inventory-and-order-processing_read-only.md

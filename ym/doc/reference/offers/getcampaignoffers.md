@@ -2,14 +2,14 @@
 title: В магазине
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/offers/getCampaignOffers.md"
-fetched_at: "2026-10-02T02:05:34Z"
-content_sha: d94316f4a021b9b0
+fetched_at: "2026-10-06T02:00:32Z"
+content_sha: 10e41625076934a7
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.62.0
+    content: Diplodoc Platform v5.63.0
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/offers/getCampaignOffers.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/offers/getCampaignOffers.md

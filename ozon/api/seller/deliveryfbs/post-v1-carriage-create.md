@@ -9,12 +9,15 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: 581c654ab19a1e42
+content_sha: 2a7120c4bd39e082
 ---
 
 # Создание отгрузки
 
 `POST /v1/carriage/create`
+
+Перед началом работы проверьте возможность создания отгрузки методом [/v2/carriage/delivery/list](#operation/CarriageAPI_CarriageDeliveryListV2). 
+ Если methods.carriages.available_actions = create, вы можете создать отгрузку. 
 
 Если вы продавец не из России, обратите внимание на доступность [рекомендованного времени](https://seller-edu.ozon.ru/fbs/ozon-logistika/sobrat-zakazy#шаг-2-сформируите-отгрузку) в личном кабинете.
 

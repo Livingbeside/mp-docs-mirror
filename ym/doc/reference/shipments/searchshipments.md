@@ -2,14 +2,14 @@
 title: Информация о нескольких отгрузках
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/shipments/searchShipments.md"
-fetched_at: "2026-10-02T02:06:01Z"
-content_sha: 4aebf73f6b373bfd
+fetched_at: "2026-10-06T02:00:58Z"
+content_sha: 67d29d18683b5b31
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.62.0
+    content: Diplodoc Platform v5.63.0
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/shipments/searchShipments.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/shipments/searchShipments.md
@@ -1861,7 +1861,7 @@ alternate:
         type: boolean
         default: true
     $defs:
-      /home/sandbox/.ya/build/build_root/9ot9/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/shipments/schemas.yaml#/ShipmentStatusType:
+      /home/sandbox/.ya/build/build_root/84gm/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/shipments/schemas.yaml#/ShipmentStatusType:
         description: |
           Статус отгрузки:
   

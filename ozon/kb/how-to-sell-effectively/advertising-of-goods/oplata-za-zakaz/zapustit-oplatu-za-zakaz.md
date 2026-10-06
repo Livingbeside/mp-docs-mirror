@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /how-to-sell-effectively/advertising-of-goods/oplata-za-zakaz/zapustit-oplatu-za-zakaz
 source: "https://seller-edu.ozon.ru/libra/how-to-sell-effectively/advertising-of-goods/oplata-za-zakaz/zapustit-oplatu-za-zakaz"
-updated: "2026-09-07 13:15:19"
+updated: "2026-10-05 13:39:34"
 doc_id: 25625
-fetched_at: "2026-09-08T01:39:32Z"
-content_sha: f89a7786d12c0c97
+fetched_at: "2026-10-06T01:57:02Z"
+content_sha: 989622ac3c40ba80
 ---
 
 # Как запустить продвижение в «Оплате за заказ»
@@ -83,6 +83,14 @@ _Главная / Продвижение / Продвижение товаров
 Минимальная сумма списания за заказ составляет 5 ₽.
 
 # От чего зависит ставка в инструменте
+
+C 20 октября 2026 года изменим ставки в инструменте:
+
+для продвижения выбранных товаров — 28% вместо 23%;
+
+для продвижения всех товаров — 6, 8 и 10% вместо 5, 7 и 9%;
+
+для комбо-модели — 12% вместо 10%.
 
 Ставки в инструменте отличаются в зависимости от выбранного способа продвижения.
 

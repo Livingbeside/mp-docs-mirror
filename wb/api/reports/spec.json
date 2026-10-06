@@ -3764,7 +3764,8 @@
     },
     "/api/v1/analytics/region-sale": {
       "get": {
-        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод возвращает отчёт с [данными продаж, сгруппированных по регионам стран](https://seller.wildberries.ru/analytics-reports/region-sale).<br><br>\n\nМожно получить отчёт максимум за 31 день.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 10 сек | 1 запрос | 10 сек | 5 запросов |\n| Сервисный | 10 сек | 1 запрос | 10 сек | 5 запросов |\n| Базовый с секретом | 10 сек | 1 запрос | 10 сек | 5 запросов |\n| Базовый | 1 ч | 1 запрос | 1 ч | 1 запрос |\n</div>\n",
+        "deprecated": true,
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод будет отключен [3 ноября](https://dev.wildberries.ru/release-notes?id=590).\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 10 сек | 1 запрос | 10 сек | 5 запросов |\n| Сервисный | 10 сек | 1 запрос | 10 сек | 5 запросов |\n| Базовый с секретом | 10 сек | 1 запрос | 10 сек | 5 запросов |\n| Базовый | 1 ч | 1 запрос | 1 ч | 1 запрос |\n</div>\n",
         "operationId": "getV1AnalyticsRegionSale",
         "parameters": [
           {

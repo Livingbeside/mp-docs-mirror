@@ -2,14 +2,14 @@
 title: Изменение цен
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/assortment-change-prices.md"
-fetched_at: "2026-10-02T02:05:12Z"
-content_sha: 0bdbecc7536c3c91
+fetched_at: "2026-10-06T02:00:10Z"
+content_sha: f17cb3c928a558eb
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.62.0
+    content: Diplodoc Platform v5.63.0
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/step-by-step/assortment-change-prices.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/assortment-change-prices.md

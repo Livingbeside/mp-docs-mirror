@@ -2,14 +2,14 @@
 title: Установленные ставки
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/bids/getBidsInfoForBusiness.md"
-fetched_at: "2026-10-02T02:06:38Z"
-content_sha: fccc5fb07f87a52a
+fetched_at: "2026-10-06T02:01:40Z"
+content_sha: cd3dfb6813886f26
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.62.0
+    content: Diplodoc Platform v5.63.0
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/bids/getBidsInfoForBusiness.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/bids/getBidsInfoForBusiness.md

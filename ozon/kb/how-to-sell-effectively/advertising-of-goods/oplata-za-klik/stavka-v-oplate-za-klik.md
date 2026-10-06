@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /how-to-sell-effectively/advertising-of-goods/oplata-za-klik/stavka-v-oplate-za-klik
 source: "https://seller-edu.ozon.ru/libra/how-to-sell-effectively/advertising-of-goods/oplata-za-klik/stavka-v-oplate-za-klik"
-updated: "2026-09-07 13:17:58"
+updated: "2026-10-05 13:36:59"
 doc_id: 34455
-fetched_at: "2026-09-08T01:39:32Z"
-content_sha: 16177e51aec0d9ff
+fetched_at: "2026-10-06T01:57:02Z"
+content_sha: b5fb79cf56cef514
 ---
 
 # Что такое ставка для «Оплаты за клик» и как её выбрать
@@ -25,6 +25,12 @@ _Главная / Продвижение / Продвижение товаров
 [Подробнее о стратегиях](/how-to-sell-effectively/advertising-of-goods/oplata-za-klik/upravlenie-stavkami)
 
 ## Какая минимальная ставка в оплате за клик
+
+C 20 октября 2026 года изменим минимальные ставки в инструменте:
+
+[для места размещения «Поиск»](https://cdn.ozone.ru/s3/ozon-disk-api/Seller-edu/files/how-to-sell-effectively/prodvizhenie-tovarov/Ставки-поиск_—_с_20.10.2026_1791207379.xlsx);
+
+[для места размещения «Поиск и рекомендации»](https://cdn.ozone.ru/s3/ozon-disk-api/Seller-edu/files/how-to-sell-effectively/prodvizhenie-tovarov/Ставки-поиск-и-рекомендации_—_с_20.10.2026_1791207378.xlsx).
 
 Минимальная ставка зависит от категории, предельной цены товара и выбранного места размещения:
 

@@ -2,14 +2,14 @@
 title: Удаление документов
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/documents/deleteDocuments.md"
-fetched_at: "2026-10-02T02:05:33Z"
-content_sha: 32a3a351f5398ba4
+fetched_at: "2026-10-06T02:00:30Z"
+content_sha: 4d43bb46c1c1ba8f
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.62.0
+    content: Diplodoc Platform v5.63.0
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/documents/deleteDocuments.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/documents/deleteDocuments.md

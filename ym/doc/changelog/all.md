@@ -2,14 +2,14 @@
 title: Все обновления
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/changelog/all.md"
-fetched_at: "2026-10-02T02:05:26Z"
-content_sha: e477b50f38d03ef7
+fetched_at: "2026-10-06T02:00:23Z"
+content_sha: 670fa1a6bfc4d1c3
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.62.0
+    content: Diplodoc Platform v5.63.0
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/changelog/all.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/changelog/all.md
@@ -31,6 +31,21 @@ alternate:
 {% endnote %}
 
 <!-- source: ru/_auto/changelog/all.md -->
+<!-- source: ru/_auto/changelog/all/2026-10-01.md -->
+### 1 октября {#01-10-26}
+
+#|
+|| **Методы или страницы документации**
+ | **Описание изменений**
+ ||
+||
+[POST v2/reports/goods-realization/generate](https://yandex.ru/dev/market/partner-api/doc/ru/reference/reports/generateGoodsRealizationReport.md)
+|
+В запрос метода генерации отчета о реализации товаров добавили необязательные фильтры: `inns` — список ИНН, `placementPrograms` — список моделей размещения, `placementContracts` — список номеров договоров на размещение.
+||
+|#
+<!-- endsource: ru/_auto/changelog/all/2026-10-01.md -->
+
 <!-- source: ru/_auto/changelog/all/2026-09-29.md -->
 ### 29 сентября {#29-09-26}
 

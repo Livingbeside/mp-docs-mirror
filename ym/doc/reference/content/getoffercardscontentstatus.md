@@ -2,14 +2,14 @@
 title: Информация о заполненности карточек
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/content/getOfferCardsContentStatus.md"
-fetched_at: "2026-10-02T02:05:31Z"
-content_sha: 1209e2003e3793db
+fetched_at: "2026-10-06T02:00:28Z"
+content_sha: cdbc08c666ffc1a7
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.62.0
+    content: Diplodoc Platform v5.63.0
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/content/getOfferCardsContentStatus.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/content/getOfferCardsContentStatus.md

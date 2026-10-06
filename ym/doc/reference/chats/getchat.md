@@ -2,14 +2,14 @@
 title: Получение одного чата
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/chats/getChat.md"
-fetched_at: "2026-10-02T02:06:40Z"
-content_sha: fed080713661e54b
+fetched_at: "2026-10-06T02:01:43Z"
+content_sha: fa1b35b9fa9afc98
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.62.0
+    content: Diplodoc Platform v5.63.0
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/chats/getChat.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/chats/getChat.md

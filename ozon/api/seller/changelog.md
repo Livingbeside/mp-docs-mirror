@@ -5,12 +5,20 @@ tag: News
 group: Обновления
 kind: changelog
 source: "https://docs.ozon.ru/api/seller/"
-content_sha: 696424231c825d64
+content_sha: 0d7c822a2f7ab1eb
 ---
 
 # Обновления
 
 Следите за обновлениями документации на платформе для разработчиков [Ozon for dev](https://dev.ozon.ru/).
+
+## 5 октября 2026
+
+| Метод | Изменение |
+|-------|-----------|
+| [/v1/carriage/create](#operation/CarriageAPI_CarriageCreate) | Обновили описание метода. |
+| [/v2/carriage/delivery/list](#operation/CarriageAPI_CarriageDeliveryListV2) | Обновили описание параметра `methods.carriages.available_actions` в ответе метода. |
+| — | В разделах [**Порядок работы с методами → Управляйте заказами FBO, FBS, rFBS и FBP → Схема FBS Стандарт**](#section/Upravlyajte-zakazami-FBO-FBS-rFBS-i-FBP/Shema-FBS-Standart) и [**Порядок работы с методами → Управляйте заказами FBO, FBS, rFBS и FBP → Схема FBS PickUp с доверительной приёмкой**](#section/Upravlyajte-zakazami-FBO-FBS-rFBS-i-FBP/Shema-FBS-PickUp-s-doveritelnoj-priyomkoj) обновили порядок создания отгрузки. |
 
 ## 28 сентября 2026
 

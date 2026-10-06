@@ -2,14 +2,14 @@
 title: Акт приема-передачи
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/shipments/downloadShipmentAct.md"
-fetched_at: "2026-10-02T02:06:03Z"
-content_sha: f89ac7e94baf41a0
+fetched_at: "2026-10-06T02:01:02Z"
+content_sha: 129351273c51b4f0
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.62.0
+    content: Diplodoc Platform v5.63.0
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/shipments/downloadShipmentAct.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/shipments/downloadShipmentAct.md

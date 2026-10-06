@@ -2,14 +2,14 @@
 title: Лучшие практики
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/concepts/best-practices.md"
-fetched_at: "2026-10-02T02:05:06Z"
-content_sha: 8ba3321c373646a3
+fetched_at: "2026-10-06T02:00:06Z"
+content_sha: b3af72e8ac8d1f9f
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.62.0
+    content: Diplodoc Platform v5.63.0
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/concepts/best-practices.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/concepts/best-practices.md

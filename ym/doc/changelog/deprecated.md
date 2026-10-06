@@ -2,14 +2,14 @@
 title: Устаревшие методы и параметры
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/changelog/deprecated.md"
-fetched_at: "2026-10-02T02:05:25Z"
-content_sha: b29a2a6460180a40
+fetched_at: "2026-10-06T02:00:22Z"
+content_sha: dd18d5f881330436
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.62.0
+    content: Diplodoc Platform v5.63.0
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/changelog/deprecated.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/changelog/deprecated.md

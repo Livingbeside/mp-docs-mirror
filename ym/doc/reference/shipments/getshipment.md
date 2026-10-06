@@ -2,14 +2,14 @@
 title: Информация об одной отгрузке
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/shipments/getShipment.md"
-fetched_at: "2026-10-02T02:06:00Z"
-content_sha: ec2653891792e7bf
+fetched_at: "2026-10-06T02:00:57Z"
+content_sha: d13e87c2f3cc3d39
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.62.0
+    content: Diplodoc Platform v5.63.0
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/shipments/getShipment.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/shipments/getShipment.md

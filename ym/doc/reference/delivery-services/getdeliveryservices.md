@@ -2,14 +2,14 @@
 title: Справочник служб доставки
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/delivery-services/getDeliveryServices.md"
-fetched_at: "2026-10-02T02:06:45Z"
-content_sha: d6b1980cc44d26b6
+fetched_at: "2026-10-06T02:01:48Z"
+content_sha: 55754a076c105752
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.62.0
+    content: Diplodoc Platform v5.63.0
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/delivery-services/getDeliveryServices.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/delivery-services/getDeliveryServices.md

@@ -5,7 +5,7 @@ tag: Process
 group: Общее описание
 kind: guide
 source: "https://docs.ozon.ru/api/seller/"
-content_sha: 5210dc069d0edb25
+content_sha: 6c10fcdaff79c2ee
 ---
 
 # Порядок работы с методами
@@ -490,8 +490,8 @@ Ozon, товар не будет создан или обновлён.
  
  Получите статусы передачи маркировок:
 
-- [/v5/fbs/posting/product/exemplar/status](#operation/PostingAPI_FbsPostingProductExemplarStatusV5) — получить статус добавления экземпляров.
-- [/v6/fbs/posting/product/exemplar/create-or-get](#operation/PostingAPI_FbsPostingProductExemplarCreateOrGetV6) — получить данные созданных экземпляров.
+ - [/v5/fbs/posting/product/exemplar/status](#operation/PostingAPI_FbsPostingProductExemplarStatusV5) — получить статус добавления экземпляров.
+ - [/v6/fbs/posting/product/exemplar/create-or-get](#operation/PostingAPI_FbsPostingProductExemplarCreateOrGetV6) — получить данные созданных экземпляров.
 
 4. Перед сборкой убедитесь, что отправление соответствует установленным в пункте приёма ограничениям. Получите
  ограничения пункта приёма по номеру
@@ -513,10 +513,13 @@ Ozon, товар не будет создан или обновлён.
 6. Для каждого отправления распечатайте наклейку для идентификации в системе
  Ozon: [/v3/posting/fbs/package-label/create](#operation/PostingFbsPackageLabelCreate) и [/v2/posting/fbs/package-label/get](#operation/PostingFbsPackageLabelGet).
 
-7. Подтвердите отгрузку и запустите формирование транспортной накладной методом [/v2/posting/fbs/act/create](#operation/PostingAPI_PostingFBSActCreate) или создайте отгрузку с помощью метода [/v1/carriage/create](#operation/CarriageAPI_CarriageCreate) и подтвердите её методом [/v1/carriage/approve](#operation/CarriageAPI_CarriageApprove). 
+7. Проверьте возможность создания отгрузки методом [/v2/carriage/delivery/list](#operation/CarriageAPI_CarriageDeliveryListV2).
+ Если `methods.carriages.available_actions = create`, вы можете создать отгрузку.
+
+8. Подтвердите отгрузку и запустите формирование транспортной накладной методом [/v2/posting/fbs/act/create](#operation/PostingAPI_PostingFBSActCreate) или создайте отгрузку с помощью метода [/v1/carriage/create](#operation/CarriageAPI_CarriageCreate) и подтвердите её методом [/v1/carriage/approve](#operation/CarriageAPI_CarriageApprove). 
  В ответе методов [/v2/posting/fbs/act/create](#operation/PostingAPI_PostingFBSActCreate) и [/v1/carriage/create](#operation/CarriageAPI_CarriageCreate) вы получите идентификатор созданной перевозки.
 
-8. Запросите информацию о созданной поставке с помощью метода [/v1/carriage/get](#operation/CarriageGet). 
+9. Запросите информацию о созданной поставке с помощью метода [/v1/carriage/get](#operation/CarriageGet). 
  Массив `available_actions` содержит информацию о доступных действиях с поставкой и необходимости создать пропуск для проезда на склад Ozon.
 
  Чтобы создать пропуск, используйте метод [/v1/carriage/pass/create](#operation/carriagePassCreate). 
@@ -529,13 +532,13 @@ Ozon, товар не будет создан или обновлён.
 
  [Подробнее об оформлении пропусков](https://seller-edu.ozon.ru/fbs/ozon-logistika/oformlenie-propuska)
 
-9. Получите список перевозок, по которым нужно распечатать штрихкод для отгрузки и транспортную накладную: [/v1/posting/carriage-available/list](#operation/PostingAPI_GetCarriageAvailableList) или [/v2/carriage/delivery/list](#operation/CarriageAPI_CarriageDeliveryListV2).
+10. Получите список перевозок, по которым нужно распечатать штрихкод для отгрузки и транспортную накладную: [/v1/posting/carriage-available/list](#operation/PostingAPI_GetCarriageAvailableList) или [/v2/carriage/delivery/list](#operation/CarriageAPI_CarriageDeliveryListV2).
 
-10. Проверьте, что отгрузка создана: [/v2/posting/fbs/act/check-status](#operation/PostingAPI_PostingFBSActCheckStatus).
+11. Проверьте, что отгрузка создана: [/v2/posting/fbs/act/check-status](#operation/PostingAPI_PostingFBSActCheckStatus).
 
-11. Получите штрихкод для отгрузки: [/v2/posting/fbs/act/get-barcode](#operation/PostingAPI_PostingFBSGetBarcode).
+12. Получите штрихкод для отгрузки: [/v2/posting/fbs/act/get-barcode](#operation/PostingAPI_PostingFBSGetBarcode).
 
-12. Получите PDF-документы: [/v2/posting/fbs/act/get-pdf](#operation/PostingAPI_PostingFBSGetAct) и [/v1/carriage/act-discrepancy/pdf](#operation/CarriageActDiscrepancyPDF).
+13. Получите PDF-документы: [/v2/posting/fbs/act/get-pdf](#operation/PostingAPI_PostingFBSGetAct) и [/v1/carriage/act-discrepancy/pdf](#operation/CarriageActDiscrepancyPDF).
 
 После этого можете отвезти отправления и документы в пункт приёма.
 
@@ -642,8 +645,8 @@ Ozon, товар не будет создан или обновлён.
 
  Получите статусы передачи маркировок:
 
-- [/v5/fbs/posting/product/exemplar/status](#operation/PostingAPI_FbsPostingProductExemplarStatusV5) — получить статус добавления экземпляров.
-- [/v6/fbs/posting/product/exemplar/create-or-get](#operation/PostingAPI_FbsPostingProductExemplarCreateOrGetV6) — получить данные созданных экземпляров.
+ - [/v5/fbs/posting/product/exemplar/status](#operation/PostingAPI_FbsPostingProductExemplarStatusV5) — получить статус добавления экземпляров.
+ - [/v6/fbs/posting/product/exemplar/create-or-get](#operation/PostingAPI_FbsPostingProductExemplarCreateOrGetV6) — получить данные созданных экземпляров.
 
 4. Перед сборкой убедитесь, что отправление соответствует установленным в пункте приёма ограничениям. Получите
  ограничения пункта приёма по номеру
@@ -662,17 +665,20 @@ Ozon, товар не будет создан или обновлён.
  Вы можете использовать метод для частичной
  сборки: [/v4/posting/fbs/ship/package](#operation/PostingAPI_ShipFbsPostingPackage).
 
-6. Подтвердите отгрузку и запустите формирование транспортной накладной методом [/v2/posting/fbs/act/create](#operation/PostingAPI_PostingFBSActCreate) или создайте перевозку с помощью метода [/v1/carriage/create](#operation/CarriageAPI_CarriageCreate) и подтвердите её методом [/v1/carriage/approve](#operation/CarriageAPI_CarriageApprove).
+6. Проверьте возможность создания отгрузки методом [/v2/carriage/delivery/list](#operation/CarriageAPI_CarriageDeliveryListV2).
+ Если `methods.carriages.available_actions = create`, вы можете создать отгрузку.
+
+7. Подтвердите отгрузку и запустите формирование транспортной накладной методом [/v2/posting/fbs/act/create](#operation/PostingAPI_PostingFBSActCreate) или создайте перевозку с помощью метода [/v1/carriage/create](#operation/CarriageAPI_CarriageCreate) и подтвердите её методом [/v1/carriage/approve](#operation/CarriageAPI_CarriageApprove).
  В ответе методов [/v2/posting/fbs/act/create](#operation/PostingAPI_PostingFBSActCreate) и [/v1/carriage/create](#operation/CarriageAPI_CarriageCreate) вы получите идентификатор созданной перевозки.
 
-7. Получите список перевозок, по которым нужно распечатать штрихкод для отгрузки и транспортную накладную: [/v1/posting/carriage-available/list](#operation/PostingAPI_GetCarriageAvailableList) или [/v2/carriage/delivery/list](#operation/CarriageAPI_CarriageDeliveryListV2).
+8. Получите список перевозок, по которым нужно распечатать штрихкод для отгрузки и транспортную накладную: [/v1/posting/carriage-available/list](#operation/PostingAPI_GetCarriageAvailableList) или [/v2/carriage/delivery/list](#operation/CarriageAPI_CarriageDeliveryListV2).
 
-8. Получите PDF-документы: [/v2/posting/fbs/act/get-pdf](#operation/PostingAPI_PostingFBSGetAct) и [/v1/carriage/act-discrepancy/pdf](#operation/CarriageActDiscrepancyPDF).
+9. Получите PDF-документы: [/v2/posting/fbs/act/get-pdf](#operation/PostingAPI_PostingFBSGetAct) и [/v1/carriage/act-discrepancy/pdf](#operation/CarriageActDiscrepancyPDF).
 
-9. Для каждого отправления распечатайте наклейку для идентификации в системе
- Ozon: [/v3/posting/fbs/package-label/create](#operation/PostingFbsPackageLabelCreate) и [/v2/posting/fbs/package-label/get](#operation/PostingFbsPackageLabelGet).
+10. Для каждого отправления распечатайте наклейку для идентификации в системе
+ Ozon: [/v2/posting/fbs/package-label](#operation/PostingAPI_PostingFBSPackageLabel).
 
-10. После того как вы упаковали все отправления по требованиям из
+11. После того как вы упаковали все отправления по требованиям из
  раздела [Доверительная приёмка грузового места](https://seller-edu.ozon.ru/docs/fbs/ozon-logistika/doveritel-naya-priemka-gruzovogo-mesta.html#какие-требования-к-грузовому-месту)
  в Базе знаний продавца, получите этикетки на каждое грузовое
  место: [/v2/posting/fbs/act/get-container-labels](#operation/PostingAPI_PostingFBSActGetContainerLabels).
@@ -820,8 +826,8 @@ Ozon, товар не будет создан или обновлён.
 
  Получите статусы передачи маркировок: 
 
-- [/v5/fbs/posting/product/exemplar/status](#operation/PostingAPI_FbsPostingProductExemplarStatusV5) — получить статус добавления экземпляров.
-- [/v6/fbs/posting/product/exemplar/create-or-get](#operation/PostingAPI_FbsPostingProductExemplarCreateOrGetV6) — получить данные созданных экземпляров.
+ - [/v5/fbs/posting/product/exemplar/status](#operation/PostingAPI_FbsPostingProductExemplarStatusV5) — получить статус добавления экземпляров.
+ - [/v6/fbs/posting/product/exemplar/create-or-get](#operation/PostingAPI_FbsPostingProductExemplarCreateOrGetV6) — получить данные созданных экземпляров.
 
 4. До окончания времени на сборку подтвердите, что вы собрали
  заказ: [/v4/posting/fbs/ship](#operation/PostingAPI_ShipFbsPostingV4). Вы не сможете собрать заказ, если:
@@ -905,8 +911,8 @@ Ozon, товар не будет создан или обновлён.
 
  Получите статусы передачи маркировок:
 
-- [/v5/fbs/posting/product/exemplar/status](#operation/PostingAPI_FbsPostingProductExemplarStatusV5) — получить статус добавления экземпляров.
-- [/v6/fbs/posting/product/exemplar/create-or-get](#operation/PostingAPI_FbsPostingProductExemplarCreateOrGetV6) — получить данные созданных экземпляров.
+ - [/v5/fbs/posting/product/exemplar/status](#operation/PostingAPI_FbsPostingProductExemplarStatusV5) — получить статус добавления экземпляров.
+ - [/v6/fbs/posting/product/exemplar/create-or-get](#operation/PostingAPI_FbsPostingProductExemplarCreateOrGetV6) — получить данные созданных экземпляров.
 
 4. До окончания времени на сборку подтвердите, что вы собрали заказ: [/v4/posting/fbs/ship](#operation/PostingAPI_ShipFbsPostingV4). 
  Вы не сможете собрать заказ, если:
@@ -981,8 +987,8 @@ Ozon, товар не будет создан или обновлён.
 
  Получите статусы передачи маркировок:
 
-- [/v5/fbs/posting/product/exemplar/status](#operation/PostingAPI_FbsPostingProductExemplarStatusV5) — получить статус добавления экземпляров.
-- [/v6/fbs/posting/product/exemplar/create-or-get](#operation/PostingAPI_FbsPostingProductExemplarCreateOrGetV6) — получить данные созданных экземпляров.
+ - [/v5/fbs/posting/product/exemplar/status](#operation/PostingAPI_FbsPostingProductExemplarStatusV5) — получить статус добавления экземпляров.
+ - [/v6/fbs/posting/product/exemplar/create-or-get](#operation/PostingAPI_FbsPostingProductExemplarCreateOrGetV6) — получить данные созданных экземпляров.
 
 4. До окончания времени на сборку подтвердите, что вы собрали
  заказ: [/v4/posting/fbs/ship](#operation/PostingAPI_ShipFbsPostingV4). Вы не сможете собрать заказ, если:
@@ -1049,8 +1055,8 @@ Ozon, товар не будет создан или обновлён.
 
  Получите статусы передачи маркировок:
 
-- [/v5/fbs/posting/product/exemplar/status](#operation/PostingAPI_FbsPostingProductExemplarStatusV5) — получить статус добавления экземпляров.
-- [/v6/fbs/posting/product/exemplar/create-or-get](#operation/PostingAPI_FbsPostingProductExemplarCreateOrGetV6) — получить данные созданных экземпляров.
+ - [/v5/fbs/posting/product/exemplar/status](#operation/PostingAPI_FbsPostingProductExemplarStatusV5) — получить статус добавления экземпляров.
+ - [/v6/fbs/posting/product/exemplar/create-or-get](#operation/PostingAPI_FbsPostingProductExemplarCreateOrGetV6) — получить данные созданных экземпляров.
 
 4. Если товар в отправлении упакован в несколько коробок, передайте их количество: [/v3/posting/multiboxqty/set](#operation/PostingAPI_PostingMultiBoxQtySetV3). Если не сделать этого до сборки, вам придётся объединить все коробки в одну.
 
@@ -1135,8 +1141,8 @@ Ozon, товар не будет создан или обновлён.
 
  Получите статусы передачи маркировок:
 
-- [/v5/fbs/posting/product/exemplar/status](#operation/PostingAPI_FbsPostingProductExemplarStatusV5) — получить статус добавления экземпляров.
-- [/v6/fbs/posting/product/exemplar/create-or-get](#operation/PostingAPI_FbsPostingProductExemplarCreateOrGetV6) — получить данные созданных экземпляров.
+ - [/v5/fbs/posting/product/exemplar/status](#operation/PostingAPI_FbsPostingProductExemplarStatusV5) — получить статус добавления экземпляров.
+ - [/v6/fbs/posting/product/exemplar/create-or-get](#operation/PostingAPI_FbsPostingProductExemplarCreateOrGetV6) — получить данные созданных экземпляров.
 
 4. До окончания времени на сборку подтвердите, что вы собрали
  заказ: [/v4/posting/fbs/ship](#operation/PostingAPI_ShipFbsPostingV4). Вы не сможете собрать заказ, если:
@@ -1202,8 +1208,8 @@ Ozon, товар не будет создан или обновлён.
 
  Получите статусы передачи маркировок:
 
-- [/v5/fbs/posting/product/exemplar/status](#operation/PostingAPI_FbsPostingProductExemplarStatusV5) — получить статус добавления экземпляров.
-- [/v6/fbs/posting/product/exemplar/create-or-get](#operation/PostingAPI_FbsPostingProductExemplarCreateOrGetV6) — получить данные созданных экземпляров.
+ - [/v5/fbs/posting/product/exemplar/status](#operation/PostingAPI_FbsPostingProductExemplarStatusV5) — получить статус добавления экземпляров.
+ - [/v6/fbs/posting/product/exemplar/create-or-get](#operation/PostingAPI_FbsPostingProductExemplarCreateOrGetV6) — получить данные созданных экземпляров.
 
 4. До окончания времени на сборку подтвердите, что вы собрали
  заказ: [/v4/posting/fbs/ship](#operation/PostingAPI_ShipFbsPostingV4). Вы не сможете собрать заказ, если:

@@ -2,14 +2,14 @@
 title: FBS
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/overview/fbs.md"
-fetched_at: "2026-10-02T02:05:21Z"
-content_sha: 723985d959f6064b
+fetched_at: "2026-10-06T02:00:19Z"
+content_sha: 31c594817c02e9b6
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.62.0
+    content: Diplodoc Platform v5.63.0
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/overview/fbs.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/overview/fbs.md

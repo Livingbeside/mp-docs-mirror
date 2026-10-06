@@ -2,14 +2,14 @@
 title: Передача кода подтверждения
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/order-delivery/verifyOrderEac.md"
-fetched_at: "2026-10-02T02:05:52Z"
-content_sha: f4c3d8a7322ab556
+fetched_at: "2026-10-06T02:00:50Z"
+content_sha: 5614d4a538bf5ec1
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.62.0
+    content: Diplodoc Platform v5.63.0
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/order-delivery/verifyOrderEac.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/order-delivery/verifyOrderEac.md

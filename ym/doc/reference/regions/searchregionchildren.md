@@ -2,14 +2,14 @@
 title: Информация о дочерних регионах
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/regions/searchRegionChildren.md"
-fetched_at: "2026-10-02T02:06:48Z"
-content_sha: 664b0abca1864a1d
+fetched_at: "2026-10-06T02:01:50Z"
+content_sha: 7ea9e5e6c5025fba
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.62.0
+    content: Diplodoc Platform v5.63.0
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/regions/searchRegionChildren.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/regions/searchRegionChildren.md

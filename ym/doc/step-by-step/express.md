@@ -2,14 +2,14 @@
 title: Экспресс-заказы
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/express.md"
-fetched_at: "2026-10-02T02:05:14Z"
-content_sha: 6bd55f1c0351ac46
+fetched_at: "2026-10-06T02:00:11Z"
+content_sha: 2c7b7ae799781c59
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.62.0
+    content: Diplodoc Platform v5.63.0
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/step-by-step/express.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/express.md

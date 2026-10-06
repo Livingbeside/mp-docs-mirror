@@ -2,14 +2,14 @@
 title: Типы ошибок и что с ними делать
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/concepts/error-codes.md"
-fetched_at: "2026-10-02T02:04:57Z"
-content_sha: 1d3da95263712aca
+fetched_at: "2026-10-06T02:00:01Z"
+content_sha: 76ffa9434ceb3e56
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.62.0
+    content: Diplodoc Platform v5.63.0
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/concepts/error-codes.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/concepts/error-codes.md

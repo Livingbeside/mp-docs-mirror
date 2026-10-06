@@ -2,14 +2,14 @@
 title: В кабинете
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/prices/getDefaultPrices.md"
-fetched_at: "2026-10-02T02:05:41Z"
-content_sha: 626f8462a52263f5
+fetched_at: "2026-10-06T02:00:39Z"
+content_sha: 16df69300483efbb
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.62.0
+    content: Diplodoc Platform v5.63.0
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/prices/getDefaultPrices.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/prices/getDefaultPrices.md

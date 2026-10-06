@@ -2,14 +2,14 @@
 title: История сообщений
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/chats/getChatHistory.md"
-fetched_at: "2026-10-02T02:06:39Z"
-content_sha: 3f91138ba7eec6c6
+fetched_at: "2026-10-06T02:01:42Z"
+content_sha: fbc7344c819f3859
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.62.0
+    content: Diplodoc Platform v5.63.0
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/chats/getChatHistory.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/chats/getChatHistory.md

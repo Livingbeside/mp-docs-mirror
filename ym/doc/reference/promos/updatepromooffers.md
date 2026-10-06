@@ -2,14 +2,14 @@
 title: Добавление товаров в акцию/изменение их цен
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/promos/updatePromoOffers.md"
-fetched_at: "2026-10-02T02:05:47Z"
-content_sha: b38471c69dba5e03
+fetched_at: "2026-10-06T02:00:44Z"
+content_sha: 30d8f0aec3978af0
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.62.0
+    content: Diplodoc Platform v5.63.0
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/promos/updatePromoOffers.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/promos/updatePromoOffers.md

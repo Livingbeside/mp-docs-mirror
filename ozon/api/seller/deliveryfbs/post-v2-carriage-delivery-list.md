@@ -9,7 +9,7 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: 04194fd26aaf337d
+content_sha: ac8e2824f6088fc5
 ---
 
 # Список методов доставки и отгрузок
@@ -45,7 +45,7 @@ content_sha: 04194fd26aaf337d
   - `carriage_postings_count` — integer<int32>. Количество отправлений во всех отгрузках.
   - `carriages` — array[object]. Список отгрузок.
     - `all_blr_traceable` — boolean. `true`, если в отгрузке есть товары, для которых нужны дополнительные документы при отправке в Беларусь.
-    - `available_actions` — array[string]. Доступные действия с отгрузкой.
+    - `available_actions` — array[string]. Доступные действия с отгрузкой: - `create` — можно создать отгрузку; - `get_details` — можно получить информацию об отгрузке; - `get_assembly_list` — можно получить лист подбора.
     - `carriage_volume` — number<float>. Объём отгрузки в литрах.
     - `id` — integer<int64>. Идентификатор отгрузки. Если `0` — отгрузка, которую можно создать.
     - `pickup_fee` — object. Стоимость отгрузки pick-up.

@@ -2,14 +2,14 @@
 title: Получение точек ПВЗ Маркета (LaaS)
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/logistic-points/getLogisticPoints.md"
-fetched_at: "2026-10-02T02:06:46Z"
-content_sha: d328b8f18e020fa6
+fetched_at: "2026-10-06T02:01:48Z"
+content_sha: 6ced185229dd9bc4
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.62.0
+    content: Diplodoc Platform v5.63.0
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/logistic-points/getLogisticPoints.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/logistic-points/getLogisticPoints.md

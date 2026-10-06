@@ -2,14 +2,14 @@
 title: Удаление товаров из акции
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/promos/deletePromoOffers.md"
-fetched_at: "2026-10-02T02:05:48Z"
-content_sha: f226d5d30bce9556
+fetched_at: "2026-10-06T02:00:45Z"
+content_sha: a678b1d3e7983e50
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.62.0
+    content: Diplodoc Platform v5.63.0
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/promos/deletePromoOffers.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/promos/deletePromoOffers.md

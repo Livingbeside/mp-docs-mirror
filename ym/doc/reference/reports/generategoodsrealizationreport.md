@@ -2,14 +2,14 @@
 title: Отчет по реализации
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/reports/generateGoodsRealizationReport.md"
-fetched_at: "2026-10-02T02:06:28Z"
-content_sha: 77f3d079886185ac
+fetched_at: "2026-10-06T02:01:28Z"
+content_sha: 6bb39f178c85ea83
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.62.0
+    content: Diplodoc Platform v5.63.0
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/reports/generateGoodsRealizationReport.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/reports/generateGoodsRealizationReport.md
@@ -1476,7 +1476,16 @@ alternate:
   {
     "campaignId": 1,
     "year": 2025,
-    "month": 12
+    "month": 12,
+    "inns": [
+      "example"
+    ],
+    "placementPrograms": [
+      "FBS"
+    ],
+    "placementContracts": [
+      "example"
+    ]
   }
   ```
   
@@ -1533,6 +1542,75 @@ alternate:
   _Example:_{.json-schema-reset .json-schema-example} `2025`
   {.table-cell}
   ||
+  ||
+  
+  _inns_{.json-schema-reset .json-schema-property}
+  {.table-cell}|
+  **Type**: string[] &#124; null
+  
+  Список ИНН (доступно продавцам-резидентам РФ).
+  
+  _Min items:_{.json-schema-reset .json-schema-assertion} `1`
+  
+  _Unique items:_{.json-schema-reset .json-schema-assertion} `true`
+  
+  {% cut "**Example**" %}{.json-schema-example}
+  
+  ```json translate=no
+  [
+    "example"
+  ]
+  ```
+  
+  {% endcut %}
+  {.table-cell}
+  ||
+  ||
+  
+  _placementContracts_{.json-schema-reset .json-schema-property}
+  {.table-cell}|
+  **Type**: string[] &#124; null
+  
+  Список номеров договоров на размещение.
+  
+  _Min items:_{.json-schema-reset .json-schema-assertion} `1`
+  
+  _Unique items:_{.json-schema-reset .json-schema-assertion} `true`
+  
+  {% cut "**Example**" %}{.json-schema-example}
+  
+  ```json translate=no
+  [
+    "example"
+  ]
+  ```
+  
+  {% endcut %}
+  {.table-cell}
+  ||
+  ||
+  
+  _placementPrograms_{.json-schema-reset .json-schema-property}
+  {.table-cell}|
+  **Type**: [PlacementType](#entity-PlacementType)[] &#124; null
+  
+  Список моделей размещения.
+  
+  _Min items:_{.json-schema-reset .json-schema-assertion} `1`
+  
+  _Unique items:_{.json-schema-reset .json-schema-assertion} `true`
+  
+  {% cut "**Example**" %}{.json-schema-example}
+  
+  ```json translate=no
+  [
+    "FBS"
+  ]
+  ```
+  
+  {% endcut %}
+  {.table-cell}
+  ||
   |#{.json-schema-properties}
   
   </div>
@@ -1580,6 +1658,24 @@ alternate:
   _Min value:_{.json-schema-reset .json-schema-assertion} `1`
   
   _Max value:_{.json-schema-reset .json-schema-assertion} `12`
+  
+  </div>
+  
+  <div class="openapi-entity">
+  
+  ### PlacementType {#entity-PlacementType}
+  
+  Модель, по которой работает магазин:
+  
+  * `FBS` — FBS или Экспресс.
+  * `FBY` — FBY.
+  * `DBS` — DBS.
+  * `LAAS` — LaaS.
+  
+  
+  **Type**: string
+  
+  _Enum:_{.json-schema-reset .json-schema-value} `FBS`, `FBY`, `DBS`, `LAAS`
   
   </div>
   
@@ -2252,13 +2348,22 @@ alternate:
       required: false
       schema:
         $ref: >-
-          /home/sandbox/.ya/build/build_root/9ot9/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/reports/schemas.yaml#/ReportFormatType
+          /home/sandbox/.ya/build/build_root/84gm/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/reports/schemas.yaml#/ReportFormatType
   headers: []
   body: |-
     {
       "campaignId": 1,
       "year": 2025,
-      "month": 12
+      "month": 12,
+      "inns": [
+        "example"
+      ],
+      "placementPrograms": [
+        "FBS"
+      ],
+      "placementContracts": [
+        "example"
+      ]
     }
   schema:
     description: >
@@ -2287,6 +2392,43 @@ alternate:
         minimum: 1
         maximum: 12
         example: 12
+      inns:
+        description: Список ИНН (доступно продавцам-резидентам РФ).
+        type: array
+        nullable: true
+        minItems: 1
+        uniqueItems: true
+        items:
+          type: string
+          pattern: ^([0-9]{10}|[0-9]{12})$
+      placementPrograms:
+        description: Список моделей размещения.
+        type: array
+        nullable: true
+        minItems: 1
+        uniqueItems: true
+        items:
+          description: |
+            Модель, по которой работает магазин:
+  
+            * `FBS` — FBS или Экспресс.
+            * `FBY` — FBY.
+            * `DBS` — DBS.
+            * `LAAS` — LaaS.
+          type: string
+          enum:
+            - FBS
+            - FBY
+            - DBS
+            - LAAS
+      placementContracts:
+        description: Список номеров договоров на размещение.
+        type: array
+        nullable: true
+        minItems: 1
+        uniqueItems: true
+        items:
+          type: string
   bodyType: application/json
   method: post
   security:

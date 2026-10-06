@@ -4,8 +4,8 @@ api: wildberries
 kind: changelog
 source: "https://dev.wildberries.ru/release-notes"
 window: последние записи, страница отдаёт не всю историю
-fetched_at: "2026-10-05T02:04:34Z"
-content_sha: 812f8d96de761d06
+fetched_at: "2026-10-06T01:59:50Z"
+content_sha: af62f5ee0807a454
 ---
 
 # Журнал изменений WB API
@@ -66,6 +66,18 @@ content_sha: 812f8d96de761d06
 
 Октябрь
 2026
+
+Устарело
+
+## 05.10.2026
+
+Отчёты
+
+Продажи по регионам
+
+Отключение отчёта Продажи по регионам
+
+С **3 ноября** [отключим](https://seller.wildberries.ru/news-v2/news-details?id=14313) метод [GET /api/v1/analytics/region-sale](/docs/openapi/reports#tag/salesByRegions/operation/getV1AnalyticsRegionSale). Чтобы получить статистику продаж по регионам, используйте данные отчёта [Лента заказов](/docs/openapi/analytics#tag/orderFeed/operation/postV1OrderFeed) — подробнее в [инструкции](/knowledge-base/articles/01a09d9e-4f79-7016-b641-0718252e6572/lenta-zakazov#prodazhi-po-regionam).
 
 Новое
 
@@ -128,22 +140,6 @@ content_sha: 812f8d96de761d06
 - Код ОКПД2 предмета — [GET /api/content/v2/directory/okpd](/docs/openapi/item-management#tag/categoriesSubcategoriesAndCharacteristics/operation/getV2DirectoryOkpd)
 - Список кодов ОКПД2 — [GET /api/content/v2/directory/okpd/all](/docs/openapi/item-management#tag/categoriesSubcategoriesAndCharacteristics/operation/getV2DirectoryOkpdAll)
 
-Новое
-
-## 28.09.2026
-
-Документы и бухгалтерия
-
-Финансовые отчёты
-
-Новые поля в детализациях к отчётам реализации
-
-Добавили [новые поля](https://seller.wildberries.ru/news-v2/news-details?id=14226) в детализации к отчётам реализации [POST /api/finance/v1/sales-reports/detailed/{reportId}](/docs/openapi/financial-reports-and-accounting#tag/financialReports/operation/postV1SalesReportsDetailedReportId) и [POST api/finance/v1/sales-reports/detailed](/docs/openapi/financial-reports-and-accounting#tag/financialReports/operation/postV1SalesReportsDetailed):
-
-- `buyerTaxRegistrationReasonCode` — КПП B2B-покупателя
-- `utdUcdNumber` — номер УПД или УКД
-- `utdUcdDate` — дата УПД или УКД
-
 Изменения
 
 ## 28.09.2026
@@ -165,6 +161,22 @@ content_sha: 812f8d96de761d06
 - GROUPED_HISTORY_REPORT — отчёт воронки продаж по предметам, брендам и ярлыкам в методе [POST /api/v2/nm-report/downloads](/docs/openapi/analytics#tag/sellerAnalyticsCsv/operation/postV2NmReportDownloads)
 
 Чтобы получить текущие данные без задержки обновления, используйте метод [POST /api/analytics/v1/order-feed](/docs/openapi/analytics/#tag/orderFeed/operation/postV1OrderFeed).
+
+Новое
+
+## 28.09.2026
+
+Документы и бухгалтерия
+
+Финансовые отчёты
+
+Новые поля в детализациях к отчётам реализации
+
+Добавили [новые поля](https://seller.wildberries.ru/news-v2/news-details?id=14226) в детализации к отчётам реализации [POST /api/finance/v1/sales-reports/detailed/{reportId}](/docs/openapi/financial-reports-and-accounting#tag/financialReports/operation/postV1SalesReportsDetailedReportId) и [POST api/finance/v1/sales-reports/detailed](/docs/openapi/financial-reports-and-accounting#tag/financialReports/operation/postV1SalesReportsDetailed):
+
+- `buyerTaxRegistrationReasonCode` — КПП B2B-покупателя
+- `utdUcdNumber` — номер УПД или УКД
+- `utdUcdDate` — дата УПД или УКД
 
 Новое
 
@@ -507,19 +519,5 @@ C **15 августа** вносим временные изменения в р
 - В детализациях к отчётам реализации [по ID отчётов](/docs/openapi/financial-reports-and-accounting#tag/financialReports/operation/postV1SalesReportsDetailedReportId) и [за период](/docs/openapi/financial-reports-and-accounting#tag/financialReports/operation/postV1SalesReportsDetailed) значения поля `officeName` для складов в РФ, начиная с ежедневных отчётов за 13 августа, сведены к четырём, указанным в [новости](https://seller.wildberries.ru/news-v2/news-details?id=13440)
 
 О дальнейших изменениях мы сообщим дополнительно.
-
-Новое
-
-## 12.08.2026
-
-Маркетинг и продвижение
-
-Управление кампаниями
-
-Рекомендованные ставки для CPC-кампаний
-
-Добавили отображение рекомендованных ставок для CPC-кампаний — по предложениям пользователей в [Сообществе WB API](https://dev.wildberries.ru/forum/topics/2079/publichnye-idei-i-predlozheniia-wb-api).
-
-Теперь метод [GET /api/advert/v0/bids/recommendations](/docs/openapi/promotion/#tag/campaignManagement/operation/patchV0AuctionNms) возвращает рекомендованные ставки не только для кампаний с типом оплаты CPM за показы, но и для CPC — за клики.
 
 Мы используем [cookies](https://legal.wildberries.ru/privacypolicy/country/ru/lang/ru/#anchor-7), чтобы анализировать, как вы пользуетесь сайтом, и улучшать его

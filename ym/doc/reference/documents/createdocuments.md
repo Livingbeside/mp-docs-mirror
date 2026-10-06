@@ -2,14 +2,14 @@
 title: Создание документов
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/documents/createDocuments.md"
-fetched_at: "2026-10-02T02:05:32Z"
-content_sha: 7ce412adb9babbfb
+fetched_at: "2026-10-06T02:00:29Z"
+content_sha: d045fa2034c7a834
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.62.0
+    content: Diplodoc Platform v5.63.0
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/documents/createDocuments.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/documents/createDocuments.md

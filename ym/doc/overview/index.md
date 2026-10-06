@@ -2,14 +2,14 @@
 title: Обзор методов
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/overview/index.md"
-fetched_at: "2026-10-02T02:05:20Z"
-content_sha: 17d1625d8031ae06
+fetched_at: "2026-10-06T02:00:17Z"
+content_sha: 1df94c5cecbe1084
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.62.0
+    content: Diplodoc Platform v5.63.0
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/overview/index.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/overview/index.md

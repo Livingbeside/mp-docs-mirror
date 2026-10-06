@@ -2,14 +2,14 @@
 title: Отправка файла
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/chats/sendFileToChat.md"
-fetched_at: "2026-10-02T02:06:42Z"
-content_sha: 1475639422afce4d
+fetched_at: "2026-10-06T02:01:45Z"
+content_sha: 110ac90deba92f9e
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.62.0
+    content: Diplodoc Platform v5.63.0
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/chats/sendFileToChat.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/chats/sendFileToChat.md

@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /contract-for-sellers/tech-contract/contract-ozon-technology
 source: "https://seller-edu.ozon.ru/libra/contract-for-sellers/tech-contract/contract-ozon-technology"
-updated: "2026-10-02 15:11:47"
+updated: "2026-10-05 08:22:21"
 doc_id: 80024
-fetched_at: "2026-10-03T02:16:52Z"
-content_sha: 1937edd192d6b4f4
+fetched_at: "2026-10-06T01:57:01Z"
+content_sha: 5fe648c70ad713ff
 ---
 
 # Договор возмездного оказания услуг Озон Технологий
@@ -194,7 +194,7 @@ _Главная / Договоры для Продавцов на платфор
 
 **4.7. Возврат денежных средств**
 
-**4.7.1.** При расторжении Договора либо при наличии у Исполнителя излишне уплаченных сумм Заказчик вправе направить Исполнителю заявление о возврате таких средств на свой расчётный счёт. Заявление направляется Исполнителю путем нажатия кнопки «Вывести» в разделе «Финансы» ЛК, при наличии такой технической доступности в ЛК.
+**4.7.1.** При расторжении Договора либо при наличии у Исполнителя излишне уплаченных сумм Заказчик вправе направить Исполнителю заявление о возврате таких средств на свой расчётный счёт. Заявление направляется Исполнителю путем нажатия кнопки «Вывести» в разделе «Финансы» ЛК, при наличии такой технической доступности в ЛК. Исполнитель также может осуществить возврат средств на Баланс Ozon, с которого они ранее были удержаны.
 
 **4.7.2.** Возврат производится за вычетом стоимости уже заказанных и/или оказанных услуг, а также сумм имеющейся задолженности Заказчика перед Исполнителем.
 
@@ -576,9 +576,21 @@ _Главная / Договоры для Продавцов на платфор
 
 Заказчик может заказать в ЛК услугу Аналитика Lite, включающую в себя предоставление доступа к программному обеспечению «Расширенная аналитика» в ограниченной конфигурации. Услуга не доступна для Заказчиков, у которых заключено исключительно Соглашение для правообладателя товарного знака.
 
+Подробные условия и описание функций для Заказчиков из РФ [на странице](https://seller-edu.ozon.ru/seller-rating/podpiska-premium-lite).
+
+Подробные условия и описание функций для Заказчиков из стран СНГ [на странице](https://cishelp.ozon.by/promotion/subscriptions/premium-lite?__rr=1).
+
+Подробные условия и описание функций для Заказчиков из других стран [на странице](https://global-help.ozon.com/promotion/subscriptions/premium-lite-global?region=CHN).
+
 **Услуга Аналитика Premium**
 
 Заказчик может заказать в ЛК услугу Аналитика Premium, включающую в себя предоставление доступа к программному обеспечению «Расширенная Аналитика» в базовой конфигурации. Услуга не доступна для Заказчиков, у которых заключено исключительно Соглашение для правообладателя товарного знака.
+
+Подробные условия и описание функций для Заказчиков из РФ [на странице](https://seller-edu.ozon.ru/seller-rating/analytics-premium).
+
+Подробные условия и описание функций для Заказчиков из стран СНГ [на странице](https://cishelp.ozon.by/promotion/subscriptions/analytics-premium).
+
+Подробные условия и описание функций для Заказчиков из других стран [на странице](https://global-help.ozon.com/promotion/subscriptions/podpiska-analitika-premium).
 
 **Услуга Аналитика Plus**
 
@@ -586,9 +598,21 @@ _Главная / Договоры для Продавцов на платфор
 
 Для Заказчиков, у которых заключено исключительно Соглашение для правообладателя товарного знака можно приобрести Услугу Аналитика Plus только совместно с пакетом «Premium Plus» от ООО «Интернет Решения», где Исполнитель будет оказывать услуги в своей части.
 
+Подробные условия и описание функций для Заказчиков из РФ [на странице](https://seller-edu.ozon.ru/seller-rating/analytics-plus).
+
+Подробные условия и описание функций для Заказчиков из стран СНГ [на странице](https://cishelp.ozon.by/promotion/subscriptions/analytics-plus).
+
+Подробные условия и описание функций для Заказчиков из других стран [на странице](https://global-help.ozon.com/promotion/subscriptions/analytics-plus).
+
 **Услуга Аналитика Pro**
 
 Заказчик может заказать в ЛК услугу Аналитика Pro, включающую в себя: предоставление доступа к программному обеспечению «Расширенная Аналитика» в максимальной конфигурации. Услуга недоступна для Заказчиков, у которых заключено исключительно Соглашение для правообладателя товарного знака.
+
+Подробные условия и описание функций для Заказчиков из РФ [на странице](https://seller-edu.ozon.ru/seller-rating/podpiska-premium-pro).
+
+Подробные условия и описание функций для Заказчиков из стран СНГ [на странице](https://cishelp.ozon.by/promotion/subscriptions/premium-pro).
+
+Подробные условия и описание функций для Заказчиков из других стран [на странице](https://global-help.ozon.com/promotion/subscriptions/premium-pro-global?region=CHN).
 
 ## 3. Условия использования ПО и ограничения
 
@@ -788,7 +812,7 @@ If at the time of performance of the instruction the Ozon Balance is insufficien
 
 **4.7. Refunds**
 
-4.7.1. Upon termination of the Agreement or if there are amounts overpaid to the Contractor, the Customer has the right to send the Contractor an application for refund of such funds to its settlement account. The application is sent to the Contractor by clicking the «Withdraw» button in the «Finance» section of the PA, if such technical availability exists in the PA.
+4.7.1. Upon termination of the Agreement or if there are amounts overpaid to the Contractor, the Customer has the right to send the Contractor an application for refund of such funds to its settlement account. The application is sent to the Contractor by clicking the «Withdraw» button in the «Finance» section of the PA, if such technical availability exists in the PA. The Contractor may also refund the funds to the Ozon Balance from which they were previously withheld.
 
 4.7.2. Refund is made less the cost of already ordered and/or rendered services, as well as amounts of the Customer’s existing debt to the Contractor.
 
@@ -1170,9 +1194,21 @@ If the variant of providing services under a subscription to a tariff was chosen
 
 The Customer may order in the PA the Analytics Lite service, including provision of access to the “Extended Analytics” in a limited configuration. The Service is not available to Customers that have concluded exclusively the Trademark Right Holder Agreement.
 
+Detailed terms and description of functions for Customers from the Russian Federation are available [on the page](https://seller-edu.ozon.ru/seller-rating/podpiska-premium-lite).
+
+Detailed terms and description of functions for Customers from the CIS countries are available [on the page](https://cishelp.ozon.by/promotion/subscriptions/premium-lite?__rr=1).
+
+Detailed terms and description of functions for Customers from other countries are available [on the page](https://global-help.ozon.com/promotion/subscriptions/premium-lite-global?region=CHN).
+
 **Analytics Premium Service**
 
 The Customer may order in the PA the Analytics Premium service, including provision of access to the «Extended Analytics» in the basic configuration. The Service is not available to Customers that have concluded exclusively the Trademark Right Holder Agreement.
+
+Detailed terms and description of functions for Customers from the Russian Federation are available [on the page](https://seller-edu.ozon.ru/seller-rating/analytics-premium).
+
+Detailed terms and description of functions for Customers from the CIS countries are available [on the page](https://cishelp.ozon.by/promotion/subscriptions/analytics-premium).
+
+Detailed terms and description of functions for Customers from other countries are available [on the page](https://global-help.ozon.com/promotion/subscriptions/podpiska-analitika-premium).
 
 **Analytics Plus Service**
 
@@ -1180,9 +1216,21 @@ The Customer may order in the PA the Analytics Plus service, including provision
 
 For Customers that have concluded exclusively the Trademark Right Holder Agreement, the Analytics Plus Service can be purchased only together with the «Premium Plus» package from Internet Solutions LLC, where the Contractor will provide services in its part.
 
+Detailed terms and description of functions for Customers from the Russian Federation are available [on the page](https://seller-edu.ozon.ru/seller-rating/analytics-premium-plus).
+
+Detailed terms and description of functions for Customers from the CIS countries are available [on the page](https://cishelp.ozon.by/promotion/subscriptions/analytics-plus).
+
+Detailed terms and description of functions for Customers from other countries are available [on the page](https://global-help.ozon.com/promotion/subscriptions/analytics-plus).
+
 **Analytics Pro Service**
 
 The Customer may order in the PA the Analytics Pro service, including: provision of access to the «Extended Analytics» in the maximum configuration. The Service is unavailable to Customers that have concluded exclusively the Trademark Right Holder Agreement.
+
+Detailed terms and description of functions for Customers from the Russian Federation are available [on the page](https://seller-edu.ozon.ru/seller-rating/podpiska-premium-pro).
+
+Detailed terms and description of functions for Customers from the CIS countries are available [on the page](https://cishelp.ozon.by/promotion/subscriptions/premium-pro).
+
+Detailed terms and description of functions for Customers from other countries are available [on the page](https://global-help.ozon.com/promotion/subscriptions/premium-pro-global?region=CHN).
 
 ## 3. Conditions of use of the analytics and restrictions
 

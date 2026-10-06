@@ -2,14 +2,14 @@
 title: Массовое изменение статусов заказов
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/orders/updateOrderStatuses.md"
-fetched_at: "2026-10-02T02:05:50Z"
-content_sha: 7e2df8a60241a21b
+fetched_at: "2026-10-06T02:00:48Z"
+content_sha: 44814cbdf369a3d5
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.62.0
+    content: Diplodoc Platform v5.63.0
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/orders/updateOrderStatuses.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/orders/updateOrderStatuses.md

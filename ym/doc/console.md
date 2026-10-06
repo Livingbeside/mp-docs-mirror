@@ -2,14 +2,14 @@
 title: Как пользоваться консолью
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/console.md"
-fetched_at: "2026-10-02T02:05:04Z"
-content_sha: 80237b056c4c7c73
+fetched_at: "2026-10-06T02:00:04Z"
+content_sha: 1e8d19d7852895bc
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.62.0
+    content: Diplodoc Platform v5.63.0
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/console.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/console.md

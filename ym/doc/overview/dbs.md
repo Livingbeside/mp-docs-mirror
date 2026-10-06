@@ -2,14 +2,14 @@
 title: DBS
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/overview/dbs.md"
-fetched_at: "2026-10-02T02:05:22Z"
-content_sha: 497cda168419bc0e
+fetched_at: "2026-10-06T02:00:19Z"
+content_sha: 4e3c68514b6a668d
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.62.0
+    content: Diplodoc Platform v5.63.0
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/overview/dbs.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/overview/dbs.md
