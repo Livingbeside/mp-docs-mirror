@@ -2,8 +2,8 @@
 title: Детальная информация по заказам
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/orders-stats/getOrdersStats.md"
-fetched_at: "2026-10-06T02:01:22Z"
-content_sha: 43cfcb82133bbd64
+fetched_at: "2026-10-07T02:21:42Z"
+content_sha: 203ba652a4da6808
 ---
 
 ---
@@ -455,6 +455,7 @@ alternate:
           "items": [
             {
               "offerName": "example",
+              "shopServiceType": "INSTALLATION",
               "marketSku": 1,
               "shopSku": "example",
               "count": 0,
@@ -674,6 +675,23 @@ alternate:
   ```
   
   {% endcut %}
+  
+  </div>
+  
+  <div class="openapi-entity">
+  
+  ### OrdersStatsShopServiceType {#entity-OrdersStatsShopServiceType}
+  
+  Тип услуги магазина:
+  
+  * `INSTALLATION` — установка.
+  * `ASSEMBLY` — сборка.
+  * `UTILIZATION` — утилизация.
+  
+  
+  **Type**: string
+  
+  _Enum:_{.json-schema-reset .json-schema-value} `INSTALLATION`, `ASSEMBLY`, `UTILIZATION`
   
   </div>
   
@@ -985,6 +1003,12 @@ alternate:
   
   Список товаров в заказе после возможных изменений.
   
+  Услуги установки, сборки и утилизации по модели DBS возвращаются отдельными позициями. Позицию услуги можно отличить от товара по наличию `shopServiceType`; ее `offerName` — `Установка`, `Сборка` или `Утилизация`. У одного товара может быть несколько позиций услуг.
+  
+  Значения `marketSku` и `shopSku` позиции услуги совпадают со значениями товара, для которого она заказана. При подсчете количества товаров исключайте позиции с `shopServiceType`.
+  
+  Отмена услуг отражается по тем же правилам, что и удаление товаров: при частичной отмене позиция есть в `items` с уменьшенным `count` и в `initialItems` с первоначальным `initialCount`, при полной — только в `initialItems`.
+  
   В ходе обработки заказа Маркет может удалить из него единицы товаров — при проблемах на складе или по инициативе пользователя.
   
   * Если из заказа удалены все единицы товара, его не будет в списке `items` — только в списке `initialItems`.
@@ -1063,9 +1087,9 @@ alternate:
   {.table-cell}|
   **Type**: integer
   
-  Количество единиц товара с учетом удаленных единиц.
+  Количество единиц товара или услуги магазина с учетом удаленных или отмененных единиц.
   
-  Если из заказа удалены все единицы товара, он попадет только в список `initialItems`.
+  Если из заказа удалены все единицы товара или полностью отменена услуга, позиция попадет только в список `initialItems`.
   
   {.table-cell}
   ||
@@ -1101,7 +1125,7 @@ alternate:
   {.table-cell}|
   **Type**: integer
   
-  Первоначальное количество единиц товара.
+  Первоначальное количество единиц товара или услуги магазина.
   {.table-cell}
   ||
   ||
@@ -1123,7 +1147,7 @@ alternate:
   {.table-cell}|
   **Type**: string
   
-  Название товара.
+  Название товара или услуги магазина.
   
   _Example:_{.json-schema-reset .json-schema-example} `example`
   {.table-cell}
@@ -1134,7 +1158,7 @@ alternate:
   {.table-cell}|
   **Type**: [OrdersStatsPriceDTO](#entity-OrdersStatsPriceDTO)[] &#124; null
   
-  Цена или скидки на товар.
+  Цена или скидки на товар или услугу магазина.
   
   _Min items:_{.json-schema-reset .json-schema-assertion} `1`
   
@@ -1151,6 +1175,24 @@ alternate:
   ```
   
   {% endcut %}
+  {.table-cell}
+  ||
+  ||
+  
+  _shopServiceType_{.json-schema-reset .json-schema-property}
+  {.table-cell}|
+  **Type**: [OrdersStatsShopServiceType](#entity-OrdersStatsShopServiceType)
+  
+  Тип услуги магазина. Возвращается для отдельной позиции установки, сборки или утилизации по модели DBS.
+  
+  Тип услуги магазина:
+  
+  * `INSTALLATION` — установка.
+  * `ASSEMBLY` — сборка.
+  * `UTILIZATION` — утилизация.
+  
+  
+  _Enum:_{.json-schema-reset .json-schema-value} `INSTALLATION`, `ASSEMBLY`, `UTILIZATION`
   {.table-cell}
   ||
   ||
@@ -1214,6 +1256,7 @@ alternate:
   ```json translate=no
   {
     "offerName": "example",
+    "shopServiceType": "INSTALLATION",
     "marketSku": 1,
     "shopSku": "example",
     "count": 0,
@@ -1481,11 +1524,12 @@ alternate:
   * `CROSSREGIONAL_DELIVERY` - доставка средней мили.
   * `FULFILLMENT_WITHDRAW` - вывоз со склада.
   * `ITEM_BOOKING` - бронирование товара (только для продавцов Market Yandex Go).
+  * `SHOP_SERVICE_PLACEMENT` — размещение услуг магазина (DBS). Начисления и корректировки возвращаются отдельными элементами массива `commissions` с этим типом: в одном заказе может быть несколько таких элементов. Корректировки могут быть отрицательными.
   
   
   **Type**: string
   
-  _Enum:_{.json-schema-reset .json-schema-value} `FEE`, `FULFILLMENT`, `LOYALTY_PARTICIPATION_FEE`, `AUCTION_PROMOTION`, `INSTALLMENT`, `DELIVERY_TO_CUSTOMER`, `EXPRESS_DELIVERY_TO_CUSTOMER`, `AGENCY`, `AGENCY_COMMISSION_3PL`, `PAYMENT_TRANSFER`, `RETURNED_ORDERS_STORAGE`, `SORTING`, `INTAKE_SORTING`, `RETURN_PROCESSING`, `ILLIQUID_GOODS_SALE`, `CROSSREGIONAL_DELIVERY`, `FULFILLMENT_WITHDRAW`, `ITEM_BOOKING`
+  _Enum:_{.json-schema-reset .json-schema-value} `FEE`, `FULFILLMENT`, `LOYALTY_PARTICIPATION_FEE`, `AUCTION_PROMOTION`, `INSTALLMENT`, `DELIVERY_TO_CUSTOMER`, `EXPRESS_DELIVERY_TO_CUSTOMER`, `AGENCY`, `AGENCY_COMMISSION_3PL`, `PAYMENT_TRANSFER`, `RETURNED_ORDERS_STORAGE`, `SORTING`, `INTAKE_SORTING`, `RETURN_PROCESSING`, `ILLIQUID_GOODS_SALE`, `CROSSREGIONAL_DELIVERY`, `FULFILLMENT_WITHDRAW`, `ITEM_BOOKING`, `SHOP_SERVICE_PLACEMENT`
   
   </div>
   
@@ -1503,7 +1547,10 @@ alternate:
   {.table-cell}|
   **Type**: number
   
-  Сумма, которая была выставлена в момент создания заказа и которую нужно оплатить.
+  Сумма начисления или корректировки.
+  
+  Корректировки размещения услуг магазина (`SHOP_SERVICE_PLACEMENT`) возвращаются отдельными элементами и могут быть отрицательными.
+  
   Точность — два знака после запятой.
   
   {.table-cell}
@@ -1536,9 +1583,10 @@ alternate:
   * `CROSSREGIONAL_DELIVERY` - доставка средней мили.
   * `FULFILLMENT_WITHDRAW` - вывоз со склада.
   * `ITEM_BOOKING` - бронирование товара (только для продавцов Market Yandex Go).
+  * `SHOP_SERVICE_PLACEMENT` — размещение услуг магазина (DBS). Начисления и корректировки возвращаются отдельными элементами массива `commissions` с этим типом: в одном заказе может быть несколько таких элементов. Корректировки могут быть отрицательными.
   
   
-  _Enum:_{.json-schema-reset .json-schema-value} `FEE`, `FULFILLMENT`, `LOYALTY_PARTICIPATION_FEE`, `AUCTION_PROMOTION`, `INSTALLMENT`, `DELIVERY_TO_CUSTOMER`, `EXPRESS_DELIVERY_TO_CUSTOMER`, `AGENCY`, `AGENCY_COMMISSION_3PL`, `PAYMENT_TRANSFER`, `RETURNED_ORDERS_STORAGE`, `SORTING`, `INTAKE_SORTING`, `RETURN_PROCESSING`, `ILLIQUID_GOODS_SALE`, `CROSSREGIONAL_DELIVERY`, `FULFILLMENT_WITHDRAW`, `ITEM_BOOKING`
+  _Enum:_{.json-schema-reset .json-schema-value} `FEE`, `FULFILLMENT`, `LOYALTY_PARTICIPATION_FEE`, `AUCTION_PROMOTION`, `INSTALLMENT`, `DELIVERY_TO_CUSTOMER`, `EXPRESS_DELIVERY_TO_CUSTOMER`, `AGENCY`, `AGENCY_COMMISSION_3PL`, `PAYMENT_TRANSFER`, `RETURNED_ORDERS_STORAGE`, `SORTING`, `INTAKE_SORTING`, `RETURN_PROCESSING`, `ILLIQUID_GOODS_SALE`, `CROSSREGIONAL_DELIVERY`, `FULFILLMENT_WITHDRAW`, `ITEM_BOOKING`, `SHOP_SERVICE_PLACEMENT`
   {.table-cell}
   ||
   |#{.json-schema-properties}
@@ -1755,7 +1803,9 @@ alternate:
   {.table-cell}|
   **Type**: [OrdersStatsItemDTO](#entity-OrdersStatsItemDTO)[]
   
-  Список товаров в заказе после возможных изменений.
+  Список товаров и услуг магазина в заказе после возможных изменений.
+  
+  Услуги установки, сборки и утилизации по модели DBS возвращаются отдельными позициями с `shopServiceType`.
   
   Информация о доставке заказа добавляется отдельным элементом в массиве `items`— параметр `offerName` со значением `Доставка`.
   
@@ -1766,6 +1816,7 @@ alternate:
   [
     {
       "offerName": "example",
+      "shopServiceType": "INSTALLATION",
       "marketSku": 1,
       "shopSku": "example",
       "count": 0,
@@ -1901,9 +1952,9 @@ alternate:
   {.table-cell}|
   **Type**: [OrdersStatsItemDTO](#entity-OrdersStatsItemDTO)[] &#124; null
   
-  Список товаров в заказе.
+  Список товаров и услуг магазина в заказе с первоначальным количеством.
   
-  Возвращается, только если было изменение количества товаров.
+  Возвращается, только если было изменение количества товаров или услуг магазина.
   
   
   _Min items:_{.json-schema-reset .json-schema-assertion} `1`
@@ -1914,6 +1965,7 @@ alternate:
   [
     {
       "offerName": "example",
+      "shopServiceType": "INSTALLATION",
       "marketSku": 1,
       "shopSku": "example",
       "count": 0,
@@ -2085,6 +2137,7 @@ alternate:
     "items": [
       {
         "offerName": "example",
+        "shopServiceType": "INSTALLATION",
         "marketSku": 1,
         "shopSku": "example",
         "count": 0,
@@ -2222,6 +2275,7 @@ alternate:
       "items": [
         {
           "offerName": "example",
+          "shopServiceType": "INSTALLATION",
           "marketSku": 1,
           "shopSku": "example",
           "count": 0,
@@ -2323,6 +2377,7 @@ alternate:
         "items": [
           {
             "offerName": "example",
+            "shopServiceType": "INSTALLATION",
             "marketSku": 1,
             "shopSku": "example",
             "count": 0,

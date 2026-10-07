@@ -2,8 +2,8 @@
 title: Информация о нескольких отгрузках
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/shipments/searchShipments.md"
-fetched_at: "2026-10-06T02:00:58Z"
-content_sha: 67d29d18683b5b31
+fetched_at: "2026-10-07T02:21:20Z"
+content_sha: 4f56a5c5988ab537
 ---
 
 ---
@@ -1861,7 +1861,7 @@ alternate:
         type: boolean
         default: true
     $defs:
-      /home/sandbox/.ya/build/build_root/84gm/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/shipments/schemas.yaml#/ShipmentStatusType:
+      /home/sandbox/.ya/build/build_root/cla9/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/shipments/schemas.yaml#/ShipmentStatusType:
         description: |
           Статус отгрузки:
   

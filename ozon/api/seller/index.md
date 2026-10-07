@@ -2,9 +2,9 @@
 title: Документация Ozon Seller API — все методы
 api: ozon-seller
 spec_version: 2.1
-operations: 481
+operations: 482
 source: "https://docs.ozon.ru/api/seller/"
-content_sha: c83784c471922b04
+content_sha: 4c7904466a95618f
 ---
 
 # Документация Ozon Seller API
@@ -18,7 +18,7 @@ content_sha: c83784c471922b04
 
 > [Информационная платформа и сообщество разработчиков Ozon for dev](https://dev.ozon.ru/)
 
-Версия спеки: `2.1` · методов: **481** · разделов справки: **27**
+Версия спеки: `2.1` · методов: **482** · разделов справки: **27**
 
 Источник: https://docs.ozon.ru/api/seller/
 
@@ -58,6 +58,7 @@ content_sha: c83784c471922b04
 | `POST` | `/v1/assembly/fbs/posting/list` | DeliveryFBS | [Получить список отправлений](deliveryfbs/post-v1-assembly-fbs-posting-list.md) |
 | `POST` | `/v1/assembly/fbs/product/list` | DeliveryFBS | [Получить список товаров в отправлениях](deliveryfbs/post-v1-assembly-fbs-product-list.md) |
 | `POST` | `/v1/barcode/add` | BarcodeAPI | [Привязать штрихкод к товару](barcodeapi/post-v1-barcode-add.md) |
+| `POST` | `/v1/barcode/delete` | BarcodeAPI | [Отвязать штрихкод от товара](barcodeapi/post-v1-barcode-delete.md) |
 | `POST` | `/v1/barcode/generate` | BarcodeAPI | [Создать штрихкод для товара](barcodeapi/post-v1-barcode-generate.md) |
 | `POST` | `/v1/brand/company-certification/list` | BrandAPI | [Список сертифицируемых брендов](brandapi/post-v1-brand-company-certification-list.md) |
 | `POST` | `/v1/cancel-reason/list-by-order` | CancelReasonAPI | [Причины отмены заказа](cancelreasonapi/post-v1-cancel-reason-list-by-order.md) |

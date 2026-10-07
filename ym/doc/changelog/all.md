@@ -2,8 +2,8 @@
 title: Все обновления
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/changelog/all.md"
-fetched_at: "2026-10-06T02:00:23Z"
-content_sha: 670fa1a6bfc4d1c3
+fetched_at: "2026-10-07T02:20:46Z"
+content_sha: 36c3c388ac8c8536
 ---
 
 ---
@@ -31,6 +31,21 @@ alternate:
 {% endnote %}
 
 <!-- source: ru/_auto/changelog/all.md -->
+<!-- source: ru/_auto/changelog/all/2026-10-06.md -->
+### 6 октября {#06-10-26}
+
+#|
+|| **Методы или страницы документации**
+ | **Описание изменений**
+ ||
+||
+[POST v2/campaigns/{campaignId}/stats/orders](https://yandex.ru/dev/market/partner-api/doc/ru/reference/orders-stats/getOrdersStats.md)
+|
+Добавили информацию об установке, сборке и утилизации по модели DBS: услуги возвращаются отдельными позициями с `shopServiceType` в `items`, а их отмены отражаются в `initialItems`. В `commissions` добавили тип `SHOP_SERVICE_PLACEMENT` для размещения услуг магазина. Начисления и корректировки возвращаются отдельными элементами; корректировки могут быть отрицательными.
+||
+|#
+<!-- endsource: ru/_auto/changelog/all/2026-10-06.md -->
+
 <!-- source: ru/_auto/changelog/all/2026-10-01.md -->
 ### 1 октября {#01-10-26}
 

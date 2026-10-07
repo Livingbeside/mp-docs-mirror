@@ -2,8 +2,8 @@
 title: Получение уведомлений
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/push-notifications/reference/sendNotification.md"
-fetched_at: "2026-10-06T02:01:57Z"
-content_sha: 5781e701302cba14
+fetched_at: "2026-10-07T02:22:16Z"
+content_sha: 2fed5f44b6428190
 ---
 
 ---
@@ -2311,12 +2311,13 @@ _Example:_{.json-schema-reset .json-schema-example} `2025-01-01T00:00:00Z`
 
 * `SHIPMENT_DATE_UPDATED` — изменение даты отгрузки.
 * `DELIVERY_DATE_UPDATED` — изменение даты доставки.
+* `STORAGE_LIMIT_DATE_UPDATED` — изменение срока хранения заказа в пункте выдачи.
 * `UNKNOWN` — неизвестный тип.
 
 
 **Type**: string
 
-_Enum:_{.json-schema-reset .json-schema-value} `SHIPMENT_DATE_UPDATED`, `DELIVERY_DATE_UPDATED`, `UNKNOWN`
+_Enum:_{.json-schema-reset .json-schema-value} `SHIPMENT_DATE_UPDATED`, `DELIVERY_DATE_UPDATED`, `STORAGE_LIMIT_DATE_UPDATED`, `UNKNOWN`
 
 </div>
 
@@ -2428,10 +2429,11 @@ _updateType_{.json-schema-reset .json-schema-property .json-schema-required}
 
 * `SHIPMENT_DATE_UPDATED` — изменение даты отгрузки.
 * `DELIVERY_DATE_UPDATED` — изменение даты доставки.
+* `STORAGE_LIMIT_DATE_UPDATED` — изменение срока хранения заказа в пункте выдачи.
 * `UNKNOWN` — неизвестный тип.
 
 
-_Enum:_{.json-schema-reset .json-schema-value} `SHIPMENT_DATE_UPDATED`, `DELIVERY_DATE_UPDATED`, `UNKNOWN`
+_Enum:_{.json-schema-reset .json-schema-value} `SHIPMENT_DATE_UPDATED`, `DELIVERY_DATE_UPDATED`, `STORAGE_LIMIT_DATE_UPDATED`, `UNKNOWN`
 {.table-cell}
 ||
 |#{.json-schema-properties}

@@ -9,7 +9,7 @@ tags:
 spec_version: order
 source: "https://dev.wildberries.ru/docs/openapi/orders-fbs"
 deprecated: false
-content_sha: 19d543488fb99ba6
+content_sha: 3cebc3e2b8ddd68e
 ---
 
 # Получить QR-код СПОТ{{ /api/marketplace/v3/fbs/supplies/{supplyId}/stickers/spot }}
@@ -44,8 +44,8 @@ content_sha: 19d543488fb99ba6
 
 **400** — Неправильный запрос
 
-- `detail` — string **обязательный**. Детали ошибки
 - `title` — string **обязательный**. Заголовок ошибки
+- `detail` — string **обязательный**. Детали ошибки
 
 **401** — Не авторизован
 
@@ -71,8 +71,8 @@ content_sha: 19d543488fb99ba6
 
 **404** — Не найдено
 
-- `detail` — string **обязательный**. Детали ошибки
 - `title` — string **обязательный**. Заголовок ошибки
+- `detail` — string **обязательный**. Детали ошибки
 
 **429** — Слишком много запросов
 

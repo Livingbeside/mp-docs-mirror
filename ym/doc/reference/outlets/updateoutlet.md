@@ -2,8 +2,8 @@
 title: Изменение
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/outlets/updateOutlet.md"
-fetched_at: "2026-10-06T02:01:10Z"
-content_sha: b5a4b610144092ef
+fetched_at: "2026-10-07T02:21:33Z"
+content_sha: 27ebe4ddf99b44a1
 ---
 
 ---
@@ -2040,7 +2040,7 @@ alternate:
             type: integer
             format: int64
     $defs:
-      /home/sandbox/.ya/build/build_root/84gm/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/common/schemas.yaml#/DayOfWeekType:
+      /home/sandbox/.ya/build/build_root/cla9/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/common/schemas.yaml#/DayOfWeekType:
         description: |
           День недели:
   

@@ -2,8 +2,8 @@
 title: Изменение статуса одного заказа
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/orders/updateOrderStatus.md"
-fetched_at: "2026-10-06T02:00:48Z"
-content_sha: 4e3792ebeef8c4e8
+fetched_at: "2026-10-07T02:21:10Z"
+content_sha: 47f34eaf968ec93e
 ---
 
 ---
@@ -1025,6 +1025,8 @@ alternate:
   
     * `BNPL_TBYB` - Оплата после доставки на основе Сплита.
   
+    * `SBP_ON_DELIVERY` — постоплата через СБП.
+  
     * `CASH_ON_DELIVERY` — наличными.
   
     * `B2B_ACCOUNT_POSTPAYMENT` — заказ оплачивает организация после доставки.
@@ -1036,7 +1038,7 @@ alternate:
   
   **Type**: string
   
-  _Enum:_{.json-schema-reset .json-schema-value} `CASH_ON_DELIVERY`, `CARD_ON_DELIVERY`, `BOUND_CARD_ON_DELIVERY`, `BNPL_BANK_ON_DELIVERY`, `BNPL_ON_DELIVERY`, `YANDEX`, `APPLE_PAY`, `EXTERNAL_CERTIFICATE`, `CREDIT`, `GOOGLE_PAY`, `TINKOFF_CREDIT`, `SBP`, `TINKOFF_INSTALLMENTS`, `B2B_ACCOUNT_PREPAYMENT`, `B2B_ACCOUNT_POSTPAYMENT`, `MICROCREDIT`, `BNPL_TBYB`, `BNPL_TBC`, `DIGITAL_RUBLE`, `UNKNOWN`
+  _Enum:_{.json-schema-reset .json-schema-value} `CASH_ON_DELIVERY`, `CARD_ON_DELIVERY`, `BOUND_CARD_ON_DELIVERY`, `BNPL_BANK_ON_DELIVERY`, `BNPL_ON_DELIVERY`, `YANDEX`, `APPLE_PAY`, `EXTERNAL_CERTIFICATE`, `CREDIT`, `GOOGLE_PAY`, `TINKOFF_CREDIT`, `SBP`, `SBP_ON_DELIVERY`, `TINKOFF_INSTALLMENTS`, `B2B_ACCOUNT_PREPAYMENT`, `B2B_ACCOUNT_POSTPAYMENT`, `MICROCREDIT`, `BNPL_TBYB`, `BNPL_TBC`, `DIGITAL_RUBLE`, `UNKNOWN`
   
   </div>
   
@@ -4289,6 +4291,8 @@ alternate:
   
     * `BNPL_TBYB` - Оплата после доставки на основе Сплита.
   
+    * `SBP_ON_DELIVERY` — постоплата через СБП.
+  
     * `CASH_ON_DELIVERY` — наличными.
   
     * `B2B_ACCOUNT_POSTPAYMENT` — заказ оплачивает организация после доставки.
@@ -4298,7 +4302,7 @@ alternate:
   Значение по умолчанию: `CASH_ON_DELIVERY`.
   
   
-  _Enum:_{.json-schema-reset .json-schema-value} `CASH_ON_DELIVERY`, `CARD_ON_DELIVERY`, `BOUND_CARD_ON_DELIVERY`, `BNPL_BANK_ON_DELIVERY`, `BNPL_ON_DELIVERY`, `YANDEX`, `APPLE_PAY`, `EXTERNAL_CERTIFICATE`, `CREDIT`, `GOOGLE_PAY`, `TINKOFF_CREDIT`, `SBP`, `TINKOFF_INSTALLMENTS`, `B2B_ACCOUNT_PREPAYMENT`, `B2B_ACCOUNT_POSTPAYMENT`, `MICROCREDIT`, `BNPL_TBYB`, `BNPL_TBC`, `DIGITAL_RUBLE`, `UNKNOWN`
+  _Enum:_{.json-schema-reset .json-schema-value} `CASH_ON_DELIVERY`, `CARD_ON_DELIVERY`, `BOUND_CARD_ON_DELIVERY`, `BNPL_BANK_ON_DELIVERY`, `BNPL_ON_DELIVERY`, `YANDEX`, `APPLE_PAY`, `EXTERNAL_CERTIFICATE`, `CREDIT`, `GOOGLE_PAY`, `TINKOFF_CREDIT`, `SBP`, `SBP_ON_DELIVERY`, `TINKOFF_INSTALLMENTS`, `B2B_ACCOUNT_PREPAYMENT`, `B2B_ACCOUNT_POSTPAYMENT`, `MICROCREDIT`, `BNPL_TBYB`, `BNPL_TBC`, `DIGITAL_RUBLE`, `UNKNOWN`
   {.table-cell}
   ||
   ||

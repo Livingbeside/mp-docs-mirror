@@ -9,7 +9,7 @@ tags:
 spec_version: order
 source: "https://dev.wildberries.ru/docs/openapi/orders-fbs"
 deprecated: false
-content_sha: 0b7531125a19952d
+content_sha: 29be5eab6a7f88f3
 ---
 
 # Обновить настройки автовозврата товаров
@@ -53,8 +53,8 @@ content_sha: 0b7531125a19952d
 
 **400** — Неправильный запрос
 
-- `detail` — string **обязательный**. Детали ошибки
 - `title` — string **обязательный**. Заголовок ошибки
+- `detail` — string **обязательный**. Детали ошибки
 
 **401** — Не авторизован
 

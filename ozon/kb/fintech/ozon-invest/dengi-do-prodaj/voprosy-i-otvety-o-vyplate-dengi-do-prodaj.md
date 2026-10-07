@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /fintech/ozon-invest/dengi-do-prodaj/voprosy-i-otvety-o-vyplate-dengi-do-prodaj
 source: "https://seller-edu.ozon.ru/libra/fintech/ozon-invest/dengi-do-prodaj/voprosy-i-otvety-o-vyplate-dengi-do-prodaj"
-updated: "2026-04-09 10:05:23.701585"
+updated: "2026-10-06 09:51:37"
 doc_id: 45806
-fetched_at: "2026-08-28T12:11:15Z"
-content_sha: a5d6854cf0cd8654
+fetched_at: "2026-10-07T02:15:44Z"
+content_sha: b38d56b2f956b962
 ---
 
 # Вопросы и ответы о выплате «Деньги до продаж»
@@ -15,6 +15,8 @@ content_sha: a5d6854cf0cd8654
 _Главная / Финансовые услуги / Кредиты, займы и факторинг / Выплата «Деньги до продаж» на FBO_
 
 Как изменить реквизиты, сколько ждать выплату «Деньги до продаж», почему услуга может быть недоступна и почему может не прийти выплата по подписке
+
+С 22 августа 2026 года продукт «Деньги до продаж» временно недоступен — оформить новую выплату или получить деньги по подписке не получится.
 
 Отвечаем на частые вопросы о выплате «Деньги до продаж». [Подробнее об услуге](/fintech/ozon-invest/dengi-do-prodaj/chto-takoe-dengi-do-prodaj)
 

@@ -9,7 +9,7 @@ tags:
 spec_version: order
 source: "https://dev.wildberries.ru/docs/openapi/orders-fbs"
 deprecated: false
-content_sha: b31e9a839b41e404
+content_sha: 148972bac388c3a3
 ---
 
 # Получить настройки автовозврата продавца
@@ -60,6 +60,11 @@ content_sha: b31e9a839b41e404
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
+
+**406** — Неприменимо для данного аккаунта
+
+- `title` — string **обязательный**. Заголовок ошибки
+- `detail` — string **обязательный**. Детали ошибки
 
 **429** — Слишком много запросов
 

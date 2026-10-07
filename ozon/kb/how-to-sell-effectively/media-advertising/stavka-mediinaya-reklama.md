@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /how-to-sell-effectively/media-advertising/stavka-mediinaya-reklama
 source: "https://seller-edu.ozon.ru/libra/how-to-sell-effectively/media-advertising/stavka-mediinaya-reklama"
-updated: "2026-10-05 13:41:47"
+updated: "2026-10-06 09:35:48"
 doc_id: 27862
-fetched_at: "2026-10-06T01:57:02Z"
-content_sha: 47659aa3e58cec60
+fetched_at: "2026-10-07T02:15:44Z"
+content_sha: 2bcad2cfb212348d
 ---
 
 # Что такое ставка в «Медийной рекламе»
@@ -48,8 +48,6 @@ _Главная / Продвижение / «Медийная реклама»_
 В любой момент можно изменить ставку. [Как это сделать](/how-to-sell-effectively/media-advertising/izmenit-kampaniu-mediinaya-reklama#как-изменить-ставку-у-баннера)
 
 # Какие минимальные ставки у баннеров
-
-C 20 октября 2026 года изменим минимальную ставку за клик у нативного баннера — 20 ₽ вместо 10 ₽.
 
 | Формат «Медийной рекламы» | Место размещения | Минимальная ставка |
 | --- | --- | --- |

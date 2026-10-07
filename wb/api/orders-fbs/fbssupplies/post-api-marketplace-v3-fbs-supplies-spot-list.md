@@ -9,7 +9,7 @@ tags:
 spec_version: order
 source: "https://dev.wildberries.ru/docs/openapi/orders-fbs"
 deprecated: false
-content_sha: bd911a9942976c5c
+content_sha: de6bc5f0595481a0
 ---
 
 # Получить данные СПОТ для списка поставок
@@ -54,13 +54,13 @@ content_sha: bd911a9942976c5c
     - `trailerRegistrationNumber` — string. Регистрационный номер прицепа
     - `errorCode` — string (doppFailed). Код ошибки от сервиса формирования ДОПП — документа о предстоящей поставке. Возвращается при `"status": "failed"`. Чтобы исправить ошибку, проверьте данные СПОТ и [добавьте их в поставку](./orders-fbs#tag/fbsSupplies/operation/getV3FbsSuppliesSupplyIdSpot) ещё раз
   - `error` — object
-    - `detail` — string **обязательный**. Детали ошибки
     - `title` — string **обязательный**. Заголовок ошибки
+    - `detail` — string **обязательный**. Детали ошибки
 
 **400** — Неправильный запрос
 
-- `detail` — string **обязательный**. Детали ошибки
 - `title` — string **обязательный**. Заголовок ошибки
+- `detail` — string **обязательный**. Детали ошибки
 
 **401** — Не авторизован
 

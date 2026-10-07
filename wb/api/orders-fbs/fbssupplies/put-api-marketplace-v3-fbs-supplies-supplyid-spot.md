@@ -9,7 +9,7 @@ tags:
 spec_version: order
 source: "https://dev.wildberries.ru/docs/openapi/orders-fbs"
 deprecated: false
-content_sha: fead1e99d9337621
+content_sha: 4dfc09e5ccdd89b2
 ---
 
 # Добавить данные СПОТ в поставку{{ /api/marketplace/v3/fbs/supplies/{supplyId}/spot }}
@@ -52,8 +52,8 @@ content_sha: fead1e99d9337621
 
 **400** — Неправильный запрос
 
-- `detail` — string **обязательный**. Детали ошибки
 - `title` — string **обязательный**. Заголовок ошибки
+- `detail` — string **обязательный**. Детали ошибки
 
 **401** — Не авторизован
 
@@ -79,13 +79,13 @@ content_sha: fead1e99d9337621
 
 **404** — Не найдено
 
-- `detail` — string **обязательный**. Детали ошибки
 - `title` — string **обязательный**. Заголовок ошибки
+- `detail` — string **обязательный**. Детали ошибки
 
 **409** — Ошибка добавления данных СПОТ
 
-- `detail` — string **обязательный**. Детали ошибки
 - `title` — string **обязательный**. Заголовок ошибки
+- `detail` — string **обязательный**. Детали ошибки
 
 **429** — Слишком много запросов
 

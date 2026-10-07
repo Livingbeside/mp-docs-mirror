@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /fintech/ozon-invest/ozon-invest/voprosy-i-otvety-o-kredite
 source: "https://seller-edu.ozon.ru/libra/fintech/ozon-invest/ozon-invest/voprosy-i-otvety-o-kredite"
-updated: "2026-09-16 13:55:00"
+updated: "2026-10-06 09:47:30"
 doc_id: 45796
-fetched_at: "2026-09-17T02:05:04Z"
-content_sha: fb82f4189cf88e11
+fetched_at: "2026-10-07T02:15:44Z"
+content_sha: 31f7babdb998cb14
 ---
 
 # Вопросы и ответы о кредитах
@@ -21,6 +21,8 @@ _Главная / Финансовые услуги / Кредиты, займы
 Если вы подписывали договор кредитования после 30 июля 2026 года, больше ответов на вопросы — в [статье](https://help-bank.ozon.ru/business/credit/credit/faq).
 
 # Чем отличается кредит на любые цели от кредита на рост оборотов?
+
+С 22 августа 2026 года кредит на любые цели временно недоступен, поэтому получить финансирование можно только через кредит на рост оборотов.
 
 С кредитом на любые цели вы можете использовать средства по своему усмотрению: например, для закупки оборудования, открытия новой точки или любых других нужд. [Подробнее о кредите на любые цели](/libra/fintech/ozon-invest/ozon-invest/kredit)
 

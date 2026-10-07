@@ -4,8 +4,8 @@ api: wildberries
 kind: changelog
 source: "https://dev.wildberries.ru/release-notes"
 window: последние записи, страница отдаёт не всю историю
-fetched_at: "2026-10-06T01:59:50Z"
-content_sha: af62f5ee0807a454
+fetched_at: "2026-10-07T02:20:10Z"
+content_sha: ce74a62fc5df4f75
 ---
 
 # Журнал изменений WB API
@@ -66,6 +66,21 @@ content_sha: af62f5ee0807a454
 
 Октябрь
 2026
+
+Новое
+
+## 06.10.2026
+
+DBS
+
+Сборочные задания DBS
+
+Изменения в сборочных заданиях DBS
+
+В метод [POST /api/v3/dbs/orders/client](/docs/openapi/dbs#tag/dbsAssemblyOrders/operation/postV3DbsOrdersClient) добавили поля с дополнительными номерами телефонов для связи с покупателем:
+
+- `additionalPhones` — дополнительные номера
+- `replacementAdditionalPhones` — дополнительные подменные номера
 
 Устарело
 
@@ -456,68 +471,5 @@ content_sha: af62f5ee0807a454
 Данные в отчёте обновляются 1 раз в 30 минут.
 
 Метод доступен по **Персональному** и **Сервисному** токену категории **Аналитика**.
-
-Изменения
-
-## 15.08.2026
-
-Поставки FBW
-
-Информация для формирования поставок
-
-Тарифы
-
-Стоимость возврата продавцу
-
-Тарифы на поставку
-
-Тарифы на остаток
-
-Отчёты
-
-Основные отчёты
-
-Отчёт об остатках на складах
-
-Платное хранение
-
-Аналитика и данные
-
-Воронка продаж
-
-Аналитика продавца CSV
-
-История остатков
-
-Лента заказов
-
-Документы и бухгалтерия
-
-Финансовые отчёты
-
-Временные изменения в работе WB API со складами WB с 15 августа
-
-C **15 августа** вносим временные изменения в работу WB API. Часть информации по складам WB будет недоступна, подробнее — в [новости](https://seller.wildberries.ru/news-v2/news-details?id=13442) на Портале продавцов.
-
-- Методы [Информации для формирования поставок](/docs/openapi/orders-fbw#tag/informationForFormingSupplies) и [Тарифов на поставку](/docs/openapi/wb-tariffs#tag/supplyRates) отключены
-- В [Тарифах на остаток](/docs/openapi/wb-tariffs#tag/stockRates) возвращаются данные:   в [Тарифах для коробов](/docs/openapi/wb-tariffs#tag/stockRates/operation/getV1TariffsBox) — только для складов вне РФ, а также с `warehouseName`:   `Свой склад РФ` `Свой склад СГТ РФ`   в [Тарифах для монопаллет](/docs/openapi/wb-tariffs#tag/stockRates/operation/getV1TariffsPallet) — только для складов вне РФ
-- В [Тарифах на возврат](/docs/openapi/wb-tariffs#tag/returnCostToSeller) возвращаются данные только для складов вне РФ, а также с `warehouseName`:   `Свой склад РФ` `Свой склад СГТ РФ` `Склад WB РФ` `Склад WB СГТ РФ`
-- В массиве `warehouses` [Отчёта об остатках на складах WB](/docs/openapi/reports#tag/warehousesInventoryReport/operation/getV1WarehouseRemainsTasksTaskIdDownload) вместо данных по складам в РФ, кроме указанных в [новости](https://seller.wildberries.ru/news-v2/news-details?id=13440) отдельно и [Коледино](https://seller.wildberries.ru/news-v2/news-details?id=13458), возвращаются суммарные с `warehouseName`:   `Склад WB РФ` `Склад WB СГТ РФ`
-- В отчёте [Платное хранение](/docs/openapi/reports#tag/paidStorage/operation/getV1PaidStorageTasksTaskIdDownload) и в отчётах [Аналитики и данных](/docs/openapi/analytics) с детализацией по складам WB данные в разрезе складов WB возвращаются только суммарными по размерам товаров
-- В строках отчётов установлены следующие постоянные значения:
-
-Список постоянных значений
-
-- В строках отчётов установлены следующие постоянные значения для складов WB:
-
-Список постоянных значений
-
-- В строках отчётов установлены следующие постоянные значения для складов отгрузки в РФ:
-
-Список постоянных значений
-
-- В детализациях к отчётам реализации [по ID отчётов](/docs/openapi/financial-reports-and-accounting#tag/financialReports/operation/postV1SalesReportsDetailedReportId) и [за период](/docs/openapi/financial-reports-and-accounting#tag/financialReports/operation/postV1SalesReportsDetailed) значения поля `officeName` для складов в РФ, начиная с ежедневных отчётов за 13 августа, сведены к четырём, указанным в [новости](https://seller.wildberries.ru/news-v2/news-details?id=13440)
-
-О дальнейших изменениях мы сообщим дополнительно.
 
 Мы используем [cookies](https://legal.wildberries.ru/privacypolicy/country/ru/lang/ru/#anchor-7), чтобы анализировать, как вы пользуетесь сайтом, и улучшать его

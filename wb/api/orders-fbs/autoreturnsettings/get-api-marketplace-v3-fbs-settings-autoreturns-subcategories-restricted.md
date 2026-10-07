@@ -9,7 +9,7 @@ tags:
 spec_version: order
 source: "https://dev.wildberries.ru/docs/openapi/orders-fbs"
 deprecated: false
-content_sha: 3c23eee642599e6a
+content_sha: 5c0edc3c65b7f0ab
 ---
 
 # Получить предметы, которые не хранятся на складах WB
@@ -50,8 +50,8 @@ content_sha: 3c23eee642599e6a
 
 **400** — Неправильный запрос
 
-- `detail` — string **обязательный**. Детали ошибки
 - `title` — string **обязательный**. Заголовок ошибки
+- `detail` — string **обязательный**. Детали ошибки
 
 **401** — Не авторизован
 

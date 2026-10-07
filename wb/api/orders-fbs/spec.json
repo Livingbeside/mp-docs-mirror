@@ -137,6 +137,13 @@
           "message": "Fix them to dispatch items"
         }
       },
+      "NotAcceptable": {
+        "description": "Неприменимо для данного аккаунта — отсутствуют [склады FBS](./item-management#tag/sellerWarehouses)",
+        "value": {
+          "detail": "Not acceptable",
+          "title": "NotAcceptable"
+        }
+      },
       "Response403TokenCategory": {
         "description": "Неверная категория токена",
         "value": {
@@ -1644,7 +1651,6 @@
           "cargoType": {
             "description": "Тип товара:\n  - `1` — малогабаритный товар (МГТ)\n  - `2` — сверхгабаритный товар (СГТ)\n  - `3` — крупногабаритный товар (КГТ+)\n",
             "enum": [
-              0,
               1,
               2,
               3
@@ -1719,7 +1725,7 @@
             "type": "integer"
           },
           "scanDt": {
-            "description": "Дата сканирования поставки или первого заказа (RFC3339)",
+            "description": "Дата сканирования поставки (RFC3339).<br>Если `\"scanDt\":null`, поставка не сканировалась",
             "example": "2022-05-04T07:56:29Z",
             "format": "date-time",
             "nullable": true,
@@ -2559,6 +2565,21 @@
               }
             },
             "description": "<span class='response__value '>Доступ запрещён</span>"
+          },
+          "406": {
+            "content": {
+              "application/json": {
+                "examples": {
+                  "NotAcceptable": {
+                    "$ref": "#/components/examples/NotAcceptable"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/ApiErrorV3"
+                }
+              }
+            },
+            "description": "<span class='response__value '>Неприменимо для данного аккаунта</span>"
           },
           "429": {
             "$ref": "#/components/responses/429"

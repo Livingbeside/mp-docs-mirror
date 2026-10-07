@@ -2,8 +2,8 @@
 title: Список заказов в магазине
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/orders/getOrders.md"
-fetched_at: "2026-10-06T02:01:51Z"
-content_sha: b4f52561dd54aa44
+fetched_at: "2026-10-07T02:22:09Z"
+content_sha: 35c8102aead67171
 ---
 
 ---
@@ -1276,6 +1276,8 @@ alternate:
   
     * `BNPL_TBYB` - Оплата после доставки на основе Сплита.
   
+    * `SBP_ON_DELIVERY` — постоплата через СБП.
+  
     * `CASH_ON_DELIVERY` — наличными.
   
     * `B2B_ACCOUNT_POSTPAYMENT` — заказ оплачивает организация после доставки.
@@ -1287,7 +1289,7 @@ alternate:
   
   **Type**: string
   
-  _Enum:_{.json-schema-reset .json-schema-value} `CASH_ON_DELIVERY`, `CARD_ON_DELIVERY`, `BOUND_CARD_ON_DELIVERY`, `BNPL_BANK_ON_DELIVERY`, `BNPL_ON_DELIVERY`, `YANDEX`, `APPLE_PAY`, `EXTERNAL_CERTIFICATE`, `CREDIT`, `GOOGLE_PAY`, `TINKOFF_CREDIT`, `SBP`, `TINKOFF_INSTALLMENTS`, `B2B_ACCOUNT_PREPAYMENT`, `B2B_ACCOUNT_POSTPAYMENT`, `MICROCREDIT`, `BNPL_TBYB`, `BNPL_TBC`, `DIGITAL_RUBLE`, `UNKNOWN`
+  _Enum:_{.json-schema-reset .json-schema-value} `CASH_ON_DELIVERY`, `CARD_ON_DELIVERY`, `BOUND_CARD_ON_DELIVERY`, `BNPL_BANK_ON_DELIVERY`, `BNPL_ON_DELIVERY`, `YANDEX`, `APPLE_PAY`, `EXTERNAL_CERTIFICATE`, `CREDIT`, `GOOGLE_PAY`, `TINKOFF_CREDIT`, `SBP`, `SBP_ON_DELIVERY`, `TINKOFF_INSTALLMENTS`, `B2B_ACCOUNT_PREPAYMENT`, `B2B_ACCOUNT_POSTPAYMENT`, `MICROCREDIT`, `BNPL_TBYB`, `BNPL_TBC`, `DIGITAL_RUBLE`, `UNKNOWN`
   
   </div>
   
@@ -4502,6 +4504,8 @@ alternate:
   
     * `BNPL_TBYB` - Оплата после доставки на основе Сплита.
   
+    * `SBP_ON_DELIVERY` — постоплата через СБП.
+  
     * `CASH_ON_DELIVERY` — наличными.
   
     * `B2B_ACCOUNT_POSTPAYMENT` — заказ оплачивает организация после доставки.
@@ -4511,7 +4515,7 @@ alternate:
   Значение по умолчанию: `CASH_ON_DELIVERY`.
   
   
-  _Enum:_{.json-schema-reset .json-schema-value} `CASH_ON_DELIVERY`, `CARD_ON_DELIVERY`, `BOUND_CARD_ON_DELIVERY`, `BNPL_BANK_ON_DELIVERY`, `BNPL_ON_DELIVERY`, `YANDEX`, `APPLE_PAY`, `EXTERNAL_CERTIFICATE`, `CREDIT`, `GOOGLE_PAY`, `TINKOFF_CREDIT`, `SBP`, `TINKOFF_INSTALLMENTS`, `B2B_ACCOUNT_PREPAYMENT`, `B2B_ACCOUNT_POSTPAYMENT`, `MICROCREDIT`, `BNPL_TBYB`, `BNPL_TBC`, `DIGITAL_RUBLE`, `UNKNOWN`
+  _Enum:_{.json-schema-reset .json-schema-value} `CASH_ON_DELIVERY`, `CARD_ON_DELIVERY`, `BOUND_CARD_ON_DELIVERY`, `BNPL_BANK_ON_DELIVERY`, `BNPL_ON_DELIVERY`, `YANDEX`, `APPLE_PAY`, `EXTERNAL_CERTIFICATE`, `CREDIT`, `GOOGLE_PAY`, `TINKOFF_CREDIT`, `SBP`, `SBP_ON_DELIVERY`, `TINKOFF_INSTALLMENTS`, `B2B_ACCOUNT_PREPAYMENT`, `B2B_ACCOUNT_POSTPAYMENT`, `MICROCREDIT`, `BNPL_TBYB`, `BNPL_TBC`, `DIGITAL_RUBLE`, `UNKNOWN`
   {.table-cell}
   ||
   ||
@@ -5605,7 +5609,7 @@ alternate:
         uniqueItems: true
         items:
           $ref: >-
-            /home/sandbox/.ya/build/build_root/84gm/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/orders/schemas.yaml#/OrderStatusType
+            /home/sandbox/.ya/build/build_root/cla9/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/orders/schemas.yaml#/OrderStatusType
     - description: >
         Этап обработки заказа (статус `PROCESSING`) или причина отмены заказа
         (статус `CANCELLED`).
@@ -5687,7 +5691,7 @@ alternate:
         uniqueItems: true
         items:
           $ref: >-
-            /home/sandbox/.ya/build/build_root/84gm/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/orders/schemas.yaml#/OrderSubstatusType
+            /home/sandbox/.ya/build/build_root/cla9/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/orders/schemas.yaml#/OrderSubstatusType
     - description: >
         Начальная дата для фильтрации заказов по дате оформления.
   
@@ -5820,7 +5824,7 @@ alternate:
       required: false
       schema:
         $ref: >-
-          /home/sandbox/.ya/build/build_root/84gm/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/orders/schemas.yaml#/OrderDeliveryDispatchType
+          /home/sandbox/.ya/build/build_root/cla9/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/orders/schemas.yaml#/OrderDeliveryDispatchType
     - description: |
         Фильтрация заказов по типам:
   
@@ -5882,7 +5886,7 @@ alternate:
       required: false
       schema:
         $ref: >-
-          /home/sandbox/.ya/build/build_root/84gm/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/orders/schemas.yaml#/OrderBuyerType
+          /home/sandbox/.ya/build/build_root/cla9/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/orders/schemas.yaml#/OrderBuyerType
     - name: page
       description: >
         {% note warning "Параметр устарел и будет отключен 05.10.2026." %}

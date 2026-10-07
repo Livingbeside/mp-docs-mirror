@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /fintech/ozon-invest/ozon-invest/kredit-na-lubye-celi/kak-otpravit-zayavku-na-kredit
 source: "https://seller-edu.ozon.ru/libra/fintech/ozon-invest/ozon-invest/kredit-na-lubye-celi/kak-otpravit-zayavku-na-kredit"
-updated: "2026-08-13 15:08:06"
+updated: "2026-10-06 09:46:04"
 doc_id: 45782
-fetched_at: "2026-08-28T12:11:15Z"
-content_sha: 02916425d8ccfe11
+fetched_at: "2026-10-07T02:15:44Z"
+content_sha: f438117391ee1fc0
 ---
 
 # Как отправить заявку на кредит на любые цели
@@ -16,7 +16,7 @@ _Главная / Финансовые услуги / Кредиты, займы
 
 Как заполнить заявку на кредит на любые цели, что нужно для оформления и как подписываем документы
 
-С 30 июля 2026 года подать заявку на кредит через личный кабинет финансирования не получится. Как заполнять заявку — читайте в [статье](https://help-bank.ozon.ru/business/credit/credit/create).
+С 22 августа 2026 года кредит на любые цели временно недоступен, поэтому получить финансирование не получится. Вы можете воспользоваться [целевым кредитом](https://seller-edu.ozon.ru/libra/fintech/ozon-invest/ozon-invest/kredit-na-razvitie-biznesa) на похожих условиях.
 
 Рассказываем, что нужно учесть при подаче заявки на кредитование. [Подробнее о кредите на любые цели](/fintech/ozon-invest/ozon-invest/kredit-na-lubye-celi/kredit)
 
