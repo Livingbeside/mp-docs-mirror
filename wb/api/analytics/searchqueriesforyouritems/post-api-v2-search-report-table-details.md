@@ -9,7 +9,7 @@ tags:
 spec_version: analytics
 source: "https://dev.wildberries.ru/docs/openapi/analytics"
 deprecated: false
-content_sha: cf367e175270ebc0
+content_sha: 1ad63e782c77c32a
 ---
 
 # Пагинация по товарам в группе
@@ -29,7 +29,7 @@ content_sha: cf367e175270ebc0
 
 Параметры `includeSubstitutedSKUs` и `includeSearchTexts` не могут одновременно иметь значение `false`.
 
-Данные отчёта обновляются 1 раз в час.
+Данные отчёта обновляются 1 раз в 2 часа.
 
 Лимит запросов на один аккаунт продавца:
 

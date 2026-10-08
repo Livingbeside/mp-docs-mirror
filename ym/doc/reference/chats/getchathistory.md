@@ -2,14 +2,14 @@
 title: История сообщений
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/chats/getChatHistory.md"
-fetched_at: "2026-10-06T02:01:42Z"
-content_sha: fbc7344c819f3859
+fetched_at: "2026-10-08T02:13:00Z"
+content_sha: bdc1014a493aa7d5
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.63.0
+    content: Diplodoc Platform v5.63.1
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/chats/getChatHistory.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/chats/getChatHistory.md
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/chats/getChatHistory.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21542491
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21542491
 
 <!-- source: ru/api/chats/getChatHistory.md -->
 <div class="openapi">

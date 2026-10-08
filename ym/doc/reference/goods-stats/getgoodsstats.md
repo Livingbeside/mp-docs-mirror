@@ -2,14 +2,14 @@
 title: Отчет по товарам
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/goods-stats/getGoodsStats.md"
-fetched_at: "2026-10-06T02:01:24Z"
-content_sha: 9ca9eb797d8c833b
+fetched_at: "2026-10-08T02:12:45Z"
+content_sha: 2e7662f3ce9c3ae6
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.63.0
+    content: Diplodoc Platform v5.63.1
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/goods-stats/getGoodsStats.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/goods-stats/getGoodsStats.md
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/goods-stats/getGoodsStats.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21542491
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21542491
 
 <!-- source: ru/api/goods-stats/getGoodsStats.md -->
 <div class="openapi">

@@ -9,7 +9,7 @@ tags:
 spec_version: analytics
 source: "https://dev.wildberries.ru/docs/openapi/analytics"
 deprecated: false
-content_sha: b41fbb631eaf15ba
+content_sha: 920f238ea006eebb
 ---
 
 # Основная страница
@@ -33,7 +33,7 @@ content_sha: b41fbb631eaf15ba
 
 Параметры `includeSubstitutedSKUs` и `includeSearchTexts` не могут одновременно иметь значение `false`.
 
-Данные отчёта обновляются 1 раз в час.
+Данные отчёта обновляются 1 раз в 2 часа.
 
 Лимит запросов на один аккаунт продавца:
 

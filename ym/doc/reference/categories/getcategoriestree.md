@@ -2,14 +2,14 @@
 title: Дерево категорий
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/categories/getCategoriesTree.md"
-fetched_at: "2026-10-07T02:20:48Z"
-content_sha: 85853cd63a935cad
+fetched_at: "2026-10-08T02:11:52Z"
+content_sha: 73a5b76164a8af6b
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.63.0
+    content: Diplodoc Platform v5.63.1
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/categories/getCategoriesTree.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/categories/getCategoriesTree.md
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/categories/getCategoriesTree.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21542491
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21542491
 
 <!-- source: ru/api/categories/getCategoriesTree.md -->
 <div class="openapi">
@@ -866,7 +866,7 @@ alternate:
         description: Язык категорий.
         $ref: '#/$defs/LanguageType'
     $defs:
-      /home/sandbox/.ya/build/build_root/cla9/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/common/schemas.yaml#/LanguageType:
+      /home/sandbox/.ya/build/build_root/lmh0/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/common/schemas.yaml#/LanguageType:
         description: |
           Язык:
   

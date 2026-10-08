@@ -2,14 +2,14 @@
 title: Передача остатков для кабинетов с группами складов
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/stocks/updateStocks.md"
-fetched_at: "2026-10-07T02:21:00Z"
-content_sha: 026a9f76ef7ce510
+fetched_at: "2026-10-08T02:12:05Z"
+content_sha: f6b9f7976565e6e5
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.63.0
+    content: Diplodoc Platform v5.63.1
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/stocks/updateStocks.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/stocks/updateStocks.md
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/stocks/updateStocks.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21542491
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21542491
 
 <!-- source: ru/api/stocks/updateStocks.md -->
 <div class="openapi">
@@ -1041,7 +1041,7 @@ alternate:
                     type: string
                     format: date-time
     $defs:
-      /home/sandbox/.ya/build/build_root/cla9/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/common/schemas.yaml#/InternalOfferId:
+      /home/sandbox/.ya/build/build_root/lmh0/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/common/schemas.yaml#/InternalOfferId:
         description: >-
           Внутренний идентификатор товара в системах Маркета. Нужен для создания
           товаров Лавки с отличными offerId и article.

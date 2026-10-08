@@ -2,14 +2,14 @@
 title: Информация о заказах
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/orders/getBusinessOrders.md"
-fetched_at: "2026-10-07T02:21:08Z"
-content_sha: 8079a184eedcbb60
+fetched_at: "2026-10-08T02:12:13Z"
+content_sha: 2a5f2a6aaa060548
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.63.0
+    content: Diplodoc Platform v5.63.1
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/orders/getBusinessOrders.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/orders/getBusinessOrders.md
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/orders/getBusinessOrders.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21542491
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21542491
 
 <!-- source: ru/api/orders/getBusinessOrders.md -->
 <div class="openapi">
@@ -6517,7 +6517,7 @@ alternate:
             - OTHER
         minItems: 1
     $defs:
-      /home/sandbox/.ya/build/build_root/cla9/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/orders/api/getBusinessOrders.yaml#/OrderDatesFilterDTO:
+      /home/sandbox/.ya/build/build_root/lmh0/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/orders/api/getBusinessOrders.yaml#/OrderDatesFilterDTO:
         type: object
         description: Фильтр по датам заказов.
         properties:

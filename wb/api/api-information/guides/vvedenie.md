@@ -5,7 +5,7 @@ tag: introduction
 group: ""
 kind: guide
 source: "https://dev.wildberries.ru/docs/openapi/api-information"
-content_sha: 070ef91fa236cace
+content_sha: 9f4a165fe902b98a
 ---
 
 # Введение
@@ -48,7 +48,7 @@ Wildberries API предоставляет продавцам инструмен
  - Следите за новостями и изменениями WB API в:
  - [Журнале изменений](/release-notes)
  - [Telegram-канале](https://t.me/wb_api_notifications)
- - [канале в МАКС](https://max.ru/wbapi)
+ - [канале в WB Chat](https://chat.wb.ru/all/019e9619-ce9e-7d5e-b08d-cc5db2297a93)
  - [новостной ленте Wildberries](https://seller.wildberries.ru/news-v2)
 
 # Поддержка

@@ -2,14 +2,14 @@
 title: Получение статусов операций
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/operations/getOperations.md"
-fetched_at: "2026-10-06T02:00:57Z"
-content_sha: b9a2699a0ad6546e
+fetched_at: "2026-10-08T02:12:23Z"
+content_sha: c29d5038107d1944
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.63.0
+    content: Diplodoc Platform v5.63.1
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/operations/getOperations.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/operations/getOperations.md
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/operations/getOperations.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21542491
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21542491
 
 <!-- source: ru/api/operations/getOperations.md -->
 <div class="openapi">

@@ -2,14 +2,14 @@
 title: Список невыкупов и возвратов
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/returns/getReturns.md"
-fetched_at: "2026-10-07T02:21:35Z"
-content_sha: 563df8bb66894440
+fetched_at: "2026-10-08T02:12:38Z"
+content_sha: 2b3a96f7d4f52486
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.63.0
+    content: Diplodoc Platform v5.63.1
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/returns/getReturns.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/returns/getReturns.md
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/returns/getReturns.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21542491
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21542491
 
 <!-- source: ru/api/returns/getReturns.md -->
 <div class="openapi">
@@ -2981,7 +2981,7 @@ alternate:
         uniqueItems: true
         items:
           $ref: >-
-            /home/sandbox/.ya/build/build_root/cla9/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/common/schemas.yaml#/RefundStatusType
+            /home/sandbox/.ya/build/build_root/lmh0/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/common/schemas.yaml#/RefundStatusType
     - description: |
         Фильтр по логистическим статусам невыкупов и возвратов.
   
@@ -2997,7 +2997,7 @@ alternate:
         uniqueItems: true
         items:
           $ref: >-
-            /home/sandbox/.ya/build/build_root/cla9/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/common/schemas.yaml#/ReturnShipmentStatusType
+            /home/sandbox/.ya/build/build_root/lmh0/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/common/schemas.yaml#/ReturnShipmentStatusType
     - description: |
         Тип заказа для фильтрации:
   
@@ -3011,7 +3011,7 @@ alternate:
       required: false
       schema:
         $ref: >-
-          /home/sandbox/.ya/build/build_root/cla9/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/common/schemas.yaml#/ReturnType
+          /home/sandbox/.ya/build/build_root/lmh0/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/common/schemas.yaml#/ReturnType
     - description: |
         Начальная дата для фильтрации невыкупов или возвратов по дате обновления.
   

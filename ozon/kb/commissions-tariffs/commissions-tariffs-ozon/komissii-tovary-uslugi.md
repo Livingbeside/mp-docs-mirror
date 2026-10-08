@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /commissions-tariffs/commissions-tariffs-ozon/komissii-tovary-uslugi
 source: "https://seller-edu.ozon.ru/libra/commissions-tariffs/commissions-tariffs-ozon/komissii-tovary-uslugi"
-updated: "2026-10-06 15:14:19"
+updated: "2026-10-07 15:53:49"
 doc_id: 692
-fetched_at: "2026-10-07T02:15:44Z"
-content_sha: 8467f500871daaf4
+fetched_at: "2026-10-08T02:08:27Z"
+content_sha: 1e8b22e50a9d898e
 ---
 
 # Вознаграждение Ozon за продажу товаров
@@ -91,15 +91,11 @@ Ozon работает по модели маркетплейса, где каж�
 
 Таблица категорий с 7 октября 2026 г.
 
-[Скачать таблицу категорий](https://cdn.ozone.ru/s3/ozon-disk-api/Seller-edu/files/commissions-tariffs/commissions/Таблица_категорий_для_расчёта_вознаграждения_07102026_1791291340.xlsx)
-
-[Скачать таблицу категорий на платформе Селект](https://cdn.ozone.ru/s3/ozon-disk-api/Seller-edu/files/commissions-tariffs/commissions/Таблица_категорий_для_расчёта_вознаграждения_Селект_07102026_1791291328.xlsx)
-
 Таблица категорий с 28 августа по 6 октября 2026 г.
 
 [Скачать таблицу категорий](https://cdn.ozone.ru/s3/ozon-disk-api/Seller-edu/files/commissions-tariffs/commissions/Таблица_категорий_для_расчёта_вознаграждения_28082026-3_1787574038.xlsx)
 
-[Скачать таблицу категорий на платформе Селект](https://cdn.ozone.ru/s3/ozon-disk-api/Seller-edu/files/commissions-tariffs/select/Таблица_категорий_для_расчёта_вознаграждения_Селект_01072026_2_1782203336.xlsx)
+[Скачать таблицу категорий на платформе Селект](https://cdn.ozone.ru/s3/ozon-disk-api/Seller-edu/files/commissions-tariffs/commissions/Таблица_категорий_для_расчёта_вознаграждения_Селект_07102026_1791291328.xlsx)
 
 Таблица категорий с 15 июля по 27 августа 2026 г.
 

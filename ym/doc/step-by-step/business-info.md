@@ -2,14 +2,14 @@
 title: Заказы от бизнеса
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/business-info.md"
-fetched_at: "2026-10-06T02:00:12Z"
-content_sha: 62c15128e469dd71
+fetched_at: "2026-10-08T02:11:39Z"
+content_sha: 8aba578e5b41a1f9
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.63.0
+    content: Diplodoc Platform v5.63.1
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/step-by-step/business-info.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/business-info.md
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/business-info.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21542491
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21542491
 
 # Обработка заказов от юридических лиц
 

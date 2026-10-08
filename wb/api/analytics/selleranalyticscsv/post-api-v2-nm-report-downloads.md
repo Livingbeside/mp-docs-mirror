@@ -9,7 +9,7 @@ tags:
 spec_version: analytics
 source: "https://dev.wildberries.ru/docs/openapi/analytics"
 deprecated: false
-content_sha: 42fca1a48643f400
+content_sha: ce428e6d3ad9b82f
 ---
 
 # Создать отчёт
@@ -38,6 +38,8 @@ content_sha: 42fca1a48643f400
 
 Если не удалось [получить отчёт](./analytics#tag/sellerAnalyticsCsv/operation/getV2NmReportDownloadsFileDownloadId), можно создать [повторное задание на генерацию](./analytics#tag/sellerAnalyticsCsv/operation/postV2NmReportDownloadsRetry). Также можно [получить список и проверить статусы](./analytics#tag/sellerAnalyticsCsv/operation/getV2NmReportDownloads) отчётов.
 
+Данные отчётов обновляются 1 раз в 2 часа.
+
  Отчёты по [остаткам](https://seller.wildberries.ru/content-analytics/history-remains) — типы STOCK_HISTORY_REPORT_CSV и STOCK_HISTORY_DAILY_CSV — можно создать без подписки [Джем](https://seller.wildberries.ru/monetization/jam)
 
 Лимит запросов на один аккаунт продавца:
@@ -54,7 +56,7 @@ content_sha: 42fca1a48643f400
 **Тело запроса** (`application/json`):
 
 - `id` — string<uuid> **обязательный**. ID отчёта в UUID-формате. Генерируется продавцом самостоятельно
-- `reportType` — string **обязательный**. Тип отчёта `DETAIL_HISTORY_REPORT` — Воронка продаж. По артикулам WB. Данные отчёта обновляются 1 раз в 2 часа.
+- `reportType` — string **обязательный**. Тип отчёта `DETAIL_HISTORY_REPORT` — Воронка продаж. По артикулам WB
 - `userReportName` — string. Название отчёта. Если не указано, сформируется автоматически
 - `params` — object **обязательный**. Параметры отчёта
   - `nmIDs` — array[integer<int64>]. Артикулы WB, по которым составить отчёт. Оставьте пустым, чтобы получить отчёт обо всех товарах
@@ -67,7 +69,7 @@ content_sha: 42fca1a48643f400
   - `aggregationLevel` — string (day, week, month). Как сгруппировать данные (по умолчанию по дням): * `day` — по дням * `week` — по неделям * `month` — по месяцам
   - `skipDeletedNm` — boolean. Скрыть удалённые товары
 - `id` — string<uuid> **обязательный**. ID отчёта в UUID-формате. Генерируется продавцом самостоятельно
-- `reportType` — string **обязательный**. Тип отчёта `GROUPED_HISTORY_REPORT` — Воронка продаж. По предметам, брендам и ярлыкам. Данные отчёта обновляются 1 раз в 2 часа.
+- `reportType` — string **обязательный**. Тип отчёта `GROUPED_HISTORY_REPORT` — Воронка продаж. По предметам, брендам и ярлыкам
 - `userReportName` — string. Название отчёта. Если не указано, сформируется автоматически
 - `params` — object **обязательный**. Параметры отчёта
   - `subjectIds` — array[integer<int32>]. Список ID предметов для фильтрации
@@ -140,7 +142,7 @@ content_sha: 42fca1a48643f400
   - `includeSearchTexts` — boolean. Показать данные по поисковым запросам без учёта подменного артикула По умолчанию: `True`.
   - `limit` — integer<uint64> **обязательный**
 - `id` — string<uuid> **обязательный**. ID отчёта в UUID-формате. Генерируется продавцом самостоятельно
-- `reportType` — string **обязательный**. Тип отчёта `STOCK_HISTORY_REPORT_CSV` — Отчёт по статистике остатков. Данные отчёта обновляются 1 раз в 2 часа
+- `reportType` — string **обязательный**. Тип отчёта `STOCK_HISTORY_REPORT_CSV` — Отчёт по статистике остатков
 - `userReportName` — string. Название отчёта. Если не указано, сформируется автоматически
 - `params` — object **обязательный**. Параметры отчёта
   - `nmIDs` — array[integer<int64>]. Список артикулов WB для фильтрации
@@ -157,7 +159,7 @@ content_sha: 42fca1a48643f400
     - `field` — string (ordersCount, ordersSum, avgOrders, buyoutCount, buyoutSum, buyoutPercent, stockCount, stockSum, saleRate, avgStockTurnover, toClientCount, fromClientCount…) **обязательный**. Сортировка по полю: - `ordersCount` — Заказы, шт. - `ordersSum` — Заказы, сумма - `avgOrders` — Среднее количество заказов в день - `buyoutCount` — Выкупы, шт. - `buyoutSum` — Выкупы, сумма - `buyoutPercent` — Процент выкупа - `stockCount` — Остатки на текущий день, шт. - `stockSum` — Стоимость остатков на текущий день - `saleRate` — Оборачиваемость текущих остатков - `avgStockTurnover` — Оборачиваемость средних остатков - `toClientCount` — В пути к клиенту, шт. - `fromClientCount` — В пути от клиента, шт. - `minPrice` — Минимальная цена продавца со скидкой продавца (без учёта скидки WB Клуба) - `maxPrice` — Максимальная цена продавца со скидкой продавца (без учёта скидки WB Клуба) - `officeMissingTime` — Время отсутствия товара на складе - `lostOrdersCount` — Упущенные заказы, шт. - `lostOrdersSum` — Упущенные заказы, сумма - `lostBuyoutsCount` — Упущенные выкупы, шт. - `lostBuyoutsSum` — Упущенные выкупы, сумма
     - `mode` — string (asc, desc) **обязательный**. Порядок сортировки: - asc — по возрастанию - desc — по убыванию
 - `id` — string<uuid> **обязательный**. ID отчёта в UUID-формате. Генерируется продавцом самостоятельно
-- `reportType` — string **обязательный**. Тип отчёта `STOCK_HISTORY_DAILY_CSV` — Отчёт по истории остатков. Данные отчёта обновляются 1 раз в 2 часа
+- `reportType` — string **обязательный**. Тип отчёта `STOCK_HISTORY_DAILY_CSV` — Отчёт по истории остатков
 - `userReportName` — string. Название отчёта. Если не указано, сформируется автоматически
 - `params` — object **обязательный**. Параметры отчёта
   - `nmIds` — array[integer<int64>]. Список артикулов WB для фильтрации

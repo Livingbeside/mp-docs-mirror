@@ -2,14 +2,14 @@
 title: Настройки кабинета
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/businesses/getBusinessSettings.md"
-fetched_at: "2026-10-06T02:00:24Z"
-content_sha: bc44545cfbb04f0a
+fetched_at: "2026-10-08T02:11:51Z"
+content_sha: 4bc7811a466a3f33
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.63.0
+    content: Diplodoc Platform v5.63.1
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/businesses/getBusinessSettings.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/businesses/getBusinessSettings.md
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/businesses/getBusinessSettings.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21542491
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21542491
 
 <!-- source: ru/api/businesses/getBusinessSettings.md -->
 <div class="openapi">

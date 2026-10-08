@@ -2,14 +2,14 @@
 title: Изменение статуса одного заказа
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/orders/updateOrderStatus.md"
-fetched_at: "2026-10-07T02:21:10Z"
-content_sha: 47f34eaf968ec93e
+fetched_at: "2026-10-08T02:12:15Z"
+content_sha: 0d85b6b5240d14ab
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.63.0
+    content: Diplodoc Platform v5.63.1
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/orders/updateOrderStatus.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/orders/updateOrderStatus.md
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/orders/updateOrderStatus.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21542491
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21542491
 
 <!-- source: ru/api/orders/updateOrderStatus.md -->
 <div class="openapi">

@@ -2,14 +2,14 @@
 title: Удаление товаров из заказа
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/orders/updateOrderItems.md"
-fetched_at: "2026-10-06T02:00:50Z"
-content_sha: aaee0bf3e922fa75
+fetched_at: "2026-10-08T02:12:17Z"
+content_sha: 1c152ee8579196e5
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.63.0
+    content: Diplodoc Platform v5.63.1
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/orders/updateOrderItems.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/orders/updateOrderItems.md
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/orders/updateOrderItems.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21542491
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21542491
 
 <!-- source: ru/api/orders/updateOrderItems.md -->
 <div class="openapi">

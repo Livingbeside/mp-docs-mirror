@@ -2,14 +2,14 @@
 title: Все обновления
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/changelog/all.md"
-fetched_at: "2026-10-07T02:20:46Z"
-content_sha: 36c3c388ac8c8536
+fetched_at: "2026-10-08T02:11:49Z"
+content_sha: 723b8e950fce05a7
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.63.0
+    content: Diplodoc Platform v5.63.1
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/changelog/all.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/changelog/all.md
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/changelog/all.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21542491
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21542491
 
 # Все обновления
 

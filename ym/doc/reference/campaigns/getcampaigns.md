@@ -2,14 +2,14 @@
 title: Список магазинов
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/campaigns/getCampaigns.md"
-fetched_at: "2026-10-06T02:00:23Z"
-content_sha: 538592fecd2dd618
+fetched_at: "2026-10-08T02:11:50Z"
+content_sha: f8005b507aee8c13
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.63.0
+    content: Diplodoc Platform v5.63.1
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/campaigns/getCampaigns.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/campaigns/getCampaigns.md
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/campaigns/getCampaigns.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21542491
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21542491
 
 <!-- source: ru/api/campaigns/getCampaigns.md -->
 <div class="openapi">

@@ -2,14 +2,14 @@
 title: Получение временных интервалов для изменения заказа
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/orders/getOrderUpdateOptions.md"
-fetched_at: "2026-10-07T02:21:19Z"
-content_sha: 144760ec4d8e7279
+fetched_at: "2026-10-08T02:12:23Z"
+content_sha: 7e102536a6db692b
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.63.0
+    content: Diplodoc Platform v5.63.1
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/orders/getOrderUpdateOptions.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/orders/getOrderUpdateOptions.md
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/orders/getOrderUpdateOptions.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21542491
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21542491
 
 <!-- source: ru/api/orders/getOrderUpdateOptions.md -->
 <div class="openapi">
@@ -1072,7 +1072,7 @@ alternate:
         x-hidden: true
         $ref: '#/$defs/OrderUpdateOptionType'
     $defs:
-      /home/sandbox/.ya/build/build_root/cla9/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/orders/api/getOrderUpdateOptions.yaml#/OrderUpdateOptionType:
+      /home/sandbox/.ya/build/build_root/lmh0/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/orders/api/getOrderUpdateOptions.yaml#/OrderUpdateOptionType:
         description: |
           Тип изменения заказа:
   

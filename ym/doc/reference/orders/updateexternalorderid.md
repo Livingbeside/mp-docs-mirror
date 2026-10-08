@@ -2,14 +2,14 @@
 title: Передача внешнего идентификатора заказа
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/orders/updateExternalOrderId.md"
-fetched_at: "2026-10-06T02:00:47Z"
-content_sha: a75a414045734f94
+fetched_at: "2026-10-08T02:12:14Z"
+content_sha: 01aeb54e13a80857
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.63.0
+    content: Diplodoc Platform v5.63.1
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/orders/updateExternalOrderId.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/orders/updateExternalOrderId.md
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/orders/updateExternalOrderId.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21542491
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21542491
 
 <!-- source: ru/api/orders/updateExternalOrderId.md -->
 <div class="openapi">

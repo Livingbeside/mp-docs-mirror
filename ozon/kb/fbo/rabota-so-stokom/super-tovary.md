@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /fbo/rabota-so-stokom/super-tovary
 source: "https://seller-edu.ozon.ru/libra/fbo/rabota-so-stokom/super-tovary"
-updated: "2026-05-20 12:32:59"
+updated: "2026-10-07 10:34:08"
 doc_id: 8490
-fetched_at: "2026-08-28T12:11:15Z"
-content_sha: 9953297a0a753b74
+fetched_at: "2026-10-08T02:08:27Z"
+content_sha: 3995fd32f00dbc90
 ---
 
 # Super-товары
@@ -42,7 +42,7 @@ Super-поставки доступны только продавцам из Р�
 
 У Super-поставок будет:
 
-Скидка 100% на кросс-докинг — при отгрузке в ПВЗ, СЦ или на склад применим скидку на всю услугу, при [отгрузке курьеру](https://seller-edu.ozon.ru/fbo/process-details/vyezd-kurera-na-fbo) — только на доставку от точки отгрузки до склада размещения. Не распространяется на поставки в дарксторы Ozon fresh. [Где посмотреть предварительную стоимость кросс-докинга](https://seller-edu.ozon.ru/ru/fbo/process-details/fill-in-application-form#%D0%BA%D0%B0%D0%BA-%D0%BF%D0%BE%D1%81%D0%BC%D0%BE%D1%82%D1%80%D0%B5%D1%82%D1%8C-%D0%BF%D1%80%D0%B5%D0%B4%D0%B2%D0%B0%D1%80%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D1%83%D1%8E-%D1%81%D1%82%D0%BE%D0%B8%D0%BC%D0%BE%D1%81%D1%82%D1%8C-%D1%83%D1%81%D0%BB%D1%83%D0%B3)
+Скидка 100% на кросс-докинг — при отгрузке в ПВЗ, СЦ или на склад применим скидку на всю услугу, при [отгрузке курьеру](https://seller-edu.ozon.ru/fbo/process-details/vyezd-kurera-na-fbo) — только на доставку от точки отгрузки до склада размещения. Не распространяется на поставки в дарксторы Ozon fresh. [Где посмотреть предварительную стоимость кросс-докинга](https://seller-edu.ozon.ru/fbo/crossdoking/kross-doking#стоимость-услуги)
 
 Ускоренная приёмка на складе — после отгрузки товары попадут в продажу раньше остальных. Не распространяется на поставки в дарксторы Ozon fresh;
 

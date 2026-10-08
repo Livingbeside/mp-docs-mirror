@@ -2,14 +2,14 @@
 title: Информация о токене авторизации
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/auth/getAuthTokenInfo.md"
-fetched_at: "2026-10-06T02:01:47Z"
-content_sha: 4e1167b9d6892b78
+fetched_at: "2026-10-08T02:13:04Z"
+content_sha: 8dd5da0329aceb5e
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.63.0
+    content: Diplodoc Platform v5.63.1
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/auth/getAuthTokenInfo.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/auth/getAuthTokenInfo.md
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/auth/getAuthTokenInfo.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21542491
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21542491
 
 <!-- source: ru/api/auth/getAuthTokenInfo.md -->
 <div class="openapi">

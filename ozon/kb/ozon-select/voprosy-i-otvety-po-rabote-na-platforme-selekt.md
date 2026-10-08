@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /ozon-select/voprosy-i-otvety-po-rabote-na-platforme-selekt
 source: "https://seller-edu.ozon.ru/libra/ozon-select/voprosy-i-otvety-po-rabote-na-platforme-selekt"
-updated: "2026-07-27 06:50:33"
+updated: "2026-10-07 10:35:00"
 doc_id: 45552
-fetched_at: "2026-08-28T12:11:14Z"
-content_sha: 189243536f41fd78
+fetched_at: "2026-10-08T02:08:26Z"
+content_sha: 0b225f710876f45c
 ---
 
 # Вопросы и ответы по работе на платформе Селект
@@ -116,6 +116,6 @@ Ozon Селект — отдельное приложение от Ozon с ор�
 
 [Начало работы на платформе Селект](https://seller-edu.ozon.ru/ozon-select/nachalo-raboty-na-platforme-selekt) — чем отличается от обычного Ozon, какие преимущества даёт продавцам и покупателям, как получить доступ и настроить продажи на платформе.
 
-[Настройка и управление продажами на платформе Селект](https://seller-edu.ozon.ru/libra/libra/ozon-select/nastroika-i-upravlenie-prodajami-na-platforme-selekt)[ ](https://seller-edu.ozon.ru/fbo/rabota-so-stokom/uslugi-dlya-tovarov)— как настроить продажи, подключить услуги и продвижение, а также анализировать результаты продаж.
+[Настройка и управление продажами на платформе Селект](https://seller-edu.ozon.ru/ozon-select/nastroika-i-upravlenie-prodajami-na-platforme-selekt)[ ](https://seller-edu.ozon.ru/fbo/rabota-so-stokom/uslugi-dlya-tovarov)— как настроить продажи, подключить услуги и продвижение, а также анализировать результаты продаж.
 
 [Услуги для товаров ](https://seller-edu.ozon.ru/fbo/rabota-so-stokom/uslugi-dlya-tovarov)— как управлять дополнительными услугами.

@@ -2,14 +2,14 @@
 title: Получение уведомлений
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/push-notifications/reference/sendNotification.md"
-fetched_at: "2026-10-07T02:22:16Z"
-content_sha: 2fed5f44b6428190
+fetched_at: "2026-10-08T02:13:14Z"
+content_sha: 08038944b2d6a514
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.63.0
+    content: Diplodoc Platform v5.63.1
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/push-notifications/reference/sendNotification.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/push-notifications/reference/sendNotification.md
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/push-notifications/reference/sendNotification.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21542491
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21542491
 
 <!-- source: ru/pushapi-notification/notification/sendNotification.md -->
 <div class="openapi">

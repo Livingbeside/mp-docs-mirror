@@ -2337,7 +2337,7 @@
     },
     "/api/v1/acceptance/options": {
       "post": {
-        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод [временно отключён](https://dev.wildberries.ru/release-notes?id=570)\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 мин | 6 запросов | 10 сек | 6 запросов |\n| Сервисный | 1 мин | 6 запросов | 10 сек | 6 запросов |\n| Базовый с секретом | 1 мин | 6 запросов | 10 сек | 6 запросов |\n| Базовый | 1 ч | 2 запроса | 30 мин | 1 запрос |\n\n<hr>\n\nВ <a href='/sandbox'>песочнице</a> — максимум 1 запрос в секунду суммарно для всех методов.\n\n</div>\n",
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод [временно отключён](https://dev.wildberries.ru/release-notes?id=570)\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 мин | 6 запросов | 10 сек | 6 запросов |\n| Сервисный | 1 мин | 6 запросов | 10 сек | 6 запросов |\n| Базовый с секретом | 1 мин | 6 запросов | 10 сек | 6 запросов |\n| Базовый | 1 ч | 2 запроса | 30 мин | 1 запрос |\n\n<hr>\n\nВ песочнице — максимум 1 запрос в секунду суммарно для всех методов.\n\n</div>\n",
         "operationId": "postV1AcceptanceOptions",
         "parameters": [
           {
@@ -2929,7 +2929,7 @@
     },
     "/api/v1/warehouses": {
       "get": {
-        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод [временно отключён](https://dev.wildberries.ru/release-notes?id=570)\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 мин | 6 запросов | 10 сек | 6 запросов |\n| Сервисный | 1 мин | 6 запросов | 10 сек | 6 запросов |\n| Базовый с секретом | 1 мин | 6 запросов | 10 сек | 6 запросов |\n| Базовый | 12 ч | 1 запрос | 12 ч | 1 запрос |\n\n<hr>\n\nВ <a href='/sandbox'>песочнице</a> — максимум 1 запрос в секунду суммарно для всех методов.\n\n</div>\n",
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод [временно отключён](https://dev.wildberries.ru/release-notes?id=570)\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 мин | 6 запросов | 10 сек | 6 запросов |\n| Сервисный | 1 мин | 6 запросов | 10 сек | 6 запросов |\n| Базовый с секретом | 1 мин | 6 запросов | 10 сек | 6 запросов |\n| Базовый | 12 ч | 1 запрос | 12 ч | 1 запрос |\n\n<hr>\n\nВ песочнице — максимум 1 запрос в секунду суммарно для всех методов.\n\n</div>\n",
         "operationId": "getV1Warehouses",
         "responses": {
           "200": {

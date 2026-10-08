@@ -2,14 +2,14 @@
 title: Настройка интеграции с нуля на JavaScript
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/quick-start-js.md"
-fetched_at: "2026-10-06T02:00:07Z"
-content_sha: 1bc0705ec55e9ccd
+fetched_at: "2026-10-08T02:11:33Z"
+content_sha: 4f11f8f5b9392f2b
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.63.0
+    content: Diplodoc Platform v5.63.1
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/step-by-step/quick-start-js.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/quick-start-js.md
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/quick-start-js.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21542491
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21542491
 
 # Запуск интеграции на JavaScript
 

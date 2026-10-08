@@ -9,7 +9,7 @@ tags:
 spec_version: analytics
 source: "https://dev.wildberries.ru/docs/openapi/analytics"
 deprecated: false
-content_sha: 42b77c2b046d9df8
+content_sha: c6e58b3fa87909ea
 ---
 
 # Заказы и позиции по поисковым запросам товара
@@ -24,7 +24,7 @@ content_sha: 42b77c2b046d9df8
 
 Данные указаны в рамках периода для [запрошенного товара](./analytics#tag/searchQueriesForYourItems/operation/postV2SearchReportProductSearchTexts) и сгруппированы по дням. Максимальный период — 7 дней.
 
-Данные отчёта обновляются 1 раз в час.
+Данные отчёта обновляются 1 раз в 2 часа.
 
  Можно получить отчёт максимум за последние 365 дней с момента выполнения запроса
 

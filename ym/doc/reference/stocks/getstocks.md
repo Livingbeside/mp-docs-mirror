@@ -2,14 +2,14 @@
 title: Просмотр остатков и оборачиваемости
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/stocks/getStocks.md"
-fetched_at: "2026-10-06T02:00:36Z"
-content_sha: f6264e47a4d8d248
+fetched_at: "2026-10-08T02:12:04Z"
+content_sha: 66fbc29545037d03
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.63.0
+    content: Diplodoc Platform v5.63.1
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/stocks/getStocks.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/stocks/getStocks.md
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/stocks/getStocks.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21542491
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21542491
 
 <!-- source: ru/api/stocks/getStocks.md -->
 <div class="openapi">

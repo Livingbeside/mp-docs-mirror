@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /analytics-and-metrics/graphs/prodaji/grafiki
 source: "https://seller-edu.ozon.ru/libra/analytics-and-metrics/graphs/prodaji/grafiki"
-updated: "2026-09-07 12:40:02"
+updated: "2026-10-07 09:02:59"
 doc_id: 31975
-fetched_at: "2026-09-08T01:39:32Z"
-content_sha: 2b1390f3cf81530d
+fetched_at: "2026-10-08T02:08:28Z"
+content_sha: 30c73fc48e7a0ff5
 ---
 
 # Продажи моих товаров
@@ -16,21 +16,17 @@ _Главная / Аналитика / Аналитика продавца / П�
 
 Как анализировать продажи с помощью базовых и дополнительных настроек в обновлённой версии раздела «Продажи моих товаров»
 
-В этой статье рассказываем про работу в обновлённой версии раздела **[Продажи моих товаров](https://seller.ozon.ru/app/analytics/graphs)**. Узнать, как пользоваться предыдущей версией аналитики, можно в [статье](/analytics-and-metrics/graphs/prodaji/charts).
-
 В аналитике показываем динамику показателей одного или нескольких товаров — или целой категории за определённый период.
 
 С подпиской [Premium](https://seller-edu.ozon.ru/seller-rating/about-rating/premium-program?search=premium) и [Premium Lite](https://seller-edu.ozon.ru/seller-rating/about-rating/podpiska-premium-lite?search=%D0%BF%D0%BE%D0%B4%D0%BF%D0%B8%D1%81%D0%BA%D0%B0) доступ к расширенной аналитике есть только у сотрудников с ролью **Аналитик. **Назначить такую роль можно 2 сотрудникам — при этом у них должна быть любая другая роль, чтобы пользоваться личным кабинетом. [Как управлять ролями](https://seller-edu.ozon.ru/personal-account/user-management)
 
-Чтобы получить безлимитный доступ для всех сотрудников, оформите [подписку Premium Plus](https://seller-edu.ozon.ru/seller-rating/about-rating/subscription-premium-plus) или [Premium Pro](https://seller-edu.ozon.ru/seller-rating/about-rating/podpiska-premium-pro).
+Чтобы получить безлимитный доступ для всех сотрудников, оформите подписку [Premium Plus](https://seller-edu.ozon.ru/seller-rating/about-rating/subscription-premium-plus) или [Premium Pro](https://seller-edu.ozon.ru/seller-rating/about-rating/podpiska-premium-pro).
 
 # Где посмотреть аналитику
 
 В разделе **[Аналитика → Продажи моих товаров](https://seller.ozon.ru/app/analytics/graphs)**.
 
-Обновлённая версия раздела откроется по умолчанию. Чтобы открыть прошлую версию раздела, нажмите **Предыдущая версия**. Как пользоваться предыдущей версией аналитики.
-
-Базовые настройки аналитики доступны всем, а расширенные — по [Premium-подписке](https://seller-edu.ozon.ru/seller-rating/about-rating/premium-program).
+Базовые настройки аналитики доступны всем, а расширенные — по подписке [Premium](https://seller-edu.ozon.ru/seller-rating/about-rating/premium-program), [Premium Plus](https://seller-edu.ozon.ru/seller-rating/about-rating/subscription-premium-plus) или [Premium Pro](https://seller-edu.ozon.ru/seller-rating/about-rating/podpiska-premium-pro).
 
 Аналитика в приложении доступна только с одной из [подписок Premium](https://seller-edu.ozon.ru/seller-rating/about-rating).
 
@@ -394,8 +390,6 @@ ABC-анализ по сумме и количеству:
 # Видео «ABC-анализ: какие товары приносят прибыль»
 
 # Что ещё полезно знать об аналитике
-
-[Как пользоваться предыдущей версией аналитики](/analytics-and-metrics/graphs/prodaji/charts)
 
 [Инструменты аналитики](https://seller-edu.ozon.ru/analytics-and-metrics/instrymenti-analitiki)
 
