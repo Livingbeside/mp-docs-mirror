@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /ozon-logistika/dostavka-dlya-biznesa/rabota-s-ozon-dostavkoi-dlya-biznesa-cherez-api
 source: "https://seller-edu.ozon.ru/libra/ozon-logistika/dostavka-dlya-biznesa/rabota-s-ozon-dostavkoi-dlya-biznesa-cherez-api"
-updated: "2026-09-16 11:50:52"
+updated: "2026-10-08 15:15:30"
 doc_id: 80899
-fetched_at: "2026-09-17T02:05:04Z"
-content_sha: 2bffe657b7907383
+fetched_at: "2026-10-09T02:02:34Z"
+content_sha: ea676d938230035b
 ---
 
 # Работа с Ozon Доставкой для бизнеса через API
@@ -77,7 +77,7 @@ Ozon Delivery API даёт возможность встроить Ozon Дос�
 
 Перед созданием заказов через API необходимо [настроить метод доставки](https://seller-edu.ozon.ru/ozon-logistika/dostavka-dlya-biznesa/nastroika-metoda-dostavki) в личном кабинете — он определяет, откуда и каким способом вы будете передавать нам отправления. Пока для работы с API доступен только один способ передачи отправлений — самостоятельная отгрузка в пункт Ozon.
 
-## Рассчёт условий доставки
+## Расчёт условий доставки
 
 Перед созданием заказа рекомендуем выполнить предварительный расчёт. При расчёте учитываются:
 

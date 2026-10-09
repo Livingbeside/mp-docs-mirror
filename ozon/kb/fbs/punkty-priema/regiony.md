@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /fbs/punkty-priema/regiony
 source: "https://seller-edu.ozon.ru/libra/fbs/punkty-priema/regiony"
-updated: "2026-10-07 09:36:29"
+updated: "2026-10-08 10:29:37"
 doc_id: 826
-fetched_at: "2026-10-08T02:08:27Z"
-content_sha: 93cd8894944a3f39
+fetched_at: "2026-10-09T02:02:34Z"
+content_sha: 9191588c706f8a45
 ---
 
 # Пункты приёма и вывоза в других регионах
@@ -3135,6 +3135,8 @@ cкоростной режим — 5 км/ч;
 **Название в системе:** ПЕНЗА_ДО_ВОСТОЧНАЯ
 
 **Когда приедете:**
+
+пропускная система отсутствует;
 
 ворота для отгрузки №1–3;
 
