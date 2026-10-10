@@ -5,7 +5,7 @@ tag: Process
 group: Общее описание
 kind: guide
 source: "https://docs.ozon.ru/api/seller/"
-content_sha: 6c10fcdaff79c2ee
+content_sha: d3f7db365a6e6bcd
 ---
 
 # Порядок работы с методами
@@ -102,38 +102,33 @@ Ozon, товар не будет создан или обновлён.
 
 ## Информация о сертификатах
 
-- Получите список типов сертификатов: [/v1/product/certificate/types](#operation/ProductAPI_ProductCertificateTypes).
 - Получите список сертифицируемых категорий: [/v2/product/certification/list](#operation/ProductAPI_ProductCertificationList).
 - Получите список статусов сертификата: [/v1/product/certificate/status/list](#operation/CertificateStatusList).
-- Получите список типов соответствия требованиям: [/v2/product/certificate/accordance-types/list](#operation/CertificateAccordanceTypes).
-- Получите список причин отклонения сертификата: [v1/product/certificate/rejection_reasons/list](#operation/RejectionReasonsList).
-- Получите список сертификатов: [v1/product/certificate/list](#operation/CertificateList), используя фильтры:
+- Получите список причин отклонения сертификата: [/v1/product/certificate/rejection_reasons/list](#operation/RejectionReasonsList).
+- Получите список сертификатов: [/v1/product/certificate/list](#operation/CertificateList), используя фильтры:
  - тип сертификата `type` — значение `value` из ответа [/v1/product/certificate/types](#operation/ProductAPI_ProductCertificateTypes);
- - статус сертификата `status` — значение `code` из ответа [v1/product/certificate/status/list](#operation/CertificateStatusList).
+ - статус сертификата `status` — значение `code` из ответа [/v1/product/certificate/status/list](#operation/CertificateStatusList).
 
 ## Работа с товарами сертификата
 
 Чтобы привязать сертификат к товару:
-1. Получите список брендов, для которых требуется предоставить сертификат: [/v1/brand/company-certification/list](#operation/BrandAPI_BrandCompanyCertificationList).
- В ответе вернутся бренды, товары которых есть в вашем личном кабинете.
- Список брендов может изменяться, если Ozon получит требование от бренда предоставлять сертификат.
-2. Добавьте сертификаты для товаров: [/v1/product/certificate/create](#operation/ProductAPI_ProductCertificateCreate).
-3. Привяжите сертификат к товару: [/v1/product/certificate/bind](#operation/ProductAPI_ProductCertificateBind).
+1. Получите список категорий товаров, для которых требуется предоставить сертификат: [/v2/product/certification/list](#operation/ProductAPI_ProductCertificationList). 
+ Или получите список брендов, для которых требуется предоставить сертификат: [/v1/brand/company-certification/list](#operation/BrandAPI_BrandCompanyCertificationList).
+ Список брендов может меняться, если Ozon получит требование от бренда предоставлять сертификат.
+2. Получите список типов сертификатов, которые можно создать: [/v2/product/certification/options](#operation/ProductCertificateOptions).
+3. Получите возможные значения страны выдачи сертификата: [/v2/product/certification/params](#operation/ProductCertificateParams). В запросе передайте тип сертификата в параметре `params.certificate_type`. Выберите страну выдачи из ответа.
+4. Получите возможные значения стандарта сертификации: [/v2/product/certification/params](#operation/ProductCertificateParams). В запросе передайте тип сертификата в параметре `params.certificate_type` и страну выдачи в параметре `params.certificate_country`. Выберите стандарт сертификации из ответа.
+5. Получите обязательные параметры для создания сертификата: [/v2/product/certification/params](#operation/ProductCertificateParams). В запросе передайте:
+ - тип сертификата — `params.certificate_type`;
+ - страну выдачи — `params.certificate_country`;
+ - стандарт сертификации — `params.accordance_type`.
+6. Создайте сертификат: [/v2/product/certificate/create](#operation/ProductCertificateCreate).
+7. Привяжите сертификат к товару: [/v1/product/certificate/bind](#operation/ProductAPI_ProductCertificateBind).
 
-Чтобы посмотреть список товаров, привязанных к сертификату, воспользуйтесь методом [v1/product/certificate/products/list](#operation/CertificateProductsList).
-Если нужно получить список товаров с определённым статусом, в параметре `status` передайте значение `code` из ответа [v1/product/certificate/product_status/list](#operation/ProductStatusList).
+Чтобы посмотреть список товаров, которые привязаны к сертификату, используйте [/v1/product/certificate/products/list](#operation/CertificateProductsList).
+Если нужно получить список товаров с определённым статусом, в параметре `status` передайте значение `code` из ответа [/v1/product/certificate/product_status/list](#operation/ProductStatusList).
 
-Чтобы отвязать товар от сертификата, используйте [/v1/product/certificate/products/unbind](#operation/CertificateUnbind).
-
-## Управление состоянием сертификата
-
-Чтобы получить атрибуты для управления сертификатом:
-1. Получите список типов сертификатов: [/v1/product/certificate/types](#operation/ProductAPI_ProductCertificateTypes).
-2. Получите список типов соответствия требованиям: [/v2/product/certificate/accordance-types/list](#operation/CertificateAccordanceTypes).
-
-Для создания сертификата используйте [/v1/product/certificate/create](#operation/ProductAPI_ProductCertificateCreate), передав в запросе:
-- тип сертификата `type_code` — значение `value` из ответа [/v1/product/certificate/types](#operation/ProductAPI_ProductCertificateTypes);
-- тип соответствия требованиям `accordance_type_code` — значение `code` из ответа [/v2/product/certificate/accordance-types/list](#operation/CertificateAccordanceTypes).
+Чтобы отвязать товар от сертификата, используйте [/v1/product/certificate/unbind](#operation/CertificateUnbind).
 
 Чтобы удалить сертификат, используйте [/v1/product/certificate/delete](#operation/CertificateDelete).
 

@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /ozon-select/nastroika-i-upravlenie-prodajami-na-platforme-selekt
 source: "https://seller-edu.ozon.ru/libra/ozon-select/nastroika-i-upravlenie-prodajami-na-platforme-selekt"
-updated: "2026-09-08 14:07:35"
+updated: "2026-10-09 11:22:40"
 doc_id: 67009
-fetched_at: "2026-09-09T01:49:09Z"
-content_sha: eaae423fc6f45849
+fetched_at: "2026-10-10T02:17:49Z"
+content_sha: 062c3a1897658660
 ---
 
 # Настройка и управление продажами на платформе Селект
@@ -117,11 +117,11 @@ Ozon Fresh;
 
 Применяется при отгрузке со склада Ozon. Сотрудник выберет тип упаковки в зависимости от его категории и размера. Услуга доступна для товаров не тяжелее 10 килограмм и подходящих по габаритам:
 
-длина до 60 сантиметров;
+длина до 45 сантиметров;
 
-ширина до 40 сантиметров;
+ширина до 32 сантиметров;
 
-высота до 15 сантиметров.
+высота до 25 сантиметров.
 
 Дополнительная упаковка недоступна на складах:
 

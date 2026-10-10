@@ -2,9 +2,9 @@
 title: Документация Ozon Seller API — все методы
 api: ozon-seller
 spec_version: 2.1
-operations: 482
+operations: 483
 source: "https://docs.ozon.ru/api/seller/"
-content_sha: 4c7904466a95618f
+content_sha: ec8f60b3fb58f559
 ---
 
 # Документация Ozon Seller API
@@ -18,7 +18,7 @@ content_sha: 4c7904466a95618f
 
 > [Информационная платформа и сообщество разработчиков Ozon for dev](https://dev.ozon.ru/)
 
-Версия спеки: `2.1` · методов: **482** · разделов справки: **27**
+Версия спеки: `2.1` · методов: **483** · разделов справки: **27**
 
 Источник: https://docs.ozon.ru/api/seller/
 
@@ -364,6 +364,7 @@ content_sha: 4c7904466a95618f
 | `POST` | `/v1/supply-order/details` | FBO | [Получить подробную информацию о заявке на поставку](fbo/post-v1-supply-order-details.md) |
 | `POST` | `/v1/supply-order/pass/create` | FBO | [Указать данные о водителе и автомобиле](fbo/post-v1-supply-order-pass-create.md) |
 | `POST` | `/v1/supply-order/pass/status` | FBO | [Статус ввода данных о водителе и автомобиле](fbo/post-v1-supply-order-pass-status.md) |
+| `POST` | `/v1/supply-order/shipment-plan-compliance/get` | BetaMethod | [Получить информацию о выполнении плана отгрузок](betamethod/post-v1-supply-order-shipment-plan-compliance-get.md) |
 | `POST` | `/v1/supply-order/status/counter` | FBO | [Количество заявок по статусам](fbo/post-v1-supply-order-status-counter.md) |
 | `POST` | `/v1/supply-order/timeslot/get` | FBO | [Интервалы поставки](fbo/post-v1-supply-order-timeslot-get.md) |
 | `POST` | `/v1/supply-order/timeslot/status` | FBO | [Статус интервала поставки](fbo/post-v1-supply-order-timeslot-status.md) |
@@ -460,10 +461,10 @@ content_sha: 4c7904466a95618f
 | `POST` | `/v2/posting/fbs/product/cancel` | FBS | [Отменить отправку некоторых товаров в отправлении](fbs/post-v2-posting-fbs-product-cancel.md) |
 | `POST` | `/v2/posting/fbs/product/country/list` | FBS | [Список доступных стран-изготовителей](fbs/post-v2-posting-fbs-product-country-list.md) |
 | `POST` | `/v2/posting/fbs/product/country/set` | FBS | [Добавить информацию о стране-изготовителе товара](fbs/post-v2-posting-fbs-product-country-set.md) |
-| `POST` | `/v2/product/certificate/create` | BetaMethod | [Создать сертификат качества](betamethod/post-v2-product-certificate-create.md) |
+| `POST` | `/v2/product/certificate/create` | CertificationAPI | [Создать сертификат качества](certificationapi/post-v2-product-certificate-create.md) |
 | `POST` | `/v2/product/certification/list` | CertificationAPI | [Список сертифицируемых категорий](certificationapi/post-v2-product-certification-list.md) |
-| `POST` | `/v2/product/certification/options` | BetaMethod | [Получить параметры для создания сертификата качества](betamethod/post-v2-product-certification-options.md) |
-| `POST` | `/v2/product/certification/params` | BetaMethod | [Получить обязательные параметры для создания сертификата качества](betamethod/post-v2-product-certification-params.md) |
+| `POST` | `/v2/product/certification/options` | CertificationAPI | [Получить параметры для создания сертификата качества](certificationapi/post-v2-product-certification-options.md) |
+| `POST` | `/v2/product/certification/params` | CertificationAPI | [Получить обязательные параметры для создания сертификата качества](certificationapi/post-v2-product-certification-params.md) |
 | `POST` | `/v2/product/info/stocks-by-warehouse/fbs` | Prices&StocksAPI | [Получить информацию об остатках на складах продавца](prices-stocksapi/post-v2-product-info-stocks-by-warehouse-fbs.md) |
 | `POST` | `/v2/product/pictures/import` | ProductAPI | [Загрузить или обновить изображения товара](productapi/post-v2-product-pictures-import.md) |
 | `POST` | `/v2/product/pictures/info` | ProductAPI | [Получить изображения товаров](productapi/post-v2-product-pictures-info.md) |

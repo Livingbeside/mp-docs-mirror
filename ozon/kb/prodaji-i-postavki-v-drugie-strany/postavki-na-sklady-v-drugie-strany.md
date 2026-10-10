@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /prodaji-i-postavki-v-drugie-strany/postavki-na-sklady-v-drugie-strany
 source: "https://seller-edu.ozon.ru/libra/prodaji-i-postavki-v-drugie-strany/postavki-na-sklady-v-drugie-strany"
-updated: "2026-10-02 08:34:42"
+updated: "2026-10-09 09:58:18"
 doc_id: 12070
-fetched_at: "2026-10-03T02:16:52Z"
-content_sha: 2e7781f5e2153dfe
+fetched_at: "2026-10-10T02:17:49Z"
+content_sha: ead6d9114df03875
 ---
 
 # Поставки на склады в другие страны
@@ -76,7 +76,7 @@ _Главная / Продажи и поставки за рубеж_
 
 | **Точка приёма** | **Юр. адрес точки** |
 | --- | --- |
-| [МИНСК_МПСЦ_Кроссдокинг](https://docs.ozon.by/global/fulfillment/fbo/warehouses/fbo-warehouses-addresses/?country=BY&__rr=1&abt_att=1&origin_referer=jit.o3.ru#%D0%BC%D0%B8%D0%BD%D1%81%D0%BA-%D0%BC%D0%BF%D1%81%D1%86) | 193602362 ООО «ОЗОН Маркет Бел» Республика Беларусь, 223053, Минская область, Минский район, Боровлянский сельсовет, с/с Боровлянский, д. 58/10, пом. 24 (район деревни Королев Стан) |
+| [Минск Кросс-докинг](https://seller-edu.ozon.ru/fbo/warehouses/adresa-skladov-fbo#минск-кросс-докинг) | ООО «ОЗОН Маркет Бел», Республика Беларусь, 223053, Минская область, Минский район, Боровлянский сельсовет, с/с Боровлянский, д. 58/10, пом. 24 (район деревни Королев Стан) |
 | Любой партнёрский ПВЗ | [Посмотреть список пунктов приёма](https://docs.ozon.by/global/fulfillment/fbo/warehouses/fbo-warehouses-addresses/?country=BY#%d0%b0%d0%b3%d0%b5%d0%bd%d1%82%d1%81%d0%ba%d0%b8%d0%b5-%d0%bf%d1%83%d0%bd%d0%ba%d1%82%d1%8b-%d0%b2%d1%8b%d0%b4%d0%b0%d1%87%d0%b8-%d0%b7%d0%b0%d0%ba%d0%b0%d0%b7%d0%be%d0%b2) [Посмотреть на карте](/fbo/warehouses/adresa-skladov-fbo#%D0%BA%D0%B0%D1%80%D1%82%D0%B0-%D0%BF%D1%83%D0%BD%D0%BA%D1%82%D0%BE%D0%B2-%D1%81%D0%BA%D0%BB%D0%B0%D0%B4%D0%BE%D0%B2-%D0%B8-%D1%81%D0%BE%D1%80%D1%82%D0%B8%D1%80%D0%BE%D0%B2%D0%BE%D1%87%D0%BD%D1%8B%D1%85-%D1%86%D0%B5%D0%BD%D1%82%D1%80%D0%BE%D0%B2) |
 
 Для отгрузки на склад или в ПВЗ подготовьте:

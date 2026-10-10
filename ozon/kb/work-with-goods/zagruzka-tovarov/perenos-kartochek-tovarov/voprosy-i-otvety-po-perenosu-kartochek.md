@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /work-with-goods/zagruzka-tovarov/perenos-kartochek-tovarov/voprosy-i-otvety-po-perenosu-kartochek
 source: "https://seller-edu.ozon.ru/libra/work-with-goods/zagruzka-tovarov/perenos-kartochek-tovarov/voprosy-i-otvety-po-perenosu-kartochek"
-updated: "2026-09-08 16:40:40"
+updated: "2026-10-09 09:24:35"
 doc_id: 71602
-fetched_at: "2026-09-09T01:49:10Z"
-content_sha: 95f85f9cc345eabe
+fetched_at: "2026-10-10T02:17:50Z"
+content_sha: b6fbd46553348da6
 ---
 
 # Вопросы и ответы по переносу карточек
@@ -26,7 +26,9 @@ _Главная / Работа с товарами / Создание и ред�
 
 Если покупатель оформит возврат после переноса карточки, товар вернётся в кабинет, из которого переносили карточку. Даже если товара уже числится в новом кабинете.
 
-Прежнему владельцу карточки важно отслеживать такие возвраты в разделе **[FBO → Управление остатками](https://seller.ozon.ru/app/fbo-stocks/stocks-management)**, чтобы вовремя оформить вывоз со складов.
+Карточка в прежнем кабинете вернётся в продажу со всеми данными, но без рейтинга и отзывов. Это позволит снова продать возвращённый товар. Если продавать его не планируете, оформите вывоз со склада.
+
+Прежнему владельцу карточки важно отслеживать такие возвраты в разделе **[FBO → Управление остатками](https://seller.ozon.ru/app/fbo-stocks/stocks-management)**, чтобы вовремя продать товар или оформить вывоз со складов.
 
 # Почему после переноса карточек продажи могут снизиться
 

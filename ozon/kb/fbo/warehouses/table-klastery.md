@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /fbo/warehouses/table-klastery
 source: "https://seller-edu.ozon.ru/libra/fbo/warehouses/table-klastery"
-updated: "2026-09-28 09:17:51"
+updated: "2026-10-09 12:58:22"
 doc_id: 690
-fetched_at: "2026-09-29T02:06:17Z"
-content_sha: 9c14597004c8766b
+fetched_at: "2026-10-10T02:17:50Z"
+content_sha: e74065a354a7407b
 ---
 
 # Кластеры доставки
@@ -162,9 +162,13 @@ _Главная / Продажа со склада Ozon (FBO) / Склады, а
 
 Адыгейск РФЦ Ювелирный
 
-Южный Обход РФЦ Негабарит
+Краснодар-2 РФЦ
+
+Краснодар РФЦ Негабарит
 
 Новороссийск МРФЦ
+
+Южный Обход РФЦ Негабарит
 
 Красноярск
 

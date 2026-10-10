@@ -5,12 +5,27 @@ tag: News
 group: Обновления
 kind: changelog
 source: "https://docs.ozon.ru/api/seller/"
-content_sha: 6abb1bd16c259f48
+content_sha: d1fb631aed0cc2fb
 ---
 
 # Обновления
 
 Следите за обновлениями документации на платформе для разработчиков [Ozon for dev](https://dev.ozon.ru/).
+
+## 9 октября 2026
+
+| Метод | Изменение |
+| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [/v1/supply-order/shipment-plan-compliance/get](#operation/SupplyOrderShipmentPlanComplianceGet) | Добавили бета-метод для получения информации о выполнении плана отгрузок. |
+| [/v2/product/certification/options](#operation/ProductCertificateOptions)<br>[/v2/product/certification/params](#operation/ProductCertificateParams)<br>[/v2/product/certificate/create](#operation/ProductCertificateCreate) | Перенесли методы из бета-раздела в основной. |
+| [/v2/product/certification/options](#operation/ProductCertificateOptions) | Добавили параметр `option.variants` в ответ метода. |
+| [/v2/product/certification/params](#operation/ProductCertificateParams) | В запросе метода:обновили описание параметров `params.files`, `params.expired_date.date` и `params.certificate_country`;
+удалили значения `TECHNICAL_REGULATIONS_RF`, `TECHNICAL_REGULATIONS_CU` и `GOST` параметра `params.accordance_type`.
+Добавили параметр `params.variants` в ответ метода. |
+| [/v2/product/certificate/create](#operation/ProductCertificateCreate) | В запросе метода:обновили описание параметров `params.files`, `params.expired_date.date` и `params.certificate_country`;
+удалили значения `TECHNICAL_REGULATIONS_RF`, `TECHNICAL_REGULATIONS_CU` и `GOST` параметра `params.accordance_type`.
+Добавили параметр `params.number_mask` в ответ метода. |
+| — | В разделе [**Порядок работы с методами → Загрузите сертификаты качества**](#section/Zagruzite-sertifikaty-kachestva) обновили методы для работы с сертификатами качества. |
 
 ## 6 октября 2026
 
@@ -178,7 +193,7 @@ content_sha: 6abb1bd16c259f48
 ## 27 августа 2026
 
 | Метод | Изменение |
-|-------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| ----- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | — | Добавили раздел [**Пуш-уведомления → Мониторинг доступности уведомлений**](#tag/push_monitoring).<br> В раздел [**Пуш-уведомления → Как подключить**](#tag/push_start) добавили информацию о просмотре статуса и повторном подключении пуш-уведомлений. |
 
 ## 19 августа 2026

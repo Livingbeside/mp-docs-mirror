@@ -1,0 +1,101 @@
+---
+title: Получить обязательные параметры для создания сертификата качества
+api: ozon-seller
+method: POST
+path: /v2/product/certification/params
+operation_id: ProductCertificateParams
+tags:
+  - CertificationAPI
+spec_version: 2.1
+source: "https://docs.ozon.ru/api/seller/"
+deprecated: false
+content_sha: 4a3f2ce7a5cbb5ca
+---
+
+# Получить обязательные параметры для создания сертификата качества
+
+`POST /v2/product/certification/params`
+
+Используйте информацию о параметрах в запросе метода [/v2/product/certificate/create](#operation/ProductCertificateCreate).
+
+## Параметры
+
+| Имя | Где | Тип | Обяз. | Описание |
+|---|---|---|---|---|
+| `Client-Id` | header | string | да | Идентификатор клиента. |
+| `Api-Key` | header | string | да | API-ключ. |
+
+## Запрос
+
+**Тело запроса** (`application/json`):
+
+- `params` — object. Параметры для создания сертификата.
+  - `accordance_type` — string (UNKNOWN, EAEU, NATIONAL, CHEMICAL_PRODUCTS, SAFETY_DATA_SHEET, REJECTION_LETTER). Стандарт сертификации: - `UNKNOWN` — неизвестный; - `EAEU` — стандарт сертификации ЕАЭС; - `NATIONAL` — национальный стандарт сертификации; - `CHEMICAL_PRODUCTS` — паспорт безопасности химической продукции; - `SAFETY_DATA_SHEET` — паспорт безопасности; - `REJECTION_LETTER` — отказное письмо.
+  - `certificate_country` — string. Код страны, где выдали сертификат. Укажите код в верхнем регистре.
+  - `certificate_type` — string (UNKNOWN, CERTIFICATE_OF_CONFORMITY, DECLARATION, CERTIFICATE_OF_REGISTRATION, REGISTRATION_CERTIFICATE, REFUSED_LETTER, VETERINARY_COVER_DOCUMENT, SAFETY_DATA_SHEET). Тип сертификата: - `UNKNOWN` — неизвестный; - `CERTIFICATE_OF_CONFORMITY` — сертификат соответствия; - `DECLARATION` — декларация о соответствии; - `CERTIFICATE_OF_REGISTRATION` — свидетельство о государственной регистрации; - `REGISTRATION_CERTIFICATE` — регистрационное удостоверение; - `REFUSED_LETTER` — отказное письмо; - `VETERINARY_COVER_DOCUMENT` — ветеринарный сопроводительный документ; - `SAFETY_DATA_SHEET` — паспорт безопасности.
+  - `expired_date` — object. Информация о дате истечения сертификата.
+    - `date` — object. Дата истечения сертификата. Не раньше `params.issue_date`. Не передавайте параметр, если указали `infinite`.
+      - `day` — integer<int32>. День.
+      - `month` — integer<int32>. Месяц.
+      - `year` — integer<int32>. Год.
+    - `infinite` — boolean. `true`, если сертификат бессрочный. Не передавайте параметр, если указали `date`.
+  - `files` — array[object]. Файлы сертификата. Общий размер файлов — не больше 10 МБ.
+    - `file_content` — string **обязательный**. Файл в кодировке Base64.
+    - `name` — string **обязательный**. Название файла с расширением `.jpg`, `.jpeg`, `.png` или `.pdf`.
+  - `issue_date` — string<date-time>. Дата выдачи сертификата.
+  - `link_to_registry` — string. Ссылка на государственный реестр.
+  - `name` — string. Название сертификата.
+  - `number` — string. Номер сертификата.
+  - `product_type` — string (UNKNOWN, PRODUCTS_SUBJECT_TO_REGISTRATION, PESTICIDE, AGROCHEMICAL, FEED_ADDITIVE, MEDICAL_PRODUCT, MEDICINE, VETERINARY_DRUG, PHARMACEUTICAL_SUBSTANCE). Тип товаров: - `UNKNOWN` — неизвестный; - `PRODUCTS_SUBJECT_TO_REGISTRATION` — продукт, подлежащий государственной регистрации; - `PESTICIDE` — пестицид; - `AGROCHEMICAL` — агрохимикат; - `FEED_ADDITIVE` — кормовая добавка; - `MEDICAL_PRODUCT` — медицинский продукт; - `MEDICINE` — лекарственный препарат; - `VETERINARY_DRUG` — ветеринарный препарат; - `PHARMACEUTICAL_SUBSTANCE` — фармацевтический ингредиент.
+  - `skus` — array[string<int64>]. Список идентификаторов товара в системе Ozon — SKU.
+
+## Ответы
+
+**200** — Обязательные параметры для создания сертификата
+
+- `params` — array[object]. Параметры для создания сертификата.
+  - `name` — string. Название параметра сертификата: - `NAME` — название; - `CERTIFICATE_TYPE` — тип; - `NUMBER` — номер; - `FILES` — файл с сертификатом в кодировке Base64; - `CERTIFICATE_COUNTRY` — страна выдачи; - `ACCORDANCE_TYPE` — стандарт сертификации; - `SKUS` — список идентификаторов товара в системе Ozon, SKU; - `ISSUE_DATE` — дата выпуска; - `EXPIRED_DATE` — дата истечения; - `LINK_TO_REGISTRY` — ссылка на государственный реестр; - `PRODUCT_TYPE` — тип товаров; - `INFINITE` — бессрочность.
+  - `required` — boolean. `true`, если параметр обязательный.
+  - `variants` — array[object]. Список возможных значений.
+    - `name` — string. Название значения параметра.
+    - `value` — string. Значение параметра. Если `params.name = CERTIFICATE_COUNTRY`, может вернуться значение `NotEAEU`. Это значит, что в `params.certificate_country` можно передать код любой страны выдачи сертификата.
+
+**400** — Неверный параметр
+
+- `code` — integer<int32>. Код ошибки.
+- `details` — array[object]. Дополнительная информация об ошибке.
+  - `typeUrl` — string. Тип протокола передачи данных.
+  - `value` — string<byte>. Значение ошибки.
+- `message` — string. Описание ошибки.
+
+**403** — Доступ запрещён
+
+- `code` — integer<int32>. Код ошибки.
+- `details` — array[object]. Дополнительная информация об ошибке.
+  - `typeUrl` — string. Тип протокола передачи данных.
+  - `value` — string<byte>. Значение ошибки.
+- `message` — string. Описание ошибки.
+
+**404** — Ответ не найден
+
+- `code` — integer<int32>. Код ошибки.
+- `details` — array[object]. Дополнительная информация об ошибке.
+  - `typeUrl` — string. Тип протокола передачи данных.
+  - `value` — string<byte>. Значение ошибки.
+- `message` — string. Описание ошибки.
+
+**409** — Конфликт запроса
+
+- `code` — integer<int32>. Код ошибки.
+- `details` — array[object]. Дополнительная информация об ошибке.
+  - `typeUrl` — string. Тип протокола передачи данных.
+  - `value` — string<byte>. Значение ошибки.
+- `message` — string. Описание ошибки.
+
+**500** — Внутренняя ошибка сервера
+
+- `code` — integer<int32>. Код ошибки.
+- `details` — array[object]. Дополнительная информация об ошибке.
+  - `typeUrl` — string. Тип протокола передачи данных.
+  - `value` — string<byte>. Значение ошибки.
+- `message` — string. Описание ошибки.

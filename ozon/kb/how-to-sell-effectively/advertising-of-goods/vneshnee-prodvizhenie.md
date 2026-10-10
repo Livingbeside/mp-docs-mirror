@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /how-to-sell-effectively/advertising-of-goods/vneshnee-prodvizhenie
 source: "https://seller-edu.ozon.ru/libra/how-to-sell-effectively/advertising-of-goods/vneshnee-prodvizhenie"
-updated: "2026-10-05 10:32:26"
+updated: "2026-10-09 07:31:25"
 doc_id: 23579
-fetched_at: "2026-10-06T01:57:02Z"
-content_sha: c2a6d241e713d27d
+fetched_at: "2026-10-10T02:17:50Z"
+content_sha: 3d5d8e7861132e43
 ---
 
 # «Внешнее продвижение»
@@ -38,9 +38,9 @@ C 1 октября по 31 декабря 2026 года дарим [бонусы
 
 Блогеры будут публиковать посты в соцсетях ВКонтакте или MAX. Мы работаем с блогерами платформ Ozon Blogger и VK Adblogger.
 
-Можно ли выбрать платформу блогера и соцсеть для публикаций?
+Можно ли выбрать платформу блогера и соцсеть для публикаций во «Внешнем продвижении»?
 
-Нет, выбрать платформу и соцсеть не получится.
+Нет, выбрать платформу, блогеров и соцсеть во «Внешнем продвижении» не получится.
 
 # Из чего состоит плата за «Внешнее продвижение»
 

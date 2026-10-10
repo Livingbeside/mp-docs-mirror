@@ -205,6 +205,13 @@
           "message": "Не удалось обработать поставку. Убедитесь, что за ней закреплён хотя бы одно сборочное задание."
         }
       },
+      "SupplyIsProcessing": {
+        "description": "Поставка участвует в другом процессе, например, в неё добавляются сборочные задания. Повторите запрос позже",
+        "value": {
+          "code": "SupplyIsProcessing",
+          "message": "The supply is currently being processed. Please try again later"
+        }
+      },
       "SupplyNotClosed": {
         "value": {
           "code": "SupplyNotClosed",
@@ -2328,6 +2335,7 @@
             "items": {
               "type": "integer"
             },
+            "nullable": true,
             "type": "array"
           }
         },
@@ -4162,6 +4170,9 @@
                 "examples": {
                   "FailedToAddSupplyOrder": {
                     "$ref": "#/components/examples/FailedToAddSupplyOrder"
+                  },
+                  "SupplyIsProcessing": {
+                    "$ref": "#/components/examples/SupplyIsProcessing"
                   }
                 },
                 "schema": {
@@ -7036,6 +7047,9 @@
                 "examples": {
                   "SupplyHasOrders": {
                     "$ref": "#/components/examples/SupplyHasOrders"
+                  },
+                  "SupplyIsProcessing": {
+                    "$ref": "#/components/examples/SupplyIsProcessing"
                   }
                 },
                 "schema": {
