@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /vozvraty-i-vyvozy/vyvozy-so-stoka-i-postavki/spisannye-tovary
 source: "https://seller-edu.ozon.ru/libra/vozvraty-i-vyvozy/vyvozy-so-stoka-i-postavki/spisannye-tovary"
-updated: "2026-06-29 13:07:25"
+updated: "2026-10-09 12:13:40"
 doc_id: 14256
-fetched_at: "2026-08-28T12:11:15Z"
-content_sha: 0aec2a8705f85ccb
+fetched_at: "2026-10-11T02:13:25Z"
+content_sha: 9e6676fe0d135317
 ---
 
 # Списанные товары на FBO и FBS
@@ -185,7 +185,7 @@ _Главная / Клиентские возвраты и вывозы това
 
 Пока для брака и излишков с поставки можем показать причину «Вы заказали утилизацию».
 
-Если вы установили минимальную цену для [автовывывоза ](https://seller-edu.ozon.ru/fbo/vozvraty-utilizaciya-izlishki/vyvoz-tovarov-so-sklada-ozon/avtovyvoz-tovarov-so-sklada-ozon)излишков и брака со склада и поставки — всё, что дешевле, автоматически отправим на утилизацию. Будем учитывать цену, которую вы установили в карточке товара — без скидок и акций. Эту цену можно найти в разделе **[Цены и акции → Цены на товары](https://seller.ozon.ru/app/prices/control)**, в столбце **Ваша цена**.
+Если вы установили минимальную цену для [автовывывоза ](https://seller-edu.ozon.ru/fbo/vozvraty-utilizaciya-izlishki/vyvoz-tovarov-so-sklada-ozon/avtovyvoz-tovarov-so-sklada-ozon)излишков и брака со склада и поставки — всё, что дешевле, автоматически отправим на утилизацию. Будем учитывать цену, которую вы установили в карточке товара — без скидок и акций. Эту цену можно найти в разделе **[Цены и акции → Цены на товары](https://seller.ozon.ru/app/prices/control)**, в столбце **Предельная цена**.
 
 Для каких схем работы: FBO.
 
