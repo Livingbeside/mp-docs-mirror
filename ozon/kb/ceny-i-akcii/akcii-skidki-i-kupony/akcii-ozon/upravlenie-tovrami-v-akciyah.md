@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /ceny-i-akcii/akcii-skidki-i-kupony/akcii-ozon/upravlenie-tovrami-v-akciyah
 source: "https://seller-edu.ozon.ru/libra/ceny-i-akcii/akcii-skidki-i-kupony/akcii-ozon/upravlenie-tovrami-v-akciyah"
-updated: "2026-09-07 16:14:13"
+updated: "2026-10-12 11:03:46"
 doc_id: 18851
-fetched_at: "2026-09-08T01:39:32Z"
-content_sha: dffa7fd9b4efe6d4
+fetched_at: "2026-10-13T02:20:22Z"
+content_sha: 1c5ed6cf102f9fda
 ---
 
 # Управление товарами в акциях от Ozon
@@ -15,6 +15,16 @@ content_sha: dffa7fd9b4efe6d4
 _Главная / Цены и акции / Акции, скидки и промокоды / Акции от Ozon_
 
 Как управлять товарами в акциях, которые проводит Ozon
+
+**Обновляем подход к управлению товарами в акциях от Ozon**
+
+С 12 октября 2026 года добавление и удаление товаров из акций от Ozon типа «Эластичный бустинг» и «Скидка на сток» доступно через изменение предельной цены товара:
+
+установили предельную цену не выше требуемой цены акции — товар добавился в акцию;
+
+подняли предельную цену выше — товар вышел из акции.
+
+Привычные чекбоксы для удаления останутся только на вкладке «Участвуют с (дата)». Будем включать изменения постепенно в течение двух недель. [Подробнее об управлении товарами](https://seller-edu.ozon.ru/ceny-i-akcii/akcii-skidki-i-kupony/akcii-ozon/upravlenie-tovarami-v-akciyah-ot-ozon-cherez-predelnuu-cenu)
 
 Рассказываем, как менять список товаров и цены в акциях от Ozon через личный кабинет на сайте, в приложении или API. Подробнее о том, что это такое и какие типы акций бывают, можно узнать в [статье](/ceny-i-akcii/akcii-skidki-i-kupony/akcii-ozon/promo).
 

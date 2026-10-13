@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /contract-for-sellers/regulations-fbs-realfbs/reglament-prodaji-so-svoego-sklada
 source: "https://seller-edu.ozon.ru/libra/contract-for-sellers/regulations-fbs-realfbs/reglament-prodaji-so-svoego-sklada"
-updated: "2026-09-07 15:08:20"
+updated: "2026-10-12 09:04:18"
 doc_id: 676
-fetched_at: "2026-09-08T01:39:31Z"
-content_sha: 1ba0c14a4f91ee78
+fetched_at: "2026-10-13T02:20:21Z"
+content_sha: 5507392776367941
 ---
 
 # Регламент продавца, который продаёт со своего склада доставкой Ozon
@@ -107,7 +107,7 @@ _Главная / Договоры для Продавцов на платфор
 
 Товары можно распределить между несколькими отправлениями. Но один товар должен быть в одном отправлении.
 
-Упакуйте товар в соответствии с требованиями к упаковке из статьи [«Упаковка товаров на FBS». ](/libra/fbs/ozon-logistika/trebovaniya-k-upakovke)Нельзя использовать красный скотч.
+Упакуйте товар в соответствии с требованиями к упаковке из статьи [«Упаковка товаров на FBS». ](https://seller-edu.ozon.ru/fbs/ozon-logistika/trebovaniya-k-upakovke)Нельзя использовать красный скотч.
 
 Упаковка не должна превышать [максимальные размеры](/seller-edu/fbs/ozon-logistika/trebovaniya-k-upakovke).
 
@@ -115,7 +115,7 @@ _Главная / Договоры для Продавцов на платфор
 
 Как упаковать КГТ в заказ, если товар состоит из нескольких составных частей:
 
-Упакуйте товар в соответствии с требованиями к упаковке из статьи [«Упаковка товаров на FBS». ](/libra/fbs/ozon-logistika/trebovaniya-k-upakovke)Нельзя использовать красный скотч.
+Упакуйте товар в соответствии с требованиями к упаковке из статьи [«Упаковка товаров на FBS». ](https://seller-edu.ozon.ru/fbs/ozon-logistika/trebovaniya-k-upakovke)Нельзя использовать красный скотч.
 
 Упаковка не должна превышать [максимальные размеры](/seller-edu/fbs/ozon-logistika/trebovaniya-k-upakovke).
 

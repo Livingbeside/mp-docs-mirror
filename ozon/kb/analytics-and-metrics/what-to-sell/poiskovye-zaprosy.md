@@ -4,21 +4,17 @@ marketplace: ozon
 kind: article
 path: /analytics-and-metrics/what-to-sell/poiskovye-zaprosy
 source: "https://seller-edu.ozon.ru/libra/analytics-and-metrics/what-to-sell/poiskovye-zaprosy"
-updated: "2026-09-07 12:55:27"
+updated: "2026-10-12 14:35:41"
 doc_id: 947
-fetched_at: "2026-09-08T01:39:32Z"
-content_sha: 84865cae4cbd617c
+fetched_at: "2026-10-13T02:20:22Z"
+content_sha: c8f31aa7608d28ff
 ---
 
 # Поисковые запросы
 
-_Главная / Аналитика / Что продавать на Ozon — только для Premium-продавцов_
+_Главная / Аналитика / Расширение ассортимента_
 
 Как узнать, какие товары чаще всего ищут на Ozon и использовать эту информацию для изменения ассортимента
-
-Аналитика по поисковым запросам доступна по **[Premium-подписке](/seller-rating/about-rating/premium-program)**** **для двух сотрудников с ролью «Аналитик». Получить безлимитный доступ для всех сотрудников можно по** ****[подписке Premium Plus](/seller-rating/about-rating/subscription-premium-plus)**.
-
-**[Как управлять ролями](/personal-account/user-management)**
 
 # Что показывает инструмент Поисковые запросы
 
@@ -48,7 +44,7 @@ _Главная / Аналитика / Что продавать на Ozon — �
 
 **Выбрать группу запросов **— выберите одну из групп, например, «дом и сад» или «электроника». Покажем популярные запросы в этой группе.
 
-С подпиской **[Premium Plus](/seller-rating/about-rating/subscription-premium-plus)**** **можно:
+С подпиской **[Premium Plus](/seller-rating/about-rating/subscription-premium-plus)**** **и **[Premium Pro](https://seller-edu.ozon.ru/libra/seller-rating/podpiska-premium-pro)** можно:
 
 **Выбрать период для показа статистики **— последние 28 дней или календарный месяц в течение последнего года;
 

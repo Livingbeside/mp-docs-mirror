@@ -6,13 +6,13 @@ path: /analytics-and-metrics/what-to-sell/zakupki
 source: "https://seller-edu.ozon.ru/libra/analytics-and-metrics/what-to-sell/zakupki"
 updated: "2026-02-20 21:11:56"
 doc_id: 34190
-fetched_at: "2026-08-28T12:11:15Z"
-content_sha: 975b265eecd30f88
+fetched_at: "2026-10-13T02:20:22Z"
+content_sha: 7bc90d48261fd8d5
 ---
 
 # Поставщики
 
-_Главная / Аналитика / Что продавать на Ozon — только для Premium-продавцов_
+_Главная / Аналитика / Расширение ассортимента_
 
 В разделе **[Аналитика](https://seller.ozon.ru/app/purchases/suppliers)**[ →](https://seller.ozon.ru/app/purchases/suppliers)**[ Поставщики](https://seller.ozon.ru/app/purchases/suppliers)** собираем компании, у которых можно закупать товары. Вы можете подобрать поставщика и узнать его контакты.
 

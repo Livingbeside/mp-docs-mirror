@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /fbo/process-details/zayavka-v-prilojenii-ozon-seller
 source: "https://seller-edu.ozon.ru/libra/fbo/process-details/zayavka-v-prilojenii-ozon-seller"
-updated: "2026-10-07 12:15:22.494196"
+updated: "2026-10-12 10:05:14.078033"
 doc_id: 60787
-fetched_at: "2026-10-08T02:08:27Z"
-content_sha: 492613132d463b06
+fetched_at: "2026-10-13T02:20:21Z"
+content_sha: e6a5d74b5c558858
 ---
 
 # Заявка на поставку в приложении Ozon Seller
@@ -52,4 +52,4 @@ _Главная / Продажа со склада Ozon (FBO) / Заявки н�
 7. [Отправьте товары](/fbo/gruzomesta-i-podgotovka-k-otgruzke/bring-products-to-warehouse) на точку отгрузки.
 8. [Отслеживайте ход приёмки.](/fbo/gruzomesta-i-podgotovka-k-otgruzke/check-supply-status)
 
-Также вы можете[ отредактировать или удалить](/libra/fbo/process-details/check-supply-status) заявку.
+Также вы можете[ отредактировать или удалить](https://seller-edu.ozon.ru/fbo/process-details/otmenit-zayavku-na-postavku) заявку.

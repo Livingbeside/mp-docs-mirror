@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /fbo/process-details/sozdanie-zayavki-na-postavku
 source: "https://seller-edu.ozon.ru/libra/fbo/process-details/sozdanie-zayavki-na-postavku"
-updated: "2026-07-21 14:37:39"
+updated: "2026-10-12 10:03:15"
 doc_id: 28342
-fetched_at: "2026-08-28T12:11:15Z"
-content_sha: 31c04ea1c589fbf0
+fetched_at: "2026-10-13T02:20:21Z"
+content_sha: a0623fa9c11b7111
 ---
 
 # Создание заявки на поставку
@@ -196,4 +196,4 @@ _Главная / Продажа со склада Ozon (FBO) / Заявки н�
 7. [Отправьте товары](/fbo/gruzomesta-i-podgotovka-k-otgruzke/bring-products-to-warehouse) на точку отгрузки.
 8. [Отслеживайте ход приёмки.](/fbo/gruzomesta-i-podgotovka-k-otgruzke/check-supply-status)
 
-Также вы можете[ отредактировать или удалить](/libra/fbo/process-details/check-supply-status) заявку.
+Также вы можете[ отредактировать или удалить](https://seller-edu.ozon.ru/fbo/process-details/otmenit-zayavku-na-postavku) заявку.

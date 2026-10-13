@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /fbo/process-details/chto-nujno-znat-o-zayavkah-na-postavku
 source: "https://seller-edu.ozon.ru/libra/fbo/process-details/chto-nujno-znat-o-zayavkah-na-postavku"
-updated: "2026-10-02 11:34:18"
+updated: "2026-10-12 09:37:45"
 doc_id: 69602
-fetched_at: "2026-10-03T02:16:52Z"
-content_sha: 4b76d2f2f5fa034a
+fetched_at: "2026-10-13T02:20:21Z"
+content_sha: e07bca003e494252
 ---
 
 # Что нужно знать о заявках на поставку
@@ -20,7 +20,7 @@ _Главная / Продажа со склада Ozon (FBO) / Заявки н�
 
 Чтобы работать по схеме FBO, нужно поставить товары на наши склады — для этого нужна заявка на поставку.
 
-[Как создать заявку на поставку в личном кабинете на сайте](/libra/fbo/process-details/sozdanie-zayavki-na-postavku)
+[Как создать заявку на поставку в личном кабинете на сайте](https://seller-edu.ozon.ru/fbo/process-details/sozdanie-zayavki-na-postavku)
 
 [Как создать заявку в приложении Ozon Seller](/libra/fbo/process-details/zayavka-v-prilojenii-ozon-seller)
 
@@ -74,7 +74,7 @@ _Главная / Продажа со склада Ozon (FBO) / Заявки н�
 
 Откройте инструкцию:
 
-[Обычная заявка на поставку](/libra/fbo/process-details/sozdanie-zayavki-na-postavku)
+[Обычная заявка на поставку](https://seller-edu.ozon.ru/fbo/process-details/sozdanie-zayavki-na-postavku)
 
 [Заявка на поставку в приложении ](/libra/fbo/process-details/zayavka-v-prilojenii-ozon-seller)**[Ozon Seller](/libra/fbo/process-details/zayavka-v-prilojenii-ozon-seller)**
 

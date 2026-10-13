@@ -6,8 +6,8 @@ path: /analytics-and-metrics
 source: "https://seller-edu.ozon.ru/libra/analytics-and-metrics"
 updated: "2026-04-20 11:56:17.314384"
 doc_id: 930
-fetched_at: "2026-08-28T12:01:50Z"
-content_sha: 92fc7d8746ff561f
+fetched_at: "2026-10-13T02:20:21Z"
+content_sha: 4d3826cb6ca304bb
 ---
 
 # Аналитика
@@ -43,8 +43,8 @@ _Главная_
 ## Вложенные разделы
 - [Аналитика продавца](https://seller-edu.ozon.ru/libra/analytics-and-metrics/graphs)
 - [Отчёты](https://seller-edu.ozon.ru/libra/analytics-and-metrics/fulfillment-reports)
-- [Что продавать на Ozon — только для Premium-продавцов](https://seller-edu.ozon.ru/libra/analytics-and-metrics/what-to-sell)
-- [Аналитика площадки — только для Premium-продавцов](https://seller-edu.ozon.ru/libra/analytics-and-metrics/analytics-for-premium)
+- [Расширение ассортимента](https://seller-edu.ozon.ru/libra/analytics-and-metrics/what-to-sell)
+- [Аналитика конкурентов](https://seller-edu.ozon.ru/libra/analytics-and-metrics/analytics-for-premium)
 - [Качество работы](https://seller-edu.ozon.ru/libra/analytics-and-metrics/metrics)
 - [Инструменты аналитики](https://seller-edu.ozon.ru/libra/analytics-and-metrics/instrymenti-analitiki)
 - [Вопросы и ответы об аналитике](https://seller-edu.ozon.ru/libra/analytics-and-metrics/faq-analytic)

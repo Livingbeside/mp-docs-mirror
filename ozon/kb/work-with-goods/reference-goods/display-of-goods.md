@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /work-with-goods/reference-goods/display-of-goods
 source: "https://seller-edu.ozon.ru/libra/work-with-goods/reference-goods/display-of-goods"
-updated: "2026-09-07 13:11:33"
+updated: "2026-10-12 10:33:15"
 doc_id: 1137
-fetched_at: "2026-09-08T01:39:31Z"
-content_sha: 2a3003fb9b414faf
+fetched_at: "2026-10-13T02:20:21Z"
+content_sha: fafd09975c776a9d
 ---
 
 # Отображение товаров на Ozon
@@ -36,7 +36,7 @@ _Главная / Работа с товарами / Как создать пр�
 
 **Название товара **— формируется [шаблонизатором](/work-with-goods/trebovaniya-k-kartochkam-tovarov/product-information/nazvanie-tovara#%D0%BA%D0%B0%D0%BA-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%D0%B5%D1%82-%D1%88%D0%B0%D0%B1%D0%BB%D0%BE%D0%BD%D0%B8%D0%B7%D0%B0%D1%82%D0%BE%D1%80-%D0%BD%D0%B0%D0%B7%D0%B2%D0%B0%D0%BD%D0%B8%D0%B8) или указывается вами вручную.
 
-**Логотип бренда** — покажем, если у бренда подключено [продвижение](/how-to-sell-effectively/advertising-of-goods/promoted-brands). Добавим рядом с логотипом отметку** Бренд проверен **или бейдж «Бренд проверен». [Подробнее о том, как подключить услугу](/obsolete/obespechitelnyi-platj)
+**Логотип бренда** — покажем, если у бренда подключено [продвижение](/how-to-sell-effectively/advertising-of-goods/promoted-brands). Добавим рядом с логотипом отметку** Бренд проверен **или бейдж «Бренд проверен». [Подробнее о том, как подключить услугу](https://seller-edu.ozon.ru/policies/documents-violations/podtverjdenie-originalnosti/usluga-beidj-original#как-подключить-услугу-«беидж-бренд-проверен-»)
 
 **Информация об уценке **— отметим, если есть [уценённый товар](/work-with-goods/ucenka). Покупатель может открыть карточку такой позиции, увидеть фото и цену, а также узнать причины уценки.
 

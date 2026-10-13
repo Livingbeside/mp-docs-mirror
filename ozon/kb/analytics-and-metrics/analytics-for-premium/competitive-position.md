@@ -4,15 +4,15 @@ marketplace: ozon
 kind: article
 path: /analytics-and-metrics/analytics-for-premium/competitive-position
 source: "https://seller-edu.ozon.ru/libra/analytics-and-metrics/analytics-for-premium/competitive-position"
-updated: "2026-02-23 21:47:29"
+updated: "2026-09-28 13:07:45"
 doc_id: 944
-fetched_at: "2026-08-28T12:11:15Z"
-content_sha: 2863af85777fd76c
+fetched_at: "2026-10-13T02:20:22Z"
+content_sha: 5e076b40ca915a7a
 ---
 
 # Конкуренты
 
-_Главная / Аналитика / Аналитика площадки — только для Premium-продавцов_
+_Главная / Аналитика / Аналитика конкурентов_
 
 Как узнать своё место по продажам относительно других продавцов в конкретной категории
 

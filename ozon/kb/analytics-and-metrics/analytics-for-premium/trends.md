@@ -4,15 +4,15 @@ marketplace: ozon
 kind: article
 path: /analytics-and-metrics/analytics-for-premium/trends
 source: "https://seller-edu.ozon.ru/libra/analytics-and-metrics/analytics-for-premium/trends"
-updated: "2026-09-07 12:53:11"
+updated: "2026-09-30 10:25:49"
 doc_id: 949
-fetched_at: "2026-09-08T01:39:32Z"
-content_sha: 5bd144b09be8111c
+fetched_at: "2026-10-13T02:20:22Z"
+content_sha: ea76f87f9c1931d1
 ---
 
 # Тренды
 
-_Главная / Аналитика / Аналитика площадки — только для Premium-продавцов_
+_Главная / Аналитика / Аналитика конкурентов_
 
 Как узнать, какая у вас доля и динамика продаж в категории, какие товары и категории покупатели чаще ищут и заказывают на Ozon
 

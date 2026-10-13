@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /contract-for-sellers/regulations-fbo/reglament-postavok-na-fulfilment
 source: "https://seller-edu.ozon.ru/libra/contract-for-sellers/regulations-fbo/reglament-postavok-na-fulfilment"
-updated: "2026-10-07 11:59:37"
+updated: "2026-10-12 09:34:49"
 doc_id: 672
-fetched_at: "2026-10-08T02:08:27Z"
-content_sha: e7a2d684ca0623ec
+fetched_at: "2026-10-13T02:20:21Z"
+content_sha: 6b7c06d32a9c5f2d
 ---
 
 # Регламент партнёра по поставкам товаров на фулфилмент-центры Ozon
@@ -36,7 +36,7 @@ _Главная / Договоры для Продавцов на платфор
 
 # 1. Подготовка к поставке и правила оформления документов
 
-## 1.1. Правила поставок на на фулфилмент Ozon
+## 1.1. Правила поставок на фулфилмент Ozon
 
 Действует с 7 октября 2026 года.
 

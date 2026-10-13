@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /api-ozon/synchrozon
 source: "https://seller-edu.ozon.ru/libra/api-ozon/synchrozon"
-updated: "2026-10-05 08:51:45"
+updated: "2026-10-12 14:09:31"
 doc_id: 982
-fetched_at: "2026-10-06T01:57:01Z"
-content_sha: 01295c9e98b5c3b4
+fetched_at: "2026-10-13T02:20:21Z"
+content_sha: e50c47ef12b494c7
 ---
 
 # Synchrozon для 1C
@@ -71,7 +71,7 @@ Synchrozon — рабочее место внутри системы 1С, кот
 
 Скачать мастер установки — [SynchrozonInstallAndUpdate (ZIP)](https://cdn.ozone.ru/s3/ozon-disk-api/Seller-edu/files/api-ozon/synchrozon/SynchrozonInstallAndUpdate-0-2-11_1732270220.zip).
 
-Актуальная версия модуля 0.2.21 от 02.10.2026. Посмотреть информацию о последних изменениях в модуле Synchrozon для [1С УНФ](/api-ozon/versii-synchrozon) и [1С УТ/КА/ERP](/api-ozon/versii-synchrozon-erp).
+Актуальная версия модуля 0.3.0 от 12.10.2026. Посмотреть информацию о последних изменениях в модуле Synchrozon для [1С УНФ](/api-ozon/versii-synchrozon) и [1С УТ/КА/ERP](/api-ozon/versii-synchrozon-erp).
 
 # Как установить Synchrozon
 

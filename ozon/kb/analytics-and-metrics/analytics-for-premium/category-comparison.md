@@ -6,13 +6,13 @@ path: /analytics-and-metrics/analytics-for-premium/category-comparison
 source: "https://seller-edu.ozon.ru/libra/analytics-and-metrics/analytics-for-premium/category-comparison"
 updated: "2026-09-09 13:54:58"
 doc_id: 13439
-fetched_at: "2026-09-10T01:52:28Z"
-content_sha: 6a85f3487ae51da5
+fetched_at: "2026-10-13T02:20:22Z"
+content_sha: 5c1f0420c44b617d
 ---
 
 # Категории
 
-_Главная / Аналитика / Аналитика площадки — только для Premium-продавцов_
+_Главная / Аналитика / Аналитика конкурентов_
 
 Как анализировать товары в категории, выбирать популярные для продажи, оценить конкуренцию с помощью бесплатного отчёта для всех продавцов
 

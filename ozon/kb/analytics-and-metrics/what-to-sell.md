@@ -1,21 +1,20 @@
 ---
-title: Что продавать на Ozon — только для Premium-продавцов
+title: Расширение ассортимента
 marketplace: ozon
 kind: section
 path: /analytics-and-metrics/what-to-sell
 source: "https://seller-edu.ozon.ru/libra/analytics-and-metrics/what-to-sell"
-updated: "2022-12-05 13:34:18.923403"
+updated: "2026-10-12 14:36:37"
 doc_id: 943
-fetched_at: "2026-09-05T02:12:29Z"
-content_sha: 226db0b98465d7b4
+fetched_at: "2026-10-13T02:20:21Z"
+content_sha: a5d4379a8bc5053f
 ---
 
-# Что продавать на Ozon — только для Premium-продавцов
+# Расширение ассортимента
 
 _Главная / Аналитика_
 
 ## Вложенные разделы
-- [Товары на Ozon — для всех продавцов](https://seller-edu.ozon.ru/libra/analytics-and-metrics/what-to-sell/ozon-bestsellers)
 - [Поисковые запросы](https://seller-edu.ozon.ru/libra/analytics-and-metrics/what-to-sell/poiskovye-zaprosy)
 - [Недостающие товары](https://seller-edu.ozon.ru/libra/analytics-and-metrics/what-to-sell/market-bestsellers)
 - [Поставщики](https://seller-edu.ozon.ru/libra/analytics-and-metrics/what-to-sell/zakupki)

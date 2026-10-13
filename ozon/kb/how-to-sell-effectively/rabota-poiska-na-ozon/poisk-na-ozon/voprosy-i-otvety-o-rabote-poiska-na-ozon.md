@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /how-to-sell-effectively/rabota-poiska-na-ozon/poisk-na-ozon/voprosy-i-otvety-o-rabote-poiska-na-ozon
 source: "https://seller-edu.ozon.ru/libra/how-to-sell-effectively/rabota-poiska-na-ozon/poisk-na-ozon/voprosy-i-otvety-o-rabote-poiska-na-ozon"
-updated: "2026-10-07 10:36:06"
+updated: "2026-10-12 08:58:56"
 doc_id: 34261
-fetched_at: "2026-10-08T02:08:28Z"
-content_sha: 27560d4110f044e7
+fetched_at: "2026-10-13T02:20:22Z"
+content_sha: d6654424f167168d
 ---
 
 # Вопросы и ответы о работе поиска на Ozon
@@ -32,7 +32,7 @@ _Главная / Продвижение / Работа поиска и реко
 
 Почему мой товар не попадает в выдачу по тем запросам, по которым я ожидаю его там увидеть?
 
-Поисковая выдача может содержать сотни товаров, и ваш товар может находиться в любом месте этого списка. Проверить, по какому запросу покупатели находят товар, можно с помощью инструмента **[Где товар в поиске](https://seller-edu.ozon.ru/analytics-and-metrics/graphs/vidimost-v-poiske/analitika-po-zaprosu#как-проверить-видимость-товаров)**.
+Поисковая выдача может содержать сотни товаров, и ваш товар может находиться в любом месте этого списка. Проверить, по какому запросу покупатели находят товар, можно с помощью инструмента **[Видимость в поиске](https://seller-edu.ozon.ru/analytics-and-metrics/graphs/vidimost-v-poiske/analitika-po-zaprosu#как-проверить-видимость-товаров)**.
 
 А понять, почему товар занимает конкретную позицию в поисковой выдаче, поможет инструмент **[Что влияет на место в поиске](https://seller-edu.ozon.ru/analytics-and-metrics/graphs/explainer)**.
 
@@ -42,6 +42,6 @@ _Главная / Продвижение / Работа поиска и реко
 
 Как посмотреть, какие поисковые запросы приносят больше продаж и просмотров?
 
-Посмотреть, по каким запросам чаще заказывали товар, можно с помощью инструмента **[Запросы моего товара](https://seller-edu.ozon.ru/analytics-and-metrics/graphs/analitika-po-zaprosu)**.
+Посмотреть, по каким запросам чаще заказывали товар, можно с помощью инструмента **[Видимость в поиске](https://seller-edu.ozon.ru/analytics-and-metrics/graphs/vidimost-v-poiske/analitika-po-zaprosu#как-проверить-видимость-товаров)**.
 
 # Что ещё полезно знать

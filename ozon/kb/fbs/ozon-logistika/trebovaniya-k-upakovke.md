@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /fbs/ozon-logistika/trebovaniya-k-upakovke
 source: "https://seller-edu.ozon.ru/libra/fbs/ozon-logistika/trebovaniya-k-upakovke"
-updated: "2026-09-07 14:57:37"
+updated: "2026-10-12 09:30:58"
 doc_id: 821
-fetched_at: "2026-09-08T01:39:31Z"
-content_sha: 4357ced642155921
+fetched_at: "2026-10-13T02:20:21Z"
+content_sha: 9cb859fedaad3bcb
 ---
 
 # Упаковка товаров на FBS
@@ -376,4 +376,4 @@ _Главная / Продажа со своего склада (FBS) / Отгр
 
 | **О чём курс** | **Ссылка** |
 | --- | --- |
-| Как правильно упаковать товар, чтобы он не повредился в пути до покупателя | [Упаковка товаров для Ozon](/courses/program/106659-kak-upakovat-i-peredat-tovar-ozon) |
+| Как правильно упаковать товар, чтобы он не повредился в пути до покупателя | [Упаковка товаров для Ozon](https://seller-edu.ozon.ru/courses/program/106659-kak-upakovat-i-peredat-tovar-ozon) |
