@@ -6,13 +6,13 @@ path: /analytics-and-metrics/what-to-sell/market-bestsellers
 source: "https://seller-edu.ozon.ru/libra/analytics-and-metrics/what-to-sell/market-bestsellers"
 updated: "2026-02-20 21:07:37"
 doc_id: 945
-fetched_at: "2026-08-28T12:11:15Z"
-content_sha: c3f3ddfadfd36e3b
+fetched_at: "2026-10-14T01:48:44Z"
+content_sha: 83fe06a0cd39cff5
 ---
 
 # Недостающие товары
 
-_Главная / Аналитика / Что продавать на Ozon — только для Premium-продавцов_
+_Главная / Аналитика / Расширение ассортимента_
 
 Как найти востребованные товары на российском рынке за предыдущий месяц, которых нет на Ozon
 

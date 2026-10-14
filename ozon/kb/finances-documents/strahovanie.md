@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /finances-documents/strahovanie
 source: "https://seller-edu.ozon.ru/libra/finances-documents/strahovanie"
-updated: "2026-09-24 12:33:52"
+updated: "2026-10-13 08:47:00"
 doc_id: 47492
-fetched_at: "2026-09-25T02:13:04Z"
-content_sha: d6a8d76148eb030e
+fetched_at: "2026-10-14T01:48:43Z"
+content_sha: f465951a57cd1224
 ---
 
 # Страхование
@@ -15,8 +15,6 @@ content_sha: d6a8d76148eb030e
 _Главная / Финансы, налоги и документооборот_
 
 Рассказываем, как управлять страхованием, как рассчитывается тариф и компенсация при массовом происшествии и как пользоваться разделом в личном кабинете
-
-# Видео «Страхование от массовых повреждений»
 
 # Что такое страхование
 

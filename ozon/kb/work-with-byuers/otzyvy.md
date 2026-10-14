@@ -4,15 +4,17 @@ marketplace: ozon
 kind: section
 path: /work-with-byuers/otzyvy
 source: "https://seller-edu.ozon.ru/libra/work-with-byuers/otzyvy"
-updated: "2026-10-08 08:12:59"
+updated: "2026-10-13 08:05:21"
 doc_id: 85727
-fetched_at: "2026-10-09T02:02:33Z"
-content_sha: 522d42b23b11b3c5
+fetched_at: "2026-10-14T01:48:44Z"
+content_sha: 52a268caf5d270da
 ---
 
 # Отзывы
 
 _Главная / Работа с покупателями_
+
+Как работать с отзывами от покупателей и с помощью каких инструментов можно ускорить сбор отзывов
 
 ## Вложенные разделы
 - [Инструменты сбора отзывов](https://seller-edu.ozon.ru/libra/work-with-byuers/otzyvy/sbor-otzyvov)

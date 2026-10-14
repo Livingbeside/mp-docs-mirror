@@ -9,7 +9,7 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: 098414fc0b796adb
+content_sha: 67bfc460d2e58704
 ---
 
 # Список отправлений в акте
@@ -37,8 +37,10 @@ content_sha: 098414fc0b796adb
 
 - `result` — array[object]. Информация об отправлениях.
   - `id` — integer<int64>. Идентификатор акта.
+  - `is_blr_traceable` — boolean. `true`, если товар прослеживаемый.
   - `multi_box_qty` — integer<int32>. Количество коробок, в которые упакован товар.
   - `posting_number` — string. Номер отправления.
+  - `scanit` — string. Штрихкод ScanIt с этикетки.
   - `status` — string. Статус отправления.
   - `seller_error` — string. Расшифровка кода ошибки.
   - `updated_at` — string<date-time>. Дата и время обновления записи об отправлении.

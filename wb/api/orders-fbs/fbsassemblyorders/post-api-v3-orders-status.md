@@ -9,7 +9,7 @@ tags:
 spec_version: order
 source: "https://dev.wildberries.ru/docs/openapi/orders-fbs"
 deprecated: false
-content_sha: f0b81e331c778412
+content_sha: 11f392f64053d136
 ---
 
 # Получить статусы сборочных заданий
@@ -27,7 +27,7 @@ content_sha: f0b81e331c778412
 | Статус | Описание | Как перевести сборочное задание в данный статус |
 |-------|----------------------|--------------------------------------|
 | `new` | **Новое сборочное задание** | |
-| `confirm` | **На сборке** |[Добавить сборочное задание к поставке](./orders-fbs#tag/fbsSupplies/operation/patchV3SuppliesSupplyIdOrders)
+| `confirm` | **На сборке** |[Добавить сборочное задание к поставке](./orders-fbs#tag/fbsSupplies/operation/patchV3SuppliesSupplyIdOrders) <br> [Перевести сборочные задания из доставки на сборку](./orders-fbs#tag/fbsSupplies/operation/patchV3FbsSuppliesSupplyIdOrdersTransfer)|
 | `complete` | **В доставке** | [Передать поставку в доставку](./orders-fbs#tag/fbsSupplies/operation/patchV3SuppliesSupplyIdDeliver) |
 | `cancel` | **Отменено продавцом** | [Отменить сборочное задание](./orders-fbs#tag/fbsAssemblyOrders/operation/patchV3OrdersOrderIdCancel)|
 | `cancel_carrier` | **Отменено перевозчиком** <br>Только для трансграничных поставок | Переводится перевозчиком |
@@ -70,6 +70,7 @@ content_sha: f0b81e331c778412
 - `orders` — array[object]
   - `id` — integer<int64>. ID сборочного задания
   - `isCancellable` — boolean. Доступна ли [отмена](./orders-fbs#tag/fbsAssemblyOrders/operation/patchV3OrdersOrderIdCancel) сборочного задания: - `false` — недоступна - `true` — доступна
+  - `isTransferable` — boolean. Можно ли [перевести сборочное задание](./orders-fbs#tag/fbsSupplies/operation/patchV3PortalSuppliesSupplyOrdersTransfer) из доставки на сборку: - `false` — нет - `true` — да Сборочное задание можно перенести из доставки на сборку, если выполняются все условия: - сборочное задание находится в статусе `complete` — в доставке - поставка, в которую нужно перенести сборочное задание, не [передана в доставку](./orders-fbs#tag/fbsSupplies/operation/patchV3SuppliesSupplyIdDeliver) - сборочное задание ранее не переносили
   - `supplierStatus` — string (new, confirm, complete, cancel). Статус сборочного задания, установленный продавцом
   - `wbStatus` — string (waiting, sorted, sold, canceled, canceled_by_client, declined_by_client, defect, ready_for_pickup, postponed_delivery, accepted_by_carrier, sent_to_carrier). Статус сборочного задания в системе Wildberries
 

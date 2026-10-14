@@ -5,7 +5,7 @@ tag: fbsSupplies
 group: ""
 kind: guide
 source: "https://dev.wildberries.ru/docs/openapi/orders-fbs"
-content_sha: 1d60ff5d2333a704
+content_sha: c68c14d28eb0edf8
 ---
 
 # Поставки FBS
@@ -38,4 +38,5 @@ content_sha: 1d60ff5d2333a704
  - получить информацию [обо всех поставках продавца](./orders-fbs#tag/fbsSupplies/operation/getV3Supplies) или [о конкретной поставке](./orders-fbs#tag/fbsSupplies/operation/getV3SuppliesSupplyId)
  - [удалить поставку](./orders-fbs#tag/fbsSupplies/operation/deleteV3SuppliesSupplyId) при условии, что она активна и за ней не закреплены сборочные задания
  - [перемещать сборочные задания между активными поставками](./orders-fbs#tag/fbsSupplies/operation/patchV3SuppliesSupplyIdOrders). Нельзя перемещать сборочное задание из уже закрытой поставки, только если оно не требует повторной отгрузки
+ - [переводить сборочные задания из доставки на сборку](/docs/openapi/orders-fbs#tag/fbsSupplies/operation/patchV3PortalSuppliesSupplyOrdersTransfer)
  - получить [QR-код поставки](./orders-fbs#tag/fbsSupplies/operation/getV3SuppliesSupplyIdBarcode) в форматах SVG, ZPL или PNG. Доступно только после передачи поставки в доставку

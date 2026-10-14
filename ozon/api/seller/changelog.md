@@ -5,12 +5,18 @@ tag: News
 group: Обновления
 kind: changelog
 source: "https://docs.ozon.ru/api/seller/"
-content_sha: d1fb631aed0cc2fb
+content_sha: 297b1a1ca6f9973b
 ---
 
 # Обновления
 
 Следите за обновлениями документации на платформе для разработчиков [Ozon for dev](https://dev.ozon.ru/).
+
+## 13 октября 2026
+
+| Метод | Изменение |
+|--------------------------------------------------------------------------|--------------------------------------------------------------------------------|
+| [/v2/posting/fbs/act/get-postings](#operation/PostingAPI_ActPostingList) | Добавили параметры `result.is_blr_traceable` и `result.scanit` в ответ метода. |
 
 ## 9 октября 2026
 

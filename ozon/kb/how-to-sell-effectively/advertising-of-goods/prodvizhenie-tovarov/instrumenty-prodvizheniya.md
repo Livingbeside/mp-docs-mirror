@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /how-to-sell-effectively/advertising-of-goods/prodvizhenie-tovarov/instrumenty-prodvizheniya
 source: "https://seller-edu.ozon.ru/libra/how-to-sell-effectively/advertising-of-goods/prodvizhenie-tovarov/instrumenty-prodvizheniya"
-updated: "2026-09-17 10:39:17"
+updated: "2026-10-13 15:13:46"
 doc_id: 45447
-fetched_at: "2026-09-18T02:20:35Z"
-content_sha: 47d6d5c538db4e4e
+fetched_at: "2026-10-14T01:48:45Z"
+content_sha: ec0687fbcc3af924
 ---
 
 # Какие инструменты продвижения товаров бывают
@@ -58,7 +58,7 @@ _Главная / Продвижение / Продвижение товаров
 
 **Минимальная ставка**: от 1 ₽ за клик, зависит от категории, цены товара и места размещения
 
-**Сратегия управления ставками**: «Вывод в топ», «Автостратегия», «Средняя стоимость клика» и «Целевой расход». [Подробнее о стратегиях](/how-to-sell-effectively/advertising-of-goods/prodvizhenie-tovarov/upravlenie-stavkami)
+**Стратегия управления ставками**: «Вывод в топ», «Автостратегия», «Средняя стоимость клика» и «Целевой расход». [Подробнее о стратегиях](/how-to-sell-effectively/advertising-of-goods/prodvizhenie-tovarov/upravlenie-stavkami)
 
 ## «Оплата за заказ»
 

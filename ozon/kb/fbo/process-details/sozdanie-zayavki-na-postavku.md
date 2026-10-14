@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /fbo/process-details/sozdanie-zayavki-na-postavku
 source: "https://seller-edu.ozon.ru/libra/fbo/process-details/sozdanie-zayavki-na-postavku"
-updated: "2026-10-12 10:03:15"
+updated: "2026-10-13 13:03:49"
 doc_id: 28342
-fetched_at: "2026-10-13T02:20:21Z"
-content_sha: a0623fa9c11b7111
+fetched_at: "2026-10-14T01:48:44Z"
+content_sha: f314d67071493c5d
 ---
 
 # Создание заявки на поставку
@@ -57,6 +57,10 @@ _Главная / Продажа со склада Ozon (FBO) / Заявки н�
 Если вы увидели ошибку или знак  после добавления товаров, проверьте, что они не попадают под ограничения. [Подробнее об ограничениях](/libra/fbo/process-details/ogranicheniya-po-skaldam)
 
 [Как проверить, в каких кластерах примут товары](#в-каких-кластерах-примут-товары)
+
+Рекомендуем использовать уникальный штрихкод товара (EAN или OZN). Штрихкод не должен совпадать со штрихкодом товара другого продавца. Если штрихкод будет неуникальным, начислим штраф — закрепили это условие в разделе [«Комиссии и тарифы»](https://seller-edu.ozon.ru/libra/commissions-tariffs/legal-information/full-actual-commissions#2-29-%D1%88%D1%82%D1%80%D0%B0%D1%84-%D0%B7%D0%B0-%D0%BD%D0%B5%D1%83%D0%BD%D0%B8%D0%BA%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B8-%D1%88%D1%82%D1%80%D0%B8%D1%85%D0%BA%D0%BE%D0%B4). [«Комиссии и тарифы»](https://seller-edu.ozon.ru/libra/commissions-tariffs/legal-information/full-actual-commissions#2-29-%D1%88%D1%82%D1%80%D0%B0%D1%84-%D0%B7%D0%B0-%D0%BD%D0%B5%D1%83%D0%BD%D0%B8%D0%BA%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B8-%D1%88%D1%82%D1%80%D0%B8%D1%85%D0%BA%D0%BE%D0%B4).
+
+Если в заявке есть товар с неуникальным штрихкодом, покажем предупреждение об этом в списке товаров заявки. Чтобы заменить штрихкод, нажмите «Обновить штрихкоды»
 
 ## Шаг 3. Выберите способ доставки товаров
 

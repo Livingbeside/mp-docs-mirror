@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /fbo/warehouses/table-klastery
 source: "https://seller-edu.ozon.ru/libra/fbo/warehouses/table-klastery"
-updated: "2026-10-09 12:58:22"
+updated: "2026-10-13 11:35:31"
 doc_id: 690
-fetched_at: "2026-10-10T02:17:50Z"
-content_sha: e74065a354a7407b
+fetched_at: "2026-10-14T01:48:44Z"
+content_sha: acfb3940ae9047cb
 ---
 
 # Кластеры доставки
@@ -35,7 +35,7 @@ _Главная / Продажа со склада Ozon (FBO) / Склады, а
 
 скорость доставки — сможем быстрее привезти товар, если склад и покупатель находятся в одном кластере;
 
-[Локальность продаж ](/libra/analytics-and-metrics/graphs/lokalnost-prodaj/lokalnost-prodaj)— это показатель, который отражает, сколько товаров доставили в пределах одного кластера. Чем выше локальность продаж, тем меньше переплата за логистику.
+[Локальность продаж ](https://seller-edu.ozon.ru/analytics-and-metrics/graphs/planirovanie-postavok/lokalnost-prodaj/lokalnost-prodaj)— это показатель, который отражает, сколько товаров доставили в пределах одного кластера. Чем выше локальность продаж, тем меньше переплата за логистику.
 Иногда мы ограничиваем продажи в кластерах, где не размещены ваши товары. [Подробнее о схеме региональных продаж](/fbo/warehouses/products-in-different-regions)
 
 Посмотреть кластеры доставки можно:
@@ -131,6 +131,10 @@ _Главная / Продажа со склада Ozon (FBO) / Склады, а
 Воронеж РФЦ Негабарит
 
 Дальний Восток
+
+Артём МРФЦ
+
+Владивосток РФЦ
 
 Хабаровск 2 РФЦ
 

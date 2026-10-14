@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /how-to-sell-effectively/media-advertising/zapustit-mediinuy-reklamu
 source: "https://seller-edu.ozon.ru/libra/how-to-sell-effectively/media-advertising/zapustit-mediinuy-reklamu"
-updated: "2026-10-01 16:04:33"
+updated: "2026-10-13 15:12:49"
 doc_id: 11801
-fetched_at: "2026-10-03T02:16:52Z"
-content_sha: 9ff8ae1e0d59395c
+fetched_at: "2026-10-14T01:48:44Z"
+content_sha: 3296aa27c9aa6a69
 ---
 
 # Как запустить «Медийную рекламу»
@@ -34,7 +34,7 @@ _Главная / Продвижение / «Медийная реклама»_
   показы (CPM) — вы платите за каждую 1 000 показов;
   
   клики (CPC) — вы платите за каждый клик.
-  Изменить тип оплаты после создании кампании не получится.
+  Тип оплаты нельзя изменить после создания кампании.
 7. Укажите период проведения кампании — обязательно, если выбираете тип бюджета «За период»:
   дату начала — по умолчанию это будет текущий день;
   

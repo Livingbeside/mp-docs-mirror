@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /commissions-tariffs/commissions-tariffs-ozon/rashody-na-dop-uslugi
 source: "https://seller-edu.ozon.ru/libra/commissions-tariffs/commissions-tariffs-ozon/rashody-na-dop-uslugi"
-updated: "2026-10-12 14:42:12"
+updated: "2026-10-13 07:34:29"
 doc_id: 694
-fetched_at: "2026-10-13T02:20:21Z"
-content_sha: f8c57d3aada24994
+fetched_at: "2026-10-14T01:48:44Z"
+content_sha: 31c305aa66fd72eb
 ---
 
 # Расходы на другие услуги и штрафы
@@ -3427,7 +3427,7 @@ B — количество баллов, которое Ozon перечисли�
 
 ## Штраф за неуникальный штрихкод
 
-Действует с 1 декабря 2026 года.
+Действует с 15 января 2027 года.
 
 Начислим штраф, если на момент приёмки поставки или передачи отправления у товара в личном кабинете будет штрихкод, привязанный к нескольким карточкам на Ozon, в том числе карточкам других продавцов.
 

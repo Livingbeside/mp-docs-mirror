@@ -2,9 +2,9 @@
 title: Заказы FBS — все методы
 api: wb-orders-fbs
 spec_version: order
-operations: 46
+operations: 47
 source: "https://dev.wildberries.ru/docs/openapi/orders-fbs"
-content_sha: 82202768e56c4e52
+content_sha: a5695d178917a953
 ---
 
 # Заказы FBS
@@ -21,7 +21,7 @@ content_sha: 82202768e56c4e52
 
  Узнать больше о заказах FBS можно в [справочном центре](https://seller.wildberries.ru/instructions/ru/ru/category/b3e60238-fd4c-49ce-8668-ff688725a12d)
 
-Версия спеки: `order` · методов: **46** · разделов справки: **6**
+Версия спеки: `order` · методов: **47** · разделов справки: **6**
 
 Источник: https://dev.wildberries.ru/docs/openapi/orders-fbs
 
@@ -50,6 +50,7 @@ content_sha: 82202768e56c4e52
 | `PATCH` | `/api/marketplace/v3/fbs/settings/autoreturns/items` | autoreturnSettings | [Обновить настройки автовозврата товаров](autoreturnsettings/patch-api-marketplace-v3-fbs-settings-autoreturns-items.md) |
 | `PATCH` | `/api/marketplace/v3/fbs/settings/autoreturns` | autoreturnSettings | [Обновить настройки автовозврата продавца](autoreturnsettings/patch-api-marketplace-v3-fbs-settings-autoreturns.md) |
 | `PATCH` | `/api/marketplace/v3/fbs/supplies/shipping-method` | fbsSupplies | [Установить параметры отгрузки поставок](fbssupplies/patch-api-marketplace-v3-fbs-supplies-shipping-method.md) |
+| `PATCH` | `/api/marketplace/v3/fbs/supplies/{supplyId}/orders/transfer` | fbsSupplies | [Перевести сборочные задания из доставки на сборку{{ /api/marketplace/v3/fbs/supplies/{supplyId}/orders/transfer }}](fbssupplies/patch-api-marketplace-v3-fbs-supplies-supplyid-orders-transfer.md) |
 | `PATCH` | `/api/marketplace/v3/supplies/{supplyId}/orders` | fbsSupplies | [Добавить сборочные задания к поставке{{ /api/marketplace/v3/supplies/{supplyId}/orders }}](fbssupplies/patch-api-marketplace-v3-supplies-supplyid-orders.md) |
 | `PATCH` | `/api/v3/orders/{orderId}/cancel` | fbsAssemblyOrders | [Отменить сборочное задание{{ /api/v3/orders/{orderId}/cancel }}](fbsassemblyorders/patch-api-v3-orders-orderid-cancel.md) |
 | `PATCH` | `/api/v3/supplies/{supplyId}/deliver` | fbsSupplies | [Передать поставку в доставку{{ /api/v3/supplies/{supplyId}/deliver }}](fbssupplies/patch-api-v3-supplies-supplyid-deliver.md) |

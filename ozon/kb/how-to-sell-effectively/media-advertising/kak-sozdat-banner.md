@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /how-to-sell-effectively/media-advertising/kak-sozdat-banner
 source: "https://seller-edu.ozon.ru/libra/how-to-sell-effectively/media-advertising/kak-sozdat-banner"
-updated: "2026-08-21 13:25:26"
+updated: "2026-10-13 15:11:07"
 doc_id: 913
-fetched_at: "2026-08-28T12:11:15Z"
-content_sha: b5e8a304a08fc057
+fetched_at: "2026-10-14T01:48:44Z"
+content_sha: 0b9fd5017f92512c
 ---
 
 # Создание баннера в личном кабинете и в Figma
@@ -74,7 +74,7 @@ _Главная / Продвижение / «Медийная реклама»_
 2. Войдите с помощью учетной записи Google или зарегистрируйтесь.
 3. Скачайте [файл с шаблоном](https://cdn.ozone.ru/s3/ozon-disk-api/Seller-edu/files/how-to-sell-effectively/media-advertising/konstructor-bannerov-ozon_1710427105.zip) и извлеките его.
 4. Вернитесь в Figma. В правом верхнем углу нажмите **Import**.
-5. Выберите скачанный файл и откройте.в программе Figma.
+5. Выберите скачанный файл и откройте в программе Figma.
 
 ## Шаг 2. Создайте баннер
 
