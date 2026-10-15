@@ -9,7 +9,7 @@ tags:
 spec_version: ordersdbw
 source: "https://dev.wildberries.ru/docs/openapi/orders-dbw"
 deprecated: false
-content_sha: 9d58596837fae0a8
+content_sha: de6295ac140a6926
 ---
 
 # Перевести на сборку{{ /api/v3/dbw/orders/{orderId}/confirm }}
@@ -20,7 +20,7 @@ content_sha: 9d58596837fae0a8
 
 Метод переводит [сборочное задание](./orders-dbw#tag/dbwAssemblyOrders) в [статус](./orders-dbw#tag/dbwAssemblyOrders/operation/postV3DbwOrdersStatus) `confirm` — на сборке.
 
-Лимит запросов на один аккаунт продавца для следующих методов DBW:
+Лимит запросов на один профиль продавца для следующих методов DBW:
 
  получение и обновление списка контактов
 

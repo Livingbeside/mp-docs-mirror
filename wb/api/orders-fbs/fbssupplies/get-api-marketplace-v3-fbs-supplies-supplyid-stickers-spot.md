@@ -9,7 +9,7 @@ tags:
 spec_version: order
 source: "https://dev.wildberries.ru/docs/openapi/orders-fbs"
 deprecated: false
-content_sha: 3cebc3e2b8ddd68e
+content_sha: 69addc2995c0f2c6
 ---
 
 # Получить QR-код СПОТ{{ /api/marketplace/v3/fbs/supplies/{supplyId}/stickers/spot }}
@@ -22,7 +22,7 @@ content_sha: 3cebc3e2b8ddd68e
 
 Вы можете получить QR-код, когда в методе [получения данных СПОТ](./orders-fbs#tag/fbsSupplies/operation/postV3FbsSuppliesSpotList) будет признак `"status":"completed"`.
 
-Лимит запросов на один аккаунт продавца для методов сборочных заданий, поставок, пропусков и настроек автовозврата FBS:
+Лимит запросов на один профиль продавца для методов сборочных заданий, поставок, пропусков и настроек автовозврата FBS:
 
 | Период | Лимит | Интервал | Всплеск |
 | --- | --- | --- | --- |

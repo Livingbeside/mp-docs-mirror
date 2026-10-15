@@ -9,7 +9,7 @@ tags:
 spec_version: general
 source: "https://dev.wildberries.ru/docs/openapi/api-information"
 deprecated: false
-content_sha: d5388e5006c9c74e
+content_sha: 19f7d6b3022fec2d
 ---
 
 # Получить рейтинг продавца
@@ -25,7 +25,7 @@ content_sha: d5388e5006c9c74e
 
 Метод возвращает пользовательский рейтинг продавца и количество отзывов.
 
-Лимит запросов на один аккаунт продавца:
+Лимит запросов на один профиль продавца:
 
 | Период | Лимит | Интервал | Всплеск |
 | --- | --- | --- | --- |

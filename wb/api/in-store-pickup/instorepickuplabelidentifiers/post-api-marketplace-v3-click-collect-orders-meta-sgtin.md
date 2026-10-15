@@ -9,7 +9,7 @@ tags:
 spec_version: instorepickup
 source: "https://dev.wildberries.ru/docs/openapi/in-store-pickup"
 deprecated: false
-content_sha: 2903bc022f6b6edb
+content_sha: 75d6f3f8dad44301
 ---
 
 # Закрепить коды маркировки Честного знака за сборочными заданиями
@@ -24,7 +24,7 @@ content_sha: 2903bc022f6b6edb
 
 Получить загруженные маркировки можно в [идентификаторах маркировки сборочного задания](./in-store-pickup#tag/inStorePickupLabelIdentifiers/operation/postV3ClickCollectOrdersMetaDetails).
 
-Лимит запросов на один аккаунт продавца для всех методов закрепления идентификаторов маркировки Самовывоз:
+Лимит запросов на один профиль продавца для всех методов закрепления идентификаторов маркировки Самовывоз:
 
 | Период | Лимит | Интервал | Всплеск |
 | --- | --- | --- | --- |

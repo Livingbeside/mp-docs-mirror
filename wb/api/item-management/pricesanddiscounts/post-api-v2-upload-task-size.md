@@ -9,7 +9,7 @@ tags:
 spec_version: items
 source: "https://dev.wildberries.ru/docs/openapi/item-management"
 deprecated: false
-content_sha: 28f91f764fd3e0d8
+content_sha: 1f5c3edb39d6fd0e
 ---
 
 # Установить цены для размеров
@@ -26,7 +26,7 @@ content_sha: 28f91f764fd3e0d8
 
  Получить информацию о процессе установки цен и скидок можно с помощью методов [состояния](./item-management#tag/pricesAndDiscounts/operation/getV2HistoryTasks) и [детализации](./item-management#tag/pricesAndDiscounts/operation/getV2HistoryGoodsTask) обработанной загрузки.
 
-Лимит запросов на один аккаунт продавца для всех методов категории Цены и скидки:
+Лимит запросов на один профиль продавца для всех методов категории Цены и скидки:
 
 | Тип | Период | Лимит | Интервал | Всплеск |
 | --- | --- | --- | --- | --- |

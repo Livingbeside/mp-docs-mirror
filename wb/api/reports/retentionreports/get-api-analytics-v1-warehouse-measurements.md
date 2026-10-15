@@ -9,7 +9,7 @@ tags:
 spec_version: reports
 source: "https://dev.wildberries.ru/docs/openapi/reports"
 deprecated: false
-content_sha: 314c0e7dedf643bd
+content_sha: f24d7d5a58463704
 ---
 
 # Замеры склада
@@ -20,7 +20,7 @@ content_sha: 314c0e7dedf643bd
 
 Метод возвращает отчёт о [замерах склада](https://seller.wildberries.ru/analytics-reports/dimensions-penalties/warehouse-measurements)
 
-Лимит запросов на один аккаунт продавца:
+Лимит запросов на один профиль продавца:
 
 | Тип | Период | Лимит | Интервал | Всплеск |
 | --- | --- | --- | --- | --- |

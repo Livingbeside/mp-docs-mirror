@@ -9,7 +9,7 @@ tags:
 spec_version: analytics
 source: "https://dev.wildberries.ru/docs/openapi/analytics"
 deprecated: false
-content_sha: 837a9c14bad6409c
+content_sha: f08162bd6da1241f
 ---
 
 # Получить отчёт{{ /api/v2/nm-report/downloads/file/{downloadId} }}
@@ -23,7 +23,7 @@ content_sha: 837a9c14bad6409c
 Можно получить отчёт, который сгенерирован за последние 48 часов.
 Отчёт будет загружен внутри архива ZIP в формате CSV.
 
-Лимит запросов на один аккаунт продавца:
+Лимит запросов на один профиль продавца:
 
 | Тип | Период | Лимит | Интервал | Всплеск |
 | --- | --- | --- | --- | --- |

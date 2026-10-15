@@ -4328,7 +4328,7 @@
           "products": {
             "description": "Список товаров в группе по фильтру\n",
             "items": {
-              "$ref": "#/components/schemas/TableItemItem"
+              "$ref": "#/components/schemas/TableItem"
             },
             "type": "array"
           }
@@ -4376,7 +4376,7 @@
           "items": {
             "description": "Массив товаров группы",
             "items": {
-              "$ref": "#/components/schemas/TableItemItem"
+              "$ref": "#/components/schemas/TableItem"
             },
             "type": "array"
           },
@@ -4568,7 +4568,7 @@
           "items": {
             "description": "Товары группы",
             "items": {
-              "$ref": "#/components/schemas/TableItemItemSt"
+              "$ref": "#/components/schemas/TableItemSt"
             },
             "type": "array"
           },
@@ -4781,28 +4781,7 @@
         },
         "type": "array"
       },
-      "TableItemFloat": {
-        "description": "Рейтинг продавца",
-        "properties": {
-          "current": {
-            "description": "Текущий рейтинг",
-            "example": 3.56,
-            "format": "float64",
-            "type": "number"
-          },
-          "dynamics": {
-            "description": "Динамика по сравнению с предыдущим периодом, %",
-            "example": 0.03,
-            "format": "float64",
-            "type": "number"
-          }
-        },
-        "required": [
-          "current"
-        ],
-        "type": "object"
-      },
-      "TableItemItem": {
+      "TableItem": {
         "allOf": [
           {
             "properties": {
@@ -5041,7 +5020,77 @@
         ],
         "type": "object"
       },
-      "TableItemItemSt": {
+      "TableItemFloat": {
+        "description": "Рейтинг продавца",
+        "properties": {
+          "current": {
+            "description": "Текущий рейтинг",
+            "example": 3.56,
+            "format": "float64",
+            "type": "number"
+          },
+          "dynamics": {
+            "description": "Динамика по сравнению с предыдущим периодом, %",
+            "example": 0.03,
+            "format": "float64",
+            "type": "number"
+          }
+        },
+        "required": [
+          "current"
+        ],
+        "type": "object"
+      },
+      "TableItemRequest": {
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/CommonItemFilters"
+          },
+          {
+            "properties": {
+              "limit": {
+                "default": 100,
+                "description": "Количество товаров в ответе",
+                "example": 150,
+                "format": "uint32",
+                "maximum": 1000,
+                "type": "integer"
+              },
+              "offset": {
+                "description": "После какого элемента выдавать данные",
+                "example": 100,
+                "format": "uint32",
+                "type": "integer"
+              }
+            },
+            "required": [
+              "offset"
+            ],
+            "type": "object"
+          }
+        ],
+        "description": "Параметры запроса об остатках по товарам"
+      },
+      "TableItemResponse": {
+        "properties": {
+          "currency": {
+            "$ref": "#/components/schemas/Currency"
+          },
+          "items": {
+            "description": "Множество данных по товарам",
+            "items": {
+              "$ref": "#/components/schemas/TableItemSt"
+            },
+            "type": "array"
+          }
+        },
+        "required": [
+          "items",
+          "currency"
+        ],
+        "type": "object"
+      },
+      "TableItemSt": {
         "description": "Данные по товару",
         "properties": {
           "brandName": {
@@ -5148,55 +5197,6 @@
           "mainPhoto",
           "hasSizes",
           "metrics"
-        ],
-        "type": "object"
-      },
-      "TableItemRequest": {
-        "allOf": [
-          {
-            "$ref": "#/components/schemas/CommonItemFilters"
-          },
-          {
-            "properties": {
-              "limit": {
-                "default": 100,
-                "description": "Количество товаров в ответе",
-                "example": 150,
-                "format": "uint32",
-                "maximum": 1000,
-                "type": "integer"
-              },
-              "offset": {
-                "description": "После какого элемента выдавать данные",
-                "example": 100,
-                "format": "uint32",
-                "type": "integer"
-              }
-            },
-            "required": [
-              "offset"
-            ],
-            "type": "object"
-          }
-        ],
-        "description": "Параметры запроса об остатках по товарам"
-      },
-      "TableItemResponse": {
-        "properties": {
-          "currency": {
-            "$ref": "#/components/schemas/Currency"
-          },
-          "items": {
-            "description": "Множество данных по товарам",
-            "items": {
-              "$ref": "#/components/schemas/TableItemItemSt"
-            },
-            "type": "array"
-          }
-        },
-        "required": [
-          "items",
-          "currency"
         ],
         "type": "object"
       },
@@ -6279,7 +6279,7 @@
   "paths": {
     "/api/analytics/v1/order-feed": {
       "post": {
-        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод формирует набор данных о заказах и продажах.\n<br><br>\nДанные отчёта обновляются в режиме реального времени.\n<br><br>\n> 1 заказ = 1 сборочное задание = 1 единица товара\n\nПараметры `brandNames`,`subjectIds`, `tagIds`, `nmIds` могут быть пустыми `[]`, тогда в ответе возвращаются все заказы продавца.<br>\nЕсли вы указали несколько параметров, в ответе будут заказы, в которых есть одновременно все эти параметры. Если заказы не подходят по параметрам запроса, вернётся пустой массив `[]`.\n<br><br>\nМожно получить отчёт максимум за последние 31 день.\n<br><br>\nЗаказы отдаются по времени текущего статуса, от самого нового к самому раннему.\n<br><br>\nМожно использовать пагинацию.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 мин | 1 запрос | 1 мин | 1 запрос |\n| Сервисный | 1 мин | 1 запрос | 1 мин | 1 запрос |\n| Базовый с секретом | 1 мин | 1 запрос | 1 мин | 1 запрос |\n| Базовый | 3 ч | 1 запрос | 3 ч | 1 запрос |\n</div>\n",
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод формирует набор данных о заказах и продажах.\n<br><br>\nДанные отчёта обновляются в режиме реального времени.\n<br><br>\n> 1 заказ = 1 сборочное задание = 1 единица товара\n\nПараметры `brandNames`,`subjectIds`, `tagIds`, `nmIds` могут быть пустыми `[]`, тогда в ответе возвращаются все заказы продавца.<br>\nЕсли вы указали несколько параметров, в ответе будут заказы, в которых есть одновременно все эти параметры. Если заказы не подходят по параметрам запроса, вернётся пустой массив `[]`.\n<br><br>\nМожно получить отчёт максимум за последние 31 день.\n<br><br>\nЗаказы отдаются по времени текущего статуса, от самого нового к самому раннему.\n<br><br>\nМожно использовать пагинацию.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один профиль продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 мин | 1 запрос | 1 мин | 1 запрос |\n| Сервисный | 1 мин | 1 запрос | 1 мин | 1 запрос |\n| Базовый с секретом | 1 мин | 1 запрос | 1 мин | 1 запрос |\n| Базовый | 3 ч | 1 запрос | 3 ч | 1 запрос |\n</div>\n",
         "operationId": "postV1OrderFeed",
         "requestBody": {
           "content": {
@@ -6361,7 +6361,7 @@
     },
     "/api/analytics/v1/stocks-report/seller-warehouses": {
       "post": {
-        "description": "<div class='description-title'><span>Описание метода</span></div>\n\n\n<div class=\"description_token\">\n    Метод <a href=\"./api-information#tag/authorization/Pravila-ispolzovaniya-tokenov-dostupa-k-API\">доступен</a> по\n        <strong>Персональному</strong> токену, \n        <strong>Сервисному</strong> токену\n</div>\n\nМетод возвращает текущие остатки товаров на складах продавца.\n<br><br>\nДанные обновляются 1 раз в 30 минут.\n<br><br>\n1 строка ответа — данные об 1 размере товара на 1 складе продавца.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 3 запроса | 20 сек | 1 запрос |\n</div>\n",
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\n\n<div class=\"description_token\">\n    Метод <a href=\"./api-information#tag/authorization/Pravila-ispolzovaniya-tokenov-dostupa-k-API\">доступен</a> по\n        <strong>Персональному</strong> токену, \n        <strong>Сервисному</strong> токену\n</div>\n\nМетод возвращает текущие остатки товаров на складах продавца.\n<br><br>\nДанные обновляются 1 раз в 30 минут.\n<br><br>\n1 строка ответа — данные об 1 размере товара на 1 складе продавца.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один профиль продавца:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 3 запроса | 20 сек | 1 запрос |\n</div>\n",
         "operationId": "postV1StocksReportSellerWarehouses",
         "requestBody": {
           "content": {
@@ -6454,7 +6454,7 @@
     },
     "/api/analytics/v1/stocks-report/wb-warehouses": {
       "post": {
-        "description": "<div class='description-title'><span>Описание метода</span></div>\n\n\n<div class=\"description_token\">\n    Метод <a href=\"./api-information#tag/authorization/Pravila-ispolzovaniya-tokenov-dostupa-k-API\">доступен</a> по\n        <strong>Персональному</strong> токену, \n        <strong>Сервисному</strong> токену, \n        <strong>Базовому</strong> токену <strong>с секретом</strong>\n</div>\n\nМетод возвращает текущие остатки товаров на складах WB.\n<br><br>\nДанные обновляются 1 раз в 30 минут.\n<br><br>\n1 строка ответа — данные об 1 размере товара на 1 складе WB.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 3 запроса | 20 сек | 1 запрос |\n</div>\n",
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\n\n<div class=\"description_token\">\n    Метод <a href=\"./api-information#tag/authorization/Pravila-ispolzovaniya-tokenov-dostupa-k-API\">доступен</a> по\n        <strong>Персональному</strong> токену, \n        <strong>Сервисному</strong> токену, \n        <strong>Базовому</strong> токену <strong>с секретом</strong>\n</div>\n\nМетод возвращает текущие остатки товаров на складах WB.\n<br><br>\nДанные обновляются 1 раз в 30 минут.\n<br><br>\n1 строка ответа — данные об 1 размере товара на 1 складе WB.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один профиль продавца:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 3 запроса | 20 сек | 1 запрос |\n</div>\n",
         "operationId": "postV1StocksReportWbWarehouses",
         "requestBody": {
           "content": {
@@ -6551,7 +6551,7 @@
     },
     "/api/analytics/v2/item-rating": {
       "post": {
-        "description": "<div class='description-title'><span>Описание метода</span></div>\n\n\n<div class=\"description_token\">\n    Метод <a href=\"./api-information#tag/authorization/Pravila-ispolzovaniya-tokenov-dostupa-k-API\">доступен</a> по\n        <strong>Персональному</strong> токену, \n        <strong>Сервисному</strong> токену\n</div>\n\nМетод формирует набор данных об оценках товаров.\n<br><br>\nДанные отчёта обновляются 1 раз в час.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 3 запроса | 20 сек | 3 запроса |\n</div>\n",
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\n\n<div class=\"description_token\">\n    Метод <a href=\"./api-information#tag/authorization/Pravila-ispolzovaniya-tokenov-dostupa-k-API\">доступен</a> по\n        <strong>Персональному</strong> токену, \n        <strong>Сервисному</strong> токену\n</div>\n\nМетод формирует набор данных об оценках товаров.\n<br><br>\nДанные отчёта обновляются 1 раз в час.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один профиль продавца:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 3 запроса | 20 сек | 3 запроса |\n</div>\n",
         "operationId": "postV2ItemRating",
         "requestBody": {
           "content": {
@@ -6641,7 +6641,7 @@
     },
     "/api/analytics/v3/sales-funnel/grouped/history": {
       "post": {
-        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод возвращает статистику карточек товаров по дням или неделям.<br>\nКарточки товаров сгруппированы по предметам, брендам и ярлыкам.<br>\nМожно получить данные максимум за последнюю неделю.<br><br>\n\nДанные отчёта обновляются 1 раз в 2 часа.<br><br>\n\nВ течение часа после события появляется большая часть данных:\n  - о заказах\n  - о переходах в карточку товара\n  - о добавлениях товаров в корзину\n\nМалая часть этих данных может появляться в течение нескольких дней.<br><br>\n\nВыкупы, отмены и возвраты отображаются в отчёте за тот день, когда товар был заказан. Например, если заказ был сделан 1 января, а покупатель вернул товар 10 января, данные об этом возврате появятся в отчёте за 1 января.<br>\nОкончательные итоги продаж вы можете отслеживать с помощью [детализаций к отчётам реализации](./documents-and-accounting#tag/financialReports).<br><br>\n\nПараметры `brandNames`, `subjectIds`, `tagIds` могут быть пустыми `[]`, тогда группировка происходит по всем карточкам продавца.<br><br>\n\nПроизведение количества предметов, брендов, ярлыков в запросе может быть не больше 16. Например, 4 бренда и 4 предмета или 2 предмета, 2 ярлыка и 4 бренда.\n\n<div class=\"description_important\">\n  Чтобы получать отчёты за период до года, используйте методы <a href='./analytics#tag/sellerAnalyticsCsv'>Аналитика продавца CSV</a> — тип <code>GROUPED_HISTORY_REPORT</code>. Отчёты этого типа доступны только с подпиской <a href='https://seller.wildberries.ru/monetization/jam'>Джем</a>\n</div>\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 мин | 3 запроса | 20 сек | 3 запроса |\n| Сервисный | 1 мин | 3 запроса | 20 сек | 3 запроса |\n| Базовый с секретом | 1 мин | 3 запроса | 20 сек | 3 запроса |\n| Базовый | 1 ч | 2 запроса | 30 мин | 1 запрос |\n</div>\n",
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод возвращает статистику карточек товаров по дням или неделям.<br>\nКарточки товаров сгруппированы по предметам, брендам и ярлыкам.<br>\nМожно получить данные максимум за последнюю неделю.<br><br>\n\nДанные отчёта обновляются 1 раз в 2 часа.<br><br>\n\nВ течение часа после события появляется большая часть данных:\n  - о заказах\n  - о переходах в карточку товара\n  - о добавлениях товаров в корзину\n\nМалая часть этих данных может появляться в течение нескольких дней.<br><br>\n\nВыкупы, отмены и возвраты отображаются в отчёте за тот день, когда товар был заказан. Например, если заказ был сделан 1 января, а покупатель вернул товар 10 января, данные об этом возврате появятся в отчёте за 1 января.<br>\nОкончательные итоги продаж вы можете отслеживать с помощью [детализаций к отчётам реализации](./documents-and-accounting#tag/financialReports).<br><br>\n\nПараметры `brandNames`, `subjectIds`, `tagIds` могут быть пустыми `[]`, тогда группировка происходит по всем карточкам продавца.<br><br>\n\nПроизведение количества предметов, брендов, ярлыков в запросе может быть не больше 16. Например, 4 бренда и 4 предмета или 2 предмета, 2 ярлыка и 4 бренда.\n\n\n<div class=\"description_important\">\n  Чтобы получать отчёты за период до года, используйте методы <a href='./analytics#tag/sellerAnalyticsCsv'>Аналитика продавца CSV</a> — тип <code>GROUPED_HISTORY_REPORT</code>. Отчёты этого типа доступны только с подпиской <a href='https://seller.wildberries.ru/monetization/jam'>Джем</a>\n</div>\n\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один профиль продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 мин | 3 запроса | 20 сек | 3 запроса |\n| Сервисный | 1 мин | 3 запроса | 20 сек | 3 запроса |\n| Базовый с секретом | 1 мин | 3 запроса | 20 сек | 3 запроса |\n| Базовый | 1 ч | 2 запроса | 30 мин | 1 запрос |\n</div>\n",
         "operationId": "postV3SalesFunnelGroupedHistory",
         "requestBody": {
           "content": {
@@ -6724,7 +6724,7 @@
     },
     "/api/analytics/v3/sales-funnel/products": {
       "post": {
-        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод формирует отчёт о товарах, сравнивая ключевые показатели за текущий период с аналогичным прошлым.<br><br>\n\nДанные отчёта обновляются 1 раз в 2 часа.<br><br>\n\nВ течение часа после события появляется большая часть данных:\n  - о заказах\n  - о переходах в карточку товара\n  - о добавлениях товаров в корзину\n\nМалая часть этих данных может появляться в течение нескольких дней.<br><br>\n\nВыкупы, отмены и возвраты отображаются в отчёте за тот день, когда товар был заказан. Например, если заказ был сделан 1 января, а покупатель вернул товар 10 января, данные об этом возврате появятся в отчёте за 1 января.<br>\nОкончательные итоги продаж вы можете отслеживать с помощью [детализаций к отчётам реализации](./documents-and-accounting#tag/financialReports).<br><br>\n\nПараметры `brandNames`,`subjectIds`, `tagIds`, `nmIds` могут быть пустыми `[]`, тогда в ответе возвращаются все карточки продавца.<br><br>\n\nЕсли вы указали несколько параметров, в ответе будут карточки, в которых есть одновременно все эти параметры. Если карточки не подходят по параметрам запроса, вернётся пустой ответ `[]`.<br><br>\n\nМожно получить отчёт максимум за последние 365 дней.<br><br>\n\nВ данных предыдущего периода:\n  * Данные в `pastPeriod` указаны за такой же период, что и в `selectedPeriod`\n  * Если дата начала  `pastPeriod` раньше, чем год назад от текущей даты, она будет приведена к виду: `pastPeriod.start = текущая дата — 365 дней`\n\nМожно использовать пагинацию.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 мин | 3 запроса | 20 сек | 3 запроса |\n| Сервисный | 1 мин | 3 запроса | 20 сек | 3 запроса |\n| Базовый с секретом | 1 мин | 3 запроса | 20 сек | 3 запроса |\n| Базовый | 1 ч | 2 запроса | 30 мин | 1 запрос |\n</div>\n",
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод формирует отчёт о товарах, сравнивая ключевые показатели за текущий период с аналогичным прошлым.<br><br>\n\nДанные отчёта обновляются 1 раз в 2 часа.<br><br>\n\nВ течение часа после события появляется большая часть данных:\n  - о заказах\n  - о переходах в карточку товара\n  - о добавлениях товаров в корзину\n\nМалая часть этих данных может появляться в течение нескольких дней.<br><br>\n\nВыкупы, отмены и возвраты отображаются в отчёте за тот день, когда товар был заказан. Например, если заказ был сделан 1 января, а покупатель вернул товар 10 января, данные об этом возврате появятся в отчёте за 1 января.<br>\nОкончательные итоги продаж вы можете отслеживать с помощью [детализаций к отчётам реализации](./documents-and-accounting#tag/financialReports).<br><br>\n\nПараметры `brandNames`,`subjectIds`, `tagIds`, `nmIds` могут быть пустыми `[]`, тогда в ответе возвращаются все карточки продавца.<br><br>\n\nЕсли вы указали несколько параметров, в ответе будут карточки, в которых есть одновременно все эти параметры. Если карточки не подходят по параметрам запроса, вернётся пустой ответ `[]`.<br><br>\n\nМожно получить отчёт максимум за последние 365 дней.<br><br>\n\nВ данных предыдущего периода:\n  * Данные в `pastPeriod` указаны за такой же период, что и в `selectedPeriod`\n  * Если дата начала  `pastPeriod` раньше, чем год назад от текущей даты, она будет приведена к виду: `pastPeriod.start = текущая дата — 365 дней`\n\nМожно использовать пагинацию.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один профиль продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 мин | 3 запроса | 20 сек | 3 запроса |\n| Сервисный | 1 мин | 3 запроса | 20 сек | 3 запроса |\n| Базовый с секретом | 1 мин | 3 запроса | 20 сек | 3 запроса |\n| Базовый | 1 ч | 2 запроса | 30 мин | 1 запрос |\n</div>\n",
         "operationId": "postV3SalesFunnelProducts",
         "requestBody": {
           "content": {
@@ -6816,7 +6816,7 @@
     },
     "/api/analytics/v3/sales-funnel/products/history": {
       "post": {
-        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод возвращает статистику карточек товаров по дням или неделям.<br>\nМожно получить данные максимум за последнюю неделю.<br><br>\n\nДанные отчёта обновляются 1 раз в 2 часа.<br><br>\n\nВ течение часа после события появляется большая часть данных:\n  - о заказах\n  - о переходах в карточку товара\n  - о добавлениях товаров в корзину\n\nМалая часть этих данных может появляться в течение нескольких дней.<br><br>\n\nВыкупы, отмены и возвраты отображаются в отчёте за тот день, когда товар был заказан. Например, если заказ был сделан 1 января, а покупатель вернул товар 10 января, данные об этом возврате появятся в отчёте за 1 января.<br>\nОкончательные итоги продаж вы можете отслеживать с помощью [детализаций к отчётам реализации](./documents-and-accounting#tag/financialReports).\n\n<div class=\"description_important\">\n  Чтобы получать отчёты за период до года, используйте методы <a href='./analytics#tag/sellerAnalyticsCsv'>Аналитика продавца CSV</a> — тип <code>DETAIL_HISTORY_REPORT</code>. Отчёты этого типа доступны только с подпиской <a href='https://seller.wildberries.ru/monetization/jam'>Джем</a>\n</div>\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 мин | 3 запроса | 20 сек | 3 запроса |\n| Сервисный | 1 мин | 3 запроса | 20 сек | 3 запроса |\n| Базовый с секретом | 1 мин | 3 запроса | 20 сек | 3 запроса |\n| Базовый | 1 ч | 2 запроса | 30 мин | 1 запрос |\n</div>\n",
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод возвращает статистику карточек товаров по дням или неделям.<br>\nМожно получить данные максимум за последнюю неделю.<br><br>\n\nДанные отчёта обновляются 1 раз в 2 часа.<br><br>\n\nВ течение часа после события появляется большая часть данных:\n  - о заказах\n  - о переходах в карточку товара\n  - о добавлениях товаров в корзину\n\nМалая часть этих данных может появляться в течение нескольких дней.<br><br>\n\nВыкупы, отмены и возвраты отображаются в отчёте за тот день, когда товар был заказан. Например, если заказ был сделан 1 января, а покупатель вернул товар 10 января, данные об этом возврате появятся в отчёте за 1 января.<br>\nОкончательные итоги продаж вы можете отслеживать с помощью [детализаций к отчётам реализации](./documents-and-accounting#tag/financialReports).\n\n\n<div class=\"description_important\">\n  Чтобы получать отчёты за период до года, используйте методы <a href='./analytics#tag/sellerAnalyticsCsv'>Аналитика продавца CSV</a> — тип <code>DETAIL_HISTORY_REPORT</code>. Отчёты этого типа доступны только с подпиской <a href='https://seller.wildberries.ru/monetization/jam'>Джем</a>\n</div>\n\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один профиль продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 мин | 3 запроса | 20 сек | 3 запроса |\n| Сервисный | 1 мин | 3 запроса | 20 сек | 3 запроса |\n| Базовый с секретом | 1 мин | 3 запроса | 20 сек | 3 запроса |\n| Базовый | 1 ч | 2 запроса | 30 мин | 1 запрос |\n</div>\n",
         "operationId": "postV3SalesFunnelProductsHistory",
         "requestBody": {
           "content": {
@@ -6892,7 +6892,7 @@
     },
     "/api/v2/nm-report/downloads": {
       "get": {
-        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод возвращает список отчётов с расширенной аналитикой продавца. Ответ содержит ID [созданных отчётов](./analytics#tag/sellerAnalyticsCsv/operation/postV2NmReportDownloads) и статусы генерации.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 мин | 3 запроса | 20 сек | 3 запроса |\n| Сервисный | 1 мин | 3 запроса | 20 сек | 3 запроса |\n| Базовый с секретом | 1 мин | 3 запроса | 20 сек | 3 запроса |\n| Базовый | 1 ч | 1 запрос | 1 ч | 1 запрос |\n</div>\n",
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод возвращает список отчётов с расширенной аналитикой продавца. Ответ содержит ID [созданных отчётов](./analytics#tag/sellerAnalyticsCsv/operation/postV2NmReportDownloads) и статусы генерации.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один профиль продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 мин | 3 запроса | 20 сек | 3 запроса |\n| Сервисный | 1 мин | 3 запроса | 20 сек | 3 запроса |\n| Базовый с секретом | 1 мин | 3 запроса | 20 сек | 3 запроса |\n| Базовый | 1 ч | 1 запрос | 1 ч | 1 запрос |\n</div>\n",
         "operationId": "getV2NmReportDownloads",
         "parameters": [
           {
@@ -7008,7 +7008,7 @@
         "x-readonly-method": true
       },
       "post": {
-        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод создаёт задание на генерацию отчёта с расширенной аналитикой продавца. <br><br>\n\nВы можете создать CSV-версии отчётов по [воронке продаж](./analytics#tag/salesFunnel) или [параметрам поиска](./analytics#tag/searchQueriesForYourItems) с группировкой по:\n  * артикулам WB\n  * предметам, брендам и ярлыкам\n\nВ отчётах по воронке продаж можно группировать данные по дням, неделям или месяцам.<br><br>\n\nТакже можете создать CSV-версии отчётов по [текстам поисковых запросов](./analytics#tag/searchQueriesForYourItems/operation/postV2SearchReportProductSearchTexts) и [остаткам](./analytics#tag/stocksReport).<br><br>\n\nКаждый новый отчёт должен иметь уникальный ID.\n\n<div class=\"description_important\">\n  Не используйте одинаковые ID для разных отчётов — это может привести к ошибкам при генерации\n</div>\n\nНабор параметров запроса в объекте `params` зависит от типа отчёта. Чтобы получить описание параметров, выберите тип отчёта в раскрывающемся списке в описании параметра `reportType`.<br><br>\n\nПараметры `includeSubstitutedSKUs` и `includeSearchTexts` не могут одновременно иметь значение `false`.<br><br>\n\nЕсли не удалось [получить отчёт](./analytics#tag/sellerAnalyticsCsv/operation/getV2NmReportDownloadsFileDownloadId), можно создать [повторное задание на генерацию](./analytics#tag/sellerAnalyticsCsv/operation/postV2NmReportDownloadsRetry). Также можно [получить список и проверить статусы](./analytics#tag/sellerAnalyticsCsv/operation/getV2NmReportDownloads) отчётов.<br><br>\n\nДанные отчётов обновляются 1 раз в 2 часа.\n\n<div class=\"description_important\">\n  Отчёты по <a href=\"https://seller.wildberries.ru/content-analytics/history-remains\">остаткам</a> — типы <code>STOCK_HISTORY_REPORT_CSV</code> и <code>STOCK_HISTORY_DAILY_CSV</code> — можно создать без подписки <a href=\"https://seller.wildberries.ru/monetization/jam\">Джем</a>\n</div>\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 мин | 3 запроса | 20 сек | 3 запроса |\n| Сервисный | 1 мин | 3 запроса | 20 сек | 3 запроса |\n| Базовый с секретом | 1 мин | 3 запроса | 20 сек | 3 запроса |\n| Базовый | 1 ч | 1 запрос | 1 ч | 1 запрос |\n</div>\n",
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод создаёт задание на генерацию отчёта с расширенной аналитикой продавца. <br><br>\n\nВы можете создать CSV-версии отчётов по [воронке продаж](./analytics#tag/salesFunnel) или [параметрам поиска](./analytics#tag/searchQueriesForYourItems) с группировкой по:\n  * артикулам WB\n  * предметам, брендам и ярлыкам\n\nВ отчётах по воронке продаж можно группировать данные по дням, неделям или месяцам.<br><br>\n\nТакже можете создать CSV-версии отчётов по [текстам поисковых запросов](./analytics#tag/searchQueriesForYourItems/operation/postV2SearchReportProductSearchTexts) и [остаткам](./analytics#tag/stocksReport).<br><br>\n\nКаждый новый отчёт должен иметь уникальный ID.\n\n<div class=\"description_important\">\n  Не используйте одинаковые ID для разных отчётов — это может привести к ошибкам при генерации\n</div>\n\nНабор параметров запроса в объекте `params` зависит от типа отчёта. Чтобы получить описание параметров, выберите тип отчёта в раскрывающемся списке в описании параметра `reportType`.<br><br>\n\nПараметры `includeSubstitutedSKUs` и `includeSearchTexts` не могут одновременно иметь значение `false`.<br><br>\n\nЕсли не удалось [получить отчёт](./analytics#tag/sellerAnalyticsCsv/operation/getV2NmReportDownloadsFileDownloadId), можно создать [повторное задание на генерацию](./analytics#tag/sellerAnalyticsCsv/operation/postV2NmReportDownloadsRetry). Также можно [получить список и проверить статусы](./analytics#tag/sellerAnalyticsCsv/operation/getV2NmReportDownloads) отчётов.<br><br>\n\nДанные отчётов обновляются 1 раз в 2 часа.\n\n<div class=\"description_important\">\n  Отчёты по <a href=\"https://seller.wildberries.ru/content-analytics/history-remains\">остаткам</a> — типы <code>STOCK_HISTORY_REPORT_CSV</code> и <code>STOCK_HISTORY_DAILY_CSV</code> — можно создать без подписки <a href=\"https://seller.wildberries.ru/monetization/jam\">Джем</a>\n</div>\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один профиль продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 мин | 3 запроса | 20 сек | 3 запроса |\n| Сервисный | 1 мин | 3 запроса | 20 сек | 3 запроса |\n| Базовый с секретом | 1 мин | 3 запроса | 20 сек | 3 запроса |\n| Базовый | 1 ч | 1 запрос | 1 ч | 1 запрос |\n</div>\n",
         "operationId": "postV2NmReportDownloads",
         "requestBody": {
           "content": {
@@ -7419,7 +7419,7 @@
     },
     "/api/v2/nm-report/downloads/file/{downloadId}": {
       "get": {
-        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод возвращает отчёт с расширенной аналитикой продавца по ID [задания на генерацию](./analytics#tag/sellerAnalyticsCsv/operation/postV2NmReportDownloads).\n<br><br>\nМожно получить отчёт, который сгенерирован за последние 48 часов.<br>Отчёт будет загружен внутри архива ZIP в формате CSV.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 мин | 3 запроса | 20 сек | 3 запроса |\n| Сервисный | 1 мин | 3 запроса | 20 сек | 3 запроса |\n| Базовый с секретом | 1 мин | 3 запроса | 20 сек | 3 запроса |\n| Базовый | 1 ч | 1 запрос | 1 ч | 1 запрос |\n</div>\n",
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод возвращает отчёт с расширенной аналитикой продавца по ID [задания на генерацию](./analytics#tag/sellerAnalyticsCsv/operation/postV2NmReportDownloads).\n<br><br>\nМожно получить отчёт, который сгенерирован за последние 48 часов.<br>Отчёт будет загружен внутри архива ZIP в формате CSV.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один профиль продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 мин | 3 запроса | 20 сек | 3 запроса |\n| Сервисный | 1 мин | 3 запроса | 20 сек | 3 запроса |\n| Базовый с секретом | 1 мин | 3 запроса | 20 сек | 3 запроса |\n| Базовый | 1 ч | 1 запрос | 1 ч | 1 запрос |\n</div>\n",
         "operationId": "getV2NmReportDownloadsFileDownloadId",
         "parameters": [
           {
@@ -7568,7 +7568,7 @@
     },
     "/api/v2/nm-report/downloads/retry": {
       "post": {
-        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод создает повторное [задание на генерацию](./analytics#tag/sellerAnalyticsCsv/operation/postV2NmReportDownloads) отчёта с расширенной аналитикой продавца. Необходимо, если при генерации отчёта вы [получили статус](./analytics#tag/sellerAnalyticsCsv/operation/getV2NmReportDownloads) `FAILED`.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 мин | 3 запроса | 20 сек | 3 запроса |\n| Сервисный | 1 мин | 3 запроса | 20 сек | 3 запроса |\n| Базовый с секретом | 1 мин | 3 запроса | 20 сек | 3 запроса |\n| Базовый | 1 ч | 1 запрос | 1 ч | 1 запрос |\n</div>\n",
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод создает повторное [задание на генерацию](./analytics#tag/sellerAnalyticsCsv/operation/postV2NmReportDownloads) отчёта с расширенной аналитикой продавца. Необходимо, если при генерации отчёта вы [получили статус](./analytics#tag/sellerAnalyticsCsv/operation/getV2NmReportDownloads) `FAILED`.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один профиль продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 мин | 3 запроса | 20 сек | 3 запроса |\n| Сервисный | 1 мин | 3 запроса | 20 сек | 3 запроса |\n| Базовый с секретом | 1 мин | 3 запроса | 20 сек | 3 запроса |\n| Базовый | 1 ч | 1 запрос | 1 ч | 1 запрос |\n</div>\n",
         "operationId": "postV2NmReportDownloadsRetry",
         "requestBody": {
           "content": {
@@ -7687,7 +7687,7 @@
     },
     "/api/v2/search-report/product/orders": {
       "post": {
-        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод формирует данные для таблицы:\n  - о заказах по каждому поисковому запросу для конкретного товара\n  - о позициях товара в результатах поиска по каждому запросу\n\nДанные указаны в рамках периода для [запрошенного товара](./analytics#tag/searchQueriesForYourItems/operation/postV2SearchReportProductSearchTexts) и сгруппированы по дням. Максимальный период — 7 дней.<br><br>\n\nДанные отчёта обновляются 1 раз в 2 часа.\n\n<div class=\"description_important\">\n  Можно получить отчёт максимум за последние 365 дней с момента выполнения запроса\n</div>\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 мин | 3 запроса | 20 сек | 3 запроса |\n| Сервисный | 1 мин | 3 запроса | 20 сек | 3 запроса |\n| Базовый с секретом | 1 мин | 3 запроса | 20 сек | 3 запроса |\n| Базовый | 1 ч | 1 запрос | 1 ч | 1 запрос |\n</div>\n",
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод формирует данные для таблицы:\n  - о заказах по каждому поисковому запросу для конкретного товара\n  - о позициях товара в результатах поиска по каждому запросу\n\nДанные указаны в рамках периода для [запрошенного товара](./analytics#tag/searchQueriesForYourItems/operation/postV2SearchReportProductSearchTexts) и сгруппированы по дням. Максимальный период — 7 дней.<br><br>\n\nДанные отчёта обновляются 1 раз в 2 часа.\n\n<div class=\"description_important\">\n  Можно получить отчёт максимум за последние 365 дней с момента выполнения запроса\n</div>\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один профиль продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 мин | 3 запроса | 20 сек | 3 запроса |\n| Сервисный | 1 мин | 3 запроса | 20 сек | 3 запроса |\n| Базовый с секретом | 1 мин | 3 запроса | 20 сек | 3 запроса |\n| Базовый | 1 ч | 1 запрос | 1 ч | 1 запрос |\n</div>\n",
         "operationId": "postV2SearchReportProductOrders",
         "requestBody": {
           "content": {
@@ -7780,7 +7780,7 @@
     },
     "/api/v2/search-report/product/search-texts": {
       "post": {
-        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод формирует топ поисковых запросов по товару.\n\nПараметры выбора поисковых запросов:\n - `limit` — количество запросов, максимум 30. Для тарифов [Джема](https://seller.wildberries.ru/monetization/tariffs) **Продвинутый** и **Премиальный** максимум — 100.\n - `topOrderBy` — способ выбора топа запросов\n\nПараметры `includeSubstitutedSKUs` и `includeSearchTexts` не могут одновременно иметь значение `false`.<br><br>\n\nДанные отчёта обновляются 1 раз в 2 часа.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 мин | 3 запроса | 20 сек | 3 запроса |\n| Сервисный | 1 мин | 3 запроса | 20 сек | 3 запроса |\n| Базовый с секретом | 1 мин | 3 запроса | 20 сек | 3 запроса |\n| Базовый | 1 ч | 1 запрос | 1 ч | 1 запрос |\n</div>\n",
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод формирует топ поисковых запросов по товару.\n\nПараметры выбора поисковых запросов:\n - `limit` — количество запросов, максимум 30. Для тарифов [Джема](https://seller.wildberries.ru/monetization/tariffs) **Продвинутый** и **Премиальный** максимум — 100.\n - `topOrderBy` — способ выбора топа запросов\n\nПараметры `includeSubstitutedSKUs` и `includeSearchTexts` не могут одновременно иметь значение `false`.<br><br>\n\nДанные отчёта обновляются 1 раз в 2 часа.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один профиль продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 мин | 3 запроса | 20 сек | 3 запроса |\n| Сервисный | 1 мин | 3 запроса | 20 сек | 3 запроса |\n| Базовый с секретом | 1 мин | 3 запроса | 20 сек | 3 запроса |\n| Базовый | 1 ч | 1 запрос | 1 ч | 1 запрос |\n</div>\n",
         "operationId": "postV2SearchReportProductSearchTexts",
         "requestBody": {
           "content": {
@@ -7873,7 +7873,7 @@
     },
     "/api/v2/search-report/report": {
       "post": {
-        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод формирует набор данных для основной страницы отчёта по поисковым запросам с:\n - общей информацией\n - позициями товаров\n - данными по видимости и переходам в карточку\n - данными для таблицы по группам\n\nДля получения дополнительных данных в таблице используйте отдельный запрос для:\n - [пагинации по группам](./analytics#tag/searchQueriesForYourItems/operation/postV2SearchReportTableGroups)\n - [получения по товарам в группе](./analytics#tag/searchQueriesForYourItems/operation/postV2SearchReportTableDetails)\n\nДополнительный параметр выбора списка товаров в таблице:\n - `positionCluster` — средняя позиция в поиске\n\nПараметры `includeSubstitutedSKUs` и `includeSearchTexts` не могут одновременно иметь значение `false`.<br><br>\n\nДанные отчёта обновляются 1 раз в 2 часа.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 мин | 3 запроса | 20 сек | 3 запроса |\n| Сервисный | 1 мин | 3 запроса | 20 сек | 3 запроса |\n| Базовый с секретом | 1 мин | 3 запроса | 20 сек | 3 запроса |\n| Базовый | 1 ч | 1 запрос | 1 ч | 1 запрос |\n</div>\n",
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод формирует набор данных для основной страницы отчёта по поисковым запросам с:\n - общей информацией\n - позициями товаров\n - данными по видимости и переходам в карточку\n - данными для таблицы по группам\n\nДля получения дополнительных данных в таблице используйте отдельный запрос для:\n - [пагинации по группам](./analytics#tag/searchQueriesForYourItems/operation/postV2SearchReportTableGroups)\n - [получения по товарам в группе](./analytics#tag/searchQueriesForYourItems/operation/postV2SearchReportTableDetails)\n\nДополнительный параметр выбора списка товаров в таблице:\n - `positionCluster` — средняя позиция в поиске\n\nПараметры `includeSubstitutedSKUs` и `includeSearchTexts` не могут одновременно иметь значение `false`.<br><br>\n\nДанные отчёта обновляются 1 раз в 2 часа.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один профиль продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 мин | 3 запроса | 20 сек | 3 запроса |\n| Сервисный | 1 мин | 3 запроса | 20 сек | 3 запроса |\n| Базовый с секретом | 1 мин | 3 запроса | 20 сек | 3 запроса |\n| Базовый | 1 ч | 1 запрос | 1 ч | 1 запрос |\n</div>\n",
         "operationId": "postV2SearchReportReport",
         "requestBody": {
           "content": {
@@ -7966,7 +7966,7 @@
     },
     "/api/v2/search-report/table/details": {
       "post": {
-        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод формирует дополнительные данные к [основному отчёту](./analytics#tag/searchQueriesForYourItems/operation/postV2SearchReportReport) с пагинацией по товарам в группе. Пагинация возможна вне зависимости от наличия фильтров.<br><br>\n\nФильтры для пагинации по товарам в группе или без фильтров:\n - кортеж `subjectId`,`brandName`,`tagId` — фильтр для группы\n - `nmIds` — фильтр по карточке товара\n\nДополнительный параметр выбора списка товаров:\n - `positionCluster` — средняя позиция в поиске\n\nПараметры `includeSubstitutedSKUs` и `includeSearchTexts` не могут одновременно иметь значение `false`.<br><br>\n\nДанные отчёта обновляются 1 раз в 2 часа.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 мин | 3 запроса | 20 сек | 3 запроса |\n| Сервисный | 1 мин | 3 запроса | 20 сек | 3 запроса |\n| Базовый с секретом | 1 мин | 3 запроса | 20 сек | 3 запроса |\n| Базовый | 1 ч | 1 запрос | 1 ч | 1 запрос |\n</div>\n",
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод формирует дополнительные данные к [основному отчёту](./analytics#tag/searchQueriesForYourItems/operation/postV2SearchReportReport) с пагинацией по товарам в группе. Пагинация возможна вне зависимости от наличия фильтров.<br><br>\n\nФильтры для пагинации по товарам в группе или без фильтров:\n - кортеж `subjectId`,`brandName`,`tagId` — фильтр для группы\n - `nmIds` — фильтр по карточке товара\n\nДополнительный параметр выбора списка товаров:\n - `positionCluster` — средняя позиция в поиске\n\nПараметры `includeSubstitutedSKUs` и `includeSearchTexts` не могут одновременно иметь значение `false`.<br><br>\n\nДанные отчёта обновляются 1 раз в 2 часа.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один профиль продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 мин | 3 запроса | 20 сек | 3 запроса |\n| Сервисный | 1 мин | 3 запроса | 20 сек | 3 запроса |\n| Базовый с секретом | 1 мин | 3 запроса | 20 сек | 3 запроса |\n| Базовый | 1 ч | 1 запрос | 1 ч | 1 запрос |\n</div>\n",
         "operationId": "postV2SearchReportTableDetails",
         "requestBody": {
           "content": {
@@ -8059,7 +8059,7 @@
     },
     "/api/v2/search-report/table/groups": {
       "post": {
-        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод формирует дополнительные данные к [основному отчёту](./analytics#tag/searchQueriesForYourItems/operation/postV2SearchReportReport) с пагинацией по группам. Пагинация возможна только при наличии фильтра по бренду, предмету или ярлыку.<br><br>\n\nДополнительный параметр выбора списка товаров в таблице:\n - `positionCluster` — средняя позиция в поиске\n\nПараметры `includeSubstitutedSKUs` и `includeSearchTexts` не могут одновременно иметь значение `false`.<br><br>\n\nДанные отчёта обновляются 1 раз в 2 часа.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 мин | 3 запроса | 20 сек | 3 запроса |\n| Сервисный | 1 мин | 3 запроса | 20 сек | 3 запроса |\n| Базовый с секретом | 1 мин | 3 запроса | 20 сек | 3 запроса |\n| Базовый | 1 ч | 1 запрос | 1 ч | 1 запрос |\n</div>\n",
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод формирует дополнительные данные к [основному отчёту](./analytics#tag/searchQueriesForYourItems/operation/postV2SearchReportReport) с пагинацией по группам. Пагинация возможна только при наличии фильтра по бренду, предмету или ярлыку.<br><br>\n\nДополнительный параметр выбора списка товаров в таблице:\n - `positionCluster` — средняя позиция в поиске\n\nПараметры `includeSubstitutedSKUs` и `includeSearchTexts` не могут одновременно иметь значение `false`.<br><br>\n\nДанные отчёта обновляются 1 раз в 2 часа.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один профиль продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 мин | 3 запроса | 20 сек | 3 запроса |\n| Сервисный | 1 мин | 3 запроса | 20 сек | 3 запроса |\n| Базовый с секретом | 1 мин | 3 запроса | 20 сек | 3 запроса |\n| Базовый | 1 ч | 1 запрос | 1 ч | 1 запрос |\n</div>\n",
         "operationId": "postV2SearchReportTableGroups",
         "requestBody": {
           "content": {
@@ -8152,7 +8152,7 @@
     },
     "/api/v2/stocks-report/offices": {
       "post": {
-        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод формирует набор данных об остатках по складам.\n<br><br>\nДанные по складам продавца приходят в агрегированном виде — по всем сразу, без детализации по конкретным складам — эти записи будут с `\"regionName\":\"Свой склад\"` и `\"offices\":[]`.<br><br>\n\nДанные отчёта обновляются 1 раз в 2 часа.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 мин | 3 запроса | 20 сек | 3 запроса |\n| Сервисный | 1 мин | 3 запроса | 20 сек | 3 запроса |\n| Базовый с секретом | 1 мин | 3 запроса | 20 сек | 3 запроса |\n| Базовый | 1 ч | 2 запроса | 30 мин | 1 запрос |\n</div>\n",
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод формирует набор данных об остатках по складам.\n<br><br>\nДанные по складам продавца приходят в агрегированном виде — по всем сразу, без детализации по конкретным складам — эти записи будут с `\"regionName\":\"Свой склад\"` и `\"offices\":[]`.<br><br>\n\nДанные отчёта обновляются 1 раз в 2 часа.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один профиль продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 мин | 3 запроса | 20 сек | 3 запроса |\n| Сервисный | 1 мин | 3 запроса | 20 сек | 3 запроса |\n| Базовый с секретом | 1 мин | 3 запроса | 20 сек | 3 запроса |\n| Базовый | 1 ч | 2 запроса | 30 мин | 1 запрос |\n</div>\n",
         "operationId": "postV2StocksReportOffices",
         "requestBody": {
           "content": {
@@ -8238,7 +8238,7 @@
     },
     "/api/v2/stocks-report/products/groups": {
       "post": {
-        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод формирует набор данных об остатках по группам товаров.\n<br><br>\nГруппа товаров описывается кортежем `subjectID, brandName, tagID`.<br><br>\n\nДанные отчёта обновляются 1 раз в 2 часа.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 мин | 3 запроса | 20 сек | 3 запроса |\n| Сервисный | 1 мин | 3 запроса | 20 сек | 3 запроса |\n| Базовый с секретом | 1 мин | 3 запроса | 20 сек | 3 запроса |\n| Базовый | 1 ч | 2 запроса | 30 мин | 1 запрос |\n</div>\n",
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод формирует набор данных об остатках по группам товаров.\n<br><br>\nГруппа товаров описывается кортежем `subjectID, brandName, tagID`.<br><br>\n\nДанные отчёта обновляются 1 раз в 2 часа.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один профиль продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 мин | 3 запроса | 20 сек | 3 запроса |\n| Сервисный | 1 мин | 3 запроса | 20 сек | 3 запроса |\n| Базовый с секретом | 1 мин | 3 запроса | 20 сек | 3 запроса |\n| Базовый | 1 ч | 2 запроса | 30 мин | 1 запрос |\n</div>\n",
         "operationId": "postV2StocksReportProductsGroups",
         "requestBody": {
           "content": {
@@ -8324,7 +8324,7 @@
     },
     "/api/v2/stocks-report/products/products": {
       "post": {
-        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод формирует набор данных об остатках по товарам.\n<br><br>\nМожно получить данные как по отдельным товарам, так и в рамках всего отчёта — если в запросе отсутствуют фильтры: `nmIDs`, `subjectID`, `brandName`, `tagID`.<br><br>\n\nДанные отчёта обновляются 1 раз в 2 часа.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 мин | 3 запроса | 20 сек | 3 запроса |\n| Сервисный | 1 мин | 3 запроса | 20 сек | 3 запроса |\n| Базовый с секретом | 1 мин | 3 запроса | 20 сек | 3 запроса |\n| Базовый | 1 ч | 2 запроса | 30 мин | 1 запрос |\n</div>\n",
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод формирует набор данных об остатках по товарам.\n<br><br>\nМожно получить данные как по отдельным товарам, так и в рамках всего отчёта — если в запросе отсутствуют фильтры: `nmIDs`, `subjectID`, `brandName`, `tagID`.<br><br>\n\nДанные отчёта обновляются 1 раз в 2 часа.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один профиль продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 мин | 3 запроса | 20 сек | 3 запроса |\n| Сервисный | 1 мин | 3 запроса | 20 сек | 3 запроса |\n| Базовый с секретом | 1 мин | 3 запроса | 20 сек | 3 запроса |\n| Базовый | 1 ч | 2 запроса | 30 мин | 1 запрос |\n</div>\n",
         "operationId": "postV2StocksReportProductsProducts",
         "requestBody": {
           "content": {
@@ -8411,7 +8411,7 @@
     },
     "/api/v2/stocks-report/products/sizes": {
       "post": {
-        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод формирует набор данных об остатках по размерам товара.\n<br><br>\nВозможны случаи:\n1. Товар имеет размеры и `\"includeOffice\":true`, тогда в ответе будут данные об остатках по каждому из размеров с вложенной детализацией по складам.\n2. Товар имеет размеры и `\"includeOffice\":false`, тогда в ответе будут данные об остатках по каждому из размеров без вложенной детализации по складам.\n3. Товар не имеет размера и `\"includeOffice\":true`, тогда в ответе будет детализация по складам. Без данных об остатках по каждому из размеров.\n4. Товар не имеет размера и `\"includeOffice\":false`, тогда тело ответа будет пустым.<br></br>\nТовар не имеет размера, если у него единственный размер с `\"techSize\":\"0\"`. В ответах метода получения данных по [товарам](./analytics#tag/stocksReport/operation/postV2StocksReportProductsProducts) у таких товаров `\"hasSizes\":false`.<br></br>\nДанные по складам продавца приходят в агрегированном виде — по всем сразу, без детализации по конкретным складам — эти записи будут с `\"regionName\":\"Свой склад\"` и `\"officeName\":\"\"`.<br><br>\n\nДанные отчёта обновляются 1 раз в 2 часа.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 мин | 3 запроса | 20 сек | 3 запроса |\n| Сервисный | 1 мин | 3 запроса | 20 сек | 3 запроса |\n| Базовый с секретом | 1 мин | 3 запроса | 20 сек | 3 запроса |\n| Базовый | 1 ч | 2 запроса | 30 мин | 1 запрос |\n</div>\n",
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод формирует набор данных об остатках по размерам товара.\n<br><br>\nВозможны случаи:\n1. Товар имеет размеры и `\"includeOffice\":true`, тогда в ответе будут данные об остатках по каждому из размеров с вложенной детализацией по складам.\n2. Товар имеет размеры и `\"includeOffice\":false`, тогда в ответе будут данные об остатках по каждому из размеров без вложенной детализации по складам.\n3. Товар не имеет размера и `\"includeOffice\":true`, тогда в ответе будет детализация по складам. Без данных об остатках по каждому из размеров.\n4. Товар не имеет размера и `\"includeOffice\":false`, тогда тело ответа будет пустым.<br></br>\nТовар не имеет размера, если у него единственный размер с `\"techSize\":\"0\"`. В ответах метода получения данных по [товарам](./analytics#tag/stocksReport/operation/postV2StocksReportProductsProducts) у таких товаров `\"hasSizes\":false`.<br></br>\nДанные по складам продавца приходят в агрегированном виде — по всем сразу, без детализации по конкретным складам — эти записи будут с `\"regionName\":\"Свой склад\"` и `\"officeName\":\"\"`.<br><br>\n\nДанные отчёта обновляются 1 раз в 2 часа.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один профиль продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 мин | 3 запроса | 20 сек | 3 запроса |\n| Сервисный | 1 мин | 3 запроса | 20 сек | 3 запроса |\n| Базовый с секретом | 1 мин | 3 запроса | 20 сек | 3 запроса |\n| Базовый | 1 ч | 2 запроса | 30 мин | 1 запрос |\n</div>\n",
         "operationId": "postV2StocksReportProductsSizes",
         "requestBody": {
           "content": {
@@ -8523,7 +8523,7 @@
       "x-displayName": "Поисковые запросы по вашим товарам"
     },
     {
-      "description": "<div class=\"description_auth\">\n  Для доступа к методам используйте <a href=\"./api-information#tag/authorization/Kak-sozdat-personalnyj-bazovyj-ili-testovyj-token\">токен</a> для категории <strong>Аналитика</strong>\n</div>\n\n\n<div class=\"description_ref\">\n  Узнать, как использовать методы в бизнес-кейсах, можно в <a href=\"/knowledge-base/articles/019ef14c-c72d-717a-9fc2-b0b2f361dc80\">инструкции</a> по работе с <strong>Историей остатков</strong>\n</div>\n\n\n<div class=\"description_important\">\n  Узнать больше об аналитике остатков можно в <a href=\"https://seller.wildberries.ru/instructions/ru/ru/material/stock-history-report\">справочном центре</a>\n</div>\n\nЭто информация из детализированной таблицы товаров и виджета детализации по регионам.<br></br>\nОстатки в ответах данных методов — на текущий день.\n\n<div class=\"description_important\">\n  Чтобы получать остатки по дням за период до 3 месяцев от текущей даты, используйте методы <a href='./analytics#tag/sellerAnalyticsCsv'>Аналитика продавца CSV</a> — тип отчёта <code>STOCK_HISTORY_DAILY_CSV</code>\n</div>\n\nМетоды получения [отчёта по статистике остатков](https://seller.wildberries.ru/content-analytics/history-remains):\n  1. Текущих [остатков на складах WB](./analytics#tag/stocksReport/operation/postV1StocksReportWbWarehouses) по размерам\n  2. Данных по таблице товаров с агрегацией по [группам](./analytics#tag/stocksReport/operation/postV2StocksReportProductsGroups), [товарам](./analytics#tag/stocksReport/operation/postV2StocksReportProductsProducts), [размерам](./analytics#tag/stocksReport/operation/postV2StocksReportProductsSizes)\n  3. Данных виджета **Статистика по регионам отгрузки** с детализацией по [складам](./analytics#tag/stocksReport/operation/postV2StocksReportOffices)\n",
+      "description": "<div class=\"description_auth\">\n  Для доступа к методам используйте <a href=\"./api-information#tag/authorization/Kak-sozdat-personalnyj-bazovyj-ili-testovyj-token\">токен</a> для категории <strong>Аналитика</strong>\n</div>\n\n\n<div class=\"description_ref\">\n  Узнать, как использовать методы в бизнес-кейсах, можно в <a href=\"/knowledge-base/articles/019ef14c-c72d-717a-9fc2-b0b2f361dc80\">инструкции</a> по работе с <strong>Историей остатков</strong>\n</div>\n\n\n<div class=\"description_important\">\n  Узнать больше об аналитике остатков можно в <a href=\"https://seller.wildberries.ru/instructions/ru/ru/material/stock-history-report\">справочном центре</a>\n</div>\n\nЭто информация из детализированной таблицы товаров и виджета детализации по регионам.<br></br>\nОстатки в ответах данных методов — на текущий день.\n\n\n<div class=\"description_important\">\n  Чтобы получать остатки по дням за период до 3 месяцев от текущей даты, используйте методы <a href='./analytics#tag/sellerAnalyticsCsv'>Аналитика продавца CSV</a> — тип отчёта <code>STOCK_HISTORY_DAILY_CSV</code>\n</div>\n\n\nМетоды получения [отчёта по статистике остатков](https://seller.wildberries.ru/content-analytics/history-remains):\n  1. Текущих [остатков на складах WB](./analytics#tag/stocksReport/operation/postV1StocksReportWbWarehouses) по размерам\n  2. Данных по таблице товаров с агрегацией по [группам](./analytics#tag/stocksReport/operation/postV2StocksReportProductsGroups), [товарам](./analytics#tag/stocksReport/operation/postV2StocksReportProductsProducts), [размерам](./analytics#tag/stocksReport/operation/postV2StocksReportProductsSizes)\n  3. Данных виджета **Статистика по регионам отгрузки** с детализацией по [складам](./analytics#tag/stocksReport/operation/postV2StocksReportOffices)\n",
       "name": "stocksReport",
       "x-displayName": "История остатков"
     },

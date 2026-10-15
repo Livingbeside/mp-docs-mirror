@@ -9,7 +9,7 @@ tags:
 spec_version: ordersfbw
 source: "https://dev.wildberries.ru/docs/openapi/orders-fbw"
 deprecated: false
-content_sha: ecca892faf77de33
+content_sha: 93887774232fc8dd
 ---
 
 # Создать черновик
@@ -24,7 +24,7 @@ content_sha: ecca892faf77de33
 
 Метод создаёт пустой черновик поставки.
 
-Лимит запросов на один аккаунт продавца:
+Лимит запросов на один профиль продавца:
 
 | Период | Лимит | Интервал | Всплеск |
 | --- | --- | --- | --- |

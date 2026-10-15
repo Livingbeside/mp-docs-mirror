@@ -9,7 +9,7 @@ tags:
 spec_version: promotion
 source: "https://dev.wildberries.ru/docs/openapi/promotion"
 deprecated: false
-content_sha: 0a3ce6d727351ded
+content_sha: 12df21d6ba30f670
 ---
 
 # Информация о кампаниях
@@ -21,7 +21,7 @@ content_sha: 0a3ce6d727351ded
 Метод возвращает информацию о рекламных кампаниях с единой или ручной ставкой по их статусам, типам оплаты и ID.
 
  
-Лимит запросов на один аккаунт продавца:
+Лимит запросов на один профиль продавца:
 
 | Тип | Период | Лимит | Интервал | Всплеск |
 | --- | --- | --- | --- | --- |
@@ -44,10 +44,10 @@ content_sha: 0a3ce6d727351ded
 
 - `adverts` — array[object] **обязательный**. Кампании
   - `bid_type` — string **обязательный**. Тип ставки: - `unified` — единая ставка - `manual` — ручная ставка
-  - `currency` — string<ISO 4217>. Валюта [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances)
+  - `currency` — string<ISO 4217>. Валюта [профиля продавца](https://cmp.wildberries.ru/campaigns/finances)
   - `id` — integer<int64> **обязательный**. ID кампании
   - `nm_settings` — array[object] **обязательный**. Настройки товаров
-    - `bids_kopecks` — object **обязательный**. Ставка в разменных единицах — 0,01 от базовой валюты [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances)
+    - `bids_kopecks` — object **обязательный**. Ставка в разменных единицах — 0,01 от базовой валюты [профиля продавца](https://cmp.wildberries.ru/campaigns/finances)
       - `search` — integer<int64> **обязательный**. Ставка в поиске
       - `recommendations` — integer<int64> **обязательный**. Ставка в рекомендациях
     - `subject` — object **обязательный**. Предмет

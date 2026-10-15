@@ -9,7 +9,7 @@ tags:
 spec_version: reports
 source: "https://dev.wildberries.ru/docs/openapi/reports"
 deprecated: false
-content_sha: 614ae47f035e6743
+content_sha: aa3af1afc5aa3d13
 ---
 
 # Получить отчёт{{ /api/v1/acceptance_report/tasks/{task_id}/download }}
@@ -20,7 +20,7 @@ content_sha: 614ae47f035e6743
 
 Метод возвращает отчёт об [операциях при приёмке](https://seller.wildberries.ru/analytics-reports/acceptance-report) по ID [задания на генерацию](./reports#tag/acceptanceExpenses/operation/getV1AcceptanceReport).
 
-Лимит запросов на один аккаунт продавца:
+Лимит запросов на один профиль продавца:
 
 | Тип | Период | Лимит | Интервал | Всплеск |
 | --- | --- | --- | --- | --- |

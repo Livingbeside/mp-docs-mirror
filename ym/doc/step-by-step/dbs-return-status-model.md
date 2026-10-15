@@ -2,14 +2,14 @@
 title: Статусы DBS-возвратов
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/dbs-return-status-model.md"
-fetched_at: "2026-10-09T02:05:41Z"
-content_sha: f4d33b73b031007b
+fetched_at: "2026-10-15T01:48:21Z"
+content_sha: 66c4e6f6ac7ff89b
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.63.1
+    content: Diplodoc Platform v5.63.2
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/step-by-step/dbs-return-status-model.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/dbs-return-status-model.md
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/dbs-return-status-model.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21566721
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21642161
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21566721
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21642161
 
 ## Как изменяются статусы возвратов для модели DBS
 

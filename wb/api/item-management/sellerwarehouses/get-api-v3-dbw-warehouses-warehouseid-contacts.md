@@ -9,7 +9,7 @@ tags:
 spec_version: items
 source: "https://dev.wildberries.ru/docs/openapi/item-management"
 deprecated: false
-content_sha: ad3c210c9853e6f4
+content_sha: c2f73e86284cdbe6
 ---
 
 # Список контактов{{ /api/v3/dbw/warehouses/{warehouseId}/contacts }}
@@ -22,7 +22,7 @@ content_sha: ad3c210c9853e6f4
 
 Только для складов с типом доставки `3` — Деливери WB ([DBW](./orders-dbw)).
 
-Лимит запросов на один аккаунт продавца для следующих методов DBW:
+Лимит запросов на один профиль продавца для следующих методов DBW:
 
  получение и обновление списка контактов
 
@@ -54,9 +54,8 @@ content_sha: ad3c210c9853e6f4
 
 **400** — Неправильный запрос
 
-- `code` — string. Код ошибки
-- `message` — string. Описание ошибки
-- `data` — object. Дополнительные данные ошибки
+- `code` — string **обязательный**. Код ошибки
+- `message` — string **обязательный**. Детали ошибки
 
 **401** — Не авторизован
 
@@ -76,9 +75,8 @@ content_sha: ad3c210c9853e6f4
 
 **403** — Доступ запрещён
 
-- `code` — string. Код ошибки
-- `message` — string. Описание ошибки
-- `data` — object. Дополнительные данные ошибки
+- `code` — string **обязательный**. Код ошибки
+- `message` — string **обязательный**. Детали ошибки
 
 **429** — Слишком много запросов
 

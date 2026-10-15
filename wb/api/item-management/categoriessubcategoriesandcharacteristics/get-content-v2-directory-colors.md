@@ -9,7 +9,7 @@ tags:
 spec_version: items
 source: "https://dev.wildberries.ru/docs/openapi/item-management"
 deprecated: false
-content_sha: b75f91dea097ae7e
+content_sha: ea87855f1906dc5f
 ---
 
 # Цвет
@@ -20,7 +20,7 @@ content_sha: b75f91dea097ae7e
 
 Метод возвращает возможные значения [характеристики](./item-management#tag/categoriesSubcategoriesAndCharacteristics/operation/getV2ObjectCharcsSubjectId) предмета `Цвет`.
 
-Лимит запросов на один аккаунт продавца для методов Характеристик:
+Лимит запросов на один профиль продавца для методов Характеристик:
 
 | Тип | Период | Лимит | Интервал | Всплеск |
 | --- | --- | --- | --- | --- |

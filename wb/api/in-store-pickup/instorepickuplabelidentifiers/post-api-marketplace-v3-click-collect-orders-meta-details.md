@@ -9,7 +9,7 @@ tags:
 spec_version: instorepickup
 source: "https://dev.wildberries.ru/docs/openapi/in-store-pickup"
 deprecated: false
-content_sha: d623c88a2240df2d
+content_sha: 8289b047771c07d6
 ---
 
 # Получить идентификаторы маркировки сборочных заданий
@@ -30,7 +30,7 @@ content_sha: d623c88a2240df2d
  - `customsDeclaration` — [номер ДТ](./in-store-pickup#tag/inStorePickupLabelIdentifiers/operation/postV3ClickCollectOrdersMetaCustomsDeclaration)
  - `originCountryCode` — [числовой код страны происхождения товара](./in-store-pickup#tag/inStorePickupLabelIdentifiers/operation/postV3ClickCollectOrdersMetaCustomsDeclaration) из [Общероссийского классификатора стран мира](https://esnsi.gosuslugi.ru/classifiers/16269)
 
-Лимит запросов на один аккаунт продавца для всех методов получения и удаления идентификаторов маркировки Самовывоз:
+Лимит запросов на один профиль продавца для всех методов получения и удаления идентификаторов маркировки Самовывоз:
 
 | Период | Лимит | Интервал | Всплеск |
 | --- | --- | --- | --- |

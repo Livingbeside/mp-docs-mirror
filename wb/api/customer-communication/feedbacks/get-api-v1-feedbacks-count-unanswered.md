@@ -9,7 +9,7 @@ tags:
 spec_version: communication
 source: "https://dev.wildberries.ru/docs/openapi/customer-communication"
 deprecated: false
-content_sha: 7c47dd66e3d78252
+content_sha: d87c1de5965f8086
 ---
 
 # Необработанные отзывы
@@ -21,7 +21,7 @@ content_sha: 7c47dd66e3d78252
 Метод возвращает:
  - количество необработанных [отзывов](./customer-communication#tag/feedbacks/operation/getV1Feedbacks) за сегодня и за всё время
 
-Лимит запросов на один аккаунт продавца для всех методов категории Вопросы и отзывы:
+Лимит запросов на один профиль продавца для всех методов категории Вопросы и отзывы:
 
 | Тип | Период | Лимит | Интервал | Всплеск |
 | --- | --- | --- | --- | --- |

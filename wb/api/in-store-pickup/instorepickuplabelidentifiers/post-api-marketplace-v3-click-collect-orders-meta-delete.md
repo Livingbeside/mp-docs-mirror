@@ -9,7 +9,7 @@ tags:
 spec_version: instorepickup
 source: "https://dev.wildberries.ru/docs/openapi/in-store-pickup"
 deprecated: false
-content_sha: 6580139035d79022
+content_sha: a209da4957f94085
 ---
 
 # Удалить идентификаторы маркировки сборочных заданий
@@ -27,7 +27,7 @@ content_sha: 6580139035d79022
  - `sgtin` — [код маркировки](./in-store-pickup#tag/inStorePickupLabelIdentifiers/operation/postV3ClickCollectOrdersMetaSgtin)
  - `customsDeclaration` — [номер ДТ](./in-store-pickup#tag/inStorePickupLabelIdentifiers/operation/postV3ClickCollectOrdersMetaCustomsDeclaration). При удалении номера ДТ также удаляется код страны происхождения товара — `originCountryCode`
 
-Лимит запросов на один аккаунт продавца для всех методов получения и удаления идентификаторов маркировки Самовывоз:
+Лимит запросов на один профиль продавца для всех методов получения и удаления идентификаторов маркировки Самовывоз:
 
 | Период | Лимит | Интервал | Всплеск |
 | --- | --- | --- | --- |

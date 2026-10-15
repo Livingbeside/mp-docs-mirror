@@ -9,7 +9,7 @@ tags:
 spec_version: dbs
 source: "https://dev.wildberries.ru/docs/openapi/dbs"
 deprecated: false
-content_sha: 4a8418388149c272
+content_sha: d2264087eb16b603
 ---
 
 # Закрепить GTIN за сборочными заданиями
@@ -22,7 +22,7 @@ content_sha: 4a8418388149c272
 
 Закрепить GTIN можно только за сборочным заданием в [статусе](./dbs#tag/dbsAssemblyOrders/operation/postV3DbsOrdersStatusInfo) `confirm` и если в [идентификаторах маркировки сборочного задания](./dbs#tag/dbsLabelIdentifiers/operation/postV3DbsOrdersMetaDetails) есть поле `gtin`.
 
-Лимит запросов на один аккаунт продавца для всех методов закрепления идентификаторов маркировки DBS:
+Лимит запросов на один профиль продавца для всех методов закрепления идентификаторов маркировки DBS:
 
 | Период | Лимит | Интервал | Всплеск |
 | --- | --- | --- | --- |

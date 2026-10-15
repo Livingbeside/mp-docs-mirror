@@ -9,7 +9,7 @@ tags:
 spec_version: promotion
 source: "https://dev.wildberries.ru/docs/openapi/promotion"
 deprecated: false
-content_sha: f0408ea9f4f6fd5a
+content_sha: cdf1fb0b6116ce31
 ---
 
 # Завершение кампании
@@ -22,7 +22,7 @@ content_sha: f0408ea9f4f6fd5a
  - `9` — активна
  - `11` — пауза
 
-Лимит запросов на один аккаунт продавца:
+Лимит запросов на один профиль продавца:
 
 | Тип | Период | Лимит | Интервал | Всплеск |
 | --- | --- | --- | --- | --- |

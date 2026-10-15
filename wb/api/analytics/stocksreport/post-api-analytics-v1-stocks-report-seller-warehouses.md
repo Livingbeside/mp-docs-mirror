@@ -3,13 +3,13 @@ title: Остатки на складах продавца
 api: wb-analytics
 method: POST
 path: /api/analytics/v1/stocks-report/seller-warehouses
-operation_id: postAnalyticsV1StocksReportSellerWarehouses
+operation_id: postV1StocksReportSellerWarehouses
 tags:
   - stocksReport
 spec_version: analytics
 source: "https://dev.wildberries.ru/docs/openapi/analytics"
 deprecated: false
-content_sha: eb3121d53cc76443
+content_sha: ca75453e3f431878
 ---
 
 # Остатки на складах продавца
@@ -28,7 +28,7 @@ content_sha: eb3121d53cc76443
 
 1 строка ответа — данные об 1 размере товара на 1 складе продавца.
 
-Лимит запросов на один аккаунт продавца:
+Лимит запросов на один профиль продавца:
 
 | Период | Лимит | Интервал | Всплеск |
 | --- | --- | --- | --- |

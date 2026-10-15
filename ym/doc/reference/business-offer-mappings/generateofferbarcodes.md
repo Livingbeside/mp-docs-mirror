@@ -2,14 +2,14 @@
 title: Генерация штрихкодов
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/business-offer-mappings/generateOfferBarcodes.md"
-fetched_at: "2026-10-09T02:05:57Z"
-content_sha: 6c2b48966f85cb36
+fetched_at: "2026-10-15T01:48:34Z"
+content_sha: 26a45e90889905cb
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.63.1
+    content: Diplodoc Platform v5.63.2
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/business-offer-mappings/generateOfferBarcodes.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/business-offer-mappings/generateOfferBarcodes.md
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/business-offer-mappings/generateOfferBarcodes.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21566721
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21642161
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21566721
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21642161
 
 <!-- source: ru/api/business-offer-mappings/generateOfferBarcodes.md -->
 <div class="openapi">

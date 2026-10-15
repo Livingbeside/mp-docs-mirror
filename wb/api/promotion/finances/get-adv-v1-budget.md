@@ -9,7 +9,7 @@ tags:
 spec_version: promotion
 source: "https://dev.wildberries.ru/docs/openapi/promotion"
 deprecated: true
-content_sha: b7ee87afe3847e5f
+content_sha: e613c9ad7850e006
 ---
 
 # Бюджет кампании
@@ -22,7 +22,7 @@ content_sha: b7ee87afe3847e5f
 
 Метод будет отключен [16 ноября](https://dev.wildberries.ru/release-notes?id=582).
 
-Лимит запросов на один аккаунт продавца:
+Лимит запросов на один профиль продавца:
 
 | Тип | Период | Лимит | Интервал | Всплеск |
 | --- | --- | --- | --- | --- |
@@ -43,8 +43,8 @@ content_sha: b7ee87afe3847e5f
 
 - `cash` — integer. Поле не используется. Значение всегда 0.
 - `netting` — integer. Поле не используется. Значение всегда 0.
-- `total` — integer. Бюджет кампании в базовых единицах валюты [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances)
-- `currency` — string<ISO 4217>. Валюта [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances)
+- `total` — integer. Бюджет кампании в базовых единицах валюты [профиля продавца](https://cmp.wildberries.ru/campaigns/finances)
+- `currency` — string<ISO 4217>. Валюта [профиля продавца](https://cmp.wildberries.ru/campaigns/finances)
 
 **400** — Неправильный запрос
 

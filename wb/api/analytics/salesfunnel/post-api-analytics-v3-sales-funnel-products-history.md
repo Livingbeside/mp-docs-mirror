@@ -9,7 +9,7 @@ tags:
 spec_version: analytics
 source: "https://dev.wildberries.ru/docs/openapi/analytics"
 deprecated: false
-content_sha: 560f08b1d1f81cfd
+content_sha: 95ebb6cde4d84b2f
 ---
 
 # Статистика карточек товаров по дням
@@ -37,7 +37,7 @@ content_sha: 560f08b1d1f81cfd
 
  Чтобы получать отчёты за период до года, используйте методы Аналитика продавца CSV — тип DETAIL_HISTORY_REPORT. Отчёты этого типа доступны только с подпиской Джем
 
-Лимит запросов на один аккаунт продавца:
+Лимит запросов на один профиль продавца:
 
 | Тип | Период | Лимит | Интервал | Всплеск |
 | --- | --- | --- | --- | --- |

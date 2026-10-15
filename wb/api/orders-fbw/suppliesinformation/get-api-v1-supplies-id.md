@@ -9,7 +9,7 @@ tags:
 spec_version: ordersfbw
 source: "https://dev.wildberries.ru/docs/openapi/orders-fbw"
 deprecated: false
-content_sha: 5d739a31e375bce3
+content_sha: 84b9383ab0ddb573
 ---
 
 # Детали поставки{{ /api/v1/supplies/{ID} }}
@@ -20,7 +20,7 @@ content_sha: 5d739a31e375bce3
 
 Метод возвращает детали поставки по ID.
 
-Лимит запросов на один аккаунт продавца:
+Лимит запросов на один профиль продавца:
 
 | Тип | Период | Лимит | Интервал | Всплеск |
 | --- | --- | --- | --- | --- |

@@ -9,7 +9,7 @@ tags:
 spec_version: analytics
 source: "https://dev.wildberries.ru/docs/openapi/analytics"
 deprecated: false
-content_sha: 1ad63e782c77c32a
+content_sha: 51bcb08ae512afc9
 ---
 
 # Пагинация по товарам в группе
@@ -31,7 +31,7 @@ content_sha: 1ad63e782c77c32a
 
 Данные отчёта обновляются 1 раз в 2 часа.
 
-Лимит запросов на один аккаунт продавца:
+Лимит запросов на один профиль продавца:
 
 | Тип | Период | Лимит | Интервал | Всплеск |
 | --- | --- | --- | --- | --- |

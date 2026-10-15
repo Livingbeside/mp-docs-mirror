@@ -9,7 +9,7 @@ tags:
 spec_version: general
 source: "https://dev.wildberries.ru/docs/openapi/api-information"
 deprecated: false
-content_sha: fa659cb474e22db7
+content_sha: 00e34ea4701b3b15
 ---
 
 # Получить информацию о продавце
@@ -22,7 +22,7 @@ content_sha: fa659cb474e22db7
 
 Метод позволяет получать наименование продавца и ID его профиля.
 
-Лимит запросов на один аккаунт продавца:
+Лимит запросов на один профиль продавца:
 
 | Тип | Период | Лимит | Интервал | Всплеск |
 | --- | --- | --- | --- | --- |
@@ -39,6 +39,7 @@ content_sha: fa659cb474e22db7
 - `sid` — string<UUID>. Уникальный ID продавца на Wildberries, [находящийся в публичном поле токена](./api-information#tag/authorization/Kak-ustroen-token)
 - `tin` — string. ИНН
 - `tradeMark` — string. Торговое наименование продавца
+- `country` — string. Страна регистрации профиля продавца
 
 **401** — Не авторизован
 

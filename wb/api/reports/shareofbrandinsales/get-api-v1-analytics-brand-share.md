@@ -9,7 +9,7 @@ tags:
 spec_version: reports
 source: "https://dev.wildberries.ru/docs/openapi/reports"
 deprecated: false
-content_sha: c5539ee593bbd6eb
+content_sha: 7c275d2ecd376430
 ---
 
 # Получить отчёт
@@ -22,7 +22,7 @@ content_sha: c5539ee593bbd6eb
 
 Можно получить отчёт максимум за 365 дней. Данные доступны с 1 ноября 2022.
 
-Лимит запросов на один аккаунт продавца:
+Лимит запросов на один профиль продавца:
 
 | Тип | Период | Лимит | Интервал | Всплеск |
 | --- | --- | --- | --- | --- |

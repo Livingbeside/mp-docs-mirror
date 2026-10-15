@@ -9,7 +9,7 @@ tags:
 spec_version: finances
 source: "https://dev.wildberries.ru/docs/openapi/documents-and-accounting"
 deprecated: false
-content_sha: 05b16d9ee2e30aba
+content_sha: c038b0c51d784ae4
 ---
 
 # Категории документов
@@ -20,7 +20,7 @@ content_sha: 05b16d9ee2e30aba
 
 Метод возвращает категории документов для получения [списка документов продавца](./documents-and-accounting#tag/documents/operation/getV1DocumentsList).
 
-Лимит запросов на один аккаунт продавца:
+Лимит запросов на один профиль продавца:
 
 | Тип | Период | Лимит | Интервал | Всплеск |
 | --- | --- | --- | --- | --- |

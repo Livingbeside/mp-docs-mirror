@@ -9,7 +9,7 @@ tags:
 spec_version: ordersdbw
 source: "https://dev.wildberries.ru/docs/openapi/orders-dbw"
 deprecated: false
-content_sha: ac484c59f86b7bad
+content_sha: dbaabd550aff9bb6
 ---
 
 # Получить стикеры сборочных заданий
@@ -34,7 +34,7 @@ content_sha: ac484c59f86b7bad
  - 580x400 px при `width=58&height=40` в запросе
  - 400x300 px при `width=40&height=30` в запросе
 
-Лимит запросов на один аккаунт продавца для следующих методов DBW:
+Лимит запросов на один профиль продавца для следующих методов DBW:
 
  получение и обновление списка контактов
 

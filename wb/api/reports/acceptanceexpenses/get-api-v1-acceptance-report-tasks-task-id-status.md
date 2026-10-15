@@ -9,7 +9,7 @@ tags:
 spec_version: reports
 source: "https://dev.wildberries.ru/docs/openapi/reports"
 deprecated: false
-content_sha: 849edb14d994eb86
+content_sha: 2dcfae5e584bedbc
 ---
 
 # Проверить статус{{ /api/v1/acceptance_report/tasks/{task_id}/status }}
@@ -20,7 +20,7 @@ content_sha: 849edb14d994eb86
 
 Метод возвращает статус [задания на генерацию](./reports#tag/acceptanceExpenses/operation/getV1AcceptanceReport) отчёта об [операциях при приёмке](./reports#tag/acceptanceExpenses/operation/getV1AcceptanceReportTasksTaskIdDownload).
 
-Лимит запросов на один аккаунт продавца:
+Лимит запросов на один профиль продавца:
 
 | Тип | Период | Лимит | Интервал | Всплеск |
 | --- | --- | --- | --- | --- |

@@ -9,7 +9,7 @@ tags:
 spec_version: promotion
 source: "https://dev.wildberries.ru/docs/openapi/promotion"
 deprecated: false
-content_sha: 88ef0460df102208
+content_sha: ebe41ec7dfdb9a42
 ---
 
 # Удалить ставки поисковых кластеров
@@ -24,7 +24,7 @@ content_sha: 88ef0460df102208
  - ручной ставкой
  - моделью оплаты `cpm` — за показы
 
-Лимит запросов на один аккаунт продавца:
+Лимит запросов на один профиль продавца:
 
 | Тип | Период | Лимит | Интервал | Всплеск |
 | --- | --- | --- | --- | --- |

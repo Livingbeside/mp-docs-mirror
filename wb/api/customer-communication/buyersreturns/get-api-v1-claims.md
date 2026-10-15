@@ -9,7 +9,7 @@ tags:
 spec_version: communication
 source: "https://dev.wildberries.ru/docs/openapi/customer-communication"
 deprecated: false
-content_sha: b0ff95cb6a5e37a0
+content_sha: 50d62ffa59b3cb9e
 ---
 
 # Заявки покупателей на возврат
@@ -20,7 +20,7 @@ content_sha: b0ff95cb6a5e37a0
 
 Метод возвращает заявки покупателей на возврат товаров за последние 14 дней. Вы можете [отвечать на эти заявки](./customer-communication#tag/buyersReturns/operation/patchV1Claim).
 
-Лимит запросов на один аккаунт продавца:
+Лимит запросов на один профиль продавца:
 
 | Тип | Период | Лимит | Интервал | Всплеск |
 | --- | --- | --- | --- | --- |

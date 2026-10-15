@@ -9,7 +9,7 @@ tags:
 spec_version: order
 source: "https://dev.wildberries.ru/docs/openapi/orders-fbs"
 deprecated: false
-content_sha: 4dfc09e5ccdd89b2
+content_sha: 3ceb5830a388b68b
 ---
 
 # Добавить данные СПОТ в поставку{{ /api/marketplace/v3/fbs/supplies/{supplyId}/spot }}
@@ -22,7 +22,7 @@ content_sha: 4dfc09e5ccdd89b2
 
 СПОТ можно добавить только в [поставку](./orders-fbs#tag/fbsSupplies/operation/getV3SuppliesSupplyId) с признаком `"spotAvailable":true`.
 
-Лимит запросов на один аккаунт продавца для методов сборочных заданий, поставок, пропусков и настроек автовозврата FBS:
+Лимит запросов на один профиль продавца для методов сборочных заданий, поставок, пропусков и настроек автовозврата FBS:
 
 | Период | Лимит | Интервал | Всплеск |
 | --- | --- | --- | --- |

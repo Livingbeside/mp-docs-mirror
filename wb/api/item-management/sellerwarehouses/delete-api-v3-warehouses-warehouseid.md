@@ -9,7 +9,7 @@ tags:
 spec_version: items
 source: "https://dev.wildberries.ru/docs/openapi/item-management"
 deprecated: false
-content_sha: ef0d729410bc8a6d
+content_sha: e127e60cf0b4fabc
 ---
 
 # Удалить склад продавца{{ /api/v3/warehouses/{warehouseId} }}
@@ -20,7 +20,7 @@ content_sha: ef0d729410bc8a6d
 
 Метод удаляет [склад продавца](./item-management#tag/sellerWarehouses/operation/getV3Warehouses).
 
-Лимит запросов на один аккаунт продавца для всех методов складов продавца:
+Лимит запросов на один профиль продавца для всех методов складов продавца:
 
 | Период | Лимит | Интервал | Всплеск |
 | --- | --- | --- | --- |
@@ -58,15 +58,13 @@ content_sha: ef0d729410bc8a6d
 
 **403** — Доступ запрещён
 
-- `code` — string. Код ошибки
-- `message` — string. Описание ошибки
-- `data` — object. Дополнительные данные ошибки
+- `code` — string **обязательный**. Код ошибки
+- `message` — string **обязательный**. Детали ошибки
 
 **404** — Не найдено
 
-- `code` — string. Код ошибки
-- `message` — string. Описание ошибки
-- `data` — object. Дополнительные данные ошибки
+- `code` — string **обязательный**. Код ошибки
+- `message` — string **обязательный**. Детали ошибки
 
 **429** — Слишком много запросов
 

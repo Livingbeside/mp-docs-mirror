@@ -9,7 +9,7 @@ tags:
 spec_version: analytics
 source: "https://dev.wildberries.ru/docs/openapi/analytics"
 deprecated: false
-content_sha: b84974d5cd94650f
+content_sha: bfa14916ac888717
 ---
 
 # Получить отчёт
@@ -34,7 +34,7 @@ content_sha: b84974d5cd94650f
 
 Можно использовать пагинацию.
 
-Лимит запросов на один аккаунт продавца:
+Лимит запросов на один профиль продавца:
 
 | Тип | Период | Лимит | Интервал | Всплеск |
 | --- | --- | --- | --- | --- |

@@ -9,7 +9,7 @@ tags:
 spec_version: items
 source: "https://dev.wildberries.ru/docs/openapi/item-management"
 deprecated: false
-content_sha: ecc1d67ecd05c517
+content_sha: 027f936532b9e5e6
 ---
 
 # Обновить список контактов{{ /api/v3/dbw/warehouses/{warehouseId}/contacts }}
@@ -26,7 +26,7 @@ content_sha: ecc1d67ecd05c517
 
 К складу можно добавить максимум 5 контактов. Чтобы удалить контакты, отправьте пустой массив `contacts`.
 
-Лимит запросов на один аккаунт продавца для следующих методов DBW:
+Лимит запросов на один профиль продавца для следующих методов DBW:
 
  получение и обновление списка контактов
 
@@ -62,9 +62,8 @@ content_sha: ecc1d67ecd05c517
 
 **400** — Неправильный запрос
 
-- `code` — string. Код ошибки
-- `message` — string. Описание ошибки
-- `data` — object. Дополнительные данные ошибки
+- `code` — string **обязательный**. Код ошибки
+- `message` — string **обязательный**. Детали ошибки
 
 **401** — Не авторизован
 
@@ -84,9 +83,8 @@ content_sha: ecc1d67ecd05c517
 
 **403** — Доступ запрещён
 
-- `code` — string. Код ошибки
-- `message` — string. Описание ошибки
-- `data` — object. Дополнительные данные ошибки
+- `code` — string **обязательный**. Код ошибки
+- `message` — string **обязательный**. Детали ошибки
 
 **429** — Слишком много запросов
 

@@ -9,7 +9,7 @@ tags:
 spec_version: promotion
 source: "https://dev.wildberries.ru/docs/openapi/promotion"
 deprecated: false
-content_sha: af442968c351a1b7
+content_sha: 01a9ebc451e0c784
 ---
 
 # Детальная информация об акциях
@@ -20,7 +20,7 @@ content_sha: af442968c351a1b7
 
 Метод возвращает подробную информацию об [акции](./promotion#tag/promoCalendar/operation/getV1CalendarPromotionsDetails) по ID.
 
-Лимит запросов на один аккаунт продавца для всех методов категории Календарь акций:
+Лимит запросов на один профиль продавца для всех методов категории Календарь акций:
 
 | Тип | Период | Лимит | Интервал | Всплеск |
 | --- | --- | --- | --- | --- |

@@ -9,7 +9,7 @@ tags:
 spec_version: items
 source: "https://dev.wildberries.ru/docs/openapi/item-management"
 deprecated: false
-content_sha: 8ef3acc2a56a3403
+content_sha: adb4abd8b1626b13
 ---
 
 # Восстановление карточек товаров из корзины
@@ -22,7 +22,7 @@ content_sha: 8ef3acc2a56a3403
 
  Карточка товара сохраняет тот же imtID — ID для [объединённых](/knowledge-base/articles/019d49a4-1320-71bb-9dac-8ba07e7177ce/rabota-s-tovarami#obuedinenie-i-razuedinenie-kartochek-tovarov) карточек товаров — что был присвоен ей при перемещении в корзину
 
-Лимит запросов на один аккаунт продавца:
+Лимит запросов на один профиль продавца:
 
 | Тип | Период | Лимит | Интервал | Всплеск |
 | --- | --- | --- | --- | --- |

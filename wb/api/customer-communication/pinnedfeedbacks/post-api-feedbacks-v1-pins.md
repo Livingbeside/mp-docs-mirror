@@ -9,7 +9,7 @@ tags:
 spec_version: communication
 source: "https://dev.wildberries.ru/docs/openapi/customer-communication"
 deprecated: false
-content_sha: b3fe112dbaf78852
+content_sha: edf71bde74882aec
 ---
 
 # Закрепить отзывы
@@ -24,7 +24,7 @@ content_sha: b3fe112dbaf78852
 
 Метод доступен по [подписке Джем](https://seller.wildberries.ru/monetization/jam) или c [тарифной опцией](https://seller.wildberries.ru/tariff-constructor) **Закрепление отзыва**.
 
-Лимит запросов на один аккаунт продавца для всех методов категории Вопросы и отзывы:
+Лимит запросов на один профиль продавца для всех методов категории Вопросы и отзывы:
 
 | Тип | Период | Лимит | Интервал | Всплеск |
 | --- | --- | --- | --- | --- |

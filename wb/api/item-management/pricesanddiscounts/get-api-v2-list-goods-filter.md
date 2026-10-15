@@ -9,7 +9,7 @@ tags:
 spec_version: items
 source: "https://dev.wildberries.ru/docs/openapi/item-management"
 deprecated: false
-content_sha: 90eff95791b32f30
+content_sha: 2e1837e6314e49a7
 ---
 
 # Получить товары с ценами
@@ -28,7 +28,7 @@ content_sha: 90eff95791b32f30
  - о [нескольких товарах по артикулам](./item-management#tag/pricesAndDiscounts/operation/postV2ListGoodsFilter)
  - о [размерах товара](./item-management#tag/pricesAndDiscounts/operation/getV2ListGoodsSizeNm)
 
-Лимит запросов на один аккаунт продавца для всех методов категории Цены и скидки:
+Лимит запросов на один профиль продавца для всех методов категории Цены и скидки:
 
 | Тип | Период | Лимит | Интервал | Всплеск |
 | --- | --- | --- | --- | --- |

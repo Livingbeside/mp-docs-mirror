@@ -9,7 +9,7 @@ tags:
 spec_version: ordersdbw
 source: "https://dev.wildberries.ru/docs/openapi/orders-dbw"
 deprecated: false
-content_sha: cfcf4a26d1c3ac88
+content_sha: 93ee514987c503c0
 ---
 
 # Закрепить GTIN за сборочным заданием{{ /api/v3/dbw/orders/{orderId}/meta/gtin }}
@@ -22,7 +22,7 @@ content_sha: cfcf4a26d1c3ac88
 
 Закрепить GTIN можно только за сборочным заданием в [статусе](./orders-dbw#tag/dbwAssemblyOrders/operation/postV3DbwOrdersStatus) `confirm` и если в [идентификаторах маркировки сборочного задания](./orders-dbw#tag/dbwLabelIdentifiers/operation/postV3DbwOrdersMetaDetails) есть поле `gtin`.
 
-Лимит запросов на один аккаунт продавца для всех методов закрепления идентификаторов маркировки DBW:
+Лимит запросов на один профиль продавца для всех методов закрепления идентификаторов маркировки DBW:
 
 | Период | Лимит | Интервал | Всплеск |
 | --- | --- | --- | --- |

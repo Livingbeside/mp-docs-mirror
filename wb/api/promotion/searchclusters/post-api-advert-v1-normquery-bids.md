@@ -1,5 +1,5 @@
 ---
-title: Установить ставки для поисковых кластеров в валюте аккаунта продавца
+title: Установить ставки для поисковых кластеров в валюте профиля продавца
 api: wb-promotion
 method: POST
 path: /api/advert/v1/normquery/bids
@@ -9,10 +9,10 @@ tags:
 spec_version: promotion
 source: "https://dev.wildberries.ru/docs/openapi/promotion"
 deprecated: false
-content_sha: 116d2d4b3386e97d
+content_sha: 7b6633296f360f93
 ---
 
-# Установить ставки для поисковых кластеров в валюте аккаунта продавца
+# Установить ставки для поисковых кластеров в валюте профиля продавца
 
 `POST /api/advert/v1/normquery/bids`
 
@@ -22,10 +22,10 @@ content_sha: 116d2d4b3386e97d
  Персональному токену, 
  Сервисному токену
 
-Метод устанавливает ставки на поисковые кластеры в валюте [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances).
+Метод устанавливает ставки на поисковые кластеры в валюте [профиля продавца](https://cmp.wildberries.ru/campaigns/finances).
 Можно использовать только для кампаний c ручной ставкой и моделью оплаты `cpm` — за показы.
 
-Лимит запросов на один аккаунт продавца:
+Лимит запросов на один профиль продавца:
 
 | Тип | Период | Лимит | Интервал | Всплеск |
 | --- | --- | --- | --- | --- |
@@ -40,7 +40,7 @@ content_sha: 116d2d4b3386e97d
   - `advertId` — integer **обязательный**. ID кампании
   - `nmId` — integer **обязательный**. Артикул WB
   - `normQuery` — string **обязательный**. Поисковый кластер
-  - `bidMinorUnits` — integer **обязательный**. Ставка в разменных единицах — 0,01 от базовой валюты [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances). Допустимый шаг ставки указан в ответе метода [GET /api/advert/v1/config](./promotion#tag/campaignManagement/operation/getV1Config)
+  - `bidMinorUnits` — integer **обязательный**. Ставка в разменных единицах — 0,01 от базовой валюты [профиля продавца](https://cmp.wildberries.ru/campaigns/finances). Допустимый шаг ставки указан в ответе метода [GET /api/advert/v1/config](./promotion#tag/campaignManagement/operation/getV1Config)
 
 ## Ответы
 
@@ -50,7 +50,7 @@ content_sha: 116d2d4b3386e97d
   - `advertId` — integer **обязательный**. ID кампании
   - `nmId` — integer **обязательный**. Артикул WB
   - `normQuery` — string **обязательный**. Поисковый кластер — это группа похожих поисковых запросов, по которым покупатели находят товары
-  - `currency` — string<ISO 4217> **обязательный**. Валюта [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances)
+  - `currency` — string<ISO 4217> **обязательный**. Валюта [профиля продавца](https://cmp.wildberries.ru/campaigns/finances)
 - `failed` — array[object] **обязательный**
   - `advertId` — integer **обязательный**. ID кампании
   - `nmId` — integer **обязательный**. Артикул WB

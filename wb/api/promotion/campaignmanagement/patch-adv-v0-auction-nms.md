@@ -9,7 +9,7 @@ tags:
 spec_version: promotion
 source: "https://dev.wildberries.ru/docs/openapi/promotion"
 deprecated: false
-content_sha: 89f7e9d6bf123fde
+content_sha: 1e36df8f3077ab48
 ---
 
 # Изменение списка карточек товаров в кампаниях
@@ -25,7 +25,7 @@ content_sha: 89f7e9d6bf123fde
 Для добавляемых товаров устанавливается текущая минимальная ставка.
 
  
-Лимит запросов на один аккаунт продавца:
+Лимит запросов на один профиль продавца:
 
 | Тип | Период | Лимит | Интервал | Всплеск |
 | --- | --- | --- | --- | --- |

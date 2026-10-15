@@ -9,7 +9,7 @@ tags:
 spec_version: dbs
 source: "https://dev.wildberries.ru/docs/openapi/dbs"
 deprecated: false
-content_sha: e4236c5acc89f17b
+content_sha: 4cfef9bf0a40e933
 ---
 
 # Закрепить IMEI за сборочными заданиями
@@ -24,7 +24,7 @@ content_sha: e4236c5acc89f17b
 
 Закрепить IMEI можно только за сборочным заданием в [статусе](./dbs#tag/dbsAssemblyOrders/operation/postV3DbsOrdersStatusInfo) `confirm` и если в [идентификаторах маркировки сборочного задания](./dbs#tag/dbsLabelIdentifiers/operation/postV3DbsOrdersMetaDetails) есть поле `imei`.
 
-Лимит запросов на один аккаунт продавца для всех методов закрепления идентификаторов маркировки DBS:
+Лимит запросов на один профиль продавца для всех методов закрепления идентификаторов маркировки DBS:
 
 | Период | Лимит | Интервал | Всплеск |
 | --- | --- | --- | --- |

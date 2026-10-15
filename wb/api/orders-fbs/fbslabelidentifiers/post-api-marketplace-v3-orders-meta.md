@@ -9,7 +9,7 @@ tags:
 spec_version: order
 source: "https://dev.wildberries.ru/docs/openapi/orders-fbs"
 deprecated: false
-content_sha: 8a5ae74b7787290f
+content_sha: 904a64eee832267d
 ---
 
 # Получить идентификаторы маркировки сборочных заданий
@@ -30,7 +30,7 @@ content_sha: 8a5ae74b7787290f
  - `expiration` — [срок годности товара](./orders-fbs#tag/fbsLabelIdentifiers/operation/putV3OrdersOrderIdMetaExpiration)
  - `customsDeclaration` — [номер ДТ](./orders-fbs#tag/fbsLabelIdentifiers/operation/putV3OrdersOrderIdMetaCustomsDeclaration)
 
-Лимит запросов на один аккаунт продавца для всех методов получения и удаления идентификаторов маркировки FBS:
+Лимит запросов на один профиль продавца для всех методов получения и удаления идентификаторов маркировки FBS:
 
 | Период | Лимит | Интервал | Всплеск |
 | --- | --- | --- | --- |

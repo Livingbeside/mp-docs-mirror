@@ -9,7 +9,7 @@ tags:
 spec_version: reports
 source: "https://dev.wildberries.ru/docs/openapi/reports"
 deprecated: false
-content_sha: d80ee58cb6972d0d
+content_sha: 298b4e4a5ef2c78e
 ---
 
 # Проверить статус{{ /api/v1/warehouse_remains/tasks/{task_id}/status }}
@@ -20,7 +20,7 @@ content_sha: d80ee58cb6972d0d
 
 Метод возвращает статус [задания на генерацию](./reports#tag/warehousesInventoryReport/operation/getV1WarehouseRemains) отчёта об [остатках на складах WB](./reports#tag/warehousesInventoryReport/operation/getV1WarehouseRemainsTasksTaskIdDownload).
 
-Лимит запросов на один аккаунт продавца:
+Лимит запросов на один профиль продавца:
 
 | Тип | Период | Лимит | Интервал | Всплеск |
 | --- | --- | --- | --- | --- |

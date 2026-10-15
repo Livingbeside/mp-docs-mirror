@@ -9,7 +9,7 @@ tags:
 spec_version: general
 source: "https://dev.wildberries.ru/docs/openapi/api-information"
 deprecated: false
-content_sha: da8e2ed3c1cc2863
+content_sha: 4ec1146313d82310
 ---
 
 # Получить информацию о подписке Джем
@@ -35,7 +35,7 @@ content_sha: da8e2ed3c1cc2863
  - дата первой активации подписки `since`
  - дата окончания последнего оплаченного периода `till`
 
-Лимит запросов на один аккаунт продавца:
+Лимит запросов на один профиль продавца:
 
 | Период | Лимит | Интервал | Всплеск |
 | --- | --- | --- | --- |

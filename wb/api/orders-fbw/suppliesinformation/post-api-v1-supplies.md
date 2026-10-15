@@ -9,7 +9,7 @@ tags:
 spec_version: ordersfbw
 source: "https://dev.wildberries.ru/docs/openapi/orders-fbw"
 deprecated: false
-content_sha: 9cd59a500406f527
+content_sha: 08eeed602253fd1d
 ---
 
 # Список поставок
@@ -20,7 +20,7 @@ content_sha: 9cd59a500406f527
 
 Метод возвращает список поставок, по умолчанию — последние 1000 поставок.
 
-Лимит запросов на один аккаунт продавца:
+Лимит запросов на один профиль продавца:
 
 | Тип | Период | Лимит | Интервал | Всплеск |
 | --- | --- | --- | --- | --- |

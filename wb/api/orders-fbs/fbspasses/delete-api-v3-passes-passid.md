@@ -9,7 +9,7 @@ tags:
 spec_version: order
 source: "https://dev.wildberries.ru/docs/openapi/orders-fbs"
 deprecated: false
-content_sha: 408364bedf5bec64
+content_sha: 7fcadeca8511bdee
 ---
 
 # Удалить пропуск{{ /api/v3/passes/{passId} }}
@@ -20,7 +20,7 @@ content_sha: 408364bedf5bec64
 
 Метод удаляет пропуск продавца [из списка](./orders-fbs#tag/fbsPasses/operation/getV3Passes).
 
-Лимит запросов на один аккаунт продавца для методов сборочных заданий, поставок, пропусков и настроек автовозврата FBS:
+Лимит запросов на один профиль продавца для методов сборочных заданий, поставок, пропусков и настроек автовозврата FBS:
 
 | Период | Лимит | Интервал | Всплеск |
 | --- | --- | --- | --- |

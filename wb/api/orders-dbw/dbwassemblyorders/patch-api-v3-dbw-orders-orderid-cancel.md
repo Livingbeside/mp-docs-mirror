@@ -9,7 +9,7 @@ tags:
 spec_version: ordersdbw
 source: "https://dev.wildberries.ru/docs/openapi/orders-dbw"
 deprecated: false
-content_sha: f449969097f218ae
+content_sha: c993b727a8b29f9c
 ---
 
 # Отменить сборочное задание{{ /api/v3/dbw/orders/{orderId}/cancel }}
@@ -20,7 +20,7 @@ content_sha: f449969097f218ae
 
 Метод отменяет [сборочное задание](./orders-dbw#tag/dbwAssemblyOrders) и переводит в [статус](./orders-dbw#tag/dbwAssemblyOrders/operation/postV3DbwOrdersStatus) `cancel` — отменено продавцом.
 
-Лимит запросов на один аккаунт продавца для методов DBW:
+Лимит запросов на один профиль продавца для методов DBW:
 
  получение и обновление списка контактов
 

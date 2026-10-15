@@ -9,7 +9,7 @@ tags:
 spec_version: items
 source: "https://dev.wildberries.ru/docs/openapi/item-management"
 deprecated: false
-content_sha: ef757999538ed1ac
+content_sha: 4babd12d37d1cbb2
 ---
 
 # Управление ярлыками в карточке товара
@@ -22,7 +22,7 @@ content_sha: ef757999538ed1ac
 
 При удалении ярлыка из карточки товара он не удаляется из [списка ярлыков](./item-management#tag/labels/operation/getV2Tags) продавца.
 
-Лимит запросов на один аккаунт продавца для всех методов Ярлыков:
+Лимит запросов на один профиль продавца для всех методов Ярлыков:
 
 | Тип | Период | Лимит | Интервал | Всплеск |
 | --- | --- | --- | --- | --- |

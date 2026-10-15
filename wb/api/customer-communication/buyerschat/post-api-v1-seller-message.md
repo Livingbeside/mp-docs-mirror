@@ -9,7 +9,7 @@ tags:
 spec_version: communication
 source: "https://dev.wildberries.ru/docs/openapi/customer-communication"
 deprecated: false
-content_sha: e1d673de8d94809a
+content_sha: 3d45b27d68f595a0
 ---
 
 # Отправить сообщение
@@ -20,7 +20,7 @@ content_sha: e1d673de8d94809a
 
 Метод отправляет сообщения в [чат с покупателем](./customer-communication#tag/buyersChat/operation/getV1SellerChats).
 
-Лимит запросов на один аккаунт продавца:
+Лимит запросов на один профиль продавца:
 
 | Тип | Период | Лимит | Интервал | Всплеск |
 | --- | --- | --- | --- | --- |

@@ -9,7 +9,7 @@ tags:
 spec_version: reports
 source: "https://dev.wildberries.ru/docs/openapi/reports"
 deprecated: false
-content_sha: 0032de1c9aaccf3e
+content_sha: 1dc7818a4ea1d13f
 ---
 
 # Бренды продавца
@@ -24,7 +24,7 @@ content_sha: 0032de1c9aaccf3e
 - Продавались за последние 90 дней
 - Есть в наличии, вне зависимости от склада хранения
 
-Лимит запросов на один аккаунт продавца:
+Лимит запросов на один профиль продавца:
 
 | Тип | Период | Лимит | Интервал | Всплеск |
 | --- | --- | --- | --- | --- |

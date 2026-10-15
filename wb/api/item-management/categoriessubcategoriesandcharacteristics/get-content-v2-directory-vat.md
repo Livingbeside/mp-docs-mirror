@@ -9,7 +9,7 @@ tags:
 spec_version: items
 source: "https://dev.wildberries.ru/docs/openapi/item-management"
 deprecated: false
-content_sha: 23ad4f3075c04917
+content_sha: f1e737145a9485d6
 ---
 
 # Ставка НДС
@@ -20,7 +20,7 @@ content_sha: 23ad4f3075c04917
 
 Метод возвращает возможные значения [характеристики](./item-management#tag/categoriesSubcategoriesAndCharacteristics/operation/getV2ObjectCharcsSubjectId) предмета `Ставка НДС`.
 
-Лимит запросов на один аккаунт продавца для методов Характеристик:
+Лимит запросов на один профиль продавца для методов Характеристик:
 
 | Тип | Период | Лимит | Интервал | Всплеск |
 | --- | --- | --- | --- | --- |

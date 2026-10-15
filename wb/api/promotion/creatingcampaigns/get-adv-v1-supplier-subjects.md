@@ -9,7 +9,7 @@ tags:
 spec_version: promotion
 source: "https://dev.wildberries.ru/docs/openapi/promotion"
 deprecated: false
-content_sha: cf9a569c1c7473f1
+content_sha: 44b9979cf7424ab2
 ---
 
 # Предметы для кампаний
@@ -20,7 +20,7 @@ content_sha: cf9a569c1c7473f1
 
 Метод возвращает список [предметов](./item-management#tag/categoriesSubcategoriesAndCharacteristics/operation/getV2ObjectAll), которые можно добавить в рекламную [кампанию](./promotion#tag/campaigns/operation/getV2Adverts).
 
-Лимит запросов на один аккаунт продавца:
+Лимит запросов на один профиль продавца:
 
 | Тип | Период | Лимит | Интервал | Всплеск |
 | --- | --- | --- | --- | --- |

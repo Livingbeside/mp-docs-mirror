@@ -2,14 +2,14 @@
 title: Лучшие практики
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/concepts/best-practices.md"
-fetched_at: "2026-10-09T02:05:34Z"
-content_sha: 704aab8550dc5c82
+fetched_at: "2026-10-15T01:48:11Z"
+content_sha: 97e8dcba7faeeb45
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.63.1
+    content: Diplodoc Platform v5.63.2
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/concepts/best-practices.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/concepts/best-practices.md
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/concepts/best-practices.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21566721
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21642161
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21566721
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21642161
 
 # Лучшие практики интеграции с API Яндекс Маркета для продавцов
 

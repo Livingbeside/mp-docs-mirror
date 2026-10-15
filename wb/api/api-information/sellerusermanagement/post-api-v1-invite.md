@@ -9,7 +9,7 @@ tags:
 spec_version: general
 source: "https://dev.wildberries.ru/docs/openapi/api-information"
 deprecated: false
-content_sha: 9f9af2c2f65f18df
+content_sha: 2adc68194b6a2e56
 ---
 
 # Создать приглашение для нового пользователя
@@ -32,7 +32,7 @@ content_sha: 9f9af2c2f65f18df
  - при одинаковых значениях `"disabled": true` доступ не будет выдан
  - при одинаковых значениях `"disabled": false` доступ будет выдан
 
-Лимит запросов на один аккаунт продавца:
+Лимит запросов на один профиль продавца:
 
 | Период | Лимит | Интервал | Всплеск |
 | --- | --- | --- | --- |

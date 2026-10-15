@@ -9,7 +9,7 @@ tags:
 spec_version: items
 source: "https://dev.wildberries.ru/docs/openapi/item-management"
 deprecated: false
-content_sha: 0e54de4b77c38b78
+content_sha: aa39602b29c0607f
 ---
 
 # Создание ярлыка
@@ -22,7 +22,7 @@ content_sha: 0e54de4b77c38b78
 
 Созданный ярлык можно получить в общем [списке](./item-management#tag/labels/operation/getV2Tags).
 
-Лимит запросов на один аккаунт продавца для всех методов Ярлыков:
+Лимит запросов на один профиль продавца для всех методов Ярлыков:
 
 | Тип | Период | Лимит | Интервал | Всплеск |
 | --- | --- | --- | --- | --- |

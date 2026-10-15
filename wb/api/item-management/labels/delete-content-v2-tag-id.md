@@ -9,7 +9,7 @@ tags:
 spec_version: items
 source: "https://dev.wildberries.ru/docs/openapi/item-management"
 deprecated: false
-content_sha: 168f0e99c3ef0517
+content_sha: 8b9de1f2170fb4f5
 ---
 
 # Удаление ярлыка{{ /content/v2/tag/{id} }}
@@ -20,7 +20,7 @@ content_sha: 168f0e99c3ef0517
 
 Метод удаляет ярлык из [списка ярлыков](./item-management#tag/labels/operation/getV2Tags) продавца.
 
-Лимит запросов на один аккаунт продавца для всех методов Ярлыков:
+Лимит запросов на один профиль продавца для всех методов Ярлыков:
 
 | Тип | Период | Лимит | Интервал | Всплеск |
 | --- | --- | --- | --- | --- |

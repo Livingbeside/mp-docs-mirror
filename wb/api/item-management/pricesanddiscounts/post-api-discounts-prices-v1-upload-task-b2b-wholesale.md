@@ -9,7 +9,7 @@ tags:
 spec_version: items
 source: "https://dev.wildberries.ru/docs/openapi/item-management"
 deprecated: false
-content_sha: 3510f0a2dcb62b8d
+content_sha: 0477cdbab08a324b
 ---
 
 # Установить оптовые скидки для B2B-продаж
@@ -26,7 +26,7 @@ content_sha: 3510f0a2dcb62b8d
 
  Получить информацию о процессе установки цен и скидок можно с помощью методов [состояния](./item-management#tag/pricesAndDiscounts/operation/getV2HistoryTasks) и [детализации](./item-management#tag/pricesAndDiscounts/operation/getV2HistoryGoodsTask) обработанной загрузки.
 
-Лимит запросов на один аккаунт продавца для всех методов категории Цены и скидки:
+Лимит запросов на один профиль продавца для всех методов категории Цены и скидки:
 
 | Тип | Период | Лимит | Интервал | Всплеск |
 | --- | --- | --- | --- | --- |

@@ -9,7 +9,7 @@ tags:
 spec_version: general
 source: "https://dev.wildberries.ru/docs/openapi/api-information"
 deprecated: false
-content_sha: f239d6eae5210872
+content_sha: 7f506512427d2e58
 ---
 
 # Проверка подключения
@@ -27,7 +27,7 @@ content_sha: f239d6eae5210872
 
 У каждого сервиса есть свой вариант метода в зависимости от домена.
 
-Лимит запросов на один аккаунт продавца:
+Лимит запросов на один профиль продавца:
 
 | Период | Лимит | Интервал | Всплеск |
 | --- | --- | --- | --- |

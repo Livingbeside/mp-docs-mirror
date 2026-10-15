@@ -9,7 +9,7 @@ tags:
 spec_version: instorepickup
 source: "https://dev.wildberries.ru/docs/openapi/in-store-pickup"
 deprecated: false
-content_sha: a7114d5e65f144d6
+content_sha: 195f21580b91f605
 ---
 
 # Проверить, что заказ принадлежит покупателю
@@ -22,7 +22,7 @@ content_sha: a7114d5e65f144d6
 
 Доступно, если хотя бы одно сборочное задание из заказа находится в статусе prepare - готов к выдаче.
 
-Лимит запросов на один аккаунт продавца:
+Лимит запросов на один профиль продавца:
 
 | Период | Лимит | Интервал | Всплеск |
 | --- | --- | --- | --- |

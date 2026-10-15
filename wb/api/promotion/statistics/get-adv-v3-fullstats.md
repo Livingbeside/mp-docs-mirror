@@ -9,7 +9,7 @@ tags:
 spec_version: promotion
 source: "https://dev.wildberries.ru/docs/openapi/promotion"
 deprecated: false
-content_sha: b09a39b49ce42ae4
+content_sha: 98ae84a39624e3cb
 ---
 
 # Статистика кампаний
@@ -26,7 +26,7 @@ content_sha: b09a39b49ce42ae4
 
 В песочнице статистика кампаний доступна за последние 30 дней. Генерируется только для компаний в статусе `9`, тип `8`, 9 раз в сутки
 
-Лимит запросов на один аккаунт продавца:
+Лимит запросов на один профиль продавца:
 
 | Тип | Период | Лимит | Интервал | Всплеск |
 | --- | --- | --- | --- | --- |
@@ -55,7 +55,7 @@ content_sha: b09a39b49ce42ae4
   - `nm` — integer **обязательный**. Артикул WB
 - `canceled` — integer **обязательный**. Отмены, шт.
 - `clicks` — integer **обязательный**. Количество кликов
-- `cpc` — number<double> **обязательный**. Средняя стоимость клика в базовых единицах валюты [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances)
+- `cpc` — number<double> **обязательный**. Средняя стоимость клика в базовых единицах валюты [профиля продавца](https://cmp.wildberries.ru/campaigns/finances)
 - `cr` — number<double> **обязательный**. CR (conversion rate) — отношение количества заказов к общему количеству кликов
 - `ctr` — number<double> **обязательный**. CTR (click-through rate) — отношение числа кликов к количеству показов в процентах
 - `days` — array[object] **обязательный**
@@ -64,46 +64,46 @@ content_sha: b09a39b49ce42ae4
     - `atbs` — integer **обязательный**. Количество добавлений товаров в корзину
     - `canceled` — integer **обязательный**. Отмены, шт.
     - `clicks` — integer **обязательный**. Количество кликов
-    - `cpc` — number **обязательный**. Средняя стоимость клика в базовых единицах валюты [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances)
+    - `cpc` — number **обязательный**. Средняя стоимость клика в базовых единицах валюты [профиля продавца](https://cmp.wildberries.ru/campaigns/finances)
     - `cr` — number **обязательный**. CR (conversion rate) — отношение количества заказов к общему количеству кликов
     - `ctr` — number **обязательный**. CTR (click-through rate) — отношение числа кликов к количеству показов в процентах
     - `nms` — array[object] **обязательный**. Блок статистики по артикулам WB
       - `atbs` — integer **обязательный**. Количество добавлений товаров в корзину
       - `canceled` — integer **обязательный**. Отмены, шт.
       - `clicks` — integer **обязательный**. Количество кликов
-      - `cpc` — number **обязательный**. Средняя стоимость клика в базовых единицах валюты [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances)
+      - `cpc` — number **обязательный**. Средняя стоимость клика в базовых единицах валюты [профиля продавца](https://cmp.wildberries.ru/campaigns/finances)
       - `cr` — number **обязательный**. CR (conversion rate) — отношение количества заказов к общему количеству кликов
       - `ctr` — number **обязательный**. CTR (click-through rate) — отношение числа кликов к количеству показов в процентах
       - `name` — string **обязательный**. Название товара
       - `nmId` — integer **обязательный**. Артикул WB
       - `orders` — integer **обязательный**. Количество заказов
       - `shks` — integer **обязательный**. Количество заказанных товаров, шт.
-      - `sum` — number **обязательный**. Затраты в базовых единицах валюты [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances)
-      - `sum_price` — number **обязательный**. Заказов на сумму в базовых единицах валюты [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances)
+      - `sum` — number **обязательный**. Затраты в базовых единицах валюты [профиля продавца](https://cmp.wildberries.ru/campaigns/finances)
+      - `sum_price` — number **обязательный**. Заказов на сумму в базовых единицах валюты [профиля продавца](https://cmp.wildberries.ru/campaigns/finances)
       - `views` — integer **обязательный**. Количество просмотров
     - `orders` — integer **обязательный**. Количество заказов
     - `shks` — integer **обязательный**. Количество заказанных товаров, шт.
-    - `sum` — number **обязательный**. Затраты в базовых единицах валюты [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances)
-    - `sum_price` — number **обязательный**. Заказов на сумму в базовых единицах валюты [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances)
+    - `sum` — number **обязательный**. Затраты в базовых единицах валюты [профиля продавца](https://cmp.wildberries.ru/campaigns/finances)
+    - `sum_price` — number **обязательный**. Заказов на сумму в базовых единицах валюты [профиля продавца](https://cmp.wildberries.ru/campaigns/finances)
     - `views` — integer **обязательный**. Количество просмотров
   - `atbs` — integer **обязательный**. Количество добавлений товаров в корзину
   - `canceled` — integer **обязательный**. Отмены, шт.
   - `date` — string<date-time> **обязательный**. Дата, за которую представлены данные
   - `clicks` — integer **обязательный**. Количество кликов
-  - `cpc` — number **обязательный**. Средняя стоимость клика в базовых единицах валюты [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances)
+  - `cpc` — number **обязательный**. Средняя стоимость клика в базовых единицах валюты [профиля продавца](https://cmp.wildberries.ru/campaigns/finances)
   - `cr` — number **обязательный**. CR (conversion rate) — отношение количества заказов к общему количеству посещений кампании
   - `ctr` — number **обязательный**. CTR (click-through rate) — отношение числа кликов к количеству показов в процентах
   - `orders` — integer **обязательный**. Количество заказов
   - `shks` — integer **обязательный**. Количество заказанных товаров, шт.
-  - `sum` — number **обязательный**. Затраты в базовых единицах валюты [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances)
-  - `sum_price` — number **обязательный**. Заказов на сумму в базовых единицах валюты [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances)
+  - `sum` — number **обязательный**. Затраты в базовых единицах валюты [профиля продавца](https://cmp.wildberries.ru/campaigns/finances)
+  - `sum_price` — number **обязательный**. Заказов на сумму в базовых единицах валюты [профиля продавца](https://cmp.wildberries.ru/campaigns/finances)
   - `views` — integer **обязательный**. Количество просмотров
 - `orders` — integer **обязательный**. Количество заказов
 - `shks` — integer **обязательный**. Количество заказанных товаров, шт.
-- `sum` — number<double> **обязательный**. Затраты в базовых единицах валюты [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances)
-- `sum_price` — number<double> **обязательный**. Сумма заказов в базовых единицах валюты [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances)
+- `sum` — number<double> **обязательный**. Затраты в базовых единицах валюты [профиля продавца](https://cmp.wildberries.ru/campaigns/finances)
+- `sum_price` — number<double> **обязательный**. Сумма заказов в базовых единицах валюты [профиля продавца](https://cmp.wildberries.ru/campaigns/finances)
 - `views` — integer **обязательный**. Количество просмотров
-- `currency` — string<ISO 4217> **обязательный**. Валюта [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances)
+- `currency` — string<ISO 4217> **обязательный**. Валюта [профиля продавца](https://cmp.wildberries.ru/campaigns/finances)
 
 **400** — Неправильный запрос
 

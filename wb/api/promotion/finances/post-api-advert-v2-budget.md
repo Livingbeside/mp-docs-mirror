@@ -9,7 +9,7 @@ tags:
 spec_version: promotion
 source: "https://dev.wildberries.ru/docs/openapi/promotion"
 deprecated: false
-content_sha: 70dc30c3c5e19f29
+content_sha: 337d25dd900688b3
 ---
 
 # Остатки бюджетов кампаний
@@ -24,7 +24,7 @@ content_sha: 70dc30c3c5e19f29
  - `9` — активна
  - `11` — на паузе
 
-Лимит запросов на один аккаунт продавца:
+Лимит запросов на один профиль продавца:
 
 | Тип | Период | Лимит | Интервал | Всплеск |
 | --- | --- | --- | --- | --- |
@@ -45,8 +45,8 @@ content_sha: 70dc30c3c5e19f29
 
 - `adverts` — array[object] **обязательный**. Данные по кампаниям
   - `advertId` — integer **обязательный**. ID кампании
-  - `currency` — string<ISO 4217> **обязательный**. Валюта [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances)
-  - `total` — integer **обязательный**. Бюджет кампании в базовых единицах валюты [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances)
+  - `currency` — string<ISO 4217> **обязательный**. Валюта [профиля продавца](https://cmp.wildberries.ru/campaigns/finances)
+  - `total` — integer **обязательный**. Бюджет кампании в базовых единицах валюты [профиля продавца](https://cmp.wildberries.ru/campaigns/finances)
 
 **400** — Неправильный запрос
 

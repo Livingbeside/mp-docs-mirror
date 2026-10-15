@@ -9,7 +9,7 @@ tags:
 spec_version: items
 source: "https://dev.wildberries.ru/docs/openapi/item-management"
 deprecated: false
-content_sha: c486bbbc19621195
+content_sha: c75772a77d5bd7df
 ---
 
 # Генерация баркодов
@@ -20,7 +20,7 @@ content_sha: c486bbbc19621195
 
 Метод генерирует массив уникальных баркодов для создания размера в [карточке товара](./item-management#tag/listingItems/operation/postV2CardsUpload). Можно использовать, если у вас нет собственных баркодов.
 
-Лимит запросов на один аккаунт продавца для всех методов категории Контент:
+Лимит запросов на один профиль продавца для всех методов категории Контент:
 
 | Период | Лимит | Интервал | Всплеск |
 | --- | --- | --- | --- |

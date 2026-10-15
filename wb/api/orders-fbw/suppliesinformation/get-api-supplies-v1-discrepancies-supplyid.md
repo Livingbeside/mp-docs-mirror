@@ -9,7 +9,7 @@ tags:
 spec_version: ordersfbw
 source: "https://dev.wildberries.ru/docs/openapi/orders-fbw"
 deprecated: false
-content_sha: 3e02878789db1564
+content_sha: 4c86009f896a54e1
 ---
 
 # Расхождения в поставке{{ /api/supplies/v1/discrepancies/{supplyId} }}
@@ -46,7 +46,7 @@ content_sha: 3e02878789db1564
  - `"discrepancyType": "shortage"`
  - `"discrepancyLabel": "re-sorting"`
 
-Лимит запросов на один аккаунт продавца:
+Лимит запросов на один профиль продавца:
 
 | Период | Лимит | Интервал | Всплеск |
 | --- | --- | --- | --- |

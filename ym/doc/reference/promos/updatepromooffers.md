@@ -2,14 +2,14 @@
 title: Добавление товаров в акцию/изменение их цен
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/promos/updatePromoOffers.md"
-fetched_at: "2026-10-09T02:06:14Z"
-content_sha: 075bb244e3df8a5a
+fetched_at: "2026-10-15T01:48:54Z"
+content_sha: cfb8fb4e19dbbb8a
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.63.1
+    content: Diplodoc Platform v5.63.2
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/promos/updatePromoOffers.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/promos/updatePromoOffers.md
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/promos/updatePromoOffers.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21566721
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21642161
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21566721
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21642161
 
 <!-- source: ru/api/promos/updatePromoOffers.md -->
 <div class="openapi">

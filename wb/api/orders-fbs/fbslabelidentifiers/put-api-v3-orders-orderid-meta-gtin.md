@@ -9,7 +9,7 @@ tags:
 spec_version: order
 source: "https://dev.wildberries.ru/docs/openapi/orders-fbs"
 deprecated: false
-content_sha: dcce5ae1eb50cd5c
+content_sha: 60a7e7564e922dee
 ---
 
 # Закрепить GTIN за сборочным заданием{{ /api/v3/orders/{orderId}/meta/gtin }}
@@ -23,7 +23,7 @@ content_sha: dcce5ae1eb50cd5c
 
  Закрепить GTIN можно только за сборочным заданием в [статусе](./orders-fbs#tag/fbsAssemblyOrders/operation/postV3OrdersStatus) `confirm` и если в [идентификаторах маркировки сборочного задания](./orders-fbs#tag/fbsLabelIdentifiers/operation/postV3OrdersMeta) есть поле `gtin`.
 
-Лимит запросов на один аккаунт продавца для всех методов закрепления идентификаторов маркировки FBS:
+Лимит запросов на один профиль продавца для всех методов закрепления идентификаторов маркировки FBS:
 
 | Период | Лимит | Интервал | Всплеск |
 | --- | --- | --- | --- |

@@ -9,7 +9,7 @@ tags:
 spec_version: promotion
 source: "https://dev.wildberries.ru/docs/openapi/promotion"
 deprecated: false
-content_sha: 3ca7604cf21abd28
+content_sha: 5a4d05d61fb48f3a
 ---
 
 # Количество медиакампаний
@@ -20,7 +20,7 @@ content_sha: 3ca7604cf21abd28
 
 Метод возвращает количество [медиакампаний](./promotion#tag/media/operation/getV1Advert) продавца с группировкой по статусам.
 
-Лимит запросов на один аккаунт продавца:
+Лимит запросов на один профиль продавца:
 
 | Тип | Период | Лимит | Интервал | Всплеск |
 | --- | --- | --- | --- | --- |

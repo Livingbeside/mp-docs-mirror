@@ -9,7 +9,7 @@ tags:
 spec_version: items
 source: "https://dev.wildberries.ru/docs/openapi/item-management"
 deprecated: false
-content_sha: e7b9a8e5b4d637a5
+content_sha: c3c42175aaaf56d6
 ---
 
 # Список карточек товаров в корзине
@@ -45,7 +45,7 @@ content_sha: e7b9a8e5b4d637a5
  3. Сохраните поля `"cursor":{"trashedAt":"***","nmID":***}` из последнего ответа текущей выгрузки.
 
  
-Лимит запросов на один аккаунт продавца для всех методов категории Контент:
+Лимит запросов на один профиль продавца для всех методов категории Контент:
 
 | Период | Лимит | Интервал | Всплеск |
 | --- | --- | --- | --- |

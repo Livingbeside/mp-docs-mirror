@@ -9,7 +9,7 @@ tags:
 spec_version: dbs
 source: "https://dev.wildberries.ru/docs/openapi/dbs"
 deprecated: false
-content_sha: bb1d553831047587
+content_sha: ef9f94e5ed93558b
 ---
 
 # Удалить идентификаторы маркировки сборочных заданий
@@ -27,7 +27,7 @@ content_sha: bb1d553831047587
  - `sgtin` — [код маркировки Честного знака](./dbs#tag/dbsLabelIdentifiers/operation/postV3DbsOrdersMetaSgtin)
  - `customsDeclaration` — [номер ДТ](./dbs#tag/dbsLabelIdentifiers/operation/postV3DbsOrdersMetaCustomsDeclaration). При удалении номера ДТ также удаляется код страны происхождения товара — `originCountryCode`
 
-Лимит запросов на один аккаунт продавца для всех методов получения и удаления идентификаторов маркировки DBS:
+Лимит запросов на один профиль продавца для всех методов получения и удаления идентификаторов маркировки DBS:
 
 | Период | Лимит | Интервал | Всплеск |
 | --- | --- | --- | --- |

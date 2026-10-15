@@ -9,7 +9,7 @@ tags:
 spec_version: analytics
 source: "https://dev.wildberries.ru/docs/openapi/analytics"
 deprecated: false
-content_sha: 7a466244c9694865
+content_sha: d07a65142cc95270
 ---
 
 # Остатки на складах WB
@@ -29,7 +29,7 @@ content_sha: 7a466244c9694865
 
 1 строка ответа — данные об 1 размере товара на 1 складе WB.
 
-Лимит запросов на один аккаунт продавца:
+Лимит запросов на один профиль продавца:
 
 | Период | Лимит | Интервал | Всплеск |
 | --- | --- | --- | --- |

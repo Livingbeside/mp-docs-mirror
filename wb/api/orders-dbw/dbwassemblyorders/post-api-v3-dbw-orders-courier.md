@@ -9,7 +9,7 @@ tags:
 spec_version: ordersdbw
 source: "https://dev.wildberries.ru/docs/openapi/orders-dbw"
 deprecated: false
-content_sha: d63b4375fcf6e7e3
+content_sha: d6c334bbb75e6927
 ---
 
 # Информация о курьере
@@ -21,7 +21,7 @@ content_sha: d63b4375fcf6e7e3
 Метод возвращает контактные данные и номер автомобиля курьера по ID сборочного задания. 
  Для сборочных заданий в статусах `confirm`, `complete`.
 
-Лимит запросов на один аккаунт продавца для следующих методов DBW:
+Лимит запросов на один профиль продавца для следующих методов DBW:
 
  получение и обновление списка контактов
 

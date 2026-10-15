@@ -9,7 +9,7 @@ tags:
 spec_version: items
 source: "https://dev.wildberries.ru/docs/openapi/item-management"
 deprecated: false
-content_sha: 38edfa42f594e1e8
+content_sha: f24e216f407c1671
 ---
 
 # Список рекомендаций в карточках товаров
@@ -24,7 +24,7 @@ content_sha: 38edfa42f594e1e8
 
 Метод возвращает список [рекомендаций](https://seller.wildberries.ru/recommendations-v3) в карточках товаров.
 
-Лимит запросов на один аккаунт продавца:
+Лимит запросов на один профиль продавца:
 
 | Период | Лимит | Интервал | Всплеск |
 | --- | --- | --- | --- |

@@ -9,7 +9,7 @@ tags:
 spec_version: ordersfbw
 source: "https://dev.wildberries.ru/docs/openapi/orders-fbw"
 deprecated: false
-content_sha: f9e03f92e3aa9abe
+content_sha: 3f9007c38c7187e3
 ---
 
 # Удалить товары из черновика{{ /api/supplies/v1/drafts/{draftId}/items }}
@@ -28,7 +28,7 @@ content_sha: f9e03f92e3aa9abe
  Баркоды не валидируются. Если в запросе вы передали некорректные баркоды, вы не получите ошибку. При этом корректные баркоды будут удалены из черновика.
  
 
-Лимит запросов на один аккаунт продавца:
+Лимит запросов на один профиль продавца:
 
 | Период | Лимит | Интервал | Всплеск |
 | --- | --- | --- | --- |

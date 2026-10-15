@@ -9,7 +9,7 @@ tags:
 spec_version: ordersfbw
 source: "https://dev.wildberries.ru/docs/openapi/orders-fbw"
 deprecated: false
-content_sha: 2a2f7fdb9dd55228
+content_sha: 6c638c3691cf6f8e
 ---
 
 # Список товаров в черновике{{ /api/supplies/v1/drafts/{draftId}/items }}
@@ -24,7 +24,7 @@ content_sha: 2a2f7fdb9dd55228
 
 Метод возвращает список товаров черновика.
 
-Лимит запросов на один аккаунт продавца:
+Лимит запросов на один профиль продавца:
 
 | Период | Лимит | Интервал | Всплеск |
 | --- | --- | --- | --- |

@@ -9,7 +9,7 @@ tags:
 spec_version: instorepickup
 source: "https://dev.wildberries.ru/docs/openapi/in-store-pickup"
 deprecated: false
-content_sha: 4510a67f990a0c9d
+content_sha: 201e18f6f8829a9e
 ---
 
 # Информация о покупателе
@@ -24,7 +24,7 @@ content_sha: 4510a67f990a0c9d
  - `confirm` — на сборке
  - `prepare` — готов к выдаче
 
-Лимит запросов на один аккаунт продавца для методов сборочных заданий Самовывоз:
+Лимит запросов на один профиль продавца для методов сборочных заданий Самовывоз:
 
 | Период | Лимит | Интервал | Всплеск |
 | --- | --- | --- | --- |

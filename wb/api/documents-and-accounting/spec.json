@@ -1893,7 +1893,7 @@
   "paths": {
     "/api/finance/v1/acquiring/detailed": {
       "post": {
-        "description": "<div class='description-title'><span>Описание метода</span></div>\n\n\n<div class=\"description_token\">\n    Метод <a href=\"./api-information#tag/authorization/Pravila-ispolzovaniya-tokenov-dostupa-k-API\">доступен</a> по\n        <strong>Персональному</strong> токену, \n        <strong>Сервисному</strong> токену\n</div>\n\nМетод возвращает детализации к [отчётам об издержках на приём платежей](https://seller.wildberries.ru/suppliers-mutual-settlements/reports-implementations/acquiring-reports) за указанный период.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 1 запрос | 1 мин | 1 запрос |\n</div>\n",
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\n\n<div class=\"description_token\">\n    Метод <a href=\"./api-information#tag/authorization/Pravila-ispolzovaniya-tokenov-dostupa-k-API\">доступен</a> по\n        <strong>Персональному</strong> токену, \n        <strong>Сервисному</strong> токену\n</div>\n\nМетод возвращает детализации к [отчётам об издержках на приём платежей](https://seller.wildberries.ru/suppliers-mutual-settlements/reports-implementations/acquiring-reports) за указанный период.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один профиль продавца:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 1 запрос | 1 мин | 1 запрос |\n</div>\n",
         "operationId": "postV1AcquiringDetailed",
         "requestBody": {
           "content": {
@@ -1977,7 +1977,7 @@
     },
     "/api/finance/v1/acquiring/detailed/{reportId}": {
       "post": {
-        "description": "<div class='description-title'><span>Описание метода</span></div>\n\n\n<div class=\"description_token\">\n    Метод <a href=\"./api-information#tag/authorization/Pravila-ispolzovaniya-tokenov-dostupa-k-API\">доступен</a> по\n        <strong>Персональному</strong> токену, \n        <strong>Сервисному</strong> токену\n</div>\n\nМетод возвращает детализации к [отчётам об издержках на приём платежей](https://seller.wildberries.ru/suppliers-mutual-settlements/reports-implementations/acquiring-reports) по ID отчётов.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 1 запрос | 1 мин | 1 запрос |\n</div>\n",
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\n\n<div class=\"description_token\">\n    Метод <a href=\"./api-information#tag/authorization/Pravila-ispolzovaniya-tokenov-dostupa-k-API\">доступен</a> по\n        <strong>Персональному</strong> токену, \n        <strong>Сервисному</strong> токену\n</div>\n\nМетод возвращает детализации к [отчётам об издержках на приём платежей](https://seller.wildberries.ru/suppliers-mutual-settlements/reports-implementations/acquiring-reports) по ID отчётов.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один профиль продавца:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 1 запрос | 1 мин | 1 запрос |\n</div>\n",
         "operationId": "postV1AcquiringDetailedReportId",
         "parameters": [
           {
@@ -2076,7 +2076,7 @@
     },
     "/api/finance/v1/acquiring/list": {
       "post": {
-        "description": "<div class='description-title'><span>Описание метода</span></div>\n\n\n<div class=\"description_token\">\n    Метод <a href=\"./api-information#tag/authorization/Pravila-ispolzovaniya-tokenov-dostupa-k-API\">доступен</a> по\n        <strong>Персональному</strong> токену, \n        <strong>Сервисному</strong> токену\n</div>\n\nМетод возвращает список отчётов об издержках на приём платежей по формату [таблицы отчётов](https://seller.wildberries.ru/suppliers-mutual-settlements/reports-implementations/acquiring-reports).\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 1 запрос | 1 мин | 1 запрос |\n</div>\n",
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\n\n<div class=\"description_token\">\n    Метод <a href=\"./api-information#tag/authorization/Pravila-ispolzovaniya-tokenov-dostupa-k-API\">доступен</a> по\n        <strong>Персональному</strong> токену, \n        <strong>Сервисному</strong> токену\n</div>\n\nМетод возвращает список отчётов об издержках на приём платежей по формату [таблицы отчётов](https://seller.wildberries.ru/suppliers-mutual-settlements/reports-implementations/acquiring-reports).\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один профиль продавца:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 1 запрос | 1 мин | 1 запрос |\n</div>\n",
         "operationId": "postV1AcquiringList",
         "requestBody": {
           "content": {
@@ -2157,7 +2157,7 @@
     },
     "/api/finance/v1/sales-reports/detailed": {
       "post": {
-        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод возвращает детализации к [отчётам реализации](https://seller.wildberries.ru/suppliers-mutual-settlements) за указанный период.\n<br><br>\nДанные доступны с 29 января 2024 года.\n\n\n<div class=\"description_important\">\n  Вы можете выгрузить данные в <a href=\"/knowledge-base/articles/019d49a4-650c-7b04-9596-ba441936f9d3\">Google Таблицы</a>\n</div>\n\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 мин | 1 запрос | 1 мин | 1 запрос |\n| Сервисный | 1 мин | 1 запрос | 1 мин | 1 запрос |\n| Базовый с секретом | 1 мин | 1 запрос | 1 мин | 1 запрос |\n| Базовый | 24 ч | 2 запроса | 12 ч | 1 запрос |\n</div>\n",
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод возвращает детализации к [отчётам реализации](https://seller.wildberries.ru/suppliers-mutual-settlements) за указанный период.\n<br><br>\nДанные доступны с 29 января 2024 года.\n\n\n<div class=\"description_important\">\n  Вы можете выгрузить данные в <a href=\"/knowledge-base/articles/019d49a4-650c-7b04-9596-ba441936f9d3\">Google Таблицы</a>\n</div>\n\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один профиль продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 мин | 1 запрос | 1 мин | 1 запрос |\n| Сервисный | 1 мин | 1 запрос | 1 мин | 1 запрос |\n| Базовый с секретом | 1 мин | 1 запрос | 1 мин | 1 запрос |\n| Базовый | 24 ч | 2 запроса | 12 ч | 1 запрос |\n</div>\n",
         "operationId": "postV1SalesReportsDetailed",
         "requestBody": {
           "content": {
@@ -2222,7 +2222,7 @@
     },
     "/api/finance/v1/sales-reports/detailed/{reportId}": {
       "post": {
-        "description": "<div class='description-title'><span>Описание метода</span></div>\n\n\n<div class=\"description_token\">\n    Метод <a href=\"./api-information#tag/authorization/Pravila-ispolzovaniya-tokenov-dostupa-k-API\">доступен</a> по\n        <strong>Персональному</strong> токену, \n        <strong>Сервисному</strong> токену\n</div>\n\nМетод возвращает детализации к [отчётам реализации](https://seller.wildberries.ru/suppliers-mutual-settlements) по ID отчётов.\n<br><br>\nДанные доступны с 29 января 2024 года.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 1 запрос | 1 мин | 1 запрос |\n</div>\n",
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\n\n<div class=\"description_token\">\n    Метод <a href=\"./api-information#tag/authorization/Pravila-ispolzovaniya-tokenov-dostupa-k-API\">доступен</a> по\n        <strong>Персональному</strong> токену, \n        <strong>Сервисному</strong> токену\n</div>\n\nМетод возвращает детализации к [отчётам реализации](https://seller.wildberries.ru/suppliers-mutual-settlements) по ID отчётов.\n<br><br>\nДанные доступны с 29 января 2024 года.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один профиль продавца:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 1 запрос | 1 мин | 1 запрос |\n</div>\n",
         "operationId": "postV1SalesReportsDetailedReportId",
         "parameters": [
           {
@@ -2321,7 +2321,7 @@
     },
     "/api/finance/v1/sales-reports/list": {
       "post": {
-        "description": "<div class='description-title'><span>Описание метода</span></div>\n\n\n<div class=\"description_token\">\n    Метод <a href=\"./api-information#tag/authorization/Pravila-ispolzovaniya-tokenov-dostupa-k-API\">доступен</a> по\n        <strong>Персональному</strong> токену, \n        <strong>Сервисному</strong> токену\n</div>\n\nМетод возвращает список отчётов релизации по формату [таблицы отчётов](https://seller.wildberries.ru/suppliers-mutual-settlements).\n<br><br>\nДанные доступны с 29 января 2024 года.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 1 запрос | 1 мин | 1 запрос |\n</div>\n",
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\n\n<div class=\"description_token\">\n    Метод <a href=\"./api-information#tag/authorization/Pravila-ispolzovaniya-tokenov-dostupa-k-API\">доступен</a> по\n        <strong>Персональному</strong> токену, \n        <strong>Сервисному</strong> токену\n</div>\n\nМетод возвращает список отчётов релизации по формату [таблицы отчётов](https://seller.wildberries.ru/suppliers-mutual-settlements).\n<br><br>\nДанные доступны с 29 января 2024 года.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один профиль продавца:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 1 запрос | 1 мин | 1 запрос |\n</div>\n",
         "operationId": "postV1SalesReportsList",
         "requestBody": {
           "content": {
@@ -2402,7 +2402,7 @@
     },
     "/api/v1/account/balance": {
       "get": {
-        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод возвращает данные виджета баланса на [главной странице](https://seller.wildberries.ru) портала продавцов.\n<br><br>\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 мин | 1 запрос | 1 мин | 1 запрос |\n| Сервисный | 1 мин | 1 запрос | 1 мин | 1 запрос |\n| Базовый с секретом | 1 мин | 1 запрос | 1 мин | 1 запрос |\n| Базовый | 24 ч | 1 запрос | 24 ч | 1 запрос |\n</div>\n",
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод возвращает данные виджета баланса на [главной странице](https://seller.wildberries.ru) портала продавцов.\n<br><br>\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один профиль продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 мин | 1 запрос | 1 мин | 1 запрос |\n| Сервисный | 1 мин | 1 запрос | 1 мин | 1 запрос |\n| Базовый с секретом | 1 мин | 1 запрос | 1 мин | 1 запрос |\n| Базовый | 24 ч | 1 запрос | 24 ч | 1 запрос |\n</div>\n",
         "operationId": "getV1AccountBalance",
         "responses": {
           "200": {
@@ -2465,7 +2465,7 @@
     },
     "/api/v1/documents/categories": {
       "get": {
-        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод возвращает категории документов для получения [списка документов продавца](./documents-and-accounting#tag/documents/operation/getV1DocumentsList).\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 10 сек | 1 запрос | 10 сек | 5 запросов |\n| Сервисный | 10 сек | 1 запрос | 10 сек | 5 запросов |\n| Базовый с секретом | 10 сек | 1 запрос | 10 сек | 5 запросов |\n| Базовый | 24 ч | 1 запрос | 24 ч | 1 запрос |\n</div>\n",
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод возвращает категории документов для получения [списка документов продавца](./documents-and-accounting#tag/documents/operation/getV1DocumentsList).\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один профиль продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 10 сек | 1 запрос | 10 сек | 5 запросов |\n| Сервисный | 10 сек | 1 запрос | 10 сек | 5 запросов |\n| Базовый с секретом | 10 сек | 1 запрос | 10 сек | 5 запросов |\n| Базовый | 24 ч | 1 запрос | 24 ч | 1 запрос |\n</div>\n",
         "operationId": "getV1DocumentsCategories",
         "parameters": [
           {
@@ -2516,7 +2516,7 @@
     },
     "/api/v1/documents/download": {
       "get": {
-        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод загружает один документ из [списка документов продавца](./documents-and-accounting#tag/documents/operation/getV1DocumentsList).\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 10 сек | 1 запрос | 10 сек | 5 запросов |\n| Сервисный | 10 сек | 1 запрос | 10 сек | 5 запросов |\n| Базовый с секретом | 10 сек | 1 запрос | 10 сек | 5 запросов |\n| Базовый | 24 ч | 1 запрос | 24 ч | 1 запрос |\n</div>\n",
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод загружает один документ из [списка документов продавца](./documents-and-accounting#tag/documents/operation/getV1DocumentsList).\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один профиль продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 10 сек | 1 запрос | 10 сек | 5 запросов |\n| Сервисный | 10 сек | 1 запрос | 10 сек | 5 запросов |\n| Базовый с секретом | 10 сек | 1 запрос | 10 сек | 5 запросов |\n| Базовый | 24 ч | 1 запрос | 24 ч | 1 запрос |\n</div>\n",
         "operationId": "getV1DocumentsDownload",
         "parameters": [
           {
@@ -2587,7 +2587,7 @@
     },
     "/api/v1/documents/download/all": {
       "post": {
-        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод загружает несколько документов из [списка документов продавца](./documents-and-accounting#tag/documents/operation/getV1DocumentsList).\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 5 мин | 1 запрос | 5 мин | 5 запросов |\n| Сервисный | 5 мин | 1 запрос | 5 мин | 5 запросов |\n| Базовый с секретом | 5 мин | 1 запрос | 5 мин | 5 запросов |\n| Базовый | 24 ч | 1 запрос | 24 ч | 1 запрос |\n</div>\n",
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод загружает несколько документов из [списка документов продавца](./documents-and-accounting#tag/documents/operation/getV1DocumentsList).\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один профиль продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 5 мин | 1 запрос | 5 мин | 5 запросов |\n| Сервисный | 5 мин | 1 запрос | 5 мин | 5 запросов |\n| Базовый с секретом | 5 мин | 1 запрос | 5 мин | 5 запросов |\n| Базовый | 24 ч | 1 запрос | 24 ч | 1 запрос |\n</div>\n",
         "operationId": "postV1DocumentsDownloadAll",
         "requestBody": {
           "content": {
@@ -2657,7 +2657,7 @@
     },
     "/api/v1/documents/list": {
       "get": {
-        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод возвращает список документов продавца. Вы можете получить [один](./documents-and-accounting#tag/documents/operation/getV1DocumentsDownload) или [несколько](./documents-and-accounting#tag/documents/operation/postV1DocumentsDownloadAll) документов из полученного списка.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 10 сек | 1 запрос | 10 сек | 5 запросов |\n| Сервисный | 10 сек | 1 запрос | 10 сек | 5 запросов |\n| Базовый с секретом | 10 сек | 1 запрос | 10 сек | 5 запросов |\n| Базовый | 24 ч | 1 запрос | 24 ч | 1 запрос |\n</div>\n",
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод возвращает список документов продавца. Вы можете получить [один](./documents-and-accounting#tag/documents/operation/getV1DocumentsDownload) или [несколько](./documents-and-accounting#tag/documents/operation/postV1DocumentsDownloadAll) документов из полученного списка.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один профиль продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 10 сек | 1 запрос | 10 сек | 5 запросов |\n| Сервисный | 10 сек | 1 запрос | 10 сек | 5 запросов |\n| Базовый с секретом | 10 сек | 1 запрос | 10 сек | 5 запросов |\n| Базовый | 24 ч | 1 запрос | 24 ч | 1 запрос |\n</div>\n",
         "operationId": "getV1DocumentsList",
         "parameters": [
           {

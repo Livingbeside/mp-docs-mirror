@@ -9,7 +9,7 @@ tags:
 spec_version: items
 source: "https://dev.wildberries.ru/docs/openapi/item-management"
 deprecated: false
-content_sha: 3bf1c22e07e756f0
+content_sha: 4ffffd3374034de3
 ---
 
 # Изменение ярлыка{{ /content/v2/tag/{id} }}
@@ -22,7 +22,7 @@ content_sha: 3bf1c22e07e756f0
 
 Новые данные можно получить в общем [списке](./item-management#tag/labels/operation/getV2Tags).
 
-Лимит запросов на один аккаунт продавца для всех методов Ярлыков:
+Лимит запросов на один профиль продавца для всех методов Ярлыков:
 
 | Тип | Период | Лимит | Интервал | Всплеск |
 | --- | --- | --- | --- | --- |

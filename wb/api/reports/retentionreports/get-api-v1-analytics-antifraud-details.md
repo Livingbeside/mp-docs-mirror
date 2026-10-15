@@ -9,7 +9,7 @@ tags:
 spec_version: reports
 source: "https://dev.wildberries.ru/docs/openapi/reports"
 deprecated: false
-content_sha: ecb95a207002da61
+content_sha: 01ceb0e9393e26e5
 ---
 
 # Самовыкупы
@@ -25,7 +25,7 @@ content_sha: ecb95a207002da61
 
 Данные доступны с августа 2023.
 
-Лимит запросов на один аккаунт продавца:
+Лимит запросов на один профиль продавца:
 
 | Тип | Период | Лимит | Интервал | Всплеск |
 | --- | --- | --- | --- | --- |

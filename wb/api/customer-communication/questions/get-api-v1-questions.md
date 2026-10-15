@@ -9,7 +9,7 @@ tags:
 spec_version: communication
 source: "https://dev.wildberries.ru/docs/openapi/customer-communication"
 deprecated: false
-content_sha: 85dd7c97a8dc6f2f
+content_sha: d6ac5caa3bd312df
 ---
 
 # Список вопросов
@@ -25,7 +25,7 @@ content_sha: 85dd7c97a8dc6f2f
 
  Можно получить максимум 10 000 вопросов в одном ответе
 
-Лимит запросов на один аккаунт продавца для всех методов категории Вопросы и отзывы:
+Лимит запросов на один профиль продавца для всех методов категории Вопросы и отзывы:
 
 | Тип | Период | Лимит | Интервал | Всплеск |
 | --- | --- | --- | --- | --- |

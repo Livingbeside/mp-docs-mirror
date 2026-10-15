@@ -9,7 +9,7 @@ tags:
 spec_version: analytics
 source: "https://dev.wildberries.ru/docs/openapi/analytics"
 deprecated: false
-content_sha: ce428e6d3ad9b82f
+content_sha: 8bd48a61578bf381
 ---
 
 # Создать отчёт
@@ -42,7 +42,7 @@ content_sha: ce428e6d3ad9b82f
 
  Отчёты по [остаткам](https://seller.wildberries.ru/content-analytics/history-remains) — типы STOCK_HISTORY_REPORT_CSV и STOCK_HISTORY_DAILY_CSV — можно создать без подписки [Джем](https://seller.wildberries.ru/monetization/jam)
 
-Лимит запросов на один аккаунт продавца:
+Лимит запросов на один профиль продавца:
 
 | Тип | Период | Лимит | Интервал | Всплеск |
 | --- | --- | --- | --- | --- |

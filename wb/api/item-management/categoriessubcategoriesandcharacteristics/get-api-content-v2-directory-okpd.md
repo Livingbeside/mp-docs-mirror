@@ -9,7 +9,7 @@ tags:
 spec_version: items
 source: "https://dev.wildberries.ru/docs/openapi/item-management"
 deprecated: false
-content_sha: 18f4c2ffc328d026
+content_sha: 847218af3b92c721
 ---
 
 # Код ОКПД2 предмета
@@ -20,7 +20,7 @@ content_sha: 18f4c2ffc328d026
 
 Метод возвращает список кодов ОКПД2 по ID [предмета](./work-with-products#tag/categoriesSubcategoriesAndCharacteristics/paths/~1content~1v2~1object~1all/get) и фрагменту кода ОКПД2.
 
-Лимит запросов на один аккаунт продавца для всех методов категории Контент:
+Лимит запросов на один профиль продавца для всех методов категории Контент:
 
 | Период | Лимит | Интервал | Всплеск |
 | --- | --- | --- | --- |

@@ -9,7 +9,7 @@ tags:
 spec_version: promotion
 source: "https://dev.wildberries.ru/docs/openapi/promotion"
 deprecated: false
-content_sha: 1797db6642a7011f
+content_sha: b8412482c6a84af3
 ---
 
 # Списки кампаний
@@ -20,7 +20,7 @@ content_sha: 1797db6642a7011f
 
 Метод возвращает списки всех [рекламных кампаний](./promotion#tag/campaigns/operation/getV2Adverts) продавца с их ID. Кампании сгруппированы по типу и статусу, у каждой указана дата последнего изменения.
 
-Лимит запросов на один аккаунт продавца:
+Лимит запросов на один профиль продавца:
 
 | Тип | Период | Лимит | Интервал | Всплеск |
 | --- | --- | --- | --- | --- |

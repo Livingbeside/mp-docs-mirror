@@ -9,7 +9,7 @@ tags:
 spec_version: analytics
 source: "https://dev.wildberries.ru/docs/openapi/analytics"
 deprecated: false
-content_sha: 13d8dccb8ef5d0d8
+content_sha: c5c2a58390cd7cea
 ---
 
 # Статистика карточек товаров за период
@@ -45,7 +45,7 @@ content_sha: 13d8dccb8ef5d0d8
 
 Можно использовать пагинацию.
 
-Лимит запросов на один аккаунт продавца:
+Лимит запросов на один профиль продавца:
 
 | Тип | Период | Лимит | Интервал | Всплеск |
 | --- | --- | --- | --- | --- |

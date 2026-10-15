@@ -9,7 +9,7 @@ tags:
 spec_version: ordersfbw
 source: "https://dev.wildberries.ru/docs/openapi/orders-fbw"
 deprecated: false
-content_sha: 595226582779ef93
+content_sha: 154aabe6c0632170
 ---
 
 # Список черновиков
@@ -24,7 +24,7 @@ content_sha: 595226582779ef93
 
 Метод возвращает список черновиков поставок.
 
-Лимит запросов на один аккаунт продавца:
+Лимит запросов на один профиль продавца:
 
 | Период | Лимит | Интервал | Всплеск |
 | --- | --- | --- | --- |

@@ -9,7 +9,7 @@ tags:
 spec_version: items
 source: "https://dev.wildberries.ru/docs/openapi/item-management"
 deprecated: false
-content_sha: f6eab5e90aa4a805
+content_sha: 2854e1630d7433bf
 ---
 
 # Список несозданных карточек товаров с ошибками
@@ -42,7 +42,7 @@ content_sha: f6eab5e90aa4a805
 
  Чтобы удалить карточку товара из списка, сделайте ещё один запрос на создание, создание с присоединением или редактирование карточки товара с исправленными ошибками
 
-Лимит запросов на один аккаунт продавца для методов:
+Лимит запросов на один профиль продавца для методов:
 
  [получения лимитов карточек товаров](./item-management#tag/listingItems/operation/getV2CardsLimits)
 

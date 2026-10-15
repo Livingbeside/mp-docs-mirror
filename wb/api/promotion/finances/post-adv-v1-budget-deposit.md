@@ -9,7 +9,7 @@ tags:
 spec_version: promotion
 source: "https://dev.wildberries.ru/docs/openapi/promotion"
 deprecated: false
-content_sha: a7eef3551031825e
+content_sha: d880fa22c425a181
 ---
 
 # Пополнение бюджета кампании
@@ -22,7 +22,7 @@ content_sha: a7eef3551031825e
 
 Чтобы запустить кампанию после пополнения бюджета, используйте метод [Запуск кампании](./promotion#tag/campaignManagement/operation/getV0Start).
 
-Лимит запросов на один аккаунт продавца:
+Лимит запросов на один профиль продавца:
 
 | Тип | Период | Лимит | Интервал | Всплеск |
 | --- | --- | --- | --- | --- |
@@ -41,7 +41,7 @@ content_sha: a7eef3551031825e
 
 **Тело запроса** (`application/json`):
 
-- `sum` — integer. Общая сумма пополнения бюджета в базовых единицах валюты [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances)
+- `sum` — integer. Общая сумма пополнения бюджета в базовых единицах валюты [профиля продавца](https://cmp.wildberries.ru/campaigns/finances)
 - `cashback_sum` — integer. Сумма пополнения бюджета промо-бонусами. Пополнить можно только определённый процент от общей суммы, указанный в поле `percent` ответа метода получения [баланса](./promotion#tag/finances/operation/getV1Balance). Оставшаяся часть общей суммы спишется с указанного источника пополнения. Пополнить можно только определённый процент от общей суммы, указанный в поле `percent` ответа метода получения [баланса](./promotion#tag/finances/operation/getV1Balance). Оставшаяся часть общей суммы спишется с указанного источника пополнения. Списать промо-бонусы можно только для источников пополнения: - `0` — счёт - `1` — баланс
 - `cashback_percent` — integer. Процент от суммы пополнения, который можно пополнить промо-бонусами. Нужно указать значение поля percent из ответа метода получения [баланса](./promotion#tag/finances/operation/getV1Balance) Если вы указали `cashback_sum`, параметр `cashback_percent` становится обязательным
 - `type` — integer. Тип источника пополнения: - `0` — Счёт - `1` — Баланс - `3` — Бонусы
@@ -52,7 +52,7 @@ content_sha: a7eef3551031825e
 **200** — Успешно
 
 - `total` — integer. Размер обновлённого бюджета
-- `currency` — string<ISO 4217>. Валюта [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances)
+- `currency` — string<ISO 4217>. Валюта [профиля продавца](https://cmp.wildberries.ru/campaigns/finances)
 
 **400** — Неправильный запрос
 

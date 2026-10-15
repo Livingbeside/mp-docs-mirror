@@ -9,7 +9,7 @@ tags:
 spec_version: instorepickup
 source: "https://dev.wildberries.ru/docs/openapi/in-store-pickup"
 deprecated: false
-content_sha: df3999d6238ac74f
+content_sha: ed2c4d0a0f7431d6
 ---
 
 # Перевести сборочные задания на сборку
@@ -20,7 +20,7 @@ content_sha: df3999d6238ac74f
 
 Метод переводит [сборочные задания](./in-store-pickup#tag/inStorePickupAssemblyOrders) из [статуса](./in-store-pickup#tag/inStorePickupAssemblyOrders/operation/postV3ClickCollectOrdersStatusInfo) `new` — новый — в статус `confirm` — на сборке.
 
-Лимит запросов на один аккаунт продавца:
+Лимит запросов на один профиль продавца:
 
 | Период | Лимит | Интервал | Всплеск |
 | --- | --- | --- | --- |

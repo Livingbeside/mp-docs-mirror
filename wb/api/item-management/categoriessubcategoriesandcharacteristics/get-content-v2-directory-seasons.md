@@ -9,7 +9,7 @@ tags:
 spec_version: items
 source: "https://dev.wildberries.ru/docs/openapi/item-management"
 deprecated: false
-content_sha: 462a64e9991a0eac
+content_sha: aadcaca320172bf2
 ---
 
 # Сезон
@@ -20,7 +20,7 @@ content_sha: 462a64e9991a0eac
 
 Метод возвращает возможные значения [характеристики](./item-management#tag/categoriesSubcategoriesAndCharacteristics/operation/getV2ObjectCharcsSubjectId) предмета `Сезон`.
 
-Лимит запросов на один аккаунт продавца для методов Характеристик:
+Лимит запросов на один профиль продавца для методов Характеристик:
 
 | Тип | Период | Лимит | Интервал | Всплеск |
 | --- | --- | --- | --- | --- |

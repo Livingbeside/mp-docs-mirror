@@ -9,7 +9,7 @@ tags:
 spec_version: items
 source: "https://dev.wildberries.ru/docs/openapi/item-management"
 deprecated: false
-content_sha: 0deab0eacf22a1b5
+content_sha: 9b987b284147ed3d
 ---
 
 # Получить список складов WB
@@ -20,7 +20,7 @@ content_sha: 0deab0eacf22a1b5
 
 Метод возвращает список складов WB для привязки к складу продавца при его [создании](./item-management#tag/sellerWarehouses/operation/postV3Warehouses) или [редактировании](./item-management#tag/sellerWarehouses/operation/putV3WarehousesWarehouseId).
 
-Лимит запросов на один аккаунт продавца для всех методов складов продавца:
+Лимит запросов на один профиль продавца для всех методов складов продавца:
 
 | Период | Лимит | Интервал | Всплеск |
 | --- | --- | --- | --- |
@@ -58,9 +58,8 @@ content_sha: 0deab0eacf22a1b5
 
 **403** — Доступ запрещён
 
-- `code` — string. Код ошибки
-- `message` — string. Описание ошибки
-- `data` — object. Дополнительные данные ошибки
+- `code` — string **обязательный**. Код ошибки
+- `message` — string **обязательный**. Детали ошибки
 
 **429** — Слишком много запросов
 

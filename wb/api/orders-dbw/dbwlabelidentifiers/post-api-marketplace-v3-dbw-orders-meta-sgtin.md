@@ -9,7 +9,7 @@ tags:
 spec_version: ordersdbw
 source: "https://dev.wildberries.ru/docs/openapi/orders-dbw"
 deprecated: false
-content_sha: b7808b8883c39418
+content_sha: 8bf794919fb187db
 ---
 
 # Закрепить коды маркировки Честного знака за сборочными заданиями
@@ -24,7 +24,7 @@ content_sha: b7808b8883c39418
 
 Получить загруженные маркировки можно в [идентификаторах маркировки сборочного задания](./orders-dbw#tag/dbwLabelIdentifiers/operation/postV3DbwOrdersMetaDetails).
 
-Лимит запросов на один аккаунт продавца для следующих методов DBW:
+Лимит запросов на один профиль продавца для следующих методов DBW:
 
  получение и обновление списка контактов
 

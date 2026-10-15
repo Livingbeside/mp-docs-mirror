@@ -9,7 +9,7 @@ tags:
 spec_version: instorepickup
 source: "https://dev.wildberries.ru/docs/openapi/in-store-pickup"
 deprecated: false
-content_sha: 59fcf8e52756f352
+content_sha: 9b5c655ddd964a73
 ---
 
 # Сообщить, что заказы приняты покупателями
@@ -20,7 +20,7 @@ content_sha: 59fcf8e52756f352
 
 Метод переводит [сборочные задания](./in-store-pickup#tag/inStorePickupAssemblyOrders) из [статуса](./in-store-pickup#tag/inStorePickupAssemblyOrders/operation/postV3ClickCollectOrdersStatusInfo) `prepare` — готово к выдаче — в статус `receive` — получено покупателем.
 
-Лимит запросов на один аккаунт продавца:
+Лимит запросов на один профиль продавца:
 
 | Период | Лимит | Интервал | Всплеск |
 | --- | --- | --- | --- |

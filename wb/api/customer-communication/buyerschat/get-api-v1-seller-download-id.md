@@ -9,7 +9,7 @@ tags:
 spec_version: communication
 source: "https://dev.wildberries.ru/docs/openapi/customer-communication"
 deprecated: false
-content_sha: 955ee6fe10a54937
+content_sha: 84943f525b10b12a
 ---
 
 # Получить файл из сообщения{{ /api/v1/seller/download/{id} }}
@@ -20,7 +20,7 @@ content_sha: 955ee6fe10a54937
 
 Метод возвращает файл или изображение из сообщения по его ID.
 
-Лимит запросов на один аккаунт продавца:
+Лимит запросов на один профиль продавца:
 
 | Тип | Период | Лимит | Интервал | Всплеск |
 | --- | --- | --- | --- | --- |

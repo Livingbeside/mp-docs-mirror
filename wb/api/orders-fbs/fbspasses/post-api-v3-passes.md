@@ -9,7 +9,7 @@ tags:
 spec_version: order
 source: "https://dev.wildberries.ru/docs/openapi/orders-fbs"
 deprecated: false
-content_sha: 4030600a5c219b99
+content_sha: ff10db58422c34df
 ---
 
 # Создать пропуск
@@ -22,7 +22,7 @@ content_sha: 4030600a5c219b99
 
 Пропуск действует 48 часов со времени создания.
 
- Максимум 1 запрос в 10 минут на один аккаунт продавца.
+ Максимум 1 запрос в 10 минут на один профиль продавца.
 
  Один запрос с кодами ответов 4XX учитывается как 10 запросов.
 

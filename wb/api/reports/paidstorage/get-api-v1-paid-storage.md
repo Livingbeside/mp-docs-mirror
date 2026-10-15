@@ -9,7 +9,7 @@ tags:
 spec_version: reports
 source: "https://dev.wildberries.ru/docs/openapi/reports"
 deprecated: false
-content_sha: 94da2447fa805ce3
+content_sha: 7fe8b4a2b1b65bf0
 ---
 
 # Создать отчёт
@@ -22,7 +22,7 @@ content_sha: 94da2447fa805ce3
 
 Можно получить отчёт максимум за 8 дней.
 
-Лимит запросов на один аккаунт продавца:
+Лимит запросов на один профиль продавца:
 
 | Тип | Период | Лимит | Интервал | Всплеск |
 | --- | --- | --- | --- | --- |

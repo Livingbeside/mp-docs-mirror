@@ -9,7 +9,7 @@ tags:
 spec_version: promotion
 source: "https://dev.wildberries.ru/docs/openapi/promotion"
 deprecated: false
-content_sha: ca5987cbdffa2c3a
+content_sha: 87f4ab29336f8640
 ---
 
 # Статистика поисковых кластеров
@@ -22,7 +22,7 @@ content_sha: ca5987cbdffa2c3a
 
 Можно использовать для кампаний с моделями оплаты `cpm` — за показы и `cpc` — за клики.
 
-Лимит запросов на один аккаунт продавца:
+Лимит запросов на один профиль продавца:
 
 | Тип | Период | Лимит | Интервал | Всплеск |
 | --- | --- | --- | --- | --- |
@@ -55,12 +55,12 @@ content_sha: ca5987cbdffa2c3a
     - `atbs` — integer. Количество добавлений товаров в корзину
     - `orders` — integer. Количество заказов
     - `ctr` — number<double>. Кликабельность — отношение числа кликов к количеству показов, %. Для кампаний с типом оплаты `cpc` — за клики — значение будет `null`
-    - `cpc` — number<double>. Стоимость одного клика в базовых единицах валюты [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances)
-    - `cpm` — number<double>. Средняя стоимость за тысячу показов в базовых единицах валюты [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances). Для кампаний с типом оплаты `cpc` — за клики — значение будет `null`
+    - `cpc` — number<double>. Стоимость одного клика в базовых единицах валюты [профиля продавца](https://cmp.wildberries.ru/campaigns/finances)
+    - `cpm` — number<double>. Средняя стоимость за тысячу показов в базовых единицах валюты [профиля продавца](https://cmp.wildberries.ru/campaigns/finances). Для кампаний с типом оплаты `cpc` — за клики — значение будет `null`
     - `avg_pos` — number<double>. Средняя позиция товара на страницах поисковой выдачи
     - `shks` — integer. Количество заказанных товаров, шт.
     - `spend` — number<double>. Затраты на продвижение товаров в конкретном поисковом кластере кампании
-    - `currency` — string<ISO 4217>. Валюта [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances)
+    - `currency` — string<ISO 4217>. Валюта [профиля продавца](https://cmp.wildberries.ru/campaigns/finances)
 
 **400** — Неправильный запрос
 

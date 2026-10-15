@@ -9,7 +9,7 @@ tags:
 spec_version: communication
 source: "https://dev.wildberries.ru/docs/openapi/customer-communication"
 deprecated: false
-content_sha: 8c848fc33aa61909
+content_sha: 50857e1cbe3219eb
 ---
 
 # Список чатов
@@ -20,7 +20,7 @@ content_sha: 8c848fc33aa61909
 
 Метод возвращает список всех чатов продавца. По этим данным можно получить [события чатов](./customer-communication#tag/buyersChat/operation/getV1SellerEvents) или [отправить сообщение покупателю](./customer-communication#tag/buyersChat/operation/postV1SellerMessage).
 
-Лимит запросов на один аккаунт продавца:
+Лимит запросов на один профиль продавца:
 
 | Тип | Период | Лимит | Интервал | Всплеск |
 | --- | --- | --- | --- | --- |

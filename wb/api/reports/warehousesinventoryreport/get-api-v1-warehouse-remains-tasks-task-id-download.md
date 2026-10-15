@@ -9,7 +9,7 @@ tags:
 spec_version: reports
 source: "https://dev.wildberries.ru/docs/openapi/reports"
 deprecated: false
-content_sha: 9e1615a103a40535
+content_sha: 3082aa7dd7d44338
 ---
 
 # Получить отчёт{{ /api/v1/warehouse_remains/tasks/{task_id}/download }}
@@ -20,7 +20,7 @@ content_sha: 9e1615a103a40535
 
 Метод возвращает отчёт об [остатках на складах WB](https://seller.wildberries.ru/analytics-reports/warehouse-remains) по ID [задания на генерацию](./reports#tag/warehousesInventoryReport/operation/getV1WarehouseRemains).
 
-Лимит запросов на один аккаунт продавца:
+Лимит запросов на один профиль продавца:
 
 | Тип | Период | Лимит | Интервал | Всплеск |
 | --- | --- | --- | --- | --- |

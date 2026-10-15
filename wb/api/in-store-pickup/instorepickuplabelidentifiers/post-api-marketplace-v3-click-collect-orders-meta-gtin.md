@@ -9,7 +9,7 @@ tags:
 spec_version: instorepickup
 source: "https://dev.wildberries.ru/docs/openapi/in-store-pickup"
 deprecated: false
-content_sha: fcde9c5c3fe665f6
+content_sha: bae4e338ca4dd8af
 ---
 
 # Закрепить GTIN за сборочными заданиями
@@ -22,7 +22,7 @@ content_sha: fcde9c5c3fe665f6
 
 Закрепить GTIN можно только за сборочным заданием в [статусе](./in-store-pickup#tag/inStorePickupAssemblyOrders/operation/postV3ClickCollectOrdersStatusInfo) `confirm` и если в [идентификаторах маркировки сборочного задания](./in-store-pickup#tag/inStorePickupLabelIdentifiers/operation/postV3ClickCollectOrdersMetaDetails) есть поле `gtin`.
 
-Лимит запросов на один аккаунт продавца для всех методов закрепления идентификаторов маркировки Самовывоз:
+Лимит запросов на один профиль продавца для всех методов закрепления идентификаторов маркировки Самовывоз:
 
 | Период | Лимит | Интервал | Всплеск |
 | --- | --- | --- | --- |

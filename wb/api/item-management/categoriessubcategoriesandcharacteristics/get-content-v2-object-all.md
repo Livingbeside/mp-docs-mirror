@@ -9,7 +9,7 @@ tags:
 spec_version: items
 source: "https://dev.wildberries.ru/docs/openapi/item-management"
 deprecated: false
-content_sha: 24cf1eb812f71a6a
+content_sha: b789f7ad52d93da6
 ---
 
 # Список предметов
@@ -20,7 +20,7 @@ content_sha: 24cf1eb812f71a6a
 
 Метод возвращает список названий [родительских категорий предметов](./item-management#tag/categoriesSubcategoriesAndCharacteristics/operation/getV2ObjectParentAll) и их предметов с ID. Например, у категории `Игрушки` будут предметы `Калейдоскопы`, `Куклы`, `Мячики`.
 
-Лимит запросов на один аккаунт продавца для всех методов категории Контент:
+Лимит запросов на один профиль продавца для всех методов категории Контент:
 
 | Период | Лимит | Интервал | Всплеск |
 | --- | --- | --- | --- |

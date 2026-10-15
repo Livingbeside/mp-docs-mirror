@@ -9,7 +9,7 @@ tags:
 spec_version: promotion
 source: "https://dev.wildberries.ru/docs/openapi/promotion"
 deprecated: false
-content_sha: a1e70b7143891682
+content_sha: 278fab5feed5b0e6
 ---
 
 # Конфигурационные значения продвижения
@@ -18,13 +18,13 @@ content_sha: a1e70b7143891682
 
 Описание метода
 
-Метод возвращает валюту, код валюты [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances) и допустимые шаги ставок для метода [POST /api/advert/v1/normquery/bids](./promotion#tag/searchClusters/operation/postV1NormqueryBids)
+Метод возвращает валюту, код валюты [профиля продавца](https://cmp.wildberries.ru/campaigns/finances) и допустимые шаги ставок для метода [POST /api/advert/v1/normquery/bids](./promotion#tag/searchClusters/operation/postV1NormqueryBids)
 
  Метод [доступен](./api-information#tag/authorization/Pravila-ispolzovaniya-tokenov-dostupa-k-API) по
  Персональному токену, 
  Сервисному токену
 
-Лимит запросов на один аккаунт продавца:
+Лимит запросов на один профиль продавца:
 
 | Период | Лимит | Интервал | Всплеск |
 | --- | --- | --- | --- |
@@ -34,12 +34,12 @@ content_sha: a1e70b7143891682
 
 **200** — Успешно
 
-- `currency` — string<ISO 4217> **обязательный**. Валюта [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances)
-- `currencyCode` — integer **обязательный**. Код валюты [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances)
-- `cpmStep` — integer<int64> **обязательный**. Шаг ставки в разменных единицах — 0,01 от базовой валюты [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances) для CPM-кампаний
-- `cpcStep` — integer<int64> **обязательный**. Шаг ставки в разменных единицах — 0,01 от базовой валюты [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances) для кампаний CPC
-- `minTopUp` — integer<int64> **обязательный**. Минимальная сумма пополнения бюджета кампании в разменных единицах — 0,01 от базовой валюты [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances). Например, минимальная сумма пополнения бюджета при `"minTopUp": 10000` и `"currency": "UZS"` — 100 узбекских сум
-- `minDailyLimit` — integer<int64> **обязательный**. Минимально допустимый размер дневного лимита, вне зависимости от ставок кампании. Указывается в разменных единицах — 0,01 от базовой валюты [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances)
+- `currency` — string<ISO 4217> **обязательный**. Валюта [профиля продавца](https://cmp.wildberries.ru/campaigns/finances)
+- `currencyCode` — integer **обязательный**. Код валюты [профиля продавца](https://cmp.wildberries.ru/campaigns/finances)
+- `cpmStep` — integer<int64> **обязательный**. Шаг ставки в разменных единицах — 0,01 от базовой валюты [профиля продавца](https://cmp.wildberries.ru/campaigns/finances) для CPM-кампаний
+- `cpcStep` — integer<int64> **обязательный**. Шаг ставки в разменных единицах — 0,01 от базовой валюты [профиля продавца](https://cmp.wildberries.ru/campaigns/finances) для кампаний CPC
+- `minTopUp` — integer<int64> **обязательный**. Минимальная сумма пополнения бюджета кампании в разменных единицах — 0,01 от базовой валюты [профиля продавца](https://cmp.wildberries.ru/campaigns/finances). Например, минимальная сумма пополнения бюджета при `"minTopUp": 10000` и `"currency": "UZS"` — 100 узбекских сум
+- `minDailyLimit` — integer<int64> **обязательный**. Минимально допустимый размер дневного лимита, вне зависимости от ставок кампании. Указывается в разменных единицах — 0,01 от базовой валюты [профиля продавца](https://cmp.wildberries.ru/campaigns/finances)
 
 **401** — Не авторизован
 

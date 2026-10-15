@@ -9,7 +9,7 @@ tags:
 spec_version: items
 source: "https://dev.wildberries.ru/docs/openapi/item-management"
 deprecated: false
-content_sha: 3467322ed5f18ec2
+content_sha: b653eb65e924f523
 ---
 
 # Загрузить медиафайл
@@ -32,7 +32,7 @@ content_sha: 3467322ed5f18ec2
  * максимальный размер — 50 Мб
  * форматы — MOV, MP4
 
-Лимит запросов на один аккаунт продавца для всех методов Медиафайлов:
+Лимит запросов на один профиль продавца для всех методов Медиафайлов:
 
 | Тип | Период | Лимит | Интервал | Всплеск |
 | --- | --- | --- | --- | --- |

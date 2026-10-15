@@ -9,7 +9,7 @@ tags:
 spec_version: promotion
 source: "https://dev.wildberries.ru/docs/openapi/promotion"
 deprecated: false
-content_sha: 7809901ab1396f34
+content_sha: 3362f07091975de5
 ---
 
 # Карточки товаров для кампаний
@@ -20,7 +20,7 @@ content_sha: 7809901ab1396f34
 
 Метод возвращает список [карточек товаров](./item-management#tag/listings/operation/postV2GetCardsList), которые можно добавить в рекламную [кампанию](./promotion#tag/campaigns/operation/getV2Adverts). Для получения карточек необходимы ID [предметов](./promotion#tag/creatingCampaigns/operation/getV1SupplierSubjects), также доступных для добавления в кампанию.
 
-Лимит запросов на один аккаунт продавца:
+Лимит запросов на один профиль продавца:
 
 | Тип | Период | Лимит | Интервал | Всплеск |
 | --- | --- | --- | --- | --- |

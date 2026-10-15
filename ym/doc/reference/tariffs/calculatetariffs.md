@@ -2,14 +2,14 @@
 title: Стоимость услуг
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/tariffs/calculateTariffs.md"
-fetched_at: "2026-10-09T02:06:07Z"
-content_sha: b95c4fdfcdc0b534
+fetched_at: "2026-10-15T01:48:47Z"
+content_sha: 2cf7eb839c27f0f0
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.63.1
+    content: Diplodoc Platform v5.63.2
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/tariffs/calculateTariffs.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/tariffs/calculateTariffs.md
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/tariffs/calculateTariffs.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21566721
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21642161
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21566721
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21642161
 
 <!-- source: ru/api/tariffs/calculateTariffs.md -->
 <div class="openapi">
@@ -1701,7 +1701,7 @@ alternate:
               minimum: 1
               default: 1
     $defs:
-      /home/sandbox/.ya/build/build_root/viqc/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/common/schemas.yaml#/SellingProgramType:
+      /home/sandbox/.ya/build/build_root/etez/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/common/schemas.yaml#/SellingProgramType:
         description: |
           Модель работы:
   
@@ -1717,7 +1717,7 @@ alternate:
           - DBS
           - EXPRESS
           - LAAS
-      /home/sandbox/.ya/build/build_root/viqc/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/tariffs/api/calculateTariffs.yaml#/PaymentFrequencyType:
+      /home/sandbox/.ya/build/build_root/etez/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/tariffs/api/calculateTariffs.yaml#/PaymentFrequencyType:
         description: >
           Частота выплат:
   
@@ -1739,7 +1739,7 @@ alternate:
           - WEEKLY
           - BIWEEKLY
           - MONTHLY
-      /home/sandbox/.ya/build/build_root/viqc/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/common/schemas.yaml#/CurrencyType:
+      /home/sandbox/.ya/build/build_root/etez/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/common/schemas.yaml#/CurrencyType:
         type: string
         description: |
           Коды валют:
@@ -1873,7 +1873,7 @@ alternate:
           - NAD
           - TL
           - UE
-      /home/sandbox/.ya/build/build_root/viqc/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/tariffs/api/calculateTariffs.yaml#/CalculateTariffsParametersDTO:
+      /home/sandbox/.ya/build/build_root/etez/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/tariffs/api/calculateTariffs.yaml#/CalculateTariffsParametersDTO:
         description: >-
           Параметры для расчета стоимости услуг. Обязательно необходимо указать
           параметр `campaignId` либо `sellingProgram`. Совместное использование

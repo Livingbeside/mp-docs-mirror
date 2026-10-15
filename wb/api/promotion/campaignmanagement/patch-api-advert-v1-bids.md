@@ -9,7 +9,7 @@ tags:
 spec_version: promotion
 source: "https://dev.wildberries.ru/docs/openapi/promotion"
 deprecated: false
-content_sha: 331e4ec588606547
+content_sha: 7447a10b8d4ecf9a
 ---
 
 # Изменение ставок в кампаниях
@@ -29,7 +29,7 @@ content_sha: 331e4ec588606547
  - `combined` — в поиске и рекомендациях для кампаний с единой ставкой
  - `search `или `recommendations` — в поиске или рекомендациях для кампаний с ручной ставкой
 
-Лимит запросов на один аккаунт продавца:
+Лимит запросов на один профиль продавца:
 
 | Тип | Период | Лимит | Интервал | Всплеск |
 | --- | --- | --- | --- | --- |
@@ -46,7 +46,7 @@ content_sha: 331e4ec588606547
   - `advert_id` — integer<int64> **обязательный**. ID кампании
   - `nm_bids` — array[object] **обязательный**. Ставки
     - `nm_id` — integer<int64> **обязательный**. Артикул WB
-    - `bid_kopecks` — integer<int64> **обязательный**. Ставка в разменных единицах — 0,01 от базовой валюты [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances)
+    - `bid_kopecks` — integer<int64> **обязательный**. Ставка в разменных единицах — 0,01 от базовой валюты [профиля продавца](https://cmp.wildberries.ru/campaigns/finances)
     - `placement` — string (search, recommendations, combined) **обязательный**. Место размещения: - `search` — в поиске (для кампаний с ручной ставкой) - `recommendations`— в рекомендациях (для кампаний с ручной ставкой) - `combined` — в поиске и рекомендациях (для кампаний с единой ставкой)
 
 ## Ответы
@@ -57,9 +57,9 @@ content_sha: 331e4ec588606547
   - `advert_id` — integer<int64> **обязательный**. ID кампании
   - `nm_bids` — array[object] **обязательный**. Ставки
     - `nm_id` — integer<int64> **обязательный**. Артикул WB
-    - `bid_kopecks` — integer<int64> **обязательный**. Ставка в разменных единицах — 0,01 от базовой валюты [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances)
+    - `bid_kopecks` — integer<int64> **обязательный**. Ставка в разменных единицах — 0,01 от базовой валюты [профиля продавца](https://cmp.wildberries.ru/campaigns/finances)
     - `placement` — string **обязательный**. Место размещения: - `search` — в поиске - `recommendations`— в рекомендациях
-- `currency` — string<ISO 4217> **обязательный**. Валюта [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances)
+- `currency` — string<ISO 4217> **обязательный**. Валюта [профиля продавца](https://cmp.wildberries.ru/campaigns/finances)
 
 **400** — Неправильный запрос
 

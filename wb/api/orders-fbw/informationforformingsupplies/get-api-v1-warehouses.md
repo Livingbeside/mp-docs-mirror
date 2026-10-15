@@ -9,7 +9,7 @@ tags:
 spec_version: ordersfbw
 source: "https://dev.wildberries.ru/docs/openapi/orders-fbw"
 deprecated: false
-content_sha: 7ad8f3ccbed98a96
+content_sha: d1efe82bec0d5c17
 ---
 
 # Список складов
@@ -20,7 +20,7 @@ content_sha: 7ad8f3ccbed98a96
 
 Метод [временно отключён](https://dev.wildberries.ru/release-notes?id=570)
 
-Лимит запросов на один аккаунт продавца:
+Лимит запросов на один профиль продавца:
 
 | Тип | Период | Лимит | Интервал | Всплеск |
 | --- | --- | --- | --- | --- |

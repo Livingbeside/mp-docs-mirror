@@ -3,13 +3,13 @@ title: Лимиты закреплённых отзывов
 api: wb-customer-communication
 method: GET
 path: /api/feedbacks/v1/pins/limits
-operation_id: getFeedbacksV1PinsLimits
+operation_id: getV1PinsLimits
 tags:
   - pinnedFeedbacks
 spec_version: communication
 source: "https://dev.wildberries.ru/docs/openapi/customer-communication"
 deprecated: false
-content_sha: 8039df398f8cb168
+content_sha: d8db932c1d6c0a4b
 ---
 
 # Лимиты закреплённых отзывов
@@ -20,7 +20,7 @@ content_sha: 8039df398f8cb168
 
 Метод возвращает лимиты закреплённых отзывов по тарифу и подписке.
 
-Лимит запросов на один аккаунт продавца для всех методов категории Вопросы и отзывы:
+Лимит запросов на один профиль продавца для всех методов категории Вопросы и отзывы:
 
 | Тип | Период | Лимит | Интервал | Всплеск |
 | --- | --- | --- | --- | --- |

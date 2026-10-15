@@ -9,7 +9,7 @@ tags:
 spec_version: promotion
 source: "https://dev.wildberries.ru/docs/openapi/promotion"
 deprecated: false
-content_sha: f328dc791de821d1
+content_sha: 3c268f15dca037d8
 ---
 
 # Переименование кампании
@@ -20,7 +20,7 @@ content_sha: f328dc791de821d1
 
 Метод меняет название [кампании](./promotion#tag/campaigns/operation/getV2Adverts). Это можно сделать в любой момент существования кампании.
 
-Лимит запросов на один аккаунт продавца:
+Лимит запросов на один профиль продавца:
 
 | Тип | Период | Лимит | Интервал | Всплеск |
 | --- | --- | --- | --- | --- |

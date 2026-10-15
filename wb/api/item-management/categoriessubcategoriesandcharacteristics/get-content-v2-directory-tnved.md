@@ -9,7 +9,7 @@ tags:
 spec_version: items
 source: "https://dev.wildberries.ru/docs/openapi/item-management"
 deprecated: false
-content_sha: d1c4ed7f9e832898
+content_sha: 547227c533102bd6
 ---
 
 # Код ТН ВЭД предмета
@@ -20,7 +20,7 @@ content_sha: d1c4ed7f9e832898
 
 Метод возвращает список кодов ТН ВЭД по ID [предмета](./item-management#tag/categoriesSubcategoriesAndCharacteristics/operation/getV2ObjectAll) и фрагменту кода ТН ВЭД.
 
-Лимит запросов на один аккаунт продавца для всех методов категории Контент:
+Лимит запросов на один профиль продавца для всех методов категории Контент:
 
 | Период | Лимит | Интервал | Всплеск |
 | --- | --- | --- | --- |

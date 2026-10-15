@@ -9,7 +9,7 @@ tags:
 spec_version: promotion
 source: "https://dev.wildberries.ru/docs/openapi/promotion"
 deprecated: false
-content_sha: 544e8f64e8a6df24
+content_sha: fc13598aba4145d7
 ---
 
 # Изменение мест размещения в кампаниях с ручной ставкой
@@ -23,7 +23,7 @@ content_sha: 544e8f64e8a6df24
 Для кампаний в статусах `4`, `9` и `11`.
 
  
-Лимит запросов на один аккаунт продавца:
+Лимит запросов на один профиль продавца:
 
 | Тип | Период | Лимит | Интервал | Всплеск |
 | --- | --- | --- | --- | --- |

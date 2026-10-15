@@ -9,7 +9,7 @@ tags:
 spec_version: items
 source: "https://dev.wildberries.ru/docs/openapi/item-management"
 deprecated: false
-content_sha: 437fffe646b8e9bc
+content_sha: 1d7f3d39d5d45c58
 ---
 
 # Установить рекомендации для товаров
@@ -24,7 +24,7 @@ content_sha: 437fffe646b8e9bc
 
 Метод обновляет, добавляет или удаляет [рекомендации](https://seller.wildberries.ru/recommendations-v3) для товаров.
 
-Лимит запросов на один аккаунт продавца:
+Лимит запросов на один профиль продавца:
 
 | Период | Лимит | Интервал | Всплеск |
 | --- | --- | --- | --- |

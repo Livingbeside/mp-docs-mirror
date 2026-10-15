@@ -9,7 +9,7 @@ tags:
 spec_version: instorepickup
 source: "https://dev.wildberries.ru/docs/openapi/in-store-pickup"
 deprecated: false
-content_sha: 52066e9a28eedd88
+content_sha: a5d25c7ada16aadc
 ---
 
 # Отменить сборочные задания
@@ -20,7 +20,7 @@ content_sha: 52066e9a28eedd88
 
 Переводит [сборочные задания](./in-store-pickup#tag/inStorePickupAssemblyOrders) из [статусов](./in-store-pickup#tag/inStorePickupAssemblyOrders/operation/postV3ClickCollectOrdersStatusInfo) `new`, `confirm`, `prepare` в статус `cancel` — отменено продавцом.
 
-Лимит запросов на один аккаунт продавца:
+Лимит запросов на один профиль продавца:
 
 | Период | Лимит | Интервал | Всплеск |
 | --- | --- | --- | --- |

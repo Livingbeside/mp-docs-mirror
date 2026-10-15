@@ -9,7 +9,7 @@ tags:
 spec_version: ordersdbw
 source: "https://dev.wildberries.ru/docs/openapi/orders-dbw"
 deprecated: false
-content_sha: 2dfb5a9a1b291ed1
+content_sha: 2ede4ebf6c1ec2ba
 ---
 
 # Информация о покупателе
@@ -20,7 +20,7 @@ content_sha: 2dfb5a9a1b291ed1
 
 Метод возвращает информацию о покупателях по ID сборочных заданий.
 
-Лимит запросов на один аккаунт продавца для следующих методов DBW:
+Лимит запросов на один профиль продавца для следующих методов DBW:
 
  получение и обновление списка контактов
 

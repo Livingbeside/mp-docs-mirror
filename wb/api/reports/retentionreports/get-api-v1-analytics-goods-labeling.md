@@ -9,7 +9,7 @@ tags:
 spec_version: reports
 source: "https://dev.wildberries.ru/docs/openapi/reports"
 deprecated: false
-content_sha: 27b3e645e3b4a4e3
+content_sha: 4312274a56d7b441
 ---
 
 # Маркировка товара
@@ -24,7 +24,7 @@ content_sha: 27b3e645e3b4a4e3
 
 Можно получить данные максимум за 31 день. Данные доступны с марта 2024.
 
-Лимит запросов на один аккаунт продавца:
+Лимит запросов на один профиль продавца:
 
 | Тип | Период | Лимит | Интервал | Всплеск |
 | --- | --- | --- | --- | --- |

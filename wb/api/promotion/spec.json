@@ -1255,7 +1255,7 @@
         "type": "object"
       },
       "AdvertBidsKopecks": {
-        "description": "Ставка в разменных единицах — 0,01 от базовой валюты [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances)\n",
+        "description": "Ставка в разменных единицах — 0,01 от базовой валюты [профиля продавца](https://cmp.wildberries.ru/campaigns/finances)\n",
         "properties": {
           "recommendations": {
             "description": "Ставка в рекомендациях",
@@ -1465,7 +1465,7 @@
                     "type": "integer"
                   },
                   "cpc": {
-                    "description": "Средняя стоимость клика в базовых единицах валюты [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances)",
+                    "description": "Средняя стоимость клика в базовых единицах валюты [профиля продавца](https://cmp.wildberries.ru/campaigns/finances)",
                     "type": "number"
                   },
                   "cr": {
@@ -1493,7 +1493,7 @@
                           "type": "integer"
                         },
                         "cpc": {
-                          "description": "Средняя стоимость клика в базовых единицах валюты [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances)",
+                          "description": "Средняя стоимость клика в базовых единицах валюты [профиля продавца](https://cmp.wildberries.ru/campaigns/finances)",
                           "type": "number"
                         },
                         "cr": {
@@ -1521,11 +1521,11 @@
                           "type": "integer"
                         },
                         "sum": {
-                          "description": "Затраты в базовых единицах валюты [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances)",
+                          "description": "Затраты в базовых единицах валюты [профиля продавца](https://cmp.wildberries.ru/campaigns/finances)",
                           "type": "number"
                         },
                         "sum_price": {
-                          "description": "Заказов на сумму в базовых единицах валюты [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances)",
+                          "description": "Заказов на сумму в базовых единицах валюты [профиля продавца](https://cmp.wildberries.ru/campaigns/finances)",
                           "type": "number"
                         },
                         "views": {
@@ -1561,11 +1561,11 @@
                     "type": "integer"
                   },
                   "sum": {
-                    "description": "Затраты в базовых единицах валюты [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances)",
+                    "description": "Затраты в базовых единицах валюты [профиля продавца](https://cmp.wildberries.ru/campaigns/finances)",
                     "type": "number"
                   },
                   "sum_price": {
-                    "description": "Заказов на сумму в базовых единицах валюты [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances)",
+                    "description": "Заказов на сумму в базовых единицах валюты [профиля продавца](https://cmp.wildberries.ru/campaigns/finances)",
                     "type": "number"
                   },
                   "views": {
@@ -1605,7 +1605,7 @@
               "type": "integer"
             },
             "cpc": {
-              "description": "Средняя стоимость клика в базовых единицах валюты [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances)",
+              "description": "Средняя стоимость клика в базовых единицах валюты [профиля продавца](https://cmp.wildberries.ru/campaigns/finances)",
               "type": "number"
             },
             "cr": {
@@ -1630,11 +1630,11 @@
               "type": "integer"
             },
             "sum": {
-              "description": "Затраты в базовых единицах валюты [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances)",
+              "description": "Затраты в базовых единицах валюты [профиля продавца](https://cmp.wildberries.ru/campaigns/finances)",
               "type": "number"
             },
             "sum_price": {
-              "description": "Заказов на сумму в базовых единицах валюты [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances)",
+              "description": "Заказов на сумму в базовых единицах валюты [профиля продавца](https://cmp.wildberries.ru/campaigns/finances)",
               "type": "number"
             },
             "views": {
@@ -1743,7 +1743,7 @@
             "type": "integer"
           },
           "cpc": {
-            "description": "Средняя стоимость клика в базовых единицах валюты [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances)",
+            "description": "Средняя стоимость клика в базовых единицах валюты [профиля продавца](https://cmp.wildberries.ru/campaigns/finances)",
             "format": "double",
             "type": "number"
           },
@@ -1758,7 +1758,7 @@
             "type": "number"
           },
           "currency": {
-            "description": "Валюта [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances)",
+            "description": "Валюта [профиля продавца](https://cmp.wildberries.ru/campaigns/finances)",
             "format": "ISO 4217",
             "type": "string"
           },
@@ -1781,12 +1781,12 @@
             "type": "integer"
           },
           "sum": {
-            "description": "Затраты в базовых единицах валюты [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances)",
+            "description": "Затраты в базовых единицах валюты [профиля продавца](https://cmp.wildberries.ru/campaigns/finances)",
             "format": "double",
             "type": "number"
           },
           "sum_price": {
-            "description": "Сумма заказов в базовых единицах валюты [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances)",
+            "description": "Сумма заказов в базовых единицах валюты [профиля продавца](https://cmp.wildberries.ru/campaigns/finances)",
             "format": "double",
             "type": "number"
           },
@@ -1824,7 +1824,7 @@
                   "type": "string"
                 },
                 "currency": {
-                  "description": "Валюта [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances)",
+                  "description": "Валюта [профиля продавца](https://cmp.wildberries.ru/campaigns/finances)",
                   "format": "ISO 4217",
                   "type": "string"
                 },
@@ -2086,7 +2086,7 @@
       "ResponseWithReturn": {
         "properties": {
           "currency": {
-            "description": "Валюта [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances)",
+            "description": "Валюта [профиля продавца](https://cmp.wildberries.ru/campaigns/finances)",
             "format": "ISO 4217",
             "type": "string"
           },
@@ -2507,7 +2507,7 @@
       "V0BidRecommendationBaseBid": {
         "properties": {
           "bidKopecks": {
-            "description": "Рекомендуемая ставка в разменных единицах — 0,01 от базовой валюты [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances).",
+            "description": "Рекомендуемая ставка в разменных единицах — 0,01 от базовой валюты [профиля продавца](https://cmp.wildberries.ru/campaigns/finances).",
             "type": "integer"
           }
         },
@@ -2517,7 +2517,7 @@
         "description": "Конкурентная ставка — расчётная средняя ставка других продавцов, продающих аналогичные товары по похожей цене.\nУ половины продавцов из расчёта ставка выше конкурентной, а другой половины — ниже\n",
         "properties": {
           "bidKopecks": {
-            "description": "Рекомендуемая ставка в разменных единицах — 0,01 от базовой валюты [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances)",
+            "description": "Рекомендуемая ставка в разменных единицах — 0,01 от базовой валюты [профиля продавца](https://cmp.wildberries.ru/campaigns/finances)",
             "type": "integer"
           }
         },
@@ -2527,7 +2527,7 @@
         "description": "Лидерская ставка — средняя ставка с которой товары занимают лидирующие позиции в вашей категории товаров\n",
         "properties": {
           "bidKopecks": {
-            "description": "Рекомендуемая ставка в разменных единицах — 0,01 от базовой валюты [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances)",
+            "description": "Рекомендуемая ставка в разменных единицах — 0,01 от базовой валюты [профиля продавца](https://cmp.wildberries.ru/campaigns/finances)",
             "type": "integer"
           }
         },
@@ -2537,7 +2537,7 @@
         "description": "Топ-ставка\n",
         "properties": {
           "bidKopecks": {
-            "description": "Рекомендуемая ставка в разменных единицах — 0,01 от базовой валюты [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances). Если `0`, для данного предмета топ-ставка не используется",
+            "description": "Рекомендуемая ставка в разменных единицах — 0,01 от базовой валюты [профиля продавца](https://cmp.wildberries.ru/campaigns/finances). Если `0`, для данного предмета топ-ставка не используется",
             "type": "integer"
           }
         },
@@ -2599,11 +2599,11 @@
         "description": "Максимальный охват: 76-100%\n",
         "properties": {
           "bidKopecks": {
-            "description": "Рекомендуемая ставка в разменных единицах — 0,01 от базовой валюты [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances).",
+            "description": "Рекомендуемая ставка в разменных единицах — 0,01 от базовой валюты [профиля продавца](https://cmp.wildberries.ru/campaigns/finances).",
             "type": "integer"
           },
           "bidKopecksMin": {
-            "description": "Минимальная ставка в разменных единицах — 0,01 от базовой валюты [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances).",
+            "description": "Минимальная ставка в разменных единицах — 0,01 от базовой валюты [профиля продавца](https://cmp.wildberries.ru/campaigns/finances).",
             "type": "integer"
           }
         },
@@ -2613,11 +2613,11 @@
         "description": "Средний охват: 61-75%\n",
         "properties": {
           "bidKopecks": {
-            "description": "Рекомендуемая ставка в разменных единицах — 0,01 от базовой валюты [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances)",
+            "description": "Рекомендуемая ставка в разменных единицах — 0,01 от базовой валюты [профиля продавца](https://cmp.wildberries.ru/campaigns/finances)",
             "type": "integer"
           },
           "bidKopecksMin": {
-            "description": "Минимальная ставка в разменных единицах — 0,01 от базовой валюты [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances)",
+            "description": "Минимальная ставка в разменных единицах — 0,01 от базовой валюты [профиля продавца](https://cmp.wildberries.ru/campaigns/finances)",
             "type": "integer"
           }
         },
@@ -2627,11 +2627,11 @@
         "description": "Минимальный охват: 50-60%\n",
         "properties": {
           "bidKopecks": {
-            "description": "Рекомендуемая ставка в разменных единицах — 0,01 от базовой валюты [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances)",
+            "description": "Рекомендуемая ставка в разменных единицах — 0,01 от базовой валюты [профиля продавца](https://cmp.wildberries.ru/campaigns/finances)",
             "type": "integer"
           },
           "bidKopecksMin": {
-            "description": "Минимальная ставка в разменных единицах — 0,01 от базовой валюты [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances)",
+            "description": "Минимальная ставка в разменных единицах — 0,01 от базовой валюты [профиля продавца](https://cmp.wildberries.ru/campaigns/finances)",
             "type": "integer"
           }
         },
@@ -2718,7 +2718,7 @@
             "type": "string"
           },
           "dailyLimit": {
-            "description": "Размер дневного лимита в разменных единицах — 0,01 от базовой валюты [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances)",
+            "description": "Размер дневного лимита в разменных единицах — 0,01 от базовой валюты [профиля продавца](https://cmp.wildberries.ru/campaigns/finances)",
             "example": 100000,
             "format": "int64",
             "type": "integer"
@@ -2729,13 +2729,13 @@
             "type": "boolean"
           },
           "requiredLimit": {
-            "description": "Рекомендуемый минимальный размер дневного лимита при текущих ставках кампании. Указывается в разменных единицах — 0,01 от базовой валюты [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances)\n",
+            "description": "Рекомендуемый минимальный размер дневного лимита при текущих ставках кампании. Указывается в разменных единицах — 0,01 от базовой валюты [профиля продавца](https://cmp.wildberries.ru/campaigns/finances)\n",
             "example": 3001,
             "format": "int64",
             "type": "integer"
           },
           "spentToday": {
-            "description": "Потрачено сегодня в разменных единицах — 0,01 от базовой валюты [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances)",
+            "description": "Потрачено сегодня в разменных единицах — 0,01 от базовой валюты [профиля продавца](https://cmp.wildberries.ru/campaigns/finances)",
             "example": 35000,
             "format": "int64",
             "type": "integer"
@@ -2816,15 +2816,15 @@
             "type": "integer"
           },
           "bid": {
-            "description": "Текущая ставка в базовых единицах валюты [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances) за тысячу показов",
+            "description": "Текущая ставка в базовых единицах валюты [профиля продавца](https://cmp.wildberries.ru/campaigns/finances) за тысячу показов",
             "type": "integer"
           },
           "bid_kopecks": {
-            "description": "Текущая ставка в разменных единицах — 0,01 от базовой валюты [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances) за тысячу показов",
+            "description": "Текущая ставка в разменных единицах — 0,01 от базовой валюты [профиля продавца](https://cmp.wildberries.ru/campaigns/finances) за тысячу показов",
             "type": "integer"
           },
           "currency": {
-            "description": "Валюта [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances)",
+            "description": "Валюта [профиля продавца](https://cmp.wildberries.ru/campaigns/finances)",
             "format": "ISO 4217",
             "type": "string"
           },
@@ -3092,12 +3092,12 @@
             "type": "integer"
           },
           "cpc": {
-            "description": "Стоимость одного клика в базовых единицах валюты [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances)",
+            "description": "Стоимость одного клика в базовых единицах валюты [профиля продавца](https://cmp.wildberries.ru/campaigns/finances)",
             "format": "double",
             "type": "number"
           },
           "cpm": {
-            "description": "Средняя стоимость за тысячу показов в базовых единицах валюты [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances).\n\nДля кампаний с типом оплаты `cpc` — за клики — значение будет `null`\n",
+            "description": "Средняя стоимость за тысячу показов в базовых единицах валюты [профиля продавца](https://cmp.wildberries.ru/campaigns/finances).\n\nДля кампаний с типом оплаты `cpc` — за клики — значение будет `null`\n",
             "format": "double",
             "nullable": true,
             "type": "number"
@@ -3109,7 +3109,7 @@
             "type": "number"
           },
           "currency": {
-            "description": "Валюта [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances)",
+            "description": "Валюта [профиля продавца](https://cmp.wildberries.ru/campaigns/finances)",
             "format": "ISO 4217",
             "type": "string"
           },
@@ -3210,7 +3210,7 @@
             "type": "boolean"
           },
           "requiredLimit": {
-            "description": "Рекомендуемый минимальный размер дневного лимита при текущих ставках кампании. Указывается в разменных единицах — 0,01 от базовой валюты [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances).\nС меньшим лимитом бюджет может расходоваться неравномерно и в кампании возникнут ошибки\n",
+            "description": "Рекомендуемый минимальный размер дневного лимита при текущих ставках кампании. Указывается в разменных единицах — 0,01 от базовой валюты [профиля продавца](https://cmp.wildberries.ru/campaigns/finances).\nС меньшим лимитом бюджет может расходоваться неравномерно и в кампании возникнут ошибки\n",
             "example": 3001,
             "format": "int64",
             "type": "integer"
@@ -3326,7 +3326,7 @@
             "type": "integer"
           },
           "bid": {
-            "description": "Ставка за тысячу показов в базовых единицах валюты [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances)",
+            "description": "Ставка за тысячу показов в базовых единицах валюты [профиля продавца](https://cmp.wildberries.ru/campaigns/finances)",
             "type": "integer"
           },
           "nm_id": {
@@ -3354,13 +3354,13 @@
             "type": "integer"
           },
           "currency": {
-            "description": "Валюта [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances)",
+            "description": "Валюта [профиля продавца](https://cmp.wildberries.ru/campaigns/finances)",
             "example": "RUB",
             "format": "ISO 4217",
             "type": "string"
           },
           "total": {
-            "description": "Бюджет кампании в базовых единицах валюты [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances)",
+            "description": "Бюджет кампании в базовых единицах валюты [профиля продавца](https://cmp.wildberries.ru/campaigns/finances)",
             "example": 3000,
             "type": "integer"
           }
@@ -3489,12 +3489,12 @@
             "type": "integer"
           },
           "cpc": {
-            "description": "Средняя стоимость клика в базовых единицах валюты [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances)",
+            "description": "Средняя стоимость клика в базовых единицах валюты [профиля продавца](https://cmp.wildberries.ru/campaigns/finances)",
             "format": "float",
             "type": "number"
           },
           "cpm": {
-            "description": "Средняя стоимость за тысячу показов в базовых единицах валюты [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances).\n\nДля кампаний с типом оплаты `cpc` — за клики — значение будет `null`\n",
+            "description": "Средняя стоимость за тысячу показов в базовых единицах валюты [профиля продавца](https://cmp.wildberries.ru/campaigns/finances).\n\nДля кампаний с типом оплаты `cpc` — за клики — значение будет `null`\n",
             "format": "float",
             "nullable": true,
             "type": "number"
@@ -3552,7 +3552,7 @@
             "type": "integer"
           },
           "bidMinorUnits": {
-            "description": "Ставка в разменных единицах — 0,01 от базовой валюты [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances).\nДопустимый шаг ставки указан в ответе метода [GET /api/advert/v1/config](./promotion#tag/campaignManagement/operation/getV1Config)\n",
+            "description": "Ставка в разменных единицах — 0,01 от базовой валюты [профиля продавца](https://cmp.wildberries.ru/campaigns/finances).\nДопустимый шаг ставки указан в ответе метода [GET /api/advert/v1/config](./promotion#tag/campaignManagement/operation/getV1Config)\n",
             "type": "integer"
           },
           "nmId": {
@@ -3600,7 +3600,7 @@
             "type": "integer"
           },
           "currency": {
-            "description": "Валюта [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances)",
+            "description": "Валюта [профиля продавца](https://cmp.wildberries.ru/campaigns/finances)",
             "format": "ISO 4217",
             "type": "string"
           },
@@ -3661,31 +3661,31 @@
       "V2GetConfigResponse": {
         "properties": {
           "cpcStep": {
-            "description": "Шаг ставки в разменных единицах — 0,01 от базовой валюты [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances) для кампаний CPC",
+            "description": "Шаг ставки в разменных единицах — 0,01 от базовой валюты [профиля продавца](https://cmp.wildberries.ru/campaigns/finances) для кампаний CPC",
             "format": "int64",
             "type": "integer"
           },
           "cpmStep": {
-            "description": "Шаг ставки в разменных единицах — 0,01 от базовой валюты [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances) для CPM-кампаний",
+            "description": "Шаг ставки в разменных единицах — 0,01 от базовой валюты [профиля продавца](https://cmp.wildberries.ru/campaigns/finances) для CPM-кампаний",
             "format": "int64",
             "type": "integer"
           },
           "currency": {
-            "description": "Валюта [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances)",
+            "description": "Валюта [профиля продавца](https://cmp.wildberries.ru/campaigns/finances)",
             "format": "ISO 4217",
             "type": "string"
           },
           "currencyCode": {
-            "description": "Код валюты [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances)",
+            "description": "Код валюты [профиля продавца](https://cmp.wildberries.ru/campaigns/finances)",
             "type": "integer"
           },
           "minDailyLimit": {
-            "description": "Минимально допустимый размер дневного лимита, вне зависимости от ставок кампании. Указывается в разменных единицах — 0,01 от базовой валюты [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances)\n",
+            "description": "Минимально допустимый размер дневного лимита, вне зависимости от ставок кампании. Указывается в разменных единицах — 0,01 от базовой валюты [профиля продавца](https://cmp.wildberries.ru/campaigns/finances)\n",
             "format": "int64",
             "type": "integer"
           },
           "minTopUp": {
-            "description": "Минимальная сумма пополнения бюджета кампании в разменных единицах — 0,01 от базовой валюты [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances).\n Например, минимальная сумма пополнения бюджета при `\"minTopUp\": 10000` и `\"currency\": \"UZS\"` — 100 узбекских сум\n",
+            "description": "Минимальная сумма пополнения бюджета кампании в разменных единицах — 0,01 от базовой валюты [профиля продавца](https://cmp.wildberries.ru/campaigns/finances).\n Например, минимальная сумма пополнения бюджета при `\"minTopUp\": 10000` и `\"currency\": \"UZS\"` — 100 узбекских сум\n",
             "format": "int64",
             "type": "integer"
           }
@@ -3755,7 +3755,7 @@
   "paths": {
     "/adv/v0/auction/nms": {
       "patch": {
-        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод добавляет и удаляет карточки товаров в кампаниях.\n<br><br>\nДля кампаний в статусах `4`, `9` и `11`.\n<br><br>\nДля добавляемых товаров устанавливается текущая минимальная ставка.\n\n <div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 сек | 1 запрос | 1 сек | 1 запрос |\n| Сервисный | 1 сек | 1 запрос | 1 сек | 1 запрос |\n| Базовый с секретом | 1 сек | 1 запрос | 1 сек | 1 запрос |\n| Базовый | 1 ч | 2 запроса | 30 мин | 1 запрос |\n</div>\n",
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод добавляет и удаляет карточки товаров в кампаниях.\n<br><br>\nДля кампаний в статусах `4`, `9` и `11`.\n<br><br>\nДля добавляемых товаров устанавливается текущая минимальная ставка.\n\n <div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один профиль продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 сек | 1 запрос | 1 сек | 1 запрос |\n| Сервисный | 1 сек | 1 запрос | 1 сек | 1 запрос |\n| Базовый с секретом | 1 сек | 1 запрос | 1 сек | 1 запрос |\n| Базовый | 1 ч | 2 запроса | 30 мин | 1 запрос |\n</div>\n",
         "operationId": "patchV0AuctionNms",
         "requestBody": {
           "content": {
@@ -3947,7 +3947,7 @@
     },
     "/adv/v0/auction/placements": {
       "put": {
-        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод меняет места размещения в кампаниях с ручной ставкой и моделью оплаты за показы — `cpm`.\n<br><br>\nДля кампаний в статусах `4`, `9` и `11`.\n\n <div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 сек | 1 запрос | 1 сек | 1 запрос |\n| Сервисный | 1 сек | 1 запрос | 1 сек | 1 запрос |\n| Базовый с секретом | 1 сек | 1 запрос | 1 сек | 1 запрос |\n| Базовый | 1 ч | 2 запроса | 30 мин | 1 запрос |\n</div>\n",
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод меняет места размещения в кампаниях с ручной ставкой и моделью оплаты за показы — `cpm`.\n<br><br>\nДля кампаний в статусах `4`, `9` и `11`.\n\n <div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один профиль продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 сек | 1 запрос | 1 сек | 1 запрос |\n| Сервисный | 1 сек | 1 запрос | 1 сек | 1 запрос |\n| Базовый с секретом | 1 сек | 1 запрос | 1 сек | 1 запрос |\n| Базовый | 1 ч | 2 запроса | 30 мин | 1 запрос |\n</div>\n",
         "operationId": "putV0AuctionPlacements",
         "requestBody": {
           "content": {
@@ -4076,7 +4076,7 @@
     },
     "/adv/v0/delete": {
       "get": {
-        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод удаляет [кампании](./promotion#tag/campaigns/operation/getV2Adverts) в статусе `4` — готова к запуску.<br><br>\n\nПосле удаления кампания некоторое время будет находиться в статусе `-1` — кампания в процессе удаления. Полное удаление кампании занимает от 3 до 10 минут.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 сек | 5 запросов | 200 мс | 5 запросов |\n| Сервисный | 1 сек | 5 запросов | 200 мс | 5 запросов |\n| Базовый с секретом | 1 сек | 5 запросов | 200 мс | 5 запросов |\n| Базовый | 1 ч | 5 запросов | 12 мин | 1 запрос |\n</div>\n",
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод удаляет [кампании](./promotion#tag/campaigns/operation/getV2Adverts) в статусе `4` — готова к запуску.<br><br>\n\nПосле удаления кампания некоторое время будет находиться в статусе `-1` — кампания в процессе удаления. Полное удаление кампании занимает от 3 до 10 минут.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один профиль продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 сек | 5 запросов | 200 мс | 5 запросов |\n| Сервисный | 1 сек | 5 запросов | 200 мс | 5 запросов |\n| Базовый с секретом | 1 сек | 5 запросов | 200 мс | 5 запросов |\n| Базовый | 1 ч | 5 запросов | 12 мин | 1 запрос |\n</div>\n",
         "operationId": "getV0Delete",
         "parameters": [
           {
@@ -4143,7 +4143,7 @@
     },
     "/adv/v0/normquery/bids": {
       "delete": {
-        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод удаляет ставки с поисковых кластеров.<br>\nМожно использовать только для кампаний с:\n  - ручной ставкой\n  - моделью оплаты `cpm` — за показы\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 сек | 5 запросов | 200 мс | 10 запросов |\n| Сервисный | 1 сек | 5 запросов | 200 мс | 10 запросов |\n| Базовый с секретом | 1 сек | 5 запросов | 200 мс | 10 запросов |\n| Базовый | 1 ч | 5 запросов | 12 мин | 1 запрос |\n</div>\n",
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод удаляет ставки с поисковых кластеров.<br>\nМожно использовать только для кампаний с:\n  - ручной ставкой\n  - моделью оплаты `cpm` — за показы\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один профиль продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 сек | 5 запросов | 200 мс | 10 запросов |\n| Сервисный | 1 сек | 5 запросов | 200 мс | 10 запросов |\n| Базовый с секретом | 1 сек | 5 запросов | 200 мс | 10 запросов |\n| Базовый | 1 ч | 5 запросов | 12 мин | 1 запрос |\n</div>\n",
         "operationId": "deleteV0NormqueryBids",
         "requestBody": {
           "content": {
@@ -4230,7 +4230,7 @@
         "x-readonly-method": false
       },
       "post": {
-        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод устанавливает ставки в рублях на поисковые кластеры.<br>\nМожно использовать только для кампаний с:\n  - ручной ставкой\n  - моделью оплаты `cpm` — за показы\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 сек | 2 запроса | 500 мс | 4 запроса |\n| Сервисный | 1 сек | 2 запроса | 500 мс | 4 запроса |\n| Базовый с секретом | 1 сек | 2 запроса | 500 мс | 4 запроса |\n| Базовый | 1 ч | 5 запросов | 12 мин | 1 запрос |\n</div>\n",
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод устанавливает ставки в рублях на поисковые кластеры.<br>\nМожно использовать только для кампаний с:\n  - ручной ставкой\n  - моделью оплаты `cpm` — за показы\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один профиль продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 сек | 2 запроса | 500 мс | 4 запроса |\n| Сервисный | 1 сек | 2 запроса | 500 мс | 4 запроса |\n| Базовый с секретом | 1 сек | 2 запроса | 500 мс | 4 запроса |\n| Базовый | 1 ч | 5 запросов | 12 мин | 1 запрос |\n</div>\n",
         "operationId": "postV0NormqueryBids",
         "requestBody": {
           "content": {
@@ -4320,7 +4320,7 @@
     },
     "/adv/v0/normquery/get-bids": {
       "post": {
-        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод возвращает список поисковых кластеров со ставками по:\n  - ID кампаний\n  - артикулам WB\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 сек | 5 запросов | 200 мс | 10 запросов |\n| Сервисный | 1 сек | 5 запросов | 200 мс | 10 запросов |\n| Базовый с секретом | 1 сек | 5 запросов | 200 мс | 10 запросов |\n| Базовый | 1 ч | 5 запросов | 12 мин | 1 запрос |\n</div>\n",
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод возвращает список поисковых кластеров со ставками по:\n  - ID кампаний\n  - артикулам WB\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один профиль продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 сек | 5 запросов | 200 мс | 10 запросов |\n| Сервисный | 1 сек | 5 запросов | 200 мс | 10 запросов |\n| Базовый с секретом | 1 сек | 5 запросов | 200 мс | 10 запросов |\n| Базовый | 1 ч | 5 запросов | 12 мин | 1 запрос |\n</div>\n",
         "operationId": "postV0NormqueryGetBids",
         "requestBody": {
           "content": {
@@ -4443,7 +4443,7 @@
     },
     "/adv/v0/normquery/get-minus": {
       "post": {
-        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод возвращает список минус-фраз по:\n  - ID кампаний\n  - артикулам WB\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 сек | 5 запросов | 200 мс | 10 запросов |\n| Сервисный | 1 сек | 5 запросов | 200 мс | 10 запросов |\n| Базовый с секретом | 1 сек | 5 запросов | 200 мс | 10 запросов |\n| Базовый | 1 ч | 5 запросов | 12 мин | 1 запрос |\n</div>\n",
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод возвращает список минус-фраз по:\n  - ID кампаний\n  - артикулам WB\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один профиль продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 сек | 5 запросов | 200 мс | 10 запросов |\n| Сервисный | 1 сек | 5 запросов | 200 мс | 10 запросов |\n| Базовый с секретом | 1 сек | 5 запросов | 200 мс | 10 запросов |\n| Базовый | 1 ч | 5 запросов | 12 мин | 1 запрос |\n</div>\n",
         "operationId": "postV0NormqueryGetMinus",
         "requestBody": {
           "content": {
@@ -4549,7 +4549,7 @@
     },
     "/adv/v0/normquery/list": {
       "post": {
-        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод возвращает списки активных и неактивных поисковых кластеров, по которым было не меньше 100 показов.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 сек | 5 запросов | 200 мс | 10 запросов |\n| Сервисный | 1 сек | 5 запросов | 200 мс | 10 запросов |\n| Базовый с секретом | 1 сек | 5 запросов | 200 мс | 10 запросов |\n| Базовый | 1 ч | 5 запросов | 12 мин | 1 запрос |\n</div>\n",
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод возвращает списки активных и неактивных поисковых кластеров, по которым было не меньше 100 показов.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один профиль продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 сек | 5 запросов | 200 мс | 10 запросов |\n| Сервисный | 1 сек | 5 запросов | 200 мс | 10 запросов |\n| Базовый с секретом | 1 сек | 5 запросов | 200 мс | 10 запросов |\n| Базовый | 1 ч | 5 запросов | 12 мин | 1 запрос |\n</div>\n",
         "operationId": "postV0NormqueryList",
         "requestBody": {
           "content": {
@@ -4648,7 +4648,7 @@
     },
     "/adv/v0/normquery/set-minus": {
       "post": {
-        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод устанавливает и удаляет минус-фразы в кампаниях c единой и ручной ставкой.\n\n<div class=\"description_important\">\n  Отправка пустого массива удаляет все минус-фразы\n</div>\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 сек | 5 запросов | 200 мс | 10 запросов |\n| Сервисный | 1 сек | 5 запросов | 200 мс | 10 запросов |\n| Базовый с секретом | 1 сек | 5 запросов | 200 мс | 10 запросов |\n| Базовый | 1 ч | 5 запросов | 12 мин | 1 запрос |\n</div>\n",
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод устанавливает и удаляет минус-фразы в кампаниях c единой и ручной ставкой.\n\n<div class=\"description_important\">\n  Отправка пустого массива удаляет все минус-фразы\n</div>\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один профиль продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 сек | 5 запросов | 200 мс | 10 запросов |\n| Сервисный | 1 сек | 5 запросов | 200 мс | 10 запросов |\n| Базовый с секретом | 1 сек | 5 запросов | 200 мс | 10 запросов |\n| Базовый | 1 ч | 5 запросов | 12 мин | 1 запрос |\n</div>\n",
         "operationId": "postV0NormquerySetMinus",
         "requestBody": {
           "content": {
@@ -4735,7 +4735,7 @@
     },
     "/adv/v0/normquery/stats": {
       "post": {
-        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод формирует статистику по поисковым кластерам за указанный период.<br>\nМожно использовать для кампаний с моделями оплаты `cpm` — за показы и `cpc` — за клики.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 мин | 10 запросов | 6 сек | 20 запросов |\n| Сервисный | 1 мин | 10 запросов | 6 сек | 20 запросов |\n| Базовый с секретом | 1 мин | 10 запросов | 6 сек | 20 запросов |\n| Базовый | 1 ч | 5 запросов | 12 мин | 1 запрос |\n</div>\n",
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод формирует статистику по поисковым кластерам за указанный период.<br>\nМожно использовать для кампаний с моделями оплаты `cpm` — за показы и `cpc` — за клики.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один профиль продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 мин | 10 запросов | 6 сек | 20 запросов |\n| Сервисный | 1 мин | 10 запросов | 6 сек | 20 запросов |\n| Базовый с секретом | 1 мин | 10 запросов | 6 сек | 20 запросов |\n| Базовый | 1 ч | 5 запросов | 12 мин | 1 запрос |\n</div>\n",
         "operationId": "postV0NormqueryStats",
         "requestBody": {
           "content": {
@@ -5093,7 +5093,7 @@
     },
     "/adv/v0/pause": {
       "get": {
-        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод ставит [кампании](./promotion#tag/campaigns/operation/getV2Adverts) в статусе `9` — активна — на паузу.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 сек | 5 запросов | 200 мс | 5 запросов |\n| Сервисный | 1 сек | 5 запросов | 200 мс | 5 запросов |\n| Базовый с секретом | 1 сек | 5 запросов | 200 мс | 5 запросов |\n| Базовый | 1 ч | 5 запросов | 12 мин | 1 запрос |\n</div>\n",
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод ставит [кампании](./promotion#tag/campaigns/operation/getV2Adverts) в статусе `9` — активна — на паузу.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один профиль продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 сек | 5 запросов | 200 мс | 5 запросов |\n| Сервисный | 1 сек | 5 запросов | 200 мс | 5 запросов |\n| Базовый с секретом | 1 сек | 5 запросов | 200 мс | 5 запросов |\n| Базовый | 1 ч | 5 запросов | 12 мин | 1 запрос |\n</div>\n",
         "operationId": "getV0Pause",
         "parameters": [
           {
@@ -5179,7 +5179,7 @@
     },
     "/adv/v0/rename": {
       "post": {
-        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод меняет название [кампании](./promotion#tag/campaigns/operation/getV2Adverts). Это можно сделать в любой момент существования кампании.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 сек | 5 запросов | 200 мс | 5 запросов |\n| Сервисный | 1 сек | 5 запросов | 200 мс | 5 запросов |\n| Базовый с секретом | 1 сек | 5 запросов | 200 мс | 5 запросов |\n| Базовый | 1 ч | 2 запроса | 30 мин | 1 запрос |\n</div>\n",
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод меняет название [кампании](./promotion#tag/campaigns/operation/getV2Adverts). Это можно сделать в любой момент существования кампании.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один профиль продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 сек | 5 запросов | 200 мс | 5 запросов |\n| Сервисный | 1 сек | 5 запросов | 200 мс | 5 запросов |\n| Базовый с секретом | 1 сек | 5 запросов | 200 мс | 5 запросов |\n| Базовый | 1 ч | 2 запроса | 30 мин | 1 запрос |\n</div>\n",
         "operationId": "postV0Rename",
         "requestBody": {
           "content": {
@@ -5286,7 +5286,7 @@
     },
     "/adv/v0/start": {
       "get": {
-        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод запускает [кампании](./promotion#tag/campaigns/operation/getV2Adverts) в статусах `4` — готово к запуску — или `11` — пауза.\nЧтобы запустить кампанию, проверьте ее бюджет. Если бюджета недостаточно, [пополните его](./promotion#tag/finances/operation/postV1BudgetDeposit).\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 сек | 5 запросов | 200 мс | 5 запросов |\n| Сервисный | 1 сек | 5 запросов | 200 мс | 5 запросов |\n| Базовый с секретом | 1 сек | 5 запросов | 200 мс | 5 запросов |\n| Базовый | 1 ч | 5 запросов | 12 мин | 1 запрос |\n</div>\n",
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод запускает [кампании](./promotion#tag/campaigns/operation/getV2Adverts) в статусах `4` — готово к запуску — или `11` — пауза.\nЧтобы запустить кампанию, проверьте ее бюджет. Если бюджета недостаточно, [пополните его](./promotion#tag/finances/operation/postV1BudgetDeposit).\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один профиль продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 сек | 5 запросов | 200 мс | 5 запросов |\n| Сервисный | 1 сек | 5 запросов | 200 мс | 5 запросов |\n| Базовый с секретом | 1 сек | 5 запросов | 200 мс | 5 запросов |\n| Базовый | 1 ч | 5 запросов | 12 мин | 1 запрос |\n</div>\n",
         "operationId": "getV0Start",
         "parameters": [
           {
@@ -5375,7 +5375,7 @@
     },
     "/adv/v0/stop": {
       "get": {
-        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод завершает [кампании](./promotion#tag/campaigns/operation/getV2Adverts) в статусах:\n  - `9` — активна\n  - `11` — пауза\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 сек | 5 запросов | 200 мс | 5 запросов |\n| Сервисный | 1 сек | 5 запросов | 200 мс | 5 запросов |\n| Базовый с секретом | 1 сек | 5 запросов | 200 мс | 5 запросов |\n| Базовый | 1 ч | 5 запросов | 12 мин | 1 запрос |\n</div>\n",
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод завершает [кампании](./promotion#tag/campaigns/operation/getV2Adverts) в статусах:\n  - `9` — активна\n  - `11` — пауза\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один профиль продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 сек | 5 запросов | 200 мс | 5 запросов |\n| Сервисный | 1 сек | 5 запросов | 200 мс | 5 запросов |\n| Базовый с секретом | 1 сек | 5 запросов | 200 мс | 5 запросов |\n| Базовый | 1 ч | 5 запросов | 12 мин | 1 запрос |\n</div>\n",
         "operationId": "getV0Stop",
         "parameters": [
           {
@@ -5461,7 +5461,7 @@
     },
     "/adv/v1/advert": {
       "get": {
-        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод возвращает информацию о кампании [WB Медиа](https://cmp.wildberries.ru/cmpf/list). Вместо карточек товаров в медиакампаниях продвигаются рекламные баннеры продавца на сайте и в приложении WB.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 сек | 10 запросов | 100 мс | 10 запросов |\n| Сервисный | 1 сек | 10 запросов | 100 мс | 10 запросов |\n| Базовый с секретом | 1 сек | 10 запросов | 100 мс | 10 запросов |\n| Базовый | 1 ч | 5 запросов | 12 мин | 1 запрос |\n</div>\n",
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод возвращает информацию о кампании [WB Медиа](https://cmp.wildberries.ru/cmpf/list). Вместо карточек товаров в медиакампаниях продвигаются рекламные баннеры продавца на сайте и в приложении WB.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один профиль продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 сек | 10 запросов | 100 мс | 10 запросов |\n| Сервисный | 1 сек | 10 запросов | 100 мс | 10 запросов |\n| Базовый с секретом | 1 сек | 10 запросов | 100 мс | 10 запросов |\n| Базовый | 1 ч | 5 запросов | 12 мин | 1 запрос |\n</div>\n",
         "operationId": "getV1Advert",
         "parameters": [
           {
@@ -5797,7 +5797,7 @@
     },
     "/adv/v1/adverts": {
       "get": {
-        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод возвращает список всех [медиакампаний](./promotion#tag/media/operation/getV1Advert) продавца по их типам и статусам.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 сек | 10 запросов | 100 мс | 10 запросов |\n| Сервисный | 1 сек | 10 запросов | 100 мс | 10 запросов |\n| Базовый с секретом | 1 сек | 10 запросов | 100 мс | 10 запросов |\n| Базовый | 1 ч | 1 запрос | 1 ч | 1 запрос |\n</div>\n",
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод возвращает список всех [медиакампаний](./promotion#tag/media/operation/getV1Advert) продавца по их типам и статусам.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один профиль продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 сек | 10 запросов | 100 мс | 10 запросов |\n| Сервисный | 1 сек | 10 запросов | 100 мс | 10 запросов |\n| Базовый с секретом | 1 сек | 10 запросов | 100 мс | 10 запросов |\n| Базовый | 1 ч | 1 запрос | 1 ч | 1 запрос |\n</div>\n",
         "operationId": "getV1Adverts",
         "parameters": [
           {
@@ -5953,7 +5953,7 @@
     },
     "/adv/v1/balance": {
       "get": {
-        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод возвращает информацию о:\n  - счёте кабинета Продвижения WB. Его пополняет продавец.\n  - балансе — максимальной сумме для оплаты кампании по взаиморасчету: удержании средств из будущих продаж. Баланс пополнить нельзя, он рассчитывается автоматически на основе отчётов по продвижению.\n  - бонусных начислениях WB.\n\nЧтобы получить информацию о бюджетах кампаний, используйте метод [Бюджеты кампаний](./promotion#tag/finances/operation/postV2Budget).\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 сек | 1 запрос | 1 сек | 5 запросов |\n| Сервисный | 1 сек | 1 запрос | 1 сек | 5 запросов |\n| Базовый с секретом | 1 сек | 1 запрос | 1 сек | 5 запросов |\n| Базовый | 1 ч | 2 запроса | 30 мин | 1 запрос |\n</div>\n",
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод возвращает информацию о:\n  - счёте кабинета Продвижения WB. Его пополняет продавец.\n  - балансе — максимальной сумме для оплаты кампании по взаиморасчету: удержании средств из будущих продаж. Баланс пополнить нельзя, он рассчитывается автоматически на основе отчётов по продвижению.\n  - бонусных начислениях WB.\n\nЧтобы получить информацию о бюджетах кампаний, используйте метод [Бюджеты кампаний](./promotion#tag/finances/operation/postV2Budget).\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один профиль продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 сек | 1 запрос | 1 сек | 5 запросов |\n| Сервисный | 1 сек | 1 запрос | 1 сек | 5 запросов |\n| Базовый с секретом | 1 сек | 1 запрос | 1 сек | 5 запросов |\n| Базовый | 1 ч | 2 запроса | 30 мин | 1 запрос |\n</div>\n",
         "operationId": "getV1Balance",
         "responses": {
           "200": {
@@ -5975,11 +5975,11 @@
                 "schema": {
                   "properties": {
                     "balance": {
-                      "description": "Счёт в базовых единицах валюты [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances)",
+                      "description": "Счёт в базовых единицах валюты [профиля продавца](https://cmp.wildberries.ru/campaigns/finances)",
                       "type": "integer"
                     },
                     "bonus": {
-                      "description": "Бонусы в базовых единицах валюты [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances)",
+                      "description": "Бонусы в базовых единицах валюты [профиля продавца](https://cmp.wildberries.ru/campaigns/finances)",
                       "type": "integer"
                     },
                     "cashbacks": {
@@ -5996,7 +5996,7 @@
                             "type": "integer"
                           },
                           "sum": {
-                            "description": "Промо-бонусы в базовых единицах валюты [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances)",
+                            "description": "Промо-бонусы в базовых единицах валюты [профиля продавца](https://cmp.wildberries.ru/campaigns/finances)",
                             "type": "integer"
                           }
                         },
@@ -6005,12 +6005,12 @@
                       "type": "array"
                     },
                     "currency": {
-                      "description": "Валюта [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances)",
+                      "description": "Валюта [профиля продавца](https://cmp.wildberries.ru/campaigns/finances)",
                       "format": "ISO 4217",
                       "type": "string"
                     },
                     "net": {
-                      "description": "Баланс в базовых единицах валюты [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances)",
+                      "description": "Баланс в базовых единицах валюты [профиля продавца](https://cmp.wildberries.ru/campaigns/finances)",
                       "type": "integer"
                     }
                   },
@@ -6071,7 +6071,7 @@
     "/adv/v1/budget": {
       "get": {
         "deprecated": true,
-        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод будет отключен [16 ноября](https://dev.wildberries.ru/release-notes?id=582).\n\n\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 сек | 4 запроса | 250 мс | 4 запроса |\n| Сервисный | 1 сек | 4 запроса | 250 мс | 4 запроса |\n| Базовый с секретом | 1 сек | 4 запроса | 250 мс | 4 запроса |\n| Базовый | 1 ч | 4 запроса | 15 мин | 1 запрос |\n</div>\n",
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод будет отключен [16 ноября](https://dev.wildberries.ru/release-notes?id=582).\n\n\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один профиль продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 сек | 4 запроса | 250 мс | 4 запроса |\n| Сервисный | 1 сек | 4 запроса | 250 мс | 4 запроса |\n| Базовый с секретом | 1 сек | 4 запроса | 250 мс | 4 запроса |\n| Базовый | 1 ч | 4 запроса | 15 мин | 1 запрос |\n</div>\n",
         "operationId": "getV1Budget",
         "parameters": [
           {
@@ -6102,7 +6102,7 @@
                       "type": "integer"
                     },
                     "currency": {
-                      "description": "Валюта [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances)",
+                      "description": "Валюта [профиля продавца](https://cmp.wildberries.ru/campaigns/finances)",
                       "format": "ISO 4217",
                       "type": "string"
                     },
@@ -6111,7 +6111,7 @@
                       "type": "integer"
                     },
                     "total": {
-                      "description": "Бюджет кампании в базовых единицах валюты [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances)",
+                      "description": "Бюджет кампании в базовых единицах валюты [профиля продавца](https://cmp.wildberries.ru/campaigns/finances)",
                       "type": "integer"
                     }
                   },
@@ -6171,7 +6171,7 @@
     },
     "/adv/v1/budget/deposit": {
       "post": {
-        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод пополняет [бюджет](./promotion#tag/finances/operation/postV2Budget) кампании. <br>\nЧтобы запустить кампанию после пополнения бюджета, используйте метод [Запуск кампании](./promotion#tag/campaignManagement/operation/getV0Start).\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 сек | 1 запрос | 1 сек | 5 запросов |\n| Сервисный | 1 сек | 1 запрос | 1 сек | 5 запросов |\n| Базовый с секретом | 1 сек | 1 запрос | 1 сек | 5 запросов |\n| Базовый | 1 ч | 5 запросов | 12 мин | 1 запрос |\n</div>\n",
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод пополняет [бюджет](./promotion#tag/finances/operation/postV2Budget) кампании. <br>\nЧтобы запустить кампанию после пополнения бюджета, используйте метод [Запуск кампании](./promotion#tag/campaignManagement/operation/getV0Start).\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один профиль продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 сек | 1 запрос | 1 сек | 5 запросов |\n| Сервисный | 1 сек | 1 запрос | 1 сек | 5 запросов |\n| Базовый с секретом | 1 сек | 1 запрос | 1 сек | 5 запросов |\n| Базовый | 1 ч | 5 запросов | 12 мин | 1 запрос |\n</div>\n",
         "operationId": "postV1BudgetDeposit",
         "parameters": [
           {
@@ -6205,7 +6205,7 @@
                     "type": "boolean"
                   },
                   "sum": {
-                    "description": "Общая сумма пополнения бюджета в базовых единицах валюты [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances)",
+                    "description": "Общая сумма пополнения бюджета в базовых единицах валюты [профиля продавца](https://cmp.wildberries.ru/campaigns/finances)",
                     "example": 5000,
                     "type": "integer"
                   },
@@ -6242,7 +6242,7 @@
               "application/json": {
                 "examples": {
                   "MinimumDepositAmountError": {
-                    "description": "Сумма пополнения меньше допустимой.\nПополните счёт на сумму не менее указанной в сообщении об ошибке. Сумма указана в базовых единицах валюты аккаунта продавца\n",
+                    "description": "Сумма пополнения меньше допустимой.\nПополните счёт на сумму не менее указанной в сообщении об ошибке. Сумма указана в базовых единицах валюты профиля продавца\n",
                     "value": {
                       "error": "Invalid Params: minimum deposit amount is 1000"
                     }
@@ -6295,7 +6295,7 @@
     },
     "/adv/v1/count": {
       "get": {
-        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод возвращает количество [медиакампаний](./promotion#tag/media/operation/getV1Advert) продавца с группировкой по статусам.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 сек | 10 запросов | 100 мс | 10 запросов |\n| Сервисный | 1 сек | 10 запросов | 100 мс | 10 запросов |\n| Базовый с секретом | 1 сек | 10 запросов | 100 мс | 10 запросов |\n| Базовый | 1 ч | 1 запрос | 1 ч | 1 запрос |\n</div>\n",
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод возвращает количество [медиакампаний](./promotion#tag/media/operation/getV1Advert) продавца с группировкой по статусам.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один профиль продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 сек | 10 запросов | 100 мс | 10 запросов |\n| Сервисный | 1 сек | 10 запросов | 100 мс | 10 запросов |\n| Базовый с секретом | 1 сек | 10 запросов | 100 мс | 10 запросов |\n| Базовый | 1 ч | 1 запрос | 1 ч | 1 запрос |\n</div>\n",
         "operationId": "getV1Count",
         "responses": {
           "200": {
@@ -6370,7 +6370,7 @@
     },
     "/adv/v1/normquery/stats": {
       "post": {
-        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод формирует статистику по поисковым кластерам за указанный период с детализацией по дням.\nМожно использовать для кампаний с моделями оплаты `cpm` — за показы и `cpc` — за клики.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 мин | 10 запросов | 6 сек | 20 запросов |\n| Сервисный | 1 мин | 10 запросов | 6 сек | 20 запросов |\n| Базовый с секретом | 1 мин | 10 запросов | 6 сек | 20 запросов |\n| Базовый | 1 ч | 2 запроса | 30 мин | 1 запрос |\n</div>\n",
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод формирует статистику по поисковым кластерам за указанный период с детализацией по дням.\nМожно использовать для кампаний с моделями оплаты `cpm` — за показы и `cpc` — за клики.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один профиль продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 мин | 10 запросов | 6 сек | 20 запросов |\n| Сервисный | 1 мин | 10 запросов | 6 сек | 20 запросов |\n| Базовый с секретом | 1 мин | 10 запросов | 6 сек | 20 запросов |\n| Базовый | 1 ч | 2 запроса | 30 мин | 1 запрос |\n</div>\n",
         "operationId": "postV1NormqueryStats",
         "requestBody": {
           "content": {
@@ -6503,7 +6503,7 @@
     },
     "/adv/v1/payments": {
       "get": {
-        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод возвращает историю пополнений счёта **WB Продвижение** за заданный период.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 сек | 1 запрос | 1 сек | 5 запросов |\n| Сервисный | 1 сек | 1 запрос | 1 сек | 5 запросов |\n| Базовый с секретом | 1 сек | 1 запрос | 1 сек | 5 запросов |\n| Базовый | 1 ч | 1 запрос | 1 ч | 1 запрос |\n</div>\n",
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод возвращает историю пополнений счёта **WB Продвижение** за заданный период.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один профиль продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 сек | 1 запрос | 1 сек | 5 запросов |\n| Сервисный | 1 сек | 1 запрос | 1 сек | 5 запросов |\n| Базовый с секретом | 1 сек | 1 запрос | 1 сек | 5 запросов |\n| Базовый | 1 ч | 1 запрос | 1 ч | 1 запрос |\n</div>\n",
         "operationId": "getV1Payments",
         "parameters": [
           {
@@ -6559,7 +6559,7 @@
                         "type": "string"
                       },
                       "currency": {
-                        "description": "Валюта [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances)",
+                        "description": "Валюта [профиля продавца](https://cmp.wildberries.ru/campaigns/finances)",
                         "format": "ISO 4217",
                         "type": "string"
                       },
@@ -6646,7 +6646,7 @@
     },
     "/adv/v1/promotion/count": {
       "get": {
-        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод возвращает списки всех [рекламных кампаний](./promotion#tag/campaigns/operation/getV2Adverts) продавца с их ID. Кампании сгруппированы по типу и статусу, у каждой указана дата последнего изменения.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 сек | 5 запросов | 200 мс | 5 запросов |\n| Сервисный | 1 сек | 5 запросов | 200 мс | 5 запросов |\n| Базовый с секретом | 1 сек | 5 запросов | 200 мс | 5 запросов |\n| Базовый | 1 ч | 4 запроса | 15 мин | 1 запрос |\n</div>\n",
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод возвращает списки всех [рекламных кампаний](./promotion#tag/campaigns/operation/getV2Adverts) продавца с их ID. Кампании сгруппированы по типу и статусу, у каждой указана дата последнего изменения.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один профиль продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 сек | 5 запросов | 200 мс | 5 запросов |\n| Сервисный | 1 сек | 5 запросов | 200 мс | 5 запросов |\n| Базовый с секретом | 1 сек | 5 запросов | 200 мс | 5 запросов |\n| Базовый | 1 ч | 4 запроса | 15 мин | 1 запрос |\n</div>\n",
         "operationId": "getV1PromotionCount",
         "responses": {
           "200": {
@@ -6764,7 +6764,7 @@
     },
     "/adv/v1/stats": {
       "post": {
-        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод формирует статистику кампаний сервиса [WB Медиа](https://cmp.wildberries.ru/cmpf/statistics). Статистику можно группировать по датам и/или интервалам.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 сек | 10 запросов | 100 мс | 10 запросов |\n| Сервисный | 1 сек | 10 запросов | 100 мс | 10 запросов |\n| Базовый с секретом | 1 сек | 10 запросов | 100 мс | 10 запросов |\n| Базовый | 1 ч | 1 запрос | 1 ч | 1 запрос |\n</div>\n",
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод формирует статистику кампаний сервиса [WB Медиа](https://cmp.wildberries.ru/cmpf/statistics). Статистику можно группировать по датам и/или интервалам.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один профиль продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 сек | 10 запросов | 100 мс | 10 запросов |\n| Сервисный | 1 сек | 10 запросов | 100 мс | 10 запросов |\n| Базовый с секретом | 1 сек | 10 запросов | 100 мс | 10 запросов |\n| Базовый | 1 ч | 1 запрос | 1 ч | 1 запрос |\n</div>\n",
         "operationId": "postV1Stats",
         "requestBody": {
           "content": {
@@ -6894,7 +6894,7 @@
     },
     "/adv/v1/supplier/subjects": {
       "get": {
-        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод возвращает список [предметов](./item-management#tag/categoriesSubcategoriesAndCharacteristics/operation/getV2ObjectAll), которые можно добавить в рекламную [кампанию](./promotion#tag/campaigns/operation/getV2Adverts).\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 12 сек | 1 запрос | 12 сек | 5 запросов |\n| Сервисный | 12 сек | 1 запрос | 12 сек | 5 запросов |\n| Базовый с секретом | 12 сек | 1 запрос | 12 сек | 5 запросов |\n| Базовый | 1 ч | 2 запроса | 30 мин | 1 запрос |\n</div>\n",
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод возвращает список [предметов](./item-management#tag/categoriesSubcategoriesAndCharacteristics/operation/getV2ObjectAll), которые можно добавить в рекламную [кампанию](./promotion#tag/campaigns/operation/getV2Adverts).\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один профиль продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 12 сек | 1 запрос | 12 сек | 5 запросов |\n| Сервисный | 12 сек | 1 запрос | 12 сек | 5 запросов |\n| Базовый с секретом | 12 сек | 1 запрос | 12 сек | 5 запросов |\n| Базовый | 1 ч | 2 запроса | 30 мин | 1 запрос |\n</div>\n",
         "operationId": "getV1SupplierSubjects",
         "parameters": [
           {
@@ -6990,7 +6990,7 @@
     },
     "/adv/v1/upd": {
       "get": {
-        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод формирует список фактических затрат на рекламные кампании за заданный период.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 сек | 1 запрос | 1 сек | 5 запросов |\n| Сервисный | 1 сек | 1 запрос | 1 сек | 5 запросов |\n| Базовый с секретом | 1 сек | 1 запрос | 1 сек | 5 запросов |\n| Базовый | 1 ч | 1 запрос | 1 ч | 1 запрос |\n</div>\n",
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод формирует список фактических затрат на рекламные кампании за заданный период.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один профиль продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 сек | 1 запрос | 1 сек | 5 запросов |\n| Сервисный | 1 сек | 1 запрос | 1 сек | 5 запросов |\n| Базовый с секретом | 1 сек | 1 запрос | 1 сек | 5 запросов |\n| Базовый | 1 ч | 1 запрос | 1 ч | 1 запрос |\n</div>\n",
         "operationId": "getV1Upd",
         "parameters": [
           {
@@ -7070,7 +7070,7 @@
                         "type": "integer"
                       },
                       "updSum": {
-                        "description": "Выставленная сумма в базовых единицах валюты [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances)",
+                        "description": "Выставленная сумма в базовых единицах валюты [профиля продавца](https://cmp.wildberries.ru/campaigns/finances)",
                         "type": "integer"
                       },
                       "updTime": {
@@ -7138,7 +7138,7 @@
     },
     "/adv/v2/seacat/save-ad": {
       "post": {
-        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод создаёт кампанию:\n  - с ручной ставкой для продвижения товаров в поиске и/или рекомендациях\n  - с единой ставкой для продвижения товаров одновременно в поиске и рекомендациях\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 мин | 5 запросов | 12 сек | 5 запросов |\n| Сервисный | 1 мин | 5 запросов | 12 сек | 5 запросов |\n| Базовый с секретом | 1 мин | 5 запросов | 12 сек | 5 запросов |\n| Базовый | 1 ч | 5 запросов | 12 мин | 1 запрос |\n</div>\n",
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод создаёт кампанию:\n  - с ручной ставкой для продвижения товаров в поиске и/или рекомендациях\n  - с единой ставкой для продвижения товаров одновременно в поиске и рекомендациях\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один профиль продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 мин | 5 запросов | 12 сек | 5 запросов |\n| Сервисный | 1 мин | 5 запросов | 12 сек | 5 запросов |\n| Базовый с секретом | 1 мин | 5 запросов | 12 сек | 5 запросов |\n| Базовый | 1 ч | 5 запросов | 12 мин | 1 запрос |\n</div>\n",
         "operationId": "postV2SeacatSaveAd",
         "requestBody": {
           "content": {
@@ -7269,7 +7269,7 @@
     },
     "/adv/v2/supplier/nms": {
       "post": {
-        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод возвращает список [карточек товаров](./item-management#tag/listings/operation/postV2GetCardsList), которые можно добавить в рекламную [кампанию](./promotion#tag/campaigns/operation/getV2Adverts). Для получения карточек необходимы ID [предметов](./promotion#tag/creatingCampaigns/operation/getV1SupplierSubjects), также доступных для добавления в кампанию.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 мин | 5 запросов | 12 сек | 5 запросов |\n| Сервисный | 1 мин | 5 запросов | 12 сек | 5 запросов |\n| Базовый с секретом | 1 мин | 5 запросов | 12 сек | 5 запросов |\n| Базовый | 1 ч | 2 запроса | 30 мин | 1 запрос |\n</div>\n",
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод возвращает список [карточек товаров](./item-management#tag/listings/operation/postV2GetCardsList), которые можно добавить в рекламную [кампанию](./promotion#tag/campaigns/operation/getV2Adverts). Для получения карточек необходимы ID [предметов](./promotion#tag/creatingCampaigns/operation/getV1SupplierSubjects), также доступных для добавления в кампанию.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один профиль продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 мин | 5 запросов | 12 сек | 5 запросов |\n| Сервисный | 1 мин | 5 запросов | 12 сек | 5 запросов |\n| Базовый с секретом | 1 мин | 5 запросов | 12 сек | 5 запросов |\n| Базовый | 1 ч | 2 запроса | 30 мин | 1 запрос |\n</div>\n",
         "operationId": "postV2SupplierNms",
         "requestBody": {
           "content": {
@@ -7369,7 +7369,7 @@
     },
     "/adv/v3/fullstats": {
       "get": {
-        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод формирует статистику для кампаний независимо от типа.\n<br><br>\nМаксимальный период в запросе — 31 день.\n<br><br>\nДля кампаний в статусах `7`, `9` и `11`.\n<br><br>\nВ песочнице статистика кампаний доступна за последние 30 дней. Генерируется только для компаний в статусе `9`, тип `8`, 9 раз в сутки\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 мин | 3 запроса | 20 сек | 1 запрос |\n| Сервисный | 1 мин | 3 запроса | 20 сек | 1 запрос |\n| Базовый с секретом | 1 мин | 3 запроса | 20 сек | 1 запрос |\n| Базовый | 1 ч | 1 запрос | 1 ч | 1 запрос |\n</div>\n",
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод формирует статистику для кампаний независимо от типа.\n<br><br>\nМаксимальный период в запросе — 31 день.\n<br><br>\nДля кампаний в статусах `7`, `9` и `11`.\n<br><br>\nВ песочнице статистика кампаний доступна за последние 30 дней. Генерируется только для компаний в статусе `9`, тип `8`, 9 раз в сутки\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один профиль продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 мин | 3 запроса | 20 сек | 1 запрос |\n| Сервисный | 1 мин | 3 запроса | 20 сек | 1 запрос |\n| Базовый с секретом | 1 мин | 3 запроса | 20 сек | 1 запрос |\n| Базовый | 1 ч | 1 запрос | 1 ч | 1 запрос |\n</div>\n",
         "operationId": "getV3Fullstats",
         "parameters": [
           {
@@ -7887,7 +7887,7 @@
     },
     "/api/advert/v0/bids/recommendations": {
       "get": {
-        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод возвращает рекомендуемые ставки для карточек товаров и поисковых кластеров кампании.\nМожно использовать для кампаний с типами оплаты `cpm` — за показы и `cpc` — за клики.\n\n <div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 мин | 5 запросов | 12 сек | 5 запросов |\n| Сервисный | 1 мин | 5 запросов | 12 сек | 5 запросов |\n| Базовый с секретом | 1 мин | 5 запросов | 12 сек | 5 запросов |\n| Базовый | 1 ч | 20 запросов | 3 мин | 1 запрос |\n</div>\n",
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод возвращает рекомендуемые ставки для карточек товаров и поисковых кластеров кампании.\nМожно использовать для кампаний с типами оплаты `cpm` — за показы и `cpc` — за клики.\n\n <div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один профиль продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 мин | 5 запросов | 12 сек | 5 запросов |\n| Сервисный | 1 мин | 5 запросов | 12 сек | 5 запросов |\n| Базовый с секретом | 1 мин | 5 запросов | 12 сек | 5 запросов |\n| Базовый | 1 ч | 20 запросов | 3 мин | 1 запрос |\n</div>\n",
         "operationId": "getV0BidsRecommendations",
         "parameters": [
           {
@@ -7985,7 +7985,7 @@
     },
     "/api/advert/v0/daily-limits": {
       "get": {
-        "description": "<div class='description-title'><span>Описание метода</span></div>\n\n\n<div class=\"description_token\">\n    Метод <a href=\"./api-information#tag/authorization/Pravila-ispolzovaniya-tokenov-dostupa-k-API\">доступен</a> по\n        <strong>Персональному</strong> токену, \n        <strong>Сервисному</strong> токену\n</div>\n\nМетод возвращает текущие настройки [дневных лимитов кампаний CPC](https://cmp.wildberries.ru/campaigns/help/knowledge-base/options#%D0%94%D0%BD%D0%B5%D0%B2%D0%BD%D0%BE%D0%B9%D0%BB%D0%B8%D0%BC%D0%B8%D1%82%D0%B2%D0%BA%D0%B0%D0%BC%D0%BF%D0%B0%D0%BD%D0%B8%D1%8F%D1%85%D1%81%D0%BE%D0%BF%D0%BB%D0%B0%D1%82%D0%BE%D0%B9%D0%B7%D0%B0%D0%BA%D0%BB%D0%B8%D0%BA%D0%B8%D0%A1%D0%A0%D0%A1) — максимальных сумм, которые кампании могут потратить на продвижение в течение суток.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 мин | 5 запросов | 12 сек | 5 запросов |\n| Сервисный | 1 мин | 5 запросов | 12 сек | 5 запросов |\n</div>\n",
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\n\n<div class=\"description_token\">\n    Метод <a href=\"./api-information#tag/authorization/Pravila-ispolzovaniya-tokenov-dostupa-k-API\">доступен</a> по\n        <strong>Персональному</strong> токену, \n        <strong>Сервисному</strong> токену\n</div>\n\nМетод возвращает текущие настройки [дневных лимитов кампаний CPC](https://cmp.wildberries.ru/campaigns/help/knowledge-base/options#%D0%94%D0%BD%D0%B5%D0%B2%D0%BD%D0%BE%D0%B9%D0%BB%D0%B8%D0%BC%D0%B8%D1%82%D0%B2%D0%BA%D0%B0%D0%BC%D0%BF%D0%B0%D0%BD%D0%B8%D1%8F%D1%85%D1%81%D0%BE%D0%BF%D0%BB%D0%B0%D1%82%D0%BE%D0%B9%D0%B7%D0%B0%D0%BA%D0%BB%D0%B8%D0%BA%D0%B8%D0%A1%D0%A0%D0%A1) — максимальных сумм, которые кампании могут потратить на продвижение в течение суток.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один профиль продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 мин | 5 запросов | 12 сек | 5 запросов |\n| Сервисный | 1 мин | 5 запросов | 12 сек | 5 запросов |\n</div>\n",
         "operationId": "getV0DailyLimits",
         "parameters": [
           {
@@ -8047,7 +8047,7 @@
         ]
       },
       "put": {
-        "description": "<div class='description-title'><span>Описание метода</span></div>\n\n\n<div class=\"description_token\">\n    Метод <a href=\"./api-information#tag/authorization/Pravila-ispolzovaniya-tokenov-dostupa-k-API\">доступен</a> по\n        <strong>Персональному</strong> токену, \n        <strong>Сервисному</strong> токену\n</div>\n\nМетод включает, выключает и обновляет дневной лимит кампаний.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 мин | 5 запросов | 12 сек | 5 запросов |\n| Сервисный | 1 мин | 5 запросов | 12 сек | 5 запросов |\n</div>\n",
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\n\n<div class=\"description_token\">\n    Метод <a href=\"./api-information#tag/authorization/Pravila-ispolzovaniya-tokenov-dostupa-k-API\">доступен</a> по\n        <strong>Персональному</strong> токену, \n        <strong>Сервисному</strong> токену\n</div>\n\nМетод включает, выключает и обновляет дневной лимит кампаний.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один профиль продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 мин | 5 запросов | 12 сек | 5 запросов |\n| Сервисный | 1 мин | 5 запросов | 12 сек | 5 запросов |\n</div>\n",
         "operationId": "putV0DailyLimits",
         "requestBody": {
           "content": {
@@ -8146,7 +8146,7 @@
     },
     "/api/advert/v1/bids": {
       "patch": {
-        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод меняет ставки карточек товаров по артикулам WB в кампаниях:\n  - с единой ставкой\n  - с ручной ставкой\n  - с моделью оплаты `cpc` — за клики\n\nДля кампаний в статусах `4`, `9` и `11`.\n<br><br>\nВ запросе укажите место размещения в параметре `placement`:\n  - `combined` — в поиске и рекомендациях для кампаний с единой ставкой\n  - `search `или `recommendations` — в поиске или рекомендациях для кампаний с ручной ставкой\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 сек | 5 запросов | 200 мс | 5 запросов |\n| Сервисный | 1 сек | 5 запросов | 200 мс | 5 запросов |\n| Базовый с секретом | 1 сек | 5 запросов | 200 мс | 5 запросов |\n| Базовый | 1 ч | 2 запроса | 30 мин | 1 запрос |\n</div>\n",
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод меняет ставки карточек товаров по артикулам WB в кампаниях:\n  - с единой ставкой\n  - с ручной ставкой\n  - с моделью оплаты `cpc` — за клики\n\nДля кампаний в статусах `4`, `9` и `11`.\n<br><br>\nВ запросе укажите место размещения в параметре `placement`:\n  - `combined` — в поиске и рекомендациях для кампаний с единой ставкой\n  - `search `или `recommendations` — в поиске или рекомендациях для кампаний с ручной ставкой\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один профиль продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 сек | 5 запросов | 200 мс | 5 запросов |\n| Сервисный | 1 сек | 5 запросов | 200 мс | 5 запросов |\n| Базовый с секретом | 1 сек | 5 запросов | 200 мс | 5 запросов |\n| Базовый | 1 ч | 2 запроса | 30 мин | 1 запрос |\n</div>\n",
         "operationId": "patchV1Bids",
         "requestBody": {
           "content": {
@@ -8181,7 +8181,7 @@
                           "items": {
                             "properties": {
                               "bid_kopecks": {
-                                "description": "Ставка в разменных единицах — 0,01 от базовой валюты [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances)",
+                                "description": "Ставка в разменных единицах — 0,01 от базовой валюты [профиля продавца](https://cmp.wildberries.ru/campaigns/finances)",
                                 "format": "int64",
                                 "type": "integer"
                               },
@@ -8265,7 +8265,7 @@
                             "items": {
                               "properties": {
                                 "bid_kopecks": {
-                                  "description": "Ставка в разменных единицах — 0,01 от базовой валюты [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances)",
+                                  "description": "Ставка в разменных единицах — 0,01 от базовой валюты [профиля продавца](https://cmp.wildberries.ru/campaigns/finances)",
                                   "format": "int64",
                                   "type": "integer"
                                 },
@@ -8298,7 +8298,7 @@
                       "type": "array"
                     },
                     "currency": {
-                      "description": "Валюта [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances)",
+                      "description": "Валюта [профиля продавца](https://cmp.wildberries.ru/campaigns/finances)",
                       "format": "ISO 4217",
                       "type": "string"
                     }
@@ -8360,7 +8360,7 @@
     },
     "/api/advert/v1/bids/min": {
       "post": {
-        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод возвращает минимальные ставки для карточек товаров в разменных единицах — 0,01 от базовой валюты [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances) — по типу оплаты и местам размещения.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 мин | 20 запросов | 3 сек | 5 запросов |\n| Сервисный | 1 мин | 20 запросов | 3 сек | 5 запросов |\n| Базовый с секретом | 1 мин | 20 запросов | 3 сек | 5 запросов |\n| Базовый | 1 ч | 5 запросов | 12 мин | 1 запрос |\n</div>\n",
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод возвращает минимальные ставки для карточек товаров в разменных единицах — 0,01 от базовой валюты [профиля продавца](https://cmp.wildberries.ru/campaigns/finances) — по типу оплаты и местам размещения.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один профиль продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 мин | 20 запросов | 3 сек | 5 запросов |\n| Сервисный | 1 мин | 20 запросов | 3 сек | 5 запросов |\n| Базовый с секретом | 1 мин | 20 запросов | 3 сек | 5 запросов |\n| Базовый | 1 ч | 5 запросов | 12 мин | 1 запрос |\n</div>\n",
         "operationId": "postV1BidsMin",
         "requestBody": {
           "content": {
@@ -8487,7 +8487,7 @@
                             "items": {
                               "properties": {
                                 "currency": {
-                                  "description": "Валюта [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances)",
+                                  "description": "Валюта [профиля продавца](https://cmp.wildberries.ru/campaigns/finances)",
                                   "format": "ISO 4217",
                                   "type": "string"
                                 },
@@ -8495,7 +8495,7 @@
                                   "$ref": "#/components/schemas/PlacementType"
                                 },
                                 "value": {
-                                  "description": "Минимальная ставка в разменных единицах — 0,01 от базовой валюты [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances)\n",
+                                  "description": "Минимальная ставка в разменных единицах — 0,01 от базовой валюты [профиля продавца](https://cmp.wildberries.ru/campaigns/finances)\n",
                                   "type": "integer"
                                 }
                               },
@@ -8567,7 +8567,7 @@
     },
     "/api/advert/v1/config": {
       "get": {
-        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод возвращает валюту, код валюты [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances) и допустимые шаги ставок для метода [POST /api/advert/v1/normquery/bids](./promotion#tag/searchClusters/operation/postV1NormqueryBids)\n\n\n<div class=\"description_token\">\n    Метод <a href=\"./api-information#tag/authorization/Pravila-ispolzovaniya-tokenov-dostupa-k-API\">доступен</a> по\n        <strong>Персональному</strong> токену, \n        <strong>Сервисному</strong> токену\n</div>\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 1 запрос | 1 мин | 10 запросов |\n</div>\n",
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод возвращает валюту, код валюты [профиля продавца](https://cmp.wildberries.ru/campaigns/finances) и допустимые шаги ставок для метода [POST /api/advert/v1/normquery/bids](./promotion#tag/searchClusters/operation/postV1NormqueryBids)\n\n\n<div class=\"description_token\">\n    Метод <a href=\"./api-information#tag/authorization/Pravila-ispolzovaniya-tokenov-dostupa-k-API\">доступен</a> по\n        <strong>Персональному</strong> токену, \n        <strong>Сервисному</strong> токену\n</div>\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один профиль продавца:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 1 запрос | 1 мин | 10 запросов |\n</div>\n",
         "operationId": "getV1Config",
         "responses": {
           "200": {
@@ -8632,7 +8632,7 @@
     },
     "/api/advert/v1/normquery/bids": {
       "post": {
-        "description": "<div class='description-title'><span>Описание метода</span></div>\n\n\n<div class=\"description_token\">\n    Метод <a href=\"./api-information#tag/authorization/Pravila-ispolzovaniya-tokenov-dostupa-k-API\">доступен</a> по\n        <strong>Персональному</strong> токену, \n        <strong>Сервисному</strong> токену\n</div>\n\nМетод устанавливает ставки на поисковые кластеры в валюте [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances).\nМожно использовать только для кампаний c ручной ставкой и моделью оплаты `cpm` — за показы.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 сек | 2 запроса | 500 мс | 4 запроса |\n| Сервисный | 1 сек | 2 запроса | 500 мс | 4 запроса |\n</div>\n",
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\n\n<div class=\"description_token\">\n    Метод <a href=\"./api-information#tag/authorization/Pravila-ispolzovaniya-tokenov-dostupa-k-API\">доступен</a> по\n        <strong>Персональному</strong> токену, \n        <strong>Сервисному</strong> токену\n</div>\n\nМетод устанавливает ставки на поисковые кластеры в валюте [профиля продавца](https://cmp.wildberries.ru/campaigns/finances).\nМожно использовать только для кампаний c ручной ставкой и моделью оплаты `cpm` — за показы.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один профиль продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 сек | 2 запроса | 500 мс | 4 запроса |\n| Сервисный | 1 сек | 2 запроса | 500 мс | 4 запроса |\n</div>\n",
         "operationId": "postV1NormqueryBids",
         "requestBody": {
           "content": {
@@ -8697,7 +8697,7 @@
             "$ref": "#/components/responses/429"
           }
         },
-        "summary": "Установить ставки для поисковых кластеров в валюте аккаунта продавца{{ /api/advert/v1/normquery/bids }}",
+        "summary": "Установить ставки для поисковых кластеров в валюте профиля продавца{{ /api/advert/v1/normquery/bids }}",
         "tags": [
           "searchClusters"
         ],
@@ -8716,7 +8716,7 @@
     },
     "/api/advert/v2/adverts": {
       "get": {
-        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод возвращает информацию о рекламных кампаниях с единой или ручной ставкой по их статусам, типам оплаты и ID.\n\n <div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 сек | 5 запросов | 200 мс | 5 запросов |\n| Сервисный | 1 сек | 5 запросов | 200 мс | 5 запросов |\n| Базовый с секретом | 1 сек | 5 запросов | 200 мс | 5 запросов |\n| Базовый | 1 ч | 1 запрос | 1 ч | 1 запрос |\n</div>\n",
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод возвращает информацию о рекламных кампаниях с единой или ручной ставкой по их статусам, типам оплаты и ID.\n\n <div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один профиль продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 сек | 5 запросов | 200 мс | 5 запросов |\n| Сервисный | 1 сек | 5 запросов | 200 мс | 5 запросов |\n| Базовый с секретом | 1 сек | 5 запросов | 200 мс | 5 запросов |\n| Базовый | 1 ч | 1 запрос | 1 ч | 1 запрос |\n</div>\n",
         "operationId": "getV2Adverts",
         "parameters": [
           {
@@ -8895,7 +8895,7 @@
     },
     "/api/advert/v2/budget": {
       "post": {
-        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод возвращает информацию об остатках бюджетов [кампаний](./promotion#tag/campaigns/operation/getV2Adverts).\nДля кампаний в [статусах](./promotion#tag/campaigns/operation/getV1PromotionCount):\n  - `4` — готова к запуску\n  - `9` — активна\n  - `11` — на паузе\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 мин | 20 запросов | 3 сек | 4 запроса |\n| Сервисный | 1 мин | 20 запросов | 3 сек | 4 запроса |\n| Базовый с секретом | 1 мин | 20 запросов | 3 сек | 4 запроса |\n| Базовый | 1 ч | 4 запроса | 15 мин | 1 запрос |\n</div>\n",
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод возвращает информацию об остатках бюджетов [кампаний](./promotion#tag/campaigns/operation/getV2Adverts).\nДля кампаний в [статусах](./promotion#tag/campaigns/operation/getV1PromotionCount):\n  - `4` — готова к запуску\n  - `9` — активна\n  - `11` — на паузе\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один профиль продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 мин | 20 запросов | 3 сек | 4 запроса |\n| Сервисный | 1 мин | 20 запросов | 3 сек | 4 запроса |\n| Базовый с секретом | 1 мин | 20 запросов | 3 сек | 4 запроса |\n| Базовый | 1 ч | 4 запроса | 15 мин | 1 запрос |\n</div>\n",
         "operationId": "postV2Budget",
         "requestBody": {
           "content": {
@@ -8969,7 +8969,7 @@
     },
     "/api/v1/calendar/promotions": {
       "get": {
-        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод возвращает список [акций](./promotion#tag/promoCalendar/operation/getV1CalendarPromotionsDetails) в WB с датами и временем проведения.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца для всех методов категории <strong>Календарь акций</strong>:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 6 сек | 10 запросов | 600 мс | 5 запросов |\n| Сервисный | 6 сек | 10 запросов | 600 мс | 5 запросов |\n| Базовый с секретом | 6 сек | 10 запросов | 600 мс | 5 запросов |\n| Базовый | 1 ч | 1 запрос | 1 ч | 1 запрос |\n</div>\n",
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод возвращает список [акций](./promotion#tag/promoCalendar/operation/getV1CalendarPromotionsDetails) в WB с датами и временем проведения.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один профиль продавца для всех методов категории <strong>Календарь акций</strong>:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 6 сек | 10 запросов | 600 мс | 5 запросов |\n| Сервисный | 6 сек | 10 запросов | 600 мс | 5 запросов |\n| Базовый с секретом | 6 сек | 10 запросов | 600 мс | 5 запросов |\n| Базовый | 1 ч | 1 запрос | 1 ч | 1 запрос |\n</div>\n",
         "operationId": "getV1CalendarPromotions",
         "parameters": [
           {
@@ -9028,7 +9028,7 @@
     },
     "/api/v1/calendar/promotions/details": {
       "get": {
-        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод возвращает подробную информацию об [акции](./promotion#tag/promoCalendar/operation/getV1CalendarPromotionsDetails) по ID.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца для всех методов категории <strong>Календарь акций</strong>:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 6 сек | 10 запросов | 600 мс | 5 запросов |\n| Сервисный | 6 сек | 10 запросов | 600 мс | 5 запросов |\n| Базовый с секретом | 6 сек | 10 запросов | 600 мс | 5 запросов |\n| Базовый | 1 ч | 1 запрос | 1 ч | 1 запрос |\n</div>\n",
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод возвращает подробную информацию об [акции](./promotion#tag/promoCalendar/operation/getV1CalendarPromotionsDetails) по ID.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один профиль продавца для всех методов категории <strong>Календарь акций</strong>:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 6 сек | 10 запросов | 600 мс | 5 запросов |\n| Сервисный | 6 сек | 10 запросов | 600 мс | 5 запросов |\n| Базовый с секретом | 6 сек | 10 запросов | 600 мс | 5 запросов |\n| Базовый | 1 ч | 1 запрос | 1 ч | 1 запрос |\n</div>\n",
         "operationId": "getV1CalendarPromotionsDetails",
         "parameters": [
           {
@@ -9075,7 +9075,7 @@
     },
     "/api/v1/calendar/promotions/nomenclatures": {
       "get": {
-        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод формирует список товаров, подходящих для участия в [акции](./promotion#tag/promoCalendar/operation/getV1CalendarPromotionsDetails). Эти товары можно добавить в акцию с помощью [отдельного метода](./promotion#tag/promoCalendar/operation/postV1CalendarPromotionsUpload).\n\n<div class=\"description_important\">\n  Данный метод неприменим для автоакций.\n</div>\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца для всех методов категории <strong>Календарь акций</strong>:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 6 сек | 10 запросов | 600 мс | 5 запросов |\n\n</div>\n",
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод формирует список товаров, подходящих для участия в [акции](./promotion#tag/promoCalendar/operation/getV1CalendarPromotionsDetails). Эти товары можно добавить в акцию с помощью [отдельного метода](./promotion#tag/promoCalendar/operation/postV1CalendarPromotionsUpload).\n\n<div class=\"description_important\">\n  Данный метод неприменим для автоакций.\n</div>\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один профиль продавца для всех методов категории <strong>Календарь акций</strong>:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 6 сек | 10 запросов | 600 мс | 5 запросов |\n\n</div>\n",
         "operationId": "getV1CalendarPromotionsNomenclatures",
         "parameters": [
           {
@@ -9134,7 +9134,7 @@
     },
     "/api/v1/calendar/promotions/upload": {
       "post": {
-        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод создаёт задание на загрузку товара в [акцию](./promotion#tag/promoCalendar/operation/getV1CalendarPromotionsDetails).<br>\nСостояние загрузки можно проверить с помощью [отдельных методов](./item-management#tag/pricesAndDiscounts/operation/getV2HistoryTasks).\n\n<div class=\"description_important\">\n  Данный метод неприменим для автоакций.\n</div>\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца для всех методов категории <strong>Календарь акций</strong>:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 6 сек | 10 запросов | 600 мс | 5 запросов |\n| Сервисный | 6 сек | 10 запросов | 600 мс | 5 запросов |\n| Базовый с секретом | 6 сек | 10 запросов | 600 мс | 5 запросов |\n| Базовый | 1 ч | 1 запрос | 1 ч | 1 запрос |\n</div>\n",
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод создаёт задание на загрузку товара в [акцию](./promotion#tag/promoCalendar/operation/getV1CalendarPromotionsDetails).<br>\nСостояние загрузки можно проверить с помощью [отдельных методов](./item-management#tag/pricesAndDiscounts/operation/getV2HistoryTasks).\n\n<div class=\"description_important\">\n  Данный метод неприменим для автоакций.\n</div>\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один профиль продавца для всех методов категории <strong>Календарь акций</strong>:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 6 сек | 10 запросов | 600 мс | 5 запросов |\n| Сервисный | 6 сек | 10 запросов | 600 мс | 5 запросов |\n| Базовый с секретом | 6 сек | 10 запросов | 600 мс | 5 запросов |\n| Базовый | 1 ч | 1 запрос | 1 ч | 1 запрос |\n</div>\n",
         "operationId": "postV1CalendarPromotionsUpload",
         "requestBody": {
           "$ref": "#/components/requestBodies/PromoSupplierTaskRequest"
@@ -9208,7 +9208,7 @@
       "x-displayName": "Управление кампаниями"
     },
     {
-      "description": "<div class=\"description_auth\">\n  Для доступа к методам используйте <a href=\"./api-information#tag/authorization/Kak-sozdat-personalnyj-bazovyj-ili-testovyj-token\">токен</a> для категории <strong>Продвижение</strong>\n</div>\n\n**Поисковые кластеры**<br><br>\n\n**Кластер запросов** — это сгруппированный список запросов, по которым покупатели ищут товары на WB. В кластер входят:\n  - синонимы\n  - запросы в разном роде: мужской, женский, средний\n  - запросы с опечатками\n  - разные формы слова\n  - близкие по смыслу словосочетания\n\nНапример, в кластер `футболка мужская` войдут также запросы `футболка мужкая`, `футболки мужские с рукавом`, `футболки мужские` и другие похожие словосочетания.<br><br>\n\nЧтобы получить кластеры, по которым уже были показы, используйте метод [статистики поисковых запросов](./promotion#tag/statistics/operation/postV0NormqueryStats).<br><br>\n\nДля кампаний с ручной ставкой можно [установить](./promotion#tag/searchClusters/operation/postV1NormqueryBids) или [удалить](./promotion#tag/searchClusters/operation/deleteV0NormqueryBids) ставки в валюте [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances). Валюту аккаунта продавца и шаги ставок можно уточнить в ответе метода [GET /api/advert/v1/config](./promotion#tag/campaignManagement/operation/getV1Config). Ставки индивидуальны для каждого поискового кластера.<br><br>\n\n**Исключения**<br><br>\n\n[Установите минус-фразы](./promotion#tag/searchClusters/operation/postV0NormquerySetMinus), чтобы исключить кластеры запросов из кампаний. Товар не будет продвигаться по минус-фразам.\n",
+      "description": "<div class=\"description_auth\">\n  Для доступа к методам используйте <a href=\"./api-information#tag/authorization/Kak-sozdat-personalnyj-bazovyj-ili-testovyj-token\">токен</a> для категории <strong>Продвижение</strong>\n</div>\n\n**Поисковые кластеры**<br><br>\n\n**Кластер запросов** — это сгруппированный список запросов, по которым покупатели ищут товары на WB. В кластер входят:\n  - синонимы\n  - запросы в разном роде: мужской, женский, средний\n  - запросы с опечатками\n  - разные формы слова\n  - близкие по смыслу словосочетания\n\nНапример, в кластер `футболка мужская` войдут также запросы `футболка мужкая`, `футболки мужские с рукавом`, `футболки мужские` и другие похожие словосочетания.<br><br>\n\nЧтобы получить кластеры, по которым уже были показы, используйте метод [статистики поисковых запросов](./promotion#tag/statistics/operation/postV0NormqueryStats).<br><br>\n\nДля кампаний с ручной ставкой можно [установить](./promotion#tag/searchClusters/operation/postV1NormqueryBids) или [удалить](./promotion#tag/searchClusters/operation/deleteV0NormqueryBids) ставки в валюте [профиля продавца](https://cmp.wildberries.ru/campaigns/finances). Валюту профиля продавца и шаги ставок можно уточнить в ответе метода [GET /api/advert/v1/config](./promotion#tag/campaignManagement/operation/getV1Config). Ставки индивидуальны для каждого поискового кластера.<br><br>\n\n**Исключения**<br><br>\n\n[Установите минус-фразы](./promotion#tag/searchClusters/operation/postV0NormquerySetMinus), чтобы исключить кластеры запросов из кампаний. Товар не будет продвигаться по минус-фразам.\n",
       "name": "searchClusters",
       "x-displayName": "Поисковые кластеры"
     },

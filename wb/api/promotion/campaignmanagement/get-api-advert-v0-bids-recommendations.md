@@ -9,7 +9,7 @@ tags:
 spec_version: promotion
 source: "https://dev.wildberries.ru/docs/openapi/promotion"
 deprecated: false
-content_sha: dabb92d08caf0074
+content_sha: 1e3dcb8cd937d4fa
 ---
 
 # Рекомендуемые ставки для карточек товаров и поисковых кластеров
@@ -22,7 +22,7 @@ content_sha: dabb92d08caf0074
 Можно использовать для кампаний с типами оплаты `cpm` — за показы и `cpc` — за клики.
 
  
-Лимит запросов на один аккаунт продавца:
+Лимит запросов на один профиль продавца:
 
 | Тип | Период | Лимит | Интервал | Всплеск |
 | --- | --- | --- | --- | --- |
@@ -45,32 +45,32 @@ content_sha: dabb92d08caf0074
 - `advertId` — integer<int64>. ID кампании
 - `base` — object. Рекомендуемые ставки для карточек товаров
   - `competitiveBid` — object. Конкурентная ставка — расчётная средняя ставка других продавцов, продающих аналогичные товары по похожей цене. У половины продавцов из расчёта ставка выше конкурентной, а другой половины — ниже
-    - `bidKopecks` — integer. Рекомендуемая ставка в разменных единицах — 0,01 от базовой валюты [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances)
+    - `bidKopecks` — integer. Рекомендуемая ставка в разменных единицах — 0,01 от базовой валюты [профиля продавца](https://cmp.wildberries.ru/campaigns/finances)
   - `leadersBid` — object. Лидерская ставка — средняя ставка с которой товары занимают лидирующие позиции в вашей категории товаров
-    - `bidKopecks` — integer. Рекомендуемая ставка в разменных единицах — 0,01 от базовой валюты [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances)
+    - `bidKopecks` — integer. Рекомендуемая ставка в разменных единицах — 0,01 от базовой валюты [профиля продавца](https://cmp.wildberries.ru/campaigns/finances)
   - `top2` — object. Топ-ставка
-    - `bidKopecks` — integer. Рекомендуемая ставка в разменных единицах — 0,01 от базовой валюты [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances). Если `0`, для данного предмета топ-ставка не используется
+    - `bidKopecks` — integer. Рекомендуемая ставка в разменных единицах — 0,01 от базовой валюты [профиля продавца](https://cmp.wildberries.ru/campaigns/finances). Если `0`, для данного предмета топ-ставка не используется
 - `nmId` — integer<int64>. Артикул WB
 - `normQueries` — array[object]. Рекомендуемые ставки для поисковых кластеров
   - `normQuery` — string. Поисковый кластер
   - `reachMax` — object. Максимальный охват: 76-100%
-    - `bidKopecks` — integer. Рекомендуемая ставка в разменных единицах — 0,01 от базовой валюты [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances).
-    - `bidKopecksMin` — integer. Минимальная ставка в разменных единицах — 0,01 от базовой валюты [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances).
+    - `bidKopecks` — integer. Рекомендуемая ставка в разменных единицах — 0,01 от базовой валюты [профиля продавца](https://cmp.wildberries.ru/campaigns/finances).
+    - `bidKopecksMin` — integer. Минимальная ставка в разменных единицах — 0,01 от базовой валюты [профиля продавца](https://cmp.wildberries.ru/campaigns/finances).
   - `reachMedium` — object. Средний охват: 61-75%
-    - `bidKopecks` — integer. Рекомендуемая ставка в разменных единицах — 0,01 от базовой валюты [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances)
-    - `bidKopecksMin` — integer. Минимальная ставка в разменных единицах — 0,01 от базовой валюты [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances)
+    - `bidKopecks` — integer. Рекомендуемая ставка в разменных единицах — 0,01 от базовой валюты [профиля продавца](https://cmp.wildberries.ru/campaigns/finances)
+    - `bidKopecksMin` — integer. Минимальная ставка в разменных единицах — 0,01 от базовой валюты [профиля продавца](https://cmp.wildberries.ru/campaigns/finances)
   - `reachMin` — object. Минимальный охват: 50-60%
-    - `bidKopecks` — integer. Рекомендуемая ставка в разменных единицах — 0,01 от базовой валюты [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances)
-    - `bidKopecksMin` — integer. Минимальная ставка в разменных единицах — 0,01 от базовой валюты [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances)
+    - `bidKopecks` — integer. Рекомендуемая ставка в разменных единицах — 0,01 от базовой валюты [профиля продавца](https://cmp.wildberries.ru/campaigns/finances)
+    - `bidKopecksMin` — integer. Минимальная ставка в разменных единицах — 0,01 от базовой валюты [профиля продавца](https://cmp.wildberries.ru/campaigns/finances)
 - `paymentType` — string (cpm). Тип оплаты: - `cpm` — за показы
 - `advertId` — integer<int64>. ID кампании
 - `levels` — array[object]. Рекомендуемые ставки для карточек товаров
   - `range1To2` — object **обязательный**. Ставка для попадания в позиции 1-2
-    - `bidKopecks` — integer. Рекомендуемая ставка в разменных единицах — 0,01 от базовой валюты [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances).
+    - `bidKopecks` — integer. Рекомендуемая ставка в разменных единицах — 0,01 от базовой валюты [профиля продавца](https://cmp.wildberries.ru/campaigns/finances).
   - `range3To10` — object **обязательный**. Ставка для попадания в позиции 3-10
-    - `bidKopecks` — integer. Рекомендуемая ставка в разменных единицах — 0,01 от базовой валюты [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances).
+    - `bidKopecks` — integer. Рекомендуемая ставка в разменных единицах — 0,01 от базовой валюты [профиля продавца](https://cmp.wildberries.ru/campaigns/finances).
   - `range11To34` — object **обязательный**. Ставка для попадания в позиции 11-34
-    - `bidKopecks` — integer. Рекомендуемая ставка в разменных единицах — 0,01 от базовой валюты [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances).
+    - `bidKopecks` — integer. Рекомендуемая ставка в разменных единицах — 0,01 от базовой валюты [профиля продавца](https://cmp.wildberries.ru/campaigns/finances).
 - `nmId` — integer<int64>. Артикул WB
 - `paymentType` — string (cpc). Тип оплаты: - `cpc` — за клики
 

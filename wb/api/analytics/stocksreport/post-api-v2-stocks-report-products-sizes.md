@@ -9,7 +9,7 @@ tags:
 spec_version: analytics
 source: "https://dev.wildberries.ru/docs/openapi/analytics"
 deprecated: false
-content_sha: b1b1a8120f3f30ff
+content_sha: 87f8c35f984954b3
 ---
 
 # Данные по размерам
@@ -32,7 +32,7 @@ content_sha: b1b1a8120f3f30ff
 
 Данные отчёта обновляются 1 раз в 2 часа.
 
-Лимит запросов на один аккаунт продавца:
+Лимит запросов на один профиль продавца:
 
 | Тип | Период | Лимит | Интервал | Всплеск |
 | --- | --- | --- | --- | --- |

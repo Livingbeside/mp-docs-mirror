@@ -9,7 +9,7 @@ tags:
 spec_version: general
 source: "https://dev.wildberries.ru/docs/openapi/api-information"
 deprecated: false
-content_sha: 03848121839d53ca
+content_sha: 9eb08146cf28f2ae
 ---
 
 # Удалить пользователя
@@ -23,7 +23,7 @@ content_sha: 03848121839d53ca
 
 Метод удаляет пользователя из [списка сотрудников продавца](./api-information#tag/sellerUserManagement/operation/getV1Users). Этому пользователю будет закрыт доступ в профиль продавца.
 
-Лимит запросов на один аккаунт продавца:
+Лимит запросов на один профиль продавца:
 
 | Период | Лимит | Интервал | Всплеск |
 | --- | --- | --- | --- |

@@ -3,13 +3,13 @@ title: Количество закреплённых и откреплённых
 api: wb-customer-communication
 method: GET
 path: /api/feedbacks/v1/pins/count
-operation_id: getFeedbacksV1PinsCount
+operation_id: getV1PinsCount
 tags:
   - pinnedFeedbacks
 spec_version: communication
 source: "https://dev.wildberries.ru/docs/openapi/customer-communication"
 deprecated: false
-content_sha: 34b23ae883e74749
+content_sha: be401ea518707576
 ---
 
 # Количество закреплённых и откреплённых отзывов
@@ -20,7 +20,7 @@ content_sha: 34b23ae883e74749
 
 Метод возвращает количество закреплённых и откреплённых отзывов за заданный период.
 
-Лимит запросов на один аккаунт продавца для всех методов категории Вопросы и отзывы:
+Лимит запросов на один профиль продавца для всех методов категории Вопросы и отзывы:
 
 | Тип | Период | Лимит | Интервал | Всплеск |
 | --- | --- | --- | --- | --- |

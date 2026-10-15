@@ -9,7 +9,7 @@ tags:
 spec_version: communication
 source: "https://dev.wildberries.ru/docs/openapi/customer-communication"
 deprecated: false
-content_sha: 555a4707f3ca291f
+content_sha: 81ad3f85e42726e8
 ---
 
 # Получить отзыв по ID
@@ -20,7 +20,7 @@ content_sha: 555a4707f3ca291f
 
 Метод возвращает данные [отзыва](./customer-communication#tag/feedbacks/operation/getV1Feedbacks) по его ID.
 
-Лимит запросов на один аккаунт продавца для всех методов категории Вопросы и отзывы:
+Лимит запросов на один профиль продавца для всех методов категории Вопросы и отзывы:
 
 | Тип | Период | Лимит | Интервал | Всплеск |
 | --- | --- | --- | --- | --- |

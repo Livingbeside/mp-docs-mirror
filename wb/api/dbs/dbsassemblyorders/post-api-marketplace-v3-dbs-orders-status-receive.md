@@ -9,7 +9,7 @@ tags:
 spec_version: dbs
 source: "https://dev.wildberries.ru/docs/openapi/dbs"
 deprecated: false
-content_sha: 7f34e1fc18c6535e
+content_sha: 457b989c660b76e3
 ---
 
 # Сообщить о получении заказов
@@ -20,7 +20,7 @@ content_sha: 7f34e1fc18c6535e
 
 Метод переводит [сборочные задания](./dbs#tag/dbsAssemblyOrders) из [статуса](./dbs#tag/dbsAssemblyOrders/operation/postV3DbsOrdersStatusInfo) `deliver` в статус `receive` — получено покупателем.
 
-Лимит запросов на один аккаунт продавца:
+Лимит запросов на один профиль продавца:
 
 | Период | Лимит | Интервал | Всплеск |
 | --- | --- | --- | --- |

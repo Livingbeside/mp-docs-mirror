@@ -9,7 +9,7 @@ tags:
 spec_version: instorepickup
 source: "https://dev.wildberries.ru/docs/openapi/in-store-pickup"
 deprecated: false
-content_sha: a86f1ab315a2d32d
+content_sha: 49277e31c9a030e6
 ---
 
 # Закрепить номера ДТ за сборочными заданиями
@@ -25,7 +25,7 @@ content_sha: a86f1ab315a2d32d
  - сборочное задание находится в [статусах](./in-store-pickup#tag/inStorePickupAssemblyOrders/operation/postV3ClickCollectOrdersStatusInfo) `confirm` или `prepare`
  - поле `customsDeclaration` есть в [идентификаторах маркировки сборочного задания](./in-store-pickup#tag/inStorePickupLabelIdentifiers/operation/postV3ClickCollectOrdersMetaDetails)
 
-Лимит запросов на один аккаунт продавца для всех методов закрепления идентификаторов маркировки Самовывоз:
+Лимит запросов на один профиль продавца для всех методов закрепления идентификаторов маркировки Самовывоз:
 
 | Период | Лимит | Интервал | Всплеск |
 | --- | --- | --- | --- |

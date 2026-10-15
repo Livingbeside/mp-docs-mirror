@@ -9,7 +9,7 @@ tags:
 spec_version: reports
 source: "https://dev.wildberries.ru/docs/openapi/reports"
 deprecated: false
-content_sha: 8049cdcde779b4f3
+content_sha: fb0168390fdc90b5
 ---
 
 # Проверить статус{{ /api/v1/paid_storage/tasks/{task_id}/status }}
@@ -20,7 +20,7 @@ content_sha: 8049cdcde779b4f3
 
 Метод возвращает статус [задания на генерацию](./reports#tag/paidStorage/operation/getV1PaidStorage) отчёта о [платном хранении](./reports#tag/paidStorage/operation/getV1PaidStorageTasksTaskIdDownload).
 
-Лимит запросов на один аккаунт продавца:
+Лимит запросов на один профиль продавца:
 
 | Тип | Период | Лимит | Интервал | Всплеск |
 | --- | --- | --- | --- | --- |

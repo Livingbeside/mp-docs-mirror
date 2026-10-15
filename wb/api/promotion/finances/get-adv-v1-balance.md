@@ -9,7 +9,7 @@ tags:
 spec_version: promotion
 source: "https://dev.wildberries.ru/docs/openapi/promotion"
 deprecated: false
-content_sha: c7252efcfa5da415
+content_sha: aff5dbc1432ca0d7
 ---
 
 # Баланс
@@ -25,7 +25,7 @@ content_sha: c7252efcfa5da415
 
 Чтобы получить информацию о бюджетах кампаний, используйте метод [Бюджеты кампаний](./promotion#tag/finances/operation/postV2Budget).
 
-Лимит запросов на один аккаунт продавца:
+Лимит запросов на один профиль продавца:
 
 | Тип | Период | Лимит | Интервал | Всплеск |
 | --- | --- | --- | --- | --- |
@@ -38,12 +38,12 @@ content_sha: c7252efcfa5da415
 
 **200** — Успешно
 
-- `balance` — integer. Счёт в базовых единицах валюты [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances)
-- `net` — integer. Баланс в базовых единицах валюты [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances)
-- `currency` — string<ISO 4217>. Валюта [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances)
-- `bonus` — integer. Бонусы в базовых единицах валюты [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances)
+- `balance` — integer. Счёт в базовых единицах валюты [профиля продавца](https://cmp.wildberries.ru/campaigns/finances)
+- `net` — integer. Баланс в базовых единицах валюты [профиля продавца](https://cmp.wildberries.ru/campaigns/finances)
+- `currency` — string<ISO 4217>. Валюта [профиля продавца](https://cmp.wildberries.ru/campaigns/finances)
+- `bonus` — integer. Бонусы в базовых единицах валюты [профиля продавца](https://cmp.wildberries.ru/campaigns/finances)
 - `cashbacks` — array[object]. Промо-бонусы
-  - `sum` — integer. Промо-бонусы в базовых единицах валюты [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances)
+  - `sum` — integer. Промо-бонусы в базовых единицах валюты [профиля продавца](https://cmp.wildberries.ru/campaigns/finances)
   - `percent` — integer. Процент от суммы пополнения бюджета кампании, который можно оплатить промо-бонусами за один раз
   - `expiration_date` — string<ISO 8601>. Дата окончания действия промо-бонусов
 

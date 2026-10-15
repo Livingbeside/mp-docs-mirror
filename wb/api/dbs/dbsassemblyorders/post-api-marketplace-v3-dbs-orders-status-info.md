@@ -9,7 +9,7 @@ tags:
 spec_version: dbs
 source: "https://dev.wildberries.ru/docs/openapi/dbs"
 deprecated: false
-content_sha: ac0a7abeda8ee8bc
+content_sha: e5910386d0b9eea4
 ---
 
 # Получить статусы сборочных заданий
@@ -47,7 +47,7 @@ content_sha: ac0a7abeda8ee8bc
 - `ready_for_pickup` — заказ прибыл на ПВЗ
 - `canceled_by_missed_call` — отмена по причине недозвона
 
-Лимит запросов на один аккаунт продавца для методов сборочных заданий DBS:
+Лимит запросов на один профиль продавца для методов сборочных заданий DBS:
 
 | Период | Лимит | Интервал | Всплеск |
 | --- | --- | --- | --- |

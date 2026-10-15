@@ -9,7 +9,7 @@ tags:
 spec_version: reports
 source: "https://dev.wildberries.ru/docs/openapi/reports"
 deprecated: false
-content_sha: 7f60f1b3acbc5fc0
+content_sha: f7fd97d2ac1a3aec
 ---
 
 # Подмены и неверные вложения
@@ -20,7 +20,7 @@ content_sha: 7f60f1b3acbc5fc0
 
 Метод возвращает отчёт об удержаниях за [подмены и неверные вложения](https://seller.wildberries.ru/analytics-reports/dimensions-penalties/retentions)
 
-Лимит запросов на один аккаунт продавца:
+Лимит запросов на один профиль продавца:
 
 | Тип | Период | Лимит | Интервал | Всплеск |
 | --- | --- | --- | --- | --- |

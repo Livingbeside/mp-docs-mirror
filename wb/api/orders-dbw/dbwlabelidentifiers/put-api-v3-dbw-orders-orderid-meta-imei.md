@@ -9,7 +9,7 @@ tags:
 spec_version: ordersdbw
 source: "https://dev.wildberries.ru/docs/openapi/orders-dbw"
 deprecated: false
-content_sha: 007e62d1ea015ff8
+content_sha: dd5e9b3589011c5b
 ---
 
 # Закрепить IMEI за сборочным заданием{{ /api/v3/dbw/orders/{orderId}/meta/imei }}
@@ -24,7 +24,7 @@ content_sha: 007e62d1ea015ff8
 
 Закрепить IMEI можно только за сборочным заданием в [статусе](./orders-dbw#tag/dbwAssemblyOrders/operation/postV3DbwOrdersStatus) `confirm` и если в [идентификаторах маркировки сборочного задания](./orders-dbw#tag/dbwLabelIdentifiers/operation/postV3DbwOrdersMetaDetails) есть поле `imei`.
 
-Лимит запросов на один аккаунт продавца для всех методов закрепления идентификаторов маркировки DBW:
+Лимит запросов на один профиль продавца для всех методов закрепления идентификаторов маркировки DBW:
 
 | Период | Лимит | Интервал | Всплеск |
 | --- | --- | --- | --- |

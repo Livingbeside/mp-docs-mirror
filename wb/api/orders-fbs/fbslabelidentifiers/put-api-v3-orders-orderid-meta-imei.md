@@ -9,7 +9,7 @@ tags:
 spec_version: order
 source: "https://dev.wildberries.ru/docs/openapi/orders-fbs"
 deprecated: false
-content_sha: 52b2737084d61fd5
+content_sha: 7f0b9233747ccd4d
 ---
 
 # Закрепить IMEI за сборочным заданием{{ /api/v3/orders/{orderId}/meta/imei }}
@@ -24,7 +24,7 @@ content_sha: 52b2737084d61fd5
 
 Закрепить IMEI можно только за сборочным заданием в [статусе](./orders-fbs#tag/fbsAssemblyOrders/operation/postV3OrdersStatus) `confirm` и если в [идентификаторах маркировки сборочного задания](./orders-fbs#tag/fbsLabelIdentifiers/operation/postV3OrdersMeta) есть поле `imei`.
 
-Лимит запросов на один аккаунт продавца для всех методов закрепления идентификаторов маркировки FBS:
+Лимит запросов на один профиль продавца для всех методов закрепления идентификаторов маркировки FBS:
 
 | Период | Лимит | Интервал | Всплеск |
 | --- | --- | --- | --- |

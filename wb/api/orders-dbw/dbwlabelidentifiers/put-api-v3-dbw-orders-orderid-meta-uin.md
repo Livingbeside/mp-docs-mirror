@@ -9,7 +9,7 @@ tags:
 spec_version: ordersdbw
 source: "https://dev.wildberries.ru/docs/openapi/orders-dbw"
 deprecated: false
-content_sha: fe3a05d8cd37293b
+content_sha: 4e6dcab2a42b5d4a
 ---
 
 # Закрепить УИН за сборочным заданием{{ /api/v3/dbw/orders/{orderId}/meta/uin }}
@@ -22,7 +22,7 @@ content_sha: fe3a05d8cd37293b
 
 Закрепить УИН можно только за сборочным заданием в [статусе](./orders-dbw#tag/dbwAssemblyOrders/operation/postV3DbwOrdersStatus) `confirm` и если в [идентификаторах маркировки сборочного задания](./orders-dbw#tag/dbwLabelIdentifiers/operation/postV3DbwOrdersMetaDetails) есть поле `uin`.
 
-Лимит запросов на один аккаунт продавца для всех методов закрепления идентификаторов маркировки DBW:
+Лимит запросов на один профиль продавца для всех методов закрепления идентификаторов маркировки DBW:
 
 | Период | Лимит | Интервал | Всплеск |
 | --- | --- | --- | --- |

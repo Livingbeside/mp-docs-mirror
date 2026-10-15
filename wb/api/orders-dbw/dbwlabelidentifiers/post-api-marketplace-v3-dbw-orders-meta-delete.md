@@ -9,7 +9,7 @@ tags:
 spec_version: ordersdbw
 source: "https://dev.wildberries.ru/docs/openapi/orders-dbw"
 deprecated: false
-content_sha: f9899fafeac3c6f1
+content_sha: 12ba6125a493af60
 ---
 
 # Удалить идентификаторы маркировки сборочных заданий
@@ -29,7 +29,7 @@ content_sha: f9899fafeac3c6f1
 Можно передать только один ключ.
 
  
-Лимит запросов на один аккаунт продавца для следующих методов DBW:
+Лимит запросов на один профиль продавца для следующих методов DBW:
 
  получение и обновление списка контактов
 

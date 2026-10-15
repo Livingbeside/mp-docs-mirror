@@ -9,7 +9,7 @@ tags:
 spec_version: ordersdbw
 source: "https://dev.wildberries.ru/docs/openapi/orders-dbw"
 deprecated: false
-content_sha: 32b911c3578ffa8f
+content_sha: 99c849e157c4cc2b
 ---
 
 # Получить статусы сборочных заданий
@@ -48,7 +48,7 @@ content_sha: 32b911c3578ffa8f
 - `canceled_by_missed_call` — отмена заказа по причине недозвона
 - `postponed_delivery` — курьерская доставка отложена
 
-Лимит запросов на один аккаунт продавца для следующих методов DBW:
+Лимит запросов на один профиль продавца для следующих методов DBW:
 
  получение и обновление списка контактов
 

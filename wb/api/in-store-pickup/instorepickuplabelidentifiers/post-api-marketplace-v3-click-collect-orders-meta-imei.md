@@ -9,7 +9,7 @@ tags:
 spec_version: instorepickup
 source: "https://dev.wildberries.ru/docs/openapi/in-store-pickup"
 deprecated: false
-content_sha: 5f894e7cef18032c
+content_sha: 5f2b800868cd333c
 ---
 
 # Закрепить IMEI за сборочными заданиями
@@ -24,7 +24,7 @@ content_sha: 5f894e7cef18032c
 
 Закрепить IMEI можно только за сборочным заданием в [статусе](./in-store-pickup#tag/inStorePickupAssemblyOrders/operation/postV3ClickCollectOrdersStatusInfo) `confirm` и если в [идентификаторах маркировки сборочного задания](./in-store-pickup#tag/inStorePickupLabelIdentifiers/operation/postV3ClickCollectOrdersMetaDetails) есть поле `imei`.
 
-Лимит запросов на один аккаунт продавца для всех методов закрепления идентификаторов маркировки Самовывоз:
+Лимит запросов на один профиль продавца для всех методов закрепления идентификаторов маркировки Самовывоз:
 
 | Период | Лимит | Интервал | Всплеск |
 | --- | --- | --- | --- |

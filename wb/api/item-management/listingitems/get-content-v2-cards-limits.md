@@ -9,7 +9,7 @@ tags:
 spec_version: items
 source: "https://dev.wildberries.ru/docs/openapi/item-management"
 deprecated: false
-content_sha: b490d7d3eab3d4f8
+content_sha: 25b6d2e095ca74df
 ---
 
 # Лимиты карточек товаров
@@ -26,7 +26,7 @@ content_sha: b490d7d3eab3d4f8
 
 Созданными считаются карточки, которые можно получить через методы [список карточек товаров](./item-management#tag/listings/operation/postV2GetCardsList) и [список карточек товаров в корзине](./item-management#tag/listings/operation/postV2GetCardsTrash).
 
-Лимит запросов на один аккаунт продавца для методов:
+Лимит запросов на один профиль продавца для методов:
 
  [получения лимитов карточек товаров](./item-management#tag/listingItems/operation/getV2CardsLimits)
 

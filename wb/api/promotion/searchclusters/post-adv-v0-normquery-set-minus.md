@@ -9,7 +9,7 @@ tags:
 spec_version: promotion
 source: "https://dev.wildberries.ru/docs/openapi/promotion"
 deprecated: false
-content_sha: cf1af80adec756c0
+content_sha: 81a53011df6d81a3
 ---
 
 # Установка и удаление минус-фраз
@@ -22,7 +22,7 @@ content_sha: cf1af80adec756c0
 
  Отправка пустого массива удаляет все минус-фразы
 
-Лимит запросов на один аккаунт продавца:
+Лимит запросов на один профиль продавца:
 
 | Тип | Период | Лимит | Интервал | Всплеск |
 | --- | --- | --- | --- | --- |

@@ -9,7 +9,7 @@ tags:
 spec_version: analytics
 source: "https://dev.wildberries.ru/docs/openapi/analytics"
 deprecated: false
-content_sha: f57b669d05361f7a
+content_sha: bac10ebef2eddf7a
 ---
 
 # Данные по складам
@@ -24,7 +24,7 @@ content_sha: f57b669d05361f7a
 
 Данные отчёта обновляются 1 раз в 2 часа.
 
-Лимит запросов на один аккаунт продавца:
+Лимит запросов на один профиль продавца:
 
 | Тип | Период | Лимит | Интервал | Всплеск |
 | --- | --- | --- | --- | --- |

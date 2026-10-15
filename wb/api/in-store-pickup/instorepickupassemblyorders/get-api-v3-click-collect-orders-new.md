@@ -9,7 +9,7 @@ tags:
 spec_version: instorepickup
 source: "https://dev.wildberries.ru/docs/openapi/in-store-pickup"
 deprecated: false
-content_sha: 4f403916820b3395
+content_sha: f691badf5e785012
 ---
 
 # Получить список новых сборочных заданий
@@ -20,7 +20,7 @@ content_sha: 4f403916820b3395
 
 Метод возвращает список всех новых [сборочных заданий](./in-store-pickup#tag/inStorePickupAssemblyOrders), которые есть у продавца на момент запроса.
 
-Лимит запросов на один аккаунт продавца для методов сборочных заданий Самовывоз:
+Лимит запросов на один профиль продавца для методов сборочных заданий Самовывоз:
 
 | Период | Лимит | Интервал | Всплеск |
 | --- | --- | --- | --- |

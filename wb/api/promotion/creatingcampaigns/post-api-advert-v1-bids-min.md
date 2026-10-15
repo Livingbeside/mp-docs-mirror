@@ -9,7 +9,7 @@ tags:
 spec_version: promotion
 source: "https://dev.wildberries.ru/docs/openapi/promotion"
 deprecated: false
-content_sha: c21755fb22244d52
+content_sha: 8563fd14a03a755b
 ---
 
 # Минимальные ставки для карточек товаров
@@ -18,9 +18,9 @@ content_sha: c21755fb22244d52
 
 Описание метода
 
-Метод возвращает минимальные ставки для карточек товаров в разменных единицах — 0,01 от базовой валюты [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances) — по типу оплаты и местам размещения.
+Метод возвращает минимальные ставки для карточек товаров в разменных единицах — 0,01 от базовой валюты [профиля продавца](https://cmp.wildberries.ru/campaigns/finances) — по типу оплаты и местам размещения.
 
-Лимит запросов на один аккаунт продавца:
+Лимит запросов на один профиль продавца:
 
 | Тип | Период | Лимит | Интервал | Всплеск |
 | --- | --- | --- | --- | --- |
@@ -44,9 +44,9 @@ content_sha: c21755fb22244d52
 
 - `bids` — array[object] **обязательный**. Список карточек товаров со ставками
   - `bids` — array[object] **обязательный**. Список ставок по местам размещения
-    - `currency` — string<ISO 4217> **обязательный**. Валюта [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances)
+    - `currency` — string<ISO 4217> **обязательный**. Валюта [профиля продавца](https://cmp.wildberries.ru/campaigns/finances)
     - `type` — string (combined, search, recommendation) **обязательный**. Места размещения: - `search` — поиск - `recommendation` — рекомендации - `combined` — поиск и рекомендации
-    - `value` — integer **обязательный**. Минимальная ставка в разменных единицах — 0,01 от базовой валюты [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances)
+    - `value` — integer **обязательный**. Минимальная ставка в разменных единицах — 0,01 от базовой валюты [профиля продавца](https://cmp.wildberries.ru/campaigns/finances)
   - `nm_id` — integer<int64> **обязательный**. Артикул WB
 
 **400** — Неправильный запрос

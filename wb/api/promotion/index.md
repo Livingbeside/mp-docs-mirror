@@ -4,7 +4,7 @@ api: wb-promotion
 spec_version: promotion
 operations: 42
 source: "https://dev.wildberries.ru/docs/openapi/promotion"
-content_sha: b1eed32afce5e624
+content_sha: c9f7b40a08437266
 ---
 
 # Маркетинг и продвижение
@@ -65,7 +65,7 @@ content_sha: b1eed32afce5e624
 | `POST` | `/adv/v2/seacat/save-ad` | creatingCampaigns | [Создать кампанию](creatingcampaigns/post-adv-v2-seacat-save-ad.md) |
 | `POST` | `/adv/v2/supplier/nms` | creatingCampaigns | [Карточки товаров для кампаний](creatingcampaigns/post-adv-v2-supplier-nms.md) |
 | `POST` | `/api/advert/v1/bids/min` | creatingCampaigns | [Минимальные ставки для карточек товаров](creatingcampaigns/post-api-advert-v1-bids-min.md) |
-| `POST` | `/api/advert/v1/normquery/bids` | searchClusters | [Установить ставки для поисковых кластеров в валюте аккаунта продавца](searchclusters/post-api-advert-v1-normquery-bids.md) |
+| `POST` | `/api/advert/v1/normquery/bids` | searchClusters | [Установить ставки для поисковых кластеров в валюте профиля продавца](searchclusters/post-api-advert-v1-normquery-bids.md) |
 | `POST` | `/api/advert/v2/budget` | finances | [Остатки бюджетов кампаний](finances/post-api-advert-v2-budget.md) |
 | `POST` | `/api/v1/calendar/promotions/upload` | promoCalendar | [Добавить товар в акцию](promocalendar/post-api-v1-calendar-promotions-upload.md) |
 | `PUT` | `/adv/v0/auction/placements` | campaignManagement | [Изменение мест размещения в кампаниях с ручной ставкой](campaignmanagement/put-adv-v0-auction-placements.md) |

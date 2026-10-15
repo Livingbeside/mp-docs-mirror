@@ -9,7 +9,7 @@ tags:
 spec_version: ordersdbw
 source: "https://dev.wildberries.ru/docs/openapi/orders-dbw"
 deprecated: false
-content_sha: bd7469375462af03
+content_sha: b83e13f2f06c16ea
 ---
 
 # Получить список новых сборочных заданий
@@ -20,7 +20,7 @@ content_sha: bd7469375462af03
 
 Метод возвращает список всех новых [сборочных заданий](./orders-dbw#tag/dbwAssemblyOrders), которые есть у продавца на момент запроса.
 
-Лимит запросов на один аккаунт продавца для следующих методов DBW:
+Лимит запросов на один профиль продавца для следующих методов DBW:
 
  получение и обновление списка контактов
 

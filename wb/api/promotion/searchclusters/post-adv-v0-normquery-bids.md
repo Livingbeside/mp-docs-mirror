@@ -9,7 +9,7 @@ tags:
 spec_version: promotion
 source: "https://dev.wildberries.ru/docs/openapi/promotion"
 deprecated: false
-content_sha: 9e6aa221106a5e8d
+content_sha: 014fc9be6f77f357
 ---
 
 # Установить ставки для поисковых кластеров
@@ -24,7 +24,7 @@ content_sha: 9e6aa221106a5e8d
  - ручной ставкой
  - моделью оплаты `cpm` — за показы
 
-Лимит запросов на один аккаунт продавца:
+Лимит запросов на один профиль продавца:
 
 | Тип | Период | Лимит | Интервал | Всплеск |
 | --- | --- | --- | --- | --- |
@@ -41,7 +41,7 @@ content_sha: 9e6aa221106a5e8d
   - `advert_id` — integer **обязательный**. ID кампании
   - `nm_id` — integer **обязательный**. Артикул WB
   - `norm_query` — string **обязательный**. Поисковый кластер
-  - `bid` — integer **обязательный**. Ставка за тысячу показов в базовых единицах валюты [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances)
+  - `bid` — integer **обязательный**. Ставка за тысячу показов в базовых единицах валюты [профиля продавца](https://cmp.wildberries.ru/campaigns/finances)
 
 ## Ответы
 

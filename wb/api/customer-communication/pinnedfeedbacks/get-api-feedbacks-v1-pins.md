@@ -3,13 +3,13 @@ title: Список закреплённых и откреплённых отз�
 api: wb-customer-communication
 method: GET
 path: /api/feedbacks/v1/pins
-operation_id: getFeedbacksV1Pins
+operation_id: getV1Pins
 tags:
   - pinnedFeedbacks
 spec_version: communication
 source: "https://dev.wildberries.ru/docs/openapi/customer-communication"
 deprecated: false
-content_sha: 0a1159c63a3cbcae
+content_sha: a5362076a3f28543
 ---
 
 # Список закреплённых и откреплённых отзывов
@@ -22,7 +22,7 @@ content_sha: 0a1159c63a3cbcae
 
 Откреплёнными считаются только отзывы, которые были откреплены автоматически по причинам, указанным в ответе в поле `unpinnedCause`.
 
-Лимит запросов на один аккаунт продавца для всех методов категории Вопросы и отзывы:
+Лимит запросов на один профиль продавца для всех методов категории Вопросы и отзывы:
 
 | Тип | Период | Лимит | Интервал | Всплеск |
 | --- | --- | --- | --- | --- |

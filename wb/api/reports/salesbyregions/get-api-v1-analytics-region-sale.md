@@ -9,7 +9,7 @@ tags:
 spec_version: reports
 source: "https://dev.wildberries.ru/docs/openapi/reports"
 deprecated: true
-content_sha: 7f7386c53ff904f7
+content_sha: ea557de7f88391cb
 ---
 
 # Получить отчёт
@@ -22,7 +22,7 @@ content_sha: 7f7386c53ff904f7
 
 Метод будет отключен [3 ноября](https://dev.wildberries.ru/release-notes?id=590).
 
-Лимит запросов на один аккаунт продавца:
+Лимит запросов на один профиль продавца:
 
 | Тип | Период | Лимит | Интервал | Всплеск |
 | --- | --- | --- | --- | --- |

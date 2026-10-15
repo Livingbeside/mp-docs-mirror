@@ -9,7 +9,7 @@ tags:
 spec_version: communication
 source: "https://dev.wildberries.ru/docs/openapi/customer-communication"
 deprecated: false
-content_sha: 94a251be0f3532c0
+content_sha: 80ff4181e69d7fc7
 ---
 
 # Неотвеченные вопросы
@@ -20,7 +20,7 @@ content_sha: 94a251be0f3532c0
 
 Метод возвращает общее количество неотвеченных [вопросов](./customer-communication#tag/questions/operation/getV1Questions) и количество неотвеченных вопросов за сегодня.
 
-Лимит запросов на один аккаунт продавца для всех методов категории Вопросы и отзывы:
+Лимит запросов на один профиль продавца для всех методов категории Вопросы и отзывы:
 
 | Тип | Период | Лимит | Интервал | Всплеск |
 | --- | --- | --- | --- | --- |

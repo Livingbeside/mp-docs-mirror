@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /analytics-and-metrics/graphs/planirovanie-postavok/lokalnost-prodaj/lokalnost-prodaj
 source: "https://seller-edu.ozon.ru/libra/analytics-and-metrics/graphs/planirovanie-postavok/lokalnost-prodaj/lokalnost-prodaj"
-updated: "2026-09-11 12:34:03"
+updated: "2026-10-14 12:44:49"
 doc_id: 61765
-fetched_at: "2026-09-12T01:58:38Z"
-content_sha: abd7625a9677eec3
+fetched_at: "2026-10-15T01:45:02Z"
+content_sha: 19de9b94ecef7ba5
 ---
 
 # Локальность продаж
@@ -83,7 +83,20 @@ _Главная / Аналитика / Аналитика продавца / П�
 
 # Как получить информацию о показателе по API
 
-С помощью метода Seller API [/v1/rating/summary](https://api-seller.ozon.ru/v1/rating/summary) можете получать данные по доле локальных продаж по вашему кабинету. Если за последние 14 дней продаж не было, поля параметра **localization_index** будут пустыми.
+Получайте данные о локальных продажах в своей системе с помощью методов Seller API:
+
+[/v1/analytics/local-sale/total](https://docs.ozon.ru/api/seller/#operation/AnalyticsLocalSaleTotal) — общая информация о локальности продаж, количестве товаров, продаваемых по схеме FBO, и переплатах за логистику. В ответе метода доступны параметры:
+| **Параметр** | **Что содержит** |
+| --- | --- |
+| **fbo_quantity** | Количество товаров, которые продаются по схеме FBO |
+| **local_data** | Информация о локальных продажах |
+| **overpayment** | Информация о переплате за логистику |
+| **overpayment_items** | Товары с наибольшей переплатой |
+| **overpayment_reasons** | Причины переплат за логистику |
+
+[/v1/analytics/local-sale/clusters-items/info](https://docs.ozon.ru/api/seller/#operation/AnalyticsLocalSaleClustersItemsInfo) — данные о локальности продаж по кластерам;
+
+[/v1/analytics/local-sale/items-clusters/info](https://docs.ozon.ru/api/seller/#operation/AnalyticsLocalSaleItemsClustersInfo) — данные о локальности продаж отдельного товара по кластерам.
 
 [Подробнее о Seller API](https://seller-edu.ozon.ru/libra/api-ozon/how-to-api)
 

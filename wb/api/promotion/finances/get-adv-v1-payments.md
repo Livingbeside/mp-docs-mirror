@@ -9,7 +9,7 @@ tags:
 spec_version: promotion
 source: "https://dev.wildberries.ru/docs/openapi/promotion"
 deprecated: false
-content_sha: e26d5a079f4f8744
+content_sha: e39e11231fdcbff4
 ---
 
 # Получение истории пополнений счёта
@@ -20,7 +20,7 @@ content_sha: e26d5a079f4f8744
 
 Метод возвращает историю пополнений счёта **WB Продвижение** за заданный период.
 
-Лимит запросов на один аккаунт продавца:
+Лимит запросов на один профиль продавца:
 
 | Тип | Период | Лимит | Интервал | Всплеск |
 | --- | --- | --- | --- | --- |
@@ -46,7 +46,7 @@ content_sha: e26d5a079f4f8744
 - `type` — integer. Тип источника списания: - `0` — Счёт - `1` — Баланс - `3` — Картой
 - `statusId` — integer. Статус: - `0` — ошибка - `1` — обработано
 - `cardStatus` — string. Статус операции при оплате картой: - `success` — успех - `fail` — неуспех - `pending` — в ожидании ответа - `unknown` — неизвестно
-- `currency` — string<ISO 4217>. Валюта [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances)
+- `currency` — string<ISO 4217>. Валюта [профиля продавца](https://cmp.wildberries.ru/campaigns/finances)
 
 **204** — История пополнений счета не найдена
 

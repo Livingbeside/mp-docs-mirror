@@ -9,7 +9,7 @@ tags:
 spec_version: promotion
 source: "https://dev.wildberries.ru/docs/openapi/promotion"
 deprecated: false
-content_sha: 10d5649e489fad08
+content_sha: 2fb14f2a1692e808
 ---
 
 # Список ставок поисковых кластеров
@@ -22,7 +22,7 @@ content_sha: 10d5649e489fad08
  - ID кампаний
  - артикулам WB
 
-Лимит запросов на один аккаунт продавца:
+Лимит запросов на один профиль продавца:
 
 | Тип | Период | Лимит | Интервал | Всплеск |
 | --- | --- | --- | --- | --- |
@@ -47,9 +47,9 @@ content_sha: 10d5649e489fad08
   - `advert_id` — integer **обязательный**. ID кампании
   - `nm_id` — integer **обязательный**. Артикул WB
   - `norm_query` — string **обязательный**. Поисковый кластер
-  - `bid` — integer **обязательный**. Текущая ставка в базовых единицах валюты [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances) за тысячу показов
-  - `bid_kopecks` — integer **обязательный**. Текущая ставка в разменных единицах — 0,01 от базовой валюты [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances) за тысячу показов
-  - `currency` — string<ISO 4217> **обязательный**. Валюта [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances)
+  - `bid` — integer **обязательный**. Текущая ставка в базовых единицах валюты [профиля продавца](https://cmp.wildberries.ru/campaigns/finances) за тысячу показов
+  - `bid_kopecks` — integer **обязательный**. Текущая ставка в разменных единицах — 0,01 от базовой валюты [профиля продавца](https://cmp.wildberries.ru/campaigns/finances) за тысячу показов
+  - `currency` — string<ISO 4217> **обязательный**. Валюта [профиля продавца](https://cmp.wildberries.ru/campaigns/finances)
 
 **400** — Неправильный запрос
 

@@ -9,7 +9,7 @@ tags:
 spec_version: dbs
 source: "https://dev.wildberries.ru/docs/openapi/dbs"
 deprecated: false
-content_sha: fed32d767d8ce722
+content_sha: e4ee697107c7ef41
 ---
 
 # Закрепить номера ДТ за сборочными заданиями
@@ -25,7 +25,7 @@ content_sha: fed32d767d8ce722
  - сборочное задание находится в [статусах](./dbs#tag/dbsAssemblyOrders/operation/postV3DbsOrdersStatusInfo) `confirm` или `deliver`
  - поле `customsDeclaration` есть в [идентификаторах маркировки сборочных заданий](./dbs#tag/dbsLabelIdentifiers/operation/postV3DbsOrdersMetaDetails)
 
-Лимит запросов на один аккаунт продавца для всех методов закрепления идентификаторов маркировки DBS:
+Лимит запросов на один профиль продавца для всех методов закрепления идентификаторов маркировки DBS:
 
 | Период | Лимит | Интервал | Всплеск |
 | --- | --- | --- | --- |

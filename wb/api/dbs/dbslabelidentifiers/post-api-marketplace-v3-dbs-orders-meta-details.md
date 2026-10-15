@@ -9,7 +9,7 @@ tags:
 spec_version: dbs
 source: "https://dev.wildberries.ru/docs/openapi/dbs"
 deprecated: false
-content_sha: de35faa41e0359fe
+content_sha: 5d65b852820943fb
 ---
 
 # Получить идентификаторы маркировки сборочных заданий
@@ -30,7 +30,7 @@ content_sha: de35faa41e0359fe
  - `customsDeclaration` — [номер ДТ](./dbs#tag/dbsLabelIdentifiers/operation/postV3DbsOrdersMetaCustomsDeclaration)
  - `originCountryCode` — [числовой код страны происхождения товара](./dbs#tag/dbsLabelIdentifiers/operation/postV3DbsOrdersMetaCustomsDeclaration) из [Общероссийского классификатора стран мира](https://esnsi.gosuslugi.ru/classifiers/16269)
 
-Лимит запросов на один аккаунт продавца для всех методов получения и удаления идентификаторов маркировки DBS:
+Лимит запросов на один профиль продавца для всех методов получения и удаления идентификаторов маркировки DBS:
 
 | Период | Лимит | Интервал | Всплеск |
 | --- | --- | --- | --- |

@@ -9,7 +9,7 @@ tags:
 spec_version: communication
 source: "https://dev.wildberries.ru/docs/openapi/customer-communication"
 deprecated: false
-content_sha: 834c068e8e78f67d
+content_sha: c51b4e835846f51a
 ---
 
 # Возврат товара по ID отзыва
@@ -22,7 +22,7 @@ content_sha: 834c068e8e78f67d
 
 Возврат доступен для отзывов с полем `"isAbleReturnProductOrders": true`.
 
-Лимит запросов на один аккаунт продавца для всех методов категории Вопросы и отзывы:
+Лимит запросов на один профиль продавца для всех методов категории Вопросы и отзывы:
 
 | Тип | Период | Лимит | Интервал | Всплеск |
 | --- | --- | --- | --- | --- |

@@ -9,7 +9,7 @@ tags:
 spec_version: promotion
 source: "https://dev.wildberries.ru/docs/openapi/promotion"
 deprecated: false
-content_sha: 1ec9f057f8f128ab
+content_sha: d94905f772ed1389
 ---
 
 # Список акций
@@ -20,7 +20,7 @@ content_sha: 1ec9f057f8f128ab
 
 Метод возвращает список [акций](./promotion#tag/promoCalendar/operation/getV1CalendarPromotionsDetails) в WB с датами и временем проведения.
 
-Лимит запросов на один аккаунт продавца для всех методов категории Календарь акций:
+Лимит запросов на один профиль продавца для всех методов категории Календарь акций:
 
 | Тип | Период | Лимит | Интервал | Всплеск |
 | --- | --- | --- | --- | --- |

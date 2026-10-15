@@ -9,7 +9,7 @@ tags:
 spec_version: communication
 source: "https://dev.wildberries.ru/docs/openapi/customer-communication"
 deprecated: false
-content_sha: 6139b0310fc58bdb
+content_sha: 8b858250d78bb779
 ---
 
 # Ответ на заявку покупателя
@@ -20,7 +20,7 @@ content_sha: 6139b0310fc58bdb
 
 Метод отправляет ответ на [заявку](./customer-communication#tag/buyersReturns/operation/getV1Claims) покупателя на возврат товаров.
 
-Лимит запросов на один аккаунт продавца:
+Лимит запросов на один профиль продавца:
 
 | Тип | Период | Лимит | Интервал | Всплеск |
 | --- | --- | --- | --- | --- |

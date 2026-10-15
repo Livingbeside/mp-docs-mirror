@@ -9,7 +9,7 @@ tags:
 spec_version: order
 source: "https://dev.wildberries.ru/docs/openapi/orders-fbs"
 deprecated: false
-content_sha: 30a1139043dec11b
+content_sha: 9db68e69c90b2edf
 ---
 
 # Закрепить код маркировки Честного знака за сборочным заданием{{ /api/v3/orders/{orderId}/meta/sgtin }}
@@ -24,7 +24,7 @@ content_sha: 30a1139043dec11b
 
 Получить загруженные маркировки можно в [идентификаторах маркировки сборочного задания](./orders-fbs#tag/fbsLabelIdentifiers/operation/postV3OrdersMeta).
 
-Лимит запросов на один аккаунт продавца для всех методов закрепления идентификаторов маркировки FBS:
+Лимит запросов на один профиль продавца для всех методов закрепления идентификаторов маркировки FBS:
 
 | Период | Лимит | Интервал | Всплеск |
 | --- | --- | --- | --- |

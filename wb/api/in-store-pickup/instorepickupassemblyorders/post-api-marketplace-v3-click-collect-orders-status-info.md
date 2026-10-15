@@ -9,7 +9,7 @@ tags:
 spec_version: instorepickup
 source: "https://dev.wildberries.ru/docs/openapi/in-store-pickup"
 deprecated: false
-content_sha: ccf7e4706bf8f811
+content_sha: 8cd1db7004668142
 ---
 
 # Получить статусы сборочных заданий
@@ -46,7 +46,7 @@ content_sha: ccf7e4706bf8f811
 - `defect` - отмена заказа по причине брака
 - `ready_for_pickup` - заказ готов к выдаче
 
-Лимит запросов на один аккаунт продавца:
+Лимит запросов на один профиль продавца:
 
 | Период | Лимит | Интервал | Всплеск |
 | --- | --- | --- | --- |

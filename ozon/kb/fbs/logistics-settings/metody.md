@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /fbs/logistics-settings/metody
 source: "https://seller-edu.ozon.ru/libra/fbs/logistics-settings/metody"
-updated: "2026-08-25 12:22:22"
+updated: "2026-10-14 16:18:34"
 doc_id: 798
-fetched_at: "2026-08-28T12:11:15Z"
-content_sha: 3613e3d62cf02390
+fetched_at: "2026-10-15T01:45:00Z"
+content_sha: 867ab083914310d3
 ---
 
 # Настройка методов доставки FBS
@@ -226,6 +226,8 @@ _Главная / Продажа со своего склада (FBS) / Наст
 3. В распечатанном документе найдите нужную информацию в п.2 «Грузополучатель».
 
 ## Этикетка
+
+С 21 октября печать этикеток старого формата 120 × 75 мм станет недоступна.
 
 ### Размер этикетки
 

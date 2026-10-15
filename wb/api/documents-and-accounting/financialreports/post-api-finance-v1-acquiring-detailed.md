@@ -9,7 +9,7 @@ tags:
 spec_version: finances
 source: "https://dev.wildberries.ru/docs/openapi/documents-and-accounting"
 deprecated: false
-content_sha: f6ca77ffa7f0367c
+content_sha: 53b23c7313b98d9d
 ---
 
 # Детализации к отчётам об издержках на приём платежей за период
@@ -24,7 +24,7 @@ content_sha: f6ca77ffa7f0367c
 
 Метод возвращает детализации к [отчётам об издержках на приём платежей](https://seller.wildberries.ru/suppliers-mutual-settlements/reports-implementations/acquiring-reports) за указанный период.
 
-Лимит запросов на один аккаунт продавца:
+Лимит запросов на один профиль продавца:
 
 | Период | Лимит | Интервал | Всплеск |
 | --- | --- | --- | --- |

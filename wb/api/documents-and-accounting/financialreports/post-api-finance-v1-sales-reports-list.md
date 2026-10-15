@@ -9,7 +9,7 @@ tags:
 spec_version: finances
 source: "https://dev.wildberries.ru/docs/openapi/documents-and-accounting"
 deprecated: false
-content_sha: b7c8c6eaa1a19695
+content_sha: e45dedd28d383cb5
 ---
 
 # Список отчётов реализации
@@ -26,7 +26,7 @@ content_sha: b7c8c6eaa1a19695
 
 Данные доступны с 29 января 2024 года.
 
-Лимит запросов на один аккаунт продавца:
+Лимит запросов на один профиль продавца:
 
 | Период | Лимит | Интервал | Всплеск |
 | --- | --- | --- | --- |

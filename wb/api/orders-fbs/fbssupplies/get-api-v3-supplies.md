@@ -9,7 +9,7 @@ tags:
 spec_version: order
 source: "https://dev.wildberries.ru/docs/openapi/orders-fbs"
 deprecated: false
-content_sha: 7fb130513b9a0041
+content_sha: 90a57adabcb67123
 ---
 
 # Получить список поставок
@@ -20,7 +20,7 @@ content_sha: 7fb130513b9a0041
 
 Метод возвращает список [поставок](./orders-fbs#tag/fbsSupplies/operation/getV3SuppliesSupplyId).
 
-Лимит запросов на один аккаунт продавца для методов сборочных заданий, поставок, пропусков и настроек автовозврата FBS:
+Лимит запросов на один профиль продавца для методов сборочных заданий, поставок, пропусков и настроек автовозврата FBS:
 
 | Период | Лимит | Интервал | Всплеск |
 | --- | --- | --- | --- |

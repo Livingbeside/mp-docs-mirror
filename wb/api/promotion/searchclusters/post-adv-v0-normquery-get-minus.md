@@ -9,7 +9,7 @@ tags:
 spec_version: promotion
 source: "https://dev.wildberries.ru/docs/openapi/promotion"
 deprecated: false
-content_sha: 63a150c5d1e8a24f
+content_sha: ae03e91e456ee79f
 ---
 
 # Список минус-фраз кампаний
@@ -22,7 +22,7 @@ content_sha: 63a150c5d1e8a24f
  - ID кампаний
  - артикулам WB
 
-Лимит запросов на один аккаунт продавца:
+Лимит запросов на один профиль продавца:
 
 | Тип | Период | Лимит | Интервал | Всплеск |
 | --- | --- | --- | --- | --- |

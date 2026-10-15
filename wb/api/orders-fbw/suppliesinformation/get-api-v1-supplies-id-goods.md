@@ -9,7 +9,7 @@ tags:
 spec_version: ordersfbw
 source: "https://dev.wildberries.ru/docs/openapi/orders-fbw"
 deprecated: false
-content_sha: 154e4233effea255
+content_sha: 85486ddd81c69c9d
 ---
 
 # Товары поставки{{ /api/v1/supplies/{ID}/goods }}
@@ -20,7 +20,7 @@ content_sha: 154e4233effea255
 
 Метод возвращает информацию о товарах в поставке.
 
-Лимит запросов на один аккаунт продавца:
+Лимит запросов на один профиль продавца:
 
 | Тип | Период | Лимит | Интервал | Всплеск |
 | --- | --- | --- | --- | --- |

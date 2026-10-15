@@ -9,7 +9,7 @@ tags:
 spec_version: general
 source: "https://dev.wildberries.ru/docs/openapi/api-information"
 deprecated: false
-content_sha: 6f4d8c9475cc5f68
+content_sha: e050e27c387de8e5
 ---
 
 # Получение новостей портала продавцов
@@ -23,7 +23,7 @@ content_sha: 6f4d8c9475cc5f68
 один из параметров `from` или `fromID`. 
  За один запрос можно получить не более 100 новостей.
 
-Лимит запросов на один аккаунт продавца:
+Лимит запросов на один профиль продавца:
 
 | Тип | Период | Лимит | Интервал | Всплеск |
 | --- | --- | --- | --- | --- |

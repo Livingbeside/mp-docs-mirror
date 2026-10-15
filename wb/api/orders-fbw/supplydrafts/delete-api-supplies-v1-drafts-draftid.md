@@ -9,7 +9,7 @@ tags:
 spec_version: ordersfbw
 source: "https://dev.wildberries.ru/docs/openapi/orders-fbw"
 deprecated: false
-content_sha: f6d0745d602155d9
+content_sha: 973903f21969dca3
 ---
 
 # Удалить черновик{{ /api/supplies/v1/drafts/{draftId} }}
@@ -24,7 +24,7 @@ content_sha: f6d0745d602155d9
 
 Метод удаляет черновик поставки по его ID.
 
-Лимит запросов на один аккаунт продавца:
+Лимит запросов на один профиль продавца:
 
 | Период | Лимит | Интервал | Всплеск |
 | --- | --- | --- | --- |

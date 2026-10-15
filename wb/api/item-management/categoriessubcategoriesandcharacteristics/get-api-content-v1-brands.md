@@ -3,13 +3,13 @@ title: Бренды
 api: wb-item-management
 method: GET
 path: /api/content/v1/brands
-operation_id: get-api-content-v1-brands
+operation_id: getV1Brands
 tags:
   - categoriesSubcategoriesAndCharacteristics
 spec_version: items
 source: "https://dev.wildberries.ru/docs/openapi/item-management"
 deprecated: false
-content_sha: e84a1c015b7939eb
+content_sha: bebe63b3a5aa96a4
 ---
 
 # Бренды
@@ -20,7 +20,7 @@ content_sha: e84a1c015b7939eb
 
 Метод возвращает список брендов по ID предмета.
 
-Лимит запросов на один аккаунт продавца:
+Лимит запросов на один профиль продавца:
 
 | Тип | Период | Лимит | Интервал | Всплеск |
 | --- | --- | --- | --- | --- |

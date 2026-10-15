@@ -9,7 +9,7 @@ tags:
 spec_version: items
 source: "https://dev.wildberries.ru/docs/openapi/item-management"
 deprecated: false
-content_sha: 6a73710079c50590
+content_sha: 7086013d0e9438d4
 ---
 
 # Установить цены и скидки
@@ -24,7 +24,7 @@ content_sha: 6a73710079c50590
 
  Получить информацию о процессе установки цен и скидок можно с помощью методов [состояния](./item-management#tag/pricesAndDiscounts/operation/getV2HistoryTasks) и [детализации](./item-management#tag/pricesAndDiscounts/operation/getV2HistoryGoodsTask) обработанной загрузки.
 
-Лимит запросов на один аккаунт продавца для всех методов категории Цены и скидки:
+Лимит запросов на один профиль продавца для всех методов категории Цены и скидки:
 
 | Тип | Период | Лимит | Интервал | Всплеск |
 | --- | --- | --- | --- | --- |

@@ -9,7 +9,7 @@ tags:
 spec_version: reports
 source: "https://dev.wildberries.ru/docs/openapi/reports"
 deprecated: false
-content_sha: a3e9ca28b48978ac
+content_sha: 2f9c968468421e32
 ---
 
 # Получить отчёт{{ /api/v1/paid_storage/tasks/{task_id}/download }}
@@ -20,7 +20,7 @@ content_sha: a3e9ca28b48978ac
 
 Метод возвращает отчёт о [платном хранении](https://seller.wildberries.ru/analytics-reports/paid-storage/storage) по ID [задания на генерацию](./reports#tag/paidStorage/operation/getV1PaidStorage).
 
-Лимит запросов на один аккаунт продавца:
+Лимит запросов на один профиль продавца:
 
 | Тип | Период | Лимит | Интервал | Всплеск |
 | --- | --- | --- | --- | --- |

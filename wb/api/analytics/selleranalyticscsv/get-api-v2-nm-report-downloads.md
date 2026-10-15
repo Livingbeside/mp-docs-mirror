@@ -9,7 +9,7 @@ tags:
 spec_version: analytics
 source: "https://dev.wildberries.ru/docs/openapi/analytics"
 deprecated: false
-content_sha: 159949848fc50020
+content_sha: 2b1cb368ddcf2f29
 ---
 
 # Получить список отчётов
@@ -20,7 +20,7 @@ content_sha: 159949848fc50020
 
 Метод возвращает список отчётов с расширенной аналитикой продавца. Ответ содержит ID [созданных отчётов](./analytics#tag/sellerAnalyticsCsv/operation/postV2NmReportDownloads) и статусы генерации.
 
-Лимит запросов на один аккаунт продавца:
+Лимит запросов на один профиль продавца:
 
 | Тип | Период | Лимит | Интервал | Всплеск |
 | --- | --- | --- | --- | --- |

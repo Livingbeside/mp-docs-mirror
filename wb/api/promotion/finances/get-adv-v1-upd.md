@@ -9,7 +9,7 @@ tags:
 spec_version: promotion
 source: "https://dev.wildberries.ru/docs/openapi/promotion"
 deprecated: false
-content_sha: 5a96581aa5cb3371
+content_sha: 68c88a6b1652dbc4
 ---
 
 # Получение истории затрат
@@ -20,7 +20,7 @@ content_sha: 5a96581aa5cb3371
 
 Метод формирует список фактических затрат на рекламные кампании за заданный период.
 
-Лимит запросов на один аккаунт продавца:
+Лимит запросов на один профиль продавца:
 
 | Тип | Период | Лимит | Интервал | Всплеск |
 | --- | --- | --- | --- | --- |
@@ -42,7 +42,7 @@ content_sha: 5a96581aa5cb3371
 
 - `updNum` — integer. Номер выставленного документа
 - `updTime` — string<time-date>. Время списания
-- `updSum` — integer. Выставленная сумма в базовых единицах валюты [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances)
+- `updSum` — integer. Выставленная сумма в базовых единицах валюты [профиля продавца](https://cmp.wildberries.ru/campaigns/finances)
 - `advertId` — integer. ID кампании
 - `campName` — string. Название кампании
 - `advertType` — integer. Тип кампании

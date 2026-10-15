@@ -5,7 +5,7 @@ tag: searchClusters
 group: ""
 kind: guide
 source: "https://dev.wildberries.ru/docs/openapi/promotion"
-content_sha: fcc46aeeaae6571b
+content_sha: 84d05ab18d9aa772
 ---
 
 # Поисковые кластеры
@@ -25,7 +25,7 @@ content_sha: fcc46aeeaae6571b
 
 Чтобы получить кластеры, по которым уже были показы, используйте метод [статистики поисковых запросов](./promotion#tag/statistics/operation/postV0NormqueryStats).
 
-Для кампаний с ручной ставкой можно [установить](./promotion#tag/searchClusters/operation/postV1NormqueryBids) или [удалить](./promotion#tag/searchClusters/operation/deleteV0NormqueryBids) ставки в валюте [аккаунта продавца](https://cmp.wildberries.ru/campaigns/finances). Валюту аккаунта продавца и шаги ставок можно уточнить в ответе метода [GET /api/advert/v1/config](./promotion#tag/campaignManagement/operation/getV1Config). Ставки индивидуальны для каждого поискового кластера.
+Для кампаний с ручной ставкой можно [установить](./promotion#tag/searchClusters/operation/postV1NormqueryBids) или [удалить](./promotion#tag/searchClusters/operation/deleteV0NormqueryBids) ставки в валюте [профиля продавца](https://cmp.wildberries.ru/campaigns/finances). Валюту профиля продавца и шаги ставок можно уточнить в ответе метода [GET /api/advert/v1/config](./promotion#tag/campaignManagement/operation/getV1Config). Ставки индивидуальны для каждого поискового кластера.
 
 **Исключения**
 

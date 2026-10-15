@@ -9,7 +9,7 @@ tags:
 spec_version: items
 source: "https://dev.wildberries.ru/docs/openapi/item-management"
 deprecated: false
-content_sha: 51b98dc17089512d
+content_sha: 2cf8d94dbbe99f79
 ---
 
 # Состояние обработанной загрузки
@@ -22,7 +22,7 @@ content_sha: 51b98dc17089512d
 
  Обработанная загрузка — это загрузка цен и скидок для [товаров](./item-management#tag/pricesAndDiscounts/operation/postV2UploadTask), цен для [размеров товаров](./item-management#tag/pricesAndDiscounts/operation/postV2UploadTaskSize), [скидок WB Клуба](./item-management#tag/pricesAndDiscounts/operation/postV2UploadTaskClubDiscount) и [оптовых скидок для B2B-продаж](./item-management#tag/pricesAndDiscounts/operation/postV1UploadTaskB2bWholesale).
 
-Лимит запросов на один аккаунт продавца для всех методов категории Цены и скидки:
+Лимит запросов на один профиль продавца для всех методов категории Цены и скидки:
 
 | Тип | Период | Лимит | Интервал | Всплеск |
 | --- | --- | --- | --- | --- |

@@ -9,7 +9,7 @@ tags:
 spec_version: ordersfbw
 source: "https://dev.wildberries.ru/docs/openapi/orders-fbw"
 deprecated: false
-content_sha: cd2fa3cec3a9e596
+content_sha: 5e2c153aae2b8941
 ---
 
 # Упаковка поставки{{ /api/v1/supplies/{ID}/package }}
@@ -20,7 +20,7 @@ content_sha: cd2fa3cec3a9e596
 
 Метод возвращает информацию об упаковке поставки.
 
-Лимит запросов на один аккаунт продавца:
+Лимит запросов на один профиль продавца:
 
 | Тип | Период | Лимит | Интервал | Всплеск |
 | --- | --- | --- | --- | --- |

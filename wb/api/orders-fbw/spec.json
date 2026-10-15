@@ -1664,7 +1664,7 @@
   "paths": {
     "/api/supplies/v1/discrepancies/{supplyId}": {
       "get": {
-        "description": "<div class='description-title'><span>Описание метода</span></div>\n\n\n<div class=\"description_token\">\n    Метод <a href=\"./api-information#tag/authorization/Pravila-ispolzovaniya-tokenov-dostupa-k-API\">доступен</a> по\n        <strong>Персональному</strong> токену, \n        <strong>Сервисному</strong> токену\n</div>\n\nМетод возвращает информацию о выявленных расхождениях между заявленным и фактическим количеством товара в поставке.\n<br>\nДля поставок принятых не позднее года назад.\n<br><br>\n**Типы расхождений:**\n<br><br>\nРасхождение в большую сторону:<br><br>\n1. Избыток товара с заявленным баркодом:\n  - `\"discrepancyType\": \"surplus\"`\n  - `\"discrepancyLabel\": \"surplus\"`\n2. Избыток товара с несоответствующим заявленному баркодом:\n  - `\"discrepancyType\": \"surplus\"`\n  - `\"discrepancyLabel\": \"re-sorting\"`\n\nРасхождение в меньшую сторону:<br><br>\n1. Не хватает товара:\n  - `\"discrepancyType\": \"shortage\"`\n  - `\"discrepancyLabel\": \"shortage\"`\n2. Некоторые баркоды не соответствуют заявленным:\n  - `\"discrepancyType\": \"shortage\"`\n  - `\"discrepancyLabel\": \"re-sorting\"`\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 1 запрос | 1 мин | 1 запрос |\n</div>\n",
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\n\n<div class=\"description_token\">\n    Метод <a href=\"./api-information#tag/authorization/Pravila-ispolzovaniya-tokenov-dostupa-k-API\">доступен</a> по\n        <strong>Персональному</strong> токену, \n        <strong>Сервисному</strong> токену\n</div>\n\nМетод возвращает информацию о выявленных расхождениях между заявленным и фактическим количеством товара в поставке.\n<br>\nДля поставок принятых не позднее года назад.\n<br><br>\n**Типы расхождений:**\n<br><br>\nРасхождение в большую сторону:<br><br>\n1. Избыток товара с заявленным баркодом:\n  - `\"discrepancyType\": \"surplus\"`\n  - `\"discrepancyLabel\": \"surplus\"`\n2. Избыток товара с несоответствующим заявленному баркодом:\n  - `\"discrepancyType\": \"surplus\"`\n  - `\"discrepancyLabel\": \"re-sorting\"`\n\nРасхождение в меньшую сторону:<br><br>\n1. Не хватает товара:\n  - `\"discrepancyType\": \"shortage\"`\n  - `\"discrepancyLabel\": \"shortage\"`\n2. Некоторые баркоды не соответствуют заявленным:\n  - `\"discrepancyType\": \"shortage\"`\n  - `\"discrepancyLabel\": \"re-sorting\"`\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один профиль продавца:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 1 запрос | 1 мин | 1 запрос |\n</div>\n",
         "operationId": "getV1SuppliesSupplyIdDiscrepanciesQuantity",
         "parameters": [
           {
@@ -1784,7 +1784,7 @@
     },
     "/api/supplies/v1/drafts": {
       "get": {
-        "description": "<div class='description-title'><span>Описание метода</span></div>\n\n\n<div class=\"description_token\">\n    Метод <a href=\"./api-information#tag/authorization/Pravila-ispolzovaniya-tokenov-dostupa-k-API\">доступен</a> по\n        <strong>Персональному</strong> токену, \n        <strong>Сервисному</strong> токену\n</div>\n\nМетод возвращает список черновиков поставок.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 30 запросов | 2 сек | 10 запросов |\n</div>\n",
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\n\n<div class=\"description_token\">\n    Метод <a href=\"./api-information#tag/authorization/Pravila-ispolzovaniya-tokenov-dostupa-k-API\">доступен</a> по\n        <strong>Персональному</strong> токену, \n        <strong>Сервисному</strong> токену\n</div>\n\nМетод возвращает список черновиков поставок.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один профиль продавца:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 30 запросов | 2 сек | 10 запросов |\n</div>\n",
         "operationId": "getV1Drafts",
         "parameters": [
           {
@@ -1899,7 +1899,7 @@
         ]
       },
       "post": {
-        "description": "<div class='description-title'><span>Описание метода</span></div>\n\n\n<div class=\"description_token\">\n    Метод <a href=\"./api-information#tag/authorization/Pravila-ispolzovaniya-tokenov-dostupa-k-API\">доступен</a> по\n        <strong>Персональному</strong> токену, \n        <strong>Сервисному</strong> токену\n</div>\n\nМетод создаёт пустой черновик поставки.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 30 запросов | 2 сек | 10 запросов |\n</div>\n",
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\n\n<div class=\"description_token\">\n    Метод <a href=\"./api-information#tag/authorization/Pravila-ispolzovaniya-tokenov-dostupa-k-API\">доступен</a> по\n        <strong>Персональному</strong> токену, \n        <strong>Сервисному</strong> токену\n</div>\n\nМетод создаёт пустой черновик поставки.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один профиль продавца:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 30 запросов | 2 сек | 10 запросов |\n</div>\n",
         "operationId": "postV1Drafts",
         "responses": {
           "200": {
@@ -1941,7 +1941,7 @@
     },
     "/api/supplies/v1/drafts/{draftId}": {
       "delete": {
-        "description": "<div class='description-title'><span>Описание метода</span></div>\n\n\n<div class=\"description_token\">\n    Метод <a href=\"./api-information#tag/authorization/Pravila-ispolzovaniya-tokenov-dostupa-k-API\">доступен</a> по\n        <strong>Персональному</strong> токену, \n        <strong>Сервисному</strong> токену\n</div>\n\nМетод удаляет черновик поставки по его ID.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 30 запросов | 2 сек | 10 запросов |\n</div>\n",
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\n\n<div class=\"description_token\">\n    Метод <a href=\"./api-information#tag/authorization/Pravila-ispolzovaniya-tokenov-dostupa-k-API\">доступен</a> по\n        <strong>Персональному</strong> токену, \n        <strong>Сервисному</strong> токену\n</div>\n\nМетод удаляет черновик поставки по его ID.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один профиль продавца:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 30 запросов | 2 сек | 10 запросов |\n</div>\n",
         "operationId": "deleteV1DraftsDraftId",
         "parameters": [
           {
@@ -2022,7 +2022,7 @@
     },
     "/api/supplies/v1/drafts/{draftId}/items": {
       "delete": {
-        "description": "<div class='description-title'><span>Описание метода</span></div>\n\n\n<div class=\"description_token\">\n    Метод <a href=\"./api-information#tag/authorization/Pravila-ispolzovaniya-tokenov-dostupa-k-API\">доступен</a> по\n        <strong>Персональному</strong> токену, \n        <strong>Сервисному</strong> токену\n</div>\n\nМетод удаляет товары из черновика поставки по списку баркодов.\n\n  <div class=\"description_important\">\n  Баркоды не валидируются. Если в запросе вы передали некорректные баркоды, вы не получите ошибку. При этом корректные баркоды будут удалены из черновика.\n  </div>\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 30 запросов | 2 сек | 10 запросов |\n</div>\n",
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\n\n<div class=\"description_token\">\n    Метод <a href=\"./api-information#tag/authorization/Pravila-ispolzovaniya-tokenov-dostupa-k-API\">доступен</a> по\n        <strong>Персональному</strong> токену, \n        <strong>Сервисному</strong> токену\n</div>\n\nМетод удаляет товары из черновика поставки по списку баркодов.\n\n  <div class=\"description_important\">\n  Баркоды не валидируются. Если в запросе вы передали некорректные баркоды, вы не получите ошибку. При этом корректные баркоды будут удалены из черновика.\n  </div>\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один профиль продавца:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 30 запросов | 2 сек | 10 запросов |\n</div>\n",
         "operationId": "deleteV1DraftsDraftIdItems",
         "parameters": [
           {
@@ -2123,7 +2123,7 @@
         ]
       },
       "get": {
-        "description": "<div class='description-title'><span>Описание метода</span></div>\n\n\n<div class=\"description_token\">\n    Метод <a href=\"./api-information#tag/authorization/Pravila-ispolzovaniya-tokenov-dostupa-k-API\">доступен</a> по\n        <strong>Персональному</strong> токену, \n        <strong>Сервисному</strong> токену\n</div>\n\nМетод возвращает список товаров черновика.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 30 запросов | 2 сек | 10 запросов |\n</div>\n",
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\n\n<div class=\"description_token\">\n    Метод <a href=\"./api-information#tag/authorization/Pravila-ispolzovaniya-tokenov-dostupa-k-API\">доступен</a> по\n        <strong>Персональному</strong> токену, \n        <strong>Сервисному</strong> токену\n</div>\n\nМетод возвращает список товаров черновика.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один профиль продавца:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 30 запросов | 2 сек | 10 запросов |\n</div>\n",
         "operationId": "getV1DraftsDraftIdItems",
         "parameters": [
           {
@@ -2219,7 +2219,7 @@
         ]
       },
       "post": {
-        "description": "<div class='description-title'><span>Описание метода</span></div>\n\n\n<div class=\"description_token\">\n    Метод <a href=\"./api-information#tag/authorization/Pravila-ispolzovaniya-tokenov-dostupa-k-API\">доступен</a> по\n        <strong>Персональному</strong> токену, \n        <strong>Сервисному</strong> токену\n</div>\n\nМетод добавляет товары в черновик поставки.\n\n<div class=\"description_important\">\n\n Метод работает по принципу атомарности:\n  - если все баркоды прошли валидацию успешно, то все товары добавятся в черновик. В ответе вернётся <code>{\"results\":[]}</code>\n  - если хотя бы один баркод не прошел валидацию, ни один товар в черновик не добавится. В ответе вернётся список невалидных баркодов\n\n</div>\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 30 запросов | 2 сек | 10 запросов |\n</div>\n",
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\n\n<div class=\"description_token\">\n    Метод <a href=\"./api-information#tag/authorization/Pravila-ispolzovaniya-tokenov-dostupa-k-API\">доступен</a> по\n        <strong>Персональному</strong> токену, \n        <strong>Сервисному</strong> токену\n</div>\n\nМетод добавляет товары в черновик поставки.\n\n<div class=\"description_important\">\n\n Метод работает по принципу атомарности:\n  - если все баркоды прошли валидацию успешно, то все товары добавятся в черновик. В ответе вернётся <code>{\"results\":[]}</code>\n  - если хотя бы один баркод не прошел валидацию, ни один товар в черновик не добавится. В ответе вернётся список невалидных баркодов\n\n</div>\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один профиль продавца:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 30 запросов | 2 сек | 10 запросов |\n</div>\n",
         "operationId": "postV1DraftsDraftIdItems",
         "parameters": [
           {
@@ -2337,7 +2337,7 @@
     },
     "/api/v1/acceptance/options": {
       "post": {
-        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод [временно отключён](https://dev.wildberries.ru/release-notes?id=570)\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 мин | 6 запросов | 10 сек | 6 запросов |\n| Сервисный | 1 мин | 6 запросов | 10 сек | 6 запросов |\n| Базовый с секретом | 1 мин | 6 запросов | 10 сек | 6 запросов |\n| Базовый | 1 ч | 2 запроса | 30 мин | 1 запрос |\n\n<hr>\n\nВ песочнице — максимум 1 запрос в секунду суммарно для всех методов.\n\n</div>\n",
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод [временно отключён](https://dev.wildberries.ru/release-notes?id=570)\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один профиль продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 мин | 6 запросов | 10 сек | 6 запросов |\n| Сервисный | 1 мин | 6 запросов | 10 сек | 6 запросов |\n| Базовый с секретом | 1 мин | 6 запросов | 10 сек | 6 запросов |\n| Базовый | 1 ч | 2 запроса | 30 мин | 1 запрос |\n\n<hr>\n\nВ песочнице — максимум 1 запрос в секунду суммарно для всех методов.\n\n</div>\n",
         "operationId": "postV1AcceptanceOptions",
         "parameters": [
           {
@@ -2441,7 +2441,7 @@
     },
     "/api/v1/supplies": {
       "post": {
-        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод возвращает список поставок, по умолчанию — последние 1000 поставок.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 мин | 30 запросов | 2 сек | 10 запросов |\n| Сервисный | 1 мин | 30 запросов | 2 сек | 10 запросов |\n| Базовый с секретом | 1 мин | 30 запросов | 2 сек | 10 запросов |\n| Базовый | 1 ч | 2 запроса | 30 мин | 1 запрос |\n</div>\n",
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод возвращает список поставок, по умолчанию — последние 1000 поставок.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один профиль продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 мин | 30 запросов | 2 сек | 10 запросов |\n| Сервисный | 1 мин | 30 запросов | 2 сек | 10 запросов |\n| Базовый с секретом | 1 мин | 30 запросов | 2 сек | 10 запросов |\n| Базовый | 1 ч | 2 запроса | 30 мин | 1 запрос |\n</div>\n",
         "operationId": "postV1Supplies",
         "parameters": [
           {
@@ -2593,7 +2593,7 @@
     },
     "/api/v1/supplies/{ID}": {
       "get": {
-        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод возвращает детали поставки по ID.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 мин | 30 запросов | 2 сек | 10 запросов |\n| Сервисный | 1 мин | 30 запросов | 2 сек | 10 запросов |\n| Базовый с секретом | 1 мин | 30 запросов | 2 сек | 10 запросов |\n| Базовый | 1 ч | 2 запроса | 30 мин | 1 запрос |\n</div>\n",
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод возвращает детали поставки по ID.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один профиль продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 мин | 30 запросов | 2 сек | 10 запросов |\n| Сервисный | 1 мин | 30 запросов | 2 сек | 10 запросов |\n| Базовый с секретом | 1 мин | 30 запросов | 2 сек | 10 запросов |\n| Базовый | 1 ч | 2 запроса | 30 мин | 1 запрос |\n</div>\n",
         "operationId": "getV1SuppliesId",
         "parameters": [
           {
@@ -2693,7 +2693,7 @@
     },
     "/api/v1/supplies/{ID}/goods": {
       "get": {
-        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод возвращает информацию о товарах в поставке.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 мин | 30 запросов | 2 сек | 10 запросов |\n| Сервисный | 1 мин | 30 запросов | 2 сек | 10 запросов |\n| Базовый с секретом | 1 мин | 30 запросов | 2 сек | 10 запросов |\n| Базовый | 1 ч | 2 запроса | 30 мин | 1 запрос |\n</div>\n",
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод возвращает информацию о товарах в поставке.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один профиль продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 мин | 30 запросов | 2 сек | 10 запросов |\n| Сервисный | 1 мин | 30 запросов | 2 сек | 10 запросов |\n| Базовый с секретом | 1 мин | 30 запросов | 2 сек | 10 запросов |\n| Базовый | 1 ч | 2 запроса | 30 мин | 1 запрос |\n</div>\n",
         "operationId": "getV1SuppliesIdGoods",
         "parameters": [
           {
@@ -2807,7 +2807,7 @@
     },
     "/api/v1/supplies/{ID}/package": {
       "get": {
-        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод возвращает информацию об упаковке поставки.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 мин | 30 запросов | 2 сек | 10 запросов |\n| Сервисный | 1 мин | 30 запросов | 2 сек | 10 запросов |\n| Базовый с секретом | 1 мин | 30 запросов | 2 сек | 10 запросов |\n| Базовый | 1 ч | 2 запроса | 30 мин | 1 запрос |\n</div>\n",
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод возвращает информацию об упаковке поставки.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один профиль продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 мин | 30 запросов | 2 сек | 10 запросов |\n| Сервисный | 1 мин | 30 запросов | 2 сек | 10 запросов |\n| Базовый с секретом | 1 мин | 30 запросов | 2 сек | 10 запросов |\n| Базовый | 1 ч | 2 запроса | 30 мин | 1 запрос |\n</div>\n",
         "operationId": "getV1SuppliesIdPackage",
         "parameters": [
           {
@@ -2883,7 +2883,7 @@
     },
     "/api/v1/transit-tariffs": {
       "get": {
-        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод [временно отключён](https://dev.wildberries.ru/release-notes?id=570)\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 мин | 6 запросов | 10 сек | 10 запросов |\n| Сервисный | 1 мин | 6 запросов | 10 сек | 10 запросов |\n| Базовый с секретом | 1 мин | 6 запросов | 10 сек | 10 запросов |\n| Базовый | 12 ч | 1 запрос | 12 ч | 1 запрос |\n</div>\n",
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод [временно отключён](https://dev.wildberries.ru/release-notes?id=570)\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один профиль продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 мин | 6 запросов | 10 сек | 10 запросов |\n| Сервисный | 1 мин | 6 запросов | 10 сек | 10 запросов |\n| Базовый с секретом | 1 мин | 6 запросов | 10 сек | 10 запросов |\n| Базовый | 12 ч | 1 запрос | 12 ч | 1 запрос |\n</div>\n",
         "operationId": "getV1TransitTariffs",
         "responses": {
           "200": {
@@ -2929,7 +2929,7 @@
     },
     "/api/v1/warehouses": {
       "get": {
-        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод [временно отключён](https://dev.wildberries.ru/release-notes?id=570)\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один аккаунт продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 мин | 6 запросов | 10 сек | 6 запросов |\n| Сервисный | 1 мин | 6 запросов | 10 сек | 6 запросов |\n| Базовый с секретом | 1 мин | 6 запросов | 10 сек | 6 запросов |\n| Базовый | 12 ч | 1 запрос | 12 ч | 1 запрос |\n\n<hr>\n\nВ песочнице — максимум 1 запрос в секунду суммарно для всех методов.\n\n</div>\n",
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод [временно отключён](https://dev.wildberries.ru/release-notes?id=570)\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один профиль продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 мин | 6 запросов | 10 сек | 6 запросов |\n| Сервисный | 1 мин | 6 запросов | 10 сек | 6 запросов |\n| Базовый с секретом | 1 мин | 6 запросов | 10 сек | 6 запросов |\n| Базовый | 12 ч | 1 запрос | 12 ч | 1 запрос |\n\n<hr>\n\nВ песочнице — максимум 1 запрос в секунду суммарно для всех методов.\n\n</div>\n",
         "operationId": "getV1Warehouses",
         "responses": {
           "200": {

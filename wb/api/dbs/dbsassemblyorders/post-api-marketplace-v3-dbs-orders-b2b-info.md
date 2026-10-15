@@ -9,7 +9,7 @@ tags:
 spec_version: dbs
 source: "https://dev.wildberries.ru/docs/openapi/dbs"
 deprecated: false
-content_sha: c0d9d31ddad0f39f
+content_sha: c5729a1fde236f87
 ---
 
 # Информация о покупателе B2B
@@ -23,7 +23,7 @@ content_sha: c0d9d31ddad0f39f
  - КПП
  - Наименование организации
 
-Лимит запросов на один аккаунт продавца для методов сборочных заданий DBS:
+Лимит запросов на один профиль продавца для методов сборочных заданий DBS:
 
 | Период | Лимит | Интервал | Всплеск |
 | --- | --- | --- | --- |

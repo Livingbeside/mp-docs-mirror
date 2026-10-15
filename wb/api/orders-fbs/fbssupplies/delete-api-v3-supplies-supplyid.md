@@ -9,7 +9,7 @@ tags:
 spec_version: order
 source: "https://dev.wildberries.ru/docs/openapi/orders-fbs"
 deprecated: false
-content_sha: c51ccb6685b403e8
+content_sha: 4d29f19441a5842e
 ---
 
 # Удалить поставку{{ /api/v3/supplies/{supplyId} }}
@@ -20,7 +20,7 @@ content_sha: c51ccb6685b403e8
 
 Метод удаляет [поставку](./orders-fbs#tag/fbsSupplies/operation/getV3SuppliesSupplyId), если она активна и за ней не закреплено ни одно [сборочное задание](./orders-fbs#tag/fbsAssemblyOrders/operation/getV3Orders).
 
-Лимит запросов на один аккаунт продавца для методов сборочных заданий, поставок, пропусков и настроек автовозврата FBS:
+Лимит запросов на один профиль продавца для методов сборочных заданий, поставок, пропусков и настроек автовозврата FBS:
 
 | Период | Лимит | Интервал | Всплеск |
 | --- | --- | --- | --- |
