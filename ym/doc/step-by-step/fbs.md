@@ -2,14 +2,14 @@
 title: FBS-заказы
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/fbs.md"
-fetched_at: "2026-10-15T01:48:16Z"
-content_sha: 383dbdef0c1d07fb
+fetched_at: "2026-10-16T02:04:40Z"
+content_sha: 911f10ec5c95c129
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.63.2
+    content: Diplodoc Platform v5.63.3
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/step-by-step/fbs.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/fbs.md
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/fbs.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21642161
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21665230
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21642161
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21665230
 
 # Обработка FBS-заказов
 

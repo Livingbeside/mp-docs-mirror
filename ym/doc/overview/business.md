@@ -2,14 +2,14 @@
 title: Общие методы
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/overview/business.md"
-fetched_at: "2026-10-15T01:48:25Z"
-content_sha: 654c27a5713fa89f
+fetched_at: "2026-10-16T02:04:46Z"
+content_sha: fdb8b4d3be18f9aa
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.63.2
+    content: Diplodoc Platform v5.63.3
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/overview/business.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/overview/business.md
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/overview/business.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21642161
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21665230
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21642161
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21665230
 
 # Общие для всех моделей методы
 

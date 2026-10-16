@@ -2,14 +2,14 @@
 title: Спецификация OpenAPI
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/concepts/openapi.md"
-fetched_at: "2026-10-15T01:48:11Z"
-content_sha: f581641e1c849ff3
+fetched_at: "2026-10-16T02:04:34Z"
+content_sha: bcdf32c41f2ed036
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.63.2
+    content: Diplodoc Platform v5.63.3
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/concepts/openapi.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/concepts/openapi.md
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/concepts/openapi.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21642161
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21665230
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21642161
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21665230
 
 # Спецификация OpenAPI
 

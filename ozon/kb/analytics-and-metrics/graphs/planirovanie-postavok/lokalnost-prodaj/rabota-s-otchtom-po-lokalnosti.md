@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /analytics-and-metrics/graphs/planirovanie-postavok/lokalnost-prodaj/rabota-s-otchtom-po-lokalnosti
 source: "https://seller-edu.ozon.ru/libra/analytics-and-metrics/graphs/planirovanie-postavok/lokalnost-prodaj/rabota-s-otchtom-po-lokalnosti"
-updated: "2026-09-11 12:35:28"
+updated: "2026-10-15 09:16:35"
 doc_id: 61767
-fetched_at: "2026-09-12T01:58:38Z"
-content_sha: 36aa76c844f91d24
+fetched_at: "2026-10-16T01:58:55Z"
+content_sha: 3a6e0f9891821a61
 ---
 
 # Работа с отчётом по локальности продаж
@@ -170,6 +170,6 @@ _Главная / Аналитика / Аналитика продавца / П�
 
 [Кросс-докинг](/libra/fbo/crossdoking/kross-doking) — всё об услуге доставки товаров на склады размещения силами Ozon;
 
-[Расходы на доставку до покупателя](/libra/commissions-tariffs/commissions-tariffs-ozon/rashody-na-dostavku) [— актуальные тарифы логистики;](https://seller-edu.ozon.ru/libra/fbo/warehouses/table-klastery)
+[Расходы на доставку до покупателя](/libra/commissions-tariffs/commissions-tariffs-ozon/rashody-na-dostavku) [— актуальные тарифы логистики;](https://seller-edu.ozon.ru/commissions-tariffs/commissions-tariffs-ozon/rashody-na-dostavku)
 
 [Кластеры доставки](/libra/fbo/warehouses/table-klastery) — проверьте, к какому кластеру относится каждый склад.

@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /fbo/process-details/chto-nujno-znat-o-zayavkah-na-postavku
 source: "https://seller-edu.ozon.ru/libra/fbo/process-details/chto-nujno-znat-o-zayavkah-na-postavku"
-updated: "2026-10-12 09:37:45"
+updated: "2026-10-15 08:41:59"
 doc_id: 69602
-fetched_at: "2026-10-13T02:20:21Z"
-content_sha: e07bca003e494252
+fetched_at: "2026-10-16T01:58:54Z"
+content_sha: 55a5ea9326b0ba86
 ---
 
 # Что нужно знать о заявках на поставку
@@ -22,7 +22,7 @@ _Главная / Продажа со склада Ozon (FBO) / Заявки н�
 
 [Как создать заявку на поставку в личном кабинете на сайте](https://seller-edu.ozon.ru/fbo/process-details/sozdanie-zayavki-na-postavku)
 
-[Как создать заявку в приложении Ozon Seller](/libra/fbo/process-details/zayavka-v-prilojenii-ozon-seller)
+[Как создать заявку в приложении Ozon Seller](https://seller-edu.ozon.ru/fbo/process-details/zayavka-v-prilojenii-ozon-seller)
 
 # Что такое грузоместо
 
@@ -76,7 +76,7 @@ _Главная / Продажа со склада Ozon (FBO) / Заявки н�
 
 [Обычная заявка на поставку](https://seller-edu.ozon.ru/fbo/process-details/sozdanie-zayavki-na-postavku)
 
-[Заявка на поставку в приложении ](/libra/fbo/process-details/zayavka-v-prilojenii-ozon-seller)**[Ozon Seller](/libra/fbo/process-details/zayavka-v-prilojenii-ozon-seller)**
+[Заявка на поставку в приложении ](https://seller-edu.ozon.ru/fbo/process-details/zayavka-v-prilojenii-ozon-seller)**[Ozon Seller](https://seller-edu.ozon.ru/fbo/process-details/zayavka-v-prilojenii-ozon-seller)**
 
 # Зачем нужна кнопка «Выбрать действие» при создании заявки на поставку
 

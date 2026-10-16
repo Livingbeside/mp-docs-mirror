@@ -8,15 +8,17 @@ tags:
   - FBS
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
-deprecated: false
-content_sha: 2ce8f67495cf74eb
+deprecated: true
+content_sha: 100c505e1847ae3c
 ---
 
 # Создать задание на выгрузку этикеток
 
 `POST /v1/posting/fbs/package-label/create`
 
-C 5 октября 2026 года метод будет возвращать новые этикетки для отправлений FBS.
+> ⚠️ Метод помечен как **deprecated**.
+
+C 5 октября 2026 года метод возвращает новые этикетки для отправлений FBS.
 
 [Подробнее о новых этикетках в Базе знаний продавца](https://seller-edu.ozon.ru/libra/fbs/logistics-settings/metody#тестовыи-формат-этикетки)
 

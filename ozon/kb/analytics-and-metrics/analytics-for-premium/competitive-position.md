@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /analytics-and-metrics/analytics-for-premium/competitive-position
 source: "https://seller-edu.ozon.ru/libra/analytics-and-metrics/analytics-for-premium/competitive-position"
-updated: "2026-09-28 13:07:45"
+updated: "2026-10-15 07:39:15"
 doc_id: 944
-fetched_at: "2026-10-13T02:20:22Z"
-content_sha: 5e076b40ca915a7a
+fetched_at: "2026-10-16T01:58:55Z"
+content_sha: a38846c5730da725
 ---
 
 # Конкуренты
@@ -19,8 +19,6 @@ _Главная / Аналитика / Аналитика конкурентов
 Доступ к расширенной аналитике в подписках [Premium](/seller-rating/about-rating/premium-program?search=premium) и [Premium Lite](/seller-rating/about-rating/podpiska-premium-lite?search=подписка) может выдать только управляющий двум сотрудникам с ролью «Аналитик». При этом у сотрудника обязательно должна быть любая другая роль, чтобы пользоваться личным кабинетом. [Как управлять ролями](/personal-account/user-management)
 
 Чтобы получить безлимитный доступ для всех сотрудников, оформите [подписку Premium Plus](/seller-rating/about-rating/subscription-premium-plus).
-
-Следите за конкурентами и своей позицией по продажам в мобильном приложении Ozon Seller. [Как выглядит отчёт в приложении](/obsolete/statistics#%D0%BA%D0%B0%D0%BA-%D0%BF%D0%BE%D1%81%D0%BC%D0%BE%D1%82%D1%80%D0%B5%D1%82%D1%8C-%D0%BA%D0%BE%D0%BD%D0%BA%D1%83%D1%80%D0%B5%D0%BD%D1%82%D0%BD%D1%83%D1%8E-%D0%BF%D0%BE%D0%B7%D0%B8%D1%86%D0%B8%D1%8E)
 
 # В чём поможет инструмент «Конкуренты»
 

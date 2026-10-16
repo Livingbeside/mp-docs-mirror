@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /work-with-goods/zagruzka-tovarov/zagruzka-media/foto
 source: "https://seller-edu.ozon.ru/libra/work-with-goods/zagruzka-tovarov/zagruzka-media/foto"
-updated: "2026-09-16 11:26:42"
+updated: "2026-10-15 07:42:14"
 doc_id: 10243
-fetched_at: "2026-09-18T02:20:35Z"
-content_sha: b78c3d33e24f66f9
+fetched_at: "2026-10-16T01:58:55Z"
+content_sha: 06ff0a68feeca4d9
 ---
 
 # Фото и образец цвета
@@ -22,7 +22,7 @@ _Главная / Работа с товарами / Создание и ред�
 
 Добавьте в карточку хотя бы одно фото — иначе товар не попадёт в продажу и покупатели не увидят его.
 
-В некоторых категориях можно создать поставку или указать остатки, даже [если у товара нет фото](/work-with-goods/zagruzka-tovarov/zagruzka-media/foto-copy#%D0%BA%D0%B0%D0%BA-%D1%81%D0%BE%D0%B7%D0%B4%D0%B0%D1%82%D1%8C-%D1%82%D0%BE%D0%B2%D0%B0%D1%80-%D0%B1%D0%B5%D0%B7-%D1%84%D0%BE%D1%82%D0%BE).
+В некоторых категориях можно создать поставку или указать остатки, даже [если у товара нет фото](#как-создать-товар-без-фото).
 
 Перед загрузкой убедитесь, что фото соответствует [требованиям](/work-with-goods/trebovaniya-k-kartochkam-tovarov/media/foto-i-video-tovara).
 

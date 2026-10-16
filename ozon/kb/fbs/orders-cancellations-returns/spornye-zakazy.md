@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /fbs/orders-cancellations-returns/spornye-zakazy
 source: "https://seller-edu.ozon.ru/libra/fbs/orders-cancellations-returns/spornye-zakazy"
-updated: "2026-08-11 13:20:00"
+updated: "2026-10-15 08:04:59"
 doc_id: 805
-fetched_at: "2026-08-28T12:11:15Z"
-content_sha: e6523c6e53adb3ea
+fetched_at: "2026-10-16T01:58:55Z"
+content_sha: f5746af5fa08ab94
 ---
 
 # Спорные заказы на FBS
@@ -85,5 +85,3 @@ _Главная / Продажа со своего склада (FBS) / Спор
 [Требования к упаковке на FBS](/fbs/ozon-logistika/trebovaniya-k-upakovke)
 
 [Процент отмен](/seller-rating/metrics/procent-otmen)
-
-[Работа со спорными заказами в приложении Ozon Seller](/obsolete/rabota-s-zakazamy#%D0%BA%D0%B0%D0%BA-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%D1%82%D1%8C-%D1%81%D0%BE-%D1%81%D0%BF%D0%BE%D1%80%D0%BD%D1%8B%D0%BC%D0%B8-%D0%B7%D0%B0%D0%BA%D0%B0%D0%B7%D0%B0%D0%BC%D0%B8)

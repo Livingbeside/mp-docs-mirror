@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /vozvraty-i-vyvozy/vyvozy-so-stoka-i-postavki/zabrat-so-stoka
 source: "https://seller-edu.ozon.ru/libra/vozvraty-i-vyvozy/vyvozy-so-stoka-i-postavki/zabrat-so-stoka"
-updated: "2026-09-10 10:05:37"
+updated: "2026-10-15 09:24:39"
 doc_id: 13545
-fetched_at: "2026-09-11T01:52:47Z"
-content_sha: 2890ef1e049dbd29
+fetched_at: "2026-10-16T01:58:55Z"
+content_sha: c8729a3bf90dd684
 ---
 
 # Вывоз товаров со стока со склада Ozon
@@ -122,7 +122,7 @@ _Главная / Клиентские возвраты и вывозы това
 **Маркируемые товары, ожидающие вывоз **— товары без маркировки, которые вы сняли с продажи.
 
 **Брак, доступный к вывозу со стока** — товары, которые нельзя [уценить ](/seller-edu/work-with-goods/ucenka/ucenka)из-за сильных повреждений. Их не получится добавить в одну заявку с другими типами.
-Для этого типа остатков подключим[ автоматические заявки на вывоз](/seller-edu/vozvraty-i-vyvozy/vyvozy-so-stoka-i-postavki/avtovyvoz-tovarov-so-sklada-ozon), если вы указали точку для автовывоза. Закрепили это условие в договоре — отключить не получится. Если не хотите вывозить дешёвые товары, установите минимальную цену для вывоза брака. Всё, что дешевле — утилизируем.
+Для этого типа остатков подключим[ автоматические заявки на вывоз](https://seller-edu.ozon.ru/vozvraty-i-vyvozy/vyvozy-so-stoka-i-postavki/avtovyvoz-tovarov-so-sklada-ozon), если вы указали точку для автовывоза. Закрепили это условие в договоре — отключить не получится. Если не хотите вывозить дешёвые товары, установите минимальную цену для вывоза брака. Всё, что дешевле — утилизируем.
 
 **Доступные к продаже, с истекающим сроком и ожидающие УПД** — к этому типу относятся обычные и [уценённые ](/work-with-goods/ucenka/ucenka)товары, а также те, которые не можем продавать из-за проблем с документами и сроком годности. Проверьте, есть ли у вас такие товары, в разделе[ ](https://seller.ozon.ru/app/fbo-stocks/stocks-management)**[FBO → Управление остатками](https://seller.ozon.ru/app/fbo-stocks/stocks-management)****.**
 
@@ -150,7 +150,7 @@ _Главная / Клиентские возвраты и вывозы това
 
 ## Шаг 1. Создайте заявку
 
-Чтобы вывезти ювелирные изделия, [создайте заявку на самовывоз](https://seller-edu.ozon.ru/fbo/vozvraty-utilizaciya-izlishki/vyvoz-tovarov-so-sklada-ozon/zabrat-tovary-voprosy#%D0%BA%D0%B0%D0%BA-%D0%B7%D0%B0%D0%B1%D1%80%D0%B0%D1%82%D1%8C-%D1%8E%D0%B2%D0%B5%D0%BB%D0%B8%D1%80%D0%BD%D1%8B%D0%B5-%D0%B8%D0%B7%D0%B4%D0%B5%D0%BB%D0%B8%D1%8F-%D1%81%D0%BE-%D1%81%D0%BA%D0%BB%D0%B0%D0%B4%D0%BE%D0%B2) через поддержку.
+Чтобы вывезти ювелирные изделия, [создайте заявку на самовывоз](https://seller-edu.ozon.ru/jewerly/fbo/vyvoz-jewelery) через поддержку.
 
 Создать заявку на вывоз товаров со стока можно двумя способами:
 

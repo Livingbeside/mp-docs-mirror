@@ -9,7 +9,7 @@ tags:
 spec_version: order
 source: "https://dev.wildberries.ru/docs/openapi/orders-fbs"
 deprecated: false
-content_sha: 9e98c661a62a8e69
+content_sha: 99071eb4d01a82f2
 ---
 
 # Получить стикеры грузомест поставки{{ /api/v3/supplies/{supplyId}/trbx/stickers }}
@@ -41,7 +41,7 @@ content_sha: 9e98c661a62a8e69
 | Имя | Где | Тип | Обяз. | Описание |
 |---|---|---|---|---|
 | `supplyId` | path | string | да | ID поставки |
-| `type` | query | string (svg, zplv, zplh, png) | да | Тип стикера |
+| `type` | query | string | да | Формат стикера |
 
 ## Запрос
 
@@ -55,7 +55,7 @@ content_sha: 9e98c661a62a8e69
 
 - `stickers` — array[object]
   - `barcode` — string. Закодированное значение стикера
-  - `file` — string<byte>. Полное представление стикера в заданном формате (кодировка base64)
+  - `file` — string. Полное представление стикера в заданном формате
 
 **400** — Неправильный запрос
 

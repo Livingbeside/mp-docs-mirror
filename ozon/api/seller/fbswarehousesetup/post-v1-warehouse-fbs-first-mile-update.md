@@ -9,7 +9,7 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: 992f9c191e7ca5d2
+content_sha: 765129ea314e9ae7
 ---
 
 # Обновить первую милю
@@ -27,6 +27,10 @@ content_sha: 992f9c191e7ca5d2
 
 **Тело запроса** (`application/json`):
 
+- `courier_return_warehouse_info` — object. Информация о возврате на склад для курьера.
+  - `comment` — string. Комментарий для курьера.
+  - `courier_return_warehouse_id` — integer<int64>. Идентификатор пункта возврата из метода [/v1/warehouse/fbs/create/return-point/list](#operation/WarehouseFBSCreateReturnPointList).
+  - `is_courier_return_warehouse_match` — boolean. `true`, чтобы выбрать склад как возвратный.
 - `cut_in_time` — integer<int64> **обязательный**. Время на приём заказов в минутах. Например, если вы передадите `3000`, приём заказов будет завершён через 50 часов с момента передачи.
 - `drop_off_point_id` — integer<int64>. Идентификатор drop-off пункта. Если `first_mile_type = DROP_OFF`, параметр обязательный.
 - `first_mile_type` — string (PICK_UP, DROP_OFF) **обязательный**. Тип первой мили: - `PICK_UP` — отгрузка заказов курьеру; - `DROP_OFF` — отгрузка заказов в пункт приёма.

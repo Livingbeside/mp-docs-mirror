@@ -1176,6 +1176,11 @@
             "example": "WB-GI-92937123",
             "type": "string"
           },
+          "trackNumber": {
+            "description": "Трек-номер для трансграничной поставки\n",
+            "example": "NRU56565656",
+            "type": "string"
+          },
           "warehouseId": {
             "description": "ID склада продавца, на который поступило сборочное задание",
             "example": 658434,
@@ -1925,14 +1930,11 @@
           "barcode": {
             "description": "Закодированное значение стикера",
             "example": "$WBMP:1:123:1234567",
-            "minLength": 1,
             "type": "string"
           },
           "file": {
-            "description": "Полное представление стикера в заданном формате (кодировка base64)",
-            "example": "U3dhZ2dlciByb2Nrcw==",
-            "format": "byte",
-            "minLength": 1,
+            "description": "Полное представление стикера в заданном формате",
+            "example": "^XA\\n^CI28\\n^CF0\\n^LS0",
             "type": "string"
           }
         },
@@ -7958,17 +7960,12 @@
             "$ref": "#/components/parameters/Supply"
           },
           {
-            "description": "Тип стикера",
+            "description": "Формат стикера",
+            "example": "png",
             "in": "query",
             "name": "type",
             "required": true,
             "schema": {
-              "enum": [
-                "svg",
-                "zplv",
-                "zplh",
-                "png"
-              ],
               "type": "string"
             }
           }
@@ -8000,13 +7997,11 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "nullable": false,
                   "properties": {
                     "stickers": {
                       "items": {
                         "$ref": "#/components/schemas/TrbxStickers"
                       },
-                      "minItems": 1,
                       "type": "array"
                     }
                   },

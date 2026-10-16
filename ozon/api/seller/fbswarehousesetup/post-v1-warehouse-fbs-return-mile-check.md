@@ -9,7 +9,7 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: 6eef997c9b8f6354
+content_sha: 3567d2671773d3a8
 ---
 
 # Проверить необходимость установки возвратной мили на склад
@@ -36,6 +36,8 @@ content_sha: 6eef997c9b8f6354
 
 **200** — Успешно
 
+- `is_courier_return_mile_available` — boolean. `true`, если нужно установить возвратную милю для вывоза курьером.
+- `is_dropoff_return_mile_available` — boolean. `true`, если нужно установить возвратную милю для вывоза из пункта выдачи.
 - `should_set_return_mile` — boolean. Признак, что необходимо установить возвратную милю.
 - `unavailability_reasons` — array[string]. Причины, по которым нельзя установить возвратную милю.
 

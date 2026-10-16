@@ -9,7 +9,7 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: b6c52e927fd61f3d
+content_sha: e806ecd43604930f
 ---
 
 # Создать склад
@@ -25,6 +25,10 @@ content_sha: b6c52e927fd61f3d
 - `address_coordinates` — object **обязательный**. Координаты адреса склада.
   - `latitude` — number<double> **обязательный**. Широта.
   - `longitude` — number<double> **обязательный**. Долгота.
+- `courier_return_warehouse_info` — object. Информация о возврате на склад для курьера.
+  - `comment` — string. Комментарий для курьера.
+  - `courier_return_warehouse_id` — integer<int64>. Идентификатор пункта возврата из метода [/v1/warehouse/fbs/create/return-point/list](#operation/WarehouseFBSCreateReturnPointList).
+  - `is_courier_return_warehouse_match` — boolean. `true`, чтобы созданный склад стал возвратным.
 - `cut_in_time` — integer<int64> **обязательный**. Время на приём заказов в минутах. Например, если вы передадите `3000`, приём заказов будет завершён через 50 часов с момента передачи.
 - `drop_off_point_id` — integer<int64>. Идентификатор drop-off пункта.
 - `first_mile_type` — string (PICK_UP, DROP_OFF) **обязательный**. Тип первой мили: - `PICK_UP` — отгрузка заказов курьеру; - `DROP_OFF` — отгрузка заказов в пункт приёма.

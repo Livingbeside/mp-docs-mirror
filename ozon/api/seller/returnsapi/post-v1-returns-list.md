@@ -9,7 +9,7 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: 04f324e534c58157
+content_sha: dab4ecc84566153d
 ---
 
 # Информация о возвратах FBO и FBS
@@ -118,6 +118,9 @@ content_sha: 04f324e534c58157
       - `display_name` — string. Название статуса: - «Отправлено на компенсацию», - «Вы получили компенсацию», - «Компенсация отменена», - «Провели декомпенсацию».
       - `sys_name` — string. Системное название статуса: - `Sent` — отправлена; - `Received` — получена; - `Canceled` — отменена; - `DecompensationSent` — проведена декомпенсация.
     - `change_moment` — string<date-time>. Дата изменения статуса компенсации.
+  - `courier_delivery` — object. Информация о доставке товара курьером.
+    - `failed_attempts` — integer<int32>. Количество неудачных попыток доставки.
+    - `total_attempts` — integer<int32>. Количество попыток доставки.
 - `has_next` — boolean. `true`, если у продавца есть другие возвраты.
 
 **default** — Ошибка

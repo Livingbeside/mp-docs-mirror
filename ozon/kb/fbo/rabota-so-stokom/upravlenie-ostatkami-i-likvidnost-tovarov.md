@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /fbo/rabota-so-stokom/upravlenie-ostatkami-i-likvidnost-tovarov
 source: "https://seller-edu.ozon.ru/libra/fbo/rabota-so-stokom/upravlenie-ostatkami-i-likvidnost-tovarov"
-updated: "2026-09-28 12:10:31"
+updated: "2026-10-15 08:35:43"
 doc_id: 21142
-fetched_at: "2026-09-29T02:06:17Z"
-content_sha: 5c7622b7f8c58abe
+fetched_at: "2026-10-16T01:58:54Z"
+content_sha: 97a438d159b715c1
 ---
 
 # Управление остатками и ликвидность товаров
@@ -108,7 +108,7 @@ _Главная / Продажа со склада Ozon (FBO) / Работа с�
 
 # Как узнать стоимость вынужденного размещения товаров
 
-Если товар не выкупили или не вывезли по окончании периода размещения, начнём брать плату за вынужденное размещение. [Подробнее](/libra/commissions-tariffs/commissions-tariffs-ozon/rashody-na-dop-uslugi#%D1%80%D0%B0%D0%B7%D0%BC%D0%B5%D1%89%D0%B5%D0%BD%D0%B8%D0%B5)
+Если товар не выкупили или не вывезли по окончании периода размещения, начнём брать плату за вынужденное размещение. [Подробнее](https://seller-edu.ozon.ru/commissions-tariffs/commissions-tariffs-ozon/rashody-na-dop-uslugi#размещение)
 
 Чтобы узнать, сколько начислили за вынужденное размещение конкретного товара, проверьте данные в столбце **Плата за вынужденное размещение**. Показываем данные на указанную дату:
 

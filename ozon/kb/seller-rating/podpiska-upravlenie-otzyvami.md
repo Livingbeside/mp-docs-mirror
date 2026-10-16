@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /seller-rating/podpiska-upravlenie-otzyvami
 source: "https://seller-edu.ozon.ru/libra/seller-rating/podpiska-upravlenie-otzyvami"
-updated: "2026-09-17 10:54:24"
+updated: "2026-10-15 08:29:32"
 doc_id: 67083
-fetched_at: "2026-09-18T02:20:34Z"
-content_sha: f070534ecc09daf7
+fetched_at: "2026-10-16T01:58:53Z"
+content_sha: ff1bc0f44a44d615
 ---
 
 # Подписка «Управление отзывами»
@@ -48,7 +48,7 @@ _Главная / Подписки_
 
 # Сколько стоит подписка «Управление отзывами»
 
-Для продавцов с активным [Premium Pro](/libra/seller-rating/podpiska-premium-pro) даём скидку 50% на подписку «Управление отзывами».
+Для продавцов с активным [Premium Pro](https://seller-edu.ozon.ru/seller-rating/podpiska-premium-pro) даём скидку 50% на подписку «Управление отзывами».
 
 Списываем процент от цены каждого товара, проданного в период действия подписки. [Подробнее о стоимости](https://seller-edu.ozon.ru/libra/commissions-tariffs/legal-information/full-actual-commissions#2-17-подписка управление-отзывами)
 

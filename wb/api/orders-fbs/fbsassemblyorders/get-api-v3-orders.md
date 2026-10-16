@@ -9,7 +9,7 @@ tags:
 spec_version: order
 source: "https://dev.wildberries.ru/docs/openapi/orders-fbs"
 deprecated: false
-content_sha: 0d0a3802532dbd6a
+content_sha: 7f83d361fc7b4495
 ---
 
 # Получить информацию о сборочных заданиях
@@ -77,6 +77,7 @@ content_sha: 0d0a3802532dbd6a
   - `crossBorderType` — integer (0, 1). Тип сборочного задания: - `0` — внутренняя поставка - `1` — трансграничная поставка
   - `comment` — string. Комментарий покупателя
   - `isZeroOrder` — boolean. Признак заказа товара с нулевым остатком: - `false` — заказ сделан на товар с ненулевым остатком - `true` — заказ сделан на товар с нулевым остатком. Такой заказ можно отменить без штрафа за отмену
+  - `trackNumber` — string. Трек-номер для трансграничной поставки
   - `options` — object. Опции заказа
     - `isB2B` — boolean. Признак B2B-продажи: - `false` — не B2B-продажа - `true` — B2B-продажа
 

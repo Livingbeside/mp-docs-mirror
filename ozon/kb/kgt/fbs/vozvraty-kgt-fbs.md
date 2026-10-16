@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /kgt/fbs/vozvraty-kgt-fbs
 source: "https://seller-edu.ozon.ru/libra/kgt/fbs/vozvraty-kgt-fbs"
-updated: "2026-08-13 15:29:45"
+updated: "2026-10-15 08:26:56"
 doc_id: 870
-fetched_at: "2026-08-28T12:11:15Z"
-content_sha: aaf42ca999ad306a
+fetched_at: "2026-10-16T01:58:55Z"
+content_sha: 3c026c4ce9ec0075
 ---
 
 # Возвраты КГТ на FBS
@@ -76,7 +76,7 @@ _Главная / Продажа крупногабаритного товара
 
 # Полезные статьи по теме
 
-[Возвраты FBS и FBO](/obsolete/vozvraty-fbs-i-fbo)
+[Возвраты FBS и FBO](https://seller-edu.ozon.ru/vozvraty-i-vyvozy/vozvraty-fbs-i-fbo)
 
 [Работа с возвратами КГТ по realFBS](/kgt/rfbs/vozvraty-kgt-rfbs)
 

@@ -5,12 +5,20 @@ tag: News
 group: Обновления
 kind: changelog
 source: "https://docs.ozon.ru/api/seller/"
-content_sha: 297b1a1ca6f9973b
+content_sha: 5a583fca5027aa61
 ---
 
 # Обновления
 
 Следите за обновлениями документации на платформе для разработчиков [Ozon for dev](https://dev.ozon.ru/).
+
+## 15 октября 2026
+
+| Метод | Изменение |
+|---------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------|
+| [/v1/returns/list](#operation/returnsList) | Добавили параметр `returns.courier_delivery` в ответ метода. | 
+| [/v1/warehouse/fbs/return-mile/check](#operation/WarehouseFbsReturnMileCheck) | Добавили параметры `is_courier_return_mile_available` и `is_dropoff_return_mile_available` в ответ метода. |
+| [/v1/warehouse/fbs/create](#operation/WarehouseAPI_CreateWarehouseFBS)<br>[/v1/warehouse/fbs/first-mile/update](#operation/UpdateWarehouseFBSFirstMile) | Добавили параметр `courier_return_warehouse_info` в запрос методов. |
 
 ## 13 октября 2026
 

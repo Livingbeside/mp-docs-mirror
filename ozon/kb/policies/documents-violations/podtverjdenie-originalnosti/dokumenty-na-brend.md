@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /policies/documents-violations/podtverjdenie-originalnosti/dokumenty-na-brend
 source: "https://seller-edu.ozon.ru/libra/policies/documents-violations/podtverjdenie-originalnosti/dokumenty-na-brend"
-updated: "2026-10-12 10:27:19"
+updated: "2026-10-15 11:55:11"
 doc_id: 613
-fetched_at: "2026-10-13T02:20:22Z"
-content_sha: 97b111c4de61d68b
+fetched_at: "2026-10-16T01:58:55Z"
+content_sha: 37fb5ceb6f41aef1
 ---
 
 # Документы на бренды
@@ -27,6 +27,8 @@ _Главная / Правила работы и контроль качеств
 # Для каких брендов нужны документы
 
 Документы нужны для брендов, которые зарегистрированы в качестве товарных знаков на территории Российской Федерации в [национальной](https://rospatent.gov.ru/ru/sourses) или [международной](https://www3.wipo.int/madrid/monitor/en/) системе интеллектуальной собственности.
+
+Принимаем документы только на словесные или комбинированные товарные знаки — слово и изображение бренда. Документы на товарные знаки, которые зарегистрированы как изобразительные (графические) не принимаем — не сможем** **сопоставить изобразительный знак со словесным брендом, который вы указали.
 
 Если бренд ещё не продаётся на Ozon — оставьте [запрос на создание бренда](/work-with-goods/trebovaniya-k-kartochkam-tovarov/characteristics/brendy#как-добавить-новыи-бренд-на-ozon).
 
