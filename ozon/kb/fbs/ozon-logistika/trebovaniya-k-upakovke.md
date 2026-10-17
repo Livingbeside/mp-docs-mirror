@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /fbs/ozon-logistika/trebovaniya-k-upakovke
 source: "https://seller-edu.ozon.ru/libra/fbs/ozon-logistika/trebovaniya-k-upakovke"
-updated: "2026-10-12 09:30:58"
+updated: "2026-10-16 11:55:11"
 doc_id: 821
-fetched_at: "2026-10-13T02:20:21Z"
-content_sha: 9cb859fedaad3bcb
+fetched_at: "2026-10-17T01:46:11Z"
+content_sha: 6e64882454db9c9b
 ---
 
 # Упаковка товаров на FBS
@@ -77,7 +77,7 @@ _Главная / Продажа со своего склада (FBS) / Отгр
 
 # Как правильно упаковать отправления
 
-Все ювелирные изделия должны содержать уникальный идентификационный номер (УИН). Без УИН не сможем принять отправления. [Подробнее](/seller-edu/jewerly/fbs/jewelry-sales-fbs-rfbs)
+Все ювелирные изделия должны содержать уникальный идентификационный номер (УИН). Без УИН не сможем принять отправления. [Подробнее](https://seller-edu.ozon.ru/jewerly/fbs/jewelry-sales-fbs-rfbs)
 
 Нужно использовать:
 

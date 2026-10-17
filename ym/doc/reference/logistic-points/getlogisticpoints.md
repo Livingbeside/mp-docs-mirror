@@ -2,8 +2,8 @@
 title: Получение точек ПВЗ Маркета (LaaS)
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/logistic-points/getLogisticPoints.md"
-fetched_at: "2026-10-16T02:06:14Z"
-content_sha: 06568eaa91bd58e2
+fetched_at: "2026-10-17T01:53:28Z"
+content_sha: e12cc6b18ededaed
 ---
 
 ---
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/logistic-points/getLogisticPoints.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21665230
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21678857
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21665230
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21678857
 
 <!-- source: ru/api/logistic-points/getLogisticPoints.md -->
 <div class="openapi">

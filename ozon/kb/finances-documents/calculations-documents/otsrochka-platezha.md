@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /finances-documents/calculations-documents/otsrochka-platezha
 source: "https://seller-edu.ozon.ru/libra/finances-documents/calculations-documents/otsrochka-platezha"
-updated: "2026-09-29 12:41:37"
+updated: "2026-10-16 12:33:44"
 doc_id: 964
-fetched_at: "2026-09-30T02:18:14Z"
-content_sha: c62de2d51aa19803
+fetched_at: "2026-10-17T01:46:11Z"
+content_sha: 6413201772c20ee3
 ---
 
 # Отсрочка выплат с продаж
@@ -73,7 +73,7 @@ _Главная / Финансы, налоги и документооборот
 
 # Как совмещать отсрочку с кредитами и займом «Деньги до продаж»
 
-Обычно [кредиты](https://seller-edu.ozon.ru/fintech/ozon-invest/ozon-invest) и [«Деньги до продаж»](/finances-documents/ozon-invest/dengi-do-prodaj) гасятся автоматически — для этого удерживаем часть денег из вашего заработка. Пока действует отсрочка, отключим эту опцию.
+Обычно [кредиты](https://seller-edu.ozon.ru/fintech/ozon-invest/ozon-invest) и [«Деньги до продаж»](https://seller-edu.ozon.ru/fintech/ozon-invest/dengi-do-prodaj/chto-takoe-dengi-do-prodaj) гасятся автоматически — для этого удерживаем часть денег из вашего заработка. Пока действует отсрочка, отключим эту опцию.
 
 Вам нужно самостоятельно вносить платежи:
 

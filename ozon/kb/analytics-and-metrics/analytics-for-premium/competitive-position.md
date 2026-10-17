@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /analytics-and-metrics/analytics-for-premium/competitive-position
 source: "https://seller-edu.ozon.ru/libra/analytics-and-metrics/analytics-for-premium/competitive-position"
-updated: "2026-10-15 07:39:15"
+updated: "2026-10-16 11:06:23"
 doc_id: 944
-fetched_at: "2026-10-16T01:58:55Z"
-content_sha: a38846c5730da725
+fetched_at: "2026-10-17T01:46:11Z"
+content_sha: 22cc03008ea1070b
 ---
 
 # Конкуренты
@@ -16,9 +16,9 @@ _Главная / Аналитика / Аналитика конкурентов
 
 Как узнать своё место по продажам относительно других продавцов в конкретной категории
 
-Доступ к расширенной аналитике в подписках [Premium](/seller-rating/about-rating/premium-program?search=premium) и [Premium Lite](/seller-rating/about-rating/podpiska-premium-lite?search=подписка) может выдать только управляющий двум сотрудникам с ролью «Аналитик». При этом у сотрудника обязательно должна быть любая другая роль, чтобы пользоваться личным кабинетом. [Как управлять ролями](/personal-account/user-management)
+Доступ к расширенной аналитике в подписках [Premium](https://seller-edu.ozon.ru/seller-rating/premium-program) и [Premium Lite](https://seller-edu.ozon.ru/seller-rating/podpiska-premium-lite) может выдать только управляющий двум сотрудникам с ролью «Аналитик». При этом у сотрудника обязательно должна быть любая другая роль, чтобы пользоваться личным кабинетом. [Как управлять ролями](/personal-account/user-management)
 
-Чтобы получить безлимитный доступ для всех сотрудников, оформите [подписку Premium Plus](/seller-rating/about-rating/subscription-premium-plus).
+Чтобы получить безлимитный доступ для всех сотрудников, оформите [подписку Premium Plus](https://seller-edu.ozon.ru/seller-rating/subscription-premium-plus).
 
 # В чём поможет инструмент «Конкуренты»
 
@@ -34,7 +34,7 @@ _Главная / Аналитика / Аналитика конкурентов
 
 Посмотреть конкурентную позицию можно:
 
-В разделе **[Аналитика → Конкуренты](https://seller.ozon.ru/app/analytics/what-to-sell/competitive-position)**. С подпиской Premium Plus и Premium Pro сможете скачать Excel-отчёт с данными по всем товарам ваших ближайших конкурентов и узнать, какие товары приносят им большую часть заказов и оборота. [Как скачать отчёт](https://seller-edu.ozon.ru/ru/analytics-and-metrics/analytics-for-premium/competitive-position#%D0%BA%D0%B0%D0%BA-%D1%81%D0%BA%D0%B0%D1%87%D0%B0%D1%82%D1%8C-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D0%B5-%D0%BF%D0%BE-%D1%82%D0%BE%D0%B2%D0%B0%D1%80%D0%B0%D0%BC-%D0%BA%D0%BE%D0%BD%D0%BA%D1%83%D1%80%D0%B5%D0%BD%D1%82%D0%BE%D0%B2)
+В разделе **[Аналитика → Конкуренты](https://seller.ozon.ru/app/analytics/what-to-sell/competitive-position)**. С подпиской Premium Plus и Premium Pro сможете скачать Excel-отчёт с данными по всем товарам ваших ближайших конкурентов и узнать, какие товары приносят им большую часть заказов и оборота. [Как скачать отчёт](#как-скачать-данные-по-товарам-конкурентов)
 
 На вкладке **Главная**, в виджете **Конкурентная позиция. **Показываем данные за последние 28 дней. По умолчанию выбираем категорию 3 уровня, в которой у вас больше всего продаж — но можно выбрать любую категорию 2 и 3 уровня.
 
@@ -75,11 +75,11 @@ _Главная / Аналитика / Аналитика конкурентов
 
 **укажите период расчёта** — за неделю, 28 дней, квартал или год (или выберите конкретные даты с помощью календаря за период, но не больше 2 лет);
 
-**выберите одну категорию первого, второго или третьего уровня** — группируем их от общего к частному. По умолчанию показываем данные для той категории, в которой у вас больше всего продаж. А если в этой категории вы входите в топ-3 продавцов — автоматически заменим её на категорию выше, которая группирует товары с общими признаками. [Подробнее о категориях товара](/work-with-goods/trebovaniya-k-kartochkam-tovarov/product-information/kategoriya-tovara)
+**выберите одну категорию первого, второго или третьего уровня** — группируем их от общего к частному. По умолчанию показываем данные для той категории, в которой у вас больше всего продаж. А если в этой категории вы входите в топ-3 продавцов — автоматически заменим её на категорию выше, которая группирует товары с общими признаками. [Подробнее о категориях товара](https://seller-edu.ozon.ru/work-with-goods/trebovaniya-k-kartochkam-tovarov/product-information/kategoriya-tovara)
 
 # Как скачать данные по товарам конкурентов
 
-Только с подпиской [Premium Plus](/seller-rating/about-rating/subscription-premium-plus) и [Premium Pro](/seller-rating/about-rating/podpiska-premium-pro).
+Только с подпиской [Premium Plus](https://seller-edu.ozon.ru/seller-rating/subscription-premium-plus) и [Premium Pro](https://seller-edu.ozon.ru/seller-rating/podpiska-premium-pro).
 
 1. В разделе **[Аналитика → Конкуренты](https://seller.ozon.ru/app/analytics/what-to-sell/competitive-position)**** **нажмите **Скачать **и выберите** Данные моих конкурентов**.
 2. На ваш компьютер загрузится Excel-отчёт со списком товаров конкурентов и метриками по каждому товару — **Заказано товаров **и** Заказано на сумму**.

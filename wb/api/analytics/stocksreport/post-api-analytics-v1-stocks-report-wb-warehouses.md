@@ -9,7 +9,7 @@ tags:
 spec_version: analytics
 source: "https://dev.wildberries.ru/docs/openapi/analytics"
 deprecated: false
-content_sha: d07a65142cc95270
+content_sha: 679819a628b9190d
 ---
 
 # Остатки на складах WB
@@ -52,9 +52,9 @@ content_sha: d07a65142cc95270
   - `items` — array[object] **обязательный**. Остатки товаров на складах WB по размерам
     - `nmId` — integer<int64> **обязательный**. Артикул WB
     - `chrtId` — integer<uint64> **обязательный**. ID размера
-    - `warehouseId` — integer<int64> **обязательный**. ID склада. [На данный момент](https://dev.wildberries.ru/release-notes?id=570) может быть только `-999999`
-    - `warehouseName` — string **обязательный**. Название склада. [На данный момент](https://dev.wildberries.ru/release-notes?id=570) может быть только `Склад WB`
-    - `regionName` — string **обязательный**. Регион отгрузки. [На данный момент](https://dev.wildberries.ru/release-notes?id=570) может быть только `Склад WB`
+    - `warehouseId` — integer<int64> **обязательный**. ID склада. ]На данный момент](/release-notes?id=570) может быть только `-999999`
+    - `warehouseName` — string **обязательный**. Название склада. ]На данный момент](/release-notes?id=570) может быть только `Склад WB`
+    - `regionName` — string **обязательный**. Регион отгрузки. ]На данный момент](/release-notes?id=570) может быть только `Склад WB`
     - `quantity` — integer<uint64> **обязательный**. Количество товара на складе, доступное клиентам для добавления в корзину
     - `inWayToClient` — integer<uint64> **обязательный**. В пути к клиенту
     - `inWayFromClient` — integer<uint64> **обязательный**. В пути от клиента

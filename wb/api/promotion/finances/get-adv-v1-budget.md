@@ -9,7 +9,7 @@ tags:
 spec_version: promotion
 source: "https://dev.wildberries.ru/docs/openapi/promotion"
 deprecated: true
-content_sha: e613c9ad7850e006
+content_sha: cac2ab44cdd5f2ac
 ---
 
 # Бюджет кампании
@@ -20,7 +20,7 @@ content_sha: e613c9ad7850e006
 
 Описание метода
 
-Метод будет отключен [16 ноября](https://dev.wildberries.ru/release-notes?id=582).
+Метод будет отключен [16 ноября](/release-notes?id=582).
 
 Лимит запросов на один профиль продавца:
 

@@ -9,7 +9,7 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: a45fc94ecbf77e7a
+content_sha: 5276d0f1828934ac
 ---
 
 # Данные аналитики
@@ -26,7 +26,7 @@ content_sha: a45fc94ecbf77e7a
 Для продавцов с подпиской [Premium Plus](https://seller-edu.ozon.ru/seller-rating/about-rating/subscription-premium-plus) или [Premium Pro](https://seller-edu.ozon.ru/seller-rating/about-rating/podpiska-premium-pro) ограничений нет.
 
 Метод можно использовать не больше 1 раза в минуту.
-Соответствует разделу **Аналитика → Графики** в личном кабинете.
+Соответствует разделу **Аналитика → Продажи моих товаров** в личном кабинете.
 
 ## Параметры
 

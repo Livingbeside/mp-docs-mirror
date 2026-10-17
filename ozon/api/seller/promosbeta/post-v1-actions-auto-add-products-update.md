@@ -9,7 +9,7 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: true
-content_sha: 4ebb2dc1ca129800
+content_sha: 68fb2fa719a4be36
 ---
 
 # Добавить или обновить товары в автодобавлении в акцию
@@ -36,7 +36,7 @@ content_sha: 4ebb2dc1ca129800
 - `action_id` — integer<uint64>. Идентификатор акции.
 - `auto_add_date` — string<date-time>. Дата и время автодобавления товаров в акцию из параметра `result.auto_add_dates` в ответе метода [/v1/actions](#operation/Promos).
 - `to_update` — array[object]. Список товаров, которые нужно добавить или обновить в автодобавлении.
-  - `action_price` — number<double>. Цена товара по акции.
+  - `action_price` — number<double>. Цена товара по акции. Если передаёте нецелое число, цена округлится в большую сторону.
   - `currency` — string. Валюта цены.
   - `product_id` — integer<uint64>. Идентификатор товара, который нужно добавить или обновить.
   - `quantity` — integer<uint64>. Количество товаров в акции.

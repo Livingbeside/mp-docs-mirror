@@ -9,7 +9,7 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: c44673330b2dd0ca
+content_sha: eb7a60377c524364
 ---
 
 # Информация о возвратной отгрузке
@@ -38,9 +38,13 @@ content_sha: c44673330b2dd0ca
 
 - `articles` — array[object]. Артикулы товаров.
   - `approved` — boolean. `true`, если отгрузка подтверждена.
+  - `barcodes` — array[object]. Штрихкоды товара.
+    - `type` — string. Тип штрихкода: - `BT_DATA_MATRIX` — контрольный идентификационный знак (КИЗ); - `BT_SCAN_IT` — штрихкод ScanIt с этикетки; - `BT_LOZON_ID`, `BT_BARCODE` — штрихкод с этикетки.
+    - `value` — string. Значение штрихкода.
   - `delivery_schema` — string. Cхема доставки: - `GIVEOUT_DELIVERY_SCHEMA_UNSPECIFIED` — не определёна, напишите в поддержку. - `GIVEOUT_DELIVERY_SCHEMA_FBO` — FBO. - `GIVEOUT_DELIVERY_SCHEMA_FBS` — FBS.
   - `name` — string. Название товара.
   - `seller_id` — integer<int64>. Идентификатор продавца.
+  - `type` — string (UNSPECIFIED, EXEMPLAR, POSTING, TRANSIT_BOX). Тип возврата: - `UNSPECIFIED` — не указан; - `EXEMPLAR` — экземпляр товара; - `POSTING` — отправление; - `TRANSIT_BOX` — транзитная коробка. По умолчанию: `UNSPECIFIED`.
 - `giveout_id` — integer<int64>. Идентификатор отгрузки.
 - `giveout_status` — string. Статусы возвратной отгрузки: - `GIVEOUT_STATUS_UNSPECIFIED` — не определён, напишите в поддержку. - `GIVEOUT_STATUS_CREATED` — создана. - `GIVEOUT_STATUS_APPROVED` — одобрена. - `GIVEOUT_STATUS_COMPLETED` — завершена. - `GIVEOUT_STATUS_CANCELLED` — отменена.
 - `warehouse_address` — string. Адрес склада.

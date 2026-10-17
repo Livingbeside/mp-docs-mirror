@@ -9,14 +9,14 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: d9bbbae86b2ad534
+content_sha: 4aaa156c6e639186
 ---
 
 # Удалить товары из акции «Промокоды»
 
 `POST /v2/actions/products/deactivate`
 
-Чтобы удалить товары из акций «Эластичный бустинг» или «Максимальный бустинг», используйте метод [/v1/actions/products/update](#operation/ActionsProductsUpdate) и измените цену товара `action_price` на значение меньше или равное лимиту акции.
+Чтобы удалить товары из акций «Эластичный бустинг» или «Максимальный бустинг», используйте метод [/v1/actions/products/update](#operation/ActionsProductsUpdate) и измените цену товара `action_price` на значение больше или равное лимиту акции.
 
 До 13 октября 2026 года метод работает аналогично [/v1/actions/products/deactivate](#operation/PromosProductsDeactivate).
 

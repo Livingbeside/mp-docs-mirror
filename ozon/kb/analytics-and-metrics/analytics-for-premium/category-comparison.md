@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /analytics-and-metrics/analytics-for-premium/category-comparison
 source: "https://seller-edu.ozon.ru/libra/analytics-and-metrics/analytics-for-premium/category-comparison"
-updated: "2026-09-09 13:54:58"
+updated: "2026-10-16 10:59:56"
 doc_id: 13439
-fetched_at: "2026-10-13T02:20:22Z"
-content_sha: 5c1f0420c44b617d
+fetched_at: "2026-10-17T01:46:11Z"
+content_sha: c68baa786bb114db
 ---
 
 # Категории
@@ -57,7 +57,7 @@ _Главная / Аналитика / Аналитика конкурентов
 # Как работать с отчётом «Категории»
 
 1. Нажмите **Категория** и выберите категорию 1, 2 или 3 уровня, которую хотите проанализировать.
-2. Если нужно, выберите конкретный бренд, продавца, страну или кластер доставки — эти фильтры доступны с подпиской [Premium Plus](/seller-rating/about-rating/subscription-premium-plus) или [Premium Pro](/seller-rating/about-rating/podpiska-premium-pro). Покажем данные только по обороту этого бренда, продавца или в этой стране или кластере доставки, а не по всей категории.
+2. Если нужно, выберите конкретный бренд, продавца, страну или кластер доставки — эти фильтры доступны с подпиской [Premium Plus](https://seller-edu.ozon.ru/seller-rating/subscription-premium-plus) или [Premium Pro](https://seller-edu.ozon.ru/seller-rating/podpiska-premium-pro). Покажем данные только по обороту этого бренда, продавца или в этой стране или кластере доставки, а не по всей категории.
   Если хотите посмотреть данные по всей категории, оставьте эти фильтры пустыми.
 3. Чтобы посмотреть данные только по определённым ценовым диапазонам, настройте фильтр **Цена**.
 4. Для категорий «Обувь», «Одежда», «Галантерея и аксессуары» и «Ювелирные изделия» можно выбрать фильтр **Пол**.
@@ -66,23 +66,23 @@ _Главная / Аналитика / Аналитика конкурентов
 6. Выберите разрез данных:
   **Категории** — покажем данные по выбранной категории. Если выбрали категорию 2 уровня — то покажем данные по более мелким категориям внутри.
   
-  **Бренды** — по подписке [Premium Plus](https://seller-edu.ozon.ru/ru/seller-rating/about-rating/subscription-premium-plus) покажем данные по 30 брендам, которые лучше всего продаются в выбранной категории. По подписке [Premium Pro](/seller-rating/about-rating/podpiska-premium-pro) — по всем брендам в категории.
+  **Бренды** — по подписке [Premium Plus ](https://seller-edu.ozon.ru/seller-rating/subscription-premium-plus)покажем данные по 30 брендам, которые лучше всего продаются в выбранной категории. По подписке [Premium Pro](https://seller-edu.ozon.ru/seller-rating/podpiska-premium-pro) — по всем брендам в категории.
   
-  **Продавцы** — по подписке [Premium Plus](https://seller-edu.ozon.ru/ru/seller-rating/about-rating/subscription-premium-plus) показываем данные по 30 продавцам-лидерам в выбранной категории. По подписке [Premium Pro](/seller-rating/about-rating/podpiska-premium-pro) — по всем продавцам в категории.
+  **Продавцы** — по подписке [Premium Plus ](https://seller-edu.ozon.ru/seller-rating/subscription-premium-plus)показываем данные по 30 продавцам-лидерам в выбранной категории. По подписке [Premium Pro](https://seller-edu.ozon.ru/seller-rating/podpiska-premium-pro) — по всем продавцам в категории.
   
   **Ценовые сегменты** — сравните показатели разных ценовых сегментов категории. Это поможет понять, товары с какой стоимостью заказывают чаще и в каком сегменте ниже конкуренция.
   
-  **География продаж** — сравните показатели по [кластерам](/fbo/warehouses/table-klastery?search=%D0%BA%D0%BB%D0%B0%D1%81%D1%82%D0%B5%D1%80) продаж. Посмотрите, где чаще всего заказывают товары выбранной категории — это поможет определиться, куда поставлять товары, если вы ещё не продавали такую категорию.
+  **География продаж** — сравните показатели по [кластерам](https://seller-edu.ozon.ru/fbo/warehouses/table-klastery?search=кластер) продаж. Посмотрите, где чаще всего заказывают товары выбранной категории — это поможет определиться, куда поставлять товары, если вы ещё не продавали такую категорию.
   
   **Схемы продаж** — сравните показатели для [FBO](/fbo) и [FBS](/fbs) внутри категории, чтобы определить более выгодную для себя схему.
-7. Для продавцов с подписками [Premium Lite](/seller-rating/about-rating/podpiska-premium-lite?search=premium+lite), [Premium](/seller-rating/about-rating/premium-program), [Premium Plus](/seller-rating/about-rating/subscription-premium-plus) и [Premium Pro](/seller-rating/about-rating/podpiska-premium-pro) по умолчанию включим настройку **Мой магазин**. С ней вы сможете сравнивать показатели своего магазина в разрезе данных по:
+7. Для продавцов с подписками [Premium Lite](https://seller-edu.ozon.ru/seller-rating/podpiska-premium-lite), [Premium](https://seller-edu.ozon.ru/seller-rating/premium-program), [Premium Plus ](https://seller-edu.ozon.ru/seller-rating/subscription-premium-plus)и [Premium Pro](https://seller-edu.ozon.ru/seller-rating/podpiska-premium-pro) по умолчанию включим настройку **Мой магазин**. С ней вы сможете сравнивать показатели своего магазина в разрезе данных по:
   категориям;
   
-  брендам — доступно только с подпиской [Premium Plus](/ru/seller-rating/about-rating/subscription-premium-plus) и [Premium Pro](/seller-rating/about-rating/podpiska-premium-pro);
+  брендам — доступно только с подпиской [Premium Plus](https://seller-edu.ozon.ru/seller-rating/subscription-premium-plus) и [Premium Pro](https://seller-edu.ozon.ru/seller-rating/podpiska-premium-pro);
   
-  продавцам — доступно только с подпиской [Premium Plus](/ru/seller-rating/about-rating/subscription-premium-plus) и [Premium Pro](/seller-rating/about-rating/podpiska-premium-pro);
+  продавцам — доступно только с подпиской [Premium Plus](https://seller-edu.ozon.ru/seller-rating/subscription-premium-plus) и [Premium Pro](https://seller-edu.ozon.ru/seller-rating/podpiska-premium-pro);
   
-  странам продавца — доступно только с подпиской [Premium Plus](https://seller-edu.ozon.ru/ru/seller-rating/about-rating/subscription-premium-plus) и [Premium Pro](https://seller-edu.ozon.ru/seller-rating/about-rating/podpiska-premium-pro);
+  странам продавца — доступно только с подпиской [Premium Plus](https://seller-edu.ozon.ru/seller-rating/subscription-premium-plus) и [Premium Pro](https://seller-edu.ozon.ru/seller-rating/podpiska-premium-pro);
   
   ценовым сегментам;
   
@@ -90,7 +90,7 @@ _Главная / Аналитика / Аналитика конкурентов
   
   географиям продаж.
 
-В подписке [Premium Lite](/seller-rating/about-rating/podpiska-premium-lite?search=premium+lite) настройка **Мой магазин** доступна только пользователям с ролью «Аналитик».
+В подписке [Premium Lite](https://seller-edu.ozon.ru/seller-rating/podpiska-premium-lite) настройка **Мой магазин** доступна только пользователям с ролью «Аналитик».
 
 1. Чтобы загрузить отчёт в формате XLSX, нажмите **Скачать**.
 
@@ -140,7 +140,7 @@ _Главная / Аналитика / Аналитика конкурентов
   
   долю топ-5 продавцов, чтобы узнать, насколько большой объём рынка забрали себе лидеры (или наоборот, конкуренция более равномерная, и покупатели выбирают разных продавцов).
 
-С подпиской [Premium](/seller-rating/about-rating/premium-program) можно сравнить показатели своего магазина с данными по категории.
+С подпиской [Premium](https://seller-edu.ozon.ru/seller-rating/premium-program) можно сравнить показатели своего магазина с данными по категории.
 
 ## Как выбрать перспективный бренд
 
@@ -154,7 +154,7 @@ _Главная / Аналитика / Аналитика конкурентов
   долю оборота — она покажет, какую долю общего спроса по категории покрывает бренд.
   Можно проверить показатели конкретного бренда: для этого введите его название в фильтре **Бренд** и выберите разрез **Бренды** — покажем метрики в таблице.
 
-С подпиской [Premium Plus](/seller-rating/about-rating/subscription-premium-plus) и [Premium Pro](/seller-rating/about-rating/podpiska-premium-pro) можно сравнить свою долю продаж конкретного бренда со всеми продажами в категории.
+С подпиской [Premium Plus](https://seller-edu.ozon.ru/seller-rating/subscription-premium-plus) и [Premium Pro](https://seller-edu.ozon.ru/seller-rating/podpiska-premium-pro) можно сравнить свою долю продаж конкретного бренда со всеми продажами в категории.
 
 ## Как оценить конкуренцию среди продавцов в категории
 
@@ -167,7 +167,7 @@ _Главная / Аналитика / Аналитика конкурентов
   
   какая у него доля оборота в категории.
 
-С подпиской [Premium Plus](/seller-rating/about-rating/subscription-premium-plus) и [Premium Pro](/seller-rating/about-rating/podpiska-premium-pro) можно сравнить показатели своего магазина с продажами конкурентов в конкретной категории.
+С подпиской [Premium Plus](https://seller-edu.ozon.ru/seller-rating/subscription-premium-plus) и [Premium Pro](https://seller-edu.ozon.ru/seller-rating/podpiska-premium-pro) можно сравнить показатели своего магазина с продажами конкурентов в конкретной категории.
 
 ## Как сравнить разные схемы продаж
 
@@ -175,7 +175,7 @@ _Главная / Аналитика / Аналитика конкурентов
 2. Выберите период и разрез **Схемы продаж**.
 3. В таблице и на графике посмотрите, как по разным схемам распределился оборот и количество продавцов.
 
-С любой из подписок [Premium](https://seller-edu.ozon.ru/libra/seller-rating) можно сравнить оборот своего магазина по схемам продаж.
+С любой из подписок [Premium](https://seller-edu.ozon.ru/seller-rating) можно сравнить оборот своего магазина по схемам продаж.
 
 ## Как определить, в какие регионы поставлять товары
 
@@ -183,7 +183,7 @@ _Главная / Аналитика / Аналитика конкурентов
 2. Выберите период и разрез **География продаж**.
 3. Покажем в таблице данные по всем кластерам, в которых заказывают товары категории. Рекомендуем выбирать для поставок именно те регионы, где чаще покупают товар — так логистика будет дешевле, а доставка быстрее.
 
-С подпиской [Premium Plus](https://seller-edu.ozon.ru/seller-rating/about-rating/subscription-premium-plus) и [Premium Pro](https://seller-edu.ozon.ru/seller-rating/about-rating/podpiska-premium-pro) можно выбрать в фильтре нужную страну — и посмотреть данные по продавцам только из этой страны.
+С подпиской [Premium Plus](https://seller-edu.ozon.ru/seller-rating/subscription-premium-plus) и [Premium Pro](https://seller-edu.ozon.ru/seller-rating/podpiska-premium-pro) можно выбрать в фильтре нужную страну — и посмотреть данные по продавцам только из этой страны.
 
 ## Как определить долю продаж в категории для представителей бренда
 
@@ -200,7 +200,7 @@ _Главная / Аналитика / Аналитика конкурентов
 4. Покажем в таблице данные по разным ценовым сегментам, в которых есть товары категории.
 5. Если нужно, настройте вид графика. По умолчанию открыт столбчатый график (гистограмму), который покажет общие показатели по выбранным ценовым сегментам за период. Чем выше столбец сегмента — тем выше показатель. Можно переключиться на линейный график, где будут данные выбранных ценовых сегментов в динамике по дням.
 
-С подпиской [Premium Plus](/seller-rating/about-rating/subscription-premium-plus) и [Premium Pro](/seller-rating/about-rating/podpiska-premium-pro) можно сравнить показатели вашего магазина в разрезе ценовых сегментов с данными по категории.
+С подпиской [Premium Plus](https://seller-edu.ozon.ru/seller-rating/subscription-premium-plus) и [Premium Pro](https://seller-edu.ozon.ru/seller-rating/podpiska-premium-pro) можно сравнить показатели вашего магазина в разрезе ценовых сегментов с данными по категории.
 
 # Какие курсы на образовательной платформе стоит изучить
 

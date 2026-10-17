@@ -5,12 +5,18 @@ tag: News
 group: Обновления
 kind: changelog
 source: "https://docs.ozon.ru/api/seller/"
-content_sha: 5a583fca5027aa61
+content_sha: d67ebe7cd622b71b
 ---
 
 # Обновления
 
 Следите за обновлениями документации на платформе для разработчиков [Ozon for dev](https://dev.ozon.ru/).
+
+## 16 октября 2026
+
+| Метод | Изменение |
+|-------------------------------------------------------------|--------------------------------------------------------------------------|
+| [/v1/return/giveout/info](#operation/ReturnAPI_GiveoutInfo) | Добавили параметры `articles.barcodes` и `articles.type` в ответ метода. |
 
 ## 15 октября 2026
 

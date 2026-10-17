@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /vozvraty-i-vyvozy/vyvozy-so-stoka-i-postavki/zabrat-so-stoka
 source: "https://seller-edu.ozon.ru/libra/vozvraty-i-vyvozy/vyvozy-so-stoka-i-postavki/zabrat-so-stoka"
-updated: "2026-10-15 09:24:39"
+updated: "2026-10-16 11:53:29"
 doc_id: 13545
-fetched_at: "2026-10-16T01:58:55Z"
-content_sha: c8729a3bf90dd684
+fetched_at: "2026-10-17T01:46:11Z"
+content_sha: ab622144ef8dd6ad
 ---
 
 # Вывоз товаров со стока со склада Ozon
@@ -57,7 +57,7 @@ _Главная / Клиентские возвраты и вывозы това
 
 **Как настроить автоматические заявки на вывоз и утилизацию товаров со стока?**
 
-[Автовывоз и автоутилизация товаров](https://seller-edu.ozon.ru//fbo/vozvraty-utilizaciya-izlishki/vyvoz-tovarov-so-sklada-ozon/avtovyvoz-tovarov-so-sklada-ozon) со склада Ozon позволяют не переплачивать за размещение неходовых товаров, сэкономить на услугах и не создавать отдельную заявку на каждый склад.
+[Автовывоз и автоутилизация товаров](https://seller-edu.ozon.ru/vozvraty-i-vyvozy/vyvozy-so-stoka-i-postavki/avtovyvoz-tovarov-so-sklada-ozon) со склада Ozon позволяют не переплачивать за размещение неходовых товаров, сэкономить на услугах и не создавать отдельную заявку на каждый склад.
 
 Как подключить:
 

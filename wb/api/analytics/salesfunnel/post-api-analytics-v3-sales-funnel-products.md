@@ -9,7 +9,7 @@ tags:
 spec_version: analytics
 source: "https://dev.wildberries.ru/docs/openapi/analytics"
 deprecated: false
-content_sha: c5c2a58390cd7cea
+content_sha: d867f24f76a24d58
 ---
 
 # Статистика карточек товаров за период
@@ -118,7 +118,7 @@ content_sha: c5c2a58390cd7cea
           - `days` — integer **обязательный**. Дни
           - `hours` — integer **обязательный**. Часы
           - `mins` — integer **обязательный**. Минуты
-        - `localizationPercent` — integer **обязательный**. Локальные заказы в рамках одного региона. [На данный момент](https://dev.wildberries.ru/release-notes?id=570) может быть только `100`
+        - `localizationPercent` — integer **обязательный**. Локальные заказы в рамках одного региона. ]На данный момент](/release-notes?id=570) может быть только `100`
         - `wbClub` — object **обязательный**
           - `orderCount` — integer<uint32> **обязательный**. Заказали товаров с WB Клубом, шт.
           - `orderSum` — integer<uint32> **обязательный**. Заказали с WB Клубом на сумму
@@ -153,7 +153,7 @@ content_sha: c5c2a58390cd7cea
           - `days` — integer **обязательный**. Дни
           - `hours` — integer **обязательный**. Часы
           - `mins` — integer **обязательный**. Минуты
-        - `localizationPercent` — integer **обязательный**. Локальные заказы в рамках одного региона. [На данный момент](https://dev.wildberries.ru/release-notes?id=570) может быть только `100`
+        - `localizationPercent` — integer **обязательный**. Локальные заказы в рамках одного региона. ]На данный момент](/release-notes?id=570) может быть только `100`
         - `wbClub` — object **обязательный**
           - `orderCount` — integer<uint32> **обязательный**. Заказали товаров с WB Клубом, шт.
           - `orderSum` — integer<uint32> **обязательный**. Заказали с WB Клубом на сумму
@@ -185,7 +185,7 @@ content_sha: c5c2a58390cd7cea
           - `days` — integer **обязательный**. Дни
           - `hours` — integer **обязательный**. Часы
           - `mins` — integer **обязательный**. Минуты
-        - `localizationPercentDynamic` — integer<int> **обязательный**. Динамика локальных заказов в рамках одного региона. [На данный момент](https://dev.wildberries.ru/release-notes?id=570) может быть только `0`
+        - `localizationPercentDynamic` — integer<int> **обязательный**. Динамика локальных заказов в рамках одного региона. ]На данный момент](/release-notes?id=570) может быть только `0`
         - `wbClubDynamic` — object **обязательный**
           - `orderCount` — integer<int> **обязательный**. Динамика количества заказов с WB Клубом
           - `orderSum` — integer<int> **обязательный**. Динамика суммы заказов с WB Клубом

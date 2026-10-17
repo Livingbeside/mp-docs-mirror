@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /rfbs/orders-cancellations/upravlenie-zakazami-express
 source: "https://seller-edu.ozon.ru/libra/rfbs/orders-cancellations/upravlenie-zakazami-express"
-updated: "2026-07-06 14:08:38"
+updated: "2026-10-16 12:53:05"
 doc_id: 846
-fetched_at: "2026-08-28T12:11:15Z"
-content_sha: 65f6a4e50b6825e7
+fetched_at: "2026-10-17T01:46:11Z"
+content_sha: 29384450a9540a49
 ---
 
 # Подготовка, отгрузка и доставка заказов на realFBS Express и Comfort
@@ -22,7 +22,7 @@ _Главная / Продажа со своего склада (realFBS) / За
 
 в личном кабинете в разделе **[FBS → Заказы с моих складов](https://seller.ozon.ru/app/postings/fbs?tplProviderId=24&tab=all)**;
 
-[через приложение Ozon Seller](/obsolete/rabota-s-zakazamy) на вкладке **Заказы → С моих складов**.
+через приложение Ozon Seller на вкладке **Заказы → С моих складов**.
 
 Узнать о новых заказах можно несколькими способами:
 

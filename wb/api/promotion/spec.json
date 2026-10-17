@@ -3246,7 +3246,7 @@
             "type": "boolean"
           },
           "dailyLimit": {
-            "description": "Сумма дневного лимита. Параметр обязателен при `\"enabled\": true`.\nМинимально допустимая сумма указана в поле `minDailyLimit` метода [GET /api/advert/v1/config]()\n",
+            "description": "Сумма дневного лимита. Параметр обязателен при `\"enabled\": true`.\nМинимально допустимая сумма указана в поле `minDailyLimit` метода [GET /api/advert/v1/config](./promotion#tag/campaignManagement/operation/getV1Config)\n",
             "example": 1000,
             "format": "int64",
             "minimum": 1000,
@@ -6071,7 +6071,7 @@
     "/adv/v1/budget": {
       "get": {
         "deprecated": true,
-        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод будет отключен [16 ноября](https://dev.wildberries.ru/release-notes?id=582).\n\n\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один профиль продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 сек | 4 запроса | 250 мс | 4 запроса |\n| Сервисный | 1 сек | 4 запроса | 250 мс | 4 запроса |\n| Базовый с секретом | 1 сек | 4 запроса | 250 мс | 4 запроса |\n| Базовый | 1 ч | 4 запроса | 15 мин | 1 запрос |\n</div>\n",
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод будет отключен [16 ноября](/release-notes?id=582).\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один профиль продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 сек | 4 запроса | 250 мс | 4 запроса |\n| Сервисный | 1 сек | 4 запроса | 250 мс | 4 запроса |\n| Базовый с секретом | 1 сек | 4 запроса | 250 мс | 4 запроса |\n| Базовый | 1 ч | 4 запроса | 15 мин | 1 запрос |\n</div>\n",
         "operationId": "getV1Budget",
         "parameters": [
           {

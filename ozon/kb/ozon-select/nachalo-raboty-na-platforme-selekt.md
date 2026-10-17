@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /ozon-select/nachalo-raboty-na-platforme-selekt
 source: "https://seller-edu.ozon.ru/libra/ozon-select/nachalo-raboty-na-platforme-selekt"
-updated: "2026-10-15 08:51:42"
+updated: "2026-10-16 12:37:27"
 doc_id: 35558
-fetched_at: "2026-10-16T01:58:54Z"
-content_sha: 5482c60cd8502dc8
+fetched_at: "2026-10-17T01:46:10Z"
+content_sha: 9db98d8054acfd6d
 ---
 
 # Начало работы на платформе Селект
@@ -94,7 +94,7 @@ Ozon Селект — это приложение для покупателей,
 
 Рассылки в разделе CRM доступны только на Ozon. Коммуникации с покупателями на платформе Селект появятся позже.
 
-Для товаров, размещённых только на Селект, цену устанавливает продавец. Мы добавим к ней небольшую скидку по [Ozon Карте](https://seller-edu.ozon.ru/obsolete/ozon-card), чтобы привлечь больше покупателей.
+Для товаров, размещённых только на Селект, цену устанавливает продавец. Мы добавим к ней небольшую скидку по Ozon Карте, чтобы привлечь больше покупателей.
 
 Для товаров, которые продаются только на платформе Селект, не применяем[ наценку за нелокальную продажу](https://seller-edu.ozon.ru/libra/analytics-and-metrics/graphs/lokalnost-prodaj/lokalnost-prodaj#%D0%BD%D0%B0%D1%86%D0%B5%D0%BD%D0%BA%D0%B0-%D0%B7%D0%B0-%D0%BD%D0%B5%D0%BB%D0%BE%D0%BA%D0%B0%D0%BB%D1%8C%D0%BD%D1%83%D1%8E-%D0%BF%D1%80%D0%BE%D0%B4%D0%B0%D0%B6%D1%83).
 

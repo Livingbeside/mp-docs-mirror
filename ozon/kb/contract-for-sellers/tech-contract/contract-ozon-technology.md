@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /contract-for-sellers/tech-contract/contract-ozon-technology
 source: "https://seller-edu.ozon.ru/libra/contract-for-sellers/tech-contract/contract-ozon-technology"
-updated: "2026-10-05 08:22:21"
+updated: "2026-10-16 13:16:28"
 doc_id: 80024
-fetched_at: "2026-10-06T01:57:01Z"
-content_sha: 5fe648c70ad713ff
+fetched_at: "2026-10-17T01:46:11Z"
+content_sha: 6402b1a95e9f22a6
 ---
 
 # Договор возмездного оказания услуг Озон Технологий
@@ -511,7 +511,7 @@ _Главная / Договоры для Продавцов на платфор
 
 **Заявка **—** **заказ Заказчика на оказание Услуги, оформленный в Личном кабинете и содержащий наименование Услуги, период оказания, стоимость и иные параметры.
 
-**Исполнитель **—** **ООО «Озон Технологии» (ОГРН 1187746644920), являющееся оператором рекламной системы в соответствии с Федеральным законом от 13.03.2006 № 38-ФЗ «О рекламе». Исполнитель оказывает Заказчику Услуги на основании Договора, заключаемого путём акцепта настоящего Договора. По тексту настоящего Договора Исполнитель также может именоваться «ОТ».
+**Исполнитель **—** **ООО «Озон Технологии» (ОГРН 1197746313940), являющееся оператором рекламной системы в соответствии с Федеральным законом от 13.03.2006 № 38-ФЗ «О рекламе». Исполнитель оказывает Заказчику Услуги на основании Договора, заключаемого путём акцепта настоящего Договора. По тексту настоящего Договора Исполнитель также может именоваться «ОТ».
 
 **Ozon** — ООО «Интернет Решения» (ОГРН 1027739244741).
 
@@ -1129,7 +1129,7 @@ The terms used in this Agreement have the following meanings:
 
 **Request** — an order of the Customer for provision of a Service, submitted in the Personal Account and containing the name of the Service, period of provision, cost and other parameters.
 
-**Contractor** — «Ozon Technologies LLC» (PSRN 1187746644920), which is an operator of an advertising system in accordance with Federal Law of 13.03.2006 No. 38-FL «On Advertising». The Contractor provides Services to the Customer on the basis of the Agreement concluded by acceptance of this Agreement. In the text of this Agreement, the Contractor may also be referred to as «OT».
+**Contractor** — «Ozon Technologies LLC» (PSRN 1197746313940), which is an operator of an advertising system in accordance with Federal Law of 13.03.2006 No. 38-FL «On Advertising». The Contractor provides Services to the Customer on the basis of the Agreement concluded by acceptance of this Agreement. In the text of this Agreement, the Contractor may also be referred to as «OT».
 
 **Ozon** — Internet Solutions LLC (PSRN 1027739244741).
 

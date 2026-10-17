@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /ceny-i-akcii/rabota-s-cenami/indeks-cen/indeks-cen
 source: "https://seller-edu.ozon.ru/libra/ceny-i-akcii/rabota-s-cenami/indeks-cen/indeks-cen"
-updated: "2026-09-07 15:04:46"
+updated: "2026-10-16 11:10:00"
 doc_id: 29252
-fetched_at: "2026-09-08T01:39:32Z"
-content_sha: bc6bfda6686b0cda
+fetched_at: "2026-10-17T01:46:12Z"
+content_sha: d25faf7e2fe65b9b
 ---
 
 # Индекс цен
@@ -48,7 +48,7 @@ _Главная / Цены и акции / Работа с ценами / Инд
 
 # Что учитываем при расчёте индекса
 
-Цены конкурентов на Ozon — возьмём цену с учётом [скидок за баллы](https://seller-edu.ozon.ru/finances-documents/additional-information/bally-za-skidki). В расчёте не учитываем [купоны](https://seller-edu.ozon.ru/ceny-i-akcii/akcii-skidki-i-kupony/globalnye-akcii-ozon/rasprodazha#%D0%BA%D0%B0%D0%BA%D1%83%D1%8E-%D1%81%D0%BA%D0%B8%D0%B4%D0%BA%D1%83-%D0%BD%D1%83%D0%B6%D0%BD%D0%BE-%D0%B4%D0%B0%D1%82%D1%8C-%D0%BD%D0%B0-%D0%B2%D0%B0%D1%88%D0%B8-%D1%82%D0%BE%D0%B2%D0%B0%D1%80%D1%8B), [региональные наценки](https://seller-edu.ozon.ru/ceny-i-akcii/rabota-s-cenami/regional-price), [персональные скидки](https://seller-edu.ozon.ru/obsolete/zayavki-na-skidku#%D0%BA%D0%B0%D0%BA-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%D0%B5%D1%82-%D0%B0%D0%BA%D1%86%D0%B8%D1%8F-%C2%AB%D0%BF%D0%B5%D1%80%D1%81%D0%BE%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B5-%D1%81%D0%BA%D0%B8%D0%B4%D0%BA%D0%B8%C2%BB) и сегментированные предложения. Также не будем учитывать акции, настроенные с ограничениями по складам, способам доставки и устройствам.
+Цены конкурентов на Ozon — возьмём цену с учётом [скидок за баллы](https://seller-edu.ozon.ru/finances-documents/additional-information/bally-za-skidki). В расчёте не учитываем [купоны](https://seller-edu.ozon.ru/ceny-i-akcii/akcii-skidki-i-kupony/globalnye-akcii-ozon/rasprodazha#%D0%BA%D0%B0%D0%BA%D1%83%D1%8E-%D1%81%D0%BA%D0%B8%D0%B4%D0%BA%D1%83-%D0%BD%D1%83%D0%B6%D0%BD%D0%BE-%D0%B4%D0%B0%D1%82%D1%8C-%D0%BD%D0%B0-%D0%B2%D0%B0%D1%88%D0%B8-%D1%82%D0%BE%D0%B2%D0%B0%D1%80%D1%8B), [региональные наценки](https://seller-edu.ozon.ru/ceny-i-akcii/rabota-s-cenami/regional-price), [персональные скидки](https://seller-edu.ozon.ru/ceny-i-akcii/akcii-skidki-i-kupony/hochy-skidky/rabota-s-zayavkami-na-skidku) и сегментированные предложения. Также не будем учитывать акции, настроенные с ограничениями по складам, способам доставки и устройствам.
 
 Ваши цены на других площадках — если продаёте на других маркетплейсах, возьмём в расчёт те цены, которые видит покупатель. Будем учитывать только товары юрлица, с которого вы продаёте на Ozon, если юрлиц несколько.
 

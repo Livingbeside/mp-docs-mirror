@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /work-with-goods/zagruzka-tovarov/obedinenie-tovarov/kak-ob-edinit-tovary-v-odnu-kartochku
 source: "https://seller-edu.ozon.ru/libra/work-with-goods/zagruzka-tovarov/obedinenie-tovarov/kak-ob-edinit-tovary-v-odnu-kartochku"
-updated: "2026-08-18 08:24:38"
+updated: "2026-10-16 12:58:29"
 doc_id: 741
-fetched_at: "2026-08-28T12:11:15Z"
-content_sha: 25fa92216dd55888
+fetched_at: "2026-10-17T01:46:12Z"
+content_sha: 17a88acf43a6ab04
 ---
 
 # Модель
@@ -254,7 +254,7 @@ _Главная / Работа с товарами / Создание и ред�
 
 нет остатков или доставка не настроена — если товар закончился или не доступен для выбранных регионов, покупатели его не увидят;
 
-карточки в архиве — если хотите их удалить из объединения, сначала [восстановите карточки из архива](https://seller-edu.ozon.ru/work-with-goods/zagruzka-tovarov/created-goods/upravlyat-tovarami-v-arhive#%D0%BA%D0%B0%D0%BA-%D0%B2%D0%BE%D1%81%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%B8%D1%82%D1%8C-%D1%82%D0%BE%D0%B2%D0%B0%D1%80-%D0%B8%D0%B7-%D0%B0%D1%80%D1%85%D0%B8%D0%B2%D0%B0), удалите из группы, а затем [перенесите обратно в архив](https://seller-edu.ozon.ru/ru/work-with-goods/zagruzka-tovarov/created-goods/upravlyat-tovarami-v-arhive#%D0%BA%D0%B0%D0%BA-%D0%BF%D0%B5%D1%80%D0%B5%D0%BD%D0%B5%D1%81%D1%82%D0%B8-%D1%82%D0%BE%D0%B2%D0%B0%D1%80-%D0%B2-%D0%B0%D1%80%D1%85%D0%B8%D0%B2).
+карточки в архиве — если хотите их удалить из объединения, сначала [восстановите карточки из архива](https://seller-edu.ozon.ru/work-with-goods/zagruzka-tovarov/created-goods/upravlyat-tovarami-v-arhive#%D0%BA%D0%B0%D0%BA-%D0%B2%D0%BE%D1%81%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%B8%D1%82%D1%8C-%D1%82%D0%BE%D0%B2%D0%B0%D1%80-%D0%B8%D0%B7-%D0%B0%D1%80%D1%85%D0%B8%D0%B2%D0%B0), удалите из группы, а затем [перенесите обратно в архив](https://seller-edu.ozon.ru/work-with-goods/zagruzka-tovarov/created-goods/upravlyat-tovarami-v-arhive#перенести-товар-в-архив).
 
 # Как заполнить варианты, которые отличаются по цвету
 

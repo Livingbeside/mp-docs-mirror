@@ -9,7 +9,7 @@ tags:
 spec_version: ordersfbw
 source: "https://dev.wildberries.ru/docs/openapi/orders-fbw"
 deprecated: false
-content_sha: 9b3d077d57d88295
+content_sha: c47d6bcee8ca6b17
 ---
 
 # Транзитные направления
@@ -18,7 +18,7 @@ content_sha: 9b3d077d57d88295
 
 Описание метода
 
-Метод [временно отключён](https://dev.wildberries.ru/release-notes?id=570)
+Метод ]временно отключён](/release-notes?id=570)
 
 Лимит запросов на один профиль продавца:
 

@@ -1699,7 +1699,7 @@
               "type": "integer"
             },
             "logWarehouseCoef": {
-              "description": "Коэффициент логистики и хранения. [На данный момент](https://dev.wildberries.ru/release-notes?id=570) может быть только `0`",
+              "description": "Коэффициент логистики и хранения. ]На данный момент](/release-notes?id=570) может быть только `0`",
               "type": "number"
             },
             "loyaltyDiscount": {
@@ -1711,7 +1711,7 @@
               "type": "integer"
             },
             "officeId": {
-              "description": "ID склада. [На данный момент](https://dev.wildberries.ru/release-notes?id=570) может быть только `0`",
+              "description": "ID склада. ]На данный момент](/release-notes?id=570) может быть только `0`",
               "type": "integer"
             },
             "originalDate": {
@@ -1723,7 +1723,7 @@
               "type": "number"
             },
             "palletPlaceCode": {
-              "description": "Код паллетоместа. [На данный момент](https://dev.wildberries.ru/release-notes?id=570) может быть только `0`",
+              "description": "Код паллетоместа. ]На данный момент](/release-notes?id=570) может быть только `0`",
               "type": "integer"
             },
             "size": {
@@ -1751,7 +1751,7 @@
               "type": "number"
             },
             "warehouse": {
-              "description": "Название склада. [На данный момент](https://dev.wildberries.ru/release-notes?id=570) может быть только `Склад WB РФ`",
+              "description": "Название склада. ]На данный момент](/release-notes?id=570) может быть только `Склад WB РФ`",
               "type": "string"
             },
             "warehouseCoef": {

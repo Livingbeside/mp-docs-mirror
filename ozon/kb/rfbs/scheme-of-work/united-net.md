@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /rfbs/scheme-of-work/united-net
 source: "https://seller-edu.ozon.ru/libra/rfbs/scheme-of-work/united-net"
-updated: "2026-08-18 07:50:11"
+updated: "2026-10-16 12:54:46"
 doc_id: 1141
-fetched_at: "2026-08-28T12:11:15Z"
-content_sha: 7c3658196773e9e6
+fetched_at: "2026-10-17T01:46:11Z"
+content_sha: c0d2d603635f185e
 ---
 
 # RealFBS Standard — «Почта России»
@@ -106,7 +106,7 @@ _Главная / Продажа со своего склада (realFBS) / Сх
 
 # Как передать отправление в службу доставки
 
-Если вы хотите, чтобы товар доставили в ПВЗ Ozon, его вес должен быть от 0,05 кг до 20 кг, а длина, ширина и высота  — до 100 см. В остальном правила упаковки соответствуют [регламенту](/regulations-fbs-realfbs/reglament-dostavki-kgt-cherez-partnerov#3-%D1%82%D1%80%D0%B5%D0%B1%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F-%D0%BA-%D1%83%D0%BF%D0%B0%D0%BA%D0%BE%D0%B2%D0%BA%D0%B5).
+Если вы хотите, чтобы товар доставили в ПВЗ Ozon, его вес должен быть от 0,05 кг до 20 кг, а длина, ширина и высота  — до 100 см. В остальном правила упаковки соответствуют [регламенту](https://seller-edu.ozon.ru/contract-for-sellers/regulations-fbs-realfbs/reglament-dostavki-kgt-cherez-partnerov#3-требования-к-упаковке).
 
 1. Упакуйте заказы согласно [правилам](/contract-for-sellers/regulations-fbs-realfbs/reglament-dostavki-kgt-cherez-partnerov#3-%D1%82%D1%80%D0%B5%D0%B1%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F-%D0%BA-%D1%83%D0%BF%D0%B0%D0%BA%D0%BE%D0%B2%D0%BA%D0%B5) и переведите их в статус **Готов к отгрузке**;
 2. В день отгрузки распечатайте акт — в него попадут все отправления со статусом **Готов к отгрузке**, которые нужно передать в доставку сегодня. Если позже захотите напечатать дополнительные экземпляры сформированных актов, нажмите **Доступные акты**, выберите нужный и нажмите **Распечатать** — [как печатать акты отгрузки](/rfbs/orders-cancellations/upravlenie-zakazami#%D0%BA%D0%B0%D0%BA-%D1%80%D0%B0%D1%81%D0%BF%D0%B5%D1%87%D0%B0%D1%82%D0%B0%D1%82%D1%8C-%D0%B0%D0%BA%D1%82)

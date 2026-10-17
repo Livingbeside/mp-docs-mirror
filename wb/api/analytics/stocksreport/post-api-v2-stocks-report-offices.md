@@ -9,7 +9,7 @@ tags:
 spec_version: analytics
 source: "https://dev.wildberries.ru/docs/openapi/analytics"
 deprecated: false
-content_sha: bac10ebef2eddf7a
+content_sha: 127cbf2b1309be98
 ---
 
 # Данные по складам
@@ -53,7 +53,7 @@ content_sha: bac10ebef2eddf7a
 
 - `data` — object **обязательный**
   - `regions` — array[object]. Множество данных по регионам отгрузки
-    - `regionName` — string **обязательный**. Регион отгрузки. [На данный момент](https://dev.wildberries.ru/release-notes?id=570) для складов WB может быть только `Склад WB`
+    - `regionName` — string **обязательный**. Регион отгрузки. ]На данный момент](/release-notes?id=570) для складов WB может быть только `Склад WB`
     - `metrics` — object **обязательный**. Метрики по региону
       - `stockCount` — integer<uint64> **обязательный**. Остатки на текущий день, шт.
       - `stockSum` — integer<uint64> **обязательный**. Остатки на текущий день, сумма
@@ -62,7 +62,7 @@ content_sha: bac10ebef2eddf7a
         - `hours` — integer<int32> **обязательный**. Количество часов
       - `toClientCount` — integer<uint64> **обязательный**. В пути к клиенту, шт.
       - `fromClientCount` — integer<uint64> **обязательный**. В пути от клиента, шт.
-    - `offices` — array[object] **обязательный**. Данные по складам. [На данный момент](https://dev.wildberries.ru/release-notes?id=570) может быть только `[]`
+    - `offices` — array[object] **обязательный**. Данные по складам. ]На данный момент](/release-notes?id=570) может быть только `[]`
       - `officeID` — integer<int64> **обязательный**. ID склада
       - `officeName` — string **обязательный**. Название склада
       - `metrics` — object **обязательный**. Метрики по складу

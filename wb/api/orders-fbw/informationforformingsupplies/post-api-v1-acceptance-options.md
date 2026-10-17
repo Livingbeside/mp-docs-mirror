@@ -9,7 +9,7 @@ tags:
 spec_version: ordersfbw
 source: "https://dev.wildberries.ru/docs/openapi/orders-fbw"
 deprecated: false
-content_sha: e39271cde833b64f
+content_sha: f6811faaa938dcc8
 ---
 
 # Опции приёмки
@@ -18,7 +18,7 @@ content_sha: e39271cde833b64f
 
 Описание метода
 
-Метод [временно отключён](https://dev.wildberries.ru/release-notes?id=570)
+Метод ]временно отключён](/release-notes?id=570)
 
 Лимит запросов на один профиль продавца:
 
