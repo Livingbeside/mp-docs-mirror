@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /vozvraty-i-vyvozy/vyvozy-so-stoka-i-postavki/zabrat-so-stoka
 source: "https://seller-edu.ozon.ru/libra/vozvraty-i-vyvozy/vyvozy-so-stoka-i-postavki/zabrat-so-stoka"
-updated: "2026-10-16 11:53:29"
+updated: "2026-10-19 09:04:59"
 doc_id: 13545
-fetched_at: "2026-10-17T01:46:11Z"
-content_sha: ab622144ef8dd6ad
+fetched_at: "2026-10-20T01:56:49Z"
+content_sha: 20ee7ee4149eb2a5
 ---
 
 # Вывоз товаров со стока со склада Ozon
@@ -218,7 +218,7 @@ _Главная / Клиентские возвраты и вывозы това
 
 [Полный список адресов складов Ozon](https://seller-edu.ozon.ru/fbo/warehouses/adresa-skladov-fbo)
 
-4. Проверьте, что у водителя есть паспорт и [доверенность](https://seller-edu.ozon.ru/fbo/vozvraty-utilizaciya-izlishki/vyvoz-tovarov-so-sklada-ozon/zabrat-tovary-voprosy#%D0%BA%D0%B0%D0%BA-%D0%BF%D0%BE%D0%B4%D0%B3%D0%BE%D1%82%D0%BE%D0%B2%D0%B8%D1%82%D1%8C-%D0%B4%D0%BE%D0%B2%D0%B5%D1%80%D0%B5%D0%BD%D0%BD%D0%BE%D1%81%D1%82%D1%8C-%D0%BD%D0%B0-%D0%BF%D0%BE%D0%BB%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5-%D1%82%D0%BE%D0%B2%D0%B0%D1%80%D0%BE%D0%B2-%D1%81%D0%B0%D0%BC%D0%BE%D0%B2%D1%8B%D0%B2%D0%BE%D0%B7%D0%BE%D0%BC?) на получение товаров.
+4. Проверьте, что у водителя есть паспорт и доверенность на получение товаров.
 
 5. Когда приедете, позвоните по телефону на склад. Вам скажут, к каким воротам подъехать, отдадут товар и документы.
 

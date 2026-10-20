@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /contract-for-sellers/contract-certificates/contract-for-sellers-of-certificates-for-services
 source: "https://seller-edu.ozon.ru/libra/contract-for-sellers/contract-certificates/contract-for-sellers-of-certificates-for-services"
-updated: "2026-08-21 13:04:01"
+updated: "2026-10-19 10:47:02"
 doc_id: 683
-fetched_at: "2026-08-28T12:11:14Z"
-content_sha: f45c92836d854705
+fetched_at: "2026-10-20T01:56:48Z"
+content_sha: 4ffbebdc652f112f
 ---
 
 # Договор для НКО
@@ -16,7 +16,7 @@ _Главная / Договоры для Продавцов на платфор
 
 Эта редакция действует с 31 августа 2026 года. Мы заранее публикуем изменения в договоре. Если правила на этой странице ещё не вступили в силу, смотрите [предыдущую версию](/seller-edu/contract-for-sellers/contract-certificates/spisok-izmenenii-v-dogovor-sertifikaty).
 
-# 1. Предмет и квалификация Договор
+# 1. Предмет и квалификация Договора
 
 ## 1.1. Предмет Договора
 

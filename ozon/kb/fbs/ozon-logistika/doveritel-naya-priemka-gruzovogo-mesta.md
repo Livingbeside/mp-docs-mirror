@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /fbs/ozon-logistika/doveritel-naya-priemka-gruzovogo-mesta
 source: "https://seller-edu.ozon.ru/libra/fbs/ozon-logistika/doveritel-naya-priemka-gruzovogo-mesta"
-updated: "2026-10-07 09:29:23"
+updated: "2026-10-19 13:31:55"
 doc_id: 811
-fetched_at: "2026-10-08T02:08:27Z"
-content_sha: 91aa2cc62ed8c8bc
+fetched_at: "2026-10-20T01:56:49Z"
+content_sha: 09c800fb48756f6c
 ---
 
 # Доверительная приёмка грузового места
@@ -167,6 +167,8 @@ _Главная / Продажа со своего склада (FBS) / Отгр
 [Псков — Солнечная (СЦ)](/fbs/punkty-priema/regiony#псков-солнечная-сц)
 
 [Пятигорск — Пальмиро (СЦ)](https://seller-edu.ozon.ru/fbs/punkty-priema/regiony#%D0%BF%D1%8F%D1%82%D0%B8%D0%B3%D0%BE%D1%80%D1%81%D0%BA-%D0%BF%D0%B0%D0%BB%D1%8C%D0%BC%D0%B8%D1%80%D0%BE-%D1%81%D1%86)
+
+[Ростов-на-Дону — Ленина 5 (СЦ)](https://seller-edu.ozon.ru/fbs/punkty-priema/regiony#ростов-на-дону-ленина-5-сц)
 
 [Ростов-на-Дону — Логопарк (СЦ)](https://seller-edu.ozon.ru/fbs/punkty-priema/regiony#ростов-на-дону-логопарк-сц)
 

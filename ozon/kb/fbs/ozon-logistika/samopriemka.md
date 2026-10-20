@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /fbs/ozon-logistika/samopriemka
 source: "https://seller-edu.ozon.ru/libra/fbs/ozon-logistika/samopriemka"
-updated: "2026-10-07 09:29:38"
+updated: "2026-10-19 13:32:30"
 doc_id: 1780
-fetched_at: "2026-10-08T02:08:27Z"
-content_sha: 6372a557d7b5a3d4
+fetched_at: "2026-10-20T01:56:49Z"
+content_sha: 386af6eb45eb86ce
 ---
 
 # Самоприёмка отправлений
@@ -161,6 +161,8 @@ _Главная / Продажа со своего склада (FBS) / Отгр
 [Псков — Солнечная (СЦ)](/fbs/punkty-priema/regiony#псков-солнечная-сц)
 
 [Пятигорск — Пальмиро (СЦ)](https://seller-edu.ozon.ru/fbs/punkty-priema/regiony#пятигорск-пальмиро-сц)
+
+[Ростов-на-Дону — Ленина 5 (СЦ)](https://seller-edu.ozon.ru/fbs/punkty-priema/regiony#ростов-на-дону-ленина-5-сц)
 
 [Ростов-на-Дону — Логопарк (СЦ)](https://seller-edu.ozon.ru/fbs/punkty-priema/regiony#%D1%80%D0%BE%D1%81%D1%82%D0%BE%D0%B2-%D0%BD%D0%B0-%D0%B4%D0%BE%D0%BD%D1%83-%D0%BB%D0%BE%D0%B3%D0%BE%D0%BF%D0%B0%D1%80%D0%BA-%D1%81%D1%86)
 
