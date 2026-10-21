@@ -9,7 +9,7 @@ tags:
 spec_version: items
 source: "https://dev.wildberries.ru/docs/openapi/item-management"
 deprecated: false
-content_sha: 9b987b284147ed3d
+content_sha: 3b7b128b7921b80b
 ---
 
 # Получить список складов WB
@@ -34,6 +34,7 @@ content_sha: 9b987b284147ed3d
 
 **200** — Успешно
 
+- `federalDistrict` — string. Федеральный округ склада WB. Если `null`, склад находится за пределами РФ или федеральный округ не указан
 - `address` — string. Адрес
 - `name` — string. Название
 - `city` — string. Город
@@ -42,7 +43,6 @@ content_sha: 9b987b284147ed3d
 - `latitude` — number<float64>. Широта
 - `cargoType` — integer (1, 3). Тип товара, который принимает склад: - `1` — малогабаритный товар (МГТ) - `3` — крупногабаритный товар (КГТ+)
 - `deliveryType` — integer (1, 2, 3, 5, 6). Тип доставки, который принимает склад: - `1` — доставка на склад WB (FBS) - `2` — доставка силами продавца (DBS) - `3` — Деливери WB (DBW) - `5` — самовывоз (C&C) - `6` — экспресс-доставка силами продавца (ЕDBS)
-- `federalDistrict` — string. Федеральный округ склада WB. Если `null`, склад находится за пределами РФ или федеральный округ не указан
 - `selected` — boolean. Признак того, что склад уже выбран продавцом
 
 **401** — Не авторизован

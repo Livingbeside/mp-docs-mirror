@@ -9,7 +9,7 @@ tags:
 spec_version: rates
 source: "https://dev.wildberries.ru/docs/openapi/rates"
 deprecated: false
-content_sha: 9e6a8a8e32be2344
+content_sha: 3b9e97aa112996fb
 ---
 
 # Тарифы на поставку
@@ -18,7 +18,7 @@ content_sha: 9e6a8a8e32be2344
 
 Описание метода
 
-Метод ]временно отключён](/release-notes?id=570)
+Метод [временно отключён](/release-notes?id=570)
 
 Лимит запросов на один профиль продавца:
 

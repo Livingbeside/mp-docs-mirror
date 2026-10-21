@@ -9,7 +9,7 @@ tags:
 spec_version: dbs
 source: "https://dev.wildberries.ru/docs/openapi/dbs"
 deprecated: false
-content_sha: a9f87348d37930bd
+content_sha: 74012b754fa8005e
 ---
 
 # Получить цены продавца и суммы к оплате
@@ -53,7 +53,7 @@ content_sha: a9f87348d37930bd
   - `errors` — array[object]. Детали ошибки
     - `code` — integer **обязательный**. Код ошибки: - `404` — `NotFound` - `400` — `StatusMismatch` - `422` — `PriceNotCalculated`
     - `detail` — string **обязательный**. - `NotFound` — сборочное задание не найдено (`404`) - `StatusMismatch` — операция невозможна для этого статуса сборочного задания (`400`) - `PriceNotCalculated` — операция невозможна для сборочных заданий, созданных ранее 23.07.2026 (`422`)
-  - `isError` — boolean. Есть ли ошибки
+  - `isError` — boolean **обязательный**. Есть ли ошибки
 
 **400** — Неправильный запрос
 

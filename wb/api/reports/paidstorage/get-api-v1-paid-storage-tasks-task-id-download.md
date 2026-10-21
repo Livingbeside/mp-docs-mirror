@@ -9,7 +9,7 @@ tags:
 spec_version: reports
 source: "https://dev.wildberries.ru/docs/openapi/reports"
 deprecated: false
-content_sha: 5be2ef4336d1f1f9
+content_sha: ac82e19988fe6be9
 ---
 
 # Получить отчёт{{ /api/v1/paid_storage/tasks/{task_id}/download }}
@@ -40,9 +40,9 @@ content_sha: 5be2ef4336d1f1f9
 **200** — Успешно
 
 - `date` — string. Дата, за которую был расчёт или перерасчёт
-- `logWarehouseCoef` — number. Коэффициент логистики и хранения. ]На данный момент](/release-notes?id=570) может быть только `0`
-- `officeId` — integer. ID склада. ]На данный момент](/release-notes?id=570) может быть только `0`
-- `warehouse` — string. Название склада. ]На данный момент](/release-notes?id=570) может быть только `Склад WB РФ`
+- `logWarehouseCoef` — number. Коэффициент логистики и хранения. [На данный момент](/release-notes?id=570) может быть только `0`
+- `officeId` — integer. ID склада. [На данный момент](/release-notes?id=570) может быть только `0`
+- `warehouse` — string. Название склада. [На данный момент](/release-notes?id=570) может быть только `Склад WB РФ`
 - `warehouseCoef` — number. Коэффициент хранения
 - `giId` — integer. ID поставки
 - `chrtId` — integer<uint64>. ID размера для этого артикула WB
@@ -56,7 +56,7 @@ content_sha: 5be2ef4336d1f1f9
 - `calcType` — string. Способ расчёта
 - `warehousePrice` — number. Сумма хранения
 - `barcodesCount` — integer. Количество единиц товара (штук), подлежащих тарифицированию за расчётные сутки
-- `palletPlaceCode` — integer. Код паллетоместа. ]На данный момент](/release-notes?id=570) может быть только `0`
+- `palletPlaceCode` — integer. Код паллетоместа. [На данный момент](/release-notes?id=570) может быть только `0`
 - `palletCount` — number. Количество паллет
 - `originalDate` — string. Если был перерасчёт, это дата первоначального расчёта. Если перерасчёта не было, совпадает с `date`
 - `loyaltyDiscount` — number. Скидка программы лояльности, ₽

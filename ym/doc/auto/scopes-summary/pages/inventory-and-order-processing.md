@@ -2,14 +2,14 @@
 title: Обработка заказов и учёт товаров
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/_auto/scopes_summary/pages/inventory-and-order-processing.md"
-fetched_at: "2026-10-17T01:50:53Z"
-content_sha: 9e503c5d2c86e2ca
+fetched_at: "2026-10-21T01:46:51Z"
+content_sha: 3a23631bf1b28149
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.63.3
+    content: Diplodoc Platform v5.64.0
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/_auto/scopes_summary/pages/inventory-and-order-processing.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/_auto/scopes_summary/pages/inventory-and-order-processing.md
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/_auto/scopes_summary/pages/inventory-and-order-processing.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21678857
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21727032
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21678857
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21727032
 
 # Обработка заказов и учёт товаров
 

@@ -2,14 +2,14 @@
 title: Экспресс
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/overview/express.md"
-fetched_at: "2026-10-17T01:51:23Z"
-content_sha: 7724d39b3e5789e3
+fetched_at: "2026-10-21T01:47:21Z"
+content_sha: 2e945ac1db911d89
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.63.3
+    content: Diplodoc Platform v5.64.0
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/overview/express.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/overview/express.md
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/overview/express.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21678857
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21727032
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21678857
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21727032
 
 # Список методов, используемых в модели Экспресс
 

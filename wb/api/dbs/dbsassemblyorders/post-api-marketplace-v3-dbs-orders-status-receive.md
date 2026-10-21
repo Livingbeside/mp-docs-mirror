@@ -9,7 +9,7 @@ tags:
 spec_version: dbs
 source: "https://dev.wildberries.ru/docs/openapi/dbs"
 deprecated: false
-content_sha: 457b989c660b76e3
+content_sha: 5f429f16e2d879b6
 ---
 
 # Сообщить о получении заказов
@@ -42,13 +42,13 @@ content_sha: 457b989c660b76e3
 
 **200** — Успешно
 
-- `requestId` — string. Уникальный ID запроса
-- `results` — array[object]
+- `requestId` — string **обязательный**. Уникальный ID запроса
+- `results` — array[object] **обязательный**
   - `errors` — array[object]. Детали ошибки
     - `code` — integer. Код ошибки
     - `detail` — string. - `NotFound` — сборочное задание не найдено - `StatusMismatch` — операция невозможна для этого статуса сборочного задания - `SGTINIsNotFilled` — обязательный [код маркировки](./dbs#tag/dbsLabelIdentifiers/operation/postV3DbsOrdersMetaSgtin) не указан
-  - `isError` — boolean. Есть ли ошибки
-  - `orderId` — integer. ID сборочного задания с успешно обновлёнными данными
+  - `isError` — boolean **обязательный**. Есть ли ошибки
+  - `orderId` — integer **обязательный**. ID сборочного задания с успешно обновлёнными данными
 
 **400** — Неправильный запрос
 

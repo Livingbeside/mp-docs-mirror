@@ -9,7 +9,7 @@ tags:
 spec_version: reports
 source: "https://dev.wildberries.ru/docs/openapi/reports"
 deprecated: false
-content_sha: 4312274a56d7b441
+content_sha: ced0897b85f07835
 ---
 
 # Маркировка товара
@@ -50,7 +50,7 @@ content_sha: 4312274a56d7b441
   - `incomeId` — integer. Номер поставки
   - `nmID` — integer. Артикул WB
   - `photoUrls` — array[string]. URL фото товара
-  - `shkID` — integer. Штрихкод товара в WB
+  - `shkID` — integer. Штрихкод
   - `sku` — string. Баркод из карточки товара
 
 **400** — Неправильный запрос

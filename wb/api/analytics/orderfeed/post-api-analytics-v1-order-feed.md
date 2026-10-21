@@ -9,7 +9,7 @@ tags:
 spec_version: analytics
 source: "https://dev.wildberries.ru/docs/openapi/analytics"
 deprecated: false
-content_sha: 9272ba12693d462f
+content_sha: a46b04b4dd0b5fcd
 ---
 
 # Получить отчёт
@@ -72,10 +72,10 @@ content_sha: 9272ba12693d462f
     - `srid` — string **обязательный**. ID заказа
     - `createdAt` — string<date-time> **обязательный**. Дата и время оформления заказа
     - `updatedAt` — string<date-time> **обязательный**. Дата и время текущего статуса. При `"status":"created"` возвращается значение поля `createdAt`
-    - `status` — string (created, buyout, cancel, return, returnDefective) **обязательный**. Статус заказа: - `created` — оформлен - `buyout` — продан - `cancel` — отменён - `return` — возвращён - `returnDefective` — возвращён по причине брака
-    - `cancelType` — string (app, receipt, expire, other). Тип отмены (при `"status":"cancel"`): - `app` — отказ до получения - `receipt` — отказ при получении - `expire` — истёк срок получения - `other` — техническая отмена
-    - `warehouseName` — string **обязательный**. Название склада. ]На данный момент](/release-notes?id=570) для складов WB может быть только `Склад WB`
-    - `warehouseRegion` — string **обязательный**. Федеральный округ склада. Если склад не в России, возвращается страна. ]На данный момент](/release-notes?id=570) для складов WB может быть только `""`
+    - `status` — string (created, buyout, cancel, return, returnDefective) **обязательный**. [Статус заказа](https://seller.wildberries.ru/instructions/ru/ru/material/order-feed-report#a92fa9b0-86ab-4990-b905-33f6c38b385c): - `created` — оформлен - `buyout` — продан - `cancel` — отменён - `return` — возвращён - `returnDefective` — возвращён по причине брака
+    - `cancelType` — string (app, receipt, expire, other). [Тип отмены](https://seller.wildberries.ru/instructions/ru/ru/material/order-feed-report#a92fa9b0-86ab-4990-b905-33f6c38b385c) (при `"status":"cancel"`): - `app` — отказ до получения - `receipt` — отказ при получении - `expire` — истёк срок получения - `other` — иное
+    - `warehouseName` — string **обязательный**. Название склада. [На данный момент](/release-notes?id=570) для складов WB может быть только `Склад WB`
+    - `warehouseRegion` — string **обязательный**. Федеральный округ склада. Если склад не в России, возвращается страна. [На данный момент](/release-notes?id=570) для складов WB может быть только `""`
     - `isMp` — boolean **обязательный**. Тип склада: - `true` — склад продавца - `false` — склад WB
     - `destinationCity` — string **обязательный**. Населённый пункт доставки
     - `destinationDistrict` — string **обязательный**. Федеральный округ доставки. Если доставка не по России, возвращается страна

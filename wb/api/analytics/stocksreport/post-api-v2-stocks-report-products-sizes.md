@@ -9,7 +9,7 @@ tags:
 spec_version: analytics
 source: "https://dev.wildberries.ru/docs/openapi/analytics"
 deprecated: false
-content_sha: 8aea894919e8392d
+content_sha: 28f6eb264ccebd3c
 ---
 
 # Данные по размерам
@@ -61,9 +61,9 @@ content_sha: 8aea894919e8392d
 
 - `data` — object **обязательный**
   - `offices` — array[object]. Множество данных по складам
-    - `regionName` — string **обязательный**. Регион отгрузки. ]На данный момент](/release-notes?id=570) для складов WB может быть только `Склад WB`
-    - `officeID` — integer<int64> **обязательный**. ID склада. ]На данный момент](/release-notes?id=570) для складов WB может быть только `-999999`
-    - `officeName` — string **обязательный**. Название склада. ]На данный момент](/release-notes?id=570) для складов WB может быть только `""`
+    - `regionName` — string **обязательный**. Регион отгрузки. [На данный момент](/release-notes?id=570) для складов WB может быть только `Склад WB`
+    - `officeID` — integer<int64> **обязательный**. ID склада. [На данный момент](/release-notes?id=570) для складов WB может быть только `-999999`
+    - `officeName` — string **обязательный**. Название склада. [На данный момент](/release-notes?id=570) для складов WB может быть только `""`
     - `metrics` — object **обязательный**. Метрики склада
       - `ordersCount` — integer<uint64> **обязательный**. Заказы, шт.
       - `ordersSum` — integer<uint64> **обязательный**. Заказы, сумма
@@ -96,9 +96,9 @@ content_sha: 8aea894919e8392d
     - `name` — string **обязательный**. Название размера
     - `chrtID` — integer<uint64> **обязательный**. ID размера
     - `offices` — array[object]. Склады
-      - `regionName` — string **обязательный**. Регион отгрузки. ]На данный момент](/release-notes?id=570) для складов WB может быть только `Склад WB`
-      - `officeID` — integer<int64> **обязательный**. ID склада. ]На данный момент](/release-notes?id=570) для складов WB может быть только `-999999`
-      - `officeName` — string **обязательный**. Название склада. ]На данный момент](/release-notes?id=570) для складов WB может быть только `""`
+      - `regionName` — string **обязательный**. Регион отгрузки. [На данный момент](/release-notes?id=570) для складов WB может быть только `Склад WB`
+      - `officeID` — integer<int64> **обязательный**. ID склада. [На данный момент](/release-notes?id=570) для складов WB может быть только `-999999`
+      - `officeName` — string **обязательный**. Название склада. [На данный момент](/release-notes?id=570) для складов WB может быть только `""`
       - `metrics` — object **обязательный**. Метрики склада
         - `ordersCount` — integer<uint64> **обязательный**. Заказы, шт.
         - `ordersSum` — integer<uint64> **обязательный**. Заказы, сумма

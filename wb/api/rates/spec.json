@@ -890,7 +890,7 @@
   "paths": {
     "/api/tariffs/v1/acceptance/coefficients": {
       "get": {
-        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод ]временно отключён](/release-notes?id=570)\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один профиль продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 мин | 6 запросов | 10 сек | 6 запросов |\n| Сервисный | 1 мин | 6 запросов | 10 сек | 6 запросов |\n| Базовый с секретом | 1 мин | 6 запросов | 10 сек | 6 запросов |\n| Базовый | 1 ч | 1 запрос | 1 ч | 1 запрос |\n</div>\n",
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод [временно отключён](/release-notes?id=570)\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один профиль продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 мин | 6 запросов | 10 сек | 6 запросов |\n| Сервисный | 1 мин | 6 запросов | 10 сек | 6 запросов |\n| Базовый с секретом | 1 мин | 6 запросов | 10 сек | 6 запросов |\n| Базовый | 1 ч | 1 запрос | 1 ч | 1 запрос |\n</div>\n",
         "operationId": "getV1AcceptanceCoefficients",
         "parameters": [
           {

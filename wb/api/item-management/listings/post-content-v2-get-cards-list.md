@@ -9,7 +9,7 @@ tags:
 spec_version: items
 source: "https://dev.wildberries.ru/docs/openapi/item-management"
 deprecated: false
-content_sha: 13ac57cfcffbad9a
+content_sha: 3919bac4e557736f
 ---
 
 # Список карточек товаров
@@ -76,10 +76,10 @@ content_sha: 13ac57cfcffbad9a
 **Тело запроса** (`application/json`):
 
 - `settings` — object. Настройки
-  - `sort` — object. Параметр сортировки
-    - `ascending` — boolean. Сортировать по полю `updatedAt`: - `false` — по убыванию - `true` — по возрастанию По умолчанию: `False`.
+  - `sort` — object. Сортировка по дате и времени изменения карточек товаров `updatedAt`
+    - `ascending` — boolean. Порядок сортировки: - `false` — по убыванию - `true` — по возрастанию По умолчанию: `False`.
   - `filter` — object. Параметры фильтрации
-    - `withPhoto` — integer (-1, 0, 1, 2). Фильтр по фото: * `-1` — любые карточки товаров * `0` — только карточки без фото. С [16 июня](/release-notes?id=531) — любые карточки товаров * `1` — только карточки с фото * `2` — только карточки без фото. С [16 июня](/release-notes?id=531) По умолчанию: `0`.
+    - `withPhoto` — integer (-1, 0, 1, 2). Фильтр по фото: * `-1` — любые карточки товаров * `0` — любые карточки товаров * `1` — только карточки с фото * `2` — только карточки без фото По умолчанию: `0`.
     - `textSearch` — string. Поиск по артикулу продавца, артикулу WB, баркоду
     - `tagIDs` — array[integer]. Поиск по ID ярлыков
     - `allowedCategoriesOnly` — boolean. Фильтр по категории: - `true` — только разрешённые - `false` — все Не используется в песочнице

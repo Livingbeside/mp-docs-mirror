@@ -9,7 +9,7 @@ tags:
 spec_version: dbs
 source: "https://dev.wildberries.ru/docs/openapi/dbs"
 deprecated: false
-content_sha: 8a246891ed794fea
+content_sha: 47d8751522216af9
 ---
 
 # Перевести сборочные задания в доставку
@@ -40,8 +40,8 @@ content_sha: 8a246891ed794fea
 
 **200** — Успешно
 
-- `requestId` — string. Уникальный ID запроса
-- `results` — array[object]
+- `requestId` — string **обязательный**. Уникальный ID запроса
+- `results` — array[object] **обязательный**
   - `errors` — array[object]. Детали ошибки
     - `code` — integer. Код ошибки: - `404` - `409`
     - `detail` — string. - `NotFound` — сборочное задание не найдено - `StatusMismatch` — операция невозможна для этого статуса сборочного задания - `ImeiIsNotFilled` — не заполнен IMEI - `MetaValidationFail` — ошибки валидации идентификатора маркировки
@@ -49,8 +49,8 @@ content_sha: 8a246891ed794fea
       - `key` — string. Идентификатор маркировки
       - `value` — string. Значение идентификатора маркировки
       - `decision` — string. Статус проверки: - `sgtin` - `sgtinInvalidFormat` — Неверный формат маркировки - `sgtinNotFound` — Маркировка не найдена в [Честном знаке](https://chestnyznak.ru) - `sgtinEmitted` — Маркировка эмитирована - `sgtinApplied` — Не пройдена процедура Ввод в оборот - `sgtinWrittenOff` — Списан - `sgtinRetired` — Выбыл - `sgtinWithdrawn` — Выбыл - `sgtinDisaggregation` — Расформирован - `sgtinDisaggregated` — Расформирован - `sgtinAppliedNotPaid` — Не оплачен - `pending` — Маркировка на проверке
-  - `isError` — boolean. Есть ли ошибки
-  - `orderId` — integer. ID сборочного задания с успешно обновлёнными данными
+  - `isError` — boolean **обязательный**. Есть ли ошибки
+  - `orderId` — integer **обязательный**. ID сборочного задания с успешно обновлёнными данными
 
 **400** — Неправильный запрос
 

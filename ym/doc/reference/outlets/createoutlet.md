@@ -2,14 +2,14 @@
 title: Создание
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/outlets/createOutlet.md"
-fetched_at: "2026-10-17T01:52:21Z"
-content_sha: e1d9a269eb9af490
+fetched_at: "2026-10-21T01:48:11Z"
+content_sha: a3c78cb48fdb8da1
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.63.3
+    content: Diplodoc Platform v5.64.0
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/outlets/createOutlet.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/outlets/createOutlet.md
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/outlets/createOutlet.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21678857
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21727032
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21678857
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21727032
 
 <!-- source: ru/api/outlets/createOutlet.md -->
 <div class="openapi">
@@ -217,7 +217,7 @@ alternate:
   
   {% note alert "Типы регионов при создании и редактировании точек продаж" %}
   
-  Указывайте только регионы типов `TOWN` (город), `CITY` (крупный город) и `REPUBLIC_AREA` (район субъекта федерации). Тип региона указан в выходных параметрах `type` запросов [GET v2/regions](https://yandex.ru/dev/market/partner-api/doc/ru/reference/regions/searchRegionsByName.md) и [GET v2/regions/{regionId}](https://yandex.ru/dev/market/partner-api/doc/ru/reference/regions/searchRegionsById.md).
+  Указывайте только регионы типов `VILLAGE` (город), `CITY` (крупный город) и `REPUBLIC_AREA` (район субъекта федерации). Тип региона указан в выходных параметрах `type` запросов [GET v2/regions](https://yandex.ru/dev/market/partner-api/doc/ru/reference/regions/searchRegionsByName.md) и [GET v2/regions/{regionId}](https://yandex.ru/dev/market/partner-api/doc/ru/reference/regions/searchRegionsById.md).
   
   {% endnote %}
   
@@ -1793,7 +1793,7 @@ alternate:
               - regionId
             properties:
               regionId:
-                description: "Идентификатор региона.\n\nИдентификатор можно получить c помощью запроса [GET\_v2/regions](../../reference/regions/searchRegionsByName.md).\n\n{% note alert \"Типы регионов при создании и редактировании точек продаж\" %}\n\nУказывайте только регионы типов `TOWN` (город), `CITY` (крупный город) и `REPUBLIC_AREA` (район субъекта федерации). Тип региона указан в выходных параметрах `type` запросов [GET\_v2/regions](../../reference/regions/searchRegionsByName.md) и [GET\_v2/regions/{regionId}](../../reference/regions/searchRegionsById.md).\n\n{% endnote %}\n"
+                description: "Идентификатор региона.\n\nИдентификатор можно получить c помощью запроса [GET\_v2/regions](../../reference/regions/searchRegionsByName.md).\n\n{% note alert \"Типы регионов при создании и редактировании точек продаж\" %}\n\nУказывайте только регионы типов `VILLAGE` (город), `CITY` (крупный город) и `REPUBLIC_AREA` (район субъекта федерации). Тип региона указан в выходных параметрах `type` запросов [GET\_v2/regions](../../reference/regions/searchRegionsByName.md) и [GET\_v2/regions/{regionId}](../../reference/regions/searchRegionsById.md).\n\n{% endnote %}\n"
                 type: integer
                 format: int64
               street:
@@ -2097,7 +2097,7 @@ alternate:
             type: integer
             format: int64
     $defs:
-      /home/sandbox/.ya/build/build_root/hyha/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/common/schemas.yaml#/DayOfWeekType:
+      /home/sandbox/.ya/build/build_root/2hh1/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/common/schemas.yaml#/DayOfWeekType:
         description: |
           День недели:
   

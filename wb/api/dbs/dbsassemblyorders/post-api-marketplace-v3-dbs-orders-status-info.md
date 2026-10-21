@@ -9,7 +9,7 @@ tags:
 spec_version: dbs
 source: "https://dev.wildberries.ru/docs/openapi/dbs"
 deprecated: false
-content_sha: e5910386d0b9eea4
+content_sha: a1fc8bc3075f16e5
 ---
 
 # Получить статусы сборочных заданий
@@ -67,13 +67,13 @@ content_sha: e5910386d0b9eea4
 
 **200** — Успешно
 
-- `orders` — array[object]. Информация о статусах
-  - `errors` — array[object]. Информация об ошибке
-    - `code` — integer. Код ошибки: - `404` - `409` - `400`
-    - `detail` — string. - `NotFound` — сборочное задание не найдено - `StatusMismatch` — операция невозможна для этого статуса сборочного задания - `ImeiIsNotFilled` — не заполнен IMEI - `OrderNotB2B` — операция доступна только для сборочных заданий с признаком B2B-продажи `"isB2b":true` - `InvalidOriginCountryCode` — некорректный код страны происхождения товара
-  - `orderId` — integer. ID сборочного задания
-  - `supplierStatus` — string. Статус сборочного задания, установленный продавцом
-  - `wbStatus` — string. Статус сборочного задания в системе Wildberries
+- `orders` — array[object] **обязательный**. Информация о статусах
+  - `errors` — array[object] **обязательный**. Информация об ошибке
+    - `code` — integer **обязательный**. Код ошибки: - `404` - `409` - `400`
+    - `detail` — string **обязательный**. - `NotFound` — сборочное задание не найдено - `StatusMismatch` — операция невозможна для этого статуса сборочного задания - `ImeiIsNotFilled` — не заполнен IMEI - `OrderNotB2B` — операция доступна только для сборочных заданий с признаком B2B-продажи `"isB2b":true` - `InvalidOriginCountryCode` — некорректный код страны происхождения товара
+  - `orderId` — integer **обязательный**. ID сборочного задания
+  - `supplierStatus` — string **обязательный**. Статус сборочного задания, установленный продавцом
+  - `wbStatus` — string **обязательный**. Статус сборочного задания в системе Wildberries
 
 **400** — Неправильный запрос
 

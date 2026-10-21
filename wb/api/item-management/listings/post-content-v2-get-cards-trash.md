@@ -9,7 +9,7 @@ tags:
 spec_version: items
 source: "https://dev.wildberries.ru/docs/openapi/item-management"
 deprecated: false
-content_sha: c3c42175aaaf56d6
+content_sha: 86218cf97fc36d58
 ---
 
 # Список карточек товаров в корзине
@@ -78,8 +78,8 @@ content_sha: c3c42175aaaf56d6
 **Тело запроса** (`application/json`):
 
 - `settings` — object. Настройки
-  - `sort` — object. Параметр сортировки
-    - `ascending` — boolean. Сортировать по `trashedAt`: - `false` — по убыванию - `true` — по возрастанию По умолчанию: `False`.
+  - `sort` — object. Сортировка по дате и времени помещения карточек товаров в корзину `trashedAt`
+    - `ascending` — boolean. Порядок сортировки: - `false` — по убыванию - `true` — по возрастанию По умолчанию: `False`.
   - `cursor` — object. Пагинатор
     - `limit` — integer. Сколько карточек товаров выдать в ответе По умолчанию: `10`.
     - `trashedAt` — string. Дата и время помещения в корзину

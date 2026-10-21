@@ -9,7 +9,7 @@ tags:
 spec_version: ordersdbw
 source: "https://dev.wildberries.ru/docs/openapi/orders-dbw"
 deprecated: false
-content_sha: 8bf794919fb187db
+content_sha: 4a8d3bfdef424a03
 ---
 
 # Закрепить коды маркировки Честного знака за сборочными заданиями
@@ -52,7 +52,7 @@ content_sha: 8bf794919fb187db
 
 **200** — Успешно
 
-- `requestId` — string. Уникальный ID запроса, содержащего ошибки.
+- `requestId` — string **обязательный**. Уникальный ID запроса, содержащего ошибки.
 - `results` — array[object] **обязательный**
   - `errors` — array[object]. Детали ошибки
     - `code` — integer **обязательный**. Код ошибки: - `404` - `409`

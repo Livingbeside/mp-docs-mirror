@@ -587,7 +587,21 @@
           "errorText": "You can't change prices and discounts while switching to another currency"
         }
       },
-      "SKUUploadDisabled": {
+      "SKUUploadDisabledDelete": {
+        "description": "Удаление остатков по баркодам невозможно. Используйте `chrtId`",
+        "value": {
+          "code": "SKUUploadDisabled",
+          "message": "Uploading stock is not allowed by 'sku'. Please use the 'chrtId' key"
+        }
+      },
+      "SKUUploadDisabledPost": {
+        "description": "Получение остатков по баркодам невозможно. Используйте `chrtId`",
+        "value": {
+          "code": "SKUUploadDisabled",
+          "message": "Uploading stock is not allowed by 'sku'. Please use the 'chrtId' key"
+        }
+      },
+      "SKUUploadDisabledPut": {
         "description": "Обновление остатков по баркодам невозможно. Используйте `chrtId`",
         "value": {
           "code": "SKUUploadDisabled",
@@ -3814,6 +3828,10 @@
         },
         "type": "object"
       },
+      "responseBodyContentError400InvalidSyntax": {
+        "example": "path arguments could not be decoded: strconv.Atoi: parsing \"%D1%82\": invalid syntax",
+        "type": "string"
+      },
       "responseBodyContentError403": {
         "example": {
           "additionalErrors": "Access denied",
@@ -6066,7 +6084,7 @@
         "x-readonly-method": true
       },
       "put": {
-        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод обновляет список контактов [склада продавца](./item-management#tag/sellerWarehouses/operation/getV3Warehouses).\n\n<div class=\"description_important\">\n  Список контактов перезаписывается при обновлении. Поэтому в запросе нужно передать <strong>все</strong> параметры списка контактов, в том числе те, которые вы не собираетесь обновлять.\n</div>\n\nТолько для складов с типом доставки `3` — Деливери WB (DBW).\n<br><br>\nК складу можно добавить максимум 5 контактов. Чтобы удалить контакты, отправьте пустой массив `contacts`.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один профиль продавца для следующих методов DBW:\n<ul>\n    <li>получение и обновление списка контактов</li>\n    <li>получение и удаление идентификаторов маркировки</li>\n    <li>методы сборочных заданий</li>\n</ul> \n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 300 запросов | 200 мс | 20 запросов |\n\nОдин запрос с кодами ответов <code>4XX</code> учитывается как 10 запросов\n</div>\n",
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод обновляет список контактов [склада продавца](./item-management#tag/sellerWarehouses/operation/getV3Warehouses).\n\n<div class=\"description_important\">\n  Список контактов перезаписывается при обновлении. Поэтому в запросе нужно передать <strong>все</strong> параметры списка контактов, в том числе те, которые вы не собираетесь обновлять\n</div>\n\nТолько для складов с типом доставки `3` — Деливери WB ([DBW](./orders-dbw)).\n<br><br>\nК складу можно добавить максимум 5 контактов. Чтобы удалить контакты, отправьте пустой массив `contacts`.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один профиль продавца для следующих методов DBW:\n<ul>\n    <li>получение и обновление списка контактов</li>\n    <li>получение и удаление идентификаторов маркировки</li>\n    <li>методы сборочных заданий</li>\n</ul> \n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 300 запросов | 200 мс | 20 запросов |\n\nОдин запрос с кодами ответов <code>4XX</code> учитывается как 10 запросов\n</div>\n",
         "operationId": "putV3DbwWarehousesWarehouseIdContacts",
         "parameters": [
           {
@@ -6292,7 +6310,7 @@
                     "$ref": "#/components/examples/IncorrectRequestBody"
                   },
                   "SKUUploadDisabled": {
-                    "$ref": "#/components/examples/SKUUploadDisabled"
+                    "$ref": "#/components/examples/SKUUploadDisabledDelete"
                   }
                 },
                 "schema": {
@@ -6446,7 +6464,7 @@
                     "$ref": "#/components/examples/IncorrectRequestBody"
                   },
                   "SKUUploadDisabled": {
-                    "$ref": "#/components/examples/SKUUploadDisabled"
+                    "$ref": "#/components/examples/SKUUploadDisabledPost"
                   }
                 },
                 "schema": {
@@ -6573,7 +6591,7 @@
                     "$ref": "#/components/examples/IncorrectRequestBody"
                   },
                   "SKUUploadDisabled": {
-                    "$ref": "#/components/examples/SKUUploadDisabled"
+                    "$ref": "#/components/examples/SKUUploadDisabledPut"
                   }
                 },
                 "schema": {
@@ -9781,7 +9799,7 @@
                           },
                           "withPhoto": {
                             "default": 0,
-                            "description": "Фильтр по фото:\n  * `-1` — любые карточки товаров\n  * `0` — только карточки без фото. С [16 июня](/release-notes?id=531) — любые карточки товаров\n  * `1` — только карточки с фото\n  * `2` — только карточки без фото. С [16 июня](/release-notes?id=531)\n",
+                            "description": "Фильтр по фото:\n  * `-1` — любые карточки товаров\n  * `0` — любые карточки товаров\n  * `1` — только карточки с фото\n  * `2` — только карточки без фото\n",
                             "enum": [
                               -1,
                               0,
@@ -9794,11 +9812,11 @@
                         "type": "object"
                       },
                       "sort": {
-                        "description": "Параметр сортировки",
+                        "description": "Сортировка по дате и времени изменения карточек товаров `updatedAt`",
                         "properties": {
                           "ascending": {
                             "default": false,
-                            "description": "Сортировать по полю `updatedAt`:\n  - `false` — по убыванию\n  -  `true` — по возрастанию\n",
+                            "description": "Порядок сортировки:\n  - `false` — по убыванию\n  - `true` — по возрастанию\n",
                             "type": "boolean"
                           }
                         },
@@ -10389,10 +10407,12 @@
                           },
                           "nmID": {
                             "description": "Артикул WB, с которого надо запрашивать следующий список карточек товаров",
+                            "nullable": true,
                             "type": "integer"
                           },
                           "trashedAt": {
                             "description": "Дата и время помещения в корзину",
+                            "nullable": true,
                             "type": "string"
                           }
                         },
@@ -10400,20 +10420,23 @@
                       },
                       "filter": {
                         "description": "Параметры фильтрации",
+                        "nullable": true,
                         "properties": {
                           "textSearch": {
                             "description": "Поиск по артикулу продавца, артикулу WB, баркоду",
+                            "nullable": true,
                             "type": "string"
                           }
                         },
                         "type": "object"
                       },
                       "sort": {
-                        "description": "Параметр сортировки",
+                        "description": "Сортировка по дате и времени помещения карточек товаров в корзину `trashedAt`",
+                        "nullable": true,
                         "properties": {
                           "ascending": {
                             "default": false,
-                            "description": "Сортировать по `trashedAt`:\n  - `false` — по убыванию\n  - `true` — по возрастанию\n",
+                            "description": "Порядок сортировки:\n  - `false` — по убыванию\n  - `true` — по возрастанию\n",
                             "type": "boolean"
                           }
                         },
@@ -11027,7 +11050,14 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/responseBodyContentError400"
+                  "oneOf": [
+                    {
+                      "$ref": "#/components/schemas/responseBodyContentError400"
+                    },
+                    {
+                      "$ref": "#/components/schemas/responseBodyContentError400InvalidSyntax"
+                    }
+                  ]
                 }
               }
             },

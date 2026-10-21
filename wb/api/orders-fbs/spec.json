@@ -169,6 +169,13 @@
           "title": "forbidden"
         }
       },
+      "ShippingDtRequired": {
+        "description": "Укажите планируемую дату отгрузки для поставок МГТ (`\"cargoType\":1`) и КГТ+ (`\"cargoType\":3`)",
+        "value": {
+          "code": "ShippingDtRequired",
+          "message": "Shipping date is required for MGT and KGT supplies"
+        }
+      },
       "SpotApiError409V3": {
         "value": {
           "detail": "SPOT actions aren't available for this shipment",
@@ -1593,6 +1600,11 @@
             "example": "г Москва, Морской Проспект 54",
             "type": "string"
           },
+          "available": {
+            "description": "Доступен ли пункт для отгрузки поставки:\n  - `true` — доступен\n  - `false` — недоступен. Возвращается для ПВЗ, если ПВЗ перегружен в планируемую дату отгрузки\n",
+            "example": true,
+            "type": "boolean"
+          },
           "cargoTypes": {
             "description": "Типы товаров, которые принимает пункт отгрузки:\n  - `1` — малогабаритный товар (МГТ)\n  - `2` — сверхгабаритный товар (СГТ)\n  - `3` — крупногабаритный товар (КГТ+)\n",
             "example": [
@@ -1616,7 +1628,7 @@
           },
           "fulfillment": {
             "description": "Услуга **Фулфилмент в СЦ** для поставки по модели FBS:\n  - `true` — доступна\n  - `false` — недоступна\n",
-            "example": true,
+            "example": false,
             "type": "boolean"
           },
           "id": {
@@ -1660,7 +1672,8 @@
           "cargoTypes",
           "latitude",
           "longitude",
-          "fulfillment"
+          "fulfillment",
+          "available"
         ],
         "type": "object"
       },
@@ -1800,6 +1813,84 @@
         },
         "required": [
           "spotAvailable"
+        ],
+        "type": "object"
+      },
+      "SupplyShippingPoint": {
+        "description": "Данные пункта отгрузки",
+        "properties": {
+          "address": {
+            "description": "Адрес",
+            "example": "г Москва, Морской Проспект 54",
+            "type": "string"
+          },
+          "available": {
+            "description": "Доступен ли пункт для отгрузки поставки:\n  - `true` — доступен\n  - `false` — недоступен. Возвращается для ПВЗ, если ПВЗ перегружен в планируемую дату отгрузки\n",
+            "example": true,
+            "type": "boolean"
+          },
+          "city": {
+            "description": "Населённый пункт",
+            "example": "Москва",
+            "type": "string"
+          },
+          "fulfillment": {
+            "description": "Услуга **Фулфилмент в СЦ** для поставки по модели FBS:\n  - `true` — доступна\n  - `false` — недоступна\n",
+            "example": true,
+            "type": "boolean"
+          },
+          "id": {
+            "description": "ID пункта отгрузки",
+            "example": 100,
+            "format": "int64",
+            "type": "integer"
+          },
+          "latitude": {
+            "description": "Широта",
+            "example": 37.588898,
+            "type": "number"
+          },
+          "longitude": {
+            "description": "Долгота",
+            "example": 55.386871,
+            "type": "number"
+          },
+          "name": {
+            "description": "Название",
+            "example": "Москва Морской",
+            "type": "string"
+          },
+          "officeType": {
+            "description": "Тип пункта отгрузки:\n  - `sc` — сортировочный центр\n  - `sw` — склад\n  - `pp` — пункт выдачи заказов (ПВЗ)\n  - `pfc` — партнёрский фулфилмент-центр (ПФЦ)\n  - `gpp` — пункт приёма товаров (ППТ)\n",
+            "example": "pp",
+            "type": "string"
+          }
+        },
+        "required": [
+          "id",
+          "name",
+          "address",
+          "city",
+          "officeType",
+          "latitude",
+          "longitude",
+          "fulfillment",
+          "available"
+        ],
+        "type": "object"
+      },
+      "SupplyShippingPointsResponse": {
+        "properties": {
+          "shippingPoints": {
+            "description": "Список пунктов отгрузки для указанной поставки",
+            "items": {
+              "$ref": "#/components/schemas/SupplyShippingPoint"
+            },
+            "type": "array"
+          }
+        },
+        "required": [
+          "shippingPoints"
         ],
         "type": "object"
       },
@@ -3292,7 +3383,8 @@
     },
     "/api/marketplace/v3/fbs/shipping-points": {
       "get": {
-        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод возвращает доступные пункты отгрузки поставок с фильтрами:\n  - по населённым пунктам России\n  - по типам товаров, которые принимает пункт отгрузки\n\nИспользуйте данные из этого метода, чтобы устанавливать [параметры отгрузки поставок](./orders-fbs#tag/fbsSupplies/operation/patchV3FbsSuppliesShippingMethod).<br><br>\n\nДоступно только для продавцов из РФ.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один профиль продавца для методов <strong>сборочных заданий, поставок, пропусков и настроек автовозврата FBS</strong>:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 300 запросов | 200 мс | 20 запросов |\n\nОдин запрос с кодами ответов <code>4XX</code> учитывается как 10 запросов\n\n</div>\n",
+        "deprecated": true,
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод будет отключен [20 ноября](https://dev.wildberries.ru/release-notes?id=585).\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один профиль продавца для методов <strong>сборочных заданий, поставок, пропусков и настроек автовозврата FBS</strong>:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 300 запросов | 200 мс | 20 запросов |\n\nОдин запрос с кодами ответов <code>4XX</code> учитывается как 10 запросов\n\n</div>\n",
         "operationId": "getV3FbsShippingPoints",
         "parameters": [
           {
@@ -3706,6 +3798,138 @@
       "servers": [
         {
           "description": "**Prod**\n",
+          "url": "https://marketplace-api.wildberries.ru"
+        }
+      ]
+    },
+    "/api/marketplace/v3/fbs/supplies/{supplyId}/shipping-points": {
+      "get": {
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод возвращает доступные пункты отгрузки для указанной поставки.\n\nИспользуйте данные этого метода, чтобы устанавливать [параметры отгрузки поставок](./orders-fbs#tag/fbsSupplies/operation/patchV3FbsSuppliesShippingMethod).\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один профиль продавца для методов <strong>сборочных заданий, поставок, пропусков и настроек автовозврата FBS</strong>:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 300 запросов | 200 мс | 20 запросов |\n\nОдин запрос с кодами ответов <code>4XX</code> учитывается как 10 запросов\n\n</div>\n",
+        "operationId": "getV3FbsSuppliesSupplyIdShippingPoints",
+        "parameters": [
+          {
+            "description": "ID поставки",
+            "example": "WB-GI-100",
+            "in": "path",
+            "name": "supplyId",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "description": "Населённый пункт отгрузки поставки, кириллица",
+            "example": "Москва",
+            "in": "query",
+            "name": "city",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "description": "Тип пункта отгрузки. Укажите значения через запятую:\n  - `sc` — сортировочный центр\n  - `sw` — склад\n  - `pp` — пункт выдачи заказов (ПВЗ)\n  - `pfc` — партнёрский фулфилмент-центр (ПФЦ)\n  - `gpp` — пункт приёма товаров (ППТ)\n",
+            "example": "sc,pp",
+            "in": "query",
+            "name": "officeType",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "description": "Планируемая дата отгрузки поставки в формате `YYYY-MM-DD`.\nОбязательно для заказов МГТ (`\"cargoType\":1`) и КГТ+ (`\"cargoType\":3`). <br>\nЕсли значение передано, в ответе возвращаются только пункты отгрузки, в которые можно отгрузить поставку в указанную дату\n",
+            "example": "2026-08-31",
+            "in": "query",
+            "name": "shippingDt",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SupplyShippingPointsResponse"
+                }
+              }
+            },
+            "description": "<span class='response__value response__value_success'>Успешно</span>"
+          },
+          "400": {
+            "content": {
+              "application/json": {
+                "examples": {
+                  "IncorrectParameter": {
+                    "$ref": "#/components/examples/IncorrectParameter"
+                  },
+                  "ShippingDtRequired": {
+                    "$ref": "#/components/examples/ShippingDtRequired"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            },
+            "description": "<span class='response__value '>Неправильный запрос</span>"
+          },
+          "401": {
+            "$ref": "#/components/responses/401-2"
+          },
+          "403": {
+            "$ref": "#/components/responses/403"
+          },
+          "404": {
+            "content": {
+              "application/json": {
+                "example": {
+                  "code": "404",
+                  "data": {},
+                  "message": "supply not found"
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            },
+            "description": "<span class='response__value '>Поставка не найдена</span>"
+          },
+          "409": {
+            "content": {
+              "application/json": {
+                "example": {
+                  "code": "SupplyHasZeroOrders",
+                  "data": {},
+                  "message": "Failed to process the supply. Make sure it has at least one assembly task assigned to it."
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            },
+            "description": "<span class='response__value '>В поставке нет сборочных заданий</span>"
+          },
+          "429": {
+            "$ref": "#/components/responses/429-2"
+          }
+        },
+        "security": [
+          {
+            "HeaderApiKey": []
+          }
+        ],
+        "summary": "Получить список пунктов отгрузки поставки{{ /api/marketplace/v3/fbs/supplies/{supplyId}/shipping-points }}",
+        "tags": [
+          "fbsSupplies"
+        ],
+        "x-category": "marketplace",
+        "x-readonly-method": true
+      },
+      "servers": [
+        {
           "url": "https://marketplace-api.wildberries.ru"
         }
       ]

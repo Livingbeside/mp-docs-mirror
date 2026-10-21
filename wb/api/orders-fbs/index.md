@@ -2,9 +2,9 @@
 title: Заказы FBS — все методы
 api: wb-orders-fbs
 spec_version: order
-operations: 47
+operations: 48
 source: "https://dev.wildberries.ru/docs/openapi/orders-fbs"
-content_sha: a5695d178917a953
+content_sha: ffd3741e3c1840dc
 ---
 
 # Заказы FBS
@@ -21,7 +21,7 @@ content_sha: a5695d178917a953
 
  Узнать больше о заказах FBS можно в [справочном центре](https://seller.wildberries.ru/instructions/ru/ru/category/b3e60238-fd4c-49ce-8668-ff688725a12d)
 
-Версия спеки: `order` · методов: **47** · разделов справки: **6**
+Версия спеки: `order` · методов: **48** · разделов справки: **6**
 
 Источник: https://dev.wildberries.ru/docs/openapi/orders-fbs
 
@@ -36,6 +36,7 @@ content_sha: a5695d178917a953
 | `GET` | `/api/marketplace/v3/fbs/settings/autoreturns/subcategories/restricted` | autoreturnSettings | [Получить предметы, которые не хранятся на складах WB](autoreturnsettings/get-api-marketplace-v3-fbs-settings-autoreturns-subcategories-restricted.md) |
 | `GET` | `/api/marketplace/v3/fbs/settings/autoreturns` | autoreturnSettings | [Получить настройки автовозврата продавца](autoreturnsettings/get-api-marketplace-v3-fbs-settings-autoreturns.md) |
 | `GET` | `/api/marketplace/v3/fbs/shipping-points` | fbsSupplies | [Получить список пунктов отгрузки поставок](fbssupplies/get-api-marketplace-v3-fbs-shipping-points.md) |
+| `GET` | `/api/marketplace/v3/fbs/supplies/{supplyId}/shipping-points` | fbsSupplies | [Получить список пунктов отгрузки поставки{{ /api/marketplace/v3/fbs/supplies/{supplyId}/shipping-points }}](fbssupplies/get-api-marketplace-v3-fbs-supplies-supplyid-shipping-points.md) |
 | `GET` | `/api/marketplace/v3/fbs/supplies/{supplyId}/stickers/spot` | fbsSupplies | [Получить QR-код СПОТ{{ /api/marketplace/v3/fbs/supplies/{supplyId}/stickers/spot }}](fbssupplies/get-api-marketplace-v3-fbs-supplies-supplyid-stickers-spot.md) |
 | `GET` | `/api/marketplace/v3/supplies/{supplyId}/order-ids` | fbsSupplies | [Получить ID сборочных заданий поставки{{ /api/marketplace/v3/supplies/{supplyId}/order-ids }}](fbssupplies/get-api-marketplace-v3-supplies-supplyid-order-ids.md) |
 | `GET` | `/api/v3/orders/new` | fbsAssemblyOrders | [Получить список новых сборочных заданий](fbsassemblyorders/get-api-v3-orders-new.md) |

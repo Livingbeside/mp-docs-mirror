@@ -311,6 +311,16 @@
             "type": "string"
           }
         },
+        "required": [
+          "replacementPhone",
+          "phone",
+          "firstName",
+          "fullName",
+          "additionalPhones",
+          "additionalPhoneCodes",
+          "orderId",
+          "phoneCode"
+        ],
         "type": "object"
       },
       "ClientInfoResp": {
@@ -323,6 +333,9 @@
             "type": "array"
           }
         },
+        "required": [
+          "orders"
+        ],
         "type": "object"
       },
       "CourierContactsResponse": {
@@ -357,6 +370,11 @@
             "type": "string"
           }
         },
+        "required": [
+          "phone",
+          "carNumber",
+          "fullName"
+        ],
         "type": "object"
       },
       "CourierInfo": {
@@ -383,6 +401,11 @@
             "type": "string"
           }
         },
+        "required": [
+          "contacts",
+          "updatedAt",
+          "mustBeAssigned"
+        ],
         "type": "object"
       },
       "DeliveryDatesInfoResp": {
@@ -432,11 +455,23 @@
                   "type": "integer"
                 }
               },
+              "required": [
+                "dTimeFrom",
+                "dTimeTo",
+                "dTimeFromOld",
+                "dTimeToOld",
+                "dDateOld",
+                "dDate",
+                "id"
+              ],
               "type": "object"
             },
             "type": "array"
           }
         },
+        "required": [
+          "orders"
+        ],
         "type": "object"
       },
       "DeliveryDatesRequest": {
@@ -644,6 +679,28 @@
             "type": "integer"
           }
         },
+        "required": [
+          "options",
+          "address",
+          "comment",
+          "orderUid",
+          "groupId",
+          "article",
+          "colorCode",
+          "rid",
+          "createdAt",
+          "skus",
+          "id",
+          "warehouseId",
+          "nmId",
+          "chrtId",
+          "price",
+          "convertedPrice",
+          "currencyCode",
+          "convertedCurrencyCode",
+          "cargoType",
+          "isZeroOrder"
+        ],
         "type": "object"
       },
       "OrderCourierInfo": {
@@ -663,6 +720,10 @@
             "type": "integer"
           }
         },
+        "required": [
+          "courierInfo",
+          "orderID"
+        ],
         "type": "object"
       },
       "OrderCourierInfoResp": {
@@ -674,6 +735,9 @@
             "type": "array"
           }
         },
+        "required": [
+          "orders"
+        ],
         "type": "object"
       },
       "OrderNewDBW": {
@@ -851,6 +915,30 @@
             "type": "integer"
           }
         },
+        "required": [
+          "salePrice",
+          "requiredMeta",
+          "comment",
+          "options",
+          "address",
+          "orderUid",
+          "groupId",
+          "article",
+          "colorCode",
+          "rid",
+          "createdAt",
+          "skus",
+          "id",
+          "warehouseId",
+          "nmId",
+          "chrtId",
+          "price",
+          "convertedPrice",
+          "currencyCode",
+          "convertedCurrencyCode",
+          "cargoType",
+          "isZeroOrder"
+        ],
         "type": "object"
       },
       "OrdersRequestAPI": {
@@ -1033,7 +1121,8 @@
           }
         },
         "required": [
-          "results"
+          "results",
+          "requestId"
         ],
         "type": "object"
       },
@@ -1089,6 +1178,11 @@
                         "type": "string"
                       }
                     },
+                    "required": [
+                      "key",
+                      "value",
+                      "decision"
+                    ],
                     "type": "object"
                   },
                   "type": "array"
@@ -1100,7 +1194,9 @@
                 }
               },
               "required": [
-                "isError"
+                "isError",
+                "metaDetails",
+                "orderId"
               ],
               "type": "object"
             },
@@ -1113,7 +1209,8 @@
           }
         },
         "required": [
-          "requestId"
+          "requestId",
+          "orders"
         ],
         "type": "object"
       },
@@ -1268,7 +1365,8 @@
           }
         },
         "required": [
-          "results"
+          "results",
+          "requestId"
         ],
         "type": "object"
       }
@@ -2290,12 +2388,20 @@
                             "type": "string"
                           }
                         },
+                        "required": [
+                          "supplierStatus",
+                          "wbStatus",
+                          "id"
+                        ],
                         "type": "object"
                       },
                       "nullable": false,
                       "type": "array"
                     }
                   },
+                  "required": [
+                    "orders"
+                  ],
                   "type": "object"
                 }
               }

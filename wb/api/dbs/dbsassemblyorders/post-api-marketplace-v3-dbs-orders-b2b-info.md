@@ -9,7 +9,7 @@ tags:
 spec_version: dbs
 source: "https://dev.wildberries.ru/docs/openapi/dbs"
 deprecated: false
-content_sha: c5729a1fde236f87
+content_sha: 3d82c792a98730e1
 ---
 
 # Информация о покупателе B2B
@@ -42,11 +42,11 @@ content_sha: c5729a1fde236f87
 **200** — Успешно
 
 - `requestId` — string **обязательный**. Уникальный ID запроса
-- `results` — array[object]
+- `results` — array[object] **обязательный**
   - `data` — object. Данные покупателя B2B
-    - `inn` — string. Индивидуальный номер налогоплательщика (ИНН)
-    - `kpp` — string. Код причины постановки на учёт (КПП)
-    - `orgName` — string. Наименование организации
+    - `inn` — string **обязательный**. Индивидуальный номер налогоплательщика (ИНН)
+    - `kpp` — string **обязательный**. Код причины постановки на учёт (КПП)
+    - `orgName` — string **обязательный**. Наименование организации
   - `errors` — array[object]. Детали ошибки
     - `code` — integer. Код ошибки
     - `detail` — string. Описание ошибки

@@ -1715,7 +1715,7 @@
           },
           "utdUcdDate": {
             "description": "Дата УПД или УКД",
-            "example": "2006-01-02",
+            "example": "2026-10-12",
             "format": "date",
             "type": "string"
           },

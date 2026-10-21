@@ -9,7 +9,7 @@ tags:
 spec_version: ordersdbw
 source: "https://dev.wildberries.ru/docs/openapi/orders-dbw"
 deprecated: false
-content_sha: 99c849e157c4cc2b
+content_sha: ec20845108fc7fe3
 ---
 
 # Получить статусы сборочных заданий
@@ -74,10 +74,10 @@ content_sha: 99c849e157c4cc2b
 
 **200** — Успешно
 
-- `orders` — array[object]
-  - `id` — integer<int64>. ID сборочного задания
-  - `supplierStatus` — string. Статус сборочного задания, установленный продавцом
-  - `wbStatus` — string. Статус сборочного задания в системе Wildberries
+- `orders` — array[object] **обязательный**
+  - `id` — integer<int64> **обязательный**. ID сборочного задания
+  - `supplierStatus` — string **обязательный**. Статус сборочного задания, установленный продавцом
+  - `wbStatus` — string **обязательный**. Статус сборочного задания в системе Wildberries
 
 **400** — Неправильный запрос
 

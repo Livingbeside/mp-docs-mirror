@@ -9,7 +9,7 @@ tags:
 spec_version: ordersdbw
 source: "https://dev.wildberries.ru/docs/openapi/orders-dbw"
 deprecated: false
-content_sha: 12ba6125a493af60
+content_sha: 6f5817663fb8d7bb
 ---
 
 # Удалить идентификаторы маркировки сборочных заданий
@@ -56,7 +56,7 @@ content_sha: 12ba6125a493af60
 
 **200** — Успешно
 
-- `requestId` — string. Уникальный ID запроса. Отображается для ответов с ошибками
+- `requestId` — string **обязательный**. Уникальный ID запроса. Отображается для ответов с ошибками
 - `results` — array[object] **обязательный**
   - `errors` — array[object]. Детали ошибки
     - `code` — integer **обязательный**. Код ошибки: - `404` - `409`

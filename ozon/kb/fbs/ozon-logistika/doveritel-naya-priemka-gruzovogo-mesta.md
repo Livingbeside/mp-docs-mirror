@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /fbs/ozon-logistika/doveritel-naya-priemka-gruzovogo-mesta
 source: "https://seller-edu.ozon.ru/libra/fbs/ozon-logistika/doveritel-naya-priemka-gruzovogo-mesta"
-updated: "2026-10-19 13:31:55"
+updated: "2026-10-20 11:37:45"
 doc_id: 811
-fetched_at: "2026-10-20T01:56:49Z"
-content_sha: 09c800fb48756f6c
+fetched_at: "2026-10-21T01:43:54Z"
+content_sha: 491b1eed3870d435
 ---
 
 # Доверительная приёмка грузового места
@@ -49,6 +49,8 @@ _Главная / Продажа со своего склада (FBS) / Отгр
 [Молжаниново (СЦ)](https://seller-edu.ozon.ru/fbs/punkty-priema/moskva#молжаниново-мск-молжаниново-3-хаб)
 
 [Пушкино (СЦ)](https://seller-edu.ozon.ru/fbs/punkty-priema/moskva#пушкино-мо-пушкино-фбс)
+
+[Раменское (СЦ)](https://seller-edu.ozon.ru/fbs/punkty-priema/moskva#раменское-мо-раменскии-до)
 
 [Саларьево (СЦ)](/fbs/punkty-priema/moskva#саларьево-мск-саларьево-3-хаб)
 

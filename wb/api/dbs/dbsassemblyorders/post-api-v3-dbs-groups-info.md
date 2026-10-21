@@ -9,7 +9,7 @@ tags:
 spec_version: dbs
 source: "https://dev.wildberries.ru/docs/openapi/dbs"
 deprecated: false
-content_sha: fb9f84557d08ccc2
+content_sha: aa90173cda7c578c
 ---
 
 # Получить информацию о платной доставке
@@ -40,11 +40,11 @@ content_sha: fb9f84557d08ccc2
 
 **200** — Успешно
 
-- `groupID` — string<UUID>. ID группы сборочных заданий
-- `deliveryCost` — integer. Стоимость платной доставки в валюте продажи, умноженная на 100
-- `convertedDeliveryCost` — integer. Стоимость платной доставки в валюте страны продавца, умноженная на 100. Предоставляется в информационных целях.
-- `currencyCode` — integer<ISO 4217>. Код валюты продажи
-- `convertedCurrencyCode` — integer. Код валюты страны продавца
+- `groupID` — string<UUID> **обязательный**. ID группы сборочных заданий
+- `deliveryCost` — integer **обязательный**. Стоимость платной доставки в валюте продажи, умноженная на 100
+- `convertedDeliveryCost` — integer **обязательный**. Стоимость платной доставки в валюте страны продавца, умноженная на 100. Предоставляется в информационных целях.
+- `currencyCode` — integer<ISO 4217> **обязательный**. Код валюты продажи
+- `convertedCurrencyCode` — integer **обязательный**. Код валюты страны продавца
 
 **400** — Неправильный запрос
 

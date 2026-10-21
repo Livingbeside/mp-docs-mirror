@@ -8,23 +8,19 @@ tags:
   - fbsSupplies
 spec_version: order
 source: "https://dev.wildberries.ru/docs/openapi/orders-fbs"
-deprecated: false
-content_sha: 5b4a7bfe67b203d6
+deprecated: true
+content_sha: a9acf9c7470d51f7
 ---
 
 # Получить список пунктов отгрузки поставок
 
 `GET /api/marketplace/v3/fbs/shipping-points`
 
+> ⚠️ Метод помечен как **deprecated**.
+
 Описание метода
 
-Метод возвращает доступные пункты отгрузки поставок с фильтрами:
- - по населённым пунктам России
- - по типам товаров, которые принимает пункт отгрузки
-
-Используйте данные из этого метода, чтобы устанавливать [параметры отгрузки поставок](./orders-fbs#tag/fbsSupplies/operation/patchV3FbsSuppliesShippingMethod).
-
-Доступно только для продавцов из РФ.
+Метод будет отключен [20 ноября](https://dev.wildberries.ru/release-notes?id=585).
 
 Лимит запросов на один профиль продавца для методов сборочных заданий, поставок, пропусков и настроек автовозврата FBS:
 
@@ -55,6 +51,7 @@ content_sha: 5b4a7bfe67b203d6
   - `latitude` — number **обязательный**. Широта
   - `longitude` — number **обязательный**. Долгота
   - `fulfillment` — boolean **обязательный**. Услуга **Фулфилмент в СЦ** для поставки по модели FBS: - `true` — доступна - `false` — недоступна
+  - `available` — boolean **обязательный**. Доступен ли пункт для отгрузки поставки: - `true` — доступен - `false` — недоступен. Возвращается для ПВЗ, если ПВЗ перегружен в планируемую дату отгрузки
 
 **400** — Неправильный запрос
 

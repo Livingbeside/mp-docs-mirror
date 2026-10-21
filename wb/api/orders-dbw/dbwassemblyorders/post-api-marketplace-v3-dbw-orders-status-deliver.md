@@ -9,7 +9,7 @@ tags:
 spec_version: ordersdbw
 source: "https://dev.wildberries.ru/docs/openapi/orders-dbw"
 deprecated: false
-content_sha: 0bc295b147ee34e9
+content_sha: c07b4394e8af5cbd
 ---
 
 # Перевести сборочные задания в доставку
@@ -48,7 +48,7 @@ content_sha: 0bc295b147ee34e9
 
 **200** — Успешно
 
-- `requestId` — string. Уникальный ID запроса, содержащего ошибки.
+- `requestId` — string **обязательный**. Уникальный ID запроса, содержащего ошибки.
 - `results` — array[object] **обязательный**
   - `errors` — array[object]. Детали ошибки
     - `code` — integer **обязательный**. Код ошибки: - `404` - `409`

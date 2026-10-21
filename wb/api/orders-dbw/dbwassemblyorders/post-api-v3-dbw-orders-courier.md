@@ -9,7 +9,7 @@ tags:
 spec_version: ordersdbw
 source: "https://dev.wildberries.ru/docs/openapi/orders-dbw"
 deprecated: false
-content_sha: d6c334bbb75e6927
+content_sha: 71cd0d5f1bea987a
 ---
 
 # Информация о курьере
@@ -47,17 +47,17 @@ content_sha: d6c334bbb75e6927
 
 **200** — Успешно
 
-- `orders` — array[object]
-  - `courierInfo` — object. Информация о курьере
-    - `contacts` — object. Контактные данные курьера
-      - `carNumber` — string. Номер автомобиля
-      - `fullName` — string. ФИО курьера
-      - `phone` — string. Номер телефона
+- `orders` — array[object] **обязательный**
+  - `courierInfo` — object **обязательный**. Информация о курьере
+    - `contacts` — object **обязательный**. Контактные данные курьера
+      - `carNumber` — string **обязательный**. Номер автомобиля
+      - `fullName` — string **обязательный**. ФИО курьера
+      - `phone` — string **обязательный**. Номер телефона
       - `pTimeFrom` — string<date-time>. Дата и время, с которого прибудет курьер
       - `pTimeTo` — string<date-time>. Дата и время, до которого прибудет курьер
-    - `mustBeAssigned` — boolean. Должен ли быть назначен курьер к текущему моменту: - `false` — нет - `true` — да Если `"mustBeAssigned":true`, а `"contacts":null`, необходимо запросить контакты в [поддержке](https://seller.wildberries.ru/service-desk-v2)
-    - `updatedAt` — string<date-time>. Дата и время обновления информации о курьере. Если `null`, информация не обновлялась
-  - `orderID` — integer. ID сборочного задания
+    - `mustBeAssigned` — boolean **обязательный**. Должен ли быть назначен курьер к текущему моменту: - `false` — нет - `true` — да Если `"mustBeAssigned":true`, а `"contacts":null`, необходимо запросить контакты в [поддержке](https://seller.wildberries.ru/service-desk-v2)
+    - `updatedAt` — string<date-time> **обязательный**. Дата и время обновления информации о курьере. Если `null`, информация не обновлялась
+  - `orderID` — integer **обязательный**. ID сборочного задания
 
 **400** — Неправильный запрос
 

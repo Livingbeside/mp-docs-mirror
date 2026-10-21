@@ -357,6 +357,17 @@
             "type": "string"
           }
         },
+        "required": [
+          "replacementPhone",
+          "phone",
+          "firstName",
+          "fullName",
+          "additionalPhones",
+          "replacementAdditionalPhones",
+          "additionalPhoneCodes",
+          "orderID",
+          "phoneCode"
+        ],
         "type": "object"
       },
       "DbsOnlyClientInfoResp": {
@@ -370,6 +381,9 @@
             "type": "array"
           }
         },
+        "required": [
+          "orders"
+        ],
         "type": "object"
       },
       "DeliveryDatesInfoResp": {
@@ -431,11 +445,23 @@
                   "type": "integer"
                 }
               },
+              "required": [
+                "dTimeFrom",
+                "dTimeTo",
+                "dTimeFromOld",
+                "dTimeToOld",
+                "dDateOld",
+                "dDate",
+                "id"
+              ],
               "type": "object"
             },
             "type": "array"
           }
         },
+        "required": [
+          "orders"
+        ],
         "type": "object"
       },
       "DeliveryDatesRequest": {
@@ -511,6 +537,11 @@
                 "type": "number"
               }
             },
+            "required": [
+              "fullAddress",
+              "longitude",
+              "latitude"
+            ],
             "type": "object"
           },
           "article": {
@@ -668,6 +699,33 @@
             "type": "integer"
           }
         },
+        "required": [
+          "options",
+          "address",
+          "comment",
+          "orderUid",
+          "groupId",
+          "article",
+          "colorCode",
+          "rid",
+          "createdAt",
+          "deliveryType",
+          "scanPrice",
+          "wbStickerId",
+          "skus",
+          "id",
+          "warehouseId",
+          "nmId",
+          "chrtId",
+          "price",
+          "finalPrice",
+          "convertedFinalPrice",
+          "convertedPrice",
+          "currencyCode",
+          "convertedCurrencyCode",
+          "cargoType",
+          "isZeroOrder"
+        ],
         "type": "object"
       },
       "OrderNewDBS": {
@@ -813,6 +871,9 @@
                 "type": "boolean"
               }
             },
+            "required": [
+              "isB2b"
+            ],
             "type": "object"
           },
           "orderUid": {
@@ -869,6 +930,34 @@
             "type": "integer"
           }
         },
+        "required": [
+          "salePrice",
+          "requiredMeta",
+          "options",
+          "address",
+          "comment",
+          "orderUid",
+          "groupId",
+          "article",
+          "colorCode",
+          "rid",
+          "createdAt",
+          "deliveryType",
+          "wbStickerId",
+          "skus",
+          "id",
+          "warehouseId",
+          "nmId",
+          "chrtId",
+          "price",
+          "finalPrice",
+          "convertedFinalPrice",
+          "convertedPrice",
+          "currencyCode",
+          "convertedCurrencyCode",
+          "cargoType",
+          "isZeroOrder"
+        ],
         "type": "object"
       },
       "OrdersRequestAPI": {
@@ -943,6 +1032,11 @@
             "type": "string"
           }
         },
+        "required": [
+          "orgName",
+          "inn",
+          "kpp"
+        ],
         "type": "object"
       },
       "api.B2bClientInfoResponse": {
@@ -1022,7 +1116,8 @@
           }
         },
         "required": [
-          "requestId"
+          "requestId",
+          "results"
         ],
         "type": "object"
       },
@@ -1122,6 +1217,10 @@
             "type": "string"
           }
         },
+        "required": [
+          "detail",
+          "code"
+        ],
         "type": "object"
       },
       "api.Error": {
@@ -1267,7 +1366,8 @@
           }
         },
         "required": [
-          "orderId"
+          "orderId",
+          "isError"
         ],
         "type": "object"
       },
@@ -1302,6 +1402,13 @@
               "type": "string"
             }
           },
+          "required": [
+            "groupID",
+            "deliveryCost",
+            "convertedDeliveryCost",
+            "currencyCode",
+            "convertedCurrencyCode"
+          ],
           "type": "object"
         },
         "nullable": true,
@@ -1351,6 +1458,12 @@
             "type": "string"
           }
         },
+        "required": [
+          "errors",
+          "orderId",
+          "supplierStatus",
+          "wbStatus"
+        ],
         "type": "object"
       },
       "api.OrderStatusesV2": {
@@ -1384,6 +1497,9 @@
             "type": "array"
           }
         },
+        "required": [
+          "orders"
+        ],
         "type": "object"
       },
       "api.OrdersCodeRequest": {
@@ -1535,6 +1651,11 @@
                         "type": "string"
                       }
                     },
+                    "required": [
+                      "key",
+                      "value",
+                      "decision"
+                    ],
                     "type": "object"
                   },
                   "type": "array"
@@ -1546,7 +1667,9 @@
                 }
               },
               "required": [
-                "isError"
+                "isError",
+                "metaDetails",
+                "orderId"
               ],
               "type": "object"
             },
@@ -1559,7 +1682,8 @@
           }
         },
         "required": [
-          "requestId"
+          "requestId",
+          "orders"
         ],
         "type": "object"
       },
@@ -1660,6 +1784,10 @@
             "type": "integer"
           }
         },
+        "required": [
+          "orderId",
+          "isError"
+        ],
         "type": "object"
       },
       "api.StatusSetDeliverResponses": {
@@ -1712,6 +1840,10 @@
             "type": "array"
           }
         },
+        "required": [
+          "requestId",
+          "results"
+        ],
         "type": "object"
       },
       "api.StatusSetResponse": {
@@ -1734,6 +1866,10 @@
             "type": "integer"
           }
         },
+        "required": [
+          "orderId",
+          "isError"
+        ],
         "type": "object"
       },
       "api.StatusSetResponses": {
@@ -1769,6 +1905,10 @@
             "type": "array"
           }
         },
+        "required": [
+          "requestId",
+          "results"
+        ],
         "type": "object"
       },
       "api.UIN": {
@@ -3231,11 +3371,19 @@
                             "type": "integer"
                           }
                         },
+                        "required": [
+                          "orderId",
+                          "isError"
+                        ],
                         "type": "object"
                       },
                       "type": "array"
                     }
                   },
+                  "required": [
+                    "requestId",
+                    "results"
+                  ],
                   "type": "object"
                 }
               }
@@ -3746,7 +3894,6 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "nullable": false,
                   "properties": {
                     "next": {
                       "$ref": "#/components/schemas/Next"
@@ -3759,6 +3906,10 @@
                       "type": "array"
                     }
                   },
+                  "required": [
+                    "orders",
+                    "next"
+                  ],
                   "type": "object"
                 }
               }
@@ -4055,17 +4206,18 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "nullable": false,
                   "properties": {
                     "orders": {
                       "description": "Список новых сборочных заданий",
                       "items": {
                         "$ref": "#/components/schemas/OrderNewDBS"
                       },
-                      "nullable": false,
                       "type": "array"
                     }
                   },
+                  "required": [
+                    "orders"
+                  ],
                   "type": "object"
                 }
               }
