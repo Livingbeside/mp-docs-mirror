@@ -9,7 +9,7 @@ tags:
 spec_version: ordersfbw
 source: "https://dev.wildberries.ru/docs/openapi/orders-fbw"
 deprecated: false
-content_sha: 45a70c85d68dcdb9
+content_sha: b774016bcef509d0
 ---
 
 # Опции приёмки
@@ -28,8 +28,6 @@ content_sha: 45a70c85d68dcdb9
 | Сервисный | 1 мин | 6 запросов | 10 сек | 6 запросов |
 | Базовый с секретом | 1 мин | 6 запросов | 10 сек | 6 запросов |
 | Базовый | 1 ч | 2 запроса | 30 мин | 1 запрос |
-
-В песочнице — максимум 1 запрос в секунду суммарно для всех методов.
 
 ## Параметры
 

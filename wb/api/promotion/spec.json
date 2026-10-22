@@ -3746,7 +3746,7 @@
     }
   },
   "info": {
-    "description": "<div class=\"description_important\">\n  Узнать больше о маркетинге и продвижении можно в <a href=\"https://seller.wildberries.ru/instructions/category/59d92bd3-6ea0-40f2-b762-ca8835d7d42e?goBackOption=prevRoute&categoryId=479385c6-de01-4b4d-ad4e-ed941e65582e\">справочном центре</a>\n</div>\n\n<div class=\"api-block\">\n\nМетоды маркетинга и продвижения позволяют:\n  1. Получать информацию о кампаниях [продвижения](./promotion#tag/campaigns) и [медиакампаниях](./promotion#tag/media)\n  2. [Создавать](./promotion#tag/creatingCampaigns) и [управлять](./promotion#tag/campaignManagement) кампаниями\n  3. Управлять [финансами](./promotion#tag/finances) кампаний\n  4. Выгружать [статистику](./promotion#tag/statistics) кампаний продвижения и медиакампаний\n  5. Работать с [календарём акций](./promotion#tag/promoCalendar)\n\nДанные синхронизируются с базой раз в 3 минуты. Статусы кампаний меняются раз в минуту. Ставки кампаний меняются раз в 30 секунд.<br><br>\n\nВы можете протестировать методы продвижения в [песочнице](/sandbox). Также в песочнице доступны [специальные методы](/docs/openapi-other/sandbox-environment#tag/promotion) для управления тестовым балансом\n\n</div>\n",
+    "description": "<div class=\"description_important\">\n  Узнать больше о маркетинге и продвижении можно в <a href=\"https://seller.wildberries.ru/instructions/category/59d92bd3-6ea0-40f2-b762-ca8835d7d42e?goBackOption=prevRoute&categoryId=479385c6-de01-4b4d-ad4e-ed941e65582e\">справочном центре</a>\n</div>\n\n<div class=\"api-block\">\n\nМетоды маркетинга и продвижения позволяют:\n  1. Получать информацию о кампаниях [продвижения](./promotion#tag/campaigns) и [медиакампаниях](./promotion#tag/media)\n  2. [Создавать](./promotion#tag/creatingCampaigns) и [управлять](./promotion#tag/campaignManagement) кампаниями\n  3. Управлять [финансами](./promotion#tag/finances) кампаний\n  4. Выгружать [статистику](./promotion#tag/statistics) кампаний продвижения и медиакампаний\n  5. Работать с [календарём акций](./promotion#tag/promoCalendar)\n\nДанные синхронизируются с базой раз в 3 минуты. Статусы кампаний меняются раз в минуту. Ставки кампаний меняются раз в 30 секунд.<br><br>\n\n\n</div>\n",
     "title": "Маркетинг и продвижение",
     "version": "promotion",
     "x-file-name": "promotion"
@@ -4132,12 +4132,7 @@
       },
       "servers": [
         {
-          "description": "**Prod**\n",
           "url": "https://advert-api.wildberries.ru"
-        },
-        {
-          "description": "**Sandbox**\n",
-          "url": "https://advert-api-sandbox.wildberries.ru"
         }
       ]
     },
@@ -5168,12 +5163,7 @@
       },
       "servers": [
         {
-          "description": "**Prod**\n",
           "url": "https://advert-api.wildberries.ru"
-        },
-        {
-          "description": "**Sandbox**\n",
-          "url": "https://advert-api-sandbox.wildberries.ru"
         }
       ]
     },
@@ -5275,12 +5265,7 @@
       },
       "servers": [
         {
-          "description": "**Prod**\n",
           "url": "https://advert-api.wildberries.ru"
-        },
-        {
-          "description": "**Sandbox**\n",
-          "url": "https://advert-api-sandbox.wildberries.ru"
         }
       ]
     },
@@ -5364,12 +5349,7 @@
       },
       "servers": [
         {
-          "description": "**Prod**\n",
           "url": "https://advert-api.wildberries.ru"
-        },
-        {
-          "description": "**Sandbox**\n",
-          "url": "https://advert-api-sandbox.wildberries.ru"
         }
       ]
     },
@@ -5450,12 +5430,7 @@
       },
       "servers": [
         {
-          "description": "**Prod**\n",
           "url": "https://advert-api.wildberries.ru"
-        },
-        {
-          "description": "**Sandbox**\n",
-          "url": "https://advert-api-sandbox.wildberries.ru"
         }
       ]
     },
@@ -6059,12 +6034,7 @@
       },
       "servers": [
         {
-          "description": "**Prod**\n",
           "url": "https://advert-api.wildberries.ru"
-        },
-        {
-          "description": "**Sandbox**\n",
-          "url": "https://advert-api-sandbox.wildberries.ru"
         }
       ]
     },
@@ -6160,12 +6130,7 @@
       },
       "servers": [
         {
-          "description": "**Prod**\n",
           "url": "https://advert-api.wildberries.ru"
-        },
-        {
-          "description": "**Sandbox**\n",
-          "url": "https://advert-api-sandbox.wildberries.ru"
         }
       ]
     },
@@ -6284,12 +6249,7 @@
       },
       "servers": [
         {
-          "description": "**Prod**\n",
           "url": "https://advert-api.wildberries.ru"
-        },
-        {
-          "description": "**Sandbox**\n",
-          "url": "https://advert-api-sandbox.wildberries.ru"
         }
       ]
     },
@@ -6635,12 +6595,7 @@
       },
       "servers": [
         {
-          "description": "**Prod**\n",
           "url": "https://advert-api.wildberries.ru"
-        },
-        {
-          "description": "**Sandbox**\n",
-          "url": "https://advert-api-sandbox.wildberries.ru"
         }
       ]
     },
@@ -6753,12 +6708,7 @@
       },
       "servers": [
         {
-          "description": "**Prod**\n",
           "url": "https://advert-api.wildberries.ru"
-        },
-        {
-          "description": "**Sandbox**\n",
-          "url": "https://advert-api-sandbox.wildberries.ru"
         }
       ]
     },
@@ -6979,12 +6929,7 @@
       },
       "servers": [
         {
-          "description": "**Prod**\n",
           "url": "https://advert-api.wildberries.ru"
-        },
-        {
-          "description": "**Sandbox**\n",
-          "url": "https://advert-api-sandbox.wildberries.ru"
         }
       ]
     },
@@ -7127,12 +7072,7 @@
       },
       "servers": [
         {
-          "description": "**Prod**\n",
           "url": "https://advert-api.wildberries.ru"
-        },
-        {
-          "description": "**Sandbox**\n",
-          "url": "https://advert-api-sandbox.wildberries.ru"
         }
       ]
     },
@@ -7258,12 +7198,7 @@
       },
       "servers": [
         {
-          "description": "**Prod**\n",
           "url": "https://advert-api.wildberries.ru"
-        },
-        {
-          "description": "**Sandbox**\n",
-          "url": "https://advert-api-sandbox.wildberries.ru"
         }
       ]
     },
@@ -7358,18 +7293,13 @@
       },
       "servers": [
         {
-          "description": "**Prod**\n",
           "url": "https://advert-api.wildberries.ru"
-        },
-        {
-          "description": "**Sandbox**\n",
-          "url": "https://advert-api-sandbox.wildberries.ru"
         }
       ]
     },
     "/adv/v3/fullstats": {
       "get": {
-        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод формирует статистику для кампаний независимо от типа.\n<br><br>\nМаксимальный период в запросе — 31 день.\n<br><br>\nДля кампаний в статусах `7`, `9` и `11`.\n<br><br>\nВ песочнице статистика кампаний доступна за последние 30 дней. Генерируется только для компаний в статусе `9`, тип `8`, 9 раз в сутки\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один профиль продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 мин | 3 запроса | 20 сек | 1 запрос |\n| Сервисный | 1 мин | 3 запроса | 20 сек | 1 запрос |\n| Базовый с секретом | 1 мин | 3 запроса | 20 сек | 1 запрос |\n| Базовый | 1 ч | 1 запрос | 1 ч | 1 запрос |\n</div>\n",
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод формирует статистику для кампаний независимо от типа.\n<br><br>\nМаксимальный период в запросе — 31 день.\n<br><br>\nДля кампаний в статусах `7`, `9` и `11`.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один профиль продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 мин | 3 запроса | 20 сек | 1 запрос |\n| Сервисный | 1 мин | 3 запроса | 20 сек | 1 запрос |\n| Базовый с секретом | 1 мин | 3 запроса | 20 сек | 1 запрос |\n| Базовый | 1 ч | 1 запрос | 1 ч | 1 запрос |\n</div>\n",
         "operationId": "getV3Fullstats",
         "parameters": [
           {
@@ -8139,7 +8069,6 @@
       },
       "servers": [
         {
-          "description": "**Prod**\n",
           "url": "https://advert-api.wildberries.ru"
         }
       ]
@@ -8962,7 +8891,6 @@
       },
       "servers": [
         {
-          "description": "**Prod**\n",
           "url": "https://advert-api.wildberries.ru"
         }
       ]
@@ -9188,7 +9116,7 @@
   ],
   "tags": [
     {
-      "description": "<div class=\"api-description\">\n\n<div class=\"description_important\">\n  Узнать больше о маркетинге и продвижении можно в <a href=\"https://seller.wildberries.ru/instructions/category/59d92bd3-6ea0-40f2-b762-ca8835d7d42e?goBackOption=prevRoute&categoryId=479385c6-de01-4b4d-ad4e-ed941e65582e\">справочном центре</a>\n</div>\n\n<div class=\"api-block\">\n\nМетоды маркетинга и продвижения позволяют:\n  1. Получать информацию о кампаниях [продвижения](./promotion#tag/campaigns) и [медиакампаниях](./promotion#tag/media)\n  2. [Создавать](./promotion#tag/creatingCampaigns) и [управлять](./promotion#tag/campaignManagement) кампаниями\n  3. Управлять [финансами](./promotion#tag/finances) кампаний\n  4. Выгружать [статистику](./promotion#tag/statistics) кампаний продвижения и медиакампаний\n  5. Работать с [календарём акций](./promotion#tag/promoCalendar)\n\nДанные синхронизируются с базой раз в 3 минуты. Статусы кампаний меняются раз в минуту. Ставки кампаний меняются раз в 30 секунд.<br><br>\n\nВы можете протестировать методы продвижения в [песочнице](/sandbox). Также в песочнице доступны [специальные методы](/docs/openapi-other/sandbox-environment#tag/promotion) для управления тестовым балансом\n\n</div>\n\n\n</div>",
+      "description": "<div class=\"api-description\">\n\n<div class=\"description_important\">\n  Узнать больше о маркетинге и продвижении можно в <a href=\"https://seller.wildberries.ru/instructions/category/59d92bd3-6ea0-40f2-b762-ca8835d7d42e?goBackOption=prevRoute&categoryId=479385c6-de01-4b4d-ad4e-ed941e65582e\">справочном центре</a>\n</div>\n\n<div class=\"api-block\">\n\nМетоды маркетинга и продвижения позволяют:\n  1. Получать информацию о кампаниях [продвижения](./promotion#tag/campaigns) и [медиакампаниях](./promotion#tag/media)\n  2. [Создавать](./promotion#tag/creatingCampaigns) и [управлять](./promotion#tag/campaignManagement) кампаниями\n  3. Управлять [финансами](./promotion#tag/finances) кампаний\n  4. Выгружать [статистику](./promotion#tag/statistics) кампаний продвижения и медиакампаний\n  5. Работать с [календарём акций](./promotion#tag/promoCalendar)\n\nДанные синхронизируются с базой раз в 3 минуты. Статусы кампаний меняются раз в минуту. Ставки кампаний меняются раз в 30 секунд.<br><br>\n\n\n</div>\n\n\n</div>",
       "name": "Маркетинг и продвижение",
       "x-traitTag": true
     },

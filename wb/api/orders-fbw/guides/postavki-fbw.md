@@ -5,7 +5,7 @@ tag: Поставки FBW
 group: ""
 kind: guide
 source: "https://dev.wildberries.ru/docs/openapi/orders-fbw"
-content_sha: 7067e1a0fb259ceb
+content_sha: 0348240fc1ca3707
 ---
 
 # Поставки FBW
@@ -15,5 +15,3 @@ content_sha: 7067e1a0fb259ceb
 В разделе описаны методы получения:
  - [информации для формирования поставок](./orders-fbw#tag/informationForFormingSupplies)
  - [информации о поставках](./orders-fbw#tag/suppliesInformation)
-
-Вы можете создавать карточки товара в песочнице [Контента](./api-information#tag/authorization/Kategorii-tokenov), а потом использовать баркоды товаров в песочнице Поставок

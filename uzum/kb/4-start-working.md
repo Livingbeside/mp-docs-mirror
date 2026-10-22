@@ -4,8 +4,8 @@ marketplace: uzum
 kind: article
 path: /4.start-working/
 source: "https://seller.uzum.uz/manual/4.start-working/"
-fetched_at: "2026-10-06T02:02:24Z"
-content_sha: 1134820f7763e36f
+fetched_at: "2026-10-22T02:00:41Z"
+content_sha: 9899bfe8c2aab3bf
 ---
 
 # 4. Начало работы
@@ -151,7 +151,7 @@ content_sha: 1134820f7763e36f
 
 – МФО — 01158
 
-– расчетный счет — 20208000005504983001
+– расчетный счет — 20208000305504983001
 
 – дата заключения договора (Уточнить у [бизнес-поддержки](https://telegram.me/umarket_business_bot))
 

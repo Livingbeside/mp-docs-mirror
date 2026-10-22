@@ -10,7 +10,7 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: 49272890e0e766d2
+content_sha: 0d09a96eb65238d6
 ---
 
 # Изменение информации о точке продаж
@@ -41,7 +41,7 @@ content_sha: 49272890e0e766d2
 - `shopOutletCode` — string. Идентификатор точки продаж, присвоенный магазином.
 - `visibility` — string (HIDDEN, VISIBLE, UNKNOWN). Состояние точки продаж. Возможные значения: * `HIDDEN` — точка продаж выключена. * `VISIBLE` — точка продаж включена. * `UNKNOWN` — неизвестное состояние точки продажи. При определении состояния произошла ошибка.
 - `address` — object **обязательный**. Адрес точки продаж.
-  - `regionId` — integer<int64> **обязательный**. Идентификатор региона. Идентификатор можно получить c помощью запроса [GET v2/regions](../../reference/regions/searchRegionsByName.md). {% note alert "Типы регионов при создании и редактировании точек продаж" %} Указывайте только регионы типов `TOWN` (город), `CITY` (крупный город) и `REPUBLIC_AREA` (район субъекта федерации). Тип региона указан в выходных параметрах `type` запросов [GET v2/regions](../../reference/regions/searchRegionsByName.md) и [GET v2/regions/{regionId}](../../reference/regions/searchRegionsById.md). {% endnote %}
+  - `regionId` — integer<int64> **обязательный**. Идентификатор региона. Идентификатор можно получить c помощью запроса [GET v2/regions](../../reference/regions/searchRegionsByName.md). {% note alert "Типы регионов при создании и редактировании точек продаж" %} Указывайте только регионы типов `VILLAGE` (город), `CITY` (крупный город) и `REPUBLIC_AREA` (район субъекта федерации). Тип региона указан в выходных параметрах `type` запросов [GET v2/regions](../../reference/regions/searchRegionsByName.md) и [GET v2/regions/{regionId}](../../reference/regions/searchRegionsById.md). {% endnote %}
   - `street` — string. Улица.
   - `number` — string. Номер дома.
   - `building` — string. Номер строения.

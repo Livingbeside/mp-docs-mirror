@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /ozon-logistika/dostavka-dlya-biznesa/rabota-s-vozvratami
 source: "https://seller-edu.ozon.ru/libra/ozon-logistika/dostavka-dlya-biznesa/rabota-s-vozvratami"
-updated: "2026-10-02 11:15:43"
+updated: "2026-10-21 08:04:20"
 doc_id: 72899
-fetched_at: "2026-10-03T02:16:53Z"
-content_sha: 4d090a5912541d29
+fetched_at: "2026-10-22T01:53:08Z"
+content_sha: 4ebe5dc2810fee52
 ---
 
 # Работа с отменами
@@ -46,7 +46,7 @@ _Главная / Ozon Доставка / Ozon Доставка для бизн�
 
 Покупатель отказался от заказа при получении.
 
-Вы не отгрузили нам заказ в течение 10 дней после перехода в статус **Готов к отгрузке**.
+Вы не отгрузили нам заказ в течение 5 дней после перехода в статус **Готов к отгрузке**.
 
 Вы отменили заказ.
 

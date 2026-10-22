@@ -9,7 +9,7 @@ tags:
 spec_version: ordersfbw
 source: "https://dev.wildberries.ru/docs/openapi/orders-fbw"
 deprecated: false
-content_sha: 2ad80c2b6ff36b56
+content_sha: b28c78d4222ad54c
 ---
 
 # Список складов
@@ -28,8 +28,6 @@ content_sha: 2ad80c2b6ff36b56
 | Сервисный | 1 мин | 6 запросов | 10 сек | 6 запросов |
 | Базовый с секретом | 1 мин | 6 запросов | 10 сек | 6 запросов |
 | Базовый | 12 ч | 1 запрос | 12 ч | 1 запрос |
-
-В песочнице — максимум 1 запрос в секунду суммарно для всех методов.
 
 ## Ответы
 

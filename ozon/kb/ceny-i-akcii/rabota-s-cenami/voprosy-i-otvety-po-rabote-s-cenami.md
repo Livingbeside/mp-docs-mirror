@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /ceny-i-akcii/rabota-s-cenami/voprosy-i-otvety-po-rabote-s-cenami
 source: "https://seller-edu.ozon.ru/libra/ceny-i-akcii/rabota-s-cenami/voprosy-i-otvety-po-rabote-s-cenami"
-updated: "2026-09-07 15:43:13"
+updated: "2026-10-21 11:22:01"
 doc_id: 36478
-fetched_at: "2026-09-08T01:39:31Z"
-content_sha: ad075733c07befac
+fetched_at: "2026-10-22T01:53:08Z"
+content_sha: 3e49ce0f05cc8ce6
 ---
 
 # Вопросы и ответы по работе с ценами
@@ -110,7 +110,7 @@ _Главная / Цены и акции / Работа с ценами_
 
 ## Что такое ограничение для акций и стратегий?
 
-Ограничение для акций и стратегий** **— порог, ниже которого не может опуститься стоимость вашего товара при [автоприменении акций](https://seller-edu.ozon.ru/prices/prices-compaigns-autoapplication), [автодобавлении в акции](https://seller-edu.ozon.ru/how-to-sell-effectively/promo/promo#%D0%B0%D0%B2%D1%82%D0%BE%D0%B4%D0%BE%D0%B1%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D1%82%D0%BE%D0%B2%D0%B0%D1%80%D0%BE%D0%B2-%D0%B2-%D0%B0%D0%BA%D1%86%D0%B8%D0%B8) и [стратегии ценообразования](https://seller-edu.ozon.ru/prices/rival-strategies). Покупатели не видят это значение. Цена по акции может стать ниже ограничения для акций и стратегий, если:
+Ограничение для акций и стратегий** **— порог, ниже которого не может опуститься стоимость вашего товара при [автодобавлении в акции](https://seller-edu.ozon.ru/how-to-sell-effectively/promo/promo#%D0%B0%D0%B2%D1%82%D0%BE%D0%B4%D0%BE%D0%B1%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D1%82%D0%BE%D0%B2%D0%B0%D1%80%D0%BE%D0%B2-%D0%B2-%D0%B0%D0%BA%D1%86%D0%B8%D0%B8) и [стратегии ценообразования](https://seller-edu.ozon.ru/prices/rival-strategies). Покупатели не видят это значение. Цена по акции может стать ниже ограничения для акций и стратегий, если:
 
 вы самостоятельно установите **Цену по акции** ниже ограничения для акций и стратегий;
 

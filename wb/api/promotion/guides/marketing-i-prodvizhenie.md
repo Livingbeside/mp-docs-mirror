@@ -5,7 +5,7 @@ tag: Маркетинг и продвижение
 group: ""
 kind: guide
 source: "https://dev.wildberries.ru/docs/openapi/promotion"
-content_sha: 780af6e780ccb7de
+content_sha: 806e1a26a17c0f9f
 ---
 
 # Маркетинг и продвижение
@@ -20,5 +20,3 @@ content_sha: 780af6e780ccb7de
  5. Работать с [календарём акций](./promotion#tag/promoCalendar)
 
 Данные синхронизируются с базой раз в 3 минуты. Статусы кампаний меняются раз в минуту. Ставки кампаний меняются раз в 30 секунд.
-
-Вы можете протестировать методы продвижения в [песочнице](/sandbox). Также в песочнице доступны [специальные методы](/docs/openapi-other/sandbox-environment#tag/promotion) для управления тестовым балансом

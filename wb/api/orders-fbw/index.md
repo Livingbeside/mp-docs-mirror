@@ -4,7 +4,7 @@ api: wb-orders-fbw
 spec_version: ordersfbw
 operations: 14
 source: "https://dev.wildberries.ru/docs/openapi/orders-fbw"
-content_sha: 7063313b3397ab48
+content_sha: 4e63434796e5a8f3
 ---
 
 # Поставки FBW
@@ -14,8 +14,6 @@ content_sha: 7063313b3397ab48
 В разделе описаны методы получения:
  - [информации для формирования поставок](./orders-fbw#tag/informationForFormingSupplies)
  - [информации о поставках](./orders-fbw#tag/suppliesInformation)
-
-Вы можете создавать карточки товара в песочнице [Контента](./api-information#tag/authorization/Kategorii-tokenov), а потом использовать баркоды товаров в песочнице Поставок
 
 Версия спеки: `ordersfbw` · методов: **14** · разделов справки: **4**
 

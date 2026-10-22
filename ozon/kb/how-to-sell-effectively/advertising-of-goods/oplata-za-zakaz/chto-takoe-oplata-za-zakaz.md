@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /how-to-sell-effectively/advertising-of-goods/oplata-za-zakaz/chto-takoe-oplata-za-zakaz
 source: "https://seller-edu.ozon.ru/libra/how-to-sell-effectively/advertising-of-goods/oplata-za-zakaz/chto-takoe-oplata-za-zakaz"
-updated: "2026-09-29 10:34:23"
+updated: "2026-10-21 11:36:17"
 doc_id: 25622
-fetched_at: "2026-09-30T02:18:14Z"
-content_sha: 785e7b0ac368aedc
+fetched_at: "2026-10-22T01:53:09Z"
+content_sha: c32469b212c8c489
 ---
 
 # Что такое «Оплата за заказ»
@@ -62,7 +62,7 @@ _Главная / Продвижение / Продвижение товаров
 
 Комбо-модель — одновременное продвижение товара в инструменте [«Оплата за клик»](/how-to-sell-effectively/advertising-of-goods/oplata-za-klik). При продвижении выбранных товаров с помощью комбо-модели товары получают:
 
-Сниженную ставку за заказ в инструменте — 10% по всем категориям. При этом участвовать в аукционах товар будет по обычной ставке. [Как это работает](https://seller-edu.ozon.ru/libra/how-to-sell-effectively/advertising-of-goods/oplata-za-zakaz/zapustit-oplatu-za-zakaz#от-чего-зависит-ставка-в-инструменте)
+Сниженную ставку за заказ в инструменте — 12% по всем категориям. При этом участвовать в аукционах товар будет по обычной ставке. [Как это работает](https://seller-edu.ozon.ru/libra/how-to-sell-effectively/advertising-of-goods/oplata-za-zakaz/zapustit-oplatu-za-zakaz#от-чего-зависит-ставка-в-инструменте)
 
 Дополнительное преимущество в аукционах — вместе со ставкой за клик будем учитывать ставку за заказ.
 

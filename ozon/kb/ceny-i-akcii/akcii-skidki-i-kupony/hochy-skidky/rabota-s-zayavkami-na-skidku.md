@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /ceny-i-akcii/akcii-skidki-i-kupony/hochy-skidky/rabota-s-zayavkami-na-skidku
 source: "https://seller-edu.ozon.ru/libra/ceny-i-akcii/akcii-skidki-i-kupony/hochy-skidky/rabota-s-zayavkami-na-skidku"
-updated: "2026-10-07 14:37:47"
+updated: "2026-10-21 11:21:02"
 doc_id: 45711
-fetched_at: "2026-10-08T02:08:28Z"
-content_sha: a16364240ea57c9a
+fetched_at: "2026-10-22T01:53:09Z"
+content_sha: 9d0b465991ed9702
 ---
 
 # Как работать с заявками на скидку
@@ -132,7 +132,7 @@ _Главная / Цены и акции / Акции, скидки и пром�
 
 В чем разница между ограничением для акций и минимальной ценой автоодобрения?
 
-[Ограничение для акций](https://seller-edu.ozon.ru/ceny-i-akcii/rabota-s-cenami/price-control#%D0%BA%D0%B0%D0%BA%D0%B8%D0%B5-%D0%B1%D1%8B%D0%B2%D0%B0%D1%8E%D1%82-%D1%86%D0%B5%D0%BD%D1%8B) — порог, ниже которого не может опуститься предельная цена товара при [автоприменении акций](https://seller-edu.ozon.ru/ceny-i-akcii/akcii-skidki-i-kupony/akcii-ozon/prices-compaigns-autoapplication), [автодобавлении в акции](https://seller-edu.ozon.ru/ceny-i-akcii/akcii-skidki-i-kupony/akcii-ozon/autodobalenie-tovarov-v-akcii) и [стратегии ценообразования](https://seller-edu.ozon.ru/prices/rival-strategies);
+[Ограничение для акций](https://seller-edu.ozon.ru/ceny-i-akcii/rabota-s-cenami/price-control#%D0%BA%D0%B0%D0%BA%D0%B8%D0%B5-%D0%B1%D1%8B%D0%B2%D0%B0%D1%8E%D1%82-%D1%86%D0%B5%D0%BD%D1%8B) — порог, ниже которого не может опуститься предельная цена товара при [автодобавлении в акции](https://seller-edu.ozon.ru/ceny-i-akcii/akcii-skidki-i-kupony/akcii-ozon/autodobalenie-tovarov-v-akcii) и [стратегии ценообразования](https://seller-edu.ozon.ru/prices/rival-strategies);
 
 [Минимальная цена автоодобрения](https://seller-edu.ozon.ru/ceny-i-akcii/akcii-skidki-i-kupony/hochy-skidky/rabota-s-zayavkami-na-skidku#%D0%BD%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B8%D1%82%D1%8C-%D0%B0%D0%B2%D1%82%D0%BE%D0%BE%D0%B4%D0%BE%D0%B1%D1%80%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B7%D0%B0%D1%8F%D0%B2%D0%BE%D0%BA-%D0%BD%D0%B0-%D1%81%D0%BA%D0%B8%D0%B4%D0%BA%D1%83) — цена, ниже ĸоторой заявĸа на скидку не может быть одобрена автоматичесĸи.
 

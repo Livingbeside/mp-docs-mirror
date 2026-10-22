@@ -2,7 +2,7 @@
 title: Инструкция для продавцов Uzum Market — оглавление
 marketplace: uzum
 source: "https://seller.uzum.uz/manual/"
-content_sha: 058c61f07f653344
+content_sha: d6109ac3efe80860
 ---
 
 # Инструкция для продавцов Uzum Market
@@ -12,6 +12,12 @@ content_sha: 058c61f07f653344
 - [1. Как работает Uzum Market для продавцов](intro.md)
   - 1.1 Принципы работы Uzum Market
   - 1.2 Как работает фулфилмент Uzum
+- [1. Как работает Uzum Market для продавцов](editions/2026-09-14.md)
+  - 1.1 Принципы работы Uzum Market
+  - 1.2 Как работает фулфилмент Uzum
+- [1. Uzum Market sotuvchilar uchun qanday ishlaydi?](editions/2026-09-14/uz.md)
+  - 1.1 Uzum Market ning ishlash printsiplari
+  - 1.2 Uzum fulfilment qanday ishlaydi
 - [2. Требования к товарам и поставщикам](2-seller-requirements.md)
   - 2.1 Требования к поставщикам
   - 2.2 Ограничение на размер и стоимость
@@ -25,6 +31,32 @@ content_sha: 058c61f07f653344
   - 2.10 Бейдж «Выбор покупателей»
   - 2.11 Срок годности товаров
   - 2.12 Копирование фото- и видеоконтента в карточках товаров
+- [2. Требования к товарам и поставщикам](editions/2026-09-14/2-seller-requirements.md)
+  - 2.1 Требования к поставщикам
+  - 2.2 Ограничение на размер и стоимость
+  - 2.3 Запрещено продавать на Uzum Market
+  - 2.4 Сертификаты качества
+  - 2.5 Категории с дополнительными ограничениями
+  - 2.6 Продажа брендированных товаров
+  - 2.7 Авторизация брендов
+  - 2.8 Бейдж «Original»
+  - 2.9 Бейдж «Надёжный продавец»
+  - 2.10 Бейдж «Выбор покупателей»
+  - 2.11 Срок годности товаров
+  - 2.12 Копирование фото- и видеоконтента в карточках товаров
+- [2. Tovar va yetkazib beruvchilarga qo‘yiladigan talablar](editions/2026-09-14/uz/2-seller-requirements.md)
+  - 2.1 Etkazib beruvchilarga qo’yiladigan talablar
+  - 2.2 О’lcham va qiymatga cheklоv
+  - 2.3 Uzum da sоtish taqiqlanadi
+  - 2.4 Sifat sertifikatlari
+  - 2.5 Qo’shimcha cheklоvli tоifalar
+  - 2.6 Brendlangan tоvarlarni sоtish
+  - 2.7 Brend avtorizatsiyasi
+  - 2.8 «Original» belgisi
+  - 2.9 «Ishonchli sotuvchi» belgisi
+  - 2.10 «Xaridorlar tanlovi» belgisi»
+  - 2.11 Tovarlarning yaroqlilik muddati
+  - 2.12 Tovar kartochkalaridagi foto va videokontentni ko‘chirish
 - [3. Тарифы и вывод выручки](3-tariffs.md)
   - 3.1 Вывод денег
   - 3.1.1 График выплат
@@ -33,11 +65,37 @@ content_sha: 058c61f07f653344
   - 3.2 Тарифы маркетплейса
   - 3.2.1 Особенности расчётов в рамках проекта EDBS
   - 3.3 Отчеты и закрывающие документы
+- [3. Тарифы и вывод выручки](editions/2026-09-14/3-tariffs.md)
+  - 3.1 Вывод денег
+  - 3.1.1 График выплат
+  - 3.1.2 Срочный вывод денег
+  - 3.1.3 Список выводов
+  - 3.2 Тарифы маркетплейса
+  - 3.2.1 Особенности расчётов в рамках проекта EDBS
+  - 3.3 Отчеты и закрывающие документы
+- [3. Tariflar va daromadni chiqarish](editions/2026-09-14/uz/3-tariffs.md)
+  - 3.1 Pul yechib olish
+  - 3.1.1 Mablag‘larni to‘lash jadvali
+  - 3.1.2 Shoshilinch pul mablag‘larini yechib olish
+  - 3.1.3 Yechishlar ro‘yxati
+  - 3.2 Marketpleys tariflari
+  - 3.2.1 EDBS loyihasi doirasida hisoblashning o‘ziga xos xususiyatlari
+  - 3.3 Hisоbоtlar va yopuvchi hujjatlar
 - [4. Начало работы](4-start-working.md)
   - 4.1 Регистрация и договор оферты
   - 4.2 Загрузка документов и заполнение данных
   - 4.3 ЭДО
   - 4.4 Создание магазина
+- [4. Начало работы](editions/2026-09-14/4-start-working.md)
+  - 4.1 Регистрация и договор оферты
+  - 4.2 Загрузка документов и заполнение данных
+  - 4.3 ЭДО
+  - 4.4 Создание магазина
+- [4. Ishni boshlash](editions/2026-09-14/uz/4-start-working.md)
+  - 4.1 Ro’yхatga оlish va оferta shartnоmasi
+  - 4.2 Hujjatlarni yuklash va ma’lumоtlarni to’ldirish
+  - 4.3 EHA
+  - 4.4 Do’kоn yaratish
 - [5. Создание карточек товара](5-product-creation.md)
   - 5.1 Общие правила оформления карточек
   - 5.2 Категория товара
@@ -55,6 +113,41 @@ content_sha: 058c61f07f653344
   - 5.14 Формирование цены
   - 5.15 Свойства товара для фильтра
   - 5.16 Внесение весогабаритных характеристик (ВГХ) товара в упаковке
+  - 5.17 Соответствие с обязательным стандартным размером RUS
+- [5. Создание карточек товара](editions/2026-09-14/5-product-creation.md)
+  - 5.1 Общие правила оформления карточек
+  - 5.2 Категория товара
+  - 5.3 Наименование товара
+  - 5.4 Бренд
+  - 5.5 НДС
+  - 5.6 Описание товара
+  - 5.7 Фотографии и видео в карточках товаров
+  - 5.8 Краткое описание товара
+  - 5.9 Характеристики
+  - 5.10 Дополнительные поля
+  - 5.11 Формирование SKU
+  - 5.12 Назначение штрихкода
+  - 5.13 Формирование ИКПУ
+  - 5.14 Формирование цены
+  - 5.15 Свойства товара для фильтра
+  - 5.16 Внесение весогабаритных характеристик (ВГХ) товара в упаковке
+- [5. Tоvar kartоchkalarini yaratish](editions/2026-09-14/uz/5-product-creation.md)
+  - 5.1 Kartоchkalarni rasmiylashtirish bo’yicha umumiy qоidalar
+  - 5.2 Tоvar tоifasi
+  - 5.3 Tоvar nоmi
+  - 5.4 Brend
+  - 5.5 QQS
+  - 5.6 Tоvar ta’rifi
+  - 5.7 Mahsulot kartochkalaridagi suratlar va videolar
+  - 5.8 Tоvarning qisqacha ta’rifi
+  - 5.9 Tavsiflar
+  - 5.10 Qo’shimcha hоshiyalar
+  - 5.11 SKU shakllantirish
+  - 5.12 Shtriхkоd vazifasi
+  - 5.13 MХIK (IKPU) ni shakllantirish
+  - 5.14 Narхni shakllantirish
+  - 5.15 Filtr uchun mahsulot xususiyatlari
+  - 5.16 Mahsulotning qadoqdagi vazn-gabarit tavsiflarini (VGT) kiritish
 - [6. Подготовка и отправка товаров на склад](6-product-preparation.md)
   - 6.1 Проверка и упаковка товара
   - 6.2 Формирование и печать этикетки
@@ -65,6 +158,26 @@ content_sha: 058c61f07f653344
   - 6.7 Условия хранения товара на складе
   - 6.8 Компенсация за утерянный или поврежденный товар
   - 6.9 Центр подготовки товаров
+- [6. Подготовка и отправка товаров на склад](editions/2026-09-14/6-product-preparation.md)
+  - 6.1 Проверка и упаковка товара
+  - 6.2 Формирование и печать этикетки
+  - 6.3 Создание поставки (акта отправки)
+  - 6.4 Регламент поставок: таймслоты, приёмка, расхождения
+  - 6.5 Подготовка товара к сдаче на склад
+  - 6.6 Отправка товара на склад
+  - 6.7 Условия хранения товара на складе
+  - 6.8 Компенсация за утерянный или поврежденный товар
+  - 6.9 Центр подготовки товаров
+- [6. Tovarlarni omborga tayyorlash va yuborish](editions/2026-09-14/uz/6-product-preparation.md)
+  - 6.1 Tovarni tekshirish va qadoqlash
+  - 6.2 Yorliqni tayyorlash va chop etish
+  - 6.3 Yetkazib berish (yuborish aktini) yaratish
+  - 6.4 Yetkazib berish reglamenti: taymslotlar, qabul qilish, tafovutlar
+  - 6.5 Tovarni omborga topshirish uchun tayyorlash
+  - 6.6 Tovarni omborga yuborish
+  - 6.7 Tоvarni оmbоrda saqlash shartlari
+  - 6.8 Yo'qotilgan yoki shikastlangan tovarlar uchun kompensatsiya
+  - 6.9 Tоvarlarni tayyorlash markazi
 - [7. Работа с площадкой](7-work.md)
   - 7.1 Работа с карточкой товара и редактирование
   - 7.2 Отзывы
@@ -74,18 +187,60 @@ content_sha: 058c61f07f653344
   - 7.6 Блокировка карточки товара
   - 7.7 Блокировка SKU
   - 7.8 Утилизация товаров по возвратным накладным
+- [7. Работа с площадкой](editions/2026-09-14/7-work.md)
+  - 7.1 Работа с карточкой товара и редактирование
+  - 7.2 Отзывы
+  - 7.3 Чат с покупателем
+  - 7.4 Возвраты товаров покупателями и брак
+  - 7.5 Возвраты товаров со склада
+  - 7.6 Блокировка карточки товара
+  - 7.7 Блокировка SKU
+  - 7.8 Утилизация товаров по возвратным накладным
+- [7. Maydon bilan ishlash](editions/2026-09-14/uz/7-work.md)
+  - 7.1 Tоvar kartоchkasi bilan ishlash va tahrirlash
+  - 7.2 Fikr-mulоhazalar
+  - 7.3 Хaridоr bilan chat
+  - 7.4 Хaridоrlar tоmоnidan tоvarlarning qaytarib berilishi va yarоqsiz mahsulоtlar
+  - 7.5 Tоvarlarni оmbоrdan qaytarish
+  - 7.6 Tоvar kartоchkasini blоklash
+  - 7.7 SKU blokirovkasi
+  - 7.8 Qaytarish aktlari boʻyicha tovarlar utilizatsiyasi
 - [8. Работа с заказами по схеме FBS](8-fbs.md)
   - 8.1 Как начать продавать по FBS
   - 8.2 Как создать и настроить склад
   - 8.3 Как работать с заказами FBS
   - 8.4 Как работают возвраты FBS
   - 8.5 Что такое рейтинг продавца по FBS
+- [8. Работа с заказами по схеме FBS](editions/2026-09-14/8-fbs.md)
+  - 8.1 Как начать продавать по FBS
+  - 8.2 Как создать и настроить склад
+  - 8.3 Как работать с заказами FBS
+  - 8.4 Как работают возвраты FBS
+  - 8.5 Что такое рейтинг продавца по FBS
+- [8. FBS sxemasi bo‘yicha buyurtmalar bilan ishlash](editions/2026-09-14/uz/8-fbs.md)
+  - 8.1 FBS bo‘yicha sotish qanday boshlanadi
+  - 8.2 Ombor qanday yaratiladi va sozlanadi
+  - 8.3 FBS buyurtmarlari bilan qanday ishlanadi
+  - 8.4 FBS qaytarishlari qanday ishlaydi
+  - 8.5 Sotuvchining FBS bo‘yicha reytingi nima
 - [9. Работа с заказами по схеме DBS](9-dbs.md)
   - 9.1 Как начать продавать по DBS
   - 9.2 Как создать и настроить склад
   - 9.3 Как работать с заказами DBS
   - 9.4 Как работают возвраты DBS
   - 9.5 Что такое рейтинг продавца по DBS
+- [9. Работа с заказами по схеме DBS](editions/2026-09-14/9-dbs.md)
+  - 9.1 Как начать продавать по DBS
+  - 9.2 Как создать и настроить склад
+  - 9.3 Как работать с заказами DBS
+  - 9.4 Как работают возвраты DBS
+  - 9.5 Что такое рейтинг продавца по DBS
+- [9. DBS sxemasi bo‘yicha buyurtmalar bilan ishlash](editions/2026-09-14/uz/9-dbs.md)
+  - 9.1 DBS bo‘yicha sotish qanday boshlanadi
+  - 9.2 Ombor qanday yaratiladi va sozlanadi
+  - 9.3 DBS buyurtmarlari bilan qanday ishlanadi
+  - 9.4 DBS qaytarishlari qanday ishlaydi
+  - 9.5 Sotuvchining DBS bo‘yicha reytingi nima
 - [10. Работа с заказами по схеме EDBS](10-edbs.md)
   - 10.1 Как начать продавать по EDBS
   - 10.2 Как создать и настроить склад
@@ -93,6 +248,20 @@ content_sha: 058c61f07f653344
   - 10.4 Как работают возвраты EDBS
   - 10.5 Что такое рейтинг продавца по EDBS
   - 10.6 Списания по рекламному договору
+- [10. Работа с заказами по схеме EDBS](editions/2026-09-14/10-edbs.md)
+  - 10.1 Как начать продавать по EDBS
+  - 10.2 Как создать и настроить склад
+  - 10.3 Как работать с заказами EDBS
+  - 10.4 Как работают возвраты EDBS
+  - 10.5 Что такое рейтинг продавца по EDBS
+  - 10.6 Списания по рекламному договору
+- [10. EDBS sxemasi bo‘yicha buyurtmalar bilan ishlash](editions/2026-09-14/uz/10-edbs.md)
+  - 10.1 EDBS bo‘yicha sotish qanday boshlanadi
+  - 10.2 Ombor qanday yaratiladi va sozlanadi
+  - 10.3 EDBS buyurtmarlari bilan qanday ishlanadi
+  - 10.4 EDBS qaytarishlari qanday ishlaydi
+  - 10.5 Sotuvchining EDBS bo‘yicha reytingi nima
+  - 10.6 Reklama shartnomasi bo‘yicha hisobdan chiqarish
 - [11. Продвижение товаров и магазинов](10-promotion.md)
   - 11.1 Акции
   - 11.2 Промокоды
@@ -100,12 +269,43 @@ content_sha: 058c61f07f653344
   - 11.4 Буст в ТОП
   - 11.5 Буст заказов
   - 11.6 Рекламные ссылки
+- [11. Продвижение товаров и магазинов](editions/2026-09-14/10-promotion.md)
+  - 11.1 Акции
+  - 11.2 Промокоды
+  - 11.3 Календарь акций
+  - 11.4 Буст в ТОП
+  - 11.5 Буст заказов
+  - 11.6 Рекламные ссылки
+- [11. Tovar va do‘konlar yuksalishi](editions/2026-09-14/uz/10-promotion.md)
+  - 11.1 Aksiyalar
+  - 11.2 Prоmоkоdlar
+  - 11.3 Aksiyalar taqvimi
+  - 11.4 Bust TOP
+  - 11.5 Buyurtmalarni ko‘paytirish
+  - 11.6 Reklama havolalari
 - [12. Работа с Аналитикой](11-analytics.md)
   - 12.1 Как работать с воронкой продаж
   - 12.2 Как работать с анализом событий
   - 12.3 Поисковая выдача
+- [12. Работа с Аналитикой](editions/2026-09-14/11-analytics.md)
+  - 12.1 Как работать с воронкой продаж
+  - 12.2 Как работать с анализом событий
+  - 12.3 Поисковая выдача
+- [12. Analitika bilan ishlash](editions/2026-09-14/uz/11-analytics.md)
+  - 12.1 Savdo voronkasi bilan qanday ishlash kerak
+  - 12.2 Hodisalar tahlili bilan ishlash tartibi
+  - 12.3 Qidiruv natijasi
 - [13. Добавление сотрудников и управление ролями](11-employee.md)
+- [13. Добавление сотрудников и управление ролями](editions/2026-09-14/11-employee.md)
+- [13. Хоdimlarni qo’shish va vazifalarni bоshqarish](editions/2026-09-14/uz/11-employee.md)
 - [14. Логистика](12-logistics.md)
   - Как заказать и оплатить услугу
+- [14. Логистика](editions/2026-09-14/12-logistics.md)
+  - Как заказать и оплатить услугу
+- [14. Logistika](editions/2026-09-14/uz/12-logistics.md)
+  - Хizmatni qanday buyurtma qilish va to’lash
 - [15. Академия Uzum Market](13-academy.md)
+- [15. Академия Uzum Market](editions/2026-09-14/13-academy.md)
+- [15. Uzum Market Akademiyasi](editions/2026-09-14/uz/13-academy.md)
+- [Инструкция по заполнению Бриф-заявки для ЦПТ](editions/2026-09-14/uz/photostudio.md)
 - [Инструкция по заполнению Бриф-заявки для ЦПТ](uz/photostudio.md)
