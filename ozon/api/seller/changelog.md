@@ -5,12 +5,20 @@ tag: News
 group: Обновления
 kind: changelog
 source: "https://docs.ozon.ru/api/seller/"
-content_sha: d67ebe7cd622b71b
+content_sha: 967867b01fe2d067
 ---
 
 # Обновления
 
 Следите за обновлениями документации на платформе для разработчиков [Ozon for dev](https://dev.ozon.ru/).
+
+## 22 октября 2026
+
+| Метод | Изменение |
+|-------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------|
+| /v1/cargoes-label/file/{file_guid} | Метод устарел, удалили его из документации. Используйте [/v1/cargoes-label/get](#operation/CargoesAPI_CargoesLabelGet). |
+| [/v1/product/import/prices](#operation/ProductAPI_ImportProductsPrices) | Обновили описание параметра `prices.price` в запросе метода. |
+| [/v1/actions/products/update](#operation/ActionsProductsUpdate) | Обновили описание параметра `products.action_price` в запросе метода. |
 
 ## 16 октября 2026
 
@@ -726,7 +734,7 @@ content_sha: d67ebe7cd622b71b
 | [/v1/warehouse/fbs/return-mile/info](#operation/WarehouseFBSReturnMileInfo) | Обновили описание параметра `return_mile_settings.return_point.type` в ответе метода. |
 | [/v2/posting/fbs/package-label/create](#operation/PostingAPI_CreateLabelBatchV2) | Обновили описание метода. |
 |[/v1/cargoes-label/get](#operation/CargoesAPI_CargoesLabelGet) | В ответе метода:<br>• добавили параметр `result.file_url`; <br>• пометили устаревшим параметр `result.file_guid`. |
-| [/v1/cargoes-label/file/{file_guid}](#operation/CargoesAPI_CargoesLabelFile) | Метод устаревает и будет отключён 10 апреля 2026 года. Переключитесь на [/v1/cargoes-label/get](#operation/CargoesAPI_CargoesLabelGet). |
+| /v1/cargoes-label/file/{file_guid} | Метод устаревает и будет отключён 10 апреля 2026 года. Переключитесь на [/v1/cargoes-label/get](#operation/CargoesAPI_CargoesLabelGet). |
 | — | В разделе [**Частые ошибки**](#tag/Errors) добавили описание ошибки `INCORRECT_OVH_FOR_POSTING` для метода [/v4/posting/fbs/ship](#operation/PostingAPI_ShipFbsPostingV4). |
 | [/v2/order/create](#operation/OrderAPI_OrderCreate) | Добавили параметр `splits.items.offer_id` в запрос метода. |
 | [/v2/delivery/checkout](#operation/DeliveryCheckout) | Добавили параметр `items.offer_id` в запрос метода и `splits.items.offer_id` в ответ метода. |
@@ -1814,7 +1822,7 @@ content_sha: d67ebe7cd622b71b
 
 | Метод | Изменение |
 |--------|------------------------------------------------|
-| [/v1/cluster/list](#operation/SupplyDraftAPI_DraftClusterList)<br>[/v1/warehouse/fbo/list](#operation/SupplyDraftAPI_DraftGetWarehouseFboList)<br>/v1/draft/create<br>/v1/draft/create/info<br>/v1/draft/timeslot/info<br>/v1/draft/supply/create<br>/v1/draft/supply/create/status<br>[/v1/cargoes/create](#operation/CargoesAPI_CargoesCreate)<br>/v1/cargoes/create/info<br>[/v1/cargoes-label/create](#operation/CargoesAPI_CargoesLabelCreate)<br>[/v1/cargoes-label/get](#operation/CargoesAPI_CargoesLabelGet)<br>[/v1/cargoes-label/file/{file_guid}](#operation/CargoesAPI_CargoesLabelFile)<br>[/v1/supply-order/cancel](#operation/SupplyOrderAPI_SupplyOrderCancel)<br>[/v1/supply-order/cancel/status](#operation/SupplyOrderAPI_SupplyOrderCancelStatus)<br>[/v6/fbs/posting/product/exemplar/set](#operation/PostingAPI_FbsPostingProductExemplarSetV6)<br>[/v6/fbs/posting/product/exemplar/create-or-get](#operation/PostingAPI_FbsPostingProductExemplarCreateOrGetV6)<br>[/v5/fbs/posting/product/exemplar/status](#operation/PostingAPI_FbsPostingProductExemplarStatusV5)<br>[/v5/fbs/posting/product/exemplar/validate](#operation/PostingAPI_FbsPostingProductExemplarValidateV5)<br>[/v1/fbs/posting/product/exemplar/update](#operation/PostingAPI_FbsPostingProductExemplarUpdate) | Перенесли методы из бета-раздела в основной. |
+| [/v1/cluster/list](#operation/SupplyDraftAPI_DraftClusterList)<br>[/v1/warehouse/fbo/list](#operation/SupplyDraftAPI_DraftGetWarehouseFboList)<br>/v1/draft/create<br>/v1/draft/create/info<br>/v1/draft/timeslot/info<br>/v1/draft/supply/create<br>/v1/draft/supply/create/status<br>[/v1/cargoes/create](#operation/CargoesAPI_CargoesCreate)<br>/v1/cargoes/create/info<br>[/v1/cargoes-label/create](#operation/CargoesAPI_CargoesLabelCreate)<br>[/v1/cargoes-label/get](#operation/CargoesAPI_CargoesLabelGet)<br>/v1/cargoes-label/file/{file_guid}<br>[/v1/supply-order/cancel](#operation/SupplyOrderAPI_SupplyOrderCancel)<br>[/v1/supply-order/cancel/status](#operation/SupplyOrderAPI_SupplyOrderCancelStatus)<br>[/v6/fbs/posting/product/exemplar/set](#operation/PostingAPI_FbsPostingProductExemplarSetV6)<br>[/v6/fbs/posting/product/exemplar/create-or-get](#operation/PostingAPI_FbsPostingProductExemplarCreateOrGetV6)<br>[/v5/fbs/posting/product/exemplar/status](#operation/PostingAPI_FbsPostingProductExemplarStatusV5)<br>[/v5/fbs/posting/product/exemplar/validate](#operation/PostingAPI_FbsPostingProductExemplarValidateV5)<br>[/v1/fbs/posting/product/exemplar/update](#operation/PostingAPI_FbsPostingProductExemplarUpdate) | Перенесли методы из бета-раздела в основной. |
 
 ## 14 марта 2025
 

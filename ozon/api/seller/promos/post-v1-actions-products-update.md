@@ -9,7 +9,7 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: 1427ff77cbdf2c54
+content_sha: c5859a587dcf085a
 ---
 
 # Добавить или обновить товар в акции
@@ -31,7 +31,7 @@ content_sha: 1427ff77cbdf2c54
 
 - `action_id` — integer<uint64> **обязательный**. Идентификатор акции. Получите методом [/v1/actions](#operation/Promos).
 - `products` — array[object] **обязательный**. Список товаров.
-  - `action_price` — object **обязательный**. Предельная цена товара. Если добавляете товар вне акции «Промокоды», изменим предельную цену в карточке товара, даже если она была установлена ранее. Если значение меньше или равно лимиту акции «Эластичный бустинг» или «Максимальный бустинг» — добавим товар в акцию, если больше — удалим товар из акции.
+  - `action_price` — object **обязательный**. Предельная цена товара. Если изменяете предельную цену через методы [/v1/product/import/prices](#operation/ProductAPI_ImportProductsPrices) или [/v1/actions/products/update](#operation/ActionsProductsUpdate), значение обновляется в карточке товара. [Подробнее о единой цене в Базе знаний продавца](https://seller-edu.ozon.ru/libra/ceny-i-akcii/akcii-skidki-i-kupony/akcii-ozon/upravlenie-tovrami-v-akciyah) Если добавляете товар вне акции «Промокоды», изменим предельную цену в карточке товара, даже если она была установлена ранее. Если значение меньше или равно лимиту акции «Эластичный бустинг» или «Максимальный бустинг» — добавим товар в акцию, если больше — удалим товар из акции.
     - `amount` — string. Сумма.
     - `currency` — string. Валюта.
   - `product_id` — integer<uint64> **обязательный**. Идентификатор товара в системе Ozon — `product_id`.

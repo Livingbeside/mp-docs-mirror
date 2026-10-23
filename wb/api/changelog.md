@@ -4,8 +4,8 @@ api: wildberries
 kind: changelog
 source: "https://dev.wildberries.ru/release-notes"
 window: последние записи, страница отдаёт не всю историю
-fetched_at: "2026-10-22T01:57:57Z"
-content_sha: ff5e6d1157a128b5
+fetched_at: "2026-10-23T01:45:55Z"
+content_sha: 5971dfc915bb43a6
 ---
 
 # Журнал изменений WB API
@@ -82,7 +82,7 @@ content_sha: ff5e6d1157a128b5
 C **5 ноября** отключим [песочницы](https://dev.wildberries.ru/sandbox) на следующих адресах:
 
 - https://statistics-api-sandbox.wildberries.ru
-- https://supplies-api.wildberries.ru
+- https://supplies-api-sandbox.wildberries.ru
 - https://advert-api-sandbox.wildberries.ru
 
 Новое
@@ -316,7 +316,7 @@ DBS
 
 Новая версия отчёта по возвратам и перемещению товаров
 
-Добавили новую версию метода получения отчёта **Возврат и перемещение товаров** — [GET /api/analytics/v1/goods-return](/docs/openapi/reports#tag/returnsAndItemMovementReport/operation/getV1GoodsReturn). C её помощью вы можете получать данные как по активным, так и по архивным возвратам за любой период времени.
+Добавили новую версию метода получения отчёта **Возврат и перемещение товаров** — [GET /api/analytics/v1/item-returns](/docs/openapi/reports#tag/returnsAndItemMovementReport/operation/getV1GoodsReturn). C её помощью вы можете получать данные как по активным, так и по архивным возвратам за любой период времени.
 
 В новом методе:
 

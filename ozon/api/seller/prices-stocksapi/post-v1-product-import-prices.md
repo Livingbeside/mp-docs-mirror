@@ -9,7 +9,7 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: 64de62e6c1a19417
+content_sha: 0ce7e5d5dcf7977e
 ---
 
 # Обновить цену
@@ -47,7 +47,7 @@ content_sha: 64de62e6c1a19417
   - `net_price` — string. Себестоимость товара.
   - `offer_id` — string. Идентификатор товара в системе продавца — артикул.
   - `old_price` — string. Цена, которую покупатели видят зачёркнутой. Должна быть больше `price`.
-  - `price` — string. Предельная цена товара без акций. Выше этого значения цену для покупателя не поднимем.
+  - `price` — string. Предельная цена товара без акций. Выше этого значения цену для покупателя не поднимем. Если изменяете предельную цену через методы [/v1/product/import/prices](#operation/ProductAPI_ImportProductsPrices) или [/v1/actions/products/update](#operation/ActionsProductsUpdate), значение обновляется в карточке товара. [Подробнее о единой цене в Базе знаний продавца](https://seller-edu.ozon.ru/libra/ceny-i-akcii/akcii-skidki-i-kupony/akcii-ozon/upravlenie-tovrami-v-akciyah)
   - `price_strategy_enabled` — string (UNKNOWN, ENABLED, DISABLED). Автоприменение стратегий цены: - `ENABLED` — включить. Установите значение ограничения для акций и стратегий в параметре `min_price`. - `DISABLED` — выключить. Удалим товар из стратегии. - `UNKNOWN` — не менять. Если ранее вы включили автоприменение стратегий цены и не хотите выключать его, передайте `UNKNOWN`. По умолчанию: `UNKNOWN`.
   - `product_id` — integer<int64>. Идентификатор товара в системе Ozon — `product_id`.
   - `quant_size` — integer<int64>. Используйте параметр, если у обычного и эконом-товара совпадает артикул — `offer_id = quant_id`. Чтобы обновить цену: - обычного товара — передайте значение `1`; - эконом-товара — передайте размер его кванта. Если у обычного и эконом-товара разные артикулы, не передавайте параметр.

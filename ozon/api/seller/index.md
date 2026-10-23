@@ -2,9 +2,9 @@
 title: Документация Ozon Seller API — все методы
 api: ozon-seller
 spec_version: 2.1
-operations: 483
+operations: 482
 source: "https://docs.ozon.ru/api/seller/"
-content_sha: ec8f60b3fb58f559
+content_sha: 2d01412a6e6bb091
 ---
 
 # Документация Ozon Seller API
@@ -18,14 +18,13 @@ content_sha: ec8f60b3fb58f559
 
 > [Информационная платформа и сообщество разработчиков Ozon for dev](https://dev.ozon.ru/)
 
-Версия спеки: `2.1` · методов: **483** · разделов справки: **27**
+Версия спеки: `2.1` · методов: **482** · разделов справки: **27**
 
 Источник: https://docs.ozon.ru/api/seller/
 
 | Метод | Путь | Раздел | Описание |
 |---|---|---|---|
 | `GET` | `/v1/actions` | Promos | [Список акций](promos/get-v1-actions.md) |
-| `GET` | `/v1/cargoes-label/file/{file_guid}` | FboSupplyRequest | [Получить PDF с этикетками грузовых мест](fbosupplyrequest/get-v1-cargoes-label-file-file-guid.md) |
 | `GET` | `/v1/product/certificate/accordance-types` | CertificationAPI | [Список типов соответствия требованиям (версия 1)](certificationapi/get-v1-product-certificate-accordance-types.md) |
 | `GET` | `/v1/product/certificate/types` | CertificationAPI | [Справочник типов документов](certificationapi/get-v1-product-certificate-types.md) |
 | `GET` | `/v1/supplier/available_warehouses` | FBO | [Загруженность складов Ozon](fbo/get-v1-supplier-available-warehouses.md) |

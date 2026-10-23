@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /work-with-byuers/crm/sozdanie-rassylki-i-bannera-v-crm
 source: "https://seller-edu.ozon.ru/libra/work-with-byuers/crm/sozdanie-rassylki-i-bannera-v-crm"
-updated: "2026-10-06 10:05:09"
+updated: "2026-10-22 11:58:37"
 doc_id: 23577
-fetched_at: "2026-10-07T02:15:44Z"
-content_sha: 8821daf4a52d52cd
+fetched_at: "2026-10-23T01:42:53Z"
+content_sha: af1e8c1560d95742
 ---
 
 # Создание рассылки или баннера в разделе «Покупатели»
@@ -15,6 +15,8 @@ content_sha: 8821daf4a52d52cd
 _Главная / Работа с покупателями / Покупатели_
 
 Как работать с инструментами CRM и писать эффективный текст рассылки для покупателей
+
+# Видео «Как отправлять автоматические рассылки покупателям»
 
 С подпиской [Premium Plus](https://seller-edu.ozon.ru/seller-rating/about-rating/subscription-premium-plus) или [Premium Pro](https://seller-edu.ozon.ru/seller-rating/about-rating/podpiska-premium-pro) можно бесплатно отправлять рассылки со скидками и товарами — на 50 000 покупателей: топовых, лояльных, рискованных, новых или всех покупателей за последние 90 дней.
 С [Premium Pro](https://seller-edu.ozon.ru/seller-rating/about-rating/podpiska-premium-pro) — дополнительно на 5 000 покупателей: потенциальные из категории, не завершили заказ, добавили товар в корзину, добавили товар в избранное, потенциальные, спящие, интересовались вашими товарами или интересовались вашими категориями.

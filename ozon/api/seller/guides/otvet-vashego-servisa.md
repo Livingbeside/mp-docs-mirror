@@ -5,7 +5,7 @@ tag: service_response
 group: Пуш-уведомления
 kind: guide
 source: "https://docs.ozon.ru/api/seller/"
-content_sha: 6e8ddc55a2ebed55
+content_sha: 5c0717533f156a1b
 ---
 
 # Ответ вашего сервиса
@@ -46,3 +46,5 @@ content_sha: 6e8ddc55a2ebed55
 | `code` | string | — | Код ошибки:<br>• `ERROR_UNKNOWN` — неизвестная ошибка.<br>• `ERROR_PARAMETER_VALUE_MISSED` — не указано значение одного или нескольких параметров.<br>• `ERROR_REQUEST_DUPLICATED` — дублирующийся запрос. |
 | `message` | string | — | Детальное описание ошибки. |
 | `details` | string | — | Дополнительная информация. |
+
+Отключим URL-адрес для пуш-уведомлений, если он будет часто возвращать ответ с кодом HTTP из групп 4xx или 5xx.
