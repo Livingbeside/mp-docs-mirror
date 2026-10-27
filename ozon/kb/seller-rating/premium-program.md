@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /seller-rating/premium-program
 source: "https://seller-edu.ozon.ru/libra/seller-rating/premium-program"
-updated: "2026-10-01 14:25:24"
+updated: "2026-10-26 11:25:52"
 doc_id: 1005
-fetched_at: "2026-10-02T02:01:53Z"
-content_sha: e76f31b4f16d2c75
+fetched_at: "2026-10-27T02:42:25Z"
+content_sha: 2ad696b94138f2bb
 ---
 
 # Подписка Premium
@@ -38,6 +38,7 @@ Premium — это подписка для продавцов, которые т
 | **Аналитика в подписках от ООО «Озон Технологии»** |  |  |
 | Данные об оборотах ближайших конкурентов — в расширенном отчёте [«Конкуренты»](https://seller-edu.ozon.ru/analytics-and-metrics/analytics-for-premium/competitive-position). | _ | Сравнение до 2 конкурентов. |
 | Доступ к программному обеспечению «Расширенная аналитика»: [Продажи моих товаров](https://seller-edu.ozon.ru/analytics-and-metrics/graphs/charts);[Акции](https://seller-edu.ozon.ru/analytics-and-metrics/graphs/promo);[Тренды](https://seller-edu.ozon.ru/analytics-and-metrics/analytics-for-premium/trends);[Конкуренты](https://seller-edu.ozon.ru/analytics-and-metrics/analytics-for-premium/competitive-position);[Поисковые запросы](https://seller-edu.ozon.ru/analytics-and-metrics/what-to-sell/poiskovye-zaprosy);[Распродано](https://seller-edu.ozon.ru/analytics-and-metrics/what-to-sell/rasprodano). | В ограниченной конфигурации, для 2 сотрудников  с ролью «[Аналитик](https://seller-edu.ozon.ru/libra/personal-account/user-management#%D0%BA%D0%B0%D0%BA%D0%B8%D0%B5-%D0%B1%D1%8B%D0%B2%D0%B0%D1%8E%D1%82-%D1%80%D0%BE%D0%BB%D0%B8-%D0%B2-%D0%BB%D0%B8%D1%87%D0%BD%D0%BE%D0%BC-%D0%BA%D0%B0%D0%B1%D0%B8%D0%BD%D0%B5%D1%82%D0%B5)». | В базовой конфигурации, для 2 сотрудников с ролью «[Аналитик](https://seller-edu.ozon.ru/libra/personal-account/user-management#%D0%BA%D0%B0%D0%BA%D0%B8%D0%B5-%D0%B1%D1%8B%D0%B2%D0%B0%D1%8E%D1%82-%D1%80%D0%BE%D0%BB%D0%B8-%D0%B2-%D0%BB%D0%B8%D1%87%D0%BD%D0%BE%D0%BC-%D0%BA%D0%B0%D0%B1%D0%B8%D0%BD%D0%B5%D1%82%D0%B5)». |
+| [Аналитика витрин магазина](https://seller-edu.ozon.ru/analytics-and-metrics/graphs/analitika-vitrin). | _ | ✔ |
 
 Если курсы не появились:
 

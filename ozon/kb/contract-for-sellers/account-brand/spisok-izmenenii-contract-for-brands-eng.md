@@ -6,13 +6,13 @@ path: /contract-for-sellers/account-brand/spisok-izmenenii-contract-for-brands-e
 source: "https://seller-edu.ozon.ru/libra/contract-for-sellers/account-brand/spisok-izmenenii-contract-for-brands-eng"
 updated: "2026-10-02 14:26:01"
 doc_id: 88585
-fetched_at: "2026-10-05T02:01:44Z"
-content_sha: 237d2a605543bb21
+fetched_at: "2026-10-27T02:42:25Z"
+content_sha: fda8c96b1f6b80ed
 ---
 
 # List of changes in the contract for cross-border sellers
 
-_Главная / Договоры для Продавцов на платформе Ozon / Кабинет бренда_
+_Главная / Договоры для Продавцов на платформе Ozon / Договор кабинета бренда_
 
 [Сurrent version of the agreement](https://seller-edu.ozon.ru/contract-for-sellers/account-brand/contract-for-brands-en)
 

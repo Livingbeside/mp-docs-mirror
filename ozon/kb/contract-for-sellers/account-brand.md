@@ -1,16 +1,16 @@
 ---
-title: Кабинет бренда
+title: Договор кабинета бренда
 marketplace: ozon
 kind: section
 path: /contract-for-sellers/account-brand
 source: "https://seller-edu.ozon.ru/libra/contract-for-sellers/account-brand"
-updated: "2022-10-26 16:01:30.545719"
+updated: "2026-10-26 12:57:25"
 doc_id: 1056
-fetched_at: "2026-10-04T01:58:24Z"
-content_sha: a6baff3eefe3ca52
+fetched_at: "2026-10-27T02:42:25Z"
+content_sha: 2dae722ab9e4bc33
 ---
 
-# Кабинет бренда
+# Договор кабинета бренда
 
 _Главная / Договоры для Продавцов на платформе Ozon_
 

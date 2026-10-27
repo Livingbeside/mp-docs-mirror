@@ -6,13 +6,13 @@ path: /contract-for-sellers/account-brand/spisok-izmenenii-contract-for-brands
 source: "https://seller-edu.ozon.ru/libra/contract-for-sellers/account-brand/spisok-izmenenii-contract-for-brands"
 updated: "2026-09-24 09:28:08"
 doc_id: 679
-fetched_at: "2026-09-26T02:01:06Z"
-content_sha: 8c986f4047fdb1c6
+fetched_at: "2026-10-27T02:42:25Z"
+content_sha: 2be43e9ef8b25ff2
 ---
 
 # Архив изменений в соглашении для правообладателя товарного знака
 
-_Главная / Договоры для Продавцов на платформе Ozon / Кабинет бренда_
+_Главная / Договоры для Продавцов на платформе Ozon / Договор кабинета бренда_
 
 [Актуальная версия соглашения](/contract-for-sellers/account-brand/contract-for-brands)
 

@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /seller-rating/subscription-premium-plus
 source: "https://seller-edu.ozon.ru/libra/seller-rating/subscription-premium-plus"
-updated: "2026-10-15 12:54:55"
+updated: "2026-10-26 11:26:56"
 doc_id: 1954
-fetched_at: "2026-10-16T01:58:53Z"
-content_sha: ffed14ceb6a59a6c
+fetched_at: "2026-10-27T02:42:25Z"
+content_sha: 23d7537750646fdf
 ---
 
 # Подписка Premium Plus
@@ -46,6 +46,7 @@ Premium Plus — это подписка для продавцов, которы
 | **Аналитика в подписках от ООО «Озон Технологии»** |  |  |
 | Данные об оборотах ближайших конкурентов и лидера в вашей категории — в расширенном отчёте [«Конкуренты»](https://seller-edu.ozon.ru/analytics-and-metrics/analytics-for-premium/competitive-position). | Сравнение до 2 конкурентов. | Сравнение до 8 конкурентов. |
 | Доступ к программному обеспечению «Расширенная Аналитика»: [Продажи моих товаров](https://seller-edu.ozon.ru/analytics-and-metrics/graphs/charts);[Акции](https://seller-edu.ozon.ru/analytics-and-metrics/graphs/promo?tag=%D0%90%D0%BD%D0%B0%D0%BB%D0%B8%D1%82%D0%B8%D0%BA%D0%B0);[Тренды](https://seller-edu.ozon.ru/analytics-and-metrics/analytics-for-premium/trends?tag=%D0%90%D0%BD%D0%B0%D0%BB%D0%B8%D1%82%D0%B8%D0%BA%D0%B0&page=2);[Конкуренты](https://seller-edu.ozon.ru/analytics-and-metrics/analytics-for-premium/competitive-position);[Распродано](https://seller-edu.ozon.ru/analytics-and-metrics/what-to-sell/rasprodano). | В базовой конфигурации, для 2 сотрудников с ролью «[Аналитик](https://seller-edu.ozon.ru/libra/personal-account/user-management#%D0%BA%D0%B0%D0%BA%D0%B8%D0%B5-%D0%B1%D1%8B%D0%B2%D0%B0%D1%8E%D1%82-%D1%80%D0%BE%D0%BB%D0%B8-%D0%B2-%D0%BB%D0%B8%D1%87%D0%BD%D0%BE%D0%BC-%D0%BA%D0%B0%D0%B1%D0%B8%D0%BD%D0%B5%D1%82%D0%B5)». | В расширенной конфигурации, для всех сотрудников. |
+| [Аналитика витрин магазина](https://seller-edu.ozon.ru/analytics-and-metrics/graphs/analitika-vitrin). | ✔ | ✔ |
 
 # Сколько стоит подписка Premium Plus
 

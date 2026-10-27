@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /seller-rating/analytics-plus
 source: "https://seller-edu.ozon.ru/libra/seller-rating/analytics-plus"
-updated: "2026-10-01 14:50:16"
+updated: "2026-10-26 11:32:21"
 doc_id: 80951
-fetched_at: "2026-10-02T02:01:53Z"
-content_sha: 04386c6ceaf90c0b
+fetched_at: "2026-10-27T02:42:25Z"
+content_sha: 18242f15b85e0bfb
 ---
 
 # Аналитика Plus
@@ -26,7 +26,9 @@ _Главная / Подписки_
 
 **[Тренды](https://seller-edu.ozon.ru/analytics-and-metrics/analytics-for-premium/trends)** — смотрите полную статистику продаж в ваших и смежных категориях и определяйте ёмкость рынка в вашей нише.
 
-**[Конкуренты](https://seller-edu.ozon.ru/analytics-and-metrics/analytics-for-premium/competitive-position)**** **— сравнивайте свои показатели с конкурентами в категории и усиливайте стратегию продаж. до 8 конкурентов и лидер в вашей категории
+**[Конкуренты](https://seller-edu.ozon.ru/analytics-and-metrics/analytics-for-premium/competitive-position)**** **— сравнивайте свои показатели с конкурентами в категории и усиливайте стратегию продаж. до 8 конкурентов и лидер в вашей категории.
+
+**[Аналитика витрин магазина](https://seller-edu.ozon.ru/libra/analytics-and-metrics/graphs/analitika-vitrin)** — анализируйте путь покупателя от просмотра до покупки. Находите точки роста, используйте дополнительные инструменты, повышайте конверсию и продажи.
 
 **[Поисковые запросы](https://seller-edu.ozon.ru/analytics-and-metrics/what-to-sell/poiskovye-zaprosy)** и **[Распродано](https://seller-edu.ozon.ru/analytics-and-metrics/what-to-sell/rasprodano)** — изучайте, какие товары чаще всего ищут и раскупают, добавляйте их в свой ассортимент и повышайте продажи.
 

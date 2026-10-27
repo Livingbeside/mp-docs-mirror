@@ -6,13 +6,13 @@ path: /contract-for-sellers/account-brand/contract-for-brands
 source: "https://seller-edu.ozon.ru/libra/contract-for-sellers/account-brand/contract-for-brands"
 updated: "2026-09-23 13:35:53"
 doc_id: 661
-fetched_at: "2026-09-24T02:07:40Z"
-content_sha: 9bf31ad587b80f61
+fetched_at: "2026-10-27T02:42:25Z"
+content_sha: 8daa0d2e61fdb9f9
 ---
 
 # Соглашение для правообладателя товарного знака
 
-_Главная / Договоры для Продавцов на платформе Ozon / Кабинет бренда_
+_Главная / Договоры для Продавцов на платформе Ozon / Договор кабинета бренда_
 
 Эта редакция действует с 1 октября 2026 года. Мы заранее публикуем изменения: если правила на этой странице ещё не вступили в силу, смотрите [предыдущую версию](https://seller-edu.ozon.ru/contract-for-sellers/account-brand/spisok-izmenenii-contract-for-brands).
 

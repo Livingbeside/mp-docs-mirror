@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /seller-rating/podpiska-premium-pro
 source: "https://seller-edu.ozon.ru/libra/seller-rating/podpiska-premium-pro"
-updated: "2026-10-15 12:56:44"
+updated: "2026-10-26 11:29:51"
 doc_id: 30502
-fetched_at: "2026-10-16T01:58:53Z"
-content_sha: 38de52bb8cacf536
+fetched_at: "2026-10-27T02:42:25Z"
+content_sha: 6bea1ead78fb645e
 ---
 
 # Подписка Premium Pro
@@ -65,6 +65,7 @@ Premium Pro — это подписка для продавцов, которы�
 | **Аналитика в подписках от ООО «Озон Технологии»** |  |  |
 | Доступ к программному обеспечению «Расширенная Аналитика»: [Продажи моих товаров](https://seller-edu.ozon.ru/analytics-and-metrics/graphs/charts);[Акции](https://seller-edu.ozon.ru/analytics-and-metrics/graphs/promo?tag=%D0%90%D0%BD%D0%B0%D0%BB%D0%B8%D1%82%D0%B8%D0%BA%D0%B0);[Тренды](https://seller-edu.ozon.ru/analytics-and-metrics/analytics-for-premium/trends?tag=%D0%90%D0%BD%D0%B0%D0%BB%D0%B8%D1%82%D0%B8%D0%BA%D0%B0&page=2);[Конкуренты](https://seller-edu.ozon.ru/analytics-and-metrics/analytics-for-premium/competitive-position);[Воронка продаж](https://seller-edu.ozon.ru/analytics-and-metrics/graphs/prodaji/voronka_prodazh);[Категории](https://seller-edu.ozon.ru/analytics-and-metrics/analytics-for-premium/category-comparison);[Товары на Ozon](https://seller-edu.ozon.ru/analytics-and-metrics/what-to-sell/ozon-bestsellers-copy);[Распродано](https://seller-edu.ozon.ru/analytics-and-metrics/what-to-sell/rasprodano). | В расширенной конфигурации, для всех сотрудников. | В максимальной конфигурации, для всех сотрудников. |
 | Данные об оборотах ближайших конкурентов и лидера в вашей категории — в расширенном отчёте [«Конкуренты»](https://seller-edu.ozon.ru/analytics-and-metrics/analytics-for-premium/competitive-position?tag=%D0%90%D0%BD%D0%B0%D0%BB%D0%B8%D1%82%D0%B8%D0%BA%D0%B0&page=2). | Сравнение до 8 конкурентов | Все конкуренты |
+| [Аналитика витрин магазина](https://seller-edu.ozon.ru/analytics-and-metrics/graphs/analitika-vitrin). | ✔ | ✔ |
 | Анализ продаж всех конкурентов на Ozon и других площадках. | − | ✔ |
 | Поисковые запросы по товарам конкурентов. | − | ✔ |
 | [Упоминания в социальных медиа](https://seller-edu.ozon.ru/libra/analytics-and-metrics/graphs/upominaniya-v-socmedia). | − | ✔ |

@@ -6,8 +6,8 @@ path: /how-to-sell-effectively
 source: "https://seller-edu.ozon.ru/libra/how-to-sell-effectively"
 updated: "2026-07-15 08:57:27"
 doc_id: 878
-fetched_at: "2026-08-28T12:01:50Z"
-content_sha: 379f64066f96a5a5
+fetched_at: "2026-10-27T02:42:25Z"
+content_sha: 37f35ce0a9f488fa
 ---
 
 # Продвижение
@@ -31,5 +31,5 @@ _Главная_
 - [«Медийная реклама»](https://seller-edu.ozon.ru/libra/how-to-sell-effectively/media-advertising)
 - [«Заявки на маркетинг»](https://seller-edu.ozon.ru/libra/how-to-sell-effectively/marketing)
 - [Работа с лояльностью покупателей](https://seller-edu.ozon.ru/libra/how-to-sell-effectively/loyalty)
-- [Аналитика внешнего трафика](https://seller-edu.ozon.ru/libra/how-to-sell-effectively/vendor_analytics)
+- [Внешний трафик](https://seller-edu.ozon.ru/libra/how-to-sell-effectively/vendor_analytics)
 - [Бонусы на продвижение](https://seller-edu.ozon.ru/libra/how-to-sell-effectively/bonusi)

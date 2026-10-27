@@ -6,13 +6,13 @@ path: /contract-for-sellers/account-brand/contract-for-brands-en
 source: "https://seller-edu.ozon.ru/libra/contract-for-sellers/account-brand/contract-for-brands-en"
 updated: "2026-09-25 15:45:08"
 doc_id: 660
-fetched_at: "2026-09-26T02:01:06Z"
-content_sha: bacf3511319b8a54
+fetched_at: "2026-10-27T02:42:25Z"
+content_sha: 88f4469c2513377e
 ---
 
 # Trademark Holder Agreement
 
-_Главная / Договоры для Продавцов на платформе Ozon / Кабинет бренда_
+_Главная / Договоры для Продавцов на платформе Ozon / Договор кабинета бренда_
 
 This revision is effective as of  October 1, 2026. We publish amendments in advance: if the rules on this page are not already in effect, see the [previous version](https://seller-edu.ozon.ru/contract-for-sellers/account-brand/spisok-izmenenii-contract-for-brands).
 

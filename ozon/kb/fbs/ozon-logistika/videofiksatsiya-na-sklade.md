@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /fbs/ozon-logistika/videofiksatsiya-na-sklade
 source: "https://seller-edu.ozon.ru/libra/fbs/ozon-logistika/videofiksatsiya-na-sklade"
-updated: "2026-07-21 14:13:38"
+updated: "2026-10-26 07:28:32"
 doc_id: 822
-fetched_at: "2026-08-28T12:11:15Z"
-content_sha: 907090d369c4ad48
+fetched_at: "2026-10-27T02:42:26Z"
+content_sha: d3901b2b2246ae61
 ---
 
 # Видеофиксация на складе FBS
@@ -79,7 +79,7 @@ _Главная / Продажа со своего склада (FBS) / Отгр
 
 # Как отправить нам видео
 
-Рекомендуем загрузить его в любой облачный сервис, чьи хранилища находятся на территории Российской Федерации, (например, [Яндекс.Диск](https://disk.yandex.ru/), [Облако Mail.ru](https://cloud.mail.ru/) и другие) и отправить нам ссылку на файл. Для этого напишите в [поддержку](https://seller.ozon.ru/app/messenger?channel=SCRM): **FBS и realFBS → FBS**.
+Рекомендуем загрузить его в любой облачный сервис, чьи хранилища находятся на территории Российской Федерации, (например, [Яндекс.Диск](https://disk.yandex.ru/), [Облако Mail.ru](https://cloud.mail.ru/) и другие).
 
 Видео по ссылке должно храниться не менее 3 месяцев. Не сможем рассмотреть запрос, если видео защищено паролем.
 
