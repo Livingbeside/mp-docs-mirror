@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /api-ozon/how-to-api
 source: "https://seller-edu.ozon.ru/libra/api-ozon/how-to-api"
-updated: "2026-09-23 10:25:57"
+updated: "2026-10-27 14:37:24"
 doc_id: 981
-fetched_at: "2026-09-24T02:07:40Z"
-content_sha: 94a327159001685f
+fetched_at: "2026-10-28T02:51:55Z"
+content_sha: d176a561ee65eda8
 ---
 
 # Начало работы с Seller API
@@ -135,3 +135,29 @@ DELETE — удалить.
 Также методы Seller API позволяют [участвовать в акциях](https://docs.ozon.ru/api/seller/#section/Uchastvujte-v-akciyah) Ozon для покупателей, [получить информацию о складах](https://docs.ozon.ru/api/seller/#section/Poluchite-informaciyu-o-skladah), о [возвратах товаров](https://docs.ozon.ru/api/seller/#section/Poluchite-informaciyu-o-vozvratah-tovarov), [управлять чатами](https://docs.ozon.ru/api/seller/#section/Upravlyajte-chatami) с клиентами, [создавать и получать отчёты](https://docs.ozon.ru/api/seller/#section/Sozdajte-i-poluchite-otchyoty) по ценам, остаткам и отправлениям.
 
 Если в процессе у вас возникли вопросы — напишите в [поддержку](https://seller.ozon.ru/app/messenger?channel=SCRM): **Товары и цены → API Ozon** и выберите нужную подтему. В обращении укажите код запроса, при работе с которым возникла проблема.
+
+# Seller API Sandbox для Ozon Доставки
+
+Запустили изолированную тестовую среду — песочницу (Sandbox) для Seller API Ozon, позволяющую отлаживать интеграцию приложения до вывода в боевую среду. Доступ к песочнице бесплатный, а все запросы выполняются без затрагивания боевых данных продавца. Для тестирования предоставляются готовые данные.
+
+Подключение осуществляется по сценарию Client Credentials. Данные для настройки расположены в системных параметрах приложения на [[dev.ozon.ru](http://dev.ozon.ru/)](http://dev.ozon.ru).
+
+В песочнице доступны методы Seller API для работы с Ozon Доставкой:
+
+информация о товарах;
+
+остатки на складах;
+
+точки самовывоза;
+
+варианты доставки;
+
+создание заказов;
+
+отправления и их статусы.
+
+Обратите внимание: для работы с песочницей подключение Ozon Доставки не требуется – функциональность можно тестировать с неподключенной доставкой. В то же время для работы в продакшене подключение Ozon Доставки является обязательным.
+
+[Подробнее о подключении и работы с песочницей](https://dev.ozon.ru/start/562-Zapusk-Sandbox-v-Seller-API-novye-vozmozhnosti-dlia-integratsii/)
+
+[Больше об Ozon Доставке](https://seller-edu.ozon.ru/libra/ozon-logistika/dostavka-dlya-prodavcov/osobennosti-raboty)

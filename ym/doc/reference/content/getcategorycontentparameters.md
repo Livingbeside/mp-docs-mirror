@@ -2,8 +2,8 @@
 title: Списки характеристик товаров по категориям
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/content/getCategoryContentParameters.md"
-fetched_at: "2026-10-21T01:47:28Z"
-content_sha: 385b6c6aa26f2d37
+fetched_at: "2026-10-28T02:55:28Z"
+content_sha: bf8eb22349f47eef
 ---
 
 ---
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/content/getCategoryContentParameters.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21727032
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21820164
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21727032
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21820164
 
 <!-- source: ru/api/content/getCategoryContentParameters.md -->
 <div class="openapi">

@@ -2,8 +2,8 @@
 title: Поиск региона
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/regions/searchRegionsByName.md"
-fetched_at: "2026-10-21T01:48:55Z"
-content_sha: 17fdab373092d9e7
+fetched_at: "2026-10-28T02:56:44Z"
+content_sha: efe9083c7b91c992
 ---
 
 ---
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/regions/searchRegionsByName.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21727032
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21820164
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21727032
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21820164
 
 <!-- source: ru/api/regions/searchRegionsByName.md -->
 <div class="openapi">

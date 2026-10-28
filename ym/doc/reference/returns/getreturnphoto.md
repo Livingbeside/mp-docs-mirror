@@ -2,8 +2,8 @@
 title: Фотографии товара в возврате
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/returns/getReturnPhoto.md"
-fetched_at: "2026-10-21T01:48:17Z"
-content_sha: 9fd55ae82b295c79
+fetched_at: "2026-10-28T02:56:15Z"
+content_sha: 371d24ecb2d5bf5e
 ---
 
 ---
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/returns/getReturnPhoto.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21727032
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21820164
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21727032
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21820164
 
 <!-- source: ru/api/returns/getReturnPhoto.md -->
 <div class="openapi">

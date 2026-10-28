@@ -105,6 +105,58 @@
           "timestamp": "2026-05-25T02:47:09Z",
           "title": "forbidden"
         }
+      },
+      "SellerNotifications400": {
+        "value": {
+          "code": "validationError",
+          "detail": "Invalid request",
+          "origin": "notifications-public",
+          "requestId": "0582f92d-abb5-4e41-8f7a-c8cd447ba551",
+          "status": 400,
+          "title": "Validation failed"
+        }
+      },
+      "SellerNotifications403Country": {
+        "value": {
+          "code": "countryError",
+          "detail": "Seller is not from Russia",
+          "origin": "notifications-public",
+          "requestId": "0582f92d-abb5-4e41-8f7a-c8cd447ba551",
+          "status": 403,
+          "title": "Access denied"
+        }
+      },
+      "SellerNotifications403NotOwner": {
+        "value": {
+          "code": "notOwnerError",
+          "detail": "User is not the owner",
+          "origin": "notifications-public",
+          "requestId": "0582f92d-abb5-4e41-8f7a-c8cd447ba551",
+          "status": 403,
+          "title": "Access denied"
+        }
+      },
+      "SellerNotificationsExample": {
+        "value": {
+          "data": [
+            {
+              "date": "2025-02-13T11:18:09.308Z",
+              "id": "9f70d38a-2f66-4ba6-82bd-1e513ac03b0d",
+              "linkData": {
+                "linkHref": "https://seller.wildberries.ru/supply-plan-upload/orders",
+                "linkText": "К заказу"
+              },
+              "text": "Обработайте заказ...",
+              "title": "У вас новый заказ"
+            },
+            {
+              "date": "2025-02-13T10:10:10.100Z",
+              "id": "b1e2f3a4-5b6c-4d7e-8f90-1a2b3c4d5e6f",
+              "text": "Проверьте остатки",
+              "title": "Остатки закончились"
+            }
+          ]
+        }
       }
     },
     "responses": {
@@ -644,6 +696,128 @@
             "type": "string"
           }
         },
+        "required": [
+          "title",
+          "detail",
+          "requestId",
+          "origin",
+          "status",
+          "statusText",
+          "timestamp"
+        ],
+        "type": "object"
+      },
+      "SellerNotificationsError": {
+        "properties": {
+          "code": {
+            "description": "Внутренний код ошибки",
+            "type": "string"
+          },
+          "detail": {
+            "description": "Детали ошибки",
+            "type": "string"
+          },
+          "errors": {
+            "description": "Список ошибок",
+            "items": {
+              "properties": {
+                "location": {
+                  "description": "Параметр запроса, вызвавший ошибку",
+                  "example": "body.name",
+                  "type": "string"
+                },
+                "message": {
+                  "description": "Описание ошибки",
+                  "example": "expected string",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "location",
+                "message"
+              ],
+              "type": "object"
+            },
+            "type": "array"
+          },
+          "origin": {
+            "description": "ID внутреннего сервиса WB",
+            "type": "string"
+          },
+          "requestId": {
+            "description": "ID запроса",
+            "type": "string"
+          },
+          "status": {
+            "description": "HTTP статус-код",
+            "type": "integer"
+          },
+          "title": {
+            "description": "Заголовок ошибки",
+            "type": "string"
+          }
+        },
+        "required": [
+          "status",
+          "title",
+          "detail",
+          "origin",
+          "code",
+          "requestId"
+        ],
+        "type": "object"
+      },
+      "SellerNotificationsResponse": {
+        "properties": {
+          "date": {
+            "description": "Дата и время отправки уведомления",
+            "example": "2025-02-13T11:18:09.308Z",
+            "format": "date-time",
+            "type": "string"
+          },
+          "id": {
+            "description": "ID уведомления",
+            "example": "9f70d38a-2f66-4ba6-82bd-1e513ac03b0d",
+            "format": "uuid",
+            "type": "string"
+          },
+          "linkData": {
+            "description": "Данные кнопки в уведомлении",
+            "properties": {
+              "linkHref": {
+                "description": "URL кнопки в уведомлении",
+                "example": "https://seller.wildberries.ru/supply-plan-upload/orders",
+                "type": "string"
+              },
+              "linkText": {
+                "description": "Текст кнопки в уведомлении",
+                "example": "К заказу",
+                "type": "string"
+              }
+            },
+            "required": [
+              "linkHref",
+              "linkText"
+            ],
+            "type": "object"
+          },
+          "text": {
+            "description": "Текст уведомления",
+            "example": "Обработайте заказ...",
+            "type": "string"
+          },
+          "title": {
+            "description": "Заголовок уведомления",
+            "example": "У вас новый заказ",
+            "type": "string"
+          }
+        },
+        "required": [
+          "date",
+          "id",
+          "text",
+          "title"
+        ],
         "type": "object"
       },
       "SubscriptionsJamInfo": {
@@ -1043,7 +1217,7 @@
     }
   },
   "info": {
-    "description": "<div class=\"api-block\">\n\nВ этом разделе:\n- [общая информация о WB API](./api-information#tag/introduction)\n- как [начать работу с WB API](./api-information#tag/introduction/Kak-nachat-rabotu-s-API)\n- как [авторизоваться](./api-information#tag/authorization) и [создавать токены](./api-information#tag/authorization/Kak-sozdat-personalnyj-bazovyj-ili-testovyj-token)\n- основные [статус-коды ответов](./api-information#tag/introduction/Status-kody-HTTP)\n- [лимиты запросов](./api-information#tag/introduction/Limity-zaprosov)\n- как обратиться в [поддержку](./api-information#tag/introduction/Podderzhka)\n\nС помощью методов этого раздела вы можете:\n- проверить [подключение к WB API](./api-information#tag/connectionCheck/operation/getPing)\n- получить [новости портала продавцов](./api-information#tag/newsApi/operation/getV2News)\n- получить [информацию о продавце](./api-information#tag/sellerInformation/operation/getV1SellerInfo)\n- [управлять пользователями продавца](./api-information#tag/sellerUserManagement)\n\n</div>\n",
+    "description": "<div class=\"api-block\">\n\nВ этом разделе:\n- [общая информация о WB API](./api-information#tag/introduction)\n- как [начать работу с WB API](./api-information#tag/introduction/Kak-nachat-rabotu-s-API)\n- как [авторизоваться](./api-information#tag/authorization) и [создавать токены](./api-information#tag/authorization/Kak-sozdat-personalnyj-bazovyj-ili-testovyj-token)\n- основные [статус-коды ответов](./api-information#tag/introduction/Status-kody-HTTP)\n- [лимиты запросов](./api-information#tag/introduction/Limity-zaprosov)\n- как обратиться в [поддержку](./api-information#tag/introduction/Podderzhka)\n\nС помощью методов этого раздела вы можете:\n- проверить [подключение к WB API](./api-information#tag/connectionCheck/operation/getPing)\n- получить [новости](./api-information#tag/newsApi/operation/getV2News) и [уведомления](./api-information#tag/newsApi/operation/getV1Notifications) портала продавцов\n- получить [информацию о продавце](./api-information#tag/sellerInformation/operation/getV1SellerInfo)\n- [управлять пользователями продавца](./api-information#tag/sellerUserManagement)\n\n</div>\n",
     "title": "Общее",
     "version": "general",
     "x-file-name": "general"
@@ -1290,9 +1464,150 @@
         }
       ]
     },
+    "/api/communications/v1/notifications": {
+      "get": {
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод возвращает список уведомлений из [профиля](https://seller.wildberries.ru) продавца на русском языке. Порядок уведомлений в ответе — от новых к старым.\n\nДоступно только для продавцов из РФ.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один профиль продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 мин | 1 запрос | 1 мин | 10 запросов |\n| Сервисный | 1 мин | 1 запрос | 1 мин | 10 запросов |\n| Базовый с секретом | 1 мин | 1 запрос | 1 мин | 10 запросов |\n| Базовый | 1 ч | 1 запрос | 1 ч | 1 запрос |\n</div>\n",
+        "operationId": "getV1Notifications",
+        "parameters": [
+          {
+            "allowEmptyValue": true,
+            "description": "Фильтр по дате и времени: в ответе возвращаются только уведомления, полученные до указанной даты и времени. Указывайте значения не позднее текущих.<br>\nЧтобы получить самые новые уведомления, не передавайте в запросе этот параметр.<br>\nИспользуйте параметр для пагинации:\n  1. Отправьте первый запрос запрос без параметра `from`.\n  2. В следующих запросах передайте в параметре `from` значение `date` последнего уведомления в ответе.\n",
+            "example": "2025-02-13T11:18:09.308Z",
+            "in": "query",
+            "name": "from",
+            "required": false,
+            "schema": {
+              "format": "date-time",
+              "type": "string"
+            }
+          },
+          {
+            "allowEmptyValue": false,
+            "description": "Временная зона в формате [IANA](https://nodatime.org/TimeZones)",
+            "example": "Europe/Moscow",
+            "in": "query",
+            "name": "timezone",
+            "required": false,
+            "schema": {
+              "default": "Europe/Moscow",
+              "type": "string"
+            }
+          },
+          {
+            "allowEmptyValue": false,
+            "description": "Количество уведомлений в ответе",
+            "example": 10,
+            "in": "query",
+            "name": "limit",
+            "required": false,
+            "schema": {
+              "default": 10,
+              "format": "int64",
+              "maximum": 100,
+              "minimum": 5,
+              "type": "integer"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "examples": {
+                  "SellerNotificationsExample": {
+                    "$ref": "#/components/examples/SellerNotificationsExample"
+                  }
+                },
+                "schema": {
+                  "properties": {
+                    "data": {
+                      "description": "Список уведомлений",
+                      "items": {
+                        "$ref": "#/components/schemas/SellerNotificationsResponse"
+                      },
+                      "type": "array"
+                    }
+                  },
+                  "required": [
+                    "data"
+                  ],
+                  "type": "object"
+                }
+              }
+            },
+            "description": "<span class='response__value response__value_success'>Успешно</span>"
+          },
+          "400": {
+            "content": {
+              "application/problem+json": {
+                "examples": {
+                  "SellerNotifications400": {
+                    "$ref": "#/components/examples/SellerNotifications400"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/SellerNotificationsError"
+                }
+              }
+            },
+            "description": "<span class='response__value '>Неправильный запрос</span>"
+          },
+          "401": {
+            "$ref": "#/components/responses/401"
+          },
+          "403": {
+            "content": {
+              "application/problem+json": {
+                "examples": {
+                  "Response403TokenCategory": {
+                    "$ref": "#/components/examples/Response403TokenCategory"
+                  },
+                  "SellerNotifications403Country": {
+                    "$ref": "#/components/examples/SellerNotifications403Country"
+                  },
+                  "SellerNotifications403NotOwner": {
+                    "$ref": "#/components/examples/SellerNotifications403NotOwner"
+                  }
+                },
+                "schema": {
+                  "oneOf": [
+                    {
+                      "$ref": "#/components/schemas/SellerNotificationsError"
+                    },
+                    {
+                      "$ref": "#/components/schemas/Response4XX"
+                    }
+                  ]
+                }
+              }
+            },
+            "description": "<span class='response__value '>Доступ запрещён</span>"
+          },
+          "429": {
+            "$ref": "#/components/responses/429"
+          }
+        },
+        "security": [
+          {
+            "HeaderApiKey": []
+          }
+        ],
+        "summary": "Получить уведомления портала продавцов{{ /api/communications/v1/notifications }}",
+        "tags": [
+          "newsApi"
+        ],
+        "x-category": "commonapi",
+        "x-readonly-method": true
+      },
+      "servers": [
+        {
+          "url": "https://common-api.wildberries.ru"
+        }
+      ]
+    },
     "/api/communications/v2/news": {
       "get": {
-        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод позволяет получать новости портала продавцов. <br> Для получения успешного ответа необходимо указать\nодин из параметров `from` или `fromID`. <br> За один запрос можно получить не более 100 новостей.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один профиль продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 мин | 1 запрос | 1 мин | 10 запросов |\n| Сервисный | 1 мин | 1 запрос | 1 мин | 10 запросов |\n| Базовый с секретом | 1 мин | 1 запрос | 1 мин | 10 запросов |\n| Базовый | 1 ч | 1 запрос | 1 ч | 1 запрос |\n</div>\n",
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод позволяет получать [новости](https://seller.wildberries.ru/news-v2) портала продавцов. <br> Для получения успешного ответа необходимо указать\nодин из параметров `from` или `fromID`. <br> За один запрос можно получить не более 100 новостей.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один профиль продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 мин | 1 запрос | 1 мин | 10 запросов |\n| Сервисный | 1 мин | 1 запрос | 1 мин | 10 запросов |\n| Базовый с секретом | 1 мин | 1 запрос | 1 мин | 10 запросов |\n| Базовый | 1 ч | 1 запрос | 1 ч | 1 запрос |\n</div>\n",
         "operationId": "getV2News",
         "parameters": [
           {
@@ -1422,7 +1737,7 @@
             "HeaderApiKey": []
           }
         ],
-        "summary": "Получение новостей портала продавцов{{ /api/communications/v2/news }}",
+        "summary": "Получить новости портала продавцов{{ /api/communications/v2/news }}",
         "tags": [
           "newsApi"
         ],
@@ -2403,7 +2718,7 @@
   ],
   "tags": [
     {
-      "description": "<div class=\"api-description\">\n\n<div class=\"api-block\">\n\nВ этом разделе:\n- [общая информация о WB API](./api-information#tag/introduction)\n- как [начать работу с WB API](./api-information#tag/introduction/Kak-nachat-rabotu-s-API)\n- как [авторизоваться](./api-information#tag/authorization) и [создавать токены](./api-information#tag/authorization/Kak-sozdat-personalnyj-bazovyj-ili-testovyj-token)\n- основные [статус-коды ответов](./api-information#tag/introduction/Status-kody-HTTP)\n- [лимиты запросов](./api-information#tag/introduction/Limity-zaprosov)\n- как обратиться в [поддержку](./api-information#tag/introduction/Podderzhka)\n\nС помощью методов этого раздела вы можете:\n- проверить [подключение к WB API](./api-information#tag/connectionCheck/operation/getPing)\n- получить [новости портала продавцов](./api-information#tag/newsApi/operation/getV2News)\n- получить [информацию о продавце](./api-information#tag/sellerInformation/operation/getV1SellerInfo)\n- [управлять пользователями продавца](./api-information#tag/sellerUserManagement)\n\n</div>\n\n\n</div>",
+      "description": "<div class=\"api-description\">\n\n<div class=\"api-block\">\n\nВ этом разделе:\n- [общая информация о WB API](./api-information#tag/introduction)\n- как [начать работу с WB API](./api-information#tag/introduction/Kak-nachat-rabotu-s-API)\n- как [авторизоваться](./api-information#tag/authorization) и [создавать токены](./api-information#tag/authorization/Kak-sozdat-personalnyj-bazovyj-ili-testovyj-token)\n- основные [статус-коды ответов](./api-information#tag/introduction/Status-kody-HTTP)\n- [лимиты запросов](./api-information#tag/introduction/Limity-zaprosov)\n- как обратиться в [поддержку](./api-information#tag/introduction/Podderzhka)\n\nС помощью методов этого раздела вы можете:\n- проверить [подключение к WB API](./api-information#tag/connectionCheck/operation/getPing)\n- получить [новости](./api-information#tag/newsApi/operation/getV2News) и [уведомления](./api-information#tag/newsApi/operation/getV1Notifications) портала продавцов\n- получить [информацию о продавце](./api-information#tag/sellerInformation/operation/getV1SellerInfo)\n- [управлять пользователями продавца](./api-information#tag/sellerUserManagement)\n\n</div>\n\n\n</div>",
       "name": "Общее",
       "x-traitTag": true
     },
@@ -2423,9 +2738,9 @@
       "x-displayName": "Проверка подключения к WB API"
     },
     {
-      "description": "<div class=\"description_auth\">\n\n\n\n  Новости портала продавцов можно получить с токеном любой <a href=\"./api-information#tag/authorization/Kategorii-tokenov\">категории</a>\n</div>\n",
+      "description": "<div class=\"description_auth\">\n\n\n  [Новости](./api-information#tag/newsApi/operation/getV2News) и [уведомления](./api-information#tag/newsApi/operation/getV1Notifications) портала продавцов можно получить с токеном любой <a href=\"./api-information#tag/authorization/Kategorii-tokenov\">категории</a>\n</div>\n",
       "name": "newsApi",
-      "x-displayName": "API новостей"
+      "x-displayName": "API коммуникаций"
     },
     {
       "description": "С помощью этих методов вы можете получить:\n  - [информацию о продавце](./api-information#tag/sellerInformation/operation/getV1SellerInfo)\n  - [рейтинг продавца](./api-information#tag/sellerInformation/operation/getV1Rating)\n  - [информацию о подписке Джем](./api-information#tag/sellerInformation/operation/getV1Subscriptions)\n  - [информацию об опциях Конструктора тарифов](./api-information#tag/sellerInformation/operation/getV1TariffConstructorOptions)\n",

@@ -9,7 +9,7 @@ tags:
 spec_version: general
 source: "https://dev.wildberries.ru/docs/openapi/api-information"
 deprecated: false
-content_sha: 0e52a5d6ea1e78cd
+content_sha: e07baa9e40367e49
 ---
 
 # Получить информацию об опциях Конструктора тарифов
@@ -95,14 +95,14 @@ content_sha: 0e52a5d6ea1e78cd
 
 **403** — Доступ запрещён
 
-- `title` — string. Заголовок ошибки
-- `detail` — string. Детали ошибки
+- `title` — string **обязательный**. Заголовок ошибки
+- `detail` — string **обязательный**. Детали ошибки
 - `code` — string. Внутренний код ошибки
-- `requestId` — string. ID запроса
-- `origin` — string. ID внутреннего сервиса WB
-- `status` — number. HTTP статус-код
-- `statusText` — string. Расшифровка HTTP статус-кода
-- `timestamp` — string<date-time>. Дата и время запроса
+- `requestId` — string **обязательный**. ID запроса
+- `origin` — string **обязательный**. ID внутреннего сервиса WB
+- `status` — number **обязательный**. HTTP статус-код
+- `statusText` — string **обязательный**. Расшифровка HTTP статус-кода
+- `timestamp` — string<date-time> **обязательный**. Дата и время запроса
 
 **404** — Не найдено
 

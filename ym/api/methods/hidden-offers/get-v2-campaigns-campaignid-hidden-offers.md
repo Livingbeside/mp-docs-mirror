@@ -13,7 +13,7 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: 75d041ec427822ad
+content_sha: 6f2c77303f5ac0ad
 ---
 
 # Информация о скрытых вами товарах
@@ -45,7 +45,6 @@ content_sha: 75d041ec427822ad
 - `result` — object. Список скрытых вами товаров.
   - `paging` — object. Информация о страницах результатов.
     - `nextPageToken` — string. Идентификатор следующей страницы результатов.
-    - `prevPageToken` — string. {% note warning "Параметр устарел и будет отключен 19.10.2026." %}   {% endnote %} Идентификатор предыдущей страницы результатов.
   - `hiddenOffers` — array[object] **обязательный**. Список скрытых товаров.
     - `offerId` — string **обязательный**. Идентификатор предложения из прайс-листа.
 

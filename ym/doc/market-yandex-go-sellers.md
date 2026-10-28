@@ -2,8 +2,8 @@
 title: Продавцам Market Yandex Go
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/market-yandex-go-sellers.md"
-fetched_at: "2026-10-21T01:47:05Z"
-content_sha: e0228354a995b0be
+fetched_at: "2026-10-28T02:55:09Z"
+content_sha: a787ccb2ef500562
 ---
 
 ---
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/market-yandex-go-sellers.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21727032
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21820164
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21727032
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21820164
 
 # Как работать с API Маркета продавцам Market Yandex Go
 

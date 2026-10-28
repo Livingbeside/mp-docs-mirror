@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /work-with-byuers/otzyvy/sbor-otzyvov/sbor-pervyh-otzyvov/zapusk-sbora-pervyh-otzyvov
 source: "https://seller-edu.ozon.ru/libra/work-with-byuers/otzyvy/sbor-otzyvov/sbor-pervyh-otzyvov/zapusk-sbora-pervyh-otzyvov"
-updated: "2026-10-26 07:49:17"
+updated: "2026-10-27 12:21:06"
 doc_id: 75468
-fetched_at: "2026-10-27T02:42:27Z"
-content_sha: 1be530ce6b9a7509
+fetched_at: "2026-10-28T02:51:57Z"
+content_sha: 18701105488986cb
 ---
 
 # Запуск сбора первых отзывов
@@ -17,6 +17,8 @@ _Главная / Работа с покупателями / Отзывы / Ин
 Как впервые запустить сбор первых отзывов или начать сбор с помощью рекомендаций
 
 Рассказываем, как впервые запустить для товаров сбор отзывов с помощью инструмента **Сбор первых отзывов.** Подробнее о том, что это такое, можно узнать в [статье](https://seller-edu.ozon.ru/work-with-byuers/sbor-pervyh-otzyvov/chto-takoe-sbor-pervyh-otzyvov).
+
+Тестируем новую навигацию, поэтому у некоторых продавцов сбор первых отзывов может находиться в разделе **[Товары → Сбор отзывов → Сбор первых отзывов](https://seller.ozon.ru/app/reviews/collect-reviews)**.
 
 1. Откройте раздел **[Товары → Сбор первых отзывов](https://seller.ozon.ru/app/reviews/collect-reviews)**[ ](https://seller.ozon.ru/app/reviews/collect-reviews)и нажмите **Добавить товары**.
 2. Выберите цель по отзывам — сколько видеообзоров вы хотите собрать для каждого товара. Цель должна быть не менее 3.

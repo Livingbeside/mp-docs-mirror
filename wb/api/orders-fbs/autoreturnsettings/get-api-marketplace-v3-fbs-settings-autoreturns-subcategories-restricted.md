@@ -9,7 +9,7 @@ tags:
 spec_version: order
 source: "https://dev.wildberries.ru/docs/openapi/orders-fbs"
 deprecated: false
-content_sha: 60d034fd8ef7e7ef
+content_sha: 9d98bc8db9cd416b
 ---
 
 # Получить предметы, которые не хранятся на складах WB
@@ -66,14 +66,14 @@ content_sha: 60d034fd8ef7e7ef
 
 **403** — Доступ запрещён
 
-- `title` — string. Заголовок ошибки
-- `detail` — string. Детали ошибки
+- `title` — string **обязательный**. Заголовок ошибки
+- `detail` — string **обязательный**. Детали ошибки
 - `code` — string. Внутренний код ошибки
-- `requestId` — string. ID запроса
-- `origin` — string. ID внутреннего сервиса WB
-- `status` — number. HTTP статус-код
-- `statusText` — string. Расшифровка HTTP статус-кода
-- `timestamp` — string<date-time>. Дата и время запроса
+- `requestId` — string **обязательный**. ID запроса
+- `origin` — string **обязательный**. ID внутреннего сервиса WB
+- `status` — number **обязательный**. HTTP статус-код
+- `statusText` — string **обязательный**. Расшифровка HTTP статус-кода
+- `timestamp` — string<date-time> **обязательный**. Дата и время запроса
 
 **429** — Слишком много запросов
 

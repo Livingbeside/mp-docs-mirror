@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /work-with-byuers/otzyvy/sbor-otzyvov/otzyvy-za-bally/zapusk-otzyvy-za-baly
 source: "https://seller-edu.ozon.ru/libra/work-with-byuers/otzyvy/sbor-otzyvov/otzyvy-za-bally/zapusk-otzyvy-za-baly"
-updated: "2026-10-08 08:35:00"
+updated: "2026-10-27 12:18:54"
 doc_id: 19743
-fetched_at: "2026-10-09T02:02:35Z"
-content_sha: 5bfe4ce976b6b465
+fetched_at: "2026-10-28T02:51:57Z"
+content_sha: f8dc9be5d9c9fa8b
 ---
 
 # Запуск ускоренного сбора отзывов
@@ -21,6 +21,8 @@ _Главная / Работа с покупателями / Отзывы / Ин
 В зависимости от [типа кампании](https://seller-edu.ozon.ru/libra/work-with-byuers/otzyvy-za-bally/chto-takoe-otzyvy-za-baly#какие-типы-кампании-есть-в-ускоренном-сборе-отзывов), запуск инструмента будет отличаться.
 
 Не получится запустить ускоренный сбор отзывов для некоторых категорий товаров.
+
+Тестируем новую навигацию, поэтому у некоторых продавцов ускоренный сбор отзывов может находиться в разделе **[Товары → Сбор отзывов → Ускоренный сбор отзывов](https://seller.ozon.ru/app/reviews/promotions)**.
 
 # Запуск автоматической кампании
 

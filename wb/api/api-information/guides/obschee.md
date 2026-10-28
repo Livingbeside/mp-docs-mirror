@@ -5,7 +5,7 @@ tag: Общее
 group: ""
 kind: guide
 source: "https://dev.wildberries.ru/docs/openapi/api-information"
-content_sha: 3a2f8b549d272df8
+content_sha: 24b13609c76edef9
 ---
 
 # Общее
@@ -20,6 +20,6 @@ content_sha: 3a2f8b549d272df8
 
 С помощью методов этого раздела вы можете:
 - проверить [подключение к WB API](./api-information#tag/connectionCheck/operation/getPing)
-- получить [новости портала продавцов](./api-information#tag/newsApi/operation/getV2News)
+- получить [новости](./api-information#tag/newsApi/operation/getV2News) и [уведомления](./api-information#tag/newsApi/operation/getV1Notifications) портала продавцов
 - получить [информацию о продавце](./api-information#tag/sellerInformation/operation/getV1SellerInfo)
 - [управлять пользователями продавца](./api-information#tag/sellerUserManagement)

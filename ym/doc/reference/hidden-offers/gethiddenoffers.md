@@ -2,8 +2,8 @@
 title: Просмотр скрытых товаров
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/hidden-offers/getHiddenOffers.md"
-fetched_at: "2026-10-21T01:47:36Z"
-content_sha: cae099c2e3fc1250
+fetched_at: "2026-10-28T02:55:36Z"
+content_sha: 826d62420b3eb8e5
 ---
 
 ---
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/hidden-offers/getHiddenOffers.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21727032
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21820164
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21727032
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21820164
 
 <!-- source: ru/api/hidden-offers/getHiddenOffers.md -->
 <div class="openapi">
@@ -208,8 +208,7 @@ alternate:
     "status": "OK",
     "result": {
       "paging": {
-        "nextPageToken": "example",
-        "prevPageToken": "example"
+        "nextPageToken": "example"
       },
       "hiddenOffers": [
         {
@@ -257,8 +256,7 @@ alternate:
     ```json translate=no
     {
       "paging": {
-        "nextPageToken": "example",
-        "prevPageToken": "example"
+        "nextPageToken": "example"
       },
       "hiddenOffers": [
         {
@@ -281,8 +279,7 @@ alternate:
     {
       "result": {
         "paging": {
-          "nextPageToken": "example",
-          "prevPageToken": "example"
+          "nextPageToken": "example"
         },
         "hiddenOffers": [
           {
@@ -371,32 +368,13 @@ alternate:
   _Example:_{.json-schema-reset .json-schema-example} `example`
   {.table-cell}
   ||
-  ||
-  
-  _prevPageToken_{.json-schema-reset .json-schema-property .json-schema-deprecated}_[ ](*Deprecated)_{.openapi-deprecated .openapi-deprecated-compact}
-  {.table-cell}|
-  **Type**: string
-  
-  {% note warning "Параметр устарел и будет отключен 19.10.2026." %}
-  
-   
-  
-  {% endnote %}
-  
-  Идентификатор предыдущей страницы результатов.
-  
-  
-  _Example:_{.json-schema-reset .json-schema-example} `example`
-  {.table-cell}
-  ||
   |#{.json-schema-properties}
   
   {% cut "**Example**" %}{.json-schema-example}
   
   ```json translate=no
   {
-    "nextPageToken": "example",
-    "prevPageToken": "example"
+    "nextPageToken": "example"
   }
   ```
   
@@ -505,8 +483,7 @@ alternate:
   
   ```json translate=no
   {
-    "nextPageToken": "example",
-    "prevPageToken": "example"
+    "nextPageToken": "example"
   }
   ```
   
@@ -520,8 +497,7 @@ alternate:
   ```json translate=no
   {
     "paging": {
-      "nextPageToken": "example",
-      "prevPageToken": "example"
+      "nextPageToken": "example"
     },
     "hiddenOffers": [
       {
@@ -976,7 +952,7 @@ alternate:
         uniqueItems: true
         items:
           $ref: >-
-            /home/sandbox/.ya/build/build_root/2hh1/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/common/schemas.yaml#/ShopSku
+            /home/sandbox/.ya/build/build_root/l4ha/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/common/schemas.yaml#/ShopSku
     - name: pageToken
       description: >
         Идентификатор страницы c результатами.

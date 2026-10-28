@@ -2,8 +2,8 @@
 title: Заявки на поставку, вывоз и утилизацию (FBY, LaaS)
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/supplies.md"
-fetched_at: "2026-10-21T01:47:13Z"
-content_sha: 17cb9491104ddd70
+fetched_at: "2026-10-28T02:55:15Z"
+content_sha: 2cb978daae15c4b0
 ---
 
 ---
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/supplies.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21727032
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21820164
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21727032
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21820164
 
 # Заявки на поставку товаров на склад, вывоз или утилизацию
 

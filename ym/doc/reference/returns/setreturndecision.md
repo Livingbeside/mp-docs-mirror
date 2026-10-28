@@ -2,8 +2,8 @@
 title: Принятие решения по возврату (DBS)
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/returns/setReturnDecision.md"
-fetched_at: "2026-10-21T01:48:59Z"
-content_sha: 51821a06efe671fe
+fetched_at: "2026-10-28T02:56:48Z"
+content_sha: 88fcf25ff8e63429
 ---
 
 ---
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/returns/setReturnDecision.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21727032
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21820164
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21727032
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21820164
 
 <!-- source: ru/api/returns/setReturnDecision.md -->
 <div class="openapi">
@@ -1011,7 +1011,7 @@ alternate:
       decisionType: REFUND_MONEY_INCLUDING_SHIPMENT
       comment: Вернуть 149 рублей за пересылку.
     $defs:
-      /home/sandbox/.ya/build/build_root/2hh1/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/returns/schemas.yaml#/ReturnRequestDecisionType:
+      /home/sandbox/.ya/build/build_root/l4ha/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/returns/schemas.yaml#/ReturnRequestDecisionType:
         description: >
           Решение по возврату:
   
@@ -1053,7 +1053,7 @@ alternate:
           - DECLINE_REFUND
           - PARTIAL_MONEY_REFUND
           - OTHER_DECISION
-      /home/sandbox/.ya/build/build_root/2hh1/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/common/schemas.yaml#/CurrencyType:
+      /home/sandbox/.ya/build/build_root/l4ha/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/common/schemas.yaml#/CurrencyType:
         type: string
         description: |
           Коды валют:
@@ -1187,7 +1187,7 @@ alternate:
           - NAD
           - TL
           - UE
-      /home/sandbox/.ya/build/build_root/2hh1/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/common/catalog-common-schemas.yaml#/BasePriceDTO:
+      /home/sandbox/.ya/build/build_root/l4ha/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/common/catalog-common-schemas.yaml#/BasePriceDTO:
         description: Цена товара.
         type: object
         required:

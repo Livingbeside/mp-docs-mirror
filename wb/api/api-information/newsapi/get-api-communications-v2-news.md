@@ -1,5 +1,5 @@
 ---
-title: Получение новостей портала продавцов
+title: Получить новости портала продавцов
 api: wb-api-information
 method: GET
 path: /api/communications/v2/news
@@ -9,16 +9,16 @@ tags:
 spec_version: general
 source: "https://dev.wildberries.ru/docs/openapi/api-information"
 deprecated: false
-content_sha: e050e27c387de8e5
+content_sha: 12d6936f63a18c4b
 ---
 
-# Получение новостей портала продавцов
+# Получить новости портала продавцов
 
 `GET /api/communications/v2/news`
 
 Описание метода
 
-Метод позволяет получать новости портала продавцов. 
+Метод позволяет получать [новости](https://seller.wildberries.ru/news-v2) портала продавцов. 
  Для получения успешного ответа необходимо указать
 один из параметров `from` или `fromID`. 
  За один запрос можно получить не более 100 новостей.

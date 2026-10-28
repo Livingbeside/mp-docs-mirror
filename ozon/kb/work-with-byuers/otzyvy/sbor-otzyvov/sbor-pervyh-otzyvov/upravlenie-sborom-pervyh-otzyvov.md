@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /work-with-byuers/otzyvy/sbor-otzyvov/sbor-pervyh-otzyvov/upravlenie-sborom-pervyh-otzyvov
 source: "https://seller-edu.ozon.ru/libra/work-with-byuers/otzyvy/sbor-otzyvov/sbor-pervyh-otzyvov/upravlenie-sborom-pervyh-otzyvov"
-updated: "2026-10-08 09:09:37"
+updated: "2026-10-27 12:21:43"
 doc_id: 75469
-fetched_at: "2026-10-11T02:13:25Z"
-content_sha: fd8be68e759e4b49
+fetched_at: "2026-10-28T02:51:57Z"
+content_sha: 6a531ce0c9b0c79d
 ---
 
 # Управление сбором первых отзывов
@@ -17,6 +17,8 @@ _Главная / Работа с покупателями / Отзывы / Ин
 Как добавлять товары в сбор первых отзывов, удалять их из сбора или менять цель по отзывам
 
 Рассказываем, как изменить настройки сбора отзывов в инструменте **Сбор первых отзывов**. Подробнее о том, что это такое, можно узнать в [статье](/work-with-byuers/sbor-pervyh-otzyvov/chto-takoe-sbor-pervyh-otzyvov).
+
+Тестируем новую навигацию, поэтому у некоторых продавцов сбор первых отзывов может находиться в разделе **[Товары → Сбор отзывов → Сбор первых отзывов](https://seller.ozon.ru/app/reviews/collect-reviews)**.
 
 # Как добавить товары в сбор первых отзывов
 

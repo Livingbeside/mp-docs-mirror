@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /work-with-byuers/otzyvy/sbor-otzyvov/otzyvy-za-bally/rezultaty-otzyvy-za-baly
 source: "https://seller-edu.ozon.ru/libra/work-with-byuers/otzyvy/sbor-otzyvov/otzyvy-za-bally/rezultaty-otzyvy-za-baly"
-updated: "2026-10-08 08:46:52"
+updated: "2026-10-27 12:20:18"
 doc_id: 24340
-fetched_at: "2026-10-09T02:02:35Z"
-content_sha: 207b296e591bef45
+fetched_at: "2026-10-28T02:51:57Z"
+content_sha: 3bf785f9adb891b1
 ---
 
 # Анализ эффективности ускоренного сбора отзывов
@@ -15,6 +15,8 @@ content_sha: 207b296e591bef45
 _Главная / Работа с покупателями / Отзывы / Инструменты сбора отзывов / Ускоренный сбор отзывов_
 
 Как посмотреть собранные отзывы и расходы по кампании
+
+Тестируем новую навигацию, поэтому у некоторых продавцов ускоренный сбор отзывов может находиться в разделе **[Товары → Сбор отзывов → Ускоренный сбор отзывов](https://seller.ozon.ru/app/reviews/promotions)**.
 
 # Как посмотреть собранные отзывы и их стоимость
 

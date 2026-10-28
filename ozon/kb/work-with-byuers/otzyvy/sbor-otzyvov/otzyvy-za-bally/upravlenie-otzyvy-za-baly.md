@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /work-with-byuers/otzyvy/sbor-otzyvov/otzyvy-za-bally/upravlenie-otzyvy-za-baly
 source: "https://seller-edu.ozon.ru/libra/work-with-byuers/otzyvy/sbor-otzyvov/otzyvy-za-bally/upravlenie-otzyvy-za-baly"
-updated: "2026-10-08 08:41:16"
+updated: "2026-10-27 12:19:35"
 doc_id: 19744
-fetched_at: "2026-10-09T02:02:35Z"
-content_sha: c63f14d1b692b27d
+fetched_at: "2026-10-28T02:51:57Z"
+content_sha: 6955339b84a9eca6
 ---
 
 # Редактирование и отключение ускоренного сбора отзывов
@@ -17,6 +17,8 @@ _Главная / Работа с покупателями / Отзывы / Ин
 Как изменить настройки сбора отзывов или отключить кампанию
 
 Рассказываем, как изменить настройки сбора отзывов в инструменте **Ускоренный сбор отзывов**. Подробнее о том, что это такое и какие типы кампаний есть в инструменте, можно узнать в [статье](https://seller-edu.ozon.ru/work-with-byuers/otzyvy-za-bally/chto-takoe-otzyvy-za-baly).
+
+Тестируем новую навигацию, поэтому у некоторых продавцов ускоренный сбор отзывов может находиться в разделе **[Товары → Сбор отзывов → Ускоренный сбор отзывов](https://seller.ozon.ru/app/reviews/promotions)**.
 
 # Как изменить список товаров
 

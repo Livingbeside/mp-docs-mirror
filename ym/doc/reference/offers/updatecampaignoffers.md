@@ -2,8 +2,8 @@
 title: Изменение условий продажи
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/offers/updateCampaignOffers.md"
-fetched_at: "2026-10-21T01:47:29Z"
-content_sha: 906449778a22414a
+fetched_at: "2026-10-28T02:55:30Z"
+content_sha: 300e4041ba2ddbff
 ---
 
 ---
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/offers/updateCampaignOffers.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21727032
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21820164
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21727032
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21820164
 
 <!-- source: ru/api/offers/updateCampaignOffers.md -->
 <div class="openapi">
@@ -1098,7 +1098,7 @@ alternate:
                   type: integer
                   format: int32
     $defs:
-      /home/sandbox/.ya/build/build_root/2hh1/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/offers/schemas.yaml#/QuantumDTO:
+      /home/sandbox/.ya/build/build_root/l4ha/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/offers/schemas.yaml#/QuantumDTO:
         deprecated: true
         x-deprecation-config:
           shutdown-date: '2026-10-19'

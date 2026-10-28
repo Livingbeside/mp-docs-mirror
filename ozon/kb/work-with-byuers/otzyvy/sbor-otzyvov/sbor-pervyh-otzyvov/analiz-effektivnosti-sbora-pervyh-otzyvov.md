@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /work-with-byuers/otzyvy/sbor-otzyvov/sbor-pervyh-otzyvov/analiz-effektivnosti-sbora-pervyh-otzyvov
 source: "https://seller-edu.ozon.ru/libra/work-with-byuers/otzyvy/sbor-otzyvov/sbor-pervyh-otzyvov/analiz-effektivnosti-sbora-pervyh-otzyvov"
-updated: "2026-10-08 09:13:54"
+updated: "2026-10-27 12:22:17"
 doc_id: 75471
-fetched_at: "2026-10-11T02:13:25Z"
-content_sha: 164e4a5773401b2c
+fetched_at: "2026-10-28T02:51:57Z"
+content_sha: 37c488d79e36c4b6
 ---
 
 # Анализ эффективности сбора первых отзывов
@@ -17,6 +17,8 @@ _Главная / Работа с покупателями / Отзывы / Ин
 Как увидеть результаты сбора первых отзывов, посмотреть видеообзоры, а также расходы на сбор
 
 Рассказываем, как посмотреть результаты сбора в инструменте **Сбор первых отзывов**. Подробнее о том, что это такое, можно узнать в [статье](https://seller-edu.ozon.ru/work-with-byuers/sbor-pervyh-otzyvov/chto-takoe-sbor-pervyh-otzyvov).
+
+Тестируем новую навигацию, поэтому у некоторых продавцов сбор первых отзывов может находиться в разделе **[Товары → Сбор отзывов → Сбор первых отзывов](https://seller.ozon.ru/app/reviews/collect-reviews)**.
 
 # Как посмотреть, сколько отзывов собрано
 

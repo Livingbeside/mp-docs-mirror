@@ -2,8 +2,8 @@
 title: index.md
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/index.md"
-fetched_at: "2026-10-21T01:46:49Z"
-content_sha: a7ca8b7b1ab32088
+fetched_at: "2026-10-28T02:54:54Z"
+content_sha: b6eb09dd36a5493e
 ---
 
 ---
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/index.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21727032
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21820164
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21727032
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21820164
 
 # API Яндекс Маркета для продавцов
 

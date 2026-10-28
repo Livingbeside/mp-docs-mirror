@@ -2,8 +2,8 @@
 title: Получение уведомлений
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/push-notifications/reference/sendNotification.md"
-fetched_at: "2026-10-21T01:49:03Z"
-content_sha: 3f1c155d5ce6f365
+fetched_at: "2026-10-28T02:56:51Z"
+content_sha: 9a85da41f71489b0
 ---
 
 ---
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/push-notifications/reference/sendNotification.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21727032
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21820164
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21727032
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21820164
 
 <!-- source: ru/pushapi-notification/notification/sendNotification.md -->
 <div class="openapi">

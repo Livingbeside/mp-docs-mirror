@@ -9,7 +9,7 @@ tags:
 spec_version: items
 source: "https://dev.wildberries.ru/docs/openapi/item-management"
 deprecated: false
-content_sha: 1d7f3d39d5d45c58
+content_sha: f4e26c54f72870e3
 ---
 
 # Установить рекомендации для товаров
@@ -78,14 +78,14 @@ content_sha: 1d7f3d39d5d45c58
 
 **403** — Доступ запрещён
 
-- `title` — string. Заголовок ошибки
-- `detail` — string. Детали ошибки
+- `title` — string **обязательный**. Заголовок ошибки
+- `detail` — string **обязательный**. Детали ошибки
 - `code` — string. Внутренний код ошибки
-- `requestId` — string. ID запроса
-- `origin` — string. ID внутреннего сервиса WB
-- `status` — number. HTTP статус-код
-- `statusText` — string. Расшифровка HTTP статус-кода
-- `timestamp` — string<date-time>. Дата и время запроса
+- `requestId` — string **обязательный**. ID запроса
+- `origin` — string **обязательный**. ID внутреннего сервиса WB
+- `status` — number **обязательный**. HTTP статус-код
+- `statusText` — string **обязательный**. Расшифровка HTTP статус-кода
+- `timestamp` — string<date-time> **обязательный**. Дата и время запроса
 
 **429** — Слишком много запросов
 

@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /fbs/ozon-logistika/doveritel-naya-priemka-gruzovogo-mesta
 source: "https://seller-edu.ozon.ru/libra/fbs/ozon-logistika/doveritel-naya-priemka-gruzovogo-mesta"
-updated: "2026-10-26 09:06:38"
+updated: "2026-10-27 08:41:20"
 doc_id: 811
-fetched_at: "2026-10-27T02:42:26Z"
-content_sha: 47aba5eb9d614b23
+fetched_at: "2026-10-28T02:51:56Z"
+content_sha: 2d37989c1a035bb8
 ---
 
 # Доверительная приёмка грузового места
@@ -35,8 +35,6 @@ _Главная / Продажа со своего склада (FBS) / Отгр
 [Волгоградский (СЦ)](/fbs/punkty-priema/moskva#волгоградскии-мск-волгоградскии-3-хаб)
 
 [Давыдовское (СЦ)](https://seller-edu.ozon.ru/fbs/punkty-priema/moskva#давыдовское-мо-давыдовское-фбс)
-
-[Домодедово (СЦ)](/fbs/punkty-priema/moskva#домодедово-мо-домодедово-хаб-промышленная-блок-2)
 
 [Замоскворечье (СЦ)](/fbs/punkty-priema/moskva#%D0%B7%D0%B0%D0%BC%D0%BE%D1%81%D0%BA%D0%B2%D0%BE%D1%80%D0%B5%D1%87%D1%8C%D0%B5-%D0%BC%D0%BE-%D0%B7%D0%B0%D0%BC%D0%BE%D1%81%D0%BA%D0%B2%D0%BE%D1%80%D0%B5%D1%87%D1%8C%D0%B5-%D1%84%D0%B1%D1%81)
 

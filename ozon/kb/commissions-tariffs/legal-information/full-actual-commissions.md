@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /commissions-tariffs/legal-information/full-actual-commissions
 source: "https://seller-edu.ozon.ru/libra/commissions-tariffs/legal-information/full-actual-commissions"
-updated: "2026-10-22 16:14:06"
+updated: "2026-10-27 09:53:32"
 doc_id: 700
-fetched_at: "2026-10-23T01:42:53Z"
-content_sha: adf5eb12ea862484
+fetched_at: "2026-10-28T02:51:56Z"
+content_sha: c97cf15db9de3b82
 ---
 
 # Полный список комиссий и тарифов
@@ -1801,7 +1801,7 @@ B — количество баллов, которое Ozon перечисли�
 
 Оказываем эту услугу на FBO, FBO ПВЗ, FBO Fresh, FBS, realFBS (при доставке до ПВЗ Ozon на методе «Партнёры Ozon») и при доставке [«Ozon Доставкой»](/ozon-logistika/osobennosti-raboty).
 
-Приёмка и обработка клиентских возвратов и невыкупов, которую выполняет Партнёр на партнёрском ПВЗ.
+Приёмка и обработка клиентских возвратов и невыкупов выполняет Партнёр на партнёрском ПВЗ.
 
 #### FBO, FBO ПВЗ, FBO Fresh, FBS, realFBS и сервис «Ozon Доставкой для Продавцов»
 

@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /ceny-i-akcii/akcii-skidki-i-kupony/akcii-ozon/autodobalenie-tovarov-v-akcii
 source: "https://seller-edu.ozon.ru/libra/ceny-i-akcii/akcii-skidki-i-kupony/akcii-ozon/autodobalenie-tovarov-v-akcii"
-updated: "2026-10-21 11:04:56"
+updated: "2026-10-27 10:11:44"
 doc_id: 18850
-fetched_at: "2026-10-22T01:53:08Z"
-content_sha: f0c5107ed2098879
+fetched_at: "2026-10-28T02:51:57Z"
+content_sha: eaeac688eae03633
 ---
 
 # Автодобавление товаров в акции от Ozon
@@ -95,7 +95,7 @@ _Главная / Цены и акции / Акции, скидки и пром�
 
 5 марта вы установили ограничения для акций на товар 490 рублей и активировали настройку** Учитывать ограничение при автодобавлении в акции **на 30 дней. Тогда с 8 марта ваш товар не будет автоматически добавлен в акцию «Эластичный бустинг. Без ограничения срока действия».
 
-[Когда предельная цена товара может опуститься ниже ограничения для акций](https://seller-edu.ozon.ru/ceny-i-akcii/akcii-skidki-i-kupony/akcii-ozon/prices-compaigns-autoapplication)
+[Почему цена товара может опуститься ниже ограничения для акций](https://seller-edu.ozon.ru/ceny-i-akcii/akcii-skidki-i-kupony/akcii-ozon/upravlenie-tovrami-v-akciyah#популярные-вопросы-и-ответы-на-них)
 
 ## Как найти автоматически добавленные товары
 
@@ -123,7 +123,7 @@ _Главная / Цены и акции / Акции, скидки и пром�
 
 ### Видео «Как работает автодобавление»
 
-# Как работает отложенное автодобавление товаров в акции
+# Как работает отложенное автодобавление товаров в акции
 
 В активных акциях можем:
 

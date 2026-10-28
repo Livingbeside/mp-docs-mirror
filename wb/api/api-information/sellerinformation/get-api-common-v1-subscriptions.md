@@ -9,7 +9,7 @@ tags:
 spec_version: general
 source: "https://dev.wildberries.ru/docs/openapi/api-information"
 deprecated: false
-content_sha: 4ec1146313d82310
+content_sha: 27b47eb16176e26c
 ---
 
 # Получить информацию о подписке Джем
@@ -69,14 +69,14 @@ content_sha: 4ec1146313d82310
 
 **403** — Доступ запрещён
 
-- `title` — string. Заголовок ошибки
-- `detail` — string. Детали ошибки
+- `title` — string **обязательный**. Заголовок ошибки
+- `detail` — string **обязательный**. Детали ошибки
 - `code` — string. Внутренний код ошибки
-- `requestId` — string. ID запроса
-- `origin` — string. ID внутреннего сервиса WB
-- `status` — number. HTTP статус-код
-- `statusText` — string. Расшифровка HTTP статус-кода
-- `timestamp` — string<date-time>. Дата и время запроса
+- `requestId` — string **обязательный**. ID запроса
+- `origin` — string **обязательный**. ID внутреннего сервиса WB
+- `status` — number **обязательный**. HTTP статус-код
+- `statusText` — string **обязательный**. Расшифровка HTTP статус-кода
+- `timestamp` — string<date-time> **обязательный**. Дата и время запроса
 
 **429** — Слишком много запросов
 

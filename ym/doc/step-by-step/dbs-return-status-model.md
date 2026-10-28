@@ -2,8 +2,8 @@
 title: Статусы DBS-возвратов
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/dbs-return-status-model.md"
-fetched_at: "2026-10-21T01:47:15Z"
-content_sha: 48ef013bcd61b809
+fetched_at: "2026-10-28T02:55:17Z"
+content_sha: ef84654ad21e38b0
 ---
 
 ---
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/dbs-return-status-model.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21727032
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21820164
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21727032
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21820164
 
 ## Как изменяются статусы возвратов для модели DBS
 

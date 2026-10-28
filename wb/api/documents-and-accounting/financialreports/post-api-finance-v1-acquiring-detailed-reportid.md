@@ -9,7 +9,7 @@ tags:
 spec_version: finances
 source: "https://dev.wildberries.ru/docs/openapi/documents-and-accounting"
 deprecated: false
-content_sha: 98da4a5c6504b5f5
+content_sha: a09b60baa08dd83e
 ---
 
 # Детализации к отчётам об издержках на приём платежей по ID отчётов{{ /api/finance/v1/acquiring/detailed/{reportId} }}
@@ -94,14 +94,14 @@ content_sha: 98da4a5c6504b5f5
 
 **403** — Доступ запрещён
 
-- `title` — string. Заголовок ошибки
-- `detail` — string. Детали ошибки
+- `title` — string **обязательный**. Заголовок ошибки
+- `detail` — string **обязательный**. Детали ошибки
 - `code` — string. Внутренний код ошибки
-- `requestId` — string. ID запроса
-- `origin` — string. ID внутреннего сервиса WB
-- `status` — number. HTTP статус-код
-- `statusText` — string. Расшифровка HTTP статус-кода
-- `timestamp` — string<date-time>. Дата и время запроса
+- `requestId` — string **обязательный**. ID запроса
+- `origin` — string **обязательный**. ID внутреннего сервиса WB
+- `status` — number **обязательный**. HTTP статус-код
+- `statusText` — string **обязательный**. Расшифровка HTTP статус-кода
+- `timestamp` — string<date-time> **обязательный**. Дата и время запроса
 
 **404** — Не найдено
 

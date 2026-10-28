@@ -577,6 +577,15 @@
             "type": "string"
           }
         },
+        "required": [
+          "title",
+          "detail",
+          "requestId",
+          "origin",
+          "status",
+          "statusText",
+          "timestamp"
+        ],
         "type": "object"
       },
       "errors.DraftError": {

@@ -2,9 +2,9 @@
 title: Общее — все методы
 api: wb-api-information
 spec_version: general
-operations: 10
+operations: 11
 source: "https://dev.wildberries.ru/docs/openapi/api-information"
-content_sha: 9ebd1521ddd0bfb7
+content_sha: 3812795186f75d92
 ---
 
 # Общее
@@ -19,11 +19,11 @@ content_sha: 9ebd1521ddd0bfb7
 
 С помощью методов этого раздела вы можете:
 - проверить [подключение к WB API](./api-information#tag/connectionCheck/operation/getPing)
-- получить [новости портала продавцов](./api-information#tag/newsApi/operation/getV2News)
+- получить [новости](./api-information#tag/newsApi/operation/getV2News) и [уведомления](./api-information#tag/newsApi/operation/getV1Notifications) портала продавцов
 - получить [информацию о продавце](./api-information#tag/sellerInformation/operation/getV1SellerInfo)
 - [управлять пользователями продавца](./api-information#tag/sellerUserManagement)
 
-Версия спеки: `general` · методов: **10** · разделов справки: **7**
+Версия спеки: `general` · методов: **11** · разделов справки: **7**
 
 Источник: https://dev.wildberries.ru/docs/openapi/api-information
 
@@ -33,7 +33,8 @@ content_sha: 9ebd1521ddd0bfb7
 | `GET` | `/api/common/v1/rating` | sellerInformation | [Получить рейтинг продавца](sellerinformation/get-api-common-v1-rating.md) |
 | `GET` | `/api/common/v1/subscriptions` | sellerInformation | [Получить информацию о подписке Джем](sellerinformation/get-api-common-v1-subscriptions.md) |
 | `GET` | `/api/common/v1/tariff-constructor/options` | sellerInformation | [Получить информацию об опциях Конструктора тарифов](sellerinformation/get-api-common-v1-tariff-constructor-options.md) |
-| `GET` | `/api/communications/v2/news` | newsApi | [Получение новостей портала продавцов](newsapi/get-api-communications-v2-news.md) |
+| `GET` | `/api/communications/v1/notifications` | newsApi | [Получить уведомления портала продавцов](newsapi/get-api-communications-v1-notifications.md) |
+| `GET` | `/api/communications/v2/news` | newsApi | [Получить новости портала продавцов](newsapi/get-api-communications-v2-news.md) |
 | `GET` | `/api/v1/seller-info` | sellerInformation | [Получить информацию о продавце](sellerinformation/get-api-v1-seller-info.md) |
 | `GET` | `/api/v1/users` | sellerUserManagement | [Получить список активных или приглашённых пользователей продавца](sellerusermanagement/get-api-v1-users.md) |
 | `GET` | `/ping` | connectionCheck | [Проверка подключения](connectioncheck/get-ping.md) |
