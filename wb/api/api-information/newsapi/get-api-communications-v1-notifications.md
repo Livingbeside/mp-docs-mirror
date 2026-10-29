@@ -9,7 +9,7 @@ tags:
 spec_version: general
 source: "https://dev.wildberries.ru/docs/openapi/api-information"
 deprecated: false
-content_sha: 756d7e06a1492f08
+content_sha: 2211b3356e6f9e91
 ---
 
 # Получить уведомления портала продавцов
@@ -17,6 +17,10 @@ content_sha: 756d7e06a1492f08
 `GET /api/communications/v1/notifications`
 
 Описание метода
+
+ Метод [доступен](./api-information#tag/authorization/Pravila-ispolzovaniya-tokenov-dostupa-k-API) по
+ Персональному токену, 
+ Сервисному токену
 
 Метод возвращает список уведомлений из [профиля](https://seller.wildberries.ru) продавца на русском языке. Порядок уведомлений в ответе — от новых к старым.
 
@@ -28,8 +32,6 @@ content_sha: 756d7e06a1492f08
 | --- | --- | --- | --- | --- |
 | Персональный | 1 мин | 1 запрос | 1 мин | 10 запросов |
 | Сервисный | 1 мин | 1 запрос | 1 мин | 10 запросов |
-| Базовый с секретом | 1 мин | 1 запрос | 1 мин | 10 запросов |
-| Базовый | 1 ч | 1 запрос | 1 ч | 1 запрос |
 
 ## Параметры
 

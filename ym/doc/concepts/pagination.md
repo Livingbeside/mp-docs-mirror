@@ -2,8 +2,8 @@
 title: Пагинация в запросах
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/concepts/pagination.md"
-fetched_at: "2026-10-28T02:55:05Z"
-content_sha: d69cb6283f6fceb0
+fetched_at: "2026-10-29T02:48:36Z"
+content_sha: f4ca6f37c78d1adf
 ---
 
 ---
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/concepts/pagination.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21820164
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21852514
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21820164
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21852514
 
 # Пагинация в запросах к API Яндекс Маркета для продавцов
 

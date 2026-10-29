@@ -2,8 +2,8 @@
 title: Главные обновления
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/changelog/main.md"
-fetched_at: "2026-10-28T02:55:24Z"
-content_sha: 4a24b08b53c31077
+fetched_at: "2026-10-29T02:48:58Z"
+content_sha: e500758fcc1e43c2
 ---
 
 ---
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/changelog/main.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21820164
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21852514
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21820164
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21852514
 
 # Главные обновления
 
@@ -31,6 +31,21 @@ alternate:
 {% endnote %}
 
 <!-- source: ru/_auto/changelog/main.md -->
+<!-- source: ru/_auto/changelog/main/2026-10-27.md -->
+### 27 октября {#27-10-26}
+
+#|
+|| **Методы или страницы документации**
+ | **Описание изменений**
+ ||
+||
+[GET v2/campaigns/{campaignId}/hidden-offers](https://yandex.ru/dev/market/partner-api/doc/ru/reference/hidden-offers/getHiddenOffers.md)
+|
+Удалили устаревший параметр `prevPageToken` из ответа. Для перехода между страницами используйте `nextPageToken`.
+||
+|#
+<!-- endsource: ru/_auto/changelog/main/2026-10-27.md -->
+
 <!-- source: ru/_auto/changelog/main/2026-09-09.md -->
 ### 9 сентября {#09-09-26}
 

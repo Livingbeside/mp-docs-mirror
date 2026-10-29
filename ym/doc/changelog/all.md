@@ -2,8 +2,8 @@
 title: Все обновления
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/changelog/all.md"
-fetched_at: "2026-10-28T02:55:25Z"
-content_sha: 866b3267f526776d
+fetched_at: "2026-10-29T02:48:59Z"
+content_sha: a695be547beec661
 ---
 
 ---
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/changelog/all.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21820164
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21852514
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21820164
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21852514
 
 # Все обновления
 
@@ -31,6 +31,36 @@ alternate:
 {% endnote %}
 
 <!-- source: ru/_auto/changelog/all.md -->
+<!-- source: ru/_auto/changelog/all/2026-10-27.md -->
+### 27 октября {#27-10-26}
+
+#|
+|| **Методы или страницы документации**
+ | **Описание изменений**
+ ||
+||
+[GET v2/campaigns/{campaignId}/hidden-offers](https://yandex.ru/dev/market/partner-api/doc/ru/reference/hidden-offers/getHiddenOffers.md)
+|
+Удалили устаревший параметр `prevPageToken` из ответа. Для перехода между страницами используйте `nextPageToken`.
+||
+|#
+<!-- endsource: ru/_auto/changelog/all/2026-10-27.md -->
+
+<!-- source: ru/_auto/changelog/all/2026-10-20.md -->
+### 20 октября {#20-10-26}
+
+#|
+|| **Методы или страницы документации**
+ | **Описание изменений**
+ ||
+||
+[POST v2/campaigns/{campaignId}/outlets](https://yandex.ru/dev/market/partner-api/doc/ru/reference/outlets/createOutlet.md)<br>[PUT v2/campaigns/{campaignId}/outlets/{outletId}](https://yandex.ru/dev/market/partner-api/doc/ru/reference/outlets/updateOutlet.md)<br>[Коды ошибок](https://yandex.ru/dev/market/partner-api/doc/ru/concepts/error-codes.md)
+|
+В описании идентификатора региона точки продаж и в тексте ошибки о неподходящем регионе пометили тип ~~TOWN~~ как устаревший и удалили его. Вместо него указали тип `VILLAGE`. Допустимые типы — `CITY`, `VILLAGE` и `REPUBLIC_AREA`.
+||
+|#
+<!-- endsource: ru/_auto/changelog/all/2026-10-20.md -->
+
 <!-- source: ru/_auto/changelog/all/2026-10-06.md -->
 ### 6 октября {#06-10-26}
 

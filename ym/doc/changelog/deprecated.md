@@ -2,8 +2,8 @@
 title: Устаревшие методы и параметры
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/changelog/deprecated.md"
-fetched_at: "2026-10-28T02:55:24Z"
-content_sha: 0502671e8f66b6e2
+fetched_at: "2026-10-29T02:48:58Z"
+content_sha: 37af313d49bdc7da
 ---
 
 ---
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/changelog/deprecated.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21820164
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21852514
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21820164
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21852514
 
 # Устаревшие методы и параметры
 
@@ -31,6 +31,36 @@ alternate:
 {% endnote %}
 
 <!-- source: ru/_auto/changelog/deprecated.md -->
+<!-- source: ru/_auto/changelog/deprecated/2026-10-27.md -->
+### 27 октября {#27-10-26}
+
+#|
+|| **Методы или страницы документации**
+ | **Описание изменений**
+ ||
+||
+[GET v2/campaigns/{campaignId}/hidden-offers](https://yandex.ru/dev/market/partner-api/doc/ru/reference/hidden-offers/getHiddenOffers.md)
+|
+Удалили устаревший параметр `prevPageToken` из ответа. Для перехода между страницами используйте `nextPageToken`.
+||
+|#
+<!-- endsource: ru/_auto/changelog/deprecated/2026-10-27.md -->
+
+<!-- source: ru/_auto/changelog/deprecated/2026-10-20.md -->
+### 20 октября {#20-10-26}
+
+#|
+|| **Методы или страницы документации**
+ | **Описание изменений**
+ ||
+||
+[POST v2/campaigns/{campaignId}/outlets](https://yandex.ru/dev/market/partner-api/doc/ru/reference/outlets/createOutlet.md)<br>[PUT v2/campaigns/{campaignId}/outlets/{outletId}](https://yandex.ru/dev/market/partner-api/doc/ru/reference/outlets/updateOutlet.md)<br>[Коды ошибок](https://yandex.ru/dev/market/partner-api/doc/ru/concepts/error-codes.md)
+|
+В описании идентификатора региона точки продаж и в тексте ошибки о неподходящем регионе пометили тип ~~TOWN~~ как устаревший и удалили его. Вместо него указали тип `VILLAGE`. Допустимые типы — `CITY`, `VILLAGE` и `REPUBLIC_AREA`.
+||
+|#
+<!-- endsource: ru/_auto/changelog/deprecated/2026-10-20.md -->
+
 <!-- source: ru/_auto/changelog/deprecated/2026-07-29.md -->
 ### 29 июля {#29-07-26}
 

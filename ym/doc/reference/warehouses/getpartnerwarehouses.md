@@ -2,8 +2,8 @@
 title: Список складов
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/warehouses/getPartnerWarehouses.md"
-fetched_at: "2026-10-28T02:56:40Z"
-content_sha: 6c42472fd703b667
+fetched_at: "2026-10-29T02:50:17Z"
+content_sha: 6b53c2b82141a96f
 ---
 
 ---
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/warehouses/getPartnerWarehouses.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21820164
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21852514
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21820164
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21852514
 
 <!-- source: ru/api/warehouses/getPartnerWarehouses.md -->
 <div class="openapi">
@@ -314,6 +314,7 @@ alternate:
           "models": [
             {
               "placementType": "FBS",
+              "campaignId": 1,
               "apiAvailability": "AVAILABLE"
             }
           ],
@@ -450,6 +451,28 @@ alternate:
   
   <div class="openapi-entity">
   
+  ### CampaignId {#entity-CampaignId}
+  
+  Идентификатор кампании (магазина) — технический идентификатор, который представляет ваш магазин в системе Яндекс Маркета при работе через API. Он однозначно связывается с вашим магазином, но предназначен только для автоматизированного взаимодействия.
+  
+  Его можно узнать с помощью запроса [GET v2/campaigns](https://yandex.ru/dev/market/partner-api/doc/ru/reference/campaigns/getCampaigns.md) или найти в кабинете продавца на Маркете. Нажмите на иконку вашего аккаунта → **Настройки** и в меню слева выберите **API и модули**:
+  
+  * блок **Идентификатор кампании**;
+  * вкладка **Лог запросов** → выпадающий список в блоке **Показывать логи**.
+  
+  ⚠️ Не путайте его с:
+  - идентификатором магазина, который отображается в личном кабинете продавца;
+  - рекламными кампаниями.
+  
+  
+  **Type**: integer
+  
+  _Min value:_{.json-schema-reset .json-schema-assertion} `1`
+  
+  </div>
+  
+  <div class="openapi-entity">
+  
   ### ApiAvailabilityStatusType {#entity-ApiAvailabilityStatusType}
   
   Возможность использовать API:
@@ -513,6 +536,36 @@ alternate:
   _Enum:_{.json-schema-reset .json-schema-value} `FBS`, `DBS`, `EXPRESS`
   {.table-cell}
   ||
+  ||
+  
+  _campaignId_{.json-schema-reset .json-schema-property}
+  {.table-cell}|
+  **Type**: [CampaignId](#entity-CampaignId)
+  
+  Идентификатор магазина, связанного с этой моделью работы склада.
+  
+  Используется для вызова методов API с параметром `campaignId`, например для получения цен и НДС товаров.
+  
+  Возвращается, если связь с магазином однозначно определена.
+  
+  
+  Идентификатор кампании (магазина) — технический идентификатор, который представляет ваш магазин в системе Яндекс Маркета при работе через API. Он однозначно связывается с вашим магазином, но предназначен только для автоматизированного взаимодействия.
+  
+  Его можно узнать с помощью запроса [GET v2/campaigns](https://yandex.ru/dev/market/partner-api/doc/ru/reference/campaigns/getCampaigns.md) или найти в кабинете продавца на Маркете. Нажмите на иконку вашего аккаунта → **Настройки** и в меню слева выберите **API и модули**:
+  
+  * блок **Идентификатор кампании**;
+  * вкладка **Лог запросов** → выпадающий список в блоке **Показывать логи**.
+  
+  ⚠️ Не путайте его с:
+  - идентификатором магазина, который отображается в личном кабинете продавца;
+  - рекламными кампаниями.
+  
+  
+  _Min value:_{.json-schema-reset .json-schema-assertion} `1`
+  
+  _Example:_{.json-schema-reset .json-schema-example} `1`
+  {.table-cell}
+  ||
   |#{.json-schema-properties}
   
   {% cut "**Example**" %}{.json-schema-example}
@@ -520,6 +573,7 @@ alternate:
   ```json translate=no
   {
     "placementType": "FBS",
+    "campaignId": 1,
     "apiAvailability": "AVAILABLE"
   }
   ```
@@ -719,6 +773,7 @@ alternate:
   [
     {
       "placementType": "FBS",
+      "campaignId": 1,
       "apiAvailability": "AVAILABLE"
     }
   ]
@@ -781,6 +836,7 @@ alternate:
     "models": [
       {
         "placementType": "FBS",
+        "campaignId": 1,
         "apiAvailability": "AVAILABLE"
       }
     ],
@@ -862,6 +918,7 @@ alternate:
       "models": [
         {
           "placementType": "FBS",
+          "campaignId": 1,
           "apiAvailability": "AVAILABLE"
         }
       ],
@@ -916,6 +973,7 @@ alternate:
         "models": [
           {
             "placementType": "FBS",
+            "campaignId": 1,
             "apiAvailability": "AVAILABLE"
           }
         ],

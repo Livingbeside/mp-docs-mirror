@@ -2,8 +2,8 @@
 title: Тестовые заказы
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/concepts/sandbox.md"
-fetched_at: "2026-10-28T02:55:06Z"
-content_sha: 70653ac680c77624
+fetched_at: "2026-10-29T02:48:37Z"
+content_sha: edbd0cd43acbbf54
 ---
 
 ---
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/concepts/sandbox.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21820164
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21852514
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21820164
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21852514
 
 # Тестовые заказы
 
@@ -53,33 +53,19 @@ alternate:
 
 На странице **API и модули** → **Тестовый заказ**:
 
-1. Выберите **Создать в личном кабинете**.
+1. Выберите магазин из выпадающего списка и нажмите **Выбрать**.
 
-2. Добавьте товары в корзину — нажмите ![](../_images/sandbox-button.png) рядом с нужными.
+2. Выберите товары из списка и нажмите **Добавить в корзину**.
 
-3. В блоке **Корзина** нажмите **Проверить наличие**.
+3. При необходимости укажите нужное количество товара и нажмите **К оформлению**.
 
-![](../_images/concepts/sandbox-order.png)
+4. Выберите условия доставки (ПВЗ Маркета или Курьер). Это имитация заказа — условия доставки не привязаны к реальным настройкам склада, магазина или кабинета.
 
-### 2. Отправьте заказ {#accept}
+5. Проверьте данные и нажмите **Оплатить картой**. Для тестового заказа доступна только оплата тестовой картой, деньги не списываются.
 
-В третьем блоке:
+После этого на странице появится уведомление о создании нового заказа и его номер. Вы можете перейти на страницу заказа или оформить новый тестовый заказ.
 
-1. Укажите способ доставки и оплаты. Так как это тестовый заказ, выберите оплату при получении.
-
-    {% note tip "Магазин создан только что" %}
-
-    Настроенные службы доставки могут быть недоступны. В таком случае выберите тестовую службу.
-
-    {% endnote %}
-
-1. Введите тестовые данные покупателя (адрес, имя и фамилию, телефон и т. д.).
-
-2. Нажмите **Отправить заказ**.
-
-После этого на странице появится уведомление о создании нового заказа и его номер.
-
-### 3. Обработайте заказ {#process}
+### 2. Обработайте заказ {#process}
 
 {% note warning "После каждого запроса проверяйте лог" %}
 
@@ -99,7 +85,7 @@ alternate:
 
 1. Если в дальнейшем вы будете отгружать заказы в сортировочный центр или пункт приема или передавать их курьерам Маркета с вашего склада, отправьте запрос [PUT v2/campaigns/{campaignId}/orders/{orderId}/status](https://yandex.ru/dev/market/partner-api/doc/ru/reference/orders/updateOrderStatus.md). Передайте в нем статус `PROCESSING` с подстатусом `SHIPPED`.
 
-### 4. Отмените заказ {#cancel}
+### 3. Отмените заказ {#cancel}
 
 Отправьте запрос [PUT v2/campaigns/{campaignId}/orders/{orderId}/status](https://yandex.ru/dev/market/partner-api/doc/ru/reference/orders/updateOrderStatus.md) и передайте статус `CANCELLED` с причиной отмены `SHOP_FAILED`. Тестовый заказ можно отменить только до перевода в статус `PROCESSING` с подстатусом:
 
