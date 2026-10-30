@@ -6,8 +6,8 @@ path: /fbo/warehouses
 source: "https://seller-edu.ozon.ru/libra/fbo/warehouses"
 updated: "2025-11-20 13:45:21"
 doc_id: 786
-fetched_at: "2026-08-28T12:11:14Z"
-content_sha: 4ae937ab38b93cc8
+fetched_at: "2026-10-30T02:44:51Z"
+content_sha: a68d23ee98d8cc4d
 ---
 
 # Склады, адреса и кластеры доставки
@@ -23,4 +23,3 @@ _Главная / Продажа со склада Ozon (FBO)_
 - [Подсказка о свободном складе в Telegram-боте](https://seller-edu.ozon.ru/libra/fbo/warehouses/telegram-bot-sklady-ozon)
 - [Адреса и реквизиты складов Ozon Fresh](https://seller-edu.ozon.ru/libra/fbo/warehouses/adresa-darkstorov)
 - [Стоимость размещения товаров на складах Ozon](https://seller-edu.ozon.ru/libra/fbo/warehouses/warehousing-cost)
-- [Вопросы и ответы по отчёту о стоимости размещения](https://seller-edu.ozon.ru/libra/fbo/warehouses/voprosy-i-otvety-po-otchtu-o-stoimosti-razmeshcheniya)

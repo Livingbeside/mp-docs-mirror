@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /analytics-and-metrics/instrymenti-analitiki
 source: "https://seller-edu.ozon.ru/libra/analytics-and-metrics/instrymenti-analitiki"
-updated: "2026-09-04 12:56:07"
+updated: "2026-10-29 14:02:59"
 doc_id: 952
-fetched_at: "2026-09-05T02:12:29Z"
-content_sha: 1c0b79c2f9b7f846
+fetched_at: "2026-10-30T02:44:51Z"
+content_sha: 5d530c3f6de4e6d0
 ---
 
 # Инструменты аналитики
@@ -90,3 +90,5 @@ _Главная / Аналитика_
 **[Недостающие товары](/analytics-and-metrics/what-to-sell/market-bestsellers)** — продукция, которая успешно продаётся на российском рынке, но пока отсутствует на Ozon.
 
 **[Поставщики](https://seller-edu.ozon.ru/libra/analytics-and-metrics/what-to-sell/zakupki)** — компании, у которых можно закупать товары.
+
+# Вебинар  «Аналитика на Ozon»

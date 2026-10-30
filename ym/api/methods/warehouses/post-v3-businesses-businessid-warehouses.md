@@ -12,7 +12,7 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: 170dbb09f6dfddea
+content_sha: d39c3cf52841113f
 ---
 
 # Список складов
@@ -59,6 +59,7 @@ content_sha: 170dbb09f6dfddea
     - `name` — string **обязательный**. Название склада.
     - `models` — array[object] **обязательный**. Модели работы, доступные для склада.
       - `placementType` — string (FBS, DBS, EXPRESS) **обязательный**. Модель работы: * `FBS` — FBS. * `DBS` — DBS. * `EXPRESS` — Экспресс.
+      - `campaignId` — integer<int64>. Идентификатор магазина, связанного с этой моделью работы склада. Используется для вызова методов API с параметром `campaignId`, например для получения цен и НДС товаров. Возвращается, если связь с магазином однозначно определена.
       - `apiAvailability` — string (AVAILABLE, DISABLED_BY_INACTIVITY, DISABLED_BY_NO_ACTIVE_CONTRACT, MANUALLY_DISABLED, DISABLED_BY_NO_PLACEMENT_TYPE) **обязательный**. Возможность использовать API: * `AVAILABLE` — методы API доступны для выполнения запросов. * `DISABLED_BY_INACTIVITY` — методы API недоступны, так как магазин не размещал товары на витрине больше 90 дней. * `DISABLED_BY_NO_ACTIVE_CONTRACT` — методы API недоступны из-за отсутствия активного договора с Маркетом. * `MANUALLY_DISABLED` — методы API недоступны, так как интеграция выключена вручную. * `DISABLED_BY_NO_PLACEMENT_TYPE` — методы API недоступны, так как магазин не подключен к программе размещения. [Подробная инструкция по восстановлению доступа](../../concepts/api-access.md)
     - `address` — object. Адрес склада. Возвращается, только если в запросе параметр `components` принимает значение `ADDRESS`.
       - `city` — string **обязательный**. Город.
