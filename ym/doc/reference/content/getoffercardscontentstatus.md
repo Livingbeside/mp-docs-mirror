@@ -2,8 +2,8 @@
 title: Информация о заполненности карточек
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/content/getOfferCardsContentStatus.md"
-fetched_at: "2026-10-30T02:49:36Z"
-content_sha: 5abc796f2a8f710d
+fetched_at: "2026-10-31T02:46:42Z"
+content_sha: 7e9b3af3126a1615
 ---
 
 ---
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/content/getOfferCardsContentStatus.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21863558
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21887165
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21863558
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21887165
 
 <!-- source: ru/api/content/getOfferCardsContentStatus.md -->
 <div class="openapi">

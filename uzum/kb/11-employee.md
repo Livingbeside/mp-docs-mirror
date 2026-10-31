@@ -4,8 +4,8 @@ marketplace: uzum
 kind: article
 path: /11.employee/
 source: "https://seller.uzum.uz/manual/11.employee/"
-fetched_at: "2026-09-25T06:48:52Z"
-content_sha: 0b517d8d24fe1150
+fetched_at: "2026-10-31T02:49:35Z"
+content_sha: 6904daeb2d32c1aa
 ---
 
 # 13. Добавление сотрудников и управление ролями
@@ -20,7 +20,7 @@ content_sha: 0b517d8d24fe1150
 - Роль, которая будет у сотрудника.
 - Магазины, в которых сотрудник будет выполнять данную роль.
 
-![](https://user-images.githubusercontent.com/118338755/203740962-cdbf44d2-e654-4a49-8fb2-f22f1ab70502.gif)
+![](https://seller.uzum.uz/manual/external/github/203740962-cdbf44d2-e654-4a49-8fb2-f22f1ab70502.gif)
 
 На данный момент доступны роли:
 
@@ -33,6 +33,6 @@ content_sha: 0b517d8d24fe1150
 
 Нажав на три точки напротив информации о добавленном сотруднике вы можете поменять роль или **удалить** его совсем.
 
-![](https://user-images.githubusercontent.com/93249146/148739436-a85aded8-d500-460c-97dd-dbf7d81ddd92.gif)
+![](https://seller.uzum.uz/manual/external/github/148739436-a85aded8-d500-460c-97dd-dbf7d81ddd92.gif)
 
 Чтобы начать работу в вашем магазине добавленный сотрудник должен войти под своими учетными данными на [сайт личного кабинета](https://seller.uzum.uz/seller/signin).

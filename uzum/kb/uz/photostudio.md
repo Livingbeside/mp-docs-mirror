@@ -4,8 +4,8 @@ marketplace: uzum
 kind: article
 path: /uz/photostudio/
 source: "https://seller.uzum.uz/manual/uz/photostudio/"
-fetched_at: "2026-09-30T07:25:25Z"
-content_sha: 84851edeb93d1f3f
+fetched_at: "2026-10-31T02:49:37Z"
+content_sha: dcc6e00fdacaa16d
 ---
 
 **Инструкция по заполнению Бриф-заявки для ЦПТ**
@@ -36,7 +36,7 @@ content_sha: 84851edeb93d1f3f
 
 Для того, чтобы иметь возможность заполнять бриф, вам нужно сделать копию [файла]([https://docs.google.com/spreadsheets/d/1c_UF4FP4-4qHEZ_TpQYROGRA6ueWoDEITk1hvAtdYzo/edit#gid=1155901184](https://docs.google.com/spreadsheets/d/1c_UF4FP4-4qHEZ_TpQYROGRA6ueWoDEITk1hvAtdYzo/edit#gid=1155901184)
 
-?usp=sharing). Для этого нажмите на *“Файл”* → *“Создать копию”*. ![Как сделать копию брифа под себя](https://user-images.githubusercontent.com/93249146/150316337-d16bd03a-99a6-461c-ad1f-3d49b2a12587.gif)
+?usp=sharing). Для этого нажмите на *“Файл”* → *“Создать копию”*. ![Как сделать копию брифа под себя](https://seller.uzum.uz/manual/external/github/150316337-d16bd03a-99a6-461c-ad1f-3d49b2a12587.gif)
 
 Впишите в графу “Название” наименование своего ИП и дату заявки.
 
@@ -76,7 +76,7 @@ content_sha: 84851edeb93d1f3f
 ● **Вид упаковочного материала.**
  Старайтесь выбирать упаковку исходя из размеров товара, тогда цена за услуги будет сходиться со счетом, выставленным в конце работы.
 
-![](https://user-images.githubusercontent.com/93249146/150317690-bca24732-022e-49ca-a840-457eca837bae.gif)
+![](https://seller.uzum.uz/manual/external/github/150317690-bca24732-022e-49ca-a840-457eca837bae.gif)
 
 ● **Вид доп. упаковочного материала.**
  Если товар нужно упаковать дополнительно при помощи пленки или крафт бумаги (для безопасности транспортировки или заполнения пустого пространства).
@@ -91,4 +91,4 @@ content_sha: 84851edeb93d1f3f
 
 [Отправьте](https://telegram.me/UMarket_Business_Bot) готовый бриф и коды маркировки персональному менеджеру или в чат бизнес-поддержки в личном кабинете. Для этого Сформируйте ссылку на бриф, нажав ***"Настройки доступа”*** → ***”Разрешить доступ всем, у кого есть ссылка”*** → ***“Копировать ссылку"***.
 
-![Как дать доступ ссылку на бриф ЦПТ](https://user-images.githubusercontent.com/93249146/150318144-55325d39-3e82-4ce0-bdd2-2b97a622e1e6.gif)
+![Как дать доступ ссылку на бриф ЦПТ](https://seller.uzum.uz/manual/external/github/150318144-55325d39-3e82-4ce0-bdd2-2b97a622e1e6.gif)

@@ -9,12 +9,14 @@ tags:
 spec_version: 1.0.0
 source: "https://api-seller.uzum.uz/api/seller-openapi/swagger/swagger-ui/swagger-ui/index.html"
 deprecated: false
-content_sha: 52053a01f4d695e8
+content_sha: c16d56e088eac17d
 ---
 
 # Отмена накладной
 
 `POST /v1/fbs/invoice/{invoiceId}/cancel`
+
+Нужен API-ключ в заголовке Authorization, без Bearer. В Swagger UI нажмите **Authorize**.
 
 Отмена накладной
 
@@ -75,3 +77,5 @@ content_sha: 52053a01f4d695e8
 - `timestamp` — string<date-time>
 - `trace` — string
 - `error` — string
+
+**401** — Заголовок Authorization отсутствует или пуст. Передайте Authorization: API_TOKEN без префикса Bearer; заголовок token не используется.

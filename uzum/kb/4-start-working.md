@@ -4,8 +4,8 @@ marketplace: uzum
 kind: article
 path: /4.start-working/
 source: "https://seller.uzum.uz/manual/4.start-working/"
-fetched_at: "2026-10-22T02:00:41Z"
-content_sha: 9899bfe8c2aab3bf
+fetched_at: "2026-10-31T02:49:35Z"
+content_sha: 2df73a5d1f4e9df9
 ---
 
 # 4. Начало работы
@@ -182,7 +182,7 @@ content_sha: 9899bfe8c2aab3bf
 > *Важно*:
 >  В зависимости от обстоятельств, активация аккаунта может быть отложена на срок до полугода.
 
-![](https://user-images.githubusercontent.com/118338755/203969920-bb9e3174-5fb2-4780-9642-1268a3f7ce2d.png) ![](https://user-images.githubusercontent.com/118338755/203973341-3d25465e-c012-4bfc-8160-38fa370d0e00.png)
+![](https://seller.uzum.uz/manual/external/github/203969920-bb9e3174-5fb2-4780-9642-1268a3f7ce2d.png) ![](https://seller.uzum.uz/manual/external/github/203973341-3d25465e-c012-4bfc-8160-38fa370d0e00.png)
 
 ## 4.3 ЭДО
 

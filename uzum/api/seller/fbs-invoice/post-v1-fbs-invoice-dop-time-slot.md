@@ -9,12 +9,14 @@ tags:
 spec_version: 1.0.0
 source: "https://api-seller.uzum.uz/api/seller-openapi/swagger/swagger-ui/swagger-ui/index.html"
 deprecated: false
-content_sha: 9153d31a86eb2c05
+content_sha: d48495894229e754
 ---
 
 # Обновление пункта приема и таймслота
 
 `POST /v1/fbs/invoice/dop/time-slot`
+
+Нужен API-ключ в заголовке Authorization, без Bearer. В Swagger UI нажмите **Authorize**.
 
 Обновление пункта приема и таймслота
 
@@ -110,3 +112,5 @@ content_sha: 9153d31a86eb2c05
 - `timestamp` — string<date-time>
 - `trace` — string
 - `error` — string
+
+**401** — Заголовок Authorization отсутствует или пуст. Передайте Authorization: API_TOKEN без префикса Bearer; заголовок token не используется.

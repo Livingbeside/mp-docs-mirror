@@ -9,12 +9,14 @@ tags:
 spec_version: 1.0.0
 source: "https://api-seller.uzum.uz/api/seller-openapi/swagger/swagger-ui/swagger-ui/index.html"
 deprecated: false
-content_sha: 52480ebf754acb32
+content_sha: e766e4bb9034aa53
 ---
 
 # Изменение состава накладной
 
 `POST /v1/fbs/invoice/{invoiceId}/update-content`
+
+Нужен API-ключ в заголовке Authorization, без Bearer. В Swagger UI нажмите **Authorize**.
 
 Изменение состава накладной
 
@@ -84,3 +86,5 @@ content_sha: 52480ebf754acb32
 - `timestamp` — string<date-time>
 - `trace` — string
 - `error` — string
+
+**401** — Заголовок Authorization отсутствует или пуст. Передайте Authorization: API_TOKEN без префикса Bearer; заголовок token не используется.

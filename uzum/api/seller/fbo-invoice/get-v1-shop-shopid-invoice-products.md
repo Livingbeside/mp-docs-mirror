@@ -9,12 +9,14 @@ tags:
 spec_version: 1.0.0
 source: "https://api-seller.uzum.uz/api/seller-openapi/swagger/swagger-ui/swagger-ui/index.html"
 deprecated: false
-content_sha: a0b175b92fefaa40
+content_sha: 7592e5c249aa5037
 ---
 
 # Получение состава накладной
 
 `GET /v1/shop/{shopId}/invoice/products`
+
+Нужен API-ключ в заголовке Authorization, без Bearer. В Swagger UI нажмите **Authorize**.
 
 Этот метод позволяет получить список товаров входящих в накладные
 
@@ -41,3 +43,7 @@ content_sha: a0b175b92fefaa40
   - `quantityToStock` — integer<int32>. Количество SKU на складе
   - `quantityAccepted` — integer<int32>. Количество принятых SKU
   - `purchasePrice` — integer<int64>. Цена закупки SKU
+
+**401** — Заголовок Authorization отсутствует или пуст. Передайте Authorization: API_TOKEN без префикса Bearer; заголовок token не используется.
+
+**403** — Ключ не найден, истёк, выключен, не даёт доступа к магазину или изменениям. Если метод требует shopIds, проверьте наличие этого параметра и доступ ко всем указанным магазинам. Значение Authorization передавайте без Bearer.

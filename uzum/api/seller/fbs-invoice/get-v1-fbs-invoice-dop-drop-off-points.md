@@ -9,12 +9,14 @@ tags:
 spec_version: 1.0.0
 source: "https://api-seller.uzum.uz/api/seller-openapi/swagger/swagger-ui/swagger-ui/index.html"
 deprecated: false
-content_sha: 9508d08c2e8276d5
+content_sha: 30feddf4aa174b3c
 ---
 
 # Возвращаем доступные пункты приема подходящие по габаритным группам, у которых есть хотя бы один таймслот раньше чем самая ранняя дата "доставить до", с оставшейся емкостью больше чем кол-во заказов в списке
 
 `GET /v1/fbs/invoice/dop/drop-off-points`
+
+Нужен API-ключ в заголовке Authorization, без Bearer. В Swagger UI нажмите **Authorize**.
 
 Возвращаем доступные пункты приема подходящие по габаритным группам, у которых есть хотя бы один таймслот раньше чем самая ранняя дата "доставить до", с оставшейся емкостью больше чем кол-во заказов в списке
 
@@ -46,3 +48,7 @@ content_sha: 9508d08c2e8276d5
 - `timestamp` — string<date-time>
 - `trace` — string
 - `error` — string
+
+**401** — Заголовок Authorization отсутствует или пуст. Передайте Authorization: API_TOKEN без префикса Bearer; заголовок token не используется.
+
+**403** — Ключ не найден, истёк, выключен, не даёт доступа к магазину или изменениям. Если метод требует shopIds, проверьте наличие этого параметра и доступ ко всем указанным магазинам. Значение Authorization передавайте без Bearer.

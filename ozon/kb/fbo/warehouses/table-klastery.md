@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /fbo/warehouses/table-klastery
 source: "https://seller-edu.ozon.ru/libra/fbo/warehouses/table-klastery"
-updated: "2026-10-13 11:35:31"
+updated: "2026-10-30 08:01:41"
 doc_id: 690
-fetched_at: "2026-10-14T01:48:44Z"
-content_sha: acfb3940ae9047cb
+fetched_at: "2026-10-31T02:43:08Z"
+content_sha: 8d57bcab9499ac36
 ---
 
 # Кластеры доставки
@@ -209,6 +209,8 @@ _Главная / Продажа со склада Ozon (FBO) / Склады, а
 Пермь
 
 Пермь РФЦ
+
+Пермь РФЦ Негабарит
 
 Ростов
 

@@ -9,12 +9,14 @@ tags:
 spec_version: 1.0.0
 source: "https://api-seller.uzum.uz/api/seller-openapi/swagger/swagger-ui/swagger-ui/index.html"
 deprecated: false
-content_sha: 95ea9ca5528d682e
+content_sha: 5a1fca2eace9790e
 ---
 
 # Получение накладных поставки по ID магазина
 
 `GET /v1/shop/{shopId}/invoice`
+
+Нужен API-ключ в заголовке Authorization, без Bearer. В Swagger UI нажмите **Authorize**.
 
 Этот метод позволяет получить список накладных поставки для указанного магазина.
 
@@ -65,3 +67,7 @@ content_sha: 95ea9ca5528d682e
     - `group` — string (SMALL, MEDIUM, LARGE, UNKNOWN). Категория размера товара, например, малая, средняя или большая.
     - `title` — string. Название категории размера.
 - `externalNumber` — string. Внешний номер накладной, используемый для идентификации вне системы.
+
+**401** — Заголовок Authorization отсутствует или пуст. Передайте Authorization: API_TOKEN без префикса Bearer; заголовок token не используется.
+
+**403** — Ключ не найден, истёк, выключен, не даёт доступа к магазину или изменениям. Если метод требует shopIds, проверьте наличие этого параметра и доступ ко всем указанным магазинам. Значение Authorization передавайте без Bearer.

@@ -44,6 +44,14 @@
         }
       }
     },
+    "responses": {
+      "Forbidden": {
+        "description": "Ключ не найден, истёк, выключен, не даёт доступа к магазину или изменениям. Если метод требует shopIds, проверьте наличие этого параметра и доступ ко всем указанным магазинам. Значение Authorization передавайте без Bearer."
+      },
+      "Unauthorized": {
+        "description": "Заголовок Authorization отсутствует или пуст. Передайте Authorization: API_TOKEN без префикса Bearer; заголовок token не используется."
+      }
+    },
     "schemas": {
       "AllProducts": {
         "properties": {
@@ -3656,7 +3664,7 @@
     },
     "securitySchemes": {
       "TokenAuth": {
-        "description": "Токен авторизации без префикса Bearer",
+        "description": "Обязательный заголовок Authorization. Вставьте только значение API-ключа из личного кабинета продавца, без префикса Bearer. Swagger UI добавит заголовок автоматически. Заголовок token не используется.",
         "in": "header",
         "name": "Authorization",
         "type": "apiKey"
@@ -3664,6 +3672,7 @@
     }
   },
   "info": {
+    "description": "Для запросов нужен API-ключ из раздела «Ключи API» кабинета продавца.\nПередавайте его в заголовке `Authorization: API_TOKEN` без префикса Bearer. Заголовок token не используется.\n\n### Быстрый старт\n\n1. Нажмите **Authorize** и вставьте только ключ. Swagger UI добавит заголовок сам.\n2. Выполните `GET /v1/shops` и возьмите ID нужного магазина из ответа.\n3. Укажите этот ID в параметре shopIds. Для нескольких магазинов передайте их через запятую, например shopIds=12345,67890. Ключ должен разрешать доступ ко всем указанным магазинам.\n\n### Запрос заказов через curl\n\nЗамените API_TOKEN своим ключом, SHOP_ID на ID магазина. Curl читает настройки из стандартного ввода, поэтому ключ не попадает в аргументы процесса.\n\n```sh\ncurl --config - <<'CURL'\nurl = \"https://api-seller.uzum.uz/api/seller-openapi/v2/fbs/orders?shopIds=SHOP_ID&page=0&size=20\"\nheader = \"Authorization: API_TOKEN\"\nheader = \"Accept: application/json\"\nCURL\n```\n\n### Если запрос не проходит\n\n- **401.** Заголовок Authorization отсутствует или пуст.\n- **403.** Проверьте ключ, доступ к магазинам и обязательный shopIds. Для изменения данных ключу нужно разрешение на редактирование. Подробности есть в разделе Responses выбранного метода.\n\nshopIds обязателен для списка и количества заказов FBS/DBS, финансовых заказов и расходов. Параметр shopId его не заменяет.\n\nЕсли ошибка повторяется, передайте поддержке время с часовым поясом, HTTP-метод, URL без ключа, статус и тело ответа, ID магазина и X-Request-Id, если вы его указали. Ключ не прикладывайте.",
     "title": "Uzum market seller openapi",
     "version": "1.0.0"
   },
@@ -3671,7 +3680,7 @@
   "paths": {
     "/v1/dbs/order/{orderId}/completed": {
       "post": {
-        "description": "Переводит DBS-заказ в статус COMPLETED после выдачи покупателю.",
+        "description": "Нужен API-ключ в заголовке Authorization, без Bearer. В Swagger UI нажмите **Authorize**.\n\nПереводит DBS-заказ в статус COMPLETED после выдачи покупателю.",
         "operationId": "completedDbsOrder",
         "parameters": [
           {
@@ -3755,6 +3764,12 @@
                 "$ref": "#/components/headers/X-RateLimit-Requested-Tokens"
               }
             }
+          },
+          "401": {
+            "$ref": "#/components/responses/Unauthorized"
+          },
+          "403": {
+            "$ref": "#/components/responses/Forbidden"
           }
         },
         "summary": "Подтверждение выдачи DBS-заказа",
@@ -3765,7 +3780,7 @@
     },
     "/v1/dbs/order/{orderId}/delivering": {
       "post": {
-        "description": "Переводит DBS-заказ в статус DELIVERING.",
+        "description": "Нужен API-ключ в заголовке Authorization, без Bearer. В Swagger UI нажмите **Authorize**.\n\nПереводит DBS-заказ в статус DELIVERING.",
         "operationId": "deliveringDbsOrder",
         "parameters": [
           {
@@ -3839,6 +3854,12 @@
                 "$ref": "#/components/headers/X-RateLimit-Requested-Tokens"
               }
             }
+          },
+          "401": {
+            "$ref": "#/components/responses/Unauthorized"
+          },
+          "403": {
+            "$ref": "#/components/responses/Forbidden"
           }
         },
         "summary": "Передача DBS-заказа в доставку",
@@ -3849,7 +3870,7 @@
     },
     "/v1/dbs/order/{orderId}/refund": {
       "post": {
-        "description": "Создаёт возврат по выданному DBS-заказу.",
+        "description": "Нужен API-ключ в заголовке Authorization, без Bearer. В Swagger UI нажмите **Authorize**.\n\nСоздаёт возврат по выданному DBS-заказу.",
         "operationId": "refundDbsOrder",
         "parameters": [
           {
@@ -3923,6 +3944,12 @@
                 "$ref": "#/components/headers/X-RateLimit-Requested-Tokens"
               }
             }
+          },
+          "401": {
+            "$ref": "#/components/responses/Unauthorized"
+          },
+          "403": {
+            "$ref": "#/components/responses/Forbidden"
           }
         },
         "summary": "Создание возврата по DBS-заказу",
@@ -3933,7 +3960,7 @@
     },
     "/v1/fbs/invoice": {
       "get": {
-        "description": "Получить все накладные для FBS заказа",
+        "description": "Нужен API-ключ в заголовке Authorization, без Bearer. В Swagger UI нажмите **Authorize**.\n\nПолучить все накладные для FBS заказа",
         "operationId": "getFbsInvoices_1",
         "parameters": [
           {
@@ -4018,6 +4045,9 @@
               }
             }
           },
+          "401": {
+            "$ref": "#/components/responses/Unauthorized"
+          },
           "403": {
             "content": {
               "*/*": {
@@ -4085,7 +4115,7 @@
         ]
       },
       "post": {
-        "description": "Создание накладной",
+        "description": "Нужен API-ключ в заголовке Authorization, без Bearer. В Swagger UI нажмите **Authorize**.\n\nСоздание накладной",
         "operationId": "create",
         "parameters": [
           {
@@ -4174,6 +4204,9 @@
               }
             }
           },
+          "401": {
+            "$ref": "#/components/responses/Unauthorized"
+          },
           "403": {
             "content": {
               "*/*": {
@@ -4213,7 +4246,7 @@
     },
     "/v1/fbs/invoice/dop/drop-off-points": {
       "get": {
-        "description": "Возвращаем доступные пункты приема подходящие по габаритным группам, у которых есть хотя бы один таймслот раньше чем самая ранняя дата \"доставить до\", с оставшейся емкостью больше чем кол-во заказов в списке",
+        "description": "Нужен API-ключ в заголовке Authorization, без Bearer. В Swagger UI нажмите **Authorize**.\n\nВозвращаем доступные пункты приема подходящие по габаритным группам, у которых есть хотя бы один таймслот раньше чем самая ранняя дата \"доставить до\", с оставшейся емкостью больше чем кол-во заказов в списке",
         "operationId": "getFbsInvoiceDropOffPoints",
         "parameters": [
           {
@@ -4273,6 +4306,12 @@
                 "$ref": "#/components/headers/X-RateLimit-Requested-Tokens"
               }
             }
+          },
+          "401": {
+            "$ref": "#/components/responses/Unauthorized"
+          },
+          "403": {
+            "$ref": "#/components/responses/Forbidden"
           }
         },
         "summary": "Возвращаем доступные пункты приема подходящие по габаритным группам, у которых есть хотя бы один таймслот раньше чем самая ранняя дата \"доставить до\", с оставшейся емкостью больше чем кол-во заказов в списке",
@@ -4283,7 +4322,7 @@
     },
     "/v1/fbs/invoice/dop/time-slot": {
       "get": {
-        "description": "Возвращает доступные тайм-слоты от текущего времени до минимальной даты «доставить до» среди переданных заказов, где оставшаяся емкость >= количеству заказов в списке",
+        "description": "Нужен API-ключ в заголовке Authorization, без Bearer. В Swagger UI нажмите **Authorize**.\n\nВозвращает доступные тайм-слоты от текущего времени до минимальной даты «доставить до» среди переданных заказов, где оставшаяся емкость >= количеству заказов в списке",
         "operationId": "getFbsInvoiceTimeSlots",
         "parameters": [
           {
@@ -4384,6 +4423,12 @@
                 "$ref": "#/components/headers/X-RateLimit-Requested-Tokens"
               }
             }
+          },
+          "401": {
+            "$ref": "#/components/responses/Unauthorized"
+          },
+          "403": {
+            "$ref": "#/components/responses/Forbidden"
           }
         },
         "summary": "Возвращает доступные тайм-слоты от текущего времени до минимальной даты «доставить до» среди переданных заказов, где оставшаяся емкость >= количеству заказов в списке",
@@ -4392,7 +4437,7 @@
         ]
       },
       "post": {
-        "description": "Обновление пункта приема и таймслота",
+        "description": "Нужен API-ключ в заголовке Authorization, без Bearer. В Swagger UI нажмите **Authorize**.\n\nОбновление пункта приема и таймслота",
         "operationId": "updateDropOffPointAndTimeSlot",
         "parameters": [
           {
@@ -4481,6 +4526,9 @@
               }
             }
           },
+          "401": {
+            "$ref": "#/components/responses/Unauthorized"
+          },
           "403": {
             "content": {
               "*/*": {
@@ -4520,7 +4568,7 @@
     },
     "/v1/fbs/invoice/{invoiceId}": {
       "get": {
-        "description": "Return fbs invoice",
+        "description": "Нужен API-ключ в заголовке Authorization, без Bearer. В Swagger UI нажмите **Authorize**.\n\nReturn fbs invoice",
         "operationId": "getFbsInvoice_byId",
         "parameters": [
           {
@@ -4578,6 +4626,9 @@
                 "$ref": "#/components/headers/X-RateLimit-Requested-Tokens"
               }
             }
+          },
+          "401": {
+            "$ref": "#/components/responses/Unauthorized"
           },
           "403": {
             "content": {
@@ -4648,7 +4699,7 @@
     },
     "/v1/fbs/invoice/{invoiceId}/cancel": {
       "post": {
-        "description": "Отмена накладной",
+        "description": "Нужен API-ключ в заголовке Authorization, без Bearer. В Swagger UI нажмите **Authorize**.\n\nОтмена накладной",
         "operationId": "fbsInvoiceCancel",
         "parameters": [
           {
@@ -4717,6 +4768,9 @@
               }
             }
           },
+          "401": {
+            "$ref": "#/components/responses/Unauthorized"
+          },
           "403": {
             "content": {
               "*/*": {
@@ -4766,7 +4820,7 @@
     },
     "/v1/fbs/invoice/{invoiceId}/closing-documents": {
       "get": {
-        "description": "Печать акта приемки",
+        "description": "Нужен API-ключ в заголовке Authorization, без Bearer. В Swagger UI нажмите **Authorize**.\n\nПечать акта приемки",
         "operationId": "getFbsInvoiceClosingDocuments",
         "parameters": [
           {
@@ -4841,6 +4895,9 @@
               }
             }
           },
+          "401": {
+            "$ref": "#/components/responses/Unauthorized"
+          },
           "403": {
             "content": {
               "*/*": {
@@ -4880,7 +4937,7 @@
     },
     "/v1/fbs/invoice/{invoiceId}/orders": {
       "get": {
-        "description": "Получить FBS заказы по идентификатору накладной",
+        "description": "Нужен API-ключ в заголовке Authorization, без Bearer. В Swagger UI нажмите **Authorize**.\n\nПолучить FBS заказы по идентификатору накладной",
         "operationId": "getFbsOrdersByInvoiceId",
         "parameters": [
           {
@@ -4939,6 +4996,9 @@
               }
             }
           },
+          "401": {
+            "$ref": "#/components/responses/Unauthorized"
+          },
           "403": {
             "content": {
               "*/*": {
@@ -4978,7 +5038,7 @@
     },
     "/v1/fbs/invoice/{invoiceId}/print": {
       "get": {
-        "description": "Печать акта поставки",
+        "description": "Нужен API-ключ в заголовке Authorization, без Bearer. В Swagger UI нажмите **Authorize**.\n\nПечать акта поставки",
         "operationId": "printFbsInvoice",
         "parameters": [
           {
@@ -5022,6 +5082,12 @@
                 "$ref": "#/components/headers/X-RateLimit-Requested-Tokens"
               }
             }
+          },
+          "401": {
+            "$ref": "#/components/responses/Unauthorized"
+          },
+          "403": {
+            "$ref": "#/components/responses/Forbidden"
           }
         },
         "summary": "Печать акта поставки",
@@ -5032,7 +5098,7 @@
     },
     "/v1/fbs/invoice/{invoiceId}/update-content": {
       "post": {
-        "description": "Изменение состава накладной",
+        "description": "Нужен API-ключ в заголовке Authorization, без Bearer. В Swagger UI нажмите **Authorize**.\n\nИзменение состава накладной",
         "operationId": "updateFbsInvoice",
         "parameters": [
           {
@@ -5121,6 +5187,9 @@
               }
             }
           },
+          "401": {
+            "$ref": "#/components/responses/Unauthorized"
+          },
           "403": {
             "content": {
               "*/*": {
@@ -5190,7 +5259,7 @@
     },
     "/v1/fbs/order/return-reasons": {
       "get": {
-        "description": "Возвращает список причин возврата для заказов.",
+        "description": "Нужен API-ключ в заголовке Authorization, без Bearer. В Swagger UI нажмите **Authorize**.\n\nВозвращает список причин возврата для заказов.",
         "operationId": "getFbsReturnReasons",
         "responses": {
           "200": {
@@ -5252,6 +5321,12 @@
                 "$ref": "#/components/headers/X-RateLimit-Requested-Tokens"
               }
             }
+          },
+          "401": {
+            "$ref": "#/components/responses/Unauthorized"
+          },
+          "403": {
+            "$ref": "#/components/responses/Forbidden"
           }
         },
         "summary": "Получение причин возврата",
@@ -5262,7 +5337,7 @@
     },
     "/v1/fbs/order/{orderId}": {
       "get": {
-        "description": "Возвращает информацию о заказе продавца по идентификатору.",
+        "description": "Нужен API-ключ в заголовке Authorization, без Bearer. В Swagger UI нажмите **Authorize**.\n\nВозвращает информацию о заказе продавца по идентификатору.",
         "operationId": "getFbsOrderByOrderId",
         "parameters": [
           {
@@ -5336,6 +5411,12 @@
                 "$ref": "#/components/headers/X-RateLimit-Requested-Tokens"
               }
             }
+          },
+          "401": {
+            "$ref": "#/components/responses/Unauthorized"
+          },
+          "403": {
+            "$ref": "#/components/responses/Forbidden"
           }
         },
         "summary": "Получение информации о заказе",
@@ -5346,7 +5427,7 @@
     },
     "/v1/fbs/order/{orderId}/cancel": {
       "post": {
-        "description": "Отменяет заказ продавца.",
+        "description": "Нужен API-ключ в заголовке Authorization, без Bearer. В Swagger UI нажмите **Authorize**.\n\nОтменяет заказ продавца.",
         "operationId": "cancelFbsOrder",
         "parameters": [
           {
@@ -5431,6 +5512,12 @@
                 "$ref": "#/components/headers/X-RateLimit-Requested-Tokens"
               }
             }
+          },
+          "401": {
+            "$ref": "#/components/responses/Unauthorized"
+          },
+          "403": {
+            "$ref": "#/components/responses/Forbidden"
           }
         },
         "summary": "Отмена заказа",
@@ -5441,7 +5528,7 @@
     },
     "/v1/fbs/order/{orderId}/confirm": {
       "post": {
-        "description": "Подтверждает заказ продавца.",
+        "description": "Нужен API-ключ в заголовке Authorization, без Bearer. В Swagger UI нажмите **Authorize**.\n\nПодтверждает заказ продавца.",
         "operationId": "confirmFbsOrder",
         "parameters": [
           {
@@ -5515,6 +5602,12 @@
                 "$ref": "#/components/headers/X-RateLimit-Requested-Tokens"
               }
             }
+          },
+          "401": {
+            "$ref": "#/components/responses/Unauthorized"
+          },
+          "403": {
+            "$ref": "#/components/responses/Forbidden"
           }
         },
         "summary": "Подтверждение заказа",
@@ -5525,7 +5618,7 @@
     },
     "/v1/fbs/order/{orderId}/identifier": {
       "post": {
-        "description": "Пакетно привязывает идентификаторы к позициям заказа продавца.",
+        "description": "Нужен API-ключ в заголовке Authorization, без Bearer. В Swagger UI нажмите **Authorize**.\n\nПакетно привязывает идентификаторы к позициям заказа продавца.",
         "operationId": "updateFbsOrderIdentifiers",
         "parameters": [
           {
@@ -5610,6 +5703,12 @@
                 "$ref": "#/components/headers/X-RateLimit-Requested-Tokens"
               }
             }
+          },
+          "401": {
+            "$ref": "#/components/responses/Unauthorized"
+          },
+          "403": {
+            "$ref": "#/components/responses/Forbidden"
           }
         },
         "summary": "Привязка идентификаторов к товарам заказа",
@@ -5620,7 +5719,7 @@
     },
     "/v1/fbs/order/{orderId}/labels/print": {
       "get": {
-        "description": "Печатает этикетку для FBS заказа",
+        "description": "Нужен API-ключ в заголовке Authorization, без Bearer. В Swagger UI нажмите **Authorize**.\n\nПечатает этикетку для FBS заказа",
         "operationId": "fbsPrintLabel",
         "parameters": [
           {
@@ -5707,6 +5806,12 @@
                 "$ref": "#/components/headers/X-RateLimit-Requested-Tokens"
               }
             }
+          },
+          "401": {
+            "$ref": "#/components/responses/Unauthorized"
+          },
+          "403": {
+            "$ref": "#/components/responses/Forbidden"
           }
         },
         "summary": "Получить этикетку для FBS заказа",
@@ -5717,6 +5822,7 @@
     },
     "/v1/finance/expenses": {
       "get": {
+        "description": "Нужен API-ключ в заголовке Authorization, без Bearer. В Swagger UI нажмите **Authorize**.",
         "operationId": "getFinanceExpenses",
         "parameters": [
           {
@@ -5753,18 +5859,25 @@
             }
           },
           {
-            "description": "Список идентификаторов магазинов для выборки данных.",
+            "description": "Обязательный список ID магазинов, доступных API-ключу. Получите ID через GET /v1/shops. Формат: shopIds=12345 или shopIds=12345,67890. Без shopIds gateway вернёт 403; shopId не заменяет этот параметр.",
+            "example": [
+              12345,
+              67890
+            ],
+            "explode": false,
             "in": "query",
             "name": "shopIds",
-            "required": false,
+            "required": true,
             "schema": {
               "items": {
                 "format": "int64",
                 "type": "integer"
               },
+              "minItems": 1,
               "type": "array",
               "uniqueItems": true
-            }
+            },
+            "style": "form"
           },
           {
             "description": "Начальная дата для фильтрации расходов.",
@@ -5860,6 +5973,12 @@
                 "$ref": "#/components/headers/X-RateLimit-Requested-Tokens"
               }
             }
+          },
+          "401": {
+            "$ref": "#/components/responses/Unauthorized"
+          },
+          "403": {
+            "$ref": "#/components/responses/Forbidden"
           }
         },
         "summary": "Получение списка расходов продавца.",
@@ -5870,7 +5989,7 @@
     },
     "/v1/finance/orders": {
       "get": {
-        "description": "Этот метод позволяет получить список продаж.",
+        "description": "Нужен API-ключ в заголовке Authorization, без Bearer. В Swagger UI нажмите **Authorize**.\n\nЭтот метод позволяет получить список продаж.",
         "operationId": "getFinanceOrders",
         "parameters": [
           {
@@ -5944,7 +6063,12 @@
             }
           },
           {
-            "description": "Список магазинов, для которых необходимо показывать заказы",
+            "description": "Обязательный список ID магазинов, доступных API-ключу. Получите ID через GET /v1/shops. Формат: shopIds=12345 или shopIds=12345,67890. Без shopIds gateway вернёт 403; shopId не заменяет этот параметр.",
+            "example": [
+              12345,
+              67890
+            ],
+            "explode": false,
             "in": "query",
             "name": "shopIds",
             "required": true,
@@ -5953,9 +6077,11 @@
                 "format": "int64",
                 "type": "integer"
               },
+              "minItems": 1,
               "type": "array",
               "uniqueItems": true
-            }
+            },
+            "style": "form"
           }
         ],
         "responses": {
@@ -6018,6 +6144,12 @@
                 "$ref": "#/components/headers/X-RateLimit-Requested-Tokens"
               }
             }
+          },
+          "401": {
+            "$ref": "#/components/responses/Unauthorized"
+          },
+          "403": {
+            "$ref": "#/components/responses/Forbidden"
           }
         },
         "summary": "Получение списка заказов.",
@@ -6028,6 +6160,7 @@
     },
     "/v1/invoice": {
       "get": {
+        "description": "Нужен API-ключ в заголовке Authorization, без Bearer. В Swagger UI нажмите **Authorize**.",
         "operationId": "getSellerInvoice",
         "parameters": [
           {
@@ -6119,6 +6252,12 @@
                 "$ref": "#/components/headers/X-RateLimit-Requested-Tokens"
               }
             }
+          },
+          "401": {
+            "$ref": "#/components/responses/Unauthorized"
+          },
+          "403": {
+            "$ref": "#/components/responses/Forbidden"
           }
         },
         "summary": "Получение списка накладных",
@@ -6129,7 +6268,7 @@
     },
     "/v1/product/barcodes/types": {
       "get": {
-        "description": "Возвращает доступные размеры этикеток. Полученный id передаётся как barcodeTypeId при печати этикеток SKU.",
+        "description": "Нужен API-ключ в заголовке Authorization, без Bearer. В Swagger UI нажмите **Authorize**.\n\nВозвращает доступные размеры этикеток. Полученный id передаётся как barcodeTypeId при печати этикеток SKU.",
         "operationId": "getBarcodeTypes",
         "responses": {
           "200": {
@@ -6161,6 +6300,12 @@
                 "$ref": "#/components/headers/X-RateLimit-Requested-Tokens"
               }
             }
+          },
+          "401": {
+            "$ref": "#/components/responses/Unauthorized"
+          },
+          "403": {
+            "$ref": "#/components/responses/Forbidden"
           }
         },
         "summary": "Справочник размеров (типов) этикеток",
@@ -6171,7 +6316,7 @@
     },
     "/v1/product/shop/{shopId}": {
       "get": {
-        "description": "Этот метод позволяет получить список товаров и остатков, доступных в указанном магазине.",
+        "description": "Нужен API-ключ в заголовке Authorization, без Bearer. В Swagger UI нажмите **Authorize**.\n\nЭтот метод позволяет получить список товаров и остатков, доступных в указанном магазине.",
         "operationId": "getShopProductsByShopId",
         "parameters": [
           {
@@ -6316,6 +6461,12 @@
                 "$ref": "#/components/headers/X-RateLimit-Requested-Tokens"
               }
             }
+          },
+          "401": {
+            "$ref": "#/components/responses/Unauthorized"
+          },
+          "403": {
+            "$ref": "#/components/responses/Forbidden"
           }
         },
         "summary": "Получение SKU по ID магазина",
@@ -6326,7 +6477,7 @@
     },
     "/v1/product/shop/{shopId}/barcodes/print": {
       "post": {
-        "description": "Возвращает PDF с этикетками для переданных SKU. Ограничения: не более 100 SKU и не более 100 штук каждого SKU. Доступные размеры — GET /v1/product/barcodes/types.",
+        "description": "Нужен API-ключ в заголовке Authorization, без Bearer. В Swagger UI нажмите **Authorize**.\n\nВозвращает PDF с этикетками для переданных SKU. Ограничения: не более 100 SKU и не более 100 штук каждого SKU. Доступные размеры — GET /v1/product/barcodes/types.",
         "operationId": "printProductBarcodes",
         "parameters": [
           {
@@ -6411,6 +6562,12 @@
                 "$ref": "#/components/headers/X-RateLimit-Requested-Tokens"
               }
             }
+          },
+          "401": {
+            "$ref": "#/components/responses/Unauthorized"
+          },
+          "403": {
+            "$ref": "#/components/responses/Forbidden"
           }
         },
         "summary": "Печать этикеток SKU",
@@ -6421,7 +6578,7 @@
     },
     "/v1/product/{shopId}/sendPriceData": {
       "post": {
-        "description": "Этот метод позволяет менять цены SKU.",
+        "description": "Нужен API-ключ в заголовке Authorization, без Bearer. В Swagger UI нажмите **Authorize**.\n\nЭтот метод позволяет менять цены SKU.",
         "operationId": "saveProductPriceData",
         "parameters": [
           {
@@ -6468,6 +6625,12 @@
                 "$ref": "#/components/headers/X-RateLimit-Requested-Tokens"
               }
             }
+          },
+          "401": {
+            "$ref": "#/components/responses/Unauthorized"
+          },
+          "403": {
+            "$ref": "#/components/responses/Forbidden"
           }
         },
         "summary": "Изменение цен SKU",
@@ -6478,6 +6641,7 @@
     },
     "/v1/return": {
       "get": {
+        "description": "Нужен API-ключ в заголовке Authorization, без Bearer. В Swagger UI нажмите **Authorize**.",
         "operationId": "getSellerReturn",
         "parameters": [
           {
@@ -6579,6 +6743,12 @@
                 "$ref": "#/components/headers/X-RateLimit-Requested-Tokens"
               }
             }
+          },
+          "401": {
+            "$ref": "#/components/responses/Unauthorized"
+          },
+          "403": {
+            "$ref": "#/components/responses/Forbidden"
           }
         },
         "summary": "Получение возвратов продавца",
@@ -6589,7 +6759,7 @@
     },
     "/v1/shop/{shopId}/invoice": {
       "get": {
-        "description": "Этот метод позволяет получить список накладных поставки для указанного магазина.",
+        "description": "Нужен API-ключ в заголовке Authorization, без Bearer. В Swagger UI нажмите **Authorize**.\n\nЭтот метод позволяет получить список накладных поставки для указанного магазина.",
         "operationId": "getShopInvoicesByShopId",
         "parameters": [
           {
@@ -6656,6 +6826,12 @@
                 "$ref": "#/components/headers/X-RateLimit-Requested-Tokens"
               }
             }
+          },
+          "401": {
+            "$ref": "#/components/responses/Unauthorized"
+          },
+          "403": {
+            "$ref": "#/components/responses/Forbidden"
           }
         },
         "summary": "Получение накладных поставки по ID магазина",
@@ -6666,7 +6842,7 @@
     },
     "/v1/shop/{shopId}/invoice/products": {
       "get": {
-        "description": "Этот метод позволяет получить список товаров входящих в накладные",
+        "description": "Нужен API-ключ в заголовке Authorization, без Bearer. В Swagger UI нажмите **Authorize**.\n\nЭтот метод позволяет получить список товаров входящих в накладные",
         "operationId": "getShopInvoiceProductsByShopId",
         "parameters": [
           {
@@ -6703,6 +6879,12 @@
               }
             },
             "description": "OK"
+          },
+          "401": {
+            "$ref": "#/components/responses/Unauthorized"
+          },
+          "403": {
+            "$ref": "#/components/responses/Forbidden"
           }
         },
         "summary": "Получение состава накладной",
@@ -6713,7 +6895,7 @@
     },
     "/v1/shop/{shopId}/return": {
       "get": {
-        "description": "Этот метод позволяет получить список накладных возврата.",
+        "description": "Нужен API-ключ в заголовке Authorization, без Bearer. В Swagger UI нажмите **Authorize**.\n\nЭтот метод позволяет получить список накладных возврата.",
         "operationId": "getShopReturnsByShopId",
         "parameters": [
           {
@@ -6779,6 +6961,12 @@
                 "$ref": "#/components/headers/X-RateLimit-Requested-Tokens"
               }
             }
+          },
+          "401": {
+            "$ref": "#/components/responses/Unauthorized"
+          },
+          "403": {
+            "$ref": "#/components/responses/Forbidden"
           }
         },
         "summary": "Получение накладных возврата",
@@ -6789,7 +6977,7 @@
     },
     "/v1/shop/{shopId}/return/{returnId}": {
       "get": {
-        "description": "Этот метод позволяет получить список товаров входящих в накладные возврата",
+        "description": "Нужен API-ключ в заголовке Authorization, без Bearer. В Swagger UI нажмите **Authorize**.\n\nЭтот метод позволяет получить список товаров входящих в накладные возврата",
         "operationId": "getShopReturnByShopIdAndReturnId",
         "parameters": [
           {
@@ -6823,6 +7011,12 @@
               }
             },
             "description": "OK"
+          },
+          "401": {
+            "$ref": "#/components/responses/Unauthorized"
+          },
+          "403": {
+            "$ref": "#/components/responses/Forbidden"
           }
         },
         "summary": "Получение состава накладной возврата",
@@ -6833,6 +7027,7 @@
     },
     "/v1/shops": {
       "get": {
+        "description": "Нужен API-ключ в заголовке Authorization, без Bearer. В Swagger UI нажмите **Authorize**.",
         "operationId": "getOwnedShops",
         "responses": {
           "200": {
@@ -6910,6 +7105,9 @@
               }
             },
             "description": "Unauthorized"
+          },
+          "403": {
+            "$ref": "#/components/responses/Forbidden"
           }
         },
         "summary": "Получение списка собственных магазинов.",
@@ -6920,11 +7118,16 @@
     },
     "/v2/fbs/orders": {
       "get": {
-        "description": "Возвращает заказы продавца по статусу.",
+        "description": "Нужен API-ключ в заголовке Authorization, без Bearer. В Swagger UI нажмите **Authorize**.\n\nВозвращает заказы продавца по статусу.",
         "operationId": "getFbsOrdersV2",
         "parameters": [
           {
-            "description": "Массив идентификаторов магазинов, для которых нужно получить заказы.",
+            "description": "Обязательный список ID магазинов, доступных API-ключу. Получите ID через GET /v1/shops. Формат: shopIds=12345 или shopIds=12345,67890. Без shopIds gateway вернёт 403; shopId не заменяет этот параметр.",
+            "example": [
+              12345,
+              67890
+            ],
+            "explode": false,
             "in": "query",
             "name": "shopIds",
             "required": true,
@@ -6933,8 +7136,10 @@
                 "format": "int64",
                 "type": "integer"
               },
+              "minItems": 1,
               "type": "array"
-            }
+            },
+            "style": "form"
           },
           {
             "description": "Статус заказов, которые нужно получить.",
@@ -6973,7 +7178,8 @@
             }
           },
           {
-            "description": "Дата, с которой необходимо показывать заказы",
+            "description": "Начальная дата создания заказа. Unix timestamp в секундах (int64), не в миллисекундах и не ДД.ММ.ГГГГ. Например, 1790794800 = 01.10.2026 00:00 UTC+5.",
+            "example": 1790794800,
             "in": "query",
             "name": "dateFrom",
             "required": false,
@@ -6983,7 +7189,8 @@
             }
           },
           {
-            "description": "Дата, по которую необходимо показывать заказы",
+            "description": "Конечная дата создания заказа. Unix timestamp в секундах (int64), не в миллисекундах и не ДД.ММ.ГГГГ. Например, 1790794800 = 01.10.2026 00:00 UTC+5.",
+            "example": 1791658800,
             "in": "query",
             "name": "dateTo",
             "required": false,
@@ -7076,6 +7283,12 @@
                 "$ref": "#/components/headers/X-RateLimit-Requested-Tokens"
               }
             }
+          },
+          "401": {
+            "$ref": "#/components/responses/Unauthorized"
+          },
+          "403": {
+            "$ref": "#/components/responses/Forbidden"
           }
         },
         "summary": "Получение заказов продавца",
@@ -7086,21 +7299,28 @@
     },
     "/v2/fbs/orders/count": {
       "get": {
-        "description": "Возвращает количество заказов FBS в зависимости от указанных фильтров — например, по статусу, магазину и диапазону дат.",
+        "description": "Нужен API-ключ в заголовке Authorization, без Bearer. В Swagger UI нажмите **Authorize**.\n\nВозвращает количество заказов FBS в зависимости от указанных фильтров — например, по статусу, магазину и диапазону дат.",
         "operationId": "getOrderCountV2",
         "parameters": [
           {
-            "description": "Массив идентификаторов магазинов.",
+            "description": "Обязательный список ID магазинов, доступных API-ключу. Получите ID через GET /v1/shops. Формат: shopIds=12345 или shopIds=12345,67890. Без shopIds gateway вернёт 403; shopId не заменяет этот параметр.",
+            "example": [
+              12345,
+              67890
+            ],
+            "explode": false,
             "in": "query",
             "name": "shopIds",
-            "required": false,
+            "required": true,
             "schema": {
               "items": {
                 "format": "int64",
                 "type": "integer"
               },
+              "minItems": 1,
               "type": "array"
-            }
+            },
+            "style": "form"
           },
           {
             "description": "Статус заказов, по которому нужно отфильтровать. По умолчанию — CREATED (создан).",
@@ -7126,7 +7346,8 @@
             }
           },
           {
-            "description": "Начальная дата для фильтрации заказов.",
+            "description": "Начальная дата создания заказа. Unix timestamp в секундах (int64), не в миллисекундах и не ДД.ММ.ГГГГ. Например, 1790794800 = 01.10.2026 00:00 UTC+5.",
+            "example": 1790794800,
             "in": "query",
             "name": "dateFrom",
             "required": false,
@@ -7136,7 +7357,8 @@
             }
           },
           {
-            "description": "",
+            "description": "Конечная дата создания заказа. Unix timestamp в секундах (int64), не в миллисекундах и не ДД.ММ.ГГГГ. Например, 1790794800 = 01.10.2026 00:00 UTC+5.",
+            "example": 1791658800,
             "in": "query",
             "name": "dateTo",
             "required": false,
@@ -7206,6 +7428,12 @@
                 "$ref": "#/components/headers/X-RateLimit-Requested-Tokens"
               }
             }
+          },
+          "401": {
+            "$ref": "#/components/responses/Unauthorized"
+          },
+          "403": {
+            "$ref": "#/components/responses/Forbidden"
           }
         },
         "summary": "Получить количество заказов",
@@ -7217,7 +7445,7 @@
     "/v2/fbs/sku/stocks": {
       "get": {
         "deprecated": true,
-        "description": "Устарело: используйте GET /v3/fbs/sku/stocks с пагинацией. Возвращает доступные для обновления остатки FBS и DBS SKU.",
+        "description": "Нужен API-ключ в заголовке Authorization, без Bearer. В Swagger UI нажмите **Authorize**.\n\nУстарело: используйте GET /v3/fbs/sku/stocks с пагинацией. Возвращает доступные для обновления остатки FBS и DBS SKU.",
         "operationId": "downloadFbsSkuStocks",
         "responses": {
           "200": {
@@ -7259,6 +7487,9 @@
                 "$ref": "#/components/headers/X-RateLimit-Requested-Tokens"
               }
             }
+          },
+          "401": {
+            "$ref": "#/components/responses/Unauthorized"
           },
           "403": {
             "content": {
@@ -7327,7 +7558,7 @@
         ]
       },
       "post": {
-        "description": "Обновляет FBS и DBS остатки по переданным товарам.",
+        "description": "Нужен API-ключ в заголовке Authorization, без Bearer. В Swagger UI нажмите **Authorize**.\n\nОбновляет FBS и DBS остатки по переданным товарам.",
         "operationId": "uploadSkuAmounts",
         "requestBody": {
           "content": {
@@ -7401,6 +7632,9 @@
               }
             }
           },
+          "401": {
+            "$ref": "#/components/responses/Unauthorized"
+          },
           "403": {
             "content": {
               "*/*": {
@@ -7470,7 +7704,7 @@
     },
     "/v3/fbs/sku/stocks": {
       "get": {
-        "description": "Возвращает доступные для обновления остатки FBS и DBS SKU.\nПоддерживает два режима постраничной выдачи:\npage - по номеру страницы, выдача по убыванию skuId;\nskuIdFrom - по курсору, выдача по возрастанию skuId.\nКурсорный режим не зависит от глубины листания и рекомендуется для полного обхода каталога.\nОдновременная передача page и skuIdFrom запрещена.",
+        "description": "Нужен API-ключ в заголовке Authorization, без Bearer. В Swagger UI нажмите **Authorize**.\n\nВозвращает доступные для обновления остатки FBS и DBS SKU.\nПоддерживает два режима постраничной выдачи:\npage - по номеру страницы, выдача по убыванию skuId;\nskuIdFrom - по курсору, выдача по возрастанию skuId.\nКурсорный режим не зависит от глубины листания и рекомендуется для полного обхода каталога.\nОдновременная передача page и skuIdFrom запрещена.",
         "operationId": "listFbsSkuStocks",
         "parameters": [
           {
@@ -7550,6 +7784,9 @@
                 "$ref": "#/components/headers/X-RateLimit-Requested-Tokens"
               }
             }
+          },
+          "401": {
+            "$ref": "#/components/responses/Unauthorized"
           },
           "403": {
             "content": {

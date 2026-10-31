@@ -9,12 +9,14 @@ tags:
 spec_version: 1.0.0
 source: "https://api-seller.uzum.uz/api/seller-openapi/swagger/swagger-ui/swagger-ui/index.html"
 deprecated: false
-content_sha: 083705f0e9723937
+content_sha: 1efcc81813719565
 ---
 
 # Изменение цен SKU
 
 `POST /v1/product/{shopId}/sendPriceData`
+
+Нужен API-ключ в заголовке Authorization, без Bearer. В Swagger UI нажмите **Authorize**.
 
 Этот метод позволяет менять цены SKU.
 
@@ -38,3 +40,7 @@ content_sha: 083705f0e9723937
 ## Ответы
 
 **200** — OK
+
+**401** — Заголовок Authorization отсутствует или пуст. Передайте Authorization: API_TOKEN без префикса Bearer; заголовок token не используется.
+
+**403** — Ключ не найден, истёк, выключен, не даёт доступа к магазину или изменениям. Если метод требует shopIds, проверьте наличие этого параметра и доступ ко всем указанным магазинам. Значение Authorization передавайте без Bearer.

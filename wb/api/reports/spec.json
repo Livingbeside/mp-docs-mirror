@@ -1123,7 +1123,7 @@
         },
         "type": "object"
       },
-      "GoodsReturn200Response": {
+      "ItemReturns200Response": {
         "properties": {
           "count": {
             "description": "Общее количество возвратов за запрашиваемый период",
@@ -2107,7 +2107,7 @@
     }
   },
   "info": {
-    "description": "<div class=\"description_important\">\n  Узнать больше об отчётах можно в <a href=\"https://seller.wildberries.ru/instructions/subcategory/5f2162c5-069b-416d-a4e1-48da2a76e6b0\">справочном центре</a>\n</div>\n\n<div class=\"api-block\">\n\nС помощью этих методов вы можете получать [основные отчёты](./reports#tag/mainReports) и отчёты о:\n  1. [Остатках на складах](./reports#tag/warehousesInventoryReport)\n  2. [Товарах с обязательной маркировкой](./reports#tag/reportOnItemsWithMandatoryLabeling)\n  3. [Удержаниях](./reports#tag/retentionReports)\n  4. [Операциях при приёмке](./reports#tag/acceptanceExpenses)\n  5. [Платном хранении](./reports#tag/paidStorage)\n  6. [Продажах по регионам](./reports#tag/salesByRegions)\n  7. [Доле бренда в продажах](./reports#tag/shareOfBrandInSales)\n  8. [Заблокированных карточках](./reports#tag/blockedItems)\n  9. [Возвратах и перемещении товаров](./reports#tag/returnsAndItemMovementReport)\n\n</div>\n",
+    "description": "<div class=\"description_important\">\n  Узнать больше об отчётах можно в <a href=\"https://seller.wildberries.ru/instructions/subcategory/5f2162c5-069b-416d-a4e1-48da2a76e6b0\">справочном центре</a>\n</div>\n\n<div class=\"api-block\">\n\nС помощью этих методов вы можете получать [основные отчёты](./reports#tag/mainReports) и отчёты о:\n  1. [Остатках на складах](./reports#tag/warehousesInventoryReport)\n  2. [Товарах с обязательной маркировкой](./reports#tag/reportOnItemsWithMandatoryLabeling)\n  3. [Удержаниях](./reports#tag/retentionReports)\n  4. [Операциях при приёмке](./reports#tag/acceptanceExpenses)\n  5. [Платном хранении](./reports#tag/paidStorage)\n  6. [Доле бренда в продажах](./reports#tag/shareOfBrandInSales)\n  7. [Заблокированных карточках](./reports#tag/blockedItems)\n  8. [Возвратах и перемещении товаров](./reports#tag/returnsAndItemMovementReport)\n\n</div>\n",
     "title": "Отчёты",
     "version": "reports",
     "x-file-name": "reports"
@@ -2256,7 +2256,7 @@
     "/api/analytics/v1/item-returns": {
       "get": {
         "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод возвращает отчёт о [возвратах товаров продавцу](https://seller.wildberries.ru/return-transfer-reports).\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один профиль продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 мин | 1 запрос | 1 мин | 10 запросов |\n| Сервисный | 1 мин | 1 запрос | 1 мин | 10 запросов |\n| Базовый с секретом | 1 мин | 1 запрос | 1 мин | 10 запросов |\n| Базовый | 1 ч | 2 запроса | 30 мин | 1 запрос |\n</div>\n",
-        "operationId": "getV1GoodsReturn",
+        "operationId": "getV1ItemReturns",
         "parameters": [
           {
             "description": "Дата начала отчётного периода",
@@ -2326,7 +2326,7 @@
                   }
                 },
                 "schema": {
-                  "$ref": "#/components/schemas/GoodsReturn200Response"
+                  "$ref": "#/components/schemas/ItemReturns200Response"
                 }
               }
             },
@@ -3566,221 +3566,6 @@
         }
       ]
     },
-    "/api/v1/analytics/goods-return": {
-      "get": {
-        "deprecated": true,
-        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод будет отключен [26 октября](/release-notes?id=577).\n",
-        "operationId": "getV1AnalyticsGoodsReturn",
-        "parameters": [
-          {
-            "description": "Дата начала отчётного периода",
-            "in": "query",
-            "name": "dateFrom",
-            "required": true,
-            "schema": {
-              "example": "2024-08-13",
-              "format": "date",
-              "type": "string"
-            }
-          },
-          {
-            "description": "Дата окончания отчётного периода",
-            "in": "query",
-            "name": "dateTo",
-            "required": true,
-            "schema": {
-              "example": "2024-08-27",
-              "format": "date",
-              "type": "string"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "content": {
-              "application/json": {
-                "schema": {
-                  "properties": {
-                    "report": {
-                      "description": "Отчёт",
-                      "items": {
-                        "properties": {
-                          "barcode": {
-                            "description": "Баркод",
-                            "example": "1680063403480",
-                            "type": "string"
-                          },
-                          "brand": {
-                            "description": "Бренд",
-                            "example": "dub",
-                            "type": "string"
-                          },
-                          "completedDt": {
-                            "description": "Дата и время выдачи возврата продавцу",
-                            "example": "2025-03-31T11:33:53",
-                            "nullable": true,
-                            "type": "string"
-                          },
-                          "dstOfficeAddress": {
-                            "description": "Адрес ПВЗ выдачи возврата",
-                            "example": "Жуковский Улица Маяковского 19",
-                            "type": "string"
-                          },
-                          "dstOfficeId": {
-                            "description": "ID ПВЗ выдачи возврата",
-                            "example": 310105,
-                            "type": "integer"
-                          },
-                          "expiredDt": {
-                            "description": "Дата и время истечения срока хранения возврата",
-                            "example": "2025-03-31T11:33:53",
-                            "nullable": true,
-                            "type": "string"
-                          },
-                          "isStatusActive": {
-                            "description": "Тип статуса возврата:\n\n  * `0` — архивный\n  * `1` — активный\n",
-                            "enum": [
-                              0,
-                              1
-                            ],
-                            "example": 0,
-                            "type": "integer"
-                          },
-                          "nmId": {
-                            "description": "Артикул WB",
-                            "example": 12862181,
-                            "type": "integer"
-                          },
-                          "orderDt": {
-                            "description": "Дата заказа на возврат",
-                            "example": "2024-08-26",
-                            "format": "date",
-                            "type": "string"
-                          },
-                          "orderId": {
-                            "description": "Номер сборочного задания",
-                            "example": 2034240826,
-                            "type": "integer"
-                          },
-                          "readyToReturnDt": {
-                            "description": "Дата и время готовности возврата к выдаче",
-                            "example": "2025-01-31T08:33:50",
-                            "nullable": true,
-                            "type": "string"
-                          },
-                          "reason": {
-                            "description": "Причина возврата",
-                            "example": "Цвет",
-                            "type": "string"
-                          },
-                          "returnType": {
-                            "description": "Тип возврата",
-                            "example": "Возврат заблокированного товара",
-                            "type": "string"
-                          },
-                          "shkId": {
-                            "description": "Штрихкод",
-                            "example": 23411783472,
-                            "type": "integer"
-                          },
-                          "srid": {
-                            "description": "Уникальный ID заказа на возврат",
-                            "example": "ad3817664d3046c5a8d55054d8be96d6",
-                            "type": "string"
-                          },
-                          "status": {
-                            "description": "Статус возврата",
-                            "example": "В пути в пвз",
-                            "type": "string"
-                          },
-                          "stickerId": {
-                            "description": "Стикер заказа на возврат",
-                            "example": "33811984302",
-                            "type": "string"
-                          },
-                          "subjectName": {
-                            "description": "Предмет",
-                            "example": "Багажные бирки",
-                            "type": "string"
-                          },
-                          "techSize": {
-                            "description": "Размер",
-                            "example": "0",
-                            "type": "string"
-                          }
-                        },
-                        "type": "object"
-                      },
-                      "type": "array"
-                    }
-                  },
-                  "type": "object"
-                }
-              }
-            },
-            "description": "<span class='response__value response__value_success'>Успешно</span>"
-          },
-          "400": {
-            "content": {
-              "application/problem+json": {
-                "examples": {
-                  "DateRangeExceeded": {
-                    "$ref": "#/components/examples/DateRangeExceeded"
-                  },
-                  "DateRanges": {
-                    "$ref": "#/components/examples/DateRanges"
-                  },
-                  "IncorrectDateTimeFrom": {
-                    "$ref": "#/components/examples/IncorrectDateTimeFrom"
-                  },
-                  "IncorrectDateTimeTo": {
-                    "$ref": "#/components/examples/IncorrectDateTimeTo"
-                  },
-                  "MissingDateTimeFrom": {
-                    "$ref": "#/components/examples/MissingDateTimeFrom"
-                  },
-                  "MissingDateTimeTo": {
-                    "$ref": "#/components/examples/MissingDateTimeTo"
-                  }
-                },
-                "schema": {
-                  "$ref": "#/components/schemas/4XXResponse"
-                }
-              }
-            },
-            "description": "<span class='response__value '>Неправильный запрос</span>"
-          },
-          "401": {
-            "$ref": "#/components/responses/401"
-          },
-          "402": {
-            "$ref": "#/components/responses/402"
-          },
-          "403": {
-            "$ref": "#/components/responses/403"
-          },
-          "429": {
-            "$ref": "#/components/responses/429"
-          }
-        },
-        "security": [
-          {
-            "HeaderApiKey": []
-          }
-        ],
-        "summary": "Получить отчёт{{ /api/v1/analytics/goods-return }}",
-        "tags": [
-          "returnsAndItemMovementReport"
-        ],
-        "x-category": "contentanalytics",
-        "x-readonly-method": true
-      },
-      "servers": [
-        {
-          "url": "https://seller-analytics-api.wildberries.ru"
-        }
-      ]
-    },
     "/api/v1/analytics/region-sale": {
       "get": {
         "deprecated": true,
@@ -4861,7 +4646,7 @@
   ],
   "tags": [
     {
-      "description": "<div class=\"api-description\">\n\n<div class=\"description_important\">\n  Узнать больше об отчётах можно в <a href=\"https://seller.wildberries.ru/instructions/subcategory/5f2162c5-069b-416d-a4e1-48da2a76e6b0\">справочном центре</a>\n</div>\n\n<div class=\"api-block\">\n\nС помощью этих методов вы можете получать [основные отчёты](./reports#tag/mainReports) и отчёты о:\n  1. [Остатках на складах](./reports#tag/warehousesInventoryReport)\n  2. [Товарах с обязательной маркировкой](./reports#tag/reportOnItemsWithMandatoryLabeling)\n  3. [Удержаниях](./reports#tag/retentionReports)\n  4. [Операциях при приёмке](./reports#tag/acceptanceExpenses)\n  5. [Платном хранении](./reports#tag/paidStorage)\n  6. [Продажах по регионам](./reports#tag/salesByRegions)\n  7. [Доле бренда в продажах](./reports#tag/shareOfBrandInSales)\n  8. [Заблокированных карточках](./reports#tag/blockedItems)\n  9. [Возвратах и перемещении товаров](./reports#tag/returnsAndItemMovementReport)\n\n</div>\n\n\n</div>",
+      "description": "<div class=\"api-description\">\n\n<div class=\"description_important\">\n  Узнать больше об отчётах можно в <a href=\"https://seller.wildberries.ru/instructions/subcategory/5f2162c5-069b-416d-a4e1-48da2a76e6b0\">справочном центре</a>\n</div>\n\n<div class=\"api-block\">\n\nС помощью этих методов вы можете получать [основные отчёты](./reports#tag/mainReports) и отчёты о:\n  1. [Остатках на складах](./reports#tag/warehousesInventoryReport)\n  2. [Товарах с обязательной маркировкой](./reports#tag/reportOnItemsWithMandatoryLabeling)\n  3. [Удержаниях](./reports#tag/retentionReports)\n  4. [Операциях при приёмке](./reports#tag/acceptanceExpenses)\n  5. [Платном хранении](./reports#tag/paidStorage)\n  6. [Доле бренда в продажах](./reports#tag/shareOfBrandInSales)\n  7. [Заблокированных карточках](./reports#tag/blockedItems)\n  8. [Возвратах и перемещении товаров](./reports#tag/returnsAndItemMovementReport)\n\n</div>\n\n\n</div>",
       "name": "Отчёты",
       "x-traitTag": true
     },
@@ -4906,12 +4691,12 @@
       "x-displayName": "Доля бренда в продажах"
     },
     {
-      "description": "<div class=\"description_auth\">\n  Для доступа к методу используйте <a href=\"./api-information#tag/authorization/Kak-sozdat-personalnyj-bazovyj-ili-testovyj-token\">токен</a> для категории <strong>Аналитика</strong>\n</div>\n\n<div class=\"description_important\">\n  Узнать больше об отчёте о заблокированных карточках можно в <a href=\"https://seller.wildberries.ru/instructions/ru/ru/material/hidden-items-report?categoryId=5f2162c5-069b-416d-a4e1-48da2a76e6b0#вкладка-«заблокированные-карточки»\">справочном центре</a>\n</div>\n\n[Метод](./reports#tag/blockedItems/operation/getV1AnalyticsBannedProducsBlocked) загрузки отчётов о [заблокированных карточках](https://seller.wildberries.ru/analytics-reports/banned-products)\n",
+      "description": "<div class=\"description_auth\">\n  Для доступа к методу используйте <a href=\"./api-information#tag/authorization/Kak-sozdat-personalnyj-bazovyj-ili-testovyj-token\">токен</a> для категории <strong>Аналитика</strong>\n</div>\n\n<div class=\"description_important\">\n  Узнать больше об отчёте о заблокированных карточках можно в <a href=\"https://seller.wildberries.ru/instructions/material/hidden-items-report\">справочном центре</a>\n</div>\n\n[Метод](./reports#tag/blockedItems/operation/getV1AnalyticsBannedProducsBlocked) загрузки отчётов о [заблокированных карточках](https://seller.wildberries.ru/analytics-reports/banned-products)\n",
       "name": "blockedItems",
       "x-displayName": "Заблокированные карточки"
     },
     {
-      "description": "<div class=\"description_auth\">\n  Для доступа к методам используйте <a href=\"./api-information#tag/authorization/Kak-sozdat-personalnyj-bazovyj-ili-testovyj-token\">токен</a> для категории <strong>Аналитика</strong>\n</div>\n\n<div class=\"description_important\">\n  Узнать больше об отчётах о возвратах и перемещении товаров можно в <a href=\"https://seller.wildberries.ru/instructions/material/A-248?categoryId=5f2162c5-069b-416d-a4e1-48da2a76e6b0\">справочном центре</a>\n</div>\n\nЧтобы получить отчёт о [возвратах товаров](https://seller.wildberries.ru/return-transfer-reports/active), воспользуйтесь [методом загрузки](./reports#tag/returnsAndItemMovementReport/operation/getV1AnalyticsGoodsReturn).\n",
+      "description": "<div class=\"description_auth\">\n  Для доступа к методам используйте <a href=\"./api-information#tag/authorization/Kak-sozdat-personalnyj-bazovyj-ili-testovyj-token\">токен</a> для категории <strong>Аналитика</strong>\n</div>\n\n<div class=\"description_important\">\n  Узнать больше об отчётах о возвратах и перемещении товаров можно в <a href=\"https://seller.wildberries.ru/instructions/material/returns-and-item-transfer-perort\">справочном центре</a>\n</div>\n\nЧтобы получить отчёт о [возвратах товаров](https://seller.wildberries.ru/return-transfer-reports), воспользуйтесь [методом загрузки](./reports#tag/returnsAndItemMovementReport/operation/getV1ItemReturns).\n",
       "name": "returnsAndItemMovementReport",
       "x-displayName": "Отчёт о возвратах и перемещении товаров"
     }

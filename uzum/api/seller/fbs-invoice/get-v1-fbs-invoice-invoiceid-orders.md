@@ -9,12 +9,14 @@ tags:
 spec_version: 1.0.0
 source: "https://api-seller.uzum.uz/api/seller-openapi/swagger/swagger-ui/swagger-ui/index.html"
 deprecated: false
-content_sha: 1b176f6ee63d029e
+content_sha: e195c0ae8caabe4f
 ---
 
 # Получить FBS заказы по идентификатору накладной
 
 `GET /v1/fbs/invoice/{invoiceId}/orders`
+
+Нужен API-ключ в заголовке Authorization, без Bearer. В Swagger UI нажмите **Authorize**.
 
 Получить FBS заказы по идентификатору накладной
 
@@ -66,3 +68,5 @@ content_sha: 1b176f6ee63d029e
 - `timestamp` — string<date-time>
 - `trace` — string
 - `error` — string
+
+**401** — Заголовок Authorization отсутствует или пуст. Передайте Authorization: API_TOKEN без префикса Bearer; заголовок token не используется.

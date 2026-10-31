@@ -9,12 +9,14 @@ tags:
 spec_version: 1.0.0
 source: "https://api-seller.uzum.uz/api/seller-openapi/swagger/swagger-ui/swagger-ui/index.html"
 deprecated: false
-content_sha: a99d0f8fed565d1c
+content_sha: 02d63748cb140734
 ---
 
 # Получение списка расходов продавца.
 
 `GET /v1/finance/expenses`
+
+Нужен API-ключ в заголовке Authorization, без Bearer. В Swagger UI нажмите **Authorize**.
 
 ## Параметры
 
@@ -23,7 +25,7 @@ content_sha: a99d0f8fed565d1c
 | `page` | query | integer<int32> | нет | Номер страницы для постраничного вывода данных. |
 | `size` | query | integer<int32> | нет | Количество элементов на странице. |
 | `shopId` | query | integer<int64> | нет | Идентификатор магазина для выборки данных. |
-| `shopIds` | query | array[integer<int64>] | нет | Список идентификаторов магазинов для выборки данных. |
+| `shopIds` | query | array[integer<int64>] | да | Обязательный список ID магазинов, доступных API-ключу. Получите ID через GET /v1/shops. Формат: shopIds=12345 или shopIds=12345,67890. Без shopIds gateway вернёт 403; shopId не заменяет этот параметр. |
 | `dateFrom` | query | integer<int64> | нет | Начальная дата для фильтрации расходов. |
 | `dateTo` | query | integer<int64> | нет | Конечная дата для фильтрации расходов. |
 | `sources` | query | array[string] | нет | Источники, по которым фильтруются расходы. |
@@ -68,3 +70,7 @@ content_sha: a99d0f8fed565d1c
 - `timestamp` — string<date-time>. Время формирования ответа, формат даты и времени.
 - `trace` — string. Трассировка для отладки ошибок.
 - `error` — string. Сообщение об ошибке, если оно имеется.
+
+**401** — Заголовок Authorization отсутствует или пуст. Передайте Authorization: API_TOKEN без префикса Bearer; заголовок token не используется.
+
+**403** — Ключ не найден, истёк, выключен, не даёт доступа к магазину или изменениям. Если метод требует shopIds, проверьте наличие этого параметра и доступ ко всем указанным магазинам. Значение Authorization передавайте без Bearer.

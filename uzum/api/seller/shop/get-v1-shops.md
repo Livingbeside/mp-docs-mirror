@@ -9,12 +9,14 @@ tags:
 spec_version: 1.0.0
 source: "https://api-seller.uzum.uz/api/seller-openapi/swagger/swagger-ui/swagger-ui/index.html"
 deprecated: false
-content_sha: 41757e146f44587c
+content_sha: e19a29e9d73de36b
 ---
 
 # Получение списка собственных магазинов.
 
 `GET /v1/shops`
+
+Нужен API-ключ в заголовке Authorization, без Bearer. В Swagger UI нажмите **Authorize**.
 
 ## Ответы
 
@@ -46,3 +48,5 @@ content_sha: 41757e146f44587c
 - `timestamp` — string<date-time>. Время формирования ответа, формат даты и времени.
 - `trace` — string. Трассировка для отладки ошибок.
 - `error` — string. Сообщение об ошибке, если оно имеется.
+
+**403** — Ключ не найден, истёк, выключен, не даёт доступа к магазину или изменениям. Если метод требует shopIds, проверьте наличие этого параметра и доступ ко всем указанным магазинам. Значение Authorization передавайте без Bearer.

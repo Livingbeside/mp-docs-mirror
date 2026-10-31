@@ -3,7 +3,7 @@ title: Авторизация и лимиты запросов
 api: uzum-seller
 kind: guide
 source: "https://api-seller.uzum.uz/api/seller-openapi/swagger/swagger-ui/swagger-ui/index.html"
-content_sha: 06ad62921d8684a3
+content_sha: cbbb9a5a4fce5467
 ---
 
 # Авторизация и лимиты запросов
@@ -12,7 +12,7 @@ content_sha: 06ad62921d8684a3
 
 ## Авторизация
 
-- **TokenAuth** — заголовок `Authorization`. Токен авторизации без префикса Bearer
+- **TokenAuth** — заголовок `Authorization`. Обязательный заголовок Authorization. Вставьте только значение API-ключа из личного кабинета продавца, без префикса Bearer. Swagger UI добавит заголовок автоматически. Заголовок token не используется.
 
 ## Лимиты запросов
 

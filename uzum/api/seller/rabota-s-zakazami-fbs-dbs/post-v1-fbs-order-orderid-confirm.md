@@ -9,12 +9,14 @@ tags:
 spec_version: 1.0.0
 source: "https://api-seller.uzum.uz/api/seller-openapi/swagger/swagger-ui/swagger-ui/index.html"
 deprecated: false
-content_sha: df8900b6bc8a6935
+content_sha: 9cc7cd8acedd4912
 ---
 
 # Подтверждение заказа
 
 `POST /v1/fbs/order/{orderId}/confirm`
+
+Нужен API-ключ в заголовке Authorization, без Bearer. В Swagger UI нажмите **Authorize**.
 
 Подтверждает заказ продавца.
 
@@ -120,3 +122,7 @@ content_sha: df8900b6bc8a6935
 - `timestamp` — string<date-time>. Время формирования ответа, формат даты и времени.
 - `trace` — string. Трассировка для отладки ошибок.
 - `error` — string. Сообщение об ошибке, если оно имеется.
+
+**401** — Заголовок Authorization отсутствует или пуст. Передайте Authorization: API_TOKEN без префикса Bearer; заголовок token не используется.
+
+**403** — Ключ не найден, истёк, выключен, не даёт доступа к магазину или изменениям. Если метод требует shopIds, проверьте наличие этого параметра и доступ ко всем указанным магазинам. Значение Authorization передавайте без Bearer.

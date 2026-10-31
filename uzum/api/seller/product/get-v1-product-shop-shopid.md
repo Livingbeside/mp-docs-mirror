@@ -9,12 +9,14 @@ tags:
 spec_version: 1.0.0
 source: "https://api-seller.uzum.uz/api/seller-openapi/swagger/swagger-ui/swagger-ui/index.html"
 deprecated: false
-content_sha: 88b1568084b2b8b7
+content_sha: a4e4d466acb4506f
 ---
 
 # Получение SKU по ID магазина
 
 `GET /v1/product/shop/{shopId}`
+
+Нужен API-ключ в заголовке Authorization, без Bearer. В Swagger UI нажмите **Authorize**.
 
 Этот метод позволяет получить список товаров и остатков, доступных в указанном магазине.
 
@@ -118,3 +120,7 @@ content_sha: 88b1568084b2b8b7
   - `quantityActive` — integer<int32>. Количество активных единиц продукта на складе.
   - `quantityFbs` — integer<int32>. Количество единиц, доступных в режиме FBS (Fulfillment by Seller).
 - `totalProductsAmount` — integer<int32>. Общее количество доступных продуктов.
+
+**401** — Заголовок Authorization отсутствует или пуст. Передайте Authorization: API_TOKEN без префикса Bearer; заголовок token не используется.
+
+**403** — Ключ не найден, истёк, выключен, не даёт доступа к магазину или изменениям. Если метод требует shopIds, проверьте наличие этого параметра и доступ ко всем указанным магазинам. Значение Authorization передавайте без Bearer.

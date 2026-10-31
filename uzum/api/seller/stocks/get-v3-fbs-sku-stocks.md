@@ -9,12 +9,14 @@ tags:
 spec_version: 1.0.0
 source: "https://api-seller.uzum.uz/api/seller-openapi/swagger/swagger-ui/swagger-ui/index.html"
 deprecated: false
-content_sha: b52e3c33f847740f
+content_sha: d9f79e41bd43f7cb
 ---
 
 # Получение остатков по SKU (постранично)
 
 `GET /v3/fbs/sku/stocks`
+
+Нужен API-ключ в заголовке Authorization, без Bearer. В Swagger UI нажмите **Authorize**.
 
 Возвращает доступные для обновления остатки FBS и DBS SKU.
 Поддерживает два режима постраничной выдачи:
@@ -91,3 +93,5 @@ skuIdFrom - по курсору, выдача по возрастанию skuId.
 - `timestamp` — string<date-time>. Время формирования ответа, формат даты и времени.
 - `trace` — string. Трассировка для отладки ошибок.
 - `error` — string. Сообщение об ошибке, если оно имеется.
+
+**401** — Заголовок Authorization отсутствует или пуст. Передайте Authorization: API_TOKEN без префикса Bearer; заголовок token не используется.

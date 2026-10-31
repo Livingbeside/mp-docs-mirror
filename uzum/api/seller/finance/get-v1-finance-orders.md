@@ -9,12 +9,14 @@ tags:
 spec_version: 1.0.0
 source: "https://api-seller.uzum.uz/api/seller-openapi/swagger/swagger-ui/swagger-ui/index.html"
 deprecated: false
-content_sha: 9397260444b00fe1
+content_sha: dcda259bdb1f1327
 ---
 
 # Получение списка заказов.
 
 `GET /v1/finance/orders`
+
+Нужен API-ключ в заголовке Authorization, без Bearer. В Swagger UI нажмите **Authorize**.
 
 Этот метод позволяет получить список продаж.
 
@@ -28,7 +30,7 @@ content_sha: 9397260444b00fe1
 | `dateFrom` | query | integer<int64> | нет | Дата, с которой необходимо показывать заказы |
 | `dateTo` | query | integer<int64> | нет | Дата, с которой необходимо показывать заказы |
 | `statuses` | query | array[string (TO_WITHDRAW, PROCESSING, CANCELED, PARTIALLY_CANCELLED)] | нет | Статусы заказов (к выводу средств (TO_WITHDRAW), в обработке (PROCESSING), отменен (CANCELED), частично отменен( PARTIALLY_CANCELLED)) |
-| `shopIds` | query | array[integer<int64>] | да | Список магазинов, для которых необходимо показывать заказы |
+| `shopIds` | query | array[integer<int64>] | да | Обязательный список ID магазинов, доступных API-ключу. Получите ID через GET /v1/shops. Формат: shopIds=12345 или shopIds=12345,67890. Без shopIds gateway вернёт 403; shopId не заменяет этот параметр. |
 
 ## Ответы
 
@@ -48,3 +50,7 @@ content_sha: 9397260444b00fe1
 - `timestamp` — string<date-time>. Время формирования ответа, формат даты и времени.
 - `trace` — string. Трассировка для отладки ошибок.
 - `error` — string. Сообщение об ошибке, если оно имеется.
+
+**401** — Заголовок Authorization отсутствует или пуст. Передайте Authorization: API_TOKEN без префикса Bearer; заголовок token не используется.
+
+**403** — Ключ не найден, истёк, выключен, не даёт доступа к магазину или изменениям. Если метод требует shopIds, проверьте наличие этого параметра и доступ ко всем указанным магазинам. Значение Authorization передавайте без Bearer.

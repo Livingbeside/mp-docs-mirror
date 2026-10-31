@@ -9,12 +9,14 @@ tags:
 spec_version: 1.0.0
 source: "https://api-seller.uzum.uz/api/seller-openapi/swagger/swagger-ui/swagger-ui/index.html"
 deprecated: false
-content_sha: 57f0fdb4645da538
+content_sha: 886ed47d45426672
 ---
 
 # Возвращает доступные тайм-слоты от текущего времени до минимальной даты «доставить до» среди переданных заказов, где оставшаяся емкость >= количеству заказов в списке
 
 `GET /v1/fbs/invoice/dop/time-slot`
+
+Нужен API-ключ в заголовке Authorization, без Bearer. В Swagger UI нажмите **Authorize**.
 
 Возвращает доступные тайм-слоты от текущего времени до минимальной даты «доставить до» среди переданных заказов, где оставшаяся емкость >= количеству заказов в списке
 
@@ -54,3 +56,7 @@ content_sha: 57f0fdb4645da538
 - `timestamp` — string<date-time>
 - `trace` — string
 - `error` — string
+
+**401** — Заголовок Authorization отсутствует или пуст. Передайте Authorization: API_TOKEN без префикса Bearer; заголовок token не используется.
+
+**403** — Ключ не найден, истёк, выключен, не даёт доступа к магазину или изменениям. Если метод требует shopIds, проверьте наличие этого параметра и доступ ко всем указанным магазинам. Значение Authorization передавайте без Bearer.

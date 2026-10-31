@@ -9,12 +9,14 @@ tags:
 spec_version: 1.0.0
 source: "https://api-seller.uzum.uz/api/seller-openapi/swagger/swagger-ui/swagger-ui/index.html"
 deprecated: false
-content_sha: 2b81cb8ec742feaa
+content_sha: 2551f9456b41816e
 ---
 
 # Получение накладных возврата
 
 `GET /v1/shop/{shopId}/return`
+
+Нужен API-ключ в заголовке Authorization, без Bearer. В Swagger UI нажмите **Authorize**.
 
 Этот метод позволяет получить список накладных возврата.
 
@@ -62,3 +64,7 @@ content_sha: 2b81cb8ec742feaa
 - `canceledDate` — string<date-time>. Дата отмены возврата, если он был отменен.
 - `externalNumber` — string **обязательный**. Электронный номер товаросопроводительного документа.
 - `type` — string (DEFECTED, RETURN, FBS) **обязательный**. Тип возврата: 'DEFECTED' для дефектного товара, 'RETURN' для обычного возврата, 'FBS' для доставки продавцом.
+
+**401** — Заголовок Authorization отсутствует или пуст. Передайте Authorization: API_TOKEN без префикса Bearer; заголовок token не используется.
+
+**403** — Ключ не найден, истёк, выключен, не даёт доступа к магазину или изменениям. Если метод требует shopIds, проверьте наличие этого параметра и доступ ко всем указанным магазинам. Значение Authorization передавайте без Bearer.

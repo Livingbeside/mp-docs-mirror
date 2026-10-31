@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /api-ozon/synchrozon
 source: "https://seller-edu.ozon.ru/libra/api-ozon/synchrozon"
-updated: "2026-10-21 12:07:14"
+updated: "2026-10-30 14:57:38"
 doc_id: 982
-fetched_at: "2026-10-22T01:53:07Z"
-content_sha: 7c97a4ae465ed04b
+fetched_at: "2026-10-31T02:43:07Z"
+content_sha: 26dbae80eae23e87
 ---
 
 # Synchrozon для 1C
@@ -71,7 +71,7 @@ Synchrozon — рабочее место внутри системы 1С, кот
 
 Скачать мастер установки — [SynchrozonInstallAndUpdate (ZIP)](https://cdn.ozone.ru/s3/ozon-disk-api/Seller-edu/files/api-ozon/synchrozon/SynchrozonInstallAndUpdate-0-2-11_1732270220.zip).
 
-Актуальная версия модуля 0.3.1 от 21.10.2026. Посмотреть информацию о последних изменениях в модуле Synchrozon для [1С УНФ](/api-ozon/versii-synchrozon) и [1С УТ/КА/ERP](/api-ozon/versii-synchrozon-erp).
+Актуальная версия модуля 0.3.2 от 30.10.2026. Посмотреть информацию о последних изменениях в модуле Synchrozon для [1С УНФ](/api-ozon/versii-synchrozon) и [1С УТ/КА/ERP](/api-ozon/versii-synchrozon-erp).
 
 # Как установить Synchrozon
 
@@ -93,7 +93,7 @@ Synchrozon — рабочее место внутри системы 1С, кот
 
 Если подсистема не поддерживается, вы можете создать собственную с помощью SDK — набора средств для разработки. Он содержит полный набор модулей для работы как с [методами Seller API](https://docs.ozon.ru/api/seller/), так и [Performance API](https://docs.ozon.ru/api/performance/), [Retail API](https://docs.ozon.ru/api/retail/).
 
-[Скачать актуальную версию SDK 0.5.1.2 от 25.06.2026 (ZIP)](https://cdn.ozone.ru/s3/ozon-disk-api/Seller-edu/files/api-ozon/synchrozon/OzonAPI_SDK_v0.5.1.2_25.06.2026_1782485658.zip)
+[Скачать актуальную версию SDK 0.5.1.3 от 30.10.2026 (ZIP)](https://cdn.ozone.ru/s3/ozon-disk-api/Seller-edu/files/api-ozon/synchrozon/OzonAPI_SDK_v0.5.1.3_30.10.2026_1793372140.zip)
 
 Для установки подсистемы в вашу систему понадобятся:
 

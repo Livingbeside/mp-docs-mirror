@@ -2,8 +2,8 @@
 title: Цифровые заказы
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/digital.md"
-fetched_at: "2026-10-30T02:49:19Z"
-content_sha: 1bb6d535d7937afc
+fetched_at: "2026-10-31T02:46:26Z"
+content_sha: fb5898a46ee37e17
 ---
 
 ---
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/digital.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21863558
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21887165
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21863558
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21887165
 
 # Обработка заказов с цифровыми товарами
 
@@ -28,6 +28,8 @@ alternate:
    Если в заказе есть цифровые товары, в информации о доставке `delivery` в параметре `type` вернется значение `DIGITAL`.
 
 1. Проверьте значение параметра `delivery.digitalGoods.type` — оно определяет, как передать товар покупателю:
+
+   Если для товара не указан способ получения, Маркет использует `EMAIL`.
 
    * **`EMAIL`** — код активации по почте.
      После перехода заказа в статус `PROCESSING` в течение 30 минут воспользуйтесь методом [POST v2/campaigns/{campaignId}/orders/{orderId}/deliverDigitalGoods](https://yandex.ru/dev/market/partner-api/doc/ru/reference/orders/provideOrderDigitalCodes.md).
@@ -38,7 +40,7 @@ alternate:
      Покупатель получит инструкцию и код в чате с магазином, а в списке заказов сможет скопировать код.
 
    * **`STEAM_GIFT`** — игра подарком в Steam.
-     В параметре `delivery.digitalGoods.steamLink` будет ссылка от покупателя на добавление в друзья на платформе Steam. Перейдите по ссылке, добавьте покупателя в друзья и отправьте ему игру.
+     В ответе метода [POST v1/businesses/{businessId}/orders](https://yandex.ru/dev/market/partner-api/doc/ru/reference/orders/getBusinessOrders.md) в параметре `delivery.digitalGoods.steamLink` будет ссылка от покупателя на добавление в друзья на платформе Steam. Перейдите по ссылке, добавьте покупателя в друзья и отправьте ему игру.
      В течение трех часов передайте Маркету статус, что заказ доставлен — с помощью методов [PUT v2/campaigns/{campaignId}/orders/{orderId}/status](https://yandex.ru/dev/market/partner-api/doc/ru/reference/orders/updateOrderStatus.md) или [POST v2/campaigns/{campaignId}/orders/status-update](https://yandex.ru/dev/market/partner-api/doc/ru/reference/orders/updateOrderStatuses.md) или на странице заказа.
 
    * **`CHAT`** — игры и товары в чате с покупателем на Маркете.

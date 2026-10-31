@@ -9,12 +9,14 @@ tags:
 spec_version: 1.0.0
 source: "https://api-seller.uzum.uz/api/seller-openapi/swagger/swagger-ui/swagger-ui/index.html"
 deprecated: false
-content_sha: d7f5f1ff6abe7627
+content_sha: 1757dd60ba3f838f
 ---
 
 # Получение состава накладной возврата
 
 `GET /v1/shop/{shopId}/return/{returnId}`
+
+Нужен API-ключ в заголовке Authorization, без Bearer. В Swagger UI нажмите **Authorize**.
 
 Этот метод позволяет получить список товаров входящих в накладные возврата
 
@@ -82,3 +84,7 @@ content_sha: d7f5f1ff6abe7627
 - `timestamp` — string<date-time>. Метка времени, когда был сгенерирован ответ
 - `trace` — string. Информация для отладки
 - `error` — string. Сообщение об ошибке, если оно присутствует
+
+**401** — Заголовок Authorization отсутствует или пуст. Передайте Authorization: API_TOKEN без префикса Bearer; заголовок token не используется.
+
+**403** — Ключ не найден, истёк, выключен, не даёт доступа к магазину или изменениям. Если метод требует shopIds, проверьте наличие этого параметра и доступ ко всем указанным магазинам. Значение Authorization передавайте без Bearer.

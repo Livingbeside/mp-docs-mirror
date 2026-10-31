@@ -9,12 +9,14 @@ tags:
 spec_version: 1.0.0
 source: "https://api-seller.uzum.uz/api/seller-openapi/swagger/swagger-ui/swagger-ui/index.html"
 deprecated: false
-content_sha: 3f374ef83b2b3a77
+content_sha: 6caf1c22981a0469
 ---
 
 # Получение заказов продавца
 
 `GET /v2/fbs/orders`
+
+Нужен API-ключ в заголовке Authorization, без Bearer. В Swagger UI нажмите **Authorize**.
 
 Возвращает заказы продавца по статусу.
 
@@ -22,11 +24,11 @@ content_sha: 3f374ef83b2b3a77
 
 | Имя | Где | Тип | Обяз. | Описание |
 |---|---|---|---|---|
-| `shopIds` | query | array[integer<int64>] | да | Массив идентификаторов магазинов, для которых нужно получить заказы. |
+| `shopIds` | query | array[integer<int64>] | да | Обязательный список ID магазинов, доступных API-ключу. Получите ID через GET /v1/shops. Формат: shopIds=12345 или shopIds=12345,67890. Без shopIds gateway вернёт 403; shopId не заменяет этот параметр. |
 | `status` | query | string (CREATED, PACKING, PENDING_DELIVERY, DELIVERING, DELIVERED, ACCEPTED_AT_DP, DELIVERED_TO_CUSTOMER_DELIVERY_POINT, COMPLETED, CANCELED, PENDING_CANCELLATION, RETURNED) | нет | Статус заказов, которые нужно получить. |
 | `scheme` | query | string (FBS, DBS) | нет | Тип заказа. Если ничего не передать, вернутся и FBS и DBS |
-| `dateFrom` | query | integer<int64> | нет | Дата, с которой необходимо показывать заказы |
-| `dateTo` | query | integer<int64> | нет | Дата, по которую необходимо показывать заказы |
+| `dateFrom` | query | integer<int64> | нет | Начальная дата создания заказа. Unix timestamp в секундах (int64), не в миллисекундах и не ДД.ММ.ГГГГ. Например, 1790794800 = 01.10.2026 00:00 UTC+5. |
+| `dateTo` | query | integer<int64> | нет | Конечная дата создания заказа. Unix timestamp в секундах (int64), не в миллисекундах и не ДД.ММ.ГГГГ. Например, 1790794800 = 01.10.2026 00:00 UTC+5. |
 | `page` | query | integer<int32> | нет | Номер страницы для получения данных (начинается с 0) |
 | `size` | query | integer<int32> | нет | Количество возвратов на странице (максимум 50). |
 
@@ -201,3 +203,7 @@ content_sha: 3f374ef83b2b3a77
 - `timestamp` — string<date-time>. Метка времени ответа.
 - `trace` — string. Трассировочная информация для отладки.
 - `error` — string. Описание ошибки, если она произошла.
+
+**401** — Заголовок Authorization отсутствует или пуст. Передайте Authorization: API_TOKEN без префикса Bearer; заголовок token не используется.
+
+**403** — Ключ не найден, истёк, выключен, не даёт доступа к магазину или изменениям. Если метод требует shopIds, проверьте наличие этого параметра и доступ ко всем указанным магазинам. Значение Authorization передавайте без Bearer.

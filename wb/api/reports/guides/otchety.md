@@ -5,7 +5,7 @@ tag: Отчёты
 group: ""
 kind: guide
 source: "https://dev.wildberries.ru/docs/openapi/reports"
-content_sha: 7db93327b4fb3212
+content_sha: 5ec57f9fa472ab4e
 ---
 
 # Отчёты
@@ -18,7 +18,6 @@ content_sha: 7db93327b4fb3212
  3. [Удержаниях](./reports#tag/retentionReports)
  4. [Операциях при приёмке](./reports#tag/acceptanceExpenses)
  5. [Платном хранении](./reports#tag/paidStorage)
- 6. [Продажах по регионам](./reports#tag/salesByRegions)
- 7. [Доле бренда в продажах](./reports#tag/shareOfBrandInSales)
- 8. [Заблокированных карточках](./reports#tag/blockedItems)
- 9. [Возвратах и перемещении товаров](./reports#tag/returnsAndItemMovementReport)
+ 6. [Доле бренда в продажах](./reports#tag/shareOfBrandInSales)
+ 7. [Заблокированных карточках](./reports#tag/blockedItems)
+ 8. [Возвратах и перемещении товаров](./reports#tag/returnsAndItemMovementReport)

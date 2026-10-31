@@ -9,7 +9,7 @@ tags:
 spec_version: 1.0.0
 source: "https://api-seller.uzum.uz/api/seller-openapi/swagger/swagger-ui/swagger-ui/index.html"
 deprecated: true
-content_sha: b35014662ee46843
+content_sha: 33c653fc0f4054dd
 ---
 
 # Получение остатков по SKU (устарело)
@@ -17,6 +17,8 @@ content_sha: b35014662ee46843
 `GET /v2/fbs/sku/stocks`
 
 > ⚠️ Метод помечен как **deprecated**.
+
+Нужен API-ключ в заголовке Authorization, без Bearer. В Swagger UI нажмите **Authorize**.
 
 Устарело: используйте GET /v3/fbs/sku/stocks с пагинацией. Возвращает доступные для обновления остатки FBS и DBS SKU.
 
@@ -80,3 +82,5 @@ content_sha: b35014662ee46843
 - `timestamp` — string<date-time>. Время формирования ответа, формат даты и времени.
 - `trace` — string. Трассировка для отладки ошибок.
 - `error` — string. Сообщение об ошибке, если оно имеется.
+
+**401** — Заголовок Authorization отсутствует или пуст. Передайте Authorization: API_TOKEN без префикса Bearer; заголовок token не используется.
