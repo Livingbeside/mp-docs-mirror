@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /commissions-tariffs/legal-information/full-actual-commissions
 source: "https://seller-edu.ozon.ru/libra/commissions-tariffs/legal-information/full-actual-commissions"
-updated: "2026-10-30 15:01:15"
+updated: "2026-10-31 17:49:45"
 doc_id: 700
-fetched_at: "2026-10-31T02:43:07Z"
-content_sha: 94fd538290b4d8b0
+fetched_at: "2026-11-01T02:52:17Z"
+content_sha: 4e55945db3efe104
 ---
 
 # Полный список комиссий и тарифов
@@ -16,7 +16,7 @@ _Главная / Комиссии и тарифы / Юридическая ин
 
 Актуальный и исчерпывающий список комиссий и тарифов на Ozon — пригодится для бухгалтера, юристов или налоговой
 
-Эта редакция действует с 15 января 2027 года (с дополнениями от 26, 30 октября, 19 ноября, 1, 5 и 16 декабря 2026 года).
+Эта редакция действует с 15 января 2027 года (с дополнениями от 30 октября, 19 ноября, 1, 5 и 16 декабря 2026 года).
 
 Мы заранее публикуем изменения в тарифах: если правила на этой странице ещё не вступили в силу, смотрите [предыдущую версию](https://seller-edu.ozon.ru/commissions-tariffs/legal-information/archive-komisii).
 
