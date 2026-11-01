@@ -50380,7 +50380,7 @@
     }
   },
   "info": {
-    "description": "По вопросам работы с Seller API обращайтесь в поддержку через личный кабинет.\n\n<aside class=\"warning\">Обновляем корневой TLS/SSL-сертификат GlobalSign — вместо него будем использовать <a href=\"https://app.harica.gr/\">HARICA</a>.<br><a href=\"https://dev.ozon.ru/news/775-Izmeneniia-v-Ozon-API-migratsiia-kornevogo-sertifikata-UTs-Ozon/\">Подробнее о переходе на HARICA на платформе разработчиков Ozon for dev</a></aside>\n\n> [Инструкции по работе с маркетплейсом](https://seller-edu.ozon.ru)\n\n> [Информационная платформа и сообщество разработчиков Ozon for dev](https://dev.ozon.ru/)\n",
+    "description": "По вопросам работы с Seller API обращайтесь в поддержку через личный кабинет.\n\n<aside class=\"warning\">Обновляем корневой TLS/SSL-сертификат GlobalSign — вместо него будем использовать <a href=\"https://app.harica.gr/\">HARICA</a>.<br><a href=\"https://dev.ozon.ru/news/775-Izmeneniia-v-Ozon-API-migratsiia-kornevogo-sertifikata-UTs-Ozon/\">Подробнее о переходе на HARICA на платформе разработчиков Ozon for dev</a></aside>\n\n> [Инструкции по работе с маркетплейсом](https://seller-edu.ozon.ru)\n\n> [Информационная платформа и сообщество разработчиков Ozon for dev](https://dev.ozon.ru/)\n\n<a class=\"seller-appstore-banner\" href=\"https://seller-edu.ozon.ru/webinars/5940/\" target=\"_blank\" rel=\"noopener noreferrer\"><img class=\"seller-appstore-banner-image\" src=\"https://cdn.ozone.ru/s3/ozon-disk-api/techdoc/seller-api/banner_event_1793360570.png\" alt=\"Вебинар Ozon Доставка для продавцов: интеграция через Seller API\"></a>\n",
     "title": "Документация Ozon Seller API",
     "version": 2.1,
     "x-logo": {
