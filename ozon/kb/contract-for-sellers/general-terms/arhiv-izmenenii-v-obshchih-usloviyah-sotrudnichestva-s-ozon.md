@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /contract-for-sellers/general-terms/arhiv-izmenenii-v-obshchih-usloviyah-sotrudnichestva-s-ozon
 source: "https://seller-edu.ozon.ru/libra/contract-for-sellers/general-terms/arhiv-izmenenii-v-obshchih-usloviyah-sotrudnichestva-s-ozon"
-updated: "2026-10-26 13:04:15"
+updated: "2026-11-02 20:05:40"
 doc_id: 76837
-fetched_at: "2026-10-27T02:42:25Z"
-content_sha: a7e45c6f871dab1a
+fetched_at: "2026-11-03T02:46:40Z"
+content_sha: 2c77c5db263dd950
 ---
 
 # Все версии общих условий сотрудничества с Ozon
@@ -18,8 +18,9 @@ _Главная / Договоры для Продавцов на платфор
 
 | **Дата вступления в силу** | **Список изменений** | **Файл для скачивания** |
 | --- | --- | --- |
-| 01.12.2026 г. ([опубликовано](https://seller.ozon.ru/media/news/obnovim-poryadok-nashih-raschyotov/) 16.10.2026 г.) | **С 1 декабря 2026 года **зафиксировали, какие будем использовать термины, связанные с ценами |  |
-| 07.10.2026 г. ([опубликовано](https://seller.ozon.ru/media/news/fbo-smozhete-delat-pryamye-postavki-v-pvz-i-ppz/) 06.10.2026 г.) | **С 7 октября 2026 года **часть продавцов сможет делать прямые поставки в ПВЗ и ППЗ (раздел «Определения») |  |
+| 01.12.2026 г. ([опубликовано](https://seller.ozon.ru/media/news/smozhete-ustanavlivat-plomby-dlja-zashhity-ot-podmen/) 30.10.2026 г.) | **С 1 декабря 2026 года **добавим термин «Пломба» (раздел «Определения»). |  |
+| 01.12.2026 г. ([опубликовано](https://seller.ozon.ru/media/news/obnovim-poryadok-nashih-raschyotov/) 16.10.2026 г.) | **С 1 декабря 2026 года **зафиксировали, какие будем использовать термины, связанные с ценами. |  |
+| 07.10.2026 г. ([опубликовано](https://seller.ozon.ru/media/news/fbo-smozhete-delat-pryamye-postavki-v-pvz-i-ppz/) 06.10.2026 г.) | **С 7 октября 2026 года **часть продавцов сможет делать прямые поставки в ПВЗ и ППЗ (раздел «Определения»). |  |
 | 05.10.2026 г. (с дополнениями от 1 и 2 октября) ([опубликовано](https://seller.ozon.ru/media/news/utochnenie-pro-lgotu-dlya-fashion-tovarov-i-drugie-izmeneniya-v-dogovore/) 01.10.2026 г.) | **С** **1 октября 2026 года **добавим, что информация о действиях Ozon с карточкой товара может размещаться прямо в интерфейсе личного кабинета и не требует отдельного уведомления (раздел «Определения»). **С** **2 октября 2026 года:** добавим термин «фулфилмент»;разграничим понятия «этикетка» и «этикетка со штрихкодом» (раздел «Определения). |  |
 | 05.10.2026 г. (с дополнениями от 17 сентября и 1 и 2 октября) ([опубликовано](https://seller.ozon.ru/media/news/poyavitsya-obuyavlennaya-stoimost-tovara-dlya-vozmeshenij-i-strahovki/) 21.09.2026 г.) | **С 5 октября 2026 года **появится объявленная стоимость товара для расчёта возмещений и страхования (раздел «Определения»). |  |
 | 02.10.2026 г. (с дополнениями от 17 сентября и 1 октября) ([опубликовано](https://seller.ozon.ru/media/news/lgoty-dlya-postavok-odezhdy-i-obuvi-i-drugie-izmeneniya-v-dogovore/) 17.09.2026 г.) | **С 17 сентября 2026 года**: начнём передавать в банки ваши данные для предложения мер поддержки, если товары были уничтожены или повреждены при атаках на объекты Ozon (п. 7 раздела «Иные положения»);добавим, что можем передавать в страховую компанию реквизиты расчётного счёта для перевода выплат (п. 3 раздела «Персональные данные»). |  |

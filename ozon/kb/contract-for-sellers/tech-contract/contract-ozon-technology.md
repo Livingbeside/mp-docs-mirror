@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /contract-for-sellers/tech-contract/contract-ozon-technology
 source: "https://seller-edu.ozon.ru/libra/contract-for-sellers/tech-contract/contract-ozon-technology"
-updated: "2026-10-16 13:16:28"
+updated: "2026-11-02 15:36:09"
 doc_id: 80024
-fetched_at: "2026-10-17T01:46:11Z"
-content_sha: 6402b1a95e9f22a6
+fetched_at: "2026-11-03T02:46:40Z"
+content_sha: 33cf14c133fc71fa
 ---
 
 # Договор возмездного оказания услуг Озон Технологий
@@ -16,7 +16,7 @@ _Главная / Договоры для Продавцов на платфор
 
 Русский
 
-Эта редакция действует с 3 октября 2026 года. Мы заранее публикуем изменения в договоре. Если правила на этой странице ещё не вступили в силу, смотрите [предыдущую версию](https://seller-edu.ozon.ru/contract-for-sellers/tech-contract/arhiv-contract-ozon-technology).
+Эта редакция действует с 1 декабря 2026 года. Мы заранее публикуем изменения в договоре. Если правила на этой странице ещё не вступили в силу, смотрите [предыдущую версию](https://seller-edu.ozon.ru/contract-for-sellers/tech-contract/arhiv-contract-ozon-technology).
 
 Настоящий Договор возмездного оказания услуг (далее — «Договор») заключается между ООО «Озон Технологии» (далее — «Исполнитель») и Заказчиком на изложенных ниже условиях.
 
@@ -493,7 +493,7 @@ _Главная / Договоры для Продавцов на платфор
 
 **14.9.** Если иные условия прямо не предусмотрены Договором, в части, не противоречащей Договору, к отношениям Сторон применяются положения раздела «Стандартные оговорки», размещенные по адресу [https://docs.ozon.ru/legal/partners/standard-clauses/](https://docs.ozon.ru/legal/partners/standard-clauses/). Раздел «Стандартные оговорки» считается неотъемлемой частью Договора.
 
-# Термины и определения
+## Термины и определения
 
 Используемые в настоящем Договоре термины имеют следующие значения:
 
@@ -626,15 +626,251 @@ _Главная / Договоры для Продавцов на платфор
 
 **3.5.** В дополнение к основаниям, предусмотренным Общими положениями, Исполнитель вправе приостановить или прекратить предоставление доступа к ПО в случае нарушения Заказчиком условий настоящего раздела.
 
-## 4. Термины и определения
+## Термины и определения
 
 **Программное обеспечение «Расширенная Аналитика» / ПО **— программа для ЭВМ, функционал которой позволяет осуществлять, в частности, но не ограничиваясь, автоматизированную обработку и аналитику различных категорий данных по широкому списку параметров и их последующую визуализацию для улучшения бизнес-процессов Заказчиков. Правообладателем ПО является Исполнитель.
 
 **Услуги доступа к аналитике** — услуги по предоставлению Заказчику доступа к ПО, оказываемые на условиях Общих положений и Приложения № 1 к Договору.
 
+# Приложение № 2
+
+Действует с 1 декабря 2026 года.
+
+## 1. Общие положения о размещении рекламы
+
+**1.1.** Исполнитель обязуется оказывать Заказчику Услуги с использованием программного обеспечения по размещению и распространению Рекламно-информационных материалов Заказчика в Рекламной сети Ozon, а Заказчик обязуется оплачивать указанные Услуги в порядке и на условиях, предусмотренных Договором и настоящим Приложением.
+
+**1.2.** РИМ размещаются на условиях, определённых Заказчиком в Личном кабинете, включая параметры, формат, место размещения, ставку и бюджет.
+
+**1.3.** Заказчик самостоятельно несёт ответственность за содержание и достоверность РИМ, а также за их соответствие требованиям законодательства о рекламе.
+
+**1.4.** При согласовании Сторонами оказания Услуг по размещению рекламы Заказчик обязуется руководствоваться [Политикой размещения рекламы на Ozon](https://docs.ozon.ru/performance/trebovaniya/).
+
+## 2. Порядок размещения рекламы
+
+**2.1.** Заказчик самостоятельно формирует параметры размещения в Личном кабинете, включая наименование рекламной кампании, описание, сроки оказания, формат и место размещения, целевую аудиторию, ставку и бюджет.
+
+**Размещение по моделям CPC и CPM**
+
+**2.2.** При размещении рекламы по моделям CPC и CPM Заказчик в Личном кабинете самостоятельно выбирает:
+
+параметры, доступные в Личном кабинете;
+
+ставку за клик (для модели CPC) или ставку за 1000 показов (для модели CPM), с учётом НДС. Если Заказчик не установил ставку, при наличии соответствующей настройки в Личном кабинете автоматически применяется конкурентная ставка, указанная в Личном кабинете.
+
+Минимальный размер ставки указан в Личном кабинете и может быть изменен Исполнителем в одностороннем порядке.
+
+Заказчик самостоятельно определяет размер дневного бюджета в Личном кабинете, в пределах которого будет оказываться Услуга.
+
+Чем выше значение ставки, тем выше вероятность показа РИМ.
+
+Заказчик соглашается с тем, что если в течение периода, когда рекламная кампания имеет статус «Активна», минимальная ставка повышается, то вознаграждение рассчитывается в соответствии с повышенной ставкой.
+
+формат и место размещения.
+
+**2.3.** Все существенные условия Услуг считаются согласованными Сторонами с момента перевода рекламной кампании в Личном кабинете в статус «Активна».
+
+**2.4.** Заказчик вправе досрочно прекратить оказание Услуг путём перевода рекламной кампании в Личном кабинете в статус «Неактивна».
+
+**2.5.** Исполнитель не гарантирует показ РИМ на конкретных выбранных Заказчиком рекламных местах. Распределение показов осуществляется по результатам аукциона, проводимого Рекламной сетью Ozon в режиме реального времени в момент загрузки страницы пользователем. РИМ Заказчика, предложившего наивысшую ставку, показывается по ставке, установленной им при создании рекламной кампании в Личном кабинете.
+
+**Заявки на маркетинг**
+
+**2.6.** В разделе «Заявки на маркетинг» Стороны вправе согласовать оказание иных рекламных услуг в Рекламной сети Ozon, недоступных в режиме self-service, в следующем порядке:
+
+Заказчик направляет Исполнителю Заявку с указанием требуемых услуг, сроков, иных существенных условий;
+
+Исполнитель оценивает возможность оказания Услуг и формирует существенные условия;
+
+Заказчик подтверждает Заявку в Личном кабинете до даты начала оказания Услуг.
+
+**2.7. **Подтверждение Заявки в разделе «Заявки на маркетинг» через функциональность Личного кабинета означает полное и безоговорочное согласие Заказчика с её условиями. Услуги в данном разделе оказываются с привлечением представителя Исполнителя.
+
+**Тестирование и эксперименты**
+
+**2.8. **Исполнитель вправе проводить тесты и эксперименты, в том числе:
+
+тестировать новые виды Услуг или функциональности Личного кабинета;
+
+изменять и дополнять форматы и условия показа РИМ;
+
+изменять алгоритмы, на основе которых осуществляется показ РИМ.
+
+**2.9.** О проведении тестирования и экспериментов Исполнитель предварительно уведомляет Заказчика по адресу электронной почты, указанному при регистрации, и (или) посредством уведомления в Личном кабинете.
+
+**Дополнительные функции**
+
+**2.10. **Используя функцию «Сгенерировать баннер» в Личном кабинете, Заказчик соглашается, что Исполнитель не является рекламопроизводителем по смыслу Федерального закона от 13.03.2006 № 38-ФЗ «О рекламе». «Сгенерировать баннер» является техническим функционалом и не учитывает требования рекламного законодательства. Если Заказчик создал РИМ с помощью функции «Сгенерировать баннер», он обязан перед размещением рекламы проверить рекламный материал на соблюдение требований рекламного законодательства.
+
+## 3. Рекламно-информационные материалы
+
+**3.1.** Заказчик передаёт Исполнителю РИМ, а также документы и сведения, необходимые для оказания Услуг, не менее чем за 1 рабочий день до даты начала оказания Услуг.
+
+**3.2.** Заказчик обязан передать Исполнителю документы, подтверждающие права на использование объектов интеллектуальной собственности, содержащихся в РИМ, в течение 3 дней с момента получения соответствующего запроса.
+
+**3.3.** По требованию Исполнителя Заказчик предоставляет заверенные копии лицензий, сертификатов соответствия, свидетельств о государственной регистрации и иных документов в случаях, когда РИМ содержат рекламу товаров (работ, услуг), подлежащих обязательной сертификации, регистрации или лицензированию.
+
+**3.4.** Исполнитель вправе провести проверку РИМ и сопроводительных документов. Исполнитель вправе отказать в приёме РИМ, если они:
+
+не соответствуют требованиям законодательства о рекламе или иному применимому законодательству;
+
+не соответствуют техническим требованиям Исполнителя;
+
+содержат признаки ненадлежащей рекламы или нарушают моральные и этические нормы;
+
+переданы с нарушением сроков, установленных настоящим разделом.
+
+**3.5.** Заказчик вправе доработать РИМ либо заменить их на новые. При повторной передаче доработанных РИМ срок начала оказания Услуг соответственно отодвигается без применения к Исполнителю каких-либо санкций.
+
+**3.6.** Заказчик несёт полную ответственность за содержание и достоверность сведений, размещаемых в РИМ, включая наличие согласий физических лиц на использование их изображений и на обработку их персональных данных Исполнителем и привлекаемыми им лицами. Исполнитель ни при каких обстоятельствах не несёт ответственности перед государственными органами или третьими лицами за недостоверность размещаемой рекламной информации.
+
+**3.7. **При предъявлении к Исполнителю претензий, требований или исков со стороны государственных органов или третьих лиц, связанных с нарушениями в РИМ Заказчика, Заказчик возмещает Исполнителю имущественные потери (в смысле ст. 406.1 Гражданского кодекса Российской Федерации), которые понесены или с неизбежностью будут понесены Исполнителем в будущем в связи с такими претензиями, требованиями или исками. Размер имущественных потерь признаётся равным:
+
+сумме требований государственного органа или третьего лица, включая штрафы, пени, неустойки;
+
+сумме судебных расходов Исполнителя, связанных с такими претензиями или исками.
+
+**3.8.** Заказчик самостоятельно урегулирует все вопросы по обеспечению авторских и смежных прав в отношении ОИС, входящих в состав РИМ. Заказчик гарантирует освобождение Исполнителя от любой ответственности перед правообладателями, возникающей в связи с использованием таких ОИС в РИМ.
+
+**Использование DMP-сегментов**
+
+**3.9.** Заказчик вправе настраивать рекламные кампании на DMP-сегменты пользователей Сайта Ozon. Для формирования DMP-сегмента Исполнитель в порядке абз. 2 п. 3 ст. 308 Гражданского кодекса РФ привлекает третье лицо — ООО «Интернет Решения» (ОГРН 1027739244741), являющееся владельцем Сайта Ozon и оператором, обрабатывающим персональные данные пользователей Сайта Ozon.
+
+**3.10.** Заказчик загружает идентификаторы аудитории в Личный кабинет в виде и формате, как они указаны в Личном кабинете (например, номера телефонов). ООО «Интернет Решения» получает такие идентификаторы и проверяет, относятся ли они к клиентам ООО «Интернет Решения». Если указанные идентификаторы относятся к клиентам ООО «Интернет Решения», в Личном кабинете формируется и отображается соответствующий DMP-сегмент, на который Заказчик может настраивать рекламные кампании. Исполнитель не осуществляет обработку идентификаторов — ООО «Интернет Решения» самостоятельно и от своего имени обрабатывает полученные данные для формирования DMP-сегмента.
+
+**3.11.** Предоставляя идентификаторы, Заказчик гарантирует Исполнителю и ООО «Интернет Решения», что:
+
+идентификаторы собраны Заказчиком в соответствии с применимым законодательством;
+
+имеются правовые основания на передачу Заказчиком идентификаторов в адрес ООО «Интернет Решения» и на последующую обработку ООО «Интернет Решения» таких идентификаторов для формирования DMP-сегмента;
+
+субъекты персональных данных уведомлены об обработке их персональных данных в порядке, предусмотренном ч. 3 ст. 18 Федерального закона «О персональных данных».
+
+**3.12.** Если использование ООО «Интернет Решения» полученных от Заказчика идентификаторов для формирования DMP-сегмента станет основанием для предъявления к ООО «Интернет Решения» или Исполнителю соответствующих претензий/исков/предписаний со стороны третьих лиц, Заказчик обязуется возместить все имущественные потери (по смыслу ст. 406.1 Гражданского кодекса РФ), которые понесены или с неизбежностью будут понесены ООО «Интернет Решения» или Исполнителем в будущем.
+
+## 4. Маркировка рекламы
+
+**4.1.** В рамках исполнения обязанностей оператора рекламной системы по ст. 18.1 Федерального закона от 13.03.2006 № 38-ФЗ «О рекламе» Исполнитель:
+
+своевременно, до момента размещения РИМ Заказчика, получает от ОРД идентификатор рекламы (erid);
+
+передаёт через ОРД в Роскомнадзор информацию о рекламе, перечень которой определён Распоряжением Правительства РФ от 30.05.2022 № 1362-р;
+
+добавляет в РИМ до их распространения пометку «Реклама» и указание на рекламодателя, если такая информация не была добавлена ранее.
+
+**4.2.** Заказчик обязуется предоставлять Исполнителю достоверные и корректные сведения, необходимые для маркировки рекламы и передачи информации в ОРД, включая, в том числе, но не ограничиваясь, сведения о рекламодателе, объекте рекламирования, договорах, идентификаторах рекламы, объёме, периоде и иных параметрах распространения.
+
+**4.3.** Заказчик уведомлён и согласен с тем, что для целей передачи сведений в ОРД используются сведения, указанные Заказчиком при регистрации и в Личном кабинете.
+
+**4.4.** При заказе отдельных Услуг от Заказчика может потребоваться указание категории рекламируемого товара (работы, услуги) для передачи такой информации через ОРД. Заказчик несёт ответственность за достоверность указанной им категории и возмещает Исполнителю убытки в случае привлечения Исполнителя к административной ответственности по причине некорректного указания категории.
+
+**4.5.** Заказчик вправе направить Исполнителю письменный запрос о внесении изменений в ранее переданные сведения. Исполнитель вправе внести такие изменения только при одновременном соблюдении всех нижеуказанных условий:
+
+внесение изменений допускается законодательством Российской Федерации, включая требования о маркировке рекламы и передаче сведений в ЕРИР;
+
+внесение изменений возможно с учётом технических возможностей ОРД;
+
+внесение изменений не противоречит требованиям ЕРИР и Роскомнадзора, включая требования к составу, срокам и порядку передачи сведений.
+
+**4.6.** Исполнитель не принимает на себя обязательства по внесению изменений в ранее переданные сведения и не несёт ответственности за отказ во внесении таких изменений, если такой отказ обусловлен требованиями законодательства, требованиями ОРД, ЕРИР, Роскомнадзора или техническими ограничениями.
+
+**4.7.** Направляя запрос об изменении сведений, Заказчик гарантирует, что такой запрос:
+
+направлен исключительно для исправления ошибок или актуализации ранее переданной информации;
+
+не направлен на обход или искажение требований законодательства о рекламе;
+
+не изменяет фактических обстоятельств распространения рекламы (даты, объём, формат, условия), если иное не допускается законом.
+
+**4.8.** Заказчик самостоятельно и за свой счёт хранит документы, подтверждающие достоверность переданных Исполнителю сведений (как первоначальных, так и изменённых), в течение сроков, установленных законодательством. По требованию Исполнителя или уполномоченных государственных органов Заказчик незамедлительно предоставляет указанные документы.
+
+**4.9.** В случае предъявления к Исполнителю требований, штрафов, пеней или иных мер ответственности государственных органов, включая Роскомнадзор, связанных прямо или косвенно с передачей Заказчиком недостоверных или некорректных сведений либо с внесением изменений по запросу Заказчика, Заказчик возмещает Исполнителю все понесённые убытки в полном объёме, включая суммы штрафов, пеней, судебных расходов и иных документально подтверждённых расходов.
+
+## 5. Интеллектуальная собственность
+
+**5.1.** Исполнитель отчуждает Заказчику исключительные права на изготовленные РИМ в полном объёме с момента оплаты Услуг. Вознаграждение за отчуждение исключительных прав включено в стоимость Услуг и составляет 1% от стоимости Услуг, в результате которых созданы РИМ.
+
+**5.2. **В соответствии с пунктом 2 статьи 1296 ГК РФ Исполнитель вправе использовать РИМ для собственных нужд на условиях безвозмездной простой (неисключительной) лицензии в течение всего срока действия исключительного права на них.
+
+**5.3.** Заказчик признаёт, что товарные знаки, зарегистрированные за Исполнителем и компаниями группы Ozon, являются и остаются интеллектуальной собственностью последних, и что оказание услуг по изготовлению РИМ не влечёт за собой передачу Заказчику каких-либо прав на вышеупомянутые объекты.
+
+**5.4.** В случае, если при исполнении Договора Заказчик предоставляет Исполнителю право использования ОИС, в том числе товарных знаков и логотипов для оказания Услуг, Заказчик заверяет и гарантирует, что:
+
+Заказчик является законным правообладателем ОИС или предоставляет право использования ОИС на иных законных основаниях;
+
+Исполнитель вправе использовать ОИС на условиях Договора в период действия Договора;
+
+предоставление права использования ОИС и использование ОИС не нарушают права третьих лиц и не будут нарушать их в течение всего срока использования.
+
+**5.5.** В случае, если при исполнении Договора Заказчик отчуждает в пользу Исполнителя права на ОИС, Заказчик заверяет и гарантирует, что:
+
+уплатил вознаграждение авторам ОИС;
+
+получил разрешение на анонимное использование, обнародование, внесение изменений в ОИС;
+
+исключительные права на ОИС не обременены правами третьих лиц;
+
+ОИС, передача исключительных прав на ОИС и использование ОИС в течение срока действия исключительных прав не нарушают права третьих лиц.
+
+## 6. Бонусы и акции
+
+**6.1.** Исполнитель вправе по собственному усмотрению организовывать и проводить акции (далее — «Акции»), участие в которых осуществляется Заказчиком путём совершения действий, предусмотренных условиями соответствующей Акции.
+
+**6.2.** В рамках Акций Исполнитель вправе начислять Заказчику медийные бонусы (далее — «Бонусы») за совершение Заказчиком действий, предусмотренных условиями Акции. Исполнитель самостоятельно определяет перечень действий Заказчика, за которые начисляются Бонусы, размер и условия начисления, а также порядок их фиксации и подтверждения.
+
+**6.3.** Условия Акций, включая порядок участия, начисления и использования Бонусов, определяются исключительно Исполнителем и не требуют согласования с Заказчиком. Исполнитель вправе в одностороннем порядке изменять условия Акций, приостанавливать или прекращать их проведение, а также аннулировать начисленные, но неиспользованные Бонусы.
+
+**6.4.** Бонусы предоставляют Заказчику право на получение скидки при заказе Услуг исходя из соотношения 1 Бонус = 1 рубль. Бонусы расходуются ежедневно до момента их исчерпания или до прекращения срока их действия. Исполнитель в одностороннем порядке определяет перечень Услуг, при заказе которых может применяться скидка за счёт Бонусов, а также максимальный размер скидки. Исполнитель отражает в УПД фактическую сумму вознаграждения за Услуги к оплате с учётом применённой скидки.
+
+**6.5.** Бонусы не являются средством платежа, не имеют денежного эквивалента и не подлежат обмену на денежные средства. Использование Бонусов осуществляется исключительно в порядке и на условиях, установленных Исполнителем.
+
+## 7. Приостановление, отказ и ответственность по медийной рекламе
+
+**7.1.** В дополнение к основаниям, предусмотренным Общими положениями, Исполнитель вправе приостановить оказание Услуг по размещению рекламы, если:
+
+Заказчик не предоставил сертификаты, лицензии или иные документы, подтверждающие соблюдение применимого законодательства;
+
+РИМ переданы Заказчиком с нарушением установленных сроков;
+
+размещение РИМ, по мнению Исполнителя, противоречит требованиям законодательства, либо повлекло или может повлечь претензии о нарушении прав третьих лиц, — до урегулирования спорных вопросов;
+
+Исполнителю поступили претензий, требований или исков третьих лиц, связанных с РИМ Заказчика.
+
+**7.2.** Исполнитель вправе отказать Заказчику в оказании Услуг по размещению рекламы, если:
+
+РИМ противоречат применимому законодательству, содержат признаки ненадлежащей рекламы или не соответствуют моральным/этическим нормам;
+
+недостатки РИМ, выявленные Исполнителем, не устранены Заказчиком в установленные сроки;
+
+в РИМ выявлены ОИС, использование которых нарушает права третьих лиц.
+
+**7.3.** Отказ Исполнителя в оказании Услуг не лишает Заказчика права устранить недостатки и повторно обратиться за оказанием Услуг.
+
+## Термины и определения
+
+**Медийная реклама **—** **реклама в форме изображения или видео, размещаемая в Рекламной сети Ozon, в форматах «Баннер», «Видеобаннер» и иных форматах, доступных в Личном кабинете.
+
+**Модель CPC (от англ. cost per click) **—** **модель монетизации Услуг, при которой их стоимость рассчитывается исходя из стоимости одного клика. Вознаграждение Исполнителя определяется как произведение количества кликов на ставку Заказчика.
+
+**Модель CPM (от англ. cost per mille) **—** **модель монетизации Услуг, при которой их стоимость рассчитывается исходя из стоимости 1000 показов.
+
+**Объект рекламирования **—** **товар, работа, услуга, продукция, средство индивидуализации, изготовитель или продавец товара, результаты интеллектуальной деятельности, мероприятие, на привлечение внимания к которым направлена Рекламная кампания.
+
+**ОРД/Оператор рекламных данных **— владелец программного обеспечения, уполномоченного Роскомнадзором осуществлять учёт рекламы в сети «Интернет» и предоставлять соответствующую информацию в Роскомнадзор. В рамках настоящего Договора передача информации о размещаемой рекламе осуществляется через ООО «ОЗОН ОРД» (ОГРН 1227700360216, юридический адрес: г. Москва, наб. Пресненская, д. 10, этаж 42, ком. 7).
+
+**Показ **—** **однократное отображение РИМ посетителю Сайта Ozon или мобильного приложения Ozon.
+
+**Рекламная сеть Ozon **—** **рекламная система Исполнителя, включающая в себя совокупность рекламных мест на сайтах и в мобильных приложениях третьих лиц, программно-аппаратных средств и сервисов, обеспечивающих размещение и показ Медийной рекламы.
+
+**Рекламно-информационный материал/РИМ **—** **рекламная информация Заказчика, передаваемая Исполнителю для размещения в Рекламной сети Ozon.
+
+**Рекламная кампания **—** **совокупность размещений РИМ Заказчика, оформленных через Личный кабинет на условиях, согласованных Сторонами.** **
+
+**Услуги по размещению рекламы **—** **услуги по размещению и распространению РИМ Заказчика в Рекламной сети Ozon с использованием программного обеспечения, оказываемые на условиях Общих положений и Приложения № 2 Договора.
+
 English
 
-This revision is effective as of October 3, 2026. We publish amendments in advance: if the rules on this page are not already in effect, see the [previous version](https://seller-edu.ozon.ru/contract-for-sellers/tech-contract/arhiv-contract-ozon-technology).
+This revision is effective as of December 1, 2026. We publish amendments in advance: if the rules on this page are not already in effect, see the [previous version](https://seller-edu.ozon.ru/contract-for-sellers/tech-contract/arhiv-contract-ozon-technology).
 
 This Agreement for the provision of services for a fee (hereinafter referred to as the «Agreement») is concluded between Ozon Technologies LLC (hereinafter referred to as the «Contractor») and the Customer on the terms and conditions set out below.
 
@@ -642,19 +878,19 @@ This Agreement for the provision of services for a fee (hereinafter referred to 
 
 ## 1. Subject
 
-1.1. Under the terms of this Agreement, the Contractor undertakes to provide Services to the Customer, and the Customer undertakes to pay for them in the manner and on the terms provided by this Agreement.
+**1.1. **Under the terms of this Agreement, the Contractor undertakes to provide Services to the Customer, and the Customer undertakes to pay for them in the manner and on the terms provided by this Agreement.
 
-1.2. The specific list of services available for ordering is specified in the relevant Appendix.
+**1.2. **The specific list of services available for ordering is specified in the relevant Appendix.
 
-1.3. The General Provisions of the Agreement apply to all Services. In the event of a conflict between the General Provisions and the Appendices, the relevant provisions of the Appendices shall prevail in the relevant part.
+**1.3.** The General Provisions of the Agreement apply to all Services. In the event of a conflict between the General Provisions and the Appendices, the relevant provisions of the Appendices shall prevail in the relevant part.
 
-1.4. The specific composition of ordered Services is determined by the Customer’s Requests submitted through the Personal Account.
+**1.4. **The specific composition of ordered Services is determined by the Customer’s Requests submitted through the Personal Account.
 
-1.5. The Contractor provides Services on the basis of Customer Requests submitted through the Personal Account.
+**1.5.** The Contractor provides Services on the basis of Customer Requests submitted through the Personal Account.
 
 ## 2. Conclusion and amendment of the agreement
 
-2.1. The Agreement is concluded by the Customer’s acceptance of its terms. Acceptance is deemed to be the Customer’s performance of any of the following actions:
+**2.1.** The Agreement is concluded by the Customer’s acceptance of its terms. Acceptance is deemed to be the Customer’s performance of any of the following actions:
 
 placing a mark (tick) indicating agreement with the terms of the Agreement;
 
@@ -664,19 +900,19 @@ continued use of an existing ordered service ordered under the Agreement for Sel
 
 Activation of the Customer’s Personal Account.
 
-2.2. Acceptance means full and unconditional acceptance by the Customer of all terms of the Agreement.
+**2.2.** Acceptance means full and unconditional acceptance by the Customer of all terms of the Agreement.
 
-2.3. The Agreement is deemed concluded from the moment of Acceptance specified in clause 2.1 of the Agreement.
+**2.3.** The Agreement is deemed concluded from the moment of Acceptance specified in clause 2.1 of the Agreement.
 
-2.4. The Agreement is not a public contract (Article 426 of the Civil Code of the Russian Federation). The Contractor is not obliged to conclude the Agreement with any person who applies and has the right to refuse to conclude the Agreement without explaining the reasons.
+**2.4.** The Agreement is not a public contract (Article 426 of the Civil Code of the Russian Federation). The Contractor is not obliged to conclude the Agreement with any person who applies and has the right to refuse to conclude the Agreement without explaining the reasons.
 
-2.5. The Agreement enters into force from the date of its conclusion and is valid for an indefinite term.
+**2.5.** The Agreement enters into force from the date of its conclusion and is valid for an indefinite term.
 
 Transactions made by the Parties through actions in the PA are recognized as made in simple written form using a simple electronic signature. All actions of the Customer in the PA during the period in which the Customer is successfully authenticated in the PA via Ozon ID have legal effect.
 
 **2.6. Suspension of performance of the Agreement**
 
-2.6.1. The Contractor has the right to unilaterally fully or partially suspend performance of its obligations under the Agreement by notifying the Customer if:
+**2.6.1.** The Contractor has the right to unilaterally fully or partially suspend performance of its obligations under the Agreement by notifying the Customer if:
 
 (a) the Customer has any outstanding amounts payable under the Agreement;
 
@@ -688,9 +924,9 @@ Transactions made by the Parties through actions in the PA are recognized as mad
 
 **2.7. Termination of the Agreement**
 
-2.7.1. Either Party may terminate the Agreement unilaterally out of court by sending a Notice.
+**2.7.1.** Either Party may terminate the Agreement unilaterally out of court by sending a Notice.
 
-2.7.2. The Agreement is deemed terminated on:
+**2.7.2.** The Agreement is deemed terminated on:
 
 (a) the day the Contractor receives a Notice from the Customer — if the Customer disagrees with amendments to the Agreement;
 
@@ -698,13 +934,13 @@ Transactions made by the Parties through actions in the PA are recognized as mad
 
 (c) the last calendar day of the reporting period following the reporting period in which the Notice was sent — in other cases;
 
-2.7.3. The Customer has the right to unilaterally out of court refuse to perform the Agreement if it disagrees with amendments made to it.
+**2.7.3.** The Customer has the right to unilaterally out of court refuse to perform the Agreement if it disagrees with amendments made to it.
 
-2.7.4. If the Contractor unilaterally refuses to perform the Agreement due to the Customer’s violations, the Notice shall indicate the relevant Customer violation that caused the termination.
+**2.7.4. **If the Contractor unilaterally refuses to perform the Agreement due to the Customer’s violations, the Notice shall indicate the relevant Customer violation that caused the termination.
 
-2.7.5. This Agreement is also deemed terminated if the Agreement for Sellers of Goods on the Ozon Platform is terminated. In such case, the termination date is the termination date of the Agreement for Sellers of Goods on the Ozon Platform. No additional notice from the Contractor or the Customer is required.
+**2.7.5.** This Agreement is also deemed terminated if the Agreement for Sellers of Goods on the Ozon Platform is terminated. In such case, the termination date is the termination date of the Agreement for Sellers of Goods on the Ozon Platform. No additional notice from the Contractor or the Customer is required.
 
-2.7.6. Termination of the Agreement is carried out until the last calendar day of the reporting period following the reporting period in which the Notice was sent, in the following order:
+**2.7.6. **Termination of the Agreement is carried out until the last calendar day of the reporting period following the reporting period in which the Notice was sent, in the following order:
 
 (a) The Parties sign a Reconciliation Act and, if necessary, make final settlements. If within 3 business days from the date of sending the Reconciliation Act the Customer has not signed and/or sent the Contractor its original, the Reconciliation Act is deemed agreed in the Contractor’s version. The Contractor has the right not to send the Reconciliation Act if the Customer has outstanding debt to the Contractor.
 
@@ -712,7 +948,7 @@ The Agreement remains in effect to the extent applicable until final settlement 
 
 **2.8. Amendment of the Agreement**
 
-2.8.1. The Contractor has the right to unilaterally amend the Agreement by sending the Customer a Notice:
+**2.8.1.** The Contractor has the right to unilaterally amend the Agreement by sending the Customer a Notice:
 
 (a) no later than 15 calendar days before the amendments enter into force:
 
@@ -742,91 +978,91 @@ The Customer is obliged to regularly monitor Notices and the text of the Agreeme
 
 ## 3. Personal account and access to services
 
-3.1. In the part concerning access to the PA and work (performance of actions) in it, the relations of the Parties are governed by the provisions of that Agreement for Sellers of Goods on the Ozon Platform concluded (accepted) by the specific Customer with Ozon, as well as the provisions of the Agreement for the Trademark Right Holder posted at: [https://seller-edu.ozon.ru/libra/contract-for-sellers/account-brand/contract-for-brands](https://seller-edu.ozon.ru/contract-for-sellers/account-brand/contract-for-brands). The Parties must, when accessing the Personal Account and working in it, comply with the provisions of the “Personal Account” section, including the procedure for registration, activation and deactivation of the account, changes of access and rules for use of the Personal Account.
+**3.1.** In the part concerning access to the PA and work (performance of actions) in it, the relations of the Parties are governed by the provisions of that Agreement for Sellers of Goods on the Ozon Platform concluded (accepted) by the specific Customer with Ozon, as well as the provisions of the Agreement for the Trademark Right Holder posted at: [https://seller-edu.ozon.ru/libra/contract-for-sellers/account-brand/contract-for-brands](https://seller-edu.ozon.ru/contract-for-sellers/account-brand/contract-for-brands). The Parties must, when accessing the Personal Account and working in it, comply with the provisions of the “Personal Account” section, including the procedure for registration, activation and deactivation of the account, changes of access and rules for use of the Personal Account.
 
 The Parties confirm and acknowledge that the PA belongs to Ozon; the Contractor is not the owner of the PA. In the event of a conflict between the terms of this Agreement and the General Terms of Cooperation with Ozon in the part concerning access to the PA and work in it, the General Terms of Cooperation with Ozon prevail as terms established by the owner of the PA.
 
 The General Terms of Cooperation with Ozon apply in the version in effect at the relevant time; Ozon has the right to amend them unilaterally, and the Parties must independently monitor the current version at the specified address.
 
-3.2. The Customer’s access to the Personal Account is provided by the Contractor solely on condition that the Customer has a valid, concluded on its behalf and not terminated Agreement for Sellers of Goods on the Ozon Platform with Ozon. The Personal Account belongs to Ozon; the Contractor is not its owner and has no right to provide access to the Personal Account to persons who have not concluded an Agreement with Ozon.
+**3.2.** The Customer’s access to the Personal Account is provided by the Contractor solely on condition that the Customer has a valid, concluded on its behalf and not terminated Agreement for Sellers of Goods on the Ozon Platform with Ozon. The Personal Account belongs to Ozon; the Contractor is not its owner and has no right to provide access to the Personal Account to persons who have not concluded an Agreement with Ozon.
 
 In the absence, invalidity, suspension or termination of the Agreement for Sellers of Goods on Ozon, access to the Personal Account is not provided, and previously provided access is suspended or terminated; such failure to provide (suspension, termination) of access is not a violation of the Contractor’s obligations.
 
 ## 4. Cost of services and payments
 
-4.1. The cost of services and other payment terms are specified in the relevant Appendix to the Agreement.
+**4.1.** The cost of services and other payment terms are specified in the relevant Appendix to the Agreement.
 
 The final cost of Services is determined in the Reporting Documents upon the fact of their provision based on the Contractor’s statistics data.
 
 **4.2. Payment methods**
 
-4.2.1. Payment for services is made by one of the methods available in the PA: «Withholding from Ozon Balance» or «Direct Payment». Ozon Balance is determined within the Agreement for Sellers of Goods on the Ozon Platform.
+**4.2.1. **Payment for services is made by one of the methods available in the PA: «Withholding from Ozon Balance» or «Direct Payment». Ozon Balance is determined within the Agreement for Sellers of Goods on the Ozon Platform.
 
-4.2.2. When the Customer starts using the Contractor’s services, the payment method «Withholding from Ozon Balance» is established by default. By accepting this Agreement, the Customer grants Ozon a pre-given instruction (order) to withhold funds from the Ozon Balance to fulfill monetary obligations to the Contractor for payment for the Contractor’s services and to transfer them to the Contractor.
+**4.2.2.** When the Customer starts using the Contractor’s services, the payment method «Withholding from Ozon Balance» is established by default. By accepting this Agreement, the Customer grants Ozon a pre-given instruction (order) to withhold funds from the Ozon Balance to fulfill monetary obligations to the Contractor for payment for the Contractor’s services and to transfer them to the Contractor.
 
-4.2.3. The Customer has the right to switch to the «Direct Payment» method by activating the corresponding function in the Personal Account, if such technical availability exists in the PA. Performance of said action is recognized as proper expression of the Customer’s will to change the payment method.
+**4.2.3. **The Customer has the right to switch to the «Direct Payment» method by activating the corresponding function in the Personal Account, if such technical availability exists in the PA. Performance of said action is recognized as proper expression of the Customer’s will to change the payment method.
 
-4.2.4. In all cases, the debt for services arises from the Customer directly to the Contractor. Using the payment method «Withholding from Ozon Balance» does not entail the transfer of the Customer’s obligation to Ozon and does not relieve the Customer from liability to the Contractor for payment for services.
+**4.2.4. **In all cases, the debt for services arises from the Customer directly to the Contractor. Using the payment method «Withholding from Ozon Balance» does not entail the transfer of the Customer’s obligation to Ozon and does not relieve the Customer from liability to the Contractor for payment for services.
 
-4.2.5. Funds received from the Customer are credited to pay for the Contractor’s services first to repay debt that arose earlier by due date, regardless of the payment purpose specified by the Customer: earlier debt is repaid before later debt. Allocation of payment among several obligations of the Customer is carried out under this condition as an agreement of the Parties within the meaning of Article 319.1 of the Civil Code of the Russian Federation.
+**4.2.5. **Funds received from the Customer are credited to pay for the Contractor’s services first to repay debt that arose earlier by due date, regardless of the payment purpose specified by the Customer: earlier debt is repaid before later debt. Allocation of payment among several obligations of the Customer is carried out under this condition as an agreement of the Parties within the meaning of Article 319.1 of the Civil Code of the Russian Federation.
 
 **4.3. Change of payment method**
 
-4.3.1. The method of transferring funds by the Customer to the Contractor is chosen by the Customer independently from those available in the PA.
+**4.3.1.** The method of transferring funds by the Customer to the Contractor is chosen by the Customer independently from those available in the PA.
 
-4.3.2. The Customer has the right to change the payment method not more than once every 3 (three) months. For purposes of this Agreement, 3 (three) months constitute 90 (ninety) calendar days counted from the day of the last change of payment method.
+**4.3.2.** The Customer has the right to change the payment method not more than once every 3 (three) months. For purposes of this Agreement, 3 (three) months constitute 90 (ninety) calendar days counted from the day of the last change of payment method.
 
-4.3.3. The new payment method enters into force:
+**4.3.3. **The new payment method enters into force:
 
 - from the 1st day of the month following the month of change, if on the date of change of payment method in the PA 90 or more calendar days have passed since the last change of payment method, and also if the Customer has not previously changed the payment method;
 
 - from the 1st day of the nearest month following expiration of 90 calendar days from the day of the last change of payment method, if on the date of change of payment method said period has not yet expired.
 
-4.3.4. Until the date the new payment method enters into force, settlements are made using the previously chosen payment method. The date of entry into force of the change is displayed in the Customer’s PA.
+**4.3.4.** Until the date the new payment method enters into force, settlements are made using the previously chosen payment method. The date of entry into force of the change is displayed in the Customer’s PA.
 
 **4.4. Payment by «Withholding from Ozon Balance»**
 
-4.4.1. Under the payment method «Withholding from Ozon Balance», fulfillment of obligations to the Contractor is made by Ozon withholding funds from the Ozon Balance on the basis of the instruction.
+**4.4.1.** Under the payment method «Withholding from Ozon Balance», fulfillment of obligations to the Contractor is made by Ozon withholding funds from the Ozon Balance on the basis of the instruction.
 
 Said instruction extends to the Customer’s monetary obligations to the Contractor, information about which is transferred by the Contractor to Ozon.
 
 If at the time of performance of the instruction the Ozon Balance is insufficient to fully repay the Customer’s obligation, Ozon withholds funds from the Ozon Balance in the amount of the available positive balance. The remaining part of the obligations is subject to withholding from the Ozon Balance upon its subsequent replenishment.
 
-4.4.2. The Customer’s obligation to pay is deemed fulfilled in the corresponding amount at the moment funds are withheld from the Ozon Balance and Ozon sends a Notice of withholding in the PA, regardless of the date of subsequent transfer by Ozon of the aggregate amount of funds to the Contractor.
+**4.4.2.** The Customer’s obligation to pay is deemed fulfilled in the corresponding amount at the moment funds are withheld from the Ozon Balance and Ozon sends a Notice of withholding in the PA, regardless of the date of subsequent transfer by Ozon of the aggregate amount of funds to the Contractor.
 
 **4.5. Payment by «Direct Payment»**
 
-4.5.1. Under the payment method «Direct Payment», the Customer pays for services directly to the Contractor by transferring funds to the Contractor’s details specified in the Customer’s PA or on the basis of an Invoice issued by the Contractor.
+**4.5.1.** Under the payment method «Direct Payment», the Customer pays for services directly to the Contractor by transferring funds to the Contractor’s details specified in the Customer’s PA or on the basis of an Invoice issued by the Contractor.
 
-4.5.2. The Customer’s obligation to pay is deemed fulfilled at the moment funds are credited to the Contractor’s settlement account.
+**4.5.2.** The Customer’s obligation to pay is deemed fulfilled at the moment funds are credited to the Contractor’s settlement account.
 
-4.5.3. The invoice payment term is 7 (seven) calendar days from the date the debt arises.
+**4.5.3.** The invoice payment term is 7 (seven) calendar days from the date the debt arises.
 
 **4.6. Consequences of non-payment under «Direct Payment»**
 
-4.6.1. If under the «Direct Payment» method the Customer has formed debt to the Contractor and the Customer has not repaid the debt within 2 (two) months from the moment the debt arose, the Contractor has the right, without additional agreement with the Customer, from the 1st day of the third month to transfer the Customer to the «Withholding from Ozon Balance» payment method.
+**4.6.1.** If under the «Direct Payment» method the Customer has formed debt to the Contractor and the Customer has not repaid the debt within 2 (two) months from the moment the debt arose, the Contractor has the right, without additional agreement with the Customer, from the 1st day of the third month to transfer the Customer to the «Withholding from Ozon Balance» payment method.
 
-4.6.2. By accepting this Agreement, the Customer gives prior consent to the transfer provided for in clause 4.6.1 and grants Ozon a pre-given instruction to withhold the amount of the formed debt from the Ozon Balance and transfer it to the Contractor.
+**4.6.2.** By accepting this Agreement, the Customer gives prior consent to the transfer provided for in clause 4.6.1 and grants Ozon a pre-given instruction to withhold the amount of the formed debt from the Ozon Balance and transfer it to the Contractor.
 
-4.6.3. The transfer under clause 4.6.1 does not cancel or suspend accrual of penalties (if any) and other consequences of delay provided by the Agreement.
+**4.6.3. **The transfer under clause 4.6.1 does not cancel or suspend accrual of penalties (if any) and other consequences of delay provided by the Agreement.
 
 **4.7. Refunds**
 
-4.7.1. Upon termination of the Agreement or if there are amounts overpaid to the Contractor, the Customer has the right to send the Contractor an application for refund of such funds to its settlement account. The application is sent to the Contractor by clicking the «Withdraw» button in the «Finance» section of the PA, if such technical availability exists in the PA. The Contractor may also refund the funds to the Ozon Balance from which they were previously withheld.
+**4.7.1.** Upon termination of the Agreement or if there are amounts overpaid to the Contractor, the Customer has the right to send the Contractor an application for refund of such funds to its settlement account. The application is sent to the Contractor by clicking the «Withdraw» button in the «Finance» section of the PA, if such technical availability exists in the PA. The Contractor may also refund the funds to the Ozon Balance from which they were previously withheld.
 
-4.7.2. Refund is made less the cost of already ordered and/or rendered services, as well as amounts of the Customer’s existing debt to the Contractor.
+**4.7.2. **Refund is made less the cost of already ordered and/or rendered services, as well as amounts of the Customer’s existing debt to the Contractor.
 
-4.8. The Customer’s payment obligations may be terminated in whole or in part by set-off of a counter monetary claim, including under other agreements between the Parties or monetary claims.
+**4.8.** The Customer’s payment obligations may be terminated in whole or in part by set-off of a counter monetary claim, including under other agreements between the Parties or monetary claims.
 
-4.9. If set-off of counter monetary claims is not carried out, the Customer pays for Services in accordance with the terms of the Agreement.
+**4.9.** If set-off of counter monetary claims is not carried out, the Customer pays for Services in accordance with the terms of the Agreement.
 
 ## 5. Acceptance of services and reporting documents
 
-5.1. The volume of actually rendered Services is confirmed by Reporting Documents (UPD-1 – for resident Customers; Work/Service Completion Act — for non-resident Customers), prepared on the basis of the Contractor’s statistics data. Statistics data are available to the Customer in the Personal Account in self-service mode.
+**5.1. **The volume of actually rendered Services is confirmed by Reporting Documents (UPD-1 – for resident Customers; Work/Service Completion Act — for non-resident Customers), prepared on the basis of the Contractor’s statistics data. Statistics data are available to the Customer in the Personal Account in self-service mode.
 
-5.2. The Contractor sends the Customer Reporting Documents within 5 business days from the end date of the Reporting Period, but not later than the 8th day. Reporting Documents are formed for each Personal Account within which Services were rendered to the Customer.
+**5.2.** The Contractor sends the Customer Reporting Documents within 5 business days from the end date of the Reporting Period, but not later than the 8th day. Reporting Documents are formed for each Personal Account within which Services were rendered to the Customer.
 
-5.3. Within 5 business days after the Contractor sends the Reporting Documents, the Customer must:
+5**.3. **Within 5 business days after the Contractor sends the Reporting Documents, the Customer must:
 
 (a) in the absence of disagreements — sign the documents on its side; or
 
@@ -838,13 +1074,13 @@ If the Customer does not sign the Reporting Documents within the established per
 
 (b) due confirmation of the Customer’s agreement to all amounts and other conditions specified in them and due basis for payment.
 
-5.4. The Customer’s request to change the name of the Service in UPD-1 is not a reasoned refusal to sign it. Names of Services in UPD-1 are not subject to change.
+**5.4.** The Customer’s request to change the name of the Service in UPD-1 is not a reasoned refusal to sign it. Names of Services in UPD-1 are not subject to change.
 
-5.5. Reporting Documents are an integral part of the Agreement. The Parties exchange Reporting Documents via electronic document management (EDM) or in the PA with non-resident Customers, and Reconciliation Acts at the end of each calendar quarter no later than the 15th day of the following month in the PA for the past calendar quarter. The Parties acknowledge that such documents have full legal force.
+**5.5.** Reporting Documents are an integral part of the Agreement. The Parties exchange Reporting Documents via electronic document management (EDM) or in the PA with non-resident Customers, and Reconciliation Acts at the end of each calendar quarter no later than the 15th day of the following month in the PA for the past calendar quarter. The Parties acknowledge that such documents have full legal force.
 
 ## 6. Suspension and refusal to provide services
 
-6.1. The Contractor has the right to suspend provision of any of the Services without applying liability measures to it if:
+**6.1. **The Contractor has the right to suspend provision of any of the Services without applying liability measures to it if:
 
 the Customer has debt to the Contractor for previously rendered Services, including under other agreements;
 
@@ -860,13 +1096,13 @@ Additional grounds for suspension and refusal applicable to individual Services 
 
 ## 7. Liability of the parties
 
-7.1. The Parties are liable for violation of their obligations under the Agreement, obligations related to it, and for causing harm in the manner and within the limits provided by the Agreement. In the part not regulated by the Agreement, the norms of the legislation of the Russian Federation apply.
+**7.1.** The Parties are liable for violation of their obligations under the Agreement, obligations related to it, and for causing harm in the manner and within the limits provided by the Agreement. In the part not regulated by the Agreement, the norms of the legislation of the Russian Federation apply.
 
-7.2. Upon termination of the Agreement, the obligation remains in force in relation to actions (inactions) committed before the moment of termination.
+**7.2.** Upon termination of the Agreement, the obligation remains in force in relation to actions (inactions) committed before the moment of termination.
 
-7.3. The Customer must independently settle claims of third parties, state and/or municipal bodies presented to the Contractor in any form, ensure protection of the Contractor’s interests and shield the Contractor from adverse consequences related to them, if the basis for their presentation was actions (inactions) of the Customer and/or third parties engaged by it.
+**7.3.** The Customer must independently settle claims of third parties, state and/or municipal bodies presented to the Contractor in any form, ensure protection of the Contractor’s interests and shield the Contractor from adverse consequences related to them, if the basis for their presentation was actions (inactions) of the Customer and/or third parties engaged by it.
 
-7.4. The Customer must compensate the Contractor for losses and caused harm if they arose due to actions (inactions) of the Customer and/or third parties engaged by it, including in case of:
+**7.4. **The Customer must compensate the Contractor for losses and caused harm if they arose due to actions (inactions) of the Customer and/or third parties engaged by it, including in case of:
 
 (a) violation of third-party rights, including intellectual rights;
 
@@ -882,7 +1118,7 @@ Additional grounds for suspension and refusal applicable to individual Services 
 
 (g) occurrence of other adverse consequences.
 
-7.5. The Customer must compensate the Contractor for property losses caused by any circumstances related to the Customer’s activities on the Platform, as well as upon occurrence of civil, administrative or tax liability.
+**7.5.** The Customer must compensate the Contractor for property losses caused by any circumstances related to the Customer’s activities on the Platform, as well as upon occurrence of civil, administrative or tax liability.
 
 At the same time, compensation is made in accordance with Art. 406.1 of the Civil Code of the Russian Federation, regardless of the presence of culpable actions (inactions) of the Customer and/or third parties engaged by it and causal connection with such losses.
 
@@ -896,19 +1132,19 @@ The amount of compensation by the Customer for property losses, depending on the
 
 Supporting documents include, but are not limited to: final and binding court decisions, writs of execution, decisions, orders and other official acts issued by state or municipal authorities, payment documents, third-party claims, documents on the settlement of claims and other documents confirming the amount of property losses or the Contractor's obligation to bear them.
 
-7.6. Losses, caused harm, property losses and other amounts subject to compensation by the Customer are accrued and paid on the basis of a demand sent by the Contractor in the PA or to the Email.
+**7.6.** Losses, caused harm, property losses and other amounts subject to compensation by the Customer are accrued and paid on the basis of a demand sent by the Contractor in the PA or to the Email.
 
 The Customer has the right to submit reasoned objections within 5 calendar days after the demand is sent, otherwise it is deemed agreed by the Customer in the Contractor’s version.
 
 **7.7. Penalties**
 
-7.7.1. In case of non-performance or improper performance of obligations under the Agreement, the Customer pays the Contractor a penalty specified in the relevant Appendix to the Agreement.
+**7.7.1.** In case of non-performance or improper performance of obligations under the Agreement, the Customer pays the Contractor a penalty specified in the relevant Appendix to the Agreement.
 
 The Contractor sends the Customer a Notice of intention to apply a penalty. The Customer has the right within 7 days after receipt of the Notice to send objections and provide evidence of absence of violation.
 
 The penalty is not paid if the Customer timely sent objections and the Contractor considered them reasoned.
 
-7.7.2. For violation of payment terms for Services, the Contractor has the right to recover from the Customer a late payment penalty in the amount of 0.1% of the debt amount for each day of delay, but not more than 10% of the total cost of Services.
+**7.7.2**. For violation of payment terms for Services, the Contractor has the right to recover from the Customer a late payment penalty in the amount of 0.1% of the debt amount for each day of delay, but not more than 10% of the total cost of Services.
 
 ## 8. Confidentiality
 
@@ -935,21 +1171,21 @@ Confidential information of the Contractor may potentially contain insider infor
 
 ## 9. Force majeure circumstances
 
-9.1. A Party is released from liability for full or partial non-performance of obligations under the Agreement if such non-performance resulted from force majeure circumstances arising after conclusion of the Agreement, including floods, earthquakes, military actions, strikes, acts of state bodies.
+**9.1.** A Party is released from liability for full or partial non-performance of obligations under the Agreement if such non-performance resulted from force majeure circumstances arising after conclusion of the Agreement, including floods, earthquakes, military actions, strikes, acts of state bodies.
 
-9.2. A Party for which impossibility of performance of obligations due to force majeure has arisen must, within five days (if technically possible) from the moment of occurrence of the relevant circumstances, notify the other Party in writing of the occurrence and cessation of force majeure. Failure to notify or untimely notification deprives the Party of the right to refer to force majeure as a basis for release from liability.
+**9.2.** A Party for which impossibility of performance of obligations due to force majeure has arisen must, within five days (if technically possible) from the moment of occurrence of the relevant circumstances, notify the other Party in writing of the occurrence and cessation of force majeure. Failure to notify or untimely notification deprives the Party of the right to refer to force majeure as a basis for release from liability.
 
-9.3. The Parties must take all possible measures to maximally limit negative consequences of force majeure circumstances. Confirmation of occurrence of force majeure is a certificate issued by a competent body.
+**9.3.** The Parties must take all possible measures to maximally limit negative consequences of force majeure circumstances. Confirmation of occurrence of force majeure is a certificate issued by a competent body.
 
-9.4. Upon occurrence of force majeure, the term for performance of the Parties’ obligations is proportionately postponed. If force majeure circumstances continue for more than 3 months in a row, each Party has the right to terminate the Agreement, and neither Party is liable for losses of the other Party arising in connection with such termination.
+**9.4.** Upon occurrence of force majeure, the term for performance of the Parties’ obligations is proportionately postponed. If force majeure circumstances continue for more than 3 months in a row, each Party has the right to terminate the Agreement, and neither Party is liable for losses of the other Party arising in connection with such termination.
 
 ## 10. Communication and notices
 
-10.1. The Contractor has the right to send the Customer system notifications necessary for performance of the Agreement.
+**10.1.** The Contractor has the right to send the Customer system notifications necessary for performance of the Agreement.
 
-10.2. The Contractor has the right to send the Customer informational and marketing messages (announcements of Promotions, invitations to participate in research, recommendations, etc.).
+**10.2.** The Contractor has the right to send the Customer informational and marketing messages (announcements of Promotions, invitations to participate in research, recommendations, etc.).
 
-10.3. Unless the Agreement expressly provides otherwise, any official communication between the Parties and all notices under the Agreement:
+**10.3.** Unless the Agreement expressly provides otherwise, any official communication between the Parties and all notices under the Agreement:
 
 (a) are drawn up in the form of electronic messages in Russian;
 
@@ -959,7 +1195,7 @@ Confidential information of the Contractor may potentially contain insider infor
 
 The Customer undertakes to regularly check the PA and email. The Contractor is not responsible for any negative consequences in connection with the Customer’s untimely familiarization with notifications.
 
-10.4. Change of addresses and details
+**10.4.** Change of addresses and details
 
 The Parties must inform each other about changes in their legal addresses, details, telephone numbers and email addresses, and the Customer must inform the Contractor about changes in the taxation system within 1 business day from the date of changes. The Contractor enters changes in payment details within 7 calendar days from the date of notification.
 
@@ -1041,7 +1277,7 @@ and will not result in non-performance of obligations under any such agreement o
 
 ## 12. Applicable law and jurisdiction
 
-12.1. The Agreement is governed by and shall be construed in accordance with the legislation of the Russian Federation.
+**12.1.** The Agreement is governed by and shall be construed in accordance with the legislation of the Russian Federation.
 
 The Parties will make all efforts to resolve any disputes and disagreements arising between them under or in connection with the Agreement through negotiations.
 
@@ -1059,7 +1295,7 @@ Such protocols include, but are not limited to: files, electronic protocols, jou
 
 ## 13. Electronic signature in the PA and EDM
 
-13.1. A simple electronic signature (SES) is an electronic signature that, through the use of codes, passwords or other means, confirms the fact of formation of an electronic document by the Customer or the Contractor performing actions in the PA.
+**13.1.** A simple electronic signature (SES) is an electronic signature that, through the use of codes, passwords or other means, confirms the fact of formation of an electronic document by the Customer or the Contractor performing actions in the PA.
 
 The SES key is a unique sequence of symbols intended for creating an electronic signature. In relation to SES, the role of the SES key is performed by codes, passwords and other means or their combination. SES is created by the Customer in Ozon’s information system when confirming actions in the PA using the SES key: password upon successful authentication of the Customer in the PA or entry of a digital code received by the Customer by SMS, including during authentication via Ozon ID. The Customer must maintain confidentiality of the SES key.
 
@@ -1079,37 +1315,37 @@ on the fact of making changes to the Electronic document – on the Party assert
 
 on the fact of receipt by one of the Parties of an electronic message signed with SES – on the Party disputing such fact.
 
-13.2. Applies only to resident Customers: Use of EDM is mandatory for the Parties when agreeing Reporting Documents. Signing of documents is carried out through EDM systems specified in the PA.
+**13.2. **Applies only to resident Customers: Use of EDM is mandatory for the Parties when agreeing Reporting Documents. Signing of documents is carried out through EDM systems specified in the PA.
 
-13.3. If the Customer for any reason is not connected to the EDM system, the Customer assumes responsibility for all possible negative consequences in connection with its lack of such connection.
+**13.3.** If the Customer for any reason is not connected to the EDM system, the Customer assumes responsibility for all possible negative consequences in connection with its lack of such connection.
 
-13.4. The Parties acknowledge that sending Reporting Documents in the PA is necessary and sufficient confirmation of:
+**13.4.** The Parties acknowledge that sending Reporting Documents in the PA is necessary and sufficient confirmation of:
 
 (a) proper performance by the Contractor of the obligation to send Reporting Documents;
 
 (b) acceptance of rendered services in full in the absence of disagreements from the Customer sent in the manner provided by the Agreement.
 
-13.5. The Parties recognize the data of the Contractor’s accounting systems displayed in the PA as the priority reliable source of information on performance of the Parties’ obligations under the Agreement.
+**13.5.** The Parties recognize the data of the Contractor’s accounting systems displayed in the PA as the priority reliable source of information on performance of the Parties’ obligations under the Agreement.
 
 ## 14. Other terms
 
-14.1. The Customer has no right to assign and/or transfer by other means rights and/or obligations under the Agreement to third parties without prior consent of the Contractor. The Contractor has the right to assign and/or transfer by other means its rights under the Agreement to any third parties without consent of the Customer.
+**14.1.** The Customer has no right to assign and/or transfer by other means rights and/or obligations under the Agreement to third parties without prior consent of the Contractor. The Contractor has the right to assign and/or transfer by other means its rights under the Agreement to any third parties without consent of the Customer.
 
-14.2. The Agreement contains complete and exhaustive terms regarding its subject and replaces all previous oral or written agreements between the Parties. The Contractor does not give and does not assume any other representations, warranties or obligations, except those expressly provided in the Agreement.
+**14.2.** The Agreement contains complete and exhaustive terms regarding its subject and replaces all previous oral or written agreements between the Parties. The Contractor does not give and does not assume any other representations, warranties or obligations, except those expressly provided in the Agreement.
 
-14.3. Invalidity of individual provisions of the Agreement does not affect validity of the remaining provisions of the Agreement and the Agreement as a whole.
+**14.3.** Invalidity of individual provisions of the Agreement does not affect validity of the remaining provisions of the Agreement and the Agreement as a whole.
 
-14.4. The Contractor has the right, at its own discretion, to fulfill obligations under the Agreement with the involvement of third parties.
+**14.4.** The Contractor has the right, at its own discretion, to fulfill obligations under the Agreement with the involvement of third parties.
 
-14.5. Transactions made by the Parties through actions in the Personal Account are recognized as made in simple written form using a simple electronic signature.
+**14.5.** Transactions made by the Parties through actions in the Personal Account are recognized as made in simple written form using a simple electronic signature.
 
-14.6. A scanned copy of a document transmitted by email is recognized by the Parties as an original until receipt of the original copy of the document.
+**14.6.** A scanned copy of a document transmitted by email is recognized by the Parties as an original until receipt of the original copy of the document.
 
-14.7. For resident Customers: when the Parties use electronic document management, documents are transmitted through an EDM provider and certified with an electronic signature.
+**14.7. **For resident Customers: when the Parties use electronic document management, documents are transmitted through an EDM provider and certified with an electronic signature.
 
-14.8. This Agreement is drawn up in Russian and English. In the event of any discrepancies, contradictions or inconsistencies between versions of the Agreement, the Russian version shall prevail.
+**14.8.** This Agreement is drawn up in Russian and English. In the event of any discrepancies, contradictions or inconsistencies between versions of the Agreement, the Russian version shall prevail.
 
-14.9. Unless other terms are expressly provided by the Agreement, in the part not contradicting the Agreement, the provisions of the «Standard Clauses» section posted at [https://docs.ozon.ru/legal/partners/standard-clauses/](https://docs.ozon.ru/legal/partners/standard-clauses/) apply to relations of the Parties. The «Standard Clauses» section is considered an integral part of the Agreement.
+**14.9.** Unless other terms are expressly provided by the Agreement, in the part not contradicting the Agreement, the provisions of the «Standard Clauses» section posted at [https://docs.ozon.ru/legal/partners/standard-clauses/](https://docs.ozon.ru/legal/partners/standard-clauses/) apply to relations of the Parties. The «Standard Clauses» section is considered an integral part of the Agreement.
 
 ## Terms and definitions
 
@@ -1151,9 +1387,7 @@ The terms used in this Agreement have the following meanings:
 
 **Services** — services provided by the Contractor to the Customer under this Agreement, including Services specified in the relevant Appendix to the Agreement. The full list of Services, including cost, is determined by the price list, Appendices to the Agreement and PA functionality.
 
-**Email** — email address of the recipient of an electronic message:
-
-for the Customer — the address specified in the PA in the field «Email for receiving notifications» for the user under the role «Manager».
+**Email** — email address of the recipient of an electronic message: for the Customer — the address specified in the PA in the field «Email for receiving notifications» for the user under the role «Manager».
 
 # Appendix No. 1
 
@@ -1244,8 +1478,244 @@ Detailed terms and description of functions for Customers from other countries a
 
 3.5. In addition to the grounds provided by the General Provisions, the Contractor has the right to suspend or terminate provision of access to the Analytics in case of violation by the Customer of the terms of this section.
 
-## 4. Terms and definitions
+## Terms and definitions
 
-**«Extended Analytics» / Analytics** — a computer algorithm whose functionality allows, in particular but not limited to, automated processing and analytics of various categories of data across a wide list of parameters and their subsequent visualization for improvement of Customers’ business processes. The right holder of the Analytics is the Contractor.
+**«Extended Analytics»/Analytics** — a computer algorithm whose functionality allows, in particular but not limited to, automated processing and analytics of various categories of data across a wide list of parameters and their subsequent visualization for improvement of Customers’ business processes. The right holder of the Analytics is the Contractor.
 
 **Access to analytics Services** — services for providing the Customer with access to the Analytics, provided on the terms of the General Provisions and Appendix No. 1 to the Agreement.
+
+# Appendix No. 2
+
+Effective from December 1, 2026.
+
+## 1. General provisions on advertising placement
+
+**1.1.** The Contractor undertakes to provide the Customer with Services using software for placing and distributing the Customer’s Advertising and Information Materials within the Ozon Advertising Network, and the Customer undertakes to pay for such Services in accordance with the procedure and on the terms and conditions stipulated by the Agreement and this Appendix.
+
+**1.2.** The AIM shall be placed on the terms determined by the Customer in the Personal Account, including the parameters, format, placement location, bid and budget.
+
+**1.3.** The Customer shall be solely responsible for the content and accuracy of the AIM and for their compliance with the requirements of advertising legislation.
+
+**1.4. **When agreeing with the Contractor on the provision of Advertising Placement Services, the Customer undertakes to be guided by the [Ozon Advertising Placement Policy](https://performance-help.ozon.ru/trebovaniya).
+
+## 2. Advertising placement procedure
+
+**2.1.** The Customer shall independently set the placement parameters in the Personal Account, including the advertising campaign name, description, period of provision of the Services, format and placement location, target audience, bid and budget.
+
+**Placement under CPC and CPM Models**
+
+**2.2.** When placing advertisements under the CPC and CPM models, the Customer shall independently select the following in the Personal Account:
+
+– parameters available in the Personal Account;
+
+– a cost-per-click bid (for the CPC model) or a bid per 1,000 impressions (for the CPM model), inclusive of VAT. If the Customer has not set a bid, the competitive bid specified in the Personal Account shall apply automatically, provided that the relevant setting is available in the Personal Account.
+
+The minimum bid is specified in the Personal Account and may be changed unilaterally by the Contractor.
+
+The Customer shall independently determine the daily budget in the Personal Account, within which the Service will be provided.
+
+The higher the bid, the greater the likelihood that the AIM will be displayed.
+
+The Customer agrees that if the minimum bid increases during a period when the advertising campaign has the status «Active», the remuneration shall be calculated on the basis of the increased bid.
+
+– the format and placement location.
+
+**2.3.** All material terms and conditions of the Services shall be deemed agreed upon by the Parties once the advertising campaign is changed to the status «Active» in the Personal Account.
+
+**2.4. **The Customer may terminate the provision of the Services early by changing the advertising campaign to the status «Inactive» in the Personal Account.
+
+**2.5.** The Contractor does not guarantee that the AIM will be displayed in the specific advertising placements selected by the Customer. Impressions are allocated based on the results of an auction held by the Ozon Advertising Network in real time when a user loads a page. The AIM of the Customer who has offered the highest bid is displayed at the bid set by that Customer when creating the advertising campaign in the Personal Account.
+
+**Marketing Requests**
+
+**2.6.** In the «Marketing Requests» section, the Parties may agree on the provision of other advertising services within the Ozon Advertising Network that are not available in self-service mode, in accordance with the following procedure:
+
+– the Customer submits a Request to the Contractor specifying the required services, time frames and other material terms and conditions;
+
+– the Contractor assesses whether the Services can be provided and determines the material terms and conditions;
+
+– the Customer confirms the Request in the Personal Account before the date on which the provision of the Services begins.
+
+2.7. Confirmation of a Request in the “Marketing Requests” section using the functionality of the Personal Account constitutes the Customer’s full and unconditional acceptance of its terms and conditions. Services under this section are provided with the involvement of a representative of the Contractor.
+
+**Testing and Experiments**
+
+**2.8.** The Contractor may conduct tests and experiments, including:
+
+– testing new types of Services or Personal Account functionality;
+
+– changing and supplementing the formats and conditions for displaying AIM;
+
+– changing the algorithms used to display AIM.
+
+**2.9.** The Contractor shall notify the Customer in advance of tests and experiments by sending a notice to the email address provided during registration and/or by posting a notification in the Personal Account.
+
+**Additional Features**
+
+**2.10.** By using the «Generate Banner» feature in the Personal Account, the Customer agrees that the Contractor is not an advertising producer within the meaning of Federal Law No. 38-FZ of March 13, 2006 «On Advertising». The «Generate Banner» feature is a technical function and does not take into account the requirements of advertising legislation. If the Customer has created AIM using the «Generate Banner» feature, the Customer must check the advertising material for compliance with the requirements of advertising legislation before placing the advertisement.
+
+## 3. Advertising and information materials
+
+**3.1. **The Customer shall provide the Contractor with the AIM, as well as the documents and information required for the provision of the Services, at least one business day before the date on which the provision of the Services begins.
+
+**3.2.** The Customer shall provide the Contractor with documents confirming the rights to use the intellectual property objects included in the AIM within three days of receipt of the relevant request.
+
+**3.3.** At the Contractor’s request, the Customer shall provide certified copies of licences, certificates of conformity, certificates of state registration and other documents where the AIM contain advertisements for goods (works or services) subject to mandatory certification, registration or licensing.
+
+**3.4. **The Contractor may review the AIM and accompanying documents. The Contractor may refuse to accept the AIM if they:
+
+– do not comply with the requirements of advertising legislation or other applicable laws;
+
+– do not meet the Contractor’s technical requirements;
+
+– show signs of improper advertising or violate moral or ethical standards;
+
+– are provided in breach of the time limits established by this Section.
+
+**3.5.** The Customer may revise the AIM or replace them with new materials. If the revised AIM are resubmitted, the date on which the provision of the Services begins shall be postponed accordingly, without any penalties being imposed on the Contractor.
+
+**3.6.** The Customer shall be fully responsible for the content and accuracy of the information contained in the AIM, including ensuring that individuals’ consent has been obtained for the use of their images and for the processing of their personal data by the Contractor and the persons engaged by it. Under no circumstances shall the Contractor be liable to government authorities or third parties for the inaccuracy of the advertising information published.
+
+**3.7.** If government authorities or third parties make complaints, demands or claims against the Contractor in connection with violations in the Customer’s AIM, the Customer shall compensate the Contractor for property losses (within the meaning of Article 406.1 of the Civil Code of the Russian Federation) incurred or inevitably to be incurred by the Contractor in the future in connection with such complaints, demands or claims. The amount of such property losses shall be deemed equal to:
+
+– the amount claimed by the government authority or third party, including fines, late-payment penalties and contractual penalties;
+
+– the amount of the Contractor’s legal costs relating to such complaints or claims.
+
+**3.8. **The Customer shall independently resolve all matters relating to securing copyright and related rights in respect of IP Objects included in the AIM. The Customer guarantees that the Contractor shall be held harmless from any liability to rights holders arising in connection with the use of such IP Objects in the AIM.
+
+**Use of DMP Segments**
+
+**3.9.** The Customer may target advertising campaigns at DMP segments of users of the Ozon Website. To create a DMP segment, the Contractor shall engage a third party, LLC “Internet Solutions” (Primary State Registration Number (PSRN) 1027739244741), pursuant to paragraph two of Clause 3 of Article 308 of the Civil Code of the Russian Federation. LLC «Internet Solutions» is the owner of the Ozon Website and an operator processing the personal data of users of the Ozon Website.
+
+**3.10. **The Customer shall upload audience identifiers to the Personal Account in the form and format specified in the Personal Account (for example, telephone numbers). LLC «Internet Solutions» receives such identifiers and checks whether they belong to customers of LLC «Internet Solutions». If the identifiers belong to customers of LLC «Internet Solutions», a corresponding DMP segment is created and displayed in the Personal Account, and the Customer may target advertising campaigns at that segment. The Contractor does not process the identifiers: LLC «Internet Solutions» processes the data received for the purpose of creating a DMP segment independently and on its own behalf.
+
+**3.11.** By providing the identifiers, the Customer guarantees to the Contractor and LLC «Internet Solutions» that:
+
+– the Customer has collected the identifiers in accordance with applicable law;
+
+– there are lawful grounds for the Customer to transfer the identifiers to LLC «Internet Solutions» and for LLC «Internet Solutions» subsequently to process those identifiers for the purpose of creating a DMP segment;
+
+– personal data subjects have been notified of the processing of their personal data in accordance with Part 3 of Article 18 of the Federal Law «On Personal Data».
+
+**3.12.** If the use by LLC «Internet Solutions» of identifiers received from the Customer to create a DMP segment gives rise to complaints, lawsuits or orders against LLC «Internet Solutions» or the Contractor by third parties, the Customer undertakes to compensate all property losses (within the meaning of Article 406.1 of the Civil Code of the Russian Federation) incurred or inevitably to be incurred in the future by LLC «Internet Solutions» for the Contractor.
+
+## 4. Advertising labelling
+
+**4.1.** In fulfilling its duties as an advertising system operator under Article 18.1 of Federal Law No. 38-FZ of 13 March 2006 «On Advertising», the Contractor shall:
+
+– obtain an advertising identifier (erid) from an Advertising Data Operator (ADO) in a timely manner, before the Customer’s AIM are placed;
+
+– submit to Roskomnadzor, via an ADO, the advertising information specified in Order No. 1362-r of the Government of the Russian Federation dated 30 May 2022;
+
+– add the label «Реклама» («Advertisement») and an indication of the advertiser to the AIM before their distribution, if such information has not already been added.
+
+**4.2. **The Customer undertakes to provide the Contractor with true and accurate information required for advertising labelling and the transmission of information to the ADO, including, without limitation, information about the advertiser, the advertised item, agreements, advertising identifiers, volume, period and other distribution parameters.
+
+**4.3.** The Customer has been informed and agrees that the information provided by the Customer during registration and in the Personal Account will be used for the purposes of submitting information to the ADO.
+
+**4.4.** When ordering certain Services, the Customer may be required to specify the category of the advertised goods (works or services) for transmission of this information via the ADO. The Customer shall be responsible for the accuracy of the category specified and shall compensate the Contractor for losses if the Contractor is held administratively liable due to the incorrect specification of the category.
+
+**4.5.** The Customer may send the Contractor a written request to amend previously submitted information. The Contractor may make such amendments only if all of the following conditions are met simultaneously:
+
+– the amendments are permitted under the laws of the Russian Federation, including the requirements for advertising labelling and the submission of information to the Unified Register of Online Advertising (ERIR);
+
+– the amendments are technically feasible in view of the capabilities of the ADO;
+
+– the amendments do not conflict with the requirements of ERIR and Roskomnadzor, including requirements concerning the content, deadlines and procedure for submitting information.
+
+**4.6.** The Contractor does not undertake to amend previously submitted information and shall not be liable for refusing to make such amendments where the refusal is due to the requirements of the law, the ADO, ERIR or Roskomnadzor, or to technical limitations.
+
+**4.7. **By submitting a request to amend information, the Customer guarantees that the request:
+
+– is made solely to correct errors or update previously submitted information;
+
+– is not intended to circumvent or distort the requirements of advertising legislation;
+
+– does not alter the actual circumstances of advertising distribution (dates, volume, format and terms), unless otherwise permitted by law.
+
+**4.8.** The Customer shall retain, independently and at its own expense, documents confirming the accuracy of the information provided to the Contractor (both the original and amended information) for the periods prescribed by law. At the request of the Contractor or competent government authorities, the Customer shall provide such documents without delay.
+
+**4.9.** If government authorities, including Roskomnadzor, bring claims against the Contractor or impose fines, late-payment penalties or other measures of liability on the Contractor, directly or indirectly in connection with the Customer’s submission of false or incorrect information or with amendments made at the Customer’s request, the Customer shall compensate the Contractor in full for all losses incurred, including fines, late-payment penalties, legal costs and other documented expenses.
+
+## 5. Intellectual property
+
+**5.1.** The Contractor shall assign to the Customer all exclusive rights to the AIM produced, in their entirety, upon payment for the Services. The remuneration for the assignment of exclusive rights is included in the price of the Services and amounts to 1% of the price of the Services as a result of which the AIM were created.
+
+**5.2.** In accordance with Clause 2 of Article 1296 of the Civil Code of the Russian Federation, the Contractor may use the AIM for its own purposes under a royalty-free, simple (non-exclusive) licence for the entire term of the exclusive right to them.
+
+**5.3.** The Customer acknowledges that the trademarks registered in the name of the Contractor and Ozon group companies are and shall remain the intellectual property of their respective owners, and that the provision of AIM production services does not entail the transfer to the Customer of any rights to the aforementioned subject matter.
+
+**5.4.** If, in performing the Agreement, the Customer grants the Contractor the right to use IP Objects, including trademarks and logos, for the provision of the Services, the Customer represents and warrants that:
+
+– the Customer is the lawful rights holder of the IP Objects or grants the right to use the IP Objects on other lawful grounds;
+
+– the Contractor is entitled to use the IP Objects on the terms of the Agreement during its term;
+
+– the grant of the right to use the IP Objects and the use of the IP Objects do not infringe, and will not infringe throughout the entire period of use, the rights of third parties.
+
+**5.5.** If, in performing the Agreement, the Customer assigns rights to IP Objects to the Contractor, the Customer represents and warrants that:
+
+– the Customer has paid remuneration to the authors of the IP Objects;
+
+– the Customer has obtained permission for anonymous use, disclosure to the public and modification of the IP Objects;
+
+– the exclusive rights to the IP Objects are not encumbered by third-party rights;
+
+– the IP Objects, the assignment of exclusive rights to the IP Objects and the use of the IP Objects throughout the term of the exclusive rights do not infringe the rights of third parties.
+
+## 6. Bonuses and promotions
+
+**6.1. **The Contractor may, at its sole discretion, organise and conduct promotional events (hereinafter, «Promotions»), in which the Customer may participate by performing the actions specified in the terms and conditions of the relevant Promotion.
+
+**6.2. **As part of Promotions, the Contractor may award the Customer display advertising bonuses (hereinafter, «Bonuses») for performing the actions stipulated by the terms of a Promotion. The Contractor shall independently determine the actions for which Bonuses are awarded, the amount of Bonuses, the terms and conditions for awarding them, and the procedure for recording and confirming them.
+
+**6.3.** The terms and conditions of Promotions, including the procedure for participation and the award and use of Bonuses, shall be determined exclusively by the Contractor and shall not require the Customer’s approval. The Contractor may unilaterally amend the terms and conditions of Promotions, suspend or discontinue them, and cancel Bonuses that have been awarded but not used.
+
+**6.4.** Bonuses entitle the Customer to a discount when ordering Services at the rate of 1 Bonus = 1 rouble. Bonuses are used daily until they are exhausted or expire. The Contractor shall unilaterally determine the Services to which a discount funded by Bonuses may be applied and the maximum amount of that discount. The Contractor shall state in the Universal Transfer Document (UTD) the actual amount of remuneration payable for the Services, taking into account the discount applied.
+
+**6.5.** Bonuses are not a means of payment, have no monetary equivalent and cannot be exchanged for cash. Bonuses may be used only in accordance with the procedure and on the terms and conditions established by the Contractor.
+
+## 7. Suspension, refusal and liability in relation to display advertising
+
+**7.1.** In addition to the grounds set out in the General Provisions, the Contractor may suspend the provision of Advertising Placement Services if:
+
+– the Customer has not provided certificates, licences or other documents confirming compliance with applicable law;
+
+– the Customer has submitted the AIM after the prescribed deadlines;
+
+– the placement of the AIM, in the Contractor’s opinion, is contrary to legal requirements or has given rise, or may give rise, to allegations of infringement of third-party rights, until the matters in dispute are resolved;
+
+– the Contractor has received complaints, demands or claims from third parties in connection with the Customer’s AIM.
+
+**7.2. **The Contractor may refuse to provide Advertising Placement Services to the Customer if:
+
+– the AIM are contrary to applicable law, show signs of improper advertising or do not comply with moral or ethical standards;
+
+– the Customer has failed to remedy defects in the AIM identified by the Contractor within the prescribed time limits;
+
+– the AIM contain IP Objects whose use infringes the rights of third parties.
+
+**7.3.** The Contractor’s refusal to provide the Services shall not deprive the Customer of the right to remedy the defects and request the provision of the Services again.
+
+## Terms and definitions
+
+**Display Advertising** — means advertising in the form of images or videos placed within the Ozon Advertising Network in the «Banner», «Video Banner» and other formats available in the Personal Account.
+
+**CPC Model (from «cost per click»)** — means a model for monetising the Services under which their price is calculated based on the cost of one click. The Contractor’s remuneration is determined by multiplying the number of clicks by the Customer’s bid.
+
+**CPM Model** **(from «cost per mille»)** — means a model for monetising the Services under which their price is calculated based on the cost of 1,000 impressions.
+
+**Advertised Item** — means goods, works, services, products, means of individualisation, the manufacturer or seller of goods, results of intellectual activity, or an event to which an Advertising Campaign is intended to draw attention.
+
+**ADO/Advertising Data Operator** — means the owner of software authorised by Roskomnadzor to record online advertising and provide the relevant information to Roskomnadzor. Under this Agreement, information about placed advertising is submitted through LLC «OZON ORD» (Primary State Registration Number (PSRN) 1227700360216; registered address: Moscow, Presnenskaya Embankment, Building 10, 42 Floor, Room 7).
+
+**Impression** — means a single display of AIM to a visitor to the Ozon Website or the Ozon mobile application.
+
+**Ozon Advertising Network** — means the Contractor’s advertising system comprising advertising placements on third-party websites and mobile applications, together with the hardware, software and services enabling the placement and display of Display Advertising.
+
+**Advertising and Information Materials/AIM** — means the Customer’s advertising information provided to the Contractor for placement within the Ozon Advertising Network.
+
+**Advertising Campaign** — means a set of placements of the Customer’s AIM arranged through the Personal Account on the terms and conditions agreed by the Parties.
+
+**Advertising Placement Services** — means services for placing and distributing the Customer’s AIM within the Ozon Advertising Network using software, provided on the terms of the General Provisions and Appendix No. 2 to the Agreement.
