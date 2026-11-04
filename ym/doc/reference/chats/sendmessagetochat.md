@@ -2,8 +2,8 @@
 title: Отправка сообщения
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/chats/sendMessageToChat.md"
-fetched_at: "2026-10-31T02:48:01Z"
-content_sha: 733ee95ff28e9c85
+fetched_at: "2026-11-04T02:55:30Z"
+content_sha: de13158a87c2adb2
 ---
 
 ---
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/chats/sendMessageToChat.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21887165
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21924375
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21887165
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21924375
 
 <!-- source: ru/api/chats/sendMessageToChat.md -->
 <div class="openapi">

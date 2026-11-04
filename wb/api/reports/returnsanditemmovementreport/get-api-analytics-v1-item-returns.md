@@ -3,13 +3,13 @@ title: Получить отчёт
 api: wb-reports
 method: GET
 path: /api/analytics/v1/item-returns
-operation_id: getV1GoodsReturn
+operation_id: getV1ItemReturns
 tags:
   - returnsAndItemMovementReport
 spec_version: reports
 source: "https://dev.wildberries.ru/docs/openapi/reports"
 deprecated: false
-content_sha: b63e632253b04917
+content_sha: f33164791798cb35
 ---
 
 # Получить отчёт
@@ -84,6 +84,11 @@ content_sha: b63e632253b04917
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
+
+**402** — Требуется платёж
+
+- `title` — string. Заголовок ошибки
+- `detail` — string. Детали ошибки. Ошибка возвращается только сервисам из [Каталога решений для бизнеса](/business-solutions)
 
 **429** — Слишком много запросов
 

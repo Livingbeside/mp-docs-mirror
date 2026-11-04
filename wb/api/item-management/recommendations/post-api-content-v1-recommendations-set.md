@@ -9,7 +9,7 @@ tags:
 spec_version: items
 source: "https://dev.wildberries.ru/docs/openapi/item-management"
 deprecated: false
-content_sha: f4e26c54f72870e3
+content_sha: d1460eee8ec9d9e5
 ---
 
 # Установить рекомендации для товаров
@@ -75,6 +75,11 @@ content_sha: f4e26c54f72870e3
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
+
+**402** — Требуется платёж
+
+- `title` — string. Заголовок ошибки
+- `detail` — string. Детали ошибки. Ошибка возвращается только сервисам из [Каталога решений для бизнеса](/business-solutions)
 
 **403** — Доступ запрещён
 

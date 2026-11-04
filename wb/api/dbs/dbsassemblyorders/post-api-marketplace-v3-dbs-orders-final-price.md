@@ -9,7 +9,7 @@ tags:
 spec_version: dbs
 source: "https://dev.wildberries.ru/docs/openapi/dbs"
 deprecated: false
-content_sha: 74012b754fa8005e
+content_sha: bd79d1b62b95dcff
 ---
 
 # Получить цены продавца и суммы к оплате
@@ -72,6 +72,11 @@ content_sha: 74012b754fa8005e
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
+
+**402** — Требуется платёж
+
+- `title` — string. Заголовок ошибки
+- `detail` — string. Детали ошибки. Ошибка возвращается только сервисам из [Каталога решений для бизнеса](/business-solutions)
 
 **403** — Доступ запрещён
 

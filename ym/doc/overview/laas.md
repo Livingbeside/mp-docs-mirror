@@ -2,8 +2,8 @@
 title: LaaS
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/overview/laas.md"
-fetched_at: "2026-10-31T02:46:35Z"
-content_sha: 7b1aa8b6c3b66f83
+fetched_at: "2026-11-04T02:54:11Z"
+content_sha: f39ddddb50bbbf1d
 ---
 
 ---
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/overview/laas.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21887165
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21924375
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21887165
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21924375
 
 # Список методов, используемых в модели LaaS
 

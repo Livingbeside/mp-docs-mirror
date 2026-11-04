@@ -2,8 +2,8 @@
 title: Подтверждение отгрузки и получение акта для нее
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/shipments/downloadShipmentReceptionTransferAct.md"
-fetched_at: "2026-10-31T02:47:17Z"
-content_sha: e70a427cc0fe16e2
+fetched_at: "2026-11-04T02:54:51Z"
+content_sha: f2ade6c5a2898c86
 ---
 
 ---
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/shipments/downloadShipmentReceptionTransferAct.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21887165
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21924375
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21887165
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21924375
 
 <!-- source: ru/api/shipments/downloadShipmentReceptionTransferAct.md -->
 <div class="openapi">

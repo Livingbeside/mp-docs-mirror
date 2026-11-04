@@ -9,7 +9,7 @@ tags:
 spec_version: ordersfbw
 source: "https://dev.wildberries.ru/docs/openapi/orders-fbw"
 deprecated: false
-content_sha: 3f9007c38c7187e3
+content_sha: a0f888e9fab96026
 ---
 
 # Удалить товары из черновика{{ /api/supplies/v1/drafts/{draftId}/items }}
@@ -70,6 +70,11 @@ content_sha: 3f9007c38c7187e3
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
+
+**402** — Требуется платёж
+
+- `title` — string. Заголовок ошибки
+- `detail` — string. Детали ошибки. Ошибка возвращается только сервисам из [Каталога решений для бизнеса](/business-solutions)
 
 **403** — Доступ запрещён
 

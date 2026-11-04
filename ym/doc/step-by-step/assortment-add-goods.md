@@ -2,8 +2,8 @@
 title: Добавление, редактирование и удаление товаров
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/assortment-add-goods.md"
-fetched_at: "2026-10-31T02:46:21Z"
-content_sha: d6d641cc0db36b8b
+fetched_at: "2026-11-04T02:53:59Z"
+content_sha: 765d9cf01f26b1a7
 ---
 
 ---
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/assortment-add-goods.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21887165
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21924375
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21887165
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21924375
 
 # Добавление и редактирование товаров
 

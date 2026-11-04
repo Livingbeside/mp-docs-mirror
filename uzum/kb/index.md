@@ -2,7 +2,7 @@
 title: Инструкция для продавцов Uzum Market — оглавление
 marketplace: uzum
 source: "https://seller.uzum.uz/manual/"
-content_sha: 187d7ea81fdb452b
+content_sha: 3774ea8a5b793cfa
 ---
 
 # Инструкция для продавцов Uzum Market
@@ -52,6 +52,12 @@ content_sha: 187d7ea81fdb452b
   - 1.1 Принципы работы Uzum Market
   - 1.2 Как работает фулфилмент Uzum
 - [1. Uzum Market sotuvchilar uchun qanday ishlaydi?](editions/2026-09-25/uz.md)
+  - 1.1 Uzum Market ning ishlash printsiplari
+  - 1.2 Uzum fulfilment qanday ishlaydi
+- [1. Как работает Uzum Market для продавцов](editions/2026-10-20.md)
+  - 1.1 Принципы работы Uzum Market
+  - 1.2 Как работает фулфилмент Uzum
+- [1. Uzum Market sotuvchilar uchun qanday ishlaydi?](editions/2026-10-20/uz.md)
   - 1.1 Uzum Market ning ishlash printsiplari
   - 1.2 Uzum fulfilment qanday ishlaydi
 - [2. Требования к товарам и поставщикам](2-seller-requirements.md)
@@ -401,6 +407,16 @@ content_sha: 187d7ea81fdb452b
   - 4.3 ЭДО
   - 4.4 Создание магазина
 - [4. Ishni boshlash](editions/2026-09-25/uz/4-start-working.md)
+  - 4.1 Ro’yхatga оlish va оferta shartnоmasi
+  - 4.2 Hujjatlarni yuklash va ma’lumоtlarni to’ldirish
+  - 4.3 EHA
+  - 4.4 Do’kоn yaratish
+- [4. Начало работы](editions/2026-10-20/4-start-working.md)
+  - 4.1 Регистрация и договор оферты
+  - 4.2 Загрузка документов и заполнение данных
+  - 4.3 ЭДО
+  - 4.4 Создание магазина
+- [4. Ishni boshlash](editions/2026-10-20/uz/4-start-working.md)
   - 4.1 Ro’yхatga оlish va оferta shartnоmasi
   - 4.2 Hujjatlarni yuklash va ma’lumоtlarni to’ldirish
   - 4.3 EHA
@@ -939,6 +955,42 @@ content_sha: 187d7ea81fdb452b
   - 5.14 Narхni shakllantirish
   - 5.15 Filtr uchun mahsulot xususiyatlari
   - 5.16 Mahsulotning qadoqdagi vazn-gabarit tavsiflarini (VGT) kiritish
+- [5. Создание карточек товара](editions/2026-10-20/5-product-creation.md)
+  - 5.1 Общие правила оформления карточек
+  - 5.2 Категория товара
+  - 5.3 Наименование товара
+  - 5.4 Бренд
+  - 5.5 НДС
+  - 5.6 Описание товара
+  - 5.7 Фотографии и видео в карточках товаров
+  - 5.8 Краткое описание товара
+  - 5.9 Характеристики
+  - 5.10 Дополнительные поля
+  - 5.11 Формирование SKU
+  - 5.12 Назначение штрихкода
+  - 5.13 Формирование ИКПУ
+  - 5.14 Формирование цены
+  - 5.15 Свойства товара для фильтра
+  - 5.16 Внесение весогабаритных характеристик (ВГХ) товара в упаковке
+  - 5.17 Соответствие с обязательным стандартным размером RUS
+- [5. Tоvar kartоchkalarini yaratish](editions/2026-10-20/uz/5-product-creation.md)
+  - 5.1 Kartоchkalarni rasmiylashtirish bo’yicha umumiy qоidalar
+  - 5.2 Tоvar tоifasi
+  - 5.3 Tоvar nоmi
+  - 5.4 Brend
+  - 5.5 QQS
+  - 5.6 Tоvar ta’rifi
+  - 5.7 Mahsulot kartochkalaridagi suratlar va videolar
+  - 5.8 Tоvarning qisqacha ta’rifi
+  - 5.9 Tavsiflar
+  - 5.10 Qo’shimcha hоshiyalar
+  - 5.11 SKU shakllantirish
+  - 5.12 Shtriхkоd vazifasi
+  - 5.13 MХIK (IKPU) ni shakllantirish
+  - 5.14 Narхni shakllantirish
+  - 5.15 Filtr uchun mahsulot xususiyatlari
+  - 5.16 Mahsulotning qadoqdagi vazn-gabarit tavsiflarini (VGT) kiritish
+  - 5.17 Majburiy standart RUS o‘lchamiga muvofiqligi
 - [6. Подготовка и отправка товаров на склад](6-product-preparation.md)
   - 6.1 Проверка и упаковка товара
   - 6.2 Формирование и печать этикетки
@@ -1214,6 +1266,26 @@ content_sha: 187d7ea81fdb452b
   - 6.8 Компенсация за утерянный или поврежденный товар
   - 6.9 Центр подготовки товаров
 - [6. Tovarlarni omborga tayyorlash va yuborish](editions/2026-09-25/uz/6-product-preparation.md)
+  - 6.1 Tovarni tekshirish va qadoqlash
+  - 6.2 Yorliqni tayyorlash va chop etish
+  - 6.3 Yetkazib berish (yuborish aktini) yaratish
+  - 6.4 Yetkazib berish reglamenti: taymslotlar, qabul qilish, tafovutlar
+  - 6.5 Tovarni omborga topshirish uchun tayyorlash
+  - 6.6 Tovarni omborga yuborish
+  - 6.7 Tоvarni оmbоrda saqlash shartlari
+  - 6.8 Yo'qotilgan yoki shikastlangan tovarlar uchun kompensatsiya
+  - 6.9 Tоvarlarni tayyorlash markazi
+- [6. Подготовка и отправка товаров на склад](editions/2026-10-20/6-product-preparation.md)
+  - 6.1 Проверка и упаковка товара
+  - 6.2 Формирование и печать этикетки
+  - 6.3 Создание поставки (акта отправки)
+  - 6.4 Регламент поставок: таймслоты, приёмка, расхождения
+  - 6.5 Подготовка товара к сдаче на склад
+  - 6.6 Отправка товара на склад
+  - 6.7 Условия хранения товара на складе
+  - 6.8 Компенсация за утерянный или поврежденный товар
+  - 6.9 Центр подготовки товаров
+- [6. Tovarlarni omborga tayyorlash va yuborish](editions/2026-10-20/uz/6-product-preparation.md)
   - 6.1 Tovarni tekshirish va qadoqlash
   - 6.2 Yorliqni tayyorlash va chop etish
   - 6.3 Yetkazib berish (yuborish aktini) yaratish

@@ -2,8 +2,8 @@
 title: Включение/выключение модели работы склада
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/warehouses/updateWarehouseModelStatus.md"
-fetched_at: "2026-10-31T02:48:03Z"
-content_sha: 11546e1a3f00ff92
+fetched_at: "2026-11-04T02:55:33Z"
+content_sha: d142df9373197cf7
 ---
 
 ---
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/warehouses/updateWarehouseModelStatus.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21887165
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21924375
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21887165
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21924375
 
 <!-- source: ru/api/warehouses/updateWarehouseModelStatus.md -->
 <div class="openapi">
@@ -901,7 +901,7 @@ alternate:
           * `false` — отключена.
         type: boolean
     $defs:
-      /home/sandbox/.ya/build/build_root/ac89/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/common/schemas.yaml#/WarehouseProgramType:
+      /home/sandbox/.ya/build/build_root/muey/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/common/schemas.yaml#/WarehouseProgramType:
         description: |
           Модель работы:
   

@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /policies/restrictions/prohibited
 source: "https://seller-edu.ozon.ru/libra/policies/restrictions/prohibited"
-updated: "2026-10-16 15:15:10"
+updated: "2026-11-03 12:02:16"
 doc_id: 1092
-fetched_at: "2026-10-17T01:46:11Z"
-content_sha: a10a96bd68b6c1da
+fetched_at: "2026-11-04T02:50:50Z"
+content_sha: b884a4964260555d
 ---
 
 # Запрещено размещать и продавать
@@ -18,7 +18,7 @@ _Главная / Правила работы и контроль качеств
 
 Если в личном кабинете появятся товары из категорий, перечисленных ниже, нам придётся заблокировать карточки всех товаров в этом кабинете. А сам кабинет можем деактивировать и расторгнуть договор.
 
-За продажу запрещённых товаров удержим из заработка продавца вознаграждение за услугу «Обработка нарушения при размещении запрещенного к продаже товара». [Подробнее об услуге](/commissions-tariffs/legal-information/full-actual-commissions#2-13-%D0%B2%D0%BE%D0%B7%D0%BD%D0%B0%D0%B3%D1%80%D0%B0%D0%B6%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B7%D0%B0-%D1%83%D1%81%D0%BB%D1%83%D0%B3%D1%83-%C2%AB%D0%BE%D0%B1%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B0-%D0%BD%D0%B0%D1%80%D1%83%D1%88%D0%B5%D0%BD%D0%B8%D1%8F-%D0%BF%D1%80%D0%B8-%D1%80%D0%B0%D0%B7%D0%BC%D0%B5%D1%89%D0%B5%D0%BD%D0%B8%D0%B8-%D0%B7%D0%B0%D0%BF%D1%80%D0%B5%D1%89%D0%B5%D0%BD%D0%BD%D0%BE%D0%B3%D0%BE-%D0%BA-%D0%BF%D1%80%D0%BE%D0%B4%D0%B0%D0%B6%D0%B5-%D1%82%D0%BE%D0%B2%D0%B0%D1%80%D0%B0%C2%BB)
+За продажу запрещённых товаров начислим штраф — закрепили в [договоре](https://seller-edu.ozon.ru/contract-for-sellers/contract-goods/contract-for-sell-goods-on-ozon#%D1%80%D0%B0%D0%B7%D0%B4%D0%B5%D0%BB-%C2%AB%D0%BA%D0%B0%D1%80%D1%82%D0%BE%D1%87%D0%BA%D0%B0-%D1%82%D0%BE%D0%B2%D0%B0%D1%80%D0%B0%C2%BB).
 
 По законам Российской Федерации и правилам Ozon на маркетплейсе запрещена продажа товаров следующих категорий:
 

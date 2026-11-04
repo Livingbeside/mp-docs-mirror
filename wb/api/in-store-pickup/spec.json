@@ -1751,6 +1751,9 @@
           "401": {
             "$ref": "#/components/responses/401"
           },
+          "402": {
+            "$ref": "#/components/responses/402"
+          },
           "403": {
             "content": {
               "application/json": {
@@ -1864,6 +1867,9 @@
           },
           "401": {
             "$ref": "#/components/responses/401"
+          },
+          "402": {
+            "$ref": "#/components/responses/402"
           },
           "403": {
             "content": {
@@ -2023,6 +2029,9 @@
           },
           "401": {
             "$ref": "#/components/responses/401"
+          },
+          "402": {
+            "$ref": "#/components/responses/402"
           },
           "403": {
             "content": {

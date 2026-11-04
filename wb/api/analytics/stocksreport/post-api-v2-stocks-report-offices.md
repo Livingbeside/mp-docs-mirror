@@ -9,7 +9,7 @@ tags:
 spec_version: analytics
 source: "https://dev.wildberries.ru/docs/openapi/analytics"
 deprecated: false
-content_sha: c6bca36ddd9383d0
+content_sha: 4d7508d0f800b840
 ---
 
 # Данные по складам
@@ -20,7 +20,7 @@ content_sha: c6bca36ddd9383d0
 
 Метод формирует набор данных об остатках по складам.
 
-Данные по складам продавца приходят в агрегированном виде — по всем сразу, без детализации по конкретным складам — эти записи будут с `"regionName":"Свой склад"` и `"offices":[]`.
+Данные по складам продавца приходят в агрегированном виде — без детализации по конкретным складам — эти записи будут с `"regionName":"Свой склад"` или `"regionName":"Свой склад СГТ"` и `"offices":[]`.
 
 Данные отчёта обновляются 1 раз в 2 часа.
 
@@ -52,8 +52,8 @@ content_sha: c6bca36ddd9383d0
 **200** — Успешно
 
 - `data` — object **обязательный**
-  - `regions` — array[object]. Множество данных по регионам отгрузки
-    - `regionName` — string **обязательный**. Регион отгрузки. [На данный момент](/release-notes?id=570) для складов WB может быть только `Склад WB`
+  - `regions` — array[object] **обязательный**. Множество данных по регионам отгрузки
+    - `regionName` — string **обязательный**. [Страна отгрузки](/release-notes?id=605)
     - `metrics` — object **обязательный**. Метрики по региону
       - `stockCount` — integer<uint64> **обязательный**. Остатки на текущий день, шт.
       - `stockSum` — integer<uint64> **обязательный**. Остатки на текущий день, сумма
@@ -62,9 +62,9 @@ content_sha: c6bca36ddd9383d0
         - `hours` — integer<int32> **обязательный**. Количество часов
       - `toClientCount` — integer<uint64> **обязательный**. В пути к клиенту, шт.
       - `fromClientCount` — integer<uint64> **обязательный**. В пути от клиента, шт.
-    - `offices` — array[object] **обязательный**. Данные по складам. [На данный момент](/release-notes?id=570) может быть только `[]`
-      - `officeID` — integer<int64> **обязательный**. ID склада
-      - `officeName` — string **обязательный**. Название склада
+    - `offices` — array[object] **обязательный**. [Данные по складам](/release-notes?id=605)
+      - `officeID` — integer<int64> **обязательный**. [ID склада](/release-notes?id=605)
+      - `officeName` — string **обязательный**. [Название склада](/release-notes?id=605)
       - `metrics` — object **обязательный**. Метрики по складу
         - `stockCount` — integer<uint64> **обязательный**. Остатки на текущий день, шт.
         - `stockSum` — integer<uint64> **обязательный**. Остатки на текущий день, сумма

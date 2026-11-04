@@ -9,7 +9,7 @@ tags:
 spec_version: reports
 source: "https://dev.wildberries.ru/docs/openapi/reports"
 deprecated: true
-content_sha: ea557de7f88391cb
+content_sha: 6c92d9351efa3cf5
 ---
 
 # Получить отчёт
@@ -70,11 +70,6 @@ content_sha: ea557de7f88391cb
 - `status` — number. HTTP статус-код
 - `statusText` — string. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time>. Дата и время запроса
-
-**402** — Требуется платёж
-
-- `title` — string. Заголовок ошибки
-- `detail` — string. Детали ошибки. Ошибка возвращается только сервисам из [Каталога решений для бизнеса](/business-solutions)
 
 **403** — Доступ запрещён
 

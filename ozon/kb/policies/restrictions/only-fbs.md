@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /policies/restrictions/only-fbs
 source: "https://seller-edu.ozon.ru/libra/policies/restrictions/only-fbs"
-updated: "2026-09-03 10:11:51"
+updated: "2026-11-03 12:05:58"
 doc_id: 648
-fetched_at: "2026-09-04T01:54:42Z"
-content_sha: 38cb17c8cde6679a
+fetched_at: "2026-11-04T02:50:50Z"
+content_sha: 17ef8b8c40778735
 ---
 
 # Запрещено продавать по схемам FBO и FBS
@@ -20,7 +20,7 @@ _Главная / Правила работы и контроль качеств
 
 Эти товары не принимаем на складе Ozon, но можете доставлять их по [схеме FBS](/fbs) или [realFBS](/rfbs) с учётом [ограничений служб доставки](/policies/restrictions/prohibited-rfbs-partnery).
 
-Размещайте товары в верной категории, после пройдённой модерации изменить её уже не получится. Если разместите запрещённые товары в других категориях, удержим плату за нарушение — закрепили это [в разделе «Карточка товара» договора](https://seller-edu.ozon.ru/libra/contract-for-sellers/contract-goods/contract-for-sell-goods-on-ozon).
+Если обнаружим на площадке продажу запрещённых товаров на FBO, скроем такие товары и начислим штраф за нарушение — закрепили это в [договоре](https://seller-edu.ozon.ru/contract-for-sellers/contract-goods/contract-for-sell-goods-on-ozon#%D1%80%D0%B0%D0%B7%D0%B4%D0%B5%D0%BB-%C2%AB%D0%BA%D0%B0%D1%80%D1%82%D0%BE%D1%87%D0%BA%D0%B0-%D1%82%D0%BE%D0%B2%D0%B0%D1%80%D0%B0%C2%BB).
 
 Автомобильные:
 заправленные кислотные и щелочные аккумуляторные батареи;
@@ -156,11 +156,13 @@ _Главная / Правила работы и контроль качеств
 
 # Запрещено на FBS и realFBS (доставка в ПВЗ)
 
-Если обнаружим на FBS складах опасные товары из запрещённого списка, обнулим остатки и отправим уведомление на электронную почту.
-
 Эти товары не получится перевезти силами логистики Ozon или хранить на наших складах. Но можете доставлять их по [схеме realFBS](https://seller-edu.ozon.ru/rfbs) курьером или в партнёрский ПВЗ с учётом [ограничений служб доставки](https://seller-edu.ozon.ru/policies/restrictions/prohibited-rfbs-partnery).
 
-Размещайте товары в верной категории, после пройдённой модерации изменить её уже не получится. Если разместите запрещённые товары в других категориях, удержим плату за нарушение — закрепили это [в разделе «Карточка товара» договора](https://seller-edu.ozon.ru/libra/contract-for-sellers/contract-goods/contract-for-sell-goods-on-ozon).
+Если обнаружим:
+
+на FBS складах опасные товары из запрещённого списка — обнулим остатки и отправим уведомление на электронную почту;
+
+продажу запрещённых товаров по FBS и realFBS — скроем карточки и начислим штраф за нарушение — закрепили это в [договоре](https://seller-edu.ozon.ru/contract-for-sellers/contract-goods/contract-for-sell-goods-on-ozon#%D1%80%D0%B0%D0%B7%D0%B4%D0%B5%D0%BB-%C2%AB%D0%BA%D0%B0%D1%80%D1%82%D0%BE%D1%87%D0%BA%D0%B0-%D1%82%D0%BE%D0%B2%D0%B0%D1%80%D0%B0%C2%BB).
 
 Вакцины для ветеринарного применения.
 

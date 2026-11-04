@@ -1406,6 +1406,9 @@
           "401": {
             "$ref": "#/components/responses/401"
           },
+          "402": {
+            "$ref": "#/components/responses/402"
+          },
           "403": {
             "content": {
               "application/problem+json": {

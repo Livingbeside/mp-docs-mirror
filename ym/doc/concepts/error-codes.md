@@ -2,8 +2,8 @@
 title: Типы ошибок и что с ними делать
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/concepts/error-codes.md"
-fetched_at: "2026-10-31T02:46:15Z"
-content_sha: 48785c824b8eef57
+fetched_at: "2026-11-04T02:53:54Z"
+content_sha: de6c0d17869a21b2
 ---
 
 ---
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/concepts/error-codes.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21887165
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21924375
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21887165
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21924375
 
 # Типы ошибок и что с ними делать
 
@@ -180,7 +180,9 @@ alternate:
 ||**Offers not found for SKUs: 'offerIds'**|Переданы несуществующие идентификаторы товаров.|Проверьте корректность `offerIds`.|[POST v1/campaigns/{campaignId}/orders/create](https://yandex.ru/dev/market/partner-api/doc/ru/reference/orders/createOrder.md)
 [POST v1/campaigns/{campaignId}/returns/create](https://yandex.ru/dev/market/partner-api/doc/ru/reference/returns/createReturn.md)
 [POST v1/campaigns/{campaignId}/delivery-options](https://yandex.ru/dev/market/partner-api/doc/ru/reference/delivery-options/getDeliveryOptions.md)
-[POST v1/campaigns/{campaignId}/return-delivery-options](https://yandex.ru/dev/market/partner-api/doc/ru/reference/delivery-options/getReturnDeliveryOptions.md) ||
+[POST v1/campaigns/{campaignId}/return-delivery-options](https://yandex.ru/dev/market/partner-api/doc/ru/reference/delivery-options/getReturnDeliveryOptions.md)
+[POST v2/campaigns/{campaignId}/offer-prices/updates](https://yandex.ru/dev/market/partner-api/doc/ru/reference/prices/updatePrices.md)
+[PUT v2/campaigns/{campaignId}/offers/stocks](https://yandex.ru/dev/market/partner-api/doc/ru/reference/stocks/updateStocks.md) ||
 
 ||**Order 'orderId' is in cancellation state**|Заказ находится в процессе отмены.|Не изменяйте отменённый заказ.|[POST v1/campaigns/{campaignId}/orders/update](https://yandex.ru/dev/market/partner-api/doc/ru/reference/orders/updateOrder.md) ||
 

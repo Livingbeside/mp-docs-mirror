@@ -1889,6 +1889,9 @@
           "401": {
             "$ref": "#/components/responses/401"
           },
+          "402": {
+            "$ref": "#/components/responses/402"
+          },
           "403": {
             "$ref": "#/components/responses/403"
           },
@@ -1923,6 +1926,9 @@
           },
           "401": {
             "$ref": "#/components/responses/401"
+          },
+          "402": {
+            "$ref": "#/components/responses/402"
           },
           "403": {
             "$ref": "#/components/responses/403"
@@ -1987,6 +1993,9 @@
           },
           "401": {
             "$ref": "#/components/responses/401"
+          },
+          "402": {
+            "$ref": "#/components/responses/402"
           },
           "403": {
             "$ref": "#/components/responses/403"
@@ -2096,6 +2105,9 @@
           "401": {
             "$ref": "#/components/responses/401"
           },
+          "402": {
+            "$ref": "#/components/responses/402"
+          },
           "403": {
             "$ref": "#/components/responses/403"
           },
@@ -2191,6 +2203,9 @@
           },
           "401": {
             "$ref": "#/components/responses/401"
+          },
+          "402": {
+            "$ref": "#/components/responses/402"
           },
           "403": {
             "$ref": "#/components/responses/403"
@@ -2302,6 +2317,9 @@
           },
           "401": {
             "$ref": "#/components/responses/401"
+          },
+          "402": {
+            "$ref": "#/components/responses/402"
           },
           "403": {
             "$ref": "#/components/responses/403"
@@ -2911,6 +2929,9 @@
           "401": {
             "$ref": "#/components/responses/401"
           },
+          "402": {
+            "$ref": "#/components/responses/402"
+          },
           "403": {
             "$ref": "#/components/responses/403"
           },
@@ -2951,6 +2972,9 @@
           },
           "401": {
             "$ref": "#/components/responses/401"
+          },
+          "402": {
+            "$ref": "#/components/responses/402"
           },
           "403": {
             "$ref": "#/components/responses/403"

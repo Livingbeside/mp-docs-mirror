@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /vozvraty-i-vyvozy/vyvozy-so-stoka-i-postavki/spisannye-tovary
 source: "https://seller-edu.ozon.ru/libra/vozvraty-i-vyvozy/vyvozy-so-stoka-i-postavki/spisannye-tovary"
-updated: "2026-10-09 12:13:40"
+updated: "2026-11-03 13:52:18"
 doc_id: 14256
-fetched_at: "2026-10-11T02:13:25Z"
-content_sha: 9e6676fe0d135317
+fetched_at: "2026-11-04T02:50:51Z"
+content_sha: 8afe3ccf40a70605
 ---
 
 # Списанные товары на FBO и FBS
@@ -171,7 +171,7 @@ _Главная / Клиентские возвраты и вывозы това
 
 ## Списание по результатам проверки
 
-Если возврат или отмена не вернулась на склад Ozon, у вас будет 30 дней, чтобы подать претензию (п. 4.4 [Договора](https://seller-edu.ozon.ru/libra/contract-for-sellers/contract-goods/contract-for-sell-goods-on-ozon)). Если 30 дней уже прошло, списываем товар без компенсации — оспорить это решение не получится.
+Если возврат или отмена не вернулась на склад Ozon, у вас будет 30 дней, чтобы подать претензию (п. 3 [Общих условий сотрудничества](https://seller-edu.ozon.ru/contract-for-sellers/general-terms/general-terms-of-partnership#3-ответственность-ozon)). Если 30 дней уже прошло, списываем товар без компенсации — оспорить это решение не получится.
 
 Также списываем недостающий товар без компенсации, если при инвентаризации обнаружили на складе излишек такого же товара.
 

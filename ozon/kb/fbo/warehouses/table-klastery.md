@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /fbo/warehouses/table-klastery
 source: "https://seller-edu.ozon.ru/libra/fbo/warehouses/table-klastery"
-updated: "2026-10-30 08:01:41"
+updated: "2026-11-03 10:41:31"
 doc_id: 690
-fetched_at: "2026-10-31T02:43:08Z"
-content_sha: 8d57bcab9499ac36
+fetched_at: "2026-11-04T02:50:50Z"
+content_sha: 0bdd2408461caaf4
 ---
 
 # Кластеры доставки
@@ -145,6 +145,8 @@ _Главная / Продажа со склада Ozon (FBO) / Склады, а
 Екатеринбург РФЦ Ювелирный
 
 Екатеринбург РФЦ Негабарит
+
+Челябинск РФЦ
 
 Казань
 

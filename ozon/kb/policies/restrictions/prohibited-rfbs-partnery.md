@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /policies/restrictions/prohibited-rfbs-partnery
 source: "https://seller-edu.ozon.ru/libra/policies/restrictions/prohibited-rfbs-partnery"
-updated: "2026-10-14 11:42:01"
+updated: "2026-11-03 12:04:26"
 doc_id: 649
-fetched_at: "2026-10-15T01:45:00Z"
-content_sha: 41dde8575eda68d7
+fetched_at: "2026-11-04T02:50:50Z"
+content_sha: 2b738c53839dfa60
 ---
 
 # Запрещено доставлять по схеме realFBS
@@ -31,7 +31,7 @@ _Главная / Правила работы и контроль качеств
 Правила перевозчиков могут различаться на разных методах доставки:
 
 «Партнёры Озон» — на этом методе категорически запрещено доставлять позиции из [списка](https://seller-edu.ozon.ru/policies/restrictions/only-fbs#%D0%B7%D0%B0%D0%BF%D1%80%D0%B5%D1%89%D0%B5%D0%BD%D0%BE-%D0%BD%D0%B0-fbs), а также брикеты и роллы для розжига. Если продаёте опасные товары, [настройте другой метод](https://seller-edu.ozon.ru/policies/restrictions/prohibited-rfbs-partnery#%D0%BA%D0%B0%D0%BA-%D0%BF%D1%80%D0%BE%D0%B4%D0%B0%D0%B2%D0%B0%D1%82%D1%8C-%D0%BE%D0%BF%D0%B0%D1%81%D0%BD%D1%8B%D0%B5-%D1%82%D0%BE%D0%B2%D0%B0%D1%80%D1%8B-%D0%BD%D0%B0-realfbs).
-Если обнаружим на площадке [запрещённые к продаже товары](/policies/restrictions), которые доставляются методом «Партнёры Озон», скроем такие позиции и удержим из вашего заработка вознаграждение за услугу «Обработка нарушения при размещении запрещенного к продаже товара». [Подробнее об услуге](/commissions-tariffs/legal-information/full-actual-commissions#2-13-%D0%B2%D0%BE%D0%B7%D0%BD%D0%B0%D0%B3%D1%80%D0%B0%D0%B6%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B7%D0%B0-%D1%83%D1%81%D0%BB%D1%83%D0%B3%D1%83-%C2%AB%D0%BE%D0%B1%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B0-%D0%BD%D0%B0%D1%80%D1%83%D1%88%D0%B5%D0%BD%D0%B8%D1%8F-%D0%BF%D1%80%D0%B8-%D1%80%D0%B0%D0%B7%D0%BC%D0%B5%D1%89%D0%B5%D0%BD%D0%B8%D0%B8-%D0%B7%D0%B0%D0%BF%D1%80%D0%B5%D1%89%D0%B5%D0%BD%D0%BD%D0%BE%D0%B3%D0%BE-%D0%BA-%D0%BF%D1%80%D0%BE%D0%B4%D0%B0%D0%B6%D0%B5-%D1%82%D0%BE%D0%B2%D0%B0%D1%80%D0%B0%C2%BB)
+Если обнаружим на площадке запрещённые к продаже товары, которые доставляются методом «Партнёры Озон», скроем их и начислим штраф за нарушение — закрепили это в [договоре](https://seller-edu.ozon.ru/contract-for-sellers/contract-goods/contract-for-sell-goods-on-ozon#%D1%80%D0%B0%D0%B7%D0%B4%D0%B5%D0%BB-%C2%AB%D0%BA%D0%B0%D1%80%D1%82%D0%BE%D1%87%D0%BA%D0%B0-%D1%82%D0%BE%D0%B2%D0%B0%D1%80%D0%B0%C2%BB).
 
 «Интегрированные службы» — узнайте [ограничения курьерской службы](#%D0%B8%D0%BD%D1%82%D0%B5%D0%B3%D1%80%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%BD%D1%8B%D0%B5-%D1%81%D0%BB%D1%83%D0%B6%D0%B1%D1%8B) на её сайте или выясните детали напрямую у перевозчика.
 
