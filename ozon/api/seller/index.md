@@ -2,9 +2,9 @@
 title: Документация Ozon Seller API — все методы
 api: ozon-seller
 spec_version: 2.1
-operations: 482
+operations: 483
 source: "https://docs.ozon.ru/api/seller/"
-content_sha: 6d3991a3f9cfb838
+content_sha: 3eb9263b28b8dbc4
 ---
 
 # Документация Ozon Seller API
@@ -20,7 +20,7 @@ content_sha: 6d3991a3f9cfb838
 
 [](https://seller-edu.ozon.ru/webinars/5940/)
 
-Версия спеки: `2.1` · методов: **482** · разделов справки: **27**
+Версия спеки: `2.1` · методов: **483** · разделов справки: **27**
 
 Источник: https://docs.ozon.ru/api/seller/
 
@@ -306,6 +306,7 @@ content_sha: 6d3991a3f9cfb838
 | `POST` | `/v1/report/products/create` | ReportAPI | [Отчёт по товарам](reportapi/post-v1-report-products-create.md) |
 | `POST` | `/v1/report/realization/posting/create` | BetaMethod | [Получить позаказный отчёт о реализации товаров](betamethod/post-v1-report-realization-posting-create.md) |
 | `POST` | `/v1/report/warehouse/stock` | ReportAPI | [Отчёт об остатках на FBS-складе](reportapi/post-v1-report-warehouse-stock.md) |
+| `POST` | `/v1/return/box/get-by-barcode` | BetaMethod | [Получить информацию о возвратных коробках по штрихкоду с этикетки](betamethod/post-v1-return-box-get-by-barcode.md) |
 | `POST` | `/v1/return/giveout/barcode-reset` | ReturnAPI | [Сгенерировать новый штрихкод](returnapi/post-v1-return-giveout-barcode-reset.md) |
 | `POST` | `/v1/return/giveout/barcode` | ReturnAPI | [Значение штрихкода для возвратных отгрузок](returnapi/post-v1-return-giveout-barcode.md) |
 | `POST` | `/v1/return/giveout/get-pdf` | ReturnAPI | [Штрихкод для получения возвратной отгрузки в формате PDF](returnapi/post-v1-return-giveout-get-pdf.md) |
