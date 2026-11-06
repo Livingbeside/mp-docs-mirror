@@ -4,8 +4,8 @@ marketplace: uzum
 kind: article
 path: /editions/2025-02-28/uz/11.Analytics/
 source: "https://seller.uzum.uz/manual/editions/2025-02-28/uz/11.Analytics/"
-fetched_at: "2026-10-31T02:49:37Z"
-content_sha: 27cf66d7cc4b56b4
+fetched_at: "2026-11-06T06:12:31Z"
+content_sha: 074ea25a7c85f0bc
 ---
 
 # 12. Analitika bilan ishlash
@@ -191,7 +191,7 @@ Tahlil hisobotini ko‘rish uchun kursorni grafik ustiga olib boring. Unda siz k
 Hodisalar ko‘p bo‘lishi mumkin, ammo ularning barchasi ham tanlangan ko‘rsatkichlarga ta’sir etavermaydi. Dinamikaga qaysi hodisalar va qanday ta’sir ko‘rsatishini aniqroq tushunish uchun:
 
 - Nafaqat keskin o‘zgarish sanasini, balki undan oldingi va keyingi davrlarni ham tahlil qiling
-- [**“Sotuvlar qanday oshiriladi”**](https://seller.uzum.uz/seller/analytics/events) maqolasini o‘qing — unda biz voronkaning turli bosqichlariga va ularning ko‘rsatkichlariga qanday harakatlar ta’sir qilishi haqida aytib o‘tganmiz.
+- [**“Sotuvlar qanday oshiriladi”**](https://seller.uzum.uz/seller/analytics/events?) maqolasini o‘qing — unda biz voronkaning turli bosqichlariga va ularning ko‘rsatkichlariga qanday harakatlar ta’sir qilishi haqida aytib o‘tganmiz.
 
 **5. Strategiya ishlab chiqing**
 

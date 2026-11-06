@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /ceny-i-akcii/akcii-skidki-i-kupony/akcii-ozon/promo
 source: "https://seller-edu.ozon.ru/libra/ceny-i-akcii/akcii-skidki-i-kupony/akcii-ozon/promo"
-updated: "2026-10-27 10:01:01"
+updated: "2026-11-05 17:11:59"
 doc_id: 18849
-fetched_at: "2026-10-28T02:51:57Z"
-content_sha: 850124cce1e7aefc
+fetched_at: "2026-11-06T06:05:06Z"
+content_sha: 2f1564de737200e9
 ---
 
 # Типы акций от Ozon
@@ -15,16 +15,6 @@ content_sha: 850124cce1e7aefc
 _Главная / Цены и акции / Акции, скидки и промокоды / Акции от Ozon_
 
 Какие типы акций от Ozon бывают
-
-**Обновляем подход к управлению товарами в акциях от Ozon**
-
-С 12 октября 2026 года добавление и удаление товаров из акций от Ozon типа «Эластичный бустинг» и «Скидка на сток» доступно через изменение предельной цены товара:
-
-установили предельную цену не выше требуемой цены акции — товар добавился в акцию;
-
-подняли предельную цену выше — товар вышел из акции.
-
-Привычные чекбоксы для удаления останутся только на вкладке «Участвуют с (дата)». Будем включать изменения постепенно в течение двух недель. [Подробнее об управлении товарами](https://seller-edu.ozon.ru/ceny-i-akcii/akcii-skidki-i-kupony/akcii-ozon/upravlenie-tovarami-v-akciyah-ot-ozon-cherez-predelnuu-cenu)
 
 # Какие акции проводит Ozon
 

@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /work-with-byuers/otzyvy/sbor-otzyvov/otzyvy-za-bally/upravlenie-otzyvy-za-baly
 source: "https://seller-edu.ozon.ru/libra/work-with-byuers/otzyvy/sbor-otzyvov/otzyvy-za-bally/upravlenie-otzyvy-za-baly"
-updated: "2026-10-27 12:19:35"
+updated: "2026-11-05 14:56:46"
 doc_id: 19744
-fetched_at: "2026-10-28T02:51:57Z"
-content_sha: 6955339b84a9eca6
+fetched_at: "2026-11-06T06:05:06Z"
+content_sha: c2b5855a9b044f6a
 ---
 
 # Редактирование и отключение ускоренного сбора отзывов
@@ -22,7 +22,11 @@ _Главная / Работа с покупателями / Отзывы / Ин
 
 # Как изменить список товаров
 
-Изменить список товаров можно только у кампаний [«Ускоренный сбор отзывов»](https://seller-edu.ozon.ru/libra/work-with-byuers/otzyvy-za-bally/chto-takoe-otzyvy-za-baly#ручная-кампания) и [«Ускоренный сбор отзывов для ваших товаров»](/work-with-byuers/otzyvy-za-bally/chto-takoe-otzyvy-za-baly#ускоренныи-сбор-отзывов-для-ваших-товаров).
+Изменить список товаров можно только у [ручных кампаний](https://seller-edu.ozon.ru/work-with-byuers/otzyvy/sbor-otzyvov/otzyvy-za-bally/chto-takoe-otzyvy-za-baly#ручная-кампания) и кампании [«Ускоренный сбор отзывов для ваших товаров»](https://seller-edu.ozon.ru/libra/work-with-byuers/otzyvy-za-bally/chto-takoe-otzyvy-za-baly#%D1%83%D1%81%D0%BA%D0%BE%D1%80%D0%B5%D0%BD%D0%BD%D1%8B%D0%B8-%D1%81%D0%B1%D0%BE%D1%80-%D0%BE%D1%82%D0%B7%D1%8B%D0%B2%D0%BE%D0%B2-%D0%B4%D0%BB%D1%8F-%D0%B2%D0%B0%D1%88%D0%B8%D1%85-%D1%82%D0%BE%D0%B2%D0%B0%D1%80%D0%BE%D0%B2).
+
+У кампании [«Высокий потенциал»](https://seller-edu.ozon.ru/work-with-byuers/otzyvy/sbor-otzyvov/otzyvy-za-bally/chto-takoe-otzyvy-za-baly#кампания-«высокии-потенциал»), пока она находится в статусе **Черновик**, можно только удалять товары.
+
+В личном кабинете на сайте
 
 1. На странице **[Товары → Ускоренный сбор отзывов](https://seller.ozon.ru/app/reviews/promotions)** откройте нужную кампанию.
 2. Чтобы:
@@ -31,6 +35,8 @@ _Главная / Работа с покупателями / Отзывы / Ин
   добавить позиции — нажмите **Добавить товары**. Товары можно искать по названию, артикулу или использовать фильтры.
 
 ## 
+
+В приложении
 
 1. В разделе **Меню → Отзывы и вопросы → Ускоренный сбор отзывов** откройте нужную кампанию.
 2. Нажмите на блок с количеством товаров. Чтобы
@@ -42,8 +48,12 @@ _Главная / Работа с покупателями / Отзывы / Ин
 
 Изменить даты проведения можно только у [ручной кампании «Ускоренный сбор отзывов»](https://seller-edu.ozon.ru/libra/work-with-byuers/otzyvy-za-bally/chto-takoe-otzyvy-za-baly#%D1%80%D1%83%D1%87%D0%BD%D0%B0%D1%8F-%D0%BA%D0%B0%D0%BC%D0%BF%D0%B0%D0%BD%D0%B8%D1%8F).
 
+В личном кабинете на сайте
+
 1. На странице **[Товары → Ускоренный сбор отзывов](https://seller.ozon.ru/app/reviews/promotions)** откройте нужную кампанию.
 2. В блоке **Период проведения** нажмите  и укажите другие даты.
+
+В приложении
 
 1. В разделе** Меню → Отзывы и вопросы → Ускоренный сбор отзывов** откройте нужную кампанию.
 2. Перейдите в редактировании кампании, для этого нажмите .
@@ -51,7 +61,11 @@ _Главная / Работа с покупателями / Отзывы / Ин
 
 # Как поменять количество отзывов
 
-Изменить количество отзывов можно только у кампаний [«Ускоренный сбор отзывов](https://seller-edu.ozon.ru/libra/work-with-byuers/otzyvy-za-bally/chto-takoe-otzyvy-za-baly#%D1%80%D1%83%D1%87%D0%BD%D0%B0%D1%8F-%D0%BA%D0%B0%D0%BC%D0%BF%D0%B0%D0%BD%D0%B8%D1%8F) и [«Ускоренный сбор отзывов для ваших товаров»](/work-with-byuers/otzyvy-za-bally/chto-takoe-otzyvy-za-baly#ускоренныи-сбор-отзывов-для-ваших-товаров).
+Изменить количество отзывов можно только у [ручных кампаний](https://seller-edu.ozon.ru/work-with-byuers/otzyvy/sbor-otzyvov/otzyvy-za-bally/chto-takoe-otzyvy-za-baly#ручная-кампания) и кампании [«Ускоренный сбор отзывов для ваших товаров»](https://seller-edu.ozon.ru/libra/work-with-byuers/otzyvy-za-bally/chto-takoe-otzyvy-za-baly#%D1%83%D1%81%D0%BA%D0%BE%D1%80%D0%B5%D0%BD%D0%BD%D1%8B%D0%B8-%D1%81%D0%B1%D0%BE%D1%80-%D0%BE%D1%82%D0%B7%D1%8B%D0%B2%D0%BE%D0%B2-%D0%B4%D0%BB%D1%8F-%D0%B2%D0%B0%D1%88%D0%B8%D1%85-%D1%82%D0%BE%D0%B2%D0%B0%D1%80%D0%BE%D0%B2).
+
+У кампании [«Высокий потенциал»](https://seller-edu.ozon.ru/work-with-byuers/otzyvy/sbor-otzyvov/otzyvy-za-bally/chto-takoe-otzyvy-za-baly#кампания-«высокии-потенциал») поменять количество отзывов можно только после её запуска.
+
+В личном кабинете на сайте
 
 1. На странице **[Товары → Ускоренный сбор отзывов](https://seller.ozon.ru/app/reviews/promotions)** откройте нужную кампанию.
 2. Нажмите **Дополнительно → Настроить число отзывов**.
@@ -63,6 +77,8 @@ _Главная / Работа с покупателями / Отзывы / Ин
 1. Отметьте галочкой нужные товары и нажмите **Настроить число отзывов**.
 2. В открывшемся окне для товаров каждой ценовой категории укажите количество отзывов, которые хотите собрать.
 3. Нажмите **Применить**.
+
+В приложении
 
 1. В разделе** Меню → Отзывы и вопросы → Ускоренный сбор отзывов** откройте нужную акцию.
 2. Нажмите **Настроить количество.**
