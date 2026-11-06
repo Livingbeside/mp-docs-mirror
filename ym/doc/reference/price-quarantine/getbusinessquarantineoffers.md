@@ -2,14 +2,14 @@
 title: Просмотр карантина по цене в кабинете
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/price-quarantine/getBusinessQuarantineOffers.md"
-fetched_at: "2026-11-04T02:54:32Z"
-content_sha: 361d98b63c5e431c
+fetched_at: "2026-11-06T02:47:56Z"
+content_sha: 84f3271bbe698aeb
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.64.0
+    content: Diplodoc Platform v5.64.2
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/price-quarantine/getBusinessQuarantineOffers.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/price-quarantine/getBusinessQuarantineOffers.md
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/price-quarantine/getBusinessQuarantineOffers.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21924375
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21957731
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21924375
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21957731
 
 <!-- source: ru/api/price-quarantine/getBusinessQuarantineOffers.md -->
 <div class="openapi">

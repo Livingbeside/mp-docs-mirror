@@ -2,14 +2,14 @@
 title: Одна точка продаж
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/outlets/getOutlet.md"
-fetched_at: "2026-11-04T02:54:59Z"
-content_sha: 9bd4d1c7c392e814
+fetched_at: "2026-11-06T02:48:20Z"
+content_sha: 40adc9ee450c712c
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.64.0
+    content: Diplodoc Platform v5.64.2
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/outlets/getOutlet.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/outlets/getOutlet.md
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/outlets/getOutlet.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21924375
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21957731
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21924375
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21957731
 
 <!-- source: ru/api/outlets/getOutlet.md -->
 <div class="openapi">

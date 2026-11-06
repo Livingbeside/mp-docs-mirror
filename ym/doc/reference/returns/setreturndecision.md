@@ -2,14 +2,14 @@
 title: Принятие решения по возврату (DBS)
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/returns/setReturnDecision.md"
-fetched_at: "2026-11-04T02:55:40Z"
-content_sha: 5ea1bb6b43f12c4c
+fetched_at: "2026-11-06T02:48:58Z"
+content_sha: 8d8deede688978b0
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.64.0
+    content: Diplodoc Platform v5.64.2
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/returns/setReturnDecision.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/returns/setReturnDecision.md
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/returns/setReturnDecision.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21924375
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21957731
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21924375
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21957731
 
 <!-- source: ru/api/returns/setReturnDecision.md -->
 <div class="openapi">
@@ -1011,7 +1011,7 @@ alternate:
       decisionType: REFUND_MONEY_INCLUDING_SHIPMENT
       comment: Вернуть 149 рублей за пересылку.
     $defs:
-      /home/sandbox/.ya/build/build_root/muey/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/returns/schemas.yaml#/ReturnRequestDecisionType:
+      /home/sandbox/.ya/build/build_root/8lh1/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/returns/schemas.yaml#/ReturnRequestDecisionType:
         description: >
           Решение по возврату:
   
@@ -1053,7 +1053,7 @@ alternate:
           - DECLINE_REFUND
           - PARTIAL_MONEY_REFUND
           - OTHER_DECISION
-      /home/sandbox/.ya/build/build_root/muey/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/common/schemas.yaml#/CurrencyType:
+      /home/sandbox/.ya/build/build_root/8lh1/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/common/schemas.yaml#/CurrencyType:
         type: string
         description: |
           Коды валют:
@@ -1187,7 +1187,7 @@ alternate:
           - NAD
           - TL
           - UE
-      /home/sandbox/.ya/build/build_root/muey/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/common/catalog-common-schemas.yaml#/BasePriceDTO:
+      /home/sandbox/.ya/build/build_root/8lh1/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/common/catalog-common-schemas.yaml#/BasePriceDTO:
         description: Цена товара.
         type: object
         required:

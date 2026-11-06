@@ -2,14 +2,14 @@
 title: Список кодов стран
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/regions/getRegionsCodes.md"
-fetched_at: "2026-11-04T02:55:35Z"
-content_sha: 46ce0d030cf34e9e
+fetched_at: "2026-11-06T02:48:54Z"
+content_sha: d142ac842dd5630a
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.64.0
+    content: Diplodoc Platform v5.64.2
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/regions/getRegionsCodes.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/regions/getRegionsCodes.md
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/regions/getRegionsCodes.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21924375
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21957731
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21924375
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21957731
 
 <!-- source: ru/api/regions/getRegionsCodes.md -->
 <div class="openapi">

@@ -2,14 +2,14 @@
 title: Отчет по движению товаров (FBY)
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/reports/generateGoodsMovementReport.md"
-fetched_at: "2026-11-04T02:55:13Z"
-content_sha: 69634c7550ef218b
+fetched_at: "2026-11-06T02:48:33Z"
+content_sha: a3f49481780a963a
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.64.0
+    content: Diplodoc Platform v5.64.2
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/reports/generateGoodsMovementReport.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/reports/generateGoodsMovementReport.md
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/reports/generateGoodsMovementReport.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21924375
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21957731
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21924375
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21957731
 
 {% note warning "Структура и содержание отчетов могут изменяться без предварительного уведомления" %}
 
@@ -985,7 +985,7 @@ alternate:
       required: false
       schema:
         $ref: >-
-          /home/sandbox/.ya/build/build_root/muey/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/reports/schemas.yaml#/ReportFormatType
+          /home/sandbox/.ya/build/build_root/8lh1/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/reports/schemas.yaml#/ReportFormatType
   headers: []
   body: |-
     {

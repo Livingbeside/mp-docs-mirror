@@ -2,14 +2,14 @@
 title: Статусы заказов
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/concepts/dbs-order-status-model.md"
-fetched_at: "2026-11-04T02:54:03Z"
-content_sha: 084887903ab0fe17
+fetched_at: "2026-11-06T02:47:25Z"
+content_sha: 2be6e2bf93c0fa75
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.64.0
+    content: Diplodoc Platform v5.64.2
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/concepts/dbs-order-status-model.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/concepts/dbs-order-status-model.md
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/concepts/dbs-order-status-model.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21924375
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21957731
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21924375
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21957731
 
 # Как изменяются статусы заказов
 

@@ -2,14 +2,14 @@
 title: Готовые ярлыки для одного заказа
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/order-labels/generateOrderLabels.md"
-fetched_at: "2026-11-04T02:54:56Z"
-content_sha: 8d63d0f0859338c4
+fetched_at: "2026-11-06T02:48:16Z"
+content_sha: fd5d3aca0f5982b8
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.64.0
+    content: Diplodoc Platform v5.64.2
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/order-labels/generateOrderLabels.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/order-labels/generateOrderLabels.md
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/order-labels/generateOrderLabels.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21924375
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21957731
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21924375
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21957731
 
 <!-- source: ru/api/order-labels/generateOrderLabels.md -->
 <div class="openapi">
@@ -803,7 +803,7 @@ alternate:
       required: false
       schema:
         $ref: >-
-          /home/sandbox/.ya/build/build_root/muey/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/order-labels/schemas.yaml#/PageFormatType
+          /home/sandbox/.ya/build/build_root/8lh1/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/order-labels/schemas.yaml#/PageFormatType
   headers: []
   body: null
   schema: {}

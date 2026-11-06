@@ -2,14 +2,14 @@
 title: Подпись интеграций
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/concepts/integration-signing.md"
-fetched_at: "2026-11-04T02:53:56Z"
-content_sha: c90f48667ee5a1de
+fetched_at: "2026-11-06T02:47:17Z"
+content_sha: e385a51d7fe4c796
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.64.0
+    content: Diplodoc Platform v5.64.2
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/concepts/integration-signing.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/concepts/integration-signing.md
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/concepts/integration-signing.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21924375
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21957731
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21924375
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21957731
 
 # Как подписывать интеграции
 

@@ -2,14 +2,14 @@
 title: Буст продаж
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/boost.md"
-fetched_at: "2026-11-04T02:54:07Z"
-content_sha: c0c326b53f67cb50
+fetched_at: "2026-11-06T02:47:29Z"
+content_sha: 84731df1a39abd6e
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.64.0
+    content: Diplodoc Platform v5.64.2
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/step-by-step/boost.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/boost.md
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/boost.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21924375
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21957731
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21924375
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21957731
 
 # Работа с бустом продаж
 

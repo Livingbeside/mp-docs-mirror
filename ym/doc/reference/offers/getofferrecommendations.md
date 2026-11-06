@@ -2,14 +2,14 @@
 title: Рекомендации Маркета
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/offers/getOfferRecommendations.md"
-fetched_at: "2026-11-04T02:54:31Z"
-content_sha: 6ae3257b1798607c
+fetched_at: "2026-11-06T02:47:56Z"
+content_sha: ccaa4522fb16143c
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.64.0
+    content: Diplodoc Platform v5.64.2
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/offers/getOfferRecommendations.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/offers/getOfferRecommendations.md
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/offers/getOfferRecommendations.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21924375
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21957731
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21924375
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21957731
 
 <!-- source: ru/api/offers/getOfferRecommendations.md -->
 <div class="openapi">
@@ -1565,7 +1565,7 @@ alternate:
           непривлекательными ценами.
         $ref: '#/$defs/PriceCompetitivenessType'
     $defs:
-      /home/sandbox/.ya/build/build_root/muey/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/offers/api/getOfferRecommendations.yaml#/PriceCompetitivenessType:
+      /home/sandbox/.ya/build/build_root/8lh1/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/offers/api/getOfferRecommendations.yaml#/PriceCompetitivenessType:
         description: |
           Привлекательность цены:
   

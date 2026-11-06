@@ -2,14 +2,14 @@
 title: Сообщения об ошибках
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/push-notifications/concepts/error-codes.md"
-fetched_at: "2026-11-04T02:55:43Z"
-content_sha: 3634dadc1bae244d
+fetched_at: "2026-11-06T02:49:03Z"
+content_sha: 1fa0f3cc60b87fc1
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.64.0
+    content: Diplodoc Platform v5.64.2
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/push-notifications/concepts/error-codes.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/push-notifications/concepts/error-codes.md
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/push-notifications/concepts/error-codes.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21924375
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21957731
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21924375
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21957731
 
 # Сообщения об ошибках
 

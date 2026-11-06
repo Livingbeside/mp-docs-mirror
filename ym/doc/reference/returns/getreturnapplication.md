@@ -2,14 +2,14 @@
 title: Заявление покупателя
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/returns/getReturnApplication.md"
-fetched_at: "2026-11-04T02:55:04Z"
-content_sha: 72fe18a5286b0873
+fetched_at: "2026-11-06T02:48:25Z"
+content_sha: bcdcde720c861fc4
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.64.0
+    content: Diplodoc Platform v5.64.2
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/returns/getReturnApplication.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/returns/getReturnApplication.md
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/returns/getReturnApplication.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21924375
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21957731
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21924375
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21957731
 
 <!-- source: ru/api/returns/getReturnApplication.md -->
 <div class="openapi">

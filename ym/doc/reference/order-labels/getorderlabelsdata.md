@@ -2,14 +2,14 @@
 title: Данные для изготовления ярлыков
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/order-labels/getOrderLabelsData.md"
-fetched_at: "2026-11-04T02:54:56Z"
-content_sha: f7c4d340e2c56325
+fetched_at: "2026-11-06T02:48:17Z"
+content_sha: 68ad60732fd0f062
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.64.0
+    content: Diplodoc Platform v5.64.2
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/order-labels/getOrderLabelsData.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/order-labels/getOrderLabelsData.md
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/order-labels/getOrderLabelsData.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21924375
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21957731
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21924375
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21957731
 
 <!-- source: ru/api/order-labels/getOrderLabelsData.md -->
 <div class="openapi">

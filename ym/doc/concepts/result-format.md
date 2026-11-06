@@ -2,14 +2,14 @@
 title: Формат ответов
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/concepts/result-format.md"
-fetched_at: "2026-11-04T02:53:53Z"
-content_sha: 273bfe01d4ee6434
+fetched_at: "2026-11-06T02:47:14Z"
+content_sha: 188bba181dbb2110
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.64.0
+    content: Diplodoc Platform v5.64.2
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/concepts/result-format.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/concepts/result-format.md
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/concepts/result-format.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21924375
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21957731
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21924375
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21957731
 
 # Формат ответа
 

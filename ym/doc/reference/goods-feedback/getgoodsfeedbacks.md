@@ -2,14 +2,14 @@
 title: Отзывы на товары продавца
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/goods-feedback/getGoodsFeedbacks.md"
-fetched_at: "2026-11-04T02:55:20Z"
-content_sha: 02a5a9db16c61a75
+fetched_at: "2026-11-06T02:48:42Z"
+content_sha: ed94202e5c97016a
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.64.0
+    content: Diplodoc Platform v5.64.2
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/goods-feedback/getGoodsFeedbacks.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/goods-feedback/getGoodsFeedbacks.md
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/goods-feedback/getGoodsFeedbacks.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21924375
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21957731
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21924375
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21957731
 
 <!-- source: ru/api/goods-feedback/getGoodsFeedbacks.md -->
 <div class="openapi">
@@ -1861,7 +1861,7 @@ alternate:
         description: Фильтр отзывов за баллы Плюса.
         type: boolean
     $defs:
-      /home/sandbox/.ya/build/build_root/muey/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/goods-feedback/schemas.yaml#/FeedbackReactionStatusType:
+      /home/sandbox/.ya/build/build_root/8lh1/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/goods-feedback/schemas.yaml#/FeedbackReactionStatusType:
         description: |
           Статус реакции на отзыв:
   

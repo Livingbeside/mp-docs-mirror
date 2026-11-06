@@ -2,14 +2,14 @@
 title: LaaS
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/overview/laas.md"
-fetched_at: "2026-11-04T02:54:11Z"
-content_sha: f39ddddb50bbbf1d
+fetched_at: "2026-11-06T02:47:35Z"
+content_sha: b4b0491df5e1fa0d
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.64.0
+    content: Diplodoc Platform v5.64.2
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/overview/laas.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/overview/laas.md
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/overview/laas.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21924375
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21957731
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21924375
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21957731
 
 # Список методов, используемых в модели LaaS
 

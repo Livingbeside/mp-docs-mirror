@@ -2,14 +2,14 @@
 title: Настройки магазина
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/campaigns/getCampaignSettings.md"
-fetched_at: "2026-11-04T02:54:15Z"
-content_sha: 038654e91106e728
+fetched_at: "2026-11-06T02:47:41Z"
+content_sha: a88f179c7e2427d4
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.64.0
+    content: Diplodoc Platform v5.64.2
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/campaigns/getCampaignSettings.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/campaigns/getCampaignSettings.md
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/campaigns/getCampaignSettings.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21924375
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21957731
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21924375
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21957731
 
 <!-- source: ru/api/campaigns/getCampaignSettings.md -->
 <div class="openapi">

@@ -2,14 +2,14 @@
 title: Типы ошибок и что с ними делать
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/concepts/error-codes.md"
-fetched_at: "2026-11-04T02:53:54Z"
-content_sha: de6c0d17869a21b2
+fetched_at: "2026-11-06T02:47:14Z"
+content_sha: 55dd6307c59ff6b7
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.64.0
+    content: Diplodoc Platform v5.64.2
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/concepts/error-codes.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/concepts/error-codes.md
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/concepts/error-codes.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21924375
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21957731
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21924375
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21957731
 
 # Типы ошибок и что с ними делать
 
@@ -306,6 +306,12 @@ alternate:
 
 ||**Stock for 'sku' should not be older than a day** | Данные об остатках для товара не должны быть старше суток. | Передайте актуальную дату и время обновления (не старше 24 часов) в поле `updatedAt`. | [PUT v2/campaigns/{campaignId}/offers/stocks](https://yandex.ru/dev/market/partner-api/doc/ru/reference/stocks/updateStocks.md)
 [POST v3/businesses/{businessId}/offers/stocks/update](https://yandex.ru/dev/market/partner-api/doc/ru/reference/stocks/updateStocksOnPartnerWarehouses.md) ||
+
+||**Forbidden to use Shop SKUs with any other filters.** | Нельзя передавать SKU вместе с другими фильтрами. | Не передавайте список SKU вместе с `archived`. | [POST v2/campaigns/{campaignId}/offers/stocks](https://yandex.ru/dev/market/partner-api/doc/ru/reference/stocks/getStocks.md)
+[POST v3/businesses/{businessId}/offers/stocks](https://yandex.ru/dev/market/partner-api/doc/ru/reference/stocks/getStocksOnPartnerWarehouses.md) ||
+
+||**Warehouse with id 'warehouseId' not found or is not accessible** | Склад не найден или недоступен кабинету. | Проверьте идентификатор склада. | [POST v2/campaigns/{campaignId}/offers/stocks](https://yandex.ru/dev/market/partner-api/doc/ru/reference/stocks/getStocks.md)
+[POST v3/businesses/{businessId}/offers/stocks](https://yandex.ru/dev/market/partner-api/doc/ru/reference/stocks/getStocksOnPartnerWarehouses.md) ||
 |#
 
 ### Ошибки при работе с точками продаж {#outlets}

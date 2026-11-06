@@ -2,14 +2,14 @@
 title: Информация о невыкупе или возврате
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/returns/getReturn.md"
-fetched_at: "2026-11-04T02:55:03Z"
-content_sha: 22eab06d5bfcfe4b
+fetched_at: "2026-11-06T02:48:25Z"
+content_sha: d5b2198dafdf8aab
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.64.0
+    content: Diplodoc Platform v5.64.2
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/returns/getReturn.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/returns/getReturn.md
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/returns/getReturn.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21924375
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21957731
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21924375
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21957731
 
 <!-- source: ru/api/returns/getReturn.md -->
 <div class="openapi">

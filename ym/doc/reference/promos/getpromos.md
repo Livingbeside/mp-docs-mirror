@@ -2,14 +2,14 @@
 title: Список акций
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/promos/getPromos.md"
-fetched_at: "2026-11-04T02:54:34Z"
-content_sha: 73f6fe176b617219
+fetched_at: "2026-11-06T02:47:58Z"
+content_sha: 2d06c5b38f1ff6dc
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.64.0
+    content: Diplodoc Platform v5.64.2
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/promos/getPromos.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/promos/getPromos.md
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/promos/getPromos.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21924375
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21957731
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21924375
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21957731
 
 <!-- source: ru/api/promos/getPromos.md -->
 <div class="openapi">
@@ -1662,7 +1662,7 @@ alternate:
           По умолчанию возвращаются все типы акций.
         $ref: '#/$defs/MechanicsType'
     $defs:
-      /home/sandbox/.ya/build/build_root/muey/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/promos/schemas.yaml#/MechanicsType:
+      /home/sandbox/.ya/build/build_root/8lh1/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/promos/schemas.yaml#/MechanicsType:
         description: |
           Тип акции:
   

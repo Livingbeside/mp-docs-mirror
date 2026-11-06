@@ -2,14 +2,14 @@
 title: В магазине
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/offers/deleteCampaignOffers.md"
-fetched_at: "2026-11-04T02:54:23Z"
-content_sha: c6ecfc4b2ca1fae7
+fetched_at: "2026-11-06T02:47:49Z"
+content_sha: 94ea551f3013dea5
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.64.0
+    content: Diplodoc Platform v5.64.2
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/offers/deleteCampaignOffers.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/offers/deleteCampaignOffers.md
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/offers/deleteCampaignOffers.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21924375
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21957731
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21924375
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21957731
 
 <!-- source: ru/api/offers/deleteCampaignOffers.md -->
 <div class="openapi">

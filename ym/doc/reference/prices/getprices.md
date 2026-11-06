@@ -2,14 +2,14 @@
 title: Список цен
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/prices/getPrices.md"
-fetched_at: "2026-11-04T02:55:40Z"
-content_sha: 00ca0a2cf3bbd7b3
+fetched_at: "2026-11-06T02:48:58Z"
+content_sha: 2d2982ad05768182
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.64.0
+    content: Diplodoc Platform v5.64.2
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/prices/getPrices.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/prices/getPrices.md
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/prices/getPrices.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21924375
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21957731
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21924375
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21957731
 
 <!-- source: ru/api/prices/getPrices.md -->
 <div class="openapi">
