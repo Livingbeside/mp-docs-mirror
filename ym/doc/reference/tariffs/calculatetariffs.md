@@ -2,8 +2,8 @@
 title: Стоимость услуг
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/tariffs/calculateTariffs.md"
-fetched_at: "2026-11-06T02:47:53Z"
-content_sha: 180d726565eb80f4
+fetched_at: "2026-11-07T02:57:32Z"
+content_sha: 27fe14b1afd231c0
 ---
 
 ---
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/tariffs/calculateTariffs.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21957731
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21966232
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21957731
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21966232
 
 <!-- source: ru/api/tariffs/calculateTariffs.md -->
 <div class="openapi">
@@ -1701,7 +1701,7 @@ alternate:
               minimum: 1
               default: 1
     $defs:
-      /home/sandbox/.ya/build/build_root/8lh1/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/common/schemas.yaml#/SellingProgramType:
+      /home/sandbox/.ya/build/build_root/wu56/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/common/schemas.yaml#/SellingProgramType:
         description: |
           Модель работы:
   
@@ -1717,7 +1717,7 @@ alternate:
           - DBS
           - EXPRESS
           - LAAS
-      /home/sandbox/.ya/build/build_root/8lh1/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/tariffs/api/calculateTariffs.yaml#/PaymentFrequencyType:
+      /home/sandbox/.ya/build/build_root/wu56/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/tariffs/api/calculateTariffs.yaml#/PaymentFrequencyType:
         description: >
           Частота выплат:
   
@@ -1739,7 +1739,7 @@ alternate:
           - WEEKLY
           - BIWEEKLY
           - MONTHLY
-      /home/sandbox/.ya/build/build_root/8lh1/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/common/schemas.yaml#/CurrencyType:
+      /home/sandbox/.ya/build/build_root/wu56/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/common/schemas.yaml#/CurrencyType:
         type: string
         description: |
           Коды валют:
@@ -1873,7 +1873,7 @@ alternate:
           - NAD
           - TL
           - UE
-      /home/sandbox/.ya/build/build_root/8lh1/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/tariffs/api/calculateTariffs.yaml#/CalculateTariffsParametersDTO:
+      /home/sandbox/.ya/build/build_root/wu56/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/tariffs/api/calculateTariffs.yaml#/CalculateTariffsParametersDTO:
         description: >-
           Параметры для расчета стоимости услуг. Обязательно необходимо указать
           параметр `campaignId` либо `sellingProgram`. Совместное использование

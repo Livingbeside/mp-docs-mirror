@@ -2,8 +2,8 @@
 title: Статусы заказов
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/concepts/dbs-order-status-model.md"
-fetched_at: "2026-11-06T02:47:25Z"
-content_sha: 2be6e2bf93c0fa75
+fetched_at: "2026-11-07T02:57:01Z"
+content_sha: af6339ee16ffbd19
 ---
 
 ---
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/concepts/dbs-order-status-model.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21957731
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21966232
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21957731
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21966232
 
 # Как изменяются статусы заказов
 

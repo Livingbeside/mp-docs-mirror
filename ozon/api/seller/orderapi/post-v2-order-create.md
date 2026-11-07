@@ -9,7 +9,7 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: 77f1a897631eea15
+content_sha: bcd4b415dfc49d83
 ---
 
 # Создать заказ
@@ -29,6 +29,7 @@ content_sha: 77f1a897631eea15
 **Тело запроса** (`application/json`):
 
 - `buyer` — object **обязательный**. Информация о покупателе.
+  - `email` — string. Электронная почта.
   - `first_name` — string **обязательный**. Имя.
   - `last_name` — string **обязательный**. Фамилия.
   - `middle_name` — string. Отчество.

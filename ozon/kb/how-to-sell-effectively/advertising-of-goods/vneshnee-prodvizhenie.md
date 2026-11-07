@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /how-to-sell-effectively/advertising-of-goods/vneshnee-prodvizhenie
 source: "https://seller-edu.ozon.ru/libra/how-to-sell-effectively/advertising-of-goods/vneshnee-prodvizhenie"
-updated: "2026-10-19 10:44:42"
+updated: "2026-11-06 15:10:16.675538"
 doc_id: 23579
-fetched_at: "2026-10-20T01:56:49Z"
-content_sha: ebdf577505a9e5f5
+fetched_at: "2026-11-07T02:53:27Z"
+content_sha: 6a2c501b9eb488d5
 ---
 
 # «Внешнее продвижение»
@@ -50,7 +50,7 @@ C 1 октября по 31 декабря 2026 года дарим [бонусы
 
 # Как запустить «Внешнее продвижение»
 
-Перед запуском убедитесь, что подключили витрину ВКонтакте, — без этого не получится продвигать товары через блогеров. [Как это сделать](https://seller-edu.ozon.ru/api-ozon/prilojeniya-v-lichnom-kabinete/vitrina-vkontakte)
+Перед запуском убедитесь, что подключили витрину ВКонтакте, — без этого не получится продвигать товары через блогеров. [Как это сделать](https://seller-edu.ozon.ru/api-ozon/servisy-dlya-biznesa-v-lichnom-kabinete/vitrina-vkontakte)
 
 1. Откройте **[Продвижение → Внешнее продвижение](https://seller.ozon.ru/app/advertisement/product/external-promo)**.
 2. Нажмите **Создать задание**.

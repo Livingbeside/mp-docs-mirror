@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /digest/chto-novogo-8-12-dekabrya
 source: "https://seller-edu.ozon.ru/libra/digest/chto-novogo-8-12-dekabrya"
-updated: "2026-06-08 11:15:34.460286"
+updated: "2026-11-06 15:10:18.092116"
 doc_id: 53697
-fetched_at: "2026-08-28T12:11:14Z"
-content_sha: 9ef191246ffbf4d2
+fetched_at: "2026-11-07T02:53:27Z"
+content_sha: 5f1f7e28384dcd88
 ---
 
 # Что нового в Базе знаний: 8–12 декабря
@@ -76,7 +76,7 @@ _Главная / Дайджест изменений_
 
 # Витрины и бренды
 
-**Витрины бренда и магазина. **В статьи «[Официальная витрина бренда](https://seller-edu.ozon.ru/account-brand/oficialnaya-vitrina-brenda)» и «[Витрина магазина](https://seller-edu.ozon.ru/work-with-goods/oformlenie-magazina/showcase)» добавили запись вебинара.  В статье «[Подключение витрины ВКонтакте](https://seller-edu.ozon.ru/api-ozon/prilojeniya-v-lichnom-kabinete/vitrina-vkontakte)» убрали лимит в 20 000 товаров для размещения на витрине.
+**Витрины бренда и магазина. **В статьи «[Официальная витрина бренда](https://seller-edu.ozon.ru/account-brand/oficialnaya-vitrina-brenda)» и «[Витрина магазина](https://seller-edu.ozon.ru/work-with-goods/oformlenie-magazina/showcase)» добавили запись вебинара.  В статье «[Подключение витрины ВКонтакте](https://seller-edu.ozon.ru/api-ozon/servisy-dlya-biznesa-v-lichnom-kabinete/vitrina-vkontakte)» убрали лимит в 20 000 товаров для размещения на витрине.
 
 # Правила и безопасность
 

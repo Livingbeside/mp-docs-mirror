@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /work-with-byuers/otzyvy/sbor-otzyvov/sbor-pervyh-otzyvov/chto-takoe-sbor-pervyh-otzyvov
 source: "https://seller-edu.ozon.ru/libra/work-with-byuers/otzyvy/sbor-otzyvov/sbor-pervyh-otzyvov/chto-takoe-sbor-pervyh-otzyvov"
-updated: "2026-10-09 15:07:59"
+updated: "2026-11-06 17:38:29"
 doc_id: 75467
-fetched_at: "2026-10-11T02:13:25Z"
-content_sha: d8eb324aee4ea887
+fetched_at: "2026-11-07T02:53:28Z"
+content_sha: 2cf16541afcb228b
 ---
 
 # Что такое сбор первых отзывов
@@ -40,9 +40,13 @@ _Главная / Работа с покупателями / Отзывы / Ин
 
 Механика закрепления отзывов зависит от того, подключена ли у вас подписка [Premium Pro](https://seller-edu.ozon.ru/libra/seller-rating/podpiska-premium-pro) или [«Управление отзывами»](https://seller-edu.ozon.ru/libra/seller-rating/podpiska-upravlenie-otzyvami).
 
+Без подписок
+
 Каждый полученный в сборе отзыв от топ-автора закрепляем в карточке в том порядке, в котором вы их получили — каждый следующий отзыв сменяет предыдущий.
 
 Максимальный срок закрепления для каждого отзыва — 30 календарных дней. Если вы хотите, чтобы отзыв был закреплён дольше, подключите подписку [Premium Pro](https://seller-edu.ozon.ru/libra/seller-rating/podpiska-premium-pro) или [«Управление отзывами»](https://seller-edu.ozon.ru/libra/seller-rating/podpiska-upravlenie-otzyvami).
+
+С любой из подписок
 
 С подписками [Premium Pro](https://seller-edu.ozon.ru/libra/seller-rating/podpiska-premium-pro) или [«Управление отзывами»](https://seller-edu.ozon.ru/libra/seller-rating/podpiska-upravlenie-otzyvami) автоматически находим полезные отзывы и закрепляем их в карточке — это могут быть как собранные в сборе первых отзывов, так и любые другие.
 

@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /ozon-logistika/dostavka-dlya-prodavcov/kak-podkluchit-ozon-dostavku
 source: "https://seller-edu.ozon.ru/libra/ozon-logistika/dostavka-dlya-prodavcov/kak-podkluchit-ozon-dostavku"
-updated: "2026-10-09 08:28:20"
+updated: "2026-11-06 09:22:19"
 doc_id: 70535
-fetched_at: "2026-10-10T02:17:50Z"
-content_sha: 72c91b5dd9683130
+fetched_at: "2026-11-07T02:53:28Z"
+content_sha: 760cfb52d4f204f9
 ---
 
 # Как подключить Ozon Доставку для продавцов
@@ -71,6 +71,8 @@ _Главная / Ozon Доставка / Ozon Доставка для прод�
   **UDS** — для подключения следуйте [инструкции](https://cdn1.ozonusercontent.com/s3/seller-app-store-public/fc74ebf6-f26b-431b-a01a-29d509aaa183.pdf).
 
 ### Прямая API-интеграция в личном кабинете Ozon
+
+Запустили изолированную тестовую среду — песочницу (Sandbox) для Seller API Ozon, позволяющую отлаживать интеграцию приложения до вывода в боевую среду. Доступ к песочнице бесплатный, а все запросы выполняются без затрагивания боевых данных продавца. Для тестирования предоставляются готовые данные. [Подробнее о подключении и работы с песочницей](https://dev.ozon.ru/start/562-Zapusk-Sandbox-v-Seller-API-novye-vozmozhnosti-dlia-integratsii/)
 
 #### Этап 1. Подготовьтесь к интеграции
 

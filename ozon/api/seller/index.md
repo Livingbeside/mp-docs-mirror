@@ -2,9 +2,9 @@
 title: Документация Ozon Seller API — все методы
 api: ozon-seller
 spec_version: 2.1
-operations: 483
+operations: 484
 source: "https://docs.ozon.ru/api/seller/"
-content_sha: 3eb9263b28b8dbc4
+content_sha: c46bf3dbcf1f403c
 ---
 
 # Документация Ozon Seller API
@@ -20,7 +20,7 @@ content_sha: 3eb9263b28b8dbc4
 
 [](https://seller-edu.ozon.ru/webinars/5940/)
 
-Версия спеки: `2.1` · методов: **483** · разделов справки: **27**
+Версия спеки: `2.1` · методов: **484** · разделов справки: **27**
 
 Источник: https://docs.ozon.ru/api/seller/
 
@@ -200,6 +200,7 @@ content_sha: 3eb9263b28b8dbc4
 | `POST` | `/v1/order/cancel/check` | OrderAPI | [Проверить возможность отмены заказа](orderapi/post-v1-order-cancel-check.md) |
 | `POST` | `/v1/order/cancel/status` | OrderAPI | [Получить статус отмены заказа](orderapi/post-v1-order-cancel-status.md) |
 | `POST` | `/v1/order/cancel` | OrderAPI | [Отменить заказ](orderapi/post-v1-order-cancel.md) |
+| `POST` | `/v1/order/code/get` | OrderAPI | [Получить код выдачи заказа](orderapi/post-v1-order-code-get.md) |
 | `POST` | `/v1/pass/list` | Pass | [Список пропусков](pass/post-v1-pass-list.md) |
 | `POST` | `/v1/polygon/bind` | PolygonAPI | [Свяжите метод доставки с полигоном доставки](polygonapi/post-v1-polygon-bind.md) |
 | `POST` | `/v1/polygon/create` | PolygonAPI | [Создайте полигон доставки](polygonapi/post-v1-polygon-create.md) |

@@ -6,8 +6,8 @@ path: /work-with-byuers/otzyvy
 source: "https://seller-edu.ozon.ru/libra/work-with-byuers/otzyvy"
 updated: "2026-10-13 08:05:21"
 doc_id: 85727
-fetched_at: "2026-10-14T01:48:44Z"
-content_sha: 52a268caf5d270da
+fetched_at: "2026-11-07T02:53:27Z"
+content_sha: 04a11d98bffb8707
 ---
 
 # Отзывы
@@ -19,6 +19,6 @@ _Главная / Работа с покупателями_
 ## Вложенные разделы
 - [Инструменты сбора отзывов](https://seller-edu.ozon.ru/libra/work-with-byuers/otzyvy/sbor-otzyvov)
 - [Как работать с отзывами от покупателей](https://seller-edu.ozon.ru/libra/work-with-byuers/otzyvy/buyers-reviews)
-- [Закрепление отзыва по подписке](https://seller-edu.ozon.ru/libra/work-with-byuers/otzyvy/zakreplenie-otzyvov)
+- [Закрепление отзыва](https://seller-edu.ozon.ru/libra/work-with-byuers/otzyvy/zakreplenie-otzyvov)
 - [Обзор отзывов о товаре](https://seller-edu.ozon.ru/libra/work-with-byuers/otzyvy/obzor-otzyvov-o-tovare)
 - [Скрыть отзыв](https://seller-edu.ozon.ru/libra/work-with-byuers/otzyvy/skryt-otzyv)

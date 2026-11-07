@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /commissions-tariffs/commissions-tariffs-ozon/rashody-ozon-dostavka-dlya-biznesa
 source: "https://seller-edu.ozon.ru/libra/commissions-tariffs/commissions-tariffs-ozon/rashody-ozon-dostavka-dlya-biznesa"
-updated: "2026-10-22 11:43:30"
+updated: "2026-11-06 15:45:21"
 doc_id: 75030
-fetched_at: "2026-10-23T01:42:53Z"
-content_sha: b9c07383e76a35fe
+fetched_at: "2026-11-07T02:53:27Z"
+content_sha: 234d43cf369f28e1
 ---
 
 # Ozon Доставка для бизнеса: расходы на доставку, невыкупы, отмены и другие услуги
@@ -155,7 +155,7 @@ Ozon Доставка для бизнеса — это сервис, где в�
 
 Если определить кластер отправки или назначения по техническим причинам не удалось, начислим плату по универсальному тарифу в зависимости от объёма отправления.
 
-[Скачать таблицу с тарифами](https://cdn.ozone.ru/s3/ozon-disk-api/Seller-edu/files/commissions-tariffs/commissions/logistika-fbo-fbs-30102026_1789376537.xlsx)
+[Скачать таблицу с тарифами](https://cdn.ozone.ru/s3/ozon-disk-api/Seller-edu/files/commissions-tariffs/Ozon-logistica/tariffs-logistika-ozon-dostavka-30102026_1789382722.xlsx)
 
 С 24 сентября по 29 октября 2026 г.
 

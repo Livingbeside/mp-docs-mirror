@@ -5,12 +5,19 @@ tag: News
 group: Обновления
 kind: changelog
 source: "https://docs.ozon.ru/api/seller/"
-content_sha: b0dbaa736b4995b5
+content_sha: 42ccecf897112bdd
 ---
 
 # Обновления
 
 Следите за обновлениями документации на платформе для разработчиков [Ozon for dev](https://dev.ozon.ru/).
+
+## 6 ноября 2026
+
+| Метод | Изменение |
+|--------------------------------------------------------|--------------------------------------------------|
+| [/v2/order/create](#operation/OrderAPI_OrderCreate) | Добавили параметр `buyer.email` в запрос метода. |
+| [/v1/order/code/get](#operation/OrderAPI_OrderCodeGet) | Добавили метод для получения кода выдачи заказа. |
 
 ## 5 ноября 2026
 

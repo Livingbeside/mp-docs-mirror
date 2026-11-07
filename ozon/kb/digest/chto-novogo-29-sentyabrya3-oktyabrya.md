@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /digest/chto-novogo-29-sentyabrya3-oktyabrya
 source: "https://seller-edu.ozon.ru/libra/digest/chto-novogo-29-sentyabrya3-oktyabrya"
-updated: "2026-07-10 08:58:20"
+updated: "2026-11-06 15:10:17.826847"
 doc_id: 36445
-fetched_at: "2026-08-28T12:11:14Z"
-content_sha: 834ac8cde771156f
+fetched_at: "2026-11-07T02:53:27Z"
+content_sha: 141a9158326fb118
 ---
 
 # Что нового в Базе знаний: 29 сентября–3 октября
@@ -18,7 +18,7 @@ _Главная / Дайджест изменений_
 
 **Ozon Логистика **— запустили тест нового сервиса, который позволит продавать с собственного интернет-магазина и при этом использовать все преимущества нашей логистики. Подключение откроем в начале ноября, но подготовиться можно уже сейчас. В новых статьях рассказали, как [работать в разделе](https://seller-edu.ozon.ru/ozon-logistika), опубликовали [тарифы для доставки](/commissions-tariffs/legal-information/full-actual-commissions), описали [расходы на доставку, невыкупы и отмены через «Ozon Логистику»](https://seller-edu.ozon.ru/commissions-tariffs/commissions-tariffs-ozon/rashody-na-dostavku-cherez-ozon-logistiku).
 
-**Реклама ВКонтакте со скидкой 99%.** Теперь всем продавцам доступно «[Внешнее продвижение](https://seller-edu.ozon.ru/how-to-sell-effectively/advertising-of-goods/vneshnee-prodvizhenie)» — инструмент для рекламы у блогеров ВКонтакте. Отличная возможность привлечь новую аудиторию и повысить узнаваемость бренда. А в статье [«Подключение витрины ВКонтакте»](https://seller-edu.ozon.ru/api-ozon/prilojeniya-v-lichnom-kabinete/vitrina-vkontakte) добавили инструкцию, как выбрать товары для витрины вручную.
+**Реклама ВКонтакте со скидкой 99%.** Теперь всем продавцам доступно «[Внешнее продвижение](https://seller-edu.ozon.ru/how-to-sell-effectively/advertising-of-goods/vneshnee-prodvizhenie)» — инструмент для рекламы у блогеров ВКонтакте. Отличная возможность привлечь новую аудиторию и повысить узнаваемость бренда. А в статье [«Подключение витрины ВКонтакте»](https://seller-edu.ozon.ru/api-ozon/servisy-dlya-biznesa-v-lichnom-kabinete/vitrina-vkontakte) добавили инструкцию, как выбрать товары для витрины вручную.
 
 # Контент, цены и продвижение
 

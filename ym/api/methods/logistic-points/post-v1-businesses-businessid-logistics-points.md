@@ -10,7 +10,7 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: 3afead4ae2f2c968
+content_sha: cb3a4013bc953745
 ---
 
 # Получение точек ПВЗ Маркета
@@ -68,7 +68,7 @@ content_sha: 3afead4ae2f2c968
         - `width` — integer<int32> **обязательный**. Максимальная ширина в сантиметрах.
         - `length` — integer<int32> **обязательный**. Максимальная длина в сантиметрах.
         - `dimensionsSum` — integer<int32> **обязательный**. Максимальная сумма измерений в сантиметрах.
-    - `features` — array[string (RETURN_ALLOWED)]. Свойства пункта выдачи.
+    - `features` — array[string (RETURN_ALLOWED, FITTING_ALLOWED)]. Свойства пункта выдачи.
     - `storagePeriod` — integer<int64> **обязательный**. Срок хранения заказа в пункте выдачи. Указывается в днях.
   - `paging` — object. Идентификатор следующей страницы.
     - `nextPageToken` — string. Идентификатор следующей страницы результатов.
