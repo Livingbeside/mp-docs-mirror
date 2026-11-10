@@ -11850,6 +11850,7 @@
           "content": {
             "multipart/form-data": {
               "schema": {
+                "additionalProperties": true,
                 "properties": {
                   "uploadfile": {
                     "format": "binary",

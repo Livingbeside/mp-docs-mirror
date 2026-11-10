@@ -8,19 +8,20 @@ tags:
   - campaigns
 spec_version: promotion
 source: "https://dev.wildberries.ru/docs/openapi/promotion"
-deprecated: false
-content_sha: 12df21d6ba30f670
+deprecated: true
+content_sha: b2cab8efbc092b0e
 ---
 
 # Информация о кампаниях
 
 `GET /api/advert/v2/adverts`
 
+> ⚠️ Метод помечен как **deprecated**.
+
 Описание метода
 
-Метод возвращает информацию о рекламных кампаниях с единой или ручной ставкой по их статусам, типам оплаты и ID.
+Метод будет отключен [10 января](https://dev.wildberries.ru/release-notes?id=597).
 
- 
 Лимит запросов на один профиль продавца:
 
 | Тип | Период | Лимит | Интервал | Всплеск |
@@ -67,7 +68,6 @@ content_sha: 12df21d6ba30f670
     - `created` — string<date-time> **обязательный**. Время создания кампании
     - `updated` — string<date-time> **обязательный**. Время последнего изменения кампании
     - `started` — string<date-time> **обязательный**. Время последнего запуска кампании
-    - `deleted` — string<date-time> **обязательный**. Время удаления кампании. Если кампания не удалена, время указывается в будущем
 
 **400** — Неправильный запрос
 

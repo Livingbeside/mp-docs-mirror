@@ -9,7 +9,7 @@ tags:
 spec_version: order
 source: "https://dev.wildberries.ru/docs/openapi/orders-fbs"
 deprecated: false
-content_sha: 4ce427c4f8260bd0
+content_sha: 3ab0ef2aaf9f6d50
 ---
 
 # Отменить сборочное задание{{ /api/v3/orders/{orderId}/cancel }}
@@ -21,7 +21,7 @@ content_sha: 4ce427c4f8260bd0
 Метод отменяет [сборочное задание](./orders-fbs#tag/fbsAssemblyOrders/operation/getV3Orders) и переводит в [статус](./orders-fbs#tag/fbsAssemblyOrders/operation/postV3OrdersStatus) `cancel` — отменено продавцом.
 
 Сборочное задание можно отменить до его передачи Wildberries.
-Чтобы проверить, можно ли отменить сборочное задание, используйте метод POST /api/v3/orders/status, поле isCancellable.
+Чтобы проверить, можно ли отменить сборочное задание, используйте метод получения статусов сборочных заданий, поле isCancellable.
 
 Лимит запросов на один профиль продавца:
 

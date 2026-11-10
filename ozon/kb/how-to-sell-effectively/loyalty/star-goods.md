@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /how-to-sell-effectively/loyalty/star-goods
 source: "https://seller-edu.ozon.ru/libra/how-to-sell-effectively/loyalty/star-goods"
-updated: "2026-08-13 15:24:05"
+updated: "2026-11-09 08:56:56"
 doc_id: 12716
-fetched_at: "2026-08-28T12:11:15Z"
-content_sha: a8de90a2eb0c0304
+fetched_at: "2026-11-10T02:46:11Z"
+content_sha: 8370045ce2164d06
 ---
 
 # Программа лояльности «Звёздные товары»
@@ -39,6 +39,8 @@ _Главная / Продвижение / Работа с лояльность�
 **Бесплатный период **— даём 30 дней, чтобы вы бесплатно оценили все преимущества программы.
 
 **Приветственные бонусы** — вы можете бесплатно подключить [инструмент](https://seller-edu.ozon.ru/libra/how-to-sell-effectively/loyalty/bonusy-prodavca) и предлагать посетителям магазина бонусы, которые они смогут тратить на заказы ваших товаров. Пока доступно только для продавцов из РФ. [Подробнее об акции](https://finance.ozon.ru/documents/promo_welcome_bonuses)
+
+**Скидки на рассылки бонусов** — вы получите 3 бесплатные разовые рассылки бонусов в календарный месяц и сниженную комиссию за [автоматические рассылки](https://seller-edu.ozon.ru/libra/how-to-sell-effectively/loyalty/automatic-mailing). [Подробнее о скидках](https://seller-edu.ozon.ru/libra/how-to-sell-effectively/loyalty/mailing-bonusy-prodavca#%D0%BA%D0%BE%D0%B3%D0%B4%D0%B0-%D0%BC%D0%BE%D0%B6%D0%BD%D0%BE-%D0%BF%D0%BE%D0%BB%D1%83%D1%87%D0%B8%D1%82%D1%8C-%D1%81%D0%BA%D0%B8%D0%B4%D0%BA%D1%83-%D0%BD%D0%B0-%D1%80%D0%B0%D1%81%D1%81%D1%8B%D0%BB%D0%BA%D1%83)
 
 # Кто может участвовать в программе лояльности
 

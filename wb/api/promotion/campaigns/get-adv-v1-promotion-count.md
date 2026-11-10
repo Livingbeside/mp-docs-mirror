@@ -9,7 +9,7 @@ tags:
 spec_version: promotion
 source: "https://dev.wildberries.ru/docs/openapi/promotion"
 deprecated: false
-content_sha: b8412482c6a84af3
+content_sha: ccc3485d1da929ff
 ---
 
 # Списки кампаний
@@ -18,7 +18,7 @@ content_sha: b8412482c6a84af3
 
 Описание метода
 
-Метод возвращает списки всех [рекламных кампаний](./promotion#tag/campaigns/operation/getV2Adverts) продавца с их ID. Кампании сгруппированы по типу и статусу, у каждой указана дата последнего изменения.
+Метод возвращает списки всех [кампаний](./promotion#tag/campaigns/operation/getV3Adverts) продавца с их ID. Кампании сгруппированы по типу и статусу, у каждой указана дата последнего изменения.
 
 Лимит запросов на один профиль продавца:
 
@@ -34,7 +34,7 @@ content_sha: b8412482c6a84af3
 **200** — Успешно
 
 - `adverts` — array[object]. Данные по кампаниям
-  - `type` — integer. Тип кампании: - `8` — кампания с единой ставкой (**устаревший тип**) - `9` — кампания с единой или ручной ставкой. Тип ставки вы можете получить с помощью метода [Информация о кампаниях](./promotion#tag/campaigns/operation/getV2Adverts), поле `bid_type`
+  - `type` — integer. Тип кампании: - `8` — кампания с единой ставкой (**устаревший тип**) - `9` — кампания с единой или ручной ставкой. Тип ставки вы можете получить с помощью метода [Информация о кампаниях](./promotion#tag/campaigns/operation/getV3Adverts), поле `bid_type`
   - `status` — integer. Статус кампании
   - `count` — integer. Количество кампаний
   - `advert_list` — array[object]. Список кампаний

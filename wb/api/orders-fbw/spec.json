@@ -284,6 +284,19 @@
           "title": "Forbidden"
         }
       },
+      "Response403TokenType": {
+        "description": "Неверный тип токена",
+        "value": {
+          "code": "base token is not allowed for this path",
+          "detail": "base token is not allowed",
+          "origin": "ag-marketplace",
+          "requestId": "722199b2e15bbca48cc1d488a7989976",
+          "status": 403,
+          "statusText": "Forbidden",
+          "timestamp": "2026-05-25T02:47:09Z",
+          "title": "forbidden"
+        }
+      },
       "ResponseTariffs": {
         "value": [
           {
@@ -1732,20 +1745,13 @@
           },
           "403": {
             "content": {
-              "application/json": {
-                "examples": {
-                  "SupplyAcceptedMoreThanYearAgo": {
-                    "$ref": "#/components/examples/SupplyAcceptedMoreThanYearAgo"
-                  }
-                },
-                "schema": {
-                  "$ref": "#/components/schemas/models.SupplyAcceptedMoreThanYearAgo"
-                }
-              },
               "application/problem+json": {
                 "examples": {
                   "Response403TokenCategory": {
                     "$ref": "#/components/examples/Response403TokenCategory"
+                  },
+                  "Response403TokenType": {
+                    "$ref": "#/components/examples/Response403TokenType"
                   }
                 },
                 "schema": {
@@ -1893,7 +1899,22 @@
             "$ref": "#/components/responses/402"
           },
           "403": {
-            "$ref": "#/components/responses/403"
+            "content": {
+              "application/problem+json": {
+                "examples": {
+                  "Response403TokenCategory": {
+                    "$ref": "#/components/examples/Response403TokenCategory"
+                  },
+                  "Response403TokenType": {
+                    "$ref": "#/components/examples/Response403TokenType"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/Response4XX"
+                }
+              }
+            },
+            "description": "<span class='response__value '>Доступ запрещён</span>"
           },
           "429": {
             "$ref": "#/components/responses/429"
@@ -1931,7 +1952,22 @@
             "$ref": "#/components/responses/402"
           },
           "403": {
-            "$ref": "#/components/responses/403"
+            "content": {
+              "application/problem+json": {
+                "examples": {
+                  "Response403TokenCategory": {
+                    "$ref": "#/components/examples/Response403TokenCategory"
+                  },
+                  "Response403TokenType": {
+                    "$ref": "#/components/examples/Response403TokenType"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/Response4XX"
+                }
+              }
+            },
+            "description": "<span class='response__value '>Доступ запрещён</span>"
           },
           "429": {
             "$ref": "#/components/responses/429"
@@ -1998,7 +2034,22 @@
             "$ref": "#/components/responses/402"
           },
           "403": {
-            "$ref": "#/components/responses/403"
+            "content": {
+              "application/problem+json": {
+                "examples": {
+                  "Response403TokenCategory": {
+                    "$ref": "#/components/examples/Response403TokenCategory"
+                  },
+                  "Response403TokenType": {
+                    "$ref": "#/components/examples/Response403TokenType"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/Response4XX"
+                }
+              }
+            },
+            "description": "<span class='response__value '>Доступ запрещён</span>"
           },
           "404": {
             "content": {
@@ -2109,7 +2160,22 @@
             "$ref": "#/components/responses/402"
           },
           "403": {
-            "$ref": "#/components/responses/403"
+            "content": {
+              "application/problem+json": {
+                "examples": {
+                  "Response403TokenCategory": {
+                    "$ref": "#/components/examples/Response403TokenCategory"
+                  },
+                  "Response403TokenType": {
+                    "$ref": "#/components/examples/Response403TokenType"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/Response4XX"
+                }
+              }
+            },
+            "description": "<span class='response__value '>Доступ запрещён</span>"
           },
           "404": {
             "content": {
@@ -2208,7 +2274,22 @@
             "$ref": "#/components/responses/402"
           },
           "403": {
-            "$ref": "#/components/responses/403"
+            "content": {
+              "application/problem+json": {
+                "examples": {
+                  "Response403TokenCategory": {
+                    "$ref": "#/components/examples/Response403TokenCategory"
+                  },
+                  "Response403TokenType": {
+                    "$ref": "#/components/examples/Response403TokenType"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/Response4XX"
+                }
+              }
+            },
+            "description": "<span class='response__value '>Доступ запрещён</span>"
           },
           "404": {
             "content": {
@@ -2322,7 +2403,22 @@
             "$ref": "#/components/responses/402"
           },
           "403": {
-            "$ref": "#/components/responses/403"
+            "content": {
+              "application/problem+json": {
+                "examples": {
+                  "Response403TokenCategory": {
+                    "$ref": "#/components/examples/Response403TokenCategory"
+                  },
+                  "Response403TokenType": {
+                    "$ref": "#/components/examples/Response403TokenType"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/Response4XX"
+                }
+              }
+            },
+            "description": "<span class='response__value '>Доступ запрещён</span>"
           },
           "404": {
             "content": {

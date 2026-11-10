@@ -9,7 +9,7 @@ tags:
 spec_version: ordersfbw
 source: "https://dev.wildberries.ru/docs/openapi/orders-fbw"
 deprecated: false
-content_sha: 4c86009f896a54e1
+content_sha: 7adf98ed09ef857a
 ---
 
 # Расхождения в поставке{{ /api/supplies/v1/discrepancies/{supplyId} }}
@@ -101,11 +101,14 @@ content_sha: 4c86009f896a54e1
 
 **403** — Доступ запрещён
 
-- `status` — integer **обязательный**. HTTP-статус код
-- `title` — string **обязательный**. Краткое описание ошибки
-- `detail` — string **обязательный**. Подробное описание ошибки
+- `title` — string **обязательный**. Заголовок ошибки
+- `detail` — string **обязательный**. Детали ошибки
+- `code` — string. Внутренний код ошибки
 - `requestId` — string **обязательный**. ID запроса
-- `origin` — string **обязательный**. Сервис, в котором произошла ошибка
+- `origin` — string **обязательный**. ID внутреннего сервиса WB
+- `status` — number **обязательный**. HTTP статус-код
+- `statusText` — string **обязательный**. Расшифровка HTTP статус-кода
+- `timestamp` — string<date-time> **обязательный**. Дата и время запроса
 
 **404** — Не найдено
 

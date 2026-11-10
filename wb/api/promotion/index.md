@@ -2,9 +2,9 @@
 title: Маркетинг и продвижение — все методы
 api: wb-promotion
 spec_version: promotion
-operations: 42
+operations: 43
 source: "https://dev.wildberries.ru/docs/openapi/promotion"
-content_sha: f94b7426d548c744
+content_sha: f500aabcc4d6144c
 ---
 
 # Маркетинг и продвижение
@@ -20,7 +20,7 @@ content_sha: f94b7426d548c744
 
 Данные синхронизируются с базой раз в 3 минуты. Статусы кампаний меняются раз в минуту. Ставки кампаний меняются раз в 30 секунд.
 
-Версия спеки: `promotion` · методов: **42** · разделов справки: **9**
+Версия спеки: `promotion` · методов: **43** · разделов справки: **9**
 
 Источник: https://dev.wildberries.ru/docs/openapi/promotion
 
@@ -45,6 +45,7 @@ content_sha: f94b7426d548c744
 | `GET` | `/api/advert/v0/daily-limits` | campaignManagement | [Получить настройки дневных лимитов кампаний](campaignmanagement/get-api-advert-v0-daily-limits.md) |
 | `GET` | `/api/advert/v1/config` | campaignManagement | [Конфигурационные значения продвижения](campaignmanagement/get-api-advert-v1-config.md) |
 | `GET` | `/api/advert/v2/adverts` | campaigns | [Информация о кампаниях](campaigns/get-api-advert-v2-adverts.md) |
+| `GET` | `/api/advert/v3/adverts` | campaigns | [Информация о кампаниях](campaigns/get-api-advert-v3-adverts.md) |
 | `GET` | `/api/v1/calendar/promotions/details` | promoCalendar | [Детальная информация об акциях](promocalendar/get-api-v1-calendar-promotions-details.md) |
 | `GET` | `/api/v1/calendar/promotions/nomenclatures` | promoCalendar | [Список товаров для участия в акции](promocalendar/get-api-v1-calendar-promotions-nomenclatures.md) |
 | `GET` | `/api/v1/calendar/promotions` | promoCalendar | [Список акций](promocalendar/get-api-v1-calendar-promotions.md) |

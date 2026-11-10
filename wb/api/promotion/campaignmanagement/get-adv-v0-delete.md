@@ -9,7 +9,7 @@ tags:
 spec_version: promotion
 source: "https://dev.wildberries.ru/docs/openapi/promotion"
 deprecated: false
-content_sha: 9d4ad46a1c119345
+content_sha: b11d4b56153dc856
 ---
 
 # Удаление кампании
@@ -18,7 +18,7 @@ content_sha: 9d4ad46a1c119345
 
 Описание метода
 
-Метод удаляет [кампании](./promotion#tag/campaigns/operation/getV2Adverts) в статусе `4` — готова к запуску.
+Метод удаляет [кампании](./promotion#tag/campaigns/operation/getV3Adverts) в статусе `4` — готова к запуску.
 
 После удаления кампания некоторое время будет находиться в статусе `-1` — кампания в процессе удаления. Полное удаление кампании занимает от 3 до 10 минут.
 

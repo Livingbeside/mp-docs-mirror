@@ -9,7 +9,7 @@ tags:
 spec_version: promotion
 source: "https://dev.wildberries.ru/docs/openapi/promotion"
 deprecated: false
-content_sha: 337d25dd900688b3
+content_sha: 5d9cee6e5eeea903
 ---
 
 # Остатки бюджетов кампаний
@@ -18,7 +18,7 @@ content_sha: 337d25dd900688b3
 
 Описание метода
 
-Метод возвращает информацию об остатках бюджетов [кампаний](./promotion#tag/campaigns/operation/getV2Adverts).
+Метод возвращает информацию об остатках бюджетов [кампаний](./promotion#tag/campaigns/operation/getV3Adverts).
 Для кампаний в [статусах](./promotion#tag/campaigns/operation/getV1PromotionCount):
  - `4` — готова к запуску
  - `9` — активна

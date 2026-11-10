@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /api-ozon/servisy-dlya-biznesa-v-lichnom-kabinete/rabota-s-topseller-pim
 source: "https://seller-edu.ozon.ru/libra/api-ozon/servisy-dlya-biznesa-v-lichnom-kabinete/rabota-s-topseller-pim"
-updated: "2026-11-06 15:28:45"
+updated: "2026-11-09 09:56:11"
 doc_id: 24927
-fetched_at: "2026-11-07T02:53:28Z"
-content_sha: 136a5c12b8c79d49
+fetched_at: "2026-11-10T02:46:12Z"
+content_sha: 4856d80b52528e49
 ---
 
 # Работа с сервисом Topseller PIM
@@ -28,7 +28,7 @@ _Главная / API Ozon и интеграции / Сервисы для би�
 
 1. Перейдите в личном кабинете в раздел **[Товары → Каталог сервисов](https://seller.ozon.ru/app/appstore)**.
 2. Выберите Topseller PIM и нажмите **Авторизация**.
-3. Предоставьте доступ к вашему личному кабинета продавца с ролью sellerapi.product — нажмите кнопку «Разрешить».
+3. Предоставьте доступ к вашему личному кабинету продавца с ролью sellerapi.product — нажмите **Разрешить**.
 4. После успешной авторизации автоматически откроется главная страница сервиса.
 
 # Как перенести карточки

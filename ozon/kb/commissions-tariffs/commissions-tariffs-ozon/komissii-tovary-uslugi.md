@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /commissions-tariffs/commissions-tariffs-ozon/komissii-tovary-uslugi
 source: "https://seller-edu.ozon.ru/libra/commissions-tariffs/commissions-tariffs-ozon/komissii-tovary-uslugi"
-updated: "2026-10-22 12:21:07"
+updated: "2026-11-09 15:17:02"
 doc_id: 692
-fetched_at: "2026-10-23T01:42:53Z"
-content_sha: 1a20a06cab24147c
+fetched_at: "2026-11-10T02:46:11Z"
+content_sha: 7329822bc5dff260
 ---
 
 # Вознаграждение Ozon за продажу товаров
@@ -77,7 +77,7 @@ Ozon работает по модели маркетплейса, где каж�
 
 для товаров от 101 до 300 ₽ на FBO, FBO Fresh и FBS — 23%.
 
-До 1 декабря 2026 года действует скидка 3% на тарифы для FBO ПВЗ.
+До 31 января 2027 года включительно действует скидка 3% на тарифы для FBO ПВЗ.
 
 **Специальные условия для продавцов, торгующих Fashion-товарами**
 
@@ -109,23 +109,11 @@ Ozon работает по модели маркетплейса, где каж�
 
 [Скачать таблицу категорий на платформе Селект](https://cdn.ozone.ru/s3/ozon-disk-api/Seller-edu/files/commissions-tariffs/commissions/Таблица_категорий_для_расчёта_вознаграждения_Селект_07102026_1791291328.xlsx)
 
-Таблица категорий с 15 июля по 27 августа 2026 г.
+Таблица категорий до 27 августа 2026 г.
 
 [Скачать таблицу категорий](https://cdn.ozone.ru/s3/ozon-disk-api/Seller-edu/files/commissions-tariffs/commissions/Таблица_категорий_для_расчёта_вознаграждения_14072026_1783928869.xlsx)
 
 [Скачать таблицу категорий на платформе Селект](https://cdn.ozone.ru/s3/ozon-disk-api/Seller-edu/files/commissions-tariffs/select/Таблица_категорий_для_расчёта_вознаграждения_Селект_01072026_2_1782203336.xlsx)
-
-Таблица категорий с 1 по 14 июля 2026 г.
-
-[Скачать таблицу категорий](https://cdn.ozone.ru/s3/ozon-disk-api/Seller-edu/files/commissions-tariffs/commissions/Таблица_категорий_для_расчёта_вознаграждения_01062026_2_1782203024.xlsx)
-
-[Скачать таблицу категорий на платформе Селект](https://cdn.ozone.ru/s3/ozon-disk-api/Seller-edu/files/commissions-tariffs/select/Таблица_категорий_для_расчёта_вознаграждения_Селект_01072026_2_1782203336.xlsx)
-
-Таблица категорий до 30 июня 2026 г.
-
-[Скачать таблицу категорий](https://cdn.ozone.ru/s3/ozon-disk-api/Seller-edu/files/commissions-tariffs/commissions/Таблица_категорий_для_расчёта_вознаграждения_06042026-2_1773932702.xlsx)
-
-[Скачать таблицу категорий на платформе Селект](https://cdn.ozone.ru/s3/ozon-disk-api/Seller-edu/files/commissions-tariffs/select/Таблица_категорий_для_расчёта_вознаграждения_Селект_06042026_1773990352.xlsx)
 
 # Как посмотреть вознаграждение Ozon за продажу товаров
 

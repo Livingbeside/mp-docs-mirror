@@ -9,7 +9,7 @@ tags:
 spec_version: promotion
 source: "https://dev.wildberries.ru/docs/openapi/promotion"
 deprecated: false
-content_sha: eddd4037feb3e8d7
+content_sha: 300fc5faedd4cbb9
 ---
 
 # Запуск кампании
@@ -18,7 +18,7 @@ content_sha: eddd4037feb3e8d7
 
 Описание метода
 
-Метод запускает [кампании](./promotion#tag/campaigns/operation/getV2Adverts) в статусах `4` — готово к запуску — или `11` — пауза.
+Метод запускает [кампании](./promotion#tag/campaigns/operation/getV3Adverts) в статусах `4` — готово к запуску — или `11` — пауза.
 Чтобы запустить кампанию, проверьте ее бюджет. Если бюджета недостаточно, [пополните его](./promotion#tag/finances/operation/postV1BudgetDeposit).
 
 Лимит запросов на один профиль продавца:

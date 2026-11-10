@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /fbs/ozon-logistika/samopriemka
 source: "https://seller-edu.ozon.ru/libra/fbs/ozon-logistika/samopriemka"
-updated: "2026-10-26 09:07:01"
+updated: "2026-11-09 11:20:55"
 doc_id: 1780
-fetched_at: "2026-10-27T02:42:26Z"
-content_sha: 5da24660797752a5
+fetched_at: "2026-11-10T02:46:11Z"
+content_sha: b413d362f1c31fc1
 ---
 
 # Самоприёмка отправлений
@@ -25,6 +25,8 @@ _Главная / Продажа со своего склада (FBS) / Отгр
 # Где работает самоприёмка
 
 Самоприёмка доступна продавцам, отгружающим до 100 отправлений.
+
+Москва
 
 [Вешки (СЦ)](https://seller-edu.ozon.ru/fbs/punkty-priema/moskva#вешки-мо-вешки-фбс)
 
@@ -46,13 +48,19 @@ _Главная / Продажа со своего склада (FBS) / Отгр
 
 [Саларьево (СЦ)](/fbs/punkty-priema/moskva#саларьево-мск-саларьево-3-хаб)
 
+[Скотопрогонная (СЦ)](https://seller-edu.ozon.ru/fbs/punkty-priema/moskva#скотопрогонная-мск-скотопрогонная-2-хаб)
+
 [Строгино (СЦ)](https://seller-edu.ozon.ru/fbs/punkty-priema/moskva#строгино-мск-строгино-2-хаб)
 
 [Чермянская (СЦ)](/fbs/punkty-priema/moskva#чермянская-мск-чермянская-фбс)
 
+Санкт-Петербург
+
 [Волхонское (СЦ)](/fbs/punkty-priema/st-peterburg#волхонское-сц)
 
 [Порошкино (СЦ)](https://seller-edu.ozon.ru/fbs/punkty-priema/st-peterburg#порошкино-сц)
+
+Другие регионы
 
 [Абакан — Тельмана (СЦ)](https://seller-edu.ozon.ru/libra/fbs/punkty-priema/regiony#абакан-тельмана-сц)
 

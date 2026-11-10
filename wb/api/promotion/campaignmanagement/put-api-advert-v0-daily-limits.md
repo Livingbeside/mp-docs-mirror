@@ -9,7 +9,7 @@ tags:
 spec_version: promotion
 source: "https://dev.wildberries.ru/docs/openapi/promotion"
 deprecated: false
-content_sha: 8bb0ea0b3416f3d2
+content_sha: f0f31d13888cdfff
 ---
 
 # Настройка дневных лимитов кампаний
@@ -37,7 +37,7 @@ content_sha: 8bb0ea0b3416f3d2
 
 - `advertIds` — array[integer<int64>] **обязательный**. ID кампаний
 - `enabled` — boolean **обязательный**. Включить лимит: - `true` — да - `false` — нет
-- `dailyLimit` — integer<int64>. Сумма дневного лимита. Параметр обязателен при `"enabled": true`. Минимально допустимая сумма указана в поле `minDailyLimit` метода [GET /api/advert/v1/config](./promotion#tag/campaignManagement/operation/getV1Config)
+- `dailyLimit` — integer<int64>. Сумма дневного лимита. Параметр обязателен при `"enabled": true`. Минимально допустимая сумма указана в поле `minDailyLimit` метода получения [конфигурационных значений продвижения](./promotion#tag/campaignManagement/operation/getV1Config)
 - `carryOverEnabled` — boolean. Переносить неиспользованный остаток лимита на следующий день: - `true` — да - `false` — нет Параметр обязателен при `"enabled": true`
 
 ## Ответы
@@ -70,14 +70,14 @@ content_sha: 8bb0ea0b3416f3d2
 
 **403** — Доступ запрещён
 
-- `title` — string. Заголовок ошибки
-- `detail` — string. Детали ошибки
+- `title` — string **обязательный**. Заголовок ошибки
+- `detail` — string **обязательный**. Детали ошибки
 - `code` — string. Внутренний код ошибки
-- `requestId` — string. ID запроса
-- `origin` — string. ID внутреннего сервиса WB
-- `status` — number. HTTP статус-код
-- `statusText` — string. Расшифровка HTTP статус-кода
-- `timestamp` — string<date-time>. Дата и время запроса
+- `requestId` — string **обязательный**. ID запроса
+- `origin` — string **обязательный**. ID внутреннего сервиса WB
+- `status` — number **обязательный**. HTTP статус-код
+- `statusText` — string **обязательный**. Расшифровка HTTP статус-кода
+- `timestamp` — string<date-time> **обязательный**. Дата и время запроса
 
 **429** — Слишком много запросов
 

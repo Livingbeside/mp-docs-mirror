@@ -2,7 +2,7 @@
 title: Инструкция для продавцов Uzum Market — оглавление
 marketplace: uzum
 source: "https://seller.uzum.uz/manual/"
-content_sha: 3774ea8a5b793cfa
+content_sha: 013344d0be803635
 ---
 
 # Инструкция для продавцов Uzum Market
@@ -58,6 +58,12 @@ content_sha: 3774ea8a5b793cfa
   - 1.1 Принципы работы Uzum Market
   - 1.2 Как работает фулфилмент Uzum
 - [1. Uzum Market sotuvchilar uchun qanday ishlaydi?](editions/2026-10-20/uz.md)
+  - 1.1 Uzum Market ning ishlash printsiplari
+  - 1.2 Uzum fulfilment qanday ishlaydi
+- [1. Как работает Uzum Market для продавцов](editions/2026-11-02.md)
+  - 1.1 Принципы работы Uzum Market
+  - 1.2 Как работает фулфилмент Uzum
+- [1. Uzum Market sotuvchilar uchun qanday ishlaydi?](editions/2026-11-02/uz.md)
   - 1.1 Uzum Market ning ishlash printsiplari
   - 1.2 Uzum fulfilment qanday ishlaydi
 - [2. Требования к товарам и поставщикам](2-seller-requirements.md)
@@ -439,6 +445,7 @@ content_sha: 3774ea8a5b793cfa
   - 5.15 Свойства товара для фильтра
   - 5.16 Внесение весогабаритных характеристик (ВГХ) товара в упаковке
   - 5.17 Соответствие с обязательным стандартным размером RUS
+  - 5.18 Инструкция по заполнению размерной сетки
 - [5. Создание карточек товара](editions/2022-11-25/5-product-creation.md)
   - 5.1 Общие правила оформления карточек
   - 5.2 Категория товара
@@ -1286,6 +1293,26 @@ content_sha: 3774ea8a5b793cfa
   - 6.8 Компенсация за утерянный или поврежденный товар
   - 6.9 Центр подготовки товаров
 - [6. Tovarlarni omborga tayyorlash va yuborish](editions/2026-10-20/uz/6-product-preparation.md)
+  - 6.1 Tovarni tekshirish va qadoqlash
+  - 6.2 Yorliqni tayyorlash va chop etish
+  - 6.3 Yetkazib berish (yuborish aktini) yaratish
+  - 6.4 Yetkazib berish reglamenti: taymslotlar, qabul qilish, tafovutlar
+  - 6.5 Tovarni omborga topshirish uchun tayyorlash
+  - 6.6 Tovarni omborga yuborish
+  - 6.7 Tоvarni оmbоrda saqlash shartlari
+  - 6.8 Yo'qotilgan yoki shikastlangan tovarlar uchun kompensatsiya
+  - 6.9 Tоvarlarni tayyorlash markazi
+- [6. Подготовка и отправка товаров на склад](editions/2026-11-02/6-product-preparation.md)
+  - 6.1 Проверка и упаковка товара
+  - 6.2 Формирование и печать этикетки
+  - 6.3 Создание поставки (акта отправки)
+  - 6.4 Регламент поставок: таймслоты, приёмка, расхождения
+  - 6.5 Подготовка товара к сдаче на склад
+  - 6.6 Отправка товара на склад
+  - 6.7 Условия хранения товара на складе
+  - 6.8 Компенсация за утерянный или поврежденный товар
+  - 6.9 Центр подготовки товаров
+- [6. Tovarlarni omborga tayyorlash va yuborish](editions/2026-11-02/uz/6-product-preparation.md)
   - 6.1 Tovarni tekshirish va qadoqlash
   - 6.2 Yorliqni tayyorlash va chop etish
   - 6.3 Yetkazib berish (yuborish aktini) yaratish

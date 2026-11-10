@@ -4,8 +4,8 @@ marketplace: uzum
 kind: article
 path: /10.promotion/
 source: "https://seller.uzum.uz/manual/10.promotion/"
-fetched_at: "2026-10-31T02:49:35Z"
-content_sha: 3c654ab8919ce29d
+fetched_at: "2026-11-10T02:52:45Z"
+content_sha: bdae1262c8eea669
 ---
 
 # 11. Продвижение товаров и магазинов
@@ -294,7 +294,7 @@ CPM («Cost Per Mille» или «Cost Per Millenium») — ставка за 1 0
 
 Маркетплейс анализирует выдачу и ставки других продавцов — сколько стоит то или иное место в каталоге или поиске. Чтобы установить оптимальную ставку — нажмите на иконку с графиком рядом с полем **Ставка за 1 000 показов** и изучите подсказку с текущими расценками.
 
-> ![пример](https://seller.uzum.uz/manual/11.4/RU_12.png)
+> ![пример](https://seller.uzum.uz/manual/11.4/11.4RU.png)
 
 ### Как управлять рекламной кампанией
 

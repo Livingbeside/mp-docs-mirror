@@ -4,8 +4,8 @@ api: wildberries
 kind: changelog
 source: "https://dev.wildberries.ru/release-notes"
 window: последние записи, страница отдаёт не всю историю
-fetched_at: "2026-11-09T02:44:22Z"
-content_sha: b6457c331a3aef89
+fetched_at: "2026-11-10T02:49:23Z"
+content_sha: 5c4bf95e3ef5c823
 ---
 
 # Журнал изменений WB API
@@ -66,6 +66,24 @@ content_sha: b6457c331a3aef89
 
 Ноябрь
 2026
+
+Новое
+
+## 09.11.2026
+
+Критичное изменение
+
+Маркетинг и продвижение
+
+Кампании
+
+Новая версия Информации о кампаниях
+
+Добавили новую версию метода получения информации о кампаниях — [GET /api/advert/v3/adverts](/docs/openapi/promotion#tag/campaigns/operation/getV3Adverts).
+
+Теперь с помощью WB API вы можете получить информацию не только по списку ID кампаний, но и по всем рекламным кампаниям — для этого используйте параметры пагинации limit и next.
+
+Текущий метод [GET /api/advert/v2/adverts](/docs/openapi/promotion#tag/campaigns/operation/getV2Adverts) будет отключен **10 января**.
 
 Изменения
 
@@ -164,18 +182,6 @@ C **5 ноября** отключим [песочницы](https://dev.wildberri
 
 В ответ метода [GET /api/v3/orders](/docs/openapi/orders-fbs#tag/fbsAssemblyOrders/operation/getV3Orders) добавили поле `trackNumber` с информацией о трек-номере для трансграничных поставок.
 
-Изменения
-
-## 14.10.2026
-
-Общее
-
-Информация о продавце
-
-Изменения в методе Получить информацию о продавце
-
-В метод [GET /api/v1/seller-info](/docs/openapi/api-information#tag/sellerInformation/operation/getV1SellerInfo) добавили поле `country` — информацию о стране регистрации профиля продавца.
-
 Новое
 
 ## 14.10.2026
@@ -195,6 +201,18 @@ C **5 ноября** отключим [песочницы](https://dev.wildberri
 - сборочное задание ранее не переносили из закрытой поставки в открытую
 
 Чтобы проверить, можно ли перевести сборочное задание из доставки на сборку, используйте метод [получения статусов сборочных заданий](/docs/openapi/orders-fbs#tag/fbsAssemblyOrders/operation/postV3OrdersStatus), поле `isTransferable`.
+
+Изменения
+
+## 14.10.2026
+
+Общее
+
+Информация о продавце
+
+Изменения в методе Получить информацию о продавце
+
+В метод [GET /api/v1/seller-info](/docs/openapi/api-information#tag/sellerInformation/operation/getV1SellerInfo) добавили поле `country` — информацию о стране регистрации профиля продавца.
 
 Новое
 
@@ -412,26 +430,5 @@ DBS
 Добавили метод [GET /api/supplies/v1/discrepancies/{supplyId}](./docs/openapi/orders-fbw#tag/suppliesInformation/operation/getV1SuppliesSupplyIdDiscrepanciesQuantity). С его помощь вы можете получить расхождения между заявленным и фактическим количеством товара, выявленные при приёмке поставки.
 
 В ответ метода получения деталей поставки — [GET /api/v1/supplies/{ID}](/docs/openapi/orders-fbw#tag/suppliesInformation/operation/getV1SuppliesId) добавили поле `discrepancies` — расхождения между заявленным и фактическим количеством товара в поставке.
-
-Изменения
-
-## 17.09.2026
-
-Аналитика и данные
-
-История остатков
-
-Изменение времени обновления данных в Истории остатков
-
-С **17 сентября** данные по остаткам будут обновляться 1 раз в 2 часа в следующих отчётах:
-
-- [Данные по группам](/docs/openapi/analytics#tag/stocksReport/operation/postV2StocksReportProductsGroups)
-- [Данные по товарам](/docs/openapi/analytics#tag/stocksReport/operation/postV2StocksReportProductsProducts)
-- [Данные по размерам](/docs/openapi/analytics#tag/stocksReport/operation/postV2StocksReportProductsSizes)
-- [Данные по складам](/docs/openapi/analytics#tag/stocksReport/operation/postV2StocksReportOffices)
-- `STOCK_HISTORY_REPORT_CSV` — отчёт по статистике остатков в методе [POST /api/v2/nm-report/downloads](/docs/openapi/analytics#tag/sellerAnalyticsCsv/operation/postV2NmReportDownloads)
-- `STOCK_HISTORY_DAILY_CSV` — отчёт по истории остатков в методе [POST /api/v2/nm-report/downloads](/docs/openapi/analytics#tag/sellerAnalyticsCsv/operation/postV2NmReportDownloads)
-
-Чтобы получить текущие данные по остаткам без задержки обновления, используйте методы [POST /api/analytics/v1/stocks-report/wb-warehouses](/docs/openapi/analytics/#tag/stocksReport/operation/postV1StocksReportWbWarehouses) и [POST /api/analytics/v1/stocks-report/seller-warehouses](/docs/openapi/analytics#tag/stocksReport/operation/postV1StocksReportSellerWarehouses).
 
 Мы используем [cookies](https://legal.wildberries.ru/privacypolicy/country/ru/lang/ru/#anchor-7), чтобы анализировать, как вы пользуетесь сайтом, и улучшать его

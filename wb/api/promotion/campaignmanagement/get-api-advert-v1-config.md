@@ -9,7 +9,7 @@ tags:
 spec_version: promotion
 source: "https://dev.wildberries.ru/docs/openapi/promotion"
 deprecated: false
-content_sha: 2a6117363384d8e5
+content_sha: 6a8aa910a4e414c2
 ---
 
 # Конфигурационные значения продвижения
@@ -18,7 +18,7 @@ content_sha: 2a6117363384d8e5
 
 Описание метода
 
-Метод возвращает валюту, код валюты [профиля продавца](https://cmp.wildberries.ru/campaigns/finances) и допустимые шаги ставок для метода [POST /api/advert/v1/normquery/bids](./promotion#tag/searchClusters/operation/postV1NormqueryBids)
+Метод возвращает валюту, код валюты [профиля продавца](https://cmp.wildberries.ru/campaigns/finances) и допустимые шаги ставок для метода [установки ставок для поисковых кластеров в валюте профиля продавца](./promotion#tag/searchClusters/operation/postV1NormqueryBids)
 
  Метод [доступен](./api-information#tag/authorization/Pravila-ispolzovaniya-tokenov-dostupa-k-API) по
  Персональному токену, 

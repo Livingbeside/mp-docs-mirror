@@ -9,7 +9,7 @@ tags:
 spec_version: promotion
 source: "https://dev.wildberries.ru/docs/openapi/promotion"
 deprecated: false
-content_sha: b7a6c97fa50d2012
+content_sha: c879072875237a96
 ---
 
 # Установить ставки для поисковых кластеров в валюте профиля продавца
@@ -40,7 +40,7 @@ content_sha: b7a6c97fa50d2012
   - `advertId` — integer **обязательный**. ID кампании
   - `nmId` — integer **обязательный**. Артикул WB
   - `normQuery` — string **обязательный**. Поисковый кластер
-  - `bidMinorUnits` — integer **обязательный**. Ставка в разменных единицах — 0,01 от базовой валюты [профиля продавца](https://cmp.wildberries.ru/campaigns/finances). Допустимый шаг ставки указан в ответе метода [GET /api/advert/v1/config](./promotion#tag/campaignManagement/operation/getV1Config)
+  - `bidMinorUnits` — integer **обязательный**. Ставка в разменных единицах — 0,01 от базовой валюты [профиля продавца](https://cmp.wildberries.ru/campaigns/finances). Допустимый шаг ставки указан в ответе метода получения [конфигурационных значений продвижения](./promotion#tag/campaignManagement/operation/getV1Config)
 
 ## Ответы
 

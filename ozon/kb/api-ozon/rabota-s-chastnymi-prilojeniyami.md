@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /api-ozon/rabota-s-chastnymi-prilojeniyami
 source: "https://seller-edu.ozon.ru/libra/api-ozon/rabota-s-chastnymi-prilojeniyami"
-updated: "2026-08-06 10:50:53"
+updated: "2026-11-09 12:44:16"
 doc_id: 52840
-fetched_at: "2026-08-28T12:11:14Z"
-content_sha: 3c554b00aafeb83e
+fetched_at: "2026-11-10T02:46:11Z"
+content_sha: 16a6625e1b44438d
 ---
 
 # Работа с частными приложениями
@@ -20,7 +20,7 @@ _Главная / API Ozon и интеграции_
 
 # Как получить OAuth-токен
 
-Протокол OAuth упрощает интеграцию, автоматически обновляя долгосрочные токены и позволяя быстро отзывать скомпрометированные. Такие приложения не видны в [магазине приложений](https://seller.ozon.ru/app/appstore), но для них можно настроить индивидуальные разрешения и использовать методы Seller API и Performance API с помощью OAuth-токена.
+Протокол OAuth упрощает интеграцию, автоматически обновляя долгосрочные токены и позволяя быстро отзывать скомпрометированные. Такие приложения не видны в[ каталоге сервисов](https://seller.ozon.ru/app/appstore), но для них можно настроить индивидуальные разрешения и использовать методы Seller API и Performance API с помощью OAuth-токена.
 
 [Подробнее о создании приложений в документации](https://docs.ozon.ru/api/applications/#section/Razmestit-prilozhenie-v-magazine-Ozon)
 

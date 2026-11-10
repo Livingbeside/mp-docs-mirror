@@ -9,7 +9,7 @@ tags:
 spec_version: promotion
 source: "https://dev.wildberries.ru/docs/openapi/promotion"
 deprecated: false
-content_sha: cdf1fb0b6116ce31
+content_sha: 777dc533b6e5f947
 ---
 
 # Завершение кампании
@@ -18,7 +18,7 @@ content_sha: cdf1fb0b6116ce31
 
 Описание метода
 
-Метод завершает [кампании](./promotion#tag/campaigns/operation/getV2Adverts) в статусах:
+Метод завершает [кампании](./promotion#tag/campaigns/operation/getV3Adverts) в статусах:
  - `9` — активна
  - `11` — пауза
 

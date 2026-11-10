@@ -9,7 +9,7 @@ tags:
 spec_version: promotion
 source: "https://dev.wildberries.ru/docs/openapi/promotion"
 deprecated: false
-content_sha: 669b58f65dc3b0ef
+content_sha: 1d02597d87c08d6e
 ---
 
 # Пауза кампании
@@ -18,7 +18,7 @@ content_sha: 669b58f65dc3b0ef
 
 Описание метода
 
-Метод ставит [кампании](./promotion#tag/campaigns/operation/getV2Adverts) в статусе `9` — активна — на паузу.
+Метод ставит [кампании](./promotion#tag/campaigns/operation/getV3Adverts) в статусе `9` — активна — на паузу.
 
 Лимит запросов на один профиль продавца:
 

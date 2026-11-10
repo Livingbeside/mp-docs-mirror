@@ -5,7 +5,7 @@ tag: campaigns
 group: ""
 kind: guide
 source: "https://dev.wildberries.ru/docs/openapi/promotion"
-content_sha: 89a412977b237efd
+content_sha: db204bbe3f266512
 ---
 
 # Кампании
@@ -14,4 +14,4 @@ content_sha: 89a412977b237efd
 
 Методы получения:
  - [списков рекламных кампаний](./promotion#tag/campaigns/operation/getV1PromotionCount)
- - [информации о кампаниях](./promotion#tag/campaigns/operation/getV2Adverts)
+ - [информации о кампаниях](./promotion#tag/campaigns/operation/getV3Adverts)

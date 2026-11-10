@@ -11,7 +11,7 @@
         }
       },
       "AdvertIdsCountInvalid": {
-        "summary": "Некорректное количество ID кампаний",
+        "description": "Некорректное количество ID кампаний",
         "value": {
           "detail": "advertIds must contain from 1 to 100 items",
           "origin": "camp-api-public-cache",
@@ -32,14 +32,155 @@
       "CompanyNameChangeErr": {
         "value": "Ошибка изменения названия кампании"
       },
+      "ConflictingModes": {
+        "summary": "Недопустимо одновременное применение параметра advertIds с другими параметрами",
+        "value": {
+          "detail": "advertIds cannot be used together with statuses, next or limit",
+          "origin": "camp-api-public-cache",
+          "request_id": "c948568b2849bdeed5b49e96873c1155",
+          "status": 400,
+          "title": "invalid payload"
+        }
+      },
       "DailyLimitTooLow": {
-        "summary": "Сумма дневного лимита меньше минимально допустимой",
+        "description": "Сумма дневного лимита меньше минимально допустимой",
         "value": {
           "detail": "dailyLimit must be at least 100000",
           "origin": "camp-api-public-cache",
           "request_id": "c9ba33416d616c4efb60407251ca8cdc",
           "status": 400,
           "title": "bad request"
+        }
+      },
+      "GetV3AdvertsSuccessResponse": {
+        "value": {
+          "adverts": [
+            {
+              "advertId": 12345,
+              "currency": "RUB",
+              "nms": [
+                {
+                  "bids": [
+                    {
+                      "type": "search",
+                      "value": 65000
+                    }
+                  ],
+                  "nmId": 12345678,
+                  "subject": {
+                    "id": 270,
+                    "name": "Парашюты"
+                  }
+                }
+              ],
+              "restrictions": {
+                "canChangeNms": true
+              },
+              "settings": {
+                "name": "Моя кампания",
+                "paymentType": "cpm",
+                "placements": [
+                  "search",
+                  "recommendations",
+                  "combined"
+                ]
+              },
+              "status": 9,
+              "timestamps": {
+                "created": "2024-01-01T10:00:00+03:00",
+                "started": "2024-01-01T10:05:00+03:00",
+                "updated": "2024-01-02T15:30:00+03:00"
+              }
+            }
+          ],
+          "next": "eyJhIjo0MTUzODE5NSwiZiI6WzQsNyw5LDExXSwicCI6ImNwbSJ9.Jbzq790NvwJyyafNoNZZUf_zXgvamfbsNi4DGt47MLI"
+        }
+      },
+      "GtV3AdvertsResponseExmpl": {
+        "value": {
+          "adverts": [
+            {
+              "bid_type": "manual",
+              "currency": "RUB",
+              "id": 567456457,
+              "nm_settings": [
+                {
+                  "bids_kopecks": {
+                    "recommendations": 0,
+                    "search": 0
+                  },
+                  "nm_id": 123456789,
+                  "subject": {
+                    "id": 52,
+                    "name": "кошельки"
+                  }
+                },
+                {
+                  "bids_kopecks": {
+                    "recommendations": 11200,
+                    "search": 11200
+                  },
+                  "nm_id": 987654321,
+                  "subject": {
+                    "id": 54,
+                    "name": "ювелирные кольца"
+                  }
+                }
+              ],
+              "restrictions": {
+                "can_change_nms": true
+              },
+              "settings": {
+                "name": "Кампания от 01.02.2024",
+                "payment_type": "cpm",
+                "placements": {
+                  "recommendations": false,
+                  "search": true
+                }
+              },
+              "status": 7,
+              "timestamps": {
+                "created": "2024-02-01T09:57:38.500606+03:00",
+                "started": "2024-02-05T12:38:10.212086+03:00",
+                "updated": "2024-02-05T14:29:32.633968+03:00"
+              }
+            },
+            {
+              "bid_type": "manual",
+              "currency": "RUB",
+              "id": 28150154,
+              "nm_settings": [
+                {
+                  "bids_kopecks": {
+                    "recommendations": 0,
+                    "search": 1100
+                  },
+                  "nm_id": 5764746785,
+                  "subject": {
+                    "id": 69,
+                    "name": "платья"
+                  }
+                }
+              ],
+              "restrictions": {
+                "can_change_nms": false
+              },
+              "settings": {
+                "name": "Кампания от 28.08.2025 ",
+                "payment_type": "cpc",
+                "placements": {
+                  "recommendations": false,
+                  "search": true
+                }
+              },
+              "status": 11,
+              "timestamps": {
+                "created": "2025-08-28T09:50:57.611559+03:00",
+                "started": null,
+                "updated": "2025-09-10T10:14:58.475499+03:00"
+              }
+            }
+          ]
         }
       },
       "IncorrectId": {
@@ -66,8 +207,28 @@
         "description": "Некорректное использование метода",
         "value": "Для получения информации передайте или список кампаний, или набор фильтров"
       },
+      "InvalidId": {
+        "description": "Недопустимый ID кампании",
+        "value": {
+          "detail": "invalid id in advertIds param",
+          "origin": "camp-api-public-cache",
+          "request_id": "c948568b2849bdeed5b49e96873c1155",
+          "status": 400,
+          "title": "invalid payload"
+        }
+      },
       "InvalidRcIdAdv": {
         "value": "Некорректный ID РК"
+      },
+      "InvalidStatus": {
+        "description": "Передано недопустимое значение `statuses`",
+        "value": {
+          "detail": "invalid advert status value",
+          "origin": "camp-api-public-cache",
+          "request_id": "c948568b2849bdeed5b49e96873c1155",
+          "status": 400,
+          "title": "invalid payload"
+        }
       },
       "LowBudget": {
         "description": "Бюджета недостаточно",
@@ -2473,11 +2634,6 @@
             "format": "date-time",
             "type": "string"
           },
-          "deleted": {
-            "description": "Время удаления кампании. Если кампания не удалена, время указывается в будущем",
-            "format": "date-time",
-            "type": "string"
-          },
           "started": {
             "description": "Время последнего запуска кампании",
             "format": "date-time",
@@ -2493,8 +2649,7 @@
         "required": [
           "created",
           "updated",
-          "started",
-          "deleted"
+          "started"
         ],
         "type": "object"
       },
@@ -3255,7 +3410,7 @@
             "type": "boolean"
           },
           "dailyLimit": {
-            "description": "Сумма дневного лимита. Параметр обязателен при `\"enabled\": true`.\nМинимально допустимая сумма указана в поле `minDailyLimit` метода [GET /api/advert/v1/config](./promotion#tag/campaignManagement/operation/getV1Config)\n",
+            "description": "Сумма дневного лимита. Параметр обязателен при `\"enabled\": true`.\nМинимально допустимая сумма указана в поле `minDailyLimit` метода получения [конфигурационных значений продвижения](./promotion#tag/campaignManagement/operation/getV1Config)\n",
             "example": 1000,
             "format": "int64",
             "minimum": 1000,
@@ -3561,7 +3716,7 @@
             "type": "integer"
           },
           "bidMinorUnits": {
-            "description": "Ставка в разменных единицах — 0,01 от базовой валюты [профиля продавца](https://cmp.wildberries.ru/campaigns/finances).\nДопустимый шаг ставки указан в ответе метода [GET /api/advert/v1/config](./promotion#tag/campaignManagement/operation/getV1Config)\n",
+            "description": "Ставка в разменных единицах — 0,01 от базовой валюты [профиля продавца](https://cmp.wildberries.ru/campaigns/finances).\nДопустимый шаг ставки указан в ответе метода получения [конфигурационных значений продвижения](./promotion#tag/campaignManagement/operation/getV1Config)\n",
             "type": "integer"
           },
           "nmId": {
@@ -3708,6 +3863,174 @@
           "minDailyLimit"
         ],
         "type": "object"
+      },
+      "V3AdvertBidsKopecks": {
+        "properties": {
+          "type": {
+            "$ref": "#/components/schemas/V3Placements"
+          },
+          "value": {
+            "description": "Ставка",
+            "format": "int64",
+            "type": "integer"
+          }
+        },
+        "required": [
+          "type",
+          "value"
+        ],
+        "type": "object"
+      },
+      "V3AdvertNMsSettings": {
+        "properties": {
+          "bids": {
+            "description": "Ставки",
+            "items": {
+              "$ref": "#/components/schemas/V3AdvertBidsKopecks"
+            },
+            "type": "array"
+          },
+          "nmId": {
+            "description": "Артикул WB",
+            "type": "integer"
+          },
+          "subject": {
+            "$ref": "#/components/schemas/V3AdvertSubject"
+          }
+        },
+        "required": [
+          "nmId",
+          "subject",
+          "bids"
+        ],
+        "type": "object"
+      },
+      "V3AdvertSettings": {
+        "description": "Настройки кампании",
+        "properties": {
+          "name": {
+            "description": "Название кампании",
+            "type": "string"
+          },
+          "paymentType": {
+            "description": "Тип оплаты:\n- `cpm` — за показы\n- `cpc` — за клик\n",
+            "type": "string"
+          },
+          "placements": {
+            "items": {
+              "$ref": "#/components/schemas/V3Placements"
+            }
+          }
+        },
+        "required": [
+          "paymentType",
+          "name",
+          "placements"
+        ],
+        "type": "object"
+      },
+      "V3AdvertSubject": {
+        "properties": {
+          "id": {
+            "description": "ID предмета",
+            "format": "int64",
+            "type": "integer"
+          },
+          "name": {
+            "description": "Название предмета",
+            "type": "string"
+          }
+        },
+        "required": [
+          "id",
+          "name"
+        ],
+        "type": "object"
+      },
+      "V3GetAdverts": {
+        "properties": {
+          "advertId": {
+            "description": "ID кампании",
+            "type": "integer"
+          },
+          "currency": {
+            "description": "Код валюты",
+            "format": "ISO 4217",
+            "type": "string"
+          },
+          "nms": {
+            "description": "Настройки товаров",
+            "items": {
+              "$ref": "#/components/schemas/V3AdvertNMsSettings"
+            },
+            "type": "array"
+          },
+          "restrictions": {
+            "description": "Ограничения кампании",
+            "properties": {
+              "canChangeNms": {
+                "description": "Можно ли изменять список товаров кампании:\n  - `true` — да\n  - `false` — нет\n",
+                "type": "boolean"
+              }
+            },
+            "type": "object"
+          },
+          "settings": {
+            "$ref": "#/components/schemas/V3AdvertSettings"
+          },
+          "status": {
+            "description": "Статус кампании:\n- `4` — готова к запуску\n- `7` — завершена\n- `9` — активна\n- `11` — на паузе\n",
+            "enum": [
+              4,
+              7,
+              9,
+              11
+            ],
+            "type": "integer"
+          },
+          "timestamps": {
+            "$ref": "#/components/schemas/Timestamps"
+          }
+        },
+        "required": [
+          "advertId",
+          "status",
+          "timestamps",
+          "settings",
+          "nms",
+          "currency",
+          "restrictions"
+        ],
+        "type": "object"
+      },
+      "V3GetAdvertsResponse": {
+        "properties": {
+          "adverts": {
+            "description": "Кампании",
+            "items": {
+              "$ref": "#/components/schemas/V3GetAdverts"
+            },
+            "type": "array"
+          },
+          "next": {
+            "description": "Параметр пагинации. Укажите это значение в запросе, чтобы получить следующий пакет кампаний. Если поле пустое `\"\"`, вы получили все кампании\n",
+            "type": "string"
+          }
+        },
+        "required": [
+          "adverts",
+          "next"
+        ],
+        "type": "object"
+      },
+      "V3Placements": {
+        "description": "Место размещения кампании:\n- `search` - поиск\n- `recommendations` - рекомендации\n- `combined` - поиск и рекомендации с единой ставкой\n",
+        "enum": [
+          "search",
+          "recommendations",
+          "combined"
+        ],
+        "type": "string"
       },
       "response400": {
         "properties": {
@@ -4085,7 +4408,7 @@
     },
     "/adv/v0/delete": {
       "get": {
-        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод удаляет [кампании](./promotion#tag/campaigns/operation/getV2Adverts) в статусе `4` — готова к запуску.<br><br>\n\nПосле удаления кампания некоторое время будет находиться в статусе `-1` — кампания в процессе удаления. Полное удаление кампании занимает от 3 до 10 минут.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один профиль продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 сек | 5 запросов | 200 мс | 5 запросов |\n| Сервисный | 1 сек | 5 запросов | 200 мс | 5 запросов |\n| Базовый с секретом | 1 сек | 5 запросов | 200 мс | 5 запросов |\n| Базовый | 1 ч | 5 запросов | 12 мин | 1 запрос |\n</div>\n",
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод удаляет [кампании](./promotion#tag/campaigns/operation/getV3Adverts) в статусе `4` — готова к запуску.<br><br>\n\nПосле удаления кампания некоторое время будет находиться в статусе `-1` — кампания в процессе удаления. Полное удаление кампании занимает от 3 до 10 минут.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один профиль продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 сек | 5 запросов | 200 мс | 5 запросов |\n| Сервисный | 1 сек | 5 запросов | 200 мс | 5 запросов |\n| Базовый с секретом | 1 сек | 5 запросов | 200 мс | 5 запросов |\n| Базовый | 1 ч | 5 запросов | 12 мин | 1 запрос |\n</div>\n",
         "operationId": "getV0Delete",
         "parameters": [
           {
@@ -5097,7 +5420,7 @@
     },
     "/adv/v0/pause": {
       "get": {
-        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод ставит [кампании](./promotion#tag/campaigns/operation/getV2Adverts) в статусе `9` — активна — на паузу.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один профиль продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 сек | 5 запросов | 200 мс | 5 запросов |\n| Сервисный | 1 сек | 5 запросов | 200 мс | 5 запросов |\n| Базовый с секретом | 1 сек | 5 запросов | 200 мс | 5 запросов |\n| Базовый | 1 ч | 5 запросов | 12 мин | 1 запрос |\n</div>\n",
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод ставит [кампании](./promotion#tag/campaigns/operation/getV3Adverts) в статусе `9` — активна — на паузу.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один профиль продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 сек | 5 запросов | 200 мс | 5 запросов |\n| Сервисный | 1 сек | 5 запросов | 200 мс | 5 запросов |\n| Базовый с секретом | 1 сек | 5 запросов | 200 мс | 5 запросов |\n| Базовый | 1 ч | 5 запросов | 12 мин | 1 запрос |\n</div>\n",
         "operationId": "getV0Pause",
         "parameters": [
           {
@@ -5178,7 +5501,7 @@
     },
     "/adv/v0/rename": {
       "post": {
-        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод меняет название [кампании](./promotion#tag/campaigns/operation/getV2Adverts). Это можно сделать в любой момент существования кампании.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один профиль продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 сек | 5 запросов | 200 мс | 5 запросов |\n| Сервисный | 1 сек | 5 запросов | 200 мс | 5 запросов |\n| Базовый с секретом | 1 сек | 5 запросов | 200 мс | 5 запросов |\n| Базовый | 1 ч | 2 запроса | 30 мин | 1 запрос |\n</div>\n",
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод меняет название [кампании](./promotion#tag/campaigns/operation/getV3Adverts). Это можно сделать в любой момент существования кампании.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один профиль продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 сек | 5 запросов | 200 мс | 5 запросов |\n| Сервисный | 1 сек | 5 запросов | 200 мс | 5 запросов |\n| Базовый с секретом | 1 сек | 5 запросов | 200 мс | 5 запросов |\n| Базовый | 1 ч | 2 запроса | 30 мин | 1 запрос |\n</div>\n",
         "operationId": "postV0Rename",
         "requestBody": {
           "content": {
@@ -5280,7 +5603,7 @@
     },
     "/adv/v0/start": {
       "get": {
-        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод запускает [кампании](./promotion#tag/campaigns/operation/getV2Adverts) в статусах `4` — готово к запуску — или `11` — пауза.\nЧтобы запустить кампанию, проверьте ее бюджет. Если бюджета недостаточно, [пополните его](./promotion#tag/finances/operation/postV1BudgetDeposit).\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один профиль продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 сек | 5 запросов | 200 мс | 5 запросов |\n| Сервисный | 1 сек | 5 запросов | 200 мс | 5 запросов |\n| Базовый с секретом | 1 сек | 5 запросов | 200 мс | 5 запросов |\n| Базовый | 1 ч | 5 запросов | 12 мин | 1 запрос |\n</div>\n",
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод запускает [кампании](./promotion#tag/campaigns/operation/getV3Adverts) в статусах `4` — готово к запуску — или `11` — пауза.\nЧтобы запустить кампанию, проверьте ее бюджет. Если бюджета недостаточно, [пополните его](./promotion#tag/finances/operation/postV1BudgetDeposit).\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один профиль продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 сек | 5 запросов | 200 мс | 5 запросов |\n| Сервисный | 1 сек | 5 запросов | 200 мс | 5 запросов |\n| Базовый с секретом | 1 сек | 5 запросов | 200 мс | 5 запросов |\n| Базовый | 1 ч | 5 запросов | 12 мин | 1 запрос |\n</div>\n",
         "operationId": "getV0Start",
         "parameters": [
           {
@@ -5364,7 +5687,7 @@
     },
     "/adv/v0/stop": {
       "get": {
-        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод завершает [кампании](./promotion#tag/campaigns/operation/getV2Adverts) в статусах:\n  - `9` — активна\n  - `11` — пауза\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один профиль продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 сек | 5 запросов | 200 мс | 5 запросов |\n| Сервисный | 1 сек | 5 запросов | 200 мс | 5 запросов |\n| Базовый с секретом | 1 сек | 5 запросов | 200 мс | 5 запросов |\n| Базовый | 1 ч | 5 запросов | 12 мин | 1 запрос |\n</div>\n",
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод завершает [кампании](./promotion#tag/campaigns/operation/getV3Adverts) в статусах:\n  - `9` — активна\n  - `11` — пауза\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один профиль продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 сек | 5 запросов | 200 мс | 5 запросов |\n| Сервисный | 1 сек | 5 запросов | 200 мс | 5 запросов |\n| Базовый с секретом | 1 сек | 5 запросов | 200 мс | 5 запросов |\n| Базовый | 1 ч | 5 запросов | 12 мин | 1 запрос |\n</div>\n",
         "operationId": "getV0Stop",
         "parameters": [
           {
@@ -6610,7 +6933,7 @@
     },
     "/adv/v1/promotion/count": {
       "get": {
-        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод возвращает списки всех [рекламных кампаний](./promotion#tag/campaigns/operation/getV2Adverts) продавца с их ID. Кампании сгруппированы по типу и статусу, у каждой указана дата последнего изменения.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один профиль продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 сек | 5 запросов | 200 мс | 5 запросов |\n| Сервисный | 1 сек | 5 запросов | 200 мс | 5 запросов |\n| Базовый с секретом | 1 сек | 5 запросов | 200 мс | 5 запросов |\n| Базовый | 1 ч | 4 запроса | 15 мин | 1 запрос |\n</div>\n",
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод возвращает списки всех [кампаний](./promotion#tag/campaigns/operation/getV3Adverts) продавца с их ID. Кампании сгруппированы по типу и статусу, у каждой указана дата последнего изменения.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один профиль продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 сек | 5 запросов | 200 мс | 5 запросов |\n| Сервисный | 1 сек | 5 запросов | 200 мс | 5 запросов |\n| Базовый с секретом | 1 сек | 5 запросов | 200 мс | 5 запросов |\n| Базовый | 1 ч | 4 запроса | 15 мин | 1 запрос |\n</div>\n",
         "operationId": "getV1PromotionCount",
         "responses": {
           "200": {
@@ -6673,7 +6996,7 @@
                             "type": "integer"
                           },
                           "type": {
-                            "description": "Тип кампании:\n  - `8` — кампания с единой ставкой (**устаревший тип**)\n  - `9` — кампания с единой или ручной ставкой. Тип ставки вы можете получить с помощью метода [Информация о кампаниях](./promotion#tag/campaigns/operation/getV2Adverts), поле `bid_type`\n",
+                            "description": "Тип кампании:\n  - `8` — кампания с единой ставкой (**устаревший тип**)\n  - `9` — кампания с единой или ручной ставкой. Тип ставки вы можете получить с помощью метода [Информация о кампаниях](./promotion#tag/campaigns/operation/getV3Adverts), поле `bid_type`\n",
                             "type": "integer"
                           }
                         },
@@ -6853,7 +7176,7 @@
     },
     "/adv/v1/supplier/subjects": {
       "get": {
-        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод возвращает список [предметов](./item-management#tag/categoriesSubcategoriesAndCharacteristics/operation/getV2ObjectAll), которые можно добавить в рекламную [кампанию](./promotion#tag/campaigns/operation/getV2Adverts).\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один профиль продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 12 сек | 1 запрос | 12 сек | 5 запросов |\n| Сервисный | 12 сек | 1 запрос | 12 сек | 5 запросов |\n| Базовый с секретом | 12 сек | 1 запрос | 12 сек | 5 запросов |\n| Базовый | 1 ч | 2 запроса | 30 мин | 1 запрос |\n</div>\n",
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод возвращает список [предметов](./item-management#tag/categoriesSubcategoriesAndCharacteristics/operation/getV2ObjectAll), которые можно добавить в рекламную [кампанию](./promotion#tag/campaigns/operation/getV3Adverts).\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один профиль продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 12 сек | 1 запрос | 12 сек | 5 запросов |\n| Сервисный | 12 сек | 1 запрос | 12 сек | 5 запросов |\n| Базовый с секретом | 12 сек | 1 запрос | 12 сек | 5 запросов |\n| Базовый | 1 ч | 2 запроса | 30 мин | 1 запрос |\n</div>\n",
         "operationId": "getV1SupplierSubjects",
         "parameters": [
           {
@@ -7213,7 +7536,7 @@
     },
     "/adv/v2/supplier/nms": {
       "post": {
-        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод возвращает список [карточек товаров](./item-management#tag/listings/operation/postV2GetCardsList), которые можно добавить в рекламную [кампанию](./promotion#tag/campaigns/operation/getV2Adverts). Для получения карточек необходимы ID [предметов](./promotion#tag/creatingCampaigns/operation/getV1SupplierSubjects), также доступных для добавления в кампанию.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один профиль продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 мин | 5 запросов | 12 сек | 5 запросов |\n| Сервисный | 1 мин | 5 запросов | 12 сек | 5 запросов |\n| Базовый с секретом | 1 мин | 5 запросов | 12 сек | 5 запросов |\n| Базовый | 1 ч | 2 запроса | 30 мин | 1 запрос |\n</div>\n",
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод возвращает список [карточек товаров](./item-management#tag/listings/operation/postV2GetCardsList), которые можно добавить в рекламную [кампанию](./promotion#tag/campaigns/operation/getV3Adverts). Для получения карточек необходимы ID [предметов](./promotion#tag/creatingCampaigns/operation/getV1SupplierSubjects), также доступных для добавления в кампанию.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один профиль продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 мин | 5 запросов | 12 сек | 5 запросов |\n| Сервисный | 1 мин | 5 запросов | 12 сек | 5 запросов |\n| Базовый с секретом | 1 мин | 5 запросов | 12 сек | 5 запросов |\n| Базовый | 1 ч | 2 запроса | 30 мин | 1 запрос |\n</div>\n",
         "operationId": "postV2SupplierNms",
         "requestBody": {
           "content": {
@@ -7963,7 +8286,22 @@
             "$ref": "#/components/responses/401"
           },
           "403": {
-            "$ref": "#/components/responses/403"
+            "content": {
+              "application/problem+json": {
+                "examples": {
+                  "Response403TokenCategory": {
+                    "$ref": "#/components/examples/Response403TokenCategory"
+                  },
+                  "Response403TokenType": {
+                    "$ref": "#/components/examples/Response403TokenType"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/Response4XX"
+                }
+              }
+            },
+            "description": "<span class='response__value '>Доступ запрещён</span>"
           },
           "429": {
             "$ref": "#/components/responses/429"
@@ -8054,7 +8392,22 @@
             "$ref": "#/components/responses/401"
           },
           "403": {
-            "$ref": "#/components/responses/403"
+            "content": {
+              "application/problem+json": {
+                "examples": {
+                  "Response403TokenCategory": {
+                    "$ref": "#/components/examples/Response403TokenCategory"
+                  },
+                  "Response403TokenType": {
+                    "$ref": "#/components/examples/Response403TokenType"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/Response4XX"
+                }
+              }
+            },
+            "description": "<span class='response__value '>Доступ запрещён</span>"
           },
           "429": {
             "$ref": "#/components/responses/429"
@@ -8505,7 +8858,7 @@
     },
     "/api/advert/v1/config": {
       "get": {
-        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод возвращает валюту, код валюты [профиля продавца](https://cmp.wildberries.ru/campaigns/finances) и допустимые шаги ставок для метода [POST /api/advert/v1/normquery/bids](./promotion#tag/searchClusters/operation/postV1NormqueryBids)\n\n\n<div class=\"description_token\">\n    Метод <a href=\"./api-information#tag/authorization/Pravila-ispolzovaniya-tokenov-dostupa-k-API\">доступен</a> по\n        <strong>Персональному</strong> токену, \n        <strong>Сервисному</strong> токену\n</div>\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один профиль продавца:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 1 запрос | 1 мин | 10 запросов |\n</div>\n",
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод возвращает валюту, код валюты [профиля продавца](https://cmp.wildberries.ru/campaigns/finances) и допустимые шаги ставок для метода [установки ставок для поисковых кластеров в валюте профиля продавца](./promotion#tag/searchClusters/operation/postV1NormqueryBids)\n\n\n<div class=\"description_token\">\n    Метод <a href=\"./api-information#tag/authorization/Pravila-ispolzovaniya-tokenov-dostupa-k-API\">доступен</a> по\n        <strong>Персональному</strong> токену, \n        <strong>Сервисному</strong> токену\n</div>\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один профиль продавца:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 1 запрос | 1 мин | 10 запросов |\n</div>\n",
         "operationId": "getV1Config",
         "responses": {
           "200": {
@@ -8654,7 +9007,8 @@
     },
     "/api/advert/v2/adverts": {
       "get": {
-        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод возвращает информацию о рекламных кампаниях с единой или ручной ставкой по их статусам, типам оплаты и ID.\n\n <div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один профиль продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 сек | 5 запросов | 200 мс | 5 запросов |\n| Сервисный | 1 сек | 5 запросов | 200 мс | 5 запросов |\n| Базовый с секретом | 1 сек | 5 запросов | 200 мс | 5 запросов |\n| Базовый | 1 ч | 1 запрос | 1 ч | 1 запрос |\n</div>\n",
+        "deprecated": true,
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод будет отключен [10 января](https://dev.wildberries.ru/release-notes?id=597).\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один профиль продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 сек | 5 запросов | 200 мс | 5 запросов |\n| Сервисный | 1 сек | 5 запросов | 200 мс | 5 запросов |\n| Базовый с секретом | 1 сек | 5 запросов | 200 мс | 5 запросов |\n| Базовый | 1 ч | 1 запрос | 1 ч | 1 запрос |\n</div>\n",
         "operationId": "getV2Adverts",
         "parameters": [
           {
@@ -8692,92 +9046,10 @@
           "200": {
             "content": {
               "application/json": {
-                "example": {
-                  "adverts": [
-                    {
-                      "bid_type": "manual",
-                      "currency": "RUB",
-                      "id": 567456457,
-                      "nm_settings": [
-                        {
-                          "bids_kopecks": {
-                            "recommendations": 0,
-                            "search": 0
-                          },
-                          "nm_id": 123456789,
-                          "subject": {
-                            "id": 52,
-                            "name": "кошельки"
-                          }
-                        },
-                        {
-                          "bids_kopecks": {
-                            "recommendations": 11200,
-                            "search": 11200
-                          },
-                          "nm_id": 987654321,
-                          "subject": {
-                            "id": 54,
-                            "name": "ювелирные кольца"
-                          }
-                        }
-                      ],
-                      "restrictions": {
-                        "can_change_nms": true
-                      },
-                      "settings": {
-                        "name": "Кампания от 01.02.2024",
-                        "payment_type": "cpm",
-                        "placements": {
-                          "recommendations": false,
-                          "search": true
-                        }
-                      },
-                      "status": 7,
-                      "timestamps": {
-                        "created": "2024-02-01T09:57:38.500606+03:00",
-                        "deleted": "2024-02-05T14:29:32.633968+03:00",
-                        "started": "2024-02-05T12:38:10.212086+03:00",
-                        "updated": "2024-02-05T14:29:32.633968+03:00"
-                      }
-                    },
-                    {
-                      "bid_type": "manual",
-                      "currency": "RUB",
-                      "id": 28150154,
-                      "nm_settings": [
-                        {
-                          "bids_kopecks": {
-                            "recommendations": 0,
-                            "search": 1100
-                          },
-                          "nm_id": 5764746785,
-                          "subject": {
-                            "id": 69,
-                            "name": "платья"
-                          }
-                        }
-                      ],
-                      "restrictions": {
-                        "can_change_nms": false
-                      },
-                      "settings": {
-                        "name": "Кампания от 28.08.2025 ",
-                        "payment_type": "cpc",
-                        "placements": {
-                          "recommendations": false,
-                          "search": true
-                        }
-                      },
-                      "status": 11,
-                      "timestamps": {
-                        "created": "2025-08-28T09:50:57.611559+03:00",
-                        "deleted": "2100-01-01T00:00:00+03:00",
-                        "started": null,
-                        "updated": "2025-09-10T10:14:58.475499+03:00"
-                      }
-                    }
-                  ]
+                "examples": {
+                  "GtV3AdvertsResponseExmpl": {
+                    "$ref": "#/components/examples/GtV3AdvertsResponseExmpl"
+                  }
                 },
                 "schema": {
                   "$ref": "#/components/schemas/GetAdverts"
@@ -8833,7 +9105,7 @@
     },
     "/api/advert/v2/budget": {
       "post": {
-        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод возвращает информацию об остатках бюджетов [кампаний](./promotion#tag/campaigns/operation/getV2Adverts).\nДля кампаний в [статусах](./promotion#tag/campaigns/operation/getV1PromotionCount):\n  - `4` — готова к запуску\n  - `9` — активна\n  - `11` — на паузе\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один профиль продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 мин | 20 запросов | 3 сек | 4 запроса |\n| Сервисный | 1 мин | 20 запросов | 3 сек | 4 запроса |\n| Базовый с секретом | 1 мин | 20 запросов | 3 сек | 4 запроса |\n| Базовый | 1 ч | 4 запроса | 15 мин | 1 запрос |\n</div>\n",
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод возвращает информацию об остатках бюджетов [кампаний](./promotion#tag/campaigns/operation/getV3Adverts).\nДля кампаний в [статусах](./promotion#tag/campaigns/operation/getV1PromotionCount):\n  - `4` — готова к запуску\n  - `9` — активна\n  - `11` — на паузе\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один профиль продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 мин | 20 запросов | 3 сек | 4 запроса |\n| Сервисный | 1 мин | 20 запросов | 3 сек | 4 запроса |\n| Базовый с секретом | 1 мин | 20 запросов | 3 сек | 4 запроса |\n| Базовый | 1 ч | 4 запроса | 15 мин | 1 запрос |\n</div>\n",
         "operationId": "postV2Budget",
         "requestBody": {
           "content": {
@@ -8900,6 +9172,118 @@
       },
       "servers": [
         {
+          "url": "https://advert-api.wildberries.ru"
+        }
+      ]
+    },
+    "/api/advert/v3/adverts": {
+      "get": {
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод возвращает информацию о кампаниях с единой или ручной ставкой по их статусам, типам оплаты или списку ID.\n\nЧтобы получить все кампании:\n  1. Сделайте первый запрос без параметра `next`.\n  2. Повторяйте запрос со значением параметра `next` из ответа на предыдущий запрос, пока `next` не вернётся пустым `\"\"`. Это будет означать, что вы получили все кампании.\n\nЧтобы получить конкретные кампании, передайте их ID в параметре `advertIds`.\nНе передавайте `advertIds` в одном запросе с другими параметрами.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один профиль продавца:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| <no value> | <no value> | <no value> | <no value> |\n</div>\n",
+        "operationId": "getV3Adverts",
+        "parameters": [
+          {
+            "description": "ID кампаний\n",
+            "in": "query",
+            "name": "advertIds",
+            "schema": {
+              "example": "12345,23456,34567",
+              "type": "string"
+            }
+          },
+          {
+            "description": "Статусы кампаний:\n- `4` — готова к запуску\n- `7` — кампания завершена\n- `9` — идут показы\n- `11` — кампания на паузе\n",
+            "in": "query",
+            "name": "statuses",
+            "schema": {
+              "example": "4,7,9,11",
+              "type": "string"
+            }
+          },
+          {
+            "description": "Параметр пагинации",
+            "in": "query",
+            "name": "next",
+            "schema": {
+              "default": "",
+              "type": "string"
+            }
+          },
+          {
+            "description": "Количество кампаний в ответе\n",
+            "in": "query",
+            "name": "limit",
+            "schema": {
+              "default": 50,
+              "maximum": 50,
+              "minimum": 1,
+              "type": "integer"
+            }
+          },
+          {
+            "description": "Тип оплаты:\n- `cpm` — за показы\n- `cpc` — за клик\n",
+            "in": "query",
+            "name": "paymentType",
+            "schema": {
+              "enum": [
+                "cpm",
+                "cpc"
+              ],
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "examples": {
+                  "GetV3AdvertsSuccessResponse": {
+                    "$ref": "#/components/examples/GetV3AdvertsSuccessResponse"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/V3GetAdvertsResponse"
+                }
+              }
+            },
+            "description": "<span class='response__value response__value_success'>Успешно</span>"
+          },
+          "400": {
+            "content": {
+              "application/json": {
+                "examples": {
+                  "ConflictingModes": {
+                    "$ref": "#/components/examples/ConflictingModes"
+                  },
+                  "InvalidId": {
+                    "$ref": "#/components/examples/InvalidId"
+                  },
+                  "InvalidStatus": {
+                    "$ref": "#/components/examples/InvalidStatus"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/response400"
+                }
+              }
+            },
+            "description": "<span class='response__value '>Неправильный запрос</span>"
+          },
+          "401": {
+            "$ref": "#/components/responses/401"
+          },
+          "429": {
+            "$ref": "#/components/responses/429"
+          }
+        },
+        "summary": "Информация о кампаниях{{ /api/advert/v3/adverts }}",
+        "tags": [
+          "campaigns"
+        ]
+      },
+      "servers": [
+        {
+          "description": "**Prod**\n",
           "url": "https://advert-api.wildberries.ru"
         }
       ]
@@ -9130,7 +9514,7 @@
       "x-traitTag": true
     },
     {
-      "description": "<div class=\"description_auth\">\n  Для доступа к методам используйте <a href=\"./api-information#tag/authorization/Kak-sozdat-personalnyj-bazovyj-ili-testovyj-token\">токен</a> для категории <strong>Продвижение</strong>\n</div>\n\nМетоды получения:\n  - [списков рекламных кампаний](./promotion#tag/campaigns/operation/getV1PromotionCount)\n  - [информации о кампаниях](./promotion#tag/campaigns/operation/getV2Adverts)\n",
+      "description": "<div class=\"description_auth\">\n  Для доступа к методам используйте <a href=\"./api-information#tag/authorization/Kak-sozdat-personalnyj-bazovyj-ili-testovyj-token\">токен</a> для категории <strong>Продвижение</strong>\n</div>\n\nМетоды получения:\n  - [списков рекламных кампаний](./promotion#tag/campaigns/operation/getV1PromotionCount)\n  - [информации о кампаниях](./promotion#tag/campaigns/operation/getV3Adverts)\n",
       "name": "campaigns",
       "x-displayName": "Кампании"
     },
@@ -9145,7 +9529,7 @@
       "x-displayName": "Управление кампаниями"
     },
     {
-      "description": "<div class=\"description_auth\">\n  Для доступа к методам используйте <a href=\"./api-information#tag/authorization/Kak-sozdat-personalnyj-bazovyj-ili-testovyj-token\">токен</a> для категории <strong>Продвижение</strong>\n</div>\n\n**Поисковые кластеры**<br><br>\n\n**Кластер запросов** — это сгруппированный список запросов, по которым покупатели ищут товары на WB. В кластер входят:\n  - синонимы\n  - запросы в разном роде: мужской, женский, средний\n  - запросы с опечатками\n  - разные формы слова\n  - близкие по смыслу словосочетания\n\nНапример, в кластер `футболка мужская` войдут также запросы `футболка мужкая`, `футболки мужские с рукавом`, `футболки мужские` и другие похожие словосочетания.<br><br>\n\nЧтобы получить кластеры, по которым уже были показы, используйте метод [статистики поисковых запросов](./promotion#tag/statistics/operation/postV0NormqueryStats).<br><br>\n\nДля кампаний с ручной ставкой можно [установить](./promotion#tag/searchClusters/operation/postV1NormqueryBids) или [удалить](./promotion#tag/searchClusters/operation/deleteV0NormqueryBids) ставки в валюте [профиля продавца](https://cmp.wildberries.ru/campaigns/finances). Валюту профиля продавца и шаги ставок можно уточнить в ответе метода [GET /api/advert/v1/config](./promotion#tag/campaignManagement/operation/getV1Config). Ставки индивидуальны для каждого поискового кластера.<br><br>\n\n**Исключения**<br><br>\n\n[Установите минус-фразы](./promotion#tag/searchClusters/operation/postV0NormquerySetMinus), чтобы исключить кластеры запросов из кампаний. Товар не будет продвигаться по минус-фразам.\n",
+      "description": "<div class=\"description_auth\">\n  Для доступа к методам используйте <a href=\"./api-information#tag/authorization/Kak-sozdat-personalnyj-bazovyj-ili-testovyj-token\">токен</a> для категории <strong>Продвижение</strong>\n</div>\n\n**Поисковые кластеры**<br><br>\n\n**Кластер запросов** — это сгруппированный список запросов, по которым покупатели ищут товары на WB. В кластер входят:\n  - синонимы\n  - запросы в разном роде: мужской, женский, средний\n  - запросы с опечатками\n  - разные формы слова\n  - близкие по смыслу словосочетания\n\nНапример, в кластер `футболка мужская` войдут также запросы `футболка мужкая`, `футболки мужские с рукавом`, `футболки мужские` и другие похожие словосочетания.<br><br>\n\nЧтобы получить кластеры, по которым уже были показы, используйте метод [статистики поисковых запросов](./promotion#tag/statistics/operation/postV0NormqueryStats).<br><br>\n\nДля кампаний с ручной ставкой можно [установить](./promotion#tag/searchClusters/operation/postV1NormqueryBids) или [удалить](./promotion#tag/searchClusters/operation/deleteV0NormqueryBids) ставки в валюте [профиля продавца](https://cmp.wildberries.ru/campaigns/finances). Валюту профиля продавца и шаги ставок можно уточнить в ответе метода получения [конфигурационных значений продвижения](./promotion#tag/campaignManagement/operation/getV1Config). Ставки индивидуальны для каждого поискового кластера.<br><br>\n\n**Исключения**<br><br>\n\n[Установите минус-фразы](./promotion#tag/searchClusters/operation/postV0NormquerySetMinus), чтобы исключить кластеры запросов из кампаний. Товар не будет продвигаться по минус-фразам.\n",
       "name": "searchClusters",
       "x-displayName": "Поисковые кластеры"
     },
