@@ -2675,7 +2675,7 @@
                   }
                 },
                 "schema": {
-                  "oneOf": [
+                  "anyOf": [
                     {
                       "$ref": "#/components/schemas/ArhiveOrderError400"
                     },

@@ -9,14 +9,12 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: 35c32d5e01e83690
+content_sha: df25ee51aa87aab3
 ---
 
 # Получить статус согласования акта
 
 `POST /v1/supply-order/act/accept/status`
-
-Вы можете оставить обратную связь о работе метода в [комментариях](https://dev.ozon.ru/community/2294-Novye-beta-metody-dlia-raboty-s-aktami-FBO/) в сообществе разработчиков Ozon for dev.
 
 ## Параметры
 

@@ -2,14 +2,14 @@
 title: Включение буста продаж и установка ставок
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/bids/putBidsForBusiness.md"
-fetched_at: "2026-11-07T02:58:26Z"
-content_sha: 2f92c3fde4381a9d
+fetched_at: "2026-11-11T02:52:01Z"
+content_sha: f5dd2877ca5ae867
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.64.2
+    content: Diplodoc Platform v5.66.1
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/bids/putBidsForBusiness.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/bids/putBidsForBusiness.md
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/bids/putBidsForBusiness.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21966232
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22024309
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21966232
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22024309
 
 <!-- source: ru/api/bids/putBidsForBusiness.md -->
 <div class="openapi">
@@ -936,14 +936,14 @@ alternate:
                 Например, ставка 5% обозначается как 500.
               $ref: '#/$defs/Bid'
     $defs:
-      /home/sandbox/.ya/build/build_root/wu56/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/common/schemas.yaml#/ShopSku:
+      /home/sandbox/.ya/build/build_root/b9nn/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/common/schemas.yaml#/ShopSku:
         description: "Ваш SKU —\_идентификатор товара в вашей системе.\n\nПравила использования SKU:\n\n* У каждого товара SKU должен быть свой.\n\n* Уже заданный SKU нельзя освободить и использовать заново для другого товара. Каждый товар должен получать новый идентификатор, до того никогда не использовавшийся в вашем каталоге.\n\nSKU товара можно изменить в кабинете продавца на Маркете. О том, как это сделать, читайте [в Справке Маркета для продавцов](https://yandex.ru/support2/marketplace/ru/assortment/operations/edit-sku).\n\n{% note warning %}\n\nПробельные символы в начале и конце значения автоматически удаляются. Например, `\"  SKU123  \"` и `\"SKU123\"` будут обработаны как одинаковые значения.\n\n{% endnote %}\n\n[Что такое SKU и как его назначать](https://yandex.ru/support/marketplace/assortment/add/index.html#fields)\n"
         type: string
         pattern: ^(?=.*\S.*)[^\x00-\x08\x0A-\x1f\x7f]{1,255}$
         x-transform: trim
         minLength: 1
         maxLength: 255
-      /home/sandbox/.ya/build/build_root/wu56/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/bids/schemas.yaml#/Bid:
+      /home/sandbox/.ya/build/build_root/b9nn/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/bids/schemas.yaml#/Bid:
         description: Значение ставки.
         type: integer
         format: int32

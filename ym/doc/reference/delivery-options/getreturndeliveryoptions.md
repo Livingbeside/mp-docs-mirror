@@ -1,15 +1,15 @@
 ---
-title: Получение подходящих для возврата ПВЗ
+title: Получение подходящих для возврата пунктов выдачи
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/delivery-options/getReturnDeliveryOptions.md"
-fetched_at: "2026-11-07T02:58:07Z"
-content_sha: a94c985f0a8abc6e
+fetched_at: "2026-11-11T02:51:42Z"
+content_sha: 9ef7b58184ea83b9
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.64.2
+    content: Diplodoc Platform v5.66.1
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/delivery-options/getReturnDeliveryOptions.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/delivery-options/getReturnDeliveryOptions.md
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/delivery-options/getReturnDeliveryOptions.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21966232
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22024309
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21966232
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22024309
 
 <!-- source: ru/api/delivery-options/getReturnDeliveryOptions.md -->
 <div class="openapi">

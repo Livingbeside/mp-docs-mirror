@@ -2,14 +2,14 @@
 title: Изменение категорийных характеристик
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/content-change.md"
-fetched_at: "2026-11-07T02:56:55Z"
-content_sha: 2990413a19413d3b
+fetched_at: "2026-11-11T02:50:37Z"
+content_sha: 4f5c3546cf1e5b5d
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.64.2
+    content: Diplodoc Platform v5.66.1
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/step-by-step/content-change.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/content-change.md
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/content-change.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21966232
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22024309
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21966232
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22024309
 
 # Изменение категорийных характеристик
 

@@ -9,14 +9,12 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: f4a2ee12dedf7f2d
+content_sha: c5cd82df6c9bbfda
 ---
 
 # Согласовать акт
 
 `POST /v1/supply-order/act/accept`
-
-Вы можете оставить обратную связь о работе метода в [комментариях](https://dev.ozon.ru/community/2294-Novye-beta-metody-dlia-raboty-s-aktami-FBO/) в сообществе разработчиков Ozon for dev.
 
 ## Параметры
 

@@ -9,14 +9,12 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: db2592e83c84da7b
+content_sha: 1ed47aeec3dc5fa2
 ---
 
 # Получить типы пуш-уведомлений
 
 `POST /v1/notification/push-type/list`
-
-Вы можете оставить обратную связь о работе метода в [комментариях](https://dev.ozon.ru/community/1978-Novye-beta-metody-dlia-upravleniia-podkliucheniiami-PUSH-uvedomlenii/) в сообществе разработчиков Ozon for dev.
 
 ## Параметры
 

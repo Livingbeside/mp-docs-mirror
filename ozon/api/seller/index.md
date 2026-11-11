@@ -4,7 +4,7 @@ api: ozon-seller
 spec_version: 2.1
 operations: 484
 source: "https://docs.ozon.ru/api/seller/"
-content_sha: c46bf3dbcf1f403c
+content_sha: c07e134bb41a0975
 ---
 
 # Документация Ozon Seller API
@@ -20,7 +20,7 @@ content_sha: c46bf3dbcf1f403c
 
 [](https://seller-edu.ozon.ru/webinars/5940/)
 
-Версия спеки: `2.1` · методов: **484** · разделов справки: **27**
+Версия спеки: `2.1` · методов: **484** · разделов справки: **28**
 
 Источник: https://docs.ozon.ru/api/seller/
 
@@ -263,7 +263,7 @@ content_sha: c46bf3dbcf1f403c
 | `POST` | `/v1/product/import/prices` | Prices&StocksAPI | [Обновить цену](prices-stocksapi/post-v1-product-import-prices.md) |
 | `POST` | `/v1/product/info/description` | ProductAPI | [Получить описание товара](productapi/post-v1-product-info-description.md) |
 | `POST` | `/v1/product/info/discounted` | Prices&StocksAPI | [Узнать информацию об уценке и основном товаре по SKU уценённого товара](prices-stocksapi/post-v1-product-info-discounted.md) |
-| `POST` | `/v1/product/info/stocks-by-warehouse/fbo` | ProductAPI | [Получить информацию о стоках на складах FBO](productapi/post-v1-product-info-stocks-by-warehouse-fbo.md) |
+| `POST` | `/v1/product/info/stocks-by-warehouse/fbo` | Prices&StocksAPI | [Получить информацию об остатках на складах FBO](prices-stocksapi/post-v1-product-info-stocks-by-warehouse-fbo.md) |
 | `POST` | `/v1/product/info/stocks-by-warehouse/fbs` | Prices&StocksAPI | [Информация об остатках на складах продавца (FBS и rFBS)](prices-stocksapi/post-v1-product-info-stocks-by-warehouse-fbs.md) |
 | `POST` | `/v1/product/info/subscription` | ProductAPI | [Количество подписавшихся на товар пользователей](productapi/post-v1-product-info-subscription.md) |
 | `POST` | `/v1/product/info/warehouse/stocks` | Prices&StocksAPI | [Получить информацию по остаткам на складе FBS и rFBS](prices-stocksapi/post-v1-product-info-warehouse-stocks.md) |
@@ -305,7 +305,7 @@ content_sha: c46bf3dbcf1f403c
 | `POST` | `/v1/report/placement/by-supplies/create` | ReportAPI | [Получить отчёт о стоимости размещения по поставкам](reportapi/post-v1-report-placement-by-supplies-create.md) |
 | `POST` | `/v1/report/postings/create` | ReportAPI | [Отчёт об отправлениях](reportapi/post-v1-report-postings-create.md) |
 | `POST` | `/v1/report/products/create` | ReportAPI | [Отчёт по товарам](reportapi/post-v1-report-products-create.md) |
-| `POST` | `/v1/report/realization/posting/create` | BetaMethod | [Получить позаказный отчёт о реализации товаров](betamethod/post-v1-report-realization-posting-create.md) |
+| `POST` | `/v1/report/realization/posting/create` | ReportAPI | [Получить позаказный отчёт о реализации товаров](reportapi/post-v1-report-realization-posting-create.md) |
 | `POST` | `/v1/report/warehouse/stock` | ReportAPI | [Отчёт об остатках на FBS-складе](reportapi/post-v1-report-warehouse-stock.md) |
 | `POST` | `/v1/return/box/get-by-barcode` | BetaMethod | [Получить информацию о возвратных коробках по штрихкоду с этикетки](betamethod/post-v1-return-box-get-by-barcode.md) |
 | `POST` | `/v1/return/giveout/barcode-reset` | ReturnAPI | [Сгенерировать новый штрихкод](returnapi/post-v1-return-giveout-barcode-reset.md) |
@@ -416,9 +416,9 @@ content_sha: c46bf3dbcf1f403c
 | `POST` | `/v2/actions/products` | Promos | [Получить список товаров, которые участвуют в акции](promos/post-v2-actions-products.md) |
 | `POST` | `/v2/analytics/stock_on_warehouses` | AnalyticsAPI | [Отчёт по остаткам и товарам](analyticsapi/post-v2-analytics-stock-on-warehouses.md) |
 | `POST` | `/v2/cargoes/create/info` | FboSupplyRequest | [Получить информацию по установке грузомест](fbosupplyrequest/post-v2-cargoes-create-info.md) |
-| `POST` | `/v2/cargoes/delete/status` | FBOTransport | [Получить информацию о статусе удаления грузомест и транспортных грузомест](fbotransport/post-v2-cargoes-delete-status.md) |
-| `POST` | `/v2/cargoes/delete` | FBOTransport | [Удалить грузоместа и транспортные грузоместа в заявке на поставку](fbotransport/post-v2-cargoes-delete.md) |
-| `POST` | `/v2/cargoes/get` | FBOTransport | [Получить информацию о грузоместах](fbotransport/post-v2-cargoes-get.md) |
+| `POST` | `/v2/cargoes/delete/status` | FboSupplyRequest | [Получить информацию о статусе удаления грузомест и транспортных грузомест](fbosupplyrequest/post-v2-cargoes-delete-status.md) |
+| `POST` | `/v2/cargoes/delete` | FboSupplyRequest | [Удалить грузоместа и транспортные грузоместа в заявке на поставку](fbosupplyrequest/post-v2-cargoes-delete.md) |
+| `POST` | `/v2/cargoes/get` | FboSupplyRequest | [Получить информацию о грузоместах](fbosupplyrequest/post-v2-cargoes-get.md) |
 | `POST` | `/v2/carriage/delivery/list` | DeliveryFBS | [Список методов доставки и отгрузок](deliveryfbs/post-v2-carriage-delivery-list.md) |
 | `POST` | `/v2/chat/read` | Premium | [Отметить сообщения как прочитанные](premium/post-v2-chat-read.md) |
 | `POST` | `/v2/cluster/list` | FboSupplyRequest | [Получить информацию о макролокальных кластерах](fbosupplyrequest/post-v2-cluster-list.md) |

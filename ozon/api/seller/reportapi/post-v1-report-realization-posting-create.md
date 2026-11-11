@@ -5,11 +5,11 @@ method: POST
 path: /v1/report/realization/posting/create
 operation_id: CreateCompanyFinanceRealizationPostingReport
 tags:
-  - BetaMethod
+  - ReportAPI
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: c9a3060e5a635f58
+content_sha: 06bfab23c42a6934
 ---
 
 # Получить позаказный отчёт о реализации товаров
@@ -17,8 +17,6 @@ content_sha: c9a3060e5a635f58
 `POST /v1/report/realization/posting/create`
 
 Отчёт о реализации доставленных и возвращённых товаров с детализацией по каждому заказу. Не включает отмены и невыкупы. Отчёт доступен с настоящего времени по август 2023 года включительно.
-
-Вы можете оставить обратную связь о работе метода в [комментариях](https://dev.ozon.ru/community/2280-Novyi-beta-metod-dlia-polucheniia-otcheta-o-realizatsii-po-postingam/) в сообществе разработчиков Ozon for dev.
 
 ## Параметры
 

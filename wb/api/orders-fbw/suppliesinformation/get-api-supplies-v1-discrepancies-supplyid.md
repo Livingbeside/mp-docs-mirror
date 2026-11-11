@@ -9,7 +9,7 @@ tags:
 spec_version: ordersfbw
 source: "https://dev.wildberries.ru/docs/openapi/orders-fbw"
 deprecated: false
-content_sha: 7adf98ed09ef857a
+content_sha: 5f260a63b3772ce8
 ---
 
 # Расхождения в поставке{{ /api/supplies/v1/discrepancies/{supplyId} }}
@@ -109,6 +109,11 @@ content_sha: 7adf98ed09ef857a
 - `status` — number **обязательный**. HTTP статус-код
 - `statusText` — string **обязательный**. Расшифровка HTTP статус-кода
 - `timestamp` — string<date-time> **обязательный**. Дата и время запроса
+- `status` — integer **обязательный**. HTTP-статус код
+- `title` — string **обязательный**. Краткое описание ошибки
+- `detail` — string **обязательный**. Подробное описание ошибки
+- `requestId` — string **обязательный**. ID запроса
+- `origin` — string **обязательный**. Сервис, в котором произошла ошибка
 
 **404** — Не найдено
 

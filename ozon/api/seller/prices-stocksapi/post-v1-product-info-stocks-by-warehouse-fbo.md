@@ -1,25 +1,22 @@
 ---
-title: Получить информацию о стоках на складах FBO
+title: Получить информацию об остатках на складах FBO
 api: ozon-seller
 method: POST
 path: /v1/product/info/stocks-by-warehouse/fbo
 operation_id: GetProductInfoStocksByWarehouseFbo
 tags:
-  - ProductAPI
-  - BetaMethod
+  - Prices&StocksAPI
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: 678b8d6b56870814
+content_sha: 939c48cf79072739
 ---
 
-# Получить информацию о стоках на складах FBO
+# Получить информацию об остатках на складах FBO
 
 `POST /v1/product/info/stocks-by-warehouse/fbo`
 
 Передайте в запросе `offer_ids` или `skus`.
-
-Вы можете оставить обратную связь по этому методу в комментариях к [обсуждению](https://dev.ozon.ru/community/2177-Novyi-metod-dlia-polucheniia-ostatkov-FBO/) в сообществе разработчиков Ozon for dev.
 
 ## Запрос
 
@@ -32,7 +29,7 @@ content_sha: 678b8d6b56870814
 
 ## Ответы
 
-**200** — Информация о стоках.
+**200** — Информация об остатках.
 
 - `cursor` — string. Указатель для выборки следующих данных.
 - `has_next` — boolean. `true`, если в ответе вернулись не все значения.

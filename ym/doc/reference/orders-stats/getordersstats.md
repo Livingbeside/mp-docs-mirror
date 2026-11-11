@@ -2,14 +2,14 @@
 title: Детальная информация по заказам
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/orders-stats/getOrdersStats.md"
-fetched_at: "2026-11-07T02:58:12Z"
-content_sha: 9b244e9d6a9c6d91
+fetched_at: "2026-11-11T02:51:44Z"
+content_sha: 1f89e80822fc20b0
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.64.2
+    content: Diplodoc Platform v5.66.1
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/orders-stats/getOrdersStats.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/orders-stats/getOrdersStats.md
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/orders-stats/getOrdersStats.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21966232
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22024309
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21966232
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22024309
 
 <!-- source: ru/api/orders-stats/getOrdersStats.md -->
 <div class="openapi">

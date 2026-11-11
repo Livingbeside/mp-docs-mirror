@@ -1,15 +1,15 @@
 ---
-title: Изменение цен
+title: Как изменить цены на товары
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/assortment-change-prices.md"
-fetched_at: "2026-11-07T02:56:57Z"
-content_sha: fe95d36b21c081fc
+fetched_at: "2026-11-11T02:50:38Z"
+content_sha: 22fad28228defe44
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.64.2
+    content: Diplodoc Platform v5.66.1
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/step-by-step/assortment-change-prices.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/assortment-change-prices.md
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/assortment-change-prices.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21966232
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22024309
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21966232
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22024309
 
 # Как изменить цены на товары
 

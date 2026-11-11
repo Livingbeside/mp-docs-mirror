@@ -1,15 +1,15 @@
 ---
-title: Экспресс-заказы
+title: Обработка Экспресс-заказов
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/express.md"
-fetched_at: "2026-11-07T02:56:59Z"
-content_sha: 37f9cf74c313920d
+fetched_at: "2026-11-11T02:50:39Z"
+content_sha: 5b92460324306bf2
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.64.2
+    content: Diplodoc Platform v5.66.1
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/step-by-step/express.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/express.md
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/express.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21966232
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22024309
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21966232
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22024309
 
 # Обработка Экспресс-заказов
 

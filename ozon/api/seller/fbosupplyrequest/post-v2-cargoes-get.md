@@ -5,18 +5,16 @@ method: POST
 path: /v2/cargoes/get
 operation_id: CargoesGetV2
 tags:
-  - FBOTransport
+  - FboSupplyRequest
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: 50ac0f2fe5e2509f
+content_sha: a92ca19753e92e5c
 ---
 
 # Получить информацию о грузоместах
 
 `POST /v2/cargoes/get`
-
-Вы можете оставить обратную связь о работе метода в [комментариях](https://dev.ozon.ru/community/2179-Novye-beta-metody-dlia-raboty-s-transportnymi-gruzr/) в сообществе разработчиков Ozon for dev.
 
 ## Параметры
 

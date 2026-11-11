@@ -1,15 +1,15 @@
 ---
-title: Список заказов в магазине
+title: Информация о заказах в магазине
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/orders/getOrders.md"
-fetched_at: "2026-11-07T02:58:38Z"
-content_sha: a5f166a05c898749
+fetched_at: "2026-11-11T02:52:14Z"
+content_sha: 804bf80430c8dfcc
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.64.2
+    content: Diplodoc Platform v5.66.1
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/orders/getOrders.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/orders/getOrders.md
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/orders/getOrders.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21966232
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22024309
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21966232
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22024309
 
 <!-- source: ru/api/orders/getOrders.md -->
 <div class="openapi">
@@ -5609,7 +5609,7 @@ alternate:
         uniqueItems: true
         items:
           $ref: >-
-            /home/sandbox/.ya/build/build_root/wu56/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/orders/schemas.yaml#/OrderStatusType
+            /home/sandbox/.ya/build/build_root/b9nn/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/orders/schemas.yaml#/OrderStatusType
     - description: >
         Этап обработки заказа (статус `PROCESSING`) или причина отмены заказа
         (статус `CANCELLED`).
@@ -5691,7 +5691,7 @@ alternate:
         uniqueItems: true
         items:
           $ref: >-
-            /home/sandbox/.ya/build/build_root/wu56/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/orders/schemas.yaml#/OrderSubstatusType
+            /home/sandbox/.ya/build/build_root/b9nn/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/orders/schemas.yaml#/OrderSubstatusType
     - description: >
         Начальная дата для фильтрации заказов по дате оформления.
   
@@ -5824,7 +5824,7 @@ alternate:
       required: false
       schema:
         $ref: >-
-          /home/sandbox/.ya/build/build_root/wu56/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/orders/schemas.yaml#/OrderDeliveryDispatchType
+          /home/sandbox/.ya/build/build_root/b9nn/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/orders/schemas.yaml#/OrderDeliveryDispatchType
     - description: |
         Фильтрация заказов по типам:
   
@@ -5886,7 +5886,7 @@ alternate:
       required: false
       schema:
         $ref: >-
-          /home/sandbox/.ya/build/build_root/wu56/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/orders/schemas.yaml#/OrderBuyerType
+          /home/sandbox/.ya/build/build_root/b9nn/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/orders/schemas.yaml#/OrderBuyerType
     - name: page
       description: >
         {% note warning "Параметр устарел и будет отключен 05.10.2026." %}

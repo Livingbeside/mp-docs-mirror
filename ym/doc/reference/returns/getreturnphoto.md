@@ -1,15 +1,15 @@
 ---
-title: Фотографии товара в возврате
+title: Получение фотографий товаров в возврате
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/returns/getReturnPhoto.md"
-fetched_at: "2026-11-07T02:58:06Z"
-content_sha: f37fd52fc6dedd92
+fetched_at: "2026-11-11T02:51:40Z"
+content_sha: ec44a8f7164c6ffb
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.64.2
+    content: Diplodoc Platform v5.66.1
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/returns/getReturnPhoto.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/returns/getReturnPhoto.md
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/returns/getReturnPhoto.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21966232
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22024309
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21966232
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22024309
 
 <!-- source: ru/api/returns/getReturnPhoto.md -->
 <div class="openapi">

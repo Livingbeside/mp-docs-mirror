@@ -1752,10 +1752,20 @@
                   },
                   "Response403TokenType": {
                     "$ref": "#/components/examples/Response403TokenType"
+                  },
+                  "SupplyAcceptedMoreThanYearAgo": {
+                    "$ref": "#/components/examples/SupplyAcceptedMoreThanYearAgo"
                   }
                 },
                 "schema": {
-                  "$ref": "#/components/schemas/Response4XX"
+                  "anyOf": [
+                    {
+                      "$ref": "#/components/schemas/Response4XX"
+                    },
+                    {
+                      "$ref": "#/components/schemas/models.SupplyAcceptedMoreThanYearAgo"
+                    }
+                  ]
                 }
               }
             },

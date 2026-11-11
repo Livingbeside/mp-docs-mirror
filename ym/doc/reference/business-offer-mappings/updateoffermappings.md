@@ -1,15 +1,15 @@
 ---
-title: Добавление товаров и изменение информации
+title: Добавление товаров в каталог и изменение информации о них
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/business-offer-mappings/updateOfferMappings.md"
-fetched_at: "2026-11-07T02:57:20Z"
-content_sha: 196a541561732b1a
+fetched_at: "2026-11-11T02:50:53Z"
+content_sha: 6be41d5120304449
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.64.2
+    content: Diplodoc Platform v5.66.1
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/business-offer-mappings/updateOfferMappings.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/business-offer-mappings/updateOfferMappings.md
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/business-offer-mappings/updateOfferMappings.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21966232
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22024309
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21966232
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22024309
 
 <!-- source: ru/api/business-offer-mappings/updateOfferMappings.md -->
 <div class="openapi">
@@ -252,6 +252,7 @@ alternate:
           "type": "DEFAULT",
           "downloadable": true,
           "adult": true,
+          "markingDeclared": true,
           "age": {},
           "params": [
             null
@@ -361,6 +362,7 @@ alternate:
         "type": "DEFAULT",
         "downloadable": true,
         "adult": true,
+        "markingDeclared": true,
         "age": {
           "value": 0,
           "ageUnit": "YEAR"
@@ -1209,6 +1211,28 @@ alternate:
   
   <div class="openapi-entity">
   
+  ### BaseOfferMarkingDeclared {#entity-BaseOfferMarkingDeclared}
+  
+  Продавец будет маркировать товар в системе [«Честный ЗНАК»](https://честныйзнак.рф/). Аналог параметра «Буду маркировать» в кабинете продавца, фиде и Excel-шаблоне.
+  
+  * `true` — продавец будет маркировать товар.
+  * `false` — продавец не заявляет маркировку. Если маркировка для товара обязательна, значение `false` ее не отменит.
+  
+  В ответе параметр показывает только заявление продавца. Если продавец не заявлял маркировку, параметр в ответе может отсутствовать.
+  
+  Если параметр не передан, текущее значение не меняется. Удалить его через `deleteParameters` нельзя — чтобы отозвать заявление, передайте `false`.
+  
+  Если признак меняется в нескольких местах (в кабинете, фиде, Excel-шаблоне или через API), сохраняется значение, переданное последним.
+  
+  Для маркируемого товара передайте в `barcodes` хотя бы один штрихкод производителя в формате GTIN.
+  
+  
+  **Type**: boolean
+  
+  </div>
+  
+  <div class="openapi-entity">
+  
   ### AgeUnitType {#entity-AgeUnitType}
   
   Единицы измерения возраста:
@@ -1810,6 +1834,29 @@ alternate:
   ||
   ||
   
+  _markingDeclared_{.json-schema-reset .json-schema-property}
+  {.table-cell}|
+  **Type**: [BaseOfferMarkingDeclared](#entity-BaseOfferMarkingDeclared)
+  
+  Продавец будет маркировать товар в системе [«Честный ЗНАК»](https://честныйзнак.рф/). Аналог параметра «Буду маркировать» в кабинете продавца, фиде и Excel-шаблоне.
+  
+  * `true` — продавец будет маркировать товар.
+  * `false` — продавец не заявляет маркировку. Если маркировка для товара обязательна, значение `false` ее не отменит.
+  
+  В ответе параметр показывает только заявление продавца. Если продавец не заявлял маркировку, параметр в ответе может отсутствовать.
+  
+  Если параметр не передан, текущее значение не меняется. Удалить его через `deleteParameters` нельзя — чтобы отозвать заявление, передайте `false`.
+  
+  Если признак меняется в нескольких местах (в кабинете, фиде, Excel-шаблоне или через API), сохраняется значение, переданное последним.
+  
+  Для маркируемого товара передайте в `barcodes` хотя бы один штрихкод производителя в формате GTIN.
+  
+  
+  _Example:_{.json-schema-reset .json-schema-example} `true`
+  {.table-cell}
+  ||
+  ||
+  
   _name_{.json-schema-reset .json-schema-property}
   {.table-cell}|
   **Type**: [OfferName](#entity-OfferName)
@@ -2162,6 +2209,7 @@ alternate:
     "type": "DEFAULT",
     "downloadable": true,
     "adult": true,
+    "markingDeclared": true,
     "age": {
       "value": 0,
       "ageUnit": "YEAR"
@@ -2542,6 +2590,7 @@ alternate:
       "type": "DEFAULT",
       "downloadable": true,
       "adult": true,
+      "markingDeclared": true,
       "age": {
         "value": 0,
         "ageUnit": "YEAR"
@@ -2815,6 +2864,7 @@ alternate:
     "type": "DEFAULT",
     "downloadable": true,
     "adult": true,
+    "markingDeclared": true,
     "age": {
       "value": 0,
       "ageUnit": "YEAR"
@@ -2984,6 +3034,7 @@ alternate:
     "type": "DEFAULT",
     "downloadable": true,
     "adult": true,
+    "markingDeclared": true,
     "age": {
       "value": 0,
       "ageUnit": "YEAR"
@@ -3110,6 +3161,7 @@ alternate:
       "type": "DEFAULT",
       "downloadable": true,
       "adult": true,
+      "markingDeclared": true,
       "age": {
         "value": 0,
         "ageUnit": "YEAR"
@@ -4113,7 +4165,7 @@ alternate:
       required: false
       schema:
         $ref: >-
-          /home/sandbox/.ya/build/build_root/wu56/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/business-offer-mappings/schemas.yaml#/CatalogLanguageType
+          /home/sandbox/.ya/build/build_root/b9nn/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/business-offer-mappings/schemas.yaml#/CatalogLanguageType
   headers: []
   body: |-
     {
@@ -4161,6 +4213,7 @@ alternate:
             "type": "DEFAULT",
             "downloadable": true,
             "adult": true,
+            "markingDeclared": true,
             "age": {},
             "params": [
               null
@@ -4214,18 +4267,18 @@ alternate:
           Маркет, передайте значение `true`.
         type: boolean
     $defs:
-      /home/sandbox/.ya/build/build_root/wu56/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/common/schemas.yaml#/InternalOfferId:
+      /home/sandbox/.ya/build/build_root/b9nn/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/common/schemas.yaml#/InternalOfferId:
         description: >-
           Внутренний идентификатор товара в системах Маркета. Нужен для создания
           товаров Лавки с отличными offerId и article.
         type: string
         minLength: 1
         maxLength: 255
-      /home/sandbox/.ya/build/build_root/wu56/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/common/schemas.yaml#/Url:
+      /home/sandbox/.ya/build/build_root/b9nn/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/common/schemas.yaml#/Url:
         type: string
         minLength: 1
         maxLength: 2000
-      /home/sandbox/.ya/build/build_root/wu56/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/business-offer-mappings/schemas.yaml#/OfferWeightDimensionsDTO:
+      /home/sandbox/.ya/build/build_root/b9nn/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/business-offer-mappings/schemas.yaml#/OfferWeightDimensionsDTO:
         description: >
           Габариты упаковки и вес товара.
   
@@ -4267,7 +4320,7 @@ alternate:
             example: 1.001
             type: number
             minimum: 0
-      /home/sandbox/.ya/build/build_root/wu56/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/common/schemas.yaml#/TimeUnitType:
+      /home/sandbox/.ya/build/build_root/b9nn/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/common/schemas.yaml#/TimeUnitType:
         description: |
           Единица измерения времени:
   
@@ -4283,7 +4336,7 @@ alternate:
           - WEEK
           - MONTH
           - YEAR
-      /home/sandbox/.ya/build/build_root/wu56/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/business-offer-mappings/schemas.yaml#/TimePeriodDTO:
+      /home/sandbox/.ya/build/build_root/b9nn/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/business-offer-mappings/schemas.yaml#/TimePeriodDTO:
         description: >-
           Временной отрезок с комментарием. Требования к содержанию комментария
           зависят от контекста использования параметра и указаны в описании поля,
@@ -4303,7 +4356,7 @@ alternate:
             description: Комментарий.
             type: string
             maxLength: 500
-      /home/sandbox/.ya/build/build_root/wu56/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/business-offer-mappings/schemas.yaml#/CommodityCodeType:
+      /home/sandbox/.ya/build/build_root/b9nn/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/business-offer-mappings/schemas.yaml#/CommodityCodeType:
         description: >
           Тип товарного кода:
   
@@ -4326,7 +4379,7 @@ alternate:
           - CUSTOMS_COMMODITY_CODE
           - IKPU_CODE
           - OKPD2_CODE
-      /home/sandbox/.ya/build/build_root/wu56/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/business-offer-mappings/schemas.yaml#/OfferConditionType:
+      /home/sandbox/.ya/build/build_root/b9nn/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/business-offer-mappings/schemas.yaml#/OfferConditionType:
         description: >
           Тип уценки:
   
@@ -4356,7 +4409,7 @@ alternate:
           - REDUCTION
           - RENOVATED
           - NOT_SPECIFIED
-      /home/sandbox/.ya/build/build_root/wu56/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/business-offer-mappings/schemas.yaml#/OfferConditionQualityType:
+      /home/sandbox/.ya/build/build_root/b9nn/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/business-offer-mappings/schemas.yaml#/OfferConditionQualityType:
         description: |
           Внешний вид товара:
   
@@ -4370,7 +4423,7 @@ alternate:
           - EXCELLENT
           - GOOD
           - NOT_SPECIFIED
-      /home/sandbox/.ya/build/build_root/wu56/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/business-offer-mappings/schemas.yaml#/OfferConditionDTO:
+      /home/sandbox/.ya/build/build_root/b9nn/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/business-offer-mappings/schemas.yaml#/OfferConditionDTO:
         description: |
           Состояние уцененного товара.
         type: object
@@ -4388,7 +4441,7 @@ alternate:
               Описание товара. Подробно опишите дефекты, насколько они заметны и
               где их искать.
             type: string
-      /home/sandbox/.ya/build/build_root/wu56/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/business-offer-mappings/schemas.yaml#/OfferType:
+      /home/sandbox/.ya/build/build_root/b9nn/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/business-offer-mappings/schemas.yaml#/OfferType:
         description: "Особый тип товара:\n\n* `DEFAULT` — товары, для которых вы передавали особый тип ранее и хотите убрать его.\n* `MEDICINE` — лекарства.\n* `BOOK` — бумажные и электронные книги.\n* `AUDIOBOOK` — аудиокниги.\n* `ARTIST_TITLE` — музыкальная и видеопродукция.\n* `ON_DEMAND` — товары на заказ.\n* `ALCOHOL` — алкоголь.\n\n{% note info \"Если ваш товар —\_книга\" %}\n\nУкажите год издания в характеристиках товара. [Подробнее о параметре](../../reference/business-offer-mappings/updateOfferMappings.md#offerparamdto)\n\n{% endnote %}\n"
         type: string
         enum:
@@ -4399,38 +4452,7 @@ alternate:
           - ARTIST_TITLE
           - ON_DEMAND
           - ALCOHOL
-      /home/sandbox/.ya/build/build_root/wu56/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/business-offer-mappings/schemas.yaml#/BaseOfferMarkingDeclared:
-        x-hidden: true
-        description: >
-          Продавец будет маркировать товар в системе [«Честный
-          ЗНАК»](https://честныйзнак.рф/). Аналог параметра «Буду маркировать» в
-          кабинете продавца, фиде и Excel-шаблоне.
-  
-  
-          * `true` — продавец будет маркировать товар.
-  
-          * `false` — продавец не заявляет маркировку. Если маркировка для товара
-          обязательна, значение `false` ее не отменит.
-  
-  
-          В ответе параметр показывает только заявление продавца. Если продавец не
-          заявлял маркировку, параметр в ответе может отсутствовать.
-  
-  
-          Если параметр не передан, текущее значение не меняется. Удалить его
-          через `deleteParameters` нельзя — чтобы отозвать заявление, передайте
-          `false`.
-  
-  
-          Если признак меняется в нескольких местах (в кабинете, фиде,
-          Excel-шаблоне или через API), сохраняется значение, переданное
-          последним.
-  
-  
-          Для маркируемого товара передайте в `barcodes` хотя бы один штрихкод
-          производителя в формате GTIN.
-        type: boolean
-      /home/sandbox/.ya/build/build_root/wu56/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/business-offer-mappings/schemas.yaml#/AgeUnitType:
+      /home/sandbox/.ya/build/build_root/b9nn/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/business-offer-mappings/schemas.yaml#/AgeUnitType:
         description: |
           Единицы измерения возраста:
   
@@ -4440,7 +4462,7 @@ alternate:
         enum:
           - YEAR
           - MONTH
-      /home/sandbox/.ya/build/build_root/wu56/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/business-offer-mappings/schemas.yaml#/AgeDTO:
+      /home/sandbox/.ya/build/build_root/b9nn/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/business-offer-mappings/schemas.yaml#/AgeDTO:
         description: Возраст в заданных единицах измерения.
         type: object
         required:
@@ -4456,7 +4478,7 @@ alternate:
             description: |
               Единица измерения.
             $ref: '#/$defs/AgeUnitType'
-      /home/sandbox/.ya/build/build_root/wu56/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/common/schemas.yaml#/CurrencyType:
+      /home/sandbox/.ya/build/build_root/b9nn/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/common/schemas.yaml#/CurrencyType:
         type: string
         description: |
           Коды валют:
@@ -4590,7 +4612,7 @@ alternate:
           - NAD
           - TL
           - UE
-      /home/sandbox/.ya/build/build_root/wu56/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/common/catalog-common-schemas.yaml#/PriceWithDiscountDTO:
+      /home/sandbox/.ya/build/build_root/b9nn/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/common/catalog-common-schemas.yaml#/PriceWithDiscountDTO:
         description: Цена с указанием скидки.
         type: object
         allOf:
@@ -4623,7 +4645,7 @@ alternate:
                 type: number
                 minimum: 0
                 exclusiveMinimum: true
-      /home/sandbox/.ya/build/build_root/wu56/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/common/catalog-common-schemas.yaml#/BasePriceDTO:
+      /home/sandbox/.ya/build/build_root/b9nn/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/common/catalog-common-schemas.yaml#/BasePriceDTO:
         description: Цена товара.
         type: object
         required:
@@ -4638,7 +4660,7 @@ alternate:
           currencyId:
             description: Валюта.
             $ref: '#/$defs/CurrencyType'
-      /home/sandbox/.ya/build/build_root/wu56/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/business-offer-mappings/api/updateOfferMappings.yaml#/UpdateOfferDTO:
+      /home/sandbox/.ya/build/build_root/b9nn/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/business-offer-mappings/api/updateOfferMappings.yaml#/UpdateOfferDTO:
         description: Параметры товара.
         type: object
         allOf:
@@ -5095,8 +5117,36 @@ alternate:
                   сексуальных потребностей.
                 type: boolean
               markingDeclared:
-                x-hidden: true
-                $ref: '#/$defs/BaseOfferMarkingDeclared'
+                description: >
+                  Продавец будет маркировать товар в системе [«Честный
+                  ЗНАК»](https://честныйзнак.рф/). Аналог параметра «Буду
+                  маркировать» в кабинете продавца, фиде и Excel-шаблоне.
+  
+  
+                  * `true` — продавец будет маркировать товар.
+  
+                  * `false` — продавец не заявляет маркировку. Если маркировка для
+                  товара обязательна, значение `false` ее не отменит.
+  
+  
+                  В ответе параметр показывает только заявление продавца. Если
+                  продавец не заявлял маркировку, параметр в ответе может
+                  отсутствовать.
+  
+  
+                  Если параметр не передан, текущее значение не меняется. Удалить
+                  его через `deleteParameters` нельзя — чтобы отозвать заявление,
+                  передайте `false`.
+  
+  
+                  Если признак меняется в нескольких местах (в кабинете, фиде,
+                  Excel-шаблоне или через API), сохраняется значение, переданное
+                  последним.
+  
+  
+                  Для маркируемого товара передайте в `barcodes` хотя бы один
+                  штрихкод производителя в формате GTIN.
+                type: boolean
               age:
                 description: >
                   Если товар не предназначен для детей младше определенного
@@ -5365,12 +5415,12 @@ alternate:
                     - TYPE
                     - VENDOR_CODE
                     - VIDEOS
-      /home/sandbox/.ya/build/build_root/wu56/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/common/schemas.yaml#/MarketSku:
+      /home/sandbox/.ya/build/build_root/b9nn/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/common/schemas.yaml#/MarketSku:
         description: Идентификатор карточки товара на Маркете.
         type: integer
         format: int64
         minimum: 1
-      /home/sandbox/.ya/build/build_root/wu56/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/business-offer-mappings/schemas.yaml#/UpdateMappingDTO:
+      /home/sandbox/.ya/build/build_root/b9nn/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/business-offer-mappings/schemas.yaml#/UpdateMappingDTO:
         description: >
           Карточка на Маркете, которая, с вашей точки зрения, подходит товару.
           Чтобы определить идентификатор подходящей карточки, воспользуйтесь

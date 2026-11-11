@@ -5,18 +5,16 @@ method: POST
 path: /v2/cargoes/delete
 operation_id: CargoesDeleteV2
 tags:
-  - FBOTransport
+  - FboSupplyRequest
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: aadef51ac7b3f821
+content_sha: 3ecb6ae0205c2cd1
 ---
 
 # Удалить грузоместа и транспортные грузоместа в заявке на поставку
 
 `POST /v2/cargoes/delete`
-
-Вы можете оставить обратную связь о работе метода в [комментариях](https://dev.ozon.ru/community/2179-Novye-beta-metody-dlia-raboty-s-transportnymi-gruzr/) в сообществе разработчиков Ozon for dev.
 
 ## Параметры
 

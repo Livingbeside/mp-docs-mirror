@@ -1,15 +1,15 @@
 ---
-title: Изменение условий продажи
+title: Изменение условий продажи товаров в магазине
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/offers/updateCampaignOffers.md"
-fetched_at: "2026-11-07T02:57:22Z"
-content_sha: ff0be174ab44cac1
+fetched_at: "2026-11-11T02:50:53Z"
+content_sha: 5160728f7c405228
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.64.2
+    content: Diplodoc Platform v5.66.1
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/offers/updateCampaignOffers.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/offers/updateCampaignOffers.md
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/offers/updateCampaignOffers.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21966232
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22024309
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21966232
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22024309
 
 <!-- source: ru/api/offers/updateCampaignOffers.md -->
 <div class="openapi">
@@ -1098,7 +1098,7 @@ alternate:
                   type: integer
                   format: int32
     $defs:
-      /home/sandbox/.ya/build/build_root/wu56/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/offers/schemas.yaml#/QuantumDTO:
+      /home/sandbox/.ya/build/build_root/b9nn/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/offers/schemas.yaml#/QuantumDTO:
         deprecated: true
         x-deprecation-config:
           shutdown-date: '2026-10-19'

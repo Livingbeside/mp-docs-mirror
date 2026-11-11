@@ -5,18 +5,16 @@ method: POST
 path: /v2/cargoes/delete/status
 operation_id: CargoesDeleteStatusV2
 tags:
-  - FBOTransport
+  - FboSupplyRequest
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: 584b674425446a24
+content_sha: a58db4baa9d47118
 ---
 
 # Получить информацию о статусе удаления грузомест и транспортных грузомест
 
 `POST /v2/cargoes/delete/status`
-
-Вы можете оставить обратную связь о работе метода в [комментариях](https://dev.ozon.ru/community/2179-Novye-beta-metody-dlia-raboty-s-transportnymi-gruzr/) в сообществе разработчиков Ozon for dev.
 
 ## Параметры
 

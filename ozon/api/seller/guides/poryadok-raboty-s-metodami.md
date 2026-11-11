@@ -5,7 +5,7 @@ tag: Process
 group: Общее описание
 kind: guide
 source: "https://docs.ozon.ru/api/seller/"
-content_sha: d3f7db365a6e6bcd
+content_sha: a26ffbd97a852d1f
 ---
 
 # Порядок работы с методами
@@ -142,6 +142,9 @@ Ozon, товар не будет создан или обновлён.
 
 Для получения информации о количестве остатков для FBO, FBS, rFBS и FBP
 используйте [/v4/product/info/stocks](#operation/ProductAPI_GetProductInfoStocks).
+
+Для получения информации о количестве остатков для FBO
+используйте [/v1/product/info/stocks-by-warehouse/fbo](#operation/GetProductInfoStocksByWarehouseFbo).
 
 Для получения информации о количестве остатков для FBS и rFBS
 используйте [/v2/product/info/stocks-by-warehouse/fbs](#operation/ProductAPI_GetProductInfoStocksByWarehouseFbsV2).
@@ -767,6 +770,7 @@ Ozon, товар не будет создан или обновлён.
 
 - [v1/analytics/stocks](#operation/AnalyticsAPI_AnalyticsStocks) — получите отчёт по остаткам на складах Ozon, чтобы планировать поставки товаров.
 - [v4/product/info/stocks](#operation/ProductAPI_GetProductInfoStocks) — покажите покупателю количество товаров на складах Ozon.
+- [/v1/product/info/stocks-by-warehouse/fbo](#operation/GetProductInfoStocksByWarehouseFbo) — обновите цены и остатки товаров.
 
 Если на складах Ozon недостаточно товаров, создать заказ через методы Ozon Доставки не получится.
 

@@ -9,14 +9,12 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: be4ae80e066fd471
+content_sha: d65aeb367d6bf7e9
 ---
 
 # Изменить URL-адрес для уведомлений
 
 `POST /v1/notification/update`
-
-Вы можете оставить обратную связь о работе метода в [комментариях](https://dev.ozon.ru/community/1978-Novye-beta-metody-dlia-upravleniia-podkliucheniiami-PUSH-uvedomlenii/) в сообществе разработчиков Ozon for dev.
 
 ## Параметры
 

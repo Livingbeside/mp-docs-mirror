@@ -9,16 +9,12 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: a2d7e400b9d03cd7
+content_sha: f8db0f2f87adc345
 ---
 
 # Сгенерировать этикетки для транспортных грузомест по идентификатору поставки
 
 `POST /v1/cargoes/label/transport-by-order/create`
-
-Вы можете оставить обратную связь о работе метода в [комментариях](https://dev.ozon.ru/community/2179-Novye-beta-metody-dlia-raboty-s-transportnymi-gruzr/) в сообществе разработчиков Ozon for dev.
-
-[Подробнее о работе с транспортными грузоместами](https://dev.ozon.ru/start/525-Rabota-s-transportnymi-gruzomestami-TGM-v-postavkakh-FBO/)
 
 ## Параметры
 

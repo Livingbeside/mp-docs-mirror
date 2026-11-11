@@ -9,16 +9,12 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: 73f020384c5632da
+content_sha: fc162b8b286fd4ae
 ---
 
 # Получить статус включения или отключения транспортных грузомест
 
 `POST /v1/cargoes/transport/activate/status`
-
-Вы можете оставить обратную связь о работе метода в [комментариях](https://dev.ozon.ru/community/2179-Novye-beta-metody-dlia-raboty-s-transportnymi-gruzr/) в сообществе разработчиков Ozon for dev.
-
-[Подробнее о работе с транспортными грузоместами](https://dev.ozon.ru/start/525-Rabota-s-transportnymi-gruzomestami-TGM-v-postavkakh-FBO/)
 
 ## Параметры
 

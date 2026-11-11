@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /fbo/warehouses/table-klastery
 source: "https://seller-edu.ozon.ru/libra/fbo/warehouses/table-klastery"
-updated: "2026-11-03 10:41:31"
+updated: "2026-11-10 10:34:58"
 doc_id: 690
-fetched_at: "2026-11-04T02:50:50Z"
-content_sha: 0bdd2408461caaf4
+fetched_at: "2026-11-11T02:47:12Z"
+content_sha: be7ef4dfb026a82b
 ---
 
 # Кластеры доставки
@@ -179,6 +179,8 @@ _Главная / Продажа со склада Ozon (FBO) / Склады, а
 Красноярск
 
 Красноярск МРФЦ
+
+Красноярск Кразовская МРФЦ
 
 Красноярск Старцево РФЦ
 

@@ -1,15 +1,15 @@
 ---
-title: Формат данных
+title: Формат данных запроса и ответа
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/push-notifications/concepts/data-format.md"
-fetched_at: "2026-11-07T02:58:43Z"
-content_sha: 63c799cf54417208
+fetched_at: "2026-11-11T02:52:19Z"
+content_sha: d6fea33736f0282e
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.64.2
+    content: Diplodoc Platform v5.66.1
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/push-notifications/concepts/data-format.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/push-notifications/concepts/data-format.md
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/push-notifications/concepts/data-format.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21966232
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22024309
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21966232
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22024309
 
 # Формат данных запроса и ответа
 

@@ -9,16 +9,12 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: 7984cb959d37a4d4
+content_sha: 1b33e8061616f2bb
 ---
 
 # Получить статус генерации этикеток транспортных грузомест по идентификатору грузоместа
 
 `POST /v1/cargoes/label/transport/status`
-
-Вы можете оставить обратную связь о работе метода в [комментариях](https://dev.ozon.ru/community/2179-Novye-beta-metody-dlia-raboty-s-transportnymi-gruzr/) в сообществе разработчиков Ozon for dev.
-
-[Подробнее о работе с транспортными грузоместами](https://dev.ozon.ru/start/525-Rabota-s-transportnymi-gruzomestami-TGM-v-postavkakh-FBO/)
 
 ## Параметры
 

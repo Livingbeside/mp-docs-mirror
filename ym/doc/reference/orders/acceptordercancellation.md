@@ -2,14 +2,14 @@
 title: Отмена заказа покупателем
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/orders/acceptOrderCancellation.md"
-fetched_at: "2026-11-07T02:57:47Z"
-content_sha: 523d6db6ccd1668d
+fetched_at: "2026-11-11T02:51:19Z"
+content_sha: c86a4fb7de938781
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.64.2
+    content: Diplodoc Platform v5.66.1
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/orders/acceptOrderCancellation.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/orders/acceptOrderCancellation.md
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/orders/acceptOrderCancellation.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21966232
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22024309
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21966232
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22024309
 
 <!-- source: ru/api/orders/acceptOrderCancellation.md -->
 <div class="openapi">
@@ -814,7 +814,7 @@ alternate:
           Обязательный параметр, если вы передаете `accepted="false"`.
         $ref: '#/$defs/OrderCancellationReasonType'
     $defs:
-      /home/sandbox/.ya/build/build_root/wu56/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/orders/api/acceptOrderCancellation.yaml#/OrderCancellationReasonType:
+      /home/sandbox/.ya/build/build_root/b9nn/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/orders/api/acceptOrderCancellation.yaml#/OrderCancellationReasonType:
         description: |
           Варианты причин, по которым заказ не может быть отменен.
   

@@ -2,14 +2,14 @@
 title: Индекс качества магазинов
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/ratings/getQualityRatings.md"
-fetched_at: "2026-11-07T02:58:27Z"
-content_sha: 2ef3bf64021705d2
+fetched_at: "2026-11-11T02:52:02Z"
+content_sha: 7c25ba51327f743e
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.64.2
+    content: Diplodoc Platform v5.66.1
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/ratings/getQualityRatings.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/ratings/getQualityRatings.md
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/ratings/getQualityRatings.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21966232
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22024309
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21966232
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22024309
 
 <!-- source: ru/api/ratings/getQualityRatings.md -->
 <div class="openapi">

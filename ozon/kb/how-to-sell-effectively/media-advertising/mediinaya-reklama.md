@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /how-to-sell-effectively/media-advertising/mediinaya-reklama
 source: "https://seller-edu.ozon.ru/libra/how-to-sell-effectively/media-advertising/mediinaya-reklama"
-updated: "2026-10-21 15:11:07"
+updated: "2026-11-10 10:31:55"
 doc_id: 914
-fetched_at: "2026-10-22T01:53:08Z"
-content_sha: ced0598007402fb4
+fetched_at: "2026-11-11T02:47:12Z"
+content_sha: 8471cd55ed47afed
 ---
 
 # Что такое «Медийная реклама» на Ozon
@@ -111,7 +111,11 @@ _Главная / Продвижение / «Медийная реклама»_
 
 ## Нативный баннер
 
-**Места размещения**. Только в поиске и на главной странице в ленте рекомендаций.
+**Места размещения**. Для нативных баннеров доступны такие места размещения:
+
+«Главная» — на главной странице.
+
+«Главная и поиск» — в поиске, на главной странице и в рекомендациях.
 
 **Платформа**. Только в приложении и мобильной версии сайта.
 

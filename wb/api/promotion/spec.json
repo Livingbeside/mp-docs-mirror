@@ -33,7 +33,7 @@
         "value": "Ошибка изменения названия кампании"
       },
       "ConflictingModes": {
-        "summary": "Недопустимо одновременное применение параметра advertIds с другими параметрами",
+        "summary": "Недопустимо одновременное применение параметра `advertIds` с другими параметрами",
         "value": {
           "detail": "advertIds cannot be used together with statuses, next or limit",
           "origin": "camp-api-public-cache",
@@ -80,14 +80,13 @@
                 "name": "Моя кампания",
                 "paymentType": "cpm",
                 "placements": [
-                  "search",
-                  "recommendations",
                   "combined"
                 ]
               },
               "status": 9,
               "timestamps": {
                 "created": "2024-01-01T10:00:00+03:00",
+                "ended": null,
                 "started": "2024-01-01T10:05:00+03:00",
                 "updated": "2024-01-02T15:30:00+03:00"
               }
@@ -2028,7 +2027,7 @@
                   "type": "integer"
                 },
                 "timestamps": {
-                  "$ref": "#/components/schemas/Timestamps"
+                  "$ref": "#/components/schemas/TimestampsV2"
                 }
               },
               "required": [
@@ -2627,6 +2626,40 @@
         "type": "object"
       },
       "Timestamps": {
+        "description": "Временные отметки",
+        "properties": {
+          "created": {
+            "description": "Время создания кампании",
+            "format": "date-time",
+            "type": "string"
+          },
+          "ended": {
+            "description": "Время завершения кампании",
+            "format": "date-time",
+            "nullable": true,
+            "type": "string"
+          },
+          "started": {
+            "description": "Время последнего запуска кампании",
+            "format": "date-time",
+            "nullable": true,
+            "type": "string"
+          },
+          "updated": {
+            "description": "Время последнего изменения кампании",
+            "format": "date-time",
+            "type": "string"
+          }
+        },
+        "required": [
+          "created",
+          "updated",
+          "started",
+          "ended"
+        ],
+        "type": "object"
+      },
+      "TimestampsV2": {
         "description": "Временные отметки",
         "properties": {
           "created": {
@@ -8188,7 +8221,7 @@
                   }
                 },
                 "schema": {
-                  "oneOf": [
+                  "anyOf": [
                     {
                       "$ref": "#/components/schemas/V0BidsRecommendationsCpmResponse1"
                     },

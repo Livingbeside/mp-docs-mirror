@@ -9,14 +9,12 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: e017507297f62800
+content_sha: f91a72ae906a8c09
 ---
 
 # Получить информацию об акте
 
 `POST /v1/supply-order/act/summary/get`
-
-Вы можете оставить обратную связь о работе метода в [комментариях](https://dev.ozon.ru/community/2294-Novye-beta-metody-dlia-raboty-s-aktami-FBO/) в сообществе разработчиков Ozon for dev.
 
 ## Параметры
 

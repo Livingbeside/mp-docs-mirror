@@ -9,7 +9,7 @@ tags:
 spec_version: promotion
 source: "https://dev.wildberries.ru/docs/openapi/promotion"
 deprecated: false
-content_sha: fc785098baae2727
+content_sha: 93b6c092d3dd234a
 ---
 
 # Информация о кампаниях
@@ -54,6 +54,7 @@ content_sha: fc785098baae2727
     - `created` — string<date-time> **обязательный**. Время создания кампании
     - `updated` — string<date-time> **обязательный**. Время последнего изменения кампании
     - `started` — string<date-time> **обязательный**. Время последнего запуска кампании
+    - `ended` — string<date-time> **обязательный**. Время завершения кампании
   - `settings` — object **обязательный**. Настройки кампании
     - `paymentType` — string **обязательный**. Тип оплаты: - `cpm` — за показы - `cpc` — за клик
     - `name` — string **обязательный**. Название кампании

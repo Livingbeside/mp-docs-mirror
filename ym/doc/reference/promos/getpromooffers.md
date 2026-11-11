@@ -1,15 +1,15 @@
 ---
-title: Список товаров в акции
+title: Получение списка товаров, которые участвуют или могут участвовать в акции
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/promos/getPromoOffers.md"
-fetched_at: "2026-11-07T02:57:39Z"
-content_sha: 3804992905f80828
+fetched_at: "2026-11-11T02:51:09Z"
+content_sha: 1b7b52a22c3d576c
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.64.2
+    content: Diplodoc Platform v5.66.1
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/promos/getPromoOffers.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/promos/getPromoOffers.md
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/promos/getPromoOffers.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21966232
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22024309
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21966232
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22024309
 
 <!-- source: ru/api/promos/getPromoOffers.md -->
 <div class="openapi">
@@ -1754,7 +1754,7 @@ alternate:
             - NOT_MANUALLY_ADDED
             - MINIMUM_FOR_PROMOS
     $defs:
-      /home/sandbox/.ya/build/build_root/wu56/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/promos/api/getPromoOffers.yaml#/PromoOfferParticipationStatusFilterType:
+      /home/sandbox/.ya/build/build_root/b9nn/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/promos/api/getPromoOffers.yaml#/PromoOfferParticipationStatusFilterType:
         description: >
           Фильтр для товаров, которые добавлены в акцию вручную:
   

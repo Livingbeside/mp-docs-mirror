@@ -1,15 +1,15 @@
 ---
-title: В магазине
+title: Информация о товарах, которые размещены в заданном магазине
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/offers/getCampaignOffers.md"
-fetched_at: "2026-11-07T02:57:26Z"
-content_sha: 1d4d39b0ff237ec8
+fetched_at: "2026-11-11T02:50:59Z"
+content_sha: 8810ef759ecbf538
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.64.2
+    content: Diplodoc Platform v5.66.1
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/offers/getCampaignOffers.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/offers/getCampaignOffers.md
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/offers/getCampaignOffers.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21966232
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22024309
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21966232
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22024309
 
 <!-- source: ru/api/offers/getCampaignOffers.md -->
 <div class="openapi">

@@ -9,7 +9,7 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: 258da3a5d75e455b
+content_sha: 483530f80feed4a0
 ---
 
 # Получить начисления за день
@@ -54,6 +54,7 @@ content_sha: 258da3a5d75e455b
           - `amount` — string. Сумма. Значение может быть отрицательным.
           - `currency` — string. Валюта.
         - `type_id` — integer<int32>. Идентификатор типа начисления. Получите значение параметра методом [/v1/finance/accrual/types](#operation/GetFinanceAccrualTypes).
+      - `quantity` — integer<int32>. Количество товара.
       - `sku` — integer<int64>. Идентификатор товара в системе Ozon — SKU.
   - `non_item_fee` — object. Начисление по продавцу без привязки к товару.
     - `accrued` — object. Начислено за услугу.
@@ -96,6 +97,7 @@ content_sha: 258da3a5d75e455b
         - `total_accrued` — object. Общая сумма начислений за услугу.
           - `amount` — string. Сумма. Значение может быть отрицательным.
           - `currency` — string. Валюта.
+      - `quantity` — integer<int32>. Количество товара.
       - `sku` — integer<int64>. Идентификатор товара в системе Ozon — SKU.
   - `total_amount` — object. Общая сумма начислений.
     - `amount` — string. Сумма.

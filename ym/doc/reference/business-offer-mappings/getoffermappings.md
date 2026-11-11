@@ -1,15 +1,15 @@
 ---
-title: В кабинете
+title: Информация о товарах в каталоге
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/business-offer-mappings/getOfferMappings.md"
-fetched_at: "2026-11-07T02:57:26Z"
-content_sha: bcc561f97a4e1b8c
+fetched_at: "2026-11-11T02:50:58Z"
+content_sha: f5549ede5f9574ef
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.64.2
+    content: Diplodoc Platform v5.66.1
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/business-offer-mappings/getOfferMappings.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/business-offer-mappings/getOfferMappings.md
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/business-offer-mappings/getOfferMappings.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21966232
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22024309
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21966232
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22024309
 
 <!-- source: ru/api/business-offer-mappings/getOfferMappings.md -->
 <div class="openapi">
@@ -535,6 +535,7 @@ alternate:
             "type": "DEFAULT",
             "downloadable": true,
             "adult": true,
+            "markingDeclared": true,
             "age": {},
             "params": [
               null
@@ -1394,6 +1395,28 @@ alternate:
   
   <div class="openapi-entity">
   
+  ### BaseOfferMarkingDeclared {#entity-BaseOfferMarkingDeclared}
+  
+  Продавец будет маркировать товар в системе [«Честный ЗНАК»](https://честныйзнак.рф/). Аналог параметра «Буду маркировать» в кабинете продавца, фиде и Excel-шаблоне.
+  
+  * `true` — продавец будет маркировать товар.
+  * `false` — продавец не заявляет маркировку. Если маркировка для товара обязательна, значение `false` ее не отменит.
+  
+  В ответе параметр показывает только заявление продавца. Если продавец не заявлял маркировку, параметр в ответе может отсутствовать.
+  
+  Если параметр не передан, текущее значение не меняется. Удалить его через `deleteParameters` нельзя — чтобы отозвать заявление, передайте `false`.
+  
+  Если признак меняется в нескольких местах (в кабинете, фиде, Excel-шаблоне или через API), сохраняется значение, переданное последним.
+  
+  Для маркируемого товара передайте в `barcodes` хотя бы один штрихкод производителя в формате GTIN.
+  
+  
+  **Type**: boolean
+  
+  </div>
+  
+  <div class="openapi-entity">
+  
   ### AgeUnitType {#entity-AgeUnitType}
   
   Единицы измерения возраста:
@@ -1989,6 +2012,29 @@ alternate:
   ||
   ||
   
+  _markingDeclared_{.json-schema-reset .json-schema-property}
+  {.table-cell}|
+  **Type**: [BaseOfferMarkingDeclared](#entity-BaseOfferMarkingDeclared)
+  
+  Продавец будет маркировать товар в системе [«Честный ЗНАК»](https://честныйзнак.рф/). Аналог параметра «Буду маркировать» в кабинете продавца, фиде и Excel-шаблоне.
+  
+  * `true` — продавец будет маркировать товар.
+  * `false` — продавец не заявляет маркировку. Если маркировка для товара обязательна, значение `false` ее не отменит.
+  
+  В ответе параметр показывает только заявление продавца. Если продавец не заявлял маркировку, параметр в ответе может отсутствовать.
+  
+  Если параметр не передан, текущее значение не меняется. Удалить его через `deleteParameters` нельзя — чтобы отозвать заявление, передайте `false`.
+  
+  Если признак меняется в нескольких местах (в кабинете, фиде, Excel-шаблоне или через API), сохраняется значение, переданное последним.
+  
+  Для маркируемого товара передайте в `barcodes` хотя бы один штрихкод производителя в формате GTIN.
+  
+  
+  _Example:_{.json-schema-reset .json-schema-example} `true`
+  {.table-cell}
+  ||
+  ||
+  
   _name_{.json-schema-reset .json-schema-property}
   {.table-cell}|
   **Type**: string
@@ -2336,6 +2382,7 @@ alternate:
     "type": "DEFAULT",
     "downloadable": true,
     "adult": true,
+    "markingDeclared": true,
     "age": {
       "value": 0,
       "ageUnit": "YEAR"
@@ -3188,6 +3235,7 @@ alternate:
       "type": "DEFAULT",
       "downloadable": true,
       "adult": true,
+      "markingDeclared": true,
       "age": {
         "value": 0,
         "ageUnit": "YEAR"
@@ -3531,6 +3579,7 @@ alternate:
     "type": "DEFAULT",
     "downloadable": true,
     "adult": true,
+    "markingDeclared": true,
     "age": {
       "value": 0,
       "ageUnit": "YEAR"
@@ -3946,6 +3995,7 @@ alternate:
     "type": "DEFAULT",
     "downloadable": true,
     "adult": true,
+    "markingDeclared": true,
     "age": {
       "value": 0,
       "ageUnit": "YEAR"
@@ -4092,6 +4142,7 @@ alternate:
       "type": "DEFAULT",
       "downloadable": true,
       "adult": true,
+      "markingDeclared": true,
       "age": {
         "value": 0,
         "ageUnit": "YEAR"
@@ -4231,6 +4282,7 @@ alternate:
         "type": "DEFAULT",
         "downloadable": true,
         "adult": true,
+        "markingDeclared": true,
         "age": {
           "value": 0,
           "ageUnit": "YEAR"
@@ -4358,6 +4410,7 @@ alternate:
           "type": "DEFAULT",
           "downloadable": true,
           "adult": true,
+          "markingDeclared": true,
           "age": {},
           "params": [
             null
@@ -4926,7 +4979,7 @@ alternate:
       required: false
       schema:
         $ref: >-
-          /home/sandbox/.ya/build/build_root/wu56/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/business-offer-mappings/schemas.yaml#/CatalogLanguageType
+          /home/sandbox/.ya/build/build_root/b9nn/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/business-offer-mappings/schemas.yaml#/CatalogLanguageType
   headers: []
   body: |-
     {

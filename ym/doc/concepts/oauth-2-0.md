@@ -1,15 +1,15 @@
 ---
-title: OAuth 2.0 (устаревший)
+title: Создание и использование OAuth-токена
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/concepts/oauth-2.0.md"
-fetched_at: "2026-11-07T02:56:47Z"
-content_sha: 1b71412a1c2599ba
+fetched_at: "2026-11-11T02:50:32Z"
+content_sha: 7d96543e90562521
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.64.2
+    content: Diplodoc Platform v5.66.1
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/concepts/oauth-2.0.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/concepts/oauth-2.0.md
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/concepts/oauth-2.0.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21966232
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22024309
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21966232
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22024309
 
 {% note warning "Авторизация по OAuth-токену" %}
 

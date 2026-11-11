@@ -1,15 +1,15 @@
 ---
-title: В магазине
+title: Просмотр цен на указанные товары в конкретном магазине
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/prices/getPricesByOfferIds.md"
-fetched_at: "2026-11-07T02:57:34Z"
-content_sha: c1d988f217171db2
+fetched_at: "2026-11-11T02:51:05Z"
+content_sha: acf24b05ae2dd0d3
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.64.2
+    content: Diplodoc Platform v5.66.1
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/prices/getPricesByOfferIds.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/prices/getPricesByOfferIds.md
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/prices/getPricesByOfferIds.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21966232
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22024309
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r21966232
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22024309
 
 <!-- source: ru/api/prices/getPricesByOfferIds.md -->
 <div class="openapi">
