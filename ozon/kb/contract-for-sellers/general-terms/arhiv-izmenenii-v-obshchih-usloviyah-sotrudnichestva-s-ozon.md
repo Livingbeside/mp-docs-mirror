@@ -4,17 +4,19 @@ marketplace: ozon
 kind: article
 path: /contract-for-sellers/general-terms/arhiv-izmenenii-v-obshchih-usloviyah-sotrudnichestva-s-ozon
 source: "https://seller-edu.ozon.ru/libra/contract-for-sellers/general-terms/arhiv-izmenenii-v-obshchih-usloviyah-sotrudnichestva-s-ozon"
-updated: "2026-11-06 13:17:18"
+updated: "2026-11-11 10:14:50"
 doc_id: 76837
-fetched_at: "2026-11-07T02:53:27Z"
-content_sha: db4abaa3e2597827
+fetched_at: "2026-11-12T02:52:27Z"
+content_sha: 95211c9353e846d3
 ---
 
 # Все версии общих условий сотрудничества с Ozon
 
 _Главная / Договоры для Продавцов на платформе Ozon / Общие условия сотрудничества с Ozon_
 
-[Актуальная версия условий](https://seller-edu.ozon.ru/libra/contract-for-sellers/general-terms/general-terms-of-partnership)
+Здесь храним все опубликованные версии договора. Актуальный договор отмечен бейджем **Действующая версия**.
+
+Чтобы скачать договор на определённую дату, выберите файл в таблице **Файл для скачивания**.
 
 | **Дата вступления в силу** | **Список изменений** | **Файл для скачивания** |
 | --- | --- | --- |

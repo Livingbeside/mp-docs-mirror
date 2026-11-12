@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /fbo/warehouses/adresa-skladov-fbo
 source: "https://seller-edu.ozon.ru/libra/fbo/warehouses/adresa-skladov-fbo"
-updated: "2026-11-10 10:17:43"
+updated: "2026-11-11 13:54:00"
 doc_id: 13009
-fetched_at: "2026-11-11T02:47:12Z"
-content_sha: 48923ace67efa9e9
+fetched_at: "2026-11-12T02:52:28Z"
+content_sha: 416be8ec4d880e3a
 ---
 
 # Адреса и реквизиты складов и пунктов приёма Ozon
@@ -2518,6 +2518,8 @@ _Главная / Продажа со склада Ozon (FBO) / Склады, а
 Открыт для записи и приёма поставок с 3 ноября 2026 года.
 
 **Название в системе:** МО_СЦ_РАМЕНСКИЙ_XD
+
+Чтобы попасть на территорию СЦ, заранее закажите пропуск, заполнив [форму](https://forms.ozon.ru/form/71f38951-eeab-40a5-ab96-ca0684418773).
 
 ## МО Солнечногорск
 

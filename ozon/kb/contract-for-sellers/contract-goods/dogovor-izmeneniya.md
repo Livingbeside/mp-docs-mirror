@@ -1,20 +1,22 @@
 ---
-title: Архив изменений в договоре для продавцов товаров
+title: Все версии договора для продавцов товаров
 marketplace: ozon
 kind: article
 path: /contract-for-sellers/contract-goods/dogovor-izmeneniya
 source: "https://seller-edu.ozon.ru/libra/contract-for-sellers/contract-goods/dogovor-izmeneniya"
-updated: "2026-11-06 13:21:15"
+updated: "2026-11-11 10:17:30"
 doc_id: 664
-fetched_at: "2026-11-07T02:53:27Z"
-content_sha: a841ce3f74a5e7a5
+fetched_at: "2026-11-12T02:52:27Z"
+content_sha: 8e1aecdeda76caee
 ---
 
-# Архив изменений в договоре для продавцов товаров
+# Все версии договора для продавцов товаров
 
 _Главная / Договоры для Продавцов на платформе Ozon / Договор для продавцов товаров_
 
-[Актуальная версия договора](/contract-for-sellers/contract-goods/contract-for-sell-goods-on-ozon)
+Здесь храним все опубликованные версии договора. Актуальный договор отмечен бейджем **Действующая версия**.
+
+Чтобы скачать договор на определённую дату, выберите файл в таблице **Файл для скачивания**.
 
 | **Дата вступления в силу** | **Список изменений** | **Файл для скачивания** |
 | --- | --- | --- |

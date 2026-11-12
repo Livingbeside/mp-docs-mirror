@@ -4,17 +4,17 @@ marketplace: ozon
 kind: article
 path: /contract-for-sellers/regulations-fbs-realfbs/reglament-prodaji-so-svoego-sklada-fbs-express
 source: "https://seller-edu.ozon.ru/libra/contract-for-sellers/regulations-fbs-realfbs/reglament-prodaji-so-svoego-sklada-fbs-express"
-updated: "2026-08-10 14:19:47"
+updated: "2026-11-11 10:34:33"
 doc_id: 675
-fetched_at: "2026-08-28T12:11:14Z"
-content_sha: 7f9e6bd23c5cc0ca
+fetched_at: "2026-11-12T02:52:27Z"
+content_sha: bbfdf495baaae9b6
 ---
 
 # Регламент продавца, который продает со своего склада по схеме экспресс-доставки cамостоятельно, через Партнёров Ozon и с доставкой в ПВЗ
 
 _Главная / Договоры для Продавцов на платформе Ozon / Регламенты по продаже со своего склада_
 
-Эта редакция действует с 10 августа 2026 года. Мы заранее публикуем изменения в регламенте: если правила на этой странице ещё не вступили в силу, смотрите [предыдущую версию](https://seller-edu.ozon.ru/contract-for-sellers/regulations-fbs-realfbs/spisok-izmenenii-v-reglamente-fbs-express).
+Эта редакция действует с 10 августа 2026 года. Мы заранее публикуем изменения в регламенте: если правила на этой странице ещё не вступили в силу, смотрите [действующую версию](https://seller-edu.ozon.ru/contract-for-sellers/regulations-fbs-realfbs/spisok-izmenenii-v-reglamente-fbs-express).
 
 # 1. Работа с Заказами в Личном кабинете
 

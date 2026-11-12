@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /fbo/gruzomesta-i-podgotovka-k-otgruzke/check-supply-status
 source: "https://seller-edu.ozon.ru/libra/fbo/gruzomesta-i-podgotovka-k-otgruzke/check-supply-status"
-updated: "2026-10-26 10:35:54"
+updated: "2026-11-11 15:10:46"
 doc_id: 70386
-fetched_at: "2026-10-27T02:42:26Z"
-content_sha: 4393c8459f6ae5b2
+fetched_at: "2026-11-12T02:52:28Z"
+content_sha: 4cde70f35449f350
 ---
 
 # Проверка результатов приёмки
@@ -22,7 +22,7 @@ _Главная / Продажа со склада Ozon (FBO) / Грузомес
 
 [Какие статусы могут быть у заявки](/fbo/process-details/kak-otslejivat-zayavki-na-postavku)
 
-Если товар отправили кросс-докингом и не доставили на склад в течение 90 дней с плановой даты доставки, [напишите в поддержку](https://seller.ozon.ru/app/messenger?channel=SCRM): **FBO → FBO → Поставки → Через кросс-док** **→** **Нарушены сроки приёмки → Проверить поставку.**
+Если товар отправили кросс-докингом и не доставили на склад в течение 90 дней с плановой даты доставки, [напишите в поддержку](https://seller.ozon.ru/app/messenger?channel=SCRM): **Главное меню →** **FBO → FBO → Поставки → Через кросс-док** **→** **Нарушены сроки приёмки → Проверить поставку.**
 
 **Когда поставку доставят на склад? **
 

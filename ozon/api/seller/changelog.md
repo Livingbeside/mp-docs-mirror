@@ -5,12 +5,18 @@ tag: News
 group: Обновления
 kind: changelog
 source: "https://docs.ozon.ru/api/seller/"
-content_sha: 8f28c121c9fb23de
+content_sha: 45c22ded356f449f
 ---
 
 # Обновления
 
 Следите за обновлениями документации на платформе для разработчиков [Ozon for dev](https://dev.ozon.ru/).
+
+## 11 ноября 2026
+
+| Метод | Изменение |
+|-------|-----------|
+| [/v2/actions/products](#operation/ActionsProducts) | Добавили параметр `products.action_price_before_auto_add` в ответ метода. |
 
 ## 10 ноября 2026
 

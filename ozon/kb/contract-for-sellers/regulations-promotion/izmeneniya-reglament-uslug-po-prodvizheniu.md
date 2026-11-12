@@ -1,20 +1,22 @@
 ---
-title: Архив изменений в регламенте оказания услуг по продвижению на Ozon
+title: Все версии регламента оказания услуг по продвижению на Ozon
 marketplace: ozon
 kind: article
 path: /contract-for-sellers/regulations-promotion/izmeneniya-reglament-uslug-po-prodvizheniu
 source: "https://seller-edu.ozon.ru/libra/contract-for-sellers/regulations-promotion/izmeneniya-reglament-uslug-po-prodvizheniu"
-updated: "2026-11-02 15:22:40"
+updated: "2026-11-11 10:15:46"
 doc_id: 670
-fetched_at: "2026-11-03T02:46:40Z"
-content_sha: 0799e13812c304f9
+fetched_at: "2026-11-12T02:52:27Z"
+content_sha: dd66a1848b27d983
 ---
 
-# Архив изменений в регламенте оказания услуг по продвижению на Ozon
+# Все версии регламента оказания услуг по продвижению на Ozon
 
 _Главная / Договоры для Продавцов на платформе Ozon / Регламент услуг по продвижению_
 
-[Актуальная версия регламента](/contract-for-sellers/regulations-promotion/reglament-uslug-po-prodvizheniu)
+Здесь храним все опубликованные версии регламента. Актуальный регламент отмечен бейджем **Действующая версия**.
+
+Чтобы скачать регламент на определённую дату, выберите файл в таблице **Файл для скачивания**.
 
 | **Дата вступления в силу** | **Список изменений** | **Файл для скачивания** |
 | --- | --- | --- |

@@ -4,17 +4,17 @@ marketplace: ozon
 kind: article
 path: /contract-for-sellers/account-brand/contract-for-brands
 source: "https://seller-edu.ozon.ru/libra/contract-for-sellers/account-brand/contract-for-brands"
-updated: "2026-09-23 13:35:53"
+updated: "2026-11-11 10:20:23"
 doc_id: 661
-fetched_at: "2026-10-27T02:42:25Z"
-content_sha: 8daa0d2e61fdb9f9
+fetched_at: "2026-11-12T02:52:27Z"
+content_sha: f2deb0e167ee3338
 ---
 
 # Соглашение для правообладателя товарного знака
 
 _Главная / Договоры для Продавцов на платформе Ozon / Договор кабинета бренда_
 
-Эта редакция действует с 1 октября 2026 года. Мы заранее публикуем изменения: если правила на этой странице ещё не вступили в силу, смотрите [предыдущую версию](https://seller-edu.ozon.ru/contract-for-sellers/account-brand/spisok-izmenenii-contract-for-brands).
+Эта редакция действует с 1 октября 2026 года. Мы заранее публикуем изменения: если правила на этой странице ещё не вступили в силу, смотрите [действующую версию](https://seller-edu.ozon.ru/contract-for-sellers/account-brand/spisok-izmenenii-contract-for-brands).
 
 Принимая Соглашение для правообладателя товарного знака (далее – Соглашение), Правообладатель подтверждает ознакомление с его текстом и полное понимание его условий. При несогласии с условиями Правообладатель обязан отказаться от заключения Соглашения.
 

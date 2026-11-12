@@ -1,20 +1,22 @@
 ---
-title: Архив изменений в регламенте продавца, который работает по схеме стандартной и крупногабаритной доставки самостоятельно
+title: Все версии регламента продавца, который работает по схеме стандартной и крупногабаритной доставки самостоятельно
 marketplace: ozon
 kind: article
 path: /contract-for-sellers/regulations-fbs-realfbs/arhiv-izmenenii-v-reglamente-prodavca-kotoryi-rabotaet-po-sheme-standartnoi-i-krupnogabaritnoi-dostavki-samostoyatelno
 source: "https://seller-edu.ozon.ru/libra/contract-for-sellers/regulations-fbs-realfbs/arhiv-izmenenii-v-reglamente-prodavca-kotoryi-rabotaet-po-sheme-standartnoi-i-krupnogabaritnoi-dostavki-samostoyatelno"
-updated: "2026-04-09 15:48:14"
+updated: "2026-11-11 10:34:35"
 doc_id: 35467
-fetched_at: "2026-08-28T12:11:14Z"
-content_sha: fac4e41efe7262d5
+fetched_at: "2026-11-12T02:52:27Z"
+content_sha: fd9a79c86380398b
 ---
 
-# Архив изменений в регламенте продавца, который работает по схеме стандартной и крупногабаритной доставки самостоятельно
+# Все версии регламента продавца, который работает по схеме стандартной и крупногабаритной доставки самостоятельно
 
 _Главная / Договоры для Продавцов на платформе Ozon / Регламенты по продаже со своего склада_
 
-[Актуальная версия регламента](/contract-for-sellers/regulations-fbs-realfbs/reglament-dostavki-samostoyatelno)
+Здесь храним все опубликованные версии регламента. Актуальный регламент отмечен бейджем **Действующая версия**.
+
+Чтобы скачать регламент на определённую дату, выберите файл в таблице **Файл для скачивания**.
 
 | **Дата вступления в силу** | **Список изменений** | **Файл для скачивания** |
 | --- | --- | --- |

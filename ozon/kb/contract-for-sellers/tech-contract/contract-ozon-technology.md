@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /contract-for-sellers/tech-contract/contract-ozon-technology
 source: "https://seller-edu.ozon.ru/libra/contract-for-sellers/tech-contract/contract-ozon-technology"
-updated: "2026-11-02 15:36:09"
+updated: "2026-11-11 10:21:53"
 doc_id: 80024
-fetched_at: "2026-11-03T02:46:40Z"
-content_sha: 33cf14c133fc71fa
+fetched_at: "2026-11-12T02:52:27Z"
+content_sha: e79baf5764074697
 ---
 
 # Договор возмездного оказания услуг Озон Технологий
@@ -16,7 +16,7 @@ _Главная / Договоры для Продавцов на платфор
 
 Русский
 
-Эта редакция действует с 1 декабря 2026 года. Мы заранее публикуем изменения в договоре. Если правила на этой странице ещё не вступили в силу, смотрите [предыдущую версию](https://seller-edu.ozon.ru/contract-for-sellers/tech-contract/arhiv-contract-ozon-technology).
+Эта редакция действует с 1 декабря 2026 года. Мы заранее публикуем изменения в договоре. Если правила на этой странице ещё не вступили в силу, смотрите[ действующую версию](https://seller-edu.ozon.ru/contract-for-sellers/tech-contract/arhiv-contract-ozon-technology).
 
 Настоящий Договор возмездного оказания услуг (далее — «Договор») заключается между ООО «Озон Технологии» (далее — «Исполнитель») и Заказчиком на изложенных ниже условиях.
 

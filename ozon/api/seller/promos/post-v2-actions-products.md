@@ -9,7 +9,7 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: eeba75ff931683ea
+content_sha: f1f44eb361cff963
 ---
 
 # Получить список товаров, которые участвуют в акции
@@ -40,6 +40,9 @@ content_sha: eeba75ff931683ea
 - `last_id` — string. Идентификатор последнего значения на странице. Чтобы получить следующие значения, передайте полученное значение в следующем запросе в параметре `last_id`.
 - `products` — array[object]. Список товаров.
   - `action_price` — object. Цена товара по акции.
+    - `amount` — string. Сумма.
+    - `currency` — string. Валюта.
+  - `action_price_before_auto_add` — object. Предельная цена товара до автодобавления в акцию.
     - `amount` — string. Сумма.
     - `currency` — string. Валюта.
   - `add_mode` — string (SELLER, AUTO). Тип добавления товара в акцию: - `AUTO` — автоматически; - `SELLER` — вручную продавцом.

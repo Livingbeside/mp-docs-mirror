@@ -4,17 +4,17 @@ marketplace: ozon
 kind: article
 path: /contract-for-sellers/regulations-fbs-realfbs/reglament-dostavki-samostoyatelno
 source: "https://seller-edu.ozon.ru/libra/contract-for-sellers/regulations-fbs-realfbs/reglament-dostavki-samostoyatelno"
-updated: "2026-08-10 14:18:31"
+updated: "2026-11-11 10:34:40"
 doc_id: 35445
-fetched_at: "2026-08-28T12:11:14Z"
-content_sha: cf55c085b56daa3b
+fetched_at: "2026-11-12T02:52:27Z"
+content_sha: 25f312c416dd5a16
 ---
 
 # Регламент продавца, который работает по схеме стандартной и крупногабаритной доставки самостоятельно (метод «Своя или другая служба»)
 
 _Главная / Договоры для Продавцов на платформе Ozon / Регламенты по продаже со своего склада_
 
-Редакция от 16 апреля 2026 года. Мы заранее публикуем изменения в регламенте: если правила на этой странице ещё не вступили в силу, смотрите [предыдущую версию](/contract-for-sellers/regulations-fbs-realfbs/arhiv-izmenenii-v-reglamente-prodavca-kotoryi-rabotaet-po-sheme-standartnoi-i-krupnogabaritnoi-dostavki-samostoyatelno).
+Редакция от 16 апреля 2026 года. Мы заранее публикуем изменения в регламенте: если правила на этой странице ещё не вступили в силу, смотрите [действующую версию](/contract-for-sellers/regulations-fbs-realfbs/arhiv-izmenenii-v-reglamente-prodavca-kotoryi-rabotaet-po-sheme-standartnoi-i-krupnogabaritnoi-dostavki-samostoyatelno).
 
 Настоящий регламент является неотъемлемой частью [Договора для Продавцов на Платформе Ozon](https://seller-edu.ozon.ru/contract-for-sellers/contract-goods/contract-for-sell-goods-on-ozon#%D1%80%D0%B0%D0%B7%D0%B4%D0%B5%D0%BB-%C2%AB%D1%82%D1%80%D0%B5%D0%B1%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F-%D0%BA-%D1%82%D0%BE%D0%B2%D0%B0%D1%80%D1%83%C2%BB).
 

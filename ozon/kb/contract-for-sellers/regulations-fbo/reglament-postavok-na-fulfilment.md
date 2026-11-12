@@ -4,17 +4,17 @@ marketplace: ozon
 kind: article
 path: /contract-for-sellers/regulations-fbo/reglament-postavok-na-fulfilment
 source: "https://seller-edu.ozon.ru/libra/contract-for-sellers/regulations-fbo/reglament-postavok-na-fulfilment"
-updated: "2026-11-10 14:02:19"
+updated: "2026-11-11 10:22:36"
 doc_id: 672
-fetched_at: "2026-11-11T02:47:12Z"
-content_sha: 45f3fe4b10f89b2b
+fetched_at: "2026-11-12T02:52:27Z"
+content_sha: 34d65a44d9372e85
 ---
 
 # Регламент партнёра по поставкам товаров на фулфилмент-центры Ozon
 
 _Главная / Договоры для Продавцов на платформе Ozon / Регламенты по продаже со склада Ozon_
 
-Эта редакция действует с 1 декабря (с дополнениями от 15 ноября 2026 года). Мы заранее публикуем изменения: если правила на этой странице ещё не вступили в силу, смотрите [предыдущую версию](https://seller-edu.ozon.ru/contract-for-sellers/regulations-fbo/izmenenia-ot-versii-k-versii).
+Эта редакция действует с 1 декабря (с дополнениями от 15 ноября 2026 года). Мы заранее публикуем изменения: если правила на этой странице ещё не вступили в силу, смотрите[ действующую версию](https://seller-edu.ozon.ru/contract-for-sellers/regulations-fbo/izmenenia-ot-versii-k-versii).
 
 Условия регламента применяются к:
 

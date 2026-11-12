@@ -4,17 +4,17 @@ marketplace: ozon
 kind: article
 path: /contract-for-sellers/regulations-fbs-realfbs/reglament-dostavki-kgt-cherez-partnerov
 source: "https://seller-edu.ozon.ru/libra/contract-for-sellers/regulations-fbs-realfbs/reglament-dostavki-kgt-cherez-partnerov"
-updated: "2026-09-07 15:04:15"
+updated: "2026-11-11 10:34:48"
 doc_id: 671
-fetched_at: "2026-09-08T01:39:31Z"
-content_sha: 458a0e57c5a34430
+fetched_at: "2026-11-12T02:52:27Z"
+content_sha: 741f573925feb442
 ---
 
 # Регламент продавца, который работает по схеме стандартной и крупногабаритной доставки через Партнёров Ozon
 
 _Главная / Договоры для Продавцов на платформе Ozon / Регламенты по продаже со своего склада_
 
-Редакция от 22 сентября 2026 года. Мы заранее публикуем изменения в регламенте: если правила на этой странице ещё не вступили в силу, смотрите [предыдущую версию](/libra/contract-for-sellers/regulations-fbs-realfbs/izmenenia-ot-versii-k-versii-dostavka-kgt).
+Редакция от 22 сентября 2026 года. Мы заранее публикуем изменения в регламенте: если правила на этой странице ещё не вступили в силу, смотрите[ действующую версию](/libra/contract-for-sellers/regulations-fbs-realfbs/izmenenia-ot-versii-k-versii-dostavka-kgt).
 
 Настоящий регламент является неотъемлемой частью [Договора для Продавцов на Платформе Ozon](/contract-for-sellers/contract-goods/contract-for-sell-goods-on-ozon#%D1%80%D0%B0%D0%B7%D0%B4%D0%B5%D0%BB-%C2%AB%D1%82%D1%80%D0%B5%D0%B1%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F-%D0%BA-%D1%82%D0%BE%D0%B2%D0%B0%D1%80%D1%83%C2%BB).
 

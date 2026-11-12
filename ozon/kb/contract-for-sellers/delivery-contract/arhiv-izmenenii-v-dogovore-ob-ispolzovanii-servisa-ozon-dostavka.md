@@ -1,20 +1,22 @@
 ---
-title: Архив изменений в договоре об использовании сервиса Ozon Доставка
+title: Все версии договора об использовании сервиса Ozon Доставка
 marketplace: ozon
 kind: article
 path: /contract-for-sellers/delivery-contract/arhiv-izmenenii-v-dogovore-ob-ispolzovanii-servisa-ozon-dostavka
 source: "https://seller-edu.ozon.ru/libra/contract-for-sellers/delivery-contract/arhiv-izmenenii-v-dogovore-ob-ispolzovanii-servisa-ozon-dostavka"
-updated: "2026-11-06 15:39:51"
+updated: "2026-11-11 10:15:20"
 doc_id: 77179
-fetched_at: "2026-11-07T02:53:27Z"
-content_sha: e7fd88ef188aada3
+fetched_at: "2026-11-12T02:52:27Z"
+content_sha: 72836bb4394c2a97
 ---
 
-# Архив изменений в договоре об использовании сервиса Ozon Доставка
+# Все версии договора об использовании сервиса Ozon Доставка
 
 _Главная / Договоры для Продавцов на платформе Ozon / Договор Ozon Доставка_
 
-[Актуальная версия условий](https://seller-edu.ozon.ru/contract-for-sellers/delivery-contract/contract-ozon-delivery)
+Здесь храним все опубликованные версии договора. Актуальный договор отмечен бейджем **Действующая версия**.
+
+Чтобы скачать договор на определённую дату, выберите файл в таблице **Файл для скачивания**.
 
 | **Дата вступления в силу** | **Список изменений** | **Файл для скачивания** |
 | --- | --- | --- |

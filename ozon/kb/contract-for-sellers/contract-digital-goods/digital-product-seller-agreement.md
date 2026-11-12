@@ -4,17 +4,17 @@ marketplace: ozon
 kind: article
 path: /contract-for-sellers/contract-digital-goods/digital-product-seller-agreement
 source: "https://seller-edu.ozon.ru/libra/contract-for-sellers/contract-digital-goods/digital-product-seller-agreement"
-updated: "2026-09-16 14:32:24"
+updated: "2026-11-11 10:18:54"
 doc_id: 29130
-fetched_at: "2026-09-17T02:05:03Z"
-content_sha: 23c6503818c29129
+fetched_at: "2026-11-12T02:52:27Z"
+content_sha: 67911c1bdb869107
 ---
 
 # Договор о размещении и реализации цифровых товаров Продавцом на Платформе Ozon
 
 _Главная / Договоры для Продавцов на платформе Ozon / Договор для продавцов цифровых товаров_
 
-Эта редакция действует с 1 октября 2026 года. Мы заранее публикуем изменения в договоре. Если правила на этой странице ещё не вступили в силу, смотрите [предыдущую версию](/contract-for-sellers/contract-digital-goods/izmeneniya-v-dogovore-cifrovyh-tovarov).
+Эта редакция действует с 1 октября 2026 года. Мы заранее публикуем изменения в договоре. Если правила на этой странице ещё не вступили в силу, смотрите [действующую версию](/contract-for-sellers/contract-digital-goods/izmeneniya-v-dogovore-cifrovyh-tovarov).
 
 # 1. Предмет Договора
 

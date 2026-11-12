@@ -1,20 +1,22 @@
 ---
-title: Архив изменений в соглашении для правообладателя товарного знака
+title: Все версии соглашения для правообладателя товарного знака
 marketplace: ozon
 kind: article
 path: /contract-for-sellers/account-brand/spisok-izmenenii-contract-for-brands
 source: "https://seller-edu.ozon.ru/libra/contract-for-sellers/account-brand/spisok-izmenenii-contract-for-brands"
-updated: "2026-09-24 09:28:08"
+updated: "2026-11-11 10:15:15"
 doc_id: 679
-fetched_at: "2026-10-27T02:42:25Z"
-content_sha: 2be43e9ef8b25ff2
+fetched_at: "2026-11-12T02:52:27Z"
+content_sha: 4bedfa8bb9bab7a2
 ---
 
-# Архив изменений в соглашении для правообладателя товарного знака
+# Все версии соглашения для правообладателя товарного знака
 
 _Главная / Договоры для Продавцов на платформе Ozon / Договор кабинета бренда_
 
-[Актуальная версия соглашения](/contract-for-sellers/account-brand/contract-for-brands)
+Здесь храним все опубликованные версии договора. Актуальный договор отмечен бейджем **Действующая версия**.
+
+Чтобы скачать договор на определённую дату, выберите файл в таблице **Файл для скачивания**.
 
 | Дата вступления в силу | Список изменений | Файл для скачивания |
 | --- | --- | --- |

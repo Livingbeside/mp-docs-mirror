@@ -1,20 +1,22 @@
 ---
-title: Архив изменений в договоре для НКО
+title: Все версии договора для НКО
 marketplace: ozon
 kind: article
 path: /contract-for-sellers/contract-certificates/spisok-izmenenii-v-dogovor-sertifikaty
 source: "https://seller-edu.ozon.ru/libra/contract-for-sellers/contract-certificates/spisok-izmenenii-v-dogovor-sertifikaty"
-updated: "2026-08-21 16:26:16"
+updated: "2026-11-11 10:15:11"
 doc_id: 680
-fetched_at: "2026-08-28T12:11:14Z"
-content_sha: 308f1667f37dd0cb
+fetched_at: "2026-11-12T02:52:27Z"
+content_sha: ff9e019cba2960a5
 ---
 
-# Архив изменений в договоре для НКО
+# Все версии договора для НКО
 
 _Главная / Договоры для Продавцов на платформе Ozon / Договор для НКО_
 
-[Актуальная версия договора](/contract-for-sellers/contract-certificates/contract-for-sellers-of-certificates-for-services)
+Здесь храним все опубликованные версии договора. Актуальный договор отмечен бейджем **Действующая версия**.
+
+Чтобы скачать договор на определённую дату, выберите файл в таблице **Файл для скачивания**.
 
 | Дата вступления в силу | Список изменений | Файл для скачивания |
 | --- | --- | --- |

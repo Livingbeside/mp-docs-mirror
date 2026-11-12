@@ -1,20 +1,22 @@
 ---
-title: Архив изменений в договоре о размещении и реализации цифровых товаров
+title: Все версии договора о размещении и реализации цифровых товаров
 marketplace: ozon
 kind: article
 path: /contract-for-sellers/contract-digital-goods/izmeneniya-v-dogovore-cifrovyh-tovarov
 source: "https://seller-edu.ozon.ru/libra/contract-for-sellers/contract-digital-goods/izmeneniya-v-dogovore-cifrovyh-tovarov"
-updated: "2026-09-23 09:14:03"
+updated: "2026-11-11 10:15:07"
 doc_id: 30492
-fetched_at: "2026-09-24T02:07:40Z"
-content_sha: 2fc8cba943ca915f
+fetched_at: "2026-11-12T02:52:27Z"
+content_sha: 46396e0b3b1e73a5
 ---
 
-# Архив изменений в договоре о размещении и реализации цифровых товаров
+# Все версии договора о размещении и реализации цифровых товаров
 
 _Главная / Договоры для Продавцов на платформе Ozon / Договор для продавцов цифровых товаров_
 
-[Актуальная версия договора о размещении и реализации цифровых товаров](/contract-for-sellers/contract-digital-goods/digital-product-seller-agreement)
+Здесь храним все опубликованные версии договора. Актуальный договор отмечен бейджем **Действующая версия**.
+
+Чтобы скачать договор на определённую дату, выберите файл в таблице **Файл для скачивания**.
 
 | **Дата вступления в силу** | **Список изменений** | **Файл для скачивания** |
 | --- | --- | --- |

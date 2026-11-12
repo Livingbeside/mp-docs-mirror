@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /fbs/ozon-logistika/samopriemka
 source: "https://seller-edu.ozon.ru/libra/fbs/ozon-logistika/samopriemka"
-updated: "2026-11-09 11:20:55"
+updated: "2026-11-11 09:59:09"
 doc_id: 1780
-fetched_at: "2026-11-10T02:46:11Z"
-content_sha: b413d362f1c31fc1
+fetched_at: "2026-11-12T02:52:28Z"
+content_sha: 0873f29c41e899ad
 ---
 
 # Самоприёмка отправлений
@@ -74,6 +74,8 @@ _Главная / Продажа со своего склада (FBS) / Отгр
 
 [Белгород — Кирпичный (СЦ)](/fbs/punkty-priema/regiony#%D0%B1%D0%B5%D0%BB%D0%B3%D0%BE%D1%80%D0%BE%D0%B4-%D0%BA%D0%B8%D1%80%D0%BF%D0%B8%D1%87%D0%BD%D1%8B%D0%B8-%D1%81%D1%86)
 
+[Бийск — Мерлина (СЦ)](https://seller-edu.ozon.ru/fbs/punkty-priema/regiony#бииск-мерлина-сц)
+
 [Брянск — Октябрьское (СЦ)](https://seller-edu.ozon.ru/fbs/punkty-priema/regiony#брянск-октябрьское-сц)
 
 [Великий Новгород — Нехинская (СЦ)](/fbs/punkty-priema/regiony#%D0%B2%D0%B5%D0%BB%D0%B8%D0%BA%D0%B8%D0%B8-%D0%BD%D0%BE%D0%B2%D0%B3%D0%BE%D1%80%D0%BE%D0%B4-%D0%BD%D0%B5%D1%85%D0%B8%D0%BD%D1%81%D0%BA%D0%B0%D1%8F-%D1%81%D1%86)
@@ -119,8 +121,6 @@ _Главная / Продажа со своего склада (FBS) / Отгр
 [Кострома — Индустриальная (СЦ)](/fbs/punkty-priema/regiony#кострома-индустриальная-сц)
 
 [Краснодар — Октябрьский (СЦ)](https://seller-edu.ozon.ru/fbs/punkty-priema/regiony#краснодар-октябрьскии-сц)
-
-[Красноярск — Кразовская (СЦ)](/fbs/punkty-priema/regiony#красноярск-солонцы-сц)
 
 [Курган — Омская (СЦ)](https://seller-edu.ozon.ru/fbs/punkty-priema/regiony#курган-омская-сц)
 

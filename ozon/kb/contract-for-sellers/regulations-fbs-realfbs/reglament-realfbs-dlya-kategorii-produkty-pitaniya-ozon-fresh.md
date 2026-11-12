@@ -4,17 +4,17 @@ marketplace: ozon
 kind: article
 path: /contract-for-sellers/regulations-fbs-realfbs/reglament-realfbs-dlya-kategorii-produkty-pitaniya-ozon-fresh
 source: "https://seller-edu.ozon.ru/libra/contract-for-sellers/regulations-fbs-realfbs/reglament-realfbs-dlya-kategorii-produkty-pitaniya-ozon-fresh"
-updated: "2025-12-23 13:58:30"
+updated: "2026-11-11 10:34:26"
 doc_id: 54160
-fetched_at: "2026-08-28T12:11:14Z"
-content_sha: 17765a930b0eee8c
+fetched_at: "2026-11-12T02:52:27Z"
+content_sha: 9d1a68dd30d045bb
 ---
 
 # Регламент realFBS для категории «Продукты питания Ozon fresh»
 
 _Главная / Договоры для Продавцов на платформе Ozon / Регламенты по продаже со своего склада_
 
-Редакция от 30 декабря 2025 года. Мы заранее публикуем изменения в регламенте: если правила на этой странице ещё не вступили в силу, смотрите [предыдущую версию](/contract-for-sellers/regulations-fbs-realfbs/arhiv-izmenenii-v-reglamente-realfbs-dlya-kategorii-produkty-pitaniya-ozon-fresh).
+Редакция от 30 декабря 2025 года. Мы заранее публикуем изменения в регламенте: если правила на этой странице ещё не вступили в силу, смотрите [действующую версию](/contract-for-sellers/regulations-fbs-realfbs/arhiv-izmenenii-v-reglamente-realfbs-dlya-kategorii-produkty-pitaniya-ozon-fresh).
 
 Продажа товаров категории «Продукты питания Ozon fresh» возможна на схеме realFBS Standard, Comfort и Express. Регламент регулирует особенности продажи товаров категории «Продукты питания Ozon fresh». Все остальное, что не урегулировано этим Регламентом, регулируется:
 

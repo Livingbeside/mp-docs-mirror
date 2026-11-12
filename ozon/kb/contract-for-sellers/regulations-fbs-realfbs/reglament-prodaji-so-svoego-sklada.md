@@ -4,17 +4,17 @@ marketplace: ozon
 kind: article
 path: /contract-for-sellers/regulations-fbs-realfbs/reglament-prodaji-so-svoego-sklada
 source: "https://seller-edu.ozon.ru/libra/contract-for-sellers/regulations-fbs-realfbs/reglament-prodaji-so-svoego-sklada"
-updated: "2026-11-06 11:51:20"
+updated: "2026-11-11 10:23:58"
 doc_id: 676
-fetched_at: "2026-11-07T02:53:27Z"
-content_sha: 06c60cd2f2c3d212
+fetched_at: "2026-11-12T02:52:27Z"
+content_sha: e4c09c1e7fe89df1
 ---
 
 # Регламент продавца, который продаёт со своего склада доставкой Ozon
 
 _Главная / Договоры для Продавцов на платформе Ozon / Регламенты по продаже со своего склада_
 
-Редакция от 22 декабря 2026 года. Мы заранее публикуем изменения в регламенте: если правила на этой странице ещё не вступили в силу, смотрите [предыдущую версию](/contract-for-sellers/regulations-fbs-realfbs/spisok-izmenenii-v-reglamente).
+Редакция от 22 декабря 2026 года. Мы заранее публикуем изменения в регламенте: если правила на этой странице ещё не вступили в силу, смотрите [действующую версию](/contract-for-sellers/regulations-fbs-realfbs/spisok-izmenenii-v-reglamente).
 
 # 1. Подготовка товаров
 

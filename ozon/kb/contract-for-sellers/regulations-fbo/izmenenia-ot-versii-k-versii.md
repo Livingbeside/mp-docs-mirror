@@ -1,20 +1,22 @@
 ---
-title: Архив изменений в регламенте поставок на фулфилменты
+title: Все версии регламента поставок на фулфилменты
 marketplace: ozon
 kind: article
 path: /contract-for-sellers/regulations-fbo/izmenenia-ot-versii-k-versii
 source: "https://seller-edu.ozon.ru/libra/contract-for-sellers/regulations-fbo/izmenenia-ot-versii-k-versii"
-updated: "2026-10-16 16:53:04"
+updated: "2026-11-11 10:15:38"
 doc_id: 669
-fetched_at: "2026-10-17T01:46:11Z"
-content_sha: a0c54bafbe4dc70b
+fetched_at: "2026-11-12T02:52:27Z"
+content_sha: 6788cede41a5b08e
 ---
 
-# Архив изменений в регламенте поставок на фулфилменты
+# Все версии регламента поставок на фулфилменты
 
 _Главная / Договоры для Продавцов на платформе Ozon / Регламенты по продаже со склада Ozon_
 
-[Актуальная версия регламента](/contract-for-sellers/regulations-fbo/reglament-postavok-na-fulfilment)
+Здесь храним все опубликованные версии регламента. Актуальный регламент отмечен бейджем **Действующая версия**.
+
+Чтобы скачать регламент на определённую дату, выберите файл в таблице **Файл для скачивания**.
 
 | **Дата вступления в силу** | **Список изменений** | **Файл для скачивания** |
 | --- | --- | --- |

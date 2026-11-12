@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /fbs/ozon-logistika/doveritel-naya-priemka-gruzovogo-mesta
 source: "https://seller-edu.ozon.ru/libra/fbs/ozon-logistika/doveritel-naya-priemka-gruzovogo-mesta"
-updated: "2026-11-09 11:20:14"
+updated: "2026-11-11 09:59:55"
 doc_id: 811
-fetched_at: "2026-11-10T02:46:11Z"
-content_sha: 59253b900b6ae2e5
+fetched_at: "2026-11-12T02:52:28Z"
+content_sha: 348c0184fd32f0e1
 ---
 
 # Доверительная приёмка грузового места
@@ -80,6 +80,8 @@ _Главная / Продажа со своего склада (FBS) / Отгр
 
 [Белгород — Кирпичный (СЦ)](/fbs/punkty-priema/regiony#%D0%B1%D0%B5%D0%BB%D0%B3%D0%BE%D1%80%D0%BE%D0%B4-%D0%BA%D0%B8%D1%80%D0%BF%D0%B8%D1%87%D0%BD%D1%8B%D0%B8-%D1%81%D1%86)
 
+[Бийск — Мерлина (СЦ)](https://seller-edu.ozon.ru/fbs/punkty-priema/regiony#бииск-мерлина-сц)
+
 [Брянск — Октябрьское (СЦ)](https://seller-edu.ozon.ru/fbs/punkty-priema/regiony#брянск-октябрьское-сц)
 
 [Великий Новгород — Нехинская (СЦ)](/fbs/punkty-priema/regiony#%D0%B2%D0%B5%D0%BB%D0%B8%D0%BA%D0%B8%D0%B8-%D0%BD%D0%BE%D0%B2%D0%B3%D0%BE%D1%80%D0%BE%D0%B4-%D0%BD%D0%B5%D1%85%D0%B8%D0%BD%D1%81%D0%BA%D0%B0%D1%8F-%D1%81%D1%86)
@@ -125,8 +127,6 @@ _Главная / Продажа со своего склада (FBS) / Отгр
 [Котлас — Кузнецова (СЦ)](/fbs/punkty-priema/regiony?search=пункты+приёма#котлас-кузнецова-сц)
 
 [Краснодар — Октябрьский (СЦ)](https://seller-edu.ozon.ru/fbs/punkty-priema/regiony#краснодар-октябрьскии-сц)
-
-[Красноярск — Кразовская (СЦ)](https://seller-edu.ozon.ru/fbs/punkty-priema/regiony#красноярск-солонцы-сц)
 
 [Курск — Октября (СЦ)](/fbs/punkty-priema/regiony#курск-октября-сц)
 

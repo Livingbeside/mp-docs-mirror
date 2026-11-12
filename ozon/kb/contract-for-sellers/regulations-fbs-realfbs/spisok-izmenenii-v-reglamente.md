@@ -1,20 +1,22 @@
 ---
-title: Архив изменений в регламенте продавца, который продаёт со своего склада доставкой Ozon
+title: Все версии регламента продавца, который продаёт со своего склада доставкой Ozon
 marketplace: ozon
 kind: article
 path: /contract-for-sellers/regulations-fbs-realfbs/spisok-izmenenii-v-reglamente
 source: "https://seller-edu.ozon.ru/libra/contract-for-sellers/regulations-fbs-realfbs/spisok-izmenenii-v-reglamente"
-updated: "2026-11-06 13:27:17"
+updated: "2026-11-11 10:15:42"
 doc_id: 682
-fetched_at: "2026-11-07T02:53:27Z"
-content_sha: c195800e057a6064
+fetched_at: "2026-11-12T02:52:27Z"
+content_sha: 277e3cb04b4a2582
 ---
 
-# Архив изменений в регламенте продавца, который продаёт со своего склада доставкой Ozon
+# Все версии регламента продавца, который продаёт со своего склада доставкой Ozon
 
 _Главная / Договоры для Продавцов на платформе Ozon / Регламенты по продаже со своего склада_
 
-[Актуальная версия регламента](https://seller-edu.ozon.ru/contract-for-sellers/regulations-fbs-realfbs/reglament-prodaji-so-svoego-sklada)
+Здесь храним все опубликованные версии регламента. Актуальный регламент отмечен бейджем **Действующая версия**.
+
+Чтобы скачать регламент на определённую дату, выберите файл в таблице **Файл для скачивания**.
 
 | **Дата вступления в силу** | **Список изменений** | **Файл для скачивания** |
 | --- | --- | --- |

@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /contract-for-sellers/contract-goods/contract-for-sell-goods-on-ozon
 source: "https://seller-edu.ozon.ru/libra/contract-for-sellers/contract-goods/contract-for-sell-goods-on-ozon"
-updated: "2026-11-06 15:42:09"
+updated: "2026-11-11 10:18:12"
 doc_id: 663
-fetched_at: "2026-11-07T02:53:27Z"
-content_sha: 2b1ebbcb316fc367
+fetched_at: "2026-11-12T02:52:27Z"
+content_sha: e5752f2e218836a8
 ---
 
 # Договор для Продавцов товаров на Платформе Ozon
@@ -18,9 +18,9 @@ _Главная / Договоры для Продавцов на платфор
 
 Чтобы разобраться в тексте было проще, оставили подсказки к некоторым пунктам — отметили их иконками с лампочкой. Но они не являются частью договора и не имеют юридической силы
 
-Эта редакция действует с 22 декабря 2026 года. Мы заранее публикуем изменения в договоре: если правила на этой странице ещё не вступили в силу, смотрите [предыдущую версию](https://seller-edu.ozon.ru/contract-for-sellers/contract-goods/dogovor-izmeneniya).
+Эта редакция действует с 22 декабря 2026 года. Мы заранее публикуем изменения в договоре: если правила на этой странице ещё не вступили в силу, смотрите [действующую версию](https://seller-edu.ozon.ru/contract-for-sellers/contract-goods/dogovor-izmeneniya).
 
-Договор содержит гиперссылки на веб-страницы, которые являются частью Договора.
+Договор содержит гиперссылки на веб-страницы, которые являются частью Договора. Если при переходе по ссылке происходит автоматическое перенаправление на страницу с иным доменным именем, частью Договора признается страница, на которую осуществлен фактический переход.
 
 [Общие условия сотрудничества с Ozon](/contract-for-sellers/general-terms/general-terms-of-partnership) и [Договор об использовании сервиса Ozon Доставка](https://seller-edu.ozon.ru/contract-for-sellers/delivery-contract/contract-ozon-delivery) являются частью Договора для Продавцов товаров на Платформе Ozon.
 

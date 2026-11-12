@@ -2,9 +2,9 @@
 title: Отчёты — все методы
 api: wb-reports
 spec_version: reports
-operations: 23
+operations: 22
 source: "https://dev.wildberries.ru/docs/openapi/reports"
-content_sha: c26c3b605dcb5b45
+content_sha: 6c0718a1af2ff759
 ---
 
 # Отчёты
@@ -21,7 +21,7 @@ content_sha: c26c3b605dcb5b45
  7. [Заблокированных карточках](./reports#tag/blockedItems)
  8. [Возвратах и перемещении товаров](./reports#tag/returnsAndItemMovementReport)
 
-Версия спеки: `reports` · методов: **23** · разделов справки: **11**
+Версия спеки: `reports` · методов: **22** · разделов справки: **10**
 
 Источник: https://dev.wildberries.ru/docs/openapi/reports
 
@@ -40,7 +40,6 @@ content_sha: c26c3b605dcb5b45
 | `GET` | `/api/v1/analytics/brand-share/parent-subjects` | shareOfBrandInSales | [Родительские категории бренда](shareofbrandinsales/get-api-v1-analytics-brand-share-parent-subjects.md) |
 | `GET` | `/api/v1/analytics/brand-share` | shareOfBrandInSales | [Получить отчёт](shareofbrandinsales/get-api-v1-analytics-brand-share.md) |
 | `GET` | `/api/v1/analytics/goods-labeling` | retentionReports | [Маркировка товара](retentionreports/get-api-v1-analytics-goods-labeling.md) |
-| `GET` | `/api/v1/analytics/region-sale` | salesByRegions | [Получить отчёт](salesbyregions/get-api-v1-analytics-region-sale.md) |
 | `GET` | `/api/v1/paid_storage/tasks/{task_id}/download` | paidStorage | [Получить отчёт{{ /api/v1/paid_storage/tasks/{task_id}/download }}](paidstorage/get-api-v1-paid-storage-tasks-task-id-download.md) |
 | `GET` | `/api/v1/paid_storage/tasks/{task_id}/status` | paidStorage | [Проверить статус{{ /api/v1/paid_storage/tasks/{task_id}/status }}](paidstorage/get-api-v1-paid-storage-tasks-task-id-status.md) |
 | `GET` | `/api/v1/paid_storage` | paidStorage | [Создать отчёт](paidstorage/get-api-v1-paid-storage.md) |

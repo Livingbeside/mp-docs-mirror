@@ -1,20 +1,22 @@
 ---
-title: Архив изменений в договоре возмездного оказания услуг Озон Технологий
+title: Все версии договора возмездного оказания услуг Озон Технологий
 marketplace: ozon
 kind: article
 path: /contract-for-sellers/tech-contract/arhiv-contract-ozon-technology
 source: "https://seller-edu.ozon.ru/libra/contract-for-sellers/tech-contract/arhiv-contract-ozon-technology"
-updated: "2026-11-03 08:50:23"
+updated: "2026-11-11 10:15:33"
 doc_id: 86501
-fetched_at: "2026-11-04T02:50:50Z"
-content_sha: 7be5ba86f89a0fad
+fetched_at: "2026-11-12T02:52:27Z"
+content_sha: cc2ce2d506e4c14c
 ---
 
-# Архив изменений в договоре возмездного оказания услуг Озон Технологий
+# Все версии договора возмездного оказания услуг Озон Технологий
 
 _Главная / Договоры для Продавцов на платформе Ozon / Договор Озон Технологии_
 
-[Актуальная версия условий](https://seller-edu.ozon.ru/contract-for-sellers/tech-contract/contract-ozon-technology)
+Здесь храним все опубликованные версии договора. Актуальный договор отмечен бейджем **Действующая версия**.
+
+Чтобы скачать договор на определённую дату, выберите файл в таблице **Файл для скачивания**.
 
 | **Дата вступления в силу** | **Список изменений** | **Файл для скачивания** |
 | --- | --- | --- |

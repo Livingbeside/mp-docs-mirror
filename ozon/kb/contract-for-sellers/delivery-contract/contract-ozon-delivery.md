@@ -4,17 +4,17 @@ marketplace: ozon
 kind: article
 path: /contract-for-sellers/delivery-contract/contract-ozon-delivery
 source: "https://seller-edu.ozon.ru/libra/contract-for-sellers/delivery-contract/contract-ozon-delivery"
-updated: "2026-11-06 12:25:46"
+updated: "2026-11-11 10:21:25"
 doc_id: 71321
-fetched_at: "2026-11-07T02:53:27Z"
-content_sha: 3973c5ef2ba0b009
+fetched_at: "2026-11-12T02:52:27Z"
+content_sha: 7754c9d19b454bc6
 ---
 
 # Договор об использовании сервиса Ozon Доставка
 
 _Главная / Договоры для Продавцов на платформе Ozon / Договор Ozon Доставка_
 
-Эта редакция действует с 1 декабря 2026 года (с дополнениями от 6 ноября 2026 года). Мы заранее публикуем изменения в договоре: если правила на этой странице ещё не вступили в силу, смотрите [предыдущую версию](/contract-for-sellers/delivery-contract/arhiv-izmenenii-v-dogovore-ob-ispolzovanii-servisa-ozon-dostavka).
+Эта редакция действует с 1 декабря 2026 года (с дополнениями от 6 ноября 2026 года). Мы заранее публикуем изменения в договоре: если правила на этой странице ещё не вступили в силу, смотрите [действующую версию](/contract-for-sellers/delivery-contract/arhiv-izmenenii-v-dogovore-ob-ispolzovanii-servisa-ozon-dostavka).
 
 Изложенные ниже условия регулируют отношения Продавца Другой площадки и Ozon при оказании услуг сервиса Ozon Доставка. Договор содержит пункты с активными гиперссылками на веб-страницы, которые являются частью Договора.
 
