@@ -131,6 +131,21 @@
           "title": "bad request"
         }
       },
+      "GetPackageSuccessResponse": {
+        "value": [
+          {
+            "barcodes": [
+              {
+                "barcode": "1234567891234",
+                "quantity": 1
+              }
+            ],
+            "packageCode": "$Ts;G8Z;tXcC;1;TuLY5Lo;TAS",
+            "packageId": "123456",
+            "quantity": 1
+          }
+        ]
+      },
       "InvalidSku": {
         "description": "Переданы некорректные баркоды.\nНи один баркод не добавлен в черновик\n",
         "value": {
@@ -633,16 +648,6 @@
         "type": "object"
       },
       "models.Box": {
-        "example": {
-          "barcodes": [
-            {
-              "barcode": "1234567891234",
-              "quantity": 1
-            }
-          ],
-          "packageCode": "WB_689",
-          "quantity": 1
-        },
         "properties": {
           "barcodes": {
             "description": "Список упакованных товаров",
@@ -652,7 +657,11 @@
             "type": "array"
           },
           "packageCode": {
-            "description": "Штрих-код упаковки",
+            "description": "Закодированное значение стикера упаковки",
+            "type": "string"
+          },
+          "packageId": {
+            "description": "ID стикера упаковки",
             "type": "string"
           },
           "quantity": {
@@ -660,6 +669,11 @@
             "type": "integer"
           }
         },
+        "required": [
+          "packageCode",
+          "quantity",
+          "barcodes"
+        ],
         "type": "object"
       },
       "models.DateFilterRequest": {
@@ -2952,6 +2966,11 @@
           "200": {
             "content": {
               "application/json": {
+                "examples": {
+                  "GetPackageSuccessResponse": {
+                    "$ref": "#/components/examples/GetPackageSuccessResponse"
+                  }
+                },
                 "schema": {
                   "items": {
                     "$ref": "#/components/schemas/models.Box"

@@ -9,7 +9,7 @@ tags:
 spec_version: items
 source: "https://dev.wildberries.ru/docs/openapi/item-management"
 deprecated: false
-content_sha: 7007e3c0a2135d26
+content_sha: d12812000c5ac02d
 ---
 
 # Список кодов ТН ВЭД
@@ -39,8 +39,6 @@ content_sha: 7007e3c0a2135d26
  [получения списка рекомендаций в карточках товаров](./item-management#tag/recommendations/operation/postV1RecommendationsList)
 
  [установки рекомендаций для товаров](./item-management#tag/recommendations/operation/postV1RecommendationsSet)
-
-В песочнице — максимум 1 запрос в секунду суммарно для всех методов Контента.
 
 ## Параметры
 

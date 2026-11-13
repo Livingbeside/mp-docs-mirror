@@ -9,7 +9,7 @@ tags:
 spec_version: general
 source: "https://dev.wildberries.ru/docs/openapi/api-information"
 deprecated: false
-content_sha: c367ec4c493a1ca2
+content_sha: 16b2628ed4f82ddc
 ---
 
 # Изменить права доступа пользователей
@@ -38,7 +38,7 @@ content_sha: c367ec4c493a1ca2
 - `usersAccesses` — array[object] **обязательный**. Настройки доступа для пользователя
   - `userId` — integer. ID пользователя
   - `access` — array[object]. Настройки доступа к разделам профиля продавца
-    - `code` — string (balance, brands, changeJam, discountPrice, finance, showcase, suppliersDocuments, supply, questions, pinFeedbacks, pointsForReviews, feedbacks…) **обязательный**. Код раздела профиля продавца, к которому пользователь получит доступ: * `balance` — Просмотр баланса и вывод средств * `brands` — Управление брендами * `changeJam` — Доступ к подключению подписки **Джем**: **А/Б тесты**, отметки на фото, автозапуски видео, сравнение карточек * `discountPrice` — Изменение цен на товары, управление скидками и акциями * `finance` — Финансовая аналитика. Статистика по балансу, финансовые отчёты, история платежей * `showcase` — Управление витриной магазина * `suppliersDocuments` — Просмотр и скачивание документов по работе с площадкой * `supply` — Создание и управление поставками FBW * `questions` — Просмотр и ответы на вопросы покупателей * `pinFeedbacks` — Возможность закреплять и откреплять отзывы * `pointsForReviews` — Баллы за отзывы * `feedbacks` — Просмотр и ответы на отзывы покупателей * `oldAnalyticsReports` — Отчёты * `marketplace` — Свой склад * `brandsFlow` — Мои бренды * `copyrightComplaints` — Обращения правообладателей * `pretrialClaims` — Досудебные претензии * `sellersChat` — Чат с покупателями * `brandzone` — Бренд-зона. Публикация изменений * `brandzoneSubscribe` — Управление подпиской бренд-зоны
+    - `code` — string (balance, brands, changeJam, discountPrice, finance, showcase, suppliersDocuments, supply, questions, pinFeedbacks, pointsForReviews, feedbacks…) **обязательный**. Код раздела профиля продавца, к которому пользователь получит доступ: * `balance` — Просмотр баланса и вывод средств * `brands` — Управление брендами * `changeJam` — Доступ к подключению подписки **Джем**: **А/Б тесты**, отметки на фото, автозапуски видео, сравнение карточек * `discountPrice` — Изменение цен на товары, управление скидками и акциями * `finance` — Финансовая аналитика. Статистика по балансу, финансовые отчёты, история платежей * `showcase` — Управление витриной магазина * `suppliersDocuments` — Просмотр и скачивание документов по работе с площадкой * `supply` — Создание и управление поставками FBW * `questions` — Просмотр и ответы на вопросы покупателей * `pinFeedbacks` — Возможность закреплять и откреплять отзывы * `pointsForReviews` — Баллы за отзывы * `feedbacks` — Просмотр и ответы на отзывы покупателей * `oldAnalyticsReports` — Отчёты * `marketplace` — Свой склад * `brandsFlow` — Мои бренды * `copyrightComplaints` — Обращения правообладателей * `pretrialClaims` — Досудебные претензии * `sellersChat` — Чат с покупателями * `brandzone` — Бренд-зона. Публикация изменений * `brandzoneSubscribe` — Управление подпиской бренд-зоны * `reportRating` — Отчёт [Оценка товара](https://seller.wildberries.ru/content-ratings)
     - `disabled` — boolean **обязательный**. * `true` — доступ к разделу запрещён * `false` — доступ к разделу разрешён
 
 ## Ответы

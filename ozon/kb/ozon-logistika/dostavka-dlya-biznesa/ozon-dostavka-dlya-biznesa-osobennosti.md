@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /ozon-logistika/dostavka-dlya-biznesa/ozon-dostavka-dlya-biznesa-osobennosti
 source: "https://seller-edu.ozon.ru/libra/ozon-logistika/dostavka-dlya-biznesa/ozon-dostavka-dlya-biznesa-osobennosti"
-updated: "2026-10-02 13:35:30"
+updated: "2026-11-12 15:52:36"
 doc_id: 72831
-fetched_at: "2026-10-03T02:16:53Z"
-content_sha: a25c16fd9cd56853
+fetched_at: "2026-11-13T02:53:58Z"
+content_sha: b9284035840d549d
 ---
 
 # Ozon Доставка для бизнеса: особенности работы
@@ -20,7 +20,7 @@ _Главная / Ozon Доставка / Ozon Доставка для бизн�
 
 # Что такое Ozon Доставка для бизнеса
 
-Это[ сервис доставки заказов нашей логистикой](https://dostavka.ozon.ru/?utm_source=seller-edu&utm_medium=article) без размещения товаров на маркетплейсе.
+[Ozon Доставка для бизнеса](https://dostavka.ozon.ru/) — это сервис доставки заказов нашей логистикой без размещения товаров на маркетплейсе.
 
 Преимущества работы через Ozon Доставку:
 

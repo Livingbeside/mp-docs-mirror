@@ -5,7 +5,7 @@ tag: Process
 group: Общее описание
 kind: guide
 source: "https://docs.ozon.ru/api/seller/"
-content_sha: a26ffbd97a852d1f
+content_sha: 855651840d61c4c6
 ---
 
 # Порядок работы с методами
@@ -125,7 +125,7 @@ Ozon, товар не будет создан или обновлён.
 6. Создайте сертификат: [/v2/product/certificate/create](#operation/ProductCertificateCreate).
 7. Привяжите сертификат к товару: [/v1/product/certificate/bind](#operation/ProductAPI_ProductCertificateBind).
 
-Чтобы посмотреть список товаров, которые привязаны к сертификату, используйте [/v1/product/certificate/products/list](#operation/CertificateProductsList).
+Чтобы посмотреть список товаров, которые привязаны к сертификату, используйте [/v2/product/certificate/products/list](#operation/ProductCertificateProductsListV2).
 Если нужно получить список товаров с определённым статусом, в параметре `status` передайте значение `code` из ответа [/v1/product/certificate/product_status/list](#operation/ProductStatusList).
 
 Чтобы отвязать товар от сертификата, используйте [/v1/product/certificate/unbind](#operation/CertificateUnbind).

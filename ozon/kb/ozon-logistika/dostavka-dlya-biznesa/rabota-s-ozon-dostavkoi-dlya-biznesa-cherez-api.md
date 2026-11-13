@@ -4,17 +4,17 @@ marketplace: ozon
 kind: article
 path: /ozon-logistika/dostavka-dlya-biznesa/rabota-s-ozon-dostavkoi-dlya-biznesa-cherez-api
 source: "https://seller-edu.ozon.ru/libra/ozon-logistika/dostavka-dlya-biznesa/rabota-s-ozon-dostavkoi-dlya-biznesa-cherez-api"
-updated: "2026-10-08 15:15:30"
+updated: "2026-11-12 15:57:09"
 doc_id: 80899
-fetched_at: "2026-10-09T02:02:34Z"
-content_sha: ea676d938230035b
+fetched_at: "2026-11-13T02:53:58Z"
+content_sha: b54158fc52c0f94e
 ---
 
 # Работа с Ozon Доставкой для бизнеса через API
 
 _Главная / Ozon Доставка / Ozon Доставка для бизнеса_
 
-С помощью **[Ozon Delivery API](https://docs.ozon.ru/api/ozon-delivery/)** можете подключить Ozon Доставку для бизнеса к своему интернет-магазину или внутренней системе и автоматизировать работу с доставкой. Например, вместо создания каждого заказа в личном кабинете вручную — можете автоматически передавать заказы в Ozon, рассчитывать условия доставки и получать статусы отправлений. Личный кабинет при этом остаётся доступен — API является дополнительным способом работы с Ozon Доставкой.
+С помощью **[Ozon Delivery API](https://docs.ozon.ru/api/ozon-delivery/)** можете подключить [Ozon Доставку для бизнеса](https://dostavka.ozon.ru/) к своему интернет-магазину или внутренней системе и автоматизировать работу с доставкой. Например, вместо создания каждого заказа в личном кабинете вручную — можете автоматически передавать заказы в Ozon, рассчитывать условия доставки и получать статусы отправлений. Личный кабинет при этом остаётся доступен — API является дополнительным способом работы с Ozon Доставкой.
 
 [Рекомендации по отображению доставки Ozon на сторонних сайтах](https://brandlab.ozon.ru/guide/ozondostavka)
 

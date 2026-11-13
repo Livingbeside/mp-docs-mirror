@@ -2,9 +2,9 @@
 title: Документация Ozon Seller API — все методы
 api: ozon-seller
 spec_version: 2.1
-operations: 484
+operations: 485
 source: "https://docs.ozon.ru/api/seller/"
-content_sha: c07e134bb41a0975
+content_sha: 71b7970f6443494b
 ---
 
 # Документация Ozon Seller API
@@ -20,7 +20,7 @@ content_sha: c07e134bb41a0975
 
 [](https://seller-edu.ozon.ru/webinars/5940/)
 
-Версия спеки: `2.1` · методов: **484** · разделов справки: **28**
+Версия спеки: `2.1` · методов: **485** · разделов справки: **28**
 
 Источник: https://docs.ozon.ru/api/seller/
 
@@ -465,6 +465,7 @@ content_sha: c07e134bb41a0975
 | `POST` | `/v2/posting/fbs/product/country/list` | FBS | [Список доступных стран-изготовителей](fbs/post-v2-posting-fbs-product-country-list.md) |
 | `POST` | `/v2/posting/fbs/product/country/set` | FBS | [Добавить информацию о стране-изготовителе товара](fbs/post-v2-posting-fbs-product-country-set.md) |
 | `POST` | `/v2/product/certificate/create` | CertificationAPI | [Создать сертификат качества](certificationapi/post-v2-product-certificate-create.md) |
+| `POST` | `/v2/product/certificate/products/list` | CertificationAPI | [Получить список товаров, которые привязаны к сертификату](certificationapi/post-v2-product-certificate-products-list.md) |
 | `POST` | `/v2/product/certification/list` | CertificationAPI | [Список сертифицируемых категорий](certificationapi/post-v2-product-certification-list.md) |
 | `POST` | `/v2/product/certification/options` | CertificationAPI | [Получить параметры для создания сертификата качества](certificationapi/post-v2-product-certification-options.md) |
 | `POST` | `/v2/product/certification/params` | CertificationAPI | [Получить обязательные параметры для создания сертификата качества](certificationapi/post-v2-product-certification-params.md) |

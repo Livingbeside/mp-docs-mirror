@@ -9,7 +9,7 @@ tags:
 spec_version: communication
 source: "https://dev.wildberries.ru/docs/openapi/customer-communication"
 deprecated: false
-content_sha: 94a6946d0e6171a3
+content_sha: 83fc8416979d32f8
 ---
 
 # Количество вопросов
@@ -28,6 +28,8 @@ content_sha: 94a6946d0e6171a3
 | Сервисный | 1 сек | 3 запроса | 333 мс | 6 запросов |
 | Базовый с секретом | 1 сек | 3 запроса | 333 мс | 6 запросов |
 | Базовый | 1 ч | 5 запросов | 12 мин | 1 запрос |
+
+В песочнице — максимум 1 запрос в секунду суммарно для всех методов категории Вопросы и отзывы.
 
 ## Параметры
 

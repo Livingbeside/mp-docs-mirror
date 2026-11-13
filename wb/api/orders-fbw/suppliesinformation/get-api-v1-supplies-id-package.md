@@ -9,7 +9,7 @@ tags:
 spec_version: ordersfbw
 source: "https://dev.wildberries.ru/docs/openapi/orders-fbw"
 deprecated: false
-content_sha: 5e2c153aae2b8941
+content_sha: 21ad928bf68c4c52
 ---
 
 # Упаковка поставки{{ /api/v1/supplies/{ID}/package }}
@@ -39,9 +39,10 @@ content_sha: 5e2c153aae2b8941
 
 **200** — Успешно
 
-- `packageCode` — string. Штрих-код упаковки
-- `quantity` — integer. Суммарное количество товара в упаковке, шт
-- `barcodes` — array[object]. Список упакованных товаров
+- `packageCode` — string **обязательный**. Закодированное значение стикера упаковки
+- `packageId` — string. ID стикера упаковки
+- `quantity` — integer **обязательный**. Суммарное количество товара в упаковке, шт
+- `barcodes` — array[object] **обязательный**. Список упакованных товаров
   - `barcode` — string. Баркод
   - `quantity` — integer. Количество, шт
 

@@ -5,12 +5,19 @@ tag: News
 group: Обновления
 kind: changelog
 source: "https://docs.ozon.ru/api/seller/"
-content_sha: 45c22ded356f449f
+content_sha: 5c012eec2a983120
 ---
 
 # Обновления
 
 Следите за обновлениями документации на платформе для разработчиков [Ozon for dev](https://dev.ozon.ru/).
+
+## 12 ноября 2026
+
+| Метод | Изменение |
+|--------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [/v2/product/certificate/products/list](#operation/ProductCertificateProductsListV2) | Добавили новую версию метода для получения списка товаров, которые привязаны к сертификату. |
+| [/v1/product/certificate/products/list](#operation/CertificateProductsList) | Метод устаревает и будет отключён 12 декабря 2026 года. Переключитесь на [/v2/product/certificate/products/list](#operation/ProductCertificateProductsListV2). |
 
 ## 11 ноября 2026
 

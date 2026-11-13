@@ -4,15 +4,17 @@ marketplace: ozon
 kind: section
 path: /ozon-logistika/dostavka-dlya-biznesa
 source: "https://seller-edu.ozon.ru/libra/ozon-logistika/dostavka-dlya-biznesa"
-updated: "2026-10-02 13:34:58"
+updated: "2026-11-12 15:55:04"
 doc_id: 70432
-fetched_at: "2026-10-03T02:16:52Z"
-content_sha: 680e4bfb29eb19fe
+fetched_at: "2026-11-13T02:53:57Z"
+content_sha: 872eefec24ff99eb
 ---
 
 # Ozon Доставка для бизнеса
 
 _Главная / Ozon Доставка_
+
+Логистический сервис — [Ozon Доставка для бизнеса](https://dostavka.ozon.ru/)
 
 ## Вложенные разделы
 - [Ozon Доставка для бизнеса: особенности работы](https://seller-edu.ozon.ru/libra/ozon-logistika/dostavka-dlya-biznesa/ozon-dostavka-dlya-biznesa-osobennosti)

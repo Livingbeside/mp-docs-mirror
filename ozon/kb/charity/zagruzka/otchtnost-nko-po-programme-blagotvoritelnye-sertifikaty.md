@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /charity/zagruzka/otchtnost-nko-po-programme-blagotvoritelnye-sertifikaty
 source: "https://seller-edu.ozon.ru/libra/charity/zagruzka/otchtnost-nko-po-programme-blagotvoritelnye-sertifikaty"
-updated: "2026-11-11 09:38:55"
+updated: "2026-11-12 15:37:52"
 doc_id: 101367
-fetched_at: "2026-11-12T02:52:28Z"
-content_sha: ba35966484a7a2af
+fetched_at: "2026-11-13T02:53:58Z"
+content_sha: f1846f4f89a38904
 ---
 
 # Отчётность НКО по программе «Благотворительные сертификаты»
@@ -26,7 +26,7 @@ _Главная / Благотворительность / Для НКО — д�
 
 # Когда переводим деньги НКО за пожертвования
 
-Пожертвования переводим ежемесячно — 25 числа за предыдущий месяц, закрепили это в [договоре](https://seller-edu.ozon.ru/libra/contract-for-sellers/contract-certificates/contract-for-sellers-of-certificates-for-services).
+Ozon перечисляет пожертвования каждый месяц в течение 25 календарных дней после даты согласования всех отчётных документов по договору. Например, пожертвования, собранные в апреле, переведём 25 мая, а за май — 25 июня. Закрепили это в [договоре](https://seller-edu.ozon.ru/libra/contract-for-sellers/contract-certificates/contract-for-sellers-of-certificates-for-services).
 
 # Что указать в содержательной части отчёта по благотворительным сертификатам
 

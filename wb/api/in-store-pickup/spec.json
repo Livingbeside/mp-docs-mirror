@@ -1718,7 +1718,7 @@
   "paths": {
     "/api/marketplace/v3/click-collect/orders/final-price": {
       "post": {
-        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод возвращает:\n  - цены продавца без учёта скидок\n  - суммы к оплате покупателем с учетом всех скидок и кэшбека\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один профиль продавца для всех методов <strong>получения и удаления идентификаторов маркировки Самовывоз</strong>:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 150 запросов | 400 мс | 20 запросов |\n\nОдин запрос с кодами ответов <code>4XX</code> учитывается как 10 запросов.\n\n<hr>\n\nВ <a href='/sandbox'>песочнице</a> — максимум 1 запрос в секунду суммарно для всех методов <strong>Маркетплейса</strong>.\n\n</div>\n",
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод возвращает:\n  - цены продавца без учёта скидок\n  - суммы к оплате покупателем с учетом всех скидок и кэшбека\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один профиль продавца для методов <strong>сборочных заданий Самовывоз</strong>:\n\n| Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- |\n| 1 мин | 150 запросов | 400 мс | 20 запросов |\n\nОдин запрос с кодами ответов <code>4XX</code> учитывается как 10 запросов.\n\n</div>\n",
         "operationId": "postV3ClickCollectOrdersFinalPrice",
         "requestBody": {
           "content": {

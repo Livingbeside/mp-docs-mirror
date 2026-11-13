@@ -9,7 +9,7 @@ tags:
 spec_version: items
 source: "https://dev.wildberries.ru/docs/openapi/item-management"
 deprecated: false
-content_sha: adb4abd8b1626b13
+content_sha: 2ebcb0da6f878f84
 ---
 
 # Восстановление карточек товаров из корзины
@@ -30,6 +30,8 @@ content_sha: adb4abd8b1626b13
 | Сервисный | 1 мин | 3 запроса | 20 сек | 5 запросов |
 | Базовый с секретом | 1 мин | 3 запроса | 20 сек | 5 запросов |
 | Базовый | 1 ч | 2 запроса | 30 мин | 1 запрос |
+
+В песочнице — максимум 1 запрос в секунду суммарно для всех методов.
 
 ## Запрос
 

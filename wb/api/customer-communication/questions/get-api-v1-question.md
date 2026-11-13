@@ -9,7 +9,7 @@ tags:
 spec_version: communication
 source: "https://dev.wildberries.ru/docs/openapi/customer-communication"
 deprecated: false
-content_sha: c4d09bce1b9002bb
+content_sha: f9494261157f277f
 ---
 
 # Получить вопрос по ID
@@ -28,6 +28,8 @@ content_sha: c4d09bce1b9002bb
 | Сервисный | 1 сек | 3 запроса | 333 мс | 6 запросов |
 | Базовый с секретом | 1 сек | 3 запроса | 333 мс | 6 запросов |
 | Базовый | 1 ч | 5 запросов | 12 мин | 1 запрос |
+
+В песочнице — максимум 1 запрос в секунду суммарно для всех методов категории Вопросы и отзывы.
 
 ## Параметры
 

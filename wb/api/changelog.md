@@ -4,8 +4,8 @@ api: wildberries
 kind: changelog
 source: "https://dev.wildberries.ru/release-notes"
 window: последние записи, страница отдаёт не всю историю
-fetched_at: "2026-11-10T02:49:23Z"
-content_sha: 5c4bf95e3ef5c823
+fetched_at: "2026-11-13T02:57:01Z"
+content_sha: 5737fdda7aaed4d7
 ---
 
 # Журнал изменений WB API
@@ -66,6 +66,20 @@ content_sha: 5c4bf95e3ef5c823
 
 Ноябрь
 2026
+
+Новое
+
+## 12.11.2026
+
+Поставки FBW
+
+Информация о поставках
+
+Изменения в поставках FBW
+
+В метод [GET /api/v1/supplies/{ID}/package](/docs/openapi/orders-fbw#tag/suppliesInformation/operation/getV1SuppliesIdPackage) добавили поле `packageId` — ID QR-стикера упаковки.
+
+В поле `packageCode` теперь возвращается только закодированное значение QR-стикера упаковки.
 
 Новое
 
@@ -182,6 +196,18 @@ C **5 ноября** отключим [песочницы](https://dev.wildberri
 
 В ответ метода [GET /api/v3/orders](/docs/openapi/orders-fbs#tag/fbsAssemblyOrders/operation/getV3Orders) добавили поле `trackNumber` с информацией о трек-номере для трансграничных поставок.
 
+Изменения
+
+## 14.10.2026
+
+Общее
+
+Информация о продавце
+
+Изменения в методе Получить информацию о продавце
+
+В метод [GET /api/v1/seller-info](/docs/openapi/api-information#tag/sellerInformation/operation/getV1SellerInfo) добавили поле `country` — информацию о стране регистрации профиля продавца.
+
 Новое
 
 ## 14.10.2026
@@ -201,18 +227,6 @@ C **5 ноября** отключим [песочницы](https://dev.wildberri
 - сборочное задание ранее не переносили из закрытой поставки в открытую
 
 Чтобы проверить, можно ли перевести сборочное задание из доставки на сборку, используйте метод [получения статусов сборочных заданий](/docs/openapi/orders-fbs#tag/fbsAssemblyOrders/operation/postV3OrdersStatus), поле `isTransferable`.
-
-Изменения
-
-## 14.10.2026
-
-Общее
-
-Информация о продавце
-
-Изменения в методе Получить информацию о продавце
-
-В метод [GET /api/v1/seller-info](/docs/openapi/api-information#tag/sellerInformation/operation/getV1SellerInfo) добавили поле `country` — информацию о стране регистрации профиля продавца.
 
 Новое
 
@@ -416,19 +430,5 @@ DBS
 Методы доступны по **Персональному** и **Сервисному** токену категории **Продвижение**.
 
 В ответ метода [GET /api/advert/v1/config](/docs/openapi/promotion/#tag/campaignManagement/operation/getV1Config) добавили поле `minDailyLimit` — минимально допустимый размер дневного лимита, вне зависимости от ставок кампании.
-
-Новое
-
-## 22.09.2026
-
-Поставки FBW
-
-Информация о поставках
-
-Расхождения в поставках FBW
-
-Добавили метод [GET /api/supplies/v1/discrepancies/{supplyId}](./docs/openapi/orders-fbw#tag/suppliesInformation/operation/getV1SuppliesSupplyIdDiscrepanciesQuantity). С его помощь вы можете получить расхождения между заявленным и фактическим количеством товара, выявленные при приёмке поставки.
-
-В ответ метода получения деталей поставки — [GET /api/v1/supplies/{ID}](/docs/openapi/orders-fbw#tag/suppliesInformation/operation/getV1SuppliesId) добавили поле `discrepancies` — расхождения между заявленным и фактическим количеством товара в поставке.
 
 Мы используем [cookies](https://legal.wildberries.ru/privacypolicy/country/ru/lang/ru/#anchor-7), чтобы анализировать, как вы пользуетесь сайтом, и улучшать его

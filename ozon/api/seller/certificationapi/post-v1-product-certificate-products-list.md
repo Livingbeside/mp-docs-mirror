@@ -8,15 +8,17 @@ tags:
   - CertificationAPI
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
-deprecated: false
-content_sha: 0fb5dd200f98c532
+deprecated: true
+content_sha: 51ad9f3f27b48fab
 ---
 
 # Список товаров, привязанных к сертификату
 
 `POST /v1/product/certificate/products/list`
 
-28 сентября 2026 года отключим параметры page и page_size в запросе метода. Используйте параметры last_id и limit.
+> ⚠️ Метод помечен как **deprecated**.
+
+12 декабря 2026 года отключим метод. Переключитесь на [/v2/product/certificate/products/list](#operation/ProductCertificateProductsListV2).
 
 ## Параметры
 

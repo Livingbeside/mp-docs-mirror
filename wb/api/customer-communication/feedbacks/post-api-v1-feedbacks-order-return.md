@@ -9,7 +9,7 @@ tags:
 spec_version: communication
 source: "https://dev.wildberries.ru/docs/openapi/customer-communication"
 deprecated: false
-content_sha: c51b4e835846f51a
+content_sha: 50ea65772b182ce4
 ---
 
 # Возврат товара по ID отзыва
@@ -30,6 +30,8 @@ content_sha: c51b4e835846f51a
 | Сервисный | 1 сек | 3 запроса | 333 мс | 6 запросов |
 | Базовый с секретом | 1 сек | 3 запроса | 333 мс | 6 запросов |
 | Базовый | 1 ч | 5 запросов | 12 мин | 1 запрос |
+
+В песочнице — максимум 1 запрос в секунду суммарно для всех методов категории Вопросы и отзывы.
 
 ## Запрос
 

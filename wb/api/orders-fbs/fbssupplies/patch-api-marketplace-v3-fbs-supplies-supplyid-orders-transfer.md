@@ -9,7 +9,7 @@ tags:
 spec_version: order
 source: "https://dev.wildberries.ru/docs/openapi/orders-fbs"
 deprecated: false
-content_sha: d9c79d040f35d065
+content_sha: 3314c9c3b0a3d52d
 ---
 
 # Перевести сборочные задания из доставки на сборку{{ /api/marketplace/v3/fbs/supplies/{supplyId}/orders/transfer }}
@@ -26,7 +26,16 @@ content_sha: d9c79d040f35d065
  - сборочное задание находится в статусе `complete` — в доставке
  - поставка, в которую нужно перенести сборочное задание, [не передана в доставку](./orders-fbs#tag/fbsSupplies/operation/patchV3SuppliesSupplyIdDeliver)
  - сборочное задание ранее не переносили из доставки на сборку
+
  Чтобы проверить, можно ли перевести сборочное задание из доставки на сборку, используйте [статусы сборочных заданий](./orders-fbs#tag/fbsAssemblyOrders/operation/postV3OrdersStatus), поле `isTransferable`.
+
+Лимит запросов на один профиль продавца для методов сборочных заданий, поставок, пропусков и настроек автовозврата FBS:
+
+| Период | Лимит | Интервал | Всплеск |
+| --- | --- | --- | --- |
+| 1 мин | 300 запросов | 200 мс | 20 запросов |
+
+Один запрос с кодами ответов 4XX учитывается как 10 запросов
 
 ## Параметры
 

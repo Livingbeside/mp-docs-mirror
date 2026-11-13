@@ -9,7 +9,7 @@ tags:
 spec_version: items
 source: "https://dev.wildberries.ru/docs/openapi/item-management"
 deprecated: false
-content_sha: 0edf91b353baeb2f
+content_sha: b918907b4fadb399
 ---
 
 # Редактирование карточек товаров
@@ -63,11 +63,27 @@ content_sha: 0edf91b353baeb2f
 
  При этом не все документы, которые вы можете добавить, обязательны и проходят проверку — вы самостоятельно определяете, какие разрешительные документы требуются для товара в соответствии с законодательством.
 
-Лимит запросов на один профиль продавца:
+Лимит запросов на один профиль продавца для всех методов категории Контент:
 
 | Период | Лимит | Интервал | Всплеск |
 | --- | --- | --- | --- |
 | 1 мин | 10 запросов | 6 сек | 5 запросов |
+
+Исключение — методы:
+
+ [создания карточек товаров](./item-management#tag/listingItems/operation/postV2CardsUpload)
+
+ [создания карточек товаров с присоединением](./item-management#tag/listingItems/operation/postV2CardsUploadAdd)
+
+ [редактирования карточек товаров](./item-management#tag/listings/operation/postV2CardsUpdate)
+
+ [восстановления карточек товаров из корзины](./item-management#tag/listings/operation/postV2CardsRecover)
+
+ [получения списка рекомендаций в карточках товаров](./item-management#tag/recommendations/operation/postV1RecommendationsList)
+
+ [установки рекомендаций для товаров](./item-management#tag/recommendations/operation/postV1RecommendationsSet)
+
+В песочнице — максимум 1 запрос в секунду суммарно для всех методов Контента.
 
 ## Запрос
 
