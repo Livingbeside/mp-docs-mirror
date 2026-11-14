@@ -9,7 +9,7 @@ tags:
 spec_version: items
 source: "https://dev.wildberries.ru/docs/openapi/item-management"
 deprecated: false
-content_sha: 79a768e5884485a4
+content_sha: 68f30c73eb211d3a
 ---
 
 # Список карточек товаров
@@ -63,7 +63,7 @@ content_sha: 79a768e5884485a4
 
 | Период | Лимит | Интервал | Всплеск |
 | --- | --- | --- | --- |
-| 1 мин | 100 запросов | 600 мс | 5 запросов |
+| 1 мин | 80 запросов | 750 мс | 5 запросов |
 
 В песочнице — максимум 1 запрос в секунду суммарно для всех методов.
 

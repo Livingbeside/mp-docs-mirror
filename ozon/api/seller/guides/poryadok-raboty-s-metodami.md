@@ -5,7 +5,7 @@ tag: Process
 group: Общее описание
 kind: guide
 source: "https://docs.ozon.ru/api/seller/"
-content_sha: 855651840d61c4c6
+content_sha: 11878baa9ff5a5c8
 ---
 
 # Порядок работы с методами
@@ -476,6 +476,8 @@ Ozon, товар не будет создан или обновлён.
  Дополнительную информацию вы также можете получить по
  штрихкоду: [/v2/posting/fbs/get-by-barcode](#operation/PostingAPI_GetFbsPostingByBarcode).
 
+ Если нужно, разделите заказ на несколько отправлений без сборки: [/v1/posting/fbs/split](#operation/FbsSplit).
+
 3. Проверьте, что коды маркировки соответствуют требованиям системы «Честный ЗНАК» по составу и количеству
  символов: [/v5/fbs/posting/product/exemplar/validate](#operation/PostingAPI_FbsPostingProductExemplarValidateV5).
 
@@ -585,6 +587,8 @@ Ozon, товар не будет создан или обновлён.
  - количество товара в УЕИ;
  - штрихкод GTIN.
 
+ Если нужно, разделите заказ на несколько отправлений без сборки: [/v1/posting/fbs/split](#operation/FbsSplit).
+
 6. Передайте экземпляры товара и соберите отправление: [/v4/posting/fbs/ship](#operation/PostingAPI_ShipFbsPostingV4).
 
 ### Работа с перевозками
@@ -632,6 +636,8 @@ Ozon, товар не будет создан или обновлён.
 
  Дополнительную информацию вы также можете получить по
  штрихкоду: [/v2/posting/fbs/get-by-barcode](#operation/PostingAPI_GetFbsPostingByBarcode).
+
+ Если нужно, разделите заказ на несколько отправлений без сборки: [/v1/posting/fbs/split](#operation/FbsSplit).
 
 3. Проверьте, что коды маркировки соответствуют требованиям системы «Честный ЗНАК» по составу и количеству
  символов: [/v5/fbs/posting/product/exemplar/validate](#operation/PostingAPI_FbsPostingProductExemplarValidateV5).
@@ -815,6 +821,8 @@ Ozon, товар не будет создан или обновлён.
  Дополнительную информацию вы также можете получить по
  штрихкоду: [/v2/posting/fbs/get-by-barcode](#operation/PostingAPI_GetFbsPostingByBarcode).
 
+ Если нужно, разделите заказ на несколько отправлений без сборки: [/v1/posting/fbs/split](#operation/FbsSplit).
+
 3. Проверьте, что коды маркировки соответствуют требованиям системы «Честный ЗНАК» по составу и количеству
  символов: [/v5/fbs/posting/product/exemplar/validate](#operation/PostingAPI_FbsPostingProductExemplarValidateV5).
 
@@ -900,6 +908,8 @@ Ozon, товар не будет создан или обновлён.
 
  Дополнительную информацию вы также можете получить по штрихкоду: [/v2/posting/fbs/get-by-barcode](#operation/PostingAPI_GetFbsPostingByBarcode).
 
+ Если нужно, разделите заказ на несколько отправлений без сборки: [/v1/posting/fbs/split](#operation/FbsSplit).
+
 3. Проверьте, что коды маркировки соответствуют требованиям системы «Честный ЗНАК» по составу и количеству
  символов: [/v5/fbs/posting/product/exemplar/validate](#operation/PostingAPI_FbsPostingProductExemplarValidateV5).
 
@@ -976,6 +986,8 @@ Ozon, товар не будет создан или обновлён.
  Дополнительную информацию вы также можете получить по
  штрихкоду: [/v2/posting/fbs/get-by-barcode](#operation/PostingAPI_GetFbsPostingByBarcode).
 
+ Если нужно, разделите заказ на несколько отправлений без сборки: [/v1/posting/fbs/split](#operation/FbsSplit).
+
 3. Проверьте, что коды маркировки соответствуют требованиям системы «Честный ЗНАК» по составу и количеству
  символов: [/v5/fbs/posting/product/exemplar/validate](#operation/PostingAPI_FbsPostingProductExemplarValidateV5).
 
@@ -1043,6 +1055,8 @@ Ozon, товар не будет создан или обновлён.
 
  Дополнительную информацию вы также можете получить по
  штрихкоду: [/v2/posting/fbs/get-by-barcode](#operation/PostingAPI_GetFbsPostingByBarcode).
+
+ Если нужно, разделите заказ на несколько отправлений без сборки: [/v1/posting/fbs/split](#operation/FbsSplit).
 
 3. Проверьте, что коды маркировки соответствуют требованиям системы «Честный ЗНАК» по составу и количеству
  символов: [/v5/fbs/posting/product/exemplar/validate](#operation/PostingAPI_FbsPostingProductExemplarValidateV5).
@@ -1130,6 +1144,8 @@ Ozon, товар не будет создан или обновлён.
  Дополнительную информацию вы также можете получить по
  штрихкоду: [/v2/posting/fbs/get-by-barcode](#operation/PostingAPI_GetFbsPostingByBarcode).
 
+ Если нужно, разделите заказ на несколько отправлений без сборки: [/v1/posting/fbs/split](#operation/FbsSplit).
+
 3. Проверьте, что коды маркировки соответствуют требованиям системы «Честный ЗНАК» по составу и количеству
  символов: [/v5/fbs/posting/product/exemplar/validate](#operation/PostingAPI_FbsPostingProductExemplarValidateV5).
 
@@ -1196,6 +1212,8 @@ Ozon, товар не будет создан или обновлён.
 
  Дополнительную информацию вы также можете получить по
  штрихкоду: [/v2/posting/fbs/get-by-barcode](#operation/PostingAPI_GetFbsPostingByBarcode).
+
+ Если нужно, разделите заказ на несколько отправлений без сборки: [/v1/posting/fbs/split](#operation/FbsSplit).
 
 3. Проверьте, что коды маркировки соответствуют требованиям системы «Честный ЗНАК» по составу и количеству
  символов: [/v5/fbs/posting/product/exemplar/validate](#operation/PostingAPI_FbsPostingProductExemplarValidateV5).

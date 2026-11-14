@@ -1691,7 +1691,7 @@
     }
   },
   "info": {
-    "description": "<div class=\"description_important\">\n  Узнать больше о поставках FBW можно в <a href=\"https://seller.wildberries.ru/instructions/subcategory/5a8e1202-0865-45b7-acae-5d0afc7add56?goBackOption=prevRoute&categoryId=479385c6-de01-4b4d-ad4e-ed941e65582e\">справочном центре</a>\n</div>\n\n<div class=\"api-block\">\n\nВ разделе описаны методы получения:\n  - [информации для формирования поставок](./orders-fbw#tag/informationForFormingSupplies)\n  - [информации о поставках](./orders-fbw#tag/suppliesInformation)\n\n</div>\n",
+    "description": "<div class=\"description_important\">\n  Узнать больше о поставках FBW можно в <a href=\"https://seller.wildberries.ru/instructions/subcategory/5a8e1202-0865-45b7-acae-5d0afc7add56?goBackOption=prevRoute&categoryId=479385c6-de01-4b4d-ad4e-ed941e65582e\">справочном центре</a>\n</div>\n\n<div class=\"api-block\">\n\nС помощью методов этого раздела вы можете:\n  - получить [информацию для формирования поставок](./orders-fbw#tag/informationForFormingSupplies)\n  - получить [информацию о поставках](./orders-fbw#tag/suppliesInformation)\n  - управлять [черновиками поставок](./orders-fbw#tag/supplyDrafts)\n\n</div>\n",
     "title": "Поставки FBW",
     "version": "ordersfbw",
     "x-file-name": "orders-fbw"
@@ -3137,7 +3137,7 @@
   ],
   "tags": [
     {
-      "description": "<div class=\"api-description\">\n\n<div class=\"description_important\">\n  Узнать больше о поставках FBW можно в <a href=\"https://seller.wildberries.ru/instructions/subcategory/5a8e1202-0865-45b7-acae-5d0afc7add56?goBackOption=prevRoute&categoryId=479385c6-de01-4b4d-ad4e-ed941e65582e\">справочном центре</a>\n</div>\n\n<div class=\"api-block\">\n\nВ разделе описаны методы получения:\n  - [информации для формирования поставок](./orders-fbw#tag/informationForFormingSupplies)\n  - [информации о поставках](./orders-fbw#tag/suppliesInformation)\n\n</div>\n\n\n</div>",
+      "description": "<div class=\"api-description\">\n\n<div class=\"description_important\">\n  Узнать больше о поставках FBW можно в <a href=\"https://seller.wildberries.ru/instructions/subcategory/5a8e1202-0865-45b7-acae-5d0afc7add56?goBackOption=prevRoute&categoryId=479385c6-de01-4b4d-ad4e-ed941e65582e\">справочном центре</a>\n</div>\n\n<div class=\"api-block\">\n\nС помощью методов этого раздела вы можете:\n  - получить [информацию для формирования поставок](./orders-fbw#tag/informationForFormingSupplies)\n  - получить [информацию о поставках](./orders-fbw#tag/suppliesInformation)\n  - управлять [черновиками поставок](./orders-fbw#tag/supplyDrafts)\n\n</div>\n\n\n</div>",
       "name": "Поставки FBW",
       "x-traitTag": true
     },

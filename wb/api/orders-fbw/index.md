@@ -4,16 +4,17 @@ api: wb-orders-fbw
 spec_version: ordersfbw
 operations: 14
 source: "https://dev.wildberries.ru/docs/openapi/orders-fbw"
-content_sha: 4e63434796e5a8f3
+content_sha: 20643dfab151f9bf
 ---
 
 # Поставки FBW
 
 Узнать больше о поставках FBW можно в [справочном центре](https://seller.wildberries.ru/instructions/subcategory/5a8e1202-0865-45b7-acae-5d0afc7add56?goBackOption=prevRoute&categoryId=479385c6-de01-4b4d-ad4e-ed941e65582e)
 
-В разделе описаны методы получения:
- - [информации для формирования поставок](./orders-fbw#tag/informationForFormingSupplies)
- - [информации о поставках](./orders-fbw#tag/suppliesInformation)
+С помощью методов этого раздела вы можете:
+ - получить [информацию для формирования поставок](./orders-fbw#tag/informationForFormingSupplies)
+ - получить [информацию о поставках](./orders-fbw#tag/suppliesInformation)
+ - управлять [черновиками поставок](./orders-fbw#tag/supplyDrafts)
 
 Версия спеки: `ordersfbw` · методов: **14** · разделов справки: **4**
 

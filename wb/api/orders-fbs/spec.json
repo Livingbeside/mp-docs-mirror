@@ -8268,6 +8268,7 @@
                       "items": {
                         "$ref": "#/components/schemas/TrbxStickers"
                       },
+                      "nullable": true,
                       "type": "array"
                     }
                   },

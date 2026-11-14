@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /ozon-logistika/dostavka-dlya-prodavcov/fbs
 source: "https://seller-edu.ozon.ru/libra/ozon-logistika/dostavka-dlya-prodavcov/fbs"
-updated: "2026-08-23 15:28:06"
+updated: "2026-11-13 09:52:22"
 doc_id: 36163
-fetched_at: "2026-08-28T12:11:15Z"
-content_sha: df7c5eeac89f01b5
+fetched_at: "2026-11-14T02:49:10Z"
+content_sha: f71b35e03a4b9159
 ---
 
 # Ozon Доставка для продавцов на FBS
@@ -16,7 +16,7 @@ _Главная / Ozon Доставка / Ozon Доставка для прод�
 
 Как работает Ozon Доставка для продавцов по схеме FBS. Как подключить сервис, проверять заказы, работать с возвратами.
 
-# Вебинар «Сервисы Ozon для вашего онлайн-магазина»
+# Вебинар «Ozon Доставка для продавцов: тарифы и подключение»
 
 # Что такое Ozon Доставка на FBS
 

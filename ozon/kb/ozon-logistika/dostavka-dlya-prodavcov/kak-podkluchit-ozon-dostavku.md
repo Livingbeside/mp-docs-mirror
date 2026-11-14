@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /ozon-logistika/dostavka-dlya-prodavcov/kak-podkluchit-ozon-dostavku
 source: "https://seller-edu.ozon.ru/libra/ozon-logistika/dostavka-dlya-prodavcov/kak-podkluchit-ozon-dostavku"
-updated: "2026-11-09 16:28:13"
+updated: "2026-11-13 09:51:40"
 doc_id: 70535
-fetched_at: "2026-11-10T02:46:12Z"
-content_sha: 9a4ad4f5993ab430
+fetched_at: "2026-11-14T02:49:10Z"
+content_sha: 9ec45a0ef1ec2515
 ---
 
 # Как подключить Ozon Доставку для продавцов
@@ -16,7 +16,7 @@ _Главная / Ozon Доставка / Ozon Доставка для прод�
 
 Как начать работу с Ozon Доставкой для продавцов, какие способы интеграции бывают
 
-# Вебинар «Сервисы Ozon для вашего онлайн-магазина»
+# Вебинар «Ozon Доставка для продавцов: тарифы и подключение»
 
 # Подключение Ozon Доставки к собственному магазину
 

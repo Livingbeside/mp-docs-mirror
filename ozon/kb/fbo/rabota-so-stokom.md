@@ -1,16 +1,16 @@
 ---
-title: Работа со стоком
+title: Работа с остатками
 marketplace: ozon
 kind: section
 path: /fbo/rabota-so-stokom
 source: "https://seller-edu.ozon.ru/libra/fbo/rabota-so-stokom"
-updated: "2025-11-20 13:45:06"
+updated: "2026-11-13 11:57:19"
 doc_id: 10890
-fetched_at: "2026-10-20T01:56:48Z"
-content_sha: 3cb744c8fc35a389
+fetched_at: "2026-11-14T02:49:08Z"
+content_sha: a0ff846f36d2ee5c
 ---
 
-# Работа со стоком
+# Работа с остатками
 
 _Главная / Продажа со склада Ozon (FBO)_
 

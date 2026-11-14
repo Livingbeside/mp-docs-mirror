@@ -4,10 +4,10 @@ marketplace: ozon
 kind: section
 path: /finances-documents/calculations-documents
 source: "https://seller-edu.ozon.ru/libra/finances-documents/calculations-documents"
-updated: "2023-01-18 15:23:33.136654"
+updated: "2026-11-13 14:33:24"
 doc_id: 960
-fetched_at: "2026-08-28T12:11:14Z"
-content_sha: 61278d297e3cd36c
+fetched_at: "2026-11-14T02:49:08Z"
+content_sha: 49e22684f7f566bc
 ---
 
 # Выплаты и финансы
@@ -19,4 +19,3 @@ _Главная / Финансы, налоги и документооборот
 - [Работа с финансами в личном кабинете](https://seller-edu.ozon.ru/libra/finances-documents/calculations-documents/work-with-finance)
 - [Задолженность продавца](https://seller-edu.ozon.ru/libra/finances-documents/calculations-documents/zadolzhennost)
 - [Отсрочка выплат с продаж](https://seller-edu.ozon.ru/libra/finances-documents/calculations-documents/otsrochka-platezha)
-- [Вопросы и ответы по выплатам и финансам](https://seller-edu.ozon.ru/libra/finances-documents/calculations-documents/vopros-otvet-finansy)

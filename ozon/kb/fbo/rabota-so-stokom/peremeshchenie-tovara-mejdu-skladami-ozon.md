@@ -4,15 +4,15 @@ marketplace: ozon
 kind: article
 path: /fbo/rabota-so-stokom/peremeshchenie-tovara-mejdu-skladami-ozon
 source: "https://seller-edu.ozon.ru/libra/fbo/rabota-so-stokom/peremeshchenie-tovara-mejdu-skladami-ozon"
-updated: "2026-09-08 14:52:41"
+updated: "2026-11-03 08:47:23"
 doc_id: 58427
-fetched_at: "2026-09-09T01:49:09Z"
-content_sha: 2177547313b4ff79
+fetched_at: "2026-11-14T02:49:09Z"
+content_sha: dfee0b879719ee02
 ---
 
 # Перемещение товара между складами Ozon
 
-_Главная / Продажа со склада Ozon (FBO) / Работа со стоком_
+_Главная / Продажа со склада Ozon (FBO) / Работа с остатками_
 
 Как перевезти товары с одного склада Ozon на другой и сколько это стоит
 

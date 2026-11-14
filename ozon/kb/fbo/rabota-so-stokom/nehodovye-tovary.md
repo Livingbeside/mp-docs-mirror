@@ -4,15 +4,15 @@ marketplace: ozon
 kind: article
 path: /fbo/rabota-so-stokom/nehodovye-tovary
 source: "https://seller-edu.ozon.ru/libra/fbo/rabota-so-stokom/nehodovye-tovary"
-updated: "2026-09-08 15:57:13"
+updated: "2026-11-03 08:44:01"
 doc_id: 8424
-fetched_at: "2026-09-09T01:49:09Z"
-content_sha: 30be6f0b5d5ee585
+fetched_at: "2026-11-14T02:49:09Z"
+content_sha: 9ebab9d64186a9f7
 ---
 
 # Работа с неходовыми товарами
 
-_Главная / Продажа со склада Ozon (FBO) / Работа со стоком_
+_Главная / Продажа со склада Ozon (FBO) / Работа с остатками_
 
 Что такое неходовые товары и как ускорить их продажи
 

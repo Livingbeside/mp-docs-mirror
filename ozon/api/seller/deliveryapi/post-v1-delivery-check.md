@@ -8,13 +8,17 @@ tags:
   - DeliveryAPI
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
-deprecated: false
-content_sha: 4b79858cede4b2af
+deprecated: true
+content_sha: b827170edcab70dd
 ---
 
 # Проверить доступность доставки для покупателя
 
 `POST /v1/delivery/check`
+
+> ⚠️ Метод помечен как **deprecated**.
+
+Метод устаревает и будет отключён.
 
 Проверяет доступность доставки Ozon для покупателя. Не учитывает ограничения по сумме покупки, категории товаров и географии.
 

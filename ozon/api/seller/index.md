@@ -2,9 +2,9 @@
 title: Документация Ozon Seller API — все методы
 api: ozon-seller
 spec_version: 2.1
-operations: 485
+operations: 486
 source: "https://docs.ozon.ru/api/seller/"
-content_sha: 71b7970f6443494b
+content_sha: 8d3db9140f220616
 ---
 
 # Документация Ozon Seller API
@@ -20,7 +20,7 @@ content_sha: 71b7970f6443494b
 
 [](https://seller-edu.ozon.ru/webinars/5940/)
 
-Версия спеки: `2.1` · методов: **485** · разделов справки: **28**
+Версия спеки: `2.1` · методов: **486** · разделов справки: **28**
 
 Источник: https://docs.ozon.ru/api/seller/
 
@@ -268,6 +268,7 @@ content_sha: 71b7970f6443494b
 | `POST` | `/v1/product/info/subscription` | ProductAPI | [Количество подписавшихся на товар пользователей](productapi/post-v1-product-info-subscription.md) |
 | `POST` | `/v1/product/info/warehouse/stocks` | Prices&StocksAPI | [Получить информацию по остаткам на складе FBS и rFBS](prices-stocksapi/post-v1-product-info-warehouse-stocks.md) |
 | `POST` | `/v1/product/info/wrong-volume` | ProductAPI | [Список товаров с некорректными ОВХ](productapi/post-v1-product-info-wrong-volume.md) |
+| `POST` | `/v1/product/mismatches/list` | BetaMethod | [Получить несоответствия характеристик товаров](betamethod/post-v1-product-mismatches-list.md) |
 | `POST` | `/v1/product/pictures/import` | ProductAPI | [Загрузить или обновить изображения товара](productapi/post-v1-product-pictures-import.md) |
 | `POST` | `/v1/product/placement-zone/info` | CategoryAPI | [Получить зоны размещения товаров по SKU перед поставкой](categoryapi/post-v1-product-placement-zone-info.md) |
 | `POST` | `/v1/product/prices/details` | Premium | [Получить подробную информацию о ценах товаров](premium/post-v1-product-prices-details.md) |

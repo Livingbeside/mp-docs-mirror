@@ -4,15 +4,15 @@ marketplace: ozon
 kind: article
 path: /fbo/rabota-so-stokom/zakazy-so-sklada-ozon
 source: "https://seller-edu.ozon.ru/libra/fbo/rabota-so-stokom/zakazy-so-sklada-ozon"
-updated: "2026-10-19 10:55:43"
+updated: "2026-11-11 12:50:14.147072"
 doc_id: 90211
-fetched_at: "2026-10-20T01:56:49Z"
-content_sha: 5e6f24dbe41a12b0
+fetched_at: "2026-11-14T02:49:09Z"
+content_sha: e5fcbe9efcffe446
 ---
 
 # Заказы со склада Ozon
 
-_Главная / Продажа со склада Ozon (FBO) / Работа со стоком_
+_Главная / Продажа со склада Ozon (FBO) / Работа с остатками_
 
 Где отслеживать заказы FBO на Ozon: статусы, фильтры, информация о цене товара для покупателя и источнике заказа. Как выгрузить данные по заказам FBO в xslx и через API
 

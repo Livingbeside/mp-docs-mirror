@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /ozon-logistika/dostavka-dlya-prodavcov/fbo
 source: "https://seller-edu.ozon.ru/libra/ozon-logistika/dostavka-dlya-prodavcov/fbo"
-updated: "2026-08-23 15:28:13"
+updated: "2026-11-13 15:49:27"
 doc_id: 36161
-fetched_at: "2026-08-28T12:11:15Z"
-content_sha: be6ed0f4153e923b
+fetched_at: "2026-11-14T02:49:10Z"
+content_sha: 79d01be06fbaaa39
 ---
 
 # Ozon Доставка для продавцов на FBO
@@ -16,7 +16,7 @@ _Главная / Ozon Доставка / Ozon Доставка для прод�
 
 Как работает Ozon Доставка для продавцов по схеме FBO. Как устроены приёмка, хранение и доставка товаров.
 
-# Вебинар «Сервисы Ozon для вашего онлайн-магазина»
+# Вебинар «Ozon Доставка для продавцов: тарифы и подключение»
 
 # Что такое Ozon Доставка на FBO
 
@@ -74,18 +74,17 @@ UDS — если ваш интернет-магазин создан на это
 
 ## Маркировка «Честный знак»
 
-При подключении собственной площадки [через Seller API](https://seller-edu.ozon.ru/libra/ozon-logistika/dostavka-dlya-prodavcov/kak-podkluchit-ozon-dostavku#%D0%BF%D1%80%D1%8F%D0%BC%D0%B0%D1%8F-%D0%B8%D0%BD%D1%82%D0%B5%D0%B3%D1%80%D0%B0%D1%86%D0%B8%D1%8F-%D0%B2-%D0%BB%D0%B8%D1%87%D0%BD%D0%BE%D0%BC-%D0%BA%D0%B0%D0%B1%D0%B8%D0%BD%D0%B5%D1%82%D0%B5-ozon) или [любого из партнёров](https://seller-edu.ozon.ru/libra/ozon-logistika/dostavka-dlya-prodavcov/kak-podkluchit-ozon-dostavku#%D0%B8%D0%BD%D1%82%D0%B5%D0%B3%D1%80%D0%B0%D1%86%D0%B8%D1%8F-%D1%87%D0%B5%D1%80%D0%B5%D0%B7-%D0%BD%D0%B0%D1%88%D0%B8%D1%85-%D0%BF%D0%B0%D1%80%D1%82%D0%BD%D1%91%D1%80%D0%BE%D0%B2):
+При подключении собственной площадки [через Seller API](https://seller-edu.ozon.ru/libra/ozon-logistika/dostavka-dlya-prodavcov/kak-podkluchit-ozon-dostavku#%D0%BF%D1%80%D1%8F%D0%BC%D0%B0%D1%8F-%D0%B8%D0%BD%D1%82%D0%B5%D0%B3%D1%80%D0%B0%D1%86%D0%B8%D1%8F-%D0%B2-%D0%BB%D0%B8%D1%87%D0%BD%D0%BE%D0%BC-%D0%BA%D0%B0%D0%B1%D0%B8%D0%BD%D0%B5%D1%82%D0%B5-ozon) или с помощью [готовых решений](https://seller-edu.ozon.ru/libra/ozon-logistika/dostavka-dlya-prodavcov/kak-podkluchit-ozon-dostavku#%D0%B8%D0%BD%D1%82%D0%B5%D0%B3%D1%80%D0%B0%D1%86%D0%B8%D1%8F-%D1%87%D0%B5%D1%80%D0%B5%D0%B7-%D0%BD%D0%B0%D1%88%D0%B8%D1%85-%D0%BF%D0%B0%D1%80%D1%82%D0%BD%D1%91%D1%80%D0%BE%D0%B2):
 
 1. После оформления заказа отправьте покупателю авансовый чек без кодов маркировки.
 2. Чтобы узнать, какие коды маркировки у заказанных товаров, воспользуйтесь методом **v1/posting/marks** Seller API.
-3. После получения товара покупателем отправьте ему фискальный чек с кодами маркировки.
-4. Cамостоятельно выведите коды маркировки из оборота с причиной вывода «Дистанционная продажа», даже если передали их нам в[ УПД-2](https://seller-edu.ozon.ru/fbo/documents/hand-in-UPD-2).
+3. Когда покупатель получит товар, отправьте ему фискальный чек с кодами маркировки. Выводить коды из оборота самостоятельно не нужно, это произойдёт автоматически после формирования фискального чека, в котором указаны эти коды.
 
 Если вы [создали заказ вручную](https://seller-edu.ozon.ru/libra/ozon-logistika/sozdanie-zakaza-v-lichnom-kabinete-prodavca) в личном кабинете или [при работе на площадках наших партнёров](https://seller-edu.ozon.ru/libra/ozon-logistika/dostavka-dlya-prodavcov/kak-podkluchit-ozon-dostavku#%D0%BF%D0%BE%D0%B4%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%BD%D0%B8%D0%B5-%D0%BA-%D0%BF%D0%BB%D0%BE%D1%89%D0%B0%D0%B4%D0%BA%D0%B0%D0%BC-%D0%BD%D0%B0%D1%88%D0%B8%D1%85-%D0%BF%D0%B0%D1%80%D1%82%D0%BD%D1%91%D1%80%D0%BE%D0%B2):
 
 После получения заказа покупателем Ozon сам выведет из оборота коды маркировки, которые были переданы по УПД-2 при поставке.
 
-Формирование авансового и фискальный чеков для покупателя — на вашей стороне или на стороне партнёрской площадки.
+Формирование авансового и фискальный чеков для покупателя — на вашей стороне или на стороне партнёрской площадки.
 
 ## Сертификация «Меркурий»
 

@@ -9,7 +9,7 @@ tags:
 spec_version: items
 source: "https://dev.wildberries.ru/docs/openapi/item-management"
 deprecated: false
-content_sha: 2854e1630d7433bf
+content_sha: 33bfb138a6c9fe9f
 ---
 
 # Список несозданных карточек товаров с ошибками
@@ -50,7 +50,7 @@ content_sha: 2854e1630d7433bf
 
 | Период | Лимит | Интервал | Всплеск |
 | --- | --- | --- | --- |
-| 1 мин | 10 запросов | 6 сек | 5 запросов |
+| 1 мин | 8 запросов | 7500 мс | 5 запросов |
 
 В песочнице — максимум 1 запрос в секунду суммарно для всех методов Контента.
 

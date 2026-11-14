@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /ozon-logistika/dostavka-dlya-prodavcov/sozdanie-zakaza-v-lichnom-kabinete-prodavca
 source: "https://seller-edu.ozon.ru/libra/ozon-logistika/dostavka-dlya-prodavcov/sozdanie-zakaza-v-lichnom-kabinete-prodavca"
-updated: "2026-08-26 16:39:04"
+updated: "2026-11-13 09:54:08"
 doc_id: 77550
-fetched_at: "2026-08-28T12:11:15Z"
-content_sha: a082f1bb308775b1
+fetched_at: "2026-11-14T02:49:10Z"
+content_sha: 33265cffdccd60a7
 ---
 
 # Создание заказа в личном кабинете продавца
@@ -16,7 +16,7 @@ _Главная / Ozon Доставка / Ozon Доставка для прод�
 
 Как создать заказ в Ozon Доставке для продавцов, какие есть ограничения и требования
 
-# Видео «Ozon Доставка»
+# Видео об Ozon Доставке
 
 # Что такое создание заказа в личном кабинете продавца
 

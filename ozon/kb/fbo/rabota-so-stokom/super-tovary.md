@@ -4,15 +4,15 @@ marketplace: ozon
 kind: article
 path: /fbo/rabota-so-stokom/super-tovary
 source: "https://seller-edu.ozon.ru/libra/fbo/rabota-so-stokom/super-tovary"
-updated: "2026-10-07 10:34:08"
+updated: "2026-11-03 08:43:09"
 doc_id: 8490
-fetched_at: "2026-10-08T02:08:27Z"
-content_sha: 3995fd32f00dbc90
+fetched_at: "2026-11-14T02:49:09Z"
+content_sha: 5ed3dfc7573509ad
 ---
 
 # Super-товары
 
-_Главная / Продажа со склада Ozon (FBO) / Работа со стоком_
+_Главная / Продажа со склада Ozon (FBO) / Работа с остатками_
 
 Что такое Super-товары и как за их поставки получить скидку на услуги площадки
 
