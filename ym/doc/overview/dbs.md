@@ -2,14 +2,14 @@
 title: Список методов, используемых в модели DBS
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/overview/dbs.md"
-fetched_at: "2026-11-11T02:50:47Z"
-content_sha: f36e91f2ac63489f
+fetched_at: "2026-11-19T02:44:47Z"
+content_sha: 2ec11259c279d27f
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.66.1
+    content: Diplodoc Platform v5.70.2
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/overview/dbs.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/overview/dbs.md
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/overview/dbs.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22024309
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22182941
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22024309
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22182941
 
 # Список методов, используемых в модели DBS
 

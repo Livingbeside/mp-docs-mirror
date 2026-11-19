@@ -2,14 +2,14 @@
 title: Список методов, используемых в модели FBY
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/overview/fby.md"
-fetched_at: "2026-11-11T02:50:45Z"
-content_sha: 2fde13cff49372bd
+fetched_at: "2026-11-19T02:44:46Z"
+content_sha: af75a2ed9db4ca25
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.66.1
+    content: Diplodoc Platform v5.70.2
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/overview/fby.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/overview/fby.md
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/overview/fby.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22024309
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22182941
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22024309
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22182941
 
 # Список методов, используемых в модели FBY
 
