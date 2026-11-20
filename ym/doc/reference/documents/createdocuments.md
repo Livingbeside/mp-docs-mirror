@@ -2,14 +2,14 @@
 title: Создание документов
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/documents/createDocuments.md"
-fetched_at: "2026-11-19T02:44:56Z"
-content_sha: b8367cb9b48f37ff
+fetched_at: "2026-11-20T02:50:16Z"
+content_sha: aa0ebb6453bc1101
 ---
 
 ---
 metadata:
   - name: generator
-    content: Diplodoc Platform v5.70.2
+    content: Diplodoc Platform v5.71.0
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/documents/createDocuments.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/documents/createDocuments.md
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/documents/createDocuments.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22182941
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22204578
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22182941
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22204578
 
 <!-- source: ru/api/documents/createDocuments.md -->
 <div class="openapi">

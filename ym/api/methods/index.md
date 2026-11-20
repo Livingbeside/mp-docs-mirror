@@ -2,9 +2,9 @@
 title: API Яндекс Маркета для продавцов — все методы
 api: yandex-market
 spec_version: LATEST
-operations: 169
+operations: 174
 source: "https://yandex.ru/dev/market/partner-api/"
-content_sha: c29ef4715a8a33a7
+content_sha: ecb4b421af116449
 ---
 
 # API Яндекс Маркета для продавцов
@@ -21,7 +21,7 @@ API Яндекс Маркета помогает продавцам автома
 
 * получение отчетов.
 
-Версия спеки: `LATEST` · методов: **169** · разделов справки: **0**
+Версия спеки: `LATEST` · методов: **174** · разделов справки: **0**
 
 Источник: https://yandex.ru/dev/market/partner-api/
 
@@ -117,6 +117,11 @@ API Яндекс Маркета помогает продавцам автома
 | `POST` | `/v2/businesses/{businessId}/promos` | promos | [Получение списка акций](promos/post-v2-businesses-businessid-promos.md) |
 | `POST` | `/v2/businesses/{businessId}/ratings/quality` | ratings | [Индекс качества магазинов](ratings/post-v2-businesses-businessid-ratings-quality.md) |
 | `POST` | `/v2/businesses/{businessId}/settings` | businesses | [Настройки кабинета](businesses/post-v2-businesses-businessid-settings.md) |
+| `POST` | `/v2/businesses/{businessId}/size-tables/charts` | content | [Размерные сетки и обмеры для таблиц размеров](content/post-v2-businesses-businessid-size-tables-charts.md) |
+| `POST` | `/v2/businesses/{businessId}/size-tables/create` | content | [Создание таблиц размеров](content/post-v2-businesses-businessid-size-tables-create.md) |
+| `POST` | `/v2/businesses/{businessId}/size-tables/suggest` | content | [Подбор таблиц размеров](content/post-v2-businesses-businessid-size-tables-suggest.md) |
+| `POST` | `/v2/businesses/{businessId}/size-tables/update` | content | [Обновление таблиц размеров](content/post-v2-businesses-businessid-size-tables-update.md) |
+| `POST` | `/v2/businesses/{businessId}/size-tables` | content | [Таблицы размеров по идентификаторам](content/post-v2-businesses-businessid-size-tables.md) |
 | `POST` | `/v2/businesses/{businessId}/warehouses` | warehouses | [Список складов](warehouses/post-v2-businesses-businessid-warehouses.md) |
 | `POST` | `/v2/campaigns/{campaignId}/first-mile/shipments/{shipmentId}/confirm` | shipments | [Подтверждение отгрузки](shipments/post-v2-campaigns-campaignid-first-mile-shipments-shipmentid-confirm.md) |
 | `POST` | `/v2/campaigns/{campaignId}/first-mile/shipments/{shipmentId}/orders/transfer` | shipments | [Перенос заказов в следующую отгрузку](shipments/post-v2-campaigns-campaignid-first-mile-shipments-shipmentid-orders-transfer.md) |
