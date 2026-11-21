@@ -2,8 +2,8 @@
 title: Просмотр цен на указанные товары во всех магазинах
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/prices/getDefaultPrices.md"
-fetched_at: "2026-11-20T02:50:21Z"
-content_sha: 0a00013e8d8ac51e
+fetched_at: "2026-11-21T02:45:56Z"
+content_sha: 772eb90bd6467b74
 ---
 
 ---
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/prices/getDefaultPrices.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22204578
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22228850
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22204578
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22228850
 
 <!-- source: ru/api/prices/getDefaultPrices.md -->
 <div class="openapi">

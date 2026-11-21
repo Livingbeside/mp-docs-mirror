@@ -2,8 +2,8 @@
 title: Просмотр товаров и карточек
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/_auto/scopes_summary/pages/offers-and-cards-management_read-only.md"
-fetched_at: "2026-11-20T02:49:56Z"
-content_sha: a7c7c708ad4aa093
+fetched_at: "2026-11-21T02:45:22Z"
+content_sha: 2767b25259ab904a
 ---
 
 ---
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/_auto/scopes_summary/pages/offers-and-cards-management_read-only.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22204578
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22228850
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22204578
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22228850
 
 # Просмотр товаров и карточек
 
@@ -39,6 +39,21 @@ alternate:
 [POST v2/businesses/{businessId}/offer-cards](https://yandex.ru/dev/market/partner-api/doc/ru/reference/content/getOfferCardsContentStatus.md)
 |
 Получение информации о заполненности карточек магазина
+||
+||
+[POST v2/businesses/{businessId}/size-tables/suggest](https://yandex.ru/dev/market/partner-api/doc/ru/reference/content/suggestContentSizeTables.md)
+|
+Подбор таблиц размеров
+||
+||
+[POST v2/businesses/{businessId}/size-tables](https://yandex.ru/dev/market/partner-api/doc/ru/reference/content/getContentSizeTables.md)
+|
+Таблицы размеров по идентификаторам
+||
+||
+[POST v2/businesses/{businessId}/size-tables/charts](https://yandex.ru/dev/market/partner-api/doc/ru/reference/content/getContentSizeCharts.md)
+|
+Размерные сетки и обмеры для таблиц размеров
 ||
 ||
 [POST v1/businesses/{businessId}/offers/documents](https://yandex.ru/dev/market/partner-api/doc/ru/reference/documents/getDocuments.md)

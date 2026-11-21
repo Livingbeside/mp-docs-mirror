@@ -2,8 +2,8 @@
 title: Получение статусов операций
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/operations/getOperations.md"
-fetched_at: "2026-11-20T02:50:35Z"
-content_sha: df1b4083a25f5bf2
+fetched_at: "2026-11-21T02:46:12Z"
+content_sha: eddf31ed64148a73
 ---
 
 ---
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/operations/getOperations.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22204578
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22228850
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22204578
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22228850
 
 <!-- source: ru/api/operations/getOperations.md -->
 <div class="openapi">

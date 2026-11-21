@@ -2,8 +2,8 @@
 title: Главные обновления
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/changelog/main.md"
-fetched_at: "2026-11-20T02:50:09Z"
-content_sha: 48aa4bbc49707b3f
+fetched_at: "2026-11-21T02:45:39Z"
+content_sha: 95749257e9c4397d
 ---
 
 ---
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/changelog/main.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22204578
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22228850
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22204578
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22228850
 
 # Главные обновления
 
@@ -31,6 +31,22 @@ alternate:
 {% endnote %}
 
 <!-- source: ru/_auto/changelog/main.md -->
+<!-- source: ru/_auto/changelog/main/2026-11-19.md -->
+### 19 ноября {#19-11-26}
+
+#|
+|| **Методы или страницы документации**
+ | **Описание изменений**
+ ||
+||
+[POST v2/businesses/{businessId}/size-tables/suggest](https://yandex.ru/dev/market/partner-api/doc/ru/reference/content/suggestContentSizeTables.md)<br>[POST v2/businesses/{businessId}/size-tables](https://yandex.ru/dev/market/partner-api/doc/ru/reference/content/getContentSizeTables.md)<br>[POST v2/businesses/{businessId}/size-tables/charts](https://yandex.ru/dev/market/partner-api/doc/ru/reference/content/getContentSizeCharts.md)<br>[POST v2/businesses/{businessId}/size-tables/create](https://yandex.ru/dev/market/partner-api/doc/ru/reference/content/createContentSizeTables.md)<br>[POST v2/businesses/{businessId}/size-tables/update](https://yandex.ru/dev/market/partner-api/doc/ru/reference/content/updateContentSizeTables.md)<br>[Таблицы размеров](https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/size-tables.md)
+
+|
+Добавили методы для работы с таблицами размеров: подбор таблиц для категории, бренда и пола, получение таблиц по идентификаторам, получение размерных сеток и обмеров, создание и обновление таблиц размеров бизнеса. Создавать и обновлять можно до 10 таблиц за один запрос. Добавили инструкцию: как подобрать или создать таблицу размеров и указать ее и размер в карточке товара.
+||
+|#
+<!-- endsource: ru/_auto/changelog/main/2026-11-19.md -->
+
 <!-- source: ru/_auto/changelog/main/2026-10-27.md -->
 ### 27 октября {#27-10-26}
 

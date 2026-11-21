@@ -2,8 +2,8 @@
 title: Готовые ярлыки‑наклейки на все коробки в нескольких заказах
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/reports/generateMassOrderLabelsReport.md"
-fetched_at: "2026-11-20T02:50:42Z"
-content_sha: a9f82685fd787754
+fetched_at: "2026-11-21T02:46:17Z"
+content_sha: df8843202f429dbd
 ---
 
 ---
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/reports/generateMassOrderLabelsReport.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22204578
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22228850
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22204578
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22228850
 
 <!-- source: ru/api/reports/generateMassOrderLabelsReport.md -->
 <div class="openapi">
@@ -933,7 +933,7 @@ alternate:
       required: false
       schema:
         $ref: >-
-          /home/sandbox/.ya/build/build_root/648b/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/order-labels/schemas.yaml#/PageFormatType
+          /home/sandbox/.ya/build/build_root/deod/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/order-labels/schemas.yaml#/PageFormatType
   headers: []
   body: |-
     {
@@ -970,7 +970,7 @@ alternate:
         description: Тип сортировки ярлыков в файле.
         $ref: '#/$defs/LabelsSortingType'
     $defs:
-      /home/sandbox/.ya/build/build_root/648b/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/reports/api/generateMassOrderLabelsReport.yaml#/LabelsSortingType:
+      /home/sandbox/.ya/build/build_root/deod/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/reports/api/generateMassOrderLabelsReport.yaml#/LabelsSortingType:
         description: >
           Тип сортировки ярлыков:
   

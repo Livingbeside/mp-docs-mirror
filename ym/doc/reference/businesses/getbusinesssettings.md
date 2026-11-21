@@ -2,8 +2,8 @@
 title: Настройки кабинета
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/businesses/getBusinessSettings.md"
-fetched_at: "2026-11-20T02:50:11Z"
-content_sha: 67905b7e3ecc1886
+fetched_at: "2026-11-21T02:45:42Z"
+content_sha: 00b2c8c59510d55b
 ---
 
 ---
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/businesses/getBusinessSettings.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22204578
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22228850
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22204578
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22228850
 
 <!-- source: ru/api/businesses/getBusinessSettings.md -->
 <div class="openapi">

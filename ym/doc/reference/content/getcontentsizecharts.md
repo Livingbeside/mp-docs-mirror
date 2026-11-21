@@ -2,8 +2,8 @@
 title: Размерные сетки и обмеры для таблиц размеров
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/content/getContentSizeCharts.md"
-fetched_at: "2026-11-20T02:50:14Z"
-content_sha: 87f450d8ba1e00d8
+fetched_at: "2026-11-21T02:45:47Z"
+content_sha: 6f328b76fb9eec35
 ---
 
 ---
@@ -13,13 +13,14 @@ metadata:
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/content/getContentSizeCharts.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/content/getContentSizeCharts.md
+  - https://yandex.ru/dev/market/partner-api/doc/zh/reference/content/getContentSizeCharts.md
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/content/getContentSizeCharts.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22204578
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22228850
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22204578
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22228850
 
 <!-- source: ru/api/content/getContentSizeCharts.md -->
 <div class="openapi">

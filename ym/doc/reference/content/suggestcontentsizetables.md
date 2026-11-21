@@ -2,8 +2,8 @@
 title: Подбор таблиц размеров
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/content/suggestContentSizeTables.md"
-fetched_at: "2026-11-20T02:50:14Z"
-content_sha: f0c62bb1ddb97f9f
+fetched_at: "2026-11-21T02:45:46Z"
+content_sha: 3be6ddc3ca9736d1
 ---
 
 ---
@@ -13,13 +13,14 @@ metadata:
 alternate:
   - https://yandex.ru/dev/market/partner-api/doc/en/reference/content/suggestContentSizeTables.md
   - https://yandex.ru/dev/market/partner-api/doc/ru/reference/content/suggestContentSizeTables.md
+  - https://yandex.ru/dev/market/partner-api/doc/zh/reference/content/suggestContentSizeTables.md
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/content/suggestContentSizeTables.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22204578
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22228850
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22204578
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22228850
 
 <!-- source: ru/api/content/suggestContentSizeTables.md -->
 <div class="openapi">

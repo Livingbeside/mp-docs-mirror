@@ -2,8 +2,8 @@
 title: Изменение даты доставки заказа
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/order-delivery/setOrderDeliveryDate.md"
-fetched_at: "2026-11-20T02:50:32Z"
-content_sha: 1a30a4f9767956d4
+fetched_at: "2026-11-21T02:46:06Z"
+content_sha: a3d289440d1c98b8
 ---
 
 ---
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/order-delivery/setOrderDeliveryDate.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22204578
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22228850
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22204578
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22228850
 
 <!-- source: ru/api/order-delivery/setOrderDeliveryDate.md -->
 <div class="openapi">
@@ -829,7 +829,7 @@ alternate:
         description: Причина переноса доставки заказа.
         $ref: '#/$defs/OrderDeliveryDateReasonType'
     $defs:
-      /home/sandbox/.ya/build/build_root/648b/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/order-delivery/api/setOrderDeliveryDate.yaml#/OrderDeliveryDateDTO:
+      /home/sandbox/.ya/build/build_root/deod/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/order-delivery/api/setOrderDeliveryDate.yaml#/OrderDeliveryDateDTO:
         description: Информация о новой дате доставки заказа.
         type: object
         required:
@@ -842,7 +842,7 @@ alternate:
               Формат даты: `ГГГГ-ММ-ДД`.
             type: string
             format: date
-      /home/sandbox/.ya/build/build_root/648b/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/order-delivery/api/setOrderDeliveryDate.yaml#/OrderDeliveryDateReasonType:
+      /home/sandbox/.ya/build/build_root/deod/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/order-delivery/api/setOrderDeliveryDate.yaml#/OrderDeliveryDateReasonType:
         description: |
           Причина переноса доставки заказа. Возможные причины изменения даты:
             - ```USER_MOVED_DELIVERY_DATES``` — покупатель попросил изменить дату или вы договорились привезти ему заказ раньше изначальной даты. Кроме этого указывается для подтверждения даты доставки товаров на заказ с долгой (31-60 дней) доставкой.

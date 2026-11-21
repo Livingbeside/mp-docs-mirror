@@ -2,8 +2,8 @@
 title: Получение информации о заявках на поставку, вывоз и утилизацию
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/supply-requests/getSupplyRequests.md"
-fetched_at: "2026-11-20T02:50:44Z"
-content_sha: 658bd33e5d7b56c1
+fetched_at: "2026-11-21T02:46:19Z"
+content_sha: eedb1c2dd1eb1585
 ---
 
 ---
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/supply-requests/getSupplyRequests.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22204578
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22228850
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22204578
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22228850
 
 <!-- source: ru/api/supply-requests/getSupplyRequests.md -->
 <div class="openapi">

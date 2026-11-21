@@ -2,8 +2,8 @@
 title: Общие для всех моделей методы
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/overview/business.md"
-fetched_at: "2026-11-20T02:50:07Z"
-content_sha: 3d2f04839beeeb12
+fetched_at: "2026-11-21T02:45:37Z"
+content_sha: 80d83d4e9439b86e
 ---
 
 ---
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/overview/business.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22204578
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22228850
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22204578
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22228850
 
 # Общие для всех моделей методы
 
@@ -82,6 +82,36 @@ alternate:
 {style="max-width: 400px"}
 |
 Редактирование категорийных характеристик товара
+||
+||
+[POST v2/​businesses/​{businessId}/​size-tables/​suggest](https://yandex.ru/dev/market/partner-api/doc/ru/reference/content/suggestContentSizeTables.md)
+{style="max-width: 400px"}
+|
+Подбор таблиц размеров
+||
+||
+[POST v2/​businesses/​{businessId}/​size-tables](https://yandex.ru/dev/market/partner-api/doc/ru/reference/content/getContentSizeTables.md)
+{style="max-width: 400px"}
+|
+Таблицы размеров по идентификаторам
+||
+||
+[POST v2/​businesses/​{businessId}/​size-tables/​charts](https://yandex.ru/dev/market/partner-api/doc/ru/reference/content/getContentSizeCharts.md)
+{style="max-width: 400px"}
+|
+Размерные сетки и обмеры для таблиц размеров
+||
+||
+[POST v2/​businesses/​{businessId}/​size-tables/​create](https://yandex.ru/dev/market/partner-api/doc/ru/reference/content/createContentSizeTables.md)
+{style="max-width: 400px"}
+|
+Создание таблиц размеров
+||
+||
+[POST v2/​businesses/​{businessId}/​size-tables/​update](https://yandex.ru/dev/market/partner-api/doc/ru/reference/content/updateContentSizeTables.md)
+{style="max-width: 400px"}
+|
+Обновление таблиц размеров
 ||
 ||
 [POST v1/​businesses/​{businessId}/​offers/​documents/​create](https://yandex.ru/dev/market/partner-api/doc/ru/reference/documents/createDocuments.md)

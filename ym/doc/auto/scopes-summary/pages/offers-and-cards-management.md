@@ -2,8 +2,8 @@
 title: Управление товарами и карточками
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/_auto/scopes_summary/pages/offers-and-cards-management.md"
-fetched_at: "2026-11-20T02:49:54Z"
-content_sha: be68cfe04b16e461
+fetched_at: "2026-11-21T02:45:22Z"
+content_sha: 8538eecf3e0972b7
 ---
 
 ---
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/_auto/scopes_summary/pages/offers-and-cards-management.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22204578
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22228850
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22204578
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22228850
 
 # Управление товарами и карточками
 
@@ -59,6 +59,31 @@ alternate:
 [POST v2/businesses/{businessId}/offer-cards/update](https://yandex.ru/dev/market/partner-api/doc/ru/reference/content/updateOfferContent.md)
 |
 Редактирование категорийных характеристик товара
+||
+||
+[POST v2/businesses/{businessId}/size-tables/suggest](https://yandex.ru/dev/market/partner-api/doc/ru/reference/content/suggestContentSizeTables.md)
+|
+Подбор таблиц размеров
+||
+||
+[POST v2/businesses/{businessId}/size-tables](https://yandex.ru/dev/market/partner-api/doc/ru/reference/content/getContentSizeTables.md)
+|
+Таблицы размеров по идентификаторам
+||
+||
+[POST v2/businesses/{businessId}/size-tables/charts](https://yandex.ru/dev/market/partner-api/doc/ru/reference/content/getContentSizeCharts.md)
+|
+Размерные сетки и обмеры для таблиц размеров
+||
+||
+[POST v2/businesses/{businessId}/size-tables/create](https://yandex.ru/dev/market/partner-api/doc/ru/reference/content/createContentSizeTables.md)
+|
+Создание таблиц размеров
+||
+||
+[POST v2/businesses/{businessId}/size-tables/update](https://yandex.ru/dev/market/partner-api/doc/ru/reference/content/updateContentSizeTables.md)
+|
+Обновление таблиц размеров
 ||
 ||
 [POST v1/businesses/{businessId}/offers/documents/create](https://yandex.ru/dev/market/partner-api/doc/ru/reference/documents/createDocuments.md)
