@@ -2,8 +2,8 @@
 title: Получение акта расхождений
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/shipments/downloadShipmentDiscrepancyAct.md"
-fetched_at: "2026-11-21T02:46:15Z"
-content_sha: 91cde466ab5562be
+fetched_at: "2026-11-24T02:40:06Z"
+content_sha: 94cf622545f6b026
 ---
 
 ---
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/shipments/downloadShipmentDiscrepancyAct.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22228850
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22247986
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22228850
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22247986
 
 <!-- source: ru/api/shipments/downloadShipmentDiscrepancyAct.md -->
 <div class="openapi">

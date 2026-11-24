@@ -2,8 +2,8 @@
 title: Изменение статусов нескольких заказов
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/orders/updateOrderStatuses.md"
-fetched_at: "2026-11-21T02:46:05Z"
-content_sha: 519db32d7aa78d25
+fetched_at: "2026-11-24T02:39:58Z"
+content_sha: 7369d13681153061
 ---
 
 ---
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/orders/updateOrderStatuses.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22228850
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22247986
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22228850
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22247986
 
 <!-- source: ru/api/orders/updateOrderStatuses.md -->
 <div class="openapi">

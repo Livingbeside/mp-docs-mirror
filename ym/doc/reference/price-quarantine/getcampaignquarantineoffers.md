@@ -2,8 +2,8 @@
 title: Список товаров, находящихся в карантине по цене в магазине
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/price-quarantine/getCampaignQuarantineOffers.md"
-fetched_at: "2026-11-21T02:45:58Z"
-content_sha: fbd9086bfd5e45f8
+fetched_at: "2026-11-24T02:39:55Z"
+content_sha: b862490c3093a1a1
 ---
 
 ---
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/price-quarantine/getCampaignQuarantineOffers.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22228850
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22247986
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22228850
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22247986
 
 <!-- source: ru/api/price-quarantine/getCampaignQuarantineOffers.md -->
 <div class="openapi">

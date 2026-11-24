@@ -2,8 +2,8 @@
 title: Создание нового чата с покупателем
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/chats/createChat.md"
-fetched_at: "2026-11-21T02:46:42Z"
-content_sha: d8be7265f44c5e8b
+fetched_at: "2026-11-24T02:40:34Z"
+content_sha: eea96f416b90ee58
 ---
 
 ---
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/chats/createChat.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22228850
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22247986
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22228850
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22247986
 
 <!-- source: ru/api/chats/createChat.md -->
 <div class="openapi">

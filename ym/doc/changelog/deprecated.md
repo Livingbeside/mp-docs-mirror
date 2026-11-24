@@ -2,8 +2,8 @@
 title: Устаревшие методы и параметры
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/changelog/deprecated.md"
-fetched_at: "2026-11-21T02:45:40Z"
-content_sha: 93ed36b80fcc0990
+fetched_at: "2026-11-24T02:39:40Z"
+content_sha: 1361bfc21415a894
 ---
 
 ---
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/changelog/deprecated.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22228850
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22247986
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22228850
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22247986
 
 # Устаревшие методы и параметры
 
@@ -31,6 +31,21 @@ alternate:
 {% endnote %}
 
 <!-- source: ru/_auto/changelog/deprecated.md -->
+<!-- source: ru/_auto/changelog/deprecated/2026-11-20.md -->
+### 20 ноября {#20-11-26}
+
+#|
+|| **Методы или страницы документации**
+ | **Описание изменений**
+ ||
+||
+[GET v2/campaigns/{campaignId}/orders/{orderId}](https://yandex.ru/dev/market/partner-api/doc/ru/reference/orders/getOrder.md)<br> [GET v2/campaigns/{campaignId}/orders](https://yandex.ru/dev/market/partner-api/doc/ru/reference/orders/getOrders.md)<br> [POST v1/businesses/{businessId}/orders](https://yandex.ru/dev/market/partner-api/doc/ru/reference/orders/getBusinessOrders.md)<br> [PUT v2/campaigns/{campaignId}/orders/{orderId}/status](https://yandex.ru/dev/market/partner-api/doc/ru/reference/orders/updateOrderStatus.md)<br> [POST v2/campaigns/{campaignId}/orders/status-update](https://yandex.ru/dev/market/partner-api/doc/ru/reference/orders/updateOrderStatuses.md)
+|
+Удалили значение `COURIER_DELIVERY_POSTPAID_FAILED` из подстатусов заказа. При ошибке отложенной оплаты курьерского заказа API теперь возвращает `COURIER_RECEIVED` в параметре `substatus`.
+||
+|#
+<!-- endsource: ru/_auto/changelog/deprecated/2026-11-20.md -->
+
 <!-- source: ru/_auto/changelog/deprecated/2026-10-27.md -->
 ### 27 октября {#27-10-26}
 
