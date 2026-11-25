@@ -2,8 +2,8 @@
 title: Продление срока хранения заказа
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/order-delivery/updateOrderStorageLimit.md"
-fetched_at: "2026-11-25T02:49:53Z"
-content_sha: 84c488c51f987325
+fetched_at: "2026-11-25T07:28:33Z"
+content_sha: 0258d223c71413fc
 ---
 
 ---
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/order-delivery/updateOrderStorageLimit.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22283548
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22292373
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22283548
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22292373
 
 <!-- source: ru/api/order-delivery/updateOrderStorageLimit.md -->
 <div class="openapi">

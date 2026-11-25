@@ -2,8 +2,8 @@
 title: Логи запросов
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/concepts/debug.md"
-fetched_at: "2026-11-25T02:49:13Z"
-content_sha: 6dd4d9d987fd9a0f
+fetched_at: "2026-11-25T07:28:02Z"
+content_sha: 39681b7b8cbe1829
 ---
 
 ---
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/concepts/debug.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22283548
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22292373
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22283548
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22292373
 
 # Логи запросов
 

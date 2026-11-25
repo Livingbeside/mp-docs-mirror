@@ -2,8 +2,8 @@
 title: Отмена заказа покупателем
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/orders/acceptOrderCancellation.md"
-fetched_at: "2026-11-25T02:49:53Z"
-content_sha: 3477f7251ad10bdd
+fetched_at: "2026-11-25T07:28:34Z"
+content_sha: bd3ad07377fa83e4
 ---
 
 ---
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/orders/acceptOrderCancellation.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22283548
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22292373
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22283548
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22292373
 
 <!-- source: ru/api/orders/acceptOrderCancellation.md -->
 <div class="openapi">
@@ -818,7 +818,7 @@ alternate:
           Обязательный параметр, если вы передаете `accepted="false"`.
         $ref: '#/$defs/OrderCancellationReasonType'
     $defs:
-      /home/sandbox/.ya/build/build_root/o9ik/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/orders/api/acceptOrderCancellation.yaml#/OrderCancellationReasonType:
+      /home/sandbox/.ya/build/build_root/tluq/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/orders/api/acceptOrderCancellation.yaml#/OrderCancellationReasonType:
         description: |
           Варианты причин, по которым заказ не может быть отменен.
   

@@ -2,8 +2,8 @@
 title: Передача решения по возврату
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/returns/submitReturnDecision.md"
-fetched_at: "2026-11-25T02:50:08Z"
-content_sha: 8416367e29960d34
+fetched_at: "2026-11-25T07:28:45Z"
+content_sha: 2a5ae39bdb5e2aa8
 ---
 
 ---
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/returns/submitReturnDecision.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22283548
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22292373
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22283548
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22292373
 
 <!-- source: ru/api/returns/submitReturnDecision.md -->
 <div class="openapi">
@@ -1147,7 +1147,7 @@ alternate:
                 Указывайте только при `decisionType` = `PARTIAL_MONEY_REFUND`.
               $ref: '#/$defs/BasePriceDTO'
     $defs:
-      /home/sandbox/.ya/build/build_root/o9ik/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/returns/schemas.yaml#/ReturnRequestDecisionType:
+      /home/sandbox/.ya/build/build_root/tluq/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/returns/schemas.yaml#/ReturnRequestDecisionType:
         description: >
           Решение по возврату:
   
@@ -1189,7 +1189,7 @@ alternate:
           - DECLINE_REFUND
           - PARTIAL_MONEY_REFUND
           - OTHER_DECISION
-      /home/sandbox/.ya/build/build_root/o9ik/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/returns/schemas.yaml#/ReturnRequestDecisionReasonType:
+      /home/sandbox/.ya/build/build_root/tluq/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/returns/schemas.yaml#/ReturnRequestDecisionReasonType:
         description: >
           Причина отказа:
   
@@ -1218,7 +1218,7 @@ alternate:
           - PRODUCT_APPEARANCE_COMPROMISED
           - WARRANTY_TERMS_VIOLATED
           - DEVICE_ACTIVATED
-      /home/sandbox/.ya/build/build_root/o9ik/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/common/schemas.yaml#/CurrencyType:
+      /home/sandbox/.ya/build/build_root/tluq/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/common/schemas.yaml#/CurrencyType:
         type: string
         description: |
           Коды валют:
@@ -1352,7 +1352,7 @@ alternate:
           - NAD
           - TL
           - UE
-      /home/sandbox/.ya/build/build_root/o9ik/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/common/catalog-common-schemas.yaml#/BasePriceDTO:
+      /home/sandbox/.ya/build/build_root/tluq/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/common/catalog-common-schemas.yaml#/BasePriceDTO:
         description: Цена товара.
         type: object
         required:

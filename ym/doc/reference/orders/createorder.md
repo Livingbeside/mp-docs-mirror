@@ -2,8 +2,8 @@
 title: Создание заказа
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/orders/createOrder.md"
-fetched_at: "2026-11-25T02:49:54Z"
-content_sha: 7382f0a82d8d6820
+fetched_at: "2026-11-25T07:28:35Z"
+content_sha: cc3a001d41add4ec
 ---
 
 ---
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/orders/createOrder.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22283548
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22292373
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22283548
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22292373
 
 <!-- source: ru/api/orders/createOrder.md -->
 <div class="openapi">
@@ -2615,7 +2615,7 @@ alternate:
                   type: boolean
                   description: Признак обязательности услуги.
     $defs:
-      /home/sandbox/.ya/build/build_root/o9ik/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/common/schemas.yaml#/CurrencyType:
+      /home/sandbox/.ya/build/build_root/tluq/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/common/schemas.yaml#/CurrencyType:
         type: string
         description: |
           Коды валют:
@@ -2749,7 +2749,7 @@ alternate:
           - NAD
           - TL
           - UE
-      /home/sandbox/.ya/build/build_root/o9ik/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/orders/schemas.yaml#/OrderVatType:
+      /home/sandbox/.ya/build/build_root/tluq/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/orders/schemas.yaml#/OrderVatType:
         description: >
           НДС на товар или доставку:
   
@@ -2811,7 +2811,7 @@ alternate:
           - VAT_07
           - VAT_22
           - UNKNOWN_VALUE
-      /home/sandbox/.ya/build/build_root/o9ik/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/common/schemas.yaml#/TimeIntervalDTO:
+      /home/sandbox/.ya/build/build_root/tluq/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/common/schemas.yaml#/TimeIntervalDTO:
         type: object
         description: Интервал времени доставки.
         required:

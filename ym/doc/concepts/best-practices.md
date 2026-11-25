@@ -2,8 +2,8 @@
 title: Лучшие практики интеграции с API Яндекс Маркета для продавцов
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/concepts/best-practices.md"
-fetched_at: "2026-11-25T02:49:15Z"
-content_sha: b535403743f6de25
+fetched_at: "2026-11-25T07:28:04Z"
+content_sha: e4fa7e478ca8cbe6
 ---
 
 ---
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/concepts/best-practices.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22283548
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22292373
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22283548
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22292373
 
 # Лучшие практики интеграции с API Яндекс Маркета для продавцов
 

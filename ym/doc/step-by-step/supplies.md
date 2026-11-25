@@ -2,8 +2,8 @@
 title: Заявки на поставку товаров на склад, вывоз или утилизацию
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/supplies.md"
-fetched_at: "2026-11-25T02:49:20Z"
-content_sha: 3077656213656351
+fetched_at: "2026-11-25T07:28:09Z"
+content_sha: debfa23d3c2ce5bd
 ---
 
 ---
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/supplies.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22283548
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22292373
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22283548
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22292373
 
 # Заявки на поставку товаров на склад, вывоз или утилизацию
 

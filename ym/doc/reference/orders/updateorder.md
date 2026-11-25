@@ -2,8 +2,8 @@
 title: Изменение заказа
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/orders/updateOrder.md"
-fetched_at: "2026-11-25T02:49:55Z"
-content_sha: e1454ce0a59098ad
+fetched_at: "2026-11-25T07:28:35Z"
+content_sha: 2e639b22d3331b02
 ---
 
 ---
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/orders/updateOrder.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22283548
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22292373
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22283548
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22292373
 
 <!-- source: ru/api/orders/updateOrder.md -->
 <div class="openapi">
@@ -1365,7 +1365,7 @@ alternate:
             description: Продлить срок хранения заказа в пункте выдачи.
             type: boolean
     $defs:
-      /home/sandbox/.ya/build/build_root/o9ik/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/orders/schemas.yaml#/DeliveryIntervalsUpdateOptionDTO:
+      /home/sandbox/.ya/build/build_root/tluq/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/orders/schemas.yaml#/DeliveryIntervalsUpdateOptionDTO:
         type: object
         description: Интервалы дат и времени.
         required:
@@ -1414,7 +1414,7 @@ alternate:
   
                   Формат: `ЧЧ:ММ`.
                 pattern: ^([0-1][0-9]|2[0-3]):[0-5][0-9]$
-      /home/sandbox/.ya/build/build_root/o9ik/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/common/schemas.yaml#/CustomerDTO:
+      /home/sandbox/.ya/build/build_root/tluq/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/common/schemas.yaml#/CustomerDTO:
         type: object
         description: Данные получателя заказа или отправителя возврата.
         required:
