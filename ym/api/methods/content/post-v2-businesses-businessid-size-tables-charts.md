@@ -14,7 +14,7 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: 57ced3c566aed149
+content_sha: 7d2c895f1053f21e
 ---
 
 # Размерные сетки и обмеры для таблиц размеров
@@ -40,6 +40,10 @@ content_sha: 57ced3c566aed149
 а каждую обязательную сетку в таблице нужно заполнить во всех строках.
 
 Для неизвестного идентификатора размерной характеристики возвращается ошибка `UNKNOWN_SIZE_PARAMETER`.
+
+**Пошаговые инструкции**
+
+* [Таблицы размеров](../../step-by-step/size-tables.md)
 
 {% include notitle [limit](../../_auto/method_limits/getContentSizeCharts.md) %}
 

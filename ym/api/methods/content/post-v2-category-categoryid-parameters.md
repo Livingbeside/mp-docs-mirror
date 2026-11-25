@@ -14,7 +14,7 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: 83a07e9c643a165c
+content_sha: 18c2ce650db9cc16
 ---
 
 # Списки характеристик товаров по категориям
@@ -28,6 +28,11 @@ content_sha: 83a07e9c643a165c
 Поля в ответе определяют правила передачи характеристики в методах:
 - [POST v2/businesses/{businessId}/offer-mappings/update](../../reference/business-offer-mappings/updateOfferMappings.md)
 - [POST v2/businesses/{businessId}/offer-cards/update](../../reference/content/updateOfferContent.md)
+
+**Пошаговые инструкции**
+
+* [Проверить сопоставление характеристик категории](../../step-by-step/content-change.md#check-and-update-comparison)
+* [Передача значений характеристики](../../step-by-step/parameter-values.md)
 
 {% include notitle [limit](../../_auto/method_limits/getCategoryContentParameters.md) %}
 

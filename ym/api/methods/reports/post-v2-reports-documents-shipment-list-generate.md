@@ -10,7 +10,7 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: 93b465f1c9b205b3
+content_sha: dbf53d9f9e03d483
 ---
 
 # Получение листа сборки
@@ -24,6 +24,11 @@ content_sha: 93b465f1c9b205b3
 Чтобы на в листе сборки отображался внешний идентификатор заказа, передайте его в методе [POST v2/campaigns/{campaignId}/orders/{orderId}/external-id](../../reference/orders/updateExternalOrderId.md).
 
 Узнать статус генерации и получить ссылку на готовый документ можно с помощью запроса [GET v2/reports/info/{reportId}](../../reference/reports/getReportInfo.md).
+
+**Пошаговые инструкции**
+
+* [Сформировать лист сборки FBS](../../step-by-step/fbs.md#shipment-list)
+* [Заказать отчёт или документ](../../step-by-step/reports.md#generate)
 
 {% include notitle [limit](../../_auto/method_limits/generateShipmentListDocumentReport.md) %}
 

@@ -10,7 +10,7 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: 50ed383c10d744e6
+content_sha: cff9fc6a280fac25
 ---
 
 # Изменение заказа
@@ -34,6 +34,10 @@ content_sha: 50ed383c10d744e6
 Изменения применяются в течение нескольких минут и только в случае успешного завершения операции. [Как проверить статус операции](../../reference/operations/getOperations.md)
 
 {% endnote %}
+
+**Пошаговые инструкции**
+
+* [Изменить заказ](../../step-by-step/laas-order.md#change)
 
 {% include notitle [limit](../../_auto/method_limits/updateOrder.md) %}
 

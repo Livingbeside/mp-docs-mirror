@@ -14,7 +14,7 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: ee42fd96aef3e1d2
+content_sha: 411a4f86f9bd338f
 ---
 
 # Отчет по счету маркетинга
@@ -28,6 +28,10 @@ content_sha: ee42fd96aef3e1d2
 Узнать статус генерации и получить ссылку на готовый отчет можно с помощью запроса [GET v2/reports/info/{reportId}](../../reference/reports/getReportInfo.md).
 
 {% include notitle [reports](../../_auto/reports/advertiser_billing_operations/advertiser_billing_operations.md) %}
+
+**Пошаговые инструкции**
+
+* [Заказать отчёт или документ](../../step-by-step/reports.md#generate)
 
 {% include notitle [limit](../../_auto/method_limits/generateMarketingDetalizationReport.md) %}
 

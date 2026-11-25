@@ -13,7 +13,7 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: 12c37e6bfc55b46b
+content_sha: f5b0308c0473c700
 ---
 
 # Отчет «Конкурентная позиция»
@@ -35,6 +35,10 @@ content_sha: 12c37e6bfc55b46b
 {% include notitle [reports](../../_auto/reports/masterstat/competitors_position.md) %}
 
 {% include notitle [tariff-period](../../_includes/common/report-data-period-400-days.md) %}
+
+**Пошаговые инструкции**
+
+* [Заказать отчёт или документ](../../step-by-step/reports.md#generate)
 
 {% include notitle [limit](../../_auto/method_limits/generateCompetitorsPositionReport.md) %}
 

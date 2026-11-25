@@ -2,8 +2,8 @@
 title: Информация о товарах, которые размещены в заданном магазине
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/offers/getCampaignOffers.md"
-fetched_at: "2026-11-24T02:39:49Z"
-content_sha: 6c49c88aa20d95b9
+fetched_at: "2026-11-25T02:49:39Z"
+content_sha: 92a448c3c70656b5
 ---
 
 ---
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/offers/getCampaignOffers.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22247986
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22283548
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22247986
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22283548
 
 <!-- source: ru/api/offers/getCampaignOffers.md -->
 <div class="openapi">

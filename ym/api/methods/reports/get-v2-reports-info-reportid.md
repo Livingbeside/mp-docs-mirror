@@ -14,7 +14,7 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: e8206b1b89e7fbe6
+content_sha: 2c32d1af218f7a7c
 ---
 
 # Получение заданного отчета или документа
@@ -25,7 +25,11 @@ content_sha: e8206b1b89e7fbe6
 
 Возвращает статус генерации заданного отчета или документа и, если он готов, ссылку для скачивания.
 
-Чтобы воспользоваться этим запросом, вначале нужно запустить генерацию отчета или документа. [Инструкция](../../step-by-step/reports.md)
+Чтобы воспользоваться этим запросом, вначале нужно запустить генерацию отчета или документа.
+
+**Пошаговые инструкции**
+
+* [Проверить готовность отчёта или документа](../../step-by-step/reports.md#status)
 
 {% include notitle [limit](../../_auto/method_limits/getReportInfo.md) %}
 

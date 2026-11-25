@@ -2,8 +2,8 @@
 title: Получение доступных чатов
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/chats/getChats.md"
-fetched_at: "2026-11-24T02:40:33Z"
-content_sha: 35da669c10671887
+fetched_at: "2026-11-25T02:50:26Z"
+content_sha: 44442966727ac26c
 ---
 
 ---
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/chats/getChats.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22247986
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22283548
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22247986
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22283548
 
 <!-- source: ru/api/chats/getChats.md -->
 <div class="openapi">
@@ -54,6 +54,10 @@ alternate:
   [Как работать с уведомлениями](https://yandex.ru/dev/market/partner-api/doc/ru/push-notifications/index.md)
   
   {% endnote %}
+  
+  **Пошаговые инструкции**
+  
+  * [Чаты с покупателями](https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/chats.md)
   
   <!-- source: ru/_auto/method_limits/getChats.md -->
   |<div style="text-align: left;">**⚙️ Лимит:** 5 000 запросов в час</div>|

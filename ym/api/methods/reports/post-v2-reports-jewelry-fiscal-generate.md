@@ -13,7 +13,7 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: 2c0775de4898b077
+content_sha: 0e703d8379edc38c
 ---
 
 # Отчет по заказам с ювелирными изделиями
@@ -29,6 +29,10 @@ content_sha: 2c0775de4898b077
 {% include notitle [reports](../../_auto/reports/identifiers/jewelry/orders_jewelry_fiscal.md) %}
 
 {% include notitle [tariff-period](../../_includes/common/report-data-period-unchanged.md) %}
+
+**Пошаговые инструкции**
+
+* [Заказать отчёт или документ](../../step-by-step/reports.md#generate)
 
 {% include notitle [limit](../../_auto/method_limits/generateJewelryFiscalReport.md) %}
 

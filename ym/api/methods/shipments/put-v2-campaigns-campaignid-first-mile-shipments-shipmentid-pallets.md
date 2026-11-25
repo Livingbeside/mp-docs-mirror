@@ -10,7 +10,7 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: 767548a7b937bc75
+content_sha: 8372fb6811f59920
 ---
 
 # Передача количества упаковок для доверительной приемки
@@ -30,6 +30,10 @@ content_sha: 767548a7b937bc75
 {% endnote %}
 
 Получить PDF-файл с ярлыками для упаковок можно с помощью метода [GET v2/campaigns/{campaignId}/first-mile/shipments/{shipmentId}/pallet/labels](../../reference/shipments/downloadShipmentPalletLabels.md).
+
+**Пошаговые инструкции**
+
+* [Работа с отгрузкой](../../step-by-step/fbs.md#shipment)
 
 {% include notitle [limit](../../_auto/method_limits/setShipmentPalletsCount.md) %}
 

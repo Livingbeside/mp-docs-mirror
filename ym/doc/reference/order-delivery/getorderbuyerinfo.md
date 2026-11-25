@@ -2,8 +2,8 @@
 title: Информация о покупателе — физическом лице
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/order-delivery/getOrderBuyerInfo.md"
-fetched_at: "2026-11-24T02:40:00Z"
-content_sha: 97e32a74af29a8ee
+fetched_at: "2026-11-25T02:49:53Z"
+content_sha: d6020ae7f458d8e3
 ---
 
 ---
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/order-delivery/getOrderBuyerInfo.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22247986
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22283548
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22247986
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22283548
 
 <!-- source: ru/api/order-delivery/getOrderBuyerInfo.md -->
 <div class="openapi">

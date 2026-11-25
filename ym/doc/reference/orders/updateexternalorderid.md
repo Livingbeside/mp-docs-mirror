@@ -2,8 +2,8 @@
 title: Передача внешнего идентификатора заказа
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/orders/updateExternalOrderId.md"
-fetched_at: "2026-11-24T02:39:57Z"
-content_sha: 4a6dab91dffe4060
+fetched_at: "2026-11-25T02:49:50Z"
+content_sha: 769b6e88fc33bd19
 ---
 
 ---
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/orders/updateExternalOrderId.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22247986
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22283548
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22247986
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22283548
 
 <!-- source: ru/api/orders/updateExternalOrderId.md -->
 <div class="openapi">
@@ -58,6 +58,11 @@ alternate:
   Если во внешнем идентификаторе вы используете другие символы, на ярлыке в штрихкоде будет отображаться идентификатор заказа Маркета.
   
   {% endnote %}
+  
+  **Пошаговые инструкции**
+  
+  * [Передать внешний идентификатор FBS-заказа](https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/fbs.md#fulfillment)
+  * [Передать внешний идентификатор Экспресс-заказа](https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/express.md#label)
   
   <!-- source: ru/_auto/method_limits/updateExternalOrderId.md -->
   |<div style="text-align: left;">**⚙️ Лимит:** 1 000 запросов в час</div>|

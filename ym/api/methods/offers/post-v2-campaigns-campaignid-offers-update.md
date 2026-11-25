@@ -14,7 +14,7 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: c0d658eaf4bac3c7
+content_sha: f61464d42c433d7a
 ---
 
 # Изменение условий продажи товаров в магазине
@@ -24,6 +24,10 @@ content_sha: c0d658eaf4bac3c7
 {% include notitle [access](../../_auto/method_scopes/updateCampaignOffers.md) %}
 
 Изменяет параметры размещения товаров в конкретном магазине: доступность товара и применяемый НДС.
+
+**Пошаговые инструкции**
+
+* [Добавить новые товары в каталог](../../step-by-step/assortment-add-goods.md#add)
 
 {% include notitle [limit](../../_auto/method_limits/updateCampaignOffers.md) %}
 

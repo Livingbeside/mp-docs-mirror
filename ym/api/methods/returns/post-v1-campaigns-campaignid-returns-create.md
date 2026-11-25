@@ -10,7 +10,7 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: b802ad82f9bc2996
+content_sha: 7c7a607b6a9a570f
 ---
 
 # Создание возврата
@@ -28,6 +28,10 @@ content_sha: b802ad82f9bc2996
 Проверьте, подходят ли пункты выдачи для возврата указанных товаров, — [POST v1/campaigns/{campaignId}/return-delivery-options](../../reference/delivery-options/getReturnDeliveryOptions.md).
 
 {% endnote %}
+
+**Пошаговые инструкции**
+
+* [Создать возврат LaaS](../../step-by-step/laas-return.md#create)
 
 {% include notitle [limit](../../_auto/method_limits/createReturn.md) %}
 

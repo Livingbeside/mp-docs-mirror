@@ -12,7 +12,7 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: 69019a259ee76b14
+content_sha: 30717586833d6c70
 ---
 
 # Информация об остатках
@@ -28,6 +28,10 @@ content_sha: 69019a259ee76b14
 Если в кабинете есть группы складов, используйте метод [POST v2/campaigns/{campaignId}/offers/stocks](../../reference/stocks/getStocks.md). [Что такое группы складов и зачем они нужны](https://yandex.ru/support/marketplace/assortment/operations/stocks.html#unified-stocks).
 
 {% endnote %}
+
+**Пошаговые инструкции**
+
+* [Если в кабинете нет групп складов](../../step-by-step/stocks.md#no-warehouse-groups)
 
 {% include notitle [limit](../../_auto/method_limits/getStocksOnPartnerWarehouses.md) %}
 

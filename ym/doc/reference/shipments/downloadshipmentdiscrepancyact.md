@@ -2,8 +2,8 @@
 title: Получение акта расхождений
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/shipments/downloadShipmentDiscrepancyAct.md"
-fetched_at: "2026-11-24T02:40:06Z"
-content_sha: 94cf622545f6b026
+fetched_at: "2026-11-25T02:49:58Z"
+content_sha: 9d9770878080af07
 ---
 
 ---
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/shipments/downloadShipmentDiscrepancyAct.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22247986
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22283548
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22247986
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22283548
 
 <!-- source: ru/api/shipments/downloadShipmentDiscrepancyAct.md -->
 <div class="openapi">
@@ -39,7 +39,9 @@ alternate:
   {% cut "**Если вы используете API-Key-токен, для вызова метода необходим один из доступов в списке**" %}
 
   * inventory-and-order-processing — [Обработка заказов и учёт товаров](https://yandex.ru/dev/market/partner-api/doc/ru/_auto/scopes_summary/pages/inventory-and-order-processing.md)
+  * inventory-and-order-processing:read-only — [Просмотр информации о заказах](https://yandex.ru/dev/market/partner-api/doc/ru/_auto/scopes_summary/pages/inventory-and-order-processing_read-only.md)
   * all-methods — Полное управление кабинетом
+  * all-methods:read-only — Просмотр всех данных
 
   {% endcut %}
   <!-- endsource: ru/_auto/method_scopes/downloadShipmentDiscrepancyAct.md -->

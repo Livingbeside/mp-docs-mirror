@@ -12,7 +12,7 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: 060616f1bce14810
+content_sha: f87c3d4d04bfc06f
 ---
 
 # Подготовка заказа
@@ -300,6 +300,12 @@ content_sha: 060616f1bce14810
  ```
 
 {% endcut %}
+
+**Пошаговые инструкции**
+
+* [Обработка FBS-заказов](../../step-by-step/fbs.md)
+* [Обработка Экспресс-заказов](../../step-by-step/express.md)
+* [Передать маркировку для заказа от юридического лица](../../step-by-step/business-info.md)
 
 {% include notitle [limit](../../_auto/method_limits/setOrderBoxLayout.md) %}
 

@@ -2,8 +2,8 @@
 title: Получение заявления на возврат
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/returns/getReturnApplication.md"
-fetched_at: "2026-11-24T02:40:15Z"
-content_sha: c2e31c3c34d912ea
+fetched_at: "2026-11-25T02:50:08Z"
+content_sha: 002781f600f6944a
 ---
 
 ---
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/returns/getReturnApplication.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22247986
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22283548
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22247986
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22283548
 
 <!-- source: ru/api/returns/getReturnApplication.md -->
 <div class="openapi">
@@ -47,6 +47,10 @@ alternate:
   <!-- endsource: ru/_auto/method_scopes/getReturnApplication.md -->
   
   Загружает заявление покупателя на возврат товара.
+  
+  **Пошаговые инструкции**
+  
+  * [Как работать с невыкупами и возвратами](https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/returns.md#new-return)
   
   <!-- source: ru/_auto/method_limits/getReturnApplication.md -->
   |<div style="text-align: left;">**⚙️ Лимит:** 5 000 запросов в час</div>|

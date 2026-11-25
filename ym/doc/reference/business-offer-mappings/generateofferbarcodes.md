@@ -2,8 +2,8 @@
 title: Генерация штрихкодов
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/business-offer-mappings/generateOfferBarcodes.md"
-fetched_at: "2026-11-24T02:39:43Z"
-content_sha: 3d73368b94c87df4
+fetched_at: "2026-11-25T02:49:32Z"
+content_sha: 24c9028c7055d4de
 ---
 
 ---
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/business-offer-mappings/generateOfferBarcodes.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22247986
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22283548
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22247986
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22283548
 
 <!-- source: ru/api/business-offer-mappings/generateOfferBarcodes.md -->
 <div class="openapi">
@@ -47,6 +47,10 @@ alternate:
   Генерирует штрихкоды и присваивает их указанным товарам.
   
   Если у товара на упаковке уже есть штрихкод производителя, передайте его в параметре `barcodes` в методе [POST v2/businesses/{businessId}/offer-mappings/update](https://yandex.ru/dev/market/partner-api/doc/ru/reference/business-offer-mappings/updateOfferMappings.md). Генерировать новый не нужно.
+  
+  **Пошаговые инструкции**
+  
+  * [Сгенерировать штрихкоды при добавлении товаров](https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/assortment-add-goods.md#add)
   
   <!-- source: ru/_auto/method_limits/generateOfferBarcodes.md -->
   |<div style="text-align: left;">**⚙️ Лимит без подписки:** 5 000 товаров в минуту<br>**⭐️ [Лимит с подпиской Медиум](https://yandex.ru/support/marketplace/ru/marketing/subscription):** 10 000 товаров в минуту</div>|

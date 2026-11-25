@@ -14,7 +14,7 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: 69d0d64ef84679db
+content_sha: 8bd838bf6097d96c
 ---
 
 # Отчет по схождению с закрывающими документами
@@ -38,6 +38,10 @@ content_sha: 69d0d64ef84679db
  {% include notitle [reports](../../_auto/reports/period_closure/period_closure_outcome.md) %}
 
 {% endlist %}
+
+**Пошаговые инструкции**
+
+* [Заказать отчёт или документ](../../step-by-step/reports.md#generate)
 
 {% include notitle [limit](../../_auto/method_limits/generateClosureDocumentsDetalizationReport.md) %}
 

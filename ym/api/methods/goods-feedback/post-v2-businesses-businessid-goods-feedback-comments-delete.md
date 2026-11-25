@@ -13,7 +13,7 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: 30fa2c62be98a144
+content_sha: 4dd18f031aa7c100
 ---
 
 # Удаление комментария к отзыву
@@ -23,6 +23,10 @@ content_sha: 30fa2c62be98a144
 {% include notitle [access](../../_auto/method_scopes/deleteGoodsFeedbackComment.md) %}
 
 Удаляет комментарий магазина.
+
+**Пошаговые инструкции**
+
+* [Удалить свой комментарий](../../step-by-step/goods-feedback.md#delete)
 
 {% include notitle [limit](../../_auto/method_limits/deleteGoodsFeedbackComment.md) %}
 

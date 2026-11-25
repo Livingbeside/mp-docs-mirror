@@ -13,7 +13,7 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: c78c2d031c935ad6
+content_sha: 0bed3112f62a5c88
 ---
 
 # Информация о документах
@@ -25,6 +25,10 @@ content_sha: c78c2d031c935ad6
 Возвращает информацию о документах по идентификатору заказа.
 
 Получить данные можно после того, как заказ перейдет в статус `DELIVERED`.
+
+**Пошаговые инструкции**
+
+* [Как получить информацию о документах](../../step-by-step/business-info.md#documents-info)
 
 {% include notitle [limit](../../_auto/method_limits/getOrderBusinessDocumentsInfo.md) %}
 

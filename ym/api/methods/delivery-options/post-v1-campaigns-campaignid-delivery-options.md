@@ -10,7 +10,7 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: 2d8e413f7746234e
+content_sha: 8c21d7212f65a3b3
 ---
 
 # Получение доступных вариантов доставки заказов
@@ -22,6 +22,10 @@ content_sha: 2d8e413f7746234e
 Возвращает список вариантов для доставки заказов. Выберите подходящий вариант доставки из ответа и передайте его при создании заказа.
 
 Укажите `courierDelivery` для курьерской доставки или `pickupDelivery` для доставки в пункт выдачи. Не передавайте оба параметра одновременно.
+
+**Пошаговые инструкции**
+
+* [Создать заказ LaaS](../../step-by-step/laas-order.md#create)
 
 {% include notitle [limit](../../_auto/method_limits/getDeliveryOptions.md) %}
 

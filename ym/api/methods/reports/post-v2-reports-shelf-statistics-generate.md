@@ -13,7 +13,7 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: a36c98edd29638aa
+content_sha: fa31c8b65e613e05
 ---
 
 # Отчет по полкам
@@ -33,6 +33,10 @@ content_sha: a36c98edd29638aa
 {% include notitle [tariff-period](../../_includes/common/report-data-period-400-days.md) %}
 
 {% endif %}
+
+**Пошаговые инструкции**
+
+* [Заказать отчёт или документ](../../step-by-step/reports.md#generate)
 
 {% include notitle [limit](../../_auto/method_limits/generateShelfsStatisticsReport.md) %}
 

@@ -2,8 +2,8 @@
 title: Удаление товара из карантина по цене в магазине
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/price-quarantine/confirmCampaignPrices.md"
-fetched_at: "2026-11-24T02:39:55Z"
-content_sha: e643d48913af7503
+fetched_at: "2026-11-25T02:49:47Z"
+content_sha: 7c6f895208c402f2
 ---
 
 ---
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/price-quarantine/confirmCampaignPrices.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22247986
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22283548
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22247986
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22283548
 
 <!-- source: ru/api/price-quarantine/confirmCampaignPrices.md -->
 <div class="openapi">
@@ -49,6 +49,10 @@ alternate:
   Товар попадает в карантин, если его цена меняется слишком резко. [Как настроить карантин](https://yandex.ru/support/marketplace/assortment/operations/prices.html#quarantine)
   
   Чтобы увидеть список товаров, которые попали в карантин, используйте запрос [POST v2/campaigns/{campaignId}/price-quarantine](https://yandex.ru/dev/market/partner-api/doc/ru/api/price-quarantine/getCampaignQuarantineOffers.md).
+  
+  **Пошаговые инструкции**
+  
+  * [Как изменить цены на товары](https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/assortment-change-prices.md)
   
   <!-- source: ru/_auto/method_limits/confirmCampaignPrices.md -->
   |<div style="text-align: left;">**⚙️ Лимит без подписки:** 5 000 товаров в минуту<br>**⭐️ [Лимит с подпиской Медиум](https://yandex.ru/support/marketplace/ru/marketing/subscription):** 10 000 товаров в минуту</div>|

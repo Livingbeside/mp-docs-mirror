@@ -2,8 +2,8 @@
 title: Размерные сетки и обмеры для таблиц размеров
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/content/getContentSizeCharts.md"
-fetched_at: "2026-11-24T02:39:47Z"
-content_sha: da8b6615bab6a7db
+fetched_at: "2026-11-25T02:49:36Z"
+content_sha: 9e21c0999038bbab
 ---
 
 ---
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/content/getContentSizeCharts.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22247986
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22283548
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22247986
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22283548
 
 <!-- source: ru/api/content/getContentSizeCharts.md -->
 <div class="openapi">
@@ -63,6 +63,10 @@ alternate:
   а каждую обязательную сетку в таблице нужно заполнить во всех строках.
   
   Для неизвестного идентификатора размерной характеристики возвращается ошибка `UNKNOWN_SIZE_PARAMETER`.
+  
+  **Пошаговые инструкции**
+  
+  * [Таблицы размеров](https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/size-tables.md)
   
   <!-- source: ru/_auto/method_limits/getContentSizeCharts.md -->
   |<div style="text-align: left;">**⚙️ Лимит:** 100 запросов в минуту</div>|

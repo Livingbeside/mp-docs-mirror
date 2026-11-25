@@ -13,7 +13,7 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: cebf91342172b6ac
+content_sha: 07c9c8b9e7ef7dfa
 ---
 
 # Включение буста продаж и установка ставок
@@ -55,6 +55,10 @@ content_sha: cebf91342172b6ac
 Это занимает до нескольких минут.
 
 {% endnote %}
+
+**Пошаговые инструкции**
+
+* [Работа с бустом продаж](../../step-by-step/boost.md)
 
 {% include notitle [limit](../../_auto/method_limits/putBidsForBusiness.md) %}
 

@@ -2,8 +2,8 @@
 title: Получение статусов операций
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/operations/getOperations.md"
-fetched_at: "2026-11-24T02:40:04Z"
-content_sha: a03d730994dc2d3e
+fetched_at: "2026-11-25T02:49:56Z"
+content_sha: 674cc253ff7f9230
 ---
 
 ---
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/operations/getOperations.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22247986
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22283548
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22247986
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22283548
 
 <!-- source: ru/api/operations/getOperations.md -->
 <div class="openapi">
@@ -59,6 +59,11 @@ alternate:
   <!-- endsource: ru/_auto/method_scopes/getOperations.md -->
   
   Возвращает статусы запущенных операций по их идентификаторам.
+  
+  **Пошаговые инструкции**
+  
+  * [Работа с LaaS-заказом](https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/laas-order.md)
+  * [Проверить завершение операции отмены возврата](https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/laas-return.md#cancel)
   
   <!-- source: ru/_auto/method_limits/getOperations.md -->
   |<div style="text-align: left;">**⚙️ Лимит:** 1 000 запросов в час</div>|

@@ -2,8 +2,8 @@
 title: Все обновления
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/changelog/all.md"
-fetched_at: "2026-11-24T02:39:40Z"
-content_sha: 8f4f2c1e899142eb
+fetched_at: "2026-11-25T02:49:29Z"
+content_sha: dc2d442afb431122
 ---
 
 ---
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/changelog/all.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22247986
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22283548
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22247986
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22283548
 
 # Все обновления
 
@@ -31,6 +31,21 @@ alternate:
 {% endnote %}
 
 <!-- source: ru/_auto/changelog/all.md -->
+<!-- source: ru/_auto/changelog/all/2026-11-23.md -->
+### 23 ноября {#23-11-26}
+
+#|
+|| **Методы или страницы документации**
+ | **Описание изменений**
+ ||
+||
+[GET v2/campaigns/{campaignId}/first-mile/shipments/{shipmentId}/act](https://yandex.ru/dev/market/partner-api/doc/ru/reference/shipments/downloadShipmentAct.md)<br> [GET v2/campaigns/{campaignId}/first-mile/shipments/{shipmentId}/inbound-act](https://yandex.ru/dev/market/partner-api/doc/ru/reference/shipments/downloadShipmentInboundAct.md)<br> [GET v2/campaigns/{campaignId}/first-mile/shipments/{shipmentId}/transportation-waybill](https://yandex.ru/dev/market/partner-api/doc/ru/reference/shipments/downloadShipmentTransportationWaybill.md)<br> [GET v2/campaigns/{campaignId}/first-mile/shipments/{shipmentId}/discrepancy-act](https://yandex.ru/dev/market/partner-api/doc/ru/reference/shipments/downloadShipmentDiscrepancyAct.md)<br> [GET v2/campaigns/{campaignId}/first-mile/shipments/{shipmentId}/pallet/labels](https://yandex.ru/dev/market/partner-api/doc/ru/reference/shipments/downloadShipmentPalletLabels.md)<br> [GET v2/campaigns/{campaignId}/orders/{orderId}/delivery/labels](https://yandex.ru/dev/market/partner-api/doc/ru/reference/order-labels/generateOrderLabels.md)<br> [GET v2/campaigns/{campaignId}/orders/{orderId}/delivery/shipments/{shipmentId}/boxes/{boxId}/label](https://yandex.ru/dev/market/partner-api/doc/ru/reference/order-labels/generateOrderLabel.md)
+|
+Для скачивания документов по отгрузкам и ярлыков теперь подходят API-ключи с одним из двух доступов на чтение — `all-methods:read-only` или `inventory-and-order-processing:read-only`.
+||
+|#
+<!-- endsource: ru/_auto/changelog/all/2026-11-23.md -->
+
 <!-- source: ru/_auto/changelog/all/2026-11-20.md -->
 ### 20 ноября {#20-11-26}
 

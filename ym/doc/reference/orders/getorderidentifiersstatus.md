@@ -2,8 +2,8 @@
 title: Статусы проверки кодов маркировки
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/orders/getOrderIdentifiersStatus.md"
-fetched_at: "2026-11-24T02:39:58Z"
-content_sha: 1045ddb0401dff89
+fetched_at: "2026-11-25T02:49:51Z"
+content_sha: 617a775a4e645a6d
 ---
 
 ---
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/orders/getOrderIdentifiersStatus.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22247986
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22283548
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22247986
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22283548
 
 <!-- source: ru/api/orders/getOrderIdentifiersStatus.md -->
 <div class="openapi">
@@ -56,6 +56,11 @@ alternate:
   
       * коды маркировки в системе «Честный ЗНАК» по всем товарам в заказе, для которых она обязательна.
   2. Все коды маркировки успешно пройдут проверку.
+  
+  **Пошаговые инструкции**
+  
+  * [Проверить коды маркировки FBS-заказа](https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/fbs.md#order-info)
+  * [Проверить коды маркировки Экспресс-заказа](https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/express.md#marking-codes)
   
   <!-- source: ru/_auto/method_limits/getOrderIdentifiersStatus.md -->
   |<div style="text-align: left;">**⚙️ Лимит:** 1 000 запросов в час</div>|

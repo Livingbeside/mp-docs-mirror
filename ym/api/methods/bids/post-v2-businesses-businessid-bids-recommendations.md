@@ -13,7 +13,7 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: 61006975c7073334
+content_sha: b07f881386bd173d
 ---
 
 # Рекомендованные ставки для заданных товаров
@@ -29,6 +29,10 @@ content_sha: 61006975c7073334
 Если товар только добавлен в каталог, но пока не продается, рекомендованной ставки для него не будет.
 
 В одном запросе может быть максимум 1500 товаров.
+
+**Пошаговые инструкции**
+
+* [Как получить рекомендованные ставки](../../step-by-step/boost.md#recommendations)
 
 {% include notitle [limit](../../_auto/method_limits/getBidsRecommendations.md) %}
 

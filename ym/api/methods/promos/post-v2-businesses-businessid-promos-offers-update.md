@@ -13,7 +13,7 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: dbbd2ffe63f50a9d
+content_sha: 818304a0654162e5
 ---
 
 # Добавление товаров в акцию или изменение их цен
@@ -25,6 +25,10 @@ content_sha: dbbd2ffe63f50a9d
 Добавляет товары в акцию или изменяет цены на товары, которые участвуют в акции.
 
 Изменения начинают действовать в течение 4–6 часов. Узнать, применились ли они, можно с помощью параметра `processing` в ответе метода [POST v2/businesses/{businessId}/promos](../../reference/promos/getPromos.md).
+
+**Пошаговые инструкции**
+
+* [Управление акциями](../../step-by-step/promos.md)
 
 {% include notitle [limit](../../_auto/method_limits/updatePromoOffers.md) %}
 

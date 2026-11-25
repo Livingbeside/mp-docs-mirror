@@ -14,7 +14,7 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: b37b6745e45c88a4
+content_sha: 261e1f3079f8907d
 ---
 
 # Таблицы размеров по идентификаторам
@@ -37,6 +37,10 @@ content_sha: b37b6745e45c88a4
 
 Идентификаторы, по которым таблицу вернуть не удалось — такой таблицы нет или она
 принадлежит другому бизнесу, — возвращаются в `notFoundSizeTableIds` на первой странице.
+
+**Пошаговые инструкции**
+
+* [Таблицы размеров](../../step-by-step/size-tables.md)
 
 {% include notitle [limit](../../_auto/method_limits/getContentSizeTables.md) %}
 

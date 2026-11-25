@@ -13,7 +13,7 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: d7ff14ca37892b00
+content_sha: 8f329b104b7d782f
 ---
 
 # Получение комментариев к отзыву
@@ -44,6 +44,10 @@ content_sha: d7ff14ca37892b00
 Результаты возвращаются постранично.
 
 Комментарии расположены в порядке публикации, поэтому вы можете передавать определенный идентификатор страницы в `pageToken`, если вы получали его ранее.
+
+**Пошаговые инструкции**
+
+* [Отзывы о товарах](../../step-by-step/goods-feedback.md)
 
 {% include notitle [limit](../../_auto/method_limits/getGoodsFeedbackComments.md) %}
 

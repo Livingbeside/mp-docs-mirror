@@ -10,7 +10,7 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: 25ef60800fc0edea
+content_sha: c1bb37cac3c61f9d
 ---
 
 # Ярлыки для доверительной приемки
@@ -24,6 +24,10 @@ PDF-файл с ярлыками на каждую упаковку в отгр�
 Распечатайте по несколько копий каждого ярлыка: на одну упаковку нужно наклеить минимум 2 ярлыка с разных сторон.
 
 Количество упаковок в отгрузке передается в методе [PUT v2/campaigns/{campaignId}/first-mile/shipments/{shipmentId}/pallets](../../reference/shipments/setShipmentPalletsCount.md).
+
+**Пошаговые инструкции**
+
+* [Работа с отгрузкой](../../step-by-step/fbs.md#shipment)
 
 {% include notitle [limit](../../_auto/method_limits/downloadShipmentPalletLabels.md) %}
 

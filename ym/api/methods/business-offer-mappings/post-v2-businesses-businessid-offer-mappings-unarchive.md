@@ -13,7 +13,7 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: 8ab6c5bbae4f28e5
+content_sha: 3de5c031852b0554
 ---
 
 # Удаление товаров из архива
@@ -23,6 +23,10 @@ content_sha: 8ab6c5bbae4f28e5
 {% include notitle [access](../../_auto/method_scopes/deleteOffersFromArchive.md) %}
 
 Восстанавливает товары из архива.
+
+**Пошаговые инструкции**
+
+* [Управление товарами в архиве](../../step-by-step/assortment-archive.md)
 
 {% include notitle [limit](../../_auto/method_limits/deleteOffersFromArchive.md) %}
 

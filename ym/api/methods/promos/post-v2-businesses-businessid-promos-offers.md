@@ -13,7 +13,7 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: 28681b62e3541adb
+content_sha: 6d32d00cedd699fe
 ---
 
 # Получение списка товаров, которые участвуют или могут участвовать в акции
@@ -31,6 +31,10 @@ content_sha: 28681b62e3541adb
 Установленные цены меняться не будут — `price` и `promoPrice`.
 
 {% endnote %}
+
+**Пошаговые инструкции**
+
+* [Управление акциями](../../step-by-step/promos.md)
 
 {% include notitle [limit](../../_auto/method_limits/getPromoOffers.md) %}
 

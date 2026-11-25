@@ -12,7 +12,7 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: 5f7ecee4e6058c9b
+content_sha: 8a678fa2a67c5191
 ---
 
 # Статусы проверки кодов маркировки
@@ -31,6 +31,11 @@ content_sha: 5f7ecee4e6058c9b
 
  * коды маркировки в системе :no-translate[«Честный ЗНАК»] по всем товарам в заказе, для которых она обязательна.
 2. Все коды маркировки успешно пройдут проверку.
+
+**Пошаговые инструкции**
+
+* [Проверить коды маркировки FBS-заказа](../../step-by-step/fbs.md#order-info)
+* [Проверить коды маркировки Экспресс-заказа](../../step-by-step/express.md#marking-codes)
 
 {% include notitle [limit](../../_auto/method_limits/getOrderIdentifiersStatus.md) %}
 

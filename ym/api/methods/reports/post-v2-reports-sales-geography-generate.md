@@ -13,7 +13,7 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: 9ab22df168f10515
+content_sha: f4077e6721fd8dbf
 ---
 
 # Отчет по географии продаж
@@ -29,6 +29,10 @@ content_sha: 9ab22df168f10515
 {% include notitle [reports](../../_auto/reports/locality/locality_offers_report_v2.md) %}
 
 {% include notitle [tariff-period](../../_includes/common/report-data-period-400-days.md) %}
+
+**Пошаговые инструкции**
+
+* [Заказать отчёт или документ](../../step-by-step/reports.md#generate)
 
 {% include notitle [limit](../../_auto/method_limits/generateSalesGeographyReport.md) %}
 

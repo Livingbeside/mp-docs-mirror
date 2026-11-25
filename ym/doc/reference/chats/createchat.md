@@ -2,8 +2,8 @@
 title: Создание нового чата с покупателем
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/chats/createChat.md"
-fetched_at: "2026-11-24T02:40:34Z"
-content_sha: eea96f416b90ee58
+fetched_at: "2026-11-25T02:50:26Z"
+content_sha: 281b4785685a2000
 ---
 
 ---
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/chats/createChat.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22247986
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22283548
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22247986
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22283548
 
 <!-- source: ru/api/chats/createChat.md -->
 <div class="openapi">
@@ -50,6 +50,10 @@ alternate:
   
   * по заказам;
   * по возвратам (доступны только для FBY-, FBS- и Экспресс-магазинов).
+  
+  **Пошаговые инструкции**
+  
+  * [Начать чат с покупателем](https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/chats.md#create)
   
   <!-- source: ru/_auto/method_limits/createChat.md -->
   |<div style="text-align: left;">**⚙️ Лимит:** 1 000 запросов в час</div>|

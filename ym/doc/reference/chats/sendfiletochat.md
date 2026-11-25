@@ -2,8 +2,8 @@
 title: Отправка файла в чат
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/chats/sendFileToChat.md"
-fetched_at: "2026-11-24T02:40:35Z"
-content_sha: d33746fb45ac89fb
+fetched_at: "2026-11-25T02:50:27Z"
+content_sha: 7e99dd3b21e34b29
 ---
 
 ---
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/chats/sendFileToChat.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22247986
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22283548
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22247986
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22283548
 
 <!-- source: ru/api/chats/sendFileToChat.md -->
 <div class="openapi">
@@ -45,6 +45,10 @@ alternate:
   <!-- endsource: ru/_auto/method_scopes/sendFileToChat.md -->
   
   Отправляет файл в чат с покупателем.
+  
+  **Пошаговые инструкции**
+  
+  * [Чаты с покупателями](https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/chats.md)
   
   <!-- source: ru/_auto/method_limits/sendFileToChat.md -->
   |<div style="text-align: left;">**⚙️ Лимит:** 1 000 запросов в час</div>|

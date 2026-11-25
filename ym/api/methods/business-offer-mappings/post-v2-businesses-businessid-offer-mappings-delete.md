@@ -14,7 +14,7 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: 4056205d034a4061
+content_sha: 29b462c165793df3
 ---
 
 # Удаление товаров из каталога
@@ -24,6 +24,10 @@ content_sha: 4056205d034a4061
 {% include notitle [access](../../_auto/method_scopes/deleteOffers.md) %}
 
 Удаляет товары из каталога.
+
+**Пошаговые инструкции**
+
+* [Удаление товаров из каталога](../../step-by-step/assortment-add-goods.md#deletion)
 
 {% include notitle [limit](../../_auto/method_limits/deleteOffers.md) %}
 

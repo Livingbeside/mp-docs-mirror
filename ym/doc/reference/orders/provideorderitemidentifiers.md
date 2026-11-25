@@ -2,8 +2,8 @@
 title: Передача кодов маркировки единиц товара
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/orders/provideOrderItemIdentifiers.md"
-fetched_at: "2026-11-24T02:39:58Z"
-content_sha: b49129d23468db9b
+fetched_at: "2026-11-25T02:49:51Z"
+content_sha: 058931b063bfe606
 ---
 
 ---
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/orders/provideOrderItemIdentifiers.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22247986
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22283548
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22247986
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22283548
 
 <!-- source: ru/api/orders/provideOrderItemIdentifiers.md -->
 <div class="openapi">
@@ -63,6 +63,10 @@ alternate:
   * РНПТ и ГТД для импортных прослеживаемых товаров.
   
   Для каждой позиции в заказе, требующей маркировки, нужно передать список кодов — по одному для каждой единицы товара. Например, если в заказе две пары тапочек и одна пара туфель, получится список из двух кодов для первой позиции и список из одного кода для второй.
+  
+  **Пошаговые инструкции**
+  
+  * [Передать маркировку для заказа от юридического лица](https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/business-info.md)
   
   <!-- source: ru/_auto/method_limits/provideOrderItemIdentifiers.md -->
   |<div style="text-align: left;">**⚙️ Лимит:** 10 000 запросов в час</div>|

@@ -2,8 +2,8 @@
 title: Таблицы размеров по идентификаторам
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/content/getContentSizeTables.md"
-fetched_at: "2026-11-24T02:39:46Z"
-content_sha: 50b0910611d3aaae
+fetched_at: "2026-11-25T02:49:35Z"
+content_sha: 505f9359353a59d5
 ---
 
 ---
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/content/getContentSizeTables.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22247986
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22283548
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22247986
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22283548
 
 <!-- source: ru/api/content/getContentSizeTables.md -->
 <div class="openapi">
@@ -60,6 +60,10 @@ alternate:
   
   Идентификаторы, по которым таблицу вернуть не удалось — такой таблицы нет или она
   принадлежит другому бизнесу, — возвращаются в `notFoundSizeTableIds` на первой странице.
+  
+  **Пошаговые инструкции**
+  
+  * [Таблицы размеров](https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/size-tables.md)
   
   <!-- source: ru/_auto/method_limits/getContentSizeTables.md -->
   |<div style="text-align: left;">**⚙️ Лимит:** 100 запросов в минуту</div>|

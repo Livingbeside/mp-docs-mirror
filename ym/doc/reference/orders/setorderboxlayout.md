@@ -2,8 +2,8 @@
 title: Подготовка заказа
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/orders/setOrderBoxLayout.md"
-fetched_at: "2026-11-24T02:39:57Z"
-content_sha: 746c3048788690cb
+fetched_at: "2026-11-25T02:49:49Z"
+content_sha: d36a00c94445f431
 ---
 
 ---
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/orders/setOrderBoxLayout.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22247986
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22283548
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22247986
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22283548
 
 <!-- source: ru/api/orders/setOrderBoxLayout.md -->
 <div class="openapi">
@@ -323,6 +323,12 @@ alternate:
     ```
   
   {% endcut %}
+  
+  **Пошаговые инструкции**
+  
+  * [Обработка FBS-заказов](https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/fbs.md)
+  * [Обработка Экспресс-заказов](https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/express.md)
+  * [Передать маркировку для заказа от юридического лица](https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/business-info.md)
   
   <!-- source: ru/_auto/method_limits/setOrderBoxLayout.md -->
   |<div style="text-align: left;">**⚙️ Лимит:** 10 000 запросов в час</div>|
@@ -1829,7 +1835,7 @@ alternate:
         type: boolean
         default: false
     $defs:
-      /home/sandbox/.ya/build/build_root/mib9/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/orders/api/setOrderBoxLayout.yaml#/OrderBoxLayoutPartialCountDTO:
+      /home/sandbox/.ya/build/build_root/o9ik/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/orders/api/setOrderBoxLayout.yaml#/OrderBoxLayoutPartialCountDTO:
         description: Информация о части товара в коробке.
         type: object
         required:

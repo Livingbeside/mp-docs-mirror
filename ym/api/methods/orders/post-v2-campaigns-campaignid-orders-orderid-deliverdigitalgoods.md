@@ -10,7 +10,7 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: af0453f8ce4e7f04
+content_sha: 60b2ee266843fd7a
 ---
 
 # Передача ключей цифровых товаров
@@ -60,6 +60,10 @@ content_sha: af0453f8ce4e7f04
 }
 ```
 {% endcut %}
+
+**Пошаговые инструкции**
+
+* [Обработка заказов с цифровыми товарами](../../step-by-step/digital.md)
 
 {% include notitle [limit](../../_auto/method_limits/provideOrderDigitalCodes.md) %}
 

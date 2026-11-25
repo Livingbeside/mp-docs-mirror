@@ -14,7 +14,7 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: 32d6e49aa8ffafd3
+content_sha: 1280da35c00b6f75
 ---
 
 # Информация о товарах в каталоге
@@ -31,6 +31,10 @@ content_sha: 32d6e49aa8ffafd3
 * не передавать тело запроса, чтобы получить список всех товаров в каталоге.
 
 Чтобы получить категорийные характеристики товаров, воспользуйтесь методом [POST v2/businesses/{businessId}/offer-cards](../../reference/content/getOfferCardsContentStatus.md).
+
+**Пошаговые инструкции**
+
+* [Посмотреть товары в архиве](../../step-by-step/assortment-archive.md)
 
 {% include notitle [limit](../../_auto/method_limits/getOfferMappings.md) %}
 

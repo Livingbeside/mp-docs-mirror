@@ -2,8 +2,8 @@
 title: Рекомендованные ставки для заданных товаров
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/bids/getBidsRecommendations.md"
-fetched_at: "2026-11-24T02:40:31Z"
-content_sha: e03b1d49d21d6e1d
+fetched_at: "2026-11-25T02:50:24Z"
+content_sha: 9173370f0e03fb51
 ---
 
 ---
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/bids/getBidsRecommendations.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22247986
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22283548
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22247986
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22283548
 
 <!-- source: ru/api/bids/getBidsRecommendations.md -->
 <div class="openapi">
@@ -57,6 +57,10 @@ alternate:
   Если товар только добавлен в каталог, но пока не продается, рекомендованной ставки для него не будет.
   
   В одном запросе может быть максимум 1500 товаров.
+  
+  **Пошаговые инструкции**
+  
+  * [Как получить рекомендованные ставки](https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/boost.md#recommendations)
   
   <!-- source: ru/_auto/method_limits/getBidsRecommendations.md -->
   |<div style="text-align: left;">**⚙️ Лимит без подписки:** 500 запросов в минуту<br>**⭐️ [Лимит с подпиской Медиум](https://yandex.ru/support/marketplace/ru/marketing/subscription):** 1 000 запросов в минуту</div>|

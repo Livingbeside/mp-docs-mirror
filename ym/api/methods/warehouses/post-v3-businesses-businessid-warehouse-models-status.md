@@ -12,7 +12,7 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: 0724cdd04d90a76f
+content_sha: 88edb0a288fe388b
 ---
 
 # Включение/выключение модели работы склада
@@ -24,6 +24,10 @@ content_sha: 0724cdd04d90a76f
 Отключает или включает модель работы (FBS, DBS или Экспресс) для указанного склада.
 
 После отключения модели товары, которые работают по ней на данном складе, скрываются через 15 минут. После включения они возвращаются на витрину через 15 минут, а если модель была выключена 30 дней или дольше — через 4 часа.
+
+**Пошаговые инструкции**
+
+* [Отключить или включить модель работы склада](../../step-by-step/warehouses.md#update-model-status)
 
 {% include notitle [limit](../../_auto/method_limits/updateWarehouseModelStatus.md) %}
 

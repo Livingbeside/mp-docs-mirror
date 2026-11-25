@@ -14,7 +14,7 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: 7e6cdbec1c45a83d
+content_sha: 9d2ec4098e5899d1
 ---
 
 # Подбор таблиц размеров
@@ -33,6 +33,10 @@ content_sha: 7e6cdbec1c45a83d
 внутри каждой группы — по убыванию идентификатора.
 
 Результаты возвращаются постранично. Для навигации используйте параметры `pageToken` и `limit`.
+
+**Пошаговые инструкции**
+
+* [Подобрать готовую таблицу](../../step-by-step/size-tables.md#suggest)
 
 {% include notitle [limit](../../_auto/method_limits/suggestContentSizeTables.md) %}
 

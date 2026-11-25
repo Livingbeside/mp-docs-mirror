@@ -11,7 +11,7 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: 818dc96afea6e77e
+content_sha: 8e4973dfeacc474f
 ---
 
 # Получение документов по заявке на поставку, вывоз или утилизацию
@@ -21,6 +21,10 @@ content_sha: 818dc96afea6e77e
 {% include notitle [access](../../_auto/method_scopes/getSupplyRequestDocuments.md) %}
 
 Возвращает документы по заявке.
+
+**Пошаговые инструкции**
+
+* [Заявки на поставку товаров на склад, вывоз или утилизацию](../../step-by-step/supplies.md)
 
 {% include notitle [limit](../../_auto/method_limits/getSupplyRequestDocuments.md) %}
 

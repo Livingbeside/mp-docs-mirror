@@ -2,8 +2,8 @@
 title: Получение ответов на вопрос
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/goods-questions/getGoodsQuestionAnswers.md"
-fetched_at: "2026-11-24T02:40:29Z"
-content_sha: de0752d352f8b493
+fetched_at: "2026-11-25T02:50:21Z"
+content_sha: deff1ed351b6cdc1
 ---
 
 ---
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/goods-questions/getGoodsQuestionAnswers.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22247986
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22283548
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22247986
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22283548
 
 <!-- source: ru/api/goods-questions/getGoodsQuestionAnswers.md -->
 <div class="openapi">
@@ -56,6 +56,10 @@ alternate:
   {% endnote %}
   
   Результаты возвращаются постранично, одна страница содержит не более 50 ответов.
+  
+  **Пошаговые инструкции**
+  
+  * [Вопросы и ответы о товарах](https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/goods-questions.md)
   
   <!-- source: ru/_auto/method_limits/getGoodsQuestionAnswers.md -->
   |<div style="text-align: left;">**⚙️ Лимит без подписки:** 1 000 запросов в час<br>**⭐️ [Лимит с подпиской Медиум](https://yandex.ru/support/marketplace/ru/marketing/subscription):** 5 000 запросов в час</div>|

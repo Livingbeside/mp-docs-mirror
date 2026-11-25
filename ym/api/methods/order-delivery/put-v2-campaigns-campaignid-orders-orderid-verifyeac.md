@@ -10,7 +10,7 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: dc935cb999288df5
+content_sha: a1518f265118c162
 ---
 
 # Передача кода подтверждения
@@ -34,6 +34,10 @@ content_sha: dc935cb999288df5
  * `COURIER_TO_MERCHANT` — курьер передает код продавцу для получения заказа.
 
  Параметр `eacType` возвращается при статусах заказа `COURIER_FOUND`, `COURIER_ARRIVED_TO_SENDER` и `DELIVERY_SERVICE_UNDELIVERED`. Если заказ в других статусах, параметр может отсутствовать.
+
+**Пошаговые инструкции**
+
+* [Передача кода подтверждения и заказа курьеру](../../step-by-step/express.md#verifyOrderEac)
 
 {% include notitle [limit](../../_auto/method_limits/verifyOrderEac.md) %}
 

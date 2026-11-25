@@ -13,7 +13,7 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: 497bed4856b16d78
+content_sha: a77f08cbed262a13
 ---
 
 # Отчет по бусту продаж
@@ -35,6 +35,10 @@ content_sha: 497bed4856b16d78
 {% include notitle [tariff-period](../../_includes/common/report-data-period-400-days.md) %}
 
 {% endif %}
+
+**Пошаговые инструкции**
+
+* [Заказать отчёт или документ](../../step-by-step/reports.md#generate)
 
 {% include notitle [limit](../../_auto/method_limits/generateBoostConsolidatedReport.md) %}
 

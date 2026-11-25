@@ -13,7 +13,7 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: e91b58d372968cb6
+content_sha: 5d37adacb9955f7b
 ---
 
 # Отчет по ключевым показателям
@@ -29,6 +29,10 @@ content_sha: e91b58d372968cb6
 {% include notitle [reports](../../_auto/reports/key_indicators/key_indicators.md) %}
 
 {% include notitle [tariff-period](../../_includes/common/report-data-period-400-days.md) %}
+
+**Пошаговые инструкции**
+
+* [Заказать отчёт или документ](../../step-by-step/reports.md#generate)
 
 {% include notitle [limit](../../_auto/method_limits/generateKeyIndicatorsReport.md) %}
 

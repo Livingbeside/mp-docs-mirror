@@ -13,7 +13,7 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: 3ca0886a81a71304
+content_sha: 0eabbc5bcbde9290
 ---
 
 # Изменение статусов нескольких заказов
@@ -30,8 +30,6 @@ content_sha: 3ca0886a81a71304
 * Если магазин подтвердил заказ, но не может его выполнить (например, товар числится в базе, но отсутствует на складе или нет нужного цвета), то заказ из статуса `"status": "PROCESSING"` и этапа обработки `"substatus": "STARTED"` нужно перевести в статус `"status": "CANCELLED"` с причиной отмены заказа `"substatus": "SHOP_FAILED"`.
 * Если магазин подготовил заказ к отгрузке, но не может его выполнить (например, последний товар был поврежден или оказался с браком), то заказ из статуса `"status": "PROCESSING"` и этапа обработки `"substatus": "READY_TO_SHIP"` нужно перевести в статус `"status": "CANCELLED"` с причиной отмены заказа `"substatus": "SHOP_FAILED"`.
 
-Полная информация о статусной модели DBS-заказов: [Как изменяются статусы заказов](../../concepts/dbs-order-status-model.md).
-
 {% cut "**Как подтвердить LaaS-заказ**" %}
 
 Для подтверждения черновика заказа передайте статус `"status": "PROCESSING"` с подстатусом `"substatus": "STARTED"`.
@@ -47,6 +45,13 @@ content_sha: 3ca0886a81a71304
 При успешном выполнении запроса отмена произойдет через некоторое время. [Как проверить статус операции](../../reference/operations/getOperations.md)
 
 {% endcut %}
+
+**Пошаговые инструкции**
+
+* [Печать ярлыков и передача статуса «Готов к отгрузке»](../../step-by-step/fbs.md#fulfillment)
+* [Допустимые переходы между статусами DBS-заказов](../../concepts/dbs-order-status-model.md)
+* [Обработка заказов с цифровыми товарами](../../step-by-step/digital.md)
+* [Отменить заказ LaaS](../../step-by-step/laas-order.md#cancel)
 
 {% include notitle [limit](../../_auto/method_limits/updateOrderStatuses.md) %}
 

@@ -2,8 +2,8 @@
 title: Удаление товаров из каталога
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/business-offer-mappings/deleteOffers.md"
-fetched_at: "2026-11-24T02:39:50Z"
-content_sha: 037cf8fa0d0d5907
+fetched_at: "2026-11-25T02:49:39Z"
+content_sha: 7f111acf043959cc
 ---
 
 ---
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/business-offer-mappings/deleteOffers.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22247986
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22283548
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22247986
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22283548
 
 <!-- source: ru/api/business-offer-mappings/deleteOffers.md -->
 <div class="openapi">
@@ -45,6 +45,10 @@ alternate:
   <!-- endsource: ru/_auto/method_scopes/deleteOffers.md -->
   
   Удаляет товары из каталога.
+  
+  **Пошаговые инструкции**
+  
+  * [Удаление товаров из каталога](https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/assortment-add-goods.md#deletion)
   
   <!-- source: ru/_auto/method_limits/deleteOffers.md -->
   |<div style="text-align: left;">**⚙️ Лимит без подписки:** 5 000 товаров в минуту<br>**⭐️ [Лимит с подпиской Медиум](https://yandex.ru/support/marketplace/ru/marketing/subscription):** 10 000 товаров в минуту</div>|

@@ -13,7 +13,7 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: 2f2705edda1e1317
+content_sha: f0cf988b44b79c48
 ---
 
 # Получение ответов на вопрос
@@ -33,6 +33,10 @@ content_sha: 2f2705edda1e1317
 {% endnote %}
 
 Результаты возвращаются постранично, одна страница содержит не более 50 ответов.
+
+**Пошаговые инструкции**
+
+* [Вопросы и ответы о товарах](../../step-by-step/goods-questions.md)
 
 {% include notitle [limit](../../_auto/method_limits/getGoodsQuestionAnswers.md) %}
 

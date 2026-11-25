@@ -13,7 +13,7 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: 45ec87c187824e42
+content_sha: d6be34577fd6d45b
 ---
 
 # Добавление нового или изменение созданного комментария
@@ -37,6 +37,10 @@ content_sha: 45ec87c187824e42
 * `comment.id` — идентификатор комментария, который нужно изменить.
 
 Если передать одновременно `comment.parentId` и `comment.id`, будет изменен существующий комментарий.
+
+**Пошаговые инструкции**
+
+* [Отзывы о товарах](../../step-by-step/goods-feedback.md)
 
 {% include notitle [limit](../../_auto/method_limits/updateGoodsFeedbackComment.md) %}
 

@@ -13,7 +13,7 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: 8da42dc7706cb2f0
+content_sha: bd173240a367380d
 ---
 
 # Создание, изменение и удаление ответа или комментария
@@ -23,6 +23,10 @@ content_sha: 8da42dc7706cb2f0
 {% include notitle [access](../../_auto/method_scopes/updateGoodsQuestionTextEntity.md) %}
 
 Создание, изменение и удаление ответа или комментария.
+
+**Пошаговые инструкции**
+
+* [Вопросы и ответы о товарах](../../step-by-step/goods-questions.md)
 
 {% include notitle [limit](../../_auto/method_limits/updateGoodsQuestionTextEntity.md) %}
 

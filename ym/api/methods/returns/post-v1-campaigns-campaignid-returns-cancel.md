@@ -10,7 +10,7 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: e3f931004b6235c7
+content_sha: 867fe2503055c2a9
 ---
 
 # Отмена возврата
@@ -34,6 +34,10 @@ content_sha: e3f931004b6235c7
 Вы создали возврат, в котором указали 3 товара. Но покупатель передумал и решил вернуть только 2. Отмените возврат и создайте новый.
 
 {% endnote %}
+
+**Пошаговые инструкции**
+
+* [Отменить возврат LaaS](../../step-by-step/laas-return.md#cancel)
 
 {% include notitle [limit](../../_auto/method_limits/cancelReturn.md) %}
 

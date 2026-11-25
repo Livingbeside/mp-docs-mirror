@@ -2,8 +2,8 @@
 title: Изменение условий продажи товаров в магазине
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/offers/updateCampaignOffers.md"
-fetched_at: "2026-11-24T02:39:43Z"
-content_sha: 7cc451862f81dcc1
+fetched_at: "2026-11-25T02:49:32Z"
+content_sha: eb56a21eadb6878b
 ---
 
 ---
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/offers/updateCampaignOffers.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22247986
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22283548
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22247986
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22283548
 
 <!-- source: ru/api/offers/updateCampaignOffers.md -->
 <div class="openapi">
@@ -45,6 +45,10 @@ alternate:
   <!-- endsource: ru/_auto/method_scopes/updateCampaignOffers.md -->
   
   Изменяет параметры размещения товаров в конкретном магазине: доступность товара и применяемый НДС.
+  
+  **Пошаговые инструкции**
+  
+  * [Добавить новые товары в каталог](https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/assortment-add-goods.md#add)
   
   <!-- source: ru/_auto/method_limits/updateCampaignOffers.md -->
   |<div style="text-align: left;">**⚙️ Лимит без подписки:** 5 000 товаров в минуту<br>**⭐️ [Лимит с подпиской Медиум](https://yandex.ru/support/marketplace/ru/marketing/subscription):** 10 000 товаров в минуту</div>|
@@ -1098,7 +1102,7 @@ alternate:
                   type: integer
                   format: int32
     $defs:
-      /home/sandbox/.ya/build/build_root/mib9/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/offers/schemas.yaml#/QuantumDTO:
+      /home/sandbox/.ya/build/build_root/o9ik/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/offers/schemas.yaml#/QuantumDTO:
         deprecated: true
         x-deprecation-config:
           shutdown-date: '2026-10-19'

@@ -2,8 +2,8 @@
 title: Получение списка товаров, которые участвуют или могут участвовать в акции
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/promos/getPromoOffers.md"
-fetched_at: "2026-11-24T02:39:56Z"
-content_sha: a6221175b61d0740
+fetched_at: "2026-11-25T02:49:48Z"
+content_sha: a6de38db7eb3ea27
 ---
 
 ---
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/promos/getPromoOffers.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22247986
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22283548
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22247986
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22283548
 
 <!-- source: ru/api/promos/getPromoOffers.md -->
 <div class="openapi">
@@ -59,6 +59,10 @@ alternate:
   Установленные цены меняться не будут — `price` и `promoPrice`.
   
   {% endnote %}
+  
+  **Пошаговые инструкции**
+  
+  * [Управление акциями](https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/promos.md)
   
   <!-- source: ru/_auto/method_limits/getPromoOffers.md -->
   |<div style="text-align: left;">**⚙️ Лимит:** 5 000 запросов в час</div>|
@@ -1754,7 +1758,7 @@ alternate:
             - NOT_MANUALLY_ADDED
             - MINIMUM_FOR_PROMOS
     $defs:
-      /home/sandbox/.ya/build/build_root/mib9/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/promos/api/getPromoOffers.yaml#/PromoOfferParticipationStatusFilterType:
+      /home/sandbox/.ya/build/build_root/o9ik/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/promos/api/getPromoOffers.yaml#/PromoOfferParticipationStatusFilterType:
         description: >
           Фильтр для товаров, которые добавлены в акцию вручную:
   

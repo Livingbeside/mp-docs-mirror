@@ -2,8 +2,8 @@
 title: Редактирование категорийных характеристик товара
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/content/updateOfferContent.md"
-fetched_at: "2026-11-24T02:39:45Z"
-content_sha: fd348c132c19e143
+fetched_at: "2026-11-25T02:49:33Z"
+content_sha: f02bfdde144a626f
 ---
 
 ---
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/content/updateOfferContent.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22247986
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22283548
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22247986
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22283548
 
 <!-- source: ru/api/content/updateOfferContent.md -->
 <div class="openapi">
@@ -59,6 +59,14 @@ alternate:
   Это занимает до нескольких минут.
   
   {% endnote %}
+  
+  **Пошаговые инструкции**
+  
+  * [Объединить варианты товаров на карточке](https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/assortment-add-goods.md#combine-variants)
+  * [Товары относятся к новой для магазина категории](https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/content-change.md#edit-card)
+  * [Привязать таблицу размеров к карточке](https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/size-tables.md#offer-card)
+  * [Рекомендации Маркета по карточкам](https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/recommendations.md)
+  * [Передача значений характеристики](https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/parameter-values.md)
   
   <!-- source: ru/_auto/method_limits/updateOfferContent.md -->
   |<div style="text-align: left;">**⚙️ Лимит без подписки:** 5 000 товаров в минуту<br>**⭐️ [Лимит с подпиской Медиум](https://yandex.ru/support/marketplace/ru/marketing/subscription):** 10 000 товаров в минуту</div>|
@@ -377,8 +385,6 @@ alternate:
   Список характеристик с их значениями.
   
   При **изменении** характеристик передавайте только те, значение которых нужно обновить. Если в `categoryId` вы меняете категорию, значения общих характеристик для старой и новой категории сохранятся, передавать их не нужно.
-  
-  Подробнее читайте в [«Передача значений характеристики»](https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/parameter-values.md).
   
   
   _Min items:_{.json-schema-reset .json-schema-assertion} `1`
@@ -1435,10 +1441,6 @@ alternate:
                 которых нужно обновить. Если в `categoryId` вы меняете категорию,
                 значения общих характеристик для старой и новой категории
                 сохранятся, передавать их не нужно.
-  
-  
-                Подробнее читайте в [«Передача значений
-                характеристики»](../../step-by-step/parameter-values.md).
               type: array
               maxItems: 300
               minItems: 1

@@ -14,7 +14,7 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: 87dba72471b4233b
+content_sha: 9b7821a5c3175b15
 ---
 
 # Отчет по остаткам на складах
@@ -61,6 +61,10 @@ content_sha: 87dba72471b4233b
  {% include notitle [reports](../../_auto/reports/offers/stocks_business_config.md) %}
 
 {% endlist %}
+
+**Пошаговые инструкции**
+
+* [Заказать отчёт или документ](../../step-by-step/reports.md#generate)
 
 {% include notitle [limit](../../_auto/method_limits/generateStocksOnWarehousesReport.md) %}
 

@@ -14,7 +14,7 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: 2422788fd1d05f22
+content_sha: 0ddd984cc348eda8
 ---
 
 # Закрывающие документы
@@ -51,6 +51,10 @@ content_sha: 2422788fd1d05f22
 {% endcut %}
 
 Узнать статус генерации и получить ссылку на архив можно с помощью запроса [GET v2/reports/info/{reportId}](../../reference/reports/getReportInfo.md).
+
+**Пошаговые инструкции**
+
+* [Заказать отчёт или документ](../../step-by-step/reports.md#generate)
 
 {% include notitle [limit](../../_auto/method_limits/generateClosureDocumentsReport.md) %}
 

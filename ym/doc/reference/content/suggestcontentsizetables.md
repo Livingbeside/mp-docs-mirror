@@ -2,8 +2,8 @@
 title: Подбор таблиц размеров
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/content/suggestContentSizeTables.md"
-fetched_at: "2026-11-24T02:39:45Z"
-content_sha: 970cc4cea5af3b36
+fetched_at: "2026-11-25T02:49:34Z"
+content_sha: 0eed5579da4fb090
 ---
 
 ---
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/content/suggestContentSizeTables.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22247986
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22283548
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22247986
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22283548
 
 <!-- source: ru/api/content/suggestContentSizeTables.md -->
 <div class="openapi">
@@ -56,6 +56,10 @@ alternate:
   внутри каждой группы — по убыванию идентификатора.
   
   Результаты возвращаются постранично. Для навигации используйте параметры `pageToken` и `limit`.
+  
+  **Пошаговые инструкции**
+  
+  * [Подобрать готовую таблицу](https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/size-tables.md#suggest)
   
   <!-- source: ru/_auto/method_limits/suggestContentSizeTables.md -->
   |<div style="text-align: left;">**⚙️ Лимит:** 100 запросов в минуту</div>|

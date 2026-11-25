@@ -2,8 +2,8 @@
 title: Список складов
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/warehouses/getPagedWarehouses.md"
-fetched_at: "2026-11-24T02:40:35Z"
-content_sha: cddc2fd512ce3d84
+fetched_at: "2026-11-25T02:50:27Z"
+content_sha: a1a32f695bc8df44
 ---
 
 ---
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/warehouses/getPagedWarehouses.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22247986
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22283548
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22247986
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22283548
 
 <!-- source: ru/api/warehouses/getPagedWarehouses.md -->
 <div class="openapi">
@@ -53,6 +53,10 @@ alternate:
   Метод актуален для кабинетов с группами складов. Если в кабинете нет групп складов, используйте метод [POST v3/businesses/{businessId}/warehouses](https://yandex.ru/dev/market/partner-api/doc/ru/reference/warehouses/getPartnerWarehouses.md). [Что такое группы складов и зачем они нужны](https://yandex.ru/support/marketplace/assortment/operations/stocks.html#unified-stocks).
   
   {% endnote %}
+  
+  **Пошаговые инструкции**
+  
+  * [Работа со складами](https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/warehouses.md)
   
   <!-- source: ru/_auto/method_limits/getPagedWarehouses.md -->
   |<div style="text-align: left;">**⚙️ Лимит:** 100 запросов в час</div>|

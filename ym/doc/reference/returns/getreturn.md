@@ -2,8 +2,8 @@
 title: Информация о невыкупе или возврате
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/returns/getReturn.md"
-fetched_at: "2026-11-24T02:40:15Z"
-content_sha: 69b834cd1f4532af
+fetched_at: "2026-11-25T02:50:07Z"
+content_sha: 60a0b5b377665fd4
 ---
 
 ---
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/returns/getReturn.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22247986
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22283548
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22247986
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22283548
 
 <!-- source: ru/api/returns/getReturn.md -->
 <div class="openapi">
@@ -55,6 +55,10 @@ alternate:
   [Как работать с уведомлениями](https://yandex.ru/dev/market/partner-api/doc/ru/push-notifications/index.md)
   
   {% endnote %}
+  
+  **Пошаговые инструкции**
+  
+  * [Невыкупы и возвраты](https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/returns.md)
   
   <!-- source: ru/_auto/method_limits/getReturn.md -->
   |<div style="text-align: left;">**⚙️ Лимит:** 7 000 запросов в час</div>|

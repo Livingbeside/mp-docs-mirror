@@ -11,7 +11,7 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: f9b53f35c7cf6836
+content_sha: 30f65ece41691a26
 ---
 
 # Получение товаров в заявке на поставку, вывоз или утилизацию
@@ -21,6 +21,10 @@ content_sha: f9b53f35c7cf6836
 {% include notitle [access](../../_auto/method_scopes/getSupplyRequestItems.md) %}
 
 Возвращает список товаров в заявке и информацию по ним.
+
+**Пошаговые инструкции**
+
+* [Заявки на поставку товаров на склад, вывоз или утилизацию](../../step-by-step/supplies.md)
 
 {% include notitle [limit](../../_auto/method_limits/getSupplyRequestItems.md) %}
 

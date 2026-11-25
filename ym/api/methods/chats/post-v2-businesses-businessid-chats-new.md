@@ -13,7 +13,7 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: 88d781f14bafe71b
+content_sha: 57b3cce413ec9451
 ---
 
 # Создание нового чата с покупателем
@@ -28,6 +28,10 @@ content_sha: 88d781f14bafe71b
 
 * по заказам;
 * по возвратам (доступны только для FBY-, FBS- и Экспресс-магазинов).
+
+**Пошаговые инструкции**
+
+* [Начать чат с покупателем](../../step-by-step/chats.md#create)
 
 {% include notitle [limit](../../_auto/method_limits/createChat.md) %}
 

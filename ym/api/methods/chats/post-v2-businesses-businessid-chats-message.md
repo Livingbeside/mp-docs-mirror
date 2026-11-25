@@ -13,7 +13,7 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: 1ec28cddea680efb
+content_sha: f00aaf863d43d331
 ---
 
 # Отправка сообщения в чат
@@ -23,6 +23,10 @@ content_sha: 1ec28cddea680efb
 {% include notitle [access](../../_auto/method_scopes/sendMessageToChat.md) %}
 
 Отправляет сообщение в чат с покупателем.
+
+**Пошаговые инструкции**
+
+* [Чаты с покупателями](../../step-by-step/chats.md)
 
 {% include notitle [limit](../../_auto/method_limits/sendMessageToChat.md) %}
 

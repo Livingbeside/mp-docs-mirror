@@ -14,7 +14,7 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: 52342e7a181cae75
+content_sha: 78898785563c5ba5
 ---
 
 # Установка цен на товары для всех магазинов
@@ -32,6 +32,10 @@ content_sha: 52342e7a181cae75
 Это занимает до нескольких минут.
 
 {% endnote %}
+
+**Пошаговые инструкции**
+
+* [Как изменить цены на товары](../../step-by-step/assortment-change-prices.md)
 
 {% include notitle [limit](../../_auto/method_limits/updateBusinessPrices.md) %}
 

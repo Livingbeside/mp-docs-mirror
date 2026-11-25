@@ -13,7 +13,7 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: 7e3220b4a94334a1
+content_sha: b5c606fecc8f8d0a
 ---
 
 # Получение фотографий товаров в возврате
@@ -29,6 +29,10 @@ content_sha: 7e3220b4a94334a1
 Максимальный размер изображения — 50 МБ.
 
 Тип изображения можно определить по заголовку `Content-Type` в ответе.
+
+**Пошаговые инструкции**
+
+* [Как работать с невыкупами и возвратами](../../step-by-step/returns.md#new-return)
 
 {% include notitle [limit](../../_auto/method_limits/getReturnPhoto.md) %}
 

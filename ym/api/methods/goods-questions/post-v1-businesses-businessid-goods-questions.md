@@ -13,7 +13,7 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: eeaf50ecbcef1fda
+content_sha: 74f9da6cd67e35f6
 ---
 
 # Получение вопросов о товарах продавца
@@ -33,6 +33,10 @@ content_sha: eeaf50ecbcef1fda
 {% endnote %}
 
 Результаты возвращаются постранично, одна страница содержит не более 50 вопросов.
+
+**Пошаговые инструкции**
+
+* [Вопросы и ответы о товарах](../../step-by-step/goods-questions.md)
 
 {% include notitle [limit](../../_auto/method_limits/getGoodsQuestions.md) %}
 

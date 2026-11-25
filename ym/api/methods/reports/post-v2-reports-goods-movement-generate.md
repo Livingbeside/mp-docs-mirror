@@ -11,7 +11,7 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: 20bc2ef57848956e
+content_sha: 82f41708d08a5188
 ---
 
 # Отчет по движению товаров
@@ -27,6 +27,10 @@ content_sha: 20bc2ef57848956e
 {% include notitle [reports](../../_auto/reports/sku/movement/movement_config.md) %}
 
 {% include notitle [tariff-period](../../_includes/common/report-data-period-unchanged.md) %}
+
+**Пошаговые инструкции**
+
+* [Заказать отчёт или документ](../../step-by-step/reports.md#generate)
 
 {% include notitle [limit](../../_auto/method_limits/generateGoodsMovementReport.md) %}
 

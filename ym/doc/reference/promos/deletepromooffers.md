@@ -2,8 +2,8 @@
 title: Удаление товаров из акции
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/promos/deletePromoOffers.md"
-fetched_at: "2026-11-24T02:39:56Z"
-content_sha: df56d6d0b4967e9e
+fetched_at: "2026-11-25T02:49:49Z"
+content_sha: 564e94ff84b70d85
 ---
 
 ---
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/promos/deletePromoOffers.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22247986
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22283548
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22247986
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22283548
 
 <!-- source: ru/api/promos/deletePromoOffers.md -->
 <div class="openapi">
@@ -50,6 +50,10 @@ alternate:
   Убирает товары из акции.
   
   Изменения начинают действовать в течение 4–6 часов. Узнать, применились ли они, можно с помощью параметра `processing` в ответе метода [POST v2/businesses/{businessId}/promos](https://yandex.ru/dev/market/partner-api/doc/ru/reference/promos/getPromos.md).
+  
+  **Пошаговые инструкции**
+  
+  * [Удалить товары из акции](https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/promos.md#delete-goods)
   
   <!-- source: ru/_auto/method_limits/deletePromoOffers.md -->
   |<div style="text-align: left;">**⚙️ Лимит:** 5 000 запросов в час</div>|

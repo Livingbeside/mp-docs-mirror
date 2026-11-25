@@ -12,7 +12,7 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: 045536f139d76e0c
+content_sha: 9e0a7f3a58fa0897
 ---
 
 # Готовые ярлыки‑наклейки на все коробки в нескольких заказах
@@ -26,6 +26,11 @@ content_sha: 045536f139d76e0c
 Чтобы на ярлыке отображался внешний идентификатор заказа, передайте его в методе [POST v2/campaigns/{campaignId}/orders/{orderId}/external-id](../../reference/orders/updateExternalOrderId.md).
 
 Узнать статус генерации и получить ссылку на готовый файл можно с помощью запроса [GET v2/reports/info/{reportId}](../../reference/reports/getReportInfo.md).
+
+**Пошаговые инструкции**
+
+* [Напечатать ярлыки для нескольких FBS-заказов](../../step-by-step/fbs.md#fulfillment)
+* [Заказать отчёт или документ](../../step-by-step/reports.md#generate)
 
 {% include notitle [limit](../../_auto/method_limits/generateMassOrderLabelsReport.md) %}
 

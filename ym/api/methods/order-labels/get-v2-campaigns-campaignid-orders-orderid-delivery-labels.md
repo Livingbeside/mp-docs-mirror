@@ -12,7 +12,7 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: 1339e491fd9278ec
+content_sha: 65ca04066ee2f4bf
 ---
 
 # Готовые ярлыки‑наклейки на все коробки в одном заказе
@@ -26,6 +26,11 @@ content_sha: 1339e491fd9278ec
 На вход нужно передать идентификатор заказа и один необязательный параметр, который управляет версткой PDF-файла.
 
 Чтобы на ярлыке отображался внешний идентификатор заказа, передайте его в методе [POST v2/campaigns/{campaignId}/orders/{orderId}/external-id](../../reference/orders/updateExternalOrderId.md).
+
+**Пошаговые инструкции**
+
+* [Напечатать ярлыки для FBS-заказа](../../step-by-step/fbs.md#fulfillment)
+* [Напечатать ярлыки для Экспресс-заказа](../../step-by-step/express.md#label)
 
 {% include notitle [limit](../../_auto/method_limits/generateOrderLabels.md) %}
 

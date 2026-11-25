@@ -10,7 +10,7 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: f737f9f406fa5d72
+content_sha: 6253d26fbda75844
 ---
 
 # Создание заказа
@@ -38,6 +38,10 @@ content_sha: f737f9f406fa5d72
 Получите доступные варианты доставки — [POST v2/campaigns/{campaignId}/delivery-options](../../reference/delivery-options/getDeliveryOptions.md).
 
 {% endnote %}
+
+**Пошаговые инструкции**
+
+* [Создать заказ LaaS](../../step-by-step/laas-order.md#create)
 
 {% include notitle [limit](../../_auto/method_limits/createOrder.md) %}
 

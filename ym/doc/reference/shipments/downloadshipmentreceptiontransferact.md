@@ -2,8 +2,8 @@
 title: Подтверждение ближайшей отгрузки и получение акта приема-передачи для нее
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/shipments/downloadShipmentReceptionTransferAct.md"
-fetched_at: "2026-11-24T02:40:05Z"
-content_sha: 9f504cf802c5382f
+fetched_at: "2026-11-25T02:49:57Z"
+content_sha: 5591a5ed40b136ba
 ---
 
 ---
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/shipments/downloadShipmentReceptionTransferAct.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22247986
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22283548
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22247986
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22283548
 
 <!-- source: ru/api/shipments/downloadShipmentReceptionTransferAct.md -->
 <div class="openapi">
@@ -101,6 +101,10 @@ alternate:
   Подробнее о работе с актами приема-передачи читайте [в Справке Маркета для продавцов](https://yandex.ru/support/marketplace/ru/orders/fbs/process#act).
   
   {% endnote %}
+  
+  **Пошаговые инструкции**
+  
+  * [Работа с отгрузкой](https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/fbs.md#shipment)
   
   <!-- source: ru/_auto/method_limits/downloadShipmentReceptionTransferAct.md -->
   |<div style="text-align: left;">**⚙️ Лимит:** 200 запросов в час</div>|

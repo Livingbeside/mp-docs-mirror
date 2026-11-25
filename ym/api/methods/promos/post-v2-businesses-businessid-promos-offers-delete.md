@@ -13,7 +13,7 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: 3c84649ff5472314
+content_sha: 2735a917eaf692a9
 ---
 
 # Удаление товаров из акции
@@ -25,6 +25,10 @@ content_sha: 3c84649ff5472314
 Убирает товары из акции.
 
 Изменения начинают действовать в течение 4–6 часов. Узнать, применились ли они, можно с помощью параметра `processing` в ответе метода [POST v2/businesses/{businessId}/promos](../../reference/promos/getPromos.md).
+
+**Пошаговые инструкции**
+
+* [Удалить товары из акции](../../step-by-step/promos.md#delete-goods)
 
 {% include notitle [limit](../../_auto/method_limits/deletePromoOffers.md) %}
 

@@ -2,8 +2,8 @@
 title: Информация о заказах в кабинете
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/orders/getBusinessOrders.md"
-fetched_at: "2026-11-24T02:39:56Z"
-content_sha: 3e2e5116c0d0c52c
+fetched_at: "2026-11-25T02:49:49Z"
+content_sha: cd2c7e5db194992d
 ---
 
 ---
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/orders/getBusinessOrders.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22247986
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22283548
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22247986
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22283548
 
 <!-- source: ru/api/orders/getBusinessOrders.md -->
 <div class="openapi">
@@ -86,6 +86,10 @@ alternate:
   Результаты возвращаются постранично. Для навигации используйте параметры `pageToken` и `limit`.
   
   Получить более подробную информацию о покупателе и его номере телефона можно с помощью запроса [GET v2/campaigns/{campaignId}/orders/{orderId}/buyer](https://yandex.ru/dev/market/partner-api/doc/ru/reference/order-delivery/getOrderBuyerInfo.md).
+  
+  **Пошаговые инструкции**
+  
+  * [Получать информацию о заказах](https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/orders-receive.md)
   
   <!-- source: ru/_auto/method_limits/getBusinessOrders.md -->
   |<div style="text-align: left;">**⚙️ Лимит:** 10 000 запросов в час</div>|
@@ -6516,7 +6520,7 @@ alternate:
             - OTHER
         minItems: 1
     $defs:
-      /home/sandbox/.ya/build/build_root/mib9/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/orders/api/getBusinessOrders.yaml#/OrderDatesFilterDTO:
+      /home/sandbox/.ya/build/build_root/o9ik/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/orders/api/getBusinessOrders.yaml#/OrderDatesFilterDTO:
         type: object
         description: Фильтр по датам заказов.
         properties:

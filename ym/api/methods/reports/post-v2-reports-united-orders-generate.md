@@ -13,7 +13,7 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: cee39f67b37d1382
+content_sha: 1afca1e90dd43190
 ---
 
 # Отчет по заказам
@@ -29,6 +29,10 @@ content_sha: cee39f67b37d1382
 {% include notitle [reports](../../_auto/reports/united/orders/generator/united_orders.md) %}
 
 {% include notitle [tariff-period](../../_includes/common/report-data-period-unchanged.md) %}
+
+**Пошаговые инструкции**
+
+* [Заказать отчёт или документ](../../step-by-step/reports.md#generate)
 
 {% include notitle [limit](../../_auto/method_limits/generateUnitedOrdersReport.md) %}
 

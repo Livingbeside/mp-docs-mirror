@@ -2,8 +2,8 @@
 title: Получение истории сообщений в чате
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/chats/getChatHistory.md"
-fetched_at: "2026-11-24T02:40:31Z"
-content_sha: b312b0be6c272ab0
+fetched_at: "2026-11-25T02:50:25Z"
+content_sha: cd1b952309694133
 ---
 
 ---
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/chats/getChatHistory.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22247986
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22283548
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22247986
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22283548
 
 <!-- source: ru/api/chats/getChatHistory.md -->
 <div class="openapi">
@@ -46,6 +46,10 @@ alternate:
   <!-- endsource: ru/_auto/method_scopes/getChatHistory.md -->
   
   Возвращает историю сообщений в чате с покупателем.
+  
+  **Пошаговые инструкции**
+  
+  * [Чаты с покупателями](https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/chats.md)
   
   <!-- source: ru/_auto/method_limits/getChatHistory.md -->
   |<div style="text-align: left;">**⚙️ Лимит:** 10 000 запросов в час</div>|

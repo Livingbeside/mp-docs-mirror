@@ -2,8 +2,8 @@
 title: Создание таблиц размеров
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/content/createContentSizeTables.md"
-fetched_at: "2026-11-24T02:39:48Z"
-content_sha: 59640d59bc7853e8
+fetched_at: "2026-11-25T02:49:36Z"
+content_sha: ba0f8a656d75dd42
 ---
 
 ---
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/content/createContentSizeTables.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22247986
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22283548
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22247986
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22283548
 
 <!-- source: ru/api/content/createContentSizeTables.md -->
 <div class="openapi">
@@ -117,6 +117,10 @@ alternate:
   Количество таблиц у бизнеса ограничено — суммарно по всем размерным характеристикам. Удалить таблицу нельзя.
   Если лимит исчерпан, таблица не создается и для нее возвращается ошибка `LIMIT_TABLES`. При одновременных
   запросах лимит проверяется нестрого, и таблиц может создаться больше.
+  
+  **Пошаговые инструкции**
+  
+  * [Создать свою таблицу](https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/size-tables.md#create)
   
   <!-- source: ru/_auto/method_limits/createContentSizeTables.md -->
   |<div style="text-align: left;">**⚙️ Лимит без подписки:** 5 запросов в минуту<br>**⭐️ [Лимит с подпиской Медиум](https://yandex.ru/support/marketplace/ru/marketing/subscription):** 10 запросов в минуту</div>|

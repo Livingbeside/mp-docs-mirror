@@ -13,7 +13,7 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: d45e559b200e3f4c
+content_sha: 0a319a1dfb3e4460
 ---
 
 # Получение доступных чатов
@@ -31,6 +31,10 @@ content_sha: d45e559b200e3f4c
 [{#T}](../../push-notifications/index.md)
 
 {% endnote %}
+
+**Пошаговые инструкции**
+
+* [Чаты с покупателями](../../step-by-step/chats.md)
 
 {% include notitle [limit](../../_auto/method_limits/getChats.md) %}
 

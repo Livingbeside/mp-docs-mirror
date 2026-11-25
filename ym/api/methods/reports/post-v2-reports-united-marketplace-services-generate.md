@@ -14,7 +14,7 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: 2df101ad2e48b55d
+content_sha: c545b3cc2192e3ea
 ---
 
 # Отчет по стоимости услуг
@@ -37,6 +37,10 @@ content_sha: 2df101ad2e48b55d
 Узнать статус генерации и получить ссылку на готовый отчет можно с помощью запроса [GET v2/reports/info/{reportId}](../../reference/reports/getReportInfo.md).
 
 {% include notitle [reports](../../_auto/reports/united/services/generator/united_marketplace_services.md) %}
+
+**Пошаговые инструкции**
+
+* [Заказать отчёт или документ](../../step-by-step/reports.md#generate)
 
 {% include notitle [limit](../../_auto/method_limits/generateUnitedMarketplaceServicesReport.md) %}
 

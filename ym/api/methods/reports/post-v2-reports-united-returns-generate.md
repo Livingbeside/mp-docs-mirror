@@ -14,7 +14,7 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: 62efdbb69c20aa19
+content_sha: c7cee033e61277f2
 ---
 
 # Отчет по невыкупам и возвратам
@@ -32,6 +32,10 @@ content_sha: 62efdbb69c20aa19
 {% include notitle [reports](../../_auto/reports/united/returns/generator/united_returns.md) %}
 
 {% include notitle [tariff-period](../../_includes/common/report-data-period-unchanged.md) %}
+
+**Пошаговые инструкции**
+
+* [Заказать отчёт или документ](../../step-by-step/reports.md#generate)
 
 {% include notitle [limit](../../_auto/method_limits/generateUnitedReturnsReport.md) %}
 

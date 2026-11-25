@@ -2,8 +2,8 @@
 title: Передача кода подтверждения
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/order-delivery/verifyOrderEac.md"
-fetched_at: "2026-11-24T02:39:59Z"
-content_sha: 0b696b9f8ad93aab
+fetched_at: "2026-11-25T02:49:51Z"
+content_sha: b295e6df54f52eb3
 ---
 
 ---
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/order-delivery/verifyOrderEac.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22247986
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22283548
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22247986
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22283548
 
 <!-- source: ru/api/order-delivery/verifyOrderEac.md -->
 <div class="openapi">
@@ -59,6 +59,10 @@ alternate:
     * `COURIER_TO_MERCHANT` — курьер передает код продавцу для получения заказа.
   
     Параметр `eacType` возвращается при статусах заказа `COURIER_FOUND`, `COURIER_ARRIVED_TO_SENDER` и `DELIVERY_SERVICE_UNDELIVERED`. Если заказ в других статусах, параметр может отсутствовать.
+  
+  **Пошаговые инструкции**
+  
+  * [Передача кода подтверждения и заказа курьеру](https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/express.md#verifyOrderEac)
   
   <!-- source: ru/_auto/method_limits/verifyOrderEac.md -->
   |<div style="text-align: left;">**⚙️ Лимит:** 10 000 запросов в час</div>|

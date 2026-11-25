@@ -13,7 +13,7 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: 43e2b7e8e5cdf73d
+content_sha: 29714b5bea01fa02
 ---
 
 # Список товаров, находящихся в карантине по цене в кабинете
@@ -35,6 +35,10 @@ content_sha: 43e2b7e8e5cdf73d
 В запросе можно использовать фильтры.
 
 Результаты возвращаются постранично.
+
+**Пошаговые инструкции**
+
+* [Как изменить цены на товары](../../step-by-step/assortment-change-prices.md)
 
 {% include notitle [limit](../../_auto/method_limits/getBusinessQuarantineOffers.md) %}
 

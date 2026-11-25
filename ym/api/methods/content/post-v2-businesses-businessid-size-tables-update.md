@@ -14,7 +14,7 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: 75df245c1a98d772
+content_sha: de247c0541df5986
 ---
 
 # Обновление таблиц размеров
@@ -70,6 +70,10 @@ content_sha: 75df245c1a98d772
 Передавать товары повторно не нужно.
 
 Если запрос завершился ошибкой с кодом 5xx, его можно повторить: таблицы заменятся тем же содержимым.
+
+**Пошаговые инструкции**
+
+* [Создать свою таблицу](../../step-by-step/size-tables.md#create)
 
 {% include notitle [limit](../../_auto/method_limits/updateContentSizeTables.md) %}
 

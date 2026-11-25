@@ -13,7 +13,7 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: 688f5250617bbdad
+content_sha: be927d4618ce4996
 ---
 
 # Отчет по отзывам о товарах
@@ -29,6 +29,10 @@ content_sha: 688f5250617bbdad
 {% include notitle [reports](../../_auto/reports/paid_opinion_models/paid_opinion_models.md) %}
 
 {% include notitle [tariff-period](../../_includes/common/simultaneously-generated-reports-amount.md) %}
+
+**Пошаговые инструкции**
+
+* [Заказать отчёт или документ](../../step-by-step/reports.md#generate)
 
 {% include notitle [limit](../../_auto/method_limits/generateGoodsFeedbackReport.md) %}
 

@@ -10,7 +10,7 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: bd0ea5efdc96a930
+content_sha: bd34741d473dc6e5
 ---
 
 # Отмена заказа покупателем
@@ -35,6 +35,10 @@ content_sha: bd0ea5efdc96a930
  * Подключите API-уведомления. Маркет отправит вам запрос [POST notification](../../push-notifications/reference/sendNotification.md), когда появится новая заявка на отмену заказа. [{#T}](../../push-notifications/index.md)
 
 Если в течение 48 часов вы не подтвердите или отклоните отмену, заказ будет отменен автоматически.
+
+**Пошаговые инструкции**
+
+* [Подтвердить отмену DBS-заказа](../../concepts/dbs-order-status-model.md)
 
 {% include notitle [limit](../../_auto/method_limits/acceptOrderCancellation.md) %}
 

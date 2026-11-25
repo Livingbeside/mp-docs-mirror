@@ -13,7 +13,7 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: 488a01f72cb20f46
+content_sha: 2e1325eff3b66199
 ---
 
 # Получение истории сообщений в чате
@@ -23,6 +23,10 @@ content_sha: 488a01f72cb20f46
 {% include notitle [access](../../_auto/method_scopes/getChatHistory.md) %}
 
 Возвращает историю сообщений в чате с покупателем.
+
+**Пошаговые инструкции**
+
+* [Чаты с покупателями](../../step-by-step/chats.md)
 
 {% include notitle [limit](../../_auto/method_limits/getChatHistory.md) %}
 

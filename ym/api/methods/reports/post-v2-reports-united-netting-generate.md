@@ -13,7 +13,7 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: e2b2cc537c321467
+content_sha: 71e9429e59e32b6c
 ---
 
 # Отчет по платежам
@@ -42,6 +42,10 @@ content_sha: e2b2cc537c321467
 Заказать отчеты нескольких типов одним запросом нельзя.
 
 {% include notitle [reports](../../_auto/reports/united/netting/generator/united_netting.md) %}
+
+**Пошаговые инструкции**
+
+* [Заказать отчёт или документ](../../step-by-step/reports.md#generate)
 
 {% include notitle [limit](../../_auto/method_limits/generateUnitedNettingReport.md) %}
 

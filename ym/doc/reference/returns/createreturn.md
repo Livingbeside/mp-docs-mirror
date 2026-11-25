@@ -2,8 +2,8 @@
 title: Создание возврата
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/returns/createReturn.md"
-fetched_at: "2026-11-24T02:40:17Z"
-content_sha: e399ab61673f3411
+fetched_at: "2026-11-25T02:50:09Z"
+content_sha: 50c8c032abd92369
 ---
 
 ---
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/returns/createReturn.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22247986
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22283548
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22247986
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22283548
 
 <!-- source: ru/api/returns/createReturn.md -->
 <div class="openapi">
@@ -55,6 +55,10 @@ alternate:
   Проверьте, подходят ли пункты выдачи для возврата указанных товаров, — [POST v1/campaigns/{campaignId}/return-delivery-options](https://yandex.ru/dev/market/partner-api/doc/ru/reference/delivery-options/getReturnDeliveryOptions.md).
   
   {% endnote %}
+  
+  **Пошаговые инструкции**
+  
+  * [Создать возврат LaaS](https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/laas-return.md#create)
   
   <!-- source: ru/_auto/method_limits/createReturn.md -->
   |<div style="text-align: left;">**⚙️ Лимит:** 5 000 запросов в час</div>|

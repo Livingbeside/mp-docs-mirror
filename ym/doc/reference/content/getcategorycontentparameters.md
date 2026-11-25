@@ -2,8 +2,8 @@
 title: Списки характеристик товаров по категориям
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/content/getCategoryContentParameters.md"
-fetched_at: "2026-11-24T02:39:42Z"
-content_sha: d015e39d5da4b0bf
+fetched_at: "2026-11-25T02:49:31Z"
+content_sha: 4b187194e8cbf49f
 ---
 
 ---
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/content/getCategoryContentParameters.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22247986
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22283548
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22247986
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22283548
 
 <!-- source: ru/api/content/getCategoryContentParameters.md -->
 <div class="openapi">
@@ -51,6 +51,11 @@ alternate:
   Поля в ответе определяют правила передачи характеристики в методах:
   - [POST v2/businesses/{businessId}/offer-mappings/update](https://yandex.ru/dev/market/partner-api/doc/ru/reference/business-offer-mappings/updateOfferMappings.md)
   - [POST v2/businesses/{businessId}/offer-cards/update](https://yandex.ru/dev/market/partner-api/doc/ru/reference/content/updateOfferContent.md)
+  
+  **Пошаговые инструкции**
+  
+  * [Проверить сопоставление характеристик категории](https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/content-change.md#check-and-update-comparison)
+  * [Передача значений характеристики](https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/parameter-values.md)
   
   <!-- source: ru/_auto/method_limits/getCategoryContentParameters.md -->
   |<div style="text-align: left;">**⚙️ Лимит:** 100 запросов в минуту</div>|

@@ -14,7 +14,7 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: c3824560e257d2db
+content_sha: cf056725365f54d1
 ---
 
 # Информация о заказах в кабинете
@@ -62,6 +62,10 @@ content_sha: c3824560e257d2db
 Результаты возвращаются постранично. Для навигации используйте параметры `pageToken` и `limit`.
 
 Получить более подробную информацию о покупателе и его номере телефона можно с помощью запроса [GET v2/campaigns/{campaignId}/orders/{orderId}/buyer](../../reference/order-delivery/getOrderBuyerInfo.md).
+
+**Пошаговые инструкции**
+
+* [Получать информацию о заказах](../../step-by-step/orders-receive.md)
 
 {% include notitle [limit](../../_auto/method_limits/getBusinessOrders.md) %}
 

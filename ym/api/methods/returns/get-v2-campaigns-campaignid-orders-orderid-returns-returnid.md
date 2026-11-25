@@ -14,7 +14,7 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: ade880cb3647453c
+content_sha: cd5c69298988bdba
 ---
 
 # Информация о невыкупе или возврате
@@ -32,6 +32,10 @@ content_sha: ade880cb3647453c
 [{#T}](../../push-notifications/index.md)
 
 {% endnote %}
+
+**Пошаговые инструкции**
+
+* [Невыкупы и возвраты](../../step-by-step/returns.md)
 
 {% include notitle [limit](../../_auto/method_limits/getReturn.md) %}
 

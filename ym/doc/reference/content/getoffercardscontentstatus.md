@@ -2,8 +2,8 @@
 title: Получение информации о заполненности карточек магазина
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/content/getOfferCardsContentStatus.md"
-fetched_at: "2026-11-24T02:39:43Z"
-content_sha: 5c9f50309a3b5a3b
+fetched_at: "2026-11-25T02:49:33Z"
+content_sha: 30fd3702f8493490
 ---
 
 ---
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/content/getOfferCardsContentStatus.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22247986
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22283548
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22247986
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22283548
 
 <!-- source: ru/api/content/getOfferCardsContentStatus.md -->
 <div class="openapi">
@@ -55,6 +55,11 @@ alternate:
   * рекомендации по заполнению карточки.
   
   Чтобы получить другие характеристики товаров, воспользуйтесь методом [POST v2/businesses/{businessId}/offer-mappings](https://yandex.ru/dev/market/partner-api/doc/ru/reference/business-offer-mappings/getOfferMappings.md).
+  
+  **Пошаговые инструкции**
+  
+  * [Получить текущие характеристики и статус карточки](https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/content-change.md#edit-card)
+  * [Получить рекомендации по заполнению карточки](https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/recommendations.md)
   
   <!-- source: ru/_auto/method_limits/getOfferCardsContentStatus.md -->
   |<div style="text-align: left;">**⚙️ Лимит без подписки:** 100 запросов в минуту<br>**⭐️ [Лимит с подпиской Медиум](https://yandex.ru/support/marketplace/ru/marketing/subscription):** 600 запросов в минуту</div>|

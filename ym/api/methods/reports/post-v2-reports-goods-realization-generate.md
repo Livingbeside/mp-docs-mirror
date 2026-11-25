@@ -13,7 +13,7 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: 3eb5c6ff80fe36d7
+content_sha: cbd265752a0b5e0e
 ---
 
 # Отчет по реализации
@@ -37,6 +37,10 @@ content_sha: 3eb5c6ff80fe36d7
  {% include notitle [reports](../../_auto/reports/united/statistics/generator/united_statistics_v2_dbs.md) %}
 
 {% endlist %}
+
+**Пошаговые инструкции**
+
+* [Заказать отчёт или документ](../../step-by-step/reports.md#generate)
 
 {% include notitle [limit](../../_auto/method_limits/generateGoodsRealizationReport.md) %}
 

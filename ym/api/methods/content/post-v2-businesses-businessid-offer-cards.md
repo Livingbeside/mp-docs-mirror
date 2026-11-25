@@ -14,7 +14,7 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: e023412c6d179b5a
+content_sha: f76f75e50e71e25d
 ---
 
 # Получение информации о заполненности карточек магазина
@@ -32,6 +32,11 @@ content_sha: e023412c6d179b5a
 * рекомендации по заполнению карточки.
 
 Чтобы получить другие характеристики товаров, воспользуйтесь методом [POST v2/businesses/{businessId}/offer-mappings](../../reference/business-offer-mappings/getOfferMappings.md).
+
+**Пошаговые инструкции**
+
+* [Получить текущие характеристики и статус карточки](../../step-by-step/content-change.md#edit-card)
+* [Получить рекомендации по заполнению карточки](../../step-by-step/recommendations.md)
 
 {% include notitle [limit](../../_auto/method_limits/getOfferCardsContentStatus.md) %}
 

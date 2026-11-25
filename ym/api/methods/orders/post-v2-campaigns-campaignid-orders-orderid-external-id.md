@@ -12,7 +12,7 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: 0ccbe8dc695fbf51
+content_sha: 276db03cc6b2f8d5
 ---
 
 # Передача внешнего идентификатора заказа
@@ -35,6 +35,11 @@ content_sha: 0ccbe8dc695fbf51
 Если во внешнем идентификаторе вы используете другие символы, на ярлыке в штрихкоде будет отображаться идентификатор заказа Маркета.
 
 {% endnote %}
+
+**Пошаговые инструкции**
+
+* [Передать внешний идентификатор FBS-заказа](../../step-by-step/fbs.md#fulfillment)
+* [Передать внешний идентификатор Экспресс-заказа](../../step-by-step/express.md#label)
 
 {% include notitle [limit](../../_auto/method_limits/updateExternalOrderId.md) %}
 

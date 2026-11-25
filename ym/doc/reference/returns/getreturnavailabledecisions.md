@@ -2,8 +2,8 @@
 title: Получение возможных решений по возврату
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/returns/getReturnAvailableDecisions.md"
-fetched_at: "2026-11-24T02:40:16Z"
-content_sha: 56fd1d47f63f0bff
+fetched_at: "2026-11-25T02:50:08Z"
+content_sha: b25df7656bde6247
 ---
 
 ---
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/returns/getReturnAvailableDecisions.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22247986
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22283548
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22247986
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22283548
 
 <!-- source: ru/api/returns/getReturnAvailableDecisions.md -->
 <div class="openapi">
@@ -47,6 +47,10 @@ alternate:
   <!-- endsource: ru/_auto/method_scopes/getReturnAvailableDecisions.md -->
   
   Возвращает список доступных решений по возврату.
+  
+  **Пошаговые инструкции**
+  
+  * [Как работать с невыкупами и возвратами](https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/returns.md#new-return)
   
   <!-- source: ru/_auto/method_limits/getReturnAvailableDecisions.md -->
   |<div style="text-align: left;">**⚙️ Лимит:** 5 000 запросов в час</div>|

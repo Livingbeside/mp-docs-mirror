@@ -2,8 +2,8 @@
 title: Получение транспортной накладной
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/shipments/downloadShipmentTransportationWaybill.md"
-fetched_at: "2026-11-24T02:40:06Z"
-content_sha: b7de4ac3bd23fe8b
+fetched_at: "2026-11-25T02:50:00Z"
+content_sha: 61e87a766bad149c
 ---
 
 ---
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/shipments/downloadShipmentTransportationWaybill.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22247986
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22283548
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22247986
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22283548
 
 <!-- source: ru/api/shipments/downloadShipmentTransportationWaybill.md -->
 <div class="openapi">
@@ -39,7 +39,9 @@ alternate:
   {% cut "**Если вы используете API-Key-токен, для вызова метода необходим один из доступов в списке**" %}
 
   * inventory-and-order-processing — [Обработка заказов и учёт товаров](https://yandex.ru/dev/market/partner-api/doc/ru/_auto/scopes_summary/pages/inventory-and-order-processing.md)
+  * inventory-and-order-processing:read-only — [Просмотр информации о заказах](https://yandex.ru/dev/market/partner-api/doc/ru/_auto/scopes_summary/pages/inventory-and-order-processing_read-only.md)
   * all-methods — Полное управление кабинетом
+  * all-methods:read-only — Просмотр всех данных
 
   {% endcut %}
   <!-- endsource: ru/_auto/method_scopes/downloadShipmentTransportationWaybill.md -->

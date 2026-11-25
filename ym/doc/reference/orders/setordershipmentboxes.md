@@ -2,8 +2,8 @@
 title: Передача количества грузовых мест в заказе
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/orders/setOrderShipmentBoxes.md"
-fetched_at: "2026-11-24T02:40:39Z"
-content_sha: 18558792b43263ce
+fetched_at: "2026-11-25T02:50:32Z"
+content_sha: 6a7a1f02ea8c2dcd
 ---
 
 ---
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/orders/setOrderShipmentBoxes.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22247986
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22283548
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22247986
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22283548
 
 <!-- source: ru/api/orders/setOrderShipmentBoxes.md -->
 <div class="openapi">
@@ -54,7 +54,7 @@ alternate:
   
   Отгружаемый Маркету заказ может не влезть в одну коробку или упаковку — в этом случае получается, что он занимает несколько грузовых мест.
   
-  Количество грузовых мест нужно обязательно передавать Маркету, если оно не равно 1. Это делается перед переводом его в статус **Готов к отгрузке**. Подробно о том, что в какой момент нужно передавать, рассказано в [пошаговой инструкции](https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/fbs.md).
+  Количество грузовых мест нужно обязательно передавать Маркету, если оно не равно 1. Это делается перед переводом его в статус **Готов к отгрузке**.
   
   Метод устроен немного нестандартно: количество задается длиной массива пустых объектов.
   
@@ -108,6 +108,10 @@ alternate:
   | `count`    | Int32     | Количество единиц товара в грузовом месте.       |
   
   {% endcut %}
+  
+  **Пошаговые инструкции**
+  
+  * [Актуальный способ передачи сведений о коробках FBS](https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/fbs.md#order-info)
   
   <!-- source: ru/_auto/method_limits/setOrderShipmentBoxes.md -->
   |<div style="text-align: left;">**⚙️ Лимит:** 10 000 запросов в час</div>|

@@ -2,8 +2,8 @@
 title: Передача информации об остатках
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/stocks/updateStocksOnPartnerWarehouses.md"
-fetched_at: "2026-11-24T02:39:52Z"
-content_sha: 7c6ba2b4748fb93a
+fetched_at: "2026-11-25T02:49:44Z"
+content_sha: 2ebe67e10def55c1
 ---
 
 ---
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/stocks/updateStocksOnPartnerWarehouses.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22247986
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22283548
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22247986
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22283548
 
 <!-- source: ru/api/stocks/updateStocksOnPartnerWarehouses.md -->
 <div class="openapi">
@@ -59,6 +59,10 @@ alternate:
   Если в кабинете есть группы складов, используйте метод [PUT v2/campaigns/{campaignId}/offers/stocks](https://yandex.ru/dev/market/partner-api/doc/ru/reference/stocks/updateStocks.md). [Что такое группы складов и зачем они нужны](https://yandex.ru/support/marketplace/assortment/operations/stocks.html#unified-stocks).
   
   {% endnote %}
+  
+  **Пошаговые инструкции**
+  
+  * [Передача остатков через API](https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/stocks.md)
   
   <!-- source: ru/_auto/method_limits/updateStocksOnPartnerWarehouses.md -->
   |<div style="text-align: left;">**⚙️ Лимит:** 50 запросов в минуту</div>|

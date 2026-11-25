@@ -2,8 +2,8 @@
 title: Получение доступных вариантов доставки заказов
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/delivery-options/getDeliveryOptions.md"
-fetched_at: "2026-11-24T02:40:03Z"
-content_sha: 151735e31ad12e23
+fetched_at: "2026-11-25T02:49:55Z"
+content_sha: 39e680b2b5c87898
 ---
 
 ---
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/delivery-options/getDeliveryOptions.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22247986
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22283548
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22247986
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22283548
 
 <!-- source: ru/api/delivery-options/getDeliveryOptions.md -->
 <div class="openapi">
@@ -53,6 +53,10 @@ alternate:
   Возвращает список вариантов для доставки заказов. Выберите подходящий вариант доставки из ответа и передайте его при создании заказа.
   
   Укажите `courierDelivery` для курьерской доставки или `pickupDelivery` для доставки в пункт выдачи. Не передавайте оба параметра одновременно.
+  
+  **Пошаговые инструкции**
+  
+  * [Создать заказ LaaS](https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/laas-order.md#create)
   
   <!-- source: ru/_auto/method_limits/getDeliveryOptions.md -->
   |<div style="text-align: left;">**⚙️ Лимит:** 1 000 запросов в минуту</div>|

@@ -12,7 +12,7 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: 968630ee85b15121
+content_sha: 548680183f015916
 ---
 
 # Передача информации об остатках
@@ -36,6 +36,10 @@ content_sha: 968630ee85b15121
 Если в кабинете есть группы складов, используйте метод [PUT v2/campaigns/{campaignId}/offers/stocks](../../reference/stocks/updateStocks.md). [Что такое группы складов и зачем они нужны](https://yandex.ru/support/marketplace/assortment/operations/stocks.html#unified-stocks).
 
 {% endnote %}
+
+**Пошаговые инструкции**
+
+* [Передача остатков через API](../../step-by-step/stocks.md)
 
 {% include notitle [limit](../../_auto/method_limits/updateStocksOnPartnerWarehouses.md) %}
 

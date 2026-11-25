@@ -2,8 +2,8 @@
 title: Изменение статусов нескольких заказов
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/orders/updateOrderStatuses.md"
-fetched_at: "2026-11-24T02:39:58Z"
-content_sha: 7369d13681153061
+fetched_at: "2026-11-25T02:49:50Z"
+content_sha: 8a836066f57b0ae1
 ---
 
 ---
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/orders/updateOrderStatuses.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22247986
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22283548
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22247986
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22283548
 
 <!-- source: ru/api/orders/updateOrderStatuses.md -->
 <div class="openapi">
@@ -52,8 +52,6 @@ alternate:
   * Если магазин подтвердил заказ, но не может его выполнить (например, товар числится в базе, но отсутствует на складе или нет нужного цвета), то заказ из статуса `"status": "PROCESSING"` и этапа обработки `"substatus": "STARTED"` нужно перевести в статус `"status": "CANCELLED"` с причиной отмены заказа `"substatus": "SHOP_FAILED"`.
   * Если магазин подготовил заказ к отгрузке, но не может его выполнить (например, последний товар был поврежден или оказался с браком), то заказ из статуса `"status": "PROCESSING"` и этапа обработки `"substatus": "READY_TO_SHIP"` нужно перевести в статус `"status": "CANCELLED"` с причиной отмены заказа `"substatus": "SHOP_FAILED"`.
   
-  Полная информация о статусной модели DBS-заказов: [Как изменяются статусы заказов](https://yandex.ru/dev/market/partner-api/doc/ru/concepts/dbs-order-status-model.md).
-  
   {% cut "**Как подтвердить LaaS-заказ**" %}
   
   Для подтверждения черновика заказа передайте статус `"status": "PROCESSING"` с подстатусом `"substatus": "STARTED"`.
@@ -69,6 +67,13 @@ alternate:
   При успешном выполнении запроса отмена произойдет через некоторое время. [Как проверить статус операции](https://yandex.ru/dev/market/partner-api/doc/ru/reference/operations/getOperations.md)
   
   {% endcut %}
+  
+  **Пошаговые инструкции**
+  
+  * [Печать ярлыков и передача статуса «Готов к отгрузке»](https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/fbs.md#fulfillment)
+  * [Допустимые переходы между статусами DBS-заказов](https://yandex.ru/dev/market/partner-api/doc/ru/concepts/dbs-order-status-model.md)
+  * [Обработка заказов с цифровыми товарами](https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/digital.md)
+  * [Отменить заказ LaaS](https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/laas-order.md#cancel)
   
   <!-- source: ru/_auto/method_limits/updateOrderStatuses.md -->
   |<div style="text-align: left;">**⚙️ Лимит:** 10 000 заказов в час</div>|

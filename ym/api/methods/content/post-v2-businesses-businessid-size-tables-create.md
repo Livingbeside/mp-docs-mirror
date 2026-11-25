@@ -14,7 +14,7 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: c786d630dd935433
+content_sha: c1df4bebb9b1af82
 ---
 
 # Создание таблиц размеров
@@ -70,6 +70,10 @@ content_sha: c786d630dd935433
 Количество таблиц у бизнеса ограничено — суммарно по всем размерным характеристикам. Удалить таблицу нельзя.
 Если лимит исчерпан, таблица не создается и для нее возвращается ошибка `LIMIT_TABLES`. При одновременных
 запросах лимит проверяется нестрого, и таблиц может создаться больше.
+
+**Пошаговые инструкции**
+
+* [Создать свою таблицу](../../step-by-step/size-tables.md#create)
 
 {% include notitle [limit](../../_auto/method_limits/createContentSizeTables.md) %}
 

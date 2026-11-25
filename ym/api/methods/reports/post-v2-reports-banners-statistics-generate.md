@@ -13,7 +13,7 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: 5c47ecc4a9de59ef
+content_sha: 95bde3d3d352b8df
 ---
 
 # Отчет по охватному продвижению
@@ -33,6 +33,10 @@ content_sha: 5c47ecc4a9de59ef
 {% include notitle [tariff-period](../../_includes/common/report-data-period-400-days.md) %}
 
 {% endif %}
+
+**Пошаговые инструкции**
+
+* [Заказать отчёт или документ](../../step-by-step/reports.md#generate)
 
 {% include notitle [limit](../../_auto/method_limits/generateBannersStatisticsReport.md) %}
 

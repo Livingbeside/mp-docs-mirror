@@ -10,7 +10,7 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: 193244e21f2f2ec6
+content_sha: 41b5ffda11b599ca
 ---
 
 # Перенос заказов в следующую отгрузку
@@ -32,6 +32,10 @@ content_sha: 193244e21f2f2ec6
 Переносить заказы можно, если до формирования отгрузки осталось больше получаса.
 
 Перенос происходит не мгновенно, а занимает несколько минут.
+
+**Пошаговые инструкции**
+
+* [Если товара не хватает: перенос, отмена и сокращение заказа](../../step-by-step/fbs.md#cancel-by-seller)
 
 {% include notitle [limit](../../_auto/method_limits/transferOrdersFromShipment.md) %}
 

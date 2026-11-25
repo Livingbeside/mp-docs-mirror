@@ -2,8 +2,8 @@
 title: Добавление нового или изменение созданного комментария
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/goods-feedback/updateGoodsFeedbackComment.md"
-fetched_at: "2026-11-24T02:40:28Z"
-content_sha: 724b2f07143f5202
+fetched_at: "2026-11-25T02:50:19Z"
+content_sha: 200f74cc65ef595a
 ---
 
 ---
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/goods-feedback/updateGoodsFeedbackComment.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22247986
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22283548
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22247986
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22283548
 
 <!-- source: ru/api/goods-feedback/updateGoodsFeedbackComment.md -->
 <div class="openapi">
@@ -59,6 +59,10 @@ alternate:
   * `comment.id` — идентификатор комментария, который нужно изменить.
   
   Если передать одновременно `comment.parentId` и `comment.id`, будет изменен существующий комментарий.
+  
+  **Пошаговые инструкции**
+  
+  * [Отзывы о товарах](https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/goods-feedback.md)
   
   <!-- source: ru/_auto/method_limits/updateGoodsFeedbackComment.md -->
   |<div style="text-align: left;">**⚙️ Лимит:** 1 000 запросов в час</div>|
@@ -1198,7 +1202,7 @@ alternate:
       description: "Признак типа кабинета, от имени которого вызывается метод:\n{% if audience == \"partner\" %}\n\n- `SELLER` — продавец.\n\n{% endif %}\n\n- `ADVERTISER` — рекламодатель.\n\n{% if audience == \"advertiser\" %}\n\n{% note info \"Обязательно указывайте sourceType=ADVERTISER в каждом запросе.\" %}\n\n\_\n\n{% endnote %}\n\n{% endif %}\n"
       schema:
         $ref: >-
-          /home/sandbox/.ya/build/build_root/mib9/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/common/schemas.yaml#/SourceType
+          /home/sandbox/.ya/build/build_root/o9ik/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/common/schemas.yaml#/SourceType
         default: SELLER
   headers: []
   body: |-
@@ -1226,12 +1230,12 @@ alternate:
         description: Параметры комментария.
         $ref: '#/$defs/UpdateGoodsFeedbackCommentDTO'
     $defs:
-      /home/sandbox/.ya/build/build_root/mib9/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/common/schemas.yaml#/GoodsFeedbackCommentId:
+      /home/sandbox/.ya/build/build_root/o9ik/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/common/schemas.yaml#/GoodsFeedbackCommentId:
         description: |
           Идентификатор комментария к отзыву.
         type: integer
         format: int64
-      /home/sandbox/.ya/build/build_root/mib9/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/goods-feedback/api/updateGoodsFeedbackComment.yaml#/UpdateGoodsFeedbackCommentDTO:
+      /home/sandbox/.ya/build/build_root/o9ik/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/goods-feedback/api/updateGoodsFeedbackComment.yaml#/UpdateGoodsFeedbackCommentDTO:
         description: Комментарий к отзыву или другому комментарию.
         type: object
         required:

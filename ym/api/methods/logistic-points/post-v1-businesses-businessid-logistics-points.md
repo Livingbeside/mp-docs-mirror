@@ -10,7 +10,7 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: cb3a4013bc953745
+content_sha: b81221297f929db2
 ---
 
 # Получение точек ПВЗ Маркета
@@ -22,6 +22,11 @@ content_sha: cb3a4013bc953745
 Возвращает список пунктов выдачи заказов Маркета.
 
 Регулярно запрашивайте эту информацию, чтобы в системе магазина хранить актуальные данные. Например, раз в день.
+
+**Пошаговые инструкции**
+
+* [Создать заказ LaaS](../../step-by-step/laas-order.md#create)
+* [Создать возврат LaaS](../../step-by-step/laas-return.md#create)
 
 {% include notitle [limit](../../_auto/method_limits/getLogisticPoints.md) %}
 

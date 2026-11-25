@@ -13,7 +13,7 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: 2670efead9403ffc
+content_sha: abad97915cd1cb31
 ---
 
 # Информация об установленных ставках
@@ -29,6 +29,10 @@ content_sha: 2670efead9403ffc
 В ответе возвращаются значения только тех ставок, которые вы установили через запрос [PUT v2/businesses/{businessId}/bids](../../reference/bids/putBidsForBusiness.md).
 
 {% endnote %}
+
+**Пошаговые инструкции**
+
+* [Как получить установленные ставки](../../step-by-step/boost.md#get-bids)
 
 {% include notitle [limit](../../_auto/method_limits/getBidsInfoForBusiness.md) %}
 

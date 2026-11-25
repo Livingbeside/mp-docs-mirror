@@ -13,7 +13,7 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: 05809cd158c07ea4
+content_sha: e6360219d9f1b47f
 ---
 
 # Получение заявления на возврат
@@ -23,6 +23,10 @@ content_sha: 05809cd158c07ea4
 {% include notitle [access](../../_auto/method_scopes/getReturnApplication.md) %}
 
 Загружает заявление покупателя на возврат товара.
+
+**Пошаговые инструкции**
+
+* [Как работать с невыкупами и возвратами](../../step-by-step/returns.md#new-return)
 
 {% include notitle [limit](../../_auto/method_limits/getReturnApplication.md) %}
 

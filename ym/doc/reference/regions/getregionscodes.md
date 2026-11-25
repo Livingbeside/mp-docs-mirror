@@ -2,8 +2,8 @@
 title: Список допустимых кодов стран
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/regions/getRegionsCodes.md"
-fetched_at: "2026-11-24T02:40:37Z"
-content_sha: 8f549603842e8f62
+fetched_at: "2026-11-25T02:50:29Z"
+content_sha: a77e01c3269587bc
 ---
 
 ---
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/regions/getRegionsCodes.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22247986
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22283548
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22247986
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22283548
 
 <!-- source: ru/api/regions/getRegionsCodes.md -->
 <div class="openapi">
@@ -58,7 +58,11 @@ alternate:
   
   Возвращает список стран с их кодами в формате ISO 3166-1 alpha-2.
   
-  Страна производства `countryCode` понадобится при продаже товаров из-за рубежа для бизнеса. [Инструкция](https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/business-info.md)
+  Страна производства `countryCode` понадобится при продаже товаров из-за рубежа для бизнеса.
+  
+  **Пошаговые инструкции**
+  
+  * [Обработка заказов от юридических лиц](https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/business-info.md)
   
   <!-- source: ru/_auto/method_limits/getRegionsCodes.md -->
   |<div style="text-align: left;">**⚙️ Лимит:** 100 запросов в час</div>|

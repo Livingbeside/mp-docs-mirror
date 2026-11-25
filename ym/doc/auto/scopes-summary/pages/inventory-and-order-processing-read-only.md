@@ -2,8 +2,8 @@
 title: Просмотр информации о заказах
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/_auto/scopes_summary/pages/inventory-and-order-processing_read-only.md"
-fetched_at: "2026-11-24T02:39:18Z"
-content_sha: c5da0cbeefd461dd
+fetched_at: "2026-11-25T02:49:05Z"
+content_sha: 5be69f2ae0e56721
 ---
 
 ---
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/_auto/scopes_summary/pages/inventory-and-order-processing_read-only.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22247986
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22283548
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22247986
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22283548
 
 # Просмотр информации о заказах
 
@@ -93,9 +93,29 @@ alternate:
 Получение информации о нескольких отгрузках
 ||
 ||
+[GET v2/campaigns/{campaignId}/first-mile/shipments/{shipmentId}/act](https://yandex.ru/dev/market/partner-api/doc/ru/reference/shipments/downloadShipmentAct.md)
+|
+Получение акта приема-передачи
+||
+||
+[GET v2/campaigns/{campaignId}/first-mile/shipments/{shipmentId}/discrepancy-act](https://yandex.ru/dev/market/partner-api/doc/ru/reference/shipments/downloadShipmentDiscrepancyAct.md)
+|
+Получение акта расхождений
+||
+||
 [POST v2/reports/documents/shipment-list/generate](https://yandex.ru/dev/market/partner-api/doc/ru/reference/reports/generateShipmentListDocumentReport.md)
 |
 Получение листа сборки
+||
+||
+[GET v2/campaigns/{campaignId}/first-mile/shipments/{shipmentId}/transportation-waybill](https://yandex.ru/dev/market/partner-api/doc/ru/reference/shipments/downloadShipmentTransportationWaybill.md)
+|
+Получение транспортной накладной
+||
+||
+[GET v2/campaigns/{campaignId}/first-mile/shipments/{shipmentId}/inbound-act](https://yandex.ru/dev/market/partner-api/doc/ru/reference/shipments/downloadShipmentInboundAct.md)
+|
+Получение фактического акта приема-передачи
 ||
 |#
 
@@ -103,6 +123,16 @@ alternate:
 
 #|
 || **Метод** | **Описание метода** ||
+||
+[GET v2/campaigns/{campaignId}/orders/{orderId}/delivery/shipments/{shipmentId}/boxes/{boxId}/label](https://yandex.ru/dev/market/partner-api/doc/ru/reference/order-labels/generateOrderLabel.md)
+|
+Готовый ярлык‑наклейка для коробки в заказе
+||
+||
+[GET v2/campaigns/{campaignId}/orders/{orderId}/delivery/labels](https://yandex.ru/dev/market/partner-api/doc/ru/reference/order-labels/generateOrderLabels.md)
+|
+Готовые ярлыки‑наклейки на все коробки в одном заказе
+||
 ||
 [POST v2/reports/documents/labels/generate](https://yandex.ru/dev/market/partner-api/doc/ru/reference/reports/generateMassOrderLabelsReport.md)
 |
@@ -117,6 +147,11 @@ alternate:
 [GET v2/campaigns/{campaignId}/first-mile/shipments/{shipmentId}/orders/info](https://yandex.ru/dev/market/partner-api/doc/ru/reference/shipments/getShipmentOrdersInfo.md)
 |
 Получение информации о возможности печати ярлыков
+||
+||
+[GET v2/campaigns/{campaignId}/first-mile/shipments/{shipmentId}/pallet/labels](https://yandex.ru/dev/market/partner-api/doc/ru/reference/shipments/downloadShipmentPalletLabels.md)
+|
+Ярлыки для доверительной приемки
 ||
 |#
 

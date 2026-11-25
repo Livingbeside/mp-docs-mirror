@@ -10,7 +10,7 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: 66b1f8dfd9fdb309
+content_sha: adb9de425fe4461d
 ---
 
 # Получение временных интервалов для изменения заказа
@@ -20,6 +20,10 @@ content_sha: 66b1f8dfd9fdb309
 {% include notitle [access](../../_auto/method_scopes/getOrderUpdateOptions.md) %}
 
 Возвращает список доступных интервалов для изменения даты и времени курьерской доставки.
+
+**Пошаговые инструкции**
+
+* [Изменить заказ](../../step-by-step/laas-order.md#change)
 
 {% include notitle [limit](../../_auto/method_limits/getOrderUpdateOptions.md) %}
 

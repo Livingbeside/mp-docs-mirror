@@ -10,7 +10,7 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: e5d6ea312714793a
+content_sha: b74cc5b033f00643
 ---
 
 # Отчет по оборачиваемости
@@ -26,6 +26,10 @@ content_sha: e5d6ea312714793a
 {% include notitle [reports](../../_auto/reports/turnover/turnover.md) %}
 
 {% include notitle [tariff-period](../../_includes/common/report-data-period-unchanged.md) %}
+
+**Пошаговые инструкции**
+
+* [Заказать отчёт или документ](../../step-by-step/reports.md#generate)
 
 {% include notitle [limit](../../_auto/method_limits/generateGoodsTurnoverReport.md) %}
 

@@ -14,7 +14,7 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: e57d56b79813e692
+content_sha: a1a30898ba11e5e7
 ---
 
 # Удаление товаров из ассортимента магазина
@@ -32,6 +32,10 @@ content_sha: e57d56b79813e692
 {% endnote %}
 
 Товар не получится удалить, если он хранится на складах Маркета.
+
+**Пошаговые инструкции**
+
+* [Удаление товаров из каталога](../../step-by-step/assortment-add-goods.md#deletion)
 
 {% include notitle [limit](../../_auto/method_limits/deleteCampaignOffers.md) %}
 

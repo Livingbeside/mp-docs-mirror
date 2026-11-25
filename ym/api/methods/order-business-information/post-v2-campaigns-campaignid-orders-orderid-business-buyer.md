@@ -13,7 +13,7 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: 5422e8edf882ca37
+content_sha: aeb749f4def3315a
 ---
 
 # Информация о покупателе — юридическом лице
@@ -31,6 +31,10 @@ content_sha: 5422e8edf882ca37
 {% endnote %}
 
 Получить данные можно, только если заказ находится в статусе `PROCESSING`, `DELIVERY`, `PICKUP` или `DELIVERED`.
+
+**Пошаговые инструкции**
+
+* [Как получить информацию о покупателе](../../step-by-step/business-info.md#buyer-info)
 
 {% include notitle [limit](../../_auto/method_limits/getOrderBusinessBuyerInfo.md) %}
 

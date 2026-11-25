@@ -12,7 +12,7 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: 381db83c70bab8d0
+content_sha: 3aa3deb2e5a7ef13
 ---
 
 # Заказы, которые повлияли на индекс качества
@@ -22,6 +22,10 @@ content_sha: 381db83c70bab8d0
 {% include notitle [access](../../_auto/method_scopes/getQualityRatingDetails.md) %}
 
 Возвращает список заказов, которые повлияли на индекс качества магазина. Чтобы узнать значение индекса качества, выполните запрос [POST v2/businesses/{businessId}/ratings/quality](../../reference/ratings/getQualityRatings.md).
+
+**Пошаговые инструкции**
+
+* [Индекс качества](../../step-by-step/ratings.md)
 
 {% include notitle [limit](../../_auto/method_limits/getQualityRatingDetails.md) %}
 

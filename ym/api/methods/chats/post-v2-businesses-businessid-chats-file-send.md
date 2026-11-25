@@ -13,7 +13,7 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: f7abe6bc344a7986
+content_sha: 3671687205a5a6ae
 ---
 
 # Отправка файла в чат
@@ -23,6 +23,10 @@ content_sha: f7abe6bc344a7986
 {% include notitle [access](../../_auto/method_scopes/sendFileToChat.md) %}
 
 Отправляет файл в чат с покупателем.
+
+**Пошаговые инструкции**
+
+* [Чаты с покупателями](../../step-by-step/chats.md)
 
 {% include notitle [limit](../../_auto/method_limits/sendFileToChat.md) %}
 

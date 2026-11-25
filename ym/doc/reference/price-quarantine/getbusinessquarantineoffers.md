@@ -2,8 +2,8 @@
 title: Список товаров, находящихся в карантине по цене в кабинете
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/price-quarantine/getBusinessQuarantineOffers.md"
-fetched_at: "2026-11-24T02:39:55Z"
-content_sha: deaea0b8b652afe9
+fetched_at: "2026-11-25T02:49:46Z"
+content_sha: 89e5c480773350ee
 ---
 
 ---
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/price-quarantine/getBusinessQuarantineOffers.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22247986
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22283548
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22247986
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22283548
 
 <!-- source: ru/api/price-quarantine/getBusinessQuarantineOffers.md -->
 <div class="openapi">
@@ -59,6 +59,10 @@ alternate:
   В запросе можно использовать фильтры.
   
   Результаты возвращаются постранично.
+  
+  **Пошаговые инструкции**
+  
+  * [Как изменить цены на товары](https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/assortment-change-prices.md)
   
   <!-- source: ru/_auto/method_limits/getBusinessQuarantineOffers.md -->
   |<div style="text-align: left;">**⚙️ Лимит без подписки:** 5 000 запросов в минуту<br>**⭐️ [Лимит с подпиской Медиум](https://yandex.ru/support/marketplace/ru/marketing/subscription):** 10 000 запросов в минуту</div>|

@@ -2,8 +2,8 @@
 title: Передача количества упаковок для доверительной приемки
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/shipments/setShipmentPalletsCount.md"
-fetched_at: "2026-11-24T02:40:05Z"
-content_sha: 31f6b9845094e668
+fetched_at: "2026-11-25T02:49:58Z"
+content_sha: 669513a117b02137
 ---
 
 ---
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/shipments/setShipmentPalletsCount.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22247986
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22283548
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22247986
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22283548
 
 <!-- source: ru/api/shipments/setShipmentPalletsCount.md -->
 <div class="openapi">
@@ -55,6 +55,10 @@ alternate:
   {% endnote %}
   
   Получить PDF-файл с ярлыками для упаковок можно с помощью метода [GET v2/campaigns/{campaignId}/first-mile/shipments/{shipmentId}/pallet/labels](https://yandex.ru/dev/market/partner-api/doc/ru/reference/shipments/downloadShipmentPalletLabels.md).
+  
+  **Пошаговые инструкции**
+  
+  * [Работа с отгрузкой](https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/fbs.md#shipment)
   
   <!-- source: ru/_auto/method_limits/setShipmentPalletsCount.md -->
   |<div style="text-align: left;">**⚙️ Лимит:** 200 запросов в час</div>|

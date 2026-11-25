@@ -13,7 +13,7 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: a294738f3980c471
+content_sha: dce28c895ecd2f8a
 ---
 
 # Получение сообщения в чате
@@ -31,6 +31,10 @@ content_sha: a294738f3980c471
 [{#T}](../../push-notifications/index.md)
 
 {% endnote %}
+
+**Пошаговые инструкции**
+
+* [Как проверить, есть ли новые чаты или сообщения](../../step-by-step/chats.md#check)
 
 {% include notitle [limit](../../_auto/method_limits/getChatMessage.md) %}
 

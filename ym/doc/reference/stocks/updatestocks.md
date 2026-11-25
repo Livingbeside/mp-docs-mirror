@@ -2,8 +2,8 @@
 title: Передача информации об остатках
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/stocks/updateStocks.md"
-fetched_at: "2026-11-24T02:39:52Z"
-content_sha: 78830d98dfcd9286
+fetched_at: "2026-11-25T02:49:43Z"
+content_sha: ce8e6b08a7a03511
 ---
 
 ---
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/stocks/updateStocks.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22247986
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22283548
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22247986
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22283548
 
 <!-- source: ru/api/stocks/updateStocks.md -->
 <div class="openapi">
@@ -61,6 +61,10 @@ alternate:
   Это занимает до нескольких минут.
   
   {% endnote %}
+  
+  **Пошаговые инструкции**
+  
+  * [Передача остатков через API](https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/stocks.md)
   
   <!-- source: ru/_auto/method_limits/updateStocks.md -->
   |<div style="text-align: left;">**⚙️ Лимит:** 100 000 товаров в минуту</div>|
@@ -1041,7 +1045,7 @@ alternate:
                     type: string
                     format: date-time
     $defs:
-      /home/sandbox/.ya/build/build_root/mib9/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/common/schemas.yaml#/InternalOfferId:
+      /home/sandbox/.ya/build/build_root/o9ik/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/common/schemas.yaml#/InternalOfferId:
         description: >-
           Внутренний идентификатор товара в системах Маркета. Нужен для создания
           товаров Лавки с отличными offerId и article.

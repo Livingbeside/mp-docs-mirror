@@ -2,8 +2,8 @@
 title: Заказы, которые повлияли на индекс качества
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/ratings/getQualityRatingDetails.md"
-fetched_at: "2026-11-24T02:40:31Z"
-content_sha: c59e6e64381e9abf
+fetched_at: "2026-11-25T02:50:24Z"
+content_sha: 85d5b3cc6d3dc109
 ---
 
 ---
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/ratings/getQualityRatingDetails.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22247986
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22283548
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22247986
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22283548
 
 <!-- source: ru/api/ratings/getQualityRatingDetails.md -->
 <div class="openapi">
@@ -48,6 +48,10 @@ alternate:
   <!-- endsource: ru/_auto/method_scopes/getQualityRatingDetails.md -->
   
   Возвращает список заказов, которые повлияли на индекс качества магазина. Чтобы узнать значение индекса качества, выполните запрос [POST v2/businesses/{businessId}/ratings/quality](https://yandex.ru/dev/market/partner-api/doc/ru/reference/ratings/getQualityRatings.md).
+  
+  **Пошаговые инструкции**
+  
+  * [Индекс качества](https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/ratings.md)
   
   <!-- source: ru/_auto/method_limits/getQualityRatingDetails.md -->
   |<div style="text-align: left;">**⚙️ Лимит:** 5 000 запросов в час</div>|

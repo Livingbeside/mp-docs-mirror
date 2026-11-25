@@ -11,7 +11,7 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: d59f60450b14f0a0
+content_sha: ff6a2167765ef9ce
 ---
 
 # Получение файла со штрихкодами
@@ -25,6 +25,11 @@ content_sha: d59f60450b14f0a0
 Файл не получится сгенерировать, если в нем будет более 1 500 штрихкодов.
 
 Узнать статус генерации и получить ссылку на готовый файл можно с помощью запроса [GET v2/reports/info/{reportId}](../../reference/reports/getReportInfo.md).
+
+**Пошаговые инструкции**
+
+* [Получить файл со штрихкодами товаров в заявке](../../step-by-step/supplies.md)
+* [Заказать отчёт или документ](../../step-by-step/reports.md#generate)
 
 {% include notitle [limit](../../_auto/method_limits/generateBarcodesReport.md) %}
 

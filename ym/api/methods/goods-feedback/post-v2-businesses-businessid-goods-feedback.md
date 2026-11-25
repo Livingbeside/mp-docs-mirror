@@ -13,7 +13,7 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: 2472fad48e712347
+content_sha: c61d5c6161d22271
 ---
 
 # Получение отзывов о товарах продавца
@@ -35,6 +35,10 @@ content_sha: 2472fad48e712347
 Результаты возвращаются постранично.
 
 Отзывы расположены в порядке публикации, поэтому вы можете передавать определенный идентификатор страницы в `pageToken`, если вы получали его ранее.
+
+**Пошаговые инструкции**
+
+* [Отзывы о товарах](../../step-by-step/goods-feedback.md)
 
 {% include notitle [limit](../../_auto/method_limits/getGoodsFeedbacks.md) %}
 

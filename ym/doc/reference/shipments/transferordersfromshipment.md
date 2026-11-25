@@ -2,8 +2,8 @@
 title: Перенос заказов в следующую отгрузку
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/shipments/transferOrdersFromShipment.md"
-fetched_at: "2026-11-24T02:40:05Z"
-content_sha: a6e962f0b31e4b8a
+fetched_at: "2026-11-25T02:49:57Z"
+content_sha: 7719ddf4752df4cf
 ---
 
 ---
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/shipments/transferOrdersFromShipment.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22247986
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22283548
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22247986
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22283548
 
 <!-- source: ru/api/shipments/transferOrdersFromShipment.md -->
 <div class="openapi">
@@ -57,6 +57,10 @@ alternate:
   Переносить заказы можно, если до формирования отгрузки осталось больше получаса.
   
   Перенос происходит не мгновенно, а занимает несколько минут.
+  
+  **Пошаговые инструкции**
+  
+  * [Если товара не хватает: перенос, отмена и сокращение заказа](https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/fbs.md#cancel-by-seller)
   
   <!-- source: ru/_auto/method_limits/transferOrdersFromShipment.md -->
   |<div style="text-align: left;">**⚙️ Лимит:** 200 запросов в час</div>|

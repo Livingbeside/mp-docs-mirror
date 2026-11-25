@@ -2,8 +2,8 @@
 title: Добавление товаров в акцию или изменение их цен
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/promos/updatePromoOffers.md"
-fetched_at: "2026-11-24T02:39:56Z"
-content_sha: 4c9f76d604239450
+fetched_at: "2026-11-25T02:49:48Z"
+content_sha: 2e7427c4c0890d44
 ---
 
 ---
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/promos/updatePromoOffers.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22247986
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22283548
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22247986
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22283548
 
 <!-- source: ru/api/promos/updatePromoOffers.md -->
 <div class="openapi">
@@ -50,6 +50,10 @@ alternate:
   Добавляет товары в акцию или изменяет цены на товары, которые участвуют в акции.
   
   Изменения начинают действовать в течение 4–6 часов. Узнать, применились ли они, можно с помощью параметра `processing` в ответе метода [POST v2/businesses/{businessId}/promos](https://yandex.ru/dev/market/partner-api/doc/ru/reference/promos/getPromos.md).
+  
+  **Пошаговые инструкции**
+  
+  * [Управление акциями](https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/promos.md)
   
   <!-- source: ru/_auto/method_limits/updatePromoOffers.md -->
   |<div style="text-align: left;">**⚙️ Лимит:** 5 000 запросов в час</div>|

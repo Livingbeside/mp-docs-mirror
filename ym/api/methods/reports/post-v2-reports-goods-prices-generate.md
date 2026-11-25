@@ -13,7 +13,7 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: 99fe0c62813f49f7
+content_sha: ad2975c305d49cf4
 ---
 
 # Отчет «Цены»
@@ -44,6 +44,10 @@ content_sha: 99fe0c62813f49f7
 {% endlist %}
 
 {% include notitle [tariff-period](../../_includes/common/simultaneously-generated-reports-amount.md) %}
+
+**Пошаговые инструкции**
+
+* [Заказать отчёт или документ](../../step-by-step/reports.md#generate)
 
 {% include notitle [limit](../../_auto/method_limits/generateGoodsPricesReport.md) %}
 

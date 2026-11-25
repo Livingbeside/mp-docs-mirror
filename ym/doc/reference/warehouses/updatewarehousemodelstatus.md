@@ -2,8 +2,8 @@
 title: Включение/выключение модели работы склада
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/warehouses/updateWarehouseModelStatus.md"
-fetched_at: "2026-11-24T02:40:36Z"
-content_sha: 3a6e5d431786f539
+fetched_at: "2026-11-25T02:50:27Z"
+content_sha: 72c283083c9f41ae
 ---
 
 ---
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/warehouses/updateWarehouseModelStatus.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22247986
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22283548
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22247986
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22283548
 
 <!-- source: ru/api/warehouses/updateWarehouseModelStatus.md -->
 <div class="openapi">
@@ -47,6 +47,10 @@ alternate:
   Отключает или включает модель работы (FBS, DBS или Экспресс) для указанного склада.
   
   После отключения модели товары, которые работают по ней на данном складе, скрываются через 15 минут. После включения они возвращаются на витрину через 15 минут, а если модель была выключена 30 дней или дольше — через 4 часа.
+  
+  **Пошаговые инструкции**
+  
+  * [Отключить или включить модель работы склада](https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/warehouses.md#update-model-status)
   
   <!-- source: ru/_auto/method_limits/updateWarehouseModelStatus.md -->
   |<div style="text-align: left;">**⚙️ Лимит:** 100 запросов в час</div>|
@@ -901,7 +905,7 @@ alternate:
           * `false` — отключена.
         type: boolean
     $defs:
-      /home/sandbox/.ya/build/build_root/mib9/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/common/schemas.yaml#/WarehouseProgramType:
+      /home/sandbox/.ya/build/build_root/o9ik/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/common/schemas.yaml#/WarehouseProgramType:
         description: |
           Модель работы:
   

@@ -10,7 +10,7 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: 82a63a632c9a2882
+content_sha: dd6b119ff85c91d7
 ---
 
 # Получение статусов операций
@@ -20,6 +20,11 @@ content_sha: 82a63a632c9a2882
 {% include notitle [access](../../_auto/method_scopes/getOperations.md) %}
 
 Возвращает статусы запущенных операций по их идентификаторам.
+
+**Пошаговые инструкции**
+
+* [Работа с LaaS-заказом](../../step-by-step/laas-order.md)
+* [Проверить завершение операции отмены возврата](../../step-by-step/laas-return.md#cancel)
 
 {% include notitle [limit](../../_auto/method_limits/getOperations.md) %}
 

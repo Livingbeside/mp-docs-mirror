@@ -13,7 +13,7 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: c16ec71b779de4ef
+content_sha: 9c99c079ba3057cf
 ---
 
 # Пропуск реакции на отзывы
@@ -23,6 +23,10 @@ content_sha: c16ec71b779de4ef
 {% include notitle [access](../../_auto/method_scopes/skipGoodsFeedbacksReaction.md) %}
 
 Пропускает реакцию на отзыв — параметр `needReaction` принимает значение `false` в методе получения всех отзывов [POST v2/businesses/{businessId}/goods-feedback](../../reference/goods-feedback/getGoodsFeedbacks.md).
+
+**Пошаговые инструкции**
+
+* [Отзывы о товарах](../../step-by-step/goods-feedback.md)
 
 {% include notitle [limit](../../_auto/method_limits/skipGoodsFeedbacksReaction.md) %}
 

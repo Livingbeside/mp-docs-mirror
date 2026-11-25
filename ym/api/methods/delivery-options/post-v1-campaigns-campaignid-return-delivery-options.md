@@ -10,7 +10,7 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: c41995c4a858c6f5
+content_sha: ab2c77d2b1aa5645
 ---
 
 # Получение подходящих для возврата пунктов выдачи
@@ -20,6 +20,10 @@ content_sha: c41995c4a858c6f5
 {% include notitle [access](../../_auto/method_scopes/getReturnDeliveryOptions.md) %}
 
 Возвращает список идентификаторов пунктов выдачи, которые могут принять возврат указанных товаров.
+
+**Пошаговые инструкции**
+
+* [Создать возврат LaaS](../../step-by-step/laas-return.md#create)
 
 {% include notitle [limit](../../_auto/method_limits/getReturnDeliveryOptions.md) %}
 

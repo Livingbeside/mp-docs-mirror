@@ -14,7 +14,7 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: 8e9dfe46fb84566d
+content_sha: f659ed808ee00fcf
 ---
 
 # Список допустимых кодов стран
@@ -25,7 +25,11 @@ content_sha: 8e9dfe46fb84566d
 
 Возвращает список стран с их кодами в формате :no-translate[ISO 3166-1 alpha-2].
 
-Страна производства `countryCode` понадобится при продаже товаров из-за рубежа для бизнеса. [Инструкция](../../step-by-step/business-info.md)
+Страна производства `countryCode` понадобится при продаже товаров из-за рубежа для бизнеса.
+
+**Пошаговые инструкции**
+
+* [Обработка заказов от юридических лиц](../../step-by-step/business-info.md)
 
 {% include notitle [limit](../../_auto/method_limits/getRegionsCodes.md) %}
 

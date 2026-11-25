@@ -13,7 +13,7 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: 6d2d9f374d6a9855
+content_sha: 251363d3da11c8a7
 ---
 
 # Индекс качества магазинов
@@ -25,6 +25,10 @@ content_sha: 6d2d9f374d6a9855
 Возвращает значение индекса качества магазинов и его составляющие.
 
 Подробнее об индексе качества читайте [в Справке Маркета для продавцов](https://yandex.ru/support2/marketplace/ru/quality/score/).
+
+**Пошаговые инструкции**
+
+* [Индекс качества](../../step-by-step/ratings.md)
 
 {% include notitle [limit](../../_auto/method_limits/getQualityRatings.md) %}
 

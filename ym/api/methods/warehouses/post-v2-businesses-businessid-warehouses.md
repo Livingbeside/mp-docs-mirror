@@ -12,7 +12,7 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: 2f1a738e6de4ab6c
+content_sha: 8366c98c36bdac1d
 ---
 
 # Список складов
@@ -28,6 +28,10 @@ content_sha: 2f1a738e6de4ab6c
 Метод актуален для кабинетов с группами складов. Если в кабинете нет групп складов, используйте метод [POST v3/businesses/{businessId}/warehouses](../../reference/warehouses/getPartnerWarehouses.md). [Что такое группы складов и зачем они нужны](https://yandex.ru/support/marketplace/assortment/operations/stocks.html#unified-stocks).
 
 {% endnote %}
+
+**Пошаговые инструкции**
+
+* [Работа со складами](../../step-by-step/warehouses.md)
 
 {% include notitle [limit](../../_auto/method_limits/getPagedWarehouses.md) %}
 

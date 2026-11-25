@@ -13,7 +13,7 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: 4f4bc5b801b92f92
+content_sha: 46991353f46c3eed
 ---
 
 # Получение чата по идентификатору
@@ -31,6 +31,10 @@ content_sha: 4f4bc5b801b92f92
 [{#T}](../../push-notifications/index.md)
 
 {% endnote %}
+
+**Пошаговые инструкции**
+
+* [Как проверить, есть ли новые чаты или сообщения](../../step-by-step/chats.md#check)
 
 {% include notitle [limit](../../_auto/method_limits/getChat.md) %}
 

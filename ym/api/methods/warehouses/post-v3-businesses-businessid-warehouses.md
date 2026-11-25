@@ -12,7 +12,7 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: d39c3cf52841113f
+content_sha: a72754a9f2e77834
 ---
 
 # Список складов
@@ -30,6 +30,10 @@ content_sha: d39c3cf52841113f
 Метод возвращает только отдельные склады и не возвращает группы складов. Если в кабинете есть группы складов, используйте метод [POST v2/businesses/{businessId}/warehouses](../../reference/warehouses/getPagedWarehouses.md). [Что такое группы складов и зачем они нужны](https://yandex.ru/support/marketplace/assortment/operations/stocks.html#unified-stocks).
 
 {% endnote %}
+
+**Пошаговые инструкции**
+
+* [Работа со складами](../../step-by-step/warehouses.md)
 
 {% include notitle [limit](../../_auto/method_limits/getPartnerWarehouses.md) %}
 

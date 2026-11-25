@@ -2,8 +2,8 @@
 title: Информация об установленных ставках
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/bids/getBidsInfoForBusiness.md"
-fetched_at: "2026-11-24T02:40:31Z"
-content_sha: 1b03f19ea1ece685
+fetched_at: "2026-11-25T02:50:24Z"
+content_sha: 08c1470f52ab5751
 ---
 
 ---
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/bids/getBidsInfoForBusiness.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22247986
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22283548
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22247986
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22283548
 
 <!-- source: ru/api/bids/getBidsInfoForBusiness.md -->
 <div class="openapi">
@@ -57,6 +57,10 @@ alternate:
   В ответе возвращаются значения только тех ставок, которые вы установили через запрос [PUT v2/businesses/{businessId}/bids](https://yandex.ru/dev/market/partner-api/doc/ru/reference/bids/putBidsForBusiness.md).
   
   {% endnote %}
+  
+  **Пошаговые инструкции**
+  
+  * [Как получить установленные ставки](https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/boost.md#get-bids)
   
   <!-- source: ru/_auto/method_limits/getBidsInfoForBusiness.md -->
   |<div style="text-align: left;">**⚙️ Лимит без подписки:** 500 запросов в минуту<br>**⭐️ [Лимит с подпиской Медиум](https://yandex.ru/support/marketplace/ru/marketing/subscription):** 1 000 запросов в минуту</div>|

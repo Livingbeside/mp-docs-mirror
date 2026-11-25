@@ -2,8 +2,8 @@
 title: Информация о покупателе — юридическом лице
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/order-business-information/getOrderBusinessBuyerInfo.md"
-fetched_at: "2026-11-24T02:40:01Z"
-content_sha: fbe141b1bb2ca6a1
+fetched_at: "2026-11-25T02:49:54Z"
+content_sha: 01ee64f43c65d41e
 ---
 
 ---
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/order-business-information/getOrderBusinessBuyerInfo.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22247986
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22283548
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22247986
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22283548
 
 <!-- source: ru/api/order-business-information/getOrderBusinessBuyerInfo.md -->
 <div class="openapi">
@@ -55,6 +55,10 @@ alternate:
   {% endnote %}
   
   Получить данные можно, только если заказ находится в статусе `PROCESSING`, `DELIVERY`, `PICKUP` или `DELIVERED`.
+  
+  **Пошаговые инструкции**
+  
+  * [Как получить информацию о покупателе](https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/business-info.md#buyer-info)
   
   <!-- source: ru/_auto/method_limits/getOrderBusinessBuyerInfo.md -->
   |<div style="text-align: left;">**⚙️ Лимит:** 3 000 запросов в час</div>|

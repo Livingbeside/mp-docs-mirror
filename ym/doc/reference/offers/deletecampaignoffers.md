@@ -2,8 +2,8 @@
 title: Удаление товаров из ассортимента магазина
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/offers/deleteCampaignOffers.md"
-fetched_at: "2026-11-24T02:39:50Z"
-content_sha: 6437c1411df578cb
+fetched_at: "2026-11-25T02:49:40Z"
+content_sha: bdfdb826dccb128a
 ---
 
 ---
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/offers/deleteCampaignOffers.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22247986
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22283548
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22247986
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22283548
 
 <!-- source: ru/api/offers/deleteCampaignOffers.md -->
 <div class="openapi">
@@ -53,6 +53,10 @@ alternate:
   {% endnote %}
   
   Товар не получится удалить, если он хранится на складах Маркета.
+  
+  **Пошаговые инструкции**
+  
+  * [Удаление товаров из каталога](https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/assortment-add-goods.md#deletion)
   
   <!-- source: ru/_auto/method_limits/deleteCampaignOffers.md -->
   |<div style="text-align: left;">**⚙️ Лимит без подписки:** 5 000 товаров в минуту<br>**⭐️ [Лимит с подпиской Медиум](https://yandex.ru/support/marketplace/ru/marketing/subscription):** 10 000 товаров в минуту</div>|

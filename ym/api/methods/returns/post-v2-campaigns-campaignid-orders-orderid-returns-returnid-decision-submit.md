@@ -13,7 +13,7 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: 7ddf1817020eaa9e
+content_sha: 553bb941c93c4a67
 ---
 
 # Передача решения по возврату
@@ -29,6 +29,10 @@ content_sha: 7ddf1817020eaa9e
 Получите список доступных решений — [POST v1/businesses/{businessId}/returns/decisions](../../reference/returns/getReturnAvailableDecisions.md).
 
 {% endnote %}
+
+**Пошаговые инструкции**
+
+* [Как работать с невыкупами и возвратами](../../step-by-step/returns.md#new-return)
 
 {% include notitle [limit](../../_auto/method_limits/submitReturnDecision.md) %}
 

@@ -2,8 +2,8 @@
 title: Получение файла со штрихкодами
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/reports/generateBarcodesReport.md"
-fetched_at: "2026-11-24T02:39:43Z"
-content_sha: a592b167094c4cd0
+fetched_at: "2026-11-25T02:49:32Z"
+content_sha: 12653da87f390fb4
 ---
 
 ---
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/reports/generateBarcodesReport.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22247986
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22283548
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22247986
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22283548
 
 <!-- source: ru/api/reports/generateBarcodesReport.md -->
 <div class="openapi">
@@ -51,6 +51,11 @@ alternate:
   Файл не получится сгенерировать, если в нем будет более 1 500 штрихкодов.
   
   Узнать статус генерации и получить ссылку на готовый файл можно с помощью запроса [GET v2/reports/info/{reportId}](https://yandex.ru/dev/market/partner-api/doc/ru/reference/reports/getReportInfo.md).
+  
+  **Пошаговые инструкции**
+  
+  * [Получить файл со штрихкодами товаров в заявке](https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/supplies.md)
+  * [Заказать отчёт или документ](https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/reports.md#generate)
   
   <!-- source: ru/_auto/method_limits/generateBarcodesReport.md -->
   |<div style="text-align: left;">**⚙️ Лимит без подписки:** 100 запросов в час<br>**⭐️ [Лимит с подпиской Медиум](https://yandex.ru/support/marketplace/ru/marketing/subscription):** 1 000 запросов в час</div>|
@@ -1065,7 +1070,7 @@ alternate:
           `supplyRequestId`, но не оба сразу.
         $ref: '#/$defs/SupplyRequestId'
     $defs:
-      /home/sandbox/.ya/build/build_root/mib9/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/supply-requests/schemas.yaml#/SupplyRequestId:
+      /home/sandbox/.ya/build/build_root/o9ik/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/supply-requests/schemas.yaml#/SupplyRequestId:
         type: integer
         format: int64
         minimum: 1

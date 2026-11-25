@@ -2,8 +2,8 @@
 title: Добавление товаров в каталог и изменение информации о них
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/business-offer-mappings/updateOfferMappings.md"
-fetched_at: "2026-11-24T02:39:42Z"
-content_sha: da762ff0ad3be879
+fetched_at: "2026-11-25T02:49:31Z"
+content_sha: 51163fce7e118814
 ---
 
 ---
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/business-offer-mappings/updateOfferMappings.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22247986
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22283548
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22247986
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22283548
 
 <!-- source: ru/api/business-offer-mappings/updateOfferMappings.md -->
 <div class="openapi">
@@ -108,6 +108,12 @@ alternate:
   Это занимает до нескольких минут.
   
   {% endnote %}
+  
+  **Пошаговые инструкции**
+  
+  * [Добавление и редактирование товаров](https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/assortment-add-goods.md)
+  * [Рекомендации Маркета по карточкам](https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/recommendations.md)
+  * [Передача значений характеристики](https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/parameter-values.md)
   
   <!-- source: ru/_auto/method_limits/updateOfferMappings.md -->
   |<div style="text-align: left;">**⚙️ Лимит без подписки:** 5 000 товаров в минуту<br>**⭐️ [Лимит с подпиской Медиум](https://yandex.ru/support/marketplace/ru/marketing/subscription):** 10 000 товаров в минуту</div>|
@@ -2721,8 +2727,6 @@ alternate:
   
     При **изменении** характеристик передавайте только те, значение которых нужно обновить. Если в `marketCategoryId` вы меняете категорию, значения общих характеристик для старой и новой категории сохранятся, передавать их не нужно.
   
-    Подробнее читайте в [«Передача значений характеристики»](https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/parameter-values.md).
-  
   
     _Min items:_{.json-schema-reset .json-schema-assertion} `1`
   
@@ -4165,7 +4169,7 @@ alternate:
       required: false
       schema:
         $ref: >-
-          /home/sandbox/.ya/build/build_root/mib9/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/business-offer-mappings/schemas.yaml#/CatalogLanguageType
+          /home/sandbox/.ya/build/build_root/o9ik/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/business-offer-mappings/schemas.yaml#/CatalogLanguageType
   headers: []
   body: |-
     {
@@ -4267,18 +4271,18 @@ alternate:
           Маркет, передайте значение `true`.
         type: boolean
     $defs:
-      /home/sandbox/.ya/build/build_root/mib9/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/common/schemas.yaml#/InternalOfferId:
+      /home/sandbox/.ya/build/build_root/o9ik/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/common/schemas.yaml#/InternalOfferId:
         description: >-
           Внутренний идентификатор товара в системах Маркета. Нужен для создания
           товаров Лавки с отличными offerId и article.
         type: string
         minLength: 1
         maxLength: 255
-      /home/sandbox/.ya/build/build_root/mib9/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/common/schemas.yaml#/Url:
+      /home/sandbox/.ya/build/build_root/o9ik/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/common/schemas.yaml#/Url:
         type: string
         minLength: 1
         maxLength: 2000
-      /home/sandbox/.ya/build/build_root/mib9/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/business-offer-mappings/schemas.yaml#/OfferWeightDimensionsDTO:
+      /home/sandbox/.ya/build/build_root/o9ik/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/business-offer-mappings/schemas.yaml#/OfferWeightDimensionsDTO:
         description: >
           Габариты упаковки и вес товара.
   
@@ -4320,7 +4324,7 @@ alternate:
             example: 1.001
             type: number
             minimum: 0
-      /home/sandbox/.ya/build/build_root/mib9/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/common/schemas.yaml#/TimeUnitType:
+      /home/sandbox/.ya/build/build_root/o9ik/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/common/schemas.yaml#/TimeUnitType:
         description: |
           Единица измерения времени:
   
@@ -4336,7 +4340,7 @@ alternate:
           - WEEK
           - MONTH
           - YEAR
-      /home/sandbox/.ya/build/build_root/mib9/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/business-offer-mappings/schemas.yaml#/TimePeriodDTO:
+      /home/sandbox/.ya/build/build_root/o9ik/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/business-offer-mappings/schemas.yaml#/TimePeriodDTO:
         description: >-
           Временной отрезок с комментарием. Требования к содержанию комментария
           зависят от контекста использования параметра и указаны в описании поля,
@@ -4356,7 +4360,7 @@ alternate:
             description: Комментарий.
             type: string
             maxLength: 500
-      /home/sandbox/.ya/build/build_root/mib9/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/business-offer-mappings/schemas.yaml#/CommodityCodeType:
+      /home/sandbox/.ya/build/build_root/o9ik/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/business-offer-mappings/schemas.yaml#/CommodityCodeType:
         description: >
           Тип товарного кода:
   
@@ -4379,7 +4383,7 @@ alternate:
           - CUSTOMS_COMMODITY_CODE
           - IKPU_CODE
           - OKPD2_CODE
-      /home/sandbox/.ya/build/build_root/mib9/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/business-offer-mappings/schemas.yaml#/OfferConditionType:
+      /home/sandbox/.ya/build/build_root/o9ik/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/business-offer-mappings/schemas.yaml#/OfferConditionType:
         description: >
           Тип уценки:
   
@@ -4409,7 +4413,7 @@ alternate:
           - REDUCTION
           - RENOVATED
           - NOT_SPECIFIED
-      /home/sandbox/.ya/build/build_root/mib9/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/business-offer-mappings/schemas.yaml#/OfferConditionQualityType:
+      /home/sandbox/.ya/build/build_root/o9ik/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/business-offer-mappings/schemas.yaml#/OfferConditionQualityType:
         description: |
           Внешний вид товара:
   
@@ -4423,7 +4427,7 @@ alternate:
           - EXCELLENT
           - GOOD
           - NOT_SPECIFIED
-      /home/sandbox/.ya/build/build_root/mib9/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/business-offer-mappings/schemas.yaml#/OfferConditionDTO:
+      /home/sandbox/.ya/build/build_root/o9ik/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/business-offer-mappings/schemas.yaml#/OfferConditionDTO:
         description: |
           Состояние уцененного товара.
         type: object
@@ -4441,7 +4445,7 @@ alternate:
               Описание товара. Подробно опишите дефекты, насколько они заметны и
               где их искать.
             type: string
-      /home/sandbox/.ya/build/build_root/mib9/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/business-offer-mappings/schemas.yaml#/OfferType:
+      /home/sandbox/.ya/build/build_root/o9ik/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/business-offer-mappings/schemas.yaml#/OfferType:
         description: "Особый тип товара:\n\n* `DEFAULT` — товары, для которых вы передавали особый тип ранее и хотите убрать его.\n* `MEDICINE` — лекарства.\n* `BOOK` — бумажные и электронные книги.\n* `AUDIOBOOK` — аудиокниги.\n* `ARTIST_TITLE` — музыкальная и видеопродукция.\n* `ON_DEMAND` — товары на заказ.\n* `ALCOHOL` — алкоголь.\n\n{% note info \"Если ваш товар —\_книга\" %}\n\nУкажите год издания в характеристиках товара. [Подробнее о параметре](../../reference/business-offer-mappings/updateOfferMappings.md#offerparamdto)\n\n{% endnote %}\n"
         type: string
         enum:
@@ -4452,7 +4456,7 @@ alternate:
           - ARTIST_TITLE
           - ON_DEMAND
           - ALCOHOL
-      /home/sandbox/.ya/build/build_root/mib9/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/business-offer-mappings/schemas.yaml#/AgeUnitType:
+      /home/sandbox/.ya/build/build_root/o9ik/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/business-offer-mappings/schemas.yaml#/AgeUnitType:
         description: |
           Единицы измерения возраста:
   
@@ -4462,7 +4466,7 @@ alternate:
         enum:
           - YEAR
           - MONTH
-      /home/sandbox/.ya/build/build_root/mib9/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/business-offer-mappings/schemas.yaml#/AgeDTO:
+      /home/sandbox/.ya/build/build_root/o9ik/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/business-offer-mappings/schemas.yaml#/AgeDTO:
         description: Возраст в заданных единицах измерения.
         type: object
         required:
@@ -4478,7 +4482,7 @@ alternate:
             description: |
               Единица измерения.
             $ref: '#/$defs/AgeUnitType'
-      /home/sandbox/.ya/build/build_root/mib9/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/common/schemas.yaml#/CurrencyType:
+      /home/sandbox/.ya/build/build_root/o9ik/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/common/schemas.yaml#/CurrencyType:
         type: string
         description: |
           Коды валют:
@@ -4612,7 +4616,7 @@ alternate:
           - NAD
           - TL
           - UE
-      /home/sandbox/.ya/build/build_root/mib9/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/common/catalog-common-schemas.yaml#/PriceWithDiscountDTO:
+      /home/sandbox/.ya/build/build_root/o9ik/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/common/catalog-common-schemas.yaml#/PriceWithDiscountDTO:
         description: Цена с указанием скидки.
         type: object
         allOf:
@@ -4645,7 +4649,7 @@ alternate:
                 type: number
                 minimum: 0
                 exclusiveMinimum: true
-      /home/sandbox/.ya/build/build_root/mib9/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/common/catalog-common-schemas.yaml#/BasePriceDTO:
+      /home/sandbox/.ya/build/build_root/o9ik/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/common/catalog-common-schemas.yaml#/BasePriceDTO:
         description: Цена товара.
         type: object
         required:
@@ -4660,7 +4664,7 @@ alternate:
           currencyId:
             description: Валюта.
             $ref: '#/$defs/CurrencyType'
-      /home/sandbox/.ya/build/build_root/mib9/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/business-offer-mappings/api/updateOfferMappings.yaml#/UpdateOfferDTO:
+      /home/sandbox/.ya/build/build_root/o9ik/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/business-offer-mappings/api/updateOfferMappings.yaml#/UpdateOfferDTO:
         description: Параметры товара.
         type: object
         allOf:
@@ -5249,10 +5253,6 @@ alternate:
                   которых нужно обновить. Если в `marketCategoryId` вы меняете
                   категорию, значения общих характеристик для старой и новой
                   категории сохранятся, передавать их не нужно.
-  
-  
-                  Подробнее читайте в [«Передача значений
-                  характеристики»](../../step-by-step/parameter-values.md).
                 type: array
                 nullable: true
                 minItems: 1
@@ -5415,12 +5415,12 @@ alternate:
                     - TYPE
                     - VENDOR_CODE
                     - VIDEOS
-      /home/sandbox/.ya/build/build_root/mib9/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/common/schemas.yaml#/MarketSku:
+      /home/sandbox/.ya/build/build_root/o9ik/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/common/schemas.yaml#/MarketSku:
         description: Идентификатор карточки товара на Маркете.
         type: integer
         format: int64
         minimum: 1
-      /home/sandbox/.ya/build/build_root/mib9/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/business-offer-mappings/schemas.yaml#/UpdateMappingDTO:
+      /home/sandbox/.ya/build/build_root/o9ik/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/business-offer-mappings/schemas.yaml#/UpdateMappingDTO:
         description: >
           Карточка на Маркете, которая, с вашей точки зрения, подходит товару.
           Чтобы определить идентификатор подходящей карточки, воспользуйтесь

@@ -2,8 +2,8 @@
 title: Индекс качества магазинов
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/ratings/getQualityRatings.md"
-fetched_at: "2026-11-24T02:40:31Z"
-content_sha: a7471e7e88df8c2d
+fetched_at: "2026-11-25T02:50:24Z"
+content_sha: 9bf09e6fba58b65b
 ---
 
 ---
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/ratings/getQualityRatings.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22247986
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22283548
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22247986
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22283548
 
 <!-- source: ru/api/ratings/getQualityRatings.md -->
 <div class="openapi">
@@ -50,6 +50,10 @@ alternate:
   Возвращает значение индекса качества магазинов и его составляющие.
   
   Подробнее об индексе качества читайте [в Справке Маркета для продавцов](https://yandex.ru/support2/marketplace/ru/quality/score/).
+  
+  **Пошаговые инструкции**
+  
+  * [Индекс качества](https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/ratings.md)
   
   <!-- source: ru/_auto/method_limits/getQualityRatings.md -->
   |<div style="text-align: left;">**⚙️ Лимит:** 500 запросов в час</div>|

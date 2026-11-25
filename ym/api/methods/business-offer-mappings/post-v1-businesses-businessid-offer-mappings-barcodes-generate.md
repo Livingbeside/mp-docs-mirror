@@ -14,7 +14,7 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: 9aaae70b9669ad76
+content_sha: 40d7757dd3e41ed1
 ---
 
 # Генерация штрихкодов
@@ -26,6 +26,10 @@ content_sha: 9aaae70b9669ad76
 Генерирует штрихкоды и присваивает их указанным товарам.
 
 Если у товара на упаковке уже есть штрихкод производителя, передайте его в параметре `barcodes` в методе [POST v2/businesses/{businessId}/offer-mappings/update](../../reference/business-offer-mappings/updateOfferMappings.md). Генерировать новый не нужно.
+
+**Пошаговые инструкции**
+
+* [Сгенерировать штрихкоды при добавлении товаров](../../step-by-step/assortment-add-goods.md#add)
 
 {% include notitle [limit](../../_auto/method_limits/generateOfferBarcodes.md) %}
 

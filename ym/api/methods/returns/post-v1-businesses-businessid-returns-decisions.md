@@ -13,7 +13,7 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: 0dd363418bcb126e
+content_sha: c9713108ce022fcb
 ---
 
 # Получение возможных решений по возврату
@@ -23,6 +23,10 @@ content_sha: 0dd363418bcb126e
 {% include notitle [access](../../_auto/method_scopes/getReturnAvailableDecisions.md) %}
 
 Возвращает список доступных решений по возврату.
+
+**Пошаговые инструкции**
+
+* [Как работать с невыкупами и возвратами](../../step-by-step/returns.md#new-return)
 
 {% include notitle [limit](../../_auto/method_limits/getReturnAvailableDecisions.md) %}
 

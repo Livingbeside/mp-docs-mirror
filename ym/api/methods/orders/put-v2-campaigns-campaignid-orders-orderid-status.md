@@ -13,7 +13,7 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: a90e04f40f5d53e4
+content_sha: df91fd1d017c08d3
 ---
 
 # Изменение статуса одного заказа
@@ -27,8 +27,6 @@ content_sha: a90e04f40f5d53e4
 * Если магазин подтвердил и подготовил заказ к отправке, то заказ из статуса `"status": "PROCESSING"` и этапа обработки `"substatus": "STARTED"` нужно перевести в статус `"status": "PROCESSING"` и этап обработки `"substatus": "READY_TO_SHIP"`.
 * Если магазин подтвердил заказ, но не может его выполнить (например, товар числится в базе, но отсутствует на складе или нет нужного цвета), то заказ из статуса `"status": "PROCESSING"` и этапа обработки `"substatus": "STARTED"` нужно перевести в статус `"status": "CANCELLED"` с причиной отмены заказа `"substatus": "SHOP_FAILED"`.
 * Если магазин подготовил заказ к отгрузке, но не может его выполнить (например, последний товар был поврежден или оказался с браком), то заказ из статуса `"status": "PROCESSING"` и этапа обработки `"substatus": "READY_TO_SHIP"` нужно перевести в статус `"status": "CANCELLED"` с причиной отмены заказа `"substatus": "SHOP_FAILED"`.
-
-Полная информация о статусной модели DBS-заказов: [Как изменяются статусы заказов](../../concepts/dbs-order-status-model.md).
 
 {% cut "**Как подтвердить LaaS-заказ**" %}
 
@@ -45,6 +43,15 @@ content_sha: a90e04f40f5d53e4
 При успешном выполнении запроса отмена произойдет через некоторое время. [Как проверить статус операции](../../reference/operations/getOperations.md)
 
 {% endcut %}
+
+**Пошаговые инструкции**
+
+* [Обработка FBS-заказов](../../step-by-step/fbs.md)
+* [Обработка Экспресс-заказов](../../step-by-step/express.md)
+* [Изменить статус DBS-заказа](../../concepts/dbs-order-status-model.md)
+* [Обработка заказов с цифровыми товарами](../../step-by-step/digital.md)
+* [Работа с LaaS-заказом](../../step-by-step/laas-order.md)
+* [Изменить статус LaaS-заказа](../../step-by-step/laas-order-status-model.md)
 
 {% include notitle [limit](../../_auto/method_limits/updateOrderStatus.md) %}
 

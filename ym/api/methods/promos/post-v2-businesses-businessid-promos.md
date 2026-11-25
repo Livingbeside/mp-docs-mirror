@@ -13,7 +13,7 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: 7f03a5b08fc84aea
+content_sha: 622479289d1ef50f
 ---
 
 # Получение списка акций
@@ -33,6 +33,10 @@ content_sha: 7f03a5b08fc84aea
 * прямая скидка;
 * флеш-акция;
 * скидка по промокоду.
+
+**Пошаговые инструкции**
+
+* [Управление акциями](../../step-by-step/promos.md)
 
 {% include notitle [limit](../../_auto/method_limits/getPromos.md) %}
 

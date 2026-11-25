@@ -10,7 +10,7 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: 4fc6294552ee30e1
+content_sha: 5b2fa37785c1dbfa
 ---
 
 # Подтверждение ближайшей отгрузки и получение акта приема-передачи для нее
@@ -76,6 +76,10 @@ content_sha: 4fc6294552ee30e1
 Подробнее о работе с актами приема-передачи читайте [в Справке Маркета для продавцов](https://yandex.ru/support/marketplace/ru/orders/fbs/process#act).
 
 {% endnote %}
+
+**Пошаговые инструкции**
+
+* [Работа с отгрузкой](../../step-by-step/fbs.md#shipment)
 
 {% include notitle [limit](../../_auto/method_limits/downloadShipmentReceptionTransferAct.md) %}
 

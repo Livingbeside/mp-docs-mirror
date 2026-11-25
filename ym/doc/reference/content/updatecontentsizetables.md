@@ -2,8 +2,8 @@
 title: Обновление таблиц размеров
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/content/updateContentSizeTables.md"
-fetched_at: "2026-11-24T02:39:48Z"
-content_sha: aa6a1c8e37aa433e
+fetched_at: "2026-11-25T02:49:36Z"
+content_sha: bc6a1f2539fcb3e7
 ---
 
 ---
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/content/updateContentSizeTables.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22247986
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22283548
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22247986
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22283548
 
 <!-- source: ru/api/content/updateContentSizeTables.md -->
 <div class="openapi">
@@ -117,6 +117,10 @@ alternate:
   Передавать товары повторно не нужно.
   
   Если запрос завершился ошибкой с кодом 5xx, его можно повторить: таблицы заменятся тем же содержимым.
+  
+  **Пошаговые инструкции**
+  
+  * [Создать свою таблицу](https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/size-tables.md#create)
   
   <!-- source: ru/_auto/method_limits/updateContentSizeTables.md -->
   |<div style="text-align: left;">**⚙️ Лимит без подписки:** 5 запросов в минуту<br>**⭐️ [Лимит с подпиской Медиум](https://yandex.ru/support/marketplace/ru/marketing/subscription):** 10 запросов в минуту</div>|

@@ -11,7 +11,7 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: ccc65e418f9e05bd
+content_sha: b309229446c6b0f1
 ---
 
 # Получение информации о заявках на поставку, вывоз и утилизацию
@@ -21,6 +21,10 @@ content_sha: ccc65e418f9e05bd
 {% include notitle [access](../../_auto/method_scopes/getSupplyRequests.md) %}
 
 По указанным фильтрам возвращает заявки на поставку, вывоз и утилизацию, а также информацию по ним.
+
+**Пошаговые инструкции**
+
+* [Заявки на поставку товаров на склад, вывоз или утилизацию](../../step-by-step/supplies.md)
 
 {% include notitle [limit](../../_auto/method_limits/getSupplyRequests.md) %}
 

@@ -2,8 +2,8 @@
 title: Ярлыки для доверительной приемки
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/shipments/downloadShipmentPalletLabels.md"
-fetched_at: "2026-11-24T02:40:08Z"
-content_sha: 0a8d68eddb4cd7c4
+fetched_at: "2026-11-25T02:50:02Z"
+content_sha: f68c24eb2df3a3a7
 ---
 
 ---
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/shipments/downloadShipmentPalletLabels.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22247986
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22283548
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22247986
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22283548
 
 <!-- source: ru/api/shipments/downloadShipmentPalletLabels.md -->
 <div class="openapi">
@@ -39,7 +39,9 @@ alternate:
   {% cut "**Если вы используете API-Key-токен, для вызова метода необходим один из доступов в списке**" %}
 
   * inventory-and-order-processing — [Обработка заказов и учёт товаров](https://yandex.ru/dev/market/partner-api/doc/ru/_auto/scopes_summary/pages/inventory-and-order-processing.md)
+  * inventory-and-order-processing:read-only — [Просмотр информации о заказах](https://yandex.ru/dev/market/partner-api/doc/ru/_auto/scopes_summary/pages/inventory-and-order-processing_read-only.md)
   * all-methods — Полное управление кабинетом
+  * all-methods:read-only — Просмотр всех данных
 
   {% endcut %}
   <!-- endsource: ru/_auto/method_scopes/downloadShipmentPalletLabels.md -->
@@ -49,6 +51,10 @@ alternate:
   Распечатайте по несколько копий каждого ярлыка: на одну упаковку нужно наклеить минимум 2 ярлыка с разных сторон.
   
   Количество упаковок в отгрузке передается в методе [PUT v2/campaigns/{campaignId}/first-mile/shipments/{shipmentId}/pallets](https://yandex.ru/dev/market/partner-api/doc/ru/reference/shipments/setShipmentPalletsCount.md).
+  
+  **Пошаговые инструкции**
+  
+  * [Работа с отгрузкой](https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/fbs.md#shipment)
   
   <!-- source: ru/_auto/method_limits/downloadShipmentPalletLabels.md -->
   |<div style="text-align: left;">**⚙️ Лимит:** 200 запросов в час</div>|
@@ -727,7 +733,7 @@ alternate:
       required: false
       schema:
         $ref: >-
-          /home/sandbox/.ya/build/build_root/mib9/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/shipments/schemas.yaml#/ShipmentPalletLabelPageFormatType
+          /home/sandbox/.ya/build/build_root/o9ik/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/shipments/schemas.yaml#/ShipmentPalletLabelPageFormatType
       description: |
         Формат страниц PDF-файла с ярлыками:
   

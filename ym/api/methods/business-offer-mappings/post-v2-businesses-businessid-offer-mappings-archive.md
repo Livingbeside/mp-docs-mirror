@@ -13,7 +13,7 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: 50e8a148c389a30d
+content_sha: b432f728b2250acf
 ---
 
 # Добавление товаров в архив
@@ -29,6 +29,10 @@ content_sha: 50e8a148c389a30d
 Вначале такой товар нужно распродать или вывезти.
 
 {% endnote %}
+
+**Пошаговые инструкции**
+
+* [Управление товарами в архиве](../../step-by-step/assortment-archive.md)
 
 {% include notitle [limit](../../_auto/method_limits/addOffersToArchive.md) %}
 

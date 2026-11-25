@@ -12,7 +12,7 @@ tags:
 spec_version: LATEST
 source: "https://yandex.ru/dev/market/partner-api/"
 deprecated: false
-content_sha: cccb2e270e4adbf3
+content_sha: 9bce30c8b030d0e6
 ---
 
 # Передача информации об остатках
@@ -38,6 +38,10 @@ content_sha: cccb2e270e4adbf3
 Это занимает до нескольких минут.
 
 {% endnote %}
+
+**Пошаговые инструкции**
+
+* [Передача остатков через API](../../step-by-step/stocks.md)
 
 {% include notitle [limit](../../_auto/method_limits/updateStocks.md) %}
 
