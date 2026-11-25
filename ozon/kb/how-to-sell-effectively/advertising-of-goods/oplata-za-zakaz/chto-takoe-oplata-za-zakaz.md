@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /how-to-sell-effectively/advertising-of-goods/oplata-za-zakaz/chto-takoe-oplata-za-zakaz
 source: "https://seller-edu.ozon.ru/libra/how-to-sell-effectively/advertising-of-goods/oplata-za-zakaz/chto-takoe-oplata-za-zakaz"
-updated: "2026-11-06 13:38:49"
+updated: "2026-11-20 08:06:48"
 doc_id: 25622
-fetched_at: "2026-11-07T02:53:28Z"
-content_sha: 2ad5da0d33b97817
+fetched_at: "2026-11-25T05:30:05Z"
+content_sha: 01cda9029cdc0f18
 ---
 
 # Что такое «Оплата за заказ»
@@ -48,7 +48,7 @@ _Главная / Продвижение / Продвижение товаров
 
 Работает только при [продвижении выбранных товаров](https://seller-edu.ozon.ru/libra/how-to-sell-effectively/advertising-of-goods/oplata-za-zakaz/chto-takoe-oplata-za-zakaz#%D0%BF%D1%80%D0%BE%D0%B4%D0%B2%D0%B8%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B4%D0%BB%D1%8F-%D0%B2%D1%8B%D0%B1%D1%80%D0%B0%D0%BD%D0%BD%D1%8B%D1%85-%D1%82%D0%BE%D0%B2%D0%B0%D1%80%D0%BE%D0%B2) и для продавцов в РФ.
 
-Можем продвигать товары в «Оплате за заказ» не только на Ozon, но и на внешних площадках — в соцсети ВКонтакте через инструмент «Внешнее продвижение» и в рамках программ Ozon Blogger и Ozon Тренды.
+Можем продвигать товары в «Оплате за заказ» не только на Ozon, но и на внешних площадках — в соцсети ВКонтакте через инструмент «Внешнее продвижение» и платформы Ozon Тренды Pro и Ozon Тренды.
 
 Исключение: товары без остатков, категории 18+ и товары, для которых уже заведены задания во «Внешнем продвижении».
 

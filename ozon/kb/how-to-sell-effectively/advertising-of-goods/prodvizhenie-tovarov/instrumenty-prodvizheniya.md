@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /how-to-sell-effectively/advertising-of-goods/prodvizhenie-tovarov/instrumenty-prodvizheniya
 source: "https://seller-edu.ozon.ru/libra/how-to-sell-effectively/advertising-of-goods/prodvizhenie-tovarov/instrumenty-prodvizheniya"
-updated: "2026-10-13 15:13:46"
+updated: "2026-11-18 09:18:12"
 doc_id: 45447
-fetched_at: "2026-10-14T01:48:45Z"
-content_sha: ec0687fbcc3af924
+fetched_at: "2026-11-25T05:30:05Z"
+content_sha: 5bc6555b7fcb862d
 ---
 
 # Какие инструменты продвижения товаров бывают
@@ -134,7 +134,7 @@ _Главная / Продвижение / Продвижение товаров
 
 **Минимальный недельный бюджет**: у инструмента нет ограничений по бюджету
 
-**Минимальная ставка**: 25%
+**Минимальная ставка**: 10%
 
 [Подробнее об инструменте](https://seller-edu.ozon.ru/how-to-sell-effectively/advertising-of-goods/vneshnee-prodvizhenie)
 

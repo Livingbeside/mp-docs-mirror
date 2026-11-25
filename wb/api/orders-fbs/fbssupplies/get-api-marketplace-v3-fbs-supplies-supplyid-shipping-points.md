@@ -9,7 +9,7 @@ tags:
 spec_version: order
 source: "https://dev.wildberries.ru/docs/openapi/orders-fbs"
 deprecated: false
-content_sha: 446446a9bde9410e
+content_sha: 0484a66e86a3c08f
 ---
 
 # Получить список пунктов отгрузки поставки{{ /api/marketplace/v3/fbs/supplies/{supplyId}/shipping-points }}
@@ -18,9 +18,9 @@ content_sha: 446446a9bde9410e
 
 Описание метода
 
-Метод возвращает доступные пункты отгрузки для указанной поставки.
+Метод возвращает доступные пункты отгрузки для указанной поставки. 
 
-Используйте данные этого метода, чтобы устанавливать [параметры отгрузки поставок](./orders-fbs#tag/fbsSupplies/operation/patchV3FbsSuppliesShippingMethod).
+Предназначен для продавцов из РФ. Используйте данные этого метода, чтобы устанавливать [параметры отгрузки поставок](./orders-fbs#tag/fbsSupplies/operation/patchV3FbsSuppliesShippingMethod).
 
 Лимит запросов на один профиль продавца для методов сборочных заданий, поставок, пропусков и настроек автовозврата FBS:
 

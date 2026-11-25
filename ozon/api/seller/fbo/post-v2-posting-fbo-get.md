@@ -9,7 +9,7 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: d50e86f591c4a4a4
+content_sha: 649638623bc71efc
 ---
 
 # Информация об отправлении
@@ -79,6 +79,8 @@ content_sha: d50e86f591c4a4a4
       - `total_discount_percent` — number<double>. Процент скидки.
       - `total_discount_value` — number<double>. Сумма скидки.
   - `in_process_at` — string<date-time>. Дата и время начала обработки отправления.
+  - `is_extra_packed` — boolean. `true`, если в отправлении есть товары, которые нужно доупаковать при отгрузке.
+  - `is_sealed` — boolean. `true`, если в отправлении есть товары, которые нужно опломбировать при отгрузке.
   - `legal_info` — object. Юридическая информация о покупателе.
     - `company_name` — string. Название компании.
     - `inn` — string. ИНН.

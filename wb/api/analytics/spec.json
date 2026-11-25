@@ -938,13 +938,9 @@
         },
         "required": [
           "nmId",
-          "title",
           "vendorCode",
           "subjectId",
           "subjectName",
-          "brandName",
-          "tagName",
-          "tagId",
           "pinnedFeedback",
           "rating",
           "feedbackRating",
@@ -2510,7 +2506,7 @@
             "$ref": "#/components/schemas/Currency"
           },
           "groups": {
-            "description": "Список элементов таблицы\n",
+            "description": "Список элементов таблицы",
             "items": {
               "$ref": "#/components/schemas/TableGroupItem"
             },
@@ -2527,6 +2523,7 @@
           "commonInfo",
           "positionInfo",
           "visibilityInfo",
+          "groups",
           "currency"
         ],
         "type": "object"
@@ -2615,7 +2612,10 @@
             "format": "uuid",
             "type": "string"
           }
-        }
+        },
+        "required": [
+          "downloadId"
+        ]
       },
       "NmReportRetryReportResponse": {
         "properties": {
@@ -2634,7 +2634,7 @@
         "description": "Заказ",
         "properties": {
           "cancelType": {
-            "description": "[Тип отмены](https://seller.wildberries.ru/instructions/ru/ru/material/order-feed-report#a92fa9b0-86ab-4990-b905-33f6c38b385c) (при `\"status\":\"cancel\"`):\n  - `app` — отказ до получения\n  - `receipt` — отказ при получении\n  - `expire` — истёк срок получения\n  - `other` — иное\n",
+            "description": "[Тип отмены](https://seller.wildberries.ru/instructions/material/order-feed-report#a92fa9b0-86ab-4990-b905-33f6c38b385c) (при `\"status\":\"cancel\"`):\n  - `app` — отказ до получения\n  - `receipt` — отказ при получении\n  - `expire` — истёк срок получения\n  - `other` — иное\n",
             "enum": [
               "app",
               "receipt",
@@ -2673,7 +2673,7 @@
           },
           "isMp": {
             "description": "Тип склада:\n  - `true` — склад продавца\n  - `false` — склад WB\n",
-            "example": true,
+            "example": false,
             "type": "boolean"
           },
           "nmId": {
@@ -2694,7 +2694,7 @@
             "type": "string"
           },
           "status": {
-            "description": "[Статус заказа](https://seller.wildberries.ru/instructions/ru/ru/material/order-feed-report#a92fa9b0-86ab-4990-b905-33f6c38b385c):\n  - `created` — оформлен\n  - `buyout` — продан\n  - `cancel` — отменён\n  - `return` — возвращён\n  - `returnDefective` — возвращён по причине брака\n",
+            "description": "[Статус заказа](https://seller.wildberries.ru/instructions/material/order-feed-report#a92fa9b0-86ab-4990-b905-33f6c38b385c):\n  - `created` — оформлен\n  - `buyout` — продан\n  - `cancel` — отменён\n  - `return` — возвращён\n  - `returnDefective` — возвращён по причине брака\n",
             "enum": [
               "created",
               "buyout",
@@ -2712,13 +2712,13 @@
             "type": "string"
           },
           "warehouseName": {
-            "description": "Название склада. [На данный момент](/release-notes?id=570) для складов WB может быть только `Склад WB`",
-            "example": "Склад WB",
+            "description": "Название склада. Для складов WB в России может быть только `Склад WB РФ` или `Склад WB СГТ РФ`",
+            "example": "Склад WB РФ",
             "type": "string"
           },
           "warehouseRegion": {
-            "description": "Федеральный округ склада. Если склад не в России, возвращается страна. [На данный момент](/release-notes?id=570) для складов WB может быть только `\"\"`",
-            "example": "",
+            "description": "Регион отгрузки. Если склад принадлежит WB или продавцу не в России, возвращается страна",
+            "example": "Россия",
             "type": "string"
           }
         },
@@ -4873,7 +4873,7 @@
                 "type": "boolean"
               },
               "isSubstitutedSKU": {
-                "description": "Искали ли товар по подменному артикулу.<br>\nПоле будет в ответе при наличии в запросе `includeSubstitutedSKUs` и/или `includeSearchTexts`\n",
+                "description": "Искали ли товар по подменному артикулу",
                 "example": true,
                 "type": "boolean"
               },
@@ -5014,7 +5014,9 @@
         "required": [
           "nmId",
           "vendorCode",
+          "subjectName",
           "isAdvertised",
+          "isSubstitutedSKU",
           "isCardRated",
           "rating",
           "feedbackRating",
@@ -6004,7 +6006,10 @@
         },
         "required": [
           "visibility",
-          "openCard"
+          "openCard",
+          "byDay",
+          "byWeek",
+          "byMonth"
         ],
         "type": "object"
       },
@@ -6742,7 +6747,7 @@
     },
     "/api/analytics/v3/sales-funnel/products": {
       "post": {
-        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод формирует отчёт о товарах, сравнивая ключевые показатели за текущий период с аналогичным прошлым.<br><br>\n\nДанные отчёта обновляются 1 раз в 2 часа.<br><br>\n\nВ течение часа после события появляется большая часть данных:\n  - о заказах\n  - о переходах в карточку товара\n  - о добавлениях товаров в корзину\n\nМалая часть этих данных может появляться в течение нескольких дней.<br><br>\n\nВыкупы, отмены и возвраты отображаются в отчёте за тот день, когда товар был заказан. Например, если заказ был сделан 1 января, а покупатель вернул товар 10 января, данные об этом возврате появятся в отчёте за 1 января.<br>\nОкончательные итоги продаж вы можете отслеживать с помощью [детализаций к отчётам реализации](./documents-and-accounting#tag/financialReports).<br><br>\n\nПараметры `brandNames`,`subjectIds`, `tagIds`, `nmIds` могут быть пустыми `[]`, тогда в ответе возвращаются все карточки продавца.<br><br>\n\nЕсли вы указали несколько параметров, в ответе будут карточки, в которых есть одновременно все эти параметры. Если карточки не подходят по параметрам запроса, вернётся пустой ответ `[]`.<br><br>\n\nМожно получить отчёт максимум за последние 365 дней.<br><br>\n\nВ данных предыдущего периода:\n  * Данные в `pastPeriod` указаны за такой же период, что и в `selectedPeriod`\n  * Если дата начала  `pastPeriod` раньше, чем год назад от текущей даты, она будет приведена к виду: `pastPeriod.start = текущая дата — 365 дней`\n\nМожно использовать пагинацию.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один профиль продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 мин | 3 запроса | 20 сек | 3 запроса |\n| Сервисный | 1 мин | 3 запроса | 20 сек | 3 запроса |\n| Базовый с секретом | 1 мин | 3 запроса | 20 сек | 3 запроса |\n| Базовый | 1 ч | 2 запроса | 30 мин | 1 запрос |\n</div>\n",
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод формирует отчёт о товарах, сравнивая ключевые показатели за текущий период с аналогичным прошлым.<br><br>\n\nДанные отчёта обновляются 1 раз в 2 часа.<br><br>\n\nВ течение часа после события появляется большая часть данных:\n  - о заказах\n  - о переходах в карточку товара\n  - о добавлениях товаров в корзину\n\nМалая часть этих данных может появляться в течение нескольких дней.<br><br>\n\nВыкупы, отмены и возвраты отображаются в отчёте за тот день, когда товар был заказан. Например, если заказ был сделан 1 января, а покупатель вернул товар 10 января, данные об этом возврате появятся в отчёте за 1 января.<br>\nОкончательные итоги продаж вы можете отслеживать с помощью [детализаций к отчётам реализации](./documents-and-accounting#tag/financialReports).<br><br>\n\nПараметры `brandNames`,`subjectIds`, `tagIds`, `nmIds` могут быть пустыми `[]`, тогда в ответе возвращаются все карточки продавца.<br><br>\n\nЕсли вы указали несколько параметров, в ответе будут карточки, в которых есть одновременно все эти параметры. Если карточки не подходят по параметрам запроса, вернётся пустой ответ `[]`.<br><br>\n\nМожно получить отчёт максимум за последние 365 дней.<br><br>\n\nМожно использовать пагинацию.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один профиль продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 мин | 3 запроса | 20 сек | 3 запроса |\n| Сервисный | 1 мин | 3 запроса | 20 сек | 3 запроса |\n| Базовый с секретом | 1 мин | 3 запроса | 20 сек | 3 запроса |\n| Базовый | 1 ч | 2 запроса | 30 мин | 1 запрос |\n</div>\n",
         "operationId": "postV3SalesFunnelProducts",
         "requestBody": {
           "content": {

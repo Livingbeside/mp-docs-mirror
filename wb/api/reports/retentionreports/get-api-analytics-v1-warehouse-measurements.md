@@ -9,7 +9,7 @@ tags:
 spec_version: reports
 source: "https://dev.wildberries.ru/docs/openapi/reports"
 deprecated: false
-content_sha: f24d7d5a58463704
+content_sha: a1b7d7f7dba17b6a
 ---
 
 # Замеры склада
@@ -44,14 +44,14 @@ content_sha: f24d7d5a58463704
 
 - `data` — object **обязательный**. Данные ответа
   - `reports` — array[object] **обязательный**. Замеры
-    - `nmId` — integer. Артикул WB
-    - `subjectName` — string. Предмет
-    - `dimId` — integer. ID замера
-    - `volume` — number. Объём, л
-    - `width` — integer. Ширина, см
-    - `length` — integer. Длина, см
-    - `height` — integer. Высота, см
-    - `photoUrls` — array[string]. Фото замеров
+    - `nmId` — integer **обязательный**. Артикул WB
+    - `subjectName` — string **обязательный**. Предмет
+    - `dimId` — integer **обязательный**. ID замера
+    - `volume` — number **обязательный**. Объём, л
+    - `width` — integer **обязательный**. Ширина, см
+    - `length` — integer **обязательный**. Длина, см
+    - `height` — integer **обязательный**. Высота, см
+    - `photoUrls` — array[string] **обязательный**. Фото замеров
     - `dt` — string<date-time>. Дата и время
   - `total` — integer **обязательный**. Количество замеров в отчёте. Без учёта `limit` и `offset`
 

@@ -9,7 +9,7 @@ tags:
 spec_version: reports
 source: "https://dev.wildberries.ru/docs/openapi/reports"
 deprecated: false
-content_sha: 1dc7818a4ea1d13f
+content_sha: 61a48e73ed24b4a0
 ---
 
 # Бренды продавца
@@ -37,7 +37,7 @@ content_sha: 1dc7818a4ea1d13f
 
 **200** — Успешно
 
-- `data` — array[string]. Список брендов
+- `data` — array[string] **обязательный**. Список брендов
 
 **401** — Не авторизован
 

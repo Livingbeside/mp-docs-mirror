@@ -9,14 +9,14 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: 9adc168824431b40
+content_sha: 7c8cd06687026e98
 ---
 
 # Получить информацию о цене товара
 
 `POST /v5/product/info/prices`
 
-23 ноября 2026 года отключим параметр total в ответе метода. Переключитесь на total_items.
+7 декабря 2026 года отключим параметр total в ответе метода. Переключитесь на total_items.
 
 Вы можете посмотреть историю обновления цен только в личном кабинете продавца.
  [Подробнее об истории обновления цен в Базе знаний продавца](https://seller-edu.ozon.ru/libra/ceny-i-akcii/rabota-s-cenami/price-control#как-посмотреть-историю-обновления-цен)
@@ -35,6 +35,7 @@ content_sha: 9adc168824431b40
 - `cursor` — string. Указатель для выборки следующих данных.
 - `filter` — object **обязательный**. Фильтр по товарам.
   - `offer_id` — ?. Фильтр по параметру `offer_id`. Можно передавать до 1000 значений.
+  - `price_index_country` — string (RU, KZ). Фильтр по валюте индекса цены: - `RU` — рубли; - `KZ` — тенге. По умолчанию: `RU`.
   - `product_id` — ?. Фильтр по параметру `product_id`. Можно передавать до 1000 значений.
   - `visibility` — string (ALL, VISIBLE, INVISIBLE, EMPTY_STOCK, NOT_MODERATED, MODERATED, DISABLED, STATE_FAILED, READY_TO_SUPPLY, VALIDATION_STATE_PENDING, VALIDATION_STATE_FAIL, VALIDATION_STATE_SUCCESS…). Фильтр по видимости товара: - `ALL` — все товары, кроме архивных; - `VISIBLE` — товары, которые видны покупателям; - `INVISIBLE` — товары, которые не видны покупателям; - `EMPTY_STOCK` — товары, у которых не указано наличие; - `NOT_MODERATED` — товары, которые не прошли модерацию; - `MODERATED` — товары, которые прошли модерацию; - `DISABLED` — товары, которые видны покупателям, но недоступны к покупке; - `STATE_FAILED` — товары, создание которых завершилось ошибкой; - `READY_TO_SUPPLY` — товары, готовые к поставке; - `VALIDATION_STATE_PENDING` — товары, которые проходят проверку валидатором на премодерации; - `VALIDATION_STATE_FAIL` — товары, которые не прошли проверку валидатором на премодерации; - `VALIDATION_STATE_SUCCESS` — товары, которые прошли проверку валидатором на премодерации; - `TO_SUPPLY` — товары, готовые к продаже; - `IN_SALE` — товары в продаже; - `REMOVED_FROM_SALE` — товары, скрытые от покупателей; - `OVERPRICED` — товары с завышенной ценой; - `CRITICALLY_OVERPRICED` — товары со слишком завышенной ценой; - `EMPTY_BARCODE` — товары без штрихкода; - `BARCODE_EXISTS` — товары со штрихкодом; - `QUARANTINE` — товары на карантине после изменения цены более чем на 50%; - `ARCHIVED` — товары в архиве; - `OVERPRICED_WITH_STOCK` — товары в продаже со стоимостью выше, чем у конкурентов; - `PARTIAL_APPROVED` — товары в продаже с пустым или неполным описанием; - `AUTO_ARCHIVED` — товары, которые система перенесла в архив автоматически; - `MANUAL_ARCHIVED` — товары, которые продавец перенёс в архив вручную; - `SEASONAL_AUTO_ARCHIVED` — сезонные товары, которые система перенесла в архив автоматически; - `VISIBLE_WITH_FBO_STOCK` — товары с остатками на FBO, которые видят покупатели. По умолчанию: `ALL`.
 - `limit` — integer<int32> **обязательный**. Количество значений на странице.
@@ -87,17 +88,33 @@ content_sha: 9adc168824431b40
     - `vat` — number<double>. Ставка НДС для товара.
   - `price_indexes` — object. Индексы цены товара. [Подробнее об индексе цен в Базе знаний продавца](https://seller-edu.ozon.ru/seller-rating/metrics/price-index)
     - `color_index` — string (WITHOUT_INDEX, GREEN, YELLOW, RED, SUPER). Итоговый индекс цены товара: - `WITHOUT_INDEX` — нет индекса, - `SUPER` — супервыгодный, - `GREEN` — выгодный, - `YELLOW` — умеренный, - `RED` — невыгодный. По умолчанию: `WITHOUT_INDEX`.
+    - `competitor_index_data` — object. Цена товара у конкурентов.
+      - `min_price` — number<double>. Минимальная цена товара у конкурентов.
+      - `min_price_currency` — string. Валюта минимальной цены товара у конкурентов.
+      - `min_price_in_seller` — number<double>. Минимальная цена товара у конкурентов в валюте продавца.
+      - `min_price_in_seller_currency` — string. Валюта продавца.
+      - `price_index_color` — string (WITHOUT_INDEX, GREEN, YELLOW, RED, SUPER). Индекс цены товара: - `WITHOUT_INDEX` — нет индекса; - `GREEN` — выгодный; - `YELLOW` — умеренный; - `RED` — невыгодный; - `SUPER` — супервыгодный. По умолчанию: `WITHOUT_INDEX`.
+      - `price_index_value` — number<double>. Значение индекса цены.
     - `external_index_data` — object. Цена товара у конкурентов на других площадках.
       - `min_price` — number<double>. Минимальная цена товара у конкурентов на другой площадке.
       - `min_price_currency` — string. Валюта цены.
+      - `min_price_in_seller` — number<double>. Минимальная цена товара у конкурентов на другой площадке в валюте продавца.
+      - `min_price_in_seller_currency` — string. Валюта продавца.
+      - `price_index_color` — string (WITHOUT_INDEX, GREEN, YELLOW, RED, SUPER). Индекс цены товара: - `WITHOUT_INDEX` — нет индекса; - `GREEN` — выгодный; - `YELLOW` — умеренный; - `RED` — невыгодный; - `SUPER` — супервыгодный. По умолчанию: `WITHOUT_INDEX`.
       - `price_index_value` — number<double>. Значение индекса цены.
     - `ozon_index_data` — object. Цена товара у конкурентов на Ozon.
       - `min_price` — number<double>. Минимальная цена товара у конкурентов на Ozon.
       - `min_price_currency` — string. Валюта цены.
+      - `min_price_in_seller` — number<double>. Минимальная цена товара у конкурентов на Ozon в валюте продавца.
+      - `min_price_in_seller_currency` — string. Валюта продавца.
+      - `price_index_color` — string (WITHOUT_INDEX, GREEN, YELLOW, RED, SUPER). Индекс цены товара: - `WITHOUT_INDEX` — нет индекса; - `GREEN` — выгодный; - `YELLOW` — умеренный; - `RED` — невыгодный; - `SUPER` — супервыгодный. По умолчанию: `WITHOUT_INDEX`.
       - `price_index_value` — number<double>. Значение индекса цены.
     - `self_marketplaces_index_data` — object. Цена вашего товара на других площадках.
       - `min_price` — number<double>. Минимальная цена вашего товара на других площадках.
       - `min_price_currency` — string. Валюта цены.
+      - `min_price_in_seller` — number<double>. Минимальная цена товара на других площадках в валюте продавца.
+      - `min_price_in_seller_currency` — string. Валюта продавца.
+      - `price_index_color` — string (WITHOUT_INDEX, GREEN, YELLOW, RED, SUPER). Индекс цены товара: - `WITHOUT_INDEX` — нет индекса; - `GREEN` — выгодный; - `YELLOW` — умеренный; - `RED` — невыгодный; - `SUPER` — супервыгодный. По умолчанию: `WITHOUT_INDEX`.
       - `price_index_value` — number<double>. Значение индекса цены.
   - `product_id` — integer<int64>. Идентификатор товара в системе Ozon — `product_id`.
   - `volume_weight` — number<double>. Объёмный вес товара.

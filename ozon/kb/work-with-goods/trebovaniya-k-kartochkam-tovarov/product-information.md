@@ -6,8 +6,8 @@ path: /work-with-goods/trebovaniya-k-kartochkam-tovarov/product-information
 source: "https://seller-edu.ozon.ru/libra/work-with-goods/trebovaniya-k-kartochkam-tovarov/product-information"
 updated: "2022-10-27 19:26:32.59587"
 doc_id: 1064
-fetched_at: "2026-08-28T12:11:14Z"
-content_sha: 5eb7715f13427e64
+fetched_at: "2026-11-25T05:30:05Z"
+content_sha: bc2de87ce6861439
 ---
 
 # Информация о товаре
@@ -22,4 +22,4 @@ _Главная / Работа с товарами / Требования к к�
 - [Обязательная маркировка товаров](https://seller-edu.ozon.ru/libra/work-with-goods/trebovaniya-k-kartochkam-tovarov/product-information/obyazatelnaya-markirovka-tovarov)
 - [Объёмно-весовые характеристики](https://seller-edu.ozon.ru/libra/work-with-goods/trebovaniya-k-kartochkam-tovarov/product-information/ovh)
 - [Штрихкоды](https://seller-edu.ozon.ru/libra/work-with-goods/trebovaniya-k-kartochkam-tovarov/product-information/rabota-so-shtrihkodami)
-- [Код ТН ВЭД ЕАЭС](https://seller-edu.ozon.ru/libra/work-with-goods/trebovaniya-k-kartochkam-tovarov/product-information/tn-ved)
+- [Коды ТН ВЭД ЕАЭС и ОКПД 2](https://seller-edu.ozon.ru/libra/work-with-goods/trebovaniya-k-kartochkam-tovarov/product-information/tn-ved)

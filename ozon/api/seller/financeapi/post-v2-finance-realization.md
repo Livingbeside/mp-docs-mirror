@@ -8,13 +8,17 @@ tags:
   - FinanceAPI
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
-deprecated: false
-content_sha: 88ce5fe829501fd2
+deprecated: true
+content_sha: 384e1333ae61a765
 ---
 
 # Отчёт о реализации товаров (версия 2)
 
 `POST /v2/finance/realization`
+
+> ⚠️ Метод помечен как **deprecated**.
+
+17 января 2027 года отключим метод. Переключитесь на [/v1/report/finance/realization/list](#operation/ReportFinanceRealizationList), [/v1/report/finance/realization/number/create](#operation/CreateFinanceRealizationNumberReport) и [/v1/report/info](#operation/ReportAPI_ReportInfo).
 
 Метод недоступен для продавцов, которые заключили договор с ТОО «ОЗОН Маркетплейс Казахстан».
 

@@ -9,7 +9,7 @@ tags:
 spec_version: analytics
 source: "https://dev.wildberries.ru/docs/openapi/analytics"
 deprecated: false
-content_sha: e587aad2271e1c4c
+content_sha: 4b75949e0ec612ed
 ---
 
 # Сгенерировать отчёт повторно
@@ -33,7 +33,7 @@ content_sha: e587aad2271e1c4c
 
 **Тело запроса** (`application/json`):
 
-- `downloadId` — string<uuid>. ID отчёта
+- `downloadId` — string<uuid> **обязательный**. ID отчёта
 
 ## Ответы
 

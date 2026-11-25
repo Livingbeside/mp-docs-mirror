@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /finances-documents/documents/otchet-o-perechisleniyah
 source: "https://seller-edu.ozon.ru/libra/finances-documents/documents/otchet-o-perechisleniyah"
-updated: "2026-08-28 09:39:30"
+updated: "2026-11-15 17:30:19"
 doc_id: 1838
-fetched_at: "2026-08-28T12:11:15Z"
-content_sha: 35adab7043e4ae8f
+fetched_at: "2026-11-25T05:30:05Z"
+content_sha: 06ce569fbe0201db
 ---
 
 # Отчёты о перечислениях
@@ -16,7 +16,19 @@ _Главная / Финансы, налоги и документооборот
 
 Зачем нужны отчёты о перечислениях и какие начисления в них отражаем
 
-# Что такое отчёты о перечислениях
+# Для чего нужен отчёт о перечислениях
+
+Отчёт о перечислениях — это закрывающий документ, в который попадают данные по суммам:
+
+[компенсации доставки](https://seller-edu.ozon.ru/commissions-tariffs/commissions-tariffs-ozon/rashody-na-dostavku) (по схеме realFBS);
+
+удержания за недовложения товара в заказы ([для FBS](https://seller-edu.ozon.ru/fbs/orders-cancellations-returns/shortfall) и [realFBS](https://seller-edu.ozon.ru/rfbs/orders-cancellations/shortfall));
+
+возврата стоимости доставки покупателю;
+
+[частичной компенсации покупателю](https://seller-edu.ozon.ru/rfbs/vozvraty/partial-refund).
+
+# Какие отчёты о перечислениях формирует Ozon
 
 По итогу месяца формируем два отчётных документа:
 
@@ -60,4 +72,8 @@ _Главная / Финансы, налоги и документооборот
 
 **Частичная компенсация покупателю** — сумма, которую вы вернули покупателю за товар. [Подробнее о частичной компенсации](/rfbs/vozvraty/partial-refund)
 
-Все начисления, кроме тарификации доставки покупателю, указываем со знаком «-»  — это ваши расходы. [Подробнее о доходах и расходах в отчётных документах](/finances-documents/documents/reporting-documents#%D0%BA%D0%B0%D0%BA-%D0%BD%D0%B0%D0%B8%D1%82%D0%B8-%D0%B8%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%86%D0%B8%D1%8E-%D0%BE-%D0%B4%D0%BE%D1%85%D0%BE%D0%B4%D0%B0%D1%85-%D0%B8-%D1%80%D0%B0%D1%81%D1%85%D0%BE%D0%B4%D0%B0%D1%85-%D0%B4%D0%BB%D1%8F-%D0%BD%D0%B0%D0%BB%D0%BE%D0%B3%D0%BE%D0%B2%D0%BE%D0%B8-%D0%B4%D0%B5%D0%BA%D0%BB%D0%B0%D1%80%D0%B0%D1%86%D0%B8%D0%B8)
+# Почему некоторые суммы в отчёте о перечислениях отрицательные
+
+Все начисления, кроме тарификации доставки покупателю, указываем со знаком «-» — это ваши расходы: возвраты стоимости доставки покупателю, удержания за недовложения товара в заказы или частичные компенсации.
+
+[Подробнее о доходах и расходах в отчётных документах](https://seller-edu.ozon.ru/libra/finances-documents/documents/reporting-documents#%D0%BA%D0%B0%D0%BA%D0%B8%D0%B5-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D0%B5-%D0%B8%D0%B7-%D0%B4%D0%BE%D0%BA%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D0%BE%D0%B2-%D0%BD%D1%83%D0%B6%D0%BD%D1%8B-%D0%B4%D0%BB%D1%8F-%D0%BD%D0%B0%D0%BB%D0%BE%D0%B3%D0%BE%D0%B2%D0%BE%D0%B8-%D0%B4%D0%B5%D0%BA%D0%BB%D0%B0%D1%80%D0%B0%D1%86%D0%B8%D0%B8)

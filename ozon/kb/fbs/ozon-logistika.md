@@ -6,8 +6,8 @@ path: /fbs/ozon-logistika
 source: "https://seller-edu.ozon.ru/libra/fbs/ozon-logistika"
 updated: "2025-11-20 13:45:51"
 doc_id: 809
-fetched_at: "2026-08-28T12:11:14Z"
-content_sha: 0668f6f129417cf8
+fetched_at: "2026-11-25T05:30:05Z"
+content_sha: 342ca743774a8781
 ---
 
 # Отгрузка со своего склада
@@ -29,3 +29,4 @@ _Главная / Продажа со своего склада (FBS)_
 - [Отгрузка курьеру на FBS](https://seller-edu.ozon.ru/libra/fbs/ozon-logistika/otgruzka-kyruery)
 - [Собственные ППЗ продавцов на FBS](https://seller-edu.ozon.ru/libra/fbs/ozon-logistika/sobstvennye-ppz-prodavcov-na-fbs)
 - [Электронная транспортная накладная (ЭТрН) для FBS](https://seller-edu.ozon.ru/libra/fbs/ozon-logistika/etrn-dlya-fbs)
+- [Пломбирование и проверка товара партнёрами на FBS](https://seller-edu.ozon.ru/libra/fbs/ozon-logistika/proverka-tovara-partnerami-na-fbs)

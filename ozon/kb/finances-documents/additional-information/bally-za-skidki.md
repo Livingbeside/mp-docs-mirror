@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /finances-documents/additional-information/bally-za-skidki
 source: "https://seller-edu.ozon.ru/libra/finances-documents/additional-information/bally-za-skidki"
-updated: "2026-11-05 08:11:19"
+updated: "2026-11-19 11:26:29"
 doc_id: 8540
-fetched_at: "2026-11-06T06:05:06Z"
-content_sha: 78ca16c9d9c12c2e
+fetched_at: "2026-11-25T05:30:05Z"
+content_sha: cc465468a2bfbf7b
 ---
 
 # Баллы за скидки
@@ -22,7 +22,7 @@ _Главная / Финансы, налоги и документооборот
 
 Если товар продастся дешевле с одной из таких скидок, скидка будет за ваш счёт от вашего имени, а разницу между вашей ценой и суммой продажи начислим баллами. Эти баллы дадут вам скидку до 99% на услуги площадки. [Как списываем баллы](#как-списываем-баллы)
 
-**До конца 2026 года** для заказов внутри России на Fashion-товары из [списка](https://cdn.ozone.ru/s3/ozon-disk-api/Seller-edu/files/finances-documents/%D0%9A%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D0%B8_%D0%B8_%D1%82%D0%B8%D0%BF%D1%8B_Fashion_1791190143.xlsx) зафиксируем минимальный размер скидки.
+**До 31 января 2028 года** **включительно **для заказов внутри России на Fashion-товары из [списка](https://cdn.ozone.ru/s3/ozon-disk-api/Seller-edu/files/finances-documents/%D0%9A%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D0%B8_%D0%B8_%D1%82%D0%B8%D0%BF%D1%8B_Fashion_1791190143.xlsx) зафиксируем минимальный размер скидки.
 
 **Для продавцов, которые не подключены к специальному тарифу вознаграждения за продажу 27%, **с 5 октября 2026 года**:**
 

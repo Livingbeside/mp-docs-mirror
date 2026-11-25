@@ -2,9 +2,9 @@
 title: Документация Ozon Seller API — все методы
 api: ozon-seller
 spec_version: 2.1
-operations: 486
+operations: 497
 source: "https://docs.ozon.ru/api/seller/"
-content_sha: 8d3db9140f220616
+content_sha: 5b8421e9b95a50b6
 ---
 
 # Документация Ozon Seller API
@@ -20,7 +20,7 @@ content_sha: 8d3db9140f220616
 
 [](https://seller-edu.ozon.ru/webinars/5940/)
 
-Версия спеки: `2.1` · методов: **486** · разделов справки: **28**
+Версия спеки: `2.1` · методов: **497** · разделов справки: **29**
 
 Источник: https://docs.ozon.ru/api/seller/
 
@@ -299,6 +299,9 @@ content_sha: 8d3db9140f220616
 | `POST` | `/v1/removal/from-stock/list` | BetaMethod | [Отчёт по вывозу и утилизации со стока FBO](betamethod/post-v1-removal-from-stock-list.md) |
 | `POST` | `/v1/removal/from-supply/list` | BetaMethod | [Отчёт по вывозу и утилизации с поставки FBO](betamethod/post-v1-removal-from-supply-list.md) |
 | `POST` | `/v1/report/discounted/create` | ReportAPI | [Отчёт об уценённых товарах](reportapi/post-v1-report-discounted-create.md) |
+| `POST` | `/v1/report/finance/realization/list` | BetaMethod | [Получить список номеров отчётов о реализации товаров](betamethod/post-v1-report-finance-realization-list.md) |
+| `POST` | `/v1/report/finance/realization/number/create` | BetaMethod | [Получить идентификатор отчёта о реализации товаров по номеру](betamethod/post-v1-report-finance-realization-number-create.md) |
+| `POST` | `/v1/report/finance/realization/number/posting/create` | BetaMethod | [Получить идентификатор позаказного отчёта о реализации товаров по номеру](betamethod/post-v1-report-finance-realization-number-posting-create.md) |
 | `POST` | `/v1/report/info` | ReportAPI | [Информация об отчёте](reportapi/post-v1-report-info.md) |
 | `POST` | `/v1/report/list` | ReportAPI | [Список отчётов](reportapi/post-v1-report-list.md) |
 | `POST` | `/v1/report/marked-products-sales/create` | ReportAPI | [Сгенерировать отчёт по продажам товаров с маркировкой](reportapi/post-v1-report-marked-products-sales-create.md) |
@@ -330,6 +333,14 @@ content_sha: 8d3db9140f220616
 | `POST` | `/v1/review/comment/delete` | ReviewAPI | [Удалить комментарий на отзыв](reviewapi/post-v1-review-comment-delete.md) |
 | `POST` | `/v1/review/comment/list` | ReviewAPI | [Получить список комментариев на отзыв](reviewapi/post-v1-review-comment-list.md) |
 | `POST` | `/v1/review/count` | ReviewAPI | [Количество отзывов по статусам](reviewapi/post-v1-review-count.md) |
+| `POST` | `/v1/review/first-reviews-collection/planned-product/activate` | ReviewAPIBeta | [Запустить запланированный сбор отзывов](reviewapibeta/post-v1-review-first-reviews-collection-planned-product-activate.md) |
+| `POST` | `/v1/review/first-reviews-collection/product/add` | ReviewAPIBeta | [Добавить товары в сбор отзывов](reviewapibeta/post-v1-review-first-reviews-collection-product-add.md) |
+| `POST` | `/v1/review/first-reviews-collection/product/delete` | ReviewAPIBeta | [Удалить товары из сбора отзывов](reviewapibeta/post-v1-review-first-reviews-collection-product-delete.md) |
+| `POST` | `/v1/review/first-reviews-collection/product/list-detailed` | ReviewAPIBeta | [Получить информацию о товарах в сборе отзывов](reviewapibeta/post-v1-review-first-reviews-collection-product-list-detailed.md) |
+| `POST` | `/v1/review/first-reviews-collection/product/list` | ReviewAPIBeta | [Получить список товаров, которые участвуют в сборе отзывов](reviewapibeta/post-v1-review-first-reviews-collection-product-list.md) |
+| `POST` | `/v1/review/first-reviews-collection/product/repeat` | ReviewAPIBeta | [Повторить сбор отзывов](reviewapibeta/post-v1-review-first-reviews-collection-product-repeat.md) |
+| `POST` | `/v1/review/first-reviews-collection/product/toggle` | ReviewAPIBeta | [Остановить или продолжить сбор отзывов](reviewapibeta/post-v1-review-first-reviews-collection-product-toggle.md) |
+| `POST` | `/v1/review/first-reviews-collection/product/update-target` | ReviewAPIBeta | [Изменить цель по отзывам](reviewapibeta/post-v1-review-first-reviews-collection-product-update-target.md) |
 | `POST` | `/v1/review/info` | ReviewAPI | [Получить информацию об отзыве](reviewapi/post-v1-review-info.md) |
 | `POST` | `/v1/review/list` | ReviewAPI | [Получить список отзывов](reviewapi/post-v1-review-list.md) |
 | `POST` | `/v1/roles` | APIkey | [Получить список ролей и методов по API-ключу](apikey/post-v1-roles.md) |

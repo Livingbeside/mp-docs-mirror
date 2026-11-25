@@ -9,7 +9,7 @@ tags:
 spec_version: reports
 source: "https://dev.wildberries.ru/docs/openapi/reports"
 deprecated: false
-content_sha: 94f20ff7414f5e94
+content_sha: a802e5f5ae1edade
 ---
 
 # Получить отчёт
@@ -40,12 +40,12 @@ content_sha: 94f20ff7414f5e94
 
 **200** — Успешно
 
-- `report` — array[object]. Отчёт
-  - `brand` — string. Бренд
-  - `nmId` — integer. Артикул WB
-  - `title` — string. Наименование товара
-  - `vendorCode` — string. Артикул продавца
-  - `reason` — string. Причина блокировки
+- `report` — array[object] **обязательный**. Отчёт
+  - `brand` — string **обязательный**. Бренд
+  - `nmId` — integer **обязательный**. Артикул WB
+  - `title` — string **обязательный**. Наименование товара
+  - `vendorCode` — string **обязательный**. Артикул продавца
+  - `reason` — string **обязательный**. Причина блокировки
 
 **400** — Неправильный запрос
 

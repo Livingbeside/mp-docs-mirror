@@ -9,7 +9,7 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: 0f2946c0614eec80
+content_sha: eb146eda3fb247d0
 ---
 
 # Получить список точек самовывоза
@@ -33,3 +33,11 @@ content_sha: 0f2946c0614eec80
     - `lat` — number<double>. Широта.
     - `long` — number<double>. Долгота.
   - `map_point_id` — integer<int64>. Идентификатор точки на карте.
+
+**default** — Ошибка
+
+- `code` — integer<int32>. Код ошибки.
+- `details` — array[object]. Дополнительная информация об ошибке.
+  - `typeUrl` — string. Тип протокола передачи данных.
+  - `value` — string<byte>. Значение ошибки.
+- `message` — string. Описание ошибки.

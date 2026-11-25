@@ -9,7 +9,7 @@ tags:
 spec_version: reports
 source: "https://dev.wildberries.ru/docs/openapi/reports"
 deprecated: false
-content_sha: 7fe8b4a2b1b65bf0
+content_sha: 58733fefe2c28f00
 ---
 
 # Создать отчёт
@@ -42,8 +42,8 @@ content_sha: 7fe8b4a2b1b65bf0
 
 **200** — Успешно
 
-- `data` — object
-  - `taskId` — string. ID задания на генерацию
+- `data` — object **обязательный**
+  - `taskId` — string **обязательный**. ID задания на генерацию
 
 **400** — Неправильный запрос
 

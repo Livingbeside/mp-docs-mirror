@@ -4,10 +4,10 @@ marketplace: ozon
 kind: section
 path: /finances-documents/documents
 source: "https://seller-edu.ozon.ru/libra/finances-documents/documents"
-updated: "2023-01-18 15:24:53.004772"
+updated: "2026-11-15 17:40:53"
 doc_id: 1428
-fetched_at: "2026-10-20T01:56:48Z"
-content_sha: 80a0262f673f8f3d
+fetched_at: "2026-11-25T05:30:05Z"
+content_sha: d6a95c6fd7b8b307
 ---
 
 # Документы
@@ -27,4 +27,3 @@ _Главная / Финансы, налоги и документооборот
 - [Отчёт по предоплатам от юридических лиц за товары](https://seller-edu.ozon.ru/libra/finances-documents/documents/otchet-po-predoplatam-b2b)
 - [Акты сверки взаимных расчётов](https://seller-edu.ozon.ru/libra/finances-documents/documents/act-sverki)
 - [Автоматический расчёт взаимозачётов для продавцов на АУСН](https://seller-edu.ozon.ru/libra/finances-documents/documents/avtomaticheskii-rascht-vzaimozachtov-dlya-prodavcov-na-ausn)
-- [Вопросы и ответы по документам](https://seller-edu.ozon.ru/libra/finances-documents/documents/vopros-otvet-documents)

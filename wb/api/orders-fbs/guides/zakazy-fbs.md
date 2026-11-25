@@ -5,7 +5,7 @@ tag: Заказы FBS
 group: ""
 kind: guide
 source: "https://dev.wildberries.ru/docs/openapi/orders-fbs"
-content_sha: de70d65353e34289
+content_sha: f3cae5ef69c76b8b
 ---
 
 # Заказы FBS
@@ -16,7 +16,7 @@ content_sha: de70d65353e34289
  - управлять [поставками](./orders-fbs#tag/fbsSupplies)
  - создавать, редактировать и удалять [пропуска](./orders-fbs#tag/fbsPasses) на склады WB
 
-Вы можете протестировать методы заказов FBS в [песочнице](/sandbox). Также в песочнице доступны [специальные методы](/docs/openapi-other/sandbox-environment#tag/marketplaceFbs) для эмуляции действий пользователя
+Протестировать методы FBS вы можете в [песочнице](/sandbox). Также в песочнице доступны [специальные методы](/docs/openapi-other/sandbox-environment#tag/marketplaceFbs) для эмуляции действий пользователя
 
  Узнать, как использовать методы в бизнес-кейсах, можно в [инструкции](/knowledge-base/articles/019d49a4-0771-7571-aea9-11d5b597f34c/zakazy-fbs) по работе с заказами FBS
 

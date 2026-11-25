@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /api-ozon/how-to-api
 source: "https://seller-edu.ozon.ru/libra/api-ozon/how-to-api"
-updated: "2026-10-27 14:37:24"
+updated: "2026-11-20 13:16:12"
 doc_id: 981
-fetched_at: "2026-10-28T02:51:55Z"
-content_sha: d176a561ee65eda8
+fetched_at: "2026-11-25T05:30:05Z"
+content_sha: 1367d385db9ed466
 ---
 
 # Начало работы с Seller API
@@ -135,6 +135,22 @@ DELETE — удалить.
 Также методы Seller API позволяют [участвовать в акциях](https://docs.ozon.ru/api/seller/#section/Uchastvujte-v-akciyah) Ozon для покупателей, [получить информацию о складах](https://docs.ozon.ru/api/seller/#section/Poluchite-informaciyu-o-skladah), о [возвратах товаров](https://docs.ozon.ru/api/seller/#section/Poluchite-informaciyu-o-vozvratah-tovarov), [управлять чатами](https://docs.ozon.ru/api/seller/#section/Upravlyajte-chatami) с клиентами, [создавать и получать отчёты](https://docs.ozon.ru/api/seller/#section/Sozdajte-i-poluchite-otchyoty) по ценам, остаткам и отправлениям.
 
 Если в процессе у вас возникли вопросы — напишите в [поддержку](https://seller.ozon.ru/app/messenger?channel=SCRM): **Товары и цены → API Ozon** и выберите нужную подтему. В обращении укажите код запроса, при работе с которым возникла проблема.
+
+# Где найти описание методов, лимитов и ошибок Seller API
+
+Подробная информация о работе API Ozon есть в [документации Ozon Seller API](https://docs.ozon.ru/api/seller/). В ней можно узнать:
+
+какие методы доступны для работы с товарами, ценами, остатками, заказами, финансами и аналитикой;
+
+как формировать запросы и работать с полученными ответами;
+
+какие лимиты и ограничения действуют для запросов;
+
+что означают коды ошибок API, почему возникают ошибки и как их устранить.
+
+Дополнительные материалы по работе с API и настройке интеграций доступны на платформе для разработчиков [Ozon for dev](https://dev.ozon.ru/).
+
+Если нужной информации нет в документации или не удалось устранить ошибку, напишите в [поддержку](https://seller.ozon.ru/app/messenger?channel=SCRM): **Главное меню** **→ Товары и цены → API Ozon** и выберите нужную подтему.
 
 # Seller API Sandbox для Ozon Доставки
 

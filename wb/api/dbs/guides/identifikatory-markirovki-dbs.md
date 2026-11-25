@@ -5,7 +5,7 @@ tag: dbsLabelIdentifiers
 group: ""
 kind: guide
 source: "https://dev.wildberries.ru/docs/openapi/dbs"
-content_sha: f3e33dfad7a197f2
+content_sha: e6e251da045012a8
 ---
 
 # Идентификаторы маркировки DBS
@@ -23,4 +23,4 @@ content_sha: f3e33dfad7a197f2
  - [GTIN](./dbs#tag/dbsLabelIdentifiers/operation/postV3DbsOrdersMetaGtin)
  - [Номера ДТ и коды стран происхождения товара](./dbs#tag/dbsLabelIdentifiers/operation/postV3DbsOrdersMetaCustomsDeclaration)
 
-Заполнять идентификаторы маркировки сборочных заданий в песочнице необязательно
+Заполнять идентификаторы маркировки сборочных заданий в песочнице необязательно.

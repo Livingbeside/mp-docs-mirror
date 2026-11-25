@@ -8,13 +8,17 @@ tags:
   - ReportAPI
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
-deprecated: false
-content_sha: 06bfab23c42a6934
+deprecated: true
+content_sha: 2ceadc7c7417204a
 ---
 
 # Получить позаказный отчёт о реализации товаров
 
 `POST /v1/report/realization/posting/create`
+
+> ⚠️ Метод помечен как **deprecated**.
+
+17 января 2027 года отключим метод. Переключитесь на [/v1/report/finance/realization/list](#operation/ReportFinanceRealizationList) и [/v1/report/finance/realization/number/posting/create](#operation/CreateFinanceRealizationNumberPostingReport).
 
 Отчёт о реализации доставленных и возвращённых товаров с детализацией по каждому заказу. Не включает отмены и невыкупы. Отчёт доступен с настоящего времени по август 2023 года включительно.
 

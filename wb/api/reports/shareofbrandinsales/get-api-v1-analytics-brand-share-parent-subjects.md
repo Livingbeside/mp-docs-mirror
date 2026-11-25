@@ -9,7 +9,7 @@ tags:
 spec_version: reports
 source: "https://dev.wildberries.ru/docs/openapi/reports"
 deprecated: false
-content_sha: 9beaa552355cee7d
+content_sha: f91c006cebbdd788
 ---
 
 # Родительские категории бренда
@@ -44,9 +44,9 @@ content_sha: 9beaa552355cee7d
 
 **200** — Успешно
 
-- `data` — array[object]. Категории бренда
-  - `parentId` — integer. ID родительской категории
-  - `parentName` — string. Название родительской категории
+- `data` — array[object] **обязательный**. Категории бренда
+  - `parentId` — integer **обязательный**. ID родительской категории
+  - `parentName` — string **обязательный**. Название родительской категории
 
 **400** — Неправильный запрос
 

@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /fbs/ozon-logistika/doveritel-naya-priemka-gruzovogo-mesta
 source: "https://seller-edu.ozon.ru/libra/fbs/ozon-logistika/doveritel-naya-priemka-gruzovogo-mesta"
-updated: "2026-11-11 09:59:55"
+updated: "2026-11-20 10:53:08"
 doc_id: 811
-fetched_at: "2026-11-12T02:52:28Z"
-content_sha: 348c0184fd32f0e1
+fetched_at: "2026-11-25T05:30:05Z"
+content_sha: 2072705f50885312
 ---
 
 # Доверительная приёмка грузового места
@@ -97,6 +97,8 @@ _Главная / Продажа со своего склада (FBS) / Отгр
 [Волгодонск — Степная (СЦ)](https://seller-edu.ozon.ru/fbs/punkty-priema/regiony#волгодонск-степная-сц)
 
 [Вологда — Белозерское (СЦ)](/fbs/punkty-priema/regiony#%D0%B2%D0%BE%D0%BB%D0%BE%D0%B3%D0%B4%D0%B0-%D0%BC%D1%83%D0%B4%D1%80%D0%BE%D0%B2%D0%B0-%D1%81%D1%86)
+
+[Вологда — Клубова (СЦ)](https://seller-edu.ozon.ru/fbs/punkty-priema/regiony#вологда-клубова-сц)
 
 [Воронеж — Рамонский (СЦ)](https://seller-edu.ozon.ru/fbs/punkty-priema/regiony#воронеж-рамонскии-сц)
 
@@ -192,6 +194,8 @@ _Главная / Продажа со своего склада (FBS) / Отгр
 
 [Сочи — Барановское (СЦ)](https://seller-edu.ozon.ru/fbs/punkty-priema/regiony#сочи-барановское-сц)
 
+[Сочи — Труда (СЦ)](https://seller-edu.ozon.ru/fbs/punkty-priema/regiony#сочи -труда-сц)
+
 [Сургут — Нефтеюганское (СЦ)](/fbs/punkty-priema/regiony#сургут-нефтеюганское-сц)
 
 [Сыктывкар — Октябрьский (СЦ)](https://seller-edu.ozon.ru/fbs/punkty-priema/regiony#сыктывкар-октябрьскии-сц)
@@ -207,6 +211,8 @@ _Главная / Продажа со своего склада (FBS) / Отгр
 [Тула — Луначарского (СЦ)](/fbs/punkty-priema/regiony#%D1%82%D1%83%D0%BB%D0%B0-%D0%BB%D1%83%D0%BD%D0%B0%D1%87%D0%B0%D1%80%D1%81%D0%BA%D0%BE%D0%B3%D0%BE-%D1%81%D1%86)
 
 [Тюмень — Успенка (СЦ)](/fbs/punkty-priema/regiony#тюмень-успенка-сц)
+
+[Улан-Удэ — Медведчиково (СЦ)](https://seller-edu.ozon.ru/fbs/punkty-priema/regiony#улан-удэ-медведчиково-сц)
 
 [Ульяновск — Азовская (СЦ)](/fbs/punkty-priema/regiony#%D1%83%D0%BB%D1%8C%D1%8F%D0%BD%D0%BE%D0%B2%D1%81%D0%BA-%D0%B0%D0%B7%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%D1%8F-%D1%81%D1%86)
 

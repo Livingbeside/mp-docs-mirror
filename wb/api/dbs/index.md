@@ -4,16 +4,18 @@ api: wb-dbs
 spec_version: dbs
 operations: 21
 source: "https://dev.wildberries.ru/docs/openapi/dbs"
-content_sha: 68eb4325eedd0e6c
+content_sha: c23b1a626236f7ca
 ---
 
 # DBS
 
 Узнать больше о модели DBS можно в [справочном центре](https://seller.wildberries.ru/instructions/category/6572e024-7428-4db1-86a8-a4c7dbebbfcf?goBackOption=prevRoute&categoryId=5a8e1202-0865-45b7-acae-5d0afc7add56)
 
-Управление [сборочными заданиями](./dbs#tag/dbsAssemblyOrders) и [идентификаторами маркировки](./dbs#tag/dbsLabelIdentifiers) DBS (Delivery by Seller).
+С помощью методов раздела DBS (Delivery by Seller) вы можете:
+ - управлять [сборочными заданиями](./dbs#tag/dbsAssemblyOrders)
+ - добавлять, редактировать и удалять [идентификаторы маркировки](./dbs#tag/dbsLabelIdentifiers)
 
-Вы можете протестировать методы DBS в [песочнице](/sandbox). Также в песочнице доступны [специальные методы](/docs/openapi-other/sandbox-environment#tag/marketplaceDbs) для эмуляции действий пользователя
+Протестировать методы DBS вы можете в [песочнице](/sandbox). Также в песочнице доступны [специальные методы](/docs/openapi-other/sandbox-environment#tag/marketplaceDbs) для эмуляции действий пользователя
 
 Версия спеки: `dbs` · методов: **21** · разделов справки: **3**
 

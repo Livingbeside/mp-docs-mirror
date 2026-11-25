@@ -9,7 +9,7 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: f91baa4c726e6708
+content_sha: 522f7bcb400c92a0
 ---
 
 # Информация о заявке на поставку
@@ -17,6 +17,8 @@ content_sha: f91baa4c726e6708
 `POST /v3/supply-order/get`
 
 Учитываются заявки с поставкой на конкретный склад и через [виртуальный распределительный центр (вРЦ)](https://seller-edu.ozon.ru/fbo/scheme-of-work/about#чем-отличаются-процессы-при-заявках-через-врц-и-напрямую-на-склад).
+
+Вы можете отправить не больше 1800 запросов в час.
 
 ## Запрос
 

@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /finances-documents/documents/act-vypolnenyh-rabot
 source: "https://seller-edu.ozon.ru/libra/finances-documents/documents/act-vypolnenyh-rabot"
-updated: "2026-07-17 13:52:52"
+updated: "2026-11-15 17:18:59"
 doc_id: 1795
-fetched_at: "2026-08-28T12:11:15Z"
-content_sha: f0cedf0e543df6cd
+fetched_at: "2026-11-25T05:30:05Z"
+content_sha: fae1902456d42902
 ---
 
 # Акт выполненных работ
@@ -56,3 +56,7 @@ _Главная / Финансы, налоги и документооборот
 Также вы можете скачать данные в формате XLSX, для этого нажмите **Скачать отчёт → По товарам **или** Скачать отчёт → По начислениям**.
 
 [Подробнее об Экономике магазина](https://seller-edu.ozon.ru/finances-documents/calculations-documents/work-with-finance#%D0%BD%D0%B0%D1%87%D0%B8%D1%81%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F)
+
+# Почему в акте выполненных работ указана ставка НДС 22%
+
+В акте выполненных работ перечислены услуги, которые оказывает Ozon. Мы работаем по системе ОСНО и платим НДС, поэтому указанная в документах ставка 22% — корректна.

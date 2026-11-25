@@ -9,7 +9,7 @@ tags:
 spec_version: reports
 source: "https://dev.wildberries.ru/docs/openapi/reports"
 deprecated: false
-content_sha: f7fd97d2ac1a3aec
+content_sha: 8f9bdf6fb13006f1
 ---
 
 # Подмены и неверные вложения
@@ -46,21 +46,21 @@ content_sha: f7fd97d2ac1a3aec
 
 - `data` — object **обязательный**. Данные ответа
   - `reports` — array[object] **обязательный**. Удержания
-    - `dtBonus` — string<date-time>. Дата и время удержания
-    - `nmId` — integer. Артикул WB
-    - `oldShkId` — integer. Старый штрихкод
-    - `oldColor` — string. Старый цвет
-    - `oldSize` — string. Старый размер
-    - `oldSku` — string. Старый баркод
-    - `oldVendorCode` — string. Старый артикул продавца
-    - `newShkId` — integer. Новый штрихкод
-    - `newColor` — string. Новый цвет
-    - `newSize` — string. Новый размер
-    - `newSku` — string. Новый баркод
-    - `newVendorCode` — string. Новый артикул продавца
-    - `bonusSumm` — number. Сумма удержания
-    - `bonusType` — string. Причина удержания
-    - `photoUrls` — array[string]. Фото замеров
+    - `dtBonus` — string<date-time> **обязательный**. Дата и время удержания
+    - `nmId` — integer **обязательный**. Артикул WB
+    - `oldShkId` — integer **обязательный**. Старый штрихкод
+    - `oldColor` — string **обязательный**. Старый цвет
+    - `oldSize` — string **обязательный**. Старый размер
+    - `oldSku` — string **обязательный**. Старый баркод
+    - `oldVendorCode` — string **обязательный**. Старый артикул продавца
+    - `newShkId` — integer **обязательный**. Новый штрихкод
+    - `newColor` — string **обязательный**. Новый цвет
+    - `newSize` — string **обязательный**. Новый размер
+    - `newSku` — string **обязательный**. Новый баркод
+    - `newVendorCode` — string **обязательный**. Новый артикул продавца
+    - `bonusSumm` — number **обязательный**. Сумма удержания
+    - `bonusType` — string **обязательный**. Причина удержания
+    - `photoUrls` — array[string] **обязательный**. Фото замеров
   - `total` — integer **обязательный**. Количество удержаний в отчёте. Без учёта `limit` и `offset`
 
 **400** — Неправильный запрос

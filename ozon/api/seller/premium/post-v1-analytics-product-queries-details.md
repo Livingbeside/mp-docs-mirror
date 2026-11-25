@@ -9,7 +9,7 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: 9590039005bcb701
+content_sha: 58c3f1fe05bd1dab
 ---
 
 # Получить детализацию запросов по товару
@@ -64,6 +64,38 @@ content_sha: 9590039005bcb701
 - `total` — integer<int64>. Общее количество запросов.
 
 **400** — Неверный параметр
+
+- `code` — integer<int32>. Код ошибки.
+- `details` — array[object]. Дополнительная информация об ошибке.
+  - `typeUrl` — string. Тип протокола передачи данных.
+  - `value` — string<byte>. Значение ошибки.
+- `message` — string. Описание ошибки.
+
+**403** — Доступ запрещён
+
+- `code` — integer<int32>. Код ошибки.
+- `details` — array[object]. Дополнительная информация об ошибке.
+  - `typeUrl` — string. Тип протокола передачи данных.
+  - `value` — string<byte>. Значение ошибки.
+- `message` — string. Описание ошибки.
+
+**404** — Ответ не найден
+
+- `code` — integer<int32>. Код ошибки.
+- `details` — array[object]. Дополнительная информация об ошибке.
+  - `typeUrl` — string. Тип протокола передачи данных.
+  - `value` — string<byte>. Значение ошибки.
+- `message` — string. Описание ошибки.
+
+**409** — Конфликт запроса
+
+- `code` — integer<int32>. Код ошибки.
+- `details` — array[object]. Дополнительная информация об ошибке.
+  - `typeUrl` — string. Тип протокола передачи данных.
+  - `value` — string<byte>. Значение ошибки.
+- `message` — string. Описание ошибки.
+
+**500** — Внутренняя ошибка сервера
 
 - `code` — integer<int32>. Код ошибки.
 - `details` — array[object]. Дополнительная информация об ошибке.

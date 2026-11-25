@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /ozon-logistika/dostavka-dlya-biznesa/rabota-s-ozon-dostavkoi-dlya-biznesa-cherez-api
 source: "https://seller-edu.ozon.ru/libra/ozon-logistika/dostavka-dlya-biznesa/rabota-s-ozon-dostavkoi-dlya-biznesa-cherez-api"
-updated: "2026-11-12 15:57:09"
+updated: "2026-11-24 14:54:34"
 doc_id: 80899
-fetched_at: "2026-11-13T02:53:58Z"
-content_sha: b54158fc52c0f94e
+fetched_at: "2026-11-25T05:30:05Z"
+content_sha: 7d361a356443edae
 ---
 
 # Работа с Ozon Доставкой для бизнеса через API
@@ -118,3 +118,5 @@ Ozon Delivery API даёт возможность встроить Ozon Дос�
 ## Отмена отправления
 
 Отправление можно отменить через API, пока оно не доставлено получателю. Если отменить уже переданное Ozon отправление, оно начнёт двигаться обратно к вам как возврат, через API сможете отслеживать его статус.
+
+# Вебинар «Ozon Доставка для бизнеса: для разработчиков»

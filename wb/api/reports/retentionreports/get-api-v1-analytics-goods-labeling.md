@@ -9,7 +9,7 @@ tags:
 spec_version: reports
 source: "https://dev.wildberries.ru/docs/openapi/reports"
 deprecated: false
-content_sha: ced0897b85f07835
+content_sha: 1b974e6b9bb111f0
 ---
 
 # Маркировка товара
@@ -44,14 +44,14 @@ content_sha: ced0897b85f07835
 
 **200** — Успешно
 
-- `report` — array[object]
-  - `amount` — number. Сумма штрафа, руб
-  - `date` — string<date-time>. Дата
-  - `incomeId` — integer. Номер поставки
-  - `nmID` — integer. Артикул WB
-  - `photoUrls` — array[string]. URL фото товара
-  - `shkID` — integer. Штрихкод
-  - `sku` — string. Баркод из карточки товара
+- `report` — array[object] **обязательный**
+  - `amount` — number **обязательный**. Сумма штрафа, руб
+  - `date` — string<date-time> **обязательный**. Дата
+  - `incomeId` — integer **обязательный**. Номер поставки
+  - `nmID` — integer **обязательный**. Артикул WB
+  - `photoUrls` — array[string] **обязательный**. URL фото товара
+  - `shkID` — integer **обязательный**. Штрихкод
+  - `sku` — string **обязательный**. Баркод из карточки товара
 
 **400** — Неправильный запрос
 

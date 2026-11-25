@@ -9,7 +9,7 @@ tags:
 spec_version: reports
 source: "https://dev.wildberries.ru/docs/openapi/reports"
 deprecated: false
-content_sha: 7c275d2ecd376430
+content_sha: 37d7e91628d9f44a
 ---
 
 # Получить отчёт
@@ -44,11 +44,11 @@ content_sha: 7c275d2ecd376430
 
 **200** — Успешно
 
-- `report` — array[object]. Отчёт
-  - `applyDate` — string<ГГГГ-ММ-ДД>. Дата
-  - `brandRating` — integer. Рейтинг бренда в родительской категории
-  - `pricePercent` — number<float>. Доля от продаж в родительской категории — цена, %
-  - `qtyPercent` — number<float>. Доля от продаж в родительской категории — количество, %
+- `report` — array[object] **обязательный**. Отчёт
+  - `applyDate` — string<ГГГГ-ММ-ДД> **обязательный**. Дата
+  - `brandRating` — integer **обязательный**. Рейтинг бренда в родительской категории
+  - `pricePercent` — number<float> **обязательный**. Доля от продаж в родительской категории — цена, %
+  - `qtyPercent` — number<float> **обязательный**. Доля от продаж в родительской категории — количество, %
 
 **400** — Неправильный запрос
 

@@ -4,15 +4,15 @@ marketplace: ozon
 kind: article
 path: /vozvraty-i-vyvozy/vyvozy-so-stoka-i-postavki/utilizacia
 source: "https://seller-edu.ozon.ru/libra/vozvraty-i-vyvozy/vyvozy-so-stoka-i-postavki/utilizacia"
-updated: "2026-10-09 12:14:18"
+updated: "2026-11-03 08:47:04"
 doc_id: 771
-fetched_at: "2026-10-11T02:13:25Z"
-content_sha: 065e465523c583a9
+fetched_at: "2026-11-25T05:30:05Z"
+content_sha: 7fd4c74c11c3b3a5
 ---
 
 # Утилизация товаров на FBO и FBS
 
-_Главная / Клиентские возвраты и вывозы товаров / Вывозы со стока и поставки_
+_Главная / Клиентские возвраты и вывозы товаров / Вывозы со склада и поставки_
 
 Какие товары подлежат утилизации, как она проходит и сколько стоит услуга
 

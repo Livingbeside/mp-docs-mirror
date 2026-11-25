@@ -9,7 +9,7 @@ tags:
 spec_version: reports
 source: "https://dev.wildberries.ru/docs/openapi/reports"
 deprecated: false
-content_sha: 298b4e4a5ef2c78e
+content_sha: a6c95dacb63b68b2
 ---
 
 # Проверить статус{{ /api/v1/warehouse_remains/tasks/{task_id}/status }}
@@ -39,9 +39,9 @@ content_sha: 298b4e4a5ef2c78e
 
 **200** — Успешно
 
-- `data` — object
-  - `id` — string. ID задания
-  - `status` — string. Статус задания: * `new` — новое * `processing` — обрабатывается * `done` — отчёт готов * `purged` — отчёт удалён * `canceled` — отклонено
+- `data` — object **обязательный**
+  - `id` — string **обязательный**. ID задания
+  - `status` — string **обязательный**. Статус задания: * `new` — новое * `processing` — обрабатывается * `done` — отчёт готов * `purged` — отчёт удалён * `canceled` — отклонено
 
 **400** — Неправильный запрос
 

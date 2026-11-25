@@ -2,9 +2,9 @@
 title: Заказы FBS — все методы
 api: wb-orders-fbs
 spec_version: order
-operations: 48
+operations: 43
 source: "https://dev.wildberries.ru/docs/openapi/orders-fbs"
-content_sha: ffd3741e3c1840dc
+content_sha: 2d834e872a775731
 ---
 
 # Заказы FBS
@@ -15,13 +15,13 @@ content_sha: ffd3741e3c1840dc
  - управлять [поставками](./orders-fbs#tag/fbsSupplies)
  - создавать, редактировать и удалять [пропуска](./orders-fbs#tag/fbsPasses) на склады WB
 
-Вы можете протестировать методы заказов FBS в [песочнице](/sandbox). Также в песочнице доступны [специальные методы](/docs/openapi-other/sandbox-environment#tag/marketplaceFbs) для эмуляции действий пользователя
+Протестировать методы FBS вы можете в [песочнице](/sandbox). Также в песочнице доступны [специальные методы](/docs/openapi-other/sandbox-environment#tag/marketplaceFbs) для эмуляции действий пользователя
 
  Узнать, как использовать методы в бизнес-кейсах, можно в [инструкции](/knowledge-base/articles/019d49a4-0771-7571-aea9-11d5b597f34c/zakazy-fbs) по работе с заказами FBS
 
  Узнать больше о заказах FBS можно в [справочном центре](https://seller.wildberries.ru/instructions/ru/ru/category/b3e60238-fd4c-49ce-8668-ff688725a12d)
 
-Версия спеки: `order` · методов: **48** · разделов справки: **6**
+Версия спеки: `order` · методов: **43** · разделов справки: **6**
 
 Источник: https://dev.wildberries.ru/docs/openapi/orders-fbs
 
@@ -31,13 +31,10 @@ content_sha: ffd3741e3c1840dc
 | `DELETE` | `/api/v3/passes/{passId}` | fbsPasses | [Удалить пропуск{{ /api/v3/passes/{passId} }}](fbspasses/delete-api-v3-passes-passid.md) |
 | `DELETE` | `/api/v3/supplies/{supplyId}/trbx` | fbsSupplies | [Удалить грузоместа из поставки{{ /api/v3/supplies/{supplyId}/trbx }}](fbssupplies/delete-api-v3-supplies-supplyid-trbx.md) |
 | `DELETE` | `/api/v3/supplies/{supplyId}` | fbsSupplies | [Удалить поставку{{ /api/v3/supplies/{supplyId} }}](fbssupplies/delete-api-v3-supplies-supplyid.md) |
-| `GET` | `/api/marketplace/v3/fbs/dictionaries/countries/oksm` | fbsSupplies | [Получить список стран ОКСМ](fbssupplies/get-api-marketplace-v3-fbs-dictionaries-countries-oksm.md) |
 | `GET` | `/api/marketplace/v3/fbs/orders/archive` | fbsAssemblyOrders | [Получить список архивных сборочных заданий](fbsassemblyorders/get-api-marketplace-v3-fbs-orders-archive.md) |
 | `GET` | `/api/marketplace/v3/fbs/settings/autoreturns/subcategories/restricted` | autoreturnSettings | [Получить предметы, которые не хранятся на складах WB](autoreturnsettings/get-api-marketplace-v3-fbs-settings-autoreturns-subcategories-restricted.md) |
 | `GET` | `/api/marketplace/v3/fbs/settings/autoreturns` | autoreturnSettings | [Получить настройки автовозврата продавца](autoreturnsettings/get-api-marketplace-v3-fbs-settings-autoreturns.md) |
-| `GET` | `/api/marketplace/v3/fbs/shipping-points` | fbsSupplies | [Получить список пунктов отгрузки поставок](fbssupplies/get-api-marketplace-v3-fbs-shipping-points.md) |
 | `GET` | `/api/marketplace/v3/fbs/supplies/{supplyId}/shipping-points` | fbsSupplies | [Получить список пунктов отгрузки поставки{{ /api/marketplace/v3/fbs/supplies/{supplyId}/shipping-points }}](fbssupplies/get-api-marketplace-v3-fbs-supplies-supplyid-shipping-points.md) |
-| `GET` | `/api/marketplace/v3/fbs/supplies/{supplyId}/stickers/spot` | fbsSupplies | [Получить QR-код СПОТ{{ /api/marketplace/v3/fbs/supplies/{supplyId}/stickers/spot }}](fbssupplies/get-api-marketplace-v3-fbs-supplies-supplyid-stickers-spot.md) |
 | `GET` | `/api/marketplace/v3/supplies/{supplyId}/order-ids` | fbsSupplies | [Получить ID сборочных заданий поставки{{ /api/marketplace/v3/supplies/{supplyId}/order-ids }}](fbssupplies/get-api-marketplace-v3-supplies-supplyid-order-ids.md) |
 | `GET` | `/api/v3/orders/new` | fbsAssemblyOrders | [Получить список новых сборочных заданий](fbsassemblyorders/get-api-v3-orders-new.md) |
 | `GET` | `/api/v3/orders` | fbsAssemblyOrders | [Получить информацию о сборочных заданиях](fbsassemblyorders/get-api-v3-orders.md) |
@@ -56,7 +53,6 @@ content_sha: ffd3741e3c1840dc
 | `PATCH` | `/api/v3/orders/{orderId}/cancel` | fbsAssemblyOrders | [Отменить сборочное задание{{ /api/v3/orders/{orderId}/cancel }}](fbsassemblyorders/patch-api-v3-orders-orderid-cancel.md) |
 | `PATCH` | `/api/v3/supplies/{supplyId}/deliver` | fbsSupplies | [Передать поставку в доставку{{ /api/v3/supplies/{supplyId}/deliver }}](fbssupplies/patch-api-v3-supplies-supplyid-deliver.md) |
 | `POST` | `/api/marketplace/v3/fbs/settings/autoreturns/items` | autoreturnSettings | [Получить настройки автовозврата товаров](autoreturnsettings/post-api-marketplace-v3-fbs-settings-autoreturns-items.md) |
-| `POST` | `/api/marketplace/v3/fbs/supplies/spot/list` | fbsSupplies | [Получить данные СПОТ для списка поставок](fbssupplies/post-api-marketplace-v3-fbs-supplies-spot-list.md) |
 | `POST` | `/api/marketplace/v3/orders/meta` | fbsLabelIdentifiers | [Получить идентификаторы маркировки сборочных заданий](fbslabelidentifiers/post-api-marketplace-v3-orders-meta.md) |
 | `POST` | `/api/v3/orders/client` | fbsAssemblyOrders | [Заказы с информацией по клиенту](fbsassemblyorders/post-api-v3-orders-client.md) |
 | `POST` | `/api/v3/orders/status/history` | fbsAssemblyOrders | [История статусов для сборочных заданий трансграничных поставок](fbsassemblyorders/post-api-v3-orders-status-history.md) |
@@ -67,7 +63,6 @@ content_sha: ffd3741e3c1840dc
 | `POST` | `/api/v3/supplies/{supplyId}/trbx/stickers` | fbsSupplies | [Получить стикеры грузомест поставки{{ /api/v3/supplies/{supplyId}/trbx/stickers }}](fbssupplies/post-api-v3-supplies-supplyid-trbx-stickers.md) |
 | `POST` | `/api/v3/supplies/{supplyId}/trbx` | fbsSupplies | [Добавить грузоместа к поставке{{ /api/v3/supplies/{supplyId}/trbx }}](fbssupplies/post-api-v3-supplies-supplyid-trbx.md) |
 | `POST` | `/api/v3/supplies` | fbsSupplies | [Создать новую поставку](fbssupplies/post-api-v3-supplies.md) |
-| `PUT` | `/api/marketplace/v3/fbs/supplies/{supplyId}/spot` | fbsSupplies | [Добавить данные СПОТ в поставку{{ /api/marketplace/v3/fbs/supplies/{supplyId}/spot }}](fbssupplies/put-api-marketplace-v3-fbs-supplies-supplyid-spot.md) |
 | `PUT` | `/api/marketplace/v3/orders/{orderId}/meta/customs-declaration` | fbsLabelIdentifiers | [Закрепить номер ДТ за сборочным заданием{{ /api/marketplace/v3/orders/{orderId}/meta/customs-declaration }}](fbslabelidentifiers/put-api-marketplace-v3-orders-orderid-meta-customs-declaration.md) |
 | `PUT` | `/api/v3/orders/{orderId}/meta/expiration` | fbsLabelIdentifiers | [Закрепить за сборочным заданием срок годности товара{{ /api/v3/orders/{orderId}/meta/expiration }}](fbslabelidentifiers/put-api-v3-orders-orderid-meta-expiration.md) |
 | `PUT` | `/api/v3/orders/{orderId}/meta/gtin` | fbsLabelIdentifiers | [Закрепить GTIN за сборочным заданием{{ /api/v3/orders/{orderId}/meta/gtin }}](fbslabelidentifiers/put-api-v3-orders-orderid-meta-gtin.md) |

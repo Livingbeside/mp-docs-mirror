@@ -9,7 +9,7 @@ tags:
 spec_version: reports
 source: "https://dev.wildberries.ru/docs/openapi/reports"
 deprecated: false
-content_sha: ac82e19988fe6be9
+content_sha: b929d0198a2382a4
 ---
 
 # Получить отчёт{{ /api/v1/paid_storage/tasks/{task_id}/download }}
@@ -39,29 +39,29 @@ content_sha: ac82e19988fe6be9
 
 **200** — Успешно
 
-- `date` — string. Дата, за которую был расчёт или перерасчёт
-- `logWarehouseCoef` — number. Коэффициент логистики и хранения. [На данный момент](/release-notes?id=570) может быть только `0`
-- `officeId` — integer. ID склада. [На данный момент](/release-notes?id=570) может быть только `0`
-- `warehouse` — string. Название склада. [На данный момент](/release-notes?id=570) может быть только `Склад WB РФ`
-- `warehouseCoef` — number. Коэффициент хранения
-- `giId` — integer. ID поставки
-- `chrtId` — integer<uint64>. ID размера для этого артикула WB
-- `size` — string. Размер (`techSize` в карточке товара)
-- `barcode` — string. Баркод
-- `subject` — string. Предмет
-- `brand` — string. Бренд
-- `vendorCode` — string. Артикул продавца
-- `nmId` — integer. Артикул WB
-- `volume` — number. Объём товара
-- `calcType` — string. Способ расчёта
-- `warehousePrice` — number. Сумма хранения
-- `barcodesCount` — integer. Количество единиц товара (штук), подлежащих тарифицированию за расчётные сутки
-- `palletPlaceCode` — integer. Код паллетоместа. [На данный момент](/release-notes?id=570) может быть только `0`
-- `palletCount` — number. Количество паллет
-- `originalDate` — string. Если был перерасчёт, это дата первоначального расчёта. Если перерасчёта не было, совпадает с `date`
-- `loyaltyDiscount` — number. Скидка программы лояльности, ₽
-- `tariffFixDate` — string. Дата фиксации тарифа
-- `tariffLowerDate` — string. Дата понижения тарифа
+- `date` — string **обязательный**. Дата расчёта или перерасчёта
+- `logWarehouseCoef` — number **обязательный**. Коэффициент логистики и хранения. [На данный момент](/release-notes?id=570) может быть только `0`
+- `officeId` — integer **обязательный**. ID склада. [На данный момент](/release-notes?id=570) может быть только `0`
+- `warehouse` — string **обязательный**. Название склада. [На данный момент](/release-notes?id=570) может быть только `Склад WB РФ`
+- `warehouseCoef` — number **обязательный**. Коэффициент хранения
+- `giId` — integer **обязательный**. ID поставки
+- `chrtId` — integer<uint64> **обязательный**. ID размера для этого артикула WB
+- `size` — string **обязательный**. Размер (`techSize` в карточке товара)
+- `barcode` — string **обязательный**. Баркод
+- `subject` — string **обязательный**. Предмет
+- `brand` — string **обязательный**. Бренд
+- `vendorCode` — string **обязательный**. Артикул продавца
+- `nmId` — integer **обязательный**. Артикул WB
+- `volume` — number **обязательный**. Объём товара
+- `calcType` — string **обязательный**. Способ расчёта
+- `warehousePrice` — number **обязательный**. Сумма хранения
+- `barcodesCount` — integer **обязательный**. Количество единиц товара (штук), подлежащих тарифицированию за расчётные сутки
+- `palletPlaceCode` — integer **обязательный**. Код паллетоместа. [На данный момент](/release-notes?id=570) может быть только `0`
+- `palletCount` — number **обязательный**. Количество паллет
+- `originalDate` — string **обязательный**. Если был перерасчёт, это дата первоначального расчёта. Если перерасчёта не было, совпадает с `date`
+- `loyaltyDiscount` — number **обязательный**. Скидка программы лояльности, ₽
+- `tariffFixDate` — string **обязательный**. Дата фиксации тарифа
+- `tariffLowerDate` — string **обязательный**. Дата понижения тарифа
 
 **204** — Нет данных
 

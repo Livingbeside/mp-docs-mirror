@@ -9,7 +9,7 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: 814a6c994447f825
+content_sha: 5e3d03f4a281328d
 ---
 
 # Создать акцию с механикой «Скидка по промокоду»
@@ -32,7 +32,7 @@ content_sha: 814a6c994447f825
 - `budget` — integer<int64> **обязательный**. Бюджет акции. Если бюджет закончится, акция остановится.
 - `date_end` — string<date-time> **обязательный**. Дата и время окончания акции.
 - `date_start` — string<date-time> **обязательный**. Дата и время начала акции.
-- `discount_type` — string (PERCENT, CURRENCY) **обязательный**. Тип скидки: - `PERCENT` — скидка в процентах; - `CURRENCY` — скидка в валюте.
+- `discount_type` — string (PERCENT) **обязательный**. Тип скидки: `PERCENT` — скидка в процентах.
 - `discount_value` — number<double> **обязательный**. Размер скидки.
 - `title` — string **обязательный**. Название акции.
 - `user_ids` — array[string<uint64>]. Идентификаторы пользователей, которым доступен промокод.

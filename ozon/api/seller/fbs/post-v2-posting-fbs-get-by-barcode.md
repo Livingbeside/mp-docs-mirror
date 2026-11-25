@@ -9,7 +9,7 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: a45abb976f28a243
+content_sha: e1212b5119809f27
 ---
 
 # Получить информацию об отправлении по штрихкоду
@@ -27,7 +27,7 @@ content_sha: a45abb976f28a243
 
 **Тело запроса** (`application/json`):
 
-- `barcode` — string **обязательный**. Штрихкод отправления. Можно получить с помощью методов [/v3/posting/fbs/get](#operation/PostingAPI_GetFbsPostingV3), [/v4/posting/fbs/list](#operation/PostingFbsList) и [/v4/posting/fbs/unfulfilled/list](#operation/PostingFbsUnfulfilledList) в массиве `barcodes` или параметре `scanit`.
+- `barcode` — string **обязательный**. Штрихкод отправления или номер пломбы товара. Получите штрихкод отправления с помощью методов [/v3/posting/fbs/get](#operation/PostingAPI_GetFbsPostingV3), [/v4/posting/fbs/list](#operation/PostingFbsList) и [/v4/posting/fbs/unfulfilled/list](#operation/PostingFbsUnfulfilledList) в массиве `barcodes` или параметре `scanit`.
 
 ## Ответы
 
@@ -44,6 +44,9 @@ content_sha: a45abb976f28a243
   - `order_number` — string. Номер заказа, к которому относится отправление.
   - `posting_number` — string. Номер отправления.
   - `products` — array[object]. Список товаров в отправлении.
+    - `exemplars` — array[object]. Список экземпляров товара.
+      - `exemplar_id` — integer<int64>. Идентификатор экземпляра.
+      - `seal_number` — string. Номер пломбы экземпляра.
     - `name` — string. Название товара.
     - `offer_id` — string. Идентификатор товара в системе продавца — артикул.
     - `price` — string. Цена товара.

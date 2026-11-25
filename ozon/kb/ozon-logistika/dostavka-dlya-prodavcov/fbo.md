@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /ozon-logistika/dostavka-dlya-prodavcov/fbo
 source: "https://seller-edu.ozon.ru/libra/ozon-logistika/dostavka-dlya-prodavcov/fbo"
-updated: "2026-11-13 15:49:27"
+updated: "2026-11-18 15:49:55"
 doc_id: 36161
-fetched_at: "2026-11-14T02:49:10Z"
-content_sha: 79d01be06fbaaa39
+fetched_at: "2026-11-25T05:30:05Z"
+content_sha: be399adadfbe9fdd
 ---
 
 # Ozon Доставка для продавцов на FBO
@@ -74,15 +74,19 @@ UDS — если ваш интернет-магазин создан на это
 
 ## Маркировка «Честный знак»
 
-При подключении собственной площадки [через Seller API](https://seller-edu.ozon.ru/libra/ozon-logistika/dostavka-dlya-prodavcov/kak-podkluchit-ozon-dostavku#%D0%BF%D1%80%D1%8F%D0%BC%D0%B0%D1%8F-%D0%B8%D0%BD%D1%82%D0%B5%D0%B3%D1%80%D0%B0%D1%86%D0%B8%D1%8F-%D0%B2-%D0%BB%D0%B8%D1%87%D0%BD%D0%BE%D0%BC-%D0%BA%D0%B0%D0%B1%D0%B8%D0%BD%D0%B5%D1%82%D0%B5-ozon) или с помощью [готовых решений](https://seller-edu.ozon.ru/libra/ozon-logistika/dostavka-dlya-prodavcov/kak-podkluchit-ozon-dostavku#%D0%B8%D0%BD%D1%82%D0%B5%D0%B3%D1%80%D0%B0%D1%86%D0%B8%D1%8F-%D1%87%D0%B5%D1%80%D0%B5%D0%B7-%D0%BD%D0%B0%D1%88%D0%B8%D1%85-%D0%BF%D0%B0%D1%80%D1%82%D0%BD%D1%91%D1%80%D0%BE%D0%B2):
+**При подключении собственной площадки ****[через Seller API](https://seller-edu.ozon.ru/libra/ozon-logistika/dostavka-dlya-prodavcov/kak-podkluchit-ozon-dostavku#%D0%BF%D1%80%D1%8F%D0%BC%D0%B0%D1%8F-%D0%B8%D0%BD%D1%82%D0%B5%D0%B3%D1%80%D0%B0%D1%86%D0%B8%D1%8F-%D0%B2-%D0%BB%D0%B8%D1%87%D0%BD%D0%BE%D0%BC-%D0%BA%D0%B0%D0%B1%D0%B8%D0%BD%D0%B5%D1%82%D0%B5-ozon)**** или с помощью ****[готовых решений](https://seller-edu.ozon.ru/libra/ozon-logistika/dostavka-dlya-prodavcov/kak-podkluchit-ozon-dostavku#%D0%B8%D0%BD%D1%82%D0%B5%D0%B3%D1%80%D0%B0%D1%86%D0%B8%D1%8F-%D1%87%D0%B5%D1%80%D0%B5%D0%B7-%D0%BD%D0%B0%D1%88%D0%B8%D1%85-%D0%BF%D0%B0%D1%80%D1%82%D0%BD%D1%91%D1%80%D0%BE%D0%B2)**
 
 1. После оформления заказа отправьте покупателю авансовый чек без кодов маркировки.
-2. Чтобы узнать, какие коды маркировки у заказанных товаров, воспользуйтесь методом **v1/posting/marks** Seller API.
-3. Когда покупатель получит товар, отправьте ему фискальный чек с кодами маркировки. Выводить коды из оборота самостоятельно не нужно, это произойдёт автоматически после формирования фискального чека, в котором указаны эти коды.
+2. Чтобы узнать, какие коды маркировки у заказанных товаров, воспользуйтесь методом **v1/posting/marks** Seller API.
+3. Проверьте в системе «Честный знак», можно ли продавать товар с полученным кодом маркировки. Если продажа с этим кодом запрещена, отмените отправление до вручения покупателю.
+4. Когда покупатель получит товар, отправьте ему фискальный чек с кодами маркировки. Ваше кассовое ПО должно быть настроено на передачу сведений в «Честный знак».
+5. Если из-за технических проблем код маркировки остался на вашем балансе, вы можете вывести его из оборота самостоятельно с причиной «Дистанционная продажа».
 
-Если вы [создали заказ вручную](https://seller-edu.ozon.ru/libra/ozon-logistika/sozdanie-zakaza-v-lichnom-kabinete-prodavca) в личном кабинете или [при работе на площадках наших партнёров](https://seller-edu.ozon.ru/libra/ozon-logistika/dostavka-dlya-prodavcov/kak-podkluchit-ozon-dostavku#%D0%BF%D0%BE%D0%B4%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%BD%D0%B8%D0%B5-%D0%BA-%D0%BF%D0%BB%D0%BE%D1%89%D0%B0%D0%B4%D0%BA%D0%B0%D0%BC-%D0%BD%D0%B0%D1%88%D0%B8%D1%85-%D0%BF%D0%B0%D1%80%D1%82%D0%BD%D1%91%D1%80%D0%BE%D0%B2):
+**Если вы ****[создали заказ вручную](https://seller-edu.ozon.ru/libra/ozon-logistika/sozdanie-zakaza-v-lichnom-kabinete-prodavca)**** в личном кабинете или ****[при работе на площадках наших партнёров](https://seller-edu.ozon.ru/libra/ozon-logistika/dostavka-dlya-prodavcov/kak-podkluchit-ozon-dostavku#%D0%BF%D0%BE%D0%B4%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%BD%D0%B8%D0%B5-%D0%BA-%D0%BF%D0%BB%D0%BE%D1%89%D0%B0%D0%B4%D0%BA%D0%B0%D0%BC-%D0%BD%D0%B0%D1%88%D0%B8%D1%85-%D0%BF%D0%B0%D1%80%D1%82%D0%BD%D1%91%D1%80%D0%BE%D0%B2)**
 
-После получения заказа покупателем Ozon сам выведет из оборота коды маркировки, которые были переданы по УПД-2 при поставке.
+Временно не выводим коды маркировки для заказов, созданных вручную или через площадки наших партнёров. Знаем о проблеме и уже работаем над её решением, с вашей стороны никаких дополнительных действий делать не нужно. Как только решим проблему, сами выведем все коды по затронутым заказам.
+
+После получения заказа покупателем Ozon сам выведет из оборота коды маркировки, которые были переданы по УПД-2 при поставке. Если вы не передадите коды маркировки по УПД-2 на наш баланс, вывести их не сможем.
 
 Формирование авансового и фискальный чеков для покупателя — на вашей стороне или на стороне партнёрской площадки.
 

@@ -6,8 +6,8 @@ path: /digest
 source: "https://seller-edu.ozon.ru/libra/digest"
 updated: "2026-01-16 15:26:37"
 doc_id: 34908
-fetched_at: "2026-11-10T02:46:11Z"
-content_sha: a9272178bb36fb7c
+fetched_at: "2026-11-25T05:30:04Z"
+content_sha: 4f972b887eb31117
 ---
 
 # Дайджест изменений
@@ -15,23 +15,6 @@ content_sha: a9272178bb36fb7c
 _Главная_
 
 ## Вложенные разделы
-- [Что нового в Базе знаний: 1-5 сентября](https://seller-edu.ozon.ru/libra/digest/chto-novogo-v-baze-znanii-1-5-sentyabrya)
-- [Что нового в Базе знаний: 8-12 сентября](https://seller-edu.ozon.ru/libra/digest/chto-novogo-8-12-sept)
-- [Что нового в Базе знаний: 15-19 сентября](https://seller-edu.ozon.ru/libra/digest/chto-novogo-15-19-sentyabrya)
-- [Что нового в Базе знаний: 22-26 сентября](https://seller-edu.ozon.ru/libra/digest/chto-novogo-22-26-sentyabrya)
-- [Что нового в Базе знаний: 29 сентября–3 октября](https://seller-edu.ozon.ru/libra/digest/chto-novogo-29-sentyabrya3-oktyabrya)
-- [Что нового в Базе знаний: 6–10 октября](https://seller-edu.ozon.ru/libra/digest/chto-novogo-610-oktyabrya)
-- [Что нового в Базе знаний: 13–17 октября](https://seller-edu.ozon.ru/libra/digest/chto-novogo-1317-oktyabrya)
-- [Что нового в Базе знаний: 20–24 октября](https://seller-edu.ozon.ru/libra/digest/chto-novogo-2024-oktyabrya)
-- [Что нового в Базе знаний: 27 октября –7 ноября](https://seller-edu.ozon.ru/libra/digest/chto-novogo-27-okt-7-noyabrya)
-- [Что нового в Базе знаний: 10–14 ноября](https://seller-edu.ozon.ru/libra/digest/chto-novogo-10-14-noyabrya)
-- [Что нового в Базе знаний: 17–21 ноября](https://seller-edu.ozon.ru/libra/digest/chto-novogo-17-21-noyabrya)
-- [Что нового в Базе знаний: 24–28 ноября](https://seller-edu.ozon.ru/libra/digest/chto-novogo-24-28-noyabrya)
-- [Что нового в Базе знаний: 1–5 декабря](https://seller-edu.ozon.ru/libra/digest/chto-novogo-1-5-dekabrya)
-- [Что нового в Базе знаний: 8–12 декабря](https://seller-edu.ozon.ru/libra/digest/chto-novogo-8-12-dekabrya)
-- [Что нового в Базе знаний: 15–19 декабря](https://seller-edu.ozon.ru/libra/digest/chto-novogo-15-19-dekabrya)
-- [Что нового в Базе знаний: 22–26 декабря](https://seller-edu.ozon.ru/libra/digest/chto-novogo-22-26-dekabrya)
-- [Что нового в Базе знаний: 12–16 января](https://seller-edu.ozon.ru/libra/digest/chto-novogo-12-16-yanvarya)
 - [Что нового в Базе знаний: 19–23 января](https://seller-edu.ozon.ru/libra/digest/chto-novogo-19-23-jan)
 - [Что нового в Базе знаний: 26–30 января](https://seller-edu.ozon.ru/libra/digest/chto-novogo-26-30-jan)
 - [Что нового в Базе знаний: 2–6 февраля](https://seller-edu.ozon.ru/libra/digest/chto-novogo-2-6-feb)
@@ -74,3 +57,5 @@ _Главная_
 - [Что нового в Базе знаний: 19-23 октября](https://seller-edu.ozon.ru/libra/digest/chto-novogo-19-23-okt)
 - [Что нового в Базе знаний: 26-30 октября](https://seller-edu.ozon.ru/libra/digest/chto-novogo-26-30-okt)
 - [Что нового в Базе знаний: 2-6 ноября](https://seller-edu.ozon.ru/libra/digest/chto-novogo-2-6-noyabrya)
+- [Что нового в Базе знаний: 9-13 ноября](https://seller-edu.ozon.ru/libra/digest/chto-novogo-9-13-noyabrya)
+- [Что нового в Базе знаний: 16-20 ноября](https://seller-edu.ozon.ru/libra/digest/chto-novogo-16-20-noyabrya26)

@@ -9,7 +9,7 @@ tags:
 spec_version: reports
 source: "https://dev.wildberries.ru/docs/openapi/reports"
 deprecated: false
-content_sha: 01ceb0e9393e26e5
+content_sha: bf8bf55497cd9524
 ---
 
 # Самовыкупы
@@ -44,12 +44,12 @@ content_sha: 01ceb0e9393e26e5
 
 **200** — Успешно
 
-- `details` — array[object]
-  - `nmID` — integer. Артикул WB
-  - `sum` — integer. Сумма заказа
-  - `currency` — string. Валюта заказа
-  - `dateFrom` — string. Начало отчётного периода
-  - `dateTo` — string. Конец отчётного периода
+- `details` — array[object] **обязательный**
+  - `currency` — string **обязательный**. Валюта заказа
+  - `dateFrom` — string **обязательный**. Начало отчётного периода
+  - `dateTo` — string **обязательный**. Конец отчётного периода
+  - `nmID` — integer **обязательный**. Артикул WB
+  - `sum` — integer **обязательный**. Сумма заказа
 
 **400** — Неправильный запрос
 

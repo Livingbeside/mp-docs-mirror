@@ -5,12 +5,63 @@ tag: News
 group: Обновления
 kind: changelog
 source: "https://docs.ozon.ru/api/seller/"
-content_sha: 028d3c3215116c0c
+content_sha: aaf06658d95a97b7
 ---
 
 # Обновления
 
 Следите за обновлениями документации на платформе для разработчиков [Ozon for dev](https://dev.ozon.ru/).
+
+## 24 ноября 2026
+
+| Метод | Изменение |
+|------------------------------------------------------------------|---------------------------------------------------------|
+| [/v1/posting/cutoff/set](#operation/PostingAPI_SetPostingCutoff) | Метод устаревает и будет отключён 20 декабря 2026 года. |
+
+## 23 ноября 2026
+
+| Метод | Изменение |
+| ---------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------ |
+| [/v3/product/list](#operation/ProductAPI_GetProductList) | 7 декабря 2026 года отключим параметр `result.total` в ответе метода. Переключитесь на `result.total_items`. |
+| [/v4/product/info/stocks](#operation/ProductAPI_GetProductInfoStocks)<br>[/v5/product/info/prices](#operation/ProductAPI_GetProductInfoPrices) | 7 декабря 2026 года отключим параметр `total` в ответе методов. Переключитесь на `total_items`. |
+| [/v3/posting/fbo/list](#operation/PostingFboList) | Добавили параметры `postings.is_extra_packed` и `postings.is_sealed` в ответ метода. |
+| [/v2/posting/fbo/get](#operation/PostingAPI_GetFboPosting) | Добавили параметры `result.is_extra_packed` и `result.is_sealed` в ответ метода. |
+
+## 19 ноября 2026
+
+| Метод | Изменение |
+| -------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- |
+| [/v1/carriage/act-discrepancy/pdf](#operation/CarriageActDiscrepancyPDF)<br>[/v1/posting/cutoff/set](#operation/PostingAPI_SetPostingCutoff) | Обновили описание методов. |
+| [/v1/carriage/get](#operation/CarriageGet) | Обновили описание параметра `status` в ответе метода. |
+| [/v1/finance/accrual/by-day](#operation/GetFinanceAccrualByDay) | Обновили описание метода.<br>Обновили описание параметра `last_id` в ответе метода. |
+
+## 17 ноября 2026
+
+| Метод | Изменение |
+| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [/v1/review/first-reviews-collection/planned-product/activate](#operation/ReviewFirstReviewsCollectionPlannedProductActivate)<br>[/v1/review/first-reviews-collection/product/add](#operation/ReviewFirstReviewsCollectionProductAdd)<br>[/v1/review/first-reviews-collection/product/delete](#operation/ReviewFirstReviewsCollectionProductDelete)<br>[/v1/review/first-reviews-collection/product/list](#operation/ReviewFirstReviewsCollectionProductList)<br>[/v1/review/first-reviews-collection/product/list-detailed](#operation/ReviewFirstReviewsCollectionProductListDetailed)<br>[/v1/review/first-reviews-collection/product/repeat](#operation/ReviewFirstReviewsCollectionProductRepeat)<br>[/v1/review/first-reviews-collection/product/toggle](#operation/ReviewFirstReviewsCollectionProductToggle)<br>[/v1/review/first-reviews-collection/product/update-target](#operation/ReviewFirstReviewsCollectionProductUpdateTarget) | Добавили бета-методы для работы с инструментом «Сбор первых отзывов». |
+| [/v2/products/stocks](#operation/ProductAPI_ProductsStocksV2)<br>[/v3/supply-order/list](#operation/SupplyOrderList)<br>[/v3/supply-order/get](#operation/SupplyOrderGet)<br>[/v1/supply-order/timeslot/update](#operation/SupplyOrderAPI_UpdateSupplyOrderTimeslot) | Обновили описание методов. |
+| [/v5/product/info/prices](#operation/ProductAPI_GetProductInfoPrices) | Добавили параметр `filter.price_index_country` в запрос метода.<br>Добавили параметры `items.price_indexes.competitor_index_data`, `items.price_indexes.external_index_data.min_price_in_seller`, `items.price_indexes.external_index_data.min_price_in_seller_currency`, `items.price_indexes.external_index_data.price_index_color`, `items.price_indexes.ozon_index_data.min_price_in_seller`, `items.price_indexes.ozon_index_data.min_price_in_seller_currency`, `items.price_indexes.ozon_index_data.price_index_color`, `items.price_indexes.self_marketplaces_index_data.min_price_in_seller`, `items.price_indexes.self_marketplaces_index_data.min_price_in_seller_currency` и `items.price_indexes.self_marketplaces_index_data.price_index_color` в ответ метода. |
+| [/v1/report/info](#operation/ReportAPI_ReportInfo) | Добавили значения `FINANCE_REALIZATION_NUMBER` и `FINANCE_REALIZATION_NUMBER_POSTING` параметра `result.report_type` в ответе метода. |
+| [/v1/report/list](#operation/ReportAPI_ReportList) | Добавили значения `FINANCE_REALIZATION_NUMBER` и `FINANCE_REALIZATION_NUMBER_POSTING` параметров `report_type` в запросе и `result.reports.report_type` в ответе метода. |
+| [/v1/report/realization/posting/create](#operation/CreateCompanyFinanceRealizationPostingReport) | Метод устаревает и будет отключён 17 января 2027 года. Переключитесь на [/v1/report/finance/realization/list](#operation/ReportFinanceRealizationList) и [/v1/report/finance/realization/number/posting/create](#operation/CreateFinanceRealizationNumberPostingReport). |
+| [/v2/finance/realization](#operation/FinanceAPI_GetRealizationReportV2) | Метод устаревает и будет отключён 17 января 2027 года. Переключитесь на [/v1/report/finance/realization/list](#operation/ReportFinanceRealizationList), [/v1/report/finance/realization/number/create](#operation/CreateFinanceRealizationNumberReport) и [/v1/report/info](#operation/ReportAPI_ReportInfo). |
+| [/v1/finance/realization/posting](#operation/FinanceAPI_GetRealizationReportV1) | Метод устаревает и будет отключён 17 января 2027 года. Переключитесь на [/v1/report/finance/realization/list](#operation/ReportFinanceRealizationList), [/v1/report/finance/realization/number/posting/create](#operation/CreateFinanceRealizationNumberPostingReport) и [/v1/report/info](#operation/ReportAPI_ReportInfo). |
+| [/v1/report/finance/realization/list](#operation/ReportFinanceRealizationList)<br>[/v1/report/finance/realization/number/create](#operation/CreateFinanceRealizationNumberReport)<br>[/v1/report/finance/realization/number/posting/create](#operation/CreateFinanceRealizationNumberPostingReport) | Добавили бета-методы для работы с отчётами о реализации. |
+| [/v1/seller-actions/create/discount-with-condition](#operation/SellerActionsCreateDiscountWithCondition)<br>[/v1/seller-actions/create/multi-level-discount](#operation/SellerActionsCreateMultiLevelDiscount)<br>[/v1/seller-actions/create/voucher](#operation/SellerActionsCreateVoucher) | Удалили значение `CURRENCY` параметра `discount_type` в запросе методов. |
+| — | В разделе [**Частые ошибки**](#tag/Errors) добавили описание ошибок `DELIVERY_WAREHOUSE_NOT_FOUND`, `DELIVERY_NO_ROUTE`, `DELIVERY_SLOT_NOT_FOUND`, `DELIVERY_METHOD_NOT_FOUND`, `INVALID_ITEM` и `USER_DELIVERY_UNAVAILABLE` для метода [/v2/order/create](#operation/OrderAPI_OrderCreate). |
+| [/v4/posting/fbs/unfulfilled/list](#operation/PostingFbsUnfulfilledList)<br>[/v4/posting/fbs/list](#operation/PostingFbsList) | В ответе методов:добавили значения `edit_seal_number` и `set_seal_number` параметра `postings.available_actions`;
+добавили параметр `postings.products.sealing_allowed`.
+ |
+| [/v3/posting/fbs/get](#operation/PostingAPI_GetFbsPostingV3) | В ответе метода: добавили значения `edit_seal_number` и `set_seal_number` параметра `result.available_actions`;
+добавили параметры `result.product_exemplars.products.exemplars.seal_number` и `result.products.sealing_allowed`.
+ |
+| [/v2/posting/fbs/get-by-barcode](#operation/PostingAPI_GetFbsPostingByBarcode) | Обновили описание параметра `barcode` в запросе метода.<br>Добавили параметр `result.products.exemplars` в ответ метода. |
+| [/v6/fbs/posting/product/exemplar/create-or-get](#operation/PostingAPI_FbsPostingProductExemplarCreateOrGetV6)<br>[/v5/fbs/posting/product/exemplar/status](#operation/PostingAPI_FbsPostingProductExemplarStatusV5) | В ответе методов:добавили значение `seal_number` параметра `products.exemplars.marks.mark_type`;
+добавили парамер `products.sealing_allowed`.
+ |
+| [/v6/fbs/posting/product/exemplar/set](#operation/PostingAPI_FbsPostingProductExemplarSetV6) | Добавили значение `seal_number` параметра `products.exemplars.marks.mark_type` в запросе метода. |
+| [/v5/fbs/posting/product/exemplar/validate](#operation/PostingAPI_FbsPostingProductExemplarValidateV5) | Добавили значение `seal_number` параметра `products.exemplars.marks.mark_type` в запросе и ответе метода. |
 
 ## 13 ноября 2026
 

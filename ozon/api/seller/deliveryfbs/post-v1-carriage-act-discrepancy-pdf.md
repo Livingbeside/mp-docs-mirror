@@ -9,14 +9,14 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: 0989f3cd7f85af79
+content_sha: 4f949ca7bfa3351b
 ---
 
 # Получить акт о расхождениях по отгрузке FBS
 
 `POST /v1/carriage/act-discrepancy/pdf`
 
-Акт о расхождениях доступен только для отгрузок в статусе `closed` и только для продавцов из СНГ.
+Акт о расхождениях доступен только для отгрузок с `integration_type = ozon_trip` в статусе `closed` и только для продавцов из СНГ.
 
 ## Параметры
 

@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /work-with-goods/zagruzka-tovarov/perenos-kartochek-tovarov/perenos-kartochek-tovarov
 source: "https://seller-edu.ozon.ru/libra/work-with-goods/zagruzka-tovarov/perenos-kartochek-tovarov/perenos-kartochek-tovarov"
-updated: "2026-11-09 14:30:17"
+updated: "2026-11-19 14:43:47"
 doc_id: 1768
-fetched_at: "2026-11-10T02:46:12Z"
-content_sha: 9596cdbed9a1c1c5
+fetched_at: "2026-11-25T05:30:05Z"
+content_sha: 3704bebcb6a9912d
 ---
 
 # Перенос карточек товаров
@@ -50,7 +50,9 @@ _Главная / Работа с товарами / Создание и ред�
 
 [Какие товары и данные перенести нельзя](/work-with-goods/zagruzka-tovarov/created-goods/perenos-kartochek#%D0%BA%D0%B0%D0%BA%D0%B8%D0%B5-%D0%BA%D0%B0%D1%80%D1%82%D0%BE%D1%87%D0%BA%D0%B8-%D0%BD%D0%B5-%D0%BF%D0%BE%D0%BB%D1%83%D1%87%D0%B8%D1%82%D1%81%D1%8F-%D0%BF%D0%B5%D1%80%D0%B5%D0%BD%D0%B5%D1%81%D1%82%D0%B8)
 
-Если у вас есть непогашенный кредит в Ozon Банке, создать заявку на перенос карточек не получится. Проверьте свою задолженность [в кабинете банка](https://invest.ozon.ru/borrower/cabinet/). Чтобы получить разрешение на перенос, обратитесь в [поддержку](https://seller.ozon.ru/app/messenger?channel=SCRM): **Кредитование на Ozon → Кредит на любые цели. Вопрос по погашению → Механика удержаний**. Заявку рассмотрят наши риск-менеджеры и сообщат решение
+Если у вас есть непогашенный кредит в Ozon Банке, создать заявку на перенос карточек не получится. Проверьте свою задолженность [в личном кабинете](https://invest.ozon.ru/borrower/cabinet/). [Как досрочно погасить кредит](https://seller-edu.ozon.ru/fintech/ozon-invest/ozon-invest/kredit-na-lubye-celi/kak-dosrochno-pogasit-kredit)
+
+Чтобы получить разрешение на перенос, обратитесь в [поддержку](https://seller.ozon.ru/app/messenger?channel=SCRM): **Главное меню → Товары и цены → Карточка товара → Перенос карточек в другой ЛК**. Заявку рассмотрят наши риск-менеджеры и сообщат решение.
 
 # Какие карточки не получится перенести
 

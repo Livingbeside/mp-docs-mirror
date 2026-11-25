@@ -5,7 +5,7 @@ tag: dbsAssemblyOrders
 group: ""
 kind: guide
 source: "https://dev.wildberries.ru/docs/openapi/dbs"
-content_sha: 12b3341f657455cd
+content_sha: 2af3663069fa3dc6
 ---
 
 # Сборочные задания DBS
@@ -16,9 +16,9 @@ content_sha: 12b3341f657455cd
 
  Узнать больше о сборочных заданиях DBS можно в [справочном центре](https://seller.wildberries.ru/instructions/material/A-108?goBackOption=prevRoute&categoryId=0fc94a39-22b1-4a54-8ef2-06dac1d8137b)
 
-Для работы со сборочными заданиями DBS:
-1. [Получите новое сборочное задание](./dbs#tag/dbsAssemblyOrders/operation/getV3DbsOrdersNew) и сохраните его до перевода на сборку. Если вы не сохраните информацию о сборочном задании заранее, вы сможете получить ее только после завершения задания (отмены или продажи). Проверяйте [дату и время доставки](./dbs#tag/dbsAssemblyOrders/operation/postV3DbsOrdersDeliveryDate).
-2. [Переведите его на сборку](./dbs#tag/dbsAssemblyOrders/operation/postV3DbsOrdersStatusConfirm).
-3. После перевода на сборку для заказа становится доступной [информация о покупателе](./dbs#tag/dbsAssemblyOrders/operation/postV3DbsOrdersClient) (имя, телефон).
-4. [Переведите в доставку](./dbs#tag/dbsAssemblyOrders/operation/postV3DbsOrdersStatusDeliver).
-5. После доставки задания покупателю вам необходимо сообщить на наш сервер, что [сборочное задание принято](./dbs#tag/dbsAssemblyOrders/operation/postV3DbsOrdersStatusReceive) покупателем или, что [покупатель отказался от сборочного задания](./dbs#tag/dbsAssemblyOrders/operation/postV3DbsOrdersStatusReject).
+Порядок работы со сборочными заданиями DBS:
+1. [Получите новое сборочное задание](./dbs#tag/dbsAssemblyOrders/operation/getV3DbsOrdersNew) и сохраните информацию о нём до перевода на сборку. Если вы не сохраните данные, вы сможете получить их только после отмены или продажи заказа. Проверяйте [дату и время доставки](./dbs#tag/dbsAssemblyOrders/operation/postV3DbsOrdersDeliveryDate).
+2. [Переведите сборочное задание на сборку](./dbs#tag/dbsAssemblyOrders/operation/postV3DbsOrdersStatusConfirm).
+3. Получите [информацию о покупателе](./dbs#tag/dbsAssemblyOrders/operation/postV3DbsOrdersClient).
+3. [Переведите сборочное задание в доставку](./dbs#tag/dbsAssemblyOrders/operation/postV3DbsOrdersStatusDeliver).
+4. Сообщите, что покупатель [принял заказ](./dbs#tag/dbsAssemblyOrders/operation/postV3DbsOrdersStatusReceive) или [отказался от заказа](./dbs#tag/dbsAssemblyOrders/operation/postV3DbsOrdersStatusReject).

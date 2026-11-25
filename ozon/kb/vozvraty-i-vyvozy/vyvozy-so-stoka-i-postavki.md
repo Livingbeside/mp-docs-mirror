@@ -1,21 +1,21 @@
 ---
-title: Вывозы со стока и поставки
+title: Вывозы со склада и поставки
 marketplace: ozon
 kind: section
 path: /vozvraty-i-vyvozy/vyvozy-so-stoka-i-postavki
 source: "https://seller-edu.ozon.ru/libra/vozvraty-i-vyvozy/vyvozy-so-stoka-i-postavki"
-updated: "2025-12-04 15:05:39"
+updated: "2026-11-18 12:51:40"
 doc_id: 47260
-fetched_at: "2026-09-11T01:52:46Z"
-content_sha: 450bd46a462fd8cc
+fetched_at: "2026-11-25T05:30:05Z"
+content_sha: d6a99d91fa680814
 ---
 
-# Вывозы со стока и поставки
+# Вывозы со склада и поставки
 
 _Главная / Клиентские возвраты и вывозы товаров_
 
 ## Вложенные разделы
-- [Вывоз товаров со стока со склада Ozon](https://seller-edu.ozon.ru/libra/vozvraty-i-vyvozy/vyvozy-so-stoka-i-postavki/zabrat-so-stoka)
+- [Вывоз товаров со склада Ozon и ПВЗ](https://seller-edu.ozon.ru/libra/vozvraty-i-vyvozy/vyvozy-so-stoka-i-postavki/zabrat-so-stoka)
 - [Вывоз непринятых товаров с поставки](https://seller-edu.ozon.ru/libra/vozvraty-i-vyvozy/vyvozy-so-stoka-i-postavki/zabrat-s-postavki)
 - [Автоматический вывоз и утилизация товаров со склада Ozon](https://seller-edu.ozon.ru/libra/vozvraty-i-vyvozy/vyvozy-so-stoka-i-postavki/avtovyvoz-tovarov-so-sklada-ozon)
 - [Излишки](https://seller-edu.ozon.ru/libra/vozvraty-i-vyvozy/vyvozy-so-stoka-i-postavki/izlishki)

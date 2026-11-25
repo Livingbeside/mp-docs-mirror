@@ -9,14 +9,14 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: 3016a3a13ac39917
+content_sha: 98cb618212bc50ff
 ---
 
 # Список товаров
 
 `POST /v3/product/list`
 
-23 ноября 2026 года отключим параметр result.total в ответе метода. Переключитесь на result.total_items.
+7 декабря 2026 года отключим параметр result.total в ответе метода. Переключитесь на result.total_items.
  
 
 Метод для получения списка всех товаров.

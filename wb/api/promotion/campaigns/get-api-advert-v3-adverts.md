@@ -9,7 +9,7 @@ tags:
 spec_version: promotion
 source: "https://dev.wildberries.ru/docs/openapi/promotion"
 deprecated: false
-content_sha: e150b2b2d04944fd
+content_sha: cf9b934e005e3b09
 ---
 
 # Информация о кампаниях
@@ -68,7 +68,7 @@ content_sha: e150b2b2d04944fd
       - `id` — integer<int64> **обязательный**. ID предмета
       - `name` — string **обязательный**. Название предмета
     - `bids` — array[object] **обязательный**. Ставки
-      - `type` — string (search, recommendations, combined) **обязательный**. Место размещения кампании: - `search` - поиск - `recommendations` - рекомендации - `combined` - поиск и рекомендации с единой ставкой
+      - `type` — string (search, recommendations, combined) **обязательный**. Место размещения кампании: - `search` — поиск - `recommendations` — рекомендации - `combined` — поиск и рекомендации с единой ставкой
       - `value` — integer<int64> **обязательный**. Ставка
   - `currency` — string<ISO 4217> **обязательный**. Код валюты
   - `restrictions` — object **обязательный**. Ограничения кампании

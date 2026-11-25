@@ -5,7 +5,7 @@ tag: Errors
 group: Приложения
 kind: guide
 source: "https://docs.ozon.ru/api/seller/"
-content_sha: 4265583f27925933
+content_sha: 6710bc6ffccec6f6
 ---
 
 # Частые ошибки
@@ -222,3 +222,13 @@ content_sha: 4265583f27925933
 | Ошибка | Описание |
 |-----------------------------------|------------------------------------------------------------------------------------------------------|
 | `file extension is not available` | Не указано расширение файла. Укажите в названии файла расширение `.jpg`, `.jpeg`, `.png` или `.pdf`. |
+
+### [/v2/order/create](#operation/OrderAPI_OrderCreate)
+
+| Ошибка | Описание |
+|-------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `DELIVERY_WAREHOUSE_NOT_FOUND`<br>`DELIVERY_NO_ROUTE` | Доставка с выбранного склада недоступна. Получите доступные варианты доставки методом [/v2/delivery/checkout](#operation/DeliveryCheckout). |
+| `DELIVERY_SLOT_NOT_FOUND` | Выбранный таймслот недоступен. Получите доступные варианты доставки методом [/v2/delivery/checkout](#operation/DeliveryCheckout). |
+| `DELIVERY_METHOD_NOT_FOUND` | Выбранный способ доставки недоступен. Получите доступные варианты доставки методом [/v2/delivery/checkout](#operation/DeliveryCheckout). |
+| `INVALID_ITEM` | Нельзя создать заказ с выбранным товаром. Проверьте доступность товара для создания заказа методом [/v2/delivery/checkout](#operation/DeliveryCheckout). |
+| `USER_DELIVERY_UNAVAILABLE` | Доставка для выбранного покупателя недоступна. |

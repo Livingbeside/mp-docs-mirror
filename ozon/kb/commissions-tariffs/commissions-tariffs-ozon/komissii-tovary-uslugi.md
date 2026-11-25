@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /commissions-tariffs/commissions-tariffs-ozon/komissii-tovary-uslugi
 source: "https://seller-edu.ozon.ru/libra/commissions-tariffs/commissions-tariffs-ozon/komissii-tovary-uslugi"
-updated: "2026-11-09 15:17:02"
+updated: "2026-11-19 11:26:19"
 doc_id: 692
-fetched_at: "2026-11-10T02:46:11Z"
-content_sha: 7329822bc5dff260
+fetched_at: "2026-11-25T05:30:05Z"
+content_sha: 35927698462436da
 ---
 
 # Вознаграждение Ozon за продажу товаров
@@ -81,7 +81,7 @@ Ozon работает по модели маркетплейса, где каж�
 
 **Специальные условия для продавцов, торгующих Fashion-товарами**
 
-Предельная процентная ставка (ПП) за продажу Fashion-товаров по всем схемам составит 27% до 31 марта 2027 года включительно. [Скачать список товаров, относящихся к Fashion](https://cdn.ozone.ru/s3/ozon-disk-api/Seller-edu/files/commissions-tariffs/commissions/Категории-и-типы-Fashion_1789628774.xlsx)
+Предельная процентная ставка (ПП) за продажу Fashion-товаров по всем схемам составит 27% до 31 января 2028 года включительно. [Скачать список товаров, относящихся к Fashion](https://cdn.ozone.ru/s3/ozon-disk-api/Seller-edu/files/commissions-tariffs/commissions/Категории-и-типы-Fashion_1789628774.xlsx)
 
 Условия действуют для продавцов, которые:
 

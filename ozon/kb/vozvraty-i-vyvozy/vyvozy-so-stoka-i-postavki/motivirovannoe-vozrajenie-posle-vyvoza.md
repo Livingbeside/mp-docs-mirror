@@ -6,13 +6,13 @@ path: /vozvraty-i-vyvozy/vyvozy-so-stoka-i-postavki/motivirovannoe-vozrajenie-po
 source: "https://seller-edu.ozon.ru/libra/vozvraty-i-vyvozy/vyvozy-so-stoka-i-postavki/motivirovannoe-vozrajenie-posle-vyvoza"
 updated: "2026-07-23 15:58:15"
 doc_id: 79070
-fetched_at: "2026-08-28T12:11:15Z"
-content_sha: df510c63b9424e01
+fetched_at: "2026-11-25T05:30:05Z"
+content_sha: f9d2cbc5f513866b
 ---
 
 # Как подать мотивированное возражение после вывоза
 
-_Главная / Клиентские возвраты и вывозы товаров / Вывозы со стока и поставки_
+_Главная / Клиентские возвраты и вывозы товаров / Вывозы со склада и поставки_
 
 Если вы не согласны с количеством или качеством товаров, которые получили по заявке на вывоз, можете отправить мотивированное возражение и приложить к нему видео распаковки коробок. [Подробнее о требованиях к видео](https://seller-edu.ozon.ru/libra/fbo/gruzomesta-i-podgotovka-k-otgruzke/videofiksatsiya-na-sklade#%D1%82%D1%80%D0%B5%D0%B1%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F-%D0%BA-%D0%B2%D0%B8%D0%B4%D0%B5%D0%BE%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B8)
 

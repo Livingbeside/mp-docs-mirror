@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /fbs/ozon-logistika/samopriemka
 source: "https://seller-edu.ozon.ru/libra/fbs/ozon-logistika/samopriemka"
-updated: "2026-11-11 09:59:09"
+updated: "2026-11-20 10:52:25"
 doc_id: 1780
-fetched_at: "2026-11-12T02:52:28Z"
-content_sha: 0873f29c41e899ad
+fetched_at: "2026-11-25T05:30:05Z"
+content_sha: 7d1a0c031d52b528
 ---
 
 # Самоприёмка отправлений
@@ -45,6 +45,8 @@ _Главная / Продажа со своего склада (FBS) / Отгр
 [Молжаниново (СЦ)](https://seller-edu.ozon.ru/fbs/punkty-priema/moskva#молжаниново-мск-молжаниново-3-хаб)
 
 [Пушкино (СЦ)](/fbs/punkty-priema/moskva#пушкино-мо-пушкино-фбс)
+
+[Раменское (СЦ)](https://seller-edu.ozon.ru/fbs/punkty-priema/moskva#раменское-мо-раменскии-до)
 
 [Саларьево (СЦ)](/fbs/punkty-priema/moskva#саларьево-мск-саларьево-3-хаб)
 
@@ -91,6 +93,8 @@ _Главная / Продажа со своего склада (FBS) / Отгр
 [Волгодонск — Степная (СЦ)](/fbs/punkty-priema/regiony#%D0%B2%D0%BE%D0%BB%D0%B3%D0%BE%D0%B4%D0%BE%D0%BD%D1%81%D0%BA-%D1%81%D1%82%D0%B5%D0%BF%D0%BD%D0%B0%D1%8F-%D1%81%D1%86)
 
 [Вологда — Белозерское (СЦ)](/fbs/punkty-priema/regiony#%D0%B2%D0%BE%D0%BB%D0%BE%D0%B3%D0%B4%D0%B0-%D0%BC%D1%83%D0%B4%D1%80%D0%BE%D0%B2%D0%B0-%D1%81%D1%86)
+
+[Вологда — Клубова (СЦ)](https://seller-edu.ozon.ru/fbs/punkty-priema/regiony#вологда-клубова-сц)
 
 [Воронеж — Рамонский (СЦ)](https://seller-edu.ozon.ru/fbs/punkty-priema/regiony#воронеж-рамонскии-сц)
 
@@ -186,6 +190,8 @@ _Главная / Продажа со своего склада (FBS) / Отгр
 
 [Сочи — Барановское (СЦ)](https://seller-edu.ozon.ru/fbs/punkty-priema/regiony#сочи-барановское-сц)
 
+[Сочи — Труда (СЦ)](https://seller-edu.ozon.ru/fbs/punkty-priema/regiony#сочи -труда-сц)
+
 [Сургут — Нефтеюганское (СЦ)](/fbs/punkty-priema/regiony#сургут-нефтеюганское-сц)
 
 [Сыктывкар — Октябрьский (СЦ)](/fbs/punkty-priema/regiony#%D1%81%D1%8B%D0%BA%D1%82%D1%8B%D0%B2%D0%BA%D0%B0%D1%80-%D0%BE%D0%BA%D1%82%D1%8F%D0%B1%D1%80%D1%8C%D1%81%D0%BA%D0%B8%D0%B8-%D1%81%D1%86)
@@ -201,6 +207,8 @@ _Главная / Продажа со своего склада (FBS) / Отгр
 [Тула — Луначарского (СЦ)](https://seller-edu.ozon.ru/libra/fbs/punkty-priema/regiony#тула-луначарского-сц)
 
 [Тюмень — Успенка (СЦ)](/fbs/punkty-priema/regiony#тюмень-успенка-сц)
+
+[Улан-Удэ — Медведчиково (СЦ)](https://seller-edu.ozon.ru/fbs/punkty-priema/regiony#улан-удэ-медведчиково-сц)
 
 [Ульяновск — Азовская (СЦ)](/fbs/punkty-priema/regiony#%D1%83%D0%BB%D1%8C%D1%8F%D0%BD%D0%BE%D0%B2%D1%81%D0%BA-%D0%B0%D0%B7%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%D1%8F-%D1%81%D1%86)
 

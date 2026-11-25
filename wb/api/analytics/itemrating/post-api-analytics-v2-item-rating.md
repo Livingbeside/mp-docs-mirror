@@ -9,7 +9,7 @@ tags:
 spec_version: analytics
 source: "https://dev.wildberries.ru/docs/openapi/analytics"
 deprecated: false
-content_sha: b8b47525c3d324f9
+content_sha: dfc859e38eaa19ff
 ---
 
 # Получить отчёт
@@ -88,13 +88,13 @@ content_sha: b8b47525c3d324f9
       - `total` — integer **обязательный**. Всего оценок
   - `items` — array[object] **обязательный**. Данные по товарам
     - `nmId` — integer<int64> **обязательный**. Артикул WB
-    - `title` — string **обязательный**. Название товара
+    - `title` — string. Название товара
     - `vendorCode` — string **обязательный**. Артикул продавца
     - `subjectId` — integer<uint64> **обязательный**. ID предмета
     - `subjectName` — string **обязательный**. Название предмета
-    - `brandName` — string **обязательный**. Бренд
-    - `tagName` — string **обязательный**. Название ярлыка
-    - `tagId` — integer<int64> **обязательный**. ID ярлыка
+    - `brandName` — string. Бренд
+    - `tagName` — string. Название ярлыка
+    - `tagId` — integer<int64>. ID ярлыка
     - `pinnedFeedback` — boolean **обязательный**. Отзыв закреплён
     - `rating` — number<float64> **обязательный**. Рейтинг карточки товара
     - `feedbackRating` — object **обязательный**. Рейтинг товара по отзывам

@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /fbo/gruzomesta-i-podgotovka-k-otgruzke/gruzomesta-v-postavke
 source: "https://seller-edu.ozon.ru/libra/fbo/gruzomesta-i-podgotovka-k-otgruzke/gruzomesta-v-postavke"
-updated: "2026-11-11 15:07:48"
+updated: "2026-11-19 15:12:46"
 doc_id: 69768
-fetched_at: "2026-11-12T02:52:28Z"
-content_sha: c0e2f0f0d3fcaccd
+fetched_at: "2026-11-25T05:30:05Z"
+content_sha: 0b0fd08df5288912
 ---
 
 # Как добавить грузоместа и указать товарный состав
@@ -153,7 +153,7 @@ _Главная / Продажа со склада Ozon (FBO) / Грузомес
 
 остаточный срок годности  — не менее 90 дней.
 
-Закрепили это [Регламенте](https://seller-edu.ozon.ru/contract-for-sellers/regulations-fbo/reglament-postavok-na-fulfilment#9-%D0%B2%D1%8B%D0%B2%D0%BE%D0%B7-%D1%82%D0%BE%D0%B2%D0%B0%D1%80%D0%BE%D0%B2-%D0%BD%D0%B0%D0%B4%D0%BB%D0%B5%D0%B6%D0%B0%D1%89%D0%B5%D0%B3%D0%BE-%D0%BA%D0%B0%D1%87%D0%B5%D1%81%D1%82%D0%B2%D0%B0-%D0%B8%D0%BB%D0%B8-%D0%BD%D0%B0%D1%80%D1%83%D1%88%D0%B0%D1%8E%D1%89%D0%B8%D1%85-%D1%82%D1%80%D0%B5%D0%B1%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F-%D0%BA-%D1%81%D1%80%D0%BE%D0%BA%D1%83-%D0%B3%D0%BE%D0%B4%D0%BD%D0%BE%D1%81%D1%82%D0%B8-%D1%81%D0%BB%D1%83%D0%B6%D0%B1%D1%8B-%D1%81%D0%BE-%D1%81%D0%BA%D0%BB%D0%B0%D0%B4%D0%BE%D0%B2-ozon-%D0%B7%D0%B0-%D0%B8%D1%81%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%BD%D0%B8%D0%B5%D0%BC-%D0%B2%D1%8B%D0%B2%D0%BE%D0%B7%D0%B0-%D1%82%D0%BE%D0%B2%D0%B0%D1%80%D0%BE%D0%B2-%D0%BF%D0%B5%D1%80%D0%B5%D1%87%D0%B8%D1%81%D0%BB%D0%B5%D0%BD%D0%BD%D1%8B%D1%85-%D0%B2-%D1%80%D0%B0%D0%B7%D0%B4%D0%B5%D0%BB%D0%B5-11-%D1%80%D0%B5%D0%B3%D0%BB%D0%B0%D0%BC%D0%B5%D0%BD%D1%82%D0%B0). Если сроки годности не соответствуют условиям, не примем товары при отгрузке. Если до конца срока годности остаётся меньше 45 дней, снимем товар с продажи и попросим вывезти его со склада. 
+Закрепили это в [Регламенте](https://seller-edu.ozon.ru/contract-for-sellers/regulations-fbo/reglament-postavok-na-fulfilment#9-%D0%B2%D1%8B%D0%B2%D0%BE%D0%B7-%D1%82%D0%BE%D0%B2%D0%B0%D1%80%D0%BE%D0%B2-%D0%BD%D0%B0%D0%B4%D0%BB%D0%B5%D0%B6%D0%B0%D1%89%D0%B5%D0%B3%D0%BE-%D0%BA%D0%B0%D1%87%D0%B5%D1%81%D1%82%D0%B2%D0%B0-%D0%B8%D0%BB%D0%B8-%D0%BD%D0%B0%D1%80%D1%83%D1%88%D0%B0%D1%8E%D1%89%D0%B8%D1%85-%D1%82%D1%80%D0%B5%D0%B1%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F-%D0%BA-%D1%81%D1%80%D0%BE%D0%BA%D1%83-%D0%B3%D0%BE%D0%B4%D0%BD%D0%BE%D1%81%D1%82%D0%B8-%D1%81%D0%BB%D1%83%D0%B6%D0%B1%D1%8B-%D1%81%D0%BE-%D1%81%D0%BA%D0%BB%D0%B0%D0%B4%D0%BE%D0%B2-ozon-%D0%B7%D0%B0-%D0%B8%D1%81%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%BD%D0%B8%D0%B5%D0%BC-%D0%B2%D1%8B%D0%B2%D0%BE%D0%B7%D0%B0-%D1%82%D0%BE%D0%B2%D0%B0%D1%80%D0%BE%D0%B2-%D0%BF%D0%B5%D1%80%D0%B5%D1%87%D0%B8%D1%81%D0%BB%D0%B5%D0%BD%D0%BD%D1%8B%D1%85-%D0%B2-%D1%80%D0%B0%D0%B7%D0%B4%D0%B5%D0%BB%D0%B5-11-%D1%80%D0%B5%D0%B3%D0%BB%D0%B0%D0%BC%D0%B5%D0%BD%D1%82%D0%B0). Если сроки годности не соответствуют условиям, не примем товары при отгрузке. Если до конца срока годности остаётся меньше 45 дней, снимем товар с продажи и попросим вывезти его со склада. 
 Срок годности на момент отгрузки не может быть больше, чем срок, который указан в карточке товара. Например, если в карточке указано, что он хранится 180 дней, срок годности на момент отгрузки не может быть больше 180 дней.
 
 **Сколько товаров может быть в одном грузоместе? **

@@ -9,7 +9,7 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: ec3e018f96cf6cef
+content_sha: 44fd3e14a4f8ad51
 ---
 
 # Получить информацию об отправлении по идентификатору
@@ -66,7 +66,7 @@ content_sha: ec3e018f96cf6cef
     - `warehouse_id` — integer<int64>. Идентификатор склада.
     - `client_delivery_date_begin` — string<date-time>. Дата и время начала доставки. Только для отправлений, оформленных через [Ozon Доставку](#tag/OzonLogistics).
     - `client_delivery_date_end` — string<date-time>. Ожидаемая дата, до которой заказ будет доставлен. Только для отправлений, оформленных через [Ozon Доставку](#tag/OzonLogistics).
-  - `available_actions` — ?. Доступные действия и информация об отправлении: - `arbitration` — открыть спор; - `awaiting_delivery` — перевести в статус «Ожидает отгрузки»; - `can_create_chat` — начать чат с покупателем; - `cancel` — отменить отправление; - `click_track_number` — просмотреть по трек-номеру историю изменения статусов в личном кабинете; - `customer_phone_available` — телефон покупателя; - `has_weight_products` — весовые товары в отправлении; - `hide_region_and_city` — скрыть регион и город покупателя в отчёте; - `invoice_get` — получить информацию из счёта-фактуры; - `invoice_send` — создать счёт-фактуру; - `invoice_update` — отредактировать счёт-фактуру; - `label_download_big` — скачать большую этикетку; - `label_download_small` — скачать маленькую этикетку; - `label_download` — скачать этикетку; - `non_int_delivered` — перевести в статус «Условно доставлен»; - `non_int_delivering` — перевести в статус «Доставляется»; - `non_int_last_mile` — перевести в статус «Курьер в пути»; - `product_cancel` — отменить часть товаров в отправлении; - `set_cutoff` — необходимо указать дату отгрузки, воспользуйтесь методом [/v1/posting/cutoff/set](#operation/PostingAPI_SetPostingCutoff); - `set_timeslot` — изменить время доставки покупателю; - `set_track_number` — указать или изменить трек-номер; - `ship_async_in_process` — отправление собирается; - `ship_async_retry` — собрать отправление повторно после ошибки сборки; - `ship_async` — собрать отправление; - `ship_with_additional_info` — необходимо заполнить дополнительную информацию; - `ship` — собрать отправление; - `update_cis` — изменить дополнительную информацию.
+  - `available_actions` — ?. Доступные действия и информация об отправлении: - `arbitration` — открыть спор; - `awaiting_delivery` — перевести в статус «Ожидает отгрузки»; - `can_create_chat` — начать чат с покупателем; - `cancel` — отменить отправление; - `click_track_number` — просмотреть по трек-номеру историю изменения статусов в личном кабинете; - `customer_phone_available` — телефон покупателя; - `has_weight_products` — весовые товары в отправлении; - `hide_region_and_city` — скрыть регион и город покупателя в отчёте; - `invoice_get` — получить информацию из счёта-фактуры; - `invoice_send` — создать счёт-фактуру; - `invoice_update` — отредактировать счёт-фактуру; - `label_download_big` — скачать большую этикетку; - `label_download_small` — скачать маленькую этикетку; - `label_download` — скачать этикетку; - `non_int_delivered` — перевести в статус «Условно доставлен»; - `non_int_delivering` — перевести в статус «Доставляется»; - `non_int_last_mile` — перевести в статус «Курьер в пути»; - `product_cancel` — отменить часть товаров в отправлении; - `set_cutoff` — необходимо указать дату отгрузки, воспользуйтесь методом [/v1/posting/cutoff/set](#operation/PostingAPI_SetPostingCutoff); - `set_timeslot` — изменить время доставки покупателю; - `set_track_number` — указать или изменить трек-номер; - `ship_async_in_process` — отправление собирается; - `ship_async_retry` — собрать отправление повторно после ошибки сборки; - `ship_async` — собрать отправление; - `ship_with_additional_info` — необходимо заполнить дополнительную информацию; - `ship` — собрать отправление; - `update_cis` — изменить дополнительную информацию; - `edit_seal_number` — изменить номера пломб товаров в отправлении; - `set_seal_number` — указать номера пломб товаров в отправлении.
   - `barcodes` — object. Штрихкоды отправления.
     - `lower_barcode` — string. Нижний штрихкод на маркировке отправления.
     - `upper_barcode` — string. Верхний штрихкод на маркировке отправления.
@@ -160,6 +160,7 @@ content_sha: ec3e018f96cf6cef
         - `is_gtd_absent` — boolean. Признак того, что не указан номер таможенной декларации.
         - `rnpt` — string. Регистрационный номер партии товара (РНПТ).
         - `is_rnpt_absent` — boolean. Признак того, что не указан регистрационный номер партии товара (РНПТ).
+        - `seal_number` — string. Номер пломбы экземпляра.
         - `weight` — number<float>. Фактический вес экземпляра.
         - `imei` — array[string]. Список IMEI мобильных устройств.
       - `sku` — integer<int64>. Идентификатор товара в системе Ozon — SKU.
@@ -178,6 +179,7 @@ content_sha: ec3e018f96cf6cef
     - `is_blr_traceable` — boolean. Признак прослеживаемости товара.
     - `is_marketplace_buyout` — boolean. `true`, если Ozon выкупил товар. [Подробнее о выкупе товаров в Базе знаний продавца](https://seller-edu.ozon.ru/commissions-tariffs/commissions-tariffs-ozon/prodaji-tovarov-v-eaes-i-drugie-strany#какие-товары-выкупает-ozon)
     - `quantity` — integer<int32>. Количество товара.
+    - `sealing_allowed` — boolean. `true`, если товар можно опломбировать.
     - `sku` — integer<int64>. Идентификатор товара на Ozon.
     - `is_weight_needed` — boolean. `true`, если товар весовой.
     - `weight_max` — number<float>. Максимальный вес экземпляра.

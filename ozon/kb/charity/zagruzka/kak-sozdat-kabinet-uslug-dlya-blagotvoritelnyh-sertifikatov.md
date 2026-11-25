@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /charity/zagruzka/kak-sozdat-kabinet-uslug-dlya-blagotvoritelnyh-sertifikatov
 source: "https://seller-edu.ozon.ru/libra/charity/zagruzka/kak-sozdat-kabinet-uslug-dlya-blagotvoritelnyh-sertifikatov"
-updated: "2026-11-13 08:20:29"
+updated: "2026-11-19 11:12:52"
 doc_id: 101366
-fetched_at: "2026-11-14T02:49:09Z"
-content_sha: c205a10794d46064
+fetched_at: "2026-11-25T05:30:05Z"
+content_sha: e28fed4b1df2c191
 ---
 
 # Как создать кабинет услуг для благотворительных сертификатов
@@ -43,7 +43,7 @@ _Главная / Благотворительность / Для НКО — д�
 
 # Какое агентское вознограждение берём за пожертвование
 
-Согласно [договора](https://seller-edu.ozon.ru/libra/contract-for-sellers/contract-certificates/contract-for-sellers-of-certificates-for-services#4-1-%D0%B2%D0%BE%D0%B7%D0%BD%D0%B0%D0%B3%D1%80%D0%B0%D0%B6%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-ozon) плата за использование площадки при размещении благотворительных сертификатов — 2% от их стоимости. Используем их для обработки платежей и поддержки проектов Ozon Заботы.
+Согласно [договору](https://seller-edu.ozon.ru/contract-for-sellers/contract-certificates/contract-for-sellers-of-certificates-for-services) плата за использование площадки при размещении благотворительных сертификатов — 2% от их стоимости. Используем их для обработки платежей и поддержки проектов Ozon Заботы.
 
 # Как устроен сбор пожертвований через благотворительные сертификаты
 

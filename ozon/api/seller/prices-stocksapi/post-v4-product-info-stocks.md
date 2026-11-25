@@ -9,14 +9,14 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: 34756742b82ee773
+content_sha: a443100c2341cbb3
 ---
 
 # Информация о количестве товаров
 
 `POST /v4/product/info/stocks`
 
-23 ноября 2026 года отключим параметр total в ответе метода. Переключитесь на total_items.
+7 декабря 2026 года отключим параметр total в ответе метода. Переключитесь на total_items.
  
 
 Возвращает информацию о ĸоличестве товаров по схемам FBO, FBS, rFBS и FBP:

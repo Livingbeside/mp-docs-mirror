@@ -9,7 +9,7 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: e8e56f0305b6b255
+content_sha: 8626231f051e4920
 ---
 
 # Создать акцию с механикой «Скидка от суммы заказа»
@@ -31,7 +31,7 @@ content_sha: e8e56f0305b6b255
 
 - `date_end` — string<date-time> **обязательный**. Дата и время окончания акции.
 - `date_start` — string<date-time> **обязательный**. Дата и время начала акции.
-- `discount_type` — string (PERCENT, CURRENCY) **обязательный**. Тип скидки: - `PERCENT` — скидка в процентах; - `CURRENCY` — скидка в валюте.
+- `discount_type` — string (PERCENT) **обязательный**. Тип скидки: `PERCENT` — скидка в процентах.
 - `discount_value` — number<float> **обязательный**. Размер скидки.
 - `min_order_amount` — number<double> **обязательный**. Сумма заказа, с которой действует скидка.
 - `title` — string. Название акции.

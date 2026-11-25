@@ -9,7 +9,7 @@ tags:
 spec_version: order
 source: "https://dev.wildberries.ru/docs/openapi/orders-fbs"
 deprecated: false
-content_sha: 90a57adabcb67123
+content_sha: ab5993e73e8b5157
 ---
 
 # Получить список поставок
@@ -59,7 +59,7 @@ content_sha: 90a57adabcb67123
   - `shippingPointId` — integer. ID пункта отгрузки. Можно получить в методе получения [пунктов отгрузки поставок](./orders-fbs#tag/fbsSupplies/operation/getV3FbsShippingPoints)
   - `shippingType` — string (selfShipping, transportCompany). Способ доставки до пункта отгрузки: - `selfShipping` — доставка силами продавца - `transportCompany` — доставка через транспортную компанию
   - `waybillUuid` — string. ID ЭТрН — электронной транспортной накладной
-  - `spotAvailable` — boolean **обязательный**. Доступен ли СПОТ для этой поставки: - `true` — да. Используйте метод [получения данных СПОТ](./orders-fbs#tag/fbsSupplies/operation/postV3FbsSuppliesSpotList) - `false` — нет
+  - `spotAvailable` — boolean **обязательный**. Доступен ли СПОТ для этой поставки: - `true` — да - `false` — нет
 
 **400** — Неправильный запрос
 

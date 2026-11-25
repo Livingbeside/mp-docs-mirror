@@ -9,7 +9,7 @@ tags:
 spec_version: promotion
 source: "https://dev.wildberries.ru/docs/openapi/promotion"
 deprecated: false
-content_sha: e54bb2ba7d312587
+content_sha: 89e41aed2329bb8f
 ---
 
 # Статистика по поисковым кластерам с детализацией по дням
@@ -53,9 +53,9 @@ content_sha: e54bb2ba7d312587
       - `normQuery` — string. Поисковый кластер
       - `views` — integer. Количество просмотров. Для кампаний с типом оплаты `cpc` — за клики — значение будет `null`
       - `clicks` — integer. Количество кликов
-      - `atbs` — integer. Количество добавлений товаров в корзину
+      - `atbs` — integer. Сколько раз товар добавили в корзину
       - `orders` — integer. Количество заказов
-      - `ctr` — number<float>. CTR (click-through rate) — отношение числа кликов к количеству показов в процентах. Для кампаний с типом оплаты `cpc` — за клики — значение будет `null`
+      - `ctr` — number<float>. Кликабельность — отношение числа кликов к количеству показов, %. Для кампаний с типом оплаты `cpc` — за клики — значение будет `null`
       - `cpc` — number<float>. Средняя стоимость клика в базовых единицах валюты [профиля продавца](https://cmp.wildberries.ru/campaigns/finances)
       - `cpm` — number<float>. Средняя стоимость за тысячу показов в базовых единицах валюты [профиля продавца](https://cmp.wildberries.ru/campaigns/finances). Для кампаний с типом оплаты `cpc` — за клики — значение будет `null`
       - `avgPos` — number<float>. Средняя позиция товара на страницах поисковой выдачи

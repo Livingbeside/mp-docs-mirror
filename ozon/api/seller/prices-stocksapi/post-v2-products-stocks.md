@@ -9,7 +9,7 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: fe6fc6923b7de561
+content_sha: 8257101da1edcc2d
 ---
 
 # Обновить количество товаров на складах
@@ -18,7 +18,7 @@ content_sha: fe6fc6923b7de561
 
 Позволяет изменить информацию о количестве товара в наличии.
 
-Переданный остаток — количество товара в наличии без учёта зарезервированных товаров. Перед обновлением остатков проверьте количество зарезервированных товаров с помощью метода [/v2/product/info/stocks-by-warehouse/fbs](#operation/ProductAPI_GetProductInfoStocksByWarehouseFbsV2).
+Переданный остаток — количество товара в наличии без учёта зарезервированных товаров. Перед обновлением остатков проверьте количество зарезервированных товаров с помощью метода [/v2/product/info/stocks-by-warehouse/fbs](#operation/ProductAPI_GetProductInfoStocksByWarehouseFbsV2) или [/v1/product/info/warehouse/stocks](#operation/ProductInfoWarehouseStocks).
 
 За один запрос можно изменить наличие для 100 пар товар-склад. С одного аккаунта продавца можно отправить до 80 запросов в минуту.
 

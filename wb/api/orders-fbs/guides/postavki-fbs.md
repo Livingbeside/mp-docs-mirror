@@ -5,7 +5,7 @@ tag: fbsSupplies
 group: ""
 kind: guide
 source: "https://dev.wildberries.ru/docs/openapi/orders-fbs"
-content_sha: 9f0c4b9669484c21
+content_sha: 5ad57d91ef613bf7
 ---
 
 # Поставки FBS
@@ -29,7 +29,7 @@ content_sha: 9f0c4b9669484c21
  1. [Проверьте список грузомест](./orders-fbs#tag/fbsSupplies/operation/getV3SuppliesSupplyIdTrbx).
  1. [Получите стикеры грузомест](./orders-fbs#tag/fbsSupplies/operation/postV3SuppliesSupplyIdTrbxStickers). Распечатайте и наклейте стикеры на грузоместа.
  1. После того как поставка будет укомплектована нужными сборочными заданиями, необходимо [передать её в доставку](./orders-fbs#tag/fbsSupplies/operation/patchV3SuppliesSupplyIdDeliver). Если поставка не была передана в доставку, то при сканировании её QR-кода или приёмке первого товара на ПВЗ поставка автоматически закроется. При передаче сборочных заданий в доставку они будут автоматически собраны и переведены в статус `complete` — в доставке.
- 1. Для поставок из стран ЕАЭС добавьте данные [СПОТ](https://www.nalog.gov.ru/rn77/related_activities/spot). Получите [список стран ОКСМ](./orders-fbs#tag/fbsSupplies/operation/getV3FbsDictionariesCountriesOksm) для [добавления данных СПОТ в поставку](./orders-fbs#tag/fbsSupplies/operation/putV3FbsSuppliesSupplyIdSpot). Вы можете получать [данные СПОТ для списка поставок](./orders-fbs#tag/fbsSupplies/operation/postV3FbsSuppliesSpotList) и [QR-коды СПОТ](./orders-fbs#tag/fbsSupplies/operation/getV3FbsSuppliesSupplyIdStickersSpot). Сейчас методы доступны только для продавцов из Кыргызстана. В дальнейшем методы будут доступны продавцам из любой страны ЕАЭС кроме РФ, следите за обновлениями.
+ 
  1. Если поставка была отсканирована в пункте приёмки, но при этом в ней всё ещё есть неотсканированные товары, спустя определённое время необходимо доставить их повторно. Проверьте все [сборочные задания, требующие повторной отгрузки на данный момент](./orders-fbs#tag/fbsAssemblyOrders/operation/getV3SuppliesOrdersReshipment). Данные сборочные задания можно перевести в [другую активную поставку](./orders-fbs#tag/fbsSupplies/operation/patchV3SuppliesSupplyIdOrders). Сборочное задание также будет переведено в статус `confirm` — на сборке.
 
 Также вы можете:

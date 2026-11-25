@@ -9,7 +9,7 @@ tags:
 spec_version: reports
 source: "https://dev.wildberries.ru/docs/openapi/reports"
 deprecated: false
-content_sha: 3082aa7dd7d44338
+content_sha: d43f855bde6c9f90
 ---
 
 # Получить отчёт{{ /api/v1/warehouse_remains/tasks/{task_id}/download }}
@@ -46,9 +46,9 @@ content_sha: 3082aa7dd7d44338
 - `barcode` — string. Баркод
 - `techSize` — string. Размер
 - `volume` — number. Объём, л
-- `warehouses` — array[object]. Остатки на складах и товары в пути. Будут в ответе только при ненулевом `quantity`
-  - `warehouseName` — string. Название склада
-  - `quantity` — integer. Количество, шт.
+- `warehouses` — array[object] **обязательный**. Остатки на складах и товары в пути. Будут в ответе только при ненулевом `quantity`
+  - `warehouseName` — string **обязательный**. Название склада
+  - `quantity` — integer **обязательный**. Количество, шт.
 
 **204** — Нет данных
 

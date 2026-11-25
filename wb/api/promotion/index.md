@@ -2,9 +2,9 @@
 title: Маркетинг и продвижение — все методы
 api: wb-promotion
 spec_version: promotion
-operations: 43
+operations: 44
 source: "https://dev.wildberries.ru/docs/openapi/promotion"
-content_sha: f500aabcc4d6144c
+content_sha: 2f8413b07137083a
 ---
 
 # Маркетинг и продвижение
@@ -20,7 +20,7 @@ content_sha: f500aabcc4d6144c
 
 Данные синхронизируются с базой раз в 3 минуты. Статусы кампаний меняются раз в минуту. Ставки кампаний меняются раз в 30 секунд.
 
-Версия спеки: `promotion` · методов: **43** · разделов справки: **9**
+Версия спеки: `promotion` · методов: **44** · разделов справки: **9**
 
 Источник: https://dev.wildberries.ru/docs/openapi/promotion
 
@@ -34,7 +34,6 @@ content_sha: f500aabcc4d6144c
 | `GET` | `/adv/v1/advert` | media | [Информация о медиакампании](media/get-adv-v1-advert.md) |
 | `GET` | `/adv/v1/adverts` | media | [Список медиакампаний](media/get-adv-v1-adverts.md) |
 | `GET` | `/adv/v1/balance` | finances | [Баланс](finances/get-adv-v1-balance.md) |
-| `GET` | `/adv/v1/budget` | finances | [Бюджет кампании](finances/get-adv-v1-budget.md) |
 | `GET` | `/adv/v1/count` | media | [Количество медиакампаний](media/get-adv-v1-count.md) |
 | `GET` | `/adv/v1/payments` | finances | [Получение истории пополнений счёта](finances/get-adv-v1-payments.md) |
 | `GET` | `/adv/v1/promotion/count` | campaigns | [Списки кампаний](campaigns/get-adv-v1-promotion-count.md) |
@@ -43,9 +42,11 @@ content_sha: f500aabcc4d6144c
 | `GET` | `/adv/v3/fullstats` | statistics | [Статистика кампаний](statistics/get-adv-v3-fullstats.md) |
 | `GET` | `/api/advert/v0/bids/recommendations` | campaignManagement | [Рекомендуемые ставки для карточек товаров и поисковых кластеров](campaignmanagement/get-api-advert-v0-bids-recommendations.md) |
 | `GET` | `/api/advert/v0/daily-limits` | campaignManagement | [Получить настройки дневных лимитов кампаний](campaignmanagement/get-api-advert-v0-daily-limits.md) |
+| `GET` | `/api/advert/v0/positions` | statistics | [Позиции карточек товаров в поисковой выдаче](statistics/get-api-advert-v0-positions.md) |
 | `GET` | `/api/advert/v1/config` | campaignManagement | [Конфигурационные значения продвижения](campaignmanagement/get-api-advert-v1-config.md) |
 | `GET` | `/api/advert/v2/adverts` | campaigns | [Информация о кампаниях](campaigns/get-api-advert-v2-adverts.md) |
 | `GET` | `/api/advert/v3/adverts` | campaigns | [Информация о кампаниях](campaigns/get-api-advert-v3-adverts.md) |
+| `GET` | `/api/advert/v4/fullstats` | statistics | [Плоская статистика кампаний](statistics/get-api-advert-v4-fullstats.md) |
 | `GET` | `/api/v1/calendar/promotions/details` | promoCalendar | [Детальная информация об акциях](promocalendar/get-api-v1-calendar-promotions-details.md) |
 | `GET` | `/api/v1/calendar/promotions/nomenclatures` | promoCalendar | [Список товаров для участия в акции](promocalendar/get-api-v1-calendar-promotions-nomenclatures.md) |
 | `GET` | `/api/v1/calendar/promotions` | promoCalendar | [Список акций](promocalendar/get-api-v1-calendar-promotions.md) |

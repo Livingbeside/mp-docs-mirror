@@ -9,7 +9,7 @@ tags:
 spec_version: reports
 source: "https://dev.wildberries.ru/docs/openapi/reports"
 deprecated: false
-content_sha: a8901c6dcec599d1
+content_sha: 554c621bb4594adb
 ---
 
 # Получить отчёт
@@ -48,18 +48,18 @@ content_sha: a8901c6dcec599d1
 
 **200** — Успешно
 
-- `response` — object
-  - `data` — array[object]
-    - `name` — string. Страна покупателя
-    - `price` — number. Цена товара, с НДС
+- `response` — object **обязательный**
+  - `data` — array[object] **обязательный**
+    - `barcode` — string. Баркод
     - `currency_name_short` — string. Валюта
     - `excise_short` — string. Код маркировки
-    - `barcode` — string. Баркод
+    - `fiscal_doc_number` — integer. Номер фискального документа (чека полного расчёта), если есть
+    - `fiscal_drive_number` — string. Номер фискального накопителя, если есть
+    - `fiscal_dt` — string. Дата фискализации (дата в чеке), если есть, `ГГГГ-ММ-ДД`
+    - `name` — string. Страна покупателя
     - `nm_id` — integer. Артикул WB
     - `operation_type_id` — integer. Тип операции, если есть: * `1` — вывод из оборота * `2` — возврат в оборот
-    - `fiscal_doc_number` — integer. Номер фискального документа (чека полного расчёта), если есть
-    - `fiscal_dt` — string. Дата фискализации (дата в чеке), если есть, `ГГГГ-ММ-ДД`
-    - `fiscal_drive_number` — string. Номер фискального накопителя, если есть
+    - `price` — number. Цена товара, с НДС
     - `rid` — integer. `Rid`
     - `srid` — string. `Srid`
 

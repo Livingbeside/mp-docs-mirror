@@ -9,7 +9,7 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: 4366226646f0d1b8
+content_sha: 0101a286de08eb1c
 ---
 
 # Информация о перевозке
@@ -48,7 +48,7 @@ content_sha: 4366226646f0d1b8
 - `is_partial` — boolean. `true`, если перевозка частичная.
 - `partial_num` — integer<int64>. Порядковый номер частичной перевозки.
 - `retry_count` — integer<int32>. Количество повторных попыток создания перевозки.
-- `status` — string. Статус перевозки: - `received` — идёт приёмка, - `closed` — завершена после приёмки, - `sended` — отправлена, - `cancelled` — отменена.
+- `status` — string. Статус перевозки: - `new`, `awaiting_retry`, `in_process`, `success`, `pending` — ожидает подтверждения; - `error` — в перевозке найдены ошибки; - `received`, `formed`, `sended`, `completion_enqueued`, `completion_processing`, `completion_failed` — сформирована; - `completed` — завершена; - `cancelation_enqueued`, `cancelation_processing`, `cancelation_failed` — отменена.
 - `tpl_provider_id` — integer<int64>. Идентификатор провайдера доставки.
 - `updated_at` — string<date-time>. Дата последнего обновления информации о перевозке.
 - `warehouse_id` — integer<int64>. Идентификатор склада.

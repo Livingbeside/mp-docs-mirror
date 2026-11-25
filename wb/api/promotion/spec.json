@@ -206,6 +206,33 @@
         "description": "Некорректное использование метода",
         "value": "Для получения информации передайте или список кампаний, или набор фильтров"
       },
+      "InvalidAdvertIdsFormat": {
+        "value": {
+          "detail": "code=400, message=Invalid format for parameter advertIds: error setting array element: error binding string parameter: strconv.ParseInt: parsing \"\": invalid syntax",
+          "origin": "camp-api-public-cache",
+          "request_id": "6dca9599bce5dc8b382e89d55a89ad77",
+          "status": 400,
+          "title": "bad request"
+        }
+      },
+      "InvalidBeginDateFormat": {
+        "value": {
+          "detail": "code=400, message=Invalid format for parameter beginDate: parsing time \"29030753\" as \"2006-01-02\": cannot parse \"0753\" as \"-\"",
+          "origin": "camp-api-public-cache",
+          "request_id": "f3aca18bbffd05f2aaa82b92e8771076",
+          "status": 400,
+          "title": "bad request"
+        }
+      },
+      "InvalidEndDateFormat": {
+        "value": {
+          "detail": "code=400, message=Invalid format for parameter endDate: parsing time \"29030753\" as \"2006-01-02\": cannot parse \"0753\" as \"-\"",
+          "origin": "camp-api-public-cache",
+          "request_id": "f81ba90077bcc8ce26611a0635c5c85e",
+          "status": 400,
+          "title": "bad request"
+        }
+      },
       "InvalidId": {
         "description": "Недопустимый ID кампании",
         "value": {
@@ -717,6 +744,70 @@
               "advertId": 123456789,
               "currency": "RUB",
               "total": 6000
+            }
+          ]
+        }
+      },
+      "V4FullStatsSuccesResponse": {
+        "value": {
+          "rows": [
+            {
+              "advertId": 28449281,
+              "atbs": 1,
+              "avgPos": 24,
+              "canceled": 0,
+              "clicks": 5,
+              "conversionType": "direct",
+              "cpc": 33.02,
+              "cr": 20,
+              "ctr": 1.92,
+              "currency": "RUB",
+              "date": "2026-09-05",
+              "nmId": 398309059,
+              "orders": 1,
+              "placement": "search",
+              "shks": 1,
+              "sum": 165.1,
+              "sumPrice": 500,
+              "views": 260
+            },
+            {
+              "advertId": 28449281,
+              "atbs": 0,
+              "canceled": 0,
+              "clicks": 0,
+              "conversionType": "associated",
+              "cpc": 0,
+              "cr": 0,
+              "ctr": 0,
+              "currency": "RUB",
+              "date": "2026-09-05",
+              "nmId": 301957154,
+              "orders": 2,
+              "placement": "search",
+              "shks": 2,
+              "sum": 0,
+              "sumPrice": 1400,
+              "views": 0
+            },
+            {
+              "advertId": 28449281,
+              "atbs": 1,
+              "canceled": 0,
+              "clicks": 0,
+              "conversionType": "multicard",
+              "cpc": 0,
+              "cr": 0,
+              "ctr": 0,
+              "currency": "RUB",
+              "date": "2026-09-05",
+              "nmId": 398309061,
+              "orders": 1,
+              "placement": "search",
+              "shks": 1,
+              "sum": 0,
+              "sumPrice": 700,
+              "views": 0
             }
           ]
         }
@@ -1613,11 +1704,11 @@
                     "type": "integer"
                   },
                   "atbs": {
-                    "description": "Количество добавлений товаров в корзину",
+                    "description": "Сколько раз товар добавили в корзину",
                     "type": "integer"
                   },
                   "canceled": {
-                    "description": "Отмены, шт.",
+                    "description": "Количество отмен",
                     "type": "integer"
                   },
                   "clicks": {
@@ -1629,11 +1720,11 @@
                     "type": "number"
                   },
                   "cr": {
-                    "description": "CR (conversion rate) — отношение количества заказов к общему количеству кликов",
+                    "description": "Отношение количества заказов к общему количеству кликов",
                     "type": "number"
                   },
                   "ctr": {
-                    "description": "CTR (click-through rate) — отношение числа кликов к количеству показов в процентах",
+                    "description": "Кликабельность — отношение числа кликов к количеству показов, %",
                     "type": "number"
                   },
                   "nms": {
@@ -1641,11 +1732,11 @@
                     "items": {
                       "properties": {
                         "atbs": {
-                          "description": "Количество добавлений товаров в корзину",
+                          "description": "Сколько раз товар добавили в корзину",
                           "type": "integer"
                         },
                         "canceled": {
-                          "description": "Отмены, шт.",
+                          "description": "Количество отмен",
                           "type": "integer"
                         },
                         "clicks": {
@@ -1657,11 +1748,11 @@
                           "type": "number"
                         },
                         "cr": {
-                          "description": "CR (conversion rate) — отношение количества заказов к общему количеству кликов",
+                          "description": "Отношение количества заказов к общему количеству кликов",
                           "type": "number"
                         },
                         "ctr": {
-                          "description": "CTR (click-through rate) — отношение числа кликов к количеству показов в процентах",
+                          "description": "Кликабельность — отношение числа кликов к количеству показов, %",
                           "type": "number"
                         },
                         "name": {
@@ -1753,11 +1844,11 @@
               "type": "array"
             },
             "atbs": {
-              "description": "Количество добавлений товаров в корзину",
+              "description": "Сколько раз товар добавили в корзину",
               "type": "integer"
             },
             "canceled": {
-              "description": "Отмены, шт.",
+              "description": "Количество отмен",
               "type": "integer"
             },
             "clicks": {
@@ -1773,7 +1864,7 @@
               "type": "number"
             },
             "ctr": {
-              "description": "CTR (click-through rate) — отношение числа кликов к количеству показов в процентах",
+              "description": "Кликабельность — отношение числа кликов к количеству показов, %",
               "type": "number"
             },
             "date": {
@@ -1881,7 +1972,7 @@
             "type": "integer"
           },
           "atbs": {
-            "description": "Количество добавлений товаров в корзину",
+            "description": "Сколько раз товар добавили в корзину",
             "type": "integer"
           },
           "boosterStats": {
@@ -1895,7 +1986,7 @@
             ]
           },
           "canceled": {
-            "description": "Отмены, шт.",
+            "description": "Количество отмен",
             "type": "integer"
           },
           "clicks": {
@@ -1908,12 +1999,12 @@
             "type": "number"
           },
           "cr": {
-            "description": "CR (conversion rate) — отношение количества заказов к общему количеству кликов",
+            "description": "Отношение количества заказов к общему количеству кликов",
             "format": "double",
             "type": "number"
           },
           "ctr": {
-            "description": "CTR (click-through rate) — отношение числа кликов к количеству показов в процентах",
+            "description": "Кликабельность — отношение числа кликов к количеству показов, %",
             "format": "double",
             "type": "number"
           },
@@ -2393,7 +2484,7 @@
         "items": {
           "properties": {
             "atbs": {
-              "description": "Количество добавлений товаров в корзину",
+              "description": "Сколько раз товар добавили в корзину",
               "type": "integer"
             },
             "clicks": {
@@ -2417,7 +2508,7 @@
         "items": {
           "properties": {
             "atbs": {
-              "description": "Количество добавлений товаров в корзину",
+              "description": "Сколько раз товар добавили в корзину",
               "type": "integer"
             },
             "clicks": {
@@ -2452,7 +2543,7 @@
             "type": "integer"
           },
           "atbs": {
-            "description": "Количество добавлений товаров в корзину",
+            "description": "Сколько раз товар добавили в корзину",
             "type": "integer"
           },
           "category_name": {
@@ -2542,7 +2633,7 @@
             "type": "integer"
           },
           "atbs": {
-            "description": "Количество добавлений товаров в корзину",
+            "description": "Сколько раз товар добавили в корзину",
             "type": "integer"
           },
           "category_name": {
@@ -3276,7 +3367,7 @@
       "V0GetNormQueryStatsItemStat": {
         "properties": {
           "atbs": {
-            "description": "Количество добавлений товаров в корзину",
+            "description": "Сколько раз товар добавили в корзину",
             "type": "integer"
           },
           "avg_pos": {
@@ -3390,6 +3481,145 @@
         },
         "required": [
           "stats"
+        ],
+        "type": "object"
+      },
+      "V0PositionsRange": {
+        "properties": {
+          "clicks": {
+            "description": "Количество кликов в диапазоне",
+            "example": 2,
+            "nullable": false,
+            "type": "integer"
+          },
+          "clicksShare": {
+            "description": "Доля кликов диапазона от всех кликов по карточке товара за день, %",
+            "example": 40,
+            "format": "double",
+            "nullable": false,
+            "type": "number"
+          },
+          "ctr": {
+            "description": "Кликабельность — отношение числа кликов к количеству показов, %",
+            "example": 2,
+            "format": "double",
+            "nullable": false,
+            "type": "number"
+          },
+          "range": {
+            "description": "Диапазон позиций в поисковой выдаче",
+            "enum": [
+              "1-2",
+              "3-10",
+              "11-34",
+              "35-50",
+              "51-100",
+              "101-300",
+              "301+"
+            ],
+            "example": "3-10",
+            "nullable": false,
+            "type": "string"
+          },
+          "views": {
+            "description": "Количество показов в диапазоне с учётом буста.\n<br>\nТолько для CPM-кампаний\n",
+            "example": 100,
+            "nullable": false,
+            "type": "integer"
+          },
+          "viewsNoBoost": {
+            "description": "Количество показов в диапазоне без учёта буста.\n<br>\nТолько для CPM-кампаний\n",
+            "example": 15,
+            "nullable": false,
+            "type": "integer"
+          },
+          "viewsShare": {
+            "description": "Доля показов диапазона от всех показов карточки товара за день, %.\n<br>\nТолько для CPM-кампаний\n",
+            "example": 38.5,
+            "format": "double",
+            "nullable": false,
+            "type": "number"
+          }
+        },
+        "required": [
+          "range",
+          "clicks",
+          "clicksShare",
+          "ctr"
+        ],
+        "type": "object"
+      },
+      "V0PositionsResponse": {
+        "properties": {
+          "rows": {
+            "items": {
+              "$ref": "#/components/schemas/V0PositionsRow"
+            }
+          }
+        },
+        "required": [
+          "rows"
+        ],
+        "type": "object"
+      },
+      "V0PositionsRow": {
+        "properties": {
+          "advertId": {
+            "description": "ID рекламной кампании",
+            "example": 28449281,
+            "format": "int64",
+            "nullable": false,
+            "type": "integer"
+          },
+          "date": {
+            "description": "Дата, за которую представлены данные",
+            "example": "2026-09-05",
+            "format": "date",
+            "nullable": false,
+            "type": "string"
+          },
+          "nmId": {
+            "description": "Артикул WB",
+            "example": 398309059,
+            "format": "int64",
+            "nullable": false,
+            "type": "integer"
+          },
+          "posMedian": {
+            "description": "Медианная позиция карточки товара в поиске с учётом буста",
+            "example": 12,
+            "nullable": false,
+            "type": "integer"
+          },
+          "posMedianDiff": {
+            "description": "На сколько буст поднял карточку товара в выдаче: `posNoboostMedian` - `posMedian`\n",
+            "example": 28,
+            "nullable": false,
+            "type": "integer"
+          },
+          "posNoboostMedian": {
+            "description": "Медианная позиция карточки товара в поиске без учёта буста",
+            "example": 40,
+            "nullable": false,
+            "type": "integer"
+          },
+          "ranges": {
+            "description": "Диапазоны",
+            "items": {
+              "$ref": "#/components/schemas/V0PositionsRange"
+            },
+            "nullable": false,
+            "type": "array"
+          }
+        },
+        "required": [
+          "advertId",
+          "nmId",
+          "date",
+          "posMedian",
+          "posNoboostMedian",
+          "posMedianDiff",
+          "ranges"
         ],
         "type": "object"
       },
@@ -3673,7 +3903,7 @@
       "V1GetNormQueryStatsResponseItemStat": {
         "properties": {
           "atbs": {
-            "description": "Количество добавлений товаров в корзину",
+            "description": "Сколько раз товар добавили в корзину",
             "type": "integer"
           },
           "avgPos": {
@@ -3697,7 +3927,7 @@
             "type": "number"
           },
           "ctr": {
-            "description": "CTR (click-through rate) — отношение числа кликов к количеству показов в процентах.\n\nДля кампаний с типом оплаты `cpc` — за клики — значение будет `null`\n",
+            "description": "Кликабельность — отношение числа кликов к количеству показов, %.\n\nДля кампаний с типом оплаты `cpc` — за клики — значение будет `null`\n",
             "format": "float",
             "nullable": true,
             "type": "number"
@@ -4057,13 +4287,168 @@
         "type": "object"
       },
       "V3Placements": {
-        "description": "Место размещения кампании:\n- `search` - поиск\n- `recommendations` - рекомендации\n- `combined` - поиск и рекомендации с единой ставкой\n",
+        "description": "Место размещения кампании:\n- `search` — поиск\n- `recommendations` — рекомендации\n- `combined` — поиск и рекомендации с единой ставкой\n",
         "enum": [
           "search",
           "recommendations",
           "combined"
         ],
         "type": "string"
+      },
+      "V4FullStatsConversionType": {
+        "description": "Тип конверсии:\n- `direct` —  заказ рекламируемого товара. Показы, клики и расход относятся к конверсии этого типа\n- `multicard` — заказ другого варианта товара из этой карточки\n- `associated` — заказ другого товара\n",
+        "enum": [
+          "direct",
+          "multicard",
+          "associated"
+        ],
+        "nullable": false,
+        "type": "string"
+      },
+      "V4FullStatsPlacement": {
+        "description": "Место размещения кампании:\n- `search` — поиск\n- `recommendations` — рекомендации\n",
+        "enum": [
+          "search",
+          "recommendation"
+        ],
+        "nullable": false,
+        "type": "string"
+      },
+      "V4FullStatsResponse": {
+        "properties": {
+          "rows": {
+            "items": {
+              "$ref": "#/components/schemas/V4FullStatsRow"
+            },
+            "nullable": false,
+            "type": "array"
+          }
+        },
+        "required": [
+          "rows"
+        ],
+        "type": "object"
+      },
+      "V4FullStatsRow": {
+        "properties": {
+          "advertId": {
+            "description": "ID рекламной кампании",
+            "format": "int64",
+            "nullable": false,
+            "type": "integer"
+          },
+          "atbs": {
+            "description": "Сколько раз товар добавили в корзину",
+            "nullable": false,
+            "type": "integer"
+          },
+          "avgPos": {
+            "description": "Средняя позиция товара на страницах поисковой выдачи. Возвращается только при комбинации значений `\"placement\":search` и `\"conversionType\":\"direct\"`",
+            "format": "double",
+            "nullable": false,
+            "type": "number"
+          },
+          "canceled": {
+            "description": "Количество отмен",
+            "nullable": false,
+            "type": "integer"
+          },
+          "clicks": {
+            "description": "Количество кликов. Только для `\"conversionType\":\"direct\"`",
+            "format": "int64",
+            "nullable": false,
+            "type": "integer"
+          },
+          "conversionType": {
+            "$ref": "#/components/schemas/V4FullStatsConversionType"
+          },
+          "cpc": {
+            "description": "Стоимость клика в базовых единицах валюты [профиля продавца](https://cmp.wildberries.ru/campaigns/finances)",
+            "format": "double",
+            "nullable": false,
+            "type": "number"
+          },
+          "cr": {
+            "description": "Отношение количества заказов к общему количеству кликов",
+            "format": "double",
+            "nullable": false,
+            "type": "number"
+          },
+          "ctr": {
+            "description": "Кликабельность — отношение числа кликов к количеству показов, %",
+            "format": "double",
+            "nullable": false,
+            "type": "number"
+          },
+          "currency": {
+            "description": "Валюта [профиля продавца](https://cmp.wildberries.ru/campaigns/finances)",
+            "format": "ISO 4217",
+            "type": "string"
+          },
+          "date": {
+            "description": "Дата, за которую предоставлены данные",
+            "format": "date",
+            "nullable": false,
+            "type": "string"
+          },
+          "nmId": {
+            "description": "Артикул WB",
+            "format": "int64",
+            "nullable": false,
+            "type": "integer"
+          },
+          "orders": {
+            "description": "Количество заказов",
+            "nullable": false,
+            "type": "integer"
+          },
+          "placement": {
+            "$ref": "#/components/schemas/V4FullStatsPlacement"
+          },
+          "shks": {
+            "description": "Количество заказанных товаров, шт.",
+            "nullable": false,
+            "type": "integer"
+          },
+          "sum": {
+            "description": "Затраты в базовых единицах валюты [профиля продавца](https://cmp.wildberries.ru/campaigns/finances). Только для `\"conversionType\":\"direct\"`",
+            "format": "double",
+            "nullable": false,
+            "type": "number"
+          },
+          "sumPrice": {
+            "description": "Сумма заказов в базовых единицах валюты [профиля продавца](https://cmp.wildberries.ru/campaigns/finances)",
+            "format": "double",
+            "nullable": false,
+            "type": "number"
+          },
+          "views": {
+            "description": "Показы.\n\nДля `\"conversionType\":\"multicard\"` и `\"conversionType\":\"associated\"` возвращается `0`, если показ был на другом товаре\n",
+            "format": "int64",
+            "nullable": false,
+            "type": "integer"
+          }
+        },
+        "required": [
+          "advertId",
+          "nmId",
+          "date",
+          "placement",
+          "conversionType",
+          "currency",
+          "views",
+          "clicks",
+          "ctr",
+          "cpc",
+          "sum",
+          "atbs",
+          "orders",
+          "cr",
+          "shks",
+          "sumPrice",
+          "canceled"
+        ],
+        "type": "object"
       },
       "response400": {
         "properties": {
@@ -6403,102 +6788,6 @@
         }
       ]
     },
-    "/adv/v1/budget": {
-      "get": {
-        "deprecated": true,
-        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод будет отключен [16 ноября](/release-notes?id=582).\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один профиль продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 сек | 4 запроса | 250 мс | 4 запроса |\n| Сервисный | 1 сек | 4 запроса | 250 мс | 4 запроса |\n| Базовый с секретом | 1 сек | 4 запроса | 250 мс | 4 запроса |\n| Базовый | 1 ч | 4 запроса | 15 мин | 1 запрос |\n</div>\n",
-        "operationId": "getV1Budget",
-        "parameters": [
-          {
-            "description": "ID кампании",
-            "in": "query",
-            "name": "id",
-            "required": true,
-            "schema": {
-              "example": 1,
-              "type": "integer"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "content": {
-              "application/json": {
-                "example": {
-                  "cash": 0,
-                  "currency": "RUB",
-                  "netting": 0,
-                  "total": 500
-                },
-                "schema": {
-                  "properties": {
-                    "cash": {
-                      "description": "Поле не используется. Значение всегда 0.",
-                      "type": "integer"
-                    },
-                    "currency": {
-                      "description": "Валюта [профиля продавца](https://cmp.wildberries.ru/campaigns/finances)",
-                      "format": "ISO 4217",
-                      "type": "string"
-                    },
-                    "netting": {
-                      "description": "Поле не используется. Значение всегда 0.",
-                      "type": "integer"
-                    },
-                    "total": {
-                      "description": "Бюджет кампании в базовых единицах валюты [профиля продавца](https://cmp.wildberries.ru/campaigns/finances)",
-                      "type": "integer"
-                    }
-                  },
-                  "type": "object"
-                }
-              }
-            },
-            "description": "<span class='response__value response__value_success'>Успешно</span>"
-          },
-          "400": {
-            "content": {
-              "text/plain": {
-                "examples": {
-                  "CampaignNotBelongSeller": {
-                    "$ref": "#/components/examples/CampaignNotBelongSeller"
-                  }
-                },
-                "schema": {
-                  "type": "string"
-                }
-              }
-            },
-            "description": "<span class='response__value '>Неправильный запрос</span>"
-          },
-          "401": {
-            "$ref": "#/components/responses/401"
-          },
-          "403": {
-            "$ref": "#/components/responses/403"
-          },
-          "429": {
-            "$ref": "#/components/responses/429"
-          }
-        },
-        "security": [
-          {
-            "HeaderApiKey": []
-          }
-        ],
-        "summary": "Бюджет кампании{{ /adv/v1/budget }}",
-        "tags": [
-          "finances"
-        ],
-        "x-category": "advert",
-        "x-readonly-method": true
-      },
-      "servers": [
-        {
-          "url": "https://advert-api.wildberries.ru"
-        }
-      ]
-    },
     "/adv/v1/budget/deposit": {
       "post": {
         "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод пополняет [бюджет](./promotion#tag/finances/operation/postV2Budget) кампании. <br>\nЧтобы запустить кампанию после пополнения бюджета, используйте метод [Запуск кампании](./promotion#tag/campaignManagement/operation/getV0Start).\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один профиль продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 сек | 1 запрос | 1 сек | 5 запросов |\n| Сервисный | 1 сек | 1 запрос | 1 сек | 5 запросов |\n| Базовый с секретом | 1 сек | 1 запрос | 1 сек | 5 запросов |\n| Базовый | 1 ч | 5 запросов | 12 мин | 1 запрос |\n</div>\n",
@@ -8468,6 +8757,138 @@
         }
       ]
     },
+    "/api/advert/v0/positions": {
+      "get": {
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод возвращает медианные позиции карточек товаров в поисковой выдаче и распределение показов по фиксированным диапазонам позиций.\n\n <div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один профиль продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 мин | 10 запросов | 6 сек | 1 запрос |\n| Сервисный | 1 мин | 10 запросов | 6 сек | 1 запрос |\n</div>\n",
+        "operationId": "getV0Positions",
+        "parameters": [
+          {
+            "description": "Список ID рекламных кампаний",
+            "example": [
+              13456789,
+              987654321
+            ],
+            "explode": false,
+            "in": "query",
+            "name": "advertIds",
+            "required": true,
+            "schema": {
+              "items": {
+                "format": "int64",
+                "type": "integer"
+              },
+              "maxItems": 50,
+              "type": "array"
+            },
+            "style": "form"
+          },
+          {
+            "description": "Артикулы WB",
+            "example": [
+              1,
+              2,
+              3
+            ],
+            "explode": false,
+            "in": "query",
+            "name": "nmIds",
+            "required": false,
+            "schema": {
+              "items": {
+                "format": "int64",
+                "type": "integer"
+              },
+              "type": "array"
+            },
+            "style": "form"
+          },
+          {
+            "description": "Дата начала интервала",
+            "example": "2026-09-01",
+            "in": "query",
+            "name": "beginDate",
+            "required": true,
+            "schema": {
+              "format": "date",
+              "type": "string"
+            }
+          },
+          {
+            "description": "Дата окончания интервала",
+            "example": "2026-09-07",
+            "in": "query",
+            "name": "endDate",
+            "required": true,
+            "schema": {
+              "format": "date",
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/V0PositionsResponse"
+                }
+              }
+            },
+            "description": "<span class='response__value response__value_success'>Успешно</span>"
+          },
+          "400": {
+            "content": {
+              "application/json": {
+                "examples": {
+                  "InvalidAdvertIdsFormat": {
+                    "$ref": "#/components/examples/InvalidAdvertIdsFormat"
+                  },
+                  "InvalidBeginDateFormat": {
+                    "$ref": "#/components/examples/InvalidBeginDateFormat"
+                  },
+                  "InvalidEndDateFormat": {
+                    "$ref": "#/components/examples/InvalidEndDateFormat"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/StandardizedBatchError"
+                }
+              }
+            },
+            "description": "<span class='response__value '>Неправильный запрос</span>"
+          },
+          "401": {
+            "$ref": "#/components/responses/401"
+          },
+          "403": {
+            "$ref": "#/components/responses/403"
+          },
+          "429": {
+            "$ref": "#/components/responses/429"
+          }
+        },
+        "security": [
+          {
+            "HeaderApiKey": []
+          }
+        ],
+        "summary": "Позиции карточек товаров в поисковой выдаче{{ /api/advert/v0/positions }}",
+        "tags": [
+          "statistics"
+        ],
+        "x-category": "advert",
+        "x-readonly-method": true,
+        "x-token-types": [
+          "personal",
+          "service"
+        ]
+      },
+      "servers": [
+        {
+          "url": "https://advert-api.wildberries.ru"
+        }
+      ]
+    },
     "/api/advert/v1/bids": {
       "patch": {
         "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод меняет ставки карточек товаров по артикулам WB в кампаниях:\n  - с единой ставкой\n  - с ручной ставкой\n  - с моделью оплаты `cpc` — за клики\n\nДля кампаний в статусах `4`, `9` и `11`.\n<br><br>\nВ запросе укажите место размещения в параметре `placement`:\n  - `combined` — в поиске и рекомендациях для кампаний с единой ставкой\n  - `search `или `recommendations` — в поиске или рекомендациях для кампаний с ручной ставкой\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один профиль продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 сек | 5 запросов | 200 мс | 5 запросов |\n| Сервисный | 1 сек | 5 запросов | 200 мс | 5 запросов |\n| Базовый с секретом | 1 сек | 5 запросов | 200 мс | 5 запросов |\n| Базовый | 1 ч | 2 запроса | 30 мин | 1 запрос |\n</div>\n",
@@ -9318,6 +9739,120 @@
       "servers": [
         {
           "description": "**Prod**\n",
+          "url": "https://advert-api.wildberries.ru"
+        }
+      ]
+    },
+    "/api/advert/v4/fullstats": {
+      "get": {
+        "description": "<div class='description-title'><span>Описание метода</span></div>\n\nМетод формирует статистику кампаний в плоском формате (без вложенной иерархии) с разделением по зонам показов и типам конверсии.\n<br><br>\nМаксимальный период в запросе — 31 день.\n<br><br>\nДля кампаний в статусах `7`, `9` и `11`.\n\n<div class=\"description_limit\">\n<a href='./api-information#tag/introduction/Limity-zaprosov'>Лимит запросов</a> на один профиль продавца:\n\n\n| Тип | Период | Лимит | Интервал | Всплеск |\n| --- | --- | --- | --- | --- |\n| Персональный | 1 мин | 3 запроса | 20 сек | 1 запрос |\n| Сервисный | 1 мин | 3 запроса | 20 сек | 1 запрос |\n| Базовый с секретом | 1 мин | 3 запроса | 20 сек | 1 запрос |\n| Базовый | 1 ч | 1 запрос | 1 ч | 1 запрос |\n</div>\n",
+        "operationId": "getV4Fullstats",
+        "parameters": [
+          {
+            "description": "Список ID рекламных кампаний",
+            "example": [
+              13456789,
+              987654321
+            ],
+            "explode": false,
+            "in": "query",
+            "name": "advertIds",
+            "required": true,
+            "schema": {
+              "items": {
+                "format": "int64",
+                "type": "integer"
+              },
+              "maxItems": 50,
+              "minItems": 1,
+              "type": "array"
+            },
+            "style": "form"
+          },
+          {
+            "description": "Дата начала интервала",
+            "example": "2025-09-07",
+            "in": "query",
+            "name": "beginDate",
+            "required": true,
+            "schema": {
+              "format": "date",
+              "type": "string"
+            }
+          },
+          {
+            "description": "Дата окончания интервала",
+            "example": "2025-09-08",
+            "in": "query",
+            "name": "endDate",
+            "required": true,
+            "schema": {
+              "format": "date",
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "examples": {
+                  "V4FullStatsSuccesResponse": {
+                    "$ref": "#/components/examples/V4FullStatsSuccesResponse"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/V4FullStatsResponse"
+                }
+              }
+            },
+            "description": "<span class='response__value response__value_success'>Успешно</span>"
+          },
+          "400": {
+            "content": {
+              "application/json": {
+                "examples": {
+                  "InvalidAdvertIdsFormat": {
+                    "$ref": "#/components/examples/InvalidAdvertIdsFormat"
+                  },
+                  "InvalidBeginDateFormat": {
+                    "$ref": "#/components/examples/InvalidBeginDateFormat"
+                  },
+                  "InvalidEndDateFormat": {
+                    "$ref": "#/components/examples/InvalidEndDateFormat"
+                  }
+                },
+                "schema": {
+                  "$ref": "#/components/schemas/StandardizedBatchError"
+                }
+              }
+            },
+            "description": "<span class='response__value '>Неправильный запрос</span>"
+          },
+          "401": {
+            "$ref": "#/components/responses/401"
+          },
+          "403": {
+            "$ref": "#/components/responses/403"
+          },
+          "429": {
+            "$ref": "#/components/responses/429"
+          }
+        },
+        "security": [
+          {
+            "HeaderApiKey": []
+          }
+        ],
+        "summary": "Плоская статистика кампаний{{ /api/advert/v4/fullstats }}",
+        "tags": [
+          "statistics"
+        ],
+        "x-category": "advert",
+        "x-readonly-method": true
+      },
+      "servers": [
+        {
           "url": "https://advert-api.wildberries.ru"
         }
       ]

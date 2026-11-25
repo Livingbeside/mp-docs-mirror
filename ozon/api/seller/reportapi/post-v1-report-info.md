@@ -9,7 +9,7 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: 3ccac9d0822b4b3b
+content_sha: c6e0c340e73cca5b
 ---
 
 # Информация об отчёте
@@ -45,7 +45,7 @@ content_sha: 3ccac9d0822b4b3b
   - `expires_at` — string<date-time>. Дата и время, до которых отчёт доступен по ссылке. Поле вернётся пустым, если отчёт сформирован до 14 октября 2025.
   - `file` — string. Ссылка на XLSX-файл. Для отчёта с типом `SELLER_RETURNS` ссылка доступна 5 минут после выполнения запроса.
   - `params` — object. Массив с фильтрами, указанными при создании отчёта продавцом.
-  - `report_type` — string. Тип отчёта: - `SELLER_PRODUCTS` — отчёт по товарам; - `SELLER_STOCK` — отчёт об остатках товаров; - `SELLER_RETURNS` — отчёт о возвратах; - `SELLER_POSTINGS` — отчёт об отправлениях; - `SELLER_DISCOUNTED` — отчёт об уценённых товарах; - `MUTUAL_SETTLEMENT` — отчёт о взаиморасчётах; - `DOCUMENT_B2B_SALES` — отчёт о продажах юридическим лицам; - `COMPENSATION_REPORT` — отчёт о компенсациях; - `DECOMPENSATION_REPORT` — отчёт о декомпенсациях; - `MARKED_PRODUCTS_SALES` — отчёт по продажам маркированных товаров; - `SELLER_PLACEMENT_BY_PRODUCTS` — отчёт о стоимости размещения по товарам; - `SELLER_PLACEMENT_BY_SUPPLIES` — отчёт о стоимости размещения по поставкам.
+  - `report_type` — string. Тип отчёта: - `SELLER_PRODUCTS` — отчёт по товарам; - `SELLER_STOCK` — отчёт об остатках товаров; - `SELLER_RETURNS` — отчёт о возвратах; - `SELLER_POSTINGS` — отчёт об отправлениях; - `SELLER_DISCOUNTED` — отчёт об уценённых товарах; - `MUTUAL_SETTLEMENT` — отчёт о взаиморасчётах; - `DOCUMENT_B2B_SALES` — отчёт о продажах юридическим лицам; - `COMPENSATION_REPORT` — отчёт о компенсациях; - `DECOMPENSATION_REPORT` — отчёт о декомпенсациях; - `MARKED_PRODUCTS_SALES` — отчёт по продажам маркированных товаров; - `SELLER_PLACEMENT_BY_PRODUCTS` — отчёт о стоимости размещения по товарам; - `SELLER_PLACEMENT_BY_SUPPLIES` — отчёт о стоимости размещения по поставкам; - `FINANCE_REALIZATION_NUMBER` — отчёт о реализации товаров; - `FINANCE_REALIZATION_NUMBER_POSTING` — позаказный отчёт о реализации товаров.
   - `status` — string. Статус генерации отчёта: - `waiting` — в очереди на обработку, - `processing` — обрабатывается, - `success` — отчёт успешно создан, - `failed` — ошибка при создании отчёта.
 
 **400** — Неверный параметр

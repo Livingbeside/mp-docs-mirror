@@ -9,7 +9,7 @@ tags:
 spec_version: analytics
 source: "https://dev.wildberries.ru/docs/openapi/analytics"
 deprecated: false
-content_sha: 51bcb08ae512afc9
+content_sha: 45aafd43ba7ae4df
 ---
 
 # Пагинация по товарам в группе
@@ -77,7 +77,7 @@ content_sha: 51bcb08ae512afc9
     - `brandName` — string. Бренд
     - `mainPhoto` — string. URL главного фото карточки товара
     - `isAdvertised` — boolean. Находится ли товар в продвижении в Поисковой выдаче
-    - `isSubstitutedSKU` — boolean. Искали ли товар по подменному артикулу. Поле будет в ответе при наличии в запросе `includeSubstitutedSKUs` и/или `includeSearchTexts`
+    - `isSubstitutedSKU` — boolean. Искали ли товар по подменному артикулу
     - `isCardRated` — boolean. Есть ли рейтинг у карточки товара
     - `rating` — number<float64>. Рейтинг карточки товара
     - `feedbackRating` — number<float64>. Рейтинг по отзывам

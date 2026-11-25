@@ -9,12 +9,14 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: e506a17e032b92b9
+content_sha: c38f0f4a649d73ea
 ---
 
 # Обновить интервал поставки
 
 `POST /v1/supply-order/timeslot/update`
+
+Вы можете отправить не больше 300 запросов в час.
 
 ## Параметры
 

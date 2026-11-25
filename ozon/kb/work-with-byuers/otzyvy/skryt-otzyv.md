@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /work-with-byuers/otzyvy/skryt-otzyv
 source: "https://seller-edu.ozon.ru/libra/work-with-byuers/otzyvy/skryt-otzyv"
-updated: "2026-10-08 09:22:14"
+updated: "2026-11-18 16:46:31"
 doc_id: 47605
-fetched_at: "2026-10-09T02:02:34Z"
-content_sha: 4714d2c32abed6fb
+fetched_at: "2026-11-25T05:30:05Z"
+content_sha: 3df6758f27e9be84
 ---
 
 # Скрыть отзыв
@@ -24,7 +24,7 @@ _Главная / Работа с покупателями / Отзывы_
 
 заказ был отменён;
 
-покупатель участвует в ускоренном сборе отзывов и ожидает баллы;
+отзыв получен через [ускоренный сбор отзывов](https://seller-edu.ozon.ru/work-with-byuers/otzyvy/sbor-otzyvov/otzyvy-za-bally/chto-takoe-otzyvy-za-baly) или [сбор первых отзывов](https://seller-edu.ozon.ru/work-with-byuers/otzyvy/sbor-otzyvov/sbor-pervyh-otzyvov/chto-takoe-sbor-pervyh-otzyvov);
 
 вы уже начали чат с покупателем по этому отзыву.
 

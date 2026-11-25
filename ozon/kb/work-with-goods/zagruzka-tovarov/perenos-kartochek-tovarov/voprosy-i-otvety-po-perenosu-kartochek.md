@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /work-with-goods/zagruzka-tovarov/perenos-kartochek-tovarov/voprosy-i-otvety-po-perenosu-kartochek
 source: "https://seller-edu.ozon.ru/libra/work-with-goods/zagruzka-tovarov/perenos-kartochek-tovarov/voprosy-i-otvety-po-perenosu-kartochek"
-updated: "2026-10-09 09:24:35"
+updated: "2026-11-19 14:50:28"
 doc_id: 71602
-fetched_at: "2026-10-10T02:17:50Z"
-content_sha: b6fbd46553348da6
+fetched_at: "2026-11-25T05:30:05Z"
+content_sha: 84fa29b2a1e371f4
 ---
 
 # Вопросы и ответы по переносу карточек
@@ -83,8 +83,8 @@ _Главная / Работа с товарами / Создание и ред�
 
 Остатки на FBO нельзя перенести вместе с карточками товаров, пока есть непогашенные займы.
 
-1. [Проверьте задолженность](https://invest.ozon.ru/borrower/cabinet/) и, если она есть, погасите её.
-2. Чтобы снять ограничения, обратитесь к вашему персональному менеджеру или в [техническую поддержку](https://seller.ozon.ru/app/messenger?channel=SCRM): **Финансы и Ozon Invest → Кредитование на Ozon → Кредит на любые цели → Досрочное погашение → Полное досрочное погашение**.
+1. Проверьте задолженность и, если она есть, погасите её. [Как погасить кредит](https://seller-edu.ozon.ru/fintech/ozon-invest/ozon-invest/kredit-na-lubye-celi/kak-dosrochno-pogasit-kredit)
+2. Чтобы снять ограничения, обратитесь в поддержку [банка](https://finance.ozon.ru/business/credit/): **Главное меню → Кредитные продукты → Кредит на любые цели**.
 3. Удалите текущую заявку и создайте новую.
 
 # Как можно сэкономить на переносе карточек

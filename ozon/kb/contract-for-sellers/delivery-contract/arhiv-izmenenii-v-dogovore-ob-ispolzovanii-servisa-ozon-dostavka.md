@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /contract-for-sellers/delivery-contract/arhiv-izmenenii-v-dogovore-ob-ispolzovanii-servisa-ozon-dostavka
 source: "https://seller-edu.ozon.ru/libra/contract-for-sellers/delivery-contract/arhiv-izmenenii-v-dogovore-ob-ispolzovanii-servisa-ozon-dostavka"
-updated: "2026-11-11 10:15:20"
+updated: "2026-11-14 08:34:54"
 doc_id: 77179
-fetched_at: "2026-11-12T02:52:27Z"
-content_sha: 72836bb4394c2a97
+fetched_at: "2026-11-25T05:30:05Z"
+content_sha: 0ca03293da1cf02a
 ---
 
 # Все версии договора об использовании сервиса Ozon Доставка
@@ -20,6 +20,7 @@ _Главная / Договоры для Продавцов на платфор
 
 | **Дата вступления в силу** | **Список изменений** | **Файл для скачивания** |
 | --- | --- | --- |
+| 01.12.2026 г. (с дополнениями от 6 ноября) ([опубликовано](https://seller.ozon.ru/media/news/novoe-v-dogovore-nesnizhaemyj-ostatok-i-pereimenovanie-servisov/) 12.11.2026 г.) | **С 1 декабря 2026 года **уберём устаревшие правила о балансе и автовозврате аванса (п. 11.3 раздела «Особенности взаиморасчётов»). |  |
 | 01.12.2026 г. (с дополнениями от 6 ноября) (опубликовано 06.11.2026 г.) | **С 6 ноября 2026 года:** Можете создавать заказы для клиентов, которые не зарегистрированы на Ozon (пп. 1.10, 3.2, 3.3 и 4.1).Подробнее расписали, как работает баланс для оплаты услуг в сервисе (п. 11.2).Добавили актуальные ссылки на изображение товарных знаков и логотипов Ozon (п. 13.1.1). |  |
 | 01.12.2026 г. ([опубликовано](https://seller.ozon.ru/media/news/pro-dostavku-do-sc-kross-doking-i-drugie-izmeneniya-v-dogovore/) 16.10.2026 г.) | **С 1 декабря 2026 года **выделим доставку до СЦ в отдельную услугу  — её будут оказывать наши партнёры-курьеры (пп. 1.6, 1.7). |  |
 | 08.09.2026 г. ([опубликовано](https://seller.ozon.ru/media/news/kross-doking-bez-platy-i-drugie-izmeneniya-v-dogovore/) 07.09.2026 г.) | **С 8 сентября 2026 года** поправим формулировки в пп. 1.1, 1.4, 1.6, 1.7, 11.2, 12.8, 13.1.1. |  |

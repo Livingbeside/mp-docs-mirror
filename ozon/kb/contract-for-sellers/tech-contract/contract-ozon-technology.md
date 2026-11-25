@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /contract-for-sellers/tech-contract/contract-ozon-technology
 source: "https://seller-edu.ozon.ru/libra/contract-for-sellers/tech-contract/contract-ozon-technology"
-updated: "2026-11-11 10:21:53"
+updated: "2026-11-19 11:07:11"
 doc_id: 80024
-fetched_at: "2026-11-12T02:52:27Z"
-content_sha: e79baf5764074697
+fetched_at: "2026-11-25T05:30:05Z"
+content_sha: 4820c674e7fdf101
 ---
 
 # Договор возмездного оказания услуг Озон Технологий
@@ -16,7 +16,7 @@ _Главная / Договоры для Продавцов на платфор
 
 Русский
 
-Эта редакция действует с 1 декабря 2026 года. Мы заранее публикуем изменения в договоре. Если правила на этой странице ещё не вступили в силу, смотрите[ действующую версию](https://seller-edu.ozon.ru/contract-for-sellers/tech-contract/arhiv-contract-ozon-technology).
+Эта редакция действует с 4 декабря 2026 года. Мы заранее публикуем изменения в договоре. Если правила на этой странице ещё не вступили в силу, смотрите[ действующую версию](https://seller-edu.ozon.ru/contract-for-sellers/tech-contract/arhiv-contract-ozon-technology).
 
 Настоящий Договор возмездного оказания услуг (далее — «Договор») заключается между ООО «Озон Технологии» (далее — «Исполнитель») и Заказчиком на изложенных ниже условиях.
 
@@ -226,13 +226,19 @@ _Главная / Договоры для Продавцов на платфор
 
 ## 6. Приостановление и отказ в оказании услуг
 
+Действует с 4 декабря 2026 года.
+
 **6.1.** Исполнитель вправе приостановить оказание любой из Услуг без применения к нему мер ответственности, если:
 
 у Заказчика имеется задолженность перед Исполнителем за ранее оказанные Услуги, в том числе по иным договорам;
 
 по техническим, технологическим или иным причинам, препятствующим оказанию Услуг, – на время устранения таких причин;
 
-при поступлении в адрес Исполнителя претензий, требований или исков третьих лиц, связанных с Заказчиком, — до урегулирования спорных вопросов.
+при поступлении в адрес Исполнителя претензий, требований или исков третьих лиц, связанных с Заказчиком, — до урегулирования спорных вопросов;
+
+Заказчиком не внесена предоплата за Услуги на расчётный счёт Исполнителя — при выборе способа оплаты «Прямая оплата»;
+
+у Заказчика недостаточно средств на балансе Ozon — при выборе способа оплаты «Удержание с баланса Ozon».
 
 **6.2.** Исполнитель уведомляет Заказчика о приостановлении оказания Услуг в течение 1 рабочего дня с момента приостановления, с указанием причин. Оказание Услуг возобновляется после устранения соответствующих причин.
 
@@ -640,7 +646,13 @@ _Главная / Договоры для Продавцов на платфор
 
 **1.1.** Исполнитель обязуется оказывать Заказчику Услуги с использованием программного обеспечения по размещению и распространению Рекламно-информационных материалов Заказчика в Рекламной сети Ozon, а Заказчик обязуется оплачивать указанные Услуги в порядке и на условиях, предусмотренных Договором и настоящим Приложением.
 
-**1.2.** РИМ размещаются на условиях, определённых Заказчиком в Личном кабинете, включая параметры, формат, место размещения, ставку и бюджет.
+Действует с 4 декабря 2026 года.
+
+**1.2.** Стороны пришли к соглашению, что перечень доступных к оказанию Услуг по настоящему Приложению определяется Исполнителем в соответствующем [Прайс-листе](https://performance-help.ozon.ru/marketing-requests/media-kit-ozon) и Личном кабинете.
+
+Прайс-лист является информационным материалом, содержащим информацию о перечне Услуг, которые Исполнитель может оказывать Заказчику по его заказу, не устанавливает права и обязанности Сторон, не является офертой.
+
+РИМ размещаются на условиях, определённых Заказчиком в Личном кабинете, включая параметры, формат, место размещения, ставку и бюджет.
 
 **1.3.** Заказчик самостоятельно несёт ответственность за содержание и достоверность РИМ, а также за их соответствие требованиям законодательства о рекламе.
 
@@ -652,11 +664,13 @@ _Главная / Договоры для Продавцов на платфор
 
 **Размещение по моделям CPC и CPM**
 
+Действует с 4 декабря 2026 года.
+
 **2.2.** При размещении рекламы по моделям CPC и CPM Заказчик в Личном кабинете самостоятельно выбирает:
 
 параметры, доступные в Личном кабинете;
 
-ставку за клик (для модели CPC) или ставку за 1000 показов (для модели CPM), с учётом НДС. Если Заказчик не установил ставку, при наличии соответствующей настройки в Личном кабинете автоматически применяется конкурентная ставка, указанная в Личном кабинете.
+ставку за клик (для модели CPC) или ставку за 1000 показов (для модели CPM), которая, если применимо, включает НДС Исполнителя. Если Заказчик не установил ставку, при наличии соответствующей настройки в Личном кабинете автоматически применяется конкурентная ставка, указанная в Личном кабинете.
 
 Минимальный размер ставки указан в Личном кабинете и может быть изменен Исполнителем в одностороннем порядке.
 
@@ -870,7 +884,7 @@ _Главная / Договоры для Продавцов на платфор
 
 English
 
-This revision is effective as of December 1, 2026. We publish amendments in advance: if the rules on this page are not already in effect, see the [previous version](https://seller-edu.ozon.ru/contract-for-sellers/tech-contract/arhiv-contract-ozon-technology).
+This revision is effective as of December 4, 2026. We publish amendments in advance: if the rules on this page are not already in effect, see the [previous version](https://seller-edu.ozon.ru/contract-for-sellers/tech-contract/arhiv-contract-ozon-technology).
 
 This Agreement for the provision of services for a fee (hereinafter referred to as the «Agreement») is concluded between Ozon Technologies LLC (hereinafter referred to as the «Contractor») and the Customer on the terms and conditions set out below.
 
@@ -1080,13 +1094,19 @@ If the Customer does not sign the Reporting Documents within the established per
 
 ## 6. Suspension and refusal to provide services
 
+Effective from December 4, 2026.
+
 **6.1. **The Contractor has the right to suspend provision of any of the Services without applying liability measures to it if:
 
 the Customer has debt to the Contractor for previously rendered Services, including under other agreements;
 
 for technical, technological or other reasons preventing provision of Services — for the time of elimination of such reasons;
 
-upon receipt by the Contractor of claims, demands or lawsuits of third parties related to the Customer – until resolution of disputed issues.
+upon receipt by the Contractor of claims, demands or lawsuits of third parties related to the Customer – until resolution of disputed issues;
+
+the Customer has not made an advance payment for the Services to the Contractor's settlement account — where the «Direct Payment» payment method has been selected;
+
+the Customer has insufficient funds in the Ozon Balance — where the «Withholding from Ozon Balance» payment method has been selected.
 
 The Contractor notifies the Customer of suspension of Services within 1 business day from the moment of suspension, indicating the reasons. Provision of Services resumes after elimination of the relevant reasons.
 
@@ -1492,7 +1512,13 @@ Effective from December 1, 2026.
 
 **1.1.** The Contractor undertakes to provide the Customer with Services using software for placing and distributing the Customer’s Advertising and Information Materials within the Ozon Advertising Network, and the Customer undertakes to pay for such Services in accordance with the procedure and on the terms and conditions stipulated by the Agreement and this Appendix.
 
-**1.2.** The AIM shall be placed on the terms determined by the Customer in the Personal Account, including the parameters, format, placement location, bid and budget.
+Effective from December 4, 2026.
+
+**1.2.** The Parties have agreed that the list of Services available for provision under this Appendix shall be determined by the Contractor in the relevant Price List and in the Personal Account.
+
+The Price List is informational in nature: it contains information on the list of Services that the Contractor may provide to the Customer upon the Customer's order, does not establish the rights and obligations of the Parties and is not an offer.
+
+The AIM shall be placed on the terms determined by the Customer in the Personal Account, including the parameters, format, placement location, bid and budget.
 
 **1.3.** The Customer shall be solely responsible for the content and accuracy of the AIM and for their compliance with the requirements of advertising legislation.
 
@@ -1504,11 +1530,13 @@ Effective from December 1, 2026.
 
 **Placement under CPC and CPM Models**
 
+Effective from December 4, 2026.
+
 **2.2.** When placing advertisements under the CPC and CPM models, the Customer shall independently select the following in the Personal Account:
 
 – parameters available in the Personal Account;
 
-– a cost-per-click bid (for the CPC model) or a bid per 1,000 impressions (for the CPM model), inclusive of VAT. If the Customer has not set a bid, the competitive bid specified in the Personal Account shall apply automatically, provided that the relevant setting is available in the Personal Account.
+– a cost-per-click bid (for the CPC model) or a bid per 1,000 impressions (for the CPM model) which, where applicable, includes the Contractor's VAT. If the Customer has not set a bid, the competitive bid specified in the Personal Account shall apply automatically, provided that the relevant setting is available in the Personal Account.
 
 The minimum bid is specified in the Personal Account and may be changed unilaterally by the Contractor.
 

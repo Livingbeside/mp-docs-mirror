@@ -9,7 +9,7 @@ tags:
 spec_version: promotion
 source: "https://dev.wildberries.ru/docs/openapi/promotion"
 deprecated: false
-content_sha: 87f4ab29336f8640
+content_sha: 8d63eed780746e09
 ---
 
 # Статистика поисковых кластеров
@@ -52,7 +52,7 @@ content_sha: 87f4ab29336f8640
     - `norm_query` — string. Поисковый кластер
     - `views` — integer. Количество просмотров. Для кампаний с типом оплаты `cpc` — за клики — значение будет `null`
     - `clicks` — integer. Количество кликов
-    - `atbs` — integer. Количество добавлений товаров в корзину
+    - `atbs` — integer. Сколько раз товар добавили в корзину
     - `orders` — integer. Количество заказов
     - `ctr` — number<double>. Кликабельность — отношение числа кликов к количеству показов, %. Для кампаний с типом оплаты `cpc` — за клики — значение будет `null`
     - `cpc` — number<double>. Стоимость одного клика в базовых единицах валюты [профиля продавца](https://cmp.wildberries.ru/campaigns/finances)

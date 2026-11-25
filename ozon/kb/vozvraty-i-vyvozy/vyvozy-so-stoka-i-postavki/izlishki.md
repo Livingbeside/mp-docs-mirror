@@ -4,15 +4,15 @@ marketplace: ozon
 kind: article
 path: /vozvraty-i-vyvozy/vyvozy-so-stoka-i-postavki/izlishki
 source: "https://seller-edu.ozon.ru/libra/vozvraty-i-vyvozy/vyvozy-so-stoka-i-postavki/izlishki"
-updated: "2026-04-29 10:30:18"
+updated: "2026-11-03 08:46:34"
 doc_id: 769
-fetched_at: "2026-08-28T12:11:15Z"
-content_sha: 0df103987c25eae1
+fetched_at: "2026-11-25T05:30:05Z"
+content_sha: 8ffb25aa5e74296d
 ---
 
 # Излишки
 
-_Главная / Клиентские возвраты и вывозы товаров / Вывозы со стока и поставки_
+_Главная / Клиентские возвраты и вывозы товаров / Вывозы со склада и поставки_
 
 Что такое опознанные и неопознанные излишки, как вывезти их со склада и сколько стоит обработка излишков
 

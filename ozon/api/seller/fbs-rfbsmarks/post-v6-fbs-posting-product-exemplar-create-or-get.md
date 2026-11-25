@@ -9,7 +9,7 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: 32f704ff0268a12f
+content_sha: 0e5609017f5f8543
 ---
 
 # Получить данные созданных экземпляров
@@ -47,7 +47,7 @@ content_sha: 32f704ff0268a12f
     - `is_rnpt_absent` — boolean. Признак того, что не указан регистрационный номер партии товара (РНПТ).
     - `marks` — array[object]. Список контрольных идентификационных знаков (КИЗ) и других маркировок в одном экземпляре.
       - `mark` — string. Значение кода маркировки.
-      - `mark_type` — string. Тип кода маркировки: - `mandatory_mark` — обязательная маркировка «Честный ЗНАК»; - `jw_uin` — уникальный идентификационный номер (УИН) ювелирного изделия; - `imei` — IMEI мобильного устройства.
+      - `mark_type` — string. Тип кода маркировки: - `mandatory_mark` — обязательная маркировка «Честный ЗНАК»; - `jw_uin` — уникальный идентификационный номер (УИН) ювелирного изделия; - `imei` — IMEI мобильного устройства; - `seal_number` — номер пломбы.
     - `rnpt` — string. Регистрационный номер партии товара (РНПТ).
     - `weight` — number<float>. Фактический вес экземпляра.
   - `has_imei` — boolean. Признак наличия IMEI. Если IMEI есть — `true`.
@@ -58,6 +58,7 @@ content_sha: 32f704ff0268a12f
   - `is_rnpt_needed` — boolean. Признак того, что необходимо передать номер партии товара (РНПТ).
   - `product_id` — integer<int64>. Идентификатор товара в системе Ozon — SKU.
   - `quantity` — integer<int32>. Количество экземпляров.
+  - `sealing_allowed` — boolean. `true`, если товар можно опломбировать.
   - `is_weight_needed` — boolean. `true`, если товар весовой.
   - `weight_max` — number<float>. Максимальный вес экземпляра.
   - `weight_min` — number<float>. Минимальный вес экземпляра.

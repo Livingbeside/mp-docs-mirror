@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /contract-for-sellers/general-terms/arhiv-izmenenii-v-obshchih-usloviyah-sotrudnichestva-s-ozon
 source: "https://seller-edu.ozon.ru/libra/contract-for-sellers/general-terms/arhiv-izmenenii-v-obshchih-usloviyah-sotrudnichestva-s-ozon"
-updated: "2026-11-11 10:14:50"
+updated: "2026-11-24 17:16:13"
 doc_id: 76837
-fetched_at: "2026-11-12T02:52:27Z"
-content_sha: 95211c9353e846d3
+fetched_at: "2026-11-25T05:30:05Z"
+content_sha: 6a9e6aac50e33d8c
 ---
 
 # Все версии общих условий сотрудничества с Ozon
@@ -20,6 +20,7 @@ _Главная / Договоры для Продавцов на платфор
 
 | **Дата вступления в силу** | **Список изменений** | **Файл для скачивания** |
 | --- | --- | --- |
+| 16.12.2026 г. (с дополнениями от 23 ноября и 1 декабря) ([опубликовано](https://seller.ozon.ru/media/news/novoe-v-dogovore-nesnizhaemyj-ostatok-i-pereimenovanie-servisov/) 12.11.2026 г.) | **С 1 декабря 2026 года** переименуем вкладку «Приложения» в «Сервисы для бизнеса» (п. 8.3 раздела «Личный кабинет» );введём новое понятие «неснижаемый остаток» — это необязательный аванс для подстраховки от задолженности (п. 9 раздела «Отчётные документы и взаиморасчёты ). |  |
 | 16.12.2026 г. (с дополнениями от 23 ноября) ([опубликовано](https://seller.ozon.ru/media/news/dogovor-kak-formiruem-akty-sverki-i-drugie-obnovlenija/) 06.11.2026 г.) | **С 23 ноября 2026 года** подробно распишем процесс работы с актами сверки в личном кабинете (п. 6.2.2 раздела «Отчётные документы и взаиморасчёты») |  |
 | 01.12.2026 г. ([опубликовано](https://seller.ozon.ru/media/news/smozhete-ustanavlivat-plomby-dlja-zashhity-ot-podmen/) 30.10.2026 г.) | **С 1 декабря 2026 года **добавим термин «Пломба» (раздел «Определения»). |  |
 | 01.12.2026 г. ([опубликовано](https://seller.ozon.ru/media/news/obnovim-poryadok-nashih-raschyotov/) 16.10.2026 г.) | **С 1 декабря 2026 года **зафиксировали, какие будем использовать термины, связанные с ценами. |  |

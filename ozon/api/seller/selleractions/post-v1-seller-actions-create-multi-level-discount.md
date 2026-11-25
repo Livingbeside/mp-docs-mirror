@@ -9,7 +9,7 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: d6815ed289232986
+content_sha: 100be65485bd854a
 ---
 
 # Создать акцию с механикой «Многоуровневая скидка от суммы»
@@ -36,7 +36,7 @@ content_sha: d6815ed289232986
 - `discount_levels` — array[object] **обязательный**. Уровни скидки.
   - `discount_value` — number<double> **обязательный**. Размер скидки.
   - `order_amount` — number<double> **обязательный**. Минимальная сумма заказа.
-- `discount_type` — string (PERCENT, CURRENCY) **обязательный**. Тип скидки: - `PERCENT` — скидка в процентах; - `CURRENCY` — скидка в валюте.
+- `discount_type` — string (PERCENT) **обязательный**. Тип скидки: `PERCENT` — скидка в процентах.
 - `is_legal_entities_segment` — boolean. `true`, если акция только для юридических лиц.
 - `title` — string. Название акции.
 

@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /ozon-logistika/dostavka-dlya-biznesa/podkluchenie-ozon-dostavki
 source: "https://seller-edu.ozon.ru/libra/ozon-logistika/dostavka-dlya-biznesa/podkluchenie-ozon-dostavki"
-updated: "2026-11-12 15:55:14.924637"
+updated: "2026-11-24 14:56:07.022502"
 doc_id: 72833
-fetched_at: "2026-11-13T02:53:58Z"
-content_sha: 6f5a7b8be34b8955
+fetched_at: "2026-11-25T05:30:05Z"
+content_sha: ef471a4f35e594f8
 ---
 
 # Подключение Ozon Доставки для бизнеса
@@ -140,6 +140,8 @@ _Главная / Ozon Доставка / Ozon Доставка для бизн�
 Из кабинета доставки
 
 Если кабинеты привязаны к разным аккаунтам, нужно будет переключиться в другую компанию — для этого нажмите на название магазина и выберите нужную компанию из списка.
+
+# Вебинар «Ozon Доставка для бизнеса»
 
 # Что ещё полезно знать
 

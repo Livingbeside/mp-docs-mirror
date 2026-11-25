@@ -9,7 +9,7 @@ tags:
 spec_version: reports
 source: "https://dev.wildberries.ru/docs/openapi/reports"
 deprecated: false
-content_sha: aa3af1afc5aa3d13
+content_sha: 212939b6d2bc849d
 ---
 
 # Получить отчёт{{ /api/v1/acceptance_report/tasks/{task_id}/download }}
@@ -39,13 +39,13 @@ content_sha: aa3af1afc5aa3d13
 
 **200** — Успешно
 
-- `count` — integer. Количество товаров, шт.
-- `giCreateDate` — string<date>. Дата создания поставки
-- `incomeId` — integer. Номер поставки
-- `nmID` — integer. Артикул WB
-- `shkCreateDate` — string<date>. Дата приёмки
-- `subjectName` — string. Предмет
-- `total` — number. Суммарная стоимость приёмки, ₽ с копейками
+- `count` — integer **обязательный**. Количество товаров, шт.
+- `giCreateDate` — string<date> **обязательный**. Дата создания поставки
+- `incomeId` — integer **обязательный**. Номер поставки
+- `nmID` — integer **обязательный**. Артикул WB
+- `shkCreateDate` — string<date> **обязательный**. Дата приёмки
+- `subjectName` — string **обязательный**. Предмет
+- `total` — number **обязательный**. Суммарная стоимость приёмки, ₽ с копейками
 
 **204** — Нет данных
 

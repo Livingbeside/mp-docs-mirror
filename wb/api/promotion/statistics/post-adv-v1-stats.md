@@ -9,7 +9,7 @@ tags:
 spec_version: promotion
 source: "https://dev.wildberries.ru/docs/openapi/promotion"
 deprecated: false
-content_sha: 08dddf11cd81ea0e
+content_sha: 301f9fd18db5612b
 ---
 
 # Статистика медиакампаний
@@ -61,7 +61,7 @@ content_sha: 08dddf11cd81ea0e
   - `date_from` — string<date-time>. Время начала размещения
   - `date_to` — string<date-time>. Время завершения размещения
   - `subject_name` — string. Родительская категория предмета
-  - `atbs` — integer. Количество добавлений товаров в корзину
+  - `atbs` — integer. Сколько раз товар добавили в корзину
   - `orders` — integer. Количество заказов
   - `price` — number. Стоимость размещения
   - `cpc` — number. (cost per click) — цена клика по продвигаемому товару
@@ -73,7 +73,7 @@ content_sha: 08dddf11cd81ea0e
       - `stats` — array[object]
         - `views` — integer. Количество просмотров
         - `clicks` — integer. Количество кликов
-        - `atbs` — integer. Количество добавлений товаров в корзину
+        - `atbs` — integer. Сколько раз товар добавили в корзину
         - `ctr` — number. CTR (click-through rate) — показатель кликабельности, отношение числа кликов к количеству показов в рамках медиакампании
   - `expenses` — number. Стоимость размещения баннера
   - `cr1` — number. Отношение количества добавлений в корзину к количеству кликов
@@ -92,7 +92,7 @@ content_sha: 08dddf11cd81ea0e
   - `date_from` — string<date-time>. Время начала размещения
   - `date_to` — string<date-time>. Время завершения размещения
   - `subject_name` — string. Родительская категория предмета
-  - `atbs` — integer. Количество добавлений товаров в корзину
+  - `atbs` — integer. Сколько раз товар добавили в корзину
   - `orders` — integer. Количество заказов
   - `price` — number. Стоимость размещения
   - `cpc` — number. (cost per click) — цена клика по продвигаемому товару
@@ -104,7 +104,7 @@ content_sha: 08dddf11cd81ea0e
       - `stats` — array[object]
         - `views` — integer. Количество просмотров
         - `clicks` — integer. Количество кликов
-        - `atbs` — integer. Количество добавлений товаров в корзину
+        - `atbs` — integer. Сколько раз товар добавили в корзину
         - `orders` — integer. Количество заказов
         - `cr` — number. CR(conversion rate) — отношение количества заказов к общему количеству посещений медиакампании
         - `ctr` — number. CTR (click-through rate) — показатель кликабельности, отношение числа кликов к количеству показов в рамках медиакампании
@@ -124,7 +124,7 @@ content_sha: 08dddf11cd81ea0e
   - `date_from` — string<date-time>. Время начала размещения
   - `date_to` — string<date-time>. Время завершения размещения
   - `subject_name` — string. Родительская категория предмета
-  - `atbs` — integer. Количество добавлений товаров в корзину
+  - `atbs` — integer. Сколько раз товар добавили в корзину
   - `orders` — integer. Количество заказов
   - `price` — number. Стоимость размещения
   - `cpc` — number. (cost per click) — цена клика по продвигаемому товару
@@ -136,7 +136,7 @@ content_sha: 08dddf11cd81ea0e
       - `stats` — array[object]
         - `views` — integer. Количество просмотров
         - `clicks` — integer. Количество кликов
-        - `atbs` — integer. Количество добавлений товаров в корзину
+        - `atbs` — integer. Сколько раз товар добавили в корзину
         - `ctr` — number. CTR (click-through rate) — показатель кликабельности, отношение числа кликов к количеству показов в рамках медиакампании
   - `expenses` — number. Стоимость размещения баннера
   - `cr1` — number. Отношение количества добавлений в корзину к количеству кликов

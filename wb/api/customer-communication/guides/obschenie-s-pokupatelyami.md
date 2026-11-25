@@ -5,7 +5,7 @@ tag: Общение с покупателями
 group: ""
 kind: guide
 source: "https://dev.wildberries.ru/docs/openapi/customer-communication"
-content_sha: 718768884bcf75c3
+content_sha: 4a5f30f5dfb46006
 ---
 
 # Общение с покупателями
@@ -18,6 +18,6 @@ content_sha: 718768884bcf75c3
  3. [Чатами с покупателями](./customer-communication#tag/buyersChat)
  4. [Заявками покупателей на возврат](./customer-communication#tag/buyersReturns)
 
-Вы можете протестировать методы общения с покупателями в [песочнице](/sandbox). Также в песочнице доступны [специальные методы](/docs/openapi-other/sandbox-environment#tag/questionsAndFeedbacks) для управления тестовыми вопросами и отзывами
+Протестировать методы общения с покупателями вы можете в [песочнице](/sandbox). Также в песочнице доступны [специальные методы](/docs/openapi-other/sandbox-environment#tag/questionsAndFeedbacks) для управления тестовыми вопросами и отзывами
 
  Узнать, как использовать методы в бизнес-кейсах, можно в [инструкции](/knowledge-base/articles/019d49a4-0b26-7620-8d0b-e3050b7cd01d/obshchenie-s-pokupateliami) по работе с разделом Общение с покупателями
