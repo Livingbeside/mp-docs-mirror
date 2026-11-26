@@ -2,8 +2,8 @@
 title: Рекомендации Маркета по карточкам
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/recommendations.md"
-fetched_at: "2026-11-25T07:28:06Z"
-content_sha: c328f113b73c4570
+fetched_at: "2026-11-26T02:37:56Z"
+content_sha: 063dc122f4e2ff60
 ---
 
 ---
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/step-by-step/recommendations.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22292373
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22296102
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22292373
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22296102
 
 # Рекомендации Маркета по карточкам
 

@@ -2,8 +2,8 @@
 title: Создание таблиц размеров
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/content/createContentSizeTables.md"
-fetched_at: "2026-11-25T07:28:21Z"
-content_sha: b9ea5494fb3bb047
+fetched_at: "2026-11-26T02:38:19Z"
+content_sha: 27852df82ad359b5
 ---
 
 ---
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/content/createContentSizeTables.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22292373
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22296102
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22292373
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22296102
 
 <!-- source: ru/api/content/createContentSizeTables.md -->
 <div class="openapi">

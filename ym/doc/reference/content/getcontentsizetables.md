@@ -2,8 +2,8 @@
 title: Таблицы размеров по идентификаторам
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/content/getContentSizeTables.md"
-fetched_at: "2026-11-25T07:28:20Z"
-content_sha: 23b94090fd8b0e01
+fetched_at: "2026-11-26T02:38:18Z"
+content_sha: c5f843af367dec74
 ---
 
 ---
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/content/getContentSizeTables.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22292373
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22296102
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22292373
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22296102
 
 <!-- source: ru/api/content/getContentSizeTables.md -->
 <div class="openapi">

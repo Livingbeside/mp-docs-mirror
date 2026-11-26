@@ -2,8 +2,8 @@
 title: API Яндекс Маркета для продавцов
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/index.md"
-fetched_at: "2026-11-25T07:27:57Z"
-content_sha: ac66a542b4fed93d
+fetched_at: "2026-11-26T02:37:48Z"
+content_sha: 43c1e08d965ae4e8
 ---
 
 ---
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/index.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22292373
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22296102
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22292373
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22296102
 
 # API Яндекс Маркета для продавцов
 
@@ -39,5 +39,12 @@ API Маркета помогает продавцам управлять ас�
     Это необязательная интеграция. Однако с помощью уведомлений вы сможете оперативно реагировать на изменения в заказах, невыкупах и возвратах, а также на появление заявки на отмену заказа.
     
     [Как подключить API-уведомления](https://yandex.ru/dev/market/partner-api/doc/ru/push-notifications/index.md#how-to-start)
+
+## Для AI-агентов {#dlya-ai-agentov}
+
+* [llms.txt](https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt) — навигатор по документации API Маркета и основным разделам документации
+* [llms-full.txt](https://yandex.ru/dev/market/partner-api/doc/ru/llms-full.txt) — документация одним файлом для задач, которым нужен больше контекста
+* Markdown отдельных страниц — нажмите **Открыть Markdown** на нужной странице, сохраните открывшийся документ как файл и добавьте его в контекст помощника
+* [OpenAPI-спецификация](https://yandex.ru/dev/market/partner-api/doc/ru/concepts/openapi.md) — описание методов API, параметров запросов и схем ответов в YAML
 
 [*notification-type]: События, по которым Маркет присылает уведомления:<ul><li>создание нового заказа;</li><li>изменение заказа;</li><li>изменение статуса заказа;</li><li>создание нового чата с покупателем;</li><li>добавление нового сообщения в чате;</li><li>начало спора;</li><li>завершение спора;</li><li>создание нового отзыва о товаре;</li><li>создание нового комментария к отзыву;</li><li>создание заявки на отмену заказа;</li><li>отмена заказа;</li><li>создание нового невыкупа или возврата;</li><li>изменение статуса невыкупа или возврата.</li></ul>Уведомления будут приходить в том числе и по тестовым заказам.
