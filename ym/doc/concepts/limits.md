@@ -2,8 +2,8 @@
 title: Ограничения для запросов
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/concepts/limits.md"
-fetched_at: "2026-11-26T02:37:52Z"
-content_sha: 0b8a1d60a3b9773b
+fetched_at: "2026-11-27T02:47:32Z"
+content_sha: 4fb59ff5f150a56f
 ---
 
 ---
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/concepts/limits.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22296102
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22317063
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22296102
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22317063
 
 # Ограничения для запросов
 

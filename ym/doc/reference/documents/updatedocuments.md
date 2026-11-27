@@ -2,8 +2,8 @@
 title: Обновление документов
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/documents/updateDocuments.md"
-fetched_at: "2026-11-26T02:38:20Z"
-content_sha: 542a0350e50b6174
+fetched_at: "2026-11-27T02:47:55Z"
+content_sha: bc23c1b39f654e68
 ---
 
 ---
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/documents/updateDocuments.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22296102
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22317063
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22296102
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22317063
 
 <!-- source: ru/api/documents/updateDocuments.md -->
 <div class="openapi">

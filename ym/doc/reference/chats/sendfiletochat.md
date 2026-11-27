@@ -2,8 +2,8 @@
 title: Отправка файла в чат
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/chats/sendFileToChat.md"
-fetched_at: "2026-11-26T02:39:08Z"
-content_sha: b0a65d9f7fa4145d
+fetched_at: "2026-11-27T02:48:47Z"
+content_sha: e0fc63eb38db7edd
 ---
 
 ---
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/chats/sendFileToChat.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22296102
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22317063
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22296102
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22317063
 
 <!-- source: ru/api/chats/sendFileToChat.md -->
 <div class="openapi">

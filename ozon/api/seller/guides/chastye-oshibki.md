@@ -5,7 +5,7 @@ tag: Errors
 group: Приложения
 kind: guide
 source: "https://docs.ozon.ru/api/seller/"
-content_sha: 6710bc6ffccec6f6
+content_sha: 95cda3cf1b9feded
 ---
 
 # Частые ошибки
@@ -232,3 +232,16 @@ content_sha: 6710bc6ffccec6f6
 | `DELIVERY_METHOD_NOT_FOUND` | Выбранный способ доставки недоступен. Получите доступные варианты доставки методом [/v2/delivery/checkout](#operation/DeliveryCheckout). |
 | `INVALID_ITEM` | Нельзя создать заказ с выбранным товаром. Проверьте доступность товара для создания заказа методом [/v2/delivery/checkout](#operation/DeliveryCheckout). |
 | `USER_DELIVERY_UNAVAILABLE` | Доставка для выбранного покупателя недоступна. |
+
+### [/v1/carriage/container/fill](#operation/CarriageContainerFill)
+
+| Ошибка | Описание |
+|-------------------------------------------|---------------------------------------------------------------------------------------------|
+| `CARGO_OVH_EXCEEDED` | Вы превысили лимит по весу или объёму грузоместа. Добавьте отправление в другое грузоместо. |
+| `POSTING_IS_ALREADY_IN_ANOTHER_CONTAINER` | Отправление находится в другом грузоместе. |
+
+### [/v1/product/prices/details](#operation/ProductPricesDetails)
+
+| Ошибка | Описание |
+|----------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `no access to this method` | Метод недоступен. Подключите подписку Premium Pro. <br> [Подробнее о подписках в Базе знаний продавца](https://seller-edu.ozon.ru/libra/seller-rating) |

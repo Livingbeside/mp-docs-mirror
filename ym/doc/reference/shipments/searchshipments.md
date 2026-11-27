@@ -2,8 +2,8 @@
 title: Получение информации о нескольких отгрузках
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/shipments/searchShipments.md"
-fetched_at: "2026-11-26T02:38:40Z"
-content_sha: fc5f1a43921e010f
+fetched_at: "2026-11-27T02:48:19Z"
+content_sha: 4fb9bca9ad176fc3
 ---
 
 ---
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/shipments/searchShipments.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22296102
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22317063
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22296102
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22317063
 
 <!-- source: ru/api/shipments/searchShipments.md -->
 <div class="openapi">
@@ -1861,7 +1861,7 @@ alternate:
         type: boolean
         default: true
     $defs:
-      /home/sandbox/.ya/build/build_root/o5zl/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/shipments/schemas.yaml#/ShipmentStatusType:
+      /home/sandbox/.ya/build/build_root/core/00000b/market/mbi/docs/partner-api/docfiles/__docsbuild/.tmp_input/ru/openapi/partner-api-spec/shipments/schemas.yaml#/ShipmentStatusType:
         description: |
           Статус отгрузки:
   

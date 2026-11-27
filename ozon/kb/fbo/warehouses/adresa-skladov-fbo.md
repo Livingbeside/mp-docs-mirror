@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /fbo/warehouses/adresa-skladov-fbo
 source: "https://seller-edu.ozon.ru/libra/fbo/warehouses/adresa-skladov-fbo"
-updated: "2026-11-24 12:52:22"
+updated: "2026-11-25 15:22:53"
 doc_id: 13009
-fetched_at: "2026-11-25T05:30:05Z"
-content_sha: f9e983eb99cc710b
+fetched_at: "2026-11-27T02:44:48Z"
+content_sha: 470903fc8f7e78d5
 ---
 
 # Адреса и реквизиты складов и пунктов приёма Ozon
@@ -2542,6 +2542,10 @@ _Главная / Продажа со склада Ozon (FBO) / Склады, а
 Открыт для записи и приёма поставок с 30 октября 2026 года.
 
 **Название в системе:** МО_СОЛНЕЧНОГОРСК_КРОССДОКИНГ
+
+**ИНН / КПП склада:** 7704217370 / 504445008
+
+**График приёма поставок: **с 08:00 до 20:00
 
 ## МО Щербинка
 

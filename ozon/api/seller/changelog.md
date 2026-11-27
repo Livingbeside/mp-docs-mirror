@@ -5,12 +5,20 @@ tag: News
 group: Обновления
 kind: changelog
 source: "https://docs.ozon.ru/api/seller/"
-content_sha: aaf06658d95a97b7
+content_sha: 2be1fd09bb0415a0
 ---
 
 # Обновления
 
 Следите за обновлениями документации на платформе для разработчиков [Ozon for dev](https://dev.ozon.ru/).
+
+## 25 ноября 2026
+
+| Метод | Изменение |
+|-----------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [/v1/finance/accrual/postings](#operation/GetFinanceAccrualPostings)<br>[/v1/finance/accrual/by-day](#operation/GetFinanceAccrualByDay) | Обновили описание методов. |
+| — | В разделе [**Частые ошибки**](#tag/Errors) добавили описание ошибок:`CARGO_OVH_EXCEEDED` и `POSTING_IS_ALREADY_IN_ANOTHER_CONTAINER` — для метода [/v1/carriage/container/fill](#operation/CarriageContainerFill);
+`no access to this method` — для метода [/v1/product/prices/details](#operation/ProductPricesDetails). |
 
 ## 24 ноября 2026
 

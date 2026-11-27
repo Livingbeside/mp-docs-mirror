@@ -9,12 +9,14 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: 2aeeec66e57a6a59
+content_sha: 6ebc4d432d58fb06
 ---
 
 # Получить начисления по отправлениям
 
 `POST /v1/finance/accrual/postings`
+
+Чтобы получить полный список начислений, используйте вместе с методом [/v1/finance/accrual/by-day](#operation/GetFinanceAccrualByDay).
 
 Вы можете оставить обратную связь о работе метода в [комментариях](https://dev.ozon.ru/community/2008-Novye-beta-metody-dlia-polucheniia-nachislenii/) в сообществе разработчиков Ozon for dev.
 

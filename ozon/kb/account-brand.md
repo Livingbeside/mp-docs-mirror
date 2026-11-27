@@ -6,8 +6,8 @@ path: /account-brand
 source: "https://seller-edu.ozon.ru/libra/account-brand"
 updated: "2025-11-20 13:37:09"
 doc_id: 1006
-fetched_at: "2026-08-28T12:11:14Z"
-content_sha: c26e9b68e17111b0
+fetched_at: "2026-11-27T02:44:47Z"
+content_sha: c1f321cd1d7da8fc
 ---
 
 # Кабинет бренда
@@ -18,7 +18,7 @@ _Главная_
 
 ## Вложенные разделы
 - [Как зарегистрировать кабинет бренда на Ozon](https://seller-edu.ozon.ru/libra/account-brand/account-brand)
-- [Представительство бренда](https://seller-edu.ozon.ru/libra/account-brand/how-to-start)
+- [Как стать представителем бренда](https://seller-edu.ozon.ru/libra/account-brand/how-to-start)
 - [Список товаров бренда](https://seller-edu.ozon.ru/libra/account-brand/brand-goods)
 - [Список продавцов бренда](https://seller-edu.ozon.ru/libra/account-brand/brand-sellers)
 - [Отзывы покупателей на товары бренда](https://seller-edu.ozon.ru/libra/account-brand/customer-reviews)

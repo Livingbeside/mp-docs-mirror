@@ -4,8 +4,8 @@ api: wildberries
 kind: changelog
 source: "https://dev.wildberries.ru/release-notes"
 window: последние записи, страница отдаёт не всю историю
-fetched_at: "2026-11-25T05:10:44Z"
-content_sha: 6fe47b22d99d6a79
+fetched_at: "2026-11-27T02:47:26Z"
+content_sha: 5d846ed7a0fd99f4
 ---
 
 # Журнал изменений WB API
@@ -67,6 +67,21 @@ content_sha: 6fe47b22d99d6a79
 Ноябрь
 2026
 
+Новое
+
+## 25.11.2026
+
+Поставки FBW
+
+Информация о поставках
+
+Изменения в Информации о поставках
+
+Добавили поле `correctedQuantity` с информацией о количестве товаров по Акту корректировки в ответы методов:
+
+- [GET /api/v1/supplies/{ID}/goods](/docs/openapi/orders-fbw#tag/suppliesInformation/operation/getV1SuppliesIdGoods) — поле возвращается, если есть расхождения по товару, зафиксированные при приёмке
+- [GET /api/v1/supplies/{ID}](/docs/openapi/orders-fbw#tag/suppliesInformation/operation/getV1SuppliesId) — поле возвращается, если есть расхождения, зафиксированные при приёмке поставки
+
 Изменения
 
 ## 24.11.2026
@@ -112,20 +127,6 @@ C **24 ноября** по-новому отображаем склады WB в 
 
 Об отключении текущего метода [GET /adv/v3/fullstats](/en/docs/openapi/promotion#tag/statistics/operation/getV3Fullstats) сообщим дополнительно.
 
-Устарело
-
-## 16.11.2026
-
-Критичное изменение
-
-Маркетинг и продвижение
-
-Финансы
-
-Изменения в API Продвижения
-
-Напоминаем, что сегодня мы начинаем [отключать](https://dev.wildberries.ru/release-notes?id=582) устаревший метод получения бюджета кампаний [GET /adv/v1/budget](/docs/openapi/promotion/#tag/finances/operation/getV1Budget).
-
 Изменения
 
 ## 16.11.2026
@@ -142,6 +143,20 @@ C **24 ноября** по-новому отображаем склады WB в 
 
 - [POST /api/v1/invite](/docs/openapi/api-information#tag/sellerUserManagement/operation/postV1Invite)
 - [PUT /api/v1/users/access](/docs/openapi/api-information#tag/sellerUserManagement/operation/putV1UsersAccess)
+
+Устарело
+
+## 16.11.2026
+
+Критичное изменение
+
+Маркетинг и продвижение
+
+Финансы
+
+Изменения в API Продвижения
+
+Напоминаем, что сегодня мы начинаем [отключать](https://dev.wildberries.ru/release-notes?id=582) устаревший метод получения бюджета кампаний [GET /adv/v1/budget](/docs/openapi/promotion/#tag/finances/operation/getV1Budget).
 
 Новое
 
@@ -387,25 +402,5 @@ DBS
 Указывайте дополнительный GTIN в новом параметре только если такое же значение GTIN вы ранее указывали в одной из карточек товара в параметре `skus`. Нельзя указывать один и тот же GTIN в `skus` для разных карточек или размеров товаров
 
 Дополнительный `gtin` теперь также возвращается в ответе метода [POST content/v2/get/cards/list](/docs/openapi/item-management#tag/listings/operation/postV2GetCardsList) — поле `gtin`.
-
-Новое
-
-## 01.10.2026
-
-Критичное изменение
-
-Аналитика и данные
-
-Поисковые запросы по вашим товарам
-
-Изменения в Аналитике продавца CSV
-
-С **12 октября** в отчёте по текстам поисковых запросов по вашим товарам —`SEARCH_QUERIES_PREMIUM_REPORT_TEXT` — метода [GET /api/v2/nm-report/downloads/file/{downloadId}](/docs/openapi/analytics/#tag/sellerAnalyticsCsv/operation/getV2NmReportDownloadsFileDownloadId) отключим поля:
-
-- `OpenCardPercentile` — процент, на который показатель количества открытий карточки товара выше, чем у карточек других продавцов по поисковому запросу
-- `AddToCartPercentile` — процент, на который показатель добавлений в корзину выше, чем у карточек других продавцов по поисковому запросу
-- `OpenToCartPercentile` — процент, на который показатель конверсии в корзину выше, чем у карточек других продавцов по поисковому запросу
-- `OrdersPercentile` — процент, на который показатель заказов выше, чем у карточек других продавцов по поисковому запросу
-- `CartToOrderPercentile` — процент, на который показатель конверсии в заказ выше, чем у карточек других продавцов по поисковому запросу
 
 Мы используем [cookies](https://legal.wildberries.ru/global-confidentiality-policy/country/ru/lang/ru/#anchor-4.4), чтобы анализировать, как вы пользуетесь сайтом, и улучшать его

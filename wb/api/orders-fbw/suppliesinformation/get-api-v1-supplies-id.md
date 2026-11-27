@@ -9,7 +9,7 @@ tags:
 spec_version: ordersfbw
 source: "https://dev.wildberries.ru/docs/openapi/orders-fbw"
 deprecated: false
-content_sha: 84b9383ab0ddb573
+content_sha: cb30dc9d24f647d2
 ---
 
 # Детали поставки{{ /api/v1/supplies/{ID} }}
@@ -67,6 +67,7 @@ content_sha: 84b9383ab0ddb573
 - `depersonalizedQuantity` — integer. Количество обезличенного товара, шт
 - `discrepancies` — integer. Расхождения между заявленным и фактическим количеством товара в поставке. Только при `"statusID":5`
 - `isBoxOnPallet` — boolean. Тип поставки — **Поштучная палета**: - `true` — да - `false` — нет Поле возвращается только при `"boxTypeID": 2`
+- `correctedQuantity` — integer. Количество товаров по Акту корректировки, которое не входит в `acceptedQuantity`. Возвращается, если есть расхождения, зафиксированные при приёмке поставки
 
 **400** — Неправильный запрос
 

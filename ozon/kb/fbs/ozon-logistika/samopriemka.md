@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /fbs/ozon-logistika/samopriemka
 source: "https://seller-edu.ozon.ru/libra/fbs/ozon-logistika/samopriemka"
-updated: "2026-11-20 10:52:25"
+updated: "2026-11-26 14:39:19"
 doc_id: 1780
-fetched_at: "2026-11-25T05:30:05Z"
-content_sha: 7d1a0c031d52b528
+fetched_at: "2026-11-27T02:44:48Z"
+content_sha: ed0132802946f42c
 ---
 
 # Самоприёмка отправлений
@@ -35,8 +35,6 @@ _Главная / Продажа со своего склада (FBS) / Отгр
 [Внуково (СЦ)](https://seller-edu.ozon.ru/fbs/punkty-priema/moskva#внуково-мо-внуково-2-хаб)
 
 [Давыдовское (СЦ)](/fbs/punkty-priema/moskva#давыдовское-мо-давыдовское-фбс)
-
-[Замоскворечье (СЦ)](/fbs/punkty-priema/moskva#замоскворечье-мо-замоскворечье-фбс)
 
 [Кавказский (СЦ)](/fbs/punkty-priema/moskva#кавказскии-мск-кавказскии-2-хаб)
 
@@ -187,8 +185,6 @@ _Главная / Продажа со своего склада (FBS) / Отгр
 [Саранск — Восточное шоссе (СЦ)](https://seller-edu.ozon.ru/fbs/punkty-priema/regiony#саранск-восточное-шоссе-сц)
 
 [Смоленск — Индустриальная (СЦ)](https://seller-edu.ozon.ru/fbs/punkty-priema/regiony#смоленск-индустриальная-сц)
-
-[Сочи — Барановское (СЦ)](https://seller-edu.ozon.ru/fbs/punkty-priema/regiony#сочи-барановское-сц)
 
 [Сочи — Труда (СЦ)](https://seller-edu.ozon.ru/fbs/punkty-priema/regiony#сочи -труда-сц)
 

@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /fbs/ozon-logistika/doveritel-naya-priemka-gruzovogo-mesta
 source: "https://seller-edu.ozon.ru/libra/fbs/ozon-logistika/doveritel-naya-priemka-gruzovogo-mesta"
-updated: "2026-11-20 10:53:08"
+updated: "2026-11-26 14:39:49"
 doc_id: 811
-fetched_at: "2026-11-25T05:30:05Z"
-content_sha: 2072705f50885312
+fetched_at: "2026-11-27T02:44:48Z"
+content_sha: f6a7f3a3754c5308
 ---
 
 # Доверительная приёмка грузового места
@@ -37,8 +37,6 @@ _Главная / Продажа со своего склада (FBS) / Отгр
 [Волгоградский (СЦ)](/fbs/punkty-priema/moskva#волгоградскии-мск-волгоградскии-3-хаб)
 
 [Давыдовское (СЦ)](https://seller-edu.ozon.ru/fbs/punkty-priema/moskva#давыдовское-мо-давыдовское-фбс)
-
-[Замоскворечье (СЦ)](/fbs/punkty-priema/moskva#%D0%B7%D0%B0%D0%BC%D0%BE%D1%81%D0%BA%D0%B2%D0%BE%D1%80%D0%B5%D1%87%D1%8C%D0%B5-%D0%BC%D0%BE-%D0%B7%D0%B0%D0%BC%D0%BE%D1%81%D0%BA%D0%B2%D0%BE%D1%80%D0%B5%D1%87%D1%8C%D0%B5-%D1%84%D0%B1%D1%81)
 
 [Кавказский (СЦ)](https://seller-edu.ozon.ru/fbs/punkty-priema/moskva#кавказскии-мск-кавказскии-2-хаб)
 
@@ -191,8 +189,6 @@ _Главная / Продажа со своего склада (FBS) / Отгр
 [Саранск — Восточное шоссе (СЦ)](https://seller-edu.ozon.ru/fbs/punkty-priema/regiony#саранск-восточное-шоссе-сц)
 
 [Смоленск — Индустриальная (СЦ)](https://seller-edu.ozon.ru/fbs/punkty-priema/regiony#смоленск-индустриальная-сц)
-
-[Сочи — Барановское (СЦ)](https://seller-edu.ozon.ru/fbs/punkty-priema/regiony#сочи-барановское-сц)
 
 [Сочи — Труда (СЦ)](https://seller-edu.ozon.ru/fbs/punkty-priema/regiony#сочи -труда-сц)
 

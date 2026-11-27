@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /policies/restrictions/need-access/cifrovye-tovary
 source: "https://seller-edu.ozon.ru/libra/policies/restrictions/need-access/cifrovye-tovary"
-updated: "2026-07-31 16:56:36"
+updated: "2026-11-26 12:37:01"
 doc_id: 18672
-fetched_at: "2026-08-28T12:11:15Z"
-content_sha: 1310b1779332a05c
+fetched_at: "2026-11-27T02:44:48Z"
+content_sha: 33d1f38560e5f9d6
 ---
 
 # Цифровые товары
@@ -70,7 +70,9 @@ _Главная / Правила работы и контроль качеств
 
 На Ozon нельзя продавать:
 
-аккаунты и подписки на сторонних ресурсах;
+аккаунты и подписки на сторонних ресурсах, кроме подписок [из списка разрешённых](https://seller-edu.ozon.ru/libra/policies/restrictions/need-access/cifrovye-tovary#%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D0%BB%D0%B0-%D0%BF%D1%80%D0%BE%D0%B4%D0%B0%D0%B6%D0%B8-%D1%82%D0%BE%D0%B2%D0%B0%D1%80%D0%BE%D0%B2-%D0%B2-%D0%BA%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D0%B8);
+
+коробки с кодами активаций игр, если код активации — это основной товар;
 
 цифровые товары на физических носителях, например — на флеш-карте или SSD-накопителе;
 
@@ -80,7 +82,7 @@ eSIM;
 
 файлы, например — схема дома в формате PDF, кроме проекта кухни под заказ;
 
-доступ к аккаунту.
+доступ к аккаунтам, включая передачу семейных доступов — шеринг.
 
 # Как продавать цифровые товары
 

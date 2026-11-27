@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /work-with-goods/trebovaniya-k-kartochkam-tovarov/product-information/obyazatelnaya-markirovka-tovarov
 source: "https://seller-edu.ozon.ru/libra/work-with-goods/trebovaniya-k-kartochkam-tovarov/product-information/obyazatelnaya-markirovka-tovarov"
-updated: "2026-11-20 12:01:32"
+updated: "2026-11-26 09:53:00"
 doc_id: 716
-fetched_at: "2026-11-25T05:30:05Z"
-content_sha: 73af78fffdede800
+fetched_at: "2026-11-27T02:44:48Z"
+content_sha: 03ff81d133ba445a
 ---
 
 # Обязательная маркировка товаров
@@ -88,7 +88,7 @@ _Главная / Работа с товарами / Требования к к�
 
 # Как указать количество КИЗ в карточке товара
 
-При приёмке товара сотрудник склада сканирует столько кодов маркировки, сколько указано в поле **Количество КИЗ** в карточке товара. Поле заполняется автоматически только для товаров с обязательной маркировкой. Для остальных товаров заполнять его не нужно. Если количество указано неверно, измените его через [онлайн-таблицу](https://seller-edu.ozon.ru/libra/work-with-goods/zagruzka-tovarov/creating-goods/cherez-onlajn-tablicy) или [XLS-шаблон](https://seller-edu.ozon.ru/libra/work-with-goods/zagruzka-tovarov/creating-goods/cherez-xls-shablon).
+При приёмке товара сотрудник склада сканирует столько кодов маркировки, сколько указано в поле **Количество КИЗ** в карточке товара. Поле заполняется автоматически для всех товаров. По умолчанию там указано 1. Если не маркируете товары, игнорируйте это поле — на приёмку и обработку немаркируемых товаров оно не влияет. Если количество указано неверно, измените его через [онлайн-таблицу](https://seller-edu.ozon.ru/libra/work-with-goods/zagruzka-tovarov/creating-goods/cherez-onlajn-tablicy) или [XLS-шаблон](https://seller-edu.ozon.ru/libra/work-with-goods/zagruzka-tovarov/creating-goods/cherez-xls-shablon).
 
 В поле **Количество КИЗ** может быть указано:
 

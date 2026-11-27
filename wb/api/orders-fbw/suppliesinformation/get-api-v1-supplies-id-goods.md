@@ -9,7 +9,7 @@ tags:
 spec_version: ordersfbw
 source: "https://dev.wildberries.ru/docs/openapi/orders-fbw"
 deprecated: false
-content_sha: 85486ddd81c69c9d
+content_sha: 380f8028fb636344
 ---
 
 # Товары поставки{{ /api/v1/supplies/{ID}/goods }}
@@ -54,6 +54,7 @@ content_sha: 85486ddd81c69c9d
 - `readyForSaleQuantity` — integer. Поступило в продажу, шт
 - `acceptedQuantity` — integer. Принято, шт
 - `unloadingQuantity` — integer. Количество товара на раскладке, шт
+- `correctedQuantity` — integer. Количество товара по Акту корректировки, которое не входит в `acceptedQuantity`. Возвращается, если по товару есть расхождения, зафиксированные при приёмке
 
 **400** — Неправильный запрос
 

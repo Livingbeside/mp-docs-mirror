@@ -4,10 +4,10 @@ marketplace: ozon
 kind: article
 path: /fbs/ozon-logistika/proverka-tovara-partnerami-na-fbs
 source: "https://seller-edu.ozon.ru/libra/fbs/ozon-logistika/proverka-tovara-partnerami-na-fbs"
-updated: "2026-11-17 11:54:31"
+updated: "2026-11-26 17:20:20"
 doc_id: 97425
-fetched_at: "2026-11-25T05:30:05Z"
-content_sha: afa4be50599c1f78
+fetched_at: "2026-11-27T02:44:48Z"
+content_sha: ba111f3c984e9e5e
 ---
 
 # Пломбирование и проверка товара партнёрами на FBS
@@ -15,6 +15,8 @@ content_sha: afa4be50599c1f78
 _Главная / Продажа со своего склада (FBS) / Отгрузка со своего склада_
 
 Как подключить услугу «Проверка товара партнёрами» и установить пломбы на товары FBS, чтобы защитить их от подмены. Где купить пломбы и указать номера пломб при сборке отправлений на FBS
+
+# Видео «Пломбы для защиты от подмен»
 
 # Что такое проверка товара партнёрами
 

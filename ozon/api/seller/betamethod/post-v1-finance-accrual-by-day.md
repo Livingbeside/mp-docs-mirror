@@ -9,12 +9,14 @@ tags:
 spec_version: 2.1
 source: "https://docs.ozon.ru/api/seller/"
 deprecated: false
-content_sha: 860b876546234164
+content_sha: ee0b99cdc0a8db38
 ---
 
 # Получить начисления за день
 
 `POST /v1/finance/accrual/by-day`
+
+Чтобы получить полный список начислений, используйте вместе с методом [/v1/finance/accrual/postings](#operation/GetFinanceAccrualPostings).
 
 Если укажете `last_id` в запросе, передайте значение `date` из предыдущего запроса, иначе вернётся ошибка `400 Bad Request`.
 
