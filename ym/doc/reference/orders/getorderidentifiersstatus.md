@@ -2,8 +2,8 @@
 title: Статусы проверки кодов маркировки
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/reference/orders/getOrderIdentifiersStatus.md"
-fetched_at: "2026-11-27T02:48:09Z"
-content_sha: 399ab4a7d2e94b4d
+fetched_at: "2026-11-28T02:55:19Z"
+content_sha: 0c5e40585e76f0c1
 ---
 
 ---
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/reference/orders/getOrderIdentifiersStatus.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22317063
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22349463
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22317063
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22349463
 
 <!-- source: ru/api/orders/getOrderIdentifiersStatus.md -->
 <div class="openapi">

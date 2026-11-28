@@ -9,7 +9,7 @@ tags:
 spec_version: order
 source: "https://dev.wildberries.ru/docs/openapi/orders-fbs"
 deprecated: false
-content_sha: 9253c76126880b53
+content_sha: 650703405ec25570
 ---
 
 # Получить список новых сборочных заданий
@@ -73,7 +73,7 @@ content_sha: 9253c76126880b53
   - `cargoType` — integer (1, 2, 3). Тип товара: - `1` — малогабаритный товар (МГТ) - `2` — сверхгабаритный товар (СГТ) - `3` — крупногабаритный товар (КГТ+)
   - `crossBorderType` — integer (0, 1). Тип сборочного задания: - `0` — внутренняя поставка - `1` — трансграничная поставка
   - `isZeroOrder` — boolean. Признак заказа товара с нулевым остатком: - `false` — заказ сделан на товар с ненулевым остатком - `true` — заказ сделан на товар с нулевым остатком. Такой заказ можно отменить без штрафа за отмену
-  - `isPickupPointShipmentAllowed` — boolean. Можно ли отгрузить заказ на ПВЗ: - `false` — нет - `true` — да
+  - `isPickupPointDispatchAllowed` — boolean. Можно ли отгрузить заказ на ПВЗ: - `false` — нет - `true` — да
   - `options` — object. Опции заказа
     - `isB2B` — boolean. Признак B2B-продажи: - `false` — не B2B-продажа - `true` — B2B-продажа
 

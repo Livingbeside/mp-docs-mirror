@@ -2,8 +2,8 @@
 title: Запуск интеграции на Node.js Express
 marketplace: yandex-market
 source: "https://yandex.ru/dev/market/partner-api/doc/ru/push-notifications/concepts/quick-start-notifications-node-express.md"
-fetched_at: "2026-11-27T02:48:55Z"
-content_sha: 28b0979e8fbe1738
+fetched_at: "2026-11-28T02:56:14Z"
+content_sha: d89395c0fa69a3e6
 ---
 
 ---
@@ -17,10 +17,10 @@ alternate:
   - href: https://yandex.ru/dev/market/partner-api/doc/ru/push-notifications/concepts/quick-start-notifications-node-express.md
     type: text/markdown
     title: Markdown version
-  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22317063
+  - href: https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22349463
     rel: describedby
 ---
-> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22317063
+> **Documentation Index:** Fetch the complete configuration index at https://yandex.ru/dev/market/partner-api/doc/ru/llms.txt?revision=r22349463
 
 # Запуск интеграции на Node.js Express
 

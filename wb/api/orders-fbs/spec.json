@@ -59,6 +59,13 @@
           "message": "Customs declaration is required"
         }
       },
+      "DispatchDtRequired": {
+        "description": "Укажите планируемую дату отгрузки для поставок МГТ (`\"cargoType\":1`) и КГТ+ (`\"cargoType\":3`)",
+        "value": {
+          "code": "ShippingDtRequired",
+          "message": "Shipping date is required for MGT and KGT supplies"
+        }
+      },
       "FailedToAddSupplyOrder": {
         "value": {
           "code": "FailedToAddSupplyOrder",
@@ -163,13 +170,6 @@
           "title": "forbidden"
         }
       },
-      "ShippingDtRequired": {
-        "description": "Укажите планируемую дату отгрузки для поставок МГТ (`\"cargoType\":1`) и КГТ+ (`\"cargoType\":3`)",
-        "value": {
-          "code": "ShippingDtRequired",
-          "message": "Shipping date is required for MGT and KGT supplies"
-        }
-      },
       "StatusChangeNotAllowed": {
         "value": {
           "code": "StatusChangeNotAllowed",
@@ -186,6 +186,12 @@
         "value": {
           "detail": "Supplier auto-return setting must be in `manual` mode",
           "title": "SupplierSettingMustBeManual"
+        }
+      },
+      "SupplyDispatchRequired": {
+        "value": {
+          "code": "SupplyShippingRequired",
+          "message": "Specify shipping point, type and date to close the supply"
         }
       },
       "SupplyHasOrders": {
@@ -213,13 +219,7 @@
           "message": "Поставка не передана в доставку"
         }
       },
-      "SupplyShippingRequired": {
-        "value": {
-          "code": "SupplyShippingRequired",
-          "message": "Specify shipping point, type and date to close the supply"
-        }
-      },
-      "UpdatedSuppliesShippingMethod": {
+      "UpdatedSuppliesDispatchMethod": {
         "value": {
           "results": [
             {
@@ -1242,7 +1242,7 @@
             "nullable": false,
             "type": "integer"
           },
-          "isPickupPointShipmentAllowed": {
+          "isPickupPointDispatchAllowed": {
             "description": "Можно ли отгрузить заказ на ПВЗ:\n  - `false` — нет\n  - `true` — да\n",
             "example": true,
             "nullable": false,
@@ -1573,7 +1573,7 @@
             "nullable": true,
             "type": "boolean"
           },
-          "isPickupPointShipmentAllowed": {
+          "isPickupPointDispatchAllowed": {
             "description": "Можно ли отгрузить заказ на ПВЗ:\n  - `false` — нет\n  - `true` — да\n",
             "example": true,
             "nullable": false,
@@ -1637,7 +1637,7 @@
         ],
         "type": "object"
       },
-      "SupplyShippingPoint": {
+      "SupplyDispatchPoint": {
         "description": "Данные пункта отгрузки",
         "properties": {
           "address": {
@@ -1700,12 +1700,12 @@
         ],
         "type": "object"
       },
-      "SupplyShippingPointsResponse": {
+      "SupplyDispatchPointsResponse": {
         "properties": {
           "shippingPoints": {
             "description": "Список пунктов отгрузки для указанной поставки",
             "items": {
-              "$ref": "#/components/schemas/SupplyShippingPoint"
+              "$ref": "#/components/schemas/SupplyDispatchPoint"
             },
             "type": "array"
           }
@@ -1740,7 +1740,7 @@
         },
         "type": "object"
       },
-      "UpdateSuppliesShippingMethodRequest": {
+      "UpdateSuppliesDispatchMethodRequest": {
         "properties": {
           "data": {
             "items": {
@@ -1756,11 +1756,11 @@
         ],
         "type": "object"
       },
-      "UpdateSuppliesShippingMethodResponse": {
+      "UpdateSuppliesDispatchMethodResponse": {
         "properties": {
           "results": {
             "items": {
-              "$ref": "#/components/schemas/UpdatedSuppliesShippingMethod"
+              "$ref": "#/components/schemas/UpdatedSuppliesDispatchMethod"
             },
             "type": "array"
           }
@@ -1805,7 +1805,7 @@
         ],
         "type": "object"
       },
-      "UpdatedSuppliesShippingMethod": {
+      "UpdatedSuppliesDispatchMethod": {
         "description": "Результат обработки запроса для одной поставки",
         "properties": {
           "error": {
@@ -3084,7 +3084,7 @@
               "schema": {
                 "allOf": [
                   {
-                    "$ref": "#/components/schemas/UpdateSuppliesShippingMethodRequest"
+                    "$ref": "#/components/schemas/UpdateSuppliesDispatchMethodRequest"
                   },
                   {
                     "description": "Параметры отгрузки поставки"
@@ -3100,12 +3100,12 @@
             "content": {
               "application/json": {
                 "examples": {
-                  "UpdatedSuppliesShippingMethod": {
-                    "$ref": "#/components/examples/UpdatedSuppliesShippingMethod"
+                  "UpdatedSuppliesDispatchMethod": {
+                    "$ref": "#/components/examples/UpdatedSuppliesDispatchMethod"
                   }
                 },
                 "schema": {
-                  "$ref": "#/components/schemas/UpdateSuppliesShippingMethodResponse"
+                  "$ref": "#/components/schemas/UpdateSuppliesDispatchMethodResponse"
                 }
               }
             },
@@ -3386,7 +3386,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/SupplyShippingPointsResponse"
+                  "$ref": "#/components/schemas/SupplyDispatchPointsResponse"
                 }
               }
             },
@@ -3396,11 +3396,11 @@
             "content": {
               "application/json": {
                 "examples": {
+                  "DispatchDtRequired": {
+                    "$ref": "#/components/examples/DispatchDtRequired"
+                  },
                   "IncorrectParameter": {
                     "$ref": "#/components/examples/IncorrectParameter"
-                  },
-                  "ShippingDtRequired": {
-                    "$ref": "#/components/examples/ShippingDtRequired"
                   }
                 },
                 "schema": {
@@ -7143,11 +7143,11 @@
                   "MetaValidationFail": {
                     "$ref": "#/components/examples/MetaValidationFail"
                   },
+                  "SupplyDispatchRequired": {
+                    "$ref": "#/components/examples/SupplyDispatchRequired"
+                  },
                   "SupplyHasZeroOrders": {
                     "$ref": "#/components/examples/SupplyHasZeroOrders"
-                  },
-                  "SupplyShippingRequired": {
-                    "$ref": "#/components/examples/SupplyShippingRequired"
                   }
                 },
                 "schema": {

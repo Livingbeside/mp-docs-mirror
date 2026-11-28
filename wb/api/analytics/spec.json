@@ -228,6 +228,78 @@
         "minimum": 1,
         "type": "integer"
       },
+      "CommonDispatchOfficeFilters": {
+        "description": "Общие фильтры по регионам отгрузки",
+        "properties": {
+          "brandNames": {
+            "description": "Список брендов для фильтрации",
+            "example": [
+              "Эшк",
+              "ЗлатА",
+              "ОТК",
+              "арк"
+            ],
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "currentPeriod": {
+            "$ref": "#/components/schemas/PeriodInv"
+          },
+          "nmIDs": {
+            "description": "Список артикулов WB для фильтрации",
+            "example": [
+              111222333,
+              444555666
+            ],
+            "items": {
+              "format": "int64",
+              "type": "integer"
+            },
+            "type": "array"
+          },
+          "skipDeletedNm": {
+            "description": "Скрыть удалённые товары",
+            "example": false,
+            "type": "boolean"
+          },
+          "stockType": {
+            "$ref": "#/components/schemas/StockType"
+          },
+          "subjectIDs": {
+            "description": "Список ID предметов для фильтрации",
+            "example": [
+              123,
+              456
+            ],
+            "items": {
+              "format": "int32",
+              "type": "integer"
+            },
+            "type": "array"
+          },
+          "tagIDs": {
+            "description": "Список ID ярлыков для фильтрации",
+            "example": [
+              123,
+              456,
+              789
+            ],
+            "items": {
+              "format": "int64",
+              "type": "integer"
+            },
+            "type": "array"
+          }
+        },
+        "required": [
+          "currentPeriod",
+          "stockType",
+          "skipDeletedNm"
+        ],
+        "type": "object"
+      },
       "CommonInfo": {
         "description": "Общая информация",
         "properties": {
@@ -429,78 +501,6 @@
             "type": "object"
           }
         },
-        "type": "object"
-      },
-      "CommonShippingOfficeFilters": {
-        "description": "Общие фильтры по регионам отгрузки",
-        "properties": {
-          "brandNames": {
-            "description": "Список брендов для фильтрации",
-            "example": [
-              "Эшк",
-              "ЗлатА",
-              "ОТК",
-              "арк"
-            ],
-            "items": {
-              "type": "string"
-            },
-            "type": "array"
-          },
-          "currentPeriod": {
-            "$ref": "#/components/schemas/PeriodInv"
-          },
-          "nmIDs": {
-            "description": "Список артикулов WB для фильтрации",
-            "example": [
-              111222333,
-              444555666
-            ],
-            "items": {
-              "format": "int64",
-              "type": "integer"
-            },
-            "type": "array"
-          },
-          "skipDeletedNm": {
-            "description": "Скрыть удалённые товары",
-            "example": false,
-            "type": "boolean"
-          },
-          "stockType": {
-            "$ref": "#/components/schemas/StockType"
-          },
-          "subjectIDs": {
-            "description": "Список ID предметов для фильтрации",
-            "example": [
-              123,
-              456
-            ],
-            "items": {
-              "format": "int32",
-              "type": "integer"
-            },
-            "type": "array"
-          },
-          "tagIDs": {
-            "description": "Список ID ярлыков для фильтрации",
-            "example": [
-              123,
-              456,
-              789
-            ],
-            "items": {
-              "format": "int64",
-              "type": "integer"
-            },
-            "type": "array"
-          }
-        },
-        "required": [
-          "currentPeriod",
-          "stockType",
-          "skipDeletedNm"
-        ],
         "type": "object"
       },
       "CommonSizeFilters": {
@@ -4348,6 +4348,151 @@
         ],
         "type": "object"
       },
+      "TableDispatchOfficeItem": {
+        "description": "Данные по региону отгрузки",
+        "properties": {
+          "metrics": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/TableDispatchOfficeMetrics"
+              }
+            ],
+            "description": "Метрики по региону"
+          },
+          "offices": {
+            "description": "[Данные по складам](/release-notes?id=605)\n",
+            "items": {
+              "properties": {
+                "metrics": {
+                  "allOf": [
+                    {
+                      "$ref": "#/components/schemas/TableDispatchOfficeMetrics"
+                    }
+                  ],
+                  "description": "Метрики по складу"
+                },
+                "officeID": {
+                  "description": "[ID склада](/release-notes?id=605)\n",
+                  "example": -999999,
+                  "format": "int64",
+                  "type": "integer"
+                },
+                "officeName": {
+                  "description": "[Название склада](/release-notes?id=605)\n",
+                  "example": "Склад WB РФ",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "officeID",
+                "officeName",
+                "metrics"
+              ],
+              "type": "object"
+            },
+            "type": "array"
+          },
+          "regionName": {
+            "description": "[Страна отгрузки](/release-notes?id=605)\n",
+            "example": "Россия",
+            "type": "string"
+          }
+        },
+        "required": [
+          "regionName",
+          "metrics",
+          "offices"
+        ],
+        "type": "object"
+      },
+      "TableDispatchOfficeMetrics": {
+        "description": "Общие метрики по регионам/складам отгрузки",
+        "properties": {
+          "fromClientCount": {
+            "description": "В пути от клиента, шт.",
+            "example": 40,
+            "format": "uint64",
+            "type": "integer"
+          },
+          "saleRate": {
+            "description": "Оборачиваемость текущих остатков. Особые случаи:\n  1. `\"hours\":-1` — бесконечная длительность\n  2. `\"hours\":-2` — нулевая длительность\n  3. `\"hours\":-3` — нерассчитанная длительность\n",
+            "properties": {
+              "days": {
+                "description": "Количество дней",
+                "example": 5,
+                "format": "int32",
+                "type": "integer"
+              },
+              "hours": {
+                "description": "Количество часов",
+                "example": 15,
+                "format": "int32",
+                "type": "integer"
+              }
+            },
+            "required": [
+              "days",
+              "hours"
+            ],
+            "type": "object"
+          },
+          "stockCount": {
+            "description": "Остатки на текущий день, шт.",
+            "example": 20,
+            "format": "uint64",
+            "type": "integer"
+          },
+          "stockSum": {
+            "description": "Остатки на текущий день, сумма",
+            "example": 20000,
+            "format": "uint64",
+            "type": "integer"
+          },
+          "toClientCount": {
+            "description": "В пути к клиенту, шт.",
+            "example": 30,
+            "format": "uint64",
+            "type": "integer"
+          }
+        },
+        "required": [
+          "stockCount",
+          "stockSum",
+          "saleRate",
+          "toClientCount",
+          "fromClientCount"
+        ],
+        "type": "object"
+      },
+      "TableDispatchOfficeRequest": {
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/CommonDispatchOfficeFilters"
+          },
+          {
+            "description": "Параметры запроса об остатках по складам"
+          }
+        ]
+      },
+      "TableDispatchOfficeResponse": {
+        "properties": {
+          "currency": {
+            "$ref": "#/components/schemas/Currency"
+          },
+          "regions": {
+            "description": "Множество данных по регионам отгрузки",
+            "items": {
+              "$ref": "#/components/schemas/TableDispatchOfficeItem"
+            },
+            "type": "array"
+          }
+        },
+        "required": [
+          "regions",
+          "currency"
+        ],
+        "type": "object"
+      },
       "TableGroupField": {
         "description": "Сортировка по полю:\n  - `ordersCount` — Заказы, шт.\n  - `ordersSum` — Заказы, сумма\n  - `avgOrders` — Среднее количество заказов в день\n  - `buyoutCount` — Выкупы, шт.\n  - `buyoutSum` — Выкупы, сумма\n  - `buyoutPercent` — Процент выкупа\n  - `stockCount` — Остатки на текущий день, шт.\n  - `stockSum` — Стоимость остатков на текущий день\n  - `saleRate` — Оборачиваемость текущих остатков\n  - `avgStockTurnover` — Оборачиваемость средних остатков\n  - `toClientCount` — В пути к клиенту, шт.\n  - `fromClientCount` — В пути от клиента, шт.\n  - `minPrice` — Минимальная цена продавца со скидкой продавца (без учёта скидки WB Клуба)\n  - `maxPrice` — Максимальная цена продавца со скидкой продавца (без учёта скидки WB Клуба)\n  - `officeMissingTime` — Время отсутствия товара на складе\n  - `lostOrdersCount` — Упущенные заказы, шт.\n  - `lostOrdersSum` — Упущенные заказы, сумма\n  - `lostBuyoutsCount` — Упущенные выкупы, шт.\n  - `lostBuyoutsSum` — Упущенные выкупы, сумма\n",
         "enum": [
@@ -5574,151 +5719,6 @@
             ],
             "type": "object"
           }
-        ],
-        "type": "object"
-      },
-      "TableShippingOfficeItem": {
-        "description": "Данные по региону отгрузки",
-        "properties": {
-          "metrics": {
-            "allOf": [
-              {
-                "$ref": "#/components/schemas/TableShippingOfficeMetrics"
-              }
-            ],
-            "description": "Метрики по региону"
-          },
-          "offices": {
-            "description": "[Данные по складам](/release-notes?id=605)\n",
-            "items": {
-              "properties": {
-                "metrics": {
-                  "allOf": [
-                    {
-                      "$ref": "#/components/schemas/TableShippingOfficeMetrics"
-                    }
-                  ],
-                  "description": "Метрики по складу"
-                },
-                "officeID": {
-                  "description": "[ID склада](/release-notes?id=605)\n",
-                  "example": -999999,
-                  "format": "int64",
-                  "type": "integer"
-                },
-                "officeName": {
-                  "description": "[Название склада](/release-notes?id=605)\n",
-                  "example": "Склад WB РФ",
-                  "type": "string"
-                }
-              },
-              "required": [
-                "officeID",
-                "officeName",
-                "metrics"
-              ],
-              "type": "object"
-            },
-            "type": "array"
-          },
-          "regionName": {
-            "description": "[Страна отгрузки](/release-notes?id=605)\n",
-            "example": "Россия",
-            "type": "string"
-          }
-        },
-        "required": [
-          "regionName",
-          "metrics",
-          "offices"
-        ],
-        "type": "object"
-      },
-      "TableShippingOfficeMetrics": {
-        "description": "Общие метрики по регионам/складам отгрузки",
-        "properties": {
-          "fromClientCount": {
-            "description": "В пути от клиента, шт.",
-            "example": 40,
-            "format": "uint64",
-            "type": "integer"
-          },
-          "saleRate": {
-            "description": "Оборачиваемость текущих остатков. Особые случаи:\n  1. `\"hours\":-1` — бесконечная длительность\n  2. `\"hours\":-2` — нулевая длительность\n  3. `\"hours\":-3` — нерассчитанная длительность\n",
-            "properties": {
-              "days": {
-                "description": "Количество дней",
-                "example": 5,
-                "format": "int32",
-                "type": "integer"
-              },
-              "hours": {
-                "description": "Количество часов",
-                "example": 15,
-                "format": "int32",
-                "type": "integer"
-              }
-            },
-            "required": [
-              "days",
-              "hours"
-            ],
-            "type": "object"
-          },
-          "stockCount": {
-            "description": "Остатки на текущий день, шт.",
-            "example": 20,
-            "format": "uint64",
-            "type": "integer"
-          },
-          "stockSum": {
-            "description": "Остатки на текущий день, сумма",
-            "example": 20000,
-            "format": "uint64",
-            "type": "integer"
-          },
-          "toClientCount": {
-            "description": "В пути к клиенту, шт.",
-            "example": 30,
-            "format": "uint64",
-            "type": "integer"
-          }
-        },
-        "required": [
-          "stockCount",
-          "stockSum",
-          "saleRate",
-          "toClientCount",
-          "fromClientCount"
-        ],
-        "type": "object"
-      },
-      "TableShippingOfficeRequest": {
-        "allOf": [
-          {
-            "$ref": "#/components/schemas/CommonShippingOfficeFilters"
-          },
-          {
-            "description": "Параметры запроса об остатках по складам"
-          }
-        ]
-      },
-      "TableShippingOfficeResponse": {
-        "properties": {
-          "currency": {
-            "$ref": "#/components/schemas/Currency"
-          },
-          "regions": {
-            "description": "Множество данных по регионам отгрузки",
-            "items": {
-              "$ref": "#/components/schemas/TableShippingOfficeItem"
-            },
-            "type": "array"
-          }
-        },
-        "required": [
-          "regions",
-          "currency"
         ],
         "type": "object"
       },
@@ -8181,7 +8181,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/TableShippingOfficeRequest"
+                "$ref": "#/components/schemas/TableDispatchOfficeRequest"
               }
             }
           },
@@ -8194,7 +8194,7 @@
                 "schema": {
                   "properties": {
                     "data": {
-                      "$ref": "#/components/schemas/TableShippingOfficeResponse"
+                      "$ref": "#/components/schemas/TableDispatchOfficeResponse"
                     }
                   },
                   "required": [

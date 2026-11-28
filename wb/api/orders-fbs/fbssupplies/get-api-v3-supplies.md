@@ -9,7 +9,7 @@ tags:
 spec_version: order
 source: "https://dev.wildberries.ru/docs/openapi/orders-fbs"
 deprecated: false
-content_sha: ab5993e73e8b5157
+content_sha: ab6f555b288a79df
 ---
 
 # Получить список поставок
@@ -45,7 +45,7 @@ content_sha: ab5993e73e8b5157
 - `supplies` — array[object]. Список поставок
   - `id` — string. ID поставки
   - `isB2b` — boolean. Признак B2B-продажи: - `true` — B2B-продажа - `false` — не B2B-продажа - `null` — признак отсутствует, сборочные задания не добавлены к поставке
-  - `isPickupPointShipmentAllowed` — boolean. Можно ли отгрузить заказ на ПВЗ: - `false` — нет - `true` — да
+  - `isPickupPointDispatchAllowed` — boolean. Можно ли отгрузить заказ на ПВЗ: - `false` — нет - `true` — да
   - `done` — boolean. Флаг закрытия поставки: - `true` — закрыта - `false` — открыта
   - `createdAt` — string<date-time>. Дата создания поставки (RFC3339)
   - `closedAt` — string<date-time>. Дата закрытия поставки (RFC3339)
